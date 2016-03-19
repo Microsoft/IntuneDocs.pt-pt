@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "debfe3326f65b4fa259eb2696caeb2e7364259ce",
+  "LastProcessedCommit": "dc8a75144dd30a4d9eca9b4b684f6cc083e713fd",
   "LastTranslatedCommit": null,
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
@@ -702,7 +702,8 @@
       "HandoffReason": 1,
       "DependencyFrom": null,
       "FilePathList": [
-        "InTuneDocs\\configure-apps-with-microsoft-intune.md"
+        "InTuneDocs\\configure-apps-with-microsoft-intune.md",
+        "InTuneDocs\\DeployUse\\configure-apps-with-microsoft-intune.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.pt-pt\\master\\configure-apps-with-microsoft-intune.9072bdeec0ab890b295bbb16585d6134ec595586.pt-pt.xlf",
       "HandoffFileCommit": "9826308ad800e8a762a9c996d4719d2dfea2b7df",
@@ -17078,7 +17079,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-18T23:34:20.9100031Z",
+      "HandoffDateTime": "2016-03-19T00:56:43.4529192Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -17089,7 +17090,7 @@
         "stack_trace": "   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 399",
         "extended_information": null
       },
-      "HandoffFailureTimes": 40,
+      "HandoffFailureTimes": 41,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -17118,7 +17119,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-18T23:34:20.9100031Z",
+      "HandoffDateTime": "2016-03-19T00:56:43.4529192Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -17129,7 +17130,7 @@
         "stack_trace": "   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 399",
         "extended_information": null
       },
-      "HandoffFailureTimes": 40,
+      "HandoffFailureTimes": 41,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -17158,7 +17159,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-18T23:34:20.9100031Z",
+      "HandoffDateTime": "2016-03-19T00:56:43.4529192Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -17169,7 +17170,7 @@
         "stack_trace": "   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 399",
         "extended_information": null
       },
-      "HandoffFailureTimes": 40,
+      "HandoffFailureTimes": 41,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -20605,8 +20606,8 @@
         "InTuneDocs\\zDeletedTopics\\plan-your-user-and-device-groups-old.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.pt-pt\\master\\plan-your-user-and-device-groups.ef0bd04c09dd640f806c4a64d2843c0f4f730c8c.pt-pt.xlf",
-      "HandoffFileCommit": "87d57223f64c34c38d3bacd21cb585f7cc037d77",
-      "HandoffDateTime": "2016-03-18T21:55:06.733723Z",
+      "HandoffFileCommit": "874fffc5749b4d2d3c3f79b4734ddf6e3b6274fc",
+      "HandoffDateTime": "2016-03-19T00:56:43.4529192Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -28809,7 +28810,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "migrated-03-14\\Topic\\Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md",
-        "InTuneDocs\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
+        "InTuneDocs\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md",
+        "InTuneDocs\\DeployUse\\configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.pt-pt\\master\\Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.80bdcc0ea261fc39638a92da3011cfccdee82170.pt-pt.xlf",
       "HandoffFileCommit": "5c8a0edc5c1efe1069b2b1e19cfd8082274eb939",
@@ -29355,7 +29357,8 @@
       "DependencyFrom": null,
       "FilePathList": [
         "migrated-03-14\\Topic\\Edition-upgrade-policy-settings-in-Microsoft-Intune.md",
-        "InTuneDocs\\edition-upgrade-policy-settings-in-microsoft-intune.md"
+        "InTuneDocs\\edition-upgrade-policy-settings-in-microsoft-intune.md",
+        "InTuneDocs\\DeployUse\\edition-upgrade-policy-settings-in-microsoft-intune.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.pt-pt\\master\\Edition-upgrade-policy-settings-in-Microsoft-Intune.164deee50728de810a89ef4326679aef8d7d3f49.pt-pt.xlf",
       "HandoffFileCommit": "5c8a0edc5c1efe1069b2b1e19cfd8082274eb939",
