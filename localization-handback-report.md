@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\includes\windowsvista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/windowsvista.md) | InSyncHandedBackSuccess | [Details](#c375f75a25da61d09e7fd14f9526d5ba2c045399612)
+ [InTuneDocs\includes\wit_adminconsole.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_adminconsole.md) | InSyncHandedBackSuccess | [Details](#484386cefe4984efd6277a56d381ba29353839ca616)
 
 ## Item Details
+##### <a name='c375f75a25da61d09e7fd14f9526d5ba2c045399612'></a> Source: [InTuneDocs\includes\windowsvista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/windowsvista.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\windowsvista.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/5c7d77c5280b51c54e28175cbfe38e23629e280f/InTuneDocs/includes/windowsvista.md)
+* Handoff File: [windowsvista.dbceea43f2b3224549e501340682be7d68974c61.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/windowsvista.dbceea43f2b3224549e501340682be7d68974c61.pt-pt.xlf)
+* Handoff Datetime: 2016-05-13 16:30:15
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [windowsvista.dbceea43f2b3224549e501340682be7d68974c61.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/1d250f4d5253bf874213cb347056784ac665bf50/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/windowsvista.dbceea43f2b3224549e501340682be7d68974c61.pt-pt.xlf)
+* Handback Datetime: 2016-05-24 06:43:25
+* [Back to Top](#report-top)
+
+##### <a name='484386cefe4984efd6277a56d381ba29353839ca616'></a> Source: [InTuneDocs\includes\wit_adminconsole.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_adminconsole.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\wit_adminconsole.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/5c7d77c5280b51c54e28175cbfe38e23629e280f/InTuneDocs/includes/wit_adminconsole.md)
+* Handoff File: [wit_adminconsole.b1165b2be4f74cb9cb8cb23556a56168cdd57ffc.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/wit_adminconsole.b1165b2be4f74cb9cb8cb23556a56168cdd57ffc.pt-pt.xlf)
+* Handoff Datetime: 2016-05-13 16:30:15
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [wit_adminconsole.b1165b2be4f74cb9cb8cb23556a56168cdd57ffc.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/1d250f4d5253bf874213cb347056784ac665bf50/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/wit_adminconsole.b1165b2be4f74cb9cb8cb23556a56168cdd57ffc.pt-pt.xlf)
+* Handback Datetime: 2016-05-24 06:43:25
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
