@@ -1,11 +1,52 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 3
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\includes\winblue_winrt_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_winrt_2.md) | InSyncHandedBackSuccess | [Details](#b657082a99f111bdaf82c0afa9b20d98443ccf70610)
+ [InTuneDocs\includes\winphone8_client_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winphone8_client_1.md) | InSyncHandedBackSuccess | [Details](#737f108760e66f61e788bd872266f7e0199efbd9614)
+ [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_publisher_1.md) | InSyncHandedBackSuccess | [Details](#965b55d128583da2cf33b127270a5216ce74444b632)
 
 ## Item Details
+##### <a name='b657082a99f111bdaf82c0afa9b20d98443ccf70610'></a> Source: [InTuneDocs\includes\winblue_winrt_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_winrt_2.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\winblue_winrt_2.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/43a27ca733a416e1ada40c3bbfa4f83630a63967/InTuneDocs/includes/winblue_winrt_2.md)
+* Handoff File: [winblue_winrt_2.f8124a0b714020a6ba2da11e2660f01cc8e4d78f.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/winblue_winrt_2.f8124a0b714020a6ba2da11e2660f01cc8e4d78f.pt-pt.xlf)
+* Handoff Datetime: 2016-05-13 16:30:15
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [winblue_winrt_2.f8124a0b714020a6ba2da11e2660f01cc8e4d78f.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/fb69a0b5095e561552c6a4ad0c71462e778e83f7/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/winblue_winrt_2.f8124a0b714020a6ba2da11e2660f01cc8e4d78f.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 13:26:51
+* [Back to Top](#report-top)
+
+##### <a name='737f108760e66f61e788bd872266f7e0199efbd9614'></a> Source: [InTuneDocs\includes\winphone8_client_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winphone8_client_1.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\winphone8_client_1.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/43a27ca733a416e1ada40c3bbfa4f83630a63967/InTuneDocs/includes/winphone8_client_1.md)
+* Handoff File: [winphone8_client_1.f7186c9e76e243f3f673cd7e760e8bb9f81c770e.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/winphone8_client_1.f7186c9e76e243f3f673cd7e760e8bb9f81c770e.pt-pt.xlf)
+* Handoff Datetime: 2016-05-13 16:30:15
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [winphone8_client_1.f7186c9e76e243f3f673cd7e760e8bb9f81c770e.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/fb69a0b5095e561552c6a4ad0c71462e778e83f7/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/winphone8_client_1.f7186c9e76e243f3f673cd7e760e8bb9f81c770e.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 13:26:51
+* [Back to Top](#report-top)
+
+##### <a name='965b55d128583da2cf33b127270a5216ce74444b632'></a> Source: [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_publisher_1.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/43a27ca733a416e1ada40c3bbfa4f83630a63967/InTuneDocs/includes/wit_publisher_1.md)
+* Handoff File: [wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.pt-pt.xlf)
+* Handoff Datetime: 2016-05-13 16:30:15
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/fb69a0b5095e561552c6a4ad0c71462e778e83f7/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/wit_publisher_1.e64363b6f26d1fb17906451d1d0c80f4d1228cb9.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 13:26:51
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
