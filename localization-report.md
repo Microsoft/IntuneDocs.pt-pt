@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 1229
 [ Handoff Failed Files ](#handoff-failed-list)| 2
-[ Handoff Success Files ](#handoff-success-list)| 980
+[ Handoff Success Files ](#handoff-success-list)| 976
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 1
-[ In Sync Handback Files ](#insync-handback-success-list)| 21
+[ In Sync Handback Files ](#insync-handback-success-list)| 25
 [ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -543,11 +543,8 @@
  [InTuneDocs\includes\sccmshortname_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sccmshortname_md.md) | HandedOffSuccess | [Details](#20a783276163d706389339c9aac1f842a67b9530597)
  [InTuneDocs\includes\sco_dm_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sco_dm_2.md) | HandedOffSuccess | [Details](#fc2812773cc47aea0a10db21ce53670c3a0dd87c598)
  [InTuneDocs\includes\sco_dm_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/sco_dm_2_md.md) | HandedOffSuccess | [Details](#1202b6045bb557987046393241d45a6c4e1a9be5599)
- [InTuneDocs\includes\win8_client_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_client_2.md) | HandedOffSuccess | [Details](#111fdd363b01584ec5959bc0f9e745201fa2b947600)
  [InTuneDocs\includes\win8_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_client_2_md.md) | HandedOffSuccess | [Details](#6517856f8c3a3fda3ae28305a05d127f0e1bdb97601)
- [InTuneDocs\includes\win8_server_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_server_2.md) | HandedOffSuccess | [Details](#0a1bed55d2b1fd0a78b7196e1b37e4b7f118cc0f602)
  [InTuneDocs\includes\win8_server_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_server_2_md.md) | HandedOffSuccess | [Details](#159bb0322c76672065a0b50b0eb496853e0aca0a603)
- [InTuneDocs\includes\winblue_client_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2.md) | HandedOffSuccess | [Details](#1b61fbcbea4e11f6ee085a79b775abe59e0f20b4606)
  [InTuneDocs\includes\winblue_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2_md.md) | HandedOffSuccess | [Details](#9fe8c734d18c33e1fe587ed88ac86891c9413013607)
  [InTuneDocs\includes\winblue_winrt_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_winrt_2.md) | HandedOffSuccess | [Details](#b657082a99f111bdaf82c0afa9b20d98443ccf70610)
  [InTuneDocs\includes\windowsvista_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/windowsvista_md.md) | HandedOffSuccess | [Details](#7dc44c44b7a030798f3e511dc741ab9400f590ae613)
@@ -559,7 +556,6 @@
  [InTuneDocs\includes\wit_icp_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_icp_1.md) | HandedOffSuccess | [Details](#a380c85a1c5b7e47d84afea0dc307366c6228a20622)
  [InTuneDocs\includes\wit_icp_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_icp_1_md.md) | HandedOffSuccess | [Details](#6fd22fb222601542daaa27f6952b5fd889389a9d623)
  [InTuneDocs\includes\wit_icp_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_icp_2_md.md) | HandedOffSuccess | [Details](#c3427869b1071ba8d679362c29b3918c1b65cf70625)
- [InTuneDocs\includes\wit_iwportal_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1.md) | HandedOffSuccess | [Details](#abe8d8c9c6a458e6695a008b37b6339f354c0911626)
  [InTuneDocs\includes\wit_iwportal_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1_md.md) | HandedOffSuccess | [Details](#f034b6b5261956e629cc7368e51c7dbb1d355ba9627)
  [InTuneDocs\includes\wit_publisher_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_publisher_1.md) | HandedOffSuccess | [Details](#965b55d128583da2cf33b127270a5216ce74444b632)
  [InTuneDocs\includes\wit_tools.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_tools.md) | HandedOffSuccess | [Details](#a5449ddcc028ac379a4e6bbaff0432e8968879ec633)
@@ -1024,8 +1020,11 @@
  [InTuneDocs\includes\cm5short.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/cm5short.md) | InSyncHandedBackSuccess | [Details](#964469fffb8bdb3173c03bd460c68e1ba0ea4074574)
  [InTuneDocs\includes\cm5short_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/cm5short_md.md) | InSyncHandedBackSuccess | [Details](#b70ed7a9f0369fdbe357006f156325aaaaa554da575)
  [InTuneDocs\includes\cmshort_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/cmshort_md.md) | InSyncHandedBackSuccess | [Details](#506d830e0cbc622ea3c0637656d5c60c9a6b38f8577)
+ [InTuneDocs\includes\win8_client_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_client_2.md) | InSyncHandedBackSuccess | [Details](#111fdd363b01584ec5959bc0f9e745201fa2b947600)
+ [InTuneDocs\includes\win8_server_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_server_2.md) | InSyncHandedBackSuccess | [Details](#0a1bed55d2b1fd0a78b7196e1b37e4b7f118cc0f602)
  [InTuneDocs\includes\win8RT_client_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8RT_client_1.md) | InSyncHandedBackSuccess | [Details](#14b0d8220b2f0ea1bbcc86aad21a64a532db5d96604)
  [InTuneDocs\includes\win8RT_client_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8RT_client_1_md.md) | InSyncHandedBackSuccess | [Details](#9a09a5e949fc4aa477fdf00e91f5451d9acf4dd9605)
+ [InTuneDocs\includes\winblue_client_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2.md) | InSyncHandedBackSuccess | [Details](#1b61fbcbea4e11f6ee085a79b775abe59e0f20b4606)
  [InTuneDocs\includes\winblue_server_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_server_2.md) | InSyncHandedBackSuccess | [Details](#a99ca498e1303515f4e5c74740e63fb45ad71cd7608)
  [InTuneDocs\includes\winblue_server_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_server_2_md.md) | InSyncHandedBackSuccess | [Details](#4def91cac8221f8ad360e97e06d2214860662377609)
  [InTuneDocs\includes\winblue_winrt_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_winrt_2_md.md) | InSyncHandedBackSuccess | [Details](#4ad13f0515100ce8dc2558a861377f09f3887d2e611)
@@ -1034,6 +1033,7 @@
  [InTuneDocs\includes\wit_adminconsole_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_adminconsole_md.md) | InSyncHandedBackSuccess | [Details](#252a2769649225755721725302eaca55ce4ffbe9617)
  [InTuneDocs\includes\wit_exch_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_exch_2.md) | InSyncHandedBackSuccess | [Details](#a19773e794473714fa2d34fce76291ba8a8f6e21618)
  [InTuneDocs\includes\wit_icp_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_icp_2.md) | InSyncHandedBackSuccess | [Details](#bce3f1e2a789f94fb10243094b3d779fde464233624)
+ [InTuneDocs\includes\wit_iwportal_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1.md) | InSyncHandedBackSuccess | [Details](#abe8d8c9c6a458e6695a008b37b6339f354c0911626)
  [InTuneDocs\includes\wit_iwportal_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2.md) | InSyncHandedBackSuccess | [Details](#a135ff34ca5c676bc4ee7640fa49d7e95da4170e628)
  [InTuneDocs\includes\wit_iwportal_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_2_md.md) | InSyncHandedBackSuccess | [Details](#a02631ded74ee9e772dae5142675a9493b653577629)
  [InTuneDocs\includes\wit_nextref.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_nextref.md) | InSyncHandedBackSuccess | [Details](#eb4b64a8db5b5bb2eea586ca46d0c3f6da4eac88630)
@@ -8657,15 +8657,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='111fdd363b01584ec5959bc0f9e745201fa2b947600'></a> Source: [InTuneDocs\includes\win8_client_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_client_2.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\win8_client_2.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/6e2ce218097585e53c82cc9f6103729b8ac184d6/InTuneDocs/includes/win8_client_2.md)
 * Handoff File: [win8_client_2.0d9a32892aa1ac8a29756116af3b010cc1e24be0.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/win8_client_2.0d9a32892aa1ac8a29756116af3b010cc1e24be0.pt-pt.xlf)
 * Handoff Datetime: 2016-05-13 16:30:15
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [win8_client_2.0d9a32892aa1ac8a29756116af3b010cc1e24be0.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/c601ef1a29590e589b9b93a2dbd01d9b09d0c306/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/win8_client_2.0d9a32892aa1ac8a29756116af3b010cc1e24be0.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 03:57:18
 * [Back to Top](#report-top)
 
 ##### <a name='6517856f8c3a3fda3ae28305a05d127f0e1bdb97601'></a> Source: [InTuneDocs\includes\win8_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_client_2_md.md)
@@ -8681,15 +8681,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='0a1bed55d2b1fd0a78b7196e1b37e4b7f118cc0f602'></a> Source: [InTuneDocs\includes\win8_server_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_server_2.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\win8_server_2.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/6e2ce218097585e53c82cc9f6103729b8ac184d6/InTuneDocs/includes/win8_server_2.md)
 * Handoff File: [win8_server_2.12ad8ea01dce4c4204650aab368f33997e962f99.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/win8_server_2.12ad8ea01dce4c4204650aab368f33997e962f99.pt-pt.xlf)
 * Handoff Datetime: 2016-05-13 16:30:15
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [win8_server_2.12ad8ea01dce4c4204650aab368f33997e962f99.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/c601ef1a29590e589b9b93a2dbd01d9b09d0c306/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/win8_server_2.12ad8ea01dce4c4204650aab368f33997e962f99.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 03:57:18
 * [Back to Top](#report-top)
 
 ##### <a name='159bb0322c76672065a0b50b0eb496853e0aca0a603'></a> Source: [InTuneDocs\includes\win8_server_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/win8_server_2_md.md)
@@ -8729,15 +8729,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='1b61fbcbea4e11f6ee085a79b775abe59e0f20b4606'></a> Source: [InTuneDocs\includes\winblue_client_2.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\winblue_client_2.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/6e2ce218097585e53c82cc9f6103729b8ac184d6/InTuneDocs/includes/winblue_client_2.md)
 * Handoff File: [winblue_client_2.e1768917a243a224f2ffec14e4191a13232d4a60.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/winblue_client_2.e1768917a243a224f2ffec14e4191a13232d4a60.pt-pt.xlf)
 * Handoff Datetime: 2016-05-13 16:30:15
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [winblue_client_2.e1768917a243a224f2ffec14e4191a13232d4a60.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/c601ef1a29590e589b9b93a2dbd01d9b09d0c306/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/winblue_client_2.e1768917a243a224f2ffec14e4191a13232d4a60.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 03:57:18
 * [Back to Top](#report-top)
 
 ##### <a name='9fe8c734d18c33e1fe587ed88ac86891c9413013607'></a> Source: [InTuneDocs\includes\winblue_client_2_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/winblue_client_2_md.md)
@@ -8969,15 +8969,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='abe8d8c9c6a458e6695a008b37b6339f354c0911626'></a> Source: [InTuneDocs\includes\wit_iwportal_1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1.md)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\wit_iwportal_1.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/6e2ce218097585e53c82cc9f6103729b8ac184d6/InTuneDocs/includes/wit_iwportal_1.md)
 * Handoff File: [wit_iwportal_1.e50e68d2a306979a976fc3f39719a36e2e77cb28.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/59f65695a4e6a5b3a4abb96ec6ebf735321eccb4/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/wit_iwportal_1.e50e68d2a306979a976fc3f39719a36e2e77cb28.pt-pt.xlf)
 * Handoff Datetime: 2016-05-13 16:30:15
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [wit_iwportal_1.e50e68d2a306979a976fc3f39719a36e2e77cb28.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/c601ef1a29590e589b9b93a2dbd01d9b09d0c306/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/wit_iwportal_1.e50e68d2a306979a976fc3f39719a36e2e77cb28.pt-pt.xlf)
+* Handback Datetime: 2016-05-25 03:57:18
 * [Back to Top](#report-top)
 
 ##### <a name='f034b6b5261956e629cc7368e51c7dbb1d355ba9627'></a> Source: [InTuneDocs\includes\wit_iwportal_1_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/wit_iwportal_1_md.md)
