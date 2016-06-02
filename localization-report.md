@@ -8,8 +8,8 @@
 [ Handoff Success Files ](#handoff-success-list)| 617
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 16
-[ Handback Failed Files ](#handback-failed-list)| 3
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 160
+[ Handback Failed Files ](#handback-failed-list)| 2
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 161
 [ In Sync Handback Files ](#insync-handback-success-list)| 214
 [ Ignored Files ](#ignored-list)| 226
 
@@ -665,7 +665,6 @@
 ## <a name='handback-failed-list'></a> Handback Failed File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-windows.md) | HandedBackFailed | [Details](#be79ff6769ff6ed32811ecd5e8120abb4ef7df31277)
  [InTuneDocs\GetStarted\mobile-device-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/GetStarted/mobile-device-management-capabilities-in-microsoft-intune.md) | HandedBackFailed | [Details](#3235d7f0db88db980dd08399fd2a650e1b6ad639510)
  [InTuneDocs\GetStarted\windows-pc-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/98fef2cbd78b8f8c38d47a6a43552871dd7eeb62/InTuneDocs/GetStarted/windows-pc-management-capabilities-in-microsoft-intune.md) | HandedBackFailed | [Details](#711d1ca4d6afe52fdeec94ff2e7893618b4fe28c532)
 
@@ -738,6 +737,7 @@
  [InTuneDocs\EndUser\company-portal-app-not-supported.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/company-portal-app-not-supported.md) | OutofSyncHandedBackSuccess | [Details](#8989cf61dc359f6a89b42624cf5a5aa8deac8be4273)
  [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md) | OutofSyncHandedBackSuccess | [Details](#990ce4c7f4d8cfdb9f02716d2544355c0f0b0f5b274)
  [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-android.md) | OutofSyncHandedBackSuccess | [Details](#13d2975103e9b3d37d797257388a10661ae8e6eb276)
+ [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-windows.md) | OutofSyncHandedBackSuccess | [Details](#be79ff6769ff6ed32811ecd5e8120abb4ef7df31277)
  [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md) | OutofSyncHandedBackSuccess | [Details](#3286ff522d0ef519840060add7a3eb5b1da45490278)
  [InTuneDocs\EndUser\device-doesnt-have-antimalware-software-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-have-antimalware-software-enabled-windows.md) | OutofSyncHandedBackSuccess | [Details](#31f562652d4c865a3f533cec05bf0214dda40c2e279)
  [InTuneDocs\EndUser\device-doesnt-have-bitlocker-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-have-bitlocker-enabled-windows.md) | OutofSyncHandedBackSuccess | [Details](#149ef1bf9754c07c561730ff0aac5fb6e2a235a9280)
@@ -1279,7 +1279,7 @@
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-52-profile-done.png](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.png) | Ignored | [Details](#a1eb85b6a803daaad928cdaaef931df786b199361204)
  [InTuneDocs\Understand\media\30-day-trial-walkthrus\30day-cfg-pol-55-passcode-enter.png](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/InTuneDocs/Understand/media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.png) | Ignored | [Details](#ba8ad078a5f18959f81804ea0c290d78a2c727cf1208)
  [license.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/license.md) | Ignored | [Details](#fc0612997fdfe01bdee7ee9daa01144dfd0143dd1235)
- [README.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/README.md) | Ignored | [Details](#57132fc9e167937b5f9c43a0b1e43ba177300a2f1236)
+ [README.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/README.md) | Ignored | [Details](#8b38ac1bf813dc8840b1522ce23fddf8de3997c31236)
 
 ## Item Details
 ##### <a name='7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0'></a> Source: [.gitignore](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/.gitignore)
@@ -4898,7 +4898,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='be79ff6769ff6ed32811ecd5e8120abb4ef7df31277'></a> Source: [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-* Status: HandedBackFailed
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [device-doesnt-comply-with-maximum-operating-system-version-windows.c49896322a455ce99d5df3e76c745e30f468bba0.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/fbe6395fe3f556cfb07bf53b70c56e9811f2419a/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-maximum-operating-system-version-windows.c49896322a455ce99d5df3e76c745e30f468bba0.pt-pt.xlf)
 * Handoff Datetime: 2016-06-02 21:47:19
@@ -4907,6 +4907,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-windows.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/13fe3cfd5eb7d4bccbc159953e6a830d4d65d4e5/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-windows.md)
+* Current Handback File: [device-doesnt-comply-with-maximum-operating-system-version-windows.c49896322a455ce99d5df3e76c745e30f468bba0.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/a751256fd4f74f81fb4d63848cc943ed33bb87bc/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-maximum-operating-system-version-windows.c49896322a455ce99d5df3e76c745e30f468bba0.pt-pt.xlf)
+* Current Handback Datetime: 2016-06-02 22:31:04
 * [Back to Top](#report-top)
 
 ##### <a name='3286ff522d0ef519840060add7a3eb5b1da45490278'></a> Source: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
@@ -4919,9 +4922,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/e285337a0c618cbd16b4336b8d49eb3a9c1318c2/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
-* Current Handback File: [device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/b53b0ce6ac5638a3464d16bf29c659370724a676/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf)
-* Current Handback Datetime: 2016-06-02 06:43:05
+* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/13fe3cfd5eb7d4bccbc159953e6a830d4d65d4e5/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+* Current Handback File: [device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/a751256fd4f74f81fb4d63848cc943ed33bb87bc/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf)
+* Current Handback Datetime: 2016-06-02 22:31:04
 * [Back to Top](#report-top)
 
 ##### <a name='31f562652d4c865a3f533cec05bf0214dda40c2e279'></a> Source: [InTuneDocs\EndUser\device-doesnt-have-antimalware-software-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-have-antimalware-software-enabled-windows.md)
@@ -7343,9 +7346,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/e285337a0c618cbd16b4336b8d49eb3a9c1318c2/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-* Current Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/b53b0ce6ac5638a3464d16bf29c659370724a676/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.pt-pt.xlf)
-* Current Handback Datetime: 2016-06-02 06:43:05
+* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-ios.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/13fe3cfd5eb7d4bccbc159953e6a830d4d65d4e5/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+* Current Handback File: [what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/a751256fd4f74f81fb4d63848cc943ed33bb87bc/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/what-happens-if-you-reset-your-device-using-the-company-portal-ios.1551b69b3a18b008653bdd636eba859a204a4c33.pt-pt.xlf)
+* Current Handback Datetime: 2016-06-02 22:31:04
 * [Back to Top](#report-top)
 
 ##### <a name='1d060bf093b735779ea8d515cd3d526a97ad01b2460'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
@@ -17186,7 +17189,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='57132fc9e167937b5f9c43a0b1e43ba177300a2f1236'></a> Source: [README.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/README.md)
+##### <a name='8b38ac1bf813dc8840b1522ce23fddf8de3997c31236'></a> Source: [README.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d07bd512335dcfb17e68e987446d650129df68b9/README.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
