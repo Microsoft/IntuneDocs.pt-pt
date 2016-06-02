@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
+ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
 
 # optional metadata
 
-ROBOTS:
+#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,12 +28,11 @@ ms.suite: ems
 
 # O dispositivo não é compatível com a versão máxima do sistema de operativo
 
-O dispositivo iOS não está em conformidade com a política do administrador de TI para a versão máxima do sistema operativo. Contacte o seu administrador de TI para obter ajuda.
+O administrador de TI definiu uma versão máxima do sistema operativo que pode ter no seu dispositivo Windows, mas o seu dispositivo não está em conformidade com essa definição. Para saber qual é o sistema operativo máximo permitido para o seu dispositivo, terá de contactar o administrador de TI.
 
 ### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 
