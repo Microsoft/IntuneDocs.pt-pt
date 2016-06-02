@@ -180,7 +180,7 @@ Terá de migrar para o Internet Explorer 10 ou posterior.     |  Dezembro de 201
 Nos dispositivos Android 6.0 e superior, duas novas mensagens são apresentadas aos utilizadores:  | Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?|         
 Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no seu dispositivo?  |  Consulte as tabelas seguintes para obter detalhes acerca destas duas mensagens. |         
 Texto da mensagem     | Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?       </br></br> Significado da mensagem</br></br>Permite que o número de telefone e o IMEI do dispositivo do utilizador sejam enviados para o serviço Intune e apresentados na consola de Administração, na página de Hardware.</br></br>NOTA: a aplicação Portal da Empresa nunca efetua ou gere chamadas telefónicas!
-O texto da mensagem é controlado pelo Google e não pode ser alterado.     |  Para ver a página **Hardware**, aceda a **Groups (Grupos)** > **All mobile devices (Todos os dispositivos móveis)** > **Devices (Dispositivos)**.  </br></br>Selecione o dispositivo do utilizador e aceda a **View Properties (Ver Propriedades)** > **Hardware**   
+O texto da mensagem é controlado pelo Google e não pode ser alterado.     |  Para ver a página **Hardware**, aceda a **Grupos** > **Todos os dispositivos móveis** > **Dispositivos**.  </br></br>Selecione o dispositivo do utilizador e aceda a **View Properties (Ver Propriedades)** > **Hardware**   
 
 Onde e quando é apresentada a mensagem  |A mensagem é apresentada quando os utilizadores iniciam sessão na aplicação do Portal da Empresa pela primeira vez para iniciar a inscrição do dispositivo.  
 ---------|---------

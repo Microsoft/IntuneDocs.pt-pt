@@ -161,9 +161,9 @@ Utilize o **Relatório de Aplicações Não Compatíveis** para ver a compatibil
 
 ###### Para executar o Relatório de Aplicações Não Compatíveis
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Compatíveis**.
 
-2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações conformes, as aplicações não conformes ou ambas e, em seguida, clique em **Ver Relatório**.
+2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, clique em **Ver Relatório**.
 
 #### Como especificar URLs para lojas de aplicações
 Para especificar o URL de uma aplicação na lista de aplicações compatíveis e não compatíveis ou na opção **Selecionar uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público** (apenas em iOS), utilize o seguinte formato:

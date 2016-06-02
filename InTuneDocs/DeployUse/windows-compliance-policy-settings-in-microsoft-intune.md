@@ -46,9 +46,9 @@ As definições apresentadas nesta secção são suportadas no Windows Phone 8.1
 -  **Permitir palavras-passe simples:**    defina esta opção
 - como **Sim** para permitir que os utilizadores criem palavras-passe simples,
 
-  como «**1234**» ou «**1111**».
+  como ’‘**1234**’’ ou ’‘**1111**’’.
 
-- Comprimento mínimo da palavra-passe: especifique o número mínimo de dígitos ou carateres que
+- Comprimento mínimo da palavra-passe: Especifique o número mínimo de dígitos ou carateres que
   -   a palavra-passe do utilizador tem de conter.
   -   **Tipo obrigatório de palavra-passe:** especifique se os utilizadores têm de criar
   -   uma palavra-passe **Alfanumérica** ou **Numérica**.
