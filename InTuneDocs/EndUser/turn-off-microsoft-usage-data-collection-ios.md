@@ -15,7 +15,7 @@ ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -35,6 +35,6 @@ Pode desativar a recolha desses dados no seu dispositivo iOS utilizando a defini
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

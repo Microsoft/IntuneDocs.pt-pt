@@ -52,9 +52,9 @@ Pode efetuar a maioria das mesmas tarefas no **site do Portal da Empresa** que p
 
 - [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Utilizar o dispositivo Android com o Intune](using-your-windows-device-with-intune.md)
+- [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 
