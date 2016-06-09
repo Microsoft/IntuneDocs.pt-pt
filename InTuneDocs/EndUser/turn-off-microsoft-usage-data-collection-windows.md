@@ -18,7 +18,7 @@ ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,6 +35,6 @@ Pode desativar a recolha desses dados no seu dispositivo Windows utilizando a de
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

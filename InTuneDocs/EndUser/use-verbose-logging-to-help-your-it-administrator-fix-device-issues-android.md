@@ -18,7 +18,7 @@ ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,6 +35,6 @@ Para ativar ou desativar o **Registo Verboso**, inicie sessão na aplicação Po
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
