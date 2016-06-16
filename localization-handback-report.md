@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#9445b4b171eb2102d73cf0e866e85b535274eee2221)
+ [InTuneDocs\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1e4ec1ef7012e0f37a89fe88e717a4dc969a5ce4/InTuneDocs/TOC.md) | InSyncHandedBackSuccess | [Details](#54c8223332895749f8c846fe57d0fec1e69c969d1129)
 
 ## Item Details
+##### <a name='9445b4b171eb2102d73cf0e866e85b535274eee2221'></a> Source: [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/5dad63df21d60b921114193ccb8b618879082a1b/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md)
+* Handoff File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/1f9bfcd4e5403b4f27a4593d70f909f502e78a5f/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.pt-pt.xlf)
+* Handoff Datetime: 2016-06-09 17:03:27
+* Handoff Reason: Include
+* Archive File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/9549df3f916906a6d1a99266207c4b3ba23d54bf/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/archive/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.pt-pt.xlf)
+* Archive Datetime: 2016-06-16 01:47:21
+* Handback File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/2e022c223cc5f6ec9717d4651d4880291587c67d/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.pt-pt.xlf)
+* Handback Datetime: 2016-06-16 03:24:43
+* [Back to Top](#report-top)
+
+##### <a name='54c8223332895749f8c846fe57d0fec1e69c969d1129'></a> Source: [InTuneDocs\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1e4ec1ef7012e0f37a89fe88e717a4dc969a5ce4/InTuneDocs/TOC.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\TOC.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/5dad63df21d60b921114193ccb8b618879082a1b/InTuneDocs/TOC.md)
+* Handoff File: [TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/caa97866422721d57a9026a2a5a1f84f4bce6154/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.pt-pt.xlf)
+* Handoff Datetime: 2016-06-14 17:06:32
+* Handoff Reason: Include
+* Archive File: [TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/9549df3f916906a6d1a99266207c4b3ba23d54bf/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/archive/TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.pt-pt.xlf)
+* Archive Datetime: 2016-06-16 01:47:21
+* Handback File: [TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/2e022c223cc5f6ec9717d4651d4880291587c67d/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/TOC.449cf0aed2f289067340bbeb1c65bfa4062628a2.pt-pt.xlf)
+* Handback Datetime: 2016-06-16 03:24:43
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
