@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,6 +56,6 @@ Também pode [ativar as suas aplicações de linha de negócios personalizadas i
 Além de restringir o movimento de dados, se um dispositivo se perder ou for roubado, ou se o utilizador já não estiver a trabalhar na sua empresa, pode [apagar seletivamente os dados da empresa](wipe-managed-company-app-data-with-microsoft-intune.md), deixando apenas os dados pessoais.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 
