@@ -30,7 +30,7 @@ Utilize as informações nesta secção para obter ajuda para resolver problemas
 
 Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
 
-A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se não conseguir localizar um código de erro específico nesta tabela, consulte [Códigos de Resultados do Windows Update Agent](http://go.microsoft.com/fwlink/?LinkID=221542)
+A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se não conseguir localizar um código de erro específico nesta tabela, consulte o artigo [Códigos de Resultados do Windows Update Agent](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Código de erro|Nome simbólico|Mais informações|
 |--------------|-----------------|--------------------|
@@ -249,25 +249,25 @@ A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se n
 - Param subitamente de reportar na consola de administração do Microsoft Intune.  
 - Registam uma elevada utilização da CPU.
 - As aplicações são instaladas lentamente quando são instaladas através do portal do Intune. 
-- O Microsoft Intune Center aciona o seguinte erro: *Ocorreu um erro ao atualizar o seu computador. Erro encontrado: código 0x800705b4*
-- O campo de estado na Consola de Administração do Intune > Grupos > Todos os Dispositivos apresenta: *Um ou mais agentes instalados neste computador têm erros. As informações para este computador podem não ser exatas ou atualizadas*
+- O Microsoft Intune Center aciona o seguinte erro: *Ocorreu um erro ao atualizar o seu computador. Erro encontrado: código 0x800705b4*.
+- O campo de estado na Consola de Administração do Intune > Grupos > Todos os Dispositivos apresenta: *Um ou mais agentes instalados neste computador têm erros. As informações para este computador podem não ser exatas ou atualizadas*.
 
 Este problema pode ocorrer se as atualizações substituídas (atualizações que foram substituídas por outra atualização) não foram recusadas durante um período prolongado. Durante determinados processos, como a instalação de uma aplicação, o Windows verifica todas as atualizações substituídas em sequência, para que as atualizações e as respetivas sucessoras possam ser mapeadas corretamente. Se a lista de atualizações substituídas ficar demasiado grande, esta tarefa de verificação pode causar uma elevada utilização da CPU devido à carga de processamento e ao tempo necessário. Este problema afeta principalmente os clientes com o Windows 7 devido ao elevado número de atualizações substituídas que estão disponíveis para o Windows 7. O Windows 8 e os sistemas operativos posteriores não têm tantas atualizações substituídas disponíveis e, por conseguinte, não estão tão suscetíveis a este problema.
 
 **Resolução**: para resolver este problema, siga estes passos:
-1. Inicie sessão na [consola de administração do Intune](https://manage.microsoft.com)
-2. Selecione **Atualizações** > **Todas as Atualizações**
+1. Inicie sessão na [consola de administração do Intune](https://manage.microsoft.com).
+2. Selecione **Atualizações** > **Todas as Atualizações**.
 3. Utilize a opção de filtro na barra de ferramentas superior para filtrar as atualizações substituídas.
 4. Rejeite todas as atualizações substituídas que possam ser aplicadas ao Windows 7 ou a aplicações (por exemplo, o Microsoft Office) que foram instaladas nos clientes afetados. 
 5. Reinicie os clientes afetados.
 
-Além disso, se estiver a executar o Windows 7, certifique-se de que tem a seguinte atualização instalada:[3050265 Cliente do Windows Update para o Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265)
+Além disso, se estiver a executar o Windows 7, certifique-se de que tem a seguinte atualização instalada:[3050265 Cliente do Windows Update para o Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
 
 ### Passos seguintes
-Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md)
+Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

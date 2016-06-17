@@ -37,7 +37,7 @@ Pode ver as informações do administrador de inquilinos através da consola de 
 ## Adicionar contas de utilizador individuais
 Utilize os seguintes passos para criar contas de utilizador adicionais no inquilino da sua avaliação. Lembre-se, cada conta de utilizador que adicionar é contabilizada como uma das 100 licenças obtidas como parte da avaliação gratuita do Intune.
 
-1.  No [centro de administração do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), escolha **Adicionar Utilizadores** &gt; **Novo**&gt; **Utilizador** para iniciar o assistente **Novos utilizadores**.
+1.  No [centro de administração do Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), escolha **Adicionar Utilizadores** &gt; **Novo** &gt; **Utilizador** para iniciar o assistente **Novos utilizadores**.
 
 2.  Na página **Detalhes** , preencha os campos obrigatórios.
 
@@ -56,9 +56,9 @@ Utilize os seguintes passos para criar contas de utilizador adicionais no inquil
     2.  Abra uma nova janela do browser no "modo de privacidade" (no Internet Explorer, escolha **Ferramentas** &gt; **Navegação InPrivate**) ou abra uma nova janela do browser noutro dispositivo e, em seguida, navegue para o URL que copiou no passo anterior. Quando os utilizadores iniciarem sessão pela primeira vez, têm de fornecer uma nova palavra-passe para a conta.
 
 ## Adicionar utilizadores em volume
-Para adicionar utilizadores em volume ao Intune, utilize o assistente **Adição de utilizadores em volume** para carregar um ficheiro de valores separados por vírgulas (CSV) que contenha os dados dos utilizadores. As ligações presentes no assistente permitem-lhe transferir um modelo em branco e um ficheiro CSV de exemplo. A primeira linha do ficheiro CSV tem de conter, pela ordem correta, cada uma das etiquetas de coluna de dados dos utilizadores. Em seguida, para cada utilizador no ficheiro CSV, tem de incluir o **nome de utilizador** (como **miguel@contoso.com**) e um **nome a apresentar** (como **Miguel Cardoso**)
+Para adicionar utilizadores em volume ao Intune, utilize o assistente **Adição de utilizadores em volume** para carregar um ficheiro de valores separados por vírgulas (CSV) que contenha os dados dos utilizadores. As ligações presentes no assistente permitem-lhe transferir um modelo em branco e um ficheiro CSV de exemplo. A primeira linha do ficheiro CSV tem de conter, pela ordem correta, cada uma das etiquetas de coluna de dados dos utilizadores. Em seguida, para cada utilizador no ficheiro CSV, tem de incluir o **nome de utilizador** (como **miguel@contoso.com**) e um **nome a apresentar** (como **Miguel Cardoso**).
 
-1.  No [centro de administração do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), escolha **Utilizadores** &gt; **Novo**
+1.  No [centro de administração do Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), escolha **Utilizadores** &gt; **Novo**.
 
 2.  Escolha **Adicionar em volume** para iniciar o assistente Adicionar utilizadores em volume.
 
@@ -84,6 +84,6 @@ Parabéns! Acabou de concluir o passo 2 das instruções da *avaliação do Micr
 >[&larr; **Inscrever-se para uma avaliação**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Criar grupos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

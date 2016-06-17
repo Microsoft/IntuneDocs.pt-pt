@@ -6,7 +6,7 @@ description:
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 Depois de implementar o Microsoft Intune, poderá deparar-se com problemas relacionados com a sua configuração ou com os clientes. Os recursos abaixo podem ajudá-lo a identificar a causa do problema para que o possa resolver.
 
 > [!NOTE]
-> Para criar um pedido de suporte ou para ver um pedido existente, clique [aqui](https://portal.office.com/admin/default.aspx) para visitar o centro de administração do Office 365. Para obter mais informações sobre as opções de suporte, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+> Para criar um pedido de suporte ou para ver um pedido existente, visite o [centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Para mais informações sobre as opções de suporte, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 ## Definir o problema
 
 -   Qual é o comportamento?
@@ -45,6 +45,8 @@ Depois de implementar o Microsoft Intune, poderá deparar-se com problemas relac
 -   Com que frequência ocorre este problema e é esporádico ou consistente?
 
 -   O utilizador poderá estar a deparar-se com um problema de autenticação? Se esta for uma possibilidade, verifique se o utilizador pode iniciar sessão noutros serviços que utilizam o Azure Active Directory. Além disso, veja se o utilizador pode iniciar sessão a partir de um dispositivo diferente.
+
+-   Verificou o estado do serviço? Pode monitorizar o estado de funcionamento do serviço do Intune no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo. 
 
 ## Recolher dados disponíveis
 
@@ -64,7 +66,7 @@ Depois de implementar o Microsoft Intune, poderá deparar-se com problemas relac
 
 -   Pode abrir um pedido de suporte. O suporte do Intune conseguirá ajudá-lo a resolver problemas de melhor forma, quando os tiver definido e recolhido os dados disponíveis.
 
-    Para criar um pedido de suporte clique [aqui](https://portal.office.com/admin/default.aspx) para visitar o centro de administração do Office 365. Para obter mais informações sobre as opções de suporte, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    Para criar um pedido de suporte, [visite o centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Para mais informações sobre as opções de suporte, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Recursos comunitários
 Pode encontrar outras informações úteis nestes recursos comunitários:
@@ -77,7 +79,7 @@ Pode encontrar outras informações úteis nestes recursos comunitários:
 
 -   [Os fóruns do Intune](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## Passos seguintes
+### Passos seguintes
 Os tópicos indicados abaixo incluem ajuda para a resolução de problemas específicos. Se estas informações de resolução de problemas não o ajudarem, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
@@ -93,9 +95,8 @@ Os tópicos indicados abaixo incluem ajuda para a resolução de problemas espec
 [Resolver problemas de configuração do cliente no Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Resolver problemas de atualizações de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-g
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

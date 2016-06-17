@@ -29,7 +29,7 @@ ms.suite: ems
 
 O ciclo de vida de dispositivos do Intune começa com a inscrição inicial de um dispositivo e, em seguida, passa por vários passos e acaba quando o dispositivo já não é necessário.
 
-![O ciclo de vida do dispositivo](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![O ciclo de vida do dispositivo](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Inscrever
 As atuais estratégias de gestão de dispositivos móveis (MDM) lidam com uma variedade de telemóveis, tablets e PCs (iOS, Android, Windows e Mac OS X). Se precisar de ter a capacidade de gerir o dispositivo, o que é normalmente o caso dos dispositivos pertencentes à empresa, o primeiro passo consiste em [configurar a inscrição do dispositivo](enroll-devices-in-microsoft-intune.md). Também pode gerir PCs Windows, inscrevendo-os no Intune (MDM) ou [instalando o software de cliente do Intune](manage-windows-pcs-with-microsoft-intune.md).
@@ -51,6 +51,6 @@ No mundo de TI moderno, proteger os dispositivos contra acesso não autorizado �
 Quando um dispositivo é perdido ou roubado, quando tem de ser substituído ou quando os utilizadores passam a ter outro cargo, geralmente está na altura de [extinguir ou limpar](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) o dispositivo. Pode fazê-lo de várias formas, desde repor o dispositivo, removê-lo da gestão ou eliminar os dados empresariais contidos no mesmo.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

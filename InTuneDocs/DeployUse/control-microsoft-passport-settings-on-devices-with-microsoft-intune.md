@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Controlar as definições do Microsoft Passport em dispositivos com o Microsoft Intune | Microsoft Intune
+title: Controlar as definições do Microsoft Passport em dispositivos | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ O Intune integra-se com o Passport for Work de duas formas:
 
 ## Para criar um Passport para a Política de trabalho
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Admin** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows** &gt; **Passport for Work** para abrir a página do Passport for Work, conforme apresentado abaixo.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Admin** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows** &gt; **Passport for Work** para abrir a página do Passport for Work, tal como mostrado a seguir.
 
     ![Página do Passport for Work](../media/passport.png)
 
@@ -57,8 +57,7 @@ O Intune integra-se com o Passport for Work de duas formas:
     - **Permitido** - Os utilizadores podem utilizar o tipo de caráter no PIN, mas não é obrigatório.
     - **Necessário** - Os utilizadores têm de incluir, pelo menos, um dos tipos de caráter no PIN. Por exemplo, é prática comum exigir pelo menos um caráter maiúsculo e um caráter especial.
     - **Não permitido** (predefinição) - Os utilizadores não podem utilizar estes tipos de carateres no PIN (este é também o comportamento se a definição não estiver configurada).
-    > [!TIP]
-    > Os carateres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] Os carateres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Expiração do PIN (dias)** - É recomendável especificar um período de expiração para um PIN, após o qual os utilizadores finais têm de alterá-lo. A predefinição é de 41 dias. 
 - **Memorizar histórico de PINs** - Utilize esta definição para restringir a reutilização de PINs utilizados anteriormente. Por predefinição, os últimos 5 PINs utilizados não podem ser reutilizados.
 
@@ -80,6 +79,6 @@ Para obter mais informações sobre o Microsoft Passport, consulte [o guia](http
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

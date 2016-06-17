@@ -42,6 +42,7 @@ As informações nesta secção irão ajudá-lo com a instalação do Portal da 
 As informações desta secção irão ajudá-lo com as ações que pode tomar depois do dispositivo Windows estar inscrito no Intune.
 
 - [Encriptar o dispositivo](encrypt-your-device-windows.md)</br>
+- [Definir ou alterar a palavra-passe](set-or-change-your-password-windows.md)</br>
 - [Repor (apagar) o dispositivo perdido ou roubado](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Anular a inscrição do dispositivo no Intune](unenroll-your-device-from-intune-windows.md)</br>
 - [What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?)](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ As informações desta secção irão ajudá-lo com as ações que pode tomar de
 As informações desta secção irão ajudá-lo a corrigir problemas que poderão surgir quando o dispositivo Windows está inscrito no Intune.
 
 - [O dispositivo não tem a versão mínima do sistema operativo necessária](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [O dispositivo não é compatível com a versão máxima do sistema de operativo](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [O dispositivo não é compatível com a versão máxima do sistema de operativo](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [O dispositivo não tem o BitLocker ativado](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [O dispositivo não tem software antimalware ativado](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [O dispositivo não tem o Arranque Seguro ativado](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que poderã
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

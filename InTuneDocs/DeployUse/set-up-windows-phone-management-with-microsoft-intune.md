@@ -31,8 +31,7 @@ Antes de poder gerir dispositivos Windows 10 Mobile ou Windows Phone com o Intun
 
 Para a maioria dos cenários, os utilizadores podem instalar a aplicação Portal da Empresa a partir da Loja Windows. Se gerir dispositivos Windows Phone 8.0 ou precisar de implementar o Portal da Empresa em dispositivos Windows Phone, também tem de transferir e assinar a aplicação Portal da Empresa. Consulte [Configurar a gestão do Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
-1.  **Configurar o Intune**
-    Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
+1.  **Configurar o Intune** Se ainda não o fez, prepare a gestão de dispositivos móveis, [definindo a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e definindo o MDM.
 
 2.  **Definir um alias DNS para o endereço do servidor de inscrição** (opcional)
 
@@ -55,13 +54,13 @@ Para a maioria dos cenários, os utilizadores podem instalar a aplicação Porta
 
       ![Caixa de diálogo Configurar a gestão de dispositivos móveis do Windows](../media/windows-device-enrollment.png)
 
-    3.  Introduza o URL do domínio verificado do site da empresa na caixa **Especificar um nome de domínio verificado** e, em seguida, clique em **Testar Deteção Automática**.
+    3.  Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, clique em **Testar Deteção Automática**.
 
 
 
-Não é necessário qualquer ação adicional, a não ser que pretenda implementar o Portal da Empresa nos dispositivos.  Os passos 2, 3 e 4 na consola de administração podem ser ignorados em segurança.
+Não é necessário qualquer ação adicional, a não ser que pretenda implementar o Portal da Empresa nos dispositivos.  Os passos 2 e 3 na consola de administração podem ser ignorados em segurança.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

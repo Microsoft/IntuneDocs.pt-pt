@@ -49,25 +49,25 @@ Antes de começar, terá de obter um token VPP da Apple e carregá-lo para a sua
 
 ## Para obter e carregar um token Apple VPP
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Admin** &gt; **iOS e Mac OS X** &gt;  **Volume Purchase Program**
+1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Admin** &gt; **iOS e Mac OS** &gt; **Volume Purchase Program**.
 
 2.  Clique na ligação **Conta Apple VPP** e, se ainda não o fez, inscreva-se no Volume Purchase Program for Business. Quando tiver terminado sessão, transfira o token VPP da Apple para a sua conta.
 
-3.  Na página **Gerir Apple Volume Purchase Program (VPP)** da consola do Intune, clique em **Carregar o token VPP**
+3.  Na página **Gerir Apple Volume Purchase Program (VPP)** da consola do Intune, clique em **Carregar o token VPP**.
 
-4.  Na caixa de diálogo **Carregar o token VPP**, introduza ou cole o nome do token VPP e o seu ID Apple e clique em **Carregar**
+4.  Na caixa de diálogo **Carregar o token VPP**, introduza ou cole o nome do token VPP e o seu ID Apple e clique em **Carregar**.
 
-5.  Na caixa de diálogo de aviso, clique na caixa de verificação para indicar que compreende que não é possível alterar mais tarde para outra conta VPP e, em seguida, clique em **Sim**
+5.  Na caixa de diálogo de aviso, clique na caixa de verificação para indicar que compreende que não é possível alterar mais tarde para outra conta VPP e, em seguida, clique em **Sim**.
 
 Na página **Volume Purchase Program**, pode agora ver informações sobre o token Apple VPP, incluindo a última atualização, quando irá expirar e a última sincronização com o Intune.
 
-Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, ao clicar em **Sincronizar agora**
+Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, ao clicar em **Sincronizar agora**.
 
-## Para carregar e implementar uma aplicação comprada em volume
+## Implementar uma aplicação adquirida em grandes volumes
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicações** &gt; **Software Gerido** &gt; **Aplicações Compradas em Volume**
+1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicações** &gt; **Software Gerido** &gt; **Aplicações Compradas em Volume**. Esta lista mostra todas as aplicações que foram sincronizadas a partir do serviço Apple VPP.
 
-2.  Utilize as instruções no tópico [Adicionar aplicações para dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) para concluir o carregamento, a criação e a implementação da aplicação.
+2.  Escolha a aplicação que pretende implementar, clique em **Gerir Implementação** e, em seguida, utilize as instruções no tópico [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, a criação e a implementação da aplicação.
 
 Se implementar a aplicação como uma instalação **Necessária**, é utilizada uma licença por cada utilizador que a instalar.
 
@@ -75,20 +75,20 @@ Para recuperar uma licença, tem de alterar a ação de implementação para **D
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação VPP pela primeira vez, é-lhe pedido para se associar ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação.
 
-> Observe a coluna **Estados dos Termos VPP** para ver o estado de aceitação de cada utilizador no qual a aplicação foi implementada.
+> [!TIP] Observe a coluna **Estados dos Termos VPP** para ver o estado de aceitação de cada utilizador no qual a aplicação foi implementada.
 
 Se não existirem licenças adicionais disponíveis, a implementação irá falhar.
 
 ## Para monitorizar as aplicações Apple VPP
 Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças são utilizadas a partir da área de trabalho **Aplicações**, no nó **Software Gerido** &gt; **Aplicações Compradas em Volume**.
 
-> Também pode utilizar a aplicação **Filtros** para examinar o estado de cada instalação da aplicação.
+> [!TIP] Também pode utilizar a aplicação **Filtros** para examinar o estado de cada instalação da aplicação.
 
 ### Consulte Também
-[Adicionar aplicações para dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Implementar aplicações no Microsoft Intune | Microsoft Intune
+title: Implementar aplicações | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ Neste procedimento, irá implementar a aplicação para utilizadores ou disposit
     [Veja que aplicações da Microsoft são compatíveis com as políticas de gestão de aplicações móveis.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Se a aplicação que está a implementar for compatível com perfis da VPN do Intune, a página **Perfil da VPN** é apresentada. Nesta página, pode optar por associar as aplicações iOS a um perfil da VPN que tenha implementado. A ligação à VPN será aberta automaticamente quando a aplicação for iniciada. Para disponibilizar um perfil da VPN, este deve ter ativada a definição de perfil **Por VPN de aplicação**.
- Para obter informações sobre como configurar perfis de VPN, incluindo suporte para associar perfis a aplicações, consulte [Ajudar os utilizadores a estabelecer uma ligação com o respetivo trabalho através de perfis da VPN com o Microsoft Intune](vpn-connections-in-microsoft-intune.md).
+ Para informações sobre como configurar perfis de VPN, incluindo suporte para associar perfis a aplicações, consulte [Ajudar os utilizadores a estabelecer uma ligação com o respetivo trabalho através de perfis de VPN com o Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
 ## Exemplo
 
@@ -52,9 +52,9 @@ Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utiliz
 
 ## Passos seguintes
 
-Depois de implementar uma aplicação, poderá ser útil monitorizar o progresso da mesma. Para obter mais informações, consulte [Monitorizar aplicações no Microsoft Intune](monitor-apps-in-microsoft-intune.md).
+Depois de implementar uma aplicação, poderá ser útil monitorizar o progresso da mesma. Para mais informações, consulte [Monitorizar aplicações no Microsoft Intune](monitor-apps-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

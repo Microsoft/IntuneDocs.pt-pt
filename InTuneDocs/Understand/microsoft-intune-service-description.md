@@ -51,7 +51,9 @@ Utilize as informações deste tópico para o ajudar a compreender a frequência
 
 Para saber mais sobre as alterações no serviço Intune, consulte [Novidades do Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). O [Blogue do Microsoft Intune](http://blogs.technet.com/b/microsoftintune/) também descreve as alterações no serviço e fornece sugestões úteis para que obtenha o máximo partido do Intune.
 
-As atualizações de serviço importantes também serão comunicadas diretamente a si a partir da consola do Intune no quadro de avisos.
+As atualizações de serviço importantes também lhe serão comunicadas no Centro de Mensagens do [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel.
+
+> [!NOTE] Pode monitorizar o estado de funcionamento do serviço do Intune no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo.  
 
 Seguem-se os tipos de notificações que a Microsoft fornece sobre o serviço Intune:
 -   Para ajudá-lo a planear as alterações do serviço, notificamo-lo pelo menos 30 a 90 dias antes da atualização de serviço, consoante o impacto da alteração. Isto irá acontecer através dos canais de comunicação no produto, como alertas do quadro. Estas alterações podem incluir:
@@ -86,6 +88,6 @@ Utilize estes recursos para obter mais informações sobre o Intune:
 [Novidades do Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

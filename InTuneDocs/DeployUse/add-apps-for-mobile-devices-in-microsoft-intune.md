@@ -31,19 +31,18 @@ Utilize as informações deste tópico para saber como adicionar aplicações ao
 
 
 > [!IMPORTANT]
-> As informações contidas neste tópico ajudam-no a adicionar as aplicações que pretende implementar em dispositivos inscritos e em PCs Windows inscritos. Se quiser adicionar aplicações a PCs Windows que gere com o software de cliente Intune, consulte o artigo [Adicionar aplicações para PCs Windows no Microsoft Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
+> As informações contidas neste tópico ajudam-no a adicionar as aplicações que pretende implementar em dispositivos inscritos e em PCs Windows inscritos. Se quiser adicionar aplicações a PCs Windows que gere com o software de cliente do Intune, consulte [Adicionar aplicações para PCs Windows no Microsoft Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Adicionar a aplicação
 Utilize o Intune Software Publisher para configurar as propriedades da aplicação e, quando aplicável, carregá-la para o seu espaço de armazenamento na nuvem através do seguinte procedimento:
 
-1.  Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Intune Software Publisher.
+1.  Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicações** &gt; **Adicionar Aplicações** para iniciar o publicador de software Intune.
 
-    > [!TIP]
-    > Poderá ter de introduzir o seu nome de utilizador e palavra-passe do Intune para que o publicador seja iniciado.
+    > [!TIP] Poderá ter de introduzir o seu nome de utilizador e a palavra-passe do Intune para que o publicador seja iniciado.
 
 2.  Na página **Configuração de software** do Software Publisher, selecione uma das seguintes opções para **Selecionar como este software é disponibilizado nos dispositivos**:
     - **Instalador de software**, para aplicações com a extensão **.msi**, ou **.exe**, especifique:
-        - **Selecionar o tipo de ficheiro de instalador de software** - Indica o tipo de software que pretende implementar. Por exemplo, se pretender instalar uma aplicação iOS, escolha **Pacote de Aplicações para iOS (ficheiro &#42;.ipa)**.
+        - **Selecionar o tipo de ficheiro de instalador de software** - Indica o tipo de software que pretende implementar. Por exemplo, se pretender instalar uma aplicação iOS, escolha **Pacote de Aplicação para iOS (ficheiro &#42;.ipa)**.
         - **Especificar a localização dos ficheiros de configuração do software** - Introduza a localização dos ficheiros de instalação ou clique em **Procurar** para selecionar a localização numa lista.
         - **Incluir ficheiros adicionais e subpastas da mesma pasta** - Apenas para o tipo de ficheiro do **Windows Installer**.<br>Alguns softwares que utilizam o Windows Installer necessitam de ficheiros de suporte que, normalmente, se encontram na mesma pasta que os ficheiros de instalação. Selecione esta opção se pretender também implementar estes ficheiros.<br>Este tipo de instalação utiliza algum do seu espaço de armazenamento na nuvem.
 
@@ -53,7 +52,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
             - O URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se quiser implementar a aplicação Ambiente de Trabalho Remoto da Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**. Para localizar o URL da aplicação, utilize um motor de busca para procurar a página da loja que contém a aplicação. Por exemplo, para localizar a aplicação Ambiente de Trabalho Remoto, pode pesquisar **Ambiente de Trabalho Remoto da Microsoft para Android**.
             - Um Web site. O Intune irá implementar um ícone de atalho para o site no dispositivo (conhecido como clip da Web).
             - Uma aplicação na Web. O Intune irá implementar um ícone de atalho para a aplicação no dispositivo.
-        - **Exigir um browser gerido para abrir esta ligação (Android e iOS apenas)** - Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no Intune Managed Browser, que tem de estar instalado nos respetivos dispositivos.<br>Para obter mais detalhes sobre o Managed Browser, consulte o artigo [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na nuvem.
+        - **Exigir um browser gerido para abrir esta ligação (Android e iOS apenas)** - Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no Intune Managed Browser, que tem de estar instalado nos respetivos dispositivos.<br>Para mais detalhes sobre o Managed Browser, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na nuvem.
 
   -   **Aplicação iOS gerida da loja de aplicações**, para aplicações gratuitas da iTunes Store que pretende gerir com políticas de MAM, especifique:
 
@@ -65,8 +64,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
 3.  Na página **Descrição do software**, configure o seguinte:
 
-    > [!TIP]
-    > Dependendo do tipo de instalador que está a utilizar, alguns destes valores podem ter sido introduzidos automaticamente ou podem não aparecer.
+    > [!TIP] Dependendo do tipo de instalador que está a utilizar, alguns destes valores podem ter sido introduzidos automaticamente.
 
     - **Publicador** - Introduza o nome do publicador da aplicação.
     - **Nome** - Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br>Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se o mesmo nome de aplicação existir duas vezes, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
@@ -83,8 +81,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
 4.  Na página **Requisitos**, selecione os requisitos que têm de ser cumpridos antes de ser possível iniciar a instalação da aplicação num dispositivo. Por exemplo, para um pacote de aplicação para iOS, pode selecionar a versão mínima do iOS necessária e o tipo de dispositivo que tem de ser, como um iPhone ou iPad.
 
-    > [!TIP]
-    > A página **Requisitos** não é apresentada para todos os tipos de aplicações.
+    > [!TIP] A página **Requisitos** não é apresentada para todos os tipos de aplicações.
 
 5.  Se escolher o tipo de ficheiro **Windows Installer**, são apresentadas mais páginas do assistente. Este tipo de ficheiro é utilizado quando implementa software em PCs com o Windows 10 ou posterior que estão inscritos no Intune.
 
@@ -94,6 +91,12 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
 A aplicação é apresentada no nó **Aplicações** da área de trabalho **Aplicações**.
 
+## Exemplos
+
+### Implementar aplicações MSI em dispositivos Windows 10
+Neste vídeo de quatro minutos, irá saber mais sobre como implementar aplicações do Microsoft Installer (msi) em dispositivos inscritos que executam o Windows 10.<br><br>
+
+<iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## Passos seguintes
 
@@ -103,6 +106,6 @@ Depois de criar uma aplicação, o passo seguinte é implementá-la. Para mais i
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

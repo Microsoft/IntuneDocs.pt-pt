@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,26 +37,26 @@ Isto ocorre quando a opção **Permitir o envio de e-mails a partir de aplicaç�
 
 ### Solução do Intune
 
-1.  Abra a Consola de Administração do Microsoft Intune, selecione a carga de trabalho **Política** &gt; **Política de Configuração**
+1.  Abra a Consola de Administração do Microsoft Intune, selecione a carga de trabalho **Política** &gt;**Política de Configuração**.
 
-2.  Selecione o perfil de e-mail e clique em **Editar**
+2.  Selecione o perfil de e-mail e escolha **Editar**.
 
 3.  Selecione **Permitir o envio de e-mails a partir de aplicações de terceiros.**
 
 ### Solução do Configuration Manager integrado com o Intune
 
-1.  Abra a consola do Configuration Manager &gt; **Ativos e Conformidade**
+1.  Abra a consola do Configuration Manager &gt; **Ativos e Conformidade**.
 
-2.  Expanda **Descrição geral** -&gt; **Definições de Conformidade** -&gt; **Acesso a Recursos da Empresa** e selecione **Perfis de E-mail**
+2.  Expanda **Descrição Geral** -&gt; **Definições de Conformidade** -&gt; **Acesso a Recursos da Empresa** e selecione **Perfis de E-mail**.
 
-3.  Clique com o botão direito do rato no perfil de e-mail e abra **Propriedades**
+3.  Clique com o botão direito do rato no perfil de e-mail e abra **Propriedades**.
 
-4.  No separador **Definições de Sincronização**, selecione **Permitir o envio de e-mails a partir de aplicações de terceiros**
+4.  No separador **Definições de Sincronização**, selecione **Permitir o envio de e-mails a partir de aplicações de terceiros**.
 
 ## Passos seguintes
-Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md)
+Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política do Windows no Microsoft Intune | Microsoft Intune
+title: Definições de política do Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Definições de política do Windows no Microsoft Intune
-Utilize a **Política de configuração geral do Windows** para configurar as definições para dispositivos Windows 8 e Windows 8.1 inscritos:
+Utilize a **Política de configuração geral do Windows (Windows 8.1 e posterior)** para configurar as definições para dispositivos Windows 8.1 e Windows 8 inscritos:
+
+## Definições de aplicabilidade
+
+|Nome da definição|Detalhes|
+|----------------|----------------------------------|
+|**Aplicar todas as configurações ao Windows 10**|Permite que as definições nesta política possam ser aplicadas aos dispositivos Windows 10, além dos dispositivos Windows 8 e Windows 8.1.|
 
 ## Definições de segurança
 
@@ -119,6 +125,6 @@ Utilize a **Política de configuração geral do Windows** para configurar as de
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

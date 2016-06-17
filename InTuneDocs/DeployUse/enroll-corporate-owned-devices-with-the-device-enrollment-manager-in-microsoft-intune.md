@@ -36,49 +36,54 @@ As organizações podem utilizar o Intune para gerir um grande número de dispos
 
 -   Configurar acesso a dados da empresa
 
-Utilize apenas a conta do gestor de dispositivos para os dispositivos que não irão receber e-mails ou iniciar sessão como um utilizador específico. Não é possível configurar dispositivos geridos com uma conta do gestor de dispositivos com acesso condicional, uma vez que estes também são cenários por utilizador. O gerente da loja não pode repor o dispositivo a partir do portal da empresa.
 
-Exemplos de cenários do gestor de inscrição de dispositivos: Um restaurante pretende obter tablets de ponto de venda para os seus empregados de mesa e monitores de apresentação de pedidos para os empregados da cozinha. Os empregados nunca precisam de aceder a dados da empresa ou de iniciar sessão como um utilizador. O administrador do Intune cria uma conta do gestor de inscrição de dispositivos e inscreve os dispositivos da empresa através dessa conta.
+**Exemplos de cenários do gestor de inscrição de dispositivos:** um restaurante pretende obter tablets de ponto de venda para os empregados de mesa e monitores de apresentação de pedidos para os empregados da cozinha. Os empregados nunca precisam de aceder a dados da empresa ou de iniciar sessão como um utilizador. O administrador do Intune cria uma conta do gestor de inscrição de dispositivos e inscreve os dispositivos da empresa através dessa conta. Em alternativa, o administrador pode conceder as credenciais de gestor de inscrição de dispositivos ao gestor do restaurante, o que lhe permitirá inscrever e gerir os dispositivos.
 
-Em alternativa, o administrador pode conceder as credenciais de gestor de inscrição de dispositivos ao gestor do restaurante, o que lhe permitirá inscrever e gerir os dispositivos. O administrador ou gestor podem implementar aplicações específicas de cada função nos dispositivos do restaurante.
+O administrador ou gestor podem implementar aplicações específicas de cada função nos dispositivos do restaurante. Um administrador também pode selecionar o dispositivo na consola do Intune e extingui-lo da gestão de dispositivos móveis com a consola de administração.
+
+Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos (DEM) têm as seguintes restrições:
+  - Nenhum utilizador específico, de modo que todos os dispositivos "não têm utilizadores;" por conseguinte, não está disponível o acesso a dados de e-mail ou empresariais apesar de a VPN, por exemplo, poder fornecer acesso a dados de aplicações de dispositivos
+  - Sem acesso condicional porque estes cenários são por utilizador
+  - Não é possível repor dispositivos a partir do portal da empresa
+  - Não existem aplicações de Apple Volume Purchase Program devido aos requisitos de Apple ID por utilizador para a gestão de aplicações
+  - Também não podem ser inscritos com o Apple Configurator ou o programa de inscrição de dispositivos Apple (dispositivos iOS)
 
 > [!NOTE]
-> Um administrador também pode selecionar o dispositivo na consola do Intune e extingui-lo da gestão de dispositivos móveis com a consola de administração. As contas de utilizador do gestor de inscrição de dispositivos com mais de 20 dispositivos inscritos poderão ter problemas ao utilizar a aplicação Portal da Empresa.
+> As contas de utilizador do gestor de inscrição de dispositivos com mais de 20 dispositivos inscritos poderão ter problemas ao utilizar a aplicação Portal da Empresa. Para implementar aplicações da empresa em dispositivos geridos com o gestor de inscrição de dispositivos, implemente a aplicação Portal da Empresa como uma **Instalação Necessária** na conta de utilizador do gestor de inscrição de dispositivos.
+> Para melhorar o desempenho, ver a aplicação Portal da Empresa num dispositivo DEM mostra apenas os dispositivos locais, e apenas se tiverem sido inscritos utilizando a aplicação Portal da Empresa. A gestão remota de outros dispositivos DEM só pode ser efetuada a partir da consola do Intune.
 
-## Para implementar aplicações da empresa em dispositivos geridos com o gestor de inscrição de dispositivos, implemente a aplicação Portal da Empresa como uma **Instalação Necessária** na conta de utilizador do gestor de inscrição de dispositivos.
-Criar contas de gestor de inscrição de dispositivos As contas de gestor de inscrição de dispositivos são contas de utilizador que têm permissão para inscrever um grande número de dispositivos pertencentes à empresa.
+## Criar contas de gestor de inscrição de dispositivos
+As contas de gestor de inscrição de dispositivos são contas de utilizador que têm permissão para inscrever um grande número de dispositivos pertencentes à empresa. Apenas os utilizadores da consola do Intune podem ser gestores de inscrição de dispositivos.
 
-#### Apenas os utilizadores da consola do Intune podem ser gestores de inscrição de dispositivos.
+#### Adicionar um gestor de inscrição de dispositivos ao Intune
 
-1.  Adicionar um gestor de inscrição de dispositivos ao Intune
+1.  Aceda ao [portal de contas do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) e inicie sessão na sua conta de administrador.
 
-2.  Aceda ao [portal de contas do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) e inicie sessão na sua conta de administrador.
+2.  Clique em **Adicionar utilizador**.
 
-3.  Clique em **Adicionar utilizador** Confirme que a conta de utilizador que será o gestor de inscrição de dispositivos é apresentada. Caso contrário, adicione o utilizador ao clicar em **Novo** e concluir o processo Adicionar utilizador. É necessária uma licença de subscrição para cada utilizador que aceda ao Serviço. O *gestor de inscrição de dispositivos* não pode ser um administrador do Intune.
+3.  Confirme que a conta de utilizador que será o gestor de inscrição de dispositivos é apresentada. Caso contrário, adicione o utilizador ao clicar em **Novo** e concluir o processo Adicionar utilizador. É necessária uma licença de subscrição para cada utilizador que aceda ao Serviço. O *gestor de inscrição de dispositivos* não pode ser um administrador do Intune. Determine se precisa de adicionar mais licenças antes de utilizar esta funcionalidade.
 
-4.  Determine se precisa de adicionar mais licenças antes de utilizar esta funcionalidade.
+4.  Inicie sessão na [consola de administração do Microsoft Intune](http://manage.microsoft.com) com o seu início de sessão de administrador.
 
-5.  Inicie sessão na [consola de administração do Microsoft Intune](http://manage.microsoft.com) com o seu início de sessão de administrador. No painel de navegação, clique em **Admin**, aceda à **Gestão de Administrador** e selecione **Gestor de Inscrição de Dispositivos**.
+5.  No painel de navegação, clique em **Admin**, aceda à **Gestão de Administrador** e selecione **Gestor de Inscrição de Dispositivos**. A página Gestores de Inscrição de Dispositivos é aberta.
 
-6.  A página Gestores de Inscrição de Dispositivos é aberta. Clique em **Adicionar…**.
+6.  Clique em **Adicionar…**. A caixa de diálogo **Adicionar Gestor de Inscrição de Dispositivos** é aberta.
 
-7.  A caixa de diálogo **Adicionar Gestor de Inscrição de Dispositivos** é aberta. Introduza o **ID de Utilizador** da conta do Intune e, em seguida, clique em **OK**.
+7.  Introduza o **ID de Utilizador** da conta do Intune e, em seguida, clique em **OK**. O utilizador do gestor de inscrição de dispositivos não pode ser um administrador do Intune.
 
-8.  O utilizador do gestor de inscrição de dispositivos não pode ser um administrador do Intune.
+8.  O gestor de inscrição de dispositivos agora pode inscrever dispositivos móveis com o mesmo procedimento utilizado por um utilizador final num cenário BYOD no portal da empresa.
 
-## O gestor de inscrição de dispositivos agora pode inscrever dispositivos móveis com o mesmo procedimento utilizado por um utilizador final num cenário BYOD no portal da empresa.
+## Eliminar um gestor de inscrição de dispositivos do Intune
 
-1.  Eliminar um gestor de inscrição de dispositivos do Intune
+1.  Inicie sessão no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com o seu início de sessão de administrador.
 
-2.  Inicie sessão no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com o seu início de sessão de administrador. No painel de navegação, clique em **Admin** , aceda à **Gestão de Administrador** e selecione **Gestor de Inscrição de Dispositivos**.
+2.  No painel de navegação, clique em **Admin** , aceda à **Gestão de Administrador** e selecione **Gestor de Inscrição de Dispositivos**. A página Gestores de Inscrição de Dispositivos é aberta.
 
-3.  A página Gestores de Inscrição de Dispositivos é aberta. Selecione o **Utilizador** do gestor de inscrição de dispositivos que pretende eliminar e, em seguida, clique em **Eliminar**. Este utilizador não será eliminado do Intune e os dispositivos geridos pelo mesmo continuarão inscritos no Intune.
+3.  Selecione o **Utilizador** do gestor de inscrição de dispositivos que pretende eliminar e, em seguida, clique em **Eliminar**. Este utilizador não será eliminado do Intune e os dispositivos geridos pelo mesmo continuarão inscritos no Intune. A eliminação de um gestor de inscrição de dispositivos impede o utilizador de inscrever mais dispositivos no Intune.
 
-4.  A eliminação de um gestor de inscrição de dispositivos impede o utilizador de inscrever mais dispositivos no Intune.
+4.  Clique em **Sim** para confirmar que pretende eliminar o gestor de inscrição de dispositivos.
 
-Clique em **Sim** para confirmar que pretende eliminar o gestor de inscrição de dispositivos. A eliminação de um gestor de inscrição de dispositivos não afeta os dispositivos inscritos.
-
--   Quando um gestor de inscrição de dispositivos é eliminado:
+A eliminação de um gestor de inscrição de dispositivos não afeta os dispositivos inscritos. Quando um gestor de inscrição de dispositivos é eliminado:
 
 -   Os dispositivos inscritos não são afetados
 
@@ -88,7 +93,9 @@ Clique em **Sim** para confirmar que pretende eliminar o gestor de inscrição d
 
 -   As credenciais da conta de gestor de inscrição de dispositivos eliminada continuam sem poder apagar ou extinguir dispositivos
 
+-   A relação da conta do gestor de inscrição de dispositivos eliminada com os dispositivos inscritos é mantida, mas não é possível inscrever mais dispositivos
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

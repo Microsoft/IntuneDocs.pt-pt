@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,13 @@ Se estas informações não resolverem o seu problema, consulte [Como obter supo
 
 1.  Verifique se a sua conta existe no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) ou se está desativada.
 
-2.  Certifique-se de que está aprovisionado nesta conta no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+2.  Certifique-se de que está aprovisionado nesta conta no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), certifique-se de que está a utilizar o nome de utilizador e a palavra-passe corretos para iniciar sessão no Intune e de que estão no formato: **joe@domain.com**
+3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), certifique-se de que está a utilizar o nome de utilizador e a palavra-passe corretos para iniciar sessão no Intune e de que estão no formato: **joe@domain.com**.
 
 ### Se as informações para Contactar TI estiverem em falta no portal da empresa
 
-1.  Na consola de administração do Intune, clique em **Admin** &gt; **Portal da Empresa**
+1.  Na consola de administração do Intune, escolha **Admin**&gt;**Portal da Empresa**.
 
 2.  Defina os detalhes de **Contactar TI** .
 
@@ -63,7 +63,7 @@ Se estas informações não resolverem o seu problema, consulte [Como obter supo
 
 4.  Se a barra de progresso da transferência da aplicação iOS estiver completa, mas a instalação da aplicação falhar, os ficheiros de aplicação que forneceu poderão ter algum problema.
 
-### Se ao clicar numa ligação para uma aplicação iOS for direcionado para uma localização anterior na App Store do iTunes
+### Se uma ligação para uma aplicação iOS for direcionada para uma localização anterior na App Store do iTunes
 
 1.  A sessão atual da App Store do iTunes está aberta na página da aplicação anterior.
 
@@ -87,13 +87,13 @@ Se estas informações não resolverem o seu problema, consulte [Como obter supo
 
 ### Erro: o Publicador não existe
 Utiliza **Adicionar Outro Contrato de Software** para adicionar um contrato de licença de terceiros. Tenta adicionar o publicador a partir da página **Outro contrato de licenciamento de software**. A página fornece uma lista dos publicadores existentes por ordem alfabética.
-Introduz o publicador em falta, mas recebe o erro **O publicador não existe** 
+Introduz o publicador em falta, mas recebe o erro **O publicador não existe**. 
 
 Isto é propositado. O Intune fornece monitorização de licenças apenas para títulos de software populares. O Intune requer que, pelo menos, 4 contas diferentes comuniquem o software antes deste ser disponibilizado como opção na carga de trabalho de licenciamento.
 
 ### Se as aplicações geridas não estiverem a comunicar o estado da instalação
 
-O estado de instalação não foi recolhido para instalações de aplicações geridas antes da atualização de serviço Microsoft Intune em Novembro de 2014. No que respeita aos dispositivos que tenham instalado aplicações geridas antes desta atualização de serviço, atualize cada implementação de aplicação associada com a ação de implementação adequada (por exemplo, **Instalação disponível**). Cada dispositivo atualizará a aplicação durante a verificação automática de aplicações disponíveis. Para mais informações, consulte [Atualizar aplicações com o Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune)
+O estado de instalação não foi recolhido para instalações de aplicações geridas antes da atualização de serviço Microsoft Intune em Novembro de 2014. No que respeita aos dispositivos que tenham instalado aplicações geridas antes desta atualização de serviço, atualize cada implementação de aplicação associada com a ação de implementação adequada (por exemplo, **Instalação disponível**). Cada dispositivo atualizará a aplicação durante a verificação automática de aplicações disponíveis. Para mais informações, consulte [Atualizar aplicações com o Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>Códigos de erro de implementação de aplicações
 A tabela seguinte lista erros comuns que poderão ocorrer durante a implementação da aplicação Intune, as causas prováveis e possíveis soluções para o ajudar a resolvê-los.
@@ -106,9 +106,9 @@ A tabela seguinte lista erros comuns que poderão ocorrer durante a implementaç
 |0x80073CFB|O pacote fornecido já está instalado e a reinstalação do pacote está bloqueada|Poderá receber este erro se estiver a instalar um pacote que não é idêntico ao pacote que já está instalado. Verifique se a assinatura digital também faz parte do pacote. Quando um pacote é reconstruído ou assinado novamente, esse pacote já não é totalmente idêntico ao pacote anteriormente instalado. Existem duas opções possíveis para corrigir este erro:<br /><br />-   Incrementar o número de versão da aplicação e, em seguida, reconstruir e voltar a assinar o pacote.<br />-   Remover o pacote antigo de todos os utilizadores do sistema antes de instalar o pacote novo.|
 
 ### Passos seguintes
-Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md)
+Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

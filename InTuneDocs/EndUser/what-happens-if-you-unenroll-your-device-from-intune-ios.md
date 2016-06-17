@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -44,11 +44,11 @@ Ao anular a inscrição do dispositivo iOS no Intune:
 
 -   Os perfis de e-mail da empresa são removidos do dispositivo.
 
-Para obter instruções sobre como anular a inscrição, consulte [Terminar a inscrição do seu dispositivo](unenroll-your-device-from-intune-ios.md).
+Para instruções sobre como anular a inscrição, consulte [Anular a inscrição do seu dispositivo](unenroll-your-device-from-intune-ios.md).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

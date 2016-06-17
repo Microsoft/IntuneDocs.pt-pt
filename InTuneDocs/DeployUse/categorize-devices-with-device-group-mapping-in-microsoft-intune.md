@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Categorizar os dispositivos com o mapeamento de grupo de dispositivos no Microsoft Intune | Microsoft Intune
+title: Categorizar os dispositivos com o mapeamento de grupo de dispositivos | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,7 +45,7 @@ Exemplos de categorias:
 No entanto, pode configurar quaisquer categorias que pretender.
 
 ## Como configurar o mapeamento de grupo de dispositivos
-1. Cria um grupo de dispositivos do Intune para cada categoria que pretende utilizar. Para obter informações sobre como criar grupos, consulte [Utilizar grupos para gerir utilizadores e dispositivos com o Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+1. Cria um grupo de dispositivos do Intune para cada categoria que pretende utilizar. Para informações sobre como criar grupos, consulte [Utilizar grupos para gerir utilizadores e dispositivos com o Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 2. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Admin**.
 3. Na área de trabalho **Administração**, expanda **Gestão de Dispositivos Móveis** e, em seguida clique em **Mapeamento de Grupos de Dispositivos**.
 4. Na página **Mapeamento de Grupo de Dispositivos**, ative o mapeamento de grupo de dispositivos.
@@ -58,6 +58,6 @@ Agora, quando os utilizadores inscreverem o respetivo dispositivo, será apresen
 ### Consulte também
 [Utilizar grupos para gerir utilizadores e dispositivos com o Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

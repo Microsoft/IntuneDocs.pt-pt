@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política do Mac OS X no Microsoft Intune | Microsoft Intune
+title: Definições de política do Mac OS X | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -43,12 +43,12 @@ Se a definição que procura não for apresentada nesta lista, poderá conseguir
 |----------------|---------------|
 |**Pedir uma palavra-passe para desbloquear dispositivos**|Especifica se o utilizador tem de utilizar uma palavra-passe para aceder ao seu computador Mac. **Importante:** Ao contrário dos dispositivos iOS, nos dispositivos Mac OS X, o utilizador não é imediatamente notificado para atualizar a palavra-passe para estar em conformidade com esta definição.|
 |**Tipo obrigatório de palavra-passe**|Especifica se a palavra-passe utilizada só pode ser Numérica ou se tem de ser **Alfanumérica** (conter letras e números). **Importante:** Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.|
-|**Número de carateres complexos necessários na palavra-passe**|Especifica o número de carateres complexos necessários na palavra-passe (de **0** - **4**)).<br /><br />Um caráter complexo é um símbolo, tal como "**?**"'|
+|**Número de carateres complexos necessários na palavra-passe**|Especifica o número de carateres complexos necessários na palavra-passe (de **0** - **4**).<br /><br />Um caráter complexo é um símbolo, tal como "**?**"|
 |**Comprimento mínimo da palavra-passe**|Especifica o comprimento mínimo para a palavra-passe (entre **4** e **14** carateres).|
-|**Permitir palavras-passe simples**|Permite a utilização de palavras-passe simples, tal como "**0000**" ou "**1234**"'.|
+|**Permitir palavras-passe simples**|Permite a utilização de palavras-passe simples, tal como "**0000**" ou "**1234**".|
 |**Minutos de inatividade antes da palavra-passe ser exigida**|Especifica o período de tempo durante o qual o computador tem de estar inativo antes de ser exigida uma palavra-passe para o desbloquear.|
 |**Expiração da Palavra-passe (dias)**|Especifica o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** - **255** dias).|
-|**Memorizar histórico de palavras-passe**|Esta definição é utilizada para impedir que o utilizador utilize uma palavra-passe utilizada anteriormente. Quando for definida, também pode definir **Impedir a reutilização de palavras-passe anteriores** para especificar o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas (de **1** - **24**)).|
+|**Memorizar histórico de palavras-passe**|Esta definição é utilizada para impedir que o utilizador utilize uma palavra-passe utilizada anteriormente. Quando for definida, também pode definir **Impedir a reutilização de palavras-passe anteriores** para especificar o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas (de **1** - **24**).|
 |**Minutos de inatividade antes de a proteção de ecrã ser ativada**|Especifica o período de tempo durante o qual o computador tem de estar inativo antes de a proteção de ecrã ser ativada.|
 
 ### Definições para aplicações compatíveis e não compatíveis
@@ -63,12 +63,11 @@ Na lista Aplicações **Conformes e &amp;Não Conformes para Mac OS X**, ative *
 |----------------|---------------|
 |**Comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Apresenta uma lista das aplicações Mac OS X que os utilizadores não têm permissão para instalar. Se os utilizadores instalarem qualquer uma destas aplicações, estas serão comunicadas nos **Relatórios de Aplicações Não Conformes**.|
 |**Comunicar não conformidade quando os utilizadores instalam aplicações não listadas**|Apresenta uma lista das aplicações Mac OS X que os utilizadores têm permissão para instalar. Se os utilizadores instalarem quaisquer outras aplicações, estas serão comunicadas nos **Relatórios de Aplicações Não Conformes**.|
-|**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome à sua escolha, o publicador da aplicação (opcional) e o ID do pacote da aplicação. **Sugestão:** Para localizar o ID do pacote de uma aplicação, utilize os passos seguintes num computador Mac que tenha a aplicação instalada:<ol><li>Abra a pasta na qual a aplicação está instalada (por exemplo, **/Applications**))</li><li>Selecione o grupo *&lt;Nome da Aplicação&gt;***.app** e escolha **Mostrar Conteúdo do Pacote**</li><li>Abra o ficheiro **Info.plist** </li><li>Verifique o valor associado à chave **CFBundleIdentifier**</li></ol>O formato do ID do pacote é **com.contoso.appname**|
+|**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome à sua escolha, o publicador da aplicação (opcional) e o ID do pacote da aplicação. **Sugestão:** Para localizar o ID do pacote de uma aplicação, utilize os passos seguintes num computador Mac que tenha a aplicação instalada:<ol><li>Abra a pasta na qual a aplicação está instalada (por exemplo, **/Applications**)</li><li>Selecione o grupo *&lt;Nome da Aplicação&gt;***.app** e escolha **Mostrar Conteúdo do Pacote**</li><li>Abra o ficheiro **Info.plist** </li><li>Verifique o valor associado à chave **CFBundleIdentifier**</li></ol>O formato do ID do pacote é **com.contoso.appname**|
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o ID do pacote de aplicações no ficheiro.|
 |**Editar**|Permite-lhe editar o nome, o fabricante e o ID do pacote de aplicações da aplicação selecionada.|
 |**Eliminar**|Elimina a aplicação selecionada da lista.|
-> [!TIP]
-> Para mais informações sobre relatórios do Intune, consulte [Compreender as operações do Microsoft Intune através da utilização de relatórios](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP] Para mais informações sobre relatórios do Intune, consulte [Compreender as operações do Microsoft Intune através da utilização de relatórios](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Quando um dispositivo Mac OS X está no modo de Suspensão, não é possível entregar ou inventariar políticas e perfis. Como resultado, a consola do Intune pode apresentar temporariamente o estado **Definições de política em erro** até à próxima vez que o dispositivo sair do modo de Suspensão.
@@ -127,6 +126,6 @@ Pode criar o ficheiro de perfil de configuração utilizado pela política perso
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

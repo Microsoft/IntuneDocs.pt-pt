@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política do Exchange ActiveSync no Microsoft Intune | Microsoft Intune
+title: Definições de política do Exchange ActiveSync | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -86,6 +86,6 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

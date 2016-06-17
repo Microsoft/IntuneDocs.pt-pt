@@ -29,7 +29,7 @@ ms.suite: ems
 
 O ciclo de vida das aplicações do Intune começa quando uma aplicação é adicionada e avança por fases adicionais até ser removida.
 
-![Ciclo de vida das aplicações](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Ciclo de vida das aplicações](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Adicionar
 
@@ -56,6 +56,6 @@ O Intune fornece várias formas para ajudar a proteger os dados nas suas aplica�
 Eventualmente, é provável que as aplicações implementadas fiquem desatualizadas e tenham de ser removidas. O Intune facilita a [extinção de aplicações no serviço](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

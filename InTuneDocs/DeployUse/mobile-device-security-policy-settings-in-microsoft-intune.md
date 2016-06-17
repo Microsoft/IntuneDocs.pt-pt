@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política de segurança de dispositivos móveis no Microsoft Intune | Microsoft Intune
+title: Definições de política de segurança de dispositivos móveis | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -217,6 +217,6 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

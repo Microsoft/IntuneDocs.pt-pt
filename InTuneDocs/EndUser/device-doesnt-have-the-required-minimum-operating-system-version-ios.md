@@ -15,7 +15,7 @@ ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -33,6 +33,6 @@ O dispositivo iOS não tem a versão mínima do sistema operativo requerida pelo
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

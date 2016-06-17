@@ -28,17 +28,17 @@ ms.suite: ems
 
 # Repor (apagar) o dispositivo perdido ou roubado
 
-Se o seu telemóvel se perder ou for roubado, pode repô-lo para as definições de fábrica a partir da aplicação ou site do Portal da Empresa. Para obter instruções sobre como utilizar a aplicação Portal da Empresa, siga os seguintes passos ou veja este [vídeo](http://aka.ms/ly1x17). Também pode [repor o dispositivo através do site do Portal da Empresa](reset-your-device-cpwebsite.md)
+Se o seu telemóvel Android se perder ou for roubado, pode repô-lo para as definições de fábrica a partir da aplicação ou site do Portal da Empresa. Para obter instruções sobre como utilizar a aplicação Portal da Empresa, siga os seguintes passos ou veja este [vídeo](http://aka.ms/ly1x17). Também pode [repor o dispositivo através do site do Portal da Empresa](reset-your-device-cpwebsite.md).
 
-Para obter mais informações sobre o que acontece se repõe o seu dispositivo, veja [O que acontece se utilizar o Portal da Empresa para repor o seu dispositivo](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+Para mais informações sobre o que acontece se repõe o seu dispositivo, consulte [O que acontece se utilizar o Portal da Empresa para repor o seu dispositivo](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> Repor um dispositivo para as predefinições de fábrica remove, quer as suas informações pessoais, quer de trabalho, do mesmo.
+> [!WARNING] Repor um dispositivo para as predefinições de fábrica remove, quer as suas informações pessoais, quer de trabalho, do mesmo.
 
 1.  No seu browser, abra o [Web site do Portal da Empresa](http://portal.manage.microsoft.com) e inicie sessão na sua conta profissional.
 
 2.  Toque em **Os Meus Dispositivos** e selecione o nome do dispositivo perdido ou roubado.
 
-3.  Clique em **Repor** &gt; **Repor**
+3.  Clique em **Repor** &gt; **Repor**.
 
 Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao seu administrador de TI para o fazer por si.
 
@@ -47,6 +47,6 @@ Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao seu admin
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

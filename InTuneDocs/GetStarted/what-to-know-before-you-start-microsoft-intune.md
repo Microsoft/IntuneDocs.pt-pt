@@ -26,11 +26,22 @@ ms.suite: ems
 ---
 
 # What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)
+
 ## Capacidades gerais de gestão de dispositivos e aplicações
-Antes de começar a configurar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], deve rever primeiro o artigo [Introdução ao Intune](/intune/understand-explore/introduction-to-microsoft-intune) e familiarizar-se com as capacidades do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] descritas nesta secção. Depois de se familiarizar com as capacidades do Intune, estará preparado para configurar a sua subscrição. Se tive começado com uma subscrição de avaliação, poderá convertê-la numa subscrição completa mais tarde. Veja [Como comprar o Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)
+Antes de começar a configurar o Microsoft Intune, deve rever primeiro [Introdução ao Intune](/intune/understand-explore/introduction-to-microsoft-intune) e familiarizar-se com as capacidades do Intune descritas nesta secção. Depois de se familiarizar com as capacidades do Intune, estará preparado para configurar a sua subscrição. Se tive começado com uma subscrição de avaliação, poderá convertê-la numa subscrição completa mais tarde. Consulte [Como comprar o Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
 ### Gerir dispositivos móveis e computadores sem necessidade de servidores ou intranet
-Pode gerir dispositivos móveis e computadores, mesmo que esses dispositivos não estejam associados a um domínio ou que não sejam trazidos para o local. Isto torna o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ideal para empresas com forças de trabalho móveis ou distribuídas geograficamente.
+Pode gerir os seguintes dispositivos móveis e computadores:
+
+-   Apple iOS 7.1 e posterior
+-   Google Android 4.0 e posterior (incluindo o Samsung KNOX)
+-   Windows Phone 8.0 e posterior
+-   Windows RT e Windows 8.1 RT
+-   PCs com o Windows 8.1
+-   PCs com o Windows 10 (versões Home, Pro, Educação e Enterprise)
+-   Mac OS X 10.9 e posterior
+
+Pode gerir estes dispositivos PCs, mesmo que não estejam associados a um domínio ou que não sejam trazidos para o local. Esta capacidade torna o Intune ideal para empresas com forças de trabalho móveis ou distribuídas geograficamente. Consulte [Escolher como gerir dispositivos](/Intune/Deploy-use/choose-how-to-manage-devices) para mais informações sobre a gestão de dispositivos.
 
 ### Exigir encriptação de dispositivos móveis e computadores
 Poderá ser exigido aos dispositivos móveis que suportem encriptação que a utilizem. Também pode exigir que os computadores que suportam encriptação de unidade BitLocker a utilizem. Se um dispositivo móvel ou computador com encriptação for perdido ou roubado, os dados no suporte de dados de armazenamento do dispositivo são ilegíveis, o que ajuda a proteger esses dados de furtos.
@@ -45,10 +56,10 @@ Pode criar alertas para ser notificado quando existir um problema com um disposi
 Os utilizadores podem utilizar o Portal da Empresa para inscrever dispositivos, instalar software licenciado pelo site ou para encontrar informações de contacto para administradores de TI.
 
 ### Suporte para autenticação multifator
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] suporta a autenticação multifator (MFA). Para obter detalhes, consulte [Proteger os dispositivos Windows com a autenticação multifator](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication)
+O Intune suporta a autenticação multifator (MFA). Para detalhes, consulte [Proteger os dispositivos Windows com a autenticação multifator](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication).
 
 ### Disponível em vários idiomas
-O Intune está disponível nos seguintes idiomas: alemão, checo, chinês (simplificado e tradicional), coreano, dinamarquês, espanhol, finlandês, francês, grego, húngaro, inglês, italiano, japonês, neerlandês, norueguês, polaco, português, romeno, russo, sueco e turco. Para obter uma lista dos países/regiões onde o serviço do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] é suportado, veja a [Disponibilidade Internacional](https://products.office.com/en-us/business/international-availability)
+O Intune está disponível nos seguintes idiomas: alemão, checo, chinês (simplificado e tradicional), coreano, dinamarquês, espanhol, finlandês, francês, grego, húngaro, inglês, italiano, japonês, neerlandês, norueguês, polaco, português, romeno, russo, sueco e turco. Para obter uma lista dos países onde o serviço do Intune é suportado, consulte [Disponibilidade Internacional](https://products.office.com/en-us/business/international-availability).
 
 ## Requisitos e capacidades adicionais   
 Para além destas capacidades gerais, deve também familiarizar-se com as seguintes capacidades:
@@ -62,6 +73,6 @@ Para além destas capacidades gerais, deve também familiarizar-se com as seguin
 - [Nomes de domínio para o Microsoft Intune](domain-names-for-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preparar-se para inscrever dispositivos no Microsoft Intune | Microsoft Intune
+title: Preparar-se para inscrever dispositivos | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Prepare-se para inscrever dispositivos no Microsoft Intune
-Para permitir aos empregados inscrever dispositivos móveis (incluindo Android, iOS, Windows Phone e PCs Windows) com o Intune, é necessário ativar a inscrição de dispositivos. Para permitir a inscrição, tem de definir uma autoridade de gestão de dispositivos móveis, configurar o Portal da Empresa do Intune, atribuir licenças e ativar a inscrição para a plataforma do dispositivo.
+Para permitir aos empregados inscrever dispositivos móveis (incluindo [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e [PCs Windows](set-up-windows-device-management-with-microsoft-intune.md)) com o Intune, é necessário ativar a inscrição de dispositivos. Para permitir a inscrição, tem de definir uma autoridade de gestão de dispositivos móveis, configurar o Portal da Empresa do Intune, atribuir licenças e ativar a inscrição para a plataforma do dispositivo.
 
 ## <a name="BKMK_Set_MDM_Authority"></a>Definir autoridade de gestão de dispositivos móveis
 A autoridade de MDM define o serviço de gestão com permissão para gerir um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune e o Configuration Manager com o Intune. Se definir o Configuration Manager como autoridade de gestão, nenhum outro serviço pode ser utilizado para gestão de dispositivos móveis.
@@ -36,16 +36,62 @@ A autoridade de MDM define o serviço de gestão com permissão para gerir um co
 
 
 
-1.  Na [consola do administração do Microsoft Intune](http://manage.microsoft.com), clique em **Admin** &gt; **Gestão de Dispositivos Móveis**
+1.  Na [consola do administração do Microsoft Intune](http://manage.microsoft.com), escolha **Administrador** &gt; **Gestão de Dispositivos Móveis**.
 
 2.  Na lista **Tarefas** , clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
 
     ![Caixa de diálogo Definir autoridade de MDM](../media/intune-mdm-authority.png)
 
-3.  O Intune pede a confirmação de que pretende o Intune como a sua autoridade MDM. Selecione a caixa e, em seguida, clique em **Sim** para utilizar o Microsoft Intune para gerir dispositivos móveis.
+3.  O Intune pede a confirmação de que pretende o Intune como a sua autoridade MDM. Selecione a caixa e, em seguida, escolha **Sim** para utilizar o Microsoft Intune para gerir dispositivos móveis.
 
-## Configurar o Portal da Empresa do Intune e atribuir licenças
-O Portal da Empresa do Intune ajuda os utilizadores a aceder aos recursos da empresa, como aplicações, localizar informações de suporte técnico e inscrever e anular a inscrição de dispositivos. Antes de inscrever dispositivos, deve [configurar o Portal da Empresa](/intune/get-started/get-started-with-a-paid-subscription-to-microsoft-intune-step-7). Também tem de [atribuir licenças de utilizador](/intune/get-started/get-started-with-a-paid-subscription-to-microsoft-intune-step-4) para permitir o acesso ao Intune.
+## Configurar o Portal da Empresa do Intune
+Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, basta iniciar sessão na [consola de administrador do Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos ou de serviços, escolher **Admin** &gt; **Portal da Empresa** e configurar as definições do Portal da Empresa.
+
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+
+#### Informações de contacto e declaração de privacidade da empresa
+O nome da empresa é apresentado como o título do Portal da Empresa. Os detalhes e as informações de contacto são apresentados aos utilizadores no ecrã Contactar TI do Portal da Empresa. A declaração de privacidade é apresentada quando um utilizador clica na ligação de privacidade.
+
+|Nome do campo|Comprimento máximo|Mais informações|
+    |----------|------------------------|----------------|
+    |Nome da empresa|40|Este nome é apresentado como o título do Portal da Empresa.|
+    |Nome do contacto do departamento de TI|40|Este nome é apresentado na página **Contactar TI**.|
+    |Número de telefone do departamento de TI|20|Este número de contacto é apresentado na página **Contactar TI**.|
+    |Endereço de e-mail do departamento de TI|40|Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato **alias@nomedodominio.com**.|
+    |Informações adicionais|120|Apresentado na página **Contactar TI**.|
+    |URL da declaração de privacidade da empresa|79|Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato https://www.contoso.com.|
+
+#### Contactos de suporte
+O site de suporte é apresentado para os utilizadores no Portal da Empresa para que possam aceder ao suporte online.
+
+|Nome do campo|Comprimento máximo|Mais informações|
+    |----------|------------------------|----------------|
+    |URL do site de suporte|150|Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato https://www.contoso.com. Se não especificar um URL, não será apresentado nada no site de suporte da página **Contactar TI** no Portal da Empresa.|
+    |Nome do site|40|Este é o nome amigável apresentado no URL do site de suporte. Se especificar um URL do site de suporte, mas não especificar um nome amigável, a ligação **Aceder ao site de TI** será apresentada na página **Contactar TI** no Portal da Empresa.|
+
+## Personalização da imagem corporativa da empresa
+Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor do tema e o fundo.
+
+|Nome do campo|Mais informações|
+    |----------|----------------|
+    |Cor do tema|Selecione a cor do tema que pretende aplicar ao Portal da Empresa.|
+    |Incluir o logótipo da empresa|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco, e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. Cada logótipo tem de ser um tipo de ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 100 pixéis e ter um tamanho até 750 KB.|
+    |Selecionar um fundo para a aplicação Portal da Empresa do [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]|Esta definição afeta apenas o fundo da aplicação Portal da Empresa do [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)].|
+
+
+Depois de guardar as alterações, pode utilizar as ligações fornecidas na parte inferior da página **Portal da Empresa** da consola de administração para ver o site do Portal da Empresa. Estas ligações não podem ser alteradas. Quando um utilizador inicia sessão, estas ligações apresentam as suas subscrições no Portal da Empresa.
+
+
+
+## Atribuir uma licença de utilizador do Intune
+
+Utiliza o **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas a partir do Active Directory no local para o Azure AD.
+
+1.  Inicie sessão no [portal de contas do Intune](https://portal.office.com/Admin/Default.aspx) com as suas credenciais de administrador inquilino.
+
+2.  Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e ative a caixa de verificação **Microsoft Intune** nas propriedades da conta de utilizador.
+
+3.  A conta de utilizador será agora adicionada ao grupo de utilizadores do Microsoft Intune que atribui as permissões de utilizador para utilizar o serviço e inscrever os respetivos dispositivos para gestão.
 
 ## Configurar a gestão de dispositivos
 Depois de configurar a autoridade de MDM, tem de configurar a gestão de dispositivos para os sistemas operativos que a organização pretende suportar. Os passos necessários para configurar a gestão de dispositivos variam consoante o sistema operativo. Por exemplo, o SO Android não requer que efetue nenhuma ação na consola de administração do Intune. Por outro lado, o Windows e o iOS requerem uma relação de confiança entre os dispositivos e o Intune para permitir a gestão.
@@ -61,6 +107,6 @@ Também pode:
  - [Especifique os dispositivos pertencentes à empresa utilizando números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) para ajudar a inscrever dispositivos e a política de destino
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

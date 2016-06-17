@@ -15,7 +15,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Inscrever o dispositivo iOS no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo iOS para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição de dispositivos permite ao departamento de TI gerir esses recursos do trabalho ou da escola e mantê-los seguros, dando-lhe a liberdade de utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, consulte [O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo iOS para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição de dispositivos permite ao departamento de TI gerir esses recursos do trabalho ou da escola e mantê-los seguros, dando-lhe a liberdade de utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, consulte [O que acontece quando instalar a aplicação Portal da Empresa e inscrever um dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 Se estiver a tentar inscrever um dispositivo Mac OS X, consulte [Inscrever o dispositivo Mac OS X no Intune](enroll-your-device-in-intune-mac-os-x.md).
 
@@ -41,7 +41,7 @@ Se estiver a tentar inscrever um dispositivo Mac OS X, consulte [Inscrever o dis
 
     ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
 
-3. No ecrã **Porquê inscrever o seu dispositivo?**, sobre o que pode fazer ao inscrever o seu dispositivo e, em seguida, toque em **Continuar**.
+3. No ecrã **Porquê inscrever o seu dispositivo?**, leia sobre o que pode fazer quando inscrever o seu dispositivo e, em seguida, toque em **Continuar**.
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png) 
 
@@ -96,6 +96,6 @@ O dispositivo está agora inscrito no Intune e o utilizador é direcionado novam
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

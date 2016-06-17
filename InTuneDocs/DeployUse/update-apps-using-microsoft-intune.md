@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Atualizar aplicações com o Microsoft Intune | Microsoft Intune
+title: Atualizar aplicações | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -53,6 +53,6 @@ Quando os dispositivos voltarem a verificar as aplicações disponíveis, a apli
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

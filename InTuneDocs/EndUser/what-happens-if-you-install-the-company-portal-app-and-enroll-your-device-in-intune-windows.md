@@ -28,41 +28,7 @@ ms.suite: ems
 
 # O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?
 
-Para saber o que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo, utilize a ligação que corresponde ao dispositivo que utiliza.
-
-- [Windows 10](#windows-10)
-- [Windows 8.1 e Windows RT](#windows-8-1-and-windows-rt)
-- [Windows Phone 8.1 e Windows Phone 8](#windows-phone-8-1-and-windows-phone-8)
-- [Windows 7 e Vista](#windows-7-and-vista)
-
-## Windows 10
-Quando instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplicação para inscrever o seu dispositivo Windows 10 Enterprise ou Professional no Intune, pode utilizar a aplicação Portal da Empresa para:
-
--   Aceder à rede da empresa e ao seu e-mail e ficheiros de trabalho
-
--   Obter aplicações da empresa a partir do Portal da Empresa
-
--   Configurar automaticamente a conta de e-mail empresarial
-
--   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo
-
-Para obter os passos para a inscrição, veja [Enroll your Windows device in Intune (Inscrever o seu dispositivo Windows no Intune)](enroll-your-device-in-intune-windows.md). Para saber o que o seu administrador de TI pode ver e não pode ver no seu dispositivo, veja [What can my IT admin see when I enroll my device in Intune? (O que é que o administrador de TI pode ver se inscrever o meu dispositivo no Intune?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
-
-Ao adicionar um computador:
-
--   Será instalado software no seu computador para permitir ao administrador de TI geri-lo e a si aceder a recursos da empresa, como aplicações e informações de suporte. O administrador de TI pode atualizar automaticamente este software.
-
--   O Endpoint Protection do Intune pode ser instalado no seu computador. É um software que verifica a existência de vírus e software maligno.
-
--   O seu administrador de TI pode fazer um inventário de todo o software instalado no computador, incluindo software que o utilizador tenha instalado pessoalmente.
-
--   Poderá ter de aceitar os termos e condições.
-
--   O seu administrador de TI pode recolher ou eliminar dados do disco rígido do seu computador. O seu administrador de TI também pode eliminar o seu disco rígido inteiro.
-
--   O seu administrador de TI pode instalar aplicações e atualizações no seu computador.
-
--   O seu administrador de TI pode impor políticas no computador. Por exemplo, poderá ser necessário definir uma palavra-passe ou PIN no computador, o que pode impedi-lo de aceder ao mesmo, ou eliminar todos os dados do disco rígido do seu computador, se ocorrerem demasiadas tentativas de introdução incorreta de palavra-passe.
+Para saber o que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo, mostrado na secção “Neste artigo” acima, utilize a ligação que corresponde ao dispositivo que utiliza. Para informações sobre os dispositivos Windows 10, consulte [esta página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## Windows 8.1 e Windows RT
 Quando instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplicação para inscrever o seu dispositivo Windows 8.1 Enterprise ou Professional ou Windows RT no Intune, pode utilizar a aplicação Portal da Empresa para:
@@ -75,7 +41,7 @@ Quando instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplica
 
 -   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo
 
-Para obter os passos para a inscrição, veja [Enroll your Windows device in Intune (Inscrever o seu dispositivo Windows no Intune)](enroll-your-device-in-intune-windows.md). Para saber o que o seu administrador de TI pode ver e não pode ver no seu dispositivo, veja [What can my IT admin see when I enroll my device in Intune? (O que é que o administrador de TI pode ver se inscrever o meu dispositivo no Intune?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+Para obter os passos para a inscrição, veja [Enroll your Windows device in Intune (Inscrever o seu dispositivo Windows no Intune)](enroll-your-device-in-intune-windows.md). Para saber o que o seu administrador de TI pode ver no seu dispositivo, consulte [O que pode o administrador de TI ver se inscrever o meu dispositivo no Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Ao adicionar um computador:
 
@@ -104,7 +70,7 @@ Quando instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplica
 
 -   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo
 
-Para obter os passos para a inscrição, veja [Enroll your Windows device in Intune (Inscrever o seu dispositivo Windows no Intune)](enroll-your-device-in-intune-windows.md). Para saber o que o seu administrador de TI pode ver e não pode ver no seu dispositivo, veja [What can my IT admin see when I enroll my device in Intune? (O que é que o administrador de TI pode ver se inscrever o meu dispositivo no Intune?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+Para obter os passos para a inscrição, veja [Enroll your Windows device in Intune (Inscrever o seu dispositivo Windows no Intune)](enroll-your-device-in-intune-windows.md). Para saber o que o seu administrador de TI pode ver no seu dispositivo, consulte [O que pode o administrador de TI ver se inscrever o meu dispositivo no Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Ao adicionar o seu dispositivo Windows Phone, dá permissão ao seu administrador de TI para aceder ao mesmo. O administrador de TI pode efetuar ações como:
 
@@ -141,7 +107,7 @@ Quando instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplica
 
 -   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo
 
-Para saber o que o seu administrador de TI pode ver e não pode ver no seu dispositivo, veja [What can my IT admin see when I enroll my device in Intune? (O que é que o administrador de TI pode ver se inscrever o meu dispositivo no Intune?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+Para saber o que o seu administrador de TI pode ver no seu dispositivo, consulte [O que pode o administrador de TI ver se inscrever o meu dispositivo no Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Ao adicionar um computador:
 
@@ -163,6 +129,6 @@ Ao adicionar um computador:
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

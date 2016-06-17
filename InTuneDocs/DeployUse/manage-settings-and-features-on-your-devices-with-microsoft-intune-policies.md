@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune | Microsoft Intune
+title: Gerir definições e funcionalidades nos seus dispositivos com políticas | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -35,15 +35,15 @@ As políticas do Intune inserem-se nas categorias seguintes. A categoria que uti
 
 - **Políticas de configuração:** estas políticas são frequentemente utilizadas para gerir as funcionalidades e as definições de segurança nos seus dispositivos. Utilize as informações deste tópico para saber como criar e implementar estas políticas e para explorar as definições disponíveis.
 - **Políticas de conformidade do dispositivo:** estas políticas definem as regras e as definições que um dispositivos tem de cumprir para ser considerado conforme pelas políticas de acesso condicional. Também pode utilizar as políticas de conformidade para monitorizar e resolver a conformidade dos dispositivos independentemente do acesso condicional.
-Para obter detalhes, consulte [Políticas de conformidade de dispositivos no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
+Para detalhes, consulte [Políticas de conformidade de dispositivos no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Políticas de acesso condicional:** estas políticas ajudam a proteger o e-mail e outros serviços dependendo das condições que especificar.
-Para obter detalhes, consulte [Restringir o acesso ao e-mail e aos serviços do Office 365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-- **Políticas de inscrição de dispositivos de empresa:** para obter informações sobre as políticas de inscrição de dispositivos de empresa, consulte [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+Para detalhes, consulte [Restringir o acesso ao e-mail e aos serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+- **Políticas de inscrição de dispositivos de empresa:** para informações sobre as políticas de inscrição de dispositivos de empresa, consulte [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Políticas de acesso a recursos:** este grupo de políticas funciona em conjunto para ajudar os seus utilizadores a obterem acesso aos ficheiros e recursos de que precisam para trabalhar com êxito, onde quer que estejam.
-Para obter detalhes, consulte [Permitir o acesso aos recursos da empresa com o Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
+Para detalhes, consulte [Ativar o acesso aos recursos da empresa com o Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
 
-Para obter uma lista completa das políticas do Intune, consulte o artigo [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
+Para obter uma lista completa das políticas do Intune, consulte [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
 
 
 
@@ -54,8 +54,7 @@ Para obter uma lista completa das políticas do Intune, consulte o artigo [Refer
 
 2.  Selecione a política que pretende, escolha entre utilizar as definições recomendadas para a política (quando disponível; pode alterar estas definições mais tarde) ou criar uma política personalizada com as suas próprias definições.
 
-    > [!TIP]
-    > Para o ajudar a escolher a política certa, consulte [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
+    > [!TIP] Para o ajudar a escolher a política certa, consulte [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando estiver pronto, clique em **Criar Política**.
 
@@ -90,13 +89,13 @@ Agora que criou uma política, normalmente, irá querer implementá-la num ou ma
 
 ## Implementar uma política de configuração
 
-1.  Na área de trabalho **Política**, selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
+1.  Na área de trabalho **Política** , selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
 
 2.  Na caixa de diálogo **Gerir a Implementação** , para:
 
     -   **Para implementar a política** - selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implementar a política** - Clique em **Cancelar**.
+    -   **Fechar a caixa de diálogo sem implementar a política** - clique em **Cancelar**.
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
@@ -116,11 +115,11 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 
 1.  Na [Consola do administrador do Microsoft Intune](https://manage.microsoft.com/), clique em **Grupos**e, em seguida, selecione um grupo de dispositivos.
 
-2.  Selecione os dispositivos nos quais pretende atualizar as políticas e clique em **Tarefas Remotas** &gt; **Atualizar Políticas**.
+2.  Selecione em que dispositivos pretende atualizar as políticas e clique em **Tarefas Remotas** &gt; **Atualizar Políticas**.
 
 3.  Clique em **Tarefas Remotas** no canto inferior direito da consola de administração do Intune para verificar o estado das tarefas.
 
-## Informações de referência para as políticas do Intune
+## Perguntas mais frequentes sobre as políticas do Intune
 
 ### Quanto tempo é necessário para que os dispositivos móveis obtenham a política ou as aplicações após a implementação?
 Quando uma política ou aplicação é implementada, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço Intune. Geralmente, o processo demora menos de 5 minutos.
@@ -132,7 +131,8 @@ Neste caso, o dispositivo irá obter uma política na entrada seguinte agendada 
 - iOS - a cada 6 horas
 - Android - a cada 8 horas
 - Windows Phone - a cada 8 horas
-- PCs Windows inscritos como dispositivos - a cada 24 horas
+- Dispositivos Windows RT inscritos - a cada 24 horas
+- PCs Windows 8.1 e Windows 10 inscritos como dispositivos - a cada 8 horas
 
 Se o dispositivo tiver acabado de se inscrever, a frequência de entrada será maior, conforme se segue:
 
@@ -172,7 +172,7 @@ O Intune não avalia o payload de ficheiros de configuração da Apple ou a pol�
 
 Por conseguinte, quando implementar uma política personalizada, certifique-se de que as definições configuradas não entram em conflito com a política de conformidade, de configuração ou outras políticas personalizadas. No caso de uma política personalizada com conflitos de definições, a ordem pela qual as definições são aplicadas é aleatória.
 
-### O que acontece quando uma política é eliminada ou já não é aplicável
+### O que acontece quando uma política é eliminada ou já não é aplicável?
 Quando elimina uma política ou remove um dispositivo de um grupo no qual a política foi implementada, a política e as definições serão removidos do dispositivo de acordo com as seguintes tabelas:
 
 #### Dispositivos inscritos
@@ -214,15 +214,15 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
 
 #### PCs Windows com o software de cliente Intune
 
-- **Definições do Endpoint Protection** - As definições são restauradas para os valores recomendados. A única exceção é a definição **Aderir ao Serviço de Proteção Ativa Microsoft** para a qual o valor predefinido é **Não**. Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
-- **Definições de atualizações de software** - As definições são repostas para o estado predefinido do sistema operativo. Para obter detalhes, consulte [Manter os computadores com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Definições do Endpoint Protection** - As definições são restauradas para os valores recomendados. A única exceção é a definição **Aderir ao Serviço de Proteção Ativa Microsoft** para a qual o valor predefinido é **Não**. Para detalhes, consulte [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Definições de atualizações de software** - As definições são repostas para o estado predefinido do sistema operativo. Para detalhes, consulte [Manter os computadores com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Definições do Microsoft Intune Center** - Todas as informações de contacto para suporte que foram configuradas pela política são eliminadas dos computadores.
-- **Definições da Firewall do Windows** - As definições são repostas para o estado predefinido do sistema operativo do computador. Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Definições da Firewall do Windows** - As definições são repostas para o estado predefinido do sistema operativo do computador. Para detalhes, consulte [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

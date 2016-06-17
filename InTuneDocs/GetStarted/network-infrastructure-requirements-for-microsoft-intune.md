@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Requisitos de infraestrutura de rede do Microsoft Intune
-Antes de configurar o Microsoft Intune, reveja este tópico e outros requisitos listados em [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md).
+Antes de configurar o Microsoft Intune, reveja este tópico e outros requisitos listados em [O que deve saber antes de iniciar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Este tópico lista os requisitos que permitem que a sua infraestrutura de rede transmita as comunicações entre os dispositivos que gere e utiliza para gerir a sua subscrição e os Web sites na Internet que o serviço baseado na nuvem utiliza.
 
@@ -169,20 +169,10 @@ Pode modificar as definições de servidor proxy em computadores cliente individ
 Também pode utilizar um servidor proxy que coloque conteúdos em cache para [reduzir a largura de banda da rede](network-bandwidth-use.md) utilizada pelos clientes do Intune.
 
 
-
-## Requisitos do Conector de Serviços
-O Conector de Serviços só suporta o Exchange baseado na nuvem e não tem requisitos para a infraestrutura no local.
-
-No entanto, para utilizar este conector, deve verificar-se o seguinte:
-
--   Tem uma subscrição do Office 365 com um inquilino do Exchange Server 2013. Desde que o inquilino seja o Exchange Server 2013, o conector suporta o Exchange Server 2010 nesse mesmo ambiente.
-
--   A conta de utilizador que utilizar para instalar o conector No Local tem de ser um administrador de inquilino do Intune e um administrador no inquilino do Exchange com uma licença para utilizar o Exchange Server 2013.
-
 ### Consulte também
 [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

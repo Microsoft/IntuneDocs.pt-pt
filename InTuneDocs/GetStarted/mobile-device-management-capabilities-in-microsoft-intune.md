@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Funcionalidades de gestão de dispositivos móveis no Microsoft Intune | Microsoft Intune
+title: Funcionalidades de gestão de dispositivos móveis | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,12 +66,13 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 
 |Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
-|Inventário e criar relatórios|Encontre informações sobre os dispositivos que gere e o software que estão a utilizar.<br /><br />Pode filtrar estes relatórios de várias formas, como pela plataforma do dispositivo e se o dispositivo está ou não em conformidade com os padrões empresariais.|[Compreender as operações do Microsoft Intune através de relatórios](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|Inventário e criar relatórios|Encontre informações sobre os dispositivos que gere e o software que estão a utilizar.|[Compreender os seus dispositivos com o inventário no Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### Consulte também
-[Funções de gestão de computadores com Windows no Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Funções de gestão de computadores com Windows no Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

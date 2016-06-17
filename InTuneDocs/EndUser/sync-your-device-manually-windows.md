@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Sincronizar o seu dispositivo manualmente
-Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as instruções seguintes para sincronizar manualmente o seu dispositivo Windows, o que poderá ajudar a acelerar a instalação. Utilize as instruções que correspondem ao tipo de dispositivo que tem:
+Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as instruções seguintes para sincronizar manualmente o seu dispositivo Windows, o que poderá ajudar a acelerar a instalação. As únicas versões suportadas são as da lista. Utilize a ligação, mostrado na secção “Neste artigo” acima, que corresponde ao seu tipo de dispositivo:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -58,7 +58,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Mobile para acelerar u
 ## Windows 10 Desktop
 Para sincronizar manualmente o seu dispositivo Windows 10 Desktop para acelerar uma instalação de aplicações lenta:
 
-1. Selecione o botão **Iniciar**, conforme apresentado abaixo e, em seguida, selecione **Definições**.
+1. Selecione o botão **Iniciar**, tal como mostrado a seguir e, em seguida, selecione **Definições**.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
@@ -83,7 +83,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Desktop para acelerar 
 ## Windows Phone 8.1
 Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar uma instalação de aplicações lenta:
 
-1. Aceda à área de trabalho **Todas as aplicações** > **Definições** > ****.
+1. Aceda à **área de trabalho** > **Todas as aplicações** > **Definições**.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar u
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

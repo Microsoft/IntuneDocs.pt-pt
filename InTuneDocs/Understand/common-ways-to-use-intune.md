@@ -67,11 +67,11 @@ Os trabalhadores de tarefas estão a recorrer cada vez mais às tecnologias móv
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Permitir que os seus funcionários acedam de forma segura ao Office 365 a partir de um quiosque público não gerido
-Por vezes, os seus funcionários precisam de utilizar dispositivos, aplicações ou browsers que não pode gerir, tal como os computadores públicos em feiras para profissionais e átrios de hotel.  Deve permitir que os seus funcionários acedam ao e-mail da empresa a partir destes dispositivos?  Com o Intune e o Enterprise Mobility Suite, tem opções.  A resposta pode ser simplesmente "não", limitando o acesso ao e-mail aos dispositivos que são geridos pela sua organização.  Em alternativa, pode optar por permitir o acesso limitado a estes computadores não fidedignos, exigindo autenticação multifator e permitindo apenas o acesso ao browser (Outlook Web Access) num modo que não permite a transferência de ficheiros (por exemplo, anexos de e-mail).  Isto irá garantir que o seu funcionário totalmente autenticado não deixe acidentalmente dados empresariais no computador não fidedigno.
+Por vezes, os seus funcionários precisam de utilizar dispositivos, aplicações ou browsers que não pode gerir, tal como os computadores públicos em feiras para profissionais e átrios de hotel. Deve permitir que os seus funcionários acedam ao e-mail da empresa a partir destes dispositivos? Com o Intune e o Enterprise Mobility Suite, <!--you have choices. The--> a resposta pode ser simplesmente “não”, limitando o acesso ao e-mail aos dispositivos que são geridos pela sua organização.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Isto irá garantir que o seu funcionário totalmente autenticado não deixe acidentalmente dados empresariais no computador não fidedigno.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

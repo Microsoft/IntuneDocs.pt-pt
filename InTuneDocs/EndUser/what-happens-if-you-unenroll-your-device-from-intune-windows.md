@@ -28,7 +28,7 @@ ms.suite: ems
 
 # What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?)
 
-Se desinstalar a aplicação Portal da Empresa no seu dispositivo, este também é removido do Intune. Para obter informações adicionais sobre o que acontece, utilize a ligação que corresponde ao tipo de dispositivo que utiliza.
+Se desinstalar a aplicação Portal da Empresa no seu dispositivo, este também é removido do Intune. Para informações adicionais sobre o que acontece, utilize a ligação, mostrada na secção “Neste artigo” acima, que corresponde ao tipo de dispositivo que utiliza.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 ou Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,7 +43,7 @@ Se desinstalar a aplicação Portal da Empresa no seu dispositivo, este também 
 
 -   O software do Endpoint Protection do Intune é removido do computador. Se o seu computador tiver outro software de proteção contra vírus instalado e este estiver desativado, esse software poderá ser reativado após a remoção do Endpoint Protection do Intune. Deve analisar o seu computador depois de ser removido do Portal da Empresa.
 
-    > Se o outro software de proteção contra vírus não for novamente ativado ou não existir outro software de proteção contra vírus instalado, o seu computador pode estar vulnerável a vírus e software maligno.
+    > [!IMPORTANT] Se o outro software de proteção contra vírus não for reativado ou não estiver instalado outro software de proteção contra vírus, o seu computador pode estar vulnerável a vírus e software maligno.
 
 -   As definições que tenham sido eventualmente alteradas no seu dispositivo quando o adicionou, por exemplo, a desativação da câmara, deixam de ser aplicáveis.
 
@@ -96,6 +96,6 @@ Ao remover o seu dispositivo Windows RT, ocorrerá o seguinte:
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

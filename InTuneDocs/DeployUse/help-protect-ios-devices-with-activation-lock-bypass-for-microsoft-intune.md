@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Ajudar a proteger dispositivos iOS desativando o Bloqueio de Ativação para o Microsoft Intune | Microsoft Intune
+title: Ajudar a proteger dispositivos iOS desativando o Bloqueio de Ativação | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Para ajudar a resolver estes problemas, a Apple introduziu a desativação do Bl
 > O modo supervisionado para dispositivos iOS permite-lhe utilizar a Ferramenta de Configuração da Apple para bloquear um dispositivo, de forma a limitar a funcionalidade para fins empresariais específicos. O modo supervisionado destina-se, geralmente, apenas para dispositivos dos utilizadores da empresa.
 
 ## De que forma o Intune o ajuda a gerir o Bloqueio de Ativação
-O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados com o iOS 7.1 e posterior. Para dispositivos supervisionados, o Intune pode obter o código de desativação do Bloqueio de Ativação e enviá-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo, utilizando o código como o nome de utilizador e uma palavra-passe em branco).
+O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados com o iOS 7.1 e posterior. Apenas para dispositivos supervisionados, o Intune pode obter o código de desativação do Bloqueio de Ativação e enviá-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo, utilizando o código como o nome de utilizador e uma palavra-passe em branco).
 
 **Os benefícios empresariais desta funcionalidade são**:
 
@@ -93,6 +93,6 @@ Pode ver os dispositivos que estão a utilizar o Bloqueio de Ativação de duas 
 [Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

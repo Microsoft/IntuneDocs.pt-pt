@@ -61,10 +61,11 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 
   Para os dispositivos que não estejam inscritos no Intune, as ligações Web em aplicações geridas por políticas apenas serão abertas na aplicação Managed Browser através da política de gestão de aplicações móveis.
 
-  Se utilizar o Intune para gerir os dispositivos, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)
+  Se utilizar o Intune para gerir os dispositivos, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Valor predefinido = Sim**
 - **Encriptar dados da aplicação:** escolha **Sim** para ativar a encriptação. Quando esta definição está ativada, para as aplicações que estão associadas a uma política de gestão de aplicações móveis, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros. O conteúdo no armazenamento do dispositivo é sempre encriptado.
+  >[!NOTE] O método de encriptação não tem certificação FIPS 140-2
 
   **Valor predefinido = Sim**
 
@@ -75,16 +76,17 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 ##  Definições de política de acesso para Android
 O termo **Aplicações geridas por políticas** é utilizado para fazer referência a aplicações que estão configuradas com políticas de MAM
 
-- **Exigir PIN simples para o acesso:** escolha **Sim** para exigir um PIN para utilizar aplicações geridas por políticas. É pedido ao utilizador para configurar esta opção da primeira vez que executar a aplicação num contexto profissional.
+- **Exigir PIN para o acesso:** escolha **Sim** para exigir um PIN para utilizar aplicações geridas por políticas. É pedido ao utilizador para configurar esta opção da primeira vez que executar a aplicação num contexto profissional.
 
  **Valor predefinido = Sim**
-- **Número de tentativas antes da reposição do PIN:** especifique o número de tentativas de introdução do PIN que podem ser efetuadas antes de o utilizador ter de repor o PIN.
 
- **Não existe um valor predefinido para esta definição.**
+ -  **Permitir PIN simples:** especifique se pretende permitir que os utilizadores utilizem sequências de PIN simples, como 1234 ou 1111. **Valor predefinido = Sim**.
+ - **Comprimento do PIN**: especifique o número mínimo de dígitos num PIN. **Valor predefinido = 4**
+ - **Número de tentativas antes da reposição do PIN:** especifique o número de tentativas de introdução do PIN que podem ser efetuadas antes de o utilizador ter de repor o PIN. **Não existe um valor predefinido para esta definição.**
 - **Exigir credenciais de empresa para o acesso:** escolha **Sim** para exigir credenciais de empresa em vez de um PIN para acesso a aplicações.  Se definir esta opção como **Sim**, substitui os requisitos para PIN ou Touch ID.  Será pedido ao utilizador para fornecer as respetivas credenciais empresariais.
 
   **Valor predefinido = Não**
-- **Bloquear execução de aplicações geridas em dispositivos desbloqueados por jailbreak ou rooting:** escolha **Sim** para bloquear a execução de aplicações em dispositivos desbloqueados por jailbreak ou rooting. O utilizador continuará a poder utilizar as aplicações para tarefas pessoais, mas terá de utilizar um dispositivo diferente para o trabalho.
+- **Bloquear execução de aplicações geridas em dispositivos desbloqueados por jailbreak ou rooting:** escolha **Sim** para impedir que as aplicações sejam executadas em dispositivos desbloqueados por jailbreak ou rooting. O utilizador continuará a poder utilizar as aplicações para tarefas pessoais, mas terá de utilizar um dispositivo diferente para o trabalho.
 
   **Valor predefinido = Sim**
 - **Reverificar os requisitos de acesso após (minutos)**-   **Tempo limite:** tempo (em minutos) antes de os requisitos de acesso da aplicação serem novamente verificados.
@@ -98,6 +100,6 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 - **Bloquear captura de ecrã e Assistente do Android (Android 6 Marshmallow ou posterior):** escolha **Sim** para bloquear as capacidades de captura de ecrã e de **Assistente do Android** do dispositivo quando utilizar esta aplicação.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

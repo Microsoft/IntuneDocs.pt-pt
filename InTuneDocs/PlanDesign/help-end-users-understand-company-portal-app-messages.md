@@ -55,7 +55,7 @@ Se os utilizadores negarem o acesso, podem continuar a utilizar a aplicação Po
 Se os utilizadores permitirem o acesso, mas o negarem mais tarde, a mensagem é apresentada quando os utilizadores iniciarem sessão novamente na aplicação Portal da Empresa depois da inscrição.</br></br>Se, posteriormente, os utilizadores decidirem permitir o acesso, podem aceder a **Definições** > **Aplicações** > **Portal da Empresa** > **Permissões** > **Telemóvel** e, em seguida, ativar a permissão.
 
 ### Para onde enviar os seus utilizadores para obterem mais informações
-[Iniciar sessão na aplicação Portal da Empresa](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+Passo 5 em [Inscrever o dispositivo Android no Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no seu dispositivo?
 
@@ -83,6 +83,6 @@ Na segunda vez que os utilizadores iniciam sessão na aplicação Portal da Empr
 [O que dizer aos utilizadores finais sobre a utilização do Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

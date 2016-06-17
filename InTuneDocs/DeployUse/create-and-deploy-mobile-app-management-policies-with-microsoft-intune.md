@@ -28,14 +28,14 @@ ms.suite: ems
 # Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune
 As políticas de gestão de aplicações móveis (MAM) podem ser aplicadas a aplicações em execução em dispositivos que podem ou não ser geridos pelo Intune. Para obter uma descrição mais detalhada de como funcionam as políticas de MAM e os cenários suportados pelas políticas de MAM do Intune, leia o tópico [Proteger os dados de aplicações através de políticas de gestão de aplicações móveis](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-Este tópico descreve o processo de criação de uma política de MAM no **portal do Azure**. A política de MAM que criar no portal do Azure é suportada por todos os cenários de MAM:
+Este tópico descreve o processo de criação de uma política de MAM no **portal do Azure**. O portal do Azure é a nova consola de administração para a criação de políticas de MAM e recomendamos que utilize este portal para criar políticas de MAM. O portal do Azure suporta os seguintes cenários MAM:
 - Dispositivos inscritos no Intune
 - Dispositivos geridos por uma solução de MDM de terceiros
 - Dispositivos que não são geridos por qualquer solução MDM (BYOD).
 
-Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar uma política de MAM que suporte aplicações para dispositivos inscritos no Intune, utilizando a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
+Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar uma política de MAM que suporte aplicações para dispositivos inscritos no Intune, utilizando a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
-> Poderá não ver todas as definições de política de MAM na consola de administração do Intune. O portal do Azure é a nova consola de administração para a criação de políticas de MAM.
+> Poderá não ver todas as definições de política de MAM na consola de administração do Intune. O portal do Azure é a nova consola de administração para a criação de políticas de MAM. Se criar políticas de MAM na consola de administração do Intune e no portal do Azure, a política no portal do Azure é aplicada às aplicações e implementada nos utilizadores.
 
 Para ver uma lista de definições de política suportadas para plataformas Android e iOS, selecione uma das seguintes opções:
 
@@ -49,13 +49,13 @@ Antes de criar uma política de MAM, reveja as informações de [pré-requisitos
 
     ![Captura de ecrã do painel de gestão de aplicações móveis do Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > Se for a primeira vez que está a utilizar o portal do Azure, leia primeiro o artigo [Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para se familiarizar com o portal.
+    > [!TIP] Se for a primeira vez que está a utilizar o portal do Azure, leia primeiro [Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para se familiarizar com o portal.
 
 2.  No painel **Definições**, escolha **Política de aplicação**.  Esta ação abre o painel **Política da aplicação** onde irá criar novas políticas e editar as políticas existentes.
 
     ![Captura de ecrã do painel Política de aplicação que mostra uma lista das políticas existentes](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  Escolha **Adicionar uma política**
+3.  Escolha **Adicionar uma política**.
 
     ![Captura de ecrã do painel Política de aplicação com a opção de menu Adicionar uma política realçada ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -65,7 +65,7 @@ Antes de criar uma política de MAM, reveja as informações de [pré-requisitos
 
 5.  Escolha **Aplicações** para abrir o painel **Aplicações** onde é apresentada uma lista de aplicações disponíveis. Pode selecionar uma ou mais aplicações na lista que pretende associar à política que está a criar. Depois de selecionar as aplicações, escolha botão **Selecionar** na parte inferior do painel **Aplicações** para guardar a sua seleção.
 
-    > Tem de selecionar pelo menos uma aplicação para criar uma política.
+    > [!IMPORTANT] Tem de selecionar pelo menos uma aplicação para criar uma política.
 
 6.  No painel **Adicionar uma política**, escolha **Configurar definições necessárias** para abrir o painel de definições de política.
 
@@ -167,6 +167,6 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 [Experiência de utilizador final para aplicações com MAM ativada](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

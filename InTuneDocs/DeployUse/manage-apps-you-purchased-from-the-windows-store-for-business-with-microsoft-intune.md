@@ -39,6 +39,8 @@ Antes de iniciar a sincronização e a implementação de aplicações da Loja W
 * Assim que tiver associado uma conta da Loja Windows para Empresas, não pode mudar para uma conta diferente no futuro.
 * As aplicações compradas na loja não podem ser adicionadas ou eliminadas manualmente do Intune. Só podem ser sincronizadas com a Loja Windows para Empresas.
 * O Intune só sincroniza as aplicações licenciadas online que comprou na Loja Windows para Empresas.
+* Os dispositivos têm de ser associados a um domínio do Active Directory ou à Área de Trabalho, para utilizar esta capacidade.
+* Os dispositivos inscritos têm de utilizar a versão 1511 do Windows 10.
 
 ## Associar a sua conta da Loja Windows para Empresas ao Intune
 Antes de ativar a sincronização na consola do Intune, tem de configurar a conta da loja para utilizar o Intune como ferramenta de gestão:
@@ -67,7 +69,7 @@ As aplicações neste nó são apresentadas com o número total de licenças que
 
 ## Implementar aplicações
 
-As aplicações da loja são implementadas da mesma forma que implementa qualquer outra aplicação do Intune. Para obter mais informações, veja [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+As aplicações da loja são implementadas da mesma forma que implementa qualquer outra aplicação do Intune. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada uma licença por cada utilizador que instalar a aplicação. Se utilizar todas as licenças disponíveis para uma aplicação implementada, não poderá implementar mais cópias e tem de efetuar uma das seguintes ações:
 * Desinstale a aplicação de dispositivos
 * Reduza o âmbito da implementação atual para segmentar apenas os utilizadores para os quais tem licenças suficientes
@@ -80,6 +82,6 @@ Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada um
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

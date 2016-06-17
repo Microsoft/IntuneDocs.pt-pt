@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proteger dispositivos com o Microsoft Intune | Microsoft Intune
+title: Proteger dispositivos | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -44,6 +44,6 @@ O Intune permite efetuar a integração com o [Microsoft Passport for Work](cont
 O Intune continua a suportar políticas de segurança para PCs Windows que não inscreve, mas que gere com o software cliente de computador do Intune. Para saber como estas políticas podem ajudar a proteger os seus PCs Windows, consulte [Utilizar políticas para ajudar a proteger PCs Windows que executem o software cliente do Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

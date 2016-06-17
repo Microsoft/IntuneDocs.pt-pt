@@ -32,16 +32,16 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 **Aplicações obrigatórias** - aplicações exigidas pelo administrador e que são instaladas nos dispositivos com envolvimento mínimo do utilizador, dependendo da plataforma.
 
-**Aplicações obrigatórias** - aplicações fornecidas na lista de aplicações do Portal da Empresa e que os utilizadores podem optar por instalar.
+**Aplicações disponíveis** - aplicações fornecidas na lista de aplicações do Portal da Empresa e que os utilizadores podem optar por instalar.
 
 **Aplicações geridas** - aplicações que podem ser geridas através de políticas e que foram "encapsuladas" pelo Intune ou incorporadas no Software Development Kit (SDK) do Intune Mobile Application Management (MAM). Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
 
 **aplicações não geridas** - aplicações que podem ser geridas através de políticas e que não foram encapsuladas pelo Intune ou que não incorporam o SDK do Intune MAM. Não é possível aplicar políticas de aplicação a estas aplicações.
 
-###Consulte também</br>
-[Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-ios-users-get-their-apps.md)
+###Consulte também [Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-android-users-get-their-apps.md)</br>
+[Como os utilizadores de dispositivos iOS obtêm as aplicações](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

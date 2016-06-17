@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inscrever dispositivos no Microsoft Intune | Microsoft Intune
+title: Inscrever dispositivos | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Inscrever dispositivos para gestão no Intune
 A gestão de dispositivos móveis (MDM) do Microsoft Intune utiliza a inscrição para trazer dispositivos para gestão e permitir o acesso aos recursos. A forma como irá inscrever dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão necessário. Os cenários de "Bring your own device" (BYOD) e de dispositivos pertencentes à empresa (COD) necessitam de um processo de inscrição. As organizações que utilizem o Exchange ActiveSync, no local ou alojado na nuvem, podem tornar a gestão mais leve sem requisitos de inscrição. Os PCs Windows também podem ser geridos com o software de cliente do Intune.
+
+###  Plataformas de dispositivos suportadas
+
+O Intune pode gerir as seguintes plataformas de dispositivos:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Ativar a inscrição de dispositivos  
  A inscrição permite que os utilizadores acedam aos recursos da empresa nos respetivos dispositivos pessoais e permite que o administrador assegure que os dispositivos cumprem as políticas que protegem os recursos da empresa. Esta é a melhor forma de ativar os cenários "bring your own device" no Intune. O administrador tem de ativar a inscrição na consola do Intune, o que pode requerer a criação de uma relação de confiança com o dispositivo e a atribuição de licenças aos utilizadores. Em seguida, o dispositivo é inscrito, normalmente por utilizadores que introduzem as respetivas credenciais profissionais ou escolares. O dispositivo recebe então a política do Intune e obtém acesso aos recursos.
@@ -58,6 +64,6 @@ Os computadores geridos com o software de cliente do Intune não podem ser apaga
 [Gerir Computadores com Windows com o Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

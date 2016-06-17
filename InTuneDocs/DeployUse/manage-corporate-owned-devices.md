@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gerir dispositivos pertencentes à empresa com o Microsoft Intune | Microsoft Intune
+title: Gerir dispositivos pertencentes à empresa | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Inscrever dispositivos pertencentes à empresa com o Microsoft Intune
-Os dispositivos pertencentes à empresa (COD) ou à organização podem ser colocados em gestão de variadas formas consoante o dispositivo e como foi comprado.
+Os dispositivos pertencentes à empresa (COD) ou à organização podem ser colocados em gestão pelo Intune de variadas formas consoante o dispositivo, de como foi comprado e das necessidades da organização.
 
 ## Dispositivos iOS pertencentes à empresa
 Estes métodos de inscrição são ideais para cenários "Choose your own device" (CYOD), em que a organização compra os dispositivos para os utilizadores, mas pretende manter a gestão dos mesmos. Se a sua organização tiver comprado dispositivos iOS, pode pré-configurar a inscrição para que o dispositivo seja gerido desde a primeira vez que o respetivo utilizador o ligar. O Intune suporta a inscrição através do [Programa de Registo de Dispositivos da Apple (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) ou da ferramenta Apple Configurator em execução num computador Mac para inscrição [direta](ios-direct-enrollment-in-microsoft-intune.md) ou com o [Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
@@ -38,12 +38,80 @@ As organizações podem utilizar o Intune para gerir um grande número de dispos
 
 [Inscrever dispositivos pertencentes à empresa com o gestor de inscrição de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## Especifique os dispositivos da empresa com os números de identidade internacional do equipamento móvel (IMEI)
+## Identidade internacional do equipamento móvel (IMEI)
 Os números de identidade internacional do equipamento móvel (IMEI) exclusivos são uma propriedade de dispositivo comum para inúmeros fabricantes de dispositivos móveis. Os administradores do Intune podem importar os números IMEI para os dispositivos pertencentes à empresa. Quando o dispositivo ficar gerido pelo Intune, pode ser marcado como um dispositivo pertencente à empresa e visado pela política adequada.
 
-[Especifique os dispositivos da empresa com os números de identidade internacional do equipamento móvel (IMEI)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+[Especifique os dispositivos da empresa com os números de identidade internacional do equipamento móvel (IMEI)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+
+## Descrição geral dos métodos de inscrição para dispositivos pertencentes à empresa
+
+A tabela seguinte mostra os métodos de inscrição para dispositivos pertencentes à empresa, com os seus benefícios.
+
+**Métodos de Inscrição do iOS**
+
+| **Método** |  **[Reiniciar](#Reset)** |   **[Afinidade](#Affinity)**   |   **[Bloqueado](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | Não|    Sim |   Não |
+|**[DEM](#DEM)**|   Não |Não |Não  |
+|**[DEP](#DEP)**|   Sim |   Optar ativamente por participar |   Optar ativamente por participar|
+|**[USB-SA](#USB-SA)**| Sim |   Optar ativamente por participar |   Não|
+|**[USB-Direct](#USB-Direct)**| Não |    Não  | Não|
+
+**Métodos de Inscrição do Windows e Android**
+
+| **Método** |  **[Eliminação](#Wipe)** | **[Função do](#User)**   |   **[Bloqueado](#Locked)** |
+|:---:|:---:|:---:|:---:|
+|**[BYOD](#BYOD)** | Não|    Sim |   Não |
+|**[DEM](#DEM)**|   Não |Não |Não  |
+
+**Métodos de inscrição para dispositivos pertencentes à empresa**
+
+### BYOD
+“Bring Your Own Device.” Os utilizadores instalam a aplicação Portal da Empresa e inscrevem o respetivo dispositivo. Inscrever um dispositivo com o Portal da Empresa irá associar o dispositivo a uma área de trabalho. A inscrição de dispositivos iOS no Portal da Empresa requer um ID Apple. O BYOD não requer configuração adicional para dispositivos pertencentes à empresa. Ver os passos para [configurar a gestão de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md).
+
+### DEM
+Gestor de inscrição de dispositivos. O administrador cria contas DEM. Os gestores podem então instalar o Portal da Empresa e inscrever vários dispositivos sem utilizador. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+
+### DEP
+Programa de Inscrição de Dispositivos Apple. O administrador cria e implementa a política "por ondas eletromagnéticas" para dispositivos iOS adquiridos e geridos com o DEP. O dispositivo é inscrito quando o utilizador executa o Assistente de configuração iOS. Este método suporta o modo **iOS Supervisionado** que, por sua vez, permite:
+  - Inscrição bloqueada
+  - Acesso condicional
+  - Deteção de jailbreak
+  - Gestão de aplicações móveis
+
+Saiba mais sobre o [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+
+### USB-SA
+Ligado por USB, inscrição através do Assistente de Configuração. O administrador cria uma política do Intune e exporta-a para o Apple Configurator. Estão preparados dispositivos ligados por USB com política do Intune. O administrador tem de inscrever cada dispositivo manualmente. Os utilizadores recebem os respetivos dispositivos e executam o Assistente de Configuração, inscrevendo o dispositivo. Este método suporta o modo **iOS Supervisionado** que, por sua vez, permite:
+  - Inscrição bloqueada
+  - Acesso condicional
+  - Deteção de jailbreak
+  - Gestão de aplicações móveis
+
+Saiba mais sobre [inscrição através do Assistente de Configuração com o Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+
+### USB-Direct
+Inscrição direta. O administrador cria uma política do Intune e exporta-a para o Apple Configurator. Os dispositivos ligados por USB são inscritos diretamente, sem necessidade de uma reposição de fábrica. O administrador tem de inscrever cada dispositivo manualmente. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados, e não suportam acesso condicional, deteção de jailbreak nem gestão de aplicações móveis. Saiba mais sobre [inscrição direta com o Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+
+**Comportamento de dispositivos móveis pertencentes à empresa**
+
+### Reiniciar
+Especifica se a inscrição do dispositivo requer a reposição de fábrica do dispositivo, removendo todos os dados do dispositivo e repondo-o para o estado original.
+([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+
+### Afinidade
+Especifica se o método de inscrição suporta “Afinidade de utilizador”, que liga um dispositivo a um utilizador específico. Os dispositivos que “Optam ativamente por participar” podem ser inscritos com ou sem afinidade de utilizador. A afinidade de utilizador é necessária para suportar o seguinte:
+  - Aplicações de gestão de aplicações móveis (MAM)
+  - Acesso condicional a dados de e-mail e da empresa
+  - Aplicação Portal da Empresa
+
+([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods)) ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
+
+### Bloquear
+Especifica se o dispositivo pode ser bloqueado para impedir que o utilizador remova a política do Intune, removendo eficazmente o dispositivo da gestão. Para dispositivos iOS, o bloqueio do dispositivo requer que o mesmo esteja no modo Supervisionado.
+([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods)) ([Voltar à tabela](#overview-of corporate-owned-device-enrollment-methods))
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política de configuração para Windows Team no Microsoft Intune | Microsoft Intune
+title: Definições de política de configuração do Windows Team | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,6 +44,6 @@ Utilize a **Política de configuração geral do Windows 10 Team** do Microsoft 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

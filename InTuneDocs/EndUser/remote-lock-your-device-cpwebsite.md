@@ -46,11 +46,11 @@ Para bloquear o seu dispositivo com o Bloqueio Remoto:
 
 1.  No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no nome do dispositivo que pretende bloquear.
 
-2.  Toque em **Bloqueio Remoto**
+2.  Toque em **Bloqueio Remoto**.
 
     Quando toca em **Bloqueio Remoto**, é apresentado o estado "Bloqueio remoto pendente".  Quando o Bloqueio Remoto for aplicado com êxito, o estado muda para "Bloqueio remoto com êxito".
 
-    O estado é apresentado em três locais:
+    O estado do Bloqueio Remoto é apresentado em três locais:
 
     * Na área de notificações do site. 
     * Na página de detalhes relativos ao dispositivo.
@@ -64,6 +64,6 @@ Para bloquear o seu dispositivo com o Bloqueio Remoto:
 ### Consulte também
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

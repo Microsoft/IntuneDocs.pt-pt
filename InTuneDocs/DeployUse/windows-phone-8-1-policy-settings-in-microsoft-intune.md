@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política do Windows Phone 8.1 no Microsoft Intune | Microsoft Intune
+title: Definições de política do Windows Phone 8.1 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Definições de configuração geral
 
-Utilize a **Política de configuração geral para Windows Phone** do Microsoft Intune para configurar as definições seguintes para dispositivos Windows Phone 8.1:
+Utilize a **Política de configuração geral para Windows Phone (Windows Phone 8.1 e posterior)** do Microsoft Intune para configurar as definições seguintes para dispositivos Windows Phone 8.1:
 
 -   **Definições de segurança do dispositivo móvel** – Escolha de uma lista de definições predefinidas que permitem controlar uma série de funcionalidades e a funcionalidade do dispositivo.
 
 -   **Aplicações compatíveis e não compatíveis** - Especifique uma lista de aplicações que são compatíveis ou não compatíveis na sua empresa. Os dispositivos Windows Phone podem bloquear ou permitir a instalação destas aplicações.
+
+### Definições de aplicabilidade
+
+|Nome da definição|Detalhes|
+|----------------|----------------------------------|
+|**Aplicar todas as configurações ao Windows 10**|Permite que as definições nesta política sejam aplicadas aos dispositivos Windows 10 Mobile, além dos dispositivos Windows Phone 8.1.|
 
 ### Definições de palavra-passe
 
@@ -121,8 +127,7 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
 |**Editar**|Permite-lhe editar o nome, o fabricante e o URL da aplicação selecionada.|
 |**Eliminar**|Elimina a aplicação selecionada da lista.|
-> [!IMPORTANT]
-> Se especificar uma lista de aplicações permitidas para dispositivos Windows Phone 8.1, tem de adicionar a aplicação Portal da Empresa a esta lista ou a mesma será bloqueada.
+> [!IMPORTANT] Se especificar uma lista de aplicações permitidas para dispositivos Windows Phone 8.1, tem de adicionar a aplicação Portal da Empresa a esta lista ou a mesma será bloqueada.
 
 
 ### Informações de referência para aplicações compatíveis e não compatíveis
@@ -139,9 +144,9 @@ Abra a página da aplicação e copie o URL para a área de transferência. Agor
 ## Definições de política personalizada 
 Utilize a **Política de configuração personalizada do Windows Phone** do Microsoft Intune para implementar as definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar as funcionalidades nos dispositivos **Windows Phone 8.1**. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
-Esta capacidade destina-se a permitir a implementação de definições do Windows Phone que não são configuráveis com uma política de configuração geral do Intune. Para obter informações sobre as definições que pode configurar com estas políticas, consulte [Gerir as definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Esta capacidade destina-se a permitir a implementação de definições do Windows Phone que não são configuráveis com uma política de configuração geral do Intune. Para informações sobre as definições que pode configurar com estas políticas, consulte [Gerir as definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-Para obter ajuda sobre como criar definições OMA-URI para dispositivos Windows Phone, consulte a [Documentação do protocolo de MDM do Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).
+Para obter ajuda sobre como criar configurações de URI OMA para dispositivos Windows Phone, consulte a [Documentação do protocolo de MDM do Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Definições gerais
 
@@ -169,6 +174,6 @@ Na caixa de diálogo **Adicionar ou Editar Definição OMA-URI**, especifique as
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

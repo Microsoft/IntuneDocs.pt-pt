@@ -48,11 +48,11 @@ As políticas de gestão de aplicações móveis (MAM) apenas se aplicam quando 
 
     ![Captura de ecrã da aplicação OneDrive a pedir um PIN](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  Depois de definir o PIN e confirmar, poderá aceder aos ficheiros no **OneDrive para Empresas**
+5.  Depois de definir o PIN e confirmar, poderá aceder aos ficheiros no **OneDrive para Empresas**.
 
     ![Captura de ecrã que mostra a localização do ficheiro aberta com a lista de ficheiros existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > Quando altera uma política implementada, as alterações serão aplicadas na próxima vez que abrir a aplicação.
+    > [!NOTE] Quando altera uma política implementada, as alterações serão aplicadas da próxima vez que abrir a aplicação.
 
 ##  Aceder ao OneDrive num dispositivo Android
 
@@ -105,13 +105,13 @@ O Microsoft Word é utilizado como exemplo para este cenário.
 
     ![Captura de ecrã de uma frase escrita num documento do Word](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  Abra o documento que guardou no local de trabalho.  Copie o texto, abra a sua conta pessoal do **Facebook** e tente colar o texto copiado.  Não deverá ser possível colar o conteúdo na nova mensagem do Facebook. A opção de colagem não está esbatida, mas não acontece nada quando prime **Colar**
+5.  Abra o documento que guardou no local de trabalho.  Copie o texto, abra a sua conta pessoal do **Facebook** e tente colar o texto copiado.  Não deverá ser possível colar o conteúdo na nova mensagem do Facebook. A opção de colagem não está esbatida, mas não acontece nada quando prime **Colar**.
 
     ![Captura de ecrã que mostra as seleções de Cortar, Copiar e Colar](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![Captura de ecrã que mostra que os dados não foram colados na mensagem do Facebook](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Agora, repita os passos 2 e 3 para criar outro documento novo, escreva uma frase à sua escolha e, em vez de o guardar na localização de trabalho, guarde-o na localização pessoal, como, por exemplo, **OneDrive - pessoal**
+6.  Agora, repita os passos 2 e 3 para criar outro documento novo, escreva uma frase à sua escolha e, em vez de o guardar na localização de trabalho, guarde-o na localização pessoal, como, por exemplo, **OneDrive - pessoal**.
 
     ![Captura de ecrã da seleção de Cortar, Copiar e Colar com a frase selecionada para copiar](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -136,24 +136,32 @@ Leia o cenário de exemplo abaixo para obter uma compreensão mais aprofundada d
 O utilizador A trabalha para duas empresas - a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de MAM. A **Empresa X** implementa políticas de MAM **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de MAM, mas a conta associada à Empresa Y não. Se pretender que a conta de utilizador associada à Empresa Y seja gerida pelas políticas de MAM, tem de remover a conta de utilizador associada à Empresa X.
 ### Adicionar uma segunda conta
 #### iOS
-Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional no mesmo dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida.  Também verá uma opção para remover a conta existente e adicionar uma nova. Se é o que pretende, clique em **Sim**
+Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional no mesmo dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida.  Também verá uma opção para remover a conta existente e adicionar uma nova. Se é o que pretende, clique em **Sim**.
 
 ![Captura de ecrã da caixa de diálogo com a mensagem a informar que a ação não é permitida e com as opções Sim e Não](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a informá-lo de que essa ação não é permitida, com instruções sobre como remover a conta existente e adicionar uma nova.  Nos dispositivos Android, para remover a conta existente, aceda a **Definições &gt;Geral &gt; Gestor de Aplicações &gt;Portal da Empresa e selecione "Limpar Dados"**
+Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a informá-lo de que essa ação não é permitida, com instruções sobre como remover a conta existente e adicionar uma nova.  Nos dispositivos Android, para remover a conta existente, aceda a **Definições &gt;Geral &gt; Gestor de Aplicações &gt;Portal da Empresa e selecione "Limpar Dados"**.
 
 ![Captura de ecrã da mensagem de erro e instruções para remover a conta](../media/AppManagement/Android_SwitchUser.png)
 
 ##  Ver ficheiros de multimédia para com a aplicação de partilha Rights Management
-Para ver ficheiros AV, PDF e de imagem da empresa em dispositivos Android, utilize a [aplicação de partilha Microsoft Rights Management (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)
+Para ver ficheiros AV, PDF e de imagem da empresa em dispositivos Android, utilize a [aplicação de partilha Microsoft Rights Management (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
 Transfira esta aplicação a partir da loja Google Play.  Quando a aplicação estiver instalada no seu dispositivo, inicie a aplicação e autentique-se com as credenciais da empresa. Agora, deverá conseguir ver os ficheiros protegidos e não protegidos de outras aplicações geridas por políticas.
+
+**Dispositivos Android que não estão inscritos no Intune**
+
+Antes de poder utilizar a aplicação de partilha RMS para ver os ficheiros de outras aplicações geridas pelo Intune, inicie a aplicação RMS e autentique-se com a sua conta do trabalho.  Quando iniciar sessão, verá a seguinte mensagem **apenas se não tiver uma licença RMS**:
+
+**Autenticação Bem-sucedida – pode agora visualizar ficheiros empresariais, mas a sua organização não está configurada para lhe permitir proteger ficheiros. Contacte o seu administrador de TI para mais detalhes.**
+
+Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheiros da empresa. Ainda pode abrir e ver os ficheiros da empresa a partir de outras aplicações geridas pelo Intune, e as políticas de MAM ainda são aplicáveis.  O que esta mensagem diz é que não poderá adicionar as capacidades de proteção adicionais que a aplicação de partilha RMS fornece.  Tem de ter uma licença RMS para adicionar uma proteção aos seus ficheiros. Para saber mais sobre as funcionalidades de proteção RMS de ficheiros, consulte [Proteger um ficheiro num dispositivo](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) e [Proteger um ficheiro que partilha por e-mail](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Consulte também
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Perguntas Mais Frequentes do Portal da Empresa | Microsoft Intune
+title: Sobre o Portal da Empresa | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -25,80 +25,85 @@ ms.suite: ems
 
 ---
 
-# Perguntas Mais Frequentes do Portal da Empresa
+# Sobre o Portal da Empresa
 
+## O que é o Portal da Empresa e o que pode fazer com o mesmo?
+O Portal da Empresa do Microsoft Intune dá-lhe acesso a dados e aplicações da empresa ou escola. Pode obter o Portal da Empresa de duas formas:
 
+- Ao instalar a aplicação Portal da Empresa no dispositivo. Normalmente, obtém a aplicação Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o administrador de TI também pode instalar a aplicação Portal da Empresa para si através de métodos diferentes.
+- Ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI configurou. 
 
-## O que é o Portal da Empresa?
-O Portal da Empresa é a interface da sua empresa que lhe permite gerir os seus dispositivos e computadores de trabalho ou gerir os dispositivos ou computadores pessoais que escolhe utilizar no trabalho.  O Portal da Empresa pode ser um site ao qual pode aceder ou pode ser uma aplicação que instala no seu dispositivo.
+Existem algumas pequenas diferenças entre a aplicação Portal da Empresa e o site do Portal da Empresa, mas pode efetuar a maior parte das mesmas tarefas nos dois. Alguns exemplos são:
 
-## O que posso fazer com o Portal da Empresa?
-Quando adiciona o seu computador ou dispositivo ao Portal da Empresa, pode procurar aplicações da empresa para instalar, gerir outros dispositivos que adicionou e localizar as informações de contacto do seu administrador de TI.
+- Inscrever os dispositivos
+- Ver o estado dos dispositivos
+- Transferir as aplicações que a empresa ou escola lhe disponibiliza
+- Mudar o nome do seu dispositivo
+- Repor o PIN ou palavra-passe
+- Contactar o seu departamento de TI para obter ajuda
+
+Para ver o que pode fazer utilizando o site do Portal da Empresa versus utilizando a aplicação Portal da Empresa no seu dispositivo, escolha uma das seguintes ligações:
+
+> [!div class="op_single_selector"]
+- [Android](using-your-android-device-with-intune.md)
+- [iOS e Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows](using-your-windows-device-with-intune.md)
+- [Web site do Portal da Empresa](using-the-intune-company-portal-website.md)
 
 ## O que acontece quando adiciono um computador ou dispositivo ao Portal da Empresa?
-Quando adiciona um computador ou dispositivo ao Portal da Empresa, é possível instalar algum software ou transferir uma aplicação (dependendo do dispositivo).  Ao fazê-lo, também está a dar permissão ao administrador de TI para gerir o seu dispositivo de forma ajudar a proteger as informações da empresa no dispositivo.  
+Quando adiciona um computador ou dispositivo ao Portal da Empresa, é possível instalar algum software ou transferir uma aplicação (dependendo do dispositivo).  Ao fazê-lo, também está a dar permissão ao administrador de TI para gerir o seu dispositivo de forma ajudar a proteger as informações da empresa no dispositivo.
+
+Para saber mais sobre o que o administrador de TI pode e não pode ver no seu dispositivo, utilize a ligação que corresponde ao tipo de dispositivo que está a utilizar:
+
+> [!div class="op_single_selector"]
+- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS e Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Que tipos de computadores ou dispositivos posso adicionar ao Portal da Empresa?
 
--   Windows 10 Mobile
-
--   Windows 10 Desktop
-
--   Windows Phone 8.1
-
--   Windows 8,1
-
--   Dispositivos Windows RT
-
--   Windows Phone 8
-
 -   iPhones, iPads e Mac OS X
 
--   Dispositivos Android
+-   Dispositivos móveis Android
 
-## Aplicação do Portal da Empresa não suportada
-Esta versão do Portal da Empresa já não pode ser utilizada. Para continuar, instale a aplicação **Portal da Empresa** a partir da Loja Windows.
+-   Dispositivos Windows
+    -   10 Mobile
+    -   Windows 10 Desktop
+    -   Windows Phone 8.1
+    -   Windows 8,1
+    -   Dispositivos Windows RT
+    -   Windows Phone 8
+    -   iPhones, iPads e Mac OS X
+    -   Dispositivos móveis Android
+
 
 ## Posso remover um computador ou dispositivo do Portal da Empresa?
-Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Empresa.  Existe uma diferença entre **remover** e **repor**:
+Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Empresa. Existe uma diferença entre **remover** e **repor**:
 
--   Quando remove um computador ou dispositivo, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo e alguns dados da empresa poderão ser removidos do seu dispositivo.
+Ao *remover* um computador ou dispositivo, anula a inscrição de dispositivo do Intune. Quando anula a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo, e alguns dados da empresa poderão ser removidos do seu dispositivo. Para saber como pode remover o seu dispositivo do Portal da Empresa, escolha uma das seguintes ligações:
 
--   Quando repõe um computador ou dispositivo, o Portal da Empresa tenta repor o seu computador ou dispositivo novamente para as predefinições do fabricante.  Isto pode fazer com que todos os dados, da empresa e pessoais, sejam removidos.
+> [!div class="op_single_selector"]
+- [Android](unenroll-your-device-from-intune-android.md)
+- [iOS e Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Windows](unenroll-your-device-from-intune-windows.md)
+
+Ao *repor* um computador ou dispositivo, o Portal da Empresa tenta repor o seu computador ou dispositivo novamente para as predefinições do fabricante. Repor o seu dispositivo remove todos os dados empresariais e pessoais do dispositivo! Se perder o dispositivo, pode também repô-lo de forma remota a partir do site do Portal da Empresa.
+
+Para saber como repor o seu dispositivo, escolha uma das seguintes ligações:
+
+> [!div class="op_single_selector"]
+- [Android](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS e Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+- [Repor o dispositivo a partir do site do Portal da Empresa](reset-your-device-cpwebsite.md)
 
 ## Não vejo todos os meus dispositivos no Portal da Empresa
 Para ver um dispositivo, este tem de ser adicionado ao Portal da Empresa. Siga as instruções do seu administrador e procure no Portal da Empresa e, depois, siga os passos relativos ao seu dispositivo. Também não verá dispositivos que são propriedade e são geridos pela sua empresa.
 
-## Tenho de instalar uma versão nova do Portal da Empresa
-Se a sua versão do Portal da Empresa já não for suportada ou se estiver disponível uma versão mais recente, utilize os seguintes procedimentos para atualizar o seu dispositivo.
-
-### Para atualizar o seu dispositivo Windows
-
-1.  Navegue para a Loja Windows e procure o **portal da Empresa**.
-
-2.  Siga as instruções de instalação.
-
-    > [!NOTE]
-    > Se não conseguir aceder à Loja Windows, contacte o seu administrador.
-
-### Para atualizar o seu dispositivo iOS
-
-A Apple App Store irá alertá-lo quando estiver disponível uma nova versão do Portal da Empresa. Siga as instruções no alerta para atualizar o seu dispositivo.
-
-## Recebo um erro que indica que o meu computador já está inscrito
-Isto significa que o seu computador já está adicionado ao portal da empresa mas ainda não está ligado à sua conta de utilizador. Siga este procedimento para ligar o seu computador à sua conta de utilizador e concluir o processo.
-
-### Para ligar o seu computador
-
-1.  No computador que pretende associar à sua conta, clique em **Início** e, em seguida, clique em **Microsoft Intune Center**.
-
-2.  Abra o Portal da Empresa.
-
-3.  Siga os pedidos para ligar o computador à sua conta de utilizador.
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
