@@ -79,40 +79,40 @@ Segue-se uma lista dos passos para ajudá-lo a começar a fase de **Implementaç
 
 -   Identifique grupos que possam necessitar de formação e comunicações direcionadas.
 
--   Personalizar comunicações por e-mail, atualizar o site da intranet
-
--   Identifique o proprietário contínuo para atualizações de recursos/comunicações.
+-   Personalizar comunicações por e-mail, atualizar o site de intranet Identificar o proprietário contínuo para atualizações de recursos/comunicações.
 
 -   Destaque os métodos de formação que irá utilizar.
-    Crie uma lista de verificação de Introdução e um guia de inscrição para os utilizadores.
-    -  Utilize estes guias de utilizador como ponto de partida:
-    -  [Inscrever o dispositivo Windows no Intune](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Inscrever o dispositivo Android no Intune](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Inscrever o dispositivo iOS no Intune](/intune/enduser/enroll-your-device-in-intune-ios]
 
--   [Inscrever o dispositivo Mac OS X no Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+-   Crie uma lista de verificação de Introdução e um guia de inscrição para os utilizadores.
+    Utilize estes guias de utilizador como ponto de partida:
+    -  [Inscrever o dispositivo Windows no Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Inscrever o dispositivo Android no Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Inscrever o dispositivo iOS no Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Inscrever o dispositivo Mac OS X no Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Defina um processo de atualização dos materiais de formação, conforme necessário.
 
-## Implemente o plano de implementação ampla.
-Desafios comuns
+-   Implemente o plano de implementação ampla.
 
--   Seguem-se alguns desafios que poderá encontrar na fase de **Implementação empresarial**.
+## Desafios comuns
+Seguem-se alguns desafios que poderá encontrar na fase de **Implementação empresarial**.
 
-    **Desafio:** foram enviadas mensagens de e-mail, mas a adoção é limitada. **Atenuação:** compreenda que os utilizadores podem aceder centenas se não milhares de mensagens de e-mail por dia.
+-   **Desafio:** foram enviadas mensagens de e-mail, mas a adoção é limitada.
 
--   Para ajudar a garantir que a sua mensagem é ouvida: (1) peça a um patrocinador executivo para enviar as mensagens iniciais, (2) mantenha a mensagem de e-mail breve e foque-se na proposta de valor, (3) faça um apelo à ação claro e (4) utilize várias táticas diferentes de sensibilização: coloque cartazes em refeitórios a pedir aos utilizadores para verificarem a sua caixa de entrada, por exemplo.
+    **Atenuação:** compreenda que os utilizadores podem aceder centenas se não milhares de mensagens de e-mail por dia. Para ajudar a garantir que a sua mensagem é ouvida: (1) peça a um patrocinador executivo para enviar as mensagens iniciais, (2) mantenha a mensagem de e-mail breve e foque-se na proposta de valor, (3) faça um apelo à ação claro e (4) utilize várias táticas diferentes de sensibilização: coloque cartazes em refeitórios a pedir aos utilizadores para verificarem a sua caixa de entrada, por exemplo.
 
-    **Desafio:** os utilizadores são resistentes à mudança e retraem-se no momento de utilizar novas tecnologias.
+-   **Desafio:** os utilizadores são resistentes à mudança e retraem-se no momento de utilizar novas tecnologias.
 
--   **Atenuação:** recorra às experiências positivas dos utilizadores do piloto para promover a utilização de dispositivos geridos pelo Intune.
+    **Atenuação:** recorra às experiências positivas dos utilizadores do piloto para promover a utilização de dispositivos geridos pelo Intune.
 
-    **Desafio:** os utilizadores sentem que se têm de receber formação, é porque a solução deve ser difícil de utilizar. **Atenuação:** todas as pessoas têm ritmos diferentes de aprendizagem. Algumas aprendem facilmente novas tecnologias sem qualquer instrução, enquanto outras precisam de alguma orientação ou ajuda. A formação pode dar sugestões para garantir que os utilizadores estão a obter o máximo partido da solução, e pode ser dividida em sessões informais mais pequenas ou por departamentos para não sobrecarregar os utilizadores ou para que não pareça demasiado pormenorizada. Posicione a formação como uma mais valia e ofereça formação segmentada/sessões informais.
+-   **Desafio:** os utilizadores sentem que se têm de receber formação, é porque a solução deve ser difícil de utilizar.
 
-### Para maximizar a aprendizagem e a adoção do utilizador, incorpore vários métodos de formação no seu plano.
-[Passos seguintes](operations-and-maintenance.md)
+    **Atenuação:** todas as pessoas têm ritmos diferentes de aprendizagem. Algumas aprendem facilmente novas tecnologias sem qualquer instrução, enquanto outras precisam de alguma orientação ou ajuda. A formação pode dar sugestões para garantir que os utilizadores estão a obter o máximo partido da solução, e pode ser dividida em sessões informais mais pequenas ou por departamentos para não sobrecarregar os utilizadores ou para que não pareça demasiado pormenorizada. Posicione a formação como uma mais valia e ofereça formação segmentada/sessões informais. Para maximizar a aprendizagem e a adoção do utilizador, incorpore vários métodos de formação no seu plano.
+
+### Passos seguintes
+[Operações e manutenção](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

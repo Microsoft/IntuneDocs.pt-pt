@@ -4,7 +4,7 @@
 title: Planear os grupos de utilizadores e de dispositivos | Microsoft Intune
 description:
 keywords:
-author: SanchuSa
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -40,7 +40,7 @@ Os grupos no Intune proporcionam uma enorme flexibilidade para gerir os seus dis
 
 A vista predefinida do nó Grupos na consola de administração do Intune é:
 
-![Captura de ecrã da vista predefinida do nó Grupos na consola do Intune](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Captura de ecrã da vista predefinida do nó Grupos na consola do Intune](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 As políticas são implementadas em grupos, pelo que a hierarquia do grupo é uma das principais considerações de design. Também é importante saber que o grupo principal de um grupo não pode ser alterado depois de este ser criado, pelo que o design dos grupos é fundamental a partir do momento em que começa a utilizar o serviço Intune. São descritas aqui algumas das práticas recomendadas para criar uma hierarquia de grupo com base nas suas necessidades organizacionais.
 
@@ -92,7 +92,7 @@ As políticas são implementadas em grupos, pelo que a hierarquia do grupo é um
 
     * O grupo **Utilizadores de Portáteis** é um membro do grupo de segurança **Utilizadores Aprovados** .
 
-    * O utilizador cria um grupo no Intune que utiliza uma consulta de associação dinâmica que inclui os membros do grupo **Utilizadores Aprovados**. O resultado é que o seu grupo de utilizadores do Intune inclui a **Teresa**
+    * O utilizador cria um grupo no Intune que utiliza uma consulta de associação dinâmica que inclui os membros do grupo **Utilizadores Aprovados**. O resultado é que o seu grupo de utilizadores do Intune inclui a **Teresa**.
 
 > [!TIP]
 > Quando estiver a criar grupos, pense como irá aplicar a política. Por exemplo, pode ter políticas específicas para sistemas operativos de dispositivos e políticas específicas para diferentes funções na sua organização ou para Unidades Organizacionais que já definiu no Active Directory. Alguns utilizadores consideram útil ter grupos de dispositivos específicos para iOS, Android e Windows, bem como grupos de utilizadores para cada função organizacional.
@@ -131,22 +131,22 @@ Se a sua organização permitir que os funcionários utilizem os seus próprios 
 
 No caso de BYOD ou de uma combinação, tenha o cuidado de planear políticas que não interfiram nas regulamentações de privacidade locais. Crie um grupo principal para todos os utilizadores que vão trazer os dispositivos deles. Este grupo pode, posteriormente, ser utilizado para aplicar as políticas que são aplicáveis a todos os utilizadores nesta categoria.
 
-![Captura de ecrã da criação de um grupo principal BYOD](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Captura de ecrã da criação de um grupo principal BYOD](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 Da mesma forma, pode criar um grupo para os utilizadores de CO na sua organização:
 
-![Captura de ecrã de grupos de utilizadores colaterais para BYOD e CO](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Captura de ecrã de grupos de utilizadores colaterais para BYOD e CO](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Grupos para regiões geográficas
 Se a sua organização precisar de políticas para regiões específicas, pode criar grupos com base na região geográfica. Pode baseá-los em grupos regionais que possa já ter criado no Active Directory (AD) e sincronizá-los com o Azure AD. Também pode criá-los diretamente no Azure AD.
 
-Estas capturas de ecrã mostram como criar grupos do Intune com base em grupos sincronizados a partir do AD no local. Este exemplo parte do princípio de que tem um grupo de segurança do AD com o nome **Grupo de Utilizadores dos EUA**
+Estas capturas de ecrã mostram como criar grupos do Intune com base em grupos sincronizados a partir do AD no local. Este exemplo parte do princípio de que tem um grupo de segurança do AD com o nome **Grupo de Utilizadores dos EUA**.
 
 1. Em primeiro lugar, forneça as informações gerais.
 
-    ![Captura de ecrã da área Editar Grupo](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![Captura de ecrã da área Editar Grupo](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 Nos Critérios de associação, selecione **Grupo de Utilizadores dos EUA**, sincronizado a partir do AD, como o grupo de segurança a utilizar nas Regras de associação.
 
@@ -158,7 +158,7 @@ Reveja e, em seguida, escolha **Concluir** para concluir a criação do grupo.
 
 No nosso exemplo, também criámos um grupo Médio Oriente e Ásia, MEA.
 
-> Se a associação ao grupo não for preenchida com base na associação de grupo de segurança, verifique se atribuiu licenças do Intune a esses membros.
+> [!NOTE] Se a associação ao grupo não for preenchida com base na associação ao grupo de segurança, verifique se atribuiu licenças do Intune a esses membros.
 
 ### Grupos para hardware específico
 Se a sua organização precisar de políticas que se apliquem a tipos específicos de hardware, pode criar grupos com base neste requisito. Pode baseá-los em grupos específicos que já tenha criado no AD no local e sincronizá-los com o Azure AD. Também pode criá-los diretamente no Azure AD. Neste exemplo, utilizamos o **Grupo de Utilizadores dos EUA** como o principal do grupo **Utilizadores de portáteis**.
@@ -167,14 +167,14 @@ Se a sua organização precisar de políticas que se apliquem a tipos específic
 
 Nesta fase, a hierarquia do grupo deverá aparecer da seguinte forma: Como pode ver, existem agora membros no grupo do Intune **Utilizadores de portáteis**. Todas as políticas aplicadas a este grupo serão agora aplicadas aos utilizadores de portáteis BYOD da região dos EUA.
 
-![Apresentação do grupo de utilizadores de portáteis](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Apresentação do grupo de utilizadores de portáteis](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Grupos para sistemas operativos específicos
 Se a sua organização precisar de políticas que se apliquem a sistemas operativos específicos, como Android, iOS ou Windows, pode criar grupos com base neste requisito. Tal como nos exemplos anteriores, pode baseá-los em grupos específicos de sistema operativo que já tenha criado no AD no local e sincronizá-los com o Azure AD. Também pode criá-los diretamente no Azure AD.
 
-Seguindo o mesmo método dos exemplos anteriores, podemos criar grupos com base em utilizadores <!--devices?--> que utilizem plataformas específicas de SO.
+Seguindo o mesmo método dos exemplos anteriores, podemos criar grupos com base em utilizadores <!--devices?--> que utilizem plataformas de SO específicas.
 
-> Se tiver utilizadores que utilizem várias plataformas / sistemas operativos móveis e não dispuser de uma forma de categorizar automaticamente esses utilizadores como utilizadores de Android, iOS ou Windows, considere aplicar políticas ao nível do dispositivo, o que lhe proporcionará mais flexibilidade na aplicação de políticas específicas de SO.
+> [!NOTE] Se tiver utilizadores que utilizem várias plataformas/sistemas operativos móveis e não dispuser de uma forma de categorizar automaticamente esses utilizadores como utilizadores de Android, iOS ou Windows, considere aplicar políticas ao nível do dispositivo, o que lhe garantirá mais flexibilidade na aplicação de políticas específicas de SO.
 >
 > Não pode aprovisionar grupos dinamicamente com base no SO do dispositivo. Para tal, utilize grupos de Segurança do AD ou do AAD.
 
@@ -206,18 +206,18 @@ Continue a criar grupos de dispositivos, até ter uma hierarquia de grupo de dis
 ## Hierarquias de grupos e convenções de nomenclatura
 Para facilitar a gestão de políticas, recomendamos que atribua um nome a cada política de acordo com o objetivo, a plataforma e o âmbito com que é aplicada. Este padrão de nomenclatura deve seguir a estrutura do grupo que criou durante a preparação da aplicação das políticas.
 
-Por exemplo, para uma política do Android que seja aplicada a todos os dispositivos móveis Android da empresa, ao nível regional EUA, o nome da política pode ser
+Por exemplo, para uma política do Android que seja aplicada a todos os dispositivos móveis Android da empresa, ao nível regional dos EUA, o nome da política pode ser **CO_US_Mob_Android_General**.
 
-![CO_US_Mob_Android_General](/intune/media/Intune_planning_policy_android_small.png)
+![Criar política para Android](/intune/media/Intune_planning_policy_android_small.png)
 
-Criar política para Android
+Ao denominar as políticas desta forma, poderá identificar as políticas rapidamente, bem como a sua utilização prevista e âmbito, a partir do nó de políticas da consola, conforme apresentado:
 
-![Ao denominar as políticas desta forma, poderá identificar as políticas rapidamente, bem como a sua utilização prevista e âmbito, a partir do nó de políticas da consola, conforme apresentado:](/intune/media/Intune_planning_policy_view_small.png)
+![Lista de políticas do Intune](/intune/media/Intune_planning_policy_view_small.png)
 
-## Lista de políticas do Intune
-[Passos seguintes](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+## Passos seguintes
+[Criar grupos](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
