@@ -28,21 +28,21 @@ ms.suite: ems
 # Sobre o Portal da Empresa
 
 ## O que é o Portal da Empresa e o que pode fazer com o mesmo?
-O Portal da Empresa do Microsoft Intune dá-lhe acesso a dados e aplicações da empresa ou escola. Pode obter o Portal da Empresa de duas formas:
+O Portal da Empresa do Microsoft Intune dá-lhe acesso a dados e aplicações da sua empresa ou escola. Pode obter o Portal da Empresa de duas formas:
 
-- Ao instalar a aplicação Portal da Empresa no dispositivo. Normalmente, obtém a aplicação Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o administrador de TI também pode instalar a aplicação Portal da Empresa para si através de métodos diferentes.
-- Ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI configurou. 
+- Ao instalar a aplicação do Portal da Empresa no dispositivo. Normalmente, obtém a aplicação do Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o administrador de TI também pode instalá-la por si mediante outros métodos.
+- Ao aceder ao [Web site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI configurou. 
 
-Existem algumas pequenas diferenças entre a aplicação Portal da Empresa e o site do Portal da Empresa, mas pode efetuar a maior parte das mesmas tarefas nos dois. Alguns exemplos são:
+Existem algumas pequenas diferenças entre a aplicação do Portal da Empresa e o Web site do Portal da Empresa, mas a maioria das tarefas que pode fazer num pode fazer no outro. Alguns exemplos são:
 
 - Inscrever os dispositivos
 - Ver o estado dos dispositivos
 - Transferir as aplicações que a empresa ou escola lhe disponibiliza
 - Mudar o nome do seu dispositivo
-- Repor o PIN ou palavra-passe
+- Repor o PIN ou a palavra-passe
 - Contactar o seu departamento de TI para obter ajuda
 
-Para ver o que pode fazer utilizando o site do Portal da Empresa versus utilizando a aplicação Portal da Empresa no seu dispositivo, escolha uma das seguintes ligações:
+Para ver o que pode fazer com o Web site do Portal da Empresa em comparação com a aplicação do Portal da Empresa no seu dispositivo, escolha uma das ligações seguintes:
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -80,16 +80,16 @@ Para saber mais sobre o que o administrador de TI pode e não pode ver no seu di
 ## Posso remover um computador ou dispositivo do Portal da Empresa?
 Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Empresa. Existe uma diferença entre **remover** e **repor**:
 
-Ao *remover* um computador ou dispositivo, anula a inscrição de dispositivo do Intune. Quando anula a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo, e alguns dados da empresa poderão ser removidos do seu dispositivo. Para saber como pode remover o seu dispositivo do Portal da Empresa, escolha uma das seguintes ligações:
+Ao *Remover* um computador ou dispositivo, anula a inscrição do mesmo no Intune. Quando anula a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo e alguns dados da empresa poderão ser removidos do mesmo. Para saber como pode remover o dispositivo do Portal da Empresa, escolha uma das ligações seguintes:
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
 - [iOS e Mac OS X](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
-Ao *repor* um computador ou dispositivo, o Portal da Empresa tenta repor o seu computador ou dispositivo novamente para as predefinições do fabricante. Repor o seu dispositivo remove todos os dados empresariais e pessoais do dispositivo! Se perder o dispositivo, pode também repô-lo de forma remota a partir do site do Portal da Empresa.
+Ao *Repor* um computador ou dispositivo, o Portal da Empresa tenta repô-lo novamente para as predefinições do fabricante. Repor o dispositivo remove todos os dados empresariais e pessoais do dispositivo! Se perder o dispositivo, pode também repô-lo de forma remota a partir do Web site do Portal da Empresa.
 
-Para saber como repor o seu dispositivo, escolha uma das seguintes ligações:
+Para saber como repor o dispositivo, escolha uma das ligações seguintes:
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
@@ -100,10 +100,14 @@ Para saber como repor o seu dispositivo, escolha uma das seguintes ligações:
 ## Não vejo todos os meus dispositivos no Portal da Empresa
 Para ver um dispositivo, este tem de ser adicionado ao Portal da Empresa. Siga as instruções do seu administrador e procure no Portal da Empresa e, depois, siga os passos relativos ao seu dispositivo. Também não verá dispositivos que são propriedade e são geridos pela sua empresa.
 
+## Se tiver dúvidas, contacte o administrador de TI.
+Se precisar de ajuda, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 

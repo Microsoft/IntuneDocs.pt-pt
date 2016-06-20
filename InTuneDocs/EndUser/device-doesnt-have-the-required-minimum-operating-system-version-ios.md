@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,9 +30,11 @@ ms.suite: ems
 
 O dispositivo iOS não tem a versão mínima do sistema operativo requerida pelo seu departamento de TI.  Antes de atualizar o seu dispositivo, verifique a versão do sistema operativo atual ao tocar em **Definições** &gt; **Sobre**. Para atualizar o seu dispositivo para a versão mais recente, toque em **Definições** &gt; **Geral** &gt; **Atualização de Software**.
 
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

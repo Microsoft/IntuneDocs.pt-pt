@@ -18,7 +18,7 @@ ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre 
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,8 +28,10 @@ ms.suite: ems
 # Aguarde enquanto o seu dispositivo está a ser avaliado
 O seu dispositivo ainda está a ser avaliado relativamente à compatibilidade. Aguarde alguns minutos para que a verificação de compatibilidade seja concluída.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO1-->
 
 

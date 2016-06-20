@@ -18,7 +18,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,10 +40,13 @@ A [autenticação multifator (MFA)](protect-windows-devices-with-multi-factor-au
 ## Controlar as definições do Microsoft Passport em dispositivos Windows
 O Intune permite efetuar a integração com o [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), que é um método de início de sessão alternativo para Windows 10 e posterior que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual.
 
+## Ignorar Bloqueio de Ativação em dispositivos iOS
+O Bloqueio de Ativação é uma funcionalidade que o ajuda a proteger os dispositivos dos utilizadores ao exigir que o Apple ID e a palavra-passe deles sejam introduzidos antes que qualquer pessoa possa apagá-los ou reativá-los. No entanto, esta funcionalidade pode originar problemas, por exemplo, se os utilizadores saírem da empresa sem remover o bloqueio. [Ignorar Bloqueio de Ativação de iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) pode ajudar ao remover o bloqueio de dispositivos iOS supervisionados, o que lhe permite realocá-los ou apagá-los.
+
 ## Proteger os PCs Windows geridos com o cliente do Intune
-O Intune continua a suportar políticas de segurança para PCs Windows que não inscreve, mas que gere com o software cliente de computador do Intune. Para saber como estas políticas podem ajudar a proteger os seus PCs Windows, consulte [Utilizar políticas para ajudar a proteger PCs Windows que executem o software cliente do Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
+O Intune continua a suportar políticas de segurança para PCs Windows que não inscreve, mas que gere com o software cliente de computador do Intune. Para saber como estas políticas podem ajudar a proteger os seus PCs Windows, veja [Use policies to help protect Windows PCs that run the Intune client software (Utilizar políticas para ajudar a proteger PCs Windows que executem o software cliente do Intune)](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

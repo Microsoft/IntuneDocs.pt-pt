@@ -18,7 +18,7 @@ ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,17 +34,19 @@ Se remover o seu dispositivo, este deixa de aparecer no Portal da Empresa e pode
 
 Para remover o dispositivo:
 
-1.  Abra o [Web site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no dispositivo cujo nome quer mudar.
+1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no dispositivo cujo nome quer mudar.
 
-2.  Toque em **Remover**
+2.  Toque em **Remover**.
 
     ![remover dispositivo](./media/iwp-1-tap-reset-passcode.png)
 
 O seu dispositivo foi removido.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

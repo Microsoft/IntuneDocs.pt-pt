@@ -18,7 +18,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -98,11 +98,13 @@ Quando o seu dispositivo está inscrito, o administrador de TI pode:
 
 -   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, podem incorrer tarifas de roaming.
 
-Para obter os passos sobre como inscrever o seu dispositivo, consulte [Inscrever o seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o seu dispositivo Mac OS X no Intune](enroll-your-device-in-intune-mac-os-x.md).
+Para obter os passos sobre como inscrever o seu dispositivo, veja [Enroll your iOS device in Intune (Inscrever o dispositivo iOS no Intune)](enroll-your-device-in-intune-ios.md) ou [Enroll your Mac OS X device in Intune (Inscrever o dispositivo Mac OS X no Intune)](enroll-your-device-in-intune-mac-os-x.md).
+
+Se tiver dúvidas e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

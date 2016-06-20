@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 ## Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o seu administrador de TI poderá instalá-la no seu dispositivo. Para obter informações sobre a inscrição, consulte [Inscrever o seu dispositivo no Intune](enroll-your-device-in-Intune-android.md)
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o seu administrador de TI poderá instalá-la no seu dispositivo. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
 
 -   Instala uma aplicação da Play Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
@@ -76,12 +76,12 @@ Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
 
 -   Microsoft Word, Excel, PowerPoint
 
-Contacte o seu administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo.
+Contacte o seu administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

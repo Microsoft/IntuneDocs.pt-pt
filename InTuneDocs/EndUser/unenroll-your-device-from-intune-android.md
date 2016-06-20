@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Anular a inscrição do dispositivo no Intune
 
-Ao anular a inscrição do seu dispositivo Android no Intune, o dispositivo deixará de poder aceder a recursos da empresa.  Para obter mais informações sobre o que acontece quando anula a inscrição, veja [O que acontece se anular a inscrição do seu dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+Ao anular a inscrição do seu dispositivo Android no Intune, o dispositivo deixará de poder aceder a recursos da empresa.  Para obter mais informações sobre o que acontece quando anula a inscrição, veja [What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do seu dispositivo no Intune?)](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Para anular a inscrição do dispositivo no Intune e desinstalar a aplicação do Portal da Empresa, siga estes passos ou veja este [vídeo](http://aka.ms/gyq2du):
 
@@ -46,10 +46,11 @@ Para anular a inscrição do dispositivo no Intune e desinstalar a aplicação d
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

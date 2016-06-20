@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 ### Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o seu administrador de TI poderá instalá-la no seu dispositivo. Para informações sobre a inscrição, consulte [Inscrever o seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o seu dispositivo Mac OS X no Intune](enroll-your-device-in-intune-mac-os-x.md).
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o seu administrador de TI poderá instalá-la no seu dispositivo. Para obter informações sobre a inscrição, veja [Enroll your iOS device in Intune (Inscrever o dispositivo iOS no Intune)](enroll-your-device-in-intune-ios.md) ou [Enroll your Mac OS X device in Intune (Inscrever o dispositivo Mac OS X no Intune)](enroll-your-device-in-intune-mac-os-x.md).
 
 -   Instala uma aplicação da App Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
@@ -76,11 +76,11 @@ Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
 
 -   Microsoft Word, Excel, PowerPoint
 
-Contacte o seu administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo.
+Contacte o seu administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Como encriptar o seu dispositivo Windows
-Para reestabelecer ligação ao seu trabalho, terá de encriptar o seu dispositivo ao seguir estas instruções:
 
-## Opção 1 - adicionar uma conta Microsoft
+Para proteger os dados empresariais ou escolares, o seu administrador de TI pode solicitar a encriptação do seu dispositivo Windows. Se tiver um Windows Phone inscrito, este será encriptado automaticamente, caso seja necessária encriptação.
 
-1.  Procure e inicie a aplicação **Definições do PC** .
+Se tiver um dispositivo de ambiente de trabalho, siga as instruções abaixo para o encriptar. 
 
-2.  Clique em **Contas** &gt; **A sua conta** e, em seguida, clique em **Ligar a uma conta Microsoft**
-
-3.  Siga as instruções apresentadas.
-
-4.  Certifique-se de que o dispositivo está inscrito no Intune ao seguir as instruções no artigo [Inscrever o seu dispositivo para utilizá-lo no trabalho](http://go.microsoft.com/fwlink/?LinkId=519071)
-
-## Opção 2 - ativar o BitLocker:
-
-1.  Procure e inicie a aplicação **Gerir o BitLocker** .
+1.  Procure e inicie a aplicação **Gerir o BitLocker**.
 
 2.  Clique em **Ativar o BitLocker**e, em seguida, siga as instruções apresentadas para encriptar cada uma das suas unidades.
 
-3.  Certifique-se de que o dispositivo está inscrito no Intune ao seguir as instruções no artigo [Inscrever o seu dispositivo para utilizá-lo no trabalho](http://go.microsoft.com/fwlink/?LinkId=519071)
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

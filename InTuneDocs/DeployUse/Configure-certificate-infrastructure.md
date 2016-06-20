@@ -18,7 +18,7 @@ ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,7 +60,7 @@ Para utilizar perfis de certificado .PFX, para além da Autoridade de Certifica�
 > [!NOTE]           
 > -    O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Além disso, o servidor que aloja o WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos, e tem de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
-Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para informações gerais sobre os servidores do WAP, consulte [Trabalhar com o Proxy de Aplicações Web](http://technet.microsoft.com/library/dn584113.aspx).|
+Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### Certificados e Modelos
@@ -94,7 +94,7 @@ Nesta tarefa irá:
 
 -   Criar uma conta do serviço do NDES
 
-    > [!NOTE] Para revogar certificados, a conta de serviço do NDES necessita de direitos para *Emitir e Gerir Certificados* para cada modelo de certificado utilizado por um perfil de certificado.
+    > [!NOTE] Para revogar certificados, a conta de serviço do NDES precisa de direitos para *Emitir e Gerir Certificados* para cada modelo de certificado utilizado por um perfil de certificado.
 
 -   Configurar um modelo de certificados para o NDES
 
@@ -120,7 +120,7 @@ Nesta tarefa irá:
 
 3.  Reveja o separador **Período de validade** no separador **Geral** do modelo. Por predefinição, o Intune utiliza o valor configurado no modelo. Contudo, tem a opção de configurar a AC para permitir que o autor do pedido especifique um valor diferente que pode, posteriormente, configurar a partir da Consola de administração do Intune. Se pretender utilizar sempre o valor no modelo, ignore o resto deste passo.
 
-    > [!IMPORTANT] As plataformas iOS e Mac OS X utilizam sempre o conjunto de valores no modelo, independentemente de outras configurações que efetuar.
+    > [!IMPORTANT] As plataformas iOS e Mac OS X utilizam sempre o conjunto de valores no modelo, independentemente de outras configurações que fizer.
 
     Para configurar a AC de modo a que permita ao autor do pedido especificar o período de validade, execute os seguintes comandos na AC:
 
@@ -166,7 +166,7 @@ Nesta tarefa irá:
 
         -   **Ferramentas de Gestão** &gt; **Compatibilidade de Gestão do IIS 6** &gt; **Compatibilidade com Metabase do IIS 6**
 
-        -   **Ferramentas de Gestão** &gt; **Compatibilidade de Gestão do IIS 6** &gt; **Compatibilidade WMI do IIS 6**
+        -   **Ferramentas de Gestão** &gt; **Compatibilidade de Gestão do IIS 6** &gt; **Compatibilidade do WMI do IIS 6**
 
 2.  No servidor, adicione a conta do serviço do NDES como membro do grupo **IIS_IUSR**.
 
@@ -232,7 +232,7 @@ Nesta tarefa irá:
 
     3.  Para o **certificado SSL**, especifique o certificado de autenticação de servidor.
 
-        > [!NOTE] Se o servidor do NDES utilizar tanto um nome externo como interno para um único endereço de rede, o certificado de autenticação de servidor tem de ter um **Nome do Requerente** com um nome de servidor público externo e um **Nome Alternativo do Requerente** que inclua o nome de servidor interno.
+        > [!NOTE] Se o servidor do NDES utilizar tanto um nome externo, como interno, para um único endereço de rede, o certificado de autenticação de servidor tem de ter um **Nome do Requerente** com um nome de servidor público externo e um **Nome Alternativo do Requerente** que inclua o nome de servidor interno.
 
 2.  No seu Servidor do NDES, peça e instale um certificado de **autenticação de cliente** à sua AC interna ou a uma autoridade de certificado pública. Este pode ser o mesmo certificado que o certificado de autenticação de servidor caso esse certificado contenha ambas funcionalidades.
 
@@ -285,7 +285,7 @@ Transferir, instalar e configurar o Certificate Connector no Servidor do NDES
 
 2.  Após a conclusão da transferência, execute o instalador transferido (**ndesconnectorssetup.exe**):
 
-    -   Para certificados .PFX, execute o instalador no computador com capacidade para ligar à Autoridade de Certificação. Escolha a opção .PFX Distribution e clique em Instalar. Após a conclusão da instalação, continue ao criar um perfil de certificado, conforme descrito em [Configurar perfis de certificado](configure-intune-certificate-profiles.md).
+    -   Para certificados .PFX, execute o instalador no computador com capacidade para ligar à Autoridade de Certificação. Escolha a opção .PFX Distribution e clique em Instalar. Após a conclusão da instalação, continue ao criar um perfil de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](configure-intune-certificate-profiles.md).
 
     -   Para certificados SCEP, execute o instalador num servidor do Windows Server 2012 R2
 
@@ -321,9 +321,9 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ### Passos seguintes
-Está agora pronto para configurar perfis de certificado, conforme descrito em [Configurar perfis de certificado](configure-intune-certificate-profiles.md).
+Está agora pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](configure-intune-certificate-profiles.md).
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

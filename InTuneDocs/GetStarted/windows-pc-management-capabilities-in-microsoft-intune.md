@@ -18,7 +18,7 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o 
 
 -   **Proteção antimalware** - o Intune inclui o Endpoint Protection, que ajuda a proteger os seus PCs de software maligno.
 
--   **Assistência remota** - o Intune permite que os utilizadores contactem os técnicos de suporte de TI, que podem fornecer assistência através de uma funcionalidade de ambiente de trabalho remoto incluída no Intune (requer software do TeamViewer).
+-   **Assistência remota** - o Intune permite que os utilizadores contactem os técnicos de suporte de TI, que podem fornecer assistência através de uma funcionalidade de ambiente de trabalho remoto incluída no Intune <!--- (requires TeamViewer software)--->.
 
 -   **Gestão de licenças de software** - controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão a ser utilizadas.
 -   **Implementação de aplicações** - implemente software em PCs geridos por si. Algumas funcionalidades de gestão de aplicações não estão disponíveis ao gerir computadores com o software cliente.
@@ -52,7 +52,7 @@ O Intune pode gerir computadores com as seguintes versões do Windows (x86 e x64
 
 -   **Windows 8.1** - versões Pro e Enterprise.
 
-- **Windows 10** -versões Home, Pro, Educação e Enterprise.
+- **Windows 10** -versões Home, Pro, Education e Enterprise.
 
 
 ## Requisitos mínimos de hardware
@@ -77,6 +77,6 @@ Seguem-se os requisitos de software para instalar o computador cliente do Intune
 [Funcionalidades de gestão de dispositivos móveis no Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

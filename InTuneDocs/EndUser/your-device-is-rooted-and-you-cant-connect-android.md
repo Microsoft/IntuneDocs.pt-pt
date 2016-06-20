@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,9 +30,11 @@ ms.suite: ems
 
 Quando o dispositivo Android tiver root, significa que o dispositivo foi alterado para ativar determinadas funcionalidades que poderão comprometer recursos da empresa e de segurança. Quando o dispositivo não tiver root, não é possível aceder a recursos da empresa e tem de contactar o administrador de TI para o ajudar a reestabelecer a ligação aos recursos da empresa.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

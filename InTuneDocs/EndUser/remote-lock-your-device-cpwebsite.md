@@ -18,7 +18,7 @@ ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,10 +60,11 @@ Para bloquear o seu dispositivo com o Bloqueio Remoto:
 
     Se uma repetição não funcionar, contacte o administrador de TI para obter ajuda. Se encontrar o seu dispositivo e quiser desbloqueá-lo depois de utilizar o Bloqueio Remoto, basta introduzir o código de acesso.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

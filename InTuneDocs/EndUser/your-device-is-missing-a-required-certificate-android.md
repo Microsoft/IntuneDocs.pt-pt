@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ Se o dispositivo Android não estiver inscrito no Intune e não tiver um certifi
 
 Para resolver este problema e obter o certificado necessário:
 
-1.  Num browser, navegue para esta [Página de certificado Digicert](https://www.digicert.com/digicert-root-certificates.htm)
+1.  Num browser, navegue para esta [página de certificado Digicert](https://www.digicert.com/digicert-root-certificates.htm).
 
 2.  Encontre e descarregue o certificado de Root da CyberTrust Baltimore (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt).
 
@@ -41,7 +41,7 @@ Para resolver este problema e obter o certificado necessário:
 
 4.  No diálogo **Nomear o certificado**, aceite o nome de certificado predefinido.
 
-5. Certifique-se de que a **Utilização da Credencial** está definida como **Utilizada para VPN e aplicações** e, em seguida, toque em **OK**
+5. Certifique-se de que a **Utilização da Credencial** está definida como **Utilizada para VPN e aplicações** e, em seguida, toque em **OK**.
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
@@ -49,6 +49,8 @@ Para resolver este problema e obter o certificado necessário:
 
 7. Reabra a aplicação do Portal da Empresa. Agora deverá conseguir iniciar sessão na aplicação do Portal da Empresa. Se precisar de ajuda, contacte o administrador de TI.
 
-<!--HONumber=May16_HO2-->
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO1-->
 
 

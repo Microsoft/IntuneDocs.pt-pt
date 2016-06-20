@@ -18,7 +18,7 @@ ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # O seu computador já está inscrito
 
-Se obtiver um erro informando-o de que o computador já está inscrito, significa que o seu computador já foi adicionado ao Portal da Empresa, mas ainda não está ligado à sua conta de utilizador. Siga este procedimento para ligar o seu computador à sua conta de utilizador e concluir o processo.
+Se obtiver um erro a indicar que o computador já está inscrito, significa que o seu computador já foi adicionado ao Portal da Empresa, mas ainda não está ligado à sua conta de utilizador. Siga este procedimento para ligar o seu computador à sua conta de utilizador e concluir o processo.
 
 Para ligar o seu computador:
 
@@ -38,8 +38,8 @@ Para ligar o seu computador:
 
 3.  Siga os pedidos para ligar o computador à sua conta de utilizador.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

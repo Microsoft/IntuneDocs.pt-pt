@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -28,7 +28,7 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 
 # Inscrever o dispositivo no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Windows para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição dos dispositivos permite à sua organização manter os dados empresariais protegidos. Para saber mais sobre a inscrição e sobre o que o administrador de TI pode e não pode ver no seu dispositivo, consulte as ligações na parte inferior deste tópico.
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Windows para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição dos dispositivos permite à sua organização manter os dados empresariais protegidos. Para saber mais sobre a inscrição e sobre o que o administrador de TI pode e não pode ver no seu dispositivo, veja as ligações na parte inferior deste tópico.
 
 Para ver as instruções de inscrição, utilize a ligação que corresponde ao tipo de dispositivo que está a utilizar:
 
@@ -42,6 +42,6 @@ Para ver as instruções de inscrição, utilize a ligação que corresponde ao 
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
 - [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

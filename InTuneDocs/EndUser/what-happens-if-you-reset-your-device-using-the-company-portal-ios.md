@@ -18,7 +18,7 @@ ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,9 +42,11 @@ Ao utilizar o Portal da Empresa para repor o seu iPhone ou iPad, algumas aplica�
 
 -   A conta de e-mail da sua empresa, bem como os e-mails não guardados, serão eliminados.
 
+Se tiver dúvidas e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

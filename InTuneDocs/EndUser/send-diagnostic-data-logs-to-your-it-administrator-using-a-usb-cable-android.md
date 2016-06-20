@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ Se estiver a utilizar um computador em vez de um dispositivo móvel e pretender 
 
 2.  Utilize um cabo USB para ligar o seu dispositivo Android a um computador.
 
-3.  No computador, procure um diretório com o nome do seu telemóvel. Nesse diretório, localize &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.\.
+3.  No computador, procure um diretório com o nome do seu telemóvel. Nesse diretório, encontre &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
 4.  Anexe todos os ficheiros a um e-mail e envie-os ao administrador de TI.
+
+Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

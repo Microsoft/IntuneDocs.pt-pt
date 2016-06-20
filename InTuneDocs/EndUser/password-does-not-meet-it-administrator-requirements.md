@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisgre
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,24 +28,24 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 
 # A palavra-passe não cumpre os requisitos do administrador de TI
 
-A palavra-passe não cumpre um ou mais requisitos que o administrador de TI configurou para o dispositivo. Consoante as políticas que o administrador de TI criou, pode ter um ou uma combinação destes problemas:
+A palavra-passe que utiliza para aceder aos recursos da empresa ou escola não cumpre um ou mais requisitos que o administrador de TI configurou para o seu dispositivo. Consoante as políticas que o administrador de TI criou, pode ter um dos seguintes problemas ou uma combinação destes:
 
-- A palavra-passe não contém caracteres complexos
+- A palavra-passe não contém carateres complexos
 - A palavra-passe é muito simples e não é suficientemente segura
 - A palavra-passe expirou
 - A palavra-passe não está definida
 - A palavra-passe é demasiado curta
 - A palavra-passe foi utilizada muito recentemente
-- A palavra-passe não é suficientemente complexa para satisfazer os requisitos
+- A palavra-passe não é suficientemente complexa para cumprir os requisitos
 
-Se tiver dificuldades em perceber como fazer com que a sua palavra-passe cumpra os requisitos, contacte o administrador de TI.
+Para obter informações sobre como definir o PIN ou a palavra-passe ou sobre outras tarefas que pode fazer com o seu dispositivo, utilize a ligação que corresponde ao seu tipo de dispositivo:
 
-Para informações sobre como definir o PIN ou a palavra-passe, ou para outras tarefas que pode efetuar com o seu dispositivo, utilize a ligação que corresponde ao seu tipo de dispositivo:
+- [Definir o PIN ou a palavra-passe do dispositivo Android](set-your-pin-or-password-android.md)
+- [Definir ou alterar o código de acesso do dispositivos iOS](set-or-change-your-passcode-ios.md)
+- [Definir ou alterar a palavra-passe do dispositivos Windows](set-or-change-your-password-windows.md)
 
-- [Definir o PIN ou palavra-passe](set-your-pin-or-password-android.md)</br>
-- [Definir ou alterar o código de acesso](set-or-change-your-passcode-ios.md)</br>
-- - [Definir ou alterar a palavra-passe](set-or-change-your-password-windows.md)
+Se tiver dificuldades em perceber como fazer com que a sua palavra-passe cumpra os requisitos, contacte o administrador de TI. Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Browsers suportados do Microsoft Intune
 
-Antes de configurar o Intune, reveja este tópico e outros requisitos listados em [O que deve saber antes de começar](what-to-know-before-you-start-microsoft-intune.md).
+Antes de configurar o Intune, reveja este tópico e outros requisitos listados em [What to know before you start (O que deve saber antes de começar)](what-to-know-before-you-start-microsoft-intune.md).
 
 |Funcionalidade do Intune |Browsers suportados|
 |---------|---------|
@@ -42,6 +42,6 @@ Antes de configurar o Intune, reveja este tópico e outros requisitos listados e
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

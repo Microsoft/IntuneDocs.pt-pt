@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Permitir o acesso a recursos da empresa através de perfis de certificados com o Microsoft Intune | Microsoft Intune
+title: Ativar o acesso a recursos da empresa através de perfis de certificados|Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 # Proteger o acesso a recursos com perfis de certificados no Microsoft Intune
 Quando ativar o acesso aos recursos da empresa através de VPN, Wi-Fi ou perfis de e-mail, pode optar por proteger esse acesso com um certificado instalado em cada dispositivo do utilizador. Como funciona:
 
-1. Certifique-se de que tem a infraestrutura de certificados certa, conforme descrito em [Configure certificate infrastructure (Configurar a infraestrutura de certificados)](configure-certificate-infrastructure.md)
+1. Certifique-se de que tem a infraestrutura de certificados certa, conforme descrito em [Configure certificate infrastructure (Configurar a infraestrutura de certificados)](configure-certificate-infrastructure.md).
 
 2. Instale um certificado de raiz (ou certificado de AC intermediária) em cada dispositivo, para que estes reconheçam a legitimidade da sua Autoridade de Certificação. Pode fazê-lo ao criar e implementar um **Perfil de Certificado Fidedigno**. Ao implementar este perfil, os dispositivos que gere com o Intune irão pedir e receber o certificado de raiz. Tem de criar um perfil separado para cada plataforma. O **Perfil de Certificado Fidedigno** está disponível para estas plataformas:
  -  iOS 7.1 e posterior
@@ -53,7 +53,7 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil irá ass
 > -    Se não tiver uma autoridade de certificação empresarial, tem de criar uma. 
 >- Se decidir, com base nas suas plataformas de dispositivos, utilizar o perfil de protocolo SCEP (Simple Certificate Enrollment Protocol), terá também de configurar um servidor do Serviço de Inscrição de Dispositivos de Rede (NDES).
 >-  Se planeia utilizar o SCEP ou perfis .PFX, tem de transferir e configurar o Microsoft Intune Certificate Connector.
-> A configuração de todos estes certificados está descrita no tópico [Configure certificate infrastructure (Configurar a infraestrutura de certificados)](configure-certificate-infrastructure.md)
+> A configuração de todos estes certificados está descrita no tópico [Configure certificate infrastructure (Configurar a infraestrutura de certificados)](configure-certificate-infrastructure.md).
 
 ### Passos seguintes
 - [Configurar a infraestrutura de certificados](configure-certificate-infrastructure.md)
@@ -61,6 +61,6 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil irá ass
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

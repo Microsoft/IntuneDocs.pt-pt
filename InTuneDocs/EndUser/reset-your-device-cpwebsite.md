@@ -18,7 +18,7 @@ ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,16 +36,18 @@ Repor o dispositivo:
 
 1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no dispositivo cujo nome quer mudar.
 
-2.  Toque em **Repor**
+2.  Toque em **Repor**.
 
     ![reset-device](./media//iwp-1-tap-reset-passcode.png)
 
 O seu dispositivo foi reposto.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

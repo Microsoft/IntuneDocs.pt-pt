@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Sincronizar o seu dispositivo manualmente
-Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as instruções seguintes para sincronizar manualmente o seu dispositivo Windows, o que poderá ajudar a acelerar a instalação. As únicas versões suportadas são as da lista. Utilize a ligação, mostrado na secção “Neste artigo” acima, que corresponde ao seu tipo de dispositivo:
+Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as instruções seguintes para sincronizar manualmente o seu dispositivo Windows, o que poderá ajudar a acelerar a instalação. As únicas versões são suportadas são as existentes na lista. Utilize a ligação que aparece na secção “Neste artigo” acima e que corresponde ao seu tipo de dispositivo:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -58,7 +58,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Mobile para acelerar u
 ## Windows 10 Desktop
 Para sincronizar manualmente o seu dispositivo Windows 10 Desktop para acelerar uma instalação de aplicações lenta:
 
-1. Selecione o botão **Iniciar**, tal como mostrado a seguir e, em seguida, selecione **Definições**.
+1. Selecione o botão **Iniciar**, conforme mostrado abaixo e, em seguida, selecione **Definições**.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
@@ -83,7 +83,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Desktop para acelerar 
 ## Windows Phone 8.1
 Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar uma instalação de aplicações lenta:
 
-1. Aceda à **área de trabalho** > **Todas as aplicações** > **Definições**.
+1. Aceda a **Todas as aplicações** > **Definições** > **área de trabalho**.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar u
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

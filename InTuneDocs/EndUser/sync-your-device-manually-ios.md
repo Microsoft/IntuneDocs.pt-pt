@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,6 +42,11 @@ Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as i
 
 Até que a sincronização esteja concluída, é apresentado um círculo a girar no ecrã.
 
-<!--HONumber=May16_HO2-->
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+### Consulte também
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
+<!--HONumber=Jun16_HO1-->
 
 

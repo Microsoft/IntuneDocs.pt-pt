@@ -18,7 +18,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune
-Reveja as tarefas neste tópico para saber como gerir os computadores que executam o cliente do Intune. Se ainda não instalou o cliente nos seus computadores, consulte [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Reveja as tarefas neste tópico para saber como gerir os computadores que executam o cliente do Intune. Se ainda não instalou o cliente nos seus computadores, veja [Install the Windows PC client with Microsoft Intune (Instalar o cliente de PC Windows com o Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Utilizar políticas para simplificar a gestão do PC
 ### Gerir a Firewall do Windows
-As políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos. Para mais informações, consulte [Ajudar a proteger PCs Windows através de políticas de Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+As políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos. Para obter detalhes, veja [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune (Ajudar a proteger PCs com o Windows com políticas de Firewall do Windows no Microsoft Intune)](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ### Gerir o Centro do Microsoft Intune
 O Centro do Microsoft Intune permite aos utilizadores:
@@ -42,7 +42,7 @@ O Centro do Microsoft Intune permite aos utilizadores:
 
 -   Gerir o Endpoint Protection do Microsoft Intune.
 
--   Pedir assistência remota.
+<!--- -   Request remote assistance.--->
 
 O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode configurar as seguintes definições numa política do Intune e estas serão apresentadas aos utilizadores no Centro do Microsoft Intune:
 
@@ -56,10 +56,10 @@ O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode
 |**Notas**|Uma nota que é apresentada aos utilizadores.<br /><br />Comprimento máximo: 120 carateres|
 
 ### Gerir definições de atualizações de software
-Utilize as políticas para configurar as definições que os computadores geridos utilizam para procurar e transferir atualizações de software da Microsoft e de terceiros. Para mais informações, consulte [Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Utilize as políticas para configurar as definições que os computadores geridos utilizam para procurar e transferir atualizações de software da Microsoft e de terceiros. Para obter mais informações, veja [Keep Windows PCs up to date with software updates in Microsoft Intune (Manter os computadores com Windows atualizados com atualizações de software no Microsoft Intune)](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
 ### Gerir definições do Endpoint Protection
-Utilize políticas para configurar definições do Endpoint Protection que irá depois implementar nos computadores geridos. Isto inclui o agendamento de análises, ações a efetuar quando é detetado software maligno, entre outros. Para mais informações, consulte [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+Utilize políticas para configurar definições do Endpoint Protection que irá depois implementar nos computadores geridos. Isto inclui o agendamento de análises, ações a efetuar quando é detetado software maligno, entre outros. Para obter mais informações, veja [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ajudar a proteger PCs Windows com o Endpoint Protection para o Microsoft Intune)](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ## Ver o inventário de hardware e software
 O Intune recolhe informações detalhadas sobre o hardware e o software de computadores geridos. Utilize as informações nos seguintes procedimentos para saber como criar:
@@ -92,7 +92,7 @@ O Intune recolhe informações detalhadas sobre o hardware e o software de compu
 
 ### Para atualizar o inventário dos computadores e certificar-se de que está atualizado
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o computador cujo inventário pretende atualizar).
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o computador cujo inventário quer atualizar).
 
 2.  Selecione um computador ou prima se soltar a tecla **CTRL** para selecionar múltiplos computadores.
 
@@ -158,65 +158,65 @@ Antes de poder implementar software para um utilizador, tem de associar o utiliz
 
     -   Para deixar o computador associado ao utilizador atual, se existir um, escolha **Cancelar**.
 
-    -   Para remover a associação ao utilizador atual, se existir um, escolha **Remover ligação** &gt; **OK**.
+    -   Para remover a associação ao utilizador atual, se existir um, escolha **Remover associação** &gt; **OK**.
 
     -   Para associar o computador a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores** . Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
 
-> [!TIP] Se pretender restringir a capacidade dos próprios utilizadores finais se ligarem a computadores, ative a opção **Restringir a capacidade dos próprios utilizadores se ligarem a computadores** na política **Definições de Agente do Microsoft Intune**.
+> [!TIP] Se quiser restringir a capacidade de os próprios utilizadores finais se ligarem a computadores, ative a opção **Restringir a capacidade de os próprios utilizadores se ligarem a computadores**, na política **Definições de Agente do Microsoft Intune**.
 
-## Pedir e fornecer assistência remota para PCs Windows que utilizam o software de cliente do Intune
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> Poderá não ver as opções para configurar a integração do TeamViewer para assistência remota na consola de administração do Intune. Esta capacidade não está atualmente disponível para todos os clientes, mas irá ser amplamente implementada em breve.
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-Pode utilizar o software [TeamViewer](https://www.teamviewer.com) do Microsoft Intune para permitir que os utilizadores de PCs que executam o software de cliente do Intune obtenham ajuda de assistência remota da sua parte. Quando um utilizador solicita a ajuda do Microsoft Intune Center, é informado por um alerta. Pode aceitar o pedido e, em seguida, fornecer assistência.
-Esta funcionalidade substitui a funcionalidade existente de Assistência Remota do Windows no Intune.
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### Antes de começar
+### Before you start
 
-Antes de poder começar a estabelecer e responder a pedidos de assistência remota, certifique-se de que os seguintes pré-requisitos estão implementados:
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- Tem de se ter [inscrito numa conta do TeamViewer](https://login.teamviewer.com/LogOn#register) para iniciar sessão no site do TeamViewer.
-- Os PCs Windows que pretende administrar têm de ser [geridos pelo cliente de PC Windows](manage-windows-pcs-with-microsoft-intune.md)
-- Todos os sistemas operativos de PCs Windows suportados pelo Intune podem ser administrados.
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### Configurar o TeamViewer Connector
+### Configure the TeamViewer Connector
 
-1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Admin**.
-2. Na área de trabalho **Admin**, selecione **TeamViewer**.
-3. Na página **TeamViewer**, em **TeamViewer Connector**, escolha **Ativar**.
-4. Na caixa de diálogo **Ativar TeamViewer**, veja e, em seguida, **Aceite** os termos de licenciamento. Se ainda não tem uma licença do TeamViewer, escolha **Comprar uma licença do TeamViewer**.
-5. Depois de a janela TeamViewer do browser abrir, inicie sessão no site com as suas credenciais do TeamViewer.
-6. No site do TeamViewer, leia e, em seguida, aceite as opções para permitir que o Intune estabeleça ligação ao TeamViewer.
-7. Na consola do Intune, certifique-se de que o item **TeamViewer Connector** é apresentado como **Ativado**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### Abrir um pedido de assistência remota (utilizador final)
+### Open a remote assistance request (end user)
 
-1. Num cliente de PC Windows, abra o **Microsoft Intune Center**.
-2. Em **Assistência Remota**, escolha **Pedir Assistência Remota**.
-3. Depois de aprovar o pedido (ver abaixo), o TeamViewer abre no cliente. O utilizador tem de aceitar todas as mensagens que indicam que o browser está a tentar abrir a aplicação TeamViewer.
-4. O utilizador verá uma mensagem a perguntar-lhe se pode controlar o PC dele. Esta mensagem tem de ser aceite para continuar.
-5. Durante a sessão de assistência remota, o utilizador verá uma janela que lhe mostra que está ligado. Se ele fechar esta janela, a sessão remota termina.
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### Responder a um pedido de assistência remota
+### Respond to a remote assistance request
 
-1. Quando um utilizador submete um pedido de assistência remota, pode vê-la na área de trabalho **Alertas**, em **Monitorização** > **Assistência Remota**. Por exemplo:
-> ![Captura de ecrã de um pedido de assistência remota](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>Se um pedido não tiver resposta durante mais de 4 horas, é removido.
-2. Para aceitar o pedido, selecione **Aprovar o pedido e iniciar a Assistência Remota**.
-3. Na caixa de diálogo **Um Novo Pedido de Assistência Remota está Pendente**, selecione **Aceitar o pedido de assistência remota**. O TeamViewer irá instalar todas as aplicações necessárias no seu computador, se ainda não estiverem instaladas.
-4. O TeamViewer notifica o utilizador final de que pretende assumir o controlo do PC dele. Depois de o utilizador aceitar o pedido, a janela do TeamViewer abre e pode controlar o PC. 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-Durante uma sessão de assistência remota, pode utilizar todos os comandos do TeamViewer disponíveis para controlar o PC remoto. Para obter ajuda com estes comandos, transfira o [Manual para controlo remoto](http://www.teamviewer.com/en/support/documents/) do site do TeamViewer.
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### Fechar a sessão de assistência remota
+### Close the remote assistance session
 
-A partir do menu **Ações** da janela **TeamViewer**, escolha **Terminar Sessão**.
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

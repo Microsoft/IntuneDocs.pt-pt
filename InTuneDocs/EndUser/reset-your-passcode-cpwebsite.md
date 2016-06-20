@@ -18,7 +18,7 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 
 Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para efetuar a reposição. O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
-> [!NOTE] Poderá não ver o botão Repor Código de Acesso no site do Portal da Empresa, dependendo de como o seu administrador de TI configurou o Intune. A Reposição do Código de Acesso não é suportada em dispositivos Windows 8.1 e Windows RT.
+> [!NOTE] Poderá não ver o botão Repor Código de Acesso no Web site do Portal da Empresa, dependendo de como o seu administrador de TI configurou o Intune. A Reposição do Código de Acesso não é suportada em dispositivos Windows 8.1 e Windows RT.
 
 Para repor o código de acesso:
 
@@ -62,9 +62,11 @@ Para repor o código de acesso:
 
     Para ver uma notificação a confirmar que a palavra-passe foi reposta com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
+Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

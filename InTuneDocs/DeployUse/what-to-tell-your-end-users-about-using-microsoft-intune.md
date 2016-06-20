@@ -34,6 +34,8 @@ Utilize estas ligações e informações para:
 - Compreender os passos que os utilizadores seguem para efetuar diferentes tarefas no Intune.
 - Dar aos seus utilizadores para ajudá-los a concluir tarefas e a resolver problemas que tenham ao utilizar o Intune.
 
+Confirme que inclui as informações de contacto do administrador de TI quando [personalizar a aplicação do Portal da Empresa](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7), para que os utilizadores possam obter ajuda se precisarem.
+
 
 ## Onde os utilizadores finais podem encontrar informações sobre tarefas comuns
 
@@ -61,9 +63,9 @@ Para compreender como os utilizadores finais obtêm as aplicações, escolha de 
 
 ## Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
-Para ajudar os utilizadores a resolver problemas que possam ter quando estão a utilizar o Portal da Empresa, pode rever uma [lista de mensagens que os utilizadores podem ver no Portal da Empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)
+Para ajudar os utilizadores a resolver problemas que possam ter quando estão a utilizar o Portal da Empresa, pode rever uma [lista de mensagens que os utilizadores podem ver no Portal da Empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

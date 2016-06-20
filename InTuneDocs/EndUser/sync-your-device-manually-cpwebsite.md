@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,13 +28,16 @@ ms.suite: ems
 
 # Sincronizar o seu dispositivo manualmente
 
-Se a instalação da aplicação demorar demasiado tempo, pode tentar sincronizar o dispositivo manualmente, que poderá ajudar a acelerar a instalação. Utilize as instruções abaixo que correspondam ao seu tipo de dispositivo ou versão do Windows. São suportadas apenas as versões listadas.
+Se a instalação da aplicação demorar demasiado tempo, pode tentar sincronizar o dispositivo manualmente, que poderá ajudar a acelerar a instalação. Utilize as instruções abaixo que correspondam ao tipo de dispositivo ou à versão do Windows que está a utilizar. A sincronização do dispositivo para acelerar as instalações de aplicações só funciona nas versões listadas abaixo.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
 
-<!--HONumber=May16_HO3-->
+
+
+
+<!--HONumber=Jun16_HO1-->
 
 

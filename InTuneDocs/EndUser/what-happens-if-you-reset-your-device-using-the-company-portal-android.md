@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,19 +28,19 @@ ms.suite: ems
 
 # O que acontece ao repor o seu dispositivo utilizando o Portal da Empresa?
 
-Ao utilizar o Portal da Empresa para repor o seu dispositivo Android, todas as aplicações, definições e dados pessoais no dispositivo irão ser eliminados, repondo o dispositivo para as predefinições de fábrica.
+Quando utiliza o Portal da Empresa para repor o seu dispositivo Android, todas as aplicações, definições e dados pessoais no dispositivo serão eliminados, repondo o dispositivo para as predefinições de fábrica.
 
-Se tiver um dispositivo Samsung Knox, pode efetuar uma "eliminação seletiva", escolhendo a opção **Remover dispositivo** no Portal da Empresa. A eliminação seletiva remove apenas o seguinte:
+Se tiver um dispositivo Samsung Knox, pode fazer uma "eliminação seletiva", escolhendo a opção **remover dispositivo** no Portal da Empresa. A eliminação seletiva remove apenas o seguinte:
 
-- Aplicações empresariais que o administrador de TI disponibiliza para si
+- Aplicações empresariais que o administrador de TI lhe disponibiliza
 - E-mail, VPN e Wi-Fi
-- A capacidade do seu administrador de TI para impor determinadas definições
+- Capacidade do seu administrador de TI para impor determinadas definições
 
-
+Se tiver dúvidas e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
