@@ -30,14 +30,14 @@ Para voltar a ter acesso ao seu trabalho, terá de definir um tempo limite para 
 
 1.  Em **Definições**, no seu dispositivo, clique em **Segurança** &gt; **Bloquear Automaticamente** (esta opção aparece como **Bloquear telemóvel após** em alguns dispositivos).
 
-    Se a opção **Bloquear Automaticamente** (**Bloquear telemóvel após** em alguns dispositivos) não for apresentada, certifique-se de que definiu uma palavra-passe válida em **Definições**&gt;**Bloqueio de Ecrã**&gt;**Palavra-passe**.
+    Se a opção **Bloquear Automaticamente** (**Bloquear telemóvel após** em alguns dispositivos) não for apresentada, certifique-se de que definiu uma palavra-passe válida em **Definições** &gt; **Bloqueio de Ecrã** &gt; **Palavra-passe**.
 
 2.  Especifique o valor do tempo limite para a palavra-passe.
 
-3.  Siga as instruções no artigo [Enroll your device to use it at work (Inscrever o seu dispositivo para o utilizar no trabalho)](http://go.microsoft.com/fwlink/?LinkId=519071) para se certificar de que o dispositivo está inscrito no Intune.
+3.  Certifique-se de que o dispositivo está inscrito no Intune ao seguir as instruções no artigo [Inscrever o seu dispositivo para utilizá-lo no trabalho](http://go.microsoft.com/fwlink/?LinkId=519071).
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

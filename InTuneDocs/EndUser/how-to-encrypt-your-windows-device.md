@@ -35,10 +35,10 @@ Se tiver um dispositivo de ambiente de trabalho, siga as instruções abaixo par
 
 2.  Clique em **Ativar o BitLocker**e, em seguida, siga as instruções apresentadas para encriptar cada uma das suas unidades.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

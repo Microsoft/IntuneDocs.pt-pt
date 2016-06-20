@@ -40,11 +40,11 @@ Para mudar o nome o seu dispositivo:
 
 3.  Na caixa de onde aparece o nome do dispositivo atual, escreva o novo nome do seu dispositivo e, em seguida, toque no botão **Mudar o nome**. O dispositivo aparece agora com o novo nome.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

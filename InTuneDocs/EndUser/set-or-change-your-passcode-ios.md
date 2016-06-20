@@ -37,20 +37,20 @@ Se tiver problemas ao definir um código de acesso que cumpra todos os requisito
 
 1. Toque em **Definições** > **Touch ID e Código de Acesso**.
 2. No menu **Touch ID e Código de Acesso**, toque em **Ativar Código de Acesso**.
-3. Introduza um novo código de acesso que cumpra os requisitos do administrador de TI e, em seguida, introduza-o novamente para o confirmar.
+3. Introduza um novo código de acesso que cumpra os requisitos do administrador de TI e, em seguida, introduza-o novamente para a confirmar.
 
 ## Para alterar o código de acesso:
 
 1. Toque em **Definições** > **Touch ID e Código de Acesso**.
 2. Introduza o código de acesso. É aberto o menu Touch ID e Código de Acesso.
 2. Toque em **Alterar Código de Acesso** e introduza a palavra-passe antiga.
-3. Introduza um novo código de acesso que cumpra os requisitos do administrador de TI e, em seguida, introduza-o novamente para o confirmar.
+3. Introduza um novo código de acesso que cumpra os requisitos do administrador de TI e, em seguida, introduza-o novamente para a confirmar.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

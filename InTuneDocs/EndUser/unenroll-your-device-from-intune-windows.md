@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Anular a inscrição do dispositivo no Intune
 
-Se se inscreveu no Intune, mas já não pretende utilizar o seu dispositivo Windows para o trabalho ou escola e não precisa de aceder ao e-mail do trabalho ou da escola, a aplicações ou a outros recursos, terá de anular a inscrição do seu dispositivo. Depois de anular a inscrição do seu dispositivo no Intune, deixará de poder aceder a estes recursos. Para obter mais informações sobre o que acontece quando anula a inscrição do seu dispositivo, veja [What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do seu dispositivo no Intune?)](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Se se inscreveu no Intune, mas já não pretende utilizar o seu dispositivo Windows para o trabalho ou escola e não precisa de aceder ao e-mail do trabalho ou da escola, a aplicações ou a outros recursos, terá de anular a inscrição do seu dispositivo. Depois de anular a inscrição do seu dispositivo no Intune, deixará de poder aceder a estes recursos. Para mais informações sobre o que acontece quando anula a inscrição do seu dispositivo, consulte [O que acontece se anular a inscrição do seu dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-Para anular a inscrição do dispositivo, utilize a ligação que aparece na secção “Neste Artigo” acima e que corresponde ao tipo de dispositivo que utiliza:
+Para anular a inscrição do dispositivo, utilize a ligação, mostrado na secção “Neste artigo” acima, que corresponde ao tipo de dispositivo que utiliza:
 
 -   [Anular a inscrição do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
 -   [Anular a inscrição do seu computador Windows 8.1](#unenroll-your-windows-8-1-computer)
@@ -66,11 +66,11 @@ Para anular a inscrição do dispositivo, utilize a ligação que aparece na sec
 
 4.  Na caixa de diálogo **Eliminar conta**, toque em **Eliminar**.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

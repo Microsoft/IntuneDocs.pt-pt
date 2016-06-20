@@ -28,10 +28,10 @@ ms.suite: ems
 # Aguarde enquanto o seu dispositivo está a ser avaliado
 O seu dispositivo ainda está a ser avaliado relativamente à compatibilidade. Aguarde alguns minutos para que a verificação de compatibilidade seja concluída.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

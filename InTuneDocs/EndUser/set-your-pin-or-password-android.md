@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,15 +34,12 @@ O administrador de TI pode exigir que defina um PIN ou palavra-passe no seu disp
 
 2.  Escolha e confirme a palavra-passe nova.
 
-3.  Siga as instruções no artigo [Enroll your device in Microsoft Intune (Inscrever o dispositivo no Microsoft Intune)](enroll-your-device-in-Intune-android.md) para se certificar de que o dispositivo está inscrito no Microsoft Intune.
 
-4.  Toque em **OBTER** &gt; **INSTALAR**.
-
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

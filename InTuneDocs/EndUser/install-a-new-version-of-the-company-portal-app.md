@@ -40,16 +40,16 @@ A Apple App Store irá alertá-lo quando estiver disponível uma nova versão do
 
 ## Para atualizar o seu dispositivo Windows
 
-1.  Navegue para a Loja Windows e procure o **Portal da Empresa**.
+1.  Navegue para a Loja Windows e procure o **portal da empresa**.
 
 2.  Siga as instruções de instalação.
 
     > [!NOTE] Se não conseguir aceder à Loja Windows, contacte o seu administrador de TI.
 
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-Para obter informações sobre outras tarefas que pode fazer com o seu dispositivo, utilize a ligação que corresponde ao seu tipo de dispositivo:
+Para informações sobre outras tarefas que pode fazer com o seu dispositivo, utilize a ligação que corresponde ao seu tipo de dispositivo:
 
 - [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)</br>
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
@@ -57,6 +57,6 @@ Para obter informações sobre outras tarefas que pode fazer com o seu dispositi
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

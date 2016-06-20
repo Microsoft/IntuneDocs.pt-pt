@@ -31,7 +31,7 @@ Se o seu dispositivo Windows não estiver em conformidade com a política de pal
 
 O administrador de TI pode definir mais do que um requisito de palavra-passe. Por exemplo, a palavra-passe pode ter um determinado número de carateres e poderá ter de ser uma combinação de números e letras, etc. Uma vez que pode ser definido mais do que um requisito, estas instruções só podem explicar como definir ou alterar a palavra-passe. Não explicam cada combinação possível de requisitos. 
 
-Se tiver problemas ao definir uma palavra-passe que cumpra todos os requisitos de palavra-passe, contacte o administrador de TI para obter ajuda.
+Se tiver problemas em definir uma palavra-passe que cumpra todos os requisitos de palavra-passe, contacte o administrador de TI para obter ajuda.
 
 ## Para definir a palavra-passe num Windows Phone 8 ou 8.1:
 
@@ -48,11 +48,11 @@ Se tiver problemas ao definir uma palavra-passe que cumpra todos os requisitos d
 4. Introduza a nova palavra-passe no campo **Nova palavra-passe** e, em seguida, reintroduza-a no campo **Confirmar palavra-passe**.
 4. Toque em **concluído**.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

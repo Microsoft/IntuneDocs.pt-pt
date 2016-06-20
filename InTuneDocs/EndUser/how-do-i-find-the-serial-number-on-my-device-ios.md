@@ -28,13 +28,13 @@ ms.suite: ems
 
 # Como encontro o número de série no meu dispositivo?
 
-Em dispositivos com o iOS 7.1 e superior, toque no ícone **Definições**, toque em **Geral** > **Acerca De** e desloque-se para baixo até encontrar o **Número de Série**.
+Em dispositivos com o iOS 7.1 e superior, toque no ícone **Definições**, **Geral** > **Sobre** e, em seguida, desloque para baixo até encontrar o **Número de Série**.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

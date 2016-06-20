@@ -41,11 +41,11 @@ Se perder o seu dispositivo Windows inscrito ou for roubado, pode repô-lo com a
 3.  Toque em **Repor** &gt; **Repor**.
 
 > [!NOTE]
-> Se não conseguir repor o seu dispositivo perdido ou roubado, contacte o administrador de TI para o fazer por si. Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+> Se não conseguir repor o seu dispositivo perdido ou roubado, contacte o administrador de TI para o fazer por si. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

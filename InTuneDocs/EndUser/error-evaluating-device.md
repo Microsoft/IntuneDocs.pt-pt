@@ -31,10 +31,10 @@ O seu dispositivo não é compatível com uma ou mais políticas da sua empresa 
 
 Para resolver este problema aguarde alguns minutos e toque em **Verificar Conformidade**.
 
-Se o problema persistir, entre em contacto com seu administrador de TI Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se o problema persistir, entre em contacto com seu administrador de TI Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
