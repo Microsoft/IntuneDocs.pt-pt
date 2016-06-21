@@ -1504,9 +1504,9 @@
 * Archive Datetime: 2016-06-16 01:47:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/e285337a0c618cbd16b4336b8d49eb3a9c1318c2/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/b53b0ce6ac5638a3464d16bf29c659370724a676/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf)
-* Current Handback Datetime: 2016-06-02 06:43:05
+* Current Target File: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/1b1f6250509797fe193f362dc6094d319b249a23/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/b30adea209f78e9f8dd23752e9456dd8c319feb8/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf)
+* Current Handback Datetime: 2016-06-21 10:44:07
 * [Back to Top](#report-top)
 
 ##### <a name='519bde55966d88f516553d509af60e34a6af62a916'></a> Source: [InTuneDocs\DeployUse\azure-portal-for-microsoft-intune-mam-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -2119,9 +2119,9 @@
 * Archive Datetime: 2016-06-16 01:47:21
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/95e50c1da725cf4db0fb22a62f1eaf90fe898e97/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/99ad645970dfa657dec9ecda0c6c057e2b58c28f/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.pt-pt.xlf)
-* Current Handback Datetime: 2016-06-01 01:32:08
+* Current Target File: [InTuneDocs\DeployUse\ios-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/1b1f6250509797fe193f362dc6094d319b249a23/InTuneDocs/DeployUse/ios-policy-settings-in-microsoft-intune.md)
+* Current Handback File: [ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/b30adea209f78e9f8dd23752e9456dd8c319feb8/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/ios-policy-settings-in-microsoft-intune.0589807be996775555db57853ccb4e27d60aa604.pt-pt.xlf)
+* Current Handback Datetime: 2016-06-21 10:44:07
 * [Back to Top](#report-top)
 
 ##### <a name='605734e4fe64ed101c3e05b19d28b3ec41787c8763'></a> Source: [InTuneDocs\DeployUse\ios-setup-assistant-enrollment-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/eea94723bb64e751acf155f9db66e7b31ff8c0bd/InTuneDocs/DeployUse/ios-setup-assistant-enrollment-in-microsoft-intune.md)
