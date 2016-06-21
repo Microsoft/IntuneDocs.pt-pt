@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política do iOS no Microsoft Intune | Microsoft Intune
+title: Definições de política do iOS | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Utilize a **política de configuração geral do iOS** do Microsoft Intune para 
 -   **Aplicações compatíveis e não compatíveis** - Especifique uma lista de aplicações que são compatíveis ou não compatíveis na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Compatíveis** pode ser utilizado para ver a compatibilidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores (mas não pode bloquear a instalação da aplicação).
 
 > [!TIP]
-> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Se a definição que procura não aparecer neste tópico, poderá conseguir criá-la utilizando uma política personalizada de iOS que permita importar as definições que criou com a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para mais informações, consulte **Definições de política personalizada** mais adiante neste tópico.
 
@@ -122,7 +122,7 @@ Se a definição que procura não aparecer neste tópico, poderá conseguir cri�
 |Nome da definição|Detalhes|iOS|
 |----------------|-------|
 |**Permitir chamadas em roaming**|Permitir chamadas em roaming quando o dispositivo estiver numa rede celular.|Sim|
-|**Permitir roaming de dados**|Permitir roaming de dados quando o dispositivo estiver numa rede celular.|Sim|
+|**Permitir roaming de dados**|Permite o roaming de dados quando o dispositivo estiver numa rede celular.|Sim|
 |**Permitir obtenção global em segundo plano em roaming**|Permitir que o dispositivo obtenha dados, tais como e-mail, enquanto estiver em roaming numa rede celular.|Sim|
 
 ### Definições das capacidades do dispositivo - funcionalidades
@@ -170,8 +170,7 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 |**Ativar o AssistiveTouch**|Ativa ou desativa a definição de acessibilidade **AssistiveTouch** , que ajuda os utilizadores a executar gestos no ecrã que lhes poderão ser difíceis.|
 |**Ativar os ajustes do AssistiveTouch**|Ativa ou desativa os ajustes do AssistiveTouch, o que lhe permite ajustar a função AssistiveTouch.|
 |**Ativar a funcionalidade Enunciar seleção**|Ativa ou desativa a definição de acessibilidade **Enunciar seleção** , que lê em voz alta o texto que selecionou.|
-> [!NOTE]
-> As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
+> [!NOTE] As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
 > 
 > -   Antes de poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o gestor de inscrição de dispositivos para colocar o dispositivo em modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 > -   Se a aplicação iOS especificada for instalada após a implementação da política de configuração, o dispositivo só entrará em modo de local público após ser reiniciado.
@@ -183,7 +182,7 @@ Utilize o **Relatório de Aplicações Não Compatíveis** para ver a compatibil
 
 ##### Para executar o Relatório de Aplicações Não Compatíveis
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Compatíveis**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
 
 2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, clique em **Ver Relatório**.
 
@@ -194,10 +193,9 @@ Através de um motor de pesquisa, localize a aplicação que pretende utilizar n
 
 Copie o URL da página e utilize-o para configurar a lista de aplicações compatíveis e não compatíveis ou a aplicação que pretende executar em modo de lugar público.
 
-**Exemplo:** Procure por **Microsoft Word para iPad**. O URL a utilizar será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Exemplo:** Procure por **Microsoft Word para iPad**. O URL a utilizar será **https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
+> [!NOTE] Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
 
 
 ## Definições de política personalizada
@@ -232,6 +230,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

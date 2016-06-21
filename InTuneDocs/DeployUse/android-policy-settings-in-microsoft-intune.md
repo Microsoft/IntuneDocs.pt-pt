@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Definições de política de configuração para Android no Microsoft Intune | Microsoft Intune
+title: Definições de política de configuração de Android e Samsung KNOX | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Definições de política para Android no Microsoft Intune
+# Definições de política de Android e Samsung KNOX no Microsoft Intune
 
 ## Política de configuração geral
 
@@ -150,7 +150,7 @@ Especifique as seguintes definições para **dispositivos Samsung KNOX**:
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
-|**Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público**|Clique em **Procurar** e, em seguida, selecione a aplicação gerida ou a aplicação de uma loja que terá permissão para ser executada quando o dispositivo estiver em modo de local público. Não será permitida a execução de outras aplicações no dispositivo.<br /><br />Para obter ajuda, consulte Como especificar URLs para lojas de aplicações mais adiante neste tópico.|
+|**Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público**|Clique em **Procurar** e, em seguida, selecione a aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público (as aplicações especificadas como uma ligação para o arquivo não são atualmente suportadas). Não será permitida a execução de outras aplicações no dispositivo.|
 |**Permitir os botões de volume**|Ativa ou desativa a utilização dos botões de volume no dispositivo.|
 |**Permitir o botão suspender/reativar ecrã**|Ativa ou desativa o botão suspender/reativar ecrã do dispositivo.|
 
@@ -161,12 +161,12 @@ Utilize o **Relatório de Aplicações Não Compatíveis** para ver a compatibil
 
 ###### Para executar o Relatório de Aplicações Não Compatíveis
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Compatíveis**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
 
 2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, clique em **Ver Relatório**.
 
 #### Como especificar URLs para lojas de aplicações
-Para especificar o URL de uma aplicação na lista de aplicações compatíveis e não compatíveis ou na opção **Selecionar uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público** (apenas em iOS), utilize o seguinte formato:
+Para especificar um URL de aplicação na lista de aplicações compatíveis e não compatíveis, utilize o seguinte formato:
 
 Na [secção Aplicações do Google Play](https://play.google.com/store/apps), procure a aplicação que pretende utilizar.
 
@@ -177,7 +177,7 @@ Abra a página de instalação da aplicação e copie o URL para a área de tran
 ## Definições de política personalizada
 Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
-Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune. Para obter informações sobre as definições que pode configurar com estas políticas, consulte [Gerir as definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune. Para informações sobre as definições que pode configurar com estas políticas, consulte [Gerir as definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
 > Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada. Para mais informações, consulte Configurar um perfil Wi-Fi personalizado com uma chave pré-partilhada mais adiante neste tópico.
@@ -258,6 +258,6 @@ Embora o Intune suporte perfis Wi-Fi para dispositivos Android, esta funcionalid
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 
