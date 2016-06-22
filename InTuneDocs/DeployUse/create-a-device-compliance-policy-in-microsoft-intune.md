@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 Este tópico descreve os passos que pode utilizar para criar uma política de conformidade que um dispositivo tem de seguir para ser considerado conforme.
 
 ##  Passo 1: Adicionar uma nova política
-  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** &gt; **Políticas de Conformidade** &gt; **Adicionar**
+  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** &gt; **Políticas de Conformidade** &gt; **Adicionar**.
 
   ![Captura de ecrã da página de política de conformidade na consola de administração do Intune, que mostra a opção de adicionar no menu na parte superior da página](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -41,7 +41,7 @@ Na página **Criar Política**, ative as definições necessárias:
 ![Captura de ecrã do separador Geral da página Criar Política ](./media/intune-sa-3b-create-policy.png)
 
 ##  Passo 3: Guardar a política
-Quando terminar, escolha **Guardar Política**
+Quando terminar, selecione **Guardar Política**.
 
 Terá a opção de implementar a política logo após guardá-la ou pode optar por implementá-la mais tarde. A nova política é apresentada no nó **Políticas de Conformidade** da área de trabalho **Política**.
 
@@ -84,6 +84,6 @@ Selecione um dos seguintes passos para obter mais informações sobre as defini�
 [Introdução às políticas de conformidade de dispositivos](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

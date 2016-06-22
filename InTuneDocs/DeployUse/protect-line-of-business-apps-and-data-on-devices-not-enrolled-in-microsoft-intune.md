@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Proteger aplicações e dados de linha de negócio em dispositivos não inscritos | Microsoft Intune]
+title: Proteger aplicações e dados de linha de negócio em dispositivos não inscritos | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -41,28 +41,33 @@ Para associar a aplicação de linha de negócio às políticas de MAM, tem de a
 
 1. No [Portal do Azure](https://portal.azure.com/), aceda a **Gestão de aplicações móveis do Intune > Definições**, e escolha **Aplicações de linha de negócio**.
 
-  ![Captura de ecrã do painel definições com opção de linha de negócio](../media/mam-azure-portal-lob-on-settings.png)
+  ![Captura de ecrã do painel Definições com opção de linha de negócio](../media/mam-azure-portal-lob-on-settings.png)
 
 2. No painel **Aplicações de linha de negócio**, escolha **Adicionar uma aplicação personalizada**.
 
-  ![Captura de ecrã do painel de aplicações de linha de negócio com o botão para Adicionar uma aplicação personalizada na parte superior](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Forneça um nome para a aplicação, o identificador de pacote no campo de identificador da Aplicação e a plataforma (iOS ou Android).
+  ![Captura de ecrã do painel de aplicações de linha de negócio com o botão Adicionar uma aplicação personalizada na parte superior](../media/mam-azure-portal-add-lob-app-action.png)
+3.  Forneça um nome para a aplicação, o identificador de pacote no campo Identificador da aplicação e a plataforma (iOS ou Android).
 
-  ![Captura de ecrã do painel para Adicionar uma aplicação personalizada ](../media/mam-azure-portal-add-app-details.png) Este passo ajuda a criar uma listagem exclusiva da sua aplicação.  A aplicação irá ser também ser apresentada na lista de aplicações Direcionadas para uma política de MAM do seu inquilino, conforme descrito no passo seguinte.
+  ![Captura de ecrã do painel Adicionar uma aplicação personalizada ](../media/mam-azure-portal-add-app-details.png) Este passo ajuda a criar uma listagem exclusiva da sua aplicação.  A aplicação será também apresentada na lista de Aplicações direcionadas para uma política de MAM do seu inquilino, conforme descrito no passo seguinte.
 
-## Passo 3: Aplicar políticas de MAM
+## Passo 3: aplicar políticas de MAM
 Depois de os metadados de aplicação serem carregados para o serviço, a aplicação será apresentada na lista de aplicações.  Pode agora [criar uma nova política ou uma política existente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) e aplicá-la à aplicação de linha de negócio que adicionou no passo 2.
-  ![Captura de ecrã da lista de aplicações Direcionadas do painel de aplicações, com a nova aplicação de linha de negócio apresentada](../media/mam-azure-portal-lob-on-targeted-app-list.png)
+
+>[!IMPORTANT]
+>Tem de direcionar a política MAM aos utilizadores que vão utilizar a aplicação encapsulada.  Os utilizadores em relação aos quais não tenha sido aplicada esta política não poderão utilizar a aplicação.
+
+
+  ![Captura de ecrã do painel Lista direcionada de aplicações, com a nova aplicação de linha de negócio apresentada](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Passo 4: distribuir a aplicação
 É possível implementar aplicações para os utilizadores finais das seguintes formas:
 * Para dispositivos inscritos numa solução de MDM de terceiros, pode distribuir aplicações através da sua solução de MDM.
 * Para dispositivos não geridos por qualquer solução de MDM, é necessário uma solução personalizada. Os utilizadores finais têm de transferir e instalar a aplicação nos respetivos dispositivos.
 
 ## Alterar os metadados
-Se precisar de alterar os detalhes da aplicação, como o nome da aplicação ou o identificador do Pacote, tem de [remover a aplicação](#remove-apps), e [adicioná-la](#add-the-app) com os novos metadados.
+Se precisar de alterar os detalhes da aplicação, como o nome da aplicação ou o Identificador do pacote, tem de [remover a aplicação](#remove-apps), e [adicioná-la](#add-the-app) aos novos metadados.
 
 ##  Remover aplicações
-Pode remover uma aplicação de linha de negócio da lista de aplicações.  Isto irá remover a aplicação da lista e remover a associação às políticas de MAM, mas não irá remover nem desinstalar a aplicação do dispositivo do utilizador final.  
+Pode remover uma aplicação de linha de negócio da lista de aplicações.  Isto irá remover a aplicação da lista e remover a associação às políticas de MAM, mas não irá remover ou desinstalar a aplicação do dispositivo do utilizador final.  
 
 1.  No [Portal do Azure](https://portal.azure.com/), aceda a **Gestão de aplicações móveis do Intune > Definições**.  No painel **Definições**, escolha **Linha de negócio** para abrir a lista de aplicações existentes.  
 2.  Selecione a aplicação que pretende remover e selecione o menu **(…) contexto**.
@@ -72,9 +77,9 @@ Pode remover uma aplicação de linha de negócio da lista de aplicações.  Ist
 
   ![Captura de ecrã do painel de linha de negócio com a opção de eliminação de aplicações](../media/mam-azure-portal-delete-app.png)
 
-  Isto irá remover aplicações da lista de aplicações de linha de negócio e a lista de aplicações Direcionadas na política de MAM.
+  Isto irá remover aplicações da lista de aplicações de linha de negócio e a Lista de aplicações direcionadas na política de MAM.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

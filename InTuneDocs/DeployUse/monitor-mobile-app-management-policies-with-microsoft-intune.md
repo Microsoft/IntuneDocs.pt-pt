@@ -18,7 +18,7 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -77,6 +77,6 @@ A vista detalhada apresenta a mensagem de erro, a aplicação que foi acedida qu
 [Experiência de utilizador final para aplicações com MAM ativada](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

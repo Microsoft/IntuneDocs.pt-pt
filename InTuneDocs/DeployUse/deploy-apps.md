@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ Estas regras aplicam-se à aquisição de armazenamento adicional baseado na nuv
 
 -   Precisa de ter uma subscrição paga ativa para adquirir armazenamento adicional.
 
--   Apenas os administradores de faturação ou administradores globais do seu Microsoft Online Service podem adquirir armazenamento adicional através do portal de contas do Intune. Para adicionar, eliminar ou gerir estes administradores, tem de ser um administrador global e iniciar sessão no portal de contas do Intune.
+-   Apenas os administradores de faturação ou administradores globais do seu Microsoft Online Service podem adquirir armazenamento adicional através do Portal de Gestão do Office 365. Para adicionar, eliminar ou gerir estes administradores, tem de ser um administrador global e iniciar sessão no Portal de Gestão do Office 365.
 
 -   Se for um cliente de licenciamento em volume que adquiriu o Intune ou o Suplemento Microsoft Intune através do Contrato Enterprise, contacte o seu Gestor de Conta Microsoft ou o Parceiro Microsoft para obter informações sobre os preços e adquirir armazenamento adicional.
 
@@ -61,9 +61,11 @@ Ao implementar aplicações, pode escolher uma das seguintes ações de implemen
 
 -   **Instalação necessária** – A aplicação é instalada no dispositivo, sem ser necessária intervenção do utilizador final.
 
-    > Para os dispositivos iOS que não estejam no modo supervisionado e para todos os dispositivos Android, o utilizador tem de aceitar a oferta da aplicação antes da instalação da mesma.
+    > [!TIP] Para os dispositivos iOS que não estejam no modo supervisionado e para todos os dispositivos Android, o utilizador tem de aceitar a oferta da aplicação antes da instalação da mesma.
     >
     > Já não pode criar novas implementações de aplicações para dispositivos iOS com um sistema operativo anterior ao iOS 7.1. Quaisquer implementações de aplicações existentes para dispositivos com um sistema operativo anterior ao iOS 7.1 continuarão a funcionar e a ser geridas pelo Intune.
+    > 
+    >  Se um utilizador final desinstalar uma aplicação que implementou como uma instalação necessária, o Intune reinstala automaticamente a aplicação após o próximo ciclo de inventário, que normalmente ocorre a cada 7 dias.
 
 -   **Instalação disponível** – A aplicação é apresentada no portal da empresa e os utilizadores finais podem instalá-la a pedido.
 
@@ -85,7 +87,7 @@ Ao implementar aplicações, pode escolher uma das seguintes ações de implemen
 |Ligação externa (implementada num grupo de dispositivos)|Não|Não|Não|Não|
 |Aplicação iOS gerida da loja de aplicações (implementada num grupo de utilizadores)|Sim|Sim|Sim|Sim|
 |Aplicação iOS gerida da loja de aplicações (implementada num grupo de dispositivos)|Sim|Não|Sim|Sim|
-> Quando implementa aplicações, se selecionar grupos de utilizadores e de dispositivos, só pode implementar a aplicação como uma **Instalação disponível**
+> [!TIP] Quando implementa aplicações, se selecionar grupos de utilizadores e de dispositivos, só pode implementar a aplicação como uma **Instalação disponível**.
 
 ## Conflitos de implementação
 Quando duas aplicações com a mesma ação de implementação são recebidas por um dispositivo, aplicam-se as seguintes regras:
@@ -101,8 +103,8 @@ Quando duas aplicações com a mesma ação de implementação são recebidas po
 
 ## Passos seguintes
 
-Saiba como [implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
+Saiba como [implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -52,14 +52,14 @@ Este tipo de aplicação é carregado para o seu espaço de armazenamento na nuv
 Atualmente, os utilizadores finais não podem instalar aplicações empresariais diretamente a partir da aplicação Portal da Empresa do Intune para iOS. Isto deve-se a restrições colocadas nas aplicações que são publicadas na iOS App Store (consulte as [Diretrizes de Revisão da App Store](https://developer.apple.com/app-store/review/guidelines/)). Os utilizadores podem aceder a aplicações empresariais (incluindo aplicações geridas da App Store e pacotes de aplicações de linha de negócio) ao iniciar a aplicação Portal da Empresa nos respetivos dispositivos e ao tocar no mosaico Aplicações da Empresa, que irá abrir o browser e redirecioná-los para o Portal Web do Intune.
 
 ### **Pacote de aplicações do Windows Phone (&#42;.xap, .appx, .appxbundle)**
-- Para implementar aplicações, precisará de um certificado de assinatura de código de dispositivos móveis empresariais. Para detalhes, consulte [Configurar a gestão do Windows Phone com o Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
+- Para implementar aplicações, precisará de um certificado de assinatura de código de dispositivos móveis empresariais. Para obter detalhes, consulte [Configurar a gestão do Windows Phone com o Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 Este tipo de aplicação é carregado para o seu espaço de armazenamento na nuvem.
 
 Consulte abaixo para obter informações sobre a instalação de aplicações da Plataforma Universal do Windows (UWP) de linha de negócio com o Intune.
 
 ### **Pacote de aplicações do Windows (.appx, .appxbundle)**
-- Para implementar aplicações, precisará de um certificado de assinatura de código de dispositivos móveis empresariais. Para detalhes, consulte [Configurar a gestão de dispositivos Windows com o Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).
+- Para implementar aplicações, precisará de um certificado de assinatura de código de dispositivos móveis empresariais. Para obter detalhes, consulte [Configurar a gestão de dispositivos Windows com o Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).
 
 Este tipo de aplicação é carregado para o seu espaço de armazenamento na nuvem.
 ### **Windows Installer através de MDM (&#42;.msi)**
@@ -81,10 +81,10 @@ Utilizada quando tiver:
 As aplicações baseadas em ligações externas não são armazenadas no seu espaço de armazenamento na nuvem do Intune.
 ### **Aplicação iOS gerida da loja de aplicações**
 Permite gerir e implementar aplicações iOS gratuitas a partir da loja de aplicações. Também permite associar [políticas de gestão de aplicações móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicações compatíveis](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e rever o respetivo estado na consola de administrador.<br /><br />As aplicações iOS geridas não são armazenadas no seu espaço de armazenamento na nuvem do Intune.
-> [!TIP]As opções para dispositivos móveis só estão disponíveis quando definir a [Autoridade de Gestão de Dispositivos Móveis](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
+> [!TIP]As opções para dispositivos móveis só estão disponíveis quando [definir a Autoridade de Gestão de Dispositivos Móveis](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
 
 ## Suporte para aplicações da Plataforma Universal do Windows (UWP)
-Os dispositivos Windows 10 não requerem uma chave de sideload para instalar aplicações de linha de negócio. No entanto, a chave de registo **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** tem de ter o valor **1** para permitir o sideload.
+Os PC com Windows 10 não requerem uma chave de sideload para instalar aplicações de linha de negócio. No entanto, a chave de registo **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** tem de ter o valor **1** para permitir o sideload.
 
 Se esta chave de registo não estiver configurada, o Intune irá definir automaticamente este valor como **1** quando implementar uma aplicação no dispositivo pela primeira vez. Se tiver definido este valor como **0**, o Intune não pode alterar automaticamente o valor e a implementação de aplicações de linha de negócio irá falhar.
 
@@ -94,8 +94,8 @@ Em dispositivos Windows 10 Mobile, pode utilizar um certificado de assinatura de
 
 ## Passos seguintes 
 
-Em seguida, terá de adicionar as aplicações na consola do Intune antes de poder implementá-las. Pode adicionar aplicações para [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) ou [PCs Windows que gere com o software de cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
+Em seguida, terá de adicionar as aplicações na consola do Intune antes de poder implementá-las. Pode adicionar aplicações a [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) ou [PC com Windows que pode gerir através do software de cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -55,7 +55,7 @@ Antes de criar uma política de MAM, reveja as informações de [pré-requisitos
 
     ![Captura de ecrã do painel Política de aplicação que mostra uma lista das políticas existentes](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  Escolha **Adicionar uma política**.
+3.  Selecione **Adicionar uma política**.
 
     ![Captura de ecrã do painel Política de aplicação com a opção de menu Adicionar uma política realçada ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -167,6 +167,6 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 [Experiência de utilizador final para aplicações com MAM ativada](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

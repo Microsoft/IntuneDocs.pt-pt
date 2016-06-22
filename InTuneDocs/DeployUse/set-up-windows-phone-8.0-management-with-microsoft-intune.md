@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Configurar a gestão do Windows Phone 8.0 com o Microsoft Intune | Microsoft Intune
+title: Configurar a gestão do Windows Phone 8.0 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,9 @@ ms.suite: ems
 
 O Windows Phone 8.0 requer um certificado da Symantec para instalar a aplicação Portal da Empresa do Intune e permitir a gestão de dispositivos. Também é necessário um certificado para assinar aplicações de linha de negócio. O tópico seguinte é apenas para o Windows Phone 8.0. Para gerir o Windows Phone 8.1 ou posterior, incluindo o Windows 10 Mobile, consulte [Configurar a inscrição do Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md).
 
--   **Windows Phone 8** - certificado necessário
+> [!IMPORTANT] A partir de setembro de 2016, a aplicação Portal da empresa para Windows 8.0 e Windows Phone 8.0 deixará de estar disponível para transferência.
+
+-   **Windows Phone 8** - Certificado necessário
 -   O **Windows Phone 8.1 e o Windows 10 Mobile** apenas requerem um certificado se:
 
     -   Pretender implementar a aplicação Portal da Empresa utilizando o Intune
@@ -52,7 +54,7 @@ Os requisitos de configuração da gestão de dispositivos móveis Windows Phone
 
     1.  Na [consola de administração do Intune](http://manage.microsoft.com), clique em **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows Phone**.
 
-    2.  Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, clique em **Testar Deteção Automática**.
+    2.  Introduza o URL do domínio verificado do Web site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, clique em **Testar Deteção Automática**.
 
     3.  Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Os registos de recursos CNAME têm de conter as seguintes informações:
 
@@ -68,7 +70,7 @@ Os requisitos de configuração da gestão de dispositivos móveis Windows Phone
 
     ![Caixa de diálogo Definições da Gestão de Dispositivos Móveis do Windows Phone](../media/windows-phone-enrollment.png)
 
-3.  **Gestão de certificados para suportar a assinatura de aplicações** [Necessário para dispositivos Windows Phone 8.0 e Windows Phone 8.1 que não conseguem aceder à Loja do Windows e/ou que precisem de aplicações de linha de negócio.]
+3.  **Gestão de certificados para suportar a assinatura de aplicações** [Necessário para os dispositivos Windows Phone 8.0 e Windows Phone 8.1 que não conseguem aceder à Loja do Windows Phone e/ou que precisem de aplicações de linha de negócio.]
 
     Para suportar a aplicação Portal da Empresa para Windows Phone 8.0 e implementar as aplicações da empresa no Windows Phone 8.1, tem de obter um **Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec**. Não pode utilizar um certificado emitido pela sua própria autoridade de certificação porque os dispositivos Windows Phone só consideram fidedigno o certificado da Symantec. Este certificado é necessário para:
 
@@ -80,7 +82,7 @@ Os requisitos de configuração da gestão de dispositivos móveis Windows Phone
 
     1.  **Aderir ao Windows Phone Dev Center** Adira ao [Windows Phone Dev Center](http://go.microsoft.com/fwlink/?LinkId=268442) ao utilizar as informações de conta empresarial quando iniciar sessão para comprar a sua conta de empresa. Este pedido terá de ser autorizado por um responsável da empresa antes de poder receber um certificado de assinatura com código.
 
-    2.  **Obter um certificado empresarial da Symantec** Compre um certificado no [site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) .
+    2.  **Obter um certificado empresarial da Symantec** Compre um certificado no [Web site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) .
 
     3.  **Importar certificados** Quando o pedido for aprovado, receberá um e-mail com instruções para importar os certificados. Siga as instruções no e-mail para importar os certificados.
 
@@ -136,9 +138,9 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows Phone 8
 
 2.  **Transferir o Windows Phone SDK** Transfira o [Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) (http://go.microsoft.com/fwlink/?LinkId=268439) e instale-o no seu computador. Este SDK é necessário para gerar um token de inscrição de aplicações.
 
-3.  **Gerar um ficheiro AETX** Gere um ficheiro de token de inscrição de aplicações (.aetx) a partir do ficheiro PFX da Symantec com o AETGenerator.exe, que faz parte do Windows Phone SDK 8.0. Para obter instruções sobre como criar um ficheiro AETX, consulte [How to generate an application enrollment token for Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)(Como gerar um token de inscrição de aplicações para Windows Phone)
+3.  **Gerar um ficheiro AETX** Faça a gestão de um ficheiro de token de inscrição de aplicações (.aetx) a partir do ficheiro PFX da Symantec com o AETGenerator.exe, que faz parte do Windows Phone SDK 8.0. Para obter instruções sobre como criar um ficheiro AETX, consulte [How to generate an application enrollment token for Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)(Como gerar um token de inscrição de aplicações para Windows Phone)
 
-4.  **Transferir o Windows SDK para Windows 8.1** Transfira e instale o [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Tenha em atenção que o script do PowerShell incluído com a aplicação Portal da Empresa utiliza a localização de instalação predefinida, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se instalar noutra localização, tem de incluí-la num parâmetro de cmdlet.
+4.  **Transferir o Windows SDK para Windows 8.1** Transfira e instale e o [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Tenha em atenção que o script do PowerShell incluído com a aplicação Portal da Empresa utiliza a localização de instalação predefinida, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se instalar noutra localização, tem de incluí-la num parâmetro de cmdlet.
 
 5.  **Assinar a aplicação com código através do PowerShell** Na qualidade de administrador, abra o **Windows PowerShell** no computador anfitrião instalado com o Windows SDK, o Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec, navegue para o ficheiro Sign-WinPhoneCompanyPortal.ps1 e execute o script.
 
@@ -184,6 +186,6 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows Phone 8
     > -   Se for necessário instalar aplicações em sideload e existirem dispositivos Windows Phone 8.0 que precisam de ser inscritos e de receber o ficheiro ssp.xap, crie uma nova implementação de software do ficheiro ssp.xap e implemente-a com a ação **desinstalar** . Os dispositivos Windows Phone 8.0 não suportam a instalação ou desinstalação forçada de aplicações, pelo que irão ignorar a implementação. Os dispositivos Windows Phone 8.1 suportam a ação de desinstalação e removerão o ficheiro ssp.xap.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Quando um utilizador visado tentar utilizar o Skype para Empresas Online no resp
 
 **Antes de** configurar uma política de acesso condicional para o Skype para Empresas Online, tem de:
 - Ter uma **subscrição do Skype para Empresas Online** e atribuir uma licença do Skype para Empresas Online aos utilizadores.
-- Ter uma subscrição do **Enterprise Mobility Suite** ou do **Azure Active Directory Premium**
+- Ter uma subscrição do **Enterprise Mobility Suite** ou do **Azure Active Directory Premium**.
 -   **Ativar a autenticação moderna** para o Skype para Empresas Online. Iniciar sessão no Microsoft Connect e preencher [este formulário](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para ser inscrito no programa de autenticação moderna.
 -  Tem de utilizar, bem como todos os seus utilizadores finais, o **Skype para Empresas Online**. Se tiver uma implementação com o Skype para Empresas Online e o Skype para Empresas no local, a política de acesso condicional não será aplicada aos utilizadores finais.
 
@@ -46,7 +46,7 @@ Quando um utilizador visado tentar utilizar o Skype para Empresas Online no resp
 
 -   Ser um dispositivo **Android** ou **iOS**.
 
--   Estar **inscrito** no
+-   Estar **inscrito** no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -   Ser **compatível** com todas as políticas de conformidade do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas.
 
@@ -68,29 +68,29 @@ Pode especificar dois tipos de grupo a utilizar para a política do Skype para E
 
 -   **Grupos direcionados** – Contém os grupos de utilizadores aos quais a política será aplicada.
 
--   **Grupos excluídos** – Contém os grupos de utilizadores excluídos da política.
+-   **Grupos excluídos** – contém os grupos de utilizadores excluídos da política.
 
 Se um utilizador estiver em ambos os grupos, estará excluído da política.
 
 ### Passo 2: configurar e implementar uma política de conformidade
-[Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade em todos os dispositivos que serão afetados pela política. Seriam todos os dispositivos utilizados pelos utilizadores nos **Grupos visados**
+[Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade em todos os dispositivos que serão afetados pela política. Estes seriam todos os dispositivos utilizados pelos utilizadores nos **Grupos visados**.
 
-> Enquanto as políticas de conformidade são implementadas nos grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] , as políticas de acesso condicional são direcionadas para os grupos de segurança do Azure Active Directory.
+> [!NOTE] Enquanto as políticas de conformidade são implementadas nos grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são direcionadas para os grupos de segurança do Azure Active Directory.
 
 
-> Se não tiver implementado uma política de conformidade, os dispositivos serão tratados como conformes.
+> [!IMPORTANT] Se não tiver implementado uma política de conformidade, os dispositivos serão tratados como conformes.
 
-Quando estiver pronto, avance para o **Passo 3**
+Quando estiver pronto, avance para o **Passo 3**.
 
 ### Passo 3: Configurar a política do Skype para Empresas Online
 Em seguida, configure a política para exigir que apenas os dispositivos geridos e conformes podem aceder ao Skype para Empresas Online. Esta política será armazenada no Azure Active Directory.
 
 ####
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** > **Acesso Condicional** > **Política do Skype para Empresas Online**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** > **Acesso Condicional** > **Política do Skype para Empresas Online**.
 
 ![Captura de ecrã da página de política de acesso condicional do Skype para Empresas Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Selecione **Ativar política de acesso condicional**
+2.  Selecione **Ativar política de acesso condicional**.
 
 3.  Em **Acesso da aplicação**, pode optar por aplicar a política de acesso condicional a:
 
@@ -102,7 +102,7 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
 
 5.  Opcionalmente, em **Grupos Excluídos**, clique em **Modificar** para selecionar os grupos de segurança do Azure Active Directory que estão excluídos desta política.
 
-6.  Quando tiver terminado, clique em **Guardar**
+6.  Quando tiver terminado, clique em **Guardar**.
 
 Configurou o acesso condicional para o Skype para Empresas Online. Não tem de implementar a política de acesso condicional, pois esta entra em vigor imediatamente.
 
@@ -119,6 +119,6 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 * **Dispositivos registados no AAD e conformes** – Estes dispositivos podem aceder ao Skype para Empresas Online.
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

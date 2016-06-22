@@ -1,13 +1,27 @@
 ---
+# required metadata
+
 title: Implementar aplicações | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: mghadial
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
 ---
 # Implementar aplicações no Microsoft Intune
 
@@ -19,7 +33,7 @@ Neste procedimento, irá implementar a aplicação para utilizadores ou disposit
 
 ### Para implementar uma aplicação
 
-1. Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicações** &gt; **Aplicações** para ver a lista de aplicações que gere.
+1. Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), clique em **Aplicações** &gt; **Aplicações** para ver a lista de aplicações geridas por si.
 
 2.  Selecione a aplicação que quer implementar e, sem seguida, clique em **Gerir Implementação**.
 
@@ -55,6 +69,6 @@ Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utiliz
 Depois de implementar uma aplicação, poderá ser útil monitorizar o progresso da mesma. Para mais informações, consulte [Monitorizar aplicações no Microsoft Intune](monitor-apps-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -29,9 +29,11 @@ ms.suite: ems
 # Desativar a recolha de dados da Microsoft
 Para melhorar os seus produtos e serviços, a Microsoft recolhe automaticamente dados anónimos sobre a fiabilidade e o desempenho da aplicação Portal da Empresa e como pode utilizá-la. Pode desativar a recolha desses dados no seu dispositivo Android utilizando a definição **Dados de Utilização** na aplicação Portal da Empresa. Os administradores de TI não têm controlo sobre a recolha dos dados e não podem alterar a sua seleção desta definição.
 
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

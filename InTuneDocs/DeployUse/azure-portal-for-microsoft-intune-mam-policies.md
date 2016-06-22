@@ -18,7 +18,7 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,7 +32,7 @@ O **portal do Azure** permite criar e gerir políticas de gestão de aplicaçõe
 O portal do Azure suporta a criação de políticas de MAM para:
 - Aplicações em execução em dispositivos **inscritos e geridos pelo Intune**.
 - Aplicações em execução em dispositivos que **não estão inscritos** em nenhuma solução de MDM.
-- Aplicações em execução em dispositivos que estão **inscritos** numa solução de MDM de terceiros.
+- Aplicações em execução em dispositivos que estão **inscritos numa solução de MDM de terceiros**.
 
 Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar uma política de MAM que suporte aplicações para dispositivos inscritos no Intune, utilizando a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
@@ -48,7 +48,7 @@ Se estiver a utilizar atualmente a **consola de administração do Intune** para
 
     ![Captura de ecrã do dashboard do portal do Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  No menu **Procurar**, localize **Intune**.![Captura de ecrã do menu Procurar com o Intune realçado](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  No menu **Procurar**, localize **Intune**.![ Captura de ecrã do menu Procurar com o Intune realçado](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
 4.  Clique em **Intune > Gestão de aplicações móveis do Intune > Definições**.
 
@@ -64,6 +64,6 @@ Se estiver a utilizar atualmente a **consola de administração do Intune** para
 [Configurar políticas de gestão de aplicações móveis](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -26,10 +26,10 @@ ms.suite: ems
 ---
 
 # Gerir licenças do Intune
-Antes de os utilizadores poderem iniciar sessão para utilizar o serviço ou inscrever os dispositivos para gestão, têm de ter uma licença para a subscrição do Intune. Quando têm uma licença, os utilizadores passam a ser membros do grupo de utilizadores do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]. Esse grupo inclui todos os utilizadores com uma licença para usar a subscrição. Cada licença de utilizador suporta a inscrição até 5 dispositivos
+Antes de os utilizadores poderem iniciar sessão para utilizar o serviço do Intune ou inscreverem os respetivos dispositivos para gestão, tem primeiro de atribuir uma licença para a sua subscrição do Intune no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Após atribuída uma licença, os nomes dos utilizadores serão apresentados na Consola de administração do Intune. Os utilizadores podem inscrever até cinco dispositivos.
 
 ## Como são atribuídas as licenças do Intune
-Quando as contas de utilizador são sincronizadas a partir do Active Directory no local ou adicionadas manualmente à subscrição de serviços na nuvem através do portal de contas, não lhes é atribuída automaticamente uma licença do Intune. Em vez disso, posteriormente, um administrador inquilino do Intune tem de editar a conta de utilizador para atribuir uma licença ao utilizador a partir do portal de contas.
+Quando as contas de utilizador são sincronizadas a partir do Active Directory no local ou adicionadas manualmente à subscrição de serviços em nuvem através do [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), não lhes é atribuída automaticamente uma licença do Intune. Em vez disso, posteriormente, um administrador inquilino do Intune tem de editar a conta de utilizador para atribuir uma licença ao utilizador a partir do portal do Office 365.
 
 Quando a sua subscrição partilha o Azure AD com outros serviços na nuvem associados à subscrição, também tem acesso aos utilizadores que foram adicionados a esses serviços. Estes utilizadores não possuem uma licença para o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] até que a atribua a cada um deles.
 
@@ -38,16 +38,16 @@ Quando a sua subscrição partilha o Azure AD com outros serviços na nuvem asso
 
 ## Atribuir uma licença de utilizador do Intune
 
-Utiliza o **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas a partir do Active Directory no local para o Azure AD.
+Para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas do Active Directory no local com o Azure AD, é utilizado o [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-1.  Inicie sessão no portal de contas do Intune com as suas credenciais de administrador inquilino.
+1.  Inicie sessão no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as suas credenciais de administrador inquilino e depois selecione **Pessoas** > **Todos os Utilizadores**.
 
-2.  Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e ative a caixa de verificação **Microsoft Intune** nas propriedades da conta de utilizador.
+2.  Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e selecione **Microsoft Intune** nas propriedades da conta de utilizador.
 
-3.  A conta de utilizador será agora adicionada ao grupo de utilizadores do Microsoft Intune que atribui as permissões de utilizador para utilizar o serviço e inscrever os respetivos dispositivos para gestão.
+3.  A conta de utilizador tem agora as permissões necessárias para utilizar o serviço e inscrever dispositivos para gestão.
 
 ### Utilizar o PowerShell para gerir seletivamente licenças de utilizador do EMS
-As organizações que utilizam o Enterprise Mobility Suite (EMS) da Microsoft podem ter utilizadores que apenas necessitam do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços utilizando [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx) 
+As organizações que utilizam o Enterprise Mobility Suite (EMS) da Microsoft podem ter utilizadores que apenas necessitam do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços através dos [cmdlets da PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). 
 
 Para atribuir seletivamente licenças de utilizador para serviços do EMS, abra o PowerShell como administrador num computador com o [Módulo Azure Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) instalado. Pode instalar o PowerShell num computador local ou num servidor do ADFS.
 
@@ -57,7 +57,7 @@ Tem de criar uma nova definição de SKU de licença que se aplique apenas aos p
 
 Pode executar o comando seguinte para excluir o plano de serviço do Intune. Pode utilizar o mesmo método para expandir para um grupo de segurança completo ou pode utilizar filtros mais granulares. 
 
-Exemplo 1
+**Exemplo 1** Crie um novo utilizador na linha de comandos e atribua uma licença de EMS sem ativar a parte do Intune da licença:
 
     Connect-MsolService 
         
@@ -67,11 +67,11 @@ Exemplo 1
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS 
     
 
-Criar um novo utilizador na linha de comandos e atribuir uma licença de EMS sem ativar a parte do Intune da licença:
+Verificar com:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-Verificar com:
+**Exemplo 2** Desative a parte do Intune da licença de EMS para um utilizador a quem já foi atribuída uma licença:
 
     Connect-MsolService 
     
@@ -80,19 +80,19 @@ Verificar com:
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
  
-Exemplo 2
+Verificar com:
  
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
 
-![Desativar a parte do Intune da licença de EMS para um utilizador a quem já foi atribuída uma licença:](./media/posh-addlic-verify.png)
+![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### Verificar com:
-PoSH-AddLic-Verify Passos seguintes
->Parabéns!
+### Passos seguintes
+Parabéns! Acabou de concluir o passo 4 do *Guia de introdução do Intune*.
+>[!div class="passo a passo"]
 
->Acabou de concluir o passo 4 do *Guia de introdução do Intune*  
+>[&larr; **Sincronizar utilizadores com o Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organizar utilizadores e dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

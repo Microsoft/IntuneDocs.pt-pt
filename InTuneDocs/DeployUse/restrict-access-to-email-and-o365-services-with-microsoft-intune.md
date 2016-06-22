@@ -18,7 +18,7 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Fluxo típico de acesso condicional:
 ![Diagrama que mostra os pontos de decisão utilizados para determinar se um dispositivo tem permissão de acesso a um serviço ou está bloqueado](./media/ConditionalAccess4.png)
 
 ## Como configurar o acesso condicional?
-Utilizar o acesso condicional para gerir o acesso ao Microsoft **Exchange No Local**, **Exchange Online**, **Exchange Online Dedicado**,  **SharePoint Online** e **Skype para Empresas Online**
+Utilize o acesso condicional para gerir o acesso ao Microsoft **Exchange No Local**, **Exchange Online**, **Exchange Online Dedicado**,  **SharePoint Online** e **Skype para Empresas Online**.
 
 Para configurar o acesso condicional, configure uma política de conformidade de dispositivo e uma política de acesso condicional.
 
@@ -69,6 +69,6 @@ Ao contrário de outras políticas do Intune, não implementa políticas de aces
   - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Quando o dispositivo Android está inscrito no Intune, pode utilizar a definiç�
 
 Para ativar ou desativar o **Registo Verboso**, inicie sessão na aplicação Portal da Empresa com as suas credenciais escolares ou profissionais, toque em **Definições** e toque no botão ativar/desativar junto à definição **Registo Verboso**.
 
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,9 +33,9 @@ O portal do Azure é a nova consola de administração para a criação de polí
 - Dispositivos geridos por uma solução de MDM de terceiros
 - Dispositivos que não são geridos por qualquer solução MDM (BYOD).
 
-Se estiver a utilizar o portal do Azure, leia[Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para obter uma descrição geral rápida.
+Se estiver a utilizar o portal do Azure, leia o [Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para obter uma descrição geral rápida.
 
-Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar políticas de MAM que suportem aplicações para dispositivos inscritos no Intune, utilizando a **consola de administração do Intune**, mas é recomendado que utilize o portal do Azure, mesmo em dispositivos que estão inscritos no Intune. Para instruções sobre como criar uma política de MAM utilizando a consola de administração do Intune, consulte [aqui](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar políticas de MAM que suportem aplicações para dispositivos inscritos no Intune, utilizando a **consola de administração do Intune**, mas é recomendado que utilize o portal do Azure, mesmo em dispositivos que estão inscritos no Intune. Para obter instruções sobre como criar uma política de MAM utilizando a consola de administração do Intune, consulte [aqui](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 >[!IMPORTANT]
 > Poderá não ver todas as definições de política de MAM na consola de administração do Intune. Se criar políticas de MAM na consola de administração do Intune e no portal do Azure, a política no portal do Azure é aplicada às aplicações e implementada nos utilizadores.
@@ -46,13 +46,14 @@ Se estiver a utilizar atualmente a **consola de administração do Intune** para
 
 - Android 4 ou posterior
 
+Os dispositivos Windows não são atualmente suportados.
 ##  Aplicações suportadas
-* **Aplicações da Microsoft:** estas aplicações têm o SDK da aplicação do Intune incorporado e não necessitam de processamento adicional antes de aplicar políticas de MAM.
-Para uma lista completa de aplicações Microsoft suportadas, aceda à [galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) na página de parceiros de aplicações do Microsoft Intune. Clique na aplicação para ver os cenários suportados, as plataformas e se a aplicação suporta ou não várias identidades.
-* As suas **aplicações de linha de negócio** incorporadas e internas: requerem a preparação da aplicação para incluir o SDK da Aplicação do Intune antes de poder aplicar políticas de MAM.
+* **Aplicações da Microsoft:** estas aplicações têm o SDK da Aplicação do Intune incorporado e não necessitam de processamento adicional antes de aplicar políticas de MAM.
+Para obter uma lista completa de aplicações Microsoft suportadas, vá para [Galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) na página de parceiros de aplicações do Microsoft Intune. Clique na aplicação para ver os cenários suportados, as plataformas e se a aplicação suporta ou não várias identidades.
+* As suas **Aplicações de linha de negócio:** incorporadas e internas. Estas requerem a preparação da aplicação para incluir o SDK da Aplicação do Intune antes de poder aplicar políticas de MAM.
 
-  * Para dispositivos que são geridos pelo Intune, consulte [Decidir como preparar as aplicações para MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
-  * Para dispositivos que não são geridos como dispositivos pertencentes aos empregados ou para dispositivos que são geridos por uma solução de gestão de dispositivos móveis de terceiros, consulte [Proteger aplicações e dados de linha de negócio em dispositivos não inscritos no Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+  * Para saber que dispositivos são geridos pelo Intune, consulte [Decidir como preparar as aplicações para MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * Para saber que dispositivos não são geridos, como dispositivos pertencentes aos empregados ou para dispositivos que são geridos por uma solução de gestão de dispositivos móveis de terceiros, consulte [Proteger aplicações e dados de linha de negócio em dispositivos não inscritos no Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 **Antes** de poder configurar políticas de MAM, precisará do seguinte:
 
@@ -71,7 +72,7 @@ Para uma lista completa de aplicações Microsoft suportadas, aceda à [galeria 
 
 ## Criar utilizadores e atribuir licenças do Microsoft Intune
 
-1. Precisa de uma subscrição: já tem uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se estiver a utilizar atualmente o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para gerir os dispositivos.  Tem também uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se tiver adquirido uma licença do EMS. Se estiver a tentar que o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] consulte as capacidades do MAM, pode obter uma conta de avaliação [aqui](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+1. Precisa de uma subscrição: já tem uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se estiver a utilizar atualmente o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para gerir os dispositivos.  Tem também uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se tiver adquirido uma licença do EMS. Se estiver a tentar [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verificar as capacidades do MAM, pode obter uma conta de avaliação [aqui](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
 
     Para verificar se tem uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] , no portal do Office, aceda à página de Faturação.  Deverá ver [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] como **Ativo** nas subscrições.
 
@@ -123,6 +124,6 @@ Os**administradores globais** têm acesso ao [Portal do Azure](https://portal.az
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

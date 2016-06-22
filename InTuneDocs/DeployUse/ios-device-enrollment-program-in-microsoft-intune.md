@@ -18,7 +18,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,7 +56,7 @@ Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precis
 5.  **Adicionar a Política de Inscrição de Dispositivos da Empresa** Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, clique em **Adicionar**.
 
     Forneça detalhes **Gerais** , incluindo o **Nome** e a **Descrição**, especifique se os dispositivos atribuídos ao perfil têm afinidade com o utilizador ou se pertencem a um grupo.
-      - **Pedido de afinidade de utilizadores**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial e, em seguida, receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador.  A **afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (por exemplo, para instalar aplicações). 
+      - **Pedido de afinidade de utilizadores**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial e, em seguida, receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador.  A **afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (por exemplo, para instalar aplicações).
       - **Sem afinidade de utilizador**: o dispositivo não está afiliado a um utilizador. Utilize esta afiliação em dispositivos que efetuem tarefas sem aceder aos dados de utilizador locais. As aplicações que requerem afiliação de utilizadores, incluindo a aplicação Portal da Empresa utilizada para instalar aplicações de linha de negócio, não irão funcionar.
 
     Em seguida, ative **Configurar definições do Programa de Inscrição de Dispositivos para esta política** para suportar DEP.
@@ -65,29 +65,21 @@ Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precis
 
      Estão disponíveis as seguintes definições para dispositivos geridos por DEP:
 
-     - **Departamento** - é apresentado quando os utilizadores tocam em "Sobre a Configuração de" durante a ativação
-     - **Número de telefone de suporte** - apresentado quando o utilizador clica no botão **Preciso de ajuda** durante a ativação
-     - **Modo de preparação** - este estado é definido durante a ativação e não pode ser alterado sem a reposição de fábrica do dispositivo:
-        - **Não supervisionado** - capacidades de gestão limitadas
-        - **Supervisionado** - ativa mais opções de gestão e desativa o Bloqueio de Ativação por predefinição
-     - **Bloquear perfil de inscrição para o dispositivo** - este estado é definido durante a ativação e não pode ser alterado sem uma reposição de fábrica.
-        - **Desativar** - permite que o perfil de gestão seja removido do menu **Definições**
+     - **Departamento** - É apresentado quando os utilizadores tocam em "Sobre a Configuração de" durante a ativação
+     - **Número de telefone de suporte** - Apresentado quando o utilizador clica no botão **Preciso de ajuda** durante a ativação
+     - **Modo de preparação** - Este estado é definido durante a ativação e não pode ser alterado sem a reposição de fábrica do dispositivo:
+        - **Não supervisionado** - Capacidades de gestão limitadas
+        - **Supervisionado** - Ativa mais opções de gestão e desativa o Bloqueio de Ativação por predefinição
+     - **Bloquear perfil de inscrição para o dispositivo** - Este estado é definido durante a ativação e não pode ser alterado sem uma reposição de fábrica
+        - **Desativar** - Permite que o perfil de gestão seja removido do menu **Definições**
         - **Ativar** - (requer **Modo de Preparação** = **Supervisionado**) desativa as definições de iOS que poderiam permitir a remoção do perfil de gestão
-     - **Opções do Assistente de Configuração** -estas definições são opcionais e podem ser configuradas mais tarde no menu **Definições** de iOS
-        - **Código de acesso** - pedido de código de acesso durante a ativação. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação).
-        - **Serviços de Localização** - se ativado, o Assistente de Configuração solicita o serviço durante a ativação
-        - **Restaurar** - se ativado, o Assistente de Configuração solicita a cópia de segurança de iCloud durante a ativação
-        - **ID Apple** - é necessário um ID Apple para transferir aplicações iOS da loja de aplicações, incluindo as instaladas pelo Intune. Se estiver ativado, o iOS irá pedir aos utilizadores um ID Apple quando o Intune tenta instalar uma aplicação sem um ID.
-        - **Termos e Condições** - se ativado, o Assistente de Configuração solicita aos utilizadores que aceitem os termos e condições da Apple durante a ativação
-        - **Touch ID** - se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-        - **Apple Pay** - se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-        - **Zoom** - se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-        - **Siri** - se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-        - **Enviar dados de diagnóstico para a Apple** - se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-     -  **Ativar a gestão adicional do Apple Configurator** - defina como **Não Permitir** para impedir a sincronização de ficheiros com o iTunes ou a gestão através do Apple Configurator. A Microsoft recomenda que defina para **Não Permitir**, exporte qualquer configuração adicional do Apple Configurator e, em seguida, implemente como um perfil de configuração iOS Personalizada através do Intune, em vez de utilizar esta definição para permitir a implementação manual com ou sem um certificado.
-        - **Não Permitir** - impede o dispositivo de comunicar através de USB (desativa o emparelhamento)
-        - **Permitir** - permite ao dispositivo comunicar através de ligação USB para qualquer PC ou Mac
-        - **Requer certificado** - permite o emparelhamento com um Mac, com um certificado importado para o perfil de inscrição
+     - **Opções do Assistente de Configuração** - Estas definições são opcionais e podem ser configuradas mais tarde no menu **Definições** de iOS
+        - **Código de Acesso** - Pedido de código de acesso durante a ativação. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação).
+        - **Serviços de Localização** - Se ativado, o Assistente de Configuração solicita o serviço durante a ativação
+        - **Restaurar** - Se estiver ativado, o Assistente de Configuração solicita a cópia de segurança de iCloud durante a ativação
+        - **ID Apple** - É necessário um ID Apple para transferir aplicações iOS da loja de aplicações, incluindo as instaladas pelo Intune. Se estiver ativado, o iOS irá pedir aos utilizadores um ID Apple quando o Intune tenta instalar uma aplicação sem um ID.
+        - **Termos e Condições** - Se estiver ativada, o Assistente de configuração solicita aos utilizadores para aceitar os termos e condições da Apple durante a ativação - **Touch ID** - Se ativada, o Assistente de Configuração solicita este serviço durante a ativação - **Apple Pay** - Se ativada, o Assistente de Configuração solicita este serviço durante a ativação - **Zoom** - Se ativada, o Assistente de configuração solicita este serviço durante a ativação - **a Siri** - Se ativada, o Assistente de configuração solicita este serviço durante a ativação - **Enviar dados de diagnóstico para a Apple** - Se ativada , o Assistente de configuração solicita este serviço durante a ativação -  **Ativar a gestão adicional do Apple Configurator** - Definida como **Não permitir** para impedir a sincronização de ficheiros com o iTunes ou a gestão através do Apple Configurator. A Microsoft recomenda que defina para **Não Permitir**, exporte qualquer configuração adicional do Apple Configurator e, em seguida, implemente como um perfil de configuração iOS Personalizada através do Intune, em vez de utilizar esta definição para permitir a implementação manual com ou sem um certificado.
+        - **Não permitir** - Impede o dispositivo de comunicar através de USB (desativa o emparelhamento) - **Permitir** - Permite que o dispositivo comunique através de uma ligação de USB para qualquer PC ou Mac - **Necessita de certificado** - Permite o emparelhamento com um Mac com um certificado importado para o perfil de inscrição
 
 6.  **Atribuir Dispositivos DEP para Gestão** Aceda ao [Portal do Programa de Inscrição de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sessão com o ID Apple da sua empresa. Aceda a **Programa de Implementação** &gt; **Programa de Inscrição de Dispositivos** &gt; **Gerir Dispositivos**. Especifique como irá **Escolher Dispositivos**, fornecer informações sobre o dispositivo e especificar detalhes pelo **Número de Série**e **Número da Encomenda**do dispositivo, ou como **Carregar Ficheiro CSV**. Em seguida, selecione **Atribuir ao Servidor**, selecione o &lt;NomeDoServidor&gt; especificado para o Microsoft Intune e, em seguida, clique em **OK**.
 
@@ -105,6 +97,6 @@ Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precis
 [Prepare-se para inscrever dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

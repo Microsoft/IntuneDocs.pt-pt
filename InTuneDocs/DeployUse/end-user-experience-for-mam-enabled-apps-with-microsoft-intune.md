@@ -18,7 +18,7 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -140,7 +140,7 @@ Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda co
 
 ![Captura de ecrã da caixa de diálogo com a mensagem a informar que a ação não é permitida e com as opções Sim e Não](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a informá-lo de que essa ação não é permitida, com instruções sobre como remover a conta existente e adicionar uma nova.  Nos dispositivos Android, para remover a conta existente, aceda a **Definições &gt;Geral &gt; Gestor de Aplicações &gt;Portal da Empresa e selecione "Limpar Dados"**.
+Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a informá-lo de que essa ação não é permitida, com instruções sobre como remover a conta existente e adicionar uma nova.  Nos dispositivos Android, para remover a conta existente, vá para **Definições &gt;Geral &gt; Gestor de Aplicações &gt;Portal da Empresa e selecione "Limpar Dados"**.
 
 ![Captura de ecrã da mensagem de erro e instruções para remover a conta](../media/AppManagement/Android_SwitchUser.png)
 
@@ -151,9 +151,9 @@ Transfira esta aplicação a partir da loja Google Play.  Quando a aplicação e
 
 **Dispositivos Android que não estão inscritos no Intune**
 
-Antes de poder utilizar a aplicação de partilha RMS para ver os ficheiros de outras aplicações geridas pelo Intune, inicie a aplicação RMS e autentique-se com a sua conta do trabalho.  Quando iniciar sessão, verá a seguinte mensagem **apenas se não tiver uma licença RMS**:
+Antes de poder utilizar a aplicação de partilha RMS para ver os ficheiros de outras aplicações geridas pelo Intune, inicie a aplicação RMS e autentique-se com a sua conta profissional.  Quando iniciar sessão, verá a seguinte mensagem **apenas se não tiver uma licença RMS**:
 
-**Autenticação Bem-sucedida – pode agora visualizar ficheiros empresariais, mas a sua organização não está configurada para lhe permitir proteger ficheiros. Contacte o seu administrador de TI para mais detalhes.**
+**Autenticação Bem-sucedida – pode agora visualizar ficheiros empresariais, mas a sua organização não está configurada para lhe permitir proteger ficheiros. Contacte o seu administrador de TI para obter mais detalhes.**
 
 Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheiros da empresa. Ainda pode abrir e ver os ficheiros da empresa a partir de outras aplicações geridas pelo Intune, e as políticas de MAM ainda são aplicáveis.  O que esta mensagem diz é que não poderá adicionar as capacidades de proteção adicionais que a aplicação de partilha RMS fornece.  Tem de ter uma licença RMS para adicionar uma proteção aos seus ficheiros. Para saber mais sobre as funcionalidades de proteção RMS de ficheiros, consulte [Proteger um ficheiro num dispositivo](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) e [Proteger um ficheiro que partilha por e-mail](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
@@ -162,6 +162,6 @@ Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheir
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

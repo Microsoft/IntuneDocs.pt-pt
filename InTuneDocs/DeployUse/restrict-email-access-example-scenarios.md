@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ ms.suite: ems
 
 Para tal, configure uma política de acesso condicional para o Exchange Online com as seguintes definições:
 
--   Selecione **Ativar política de acesso condicional**
+-   Selecione **Ativar política de acesso condicional**.
 
 - Selecione as plataformas a partir das quais pretende permitir o acesso das aplicações com autenticação moderna.
 - Para aplicações do Exchange ActiveSync, selecione **Bloquear dispositivos não conformes em plataformas suportadas pelo Microsoft Intune** e **Bloquear todos os outros dispositivos em plataformas não suportadas pelo Microsoft Intune.**
@@ -70,7 +70,7 @@ Para tal, configure a política de acesso condicional seguinte para o Exchange n
 ## Nenhum dispositivo Android pode aceder ao Exchange no local.
 ### Requisitos do cenário
 - Todos os dispositivos Android devem ser impedidos de aceder ao Exchange.
-- Todos os outros dispositivos suportados podem aceder ao Exchange, desde que sejam geridos pelo
+- Todos os outros dispositivos suportados podem aceder ao Exchange, desde que sejam geridos pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 Para tal, configure uma política de acesso condicional para o Exchange no local com as seguintes definições:
 
@@ -86,6 +86,6 @@ Para tal, configure uma política de acesso condicional para o Exchange no local
 ![Fluxo de acesso a dispositivos](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

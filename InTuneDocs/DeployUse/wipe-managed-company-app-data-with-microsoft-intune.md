@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Para remover seletivamente os dados empresariais da aplicação, crie um pedido 
 
     ![Captura de ecrã do painel de gestão de aplicações móveis do Intune com o mosaico Resumo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Escolha **Novo pedido de apagamento**.
+2.  Selecione **Novos pedidos de apagamento**.
 
     ![Captura de ecrã do painel Novo pedido de apagamento](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -58,7 +58,7 @@ O painel **Gestão de aplicações móveis do Intune** tem um relatório resumid
 
 1.  No painel **Gestão de aplicações móveis do Intune** , escolha o mosaico **Pedido de eliminação** para abrir o painel **Pedido de eliminação**.
 
-2.  No painel **Pedido de eliminação** , pode ver a lista dos pedidos agrupados por utilizadores.  Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver vários pedidos para um utilizador.  O estado indica se um pedido de eliminação ainda está **pendente**, **falhou** ou **teve êxito**.
+2.  No painel **Pedido de eliminação** , pode ver a lista dos pedidos agrupados por utilizadores.  Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver vários pedidos para um utilizador.  O estado indica se um pedido de eliminação ainda está **pendente**, **falhou**ou **teve êxito**.
 
 ### Consulte também
 [Protect app data using mobile app management policies (Proteger dados de aplicações através de políticas de gestão de aplicações móveis) ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -66,6 +66,6 @@ O painel **Gestão de aplicações móveis do Intune** tem um relatório resumid
 [Utilizar o portal do Azure](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

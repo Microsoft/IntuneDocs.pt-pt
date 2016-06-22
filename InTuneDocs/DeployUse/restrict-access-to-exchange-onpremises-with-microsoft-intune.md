@@ -18,7 +18,7 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,11 +38,11 @@ Para saber mais sobre como funciona o acesso condicional, leia o artigo [Restrin
 
 -   A sua versão do Exchange tem de ser o **Exchange 2010 ou posterior**. Matriz de Servidor de Acesso de Cliente (CAS) do Exchange Server é suportada.
 
--   Tem de utilizar o **conector do Exchange no local**, que liga o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Microsoft Exchange no local. Este procedimento permite-lhe gerir dispositivos através da consola do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Para obter detalhes sobre o conector, consulte [Conector do Exchange no local do Intune](intune-on-premises-exchange-connector.md).
+-   Tem de utilizar o **conector do Exchange no local**, que liga o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Microsoft Exchange no local. Este procedimento permite-lhe gerir dispositivos através da consola do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Para obter detalhes sobre o conetor, consulte [Conetor do Exchange no local do Intune](intune-on-premises-exchange-connector.md).
 
-    -   O conector do Exchange no local disponível na consola do Intune é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. Deve também assegurar que o conector do Exchange para o seu inquilino está instalado **em apenas um computador**.
+    -   O conector do Exchange no local disponível na consola do Intune é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. Deve também assegurar que o conetor do Exchange para o seu inquilino está instalado **em apenas um computador**.
 
-        Este conector deve ser transferido a partir da consola de administração do Intune.  Para obter instruções sobre como configurar o conector do Exchange no local, consulte [Configurar o conector do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
+        Este conector deve ser transferido a partir da consola de administração do Intune.  Para obter instruções sobre como configurar o conetor do Exchange no local, consulte [Configurar o conetor do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
 
     -   O conector pode ser instalado em qualquer máquina, desde que a máquina possa comunicar com o servidor do Exchange.
 
@@ -57,7 +57,7 @@ Quando as políticas de acesso condicional são configuradas e direcionadas para
 
 -  **Registado no Azure Active Directory**. Além disso, o ID do Exchange ActiveSync do cliente tem de ser registado no Azure Active Directory.
 
-  O AAD DRS será automaticamente ativado para os clientes do Intune e do Office 365. Os clientes que já implementaram o Serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no respetivo Active Directory no local. **Isto não é aplicável a PCs Windows nem a dispositivos Windows Phone**.
+  O AAD DRS será automaticamente ativado para os clientes do Intune e do Office 365. Os clientes que já implementaram o Serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no respetivo Active Directory no local. **Isto não é aplicável a PC com Windows ou a dispositivos Windows Phone**.
 
 -   **Compatível** com todas as políticas de conformidade do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas nesse dispositivo.
 
@@ -106,13 +106,13 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
   - **Notificação do Utilizador:** para além do e-mail de notificação enviado a partir do Exchange, o Intune envia um e-mail que contém passos para desbloquear o dispositivo. Pode editar a mensagem predefinida para personalizá-la de acordo com as suas necessidades. Como o e-mail de notificação do Intune com as instruções de correção é enviado para a caixa de correio do Exchange do utilizador, no caso de o dispositivo do utilizador ser bloqueado antes de receber a mensagem de e-mail, este pode utilizar um dispositivo desbloqueado ou outro método para aceder ao Exchange e ver a mensagem. Isto é particularmente verdadeiro quando a **Regra Predefinida** estiver definida como bloqueio ou quarentena.  Neste caso, o utilizador final terá de aceder à respetiva loja de aplicações, transferir a aplicação Portal da Empresa da Microsoft e inscrever o seu dispositivo. Isto é aplicável a dispositivos iOS, Windows e Samsung KNOX.  Para dispositivos sem o Samsung KNOX, terá de enviar o e-mail de quarentena para uma conta de e-mail alternativa, o qual o utilizador final tem de copiar em seguida para o respetivo dispositivo bloqueado para concluir o processo de inscrição e conformidade.
   > [!NOTE] Para o Exchange poder enviar o e-mail de notificação, tem de especificar a conta que deve ser utilizada para enviá-lo.
   >
-  > Para detalhes, consulte [Configurar o conector do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
+  > Para obter detalhes, consulte [Configurar o conetor do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
 
 3.  Quando tiver terminado, escolha **Guardar**.
 
 -   Não tem de implementar a política de acesso condicional, pois esta entra em vigor imediatamente.
 
--   Depois de um utilizador configurar um perfil do Exchange ActiveSync, o dispositivo poderá demorar entre uma a três horas até ser bloqueado (se não for gerido pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Depois de um utilizador configurar um perfil do Exchange ActiveSync, o dispositivo poderá demorar entre 1 a 3 horas até ser bloqueado (se não for gerido pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
 -   Se um utilizador bloqueado inscrever, posteriormente, o dispositivo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e corrigir a não conformidade, o acesso ao e-mail será desbloqueado em dois minutos.
 
@@ -126,6 +126,6 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
 [Restringir o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

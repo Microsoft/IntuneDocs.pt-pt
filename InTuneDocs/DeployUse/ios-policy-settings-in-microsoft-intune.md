@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Utilize a **política de configuração geral do iOS** do Microsoft Intune para 
 -   **Aplicações compatíveis e não compatíveis** - Especifique uma lista de aplicações que são compatíveis ou não compatíveis na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Compatíveis** pode ser utilizado para ver a compatibilidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores (mas não pode bloquear a instalação da aplicação).
 
 > [!TIP]
-> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Se a definição que procura não aparecer neste tópico, poderá conseguir criá-la utilizando uma política personalizada de iOS que permita importar as definições que criou com a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para mais informações, consulte **Definições de política personalizada** mais adiante neste tópico.
 
@@ -99,7 +99,7 @@ Se a definição que procura não aparecer neste tópico, poderá conseguir cri�
 |**Permitir loja de aplicações**|Permite que o dispositivo aceda à loja de aplicações.|Sim|
 |**Exigir uma palavra-passe para aceder à loja de aplicações**|Sim|
 |**Permitir compras via aplicação**|Permite efetuar compras na loja a partir de uma aplicação em execução.|Sim|
-|**Permitir documentos geridos em outras aplicações não geridas**|Permite a visualização de documentos da empresa em qualquer aplicação.|iOS 7.1 e posterior|
+|**Permitir documentos geridos em outras aplicações não geridas**|Permite a visualização de documentos da empresa em qualquer aplicação.<br>**Exemplo:** pretende impedir que os utilizadores guardem os ficheiros da aplicação OneDrive no Dropbox. Configure esta definição como não. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não será permitido guardar.|iOS 7.1 e posterior|
 |**Permitir documentos não geridos em outras aplicações geridas**|Permitir a visualização de qualquer documento em aplicações geridas empresariais.|iOS 7.1 e posterior|
 |**Permitir videoconferência**|Permitir aplicações de videoconferência, tal como o Facetime, no dispositivo.|Sim|
 |**Permitir conteúdo para adultos no arquivo de multimédia**|Permitir que o dispositivo aceda a conteúdo da loja classificado como conteúdo para adultos.|Sim|
@@ -153,7 +153,7 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
-|**Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público**|Clique em **Procurar**e, em seguida, especifique a aplicação gerida ou a aplicação de uma loja que terá permissão para ser executada quando o dispositivo estiver em modo de local público. Não será permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte **Como especificar URLs para lojas de aplicações** mais adiante neste tópico.|
+|**Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público**|Selecione **Procurar**e, em seguida, especifique a aplicação gerida ou a aplicação de uma loja que terá permissão para ser executada quando o dispositivo estiver em modo de local público. Não será permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte **Como especificar URLs para lojas de aplicações** mais adiante neste tópico.|
 |**Permitir toque**|Ativa ou desativa o ecrã tátil do dispositivo.|
 |**Permitir a rotação do ecrã**|Ativa ou desativa a mudança da orientação do ecrã ao rodar o dispositivo.|
 |**Permitir os botões de volume**|Ativa ou desativa a utilização dos botões de volume no dispositivo.|
@@ -182,9 +182,9 @@ Utilize o **Relatório de Aplicações Não Compatíveis** para ver a compatibil
 
 ##### Para executar o Relatório de Aplicações Não Compatíveis
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Relatórios** &gt; **Relatório de Aplicações Não Compatíveis**.
 
-2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, clique em **Ver Relatório**.
+2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, selecione **Ver Relatório**.
 
 #### Como especificar URLs para lojas de aplicações
 Para especificar o URL de uma aplicação na lista de aplicações compatíveis e não compatíveis ou na opção **Selecionar uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público** (apenas em iOS), utilize o seguinte formato:
@@ -222,7 +222,7 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 |Nome da definição|Detalhes|
     |----------------|--------------------|
 |**Nome do perfil de configuração personalizado (apresentado aos utilizadores)**|Indique um nome para a política tal como será apresentado no dispositivo e nos relatórios de políticas do Intune.|
-|**Ficheiro de perfil de configuração**|Clique em **Importar**e, em seguida, navegue até ao perfil de configuração que criou com o Apple Configurator. **Nota:** Certifique-se de que as definições exportadas a partir da ferramenta Apple Configurator são compatíveis com a versão do iOS nos dispositivos nos quais implementou a política personalizada do iOS. Para obter informações sobre como são resolvidas as definições incompatíveis, pesquise **Configuration Profile Reference** (Referência de Perfil de Configuração) e **Mobile Device Management Protocol Reference** (Referência do Protocolo de Gestão de Dispositivos Móveis) no Web site [Apple Developer](https://developer.apple.com/).|
+|**Ficheiro de perfil de configuração**|Selecione **Importar** e, em seguida, navegue até ao perfil de configuração que criou com o Apple Configurator. **Nota:** Certifique-se de que as definições exportadas a partir da ferramenta Apple Configurator são compatíveis com a versão do iOS nos dispositivos nos quais implementou a política personalizada do iOS. Para obter informações sobre como são resolvidas as definições incompatíveis, pesquise **Configuration Profile Reference** (Referência de Perfil de Configuração) e **Mobile Device Management Protocol Reference** (Referência do Protocolo de Gestão de Dispositivos Móveis) no Web site [Apple Developer](https://developer.apple.com/).|
     |**Detalhes do perfil de configuração**|Apresenta o código XML do perfil de configuração que importou.|
 
 ### Consulte também
@@ -230,6 +230,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

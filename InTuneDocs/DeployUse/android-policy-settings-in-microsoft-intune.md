@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Utilize a **política de configuração geral para Android** do Microsoft Intune
 -   **Aplicações compatíveis e não compatíveis** - Especifique uma lista de aplicações que são compatíveis ou não compatíveis na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Compatíveis** pode ser utilizado para ver a compatibilidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores (mas não pode bloquear a instalação da aplicação).
 
 > [!TIP]
-> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Se a definição que procura não for apresentada neste tópico, poderá conseguir criá-la através de uma política personalizada para Android que lhe permita utilizar definições OMA-URI para controlar o dispositivo. Para mais informações, consulte **Definições de política personalizada ** mais adiante neste tópico.
 
@@ -106,7 +106,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |**Permitir câmara**|Permite a utilização da câmara do dispositivo.|Sim|Sim|
 |**Permitir armazenamento amovível**|Permite ao dispositivo utilizar armazenamento amovível, como um cartão SD.|Não|Sim|
 |**Permitir Wi-Fi**|Permite a utilização das capacidades Wi-Fi do dispositivo.|Não|Sim|
-|**Permitir partilha de Wi-Fi**|Permite a utilização de tethering Wi-Fi no dispositivo.|Não|Sim|
+|**Permitir tethering Wi-Fi**|Permite a utilização de tethering Wi-Fi no dispositivo.|Não|Sim|
 |**Permitir geolocalização**|Permite ao dispositivo utilizar informações de localização.|Não|Sim|
 |**Permitir NFC**|Permite operações que utilizam comunicação de proximidade se o dispositivo a suportar.|Não|Sim|
 |**Permitir Bluetooth**|Permite a utilização de Bluetooth no dispositivo.|Não|Sim|
@@ -138,8 +138,8 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
-|**Comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que não são geridas pelo Intune e para as quais os utilizadores não têm permissão para instalar e executar.|
-|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
+|**Comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que não são geridas pelo Intune e que não pretende que sejam instaladas e executadas pelos utilizadores. Se os utilizadores instalarem uma destas aplicações, estas serão listadas no relatório de aplicações não conformes.|
+|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que pretende permitir na sua empresa. Para permanecerem conformes, os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
 |**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.<br /><br />Para obter ajuda, consulte Como especificar URLs para lojas de aplicações mais adiante neste tópico.|
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
 |**Editar**|Permite-lhe editar o nome, o fabricante e o URL da aplicação selecionada.|
@@ -161,9 +161,9 @@ Utilize o **Relatório de Aplicações Não Compatíveis** para ver a compatibil
 
 ###### Para executar o Relatório de Aplicações Não Compatíveis
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Relatórios** &gt; **Relatório de Aplicações Não Compatíveis**.
 
-2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, clique em **Ver Relatório**.
+2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, selecione **Ver Relatório**.
 
 #### Como especificar URLs para lojas de aplicações
 Para especificar um URL de aplicação na lista de aplicações compatíveis e não compatíveis, utilize o seguinte formato:
@@ -177,10 +177,9 @@ Abra a página de instalação da aplicação e copie o URL para a área de tran
 ## Definições de política personalizada
 Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
-Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune. Para informações sobre as definições que pode configurar com estas políticas, consulte [Gerir as definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
 
-> [!NOTE]
-> Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada. Para mais informações, consulte Configurar um perfil Wi-Fi personalizado com uma chave pré-partilhada mais adiante neste tópico.
+> [!NOTE] Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada.
 
 ### Definições gerais
 
@@ -258,6 +257,6 @@ Embora o Intune suporte perfis Wi-Fi para dispositivos Android, esta funcionalid
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 
