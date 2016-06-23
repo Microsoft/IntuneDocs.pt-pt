@@ -200,9 +200,9 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
 
 ### Onde posso encontrar as políticas de resolução de problemas?
 
-Consulte [Resolver problemas de políticas no Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
+Consulte [Resolver problemas de políticas no Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
