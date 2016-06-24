@@ -28,11 +28,11 @@ ms.suite: ems
 
 # Obtém erros quando tenta inscrever o dispositivo iOS no Intune
 
-A tabela seguinte indica os erros que poderá ver quando inscrever o seu dispositivo iOS no Intune. Partilhe esta ligação com o administrador de TI. Se não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+A tabela seguinte indica os erros que poderá ver quando inscrever o seu dispositivo iOS no Intune. Partilhe esta ligação com o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 |Mensagem de erro|Problema|O que dizer ao administrador de TI|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|DeviceCapReached|Já tem demasiados dispositivos móveis inscritos.|O utilizador tem de remover um dos seus dispositivos móveis atualmente inscritos do Portal da Empresa antes de inscrever outro.|
+|DeviceCapReached|Já tem demasiados dispositivos móveis inscritos.|O utilizador tem de remover um dos seus dispositivos móveis atualmente inscritos do Portal da Empresa antes de inscrever outro. Consulte as instruções para o tipo de dispositivo que está a utilizar: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios), [Windows](unenroll-your-device-from-intune-windows).|
 |APNSCertificateNotValid|Existe um problema com o certificado que permite que o seu dispositivo móvel comunique com a rede da sua empresa.<br /><br />Contacte os administradores de TI e informe-os de que recebeu a mensagem **APNSCertificateNotValid** enquanto tentava inscrever o seu dispositivo móvel e peça-lhes para verem a resolução nesta tabela.|O Serviço Apple Push Notification (APNS) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. Se os passos para obter um certificado do APNS não forem efetuados ou o certificado APNS tiver expirado, as tentativas de inscrição falharão e será apresentada esta mensagem.<br /><br />Reveja as informações sobre a configuração de utilizadores em [Sync Active Directory and add users to Intune (Sincronizar o Active Directory e adicionar utilizadores ao Intune)](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) e em [Organizar utilizadores e dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Existe um problema com o certificado que permite que o seu dispositivo móvel comunique com a rede da sua empresa.<br /><br />Contacte os administradores de TI e informe-os de que recebeu a mensagem **APNSNotOnboarded** enquanto tentava inscrever o seu dispositivo móvel e peça-lhes para verem a resolução nesta tabela.|O Serviço Apple Push Notification (APNS) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. Se os passos para obter um certificado do APNS não forem efetuados ou o certificado APNS tiver expirado, as tentativas de inscrição falharão e será apresentada esta mensagem.<br /><br />Par obter mais informações, reveja [Set up iOS and Mac management with Microsoft Intune (Configurar a gestão de iOS e Mac com o Microsoft Intune)](/Intune/Deployuse/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|Poderá ter tentado inscrever através de um dispositivo não iOS. O tipo de dispositivo móvel que está a tentar inscrever não é suportado.<br /><br />Certifique-se de que o dispositivo está a executar a versão 7.1 do iOS ou posterior.<br /><br />Contacte os administradores de TI e informe-os de que recebeu a mensagem **DeviceTypeNotSupported** enquanto tentava inscrever o seu dispositivo móvel e peça-lhes para verem a resolução nesta tabela.|Certifique-se de que o dispositivo do utilizador está a executar a versão 7.1 do iOS ou posterior.|
@@ -42,6 +42,6 @@ A tabela seguinte indica os erros que poderá ver quando inscrever o seu disposi
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

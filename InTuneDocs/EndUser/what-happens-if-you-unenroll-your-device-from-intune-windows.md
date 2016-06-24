@@ -28,7 +28,7 @@ ms.suite: ems
 
 # What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?)
 
-Se desinstalar a aplicação Portal da Empresa no seu dispositivo, este também é removido do Intune. Para obter informações adicionais sobre o que acontece, utilize a ligação que aparece na secção "Neste Artigo" acima e que corresponde ao tipo de dispositivo que utiliza.
+Para informações adicionais sobre o que acontece, utilize a ligação, mostrada na secção “Neste artigo” acima, que corresponde ao tipo de dispositivo que utiliza.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 ou Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,11 +92,11 @@ Ao remover o seu dispositivo Windows RT, ocorrerá o seguinte:
 
 -   As definições alteradas no seu dispositivo quando o adicionou, por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe, deixam de ser aplicáveis.
 
-Se tiver dúvidas e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

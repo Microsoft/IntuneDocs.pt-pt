@@ -34,13 +34,13 @@ Se tiver um dispositivo Samsung Knox, pode fazer uma "eliminação seletiva", es
 
 - Aplicações empresariais que o administrador de TI lhe disponibiliza
 - E-mail, VPN e Wi-Fi
-- Capacidade do seu administrador de TI para impor determinadas definições
+- A capacidade do seu administrador de TI para impor determinadas definições
 
-Se tiver dúvidas e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

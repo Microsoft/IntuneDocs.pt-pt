@@ -31,7 +31,7 @@ Utilize as definições de política indicadas neste tópico para ajudá-lo a co
 
 ## Definições de política de configuração geral
 
-Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos:
+Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos. Não é possível utilizar esta política quando gere PCs com o Windows 10 com o software do cliente Intune.
 
 
 ### Palavra-passe
@@ -177,7 +177,7 @@ Todas as definições são apenas para ambiente de trabalho Windows 10.
 
 |Nome da definição|Detalhes|
 |----------------|---------------|
-|**Permitir atualizações automáticas**|Ative esta definição para permitir atualizações automáticas. Em seguida, configure uma das seguintes definições para controlar o comportamento da atualização:<br /><br />**Notificar carregamento**<br /><br />**Instalação automática ao tempo de manutenção**<br /><br />**Instalação automática e reinicio ao tempo de manutenção**<br /><br />**Instalação automática e reinício à hora agendada** **Nota**: quando esta opção está selecionada, também pode configurar as definições **Suprimir notificação ao utilizador final** e **Definir dia da instalação de atualizações agendadas**.<br>(apenas para ambiente de trabalho Windows 10)|
+|**Permitir atualizações automáticas**|Ative esta definição para permitir atualizações automáticas. Em seguida, configure uma das seguintes definições para controlar o comportamento da atualização:<br /><br />**Notificar carregamento**<br /><br />**Instalação automática ao tempo de manutenção**<br /><br />**Instalação automática e reinicio ao tempo de manutenção**<br /><br />**Instalação automática e reinício à hora agendada** **Nota**: quando esta opção está selecionada, também pode configurar as seguintes definições: **Suprimir a notificação para o utilizador final** e **Definir o dia da instalação de atualizações agendadas**.<br>(apenas para ambiente de trabalho Windows 10)|
 
 ## Definições de política personalizada
 Utilize a **política de configuração personalizada** do Microsoft Intune para Windows 10 e Windows 10 Mobile para implementar definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar as funcionalidades nos dispositivos Windows 10 e Windows 10 Mobile. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
@@ -332,6 +332,6 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -42,13 +42,13 @@ Ao anular a inscrição do dispositivo Android no Intune:
 
 Se o dispositivo está configurado apenas para receber os e-mails da empresa e anula o seu dispositivo, o dispositivo não será apresentado no Portal da Empresa. 
 
-Para obter instruções sobre como anular a inscrição, veja [Unenroll your device from Intune by using the Company Portal app (Anular a inscrição do dispositivo do Intune com a aplicação do Portal da Empresa)](unenroll-your-device-from-intune-android.md).
+Para instruções sobre como anular a inscrição, consulte [Anular a inscrição do seu dispositivo ao utilizar o Intune a partir da aplicação do Portal da Empresa](unenroll-your-device-from-intune-android.md).
 
-Se tiver dúvidas e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -28,7 +28,7 @@ ms.suite: ems
 
 # O seu computador já está inscrito
 
-Se obtiver um erro a indicar que o computador já está inscrito, significa que o seu computador já foi adicionado ao Portal da Empresa, mas ainda não está ligado à sua conta de utilizador. Siga este procedimento para ligar o seu computador à sua conta de utilizador e concluir o processo.
+Se obtiver um erro a indicar que o computador já está inscrito, significa que o seu computador já foi adicionado ao Portal da Empresa, mas ainda não está ligado à sua conta de utilizador. Siga este procedimento para ligar o seu computador à sua conta de utilizador e concluir o processo.  
 
 Para ligar o seu computador:
 
@@ -38,8 +38,10 @@ Para ligar o seu computador:
 
 3.  Siga os pedidos para ligar o computador à sua conta de utilizador.
 
-Se precisar de ajuda e não encontrar as informações de contacto do seu administrador de TI, veja se estão listadas no [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se preferir de anular a inscrição do dispositivo, utilize as instruções para o seu tipo de dispositivo: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
-<!--HONumber=Jun16_HO1-->
+Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

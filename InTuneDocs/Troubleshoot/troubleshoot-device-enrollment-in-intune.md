@@ -144,29 +144,6 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 **Resolução:** Os clientes do Microsoft Office 365 que utilizam o início de sessão único (SSO) através do AD FS 2.0 e têm vários domínios de nível superior para sufixos UPN dos utilizadores dentro da respetiva empresa (por exemplo, @contoso.com ou @fabrikam.com) têm de implementar uma instância separada do Serviço de Federação AD FS 2.0 para cada sufixo.  Agora, existe um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Consulte [este blogue](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
-### O computador já está inscrito - Erro hr 0x8007064c
-**Problema:** A inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
-  
-Isto pode acontecer porque o computador tinha sido inscrito anteriormente ou tem a imagem clonada de um computador que já tinha sido inscrito. O certificado de conta da conta anterior ainda está presente no computador.
-
-
-
-**Resolução:** 
-
-1. No menu **Iniciar**, **Executar** -> **MMC**. 
-1. **Ficheiro** -> **Adicionar/Remover snap-in**.
-1. Faça duplo clique em **Certificados**, escolha **Conta de computador**, **Seguinte**, selecione **Computador local**.
-1. Faça duplo clique em **Certificados (computador local)**, escolha **Certificados pessoais**. 
-1. Procure o certificado do Intune emitido por Sc_Online_Issuing e elimine-o se estiver presente
-1. Elimine esta chave de registo, se existir: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as sub-chaves.
-1. Tente efetuar novamente a inscrição. 
-1. Se o computador ainda não conseguir fazer a inscrição, procure e elimine esta chave, se existir: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Tente efetuar novamente a inscrição. 
-
-    > [!IMPORTANT]
-    > Esta secção, método ou tarefa contém passos que indicam como modificar o registo. No entanto, poderão ocorrer problemas graves se modificar o registo incorretamente. Por isso, certifique-se de que segue estes passos cuidadosamente. Para maior proteção, faça uma cópia de segurança do registo antes de o modificar. Em seguida, pode restaurar o registo se ocorrer um problema.
-    > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, leia o artigo [Como fazer cópias de segurança e restaurar o registo no Windows](https://support.microsoft.com/en-us/kb/322756)
-
 
 ## Problemas do Android
 ### Falha na instalação do perfil
@@ -249,6 +226,31 @@ Isto pode acontecer porque o computador tinha sido inscrito anteriormente ou tem
 ### Outros erros de inscrição do iOS
 É disponibilizada uma lista de outros erros de inscrição do iOS na documentação do utilizador do dispositivo, em [ou see errors while trying to enroll your device in Intune (Obtém erros quando tenta inscrever o dispositivo no Intune)](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
+## Problemas do PC
+
+### O computador já está inscrito - Erro hr 0x8007064c
+**Problema:** A inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
+  
+Isto pode acontecer porque o computador tinha sido inscrito anteriormente ou tem a imagem clonada de um computador que já tinha sido inscrito. O certificado de conta da conta anterior ainda está presente no computador.
+
+
+
+**Resolução:** 
+
+1. No menu **Iniciar**, **Executar** -> **MMC**. 
+1. **Ficheiro** -> **Adicionar/Remover snap-in**.
+1. Faça duplo clique em **Certificados**, escolha **Conta de computador**, **Seguinte**, selecione **Computador local**.
+1. Faça duplo clique em **Certificados (Computador local)**, escolha **Certificados pessoais**. 
+1. Procure o certificado do Intune emitido por Sc_Online_Issuing e elimine-o se estiver presente
+1. Elimine esta chave de registo, se existir: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as sub-chaves.
+1. Tente efetuar novamente a inscrição. 
+1. Se o computador ainda não conseguir fazer a inscrição, procure e elimine esta chave, se existir: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Tente efetuar novamente a inscrição. 
+
+    > [!IMPORTANT]
+    > Esta secção, método ou tarefa contém passos que indicam como modificar o registo. No entanto, poderão ocorrer problemas graves se modificar o registo incorretamente. Por isso, certifique-se de que segue estes passos cuidadosamente. Para maior proteção, faça uma cópia de segurança do registo antes de o modificar. Em seguida, pode restaurar o registo se ocorrer um problema.
+    > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, leia o artigo [Como fazer cópias de segurança e restaurar o registo no Windows](https://support.microsoft.com/en-us/kb/322756)
+
 ## Códigos de erros de inscrição gerais
 
 |Código de erro|Possível problema|Resolução sugerida|
@@ -268,14 +270,14 @@ Isto pode acontecer porque o computador tinha sido inscrito anteriormente ou tem
 |0x80043008, 0x80CF3008|Falha ao iniciar o serviço Microsoft Online Management Update.|Contacte o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).|
 |0x80043009, 0x80CF3009|O computador cliente já está inscrito no serviço.|Tem de extinguir o computador cliente para o poder inscrever novamente no serviço.|
 |0x8004300B, 0x80CF300B|Não é possível executar o pacote de instalação do software de cliente porque a versão do Windows que está a ser executada no cliente não é suportada.|O Intune não suporta a versão do Windows que está a ser executada no computador cliente.|
-|0xAB2|O Windows Installer não conseguiu aceder ao tempo de execução de VBScript de uma ação personalizada.|Este erro é causado por uma ação personalizada baseada em DLLs (Dynamic-Link Libraries). Ao resolver problemas com o DLL, pode ter de utilizar as ferramentas descritas no artigo [KB198038 do Suporte da Microsoft: Ferramentas Úteis para Problemas de Empacotamento e Implementação](https://support.microsoft.com/en-us/kb/198038).|
+|0xAB2|O Windows Installer não conseguiu aceder ao tempo de execução de VBScript de uma ação personalizada.|Este erro é causado por uma ação personalizada baseada em DLLs (Dynamic-Link Libraries). Ao resolver problemas com o DLL, pode ter de utilizar as ferramentas descritas em [KB198038 do Suporte da Microsoft: Ferramentas Úteis para Problemas de Empacotamento e Implementação](https://support.microsoft.com/en-us/kb/198038).|
 |0x80cf0440|A ligação ao ponto final do serviço foi terminada.|A conta de avaliação ou paga está suspensa. Crie uma nova conta de avaliação ou paga e volte a inscrever.|
 
 
 
 
 ### Passos seguintes
-Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
+Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 <!--HONumber=Jun16_HO2-->

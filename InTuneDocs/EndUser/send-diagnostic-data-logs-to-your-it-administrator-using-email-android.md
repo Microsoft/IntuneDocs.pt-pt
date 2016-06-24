@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Enviar registos de dados de diagnóstico ao administrador de TI por e-mail
 
-Se obtiver um erro no dispositivo Android enquanto está a trabalhar com as suas aplicações escolares ou empresariais ou enquanto está na aplicação Portal da Empresa, pode enviar registos de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos registos, os quais tornarão mais fácil para o administrador de TI descobrir o problema, ative o Registo Verboso.
+Se obtiver um erro no dispositivo Android enquanto está a trabalhar com as suas aplicações escolares ou empresariais ou enquanto está na aplicação Portal da Empresa, pode enviar registos de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos registos, os quais tornarão mais fácil para o administrador de TI descobrir o problema, ative o Registo Verboso. pode ler mais sobre classes base em [registo verboso](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Para ativar o registo verboso:
 
@@ -54,6 +54,6 @@ Para ativar o registo verboso:
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
