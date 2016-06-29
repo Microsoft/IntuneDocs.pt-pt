@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 1
 [ Handback Failed Files ](#handback-failed-list)| 106
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 409
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 408
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 224
+[ Ignored Files ](#ignored-list)| 225
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -774,7 +774,6 @@
  [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/398d93d4e2317d00a2f9d5f89966aaec3b942504/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) | OutofSyncHandedBackSuccess | [Details](#af4b87eb8082ee5ff11cd2d42b788ad17b334bcb243)
  [InTuneDocs\DeployUse\subscription-might-include-downloadable-software.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4b4371fd7c505db75e18505160de88456fceece2/InTuneDocs/DeployUse/subscription-might-include-downloadable-software.md) | OutofSyncHandedBackSuccess | [Details](#de8d822c9df7aa0235a998a64b412afd6fc48bd5244)
  [InTuneDocs\DeployUse\terms-and-condition-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/terms-and-condition-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#8079ca5abcedbe024fb6347e02c7cf61ae541a30245)
- [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3149e1f54398fee4dec6acb6d5de1a4eec8da59b/InTuneDocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#d981c3363d5ad6753ac7d8f0123838cf26e98c87246)
  [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md) | OutofSyncHandedBackSuccess | [Details](#b8af36cef1bcb9077d0ab611a14fb88c0f458ece247)
  [InTuneDocs\DeployUse\understand-your-devices-with-inventory-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/understand-your-devices-with-inventory-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#55b99e326e4f22aee62b207eb2e976a8d52e70c3248)
  [InTuneDocs\DeployUse\update-apps-using-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/0581d1476fba5bedcdd4446df20f8f92b151f41b/InTuneDocs/DeployUse/update-apps-using-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b249)
@@ -1110,6 +1109,7 @@
  [InTuneDocs\DeployUse\media\iOSWordSaveLocations.PNG](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/DeployUse/media/iOSWordSaveLocations.PNG) | Ignored | [Details](#dfd24f3ad411d512f06161aff0792d750bda3cb3179)
  [InTuneDocs\DeployUse\media\MAM_BYOD.png](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/DeployUse/media/MAM_BYOD.png) | Ignored | [Details](#f0195917d20400de735979f290d25100a9c9df63180)
  [InTuneDocs\DeployUse\media\MAM_ManagedDevices.png](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/DeployUse/media/MAM_ManagedDevices.png) | Ignored | [Details](#2a1888e9f2cd20e31af1e45b55468ce6b403af33182)
+ [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/DeployUse/TOC.md) | Ignored | [Details](#1902d73650f11197bb9b3bd205f5b61179b4cf5b246)
  [InTuneDocs\docfx.json](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/docfx.json) | Ignored | [Details](#d63c29bdb8273168c2d39e18394ef9086225d549273)
  [InTuneDocs\EndUser\docfx.json](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/EndUser/docfx.json) | Ignored | [Details](#2eaa788ad52501b4b5ead7f760204206e4c63f90287)
  [InTuneDocs\EndUser\md.style](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/EndUser/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda311)
@@ -4493,19 +4493,16 @@
 * Handback Datetime: 2016-06-01 01:32:08
 * [Back to Top](#report-top)
 
-##### <a name='d981c3363d5ad6753ac7d8f0123838cf26e98c87246'></a> Source: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3149e1f54398fee4dec6acb6d5de1a4eec8da59b/InTuneDocs/DeployUse/TOC.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='1902d73650f11197bb9b3bd205f5b61179b4cf5b246'></a> Source: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/50b7638c8eb893711cccfcd31f56fff8a5ad5e45/InTuneDocs/DeployUse/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/6527041760837ad29a763c68ba8fdb46453b0582/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.pt-pt.xlf)
-* Handoff Datetime: 2016-06-27 18:16:10
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\TOC.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/6aa2a14130034d2f642b6363160e6781e7710df2/InTuneDocs/DeployUse/TOC.md)
-* Current Handback File: [TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/45ff5cfc111462785cf24110d34c2d3b85b0701a/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.pt-pt.xlf)
-* Current Handback Datetime: 2016-06-17 21:46:07
 * [Back to Top](#report-top)
 
 ##### <a name='b8af36cef1bcb9077d0ab611a14fb88c0f458ece247'></a> Source: [InTuneDocs\DeployUse\understand-microsoft-intune-operations-by-using-reports.md](https://github.com/Microsoft/IntuneDocs-pr/blob/617f1cd42de49f0c8675bd450591a390af674e73/InTuneDocs/DeployUse/understand-microsoft-intune-operations-by-using-reports.md)
