@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/62beaec31a0cdc3c28fd3eed820a6771e42ef3e7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad15)
 
 ## Item Details
-##### <a name='f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad15'></a> Source: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/62beaec31a0cdc3c28fd3eed820a6771e42ef3e7/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/05a6b24d517f507e687c1554cf75f4b761ed3013/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf)
-* Handoff Datetime: 2016-06-29 00:14:43
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\android-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/430890d2e49252222661e1ecaac8b82b6f82b9a4/InTuneDocs/DeployUse/android-policy-settings-in-microsoft-intune.md)
-* Current Handback File: [android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/7c0b4b5ad2fc5278ed4094f7ef2720e15b312512/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/android-policy-settings-in-microsoft-intune.8f414b9a3fca5f90980cebf974537ff460a5b0f4.pt-pt.xlf)
-* Current Handback Datetime: 2016-06-22 18:17:05
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
