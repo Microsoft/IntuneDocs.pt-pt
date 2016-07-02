@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gerir aplicações iOS compradas através de um programa de compra em grandes volumes | Microsoft Intune
-description:
-keywords:
+title: "Gerir aplicações iOS compradas através de um programa de compra em grandes volumes | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Para recuperar uma licença, tem de alterar a ação de implementação para **D
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação VPP pela primeira vez, é-lhe pedido para se associar ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação.
 
-> [!TIP] Observe a coluna **Estados dos Termos VPP** para ver o estado de aceitação de cada utilizador no qual a aplicação foi implementada.
+> [!TIP]
+> Observe a coluna **Estados dos Termos VPP** para ver o estado de aceitação de cada utilizador no qual a aplicação foi implementada.
 
 Se não existirem licenças adicionais disponíveis, a implementação irá falhar.
 
 ## Para monitorizar as aplicações Apple VPP
 Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças são utilizadas a partir da área de trabalho **Aplicações**, no nó **Software Gerido** &gt; **Aplicações Compradas em Volume**.
 
-> [!TIP] Também pode utilizar a aplicação **Filtros** para examinar o estado de cada instalação da aplicação.
+> [!TIP]
+> Também pode utilizar a aplicação **Filtros** para examinar o estado de cada instalação da aplicação.
 
 ### Consulte também
 [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
