@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Preparar-se para inscrever dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
@@ -48,7 +42,8 @@ A autoridade de MDM define o serviço de gestão com permissão para gerir um co
 
 O Portal da Empresa do Intune é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.
 
-> [!TIP] Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao Web site do Portal da Empresa, como às aplicações do Portal da Empresa.
+> [!TIP]
+> Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa.
 
 Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, basta iniciar sessão na [consola de administrador do Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos ou de serviços, escolher **Administrador** &gt; **Portal da Empresa** e configurar as definições do Portal da Empresa.
 
@@ -113,6 +108,7 @@ Também pode:
  - [Especifique os dispositivos pertencentes à empresa utilizando números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) para ajudar a inscrever dispositivos e a política de destino
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

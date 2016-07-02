@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?) | Microsoft Intune
-description:
-keywords:
+title: "What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?) | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ Para informações adicionais sobre o que acontece, utilize a ligação, mostrad
 
 -   O software do Endpoint Protection do Intune é removido do computador. Se o seu computador tiver outro software de proteção contra vírus instalado e este estiver desativado, esse software poderá ser reativado após a remoção do Endpoint Protection do Intune. Deve analisar o seu computador depois de ser removido do Portal da Empresa.
 
-    > [!IMPORTANT] Se o outro software de proteção contra vírus não for reativado ou não estiver instalado outro software de proteção contra vírus, o seu computador pode estar vulnerável a vírus e software maligno.
+    > [!IMPORTANT]
+    > Se o outro software de proteção contra vírus não for novamente ativado ou não existir outro software de proteção contra vírus instalado, o seu computador pode estar vulnerável a vírus e software maligno.
 
 -   As definições que tenham sido eventualmente alteradas no seu dispositivo quando o adicionou, por exemplo, a desativação da câmara, deixam de ser aplicáveis.
 
@@ -97,6 +92,7 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

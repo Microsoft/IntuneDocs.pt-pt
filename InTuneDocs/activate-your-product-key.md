@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Ativar a sua Chave de Produto | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
+
 
 ---
 
@@ -35,7 +29,8 @@ Para resgatar a sua chave de produto, introduza o código de 25 carateres.
 
 -   Se está a ativar uma chave de produto do Enterprise Mobility Suite, aceda [aqui](http://www.microsoft.com/ems/open).
 
-> [!NOTE] Se perder a sua chave de produto, contacte o parceiro ou revendedor a partir do qual a comprou.
+> [!NOTE]
+> Se perder a sua chave de produto, contacte o parceiro ou revendedor a partir do qual a comprou.
 
 ## Transferir o seu software do System Center Configuration Manager
 Para transferir o software do System Center Configuration Manager, aceda ao [Centro de Serviços de Licenciamento em Volume](http://go.microsoft.com/fwlink/?LinkID=232300).
@@ -56,6 +51,7 @@ Para transferir o software do System Center Configuration Manager, aceda ao [Cen
 |**Lamentamos, mas não conseguimos processar a sua encomenda**.|O inquilino foi criado, mas as chaves de produto não foram resgatadas. Tente resgatar as suas chaves de produto novamente através da ligação fornecida acima. Se o problema persistir, contacte o [Suporte](http://go.microsoft.com/fwlink/?LinkID=394189).|
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

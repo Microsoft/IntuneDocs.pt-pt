@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Localizar um nome da família de pacotes (PFN) para VPN por aplicação | Microsoft Intune
-description:
-keywords:
+title: "Localizar um nome da família de pacotes (PFN) para VPN por aplicação | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
-manager: [ALIAS]
+manager:
+- ALIAS
 ms.date: 05/10/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+translationtype: Human Translation
+ms.sourcegitcommit: e32cbcd54220cf36d6770ee16897d27e1d2d71db
+ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: tycast
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
 # Localizar um nome da família de pacotes (PFN) para configuração de VPN por aplicação
 
-Existem duas formas de encontrar um PFN, para que possa configurar uma VPN por aplicação.
+Existem duas formas de localizar um PFN, de modo a que possa configurar uma VPN por aplicação.
 
 ## Localizar um PFN para uma aplicação que está instalada num computador Windows 10 
 
@@ -42,7 +35,7 @@ A sintaxe de Get-AppxPackage é:
 
 Por exemplo, para obter informações sobre todas as aplicações universais instaladas no computador, utilize `Get-AppxPackage`.
 
-Para obter informações sobre uma aplicação da qual sabe o nome, ou parte deste, utilize `Get-AppxPackage *<app_name>`. Tenha em atenção à utilização do caráter universal, particularmente útil se não tiver a certeza do nome completo da aplicação. Por exemplo, para obter as informações para o OneNote, utilize `Get-AppxPackage *OneNote`.
+Para obter informações sobre uma aplicação da qual sabe o nome, ou parte deste, utilize `Get-AppxPackage *<app_name>`. Tenha em atenção a utilização do caráter universal, particularmente útil se não tiver a certeza do nome completo da aplicação. Por exemplo, para obter as informações para o OneNote, utilize `Get-AppxPackage *OneNote`.
 
 
 Eis as informações obtidas para o OneNote:
@@ -91,6 +84,7 @@ No Edge, são apresentadas as informações que pretende; no Internet Explorer, 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

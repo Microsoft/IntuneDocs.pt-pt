@@ -1,36 +1,31 @@
 ---
-# required metadata
-
 title: Inscrever o dispositivo Mac OS X no Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
+
 
 ---
 
 
 # Inscrever o dispositivo Mac OS X no Intune
 
-Inscrever o seu dispositivo Mac OS X no Intune permite-lhe aceder à rede da empresa, ao e-mail e aos ficheiros profissionais e obter aplicações da empresa. Para obter mais informações sobre o que acontece quando inscreve o seu dispositivo, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação do Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Inscrever o seu dispositivo Mac OS X no Intune permite-lhe aceder à rede da empresa, ao e-mail e aos ficheiros profissionais e obter aplicações da empresa. Para mais informações sobre o que acontece quando inscreve o seu dispositivo, consulte [O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-Se estiver a tentar inscrever um dispositivo iOS, veja [Enroll your iOS device in Intune (Inscrever o seu dispositivo iOS no Intune)](enroll-your-device-in-intune-ios.md).
+Se estiver a tentar inscrever um dispositivo iOS, consulte [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md).
 
 
 Para inscrever o dispositivo Mac OS X:
@@ -58,6 +53,7 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 ### Consulte também
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
