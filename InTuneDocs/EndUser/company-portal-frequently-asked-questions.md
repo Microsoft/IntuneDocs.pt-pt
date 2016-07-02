@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Sobre o Portal da Empresa | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-
-# optional metadata
-
-#ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
+
 
 ---
 
@@ -33,7 +27,7 @@ O Portal da Empresa do Microsoft Intune dá-lhe acesso a dados e aplicações da
 - Ao instalar a aplicação do Portal da Empresa no dispositivo. Normalmente, obtém a aplicação do Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o administrador de TI também pode instalá-la por si mediante outros métodos.
 - Ao aceder ao [Web site do Portal da Empresa](http://portal.manage.microsoft.com) que o administrador de TI configurou. 
 
-Existem algumas pequenas diferenças entre a aplicação do Portal da Empresa e o Web site do Portal da Empresa, mas a maioria das tarefas que pode fazer num pode fazer no outro. Alguns exemplos são:
+Existem algumas pequenas diferenças entre a aplicação Portal da Empresa e o site do Portal da Empresa, mas pode efetuar a maior parte das mesmas tarefas nos dois. Alguns exemplos são:
 
 - Inscrever os dispositivos
 - Ver o estado dos dispositivos
@@ -80,7 +74,7 @@ Para saber mais sobre o que o administrador de TI pode e não pode ver no seu di
 ## Posso remover um computador ou dispositivo do Portal da Empresa?
 Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Empresa. Existe uma diferença entre **remover** e **repor**:
 
-Ao *Remover* um computador ou dispositivo, anula a inscrição do mesmo no Intune. Quando anula a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo e alguns dados da empresa poderão ser removidos do mesmo. Para saber como pode remover o dispositivo do Portal da Empresa, escolha uma das ligações seguintes:
+Ao *remover* um computador ou dispositivo, anula a inscrição de dispositivo do Intune. Quando anula a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo, e alguns dados da empresa poderão ser removidos do seu dispositivo. Para saber como pode remover o dispositivo do Portal da Empresa, escolha uma das ligações seguintes:
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
@@ -108,6 +102,7 @@ Se precisar de ajuda, contacte o administrador de TI. Para encontrar as informa�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

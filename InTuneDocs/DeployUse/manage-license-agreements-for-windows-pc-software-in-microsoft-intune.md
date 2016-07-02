@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gerir contratos de licença para software para PCs Windows | Microsoft Intune
-description:
-keywords:
+title: "Gerir contratos de licença para software para PCs Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ Na área de trabalho **Licenças** da consola de administração do Intune, pode
 
 Além disso, pode gerar relatórios que mostrem contagens de instalações e de licenças de títulos de software. Os relatórios de licenças podem ajudá-lo a avaliar a posição da licença completa para títulos de software da Microsoft ou de terceiros.
 
-> [!TIP] A área de trabalho **Licenças** não é apresentada na consola do administrador enquanto não gerir, pelo menos, um PC Windows com o cliente do PC Windows com Intune.
+> [!TIP]
+> A área de trabalho **Licenças** não é apresentada na consola do administrador enquanto não gerir, pelo menos, um PC Windows com o cliente do PC Windows com Intune.
 
 ## Adicionar contratos de Licenciamento em Volume da Microsoft
 Os contratos de Licenciamento em Volume do Intune apresentam informações de licença de software adquirido através de contratos de Licenciamento em Volume da Microsoft. Pode adicionar contratos de Licenciamento em Volume da Microsoft ao Intune ao fornecer pares correspondentes de números de contratos. Os números de contratos ou de autorização devem corresponder à licença ou aos números de inscrição corretos. Os pares de números de contrato são obtidos ao adquirir os contratos de licença a partir do [Centro de Serviço de Licenciamento em Volume (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
@@ -96,7 +91,8 @@ Os contratos de Licenciamento em Volume do Intune apresentam informações de li
 
         -   **Número Licença/Inscrição/Cliente** - Introduza o número de licença/inscrição/cliente do par de licenças.
 
-        > [!NOTE] Se adicionar vários pares de números de contratos, o Intune cria um contrato com o nome que especificar e todos os pares adicionados serão uma parte desse contrato.
+        > [!NOTE]
+        > Se adicionar vários pares de números de contratos, o Intune cria um contrato com o nome que especificar e todos os pares adicionados serão uma parte desse contrato.
 
     Pode clicar em **+** para adicionar outro par de números de contratos ou em **-** para remover um par de números de contratos que já tenha introduzido.
 
@@ -114,7 +110,8 @@ Os contratos de Licenciamento em Volume do Intune apresentam informações de li
 
 Para atualizar as informações da licença de volume após adicionar contratos de licença ao Intune, na página **Descrição Geral das Licenças**, clique em **Atualizar Agora**. Esta ação obtém as informações da licença atual a partir do [Centro de Serviços de Licenciamento em Volume da Microsoft (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
 
-> [!IMPORTANT] Enquanto não atualizar as informações da licença de volume, poderá ver informações diferentes na lista de contratos e nas informações sobre elegibilidade na página **Descrição Geral de Contratos**.
+> [!IMPORTANT]
+> Enquanto não atualizar as informações da licença de volume, poderá ver informações diferentes na lista de contratos e nas informações sobre elegibilidade na página **Descrição Geral de Contratos** .
 
 Depois de atualizar as informações da licença de volume, pode comparar as informações da licença com o seu software da Microsoft detetado na área de trabalho **Aplicações** . Também pode executar os seguintes relatórios de licença:
 
@@ -122,7 +119,8 @@ Depois de atualizar as informações da licença de volume, pode comparar as inf
 
 -   **Relatórios de Instalação de Licenças** - Ajuda a determinar se tem cobertura de contrato de licença suficiente.
 
-> [!NOTE] O **Título do Produto** apresentado em todos os contratos de Licenciamento em Volume da Microsoft **Não está disponível**.
+> [!NOTE]
+> O **Título do Produto** apresentado em todos os contratos de Licenciamento em Volume da Microsoft **Não está disponível**.
 
 ## Adicionar e editar contratos de licenciamento de software
 Também pode adicionar outros tipos de contratos de licença ao Intune, além dos contratos de Licenciamento em Volume da Microsoft. Estes contratos podem incluir software de terceiros ou software da Microsoft que foi adquirido através de um revendedor.
@@ -184,6 +182,7 @@ Os contratos de licenciamento de software podem ser adicionados a grupos de lice
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

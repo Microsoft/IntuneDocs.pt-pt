@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Descrição geral dos ciclos de vida de dispositivos e aplicações | Microsoft Intune
-description:
-keywords:
+title: "Descrição geral dos ciclos de vida de dispositivos e aplicações | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
+ms.openlocfilehash: d1912736361a9fa74a8827be367227336ee800eb
+
 
 ---
 
@@ -36,6 +30,7 @@ Para fins de gestão, todos os dispositivos têm um ciclo de vida, desde a inscr
 Do mesmo modo, as aplicações com que trabalha têm os seus próprios [ciclos de vida de aplicação](overview-of-app-lifecycle-in-microsoft-intune.md), que incluem passos que vão desde adicionar uma aplicação ao Intune até removê-la quando deixa de ser precisa.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

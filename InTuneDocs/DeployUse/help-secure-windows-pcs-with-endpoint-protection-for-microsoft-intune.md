@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Endpoint Protection para PCs Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Para mudar da sua aplicação de Endpoint Protection atual para o Endpoint Prote
 
     -   Remover a aplicação do Endpoint Protection de terceiros manualmente.
 
-> [!NOTE] O Intune não desinstalará automaticamente aplicações de Endpoint Protection de terceiros.
+> [!NOTE]
+> O Intune não desinstalará automaticamente aplicações de Endpoint Protection de terceiros.
 
 ## Como configurar o Endpoint Protection do Microsoft Intune
 Utilize os seguintes passos para o ajudar a configurar o Endpoint Protection do Microsoft Intune.
@@ -162,7 +157,8 @@ Pode monitorizar o estado de software maligno nos seus computadores ao utilizar 
   - **Ver Propriedades** - Abre uma página com mais informações sobre o software maligno selecionado.
   - **Saber Mais Sobre Este Software Maligno** - Abre um tópico do Centro Microsoft de Proteção Contra Software Maligno com mais informações sobre o software maligno.
 
-> [!IMPORTANT] A área de trabalho **Proteção** só é apresentada na consola do administrador quando tiver instalado o cliente e estiver a gerir, no mínimo, um cliente do computador.
+> [!IMPORTANT]
+> A área de trabalho **Proteção** só é apresentada na consola do administrador quando tiver instalado o cliente e estiver a gerir, no mínimo, um cliente do computador.
 
   ![Monitorizar o Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ O Intune pode executar uma análise de software maligno completa ou rápida, uti
 1. Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com/) aceda a **Grupos** > **Descrição Geral** > **Todos os Dispositivos** > **Todos os Computadores** e selecione o computador de destino.
 
 2. Clique na lista pendente **Tarefas Remotas** e, em seguida, selecione a tarefa. A tarefa a executar no computador remoto.
-![Executar a análise remota de software maligno](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Para mais ajuda e suporte, consulte [Resolução de Problemas do Endpoint Protec
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

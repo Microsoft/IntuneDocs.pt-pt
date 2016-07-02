@@ -6,6 +6,6 @@
 >A nova atribuição de grupos de dispositivos dinâmica pode ser definida no Azure Active Directory com base no nome do Perfil de Inscrição Empresarial. Este processo garante que os dispositivos previamente atribuídos a um grupo de dispositivos serão inscritos de forma automática no grupo com a política e as aplicações implementadas. Serão publicados mais detalhes em breve.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

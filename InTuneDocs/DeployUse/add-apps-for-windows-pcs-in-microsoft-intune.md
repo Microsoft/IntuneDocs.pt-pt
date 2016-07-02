@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Adicionar aplicações para PCs Windows | Microsoft Intune
-description:
-keywords:
+title: "Adicionar aplicações para PCs Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
 1.  Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o publicador de software Intune.
 
-    > [!TIP] Poderá ter de introduzir o seu nome de utilizador e a palavra-passe do Intune para que o publicador seja iniciado.
+    > [!TIP]
+    > Poderá ter de introduzir o seu nome de utilizador e palavra-passe do Intune para que o publicador seja iniciado.
 
 
 
@@ -94,6 +89,7 @@ A aplicação é apresentada no nó **Aplicações** da área de trabalho **Apli
 
 Depois de criar uma aplicação, o passo seguinte é implementá-la. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Ligações VPN | Microsoft Intune
-description:
-keywords:
+title: "Ligações VPN | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
+ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+
 
 ---
 
@@ -65,7 +59,7 @@ L2TP|Perfil Personalizado iOS|Não |Não |Não |Não|Sim (OMA-URI)|Sim|
 
 > [!IMPORTANT] Antes de poder utilizar os perfis da VPN implementados num dispositivo, tem de instalar a aplicação VPN aplicável para o perfil. Pode utilizar as informações no tópico [Implementar aplicações em dispositivos móveis no Microsoft Intune](deploy-apps-in-microsoft-intune.md), que o ajuda a implementar a aplicação aplicável com o Intune.  
 
- Saiba como criar perfis de VPN personalizados com definições de URI em [Custom configurations for VPN profiles (Configurações personalizadas para perfis de VPN)](custom-configurations-for-vpn-profiles.md).     
+ Saiba como criar perfis de VPN personalizados com definições URI em [Configurações personalizadas para perfis de VPN](custom-configurations-for-vpn-profiles.md).     
 
 ## Como os perfis da VPN são protegidos
 
@@ -77,7 +71,7 @@ Quando cria o perfil da VPN, pode escolher um perfil de certificado SCEP ou .PFX
 
 Este é conhecido como o certificado de identidade e é utilizado para autenticar um perfil de certificado fidedigno (ou um certificado de raiz) que criou para estabelecer que o dispositivo do utilizador tem permissões para se ligar. O certificado fidedigno é implementado no computador que irá autenticar a ligação VPN (normalmente, o servidor VPN).
 
-Para obter mais informações sobre como criar e utilizar perfis de certificado no Intune, veja [Secure resource access with certificate profiles (Proteger o acesso a recursos com perfis de certificado)](secure-resource-access-with-certificate-profiles.md).
+Para mais informações sobre como criar e utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
 ### Nome de utilizador e palavra-passe
 
@@ -135,7 +129,7 @@ Nome da definição  |Mais informações
 **Aplicações associadas**     | Pode fornecer uma lista de aplicações que irão utilizar automaticamente a ligação VPN. O tipo de aplicação irá determinar o identificador de aplicações. Para aplicações universais, indique o Nome da Família de Pacotes, e para aplicações de ambiente de trabalho, indique o caminho do ficheiro da aplicação.          
 
 
-> [!IMPORTANT] Recomendamos a proteção de todas as listas de aplicações que compilar para utilização na configuração da VPN por aplicação. Se um utilizador não autorizado modificar a sua lista e a importar para a lista de aplicações de VPN por aplicação, irá potencialmente autorizar o acesso da VPN a aplicações que não devem ter acesso. Uma forma de proteger as listas de aplicação é utilizar uma lista de controlo de acesso (ACL).
+> [!IMPORTANT] Recomendamos a proteção de todas as listas de aplicações que compilar para utilização na configuração da VPN por aplicação. Se um utilizador não autorizado modificar a sua lista e importá-la para a lista de aplicações VPN por aplicação, irá autorizar potencialmente o acesso VPN para aplicações que não devem ter acesso. Uma forma de proteger as listas de aplicação é utilizar uma lista de controlo de acesso (ACL).
 
 Apresentamos um exemplo de quando poderá utilizar definições de limites da empresa. Se pretender ativar a VPN apenas para ambiente de trabalho remoto, poderá criar uma regra de tráfego de rede que permita o tráfego para o número de protocolo 27 na porta externa 3996. Nenhum outro tráfego utilizará a VPN.
 
@@ -151,7 +145,7 @@ A nova política é apresentada no nó **Políticas de Configuração** da área
 
 2.  Na caixa de diálogo **Gerir a Implementação** , para:
 
-    -   **Para implementar a política** - selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
+    -   **Para implementar a política** - Selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
 
     -   **Para fechar a caixa de diálogo sem implementar a política** - escolha **Cancelar**.
 
@@ -162,9 +156,10 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 ### Consulte também
 [Configurações personalizadas para perfis de VPN](Custom-configurations-for-VPN-profiles.md)
-[VPN por aplicação com Pulse Secure para Android](per-app-vpn-for-android-pulse-secure.md)
+[VPN por aplicação para Pulse Secure do Android](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

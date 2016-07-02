@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Portal da Empresa do Microsoft Intune| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
+ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+
 
 ---
 
@@ -34,7 +28,7 @@ O Portal da Empresa do Intune é uma ferramenta que proporciona aos utilizadores
 -   **A aplicação Portal da Empresa**: uma aplicação disponível nos dispositivos que gere com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Saiba mais sobre as aplicações Portal da Empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **O Web site do Portal da Empresa**: um Web site que fornece acesso a partir de [um browser suportado](supported-web-browsers.md). O URL é [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Saiba mais sobre este Web site em [Using the Intune Company Portal website (Utilizar o Web site do Portal da Empresa do Intune)](/Intune/EndUser/using-the-intune-company-portal-website).
+- **O Web site do Portal da Empresa**: um Web site que fornece acesso a partir de [um browser suportado](supported-web-browsers.md). O URL é [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Saiba mais sobre este site em [Utilizar o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Algumas das tarefas que os utilizadores podem fazer no Portal da Empresa são:
 
@@ -58,6 +52,7 @@ Para que os utilizadores possam aceder ao Portal da Empresa, tem de ser dada uma
 [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

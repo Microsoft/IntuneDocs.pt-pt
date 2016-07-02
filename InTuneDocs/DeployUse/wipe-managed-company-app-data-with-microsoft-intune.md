@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Eliminar dados empresariais da aplicação gerida com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Eliminar dados empresariais da aplicação gerida com o Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: ebc83611679f5128df45e4ca6b2f3b745f47061d
+
 
 ---
 
@@ -66,6 +60,7 @@ O painel **Gestão de aplicações móveis do Intune** tem um relatório resumid
 [Utilizar o portal do Azure](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

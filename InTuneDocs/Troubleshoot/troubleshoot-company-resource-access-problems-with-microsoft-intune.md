@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Resolução de problemas de acesso aos recursos da empresa | Microsoft Intune
-description:
-keywords:
+title: "Resolução de problemas de acesso aos recursos da empresa | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: ed14e92d48a2604d16ceee8b844ae5cc0c45f051
+
 
 ---
 
@@ -377,6 +371,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

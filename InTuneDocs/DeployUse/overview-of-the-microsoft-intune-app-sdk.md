@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Descrição Geral do SDK da Aplicação Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Descrição Geral do SDK da Aplicação Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -53,7 +47,7 @@ Os administradores de TI podem impor a utilização de um browser gerido quando 
 Os administradores de TI podem impor uma política de PIN quando uma aplicação gerida pelo Intune é iniciada. Esta política ajuda a garantir que os utilizadores finais que inscreveram os dispositivos no Microsoft Intune são os mesmos utilizadores que estão a iniciar as aplicações. Quando os utilizadores finais configuram o PIN, o SDK da Aplicação Intune utiliza o Azure Active Directory para verificar as credenciais dos utilizadores finais em relação às credenciais de inscrição de dispositivos. 
 
 ## Exigir que os utilizadores introduzam credenciais antes de poderem iniciar a aplicações
-Os administradores de TI podem exigir que os utilizadores introduzam as credenciais antes dos utilizadores poderem iniciar uma aplicação gerida  O SDK da Aplicação Intune utiliza o Azure Active Directory para fornecer uma experiência de início de sessão único, em que as credenciais, uma vez introduzidas, são reutilizadas para inícios de sessão subsequentes. Também é suportada a autenticação de soluções de gestão de identidades [federadas com o Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx) 
+Os administradores de TI podem exigir que os utilizadores introduzam as credenciais antes dos utilizadores poderem iniciar uma aplicação gerida  O SDK da Aplicação Intune utiliza o Azure Active Directory para fornecer uma experiência de início de sessão único, em que as credenciais, uma vez introduzidas, são reutilizadas para inícios de sessão subsequentes. Também é suportada a autenticação de soluções de gestão de identidades [federadas com o Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
 
 ## Verificar o estado de funcionamento e a conformidade do dispositivo
 Os administradores de TI podem verificar o estado de funcionamento e a conformidade do dispositivo com políticas empresariais antes de os utilizadores finais acederem a aplicações geridas pelo Intune. Na plataforma iOS, esta política verifica se o dispositivo tem jailbreak. Na plataforma Android, esta política verifica se o dispositivo tem root.  
@@ -61,6 +55,7 @@ Os administradores de TI podem verificar o estado de funcionamento e a conformid
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

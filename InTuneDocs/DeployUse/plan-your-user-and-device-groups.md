@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Planear os grupos de utilizadores e de dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Reveja e, em seguida, escolha **Concluir** para concluir a criação do grupo.
 
 No nosso exemplo, também criámos um grupo Médio Oriente e Ásia, MEA.
 
-> [!NOTE] Se a associação ao grupo não for preenchida com base na associação ao grupo de segurança, verifique se atribuiu licenças do Intune a esses membros.
+> [!NOTE]
+> Se a associação ao grupo não for preenchida com base na associação de grupo de segurança, verifique se atribuiu licenças do Intune a esses membros.
 
 ### Grupos para hardware específico
 Se a sua organização precisar de políticas que se apliquem a tipos específicos de hardware, pode criar grupos com base neste requisito. Pode baseá-los em grupos específicos que já tenha criado no AD no local e sincronizá-los com o Azure AD. Também pode criá-los diretamente no Azure AD. Neste exemplo, utilizamos o **Grupo de Utilizadores dos EUA** como o principal do grupo **Utilizadores de portáteis**.
@@ -174,7 +169,8 @@ Se a sua organização precisar de políticas que se apliquem a sistemas operati
 
 Seguindo o mesmo método dos exemplos anteriores, podemos criar grupos com base em utilizadores <!--devices?--> que utilizem plataformas de SO específicas.
 
-> [!NOTE] Se tiver utilizadores que utilizem várias plataformas/sistemas operativos móveis e não dispuser de uma forma de categorizar automaticamente esses utilizadores como utilizadores de Android, iOS ou Windows, considere aplicar políticas ao nível do dispositivo, o que lhe garantirá mais flexibilidade na aplicação de políticas específicas de SO.
+> [!NOTE]
+> Se tiver utilizadores que utilizem várias plataformas / sistemas operativos móveis e não dispuser de uma forma de categorizar automaticamente esses utilizadores como utilizadores de Android, iOS ou Windows, considere aplicar políticas ao nível do dispositivo, o que lhe proporcionará mais flexibilidade na aplicação de políticas específicas de SO.
 >
 > Não pode aprovisionar grupos dinamicamente com base no SO do dispositivo. Para tal, utilize grupos de Segurança do AD ou do AAD.
 
@@ -218,6 +214,7 @@ Ao denominar as políticas desta forma, poderá identificar as políticas rapida
 [Criar grupos](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

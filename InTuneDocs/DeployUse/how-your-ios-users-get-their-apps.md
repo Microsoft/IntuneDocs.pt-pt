@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Como os utilizadores de dispositivos iOS obtêm as aplicações | Microsoft Intune
-description:
-keywords:
+title: "Como os utilizadores de dispositivos iOS obtêm as aplicações | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: f36bc73d3397fef5bebe6896d91bcffcd5507cfc
+
 
 ---
 
@@ -38,9 +32,11 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 **aplicações não geridas** - aplicações que podem ser geridas através de políticas e que não foram encapsuladas pelo Intune ou que não incorporam o SDK do Intune MAM. Não é possível aplicar políticas de aplicação a estas aplicações.
 
-###Consulte também</br>
-[Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-windows-users-get-their-apps.md)
+###Consulte também
+[Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-android-users-get-their-apps.md)</br>
+[Como os utilizadores de dispositivos Windows obtêm as aplicações](how-your-windows-users-get-their-apps.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
