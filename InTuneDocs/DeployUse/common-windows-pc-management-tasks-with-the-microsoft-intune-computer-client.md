@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Tarefas de gestão comuns do PC Windows | Microsoft Intune
-description:
-keywords:
+title: "Tarefas de gestão comuns do PC Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -31,7 +25,7 @@ Reveja as tarefas neste tópico para saber como gerir os computadores que execut
 
 ## Utilizar políticas para simplificar a gestão do PC
 ### Gerir a Firewall do Windows
-As políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos. Para obter detalhes, veja [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune (Ajudar a proteger PCs com o Windows com políticas de Firewall do Windows no Microsoft Intune)](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+As políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos. Para mais informações, consulte [Ajudar a proteger PCs Windows através de políticas de Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ### Gerir o Centro do Microsoft Intune
 O Centro do Microsoft Intune permite aos utilizadores:
@@ -56,10 +50,10 @@ O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode
 |**Notas**|Uma nota que é apresentada aos utilizadores.<br /><br />Comprimento máximo: 120 carateres|
 
 ### Gerir definições de atualizações de software
-Utilize as políticas para configurar as definições que os computadores geridos utilizam para procurar e transferir atualizações de software da Microsoft e de terceiros. Para obter mais informações, veja [Keep Windows PCs up to date with software updates in Microsoft Intune (Manter os computadores com Windows atualizados com atualizações de software no Microsoft Intune)](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Utilize as políticas para configurar as definições que os computadores geridos utilizam para procurar e transferir atualizações de software da Microsoft e de terceiros. Para mais informações, consulte [Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
 ### Gerir definições do Endpoint Protection
-Utilize políticas para configurar definições do Endpoint Protection que irá depois implementar nos computadores geridos. Isto inclui o agendamento de análises, ações a efetuar quando é detetado software maligno, entre outros. Para obter mais informações, veja [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ajudar a proteger PCs Windows com o Endpoint Protection para o Microsoft Intune)](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+Utilize políticas para configurar definições do Endpoint Protection que irá depois implementar nos computadores geridos. Isto inclui o agendamento de análises, ações a efetuar quando é detetado software maligno, entre outros. Para mais informações, consulte [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ## Ver o inventário de hardware e software
 O Intune recolhe informações detalhadas sobre o hardware e o software de computadores geridos. Utilize as informações nos seguintes procedimentos para saber como criar:
@@ -139,7 +133,8 @@ Quando extingue um computador:
 
 -   Dependendo de como estiverem configurados, os computadores extintos poderão continuar a receber atualizações ao utilizar os Windows Server Update Services, o Windows Update ou o Microsoft Update.
 
-    > [!IMPORTANT] Se o software de cliente tiver sido instalado com um Objeto de Política de Grupo (GPO), tem de remover o Objeto de Política de Grupo (GPO) antes de poder remover o software de cliente, para impedir que o software seja reinstalado.
+    > [!IMPORTANT]
+    > Se o software de cliente tiver sido instalado com um Objeto de Política de Grupo (GPO), tem de remover o Objeto de Política de Grupo (GPO) antes de poder remover o software de cliente, para impedir que o software seja reinstalado.
 
     Se o cliente não for desinstalado, leia [Resolução de problemas do Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) para obter mais ajuda.
 
@@ -162,7 +157,8 @@ Antes de poder implementar software para um utilizador, tem de associar o utiliz
 
     -   Para associar o computador a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores** . Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
 
-> [!TIP] Se quiser restringir a capacidade de os próprios utilizadores finais se ligarem a computadores, ative a opção **Restringir a capacidade de os próprios utilizadores se ligarem a computadores**, na política **Definições de Agente do Microsoft Intune**.
+> [!TIP]
+> Se pretender restringir a capacidade dos próprios utilizadores finais se ligarem a computadores, ative a opção **Restringir a capacidade dos próprios utilizadores se ligarem a computadores** na política **Definições de Agente do Microsoft Intune**.
 
 <!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
@@ -217,6 +213,7 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

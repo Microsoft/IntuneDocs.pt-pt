@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Instalar a aplicação do Portal da Empresa do Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Instalar a aplicação do Portal da Empresa do Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: dca5c066a11fb0363ea7b2e548cde2ec37b731e0
+
 
 ---
 
@@ -53,6 +47,7 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

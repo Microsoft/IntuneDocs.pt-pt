@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Compreender os seus dispositivos com o inventário | Microsoft Intune
-description:
-keywords:
+title: "Compreender os seus dispositivos com o inventário | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+
 
 ---
 
@@ -66,7 +60,8 @@ Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relató
 |**Encriptação Ativada**|Todos os dispositivos|
 
 ## O que é recolhido dos PCs Windows
-> [!IMPORTANT] Esta secção aplica-se apenas aos PCs Windows que executam o software de cliente de PC Windows do Intune.
+> [!IMPORTANT]
+> Esta secção aplica-se apenas aos PCs Windows que executam o software de cliente de PC Windows do Intune.
 
 Para ver o inventário recolhido pelos PCs Windows, execute os [Relatórios de Inventário de Computadores](understand-microsoft-intune-operations-by-using-reports.md). O Intune recolhe o seguinte inventário dos PCs Windows:
 
@@ -118,6 +113,7 @@ Para ver o inventário recolhido pelos PCs Windows, execute os [Relatórios de I
 -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

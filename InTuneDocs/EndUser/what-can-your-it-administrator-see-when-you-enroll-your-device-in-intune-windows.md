@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: O que pode o administrador de TI ver ao inscrever o dispositivo no Intune? | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 04131fc569c904cf948683089933c38786a9b847
+
 
 ---
 
@@ -68,6 +62,7 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 ### Consulte também
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

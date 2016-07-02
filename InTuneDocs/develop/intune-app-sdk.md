@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Benefícios do SDK da aplicação do Intune | Microsoft Intune
-description:
-keywords:
+title: "Benefícios do SDK da aplicação do Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Descrição Geral do SDK da Aplicação do Intune
-O SDK da Aplicação Intune está disponível para as plataformas iOS e Android e permite funcionalidades de gestão de aplicações móveis com o Microsoft Intune. Além disso, esforçamo-nos para reduzir a quantidade de alterações de código necessárias do programador. Vai descobrir que pode ativar maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma melhor experiência de utilizador final e administrador de TI, pode utilizar os APIs para personalizar o comportamento da aplicação para funcionalidades que requerem participação na aplicação. 
-Assim que tiver a aplicação ativada, os administradores de TI podem implementar políticas em aplicações geridas pelo Intune e tirar partido destas funcionalidades para proteger os dados empresariais.
+O SDK da Aplicação Intune está disponível para as plataformas iOS e Android e permite funcionalidades de gestão de aplicações móveis com o Microsoft Intune. Além disso, esforçamo-nos para reduzir a quantidade de alterações de código necessárias do programador. Vai descobrir que pode ativar maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma melhor experiência de utilizador final e administrador de TI, pode utilizar os APIs para personalizar o comportamento da aplicação para funcionalidades que requerem participação na aplicação. Assim que tiver a aplicação ativada, os administradores de TI podem implementar políticas em aplicações geridas pelo Intune e tirar partido destas funcionalidades para proteger os dados empresariais.
 
 ## Funcionalidades Normais
 
@@ -77,6 +70,7 @@ A gestão de aplicações sem inscrição de dispositivos permite ao serviço Mi
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -9,6 +9,6 @@
 # [Resolver Problemas](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

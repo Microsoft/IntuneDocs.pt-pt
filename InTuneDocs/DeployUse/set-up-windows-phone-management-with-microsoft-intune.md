@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar a gestão do Windows 10 Mobile e Windows Phone com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configurar a gestão do Windows 10 Mobile e Windows Phone com o Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
+ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+
 
 ---
 
@@ -61,6 +55,7 @@ Para a maioria dos cenários, os utilizadores podem instalar a aplicação Porta
 Não é necessário qualquer ação adicional, a não ser que pretenda implementar o Portal da Empresa nos dispositivos.  Os passos 2 e 3 na consola de administração podem ser ignorados em segurança.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

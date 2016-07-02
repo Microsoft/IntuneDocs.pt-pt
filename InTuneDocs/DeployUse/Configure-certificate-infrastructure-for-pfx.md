@@ -1,25 +1,21 @@
 ---
 title: Configurar a infraestrutura de certificados para PFX | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6edb37708d26033358af30c47e955b20caedb6fd
+ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
+
 
 
 ---
@@ -44,14 +40,14 @@ Para utilizar perfis de certificado .PFX, para além da Autoridade de Certifica�
 
  -  **Um computador que possa comunicar com a Autoridade de Certificação**. Em alternativa, utilize o próprio computador da Autoridade de Certificação.
 -  **Microsoft Intune Certificate Connector**: utilize a consola de administração do Intune para transferir o instalador do **Certificate Connector** (**ndesconnectorssetup.exe**). Em seguida, pode executar **ndesconnectorssetup.exe** no computador onde pretende instalar o Certificate Connector. Para perfis de certificado .PFX, instale o Certificate Connector no computador que comunica com a Autoridade de Certificação.
--  **Servidor Proxy de Aplicações Web** (opcional): pode utilizar um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
+-  **Servidor de Proxy de Aplicações Web** (opcional): pode utilizar um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
     -  Permite aos dispositivos receberem certificados através de uma ligação à Internet.
     -  É uma recomendação de segurança quando os dispositivos se ligam através da Internet para receber e renovar certificados.
 
  > [!NOTE]           
 > -    O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Além disso, o servidor que aloja o WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos, e tem de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
-Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### Certificados e Modelos
@@ -72,7 +68,7 @@ Nesta tarefa, vai publicar o modelo de certificado
 
 ##### Para configurar a autoridade de certificação
 
-1.  Na AC emissora, utilize o snap-in Modelos de Certificado para criar um novo modelo personalizado ou copie um modelo existente e, em seguida, edite um modelo existente (como o Modelo de Utilizador) para utilizar com o .pFX.
+1.  Na AC emissora, utilize o snap-in Modelos de Certificado para criar um novo modelo personalizado ou copie um modelo existente e, em seguida, edite um modelo existente (como o Modelo de Utilizador) para utilizar com o .PFX.
 
     O modelo tem de ter as seguintes configurações:
 
@@ -82,12 +78,14 @@ Nesta tarefa, vai publicar o modelo de certificado
 
     -   No separador **Extensões** certifique-se de que a **Descrição das Políticas de Aplicações** inclui a **Autenticação do Cliente**.
 
-        > [!IMPORTANT] Para os modelos de certificado iOS e Mac OS X, no separador **Extensões**, edite **Utilização de Chaves** e certifique-se de que a opção **A assinatura é uma prova de origem** não está selecionada.
+        > [!IMPORTANT]
+        > Para os modelos de certificado iOS e Mac OS X, no separador **Extensões**, edite **Utilização de Chaves** e certifique-se de que a opção **A assinatura é uma prova de origem** não está selecionada.
 
 
 3.  Reveja o separador **Período de validade** no separador **Geral** do modelo. Por predefinição, o Intune utiliza o valor configurado no modelo. Contudo, tem a opção de configurar a AC para permitir que o autor do pedido especifique um valor diferente que pode, posteriormente, configurar a partir da Consola de administração do Intune. Se pretender utilizar sempre o valor no modelo, ignore o resto deste passo.
 
-    > [!IMPORTANT] As plataformas iOS e Mac OS X utilizam sempre o conjunto de valores no modelo, independentemente de outras configurações que fizer.
+    > [!IMPORTANT]
+    > As plataformas iOS e Mac OS X utilizam sempre o conjunto de valores no modelo, independentemente de outras configurações que efetuar.
 
     Para configurar a AC de modo a que permita ao autor do pedido especificar o período de validade, execute os seguintes comandos na AC:
 
@@ -124,7 +122,7 @@ Transferir, instalar e configurar o Certificate Connector
 
 2.  Após a conclusão da transferência, execute o instalador transferido (**ndesconnectorssetup.exe**):
 
-  Execute o instalador no computador com capacidade para ligar à Autoridade de Certificação. Escolha a opção .PFX Distribution e clique em Instalar. Após a conclusão da instalação, continue ao criar um perfil de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](configure-intune-certificate-profiles.md).
+  Execute o instalador no computador com capacidade para ligar à Autoridade de Certificação. Escolha a opção .PFX Distribution e clique em Instalar. Após a conclusão da instalação, continue ao criar um perfil de certificado, conforme descrito em [Configurar perfis de certificado](configure-intune-certificate-profiles.md).
 
    <!-- Not sure about step 3 below -->
 
@@ -134,7 +132,8 @@ Transferir, instalar e configurar o Certificate Connector
 
 4.  Após o assistente ser concluído, mas antes de o fechar, clique em **Iniciar a IU do Certificate Connector**.
 
-    > [!TIP] Se fechar o assistente antes de iniciar a IU do Certificate Connector, pode abri-lo novamente ao executar o seguinte comando:
+    > [!TIP]
+    > Se fechar o assistente antes de iniciar a IU do Certificate Connector, pode abri-lo novamente ao executar o seguinte comando:
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -158,6 +157,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 Está agora pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](Configure-Intune-certificate-profiles.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

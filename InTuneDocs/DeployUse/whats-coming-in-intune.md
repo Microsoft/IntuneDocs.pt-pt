@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Novidades futuras | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 06/10/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
-
-# optional metadata
-
-ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b203f51171d38f2b0fc2b46e556679322701d29b
+ms.openlocfilehash: 77d2e74dcb032ff52808998c56de7d6b8847ebbe
+
 
 ---
 
@@ -97,6 +91,7 @@ Em vez de utilizar as aplicações do Visualizador do Intune, recomendamos que u
 
 ### Consulte também
 Consulte [Novidades do Microsoft Intune](whats-new-in-microsoft-intune.md) para obter detalhes sobre os desenvolvimentos recentes.
+
 
 
 <!--HONumber=Jun16_HO3-->

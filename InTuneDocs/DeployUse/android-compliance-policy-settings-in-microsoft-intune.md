@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Definições de política de conformidade para dispositivos Android | Microsoft Intune
-description:
-keywords:
+title: "Definições de política de conformidade para dispositivos Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+
 
 ---
 
@@ -73,6 +66,7 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 - **Versão do SO máxima permitida:** quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
