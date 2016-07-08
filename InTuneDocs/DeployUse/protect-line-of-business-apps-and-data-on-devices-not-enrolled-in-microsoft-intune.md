@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Proteger aplicações e dados de linha de negócio em dispositivos não inscritos | Microsoft Intune
-description:
-keywords:
+title: "Proteger aplicações e dados de linha de negócio em dispositivos não inscritos | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Depois de os metadados de aplicação serem carregados para o serviço, a aplica
 * Para dispositivos não geridos por qualquer solução de MDM, é necessário uma solução personalizada. Os utilizadores finais têm de transferir e instalar a aplicação nos respetivos dispositivos.
 
 ## Alterar os metadados
-Se precisar de alterar os detalhes da aplicação, como o nome da aplicação ou o Identificador do pacote, tem de [remover a aplicação](#remove-apps), e [adicioná-la](#add-the-app) aos novos metadados.
+Se precisar de alterar os detalhes da aplicação, como o nome da aplicação ou o identificador do pacote, tem de [remover a aplicação](#remove-apps) e [adicioná-la](#step-2-add-the-app) aos novos metadados.
 
 ##  Remover aplicações
 Pode remover uma aplicação de linha de negócio da lista de aplicações.  Isto irá remover a aplicação da lista e remover a associação às políticas de MAM, mas não irá remover ou desinstalar a aplicação do dispositivo do utilizador final.  
@@ -80,6 +73,7 @@ Pode remover uma aplicação de linha de negócio da lista de aplicações.  Ist
   Isto irá remover aplicações da lista de aplicações de linha de negócio e a Lista de aplicações direcionadas na política de MAM.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

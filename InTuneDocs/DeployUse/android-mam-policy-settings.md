@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Definições de políticas de MAM para Android | Microsoft Intune
-description:
-keywords:
+title: "Definições de políticas de MAM para Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 
     **Valor predefinido = Sim**
 - **Encriptar dados da aplicação:** escolha **Sim** para ativar a encriptação. Quando esta definição está ativada, para as aplicações que estão associadas a uma política de gestão de aplicações móveis, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros. O conteúdo no armazenamento do dispositivo é sempre encriptado.
-  >[!NOTE] O método de encriptação não tem certificação FIPS 140-2
+  >[!NOTE]
+  >O método de encriptação não tem certificação FIPS 140-2
 
   **Valor predefinido = Sim**
 
-- **ContactSyncDisabled:** escolha **Sim** para impedir que as informações de contacto sejam sincronizadas com a aplicação do livro de endereços nativo no dispositivo. Se escolher **Não**, a aplicação guardará as informações de contacto na aplicação do livro de endereços nativo no dispositivo.<br/>Quando efetuar uma eliminação seletiva para remover os dados da empresa, os contactos sincronizados diretamente a partir da aplicação com o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, apenas é aplicável à aplicação **Microsoft Outlook**.
+- **Desativar a sincronização de contactos:** selecione **Sim** para impedir que as informações de contacto sejam sincronizadas para a aplicação do livro de endereços nativos no dispositivo. Se escolher **Não**, a aplicação guardará as informações de contacto na aplicação do livro de endereços nativo no dispositivo.<br/>Quando efetuar uma eliminação seletiva para remover os dados da empresa, os contactos sincronizados diretamente a partir da aplicação com o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, apenas é aplicável à aplicação **Microsoft Outlook**.
 
   **Valor predefinido = Sim**
 
@@ -100,6 +95,7 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 - **Bloquear captura de ecrã e Assistente do Android (Android 6 Marshmallow ou posterior):** escolha **Sim** para bloquear as capacidades de captura de ecrã e de **Assistente do Android** do dispositivo quando utilizar esta aplicação.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Iniciar uma versão de avaliação do Microsoft Intune e implementar a política de PIN para iOS | Microsoft Intune
-description:
-keywords:
+title: "Iniciar uma versão de avaliação do Microsoft Intune e implementar a política de PIN para iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # Iniciar uma versão de avaliação do Microsoft Intune e implementar a política de PIN para iOS
-Estas instruções passo a passo ajudam-no a configurar uma avaliação experimental do Intune e uma política de PIN para dispositivos iOS. Para obter uma lista de outras tarefas de avaliação do Intune comuns que pode experimentar, consulte [Tarefas de avaliação comuns do Microsoft Intune](common-microsoft-intune-evaluation-tasks.md)
+Estas instruções passo a passo ajudam-no a configurar uma avaliação experimental do Intune e uma política de PIN para dispositivos iOS. Para obter uma lista de outras tarefas de avaliação do Intune comuns que pode experimentar, veja [Tarefas de avaliação comuns do Microsoft Intune](common-microsoft-intune-evaluation-tasks.md).
 
 
 
@@ -39,13 +33,14 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 -   Telefonar para se autenticar a si próprio durante a inscrição na avaliação gratuita
 
 ## Criar uma conta de avaliação gratuita do Intune
+> [!NOTE]
 > Se já tiver uma subscrição do Intune, ignore esta secção e avance para a seguinte.
 
-1.  Num PC Windows, clique com o botão direito do rato em **Internet Explorer** (IE) e selecione **Navegação InPrivate**
+1.  Num PC com Windows, clique com o botão direito do rato em **Internet Explorer** (IE) e selecione **Navegação InPrivate**.
 
     ![Iniciar navegação InPrivate](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
-2.  Aceda ao [portal de inscrição do Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), forneça as informações pedidas e clique em **Seguinte**
+2.  Aceda ao [portal de inscrição do Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), forneça as informações pedidas e clique em **Seguinte**.
 
     ![Registar-se numa conta](../media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
@@ -57,7 +52,7 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
     ![Validar os seus detalhes](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  Guarde as informações que aparecem no ecrã e clique em **Está pronto para começar…**
+5.  Guarde as informações que aparecem no ecrã e clique em **Está pronto para começar …**.
 
     ![Pronto para começar](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -79,11 +74,11 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
     3.  Limpe a caixa de verificação **Fazer com que esta pessoa altere a palavra-passe da próxima vez que iniciar sessão**.
 
-    4.  Clique em **Criar**
+    4.  Clique em **Criar**.
 
     ![Criar uma nova conta de utilizador](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
-4.  Na página de confirmação da criação do utilizador, clique em **Fechar**
+4.  Na página de confirmação da criação do utilizador, clique em **Fechar**.
 
     ![Página de confirmação da criação do utilizador](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
@@ -105,11 +100,11 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
 2.  Ativar os dispositivos iOS para inscrição. Este processo configura um certificado fidedigno entre o serviço Apple Push Notification (APNs) e a sua subscrição do Intune.
 
-    1.  Clique em **Ativar a plataforma iOS e Mac OS X**
+    1.  Clique em **Ativar a plataforma iOS e Mac OS X**.
 
         ![Ativar a inscrição de iOS e Mac OS X](../media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
-    2.  Clique em **Transferir o Pedido de Certificado do APNs**
+    2.  Clique em **Transferir o Pedido de Certificado de APNs**.
 
         ![Transferir o certificado do APNs](../media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
@@ -125,19 +120,19 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
         ![Inicie sessão no portal Apple Push Certificates](../media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
-    6.  Clique em **Criar Certificado**
+    6.  Clique em **Criar Certificado**.
 
         ![Certificado um certificado do APNs](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  Leia os Termos de Utilização da Apple, selecione a caixa de verificação e clique em **Aceitar**
+    7.  Leia os Termos de Utilização da Apple, selecione a caixa de verificação e clique em **Aceitar**.
 
         ![Aceitar os termos](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  Clique em **Procurar**
+    8.  Clique em **Procurar**.
 
         ![Navegar para onde guardou o certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
-    9. Selecione o ficheiro CSR que guardou anteriormente e clique em **Abrir**
+    9. Selecione o ficheiro CSR que guardou anteriormente e clique em **Abrir**.
 
         ![Abrir o certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
@@ -145,43 +140,43 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
         ![Carregar o certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
-    11. Quando lhe for pedido para transferir um ficheiro JSON, clique em **Guardar como**
+    11. Quando lhe for pedido para transferir um ficheiro JSON, clique em **Guardar como**.
 
         ![Guardar o ficheiro JSON](../media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
-    12. Especifique uma localização para o ficheiro JSON e clique em **Guardar**
+    12. Especifique uma localização para o ficheiro JSON e clique em **Guardar**.
 
         ![Especificar onde pretende guardar o ficheiro JSON](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        Se a página não redirecionar automaticamente após alguns segundos, clique em **Cancelar**
+        Se a página não redirecionar automaticamente após alguns segundos, clique em **Cancelar**.
 
         ![Cancelar se a página não redirecionar](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. Para obter o ficheiro de certificado criado recentemente, clique em **Transferir**
+    13. Para obter o ficheiro de certificado criado recentemente, clique em **Transferir**.
 
         ![Transferir o certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. Quando lhe for pedido para transferir um ficheiro PEM, clique em **Guardar como**
+    14. Quando lhe for pedido para transferir um ficheiro PEM, clique em **Guardar como**.
 
         ![Transferir o ficheiro PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
-    15. Especifique uma localização para o ficheiro PEM e clique em **Guardar**
+    15. Especifique uma localização para o ficheiro PEM e clique em **Guardar**.
 
         ![Guardar o ficheiro PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. Regresse ao separador Consola de Gestão do Intune e clique em **Carregar o Certificado do APNs**
+    16. Regresse ao separador Consola de Gestão do Intune e clique em **Carregar o Certificado do APNs**.
 
         ![Carregar o certificado do APNs](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
-    17. Introduza o seu ID Apple e clique em **Procurar**
+    17. Introduza o seu ID da Apple e clique em **Procurar**.
 
         ![Introduzir o ID Apple](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
-    18. Selecione o ficheiro PEM que acabou de guardar e clique em **Abrir**
+    18. Selecione o ficheiro PEM que acabou de guardar e clique em **Abrir**.
 
         ![Abrir o ficheiro PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
-    19. Clique em **Carregar**
+    19. Clique em **Carregar**.
 
         ![Carregar o ficheiro PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
@@ -191,37 +186,37 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
 3.  Criar um grupo de utilizadores de teste para a segmentação da política:
 
-    1.  No painel esquerdo, clique em **Grupos**
+    1.  No painel esquerdo, clique em **Grupos**.
 
         ![Abrir Grupos](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  Clique em **Criar Grupo**, na extremidade direita
+    2.  Clique em **Criar Grupo**, na extremidade direita.
 
         ![Criar um grupo](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
-    3.  Dê um nome ao grupo, selecione **Todos os Utilizadores** como o grupo principal e clique em **Seguinte**
+    3.  Dê um nome ao grupo, selecione **Todos os Utilizadores** como o grupo principal e clique em **Seguinte**.
 
         ![Selecionar Todos os Utilizadores no grupo principal](../media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
-    4.  No campo **Iniciar associação ao grupo com**, selecione **Todos os Utilizadores no Grupo Principal** e clique em **Concluir**
+    4.  No campo **Iniciar associação ao grupo com**, selecione **Todos os utilizadores no Grupo principal** e clique em **Concluir**.
 
         ![Iniciar associação ao grupo com o grupo principal](../media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
 
 4.  Criar uma política de PIN para iOS e segmentá-la para o grupo de utilizadores de teste:
 
-    1.  No painel esquerdo, clique em **Política**
+    1.  No painel esquerdo, clique **Política**.
 
         ![Área de trabalho Abrir política](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  Clique em **Adicionar Política**, na extremidade direita
+    2.  Clique em **Adicionar Política**, na extremidade direita.
 
         ![Adicionar uma política](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
-    3.  Expanda o nó iOS, selecione a linha **Configuração Geral** e clique em **Criar Política**
+    3.  Expanda o nó iOS, selecione a linha **Configuração Geral** e clique em **Criar Política**.
 
         ![Criar uma política de configuração geral para iOS](../media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
-    4.  Escreva um nome para a política, ative a opção **Pedir palavra-passe para desbloquear dispositivos móveis** e defina o **Comprimento mínimo da palavra-passe** como **4**
+    4.  Escreva um nome para a política, ative a opção **Pedir palavra-passe para desbloquear dispositivos móveis** e defina o **Comprimento mínimo da palavra-passe** como **4**.
 
         ![Configurar definições de palavra-passe](../media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
@@ -229,7 +224,7 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
         ![Implementar política](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Clique no grupo de utilizadores que criou anteriormente, clique em **Adicionar** e clique em **OK**
+    6.  Clique no grupo de utilizadores que criou anteriormente, clique em **Adicionar** e clique em **Ok**.
 
         ![Selecionar grupo para a política](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -241,9 +236,9 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
 1.  Num iPad, inicie a iOS App Store, instale a aplicação gratuita **Portal da Empresa do Microsoft Intune** e abra-a.
 
-    ![Instalar portal da empresa](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
+    ![Instalar o portal da empresa](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  Introduza o nome e a palavra-passe da conta de utilizador de teste e toque em **Iniciar sessão**
+2.  Introduza o nome e a palavra-passe da conta de utilizador de teste e toque em **Iniciar sessão**.
 
     ![Fornecer as suas credenciais](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -251,19 +246,19 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
     ![Iniciar inscrição](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  No ecrã **Instalar Perfil**, toque em **Instalar**
+4.  No ecrã **Instalar Perfil**, toque em **Instalar**.
 
     ![Instalar um perfil](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  Na caixa de diálogo **Instalar Perfil**, toque em **Instalar**
+5.  Na caixa de diálogo ecrã **Instalar Perfil**, toque em **Instalar**.
 
     ![Continuar a instalação do perfil](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  No ecrã **Aviso**, toque em **Instalar**
+6.  No ecrã **Aviso**, toque em **Instalar**.
 
     ![Aceitar a mensagem de aviso](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  Na caixa de diálogo **Gestão Remota**, toque em **Confiar**
+7.  Na caixa de diálogo **Gestão Remota**, toque em **Confiar**.
 
     ![Gestão remota de confiança](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -275,11 +270,11 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
     ![Toque em OK para fechar a aplicação Portal da Empresa](../media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png)
 
-10. Quando lhe for pedido para configurar um código de acesso, toque em **Continuar**
+10. Quando lhe for pedido para configurar um código de acesso, toque em **Continuar**.
 
     ![Aceitar o pedido para configurar o código de acesso](../media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png)
 
-11. Introduza o código de acesso, toque em **Continuar**, introduza novamente o código de acesso e toque em **Guardar**
+11. Introduza o código de acesso, toque em **Continuar**, introduza novamente o código de acesso e toque em **Guardar**.
 
     ![Fornecer um código de acesso](../media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
 
@@ -289,6 +284,7 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 [Guia de avaliação do Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Sincronizar o Active Directory e adicionar utilizadores ao Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 70a2d32de67f0a69bbc29ca68a1c831c9cf38796
+
 
 ---
 
@@ -35,24 +29,25 @@ Para tornar as coisas ainda mais fáceis, se utilizar vários serviços com o me
 A única ferramenta de que precisa para sincronizar as contas de utilizador com o Azure AD é o [Assistente do Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). O Assistente do Azure AD Connect proporciona uma experiência orientada e simplificada para ligar a sua infraestrutura de identidade no local à nuvem.  Escolha a sua topologia e as suas necessidades (um ou vários diretórios, sincronização de palavras-passe ou federação) e o assistente implementará e configurará todos os componentes necessários para ter a sua ligação pronta, incluindo serviços de sincronização, Serviços de Federação do Active Directory (AD FS) e o módulo Azure AD PowerShell.
 
 > [!TIP]
-> O Azure AD Connect engloba capacidades que foram anteriormente lançadas como Dirsync e Azure AD Sync. Saiba mais sobre a [integração de diretórios](http://technet.microsoft.com/library/jj573653.aspx). Para saber quais são as vantagens de sincronizar as contas de utilizador do diretório no local com o Azure AD, veja [Similarities between Active Directory and Azure AD (Semelhanças entre o Active Directory e o Azure AD)](http://technet.microsoft.com/library/dn518177.aspx)
+> O Azure AD Connect engloba capacidades que foram anteriormente lançadas como Dirsync e Azure AD Sync. Saiba mais sobre a [integração de diretórios](http://technet.microsoft.com/library/jj573653.aspx). Para saber quais são as vantagens de sincronizar as contas de utilizador do diretório no local com o Azure AD, veja [Semelhanças entre o Active Directory e o Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
 
 ## Conceder permissões de administrador
 Depois de acrescentar utilizadores à sua subscrição do Intune, recomendamos que conceda [credenciais administrativas](administrative-accounts-websites-perms.md) a algumas contas de utilizador. A consola utilizada para atribuir credenciais administrativas depende do tipo de administrador que pretende atribuir:
 
--   **Administrador de inquilino**: utilize o **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** para atribuir este tipo de administrador para gerir a sua subscrição, incluindo faturação, armazenamento na nuvem e gestão dos utilizadores que podem utilizar o Intune.
+-   **Administrador inquilino**: utilize o **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** para atribuir este tipo de administrador para gerir a sua subscrição, incluindo faturação, armazenamento na nuvem e gestão dos utilizadores que podem utilizar o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -   **Administrador do serviço**: utilize a **[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]** para atribuir este tipo de administrador a tarefas quotidianas, incluindo gestão de dispositivos móveis ou de computadores, implementação de políticas ou de software e execução de relatórios.
 
 
 ### Passos seguintes
-Parabéns! Acabou de concluir o passo 3 do *guia de introdução do Intune*
+Parabéns! Acabou de concluir o passo 3 do *Guia de introdução do Intune*.
 
 >[!div class="step-by-step"]
 
 >[&larr; **Definições de domínio**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gerir licenças do Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

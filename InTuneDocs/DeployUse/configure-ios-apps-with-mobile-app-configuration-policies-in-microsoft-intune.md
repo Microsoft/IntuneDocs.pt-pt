@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar aplicações iOS com políticas de configuração de aplicações móveis | Microsoft Intune
-description:
-keywords:
+title: "Configurar aplicações iOS com políticas de configuração de aplicações móveis | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ As políticas de configuração de aplicações móveis podem ajudar a eliminar 
 
 Não implemente estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe a política à aplicação e, em seguida, implemente-a. As definições de política serão utilizadas sempre que a aplicação as verificar (normalmente, a primeira vez for executada).
 
-> [!TIP] Este tipo de política está disponível atualmente apenas para dispositivos que estejam a executar o iOS 7.1 e versões posteriores, e suporta os tipos de instalação seguintes da aplicação:
+> [!TIP]
+> Este tipo de política está disponível atualmente apenas para dispositivos que estejam a executar o iOS 7.1 e versões posteriores e suporta os tipos de instalação seguintes da aplicação:
 > 
 > -   **Aplicação iOS gerida da loja de aplicações**
 > -   **Pacote de aplicações para iOS**
@@ -62,7 +57,8 @@ Não implemente estas políticas diretamente a utilizadores nem a dispositivos. 
 
 4.  Na secção da página **Política de Configuração de Aplicação Móvel** , introduza ou cole uma lista de propriedades XML que contenha as definições de configuração de aplicação que pretende na caixa.
 
-    > [!TIP]Para saber mais sobre listas de propriedades XML, consulte [Compreender Listas de Propriedades XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) na iOS Developer Library.
+    > [!TIP]
+    > Para saber mais sobre listas de propriedades XML, consulte [Compreender Listas de Propriedades XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) na iOS Developer Library.
     > 
     > O formato da lista de propriedades de XML irá variar em função da aplicação que está a configurar. Contacte o fornecedor da aplicação para obter detalhes sobre o formato exato a utilizar.
     > 
@@ -104,7 +100,8 @@ Em seguida, continue a implementar e a monitorizar a implementação da aplicaç
 
 Quando a aplicação implementada for executada num dispositivo, será executada com as definições que configurou na política de configuração de aplicação móvel.
 
-> [!TIP]Se uma ou mais políticas de configuração de aplicação móvel entrarem em conflito, nenhuma delas é imposta e o conflito será comunicado no **Dashboard** da consola de administração do Intune.
+> [!TIP]
+> Se uma ou mais políticas de configuração de aplicação móvel entrarem em conflito, nenhuma delas é imposta e o conflito será comunicado no **Dashboard** da consola de administração do Intune.
 
 ## Formato de exemplo para o ficheiro XML de configuração de aplicação móvel
 
@@ -139,6 +136,7 @@ Quando criar um ficheiro de configuração de aplicação móvel, pode especific
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

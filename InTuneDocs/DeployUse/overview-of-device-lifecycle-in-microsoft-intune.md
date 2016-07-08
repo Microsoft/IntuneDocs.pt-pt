@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Descrição geral do ciclo de vida dos dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Descrição geral do ciclo de vida da MDM | Microsoft Intune"
+description: "Saiba como o Intune ajuda a gerir dispositivos através do respetivo ciclo de vida de inscrição, através da configuração e eventual extinção."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Descrição geral do ciclo de vida da gestão de dispositivos móveis (MDM)
 
-O ciclo de vida de dispositivos do Intune começa com a inscrição inicial de um dispositivo e, em seguida, passa por vários passos e acaba quando o dispositivo já não é necessário.
+Todos os dispositivos que gere têm o que apelidamos de *ciclo de vida*. O Intune pode ajudá-lo a gerir este ciclo de vida desde a inscrição até à extinção do dispositivo quando já não for necessário:
 
 ![O ciclo de vida do dispositivo](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ No mundo de TI moderno, proteger os dispositivos contra acesso não autorizado �
 Quando um dispositivo é perdido ou roubado, quando tem de ser substituído ou quando os utilizadores passam a ter outro cargo, geralmente está na altura de [extinguir ou limpar](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) o dispositivo. Pode fazê-lo de várias formas, desde repor o dispositivo, removê-lo da gestão ou eliminar os dados empresariais contidos no mesmo.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

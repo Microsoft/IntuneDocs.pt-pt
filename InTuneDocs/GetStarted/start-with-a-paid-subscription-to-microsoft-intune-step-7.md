@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Personalizar o Portal da Empresa | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -29,9 +23,10 @@ ms.suite: ems
 # personalizar o Portal da Empresa
 O [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.
 
+> [!TIP]
 > Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa.
 
-Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, basta iniciar sessão na [consola de administrador do Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos ou de serviços, escolher **Admin** &gt; **Portal da Empresa** e configurar as definições do Portal da Empresa.
+Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, basta iniciar sessão na [consola de administrador do Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos ou de serviços, escolher **Administrador** &gt; **Portal da Empresa** e configurar as definições do Portal da Empresa.
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
@@ -43,7 +38,7 @@ O nome da empresa é apresentado como o título do Portal da Empresa. Os detalhe
     |Nome da empresa|40|Este nome é apresentado como o título do Portal da Empresa.|
     |Nome do contacto do departamento de TI|40|Este nome é apresentado na página **Contactar TI**.|
     |Número de telefone do departamento de TI|20|Este número de contacto é apresentado na página **Contactar TI**.|
-    |Endereço de e-mail do departamento de TI|40|Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato **alias@nomedodominio.com**|
+    |Endereço de e-mail do departamento de TI|40|Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato **alias@nomedodominio.com**.|
     |Informações adicionais|120|Apresentado na página **Contactar TI**.|
     |URL da declaração de privacidade da empresa|79|Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato https://www.contoso.com.|
 
@@ -68,12 +63,13 @@ Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor
 Depois de guardar as alterações, pode utilizar as ligações fornecidas na parte inferior da página **Portal da Empresa** da consola de administração para ver o site do Portal da Empresa. Estas ligações não podem ser alteradas. Quando um utilizador inicia sessão, estas ligações apresentam as suas subscrições no Portal da Empresa.
 
 ### Passos seguintes
-Parabéns! Acabou de concluir o passo 7 do *Guia de introdução do Intune*
+Parabéns! Acabou de concluir o passo 7 do *Guia de introdução do Intune*.
 >[!div class="step-by-step"]
 
 >[&larr; **Criar políticas e aplicações**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Inscrever dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

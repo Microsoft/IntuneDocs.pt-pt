@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Controlar as definições do Microsoft Passport em dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Controlar as definições do Microsoft Passport em dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ O Intune integra-se com o Passport for Work de duas formas:
     - **Permitido** - Os utilizadores podem utilizar o tipo de caráter no PIN, mas não é obrigatório.
     - **Necessário** - Os utilizadores têm de incluir, pelo menos, um dos tipos de caráter no PIN. Por exemplo, é prática comum exigir pelo menos um caráter maiúsculo e um caráter especial.
     - **Não permitido** (predefinição) - Os utilizadores não podem utilizar estes tipos de carateres no PIN (este é também o comportamento se a definição não estiver configurada).
-    > [!TIP] Os carateres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > Os carateres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Expiração do PIN (dias)** - É recomendável especificar um período de expiração para um PIN, após o qual os utilizadores finais têm de alterá-lo. A predefinição é de 41 dias. 
 - **Memorizar histórico de PINs** - Utilize esta definição para restringir a reutilização de PINs utilizados anteriormente. Por predefinição, os últimos 5 PINs utilizados não podem ser reutilizados.
 
@@ -79,6 +74,7 @@ Para obter mais informações sobre o Microsoft Passport, consulte [o guia](http
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

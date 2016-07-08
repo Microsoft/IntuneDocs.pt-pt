@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Renovar um certificado de assinatura de código empresarial da Symantec para utilizar com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Renovar um certificado de assinatura de código empresarial da Symantec para utilizar com o Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ O certificado da Symantec utilizado para gerir determinados dispositivos móveis
 
 ## Como instalar o certificado atualizado para Windows Phone 8.0
 
-1.  Transfira e assine o Portal da Empresa do Windows Phone mais recente, localizado em [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)
+1.  Transfira e assine o Portal da Empresa do Windows Phone mais recente, localizado em [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Abra a Consola de Administração do Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) e aceda a **Administração**, **Gestão de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar Aplicação Assinada**
+2.  Abra a Consola de Administração do Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) e aceda a **Admin**, **Gestão de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar Aplicação Assinada**.
 
 3.  Carregue o Portal da Empresa que acabou de assinar. Irá precisar do ficheiro SSP.xap recentemente assinado e do novo ficheiro .PFX que recebeu da Symantec ou do token de inscrição da aplicação que foi criado com este novo ficheiro .PFX.
 
@@ -55,9 +49,9 @@ Atualmente, fornecer um ficheiro SSP.xap assinado é a única forma de fornecer 
 
 ## Como instalar o certificado atualizado para Windows Phone 8.1 e dispositivos posteriores
 
-1.  Transfira e assine o Portal da Empresa do Windows Phone mais recente a partir do Centro de Transferências, localizado em [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)
+1.  Transfira e assine o Portal da Empresa do Windows Phone mais recente a partir do Centro de Transferências, localizado em [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Abra a [Consola de Administração do Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) e aceda a **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar Aplicação Assinada**
+2.  Abra a [Consola de Administração do Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) e aceda a **Admin** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar Aplicação Assinada**.
 
 3.  Carregue o Portal da Empresa que acabou de assinar. Irá precisar do ficheiro SSP.xap recentemente assinado e do novo ficheiro .PFX que recebeu da Symantec ou do token de inscrição da aplicação que foi criado com este novo ficheiro .PFX.
 
@@ -67,9 +61,11 @@ Atualmente, fornecer um ficheiro SSP.xap assinado é a única forma de fornecer 
 
 
 ### Consulte também
-Configurar a gestão do Windows Phone 8.0
+[Configurar a gestão do Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Configurar a gestão do Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

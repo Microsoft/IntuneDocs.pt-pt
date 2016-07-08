@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Experiência de utilizador final para aplicações com MAM ativada | Microsoft Intune
-description:
-keywords:
+title: "Experiência de utilizador final para aplicações com MAM ativada | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ As políticas de gestão de aplicações móveis (MAM) apenas se aplicam quando 
     ![Captura de ecrã da página de início de sessão do Office 365](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Depois de as suas credenciais serem autenticadas com êxito pelo Azure AD, as políticas MAM são aplicadas e ser-lhe-á pedido que reinicie a aplicação do **OneDrive** .
+  >[NOTA!] A caixa de diálogo necessária para reiniciar é apresentada apenas nos dispositivos que não estão inscritos no Intune.
 
     ![Captura de ecrã da caixa de diálogo Reinício necessário](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -79,7 +73,7 @@ As políticas de gestão de aplicações móveis (MAM) apenas se aplicam quando 
 
     ![Captura de ecrã da aplicação Portal da Empresa](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Depois de concluir a instalação, clique em **Aceitar** para aceitar os termos.
+5.  Depois de concluir a instalação, selecione **Aceitar** para aceitar os termos.
 
 6.  A aplicação do **OneDrive** é iniciada automaticamente.
 
@@ -136,7 +130,7 @@ Leia o cenário de exemplo abaixo para obter uma compreensão mais aprofundada d
 O utilizador A trabalha para duas empresas - a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de MAM. A **Empresa X** implementa políticas de MAM **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de MAM, mas a conta associada à Empresa Y não. Se pretender que a conta de utilizador associada à Empresa Y seja gerida pelas políticas de MAM, tem de remover a conta de utilizador associada à Empresa X.
 ### Adicionar uma segunda conta
 #### iOS
-Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional no mesmo dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida.  Também verá uma opção para remover a conta existente e adicionar uma nova. Se é o que pretende, clique em **Sim**.
+Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional no mesmo dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida.  Também verá uma opção para remover a conta existente e adicionar uma nova. Se é o que pretende, selecione **Sim**.
 
 ![Captura de ecrã da caixa de diálogo com a mensagem a informar que a ação não é permitida e com as opções Sim e Não](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +143,18 @@ Para ver ficheiros AV, PDF e de imagem da empresa em dispositivos Android, utili
 
 Transfira esta aplicação a partir da loja Google Play.  Quando a aplicação estiver instalada no seu dispositivo, inicie a aplicação e autentique-se com as credenciais da empresa. Agora, deverá conseguir ver os ficheiros protegidos e não protegidos de outras aplicações geridas por políticas.
 
+São suportados os seguintes tipos de ficheiro:
+
+* **Áudio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ melhorado), AAC ELD (AAC de atraso lento melhorado), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Imagem:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**pfile**|**texto**|
+|----|----|
+|Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças de RMS e pode ser utilizado para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Dispositivos Android que não estão inscritos no Intune**
 
 Antes de poder utilizar a aplicação de partilha RMS para ver os ficheiros de outras aplicações geridas pelo Intune, inicie a aplicação RMS e autentique-se com a sua conta profissional.  Quando iniciar sessão, verá a seguinte mensagem **apenas se não tiver uma licença RMS**:
@@ -162,6 +168,7 @@ Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheir
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

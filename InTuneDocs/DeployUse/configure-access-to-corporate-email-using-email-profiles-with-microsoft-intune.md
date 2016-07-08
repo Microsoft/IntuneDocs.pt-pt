@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar o acesso a e-mail empresarial através de perfis de e-mail | Microsoft Intune
-description:
-keywords:
+title: "Configurar o acesso a e-mail empresarial através de perfis de e-mail | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/05/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
+ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+
 
 ---
 
@@ -89,9 +83,10 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador ter
     |**Agenda de sincronização** (Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda pela qual os dispositivos irão sincronizar os dados do Exchange Server. Também pode selecionar **Quando chegarem mensagens**, que sincroniza os dados assim que chegam, ou **Manual**, em que o utilizador do dispositivo tem de iniciar a sincronização.|
     |**Utilizar SSL**|Utilize comunicação SSL (Secure Sockets Layer) ao enviar e-mails, ao receber e-mails e ao comunicar com o Exchange Server.<br /><br />Para dispositivos com o Samsung KNOX 4.0 ou posterior, tem de exportar o seu certificado SSL do Exchange Server e implementá-lo como um Perfil de Certificado Fidedigno do Android no Intune. O Intune não suporta o acesso a este certificado se for instalado no Exchange Server através de outros meios.|
     |**Tipo de conteúdo a sincronizar**|Selecione os tipos de conteúdo que pretende sincronizar com os dispositivos.| 
-    |**Permitir o envio de e-mail a partir de aplicações de terceiros** (apenas iOS)|Permitir que aplicações de terceiros abram o e-mail na aplicação de e-mail nativa, por exemplo, para anexar ficheiros a mensagens de e-mail.|
+    |**Permitir o envio de e-mail a partir de aplicações de terceiros** (apenas iOS)|Permitir que o utilizador selecione este perfil como conta predefinida para o envio de e-mail e permitir que as aplicações de terceiros abram o e-mail na aplicação de e-mail nativo, por exemplo, para anexar ficheiros ao e-mail.|
 
-    > [!IMPORTANT] Se tiver implementado um perfil de e-mail e, depois, quiser alterar os valores de **anfitrião** ou **Endereço de e-mail**, tem de eliminar o perfil de e-mail existente e criar um novo com os valores necessários.
+    > [!IMPORTANT]
+    > Se implementar um perfil de e-mail e, em seguida, pretender alterar os valores para **anfitrião** ou **Endereço de e-mail**, tem de eliminar o perfil de e-mail existente e criar um novo com os valores necessários.
 
 4.  Quando terminar, clique em **Guardar Política**.
 
@@ -109,11 +104,13 @@ A nova política é apresentada no nó **Políticas de Configuração** da área
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
 
-> [!NOTE] Se quiser remover um perfil de e-mail de um dispositivo, edite a implementação e remova todos os grupos dos quais o dispositivo é membro.
+> [!NOTE]
+> Se pretende remover um perfil de e-mail de um dispositivo, edite a implementação e remova todos os grupos dos quais o dispositivo é membro.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

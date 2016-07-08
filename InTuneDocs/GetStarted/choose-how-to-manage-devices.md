@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Escolher como gerir dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+
 
 ---
 
@@ -75,16 +69,17 @@ Considere utilizar o cliente do computador Intune quando pretender:
 ## Gestão do Exchange ActiveSync
 Também pode gerir dispositivos através do Exchange ActiveSync. Isto requer a instalação do Conector No Local ou a utilização do Conector de Serviços incorporado para ligar ao seu Exchange Server.
 
-Para saber mais sobre os requisitos de hardware e software para instalar o Conector No Local, consulte [Requisitos do Conector No Local](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
+Para saber mais sobre os requisitos de hardware e software para instalar o Conetor No Local, veja [Requisitos do Conector No Local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect).
 
-Para saber mais sobre como utilizar o Conector No Local ou o Conector de Serviços com o Exchange, consulte [Gestão de dispositivos móveis com o Exchange ActiveSync e o Microsoft Intune](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+Para saber mais sobre como utilizar o Conetor No Local ou o Conetor de Serviços com o Exchange, veja [Gestão de dispositivos móveis com o Exchange ActiveSync e o Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## Passos seguintes
-Agora já descobriu algumas das capacidades que pode utilizar quando inscrever os seus dispositivos com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Em seguida, terá de [Inscrever os dispositivos](../deploy-use/enroll-devices-in-microsoft-intune). Após ter inscrito os seus dispositivos, pode tirar partido de todas as capacidades que leu neste tópico. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Agora já descobriu algumas das capacidades que pode utilizar quando inscrever os seus dispositivos com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Em seguida, terá de [inscrever os dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune). Após ter inscrito os seus dispositivos, pode tirar partido de todas as capacidades que leu neste tópico. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
