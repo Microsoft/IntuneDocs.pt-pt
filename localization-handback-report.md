@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\set-up-android-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f1dc713099c982d6e32c87b814dd3f55b1656eda/InTuneDocs/DeployUse/set-up-android-management-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#5f65887345c1a650c6d80863e42f447035c789f7238)
 
 ## Item Details
-##### <a name='5f65887345c1a650c6d80863e42f447035c789f7238'></a> Source: [InTuneDocs\DeployUse\set-up-android-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f1dc713099c982d6e32c87b814dd3f55b1656eda/InTuneDocs/DeployUse/set-up-android-management-with-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\set-up-android-management-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/b4b6a9be1a8211108cf4a7e42d7893e08eaf1d7c/InTuneDocs/DeployUse/set-up-android-management-with-microsoft-intune.md)
-* Handoff File: [set-up-android-management-with-microsoft-intune.389dfafcff4096d604e50ef8e9ec934832616455.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/dbfe2eb35c3572a6b2cdbc18383a63c6a97534fc/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/set-up-android-management-with-microsoft-intune.389dfafcff4096d604e50ef8e9ec934832616455.pt-pt.xlf)
-* Handoff Datetime: 2016-06-30 22:27:51
-* Handoff Reason: Include
-* Archive File: [set-up-android-management-with-microsoft-intune.389dfafcff4096d604e50ef8e9ec934832616455.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/78757f2aae44696e92c09a99a285043e68179034/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/archive/set-up-android-management-with-microsoft-intune.389dfafcff4096d604e50ef8e9ec934832616455.pt-pt.xlf)
-* Archive Datetime: 2016-07-02 01:33:03
-* Handback File: [set-up-android-management-with-microsoft-intune.389dfafcff4096d604e50ef8e9ec934832616455.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/3124446e5a1fa05f94ff95ad60cfff9d191c8699/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/set-up-android-management-with-microsoft-intune.389dfafcff4096d604e50ef8e9ec934832616455.pt-pt.xlf)
-* Handback Datetime: 2016-07-11 23:07:23
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
