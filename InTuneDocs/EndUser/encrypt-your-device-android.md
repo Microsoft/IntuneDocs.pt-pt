@@ -34,7 +34,7 @@ Se alguma vez anular a inscrição do seu telemóvel, este permanecerá encripta
 3.  Siga as instruções no ecrã. Durante a encriptação, o seu dispositivo poderá reiniciar várias vezes.
 
 ### O que fazer se tiver problemas
-**Problema**: já encriptou o seu dispositivo e vê um dos seguintes : - o botão de encriptação está desativado.
+**Problema**: já encriptou o seu dispositivo e vê um dos seguintes : -  o botão de encriptação está desativado.
 - Vê uma mensagem a indicar que ainda tem de encriptar.
 -  Depara-se com erros quando tenta utilizar a aplicação do Portal da Empresa.
 
