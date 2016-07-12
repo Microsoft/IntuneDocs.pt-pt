@@ -10,8 +10,8 @@
 [ Archive Success Files ](#archive-success-list)| 6
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 190
-[ In Sync Handback Files ](#insync-handback-success-list)| 643
-[ Ignored Files ](#ignored-list)| 225
+[ In Sync Handback Files ](#insync-handback-success-list)| 642
+[ Ignored Files ](#ignored-list)| 226
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -448,7 +448,6 @@
  [InTuneDocs\DeployUse\exchange-activesync-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/42e21b802fb605c98f688485c3b77703b3950e94/InTuneDocs/DeployUse/exchange-activesync-policy-settings-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#7ab9c5f283f65c82e1713d29923fa16a6a54235241)
  [InTuneDocs\DeployUse\find-a-pfn-for-per-app-vpn.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e32cbcd54220cf36d6770ee16897d27e1d2d71db/InTuneDocs/DeployUse/find-a-pfn-for-per-app-vpn.md) | InSyncHandedBackSuccess | [Details](#21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae42)
  [InTuneDocs\DeployUse\get-notified-by-alerts.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e929a95d95b71e22d46e124f1a423af7046b0539/InTuneDocs/DeployUse/get-notified-by-alerts.md) | InSyncHandedBackSuccess | [Details](#f1dd166b7b1278003ac8785b8be07c29396dfe8c43)
- [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/496679a196dc3e84c6b16ad0d3b830c81f12631b/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#7bbd761b13f110297959a036ec15cafe1396377e46)
  [InTuneDocs\DeployUse\how-your-ios-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/how-your-ios-users-get-their-apps.md) | InSyncHandedBackSuccess | [Details](#f36bc73d3397fef5bebe6896d91bcffcd5507cfc50)
  [InTuneDocs\DeployUse\how-your-windows-users-get-their-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9d867202b8b3cc5e6ed77d97bcfddce2beabdd40/InTuneDocs/DeployUse/how-your-windows-users-get-their-apps.md) | InSyncHandedBackSuccess | [Details](#f226ea2a7be64ef759f61c61903bb0dc964c141051)
  [InTuneDocs\DeployUse\introduction-to-device-compliance-policies-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e9e069a2887b812b30c620634a8e0d093093b460/InTuneDocs/DeployUse/introduction-to-device-compliance-policies-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#c443bb51ba05161c5088475e528e6ada28c105a553)
@@ -1079,6 +1078,7 @@
  [.openpublishing.build.ps1](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b42)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/.openpublishing.publish.config.json) | Ignored | [Details](#bba4cd9d676b7b87efe2d380a9d3c36a746bafe93)
  [InTuneDocs\DeployUse\docfx.json](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/InTuneDocs/DeployUse/docfx.json) | Ignored | [Details](#e11845f22821d9eb1017e07be40d2470259e05bf33)
+ [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) | Ignored | [Details](#7c65a72b66077ecbe9d9a9cbfd8961df51a9415346)
  [InTuneDocs\DeployUse\md.style](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/InTuneDocs/DeployUse/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda74)
  [InTuneDocs\DeployUse\media\Andorid_OneDriveOneDriveSuccess.png](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/InTuneDocs/DeployUse/media/Andorid_OneDriveOneDriveSuccess.png) | Ignored | [Details](#2ead93b77428c154dcc20a15da196bc9a4f6476175)
  [InTuneDocs\DeployUse\media\Android_OneDriveSignIn.png](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/InTuneDocs/DeployUse/media/Android_OneDriveSignIn.png) | Ignored | [Details](#0463790ba618ddddd26d79e8c50c8e48b44436e082)
@@ -1895,16 +1895,16 @@
 * Current Handback Datetime: 2016-07-02 16:19:51
 * [Back to Top](#report-top)
 
-##### <a name='7bbd761b13f110297959a036ec15cafe1396377e46'></a> Source: [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/496679a196dc3e84c6b16ad0d3b830c81f12631b/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/4938924207d7269ea3e71d20d77fcfa7236605a4/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
-* Handoff File: [help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.a65db5945200c978be3c27de18426469b9a85e0f.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/87e25293ac48494f472178a485e15a71c94b48b2/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.a65db5945200c978be3c27de18426469b9a85e0f.pt-pt.xlf)
-* Handoff Datetime: 2016-06-27 11:42:24
-* Handoff Reason: Include
-* Archive File: [help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.a65db5945200c978be3c27de18426469b9a85e0f.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/78757f2aae44696e92c09a99a285043e68179034/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/archive/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.a65db5945200c978be3c27de18426469b9a85e0f.pt-pt.xlf)
-* Archive Datetime: 2016-07-02 01:33:03
-* Handback File: [help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.a65db5945200c978be3c27de18426469b9a85e0f.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/795bd9445a15e7722929c44286c9592e41127456/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.a65db5945200c978be3c27de18426469b9a85e0f.pt-pt.xlf)
-* Handback Datetime: 2016-07-02 15:42:58
+##### <a name='7c65a72b66077ecbe9d9a9cbfd8961df51a9415346'></a> Source: [InTuneDocs\DeployUse\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5e9ab7513ba44bf243167fe18dd23ab692a312a0/InTuneDocs/DeployUse/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
 ##### <a name='9f338efe3ef40da3db40c12d1a18c4122e65dc5d47'></a> Source: [InTuneDocs\DeployUse\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
@@ -5047,14 +5047,14 @@
 
 ##### <a name='22e9071171d2dc63562e94cabe2abdec3b2bd85e286'></a> Source: [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/39bcea03cad061e5b84e073cc5affcdd14fc6015/InTuneDocs/EndUser/encrypt-your-device-android.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/d0a477a9e701a8c8a97b100ef5e9c444aeae2f88/InTuneDocs/EndUser/encrypt-your-device-android.md)
+* Target File: [InTuneDocs\EndUser\encrypt-your-device-android.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/ceff5c1eaf40932e1ea86373b5dd8ab905937d64/InTuneDocs/EndUser/encrypt-your-device-android.md)
 * Handoff File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/87e25293ac48494f472178a485e15a71c94b48b2/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf)
 * Handoff Datetime: 2016-06-27 11:42:24
 * Handoff Reason: Include
 * Archive File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/78757f2aae44696e92c09a99a285043e68179034/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/archive/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf)
 * Archive Datetime: 2016-07-02 01:33:03
-* Handback File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/0e7a9d2af63bdd71b5a59607449e4f88385b1555/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf)
-* Handback Datetime: 2016-07-02 21:07:29
+* Handback File: [encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/27ab4b7bfcfb6f9eda73cd5fb29b62d2988c78b4/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/encrypt-your-device-android.d420ebcfddd36ee683f96baad70eddbd1d5b95b8.pt-pt.xlf)
+* Handback Datetime: 2016-07-12 22:47:05
 * [Back to Top](#report-top)
 
 ##### <a name='aeeb607e54a207792e1cc8c16ee2ecd25a553e34287'></a> Source: [InTuneDocs\EndUser\encrypt-your-device-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/encrypt-your-device-windows.md)
