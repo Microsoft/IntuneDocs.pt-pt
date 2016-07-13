@@ -34,6 +34,7 @@ Para obter ajuda autónoma com o Intune, consulte [Sugestões de resolução de 
 
     -   Para todos os outros problemas do Intune, selecione **Gestão de dispositivos móveis**. Esta opção também abrange o Office 365 MDM e o System Center Configuration Manager com o Intune.
 
+    > [!NOTE]
     > [!NOTE]Poderá ter de clicar em **mais** na parte inferior da lista para ver todas as categorias.
 
 3.  Na página **Identificar o problema**, selecione a **Funcionalidade** e o **Sintoma** para que precisa de ajuda. Será pedido para fornecer um **Resumo do problema** e **Detalhes do problema**.
@@ -51,7 +52,8 @@ Veja [Contact Assisted Phone Support for Microsoft Intune (Contactar o Suporte A
 Para monitorizar os seus pedidos, aceda ao [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx). Na parte inferior da lista **Criar um pedido de serviço**, clique em **Ver todos os pedidos de suporte**. Por predefinição, verá todos os seus pedidos de serviço que estão abertos. Para alterar os pedidos de serviço que vê, por exemplo, para ver os pedidos fechados, clique no ícone de filtro na parte superior da navegação e selecione a vista preferida.
 
 > [!NOTE]
-> **Caso utilize o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, contacte o seu parceiro ou visite o [Solution Center do Microsoft System Center Configuration Manager e o System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar material avançado de autoajuda, com a opção de abrir um pedido de suporte online ou por telefone.
+> [!NOTE]
+**Caso utilize o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, contacte o seu parceiro ou visite o [Solution Center do Microsoft System Center Configuration Manager e o System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar material avançado de autoajuda, com a opção de abrir um pedido de suporte online ou por telefone.
 >
 > O suporte técnico do System Center Configuration Manager ou do System Center Endpoint Protection requer pagamento ou este é debitado do seu licenciamento ou contratos de Suporte Premier existentes.
 
@@ -138,6 +140,6 @@ A nossa função é:
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
