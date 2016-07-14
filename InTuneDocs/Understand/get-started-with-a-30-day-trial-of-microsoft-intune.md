@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Guia de avaliação do Intune | Microsoft Intune
-description:
-keywords:
+title: "Guia de avaliação do Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 4af13629986e7cef814104f3d1f298eb2be240ac
+ms.openlocfilehash: 26ecc3dfe8816da9f30829901d929af53b1bedc0
+
 
 ---
 
@@ -30,16 +23,16 @@ Configurar uma avaliação gratuita de 30 dias do Intune para gerir os seus disp
 
 Neste tópico, irá aprender as noções básicas para ter acesso a uma avaliação do Intune operacional e obter uma descrição geral do serviço que lhe permitirá avaliar as funcionalidades e capacidades do Intune.
 
-Veja este vídeo de demonstração de cinco minutos para saber como é fácil dar os primeiros passos com uma avaliação gratuita do Microsoft Intune e como gerir os seus dispositivos:
+Veja o seguinte vídeo de demonstração de cinco minutos para saber como é fácil dar os primeiros passos com uma avaliação gratuita do Microsoft Intune e como gerir os seus dispositivos. A primeira parte do vídeo refere um portal que foi "extinto", pelo que, embora vá utilizar um portal diferente, os passos são essencialmente iguais. Pode ler mais sobre o portal [aqui](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365).
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## Antes de começar
 Antes de começar com o Intune, irá precisar do seguinte:
 
--   Um dispositivo com um browser com capacidade para Silverlight que possa ser utilizado para aceder aos sites nos quais irá criar contas de utilizador do Intune (o **centro de administração do Office 365**) e onde irá gerir dispositivos, grupos e políticas (a **consola de administração do Intune**).
+-   Um dispositivo com um Web browser com capacidade para Silverlight que possa ser utilizado para aceder aos sites nos quais irá criar contas de utilizador do Intune (o **centro de administração do Office 365**) e onde irá gerir dispositivos, grupos e políticas (a **consola de administração do Intune**).
 
--   Um segundo dispositivo com um browser que será utilizado para testar a forma como os utilizadores do Intune irão inscrever e gerir os respetivos dispositivos através do Portal da Empresa. Também irá testar a forma como os utilizadores localizam e instalam as aplicações, e pedem ajuda aos administradores. Se não tiver um segundo dispositivo, pode utilizar a definição "modo de privacidade" no mesmo browser que utiliza para fins de administração do Intune (por exemplo, no Internet Explorer, pode clicar em **Ferramentas** &gt; **Navegação InPrivate**
+-   Um segundo dispositivo com um browser que será utilizado para testar a forma como os utilizadores do Intune irão inscrever e gerir os respetivos dispositivos através do Portal da Empresa. Também irá testar a forma como os utilizadores localizam e instalam as aplicações, e pedem ajuda aos administradores. Se não tiver um segundo dispositivo, pode utilizar a definição "modo de privacidade" no mesmo browser que utiliza para fins de administração do Intune (por exemplo, no Internet Explorer, pode selecionar **Ferramentas** &gt; **Navegação InPrivate**).
 
 -   Se tiver uma conta existente do Microsoft Online Services, irá precisar das credenciais de administrador dessa conta. Se não tiver uma conta deste género ou se quiser utilizar este inquilino Intune para fins de avaliação apenas, não precisa destas credenciais de administrador.
 
@@ -47,9 +40,9 @@ Antes de começar com o Intune, irá precisar do seguinte:
 
     |Plataforma|Requisitos de Certificados|Mais informações|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 e Windows Phone 8 |Os utilizadores do Windows Phone 8.1 que instalem a aplicação Portal da Empresa a partir da Loja não precisam de certificados. É necessário um certificado da Symantec para Windows Phone 8.0 ou para utilizar o Intune para implementar a aplicação Portal da Empresa em dispositivos Windows Phone 8.1.|Este documento de orientação pressupõe que os utilizadores obtêm a aplicação Portal da Empresa a partir da Loja em dispositivos Windows Phone 8.1 ou posteriores. Para obter informações sobre o suporte do Windows Phone 8.0, consulte [Configurar a gestão do Windows Phone com o Microsoft Intune](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune)|
-    |Dispositivos Windows 10, Windows RT 8.1, Windows RT ou Windows 8.1|Não existem requisitos de certificados para inscrever dispositivos Windows RT e Windows.|Instalar o cliente do computador com Windows com o Microsoft Intune|
-    |iOS 7.1 ou posterior|Obtenha um certificado do serviço Apple Push Notification.|Peça um certificado de serviço Apple Push Notification da Apple, conforme descrito aqui: [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune)|
+    |Windows Phone 8.1 e Windows Phone 8 |Os utilizadores do Windows Phone 8.1 que instalem a aplicação Portal da Empresa a partir da Loja não precisam de certificados. É necessário um certificado da Symantec para Windows Phone 8.0 ou para utilizar o Intune para implementar a aplicação Portal da Empresa em dispositivos Windows Phone 8.1.|Este documento de orientação pressupõe que os utilizadores obtêm a aplicação Portal da Empresa a partir da Loja em dispositivos Windows Phone 8.1 ou posteriores. Para obter informações sobre o suporte do Windows Phone 8.0, veja [Configurar a gestão do Windows Phone com o Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
+    |Dispositivos Windows 10, Windows RT 8.1, Windows RT ou Windows 8.1|Não existem requisitos de certificados para inscrever dispositivos Windows RT e Windows.|[Instalar o cliente do PC Windows com o Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |iOS 7.1 ou posterior|Obtenha um certificado do serviço Apple Push Notification.|Peça um certificado de serviço Apple Push Notification da Apple, conforme descrito aqui: [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Passos para concluir uma avaliação de 30 dias do Intune
 - [Passo 1: Iniciar sessão ou inscrever-se numa avaliação de 30 dias](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md). Antes de se inscrever ou iniciar sessão no Intune, deve considerar se pretende iniciar sessão com uma conta existente ou criar uma conta temporária para ser utilizada apenas para a avaliação de 30 dias do Microsoft Intune.
@@ -65,11 +58,13 @@ Antes de começar com o Intune, irá precisar do seguinte:
 Está na altura de começar a utilizar a sua subscrição de avaliação de 30 dias!
 
 >[!div class="step-by-step"]
+[**Inscrever-se no Intune** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
-### Inscrever-se no Intune
-[Consulte também](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
+### Consulte também
+[Guia de introdução do Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
