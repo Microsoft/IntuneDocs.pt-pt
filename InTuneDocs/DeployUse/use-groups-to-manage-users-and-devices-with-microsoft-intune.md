@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Utilizar grupos para gerir utilizadores e dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
+ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+
 
 ---
 
@@ -43,16 +37,16 @@ Além disso, a hierarquia de grupo é apresentada com resumos de estado para aju
 >
 > Provavelmente, será útil criar uma política padrão que se aplique a todos os grupos e dispositivos, para estabelecer os requisitos de conformidade básicos da sua empresa. Depois, crie políticas mais específicas para as categorias mais amplas de utilizadores e dispositivos, como, por exemplo, políticas de e-mail para cada um dos sistemas operativos dos dispositivos.
 >
-> Seja cuidadoso ao atribuir os nomes às políticas, para que as possa identificar facilmente mais tarde. Por exemplo, um nome bom e descritivo para uma política é **Política de E-mail para WP para Toda a Empresa**
+> Seja cuidadoso ao atribuir os nomes às políticas, para que as possa identificar facilmente mais tarde. Por exemplo, um nome bom e descritivo para uma política é **Política de E-mail para WP para Toda a Empresa**.
 >
 > Sempre que criar uma política restritiva, deverá comunicá-la aos utilizadores, pelo que, depois de criar os grupos e as políticas mais gerais, tenha atenção a como criar grupos mais pequenos, para que possa reduzir a comunicação desnecessária.
 
 
 ## Criar um grupo de dispositivos
 
-1.  Na consola de administração do Intune, escolha **Grupos** &gt; **Descrição Geral** &gt; **Criar Grupo**
+1.  Na consola de administração do Intune, selecione **Grupos** &gt; **Descrição Geral** &gt; **Criar Grupo**.
 
-2.  Forneça um nome e uma descrição opcional para o grupo e selecione um grupo de dispositivos como o grupo principal. Escolha **Seguinte**
+2.  Forneça um nome e uma descrição opcional para o grupo e selecione um grupo de dispositivos como o grupo principal. Escolha **Seguinte**.
 
 3.  Na página **Definir Critérios de Associação** , selecione o tipo de dispositivos que o grupo irá incluir. Opções adicionais para configurar o grupo dependendo do tipo de dispositivos que selecionar:
 
@@ -65,15 +59,15 @@ Além disso, a hierarquia de grupo é apresentada com resumos de estado para aju
 4.  Na página **Definir Associação Direta** , inclua ou exclua os dispositivos individuais que especificar ao clicar em **Procurar**. Se utilizar a opção para selecionar dispositivos que não se encontram no grupo principal que especificou, esses dispositivos são adicionados automaticamente ao grupo principal.
 
 
-5.  Na página **Resumo**, reveja as ações que serão efetuadas. Escolha **Concluir**
+5.  Na página **Resumo**, reveja as ações que serão efetuadas. Escolha **Concluir**.
 
 Pode encontrar o grupo recém-criado na lista **Grupos**, na área de trabalho **Grupos**, no grupo principal. Aqui, também pode editar ou eliminar o grupo.
 
 ## Criar um grupo de utilizadores
 
-1.  Na consola de administração do Intune, escolha **Grupos** &gt; **Descrição Geral** &gt; **Criar Grupo**
+1.  Na consola de administração do Intune, selecione **Grupos** &gt; **Descrição Geral** &gt; **Criar Grupo**.
 
-2.  Forneça um nome e uma descrição opcional para o grupo e selecione um grupo de utilizadores como o grupo principal. Escolha **Seguinte**
+2.  Forneça um nome e uma descrição opcional para o grupo e selecione um grupo de utilizadores como o grupo principal. Escolha **Seguinte**.
 
 3.  Na página **Definir Critérios de Associação** , especifique se inclui todos os membros do grupo principal ou se começa com um grupo vazio.  Em seguida, pode incluir ou excluir membros com base nos **Grupos de segurança** dos utilizadores que configurar manualmente no [Centro de administração do Office 365](http://go.microsoft.com/fwlink/?LinkId=698854) ou que sincronizar a partir do seu Active Directory local. Se a associação de um grupo de segurança mudar, a associação dos grupos de utilizadores com base nesse grupo de segurança também podem mudar.
 
@@ -81,13 +75,13 @@ Pode encontrar o grupo recém-criado na lista **Grupos**, na área de trabalho *
     > Atualmente, se o grupo incluir os membros de grupos de segurança ou gestores específicos e também excluir membros de grupos específicos, os membros incluídos inicialmente serão removidos. Para criar um grupo que tenha membros incluídos e excluídos, recomendamos que crie primeiro um grupo principal com os membros incluídos e, em seguida, crie um subordinado a esse grupo no qual listará os membros excluídos. Em seguida, pode utilizar o grupo subordinado conforme adequado para as políticas, perfis e distribuição de aplicações do Intune.
 
     > [!NOTE]
-    > No Portal de Gestão do Azure, pode criar um grupo com base no gestor a quem os utilizadores reportam. O grupo será dinâmico, alterando os empregados à medida que são adicionados ou removidos da equipa desse gestor no Azure Active Directory. O procedimento para criar um grupo do Azure com base num gestor está descrito em [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) na secção denominada **Para configurar um grupo como um grupo "Gestor"**
+    > No Portal de Gestão do Azure, pode criar um grupo com base no gestor a quem os utilizadores reportam. O grupo será dinâmico, alterando os empregados à medida que são adicionados ou removidos da equipa desse gestor no Azure Active Directory. O procedimento para criar um grupo do Azure com base num gestor está descrito em [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) na secção denominada **Para configurar um grupo como um grupo "Gestor"**.
 
 
 4.  Na página **Definir Associação Direta** , inclua ou exclua utilizadores individuais que especificou ao clicar em **Procurar**. Se utilizar a opção para selecionar utilizadores que não se encontram no grupo principal que especificou, esses utilizadores são adicionados automaticamente ao grupo principal. Na parte inferior da caixa de diálogo **Selecionar Membros**, encontrará a opção para adicionar manualmente um utilizador. Esta ação é útil se pretender adicionar um utilizador que ainda não tem um dispositivo inscrito.
 
 
-5.  Na página **Resumo**, reveja as ações que serão efetuadas. Escolha **Concluir**
+5.  Na página **Resumo**, reveja as ações que serão efetuadas. Escolha **Concluir**.
 
 Pode encontrar o grupo recém-criado na lista **Grupos**, na área de trabalho **Grupos**, no grupo principal. Aqui, também pode editar ou eliminar o grupo.
 
@@ -101,7 +95,7 @@ As vistas de grupo filtradas permitem personalizar a vista que os administradore
 
 -   Pretende apresentar apenas grupos relevantes para cada administrador de TI.
 
-Pode configurar vistas de grupo filtradas para administradores de serviço na consola do administrador do Intune. Para mais detalhes, consulte [O que deve saber antes de iniciar o Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+Pode configurar vistas de grupo filtradas para administradores de serviço na consola do administrador do Intune. Para obter mais detalhes, veja [O que deve saber antes de iniciar o Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 Após configurar as vistas de grupo filtradas para um administrador de serviço, esse administrador:
 
@@ -123,11 +117,11 @@ Após configurar as vistas de grupo filtradas para um administrador de serviço,
 
 ### Configurar vistas de grupo filtradas
 
-1.  Na consola de administração do Intune, escolha **Admin** &gt; **Gestão de Administradores** &gt; **Administradores de Serviços**
+1.  Na consola de administração do Intune, escolha **Admin** &gt; **Gestão de Administradores** &gt; **Administradores de Serviço**.
 
-2.  Selecione o administrador de serviço para o qual pretende filtrar grupos e, em seguida, clique em **Gerir Grupos**
+2.  Selecione o administrador de serviço para o qual pretende filtrar grupos e, em seguida, clique em **Gerir Grupos**.
 
-3.  Na caixa de diálogo **Selecionar os grupos que estarão visíveis para este administrador de serviço**, adicione os grupos que o administrador de serviço selecionado poderá aceder e, em seguida, clique em **OK**
+3.  Na caixa de diálogo **Selecionar os grupos que estarão visíveis para este administrador de serviço** , adicione os grupos que o administrador de serviço selecionado poderá aceder e, em seguida, clique em **OK**.
 
 Após configurar as vistas de grupo filtradas, o administrador de TI poderá visualizar e selecionar apenas os grupos que o utilizador selecionou.
 
@@ -141,7 +135,7 @@ Pode eliminar um grupo que já não serve as necessidades da sua organização. 
 ## Passos seguintes
 
 ### Verificar a estrutura
-Depois de configurar os grupos e as políticas, verifique as implicações práticas da estrutura revendo o **Valor Pretendido** e o **Estado**
+Depois de configurar os grupos e as políticas, verifique as implicações práticas da estrutura em **Valor Pretendido** e **Estado**.
 
 1. Selecione qualquer dispositivo de um grupo de dispositivos e procure as categorias de informações na parte superior do ecrã.
 2. Selecione **Política** . Verá algo semelhante a esta captura de ecrã das definições de política de um dispositivo Android.
@@ -154,9 +148,11 @@ Cada política tem um **Valor Pretendido** e um **Estado**. O valor pretendido �
 
 -   Da mesma forma, o item de política expandida, **Definições de e-mail para dispositivos iOS**, não se aplica a este dispositivo, uma vez que é um dispositivo Android.
 
+> [!NOTE]
 > Lembre-se de que quando duas políticas com diferentes níveis de restrição se aplicam ao mesmo dispositivo ou utilizador, na prática, é aplicada a política mais restrita.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

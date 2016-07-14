@@ -54,16 +54,16 @@ Ao contrário de outras políticas do Intune, não implementa políticas de aces
 
 2.  Crie uma política de acesso condicional para um dos seguintes:
 > [!div class="op_single_selector"]
-  - [Criar uma política de acesso condicional para o Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange No Local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange Online Dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange Online Dedicado legado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+  - [[!div class="op_single_selector"]](restrict-access-to-exchange-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange Online](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange No Local](restrict-access-to-exchange-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange Online Dedicado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange Online Dedicado legado](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o SharePoint Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

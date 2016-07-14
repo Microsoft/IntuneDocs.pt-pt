@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Restringir o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -75,7 +69,8 @@ O diagrama seguinte ilustra o fluxo utilizado pelas políticas de acesso condici
 -   Aplicação de e-mail nativa no iOS.
 
 -   Aplicação de e-mail nativa no Android 4 ou posterior
-> [!NOTE] A aplicação Microsoft Outlook não é suportada no Android e iOS.
+> [!NOTE]
+> A aplicação Microsoft Outlook não é suportada no Android e iOS.
 
 ## Suporte de PCs
 
@@ -104,7 +99,8 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
 >Se a sua intenção for bloquear primeiro todos os dispositivos antes de conceder acesso ao e-mail, escolha a regra Bloquear acesso ou Quarentena. A regra predefinida será aplicada a todos os tipos de dispositivos, pelo que os tipos de dispositivos que forem configurados como exceções de plataforma e não forem suportados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] também são afetados.
 
   - **Notificação do Utilizador:** para além do e-mail de notificação enviado a partir do Exchange, o Intune envia um e-mail que contém passos para desbloquear o dispositivo. Pode editar a mensagem predefinida para personalizá-la de acordo com as suas necessidades. Como o e-mail de notificação do Intune com as instruções de correção é enviado para a caixa de correio do Exchange do utilizador, no caso de o dispositivo do utilizador ser bloqueado antes de receber a mensagem de e-mail, este pode utilizar um dispositivo desbloqueado ou outro método para aceder ao Exchange e ver a mensagem. Isto é particularmente verdadeiro quando a **Regra Predefinida** estiver definida como bloqueio ou quarentena.  Neste caso, o utilizador final terá de aceder à respetiva loja de aplicações, transferir a aplicação Portal da Empresa da Microsoft e inscrever o seu dispositivo. Isto é aplicável a dispositivos iOS, Windows e Samsung KNOX.  Para dispositivos sem o Samsung KNOX, terá de enviar o e-mail de quarentena para uma conta de e-mail alternativa, o qual o utilizador final tem de copiar em seguida para o respetivo dispositivo bloqueado para concluir o processo de inscrição e conformidade.
-  > [!NOTE] Para o Exchange poder enviar o e-mail de notificação, tem de especificar a conta que deve ser utilizada para enviá-lo.
+  > [!NOTE]
+  > Para o Exchange poder enviar o e-mail de notificação, tem de especificar a conta que deve ser utilizada para enviá-lo.
   >
   > Para obter detalhes, consulte [Configurar o conetor do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
 
@@ -126,6 +122,7 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
 [Restringir o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

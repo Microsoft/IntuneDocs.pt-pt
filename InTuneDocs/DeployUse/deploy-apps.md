@@ -28,6 +28,7 @@ Ao implementar aplicações, pode escolher uma das seguintes ações de implemen
 
 -   **Instalação necessária** – A aplicação é instalada no dispositivo, sem ser necessária intervenção do utilizador final.
 
+    > [!TIP]
     > [!TIP] Para os dispositivos iOS que não estejam no modo supervisionado e para todos os dispositivos Android, o utilizador tem de aceitar a oferta da aplicação antes da instalação da mesma.
     > 
     >  Se um utilizador final desinstalar uma aplicação que implementou como uma instalação necessária, o Intune reinstala automaticamente a aplicação após o próximo ciclo de inventário, que normalmente ocorre a cada 7 dias.
@@ -52,6 +53,7 @@ Ao implementar aplicações, pode escolher uma das seguintes ações de implemen
 |Ligação externa (implementada num grupo de dispositivos)|Não|Não|Não|Não|
 |Aplicação iOS gerida da loja de aplicações (implementada num grupo de utilizadores)|Sim|Sim|Sim|Sim|
 |Aplicação iOS gerida da loja de aplicações (implementada num grupo de dispositivos)|Sim|Não|Sim|Sim|
+> [!TIP]
 > [!TIP] Quando implementa aplicações, se selecionar grupos de utilizadores e de dispositivos, só pode implementar a aplicação como uma **Instalação disponível**.
 
 ## Conflitos de implementação
@@ -70,6 +72,6 @@ Saiba como [implementar aplicações no Microsoft Intune](deploy-apps-in-microso
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -1,34 +1,30 @@
 ---
-# required metadata
-
-title: Resolver problemas de atualizações de software | Microsoft Intune
-description:
-keywords:
+title: "Resolver problemas de atualizações de software | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ca4d4197ac1ece3e9abf44ad462d8ec7a807b4b2
+ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
+
 
 ---
 
 # Resolver problemas de atualizações de software no Microsoft Intune
 Utilize as informações nesta secção para obter ajuda para resolver problemas de atualizações de software no Microsoft Intune.
 
-Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
+Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
+
+## Códigos de erro do agente de atualização
 
 A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se não conseguir localizar um código de erro específico nesta tabela, consulte o artigo [Códigos de Resultados do Windows Update Agent](http://go.microsoft.com/fwlink/?LinkID=221542).
 
@@ -268,6 +264,7 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

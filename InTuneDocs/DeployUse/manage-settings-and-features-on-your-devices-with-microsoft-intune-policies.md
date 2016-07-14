@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gerir definições e funcionalidades nos seus dispositivos com políticas | Microsoft Intune
-description:
-keywords:
+title: "Gerir definições e funcionalidades nos seus dispositivos com políticas | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Para obter uma lista completa das políticas do Intune, consulte [Referência de
 
 2.  Selecione a política que pretende, escolha entre utilizar as definições recomendadas para a política (quando disponível; pode alterar estas definições mais tarde) ou criar uma política personalizada com as suas próprias definições.
 
-    > [!TIP] Para o ajudar a escolher a política certa, consulte [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
+    > [!TIP]
+    > Para o ajudar a escolher a política correta, veja [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando estiver pronto, selecione **Criar Política**.
 
@@ -119,7 +114,7 @@ Se um dispositivo não der entrada para obter uma política após o envio da pri
 
 Neste caso, o dispositivo irá obter uma política na entrada seguinte agendada com o serviço Intune, da seguinte forma:
 
-- iOS - a cada 6 horas
+- iOS e Mac OS X - A cada 6 horas
 - Android - a cada 8 horas
 - Windows Phone - a cada 8 horas
 - Dispositivos Windows RT inscritos - a cada 24 horas
@@ -127,10 +122,10 @@ Neste caso, o dispositivo irá obter uma política na entrada seguinte agendada 
 
 Se o dispositivo tiver acabado de se inscrever, a frequência de entrada será maior, conforme se segue:
 
-- iOS - a cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas
+- iOS e Mac OS X - A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas
 - Android - a cada 3 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas
 - Windows Phone - a cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas
-- PCs Windows inscritos como dispositivos - a cada 3 minutos durante 30 minutos e, em seguida, a cada 24 horas
+- PC Windows inscritos como dispositivos - A cada 3 minutos durante 30 minutos e, em seguida, a cada 8 horas
 
 Os utilizadores também podem iniciar a aplicação do Portal da Empresa e sincronizar o dispositivo para verificar imediatamente uma política a qualquer altura.
 
@@ -149,7 +144,7 @@ Outras alterações como a revisão das informações de contacto no portal da e
 
 -   A definição de políticas de conformidade mais restritivas é aplicada se for avaliada em comparação com a mesma definição numa política de conformidade diferente
 
--   A definição de políticas de configuração mais restritivas é aplicada se avaliada em comparação com a mesma definição numa política de configuração diferente
+-   Se uma definição de política de configuração entrar em conflito com uma definição de uma política de configuração diferente, este conflito será apresentado na consola do Intune. Tem de resolver manualmente esses conflitos.
 
 ### O que acontece quando as políticas de gestão de aplicações móveis (MAM) entram em conflito entre si? Qual delas é aplicada à aplicação?
 Os valores em conflito são as definições mais restritivas disponíveis numa política de gestão de aplicações móveis, exceto no que respeita aos campos de entrada de números (como tentativas de PIN antes da reposição).  Os campos de intrada de números serão definidos para os valores que teria uma política MAM que criasse na consola através da opção de definições recomendadas.
@@ -178,7 +173,25 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
         - Tipo obrigatório de palavra-passe
         - Expiração da Palavra-passe (dias)
         - Memorizar histórico de palavras-passe
-        - Número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado - Minutos de inatividade antes de a palavra-passe ser exigida - Tipo obrigatório de palavra-passe – Número mínimo de conjuntos de carateres - Permitir câmara - Encriptação obrigatória no dispositivo móvel - Permitir armazenamento amovível - Permitir browser - Permitir loja de aplicações - Permitir captura de ecrã - Permitir geolocalização - Permitir conta Microsoft - Permitir copiar e colar - Permitir tethering Wi-Fi - Permitir ligação automática a hotspots Wi-Fi gratuitos - Permitir relatórios de hotspots Wi-Fi - Permitir a reposição de fábrica - Permitir Bluetooth - Permitir NFC - Permitir Wi-Fi
+        - Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado
+        - Minutos de inatividade antes da palavra-passe ser exigida
+        - Tipo obrigatório de palavra-passe – número mínimo de conjuntos de carateres
+        - Permitir câmara
+        - Encriptação obrigatória no dispositivo móvel
+        - Permitir armazenamento amovível
+        - Permitir browser
+        - Permitir loja de aplicações
+        - Permitir captura de ecrã
+        - Permitir geolocalização
+        - Permitir Conta Microsoft
+        - Permitir copiar e colar
+        - Permitir partilha de Wi-Fi
+        - Permitir ligação automática a hotspots Wi-Fi
+        - Permitir relatórios de hotspots Wi-Fi
+        - Permitir a reposição de fábrica
+        - Permitir Bluetooth
+        - Permitir NFC
+        - Permitir Wi-Fi
     
     - **iOS** - todas as definições são removidas, exceto:
         - Permitir chamadas em roaming
@@ -200,9 +213,10 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
 
 ### Onde posso encontrar as políticas de resolução de problemas?
 
-Consulte [Resolver problemas de políticas no Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
+Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
