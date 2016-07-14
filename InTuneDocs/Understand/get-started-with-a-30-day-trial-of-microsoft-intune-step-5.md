@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscrever dispositivos móveis de avaliação | Microsoft Intune
-description:
-keywords:
+title: "Inscrever dispositivos móveis de avaliação | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+
 
 ---
 
@@ -32,17 +26,17 @@ Para configurar a gestão de dispositivos móveis com o Intune, tem de começar 
 
 1.  **Tornar o Intune a autoridade de gestão de dispositivos móveis**
 
-    Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha**Administração** &gt; **Gestão de Dispositivos Móveis**. Escolha **Tarefas** > **Definir Autoridade de MDM** e escolha **Sim** na caixa de diálogo **Autoridade de MDM**.
+    Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**. Escolha **Tarefas** > **Definir Autoridade de MDM** e escolha **Sim** na caixa de diálogo **Autoridade de MDM**.
 
 2.  **Ativar MDM na plataforma de dispositivos**
 
     Ative a gestão de dispositivos móveis na plataforma de dispositivos que pretende gerir. Dependendo da sua plataforma, são necessários requisitos diferentes:
 
-    -   **iOS e Mac OS X**: consulte [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)
+    -   **iOS e Mac OS X**: veja [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
 
     -   **Android**: os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação Portal da Empresa, disponível no Google Play, para se inscreverem. Não é necessária nenhuma configuração adicional no Intune.
 
-    -   **Windows Phone**: consulte [Configurar a gestão do Windows Phone com o Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)
+    -   **Windows Phone**: veja [Configurar a gestão do Windows Phone com o Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
 
 ## Inscrever dispositivos de teste
 
@@ -62,9 +56,9 @@ Se for pedido o **Endereço do servidor**, escreva "manage.microsoft.com".
 
 
 ## Instalar a aplicação anteriormente implementada
-Abra o Portal da Empresa no dispositivo móvel, escolha **Aplicações**e, em seguida, instale o **Microsoft Skype**
+Abra o Portal da Empresa no dispositivo móvel, escolha **Aplicações**e, em seguida, instale o **Microsoft Skype**.
 
-Para saber mais sobre a gestão de dispositivos móveis através do Intune, consulte [Preparar-se para inscrever dispositivos no Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+Para saber mais sobre a gestão de dispositivos móveis através do Intune, consulte [Prepare-se para inscrever dispositivos no Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
 
 ### Passos seguintes
 Parabéns! Acabou de concluir o passo 5 das instruções da *avaliação do Microsoft Intune*.
@@ -74,6 +68,7 @@ Parabéns! Acabou de concluir o passo 5 das instruções da *avaliação do Micr
 >[&larr; **Criar Políticas**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Opções e extras** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: Guia para Programadores do SDK da Aplicação do Microsoft Intune para Android | Microsoft Intune
-description:
-keywords:
+title: "Guia para Programadores do SDK da Aplicação do Microsoft Intune para Android | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Guia para Programadores do SDK da Aplicação do Microsoft Intune para Android
 
-> [!NOTE] Pode ser útil ler primeiro a [Descrição Geral do SDK da Aplicação do Intune](intune-app-sdk.md), que abrange as funcionalidades atuais do SDK e descreve como preparar a integração em cada plataforma suportada. 
+> [!NOTE]
+> Pode ser útil ler primeiro a [Descrição Geral do SDK da Aplicação do Intune](intune-app-sdk.md), que abrange as funcionalidades atuais do SDK e descreve como preparar a integração em cada plataforma suportada. 
 
 # O que está no SDK 
 
-O SDK da Aplicação do Intune para Android é uma biblioteca do Android padrão sem dependências externas. 
-O SDK é composto por:  
+O SDK da Aplicação do Intune para Android é uma biblioteca do Android padrão sem dependências externas. O SDK é composto por:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: as interfaces necessárias para ativar o MAM numa aplicação, além de permitir a interoperabilidade com a aplicação Portal da Empresa do Microsoft Intune. As aplicações têm de especificá-lo como referência da biblioteca do Android.
 
@@ -370,6 +364,7 @@ O SDK do Intune mantém o contrato fornecido pela API Android, embora possam ser
 * Evitar utilizar qualquer API de uma forma ambígua. Por exemplo, `Activity.startActivityForResult/onActivityResult` sem verificar o requestCode causará um comportamento estranho.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

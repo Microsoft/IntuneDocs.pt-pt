@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Funcionalidades de Acessibilidade | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: d34e754e3815b43f4b5b74d24711cf55aacfc757
+
 
 ---
 
@@ -48,11 +42,12 @@ Para além das funcionalidades e ferramentas de acessibilidade no Microsoft Wind
 |Fechar a lista num menu|ALT + SETA PARA CIMA|
 |Mover para o grupo de aplicações seguinte|SETA PARA CIMA|
 |Apresentar as ações para um dispositivo selecionado|SETA PARA A DIREITA|
-> Os portais do [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] são navegáveis através dos atalhos de teclado padrão do Internet Explorer.
+> [!NOTE]
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Os portais são navegáveis através dos atalhos de teclado padrão do Internet Explorer.
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

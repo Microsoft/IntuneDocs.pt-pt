@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Definições de política do Mac OS X | Microsoft Intune
-description:
-keywords:
+title: "Definições de política do Mac OS X | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ Na lista Aplicações **Conformes e &amp;Não Conformes para Mac OS X**, ative *
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o ID do pacote de aplicações no ficheiro.|
 |**Editar**|Permite-lhe editar o nome, o fabricante e o ID do pacote de aplicações da aplicação selecionada.|
 |**Eliminar**|Elimina a aplicação selecionada da lista.|
-> [!TIP] Para mais informações sobre relatórios do Intune, consulte [Compreender as operações do Microsoft Intune através da utilização de relatórios](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Para obter mais informações sobre relatórios do Intune, veja [Compreender as operações do Microsoft Intune através da utilização de relatórios](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Quando um dispositivo Mac OS X está no modo de Suspensão, não é possível entregar ou inventariar políticas e perfis. Como resultado, a consola do Intune pode apresentar temporariamente o estado **Definições de política em erro** até à próxima vez que o dispositivo sair do modo de Suspensão.
@@ -105,7 +99,7 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 |Nome da definição|Detalhes|
     |----------------|--------------------|
     |**Nome do perfil de configuração personalizado (apresentado aos utilizadores)**|Indique um nome para a política tal como será apresentado no dispositivo e nos relatórios de políticas do Intune.|
-    |**Ficheiro de perfil de configuração**|Clique em **Importar**e, em seguida, navegue até ao perfil de configuração que criou com o Apple Configurator. **Sugestão:** consulte [Como criar um ficheiro de perfil de configuração](#BKMK_Prof) neste tópico para obter ajuda na criação do perfil de configuração.|
+    |**Ficheiro de perfil de configuração**|Clique em **Importar**e, em seguida, navegue até ao perfil de configuração que criou com o Apple Configurator. **Sugestão:** veja **Criar um ficheiro de perfil de configuração** neste tópico para obter ajuda na criação do perfil de configuração.|
     |**Detalhes do perfil de configuração**|Apresenta o código XML do perfil de configuração que importou.|
 
 
@@ -126,6 +120,7 @@ Pode criar o ficheiro de perfil de configuração utilizado pela política perso
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
