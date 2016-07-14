@@ -1,37 +1,33 @@
 ---
-# required metadata
-
-title: Definições de política do iOS | Microsoft Intune
-description:
-keywords:
+title: "Definições de política do iOS | Microsoft Intune"
+description: "Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # Definições de política do iOS no Microsoft Intune
 
+O Intune fornece uma variedade de definições gerais incorporadas, que pode configurar em dispositivos iOS. Além disso, pode utilizar a ferramenta Apple Configurator para criar definições personalizadas que não estão disponíveis no Intune.
+
 ## Definições de política de configuração geral
 
 Utilize a **política de configuração geral do iOS** do Microsoft Intune para configurar definições para:
 
--   **Definições de segurança do dispositivo móvel** – Escolha de uma lista de definições predefinidas que permitem controlar uma série de funcionalidades e a funcionalidade do dispositivo.
+-   **Definições de segurança do dispositivo móvel** – Escolha a partir de uma lista de definições predefinidas que permitem controlar uma série de funcionalidades e a funcionalidade no dispositivo.
 
 -   **Modo de local público** - Bloqueie um dispositivo para que apenas algumas funcionalidades possam ser utilizadas. Por exemplo, pode permitir que um dispositivo execute apenas uma aplicação gerida que especificar ou pode desativar os botões de volume num dispositivo. Estas definições podem ser utilizadas para um modelo de demonstração de um dispositivo ou para um dispositivo com a finalidade de desempenhar apenas uma função, como um dispositivo de ponto de venda.
 
@@ -47,8 +43,8 @@ Se a definição que procura não aparecer neste tópico, poderá conseguir cri�
 |Nome da definição|Detalhes|iOS|
 |----------------|-------|
 |**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Especifica se os utilizadores são obrigados a introduzir uma palavra-passe para aceder ao respetivo dispositivo.|Sim|
-|**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica|Sim|
-|**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**|Existem quatro conjuntos de carateres, letras minúsculas, letras maiúsculas, números e símbolos. Esta definição especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe). (No entanto, para dispositivos iOS, isto especifica o número de carateres de símbolos que têm de ser incluídos na palavra-passe)|Sim|
+|**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|Sim|
+|**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**|Isto especifica o número de caracteres de símbolos (como **#** ou **@**) que têm de ser incluídos na palavra-passe.|Sim|
 |**Comprimento mínimo da palavra-passe**|Especifica o número mínimo de carateres na palavra-passe.|Sim|
 |**Permitir palavras-passe simples**|Permite palavras-passe simples, como «0000» e «1234».|Sim|
 |**Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado**|Apaga o dispositivo em caso de falha deste número de tentativas de início de sessão.|Sim|
@@ -77,7 +73,7 @@ Se a definição que procura não aparecer neste tópico, poderá conseguir cri�
 |Nome da definição|Detalhes|iOS|
 |----------------|-------|
 |**Permitir cópia de segurança para iCloud**|Permite que o utilizador faça uma cópia de segurança do dispositivo para o iCloud.|Sim|
-|**Permitir sincronização de documentos para iCloud**|Permitir a sincronização de documentos e pares chave-valor para o seu espaço de armazenamento do iCloud. Sim|
+|**Permitir sincronização de documentos para iCloud**|Permitir a sincronização de documentos e pares chave-valor para o seu espaço de armazenamento do iCloud.|Sim|
 |**Permitir sincronização de Fluxo de Fotografias para iCloud**|Permitir a sincronização das fotografias no dispositivo com o iCloud.|Sim|
 |**Exigir cópia de segurança encriptada**|Exigir que qualquer cópia de segurança seja encriptada.|Sim|
 
@@ -97,7 +93,7 @@ Se a definição que procura não aparecer neste tópico, poderá conseguir cri�
 |Nome da definição|Detalhes|iOS|
 |----------------|-------|
 |**Permitir loja de aplicações**|Permite que o dispositivo aceda à loja de aplicações.|Sim|
-|**Exigir uma palavra-passe para aceder à loja de aplicações**|Sim|
+|**Exigir uma palavra-passe para aceder à loja de aplicações**|Exige que o utilizador introduza uma palavra-passe antes de poderem visitar a loja de aplicações.|Sim|
 |**Permitir compras via aplicação**|Permite efetuar compras na loja a partir de uma aplicação em execução.|Sim|
 |**Permitir documentos geridos em outras aplicações não geridas**|Permite a visualização de documentos da empresa em qualquer aplicação.<br>**Exemplo:** pretende impedir que os utilizadores guardem os ficheiros da aplicação OneDrive no Dropbox. Configure esta definição como não. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não será permitido guardar.|iOS 7.1 e posterior|
 |**Permitir documentos não geridos em outras aplicações geridas**|Permitir a visualização de qualquer documento em aplicações geridas empresariais.|iOS 7.1 e posterior|
@@ -170,7 +166,8 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 |**Ativar o AssistiveTouch**|Ativa ou desativa a definição de acessibilidade **AssistiveTouch** , que ajuda os utilizadores a executar gestos no ecrã que lhes poderão ser difíceis.|
 |**Ativar os ajustes do AssistiveTouch**|Ativa ou desativa os ajustes do AssistiveTouch, o que lhe permite ajustar a função AssistiveTouch.|
 |**Ativar a funcionalidade Enunciar seleção**|Ativa ou desativa a definição de acessibilidade **Enunciar seleção** , que lê em voz alta o texto que selecionou.|
-> [!NOTE] As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
+> [!NOTE]
+> As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
 > 
 > -   Antes de poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o gestor de inscrição de dispositivos para colocar o dispositivo em modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 > -   Se a aplicação iOS especificada for instalada após a implementação da política de configuração, o dispositivo só entrará em modo de local público após ser reiniciado.
@@ -195,7 +192,8 @@ Copie o URL da página e utilize-o para configurar a lista de aplicações compa
 
 **Exemplo:** Procure por **Microsoft Word para iPad**. O URL a utilizar será **https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE] Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
+> [!NOTE]
+> Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
 
 
 ## Definições de política personalizada
@@ -230,6 +228,7 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

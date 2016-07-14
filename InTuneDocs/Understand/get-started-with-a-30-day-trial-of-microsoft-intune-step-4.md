@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Criar políticas e publicar uma aplicação para utilizadores de avaliação | Microsoft Intune
-description:
-keywords:
+title: "Criar políticas e publicar uma aplicação para utilizadores de avaliação | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
 
 # Criar políticas e publicar uma aplicação para utilizadores de avaliação
-As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Se estiver a planear utilizar o Intune para dispositivos que configurou para utilização de produção após a avaliação, é absolutamente essencial que siga as instruções em [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Se estiver a planear utilizar o Intune para os dispositivos que configurou para utilização de produção após a avaliação, é absolutamente essencial que siga as instruções em [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Ajudar a proteger os PC Windows com o Endpoint Protection para o Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Pode executar dois tipos de instalações de aplicações com o Intune. O primeiro é uma **instalação necessária**, que implementa automaticamente as aplicações nos computadores geridos. O segundo tipo é uma **instalação disponível**, que implementa as aplicações, ou ligações para as mesmas, no Portal da Empresa do Intune, para que os utilizadores possam optar por instalá-las nos computadores ou dispositivos móveis deles.
 
@@ -37,31 +31,32 @@ Nestes passos, vai ser configurada uma política de configuração de dispositiv
 
 ## Criar e implementar políticas de configuração de dispositivos móveis
 
-1.  Abra a [consola de administração do Intune](https://manage.microsoft.com/)
+1.  Abra a [consola de administração do Intune](https://manage.microsoft.com/).
 
 2.  No painel esquerdo, escolha o ícone **Política**.
 
-3.  Na lista **Tarefas** na página **Descrição Geral da Política**, escolha **Adicionar Política**
+3.  Na lista **Tarefas**, na página **Descrição Geral da Política**, escolha **Adicionar Política**.
 
-4.  Na lista de políticas, expanda a plataforma para a qual quer criar uma política, selecione **Configuração Geral**, escolha **Criar e Implementar uma Política com as Definições Recomendadas** e, em seguida, escolha **Criar Política**
+4.  Na lista de políticas, expanda a plataforma para a qual pretende criar uma política, selecione **Configuração Geral**, escolha **Criar e Implementar uma Política com as Definições Recomendadas** e, em seguida, escolha **Criar Política**.
 
-5.  Quando lhe for pedido que **Selecione os grupos nos quais pretende aplicar esta política**, selecione **Os Utilizadores da Minha Versão de Avaliação** na lista e escolha **Adicionar** &gt; **OK**
+5.  Quando lhe for solicitado para **Selecionar os grupos nos quais pretende implementar esta política**, selecione **Os Utilizadores da Minha Versão de Avaliação** na lista e escolha **Adicionar** &gt; **OK**.
 
 A sua política é apresentada na lista de políticas de configuração e foi implementada no grupo **Os Utilizadores da Minha Versão de Avaliação** . Faça duplo clique na política para ver as respetivas definições.
 
 ## Publicar a aplicação Skype em dispositivos móveis
 
-1.  Na [consola de administração do Intune](https://manage.microsoft.com/), escolha o ícone **Aplicações** e, em seguida, escolha **Aplicações** &gt; **Adicionar Aplicação**. Introduza as suas credenciais do Intune, caso pedido.
+1.  Na [consola de administração do Intune](https://manage.microsoft.com/), selecione o ícone **Aplicações** e, em seguida, selecione **Aplicações** &gt; **Adicionar Aplicação**. Introduza as suas credenciais do Intune, caso pedido.
 
+    > [!NOTE]
     > Quando inicia o **Intune Software Publisher** pela primeira vez, ocorre um pequeno atraso durante a instalação da aplicação.
 
-2.  Consulte o aviso de segurança e escolha **Executar**
+2.  Leia o aviso de segurança e escolha **Executar**.
 
-3.  Na página **Antes de começar**, escolha **Seguinte**
+3.  Na página **Antes de começar**, escolha **Seguinte**.
 
-4.  Na página **Configuração do software**, em **Selecione de que forma este software é disponibilizado nos dispositivos**, selecione **Ligação externa**
+4.  Na página **Configuração do software** , em **Selecione de que forma este software é disponibilizado nos dispositivos**, selecione **Ligação externa**.
 
-5.  Introduza uma ligação externa para o software em **Especificar o URL**e, em seguida, escolha **Seguinte** Certifique-se de que precede o URL com **https://**. Para a aplicação Skype, utilize a ligação abaixo que corresponda à plataforma de dispositivos móveis que está a utilizar:
+5.  Introduza uma ligação externa para o software em **Especificar o URL** e, em seguida, escolha **Seguinte** Certifique-se de que precede o URL com **https://**. Para a aplicação Skype, utilize a ligação abaixo que corresponda à plataforma de dispositivos móveis que está a utilizar:
 
     -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
@@ -85,13 +80,13 @@ A sua política é apresentada na lista de políticas de configuração e foi im
 
 7.  Na página **Resumo**, verifique as informações do software e, em seguida, escolha **Carregar**. Escolha **Fechar** para sair do assistente.
 
-8.  Na [consola de administração do Intune](https://manage.microsoft.com/), escolha **Aplicações** &gt; **Aplicações** &gt; **Skype** &gt; **Gerir Implementação**
+8.  Na [consola de administração do Intune](https://manage.microsoft.com/), escolha **Aplicações** &gt; **Aplicações** &gt; **Skype** &gt; **Gerir Implementação**.
 
-9. Na página **Selecionar Grupos**, selecione **Os Utilizadores da Minha Versão de Avaliação** para implementar o software nesse grupo de utilizadores e, em seguida, escolha **Adicionar** &gt; **Seguinte**
+9. Na página **Selecionar Grupos**, selecione **Os Utilizadores da Minha Versão de Avaliação** para implementar o software nesse grupo de utilizadores e, em seguida, escolha **Adicionar** &gt; **Seguinte**.
 
 10. Na página **Ação de Implementação** , selecione **Instalação Disponível** na coluna **Aprovação** do seu grupo.
 
-11. Escolha **Concluir**
+11. Escolha **Concluir**.
 
 A aplicação Skype está agora disponível para instalação em dispositivos móveis a partir do Portal da Empresa, mas tem de, em primeiro lugar, instalar o software do Intune nos PCs e nos dispositivos móveis.
 
@@ -103,6 +98,7 @@ Parabéns! Acabou de concluir o passo 4 das instruções da *avaliação do Micr
 >[&larr; **Criar Grupos**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Inscrever Dispositivos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

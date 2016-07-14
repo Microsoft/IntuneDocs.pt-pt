@@ -91,6 +91,6 @@ A eliminação de um gestor de inscrição de dispositivos não afeta os disposi
 -   A relação da conta do gestor de inscrição de dispositivos eliminada com os dispositivos inscritos é mantida, mas não é possível inscrever mais dispositivos
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
