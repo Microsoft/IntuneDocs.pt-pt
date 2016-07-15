@@ -46,6 +46,7 @@ As políticas de gestão de aplicações móveis (MAM) apenas se aplicam quando 
 
     ![Captura de ecrã que mostra a localização do ficheiro aberta com a lista de ficheiros existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Quando altera uma política implementada, as alterações serão aplicadas da próxima vez que abrir a aplicação.
 
 ##  Aceder ao OneDrive num dispositivo Android
@@ -169,6 +170,6 @@ Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheir
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

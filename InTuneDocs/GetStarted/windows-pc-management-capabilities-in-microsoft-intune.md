@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Capacidades de gestão de PCs Windows | Microsoft Intune
-description:
-keywords:
+title: "Capacidades de gestão de PCs Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -39,6 +33,8 @@ Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o 
 -   **Gestão de licenças de software** - controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão a ser utilizadas.
 -   **Implementação de aplicações** - implemente software em PCs geridos por si. Algumas funcionalidades de gestão de aplicações não estão disponíveis ao gerir computadores com o software cliente.
 
+
+O Intune suporta a instalação do software de cliente de PC num máximo de 7 000 dispositivos Windows.
 
 ## Requisitos do sistema operativo
 O Intune pode gerir computadores com as seguintes versões do Windows (x86 e x64):
@@ -77,6 +73,7 @@ Seguem-se os requisitos de software para instalar o computador cliente do Intune
 [Funcionalidades de gestão de dispositivos móveis no Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

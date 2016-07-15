@@ -54,8 +54,10 @@ Se um utilizador estiver em ambos os grupos, estará excluído da política.
 ### Passo 2: configurar e implementar uma política de conformidade
 [Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade em todos os dispositivos que serão afetados pela política. Estes seriam todos os dispositivos utilizados pelos utilizadores nos grupos Visados.
 
+> [!NOTE]
 > [!NOTE] Enquanto as políticas de conformidade são implementadas nos grupos do Microsoft Intune, as políticas de acesso condicional são direcionadas para os grupos de segurança do Azure Active Directory.
 
+> [!IMPORTANT]
 > [!IMPORTANT] Se não tiver implementado uma política de conformidade, os dispositivos serão tratados como conformes.
 
 Quando estiver pronto, avance para o Passo 3.
@@ -94,6 +96,6 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
