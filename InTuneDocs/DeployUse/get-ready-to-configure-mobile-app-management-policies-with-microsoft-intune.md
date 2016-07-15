@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Configurar políticas de gestão de aplicações móveis | Microsoft Intune
-description:
-keywords:
+title: "Configurar políticas de gestão de aplicações móveis | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ O portal do Azure é a nova consola de administração para a criação de polí
 Se estiver a utilizar o portal do Azure, leia o [Portal do Azure para políticas de MAM do Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para obter uma descrição geral rápida.
 
 Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar políticas de MAM que suportem aplicações para dispositivos inscritos no Intune, utilizando a **consola de administração do Intune**, mas é recomendado que utilize o portal do Azure, mesmo em dispositivos que estão inscritos no Intune. Para obter instruções sobre como criar uma política de MAM utilizando a consola de administração do Intune, consulte [aqui](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+As políticas MAM criadas na consola de administração do Intune não podem ser importadas para o portal do Azure.  As políticas MAM têm de ser recriadas no portal do Azure.
 
 >[!IMPORTANT]
 > Poderá não ver todas as definições de política de MAM na consola de administração do Intune. Se criar políticas de MAM na consola de administração do Intune e no portal do Azure, a política no portal do Azure é aplicada às aplicações e implementada nos utilizadores.
@@ -62,7 +57,7 @@ Para obter uma lista completa de aplicações Microsoft suportadas, vá para [Ga
 -   Uma subscrição do **Office 365 (O365)** necessária para o seguinte:
   - Aplicar políticas de MAM a aplicações com suporte de várias identidades.
   - Criar contas profissionais do SharePoint Online e do Exchange Online. O Exchange no local e o SharePoint no local não são suportados.
--    **Ativar a autenticação moderna** para o **Skype para Empresas Online**. Iniciar sessão no Microsoft Connect e preencher [este formulário](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para ser inscrito no programa de autenticação moderna.
+-    [Ativar a autenticação moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) para o **Skype para Empresas Online**.
 
 
 - **Azure Active Directory (Azure AD)** para criar utilizadores. O Azure AD autentica o utilizador quando o utilizador final inicia a aplicação e introduz as respetivas credenciais de trabalho.
@@ -124,6 +119,7 @@ Os**administradores globais** têm acesso ao [Portal do Azure](https://portal.az
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
