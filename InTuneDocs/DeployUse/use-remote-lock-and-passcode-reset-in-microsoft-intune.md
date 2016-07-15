@@ -1,25 +1,19 @@
 ---
-title: Utilizar o bloqueio remoto e a reposição do código de acesso | Microsoft Intune
-description:
-keywords:
+title: "Utilizar o bloqueio remoto e a reposição do código de acesso | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso.
@@ -39,9 +33,9 @@ Se um utilizador perder o respetivo dispositivo, pode bloquear o mesmo remotamen
 
 ### Para bloquear um dispositivo móvel remotamente através da consola do Intune
 
-1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**
+1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
 
-2.  Escolha **Todos os Dispositivos Geridos Diretamente** para dispositivos inscritos no Intune ou em **Todos os Dispositivos Geridos do Exchange ActiveSync**
+2.  Escolha **Todos os Dispositivos Geridos Diretamente** para os dispositivos inscritos no Intune ou em **Todos os Dispositivos Geridos do Exchange ActiveSync**.
 
     > [!TIP]
     > Também pode navegar para um dispositivo por utilizador. Escolha **Todos os Utilizadores**. Na página propriedades do utilizador, escolha **Dispositivos** e, em seguida, escolha o nome do dispositivo móvel que pretende apagar.
@@ -62,20 +56,22 @@ Se um utilizador se esquecer do respetivo código de acesso, pode ajudá-lo ao r
 
 ### Para repor um código de acesso
 
-1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**
+1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
 
-2.  Escolha **Todos os Dispositivos Geridos Diretamente** para dispositivos inscritos no Intune ou em **Todos os Dispositivos Geridos do Exchange ActiveSync**
+2.  Escolha **Todos os Dispositivos Geridos Diretamente** para os dispositivos inscritos no Intune ou em **Todos os Dispositivos Geridos do Exchange ActiveSync**.
 
     > [!TIP]
     > Também pode navegar para um dispositivo por utilizador. Clique em **Todos os Utilizadores**. Na página de propriedades do utilizador, clique em **Dispositivos** e, em seguida, clique no nome do dispositivo móvel pretende apagar.
 
-3.  Na lista, escolha o dispositivo ou dispositivos que pretende bloquear. Na barra de tarefas, escolha **Tarefas Remotas** e selecione **Reposição de Código de Acesso**
+3.  Na lista, escolha o dispositivo ou dispositivos que pretende bloquear. Na barra de tarefas, escolha **Tarefas Remotas** e selecione **Reposição do Código de Acesso**.
 
 
 ### Consulte também
-Extinguir dispositivos
+[Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md)
+[Eliminação Seletiva do Windows para Gestão de Dados do Dispositivo](http://technet.microsoft.com/library/dn486874.aspx)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

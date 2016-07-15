@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Políticas de firewall para PCs Windows | Microsoft Intune
-description:
-keywords:
+title: "Políticas de firewall para PCs Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows no Microsoft Intune
 O Microsoft Intune pode ajudá-lo a proteger os PCs Windows que gere com o cliente Intune de várias formas, incluindo na utilização de políticas que lhe permitem configurar definições de Firewall do Windows em PCs.
 
-Se ainda não instalou o cliente de PC Windows Intune nos seus computadores, consulte o artigo [Instalar o cliente de PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md)
+Se ainda não instalou o cliente de PC Windows Intune nos seus computadores, veja o artigo [Instalar o cliente de PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Utilize as informações nas secções seguintes para o ajudar a configurar, implementar e monitorizar as políticas de Firewall do Windows em PCs Windows.
 
@@ -36,10 +30,11 @@ Utilize as informações nas secções seguintes para o ajudar a configurar, imp
 A política da Firewall do Windows permite-lhe criar e implementar definições que controlam a Firewall do Windows em PCs geridos. Não é possível gerir exceções personalizadas da Firewall do Windows. Estas definições não afetam firewalls de terceiros.
 
 > [!NOTE]
-> Se a política do Microsoft Intune e a Política de Grupo estiverem configuradas para gerir a mesma definição no PC, a definição da Política de Grupo sobrepõe-se à política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre políticas do Intune e a Política de Grupo, consulte o artigo [Resolver conflitos de políticas de GPO e do Microsoft Intune](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+> Se a política do Microsoft Intune e a Política de Grupo estiverem configuradas para gerir a mesma definição no PC, a definição da Política de Grupo sobrepõe-se à política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre políticas do Intune e a Política de Grupo, veja o artigo [Resolver conflitos de políticas de GPO e do Microsoft Intune](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
 > Se pretender implementar as definições da Firewall do Windows em computadores a executar o Windows Vista, primeiro tem de instalar a [Correção KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
 
+> [!IMPORTANT]
 > Para gerir a Firewall do Windows com o Intune, tem de certificar-se de que os dois serviços seguintes estão ativados nos computadores que irá gerir:
 >
 > -   Firewall do Windows
@@ -47,9 +42,9 @@ A política da Firewall do Windows permite-lhe criar e implementar definições 
 
 ## Configurar uma política da Firewall do Windows
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** &gt; **Adicionar Política**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Política** &gt; **Adicionar Política**.
 
-2.  Configure e implemente uma política das **Definições da Firewall do Windows** . Pode utilizar definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, consulte o artigo [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+2.  Configure e implemente uma política das **Definições da Firewall do Windows** . Pode utilizar definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, veja o artigo [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     A secção seguinte apresenta uma lista dos valores que pode configurar na política, bem como dos valores predefinidos que serão utilizados se não personalizar a política.
 
@@ -67,11 +62,12 @@ Estas definições de política ativam a Firewall do Windows em computadores ger
 
 Estas definições de política configuram a Firewall do Windows para bloquear o tráfego de rede recebido quando o computador gerido está ligado a um domínio (por exemplo, na área de trabalho), a uma rede privada (fidedigna) (como uma rede doméstica) ou a uma rede pública não fidedigna (como num café). O valor predefinido para cada uma destas definições é **Sim**, que é o valor mais seguro. 
 
+> [!IMPORTANT]
 > Se o seu ambiente incluir computadores geridos a executar o Windows Vista sem service packs instalados, tem de instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) na Base de Dados de Conhecimento Microsoft ou desativar as definições de política **Bloquear todas as ligações recebidas** nas políticas implementadas nesses computadores.
 
 ### Notificar o utilizador quando a Firewall do Windows bloquear um programa novo
 
-Estas definições de política configuram se a Firewall do Windows notifica o utilizador do PC quando bloqueia o tráfego de rede recebido quando o computador gerido está ligado a um domínio (por exemplo, na área de trabalho), a uma rede privada (fidedigna) (como uma rede doméstica) ou a uma rede pública não fidedigna (como num café). O valor predefinido para cada uma destas definições é **Sim**
+Estas definições de política configuram se a Firewall do Windows notifica o utilizador do PC quando bloqueia o tráfego de rede recebido quando o computador gerido está ligado a um domínio (por exemplo, na área de trabalho), a uma rede privada (fidedigna) (como uma rede doméstica) ou a uma rede pública não fidedigna (como num café). O valor predefinido para cada uma destas definições é **Sim**.
 
 
 ### Exceções Predefinidas
@@ -122,6 +118,7 @@ Após ter configurado os valores básicos acima, pode configurar exceções que 
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
