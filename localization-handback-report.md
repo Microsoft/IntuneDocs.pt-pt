@@ -1,11 +1,45 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-android.md) | OutofSyncHandedBackSuccess | [Details](#9294e161eb6255f880e91fef43c427d629a41fc4273)
+ [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md) | OutofSyncHandedBackSuccess | [Details](#f5b5a391851d4f1f778a96615bc2579cb352b16b275)
 
 ## Item Details
+##### <a name='9294e161eb6255f880e91fef43c427d629a41fc4273'></a> Source: [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-android.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [device-doesnt-comply-with-maximum-operating-system-version-android.1f52a4f2ae2b8fa95e25db8a42da73bdc5b9687c.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/3876794c090f9aaf7e87e3f24364b6270d5a236b/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-maximum-operating-system-version-android.1f52a4f2ae2b8fa95e25db8a42da73bdc5b9687c.pt-pt.xlf)
+* Handoff Datetime: 2016-07-13 22:00:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-maximum-operating-system-version-android.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/1a607fbcd12dd9cb874276a3d50048ea2a7779df/InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-android.md)
+* Current Handback File: [device-doesnt-comply-with-maximum-operating-system-version-android.1f52a4f2ae2b8fa95e25db8a42da73bdc5b9687c.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/47ef2db6511ba2de8cb37cde18c6bb3879e4991b/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-maximum-operating-system-version-android.1f52a4f2ae2b8fa95e25db8a42da73bdc5b9687c.pt-pt.xlf)
+* Current Handback Datetime: 2016-07-15 02:29:15
+* [Back to Top](#report-top)
+
+##### <a name='f5b5a391851d4f1f778a96615bc2579cb352b16b275'></a> Source: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/3876794c090f9aaf7e87e3f24364b6270d5a236b/ol-handoff/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf)
+* Handoff Datetime: 2016-07-13 22:00:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr.pt-pt/blob/1a607fbcd12dd9cb874276a3d50048ea2a7779df/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+* Current Handback File: [device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/47ef2db6511ba2de8cb37cde18c6bb3879e4991b/ol-handback/Microsoft/IntuneDocs-pr.pt-pt/master/device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.pt-pt.xlf)
+* Current Handback Datetime: 2016-07-15 02:29:15
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
