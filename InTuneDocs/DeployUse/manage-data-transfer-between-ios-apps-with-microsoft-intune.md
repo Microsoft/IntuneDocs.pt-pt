@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Gerir a transferência de dados entre aplicações iOS | Microsoft Intune
-description:
-keywords:
+title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ Para assegurar que as aplicações que implementa através da solução MDM de t
 Esta configuração é necessária para os dispositivos geridos por uma solução MDM de terceiros. O procedimento descrito abaixo é um fluxo geral sobre como implementar a definição de UPN e a experiência de utilizador final resultante:
 
 
-1.  Configure uma política de gestão de aplicações móveis para a plataforma iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações que devem ter esta política.
+1.  No portal do Azure, [configure uma política de gestão de aplicações móveis](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para a plataforma iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações que devem ter esta política.
 
-2.  Implemente as aplicações e o perfil de e-mail que pretende que sejam geridos através da solução MDM de terceiros utilizando a definição descrita nos passos 3 e 4.
+2.  Implemente as aplicações e o perfil de e-mail que pretende que sejam geridos **através da solução MDM de terceiros** utilizando a definição descrita nos passos 3 e 4.
 
 3.  Implemente a aplicação com as seguintes definições de configuração de aplicação: key=IntuneMAMUPN, Value=<nomedeutilizador@empresa.com> [exemplo: "IntuneMAMUPN", "jondoe@microsoft.com"]
 
@@ -69,6 +62,7 @@ Esta configuração é necessária para os dispositivos geridos por uma soluçã
 
 4.  Quando é iniciada a aplicação Word, é pedido ao utilizador final que inicie sessão com a respetiva conta profissional.  Esta conta profissional que o utilizador final introduz quando solicitado deve corresponder à conta especificada nas definições de configuração da aplicação Microsoft Word.
 
+    > [!NOTE]
     > O utilizador final pode adicionar outras contas pessoais ao Word para fazer o seu trabalho pessoal e não ser afetado pelas políticas de MAM quando utilizar a aplicação Word num contexto pessoal.
 
 5.  Quando o início de sessão é bem-sucedido, as definições da política de aplicação são aplicadas à aplicação Word.
@@ -79,6 +73,7 @@ Esta configuração é necessária para os dispositivos geridos por uma soluçã
 [Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
