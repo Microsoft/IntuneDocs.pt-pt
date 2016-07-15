@@ -33,6 +33,6 @@ Pode gerir estes dispositivos e PCs, mesmo que n√£o estejam associados a um dom√
 [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Repor (apagar) o dispositivo perdido ou roubado | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+
 
 ---
 
@@ -32,7 +26,8 @@ Se o seu telemóvel Android se perder ou for roubado, pode repô-lo para as defi
 
 Para mais informações sobre o que acontece se repõe o seu dispositivo, consulte [O que acontece se utilizar o Portal da Empresa para repor o seu dispositivo](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] Repor um dispositivo para as predefinições de fábrica remove, quer as suas informações pessoais, quer profissional ou escolar, do mesmo.
+> [!WARNING] 
+> Repor um dispositivo para as predefinições de fábrica remove as suas informações pessoais, profissionais ou escolares do mesmo.
 
 1.  No seu browser, abra o [Web site do Portal da Empresa](http://portal.manage.microsoft.com) e inicie sessão na sua conta profissional ou escolar.
 
@@ -47,6 +42,7 @@ Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao seu admin
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

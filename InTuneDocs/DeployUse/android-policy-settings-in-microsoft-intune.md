@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Definições de política de configuração de Android e Samsung KNOX | Microsoft Intune
-description:
-keywords:
+title: "Definições de política de configuração de Android e Samsung KNOX | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Impede a reutilização de palavras-passe.|Sim|Sim|
 |**Qualidade da palavra-passe**|Selecionar o nível de complexidade da palavra-passe exigido e se podem ser utilizados dispositivos biométricos.|Sim|Sim|
 |**Permitir desbloqueio por impressão digital**|Permita a utilização de uma impressão digital para desbloquear o dispositivo.|Não|Sim|
+|**Permitir o bloqueio do smart card e outros agentes de fidedignidade**<br>(Android 5 e posterior)|Permite-lhe controlar a funcionalidade de bloqueio do smart card em dispositivos Android compatíveis. Esta capacidade de telefone, por vezes conhecida como agentes de confiança, permite desativar ou ignorar a palavra-passe de bloqueio do ecrã do dispositivo se o dispositivo estiver numa localização fidedigna, como quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Pode utilizar esta definição para impedir que os utilizadores finais configurem o bloqueio do smart card.|Sim|Não|
 
 ### Definições de encriptação
 
@@ -73,7 +68,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 
 ### Definições da nuvem - documentos e dados
 
-|Nome da definição|Detalhes|Android e Samsung KNOX|Android 4.0+|
+|Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Permitir cópia de segurança do Google**|Permite a utilização da cópia de segurança do Google.|Não|Sim|
 
@@ -95,7 +90,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 
 ### Definições da aplicação - aplicações
 
-|Nome da definição|Android 4.0+|Samsung KNOX|
+|Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Permitir loja do Google Play**|Permite ao utilizador aceder à loja do Google Play no dispositivo.|Não|Sim|
 
@@ -179,7 +174,8 @@ Utilize a **política de configuração personalizada para Android** do Microsof
 
 Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
 
-> [!NOTE] Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada.
+> [!NOTE]
+> Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada.
 
 ### Definições gerais
 
@@ -257,6 +253,7 @@ Embora o Intune suporte perfis Wi-Fi para dispositivos Android, esta funcionalid
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

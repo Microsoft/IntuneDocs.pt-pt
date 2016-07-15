@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Regras de acesso ao Exchange para dispositivos móveis geridos pelo Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Regras de acesso ao Exchange para dispositivos móveis geridos pelo Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,19 +39,20 @@ O procedimento seguinte descreve o processo de criação de uma regra personaliz
 
 ## Criar uma regra de acesso predefinida
 
-1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) &gt; **Política** &gt; **Acesso ao Exchange para Dispositivos Móveis**
+1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) &gt; **Política** &gt; **Acesso ao Exchange para Dispositivos Móveis**.
 
-2.  Na lista **Regra Predefinida** , selecione a Regra de Acesso que pretende aplicar a todos os dispositivos móveis não abrangidos por uma regra ou uma isenção pessoal. Escolha **Guardar**
+2.  Na lista **Regra Predefinida** , selecione a Regra de Acesso que pretende aplicar a todos os dispositivos móveis não abrangidos por uma regra ou uma isenção pessoal. Escolha **Guardar**.
 
 O procedimento seguinte descreve o processo de criação de uma regra personalizada.
 
 ## Criar uma regra de acesso personalizada
 
-1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) &gt; **Política** &gt; **Acesso ao Exchange para Dispositivos Móveis**
+1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) &gt; **Política** &gt; **Acesso ao Exchange para Dispositivos Móveis**.
 
-2.  Na lista **Regras Personalizadas**, escolha **Adicionar Regra** e crie uma regra personalizada. Escolha **Guardar**
+2.  Na lista **Regras Personalizadas**, escolha **Adicionar Regra** e crie uma regra personalizada. Escolha **Guardar**.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

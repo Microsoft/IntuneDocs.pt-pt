@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Gerir alertas | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -36,6 +31,7 @@ Utilize a área de trabalho **Alertas** na consola de administração do Intune 
 
     -   **Para apresentar dados de resumo para alertas**, clique em **Alertas &gt; Descrição Geral**. Na página **Descrição Geral dos Alertas**, a área **Resumo do Tipo de Alerta** apresenta um resumo dos alertas. Os alertas críticos são apresentados primeiro. Pode clicar nas ligações nestes alertas para desagregar para obter informações mais detalhadas.
 
+        > [!NOTE]
         > Em alguns casos, um tipo de alerta pode ser apresentado mais do que uma vez na lista **Resumo do Tipo de Alerta**.
         > 
         > Por exemplo, as seguintes instâncias do tipo de alerta Espaço Livre em Disco Lógico podem aparecer na lista:
@@ -60,7 +56,7 @@ Os alertas do quadro de avisos fornecem anúncios de serviço importantes como u
 
 #### Para ver e gerir alertas do quadro de avisos
 
-1.  Na consola de administração do Intune, clique em **Descrição Geral do Sistema**
+1.  Na consola de administração do Intune, clique em **Descrição Geral do Sistema**.
 
 2.  Se existirem anúncios do serviço importantes, estes são apresentados na área **Quadro de Avisos**.
 
@@ -71,7 +67,7 @@ Na área de trabalho **Descrição Geral do Sistema**, consulte os resumos do Es
 
 #### Para ver o estado da sua subscrição
 
-1.  Na consola de administração do Intune, clique em **Descrição Geral do Sistema**
+1.  Na consola de administração do Intune, clique em **Descrição Geral do Sistema**.
 
 2.  Na área **Estado do Sistema**, pode examinar o estado dos vários componentes do Microsoft Intune. Muitos dos itens contêm ligações que permitem desagregar para obter mais informações. Por exemplo, em **Endpoint Protection**, selecionar o número de instâncias irá apresentar a área de trabalho **Endpoint Protection** com uma lista do software maligno que foi detetado. Selecionar o número de dispositivos irá apresentar a área de trabalho **Grupos** com uma lista de dispositivos nos quais foi detetado software maligno.
 
@@ -90,27 +86,28 @@ Os alertas que são marcados como fechados são eliminados permanentemente após
 
 1.  Na consola de administração do Intune, efetue um dos seguintes procedimentos:
 
-    1.  **Para fechar um alerta a partir da lista de Alertas** – Clique em **Alertas &gt; Todos os Alertas**. Selecione um alerta e, em seguida, clique em **Fechar Alerta**
+    1.  **Para fechar um alerta a partir da lista de Alertas** – Clique em **Alertas &gt; Todos os Alertas**. Selecione um alerta e, em seguida, clique em **Fechar Alerta**.
 
-    2.  **Para fechar um alerta para um dispositivo específico** – Clique em **Grupos &gt; Todos os Dispositivos**. Selecione um dispositivo e clique em **Ver Propriedades**. Em seguida, no separador **Alertas**, selecione um alerta e clique em **Fechar Alerta**
+    2.  **Para fechar um alerta para um dispositivo específico** – Clique em **Grupos &gt; Todos os Dispositivos**. Selecione um dispositivo e clique em **Ver Propriedades**. Em seguida, no separador **Alertas**, selecione um alerta e clique em **Fechar Alerta**.
 
     3.  **Para fechar um alerta do quadro de avisos** - Clique em **Descrição Geral do Sistema**. Clique no **X** junto ao alerta do quadro de avisos.
 
 #### Para ver e reativar alertas fechados
 
-1.  Na consola de administração do Intune, clique em **Alertas &gt; Todos os Alertas**
+1.  Na consola de administração do Intune, clique em **Alertas &gt; Todos os Alertas**.
 
-2.  Na lista **Filtros**, clique em **Fechados**
+2.  Na lista **Filtros**, clique em **Fechados**.
 
     Os nomes e as informações adicionais sobre os alertas são apresentados no painel de lista de gestão. Os detalhes sobre o alerta selecionado são apresentados no painel de pré-visualização.
 
-3.  Para reativar o alerta selecionado, clique em **Reativar Alerta**
+3.  Para reativar o alerta selecionado, clique em **Reativar Alerta**.
 
 ### Consulte também
-[Seja notificado através de alertas do Microsoft Intune](get-notified-by-microsoft-intune-alerts.md)
+[Seja notificado através de alertas do Microsoft Intune](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

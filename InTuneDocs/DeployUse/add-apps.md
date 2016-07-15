@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Adicionar aplicações | Microsoft Intune
-description:
-keywords:
+title: "Adicionar aplicações | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ As aplicações baseadas em ligações externas não são armazenadas no seu esp
 Permite gerir e implementar aplicações iOS gratuitas a partir da loja de aplicações. Também permite associar [políticas de gestão de aplicações móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicações compatíveis](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e rever o respetivo estado na consola de administrador.<br /><br />As aplicações iOS geridas não são armazenadas no seu espaço de armazenamento na nuvem do Intune.
 > [!TIP]As opções para dispositivos móveis só estão disponíveis quando [definir a Autoridade de Gestão de Dispositivos Móveis](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
 
+## Intune Software Publisher
+O **Microsoft Intune Software Publisher** é iniciado quando adiciona ou modifica aplicações a partir da consola do administrador do Microsoft Intune. A partir do publicador, pode selecionar e configurar um tipo de instalador de software que irá carregar aplicações (programas para computadores ou aplicações para dispositivos móveis) a armazenar no armazenamento na nuvem do Intune ou ligar a uma loja online ou aplicação Web.
+
+### Requisitos
+Antes de começar a utilizar o Microsoft Intune Software Publisher, tem de instalar a versão completa do [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Após a instalação, poderá ser necessário reiniciar o computador para que o Software Publisher abra corretamente.
+
+## Espaço de armazenamento na nuvem
+Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são embaladas e carregadas para o armazenamento na nuvem do Microsoft Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na nuvem, o qual é utilizado para armazenar aplicações e atualizações geridas. Uma subscrição paga inclui 20 GB, com a opção de adquirir armazenamento adicional.
+
+Pode ver quanto espaço está a utilizar e adquirir mais armazenamento no nó **Utilização do Armazenamento** da área de trabalho **Admin**.
+
+Estas regras aplicam-se à aquisição de armazenamento adicional baseado na nuvem para o Intune:
+
+-   Precisa de ter uma subscrição paga ativa para adquirir armazenamento adicional.
+
+-   Apenas os administradores de faturação ou administradores globais do seu Microsoft Online Service podem adquirir armazenamento adicional através do Portal de Gestão do Office 365. Para adicionar, eliminar ou gerir estes administradores, tem de ser um administrador global e iniciar sessão no Portal de Gestão do Office 365.
+
+-   Se for um cliente de licenciamento em volume que adquiriu o Intune ou o Suplemento Microsoft Intune através do Contrato Enterprise, contacte o seu Gestor de Conta Microsoft ou o Parceiro Microsoft para obter informações sobre os preços e adquirir armazenamento adicional.
+
+#### Requisitos de espaço de armazenamento na nuvem
+
+-   Certifique-se de que todos os ficheiros de instalação de aplicação estão na mesma pasta.
+
+-   O tamanho máximo para qualquer ficheiro que carregar é de 2 GB.
+
+
 ## Suporte para aplicações da Plataforma Universal do Windows (UWP)
 Os PC com Windows 10 não requerem uma chave de sideload para instalar aplicações de linha de negócio. No entanto, a chave de registo **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** tem de ter o valor **1** para permitir o sideload.
 
@@ -96,6 +115,8 @@ Em dispositivos Windows 10 Mobile, pode utilizar um certificado de assinatura de
 
 Em seguida, terá de adicionar as aplicações na consola do Intune antes de poder implementá-las. Pode adicionar aplicações a [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) ou [PC com Windows que pode gerir através do software de cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 
