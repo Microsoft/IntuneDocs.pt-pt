@@ -667,9 +667,6 @@
   "bfea7213f67b55807045bfd8b29fdb083b841a56": [
     "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
   ],
-  "bd7ae595f3edd0d0a21a9941570e567b5b82b56c": [
-    "InTuneDocs\\DeployUse\\manage-alerts-in-microsoft-intune.md"
-  ],
   "ff7d6f87458a353dbb201bbd1b83bb979434b6e5": [
     "InTuneDocs\\DeployUse\\manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md"
   ],
@@ -2435,12 +2432,6 @@
   "f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad": [
     "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
   ],
-  "6857ff52d29fcc12b54e2a7b11a747c1102acdcc": [
-    "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
-  ],
-  "28b5351be7d4fa46b4dee0b6145c5e9f81fe15af": [
-    "InTuneDocs\\DeployUse\\android-policy-settings-in-microsoft-intune.md"
-  ],
   "3292df922eeb53108f2b34d4113b0b6c5a114564": [
     "InTuneDocs\\DeployUse\\ios-policy-settings-in-microsoft-intune.md"
   ],
@@ -2457,9 +2448,6 @@
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
   "70347776f72a3534a4c384957aef01a909767b99": [
-    "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
-  ],
-  "0f2bdbf972ab953ff8a403c6eb9f484bb0a409a9": [
     "InTuneDocs\\DeployUse\\windows-10-policy-settings-in-microsoft-intune.md"
   ],
   "f507968f694fd78dc9aa458f22ffea708c1630cd": [
@@ -2676,9 +2664,6 @@
     "InTuneDocs\\DeployUse\\add-apps.md"
   ],
   "119a795697feb0cdbc2b93293cd66df7e77147cf": [
-    "InTuneDocs\\DeployUse\\add-apps.md"
-  ],
-  "2a76daee73f0dd3c6219a4cf42f9bb00fd83f257": [
     "InTuneDocs\\DeployUse\\add-apps.md"
   ],
   "b6e3e5189a1567dd5b13017d275ff4bd548e5fa1": [
