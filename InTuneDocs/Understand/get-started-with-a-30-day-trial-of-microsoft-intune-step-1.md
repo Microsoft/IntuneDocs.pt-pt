@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
+ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+
 
 ---
 
@@ -41,11 +35,11 @@ Antes de se inscrever ou iniciar sessão no Intune, deve considerar o seguinte:
 
 |Inscreva-se numa conta NOVA se alguma das situações abaixo for verdadeira:|Inicie sessão com a sua conta ESCOLAR ou PROFISSIONAL se:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Não tem uma conta escolar ou profissional.** As contas escolares ou profissionais são fornecidas quando se assina um contrato de licenciamento em volume com a Microsoft ou se subscreve o Office 365. Se a sua organização não tiver assinado um Enterprise Agreement ou um contrato de licenciamento em volume equivalente com a Microsoft (ou se não tiver uma conta do Office 365), significa que não tem uma conta do Microsoft Online Services que possa utilizar para iniciar sessão no Microsoft Online Services.<br /><br />**Vai eliminar o inquilino do Intune depois de concluir a avaliação de 30 dias.** Deverá inscrever-se numa conta nova se estiver a utilizar a avaliação gratuita do Intune apenas para fins de avaliação e se planear refazer a configuração do serviço Intune e o aprovisionamento de dispositivos após a avaliação. Esta é a opção recomendada se planear utilizar o Intune no System Center 2012 Configuration Manager.<br /><br />Caso se inscreva numa nova conta, não pode mudar mais tarde para uma conta escolar ou profissional existente para gerir essa conta ou combiná-la com contratos de licenciamento em volume existentes.|**Se tiver uma conta escolar ou profissional fornecida juntamente com um contrato de licenciamento em volume ou uma subscrição do Office 365 e utilizar esta avaliação para avaliar o Intune.**<br /><br />Se estiver a configurar o Intune numa conta existente, recomendamos que consulte [Escolher como gerir dispositivos](choose-how-to-manage-devices.md) antes de avançar com estes passos.|
+|**Não tem uma conta escolar ou profissional.** As contas escolares ou profissionais são fornecidas quando se assina um contrato de licenciamento em volume com a Microsoft ou se subscreve o Office 365. Se a sua organização não tiver assinado um Enterprise Agreement ou um contrato de licenciamento em volume equivalente com a Microsoft (ou se não tiver uma conta do Office 365), significa que não tem uma conta do Microsoft Online Services que possa utilizar para iniciar sessão no Microsoft Online Services.<br /><br />**Vai eliminar o inquilino do Intune depois de concluir a avaliação de 30 dias.** Deverá inscrever-se numa conta nova se estiver a utilizar a avaliação gratuita do Intune apenas para fins de avaliação e se planear refazer a configuração do serviço Intune e o aprovisionamento de dispositivos após a avaliação. Esta é a opção recomendada se planear utilizar o Intune no System Center 2012 Configuration Manager.<br /><br />Caso se inscreva numa nova conta, não pode mudar mais tarde para uma conta escolar ou profissional existente para gerir essa conta ou combiná-la com contratos de licenciamento em volume existentes.|**Se tiver uma conta escolar ou profissional fornecida juntamente com um contrato de licenciamento em volume ou uma subscrição do Office 365 e utilizar esta avaliação para avaliar o Intune.**<br /><br />Se estiver a configurar o Intune numa conta existente, recomendamos que veja [Escolher como gerir dispositivos](/intune/get-started/choose-how-to-manage-devices) antes de avançar com estes passos.|
 
 ## Inscrever-se ou iniciar sessão no Intune
 
-1.  Primeiro, [clique aqui para visitar página Inscrição do Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)
+1.  Primeiro, [clique aqui para visitar a página Inscrição no Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 2.  Na página **Inscrição** , tem duas opções:
 
@@ -63,9 +57,10 @@ Parabéns! Acabou de concluir o passo 1 das instruções da *avaliação do Micr
 
 >[!div class="step-by-step"]
 
->[&larr; **Introdução**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Adicionar utilizadores** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **Introdução**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Adicionar utilizadores** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

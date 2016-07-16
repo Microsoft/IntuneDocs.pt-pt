@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Implementação de políticas | Microsoft Intune
-description:
-keywords:
+title: "Implementação de políticas | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # Implementação de políticas
 Este tópico fornece recomendações específicas para uma implementação faseada de políticas no Microsoft Intune. Esta abordagem aplica-se às primeiras políticas aplicadas numa nova implementação do Intune ou às políticas adicionadas a uma implementação existente.
 
-Para obter informações gerais sobre as fases de implementação, consulte [Fases de implementação do Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md)
+Para obter informações gerais sobre as fases de implementação, veja [Fases de implementação do Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Fases de implementação de políticas
 As fases de implementação de políticas são:
@@ -61,9 +55,9 @@ Defina o âmbito da implementação de políticas do Intune:
 ## Prova de conceito
 Na fase Prova de conceito, teste a implementação de políticas num ambiente de laboratório em dispositivos e utilizadores que tenha configurado estritamente para fins de teste.
 
--   Permita a participação do suporte técnico nesta fase para saber que problemas podem surgir durante a implementação piloto e de produção. Estão disponíveis informações de resolução de problemas em [Resolver problemas de políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
+-   Permita a participação do suporte técnico nesta fase para saber que problemas podem surgir durante a implementação piloto e de produção. Estão disponíveis informações de resolução de problemas em [Resolver problemas de políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
--   Neste momento do processo, deve desenvolver planos de comunicação para utilizadores piloto e de produção. No mínimo, o plano deve incluir o que os comportamentos de dispositivo irão alterar e quando, o objetivo empresarial da alteração, o que fazer se os utilizadores ou o pessoal de TI encontrarem problemas, informações de ajuda autónoma e como contactar o suporte técnico.
+-   Neste momento no processo, deve desenvolver planos de comunicação para utilizadores piloto e de produção. No mínimo, o plano deve incluir o que os comportamentos de dispositivo irão alterar e quando, o objetivo empresarial da alteração, o que fazer se os utilizadores ou o pessoal de TI encontrarem problemas, informações de ajuda autónoma e como contactar o suporte técnico.
 
 ## Piloto
 Durante o piloto, irá implementar a política num pequeno grupo de utilizadores e dispositivos de teste. Existem considerações específicas de política piloto no Intune:
@@ -102,6 +96,7 @@ Durante o piloto, irá implementar a política num pequeno grupo de utilizadores
 [Resolver problemas de políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

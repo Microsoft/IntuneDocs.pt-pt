@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Instalar o cliente de PC Windows com o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,7 +40,7 @@ Em seguida, utilize um ou mais dos seguintes métodos para instalar o cliente:
 
 -   [Instalar o software de cliente do Microsoft Intune como parte de uma imagem](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Se já não necessita de gerir um computador com o Intune, pode extinguir o computador, cuja ação também remove o software de cliente do computador. Para mais informações, consulte [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+Se já não necessita de gerir um computador com o Intune, pode extinguir o computador, cuja ação também remove o software de cliente do computador. Para obter mais informações, veja [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 ### Para transferir o software de cliente
 
@@ -61,12 +55,14 @@ Se já não necessita de gerir um computador com o Intune, pode extinguir o comp
 
 3.  Extraia os conteúdos do pacote de instalação para uma localização segura na sua rede.
 
+    > [!IMPORTANT]
     > Não mude o nome ou remova o ficheiro **ACCOUNTCERT** que é extraído ou a instalação de software de cliente falhará.
 
 ### Para implementar manualmente o software de cliente
 
 1.  Num computador, navegue até à pasta onde estão localizados os ficheiros de instalação do software de cliente e, em seguida, execute o ficheiro **Microsoft_Intune_Setup.exe** para instalar o software de cliente.
 
+    > [!NOTE]
     > O estado da instalação é apresentado quando paira o rato sobre o ícone na barra de tarefas no computador cliente.
 
 ### Para implementar automaticamente o software de cliente através da Política de Grupo
@@ -79,6 +75,7 @@ Se já não necessita de gerir um computador com o Intune, pode extinguir o comp
 
 2.  Copie os ficheiros **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** e **MicrosoftIntune.accountcert** para uma localização na rede que possa ser acedida por todos os computadores nos quais o software de cliente vai ser instalado.
 
+    > [!IMPORTANT]
     > Não separe ou mude o nome dos ficheiros ou a instalação do software de cliente falhará.
 
 3.  Utilize a Política de Grupo para implementar software nos computadores na sua rede.
@@ -99,13 +96,13 @@ Os utilizadores podem inscrever cada um dos respetivos computadores através do 
 
 1.  Inicie sessão no portal da empresa a partir do computador que pretende inscrever.
 
-2.  Clique em **Adicionar Dispositivo**
+2.  Clique em **Adicionar Dispositivo**.
 
-3.  Clique em **Transferir Software** e, em seguida, clique em **Executar**
+3.  Clique em **Transferir Software** e, em seguida, clique em **Executar**.
 
 4.  Clique em **Seguinte** para iniciar o Assistente de Configuração do Microsoft Intune.
 
-5.  Quando o assistente de configuração for concluído, clique em **Concluir**
+5.  Quando o assistente de configuração concluir, clique em **Concluir**.
 
 ### Instalar o software de cliente do Microsoft Intune como parte de uma imagem
 Pode implementar o software de cliente do Intune em computadores como parte de uma imagem do sistema operativo ao utilizar o seguinte procedimento de exemplo como base:
@@ -142,7 +139,7 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
 
 ### Para verificar a instalação do software de cliente a partir da consola do administrador do Microsoft Intune
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Computadores**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Computadores**.
 
 2.  Desloque para baixo a lista de computadores para localizar os computadores geridos que estão a comunicar com o Intune ou para procurar um computador gerido específico ao escrever o nome, ou parte do nome do computador, na caixa **Procurar dispositivos**.
 
@@ -150,12 +147,13 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
 
 ### Para criar um relatório de inventário de computadores para apresentar todos os computadores inscritos
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Relatórios** &gt; **Relatórios de Inventário de Computadores**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Relatórios** &gt; **Relatórios de Inventário de Computadores**.
 
-2.  Na página **Criar Novo Relatório**, deixe todos os campos com os valores predefinidos (a não ser que pretenda aplicar filtros) e clique em **Ver Relatório**
+2.  Na página **Criar Novo Relatório** , deixe todos os campos com os valores predefinidos (a não ser que pretenda aplicar filtros) e clique em **Ver Relatório**.
 
 3.  A página **Relatório de Inventário de Computadores** é aberta numa nova janela que apresenta todos os computadores inscritos com êxito no Intune.
 
+    > [!TIP]
     > Clique em qualquer cabeçalho de coluna no relatório para ordenar a lista pelos conteúdos dessa coluna.
 
 
@@ -163,6 +161,7 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
 [Gerir Computadores com Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
