@@ -48,6 +48,6 @@ Quando o dispositivo com esse número IMEI é inscrito, normalmente, quando um u
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
