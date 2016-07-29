@@ -1,10 +1,10 @@
 ---
 title: "Extinguir aplicações | Microsoft Intune"
-description: 
+description: "Saiba como extinguir ou desinstalar aplicações com o Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 4857e2ff34175ee6daa64e6f95a59faaaaa3b322
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: fca1e1becb36bec2310c905ea8f65263c303b2c2
 
 
 ---
@@ -38,6 +38,6 @@ Quando o computador ou dispositivo verificar as aplicações, a aplicação ser�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

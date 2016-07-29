@@ -1,9 +1,9 @@
 ---
 title: Ativar a sua Chave de Produto | Microsoft Intune
-description: 
+description: "Pode utilizar uma chave de produto para resgatar uma subscrição do Intune ou adicionar utilizadores a uma subscrição existente."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: d575d77a5f951311dc0d94abc96767952111b146
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 36cec469166ebaac2def784fa3134dd56587f52a
 
 
 ---
@@ -52,6 +52,6 @@ Para transferir o software do System Center Configuration Manager, aceda ao [Cen
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

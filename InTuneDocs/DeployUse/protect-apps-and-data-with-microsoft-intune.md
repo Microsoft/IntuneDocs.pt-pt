@@ -1,10 +1,10 @@
 ---
 title: "Proteger aplicações e dados | Microsoft Intune"
 description: 
-keywords: 
+keywords: "Este tópico descreve as várias funcionalidades e capacidades do Intune que estão disponíveis para que possa ajudar a proteger os dados e aplicações da sua empresa."
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: f60541c2e9284ea795c5e9811ef2663113af57cb
 
 
 ---
@@ -39,7 +39,9 @@ Proteger o acesso aos recursos da empresa é apenas o primeiro passo para proteg
 - Proteger o acesso às aplicações exigindo um PIN/código de acesso ou credenciais empresariais.
 - Fazer com que todas as ligações Web abram no Intune Managed Browser.
 
-Este conjunto de regras é denominado [políticas de gestão de aplicações móveis (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  As políticas de MAM podem ser aplicadas às aplicações em execução nos dispositivos que podem ou não ser geridos por si.  Pode proteger os dados da empresa através de políticas de MAM para dispositivos inscritos no Intune, dispositivos inscritos e geridos por outro MDM de terceiros ou um dispositivo que não pode ser gerido por si, como os dispositivos pertencentes aos empregados.
+Este conjunto de regras é denominado [políticas de gestão de aplicações móveis (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  As políticas de MAM podem ser aplicadas às aplicações em execução nos dispositivos que podem ou não ser geridos por si.  
+
+Pode proteger os dados da empresa através de políticas de MAM para dispositivos **inscritos no Intune**, dispositivos **inscritos e geridos por uma solução de MDM de terceiros** ou dispositivos que **não estão inscritos em nenhuma solução de MDM**, como os dispositivos pertencentes aos empregados.
 
 Para associar uma aplicação a uma política de MAM, a aplicação tem de incorporar o Microsoft Intune App Software Development Kit (SDK) ou utilizar a ferramenta de encapsulamento de aplicações.
 
@@ -51,6 +53,6 @@ Além de restringir o movimento de dados, se um dispositivo se perder ou for rou
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

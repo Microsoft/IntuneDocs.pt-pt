@@ -1,10 +1,10 @@
 ---
 title: "Implementação de aplicações | Microsoft Intune"
-description: 
+description: "Recomendações para uma implementação faseada de aplicações no Microsoft Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 83306c0847eaf98d499e649308669a33306aa97e
 
 
 ---
@@ -44,7 +44,7 @@ Tenha em consideração o seguinte:
 
 -   Verifique se o instalador da aplicação que escolheu é suportado pela distribuição de aplicações do Intune, conforme descrito em [Adicionar aplicações com o Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Certifique-se de que os pré-requisitos de distribuição de aplicações estão instalados. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Certifique-se de que os pré-requisitos de distribuição de aplicações estão instalados. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Determine se o tipo de aplicação é suportado pelo Intune.
 
@@ -95,6 +95,6 @@ Durante o piloto, irá implementar a aplicação num pequeno grupo de utilizador
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

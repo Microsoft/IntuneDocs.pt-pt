@@ -1,10 +1,10 @@
 ---
 title: Proteger dispositivos | Microsoft Intune
-description: 
+description: "Saiba mais sobre algumas das formas como o Intune o pode ajudar a que proteger os dispositivos contra acesso não autorizado e outras ameaças."
 keywords: 
 author: Robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c52448ab454a764be922319fb930a85a86c3996e
-ms.openlocfilehash: c8f833593e6a4606b0dd56373d4dc016c7ea0924
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 2b33330f8ec8b46e3b4c6886463e8d3588410ab7
 
 
 ---
@@ -42,6 +42,6 @@ O Intune continua a suportar políticas de segurança para PCs Windows que não 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

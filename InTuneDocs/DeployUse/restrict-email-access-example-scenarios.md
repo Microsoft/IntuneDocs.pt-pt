@@ -1,10 +1,10 @@
 ---
 title: "Cenários de exemplo de restrição de acesso ao e-mail | Microsoft Intune"
-description: 
+description: "Alguns cenários de exemplo e como podem ser implementados com o acesso condicional."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 962840a608a7b228d5f2519ea566d996bb4e21a4
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: d9b9f602a8d1ca1f47b27b9048910fe7148848eb
 
 
 ---
@@ -81,6 +81,6 @@ Para tal, configure uma política de acesso condicional para o Exchange no local
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

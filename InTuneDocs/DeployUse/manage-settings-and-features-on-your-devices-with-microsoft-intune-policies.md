@@ -1,10 +1,10 @@
 ---
-title: "Gerir definições e funcionalidades nos seus dispositivos com políticas | Microsoft Intune"
-description: 
+title: "Gerir definições de dispositivos com políticas | Microsoft Intune"
+description: "Utilize o Intune para criar e implementar políticas que controlam as definições e funcionalidades em dispositivos que gere."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,27 +13,27 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
 
 
 ---
 
 # Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune
-As **políticas** do Microsoft Intune são grupos de definições que controlam funcionalidades em dispositivos móveis e computadores. Pode criar políticas através de modelos que contenham definições recomendadas ou personalizadas e depois implementá-las em dispositivos ou grupos de utilizadores.
+As *políticas* do Microsoft Intune são grupos de definições que controlam funcionalidades em dispositivos móveis e computadores. As políticas são criadas com modelos que contêm definições recomendadas ou personalizadas e, depois, implementadas em grupos de dispositivos ou de utilizadores.
 
-## Que tipos de política pode utilizar?
+## Tipos de políticas
 
 As políticas do Intune inserem-se nas categorias seguintes. A categoria que utilizar afeta a forma como cria e implementa a política.
 
 
-- **Políticas de configuração:** estas políticas são frequentemente utilizadas para gerir as funcionalidades e as definições de segurança nos seus dispositivos. Utilize as informações deste tópico para saber como criar e implementar estas políticas e para explorar as definições disponíveis.
-- **Políticas de conformidade do dispositivo:** estas políticas definem as regras e as definições que um dispositivos tem de cumprir para ser considerado conforme pelas políticas de acesso condicional. Também pode utilizar as políticas de conformidade para monitorizar e resolver a conformidade dos dispositivos independentemente do acesso condicional.
+- **Políticas de configuração**: estas políticas são frequentemente utilizadas para gerir as funcionalidades e as definições de segurança nos seus dispositivos. Utilize as informações deste tópico para saber como criar e implementar estas políticas e para explorar as definições disponíveis.
+- **Políticas de conformidade do dispositivo**: estas políticas definem as regras e as definições que um dispositivos tem de cumprir para ser considerado conforme pelas políticas de acesso condicional. Também pode utilizar as políticas de conformidade para monitorizar e resolver a conformidade dos dispositivos independentemente do acesso condicional.
 Para obter detalhes, consulte [Políticas de conformidade de dispositivos no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
-- **Políticas de acesso condicional:** estas políticas ajudam a proteger o e-mail e outros serviços dependendo das condições que especificar.
+- **Políticas de acesso condicional**: estas políticas ajudam-no a proteger o e-mail e outros serviços, dependendo das condições que especificar.
 Para obter detalhes, consulte [Restringir o acesso ao e-mail e aos serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-- **Políticas de inscrição de dispositivos de empresa:** para informações sobre as políticas de inscrição de dispositivos de empresa, consulte [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
-- **Políticas de acesso a recursos:** este grupo de políticas funciona em conjunto para ajudar os seus utilizadores a obterem acesso aos ficheiros e recursos de que precisam para trabalhar com êxito, onde quer que estejam.
+- **Políticas de inscrição de dispositivos da empresa**: para obter informações sobre as políticas de inscrição de dispositivos da empresa, veja [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+- **Políticas de acesso a recursos:** estas políticas funcionam em conjunto para ajudar os seus utilizadores a obterem acesso aos ficheiros e recursos de que precisam para trabalhar com êxito, onde quer que estejam.
 Para obter detalhes, consulte [Ativar o acesso aos recursos da empresa com o Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
 
@@ -46,16 +46,16 @@ Para obter uma lista completa das políticas do Intune, consulte [Referência de
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Política** &gt; **Políticas de Configuração** &gt; **Adicionar**.
 
-2.  Selecione a política que pretende, escolha entre utilizar as definições recomendadas para a política (quando disponível; pode alterar estas definições mais tarde) ou criar uma política personalizada com as suas próprias definições.
+2.  Selecione a política que pretende, escolha utilizar as definições recomendadas para a política (quando disponível; pode alterar estas definições mais tarde) ou criar uma política personalizada com as suas próprias definições.
 
     > [!TIP]
     > Para o ajudar a escolher a política correta, veja [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando estiver pronto, selecione **Criar Política**.
 
-4.  No ecrã **Criar Política** , configure um nome e uma descrição opcional para a política.
+4.  Na página **Criar Política**, configure um nome e uma descrição opcional para a política.
 
-5.  Configure as definições de política necessárias e, em seguida, clique em **Guardar Política**.
+5.  Configure as definições da política necessárias e, em seguida, escolha **Guardar Política**.
 
     Se precisar de ajuda em quaisquer definições de política, escolha o seu tipo de política na lista seguinte:
 
@@ -73,100 +73,98 @@ Para obter uma lista completa das políticas do Intune, consulte [Referência de
 
 4.  Na caixa de diálogo de confirmação selecione **Sim** para implementar a política de imediato ou selecione **Não** para criar uma política sem a implementar.
 
-Pode visualizar e editar a nova política navegando pelas secções de cada tipo de política na área de trabalho **Política** .
+Pode navegar pelas secções de cada tipo de política na área de trabalho **Política** para ver e editar a política nova.
 
 Quando cria uma política que utiliza as definições recomendadas, o nome da nova política é uma combinação do nome do modelo, data e hora. Ao editar a política, o nome é atualizado com a data e hora da edição.
 
-Agora que criou uma política, normalmente, irá querer implementá-la num ou mais grupos de utilizadores ou dispositivos.
+Depois de criar uma política, normalmente, irá querer implementá-la num ou mais grupos de utilizadores ou dispositivos.
 
 > [!TIP]
-> Não implementa todos os tipos de política. Por exemplo, a política de gestão de aplicações móveis não é implementada. Este tipo de política está associado a uma aplicação em relação à qual o implementará.
+> Não implementa todos os tipos de política. Por exemplo, a política de gestão de aplicações móveis (MAM) não é implementada. Este tipo de política está associado a uma aplicação em relação à qual o implementará.
 
 ## Implementar uma política de configuração
 
-1.  Na área de trabalho **Política**, selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
+1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
 
 2.  Na caixa de diálogo **Gerir a Implementação** , para:
 
-    -   **Para implementar a política** - Selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
+    -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implementar a política** - escolha **Cancelar**.
+    -   Para fechar a caixa de diálogo sem implementar a política, escolha **Cancelar**.
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
 ## Gerir políticas
 
-1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Política** e, em seguida, navegue até à política que pretende gerir e selecione-a.
+1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** e, em seguida, navegue até à política que pretende gerir e selecione-a.
 
 2.  Selecione uma das seguintes ações:
 
-- **Editar** - Abre as propriedades da política selecionada para poder efetuar alterações.
-- **Eliminar** - Elimina a política selecionada.<br>Quando elimina uma política, esta é removida de todos os grupos nos quais estava implementada.
-- **Gerir a Implementação** - Selecione o grupo no qual pretende implementar a política e selecione **Adicionar**.
+- **Editar** - abra as propriedades da política selecionada para poder fazer alterações.
+- **Eliminar** - elimine a política selecionada.<br>Quando elimina uma política, esta é removida de todos os grupos nos quais estava implementada.
+- **Gerir a Implementação** - selecione o grupo no qual pretende implementar a política e escolha **Adicionar**.
 
 
 ## Perguntas mais frequentes sobre as políticas do Intune
 
 ### Quanto tempo é necessário para que os dispositivos móveis obtenham a política ou as aplicações após a implementação?
-Quando uma política ou aplicação é implementada, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço Intune. Geralmente, o processo demora menos de 5 minutos.
+Quando uma política ou aplicação é implementada, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de 5 minutos.
 
-Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, são realizadas mais 3 tentativas.  Se o dispositivo estiver offline (por exemplo, se estiver desligado, ou se não estiver ligado a uma rede), pode não receber as notificações.
+Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, o Intune faz mais três tentativas.  Se o dispositivo estiver offline (por exemplo, se estiver desligado ou se não estiver ligado a uma rede), pode não receber as notificações. Neste caso, o dispositivo irá obter a política na entrada seguinte agendada com o serviço do Intune, da seguinte forma:
 
-Neste caso, o dispositivo irá obter uma política na entrada seguinte agendada com o serviço Intune, da seguinte forma:
-
-- iOS e Mac OS X - A cada 6 horas
-- Android - a cada 8 horas
-- Windows Phone - a cada 8 horas
-- Dispositivos Windows RT inscritos - a cada 24 horas
-- PC com Windows 8.1 e Windows 10 inscritos como dispositivos - A cada 8 horas
+- iOS e Mac OS X: a cada seis horas.
+- Android: a cada oito horas.
+- Windows Phone: a cada oito horas.
+- Dispositivos Windows RT inscritos: a cada 24 horas.
+- PCs com Windows 8.1 e Windows 10 inscritos como dispositivos: a cada oito horas.
 
 Se o dispositivo tiver acabado de se inscrever, a frequência de entrada será maior, conforme se segue:
 
-- iOS e Mac OS X - A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas
-- Android - a cada 3 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas
-- Windows Phone - a cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas
-- PC Windows inscritos como dispositivos - A cada 3 minutos durante 30 minutos e, em seguida, a cada 8 horas
+- iOS e Mac OS X: a cada 15 minutos durante seis horas e, em seguida, a cada seis horas.
+- Android: a cada três minutos durante 15 minutos, depois a cada 15 minutos durante duas horas e, em seguida, a cada oito horas.
+- Windows Phone: a cada cinco minutos durante 15 minutos, depois a cada 15 minutos durante duas horas e, em seguida, a cada oito horas.
+- PCs Windows inscritos como dispositivos: a cada três minutos durante 30 minutos e, em seguida, a cada oito horas.
 
-Os utilizadores também podem iniciar a aplicação do Portal da Empresa e sincronizar o dispositivo para verificar imediatamente uma política a qualquer altura.
+Os utilizadores também podem abrir a aplicação do Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer altura.
 
 ### Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
-Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que deem entrada ou durante as entradas agendadas, conforme indicado nas tabelas acima.  Quando define um dispositivo ou utilizador como o visado específico de uma ação, tal como uma eliminação, bloqueio, reposição de código de acesso, implementação de aplicação, implementação de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma implementação de política, o Intune começará imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço Intune para receber estas atualizações.
+Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que deem entrada ou durante as entradas agendada regulares.  Quando segmenta um dispositivo ou utilizador especificamente com uma ação, tal como uma eliminação, bloqueio, reposição de código de acesso, implementação de aplicação, implementação de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma implementação de política, o Intune começará imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço do Intune para receber estas atualizações.
 
-Outras alterações como a revisão das informações de contacto no portal da empresa não dão origem a uma notificação imediata para os dispositivos.
+Outras alterações, como a revisão das informações de contacto no portal da empresa, não dão origem a uma notificação imediata para os dispositivos.
 
 > [!TIP]
-> Quando for implementada uma política com definições num dispositivo Android, é pedido ao utilizador que efetue uma ação para estar em conformidade com a política. Até que os utilizadores efetuem esta ação ou o dispositivo seja reiniciado, as novas definições de política não entrarão em vigor.
+> Quando for implementada uma política com definições num dispositivo Android, é pedido ao utilizador que efetue uma ação para estar em conformidade com a política. Enquanto o utilizador não efetuar essa ação ou o dispositivo não for reiniciado, as novas definições da política não entrarão em vigor.
 
-### Se forem implementadas várias políticas para o mesmo utilizador ou dispositivo, como posso saber que definições irão ser aplicadas?
-É importante ter presente que ao serem implementadas  duas ou mais políticas para o mesmo utilizador ou dispositivo, a avaliação relativa à definição aplicada é realizada ao nível da definição individual.
+### Se forem implementadas várias políticas no mesmo utilizador ou dispositivo, como posso saber que definições irão ser aplicadas?
+Quando são implementadas duas ou mais políticas no mesmo utilizador ou dispositivo, a avaliação relativa à definição que vai ser aplicada é realizada ao nível das definições individuais:
 
--   As definições de políticas de conformidade têm sempre precedência sobre as definições de políticas de configuração
+-   As definições de políticas de conformidade têm sempre precedência sobre as definições de políticas de configuração.
 
--   A definição de políticas de conformidade mais restritivas é aplicada se for avaliada em comparação com a mesma definição numa política de conformidade diferente
+-   A definição de política de conformidade mais restritiva é aplicada se for avaliada em comparação com a mesma definição noutra política de conformidade.
 
 -   Se uma definição de política de configuração entrar em conflito com uma definição de uma política de configuração diferente, este conflito será apresentado na consola do Intune. Tem de resolver manualmente esses conflitos.
 
-### O que acontece quando as políticas de gestão de aplicações móveis (MAM) entram em conflito entre si? Qual delas é aplicada à aplicação?
-Os valores em conflito são as definições mais restritivas disponíveis numa política de gestão de aplicações móveis, exceto no que respeita aos campos de entrada de números (como tentativas de PIN antes da reposição).  Os campos de intrada de números serão definidos para os valores que teria uma política MAM que criasse na consola através da opção de definições recomendadas.
+### O que acontece quando as políticas de gestão de aplicações móveis entram em conflito entre si? Qual delas é aplicada à aplicação?
+Os valores em conflito são as definições mais restritivas disponíveis numa política de MAM, exceto no que respeita aos campos de entrada de números (como tentativas de PIN antes da reposição).  Os campos de entrada de números serão definidos para os valores que teria uma política de MAM que criasse na consola através da opção de definições recomendadas.
 
 Os conflitos ocorrem quando duas definições de políticas são iguais.  Por exemplo, se configurou duas políticas MAM idênticas, à exceção da definição de copiar/colar.  Neste cenário, a definição de copiar/colar será definida para o valor mais restritivo, mas as definições restantes serão aplicadas conforme configuradas.
 
-Se uma política for implementada para a aplicação e entrar em vigor e, em seguida, for implementada uma segunda, a primeira implementada terá precedência e manter-se-á aplicada, e a segunda estará em conflito. Todavia, se forem aplicadas em simultâneo, não existindo portanto nenhuma política precedente, ficam ambas em conflito e quaisquer definições em conflito serão definidas para os valores mais restritivos.
+Se uma política for implementada na aplicação e entrar em vigor e, em seguida, for implementada uma segunda, a primeira implementada terá precedência e manter-se-á aplicada, ao passo que a segunda estará em conflito. Se forem aplicadas ao mesmo tempo, o que significa que nenhuma tem precedência sobre a outra, estarão ambas em conflito. As definições em conflito serão definidas para os valores mais restritivos.
 
 ### O que acontece quando políticas personalizadas do iOS entram em conflito?
-O Intune não avalia o payload de ficheiros de configuração da Apple ou a política OMA-URI personalizada, serve meramente como mecanismo de entrega.
+O Intune não avalia o payload dos ficheiros do Apple Configurator nem de políticas OMA-URI personalizadas. Serve apenas como o mecanismo de entrega.
 
-Por conseguinte, quando implementar uma política personalizada, certifique-se de que as definições configuradas não entram em conflito com a política de conformidade, de configuração ou outras políticas personalizadas. No caso de uma política personalizada com conflitos de definições, a ordem pela qual as definições são aplicadas é aleatória.
+Quando implementar uma política personalizada, confirme que as definições configuradas não entram em conflito com a política de conformidade, de configuração ou outras políticas personalizadas. No caso de uma política personalizada com conflitos de definições, a ordem pela qual as definições são aplicadas é aleatória.
 
-### O que acontece quando uma política é eliminada ou já não é aplicável?
-Quando elimina uma política ou remove um dispositivo de um grupo no qual a política foi implementada, a política e as definições serão removidos do dispositivo de acordo com as seguintes tabelas:
+### O que acontece quando uma política é eliminada ou deixa de ser aplicável?
+Quando elimina uma política ou remove um dispositivo de um grupo no qual a política foi implementada, a política e as definições serão removidos do dispositivo de acordo com as listas seguintes.
 
 #### Dispositivos inscritos
 
-- Perfis de Wi-Fi, VPN, certificado e e-mail - estes perfis são removidos de todos os dispositivos inscritos suportados.
-- Todos os outros tipos de política
-    - **Dispositivos Windows e Android** - as definições não são removidas do dispositivo.
-    - **Dispositivos Windows Phone 8.1** - as seguintes definições são removidas:
+- Perfis de Wi-Fi, VPN, certificado e e-mail: estes perfis são removidos de todos os dispositivos inscritos suportados.
+- Todos os outros tipos de políticas:
+    - **Dispositivos Windows e Android**: as definições não são removidas do dispositivo.
+    - **Dispositivos Windows Phone 8.1**: as definições seguintes são removidas:
         - Palavra-passe obrigatória para desbloquear os dispositivos móveis
         - Permitir palavras-passe simples
         - Comprimento mínimo da palavra-passe
@@ -192,24 +190,24 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
         - Permitir Bluetooth
         - Permitir NFC
         - Permitir Wi-Fi
-    
-    - **iOS** - todas as definições são removidas, exceto:
+
+    - **iOS**: todas as definições são removidas, exceto:
         - Permitir chamadas em roaming
         - Permitir roaming de dados
         - Permitir sincronização automática em roaming
 
 #### PCs Windows com o software de cliente Intune
 
-- **Definições do Endpoint Protection** - As definições são restauradas para os valores recomendados. A única exceção é a definição **Aderir ao Serviço de Proteção Ativa Microsoft** para a qual o valor predefinido é **Não**. Para obter detalhes, consulte [Ajude a proteger os PC Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
-- **Definições de atualizações de software** - As definições são repostas para o estado predefinido do sistema operativo. Para obter detalhes, consulte [Manter os PC com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
-- **Definições do Microsoft Intune Center** - Todas as informações de contacto para suporte que foram configuradas pela política são eliminadas dos computadores.
-- **Definições da Firewall do Windows** - As definições são repostas para o estado predefinido do sistema operativo do computador. Para obter detalhes, consulte [Ajude a proteger os PC Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Definições do Endpoint Protection**: as definições são restauradas para os valores recomendados. A única exceção é a definição **Aderir ao Serviço de Proteção Ativa Microsoft**, na qual o valor predefinido é **Não**. Para obter detalhes, consulte [Ajude a proteger os PC Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Definições de atualizações de software**: as definições são repostas para o estado predefinido do sistema operativo. Para obter detalhes, consulte [Manter os PC com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Definições do Microsoft Intune Center**: todas as informações de contacto para suporte que foram configuradas pela política são eliminadas dos computadores.
+- **Definições da Firewall do Windows**: as definições são repostas para o estado predefinido do sistema operativo do computador. Para obter detalhes, consulte [Ajude a proteger os PC Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
-### Posso atualizar as políticas num dispositivo para garantir que estão atualizadas (aplica-se a PC Windows que executem apenas o software de cliente do Intune)
+### Posso atualizar as políticas num dispositivo para garantir que estão atualizadas (aplica-se a PCs Windows que executem apenas o software de cliente do Intune)?
 
 1.  Em qualquer grupo de dispositivos, selecione em que dispositivos pretende atualizar as políticas e selecione **Tarefas Remotas** &gt; **Atualizar Políticas**.
-2.  Selecione **Tarefas Remotas** no canto inferior direito da consola de administração do Intune para verificar o estado das tarefas.
+2.  Escolha **Tarefas Remotas**, no canto inferior direito da consola de administração do Intune, para verificar o estado das tarefas.
 
 ### Onde posso encontrar as políticas de resolução de problemas?
 
@@ -217,6 +215,6 @@ Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubles
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

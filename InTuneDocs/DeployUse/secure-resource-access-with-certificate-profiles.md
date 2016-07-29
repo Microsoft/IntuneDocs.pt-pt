@@ -1,10 +1,10 @@
 ---
-title: "Ativar o acesso a recursos da empresa através de perfis de certificados|Microsoft Intune"
-description: 
+title: Perfis de certificado para acesso a recursos | Microsoft Intune
+description: Proteja o acesos a VPN, Wi-Fi e e-mail com um certificado instalado no dispositivo de cada utilizador.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 98c32f924b60734d9a592ebdd7e00429dc32af26
 
 
 ---
@@ -47,7 +47,7 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil irá ass
 > -    Se não tiver uma autoridade de certificação empresarial, tem de criar uma.
 >- Se decidir, com base nas suas plataformas de dispositivos, utilizar o perfil de protocolo SCEP (Simple Certificate Enrollment Protocol), terá também de configurar um servidor do Serviço de Inscrição de Dispositivos de Rede (NDES).
 >-  Se planeia utilizar o SCEP ou perfis .PFX, tem de transferir e configurar o Microsoft Intune Certificate Connector.
-> A configuração de todos estes certificados está descrita no tópico [Configure certificate infrastructure (Configurar a infraestrutura de certificados)](configure-certificate-infrastructure.md).
+> Todas estas configurações estão descritas em [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) e [Configurar a infraestrutura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md).
 
 ### Passos seguintes
 - [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil irá ass
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Utilização de largura de banda de rede do Intune | Microsoft Intune
-description:
-keywords:
+title: "Utilização de largura de banda de rede do Intune | Microsoft Intune"
+description: "utilização de largura de banda de rede do Intune"
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 2a600b7948c55a408314aedc3895c25fcc09251d
+
 
 ---
 
 # Utilização de largura de banda de rede do Intune
 
-Antes de configurar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], reveja este tópico e outros requisitos listados em [O que deve saber antes de iniciar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
+Antes de configurar o [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], reveja este tópico e outros requisitos indicados em [O que deve saber antes de iniciar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Utilize as informações nas seguintes secções para planear o tráfego de rede dos clientes do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].
 
@@ -83,15 +77,17 @@ Para saber mais sobre o BITS e computadores Windows, veja [Background Intelligen
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-Para utilizar o BranchCache, o computador cliente tem de ter o BranchCache ativado e, em seguida, ser configurado para o **modo de cache distribuída**
+Para utilizar o BranchCache, o computador cliente tem de ter o BranchCache ativado e, em seguida, ser configurado para o **modo de cache distribuída**.
 
 Por predefinição, o BranchCache e o modo de cache distribuída são ativados no computador quando o cliente do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] é instalado. No entanto, se o cliente já tiver uma Política de Grupo que desativa o BranchCache, o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] não substitui essa política e o BranchCache permanecerá desativado nesse computador.
 
-Se utiliza o BranchCache, deve comunicar com os outros administradores na sua organização responsáveis pela gestão da Política de Grupo e a política de Firewall do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], para garantir que não implementam políticas que desativem o BranchCache ou exceções da Firewall. Para obter mais informações sobre o BranchCache, consulte [Descrição Geral do BranchCache](http://technet.microsoft.com/library/hh831696.aspx)
+Se utiliza o BranchCache, deve comunicar com os outros administradores na sua organização responsáveis pela gestão da Política de Grupo e a política de Firewall do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], para garantir que não implementam políticas que desativem o BranchCache ou exceções da Firewall. Para obter mais informações sobre o BranchCache, consulte [Descrição Geral do BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ### Consulte também
 [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jul16_HO4-->
 
 

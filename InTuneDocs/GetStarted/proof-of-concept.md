@@ -1,10 +1,10 @@
 ---
 title: Prova de conceito | Microsoft Intune
-description: 
+description: "Recomendações para a fase prova de conceito de uma implementação do Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4c01b7cec6474153fcea465fc050ac419ca2eec5
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: bffd46199873f01e2c03fe8b30cdfb3c425a07ee
 
 
 ---
@@ -78,6 +78,6 @@ Seguem-se alguns desafios que poderá encontrar na fase de **Prova de conceito**
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

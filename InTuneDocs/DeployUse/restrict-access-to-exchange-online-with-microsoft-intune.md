@@ -1,9 +1,9 @@
 ---
-title: Restringir o acesso ao e-mail no Exchange Online e no novo Exchange Online Dedicado| Microsoft Intune
-description: 
+title: Restringir o acesso ao e-mail no Exchange Online | Microsoft Intune
+description: Proteja e controle o acesso ao e-mail da empresa no Exchange Online com o acesso condicional.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 87663f2677a006e5db525f8897fea4bf05cb5912
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 5030e74215960189bf35632bd6966b411d2e6a66
 
 
 ---
@@ -260,6 +260,6 @@ No dashboard do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
