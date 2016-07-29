@@ -1,10 +1,10 @@
 ---
-title: "Proteger os dispositivos Windows com a autenticação multifator | Microsoft Intune"
-description: 
+title: Multi-factor Authentication para Windows | Microsoft Intune
+description: "O Intune integra a autenticação multifator (MFA) para ajudar a proteger os seus recursos empresariais."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
-ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: c1f9c60a1c79d23bab62617ed237ad982e82c39d
 
 
 ---
 
 # Protect Windows devices with multi-factor authentication
-O Microsoft Intune integra a autenticação multifator (MFA) para ajudar a proteger os seus recursos empresariais. A MFA requer fatores de autenticação como a autenticação de texto, para além de nomes de utilizador e palavras-passe. O Intune suporta a utilização da MFA durante a inscrição de dispositivos Windows 8.1 ou posterior, Windows Phone 8.1 ou Windows 10 Desktop e Mobile. 
+O Microsoft Intune integra a autenticação multifator (MFA) para ajudar a proteger os seus recursos empresariais. A MFA requer fatores de autenticação como a autenticação de texto, para além de nomes de utilizador e palavras-passe. O Intune suporta a utilização da MFA durante a inscrição de dispositivos Windows 8.1 ou posterior, Windows Phone 8.1 ou Windows 10 Desktop e Mobile.
 
 ## Requisitos de infraestrutura no local para a MFA no ADFS
 Para configurar a autenticação multifator, precisa de:
@@ -55,7 +55,6 @@ Para obter mais informações sobre como ativar a MFA no ADFS, consulte [Gerir R
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

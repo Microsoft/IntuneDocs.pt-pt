@@ -1,20 +1,20 @@
 ---
 title: "Configurar a gestão de dispositivos Windows com o Microsoft Intune | Microsoft Intune"
-description: 
+description: "Ative a gestão de dispositivos móveis (MDM) para PCs Windows, incluindo dispositivos Windows 10, com o Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 79377078bf5b4c6dad0a3dc4a07a2e84aa2563f8
 
 
 ---
@@ -26,18 +26,20 @@ A criação de um CNAME DNS ajuda os utilizadores a ligar e a inscrever-se no In
 
 ### Configurar a gestão de dispositivos Windows
 
-  1.  Crie um registo de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o Web site da sua empresa fosse contoso.com, criaria um CNAME em DNS que redirecionaria EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com. Se existir mais do que um domínio verificado, crie um registo CNAME para cada domínio. Os registos de recursos CNAME têm de conter as seguintes informações:
+  1.  Crie um registo de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o Web site da sua empresa fosse contoso.com, criaria um CNAME em DNS que redirecionaria EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com. Embora a entrada DNS CNAME seja opcional para a inscrição de dispositivos Windows, recomenda-se que crie um ou mais registos quando for necessário, para facilitar o processo de inscrição destes dispositivos. Se não for encontrado nenhum registo CNAME, é pedido ao utilizador que introduza o nome do servidor de MDM manualmente.
+
+  Se existir mais do que um domínio verificado, crie um registo CNAME para cada domínio. Os registos de recursos CNAME têm de conter as seguintes informações:
 
   |TIPO|Nome do anfitrião|Aponta para|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Hora|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Hora|
 
-    As alterações ao registo DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
+  As alterações ao registo DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – Suporta o redirecionamento para o serviço Intune com reconhecimento de domínio a partir do nome de domínio do e-mail
+  **EnterpriseEnrollment-s.manage.microsoft.com** – Suporta o redirecionamento para o serviço Intune com reconhecimento de domínio a partir do nome de domínio do e-mail
 
-    **EnterpriseRegistration.windows.net** – Suporta os dispositivos Windows 8.1 e Windows 10 Mobile que serão registados no Azure Active Directory utilizando a respetiva conta escolar ou profissional
+  **EnterpriseRegistration.windows.net** – Suporta os dispositivos Windows 8.1 e Windows 10 Mobile que serão registados no Azure Active Directory utilizando a respetiva conta escolar ou profissional
 
   2.  Na [consola de administração do Intune](http://manage.microsoft.com), clique em **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows**.
   ![Caixa de diálogo da gestão de dispositivos Windows](../media/enroll-intune-winenr.png)
@@ -48,6 +50,6 @@ A criação de um CNAME DNS ajuda os utilizadores a ligar e a inscrever-se no In
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

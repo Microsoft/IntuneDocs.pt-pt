@@ -1,9 +1,9 @@
 ---
 title: "Inscrever dispositivos móveis e instalar aplicações | Microsoft Intune"
-description: 
+description: "Explica como inscrever dispositivos móveis e instalar uma aplicação num dispositivo inscrito no Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cb729533107d511fa0cc863ec6ab842e7624982
-ms.openlocfilehash: 78cf5472a6069e09b5072253635066d95094a89e
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 8070a02be93673b83b13dc49d0fe545606bc6cee
 
 
 ---
@@ -64,6 +64,6 @@ Parabéns! Acabou de concluir o último passo do *Guia de introdução do Intune
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Definições de políticas de MAM para Android | Microsoft Intune"
-description: 
+description: "Este tópico descreve as definições da política de gestão de aplicações móveis para dispositivos Android."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 9bd645753162eb45d065f964fec0b5cda5bb3725
 
 
 ---
@@ -96,6 +96,6 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

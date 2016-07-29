@@ -1,9 +1,9 @@
 ---
-title: "Criar grupos para organizar utilizadores e dispositivos de subscrições de avaliação | Microsoft Intune"
-description: 
+title: Criar grupos para organizar utilizadores e dispositivos | Microsoft Intune
+description: "Como criar grupos de dispositivos e grupos de utilizadores quando se inscreve numa avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
-ms.openlocfilehash: f438b2b5e53d9bc119341effae1533d26cc9a47b
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: 4c0ccb2d27d90c4a3aeebb3129b9b13a707b26a0
 
 
 ---
@@ -65,6 +65,6 @@ Parabéns! Acabou de concluir o passo 3 das instruções da *avaliação do Micr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

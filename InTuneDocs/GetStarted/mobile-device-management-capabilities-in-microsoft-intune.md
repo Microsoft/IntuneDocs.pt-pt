@@ -1,10 +1,10 @@
 ---
 title: "Funcionalidades de gestão de dispositivos móveis | Microsoft Intune"
-description: 
+description: "Leia este tópico para saber como o Intune o pode ajudar a gerir os dispositivos móveis que inscrever no serviço."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 720112c7c20883200557510da2a42ee402eff50a
 
 
 ---
@@ -42,7 +42,8 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 |Implementação e gestão de aplicações|Fornece uma série de ferramentas para ajudá-lo a gerir aplicações móveis ao longo do respetivo ciclo de vida, incluindo a implementação de aplicações a partir de ficheiros de instalação e lojas de aplicações, monitorização detalhada do estado das aplicações e remoção de aplicações.|[Implementar aplicações no Microsoft Intune](/intune/deploy-use/deploy-apps)|
 |Aplicações compatíveis e incompatíveis|Permite-lhe especificar listas de aplicações compatíveis (que os utilizadores podem instalar) e incompatíveis (que não podem ser instaladas pelos utilizadores).|[Definições de política do iOS no Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Gestão de aplicações móveis|Configure restrições para aplicações utilizando a gestão de aplicações móveis para dispositivos que gere com o Intune, bem como para dispositivos que não são geridos pelo Intune. Isto ajuda a aumentar a segurança dos dados da sua empresa, restringindo operações como a ação copiar e colar, efetuar cópias de segurança externas de dados e a transferência de dados entre aplicações.|[Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Preparar as aplicações iOS para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Preparar as aplicações Android para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|Configuração de aplicação móvel|Utilize políticas de configuração de aplicações móveis para fornecer definições para aplicações iOS que poderão ser necessárias quando o utilizador executar a aplicação. Por exemplo, uma aplicação pode requerer que o utilizador especifique um número de porta ou informações de início de sessão. Isto pode ajudar a simplificar a configuração de aplicações e reduzir o número de chamadas para o suporte técnico.|[Configurar aplicações iOS com políticas de configuração de aplicações móveis no Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Configuração de aplicação móvel iOS|Utilize políticas de configuração de aplicações móveis para fornecer definições para aplicações iOS que poderão ser necessárias quando o utilizador executar a aplicação. Por exemplo, uma aplicação pode requerer que o utilizador especifique um número de porta ou informações de início de sessão. Isto pode ajudar a simplificar a configuração de aplicações e reduzir o número de chamadas para o suporte técnico.|[Configurar aplicações iOS com políticas de configuração de aplicações móveis no Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Perfis de aprovisionamento de aplicações móveis iOS|O Intune proporciona-lhe as ferramentas para implementar proativamente perfis nas aplicações iOS que estão prestes a expirar.|[Utilizar políticas de perfil de aprovisionamento móvel de iOS para impedir as aplicações de expirar](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Browser gerido|Após implementar o browser gerido para os utilizadores, pode configurar a política para browsers geridos para controlar os sites que esses utilizadores podem visitar. Para além disso, também pode aplicar políticas de gestão de aplicações móveis para o browser gerido.|[Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|O Intune permite efetuar a integração com o Microsoft Passport for Work, que é um método de início de sessão alternativo para Windows 10 que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual.|[Controlar as definições do Microsoft Passport em dispositivos com o Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

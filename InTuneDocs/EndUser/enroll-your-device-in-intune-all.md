@@ -1,9 +1,9 @@
 ---
 title: Inscrever o dispositivo no Intune | Microsoft Intune
-description: 
+description: "Fornece ligações para os passos sobre como inscrever dispositivos no Intune"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
@@ -11,8 +11,8 @@ ms.service:
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
-ms.openlocfilehash: b38457634263b8fbda0c6b6e3e5d9156dd6668a8
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: ded795ec0547e80398b6f01dee612c3eb157d155
 
 
 ---
@@ -34,6 +34,7 @@ Para ver as instruções de inscrição, utilize a ligação que corresponde ao 
 - [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

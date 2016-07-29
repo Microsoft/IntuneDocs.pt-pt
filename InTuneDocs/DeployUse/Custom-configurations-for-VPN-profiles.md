@@ -1,20 +1,20 @@
 ---
 title: "Configurações personalizadas para perfis VPN | Microsoft Intune"
-description: 
+description: "Utilize configurações personalizadas para criar perfis de VPN no Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5c48a4cead6250864f5b10444d99d062441bd99
-ms.openlocfilehash: 7e7c50552b5a61804e759a7ec5443029d4bd4584
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 
 
 ---
@@ -86,19 +86,19 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 Para quaisquer perguntas sobre a forma como estas definições devem ser utilizadas ou para obter mais detalhes sobre o que fazem, os clientes devem consultar a documentação do CSP: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## Definições de URI para VPN por aplicação Android no PulseSecure
-### URI PERSONALIZADO PARA LISTA DE PACOTES 
+### URI PERSONALIZADO PARA LISTA DE PACOTES
 -  Tipo de dados = Cadeia
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  Valor = Lista de pacotes separada por delimitadores.
    - Delimitadores: ponto e vírgula (;), dois pontos (:), vírgula (,), barra (|)
 
-Exemplos: 
+Exemplos:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
 ### URI PERSONALIZADO PARA MODO (OPCIONAL)
 - Tipo de Dados = Cadeia
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > Notas
 > - Utilize o mesmo *nome* que atribuiu ao perfil personalizado
@@ -112,6 +112,6 @@ Exemplos:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

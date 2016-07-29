@@ -3,7 +3,7 @@ title: "Guia de avaliação do Intune | Microsoft Intune"
 description: "Introdução e pré-requisitos sobre como configurar uma avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 813b4babc78ae29d213f7c783b6afb3e368c52bd
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: f64fc7c8758e87aeb4866c21c46e0db7349713c5
 
 
 ---
@@ -66,6 +66,6 @@ Está na altura de começar a utilizar a sua subscrição de avaliação de 30 d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

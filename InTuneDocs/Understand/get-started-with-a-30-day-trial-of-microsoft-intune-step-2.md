@@ -1,9 +1,9 @@
 ---
-title: "Adicionar utilizadores à avaliação de 30 dias do Microsoft Intune | Microsoft Intune"
-description: 
+title: "Adicionar utilizadores à avaliação de 30 dias do Intune | Microsoft Intune"
+description: "Como adicionar utilizadores, individualmente ou em volume, quando se inscreve numa avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cb729533107d511fa0cc863ec6ab842e7624982
-ms.openlocfilehash: 15e641f4f5f60c4a3eb3a7b09cab8cb9ef788cba
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: fb9c1cde3288b090961b46f0b47b32bfb67b6828
 
 
 ---
@@ -79,6 +79,6 @@ Parabéns! Acabou de concluir o passo 2 das instruções da *avaliação do Micr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

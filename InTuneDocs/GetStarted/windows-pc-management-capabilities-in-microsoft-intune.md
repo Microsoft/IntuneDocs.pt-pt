@@ -1,10 +1,10 @@
 ---
 title: "Capacidades de gestão de PCs Windows | Microsoft Intune"
-description: 
+description: Saiba mais acerca das funcionalidades do Intune quando gere os PCs Windows com o software de cliente do Intune.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
-ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
 
 
 ---
@@ -74,6 +74,6 @@ Seguem-se os requisitos de software para instalar o computador cliente do Intune
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

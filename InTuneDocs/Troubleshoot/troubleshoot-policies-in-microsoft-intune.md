@@ -1,9 +1,9 @@
 ---
 title: "Resolver problemas de políticas | Microsoft Intune"
-description: 
+description: "Resolva problemas de configuração de políticas."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
 
 
 ---
@@ -46,7 +47,8 @@ Na captura de ecrã abaixo, pode ver dois exemplos claros:
 
 ![Política de dispositivo do Intune](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] Lembre-se de que quando duas políticas com diferentes níveis de restrição se aplicam ao mesmo dispositivo ou utilizador, na prática, é aplicada a política mais restrita.
+> [!NOTE]
+> Lembre-se de que quando duas políticas com diferentes níveis de restrição se aplicam ao mesmo dispositivo ou utilizador, na prática, é aplicada a política mais restrita.
 
 ## Política e intervalos de atualização
 Tenha em atenção que as políticas são atualizadas em intervalos regulares. Em geral, as políticas devem ser registadas nos dispositivos num período de 15 minutos após efetuar uma alteração. Eis mais detalhes sobre os intervalos regulares de atualização de políticas:
@@ -68,7 +70,8 @@ Nos dispositivos Windows sem MDM, os erros de políticas no ficheiro policyplatf
 
 2.  Aguarde 20 minutos para que o software de cliente seja removido.
 
-    > [!NOTE] Não tente remover o cliente dos Programas e Funcionalidades.
+    > [!NOTE]
+    > Não tente remover o cliente nos Programas e Funcionalidades.
 
 3.  No menu Iniciar, escreva **UAC** para abrir as definições de Controlo de Conta de Utilizador.
 
@@ -110,6 +113,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

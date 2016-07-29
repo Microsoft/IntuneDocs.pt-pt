@@ -1,10 +1,10 @@
 ---
 title: "Âmbito do projeto | Microsoft Intune"
-description: 
+description: "Recomendações para a fase de âmbito de projeto de uma implementação do Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
-ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 14c65bdef3c9663c81ac9ecc00b662845f3209e5
 
 
 ---
@@ -60,7 +60,7 @@ A maioria dos seus esforços na fase de âmbito está centrada no planeamento e 
 
 
  > [!NOTE]
- > 
+ >
  > Estes modelos podem ser úteis quando trabalhar no âmbito do projeto:
  > > - [Intune ou Intune com o modelo de decisão do Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
  > - [Planear o modelo para as aplicações móveis](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
@@ -113,6 +113,6 @@ Seguem-se alguns desafios que poderá encontrar na fase de **Âmbito do projeto*
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

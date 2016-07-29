@@ -1,10 +1,10 @@
 ---
 title: "Experiência de utilizador final para aplicações com MAM ativada | Microsoft Intune"
-description: 
+description: "Este tópico descreve o que esperar quando a sua aplicação é gerida por políticas de gestão de aplicações móveis."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
-ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+translationtype: Human Translation
+ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
+ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
 
 
 ---
@@ -47,7 +48,7 @@ As políticas de gestão de aplicações móveis (MAM) apenas se aplicam quando 
     ![Captura de ecrã que mostra a localização do ficheiro aberta com a lista de ficheiros existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
     > [!NOTE]
-    > [!NOTE] Quando altera uma política implementada, as alterações serão aplicadas da próxima vez que abrir a aplicação.
+    > Quando altera uma política implementada, as alterações serão aplicadas na próxima vez que abrir a aplicação.
 
 ##  Aceder ao OneDrive num dispositivo Android
 
@@ -170,6 +171,6 @@ Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheir
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

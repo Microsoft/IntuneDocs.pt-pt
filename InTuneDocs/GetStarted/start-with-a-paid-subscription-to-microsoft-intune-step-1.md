@@ -1,9 +1,9 @@
 ---
 title: "Inscrever-se ou iniciar sessão no Intune | Microsoft Intune"
-description: 
+description: "Como se pode inscrever numa subscrição do Intune ou como iniciar sessão se já tiver uma subscrição"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
-ms.openlocfilehash: 1a67e22ef8f2b9d0c8bf0c816c774a15acc24f35
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: a5a1b14db9b029d4fcd1fbd76806d0c527275b2b
 
 
 ---
@@ -51,6 +51,6 @@ Parabéns! Acabou de concluir o passo 1 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

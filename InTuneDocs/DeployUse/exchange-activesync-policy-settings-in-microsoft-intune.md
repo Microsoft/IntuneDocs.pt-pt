@@ -1,20 +1,20 @@
 ---
 title: "Definições de política do Exchange ActiveSync | Microsoft Intune"
-description: 
+description: "Utilize a política do Exchange ActiveSync do Intune para configurar definições que lhe permitam controlar funcionalidades em dispositivos geridos pelo Exchange ActiveSync."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: 7ab9c5f283f65c82e1713d29923fa16a6a542352
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 0779fca11a692ce6843ef2ebf1c6a459273fc7cc
 
 
 ---
@@ -81,6 +81,6 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Browsers suportados do Microsoft Intune | Microsoft Intune
-description: 
+description: Browsers que o Intune suporta
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/06/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: 2524ff0c6139029b162fd58ed209e2d1c284df76
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: b9b37433ec4cc06b85ae79728a180f61478394ec
 
 
 ---
@@ -35,8 +35,6 @@ Antes de configurar o Intune, reveja este tópico e outros requisitos listados e
 
 
 
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

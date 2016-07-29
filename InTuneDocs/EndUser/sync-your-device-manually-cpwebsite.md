@@ -1,26 +1,27 @@
 ---
-title: Sincronizar o seu dispositivo manualmente | Microsoft Intune
+title: Sincronizar o seu dispositivo manualmente com o Web site do Portal da Empresa | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
-ms.openlocfilehash: 2fc13272848bd70d4ebed2750c550f7a5eb13508
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 7b57851ac2985b906263af21dc7c979d6aeaf01e
 
 
 ---
 
 
-# Sincronizar o seu dispositivo manualmente
+# Sincronizar o seu dispositivo manualmente com o Web site do Portal da Empresa
 
 Se a instalação da aplicação demorar demasiado tempo, pode tentar sincronizar o dispositivo manualmente, que poderá ajudar a acelerar a instalação. Utilize as instruções abaixo que correspondam ao tipo de dispositivo ou à versão do Windows que está a utilizar. A sincronização do dispositivo para acelerar as instalações de aplicações só funciona nas versões listadas abaixo.
 
@@ -31,8 +32,6 @@ Se a instalação da aplicação demorar demasiado tempo, pode tentar sincroniza
 
 
 
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Criar grupos para organizar utilizadores e dispositivos | Microsoft Intune
-description: 
+description: "Explica como atribuir licenças a utilizadores na sua subscrição do Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
-ms.openlocfilehash: 00ac59ffe219109dd48c47e59de9ecf588f07344
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: afdff3d04fa0b6aeba44a3296147ebf207319c49
 
 
 ---
@@ -75,6 +75,6 @@ Parabéns! Acabou de concluir o passo 5 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

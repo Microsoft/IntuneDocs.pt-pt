@@ -1,20 +1,20 @@
 ---
 title: Utilizar grupos para gerir utilizadores e dispositivos | Microsoft Intune
-description: 
+description: "Criar e gerir grupos com a área de trabalho Grupos."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-ms.reviewer: jeffgilb
+ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
-ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
 
 
 ---
@@ -153,6 +153,6 @@ Cada política tem um **Valor Pretendido** e um **Estado**. O valor pretendido �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

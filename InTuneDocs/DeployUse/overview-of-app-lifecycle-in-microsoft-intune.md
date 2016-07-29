@@ -1,20 +1,20 @@
 ---
 title: "Descrição geral do ciclo de vida das aplicações | Microsoft Intune"
-description: 
+description: "Saiba mais sobre o ciclo de vida das aplicações geridas do Intune, desde que são adicionadas até acabarem por ser extintas."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
-ms.openlocfilehash: 882f0aa030d1d9e03ca50baed3f618f7a719b5b5
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: ede28a99224b3d0bd94a4300b4b8b85815ae9591
 
 
 ---
@@ -51,6 +51,6 @@ Eventualmente, é provável que as aplicações implementadas fiquem desatualiza
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

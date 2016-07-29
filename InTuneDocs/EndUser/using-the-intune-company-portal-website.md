@@ -1,9 +1,9 @@
 ---
 title: Utilizar o site do Portal da Empresa do Intune | Microsoft Intune
-description: 
+description: "Descreve o Web site do Portal da Empresa e fornece ligações para passos para tarefas que pode fazer no Web site"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 79e8d7da83997dc9c89b95097ca50493af1f9f6b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfce55b6d23554d1c3df2b62d6bf5fdd4607974b
 
 
 ---
@@ -24,19 +24,19 @@ O [Site do Portal da Empresa](http://portal.manage.microsoft.com) é uma página
 
 Pode utilizar o site do Portal da Empresa para:
 
--   [Reposição do código de acesso do dispositivo](reset-your-passcode-cpwebsite.md)
-
 -   [Mudar o nome do seu dispositivo](rename-your-device-cpwebsite.md)
 
 -   [Remover o dispositivo](remove-your-device-cpwebsite.md)
 
 -   [Repor o dispositivo](reset-your-device-cpwebsite.md)
 
+-   [Reposição do código de acesso do dispositivo](reset-your-passcode-cpwebsite.md)
+
 -   [Bloquear remotamente um dispositivo](remote-lock-your-device-cpwebsite.md)
 
 -   [Sincronizar o dispositivo manualmente para acelerar a instalações de aplicações lentas](sync-your-device-manually-cpwebsite.md)
 
--   Localizar as informações de contacto do seu administrador de TI, se este as tiver configurado. 
+-   Localizar as informações de contacto do seu administrador de TI, se este as tiver configurado.
 
 -   Ver detalhes acerca do seu dispositivo, incluindo se está em conformidade com as políticas da sua empresa ou escola
 
@@ -50,6 +50,6 @@ Pode efetuar a maioria das mesmas tarefas no **site do Portal da Empresa** que p
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

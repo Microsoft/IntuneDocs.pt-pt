@@ -1,10 +1,10 @@
 ---
 title: Ativar o acesso aos recursos da empresa | Microsoft Intune
-description: 
+description: Os perfis de e-mail, de VPN e de Wi-FI funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 556b9ea5ac5edcc1126dbcc6310ab7dfa917cb56
+translationtype: Human Translation
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: ae9b3be57e4008d25f5222025c057fc4211f1119
 
 
 ---
@@ -55,6 +56,6 @@ Ajuda a proteger o acesso aos recursos da empresa, incluindo redes sem fios e li
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

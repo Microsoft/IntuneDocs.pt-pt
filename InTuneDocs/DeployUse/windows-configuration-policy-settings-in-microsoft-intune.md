@@ -1,10 +1,10 @@
 ---
 title: "Definições de política do Windows | Microsoft Intune"
-description: 
+description: "Utilize a política de configuração geral do Windows (Windows 8.1 e posterior) do Intune para configurar as definições para dispositivos Windows 8 e Windows 8.1 inscritos."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
-ms.openlocfilehash: aa62528e588b0579669ab8d115766efd72e6f9b2
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 809c8dc87e9b7c2f27e8015a55606e376c5319ab
 
 
 ---
 
 # Definições de política do Windows no Microsoft Intune
-Utilize a **Política de configuração geral do Windows (Windows 8.1 e posterior)** para configurar as definições para dispositivos Windows 8.1 e Windows 8 inscritos:
+Utilize a **política de configuração geral do Windows (Windows 8.1 e posterior)** do Microsoft Intune para configurar as definições seguintes para dispositivos Windows 8 e Windows 8.1 inscritos:
 
 ## Definições de aplicabilidade
 
@@ -120,6 +120,6 @@ Utilize a **Política de configuração geral do Windows (Windows 8.1 e posterio
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

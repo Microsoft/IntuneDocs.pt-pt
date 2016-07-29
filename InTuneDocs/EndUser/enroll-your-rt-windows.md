@@ -1,9 +1,9 @@
 ---
 title: Inscrever o dispositivo Windows RT no Intune | Microsoft Intune
-description: 
+description: Descreve como inscrever dispositivos Windows RT no Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 47341626bceaa5d4ad0775c3d22d80985ce699cc
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 2cf905d4c3189ad1be9cd8feae8525d02aad7355
 
 
 ---
@@ -53,7 +53,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

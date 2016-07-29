@@ -1,25 +1,27 @@
 ---
 title: "Definições de política do Windows Phone 8.1 | Microsoft Intune"
-description: 
+description: "O Intune fornece uma variedade de definições gerais incorporadas, que pode configurar em dispositivos Windows Phone 8.1. Além disso, especificar valores de OMA-URI para criar definições personalizadas que não estão disponíveis no Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
-ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
 
 
 ---
 
 # Definições de política do Windows Phone 8.1 no Microsoft Intune
+
+O Intune fornece uma variedade de definições gerais incorporadas, que pode configurar em dispositivos Windows Phone 8.1. Além disso, especificar valores de OMA-URI para criar definições personalizadas que não estão disponíveis no Intune.
 
 ## Definições de configuração geral
 
@@ -170,6 +172,6 @@ Na caixa de diálogo **Adicionar ou Editar Definição OMA-URI**, especifique as
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

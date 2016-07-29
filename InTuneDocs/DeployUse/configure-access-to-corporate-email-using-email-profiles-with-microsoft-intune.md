@@ -1,10 +1,10 @@
 ---
-title: "Configurar o acesso a e-mail empresarial através de perfis de e-mail | Microsoft Intune"
-description: 
+title: Aceder ao e-mail empresarial com perfis de e-mail | Microsoft Intune
+description: "As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: angrobe
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -24,7 +24,7 @@ Muitas plataformas móveis incluem um cliente de e-mail *nativo* que é fornecid
 
 Se precisar de prevenção de perda de dados (DLP) adicional, escolha [Acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), que controla o acesso à caixa de correio do utilizador em qualquer cliente de e-mail, incluindo clientes de e-mail nativos.
 
-As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis.   A maioria das plataformas móveis inclui um cliente de e-mail *nativo* que é fornecido como parte do sistema operativo.  Nas plataformas suportadas, os clientes de e-mail nativos podem ser configurados pelo Microsoft Intune para permitir que os utilizadores acedam ao respetivo e-mail da empresa nos dispositivos pessoais sem qualquer configuração.  
+As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis. A maioria das plataformas móveis inclui um cliente de e-mail *nativo* que é fornecido como parte do sistema operativo.  Nas plataformas suportadas, os clientes de e-mail nativos podem ser configurados pelo Microsoft Intune para permitir que os utilizadores acedam ao respetivo e-mail da empresa nos dispositivos pessoais sem qualquer configuração.  
 
 Os administradores de TI ou os utilizadores também podem optar por instalar clientes de e-mail alternativos como, por exemplo, o Microsoft Outlook para Android ou iOS.  Estes clientes de e-mail podem não suportar perfis de e-mail e não são configuráveis através de perfis de e-mail do Microsoft Intune.  
 
@@ -82,7 +82,7 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador ter
     |**Número de dias de e-mail a sincronizar**|O número de dias de e-mail que pretende sincronizar ou selecione **Sem limite** para sincronizar todos os e-mails disponíveis.|
     |**Agenda de sincronização** (Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda pela qual os dispositivos irão sincronizar os dados do Exchange Server. Também pode selecionar **Quando chegarem mensagens**, que sincroniza os dados assim que chegam, ou **Manual**, em que o utilizador do dispositivo tem de iniciar a sincronização.|
     |**Utilizar SSL**|Utilize comunicação SSL (Secure Sockets Layer) ao enviar e-mails, ao receber e-mails e ao comunicar com o Exchange Server.<br /><br />Para dispositivos com o Samsung KNOX 4.0 ou posterior, tem de exportar o seu certificado SSL do Exchange Server e implementá-lo como um Perfil de Certificado Fidedigno do Android no Intune. O Intune não suporta o acesso a este certificado se for instalado no Exchange Server através de outros meios.|
-    |**Tipo de conteúdo a sincronizar**|Selecione os tipos de conteúdo que pretende sincronizar com os dispositivos.| 
+    |**Tipo de conteúdo a sincronizar**|Selecione os tipos de conteúdo que pretende sincronizar com os dispositivos.|
     |**Permitir o envio de e-mail a partir de aplicações de terceiros** (apenas iOS)|Permitir que o utilizador selecione este perfil como conta predefinida para o envio de e-mail e permitir que as aplicações de terceiros abram o e-mail na aplicação de e-mail nativo, por exemplo, para anexar ficheiros ao e-mail.|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

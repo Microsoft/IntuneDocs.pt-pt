@@ -1,20 +1,20 @@
 ---
 title: "Políticas de firewall para PCs Windows | Microsoft Intune"
-description: 
+description: "O Intune pode ajudá-lo a proteger os PCs que gere com o cliente Intune de várias formas, incluindo a configurar definições da Firewall do Windows."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 20970051e0be6cd1b700691ec87ecdd4c536a0c6
 
 
 ---
@@ -119,6 +119,6 @@ Após ter configurado os valores básicos acima, pode configurar exceções que 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

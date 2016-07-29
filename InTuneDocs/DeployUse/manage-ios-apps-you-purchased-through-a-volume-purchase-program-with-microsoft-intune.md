@@ -1,10 +1,10 @@
 ---
-title: "Gerir aplicações iOS compradas através de um programa de compra em grandes volumes | Microsoft Intune"
-description: 
+title: "Gerir aplicações iOS compradas em volume | Microsoft Intune"
+description: "Utilize o Intune para gerir aplicações compradas em volume na Apple ao importar as informações da licença a partir da loja de aplicações, ao controlar a quantidade de licenças que utilizou e ao impedir que instale mais cópias da sua aplicação do que as que tem."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
-ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
 
 
 ---
 
 # Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune (Gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune)
-Algumas lojas de aplicações permitem comprar várias licenças para uma aplicação que pretende executar na empresa. Isto ajuda a reduzir a sobrecarga administrativa de controlar várias cópias adquiridas de aplicações.
+A iOS App Store permite-lhe comprar várias licenças para uma aplicação que pretende executar na sua empresa. Isto ajuda a reduzir a sobrecarga administrativa de controlar várias cópias adquiridas de aplicações.
 
-O Microsoft Intune ajuda-o a gerir aplicações compradas através de um programa destes ao importar as informações da licença a partir da loja de aplicações, ao controlar a quantidade de licenças que utilizou e ao impedir que instale mais cópias da sua aplicação.
+O Microsoft Intune ajuda-o a gerir aplicações compradas através deste programa ao importar as informações da licença a partir da loja de aplicações, ao controlar a quantidade de licenças que utilizou e ao impedir que instale mais cópias da sua aplicação do que as que tem.
 
 > [!Important]
 > Atualmente, o Intune atribui licenças de aplicações VPP iOS a utilizadores e não a dispositivos. Por este motivo, os utilizadores finais têm de introduzir a respetiva palavra-passe do ID Apple para instalar a aplicação.
@@ -87,6 +87,6 @@ Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

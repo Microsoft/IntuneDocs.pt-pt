@@ -1,10 +1,10 @@
 ---
 title: Inscrever o dispositivo Android no Intune | Microsoft Intune
-description: 
+description: Descreve como encriptar dispositivos Android no Intune
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 76cc1a43e09039285be76858155ef22f7b41cf9b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 ---
@@ -44,7 +44,27 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Se estiver a utilizar o Android 6.0 ou posterior, efetue este passo. Caso contrário, avance para o passo seguinte. 
+5.  Inicie sessão na aplicação do Portal da Empresa com a sua conta e palavra-passe profissional ou escolar e, em seguida, toque em **Iniciar sessão**.
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  No ecrã **Configuração de Acesso à Empresa**, toque em **COMEÇAR**.
+
+    ![Ecrã Configuração de acesso à empresa](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  No ecrã **Porquê inscrever o seu dispositivo?**, leia sobre o que pode fazer quando inscrever o seu dispositivo e, em seguida, toque em **CONTINUAR**.
+
+    ![Ecrã Porquê inscrever o seu dispositivo](./media/and-enroll-4b-why-enroll.png)
+
+8.  Reveja uma lista do que o administrador de TI pode e não pode ver no seu dispositivo e toque em **CONTINUAR**.
+
+    ![Definições de privacidade](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  No ecrã **O que vem a seguir**, leia sobre o que acontece durante a inscrição e, em seguida, toque em **INSCREVER**.
+
+    ![Ecrã O que vem a seguir](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Se estiver a utilizar o Android 6.0 ou posterior, efetue este passo. Caso contrário, avance para o passo seguinte.
 
     Se o administrador de TI tiver configurado determinadas políticas, poderá ver as seguintes mensagens:
     -   **Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?**
@@ -62,26 +82,6 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
     Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acede aos seus contactos!** A Google controla o texto da mensagem e a Microsoft não a pode alterar. Ao permitir o acesso, só permite à aplicação Portal da Empresa criar, utilizar e gerir a sua conta de trabalho.
 
     Se negar o acesso, irá aparecer a mensagem novamente quando tocar em **Enviar Dados**, mas pode desativar futuras mensagens ao tocar na caixa de verificação **Não voltar a perguntar**. Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ative a permissão.
-
-6.  Inicie sessão na aplicação do Portal da Empresa com a sua conta e palavra-passe profissional ou escolar e, em seguida, toque em **Iniciar sessão**.
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  No ecrã **Configuração de Acesso à Empresa**, toque em **COMEÇAR**.
-
-    ![Ecrã Configuração de acesso à empresa](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  No ecrã **Porquê inscrever o seu dispositivo?**, leia sobre o que pode fazer quando inscrever o seu dispositivo e, em seguida, toque em **CONTINUAR**.
-
-    ![Ecrã Porquê inscrever o seu dispositivo](./media/and-enroll-4b-why-enroll.png)
-
-9.  Reveja uma lista do que o administrador de TI pode e não pode ver no seu dispositivo e toque em **CONTINUAR**.
-
-    ![Definições de privacidade](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  No ecrã **O que vem a seguir**, leia sobre o que acontece durante a inscrição e, em seguida, toque em **INSCREVER**.
-
-    ![Ecrã O que vem a seguir](./media/and-enroll-4d-what-comes-next.png)
 
 11.  No ecrã **Ativar administrador de dispositivo**, toque em **Ativar**.
 
@@ -115,13 +115,14 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
 
 Antes de tentar instalar aplicações da empresa, aceda a **Definições** &gt; **Segurança** e ative os **Recursos desconhecidos**. Se não ativar esta opção antes de tentar instalar aplicações, verá a mensagem "Instalação bloqueada." Por motivos de segurança, o dispositivo está definido para bloquear as instalações de aplicações obtidas a partir de origens desconhecidas." Pode tocar em **Definições** no diálogo de erro, para ir para a opção **Origens desconhecidas**.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
+
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

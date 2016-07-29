@@ -1,26 +1,27 @@
 ---
-title: Sincronizar o seu dispositivo manualmente | Microsoft Intune
+title: Sincronizar o seu dispositivo iOS manualmente | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 3cb6b8236afc227df9df34848cb81bcbe82a612e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d4758ec542585c718aff5a4115b825fe71b8073d
 
 
 ---
 
 
-# Sincronizar o seu dispositivo manualmente
+# Sincronizar o seu dispositivo iOS manualmente
 
 Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as instruções seguintes para sincronizar manualmente o seu dispositivo iOS, o que poderá ajudar a acelerar a instalação. A funcionalidade de Sincronização aplica-se apenas a iOS, e não a Mac OS X.
 
@@ -42,6 +43,7 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

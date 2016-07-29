@@ -1,9 +1,9 @@
 ---
 title: "Terminar a inscrição do seu dispositivo do Intune caso tenha recusado os Termos de Utilização | Microsoft Intune"
-description: 
+description: "Descreve como anular a inscrição de dispositivos Android no Intune se tiver recusado os Termos de Utilização e não conseguir iniciar sessão na aplicação do Portal da Empresa"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: abcb7dbe4f3423fcba108a7ea0c4b2efa295c970
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 82cc94eb37b11251343706d60a45fb78458cab7e
 
 
 ---
@@ -38,12 +38,14 @@ Para terminar a inscrição do seu dispositivo no Intune e desinstalar a aplica�
 
     Já pode desinstalar a aplicação do portal da Empresa.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
+
 
 ### Consulte também
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

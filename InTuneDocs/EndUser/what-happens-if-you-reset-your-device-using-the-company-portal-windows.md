@@ -1,26 +1,27 @@
 ---
-title: O que acontece ao repor o seu dispositivo utilizando o Portal da Empresa? | Microsoft Intune
+title: O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 33809dbb8ee297a7f88a9615d8cec128ceadc96e
 
 
 ---
 
 
-# O que acontece ao repor o seu dispositivo utilizando o Portal da Empresa?
+# O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa?
 
 Ao utilizar a aplicação do Portal da Empresa ou o [Web site do Portal da Empresa](reset-your-device-cpwebsite.md) para repor o dispositivo Windows, este repõe o dispositivo para as respetivas definições de fábrica e elimina todas as aplicações, definições e dados, incluindo dados pessoais. O que acontece em cada dispositivo depende do dispositivo e da forma como o utiliza, conforme descrito na seguinte tabela. Para obter instruções sobre como repor o seu dispositivo perdido ou roubado, veja [Reset (erase) your lost or stolen device (Repor (apagar) o dispositivo perdido ou roubado)](reset-erase-your-lost-or-stolen-device-windows.md).
 
@@ -36,6 +37,7 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

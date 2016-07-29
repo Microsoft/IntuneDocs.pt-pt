@@ -1,10 +1,10 @@
 ---
-title: "Implementar e monitorizar políticas de conformidade no Microsoft Intune | Microsoft Intune"
-description: 
+title: "Implementar e monitorizar políticas de conformidade | Microsoft Intune"
+description: "Utilize as instruções passo a passo neste tópico para implementar e monitorizar uma política de conformidade de dispositivos."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 4345f46b67e1a2d77580fa87e4143bd96588f4e3
 
 
 ---
@@ -31,7 +31,8 @@ Implemente a política de conformidade que [criou](create-a-device-compliance-po
 
 Utilize o resumo do estado e os alertas na página **Descrição Geral** da área de trabalho **Política** para identificar problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho **Dashboard** .
 
-> [!IMPORTANT]Se não tiver implementado uma política de conformidade e, em seguida, ativar uma política de acesso condicional do Exchange, todos os dispositivos direcionados terão permissão de acesso.
+> [!IMPORTANT]
+> Se não tiver implementado uma política de conformidade e, em seguida, ativar uma política de acesso condicional do Exchange, todos os dispositivos direcionados terão permissão de acesso.
 
 ## Como são resolvidos os conflitos de políticas do Intune
 Se forem aplicadas várias políticas do Intune a um dispositivo, podem ocorrer conflitos de políticas. Se as definições de políticas se sobrepuserem, o Intune utiliza as regras abaixo para resolver eventuais conflitos:
@@ -71,6 +72,6 @@ Agora, pode utilizar a política de conformidade com políticas de acesso condic
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

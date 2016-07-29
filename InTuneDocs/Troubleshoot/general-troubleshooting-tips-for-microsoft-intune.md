@@ -1,20 +1,20 @@
 ---
 title: "Sugestões de resolução de problemas genéricos | Microsoft Intune"
-description: 
+description: Recursos gerais para ajudar a resolver problemas com o Intune.
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: d321930262a9bcf9542c757fdf0b945d0419930c
 
 
 ---
@@ -92,6 +92,6 @@ Os tópicos indicados abaixo incluem ajuda para a resolução de problemas espec
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

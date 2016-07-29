@@ -1,9 +1,9 @@
 ---
 title: "Acessibilidade para Pessoas Portadoras de Deficiência | Microsoft Intune"
-description: 
+description: "Leia informações sobre a acessibilidade dos produtos Microsoft."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3a503548-434c-410a-a419-7eadd7e7fb99
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: c666275027344d2972a94bb515ca32109936290a
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 42c85455dd9a99b86ed475b4d24d2c1c08cb9e49
 
 
 ---
@@ -30,6 +30,6 @@ A Microsoft está empenhada em tornar os seus produtos e serviços mais fáceis 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

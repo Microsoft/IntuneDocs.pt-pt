@@ -1,10 +1,10 @@
 ---
-title: Restringir o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado| Microsoft Intune
-description: 
+title: Restringir o acesso ao e-mail no Exchange no local | Microsoft Intune
+description: Proteja e controle o acesso ao e-mail da empresa no Exchange no local com o acesso condicional.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 2913021daf5ee440d5d9b8e577ad0bac6bcb3511
 
 
 ---
@@ -123,6 +123,6 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,20 +1,20 @@
 ---
 title: "Resolução de problemas de acesso aos recursos da empresa | Microsoft Intune"
-description: 
+description: "Códigos de erros e de estado neste tópico para o ajudar a resolver problemas de acesso a recursos."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
-ms.openlocfilehash: ed14e92d48a2604d16ceee8b844ae5cc0c45f051
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: f8594f6004dbd44306e00a76ab09c18bea4286b3
 
 
 ---
@@ -372,6 +372,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

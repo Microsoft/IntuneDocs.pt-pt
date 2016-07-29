@@ -1,10 +1,10 @@
 ---
 title: "Tarefas de gestão comuns do PC Windows | Microsoft Intune"
-description: 
+description: "Reveja as tarefas neste tópico para saber como gerir os computadores que executam o software de cliente do Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
-ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+ms.sourcegitcommit: 385ed597e4af569dc5a2b559d693b6c8421f86fa
+ms.openlocfilehash: e08fe1cdaa45ba957986511afb60a54da8152677
 
 
 ---
 
 # Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune
-Reveja as tarefas neste tópico para saber como gerir os computadores que executam o cliente do Intune. Se ainda não instalou o cliente nos seus computadores, veja [Install the Windows PC client with Microsoft Intune (Instalar o cliente de PC Windows com o Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
+Reveja as tarefas neste tópico para saber como gerir os computadores que executam o software de cliente do Intune. Se ainda não instalou o cliente nos seus computadores, veja [Install the Windows PC client with Microsoft Intune (Instalar o cliente de PC Windows com o Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Utilizar políticas para simplificar a gestão do PC
@@ -164,7 +164,7 @@ Antes de poder implementar software para um utilizador, tem de associar o utiliz
 
 > [!IMPORTANT]
 > You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
-     
+
 
 Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
 This functionality replaces the existing Windows Remote Assistance functionality in Intune.
@@ -172,7 +172,7 @@ This functionality replaces the existing Windows Remote Assistance functionality
 
 ### Before you start
 
-Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
+Before you begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
 - You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
 - Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
@@ -205,8 +205,8 @@ Before you can begin to establish and respond to remote assistance requests, you
 <br>If a request goes unanswered for more than 4 hours, it is removed.
 2. To accept the request, choose **Approve request and launch Remote Assistance**.
 3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
-4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
- 
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC.
+
 While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
 ### Close the remote assistance session
@@ -214,6 +214,7 @@ While in a remote assistance session, you can use all available TeamViewer comma
 From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

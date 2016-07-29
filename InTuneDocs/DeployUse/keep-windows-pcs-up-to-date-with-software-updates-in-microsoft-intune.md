@@ -1,37 +1,32 @@
 ---
-# required metadata
-
-title: Atualizações de software para PCs Windows | Microsoft Intune
-description:
-keywords:
+title: "Atualizações de software para PCs Windows | Microsoft Intune"
+description: "O Intune ajuda-o a manter os seus computadores atualizados ao garantir que as correções de erros e atualizações de software mais recentes são rapidamente instaladas."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 5112dca8c30a872b26c73a948a8f14ac63957567
+
 
 ---
 
 # Manter os computadores com Windows atualizados com atualizações de software no Microsoft Intune
 O Microsoft Intune pode ajudar a proteger os seus computadores geridos de várias formas, incluindo a gestão de atualizações de software que mantêm os seus computadores atualizados, assegurando que os patches e as atualizações de software mais recentes são rapidamente instaladas.
 
-Se ainda não instalou o cliente Intune nos seus computadores, consulte o artigo [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md)
+Se ainda não instalou o cliente Intune nos seus computadores, consulte [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Quando estiverem disponíveis novas atualizações do Microsoft Update ou tiver criado uma atualização de terceiros e estas forem aplicáveis aos seus computadores geridos, é apresentada uma notificação na página **Descrição geral** da área de trabalho **Atualizações**. Após escolher esta ligação de notificação, pode realizar várias operações como ver mais informações sobre a atualização, aprovar ou recusar a atualização e ver os computadores que instalarão a atualização, se for aprovada.
 
+> [!IMPORTANT]
 > A área de trabalho **Atualizações** não é apresentada na consola do administrador até instalar o cliente e gerir com êxito, pelo menos, um computador cliente.
 
 À medida que as atualizações são aprovadas e instaladas, pode examinar o êxito ou falha da instalação na área de trabalho **Atualizações** da consola do Intune.
@@ -43,9 +38,9 @@ Antes de começar a criar e aprovar atualizações de software, configure e impl
 
 ### Para configurar definições de política de atualização
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** &gt; **Descrição Geral** &gt; **Adicionar Política**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Política** &gt; **Descrição Geral** &gt; **Adicionar Política**.
 
-2.  Configure e implemente uma política de **Definições do Agente do Microsoft Intune** para as definições da atualização. Pode utilizar definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, consulte o artigo [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+2.  Configure e implemente uma política de **Definições do Agente do Microsoft Intune** para as definições da atualização. Pode utilizar definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, veja o artigo [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 A tabela seguinte mostra os valores que pode configurar na política e os valores recomendados que serão utilizados se não personalizar a política. Pode encontrar estas definições na secção **Atualizações** .
 
@@ -72,10 +67,11 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 ### Configurar as categorias dos produtos e classificações de atualizações que pretende disponibilizar a computadores geridos
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin** &gt; **Atualizações**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
 2.  Na página **Definições de Serviço: Atualizações**, na lista **Categorias de Produtos**, selecione as categorias de atualizações que pretende disponibilizar aos computadores. Tenha em atenção que as atualizações mais comuns estão selecionadas por predefinição.
 
+    > [!IMPORTANT]
     > Para garantir que os computadores recebem as atualizações que foram aprovadas pelo administrador, a definição da Política de Grupo do Windows Server Update Services (WSUS), **Especificar localização do serviço de atualizações da Microsoft na intranet** não pode estar aplicada a computadores inscritos com o Intune.
 
 3.  Na lista **Classificações de Atualizações** , selecione as classes de atualização que pretende disponibilizar a computadores geridos. Novamente, as opções mais comuns estão selecionadas por predefinição.
@@ -84,9 +80,9 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 ### Para configurar regras de aprovação automática para atualizações de software
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin** &gt; **Atualizações**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
-2.  Na secção **Regras de Aprovação Automática** da página **Definições do Servidor: Atualizações**, escolha **Novo**
+2.  Na secção **Regras de Aprovação Automática** da página **Definições do Servidor: Atualizações**, escolha **Novo**.
 
 3.  Na página **Geral** do Assistente de Criação de Regra de Aprovação Automática, especifique o nome e descrição opcional da regra.
 
@@ -96,15 +92,16 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 6.  Na página **Implementação** , efetue o seguinte:
 
-    -   Selecione os grupos de computadores nos quais pretende implementar a nova regra e, em seguida, escolha **Adicionar**
+    -   Selecione os grupos de computadores nos quais pretende implementar a nova regra e, em seguida, escolha **Adicionar**.
 
     -   Para especificar um prazo de instalação para as atualizações, selecione a caixa de verificação **Impor um prazo de instalação para estas atualizações** e, em seguida, na lista **Prazo de instalação** , selecione o prazo de instalação.
 
+        > [!NOTE]
         > Se especificar um prazo de instalação, o computador gerido pode exigir que reinicie uma ou mais vezes após ter passado o intervalo do prazo.
 
-    -   Quando terminar, escolha **Seguinte**
+    -   Quando terminar, escolha **Seguinte**.
 
-7.  Na página **Resumo**, reveja as definições da nova regra e, em seguida, escolha **Concluir**
+7.  Na página **Resumo**, reveja as definições da nova regra e, em seguida, escolha **Concluir**.
 
 A nova regra é apresentada na secção **Regras de Aprovação Automática** da página **Definições de Serviço: Atualizações**.
 
@@ -114,16 +111,17 @@ A nova regra é apresentada na secção **Regras de Aprovação Automática** da
 
 ### Para editar, executar ou eliminar uma regra de atualização aprovada automaticamente
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin** &gt; **Atualizações**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
 2.  Na secção **Regras de Aprovação Automática** , selecione uma regra e, em seguida, efetue um dos seguintes:
 
-    -   Para editar a regra, escolha **Editar** e, em seguida, altere os parâmetros da regra no **Assistente de Atualização da Regra de Aprovação Automática**
+    -   Para editar a regra, escolha **Editar** e, em seguida, altere os parâmetros da regra no **Assistente de Atualização da Regra de Aprovação Automática**.
 
-    -   Para executar a regra, escolha **Executar Seleção**
+    -   Para executar a regra, escolha **Executar Seleção**.
 
-    -   Para eliminar a regra, escolha **Eliminar**
+    -   Para eliminar a regra, escolha **Eliminar**.
 
+        > [!NOTE]
         > Eliminar uma regra não afeta atualizações anteriores que foram aprovadas pela regra eliminada.
 
 ## Atualizar software que não foi criado pela Microsoft
@@ -131,7 +129,7 @@ Pode implementar atualizações para software que não foi criado pela Microsoft
 
 ### Para carregar e configurar uma atualização de outros fornecedores que não a Microsoft
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Atualizações** &gt; **Descrição geral** &gt; **Carregar**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Atualizações** &gt; **Descrição Geral** &gt; **Carregar**.
 
 2.  Na página **Ficheiros de atualização**, escolha **Procurar** para selecionar os ficheiros de configuração necessários para instalar o pacote de atualizações. O ficheiro pode ser um ficheiro do Windows Installer (.msi), um ficheiro do Windows Installer Patch (.msp) ou um ficheiro de programa .exe. Também pode incluir ficheiros ou pastas adicionais que estejam na mesma pasta que o ficheiro de configuração.
 
@@ -154,7 +152,7 @@ Pode implementar atualizações para software que não foi criado pela Microsoft
 
     -   **A chave do registo existe**
 
-6.  Forneça as informações adicionais necessárias para configurar a regra de deteção, como o caminho e nome do ficheiro, o código de produto do Windows Installer ou uma chave do registo e, em seguida, escolha **Seguinte**
+6.  Forneça as informações adicionais necessárias para configurar a regra de deteção, como o caminho e nome do ficheiro, o código de produto do Windows Installer ou uma chave do registo e, em seguida, escolha **Seguinte**.
 
 7.  Na página **Pré-requisitos** do assistente, especifique o software que já tem de estar instalado antes de esta atualização poder ser instalada. Pode especificar **Nenhum**, selecionar um pacote de software que já tenha sido adicionado e seja gerido pelo Intune ou pode especificar as seguintes regras para descrever o software:
 
@@ -164,10 +162,11 @@ Pode implementar atualizações para software que não foi criado pela Microsoft
 
     -   **A chave do registo existe**
 
-8.  Forneça as informações adicionais necessárias para configurar a regra de deteção, como o caminho e nome do ficheiro, o código de produto do Windows Installer ou uma chave do registo e, em seguida, escolha **Seguinte**
+8.  Forneça as informações adicionais necessárias para configurar a regra de deteção, como o caminho e o nome do ficheiro, o código de produto do Windows Installer ou uma chave do registo e, em seguida, escolha **Seguinte**.
 
-9. Na página **Argumentos da linha de comandos** do assistente, pode adicionar as propriedades da instalação necessárias à linha de comandos de instalação para modificar o comportamento do ficheiro de configuração. Por exemplo, algum software suporta a propriedade **/q** para ativar a instalação automática. Consulte a documentação do seu pacote de software para saber mais sobre argumentos da linha de comandos suportados. Especifique os argumentos da linha de comandos de que precisa e, em seguida, escolha **Seguinte**
+9. Na página **Argumentos da linha de comandos** do assistente, pode adicionar as propriedades da instalação necessárias à linha de comandos de instalação para modificar o comportamento do ficheiro de configuração. Por exemplo, algum software suporta a propriedade **/q** para ativar a instalação automática. Consulte a documentação do seu pacote de software para saber mais sobre argumentos da linha de comandos suportados. Especifique os argumentos da linha de comandos de que precisa e, em seguida, escolha **Seguinte**.
 
+    > [!NOTE]
     > Se a atualização não suportar a instalação automática, não pode instalar a atualização através do Intune
 
 10. Na página **Códigos de retorno** do assistente, pode especificar como os códigos de retorno da instalação da atualização são interpretados. Por predefinição, o Intune utiliza códigos de retorno de norma da indústria para comunicar uma instalação falhada ou com êxito de um pacote de atualizações. Os códigos de retorno fornecidos são:
@@ -180,7 +179,7 @@ Pode implementar atualizações para software que não foi criado pela Microsoft
 11. Qualquer código de retorno não indicado é considerado uma falha.
 Algumas atualizações utilizam interpretações não padrão de códigos de retorno. Neste caso, pode especificar as suas próprias interpretações do código de retorno.
 
-12. Especifique ou edite os códigos de retorno necessários e, em seguida, escolha **Seguinte**
+12. Especifique ou edite os códigos de retorno necessários e, em seguida, escolha **Seguinte**.
 
 13. Na página **Resumo** do assistente, reveja as medidas que serão tomadas e, em seguida, escolha **Carregar** para concluir o assistente.
 
@@ -199,22 +198,23 @@ Quando seleciona uma atualização da lista, são disponibilizados mais comandos
 |--------|--------------------|
 |**Ver Propriedades**|Apresenta informações detalhadas sobre a atualização, incluindo o número de computadores para os quais é aplicável.|
 |**Editar**|Apenas para atualizações de outros fornecedores que não a Microsoft. Permite-lhe editar as propriedades da atualização.|
-|**Aprovar**|Aprova a atualização selecionada e permite-lhe configurar em que grupos será implementada. Para obter mais informações, consulte o procedimento [Para aprovar atualizações](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) neste tópico.|
+|**Aprovar**|Aprova a atualização selecionada e permite-lhe configurar em que grupos será implementada. Para obter mais informações, consulte o procedimento **Aprovar atualizações** neste tópico.|
 |**Recusar**|Remove aprovações anteriores da atualização e oculta a atualização das vistas predefinidas. Além disso, os dados do relatório da atualização serão removidos.<br /><br />Se, posteriormente, pretender localizar uma atualização recusada, defina o filtro na página **Todas as Atualizações** para **Recusada**. Em seguida, pode aprovar esta atualização conforme necessário.<br /><br />Se uma atualização foi recusada porque a atualização expirou no Microsoft Update, essa atualização não pode ser aprovada na consola de administração do Intune.<br /><br />Se eliminar uma política de atualizações implementada em computadores, os valores dessas definições de política de atualizações são repostos para o estado predefinido no sistema operativo instalado nos computadores.|
 |**Eliminar**|Apenas para atualizações de outros fornecedores que não a Microsoft. Elimina a atualização selecionada.|
 |**Carregar**|Inicia o assistente **Carregar Atualização** que permite carregar atualizações de outros fornecedores que não a Microsoft que pretende implementar.|
 
 ### Para aprovar atualizações
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Atualizações** &gt; **Descrição geral** &gt; **Novas atualizações a aprovar**
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Atualizações** &gt; **Descrição Geral** &gt; **Novas atualizações a aprovar**.
 
-    Na área de trabalho **Atualizações**, escolha **Descrição geral** &gt; **Novas atualizações a aprovar**
+    Na área de trabalho **Atualizações**, escolha **Descrição Geral** &gt; **Novas atualizações a aprovar**.
 
+    > [!NOTE]
     > A ligação **Novas atualizações a aprovar** é apresentada na área **Estado das Atualizações** apenas quando existe, pelo menos, um computador gerido que precisa que uma atualização seja aprovada.
 
 2.  Selecione uma atualização, reveja as propriedades da atualização na parte inferior da página para garantir que pretende aprovar a atualização e, em seguida, escolha **Aprovar**. Pode selecionar múltiplas atualizações ao premir a tecla **CTRL** à medida que seleciona cada item.
 
-3.  Na página **Selecionar Grupos**, selecione um grupo no qual pretenda implementar as atualizações e, em seguida, escolha **Adicionar**. Quando terminar de especificar os grupos, escolha **Seguinte**
+3.  Na página **Selecionar Grupos**, selecione um grupo no qual pretenda implementar as atualizações e, em seguida, escolha **Adicionar**. Quando terminar de especificar os grupos, escolha **Seguinte**.
 
 4.  Na página **Ação de Implementação** , efetue o seguinte para cada grupo na lista:
 
@@ -228,6 +228,7 @@ Quando seleciona uma atualização da lista, são disponibilizados mais comandos
 
         -   **Desinstalar** - Remove as atualizações de computadores no grupo visado.
 
+            > [!IMPORTANT]
             > A atualização é removida mesmo que não tenha sido instalada pelo Intune.
 
     -   Na lista **Prazo** , selecione um dos seguintes:
@@ -242,6 +243,7 @@ Quando seleciona uma atualização da lista, são disponibilizados mais comandos
 
 5.  Escolha **Concluir** para guardar as definições ou **Cancelar** para eliminar as definições e voltar para a lista de atualizações.
 
+    > [!IMPORTANT]
     > A menos que a ação **Não Instalar**, **Instalação Necessária**ou **Desinstalar** tenha sido configurada explicitamente para um grupo subordinado, uma ação configurada para um grupo principal é herdada pelos respetivos grupos subordinados.
 
 6.  Pode verificar o painel de detalhes na parte inferior da página **Todas as Atualizações** para mensagens de lembrete sobre a atualização.
@@ -251,6 +253,7 @@ Quando seleciona uma atualização da lista, são disponibilizados mais comandos
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

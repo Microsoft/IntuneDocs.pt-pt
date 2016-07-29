@@ -1,9 +1,9 @@
 ---
 title: Resolver problemas com perfis de e-mail| Microsoft Intune
-description: 
+description: "Problemas de perfis de e-mail e como resolvê-los."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
-ms.openlocfilehash: 766c5d5f8e512ea1c36c73936b0ffb95977395ae
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 9b699229489be2f09ea4c7a80e1e80f6ec7b106e
 
 
 ---
@@ -52,6 +52,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

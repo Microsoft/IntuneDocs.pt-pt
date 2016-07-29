@@ -1,10 +1,10 @@
 ---
 title: "Definições de políticas do Windows 10 | Microsoft Intune"
-description: 
+description: "Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 
 
 ---
 
 # Definições de política do Windows 10 no Microsoft Intune
 
-Utilize as definições de política indicadas neste tópico para ajudá-lo a configurar as definições para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos.
+Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos.
+
+> [!IMPORTANT]
+> Pode gerir PCs Windows 10 de duas formas - ao inscrevê-los ou instalando o software de cliente de PC do Intune. Cada método oferece funcionalidades diferentes (veja [Escolher como gerir dispositivos](/intune/get-started/choose-how-to-manage-devices) para obter mais informações.
+> Se gerir os PCs Windows 10 com o software de cliente de PC do Intune, não pode utilizar as políticas nem as definições detalhadas neste tópico. Para aplicar estas definições, os dispositivos Windows 10 têm de estar inscritos no Intune.
 
 ## Definições de política de configuração geral
 
-Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos. Não é possível utilizar esta política quando gere PCs com o Windows 10 com o software do cliente Intune.
+Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos. 
 
 
 ### Palavra-passe
@@ -161,7 +166,7 @@ Todas as definições são apenas para ambiente de trabalho Windows 10.
 |**Intervalo de atualização de assinatura**|Especifique o intervalo no qual o Defender irá verificar a existência de novos ficheiros de assinatura.|
 |**Permitir proteção da nuvem**|Permitir ou impedir que o Serviço de Proteção Ativa Microsoft receba informações sobre a atividade de software maligno nos dispositivos que gere. Estas informações são utilizadas para melhorar o serviço no futuro.|
 |**Solicitar aos utilizadores o envio de amostras**|Controla se os ficheiros que possam exigir análise adicional pela Microsoft para determinar se são maliciosos são automaticamente enviados à Microsoft.|
-|**Deteção de Aplicação Potencialmente Indesejável**|Esta definição pode ser utilizada para proteger computadores de secretária Windows inscritos contra software em execução classificado pelo Windows Defender como potencialmente indesejado. Pode proteger contra estas aplicações em execução ou utilizar o modo de auditoria para relatar quando uma aplicação potencialmente indesejável é instalada.|
+|**Deteção de Aplicação Potencialmente Indesejável**|Esta definição pode ser utilizada para proteger dispositivos de ambiente de trabalho Windows inscritos contra software em execução classificado pelo Windows Defender como potencialmente indesejado. Pode proteger contra estas aplicações em execução ou utilizar o modo de auditoria para relatar quando uma aplicação potencialmente indesejável é instalada.|
 |**Ficheiros e pastas a serem excluídos ao executar uma análise ou utilizar a proteção em tempo real**|Adicione um ou mais ficheiros e pastas, como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Estes ficheiros e pastas não serão incluídos em análises em tempo real ou agendadas.|
 |**Extensões de ficheiro a serem excluídas ao executar uma análise ou ao utilizar a proteção em tempo real**|Adicione uma ou mais extensões de ficheiro, como **jpg** ou **txt**, à lista de exclusões. Quaisquer ficheiros com estas extensões não serão incluídos em análises em tempo real ou agendadas.|
 |**Processos a serem excluídos ao executar uma análise ou ao utilizar a proteção em tempo real**|Adicione um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Estes processos não serão incluídos em análises em tempo real ou agendadas.| 
@@ -327,6 +332,6 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

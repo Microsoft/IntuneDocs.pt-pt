@@ -1,9 +1,9 @@
 ---
 title: Funcionalidades de Acessibilidade | Microsoft Intune
-description: 
+description: "Saiba mais sobre as funcionalidades do Intune que melhoram a acessibilidade para pessoas portadoras de deficiência."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: d34e754e3815b43f4b5b74d24711cf55aacfc757
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: e237a99669744379cff7f5947ea497b53a731196
 
 
 ---
@@ -48,6 +48,6 @@ Para além das funcionalidades e ferramentas de acessibilidade no Microsoft Wind
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

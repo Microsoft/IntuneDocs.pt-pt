@@ -1,10 +1,10 @@
 ---
-title: "Implementar aplicações | Microsoft Intune"
-description: 
+title: "Como implementar aplicações | Microsoft Intune"
+description: "Utilize as informações neste tópico para obter ajuda para implementar aplicações com o Microsoft Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: f3a8492532f01c576b1abf3c3228ba99dbd0d547
 
 ---
 # Implementar aplicações no Microsoft Intune
 
-Utilize as informações neste tópico para ajudar a implementar aplicações do Microsoft Intune.
+Utilize as informações neste tópico para obter ajuda para implementar aplicações com o Microsoft Intune.
 
 
 ## Implementar uma aplicação
-Neste procedimento, irá implementar a aplicação para utilizadores ou dispositivos selecionados.
+Neste procedimento, vai implementar a aplicação em grupos de utilizadores ou dispositivos selecionados.
 
 ### Para implementar uma aplicação
 
@@ -52,11 +52,11 @@ Neste procedimento, irá implementar a aplicação para utilizadores ou disposit
 ## Exemplo
 
 Neste exemplo, implementou a aplicação como **Disponível** num dispositivo iOS.
-A aplicação será apresentada no portal da empresa nos dispositivos dos utilizadores, de onde podem instalá-la. Por exemplo, nesta captura de ecrã, foi utilizado o tipo de instalação **Ligação externa** para implementar a aplicação Bing para iOS, com um ícone personalizado, e a opção **Apresentar esta aplicação como uma aplicação em destaque e destacá-la no portal da empresa** foi selecionada.
-    ![Aplicação iOS disponível](./media/available-install-on-iOS.png)
+A aplicação será apresentada no portal da empresa nos dispositivos dos utilizadores, de onde podem instalá-la. Por exemplo, nesta captura de ecrã, foi utilizado o tipo de instalação **Ligação externa** para implementar a aplicação Bing para iOS, com um ícone personalizado, e a opção **Apresentar esta aplicação como uma aplicação em destaque e destacá-la no portal da empresa** foi selecionada.  
+![Aplicação iOS disponível](./media/available-install-on-iOS.png)
 
-Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utilizador irá receber uma notificação a indicar que uma aplicação está pronta para ser instalada. Por exemplo, nesta captura de ecrã, foi utilizado o tipo de instalação **Aplicação iOS gerida da loja de aplicações** para implementar a aplicação Pastas de Trabalho para iOS.
-    ![Aplicação iOS obrigatória](./media/iOS-Required-install.PNG)
+Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utilizador irá receber uma notificação a indicar que uma aplicação está pronta para ser instalada. Por exemplo, nesta captura de ecrã, foi utilizado o tipo de instalação **Aplicação iOS gerida da loja de aplicações** para implementar a aplicação Pastas de Trabalho para iOS.  
+![Aplicação iOS obrigatória](./media/iOS-Required-install.PNG)
 
 ## Passos seguintes
 
@@ -64,6 +64,6 @@ Depois de implementar uma aplicação, poderá ser útil monitorizar o progresso
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

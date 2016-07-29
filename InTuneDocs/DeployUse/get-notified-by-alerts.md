@@ -1,10 +1,10 @@
 ---
 title: "Ser notificado através de alertas | Microsoft Intune"
-description: 
+description: "Saiba como os alertas o mantêm a par do que está a acontecer no Microsoft Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
-ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 59c5cf28a7be2d1b4b9071dd889803e18f31f83b
 
 
 ---
@@ -85,6 +85,6 @@ Os alertas do Intune permanecem ativos até que:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,21 +1,21 @@
 ---
 title: Gerir alertas | Microsoft Intune
-description: 
+description: "Utilize a área de trabalho Alertas para avaliar o estado de funcionamento geral dos dispositivos na sua organização."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Utilize a área de trabalho **Alertas** na consola de administração do Intune 
 
         > [!NOTE]
         > Em alguns casos, um tipo de alerta pode ser apresentado mais do que uma vez na lista **Resumo do Tipo de Alerta**.
-        > 
+        >
         > Por exemplo, as seguintes instâncias do tipo de alerta Espaço Livre em Disco Lógico podem aparecer na lista:
-        > 
+        >
         > -   Espaço Livre em Disco Lógico 3
         > -   Espaço Livre em Disco Lógico 2
-        > 
+        >
         > Este comportamento ocorre quando o mesmo tipo de alerta é gerado para dispositivos que estão a executar sistemas operativos diferentes. No exemplo, a primeira instância do tipo de alerta Espaço Livre em Disco Lógico, Espaço Livre em Disco Lógico 3, pode ter sido gerado por computadores com o Windows® 7. A segunda instância do tipo de alerta Espaço Livre em Disco Lógico pode ter sido gerado por computadores com o Windows Vista®.
 
     -   **Para apresentar todos os alertas ativos**, clique em **Alertas &gt; Todos os Alertas**. A página **Alertas** apresenta uma lista de todos os alertas ativos com as seguintes colunas:
@@ -107,7 +107,6 @@ Os alertas que são marcados como fechados são eliminados permanentemente após
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

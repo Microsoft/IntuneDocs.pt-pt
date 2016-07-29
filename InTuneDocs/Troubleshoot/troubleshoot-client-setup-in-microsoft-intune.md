@@ -1,20 +1,20 @@
 ---
 title: "Resolver problemas de configuração do cliente | Microsoft Intune"
-description: 
+description: "Resolva problemas comuns de configuração do cliente."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
-ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 3f9c3a69d96aa6886138de2e1b4ff8b8913cb372
 
 
 ---
@@ -126,6 +126,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

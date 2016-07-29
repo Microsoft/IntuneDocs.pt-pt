@@ -1,9 +1,9 @@
 ---
 title: "Como os utilizadores de dispositivos Windows obtêm as aplicações | Microsoft Intune"
-description: 
+description: "Métodos para disponibilizar aplicações Windows aos utilizadores finais"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d867202b8b3cc5e6ed77d97bcfddce2beabdd40
-ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 6e99ddf519a216d0772f69127f560034ca1895d0
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
 
 # Como os utilizadores de dispositivos Windows obtêm as aplicações
 
-Utilize estas informações para saber como e onde é que os seus utilizadores finais podem obter as aplicações que distribuir através do Microsoft Intune. 
+Utilize estas informações para saber como e onde é que os seus utilizadores finais podem obter as aplicações que distribuir através do Microsoft Intune.
 
 **Aplicações obrigatórias** - aplicações exigidas pelo administrador e que são instaladas nos dispositivos com envolvimento mínimo do utilizador, dependendo da plataforma.
 
@@ -38,6 +38,6 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
