@@ -3,7 +3,7 @@ title: Contactar o Suporte Assistido por Telefone | Microsoft Intune
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
-ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 54e6c08d30ee9b5d1b9ae45bf998c64cbf6a1e44
 
 
 ---
@@ -50,7 +50,7 @@ ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
 |Finlândia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 EET (UTC +2)|Finlandês&#42;, Inglês|08009 8462|0972519630|
 |França|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Francês&#42;, Inglês|0805540594|0157324297||
 |Alemanha|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Alemão&#42;, Inglês|0800 5892332|069380789508||
-|Grécia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 EET (UTC +2)|Grego & #42;, Inglês|0080044142831||
+|Grécia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 EET (UTC +2)|Grego &#42;, Inglês|0080044142831||
 |Guatemala|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 CST (UTC -6)|Espanhol&#42;, Inglês|1-800-300-0069<br /><br />Passo 1. selecione a opção 4 (para acesso especial)<br /><br />Passo 2. Introduza o código: 7007||
 |RAE de Hong Kong|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 18:00 HKT (UTC +8)|Cantonês&#42;, Mandarim&#42;, Inglês||30713055|
 |Hungria|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Hungaro&#42;, Inglês|36 80 983 899|36 1 778 9292|
@@ -117,7 +117,6 @@ ms.openlocfilehash: de00d31ab32916f29a111c93b39a578f82524f80
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

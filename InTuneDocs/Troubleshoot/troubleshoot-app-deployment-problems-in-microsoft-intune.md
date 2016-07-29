@@ -1,9 +1,9 @@
 ---
 title: "Resolução de problemas de implementação de aplicações | Microsoft Intune"
-description: 
+description: "Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune"
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
-ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+translationtype: Human Translation
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
 
 
 ---
@@ -80,7 +81,7 @@ Se estas informações não resolverem o seu problema, consulte [Como obter supo
 
 ### Erro: o Publicador não existe
 Utiliza **Adicionar Outro Contrato de Software** para adicionar um contrato de licença de terceiros. Tenta adicionar o publicador a partir da página **Outro contrato de licenciamento de software**. A página fornece uma lista dos publicadores existentes por ordem alfabética.
-Introduz o publicador em falta, mas recebe o erro **O publicador não existe**. 
+Introduz o publicador em falta, mas recebe o erro **O publicador não existe**.
 
 Isto é propositado. O Intune fornece monitorização de licenças apenas para títulos de software populares. O Intune requer que, pelo menos, 4 contas diferentes comuniquem o software antes deste ser disponibilizado como opção na carga de trabalho de licenciamento.
 
@@ -104,6 +105,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

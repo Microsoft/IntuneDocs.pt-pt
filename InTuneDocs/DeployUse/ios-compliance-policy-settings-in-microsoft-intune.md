@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Definições de política de conformidade para dispositivos iOS | Microsoft Intune
-description:
-keywords:
+title: "Definições de política de conformidade para dispositivos iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 7/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed6aafb0ba8e8bb2b7a9985bb98a149a1af68574
+ms.openlocfilehash: 606146fdc9e3e141293e561a09d8e62d8870403a
+
 
 ---
 
@@ -72,7 +66,7 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 - **Selecionar o perfil de e-mail que deve ser gerido pelo Intune:**
      se a definição **A conta de e-mail tem de ser gerida pelo Intune** estiver selecionada, selecione **Selecionar** para especificar o perfil de e-mail do Intune. O perfil de e-mail tem de estar presente no dispositivo.
 
-     Para obter detalhes sobres os perfis de e-mail, consulte [Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
+     Para obter informações sobre os perfis de e-mail, consulte [Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
 ## Definições de estado de funcionamento do dispositivo
 
@@ -85,6 +79,7 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 - **Versão do SO máxima permitida:** quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

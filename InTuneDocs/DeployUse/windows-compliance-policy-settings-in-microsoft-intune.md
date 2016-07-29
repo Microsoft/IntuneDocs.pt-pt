@@ -3,8 +3,8 @@ title: "Definições de política de conformidade para dispositivos Windows| Mic
 description: 
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: a836057cf6c226c8330b0b916c18cd609f791344
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 8abcfac7ae0765fd85358085ddd30ad617b29392
 
 
 ---
@@ -140,6 +140,6 @@ Para localizar a versão de SO a utilizar para as definições **SO mínimo obri
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,19 @@ title: "Enviar registos de dados de diagnóstico ao administrador de TI por e-ma
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
 
 
 ---
@@ -30,13 +31,13 @@ Para ativar o registo verboso:
 
 2.  Toque em **Menu** &gt;  **Definições**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o tipo de dispositivo Android que tem.
 
 3.  Em **Dados de Diagnóstico**, toque em **Enviar Dados**.
 
     > [!NOTE]
-    > **Apenas se estiver a utilizar dispositivos Android 6.0 ou posteriores:** quando toca em **Enviar Dados**, aparece a mensagem **Permitir que o Portal da Empresa aceda a fotografias, multimédia e ficheiros no seu dispositivo?**. 
+    > **Apenas se estiver a utilizar dispositivos Android 6.0 ou posteriores:** quando toca em **Enviar Dados**, aparece a mensagem **Permitir que o Portal da Empresa aceda a fotografias, multimédia e ficheiros no seu dispositivo?**.
 
     Esta mensagem é enganosa, porque a **Microsoft nunca acede a fotografias, multimédia ou ficheiros no seu dispositivo!** A Google controla o texto da mensagem, pelo que a Microsoft não a pode alterar.  Ao permitir o acesso, está a permitir que o seu dispositivo escreva registos de dados no cartão SD do dispositivo, o que lhe permite mover esses registos com um cabo USB.
 
@@ -49,6 +50,7 @@ Para ativar o registo verboso:
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

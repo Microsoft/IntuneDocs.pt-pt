@@ -1,24 +1,27 @@
 ---
 title: "VPN por aplicação para Android com Pulse Secure | Microsoft Intune"
-description: 
+description: "Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/08/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
-ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
-ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
+ms.reviewer: chrisbal
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
 
 
 ---
 
 # Utilizar uma política personalizada para criar um perfil de VPN por aplicação para dispositivos Android
 
-Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune. Em primeiro lugar, irá criar um perfil de VPN que utiliza o tipo de ligação Pulse Secure e, em seguida, uma política de configuração personalizada que associa esse perfil a aplicações específicas. Depois de implementar essas políticas no dispositivo Android ou grupos de utilizador, abrir uma das aplicações especificadas nesses dispositivos irá abrir uma ligação VPN para essa aplicação. 
+Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune. Em primeiro lugar, irá criar um perfil de VPN que utiliza o tipo de ligação Pulse Secure e, em seguida, uma política de configuração personalizada que associa esse perfil a aplicações específicas. Depois de implementar essas políticas no dispositivo Android ou grupos de utilizador, abrir uma das aplicações especificadas nesses dispositivos irá abrir uma ligação VPN para essa aplicação.
 
 ### Passo 1: criar um perfil de VPN
 
@@ -30,9 +33,9 @@ Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pe
 
 > [!NOTE]
 Tome nota do nome do perfil de VPN para utilização no próximo passo. Por exemplo, **MyAppVpnProfile**.
-   
+
 ### Passo 2: criar uma política de configuração personalizada
-    
+
    1. Na consola de administração do Intune, **Política** -> **Adicionar Política** -> **Android** -> **Configuração personalizada** -> **Criar Política**.
    2. Forneça um nome para a política.
    3. Em **Definições OMA-URI**, clique em **Adicionar**.
@@ -40,23 +43,23 @@ Tome nota do nome do perfil de VPN para utilização no próximo passo. Por exem
    5. Em **Tipo de dados**, especifique **Cadeia**.
    6. para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, onde *Name* é o nome do perfil da VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
    7.   Em **Valor**, forneça uma lista separada por ponto e vírgula dos pacotes que devem ser associados ao perfil.  Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, irá introduzir: **com.microsoft.office.excel;com.android.chrome**.
-  
 
-   ![Exemplo de política personalizada de VPN por aplicação Android](..\media\android_per_app_vpn_oma_uri.png) 
+
+   ![Exemplo de política personalizada de VPN por aplicação Android](..\media\android_per_app_vpn_oma_uri.png)
 #### Definir a lista de aplicações como Lista Negra ou Lista Branca (opcional)
 Pode especificar que a sua lista de aplicações *não* irá ter permissão para utilizar a ligação VPN com o valor **BLACKLIST**.  Todas as outras aplicações estabelecerão ligação através de VPN.
 
 Em alternativa, pode especificar que *apenas* as aplicações especificadas podem utilizar a ligação VPN com o valor **WHITELIST**.
- 
+
 
 1.  Em Definições OMA-URI, clique em **Adicionar**.
 2.  Forneça um nome para a definição.
 3.  Em **Tipo de dados**, especifique **Cadeia**.
 4.  Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, onde *Name* é o nome do perfil da VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-5.  Em **Valor**, introduza **BLACKLIST** ou **WHITELIST**. 
+5.  Em **Valor**, introduza **BLACKLIST** ou **WHITELIST**.
 
 
-   
+
 ### Passo 3: implementar as duas políticas
 
 Tem de implementar as *duas* políticas nos *mesmos* grupos do Intune.
@@ -73,7 +76,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
