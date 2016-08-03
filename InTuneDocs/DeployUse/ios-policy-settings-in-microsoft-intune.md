@@ -3,8 +3,8 @@ title: "Definições de política do iOS | Microsoft Intune"
 description: "Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
-ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+ms.sourcegitcommit: 947328a5c28839d8227a9e5ae0dd8b1fc5ad8e81
+ms.openlocfilehash: 63bc2cedf8d81b050a384a947a0b43827de5c352
 
 
 ---
@@ -39,95 +39,108 @@ Utilize a **política de configuração geral do iOS** do Microsoft Intune para 
 Se a definição que procura não aparecer neste tópico, poderá conseguir criá-la utilizando uma política personalizada de iOS que permita importar as definições que criou com a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para mais informações, consulte **Definições de política personalizada** mais adiante neste tópico.
 
 ### Definições de segurança
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Especifica se os utilizadores são obrigados a introduzir uma palavra-passe para aceder ao respetivo dispositivo.|Sim|
-|**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|Sim|
-|**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**|Isto especifica o número de caracteres de símbolos (como **#** ou **@**) que têm de ser incluídos na palavra-passe.|Sim|
-|**Comprimento mínimo da palavra-passe**|Especifica o número mínimo de carateres na palavra-passe.|Sim|
-|**Permitir palavras-passe simples**|Permite palavras-passe simples, como «0000» e «1234».|Sim|
-|**Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado**|Apaga o dispositivo em caso de falha deste número de tentativas de início de sessão.|Sim|
-|**Minutos de inatividade antes de o ecrã se desligar**<sup>1</sup>|Especifique o número de minutos antes de o ecrã do dispositivo se desligar.|Sim|
-|**Expiração da Palavra-passe (dias)**|Especifica o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.|Sim|
-|**Memorizar histórico de palavras-passe**|Especifica se o utilizador pode utilizar palavras-passe que utilizou anteriormente.|Sim|
-|**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.|Sim|
-|**Minutos de inatividade antes de ser exigida a palavra-passe**<sup>1</sup>|Especifica o período de tempo durante o qual o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.|Sim|
-|**Permitir desbloqueio por impressão digital**|Permite a utilização de uma impressão digital para desbloquear o dispositivo.|iOS 7.1 e posterior|
+|**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Especifica se os utilizadores são obrigados a introduzir uma palavra-passe para aceder ao respetivo dispositivo.|
+|**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|
+|**Número de carateres complexos necessários na palavra-passe**|Isto especifica o número de caracteres de símbolos (como **#** ou **@**) que têm de ser incluídos na palavra-passe.|
+|**Comprimento mínimo da palavra-passe**|Especifica o número mínimo de carateres na palavra-passe.|
+|**Permitir palavras-passe simples**|Permite palavras-passe simples, como «0000» e «1234».|
+|**Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado**|Apaga o dispositivo em caso de falha deste número de tentativas de início de sessão.|
+|**Minutos de inatividade antes de ser exigida a palavra-passe**<sup>1</sup>|Especifica o período de tempo durante o qual o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.|
+|**Expiração da Palavra-passe (dias)**|Especifica o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.|
+|**Memorizar histórico de palavras-passe**|Especifica se o utilizador pode utilizar palavras-passe que utilizou anteriormente.|
+|**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.|
+|**Minutos de inatividade antes de o ecrã se desligar**<sup>1</sup>|Especifique o número de minutos antes de o ecrã do dispositivo se desligar.|
+|**Permitir desbloqueio por impressão digital**|Permite a utilização de uma impressão digital para desbloquear o dispositivo.|
 <sup>1</sup> Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
 ### Definições do sistema
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como uma imagem.|Sim|
-|**Permitir centro de controlo no ecrã de bloqueio**|Controla se a aplicação do centro de controlo pode ser acedida quando o dispositivo está bloqueado.|iOS 7.1 e posterior|
-|**Permitir vista de notificações no ecrã de bloqueio**|Permite que o utilizador aceda à vista de notificações sem desbloquear o dispositivo.|iOS 7.1 e posterior|
-|**Permitir vista atual no ecrã de bloqueio**|Controla se as notificações podem ser visualizadas quando o dispositivo está bloqueado.|iOS 7.1 e posterior|
-|**Permitir submissão de dados de diagnóstico**|Permitir ou impedir o dispositivo de submeter dados de diagnóstico para a Apple.|Sim|
-|**Permitir certificados TLS não fidedignos**|Permitir certificados Transport Layer Security não fidedignos no dispositivo.|Sim|
-|**Permitir passbook quando bloqueado**|Permitir que o utilizador aceda à aplicação Passbook quando o dispositivo está bloqueado.|Sim|
+|**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como uma imagem.|
+|**Permitir centro de controlo no ecrã de bloqueio**|Controla se a aplicação do centro de controlo pode ser acedida quando o dispositivo está bloqueado.|
+|**Permitir vista de notificações no ecrã de bloqueio**|Permite que o utilizador aceda à vista de notificações sem desbloquear o dispositivo.|
+|**Permitir vista atual no ecrã de bloqueio**|Controla se as notificações podem ser visualizadas quando o dispositivo está bloqueado.|
+|**Permitir certificados TLS não fidedignos**|Permitir certificados Transport Layer Security não fidedignos no dispositivo.|
+|**Permitir submissão de dados de diagnóstico**|Permitir ou impedir o dispositivo de submeter dados de diagnóstico para a Apple.|
+|**Permitir passbook quando bloqueado**|Permitir que o utilizador aceda à aplicação Passbook quando o dispositivo está bloqueado.|
 
 ### Definições da nuvem - documentos e dados
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir cópia de segurança para iCloud**|Permite que o utilizador faça uma cópia de segurança do dispositivo para o iCloud.|Sim|
-|**Permitir sincronização de documentos para iCloud**|Permitir a sincronização de documentos e pares chave-valor para o seu espaço de armazenamento do iCloud.|Sim|
-|**Permitir sincronização de Fluxo de Fotografias para iCloud**|Permitir a sincronização das fotografias no dispositivo com o iCloud.|Sim|
-|**Exigir cópia de segurança encriptada**|Exigir que qualquer cópia de segurança seja encriptada.|Sim|
+|**Permitir cópia de segurança para iCloud**|Permite que o utilizador faça uma cópia de segurança do dispositivo para o iCloud.|
+|**Permitir sincronização de documentos para iCloud**|Permitir a sincronização de documentos e pares chave-valor para o seu espaço de armazenamento do iCloud.|
+|**Permitir sincronização de Fluxo de Fotografias para iCloud**|Permitir a sincronização das fotografias no dispositivo com o iCloud.|
+|**Exigir cópia de segurança encriptada**|Exigir que qualquer cópia de segurança seja encriptada.|
+|**Permitir que as aplicações geridas sincronizem dados para o serviço iCloud**|Permitir que as aplicações que gere com o Intune sincronizem dados para a conta do iCloud dos utilizadores.|
+|**Permitir que o Handoff continue as atividades noutro dispositivo**|O Handoff permite-lhe continuar o trabalho iniciado num dispositivo iOS noutro dispositivo iOS ou Mac OS X.|
 
 ### Definições da aplicação - browser
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir o Safari**|Especificar se o browser Safari pode ser utilizado no dispositivo.|Sim|
-|**Permitir preenchimento automático**|O utilizador pode alterar as definições de conclusão automática no browser.|Sim|
-|**Permitir bloqueador de janelas de pop-up**|Ativar ou desativar o bloqueador de janelas de pop-up do browser.|Sim|
-|**Permitir cookies**|Permitir que o browser do dispositivo utilize cookies.|Sim|
-|**Permitir scripting de Java**|Permitir a execução de scripts de Java no browser.|Sim|
-|**Permitir aviso de fraude**|Permitir avisos de fraude no browser do dispositivo.|Sim|
+|**Permitir o Safari**|Especificar se o browser Safari pode ser utilizado no dispositivo.|
+|**Permitir preenchimento automático**|O utilizador pode alterar as definições de conclusão automática no browser.|
+|**Permitir bloqueador de janelas de pop-up**|Ativar ou desativar o bloqueador de janelas de pop-up do browser.|
+|**Permitir cookies**|Permitir que o browser do dispositivo utilize cookies.|
+|**Permitir scripting de Java**|Permitir a execução de scripts de Java no browser.|
+|**Permitir aviso de fraude**|Permitir avisos de fraude no browser do dispositivo.|
 
 ### Definições da aplicação - aplicações
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir loja de aplicações**|Permite que o dispositivo aceda à loja de aplicações.|Sim|
-|**Exigir uma palavra-passe para aceder à loja de aplicações**|Exige que o utilizador introduza uma palavra-passe antes de poderem visitar a loja de aplicações.|Sim|
-|**Permitir compras via aplicação**|Permite efetuar compras na loja a partir de uma aplicação em execução.|Sim|
-|**Permitir documentos geridos em outras aplicações não geridas**|Permite a visualização de documentos da empresa em qualquer aplicação.<br>**Exemplo:** pretende impedir que os utilizadores guardem os ficheiros da aplicação OneDrive no Dropbox. Configure esta definição como não. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não será permitido guardar.|iOS 7.1 e posterior|
-|**Permitir documentos não geridos em outras aplicações geridas**|Permitir a visualização de qualquer documento em aplicações geridas empresariais.|iOS 7.1 e posterior|
-|**Permitir videoconferência**|Permitir aplicações de videoconferência, tal como o Facetime, no dispositivo.|Sim|
-|**Permitir conteúdo para adultos no arquivo de multimédia**|Permitir que o dispositivo aceda a conteúdo da loja classificado como conteúdo para adultos.|Sim|
+|**Permitir loja de aplicações**|Permite que o dispositivo aceda à loja de aplicações.|
+|**Exigir uma palavra-passe para aceder à loja de aplicações**|Exige que o utilizador introduza uma palavra-passe antes de poderem visitar a loja de aplicações.|
+|**Permitir compras via aplicação**|Permite efetuar compras na loja a partir de uma aplicação em execução.|
+|**Permitir documentos geridos em outras aplicações não geridas**|Permite a visualização de documentos da empresa em qualquer aplicação.<br>**Exemplo:** pretende impedir que os utilizadores guardem os ficheiros da aplicação OneDrive no Dropbox. Configure esta definição como não. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não será permitido guardar.|
+|**Permitir documentos não geridos em outras aplicações geridas**|Permitir a visualização de qualquer documento em aplicações geridas empresariais.|
+|**Permitir videoconferência**|Permitir aplicações de videoconferência, tal como o Facetime, no dispositivo.|
+|**Permitir conteúdo para adultos no arquivo de multimédia**|Permitir que o dispositivo aceda a conteúdo da loja classificado como conteúdo para adultos.|
+|**Permitir que o utilizador transfira conteúdos da loja iBook sinalizado como "Erótico"**|Permitir que o utilizador transferir livros da categoria "Erótico".|
 
 ### Definições da aplicação - Jogos
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir a adição de amigos do Centro de Jogos**|Permitir que o utilizador adicione amigos no Centro de jogos.|Sim|
-|**Permitir jogos multijogador**|Permitir que o utilizador jogue jogos multijogador no dispositivo.|Sim|
+|**Permitir a adição de amigos do Centro de Jogos**|Permitir que o utilizador adicione amigos no Centro de jogos.|
+|**Permitir jogos multijogador**|Permitir que o utilizador jogue jogos multijogador no dispositivo.|
 
 ### Definições das capacidades do dispositivo - hardware
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir câmara**|Especifica se a câmara do dispositivo pode ser utilizada.|Sim|
+|**Permitir câmara**|Especifica se a câmara do dispositivo pode ser utilizada.|
+|**Requerer palavra-passe emparelhada para os pedidos AirPlay enviados**|O Airplay permite-lhe transmitir conteúdos para outros dispositivos Apple. Utilize esta definição para requerer uma palavra-passe emparelhada para ligar-se a outros dispositivos.|
 
 ### Definições das capacidades do dispositivo - rede móvel
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir chamadas em roaming**|Permitir chamadas em roaming quando o dispositivo estiver numa rede celular.|Sim|
-|**Permitir roaming de dados**|Permite o roaming de dados quando o dispositivo estiver numa rede celular.|Sim|
-|**Permitir obtenção global em segundo plano em roaming**|Permitir que o dispositivo obtenha dados, tais como e-mail, enquanto estiver em roaming numa rede celular.|Sim|
+|**Permitir chamadas em roaming**|Permitir chamadas em roaming quando o dispositivo estiver numa rede celular.|
+|**Permitir roaming de dados**|Permite o roaming de dados quando o dispositivo estiver numa rede celular.|
+|**Permitir obtenção global em segundo plano em roaming**|Permitir que o dispositivo obtenha dados, tais como e-mail, enquanto estiver em roaming numa rede celular.|
 
 ### Definições das capacidades do dispositivo - funcionalidades
+Todas as definições se aplicam ao iOS 7.1 e posterior.
 
-|Nome da definição|Detalhes|iOS|
+|Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir a Siri**|Permitir a utilização do assistente de voz Siri no dispositivo.|Sim|
-|**Permitir a Siri quando o dispositivo está bloqueado**|Permitir a utilização do assistente de voz Siri no dispositivo enquanto está bloqueado.|Sim|
-|**Permitir marcação por voz**|Permitir a utilização da funcionalidade de marcação por voz no dispositivo.|Sim|
+|**Permitir a Siri**|Permitir a utilização do assistente de voz Siri no dispositivo.|
+|**Permitir a Siri quando o dispositivo está bloqueado**|Permitir a utilização do assistente de voz Siri no dispositivo enquanto está bloqueado.|
+|**Permitir marcação por voz**|Permitir a utilização da funcionalidade de marcação por voz no dispositivo.|
 
 
 ### Definições para aplicações compatíveis e não compatíveis
@@ -139,7 +152,7 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 |Nome da definição|Detalhes|
 |----------------|--------------------|
 |**Comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que não são geridas pelo Intune e para as quais os utilizadores não têm permissão para instalar e executar.|
-|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
+|**Comunicar não conformidade quando os utilizadores instalam aplicações não listadas**|Indica as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
 |**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações. Para obter mais ajuda, leia **Como especificar URLs para lojas de aplicações** mais adiante neste tópico.|
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
 |**Editar**|Permite-lhe editar o nome, o fabricante e o URL da aplicação selecionada.|
@@ -195,6 +208,32 @@ Copie o URL da página e utilize-o para configurar a lista de aplicações compa
 > [!NOTE]
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
 
+### Definições de inscrição
+Todas as definições se aplicam ao iOS 7.1 e posterior.
+
+|Nome da definição|Detalhes|
+|----------------|--------------------|
+|**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**|Ativa o Bloqueio de Ativação em dispositivos iOS supervisionados.|
+
+### Supervisão
+As seguintes definições podem ser configuradas em dispositivos com iOS 7.1 e posterior que estejam no modo supervisionado.
+
+|Nome da definição|Detalhes|
+|----------------|--------------------|
+|**Permitir modificação da conta**|Permitir que o utilizador alterar as definições de conta, tais como configurações de e-mail.|
+|**Permitir AirDrop**|Permita a utilização da funcionalidade Airdrop para trocar conteúdos com dispositivos que se encontrem próximos.|
+|**Permitir alterações às definições de utilização de dados via rede móvel da aplicação**|Permitir que o utilizador controle que aplicações estão autorizadas a utilizar dados via rede móvel.|
+|**Permitir que a Siri consulte conteúdos gerados pelo utilizador a partir da Internet**|Permitir que a Siri aceda a sites para responder a perguntas.|
+|**Permitir acesso à loja iBooks**|Permitir que o utilizador procure e compre livros da loja iBooks.|
+|**Permitir alterações para as definições da aplicação Encontrar Amigos**|Permitir que o utilizador altere as definições da aplicação Encontrar Amigos.|
+|**Permitir a utilização das opções apagar todos os conteúdos e definições do dispositivo**|Permitir que o utilizador utilize as opções apagar todos os conteúdos e definições do dispositivo.|
+|**Permitir que o utilizador ative restrições nas definições do dispositivo**|Permitir que o utilizador configure as restrições de dispositivo (restrições de acesso) no dispositivo|
+|**Permitir a pesquisa Spotlight para devolver resultados da Internet**|Vamos ligar a pesquisa Spotlight à Internet para fornecer mais resultados.|
+|**Permitir a utilização da aplicação Game Center**|Permitir utilização da aplicação Game Center.|
+|**Permitir emparelhamento de anfitrião para controlar os dispositivos aos quais um dispositivo iOS pode estar emparelhado**|O emparelhamento de anfitrião permite ao administrador controlar com que dispositivos um dispositivo iOS 7 pode ser emparelhado.|
+|**Permitir que o utilizador instale perfis e certificados de configuração**|Permitir que o utilizador instale perfis e certificados de configuração.|
+|**Permitir a utilização da aplicação Mensagens no dispositivo**|Permitir a utilização da aplicação Mensagens para enviar mensagens de texto.|
+
 
 ## Definições de política personalizada
 
@@ -229,6 +268,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
