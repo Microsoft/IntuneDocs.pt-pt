@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gestão de dispositivos móveis com o Exchange ActiveSync e o Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Gestão de Dispositivos com o Exchange ActiveSync | Microsoft Intune"
+description: "Gira diretamente os dispositivos móveis não inscritos com o Exchange ActiveSync (EAS) através do Exchange Connector"
+keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: f545c7db4c29690a72c5a84dfcab6f179cbe72a2
+
 
 ---
 
@@ -41,14 +35,16 @@ O conector do Exchange permite gerir a sua implementação do Exchange na consol
 -   [Configurar o conector de serviços do Intune para o Exchange alojado](intune-service-to-service-exchange-connector.md)
 
 ## Aplicar política de dispositivos móveis geridos pelo Exchange
-As definições de política podem ser aplicadas através da consola do Intune, consulte [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Para uma lista das definições de política e funcionalidades do Exchange ActiveSync suportadas por dispositivos móveis específicos, consulte a [Tabela de Comparação do Cliente do Exchange ActiveSync](http://go.microsoft.com/fwlink/?LinkId=247270)
+As definições de política podem ser aplicadas através da consola do Intune, consulte [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Para obter uma lista das definições de política e funcionalidades do Exchange ActiveSync suportadas por dispositivos móveis específicos, veja a [Tabela de Comparação do Cliente do Exchange ActiveSync](http://go.microsoft.com/fwlink/?LinkId=247270).
 
+> [!NOTE]
 > Depois de ligar o Intune a um ambiente do Microsoft Exchange, a política EAS de todos os utilizadores geridos através do Intune será reposta para a política predefinida atual no servidor do Microsoft Exchange, a não ser que exista uma política mais específica definida no Intune.
 
 ## Apagar dados da empresa de dispositivos móveis
 Por fim, pode [apagar dados da empresa dos dispositivos móveis geridos pelo EAS](wipe-for-exchange-managed-mobile-devices.md) quando já não estão em utilização ou em caso de perda ou roubo dos dispositivos.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

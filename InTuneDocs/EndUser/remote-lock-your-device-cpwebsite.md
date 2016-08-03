@@ -3,18 +3,19 @@ title: Bloquear dispositivos remotamente a partir do Portal da Empresa | Microso
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7e5d48d35e8216bac2fae8e2f9a1ba82d3493acc
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 17f4b2a88fdd5976be842b22881f08e6e29e5343
 
 
 ---
@@ -42,15 +43,19 @@ Para bloquear o seu dispositivo com o Bloqueio Remoto:
 
 2.  Toque em **Bloqueio Remoto**.
 
+    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.  Ler a mensagem de aviso, indicando que está prestes a bloquear o dispositivo e, em seguida, toque em **Bloqueio Remoto** para que o site do Portal da Empresa tenta bloquear o dispositivo.
+
     Quando toca em **Bloqueio Remoto**, é apresentado o estado "Bloqueio remoto pendente".  Quando o Bloqueio Remoto for aplicado com êxito, o estado muda para "Bloqueio remoto com êxito".
 
     O estado do Bloqueio Remoto é apresentado em três locais:
 
-    * Na área de notificações do site. 
+    * Na área de notificações do site.
     * Na página de detalhes relativos ao dispositivo.
     * No mosaico que mostra o nome do dispositivo na secção Os Meus Dispositivos da página.
 
-    Se vir a notificação "Bloqueio Remoto falhou", aguarde alguns minutos e, em seguida, tente bloquear o dispositivo novamente. Depois de tocar para tentar novamente, o estado volta a mudar para "Bloqueio remoto pendente". 
+    Se vir a notificação "Bloqueio Remoto falhou", aguarde alguns minutos e, em seguida, tente bloquear o dispositivo novamente. Depois de tocar para tentar novamente, o estado volta a mudar para "Bloqueio remoto pendente".
 
     Se uma repetição não funcionar, contacte o administrador de TI para obter ajuda. Se encontrar o seu dispositivo e quiser desbloqueá-lo depois de utilizar o Bloqueio Remoto, basta introduzir o código de acesso.
 
@@ -60,6 +65,7 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 
