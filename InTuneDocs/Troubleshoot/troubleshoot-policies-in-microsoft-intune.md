@@ -2,19 +2,19 @@
 title: "Resolver problemas de políticas | Microsoft Intune"
 description: "Resolva problemas de configuração de políticas."
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ Nos dispositivos Windows sem MDM, os erros de políticas no ficheiro policyplatf
 
 4.  Mova o controlo de deslize de notificações para a predefinição.
 
-## Erro 0x87D1FDE8 para dispositivo KNOX
-**Problema**: depois de criar e implementar um perfil de e-mail do Exchange Active Sync para Samsung KNOX em vários dispositivos Android, é comunicado o erro **0x87D1FDE8** ou **falha na remediação** no separador propriedades &gt; política do dispositivo.
-
-Reveja a configuração do seu perfil EAS para Samsung KNOX e a política de origem. A opção de sincronização do Samsung Notes já não é suportada e não deve ser selecionada no seu perfil. Certifique-se de que os dispositivos têm tido tempo suficiente para processar a política, até 24 horas.
 
 ## Alerta: Falha ao Guardar as Regras de Acesso no Exchange
 **Problema**: Recebe o alerta **Falha ao Guardar as Regras de Acesso no Exchange**  na consola de administração.
@@ -113,6 +109,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

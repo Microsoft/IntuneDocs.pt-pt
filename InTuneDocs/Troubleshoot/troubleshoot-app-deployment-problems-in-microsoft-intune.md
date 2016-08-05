@@ -2,9 +2,9 @@
 title: "Resolução de problemas de implementação de aplicações | Microsoft Intune"
 description: "Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune"
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
 
 
 ---
@@ -105,6 +105,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

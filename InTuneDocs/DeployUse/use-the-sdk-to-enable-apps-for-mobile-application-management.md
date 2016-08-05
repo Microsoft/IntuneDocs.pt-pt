@@ -1,9 +1,9 @@
 ---
-title: "Utilizar o SDK para ativar aplicações para gestão de aplicações móveis | Microsoft Intune"
+title: "Utilizar o SDK para ativar as aplicações para MAM | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-manager: jeffgilb
+author: karthikaraman
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d435c2c9773040d6870aea274d3879c00461457
-ms.openlocfilehash: 2bb9ac819b63ea47ebc890d23cf83ee127c8e994
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 58e127b1924f68a663326ab076ad623dd66782d7
 
 
 ---
@@ -39,7 +39,6 @@ Para uma descrição geral do SDK, consulte a página [Descrição geral](/intun
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

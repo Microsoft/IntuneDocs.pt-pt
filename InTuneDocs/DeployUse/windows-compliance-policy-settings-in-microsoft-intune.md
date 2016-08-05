@@ -3,7 +3,7 @@ title: "Definições de política de conformidade para dispositivos Windows| Mic
 description: 
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 8abcfac7ae0765fd85358085ddd30ad617b29392
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
 
 
 ---
@@ -140,6 +140,6 @@ Para localizar a versão de SO a utilizar para as definições **SO mínimo obri
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

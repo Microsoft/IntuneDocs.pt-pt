@@ -5,7 +5,7 @@ description: "Crie políticas que controlem as definições e funcionalidades em
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
@@ -197,65 +197,16 @@ Esta capacidade destina-se a permitir a implementação de definições do Andro
     |**OMA-URI (sensível às maiúsculas e minúsculas)**|Especifique o OMA-URI para o qual pretende fornecer uma definição.|
     |**Valor**|Indique o valor a associar ao OMA-URI especificado anteriormente.|
 
-### Exemplo: Configurar um perfil Wi-Fi personalizado com uma chave pré-partilhada
-Embora o Intune suporte perfis Wi-Fi para dispositivos Android, esta funcionalidade não suporta a inclusão de chaves pré-partilhadas na configuração atualmente. Neste exemplo, aprenderá a criar uma política personalizada do Android que cria um perfil Wi-Fi com uma chave pré-partilhada no dispositivo Android.
+### Exemplos
 
-#### Para criar um perfil Wi-Fi com uma chave pré-partilhada
-
-1.  Certifique-se de que os utilizadores estão a utilizar a versão mais recente da aplicação [Portal da Empresa do Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) para Android.
-
-2.  Crie uma política personalizada do Android e adicione a seguinte definição:
-
-|Nome da definição|Detalhes|
-|----------------|--------------------|
-|**Nome da definição**|Especifique um nome à sua escolha para a definição.|
-|**Descrição da definição**|Especifique uma descrição para a definição.|
-|**Tipo de dados**|Selecione **Cadeia (XML)**.|
-|**OMA-URI**|Escreva o seguinte: ./Vendor/MSFT/WiFi/Profile/*&lt;perfil Wi-Fi&gt;*/Settings|
-
-3.  Para **Value**, copie e cole o seguinte código XML:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  Quando terminar, guarde a política e implemente-a nos dispositivos Android necessários. O novo perfil Wi-Fi aparecerá na lista de ligações no dispositivo.
+- [Criar um perfil Wi-Fi com uma chave pré-partilhada](pre-shared-key-wi-fi-profile.md)
+- [Utilizar uma política personalizada para criar um perfil de VPN por aplicação para dispositivos Android](per-app-vpn-for-android-pulse-secure.md)
 
 ### Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: Restringir o acesso ao SharePoint Online | Microsoft Intune
 description: Proteja e controle o acesso ao e-mail da empresa no SharePoint Online com o acesso condicional.
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 54f5e95fc8992ee3a68fd7063bff7cdb90c308bb
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
 
 
 ---
@@ -189,6 +189,6 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -3,7 +3,7 @@ title: "Cenários de exemplo de restrição de acesso ao e-mail | Microsoft Intu
 description: "Alguns cenários de exemplo e como podem ser implementados com o acesso condicional."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: d9b9f602a8d1ca1f47b27b9048910fe7148848eb
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
 
 
 ---
@@ -81,6 +81,6 @@ Para tal, configure uma política de acesso condicional para o Exchange no local
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
