@@ -1,10 +1,10 @@
 ---
 title: Configurar a infraestrutura de certificados para SCEP | Microsoft Intune
-description: 
+description: Infraestrutura para criar e implementar perfis de certificado SCEP.
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
-ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # Configurar a infraestrutura de certificados para SCEP
-Este tópico descreve a infraestrutura necessária para criar e implementar perfis de certificado.
+Este tópico descreve a infraestrutura necessária para criar e implementar perfis de certificado SCEP.
 
 ### Infraestrutura no local
 
@@ -44,6 +44,8 @@ I
 A partir da Internet para a rede de perímetro, permita a porta 443 a partir de todos os anfitriões/endereços IP na Internet para o servidor do NDES.
 
 A partir da rede de perímetro para uma rede fidedigna, permita todas as portas e protocolos necessários para acesso ao domínio do servidor do NDES associado a um domínio. O servidor do NDES precisa de acesso aos servidores de certificado, aos servidores DNS, aos servidores do Configuration Manager e aos controladores de domínio.
+
+Recomendamos a publicação do servidor NDES através de um proxy, tal como o [proxy de aplicações do Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Proxy de Acesso Web](https://technet.microsoft.com/en-us/library/dn584107.aspx) ou um proxy de terceiros.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Certificados e Modelos
@@ -347,6 +349,6 @@ Está agora pronto para configurar perfis de certificado, conforme descrito em [
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

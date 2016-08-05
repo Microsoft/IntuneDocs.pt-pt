@@ -1,10 +1,10 @@
 ---
 title: Escolher como gerir dispositivos | Microsoft Intune
-description: 
+description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
 keywords: 
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstackmsft
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
+ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
 
 
 ---
@@ -69,7 +69,7 @@ Considere utilizar o cliente do computador Intune quando pretender:
 ## Gestão do Exchange ActiveSync
 Também pode gerir dispositivos através do Exchange ActiveSync. Isto requer a instalação do Conector No Local ou a utilização do Conector de Serviços incorporado para ligar ao seu Exchange Server.
 
-Para saber mais sobre os requisitos de hardware e software para instalar o Conetor No Local, veja [Requisitos do Conector No Local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect).
+Para saber mais sobre os requisitos de hardware e software para instalar o Conector No Local, veja [Requisitos do Conector No Local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
 
 Para saber mais sobre como utilizar o Conetor No Local ou o Conetor de Serviços com o Exchange, veja [Gestão de dispositivos móveis com o Exchange ActiveSync e o Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
@@ -80,6 +80,6 @@ Agora já descobriu algumas das capacidades que pode utilizar quando inscrever o
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

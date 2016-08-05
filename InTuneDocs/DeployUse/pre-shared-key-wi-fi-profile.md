@@ -1,10 +1,10 @@
 ---
 title: Wi-Fi com PSK | Microsoft Intune
-description: 
+description: "Utilize a Configuração Personalizada para criar um perfil de VPN com uma chave pré-partilhada."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
-ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ Nota:
 
    c.   **Tipo de Dados**: definido como "String(XML)"
 
-   d.   **OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**: 
+        
+- **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 Nota: certifique-se de que inclui o caráter de ponto no início.
 
 SSID é o SSID para o qual está a criar a política. Por exemplo,
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    Campo de Valor: onde cola o código XML. Segue-se um exemplo. Cada valor deve ser adaptado às suas definições de rede. Consulte a secção de comentários do código para obter algumas indicações.
 
@@ -197,6 +200,6 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,20 +1,20 @@
 ---
 title: "Utilizar a eliminação remota para ajudar a proteger dados | Microsoft Intune"
-description: 
+description: "O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
-ms.reviewer: jeffgilb
+ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
 
 
 ---
@@ -29,6 +29,9 @@ Tal como acontece com os dispositivos, a determinada altura, pretende ou precisa
 
 
 A **Eliminação completa** restaura as predefinições do dispositivo, removendo todos os dados e definições da empresa e do utilizador. O dispositivo é removido do Intune. A eliminação completa é útil para repor um dispositivo antes de o atribuir a um novo utilizador ou em caso de perda ou roubo do dispositivo.  **Seja cuidadoso com a seleção da eliminação completa. Não é possível recuperar os dados no dispositivo**.
+
+> [!Warning]
+> A eliminação pode fazer com que os dispositivos Windows 10 RTM (ou seja, mais dispositivos anteriores ao Windows 10 versão 1511) com menos de 4 GB de RAM fiquem inacessíveis. Para aceder a um dispositivo Windows 10 que deixou de responder, pode arrancá-lo a partir de uma unidade USB ou com outra solução semelhante.
 
 ## Eliminação seletiva
 
@@ -55,7 +58,7 @@ A **eliminação seletiva** remove os dados da empresa, incluindo os dados de ge
 |Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados|As aplicações e os dados permanecem instalados|
 |Aplicações de linha de negócio não geridas|As aplicações e os dados permanecem instalados|As aplicações são desinstaladas e, como resultado, os dados locais da aplicação são removidos. Não foram removidos dados fora da aplicação (cartão SD, etc.)|
 |Aplicações geridas do Google Play|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados mas não são removidos.|
-|Aplicações de linha empresarial geridas|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados mas não são removidos.|
+|Aplicações de linha empresarial geridas|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|
 |Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidas|Removidas|
 |Definições de perfil de certificado|Certificados revogados mas não removidos.|Certificados removidos e revogados.|
@@ -139,6 +142,6 @@ Para obter um relatório dos dispositivos que foram extintos, apagados ou elimin
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

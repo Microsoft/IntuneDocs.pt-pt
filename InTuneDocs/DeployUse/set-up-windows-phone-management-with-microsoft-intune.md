@@ -1,20 +1,20 @@
 ---
-title: "Configurar a gestão do Windows 10 Mobile e Windows Phone com o Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configurar a gestão do Windows 10 Mobile e Windows Phone | Microsoft Intune"
+description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Windows 10 Mobile ou Windows Phone com o Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
 
 
 ---
@@ -29,7 +29,7 @@ Para a maioria dos cenários, os utilizadores podem instalar a aplicação Porta
 
 2.  **Definir um alias DNS para o endereço do servidor de inscrição** (opcional)
 
-    Criar um alias de DNS (tipo de registo CNAME) torna mais fácil para os utilizadores inscreverem os respetivos dispositivos. Se não criar um alias de DNS, os utilizadores têm de:
+    Criar um alias de DNS (tipo de registo CNAME) torna mais fácil para os utilizadores inscreverem os respetivos dispositivos. Embora a entrada DNS CNAME seja opcional para a inscrição de dispositivos Windows, recomenda-se que crie um ou mais registos quando for necessário, para facilitar o processo de inscrição destes dispositivos. Se não for encontrado nenhum registo CNAME, é pedido ao utilizador que introduza o nome do servidor de MDM manualmente.
 
   1.  Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o Web site da sua empresa fosse contoso.com, criaria um CNAME em DNS que redireciona EnterpriseEnrollment.contoso.com para manage.microsoft.com. Se existir mais do que um domínio verificado, crie um registo CNAME para cada domínio. Os registos de recursos CNAME têm de conter as seguintes informações:
 
@@ -56,6 +56,6 @@ Não é necessário qualquer ação adicional, a não ser que pretenda implement
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

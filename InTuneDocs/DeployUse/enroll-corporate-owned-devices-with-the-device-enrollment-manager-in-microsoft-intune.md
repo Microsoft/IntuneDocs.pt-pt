@@ -1,10 +1,10 @@
 ---
-title: "Inscrever dispositivos pertencentes à empresa com o Gestor de Inscrição de Dispositivos | Microsoft Intune"
-description: 
+title: "Inscrever com o Gestor de Inscrição de Dispositivos | Microsoft Intune"
+description: "A conta do gestor de inscrição de dispositivos (DEM) pode gerir um grande número de dispositivos móveis pertencentes à empresa partilhados com uma única conta de utilizador."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.sourcegitcommit: 7b0154d73ab540e7543fab9088463ed8b61b45a0
-ms.openlocfilehash: 74ff3209d00dee0b5ddd14e107b5544b364d08f7
+translationtype: Human Translation
+ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
+ms.openlocfilehash: d126bbfc40cada71458b03c23e571490b4af4d44
 
 
 ---
@@ -44,7 +45,7 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
   - Também não podem ser inscritos com o Apple Configurator ou o programa de inscrição de dispositivos Apple (dispositivos iOS)
 
 > [!NOTE]
-> Para implementar aplicações da empresa em dispositivos geridos com o gestor de inscrição de dispositivos, implemente a aplicação Portal da Empresa como uma **Instalação Necessária** na conta de utilizador do gestor de inscrição de dispositivos.
+> Para implementar aplicações da empresa em dispositivos geridos com o gestor de inscrição de dispositivos, implemente a aplicação Portal da Empresa como uma **Instalação Obrigatória** na conta de utilizador do gestor de inscrição de dispositivos.
 > Para melhorar o desempenho, a visualização da aplicação Portal da Empresa num dispositivo DEM mostra apenas os dispositivos locais. A gestão remota de outros dispositivos DEM só pode ser efetuada a partir da consola de administração do Intune.
 
 ## Criar contas de gestor de inscrição de dispositivos
@@ -91,6 +92,7 @@ A eliminação de um gestor de inscrição de dispositivos não afeta os disposi
 -   A relação da conta do gestor de inscrição de dispositivos eliminada com os dispositivos inscritos é mantida, mas não é possível inscrever mais dispositivos
 
 
-<!--HONumber=Jul16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

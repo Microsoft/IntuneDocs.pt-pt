@@ -3,37 +3,44 @@ title: "Instalar uma versão nova da aplicação Portal da Empresa | Microsoft I
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/30/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: f15f3efc10936a964a72718daf8219f5b9c1e24a
 
 
 ---
 
 # Instalar uma versão nova da aplicação Portal da Empresa
 
-Se a sua versão do Portal da Empresa já não for suportada ou se estiver disponível uma versão mais recente, utilize os seguintes procedimentos para atualizar o seu dispositivo.
+Se a sua versão do Portal da Empresa já não for suportada ou se estiver disponível uma versão mais recente, tem de a atualizar para uma versão posterior. Utilize os passos que correspondem ao seu tipo de dispositivo:
 
-## Para atualizar o seu dispositivo Android
+## Para atualizar a aplicação Portal da Empresa do Intune no seu dispositivo Android
 
 A Play Store alertá-lo-á quando estiver disponível uma versão nova do Portal da Empresa. Não verá uma mensagem na aplicação Portal da Empresa. Siga as instruções no alerta para atualizar o seu dispositivo.
 
-## Para atualizar o seu dispositivo iOS
+## Para atualizar a aplicação Portal da Empresa do Intune no seu dispositivo iOS
 
-A Apple App Store irá alertá-lo quando estiver disponível uma nova versão do Portal da Empresa. Siga as instruções no alerta para atualizar o seu dispositivo.
+Quando estiver disponível uma nova versão, verá a opção "atualizar" ao visualizar a aplicação na sua lista de aplicações instaladas.  
 
-## Para atualizar o seu dispositivo Windows
+Para atualizar a aplicação do Portal da Empresa:
+
+1. Abra a App Store e procure **intune**.
+
+2. Quando encontrar a aplicação, toque no botão **Atualizar** à direita do nome da aplicação.
+
+## Para atualizar a aplicação Portal da Empresa do Intune no seu dispositivo Windows
 
 1.  Navegue para a Loja Windows e procure o **portal da empresa**.
 
-2.  Siga as instruções de instalação.
+2.  Siga os passos de instalação.
 
     > [!NOTE]
     > Se não conseguir aceder à Loja Windows, contacte o seu administrador de TI.
@@ -49,7 +56,6 @@ Para informações sobre outras tarefas que pode fazer com o seu dispositivo, ut
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

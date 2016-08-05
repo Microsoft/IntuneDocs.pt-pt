@@ -1,10 +1,10 @@
 ---
 title: Utilizar o dispositivo Windows com o Intune | Microsoft Intune
-description: 
+description: "Lista de ligações para tarefas que pode fazer no seu dispositivo móvel Windows quando este está inscrito no Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: f5170f9230812e4c4606dac5258cde1da6b99089
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
 
 
 ---
 
 # Utilizar o dispositivo Windows com o Intune
 
-Utilize estes passos para tarefas que necessita de executar no seu dispositivo ou computador com Windows quando a sua empresa utilizar o Microsoft Intune.
+Esta página contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: informações relacionadas com a inscrição, gestão de tarefas e problemas de conformidade.
 
 ## Instalação da aplicação Portal da Empresa e inscrição no Intune
 
@@ -57,8 +57,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que poderã
 
 
 
-
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

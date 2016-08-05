@@ -3,28 +3,31 @@ title: "Enviar registos de dados de diagnóstico ao administrador de TI por cabo
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
 
 
-# Enviar registos de dados de diagnóstico ao administrador de TI por cabo USB
+# Send diagnostic data logs to your IT administrator using a USB cable (Enviar registos de dados de diagnóstico ao administrador de TI por cabo USB)
 
-Se estiver a utilizar um computador em vez de um dispositivo móvel e pretender enviar registos de dados a partir do dispositivo móvel para o administrador de TI descobrir e corrigir o problema, utilize estes passos:
+Se pretender enviar registos de dados para o seu administrador de TI para obter ajuda com um problema, pode utilizar um computador e um cabo USB para enviar os registos em vez de os enviar com o seu dispositivo móvel. Eis como:
 
-1.  Antes de começar, certifique-se de que tem o endereço de e-mail do administrador de TI. Normalmente, este está listado no seu Web site do Portal da Empresa ou na aplicação Portal da Empresa.
+1.  No ecrã de erro, toque em **Enviar Informações**. Quando vir uma mensagem a perguntar qual o método que pretende utilizar para enviar os registos, escolha a opção que irá guardar os ficheiros no seu dispositivo.
+
+2.  Antes de começar, certifique-se de que tem o endereço de e-mail do seu administrador de TI, normalmente apresentado no [Site do Portal da Empresa](http://portal.manage.microsoft.com) ou na aplicação Portal da Empresa.
 
 2.  Utilize um cabo USB para ligar o seu dispositivo Android a um computador.
 
@@ -38,6 +41,7 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

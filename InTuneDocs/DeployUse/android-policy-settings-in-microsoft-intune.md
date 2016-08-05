@@ -1,10 +1,11 @@
 ---
-title: "Definições de política de configuração de Android e Samsung KNOX | Microsoft Intune"
-description: 
+
+title: "Definições da política para Android e Samsung KNOX | Microsoft Intune"
+description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android que gere com o Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,43 +14,45 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
-ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
+ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
 
 
 ---
 
 # Definições de política de Android e Samsung KNOX no Microsoft Intune
 
+O Intune oferece um conjunto de definições gerais incorporadas que pode configurar em dispositivos Android. Além disso, pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar definições personalizadas que não estão disponíveis no Intune.
+
 ## Política de configuração geral
 
-Utilize a **política de configuração geral para Android** do Microsoft Intune para configurar definições para:
+Utilize a **política de configuração geral para Android** do Intune para configurar definições para:
 
 -   **Definições de segurança do dispositivo móvel** – Escolha de uma lista de definições predefinidas que permitem controlar uma série de funcionalidades e a funcionalidade do dispositivo.
 
 -   **Modo de local público** (apenas para dispositivos Samsung KNOX) - Bloqueie um dispositivo para permitir apenas o funcionamento de funcionalidades específicas. Por exemplo, pode permitir que um dispositivo execute apenas uma aplicação gerida que especificar ou pode desativar os botões de volume num dispositivo. Estas definições podem ser utilizadas para um modelo de demonstração de um dispositivo ou para um dispositivo com a finalidade de desempenhar apenas uma função, como um dispositivo de ponto de venda.
 
--   **Aplicações compatíveis e não compatíveis** - Especifique uma lista de aplicações que são compatíveis ou não compatíveis na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Compatíveis** pode ser utilizado para ver a compatibilidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores (mas não pode bloquear a instalação da aplicação).
+-   **Aplicações conformes e não conformes** - Especifique uma lista de aplicações que são conformes ou não conformes na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Conformes** pode ser utilizado para ver a conformidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores. Na verdade, o relatório não pode bloquear a instalação da aplicação.
 
 > [!TIP]
-> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não compatíveis serão bloqueadas ou comunicadas como não compatíveis. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que todas as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não conformes serão bloqueadas ou comunicadas como não conformes. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-Se a definição que procura não for apresentada neste tópico, poderá conseguir criá-la através de uma política personalizada para Android que lhe permita utilizar definições OMA-URI para controlar o dispositivo. Para mais informações, consulte **Definições de política personalizada ** mais adiante neste tópico.
+Se a definição que procura não for apresentada neste tópico, poderá conseguir criá-la através de uma política personalizada para Android que lhe permita utilizar definições OMA-URI para controlar o dispositivo. Para obter mais informações, consulte [Definições de política personalizada](#custom-policy-settings) mais adiante neste tópico.
 
 ### Definições de palavra-passe
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
-|**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Exigir uma palavra-passe em dispositivos suportados.|Sim|Sim|
-|**Comprimento mínimo da palavra-passe**|O comprimento mínimo da palavra-passe.|Sim|Sim|
-|**Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado**|Apaga o dispositivo em caso de falha deste número de tentativas de início de sessão.|Sim|Sim|
-|**Minutos de inatividade antes de o ecrã se desligar**|Especifique o número de minutos antes de o dispositivo bloquear automaticamente.|Sim|Sim|
-|**Expiração da Palavra-passe (dias)**|O número de dias antes de uma palavra-passe tem de ser alterado.|Sim|Sim|
-|**Memorizar histórico de palavras-passe**|Memorize as inúmeras palavras-passe utilizadas anteriormente.|Sim|Sim|
-|**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Impede a reutilização de palavras-passe.|Sim|Sim|
-|**Qualidade da palavra-passe**|Selecionar o nível de complexidade da palavra-passe exigido e se podem ser utilizados dispositivos biométricos.|Sim|Sim|
-|**Permitir desbloqueio por impressão digital**|Permita a utilização de uma impressão digital para desbloquear o dispositivo.|Não|Sim|
-|**Permitir o bloqueio do smart card e outros agentes de fidedignidade**<br>(Android 5 e posterior)|Permite-lhe controlar a funcionalidade de bloqueio do smart card em dispositivos Android compatíveis. Esta capacidade de telefone, por vezes conhecida como agentes de confiança, permite desativar ou ignorar a palavra-passe de bloqueio do ecrã do dispositivo se o dispositivo estiver numa localização fidedigna, como quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Pode utilizar esta definição para impedir que os utilizadores finais configurem o bloqueio do smart card.|Sim|Não|
+|**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Especifica se é exigida uma palavra-passe nos dispositivos suportados.|Sim|Sim|
+|**Comprimento mínimo da palavra-passe**|Especifica o comprimento mínimo da palavra-passe.|Sim|Sim|
+|**Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado**|Especifica o número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado.|Sim|Sim|
+|**Minutos de inatividade antes de o ecrã se desligar**|Especifica o número de minutos de inatividade antes de o dispositivo bloquear automaticamente.|Sim|Sim|
+|**Expiração da Palavra-passe (dias)**|Especifica o número de dias antes de uma palavra-passe ter de ser alterada.|Sim|Sim|
+|**Memorizar histórico de palavras-passe**|Especifica o número de palavras-passe utilizadas anteriormente a memorizar.|Sim|Sim|
+|**Memorizar histórico de palavras-passe** - **Evita a reutilização de palavras-passe anteriores**|Impede a reutilização de palavras-passe anteriores.|Sim|Sim|
+|**Qualidade da palavra-passe**|Especifica o nível de complexidade da palavra-passe exigido e se podem ser utilizados dispositivos biométricos.|Sim|Sim|
+|**Permitir desbloqueio por impressão digital**|Permite a utilização de uma impressão digital para desbloquear o dispositivo.|Não|Sim|
+|**Permitir o bloqueio do smart card e outros agentes de fidedignidade**<br>(Android 5 e posterior)|Permite controlar a funcionalidade Smart Lock nos dispositivos Android compatíveis. Esta capacidade de telefone, por vezes conhecida como agente de confiança, permite desativar ou ignorar a palavra-passe de bloqueio do ecrã do dispositivo se o dispositivo estiver numa localização fidedigna (por exemplo, quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC). Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.|Sim|Não|
 
 ### Definições de encriptação
 
@@ -64,7 +67,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |----------------|----------------|----------------|
 |**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como uma imagem.|Não|Sim|
 |**Permitir submissão de dados de diagnóstico**|Permite ao dispositivo enviar informações de diagnóstico para a Google.|Não|Sim|
-|**Permitir a reposição de fábrica**|Permitir que o utilizador efetue uma reposição de fábrica no dispositivo.|Não|Sim|
+|**Permitir a reposição de fábrica**|Permite ao utilizador efetuar uma reposição de fábrica no dispositivo.|Não|Sim|
 
 ### Definições da nuvem - documentos e dados
 
@@ -82,8 +85,8 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Permitir browser**|Especifica se a o browser do dispositivo pode ser utilizado.|Não|Sim|
-|**Permitir preenchimento automático**|Permite a utilização da função de Preenchimento automático do browser.|Não|Sim|
+|**Permitir browser**|Especifica se pode ser utilizado o browser predefinido do dispositivo.|Não|Sim|
+|**Permitir preenchimento automático**|Permite a utilização da função de preenchimento automático do browser.|Não|Sim|
 |**Permitir bloqueador de janelas de pop-up**|Permite a utilização do bloqueador de janelas de pop-up no browser.|Não|Sim|
 |**Permitir cookies**|Permite ao browser do dispositivo utilizar cookies.|Não|Sim|
 |**Permitir scripting ativo**|Permite ao browser do dispositivo utilizar o scripting ativo.|Não|Sim|
@@ -112,7 +115,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Permitir chamadas em roaming**|Permite chamadas em roaming quando o dispositivo estiver numa rede celular.|Não|Sim|
-|**Permitir roaming de dados**|Permite roaming de dados quando o dispositivo estiver numa rede celular.|Não|Sim|
+|**Permitir roaming de dados**|Permite dados em roaming quando o dispositivo estiver numa rede celular.|Não|Sim|
 |**Permitir mensagens SMS/MMS**|Permite a utilização de mensagens SMS e MMS no dispositivo.|Não|Sim|
 
 ### Definições das capacidades do dispositivo - funcionalidades
@@ -121,23 +124,23 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |----------------|----------------|----------------|
 |**Permitir assistente de voz**|Permite a utilização de software de assistente de voz no dispositivo.|Não|Sim|
 |**Permitir marcação por voz**|Ativa ou desativa a funcionalidade de marcação por voz no dispositivo.|Não|Sim|
-|**Permitir copiar e colar**|Permite as funções copiar e colar no dispositivo.|Não|Sim|
-|**Permitir partilha da área de transferência entre aplicações**|Utilize a área de transferência para efetuar a ação copiar e colar entre aplicações.|Não|Sim|
+|**Permitir copiar e colar**|Permite as funções de copiar e colar no dispositivo.|Não|Sim|
+|**Permitir partilha da área de transferência entre aplicações**|Permite a utilização da área de transferência para efetuar a ação copiar e colar entre aplicações.|Não|Sim|
 |**Permitir o YouTube**|Permite a utilização do YouTube no dispositivo.|Não|Sim|
 
-### Definições para aplicações compatíveis e não compatíveis
+### Definições para aplicações conformes e não conformes
 Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista de aplicações conformes ou não conformes com as informações seguintes:
 
 > [!NOTE]
-> Uma única política só pode conter uma lista de aplicações compatíveis ou uma lista de aplicações não compatíveis. Não é possível especificar ambas na mesma política.
+> Uma única política só pode conter uma lista de aplicações conformes ou uma lista de aplicações não conformes. Não é possível especificar ambas na mesma política.
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
 |**Comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que não são geridas pelo Intune e que não pretende que sejam instaladas e executadas pelos utilizadores. Se os utilizadores instalarem uma destas aplicações, estas serão listadas no relatório de aplicações não conformes.|
-|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que pretende permitir na sua empresa. Para permanecerem conformes, os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
-|**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.<br /><br />Para obter ajuda, consulte Como especificar URLs para lojas de aplicações mais adiante neste tópico.|
+|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que pretende permitir. Para permanecerem conformes, os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
+|**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome da aplicação, o fabricante da aplicação (opcional) e o URL da aplicação na loja de aplicações.<br /><br />Para obter mais informações, veja [Especificar URLs para lojas de aplicações](#specify-urls-to-app-stores) mais adiante neste tópico.|
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
-|**Editar**|Permite-lhe editar o nome, o fabricante e o URL da aplicação selecionada.|
+|**Editar**|Permite editar o nome, o fabricante e o URL da aplicação selecionada.|
 |**Eliminar**|Elimina a aplicação selecionada da lista.|
 
 ### Definições do modo de local público
@@ -145,32 +148,32 @@ Especifique as seguintes definições para **dispositivos Samsung KNOX**:
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
-|**Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público**|Clique em **Procurar** e, em seguida, selecione a aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público (as aplicações especificadas como uma ligação para o arquivo não são atualmente suportadas). Não será permitida a execução de outras aplicações no dispositivo.|
+|**Selecione uma aplicação gerida que possa ser executada quando o dispositivo estiver no modo de local público**|Escolha **Procurar** e, em seguida, selecione a aplicação gerida que pode ser executada quando o dispositivo estiver no modo de local público (as aplicações especificadas como uma ligação para a loja não são atualmente suportadas). Não será permitida a execução de outras aplicações no dispositivo.|
 |**Permitir os botões de volume**|Ativa ou desativa a utilização dos botões de volume no dispositivo.|
 |**Permitir o botão suspender/reativar ecrã**|Ativa ou desativa o botão suspender/reativar ecrã do dispositivo.|
 
-### Informações de referência para aplicações compatíveis e não compatíveis
+### Informações de referência para aplicações conformes e não conformes
 
-#### Monitorizar aplicações compatíveis e não compatíveis
-Utilize o **Relatório de Aplicações Não Compatíveis** para ver a compatibilidade das aplicações permitidas e bloqueadas.
+#### Monitorizar aplicações conformes e não conformes
+Utilize o **Relatório de Aplicações Não Conformes** para ver a conformidade das aplicações permitidas e bloqueadas.
 
-###### Para executar o Relatório de Aplicações Não Compatíveis
+###### Para executar o Relatório de Aplicações Não Conformes
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Relatórios** &gt; **Relatório de Aplicações Não Compatíveis**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
 
-2.  Selecione os grupos de dispositivos que pretende verificar, se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, selecione **Ver Relatório**.
+2.  Selecione os grupos de dispositivos que pretende verificar. Em seguida, escolha se pretende verificar a existência de aplicações conformes, aplicações não conformes ou ambas. Por fim, escolha **Ver Relatório**.
 
-#### Como especificar URLs para lojas de aplicações
-Para especificar um URL de aplicação na lista de aplicações compatíveis e não compatíveis, utilize o seguinte formato:
+#### Especificar URLs para lojas de aplicações
+Para especificar um URL de aplicação na lista de aplicações conformes e não conformes, siga os seguintes passos:
 
 Na [secção Aplicações do Google Play](https://play.google.com/store/apps), procure a aplicação que pretende utilizar.
 
-Abra a página de instalação da aplicação e copie o URL para a área de transferência. Agora pode utilizar este URL na lista de aplicações compatíveis ou na lista de aplicações não compatíveis.
+Abra a página de instalação da aplicação e copie o URL para a área de transferência. Agora pode utilizar este URL na lista de aplicações conformes ou na lista de aplicações não conformes.
 
-**Exemplo:** procure Microsoft Office Mobile no Google Play. O URL a utilizar será **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub&hl=pt**.
+Exemplo: procure Microsoft Office Mobile no Google Play. O URL a utilizar será **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub&hl=pt**.
 
 ## Definições de política personalizada
-Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
+Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
 Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
 
@@ -190,7 +193,7 @@ Esta capacidade destina-se a permitir a implementação de definições do Andro
     |--------|--------------------|
     |**Nome da definição**|Introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.|
     |**Descrição da definição**|Indique uma descrição geral da definição e outras informações relevantes para o ajudar a localizá-la.|
-    |**Tipo de dados**|Selecione o tipo de data em que especificará esta definição OMA-URI. Escolha entre **Cadeia, Cadeia (XML), Data e hora, Número inteiro, Vírgula flutuante** ou **Booleano**.|
+    |**Tipo de dados**|Selecione o tipo de dados em que especificará esta definição OMA-URI. Escolha entre **Cadeia, Cadeia (XML), Data e hora, Número inteiro, Vírgula flutuante** ou **Booleano**.|
     |**OMA-URI (sensível às maiúsculas e minúsculas)**|Especifique o OMA-URI para o qual pretende fornecer uma definição.|
     |**Valor**|Indique o valor a associar ao OMA-URI especificado anteriormente.|
 
@@ -208,18 +211,18 @@ Embora o Intune suporte perfis Wi-Fi para dispositivos Android, esta funcionalid
 |**Nome da definição**|Especifique um nome à sua escolha para a definição.|
 |**Descrição da definição**|Especifique uma descrição para a definição.|
 |**Tipo de dados**|Selecione **Cadeia (XML)**.|
-|**OMA-URI**|Introduza o seguinte: ./Vendor/MSFT/WiFi/Profile/*&lt;perfil Wi-Fi&gt;*/Settings|
+|**OMA-URI**|Escreva o seguinte: ./Vendor/MSFT/WiFi/Profile/*&lt;perfil Wi-Fi&gt;*/Settings|
 
 3.  Para **Value**, copie e cole o seguinte código XML:
 
     ```
     <!--
     WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile 
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+                    <Name of wifi profile> = Name of profile
+                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
                     <WEP password> = Password to connect to the network
     -->
-    <WLANProfile 
+    <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name><Name of wifi profile></name>
       <SSIDConfig>
@@ -253,7 +256,6 @@ Embora o Intune suporte perfis Wi-Fi para dispositivos Android, esta funcionalid
 
 
 
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 
