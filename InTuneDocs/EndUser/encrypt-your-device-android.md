@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,9 +34,11 @@ Se alguma vez anular a inscrição do seu telemóvel, este permanecerá encripta
 3.  Siga as instruções no ecrã. Durante a encriptação, o seu dispositivo poderá reiniciar várias vezes.
 
 ### O que fazer se tiver problemas
-**Problema**: já encriptou o seu dispositivo e vê um dos seguintes : -  o botão de encriptação está desativado.
+**Problema**: já encriptou o seu dispositivo e vê um dos seguintes:
+
+- O botão de encriptação está desativado.
 - Vê uma mensagem a indicar que ainda tem de encriptar.
--  Depara-se com erros quando tenta utilizar a aplicação do Portal da Empresa.
+- Depara-se com erros quando tenta utilizar a aplicação do Portal da Empresa.
 
 **O que fazer**: confirme que definiu uma palavra-passe ou um PIN no dispositivo.
 
@@ -47,6 +49,6 @@ Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informa�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

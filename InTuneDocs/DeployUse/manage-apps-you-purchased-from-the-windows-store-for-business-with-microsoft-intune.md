@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 07079b6566bec45593bb9ae49272aa7154a7174d
+ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
+ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 
 ---
@@ -22,52 +22,54 @@ ms.openlocfilehash: 07079b6566bec45593bb9ae49272aa7154a7174d
 # Manage apps you purchased from the Windows Store for Business with Microsoft Intune (Gerir aplicações compradas na Loja Windows para Empresas com o Microsoft Intune)
 Na [Loja Windows para Empresas](https://www.microsoft.com/business-store), pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume a partir da consola do Intune. Por exemplo:
 * Pode sincronizar a lista de aplicações adquiridas na loja com o Intune.
-* As aplicações que são sincronizadas aparecem na consola de administração do Intune e pode implementá-las como todas as outras aplicações
-* Pode controlar quantas licenças estão disponíveis e quantas estão a ser utilizadas na consola de administração do Intune
-* O Intune bloqueia a implementação e instalação de aplicações se não tiver licenças suficientes disponíveis
+* As aplicações que são sincronizadas aparecem na consola de administração do Intune e pode implementá-las como todas as outras aplicações.
+* Pode controlar quantas licenças estão disponíveis e quantas estão a ser utilizadas na consola de administração do Intune.
+* O Intune bloqueia a implementação e instalação de aplicações se tiver um número insuficiente de licenças disponíveis.
 
 ## Antes de começar
 Antes de iniciar a sincronização e a implementação de aplicações da Loja Windows para Empresas, reveja as seguintes informações:
-* Tem de configurar o Intune como a autoridade de gestão de dispositivos móveis da sua organização. Para obter mais informações, consulte [Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-* Tem de se ter inscrito numa conta na Loja Windows para Empresas
+* Tem de configurar o Intune como a autoridade de gestão de dispositivos móveis da sua organização. Para obter mais informações, consulte [Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
+* Tem de se ter inscrito numa conta na Loja Windows para Empresas.
 * Assim que tiver associado uma conta da Loja Windows para Empresas, não pode mudar para uma conta diferente no futuro.
 * As aplicações compradas na loja não podem ser adicionadas ou eliminadas manualmente do Intune. Só podem ser sincronizadas com a Loja Windows para Empresas.
 * O Intune só sincroniza as aplicações licenciadas online que comprou na Loja Windows para Empresas.
-* Os dispositivos têm de ser associados a um domínio do Active Directory ou à Área de Trabalho, para utilizar esta capacidade.
+* Os dispositivos têm de ser associados aos Serviços de Domínio do Active Directory ou à área de Trabalho para utilizar esta capacidade.
 * Os dispositivos inscritos têm de utilizar a versão 1511 do Windows 10.
 
 ## Associar a sua conta da Loja Windows para Empresas ao Intune
 Antes de ativar a sincronização na consola do Intune, tem de configurar a conta da loja para utilizar o Intune como ferramenta de gestão:
-1. Certifique-se de que inicia sessão na Loja para Empresas com a mesma conta de inquilino que utiliza para iniciar sessão no Intune.
+1. Certifique-se de que se regista na Loja para Empresas com a mesma conta de inquilino que utiliza para iniciar sessão no Intune.
 2. Na Loja para Empresas, escolha **Definições** > **Ferramentas de gestão**.
-3. Na página Ferramentas de gestão, escolha **Adicionar uma ferramenta de gestão** e Microsoft Intune.
+3. Na página Ferramentas de gestão, escolha **Adicionar uma ferramenta de gestão** e **Microsoft Intune**.
 
 Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## Configurar a sincronização
 
-1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Admin**.
-2. Na área de trabalho **Administração**, expanda **Gestão de Dispositivos Móveis** e clique em **Loja para Empresas**.
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Admin**.
+2. Na área de trabalho **Administração**, expanda **Gestão de Dispositivos Móveis** e escolha **Loja para Empresas**.
 3. Na página **Loja Windows para Empresas**, faça o seguinte:
-* Se ainda não o fez, clique na ligação para se inscrever na Loja Windows para Empresas
-* Assim que concluir a inscrição, clique em **Configurar Sincronização**
+ * Se ainda não o fez, clique na ligação para se inscrever na Loja Windows para Empresas.
+ * Assim que concluir a inscrição, escolha em **Configurar Sincronização**.
 4. Na caixa de diálogo **Configurar sincronização de aplicações da Loja Windows para Empresas**, selecione **Ativar sincronização da Loja Windows para Empresas**.
 5. Na lista pendente **Idioma**, escolha o idioma em que as aplicações da Loja Windows para Empresas serão apresentadas na consola do Intune. Independentemente do idioma em que são apresentadas, serão instaladas no idioma do utilizador final, se estiver disponível.
 6. Clique em **OK**.
 
 ## Sincronizar aplicações
 
-1. Na página **Loja Windows para Empresas**, clique em **Sincronizar agora** para sincronizar as aplicações que comprou na loja com o Intune.
-2. Na área de trabalho **Aplicações**, clique em **Software Gerido** > **Software Licenciado** para ver as aplicações disponíveis e para se certificar de que aquelas que comprou foram importadas corretamente.
-As aplicações neste nó são apresentadas com o número total de licenças que tiver, juntamente com o número de licenças que tem disponíveis.
+1. Na página **Loja Windows para Empresas**, escolha **Sincronizar agora** para sincronizar as aplicações que comprou na loja com o Intune.
+2. Na área de trabalho **Aplicações**, escolha **Software Gerido** > **Software Licenciado** para ver as aplicações disponíveis e para se certificar de que aquelas que comprou foram importadas corretamente. As aplicações neste nó são apresentadas com o número total de licenças que tiver e o número de licenças que tem disponíveis.
 
 ## Implementar aplicações
 
 As aplicações da loja são implementadas da mesma forma que implementa qualquer outra aplicação do Intune. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
-Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada uma licença por cada utilizador que instalar a aplicação. Se utilizar todas as licenças disponíveis para uma aplicação implementada, não poderá implementar mais cópias e tem de efetuar uma das seguintes ações:
-* Desinstale a aplicação de dispositivos
-* Reduza o âmbito da implementação atual para segmentar apenas os utilizadores para os quais tem licenças suficientes
-* Compre mais cópias da aplicação na Loja Windows para Empresas
+Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada uma licença por cada utilizador que instalar a aplicação. Se utilizar todas as licenças disponíveis para uma aplicação implementada, não poderá implementar mais cópias. Deve efetuar uma das seguintes ações:
+* Desinstale a aplicação de dispositivos.
+* Reduza o âmbito da implementação atual para segmentar apenas os utilizadores para os quais tem licenças suficientes.
+* Compre mais cópias da aplicação na Loja Windows para Empresas.
+
+> [!Important]
+> As aplicações implementadas só estão disponíveis para o utilizador que inscreveu originalmente o dispositivo. Nenhum outro utilizador pode aceder à aplicação.
 
 
 ### Consulte também
@@ -75,8 +77,6 @@ Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada um
 
 
 
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

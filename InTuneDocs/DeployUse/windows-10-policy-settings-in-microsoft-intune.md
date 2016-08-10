@@ -4,7 +4,7 @@ description: "Utilize as definições de política indicadas neste tópico para 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Expiração da Palavra-passe (dias)**|Especifica o período de tempo após o qual a palavra-passe do dispositivo tem de ser alterada.|
 |**Memorizar histórico de palavras-passe**|Especifica se pretende impedir que o utilizador final crie palavras-passe utilizadas anteriormente.|
 |**Memorizar histórico de palavras-passe** - **Evita a reutilização de palavras-passe anteriores**|Especifica o número de palavras-passe utilizadas anteriormente memorizadas pelo dispositivo.|
-|**Permitir palavra-passe por imagem e PIN**|Permite-lhe utilizar gestos simples numa imagem ou um PIN simples para iniciar sessão.<br>(apenas para ambiente de trabalho Windows 10)|
 |**Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**|Se estiver ativada, o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo de um estado inativo.<br>(Apenas Windows 10 Mobile)|
 
 ### Encriptação
@@ -71,14 +70,6 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir conta Microsoft**|Permite que o utilizador associe uma conta Microsoft ao dispositivo.|
 |**Permitir adicionar contas de terceiros manualmente**|Permite que o utilizador adicione contas de e-mail ao dispositivo, que não estão associadas a uma conta Microsoft.|
 |**Permitir a sincronização de definições para contas Microsoft**|Permite que as definições do dispositivo e de aplicações associadas a uma conta Microsoft sejam sincronizadas entre dispositivos.|
-
-### Definições de e-mail
-
-|Nome da definição|Detalhes|
-|----------------|----------------------|---------------------|
-|**Torne a conta Microsoft opcional na aplicação Windows Mail**|Configure esta definição para remover o requisito de uma conta Microsoft no Windows Mail.<br>Apenas para ambiente de trabalho Windows 10|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir Bluetooth**|Permite a utilização das capacidades de Bluetooth no dispositivo.|
 |**Permitir modo detetável do Bluetooth**|Permite que este dispositivo seja detetado por outros dispositivos com capacidade de Bluetooth.|
 |**Permitir publicidade do Bluetooth**|Permite que os dispositivos recebam anúncios sobre o Bluetooth.|
-|**Permitir modo conectável do Bluetooth**|**Importante:** o Windows 10 já não suporta esta definição, que será removida no futuro.|
 |**Permitir reposição do telefone**|Controla se o utilizador pode efetuar a reposição de fábrica do seu dispositivo.|
 |**Permitir ligação USB**|Controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.|
 |**Permitir modo Anti-roubo**|Configurar se o modo Anti-roubo do Windows estiver ativado.|
@@ -177,6 +167,7 @@ Todas as definições são apenas para ambiente de trabalho Windows 10.
 |Nome da definição|Detalhes|
 |----------------|---------------|
 |**Permitir atualizações automáticas**|Ative esta definição para permitir atualizações automáticas. Em seguida, configure uma das seguintes definições para controlar o comportamento da atualização:<br /><br />**Notificar carregamento**<br /><br />**Instalação automática ao tempo de manutenção**<br /><br />**Instalação automática e reinicio ao tempo de manutenção**<br /><br />**Instalação automática e reinício à hora agendada** **Nota**: quando esta opção está selecionada, também pode configurar as seguintes definições: **Suprimir a notificação para o utilizador final** e **Definir o dia da instalação de atualizações agendadas**.<br>(apenas para ambiente de trabalho Windows 10)|
+|**Permitir funcionalidades de pré-lançamento**|Permite à Microsoft implementar funcionalidades e definições de pré-lançamento em dispositivos do Windows 10. Pode selecionar para permitir as definições apenas, ou todas as definições de versão de pré-lançamento e funcionalidades para a instalação.|
 
 ## Definições de política personalizada
 Utilize a **política de configuração personalizada** do Microsoft Intune para Windows 10 e Windows 10 Mobile para implementar definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar as funcionalidades nos dispositivos Windows 10 e Windows 10 Mobile. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
@@ -332,6 +323,6 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

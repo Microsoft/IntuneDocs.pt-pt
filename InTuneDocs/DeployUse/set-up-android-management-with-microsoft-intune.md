@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 147765f6e8225e8e1d9d8e64473e8b6988256b03
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: e42f49558ea9744b59693be873aa5130c7e1a0c3
 
 
 ---
 
 # Configurar a gestão de dispositivos Android
+Para configurar o seu dispositivo Windows, pode encontrar ajuda [aqui](../enduser/using-your-android-device-with-intune.md).
+
 Com o Microsoft Intune, pode ativar BYOD ("bring your own device") em dispositivos Android sem ter de fazer tarefas adicionais para a plataforma.
 
 Selecione entre as seguintes opções de plataforma de dispositivo para saber mais:
@@ -41,11 +43,15 @@ Os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação
 3.  **Informar os utilizadores de como obter acesso a recursos de empresa com o portal da empresa**<br>
     Os seus utilizadores terão de saber como inscrever os dispositivos deles e o que esperar quando passarem a ser geridos. [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  Os seus utilizadores terão de saber como inscrever os dispositivos deles e o que esperar quando passarem a ser geridos.
+        - [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Orientações para o utilizador final para dispositivos Windows](../enduser/using-your-android-device-with-intune.md)
+
 ### Consulte também
 [Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ O Intune gere os PCs Windows através de políticas semelhantes às utilizadas p
 Embora o cliente do Intune suporte [políticas que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a Firewall do Windows e o Endpoint Protection, os PCs geridos com este cliente não podem ser segmentados com outras políticas do Intune.
 
 > [!NOTE]
-> Os dispositivos que estejam a executar o Windows 8.1 podem ser geridos através de um cliente do Intune ou podem ser inscritos como dispositivos móveis. As informações abaixo aplicam-se a computadores que estejam a executar o cliente do Intune. A instalação do cliente de PC do Intune e a inscrição de dispositivos Windows para gestão de dispositivos móveis em simultâneo não é suportada.
+> Os dispositivos que estejam a executar o Windows 8.1 ou posterior podem ser geridos através de um cliente do Intune ou podem ser inscritos como dispositivos móveis. As informações abaixo aplicam-se a computadores que estejam a executar o cliente do Intune. A instalação do cliente de PC do Intune e a inscrição de dispositivos Windows para gestão de dispositivos móveis em simultâneo não é suportada.
 
 ## Requisitos para a gestão do cliente de PC do Intune
 
@@ -86,6 +86,6 @@ Normalmente, o agente de cliente do Intune é executado silenciosamente, em segu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Preparar-se para configurar políticas de MAM | Microsoft Intune"
 description: "Este tópico descreve os pré-requisitos e a configuração de utilizadores antes de poder criar políticas de gestão de aplicações móveis."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: aeaa64124384a71126eeca7339416b80d395d07d
 
 
 ---
@@ -58,7 +58,7 @@ Para ver a lista completa de aplicações da Microsoft suportadas, aceda à [Gal
 -   Uma subscrição do Office 365, que é necessária para o seguinte:
   - Para aplicar políticas de MAM a aplicações com suporte de várias identidades.
   - Criar contas profissionais do SharePoint Online e do Exchange Online. O Exchange no local e o SharePoint no local não são suportados.
--   Configuração do Skype para Empresas Online para autenticação moderna. Para obter mais informações, veja [Enable modern authentication (Ativar autenticação moderna)](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md).
+-   Configuração do Skype para Empresas Online para autenticação moderna. Para mais informações, veja [Enable modern authentication (Ativar autenticação moderna)](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) para criar utilizadores. O Azure AD autentica os utilizadores quando abrem a aplicação e introduzem as respetivas credenciais de trabalho.
@@ -125,6 +125,6 @@ Os Administradores globais têm acesso ao [portal do Azure](https://portal.azure
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

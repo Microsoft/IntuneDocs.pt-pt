@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -36,6 +36,18 @@ Pode utilizar os perfis de e-mail para configurar o cliente de e-mail nativo nos
 
 
 Para além de configurar uma conta de e-mail no dispositivo, pode configurar definições de sincronização, tais como a quantidade de e-mail a sincronizar e, dependendo do tipo de dispositivo, os tipos de conteúdo a sincronizar.
+>[!NOTE]
+>
+>Se o utilizador tiver instalado um perfil de e-mail anterior ao aprovisionamento de um perfil pelo Intune, sendo que o resultado da implementação do perfil de e-mail do Intune depende da plataforma do dispositivo:
+
+>-**iOS**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. Um perfil de e-mail duplicado criado pelo utilizador irá bloquear a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum, uma vez que os utilizadores do iOS criam um perfil de e-mail e depois fazem a inscrição. O portal da empresa irá informar o utilizador da não conformidade devido ao respetivo perfil de e-mail configurado manualmente e solicitará ao utilizador para remover esse perfil. O utilizador deve remover o respetivo perfil de e-mail, para que o perfil do Intune possa ser implementado. Para evitar este problema, indique aos seus utilizadores para inscreverem-se antes de instalar um perfil de e-mail e para permitir que o Intune implemente o perfil.
+
+>-**Windows**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. O Intune vai substituir o perfil de e-mail existente criado pelo utilizador.
+
+>-**Samsung KNOX**: o Intune identifica uma conta de e-mail duplicada com base no endereço de e-mail e substituí-lo com o perfil do Intune. Se o utilizador configurar essa conta, esta será substituída novamente pelo perfil do Intune. Tenha em atenção que isto pode causar alguma confusão ao utilizador cuja configuração de conta seja substituída.
+
+>Dado que o Samsung KNOX não utiliza o nome de anfitrião para identificar o perfil, recomendamos que não crie múltiplos perfis de e-mail para implementar o mesmo endereço de e-mail em diferentes anfitriões, como estes serão substituídas entre si.
+    
 
 ## Proteger perfis de e-mail
 Pode proteger os perfis de e-mail através de um de dois métodos:
@@ -109,6 +121,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Configurar a gestão do Windows Phone e Windows 10 Mobile com o Microsoft Intune
+Para configurar o seu dispositivo Windows, pode encontrar ajuda [aqui](../enduser/using-your-windows-device-with-intune.md).
+
 Antes de poder gerir dispositivos Windows 10 Mobile ou Windows Phone com o Intune, os dispositivos têm de conseguir comunicar com o Intune. Para simplificar isto, pode criar um registo DNS para que os utilizadores não tenham de introduzir o endereço do servidor. Os passos abaixo descrevem como simplificar a inscrição para os utilizadores.  
 
 Para a maioria dos cenários, os utilizadores podem instalar a aplicação Portal da Empresa a partir da Loja Windows. Se gerir dispositivos Windows Phone 8.0 ou precisar de implementar o Portal da Empresa em dispositivos Windows Phone, também tem de transferir e assinar a aplicação Portal da Empresa. Consulte [Configurar a gestão do Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -50,12 +52,16 @@ Para a maioria dos cenários, os utilizadores podem instalar a aplicação Porta
 
     3.  Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, clique em **Testar Deteção Automática**.
 
+    4.  Os seus utilizadores terão de saber como inscrever os dispositivos deles e o que esperar quando passarem a ser geridos.
+        - [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Orientações para o utilizador final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 Não é necessário qualquer ação adicional, a não ser que pretenda implementar o Portal da Empresa nos dispositivos.  Os passos 2 e 3 na consola de administração podem ser ignorados em segurança.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

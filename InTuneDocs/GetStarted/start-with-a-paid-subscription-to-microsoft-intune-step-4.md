@@ -13,8 +13,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
+ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
+ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
 
 
 ---
@@ -90,6 +90,6 @@ Parabéns! Acabou de concluir o passo 4 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -1,36 +1,36 @@
 ---
-title: Configurar o Exchange Connector do Microsoft Intune para o Exchange alojado | Microsoft Intune
-description: 
+title: Conector do Exchange para o Exchange Online | Microsoft Intune
+description: "Ligue o Intune ao serviço do Exchange do Office 365 para suportar a gestão de dispositivos móveis (MDM) do Exchange Active Sync."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 
 
 ---
 
 # Configurar o conector de serviços do Intune para o Exchange Online
 
-Utilize estas informações para ligar o serviço Microsoft Intune e Exchange Online alojado pelo Office 365.
+Utilize estas informações para ligar o serviço Microsoft Intune e Exchange Online ou o novo serviço Dedicado do Exchange Online. Para determinar se o ambiente dedicado do Exchange Online está como **novo** ou **legado**,  contacte o seu gestor de conta. O Intune apenas suporta uma ligação de conector do Exchange de qualquer tipo por subscrição.
 
 ## Requisitos para o Conector de serviços
-O **Conector de Serviços** suporta apenas o Exchange alojado e não tem requisitos para a infraestrutura no local.
+O **Conector de Serviços** suporta apenas o Exchange Online ou o novo Exchange Online Dedicado e não tem requisitos para a infraestrutura no local.
 
 |Requisito|Mais informações|
 |---------------|--------------------|
-|Exchange alojado configurado e em execução|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
+|Exchange Online configurado e em execução|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Autoridade de gestão de dispositivos móveis| [Definir a autoridade de gestão de dispositivos móveis como o Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Versão do Microsoft Exchange|É necessário ter uma subscrição do Office 365 com um inquilino do Exchange Server 2013 ou posterior. Desde que o inquilino seja o Exchange Server 2013 ou posterior, o conector suporta o Exchange Server 2010 nesse mesmo ambiente.|
+|Versão do Microsoft Exchange|Exchange Online ou o novo serviço Exchange Online Dedicado|
 |Sincronização do Active Directory|Antes de poder utilizar o Conector do Intune, tem de [configurar a sincronização do Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), para que os seus utilizadores e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
 
 ### Requisitos de cmdlets do Exchange
@@ -54,16 +54,16 @@ Tem de criar uma conta de utilizador do Exchange Online utilizada pelo Exchange 
 3.  Na página **Configurar a Ligação ao Exchange**, escolha **Configurar o Conector de Serviços**.
 
 
-O Conector de Serviços será automaticamente configurado e sincronizado com o seu ambiente do Exchange alojado.
+O Conector de Serviços será automaticamente configurado e sincronizado com o seu ambiente do Exchange Online ou do Exchange Online Dedicado.
 
 ## Validar a sua ligação ao Exchange
 
-Após a configuração com êxito do Exchange Connector, na consola de administração do Intune, escolha a área de trabalho **ADMIN** e aceda a **Gestão de Dispositivos Móveis** > **Microsoft Exchange** e confirme se os detalhes fornecidos são apresentados em **Informações da Ligação ao Exchange**.
+Após a configuração com êxito do Exchange Connector, na [consola de administração do Microsoft Intune](http://manage.microsoft.com) escolha **Administração** e aceda a **Gestão de Dispositivo Móveis** > **Microsoft Exchange** e confirme que os detalhes que forneceu aparecem em **Informações de Ligação do Exchange**.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

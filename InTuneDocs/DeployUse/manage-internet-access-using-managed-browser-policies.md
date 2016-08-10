@@ -4,7 +4,7 @@ description: "Implemente a aplicação de browser gerido para restringir a naveg
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,22 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 44f6ee1354f1fdfc7f8db7d5b844dc12c01e686c
+ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
+ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
 
 
 ---
 
 # Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune
-O browser gerido é uma aplicação de navegação na Web que pode implementar na sua organização com o Microsoft Intune. Uma política de browser gerido configura uma lista de permissões ou uma lista de bloqueios que restringe os sites que os utilizadores do browser gerido podem visitar.
+O browser gerido é uma aplicação de navegação na Web que pode implementar na sua organização ao utilizar o Microsoft Intune. Uma política de browser gerido configura uma lista de permissões ou uma lista de bloqueios que restringe os sites que os utilizadores do browser gerido podem visitar.
 
-Como esta aplicação é uma aplicação gerida, também pode aplicar políticas de gestão de aplicações móveis à aplicação, como controlar a utilização de operações de corte, cópia e colagem, impedir capturas de ecrã e ainda garantir que as ligações para conteúdo em que os utilizadores clicam abrem apenas noutras aplicações geridas. Para obter detalhes, consulte [Configurar e implementar políticas de gestão de aplicações móveis na consola do Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Por esta aplicação ser uma aplicação gerida, também pode aplicar políticas de gestão de aplicações móveis para a aplicação. Estas políticas podem incluir o controlo e a utilização dos comandos de cortar, copiar e colagem, o que impede as capturas de ecrã e garante que as ligações para conteúdo que os utilizadores selecionem apenas abram noutras aplicações geridas. Para obter detalhes, consulte [Configurar e implementar políticas de gestão de aplicações móveis na consola do Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Se os utilizadores instalarem o browser gerido a partir da loja de aplicações e não é for gerido pelo Intune, o seguinte comportamento aplica-se: iOS – a aplicação de browser gerido pode ser utilizada como um browser básico, mas algumas funcionalidades não estarão disponíveis e não será possível aceder a dados de outras aplicações geridas pelo Intune.
-Android – a aplicação de browser gerido não pode ser utilizada.
-Se os utilizadores instalarem o browser gerido sozinhos num dispositivo iOS com uma versão inferior ao iOS 9, este não será gerido pelas políticas que criar. Para garantir que o browser é gerido pelo Intune, os utilizadores têm de desinstalar a aplicação antes de poderem implementá-la como uma aplicação gerida. No iOS 9 e posteriores, se os utilizadores instalarem o browser gerido sozinhos, ser-lhes-á pedida permissão para que seja gerido pela política.
+>Se os utilizadores instalarem o browser gerido a partir da loja de aplicações e não for gerido pelo Intune, aplica-se o comportamento seguinte:<br /><br />
+iOS – a aplicação de browser gerido pode ser utilizada como um browser básico, mas algumas funcionalidades não estarão disponíveis e não será possível aceder a dados de outras aplicações geridas pelo Intune.<br />
+Android – a aplicação de browser gerido não pode ser utilizada.<br /><br />
+Se os utilizadores instalarem o browser gerido sozinhos num dispositivo iOS com uma versão anterior ao iOS 9, nenhuma das políticas que criar vão gerir o browser. Para garantir que o Intune gere o browser, os utilizadores têm de desinstalar a aplicação antes de você a poder implementar como uma aplicação gerida. No iOS 9 e posteriores, se os utilizadores instalarem o browser gerido sozinhos, ser-lhes-á pedida permissão para que seja gerido pela política.
 
 Pode criar políticas de browser gerido para os seguintes tipos de dispositivos:
 
@@ -35,11 +36,11 @@ Pode criar políticas de browser gerido para os seguintes tipos de dispositivos:
 
 -   Dispositivos com iOS 7.1 e posterior
 
-O Browser Gerido do Intune suporta a abertura de conteúdos da Web de [Parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+O browser gerido do Intune suporta a abertura de conteúdos da Web de [Parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Criar uma política de browser gerido
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; ** Adicionar Política**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** &gt; **Adicionar Política**.
 
 2.  Configure um dos seguintes tipos de política de **Software** :
 
@@ -49,17 +50,19 @@ O Browser Gerido do Intune suporta a abertura de conteúdos da Web de [Parceiros
 
     Para obter mais informações sobre como criar e implementar políticas, veja o tópico [Manage settings and features on your devices with Microsoft Intune Policies (Gerir definições e funcionalidades nos seus dispositivos com as Políticas do Microsoft Intune)](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-3.  Utilize a seguinte tabela para o ajudar a configurar as definições de política de browser gerido:
+3.  Utilize o seguinte para o ajudar a configurar as definições de política de browser gerido:
 
-|Nome da definição|Detalhes|
-    |----------------|--------------------|
-    |**Nome**|Introduza um nome exclusivo para a política de browser gerido para o ajudar a identificá-la na consola do Intune.|
-    |**Descrição**|Forneça uma descrição geral da política de browser gerido e outras informações relevantes que o ajudem a localizá-la.|
-    |**Ativar uma lista de permissões ou uma lista de bloqueios para restringir os URLs que o Browser Gerido pode abrir**|Selecione uma das seguintes opções:<br /><br />**Permitir que o browser gerido abra apenas os URLs indicados abaixo** - especificar uma lista dos URLs que o browser gerido pode abrir.<br /><br />**Impedir o browser gerido de abrir os URLs indicados abaixo** - especificar uma lista dos URLs que o browser gerido não poderá abrir. **Nota:** não pode incluir URLs permitidos e bloqueados na mesma política de browser gerido.<br />Para obter mais informações sobre os formatos de URL que pode especificar, veja **Formatos de URL para URLs permitidos e bloqueados**, neste tópico.|
+    - **Nome**. Introduza um nome exclusivo para a política de browser gerido para o ajudar a identificá-la na consola do Intune.
+    - **Descrição**. Forneça uma descrição geral da política de browser gerido e outras informações relevantes que o ajudem a localizá-la.
+    - **Ativar uma lista de permissões ou uma lista de bloqueios para restringir os URLs que o Browser Gerido pode abrir**. Selecione uma das seguintes opções:
+        - **Permitir que o navegador gerido abra apenas as URLs listadas abaixo**. Especifica uma lista dos URLs que o browser gerido pode abrir.
+        - **Bloquear o navegador gerido de abrir as URLs listadas abaixo**. Especifica uma lista dos URLs que o browser gerido estará bloqueado para abrir.
+**Nota:** não pode incluir URLs permitidos e bloqueados na mesma política de browser gerido.
+Para obter mais informações sobre os formatos de URL que pode especificar, veja **Formatos de URL para URLs permitidos e bloqueados**, neste tópico.
 
-4.  Quando terminar, clique em **Guardar Política**.
+4.  Quando terminar, selecione **Guardar Política**.
 
-A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política** .
+A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política**.
 
 ## Criar uma implementação para a aplicação de browser gerido
 Após criar a política de browser gerido, pode criar uma implementação de software para a aplicação de browser gerido e associá-la à política de browser gerido que criou.
@@ -75,23 +78,23 @@ Para obter mais informações sobre como implementar aplicações, veja [Impleme
 
 -   Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
 
--   As definições que os utilizadores criam para o browser incorporado nos seus dispositivos não são utilizadas pelo browser gerido. Isto acontece porque o browser gerido não tem acesso a estas definições.
+-   O browser gerido não utiliza as definições que os utilizadores criam para o browser incorporado nos seus dispositivos. Isto acontece porque o browser gerido não tem acesso a estas definições.
 
--   Se configurar as opções **Exigir PIN simples para obter acesso** ou **Exigir credenciais da empresa para obter acesso** numa política de gestão de aplicações móveis associada ao browser gerido e um utilizador clicar na ligação de ajuda na página de autenticação, em seguida, o utilizador pode procurar sites na Internet independentemente de terem sido adicionados a uma lista de bloqueios na política de browser gerido.
+-   Se configurar a opção **Exigir PIN simples para obter acesso** ou **Exigir credenciais da empresa para obter acesso** numa política de gestão de aplicações móveis associada ao browser gerido e um utilizador selecionar a ligação de ajuda na página de autenticação, em seguida, o utilizador pode procurar sites na Internet independentemente de terem sido adicionados a uma lista de bloqueios na política de browser gerido.
 
 -   O browser gerido só pode bloquear o acesso a sites quando estes são acedidos diretamente. Não pode bloquear o acesso quando são utilizados serviços intermédios (como um serviço de tradução) para aceder ao site.
 
--   Para permitir a autenticação e garantir que é possível aceder à documentação do Intune, **&#42;.microsoft.com** está excluído das definições da lista de permissões ou de bloqueios – é sempre permitido.
+-   Para permitir a autenticação e garantir que é possível aceder à documentação do Intune, **&#42;.microsoft.com** está excluído das definições da lista de permissões ou de bloqueios. É sempre permitido.
 
 ### Desativar dados de utilização
-A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do browser gerido para melhorar os produtos e serviços Microsoft, mas pode desativar a recolha de dados através da definição **Dados de Utilização** no seu dispositivo. OS utilizadores não têm controlo sobre a recolha destes dados.
+A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do browser gerido para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados.
 
 ## Informações de referência
 
 ### Formato do URL para URLs permitidos e bloqueados
-Utilize as informações seguinte para saber mais sobre os formatos permitidos e os carateres universais que pode utilizar ao especificar os URLs na lista de permissões e bloqueios.
+Utilize as informações seguinte para saber mais sobre os formatos permitidos e os carateres universais que pode utilizar ao especificar os URLs na lista de permissões e bloqueios:
 
--   Pode utilizar o símbolo de caráter universal "**&#42;**" de acordo com as regras na lista de padrões permitidos abaixo.
+-   Pode utilizar o símbolo de caráter universal (**&#42;**) de acordo com as regras na lista de padrões permitidos seguinte.
 
 -   Certifique-se de que adiciona o prefixo **http** ou **https** a todos os URLs quando os introduzir na lista.
 
@@ -101,7 +104,7 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
     -   Porta 443 para https
 
-    A utilização de carateres universais para o número da porta não é suportada; por exemplo, **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*;**
+    Não é suportado utilizar carateres universais para o número de porta. Por exemplo, **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*; * * não são suportados.
 
 -   Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
 
@@ -109,7 +112,7 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
     |-------|---------------|-----------|------------------|
     |http://www.contoso.com|Corresponde a uma única página|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
     |http://contoso.com|Corresponde a uma única página|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Corresponde a todos os URLs a começar com www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+    |http://www.contoso.com/&#42;|Corresponde a todos os URLs que começam com www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
     |http://&#42;.contoso.com/&#42;|Corresponde a todos os subdomínios em contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
     |http://www.contoso.com/images|Corresponde a uma única pasta|www.contoso.com/images|www.contoso.com/images/dogs|
     |http://www.contoso.com:80|Corresponde a uma única página, ao utilizar um número de porta|http://www.contoso.com:80||
@@ -151,6 +154,6 @@ Se forem implementadas várias políticas de browser gerido num dispositivo e as
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

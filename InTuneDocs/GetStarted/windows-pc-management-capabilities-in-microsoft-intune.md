@@ -4,7 +4,7 @@ description: Saiba mais acerca das funcionalidades do Intune quando gere os PCs 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o 
 
 -   **Proteção antimalware** - o Intune inclui o Endpoint Protection, que ajuda a proteger os seus PCs de software maligno.
 
--   **Assistência remota** - o Intune permite que os utilizadores contactem os técnicos de suporte de TI, que podem fornecer assistência através de uma funcionalidade de ambiente de trabalho remoto incluída no Intune <!--- (requires TeamViewer software)--->.
+-   **Assistência remota** - o Intune permite que os utilizadores contactem os técnicos de suporte de TI, que podem fornecer assistência através de uma funcionalidade de ambiente de trabalho remoto incluída no Intune (requer software do TeamViewer).
 
 -   **Gestão de licenças de software** - controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão a ser utilizadas.
 -   **Implementação de aplicações** - implemente software em PCs geridos por si. Algumas funcionalidades de gestão de aplicações não estão disponíveis ao gerir computadores com o software cliente.
@@ -48,7 +48,7 @@ O Intune pode gerir computadores com as seguintes versões do Windows (x86 e x64
 
 -   **Windows 8.1** - versões Pro e Enterprise.
 
-- **Windows 10** -versões Home, Pro, Education e Enterprise.
+- **Windows 10** - versões Pro, Education e Enterprise.
 
 
 ## Requisitos mínimos de hardware
@@ -74,6 +74,6 @@ Seguem-se os requisitos de software para instalar o computador cliente do Intune
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

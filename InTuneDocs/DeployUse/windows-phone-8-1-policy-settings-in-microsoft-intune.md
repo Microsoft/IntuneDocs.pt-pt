@@ -4,7 +4,7 @@ description: "O Intune fornece uma variedade de definições gerais incorporadas
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Utilize a **Política de configuração geral para Windows Phone (Windows Phone 
 |----------------|-----------------------------------------|
 |**Permitir copiar e colar**|Permite a funcionalidade de copiar e colar nos dispositivos.|Não|Sim|
 
-### Definições para aplicações compatíveis e não compatíveis
-Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista de aplicações conformes ou não conformes com as informações seguintes:
+### Definições para aplicações permitidas e bloqueadas
+Na lista de **aplicações permitidas e bloqueadas**, especifique uma lista de aplicações que pretende permitir ou bloquear com as seguintes informações:
 
 > [!NOTE]
-> Uma única política só pode conter uma lista de aplicações compatíveis ou uma lista de aplicações não compatíveis. Não é possível especificar ambas na mesma política.
+> Uma única política só pode conter uma lista de aplicações permitidas ou uma lista de aplicações bloqueadas. Não é possível especificar ambas na mesma política.
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 > Se especificar uma lista de aplicações permitidas para dispositivos Windows Phone 8.1, tem de adicionar a aplicação Portal da Empresa a esta lista ou a mesma será bloqueada.
 
 
-### Informações de referência para aplicações compatíveis e não compatíveis
+### Informações de referência para aplicações permitidas e bloqueadas
 
 #### Como especificar URLs para lojas de aplicações
-Para especificar um URL de aplicação na lista de aplicações compatíveis e não compatíveis, utilize o seguinte formato:
+Para especificar um URL de aplicação na lista de aplicações permitidas e bloqueadas, utilize o seguinte formato:
 
 Na página [Aplicações+Jogos do Windows Phone](http://www.windowsphone.com/en-us/store/overview) , procure a aplicação que pretende utilizar.
 
-Abra a página da aplicação e copie o URL para a área de transferência. Agora pode utilizar este URL na lista de aplicações compatíveis ou na lista de aplicações não compatíveis.
+Abra a página da aplicação e copie o URL para a área de transferência. Agora, pode utilizar este URL na lista de aplicações permitidas ou bloqueadas.
 
 **Exemplo:** Procure a aplicação Skype na loja. O URL a utilizar será **http://www.windowsphone.com/pt-pt/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Na caixa de diálogo **Adicionar ou Editar Definição OMA-URI**, especifique as
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
