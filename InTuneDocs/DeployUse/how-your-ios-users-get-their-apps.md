@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
+ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
+ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
 
 
 ---
@@ -26,7 +26,7 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 **Aplicações obrigatórias** - aplicações exigidas pelo administrador e que são instaladas nos dispositivos com envolvimento mínimo do utilizador, dependendo da plataforma.
 
-**Aplicações obrigatórias** - aplicações fornecidas na lista de aplicações do Portal da Empresa e que os utilizadores podem optar por instalar.
+**Aplicações disponíveis** - aplicações fornecidas na lista de aplicações do Portal da Empresa e que os utilizadores podem optar por instalar.
 
 **Aplicações geridas** - aplicações que podem ser geridas através de políticas e que foram "encapsuladas" pelo Intune ou incorporadas no Software Development Kit (SDK) do Intune Mobile Application Management (MAM). Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
 
@@ -38,6 +38,6 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

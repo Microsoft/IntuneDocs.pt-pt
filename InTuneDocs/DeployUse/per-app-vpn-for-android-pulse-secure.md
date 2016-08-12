@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
-ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
+ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
+ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune. Em primeiro lugar, irá criar um perfil de VPN que utiliza o tipo de ligação Pulse Secure e, em seguida, uma política de configuração personalizada que associa esse perfil a aplicações específicas. Depois de implementar essas políticas no dispositivo Android ou grupos de utilizador, abrir uma das aplicações especificadas nesses dispositivos irá abrir uma ligação VPN para essa aplicação.
 
-> [NOTA]
+> [!NOTE]
 > 
 > Apenas o tipo de ligação Pulse Secure é suportado para este perfil.
 
@@ -37,7 +37,8 @@ Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pe
 4. Preencha e guarde o perfil de VPN. Para mais detalhes sobre perfis de VPN, consulte [Ligações VPN](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-Tome nota do nome do perfil de VPN para utilização no próximo passo. Por exemplo, **MyAppVpnProfile**.
+> 
+> Tome nota do nome do perfil de VPN para utilização no próximo passo.   Por exemplo, **MyAppVpnProfile**.
 
 ### Passo 2: criar uma política de configuração personalizada
 
@@ -81,6 +82,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
