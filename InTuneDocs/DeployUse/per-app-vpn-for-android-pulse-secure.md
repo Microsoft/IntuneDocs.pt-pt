@@ -52,7 +52,7 @@ Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pe
 
 
    ![Exemplo de política personalizada de VPN por aplicação Android](..\media\android_per_app_vpn_oma_uri.png)
-#### Definir a lista de aplicações como Lista de Bloqueados ou Lista de Autorizados (opcional)
+#### Definir a lista de aplicações como Lista de Bloqueados ou Lista de Permitidos (opcional)
 Pode especificar que a sua lista de aplicações *não* irá ter permissão para utilizar a ligação VPN com o valor **BLACKLIST**.  Todas as outras aplicações estabelecerão ligação através de VPN.
 
 Em alternativa, pode especificar que *apenas* as aplicações especificadas podem utilizar a ligação VPN com o valor **WHITELIST**.
