@@ -2,7 +2,7 @@
 title: "Resolução de problemas de implementação de aplicações | Microsoft Intune"
 description: "Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune"
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Resolução de problemas de implementação de aplicações no Microsoft Intune
-Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune
+Se estiver a ter problemas de implementação e gestão de aplicações com o Intune, comece por aqui. Este tópico contém alguns problemas comuns que poderá encontrar juntamente com as soluções.
 
-Se estas informações não resolverem o seu problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
+## Problemas comuns de implementação de aplicações
 
+### Os utilizadores não conseguem iniciar sessão no Portal da Empresa do Intune
 
-## Problemas típicos de implementação de aplicações
+1.  Certifique-se de que a conta de utilizador existe e está ativada no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Se não conseguir iniciar sessão no portal da empresa do Microsoft Intune
+3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), certifique-se de que o utilizador está a introduzir o nome de utilizador correto para iniciar sessão no Intune e de que está no formato: **joe@domain.com**. Se o utilizador parecer estar a introduzir a palavra-passe errada, peça-lhe para repô-la.
 
-1.  Verifique se a sua conta existe no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) ou se está desativada.
-
-2.  Certifique-se de que está aprovisionado nesta conta no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), certifique-se de que está a utilizar o nome de utilizador e a palavra-passe corretos para iniciar sessão no Intune e de que estão no formato: **joe@domain.com**.
-
-### Se as informações para Contactar TI estiverem em falta no portal da empresa
+### As informações para Contactar TI estiverem em falta no Portal da Empresa
 
 1.  Na consola de administração do Intune, escolha **Admin**&gt;**Portal da Empresa**.
 
@@ -105,6 +100,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

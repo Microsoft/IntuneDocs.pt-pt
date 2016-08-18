@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ Para sistemas operativos de dispositivos móveis, incluindo iOS, Android e Windo
 |**Descrição**|Dispositivo pessoal inscrito através do Microsoft Intune|Dispositivo que é propriedade da empresa para um único utilizador|Dispositivo que é propriedade da empresa gerido através de uma conta de gestor partilhada por vários utilizadores|Dispositivo sem utilizadores que é propriedade da empresa utilizado por vários utilizadores.|
 |**Utilizador do dispositivo**|Proprietário|Utilizador atribuído|Nenhuma conta de utilizador específica|Nenhum utilizador específico|
 |**Quem inscreve?**|Proprietário|Admistrador|Gestor de Dispositivos|Qualquer pessoa|
-|**Quem cancela a inscrição?**|Proprietário ou administrador|Admistrador|Admistrador|Admistrador|
+|**Quem cancela a inscrição?**|Proprietário ou administrador|Plataforma |Administrador ou utilizador|Administrador ou utilizador|
 |**Quem pode redefinir?**|Proprietário ou administrador|Admistrador|Admistrador|Admistrador|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Agora já descobriu algumas das capacidades que pode utilizar quando inscrever o
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

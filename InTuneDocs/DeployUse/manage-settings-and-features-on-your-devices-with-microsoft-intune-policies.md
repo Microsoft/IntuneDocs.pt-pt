@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -100,7 +100,7 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 
 2.  Selecione uma das seguintes ações:
 
-- **Editar** - abra as propriedades da política selecionada para poder fazer alterações.
+- **Editar**: abra as propriedades da política selecionada para poder fazer alterações.
 - **Eliminar** - elimine a política selecionada.<br>Quando elimina uma política, esta é removida de todos os grupos nos quais estava implementada.
 - **Gerir a Implementação** - selecione o grupo no qual pretende implementar a política e escolha **Adicionar**.
 
@@ -108,7 +108,7 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 ## Perguntas mais frequentes sobre as políticas do Intune
 
 ### Quanto tempo é necessário para que os dispositivos móveis obtenham a política ou as aplicações após a implementação?
-Quando uma política ou aplicação é implementada, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de 5 minutos.
+Quando uma política ou aplicação é implementada, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de cinco minutos.
 
 Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, o Intune faz mais três tentativas.  Se o dispositivo estiver offline (por exemplo, se estiver desligado ou se não estiver ligado a uma rede), pode não receber as notificações. Neste caso, o dispositivo irá obter a política na entrada seguinte agendada com o serviço do Intune, da seguinte forma:
 
@@ -152,7 +152,7 @@ Os conflitos ocorrem quando duas definições de políticas são iguais.  Por ex
 Se uma política for implementada na aplicação e entrar em vigor e, em seguida, for implementada uma segunda, a primeira implementada terá precedência e manter-se-á aplicada, ao passo que a segunda estará em conflito. Se forem aplicadas ao mesmo tempo, o que significa que nenhuma tem precedência sobre a outra, estarão ambas em conflito. As definições em conflito serão definidas para os valores mais restritivos.
 
 ### O que acontece quando políticas personalizadas do iOS entram em conflito?
-O Intune não avalia o payload dos ficheiros do Apple Configurator nem de políticas OMA-URI personalizadas. Serve apenas como o mecanismo de entrega.
+O Intune não avalia o payload dos ficheiros do Apple Configurator nem de políticas OMA-URI (Open Mobile Alliance Uniform Resource Identifier) personalizadas. Serve apenas como o mecanismo de entrega.
 
 Quando implementar uma política personalizada, confirme que as definições configuradas não entram em conflito com a política de conformidade, de configuração ou outras políticas personalizadas. No caso de uma política personalizada com conflitos de definições, a ordem pela qual as definições são aplicadas é aleatória.
 
@@ -181,7 +181,7 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
         - Permitir loja de aplicações
         - Permitir captura de ecrã
         - Permitir geolocalização
-        - Permitir Conta Microsoft
+        - Permitir conta Microsoft
         - Permitir copiar e colar
         - Permitir partilha de Wi-Fi
         - Permitir ligação automática a hotspots Wi-Fi
@@ -215,6 +215,6 @@ Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubles
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
+ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
+ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
 
 
 ---
@@ -27,7 +27,7 @@ O Microsoft Intune ajuda-o a gerir aplicações compradas através de um program
 
 ## Que tipos de aplicações pode gerir?
 
-Atualmente, o Intune permite-lhe gerir as aplicações que comprou em grandes volumes da loja de aplicações iOS e da Loja Windows para Empresas.
+Com o Intune, pode gerir as aplicações que comprou em grandes volumes na loja de aplicações iOS e na Loja Windows para Empresas.
 Para saber como gerir aplicações licenciadas a partir de cada loja, escolha um dos tópicos seguintes:
 
 - [Gerir aplicações iOS compradas em grandes volumes](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -35,9 +35,6 @@ Para saber como gerir aplicações licenciadas a partir de cada loja, escolha um
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ Este guia de introdução orienta-o ao longo dos passos de configuração de uma
 >[!NOTE]
 >Este artigo foca-se na configuração do Intune como um serviço autónomo. Em alternativa, se utilizar atualmente o Microsoft System Center Configuration Manager para gerir computadores e servidores, pode [expanda o Configuration Manager para gerir dispositivos móveis](https://technet.microsoft.com/library/jj884158.aspx). Pode fazê-lo ao ligar o Intune ao Configuration Manager numa implementação híbrida de gestão dispositivos móveis (MDM).
 
-Os passos deste guia de introdução partilham muitos dos mesmos passos que se encontram no [Guia de avaliação do Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). No entanto, quando terminar a avaliação e estiver pronto para começar a gerir os seus dispositivos móveis, tem de abordar vários requisitos adicionais:
+Este guia de introdução partilha muitos dos mesmos passos que se encontram no [Guia de avaliação do Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). No entanto, quando terminar a avaliação e estiver pronto para começar a gerir os seus dispositivos móveis, tem de abordar vários requisitos adicionais:
 
 -   Sincronizar contas do Active Directory no local com o Intune e o Azure Active Directory.
 
@@ -75,6 +75,6 @@ Está na altura de começar a utilizar o guia de introdução do Intune!
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

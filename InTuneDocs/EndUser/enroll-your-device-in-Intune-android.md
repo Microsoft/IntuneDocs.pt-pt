@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -91,17 +91,11 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
 
     ![Introduzir PIN ou palavra-passe](./media/and-enroll-6-PIN-native.png)
 
-13.  Siga as instruções abaixo que correspondem ao tipo de dispositivo que está a utilizar (Android nativo ou Samsung Knox). Para determinar se tem um dispositivo Samsung Knox, aceda a **Definições** &gt; **Acerca do dispositivo**. Se não vir a "versão KNOX" aí listada, tem um dispositivo Android nativo.
-
-    -   Dispositivo nativo (não Samsung Knox): no ecrã **Nomear o certificado**, toque em **OK** para aceitar o certificado predefinido.
-
-    ![Ecrã Nomear o certificado](./media/and-enroll-7-cert-native.png)
-
-    -   Dispositivo Samsung Knox: aceite a política de privacidade e toque em **CONFIRMAR**.
+13.  Se estiver a utilizar um dispositivo Samsung Knox, toque em **Confirmar** e verá uma mensagem a indicar que o dispositivo está a ser inscrito. Se estiver a utilizar um dispositivo Android nativo, repare apenas no ecrã abaixo que mostra que o dispositivo está a ser inscrito.
 
     ![Política de privacidade do Samsung KNOX](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Verá a seguinte mensagem no ecrã quando o Intune inscrever o seu dispositivo.
+    Este ecrã mostra que o dispositivo está a ser inscrito.
 
     ![Ecrã Inscrever dispositivo](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informa�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

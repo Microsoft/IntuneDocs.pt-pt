@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
+ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 
 ---
@@ -40,7 +40,23 @@ Se alguma vez anular a inscrição do seu telemóvel, este permanecerá encripta
 - Vê uma mensagem a indicar que ainda tem de encriptar.
 - Depara-se com erros quando tenta utilizar a aplicação do Portal da Empresa.
 
-**O que fazer**: confirme que definiu uma palavra-passe ou um PIN no dispositivo.
+**Coisas a experimentar**: 
+
+1. Certifique-se de que o seu dispositivo está carregado e ligado.
+
+2. Confirme se definiu uma palavra-passe ou um PIN no dispositivo.
+
+3. Se já definiu uma palavra-passe ou PIN no seu dispositivo, tente os seguintes passos, que o administrador de TI pode exigir para tornar o seu dispositivo mais seguro. Os nomes de menu que visualiza poderão ser ligeiramente diferentes nos passos, dependendo do tipo de dispositivo Android que tiver.
+
+    a. Vá para **Definições** > **Segurança** > **Bloqueio de ecrã**. Confirme o seu PIN ou palavra-passe atual.
+
+    b. No ecrã **Escolher bloqueio de ecrã**, escolha o tipo de bloqueio de ecrã que pretende utilizar.
+
+    c. No ecrã **Arranque seguro**, toque em **Exigir PIN para iniciar o dispositivo**e toque em **Continuar**.
+
+    d. Escolha um PIN (pode introduzir o mesmo que introduziu anteriormente) e toque em **Confirmar o PIN**.
+
+    e. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
 
 Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
 
@@ -49,6 +65,6 @@ Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informa�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

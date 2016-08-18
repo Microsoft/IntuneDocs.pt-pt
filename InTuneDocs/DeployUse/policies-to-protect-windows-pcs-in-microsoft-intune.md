@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 65924fc508c415d2146d955e891d403ba280b324
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # Utilizar políticas para ajudar a proteger PCs Windows que executem o software de cliente do Intune
 
-O Microsoft Intune oferece três políticas que pode utilizar para ajudar a garantir a segurança dos PC Windows quando são geridos pelo [software de cliente do Intune](manage-windows-pcs-with-microsoft-intune.md). 
+O Microsoft Intune oferece três políticas que pode utilizar para ajudar a garantir a segurança dos PCs Windows que são geridos pelo [software de cliente do Intune](manage-windows-pcs-with-microsoft-intune.md).
 
 
 ## Atualizações de software
@@ -30,7 +30,7 @@ Com o Intune, é mais fácil [manter os PCs Windows que gere atualizados](keep-w
 
 ## Firewall do Windows
 
-A Firewall do Windows ajuda a proteger os PCs Windows contra hackers, software maligno e outras ameaças. O Intune permite-lhe [gerir definições e funcionalidades da Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) em todos os PCs que gere.
+A Firewall do Windows ajuda a proteger os PCs Windows contra hackers, software maligno e outras ameaças. Com o Intune, pode [gerir definições e funcionalidades da Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) em todos os PCs que gere.
 
 ## Endpoint Protection
 
@@ -38,12 +38,11 @@ Como administrador de TI, uma das suas principais prioridades é [manter os comp
 
 
 
-### Consulte Também
+### Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

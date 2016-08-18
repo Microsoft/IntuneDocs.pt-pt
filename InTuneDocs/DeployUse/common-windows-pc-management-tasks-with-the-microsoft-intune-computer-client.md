@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Se um computador não conseguir ligar ao Intune, é apresentada uma mensagem na 
 
 Quando extingue um computador:
 
--   Este é removido do inventário do Intune e a licença associada ao computador é disponibilizada para reutilização.
+-   Este é removido da gestão e do inventário do Intune e a licença associada ao computador é disponibilizada para reutilização. Extinguir/Eliminar remove o cliente de software do Intune, mas não remove aplicações ou dados do computador.
 
 -   O estado do mesmo já não é apresentado na consola do Intune.
 

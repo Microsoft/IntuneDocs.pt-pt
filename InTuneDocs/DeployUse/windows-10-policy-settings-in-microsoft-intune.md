@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Utilize as definições de política indicadas neste tópico para obter ajuda pa
 Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos. 
 
 
-### Palavra-passe
+## - Palavra-passe
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Memorizar histórico de palavras-passe** - **Evita a reutilização de palavras-passe anteriores**|Especifica o número de palavras-passe utilizadas anteriormente memorizadas pelo dispositivo.|
 |**Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**|Se estiver ativada, o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo de um estado inativo.<br>(Apenas Windows 10 Mobile)|
 
-### Encriptação
+## - Encriptação
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
 |**Encriptação obrigatória no dispositivo móvel**|Ativa a encriptação nos dispositivos visados.<br>(Apenas Windows 10 Mobile)|
 
-### Sistema
+## - Sistema
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir que os dados de diagnóstico e de utilização sejam enviados à Microsoft**|Determina a quantidade de dados de diagnóstico e de utilização que são enviadas à Microsoft a partir dos dispositivos.<br><br>**Não** - Não são enviados dados à Microsoft<br>**Básico** - O dispositivo envia apenas informações limitadas à Microsoft<br>**Melhorado** - Envia dados de diagnóstico melhorados à Microsoft<br>**Completo (recomendado)** -Envia os mesmos dados que **Melhorado**, juntamente com dados adicionais sobre o estado do dispositivo|
 
 
-### Conta e sincronização
+## - Conta e sincronização
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir adicionar contas de terceiros manualmente**|Permite que o utilizador adicione contas de e-mail ao dispositivo, que não estão associadas a uma conta Microsoft.|
 |**Permitir a sincronização de definições para contas Microsoft**|Permite que as definições do dispositivo e de aplicações associadas a uma conta Microsoft sejam sincronizadas entre dispositivos.|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir Gestor de Palavras-passe**|Ativar ou desativar a funcionalidade Gestor de Palavras-passe do Edge.|
 |**Localização da lista de sites do Modo Empresarial**|Especifica onde encontrar a lista de Web sites que serão abertos no modo Empresarial. Os utilizadores não podem editar esta lista.<br>(apenas para ambiente de trabalho Windows 10)|
 
-### Aplicações
+## - Aplicações
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 
 
 
-### Rede móvel
+## - Rede móvel
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir VPN sobre redes móveis**|Controla se o dispositivo pode aceder a ligações VPN quando ligado a uma rede celular.|
 |**Permitir roaming do VPN sobre redes móveis**|Controla se o dispositivo pode aceder a ligações VPN quando está em roaming numa rede celular.|
 
-### Hardware
+## - Hardware
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir ligação USB**|Controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.|
 |**Permitir modo Anti-roubo**|Configurar se o modo Anti-roubo do Windows estiver ativado.|
 
-### Funcionalidades
+## - Funcionalidades
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir Cortana**|Ativar ou desativar o assistente de voz Cortana.|
 |**Permitir notificações de centro de ação**|Ativar ou desativar notificações do centro de ação no ecrã de bloqueio do dispositivo.<br>(Apenas Windows 10 Mobile)|
 
-### Defender
+## - Windows Defender
 
 Todas as definições são apenas para ambiente de trabalho Windows 10.
 
@@ -162,7 +162,7 @@ Todas as definições são apenas para ambiente de trabalho Windows 10.
 |**Processos a serem excluídos ao executar uma análise ou ao utilizar a proteção em tempo real**|Adicione um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Estes processos não serão incluídos em análises em tempo real ou agendadas.| 
 
 
-### Definições das atualizações
+## - Atualizações
 
 |Nome da definição|Detalhes|
 |----------------|---------------|
@@ -176,14 +176,14 @@ Esta capacidade destina-se a permitir a implementação de definições do Windo
 
 
 
-### Definições gerais de política personalizada
+## - Geral
 
 |Nome da definição|Detalhes|
     |----------------|--------------------|
     |**Nome**|Introduza um nome exclusivo para a política para o ajudar a identificá-la na consola do Intune.|
     |**Descrição**|Indique uma descrição geral da política e outras informações relevantes que poderão ajudá-lo a localizá-la.|
 
-### Definições OMA-URI de política personalizada
+## - Definições OMA-URI
 
 |Nome da definição|Detalhes|
     |--------|--------------------|
@@ -194,12 +194,12 @@ Esta capacidade destina-se a permitir a implementação de definições do Windo
     |**Valor**|Indique o valor a associar ao OMA-URI especificado anteriormente.|
 
 
-## Definições personalizadas de URI para dispositivos Windows 10
+## Definições de URI do Windows 10
 Este tópico lista as definições que pode configurar em dispositivos Windows 10 e Windows 10 Mobile numa **Política Personalizada do Windows 10** do Microsoft Intune.
 
 Se pretender utilizar a Política de URI Personalizada do Windows, todos os dispositivos têm de ser inscritos no Intune.
 
-### Definições de política de URI
+## - Política
 
 |Nome da política|Detalhes|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 |**Atualização/DeferUpgradePeriod**<br>(ambiente de trabalho e dispositivos móveis)|**Descrição:** política para diferir atualizações de funcionalidade para até oito meses<br /><br />**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Tipo de dados:** Número inteiro<br /><br />**Valores permitidos:**<br>**0**: aplicar atualizações imediatamente (predefinição)<br>**1**-**8**: número de meses para diferir atualizações de funcionalidade.<br /><br />Para obter mais informações, consulte:<br>[Introdução à manutenção do Windows](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plano de implementação do Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Atualização/PauseDeferrals**<br>(ambiente de trabalho e dispositivos móveis)|**Descrição:** permite que uma máquina CBB deixe de receber atualizações durante cinco semanas. Isto deve ser utilizado caso exista um problema com uma atualização.<br /><br />**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Tipo de dados:** Número inteiro<br /><br />**Valores permitidos:**<br>**0**: aplicar atualizações imediatamente (predefinição)<br>**1**: colocar atualizações em pausa (expira após cinco semanas)|
 
-### Definições de URI do Windows Defender
+## - Windows Defender
 
 |Nome da política|Detalhes|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 |**ExcludedPaths**<br>(apenas ambiente de trabalho)|**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Tipo de dados:** Cadeia<br /><br />**Valores permitidos:**<br /><br />*&lt;lista de caminhos separados por ponto e vírgula&gt;*<br /><br />Exemplo: **c:\test;c:\test1.exe**<br /><br />**Valor predefinido:** Não são excluídos caminhos|
 |**ExcludedProcesses**<br>(apenas ambiente de trabalho)|**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Tipo de dados:** Cadeia<br /><br />**Valores permitidos:**<br>*&lt;lista de caminhos separados por ponto e vírgula&gt;*<br>Exemplo: **c:\test.exe;c:\test1.exe**<br>**Valor predefinido:** Não são excluídos processos|
 
-### Definições de URI do browser Edge
+## - Browser Edge
 
 |Nome da política|Detalhes|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

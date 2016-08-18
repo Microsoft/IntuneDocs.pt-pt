@@ -4,7 +4,7 @@ description: "Lista de ligações para tarefas que pode fazer no seu dispositivo
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Esta página contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: informações relacionadas com a inscrição, gestão de tarefas e problemas de conformidade.
+Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: 
+- Instalação da aplicação Portal da Empresa e inscrição no Intune 
+- Tarefas de gestão pós-inscrição
+- Resolver problemas de compatibilidade
 
 ## Instalação da aplicação Portal da Empresa e inscrição no Intune
 
@@ -61,6 +64,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que poderã
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 
