@@ -13,13 +13,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 2f45c54d18156469488c77600626ea359374a588
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 7376713410e802ffbee6238e7242e6d8ecc204df
 
 
 
 ---
-# Configurar a infraestrutura de certificados
+# Configurar a infraestrutura de certificados para PFX
 Este tópico descreve o que precisa para criar e implementar perfis de certificado .PFX.
 
 Para efetuar qualquer autenticação baseada em certificado na sua organização, é necessário uma Autoridade de Certificação Empresarial.
@@ -158,6 +158,6 @@ Está agora pronto para configurar perfis de certificado, conforme descrito em [
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
