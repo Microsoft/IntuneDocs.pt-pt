@@ -13,13 +13,68 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
+ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
+ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 
 
 ---
+## Aviso sobre os próximos melhoramentos da experiência de administração de grupos
+
+Com base nos seus comentários para uma experiência de agrupamento e filtragem no Enterprise Mobility + Security, estamos a converter os Grupos do Intune em Grupos de Segurança baseados no Azure Active Directory. Isto irá unificar a gestão de grupos através do Intune e do Azure Active Directory (Azure AD). A nova experiência irá evitar que tenha de duplicar grupos entre serviços e fornece extensibilidade através do PowerShell e do Graph. 
+
+### Como isto me afeta neste momento?
+Esta alteração não o afeta agora, mas podemos informá-lo sobre o que vai acontecer:
+
+-   Em setembro, as novas contas aprovisionadas após o lançamento do serviço mensal irão utilizar grupos de segurança do Azure AD em vez de grupos de utilizadores do Intune.   
+-   Em outubro, as novas contas aprovisionadas após o lançamento do serviço mensal irão gerir os grupos de utilizadores e dispositivos com base nos grupos no portal do Azure AD. Nenhum impacto para os clientes existentes
+-   Em novembro, a equipa do produto Intune irá começar a migrar os clientes existentes para a nova experiência de gestão de grupos baseada no Azure AD. Todos os grupos de utilizadores e dispositivos no Intune atualmente serão migrados para os grupos de segurança do Azure AD. A migração será efetuada em lotes a partir de novembro. Não começaremos as migrações enquanto não conseguirmos minimizar qualquer impacto no seu trabalho diário e contamos não causar nenhum impacto no utilizador final. Também enviaremos um aviso antes da migração da sua conta.
+
+
+### Como e quando serei migrado para a nova experiência de grupos?
+Os clientes atuais serão migrados durante um determinado período de tempo. Estamos a finalizar o agendamento dessa migração e atualizaremos este tópico dentro de algumas semanas para fornecer mais detalhes. Receberá um aviso antes de ser migrado. Se tiver alguma preocupação referente à migração, contacte a nossa equipa de migração em [intunegrps@microsoft.com](intunegrps@microsoft.com).
+
+### O que acontece aos meus grupos de utilizadores e dispositivos existentes?
+ Os grupos de utilizadores e dispositivos que criou serão migrados para os grupos de segurança do Azure AD. Os grupos predefinidos do Intune, como o grupo Todos os Utilizadores, apenas serão migrados se estiver a utilizá-los em implementações no momento da migração. A migração poderá ser mais complexa para alguns grupos e iremos notificá-lo se forem necessários passos adicionais para a migração.
+
+### Que novas funcionalidades estarão disponíveis para mim?
+Segue-se a nova funcionalidade que será introduzida:
+
+-    Os Grupos de Segurança do Azure AD serão suportados no Intune para todos os tipos de implementações.
+-    Os Grupos de Segurança do Azure AD suportarão o agrupamento de dispositivos, bem como de utilizadores.
+-    Os Grupos de Segurança do Azure AD suportarão grupos dinâmicos com atributos de dispositivos do Intune. Por exemplo, poderá agrupar dinamicamente dispositivos com base na plataforma, por exemplo, iOS. Dessa forma, quando um novo dispositivo iOS é inscrito na sua organização, é adicionado automaticamente ao grupo de dispositivos dinâmico iOS.
+-    Experiências de administração partilhadas para gestão de grupos no Azure AD e no Intune.
+- A *função Administrador de Serviços do Intune* será adicionada ao Azure AD para permitir aos administradores de serviços no Intune efetuar tarefas de gestão de grupos no Azure AD.
+
+
+
+
+### Que funcionalidades do Intune não estarão disponíveis?
+Embora a experiência de grupo vá ser melhorada, poderão existir algumas funcionalidades do Intune que não estarão disponíveis após a migração.
+
+#### Funcionalidade de gestão de grupos
+
+-   Não poderá excluir membros ou grupos quando criar um novo grupo. No entanto, os grupos dinâmicos do Azure AD irão permitir a utilização de atributos para criar regras avançadas para excluir membros com base nos critérios.
+-   Não existirá suporte para os grupos **Utilizadores Sem Grupo** e **Dispositivos Sem Grupo**. Esses grupos não serão migrados.
+
+
+#### Funcionalidade dependente dos grupos
+
+-   A função Administrador de Serviço não terá permissões para **Gerir grupos**.
+-   Não poderá agrupar dispositivos do Exchange ActiveSync.  O grupo **Todos os Dispositivos Geridos do EAS** será convertido de um grupo para uma vista de relatório.
+-  A funcionalidade para ordenar com grupos em relatórios não estará disponível.
+-  A filtragem de grupos personalizada de regras de notificação não estará disponível.
+
+### O que devo fazer para me preparar para esta alteração?
+ Temos recomendações que facilitarão esta transição para si:
+
+- Limpe todos os grupos do Intune indesejados ou desnecessários antes da migração.
+- Avalie a sua utilização da exclusão em grupos e considere reestruturar os grupos para que não tenha de utilizar a exclusão.
+-  Se tiver administradores que não têm permissões para criar grupos no Azure AD, peça ao administrador do Azure AD para adicioná-los à função **Administrador de Serviço do Intune** do Azure AD.
+
 
 # Criar grupos para gerir utilizadores e dispositivos com o Microsoft Intune
+
+Esta secção descreve como criar grupos do Intune na consola de administração do Intune.
 
 Para criar e gerir grupos, utilize a área de trabalho **Grupos** na consola de administração do Microsoft Intune. A página **Descrição Geral dos Grupos** contém resumos do estado que o ajudam a identificar e a atribuir prioridades a problemas que necessitam da sua atenção para:
 
@@ -153,6 +208,6 @@ Cada política tem um **Valor Pretendido** e um **Estado**. O valor pretendido �
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

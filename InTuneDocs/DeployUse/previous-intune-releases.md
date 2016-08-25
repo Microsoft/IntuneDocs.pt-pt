@@ -13,13 +13,59 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 31e36fdb77916841e30b0e7276ef62850df45d12
+ms.sourcegitcommit: 57570fcf2f738b68a01bb1c5fc8962c7ef117920
+ms.openlocfilehash: 43546721245f92309d86c496dbcde7900a598ed0
 
 
 ---
 
 # Versões anteriores do Intune
+## Julho de 2016
+### Gestão de aplicações
+#### Melhorar a experiência de atualização de perfis de aprovisionamento de aplicações
+As aplicações de linha de negócio iOS da Apple são criadas com um perfil de aprovisionamento incluído e o respetivo código assinado com um certificado. Quando as aplicações são executadas num dispositivo iOS, o iOS confirma a integridade das mesmas e aplica as políticas definidas pelo perfil de aprovisionamento.
+
+Geralmente, o certificado de assinatura da empresa que utiliza para assinar as aplicações dura três anos. No entanto, o perfil de aprovisionamento expira após um ano. Com esta atualização, o Intune proporciona-lhe as ferramentas para implementar proativamente uma nova política de perfil de aprovisionamento em dispositivos que tenham aplicações prestes a expirar enquanto o certificado ainda é válido. Para obter mais informações, veja [Use iOS mobile provisioning profile policies to keep your line of business apps up to date (Utilizar políticas de perfis de aprovisionamento móvel de iOS para manter as aplicações de linha de negócio atualizadas)](/intune/deploy-use/ios-mobile-app-provisioning-profiles).
+<!--- TFS 1280247--->
+#### Está disponível o SDK para Xamarin para aplicações do Intune
+O componente Xamarin do SDK da Aplicação Intune permite-lhe ativar as funcionalidades de gestão de aplicações móveis do Intune nas suas aplicações móveis iOS e Android criadas com Xamarin. Pode obter o componente no [arquivo Xamarin](https://components.xamarin.com/view/Microsoft.Intune.MAM) ou na [página do Microsoft Intune no Github](https://github.com/msintuneappsdk).
+<!--- TFS 1061478 --->
+
+### Gestão de dispositivos
+#### Aumento nos limites de inscrição de dispositivos
+O Intune aumentou o limite máximo de inscrição de dispositivos configuráveis de cinco para 15 dispositivos por utilizador.
+<!---TFS 1289896 --->
+
+#### Integração do TeamViewer para PCs Windows com o software de cliente Intune
+A integração do [TeamViewer](https://www.teamviewer.com) para PCs Windows que executem o cliente do Intune vai permitir estabelecer sessões de assistência remota com PCs Windows para ajudar a dar apoio aos departamentos de suporte técnico ao utilizador final. Isto inclui o Windows 7, 8, 8.1 e o Windows 10. Para obter mais informações, veja [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+<!---TFS 1284856--->
+
+### Atualizações ao Portal da Empresa
+#### Web site do Portal da Empresa
+- **Experiência do utilizador na inscrição de dispositivos Windows melhorada**<br/>
+Se estiver a utilizar o acesso condicional, os passos de inscrição para Windows 8.1, ambiente de trabalho do Windows 10 e Windows 10 Mobile foram clarificados no Web site do Portal da Empresa. Agora, os utilizadores vão ver dois passos separados, “Inscrição de dispositivos” e “Workplace Join”, o que lhes permite ver mais facilmente o estado dos respetivos dispositivos e concluir o processo se se depararem com falhas na Workplace Join (WPJ). Espera-se que os passos separados também simplifiquem o processo de resolução de problemas para os administradores de TI. Anteriormente, quando os utilizadores finais tentavam inscrever e todos os passos da inscrição eram bem-sucedidos, menos a WPJ, o dispositivo inscrito não aparecia na lista de dispositivos para os utilizadores identificarem, confundindo-os.
+
+#### Android
+- **Aplicação do Portal da Empresa para Android**<br/>
+Se os utilizadores finais do Azure virem uma mensagem de erro a dizer que falta um certificado necessário nos respetivos dispositivos, podem tocar num botão chamado “Como resolver isto” para obter [passos](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) para instalar o certificado em falta. Se os utilizadores concluírem os passos, mas virem uma mensagem de erro “certificado em falta” adicional, é-lhes pedido que contactem o administrador de TI e lhe forneçam esta [ligação](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), que contém os passos que os administradores de TI podem utilizar para corrigir o problema do certificado.
+
+- **Restringir instalações de aplicações sideload em dispositivos inscritos**<br/>
+Os dispositivos Android já não podem instalar aplicações através do Web site do Portal da Empresa, a não ser que esses dispositivos tenham sido inscritos no Intune com a aplicação do Portal da Empresa para Android do Intune.
+<!---TFS 1299082--->
+
+#### iOS
+- **Alterações às contas de Gestores de Inscrição de Dispositivos na aplicação do Portal da Empresa para iOS**<br/>
+Para melhorar o desempenho e o dimensionamento, o Intune deixa de mostrar todos os dispositivos de Gestores de Inscrição de Dispositivos (DEM) no painel **Os Meus Dispositivos** da aplicação do Portal da Empresa para iOS. Apenas é apresentado o dispositivo local que está a executar a aplicação e apenas se estiver inscrito através da aplicação Portal da Empresa.
+
+O utilizador DEM pode executar ações no dispositivo local, mas a gestão remota de outros dispositivos inscritos só pode ser efetuada a partir da consola de administração do Intune. Além disso, o Intune está a descontinuar a utilização de contas DEM com o Programa de registo de dispositivos da Apple ou com a ferramenta Apple Configurator. Ambos os métodos de inscrição já suportam a inscrição sem a ação do utilizador para dispositivos iOS partilhados.
+
+Utilize apenas contas DEM quando a inscrição sem a ação do utilizador para dispositivos partilhados não estiver disponível. Para obter mais informações, veja [Inscrever dispositivos pertencentes à empresa com o Gestor de Inscrição de Dispositivos no Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+<!---TFS 1233681--->
+
+### Alteração de nomes de funcionalidades do Windows
+- O [Microsoft Passport para Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) é agora conhecido como **Windows Hello para Empresas**.
+- A [Proteção de dados da empresa](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) é agora conhecida como **Windows Information Protection**.
+
 ## Junho de 2016
 ### Estado de funcionamento do serviço do Intune
 As informações de estado de funcionamento do serviço do Intune foram movidas para uma localização central com outros serviços Microsoft. Agora, pode encontrar estas informações no portal de gestão do Office 365, em Estado de Funcionamento do Serviço. Para obter mais informações, veja [esta mensagem do blogue](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/).
@@ -81,9 +127,9 @@ Para obter mais informações, veja [esta mensagem do blogue](https://blogs.tech
 
 
 ### Gestão de aplicações
-- **MAM SDK: suporta a configuração do comprimento do PIN.** Poderá especificar o comprimento do PIN para aplicações MAM, semelhante a um PIN de dispositivo. Isto irá necessitar que os utilizadores finais respeitem as novas restrições que definiu. Verão um ecrã de PIN ligeiramente modificado para caber a entrada mais longa. Para obter mais detalhes, veja [Definições de política de MAM para Android](/intune/deploy-use/android-mam-policy-settings), e [Definições de política de MAM para iOS](/intune/deploy-use/ios-mam-policy-settings).
+- **MAM SDK: suporta a configuração do comprimento do PIN.** Poderá especificar o comprimento do PIN para aplicações MAM, semelhante a um PIN de dispositivo. Isto irá necessitar que os utilizadores finais respeitem as novas restrições que definiu. Verão um ecrã de PIN ligeiramente modificado para caber a entrada mais longa. Para obter mais detalhes, veja [Definições de política de MAM para Android](android-mam-policy-settings.md) e [Definições de política de MAM para iOS](ios-mam-policy-settings.md).
 
-- **Skype para Empresas, para iOS e Android.** É agora possível segmentar o Skype para empresas com [MAM sem políticas de inscrição](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Depois de os utilizadores iniciarem sessão, as políticas de MAM serão aplicadas.
+- **Skype para Empresas, para iOS e Android.** É agora possível segmentar o Skype para empresas com [MAM sem políticas de inscrição](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md). Depois de os utilizadores iniciarem sessão, as políticas de MAM serão aplicadas.
 
 - **Novas aplicações disponíveis para gestão com políticas de MAM.** As aplicações do Microsoft Word, Excel e PowerPoint para Android podem agora ser associadas a políticas de MAM em dispositivos que não estão inscritos no Intune. Para ver uma lista completa de aplicações suportadas, aceda à Galeria de aplicações móveis do Microsoft Intune, na página de [parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -311,6 +357,6 @@ A partir de fevereiro de 2016, o Internet Explorer 9 já não será suportado co
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

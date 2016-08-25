@@ -4,7 +4,7 @@ description: "Utilize o Intune para ver informações sobre o hardware dos dispo
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -45,7 +45,7 @@ Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relató
 |**Número de série**|Dispositivos iOS, Mac OS X, Android, Windows 8.1 e Windows 10|
 |**Espaço de Armazenamento Total**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10|
 |**Espaço de Armazenamento Livre**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10|
-|**Número de Telefone**<br>Os telefones que são classificados como empresariais estão identificados com o respetivo número de telefone completo quando, por exemplo, executa um relatório de inventário de dispositivos móveis. Os números de telefone BYOD são mascarados com &#42;, com apenas os 4 últimos dígitos apresentados.|Dispositivos iOS, Android e Windows Phone|
+|**Número de Telefone**<br>Os telefones que são classificados como empresariais estão identificados com o respetivo número de telefone completo (por exemplo, quando executa um relatório de inventário de dispositivos móveis). Os números de telefone BYOD são mascarados com &#42;, e apenas são apresentados os quatro últimos dígitos.|Dispositivos iOS, Android e Windows Phone|
 |**IMEI**|Dispositivos Exchange ActiveSync, iOS, Android e Windows Phone|
 |**MEID**<br>Identificador de Equipamento Móvel|Apenas dispositivos iOS|
 |**MAC Wi-Fi**|Todos os dispositivos, exceto Exchange ActiveSync|
@@ -59,7 +59,7 @@ Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relató
 |**Bloqueio de Ativação Ativado**|Apenas dispositivos iOS|
 |**Encriptação Ativada**|Todos os dispositivos|
 
-## O que é recolhido dos PCs Windows
+## O que é recolhido dos PCs Windows?
 > [!IMPORTANT]
 > Esta secção aplica-se apenas aos PCs Windows que executam o software de cliente de PC Windows do Intune.
 
@@ -114,6 +114,6 @@ Para ver o inventário recolhido pelos PCs Windows, execute os [Relatórios de I
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

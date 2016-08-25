@@ -13,17 +13,18 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 648cc02b47682a58195ee927560763818b6d32ac
+ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
+ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+
 
 
 ---
 
 # Definições de política de segurança de dispositivos móveis no Microsoft Intune
 > [!IMPORTANT]
-> Agora, o Microsoft Intune inclui políticas de configuração separadas para cada plataforma de dispositivo, sendo que estas políticas contêm as definições mais atualizadas à sua disposição. Pode continuar a utilizar a política de segurança do dispositivo móvel e todas as implementações existentes continuarão a funcionar. No entanto, deve planear a migração para as novas políticas de configuração logo que possível, pois a política de segurança do dispositivo móvel será removida no futuro.
+> O Microsoft Intune apresenta agora políticas de configuração separadas para cada plataforma de dispositivos. Estas políticas contêm as definições mais atualizadas que pode utilizar. Pode continuar a utilizar a política de segurança do dispositivo móvel e todas as implementações existentes continuarão a funcionar. No entanto, deve planear a migração para as novas políticas de configuração logo que possível, pois a política de segurança do dispositivo móvel será removida no futuro.
 
-Utilize as políticas de segurança de dispositivos móveis do Intune para configurar uma grande variedade de definições que pode implementar em dispositivos geridos na sua organização. Estas definições podem ser utilizadas para controlar a funcionalidade e segurança dos seus dispositivos.
+Pode utilizar as políticas de segurança de dispositivos móveis do Intune para configurar uma grande variedade de definições que pode implementar em dispositivos geridos na sua organização. Estas definições são utilizadas para controlar a funcionalidade e segurança dos seus dispositivos.
 
 Pode criar e implementar políticas de segurança de dispositivos móveis para os seguintes tipos de dispositivos:
 
@@ -45,10 +46,10 @@ Pode criar e implementar políticas de segurança de dispositivos móveis para o
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Não|Não|Sim|Sim|Sim|
-|**Tipo obrigatório de palavra-passe**<br /><br />(especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica)|Sim|Sim|Sim|Sim|Não|
-|**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**<br /><br />Existem quatro conjuntos de carateres, letras minúsculas, letras maiúsculas, números e símbolos. Esta definição especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe). (No entanto, para dispositivos iOS, isto especifica o número de carateres de símbolos que têm de ser incluídos na palavra-passe)|Sim|Sim|Sim|Sim|Não|
+|**Tipo obrigatório de palavra-passe**<br /><br />Esta definição especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|Sim|Sim|Sim|Sim|Não|
+|**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**<br /><br />Existem quatro conjuntos de carateres: letras minúsculas, letras maiúsculas, números e símbolos. Esta definição especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe. No entanto, para dispositivos iOS, isto especifica o número de carateres de símbolos que têm de ser incluídos na palavra-passe.|Sim|Sim|Sim|Sim|Não|
 |**Comprimento mínimo da palavra-passe**|Sim|Sim|Sim|Sim|Sim|
-|**Permitir palavras-passe simples**<br /><br />As palavras-passes simples incluem "0000" e "1234"|Não|Não|Sim|Sim|Não|
+|**Permitir palavras-passe simples**<br /><br />As palavras-passes simples incluem "0000" e "1234".|Não|Não|Sim|Sim|Não|
 |**Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado**|Sim|Sim|Sim|Sim|Sim|
 |**Minutos de inatividade antes de o ecrã se desligar**<sup>1</sup>|Sim|Sim|Sim|Sim|Sim|
 |**Expiração da Palavra-passe (dias)**|Sim|Sim|Sim|Sim|Sim|
@@ -58,25 +59,25 @@ Pode criar e implementar políticas de segurança de dispositivos móveis para o
 |**Permitir palavra-passe por imagem e PIN**|Sim|Sim|Não|Não|Não|
 |**Minutos de inatividade antes da palavra-passe ser exigida**|Não|Não|Não|Sim|Não|
 |**Permitir desbloqueio por impressão digital**|Não|Não|Não|iOS 7 e posterior|Não|
-Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã desligar** e **Minutos de inatividade antes de a palavra-passe ser exigida**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
+<sup>1</sup>Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
-Quando implementa uma política de comprimento de palavra-passe em dispositivos que executam o Windows RT, os utilizadores serão forçados a repor as respetivas palavras-passe, ainda que estas estejam em conformidade com os requisitos da política.
+Quando implementa uma política de comprimento de palavra-passe em dispositivos com o Windows RT, os utilizadores serão forçados a repor as respetivas palavras-passe, ainda que estas estejam em conformidade com os requisitos da política.
 
 ## Definições de encriptação
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Encriptação obrigatória no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
-|**Encriptação obrigatória nos cartões de armazenamento**<br /><br />Aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d (as aplicações e os dados associados são encriptados automaticamente)|n/d|Sim|
-Informações adicionais para dispositivos que executam o Windows 8.1
+|**Encriptação obrigatória nos cartões de armazenamento**<br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d <br />As aplicações e os dados associados são encriptados automaticamente.|n/d|Sim|
+<sup>1</sup>Seguem-se informações adicionais para dispositivos com o Windows 8.1:
 
 -   Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](http://support.microsoft.com/kb/3013816) em cada dispositivo.
 
--   Se ativar esta definição em dispositivos com o Windows 8.1, todos os utilizadores do dispositivo têm de ter uma Conta Microsoft.
+-   Se ativar esta definição em dispositivos com o Windows 8.1, todos os utilizadores do dispositivo têm de ter uma conta Microsoft.
 
 -   Para que a encriptação funcione, o dispositivo tem de estar em conformidade com os requisitos de certificação de hardware do [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) da Microsoft.
 
--   Quando impõe a encriptação a um dispositivo, a chave de recuperação só é acessível a partir da Conta Microsoft do utilizador, que é acedida a partir da respetiva conta do OneDrive. Não pode recuperar esta chave em nome de um utilizador.
+-   Quando impõe a encriptação a um dispositivo, a chave de recuperação só é acessível a partir da conta Microsoft do utilizador, que é acedida a partir da respetiva conta do OneDrive. Não pode recuperar esta chave em nome de um utilizador.
 
 ## Definições de malware
 
@@ -90,7 +91,7 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Requerer atualizações automáticas**|Sim|Não|Não|Não|Não|
-|**Requerer atualizações automáticas – classificação mínima de atualizações a instalar automaticamente**<br /><br />Escolha a classificação das atualizações que serão instaladas automaticamente:<br /><br />**Importante** – Instala todas as atualizações classificadas como importantes.<br /><br />**Recomendada** – Instala todas as atualizações classificadas como importantes ou recomendadas.|Sim|Não|Não|Não|Não|
+|**Requerer atualizações automáticas – classificação mínima de atualizações a instalar automaticamente**<br /><br />Escolha a classificação das atualizações que serão instaladas automaticamente:<br /><br />- **Importante**. Instala todas as atualizações classificadas como importantes.<br /><br />- **Recomendada**. Instala todas as atualizações classificadas como importantes ou recomendadas.|Sim|Não|Não|Não|Não|
 |**Permitir captura de ecrã**|Não|Não|Apenas no Windows Phone 8.1|Sim|Sim (apenas Samsung KNOX)|
 |**Permitir centro de controlo no ecrã de bloqueio**|Não|Não|Não|iOS 7 e posterior|Não|
 |**Permitir vista de notificações no ecrã de bloqueio**|Não|Não|Não|iOS 7 e posterior|Não|
@@ -110,7 +111,7 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 |**Permitir sincronização de documentos para iCloud**|Não|Não|Não|Sim|Não|
 |**Permitir sincronização de Fluxo de Fotografias para iCloud**|Não|Não|Não|Sim|Não|
 |**Exigir cópia de segurança encriptada**|Não|Não|Não|Sim|Não|
-|**URL das Pastas de Trabalho**<br /><br />(define o URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos)|Sim|Não|Não|Não|Não|
+|**URL das Pastas de Trabalho**<br /><br />Esta definição define o URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.|Sim|Não|Não|Não|Não|
 |**Permitir cópia de segurança do Google**|Não|Não|Não|Não|Sim (apenas Samsung KNOX)|
 
 ## Definições da nuvem – contas e sincronização
@@ -125,8 +126,8 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Permitir que os utilizadores transfiram anexos de e-mail**<sup>1</sup>|n/d|n/d|n/d|n/d|n/d|
-|**Período de sincronização de e-mail** Aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
-|**Permitir que os dispositivos móveis que não suportam completamente estas definições se sincronizem com o Exchange (Exchange ActiveSync)** Aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
+|**Período de sincronização de e-mail** <br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
+|**Permitir que os dispositivos móveis que não suportam completamente estas definições se sincronizem com o Exchange (Exchange ActiveSync)** <br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
 |**Tornar a conta Microsoft opcional na aplicação Windows Mail**|Sim|Não|Não|Não|Não|
 |**Permitir contas de e-mail personalizadas**|Não|Não|Apenas no Windows Phone 8.1|Não|Não|
 
@@ -141,7 +142,7 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 |**Permitir plug-ins**|Sim|Não|Não|Não|Não|
 |**Permitir scripting ativo**|Sim|Não|Não|Sim|Sim (apenas Samsung KNOX)|
 |**Permitir aviso de fraude**|Sim|Não|Não|Sim|Não|
-|**Permitir site da intranet para introdução de uma única palavra**<br /><br />(permite utilizar uma única palavra para direcionar o Internet Explorer para um site, como, por exemplo, "Bing")|Sim|Não|Não|Não|Não|
+|**Permitir site da intranet para introdução de uma única palavra**<br /><br />(Esta definição permite a utilização de uma única palavra para direcionar o Internet Explorer para um site, por exemplo, "Bing".)|Sim|Não|Não|Não|Não|
 |**Permitir deteção automática de rede intranet**|Sim|Não|Não|Não|Não|
 |**Nível de segurança para a Internet**|Sim|Não|Não|Não|Não|
 |**Nível de segurança para a intranet**|Sim|Não|Não|Não|Não|
@@ -180,9 +181,9 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 |**Permitir Wi-Fi**|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
 |**Permitir partilha de Wi-Fi**|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
 |**Permitir ligação automática a hotspots Wi-Fi**|Não|Não|Apenas no Windows Phone 8.1|Não|Não|
-|**Permitir relatórios de hotspots Wi-Fi**<br /><br />(enviar informações sobre ligações Wi-Fi para ajudar a detetar ligações próximas)|Não|Não|Apenas no Windows Phone 8.1|Não|Não|
-|**Permitir geolocalização**<br /><br />(permite que o dispositivo utilize informações de localização)|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
-|**Permitir NFC**<br /><br />(permite operações que utilizam comunicação de proximidade)|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
+|**Permitir relatórios de hotspots Wi-Fi**<br /><br />Esta definição envia informações sobre ligações Wi-Fi para ajudar a detetar ligações próximas.|Não|Não|Apenas no Windows Phone 8.1|Não|Não|
+|**Permitir geolocalização**<br /><br />Esta definição permite ao dispositivo utilizar informações de localização.|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
+|**Permitir NFC**<br /><br />Esta definição permite operações que utilizam comunicação de proximidade.|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
 |**Permitir Bluetooth**|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX)|
 |**Permitir desligar**<br>Se esta definição estiver desativada, a definição **Número de falhas de início de sessão repetidas permitidas antes da eliminação de dados no dispositivo** para dispositivos Samsung KNOX não funcionará.|Não|Não|Não|Não|Sim (apenas Samsung KNOX)|
 
@@ -207,11 +208,10 @@ Informações adicionais para dispositivos que executam o Windows 8.1
 |**Permitir o YouTube**|Não|Não|Não|Não|Sim (apenas Samsung KNOX)|
 
 ### Consulte também
-[Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

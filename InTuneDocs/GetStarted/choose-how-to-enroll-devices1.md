@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 73756fbf4b2b433507ca0f855d0be73b41f6fa5c
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
 
 
 ---
@@ -23,10 +23,10 @@ ms.openlocfilehash: 73756fbf4b2b433507ca0f855d0be73b41f6fa5c
 
 As respostas a esta série de questões irão ajudá-lo a determinar o melhor método de inscrição para os dispositivos que gere.
 
-## **Os empregados utilizam os respetivos dispositivos ou os fornecidos pela sua organização?**
+## **Os empregados utilizam os respetivos dispositivos (BYOD) ou os fornecidos pela sua organização (COD)?**
 
 > [!div class="button"]
-[Inscrição BYOD >](choose-how-to-enroll-devices2.md)   [Inscrição COD >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)   [COD >](choose-how-to-enroll-devices3.md)
 
 - **Dispositivos pertencentes ao utilizador** - inscrição "BYOD" (Bring your own device) – os utilizadores podem instalar a aplicação do Portal da Empresa do Intune nos dispositivos deles e, depois, inscrevê-los, obtendo acesso aos recursos da empresa como e-mail, aplicações da empresa, dados da empresa e suporte.  
 

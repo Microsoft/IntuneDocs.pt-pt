@@ -13,8 +13,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 ## Criar uma configuração personalizada
 Pode utilizar configurações personalizadas para criar perfis VPN no Intune. Para criar uma configuração personalizada:
 
-   1. Na consola de administração do Intune, **Política** -> **Adicionar Política** -> *<Expand platform>* -> **Configuração personalizada** -> **Criar Política**.
+   1. Na consola de administração do Intune, **Política** > **Adicionar Política** > *<Expand platform>* > **Configuração personalizada** > **Criar Política**.
    2. Forneça um nome para a política.
-   3. Para cada definição de URI, clique em **Adicionar** e forneça as informações pedidas. Segue-se um exemplo:
+   3. Para cada definição de URI, escolha **Adicionar** e forneça as informações pedidas. Segue-se um exemplo:
 
    ![Caixa de diálogo de configuração personalizada de perfil VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Após introduzir todas as definições de URI, clique em **Guardar política** e, em seguida, implemente a política.
+   4.  Após introduzir todas as definições de URI, escolha **Guardar política** e, em seguida, implemente a política.
 
 ## Implementar uma política de configuração
 
-1.  Na área de trabalho **Política** , selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
+1.  Na área de trabalho **Política**, escolha a que pretende implementar e, em seguida, clique em **Gerir a Implementação**.
 
 2.  Na caixa de diálogo **Gerir a Implementação** , para:
 
-    -   **Para implementar a política** - selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Adicionar** &gt; **OK**.
+    -   **Para implementar a política** - Escolha um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Adicionar** &gt; **OK**.
 
-    -   **Fechar a caixa de diálogo sem implementar a política** - clique em **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implementar a política** - escolha **Cancelar**.
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
 ##Exemplo de definições de URI para uma configuração de perfil VPN personalizada
-Seguem-se entradas de exemplo para valores URI para criar uma configuração personalizada para uma VPN numa empresa fictícia denominada Contoso. Para obter mais informações, como o tipo de dados para cada entrada, consulte [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+Seguem-se entradas de exemplo para valores URI para criar uma configuração personalizada para uma VPN numa empresa fictícia denominada Contoso. Para obter mais informações, como o tipo de dados para cada entrada, veja [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN nativa da Contoso (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,7 +83,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Para quaisquer perguntas sobre a forma como estas definições devem ser utilizadas ou para obter mais detalhes sobre o que fazem, os clientes devem consultar a documentação do CSP: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+Para quaisquer perguntas sobre a forma como estas definições devem ser utilizadas ou para obter mais detalhes sobre o que fazem, os clientes devem consultar a documentação do fornecedor de serviços de configuração (CSP): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## Definições de URI para VPN por aplicação Android no PulseSecure
 ### URI PERSONALIZADO PARA LISTA DE PACOTES
@@ -112,6 +112,6 @@ Exemplos:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
+ms.sourcegitcommit: fd74fcdb26827b94d894b28d9d7f48e62420b14a
+ms.openlocfilehash: 8f7b33a7e3cf73caee62eaa696fed8b7f65f28dc
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 4fab2d71b7cf2557b73810e5f05b82fb9ba1c36b
 
 # Repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
-Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para efetuar a reposição. O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
+Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para efetuar a reposição. O Web site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
 > [!NOTE]
 > Poderá não ver o botão Repor Código de Acesso no site do Portal da Empresa, dependendo de como o seu administrador de TI configurou o Intune. A Reposição do Código de Acesso não é suportada em dispositivos Windows 8.1 e Windows RT.
@@ -34,7 +34,7 @@ Para repor o código de acesso:
 
 2.  Toque em **Repor Código de Acesso**.
 
-    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Toque em **Terminar sessão** e, em seguida, volte a iniciar sessão com as credenciais da sua conta escolar ou profissional. Tem de voltar a iniciar sessão dentro de cinco minutos.
 
@@ -65,6 +65,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

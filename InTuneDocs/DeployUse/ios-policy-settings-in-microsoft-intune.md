@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Pode configurar as seguintes definições em dispositivos com iOS 7.1 e posterio
 |**Permitir que o utilizador instale perfis e certificados de configuração**|Permitir que o utilizador instale perfis e certificados de configuração.|
 |**Permitir a utilização da aplicação Mensagens no dispositivo**|Permitir a utilização da aplicação Mensagens para enviar mensagens de texto.|
 
+### Mostrar ou Ocultar Aplicações
+
+Utilize a **Lista de aplicações ocultas e apresentadas** para controlar o seguinte nos dispositivos supervisionados com o iOS 9.3 ou posterior:
+
+- Especificar uma lista de aplicações que serão ocultas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
+- Especificar uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
+
+
+#### Como criar uma lista de aplicações ocultas ou apresentadas
+
+Especifique as seguintes definições:
+
+|Nome da definição|Detalhes|
+|-|-|
+|**Lista de aplicações ocultas e apresentadas**|Ative esta definição se pretender criar uma lista de aplicações ocultas ou apresentadas.|
+|**Ocultar dos utilizadores as aplicações listadas**|Selecione esta opção se pretender criar uma lista de aplicações que serão ocultadas dos utilizadores.|
+|**Mostrar aos utilizadores apenas as aplicações listadas**|Selecione esta opção se pretender criar uma lista de aplicações que serão apresentadas aos utilizadores.<br>Quando cria este tipo de lista, todas as outras aplicações, exceto para **Definições** e **Telefone** (para iPhones) do iOS, estão ocultadas.<br>Além disso, tem de adicionar o Portal da Empresa e todas as aplicações que tiver implementado e que gere com o Intune à lista.|
+|**Adicionar**|Adiciona uma aplicação à lista selecionada.<br>Em relação à lista oculta, tem de especificar o **Nome**, **Publicador** e **URL da Aplicação ou ID do Pacote** de cada aplicação que pretende ocultar.<br>Para obter a lista apresentada, pode **Selecionar uma aplicação gerida** que fornece uma lista das aplicações que gere com o Intune para seleção ou Selecionar uma aplicação de loja, tendo de especificar em seguida o **Nome**, **Publicador**e **URL da Aplicação ou ID do Pacote** de cada aplicação que pretende apresentar.|
+|**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
+|**Editar**|Permite-lhe editar o nome, o fabricante e o URL da aplicação selecionada.|
+|**Eliminar**|Elimina a aplicação selecionada da lista.|
+
+#### Informações para aplicações iOS incorporadas
+
+Utilize as informações nesta lista para identificar o nome, o publicador e o ID das aplicações iOS incorporadas que pretenda mostrar ou ocultar. Se pretender mostrar ou ocultar todas as aplicações na lista, pode copiar os dados abaixo para um ficheiro de texto com a extensão **.csv** e, em seguida, utilizar a opção **Importar Aplicações** para importar todas as aplicações em simultâneo.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Definições de política personalizada
 
@@ -266,6 +337,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
