@@ -10,10 +10,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: b4dc7cb0c025730b8a8eeb8a8f03416f011e3f04
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e0a1da8c2215da92554397edbc4342d6d1f58af5
 
 
 ---
@@ -31,6 +31,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

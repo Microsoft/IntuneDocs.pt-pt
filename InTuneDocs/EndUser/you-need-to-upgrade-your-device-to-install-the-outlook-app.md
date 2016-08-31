@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vadona
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 9df5e5b61fc19a255421c7a573f9d04af7004c58
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e88f5cd8cee07fef9e1d51688219a2b7093e0ff1
 
 
 ---
@@ -34,6 +34,6 @@ Toque em **Definições** &gt; **Geral** &gt; **Atualização de Software**.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 220d877763352e62c4057494b69633356ef081c6
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
 
 
 ---
@@ -101,6 +101,6 @@ Se vir a mesma mensagem que diz "certificado em falta", como mostrado acima, e j
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

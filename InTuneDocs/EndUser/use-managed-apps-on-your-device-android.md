@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 9e6ef6d4daf8507ed00cb5fa4a1d88f44a05068c
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 4e4b2f6e94819320072b045fa2265018a89ff88a
 
 
 ---
@@ -79,6 +79,6 @@ Contacte o seu administrador de TI para obter mais informações sobre as aplica
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

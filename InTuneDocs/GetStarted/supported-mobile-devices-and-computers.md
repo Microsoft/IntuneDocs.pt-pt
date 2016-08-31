@@ -2,7 +2,7 @@
 title: "Dispositivos móveis e computadores suportados | Microsoft Intune"
 description: "Dispositivos móveis e computadores que o Intune suporta"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 06/08/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: c795d3ca2901f93dff204d9ba9017596708d888d
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 1bfeefc7f34eff22a3854e14db040b6d533d2e9e
 
 
 ---
@@ -35,6 +35,6 @@ Pode gerir estes dispositivos e PCs, mesmo que não estejam associados a um dom�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "Utilize o Intune para criar e implementar políticas que controlam
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Os dispositivos dão entrada no Intune quando recebem uma notificação a solici
 
 Outras alterações, como a revisão das informações de contacto no portal da empresa, não dão origem a uma notificação imediata para os dispositivos.
 
-> [!TIP]
-> Quando for implementada uma política com definições num dispositivo Android, é pedido ao utilizador que efetue uma ação para estar em conformidade com a política. Enquanto o utilizador não efetuar essa ação ou o dispositivo não for reiniciado, as novas definições da política não entrarão em vigor.
-
 ### Se forem implementadas várias políticas no mesmo utilizador ou dispositivo, como posso saber que definições irão ser aplicadas?
 Quando são implementadas duas ou mais políticas no mesmo utilizador ou dispositivo, a avaliação relativa à definição que vai ser aplicada é realizada ao nível das definições individuais:
 
@@ -215,6 +212,6 @@ Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubles
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

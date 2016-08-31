@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 1392a8a02dd740c6e1f67540e183c595ae66de3f
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 35cb5187260eb7b96e09ee7feb24bad90cbb0cb3
 
 
 ---
@@ -36,6 +36,6 @@ Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa,
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

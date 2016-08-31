@@ -4,7 +4,7 @@ description: "Resolva problemas de configuração de políticas."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ Na captura de ecrã abaixo, pode ver dois exemplos claros:
 
 > [!NOTE]
 > Lembre-se de que quando duas políticas com diferentes níveis de restrição se aplicam ao mesmo dispositivo ou utilizador, na prática, é aplicada a política mais restrita.
-
-## Política e intervalos de atualização
-Tenha em atenção que as políticas são atualizadas em intervalos regulares. Em geral, as políticas devem ser registadas nos dispositivos num período de 15 minutos após efetuar uma alteração. Eis mais detalhes sobre os intervalos regulares de atualização de políticas:
-
--   **Dispositivo Windows inscrito no MDM**: a política é atualizada a cada 8 horas para os dispositivos Windows 8.1 e Windows 10 e a cada 24 horas para os dispositivos Windows RT.
-
--   **Windows Phone**: a política é atualizada a cada oito horas. Pode ser forçada por uma atualização no Portal da Empresa, em **Definições**.
-
--   **iOS**: a política é atualizada uma vez por dia num intervalo de tempo aleatório. Também pode ser forçada ao abrir o Portal da Empresa, selecionar o dispositivo e escolher **Sincronizar**.
-
--   **Android**: a política é atualizada uma vez por dia num intervalo de tempo aleatório. Também pode ser forçada ao abrir o Portal da Empresa, selecionar o dispositivo e escolher **Sincronizar**.
 
 ## Erros relacionados com políticas do Microsoft Intune no policyplatform.log
 Nos dispositivos Windows sem MDM, os erros de políticas no ficheiro policyplatform.log podem ser o resultado das definições não predefinidas no Controlo de Conta de Utilizador no Windows (UAC) no dispositivo. Algumas definições de UAC não predefinidas podem afetar as instalações de cliente do Microsoft Intune e a execução de políticas.
@@ -93,9 +82,6 @@ Por exemplo, no ambiente de trabalho do Windows RT, percorra a partir da direita
 No menu de navegação esquerdo, existe uma ligação **Repor Políticas de Segurança** na parte inferior. Escolha a mesma e, em seguida, escolha o botão **Repor Políticas**.
 Outros dispositivos MDM, tal como Android, Windows Phone 8.1 e posterior, e iOS, poderão ter de ser extintos e reinscritos no serviço para que possa aplicar uma política menos restritiva.
 
-## Os dispositivos Android não impõem Alterações de Política de Segurança sem Aceitação do utilizador final
-O Android MDM não permite ao serviço impor alterações de política iniciais nos dispositivos, como permitem outras plataformas. Isto deve-se à funcionalidade Android e não está relacionado com o serviço Intune. Os dispositivos Android indicarão ao utilizador final através da janela de notificação a alteração de política relacionada (ou seja, Palavra-passe, Encriptação, etc.).  O utilizador final tem de responder ao pedido e, depois de aceite, a política deverá ser aplicada.
-
 ## Não é possível criar a política ou inscrever clientes se o nome da empresa incluir carateres especiais
 **Problema:** não é possível criar a política ou inscrever clientes.
 
@@ -106,6 +92,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

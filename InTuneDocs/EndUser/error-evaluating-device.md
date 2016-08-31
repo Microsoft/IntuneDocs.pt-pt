@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 814289d8f8e9547d03aa78a3f699b485bf54941b
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7f07968b599fa28995c28c1857e0f9cc0dedae48
 
 
 ---
@@ -30,6 +30,6 @@ Se o problema persistir, entre em contacto com seu administrador de TI Para enco
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

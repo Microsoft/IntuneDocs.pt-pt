@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f65861373339a50cfc7dd6756baf3e091409044
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 8f65861373339a50cfc7dd6756baf3e091409044
 
 # Repor o dispositivo a partir do site do Portal da Empresa
 
-Se perdeu o seu dispositivo ou foi roubado, pode querer repô-lo com as predefinições de fábrica para evitar o acesso não autorizado aos seus dados. Pode repor o seu dispositivo remotamente através do [site do Portal da Empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
+Se perdeu o seu dispositivo ou foi roubado, pode querer repô-lo com as predefinições de fábrica para evitar o acesso não autorizado aos seus dados. Pode repor o seu dispositivo remotamente através do [site do Portal da Empresa](http://portal.manage.microsoft.com). O Web site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
 Se redefinir o seu dispositivo, este não será mais listado no Portal da Empresa e o dispositivo será reposto com as predefinições de fábrica.
 
@@ -46,6 +46,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

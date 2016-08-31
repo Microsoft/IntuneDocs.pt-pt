@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fe110bbc-479b-4d11-beeb-70d15b199eda
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 78fb62a21e83c0628f4c7d97a0812b60b7c29ac2
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: ea594a179b0b79be103643e5ffa3d21cfd04ac73
 
 
 ---
@@ -31,6 +31,6 @@ Para saber o que acontece se repuser o seu dispositivo, utilize a ligação abai
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

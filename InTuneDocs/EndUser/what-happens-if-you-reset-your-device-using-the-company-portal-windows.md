@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 33809dbb8ee297a7f88a9615d8cec128ceadc96e
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 63e35b89d443600409eb1b9375d06b9d52b72b27
 
 
 ---
@@ -38,6 +38,6 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
