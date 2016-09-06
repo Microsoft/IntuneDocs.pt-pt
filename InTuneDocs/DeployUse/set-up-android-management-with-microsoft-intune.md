@@ -13,14 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
-ms.openlocfilehash: 947a7ba62d817e6b02d8a6bb0a0d0bddf53e7d4e
+ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
+ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
 
 
 ---
 
 # Configurar a gestão de dispositivos Android
-Para configurar o seu dispositivo Windows, pode encontrar ajuda [aqui](../enduser/using-your-android-device-with-intune.md).
+Para configurar o seu dispositivo Android, veja a ajuda [aqui](../enduser/using-your-android-device-with-intune.md).
 
 Com o Microsoft Intune, pode ativar BYOD ("bring your own device") em dispositivos Android sem ter de fazer tarefas adicionais para a plataforma.
 
@@ -52,6 +52,6 @@ Os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

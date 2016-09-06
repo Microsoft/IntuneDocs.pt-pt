@@ -1,5 +1,5 @@
 ---
-title: Gerir PCs Windows com o cliente do Intune | Microsoft Intune
+title: Gerir PCs com software de cliente | Microsoft Intune
 description: "Efetue a gestão de PCs Windows instalando o software de cliente do Intune."
 keywords: 
 author: nathbarn
@@ -13,18 +13,18 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
-ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
 
 
 ---
 
 # Gerir PCs Windows com o software de cliente de PC do Intune
-Em vez de [inscrever PCs Windows como dispositivos móveis](set-up-windows-device-management-with-microsoft-intune.md), pode instalar o software de cliente do Intune para os gerir.
+Em vez de [inscrever PCs Windows como dispositivos móveis](set-up-windows-device-management-with-microsoft-intune.md), pode inscrever e gerir PCs Windows ao instalar o software de cliente do Intune.
 
 O Intune gere os PCs Windows através de políticas semelhantes às utilizadas pelos Objetos de Política de Grupo (GPOs) dos Serviços de Domínio do Active Directory do Windows Server (AD DS). Se pretende gerir computadores associados a domínios do Active Directory com o Intune, deve [certificar-se de que as políticas do Intune não entram em conflito com quaisquer GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) que estejam implementadas na sua organização.
 
-Embora o cliente do Intune suporte [políticas que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a Firewall do Windows e o Endpoint Protection, os PCs geridos com este cliente não podem ser segmentados com outras políticas do Intune.
+Embora o cliente de software do Intune suporte [funcionalidades de gestão que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a Firewall do Windows e o Endpoint Protection, os PCs geridos com o cliente do Intune não podem ser segmentados com outras políticas do Intune, incluindo essas definições da política do **Windows** específicas da gestão do dispositivo móvel.
 
 > [!NOTE]
 > Os dispositivos que estejam a executar o Windows 8.1 ou posterior podem ser geridos através de um cliente do Intune ou podem ser inscritos como dispositivos móveis. As informações abaixo aplicam-se a computadores que estejam a executar o cliente do Intune. A instalação do cliente de PC do Intune e a inscrição de dispositivos Windows para gestão de dispositivos móveis em simultâneo não é suportada.
@@ -51,16 +51,18 @@ Embora o cliente do Intune suporte [políticas que ajudam a proteger PCs](polici
 ## Instalar o cliente do computador Intune
 O software de cliente do Intune pode ser instalado das seguintes formas:
 
--   [Implementar manualmente o software de cliente do Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Neste tipo de implementação, um administrador transfere o software de cliente Intune e instala-o manualmente em cada computador.
+-  [Implementar manualmente o software de cliente do Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Neste tipo de implementação, um administrador transfere o software de cliente Intune e instala-o manualmente em cada computador.
 
   Para transferir o software de cliente do Intune, abra a [consola de administração do Intune](https://manage.microsoft.com), escolha **Administração** > **Transferência de Software de Cliente** e clique em **Transferir Software de Cliente**.
 
--   Pode utilizar os ficheiros que transfere para instalar manualmente o cliente do Intune para [implementar o cliente em computadores associados a domínios através de GPOs do Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
+-  Utilize os mesmos ficheiros que transfere para instalar manualmente o software de cliente do Intune para [implementar o cliente em computadores associados a domínios através de GPOs do Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
 
--   Por fim, também pode implementar o software de cliente do Intune em computadores como parte de uma [implementação do sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+-  Implemente o software de cliente do Intune em computadores como parte de uma [implementação do sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+
+-  Envie instruções de utilizadores com o URL do Portal da Empresa do Intune, [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). Quando abrem o Portal da Empresa, os utilizadores recebem um pedido para inscrever os respetivos PCs ao transferir e executar o software de cliente do Intune.
 
 ## Gestão de computadores com o cliente de computador do Intune
-Depois de o cliente do Intune estar instalado, o software de cliente permite várias capacidades de gestão de computador, incluindo: [gestão de aplicações](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventário de hardware e software, controlo remoto (através de pedidos de assistência remota), atualizações de software e elaboração de relatórios sobre definições de compatibilidade.
+Após instalar o software de cliente do Intune, o software de cliente permite várias capacidades de gestão de computador, incluindo: [gestão de aplicações](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventário de hardware e software, controlo remoto (através de pedidos de assistência remota), atualizações de software e elaboração de relatórios sobre definições de compatibilidade.
 
 Várias tarefas de gestão de computador ativadas pelo cliente do computador são geridas através de políticas do Intune, como:
 
@@ -69,6 +71,8 @@ Várias tarefas de gestão de computador ativadas pelo cliente do computador sã
 -   Configurar as [definições de atualizações de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) para computadores geridos para procurar e transferir atualizações de software necessárias.
 
 -   Ajudar a proteger os computadores geridos de potenciais ameaças e software malicioso através da gestão de [monitorização em tempo real e do Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+![Modelo de políticas para PCs Windows](../media/pc_policy_template.png)
 
 Além das ações do agente de cliente do Intune executadas localmente nos computadores individuais, também pode utilizar a consola de administração do Intune para executar outras [tarefas de gestão de computador comuns](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) em PCs Windows com o cliente instalado para:
 
@@ -86,6 +90,6 @@ Normalmente, o agente de cliente do Intune é executado silenciosamente, em segu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

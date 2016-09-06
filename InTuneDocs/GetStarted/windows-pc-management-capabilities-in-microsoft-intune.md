@@ -1,10 +1,10 @@
 ---
-title: "Capacidades de gestão de PCs Windows | Microsoft Intune"
-description: Saiba mais acerca das funcionalidades do Intune quando gere os PCs Windows com o software de cliente do Intune.
+title: Funcionalidades de cliente de software de PCs do Intune | Microsoft Intune
+description: Saiba mais acerca das funcionalidades do Intune quando gere PCs Windows com o cliente de software do Intune.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Capacidades de gestão de PCs Windows (com o cliente de PC do Microsoft Intune)
-Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o que fornece um conjunto maior de capacidades do que o cliente de PC do Intune. No entanto, também pode gerir os PCs com o cliente de PC do Intune, que proporciona as seguintes funcionalidades:
+# Funcionalidades de gestão de PCs Windows ao utilizar o cliente de software do Intune
+Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o que fornece um conjunto maior de capacidades. No entanto, também pode gerir os PCs com o cliente de software do Intune, que proporciona as seguintes funcionalidades:
 
 -   **Gestão de atualizações de software** - Pode manter os PCs atualizados e decidir quando as atualizações são aplicadas.
 
@@ -31,10 +31,10 @@ Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o 
 -   **Assistência remota** - O Intune permite que os utilizadores contactem os técnicos de suporte de TI, que podem fornecer assistência através de uma funcionalidade de ambiente de trabalho remoto incluída no Intune (requer o software TeamViewer).
 
 -   **Gestão de licenças de software** - controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão a ser utilizadas.
--   **Implementação de aplicações** - implemente software em PCs geridos por si. Algumas funcionalidades de gestão de aplicações não estão disponíveis ao gerir computadores com o software cliente.
+-   **Implementação de aplicações** - implemente software em PCs geridos por si. Algumas funcionalidades de gestão de aplicações não estão disponíveis ao gerir PCs com o cliente de software.
 
 
-O Intune suporta a instalação do software de cliente de PC num máximo de 7 000 dispositivos Windows.
+O Intune suporta a instalação do cliente de software num máximo de 7000 dispositivos Windows.
 
 ## Requisitos do sistema operativo
 O Intune pode gerir PCs com as seguintes versões do Windows (32 e 64 bits):
@@ -52,7 +52,7 @@ O Intune pode gerir PCs com as seguintes versões do Windows (32 e 64 bits):
 
 
 ## Requisitos mínimos de hardware
-Seguem-se os requisitos mínimos de hardware para instalar o computador cliente do Intune:
+Seguem-se os requisitos mínimos de hardware para instalar o cliente de software do Intune:
 
 |Requisito|Detalhes|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ Seguem-se os requisitos mínimos de hardware para instalar o computador cliente 
 |Espaço em disco|200 MB de espaço disponível no disco antes da instalação do software do cliente.|
 
 ## Mais requisitos
-Seguem-se os requisitos de software para instalar o computador cliente do Intune:
+Seguem-se os requisitos de software para instalar o cliente de software do Intune:
 
 |Requisito|Detalhes|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ Seguem-se os requisitos de software para instalar o computador cliente do Intune
 |Remover software de cliente incompatível|Antes de instalar o cliente de PC do Intune, tem de desinstalar o software cliente seguinte nesse computador:<br /><br />- Qualquer versão do Configuration Manager<br />- Qualquer versão do Microsoft Systems Management Server (SMS)|
 
 ### Consulte também
-[Funcionalidades de gestão de dispositivos móveis no Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Funcionalidades de gestão de dispositivos inscritos do Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

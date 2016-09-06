@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ A tabela seguinte mostra os métodos de inscrição para dispositivos pertencent
 |**[BYOD](#BYOD)** | Não|    Sim |   Não |
 |**[DEM](#DEM)**|   Não |Não |Não  |
 
-**Métodos de inscrição para dispositivos pertencentes à empresa**
+**Métodos de inscrição de dispositivos**
 
 ### BYOD
 “Bring Your Own Device.” Os utilizadores instalam a aplicação do Portal da Empresa e inscrevem o respetivo dispositivo. A inscrição de dispositivos no Portal da Empresa associa o dispositivo a uma área de trabalho. A inscrição de dispositivos iOS no Portal da Empresa requer um ID Apple. BYOD não requer configuração adicional para dispositivos pertencentes à empresa. Ver os passos para [configurar a gestão de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Voltar à tabela](#overview-of-device-enrollment-methods))
@@ -151,6 +151,6 @@ Os computadores geridos com o software de cliente do Intune não podem ser apaga
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

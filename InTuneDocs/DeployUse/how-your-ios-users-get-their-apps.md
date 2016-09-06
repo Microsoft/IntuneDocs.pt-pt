@@ -4,7 +4,7 @@ description: "Métodos para disponibilizar aplicações iOS aos utilizadores fin
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
-ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
 
 
 ---
@@ -32,12 +32,23 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 **aplicações não geridas** - aplicações que podem ser geridas através de políticas e que não foram encapsuladas pelo Intune ou que não incorporam o SDK do Intune MAM. Não é possível aplicar políticas de aplicação a estas aplicações.
 
+As restrições da Apple proíbem a linha de negócio e as aplicações geridas da App Store de serem listadas na aplicação do Portal da Empresa, o que significa que os utilizadores têm de visitar vistas diferentes para localizar todas as suas aplicações. As aplicações para cada mosaico mostrado na página Aplicações da aplicação do Portal da Empresa estão disponíveis da seguinte forma:
+
+- O mosaico **Aplicações da Empresa** direciona para uma lista de todas as aplicações no separador **TODOS** do [Site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+- Atualmente, o mosaico **Outras Aplicações** direciona para uma vista, dentro da aplicação do Portal da Empresa, que apresenta uma lista de todas as aplicações que a Apple permite que a aplicação do Portal da Empresa mostre. A vista inclui todas as aplicações, exceto as aplicações da App Store de linha de negócios e geridas.
+
+- Atualmente, o mosaico **Categorias** direciona para uma vista, dentro da aplicação do Portal da Empresa, que lista as categorias das aplicações.
+
+    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
+
+
 ###Consulte também
 [Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-android-users-get-their-apps.md)</br>
 [Como os utilizadores de dispositivos Windows obtêm as aplicações](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

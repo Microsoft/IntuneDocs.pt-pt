@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51ab5d486e7e23d2527f9cb95f105e7916cdb27
-ms.openlocfilehash: 138d362618c9859a55988b7a2ada85e44b0e95c5
+ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
+ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
 
 
 ---
@@ -30,7 +30,7 @@ Todas estas funcionalidades também serão suportadas, em algum momento, em impl
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 ### Aplicações ocultas e apresentadas para iOS 9.3
-Para os dispositivos com o iOS 9.3 ou posterior, pode executar a lista das aplicações ocultas e apresentadas na política de configuração geral do iOS para:
+Para os dispositivos supervisionados com o iOS 9.3 ou posterior, pode utilizar a lista das aplicações ocultas e apresentadas na política de configuração geral do iOS para:
 - Especificar uma lista de aplicações que serão ocultas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
 - Especificar uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
@@ -102,6 +102,13 @@ Para além das alterações à gestão de grupos, **as funcionalidades seguintes
 ### Inclusão de “Notificações” no Portal da Empresa para Android
 Vamos lançar uma atualização para o Portal da Empresa para Android em setembro, que vai introduzir um ícone **Notificações** novo na home page. Tocar neste ícone vai permitir aceder à página **Notificações**, que mostrará ao utilizador final todos os itens que requerem atenção na aplicação do Portal da Empresa, como dispositivos não conformes, atualizações de inscrições e ativação de inscrições. Se também utilizar a aplicação do Portal da Empresa para iOS, já vai beneficiar da experiência de notificações. Com a introdução da página **Notificações**, não verá a página **Configuração do Acesso da Empresa** sempre que iniciar ou retomar o Portal da Empresa para Android, desde que o dispositivo já esteja inscrito. Sabemos que muitos dos nossos utilizadores criaram orientações para o utilizador final e agradecemos o aviso antecipado sempre que as suas orientações/capturas de ecrã precisem de ser atualizadas. Atualize a sua documentação de modo a refletir a alteração futura à experiência. Pode obter as capturas de ecrã atualizadas em https://aka.ms/androidcpupdate.  
 
+### Melhorias na forma como os utilizadores finais do iOS obtêm as aplicações
+As seguintes alterações vão ser efetuadas em setembro nos mosaicos de aplicações na aplicação do Portal da Empresa para iOS de modo a direcionar os utilizadores para vistas diferentes numa única localização, o site do Portal da Empresa, para todas as suas aplicações. Atualmente, as restrições da Apple proíbem a linha de negócio e as aplicações geridas da App Store de serem listadas na aplicação do Portal da Empresa, exigindo também que os utilizadores visitem vistas diferentes para localizar todas as suas aplicações.
+
+- Atualmente, o mosaico **Aplicações da Empresa** direciona para uma lista de todas as aplicações no separador TODOS do site do Portal da Empresa e continuará a funcionar da mesma forma. O nome de mosaico será alterado para **Todas as Aplicações**.
+- Atualmente, o mosaico **Outras Aplicações** direciona para uma vista, dentro da aplicação do Portal da Empresa, que apresenta uma lista de todas as aplicações que a Apple permite que a aplicação do Portal da Empresa mostre. O nome de mosaico será alterado para **Aplicações em Destaque** e, ao tocar no mosaico, os utilizadores serão encaminhados para o separador EM DESTAQUE do site do Portal da Empresa.
+-  Atualmente, o mosaico **Categorias** direciona para uma vista, dentro da aplicação do Portal da Empresa, que lista as categorias das aplicações. O nome do mosaico não será alterado, mas passará a direcionar para o separador CATEGORIAS do site do Portal da Empresa. Pode encontrar capturas de ecrã atualizadas [aqui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+<!---TFS 1317133--->
 
 ### Roteiro da nuvem
 Mantenha-se informado sobre os desenvolvimentos futuros do Intune com o [roteiro da Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
@@ -146,6 +153,6 @@ Se pretender ver o que foi disponibilizado no Intune durante os últimos seis me
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

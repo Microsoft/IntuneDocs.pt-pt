@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 
 
 ---
@@ -35,7 +35,7 @@ Quando um utilizador se tentar ligar a um ficheiro através de uma aplicação s
 >[!IMPORTANT]
 >O acesso condicional para PCs e dispositivos Windows 10 Mobile com aplicações que utilizam a autenticação moderna não está atualmente disponível para todos os clientes do Intune. Se já estiver a utilizar estas funcionalidades, não é necessário efetuar qualquer ação. Pode continuar a utilizá-las.
 
->Se não criou políticas de acesso condicional para PCs ou dispositivos Windows 10 Mobile para aplicações que utilizam a autenticação moderna e gostaria de fazê-lo, tem de submeter um pedido.  Pode encontrar mais informações sobre problemas conhecidos e sobre a forma de aceder a esta funcionalidade no [Web site do Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Se não tiver criado políticas de acesso condicional para PCs ou Windows 10 Mobile para aplicações que utilizam autenticação moderna e pretender fazê-lo, inscreva-se na pré-visualização pública do Azure Active Directory que inclui o acesso condicional com base no dispositivo para dispositivos geridos pelo Intune ou PCs do Windows associados a um domínio. Leia [esta mensagem do blogue](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) para saber mais.
 
 **Antes de** configurar uma política de acesso condicional para o Skype para o SharePoint Online, tem de:
 - Ter uma **subscrição do SharePoint Online** e os utilizadores têm de estar licenciados para o SharePoint Online.
@@ -134,7 +134,7 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
         *   Os dispositivos Windows terão de ser inscritos e estar em conformidade, o domínio deve estar associado ao Active Directory no local, ou ambos
         * Plataformas não suportadas, como Mac.  No entanto, as aplicações que utilizam autenticação moderna proveniente destas plataformas continuarão a ser bloqueadas.
         >[!TIP]
-        >Poderá não ver esta opção se ainda não estiver a utilizar o acesso condicional para PCs.  Em alternativa, utilize as **Plataformas específicas**. O acesso condicional para PCs não está atualmente disponível para todos os clientes do Intune.   Pode encontrar mais informações sobre problemas conhecidos e sobre a forma de aceder a esta funcionalidade no [Web site do Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >Poderá não ver esta opção se ainda não estiver a utilizar o acesso condicional para PCs.  Em alternativa, utilize as **Plataformas específicas**. O acesso condicional para PCs não está atualmente disponível para todos os clientes do Intune.   Pode encontrar mais informações sobre como obter acesso a esta funcionalidade [nesta mensagem do blogue](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Plataformas específicas**
 
@@ -189,6 +189,6 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

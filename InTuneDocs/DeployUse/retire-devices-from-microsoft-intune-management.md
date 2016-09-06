@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Extinguir dispositivos da gestão do Intune
 
-Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. A extinção de dispositivos é relativamente simples. Pode efetuar uma eliminação seletiva ou uma eliminação completa nos dispositivos geridos como dispositivos móveis. Também pode extinguir PCs geridos com o software de cliente Intune.
+Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. Poderá ser necessário extinguir um dispositivo por vários motivos:
+
+-   O utilizador sai da empresa de forma planeada (saída “gerida”)
+-   O utilizador sai abruptamente (é despedido, despede-se, etc.).
+-   Perda do dispositivo
+-   Redefinição do objetivo de um dispositivo (passar para outro utilizador, reutilizar para uma finalidade diferente, etc.)
+
+Pode efetuar uma eliminação seletiva ou uma eliminação completa nos dispositivos geridos como dispositivos móveis ou bloquear um dispositivo e repor a respetiva palavra-passe. Ao limpar o dispositivo, liberta a subscrição do utilizador para adicionar um dispositivo diferente. Também pode extinguir PCs geridos com o software de cliente do Intune.
 
 ## Eliminar dados e aplicações dos dispositivos
 Tanto a eliminação seletiva como a eliminação completa extinguem o dispositivo da gestão do Intune ao remover a política e o portal da empresa, o que significa que o dispositivo deixa de ter as credenciais necessárias para iniciar sessão nos recursos da empresa, como o Microsoft SharePoint, o e-mail ou o Office 365.
@@ -62,6 +69,6 @@ Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
