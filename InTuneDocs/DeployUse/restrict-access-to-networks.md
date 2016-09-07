@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
+ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
 
 
 ---
@@ -29,33 +29,34 @@ Para ativar esta integração, não precisa de efetuar qualquer configuração n
 ### Passo 1: gerir os certificados
 1. Na consola do Azure Active Directory (Azure AD), exporte o certificado.
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Execute o Internet Explorer como administrador e inicie sessão na consola do Azure AD.
+   a. Execute o Internet Explorer como administrador e inicie sessão na consola do Azure AD.
 
-    b. Selecione o ícone de cadeado na barra de endereço e escolha **Ver certificados**.
+   b. Selecione o ícone de cadeado na barra de endereço e escolha **Ver certificados**.
 
-    c. No separador **Detalhes** das propriedades do certificado, escolha **Copiar para ficheiro**.
+   c. No separador **Detalhes** das propriedades do certificado, escolha **Copiar para ficheiro**.
 
-    d. Na página de boas-vindas do **Assistente para importar certificados**, escolha **Seguinte**.
+   d. Na página de boas-vindas do **Assistente para importar certificados**, escolha **Seguinte**.
 
-    e. Na página **Formato do ficheiro de exportação**, deixe a predefinição, **Binário codificado DER x.509 (.CER)** e escolha **Seguinte**.  
+   e. Na página **Formato do ficheiro de exportação**, deixe a predefinição, **Binário codificado DER x.509 (.CER)** e escolha **Seguinte**.  
 
-    f. Na página **Ficheiro a exportar**, selecione **Procurar** para escolher uma localização na qual pretende guardar o ficheiro e forneça o nome do ficheiro. Apesar de parecer que está a escolher um ficheiro a exportar, está a atribuir um nome ao ficheiro no qual o certificado exportado será guardado. Selecione **Seguinte** &gt; **Concluir**.
+   f. Na página **Ficheiro a exportar**, selecione **Procurar** para escolher uma localização na qual pretende guardar o ficheiro e forneça o nome do ficheiro. Apesar de parecer que está a escolher um ficheiro a exportar, está a atribuir um nome ao ficheiro no qual o certificado exportado será guardado. Selecione **Seguinte** &gt; **Concluir**.
 
-    #### Safari
+#### Safari
 
-    a. Inicie sessão na consola do Azure AD.
+ a. Inicie sessão na consola do Azure AD.
 
-    b. Selecione o ícone de cadeado &gt;  **Mais informações**.
+b. Selecione o ícone de cadeado &gt;  **Mais informações**.
 
-    c. Selecione **Ver certificado** &gt; **Detalhes**.
+   c. Selecione **Ver certificado** &gt; **Detalhes**.
 
-    d. Escolha o certificado e, em seguida, selecione **Exportar**.  
+   d. Escolha o certificado e, em seguida, selecione **Exportar**.  
 
-    > [!IMPORTANT]
-    > Verifique a data de expiração do certificado, porque terá de exportar e importar um novo certificado quando este expirar.
+> [!IMPORTANT]
+>
+> Verifique a data de expiração do certificado, porque terá de exportar e importar um novo certificado quando este expirar.
 
 
 2. A partir da consola do ISE, importe o certificado do Intune (o ficheiro que exportou) para o  armazenamento **Certificados Fidedignos**.
@@ -146,6 +147,6 @@ Também existe um [conjunto transferível de instruções de inscrição](https:
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ae38f4a28167eb5dcce92db94a35736d03d1e186
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 04ffc982f7003028c276eb855ca7f89f56c45f39
 
 
 ---
@@ -25,11 +25,9 @@ ms.openlocfilehash: ae38f4a28167eb5dcce92db94a35736d03d1e186
 
 O administrador de TI definiu uma versão máxima do sistema operativo que pode ter no seu dispositivo Windows, mas o seu dispositivo não está em conformidade com essa definição. Para saber qual é o sistema operativo máximo permitido para o seu dispositivo, terá de contactar o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

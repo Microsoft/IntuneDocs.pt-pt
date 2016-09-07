@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7e90141f08cf029a005aad1ae0501fc1962eb958
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
 
 
 ---
@@ -46,11 +46,8 @@ Para ativar o registo verboso:
 4.  Siga as indicações para escolher uma aplicação de e-mail a utilizar para enviar os registos ao administrador de TI. A aplicação criará um e-mail pré-endereçado com todos os registos anexados.
 
 
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

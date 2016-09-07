@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 85a036fd910bb91bf8f0728ca2aa486189471ac6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 481f9570f4c1cf30bfb7be9beef2681fa5fc84f7
 
 
 ---
@@ -32,11 +32,10 @@ Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa n
 -   Ao abanar o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, ao tocar em **E-mail** quando é apresentado o alerta diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** &gt; ** Portal da Empresa** e confirme que a opção **Gesto de Abanar** está ativada.
 
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

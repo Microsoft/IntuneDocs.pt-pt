@@ -4,7 +4,7 @@ description: "Utilize as informações neste tópico para obter ajuda para imple
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
-ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
+ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
+ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
 
 ---
 # Implementar aplicações no Microsoft Intune
@@ -57,7 +57,7 @@ A aplicação apresenta-se nos dispositivos dos utilizadores no portal da empres
 Por exemplo, nesta captura de ecrã, a aplicação Bing para iOS foi implementada com o tipo de instalação de **ligação externa** com um ícone personalizado. Foi selecionada opção **Apresentar como uma aplicação em destaque e realçá-la no portal da empresa**.  
 ![Aplicação iOS disponível](./media/available-install-on-iOS.png)
 
-Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utilizador irá receber uma notificação a indicar que uma aplicação está pronta para ser instalada. Por exemplo, nesta captura de ecrã, a aplicação Pastas de Trabalho para iOS foi implementada ao utilizar **Aplicação iOS gerida da loja de aplicações** para implementar a aplicação Pastas de Trabalho para iOS.
+Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utilizador irá receber uma notificação a indicar que uma aplicação está pronta para ser instalada. Por exemplo, nesta captura de ecrã, a aplicação Pastas de Trabalho para iOS foi implementada ao utilizar **Aplicação iOS gerida da loja de aplicações** para implementar a aplicação Pastas de Trabalho para iOS.  
 ![Aplicação iOS obrigatória](./media/iOS-Required-install.PNG)
 
 ## Passos seguintes
@@ -66,6 +66,6 @@ Depois de implementar uma aplicação, poderá ser útil monitorizar o progresso
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 0d1b9b16df643004aca7fd620f738d226a6ebb07
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 7fe6918a3dae009e68f19e1fb005414704aee7f7
 
 
 ---
@@ -29,14 +29,12 @@ Se ocorrer um erro quando tentar inscrever o seu dispositivo Android no Intune, 
 
 Existem várias formas para enviar registos de dados do seu dispositivo para o seu administrador de TI para obter ajuda com erros:
 
-[Utilize um cabo USB para enviar registos](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
-[Utilize o e-mail para enviar registos](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
+- [Utilize um cabo USB para enviar registos](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+- [Utilize o e-mail para enviar registos](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 7/28/2016
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed6aafb0ba8e8bb2b7a9985bb98a149a1af68574
-ms.openlocfilehash: 606146fdc9e3e141293e561a09d8e62d8870403a
+ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
+ms.openlocfilehash: 1e2dc1e94870bb53143bee62ccc9696a28285987
 
 
 ---
@@ -80,6 +80,6 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,15 +4,15 @@ description: "Fornece ligações para informações sobre como inscrever disposi
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: fc18b9f1caf9f0e6c6b1c8d21d95f42a0c40c507
-ms.openlocfilehash: 8d3cc70379fdba7c7e3f6c0c82bc6bfb7b534b2c
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 5ea154c58207b1ddcce8c51c0cd039532bda4cad
 
 
 ---
@@ -23,18 +23,15 @@ Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu disp
 
 Para ver as instruções de inscrição, utilize a ligação que corresponde ao tipo de dispositivo que está a utilizar:
 
-- [Inscrever o dispositivo Android no Intune](enroll-your-device-in-Intune-android.md)</br>
-- [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md)</br>
-- [Inscrever o dispositivo Mac OS X no Intune](enroll-your-device-in-intune-mac-os-x.md)</br>
-- [Inscrever o dispositivo Windows no Intune](enroll-your-device-in-intune-windows.md)</br>
-
-### Consulte também
-- [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)</br>
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
+- [Inscrever o dispositivo Android no Intune](enroll-your-device-in-Intune-android.md)
+- [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md)
+- [Inscrever o dispositivo Mac OS X no Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Inscrever o dispositivo Windows no Intune](enroll-your-device-in-intune-windows.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 
