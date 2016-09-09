@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de 
 --------------
 
 |Definição da Política| Windows 8.1 e posterior| Windows Phone 8.1 e posterior| iOS 6.0 e posterior|Android 4.0 e posterior<br/>Samsung KNOX Standard 4.0 e posterior|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**Configuração do PIN ou da Palavra-passe** |Corrigido|Corrigido|Corrigido|Em quarentena|
 |**Encriptação do dispositivo**|N/D|Corrigido|Corrigido (ao definir um PIN)|Em quarentena|
 |**Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz**|N/D|N/D|Em quarentena (não é uma definição)|Em quarentena (não é uma definição)|
@@ -62,6 +62,6 @@ A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

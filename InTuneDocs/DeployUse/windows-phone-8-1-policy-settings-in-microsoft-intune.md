@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ Utilize a **Política de configuração geral para Windows Phone (Windows Phone 
 ### Definições de palavra-passe
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Especifica se os utilizadores têm de introduzir uma palavra-passe para aceder aos respetivos dispositivos.|Sim|Sim|
 |**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.|Sim|Sim|
 |**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**|Especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe. Existem quatro conjuntos de carateres: letras minúsculas, letras maiúsculas, números e símbolos. No entanto, para dispositivos iOS, especifica o número de símbolos que têm de ser incluídos na palavra-passe.|Sim|Sim|
@@ -55,44 +55,44 @@ Utilize a **Política de configuração geral para Windows Phone (Windows Phone 
 ### Definições de encriptação
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Encriptação obrigatória no dispositivo móvel**|Requer que os dados nos dispositivos móveis suportados sejam encriptados.<br>Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.|Sim|Sim|
 
 ### Definições do sistema
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como um ficheiro de imagem.|Não|Sim|
 |**Permitir submissão de dados de diagnóstico**|Permite ao dispositivo enviar informações de diagnóstico para a Microsoft.|Não|Sim|
 
 ### Definições da nuvem – contas e sincronização
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Permitir conta Microsoft**|Permite a uma conta Microsoft estar ligada ao dispositivo.|Não|Sim|
 
 ### Definições de e-mail
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Permitir contas de e-mail personalizadas**|Permite ao dispositivo ligar a contas de e-mail não Microsoft.|Não|Sim|
 
 ### Definições da aplicação - browser
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Permitir browser**|Permite ou bloqueia o browser incorporado nos dispositivos.|Não|Sim|
 
 ### Definições da aplicação - aplicações
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Permitir loja de aplicações**|Permite aos utilizadores ligar à loja de aplicações a partir do dispositivo.|Não|Sim|
 
 ### Definições das capacidades do dispositivo - hardware
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Permitir câmara**|Permite ou bloqueia a câmara do dispositivo.|Não|Sim|
 |**Permitir armazenamento amovível**|Permite ao dispositivo utilizar armazenamento amovível, como cartões SD.|Sim|Sim|
 |**Permitir Wi-Fi**|Ativa ou desativa a funcionalidade Wi-Fi do dispositivo.|Não|Sim|
@@ -106,7 +106,7 @@ Utilize a **Política de configuração geral para Windows Phone (Windows Phone 
 ### Definições das capacidades do dispositivo - funcionalidades
 
 |Nome da definição|Detalhes|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Permitir copiar e colar**|Permite a funcionalidade de copiar e colar nos dispositivos.|Não|Sim|
 
 ### Definições para aplicações permitidas e bloqueadas
@@ -171,6 +171,6 @@ Na caixa de diálogo **Adicionar ou Editar Definição OMA-URI**, especifique as
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

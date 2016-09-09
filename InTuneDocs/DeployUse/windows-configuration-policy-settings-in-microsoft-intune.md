@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 ## Definições de segurança
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.|Sim|Sim|
 |**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**|Especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe. Existem quatro conjuntos de carateres: letras minúsculas, letras maiúsculas, números e símbolos. No entanto, para dispositivos iOS, esta definição especifica o número de símbolos que têm de ser incluídos na palavra-passe.|Sim|Sim|
 |**Comprimento mínimo da palavra-passe**<sup>1</sup>|Configura o comprimento mínimo necessário (em carateres) da palavra-passe.|Sim|Sim|
@@ -46,7 +46,7 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 ## Definições de encriptação
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Encriptação obrigatória no dispositivo móvel**<sup>1</sup>|Requer que os ficheiros no dispositivo estejam encriptados.<br>Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.|Sim|Não|
 <sup>1</sup> Informações adicionais para dispositivos com o Windows 8.1
 
@@ -61,14 +61,14 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 ## Definições de malware
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Requerer firewall de rede**|Requer que a Firewall do Windows esteja ativada.|Sim|Não|
 |**Ativar SmartScreen**|Requer a utilização do Windows SmartScreen.|Sim|Não|
 
 ## Definições do sistema
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Requerer atualizações automáticas**|Ativa a definição de atualizações automáticas nos dispositivos.|Sim|Não|
 |**Requerer atualizações automáticas – classificação mínima de atualizações a instalar automaticamente**|Escolhe a classificação das atualizações que serão instaladas automaticamente:<br /><br />-   **Importante** – Instala todas as atualizações classificadas como importantes.<br />-   **Recomendada** – Instala todas as atualizações classificadas como importantes ou recomendadas.|Sim|Não|
 |**Controlo de Conta de Utilizador**|Requer a utilização do Controlo de Conta de Utilizador (UAC) nos dispositivos.|Sim|Não|
@@ -78,19 +78,19 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 ## Definições da nuvem - documentos e dados
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**URL das Pastas de Trabalho**|Define o URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.|Sim|Não|
 
 ## Definições de e-mail
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Torne a conta Microsoft opcional na aplicação Windows Mail**|Permite o acesso à aplicação Windows Mail sem uma conta Microsoft.|Sim|Não|
 
 ## Definições da aplicação - browser
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Permitir preenchimento automático**|Permite que os utilizadores alterem as definições de conclusão automática no browser.|Sim|Não|
 |**Permitir bloqueador de janelas de pop-up**|Ativa ou desativa o bloqueador de janelas pop-up do browser.|Sim|Não|
 |**Permitir plug-ins**|Permite aos utilizadores adicionar plug-ins ao Internet Explorer.|Sim|Não|
@@ -109,7 +109,7 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 ## Definições das capacidades do dispositivo - rede móvel
 
 |Nome da definição|Detalhes|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Permitir roaming de dados**|Permite dados em roaming quando o dispositivo estiver numa rede celular.|Sim|Não|
 
 
@@ -119,6 +119,6 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

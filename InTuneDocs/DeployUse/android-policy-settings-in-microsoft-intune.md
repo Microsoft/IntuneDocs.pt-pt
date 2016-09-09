@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 1809f619173ca57868cfd2b8466e6e2bcf05f0c7
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 ### Definições de encriptação
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Encriptação obrigatória no dispositivo móvel**|Necessita que os ficheiros no dispositivo móvel sejam encriptados.|Sim|Sim|
 |**Encriptação obrigatória nos cartões de armazenamento**|Especifica se o cartão de armazenamento do dispositivo tem de estar encriptado.|Não|Sim|
 
 ### Definições do sistema
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como uma imagem.|Não|Sim|
 |**Permitir submissão de dados de diagnóstico**|Permite ao dispositivo enviar informações de diagnóstico para a Google.|Não|Sim|
 |**Permitir a reposição de fábrica**|Permite ao utilizador efetuar uma reposição de fábrica no dispositivo.|Não|Sim|
@@ -72,19 +72,19 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 ### Definições da nuvem - documentos e dados
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Permitir cópia de segurança do Google**|Permite a utilização da cópia de segurança do Google.|Não|Sim|
 
 ### Definições da nuvem – contas e sincronização
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir sincronização automática da conta Google**|Permite que as definições da conta Google sejam sincronizadas automaticamente.|Não|Sim|
 
 ### Definições da aplicação - browser
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir browser**|Especifica se pode ser utilizado o browser predefinido do dispositivo.|Não|Sim|
 |**Permitir preenchimento automático**|Permite a utilização da função de preenchimento automático do browser.|Não|Sim|
 |**Permitir bloqueador de janelas de pop-up**|Permite a utilização do bloqueador de janelas de pop-up no browser.|Não|Sim|
@@ -94,13 +94,13 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 ### Definições da aplicação - aplicações
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Permitir loja do Google Play**|Permite ao utilizador aceder à loja do Google Play no dispositivo.|Não|Sim|
 
 ### Definições das capacidades do dispositivo - hardware
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir câmara**|Permite a utilização da câmara do dispositivo.|Sim|Sim|
 |**Permitir armazenamento amovível**|Permite ao dispositivo utilizar armazenamento amovível, como um cartão SD.|Não|Sim|
 |**Permitir Wi-Fi**|Permite a utilização das capacidades Wi-Fi do dispositivo.|Não|Sim|
@@ -113,7 +113,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 ### Definições das capacidades do dispositivo - rede móvel
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Permitir chamadas em roaming**|Permite chamadas em roaming quando o dispositivo estiver numa rede celular.|Não|Sim|
 |**Permitir roaming de dados**|Permite dados em roaming quando o dispositivo estiver numa rede celular.|Não|Sim|
 |**Permitir mensagens SMS/MMS**|Permite a utilização de mensagens SMS e MMS no dispositivo.|Não|Sim|
@@ -121,7 +121,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 ### Definições das capacidades do dispositivo - funcionalidades
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Permitir assistente de voz**|Permite a utilização de software de assistente de voz no dispositivo.|Não|Sim|
 |**Permitir marcação por voz**|Ativa ou desativa a funcionalidade de marcação por voz no dispositivo.|Não|Sim|
 |**Permitir copiar e colar**|Permite as funções de copiar e colar no dispositivo.|Não|Sim|
@@ -208,6 +208,6 @@ Esta capacidade destina-se a permitir a implementação de definições do Andro
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

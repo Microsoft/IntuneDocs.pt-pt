@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: d8f7de4013c1bdf6174cd4e1d7491514b11a14a3
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 ## Definições de palavra-passe
 
 |Nome da definição|Detalhes
-|----------------|
+|----------------|---|
 |**Palavra-passe obrigatória para desbloquear os dispositivos móveis**|Especifica se os dispositivos devem ser bloqueados ao utilizar uma palavra-passe.<br>(não aplicável a dispositivos com o Windows RT).|
 |**Tipo obrigatório de palavra-passe**|Especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|
 |**Comprimento mínimo da palavra-passe**|Especifica o número mínimo de carateres necessários na palavra-passe do dispositivo.|
@@ -40,7 +40,7 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 ## Definições de encriptação
 
 |Nome da definição|Detalhes|
-|----------------|
+|----------------|---|
 |**Encriptação obrigatória no dispositivo móvel**<sup>1</sup>|Requer que os dados num dispositivo sejam encriptados quando suportado.<br><br>Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.|
 |**Encriptação obrigatória nos cartões de armazenamento**|Requer que os dados que estejam num armazenamento externo, como um cartão SD, sejam encriptados (nos dispositivos suportados).
 <sup>1</sup> Informações adicionais para dispositivos com o Windows 8.1
@@ -56,7 +56,7 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 ## Definições de e-mail
 
 |Nome da definição|Detalhes
-|----------------|
+|----------------|---|
 |**Permitir que os utilizadores transfiram anexos de e-mail**|Especifica se os anexos de e-mail podem ser transferidos para o dispositivo.|
 |**Período de sincronização de e-mail**|Especifica o número de dias de e-mail recebido que será sincronizado com o dispositivo.
 |**Permitir que os dispositivos móveis que não suportam completamente as definições do Exchange ActiveSync sincronizem com o Exchange**|Especifica se pretende permitir o acesso ao Exchange em dispositivos que não suportam uma ou mais definições do Exchange ActiveSync.
@@ -64,13 +64,13 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 ## Definições do browser
 
 |Nome da definição|Detalhes
-|----------------|-
+|----------------|---|
 |**Permitir browser**|Especifica se o browser do dispositivo pode ser utilizado.<br>(Não disponível para Windows RT ou Windows Phone).
 
 ## Definições de hardware
 
 |Nome da definição|Detalhes
-|----------------|
+|----------------|---|
 |**Permitir câmara**|Especifica se a câmara do dispositivo pode ser utilizada.<br>(Não disponível para Windows RT ou Windows Phone).
 
 
@@ -80,6 +80,6 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
