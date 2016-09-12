@@ -1,10 +1,10 @@
 ---
 title: "Inscrição direta para dispositivos iOS| Microsoft Intune"
-description: 
+description: "Utilize a ferramenta Apple Configurator para inscrever diretamente dispositivos iOS pertencentes à empresa com uma política predefinida ao ligá-los por USB a um computador Mac."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # Inscrever diretamente dispositivos iOS com o Apple Configurator
-O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac. Este processo não efetua a reposição de fábrica do dispositivo e inscreve o dispositivo com uma política predefinida. Este método destina-se a dispositivos **Sem afinidade de utilizadores** e requer que ligue o dispositivo iOS através de USB a um computador Mac para configurar a inscrição empresarial. A aplicação Portal da Empresa não é suportada para os dispositivos inscritos através de inscrição direta. Esta instrução parte do princípio de que está a utilizar o Apple Configurator 2.0 no computador Mac.
+O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com a ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac. Este processo não efetua a reposição de fábrica do dispositivo e inscreve o dispositivo com uma política predefinida. Este método destina-se a dispositivos **Sem afinidade de utilizadores** e requer que ligue o dispositivo iOS através de USB a um computador Mac para configurar a inscrição empresarial. Quando inscrever diretamente dispositivos iOS, pode inscrever um dispositivo sem adquirir o número de série do mesmo. Também pode dar um nome ao dispositivo para fins de identificação antes de o Intune capturar o nome do dispositivo durante a inscrição. A aplicação Portal da Empresa não é suportada para os dispositivos inscritos através de inscrição direta. Esta instrução parte do princípio de que está a utilizar o Apple Configurator 2.0 no computador Mac.
 
 1.  **Criar um perfil para dispositivos** Um perfil de inscrição de dispositivos especifica as definições aplicadas aos dispositivos. Se ainda não tiver nenhum, crie um perfil de inscrição de dispositivos para os dispositivos iOS inscritos através do Apple Configurator.
-
-    #### Para criar um perfil
 
     1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) vá para **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, selecione **Adicionar…**.
 
@@ -40,8 +38,8 @@ O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com a
 
         -   **Pré-atribuição de grupos de dispositivos** - todos os dispositivos com este perfil implementado irão inicialmente pertencer a este grupo. Pode reatribuir dispositivos depois da inscrição.
 
-        >[!Important]
-        >As atribuições de grupo mudam do Intune para o Azure Active Directory. [Saiba mais](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  Clique em **Guardar Perfil** para adicionar o perfil.
 
 5.  **Exportar um perfil como .mobileconfig para implementar em dispositivos iOS** Selecione o perfil de dispositivo que criou. Selecione **Exportar...** na barra de tarefas. Clique em **Transferir perfil** e guarde o ficheiro .mobileconfig transferido.
@@ -61,8 +59,6 @@ O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com a
 
 8.  **Instalar o perfil** Está pronto para instalar o perfil no dispositivo iOS. O dispositivo já tem de ter concluído o Assistente de Configuração e estar pronto a utilizar.  Se o registo implicar implementações de aplicações, o dispositivo deve ter um ID Apple configurado porque as implementações de aplicações irão exigir que tenha um ID Apple registado na App Store.
 
-    ###### Concluir a aceitação do perfil para dispositivos iOS sem supervisão
-
     1.  Desbloqueie o dispositivo iOS.
 
     2.  Na caixa de diálogo **Instalar perfil** de **Perfil de gestão**, toque em **Instalar**.
@@ -81,11 +77,7 @@ O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com a
 10. **Distribuir dispositivos** O dispositivo iOS está agora inscrito no Intune e gerido.
 
 
-### Consulte também
-[Prepare-se para inscrever dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO1-->
 
 

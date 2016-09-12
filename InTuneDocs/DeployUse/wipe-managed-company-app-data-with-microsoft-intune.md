@@ -1,10 +1,10 @@
 ---
-title: "Eliminar dados empresariais da aplicação gerida com o Microsoft Intune | Microsoft Intune"
-description: 
+title: "Eliminar dados de aplicações geridas pela empresa | Microsoft Intune"
+description: Saiba como pode remover de forma seletiva dados da empresa de dispositivos remotamente.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: ebc83611679f5128df45e4ca6b2f3b745f47061d
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
 
 
 ---
@@ -61,6 +61,6 @@ O painel **Gestão de aplicações móveis do Intune** tem um relatório resumid
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

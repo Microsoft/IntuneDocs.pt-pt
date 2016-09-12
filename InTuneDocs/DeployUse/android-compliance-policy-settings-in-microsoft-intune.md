@@ -1,10 +1,10 @@
 ---
 title: "Definições de política de conformidade para dispositivos Android | Microsoft Intune"
-description: 
+description: "Este tópico descreve as definições da política de conformidade de dispositivos para dispositivos Android."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
-ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 
 
 ---
@@ -55,9 +56,17 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 ### Encriptação
 - **Exigir encriptação no dispositivo móvel:** configure esta opção como **Sim** para exigir que os dispositivos sejam encriptados para ligar aos recursos. Os dispositivos são encriptados quando é configurada a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.
 
-## Definições de estado de funcionamento do dispositivo
+## Definições de estado de funcionamento e segurança do dispositivo
 
 - **O dispositivo não pode ter jailbreak ou root:** se ativar esta definição, os dispositivos com jailbreak serão avaliados como não conformes.
+- **Exigir que os dispositivos impeçam a instalação de aplicações de origens desconhecidas (Android 4.0 ou posterior)** Para impedir que os dispositivos que tenham a opção **Segurança > Origens desconhecidas** ativada no dispositivo, ative esta definição e configure-a como **Sim**.  
+>[!IMPORTANT]
+>As aplicações de sideload requerem a ativação da opção **Origens desconhecidas**.  Apenas deve aplicar esta política de conformidade se não tiver aplicações Android de sideload nos dispositivos.
+
+- **Exigir que a depuração USB esteja desativada (Android 4.2 ou posterior)**: esta definição especifica se a opção de depuração USB no dispositivo está ativada.
+- **Exigir que os dispositivos tenham ativado o dispositivo de Análise para ameaças de segurança (Android 4.2 a 4.4)**: esta definição especifica que a funcionalidade **Verificar aplicações** está ativada no dispositivo.
+- **Nível mínimo de correção de segurança Android (Android 6.0 ou posterior)**: utilize esta definição para especificar o nível mínimo de correção Android.  Os dispositivos que não tenham, pelo menos, este nível de correção não serão conformes. A data tem de ser especificada no formato: AAAA-MM-DD.
+
 
 ## Definições de propriedade do dispositivo
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não conforme.
@@ -67,6 +76,6 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO5-->
 
 

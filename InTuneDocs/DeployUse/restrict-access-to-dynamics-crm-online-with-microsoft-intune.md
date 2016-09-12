@@ -1,10 +1,10 @@
 ---
 title: Restringir o acesso ao e-mail ao Dynamics CRM Online | Microsoft Intune
-description: 
+description: Proteger e controlar o acesso ao Dynamics CRM online com acesso condicional.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
 
 
 ---
@@ -55,10 +56,10 @@ Se um utilizador estiver em ambos os grupos, estará excluído da política.
 [Crie](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade em todos os dispositivos que serão afetados pela política. Estes seriam todos os dispositivos utilizados pelos utilizadores nos grupos Visados.
 
 > [!NOTE]
-> [!NOTE] Enquanto as políticas de conformidade são implementadas nos grupos do Microsoft Intune, as políticas de acesso condicional são direcionadas para os grupos de segurança do Azure Active Directory.
+> Enquanto as políticas de conformidade são implementadas nos grupos do Microsoft Intune, as políticas de acesso condicional são segmentadas para os grupos de segurança do Azure Active Directory.
 
 > [!IMPORTANT]
-> [!IMPORTANT] Se não tiver implementado uma política de conformidade, os dispositivos serão tratados como conformes.
+> Se não tiver implementado uma política de conformidade, os dispositivos serão tratados como conformes.
 
 Quando estiver pronto, avance para o Passo 3.
 ### Passo 3: configurar a política de Dynamics CRM
@@ -96,6 +97,6 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO5-->
 
 

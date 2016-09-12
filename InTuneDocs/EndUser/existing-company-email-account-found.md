@@ -3,18 +3,19 @@ title: "Conta de e-mail da empresa já existente encontrada | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 02a07a6017ed2bb569dd9d3756f84b7b8078f630
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 3fd4b6dbac9b3ad41ed0aedba7fecfb117193d50
 
 
 ---
@@ -26,7 +27,7 @@ Já tem uma conta de e-mail da empresa. Para continuar e ligar ao e-mail da empr
 
     Por exemplo, num dispositivo iOS, toque em **Definições** &gt; **Correio, Contactos, Calendário**. Selecione a sua conta de e-mail de trabalho e clique em **Eliminar**.
 
-2.  Abra a aplicação do portal da empresa no dispositivo e toque em **Verificar Conformidade**.
+2.  Abra a aplicação do Portal da Empresa no dispositivo e toque em **Verificar Conformidade**.
 
 3.  Aguarde algum tempo para que as novas definições de e-mail sejam aplicadas automaticamente no seu dispositivo.
 
@@ -34,7 +35,6 @@ Se as definições de e-mail novas não aparecerem ao fim de algum tempo, contac
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

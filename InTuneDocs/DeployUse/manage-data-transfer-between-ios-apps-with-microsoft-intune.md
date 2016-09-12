@@ -1,10 +1,10 @@
 ---
 title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
-description: 
+description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
-ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
 
 
 ---
@@ -74,6 +75,6 @@ Esta configuração é necessária para os dispositivos geridos por uma soluçã
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

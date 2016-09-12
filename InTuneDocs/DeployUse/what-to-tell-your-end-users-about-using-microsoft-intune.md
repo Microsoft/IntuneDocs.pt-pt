@@ -1,10 +1,10 @@
 ---
-title: "O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune | Microsoft Intune"
-description: 
+title: "O que dizer aos utilizadores finais sobre a utilização do Intune | Microsoft Intune"
+description: "Ligações para informações para partilhar com os utilizadores finais"
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
-ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Confirme que inclui as informações de contacto do administrador de TI quando [
 
 ## Onde os utilizadores finais podem encontrar informações sobre tarefas comuns
 
-Dê aos utilizadores finais as seguintes ligações de ajuda quando estiverem à procura de informações sobre como utilizar o Intune nos respetivos dispositivos. Nestas ligações, os utilizadores irão encontrar passos sobre como instalar a aplicação Portal da Empresa, inscrever os respetivos dispositivos, obter aplicações geridas, resolver problemas e muito mais.
+Quando os utilizadores inscritos precisam de ajuda com o Intune, normalmente veem uma ligação no site do Portal da Empresa ou na aplicação do Portal da Empresa que os direciona para um artigo específico com os passos sobre como resolver o problema ou concluir a tarefa. Por exemplo, se os utilizadores do Android virem uma mensagem a indicar que lhes falta um certificado obrigatório, poderão tocar numa ligação “Como resolver este problema” para aceder a um artigo com os passos sobre como obter o certificado. 
+
+As ligações abaixo destinam-se aos administradores de TI. Estas páginas contêm ligações para todos os artigos para os quais os utilizadores são enviados a partir da aplicação ou do site do Portal da Empresa. A ligação está dividida em secções: instalação da aplicação do Portal da Empresa e inscrição no Intune; tarefas que os utilizadores podem fazer nos respetivos dispositivos, como utilizar aplicações geridas e sincronizar manualmente os respetivos dispositivos; e resolução de problemas.
 
 - [Utilizar o dispositivo Android com o Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ Para compreender como os utilizadores finais obtêm as aplicações, escolha de 
 
 Para ajudar os utilizadores a resolver problemas que possam ter quando estão a utilizar o Portal da Empresa, pode rever uma [lista de mensagens que os utilizadores podem ver no Portal da Empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
+Se existirem outras informações que gostaria de ver abordadas neste artigo, adicione a sugestão à caixa Comentário na parte inferior deste tópico. Obrigado!
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

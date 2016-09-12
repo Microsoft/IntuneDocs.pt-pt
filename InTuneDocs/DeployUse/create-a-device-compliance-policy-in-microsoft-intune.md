@@ -1,10 +1,10 @@
 ---
-title: "Criar uma política de conformidade de dispositivos no Microsoft Intune | Microsoft Intune"
-description: 
+title: "Criar uma política de conformidade de dispositivos | Microsoft Intune"
+description: "Crie uma política de conformidade para ajudar a proteger dispositivos móveis e PCs utilizados para aceder aos dados da sua empresa."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
 
 
 ---
@@ -32,12 +32,20 @@ Na página **Criar Política**, ative as definições necessárias:
   -   As definições de segurança do sistema, como palavra-passe e encriptação
   -   As definições de estado de funcionamento do dispositivo, como se o dispositivo tem ou não jailbrake ou se é considerado como estando em bom estado de funcionamento pelo serviço de atestado de estado de funcionamento de dispositivos do Windows.
   -   Definições de propriedades do dispositivo, como a versão mínima do SO necessária ou a versão máxima do SO permitida.
-![Captura de ecrã do separador Geral da página Criar Política ](./media/intune-sa-3b-create-policy.png)
+![Separador Geral da página Criar Política ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Passo 3: Guardar a política
 Quando terminar, selecione **Guardar Política**.
 
 Terá a opção de implementar a política logo após guardá-la ou pode optar por implementá-la mais tarde. A nova política é apresentada no nó **Políticas de Conformidade** da área de trabalho **Política**.
+
+##  Passo 4: Definir o período de validade do Estado de conformidade
+Para especificar o tempo que o dispositivo tem para se registar antes de ser considerado como não estando em conformidade, aceda às definições da política de conformidade e atualize esse período.  A predefinição são 30 dias.
+
+![opção de definições da política de conformidade na barra de menus da política](../media/mdm-compliance-policy-settings.png)
+
+![caixa de diálogo da política de conformidade](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Definições de política suportadas
 A tabela seguinte lista as definições de política de conformidade e as plataformas em que são suportadas.
@@ -79,6 +87,6 @@ Selecione um dos seguintes passos para obter mais informações sobre as defini�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

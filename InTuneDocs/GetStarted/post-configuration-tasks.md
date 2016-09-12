@@ -2,9 +2,9 @@
 title: "Tarefas de pós-configuração | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 2ea7f48c8d34da920c7cb3a70309d34c3f768fed
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 2ea332e7f0739ef55fcd0174d21e67086bcc9f4f
 
 
 ---
@@ -30,6 +30,6 @@ Depois de concluir os passos de configuração inicial para uma subscrição pag
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

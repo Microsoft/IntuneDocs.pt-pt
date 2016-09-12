@@ -1,10 +1,10 @@
 ---
 title: Sincronizar o Active Directory e adicionar utilizadores ao Intune | Microsoft Intune
-description: 
+description: "Descreve como sincronizar utilizadores no local com o Azure AD e conceder permissões de administrador para a sua subscrição do Intune"
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
-ms.openlocfilehash: 70a2d32de67f0a69bbc29ca68a1c831c9cf38796
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: a2ed4b1e025437cca6de4a15b3800daa2c9a212b
 
 
 ---
@@ -48,6 +48,6 @@ Parabéns! Acabou de concluir o passo 3 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

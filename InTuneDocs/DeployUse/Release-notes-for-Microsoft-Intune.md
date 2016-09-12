@@ -1,10 +1,10 @@
 ---
 title: "Notas de versão para o Microsoft Intune | Microsoft Intune"
-description: 
+description: "Notas de versão do Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
+ms.openlocfilehash: ad95830b37d3b83554b64d2f82fa537e603190d6
 
 
 ---
@@ -91,6 +91,6 @@ A Consola de administrador do Intune e o utilizador final voltado para experiên
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

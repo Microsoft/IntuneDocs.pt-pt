@@ -1,26 +1,27 @@
 ---
-title: "What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?) | Microsoft Intune"
+title: "O que acontece se anular a inscrição do seu dispositivo Windows no Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 
 ---
 
 
-# What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do dispositivo no Intune?)
+# O que acontece se anular a inscrição do seu dispositivo Windows no Intune?
 
 Para informações adicionais sobre o que acontece, utilize a ligação, mostrada na secção “Neste artigo” acima, que corresponde ao tipo de dispositivo que utiliza.
 
@@ -89,10 +90,9 @@ Ao remover o seu dispositivo Windows RT, ocorrerá o seguinte:
 
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

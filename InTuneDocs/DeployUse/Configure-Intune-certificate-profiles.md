@@ -1,10 +1,10 @@
 ---
 title: Configurar perfis de certificado | Microsoft Intune
-description: 
+description: Saiba como criar um perfil de certificado do Intune.
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
-ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ Tem de criar um **Perfil de certificado fidedigno** antes de poder criar um perf
 
     Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Forneça as informações pedidas para configurar as definições de perfil de certificado fidedigno para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. Na definição **Ficheiro de certificado**, importe o certificado de AC de Raiz Fidedigna (**.cer**) que exportou a partir da sua AC emissora. A definição **Arquivo de destino** aplica-se apenas a dispositivos com o Windows 8.1 e posterior e apenas se o dispositivo tiver mais do que um arquivo de certificados.
+3.  Forneça as informações pedidas para configurar as definições de perfil de certificado fidedigno para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. 
+
+    - Na definição **Ficheiro de certificado**, importe o certificado de AC de Raiz Fidedigna (**.cer**) que exportou a partir da sua AC emissora. A definição **Arquivo de destino** aplica-se apenas a dispositivos com o Windows 8.1 e posterior e apenas se o dispositivo tiver mais do que um arquivo de certificados.
+
+    
+    - Em **Formato do nome do requerente**, selecione **Personalizado** para fornecer um formato de nome de requerente personalizado.  
+
+        As duas variáveis atualmente suportadas pelo formato personalizado são **Nome Comum (CN)** e **E-mail (E)**. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, tal como o mostrado neste exemplo:  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        No exemplo, o administrador criou um formato de nome de requerente que, além das variáveis CN e E, utiliza cadeias para Unidade Organizacional, Organização, Localização, Estado e País. É fornecida uma lista das cadeias suportadas no tópico [Função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  Quando terminar, clique em **Guardar Política**.
@@ -83,6 +94,15 @@ Após ter criado um perfil de certificado da AC Fidedigna, crie perfis de certif
     Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Siga as instruções na página de configuração do perfil para configurar as definições do perfil de certificado SCEP.
+    > [!NOTE]
+    > 
+    > Em **Formato do nome do requerente**, selecione **Personalizado** para fornecer um formato de nome de requerente personalizado.
+    > 
+    >  As duas variáveis atualmente suportadas pelo formato personalizado são Nome Comum (CN) e E-mail (E). Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, tal como o mostrado neste exemplo:
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    No exemplo, o administrador criou um formato de nome de requerente que, além das variáveis *CN* e *E*, utiliza cadeias para Unidade Organizacional, Organização, Localização, Estado e País. É fornecida uma lista das cadeias suportadas no tópico [Função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
 4.  Quando terminar, clique em **Guardar Política**.
 
@@ -145,6 +165,6 @@ Agora, pode utilizar certificados para ajudar a proteger os perfis de e-mail, Wi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Definições de políticas do Windows 10 | Microsoft Intune"
-description: 
+description: "Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,22 +12,27 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
 
 # Definições de política do Windows 10 no Microsoft Intune
 
-Utilize as definições de política indicadas neste tópico para ajudá-lo a configurar as definições para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos.
+Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos.
+
+> [!IMPORTANT]
+> Pode gerir PCs Windows 10 de duas formas - ao inscrevê-los ou instalando o software de cliente de PC do Intune. Cada método oferece funcionalidades diferentes (veja [Escolher como gerir dispositivos](/intune/get-started/choose-how-to-manage-devices) para obter mais informações.
+> Se gerir os PCs Windows 10 com o software de cliente de PC do Intune, não pode utilizar as políticas nem as definições detalhadas neste tópico. Para aplicar estas definições, os dispositivos Windows 10 têm de estar inscritos no Intune.
 
 ## Definições de política de configuração geral
 
-Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos. Não é possível utilizar esta política quando gere PCs com o Windows 10 com o software do cliente Intune.
+Utilize a **política de configuração geral** do Microsoft Intune para Windows 10 para configurar as definições gerais para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos. 
 
 
-### Palavra-passe
+## - Palavra-passe
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -40,16 +45,15 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Expiração da Palavra-passe (dias)**|Especifica o período de tempo após o qual a palavra-passe do dispositivo tem de ser alterada.|
 |**Memorizar histórico de palavras-passe**|Especifica se pretende impedir que o utilizador final crie palavras-passe utilizadas anteriormente.|
 |**Memorizar histórico de palavras-passe** - **Evita a reutilização de palavras-passe anteriores**|Especifica o número de palavras-passe utilizadas anteriormente memorizadas pelo dispositivo.|
-|**Permitir palavra-passe por imagem e PIN**|Permite-lhe utilizar gestos simples numa imagem ou um PIN simples para iniciar sessão.<br>(apenas para ambiente de trabalho Windows 10)|
 |**Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**|Se estiver ativada, o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo de um estado inativo.<br>(Apenas Windows 10 Mobile)|
 
-### Encriptação
+## - Encriptação
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
 |**Encriptação obrigatória no dispositivo móvel**|Ativa a encriptação nos dispositivos visados.<br>(Apenas Windows 10 Mobile)|
 
-### Sistema
+## - Sistema
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -59,7 +63,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir que os dados de diagnóstico e de utilização sejam enviados à Microsoft**|Determina a quantidade de dados de diagnóstico e de utilização que são enviadas à Microsoft a partir dos dispositivos.<br><br>**Não** - Não são enviados dados à Microsoft<br>**Básico** - O dispositivo envia apenas informações limitadas à Microsoft<br>**Melhorado** - Envia dados de diagnóstico melhorados à Microsoft<br>**Completo (recomendado)** -Envia os mesmos dados que **Melhorado**, juntamente com dados adicionais sobre o estado do dispositivo|
 
 
-### Conta e sincronização
+## - Conta e sincronização
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -67,15 +71,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir adicionar contas de terceiros manualmente**|Permite que o utilizador adicione contas de e-mail ao dispositivo, que não estão associadas a uma conta Microsoft.|
 |**Permitir a sincronização de definições para contas Microsoft**|Permite que as definições do dispositivo e de aplicações associadas a uma conta Microsoft sejam sincronizadas entre dispositivos.|
 
-### Definições de e-mail
-
-|Nome da definição|Detalhes|
-|----------------|----------------------|---------------------|
-|**Torne a conta Microsoft opcional na aplicação Windows Mail**|Configure esta definição para remover o requisito de uma conta Microsoft no Windows Mail.<br>Apenas para ambiente de trabalho Windows 10|
-
-
-
-### Microsoft Edge
+## - Microsoft Edge
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -91,7 +87,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir Gestor de Palavras-passe**|Ativar ou desativar a funcionalidade Gestor de Palavras-passe do Edge.|
 |**Localização da lista de sites do Modo Empresarial**|Especifica onde encontrar a lista de Web sites que serão abertos no modo Empresarial. Os utilizadores não podem editar esta lista.<br>(apenas para ambiente de trabalho Windows 10)|
 
-### Aplicações
+## - Aplicações
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -99,7 +95,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 
 
 
-### Rede móvel
+## - Rede móvel
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -107,7 +103,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir VPN sobre redes móveis**|Controla se o dispositivo pode aceder a ligações VPN quando ligado a uma rede celular.|
 |**Permitir roaming do VPN sobre redes móveis**|Controla se o dispositivo pode aceder a ligações VPN quando está em roaming numa rede celular.|
 
-### Hardware
+## - Hardware
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|
@@ -122,12 +118,11 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir Bluetooth**|Permite a utilização das capacidades de Bluetooth no dispositivo.|
 |**Permitir modo detetável do Bluetooth**|Permite que este dispositivo seja detetado por outros dispositivos com capacidade de Bluetooth.|
 |**Permitir publicidade do Bluetooth**|Permite que os dispositivos recebam anúncios sobre o Bluetooth.|
-|**Permitir modo conectável do Bluetooth**|**Importante:** o Windows 10 já não suporta esta definição, que será removida no futuro.|
 |**Permitir reposição do telefone**|Controla se o utilizador pode efetuar a reposição de fábrica do seu dispositivo.|
 |**Permitir ligação USB**|Controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.|
 |**Permitir modo Anti-roubo**|Configurar se o modo Anti-roubo do Windows estiver ativado.|
 
-### Funcionalidades
+## - Funcionalidades
 
 |Nome da definição|Detalhes|
 |----------------|----------------------|---------------------|
@@ -136,7 +131,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir Cortana**|Ativar ou desativar o assistente de voz Cortana.|
 |**Permitir notificações de centro de ação**|Ativar ou desativar notificações do centro de ação no ecrã de bloqueio do dispositivo.<br>(Apenas Windows 10 Mobile)|
 
-### Defender
+## - Windows Defender
 
 Todas as definições são apenas para ambiente de trabalho Windows 10.
 
@@ -161,17 +156,18 @@ Todas as definições são apenas para ambiente de trabalho Windows 10.
 |**Intervalo de atualização de assinatura**|Especifique o intervalo no qual o Defender irá verificar a existência de novos ficheiros de assinatura.|
 |**Permitir proteção da nuvem**|Permitir ou impedir que o Serviço de Proteção Ativa Microsoft receba informações sobre a atividade de software maligno nos dispositivos que gere. Estas informações são utilizadas para melhorar o serviço no futuro.|
 |**Solicitar aos utilizadores o envio de amostras**|Controla se os ficheiros que possam exigir análise adicional pela Microsoft para determinar se são maliciosos são automaticamente enviados à Microsoft.|
-|**Deteção de Aplicação Potencialmente Indesejável**|Esta definição pode ser utilizada para proteger computadores de secretária Windows inscritos contra software em execução classificado pelo Windows Defender como potencialmente indesejado. Pode proteger contra estas aplicações em execução ou utilizar o modo de auditoria para relatar quando uma aplicação potencialmente indesejável é instalada.|
+|**Deteção de Aplicação Potencialmente Indesejável**|Esta definição pode ser utilizada para proteger dispositivos de ambiente de trabalho Windows inscritos contra software em execução classificado pelo Windows Defender como potencialmente indesejado. Pode proteger contra estas aplicações em execução ou utilizar o modo de auditoria para relatar quando uma aplicação potencialmente indesejável é instalada.|
 |**Ficheiros e pastas a serem excluídos ao executar uma análise ou utilizar a proteção em tempo real**|Adicione um ou mais ficheiros e pastas, como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Estes ficheiros e pastas não serão incluídos em análises em tempo real ou agendadas.|
 |**Extensões de ficheiro a serem excluídas ao executar uma análise ou ao utilizar a proteção em tempo real**|Adicione uma ou mais extensões de ficheiro, como **jpg** ou **txt**, à lista de exclusões. Quaisquer ficheiros com estas extensões não serão incluídos em análises em tempo real ou agendadas.|
 |**Processos a serem excluídos ao executar uma análise ou ao utilizar a proteção em tempo real**|Adicione um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Estes processos não serão incluídos em análises em tempo real ou agendadas.| 
 
 
-### Definições das atualizações
+## - Atualizações
 
 |Nome da definição|Detalhes|
 |----------------|---------------|
 |**Permitir atualizações automáticas**|Ative esta definição para permitir atualizações automáticas. Em seguida, configure uma das seguintes definições para controlar o comportamento da atualização:<br /><br />**Notificar carregamento**<br /><br />**Instalação automática ao tempo de manutenção**<br /><br />**Instalação automática e reinicio ao tempo de manutenção**<br /><br />**Instalação automática e reinício à hora agendada** **Nota**: quando esta opção está selecionada, também pode configurar as seguintes definições: **Suprimir a notificação para o utilizador final** e **Definir o dia da instalação de atualizações agendadas**.<br>(apenas para ambiente de trabalho Windows 10)|
+|**Permitir funcionalidades de pré-lançamento**|Permite à Microsoft implementar funcionalidades e definições de pré-lançamento em dispositivos do Windows 10. Pode selecionar para permitir as definições apenas, ou todas as definições de versão de pré-lançamento e funcionalidades para a instalação.|
 
 ## Definições de política personalizada
 Utilize a **política de configuração personalizada** do Microsoft Intune para Windows 10 e Windows 10 Mobile para implementar definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar as funcionalidades nos dispositivos Windows 10 e Windows 10 Mobile. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
@@ -180,14 +176,14 @@ Esta capacidade destina-se a permitir a implementação de definições do Windo
 
 
 
-### Definições gerais de política personalizada
+## - Geral
 
 |Nome da definição|Detalhes|
     |----------------|--------------------|
     |**Nome**|Introduza um nome exclusivo para a política para o ajudar a identificá-la na consola do Intune.|
     |**Descrição**|Indique uma descrição geral da política e outras informações relevantes que poderão ajudá-lo a localizá-la.|
 
-### Definições OMA-URI de política personalizada
+## - Definições OMA-URI
 
 |Nome da definição|Detalhes|
     |--------|--------------------|
@@ -198,12 +194,12 @@ Esta capacidade destina-se a permitir a implementação de definições do Windo
     |**Valor**|Indique o valor a associar ao OMA-URI especificado anteriormente.|
 
 
-## Definições personalizadas de URI para dispositivos Windows 10
+## Definições de URI do Windows 10
 Este tópico lista as definições que pode configurar em dispositivos Windows 10 e Windows 10 Mobile numa **Política Personalizada do Windows 10** do Microsoft Intune.
 
 Se pretender utilizar a Política de URI Personalizada do Windows, todos os dispositivos têm de ser inscritos no Intune.
 
-### Definições de política de URI
+## - Política
 
 |Nome da política|Detalhes|
 |---------------|------------|-----------|
@@ -276,7 +272,7 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 |**Atualização/DeferUpgradePeriod**<br>(ambiente de trabalho e dispositivos móveis)|**Descrição:** política para diferir atualizações de funcionalidade para até oito meses<br /><br />**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Tipo de dados:** Número inteiro<br /><br />**Valores permitidos:**<br>**0**: aplicar atualizações imediatamente (predefinição)<br>**1**-**8**: número de meses para diferir atualizações de funcionalidade.<br /><br />Para obter mais informações, consulte:<br>[Introdução à manutenção do Windows](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plano de implementação do Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Atualização/PauseDeferrals**<br>(ambiente de trabalho e dispositivos móveis)|**Descrição:** permite que uma máquina CBB deixe de receber atualizações durante cinco semanas. Isto deve ser utilizado caso exista um problema com uma atualização.<br /><br />**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Tipo de dados:** Número inteiro<br /><br />**Valores permitidos:**<br>**0**: aplicar atualizações imediatamente (predefinição)<br>**1**: colocar atualizações em pausa (expira após cinco semanas)|
 
-### Definições de URI do Windows Defender
+## - Windows Defender
 
 |Nome da política|Detalhes|
 |---------------|-----------|
@@ -306,7 +302,7 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 |**ExcludedPaths**<br>(apenas ambiente de trabalho)|**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Tipo de dados:** Cadeia<br /><br />**Valores permitidos:**<br /><br />*&lt;lista de caminhos separados por ponto e vírgula&gt;*<br /><br />Exemplo: **c:\test;c:\test1.exe**<br /><br />**Valor predefinido:** Não são excluídos caminhos|
 |**ExcludedProcesses**<br>(apenas ambiente de trabalho)|**Caminho completo do URI:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Tipo de dados:** Cadeia<br /><br />**Valores permitidos:**<br>*&lt;lista de caminhos separados por ponto e vírgula&gt;*<br>Exemplo: **c:\test.exe;c:\test1.exe**<br>**Valor predefinido:** Não são excluídos processos|
 
-### Definições de URI do browser Edge
+## - Browser Edge
 
 |Nome da política|Detalhes|
 |---------------|------------|-----------|
@@ -327,6 +323,6 @@ Se pretender utilizar a Política de URI Personalizada do Windows, todos os disp
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

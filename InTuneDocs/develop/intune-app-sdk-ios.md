@@ -1,37 +1,32 @@
 ---
-# required metadata
-
-title: Guia para Programadores do SDK da Aplicação do Microsoft Intune para iOS | Microsoft Intune
-description:
-keywords:
+title: "Guia para Programadores do SDK da Aplicação do Microsoft Intune para iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 512ef2416e14f2a44e1c46e996c8519b5776581f
+
 
 ---
 
 # Guia para Programadores do SDK da Aplicação Microsoft Intune para iOS
 
-> [!NOTE] Pode ler primeiro o [Guia de Introdução ao SDK da Aplicação do Intune](intune-app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.* 
+> [!NOTE]
+> Pode ler primeiro o [Guia de Introdução ao SDK da Aplicação do Intune](intune-app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.* 
 
 O SDK da Aplicação Microsoft Intune para iOS permite incorporar a Gestão de Aplicações Móveis do Intune (MAM) na sua aplicação iOS. Uma aplicação preparada para MAM está integrada no SDK da Aplicação Intune e permite aos administradores de TI implementar políticas na sua aplicação móvel quando a aplicação é gerida ativamente.
 
-# O que está no SDK
+## O que está no SDK
 
 O SDK da Aplicação Intune para iOS inclui uma biblioteca estática, ficheiros de recursos, cabeçalhos de API, um plist de definições de Depuração e uma ferramenta de configurador. As aplicações móveis podem simplesmente incluir os ficheiros de recursos e ligar estaticamente às bibliotecas para a maioria das imposições de políticas. As funcionalidades avançadas de MAM do Intune são impostas através de APIs.
 Este guia irá abranger o seguinte quando utilizar quando integrar o SDK da Aplicação Intune para iOS:
@@ -42,13 +37,13 @@ Este guia irá abranger o seguinte quando utilizar quando integrar o SDK da Apli
 
 * **Cabeçalhos**: expõe as APIs do SDK da Aplicação Intune. Se utilizar uma API, terá de incluir o ficheiro de cabeçalho que contém a API. 
 
-# Como funciona o SDK da Aplicação Intune
+## Como funciona o SDK da Aplicação Intune
 
 O objetivo do SDK da Aplicação Intune para iOS consiste em adicionar capacidades de gestão para aplicações iOS com alterações de código mínimas. Reduzir a quantidade de alterações de código diminui o tempo de comercialização, aumentando a consistência e a estabilidade da sua aplicação móvel. 
 
 A aplicação tem de ser ligada à biblioteca estática e incluir o pacote de recursos. O ficheiro MAMDebugSettings.plist é opcional e pode ser incluído no pacote para simular políticas de MAM a serem aplicadas à aplicação sem necessidade de implementar a aplicação através do Microsoft Intune. Além das compilações de depuração, as políticas no ficheiro MAMDebugSettings.plist podem ser aplicadas transferindo o ficheiro MAMDebugSettings.plist para o diretório Documentos da aplicação através da partilha de ficheiros do iTunes.
 
-# Criar a sua aplicação com o SDK da Aplicação Intune 
+## Criar a sua aplicação com o SDK da Aplicação Intune 
 
 Conclua os passos abaixo para ativar o SDK da Aplicação Intune:
 
@@ -138,7 +133,7 @@ Conclua os passos abaixo para ativar o SDK da Aplicação Intune:
 
 Se a sua aplicação móvel utilizar a ADAL para a sua própria autenticação, consulte a secção em "Configurar Definições da Biblioteca de Autenticação do Azure Directory" localizada aqui.
 
-## Telemetria 
+### Telemetria 
 
 Por predefinição, o SDK da Aplicação Intune para iOS regista dados telemétricos de eventos de utilização, os quais são enviados para o Microsoft Intune.
 
@@ -160,15 +155,15 @@ São necessários os passos seguintes se a aplicação utilizar a ADAL para aute
 
 2. No ficheiro `Info.plist`do projeto, no dicionário `IntuneMAMSettings` com o nome de chave `ADALRedirectUri`, especifique o URI de Redirecionamento a utilizar nas chamadas da ADAL. Também poderá ter de especificar o `ADALRedirectScheme` consoante o formato do URI de Redirecionamento da sua aplicação.
 
-## Criar Extensões (opcional) 
+### Criar Extensões (opcional) 
 
 Quando criar extensões, siga as mesmas instruções para criar a sua aplicação móvel conforme descrito na secção em "Criar a sua aplicação com o SDK da Aplicação Intune" localizada aqui. Além disso, atualize o ficheiro info.plist de cada extensão para adicionar uma chave ContainingAppBundleId no dicionário IntuneMAMSettings com o valor do ID do pacote da aplicação.
 
-## Criar Estruturas (opcional)
+### Criar Estruturas (opcional)
 
 Com as alterações mais recentes ao SDK da Aplicação Intune, não tem de compilar a sua aplicação móvel com sinalizadores de linker específicos se esta contiver estruturas de aplicações incorporadas. 
 
-## Ficheiros de Imagem no Arranque (opcional)
+### Ficheiros de Imagem no Arranque (opcional)
 
 Quando uma aplicação ativada para MAM for gerida ativamente pelo Microsoft Intune, o SDK da Aplicação Intune apresentará um ecrã de arranque na iniciação da aplicação para indicar ao utilizador que a aplicação é gerida. Opcionalmente, pode adicionar ficheiros de imagem para serem apresentados na página de arranque "Gerido pela sua empresa". Utilize as seguintes orientações para imagens:
 
@@ -184,7 +179,7 @@ Quando uma aplicação ativada para MAM for gerida ativamente pelo Microsoft Int
 
 **Nota**: este ecrã é acionado pela iniciação, mas pode ser dispensado permanentemente pelo utilizador.
 
-# Configurar as Definições do SDK da Aplicação Intune
+## Configurar as Definições do SDK da Aplicação Intune
 
 O dicionário `IntuneMAMSettings` contido no ficheiro `info.plist` da aplicação é utilizado para configurar o SDK da Aplicação Intune. Segue-se uma lista de todas as definições suportadas. 
 
@@ -202,7 +197,7 @@ SplashIconFile <br>SplashIconFile~ipad  | Cadeia  | Especifica o ficheiro de íc
 SplashDuration | Número | Quantidade mínima de tempo em segundos durante o qual será apresentado o Ecrã Inicial do Intune na iniciação da aplicação. Assume a predefinição de 1,5. | Opcional.
 ADALLogOverrideDisabled | Booleano  | Especifica se o SDK encaminhará todos os registos da ADAL (incluindo chamadas da ADAL a partir da aplicação, caso existam) para o seu próprio ficheiro de registo. Assume a predefinição de NO. Definido como YES se a aplicação pretender definir a sua própria chamada de retorno de registo da ADAL. | Opcional.
 
-# Cabeçalhos do SDK da Aplicação Intune 
+## Cabeçalhos do SDK da Aplicação Intune 
 
 Os Cabeçalhos seguintes incluem as chamadas de função da API necessárias para ativar a funcionalidade do SDK da Aplicação Intune. 
 
@@ -214,7 +209,7 @@ Os Cabeçalhos seguintes incluem as chamadas de função da API necessárias par
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# Depurar o SDK da Aplicação Intune em Xcode
+## Depurar o SDK da Aplicação Intune em Xcode
 
 Antes de testar a sua aplicação ativada para MAM com o Microsoft Intune, pode utilizar `Settings.bundle` enquanto estiver no Xcode. Isto permitirá definir políticas de teste sem necessidade de uma ligação ao Intune. Para ativá-la:
 
@@ -232,9 +227,10 @@ Antes de testar a sua aplicação ativada para MAM com o Microsoft Intune, pode 
 
 * Inicie a aplicação (dentro ou fora do Xcode). Verifique se o PIN funciona conforme esperado.
 
-> [!NOTE] Pode agora utilizar "Definições -> Nome da Aplicação -> Ativar Políticas de Teste" para ativar e acionar definições.
+> [!NOTE]
+> Pode agora utilizar "Definições -> Nome da Aplicação -> Ativar Políticas de Teste" para ativar e acionar definições.
 
-# Melhores Práticas Recomendadas para iOS
+## Melhores Práticas Recomendadas para iOS
 
 Seguem-se algumas melhores práticas recomendadas para quando desenvolver para iOS:
 
@@ -244,6 +240,7 @@ Se o Xcode tiver problemas a localizar `libIntuneMAM.a`, pode corrigir o problem
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Aug16_HO5-->
 
 

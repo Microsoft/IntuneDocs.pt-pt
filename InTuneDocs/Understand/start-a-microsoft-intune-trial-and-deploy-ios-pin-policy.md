@@ -1,9 +1,9 @@
 ---
-title: "Iniciar uma versão de avaliação do Microsoft Intune e implementar a política de PIN para iOS | Microsoft Intune"
-description: 
+title: "Iniciar uma versão de avaliação do Intune e implementar a política de PIN para iOS | Microsoft Intune"
+description: "Implementar a política de PIN para iOS no Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: a4c38659c87c651678ee30134d50fb74f35fc388
 
 
 ---
@@ -285,6 +285,6 @@ Estas instruções passo a passo ajudam-no a configurar uma avaliação experime
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

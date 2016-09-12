@@ -1,9 +1,9 @@
 ---
 title: "Restringir o acesso ao e-mail e aos serviços do O365 | Microsoft Intune"
-description: 
+description: "Este tópico descreve como pode utilizar o acesso condicional para permitir que apenas dispositivos em conformidade acedam ao e-mail e aos dados da empresa no SharePoint online e noutros serviços."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 536d34e618efdc78b3103a3b1b36f13fb784781c
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # Restringir o acesso ao e-mail, ao O365 e outros serviços com o Microsoft Intune
 Pode restringir o acesso ao e-mail da empresa e aos serviços do O365 através do acesso condicional do Intune. A capacidade de acesso condicional do Intune permite assegurar que o acesso ao e-mail da empresa e aos serviços do O365 é restringido aos dispositivos que estão em conformidade com as regras que definir.
 ## Como funciona o acesso condicional?
-As definições de política de conformidade são utilizadas para avaliar a conformidade do dispositivo. A política de acesso condicional utiliza a avaliação para restringir ou permitir o acesso a um serviço específico. Quando uma política de acesso condicional é utilizada em combinação com uma política de conformidade, apenas os dispositivos conformes terão permissão para aceder ao serviço.
+As definições de política de conformidade são utilizadas para avaliar a conformidade do dispositivo. A política de acesso condicional utiliza a avaliação para restringir ou permitir o acesso a um serviço específico. Quando uma política de acesso condicional é utilizada em combinação com uma política de conformidade, apenas os dispositivos conformes terão permissão para aceder ao serviço. A política de conformidade e a política de acesso condicional são implementadas no utilizador. Qualquer dispositivo que o utilizador utilize para aceder aos serviços é analisado relativamente à conformidade com as políticas.
 
-Tenha em atenção que o utilizador que está a utilizar o dispositivo também tem de ter uma política de conformidade implementada para que o dispositivo seja avaliado em termos de conformidade.
+Tenha em atenção que o utilizador que está a utilizar o dispositivo tem de ter uma política de conformidade implementada para que o dispositivo seja avaliado em termos de conformidade.
 Se não estiver implementada nenhuma política de conformidade no utilizador, o dispositivo é tratado como conforme e não serão aplicadas restrições de acesso.
 
 Quando os dispositivos não cumprem as condições definidas nas políticas, o final utilizador é orientado através do processo de inscrição do dispositivo e da correção do problema que impede o dispositivo de ser conforme.
@@ -54,16 +55,16 @@ Ao contrário de outras políticas do Intune, não implementa políticas de aces
 
 2.  Crie uma política de acesso condicional para um dos seguintes:
 > [!div class="op_single_selector"]
-  - [[!div class="op_single_selector"]](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange Online](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange No Local](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange Online Dedicado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Exchange Online Dedicado legado](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o SharePoint Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange No Local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange Online Dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Exchange Online Dedicado legado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Criar uma política de acesso condicional para o Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO5-->
 
 

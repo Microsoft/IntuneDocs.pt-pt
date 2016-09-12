@@ -1,26 +1,27 @@
 ---
-title: O que acontece ao repor o seu dispositivo utilizando o Portal da Empresa? | Microsoft Intune
+title: O que acontece se repuser o seu dispositivo Android com o Portal da Empresa? | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/25/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 27d49e53fdd23b82fbbb94d2f285978cb3b52b16
 
 
 ---
 
 
-# O que acontece ao repor o seu dispositivo utilizando o Portal da Empresa?
+# O que acontece se repuser o seu dispositivo Android com o Portal da Empresa?
 
 Quando utiliza o Portal da Empresa para repor o seu dispositivo Android, todas as aplicações, definições e dados pessoais no dispositivo serão eliminados, repondo o dispositivo para as predefinições de fábrica.
 
@@ -32,10 +33,10 @@ Se tiver um dispositivo Samsung Knox, pode fazer uma "eliminação seletiva", es
 
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+<!--HONumber=Aug16_HO5-->
 
 

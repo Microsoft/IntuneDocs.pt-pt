@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Proteger dados de aplicações através de políticas de gestão de aplicações móveis | Microsoft Intune
-description:
-keywords:
+title: "Proteger dados das aplicações através de políticas de MAM | Microsoft Intune"
+description: "Este tópico explica de que forma é que as políticas de gestão de aplicações móveis podem ajudar a proteger os dados empresariais, a evitar perda de dados e a manter as informações pessoais e de trabalho separadas."
+keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+
 
 ---
 
@@ -30,20 +24,21 @@ ms.suite: ems
 ## Como pode proteger dados de aplicações
 Os seus empregados utilizam dispositivos móveis para tarefas pessoais e profissionais.  Se, por um lado, quer garantir que os seus empregados são produtivos, por outro, também quer evitar a perda de dados, intencional e não intencional.  Além disso, quer ter a capacidade de proteger os dados da empresa acedidos através de dispositivos, mesmo quando não são geridos por si.
 
-Pode utilizar políticas de gestão de aplicações móveis (MAM) do Intune para ajudar a proteger os dados da sua empresa. Uma vez que as políticas de MAM do Intune podem ser utilizadas independentemente de qualquer solução de gestão de dispositivos móveis (MDM), pode utilizá-las para proteger os dados da sua empresa ao inscrever ou não os dispositivos numa solução de gestão de dispositivos. Ao implementar **políticas ao nível da aplicação**, pode restringir o acesso aos recursos da empresa e manter os dados sob a alçada do seu departamento de TI.
+Pode utilizar políticas de gestão de aplicações móveis (MAM) do Intune para ajudar a proteger os dados da sua empresa. Uma vez que as políticas de MAM do Intune podem ser utilizadas **independentemente de qualquer solução de gestão de dispositivos móveis (MDM)**, pode utilizá-las para proteger os dados da sua empresa ao inscrever ou não os dispositivos numa solução de gestão de dispositivos. Ao implementar **políticas ao nível da aplicação**, pode restringir o acesso aos recursos da empresa e manter os dados sob a alçada do seu departamento de TI.
 
-As políticas de MAM suportam aplicações executadas em:
+As políticas de MAM podem ser configuradas para aplicações executadas em dispositivos que estão:
 
--   **Dispositivos que são geridos e estão inscritos** no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Os dispositivos desta categoria são, normalmente, dispositivos pertencentes à empresa.
+- **Inscritos no Microsoft Intune:** os dispositivos desta categoria pertencem, normalmente, à empresa.
 
-  > [!IMPORTANT]
-  > Se estiver a utilizar o Intune para gerir os seus dispositivos iOS e Android, pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. As políticas de MAM não são suportadas para aplicações que se ligam aos serviços do SharePoint ou do Exchange no local.
+-   **Inscritos numa solução de gestão de dispositivos móveis (MDM) de terceiros:** os dispositivos desta categoria pertencem, normalmente, à empresa.
 
--   **Dispositivos que são geridos e estão inscritos numa solução de gestão de dispositivos móveis de terceiros**.   Os dispositivos desta categoria são, normalmente, dispositivos pertencentes à empresa.
+  > [!NOTE]
+  > As políticas de gestão de aplicações móveis não devem ser utilizadas com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
 
-  > [!NOTE] As políticas de gestão de aplicações móveis não devem ser utilizadas com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
+-   **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** os dispositivos desta categoria pertencem, normalmente, aos empregados e não são geridos ou não estão inscritos no Intune ou noutras soluções de MDM de terceiros.
 
--   **Dispositivos que não são geridos**.  Os dispositivos desta categoria são, normalmente, dispositivos pertencentes aos empregados, que não são geridos ou inscritos no Intune ou em outras soluções MDM.
+> [!IMPORTANT]
+> Pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. As políticas de MAM não são suportadas para aplicações que se ligam aos serviços Exchange no local, ao Skype para Empresas nem ao SharePoint.
 
 **Os vantagens importantes da utilização de políticas de MAM são:**
 
@@ -137,6 +132,7 @@ Todas as aplicações móveis do Office suportam várias identidades.
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO5-->
 
 

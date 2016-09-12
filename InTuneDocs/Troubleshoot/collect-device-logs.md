@@ -3,25 +3,25 @@ title: Recolher registos de dispositivos | Microsoft Intune
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 06/01/2016
+manager: angrobe
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac5c66f57194a84580aa495a58e5281683aa1cca
-ms.openlocfilehash: 4fc08fcea6cea897b9ddc3d0c00f2d83069f639d
+ms.sourcegitcommit: d3233346702cf6de968abb251e885dc208d7720c
+ms.openlocfilehash: 183888119325568c857240a038740898a630a696
 
 
 ---
 
 # Registos de dispositivos
 
-Como parte dos seus esforços de resolução de problemas, poderá pretender recolher registos de dispositivos de utilizador. As instruções para recolher esses registos são aqui descritas. Normalmente, poderá necessitar de aceder ao dispositivo ou pedir ao utilizador que recolha os registos e os envie para si. 
+Como parte dos seus esforços de resolução de problemas, poderá pretender recolher registos de dispositivos de utilizador. As instruções para recolher esses registos são aqui descritas. Normalmente, poderá necessitar de aceder ao dispositivo ou pedir ao utilizador que recolha os registos e os envie para si.
 
 ### Localização de registo Android
 Os registos Android estão localizados em *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. O utilizador pode também enviar ficheiros de registo por e-mail, conforme descrito em [Enviar registos de dados de diagnóstico de dispositivos Android ao administrador de TI por e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android).
@@ -46,6 +46,6 @@ Para o Portal da Empresa do Windows, os registos estão localizados em *%localap
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

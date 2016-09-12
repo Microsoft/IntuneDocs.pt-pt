@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+translationtype: Human Translation
+ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
+ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 ---
@@ -43,7 +44,7 @@ Se tiver decidido impor imediatamente as políticas de acesso condicional sem um
 
 ## Inscrever dispositivos no Intune
 
-Os utilizadores agendados para migração devem inscrever-se imediatamente no Intune para recuperarem ou evitarem a perda de acesso aos recursos, ao e-mail e às aplicações da empresa. Se tiver configurado o acesso condicional e os utilizadores tentarem aceder ao e-mail antes de se inscreverem no Intune, o acesso será bloqueado e receberão um e-mail de inscrição. Este e-mail irá orientá-los para inscreverem os respetivos dispositivos no Intune.  Em alternativa, os utilizadores podem inscrever-se no Intune através da aplicação Portal da Empresa do Intune ou nativamente através do sistema operativo Windows 8.1 e Windows 10 Mobile. Consulte o artigo [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md) para obter mais orientação sobre os passos de inscrição por plataforma.
+Os utilizadores agendados para migração devem inscrever-se imediatamente no Intune para recuperarem ou evitarem a perda de acesso aos recursos, ao e-mail e às aplicações da empresa. Se tiver configurado o acesso condicional e os utilizadores tentarem aceder ao e-mail antes de se inscreverem no Intune, o acesso é bloqueado e recebe um e-mail de inscrição. Este e-mail orienta-os para inscreverem os respetivos dispositivos no Intune.  Em alternativa, os utilizadores podem inscrever-se no Intune através da aplicação Portal da Empresa do Intune ou nativamente através do sistema operativo Windows 8.1 e Windows 10 Mobile. Consulte o artigo [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md) para obter mais orientação sobre os passos de inscrição por plataforma.
 
 ## Configurar o acesso condicional do Intune (opcional)
 
@@ -72,6 +73,6 @@ Para obter uma cópia transferível deste guia completo, visite a [TechNet Galle
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

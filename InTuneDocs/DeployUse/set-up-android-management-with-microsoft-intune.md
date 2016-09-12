@@ -1,10 +1,10 @@
 ---
-title: "Configurar a gestão de dispositivos Android com o Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configurar a gestão do Android | Microsoft Intune"
+description: "Ative a gestão de dispositivos móveis (MDM) para Android e dispositivos KNOX com o Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1dc713099c982d6e32c87b814dd3f55b1656eda
-ms.openlocfilehash: 5f65887345c1a650c6d80863e42f447035c789f7
+ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
+ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
 
 
 ---
 
-# Configurar a gestão de dispositivos Android 
+# Configurar a gestão de dispositivos Android
+Para configurar o seu dispositivo Android, veja a ajuda [aqui](../enduser/using-your-android-device-with-intune.md).
+
 Com o Microsoft Intune, pode ativar BYOD ("bring your own device") em dispositivos Android sem ter de fazer tarefas adicionais para a plataforma.
 
 Selecione entre as seguintes opções de plataforma de dispositivo para saber mais:
@@ -41,11 +43,15 @@ Os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação
 3.  **Informar os utilizadores de como obter acesso a recursos de empresa com o portal da empresa**<br>
     Os seus utilizadores terão de saber como inscrever os dispositivos deles e o que esperar quando passarem a ser geridos. [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
+4.  Os seus utilizadores terão de saber como inscrever os dispositivos deles e o que esperar quando passarem a ser geridos.
+  - [O que dizer aos utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Orientações para o utilizador final para dispositivos Windows](../enduser/using-your-android-device-with-intune.md)
+
 ### Consulte também
 [Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

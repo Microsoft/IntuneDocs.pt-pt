@@ -1,10 +1,10 @@
 ---
 title: "Configurar um nome de domínio personalizado | Microsoft Intune"
-description: 
+description: "Descreve o processo de adicionar um nome de domínio personalizado à sua subscrição do Intune"
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
-ms.openlocfilehash: a202f06fef0bc8b7eec730728ec10e5fbf234902
+ms.sourcegitcommit: bf2122afc7f86d81b9d072147b19f75be2a55b51
+ms.openlocfilehash: 63c0b3340a6f69e20c85abf7947c25ce88f5d826
 
 
 ---
@@ -40,6 +40,6 @@ Parabéns! Acabou de concluir o passo 2 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

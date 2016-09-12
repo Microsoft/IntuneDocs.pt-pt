@@ -1,26 +1,27 @@
 ---
-title: "Utilizar aplicações geridas no dispositivo | Microsoft Intune"
+title: "Utilizar aplicações geridas no seu dispositivo Android | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
 
 
 ---
 
 
-# Utilizar aplicações geridas no dispositivo
+# Utilizar aplicações geridas no seu dispositivo Android
 
 As aplicações geridas são as aplicações que o seu administrador de TI pode configurar para ajudar a proteger os dados da empresa que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo Android, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
 
@@ -73,10 +74,9 @@ Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
 Contacte o seu administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

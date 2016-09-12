@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Compreender as operações através de relatórios | Microsoft Intune
-description:
-keywords:
+title: "Compreender as operações através de relatórios | Microsoft Intune"
+description: "Crie e faça a gestão de relatórios sobre software, hardware e licenças de software na sua organização."
+keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 8d5dd37c6e41c6c9bb40b9bff6696583d4215730
+
 
 ---
 
@@ -43,8 +37,9 @@ Os relatórios do Intune fornecem informações sobre o software, o hardware e a
 |**Relatórios de instalação de licenças**|Comparam o software instalado em computadores na sua organização com a sua cobertura de licenças atual de acordo com o Centro de Serviços de Licenciamento em Volume (VLSC). Os filtros incluem:<br /><br />**Todos os contratos** mostra todos os produtos de software licenciados geridos pelo Intune.<br /><br />**Contratos de licenciamento em volume** - Mostra apenas os produtos de software do VLSC.<br /><br />**Outros contratos de licenciamento de software** - Mostra produtos de software que são geridos fora do VLSC.|
 |**Relatórios de Termos e Condições**|Mostra se os utilizadores aceitaram os termos e condições que implementou e que versão aceitaram. É possível especificar até 10 utilizadores cujas aceitações de quaisquer termos e condições que lhes foram implementados são apresentadas ou mostrar o estado de aceitação relativamente a um determinado termo implementado nos mesmos.|
 |**Relatórios de Aplicações Não Compatíveis**|Apresentam informações sobre os utilizadores que têm aplicações instaladas que fazem parte das suas listas de aplicações compatíveis e não compatíveis. Utilize este relatório para encontrar utilizadores e dispositivos não compatíveis com as políticas de aplicações da sua empresa.|
-|**Relatórios de Conformidade de Certificados**|Apresentam os certificados emitidos a utilizadores e dispositivos através de SCEP ou de PKCS #12 (.PFX). Utilize este relatório para localizar certificados que foram emitidos, que expiraram ou que foram revogados.|
-|**Relatórios de Histórico de Dispositivos**|Apresentam um registo histórico das ações de extinção e eliminação. Utilize este relatório para ver quem iniciou ações nos dispositivos anteriormente.|
+|**Relatórios de Conformidade de Certificados**|Mostrar os certificados emitidos a utilizadores e dispositivos através do protocolo SCEP ou PKCS #12 (. PFX). Utilize este relatório para localizar certificados que foram emitidos, que expiraram ou que foram revogados.|
+|**Relatórios de Histórico de Dispositivos**|Apresenta um registo histórico das ações de extinção, e eliminação. Utilize este relatório para ver quem iniciou ações nos dispositivos anteriormente.|
+|**Relatórios do atestado de estado de funcionamento**|Mostra o estado de funcionamento de dispositivos móveis.|
 |**Relatório de Hardware do Mac OS X**|Apresenta detalhes de hardware para todos os dispositivos Mac OS X inscritos nos grupos selecionados. Para obter informações sobre o inventário recolhido a partir destes dispositivos, veja [Understand your devices with inventory in Microsoft Intune (Compreender os seus dispositivos com o inventário no Microsoft Intune)](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Relatório de Software do Mac OS X**|Apresenta o software instalado em todos os dispositivos Mac OS X nos grupos selecionados. Este relatório lista o nome do software (como ID de pacote), o nome da versão abreviada (ou amigável), a versão e o número de dispositivos com o software instalado.|
 
@@ -74,6 +69,6 @@ Os relatórios suportam também as seguintes ações:
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

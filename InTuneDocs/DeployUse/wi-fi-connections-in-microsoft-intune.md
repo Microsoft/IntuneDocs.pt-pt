@@ -1,10 +1,10 @@
 ---
 title: "Ligações Wi-Fi | Microsoft Intune"
-description: 
+description: "Utilize Perfis de VPN para implementar definições da VPN em utilizadores e dispositivos na sua organização."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
-ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 271d2be675ab808365cd6869c69d386058f76ae8
 
 
 ---
@@ -125,8 +125,8 @@ Utilize a **Política de Importação de Wi-Fi do Windows** para importar um con
 
 2.  Configure uma política do tipo **Windows** &gt; **Política de Importação Wi-Fi (Windows 8.1 e posterior)**.
 
-    Esta política pode ser aplicada a dispositivos Windows 8.1 e Windows 10 Desktop e Mobile. 
-    
+    Esta política pode ser aplicada a dispositivos Windows 8.1 e Windows 10 Desktop e Mobile.
+
     Só pode criar e implementar uma política de importação de Wi-Fi do Windows *personalizada*. As definições recomendadas não estão disponíveis.
 
 3.  Especifique os seguintes valores gerais para a Política de Importação de Wi-Fi do Windows:
@@ -166,6 +166,6 @@ Saiba como criar um perfil Wi-Fi com uma chave pré-partilhada em [Perfil Wi-Fi 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
