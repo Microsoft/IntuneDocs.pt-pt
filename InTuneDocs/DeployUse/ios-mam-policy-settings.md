@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Definições de políticas de MAM para iOS | Microsoft Intune
-description:
-keywords:
+title: "Definições de políticas de MAM para iOS | Microsoft Intune"
+description: "Este tópico descreve as definições da política de gestão de aplicações móveis para dispositivos iOS."
+keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+
 
 ---
 
@@ -43,6 +37,8 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
   - **Nenhuma**: não permite a transferência de dados para nenhuma aplicação, incluindo outras aplicações geridas por políticas.
 
   Além disso, se definir esta opção como **Aplicações Geridas por Políticas** ou **Nenhuma**, a funcionalidade do iOS 9 que permite que o Spotlight Search procure dados dentro de aplicações será bloqueada.
+
+  **Esta definição não controla a utilização da funcionalidade Abrir Em nos dispositivos móveis. Para gerir Abrir Em, clique [aqui](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Valor predefinido = Aplicações geridas por políticas**
 
@@ -83,7 +79,7 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
   Quando ativa esta definição, o utilizador final tem de configurar e utilizar um PIN para aceder ao respetivo dispositivo.  Se não existir PIN, as aplicações não serão iniciadas e será pedido ao utilizador final para definir um PIN com uma mensagem "A sua empresa requer que ative primeiro um PIN do dispositivo para aceder a esta aplicação".
 
   **Valor predefinido = A opção de encriptação não está selecionada.**
-- **ContactSyncDisabled:**  Escolha **Sim** para impedir que as informações de contacto sejam sincronizadas com a aplicação do livro de endereços nativo no dispositivo. Se escolher **Não**, a aplicação guardará as informações de contacto na aplicação do livro de endereços nativo no dispositivo.
+- **Desativar a sincronização de contactos:**  escolha **Sim** para impedir que as informações de contacto sejam sincronizadas para a aplicação do livro de endereços nativos no dispositivo. Se escolher **Não**, a aplicação guardará as informações de contacto na aplicação do livro de endereços nativo no dispositivo.
 
   Quando efetuar uma eliminação seletiva para remover os dados da empresa, os contactos sincronizados diretamente a partir da aplicação com o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, apenas é aplicável à aplicação **Microsoft Outlook**.
 
@@ -117,6 +113,7 @@ Em dispositivos iOS, pode permitir ao utilizador identificar-se a si próprio at
   **Valor predefinido = 90 dias**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO5-->
 
 

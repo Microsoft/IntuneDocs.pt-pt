@@ -1,20 +1,20 @@
 ---
 title: "Descrição do Serviço | Microsoft Intune"
-description: 
+description: "O Intune é um serviço baseado na nuvem que o ajuda a gerir PCs Windows e dispositivos móveis iOS, Mac OS X, Android e Windows."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
-ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: c13366ea7f42272e6fc3d606cb8dbe0ed1c45fe4
 
 
 ---
@@ -34,7 +34,7 @@ Para obter uma lista de definições que pode configurar nos seus dispositivos m
 
 -   [Funcionalidades de gestão de dispositivos móveis no Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [Definições Gerais para Dispositivos Móveis no Configuration Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [Definições Gerais para Dispositivos Móveis no Configuration Manager](https://technet.microsoft.com/library/dn376523.aspx)
 
 Para obter informações sobre o System Center 2012 R2 Configuration Manager, consulte [Biblioteca de Documentação do System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
 
@@ -45,9 +45,10 @@ Utilize as informações deste tópico para o ajudar a compreender a frequência
 
 Para saber mais sobre as alterações no serviço Intune, consulte [Novidades do Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). O [Blogue do Microsoft Intune](http://blogs.technet.com/b/microsoftintune/) também descreve as alterações no serviço e fornece sugestões úteis para que obtenha o máximo partido do Intune.
 
-As atualizações de serviço importantes também lhe serão comunicadas no Centro de Mensagens do [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel.
+As atualizações de serviço importantes também lhe serão comunicadas no Centro de Mensagens do [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel.
 
-> [!NOTE] Pode monitorizar o estado de funcionamento do serviço do Intune no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo.  
+> [!NOTE]
+> Pode monitorizar o estado de funcionamento do serviço do Intune no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo.  
 
 Seguem-se os tipos de notificações que a Microsoft fornece sobre o serviço Intune:
 -   Para ajudá-lo a planear as alterações do serviço, notificamo-lo pelo menos 30 a 90 dias antes da atualização de serviço, consoante o impacto da alteração. Isto irá acontecer através dos canais de comunicação no produto, como alertas do quadro. Estas alterações podem incluir:
@@ -82,6 +83,6 @@ Utilize estes recursos para obter mais informações sobre o Intune:
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

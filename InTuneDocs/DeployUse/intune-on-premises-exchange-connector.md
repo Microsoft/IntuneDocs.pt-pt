@@ -1,19 +1,20 @@
 ---
-title: Instalar o Exchange Connector do Microsoft Intune para o Exchange no local | Microsoft Intune
-description: 
+title: Exchange Connector para EAS no local | Microsoft Intune
+description: "Utilize a ferramenta Conector para permitir a comunicação entre a consola de administração do Intune e o Exchange Server no local na MDM do Exchange ActiveSync."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 # Instalar o Exchange Connector no local do Intune
 
 
-Para configurar uma ligação que permite a comunicação entre o Microsoft Intune e o Exchange Server que aloja as caixas de correio dos dispositivos móveis, tem de transferir e configurar a ferramenta Conector No Local na consola do administrador do Intune.
+Para configurar uma ligação que permite a comunicação entre o Microsoft Intune e o Exchange Server que aloja as caixas de correio dos dispositivos móveis, tem de transferir e configurar a ferramenta Conector No Local na consola do administrador do Intune. O Intune apenas suporta uma ligação de conector do Exchange de qualquer tipo por subscrição.
 
 ## Requisitos do Conector No Local
 A tabela seguinte descreve os requisitos do computador onde irá instalar o Exchange Connector no local.
@@ -29,14 +30,13 @@ A tabela seguinte descreve os requisitos do computador onde irá instalar o Exch
 |Requisito|Mais informações|
 |---------------|--------------------|
 |Sistemas operativos|O Intune suporta o Exchange Connector no local num computador com qualquer edição do Windows Server 2008 SP2 64 bits, Windows Server 2008 R2, Windows Server 2012 ou Windows Server 2012 R2.<br /><br />O conector não é suportado em nenhuma instalação Server Core.|
-|Versão do Microsoft Exchange|O Conector no local requer o Microsoft Exchange 2010 SP1 ou posterior.|
+|Versão do Microsoft Exchange|Ou o Conector no local requer o Microsoft Exchange 2010 SP1 ou posterior, ou o Exchange Online Dedicado em lagado. Para determinar se o ambiente dedicado do Exchange Online está na configuração **nova** ou **legada**,  contacte o seu gestor de conta.|
 |Autoridade de gestão de dispositivos móveis| [Definir o Intune como a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Hardware|O computador onde vai instalar o conector requer uma CPU de 1,6 GHz com 2 GB de ram e, pelo menos, 10 GB de espaço livre no disco no hardware.|
 |Sincronização do Active Directory|Antes de poder utilizar qualquer um dos Conectores para ligar o Intune ao seu Exchange Server, tem de [configurar a sincronização do Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), para que os seus utilizadores e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
 |Software adicional|O computador que aloja o conector tem de ter uma instalação completa do Microsoft .NET Framework 4 e do Windows PowerShell 2.0.|
 |Rede|O computador em que instalar o conector tem de estar num domínio que tenha uma relação de fidedignidade com o domínio que aloja o seu Exchange Server.<br /><br />O computador requer configurações que lhe permitam aceder ao serviço Intune através de firewalls e servidores proxy pelas Portas 80 e 443. Os domínios utilizados pelo Intune incluem manage.microsoft.com, &#42;manage.microsoft.com e &#42;.manage.microsoft.com.|
 |Exchange alojado configurado e em execução|Consulte [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) para obter mais informações. |
-|Definir o Intune como a autoridade de gestão de dispositivos móveis|[Defina o Intune como a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Requisitos de cmdlets do Exchange
 
@@ -58,16 +58,14 @@ Tem de criar uma conta de utilizador do Active Directory que é utilizada pelo E
 
 ## Transferir o pacote de instalação de software do Exchange Connector no local
 
-1. Num sistema operativo suportado para o Exchange Connector no local, abra a [consola de administração do Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) com uma conta de utilizador que seja administrador no inquilino do Exchange com uma licença para utilizar o Exchange Server.
+1. Num sistema operativo Windows Server suportado para o Exchange Connector no local, abra a [consola de administração do Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) com uma conta de utilizador que seja administrador no inquilino do Exchange com uma licença para utilizar o Exchange Server.
 ![Abrir Configurar a Ligação ao Exchange](../media/ExchangeConnector.gif)
 
-2.  No painel de atalhos da área de trabalho, escolha **ADMIN**.
+2.  No painel de atalhos da área de trabalho, escolha **Administração**, escolha **Gestão de Dispositivos Móveis** > **Microsoft Exchange** e escolha **Configurar Ligação ao Exchange**.
 
-3.  No painel de navegação, em **Gestão de Dispositivos Móveis**, expanda **Microsoft Exchange** e, em seguida, escolha **Configurar a Ligação ao Exchange**.
+3.  Na página **Configurar a Ligação ao Exchange**, escolha **Transferir o Conector No Local**.
 
-4.  Na página **Configurar a Ligação ao Exchange**, escolha **Transferir o Conector No Local**.
-
-5.  O Exchange Connector no local encontra-se numa pasta comprimida (.zip) que pode ser aberta ou guardada. Na caixa de diálogo **Transferência de Ficheiros**, escolha **Guardar**, para armazenar a pasta comprimida numa localização segura.
+4.  O Exchange Connector no local encontra-se numa pasta comprimida (.zip) que pode ser aberta ou guardada. Na caixa de diálogo **Transferência de Ficheiros**, escolha **Guardar**, para armazenar a pasta comprimida numa localização segura.
 
 > [!IMPORTANT]
 > Não mude o nome nem mova os ficheiros dentro da pasta do Exchange Connector no local. Mover ou mudar o nome do conteúdo da pasta irá interromper a instalação.
@@ -133,6 +131,6 @@ Também pode ver a data e hora da última tentativa de sincronização efetuada 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

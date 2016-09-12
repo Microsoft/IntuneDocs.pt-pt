@@ -3,16 +3,17 @@ title: "Definir ou alterar o código de acesso | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 5/25/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: cb508a92db99533502914f1b5dba69b956838d1e
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: ca7c8d3f87c90b5f586af6b43d214edb3b99ce4a
 
 Se o seu dispositivo iOS não estiver em conformidade com a política de código de acesso do administrador de TI, é apresentada uma mensagem que descreve resumidamente o problema e explica o que precisa de fazer para que o código de acesso cumpra os requisitos.
 
-O administrador de TI pode definir mais do que um requisito de código de acesso. Por exemplo, o código de acesso pode ter um determinado número de carateres e poderá ter de ser uma combinação de números e letras, etc. Uma vez que pode ser definido mais do que um requisito, estas instruções só podem explicar como definir ou alterar o código de acesso. Não explicam cada combinação possível de requisitos. 
+O administrador de TI pode definir mais do que um requisito de código de acesso. Por exemplo, o código de acesso pode ter um determinado número de carateres e poderá ter de ser uma combinação de números e letras, etc. Uma vez que pode ser definido mais do que um requisito, estas instruções só podem explicar como definir ou alterar o código de acesso. Não explicam cada combinação possível de requisitos.
 
 Se tiver problemas ao definir um código de acesso que cumpra todos os requisitos de código de acesso, contacte o administrador de TI para obter ajuda.
 
@@ -40,10 +41,9 @@ Se tiver problemas ao definir um código de acesso que cumpra todos os requisito
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

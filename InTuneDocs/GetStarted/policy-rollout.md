@@ -1,10 +1,10 @@
 ---
 title: "Implementação de políticas | Microsoft Intune"
-description: 
+description: "Recomendações para uma implementação faseada de política no Microsoft Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 0c23fdd5f5e6bc1b50dda56fe2135e8cc24b5e26
 
 
 ---
@@ -97,6 +97,6 @@ Durante o piloto, irá implementar a política num pequeno grupo de utilizadores
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

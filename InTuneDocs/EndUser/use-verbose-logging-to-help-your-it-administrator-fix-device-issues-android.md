@@ -3,18 +3,19 @@ title: Utilizar o Registo Verboso para ajudar o administrador de TI a corrigir p
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 9089943b8e86b298e0182483a5f98cf4d74efd63
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 9f430cb1a64d982083eb9fc3c467aa51c255455c
 
 
 ---
@@ -28,10 +29,9 @@ Para ativar ou desativar o **Registo Verboso**, inicie sessão na aplicação Po
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

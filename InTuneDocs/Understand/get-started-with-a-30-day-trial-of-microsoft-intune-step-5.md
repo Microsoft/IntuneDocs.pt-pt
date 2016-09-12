@@ -1,10 +1,10 @@
 ---
 title: "Inscrever dispositivos móveis de avaliação | Microsoft Intune"
-description: 
+description: "Como inscrever dispositivos móveis e instalar uma aplicação quando se inscreve numa avaliação gratuita de 30 dias do Intune"
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
-ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
 
 
 ---
@@ -69,6 +69,6 @@ Parabéns! Acabou de concluir o passo 5 das instruções da *avaliação do Micr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

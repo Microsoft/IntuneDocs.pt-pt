@@ -1,10 +1,10 @@
 ---
-title: "Anular a inscrição do dispositivo no Intune | Microsoft Intune"
-description: 
+title: "Anular a inscrição do seu dispositivo iOS no Intune | Microsoft Intune"
+description: "Descreve como anular a inscrição de dispositivos iOS no Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 4dbb4d5d7151a6a579e00c2c4034a811f2357774
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
 
 
 ---
 
 
-# Anular a inscrição do dispositivo no Intune
+# Anular a inscrição do seu dispositivo iOS no Intune
 
 Quando termina a inscrição do seu dispositivo iOS no Intune, este não poderá continuar a aceder a recursos de empresa e a ser gerido pelo Intune.
 
-Para anular a inscrição do dispositivo do Intune, utilize estes passos ou veja este [vídeo](http://aka.ms/kfz8j1):
+Para anular a inscrição do dispositivo no Intune, utilize estes passos ou veja este vídeo:
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
+
 
 1.  Na aplicação Portal da Empresa, em **Os Meus Dispositivos**,selecione o dispositivo cuja inscrição pretende anular.
 
@@ -51,10 +54,9 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

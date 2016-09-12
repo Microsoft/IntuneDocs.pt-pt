@@ -15,7 +15,8 @@
 ## [Resolver problemas de atualizações de software](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [Resolver problemas relacionados com perfis de e-mail](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [Resolver problemas de acesso condicional](troubleshoot-conditional-access.md)
+## [Resolução de Problemas do Exchange Conector](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

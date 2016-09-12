@@ -3,18 +3,19 @@ title: "Instalar e iniciar sessão na aplicação Portal da Empresa do Intune | 
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/04/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: d59ee373d4b5b90442bdf0a282cf37e76c013e44
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: cdfdc621f7ce18f79c4b090035698337174ddcec
 
 
 ---
@@ -36,10 +37,9 @@ O Portal da Empresa é uma aplicação que instala no seu dispositivo iOS para l
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

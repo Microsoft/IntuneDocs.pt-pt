@@ -1,10 +1,10 @@
 ---
 title: "Descrição geral dos ciclos de vida de dispositivos e aplicações | Microsoft Intune"
-description: 
+description: "Descrição geral dos ciclos de vida de dispositivos e aplicações "
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
-ms.openlocfilehash: d1912736361a9fa74a8827be367227336ee800eb
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 686dc048c8a582ea188c5ab742e94328405f3a29
 
 
 ---
@@ -31,6 +31,6 @@ Do mesmo modo, as aplicações com que trabalha têm os seus próprios [ciclos d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

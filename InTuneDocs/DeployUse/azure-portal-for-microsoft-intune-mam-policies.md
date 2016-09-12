@@ -1,10 +1,10 @@
 ---
 title: "Portal do Azure para políticas de MAM | Microsoft Intune"
-description: 
+description: "Crie políticas de gestão de aplicações móveis com o portal do Azure. As políticas de que criar aqui podem ser aplicadas aos dispositivos com ou sem inscrição no Intune."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 1ddb7a30a6f23a3f3d754bd18975c50f32662578
 
 
 ---
@@ -28,8 +28,10 @@ O portal do Azure suporta a criação de políticas de MAM para:
 - Aplicações em execução em dispositivos que **não estão inscritos** em nenhuma solução de MDM.
 - Aplicações em execução em dispositivos que estão **inscritos numa solução de MDM de terceiros**.
 
-Se estiver a utilizar atualmente a **consola de administração do Intune** para gerir os seus dispositivos, pode criar uma política de MAM que suporte aplicações para dispositivos inscritos no Intune, utilizando a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
+
+> Se estiver a utilizar atualmente a consola de administração do Intune para gerir os seus dispositivos, pode criar uma política de MAM que suporte aplicações para dispositivos inscritos no Intune através da [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
 > Poderá não ver todas as definições de política de MAM na consola de administração do Intune. O portal do Azure é a nova consola de administração para a criação de políticas de MAM. Se criar políticas de MAM na consola de administração do Intune e no portal do Azure, a política no portal do Azure é aplicada às aplicações e implementada nos utilizadores.
 
 ## Iniciar sessão no portal do Azure e personalizar a página inicial
@@ -38,13 +40,13 @@ Se estiver a utilizar atualmente a **consola de administração do Intune** para
 
     ![Captura de ecrã da página de início de sessão do portal do Azure](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Depois de iniciar sessão com êxito, verá a página **Dashboard**. A página **Dashboard** inclui um conjunto de mosaicos predefinidos que pode remover e adicionar novos para personalizar a página.
+2.  Depois de iniciar sessão com êxito, verá a página **Dashboard**. A página **Dashboard** pode ser personalizada.
 
     ![Captura de ecrã do dashboard do portal do Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  No menu **Procurar**, localize **Intune**.![ Captura de ecrã do menu Procurar com o Intune realçado](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Clique em **Intune > Gestão de aplicações móveis do Intune > Definições**.
+4.  Escolha **Intune > Gestão de aplicações móveis do Intune > Definições**.
 
     ![Captura de ecrã do painel de gestão de aplicações móveis do Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -59,6 +61,6 @@ Se estiver a utilizar atualmente a **consola de administração do Intune** para
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

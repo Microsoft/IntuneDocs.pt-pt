@@ -1,10 +1,10 @@
 ---
-title: "Contas administrativas, sites e permissões no Microsoft Intune | Microsoft Intune"
-description: 
+title: "Contas administrativas, Web sites e permissões | Microsoft Intune"
+description: administrative accounts permissions websites
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: a8d9cf5d36107c54b97d2b5a5250645dc735a8da
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
 
 
 ---
 
 # Contas administrativas, sites e permissões no Microsoft Intune
 
-Antes de configurar o Microsoft Intune, reveja este tópico e outros requisitos listados em [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md).
+Antes de configurar o Microsoft Intune, reveja este tópico e outros requisitos listados em [O que deve saber antes de iniciar o Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Para administrar o Intune, irá utilizar:
 - Dois tipos de contas de administrador
@@ -94,6 +94,6 @@ Saiba mais sobre como [adicionar utilizadores à sua subscrição](start-with-a-
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

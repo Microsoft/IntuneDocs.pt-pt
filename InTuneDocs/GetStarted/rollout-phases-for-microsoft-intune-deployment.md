@@ -1,10 +1,10 @@
 ---
 title: "Fases de implementação para implementações do Microsoft Intune | Microsoft Intune"
-description: 
+description: "As fases típicas de uma implementação técnica são Âmbito do Projeto, Prova do Conceito, Piloto, Implementação empresarial e Estado de Execução."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: fda1e32c2b1be260c1d2c1b26f2415105d3fc10a
 
 
 ---
@@ -26,11 +26,11 @@ As fases típicas de uma implementação técnica são Âmbito do Projeto, Prova
 -   [Âmbito do projeto](project-scope.md): delineie os seus objetivos, a linha cronológica e as métricas de sucesso, defina os fatores essenciais de preparação organizacional, reúna a equipa do projeto e comece os preparativos iniciais para todas as fases associadas à implementação com êxito do Microsoft Intune na sua organização.
      > [!NOTE]           
        Estes modelos podem ser úteis quando trabalhar no âmbito do projeto:
-        
+
     >- [Intune ou Intune com o modelo de decisão do Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
     >- [Planear o modelo para as aplicações móveis](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
     >- [Modelo de planeamento geral de gestão do dispositivo](https://gallery.technet.microsoft.com/General-device-management-334c3792)
-    
+
 
 -   [Prova de conceito](proof-of-concept.md): testar a implementação técnica e a arquitetura de rede e determinar a capacidade da sua implementação para satisfazer os requisitos da sua empresa. Esta fase inclui uma topologia simples concebida para validar cenários técnicos específicos.  
 
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

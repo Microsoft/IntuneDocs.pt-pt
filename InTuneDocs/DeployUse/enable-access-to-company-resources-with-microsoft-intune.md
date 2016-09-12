@@ -1,10 +1,10 @@
 ---
 title: Ativar o acesso aos recursos da empresa | Microsoft Intune
-description: 
+description: Os perfis de e-mail, de VPN e de Wi-FI funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,26 +12,27 @@ ms.technology:
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 556b9ea5ac5edcc1126dbcc6310ab7dfa917cb56
+translationtype: Human Translation
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
 
 # Ativar o acesso aos recursos da empresa com o Microsoft Intune
-Os perfis de e-mail, de VPN e de Wi-FI do Microsoft Intune funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam para trabalhar com êxito, estejam onde estiverem. Os perfis de certificado ajudam a proteger esse acesso.
+Os perfis de e-mail, VPN e Wi-FI do Microsoft Intune funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam para trabalhar, estejam onde estiverem. Os perfis de certificado ajudam a proteger esse acesso.
 
 ## [Perfis de Wi-Fi](wi-fi-connections-in-microsoft-intune.md) e plataformas suportadas
 
-Implemente definições de rede sem fios aos seus utilizadores. Ao implementar estas definições, estará a minimizar o esforço do utilizador final para se ligar à rede empresarial.
+Implemente definições de rede sem fios aos seus utilizadores. Estas definições facilitam a ligação dos utilizadores à rede empresarial.
 #### Plataformas suportadas
 
 |Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Sim (pode importar um perfil Wi-Fi do Windows)|Sim (pode configurar o OMA-URI) |Sim|Sim|Sim|
+|Sim (pode importar um perfil Wi-Fi do Windows).|Sim (pode configurar o OMA-URI). |Sim|Sim|Sim|
 
 ## [Perfis de VPN](vpn-connections-in-microsoft-intune.md) e plataformas suportadas
-Implemente as definições de Rede Privada Virtual (VPN) nos seus utilizadores. Ao implementar estas definições, estará a minimizar o esforço do utilizador final para se ligar aos recursos na rede da empresa.
+Implemente as definições de rede privada virtual (VPN) nos seus utilizadores. Estas definições tornam mais fácil para os utilizadores ligar aos recursos na rede empresarial.
 
 |Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -55,6 +56,6 @@ Ajuda a proteger o acesso aos recursos da empresa, incluindo redes sem fios e li
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

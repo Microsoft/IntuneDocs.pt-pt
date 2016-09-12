@@ -1,10 +1,10 @@
 ---
 title: Utilizar o dispositivo Android com o Intune | Microsoft Intune
-description: 
+description: "Lista de ligações para tarefas que pode fazer no seu dispositivo móvel Android quando este está inscrito no Intune"
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,7 +22,11 @@ ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
 
 # Utilizar o dispositivo Android com o Intune
 
-Utilize estes passos para tarefas que precisa de executar no seu dispositivo Android quando a sua empresa estiver a utilizar o Microsoft Intune.
+Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: 
+
+- Instalação da aplicação Portal da Empresa e inscrição no Intune 
+- Tarefas de gestão pós-inscrição
+- Resolver problemas de compatibilidade
 
 ## Instalação da aplicação Portal da Empresa e inscrição no Intune
 
@@ -67,9 +71,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que podem s
 
 
 
-
-
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

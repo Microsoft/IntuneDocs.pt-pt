@@ -1,19 +1,20 @@
 ---
 title: "Localizar um nome da família de pacotes (PFN) para VPN por aplicação | Microsoft Intune"
-description: 
+description: "Localize um PFN para que possa configurar uma VPN por aplicação."
 keywords: 
 author: nbigman
-manager:
-- ALIAS
-ms.date: 05/10/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+ms.reviewer: tycast
+ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e32cbcd54220cf36d6770ee16897d27e1d2d71db
-ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
 
 Existem duas formas de localizar um PFN, de modo a que possa configurar uma VPN por aplicação.
 
-## Localizar um PFN para uma aplicação que está instalada num computador Windows 10 
+## Localizar um PFN para uma aplicação que está instalada num computador Windows 10
 
 Se a aplicação com que está a trabalhar já estiver instalada num computador Windows 10, pode utilizar o cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) do PowerShell para obter o PFN.
 
@@ -31,7 +32,8 @@ A sintaxe de Get-AppxPackage é:
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Nota: poderá ter de executar o PowerShell como administrador para obter o PFN
+> [!NOTE]
+Poderá ter de executar o PowerShell como administrador para obter o PFN.
 
 Por exemplo, para obter informações sobre todas as aplicações universais instaladas no computador, utilize `Get-AppxPackage`.
 
@@ -66,14 +68,13 @@ Eis as informações obtidas para o OneNote:
 
 ## Localizar um PFN se a aplicação não estiver instalada num computador
 
-1.  Aceda a https://www.microsoft.com/pt-PT/store/apps
+1.  Aceda a https://www.microsoft.com/pt-PT/store/apps.
 2.  Introduza o nome da aplicação na barra de procura. No nosso exemplo, procure OneNote.
-3.  Clique na ligação para a aplicação. Tenha em atenção que o URL a que acede tem uma série de letras no final. No nosso exemplo, o URL tem este aspeto:
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  Noutro separador, cole o seguinte URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`, substituindo `<app id>` pelo id de aplicação obtido em https://www.microsoft.com/pt-PT/store/apps - a série de letras no final do URL no passo 3. No nosso exemplo, o exemplo do OneNote, teria de colar: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.  Escolha a ligação para a aplicação. Tenha em atenção que o URL tem uma série de letras no final. No nosso exemplo, o URL tem este aspeto: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.  Noutro separador, cole o seguinte URL, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Substitua `<app id>` pelo ID de aplicação obtido em https://www.microsoft.com/pt-PT/store/apps - a série de letras no final do URL no passo 3. No nosso exemplo do OneNote, teria de colar: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-No Edge, são apresentadas as informações que pretende; no Internet Explorer, clique em **Abrir** para ver as informações. O valor de PFN é atribuído na primeira linha. Eis o aspeto dos resultados para o nosso exemplo:
- 
+O Microsoft Edge mostra as informações que pretende; no Internet Explorer, escolha **Abrir** para ver as informações. O valor de PFN é atribuído na primeira linha. Seguem-se os resultados do nosso exemplo:
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -84,7 +85,6 @@ No Edge, são apresentadas as informações que pretende; no Internet Explorer, 
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

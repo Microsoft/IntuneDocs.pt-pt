@@ -1,9 +1,9 @@
 ---
-title: Configurar o acesso ao e-mail para dispositivos iOS com o Microsoft Intune | Microsoft Intune
-description: 
+title: Configurar o acesso ao e-mail para dispositivos iOS | Microsoft Intune
+description: configurar o acesso ao e-mail para dispositivos iOS com o Microsoft Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: f132266939b70e87ce7fb36e42ef8b8c0777d55d
 
 
 ---
@@ -40,7 +40,7 @@ A utilização de um perfil de e-mail torna o acesso ao e-mail automático para 
 Para estas instruções, vamos utilizar o Exchange Server alojado fornecido com uma subscrição de avaliação.
 1. Na consola do Intune, clique em **Política** e, em seguida, clique em **Adicionar Política**.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. Na caixa de diálogo **Criar uma nova política**, expanda **iOS**, selecione **Perfil de E-Mail** e, em seguida, clique em **Criar Política**.
+2. Na caixa de diálogo **Criar uma nova política**, expanda **iOS**, selecione **Perfil de E-Mail** e, em seguida, clique em **Criar Política**.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. Na página de criação da política, introduza um nome para a política, como, por exemplo, **Perfil de e-mail iOS - palavra-passe do utilizador**, e uma descrição. Pode ter vários perfis de e-mail para diferentes tipos de dispositivos e diferentes métodos de autenticação, pelo que pode utilizar o nome para mostrar para que serve o perfil.
 4. Introduza o nome de anfitrião do Exchange. Uma vez que está a utilizar o Exchange Server alojado no Azure, para nome de anfitrião, introduzimos simplesmente: **outlook.office365.com**
@@ -51,21 +51,23 @@ Para estas instruções, vamos utilizar o Exchange Server alojado fornecido com 
 8. Clique em **Guardar Política**.
 9. É apresentada uma caixa de diálogo a perguntar se pretende implementar a política agora. Clique em **Sim**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. Na janela apresentada a seguir, selecione o grupo de utilizadores no qual pretende implementar o perfil de e-mail, clique em **Adicionar** e, em seguida, clique em **OK**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) Depois de clicar em **OK**, a política irá começar a ser aplicada aos dispositivos inscritos passado um minuto ou dois.
+10. Na janela apresentada a seguir, selecione o grupo de utilizadores no qual pretende implementar o perfil de e-mail, clique em **Adicionar** e, em seguida, clique em **OK**.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+Depois de clicar em **OK**, a política irá começar a ser aplicada aos dispositivos inscritos num minuto ou dois.
 
 ## Passos para verificar se o perfil foi aplicado com êxito
 
 Para verificar se o perfil foi aplicado, precisará de acesso a um dos dispositivos no qual implementou o perfil de e-mail.
 1. No dispositivo iOS, abra a aplicação Correio.
-A aplicação irá pedir que introduza o nome de utilizador e a palavra-passe de e-mail do utilizador.
+A aplicação irá pedir que introduza o nome de utilizador e a palavra-passe de e-mail do utilizador.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Introduza o nome de utilizador e a palavra-passe da conta de e-mail do Exchange do utilizador e, em seguida, toque em **OK**.
  A aplicação Correio abre na conta do Exchange e o e-mail começa a ser sincronizado com o dispositivo.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Verifique as definições de conta da aplicação Correio para se certificar de que o nome da conta é o mesmo que introduziu no perfil de e-mail (por exemplo, **E-mail de Contoso**) e se as definições de sincronização estão definidas corretamente.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) Se parecer que o perfil de e-mail não foi aplicado automaticamente ao dispositivo, pode aplicar manualmente a política utilizando a aplicação Portal da Empresa no dispositivo.
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  Se parecer que o perfil de e-mail não foi automaticamente aplicado ao dispositivo, pode aplicar manualmente a política utilizando a aplicação Portal da Empresa no dispositivo.
 1. Abra a aplicação Portal da Empresa.
 2. Toque em **Os Meus Dispositivos**.
 3. Toque no nome do seu dispositivo.
@@ -78,6 +80,6 @@ A aplicação irá pedir que introduza o nome de utilizador e a palavra-passe de
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

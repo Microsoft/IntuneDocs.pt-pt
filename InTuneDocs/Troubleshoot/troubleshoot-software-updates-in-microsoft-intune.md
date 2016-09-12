@@ -1,10 +1,10 @@
 ---
 title: "Resolver problemas de atualizações de software | Microsoft Intune"
-description: 
+description: "Resolva problemas de atualizações de software no Microsoft Intune."
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstackmsft
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4d4197ac1ece3e9abf44ad462d8ec7a807b4b2
-ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
+ms.sourcegitcommit: 906371576609152aaf61e033da5ce60744ddd255
+ms.openlocfilehash: 07e5737b75870319445f5af4d7038916b155d083
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
 # Resolver problemas de atualizações de software no Microsoft Intune
 Utilize as informações nesta secção para obter ajuda para resolver problemas de atualizações de software no Microsoft Intune.
 
-Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
+Se estas informações não resolverem o seu problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
 
 ## Códigos de erro do agente de atualização
 
@@ -244,7 +244,7 @@ A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se n
 **Problema**: poderá encontrar uma situação em que os clientes do Microsoft Intune se deparam com um ou mais dos seguintes sintomas:
 - Param subitamente de reportar na consola de administração do Microsoft Intune.  
 - Registam uma elevada utilização da CPU.
-- As aplicações são instaladas lentamente quando são instaladas através do portal do Intune. 
+- As aplicações são instaladas lentamente quando são instaladas através do portal do Intune.
 - O Microsoft Intune Center aciona o seguinte erro: *Ocorreu um erro ao atualizar o seu computador. Erro encontrado: código 0x800705b4*.
 - O campo de estado na Consola de Administração do Intune > Grupos > Todos os Dispositivos apresenta: *Um ou mais agentes instalados neste computador têm erros. As informações para este computador podem não ser exatas ou atualizadas*.
 
@@ -254,7 +254,7 @@ Este problema pode ocorrer se as atualizações substituídas (atualizações qu
 1. Inicie sessão na [consola de administração do Intune](https://manage.microsoft.com).
 2. Selecione **Atualizações** > **Todas as Atualizações**.
 3. Utilize a opção de filtro na barra de ferramentas superior para filtrar as atualizações substituídas.
-4. Rejeite todas as atualizações substituídas que possam ser aplicadas ao Windows 7 ou a aplicações (por exemplo, o Microsoft Office) que foram instaladas nos clientes afetados. 
+4. Rejeite todas as atualizações substituídas que possam ser aplicadas ao Windows 7 ou a aplicações (por exemplo, o Microsoft Office) que foram instaladas nos clientes afetados.
 5. Reinicie os clientes afetados.
 
 Além disso, se estiver a executar o Windows 7, certifique-se de que tem a seguinte atualização instalada:[3050265 Cliente do Windows Update para o Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
@@ -264,7 +264,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

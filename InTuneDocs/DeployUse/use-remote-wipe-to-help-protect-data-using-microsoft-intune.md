@@ -1,79 +1,37 @@
 ---
 title: "Utilizar a eliminação remota para ajudar a proteger dados | Microsoft Intune"
-description: 
+description: "O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
-ms.reviewer: jeffgilb
+ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune
-Tal como acontece com os dispositivos, a determinada altura, pretende ou precisa de [extinguir aplicações](retire-apps-using-microsoft-intune.md) implementadas em PCs e dispositivos móveis por já não serem necessárias. Pode também pretender remover dados da empresa do dispositivo. Para tal, o Intune fornece as funcionalidades de eliminação completa e eliminação seletiva. Uma vez que os dispositivos móveis podem armazenar dados confidenciais da empresa e conceder acesso a vários recursos da mesma, pode emitir um comando de eliminação remota de dados no dispositivo a partir do Intune em caso de perda ou roubo do mesmo. Além disso, os utilizadores podem emitir um comando de eliminação remota de dados no dispositivo a partir do Intune em dispositivos de propriedade privada inscritos no Intune.
+Se pelo facto de um dispositivo já não ser necessário, estar a ser reaproveitado ou ter sido perdido, pode eliminar as aplicações e os dados dos dispositivos geridos com o Intune. Para tal, o Intune fornece as funcionalidades de eliminação completa e eliminação seletiva. Além disso, os utilizadores podem emitir um comando de eliminação remota de dados no dispositivo a partir do Portal da Empresa do Intune em dispositivos de propriedade privada inscritos no Intune.
 
   > [!NOTE]
-  > Este tópico aborda apenas a eliminação de dispositivos geridos pelo Intune. Também pode utilizar o [portal de pré-visualização do Azure](https://portal.azure.com) para [apagar dados da empresa das aplicações](wipe-managed-company-app-data-with-microsoft-intune.md).
+  > Este tópico aborda apenas a eliminação de dispositivos geridos pela gestão de dispositivos móveis do Intune. Também pode utilizar o [portal de pré-visualização do Azure](https://portal.azure.com) para [apagar dados da empresa das aplicações](wipe-managed-company-app-data-with-microsoft-intune.md). Também pode [extinguir computadores geridos com o software de cliente Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Eliminação completa
 
-
 A **Eliminação completa** restaura as predefinições do dispositivo, removendo todos os dados e definições da empresa e do utilizador. O dispositivo é removido do Intune. A eliminação completa é útil para repor um dispositivo antes de o atribuir a um novo utilizador ou em caso de perda ou roubo do dispositivo.  **Seja cuidadoso com a seleção da eliminação completa. Não é possível recuperar os dados no dispositivo**.
 
-## Eliminação seletiva
 
-A **eliminação seletiva** remove os dados da empresa, incluindo os dados de gestão de aplicações móveis (MAM) onde for aplicável, definições e perfis de e-mail de um dispositivo. A eliminação seletiva mantém os dados pessoais do utilizador no dispositivo. O dispositivo é removido do Intune. As tabelas seguintes descrevem os dados que são removidos e o efeito nos dados que permanecem no dispositivo após uma eliminação seletiva, por plataforma.
-
-**iOS**
-
-|Tipo de dados|iOS|
-|-------------|-------|
-|Aplicações da empresa e dados associados instalados pelo Intune.|As aplicações são desinstaladas. Os dados da aplicação da empresa são removidos.<br /><br />Os dados de aplicações da Microsoft que utilizam a gestão de aplicações móveis são removidos. A aplicação não é removida.|
-|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidas|
-|Definições de perfil de certificado|Certificados removidos e revogados.|
-|Agente de Gestão|O perfil de gestão é removido.|
-|E-mail|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
-|Anulação da associação ao Azure Active Directory (AAD)|Registo do ADD removido|
-|Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
-
-**Android**
-
-|Tipo de dados|Android|Android Samsung KNOX|
-|-------------|-----------|------------------------|
-|Ligações Web|Removidos.|Removidas|
-|Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados|As aplicações e os dados permanecem instalados|
-|Aplicações de linha de negócio não geridas|As aplicações e os dados permanecem instalados|As aplicações são desinstaladas e, como resultado, os dados locais da aplicação são removidos. Não foram removidos dados fora da aplicação (cartão SD, etc.)|
-|Aplicações geridas do Google Play|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados mas não são removidos.|
-|Aplicações de linha empresarial geridas|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados mas não são removidos.|
-|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidas|Removidas|
-|Definições de perfil de certificado|Certificados revogados mas não removidos.|Certificados removidos e revogados.|
-|Agente de Gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
-|E-mail|Os e-mails recebidos pela aplicação Microsoft Outlook para a aplicação Android são removidos.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
-|Anulação da associação ao Azure Active Directory (AAD)|Registo do ADD removido|Registo do ADD removido|
-|Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.|Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
-
-**Windows**
-
-|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|Windows 10|
-|-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicações da empresa e dados associados instalados pelo Intune.|Os ficheiros protegidos pelo EFS terão as respetivas chaves revogadas e o utilizador não poderá abrir os ficheiros.|Não remove aplicações da empresa.|As aplicações instaladas originalmente através do portal da empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas e as chaves de sideload são removidas.|
-|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidas|Removidas|Não suportado|Removidas|
-|Definições de perfil de certificado|Certificados removidos e revogados.|Certificados removidos e revogados.|Não suportado|Certificados removidos e revogados.|
-|E-mail|Remove o e-mail que que tenha o EFS ativado, que inclui a aplicação Correio para e-mail e anexos do Windows.|Não suportado|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|Remove o e-mail que que tenha o EFS ativado, que inclui a aplicação Correio para e-mail e anexos do Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
-|Anulação da associação ao Azure Active Directory (AAD)|Não|Não|Registo do ADD removido|Não aplicável. O Windows 10 não suporta a eliminação seletiva para dispositivos associados ao Azure Active Directory|
+> [!Warning]
+> A eliminação pode fazer com que os dispositivos Windows 10 RTM (ou seja, mais dispositivos anteriores ao Windows 10 versão 1511) com menos de 4 GB de RAM fiquem inacessíveis. Para aceder a um dispositivo Windows 10 que deixou de responder, pode arrancá-lo a partir de uma unidade USB ou com outra solução semelhante.
 
 ### Apagar remotamente um dispositivo a partir da consola do administrador do Intune
 
@@ -103,7 +61,52 @@ A **eliminação seletiva** remove os dados da empresa, incluindo os dados de ge
 
     -   Para efetuar uma **Eliminação completa** que apague todas as aplicações e dados e devolva o dispositivo às predefinições de fábrica, selecione **Apagar o dispositivo antes de o extinguir**. Esta ação aplica-se a todas as plataformas exceto ao Windows 8.1. **Não é possível recuperar os dados removidos por uma eliminação completa**.
 
-A propagação de uma eliminação em todos os tipos de dispositivo demora menos de 15 minutos.
+Desde que o dispositivo esteja ativo e ligado, demora menos de 15 minutos até um comando de eliminação ser propagado em todos os tipos de dispositivo.
+
+## Eliminação seletiva
+
+A **eliminação seletiva** remove os dados da empresa, incluindo os dados de gestão de aplicações móveis (MAM) onde for aplicável, definições e perfis de e-mail de um dispositivo. A eliminação seletiva mantém os dados pessoais do utilizador no dispositivo. O dispositivo é removido do Intune. As tabelas seguintes descrevem os dados que são removidos e o efeito nos dados que permanecem no dispositivo após uma eliminação seletiva, por plataforma.
+
+**iOS**
+
+|Tipo de dados|iOS|
+|-------------|-------|
+|Aplicações da empresa e dados associados instalados pelo Intune.|As aplicações são desinstaladas. Os dados da aplicação da empresa são removidos.<br /><br />Os dados de aplicações da Microsoft que utilizam a gestão de aplicações móveis são removidos. A aplicação não é removida.|
+|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
+|Definições de perfis de Wi-Fi e da VPN|Removidas|
+|Definições de perfil de certificado|Certificados removidos e revogados.|
+|Agente de Gestão|O perfil de gestão é removido.|
+|E-mail|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
+|Anulação da associação ao Azure Active Directory (AAD)|Registo do ADD removido|
+|Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
+
+**Android**
+
+|Tipo de dados|Android|Android Samsung KNOX|
+|-------------|-----------|------------------------|
+|Ligações Web|Removidos.|Removidas|
+|Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados|As aplicações e os dados permanecem instalados|
+|Aplicações de linha de negócio não geridas|As aplicações e os dados permanecem instalados|As aplicações são desinstaladas e, como resultado, os dados locais da aplicação são removidos. Não foram removidos dados fora da aplicação (cartão SD, etc.)|
+|Aplicações geridas do Google Play|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados mas não são removidos.|
+|Aplicações de linha empresarial geridas|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (cartão SD, etc.) permanecem encriptados e inutilizáveis, mas não são removidos.|
+|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
+|Definições de perfis de Wi-Fi e da VPN|Removidas|Removidas|
+|Definições de perfil de certificado|Certificados revogados mas não removidos.|Certificados removidos e revogados.|
+|Agente de Gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
+|E-mail|Os e-mails recebidos pela aplicação Microsoft Outlook para a aplicação Android são removidos.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
+|Anulação da associação ao Azure Active Directory (AAD)|Registo do ADD removido|Registo do ADD removido|
+|Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.|Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
+
+**Windows**
+
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|Windows 10|
+|-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
+|Aplicações da empresa e dados associados instalados pelo Intune.|Os ficheiros protegidos pelo EFS terão as respetivas chaves revogadas e o utilizador não poderá abrir os ficheiros.|Não remove aplicações da empresa.|As aplicações instaladas originalmente através do portal da empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas e as chaves de sideload são removidas.|
+|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
+|Definições de perfis de Wi-Fi e da VPN|Removidas|Removidas|Não suportado|Removidas|
+|Definições de perfil de certificado|Certificados removidos e revogados.|Certificados removidos e revogados.|Não suportado|Certificados removidos e revogados.|
+|E-mail|Remove o e-mail que que tenha o EFS ativado, que inclui a aplicação Correio para e-mail e anexos do Windows.|Não suportado|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|Remove o e-mail que que tenha o EFS ativado, que inclui a aplicação Correio para e-mail e anexos do Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
+|Anulação da associação ao Azure Active Directory (AAD)|Não|Não|Registo do ADD removido|Não aplicável. O Windows 10 não suporta a eliminação seletiva para dispositivos associados ao Azure Active Directory|
 
 ## Apagar conteúdo com o Sistema de Encriptação de Ficheiros (EFS) ativado
 A eliminação seletiva de conteúdo encriptado com o EFS é suportada pelo Windows 8.1 e Windows RT 8.1. As seguintes informações aplicam-se a uma eliminação seletiva de conteúdo com o EFS ativado:
@@ -139,6 +142,6 @@ Para obter um relatório dos dispositivos que foram extintos, apagados ou elimin
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: Portal da Empresa do Microsoft Intune| Microsoft Intune
-description: 
+description: configurar o Portal da Empresa do Intune
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
-ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
 
 
 ---
@@ -28,7 +28,7 @@ O Portal da Empresa do Intune é uma ferramenta que proporciona aos utilizadores
 -   **A aplicação Portal da Empresa**: uma aplicação disponível nos dispositivos que gere com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Saiba mais sobre as aplicações Portal da Empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **O Web site do Portal da Empresa**: um Web site que fornece acesso a partir de [um browser suportado](supported-web-browsers.md). O URL é [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Saiba mais sobre este site em [Utilizar o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website).
+- **Site do Portal da Empresa**: site, acedido a partir de um [browser suportado](supported-web-browsers.md), que permite aos utilizadores finais efetuar a maioria das mesmas tarefas que podem fazer a partir da respetiva aplicação Portal da Empresa específica da plataforma. O URL é [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Saiba mais sobre este site em [Utilizar o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Algumas das tarefas que os utilizadores podem fazer no Portal da Empresa são:
 
@@ -53,6 +53,6 @@ Para que os utilizadores possam aceder ao Portal da Empresa, tem de ser dada uma
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

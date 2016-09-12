@@ -3,18 +3,19 @@ title: "Instalar a aplicação do Portal da Empresa do Microsoft Intune | Micros
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: dca5c066a11fb0363ea7b2e548cde2ec37b731e0
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 557db0b21e70c9d12edcf2d0d5a02b25421bc897
 
 
 ---
@@ -44,10 +45,9 @@ Para inscrever o dispositivo no Intune e aceder aos dados e recursos empresariai
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

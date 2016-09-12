@@ -3,18 +3,19 @@ title: Erro ao avaliar o dispositivo | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 6c28c3d259f0678669117afbc8a897b0b77056bf
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: a497a3e9372a89326f31d6eb869e38200ebe6802
 
 
 ---
@@ -29,7 +30,6 @@ Se o problema persistir, entre em contacto com seu administrador de TI Para enco
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

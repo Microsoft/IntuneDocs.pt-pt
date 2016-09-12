@@ -1,10 +1,10 @@
 ---
 title: "Resolução de problemas de implementação de aplicações | Microsoft Intune"
-description: 
+description: "Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune"
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 05/26/2016
+author: robstackmsft
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,29 +12,25 @@ ms.technology:
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
-ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+translationtype: Human Translation
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Resolução de problemas de implementação de aplicações no Microsoft Intune
-Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune
+Se estiver a ter problemas de implementação e gestão de aplicações com o Intune, comece por aqui. Este tópico contém alguns problemas comuns que poderá encontrar juntamente com as soluções.
 
-Se estas informações não resolverem o seu problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
+## Problemas comuns de implementação de aplicações
 
+### Os utilizadores não conseguem iniciar sessão no Portal da Empresa do Intune
 
-## Problemas típicos de implementação de aplicações
+1.  Certifique-se de que a conta de utilizador existe e está ativada no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Se não conseguir iniciar sessão no portal da empresa do Microsoft Intune
+3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), certifique-se de que o utilizador está a introduzir o nome de utilizador correto para iniciar sessão no Intune e de que está no formato: **joe@domain.com**. Se o utilizador parecer estar a introduzir a palavra-passe errada, peça-lhe para repô-la.
 
-1.  Verifique se a sua conta existe no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) ou se está desativada.
-
-2.  Certifique-se de que está aprovisionado nesta conta no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  No [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), certifique-se de que está a utilizar o nome de utilizador e a palavra-passe corretos para iniciar sessão no Intune e de que estão no formato: **joe@domain.com**.
-
-### Se as informações para Contactar TI estiverem em falta no portal da empresa
+### As informações para Contactar TI estiverem em falta no Portal da Empresa
 
 1.  Na consola de administração do Intune, escolha **Admin**&gt;**Portal da Empresa**.
 
@@ -80,7 +76,7 @@ Se estas informações não resolverem o seu problema, consulte [Como obter supo
 
 ### Erro: o Publicador não existe
 Utiliza **Adicionar Outro Contrato de Software** para adicionar um contrato de licença de terceiros. Tenta adicionar o publicador a partir da página **Outro contrato de licenciamento de software**. A página fornece uma lista dos publicadores existentes por ordem alfabética.
-Introduz o publicador em falta, mas recebe o erro **O publicador não existe**. 
+Introduz o publicador em falta, mas recebe o erro **O publicador não existe**.
 
 Isto é propositado. O Intune fornece monitorização de licenças apenas para títulos de software populares. O Intune requer que, pelo menos, 4 contas diferentes comuniquem o software antes deste ser disponibilizado como opção na carga de trabalho de licenciamento.
 
@@ -104,6 +100,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
