@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Configurar a gestão de dispositivos Android
-Para configurar o seu dispositivo Android, veja a ajuda [aqui](../enduser/using-your-android-device-with-intune.md).
-
-Com o Microsoft Intune, pode ativar BYOD ("bring your own device") em dispositivos Android sem ter de fazer tarefas adicionais para a plataforma.
-
-Selecione entre as seguintes opções de plataforma de dispositivo para saber mais:
-
-> [!div class="op_single_selector"]
-- [Configurar a gestão de Android com o Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Configurar a gestão do Windows Phone com o Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Configurar a gestão de dispositivos Windows com o Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
-
-Os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação do Portal da Empresa, disponível no Google Play, para se inscreverem. Para permitir que os utilizadores inscrevam os dispositivos deles no Intune, faça o seguinte.
+Como administrador do Intune, pode ativar a gestão de dispositivos Android a partir do Portal da Empresa. Os utilizadores podem então inscrever os respetivos dispositivos com a aplicação Portal da Empresa disponível no Google Play.
 
 1.  **Configurar o Intune**<br>
     Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
@@ -52,6 +40,6 @@ Os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

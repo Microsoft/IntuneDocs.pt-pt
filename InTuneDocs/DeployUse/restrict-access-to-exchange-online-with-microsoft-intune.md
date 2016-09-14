@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 
 ---
@@ -108,6 +108,8 @@ Pode configurar o acesso condicional para computadores que executem aplicações
     Para ser considerado conforme, o PC tem de estar inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e cumprir as políticas.
 
     Para um PC associado a um domínio, tem de defini-lo para [registar automaticamente o dispositivo](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) no Azure Active Directory.
+    >[!NOTE]
+    >O acesso condicional não é suportado em PCs com o cliente de computador do Intune.
 
 -   A[autenticação moderna do Office 365 tem de estar ativada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
 
@@ -260,6 +262,6 @@ No dashboard do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

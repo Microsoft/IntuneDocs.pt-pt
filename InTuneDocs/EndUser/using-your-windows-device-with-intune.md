@@ -13,16 +13,16 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # Utilizar o dispositivo Windows com o Intune
 
-Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: 
-- Instalação da aplicação Portal da Empresa e inscrição no Intune 
+Este artigo contém ligações para todas as tarefas que os utilizadores podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores têm de seguir para efetuar várias tarefas, as quais estão agrupadas em categorias, da seguinte forma:
+- Instalação da aplicação Portal da Empresa e inscrição no Intune
 - Tarefas de gestão pós-inscrição
 - Resolver problemas de compatibilidade
 
@@ -32,11 +32,11 @@ As informações nesta secção irão ajudá-lo com a instalação do Portal da 
 
 - [Inscrever o dispositivo Windows no Intune](enroll-your-device-in-intune-windows.md)
 - [O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [O que o seu administrador de TI pode ver quando inscrever o dispositivo no Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [O que o seu administrador de TI pode ver quando inscrever o seu dispositivo no Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Ações que pode fazer quando o dispositivo está inscrito no Intune
 
-As informações desta secção irão ajudá-lo com as ações que pode tomar depois do dispositivo Windows estar inscrito no Intune.
+As informações desta secção irão ajudá-lo com as ações que pode tomar depois de o dispositivo Windows estar inscrito no Intune.
 
 - [Encriptar o dispositivo](encrypt-your-device-windows.md)
 - [Definir ou alterar a palavra-passe](set-or-change-your-password-windows.md)
@@ -47,7 +47,7 @@ As informações desta secção irão ajudá-lo com as ações que pode tomar de
 - [Desativar a recolha de dados da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sincronizar o seu dispositivo manualmente](sync-your-device-manually-windows.md)
 
-## Corrigir os problemas com o seu dispositivo
+## Como corrigir problemas com o seu dispositivo
 
 As informações desta secção irão ajudá-lo a corrigir problemas que poderão surgir quando o dispositivo Windows está inscrito no Intune.
 
@@ -60,6 +60,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que poderã
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

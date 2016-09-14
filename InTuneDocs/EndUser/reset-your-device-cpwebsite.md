@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
+ms.sourcegitcommit: 4386e9c545c3427060478e0fb3482074a8c1d5a0
+ms.openlocfilehash: ba1869e63d9c9e83199ecfde312129c548dd5f07
 
 
 ---
@@ -29,7 +29,7 @@ Se redefinir o seu dispositivo, este não será mais listado no Portal da Empres
 
 Repor o dispositivo:
 
-1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no dispositivo cujo nome quer mudar.
+1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no dispositivo que pretende repor.
 
 2.  Toque em **Repor**.
 
@@ -41,11 +41,10 @@ O seu dispositivo foi reposto.
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO1-->
 
 
