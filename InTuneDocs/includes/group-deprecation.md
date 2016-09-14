@@ -1,11 +1,7 @@
-> [!NOTE]
-> A partir de agosto, a gestão de grupo de dispositivos irá mudar para o Azure Active Directory. **Após a transição para grupos do Azure Active Directory, a atribuição de grupo não será apresentada nas opções do Perfil de Inscrição Empresarial.** Uma vez que serão efetuadas alterações ao longo de vários meses, a alteração poderá ainda não estar disponível na consola.
-
-> O **perfil de Inscrição Empresarial** é necessário para inscrever dispositivos iOS através do Programa de Inscrição de Dispositivos da Apple ou da ferramenta Apple Configurator.
-
->A nova atribuição de grupos de dispositivos dinâmica pode ser definida no Azure Active Directory com base no nome do Perfil de Inscrição Empresarial. Este processo garante que os dispositivos previamente atribuídos a um grupo de dispositivos serão inscritos de forma automática no grupo com a política e as aplicações implementadas. Serão publicados mais detalhes em breve.
+>[!Important]
+>As atribuições de grupo mudam do Intune para o Azure Active Directory. As contas do Intune com esta atualização não verão a opção **Atribuir dispositivos ao seguinte grupo**. [Saiba mais](../deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
