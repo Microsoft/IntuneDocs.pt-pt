@@ -4,7 +4,7 @@ description: "Saiba mais sobre as várias formas de inscrever e gerir dispositiv
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,66 +13,58 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: cfd9df3814d0d306a254a5566155a91ce5d0ca16
+ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
+ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
 
 
 ---
 
 # Escolher como gerir dispositivos
-O Intune permite gerir uma vasta gama de dispositivos ao *inscrevê-los* no serviço. Os utilizadores podem utilizar um *portal da empresa* para efetuar várias operações, como inscrever os respetivos dispositivos, procurar e instalar aplicações, assegurar que o dispositivo está em conformidade com as políticas da empresa e contactar o respetivo suporte de TI.
 
-## Formas de gerir dispositivos móveis
-O Intune pode gerir as seguintes plataformas de dispositivos:
+Para tirar partido das várias funcionalidades que o Intune oferece, como a implementação de aplicações e o controlo das definições do dispositivo, os dispositivos têm de ser *geridos*. O método de gestão de dispositivos depende das capacidades do Intune que pretende utilizar.
+Este tópico irá ajudá-lo a escolher o método adequado às suas necessidades.
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+Para gerir dispositivos que executam iOS, Mac OS X, Android e Windows Phone, terá de os *inscrever*.
 
-> [!NOTE]
-> Se tiver inscrito anteriormente dispositivos com uma versão anterior do iOS que a versão suportada acima, estes permanecerão inscritos. Consulte a documentação para confirmar se a funcionalidade suporta essa versão do iOS.
+Para gerir PCs Windows, tem duas opções:
 
-O Intune pode gerir dispositivos de utilizadores, conhecidos popularmente como "bring your own device" (BYOD). Também pode gerir dispositivos pertencentes à empresa, incluindo cenários em que a empresa fornece uma lista de dispositivos que os utilizadores poderão escolher, conhecido como "choose your own device" (CYOD).
+1. Inscrever o dispositivo **ou**
+2. Instalar o *cliente de software do Intune*.
 
-### Inscrever dispositivos para gestão
-Para sistemas operativos de dispositivos móveis, incluindo iOS, Android e Windows Phone, tem sempre de inscrever os dispositivos. A forma como inscreve os dispositivos depende das necessidades da sua organização:
+## Escolher o método a utilizar
+Utilize este fluxo de decisões para decidir como pretende gerir os seus dispositivos.
 
-|Tipo de inscrição|BYOD|CYOD|Dispositivo partilhado com conta de gestor|Dispositivo partilhado sem uma conta de utilizador|
-|-------------------|--------|--------|--------------------------------------|----------------------------------------|
-|**Descrição**|Dispositivo pessoal inscrito através do Microsoft Intune|Dispositivo que é propriedade da empresa para um único utilizador|Dispositivo que é propriedade da empresa gerido através de uma conta de gestor partilhada por vários utilizadores|Dispositivo sem utilizadores que é propriedade da empresa utilizado por vários utilizadores.|
-|**Utilizador do dispositivo**|Proprietário|Utilizador atribuído|Nenhuma conta de utilizador específica|Nenhum utilizador específico|
-|**Quem inscreve?**|Proprietário|Admistrador|Gestor de Dispositivos|Qualquer pessoa|
-|**Quem cancela a inscrição?**|Proprietário ou administrador|Plataforma |Administrador ou utilizador|Administrador ou utilizador|
-|**Quem pode redefinir?**|Proprietário ou administrador|Admistrador|Admistrador|Admistrador|
+![Fluxo de decisões para decidir como pretende gerir os seus dispositivos.](./media/choose-manage-method.png)
 
-Para orientações adicionais, veja [Escolher como inscrever dispositivos móveis](/intune/get-started/choose-how-to-enroll-devices1).
+Inscreva PCs Windows para obter máxima funcionalidade. No entanto, o cliente de software do Intune poderá ser mais adequado às suas necessidades quando:
 
-> [!NOTE]
-> Consulte [Capacidades de gestão de dispositivos móveis](mobile-device-management-capabilities-in-microsoft-intune.md) para obter uma lista completa das capacidades fornecidas pela inscrição de dispositivos.
+- O PC está a executar o Windows 7
+- Pretender gerir atualizações de software e a utilização de licenças do Windows
+- Pretender gerir software maligno com o Endpoint Protection e a Firewall do Windows
+- Pretender fornecer assistência remota aos utilizadores com o software TeamViewer
 
-## Formas de gerir PCs Windows
-O Intune pode gerir o Windows Vista e PCs Windows posteriores utilizando o cliente do computador do Intune. No entanto, para PCs Windows, pode optar entre inscrevê-los ou instalar o software de cliente do PC Intune que disponibiliza algumas capacidades não disponíveis quando inscreve dispositivos. Na maioria dos cenários, irá inscrever o dispositivo Windows com o Intune, o que fornece um conjunto maior de capacidades que o computador cliente.
 
-Considere utilizar o cliente do computador Intune quando pretender:
+Para obter uma lista detalhada das capacidades de gestão obtidas com cada método, veja [Capacidades de gestão de dispositivos móveis](mobile-device-management-capabilities-in-microsoft-intune.md) e [Capacidades de cliente de software de PCs do Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
+Para obter informações sobre os dispositivos e os PCs que o Intune suporta, veja [Dispositivos móveis e computadores suportados](/intune/get-started/supported-mobile-devices-and-computers)
 
-- Utilizar qualquer uma das capacidades ativadas para o cliente do computador do Microsoft Intune para gerir os seus PCs Windows
-- Gerir um PC Windows com um sistema operativo não suportado para inscrição
-
-> [!NOTE]
-> Consulte [Capacidades de gestão de PCs Windows](windows-pc-management-capabilities-in-microsoft-intune.md) para obter uma lista completa das capacidades fornecidas pela instalação do cliente do computador do Intune em PCs Windows suportados.
 
 ## Gestão do Exchange ActiveSync
-Também pode gerir dispositivos através do Exchange ActiveSync. Isto requer a instalação do Conector No Local ou a utilização do Conector de Serviços incorporado para ligar ao seu Exchange Server.
-
-Para saber mais sobre os requisitos de hardware e software para instalar o Conector No Local, veja [Requisitos do Conector No Local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
-
-Para saber mais sobre como utilizar o Conetor No Local ou o Conetor de Serviços com o Exchange, veja [Gestão de dispositivos móveis com o Exchange ActiveSync e o Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-
+Para além de inscrever um dispositivo ou instalar o cliente de software do Intune, também pode gerir dispositivos [com o Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). Este método requer a instalação do Conector No Local ou a utilização do Conector de Serviços incorporado para ligar ao seu Exchange Server.
+Embora esta seja uma terceira opção para gerir dispositivos, fornece um conjunto limitado de capacidades de gestão, em comparação com os outros métodos.
 
 
 ## Passos seguintes
-Agora já descobriu algumas das capacidades que pode utilizar quando inscrever os seus dispositivos com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Em seguida, terá de [inscrever os dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune). Após ter inscrito os seus dispositivos, pode tirar partido de todas as capacidades que leu neste tópico. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+
+- [Escolher como inscrever dispositivos móveis](/intune/get-started/choose-how-to-enroll-devices1)
+- [Gerir PCs Windows com o software de cliente de PC do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 
 
 
-<!--HONumber=Aug16_HO3-->
+- [Gestão de dispositivos móveis do Exchange ActiveSync com o Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+
+
+
+
+<!--HONumber=Aug16_HO5-->
 
 

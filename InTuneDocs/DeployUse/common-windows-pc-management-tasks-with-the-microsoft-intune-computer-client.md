@@ -1,6 +1,6 @@
 ---
 title: "Tarefas de gestão comuns do PC Windows | Microsoft Intune"
-description: "Reveja as tarefas neste tópico para saber como gerir os computadores que executam o software de cliente do Intune."
+description: "Reveja as tarefas neste tópico para saber como gerir os PCs Windows que executam o cliente de software do Intune."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune
-Reveja as tarefas neste tópico para saber como gerir os computadores que executam o software de cliente do Intune. Se ainda não instalou o cliente nos seus computadores, veja [Install the Windows PC client with Microsoft Intune (Instalar o cliente de PC Windows com o Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
+# Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune
+Reveja as tarefas neste tópico para saber como gerir os computadores que executam o cliente de software do Intune. Se ainda não instalou o cliente nos seus computadores, veja [Instalar o cliente de software do Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Utilizar políticas para simplificar a gestão do PC
-### Gerir a Firewall do Windows
-As políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos. Para mais informações, consulte [Ajudar a proteger PCs Windows através de políticas de Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+Os PCs Windows que executam o cliente de software do Intune podem ser geridos através das políticas de **Gestão de Computadores** do Intune.
+
+![Modelo de políticas para PCs Windows](../media/pc_policy_template.png)
 
 ### Gerir o Centro do Microsoft Intune
-O Centro do Microsoft Intune permite aos utilizadores:
+Os utilizadores veem o cliente de software do Intune como o **Microsoft Intune Center**. O Centro do Microsoft Intune permite aos utilizadores:
 
 -   Obter aplicações a partir do portal da empresa.
 
@@ -49,11 +51,14 @@ O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode
 |**URL do site**|O URL do seu site de suporte.<br /><br />Comprimento máximo: 150 carateres|
 |**Notas**|Uma nota que é apresentada aos utilizadores.<br /><br />Comprimento máximo: 120 carateres|
 
-### Gerir definições de atualizações de software
-Utilize as políticas para configurar as definições que os computadores geridos utilizam para procurar e transferir atualizações de software da Microsoft e de terceiros. Para mais informações, consulte [Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Definições das atualizações de software
+Utilize as políticas para configurar as definições que os computadores geridos utilizam para procurar e transferir atualizações de software da Microsoft e de terceiros. Estas atualizações não incluem atualizações do sistema operativo (ou seja, atualizar do Windows 7 para o Windows 10 ou atualizações de uma versão do Windows 10 para uma versão posterior). Para mais informações, consulte [Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Gerir definições do Endpoint Protection
+### Definições do Endpoint Protection
 Utilize políticas para configurar definições do Endpoint Protection que irá depois implementar nos computadores geridos. Isto inclui o agendamento de análises, ações a efetuar quando é detetado software maligno, entre outros. Para mais informações, consulte [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Definições da Firewall do Windows
+As políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos. Para mais informações, consulte [Ajudar a proteger PCs Windows através de políticas de Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Ver o inventário de hardware e software
 O Intune recolhe informações detalhadas sobre o hardware e o software de computadores geridos. Utilize as informações nos seguintes procedimentos para saber como criar:
@@ -113,17 +118,17 @@ O Intune recolhe informações detalhadas sobre o hardware e o software de compu
 
 2.  Selecione os dispositivos que pretende extinguir e, em seguida, escolha **Extinguir/Limpar**.
 
-Para inscrever novamente um computador no Intune, reinstale o software de cliente no computador utilizando as informações do tópico [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Para inscrever novamente um computador no Intune, reinstale o cliente de software no PC, com as orientações em [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Se um computador não conseguir ligar ao Intune, é apresentada uma mensagem na área de trabalho **Dashboard**.
 
 Quando extingue um computador:
 
--   Este é removido da gestão e do inventário do Intune e a licença associada ao computador é disponibilizada para reutilização. Extinguir/Eliminar remove o cliente de software do Intune, mas não remove aplicações ou dados do computador.
+-   Este é removido da gestão e do inventário do Intune e a licença associada ao computador é disponibilizada para reutilização. Extinguir/Eliminar remove o cliente de software do Intune, mas não remove aplicações ou dados do computador. Este extinção não efetua uma eliminação completa no computador.
 
 -   O estado do mesmo já não é apresentado na consola do Intune.
 
--   O Intune remove o software de cliente do computador. Se o computador não estiver ligado ao serviço Intune, o software de cliente será removido na próxima vez que for ligado.
+-   O Intune remove o cliente de software do computador. Se o computador não estiver ligado ao serviço Intune, o cliente de software será removido na próxima vez que for ligado.
 
 -   O Endpoint Protection do Microsoft Intune é removido do computador. Se o computador tiver outra aplicação de ponto final instalada e esta estiver desativada, essa aplicação pode ser ativada novamente quando o Endpoint Protection do Microsoft Intune for removido, para garantir a proteção dos seus computadores.
 
@@ -160,9 +165,9 @@ Antes de poder implementar software para um utilizador, tem de associar o utiliz
 > [!TIP]
 > Se pretender restringir a capacidade dos próprios utilizadores finais se ligarem a computadores, ative a opção **Restringir a capacidade dos próprios utilizadores se ligarem a computadores** na política **Definições de Agente do Microsoft Intune**.
 
-## Pedir e fornecer assistência remota para PCs Windows que utilizam o software de cliente do Intune
+## Pedir e fornecer assistência remota para PCs Windows
 
-Pode utilizar o software [TeamViewer](https://www.teamviewer.com) do Microsoft Intune para permitir que os utilizadores de PCs que executam o software de cliente do Intune obtenham ajuda de assistência remota da sua parte. Quando um utilizador solicita a ajuda do Microsoft Intune Center, é informado por um alerta. Pode aceitar o pedido e, em seguida, fornecer assistência.
+Pode utilizar o software [TeamViewer](https://www.teamviewer.com) do Microsoft Intune, adquirido separadamente, para permitir que os utilizadores de PCs que executam o cliente de software do Intune obtenham ajuda de assistência remota da sua parte. Quando um utilizador solicita a ajuda do Microsoft Intune Center, é informado por um alerta. Pode aceitar o pedido e, em seguida, fornecer assistência.
 Esta funcionalidade substitui a funcionalidade existente de Assistência Remota do Windows no Intune.
 
 
@@ -211,6 +216,6 @@ A partir do menu **Ações** da janela **TeamViewer**, escolha **Terminar Sessã
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: 
-- Instalação da aplicação Portal da Empresa e inscrição no Intune 
+Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores têm de seguir para efetuar várias tarefas, as quais estão agrupadas nas seguintes categorias:
+- Instalação da aplicação Portal da Empresa e inscrição no Intune
 - Tarefas de gestão pós-inscrição
 - Resolver problemas de compatibilidade
 
@@ -38,7 +38,7 @@ As informações nesta secção irão ajudá-lo com a instalação do Portal da 
 
 ## Ações que pode fazer quando o dispositivo está inscrito no Intune
 
-As informações desta secção irão ajudá-lo com as ações que pode tomar depois do dispositivo iOS estar inscrito no Intune.
+As informações desta secção irão ajudá-lo nas ações que pode tomar depois de o dispositivo iOS estar inscrito no Intune.
 
 - [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Definir ou alterar o código de acesso](set-or-change-your-passcode-ios.md)
@@ -64,6 +64,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que poderã
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

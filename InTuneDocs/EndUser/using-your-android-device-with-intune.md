@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Utilizar o dispositivo Android com o Intune
 
-Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores seguem para efetuar várias tarefas, as quais estão agrupadas em categorias: 
+Este artigo contém ligações para todas as tarefas que os utilizadores finais podem efetuar nos seus dispositivos geridos pelo Intune. Os administradores de TI podem ter estas informações como referência para os passos que os utilizadores têm de seguir para efetuar várias tarefas, as quais estão agrupadas nas seguintes categorias:
 
-- Instalação da aplicação Portal da Empresa e inscrição no Intune 
+- Instalação da aplicação Portal da Empresa e inscrição no Intune
 - Tarefas de gestão pós-inscrição
 - Resolver problemas de compatibilidade
 
 ## Instalação da aplicação Portal da Empresa e inscrição no Intune
 
-As informações nesta secção irão ajudá-lo com a instalação do Portal da Empresa do Intune e na inscrição de dispositivos Android.
+As informações nesta secção irão ajudá-lo na instalação do Portal da Empresa do Intune e na inscrição de dispositivos para dispositivos Android.
 
 - [Inscrever o dispositivo no Intune](enroll-your-device-in-Intune-android.md)
 - [O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Ações que pode fazer quando o dispositivo está inscrito no Intune
 
-As informações desta secção irão ajudá-lo com as ações que pode realizar depois de o dispositivo iOS estar inscrito no Intune.
+As informações desta secção irão ajudá-lo nas ações que pode tomar depois de o dispositivo Android estar inscrito no Intune.
 
 - [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-android.md)
 - [Encriptar o dispositivo](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ As informações desta secção irão ajudá-lo com as ações que pode realizar
 
 ## Corrigir os problemas com o seu dispositivo
 
-As informações desta secção irão ajudá-lo a corrigir problemas que podem surgir quando o dispositivo Android está inscrito no Intune.
+As informações desta secção irão ajudá-lo a corrigir problemas que poderão surgir quando o dispositivo Android está inscrito no Intune.
 
 - [Utilizar o Registo Verboso para ajudar o administrador de TI a corrigir problemas com dispositivos](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Send diagnostic data logs to your IT administrator using email (Enviar registos de dados de diagnóstico ao administrador de TI por e-mail)](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ As informações desta secção irão ajudá-lo a corrigir problemas que podem s
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

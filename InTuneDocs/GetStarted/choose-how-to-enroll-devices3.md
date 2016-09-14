@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 
 
 ---
@@ -25,7 +25,9 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 ## **Os dispositivos pertencentes à empresa são partilhados ou têm utilizadores dedicados?**
 
 > [!div class="button"]
-[Partilhados >](choose-how-to-enroll-devices4.md)   [Dedicados >](choose-how-to-enroll-devices6.md)
+[Partilhado >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[Dedicado >](choose-how-to-enroll-devices6.md)
 
 - **Dispositivos pertencentes à empresa partilhados** - estes dispositivos não têm um único utilizador e, normalmente, não estão configurados para aceder ao e-mail. Alguns exemplos incluem dispositivos de local público ou dispositivos orientados para tarefas e que os utilizadores recolhem quando precisam dos mesmos e, depois, devolvem. Os métodos de inscrição recomendados dependem da plataforma dos dispositivos.
 
@@ -36,6 +38,6 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Crie políticas que controlam as definições e funcionalidades em
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Exigir cópia de segurança encriptada**|Exigir que qualquer cópia de segurança seja encriptada.|
 |**Permitir que as aplicações geridas sincronizem dados para o serviço iCloud**|Permitir que as aplicações que gere com o Intune sincronizem dados para a conta do iCloud dos utilizadores.|
 |**Permitir que o Handoff continue as atividades noutro dispositivo**|Permitir ao utilizador continuar o trabalho que iniciaram num dispositivo iOS noutro dispositivo iOS ou Mac OS X.|
+|**Permitir Partilha de Fotografias em iCloud**|Permitir a utilização da funcionalidade de fluxo de fotografias partilhadas do iOS.|
+|**Permitir Fototeca em iCloud**|Permitir que o utilizador armazene fotografias em iCloud. Se for desativado, as fotografias já armazenadas em iCloud serão removidas.|
 
 ### Definições da aplicação para o browser
 Todas as definições se aplicam ao iOS 7.1 e posterior.
@@ -99,14 +101,14 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
-|**Permitir loja de aplicações**|Permitir que o dispositivo aceda à loja de aplicações.|
+|**Permitir a instalação de aplicações**|Permitir que o dispositivo aceda à loja de aplicações e instale aplicações.|
 |**Exigir uma palavra-passe para aceder à loja de aplicações**|Exigir ao utilizador que introduza uma palavra-passe antes de poderem visitar a loja de aplicações.|
 |**Permitir compras via aplicação**|Permite efetuar compras na loja a partir de uma aplicação em execução.|
 |**Permitir documentos geridos em outras aplicações não geridas**|Permitir que documentos corporativos sejam exibidos em qualquer aplicação.<br>**Exemplo:** pretende impedir que os utilizadores guardem os ficheiros da aplicação OneDrive para a Dropbox. Configure esta definição como não. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não será permitido guardar.|
 |**Permitir documentos não geridos em outras aplicações geridas**|Permitir a visualização de qualquer documento em aplicações geridas empresariais.|
 |**Permitir videoconferência**|Permitir aplicações de videoconferência, tais como FaceTime, no dispositivo.|
-|**Permitir conteúdo para adultos no arquivo de multimédia**|Permitir que o dispositivo aceda a conteúdo da loja classificado como conteúdo para adultos.|
-|**Permitir que o utilizador transfira conteúdos da loja iBook sinalizado como "Erótico"**|Permitir ao utilizador transferir livros da categoria "Erótico".|
+|**Permitir ao utilizador confiar em novo autores de aplicações empresariais**|Permite que o utilizador opte por confiar em aplicações que não foram transferidas a partir da loja de aplicações.|
+
 
 ### Definições da aplicação para jogos
 Todas as definições se aplicam ao iOS 7.1 e posterior.
@@ -116,12 +118,23 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir a adição de amigos do Centro de Jogos**|Permitir que o utilizador adicione amigos no Centro de jogos.|
 |**Permitir jogos multijogador**|Permitir que o utilizador jogue jogos multijogador no dispositivo.|
 
+### Definições da aplicação para conteúdo multimédia
+Todas as definições se aplicam ao iOS 7.1 e posterior.
+
+|Nome da definição|Detalhes|
+|----------------|-------|
+|**Região das classificações**|Selecione uma região e, em seguida, selecione a classificação máxima que os utilizadores podem transferir para **Filmes**, **Programas de TV** e **Aplicações**.|
+|**Permitir conteúdo para adultos no arquivo de multimédia**|Permitir que o dispositivo aceda a conteúdo da loja classificado como conteúdo para adultos.|
+|**Permitir que o utilizador transfira conteúdos da loja iBook sinalizado como "Erótico"**|Permitir ao utilizador transferir livros da categoria "Erótico".|
+
+
 ### Definições das capacidades do dispositivo para hardware
 Todas as definições se aplicam ao iOS 7.1 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
 |**Permitir câmara**|Especifique se a câmara do dispositivo pode ser utilizada.|
+|**Forçar os Relógios Apple emparelhados a utilizar deteção no pulso**|Quando ativada, o Apple Watch não apresenta notificações quando não estiver a ser utilizado.|
 |**Requerer palavra-passe emparelhada para os pedidos AirPlay enviados**|Exigir uma palavra-passe de emparelhamento quando o utilizador utiliza AirPlay para conteúdo de fluxo com outros dispositivos da Apple.|
 
 ### Definições das capacidades do dispositivo para a rede móvel
@@ -141,6 +154,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir a Siri**|Permitir a utilização do assistente de voz Siri no dispositivo.|
 |**Permitir a Siri quando o dispositivo está bloqueado**|Permitir a utilização do assistente de voz Siri no dispositivo enquanto está bloqueado.|
 |**Permitir marcação por voz**|Permitir a utilização da funcionalidade de marcação por voz no dispositivo.|
+|**Não permitir Airdrop de aplicações geridas**|Faz com que as aplicações geridas não consigam enviar dados através de. Airdrop.|
 
 
 ### Definições para aplicações conformes e não conformes
@@ -214,24 +228,55 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |----------------|--------------------|
 |**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**|Ativar o Bloqueio de Ativação em dispositivos iOS supervisionados.|
 
-### Supervisão
+### Definições do modo supervisionado
 Pode configurar as seguintes definições em dispositivos com iOS 7.1 e posterior que estejam no modo supervisionado.
+
+### Definições do modo supervisionado para restrições do dispositivo
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
 |**Permitir modificação da conta**|Permitir que o utilizador alterar as definições de conta, tais como configurações de e-mail.|
-|**Permitir AirDrop**|Permitir a utilização da funcionalidade AirDrop para trocar conteúdos com dispositivos que se encontrem próximos.|
 |**Permitir alterações às definições de utilização de dados via rede móvel da aplicação**|Permitir que o utilizador controle que aplicações estão autorizadas a utilizar dados via rede móvel.|
-|**Permitir que a Siri consulte conteúdos gerados pelo utilizador a partir da Internet**|Permitir que a Siri aceda a sites para responder a perguntas.|
-|**Permitir acesso à loja iBooks**|Permitir que o utilizador procure e compre livros da loja iBooks.|
-|**Permitir alterações para as definições da aplicação Encontrar Amigos**|Permitir que o utilizador altere as definições da aplicação Encontrar Amigos.|
 |**Permitir a utilização das opções apagar todos os conteúdos e definições do dispositivo**|Permitir que o utilizador utilize a opção de apagar todos os conteúdos e definições do dispositivo.|
 |**Permitir que o utilizador ative restrições nas definições do dispositivo**|Permitir que o utilizador configure as restrições de dispositivo (restrições de acesso) no dispositivo.|
-|**Permitir a pesquisa Spotlight para devolver resultados da Internet**|Permitir a ligação da pesquisa Spotlight à Internet para fornecer mais resultados.|
-|**Permitir a utilização da aplicação Game Center**|Permitir utilização da aplicação Game Center.|
-|**Permitir emparelhamento de anfitrião para controlar os dispositivos aos quais um dispositivo iOS pode estar emparelhado**|Permitir o emparelhamento de anfitrião para permitir ao administrador o controlo sobre que dispositivos um dispositivo iOS 7 pode ser emparelhado com.|
+|**Permitir emparelhamento de anfitrião para controlar os dispositivos aos quais um dispositivo iOS pode estar emparelhado**|Permitir o emparelhamento de anfitrião para permitir ao administrador o controlo sobre os dispositivos com os quais um dispositivo iOS pode ser emparelhado.|
 |**Permitir que o utilizador instale perfis e certificados de configuração**|Permitir que o utilizador instale perfis e certificados de configuração.|
+|**Permitir a modificação do nome do dispositivo**|Permitir que o utilizador altere o nome do dispositivo.|
+|**Permitir a modificação do código de acesso**|Permitir que a palavra-passe do dispositivo seja adicionada, alterada ou removida.|
+|**Permitir o emparelhamento do Apple Watch**|Permitir que o dispositivo emparelhe com um Apple Watch.|
+|**Permitir a modificação das definições de notificação**|Permitir que o utilizador altere as definições de notificação do dispositivo.|
+|**Permitir a modificação da imagem de fundo**|Permitir que o utilizador altere a imagem de fundo do dispositivo.|
+
+### Definições do modo supervisionado para restrições de funcionalidade
+
+|Nome da definição|Detalhes|
+|----------------|--------------------|
+|**Permitir AirDrop**|Permitir a utilização da funcionalidade AirDrop para trocar conteúdos com dispositivos que se encontrem próximos.|
+|**Permitir que a Siri consulte conteúdos gerados pelo utilizador a partir da Internet**|Permitir que a Siri aceda a sites para responder a perguntas.|
+|**Utilizar o filtro de linguagem inapropriada da Siri**|Impede que a Siri dite ou fale com linguagem profana.|
+|**Permitir a pesquisa Spotlight para devolver resultados da Internet**|Permitir a ligação da pesquisa Spotlight à Internet para fornecer mais resultados.|
+|**Permitir a pesquisa de definição de palavras**|Permitir a funcionalidade do iOS que permite realçar uma palavra e procurar a respetiva definição.|
+|**Permitir teclados preditivos**|Permitir a utilização de teclados preditivos que sugerem palavras que o utilizador poderá querer utilizar.|
+|**Permitir a correção automática**|Permite que o dispositivo corrija automaticamente palavras com erros ortográficos.|
+|**Permitir a verificação ortográfica no teclado**|Permitir o corretor ortográfico do dispositivo.|
+|**Permitir atalhos de teclado**|Permitir a utilização de atalhos de teclado.|
+
+### Definições do modo supervisionado para restrições de aplicações
+
+|Nome da definição|Detalhes|
+|----------------|--------------------|
+|**Permitir a modificação das definições de confiança de aplicações empresariais**||
+|**Permitir a instalação de aplicações apenas com a Configuração da Apple e o iTunes**||
+|**Permitir transferências automáticas de aplicações**||
+|**Permitir alterações para as definições da aplicação Encontrar Amigos**|Permitir que o utilizador altere as definições da aplicação Encontrar Amigos.|
+|**Permitir acesso à loja iBooks**|Permitir que o utilizador procure e compre livros da loja iBooks.|
 |**Permitir a utilização da aplicação Mensagens no dispositivo**|Permitir a utilização da aplicação Mensagens para enviar mensagens de texto.|
+|**Permitir a utilização de Podcasts**|Permitir a utilização de aplicações Podcasts.|
+|**Permitir a utilização do serviço de Música**|Permitir a utilização da aplicação Apple Music.|
+|**Permitir o serviço iTunes Radio**|Permita a utilização da aplicação iTunes Radio.|
+|**Permitir Apple News**|Permita a utilização da aplicação Apple News.|
+|**Permitir Game Center**|Permitir utilização da aplicação Game Center.|
+
 
 ### Mostrar ou Ocultar Aplicações
 
@@ -337,6 +382,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
