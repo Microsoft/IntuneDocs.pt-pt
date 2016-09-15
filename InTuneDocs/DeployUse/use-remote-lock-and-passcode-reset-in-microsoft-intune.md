@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso.
 
 ## Bloquear remotamente um dispositivo
-Se um utilizador perder o respetivo dispositivo, pode bloquear o mesmo remotamente. A tabela abaixo indica como o bloqueio remoto funciona em diferentes plataformas móveis.
+Se um utilizador perder o respetivo dispositivo, pode bloquear o mesmo remotamente. A tabela abaixo indica como o bloqueio remoto funciona em diferentes plataformas móveis. O bloqueio remoto não é suportado
 
 |Plataforma|Bloqueio remoto|
 |------------|---------------|
@@ -31,6 +31,7 @@ Se um utilizador perder o respetivo dispositivo, pode bloquear o mesmo remotamen
 |Windows RT 8.1 e Windows RT|Suportado se o utilizador atual do dispositivo for o mesmo utilizador que inscreveu o dispositivo.|
 |Windows 8,1|Suportado se o utilizador atual do dispositivo for o mesmo utilizador que inscreveu o dispositivo.|
 
+O bloqueio remoto não é suportado para PCs Windows inscritos com o cliente de software do Intune.
 
 ### Para bloquear um dispositivo móvel remotamente através da consola do Intune
 
@@ -55,6 +56,8 @@ Se um utilizador se esquecer do respetivo código de acesso, pode ajudá-lo ao r
 |Windows RT 8.1 e Windows RT|Não Suportado|
 |Windows 8,1|Não Suportado|
 
+A reposição do código de acesso não é suportada para PCs Windows inscritos com o cliente de software do Intune.
+
 ### Para repor um código de acesso
 
 1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**.
@@ -73,6 +76,6 @@ Se um utilizador se esquecer do respetivo código de acesso, pode ajudá-lo ao r
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

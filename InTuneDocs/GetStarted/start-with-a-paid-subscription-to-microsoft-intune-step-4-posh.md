@@ -13,14 +13,14 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: a2dbb6dadb2b68ace349e8b9b0567c132ac55482
+ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
+ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
 
 
 ---
 
 # Gerir licenças do Intune através do PowerShell
-Antes de os utilizadores poderem iniciar sessão para utilizar o serviço do Intune ou inscreverem os respetivos dispositivos para gestão, tem primeiro de atribuir a cada utilizador uma licença para a sua subscrição do Intune, conforme descrito em [Gerir licenças do Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Contudo, as organizações que utilizam o Enterprise Mobility Suite (EMS) da Microsoft podem ter utilizadores que apenas necessitem do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços através dos [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
+Antes de os utilizadores poderem iniciar sessão para utilizar o serviço do Intune ou inscreverem os respetivos dispositivos para gestão, tem primeiro de atribuir a cada utilizador uma licença para a sua subscrição do Intune, conforme descrito em [Gerir licenças do Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Contudo, as organizações que utilizam o Microsoft Enterprise Mobility + Security podem ter utilizadores que apenas necessitam do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços através dos [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Para atribuir seletivamente licenças de utilizador para serviços do EMS, abra o PowerShell como administrador num computador com o [Módulo Azure Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) instalado. Pode instalar o PowerShell num computador local ou num servidor do ADFS.
 
@@ -67,6 +67,6 @@ Parabéns! Acabou de concluir o passo 4 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

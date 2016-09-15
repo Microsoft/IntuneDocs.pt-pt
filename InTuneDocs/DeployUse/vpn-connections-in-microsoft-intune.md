@@ -4,7 +4,7 @@ description: "Utilize Perfis de VPN para implementar definições da VPN em util
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ Por exemplo, suponha que pretende aprovisionar todos os dispositivos iOS com as 
 Pode configurar os seguintes tipos de dispositivo com perfis de VPN:
 
 * Dispositivos a executar o Android 4 e posterior
-* Dispositivos com iOS 7.1 e posterior
+* Dispositivos com iOS 8.0 ou posterior
 * Dispositivos com Mac OS X 10.9 e posterior
 * Dispositivos inscritos com Windows 8.1 e posterior
 * Dispositivos a executar o Windows Phone 8.1 e posterior
@@ -45,6 +45,8 @@ O Intune suporta a criação de perfis de VPN que utilizem os seguintes tipos de
 Tipo de ligação |iOS e Mac OS X  |Android|Windows 8,1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |     Não    |Não  |Não    | Sim, (apenas OMA-URI, Mobile)|     
+Cisco (IPsec)|Sim |Não   |Não  |  Não|Não  |Não | Não|
+Citrix|Sim |Não   |Não  |  Não|Não  |Não | Não|
 Pulse Secure|Sim  |Sim |Sim   |Não  |Sim  |Sim| Sim|        
 F5 Edge Client|Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
 Dell SonicWALL Mobile Connect|Sim |Sim |Sim |Não  |Sim |Sim |Sim|         
@@ -83,7 +85,7 @@ O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e, em seguida, selecione o perfil da VPN desse dispositivo:
     * **Perfil da VPN (Android 4 e posterior)**
-    * **Perfil da VPN (iOS 7.1 e posterior)**
+    * **Perfil da VPN (iOS 8.0 e posterior)**
     * **Perfil da VPN (Mac OS X 10.9 e posterior)**
     * **Perfil da VPN (Windows 8.1 e posterior)**
     * **Perfil da VPN (Windows Phone 8.1 e posterior)**
@@ -111,6 +113,7 @@ Nome da definição  |Mais informações
 **Grupo ou domínio de início de sessão**|Especifique o nome do grupo ou domínio de início de sessão ao qual pretende ligar-se. Esta opção só é apresentada se o tipo de ligação for **Dell SonicWALL Mobile Connect**.
 **Identificação digital**|Especifique uma cadeia de carateres (por exemplo "Código de Identificação Digital da Contoso") que será utilizada para verificar a fidedignidade do servidor VPN. A identificação digital pode ser enviada para o cliente para que confie em qualquer servidor que apresente essa mesma identificação digital ao ligar. Se o dispositivo ainda não incluir a identificação digital, pedirá ao utilizador para confiar no servidor VPN ao qual está a ligar e mostrar a identificação digital. (O utilizador verifica manualmente a mesma e escolhe **fidedignidade** para estabelecer a ligação.) Esta opção só é apresentada se o tipo de ligação for **CheckPoint Mobile VPN**.
 **VPN Por Aplicação**|Selecione esta opção se pretende associar esta ligação VPN a uma aplicação iOS ou Mac OS X, para que a ligação seja aberta quando a aplicação é executada. Pode associar o perfil da VPN a uma aplicação ao implementar o software. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+**VPN a pedido**|Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores. As instruções para a configuração são fornecidas em [VPN a pedido para dispositivos iOS](#on-demand-vpn-for-ios-devices).
 **Detetar automaticamente as definições de proxy** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se pretende que os dispositivos detetem automaticamente as definições de ligação. Para mais informações, consulte a documentação do Windows Server.
 **Utilizar um script de configuração automática** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se pretende utilizar um script de configuração automática para selecionar as definições e, em seguida, especifique um URL para o ficheiro com as mesmas. Para mais informações, consulte a documentação do Windows Server.
 **Utilizar um servidor proxy** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione este opção e, em seguida, especifique o endereço e número de porta do servidor proxy. Para mais informações, consulte a documentação do Windows Server.
@@ -141,6 +144,32 @@ Pode restringir a utilização da VPN para dispositivos Windows 10 para aplicaç
 
 A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política**.
 
+### VPN a pedido para dispositivos iOS
+Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
+
+> [!NOTE]
+>  
+> Não é possível utilizar a VPN por aplicação e a VPN a pedido na mesma política.
+ 
+1. Na página de configuração de políticas, localize **Regras a pedido para esta ligação VPN**. As colunas têm a etiqueta **Correspondência**, a condição que as regras verificam, e **Ação**, a ação que a política aciona quando a condição é cumprida. 
+2. Escolha **Adicionar** para criar uma regra. Existem dois tipos de correspondências que pode configurar na regra. Só pode configurar um dos seguintes tipos por regra.
+  - **SSIDs**, que se referem às redes sem fios. 
+  - **Domínios de pesquisa DNS**, que são...  Pode utilizar nomes de domínio completamente qualificados como *equpa.corp.contoso.com* ou utilizar domínios como *contoso.com*, que é o equivalente a utilizar * *.contoso.com*.
+3. Opcional: forneça uma pesquisa de cadeia de URL, que é um URL que a regra utiliza como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a VPN será estabelecida e ligará o dispositivo ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
+4. Escolha uma das seguintes ações:
+  - **Ligar**
+  - **Avaliar ligação**, que tem três definições: a. **Ação de domínio** – escolha **Ligar caso seja necessário** ou **Nunca ligar**
+    ; b. **Lista de domínios separada por vírgulas** – configure esta opção apenas se escolher uma **Ação de domínio** em **Ligar caso seja necessário** 
+     c. **Pesquisa de cadeia de URL necessária** – um URL de HTTP ou HTTPS (preferencial) como *https://vpntestprobe.contoso.com*. A regra verificará se existe uma resposta deste endereço. Caso contrário e se a **Ação de domínio** for **Ligar caso seja necessário**, será acionada a VPN.
+     > [!TIP]
+     >
+     >Um exemplo de quando utilizar esta ação é quando alguns sites na rede da sua empresa requerem uma ligação de rede empresarial de VPN ou direta, mas outras não. Se estiver listada em **Lista de domínios de pesquisa DNS separada por vírgulas** *corp.contoso.com*, pode escolher **Ligar caso seja necessário** e, em seguida, listar sites específicos dentro dessa rede que possam precisar de uma VPN, tais como *sharepoint.corp.contoso.com*. A regra, em seguida, verificará se *vpntestprobe.contoso.com* pode ser contactado. Se não for possível, será acionada a VPN para o site do SharePoint.
+  - **Ignorar** – esta ação não efetua alterações na conetividade da VPN. Se a VPN estiver ligada, deixe-a ligada; se não estiver ligada, não a ligue. Por exemplo, poderá ter uma regra que liga a VPN para todos os seus sites internos da empresa, mas deseja que um desses sites internos esteja acessível apenas quando o dispositivo está, realmente, ligado à rede empresarial. Nesse caso, poderia criar uma regra para ignorar para esse site.
+  - **Desligar** – desligue dispositivos da VPN quando as condições corresponderem. Por exemplo, pode listar as redes sem fios da empresa no campo **SSIDs** e criar uma regra que desliga os dispositivos da VPN, quando estes ligam a uma dessas redes.
+
+As regras específicas do domínio são avaliadas antes das regras de todos os domínios. 
+
+
 ## Implementar a política
 
 1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
@@ -163,6 +192,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
