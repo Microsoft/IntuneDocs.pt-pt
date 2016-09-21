@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -29,6 +29,21 @@ Todas estas funcionalidades também serão suportadas, em algum momento, em impl
 >Mensagem do blogue - garantir que os dispositivos móveis são atualizados com o Microsoft Intune<br>
 >Tendo em conta os recentes ataques do software malicioso "Trident" em dispositivos iOS, publicámos uma nova mensagem de blogue, [Ensuring mobile devices are up to date using Microsoft Intune (Garantir que os dispositivos móveis são atualizados com o Microsoft Intune – em inglês)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) para o ajudar a saber mais sobre as diferentes formas como o Intune o pode ajudar a manter os seus dispositivos seguros e atualizados.
 
+## Setembro de 2016
+
+## Atualizações ao Portal da Empresa
+### Android
+
+**Inclusão de "Notificações" no Portal da Empresa para Android**
+
+Foi adicionado um novo ícone Notificações à homepage do Portal da Empresa para Android. Tocar neste ícone permite aceder à página Notificações, que mostra ao utilizador final todos os itens que necessitam de atenção na aplicação Portal da Empresa, como dispositivos que não estejam em conformidade, atualizações de inscrições e ativação de inscrições. A aplicação Portal da Empresa para iOS já tem esta experiência de notificações. A nova página Notificações permite que o utilizador não tenha de ver a página da Configuração do Acesso da Empresa sempre que iniciar ou retomar o Portal da Empresa, desde que o dispositivo já esteja inscrito. Se criar as suas próprias orientações para o utilizador final, poderá querer atualizar a sua documentação para que a mesma reflita esta alteração. Consulte as capturas de ecrã atualizadas [aqui](https://aka.ms/androidcpupdate).  
+<!---TFS 1095560--->
+
+### Windows
+**Botão de feedback adicionado à aplicação Portal da Empresa para Windows 8.1**
+
+A aplicação Portal da Empresa para Windows 8.1 permite que os utilizadores finais enviem feedback sobre a aplicação através do novo botão "enviar feedback". Para localizar o botão, os utilizadores têm de tocar no menu de "três pontos"que se encontra no canto inferior direito do ecrã da aplicação Portal da Empresa e, em seguida, tocar em **enviar feedback**. O feedback recolhido é anónimo e irá ajudar a Microsoft a melhorar a experiência da aplicação Portal da Empresa para os utilizadores.
+<!---TFS 1317806--->
 
 ## Agosto de 2016
 ## Gestão de aplicações
@@ -87,6 +102,10 @@ A aplicação Microsoft Intune Managed Browser para iOS foi atualizada para supo
 <!---TFS 1313253 checked--->
 
 ## Novidades futuras
+
+### Suporte do iOS 10
+O Intune irá suportar totalmente o iOS 10. Serão publicadas mais informações após o lançamento do iOS 10 ao público.
+
 ### Os Grupos do Intune vão transitar para os Grupos do Azure Active Directory a partir de setembro de 2016
 O Intune está a criar uma nova experiência de gestão de grupos que utiliza os grupos de segurança do Azure Active Directory (AAD) como grupos de utilizadores e de dispositivos no Intune. Estes grupos vão ser utilizados para a gestão de todos os grupos, implementações de políticas e implementações de perfis **quando introduzirmos o novo portal de administração do Intune baseado no Azure**.
 
@@ -158,6 +177,6 @@ Se pretender ver o que foi disponibilizado no Intune durante os últimos seis me
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

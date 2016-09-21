@@ -4,7 +4,7 @@ description: Saiba como criar um perfil de certificado do Intune.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ Tem de criar um perfil de certificado Fidedigno antes de poder criar um protocol
 
     Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Introduza as informações pedidas para configurar as definições de perfil de certificado Fidedigno para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1.
-
-    - Na definição **Ficheiro de certificado**, importe o certificado da AC de Raiz Fidedigna (ficheiro .cer) que exportou a partir da sua AC emissora. A definição **Arquivo de destino** aplica-se apenas a dispositivos com o Windows 8.1 e posterior e apenas se o dispositivo tiver mais do que um arquivo de certificados.
-    -  Em **Formato do nome do requerente**, selecione **Personalizado** para introduzir um formato de nome de requerente personalizado.  
-        As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado,como o seguinte:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        Neste exemplo, o administrador criou um formato de nome de requerente que, além das variáveis `CN` e `E`, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. A [função CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) lista as cadeias suportadas.  
+3.  Introduza as informações pedidas para configurar as definições de perfil de certificado Fidedigno para Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. 
+4.  Na definição **Ficheiro de certificado**, importe o certificado da AC de Raiz Fidedigna (ficheiro .cer) que exportou a partir da sua AC emissora. A definição **Arquivo de destino** aplica-se apenas a dispositivos com o Windows 8.1 e posterior e apenas se o dispositivo tiver mais do que um arquivo de certificados.
+    
 4.  Escolha **Guardar Política**.
 
 A nova política é mostrada na área de trabalho **Política**. Pode agora implementá-la.
@@ -79,7 +73,7 @@ Após criar um perfil de certificado da AC Fidedigna, crie perfis de certificado
 3.  Siga as instruções na página de configuração do perfil para configurar as definições do perfil de certificado SCEP.
     > [!NOTE]
     >
-    > Em **Formato do nome do requerente**, selecione **Personalizado** para introduzir um formato de nome de requerente personalizado.
+    > Em **Formato de nome do requerente**, selecione **Personalizado** para introduzir um formato de nome do requerente (apenas nos perfis iOS).
     >
     > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado,como o seguinte:
 
@@ -136,6 +130,6 @@ Em seguida, pode utilizar certificados para ajudar a proteger os perfis de e-mai
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

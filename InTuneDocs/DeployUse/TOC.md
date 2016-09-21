@@ -56,7 +56,7 @@
 ## [Proteger dispositivos](protect-your-devices-with-microsoft-intune.md)
 ### [Bloqueio remoto e reposição do código de acesso](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [Proteger dispositivos Windows com MFA](protect-windows-devices-with-multi-factor-authentication.md)
-### [Controlar as definições do Microsoft Passport em dispositivos](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Controlar as definições do Windows Hello para Empresas](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Ignorar Bloqueio de Ativação no iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Atualizações de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)

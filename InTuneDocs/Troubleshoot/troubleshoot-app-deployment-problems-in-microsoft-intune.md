@@ -4,7 +4,7 @@ description: "Este tópico ajuda a resolver problemas de implementação de apli
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
-ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 
 
 ---
@@ -22,49 +22,7 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 # Resolução de problemas de implementação de aplicações no Microsoft Intune
 Se estiver a ter problemas de implementação e gestão de aplicações com o Intune, comece por aqui. Este tópico contém alguns problemas comuns que poderá encontrar juntamente com as soluções.
 
-## Problemas comuns de implementação de aplicações
-
-### As informações para Contactar TI estiverem em falta no Portal da Empresa
-
-1.  Na consola de administração do Intune, escolha **Admin**&gt;**Portal da Empresa**.
-
-2.  Defina os detalhes de **Contactar TI** .
-
-### Se não forem apresentadas aplicações específicas na lista
-
-1.  Certifique-se de que está a verificar a lista de aplicações de um utilizador ou dispositivo para o qual a aplicação foi implementada.
-
-2.  Certifique-se de que o dispositivo cumpre os requisitos da aplicação.
-
-### Se receber um erro ao transferir uma aplicação
-
-1.  Certifique-se de que não existe mais do que uma transferência em simultâneo por utilizador. Cada utilizador pode transferir uma aplicação de cada vez.
-
-2.  Certifique-se de que não existem demasiadas transferências em simultâneo por conta. Aguarde alguns minutos e tente novamente.
-
-3.  Se receber uma mensagem nativa do iOS informando-o de que não pode instalar, de que a instalação foi cancelada ou de que tem de tentar novamente, tal poderá dever-se a tráfego elevado. Aguarde alguns minutos e tente novamente.
-
-4.  Se a barra de progresso da transferência da aplicação iOS estiver completa, mas a instalação da aplicação falhar, os ficheiros de aplicação que forneceu poderão ter algum problema.
-
-
-### Se a aplicação ficar presa “em curso” durante o carregamento
-
-1.  Ao carregar uma aplicação, os metadados são adicionados em primeiro lugar, seguidos pelo pacote da aplicação. Depois de os metadados terem sido carregados, o progresso da aplicação será apresentado. Se constatar que a aplicação fica no estado em curso durante um período de tempo anormalmente longo, elimine a aplicação e volte a carregá-la.
-
-2.  Certifique-se de que não gere a implementação da aplicação enquanto esta se encontra no estado “em curso”.
-
-### Se detetar uma falha ao instalar uma aplicação iOS
-
-1.  Certifique-se de que a firewall da sua organização permite o acesso aos sites de certificação e aprovisionamento da Apple.
-
-2.  Para obter mais informações, consulte a documentação de programador da Apple.
-
-### Se as aplicações geridas não estiverem a comunicar o estado da instalação
-
-O estado de instalação não foi recolhido para instalações de aplicações geridas antes da atualização de serviço Microsoft Intune em Novembro de 2014. No que respeita aos dispositivos que tenham instalado aplicações geridas antes desta atualização de serviço, atualize cada implementação de aplicação associada com a ação de implementação adequada (por exemplo, **Instalação disponível**). Cada dispositivo atualizará a aplicação durante a verificação automática de aplicações disponíveis. Para mais informações, consulte [Atualizar aplicações com o Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune).
-
-## <a name="BKMK_SoftDistErrorCodes"></a>Códigos de erro de implementação de aplicações
-A tabela seguinte lista erros comuns que poderão ocorrer durante a implementação da aplicação Intune, as causas prováveis e possíveis soluções para o ajudar a resolvê-los.
+## Códigos de erro comuns na implementação de aplicações
 
 |Código de erro|Possível problema|Resolução sugerida|
 |--------------|--------------------|------------------------|
@@ -79,6 +37,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
