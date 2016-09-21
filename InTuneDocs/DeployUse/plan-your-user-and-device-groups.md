@@ -36,13 +36,13 @@ Esta é a vista predefinida do nó **Grupos** na consola de administração do I
 
 ![Captura de ecrã da vista predefinida do nó Grupos na consola do Intune](../media/Intune_Planning_Groups_Default_small.png)
 
-As políticas são implementadas em grupos, pelo que a hierarquia de grupos é uma das principais considerações de design. É importante saber que não pode alterar o grupo principal de um grupo depois deste ser criado. A forma como estrutura os seus grupos é de importância fundamental a partir do momento em que começa a utilizar o serviço Intune. São descritas aqui algumas das práticas recomendadas para criar uma hierarquia de grupos com base nas suas necessidades organizacionais.
+As políticas são implementadas em grupos, pelo que a hierarquia de grupos é uma das principais considerações de design. Não pode alterar o grupo principal de um grupo depois de este ser criado. A forma como estrutura os seus grupos é de importância fundamental a partir do momento em que começa a utilizar o serviço Intune. São descritas aqui algumas das práticas recomendadas para criar uma hierarquia de grupos com base nas suas necessidades organizacionais.
 
 ## Regras de associação a grupos
 
 - Um grupo pode conter utilizadores ou dispositivos, mas não ambos.
 
-    * **Grupos de dispositivos**. inclui os computadores e os dispositivos móveis. Antes de poder adicionar um computador a um grupo, este tem de ser inscrito. Antes de poder adicionar um dispositivo móvel a um grupo, o seu ambiente tem de ser configurado para suportar dispositivos móveis e os dispositivos têm de ser inscritos ou detetados no Exchange ActiveSync.
+    * **Grupos de dispositivos**. Inclui os computadores e os dispositivos móveis. Antes de poder adicionar um computador a um grupo, este tem de ser inscrito. Antes de poder adicionar um dispositivo móvel a um grupo, o seu ambiente tem de ser configurado para suportar dispositivos móveis e os dispositivos têm de ser inscritos ou detetados no Exchange ActiveSync.
 
     * **Grupos de utilizadores**. Um grupo pode ter utilizadores de grupos de segurança. Os grupos de segurança são sincronizados com a instância do Active Directory. Se não sincronizar com o Active Directory, pode criar estes grupos manualmente.
 
@@ -50,7 +50,7 @@ As políticas são implementadas em grupos, pelo que a hierarquia de grupos é u
 
 - Um grupo pode incluir e excluir membros com base nas seguintes regras de associação:
 
-    * **Critérios de Associação**. Estes são regras dinâmicas que o Intune executa para incluir ou excluir membros. Estes critérios utilizam grupos de segurança e outras informações sincronizadas com a sua instância local do Active Directory. Quando o grupo de segurança ou os dados mudam, a associação ao grupo muda quando sincroniza com o Active Directory.
+    * **Associação por Critérios**. Estes são regras dinâmicas que o Intune executa para incluir ou excluir membros. Estes critérios utilizam grupos de segurança e outras informações sincronizadas com a sua instância local do Active Directory. Quando o grupo de segurança ou os dados mudam, a associação ao grupo muda quando sincroniza com o Active Directory.
 
     * **Associação Direta**. estas são regras estáticas que adicionam ou excluem explicitamente membros. A lista de membros é estática.
 
@@ -60,7 +60,7 @@ As políticas são implementadas em grupos, pelo que a hierarquia de grupos é u
 
 ## Regras de relação do grupo
 
-- Cada grupo que criar tem de ter um grupo principal. Não pode alterar o grupo principal de um grupo depois deste ser criado.
+- Cada grupo que criar tem de ter um grupo principal. É importante saber que não pode alterar o grupo principal de um grupo depois de este ser criado.
 
 - Quando adiciona utilizadores ou dispositivos a um grupo subordinado:
 
@@ -74,7 +74,7 @@ As políticas são implementadas em grupos, pelo que a hierarquia de grupos é u
 
 - Ao eliminar um grupo principal, todos os grupos subordinados são eliminados.
 
-- Pode implementar conteúdo e políticas num grupo principal mas excluir a implementação nos grupos subordinados.
+- Pode implementar conteúdo e políticas num grupo principal, mas excluir a implementação nos grupos subordinados.
 
 - Pode adicionar um utilizador ou dispositivo específico a um grupo subordinado se o utilizador ou dispositivo não for já um membro do grupo principal. Se o fizer, o novo membro do grupo subordinado será adicionado ao grupo principal.
 
@@ -112,7 +112,7 @@ O Intune disponibiliza nove grupos incorporados que não pode editar ou eliminar
     -   Dispositivos Sem Grupo
 
 > [!NOTE]
-> Adote o lema: *manter as coisas simples*. Se a sua organização não tiver necessidades específicas, como as descritas nas secções seguintes, mantenha as coisas simples e opte pela estrutura e pelas políticas de grupo predefinidas. Isto tornará o serviço mais fácil de gerir a longo prazo. A manutenção será mais fácil se conseguir tratar os seus utilizadores de modo uniforme. Com uma pequena diferenciação por grupo, terá menos políticas para manter.
+> Adote o lema: *manter as coisas simples*. Se a sua organização não tiver necessidades específicas, como as descritas nas secções seguintes, mantenha as coisas simples e opte pela estrutura e pelas políticas de grupo predefinidas. Desta forma, o serviço torna-se mais fácil de gerir a longo prazo. A manutenção será mais fácil se conseguir tratar os seus utilizadores de modo uniforme. Com uma pequena diferenciação por grupo, terá menos políticas para manter.
 
 
 ### Todos os utilizadores e dispositivos da organização
@@ -127,7 +127,7 @@ No caso de BYOD ou de uma combinação, tenha o cuidado de planear políticas qu
 
 ![Criar um grupo principal BYOD](../media/Intune_Planning_Groups_BYOD_small.png)
 
-Da mesma forma, pode criar um grupo para os utilizadores do dispositivo CO na sua organização:
+Da mesma forma, pode criar um grupo para os utilizadores de dispositivos CO na sua organização:
 
 ![Grupos de utilizadores colaterais para dispositivos BYOD e CO](../media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
@@ -142,7 +142,7 @@ Em primeiro lugar, forneça as informações gerais.
 
 ![Captura de ecrã da área Editar Grupo](../media/Intune_Planning_Groups_AD_General_small.png)
 
-Em **Critérios de associação**, selecione **Grupo de Utilizadores dos EUA**, sincronizado a partir do Active Directory, como o grupo de segurança a utilizar nas regras de associação.
+Em **Critérios de associação**, selecione **Grupo de Utilizadores dos EUA**, sincronizado com o Active Directory, como o grupo de segurança a utilizar nas regras de associação.
 
 ![Captura de ecrã da caixa de diálogo Editar Grupo](../media/Intune_Planning_Groups_AD_Criteria_small.png)
 
@@ -150,7 +150,7 @@ Reveja as entradas e, em seguida, escolha **Concluir** para criar o grupo.
 
 ![Captura de ecrã da caixa de diálogo Editar Grupo](../media/Intune_Planning_Groups_AD_Summary_small.png)
 
-No nosso exemplo, também criámos um grupo denominado **MEA**Médio Oriente e Ásia.
+No nosso exemplo, também criámos um grupo com o nome **MEA**, para o Médio Oriente e a Ásia.
 
 > [!NOTE]
 > Se a associação ao grupo não for preenchida com base na associação de grupo de segurança, certifique-se de que atribuiu licenças do Intune aos membros do grupo.
@@ -172,7 +172,7 @@ Ao utilizar o mesmo método dos exemplos anteriores, pode criar grupos com base 
 > [!NOTE]
 > Se tiver utilizadores que utilizem várias plataformas ou sistemas operativos móveis e não dispuser de uma forma de categorizar automaticamente esses utilizadores como utilizadores de Android, iOS ou Windows, considere aplicar políticas ao nível do dispositivo. Isto irá proporcionar-lhe mais flexibilidade na aplicação de políticas específicas de um sistema operativo.
 >
-> Não pode aprovisionar grupos dinamicamente com base no sistema operativo do dispositivo. Em vez disso, faça-o utilizando grupos de segurança do Active Directory ou do Azure Active Directory.
+> Não pode aprovisionar grupos dinamicamente com base no sistema operativo do dispositivo. Em vez disso, faça-o com grupos de segurança do Active Directory ou do Azure Active Directory.
 
 ![Grupo de utilizadores de portáteis](../media/Intune_Planning_Groups_OS_Hierachy_small.png)
 
@@ -202,11 +202,11 @@ Continue a criar grupos de dispositivos, até ter uma hierarquia de grupos de di
 ## Hierarquias de grupos e convenções de nomenclatura
 Para facilitar a gestão de políticas, recomendamos que atribua um nome a cada política de acordo com o objetivo, a plataforma e o âmbito com que é aplicada. Utilize um padrão de nomenclatura que siga a estrutura de grupos que criou quando se preparou para aplicar as políticas.
 
-Por exemplo, para uma política do Android que seja aplicada a todos os dispositivos móveis Android da empresa, ao nível regional dos EUA, o nome da política pode ser **CO_US_Mob_Android_General**.
+Por exemplo, para uma política do Android que seja aplicada a todos os dispositivos móveis Android da empresa, ao nível regional dos EUA, o nome da política pode ser **CO_EUA_Móv_Android_Geral**.
 
 ![Criar política para Android](../media/Intune_planning_policy_android_small.png)
 
-Quando atribuir um nome às políticas desta forma, poderá identificar as políticas rapidamente, bem como a respetiva utilização e âmbito previstos no nó **Políticas**, deste modo:
+Ao atribuir um nome às políticas desta forma, poderá identificar as políticas rapidamente, bem como a respetiva utilização e âmbito previstos no nó **Políticas**, deste modo:
 
 ![Lista de políticas do Intune](../media/Intune_planning_policy_view_small.png)
 

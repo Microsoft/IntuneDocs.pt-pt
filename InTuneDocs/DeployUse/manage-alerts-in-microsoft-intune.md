@@ -33,7 +33,7 @@ Na consola de administração do Intune, siga um dos seguintes conjuntos de pass
 
 -  **Para apresentar informações gerais sobre alertas**, incluindo os três alertas principais e o número total de alertas ativos, escolha **Descrição Geral do Sistema**. Escolha as ligações nestes alertas para ver informações mais detalhadas.
 
--  **Para apresentar dados de resumo para alertas**, escolha **Alertas** > **Descrição Geral**. Na página **Descrição Geral dos Alertas**, pode ver um resumo dos alertas na área **Resumo do Tipo de Alerta**. Os alertas críticos são listados primeiro. Escolha as ligações nestes alertas para ver informações mais detalhadas.
+-  **Para apresentar dados de resumo de alertas**, escolha **Alertas** > **Descrição Geral**. Na página **Descrição Geral dos Alertas**, pode ver um resumo dos alertas na área **Resumo do Tipo de Alerta**. Os alertas críticos são listados primeiro. Escolha as ligações nestes alertas para ver informações mais detalhadas.
 
         > [!NOTE]
         > In some cases, an alert type might appear more than once in the **Alerts Type Summary** list.
@@ -51,12 +51,12 @@ Na consola de administração do Intune, siga um dos seguintes conjuntos de pass
 
     -   **Origem**. Esta coluna tem uma ligação para a origem do alerta. Se o limiar de apresentação do tipo de alerta estiver definido como **Apresentar Tudo**, esta ligação mostra um único dispositivo. Se o limiar de apresentação do tipo de alerta estiver definido como um valor, a ligação mostra uma lista de cada dispositivo que é afetado por este alerta.
 
-    -   **Última Atualização**. Indica a hora a que o alerta foi modificado pela última vez. Se um alerta estiver fechado, será mostrada a hora a que o alerta foi fechado.
+    -   **Última Atualização**. Indica a hora a que o alerta foi modificado pela última vez. Se um alerta estiver fechado, será mostrada a hora a que foi fechado.
 
     -   **Gravidade**. Esta coluna indica a gravidade do alerta.
 
 ## Ver alertas do quadro de avisos
-Os alertas do quadro de avisos fornecem anúncios de serviço importantes. Podem fornecer informações sobre uma futura atualização de serviço ou agenda de manutenção, ou sobre o estado de uma indisponibilidade.
+Os alertas do quadro de avisos fornecem anúncios de serviço importantes. Podem disponibilizar informações sobre uma futura atualização de serviço ou agenda de manutenção ou sobre o estado de uma indisponibilidade.
 
 #### Para ver e gerir alertas do quadro de avisos
 
@@ -84,7 +84,7 @@ Os alertas do Intune permanecem ativos até que um dos seguintes eventos ocorra:
 
 -   O alerta foi fechado manualmente.
 
--   Passaram 5 dias desde que o alerta foi gerado. Após 45 dias, o alerta expira e é fechado automaticamente.
+-   Passaram cinco dias desde que o alerta foi gerado. Após 45 dias, o alerta expira e é fechado automaticamente.
 
 Os alertas que são marcados como fechados são eliminados permanentemente após 90 dias.
 
@@ -94,7 +94,7 @@ Na consola de administração do Intune, siga um dos seguintes conjuntos de pass
 
 - **Para fechar um alerta a partir da lista de Alertas**, escolha **Alertas** > **Todos os Alertas**. Selecione um alerta e, em seguida, escolha **Fechar Alerta**.
 
-- **Para fechar um alerta para um dispositivo específico**, escolha **Grupos** > **Todos os Dispositivos**. Selecione um dispositivo e, em seguida, escolha **Ver Propriedades**. Em seguida, no separador **Alertas**, selecione um alerta e escolha **Fechar Alerta**.
+- **Para fechar um alerta de um dispositivo específico**, escolha **Grupos** > **Todos os Dispositivos**. Selecione um dispositivo e, em seguida, escolha **Ver Propriedades**. Em seguida, no separador **Alertas**, selecione um alerta e escolha **Fechar Alerta**.
 
 - **Para fechar um alerta do quadro de avisos**, escolha **Descrição Geral do Sistema**. Selecione o **X** junto ao alerta do quadro de avisos.
 
