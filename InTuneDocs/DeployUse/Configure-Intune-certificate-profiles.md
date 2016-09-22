@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ Tem de criar um perfil de certificado Fidedigno antes de poder criar um protocol
 1.  Na [consola de administração do Intune](https://manage.microsoft.com), escolha **Política** &gt; **Adicionar Política**.
 2.  Adicione um dos seguintes tipos de política:
     - **Android &gt; Perfil de Certificado Fidedigno (Android 4 e posterior)**
-    - **iOS &gt; Perfil de Certificado Fidedigno (iOS 7.1 e posterior)**
+    - **iOS &gt; Perfil de Certificado Fidedigno (iOS 8.0 e posterior)**
     - **Mac OS X &gt; Perfil de Certificado Fidedigno (Mac OS X 10.9 e posterior)**
     - **Windows &gt; Perfil de Certificado Fidedigno (Windows 8.1 e posterior)**
     - **Windows &gt; Perfil de Certificado Fidedigno (Windows Phone 8.1 e posterior)**
@@ -63,7 +63,7 @@ Após criar um perfil de certificado da AC Fidedigna, crie perfis de certificado
 1.  Na [consola de administração do Intune](https://manage.microsoft.com), escolha **Política** &gt; **Adicionar Política**.
 2.  Adicione um dos seguintes tipos de política:
     - **Android &gt; Perfil de Certificado SCEP (Android 4 e posterior)**
-    - **iOS &gt; Perfil de Certificado SCEP (iOS 7.1 e posterior)**
+    - **iOS &gt; Perfil de Certificado SCEP (iOS 8.0 e posterior)**
     - **Mac OS X &gt; Perfil de Certificado de SCEP (Mac OS X 10.9 e posterior)**
     - **Windows &gt; Perfil de Certificado SCEP (Windows 8.1 e posterior)**
     - **Windows &gt; Perfil de Certificado SCEP (Windows Phone 8.1 e posterior)**
@@ -92,7 +92,7 @@ A nova política é mostrada na área de trabalho **Política**. Pode agora impl
   - **Android &gt; Perfil de Certificado .PFX (Android 4 e posterior)**
   - **Windows &gt; Perfil de Certificado PKCS n.º 12 (.PFX) (Windows 10 e posterior)**
   - **Windows &gt; Perfil de Certificado PKCS n.º 12 (.PFX) (Windows Phone 10 e posterior)**
-  - **iOS > Perfil de Certificado PKCS #12 (.PFX) (iOS 7.1 e posterior)**    
+  - **iOS > Perfil de Certificado PKCS #12 (.PFX) (iOS 8.0 e posterior)**    
     Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Introduza as informações pedidas no formulário da política.
 4.  Escolha **Guardar Política**.
@@ -130,6 +130,6 @@ Em seguida, pode utilizar certificados para ajudar a proteger os perfis de e-mai
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
