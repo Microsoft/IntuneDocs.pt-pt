@@ -4,7 +4,7 @@ description: "Crie políticas que controlam as definições e funcionalidades em
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -27,7 +27,7 @@ O Intune oferece uma variedade de definições gerais incorporadas que pode conf
 
 Utilize a **política de configuração geral do iOS** do Microsoft Intune para configurar definições para:
 
--   **Dispositivo geral, e definições de segurança**. Escolha entre uma lista de predefinições que permitem controlar uma série de funcionalidades e a funcionalidade do dispositivo.
+-   **Dispositivo geral e definições de segurança**. Escolha entre uma lista de predefinições que permitem controlar uma série de funcionalidades e a funcionalidade do dispositivo.
 
 -   **Modo de local público**. Bloqueie um dispositivo para que apenas algumas funcionalidades possam ser utilizadas. Por exemplo, pode permitir que um dispositivo execute apenas uma aplicação gerida que especificar ou pode desativar os botões de volume num dispositivo. Estas definições podem ser utilizadas para um modelo de demonstração de um dispositivo ou para um dispositivo com a finalidade de desempenhar apenas uma função, como um dispositivo de ponto de venda.
 
@@ -39,7 +39,7 @@ Utilize a **política de configuração geral do iOS** do Microsoft Intune para 
 Se a definição que procura não aparecer neste tópico, poderá conseguir criá-la utilizando uma política personalizada de iOS que permita importar as definições que criou utilizando a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para mais informações, consulte "Definições de política personalizada" mais adiante neste tópico.
 
 ### Definições de segurança
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -58,7 +58,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 <sup>1</sup> Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
 ### Definições do sistema
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -71,7 +71,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir passbook quando bloqueado**|Permitir que o utilizador aceda à aplicação Passbook quando o dispositivo está bloqueado.|
 
 ### Definições da nuvem para documentos e dados
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -85,7 +85,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir Fototeca em iCloud**|Permitir que o utilizador armazene fotografias em iCloud. Se for desativado, as fotografias já armazenadas em iCloud serão removidas.|
 
 ### Definições da aplicação para o browser
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -97,7 +97,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir aviso de fraude**|Permitir avisos de fraude no browser.|
 
 ### Definições da aplicação para aplicações
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -111,7 +111,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 
 
 ### Definições da aplicação para jogos
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -119,7 +119,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir jogos multijogador**|Permitir que o utilizador jogue jogos multijogador no dispositivo.|
 
 ### Definições da aplicação para conteúdo multimédia
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -129,7 +129,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 
 
 ### Definições das capacidades do dispositivo para hardware
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -138,7 +138,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Requerer palavra-passe emparelhada para os pedidos AirPlay enviados**|Exigir uma palavra-passe de emparelhamento quando o utilizador utiliza AirPlay para conteúdo de fluxo com outros dispositivos da Apple.|
 
 ### Definições das capacidades do dispositivo para a rede móvel
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -147,7 +147,7 @@ Todas as definições se aplicam ao iOS 7.1 e posterior.
 |**Permitir obtenção global em segundo plano em roaming**|Permitir que o dispositivo obtenha dados, tais como e-mail, enquanto estiver em roaming numa rede celular.|
 
 ### Definições das capacidades do dispositivo para funcionalidades
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
@@ -196,7 +196,7 @@ Na lista **Aplicações Conformes &amp;Não Conformes**, especifique uma lista d
 > [!NOTE]
 > As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
 >
-> -   Antes de poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o gestor de inscrição de dispositivos para colocar o dispositivo em modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
+> -   Antes de poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o [Programa de Inscrição de Dispositivos Apple](ios-device-enrollment-program-in-microsoft-intune) para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 > -   Se a aplicação iOS que especificou for instalada após a implementação da política de configuração, o dispositivo só entrará em modo de local público após ser reiniciado.
 
 ### Informações de referência para aplicações conformes e não conformes
@@ -222,14 +222,14 @@ Para especificar o URL de uma aplicação na lista de aplicações compatíveis 
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
 
 ### Definições de inscrição
-Todas as definições se aplicam ao iOS 7.1 e posterior.
+As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
 |**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**|Ativar o Bloqueio de Ativação em dispositivos iOS supervisionados.|
 
 ### Definições do modo supervisionado
-Pode configurar as seguintes definições em dispositivos com iOS 7.1 e posterior que estejam no modo supervisionado.
+Pode configurar as seguintes definições em dispositivos com iOS 8.0 e posterior que estejam no modo supervisionado.
 
 ### Definições do modo supervisionado para restrições do dispositivo
 
@@ -265,9 +265,9 @@ Pode configurar as seguintes definições em dispositivos com iOS 7.1 e posterio
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
-|**Permitir a modificação das definições de confiança de aplicações empresariais**||
-|**Permitir a instalação de aplicações apenas com a Configuração da Apple e o iTunes**||
-|**Permitir transferências automáticas de aplicações**||
+|**Permitir a modificação das definições de confiança de aplicações empresariais**|Permite que os utilizadores alterem as definições de fidedignidade de aplicações empresariais.|
+|**Permitir a instalação de aplicações apenas com a Configuração da Apple e o iTunes**|Ativa ou desativa a App Store a partir do ecrã principal do dispositivo. Os utilizadores ainda podem utilizar o iTunes ou a ferramenta Apple Configurator para instalar e atualizar aplicações.|
+|**Permitir transferências automáticas de aplicações**|Permite que aplicações compradas noutros dispositivos sejam automaticamente transferidas para este dispositivo. Esta definição não afeta as atualizações da aplicação.|
 |**Permitir alterações para as definições da aplicação Encontrar Amigos**|Permitir que o utilizador altere as definições da aplicação Encontrar Amigos.|
 |**Permitir acesso à loja iBooks**|Permitir que o utilizador procure e compre livros da loja iBooks.|
 |**Permitir a utilização da aplicação Mensagens no dispositivo**|Permitir a utilização da aplicação Mensagens para enviar mensagens de texto.|
@@ -382,6 +382,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

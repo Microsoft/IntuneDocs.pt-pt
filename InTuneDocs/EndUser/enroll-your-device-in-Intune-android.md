@@ -4,7 +4,7 @@ description: Descreve como encriptar dispositivos Android no Intune
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
 # Inscrever o dispositivo Android no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Android para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição de dispositivos permite ao departamento de TI gerir esses recursos do trabalho ou da escola e mantê-los seguros, dando-lhe a liberdade de utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, veja [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo a aplicação do Portal da Empresa e inscrevo o meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Android para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição de dispositivos permite ao departamento de TI gerir esses recursos do trabalho ou da escola e mantê-los seguros, dando-lhe a liberdade de utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, veja [What happens when I install and Company Portal app and enroll my device? (O que acontece quando instalo a aplicação Portal da Empresa e inscrevo o meu dispositivo?)](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
 Estas instruções de inscrição destinam-se a dispositivos Samsung Knox Android e a dispositivos Android "nativos" (não Samsung Knox). Para determinar se tem um dispositivo Samsung Knox, aceda a **Definições** &gt; **Acerca do dispositivo**. Se não vir a "versão KNOX" aí listada, tem um dispositivo Android nativo.
 
@@ -44,7 +44,7 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Inicie sessão na aplicação do Portal da Empresa com a sua conta e palavra-passe profissional ou escolar e, em seguida, toque em **Iniciar sessão**.
+5.  Inicie sessão na aplicação Portal da Empresa com a sua conta e palavra-passe profissional ou escolar e, em seguida, toque em **Iniciar sessão**.
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
@@ -71,7 +71,7 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca efetua ou gere as suas chamadas telefónicas**! A Google controla o texto da mensagem e a Microsoft não a pode alterar. Ao permitir o acesso, está a permitir que o seu dispositivo escreva registos de dados no cartão SD do dispositivo, o que lhe permite mover esses registos com um cabo USB.
+    Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca efetua ou gere as suas chamadas telefónicas**! A Google controla o texto da mensagem e a Microsoft não a pode alterar. Quando permite o acesso, o que está a fazer é permitir que o seu dispositivo envie o respetivo número IMEI para o Intune. O IMEI é um número, semelhante a um número de série, que identifica exclusivamente um dispositivo móvel.
 
     Se negar o acesso, irá aparecer a mensagem quando iniciar sessão novamente no Portal da Empresa, mas pode desativar futuras mensagens ao tocar na caixa de verificação **Não voltar a perguntar**.  Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telemóvel** e ative a permissão.
 
@@ -81,7 +81,7 @@ Se obtiver um erro ao tentar inscrever o dispositivo no Intune, pode [enviar err
 
     Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acede aos seus contactos!** A Google controla o texto da mensagem e a Microsoft não a pode alterar. Ao permitir o acesso, só permite à aplicação Portal da Empresa criar, utilizar e gerir a sua conta de trabalho.
 
-    Se negar o acesso, irá aparecer a mensagem novamente quando tocar em **Enviar Dados**, mas pode desativar futuras mensagens ao tocar na caixa de verificação **Não voltar a perguntar**. Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ative a permissão.
+    Se negar o acesso, irá aparecer a mensagem quando iniciar sessão novamente no Portal da Empresa, mas pode desativar futuras mensagens ao tocar na caixa de verificação **Não voltar a perguntar**.  Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telemóvel** e ative a permissão.
 
 11.  No ecrã **Ativar administrador de dispositivo**, toque em **Ativar**.
 
@@ -116,6 +116,6 @@ Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informa�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

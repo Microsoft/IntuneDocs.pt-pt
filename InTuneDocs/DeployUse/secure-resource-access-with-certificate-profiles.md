@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Quando concede aos utilizadores acesso aos recursos da empresa através de VPN, 
 1. Certifique-se de que tem a infraestrutura de certificados certa, conforme descrito em [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) e [Configurar a infraestrutura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md).
 
 2. Instale um certificado de raiz ou um certificado de Autoridade de Certificação (AC) intermediária em cada dispositivo, para que estes reconheçam a legitimidade da sua AC. Para tal, crie e implemente um **Perfil de Certificado Fidedigno**. Ao implementar este perfil, os dispositivos que gere com o Intune irão pedir e receber o certificado de raiz. Tem de criar um perfil separado para cada plataforma. O **Perfil de Certificado Fidedigno** está disponível para estas plataformas:
- -  iOS 7.1 e posterior
+ -  iOS 8.0 e posterior
  -  Mac OS X 10.9 e posterior
  -  Android 4.0 e posterior
  -  Windows 8.1 e posterior
@@ -33,7 +33,7 @@ Quando concede aos utilizadores acesso aos recursos da empresa através de VPN, 
 
 3. Crie perfis de certificados para que os dispositivos solicitem a utilização de um certificado para autenticação do acesso a VPN, Wi-Fi e e-mail, conforme descrito em [Configurar perfis de certificados do Intune](configure-intune-certificate-profiles.md). Pode criar e implementar um **Perfil de Certificado PKCS #12 (.PFX)** *ou* um **Perfil de Certificado SCEP** em dispositivos que executam as plataformas seguintes:
 
-  -  iOS 7.1 e posterior
+  -  iOS 8.0 e posterior
   -  Android 4.0 e posterior
   -  Windows 10 (Desktop e Mobile) e posterior
 
@@ -56,6 +56,6 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil, associe
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

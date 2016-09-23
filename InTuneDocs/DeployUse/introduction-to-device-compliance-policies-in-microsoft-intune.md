@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ Pode implementar políticas de conformidade em utilizadores. Quando uma polític
 
 A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de conformidade e como são geridas as definições não conformes quando as políticas são utilizadas com uma política de acesso condicional.
 
---------------
+-----------------------------
 
-|Definição da Política| Windows 8.1 e posterior| Windows Phone 8.1 e posterior| iOS 6.0 e posterior|Android 4.0 e posterior<br/>Samsung KNOX Standard 4.0 e posterior|
+|Definição da Política| Windows 8.1 e posterior| Windows Phone 8.1 e posterior| iOS 8.0 e posterior|Android 4.0 e posterior<br/>Samsung KNOX Standard 4.0 e posterior|
 |-----|----|----|----|----|
 |**Configuração do PIN ou da Palavra-passe** |Corrigido|Corrigido|Corrigido|Em quarentena|
 |**Encriptação do dispositivo**|N/D|Corrigido|Corrigido (ao definir um PIN)|Em quarentena|
@@ -43,7 +43,9 @@ A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de 
 |**Versão mínima do SO**|Em quarentena|Em quarentena|Em quarentena|Em quarentena|
 |**Versão máxima do SO**|Em quarentena| Em quarentena| Em quarentena| Em quarentena|
 |**Atestado do estado de funcionamento do Windows**|Windows 10 e Windows 10 Mobile são colocados em Quarentena.<br /><br />A definição não é aplicável ao Windows 8.1|N/D|N/D|N/D|
---------------
+
+------------------------------
+
 **Remediado** = a conformidade é imposta pelo sistema operativo do dispositivo (por exemplo, o utilizador é forçado a definir um PIN).  Nunca se dá o caso de a definição não ser conforme.
 
 **Em quarentena** = o sistema operativo do dispositivo não impõe a conformidade (por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo). Quando os dispositivos não são conformes, são efetuadas as seguintes ações:
@@ -62,6 +64,6 @@ A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

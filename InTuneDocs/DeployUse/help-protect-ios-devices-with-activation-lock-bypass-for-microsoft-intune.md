@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # Ajudar a proteger dispositivos iOS desativando o Bloqueio de Ativação para o Microsoft Intune
-O Microsoft Intune pode ajudá-lo a gerir o Bloqueio de Ativação de iOS, uma funcionalidade da aplicação Encontrar o Meu iPhone para iOS 7.1 ou dispositivos posteriores. O Bloqueio de Ativação é ativado automaticamente quando um utilizador abre a aplicação Encontrar o Meu iPhone num dispositivo. Depois de estar ativado, o Apple ID e a palavra-passe do utilizador têm de ser introduzidos primeiro para que qualquer pessoa possa: 
+O Microsoft Intune pode ajudá-lo a gerir o Bloqueio de Ativação de iOS, uma funcionalidade da aplicação Encontrar o Meu iPhone para iOS 8.0 ou dispositivos posteriores. O Bloqueio de Ativação é ativado automaticamente quando um utilizador abre a aplicação Encontrar o Meu iPhone num dispositivo. Depois de estar ativado, o Apple ID e a palavra-passe do utilizador têm de ser introduzidos primeiro para que qualquer pessoa possa: 
 
 -   Desativar a aplicação Encontrar o Meu iPhone
 
@@ -43,7 +43,7 @@ Para ajudar a resolver estes problemas, a Apple introduziu a desativação do Bl
 > O modo supervisionado para dispositivos iOS permite-lhe utilizar a Configuração da Apple para bloquear um dispositivo e limitar a funcionalidade para fins empresariais específicos. O modo supervisionado destina-se, geralmente, apenas para dispositivos dos utilizadores da empresa.
 
 ## De que forma o Intune o ajuda a gerir o Bloqueio de Ativação
-O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados com o iOS 7.1 e posterior. Apenas para dispositivos supervisionados, o Intune pode obter o código de desativação do Bloqueio de Ativação e enviá-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo, ao utilizar o código como o nome de utilizador e uma palavra-passe em branco.
+O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisionados e não supervisionados com o iOS 8.0 e posterior. Apenas para dispositivos supervisionados, o Intune pode obter o código de desativação do Bloqueio de Ativação e enviá-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo, ao utilizar o código como o nome de utilizador e uma palavra-passe em branco.
 
 **Os benefícios empresariais desta funcionalidade são**:
 
@@ -76,7 +76,7 @@ Pode ver os dispositivos que estão a utilizar o Bloqueio de Ativação de duas 
 
     -   Não ativado
 
-    A caixa **Estado do Bloqueio de Ativação** está em branco para dispositivos que não executem o iOS 7.1 ou posterior.
+    A caixa **Estado do Bloqueio de Ativação** está em branco para dispositivos que não executem o iOS 8.0 ou posterior.
 
 -   Selecione um dispositivo numa vista de grupos, para ver o estado de Bloqueio de Ativação no painel de detalhes do dispositivo.
 
@@ -92,6 +92,6 @@ Pode ver os dispositivos que estão a utilizar o Bloqueio de Ativação de duas 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

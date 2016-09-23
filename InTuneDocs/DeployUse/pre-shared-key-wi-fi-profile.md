@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ Certifique-se de que inclui o caráter de ponto no início.
 4. Escolha **OK**, guarde e, em seguida, implemente a política.
 
     > [!NOTE]
-Esta política só pode ser implementada em grupos de utilizadores.
+    > Esta política só pode ser implementada em grupos de utilizadores.
 
 Da próxima vez que cada dispositivo for registado, a política será aplicada e será criado um perfil Wi-Fi no dispositivo. O dispositivo poderá ligar à rede automaticamente.
 ## Perfil Android ou Wi-Fi do Windows
 
 Segue-se um exemplo do código XML de um perfil Android ou Wi-Fi do Windows:
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`Definido como **falso**, pois **verdadeiro** pode fazer com que o dispositivo espere uma palavra-passe encriptada e, em seguida, tente decifrá-la, o que pode resultar numa falha de ligação.
+> 
+>  `<hex>53534944</hex>` deve ser definido para o valor hexadecimal de `<name><SSID of wifi profile></name>`.
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ Segue-se um exemplo do código XML de um perfil Android ou Wi-Fi do Windows:
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

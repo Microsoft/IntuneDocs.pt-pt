@@ -13,79 +13,56 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
-ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
+ms.sourcegitcommit: 0d1b6fea5284f7825da412351f5b5d5f2a47857d
+ms.openlocfilehash: caef9301c965704893b3a546429760cf779579f2
 
 
 ---
 
 # Inscrever dispositivos para gestão no Intune
-A gestão de dispositivos móveis (MDM) do Microsoft Intune utiliza a inscrição para trazer dispositivos para gestão e permitir o acesso aos recursos. A forma como irá inscrever dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão necessário. Os cenários de "Bring your own device" (BYOD) e de dispositivos pertencentes à empresa (COD) necessitam de um processo de inscrição. As organizações que utilizem o Exchange ActiveSync, no local ou alojado na nuvem, podem tornar a gestão mais leve sem requisitos de inscrição. Os PCs Windows também podem ser geridos com o software de cliente do Intune.
+Pode inscrever dispositivos, incluindo PCs Windows, para ativar a gestão de dispositivos móveis (MDM) com o Microsoft Intune. Este tópico descreve formas diferentes de inscrever dispositivos móveis na gestão do Intune. A forma como os dispositivos inscrevem outros dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão necessário. A inscrição "Bring your own device" (BYOD) permite que os utilizadores inscrevam os seus telemóveis, tablets ou PCs pessoais. A inscrição Dispositivos pertencentes à empresa (COD) permite cenários de gestão como eliminação remota, dispositivos partilhados ou afinidade de utilizador para um dispositivo.
 
-Veja [Escolher como inscrever dispositivos](/intune/get-started/choose-how-to-enroll-devices1) para obter ajuda.
-
-###  Plataformas de dispositivos suportadas
-
-O Intune pode gerir as seguintes plataformas de dispositivos:
-
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
-
-## Definir autoridade de gestão de dispositivos móveis
-A autoridade de MDM define o serviço de gestão que tem permissão para gerir um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune autónomo e o Configuration Manager com o Intune. Se definir o Configuration Manager como autoridade de gestão, nenhum outro serviço pode ser utilizado para gestão de dispositivos móveis.
-
->[!IMPORTANT]
-> Considere cuidadosamente se pretende gerir dispositivos móveis apenas com o Intune (serviço online) ou com o System Center Configuration Manager com o Intune (solução de software no local em conjunto com o serviço online). A definição da autoridade de gestão de dispositivos móveis não pode ser alterada.
-
-1.  Na [consola do administração do Microsoft Intune](http://manage.microsoft.com), escolha **Administrador** &gt; **Gestão de Dispositivos Móveis**.
-
-2.  Na lista **Tarefas** , clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
-
-    ![Caixa de diálogo Definir autoridade de MDM](../media/intune-mdm-authority.png)
-
-3.  O Intune pede a confirmação de que pretende o Intune como a sua autoridade MDM. Selecione a caixa de verificação e, em seguida, escolha **Sim** para utilizar o Microsoft Intune para gerir dispositivos móveis.
-
-## Configurar o Portal da Empresa do Intune
-
-O Portal da Empresa do Intune é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.
-
-> [!TIP]
-> Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa.
-
-Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, basta iniciar sessão na [consola de administrador do Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos ou de serviços, escolher **Administrador** &gt; **Portal da Empresa** e configurar as definições do Portal da Empresa.
-
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
+Se utilizar o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), no local ou alojado na nuvem, pode ativar a gestão simples do Intune sem inscrição. Os PCs Windows também podem ser geridos com o [software de cliente do Intune](#manage-windows-pcs-with-intune).
 
 ## Descrição geral dos métodos de inscrição para dispositivos
 
-A tabela seguinte mostra os métodos de inscrição para dispositivos pertencentes à empresa, com os seus benefícios.
+A seguinte tabela mostra os métodos de inscrição do Intune com as respetivas funcionalidades suportadas. Estas funcionalidades incluem:
+- **Eliminação** – reposição de fábrica do dispositivo, removendo todos os dados. [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md)
+- **Afinidade** – associa dispositivos a utilizadores. Necessário para gestão de aplicações móveis (MAM) e acesso condicional a dados da empresa. [Afinidade de Utilizador](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices)
+- **Bloquear** – impede os utilizadores de remover o dispositivo da gestão. Os dispositivos iOS necessitam do modo supervisionado para Bloquear. [Bloqueio remoto](retire-devices-from-microsoft-intune-management.md#block-access-a-device)
 
-**Métodos de Inscrição do iOS**
+**Métodos de inscrição do iOS**
 
-| **Método** |  **[Eliminação](#Wipe)** | **[Afinidade](#Affinity)**   |   **[Bloqueado](#Lock)** |
-|:---:|:---:|:---:|:---:|
-|**[BYOD](#BYOD)** | Não|    Sim |   Não |
-|**[DEM](#DEM)**|   Não |Não |Não  |
-|**[DEP](#DEP)**|   Sim |   Optar ativamente por participar |   Optar ativamente por participar|
-|**[USB-SA](#USB-SA)**| Sim |   Optar ativamente por participar |   Não|
-|**[USB-Direct](#USB-Direct)**| Não |    Não  | Não|
+| **Método** |  **Eliminação** |  **Afinidade**    |   **Bloquear** | **Detalhes** |
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [mais](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[DEM](#dem)**|   Não |Não |Não  | [mais](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[mais](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [mais](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| Não |    Não  | Não|[mais](ios-direct-enrollment-in-microsoft-intune.md)|
 
-**Métodos de Inscrição do Windows e Android**
+**Métodos de inscrição do Windows e Android**
 
-| **Método** |  **[Eliminação](#Wipe)** | **[Afinidade](#Affinity)**   |   **[Bloqueado](#Lock)** |
-|:---:|:---:|:---:|:---:|
-|**[BYOD](#BYOD)** | Não|    Sim |   Não |
-|**[DEM](#DEM)**|   Não |Não |Não  |
+| **Método** |  **Eliminação** |  **Afinidade**    |   **Bloquear** | **Detalhes**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | Não|    Sim |   Não | [mais](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[DEM](#dem)**|   Não |Não |Não  |[mais](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
-**Métodos de inscrição de dispositivos**
+Para obter uma série de perguntas que o ajudam a encontrar o método correto, consulte [Escolher como inscrever dispositivos](/intune/get-started/choose-how-to-enroll-devices1).
 
-### BYOD
-“Bring Your Own Device.” Os utilizadores instalam a aplicação do Portal da Empresa e inscrevem o respetivo dispositivo. A inscrição de dispositivos no Portal da Empresa associa o dispositivo a uma área de trabalho. A inscrição de dispositivos iOS no Portal da Empresa requer um ID Apple. BYOD não requer configuração adicional para dispositivos pertencentes à empresa. Ver os passos para [configurar a gestão de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Voltar à tabela](#overview-of-device-enrollment-methods))
+## BYOD
+Os utilizadores da inscrição "Bring your own device" instalam a aplicação Portal da Empresa e inscrevem o respetivo dispositivo. Isto permite que os utilizadores se liguem à rede da empresa e adiram ao domínio ou Azure Active Directory. Ativar a inscrição BYOD é um pré-requisito para muitos cenários COD na maioria das plataformas. Consulte [Pré-requisitos para a inscrição de dispositivos](prerequisites-for-enrollment.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
+
+## Dispositivos pertencentes à empresa
+Os dispositivos pertencentes à empresa (COD) podem ser geridos com a consola do Intune. Os dispositivos iOS podem ser inscritos diretamente através das ferramentas fornecidas pela Apple. Todos os tipos de dispositivos podem ser inscritos por um administrador ou gestor utilizando o gestor de inscrição de dispositivos. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à empresa para ativar cenários COD.
+
+[Inscrever dispositivos pertencentes à empresa](manage-corporate-owned-devices.md)
 
 ### DEM
-Gestor de inscrição de dispositivos. O administrador cria contas DEM para gerir os dispositivos da empresa. Os gestores podem, então, instalar o Portal da Empresa e inscrever vários dispositivos sem utilizador. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
+A gestão de inscrição de dispositivos é uma conta especial do Intune utilizada para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### DEP
-Programa de registo de dispositivos da Apple. O administrador cria e implementa a política "por ondas eletromagnéticas" para dispositivos iOS adquiridos e geridos com o DEP. O dispositivo é inscrito quando o utilizador executa o Assistente de Configuração iOS. Este método suporta o modo **iOS Supervisionado**, que, por sua vez, permite:
+A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando o utilizador ativa o dispositivo pela primeira vez e executa o Assistente de Configuração do iOS. Este método suporta o modo **iOS Supervisionado**, que, por sua vez, permite:
   - Inscrição bloqueada
   - Acesso condicional
   - Deteção de jailbreak
@@ -102,35 +79,7 @@ Ligado por USB, inscrição através do Assistente de Configuração. O administ
 Saiba mais sobre [inscrição através do Assistente de Configuração com o Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### USB-Direct
-Inscrição direta. O administrador cria uma política do Intune e exporta-a para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente, sem necessidade de uma reposição de fábrica. O administrador tem de inscrever cada dispositivo manualmente. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados, e não suportam acesso condicional, deteção de jailbreak nem gestão de aplicações móveis. Saiba mais sobre [inscrição direta com o Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
-
-**Comportamento dos dispositivos móveis pertencentes à empresa**
-
-### Eliminação
-Especifica se a inscrição do dispositivo requer a reposição de fábrica do dispositivo, removendo todos os dados do dispositivo e repondo-o para o estado original.
-[Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md) ([Voltar à tabela](#overview-of-device-enrollment-methods))
-
-### Afinidade
-Especifica se o método de inscrição suporta “Afinidade de utilizador”, que liga um dispositivo a um utilizador específico. Os dispositivos que “Optam ativamente por participar” podem ser inscritos com ou sem afinidade de utilizador. A afinidade de utilizador é necessária para suportar o seguinte:
-  - Aplicações de gestão de aplicações móveis (MAM)
-  - Acesso condicional a e-mail e dados da empresa
-  - Aplicação do Portal da Empresa
-
-[Afinidade de Utilizador](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Voltar à tabela](#overview-of-device-enrollment-methods))
-
-### Bloquear
-Especifica se o dispositivo pode ser bloqueado para impedir que o utilizador remova a política do Intune, removendo efetivamente o dispositivo da gestão. Em dispositivos iOS, o bloqueio do dispositivo requer que este esteja no modo Supervisionado.
-([Voltar à tabela](#overview-of-device-enrollment-methods))
-
-## Ativar a inscrição de dispositivos  
- A inscrição permite que os utilizadores acedam aos recursos da empresa nos respetivos dispositivos pessoais e permite que o administrador assegure que os dispositivos cumprem as políticas que protegem os recursos da empresa. Esta é a melhor forma de ativar os cenários "bring your own device" no Intune. O administrador tem de ativar a inscrição na consola do Intune, o que pode requerer a criação de uma relação de confiança com o dispositivo e a atribuição de licenças aos utilizadores. Em seguida, o dispositivo é inscrito, normalmente por utilizadores que introduzem as respetivas credenciais profissionais ou escolares. O dispositivo recebe então a política do Intune e obtém acesso aos recursos.
-
-[Preparar-se para inscrever dispositivos no Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-
-## Inscrever dispositivos pertencentes à empresa
-Os dispositivos pertencentes à empresa (COD) podem ser geridos com a consola do Intune. Os dispositivos iOS podem ser inscritos diretamente através das ferramentas fornecidas pela Apple. Todos os tipos de dispositivos podem ser inscritos por um administrador ou gestor utilizando o gestor de inscrição de dispositivos. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à empresa para ativar cenários COD.
-
-[Inscrever dispositivos pertencentes à empresa](manage-corporate-owned-devices.md)
+Inscrição direta. O administrador cria uma política do Intune e exporta-a para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente, sem necessidade de uma reposição de fábrica. O administrador tem de inscrever cada dispositivo manualmente. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados e não suportam acesso condicional, deteção de jailbreak nem gestão de aplicações móveis. Saiba mais sobre [inscrição direta com o Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ## Gestão de dispositivos móveis com o Exchange ActiveSync e o Intune
 Os dispositivos móveis que não estão inscritos, mas que se ligam ao Exchange ActiveSync (EAS), podem ser geridos pelo Intune utilizando a política de MDM do EAS. O Intune utiliza um Exchange Connector para comunicar com o EAS, no local e alojado na nuvem.
@@ -139,18 +88,29 @@ Os dispositivos móveis que não estão inscritos, mas que se ligam ao Exchange 
 
 
 ## Gerir Computadores com Windows com o Intune  
-Também pode utilizar o Microsoft Intune para gerir PCs Windows utilizando o software de cliente do PC Windows do Intune. Os PCs geridos com o cliente do Intune podem:
+Também pode utilizar o Microsoft Intune para gerir PCs Windows com o software de cliente do Intune. Os PCs geridos com o cliente do Intune podem:
 
  - Reportar inventários de software e hardware
  - Instalar aplicações de ambiente de trabalho (por exemplo, ficheiros .exe e .msi)
  - Definições de firewall
 
-Os computadores geridos com o software de cliente do Intune não podem ser apagados seletivamente nem extintos e não podem tirar partido das inúmeras funcionalidades de gestão do Intune, como o acesso condicional, as definições de VPN e Wi-Fi ou a implementação de certificados e configurações de e-mail.
+Os PCs geridos com o software de cliente do Intune não podem ser eliminados e não podem tirar partido de muitas funcionalidades de gestão do Intune, tal como o acesso condicional, as definições de VPN e Wi-Fi ou a implementação de certificados e a configuração de e-mail.
 
 [Gerir Computadores com Windows com o Intune](manage-windows-pcs-with-microsoft-intune.md)
 
+##  Plataformas de dispositivos suportadas
+
+O Intune pode gerir as seguintes plataformas de dispositivos:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+## Passos seguintes
+- [Pré-requisitos para a inscrição de dispositivos](prerequisites-for-enrollment.md)
+- [Gerir dispositivos pertencentes à empresa](manage-corporate-owned-devices.md)
+- [Dispositivos móveis e computadores suportados](../get-started/supported-mobile-devices-and-computers.md)
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

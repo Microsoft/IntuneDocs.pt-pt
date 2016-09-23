@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
+ms.sourcegitcommit: a4cc8b7e34e8809eebd7fdec8ffac0599c96d309
+ms.openlocfilehash: ce27fc737fdf47903d7554eb15f24f07b3524406
 
 
 ---
@@ -43,7 +43,7 @@ Embora o cliente de software do Intune suporte [capacidades de gestão que ajuda
 
 |Requisito|Mais informações|
 |---------------|--------------------|
-|Sistema operativo | Dispositivo Windows com Windows 7 ou posterior |
+|Sistema operativo | Dispositivo Windows a executar o Windows Vista ou posterior. As versões Home Edition não são suportadas.|
 |Permissões administrativas|A conta que instala o software de cliente tem de ter permissões de administrador local no dispositivo.|
 |Windows Installer 3.1|O computador tem de ter instalado, no mínimo, o Windows Installer 3.1.<br /><br />Para ver a versão existente do Windows Installer num computador:<br /><br />-   No computador, clique com o botão direito do rato em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Pode transferir a versão mais recente do Windows Installer em [Redistribuíveis do Windows Installer](http://go.microsoft.com/fwlink/?LinkID=234258) no site da Microsoft Developer Network.|
 |Remover software de cliente incompatível|Antes de instalar o software de cliente do Intune, tem de desinstalar qualquer software de cliente do Configuration Manager ou do System Management Server desse PC.|
@@ -75,6 +75,6 @@ Normalmente, o agente de cliente do Intune é executado silenciosamente, em segu
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

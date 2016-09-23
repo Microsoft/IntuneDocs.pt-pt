@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,13 +27,13 @@ Este tópico explica os passos necessários para aplicar políticas de MAM a apl
 ##  Passo 1: preparar a aplicação
 Antes de poder aplicar políticas de MAM a uma aplicação, primeiro tem de encapsular a aplicação com a ferramenta de Encapsulamento de Aplicações do Microsoft Intune.  As instruções para instalar e utilizar a ferramenta de encapsulamento de aplicações estão incluídas na transferência.  
 >[!IMPORTANT]  
->Esta versão da ferramenta de encapsulamento de aplicações, que suporta dispositivos que não estão inscritos no Intune, estará disponível na pré-visualização privada nas próximas semanas. Se pretende participar, envie um e-mail para msintuneappsdk@microsoft.com para obter mais informações.
+>Esta versão da ferramenta de encapsulamento de aplicações, que suporta dispositivos que não estão inscritos no Intune está disponível para pré-visualização pública. Se quiser participar na pré-visualização pública, pode transferir a ferramenta a partir [desta página do Github](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) para iOS e a partir [deste site do Github](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) para Android.
 
 ## Passo 2: adicionar a aplicação
 
 Para associar a aplicação de linha de negócio às políticas de MAM, tem de adicionar os detalhes da aplicação ao seu inquilino/subscrição do Intune, efetuando os seguintes passos:
 
-1. No [Portal do Azure](https://portal.azure.com/), aceda a **Gestão de aplicações móveis do Intune > Definições**, e escolha **Aplicações de linha de negócio**.
+1. No [Portal do Azure](https://portal.azure.com/), aceda a **Gestão de aplicações móveis do Intune > Definições** e selecione **Aplicações de linha de negócio**.
 
   ![Captura de ecrã do painel Definições com opção de linha de negócio](../media/mam-azure-portal-lob-on-settings.png)
 
@@ -75,6 +75,6 @@ Pode remover uma aplicação de linha de negócio da lista de aplicações.  Ist
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Adicionar aplicações para PCs Windows | Microsoft Intune"
+title: "Adicionar aplicações para PCs Windows que executam o cliente de software do Intune | Microsoft Intune"
 description: "Utilize as informações deste tópico para saber como adicionar aplicações para PCs Windows ao Intune antes de implementá-las."
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Adicionar aplicações para PCs Windows no Microsoft Intune
+# Adicionar aplicações para PCs Windows que executam o cliente de software do Intune
 
 Utilize as informações deste tópico para saber como adicionar aplicações ao Intune antes de implementá-las.
 
 > [!IMPORTANT]
-> As informações neste tópico ajudam a adicionar aplicações em PCs Windows que gere com o software de cliente PC do Intune. Se pretender adicionar aplicações para PC com Windows inscritos e outros dispositivos móveis, consulte [Adicionar aplicações para dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> As informações neste tópico ajudam-no a adicionar aplicações para PCs Windows que gere ao utilizar o cliente de software do Intune. Se pretender adicionar aplicações para PC com Windows inscritos e outros dispositivos móveis, consulte [Adicionar aplicações para dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
 ## Adicionar a aplicação
@@ -90,6 +90,6 @@ Depois de criar uma aplicação, o passo seguinte é implementá-la. Para obter 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

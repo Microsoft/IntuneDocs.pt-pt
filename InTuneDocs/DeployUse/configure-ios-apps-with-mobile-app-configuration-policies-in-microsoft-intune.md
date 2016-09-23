@@ -4,7 +4,7 @@ description: "Utilize políticas de configuração de aplicações móveis no In
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 9b70517251c6225afee719c7e3380c584785251b
 
 
 ---
@@ -37,7 +37,7 @@ As políticas de configuração de aplicações móveis podem ajudar a eliminar 
 Não implemente estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, implemente-a. As definições de política serão utilizadas sempre que a aplicação as verificar (normalmente, a primeira vez for executada).
 
 > [!TIP]
-> Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 7.1 e posterior. Suporta os seguintes tipos de instalação de aplicações:
+> Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 8.0 e posterior. Suporta os seguintes tipos de instalação de aplicações:
 >
 > -   **Aplicação iOS gerida da loja de aplicações**
 > -   **Pacote de aplicações para iOS**
@@ -139,6 +139,6 @@ Quando criar um ficheiro de configuração de aplicação móvel, pode especific
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
