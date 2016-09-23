@@ -4,7 +4,7 @@ description: "Ligações para informações para partilhar com os utilizadores f
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
+ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
+ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 
 ---
@@ -57,14 +57,12 @@ Para compreender como os utilizadores finais obtêm as aplicações, escolha de 
 - [Como os utilizadores de dispositivos iOS obtêm as aplicações](how-your-ios-users-get-their-apps.md)
 - [Como os utilizadores de dispositivos Windows obtêm as aplicações](how-your-windows-users-get-their-apps.md)
 
-## Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
-Para ajudar os utilizadores a resolver problemas que possam ter quando estão a utilizar o Portal da Empresa, pode rever uma [lista de mensagens que os utilizadores podem ver no Portal da Empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 Se existirem outras informações que gostaria de ver abordadas neste artigo, adicione a sugestão à caixa Comentário na parte inferior deste tópico. Obrigado!
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
