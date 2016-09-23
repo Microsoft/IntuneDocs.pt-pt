@@ -13,8 +13,8 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 61480eb11cc8f4b6b336e48a50c2fe1b5fcd3fac
-ms.openlocfilehash: c05dfc8154cd13b74f42b4f63262613be8956d87
+ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
+ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
 
 
 ---
@@ -76,10 +76,10 @@ Seguem-se os principais passos que tem de efetuar para implementar esta soluçã
 2.  [Ativar a ligação Lookout MTP no Intune](enable-lookout-mtp-connection-in-intune.md)
 3.  [Configurar e implementar a aplicação Lookout for Work](configure-and-deploy-lookout-for-work-apps.md)
 4.  [Configurar a política de compatibilidade](enable-device-threat-protection-rule-in-compliance-policy.md)
-5.  [Resolução de Problemas da Integração do Lookout](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration.md)
+5.  [Resolução de Problemas da Integração do Lookout](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
