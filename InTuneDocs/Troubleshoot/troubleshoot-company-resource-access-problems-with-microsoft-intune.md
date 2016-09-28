@@ -4,7 +4,7 @@ description: "Códigos de erros e de estado neste tópico para o ajudar a resolv
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|A obter conteúdo|Motivo Provável: o estado de tarefa 30 indica que a transferência de uma aplicação do utilizador falhou.<br /><br />As causas prováveis para tal podem ser:<br /><br />O dispositivo perdeu a conectividade à Internet enquanto a transferência estava em curso.<br /><br />O certificado emitido para o dispositivo no momento da inscrição pode ter expirado.<br /><br />Mitigação:<br /><br />Inicie a aplicação Aplicações da Empresa a partir do Painel de Controlo do dispositivo para confirmar que o certificado do dispositivo não expirou; caso tenha expirado, terá de reinscrevê-lo.<br /><br />Confirme se o dispositivo está ligado à Internet e tente pedir novamente a aplicação.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Transferência de conteúdo concluída||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Instalação em curso||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Instalação Ocorreu um erro|A instalação da aplicação falhou após a transferência.<br /><br />O certificado com assinatura de código com o qual a aplicação foi assinada não está presente no dispositivo.<br /><br />Uma dependência da arquitetura da qual a aplicação depende não está instalada no dispositivo.<br /><br />Verifique se o certificado com assinatura de código com o qual a aplicação foi assinada está presente no dispositivo e confirme junto do administrador se esse certificado foi direcionado para todos os dispositivos Windows RT inscritos na empresa.<br /><br />No caso de a falha da instalação se dever a uma dependência de arquitetura em falta, o administrador terá de publicar novamente a aplicação ao empacotar a arquitetura juntamente com o pacote de aplicações.<br /><br />O pacote de aplicações transferido não é um pacote válido, pode ter sido danificado ou pode não ser compatível com a versão do SO no dispositivo.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Ocorreu um erro de instalação|A instalação da aplicação falhou após a transferência.<br /><br />O certificado com assinatura de código com o qual a aplicação foi assinada não está presente no dispositivo.<br /><br />Uma dependência da arquitetura da qual a aplicação depende não está instalada no dispositivo.<br /><br />Verifique se o certificado com assinatura de código com o qual a aplicação foi assinada está presente no dispositivo e confirme junto do administrador se esse certificado foi direcionado para todos os dispositivos Windows RT inscritos na empresa.<br /><br />No caso de a falha da instalação se dever a uma dependência de arquitetura em falta, o administrador terá de publicar novamente a aplicação ao empacotar a arquitetura juntamente com o pacote de aplicações.<br /><br />O pacote de aplicações transferido não é um pacote válido, pode ter sido danificado ou pode não ser compatível com a versão do SO no dispositivo.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Instalação Com Êxito||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Desinstalação em curso||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Ocorreu um erro de desinstalação||
@@ -127,7 +127,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016314112|0x87D17D00|22000: utilização de chave inválida|
 |-2016315105|0x87D1791F|21007: não é possível verificar conta|
 |-2016315106|0x87D1791E|21006: não é possível desencriptar certificado|
-|-2016315107|0x87D1791D|21005: conta não exclusiva|
+|-2016315107|0x87D1791D|21005: conta não exclusiva (O perfil de e-mail já existe no dispositivo)|
 |-2016315108|0x87D1791C|21004: não é possível criar conta|
 |-2016315109|0x87D1791B|21003: nenhum nome de anfitrião|
 |-2016315110|0x87D1791A|21002: não é possível cumprir a política de encriptação do servidor|
@@ -372,6 +372,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 48377dfbe945447c6c4141d86e134685b97db1e8
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
 
 
 ---
@@ -57,11 +57,12 @@ Quando inscrever o seu dispositivo Windows no Intune, está a dar permissão ao 
 
 -   Fabricante
 
-
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Site do Portal da Empresa](http://
-
+Pode [ler mais](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows).
 
 
-<!--HONumber=Aug16_HO5-->
+
+
+
+<!--HONumber=Sep16_HO4-->
 
 

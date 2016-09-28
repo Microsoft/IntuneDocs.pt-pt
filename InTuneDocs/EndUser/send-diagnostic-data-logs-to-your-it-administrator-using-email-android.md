@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 
 ---
@@ -25,29 +25,20 @@ ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
 
 Se obtiver um erro no dispositivo Android enquanto está a trabalhar com as suas aplicações escolares ou empresariais ou enquanto está na aplicação Portal da Empresa, pode enviar registos de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos registos, os quais tornarão mais fácil para o administrador de TI descobrir o problema, ative o Registo Verboso. pode ler mais sobre classes base em [registo verboso](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Para ativar o registo verboso:
+Para enviar registos para o seu administrador de TI por e-mail:
 
 1.  Abra a aplicação Portal da Empresa.
 
-2.  Toque em **Menu** &gt;  **Definições**.
+2.  Toque em **Menu** &gt; **Ajuda e Feedback**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o tipo de dispositivo Android que tem.
 
-3.  Em **Dados de Diagnóstico**, toque em **Enviar Dados**.
+3.  Em **Ajuda**, toque em **Obter Ajuda**.
 
-    > [!NOTE]
-    > **Apenas se estiver a utilizar dispositivos Android 6.0 ou posteriores:** quando toca em **Enviar Dados**, aparece a mensagem **Permitir que o Portal da Empresa aceda a fotografias, multimédia e ficheiros no seu dispositivo?**.
-
-    Esta mensagem é enganosa, porque a **Microsoft nunca acede a fotografias, multimédia ou ficheiros no seu dispositivo!** A Google controla o texto da mensagem, pelo que a Microsoft não a pode alterar.  Ao permitir o acesso, está a permitir que o seu dispositivo escreva registos de dados no cartão SD do dispositivo, o que lhe permite mover esses registos com um cabo USB.
-
-    Se negar o acesso, irá aparecer a mensagem novamente quando tocar em **Enviar Dados**, mas pode desativar futuras mensagens ao tocar na caixa de verificação **Não voltar a perguntar**.  Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Armazenamento** e ative a permissão.
-
-4.  Siga as indicações para escolher uma aplicação de e-mail a utilizar para enviar os registos ao administrador de TI. A aplicação criará um e-mail pré-endereçado com todos os registos anexados.
+Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
