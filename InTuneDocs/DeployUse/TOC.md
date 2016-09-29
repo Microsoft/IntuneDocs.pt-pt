@@ -66,8 +66,9 @@
 ## [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md)
 
 ## [Adicionar aplicações](add-apps.md)
-### [Adicionar aplicações para dispositivos móveis](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Adicionar aplicações para PCs Windows](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Adicionar aplicações a dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Adicionar aplicações a PCs do cliente Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Gerir contratos de licença de PCs do cliente Intune](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Implementar aplicações](deploy-apps.md)
 ### [Implementar aplicações em dispositivos e PCs](deploy-apps-in-microsoft-intune.md)
 ### [Monitorizar aplicações](monitor-apps-in-microsoft-intune.md)
@@ -78,7 +79,7 @@
 ## [Configurar aplicações](update-apps-using-microsoft-intune.md)
 ### [Atualizar aplicações ](update-apps-using-microsoft-intune.md)
 ### [Políticas de configuração de aplicações iOS](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
-### [Perfis de aprovisionamento de aplicações móveis iOS](ios-mobile-app-provisioning-profiles.md)
+### [Perfis de aprovisionamento de aplicações para dispositivos móveis iOS](ios-mobile-app-provisioning-profiles.md)
 ### [Gerir o acesso à Internet](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -101,6 +102,11 @@
 #### [Restringir o acesso ao e-mail: exemplos](restrict-email-access-example-scenarios.md)
 
 ### [Restringir o acesso a redes (Cisco ISE)](restrict-access-to-networks.md)
+### [Restringir o acesso com base no dispositivo, na rede e no risco da aplicação](restrict-access-based-on-device-network-app-risk.md)
+#### [Configurar o Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [Ativar o Lookout no Intune](enable-lookout-mtp-connection-in-intune.md)
+#### [Implementar o Lookout em aplicações de trabalho](configure-and-deploy-lookout-for-work-apps.md)
+#### [Ativar a política de conformidade de proteção contra ameaças de dispositivos](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Proteger os dados da aplicação com MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portal do Azure para políticas de MAM](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -115,8 +121,8 @@
 #### [Consola de administração do Intune para políticas MAM](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Preparar aplicações de linha de negócio para MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-#### [Moldar aplicações iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-#### [Moldar aplicações Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Encapsular aplicações para iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Encapsular aplicações para Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Aplicações LOB em dispositivos não geridos pelo Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Utilizar o SDK quando escreve uma aplicação](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
@@ -137,6 +143,6 @@
 # [Resolver Problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

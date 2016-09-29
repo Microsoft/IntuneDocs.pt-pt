@@ -1,5 +1,5 @@
 ---
-title: "É-lhe pedido que instale o Lookout for Work | Microsoft Intune"
+title: "É-lhe pedido que instale o Lookout for Work no seu dispositivo Android | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
@@ -12,19 +12,18 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
-ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 ---
 
 # É-lhe pedido que instale o Lookout for Work
 
-Se vir a mensagem "O Lookout for Work não está instalado e ativado" que apresentamos abaixo, significa que o seu administrador de TI precisa que instale a aplicação Lookout for Work, que o ajuda a proteger o seu dispositivo ao detetar potenciais ameaças à segurança.
+Antes de poder aceder ao seu trabalho, o seu administrador de TI precisa que instale a aplicação Lookout for Work, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança.
 
-![tem de resolver um problema de conformidade](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-**O que precisa para resolver o problema:**
+**O que tem de fazer:**
 
 1.  Arraste para baixo a partir da parte superior do ecrã para abrir a Barra de Notificações e, em seguida, toque em **Aplicação necessária – Instale o Lookout for Work a partir da Play Store**.
 
@@ -32,7 +31,7 @@ Se vir a mensagem "O Lookout for Work não está instalado e ativado" que aprese
 
     É direcionado para a página de instalação do Lookout for Work na Play Store.
 
-2.  Instale o Lookout for Work e toque em **ACEITAR** para permitir que o Lookout for Work aceda ao seu dispositivo.
+2.  Instale o Lookout for Work e, em seguida, toque em **ACCEPT (ACEITAR)** para permitir que o Lookout for Work aceda ao seu dispositivo.
 
     ![toque em aceitar para permitir que o Lookout for Work aceda ao seu dispositivo](./media/lookout-accept-store-permissions-android.png)
 
@@ -40,7 +39,7 @@ Se vir a mensagem "O Lookout for Work não está instalado e ativado" que aprese
 
     ![abra o Lookout for Work e toque em Activate (Ativar)](./media/lookout-activate-button-android.png)
 
-4. Toque em **Sign in with a work account (Inicie sessão com uma conta profissional)** e introduza a conta que utiliza para aceder aos e-mails, ficheiros e outros dados do seu trabalho ou escola.
+4. Toque em **Sign in with a work account (Iniciar sessão com uma conta profissional)** e introduza a conta que utiliza para aceder ao seu e-mail e ficheiros escolares ou profissionais.
 
     ![inicie sessão com a sua conta escolar ou profissional](./media/lookout-sign-in-android.png)
 
