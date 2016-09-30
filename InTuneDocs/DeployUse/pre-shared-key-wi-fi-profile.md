@@ -1,6 +1,6 @@
 ---
 title: Wi-Fi com PSK | Microsoft Intune
-description: "Utilize a Configuração Personalizada para criar um perfil de VPN com uma chave pré-partilhada."
+description: "Utilize a Configuração Personalizada para criar um perfil Wi-Fi com uma chave pré-partilhada."
 keywords: 
 author: nbigman
 manager: angrobe
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ Segue-se um exemplo do código XML de um perfil Android ou Wi-Fi do Windows:
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`Definido como **falso**, pois **verdadeiro** pode fazer com que o dispositivo espere uma palavra-passe encriptada e, em seguida, tente decifrá-la, o que pode resultar numa falha de ligação.
+> `<protected>false</protected>`tem de ser definido como **falso**, pois **verdadeiro** pode fazer com que o dispositivo espere uma palavra-passe encriptada e, em seguida, tente decifrá-la, o que pode resultar numa falha de ligação.
 > 
 >  `<hex>53534944</hex>` deve ser definido para o valor hexadecimal de `<name><SSID of wifi profile></name>`.
+>  Os dispositivos com Windows 10 podem devolver um erro *0x87D1FDE8 A remediação falhou* falso, mas continuarão a ser aprovisionados com o perfil.
 
     <!--
     <Name of wifi profile> = Name of profile
