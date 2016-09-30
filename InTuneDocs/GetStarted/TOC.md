@@ -11,6 +11,12 @@
 ### [Utilização da largura de banda de rede](network-bandwidth-use.md)
 ### [Nomes de domínio personalizados](domain-names-for-microsoft-intune.md)
 
+## [Escolher como gerir dispositivos](choose-how-to-manage-devices.md)
+### [Funcionalidades de gestão de dispositivos inscritos](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Funcionalidades de cliente de software de PCs do Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [Migrar para o Intune](migrate-to-intune.md)
+
 ## [Guia de introdução do Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Iniciar sessão no Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurar um nome de domínio personalizado](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [Inscrever dispositivos móveis e instalar aplicações](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Publicar tarefas de configuração](post-configuration-tasks.md)
 
-## [Escolher como gerir dispositivos](choose-how-to-manage-devices.md)
-### [Funcionalidades de gestão de dispositivos inscritos](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Funcionalidades de cliente de software de PCs do Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Fases de implementação para implementações do Intune](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Âmbito do projeto](project-scope.md)
 ### [Prova de conceito](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [Operações e manutenção](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [Novidades](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Implementar e Utilizar](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Desenvolver e Personalizar Aplicações](/intune/develop/intune-app-sdk)
 # [Resolver Problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

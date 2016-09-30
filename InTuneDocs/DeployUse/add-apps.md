@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ As aplicações baseadas em ligações externas não são armazenadas no seu esp
 Pode utilizar aplicações iOS geridas para gerir e implementar aplicações iOS gratuitas a partir da loja de aplicações. Também pode utilizar aplicações iOS geridas para associar [políticas de gestão de aplicações móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicações compatíveis](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e rever o respetivo estado na consola do administrador.<br /><br />As aplicações iOS geridas não são armazenadas no seu espaço de armazenamento na nuvem do Intune.
 
 > [!TIP]
-> As opções para dispositivos móveis só estão disponíveis quando [definir a autoridade MDM](get-ready-to-enroll-devices-in-microsoft-intune.md) para o Intune.
+> As opções para dispositivos móveis só estão disponíveis quando [definir a autoridade MDM](prerequisites-for-enrollment.md) para o Intune.
 
 ## Intune Software Publisher
 O Microsoft Intune Software Publisher é iniciado quando adiciona ou modifica aplicações a partir da consola do administrador do Intune. A partir do publicador, pode selecionar e configurar um tipo de instalador de software que irá permitir:
@@ -82,6 +82,6 @@ Terá de adicionar as aplicações na consola do Intune antes de poder implement
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

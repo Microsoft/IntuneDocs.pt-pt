@@ -13,8 +13,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 90f50d14fac0e335f3b7c5e0825b0bb243b7a532
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
 
 
 ---
@@ -45,11 +45,13 @@ As aplicações podem ser geridas ou não geridas, conforme descrito abaixo. O p
 
 ### Consulte também
 [Adicionar aplicações com o Microsoft Intune](/intune/deploy-use/add-apps)
-[Como os utilizadores de iOS obtêm as aplicações](how-your-ios-users-get-their-apps.md)
-[Como os utilizadores do Windows obtêm as aplicações](how-your-windows-users-get-their-apps.md)
+
+[Como os utilizadores de dispositivos iOS obtêm as aplicações](how-your-ios-users-get-their-apps.md)
+
+[Como os utilizadores de dispositivos Windows obtêm as aplicações](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
