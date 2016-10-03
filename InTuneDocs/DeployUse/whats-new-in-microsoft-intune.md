@@ -2,9 +2,9 @@
 title: Novidades | Microsoft Intune
 description: "Saiba quais são as novidades deste mês e as versões anteriores do Microsoft Intune"
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,9 +72,14 @@ Os utilizadores finais de dispositivos em não conformidade receberão um pedido
 Foi adicionado um novo ícone Notificações à homepage do Portal da Empresa para Android. Tocar neste ícone permite aceder à página Notificações, que mostra ao utilizador final todos os itens que necessitam de atenção na aplicação Portal da Empresa, como dispositivos que não estejam em conformidade, atualizações de inscrições e ativação de inscrições. A aplicação Portal da Empresa para iOS já tem esta experiência de notificações. A nova página Notificações permite que o utilizador não tenha de ver a página da Configuração do Acesso da Empresa sempre que iniciar ou retomar o Portal da Empresa, desde que o dispositivo já esteja inscrito. Se criar as suas próprias orientações para o utilizador final, poderá querer atualizar a sua documentação para que a mesma reflita esta alteração. Consulte as capturas de ecrã atualizadas [aqui](https://aka.ms/androidcpupdate).  
 <!---TFS 1095560--->
 
+**Fornecer feedback no Portal da Empresa para Android**</br>
+Foi adicionado um novo item ao menu do Portal da Empresa para Android. Tocar em **Ajuda e Feedback** mostra três ações:
+* Utilize a opção **Obter Ajuda** para denunciar problemas relacionados com o Portal da Empresa ao seu departamento de TI. O departamento de TI criará um e-mail com o seu cliente de e-mail e anexará os registos do Portal da Empresa ao mesmo. A opção **Obter Ajuda** substitui a funcionalidade **Enviar Dados** na página **Definições**.
+* Utilize a opção **Enviar Feedback** para fornecer feedback à equipa do Portal da Empresa.
+* Utilize a opção **Classificar a nossa aplicação** para deixar uma classificação ou uma crítica à aplicação Portal da Empresa no Google Play.
 
 ### iOS
-**Alterações ao suporte para a aplicação do Portal da Empresa para iOS**<br/>
+**Alterações ao suporte para a aplicação Portal da Empresa para iOS**<br/>
 Todos os utilizadores da aplicação Portal da Empresa do Microsoft Intune para iOS têm de utilizar agora a versão mais recente. Os novos utilizadores só poderão transferir a versão mais recente e aos utilizadores atuais será pedido que atualizem para a mesma. A versão mais recente necessita do iOS 8.0 ou posterior, pelo que os utilizadores com dispositivos com versões mais antigas do iOS não poderão utilizar o Portal da Empresa nem inscrevê-los até os atualizarem para o iOS 8.0 ou posterior e atualizarem a aplicação Portal da Empresa para a versão mais recente. Os dispositivos inscritos que tenham versões anteriores ao iOS 8.0 continuarão a ser geridos e listados na Consola de Administração do Intune.
 <!---TFS 1283165--->
 
@@ -88,7 +93,7 @@ Pode encontrar capturas de ecrã atualizadas [aqui](https://gallery.technet.micr
 <!---TFS 1317133--->
 
 **Solicite a instalação da aplicação Browser Gerido do iOS se o Profissional de TI definir esse requisito para uma aplicação**<br/>
-Se tiver configurado um Web Clip para ser aberto apenas no browser gerido e este não estiver instalado num dispositivo, a aplicação Portal da Empresa irá pedir ao utilizador para instalar o browser gerido antes de poder instalar o Web Clip. 
+Se tiver configurado um Web Clip para ser aberto apenas no browser gerido e este não estiver instalado num dispositivo, a aplicação Portal da Empresa irá pedir ao utilizador para instalar o browser gerido antes de poder instalar o Web Clip.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Se pretender ver o que foi disponibilizado no Intune durante os últimos seis me
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
