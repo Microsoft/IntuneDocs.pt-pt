@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
-ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 149508942b89b15308591e17723884add3ac78ae
 
 
 ---
@@ -32,7 +32,7 @@ Como administrador do Intune, pode ativar a inscrição e gestão de PCs Windows
 Pode permitir que os utilizadores inscrevam os dispositivos deles através da instalação e inscrição dos dispositivos com a aplicação Portal da Empresa do Intune. A criação de um CNAME DNS ajuda os utilizadores a ligar e a inscrever-se no Intune sem que seja necessário introduzir um nome de servidor.
 
 1. **Configurar o Intune**<br>
-Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
+Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
 
 2. **Criar CNAMEs** (opcional)<br>Crie registos de recursos DNS **CNAME** para o domínio da sua empresa, para simplificar a inscrição. Apesar de a criação de entradas DNS CNAME ser opcional, a criação de registos CNAME facilita a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, `https://manage.microsoft.com`.  Os registos de recursos CNAME têm de conter as seguintes informações:
 
@@ -60,10 +60,10 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
       - [Orientações para o utilizador final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
 ### Consulte também
-[Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

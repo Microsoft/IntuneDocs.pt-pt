@@ -13,14 +13,14 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1334500471d2aea5e8c58a3219c755bfd9953424
-ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 2052aca24baa752bc4fad3bd7a75f8efa109e9e9
 
 
 ---
 
 # Ativar a ligação Lookout MTP na consola de administração do Intune
-Este tópico mostra-lhe como ativar a ligação Lookout MTP no Intune. Já deve ter configurado o Conector do Intune na consola do Lookout MTP antes de efetuar este passo.  Se ainda não o fez, efetue os passos descritos em [Set up your subscription with Lookout mobile threat protection (Configurar a sua subscrição com o Lookout Mobile Threat Protection – em inglês)](set-up-your-subscription-with-lookout-mtp.md).
+Este tópico mostra-lhe como ativar a ligação Lookout MTP no Intune. Antes de efetuar este passo, já deverá ter o Conector do Intune configurado na consola do Lookout.  Se ainda não o fez, efetue os passos descritos em [Set up your subscription with Lookout mobile threat protection (Configurar a sua subscrição com o Lookout Mobile Threat Protection – em inglês)](set-up-your-subscription-with-lookout-mtp.md).
 
 Para ativar a ligação Lookout MTP no Intune, na página **Administração**, na [Consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Integração de Serviço de Terceiros**. Selecione **Estado do Lookout** e ative a opção **Sincronização com MTP** utilizando o botão de alternar.
 
@@ -35,6 +35,6 @@ Este passo conclui a configuração da integração do Lookout e do Intune na co
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

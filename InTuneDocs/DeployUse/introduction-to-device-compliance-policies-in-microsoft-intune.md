@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,6 +29,7 @@ Pode utilizar as políticas de conformidade com políticas de acesso condicional
 Também pode utilizar as políticas de conformidade independentemente do acesso condicional. Quando utilizadas independentemente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode pretender reportar o número de dispositivos que não estão encriptados ou quais os dispositivos que têm jailbreak ou root. No entanto, quando utilizadas independentemente, não existem restrições de acesso aos recursos da empresa.
 
 Pode implementar políticas de conformidade em utilizadores. Quando uma política de conformidade é implementada num utilizador, os dispositivos do utilizador são verificados relativamente à conformidade.
+Para saber quanto tempo os dispositivos móveis demoram a obter uma política após esta ser implementada, consulte [Gerir definições e funcionalidades nos seus dispositivos](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)
 
 A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de conformidade e como são geridas as definições não conformes quando as políticas são utilizadas com uma política de acesso condicional.
 
@@ -64,6 +65,6 @@ A tabela seguinte lista os tipos de dispositivos suportados pelas políticas de 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

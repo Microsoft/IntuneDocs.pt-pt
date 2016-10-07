@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
-ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
+ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
+ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
 
 
 ---
@@ -32,14 +32,10 @@ Quando um utilizador se tentar ligar a um ficheiro através de uma aplicação s
 
 ![Diagrama que mostra os pontos de decisão para determinar se um dispositivo tem permissão de acesso ao SharePoint ou está bloqueado ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->O acesso condicional para PCs e dispositivos Windows 10 Mobile com aplicações que utilizam a autenticação moderna não está atualmente disponível para todos os clientes do Intune. Se já estiver a utilizar estas funcionalidades, não é necessário efetuar qualquer ação. Pode continuar a utilizá-las.
-
->Se não tiver criado políticas de acesso condicional para PCs ou Windows 10 Mobile para aplicações que utilizam autenticação moderna e pretender fazê-lo, inscreva-se na pré-visualização pública do Azure Active Directory que inclui o acesso condicional com base no dispositivo para dispositivos geridos pelo Intune ou PCs do Windows associados a um domínio. Leia [esta mensagem do blogue](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) para saber mais.
 
 **Antes de** configurar uma política de acesso condicional para o Skype para o SharePoint Online, tem de:
 - Ter uma **subscrição do SharePoint Online** e os utilizadores têm de estar licenciados para o SharePoint Online.
-- Ter uma subscrição do **Enterprise Mobility Suite** ou do **Azure Active Directory Premium**.
+- Ter uma **subscrição do Azure Active Directory Premium**. Para obter mais detalhes, consulte a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). A **subscrição do Enterprise Mobility Suite + Security** inclui as subscrições do Intune e do Azure Active Directory Premium. Para obter mais detalhes, consulte a [página de preços do Enterprise Mobility Suite](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing).
 
   Para ligar aos ficheiros necessários, o dispositivo tem de:
 -   Estar **inscrito** no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou ser um PC associado a um domínio.
@@ -61,6 +57,7 @@ Se não for cumprida uma condição, é apresentada ao utilizador uma das duas m
 
 >[!NOTE]
 >Se ativar o acesso condicional para o SharePoint Online, recomendamos que desative o domínio na lista, conforme descrito no tópico [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
+
 ## Suporte para dispositivos móveis
 - iOS 8.0 e posterior
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 ou posterior
@@ -75,7 +72,9 @@ Pode restringir o acesso ao SharePoint Online quando acede a partir de um browse
 
 ## Suporte de PCs
 - Windows 8.1 e posterior (quando inscrito com o Intune)
-- Windows 7.0 ou Windows 8.1 (quando associado a um domínio)
+- Windows 7.0, Windows 8.1 ou Windows 10 (quando associado a um domínio),
+> [!NOTE]
+>Para utilizar o acesso condicional em PCs com o Windows 10, tem de atualizar esses mesmos PCs para a Atualização de Aniversário do Windows 10.
 
   - Os PCs associados a um domínio têm de estar configurados para serem [registados automaticamente](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) no Azure Active Directory.
 O AAD DRS será automaticamente ativado para os clientes do Intune e do Office 365. Os clientes que já implementaram o Serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no respetivo Active Directory no local.
@@ -122,6 +121,10 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> Também pode criar uma política de acesso condicional na consola de gestão do Azure AD. A consola de gestão do Azure AD permite-lhe criar as políticas de acesso condicional a dispositivos do Intune (designadas como **políticas de acesso condicional com base no dispositivo** no Azure AD) para além de outras políticas de acesso condicional, como a autenticação multifator.  Também pode definir políticas de acesso condicional para aplicações empresariais de terceiros suportadas pelo Azure AD, como a Salesforce e a Box. Para obter mais detalhes, consulte [Como definir a política de acesso condicional com base no dispositivo do Azure Active Directory para controlar o acesso a aplicações ligadas do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
+
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** > **Acesso Condicional** > **Política do SharePoint Online**.
 ![Captura de ecrã da página Política do SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
 
@@ -136,8 +139,6 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
         Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory irá aplicar a esta política a todos os pedidos de autenticação, independentemente da plataforma comunicada pela aplicação de cliente.  Todas as plataformas terão de estar inscritas e compatíveis, exceto:
         *   Os dispositivos Windows terão de ser inscritos e estar em conformidade, o domínio deve estar associado ao Active Directory no local, ou ambos
         * Plataformas não suportadas, como Mac.  No entanto, as aplicações que utilizam autenticação moderna proveniente destas plataformas continuarão a ser bloqueadas.
-        >[!TIP]
-        >Poderá não ver esta opção se ainda não estiver a utilizar o acesso condicional para PCs.  Em alternativa, utilize as **Plataformas específicas**. O acesso condicional para PCs não está atualmente disponível para todos os clientes do Intune.   Pode encontrar mais informações sobre como obter acesso a esta funcionalidade [nesta mensagem do blogue](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Plataformas específicas**
 
@@ -192,6 +193,6 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

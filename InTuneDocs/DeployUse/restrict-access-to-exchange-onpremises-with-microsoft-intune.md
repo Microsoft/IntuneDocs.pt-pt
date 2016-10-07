@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
+ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
 
 
 ---
@@ -68,7 +68,7 @@ O diagrama seguinte ilustra o fluxo utilizado pelas políticas de acesso condici
 
 -   Aplicação de e-mail nativa no iOS.
 
--   Aplicação de e-mail nativa no Android 4 ou posterior
+-   Clientes de correio EAS, como o Gmail para Android 4 ou posterior
 > [!NOTE]
 > A aplicação Microsoft Outlook não é suportada no Android e iOS.
 
@@ -123,6 +123,6 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO5-->
 
 

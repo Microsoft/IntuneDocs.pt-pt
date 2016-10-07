@@ -13,8 +13,8 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 07ed8c922d53169839bba50547f56bbc979d58ac
 
 
 ---
@@ -31,7 +31,7 @@ A tabela seguinte descreve os requisitos do computador onde irá instalar o Exch
 |---------------|--------------------|
 |Sistemas operativos|O Intune suporta o Exchange Connector no local num computador com qualquer edição do Windows Server 2008 SP2 64 bits, Windows Server 2008 R2, Windows Server 2012 ou Windows Server 2012 R2.<br /><br />O conector não é suportado em nenhuma instalação Server Core.|
 |Versão do Microsoft Exchange|Ou o Conector no local requer o Microsoft Exchange 2010 SP1 ou posterior, ou o Exchange Online Dedicado em lagado. Para determinar se o ambiente dedicado do Exchange Online está na configuração **nova** ou **legada**,  contacte o seu gestor de conta.|
-|Autoridade de gestão de dispositivos móveis| [Definir o Intune como a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|Autoridade de gestão de dispositivos móveis| [Definir o Intune como a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
 |Hardware|O computador onde vai instalar o conector requer uma CPU de 1,6 GHz com 2 GB de ram e, pelo menos, 10 GB de espaço livre no disco no hardware.|
 |Sincronização do Active Directory|Antes de poder utilizar qualquer um dos Conectores para ligar o Intune ao seu Exchange Server, tem de [configurar a sincronização do Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), para que os seus utilizadores e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
 |Software adicional|O computador que aloja o conector tem de ter uma instalação completa do Microsoft .NET Framework 4 e do Windows PowerShell 2.0.|
@@ -131,6 +131,6 @@ Também pode ver a data e hora da última tentativa de sincronização efetuada 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

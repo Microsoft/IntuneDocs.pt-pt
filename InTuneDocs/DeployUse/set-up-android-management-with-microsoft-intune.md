@@ -13,8 +13,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
-ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 68ae3b90977e73c49b21d3196100f73d11549b63
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 Como administrador do Intune, pode ativar a gestão de dispositivos Android a partir do Portal da Empresa. Os utilizadores podem então inscrever os respetivos dispositivos com a aplicação Portal da Empresa disponível no Google Play.
 
 1.  **Configurar o Intune**<br>
-    Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
+    Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
 
 2.  **Inscrição de dispositivos Android ativada**<br>
     Não são necessárias configurações adicionais na consola do Intune para ativar a inscrição de dispositivos móveis Android.
@@ -36,10 +36,10 @@ Como administrador do Intune, pode ativar a gestão de dispositivos Android a pa
   - [Orientações para o utilizador final para dispositivos Windows](../enduser/using-your-android-device-with-intune.md)
 
 ### Consulte também
-[Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

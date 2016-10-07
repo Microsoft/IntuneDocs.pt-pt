@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 61c4cb00fba3352f6898ec41b6d07834da4ec63d
 
 
 ---
@@ -36,19 +36,20 @@ As restrições da Apple proíbem as aplicações da App Store geridas e as apli
 
 - O mosaico **Aplicações da Empresa** apontava anteriormente para uma lista de todas as aplicações no separador TODOS do [site do Portal da Empresa](http://portal.manage.microsoft.com) e irá continuar a funcionar da mesma forma. O nome do mosaico foi alterado para **Todas as Aplicações**.
 
-- O mosaico **Outras Aplicações** apontava anteriormente para uma vista, dentro da aplicação Portal da Empresa, que indicava todas as aplicações que a Apple permite que a aplicação do Portal da Empresa apresente. O nome do mosaico foi alterado para **Aplicações Em Destaque** e tocar no mosaico irá direcionar os utilizadores para o separador EM DESTAQUE do site do Portal da Empresa.
+- O mosaico **Outras Aplicações** apontava anteriormente para uma vista, dentro da aplicação Portal da Empresa, que indicava todas as aplicações que a Apple permite que a aplicação Portal da Empresa apresente. O nome do mosaico foi alterado para **Aplicações Em Destaque** e tocar no mosaico irá direcionar os utilizadores para o separador EM DESTAQUE do site do Portal da Empresa.
 
--  O mosaico **Categorias** apontava anteriormente para uma vista, dentro da aplicação Portal da Empresa, que indicava categorias de aplicações. O nome do mosaico não foi alterado, mas agora aponta para o separador CATEGORIAS do site do Portal da Empresa.
+-  O mosaico **Categorias** apontava anteriormente para uma vista, dentro da aplicação Portal da Empresa, que indicava categorias de aplicações. O nome do mosaico não foi alterado, mas aponta agora para o separador CATEGORIAS do site do Portal da Empresa.
 Pode encontrar capturas de ecrã atualizadas [aqui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 
 
 
 ###Consulte também
-[Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-android-users-get-their-apps.md)</br>
+[Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-android-users-get-their-apps.md)
+
 [Como os utilizadores de dispositivos Windows obtêm as aplicações](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

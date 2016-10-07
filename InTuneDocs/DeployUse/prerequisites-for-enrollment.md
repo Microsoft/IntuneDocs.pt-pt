@@ -13,16 +13,30 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 91385bdbe4aa4252311db106c04de7d04df5109c
-ms.openlocfilehash: 5e94e4efa5a3ecb055ce416c3ee8dd21e56bad65
+ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
+ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
 
 
 ---
 
 # Pré-requisitos para a gestão de dispositivos móveis no Intune
-Para permitir aos empregados inscrever dispositivos móveis (incluindo [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e [PCs Windows](set-up-windows-device-management-with-microsoft-intune.md)) no Intune ou parar gerir dispositivos proprietários da companhia, tem de ativar a inscrição de dispositivos. Para permitir a inscrição, tem de definir uma autoridade de gestão de dispositivos móveis (MDM), configurar o Portal da Empresa do Intune, atribuir licenças e ativar a inscrição na plataforma do dispositivo.
+Para permitir que os seus funcionários inscrevam os respetivos dispositivos móveis no Intune, é necessário aplicar os passos que se seguem. Estes passos também são necessários para gerir dispositivos pertencentes à empresa.
 
-## Definir autoridade de gestão de dispositivos móveis
+|Passos|Detalhes|  
+|-----------|-------------|  
+|**Passo 1:** [dependências de inscrição de dispositivos](#step-1-device-enrollment-dependencies)|Certifique-se de que o nome personalizado do seu domínio foi configurado e que as comunicações de rede estão prontas|  
+|**Passo 2:** [definir a autoridade de gestão de dispositivos](#step-2-set-mobile-device-management-authority)|A autoridade de gestão de dispositivos móveis define o serviço atribuído aos seus dispositivos|
+|**Passo 3:** [configurar o Portal da Empresa do Intune](#step-3-configure-the-intune-company-portal)|Configure as definições destinadas ao utilizador para a aplicação Portal da Empresa|  
+|**Passo 4:** [atribuir licenças de utilizador do Intune](#step-4-assign-intune-user-licenses)|Atribua licenças do Intune aos utilizadores para que estes possam inscrever dispositivos|
+|**Passo 5:** [configurar a gestão de dispositivos](#step-5-set-up-device-management)|Ative definições específicas da plataforma para a gestão de dispositivos iOS e Windows. Os dispositivos Android não precisam de configurações adicionais.|
+
+## Passo 1: dependências de inscrição de dispositivos
+
+Antes de ativar a inscrição de dispositivos móveis, certifique-se de que efetuou os seguintes procedimentos:
+- [Rever as portas e os URLs de rede necessários](../get-started/network-infrastructure-requirements-for-microsoft-intune)
+- [Adicionar e verificar o seu nome de domínio](../get-started/domain-names-for-microsoft-intune)
+
+## Passo 2: definir a autoridade de gestão de dispositivos móveis
 A autoridade de MDM define o serviço de gestão que tem permissão para gerir um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune autónomo e o Configuration Manager com o Intune. Se definir o Configuration Manager como autoridade de gestão, nenhum outro serviço pode ser utilizado para gestão de dispositivos móveis.
 
 >[!IMPORTANT]
@@ -38,7 +52,7 @@ A autoridade de MDM define o serviço de gestão que tem permissão para gerir u
 
 3.  O Intune pede a confirmação de que pretende o Intune como a sua autoridade MDM. Selecione a caixa de verificação e, em seguida, escolha **Sim** para utilizar o Microsoft Intune para gerir dispositivos móveis.
 
-## Configurar o Portal da Empresa do Intune
+## Passo 3: configurar o Portal da Empresa do Intune
 
 O Portal da Empresa do Intune é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.
 
@@ -78,15 +92,15 @@ Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor
 |Nome do campo|Mais informações|
     |----------|----------------|
     |Cor do tema|Selecione a cor do tema que pretende aplicar ao Portal da Empresa.|
-    |Incluir o logótipo da empresa|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. Cada logótipo tem de ser um ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 100 pixéis e ter um tamanho de 750 KB ou menos.|
-    |Selecionar um fundo para a aplicação Portal da Empresa do [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]|Esta definição afeta apenas o fundo da aplicação Portal da Empresa do [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)].|
+    |Incluir o logótipo da empresa|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. Cada logótipo tem de ser um ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 100 píxeis e ter um tamanho de 750 KB ou menos.|
+    |Selecionar um fundo para a aplicação Portal da Empresa|Esta definição afeta apenas o fundo da aplicação Portal da Empresa.|
 
 
 Depois de guardar as alterações, pode utilizar as ligações fornecidas na parte inferior da página **Portal da Empresa** da consola de administração para ver o Web site do Portal da Empresa. Estas ligações não podem ser alteradas. Quando um utilizador inicia sessão, estas ligações apresentam as suas subscrições no Portal da Empresa.
 
-## Atribuir uma licença de utilizador do Intune
+## Passo 4: atribuir licenças de utilizador do Intune
 
-Para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas do Active Directory no local com o Azure Active Directory (Azure AD), é utilizado o **portal de gestão do Office 365**.
+Para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas do Active Directory no local com o Azure Active Directory (Azure AD), é utilizado o **portal de gestão do Office 365**. Pode [sincronizar utilizadores no local com o Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
 1.  Inicie sessão no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx) com as suas credenciais de administrador de inquilino.
 
@@ -94,7 +108,14 @@ Para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças �
 
 3.  A conta de utilizador será agora adicionada ao grupo de utilizadores do Microsoft Intune, que atribui as permissões de utilizador para utilizar o serviço e inscrever os respetivos dispositivos para gestão.
 
-## Configurar a gestão de dispositivos
+### Sincronizar os utilizadores no local com o Azure AD
+
+1. [Adicionar o sufixo UPN](https://technet.microsoft.com/en-us/library/cc772007.aspx) para o seu domínio personalizado no Active Directory no local.
+2. Defina o sufixo UPN novo para os utilizadores no local que pretende importar.
+3. Execute a [sincronização do Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) para integrar os seus utilizadores no local com o Azure AD.
+4. Assim que as informações de conta de utilizador forem sincronizadas com êxito, pode atribuir licenças do Microsoft Intune utilizando o [Portal de Gestão do Office 365](https://portal.office.com/Admin/Default.aspx).
+
+## Passo 5: configurar a gestão de dispositivos
 Depois de configurar a autoridade de MDM, tem de configurar a gestão de dispositivos nos sistemas operativos que a sua organização pretende suportar. Os passos necessários para configurar a gestão de dispositivos variam consoante o sistema operativo. Por exemplo, o SO Android não requer que efetue nenhuma ação na consola de administração do Intune. Por outro lado, o Windows e o iOS requerem uma relação de confiança entre os dispositivos e o Intune para permitir a gestão.
 
 Configurar a gestão das seguintes plataformas:
@@ -109,6 +130,6 @@ Também pode:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

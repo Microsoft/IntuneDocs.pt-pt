@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
-ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
+ms.sourcegitcommit: df1b58d5ce94c985e71f3afbe228dba9438040dc
+ms.openlocfilehash: d79c498fd775ee9b3d59761fec2fe6ebba116d6d
 
 
 ---
@@ -23,26 +23,30 @@ ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
 Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune ou o SDK da Aplicação do Intune para ativar as suas aplicações para que utilizem políticas de gestão de aplicações móveis (MAM). Utilize estas informações para saber mais sobre estes dois métodos e como os utilizar.
 
 ## Ferramenta de Encapsulamento de Aplicações do Intune
-A Ferramenta de Encapsulamento de Aplicações é utilizada, principalmente, para aplicações internas de linha de negócio (LOB). A ferramenta é uma aplicação de linha de comandos que cria um wrapper em torno da aplicação, que permite que a aplicação seja, então, gerida por uma política de gestão de aplicações móveis do Intune. Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão.  Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para ver a documentação da Ferramenta de Encapsulamento de Aplicações, consulte [Ferramenta de encapsulamento de aplicações Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Ferramenta de Encapsulamento de Aplicações iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+A Ferramenta de Encapsulamento de Aplicações é utilizada, principalmente, para aplicações internas de linha de negócio (LOB). A ferramenta é uma aplicação de linha de comandos que cria um wrapper em torno da aplicação, que permite que a aplicação seja, então, gerida por uma política de gestão de aplicações móveis do Intune. 
 
-A Ferramenta de Encapsulamento de Aplicações não suporta aplicações na App Store nem na Play Store ou funcionalidades que requerem integração de tempo de desenvolvimento (veja a seguinte tabela de comparação de funcionalidades).
+Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão.  Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para ver a documentação da Ferramenta de Encapsulamento de Aplicações, consulte [Ferramenta de encapsulamento de aplicações Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Ferramenta de Encapsulamento de Aplicações iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+
+A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações na App Store da Apple nem na Google Play Store ou determinadas funcionalidades que requerem a integração do programador (veja a seguinte tabela de comparação de funcionalidades).
 
 Deve utilizar a Ferramenta de Encapsulamento de Aplicações, em vez do SDK, se a aplicação já tiver sido escrita ou se o código de origem não estiver disponível.
 
-**A Ferramenta de Encapsulamento de Aplicações para MAM em dispositivos que não estão inscritos no Intune é atualmente suportada na pré-visualização pública. Para mais informações, consulte [Proteger aplicações LOB em dispositivos não inscritos no Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**.
+**Para mais informações sobre a Ferramenta de Encapsulamento de Aplicações para a MAM de dispositivos que não estão inscritos no Intune, consulte [Proteger aplicações de linha de negócio e dados em dispositivos não inscritos no Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**.
 
-### Plataformas Suportadas
+### Plataformas de desenvolvimento de aplicações suportadas
 
 |**Ferramenta de Encapsulamento de Aplicações** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Sim|Sim|
 |**Android**| Não |Sim|
+
 ## SDK da Aplicação do Intune
-O SDK da Aplicação foi concebido especialmente para os clientes que têm aplicações na App Store e na Play Store e pretendem geri-las com o Intune. No entanto, qualquer aplicação pode tirar partido da integração do SDK, mesmo se se tratar de uma aplicação LOB.
+O SDK da Aplicação do Intune foi concebido principalmente para clientes com aplicações na App Store da Apple e/ou na Google Play Store e que pretendem conseguir gerir essas aplicações no Intune. No entanto, qualquer aplicação pode tirar partido da integração com o SDK, inclusive as aplicações de linha de negócio.
 
 Para mais informações sobre o SDK, consulte [Descrição Geral](/intune/develop/intune-app-sdk). Para começar a utilizar o SDK, consulte [Introdução ao Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
 
-### Plataformas Suportadas
+### Plataformas de desenvolvimento de aplicações suportadas
+
 |**SDK da Aplicação do Intune** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|Sim – utilizar o componente do Xamarin do SDK da Aplicação do Intune|Sim – utilizar o plug-in do Cordova do SDK da Aplicação do Intune|
@@ -74,7 +78,8 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Eliminação Completa|X|X|
 |Apagar Seletivo <br></br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como" |X||
-|Suporte para Várias Identidades|X||
+|Suporte para Identidades Múltiplas|X||
+|Suporte para MAM sem a inscrição de dispositivos|X|X|
 ### Consulte também
 
 [Ferramenta de encapsulamento de aplicações do Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
@@ -83,6 +88,6 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

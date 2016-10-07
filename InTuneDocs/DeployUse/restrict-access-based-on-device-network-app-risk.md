@@ -1,5 +1,5 @@
 ---
-title: "Restringir o acesso com a proteção contra ameaças móveis | Microsoft Intune"
+title: "Restringir o acesso ao utilizar proteção contra ameaças de dispositivos | Microsoft Intune"
 description: "Restrinja o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos."
 keywords: 
 author: karthikaraman
@@ -13,24 +13,24 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
-ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: 758e4408fa7119ed4ebb82e98b850be5b1f318b4
 
 
 ---
 
 # Restringir o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos
-Pode controlar o acesso a partir de dispositivos móveis a recursos empresariais, com base na avaliação de riscos realizada pelo Lookout, uma solução MTP (Mobile Threat Protection) que está integrada com o Microsoft Intune. O risco baseia-se na telemetria que o serviço Lookout MTP recolhe dos dispositivos para vulnerabilidades do sistema operativo (SO), aplicações maliciosas instaladas e perfis de rede. Com base na avaliação de riscos, pode configurar as políticas de acesso condicional no Intune e permitir ou bloquear dispositivos que foram identificados como sendo não compatíveis devido a ameaças detetadas nesses dispositivos.  Atualmente isto é suportado apenas por dispositivos **Android** a executar a **versão 4.1 e posterior** e inscritos no Microsoft Intune.  
+Pode controlar o acesso a partir de dispositivos móveis a recursos empresariais, com base na avaliação de riscos realizada pelo Lookout, uma solução de proteção contra ameaças de dispositivos que está integrada com o Microsoft Intune. O risco baseia-se na telemetria que o serviço Lookout recolhe dos dispositivos para vulnerabilidades do sistema operativo (SO), aplicações maliciosas instaladas e perfis de rede. Com base na avaliação de riscos, pode configurar as políticas de acesso condicional no Intune e permitir ou bloquear dispositivos que foram identificados como sendo não compatíveis devido a ameaças detetadas nesses dispositivos.  Atualmente isto é suportado apenas por dispositivos **Android** a executar a **versão 4.1 e posterior** e inscritos no Microsoft Intune.  Para obter informações sobre plataformas e idiomas suportados pelo Lookout, consulte este [artigo](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 ## Que problema é que isto resolve?
 As empresas e organizações precisam de proteger dados confidenciais de ameaças emergentes que incluem ameaças com base na rede, com base na aplicação e físicas, bem como vulnerabilidade do SO.
 
 As empresas e organizações tomaram uma posição ativa na proteção dos PCs contra ataques maliciosos. Os dispositivos móveis são uma área emergente que muitas vezes fica desprotegida. Apesar de as plataformas móveis terem proteção incorporada do SO ao utilizar técnicas como o isolamento de aplicações e lojas de aplicações de clientes avaliadas, estas plataformas continuam a ser vulneráveis a ataques sofisticados. À medida que os dispositivos móveis são cada vez mais utilizados pelos funcionários para efetuarem tarefas e precisam de acesso a informações que podem ser confidenciais e úteis, estes dispositivos têm de ser protegidos de uma variedade de ataques sofisticados.
 
-O Intune permite-lhe controlar o acesso aos dados e aos recursos da empresa com base na avaliação de riscos que as soluções MTP fornecem, tal como o Lookout.
+O Intune permite-lhe controlar o acesso aos dados e aos recursos da empresa com base na avaliação de riscos que as soluções de proteção contra ameaças de dispositivos fornecem, tal como o Lookout.
 
-## Como é que o Intune e o Lookout Mobile Threat Protection ajudam a proteger os recursos da empresa?
-A aplicação móvel do Lookout (Lookout for Work), em execução em dispositivos móveis, captura o sistema de ficheiros, a pilha de rede e a telemetria aplicacional e do dispositivo (onde disponível) e envia-os para o serviço em nuvem Lookout Mobile Threat Protection (MTP) para calcular o risco agregado de um dispositivo para ameaças móveis. Também pode alterar a classificação do nível de risco das ameaças na consola MTP para atender às suas necessidades.  
-A política de conformidade no Intune inclui uma nova regra para o Lookout Mobile Threat Protection que se baseia na avaliação do risco do Lookout MTP. Quando esta regra está ativada, o Microsoft Intune avalia a conformidade do dispositivo com a política que ativou.
+## Como é que o Intune e a proteção contra ameaças de dispositivos do Lookout ajudam a proteger os recursos da empresa?
+A aplicação móvel do Lookout (Lookout for Work), em execução em dispositivos móveis, captura o sistema de ficheiros, a pilha de rede e a telemetria aplicacional e do dispositivo (onde disponível) e envia-os para o serviço de proteção em nuvem contra ameaças de dispositivos do Lookout para calcular o risco agregado de um dispositivo para ameaças contra dispositivos móveis. Também pode alterar a classificação do nível de risco das ameaças na consola do Lookout para atender às suas necessidades.  
+A política de conformidade no Intune inclui uma nova regra para a proteção contra ameaças contra dispositivos móveis do Lookout que se baseia na avaliação do risco de ameaças contra dispositivos do Lookout. Quando esta regra está ativada, o Microsoft Intune avalia a conformidade do dispositivo com a política que ativou.
 
 Se o dispositivo for identificado com sendo não compatível com a política de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online pode ser bloqueado utilizando políticas de acesso condicional. Quando o acesso é bloqueado, são fornecidas aos utilizadores finais instruções para resolver o problema e obter acesso aos recursos da empresa. Estas instruções são lançadas através da aplicação Lookout for Work.
 
@@ -80,6 +80,6 @@ Seguem-se os principais passos que tem de efetuar para implementar esta soluçã
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

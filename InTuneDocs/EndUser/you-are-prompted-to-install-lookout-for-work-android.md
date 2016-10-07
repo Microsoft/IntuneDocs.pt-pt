@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ Antes de poder aceder ao seu trabalho, o seu administrador de TI precisa que ins
 
     ![abra o Lookout for Work e toque em Activate (Ativar)](./media/lookout-activate-button-android.png)
 
-4. Toque em **Sign in with a work account (Iniciar sessão com uma conta profissional)** e introduza a conta que utiliza para aceder ao seu e-mail e ficheiros escolares ou profissionais.
+4. Toque em **Iniciar sessão com o Azure Active Directory** e introduza a conta que utiliza para aceder aos seus ficheiros e e-mail escolares ou profissionais.
 
-    ![inicie sessão com a sua conta escolar ou profissional](./media/lookout-sign-in-android.png)
+    ![inicie sessão com a sua conta escolar ou profissional](./media/lookout-sign-in-azure-android.png)
 
 5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)**.
 
@@ -78,6 +78,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

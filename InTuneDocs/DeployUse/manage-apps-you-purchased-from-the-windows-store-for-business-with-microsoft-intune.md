@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +28,7 @@ Na [Loja Windows para Empresas](https://www.microsoft.com/business-store), pode 
 
 ## Antes de começar
 Antes de iniciar a sincronização e a implementação de aplicações da Loja Windows para Empresas, reveja as seguintes informações:
-* Tem de configurar o Intune como a autoridade de gestão de dispositivos móveis da sua organização. Para obter mais informações, consulte [Prepare-se para inscrever dispositivos no Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
+* Tem de configurar o Intune como a autoridade de gestão de dispositivos móveis da sua organização. Para mais informações, consulte o artigo [Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md).
 * Tem de se ter inscrito numa conta na Loja Windows para Empresas.
 * Assim que tiver associado uma conta da Loja Windows para Empresas, não pode mudar para uma conta diferente no futuro.
 * As aplicações compradas na loja não podem ser adicionadas ou eliminadas manualmente do Intune. Só podem ser sincronizadas com a Loja Windows para Empresas.
@@ -77,6 +77,6 @@ Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada um
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

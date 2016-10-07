@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: e898d070eb61583ff379821c9bf24f3997ae177e
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d06d6e7de5c2e30ae8078642184ad8cfadf15be4
 
 
 ---
@@ -102,10 +102,10 @@ Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precis
 A partir de novembro, a gestão de grupos de dispositivos irá mudar para o Azure Active Directory. Após a transição para grupos do Azure Active Directory, a atribuição de grupo não será apresentada nas opções do **Perfil de Inscrição Empresarial**. Uma vez que esta alteração vai ser implementada durante alguns meses, poderá não estar disponível de imediato. Depois de mudar para o novo portal, as atribuições de grupos de dispositivos dinâmicas podem ser definidas com base nos nomes de Perfil de Inscrição Empresarial. Este processo garante que os dispositivos previamente atribuídos a um grupo de dispositivos serão inscritos de forma automática no grupo com a política e as aplicações implementadas. [Saiba mais sobre os grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Consulte também
-[Prepare-se para inscrever dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Pré-requisitos para a inscrição de dispositivos](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 
