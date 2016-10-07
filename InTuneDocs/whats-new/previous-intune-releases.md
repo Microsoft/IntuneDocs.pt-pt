@@ -2,7 +2,7 @@
 title: "Versões anteriores | Microsoft Intune"
 description: 
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3206634884807743576f2d9dc1ca17b6bbbc9cc6
-ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
+ms.sourcegitcommit: ffbb26f30c7801789a47d57ffed00696f5e6d81a
+ms.openlocfilehash: 11e90ce994d17d9dcc62edba775dd0ab8110414e
 
 
 ---
@@ -30,7 +30,7 @@ Para os dispositivos supervisionados com o iOS 9.3 ou posterior, pode utilizar 
 - Especificar uma lista de aplicações que serão ocultas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
 - Especificar uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
-As aplicações que pode especificar incluem ambas as aplicações implementadas e as aplicações incorporadas do iOS como Mensagens e Notas. Para obter detalhes, veja [Definições de política para iOS no Microsoft Intune]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+As aplicações que pode especificar incluem ambas as aplicações implementadas e as aplicações incorporadas do iOS como Mensagens e Notas. Para obter detalhes, veja [Definições de política para iOS no Microsoft Intune]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 <!---TFS 1279009 checked--->
 ### Política de aplicações permitidas e bloqueadas para os dispositivos Samsung KNOX
 Agora pode configurar uma política personalizada para os dispositivos Samsung KNOX que lhe permitem criar um dos seguintes:
@@ -38,7 +38,7 @@ Agora pode configurar uma política personalizada para os dispositivos Samsung K
 - Uma lista de aplicações que os utilizadores do dispositivo estão autorizados a instalar a partir da loja Google Play. Mais nenhuma outra aplicação pode ser instalada a partir da loja.
 
 Estas definições só podem ser utilizadas por dispositivos que executem Samsung KNOX.
-Para obter detalhes, veja [Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung KNOX]( custom-policy-to-allow-and-block-samsung-knox-apps.md).
+Para obter detalhes, veja [Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung KNOX](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps).
 <!---TFS 1311629 checked --->
 ### Novas aplicações compatíveis com as políticas de gestão de aplicações móveis (MAM)
 A aplicação Yammer para [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) é agora compatível com as [políticas de gestão de aplicações móveis do Intune (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), quer o dispositivo esteja inscrito ou não.
@@ -55,7 +55,7 @@ Com o lançamento da nova aplicação de partilha RMS, estamos a remover as segu
 - Visualizador de PDFs do Intune
 - Visualizador de Imagens do Intune para Android a partir do Google Play
 
-Em vez de utilizar as aplicações do Visualizador do Intune, recomendamos que utilize a nova [aplicação Rights Management (partilha RMS) para Android](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), o que lhe permite implementar uma aplicação em vez de três aplicações separadas para ver com segurança os ficheiros empresariais em dispositivos Android. Quando a aplicação do visualizador do Intune deixar de ser suportada, será removida da Google Store e indisponibilizada para utilização futura.
+Em vez de utilizar as aplicações do Visualizador do Intune, recomendamos que utilize a nova [aplicação Rights Management (partilha RMS) para Android](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), o que lhe permite implementar uma aplicação em vez de três aplicações separadas para ver com segurança os ficheiros empresariais em dispositivos Android. Quando a aplicação do visualizador do Intune deixar de ser suportada, será removida da Google Store e indisponibilizada para utilização futura.
 
 ## Gestão de dispositivos
 ### Suporte para Android 7.0
@@ -159,7 +159,7 @@ O Intune aumentou o limite máximo de inscrição de dispositivos configuráveis
 <!---TFS 1289896 --->
 
 #### Integração do TeamViewer para PCs Windows com o software de cliente Intune
-A integração do [TeamViewer](https://www.teamviewer.com) para PCs Windows que executem o cliente do Intune vai permitir estabelecer sessões de assistência remota com PCs Windows para ajudar a dar apoio aos departamentos de suporte técnico ao utilizador final. Isto inclui o Windows 7, 8, 8.1 e o Windows 10. Para obter mais informações, veja [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+A integração do [TeamViewer](https://www.teamviewer.com) para PCs Windows que executem o cliente do Intune vai permitir estabelecer sessões de assistência remota com PCs Windows para ajudar a dar apoio aos departamentos de suporte técnico ao utilizador final. Isto inclui o Windows 7, 8, 8.1 e o Windows 10. Para obter mais informações, veja [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 <!---TFS 1284856--->
 
 ### Atualizações ao Portal da Empresa
@@ -185,7 +185,7 @@ Utilize apenas contas DEM quando a inscrição sem a ação do utilizador para d
 <!---TFS 1233681--->
 
 ### Alteração de nomes de funcionalidades do Windows
-- O [Microsoft Passport para Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) é agora conhecido como **Windows Hello para Empresas**.
+- O [Microsoft Passport para Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) é agora conhecido como **Windows Hello para Empresas**.
 - A [Proteção de dados da empresa](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) é agora conhecida como **Windows Information Protection**.
 
 ## Junho de 2016
@@ -209,10 +209,10 @@ As informações de estado de funcionamento do serviço do Intune foram movidas 
     * Deve ser compatível com todas políticas de conformidade do Intune implementadas
 
  Os utilizadores finais de dispositivos não conformes serão solicitados para inscrever-se e para retificar quaisquer problemas de compatibilidade para obter acesso.
-- **Acesso condicional para browser.** Pode definir uma política de acesso condicional para o [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md) e o [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md) para que apenas os dispositivos iOS e Android geridos e compatíveis possam ser acedidos a partir de Web browsers suportados. Aos utilizadores finais que tentarem iniciar sessão no Outlook Web Access (OWA) e em sites do SharePoint com dispositivos iOS e Android será pedido que inscrevam o respetivo dispositivo no Intune, bem como que corrijam quaisquer problemas de não conformidade, para poderem concluir o início de sessão.
+- **Acesso condicional para browser.** Pode definir uma política de acesso condicional para o [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) e o [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) para que apenas os dispositivos iOS e Android geridos e compatíveis possam ser acedidos a partir de Web browsers suportados. Aos utilizadores finais que tentarem iniciar sessão no Outlook Web Access (OWA) e em sites do SharePoint com dispositivos iOS e Android será pedido que inscrevam o respetivo dispositivo no Intune, bem como que corrijam quaisquer problemas de não conformidade, para poderem concluir o início de sessão.
 <!---TFS 1175844--->
 
-- **O Dynamics CRM Online suporta o acesso condicional.** Pode definir uma política de acesso condicional para o [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md) para que apenas dispositivos iOS e Android geridos e compatíveis possam aceder ao mesmo. Aos utilizadores finais que tentarem iniciar sessão na aplicação móvel Dynamics CRM Online em dispositivos iOS e Android será pedido que se inscrevam primeiro no Intune e que corrijam quaisquer problemas de não conformidade para que o início de sessão possa ser concluído.
+- **O Dynamics CRM Online suporta o acesso condicional.** Pode definir uma política de acesso condicional para o [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) para que apenas dispositivos iOS e Android geridos e compatíveis possam aceder ao mesmo. Aos utilizadores finais que tentarem iniciar sessão na aplicação móvel Dynamics CRM Online em dispositivos iOS e Android será pedido que se inscrevam primeiro no Intune e que corrijam quaisquer problemas de não conformidade para que o início de sessão possa ser concluído.
 <!---TFS1295358--->
 
 ##Atualizações ao Portal da Empresa
@@ -249,9 +249,9 @@ Para obter mais informações, veja [esta mensagem do blogue](https://blogs.tech
 
 
 ### Gestão de aplicações
-- **MAM SDK: suporta a configuração do comprimento do PIN.** Poderá especificar o comprimento do PIN para aplicações MAM, semelhante a um PIN de dispositivo. Isto irá necessitar que os utilizadores finais respeitem as novas restrições que definiu. Verão um ecrã de PIN ligeiramente modificado para caber a entrada mais longa. Para obter mais detalhes, veja [Definições de política de MAM para Android](android-mam-policy-settings.md) e [Definições de política de MAM para iOS](ios-mam-policy-settings.md).
+- **MAM SDK: suporta a configuração do comprimento do PIN.** Poderá especificar o comprimento do PIN para aplicações MAM, semelhante a um PIN de dispositivo. Isto irá necessitar que os utilizadores finais respeitem as novas restrições que definiu. Verão um ecrã de PIN ligeiramente modificado para caber a entrada mais longa. Para obter mais detalhes, veja [Definições de política de MAM para Android](/intune/deploy-use/android-mam-policy-settings) e [Definições de política de MAM para iOS](/intune/deploy-use/ios-mam-policy-settings).
 
-- **Skype para Empresas, para iOS e Android.** É agora possível segmentar o Skype para empresas com [MAM sem políticas de inscrição](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md). Depois de os utilizadores iniciarem sessão, as políticas de MAM serão aplicadas.
+- **Skype para Empresas, para iOS e Android.** É agora possível segmentar o Skype para empresas com [MAM sem políticas de inscrição](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Depois de os utilizadores iniciarem sessão, as políticas de MAM serão aplicadas.
 
 - **Novas aplicações disponíveis para gestão com políticas de MAM.** As aplicações do Microsoft Word, Excel e PowerPoint para Android podem agora ser associadas a políticas de MAM em dispositivos que não estão inscritos no Intune. Para ver uma lista completa de aplicações suportadas, aceda à Galeria de aplicações móveis do Microsoft Intune, na página de [parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -305,7 +305,7 @@ As regras de notificações do Intune definem a quem será enviado um alerta de 
 Todas estas funcionalidades também são suportadas em clientes híbridos (Configuration Manager com o Intune).
 ### Gestão de aplicações
 - **Conformidade de utilizadores MAM.**
-Agora, pode ver o [estado](monitor-mobile-app-management-policies-with-Microsoft-Intune.md) das suas políticas de gestão de aplicações para qualquer utilizador no inquilino do Azure Active Directory (AAD). Isto inclui:
+Agora, pode ver o [estado](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) das suas políticas de gestão de aplicações para qualquer utilizador no inquilino do Azure Active Directory (AAD). Isto inclui:
    - Dispositivos
    - Aplicações no dispositivo
 
@@ -317,7 +317,7 @@ Agora, pode ver o [estado](monitor-mobile-app-management-policies-with-Microsoft
 
 
 - **Controlos de MAM para impedir a sincronização de contactos do Outlook (Android).**
-Uma nova definição está disponível para a [gestão de aplicações móveis](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) sem inscrição de dispositivos. Esta definição permite impedir que uma aplicação sincronize contactos com o livro de endereços nativo em dispositivos Android. Quando esta definição estiver ativada, as aplicações visadas já não poderão guardar contactos no livro de endereços nativo. Quando esta definição estiver desativada, as aplicações visadas poderão guardar contactos no livro de endereços nativo. Quando [elimina remotamente os dados de um dispositivo ou aplicação](wipe-managed-company-app-data-with-Microsoft-Intune.md), os contactos que já tenham sido guardados no livro de endereços nativo serão removidos. Esta nova definição é suportada inicialmente pela aplicação Outlook em dispositivos Android.
+Uma nova definição está disponível para a [gestão de aplicações móveis](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) sem inscrição de dispositivos. Esta definição permite impedir que uma aplicação sincronize contactos com o livro de endereços nativo em dispositivos Android. Quando esta definição estiver ativada, as aplicações visadas já não poderão guardar contactos no livro de endereços nativo. Quando esta definição estiver desativada, as aplicações visadas poderão guardar contactos no livro de endereços nativo. Quando [elimina remotamente os dados de um dispositivo ou aplicação](/intune/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), os contactos que já tenham sido guardados no livro de endereços nativo serão removidos. Esta nova definição é suportada inicialmente pela aplicação Outlook em dispositivos Android.
 
 ### Gestão de dispositivos
 - **Identificação de números de telefone para dispositivos pertencentes à empresa.** Os telefones que são classificados como "Empresa" estão agora identificados com o respetivo número de telefone completo quando, por exemplo, executa um relatório de inventário de dispositivos móveis. Os números de telefone BYOD continuam a ser mascarados com ****, com apenas os 4 últimos dígitos apresentados.
@@ -377,7 +377,7 @@ Com exceção da atualização à política de configuração geral do Windows 1
 
 ### Gestão de aplicações
 
-- **Tirar partido da funcionalidade de gestão "Open-in" do iOS para dispositivos inscritos numa solução MDM de terceiros** Pode utilizar o fornecedor de gestão de dispositivos móveis (MDM) de terceiros para tirar partido da funcionalidade de gestão "Open-in" do iOS. Pode configurar as restrições nas definições do perfil de configuração e implementar a aplicação, utilizando [Gerir a transferência de dados entre aplicações iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
+- **Tirar partido da funcionalidade de gestão "Open-in" do iOS para dispositivos inscritos numa solução MDM de terceiros** Pode utilizar o fornecedor de gestão de dispositivos móveis (MDM) de terceiros para tirar partido da funcionalidade de gestão "Open-in" do iOS. Pode configurar as restrições nas definições do perfil de configuração e implementar a aplicação, utilizando [Gerir a transferência de dados entre aplicações iOS](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune).
 
      Esta abordagem tem duas vantagens principais:
 
@@ -388,22 +388,22 @@ Com exceção da atualização à política de configuração geral do Windows 1
 - **Gerir a aplicação Microsoft Outlook com políticas de MAM para dispositivos que não estão inscritos no Intune** Agora, já pode gerir a aplicação Microsoft Outlook em dispositivos que não estão inscritos no Intune com a política de gestão de aplicações móveis do Intune. A aplicação Microsoft Outlook atualizada com as capacidades MAM está disponível para dispositivos [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook). Utilize as instruções do tópico [Criar e implementar políticas de gestão de aplicações móveis](https://technet.microsoft.com/library/mt627829.aspx) para criar uma política MAM.  
 
 
-- **As políticas de configuração de aplicações móveis dão-lhe uma maior flexibilidade para especificar detalhes de utilizador para aplicações iOS** Pode fornecer as definições de utilizador que poderão ser necessárias a uma aplicação iOS quando for aberta. Por exemplo, pode fornecer uma porta de rede ou um nome de utilizador. Para detalhes, consulte [Configurar aplicações com políticas de configuração de aplicações móveis no Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
+- **As políticas de configuração de aplicações móveis dão-lhe uma maior flexibilidade para especificar detalhes de utilizador para aplicações iOS** Pode fornecer as definições de utilizador que poderão ser necessárias a uma aplicação iOS quando for aberta. Por exemplo, pode fornecer uma porta de rede ou um nome de utilizador. Para detalhes, consulte [Configurar aplicações com políticas de configuração de aplicações móveis no Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 
 - **Implementar o Adobe Reader para Microsoft Intune em dispositivos iOS geridos pelo Intune na sua empresa** A aplicação Adobe Reader para iOS pode agora ser gerida em dispositivos inscritos com a política de gestão de aplicações móveis do Intune.
 
-- **Garantir que os clips Web são abertos no browser gerido** Pode implementar clips Web direcionados, que só podem ser abertos com o browser gerido em dispositivos iOS e Android. Por exemplo, pode implementar hiperligações para recursos da empresa através do Portal da Empresa e quando os utilizadores navegarem para as hiperligações, estas abrem diretamente no browser gerido, onde podem ser protegidas pela política MAM. Para detalhes, consulte [Implementar aplicações](deploy-apps.md).
+- **Garantir que os clips Web são abertos no browser gerido** Pode implementar clips Web direcionados, que só podem ser abertos com o browser gerido em dispositivos iOS e Android. Por exemplo, pode implementar hiperligações para recursos da empresa através do Portal da Empresa e quando os utilizadores navegarem para as hiperligações, estas abrem diretamente no browser gerido, onde podem ser protegidas pela política MAM. Para detalhes, consulte [Implementar aplicações](/intune/deploy-use/deploy-apps).
 
 
-- **Localizar, gerir e distribuir aplicações da Loja Windows para Empresas para dispositivos Windows 10 a partir da consola do administrador do Intune** O suporte da Loja Windows para Empresas está disponível no Intune para o ajudar a localizar, gerir e distribuir aplicações para os dispositivos Windows 10 que estiver a gerir. A Loja Windows para Empresas permite-lhe gerir o processo de implementação e monitorização destas aplicações na consola do administrador do Intune — a mesma consola que utiliza para gerir as suas outras aplicações. Especificamente, a Loja Windows para Empresas gere o conteúdo e o licenciamento de "aplicações licenciadas online". Para detalhes, consulte [Gerir aplicações compradas na Loja Windows para Empresas](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md).
+- **Localizar, gerir e distribuir aplicações da Loja Windows para Empresas para dispositivos Windows 10 a partir da consola do administrador do Intune** O suporte da Loja Windows para Empresas está disponível no Intune para o ajudar a localizar, gerir e distribuir aplicações para os dispositivos Windows 10 que estiver a gerir. A Loja Windows para Empresas permite-lhe gerir o processo de implementação e monitorização destas aplicações na consola do administrador do Intune — a mesma consola que utiliza para gerir as suas outras aplicações. Especificamente, a Loja Windows para Empresas gere o conteúdo e o licenciamento de "aplicações licenciadas online". Para detalhes, consulte [Gerir aplicações compradas na Loja Windows para Empresas](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 
 ### Gestão de dispositivos
-- **Distribuição de certificados PFX para dispositivos iOS** Os administradores do Intune podem criar e implementar certificados PFX iOS para Wi-Fi, e-mail e autenticação VPN em dispositivos iOS. Esta funcionalidade já se encontra disponível para dispositivos Android e Windows 10. Para detalhes, consulte [Permitir o acesso a recursos da empresa através de perfis de certificados](secure-resource-access-with-certificate-profiles.md).
+- **Distribuição de certificados PFX para dispositivos iOS** Os administradores do Intune podem criar e implementar certificados PFX iOS para Wi-Fi, e-mail e autenticação VPN em dispositivos iOS. Esta funcionalidade já se encontra disponível para dispositivos Android e Windows 10. Para detalhes, consulte [Permitir o acesso a recursos da empresa através de perfis de certificados](/intune/deploy-use/secure-resource-access-with-certificate-profiles).
 
 
-- **Aplicar aplicações e políticas a diferentes grupos de dispositivos com base na seleção da categoria de utilizador** Os administradores do Intune podem agora definir categorias de dispositivo personalizadas para os utilizadores selecionarem durante a inscrição. Por exemplo, os administradores poderão querer que os utilizadores especifiquem se estão a inscrever um dispositivo utilizado para "Caixa registadora", "Camião de entregas" ou "Sala de inventário". A categoria selecionada fará com que o dispositivo passe a ser membro de um grupo de dispositivos do Intune, que pode ser utilizado para implementar diferentes aplicações e políticas no dispositivo inscrito. Para detalhes, consulte [Categorizar os dispositivos com o mapeamento de grupo de dispositivos](categorize-devices-with-device-group-mapping-in-microsoft-intune.md).
+- **Aplicar aplicações e políticas a diferentes grupos de dispositivos com base na seleção da categoria de utilizador** Os administradores do Intune podem agora definir categorias de dispositivo personalizadas para os utilizadores selecionarem durante a inscrição. Por exemplo, os administradores poderão querer que os utilizadores especifiquem se estão a inscrever um dispositivo utilizado para "Caixa registadora", "Camião de entregas" ou "Sala de inventário". A categoria selecionada fará com que o dispositivo passe a ser membro de um grupo de dispositivos do Intune, que pode ser utilizado para implementar diferentes aplicações e políticas no dispositivo inscrito. Para detalhes, consulte [Categorizar os dispositivos com o mapeamento de grupo de dispositivos](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
 
 ### Alterações e atualizações do Portal da Empresa da Microsoft
 As seguintes alterações foram efetuadas no Portal da Empresa nesta versão:
@@ -447,9 +447,9 @@ As seguintes alterações foram efetuadas no Portal da Empresa nesta versão:
     * Arranque Seguro
     * Integridade de Código
 
-    Leia o artigo [Introdução às políticas de conformidade de dispositivos para o Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) para obter mais detalhes sobre a definição de estado de funcionamento do dispositivo, pontos de dados recolhidos e o relatório de atestado de estado de funcionamento. O tópico [Detalhes do serviço HAS](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explica o serviço em profundidade.
+    Leia o artigo [Introdução às políticas de conformidade de dispositivos para o Microsoft Intune](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) para obter mais detalhes sobre a definição de estado de funcionamento do dispositivo, pontos de dados recolhidos e o relatório de atestado de estado de funcionamento. O tópico [Detalhes do serviço HAS](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explica o serviço em profundidade.
 
-* **Política Passport for Work e gestão de certificados do Windows 10** Com o Intune, é possível efetuar a [integração com o Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), que é um método de início de sessão alternativo para Windows 10 que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual. O Passport permite utilizar um gesto de utilizador para iniciar sessão, em vez de uma palavra-passe. Um gesto de utilizador pode ser um PIN simples, uma autenticação biométrica, como o Windows Hello, ou um dispositivo externo, como um leitor de impressões digitais.
+* **Política Passport for Work e gestão de certificados do Windows 10** Com o Intune, é possível efetuar a [integração com o Microsoft Passport for Work](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune), que é um método de início de sessão alternativo para Windows 10 que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual. O Passport permite utilizar um gesto de utilizador para iniciar sessão, em vez de uma palavra-passe. Um gesto de utilizador pode ser um PIN simples, uma autenticação biométrica, como o Windows Hello, ou um dispositivo externo, como um leitor de impressões digitais.
 
 * **VPN para aplicações específicas** Pode selecionar aplicações que ligam automaticamente à sua rede empresarial através de VPN. Crie a lista de aplicações quando configurar o perfil VPN, conforme descrito no tópico Ajudar os utilizadores a estabelecer uma ligação com o respetivo trabalho através de perfis da VPN com o Microsoft Intune.
 
@@ -457,10 +457,10 @@ As seguintes alterações foram efetuadas no Portal da Empresa nesta versão:
 
 
 ### Atualização do Apple Volume Purchase Program (VPP)
-O Intune pode agora ajudá-lo a [gerir as aplicações compradas através do Apple Volume Purchase Program (VPP) for Business](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). Isto inclui sincronizar as informações de licença entre a Apple e o Intune, e controlar a quantidade de cópias de cada aplicação que implementou.
+O Intune pode agora ajudá-lo a [gerir as aplicações compradas através do Apple Volume Purchase Program (VPP) for Business](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune). Isto inclui sincronizar as informações de licença entre a Apple e o Intune, e controlar a quantidade de cópias de cada aplicação que implementou.
 
 ### Utilizar números IMEI para identificar dispositivos pertencentes à empresa
-Agora, pode [importar números de identidade internacional do equipamento móvel (IMEI)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) para plataformas de dispositivos móveis que tenham um número IMEI para ajudar a identificar os dispositivos móveis pertencentes à empresa. Depois de inscritos no Intune, os dispositivos com números IMEI importados são etiquetados como Empresa, o que pode ser utilizado na aplicação de políticas diferentes das aplicadas a dispositivos de propriedade pessoal.
+Agora, pode [importar números de identidade internacional do equipamento móvel (IMEI)](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) para plataformas de dispositivos móveis que tenham um número IMEI para ajudar a identificar os dispositivos móveis pertencentes à empresa. Depois de inscritos no Intune, os dispositivos com números IMEI importados são etiquetados como Empresa, o que pode ser utilizado na aplicação de políticas diferentes das aplicadas a dispositivos de propriedade pessoal.
 
 ### Mais aplicações são agora compatíveis com as políticas MAM do Intune
 Mais aplicações de parceiros da Microsoft são agora compatíveis com as políticas de gestão de aplicações móveis (MAM) do Intune (para dispositivos geridos pelo Intune):
@@ -479,6 +479,6 @@ A partir de fevereiro de 2016, o Internet Explorer 9 já não será suportado co
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
