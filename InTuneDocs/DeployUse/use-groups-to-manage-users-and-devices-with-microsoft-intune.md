@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fbe37aa081f850224ce4ee76f66e154c6001c9c
-ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Este tópico descreve como criar grupos no Intune. Também fornece informações
 
 >[!IMPORTANT]
 >
->Se abrir a área de trabalho Grupos no portal do Intune e vir uma ligação para o portal do Azure Active Directory (Azure AD), significa que já está a utilizar a *nova* abordagem dos grupos de segurança do Azure AD à gestão de grupos no Intune, descrita no [Aviso sobre as futuras melhorias na experiência de administrador para grupos](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Clique na ligação para o portal do Azure AD para criar e gerir os seus grupos. 
+>Se abrir a área de trabalho Grupos no portal do Intune e vir uma ligação para o portal do Azure Active Directory (Azure AD), significa que já está a utilizar a *nova* abordagem dos grupos de segurança do Azure AD à gestão de grupos no Intune, descrita no [Aviso sobre as futuras melhorias na experiência de administrador para grupos](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Clique na ligação para o portal do Azure AD para criar e gerir os seus grupos.
+>
+>![Captura de ecrã da ligação para a gestão de grupos do Azure](../media/groups-link-azure.png) 
 >
 >Se não vir a ligação para o portal do Azure AD, é porque está a utilizar a abordagem *atual* à gestão de grupos descrita na secção [Criar grupos para gerir utilizadores e dispositivos com o Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) deste tópico.
 
@@ -202,6 +204,6 @@ Cada política tem um **Valor Pretendido** e um **Estado**. O valor pretendido �
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
