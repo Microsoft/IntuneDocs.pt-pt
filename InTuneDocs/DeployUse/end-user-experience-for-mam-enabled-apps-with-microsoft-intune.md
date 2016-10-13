@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a inform�
 
 ![Captura de ecrã da mensagem de erro e instruções para remover a conta](../media/AppManagement/Android_SwitchUser.png)
 
-##  Ver ficheiros de multimédia para com a aplicação de partilha Rights Management
-Para ver ficheiros AV, PDF e de imagem da empresa em dispositivos Android, utilize a [aplicação de partilha Microsoft Rights Management (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+##  Visualização de ficheiros de multimédia com a aplicação do Azure Information Protection (anteriormente conhecida como aplicação de partilha de Gestão de Direitos)
+Para ver ficheiros AV, PDF e de imagem da empresa em dispositivos Android, utilize a [aplicação do Azure Information Protection](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Transfira esta aplicação a partir da loja Google Play.  Quando a aplicação estiver instalada no seu dispositivo, inicie a aplicação e autentique-se com as credenciais da empresa. Agora, deverá conseguir ver os ficheiros protegidos e não protegidos de outras aplicações geridas por políticas.
+Transfira esta aplicação a partir da loja Google Play.  
 
 São suportados os seguintes tipos de ficheiro:
 
 * **Áudio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ melhorado), AAC ELD (AAC de atraso lento melhorado), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Imagem:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**pfile**|**texto**|
 |----|----|
-|Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças de RMS e pode ser utilizado para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças do Azure Information Protection e pode ser utilizado para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Dispositivos Android que não estão inscritos no Intune**
 
-Antes de poder utilizar a aplicação de partilha RMS para ver os ficheiros de outras aplicações geridas pelo Intune, inicie a aplicação RMS e autentique-se com a sua conta profissional.  Quando iniciar sessão, verá a seguinte mensagem **apenas se não tiver uma licença RMS**:
-
-**Autenticação Bem-sucedida – pode agora visualizar ficheiros empresariais, mas a sua organização não está configurada para lhe permitir proteger ficheiros. Contacte o seu administrador de TI para obter mais detalhes.**
-
-Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheiros da empresa. Ainda pode abrir e ver os ficheiros da empresa a partir de outras aplicações geridas pelo Intune, e as políticas de MAM ainda são aplicáveis.  O que esta mensagem diz é que não poderá adicionar as capacidades de proteção adicionais que a aplicação de partilha RMS fornece.  Tem de ter uma licença RMS para adicionar uma proteção aos seus ficheiros. Para saber mais sobre as funcionalidades de proteção RMS de ficheiros, consulte [Proteger um ficheiro num dispositivo](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) e [Proteger um ficheiro que partilha por e-mail](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Consulte também
@@ -171,6 +165,6 @@ Isto não o impede de utilizar a aplicação de partilha RMS para ver os ficheir
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

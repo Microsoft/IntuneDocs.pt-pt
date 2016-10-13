@@ -4,7 +4,7 @@ description: "Utilize as definições de política indicadas neste tópico para 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
-ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
+ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
+ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
 
 
 ---
@@ -53,7 +53,7 @@ Para cada definição OMA-URI que pretende adicionar, introduza as informações
 - **Valor** - indique o valor a associar ao OMA-URI que introduziu.
 
 ### Exemplo
-Na captura de ecrã abaixo, a definição **Conectivity/AllowVPNOverCellular** foi ativada. Isto permite que um dispositivo Windows 10 abra uma ligação VPN quando estiver numa rede celular.
+Na captura de ecrã abaixo, a definição **Connectivity/AllowVPNOverCellular** foi ativada. Isto permite que um dispositivo Windows 10 abra uma ligação VPN quando estiver numa rede celular.
 
 > ![Exemplo de uma política personalizada que contém as definições de VPN](./media/custom-policy-example.png)
 
@@ -225,7 +225,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 
 |Nome da definição|Informações adicionais (quando necessário)|
 |----------------|----------------------|
-|**Permitir browser**|Permite a utilização do browser Edge no dispositivo.<br>(Apenas Windows 10 Mobile)|
+|**Permitir browser**|Permite a utilização do browser Microsoft Edge no dispositivo.<br>(Apenas Windows 10 Mobile)|
 |**Permitir sugestões de pesquisa na barra de endereço**|Permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.|
 |**Permitir o envio de tráfego da intranet para o Internet Explorer**|Permite que os utilizadores abram sites da intranet no Internet Explorer.<br>(apenas para ambiente de trabalho Windows 10)|
 |**Permitir não controlar**|Configura o browser Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.|
@@ -234,7 +234,7 @@ Utilize a **política de configuração geral** do Microsoft Intune para Windows
 |**Permitir pop-ups**|Aplica-se apenas ao ambiente de trabalho Windows 10|
 |**Permitir cookies**|-|
 |**Permitir Preenchimento Automático**|Permite que os utilizadores alterem as definições de conclusão automática no browser.<br>(apenas para ambiente de trabalho Windows 10)|
-|**Permitir Gestor de Palavras-passe**|Ativar ou desativar a funcionalidade Gestor de Palavras-passe do Edge.|
+|**Permitir Gestor de Palavras-passe**|Ativar ou desativar a funcionalidade Gestor de Palavras-passe do Microsoft Edge.|
 |**Localização da lista de sites do Modo Empresarial**|Especifica onde encontrar a lista de Web sites que serão abertos no modo Empresarial. Os utilizadores não podem editar esta lista.<br>(apenas para ambiente de trabalho Windows 10)|
 
 ## &nbsp;&nbsp;&nbsp;Aplicações
@@ -326,6 +326,6 @@ Todas as definições são apenas para ambiente de trabalho Windows 10.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
