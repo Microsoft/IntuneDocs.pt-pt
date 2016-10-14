@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 0d3be16480feccacf26c11f738393df2b4c4d468
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
 
 
 ---
@@ -32,7 +32,6 @@ iOS | Suportado
 Windows 10 Mobile | Suportado apenas se o telemóvel tiver um código de acesso definido     
 Windows 10 Desktop | Não suportado  
 Windows Phone 8.1 | Suportado apenas se o telemóvel tiver um código de acesso definido
-Windows Phone 8.0 | Não suportado
 PC (Windows 8.0 e anterior) | Não suportado       
 PC (Windows 8.1) | Não suportado
 
@@ -64,6 +63,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dc767abc733457d975b61b96e21781952f79c6f9
-ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,12 +49,6 @@ Instale a aplicação **Portal da Empresa do Intune**, da Microsoft Corporation,
 ### Windows Phone 8.1
 Os utilizadores devem instalar a aplicação **Portal da Empresa**, da Microsoft Corporation, disponível na loja do Windows Phone, e iniciar sessão com as credenciais de utilizador do Intune adicionadas acima.  Veja os **Dispositivos inscritos** para adicionar o seu dispositivo.
 
- ### Windows Phone 8.0
- Os utilizadores devem clicar em **definições do sistema** &gt; **aplicações da empresa** e iniciar sessão com as credenciais de utilizador do Intune adicionadas acima. A aplicação Portal da Empresa é implementada no seu telemóvel.
-
-Se for pedido o **Endereço do servidor**, escreva "manage.microsoft.com".
-
-
 ## Instalar a aplicação anteriormente implementada
 Abra o Portal da Empresa no dispositivo móvel, escolha **Aplicações**e, em seguida, instale o **Microsoft Skype**.
 
@@ -69,6 +63,6 @@ Parabéns! Acabou de concluir o passo 5 das instruções da *avaliação do Micr
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

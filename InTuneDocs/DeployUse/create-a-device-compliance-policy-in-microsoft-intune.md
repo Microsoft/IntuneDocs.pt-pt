@@ -4,7 +4,7 @@ description: "Crie uma política de conformidade para ajudar a proteger disposit
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ A tabela seguinte lista as definições de política de conformidade e as plataf
 -------------
 |Definição|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Palavra-passe obrigatória para desbloquear os dispositivos móveis|iOS 6 e posterior|Android 4.0 e posterior <br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior|
-|Permitir palavras-passe simples|iOS 6 e posterior|Não suportado|Windows Phone 8 e posterior|
-|Comprimento mínimo da palavra-passe|iOS 6 e posterior| Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior| Windows Phone 8 e posterior<br>Windows 8,1|
-|Tipo obrigatório de palavra-passe|iOS 6 e posterior|Não disponível|Windows Phone 8 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8,1|
-|Número mínimo de conjuntos de carateres|iOS 6 e posterior|Não disponível|Windows Phone 8 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8,1|
+|Palavra-passe obrigatória para desbloquear os dispositivos móveis|iOS 6 e posterior|Android 4.0 e posterior <br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior|
+|Permitir palavras-passe simples|iOS 6 e posterior|Não suportado|Windows Phone 8.1 e posterior|
+|Comprimento mínimo da palavra-passe|iOS 6 e posterior| Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior| Windows Phone 8.1 e posterior<br>Windows 8.1|
+|Tipo obrigatório de palavra-passe|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8,1|
+|Número mínimo de conjuntos de carateres|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8,1|
 |Qualidade da palavra-passe|Não disponível|Android 4.0 e posterior <br>Samsung KNOX Standard 4.0 e posterior|Não disponível|
-|Minutos de inatividade antes da palavra-passe ser exigida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
-|Expiração da Palavra-passe (dias)|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
-|Memorizar histórico de palavras-passe|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
-|Impedir a reutilização de palavras-passe anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
+|Minutos de inatividade antes da palavra-passe ser exigida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
+|Expiração da Palavra-passe (dias)|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
+|Memorizar histórico de palavras-passe|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
+|Impedir a reutilização de palavras-passe anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
 |Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo| Não disponível| Não disponível|Windows 10 Mobile|
-|Encriptação obrigatória no dispositivo móvel|Não aplicável|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior<br> Windows 8,1|
+|Encriptação obrigatória no dispositivo móvel|Não aplicável|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br> Windows 8.1|
 |Exigir que os dispositivos sejam comunicados como estando em bom estado de funcionamento| Não disponível| Não disponível|Windows <br>Windows 10 Mobile|
 |O dispositivo não pode ter jailbreak nem root|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Não disponível|
 |A conta de e-mail tem de ser gerida pelo Intune|iOS 6 e posterior|Não disponível| Não disponível|
 |Selecionar o perfil de e-mail que deve ser gerido pelo Intune|iOS 6 e posterior|Não disponível| Não disponível|
-|SO Mínimo obrigatório|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior| Windows Phone 8 e posterior<br>Windows 8,1|
-|Versão máxima de SO permitida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8 e posterior<br>Windows 8,1|
+|SO Mínimo obrigatório|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior| Windows Phone 8.1 e posterior<br>Windows 8.1|
+|Versão máxima de SO permitida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows 8.1|
 
 Selecione um dos seguintes passos para obter mais informações sobre as definições de conformidade suportadas em cada plataforma:
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ Selecione um dos seguintes passos para obter mais informações sobre as defini�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
