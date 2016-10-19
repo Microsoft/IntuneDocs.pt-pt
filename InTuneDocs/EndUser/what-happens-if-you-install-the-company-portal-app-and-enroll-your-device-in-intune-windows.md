@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/8/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 
 ---
@@ -23,16 +23,16 @@ ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
 
 # O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Windows no Intune?
 
-Quando instala a aplicação do Portal da Empresa e, em seguida, a utiliza para inscrever um dispositivo Windows ou Windows Phone, o seu administrador de TI pode gerir o seu dispositivo para manter aos dados da empresa ou da escola protegidos, conforme é descrito abaixo relativamente a dispositivos anteriores ao Windows 10. Para obter informações sobre os dispositivos Windows 10, veja [esta página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Quando instala a aplicação Portal da Empresa e a utiliza para inscrever um dispositivo Windows ou Windows Phone, está a dar permissão ao seu administrador para gerir o seu dispositivo de forma a manter os dados da sua empresa ou escola em segurança, tal como é descrito abaixo para dispositivos anteriores ao Windows 10. Consulte [esta página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) para dispositivos com Windows 10.
 
 ## O que acontece a todos os dispositivos Windows após a inscrição
-Quando inscreve o seu dispositivo Windows ou Windows Phone no Intune, pode:
+Inscrever o seu dispositivo Windows ou Windows Phone no Intune permite-lhe:
 
 -   Aceder à rede da empresa e ao seu e-mail e ficheiros de trabalho
 
 -   Obter aplicações empresariais a partir do Web site do Portal da Empresa (no Windows 7 e Vista, só pode obter aplicações empresariais a partir do Web site do Portal da Empresa)
 
--   Configurar automaticamente a conta de e-mail da empresa ou escola
+-   Configurar automaticamente a sua conta de e-mail escolar ou profissional
 
 -   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo
 
@@ -40,19 +40,17 @@ Quando inscreve o seu dispositivo, dá permissão ao seu administrador de TI par
 
 -   Repor as predefinições do fabricante do seu dispositivo. Esta ação é útil em caso de perda ou roubo do dispositivo.
 
--   Remover todos os dados relacionados com a empresa e todas as aplicações empresariais que foram instaladas. Os dados e definições pessoais não são removidos.
+-   Remover apenas aplicações empresariais e ficheiros relacionados com a empresa. **Os dados e definições pessoais não são removidos.**
 
--   O seu administrador de TI pode fazer um inventário de todo o software instalado no computador, incluindo software que o utilizador tenha instalado pessoalmente.
+-   O seu administrador de TI consegue ver o software que tem instalado no dispositivo, incluindo o software que tem instalado para utilização pessoal.
 
--   Exigir que tenha uma palavra-passe ou PIN no dispositivo, o que pode impedi-lo de aceder ao mesmo ou repor as predefinições do fabricante do seu dispositivo, o que pode incluir a eliminação de dados, se ocorrerem demasiadas tentativas de introdução incorreta de palavra-passe.
+-   Definir requisitos no seu dispositivo, como exigir que tenha uma palavra-passe de dispositivo ou um PIN para proteger os dados da empresa. O seu administrador de TI também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do dispositivo se tentar demasiadas vezes.
 
--   Exigir que todos os dados no dispositivo sejam encriptados, o que ajuda a proteger os dados se o dispositivo se perder ou for roubado.
+-   Exigir-lhe que faça a encriptação dos dados no seu dispositivo para ajudar a proteger os dados da empresa em caso de perda ou roubo do seu dispositivo. 
 
 -   O seu administrador de TI pode exigir que aceite os termos e condições.
 
--   O seu administrador de TI pode impor políticas no computador. Por exemplo, poderá ser necessário definir uma palavra-passe ou PIN no computador, o que pode impedi-lo de aceder ao mesmo, ou eliminar todos os dados do disco rígido do seu computador, se ocorrerem demasiadas tentativas de introdução incorreta de palavra-passe.
-
--   Desativar o cartão SD.
+-   Impedir que tire fotografias de dados relacionados com a empresa.
 
 ## O que acontece a todos os PCs Windows após a inscrição
 
@@ -60,19 +58,12 @@ Quando inscreve o seu dispositivo, dá permissão ao seu administrador de TI par
 
 -  O Endpoint Protection do Intune pode ser instalado no seu computador. É um software que verifica a existência de vírus e software maligno.
 
--  O seu administrador de TI pode fazer um inventário de todo o software instalado no computador, incluindo software que o utilizador tenha instalado pessoalmente.
-
--  Poderá ter de aceitar os termos e condições.
-
--  O seu administrador de TI pode recolher ou eliminar dados do disco rígido do seu computador. O seu administrador de TI também pode eliminar o seu disco rígido inteiro.
+-  O seu administrador de TI pode recolher ou eliminar dados do disco rígido do seu computador.
 
 -  O seu administrador de TI pode instalar aplicações e atualizações no seu computador.
 
--  O seu administrador de TI pode impor políticas no computador. Por exemplo, poderá ser necessário definir uma palavra-passe ou PIN no computador, o que pode impedi-lo de aceder ao mesmo, ou eliminar todos os dados do disco rígido do seu computador, se ocorrerem demasiadas tentativas de introdução incorreta de palavra-passe.
-
-
 ## O que acontece a cada oito horas após a inscrição de dispositivos
-A cada oito horas aproximadamente, os dispositivos inscritos irão:
+A cada oito horas, os dispositivos inscritos irão:
 
 -   Transferir atualizações de políticas ou aplicações disponibilizadas pelo seu administrador de TI.
 
@@ -80,15 +71,11 @@ A cada oito horas aproximadamente, os dispositivos inscritos irão:
 
 -   Enviar atualizações de inventário de aplicações da empresa.
 
-Para obter os passos para a inscrição, veja [Enroll your Windows device in Intune (Inscrever o seu dispositivo Windows no Intune)](enroll-your-device-in-intune-windows.md). Para saber o que o seu administrador de TI pode ver no seu dispositivo, consulte [O que pode o administrador de TI ver se inscrever o meu dispositivo no Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
-
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
-### Consulte também
-[Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

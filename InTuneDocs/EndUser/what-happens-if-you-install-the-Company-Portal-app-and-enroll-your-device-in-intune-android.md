@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -37,15 +37,15 @@ Ao inscrever o seu dispositivo Android, dá permissão ao seu administrador de T
 
 -   Repor as predefinições do fabricante do seu dispositivo. Esta ação é útil em caso de perda ou roubo do dispositivo.
 
--   Remover todos os dados relacionados da empresa. Os dados e definições pessoais não são removidos.
+-   Remover todos os dados relacionados com a empresa. Os dados e definições pessoais não são removidos.
 
--   Exigir que tenha uma palavra-passe ou PIN no dispositivo, o que pode impedi-lo de aceder ao mesmo ou repor as predefinições do fabricante do seu dispositivo, o que pode incluir a eliminação de dados, se ocorrerem demasiadas tentativas de introdução incorreta de palavra-passe.
+-   Definir requisitos no seu dispositivo, como exigir que tenha uma palavra-passe de dispositivo ou um PIN para proteger os dados da empresa. O seu administrador de TI também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do dispositivo se tentar demasiadas vezes.
 
 -   O seu administrador de TI pode exigir que aceite os termos e condições.
 
--   Ativar ou desativar a câmara no seu dispositivo.
+-   Desativar a câmara (apenas em dispositivos Samsung Knox, não em dispositivos Nexus) para o impedir de tirar fotografias de material de trabalho confidencial que não deve ser partilhado.
 
--   Exigir que todos os dados (incluindo dados empresariais e pessoais) no dispositivo estejam encriptados. Isto ajuda a proteger os dados em caso de perda ou roubo do dispositivo.
+-   Exigir que todos os dados no dispositivo sejam encriptados para ajudar a proteger os mesmos em caso de perda ou roubo do dispositivo.
 
 -   Após o seu dispositivo ser adicionado ao portal da empresa, este irá, aproximadamente a cada 8 horas:
 
@@ -58,11 +58,8 @@ Ao inscrever o seu dispositivo Android, dá permissão ao seu administrador de T
 Precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
 
 
-### Consulte também
-[Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

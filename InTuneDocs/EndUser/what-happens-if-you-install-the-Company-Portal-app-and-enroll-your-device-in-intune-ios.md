@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ Quando o seu dispositivo está inscrito, o administrador de TI pode:
 
 -   O seu administrador de TI pode exigir que aceite os termos e condições.
 
--   Ativar ou desativar a câmara no seu dispositivo.
+-   Ativar ou desativar a câmara no seu dispositivo para o impedir de tirar fotografias a dados confidenciais da empresa.
 
 -   Ativar ou desativar a navegação na web no seu dispositivo.
 
@@ -91,12 +91,10 @@ Quando o seu dispositivo está inscrito, o administrador de TI pode:
 
 -   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, podem incorrer tarifas de roaming.
 
-Para obter os passos sobre como inscrever o seu dispositivo, veja [Enroll your iOS device in Intune (Inscrever o dispositivo iOS no Intune)](enroll-your-device-in-intune-ios.md) ou [Enroll your Mac OS X device in Intune (Inscrever o dispositivo Mac OS X no Intune)](enroll-your-device-in-intune-mac-os-x.md).
-
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
