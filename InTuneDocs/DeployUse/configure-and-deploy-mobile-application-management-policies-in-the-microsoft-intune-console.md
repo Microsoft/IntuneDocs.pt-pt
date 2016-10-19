@@ -4,7 +4,7 @@ description: "As políticas de gestão de aplicações móveis no Microsoft Intu
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,20 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
 
-# Configure and deploy mobile application management policies in the Microsoft Intune console
+# Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
 As políticas de gestão de aplicações móveis (MAM) no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa. Por exemplo, pode restringir operações de corte, cópia e colagem numa aplicação gerida ou configurar uma aplicação para abrir todas as ligações num browser gerido.
 
 As políticas de gestão de aplicações móveis suportam:
 
 -   Dispositivos com Android 4 ou posterior.
 
--   Dispositivos com iOS 7 ou posterior.
+-   Dispositivos com iOS 8.0 ou posterior.
 
 > [!TIP]
 > As políticas de gestão de aplicações móveis suportam dispositivos que estão inscritos no Intune.
@@ -112,7 +112,7 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
 
     -   **Política de Gestão de Aplicações Móveis (Android 4 e posterior)**
 
-    -   **Política de Gestão de Aplicações Móveis (iOS 7 e posterior)**
+    -   **Política de Gestão de Aplicações Móveis (iOS 8.0 e posterior)**
 
     Pode utilizar definições recomendadas ou personalizar as mesmas. Para obter informações, consulte [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -134,7 +134,7 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
     |**Exigir a conformidade do dispositivo com a política empresarial para acesso**|Esta definição apenas permite que a aplicação seja utilizada quando o dispositivo não tem jailbreak nem root.|
     |**Verificar novamente os requisitos de acesso após (minutos)**|No campo **Tempo limite**, especifique o período de tempo antes de os requisitos de acesso da aplicação serem novamente verificados após a aplicação ser aberta.|
     |**Período de tolerância offline**|Se o dispositivo estiver offline, especifique o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados.|
-    |**Encriptar dados da aplicação**|Esta definição especifica que todos os dados associados a esta aplicação serão encriptados. Isto inclui os dados armazenados externamente, como em cartões SD.<br /><br />**Encriptação para iOS**<br /><br />Para aplicações associadas à política de gestão de aplicações móveis do Intune, os dados são encriptados em descanso através da encriptação ao nível do dispositivo fornecida pelo sistema operativo. Isto é ativado através da política de PIN de dispositivo definida pelo administrador de TI. Quando for necessário um PIN, os dados serão encriptados de acordo com as definições na política de gestão de aplicações móveis. Conforme indicado na documentação da Apple, [os módulos utilizados pelo iOS 7 têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Encriptação para Android**<br /><br />Para as aplicações associadas a uma política de gestão de aplicações móveis do Intune, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros.  O conteúdo no armazenamento do dispositivo será sempre encriptado. O método de encriptação não tem certificação FIPS 140-2.|
+    |**Encriptar dados da aplicação**|Esta definição especifica que todos os dados associados a esta aplicação serão encriptados. Isto inclui os dados armazenados externamente, como em cartões SD.<br /><br />**Encriptação para iOS**<br /><br />Para aplicações associadas à política de gestão de aplicações móveis do Intune, os dados são encriptados em descanso através da encriptação ao nível do dispositivo fornecida pelo sistema operativo. Isto é ativado através da política de PIN de dispositivo definida pelo administrador de TI. Quando for necessário um PIN, os dados serão encriptados de acordo com as definições na política de gestão de aplicações móveis. Conforme indicado na documentação da Apple, [os módulos utilizados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Encriptação para Android**<br /><br />Para as aplicações associadas a uma política de gestão de aplicações móveis do Intune, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros.  O conteúdo no armazenamento do dispositivo será sempre encriptado. O método de encriptação não tem certificação FIPS 140-2.|
     |**Bloquear captura de ecrã** (apenas dispositivos Android)|Esta definição especifica que as funções de captura de ecrã do dispositivo estão bloqueadas durante a utilização desta aplicação.|
     
 4. Quando terminar, selecione **Guardar Política**.
@@ -147,8 +147,6 @@ Certifique-se de que seleciona a política de gestão de aplicações móveis na
 Para obter detalhes, consulte [Implementar aplicações no Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
-> Para dispositivos com sistemas operativos anteriores ao iOS 7.1, as políticas associadas não serão removidas quando a aplicação é desinstalada.
->
 > Se o dispositivo não estiver inscrito no Intune, as políticas não são removidas das aplicações. As aplicações que tinham as políticas aplicadas irão manter as definições de política depois de a aplicação ser desinstalada e reinstalada.
 
 ### O que fazer quando uma aplicação já está implementada nos dispositivos
@@ -195,6 +193,6 @@ Nos casos em que o dispositivo ou o utilizador recebe duas políticas em conflit
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
   - Não é possível repor dispositivos a partir do Portal da Empresa.
   - Apenas o dispositivo local é apresentado na aplicação do Portal da Empresa ou do site.
   - Não podem utilizar aplicações Apple Volume Purchase Program (VPP) devido aos requisitos do Apple ID por utilizador para a gestão de aplicações.
-  - Também não podem ser inscritos com o Apple Configurator ou o Programa de Inscrição de Dispositivos Apple (dispositivos iOS).
+  - (iOS) Também não podem ser inscritos com o Apple Configurator ou com o Apple Device Enrollment Program (DEP), mas os serviços geridos pelo DEP ou pelo Apple Configurator podem ser inscritos sem afinidade de utilizador.
 
 > [!NOTE]
 > Para implementar aplicações da empresa em dispositivos geridos com o gestor de inscrição de dispositivos, implemente a aplicação Portal da Empresa como uma **Instalação Obrigatória** na conta de utilizador do gestor de inscrição de dispositivos.
@@ -95,6 +95,6 @@ A eliminação de um gestor de inscrição de dispositivos não afeta os disposi
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
