@@ -4,7 +4,7 @@ description: "Utilize o Intune para gerir aplicações compradas em volume na Ap
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 164f9656246a46bf39e263fc3c5f16828674e1fd
-ms.openlocfilehash: a5c37c470f937c682d9138a636d1211f641da784
+ms.sourcegitcommit: 611cfb0176a922234c29642c305dd03699922c5f
+ms.openlocfilehash: 5981a2e147c89776d304226250170ec4114e35d8
 
 
 ---
@@ -26,6 +26,7 @@ O Microsoft Intune ajuda-o a gerir aplicações compradas através deste program
 
 > [!Important]
 > Atualmente, o Intune atribui licenças de aplicações VPP (Volume Purchase Program for Business) iOS a utilizadores e não a dispositivos. Por este motivo, os utilizadores têm de introduzir a respetiva palavra-passe do ID Apple para instalar a aplicação.
+> O Apple Volume Purchase Program for Education não é suportado nesta versão.
 
 ## Gerir aplicações compradas em grandes volumes para dispositivos iOS
 Compra várias licenças para aplicações iOS através do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). Isto envolve configurar uma conta VPP da Apple no site da Apple e carregar o token VPP da Apple para o Intune.  Depois disso, pode sincronizar as informações de compra em volume com o Intune e controlar a utilização da aplicação comprada em volume.
@@ -89,6 +90,6 @@ Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
