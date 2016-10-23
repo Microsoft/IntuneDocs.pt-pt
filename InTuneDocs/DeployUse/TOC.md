@@ -11,6 +11,7 @@
 ### [Pré-requisitos para MDM](prerequisites-for-enrollment.md)
 #### [Configurar a gestão de iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Gestão de Android](set-up-android-management-with-microsoft-intune.md)
+#### [Gestão do Android for Work](set-up-android-for-work.md)
 #### [Gestão de dispositivos Windows ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Gerir dispositivos pertencentes à empresa](manage-corporate-owned-devices.md)
@@ -34,6 +35,7 @@
 ### [Gerir definições e funcionalidades nos seus dispositivos com políticas](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [Definições do iOS](ios-policy-settings-in-microsoft-intune.md)
 #### [Definições de Android e Samsung KNOX](android-policy-settings-in-microsoft-intune.md)
+#### [Definições do Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Definições do Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Definições do Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Definições para dispositivos móveis e computadores Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
@@ -72,6 +74,7 @@
 #### [Gerir contratos de licença de PCs do cliente Intune](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Implementar aplicações](deploy-apps.md)
 ### [Implementar aplicações em dispositivos e PCs](deploy-apps-in-microsoft-intune.md)
+### [Implementar aplicações em dispositivos Android for Work](android-for-work-apps.md)
 ### [Monitorizar aplicações](monitor-apps-in-microsoft-intune.md)
 ### [Gerir aplicações compradas em grandes volumes](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Gerir aplicações iOS compradas em grandes volumes](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -80,6 +83,7 @@
 ## [Configurar aplicações](update-apps-using-microsoft-intune.md)
 ### [Atualizar aplicações ](update-apps-using-microsoft-intune.md)
 ### [Políticas de configuração de aplicações iOS](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Políticas de configuração da aplicação Android for Work](afw-app-configuration-policy.md)
 ### [Perfis de aprovisionamento de aplicações para dispositivos móveis iOS](ios-mobile-app-provisioning-profiles.md)
 ### [Gerir o acesso à Internet](manage-internet-access-using-managed-browser-policies.md)
 
@@ -87,12 +91,13 @@
 ## [Proteger aplicações e dados](protect-apps-and-data-with-microsoft-intune.md)
 ### [Políticas de conformidade de dispositivo](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Criar uma política de conformidade de dispositivo](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Para Android](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [Para iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [Para Windows e Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows e Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Implementar uma política de conformidade de dispositivo](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Restringir o acesso ao e-mail, O365 e outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Restringir o acesso com base na conformidade do dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online e o novo Exchange Online Dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -101,7 +106,9 @@
 #### [Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Restringir o acesso ao e-mail: exemplos](restrict-email-access-example-scenarios.md)
-
+### [Permitir que apenas aplicações geridas pela política acedam aos serviços do O365](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [Bloquear aplicações sem ADAL](block-apps-with-no-modern-authentication.md)
 ### [Restringir o acesso a redes (Cisco ISE)](restrict-access-to-networks.md)
 ### [Restringir o acesso com base no dispositivo, na rede e no risco da aplicação](restrict-access-based-on-device-network-app-risk.md)
 #### [Configurar a proteção contra ameaças de dispositivos do Lookout](set-up-your-subscription-with-lookout-mtp.md)
@@ -133,13 +140,13 @@
 ### [Extinguir aplicações ](retire-apps-using-microsoft-intune.md)
 ### [Eliminar dados de aplicações geridas pela empresa](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [O que dizer aos utilizadores finais](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [Recursos acerca da experiência do utilizador final](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [Desenvolver e Personalizar Aplicações](/intune/develop/intune-app-sdk)
 
 # [Resolver Problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

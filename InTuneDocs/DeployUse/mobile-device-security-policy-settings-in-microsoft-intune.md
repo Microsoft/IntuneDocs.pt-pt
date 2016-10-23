@@ -4,7 +4,7 @@ description: "Utilize o Intune para configurar uma grande variedade de definiç�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +40,7 @@ Pode criar e implementar políticas de segurança de dispositivos móveis para o
 
 > [!NOTE]
 > Algumas definições não são aplicáveis a alguns dispositivos. Consulte a tabela abaixo para obter uma lista completa das definições que pode configurar.
+> A partir de outubro de 2016, o Microsoft Intune deixará de suportar aplicações de Portal da Empresa para Windows 8. O Microsoft Intune irá também preterir o suporte para a plataforma do Windows Phone 8 e do WinRT. Como resultado, não será capaz de inscrever ou atualizar dispositivos Windows Phone 8 e WinRT. Pode continuar a gerir dispositivos Windows Phone 8, WinRT e Windows 8 que já tenham sido inscritos. Atualize dispositivos Windows Phone 8 e Windows 8 para Windows Phone 8.1 e Windows 8.1, e utilize as aplicações do Portal da Empresa para Windows 8.1 e Windows Phone 8.1 correspondentes para continuar a distribuir aplicações para estes dispositivos, sem interrupções.
 
 ## Definições de segurança
 
@@ -212,6 +213,6 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Utilize Perfis de VPN para implementar definições da VPN em util
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # Ligações VPN no Microsoft Intune
- Pode utilizar redes privadas virtuais (VPNs) para conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os utilizadores remotos podem trabalhar como se os respetivos dispositivos estivessem ligados fisicamente à rede. Os dispositivos utilizam um perfil de ligação VPN para iniciar uma ligação com o servidor VPN. Utilize *Perfis de VPN* no Microsoft Intune para implementar definições da VPN em utilizadores e dispositivos na sua organização. Ao implementar estas definições, estará a minimizar o esforço do utilizador final para se ligar aos recursos na rede da empresa.
+
+As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um *perfil de ligação VPN* para iniciar uma ligação com o servidor VPN. Utilize os *Perfis VPN* no Microsoft Intune para implementar definições de VPN a utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede. 
 
 Por exemplo, suponha que pretende aprovisionar todos os dispositivos iOS com as definições necessárias para estabelecer uma ligação a uma partilha de ficheiros na rede da empresa. Pode criar um perfil de VPN com as definições necessárias para se ligar à rede da empresa e, em seguida, implementar este perfil em todos os utilizadores com dispositivos iOS. Os utilizadores verão a ligação VPN na lista de redes disponíveis e poderão ligar-se sem qualquer esforço.
 
 Pode configurar os seguintes tipos de dispositivo com perfis de VPN:
 
 * Dispositivos a executar o Android 4 e posterior
+* Dispositivos Android for Work
 * Dispositivos com iOS 8.0 ou posterior
 * Dispositivos com Mac OS X 10.9 e posterior
 * Dispositivos inscritos com Windows 8.1 e posterior
@@ -42,7 +44,7 @@ O Intune suporta a criação de perfis de VPN que utilizem os seguintes tipos de
 
 
 
-Tipo de ligação |iOS e Mac OS X  |Android|Windows 8,1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
+Tipo de ligação |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |     Não    |Não  |Não    | Sim, (apenas OMA-URI, Mobile)|     
 Cisco (IPsec)|Sim |Não   |Não  |  Não|Não  |Não | Não|
@@ -70,9 +72,7 @@ Os perfis da VPN podem utilizar vários tipos de ligação e protocolos diferent
 
 ### Certificados
 
-Quando cria o perfil da VPN, pode escolher um perfil de certificado SCEP ou .PFX que tenha criado anteriormente no Intune.
-
-Este é conhecido como certificado de identidade. É utilizado para autenticação em relação a um certificado fidedigno (ou um certificado de raiz) que criou para estabelecer que o dispositivo do utilizador tem permissões para se ligar. O certificado fidedigno é implementado no computador que irá autenticar a ligação VPN (normalmente, o servidor VPN).
+Quando cria o perfil da VPN, pode escolher um perfil de certificado SCEP ou .PFX que tenha criado anteriormente no Intune. Este é conhecido como certificado de identidade. É utilizado para autenticação em relação a um certificado fidedigno (ou um *certificado de raiz*) que criou para estabelecer que o dispositivo do utilizador tem permissões para se ligar. O certificado fidedigno é implementado no computador que irá autenticar a ligação VPN (normalmente, o servidor VPN).
 
 Para mais informações sobre como criar e utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
@@ -85,6 +85,7 @@ O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e, em seguida, selecione o perfil da VPN desse dispositivo:
     * **Perfil da VPN (Android 4 e posterior)**
+    * **Perfil da VPN (Android for Work)**
     * **Perfil da VPN (iOS 8.0 e posterior)**
     * **Perfil da VPN (Mac OS X 10.9 e posterior)**
     * **Perfil da VPN (Windows 8.1 e posterior)**
@@ -92,6 +93,9 @@ O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e 
     * **Perfil da VPN (Windows 10 Desktop e Mobile e posterior)**
 
  Só pode criar e implementar uma política de perfil da VPN personalizada. As definições recomendadas não estão disponíveis.
+
+> [!Note]
+> Um perfil da VPN para dispositivos Android for Work irá ativar uma ligação VPN apenas para aplicações que estejam instaladas no perfil de trabalho do dispositivo.
 
 3. Utilize a seguinte tabela que o ajuda a configurar as definições de perfil da VPN:
 
@@ -192,6 +196,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

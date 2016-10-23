@@ -1,6 +1,6 @@
 ---
 title: "Como os utilizadores de dispositivos Windows obtêm as aplicações | Microsoft Intune"
-description: "Métodos para disponibilizar aplicações Windows aos utilizadores finais"
+description: "Métodos para disponibilizar aplicações Windows aos utilizadores"
 keywords: 
 author: Staciebarker
 manager: angrobe
@@ -13,8 +13,8 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 205821f1e6a9685b2a60f6c6d3e0ba3e9e961d85
+ms.sourcegitcommit: 5d2cb9258ea84c50c04670e51172020ed27a5eaf
+ms.openlocfilehash: 67b0b8ef58f184329a54c8e9ca96107911d0e37a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: 205821f1e6a9685b2a60f6c6d3e0ba3e9e961d85
 
 # Como os utilizadores de dispositivos Windows obtêm as aplicações
 
-Utilize estas informações para saber como e onde é que os seus utilizadores finais podem obter as aplicações que distribuir através do Microsoft Intune.
+Utilize estas informações para saber como e onde é que os seus utilizadores podem obter as aplicações que distribuir através do Microsoft Intune.
 
-**Aplicações obrigatórias** - aplicações exigidas pelo administrador e que são instaladas nos dispositivos com envolvimento mínimo do utilizador, dependendo da plataforma.
+**Aplicações obrigatórias** – aplicações exigidas pelo administrador e que são instaladas nos dispositivos com envolvimento mínimo do utilizador, dependendo da plataforma.
 
-**Aplicações disponíveis** - aplicações fornecidas na lista de aplicações do Portal da Empresa e que os utilizadores podem optar por instalar.
+**Aplicações disponíveis** – aplicações fornecidas na lista de aplicações do Portal da Empresa e que os utilizadores podem optar por instalar.
 
-**Aplicações geridas** - aplicações que podem ser geridas através de políticas e que foram "encapsuladas" pelo Intune ou incorporadas no Software Development Kit (SDK) do Intune Mobile Application Management (MAM). Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
+**Aplicações geridas** – aplicações que podem ser geridas através de políticas e que foram "encapsuladas" pelo Intune ou incorporadas no Software Development Kit (SDK) do Intune Mobile Application Management (MAM). Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
 
-**aplicações não geridas** - aplicações que podem ser geridas através de políticas e que não foram encapsuladas pelo Intune ou que não incorporam o SDK do Intune MAM. Não é possível aplicar políticas de aplicação a estas aplicações.
+**Aplicações não geridas** – aplicações que podem ser geridas através de políticas e que não foram encapsuladas pelo Intune ou que não incorporam o SDK do Intune MAM. Não é possível aplicar políticas de aplicação a estas aplicações.
 
-###Consulte também
+### Consulte também
 [Como os utilizadores de dispositivos Android obtêm as aplicações](how-your-android-users-get-their-apps.md)</br>
 [Como os utilizadores de dispositivos iOS obtêm as aplicações](how-your-ios-users-get-their-apps.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

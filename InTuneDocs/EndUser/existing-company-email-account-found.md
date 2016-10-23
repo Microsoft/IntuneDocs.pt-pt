@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Conta de e-mail da empresa já existente encontrada
-Já tem uma conta de e-mail da empresa. Para continuar e ligar ao e-mail da empresa, terá de seguir os passos seguintes para permitir que o administrador de TI configure e administre adequadamente a sua conta:
+Já tem uma conta de e-mail da empresa. Para continuar e ligar ao e-mail da empresa, siga os passos seguintes para permitir que o administrador de TI configure e administre adequadamente a sua conta:
 
 1.  Nas **Definições** do seu dispositivo, remova a ligação que configurou anteriormente para o e-mail da empresa.
 
@@ -35,6 +35,6 @@ Se as definições de e-mail novas não aparecerem ao fim de algum tempo, contac
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

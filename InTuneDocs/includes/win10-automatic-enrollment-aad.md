@@ -21,7 +21,7 @@ A inscrição automática permite aos utilizadores inscrever PCs Windows 10 e di
 
 5. Especifique os URLs do Intune:
 
-  - **URL de Inscrição MDM** – utilize `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` para o URL de Inscrição MDM.
+  - **URL de Inscrição de MDM** – utilize o valor predefinido.
   - **URL dos Termos de Utilização do MDM** – utilize o valor predefinido. Este URL apresenta os termos de utilização para os utilizadores ao inscrever dispositivos.
   - **URL de Conformidade do MDM** – utilize o valor predefinido. Se um dispositivo estiver não conforme, é apresentada uma mensagem de **Acesso negado** com este URL. O URL aponta para uma página que ajuda o utilizador a compreender por que motivo o dispositivo dele não está em conformidade com a política e como pode repor a conformidade.
 
@@ -34,6 +34,6 @@ A inscrição automática permite aos utilizadores inscrever PCs Windows 10 e di
 7. Escolha **Guardar**.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

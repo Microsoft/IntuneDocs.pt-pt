@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
+ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
+ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
 
 # O que pode o administrador de TI ver ao inscrever o dispositivo no Intune?
 
-Quando inscrever o seu dispositivo Windows no Intune, está a dar permissão ao administrador de TI para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
+Quando inscreve o seu dispositivo Windows no Intune, está a dar permissão ao administrador de TI para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
 
 **O que o administrador de TI não pode ver**
 
@@ -57,12 +57,10 @@ Quando inscrever o seu dispositivo Windows no Intune, está a dar permissão ao 
 
 -   Fabricante
 
-Pode [ler mais](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows).
+Para obter mais informações, veja [O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo Windows no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)
 
 
 
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

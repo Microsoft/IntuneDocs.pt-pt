@@ -1,5 +1,5 @@
 ---
-title: "O dispositivo Windows não está em conformidade com a versão máxima do sistema de operativo | Microsoft Intune"
+title: "O dispositivo Windows não está em conformidade com a definição para a versão máxima do sistema de operativo | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,20 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 964f39fa7a3971f37777e93f7cddd75367e6c026
+ms.openlocfilehash: edd9aa9b7c2dabbc90bb3777f855478c703c7882
 
 
 ---
 
 
-# O dispositivo Windows não está em conformidade com a versão máxima do sistema de operativo
+# O dispositivo Windows não está em conformidade com a definição da versão do sistema operativo mais recente
 
-O administrador de TI definiu uma versão máxima do sistema operativo que pode ter no seu dispositivo Windows, mas o seu dispositivo não está em conformidade com essa definição. Para saber qual é o sistema operativo máximo permitido para o seu dispositivo, terá de contactar o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
+O administrador de TI definiu uma versão do sistema operativo mais recente que pode ter no seu dispositivo Windows, mas o seu dispositivo não está em conformidade com essa definição. Para saber qual é o sistema operativo permitido mais recente para o seu dispositivo, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

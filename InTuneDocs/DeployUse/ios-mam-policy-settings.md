@@ -4,7 +4,7 @@ description: "Este tópico descreve as definições da política de gestão de a
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +84,11 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
   Quando efetuar uma eliminação seletiva para remover os dados da empresa, os contactos sincronizados diretamente a partir da aplicação com o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, apenas é aplicável à aplicação **Microsoft Outlook**.
 
   **Valor predefinido = Sim**
+  
+- **Desativar a impressão:** selecione **Sim** para impedir a impressão de dados da empresa a partir de aplicações associadas à política de MAM.
+
+    **Valor predefinido – Sim**
+
 ##  Definições de política de acesso para iOS
 O termo **Aplicações geridas por políticas** é utilizado para fazer referência a aplicações que estão configuradas com políticas de MAM.
 - **Exigir PIN para o acesso:** escolha **Sim** para exigir um PIN para utilizar aplicações geridas por políticas. É pedido ao utilizador para configurar esta opção da primeira vez que executar a aplicação num contexto profissional.
@@ -114,6 +119,6 @@ Em dispositivos iOS, pode permitir ao utilizador identificar-se a si próprio at
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: Repor (apagar) o dispositivo Windows perdido ou roubado | Microsoft Intune
-description: 
+description: Repor um dispositivo Windows perdido ou roubado
 keywords: 
 author: Staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
+ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
 
 
 ---
@@ -23,25 +23,23 @@ ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 # Repor (apagar) o dispositivo perdido ou roubado
 
-Se um telefone que tenha sido inscrito no Intune se perder ou for roubado, pode redefini-lo para as predefinições de fábrica com o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Caso um dispositivo que esteja inscrito no Intune seja perdido ou roubado, pode repor o dispositivo para as predefinições de fábrica utilizando o [site Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 > [!WARNING]
-> Repor um dispositivo para as definições de fábrica remove, quer as suas informações pessoais, quer de trabalho, do mesmo. Para obter mais informações sobre o que acontece quando repõe o seu dispositivo, veja [What happens if you reset your device using the Company Portal (O que acontece se utilizar o Portal da Empresa para repor o seu dispositivo?)](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md).
+> Repor um dispositivo para as definições de fábrica remove, quer as suas informações pessoais, quer de trabalho, do mesmo. Para obter mais informações sobre o que acontece quando repõe o seu dispositivo, veja [O que acontece se utilizar o Portal da Empresa para repor o seu dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 
 
 1.  No browser, abra o [Web site do Portal da Empresa](http://portal.manage.microsoft.com) e inicie sessão na sua conta profissional.
 
 2.  Em **Os Meus Dispositivos**, clique no dispositivo perdido ou roubado.
 
-3.  Toque no ícone de **Repor** e, em seguida, toque em **repor**.
+3.  Toque no ícone **Reposição** e, em seguida,toque em **repor**.
 
 Se não conseguir repor o seu dispositivo perdido ou roubado, contacte o administrador de TI para o fazer por si. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

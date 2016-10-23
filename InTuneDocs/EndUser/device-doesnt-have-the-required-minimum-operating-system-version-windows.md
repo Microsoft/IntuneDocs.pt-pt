@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: ab64d5d96c4572e9aade27dfac697cb9adbefc49
+ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
+ms.openlocfilehash: a14f347ae65118852ba914085548cd17c8ec31aa
 
 
 ---
@@ -23,21 +23,19 @@ ms.openlocfilehash: ab64d5d96c4572e9aade27dfac697cb9adbefc49
 
 # O dispositivo não tem a versão mínima do sistema operativo necessária
 
-O dispositivo Windows não tem a versão mínima do sistema operativo requerida pelo seu departamento de TI. Antes de atualizar o seu dispositivo móvel, verifique a versão do sistema operativo atual ao tocar em **Definições** &gt; **acerca de** e toque em **Definições** &gt; **atualização do telemóvel** &gt; **procurar atualizações** para atualizar o dispositivo.
+O seu dispositivo Windows não tem a versão mínima do sistema operativo requerida pelo seu departamento de TI. Antes de atualizar o seu dispositivo móvel, verifique qual é a versão atual do sistema operativo ao selecionar **Definições** &gt; **acerca de**. Em seguida, para atualizar o seu dispositivo, selecione **Definições** &gt; **atualização do telemóvel** &gt; **procurar atualizações**.
 
 Antes de atualizar o seu computador, procure **sistema operativo** e siga as mensagens para identificar a versão atual do sistema operativo. Para atualizar computadores com sistemas operativos anteriores ao Windows 10, procure **Atualizações do Windows**.
 
-Para verificar a versão no Windows 10 e no Windows 8.1, prima a tecla de atalho **Windows** + **R**, escreva **winver** na janela da caixa de diálogo e prima **Enter**.
+Para verificar a versão do Windows 10 ou do Windows 8.1, prima a tecla do logótipo do Windows+R, escreva **winver** na caixa de diálogo que é apresentada e prima Enter.
 
-- No Windows 10, ignore o número da versão e veja o número de compilação do SO (exemplo: compilação de SO 10586.29). O "10" em "10586.29" representa "Windows 10".
-- No Windows 8.1, veja o número da versão, que mostrará 6.3.xxxx em vez de 8.1.
+- No Windows 10, ignore o número da versão e veja o número de compilação do SO (exemplo: compilação de SO 10586.29). O "10" em 10586.29 representa Windows 10.
+- No Windows 8.1, consulte o número da versão. Verá 6.3.*xxxx* em vez de 8.1.
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

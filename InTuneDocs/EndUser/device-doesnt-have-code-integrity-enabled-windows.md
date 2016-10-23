@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 00bd999dc8d49b2f01e0eb52a8fa28600f050246
+ms.sourcegitcommit: 85cdfd1aac6fdf738754539c746aee8e5d045ae9
+ms.openlocfilehash: 60e29209718ca206ae96ccc2df330650e2f93c1d
 
 
 ---
@@ -23,20 +23,18 @@ ms.openlocfilehash: 00bd999dc8d49b2f01e0eb52a8fa28600f050246
 
 # O dispositivo não tem a Integridade de Código ativada
 
-A sua organização obriga-o a ativar a Integridade de Código do Windows, que é uma funcionalidade que verifica os ficheiros de controladores e de sistema do seu dispositivo para confirmar que são seguros.
+A sua organização necessita que ative a Integridade de Código Windows. Esta funcionalidade verifica os controladores e ficheiros de sistema no seu dispositivo para ajudar a assegurar que estes estão seguros.
 
 Para ativar a Integridade de Código do Windows, ative a funcionalidade Arranque Seguro. A funcionalidade Integridade de Código será, depois, ativada automaticamente.
 
 A ativação do Arranque Seguro é uma tarefa avançada. Se estiver a utilizar um dispositivo móvel, contacte o seu administrador de TI para obter ajuda.
 
-Se estiver a utilizar um PC, pode contactar o seu administrador de TI ou ver a secção “Para reativar o Arranque Seguro", na página [Desativar o Arranque Seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), para tentar ativar o Arranque Seguro por si.
+Caso esteja a utilizar um PC, pode contactar o administrador de TI. Em alternativa, consulte a secção "To re-enable Secure Boot"(Para voltar a ativar o Arranque Seguro) na página [Disabling Secure Boot (Desativar o Arranque Seguro – em inglês)](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), para tentar ativar o Arranque Seguro sozinho.
 
 Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

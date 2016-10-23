@@ -4,7 +4,7 @@ description: Proteja e controle o acesso ao e-mail da empresa no Exchange no loc
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +64,19 @@ O diagrama seguinte ilustra o fluxo utilizado pelas políticas de acesso condici
 -   Se o dispositivo não for conforme, é apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou para a aplicação Portal da Empresa, onde é possível localizar informações sobre o problema e como resolvê-lo.
 
 ## Suporte para dispositivos móveis
--   Windows Phone 8 e posterior
+-   Windows Phone 8.1 e posterior
 
 -   Aplicação de e-mail nativa no iOS.
 
--   Clientes de correio EAS, como o Gmail para Android 4 ou posterior
+-   Clientes de correio EAS, como o Gmail para Android 4 ou posterior.
+- Clientes de correio EAS em **dispositivos Android for Work:** apenas as aplicações **Gmail** e **Nine Work** são suportadas no **perfil de trabalho** em dispositivos Android for Work. Para obter acesso condicional ao seu trabalho com o Android for Work, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work, bem como implementar essas aplicações como uma instalação obrigatória. 
+
 > [!NOTE]
 > A aplicação Microsoft Outlook não é suportada no Android e iOS.
 
 ## Suporte de PCs
 
-A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+A aplicação **Correio**no Windows 8.1 e versões posteriores (quando inscritos através do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Configurar uma política de acesso condicional
 
@@ -123,6 +125,6 @@ A aplicação **Correio** no Windows 8 e posterior (quando inscrito com o [!INCL
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

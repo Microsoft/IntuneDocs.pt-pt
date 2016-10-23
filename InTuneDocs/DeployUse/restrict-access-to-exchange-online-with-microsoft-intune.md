@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +64,7 @@ O diagrama abaixo ilustra o fluxo utilizado pelas políticas de acesso condicion
 ## Suporte para dispositivos móveis
 Pode restringir o acesso ao e-mail do Exchange Online a partir do **Outlook** e de outras **aplicações que utilizam autenticação moderna**:-
 
-- Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior
+- Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior e Android for Work
 - iOS 8.0 e posterior
 - Windows Phone 8.1 e posterior
 
@@ -225,6 +225,9 @@ Apenas os grupos direcionados pela política de acesso condicional são avaliado
 
 5.  Em **Aplicações do Exchange ActiveSync**, pode optar por bloquear o acesso de dispositivos não conformes ao Exchange Online. Também pode selecionar se pretende permitir ou bloquear o acesso ao e-mail quando o dispositivo não está a executar uma plataforma suportada. As plataformas suportadas incluem Android, iOS, Windows e Windows Phone.
 
+ Aplicações do Exchange Active Sync em dispositivos **Android for Work**:
+ -  No **perfil de trabalho**, apenas as aplicações **Gmail** e **Nine Work** são suportadas em dispositivos Android for Work. Para obter acesso condicional ao seu trabalho em dispositivos Android for Work, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work, bem como implementar essas aplicações como uma instalação **obrigatória**. 
+
 6.  Em **Grupos Direcionados**, selecione os grupos de segurança do Active Directory dos utilizadores aos quais será aplicada a política. Pode optar por segmentar todos os utilizadores ou uma lista selecionada de grupos de utilizadores.
 ![Captura de ecrã da página de política de acesso condicional do Exchange Online, que mostra as opções de grupos de destino e grupos excluídos](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +266,6 @@ No dashboard do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

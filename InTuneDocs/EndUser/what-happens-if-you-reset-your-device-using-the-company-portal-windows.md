@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
 
 
 ---
@@ -27,8 +27,8 @@ Ao utilizar a aplicação do Portal da Empresa ou o [Web site do Portal da Empre
 
 |Gestão e configuração do dispositivo|Tipo de dispositivo|
 |---------------------------------------|---------------|
-|O seu administrador de TI gere o seu dispositivo móvel|**Windows 10, Windows Phone 8.1 e Windows Phone 8**</br>O dispositivo deixa de aparecer no Portal da Empresa, que tenta repor as predefinições de fábrica do dispositivo. As suas definições, aplicações e dados pessoais serão removidos. <br /><br />**Windows 10 Mobile**: a única forma de anular o dispositivo é repondo-o.<br /><br />**Windows RT**<br />Só pode repor um dispositivo Windows RT se este for utilizado apenas para e-mails.|
-|O dispositivo pode aceder apenas ao e-mail da empresa|**Windows Phone 8.1 e Windows Phone 8**<br />O dispositivo deixa de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.<br /><br />**Windows RT**<br />O dispositivo deixa de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.<br /><br />**Computadores Windows 7 ou Windows Vista**<br />Não é possível repor um computador com o Windows 7 ou anterior que é utilizado apenas para e-mails.<br /><br />**Computadores Windows 8.1 e Windows 8**<br />O dispositivo deixa de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.|
+|O seu administrador de TI gere o seu dispositivo móvel|**Windows 10 e Windows Phone 8.1**</br>O dispositivo deixa de aparecer no Portal da Empresa, que tenta repor as predefinições de fábrica do dispositivo. As suas definições, aplicações e dados pessoais serão removidos. <br /><br />**Windows 10 Mobile**: a única forma de anular o dispositivo é repondo-o.|
+|O dispositivo pode aceder apenas ao e-mail da empresa|**Windows Phone 8.1**<br />O dispositivo deixa de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.<br /><br />**Computadores Windows 7 ou Windows Vista**<br />Não é possível repor um computador com o Windows 7 ou anterior que é utilizado apenas para e-mails.<br /><br />**Computadores Windows 8.1 e Windows 8**<br />O dispositivo deixa de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.|
 |PCs e portáteis|**Computadores Windows 8.1 e Windows 8**<br />Só pode repor um computador com o Windows 8 ou Windows 8.1 se este for utilizado apenas para e-mails.<br /><br />**Computadores Windows 7 ou Windows Vista**<br />Não é possível repor um computador com o Windows 7 ou anterior.|
 
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
@@ -37,6 +37,6 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
