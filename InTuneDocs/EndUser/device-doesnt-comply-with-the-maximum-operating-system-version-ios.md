@@ -14,21 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e9ffe9caddf6c0f6bf93f19b49672f197dc64708
+ms.sourcegitcommit: 994fbd726b5173ce18e284c94a658189f100a9b0
+ms.openlocfilehash: 99c41c884d1e6e4e0d1ba6d2edb0d902551ea21a
 
 
 ---
 
 
-# O dispositivo iOS não está em conformidade com a versão máxima do sistema de operativo
+# O dispositivo iOS não está em conformidade com a definição da versão do sistema operativo mais recente
 
-O dispositivo iOS não está em conformidade com a política do administrador de TI para a versão máxima do sistema operativo. Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
+O seu dispositivo iOS não está em conformidade com a política do administrador de TI relativamente à versão mais recente do sistema operativo que pode utilizar. Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

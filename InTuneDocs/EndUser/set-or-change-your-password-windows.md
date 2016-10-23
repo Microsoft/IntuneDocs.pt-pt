@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ O administrador de TI pode definir mais do que um requisito de palavra-passe. Po
 
 Se tiver problemas em definir uma palavra-passe que cumpra todos os requisitos de palavra-passe, contacte o administrador de TI para obter ajuda.
 
-## Para alterar a palavra-passe num Windows Phone 8 ou 8.1:
+## Para alterar a sua palavra-passe no Windows Phone 8.1:
 
 1. No ecrã **inicial**, toque em **Definições**, e, em seguida, selecione **ecrã de bloqueio**.
 2. Desloque para baixo até **Palavra-passe** e toque em **alterar palavra-passe**.
@@ -34,7 +34,7 @@ Se tiver problemas em definir uma palavra-passe que cumpra todos os requisitos d
 4. Introduza a nova palavra-passe no campo **Nova palavra-passe** e, em seguida, reintroduza-a no campo **Confirmar palavra-passe**.
 4. Toque em **concluído**.
 
-## Para definir a palavra-passe num Windows Phone 8 ou 8.1:
+## Para definir a sua palavra-passe no Windows Phone 8.1:
 
 1. No ecrã **inicial**, toque em **Definições**, e, em seguida, selecione **ecrã de bloqueio**.
 2. Desloque para baixo até **Palavra-passe** e deslize a barra **Palavra-passe** para **Ativado**.
@@ -47,6 +47,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

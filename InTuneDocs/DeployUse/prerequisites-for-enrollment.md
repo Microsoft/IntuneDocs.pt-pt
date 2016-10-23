@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
-ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
+ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
+ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
 
 
 ---
@@ -29,6 +29,10 @@ Para permitir que os seus funcionários inscrevam os respetivos dispositivos mó
 |**Passo 3:** [configurar o Portal da Empresa do Intune](#step-3-configure-the-intune-company-portal)|Configure as definições destinadas ao utilizador para a aplicação Portal da Empresa|  
 |**Passo 4:** [atribuir licenças de utilizador do Intune](#step-4-assign-intune-user-licenses)|Atribua licenças do Intune aos utilizadores para que estes possam inscrever dispositivos|
 |**Passo 5:** [configurar a gestão de dispositivos](#step-5-set-up-device-management)|Ative definições específicas da plataforma para a gestão de dispositivos iOS e Windows. Os dispositivos Android não precisam de configurações adicionais.|
+
+Está à procura do Intune com o Configuration Manager?
+> [!div class="button"]
+[Ver documentos do SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## Passo 1: dependências de inscrição de dispositivos
 
@@ -46,7 +50,7 @@ A autoridade de MDM define o serviço de gestão que tem permissão para gerir u
 
 1.  Na [consola do administração do Microsoft Intune](http://manage.microsoft.com), escolha **Administrador** &gt; **Gestão de Dispositivos Móveis**.
 
-2.  Na lista **Tarefas** , clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
+2.  Na lista **Tarefas**, clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
 
     ![Caixa de diálogo Definir autoridade de MDM](../media/intune-mdm-authority.png)
 
@@ -130,6 +134,6 @@ Também pode:
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

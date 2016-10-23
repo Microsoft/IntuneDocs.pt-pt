@@ -1,6 +1,6 @@
 ---
 title: "Enviar registos de dados de diagnóstico ao administrador de TI por e-mail | Microsoft Intune"
-description: 
+description: Enviar registos de dados por e-mail num dispositivo Android
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
+ms.sourcegitcommit: 6be7193a5f04768a59b5c73fb9c2f51241156ada
+ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 # Enviar registos de dados de diagnóstico ao administrador de TI por e-mail
 
-Se obtiver um erro no dispositivo Android enquanto está a trabalhar com as suas aplicações escolares ou empresariais ou enquanto está na aplicação Portal da Empresa, pode enviar registos de dados de diagnóstico para ajudar o administrador de TI a descobrir e corrigir o erro. Para incluir todos os detalhes nos registos, os quais tornarão mais fácil para o administrador de TI descobrir o problema, ative o Registo Verboso. pode ler mais sobre classes base em [registo verboso](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+Se obtiver um erro no seu dispositivo Android enquanto está a trabalhar com as suas aplicações escolares ou empresariais ou enquanto está na aplicação do Portal da Empresa, pode enviar registos de dados de diagnóstico para ajudar o administrador de TI a diagnosticar e corrigir o erro. Para incluir todos os detalhes nos registos, o que tornará mais fácil para o administrador de TI descobrir o problema, ative o registo verboso. Para mais informações sobre o registo verboso, consulte [Utilizar o registo verboso para ajudar o administrador de TI a corrigir problemas com dispositivos Android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Para enviar registos para o seu administrador de TI por e-mail:
 
@@ -39,6 +39,7 @@ Para enviar registos para o seu administrador de TI por e-mail:
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

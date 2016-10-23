@@ -4,7 +4,7 @@ description: "Este tópico descreve as definições da política de gestão de a
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 - **Desativar a sincronização de contactos:** selecione **Sim** para impedir que as informações de contacto sejam sincronizadas para a aplicação do livro de endereços nativos no dispositivo. Se escolher **Não**, a aplicação guardará as informações de contacto na aplicação do livro de endereços nativo no dispositivo.<br/>Quando efetuar uma eliminação seletiva para remover os dados da empresa, os contactos sincronizados diretamente a partir da aplicação com o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, apenas é aplicável à aplicação **Microsoft Outlook**.
 
   **Valor predefinido = Sim**
+- **Desativar a impressão:** selecione **Sim** para impedir a impressão dos dados da empresa a partir de aplicações associadas à política de MAM.
+
+  **Valor predefinido – Sim**
 
 ##  Definições de política de acesso para Android
 O termo **Aplicações geridas por políticas** é utilizado para fazer referência a aplicações que estão configuradas com políticas de MAM
@@ -96,6 +99,6 @@ O termo **Aplicações geridas por políticas** é utilizado para fazer referên
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

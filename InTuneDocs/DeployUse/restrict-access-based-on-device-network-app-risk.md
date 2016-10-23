@@ -13,14 +13,14 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
-ms.openlocfilehash: 758e4408fa7119ed4ebb82e98b850be5b1f318b4
+ms.sourcegitcommit: 92422c2937c608d1aa6c9d11517fa08e4a8c7798
+ms.openlocfilehash: a3c7e7cfef6223103fe0588f900f164635b042aa
 
 
 ---
 
 # Restringir o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos
-Pode controlar o acesso a partir de dispositivos móveis a recursos empresariais, com base na avaliação de riscos realizada pelo Lookout, uma solução de proteção contra ameaças de dispositivos que está integrada com o Microsoft Intune. O risco baseia-se na telemetria que o serviço Lookout recolhe dos dispositivos para vulnerabilidades do sistema operativo (SO), aplicações maliciosas instaladas e perfis de rede. Com base na avaliação de riscos, pode configurar as políticas de acesso condicional no Intune e permitir ou bloquear dispositivos que foram identificados como sendo não compatíveis devido a ameaças detetadas nesses dispositivos.  Atualmente isto é suportado apenas por dispositivos **Android** a executar a **versão 4.1 e posterior** e inscritos no Microsoft Intune.  Para obter informações sobre plataformas e idiomas suportados pelo Lookout, consulte este [artigo](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
+Pode controlar o acesso a partir de dispositivos móveis a recursos empresariais, com base na avaliação de riscos realizada pelo Lookout, uma solução de proteção contra ameaças de dispositivos que está integrada com o Microsoft Intune. O risco baseia-se na telemetria que o serviço Lookout recolhe dos dispositivos relativamente a vulnerabilidades do sistema operativo (SO), aplicações maliciosas instaladas e perfis de rede maliciosos. Com base na avaliação de riscos que é comunicada pelo Lookout e ativada através de políticas de conformidade do Intune, pode configurar as políticas de acesso condicional no Intune e permitir ou bloquear dispositivos que foram identificados como sendo não compatíveis devido a ameaças detetadas nos mesmos.  Atualmente isto é suportado por dispositivos **Android** a executar a **versão 4.1 e posterior** e dispositivos a executar o **iOS 8 e posterior**. Estes dispositivos têm de estar inscritos no Microsoft Intune.  Para obter informações sobre plataformas e idiomas suportados pelo Lookout, consulte este [artigo](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 ## Que problema é que isto resolve?
 As empresas e organizações precisam de proteger dados confidenciais de ameaças emergentes que incluem ameaças com base na rede, com base na aplicação e físicas, bem como vulnerabilidade do SO.
 
@@ -29,14 +29,15 @@ As empresas e organizações tomaram uma posição ativa na proteção dos PCs c
 O Intune permite-lhe controlar o acesso aos dados e aos recursos da empresa com base na avaliação de riscos que as soluções de proteção contra ameaças de dispositivos fornecem, tal como o Lookout.
 
 ## Como é que o Intune e a proteção contra ameaças de dispositivos do Lookout ajudam a proteger os recursos da empresa?
-A aplicação móvel do Lookout (Lookout for Work), em execução em dispositivos móveis, captura o sistema de ficheiros, a pilha de rede e a telemetria aplicacional e do dispositivo (onde disponível) e envia-os para o serviço de proteção em nuvem contra ameaças de dispositivos do Lookout para calcular o risco agregado de um dispositivo para ameaças contra dispositivos móveis. Também pode alterar a classificação do nível de risco das ameaças na consola do Lookout para atender às suas necessidades.  
+A aplicação móvel do Lookout (Lookout for Work), em execução em dispositivos móveis, captura o sistema de ficheiros, a pilha de rede e a telemetria da aplicação e do dispositivo (onde disponível) e envia-os para o serviço de proteção em nuvem contra ameaças de dispositivos do Lookout para calcular o risco agregado de um dispositivo relativamente a ameaças contra dispositivos móveis. Também pode alterar a classificação do nível de risco das ameaças na consola do Lookout para atender às suas necessidades.  
+
 A política de conformidade no Intune inclui uma nova regra para a proteção contra ameaças contra dispositivos móveis do Lookout que se baseia na avaliação do risco de ameaças contra dispositivos do Lookout. Quando esta regra está ativada, o Microsoft Intune avalia a conformidade do dispositivo com a política que ativou.
 
 Se o dispositivo for identificado com sendo não compatível com a política de conformidade, o acesso a recursos como o Exchange Online e o SharePoint Online pode ser bloqueado utilizando políticas de acesso condicional. Quando o acesso é bloqueado, são fornecidas aos utilizadores finais instruções para resolver o problema e obter acesso aos recursos da empresa. Estas instruções são lançadas através da aplicação Lookout for Work.
 
 ## Cenários de exemplo
 Seguem-se alguns cenários comuns:
-### Ameaça de aplicações maliciosas:
+### Controlar o acesso com base em ameaças de aplicações maliciosas:
 Quando aplicações maliciosas como software maligno são detetadas no dispositivo, pode bloquear esses dispositivos de:
 * Estabelecer ligação a e-mail empresarial antes de resolver a ameaça.
 * Sincronizar ficheiros empresariais utilizando a aplicação OneDrive for Work.
@@ -48,7 +49,7 @@ Quando aplicações maliciosas como software maligno são detetadas no dispositi
 **O dispositivo está desbloqueado e consegue aceder aos recursos da empresa quando a ameaça é corrigida:**
 
 ![Diagrama a mostrar a política de acesso condicional a conceder acesso quando o dispositivo é identificado como sendo compatível após a remediação](../media/mtp/malicious-apps-unblocked.png)
-### Ameaça à rede:
+### Controlar o acesso com base em ameaças à rede:
 Detete ameaças à rede, tal como ataques Man-in-the-middle e restrinja o acesso a redes Wi-Fi com base no risco do dispositivo.
 
 **Acesso à rede através de Wi-Fi bloqueado:**
@@ -57,7 +58,7 @@ Detete ameaças à rede, tal como ataques Man-in-the-middle e restrinja o acesso
 **Acesso concedido na remediação:**
 
 ![Diagrama a mostrar o acesso condicional a permitir o acesso na remediação da ameaça](../media/mtp/network-wifi-unblocked.png)
-### Ameaça à rede (impedir o acesso ao SharePoint Online):
+### Controlar o acesso ao SharePoint Online com base em ameaças à rede:
 
 Detete ameaças à sua rede, tal como ataques Man-in-the-middle e impeça a sincronização de ficheiros empresariais com base no risco do dispositivo.
 
@@ -80,6 +81,6 @@ Seguem-se os principais passos que tem de efetuar para implementar esta soluçã
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

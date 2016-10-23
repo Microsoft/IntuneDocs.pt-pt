@@ -4,7 +4,7 @@ description: "Utilize o Intune para criar e implementar políticas que controlam
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -32,7 +32,7 @@ As políticas do Intune inserem-se nas categorias seguintes. A categoria que uti
 Para obter detalhes, consulte [Políticas de conformidade de dispositivos no Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Políticas de acesso condicional**: estas políticas ajudam-no a proteger o e-mail e outros serviços, dependendo das condições que especificar.
 Para obter detalhes, consulte [Restringir o acesso ao e-mail e aos serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-- **Políticas de inscrição de dispositivos da empresa**: para obter informações sobre as políticas de inscrição de dispositivos da empresa, veja [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+- **Políticas de inscrição de dispositivos da empresa**: para obter informações sobre as políticas de inscrição de dispositivos da empresa, consulte [Configurar a gestão de iOS e Mac com o Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Políticas de acesso a recursos:** estas políticas funcionam em conjunto para ajudar os seus utilizadores a obterem acesso aos ficheiros e recursos de que precisam para trabalhar com êxito, onde quer que estejam.
 Para obter detalhes, consulte [Ativar o acesso aos recursos da empresa com o Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
@@ -49,7 +49,7 @@ Para obter uma lista completa das políticas do Intune, consulte [Referência de
 2.  Selecione a política que pretende, escolha utilizar as definições recomendadas para a política (quando disponível; pode alterar estas definições mais tarde) ou criar uma política personalizada com as suas próprias definições.
 
     > [!TIP]
-    > Para o ajudar a escolher a política correta, veja [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
+    > Para o ajudar a escolher a política correta, consulte [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando estiver pronto, selecione **Criar Política**.
 
@@ -61,6 +61,7 @@ Para obter uma lista completa das políticas do Intune, consulte [Referência de
 
     - [Definições para dispositivos iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Android](android-policy-settings-in-microsoft-intune.md)
+    - [Definições para dispositivos Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos móveis e computadores Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
@@ -86,7 +87,7 @@ Depois de criar uma política, normalmente, irá querer implementá-la num ou ma
 
 1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
 
-2.  Na caixa de diálogo **Gerir a Implementação** , para:
+2.  Na caixa de diálogo **Gerir a Implementação**, para:
 
     -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Adicionar** &gt; **OK**.
 
@@ -101,8 +102,8 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 2.  Selecione uma das seguintes ações:
 
 - **Editar**: abra as propriedades da política selecionada para poder fazer alterações.
-- **Eliminar** - elimine a política selecionada.<br>Quando elimina uma política, esta é removida de todos os grupos nos quais estava implementada.
-- **Gerir a Implementação** - selecione o grupo no qual pretende implementar a política e escolha **Adicionar**.
+- **Eliminar** – elimine a política selecionada.<br>Quando elimina uma política, esta é removida de todos os grupos nos quais estava implementada.
+- **Gerir a Implementação** – selecione o grupo no qual pretende implementar a política e escolha **Adicionar**.
 
 
 ## Perguntas mais frequentes sobre as políticas do Intune
@@ -115,7 +116,6 @@ Se um dispositivo não der entrada para obter uma política após o envio da pri
 - iOS e Mac OS X: a cada seis horas.
 - Android: a cada oito horas.
 - Windows Phone: a cada oito horas.
-- Dispositivos Windows RT inscritos: a cada 24 horas.
 - PCs com Windows 8.1 e Windows 10 inscritos como dispositivos: a cada oito horas.
 
 Se o dispositivo tiver acabado de se inscrever, a frequência de entrada será maior, conforme se segue:
@@ -125,7 +125,7 @@ Se o dispositivo tiver acabado de se inscrever, a frequência de entrada será m
 - Windows Phone: a cada cinco minutos durante 15 minutos, depois a cada 15 minutos durante duas horas e, em seguida, a cada oito horas.
 - PCs Windows inscritos como dispositivos: a cada três minutos durante 30 minutos e, em seguida, a cada oito horas.
 
-Os utilizadores também podem abrir a aplicação do Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer altura.
+Os utilizadores também podem abrir a aplicação Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer altura.
 
 ### Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
 Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que deem entrada ou durante as entradas agendada regulares.  Quando segmenta um dispositivo ou utilizador especificamente com uma ação, tal como uma eliminação, bloqueio, reposição de código de acesso, implementação de aplicação, implementação de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma implementação de política, o Intune começará imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço do Intune para receber estas atualizações.
@@ -170,7 +170,7 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
         - Memorizar histórico de palavras-passe
         - Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado
         - Minutos de inatividade antes da palavra-passe ser exigida
-        - Tipo obrigatório de palavra-passe – número mínimo de conjuntos de carateres
+        - Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres
         - Permitir câmara
         - Encriptação obrigatória no dispositivo móvel
         - Permitir armazenamento amovível
@@ -212,6 +212,6 @@ Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubles
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

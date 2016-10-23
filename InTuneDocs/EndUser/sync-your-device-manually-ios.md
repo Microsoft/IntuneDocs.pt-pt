@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
+ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
+ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
 
 # Sincronizar o seu dispositivo iOS manualmente
 
-Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as instruções seguintes para sincronizar manualmente o seu dispositivo iOS, o que poderá ajudar a acelerar a instalação. A funcionalidade de Sincronização aplica-se apenas a iOS, e não a Mac OS X.
+Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as seguintes instruções para sincronizar manualmente o seu dispositivo iOS. A sincronização manual poderá ajudar a acelerar a instalação. A funcionalidade de sincronização aplica-se apenas ao iOS e não ao Mac OS X.
 
 1. Abra a aplicação Portal da Empresa iOS.
 
-2. Na secção **Os Meus Dispositivos**, toque no dispositivo que está a utilizar. Este é o mosaico do dispositivo mais à esquerda que mostra a marca de verificação.
+2. Na secção **Os Meus Dispositivos**, selecione o dispositivo que está a utilizar. Este é o mosaico do dispositivo mais à esquerda que apresenta a marca de verificação.
 
-    ![ios-sync-1-comp-portal-apps](./media/ios-sync-1-comp-portal-apps.png)
+    ![Ecrã do dispositivo com a secção Os Meus Dispositivos](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  Toque no botão **Sincronizar** apresentado no canto inferior direito do ecrã.
+3.  Selecione o botão **Sincronizar** no canto inferior direito do ecrã.
 
-    ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
+    ![Detalhes do dispositivo com o botão Sincronizar](./media/ios-sync-2-sync-button.png)
 
 Até que a sincronização esteja concluída, é apresentado um círculo a girar no ecrã.
 
@@ -41,7 +41,6 @@ Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as in
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

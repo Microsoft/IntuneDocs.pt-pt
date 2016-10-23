@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
-ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: ed8f280de4582863f77e5b0e9cb5dfb2f20159c4
 
 
 ---
@@ -35,7 +35,7 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 -  **Comprimento mínimo da palavra-passe:** especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 
-- **Qualidade da palavra-passe:** ative esta definição para configurar os requisitos de palavra-passe para dispositivos Android. Escolha entre:
+- **Qualidade da palavra-passe:** esta definição deteta se os requisitos de palavra-passe que especificou estão configurados no dispositivo. Ative esta definição para exigir que os utilizadores configurem determinados requisitos de palavra-passe para dispositivos Android. Escolha entre:
   -   **Biométrica de segurança baixa**
   - **Necessário**
   -   **Pelo menos numérica**
@@ -83,6 +83,6 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

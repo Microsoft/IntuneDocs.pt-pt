@@ -4,7 +4,7 @@ description: "Utilize perfis Wi-Fi para ajudar os utilizadores a ligar às suas 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ Por exemplo, instala uma nova rede Wi-Fi chamada **Contoso Wi-Fi** e pretende co
 
 1.   Crie um perfil de Wi-Fi que contenha as definições necessárias para ligar à rede sem fios **Contoso Wi-Fi**.
 
-2. Implemente o perfil no grupo de utilizadores com dispositivos iOS.
+2.   Implemente o perfil no grupo de utilizadores com dispositivos iOS.
 
 3.   Os utilizadores encontrarão a rede nova **Contoso Wi-Fi** na lista de redes sem fios e conseguirão ligar-se facilmente à mesma.
 
@@ -40,11 +40,13 @@ Pode implementar perfis de Wi-Fi nas seguintes plataformas:
 
 -   Android 4.0 e posterior
 
+-   Android for Work   
+
 -   iOS 8.0 e posterior
 
 -   Mac OS X 10.9 e posterior
 
-Para dispositivos com Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro. Para mais detalhes, veja [Exportar ou Importar um perfil de configuração de Wi-Fi para dispositivos Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
+Para dispositivos com Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro. Para mais detalhes, consulte [Exportar ou Importar um perfil de configuração de Wi-Fi para dispositivos Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; ** Adicionar Política**.
 
@@ -52,10 +54,13 @@ Para dispositivos com Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar
 
     -   Perfil de Wi-Fi (Android 4 e posterior)
 
+    -   Perfil de Wi-Fi (Android for Work)
+
     -   Perfil de Wi-Fi (iOS 8.0 e posterior)
 
     -   Perfil de Wi-Fi (Mac OS X 10.9 e posterior)
-
+    
+    
     Não existem definições recomendadas para este tipo de política. Tem de criar uma política personalizada.
 
 3.  Forneça o nome e uma descrição para o perfil.
@@ -70,7 +75,7 @@ Para dispositivos com Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar
 
     |Nome da definição|Mais informações|Utilize se:|
     |----------------|-------------------|-------------|
-    |**Definições de proxy desta ligação Wi-Fi**|Selecione o tipo de definições de proxy:<br /><br />-   **Nenhum** (predefinição)<br />-   **Manual** -   Especifique manualmente o URL e o número de porta do servidor proxy.<br />-   **Automático** – Utilize um ficheiro de configuração para configurar o servidor proxy.|Sempre|
+    |**Definições de proxy desta ligação Wi-Fi**|Selecione o tipo de definições de proxy:<br /><br />-   **Nenhum** (predefinição)<br />-   **Manual** –   Especifique manualmente o URL e o número de porta do servidor proxy.<br />-   **Automático** – Utilize um ficheiro de configuração para configurar o servidor proxy.|Sempre|
     |**Endereço do servidor proxy** e **Número de porta**|Especifique o URL e o número de porta do servidor proxy.|A opção **Definições de proxy desta ligação Wi-Fi** estiver definida como **Manual**|
     |**URL do Servidor Proxy**|Especifique o URL do ficheiro que contém as definições do servidor proxy.|A opção **Definições de proxy desta ligação Wi-Fi** estiver definida como **Automático**|
 
@@ -128,13 +133,13 @@ Utilize a **Política de Importação de Wi-Fi do Windows** para importar um con
 
 Um perfil é um tipo de política, por isso, utilize a área de trabalho Política para implementá-lo.
 
-1.  Na área de trabalho **Política** , selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
+1.  Na área de trabalho **Política**, selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
 
-2.  Na caixa de diálogo **Gerir a Implementação** , para:
+2.  Na caixa de diálogo **Gerir a Implementação**, para:
 
-    -   **Para implementar a política** - selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Adicionar** &gt; **OK**.
+    -   **Para implementar a política** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Adicionar** &gt; **OK**.
 
-    -   **Fechar a caixa de diálogo sem implementar a política** - clique em **Cancelar**.
+    -   **Fechar a caixa de diálogo sem implementar a política** – clique em **Cancelar**.
 
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
@@ -152,7 +157,7 @@ Estas tabelas incluem os detalhes para as definições de segurança que estão 
 |**Método de autenticação**|Selecione o método de autenticação da ligação:<br /><br />-   **Certificados** para especificar o certificado de cliente<br />-   **Nome de utilizador e Palavra-passe** para especificar um método de autenticação diferente|O **Tipo EAP** é **PEAP** ou **EAP-TTLS**.|
 |**Selecionar um método de autenticação não EAP (Identidade interior)**|Selecione a forma como irá autenticar a ligação:<br /><br />-   **Nenhum**<br />-   **Palavra-passe não encriptada (PAP)**<br />-   **CHAP (Challenge Handshake Authentication Protocol)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Versão 2 (MS-CHAP v2)**<br /><br />As opções disponíveis dependerão do tipo EAP que selecionou.|O **Método de autenticação** for **Nome de Utilizador e Palavra-passe**.|
 |**Ativar a privacidade de identidade (Identidade Externa)**|Especifique o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.|O **Tipo EAP** é **PEAP** ou **EAP-TTLS**.|
-|**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Clique em **Selecionar**e, em seguida, selecione o perfil de certificado SCEP utilizado para autenticar a ligação. **Importante:** para criar um perfil de certificado SCEP, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).|O tipo de segurança for **WPA-Enterprise/WPA2-Enterprise** e estiver selecionado qualquer **Tipo EAP**.|
+|**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Clique em **Selecionar**e, em seguida, selecione o perfil de certificado de SCEP utilizado para autenticar a ligação. **Importante:** para criar um perfil de certificado de SCEP, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).|O tipo de segurança for **WPA-Enterprise/WPA2-Enterprise** e estiver selecionado qualquer **Tipo EAP**.|
 
 ### Definições de segurança para dispositivos iOS e Mac OS X
 
@@ -164,7 +169,7 @@ Estas tabelas incluem os detalhes para as definições de segurança que estão 
 |**Utilizar PAC (Credencial de Acesso Protegido)**|Selecione para utilizar credenciais de acesso protegido para estabelecer um túnel autenticado entre o cliente e o servidor de autenticação. Se já existir um ficheiro PAC, este será utilizado.|O **Tipo EAP** é **EAP-FAST**.|
 |**Aprovisionar PAC**|Aprovisiona os ficheiros PAC para os seus dispositivos.<br /><br />Quando utilizado, também pode selecionar **Aprovisionar PAC Anonimamente** para assegurar que o ficheiro PAC é aprovisionado sem autenticar o servidor.|A opção**Utilizar PAC (Credencial de Acesso Protegido)** estiver selecionada.|
 |**Método de autenticação**|Selecione o método de autenticação utilizado na ligação:<br /><br /><ul><li>**Certificados** para especificar o certificado de cliente</li><li>**Nome de Utilizador e Palavra-passe** para especificar um dos seguintes métodos de autenticação não EAP (também conhecido como Identidade interna):<br /><br /><ul><li>**Nenhum**</li><li>**Palavra-passe não encriptada (PAP)**</li><li>**CHAP (Challenge Handshake Authentication Protocol)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP Versão 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|O **Tipo EAP** é **PEAP** ou **EAP-TTLS**.|
-|**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o perfil de certificado SCEP utilizado para autenticar a ligação. **Importante:** para criar um perfil de certificado SCEP, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).|O tipo de segurança for **WPA-Enterprise/WPA2-Enterprise** e o **Tipo EAP** for **EAP-TLS**, **PEAP** ou **EAP-TTLS**.|
+|**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o perfil de certificado de SCEP utilizado para autenticar a ligação. **Importante:** para criar um perfil de certificado de SCEP, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).|O tipo de segurança for **WPA-Enterprise/WPA2-Enterprise** e o **Tipo EAP** for **EAP-TLS**, **PEAP** ou **EAP-TTLS**.|
 |**Ativar a privacidade de identidade (Identidade Externa)**|Especifique o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor.<br /><br />Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.|Se o **Tipo EAP** estiver definido como **PEAP**, **EAP-TTLS** ou **EAP-FAST**.|
 
 
@@ -173,6 +178,6 @@ Saiba como criar um perfil Wi-Fi com uma chave pré-partilhada em [Perfil Wi-Fi 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

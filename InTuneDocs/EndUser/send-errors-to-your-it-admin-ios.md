@@ -1,6 +1,6 @@
 ---
 title: Enviar erros ao administrador de TI | Microsoft Intune
-description: 
+description: Enviar erros ao administrador
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 8890929dc1338946dbaa9a3df2aec99df22c1a82
+ms.sourcegitcommit: 881a2d90a863f5c7f3809f890bb82850b6145982
+ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 
 
 ---
@@ -25,16 +25,14 @@ ms.openlocfilehash: 8890929dc1338946dbaa9a3df2aec99df22c1a82
 
 Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa, pode enviar informações para ajudar o seu administrador de TI a resolver o problema. Pode enviar informações de erro de formas diferentes:
 
--   Nas mensagens de alerta do erro: toque em **Comunicar**.
+-   Nas mensagens de alerta do erro, toque em **Relatório**.
 
--   No ecrã **Acerca De** da aplicação Portal da Empresa: toque em **Enviar Relatório de Diagnóstico**.
+-   No ecrã **Acerca de** da aplicação Portal da Empresa, toque em **Enviar Relatório de Diagnóstico**.
 
--   Enquanto está na aplicação Portal da Empresa: abane o dispositivo e, em seguida, toque em **E-mail** quando é apresentado o alerta diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** &gt; ** Portal da Empresa** e confirme que a opção **Gesto de Abanar** está ativada.
-
-
+-   Na aplicação Portal da Empresa, abane o seu dispositivo e, quando o alerta de diagnóstico for apresentado, toque em **E-mail**. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** &gt; ** Portal da Empresa** e confirme que a opção **Gesto de Abanar** está ativada.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
