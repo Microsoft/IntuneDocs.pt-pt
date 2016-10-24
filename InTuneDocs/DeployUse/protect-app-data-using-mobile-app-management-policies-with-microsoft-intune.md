@@ -13,13 +13,13 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
 
-# Proteger dados de aplicações através de políticas de gestão de aplicações móveis com o Microsoft Intune
+# Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune
 
 ## Como pode proteger dados de aplicações
 Os seus empregados utilizam dispositivos móveis para tarefas pessoais e profissionais.  Se, por um lado, quer garantir que os seus empregados são produtivos, por outro, também quer evitar a perda de dados, intencional e não intencional.  Além disso, quer ter a capacidade de proteger os dados da empresa acedidos através de dispositivos, mesmo quando não são geridos por si.
@@ -122,8 +122,6 @@ As aplicações que suportam várias identidades permitem-lhe utilizar contas di
 
 Por exemplo, quando o utilizador final inicia a aplicação OneDrive com a sua conta profissional, não é possível mover os ficheiros para uma localização de armazenamento pessoal. No entanto, quando o utilizador final utiliza o OneDrive com a sua conta pessoal, pode copiar e mover dados do seu OneDrive pessoal, sem restrições.  
 
-Para obter uma explicação detalhada da experiência de utilização de aplicações associadas a políticas de MAM, e de como as aplicações com suporte de várias identidades só permitem a aplicação de políticas de MAM no contexto de trabalho, leia o artigo [Utilizar aplicações com suporte de várias identidades](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
-
 Todas as aplicações móveis do Office suportam várias identidades.
 
 ##  Passos seguintes
@@ -133,6 +131,6 @@ Todas as aplicações móveis do Office suportam várias identidades.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
