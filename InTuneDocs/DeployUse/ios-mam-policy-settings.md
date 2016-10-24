@@ -3,6 +3,7 @@ title: "Definições de políticas de MAM para iOS | Microsoft Intune"
 description: "Este tópico descreve as definições da política de gestão de aplicações móveis para dispositivos iOS."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

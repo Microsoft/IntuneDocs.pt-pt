@@ -3,6 +3,7 @@ title: "Como os utilizadores de dispositivos Android obtêm as aplicações | Mi
 description: "Métodos para disponibilizar aplicações Android aos utilizadores finais"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

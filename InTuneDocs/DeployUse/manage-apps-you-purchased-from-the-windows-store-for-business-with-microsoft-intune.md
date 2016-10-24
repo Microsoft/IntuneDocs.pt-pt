@@ -3,6 +3,7 @@ title: "Gerir aplicações da Loja Windows para Empresas | Microsoft Intune"
 description: "Ligue o Microsoft Intune à Loja Windows para Empresas se quiser gerir e implementar aplicações compradas em volume a partir da consola do Intune"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

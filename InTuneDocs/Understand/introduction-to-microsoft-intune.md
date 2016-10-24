@@ -5,6 +5,7 @@ title: "Introdução ao Microsoft Intune | Microsoft Intune"
 description: "Saiba como o Intune é o componente de gestão de dispositivos móveis da solução Enterprise Mobility + Security."
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article

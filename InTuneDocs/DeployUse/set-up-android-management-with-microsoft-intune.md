@@ -3,6 +3,7 @@ title: "Configurar a gestão do Android | Microsoft Intune"
 description: "Ative a gestão de dispositivos móveis (MDM) para Android e dispositivos KNOX com o Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

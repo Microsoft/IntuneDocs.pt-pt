@@ -3,6 +3,7 @@ title: "Políticas de conformidade de dispositivos | Microsoft Intune"
 description: "Este tópico explica os conceitos que tem de compreender sobre o que são as políticas de conformidade do dispositivo e como funcionam."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: O que acontece se repuser o seu dispositivo iOS com o Portal da Empresa? 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Repor o dispositivo a partir do site do Portal da Empresa | Microsoft Int
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

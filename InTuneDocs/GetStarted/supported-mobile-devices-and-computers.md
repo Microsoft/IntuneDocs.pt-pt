@@ -3,6 +3,7 @@ title: "Dispositivos móveis e computadores suportados | Microsoft Intune"
 description: "Dispositivos móveis e computadores que o Intune suporta"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

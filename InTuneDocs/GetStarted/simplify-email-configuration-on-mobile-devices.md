@@ -3,6 +3,7 @@ title: "Simplificar a configuração de e-mail em dispositivos móveis | Microso
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

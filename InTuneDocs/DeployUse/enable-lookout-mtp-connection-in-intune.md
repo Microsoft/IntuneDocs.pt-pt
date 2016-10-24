@@ -3,6 +3,7 @@ title: Ativar o Lookout MTP no Intune | Microsoft Intune
 description: "Ative o Lookout Mobile Threat Protection na consola de administração do Intune."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

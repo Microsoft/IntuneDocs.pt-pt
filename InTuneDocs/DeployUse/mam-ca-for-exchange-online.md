@@ -3,6 +3,7 @@ title: "Configurar acesso de aplicação para o Exchange Online | Microsoft Intu
 description: "Este tópico descreve como pode configurar uma política de acesso condicional para aplicações MAM."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Utilizar o dispositivo Windows com o Intune | Microsoft Intune
 description: "Lista de ligações para tarefas que pode fazer no seu dispositivo móvel Windows quando este está inscrito no Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

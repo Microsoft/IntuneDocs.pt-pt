@@ -3,6 +3,7 @@ title: "Enviar registos de dados de diagnóstico ao administrador de TI por e-ma
 description: Enviar registos de dados por e-mail num dispositivo Android
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

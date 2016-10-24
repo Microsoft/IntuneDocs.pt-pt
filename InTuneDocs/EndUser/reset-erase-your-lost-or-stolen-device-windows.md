@@ -3,6 +3,7 @@ title: Repor (apagar) o dispositivo Windows perdido ou roubado | Microsoft Intun
 description: Repor um dispositivo Windows perdido ou roubado
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Bloquear dispositivos remotamente a partir do Portal da Empresa | Microso
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

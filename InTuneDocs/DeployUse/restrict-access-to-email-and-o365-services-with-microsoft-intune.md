@@ -3,6 +3,7 @@ title: "Restringir o acesso ao e-mail e aos serviços do O365 | Microsoft Intune
 description: "Este tópico descreve como pode utilizar o acesso condicional para permitir que apenas dispositivos em conformidade acedam ao e-mail e aos dados da empresa no SharePoint online e noutros serviços."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Nomes de domínio para o Microsoft Intune | Microsoft Intune"
 description: "adicionar nome de domínio ao Intune"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

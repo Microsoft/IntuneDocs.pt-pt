@@ -3,6 +3,7 @@ title: "Autenticação multifator com o Azure AD | Microsoft Intune"
 description: "Como solicitar a autenticação multifator no Azure AD para inscrição de dispositivos."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Utilizar políticas de configuração da aplicação para dispositivos m
 description: "Utilize políticas de configuração de aplicações móveis no Intune para disponibilizar definições que poderão ser necessárias quando os utilizadores executarem uma aplicação do Android for Work."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

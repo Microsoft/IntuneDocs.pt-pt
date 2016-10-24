@@ -3,6 +3,7 @@ title: "Criar políticas e publicar uma aplicação para os utilizadores | Micro
 description: "Como criar políticas e publicar uma aplicação quando se inscreve numa avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

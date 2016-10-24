@@ -3,6 +3,7 @@ title: "Configurar a sua subscrição para o Lookout | Microsoft Intune"
 description: "Este tópico fornece detalhes sobre como configurar a proteção contra ameaças de dispositivos do Lookout."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

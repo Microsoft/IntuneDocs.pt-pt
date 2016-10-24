@@ -3,6 +3,7 @@ title: "Proteger dados das aplicações através de políticas de MAM | Microsof
 description: "Este tópico explica de que forma é que as políticas de gestão de aplicações móveis podem ajudar a proteger os dados empresariais, a evitar perda de dados e a manter as informações pessoais e de trabalho separadas."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

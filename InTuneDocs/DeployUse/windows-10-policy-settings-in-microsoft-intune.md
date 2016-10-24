@@ -3,6 +3,7 @@ title: "Definições de políticas do Windows 10 | Microsoft Intune"
 description: "Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o ambiente de trabalho Windows 10 e o Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Instale a Rede Privada Virtual privada (VPN) | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

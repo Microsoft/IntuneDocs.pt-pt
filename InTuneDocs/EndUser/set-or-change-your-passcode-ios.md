@@ -3,6 +3,7 @@ title: "Definir ou alterar o código de acesso | Microsoft Intune"
 description: "Definir ou alterar o código de acesso"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "O dispositivo Windows não está em conformidade com a definição para 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

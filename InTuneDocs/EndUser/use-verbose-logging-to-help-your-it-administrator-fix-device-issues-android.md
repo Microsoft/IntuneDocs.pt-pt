@@ -3,6 +3,7 @@ title: Utilizar o Registo Verboso para ajudar o administrador de TI a corrigir p
 description: Ajudar o administrador de TI a corrigir problemas de dispositivos utilizando o registo verboso
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Resolução de problemas de acesso aos recursos da empresa | Microsoft I
 description: "Códigos de erros e de estado neste tópico para o ajudar a resolver problemas de acesso a recursos."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

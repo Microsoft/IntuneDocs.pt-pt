@@ -3,6 +3,7 @@ title: "Aplicações permitidas e bloqueadas para KNOX | Microsoft Intune"
 description: "Perfil personalizado para criar uma lista de aplicações permitidas e bloqueadas para KNOX."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

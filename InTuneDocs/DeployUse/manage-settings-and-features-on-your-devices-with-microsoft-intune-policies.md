@@ -3,6 +3,7 @@ title: "Gerir definições de dispositivos com políticas | Microsoft Intune"
 description: "Utilize o Intune para criar e implementar políticas que controlam as definições e funcionalidades em dispositivos que gere."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

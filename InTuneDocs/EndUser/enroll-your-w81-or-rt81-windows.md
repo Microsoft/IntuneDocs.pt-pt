@@ -3,6 +3,7 @@ title: Inscrever o seu dispositivo Windows 8.1 ou Windows RT 8.1 | Microsoft Int
 description: Descreve como inscrever dispositivos Windows 8.1 ou Windows RT 8.1 no Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

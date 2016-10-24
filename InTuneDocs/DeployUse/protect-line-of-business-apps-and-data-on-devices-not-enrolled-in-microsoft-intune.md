@@ -3,6 +3,7 @@ title: "Proteger aplicações LOB em dispositivos não inscritos | Microsoft Int
 description: "Este tópico descreve como pode preparar as suas aplicações de linha de negócio personalizadas de modo a aplicar políticas de gestão de dispositivos móveis que ajudem a evitar perda de dados."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Resolução de Problemas da Integração do Lookout | Microsoft Intune"
 description: "Este tópico descreve resoluções de problemas que ocorrem frequentemente com a Integração do Lookout"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

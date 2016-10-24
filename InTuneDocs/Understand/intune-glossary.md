@@ -3,6 +3,7 @@ title: "Glossário do Intune | Microsoft Intune"
 description: Saiba mais sobre alguma da terminologia do Microsoft Intune
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/23/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Exchange Connector para EAS no local | Microsoft Intune
 description: "Utilize a ferramenta Conector para permitir a comunicação entre a consola de administração do Intune e o Exchange Server no local na MDM do Exchange ActiveSync."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

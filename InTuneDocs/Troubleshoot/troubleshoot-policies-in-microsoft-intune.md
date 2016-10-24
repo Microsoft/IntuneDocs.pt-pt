@@ -3,6 +3,7 @@ title: "Resolver problemas de políticas | Microsoft Intune"
 description: "Resolva problemas de configuração de políticas."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

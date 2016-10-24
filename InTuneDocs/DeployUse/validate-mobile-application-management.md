@@ -4,6 +4,7 @@ title:
 description: "Este tópico descreve como pode testar e confirmar se a sua política de MAM está corretamente definida e a funcionar conforme esperado."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

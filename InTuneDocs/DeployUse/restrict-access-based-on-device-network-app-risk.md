@@ -3,6 +3,7 @@ title: "Restringir o acesso ao utilizar proteção contra ameaças de dispositiv
 description: "Restrinja o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

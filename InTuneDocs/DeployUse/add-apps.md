@@ -3,6 +3,7 @@ title: "Adicionar aplicações | Microsoft Intune"
 description: "Antes de começar a implementar aplicações com o Intune, familiarize-se com os conceitos apresentados neste tópico."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

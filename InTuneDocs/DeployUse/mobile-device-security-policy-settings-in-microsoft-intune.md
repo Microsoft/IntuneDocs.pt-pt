@@ -3,6 +3,7 @@ title: "Definições de política de segurança de dispositivos móveis | Micros
 description: "Utilize o Intune para configurar uma grande variedade de definições que pode implementar em dispositivos geridos na sua organização."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

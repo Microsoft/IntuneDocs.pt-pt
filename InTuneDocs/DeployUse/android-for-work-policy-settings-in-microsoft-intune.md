@@ -4,6 +4,7 @@ title: "Definições de política do Android for Work | Microsoft Intune"
 description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android for Work que gere com o Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

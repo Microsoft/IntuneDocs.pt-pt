@@ -3,6 +3,7 @@ title: "Instalar a aplicação do Portal da Empresa do Microsoft Intune | Micros
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

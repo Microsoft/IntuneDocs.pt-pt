@@ -3,6 +3,7 @@ title: "Como os utilizadores de dispositivos iOS obtêm as aplicações | Micros
 description: "Métodos para disponibilizar aplicações iOS aos utilizadores finais"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

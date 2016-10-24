@@ -3,6 +3,7 @@ title: "Anular a inscrição do seu dispositivo Android no Intune | Microsoft In
 description: "Descreve como anular a encriptação de dispositivos Android no Intune"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

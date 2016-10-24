@@ -3,6 +3,7 @@ title: Restringir o acesso ao e-mail no Exchange no local | Microsoft Intune
 description: Proteja e controle o acesso ao e-mail da empresa no Exchange no local com o acesso condicional.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

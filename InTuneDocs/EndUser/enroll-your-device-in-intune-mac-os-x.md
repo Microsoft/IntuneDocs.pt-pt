@@ -3,6 +3,7 @@ title: Inscrever o dispositivo Mac OS X no Intune | Microsoft Intune
 description: Descreve como inscrever dispositivos Mac OS X no Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

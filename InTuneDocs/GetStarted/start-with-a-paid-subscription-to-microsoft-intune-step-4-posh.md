@@ -3,6 +3,7 @@ title: "Gerir licenças do Intune através do PowerShell | Microsoft Intune"
 description: "Gerir licenças do Intune através do PowerShell"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

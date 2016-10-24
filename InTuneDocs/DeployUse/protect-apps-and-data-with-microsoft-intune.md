@@ -3,6 +3,7 @@ title: "Proteger aplicações e dados | Microsoft Intune"
 description: "Este tópico descreve as várias funcionalidades e capacidades do Intune que estão disponíveis para que possa ajudar a proteger os dados e aplicações da sua empresa."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

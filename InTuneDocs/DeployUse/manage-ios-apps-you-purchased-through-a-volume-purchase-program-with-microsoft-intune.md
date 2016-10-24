@@ -3,6 +3,7 @@ title: "Gerir aplicações iOS compradas em volume | Microsoft Intune"
 description: "Utilize o Intune para gerir aplicações compradas em volume na Apple ao importar as informações da licença a partir da loja de aplicações, ao controlar a quantidade de licenças que utilizou e ao impedir que instale mais cópias da sua aplicação do que as que tem."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article

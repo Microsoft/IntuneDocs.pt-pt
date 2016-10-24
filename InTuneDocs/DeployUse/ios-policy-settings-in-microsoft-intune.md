@@ -3,6 +3,7 @@ title: "Definições de política do iOS | Microsoft Intune"
 description: "Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

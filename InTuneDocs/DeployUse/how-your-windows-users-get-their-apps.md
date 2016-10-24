@@ -3,6 +3,7 @@ title: "Como os utilizadores de dispositivos Windows obtêm as aplicações | Mi
 description: "Métodos para disponibilizar aplicações Windows aos utilizadores"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

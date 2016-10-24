@@ -3,6 +3,7 @@ title: "Recursos sobre a experiência do utilizador final com o Microsoft Intune
 description: "Ligações para informações para partilhar com os utilizadores finais"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article
