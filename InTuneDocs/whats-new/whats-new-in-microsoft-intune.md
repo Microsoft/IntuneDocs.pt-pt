@@ -54,7 +54,7 @@ Para utilizadores finais:
 - [Criar um perfil de trabalho e inscrever o seu dispositivo no Intune](/intune/enduser/create-a-work-profile-and-enroll-your-device-in-intune-android)
 
 ### Integração com a Lookout para a proteção de dispositivos iOS
-Em outubro, a Microsoft está a integrar a solução de proteção da Lookout contra ameaças que afetam dispositivos móveis para proteger dispositivos móveis iOS através da deteção de software maligno, aplicações de risco e muito mais. A solução da Lookout ajuda-o a determinar o nível da ameaça, que é configurável. Pode criar uma regra de política de conformidade no Intune para determinar a conformidade dos dispositivos com base na avaliação de riscos feita pela Lookout. Ao utilizar políticas de acesso condicional, pode permitir ou bloquear o acesso a recursos da sua empresa com base no estado de conformidade do dispositivo.
+Em outubro, a Microsoft está a integrar a solução de proteção da Lookout contra ameaças que afetam dispositivos móveis para proteger dispositivos móveis iOS através da deteção de malware, aplicações de risco e muito mais. A solução da Lookout ajuda-o a determinar o nível da ameaça, que é configurável. Pode criar uma regra de política de conformidade no Intune para determinar a conformidade dos dispositivos com base na avaliação de riscos feita pela Lookout. Ao utilizar políticas de acesso condicional, pode permitir ou bloquear o acesso a recursos da sua empresa com base no estado de conformidade do dispositivo.
 
 Os utilizadores finais de dispositivos em não conformidade iOS receberão um pedido para os inscrever e terão de instalar a aplicação Lookout for Work nos seus dispositivos, ativar a aplicação e corrigir as ameaças comunicadas na mesma para obterem acesso aos dados da empresa. Saiba como [Configurar e implementar as aplicações do Lookout for Work](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps).
 <!--TFS 1319493-->
@@ -84,9 +84,9 @@ Os números dos modelos afetados são:
 * SM-G313MY
 * SM-G313U
 
-Não é necessária nenhuma ação adicional sua ou dos utilizadores finais. Para mais informações, visite o site do [Samsung KNOX](https://www.samsungknox.com).
+Não é necessária nenhuma ação adicional sua ou dos utilizadores finais. Para obter mais informações, visite o site do [Samsung KNOX](https://www.samsungknox.com).
 
-### A aplicação Portal da Empresa para Windows 8 foi preterida; o suporte para as plataformas do Windows Phone 8 e do Windows RT está a ser preterido
+### A aplicação do Portal da Empresa para Windows 8 foi preterida; o suporte para as plataformas do Windows Phone 8 e do Windows RT está a ser preterido
 A partir de outubro de 2016, o Microsoft Intune irá preterir o suporte para o Portal da Empresa do Windows Phone 8. O Microsoft Intune irá também preterir o suporte para a plataforma do Windows Phone 8 e do Windows RT. Como resultado, não será capaz de inscrever ou atualizar dispositivos Windows Phone 8 e Windows RT.
 
 Pode continuar a gerir dispositivos Windows Phone 8, Windows RT e Windows 8 que já tenham sido inscritos. Atualize dispositivos Windows Phone 8 e Windows 8 para Windows Phone 8.1 e Windows 8.1, e utilize as aplicações do Portal da Empresa para Windows 8.1 e Windows Phone 8.1 correspondentes para continuar a distribuir aplicações para estes dispositivos, sem interrupções.
