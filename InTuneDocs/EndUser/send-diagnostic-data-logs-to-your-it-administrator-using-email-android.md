@@ -2,8 +2,8 @@
 title: "Enviar registos de dados de diagnóstico ao administrador de TI por e-mail | Microsoft Intune"
 description: Enviar registos de dados por e-mail num dispositivo Android
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

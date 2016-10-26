@@ -2,8 +2,8 @@
 title: Inscrever o dispositivo Windows no Intune | Microsoft Intune
 description: Descreve como inscrever dispositivos Windows no Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

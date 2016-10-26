@@ -2,8 +2,8 @@
 title: Inscrever o dispositivo Windows Phone 8.1 no Intune | Microsoft Intune
 description: Descreve como inscrever dispositivos Windows Phone 8.1 no Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

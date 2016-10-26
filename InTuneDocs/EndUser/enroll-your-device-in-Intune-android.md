@@ -2,8 +2,8 @@
 title: Inscrever o dispositivo Android no Intune | Microsoft Intune
 description: Descreve como encriptar dispositivos Android no Intune
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

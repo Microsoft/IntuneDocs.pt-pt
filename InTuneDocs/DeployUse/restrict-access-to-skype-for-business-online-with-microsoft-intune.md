@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ Quando um utilizador visado tentar utilizar o Skype para Empresas Online no resp
 
 **Antes de** configurar uma política de acesso condicional para o Skype para Empresas Online, tem de:
 - Ter uma **subscrição do Skype para Empresas Online** e atribuir uma licença do Skype para Empresas Online aos utilizadores.
-- Ter uma subscrição do **Enterprise Mobility + Security ou do Azure Active Directory Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+- Ter uma subscrição do **Enterprise Mobility + Security ou do Azure Active Directory Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -   [Ativar a autenticação moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para o Skype para Empresas Online.
 -  Tem de utilizar, bem como todos os seus utilizadores finais, o **Skype para Empresas Online**. Se tiver uma implementação com o Skype para Empresas Online e o Skype para Empresas no local, a política de acesso condicional não será aplicada aos utilizadores finais.

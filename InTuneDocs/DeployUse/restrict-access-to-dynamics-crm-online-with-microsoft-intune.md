@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ Pode controlar o acesso ao Microsoft Dynamics CRM Online a partir de dispositivo
 
 Para saber mais sobre como funciona o acesso condicional, leia o artigo [Restringir o acesso ao e-mail, 0365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-[!IMPORTANT] Para implementar o acesso condicional, tem de ter subscrições do Intune e do Azure Active Directory Premium e os utilizadores têm de estar licenciados para ambos os produtos. A **subscrição do Enterprise Mobility + Security (EMS)** inclui as subscrições do Intune e do Azure Active Directory Premium. Para obter mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se não tiver uma subscrição do EMS, pode obter uma subscrição do Azure Active Directory Premium. Consulte a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+[!IMPORTANT] Para implementar o acesso condicional, tem de ter subscrições do Intune e do Azure Active Directory Premium e os utilizadores têm de estar licenciados para ambos os produtos. A **subscrição do Enterprise Mobility + Security (EMS)** inclui as subscrições do Intune e do Azure Active Directory Premium. Para obter mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se não tiver uma subscrição do EMS, pode obter uma subscrição do Azure Active Directory Premium. Consulte a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 Quando um utilizador visado tentar utilizar a aplicação Dynamics CRM no respetivo dispositivo, ocorre a seguinte avaliação:
 
