@@ -2,8 +2,8 @@
 title: "Enviar registos de dados de diagnóstico ao administrador de TI por e-mail | Microsoft Intune"
 description: Enviar registos de dados por e-mail num dispositivo Android
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# Enviar registos de dados de diagnóstico ao administrador de TI por e-mail
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Enviar registos de dados de diagnóstico ao administrador de TI por e-mail
 
 Se obtiver um erro no seu dispositivo Android enquanto está a trabalhar com as suas aplicações escolares ou empresariais ou enquanto está na aplicação do Portal da Empresa, pode enviar registos de dados de diagnóstico para ajudar o administrador de TI a diagnosticar e corrigir o erro. Para incluir todos os detalhes nos registos, o que tornará mais fácil para o administrador de TI descobrir o problema, ative o registo verboso. Para mais informações sobre o registo verboso, consulte [Utilizar o registo verboso para ajudar o administrador de TI a corrigir problemas com dispositivos Android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
