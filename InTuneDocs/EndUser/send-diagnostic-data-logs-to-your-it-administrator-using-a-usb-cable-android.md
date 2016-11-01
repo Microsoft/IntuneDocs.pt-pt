@@ -3,7 +3,7 @@ title: "Enviar registos de dados de diagnóstico ao administrador de TI por cabo
 description: Enviar registos de dados por cabo USB
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
