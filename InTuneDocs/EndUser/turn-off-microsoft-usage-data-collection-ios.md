@@ -2,7 +2,7 @@
 title: Desativar a recolha de dados da Microsoft para iOS | Microsoft Intune
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# Desativar a recolha de dados da Microsoft
+# <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a recolha de dados da Microsoft
 
 Para melhorar os seus produtos e serviços, a Microsoft recolhe automaticamente dados anónimos sobre a fiabilidade e o desempenho da aplicação Portal da Empresa e como pode utilizá-la.
 
