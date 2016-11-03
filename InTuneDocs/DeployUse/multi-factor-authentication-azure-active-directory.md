@@ -2,8 +2,8 @@
 title: "Autenticação multifator com o Azure AD | Microsoft Intune"
 description: "Como solicitar a autenticação multifator no Azure AD para inscrição de dispositivos."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Autenticação multifator para Microsoft Intune
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Autenticação multifator para Microsoft Intune
 
 O Intune integra a autenticação multifator (MFA) do Azure AD para a inscrição de dispositivos para ajudá-lo a proteger os seus recursos empresariais. A MFA requer fatores de autenticação como a autenticação de texto, para além de nomes de utilizador e palavras-passe. A MFA é suportada para iOS, Android, Windows 8.1 ou posterior ou Windows Phone 8.1 ou dispositivos posteriores.
 
@@ -27,7 +27,7 @@ O Intune integra a autenticação multifator (MFA) do Azure AD para a inscriç�
 >
 > Em versões mais antigas do Configuration Manager (anteriores à versão 1610), ainda verá a definição da MFA na consola de administração do Configuration Manager. Não tente configurar a MFA na consola de administração do Configuration Manager, pois não funcionará. Configure a MFA conforme descrito neste tópico.
 
-### Configurar o Intune para exigir a autenticação multifator na inscrição de dispositivos
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>Configurar o Intune para exigir a autenticação multifator na inscrição de dispositivos
 Para exigir a MFA na inscrição do dispositivo, siga estes passos:
 
 1. Inicie sessão no [Portal do Microsoft Azure](https://manage.windowsazure.com) com as suas credenciais de administrador.
