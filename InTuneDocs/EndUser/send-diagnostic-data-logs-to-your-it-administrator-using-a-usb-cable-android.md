@@ -2,7 +2,7 @@
 title: "Enviar registos de dados de diagnóstico ao administrador de TI por cabo USB | Microsoft Intune"
 description: Enviar registos de dados por cabo USB
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# Enviar registos de dados de diagnóstico ao administrador de TI por cabo USB
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Enviar registos de dados de diagnóstico ao administrador de TI por cabo USB
 
 Caso pretenda enviar registos de dados para o administrador de TI, pode fazê-lo através de um computador e um cabo USB em vez de enviar os registos a partir do seu dispositivo móvel.
 

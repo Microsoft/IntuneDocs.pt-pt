@@ -2,7 +2,7 @@
 title: Inscrever o seu dispositivo 10 Windows no Intune | Microsoft Intune
 description: "Descreve como inscrever um dispositivo móvel ou de ambiente de trabalho Windows 10 no Intune"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/18/2016
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Inscrever o dispositivo de ambiente de trabalho Windows 10 Mobile ou Windows 10 no Intune
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Inscrever o dispositivo de ambiente de trabalho Windows 10 Mobile ou Windows 10 no Intune
 
 Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. A inscrição dos dispositivos permite à sua organização manter os dados empresariais protegidos. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação do Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
@@ -42,7 +42,7 @@ Inscrever o dispositivo de ambiente de trabalho Windows 10 Mobile ou Windows 10
 
     ![A sua conta](./media/w10-enroll-2-accounts-your-account.png)
 
-## Passos a seguir se vir Acesso profissional ou escolar
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Passos a seguir se vir Acesso profissional ou escolar
 
 1.  Toque em **Aceder ao trabalho ou escola** e, em seguida, toque em **Ligar**.
 
@@ -69,7 +69,7 @@ Inscrever o dispositivo de ambiente de trabalho Windows 10 Mobile ou Windows 10
 Se seguiu os passos anteriores, mas continua a não conseguir aceder à conta de e-mail e aos ficheiros profissionais ou escolares, siga os passos em [Passos de resolução de problemas a seguir se vir Acesso profissional ou escolar](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 
-## Passos a seguir se vir A sua conta
+## <a name="steps-to-follow-if-you-see-your-account"></a>Passos a seguir se vir A sua conta
 
 1.  Aceda às **Definições** do Windows e, em seguida, toque em **Contas**.
 
