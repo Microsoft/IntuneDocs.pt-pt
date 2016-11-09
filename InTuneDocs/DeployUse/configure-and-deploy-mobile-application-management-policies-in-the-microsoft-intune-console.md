@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
 As políticas de gestão de aplicações móveis (MAM) no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa. Por exemplo, pode restringir operações de corte, cópia e colagem numa aplicação gerida ou configurar uma aplicação para abrir todas as ligações num browser gerido.
 
 As políticas de gestão de aplicações móveis suportam:
@@ -59,7 +59,7 @@ Por exemplo, ao utilizar a aplicação do Outlook:
 > [!TIP]
 > Se estiver a utilizar o Intune com o Configuration Manager, consulte [Como Controlar Aplicações ao Utilizar Políticas de Gestão de Aplicações Móveis no Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
-## Criar e implementar uma aplicação com uma política de gestão de aplicações móveis
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Criar e implementar uma aplicação com uma política de gestão de aplicações móveis
 
 -   **Passo 1:** Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada, ou utilizar o SDK da Aplicação do Intune para escrever uma aplicação com MAM.
 
@@ -71,15 +71,15 @@ Por exemplo, ao utilizar a aplicação do Outlook:
 
 -   **Passo 5:** Monitorizar a implementação da aplicação.
 
-## Passo 1: Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada ou utilizar o SDK da Aplicação do Intune para escrever uma aplicação com MAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Passo 1: Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada ou utilizar o SDK da Aplicação do Intune para escrever uma aplicação com MAM
 
 Na loja de aplicações, encontre e anote o URL da aplicação gerida por política que pretende implementar. Por exemplo, o URL da aplicação Microsoft Word para iPad é **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## Passo 2: Publicar a aplicação no seu espaço de armazenamento na nuvem
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Passo 2: Publicar a aplicação no seu espaço de armazenamento na nuvem
 Quando publica uma aplicação gerida, os procedimentos diferem dependendo de estar a publicar uma aplicação gerida por política ou uma aplicação que foi processada ao utilizar a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS.
 
-#### Para publicar uma aplicação gerida por política
+#### <a name="to-publish-a-policy-managed-app"></a>Para publicar uma aplicação gerida por política
 
 1.  Quando estiver pronto para carregar a aplicação para o seu espaço de armazenamento na nuvem, siga as instruções em [Adicionar aplicações a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -93,7 +93,7 @@ Após a conclusão do carregamento, verá **Sim** para **Políticas de Gestão d
 
 Depois de ter verificado que a aplicação foi carregada com êxito, continue para o passo 3.
 
-#### Para publicar uma aplicação que foi processada através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Para publicar uma aplicação que foi processada através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune
 
 1.  Quando estiver pronto para carregar a aplicação para o seu espaço de armazenamento na nuvem, siga as instruções em [Adicionar aplicações a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -105,7 +105,7 @@ Após a conclusão do carregamento, verá **Sim** para **Políticas de Gestão d
 
 Depois de ter verificado que a aplicação foi carregada com êxito, continue para o passo 3.
 
-## Passo 3: criar uma política de gestão de aplicações móveis
+## <a name="step-3-create-a-mobile-application-management-policy"></a>Passo 3: criar uma política de gestão de aplicações móveis
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** &gt; **Descrição Geral** &gt; **Adicionar Política**.
 
@@ -142,7 +142,7 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
 
 A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política**.
 
-## Passo 4: Associar a aplicação a uma política de gestão de aplicações móveis e, em seguida, implementá-la
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>Passo 4: Associar a aplicação a uma política de gestão de aplicações móveis e, em seguida, implementá-la
 Certifique-se de que seleciona a política de gestão de aplicações móveis na página **Gestão de Aplicações Móveis** da caixa de diálogo **Gerir Implementação** para associar a política à aplicação.
 
 Para obter detalhes, consulte [Implementar aplicações no Microsoft Intune](deploy-apps.md).
@@ -150,7 +150,7 @@ Para obter detalhes, consulte [Implementar aplicações no Microsoft Intune](dep
 > [!IMPORTANT]
 > Se o dispositivo não estiver inscrito no Intune, as políticas não são removidas das aplicações. As aplicações que tinham as políticas aplicadas irão manter as definições de política depois de a aplicação ser desinstalada e reinstalada.
 
-### O que fazer quando uma aplicação já está implementada nos dispositivos
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>O que fazer quando uma aplicação já está implementada nos dispositivos
 Poderão existir situações em que implementa uma aplicação e em que um dos utilizadores ou dispositivos visados já tem instalada uma versão não gerida da aplicação. Por exemplo, o utilizador pode ter instalado o Microsoft Word a partir da loja de aplicações.
 
 Neste caso, tem de pedir ao utilizador para desinstalar manualmente a versão não gerida para que a versão gerida que configurou possa ser instalada.
@@ -160,10 +160,10 @@ No entanto, para dispositivos que executem o iOS 9 e posteriores, o Intune pedir
 > [!TIP]
 > Se o dispositivo estiver no modo supervisionado, o Intune irá assumir a gestão das aplicações existentes sem pedir autorização aos utilizadores.
 
-## Passo 5: Monitorizar a implementação da aplicação
+## <a name="step-5-monitor-the-app-deployment"></a>Passo 5: Monitorizar a implementação da aplicação
 Depois de criar e implementar uma aplicação associada a uma política de gestão de aplicações móveis, utilize o seguinte procedimento para monitorizar a aplicação e resolver os conflitos de política.
 
-#### Para ver o estado da implementação
+#### <a name="to-view-the-status-of-the-deployment"></a>Para ver o estado da implementação
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Grupos** &gt; **Descrição Geral**.
 
@@ -181,7 +181,7 @@ Depois de criar e implementar uma aplicação associada a uma política de gest�
 
 6.  Depois de identificar um conflito, pode rever as definições de política em conflito para utilizar a mesma definição ou pode implementar apenas uma política à aplicação e ao utilizador.
 
-### Como são resolvidos os conflitos de políticas
+### <a name="how-policy-conflicts-are-resolved"></a>Como são resolvidos os conflitos de políticas
 Quando existe um conflito de política de gestão de aplicações móveis na primeira implementação para o utilizador ou dispositivo, o valor de definição específico em conflito será removido da política implementada na aplicação. A aplicação utilizará um valor de conflito incorporado.
 
 Quando existe um conflito de política de gestão de aplicações móveis em implementações posteriores na aplicação ou utilizador, o valor de definição específico em conflito não será atualizado na política de gestão de aplicações móveis implementada na aplicação. A aplicação utilizará o valor existente para essa definição.
@@ -194,6 +194,6 @@ Nos casos em que o dispositivo ou o utilizador recebe duas políticas em conflit
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

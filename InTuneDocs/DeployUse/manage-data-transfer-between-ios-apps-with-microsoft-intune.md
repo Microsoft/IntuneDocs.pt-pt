@@ -3,6 +3,7 @@ title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intun
 description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune
-## Gerir aplicações iOS
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune
+## <a name="manage-ios-apps"></a>Gerir aplicações iOS
 A proteção dos dados da sua empresa inclui garantir que as transferências de ficheiros estão limitadas a aplicações que são geridas por si.  Pode gerir aplicações iOS das seguintes formas:
 
 -   Evite a perda de dados da empresa ao configurar uma política de MAM para as aplicações, que serão denominadas aplicações **geridas por políticas**.
@@ -28,7 +29,7 @@ A proteção dos dados da sua empresa inclui garantir que as transferências de 
 -   Também pode implementar e gerir aplicações através do **canal MDM**.  o requer que os dispositivos estejam inscritos na solução de MDM. Estas podem ser aplicações **geridas por políticas** ou outras aplicações geridas.
 
 A funcionalidade **Gestão Open in** dos dispositivos iOS pode limitar as transferências de ficheiros entre as aplicações que são implementadas através do **canal MDM**. As restrições da gestão Open in são estipuladas nas definições de configuração e implementadas utilizando a solução MDM.  Quando o utilizador instala a aplicação implementada, são aplicadas as restrições definidas.
-##  Utilizar a MAM com aplicações iOS
+##  <a name="using-mam-with-ios-apps"></a>Utilizar a MAM com aplicações iOS
 As políticas de gestão de aplicações móveis (MAM) podem ser utilizadas com a funcionalidade **Gestão Open in** para proteger os dados da empresa das seguintes formas:
 
 -   **Dispositivos propriedade do empregado não geridos por nenhuma solução MDM:** pode configurar as definições de política de MAM para **Permitir à aplicação transferir dados apenas para aplicações geridas**. Quando o utilizador final abre um ficheiro protegido numa aplicação não gerida por políticas, o ficheiro é ilegível.
@@ -41,7 +42,7 @@ Para assegurar que as aplicações que implementa através da solução MDM de t
 > [!IMPORTANT]
 > A definição de UPN do utilizador só é necessária para as aplicações implementadas em dispositivos geridos por uma solução MDM de terceiros.  Nos dispositivos geridos pelo Intune, esta definição não é necessária.
 
-## Configurar definição de UPN do utilizador
+## <a name="configure-user-upn-setting"></a>Configurar definição de UPN do utilizador
 Esta configuração é necessária para os dispositivos geridos por uma solução MDM de terceiros. O procedimento descrito abaixo é um fluxo geral sobre como implementar a definição de UPN e a experiência de utilizador final resultante:
 
 
@@ -49,11 +50,11 @@ Esta configuração é necessária para os dispositivos geridos por uma soluçã
 
 2.  Implemente as aplicações e o perfil de e-mail que pretende que sejam geridos **através da solução MDM de terceiros** utilizando a definição descrita nos passos 3 e 4.
 
-3.  Implemente a aplicação com as seguintes definições de configuração de aplicação: key=IntuneMAMUPN, Value=<nomedeutilizador@empresa.com> [exemplo: "IntuneMAMUPN", "jondoe@microsoft.com"]
+3.  Implemente a aplicação com as seguintes definições de configuração: key=IntuneMAMUPN, Value=<username@company.com> [exemplo: "IntuneMAMUPN", ‘jondoe@microsoft.com’]
 
 4.  Implemente a política de gestão Open In nos dispositivos inscritos.
 
-### Exemplo de experiência de utilizador final
+### <a name="example-end-user-experience"></a>Exemplo de experiência de utilizador final
 
 1.  O utilizador final instala a aplicação Microsoft Word no dispositivo.
 
@@ -70,11 +71,11 @@ Esta configuração é necessária para os dispositivos geridos por uma soluçã
 
 6.  Agora, a transferência de dados é concluída com êxito e o documento é marcado como identidade empresarial na aplicação. Além disso, os dados são tratados num contexto de trabalho e as definições de política são aplicadas em conformidade.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
