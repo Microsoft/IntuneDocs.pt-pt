@@ -4,7 +4,7 @@ description: "O que fazer quando os utilizadores não conseguem obter acesso aos
 keywords: 
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,37 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 ---
 
-# Resolver problemas de acesso condicional
+# <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 
 Normalmente, um utilizador tenta aceder ao e-mail ou ao SharePoint e recebe uma mensagem para se inscrever. Esse pedido direciona o utilizador para o portal da empresa.
 
 Este tópico descreve o que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune.
 
 
-## Princípios básicos sobre êxito no acesso condicional
+## <a name="the-basics-for-success-in-conditional-access"></a>Princípios básicos sobre êxito no acesso condicional
 
 Para que o acesso condicional funcione, é necessário respeitar as seguintes condições:
 
 -   O dispositivo tem de ser gerido pelo Intune
 -   O dispositivo tem de ser registado no Azure Active Directory (AAD). Em circunstâncias normais, este registo ocorre automaticamente durante a inscrição do Intune
 -   O dispositivo tem de estar em conformidade com as políticas de conformidade do Intune, para o dispositivo e para o utilizador do dispositivo.  Se não existirem políticas de conformidade, a inscrição do Intune é suficiente.
--   O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador tentar obter correio através do cliente de correio nativo do dispositivo, em vez de através do Outlook.     Isto ocorre automaticamente para dispositivos iOS, Windows Phone e Android/KNOX.
+-   O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador tentar obter correio através do cliente de correio nativo do dispositivo, em vez de através do Outlook.     Isto acontece automaticamente em dispositivos iOS, Windows Phone e Android/KNOX Standard.
 -   O Intune Exchange Connector deve estar corretamente configurado. Veja [Resolução de Problemas do Exchange Connector no Microsoft Intune](troubleshoot-exchange-connector.md) para obter mais informações.
 
 Estas condições podem ser visualizadas para cada dispositivo no Portal de Gestão do Azure e no relatório de inventário do dispositivo.
 
-## Problemas de inscrição
+## <a name="enrollment-issues"></a>Problemas de inscrição
 
  -  O dispositivo não está inscrito, pelo que a inscrição irá resolver o problema.
  -  O utilizador inscreveu o dispositivo, mas a associação à área de trabalho falhou. O utilizador deve atualizar a inscrição no portal da empresa.
 
-## Resolver problemas de compatibilidade
+## <a name="compliance-issues"></a>Resolver problemas de compatibilidade
 
  -  O dispositivo não está em conformidade com as políticas do Intune. Os problemas comuns são os requisitos de encriptação e palavra-passe. O utilizador será redirecionado para o portal da empresa, onde pode configurar o respetivo dispositivo para estar em conformidade.
  -  Pode demorar algum tempo para que as informações de compatibilidade sejam registadas num dispositivo. Aguarde alguns minutos e tente novamente.
@@ -53,23 +53,23 @@ Estas condições podem ser visualizadas para cada dispositivo no Portal de Gest
 
         Normalmente, a razão pela qual os dispositivos se mantêm neste estado é terem problemas de ligação ao serviço ou de sincronização a demorar muito tempo.  Se o problema persistir em diferentes configurações de rede (telemóvel, Wi-Fi, VPN), após os reinícios do dispositivo e depois de verificar que o SSP está atualizado no dispositivo, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## Problemas de políticas
+## <a name="policy-issues"></a>Problemas de políticas
 
 Quando cria uma política de conformidade e associa-a a uma política de e-mail, ambas as políticas têm de ser implementadas para o mesmo utilizador, por isso tenha cuidado quando planear que políticas devem ser implementadas para os grupos. É provável que os utilizadores que tenham apenas uma política aplicada verifiquem que os seus dispositivos não são conformes.
 
 
-## Problemas do Exchange ActiveSync
+## <a name="exchange-activesync-issues"></a>Problemas do Exchange ActiveSync
 
-### Dispositivo Android conforme recebe aviso de quarentena
+### <a name="compliant-android-device-gets-quarantine-notice"></a>Dispositivo Android conforme recebe aviso de quarentena
 - Um dispositivo Android inscrito e conforme poderá receber um aviso de quarentena quando tentar aceder a recursos empresariais. Antes de escolher a ligação que indica **Começar**, o utilizador deve certificar-se de que o portal da empresa não estava aberto quando tentou aceder aos recursos. Os utilizadores devem fechar o portal da empresa, tentar aceder de novo aos recursos e, em seguida, selecionar a ligação **Começar**.
 
-### O dispositivo extinto continua a ter acesso.
+### <a name="retired-device-continues-to-have-access"></a>O dispositivo extinto continua a ter acesso.
 - Quando utilizar o Exchange Online, um dispositivo extinto pode continuar a ter acesso várias horas depois de ser retirado. Isto acontece porque o Exchange coloca os direitos de acesso à memória cache a cada 6 horas. Considere outros meios de proteger dados em dispositivos extintos neste cenário.
 
-### O dispositivo está em conformidade e registado no AAD, mas permanece bloqueado
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>O dispositivo está em conformidade e registado no AAD, mas permanece bloqueado
 - Por vezes, o aprovisionamento do Exchange ActiveSync ID (EASID) para o AAD está atrasado. Uma causa comum deste problema é a limitação, por isso, aguarde alguns minutos e tente novamente.
 
-### Dispositivo bloqueado
+### <a name="device-blocked"></a>Dispositivo bloqueado
 
 Um dispositivo pode ser bloqueado no Acesso Condicional sem receber um e-mail de ativação.
 
@@ -79,7 +79,7 @@ Um dispositivo pode ser bloqueado no Acesso Condicional sem receber um e-mail de
 - Verifique os registos do Exchange Connector para a atividade de sendemail e procure a existência de erros. Um exemplo do comando a procurar é SendEmail da conta de notificação para useremail.
 - Antes do Exchange Connector bloquear o dispositivo, envia o e-mail de ativação. Se o dispositivo estiver offline, poderá não receber o e-mail de ativação. Verifique se o cliente de e-mail do dispositivo tem a obtenção de e-mail através de Push em vez de Poll, uma vez que isto também pode fazer com que o utilizador não receba o e-mail. Mude para Poll e verifique se o dispositivo recebe o e-mail.
 
-## Dispositivo não conforme não bloqueado
+## <a name="noncompliant-device-not-blocked"></a>Dispositivo não conforme não bloqueado
 
 Se tiver um dispositivo que não esteja em conformidade mas continue a ter acesso, siga os passos seguintes.
 
@@ -89,10 +89,10 @@ Se tiver um dispositivo que não esteja em conformidade mas continue a ter acess
     - Utilize este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Se o dispositivo não estiver listado, é porque não está a aceder ao Exchange.
     - Se o dispositivo estiver listado, utilize o cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre o respetivo estado de acesso e fornecer essas informações ao Suporte da Microsoft.
 
-## Antes de abrir um pedido de suporte
+## <a name="before-you-open-a-support-ticket"></a>Antes de abrir um pedido de suporte
 Se estes procedimentos não resolverem o problema, o Suporte da Microsoft pode pedir-lhe determinadas informações, como os registos de caixa de correio do OWA ou os registos do Exchange Connector.
 
-### Recolher registos de caixa de correio do OWA
+### <a name="collecting-owa-mailbox-logs"></a>Recolher registos de caixa de correio do OWA
 
 1. Inicie sessão através do OWA e escolha o símbolo de definições (engrenagem) junto ao seu nome no canto superior direito.
 2. Selecione **Opções**
@@ -104,15 +104,15 @@ Se estes procedimentos não resolverem o problema, o Suporte da Microsoft pode p
 8. Aguarde 1 a 2 minutos e depois volte para a lista telefónica no OWA. Certifique-se de que o seu telemóvel está selecionado na lista e, no menu superior, escolha **Obter Registo**.
 9. Deverá receber um e-mail enviado por si com um anexo. Quando abre um pedido de suporte, forneça o conteúdo do e-mail ao Microsoft Support.
 
-### Registos do Exchange Connector
+### <a name="exchange-connector-logs"></a>Registos do Exchange Connector
 
-#### Informações gerais de registo
+#### <a name="general-log-information"></a>Informações gerais de registo
 Para ver quais os registos do Exchange Connector que utilizam a [Ferramenta Visualizador de Rastreio do Servidor](ferramenta visualizador de rastreio do servidor (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx'). Esta ferramenta requer que transfira o SDK do Windows Server.
 
 >[!NOTE]
 >Os registos estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os registos estão contidos numa série de 30 ficheiros de registo com início em *Connector0.log* e fim em *Connector29.log*. Os registos passam de um para outro após terem sido acumulados 10 MB de dados num registo. Depois de os registos chegarem a Connector29, vão recomeçar novamente em Connector0, substituindo os ficheiros de registo anteriores.
 
-#### Localizar registos de sincronização
+#### <a name="locating-sync-logs"></a>Localizar registos de sincronização
 
 -    Localize uma sincronização completa nos registos ao procurar **sincronização completa**. O início de uma sincronização completa estará marcada pelo seguinte texto:
 
@@ -124,10 +124,10 @@ Para ver quais os registos do Exchange Connector que utilizam a [Ferramenta Visu
 
 -   Localize uma sincronização (delta) rápida nos registos ao procurar **sincronização rápida**.
 
-##### Exceções no comando Get next
+##### <a name="exceptions-in-get-next-command"></a>Exceções no comando Get next
 Consulte os registos do Exchange Connector para obter as exceções no **comando Get next** e forneça-as ao Suporte da Microsoft.
 
-#### Registo verboso
+#### <a name="verbose-logging"></a>Registo verboso
 
 Para ativar o registo verboso:
 
@@ -153,11 +153,11 @@ Para ativar o registo verboso:
 
 
 
-### Passos seguintes
+### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

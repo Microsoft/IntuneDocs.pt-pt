@@ -2,7 +2,8 @@
 title: "Resolver problemas de configuração do cliente | Microsoft Intune"
 description: "Resolva problemas comuns de configuração do cliente."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,49 +14,49 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
+ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 
 ---
 
-# Resolver problemas de configuração do cliente no Microsoft Intune
+# <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Resolver problemas de configuração do cliente no Microsoft Intune
 Utilize as seguintes informações para o ajudar a resolver problemas comuns de configuração de clientes. Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
 
-## Falha na instalação do cliente
+## <a name="client-installation-fails"></a>Falha na instalação do cliente
 
 -   Se não for apresentado nenhum alerta de implementação do software de cliente na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), verifique a conectividade à Internet e a configuração de proxy do computador e certifique-se de que este consegue comunicar com o URL do serviço, [https://manage.microsoft.com](https://manage.microsoft.com/). Em seguida, tente instalar o software de cliente novamente.
 
 -   Pode configurar um e-mail para ser enviado a determinados destinatários em caso de alerta de falha de implementação do software de cliente, ao configurar uma regra de notificação na área de trabalho **Admin** . Para obter mais informações, consulte [Ser notificado através de alertas do Microsoft Intune](/intune/deploy-use/get-notified-by-alerts).
 
--   O Intune apresenta o alerta crítico **Falha na Implementação do Software de Cliente**, se a implementação do software de cliente falhar. Este será apresentado nas páginas **Descrição Geral do Sistema** e **Alertas** da [consola de administração do Microsoft Intune](https://manage.microsoft.com/). Eis como verificar a existência de alertas:
+-   O Intune apresenta o alerta crítico **Client Software Deployment Failure (Falha na Implementação do Software de Cliente)**, se a implementação do software de cliente falhar. Este será apresentado nas páginas **System Overview (Descrição Geral do Sistema)** e **Alerts (Alertas)** da [consola de administração do Microsoft Intune](https://manage.microsoft.com/). Eis como verificar a existência de alertas:
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Alertas** &gt; **Descrição Geral**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Alerts (Alertas)** &gt; **Overview (Descrição Geral)**.
 
-2.  Na página **Descrição geral dos alertas** , poderá rever as seguintes informações:
+2.  Na página **Alerts overview (Descrição geral dos alertas)**, poderá rever as seguintes informações:
 
     -   Os três alertas principais, que podem ser ordenados por data, categoria ou gravidade
 
     -   O número total de alertas ativos
 
-3.  Escolha **Todos os Alertas** para apresentar as seguintes informações na página **Alertas**. Os alertas críticos são apresentados primeiro:
+3.  Escolha **All Alerts (Todos os Alertas)** para apresentar as seguintes informações na página **Alerts (Alertas)**. Os alertas críticos são apresentados primeiro:
 
-    -   **Nome** - o nome do tipo de alerta que gerou o alerta.
+    -   **Name (Nome)** – o nome do tipo de alerta que gerou o alerta.
 
-    -   **Origem** - uma ligação para a origem do alerta.  Se o limiar de apresentação do tipo de alerta estiver definido como **Todos**, esta ligação apresentará um único dispositivo afetado.  Se o limiar de apresentação do tipo de alerta estiver definido com um valor, esta ligação apresentará uma lista de todos os dispositivos afetados por este alerta.
+    -   **Source (Origem)** – uma ligação para a origem do alerta.  Se o limiar de apresentação do tipo de alerta estiver definido como **All (Todos)**, esta ligação apresentará um único dispositivo afetado.  Se o limiar de apresentação do tipo de alerta estiver definido com um valor, esta ligação apresentará uma lista de todos os dispositivos afetados por este alerta.
 
-    -   **Última Atualização** - indica a hora em que o alerta foi modificado pela última vez. Se um alerta estiver fechado, será apresentada a hora em que o alerta foi fechado.
+    -   **Last Updated (Última Atualização)** – indica a hora em que o alerta foi modificado pela última vez. Se um alerta estiver fechado, será apresentada a hora em que o alerta foi fechado.
 
-    -   **Gravidade** - indica a gravidade do alerta.
+    -   **Severity (Gravidade)** – indica a gravidade do alerta.
 
-## O pacote de inscrição do computador não é transferido
-**Problema:** ao tentar inscrever um computador, ocorre o seguinte:
+## <a name="computer-enrollment-package-doesnt-download"></a>O pacote de inscrição do computador não é transferido
+**Issue (Problema):** ao tentar inscrever um computador, ocorre o seguinte:
 -  O pacote de inscrição não é transferido
 -  A caixa de diálogo de transferência é apresentada, mas excede o tempo limite
 
-**Resolução:** no browser que estiver a utilizar para a transferência, para o período em ocorre a transferência, certifique-se de que as transferências estão ativadas e que os ficheiros encriptados podem ser guardados no disco local.
+**Resolution (Resolução):** no browser que estiver a utilizar para a transferência, para o período em ocorre a transferência, certifique-se de que as transferências estão ativadas e que os ficheiros encriptados podem ser guardados no disco local.
 
-## A instalação do cliente bloqueia com o código de erro 0x80040154
+## <a name="client-installation-hangs-with-error-code-0x80040154"></a>A instalação do cliente bloqueia com o código de erro 0x80040154
 **Problema:**
 
 -  A instalação do cliente durante a inscrição bloqueia
@@ -66,13 +67,13 @@ Utilize as seguintes informações para o ajudar a resolver problemas comuns de 
 
 Isto pode ser causado pela ausência de atualizações de software críticas no PC.
 
-**Resolução**: certifique-se de que a política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Manter os PCs Windows atualizados com as atualizações de software no Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+**Resolution (Resolução)**: certifique-se de que a política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Manter os PCs Windows atualizados com as atualizações de software no Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
-## Erros relacionados com políticas do Microsoft Intune no policyplatform.log
+## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Erros relacionados com políticas do Microsoft Intune no policyplatform.log
 Nos dispositivos Windows sem MDM, os erros de políticas no ficheiro policyplatform.log podem ser o resultado das definições não predefinidas no Controlo de Conta de Utilizador no Windows (UAC) no dispositivo. Algumas definições de UAC não predefinidas podem afetar as instalações de cliente do Microsoft Intune e a execução de políticas.
 
-### Para resolver problemas de UAC
+### <a name="to-resolve-uac-issues"></a>Para resolver problemas de UAC
 
 1.  Extinga o computador, conforme descrito em [Extinguir dispositivos e dados a partir da gestão do Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
@@ -85,9 +86,9 @@ Nos dispositivos Windows sem MDM, os erros de políticas no ficheiro policyplatf
 
 4.  Mova o controlo de deslize de notificações para a predefinição.
 
-## O que fazer se não conseguir desinstalar o cliente a partir da consola do administrador do Microsoft Intune
+## <a name="what-to-do-if-the-client-will-not-uninstall-from-the-microsoft-intune-administrator-console"></a>O que fazer se não conseguir desinstalar o cliente a partir da consola do administrador do Microsoft Intune
 
-### Para remover o software de cliente através da ferramenta de linha de comandos do Microsoft Intune
+### <a name="to-remove-the-client-software-by-using-the-microsoft-intune-command-line-tool"></a>Para remover o software de cliente através da ferramenta de linha de comandos do Microsoft Intune
 
 1.  Abra uma linha de comandos em modo de administrador.
 
@@ -95,8 +96,8 @@ Nos dispositivos Windows sem MDM, os erros de políticas no ficheiro policyplatf
 
 3.  Execute o seguinte comando ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
-## Códigos de erro de instalação do cliente
-A seguinte tabela descreve os códigos de erro que são apresentados em **Alertas** se a instalação do software de cliente falhar. Inclui sugestões para resolver o problema que é representado por cada código de erro.
+## <a name="client-installation-error-codes"></a>Códigos de erro de instalação do cliente
+A seguinte tabela descreve os códigos de erro que são apresentados em **Alerts (Alertas)** se a instalação do software de cliente falhar. Inclui sugestões para resolver o problema que é representado por cada código de erro.
 
 |Código de erro|Possível problema|Resolução sugerida|
 |--------------|--------------------|------------------------|
@@ -116,16 +117,16 @@ A seguinte tabela descreve os códigos de erro que são apresentados em **Alerta
 |**0x80043008**|Não foi possível iniciar o serviço Atualizações do Microsoft Online Management.|Contacte o Suporte, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
 |**0x80043009**|O computador cliente já está inscrito no serviço.|Tem de extinguir o computador cliente para o poder inscrever novamente no serviço. Para instruções, consulte [Extinguir dispositivos a partir da gestão do Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
 |**0x8004300B**|Não é possível executar o pacote de instalação do software de cliente porque a versão do Windows que está a ser executada no cliente não é suportada.|O Intune não suporta a versão do Windows que está a ser executada no computador cliente. Para obter uma lista dos sistemas operativos suportados, consulte [Requisitos de infraestrutura de rede do Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
-|**0xAB2**|O Windows Installer não conseguiu aceder ao tempo de execução de VBScript de uma ação personalizada.|Este erro é causado por uma ação personalizada baseada em DLLs (Dynamic-Link Libraries). Ao resolver problemas com o DLL, pode ter de utilizar as ferramentas descritas no artigo [KB198038 do Suporte da Microsoft: Ferramentas Úteis para Problemas de Empacotamento e Implementação](http://go.microsoft.com/fwlink/?LinkID=234255).|
+|**0xAB2**|O Windows Installer não conseguiu aceder ao tempo de execução de VBScript de uma ação personalizada.|Este erro é causado por uma ação personalizada baseada em DLLs (Dynamic-Link Libraries). Ao resolver problemas com o DLL, pode ter de utilizar as ferramentas descritas em [KB198038 do Suporte da Microsoft: Ferramentas Úteis para Problemas de Empacotamento e Implementação](http://go.microsoft.com/fwlink/?LinkID=234255).|
 |**0x8004300f**|O software não pode ser instalado porque o cliente do System Center Configuration Manager já está instalado.|Remova o cliente do Configuration Manager e, em seguida, tente instalar o software de cliente novamente.|
 |**0x80043010**|O software não pode ser instalado porque o cliente do Device Management da Open Mobile Alliance (OMADM) já está instalado.|Anule a inscrição do cliente do OMADM e, em seguida, tente instalar o software de cliente novamente.|
 Se os problemas de instalação persistirem, contacte o Suporte, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md). Tenha o registo de inscrição do computador cliente (localizado em %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log e em %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) e o registo do Windows Update (%*windir*%\windowsupdate.log) disponíveis para mostrar aos engenheiros de suporte.
 
-### Passos seguintes
+### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

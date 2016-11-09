@@ -13,65 +13,81 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba9ba203c9ec173dafd1d6f9e4828d4a8a51e1ef
-ms.openlocfilehash: 136dd127c5e0f1784746b973ebc5594573f07925
+ms.sourcegitcommit: ed1008c786285821c608a8404805c6615c60507f
+ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 
 ---
 
-# Introdução ao SDK da Aplicação Microsoft Intune
+# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
 Este Guia de introdução ajuda-o a ativar rapidamente a sua aplicação móvel para Gestão de Aplicações Móveis com o Microsoft Intune. Será útil compreender primeiro os benefícios do SDK da Aplicação do Intune, conforme enumerado na [Descrição Geral do SDK da ](intune-app-sdk.md).
 
 Este guia explica os principais passos necessários para ativar a gestão de aplicações móveis na sua aplicação com o Microsoft Intune. O SDK da Aplicação do Intune suporta cenários semelhantes entre plataformas e destina-se a criar uma experiência consistente transversalmente entre as plataformas para administradores de TI. No entanto, existem pequenas diferenças no suporte de determinadas funcionalidades devido às limitações das plataformas.
 
-# Introdução
+# <a name="getting-started"></a>Introdução
 
-## Registar a aplicação da loja no Microsoft
+## <a name="register-your-store-app-with-microsoft"></a>Registar a aplicação da loja no Microsoft
 
 **Se a sua aplicação é interna da sua empresa e não será disponibilizada numa loja de aplicações pública**:
 
-**Não é necessário** registar a sua aplicação. Para aplicações de linha de negócio internas, o administrador de TI irá implementar a aplicação internamente utilizando o Microsoft Intune. O Intune deteta que a aplicação foi criada com o SDK e permite ao administrador de TI aplicar definições de política MAM à mesma. Pode avançar para a secção [Ativar a aplicação móvel iOS ou Android para MAM com o SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
+**Não é necessário** registar a sua aplicação. Para aplicações de linha de negócio internas, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá ao administrador de TI aplicar as definições de política de MAM à mesma. Pode avançar para a secção [Ativar a aplicação móvel iOS ou Android para MAM com o SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
 
 **Se a sua aplicação será lançada numa loja de aplicações pública, como a Apple App Store ou o Google Play**: 
 
-Primeiro, **tem** de registar a sua aplicação com o Microsoft Intune e aceitar os termos de registo. Depois de a registar, os administradores de TI poderão aplicar as definições de política de MAM do Intune à aplicação otimizada, que será listada como parceira de aplicações do Intune. Até o registo ser concluído e confirmado pela equipa do Microsoft Intune os administradores do Intune não terão a opção de aplicar a política de MAM na ligação avançada da sua aplicação. A Microsoft também irá adicionar a sua aplicação à [página de Parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners), onde o ícone da aplicação será apresentado para mostrar que suporta a política de MAM do Microsoft Intune.
+Primeiro, **tem** de registar a sua aplicação com o Microsoft Intune e aceitar os termos de registo. Depois de a registar, os administradores de TI poderão aplicar as definições de política de MAM do Intune à aplicação otimizada, que será listada como parceira de aplicações do Intune. Até o registo ser concluído e confirmado pela equipa do Microsoft Intune os administradores do Intune não terão a opção de aplicar a política de MAM na ligação avançada da sua aplicação. A Microsoft também irá adicionar a sua aplicação à [página de Parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), onde o ícone da aplicação será apresentado para mostrar que suporta a política de MAM do Microsoft Intune.
 
-Para iniciar o processo de registo, **reveja e assine** o [Contrato para Parceiros do Microsoft Intune](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). Este contrato descreve os termos que a sua empresa tem de aceitar antes de se tornar parceira de aplicações do Microsoft Intune. Terá de iniciar sessão antes de poder ver este documento. Pode encontrar o contrato no site Microsoft Connect do SDK da Aplicação do Intune no separador Inquéritos ou aqui. Também vamos pedir o nome da aplicação, o nome da sua empresa, bem como a ligação avançada da loja da Google ou do iTunes da aplicação.
+Para iniciar o processo de registo, preencha o **[Microsoft Intune App Partner Questionnaire (Questionário para Parceiros de Aplicação do Microsoft Intune – em inglês)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**. 
 
-![Microsoft Connect](../media/microsoft-connect.png)
+A Microsoft utilizará os endereços de e-mail listados nas suas respostas do questionário para entrar em contacto e continuar o processo de registo. Além disso, utilizamos o seu endereço de e-mail de registo para contactá-lo se tivermos alguma dúvida.
 
-Utilizaremos o seu endereço de e-mail de registo para confirmar e concluir a receção do processo de registo. Além disso, utilizamos o seu endereço de e-mail de registo para contactá-lo se tivermos alguma dúvida.
+> [!NOTE]
+> Todas as informações recolhidas no formulário acima e através de correspondência de e-mail com a equipa do Microsoft Intune respeitarão a [Declaração de Privacidade da Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
 
 **O que pode esperar no processo de registo**: 
 
-Depois de ter submetido o formulário, será contactado pela Microsoft através do seu endereço de e-mail de registo, para confirmar a receção bem-sucedida ou para pedir informações adicionais para concluir o registo. Também será contactado quando a sua aplicação for registada com êxito no Microsoft Intune e estiver em destaque no site dos parceiros do Microsoft Intune. Após a confirmação da receção das informações, a ligação avançada da aplicação será incluída na próxima atualização mensal do serviço do Intune. Por exemplo, se as informações de registo estiverem concluídas em julho, a ligação avançada da aplicação será suportada em meados de agosto. Se a ligação avançada da aplicação da loja for alterada no futuro, terá de voltar a registar a aplicação. Além disso, informe-nos se atualizar a sua aplicação com uma nova versão do SDK da Aplicação do Intune.
+1. Após submeter o questionário, será contactado pela Microsoft através do seu endereço de e-mail de registo, para confirmar a receção bem-sucedida ou para pedir informações adicionais para concluir o registo. 
+2. Depois de recebermos todas as informações necessárias, ser-lhe-á enviado o Contrato de Parceiro de Aplicações do Microsoft Intune para assinar. Este contrato descreve os termos que a sua empresa tem de aceitar antes de se tornar parceira de aplicações do Microsoft Intune. 
+3. Também receberá uma notificação quando a sua aplicação for registada com êxito no serviço Microsoft Intune e estiver em destaque no site dos [parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). 
+4. Por fim, a ligação avançada da sua aplicação será adicionada à próxima atualização mensal do Serviço do Intune. Por exemplo, se as informações de registo estiverem concluídas em julho, a ligação avançada da aplicação será suportada em meados de agosto. 
 
-**Nota**: todas as informações recolhidas no formulário acima e através de correspondência de e-mail com a equipa do Intune respeitarão a [Declaração de Privacidade da Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+Se a ligação avançada da aplicação da loja for alterada no futuro, terá de voltar a registar a sua aplicação. Além disso, informe-nos se atualizar a sua aplicação com uma nova versão do SDK da Aplicação do Intune.
 
-## Transferir os ficheiros do SDK
 
-Os SDKs da Aplicação do Intune para iOS e Android estão alojados numa conta Microsoft GitHub. Os seguintes repositórios públicos contêm os ficheiros do SDK para iOS e Android, respetivamente:
+
+## <a name="download-the-sdk-files"></a>Transferir os ficheiros do SDK
+
+Os SDKs da Aplicação do Intune para iOS e Android nativos estão alojados numa conta do Microsoft GitHub. Os seguintes repositórios públicos contêm os ficheiros do SDK para iOS e Android, respetivamente:
 
 * [SDK da Aplicação do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK da Aplicação do Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
+**Se a sua aplicação for uma aplicação Xamarin ou Cordova, utilize as ferramentas de programador abaixo**:
+
+* [Componente Xamarin do SDK da Aplicação do Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Plugin Cordova do SDK da Aplicação do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+
 Recomendamos que se inscreva numa conta do GitHub que pode utilizar para bifurcar e obter dados dos nossos repositórios. O GitHub permite aos programadores comunicar com a nossa equipa de produto, colocar questões e receber respostas rápidas, ver notas de versão e fornecer feedback à Microsoft. Se tiver perguntas sobre os repositórios e a conta do GitHub, contacte msintuneappsdk@microsoft.com.
 
-## Ativar a aplicação móvel iOS ou Android para MAM com o SDK
 
-Para integrar o SDK da Aplicação do Intune na sua aplicação iOS, terá de fazer o seguinte: 
+
+
+
+## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>Ativar a aplicação móvel iOS ou Android para MAM com o SDK
+
+Para integrar o SDK da Aplicação do Intune na sua aplicação iOS nativa, terá de fazer o seguinte: 
 
 * **[Guia para Programadores do SDK da Aplicação do Intune para iOS](intune-app-sdk-ios.md)**: este documento irá guiá-lo passo a passo através da ativação da aplicação móvel iOS com o SDK da Aplicação do Intune. 
 
 
-Para integrar o SDK da Aplicação do Intune na sua aplicação Android, terá de fazer o seguinte:
+Para integrar o SDK da Aplicação do Intune na sua aplicação Android nativa, terá de fazer o seguinte:
 
 * **[Guia para Programadores do SDK da Aplicação do Intune para Android](intune-app-sdk-android.md)**: este documento irá guiá-lo passo a passo através da ativação da aplicação móvel Android com o SDK da Aplicação do Intune. 
 
+Encontrará documentação para o Componente Xamarin do SDK da Aplicação do Intune e o Plug-in do Cordova do SDK da Aplicação do Intune nos respetivos repositórios do GitHub. 
 
 
-## Configurar a Telemetria na sua aplicação
+## <a name="configuring-telemetry-for-your-app"></a>Configurar a Telemetria na sua aplicação
 
 O Microsoft Intune recolhe dados sobre estatísticas de utilização da sua aplicação.
 
@@ -81,7 +97,7 @@ O Microsoft Intune recolhe dados sobre estatísticas de utilização da sua apli
 
 * **SDK da Aplicação do Intune para Android**: os dados telemétricos não são registados através do SDK.
 
-## Testar a aplicação ativada para MAM com o Microsoft Intune
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Testar a aplicação ativada para MAM com o Microsoft Intune
 
 Depois de concluir os passos necessários para integrar a aplicação iOS ou Android com o SDK da Aplicação do Intune, terá de garantir que todas as políticas de gestão de aplicações estão ativadas e a funcionar no utilizador final e no administrador de TI. Para testar a aplicação integrada, necessitará do seguinte:
 
@@ -96,6 +112,6 @@ Depois de concluir os passos necessários para integrar a aplicação iOS ou And
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
