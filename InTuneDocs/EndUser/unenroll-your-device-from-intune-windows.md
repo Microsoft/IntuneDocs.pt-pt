@@ -3,6 +3,7 @@ title: "Anular a inscrição do seu dispositivo Windows no Intune | Microsoft In
 description: "Descreve como anular a inscrição de dispositivos Windows no Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 93374a2098447a11b164ae3fb5d7b1b3d4824806
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 ---
@@ -44,11 +45,11 @@ Para anular a inscrição do dispositivo, utilize a ligação, mostrado na secç
 
 1.  Aceda a **Definições do PC** &gt; **Rede** &gt; **Área de trabalho**.
 
-2.  Em **Associação à área de trabalho**, toque em **Sair**.
+2.  Em **Associação à Área de Trabalho**, selecione **Sair**.
 
-3.  Em **Ativar gestão de dispositivos**, toque em **Desativar**.
+3.  Em **Ativar gestão de dispositivos**, selecione **Desativar**.
 
-4.  Na janela de pop-up que é aberta, toque em **Desativar**.
+4.  Na janela de pop-up que é aberta, selecione **Desativar**.
 
 ## Anular a inscrição do seu dispositivo Windows Phone 8.1
 
@@ -60,11 +61,10 @@ Para anular a inscrição do dispositivo, utilize a ligação, mostrado na secç
 
 4.  Na caixa de diálogo **Eliminar conta**, toque em **Eliminar**.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

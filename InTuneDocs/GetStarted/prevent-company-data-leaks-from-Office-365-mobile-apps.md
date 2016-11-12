@@ -1,11 +1,11 @@
 ---
 title: "Impedir fugas de dados da empresa a partir das aplicações móveis do Office 365 | Microsoft Intune"
-description: 
+description: "Utilize o Intune para proteger os dados da organização com políticas de gestão de aplicações móveis (MAM) que ajudam a evitar fugas de dados da empresa, a partir de aplicações móveis do Office 365 ou de outras aplicações de linha de negócio (LOB)."
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbb34c02e782248a5895a83fba6808f7fef0db9b
-ms.openlocfilehash: b28beb0219e1669e6cd7eacf03f3875b76cd6e27
+ms.sourcegitcommit: 84faafafb531f0f3599a2b0d81a4123c930852ec
+ms.openlocfilehash: e9ed47a6ced12f800bb5e75bc73d5404a9d5cbc0
 
 
 ---
@@ -31,7 +31,7 @@ Se sim, o Microsoft Intune permite-lhe definir políticas MAM para as aplicaçõ
 ## Como fazê-lo?
 1.  Obter uma compreensão básica sobre [como funciona a gestão de aplicações móveis do Intune (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) .
 2.  Descura [o que tem de fazer antes de poder criar políticas MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) no portal do Azure.
-3.  [Criar e implementar políticas de MAM](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) com o Intune.
+3.  [Criar e implementar políticas de MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) com o Intune.
 
 ### Informações adicionais:
 - [Experiência de utilizador final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) utilizando aplicações com MAM ativada.

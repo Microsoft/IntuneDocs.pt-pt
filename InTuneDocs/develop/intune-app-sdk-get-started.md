@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
+# Introdução ao SDK da Aplicação Microsoft Intune
 
 Este Guia de introdução ajuda-o a ativar rapidamente a sua aplicação móvel para Gestão de Aplicações Móveis com o Microsoft Intune. Será útil compreender primeiro os benefícios do SDK da Aplicação do Intune, conforme enumerado na [Descrição Geral do SDK da ](intune-app-sdk.md).
 
 Este guia explica os principais passos necessários para ativar a gestão de aplicações móveis na sua aplicação com o Microsoft Intune. O SDK da Aplicação do Intune suporta cenários semelhantes entre plataformas e destina-se a criar uma experiência consistente transversalmente entre as plataformas para administradores de TI. No entanto, existem pequenas diferenças no suporte de determinadas funcionalidades devido às limitações das plataformas.
 
-# <a name="getting-started"></a>Introdução
+# Introdução
 
-## <a name="register-your-store-app-with-microsoft"></a>Registar a aplicação da loja no Microsoft
+## Registar a aplicação da loja no Microsoft
 
 **Se a sua aplicação é interna da sua empresa e não será disponibilizada numa loja de aplicações pública**:
 
@@ -55,7 +55,7 @@ Se a ligação avançada da aplicação da loja for alterada no futuro, terá de
 
 
 
-## <a name="download-the-sdk-files"></a>Transferir os ficheiros do SDK
+## Transferir os ficheiros do SDK
 
 Os SDKs da Aplicação do Intune para iOS e Android nativos estão alojados numa conta do Microsoft GitHub. Os seguintes repositórios públicos contêm os ficheiros do SDK para iOS e Android, respetivamente:
 
@@ -65,7 +65,7 @@ Os SDKs da Aplicação do Intune para iOS e Android nativos estão alojados numa
 **Se a sua aplicação for uma aplicação Xamarin ou Cordova, utilize as ferramentas de programador abaixo**:
 
 * [Componente Xamarin do SDK da Aplicação do Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Plugin Cordova do SDK da Aplicação do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+* [Plug-in do Cordova do SDK da Aplicação do Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Recomendamos que se inscreva numa conta do GitHub que pode utilizar para bifurcar e obter dados dos nossos repositórios. O GitHub permite aos programadores comunicar com a nossa equipa de produto, colocar questões e receber respostas rápidas, ver notas de versão e fornecer feedback à Microsoft. Se tiver perguntas sobre os repositórios e a conta do GitHub, contacte msintuneappsdk@microsoft.com.
 
@@ -73,7 +73,7 @@ Recomendamos que se inscreva numa conta do GitHub que pode utilizar para bifurca
 
 
 
-## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>Ativar a aplicação móvel iOS ou Android para MAM com o SDK
+## Ativar a aplicação móvel iOS ou Android para MAM com o SDK
 
 Para integrar o SDK da Aplicação do Intune na sua aplicação iOS nativa, terá de fazer o seguinte: 
 
@@ -87,7 +87,7 @@ Para integrar o SDK da Aplicação do Intune na sua aplicação Android nativa, 
 Encontrará documentação para o Componente Xamarin do SDK da Aplicação do Intune e o Plug-in do Cordova do SDK da Aplicação do Intune nos respetivos repositórios do GitHub. 
 
 
-## <a name="configuring-telemetry-for-your-app"></a>Configurar a Telemetria na sua aplicação
+## Configurar a Telemetria na sua aplicação
 
 O Microsoft Intune recolhe dados sobre estatísticas de utilização da sua aplicação.
 
@@ -97,7 +97,7 @@ O Microsoft Intune recolhe dados sobre estatísticas de utilização da sua apli
 
 * **SDK da Aplicação do Intune para Android**: os dados telemétricos não são registados através do SDK.
 
-## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Testar a aplicação ativada para MAM com o Microsoft Intune
+## Testar a aplicação ativada para MAM com o Microsoft Intune
 
 Depois de concluir os passos necessários para integrar a aplicação iOS ou Android com o SDK da Aplicação do Intune, terá de garantir que todas as políticas de gestão de aplicações estão ativadas e a funcionar no utilizador final e no administrador de TI. Para testar a aplicação integrada, necessitará do seguinte:
 

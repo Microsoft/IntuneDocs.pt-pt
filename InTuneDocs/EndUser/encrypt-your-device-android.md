@@ -2,9 +2,10 @@
 title: Encriptar o seu dispositivo | Microsoft Intune
 description: Descreve como encriptar dispositivos Android
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
-ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
+ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
+ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 
 ---
@@ -24,12 +25,12 @@ ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 Se a sua empresa ou organização exigir que encripte o seu dispositivo Android antes de poder aceder a ficheiros, a e-mails ou a dados da empresa, siga os passos abaixo para encriptar o seu dispositivo. Poderá ser-lhe pedido para definir um PIN ou uma palavra-passe antes de encriptar, se o administrador de TI exigir um deles.
 
-Se alguma vez anular a inscrição do seu telemóvel, este permanecerá encriptado.
+Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
 1.  Certifique-se de que foi definida uma palavra-passe ou um PIN de bloqueio de ecrã para o seu dispositivo.
 
-2.  Nas **Definições**, clique em **Segurança** &gt; **Encriptar Telemóvel**.
-    (Em alguns telemóveis, terá de clicar em **Armazenamento** &gt; **Encriptação de armazenamento** ou **Armazenamento** &gt; **Bloqueio de ecrã e segurança** &gt; **Outras definições de segurança** para encontrar a opção "Encriptar").
+2.  Nas **Definições**, selecione **Segurança** &gt; **Encriptar Telemóvel**.
+    (Em alguns telemóveis, terá de selecionar **Armazenamento** &gt; **Encriptação de armazenamento** ou **Armazenamento** &gt; **Bloqueio de ecrã e segurança** &gt; **Outras definições de segurança** para encontrar a opção "Encriptar").
 
 3.  Siga as instruções no ecrã. Durante a encriptação, o seu dispositivo poderá reiniciar várias vezes.
 
@@ -40,30 +41,26 @@ Se alguma vez anular a inscrição do seu telemóvel, este permanecerá encripta
 - Vê uma mensagem a indicar que ainda tem de encriptar.
 - Depara-se com erros quando tenta utilizar a aplicação do Portal da Empresa.
 
-**Coisas a experimentar**: 
+**Coisas a experimentar**
 
-1. Certifique-se de que o seu dispositivo está carregado e ligado.
+- Certifique-se de que o seu dispositivo está carregado e ligado.
+- Confirme se definiu uma palavra-passe ou um PIN no dispositivo.
+- Se já tiver definido uma palavra-passe ou PIN no seu dispositivo, tente os seguintes passos, que o administrador de TI pode exigir para tornar o seu dispositivo mais seguro. Os nomes de menu que visualiza poderão ser ligeiramente diferentes nos passos, dependendo do tipo de dispositivo Android que tiver.
 
-2. Confirme se definiu uma palavra-passe ou um PIN no dispositivo.
+    1. Vá para **Definições** > **Segurança** > **Bloqueio de ecrã**. Confirme o seu PIN ou palavra-passe atual.
 
-3. Se já definiu uma palavra-passe ou PIN no seu dispositivo, tente os seguintes passos, que o administrador de TI pode exigir para tornar o seu dispositivo mais seguro. Os nomes de menu que visualiza poderão ser ligeiramente diferentes nos passos, dependendo do tipo de dispositivo Android que tiver.
+    2. No ecrã **Escolher bloqueio de ecrã**, escolha o tipo de bloqueio de ecrã que pretende utilizar.
 
-    a. Vá para **Definições** > **Segurança** > **Bloqueio de ecrã**. Confirme o seu PIN ou palavra-passe atual.
+    3. No ecrã **Arranque seguro**, toque em **Exigir PIN para iniciar o dispositivo**e toque em **Continuar**.
 
-    b. No ecrã **Escolher bloqueio de ecrã**, escolha o tipo de bloqueio de ecrã que pretende utilizar.
+    4. Escolha um PIN (pode introduzir o mesmo que introduziu anteriormente) e toque em **Confirmar o PIN**.
 
-    c. No ecrã **Arranque seguro**, toque em **Exigir PIN para iniciar o dispositivo**e toque em **Continuar**.
+    5. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
 
-    d. Escolha um PIN (pode introduzir o mesmo que introduziu anteriormente) e toque em **Confirmar o PIN**.
-
-    e. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
-
-Ainda precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
+Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa Android da Microsoft, através do endereço wintunedroidfbk@microsoft.com.
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

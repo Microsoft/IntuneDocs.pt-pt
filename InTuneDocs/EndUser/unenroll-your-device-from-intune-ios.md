@@ -3,6 +3,7 @@ title: "Anular a inscrição do seu dispositivo iOS no Intune | Microsoft Intune
 description: "Descreve como anular a inscrição de dispositivos iOS no Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: af520ef10b50631bafdfdf4d240a8e2541f5c3d6
 
 # Anular a inscrição do seu dispositivo iOS no Intune
 
-Quando termina a inscrição do seu dispositivo iOS no Intune, este não poderá continuar a aceder a recursos de empresa e a ser gerido pelo Intune.
+Quando termina a inscrição do seu dispositivo iOS no Intune, este não poderá continuar a aceder a recursos de empresa e deixará de ser gerido pelo Intune.
 
 Para anular a inscrição do dispositivo no Intune, utilize estes passos ou veja este vídeo:
 
@@ -36,7 +37,7 @@ Para anular a inscrição do dispositivo no Intune, utilize estes passos ou veja
 
 Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
--   O seu dispositivo deixará de ser apresentado no Portal da Empresa
+-   O seu dispositivo deixará de ser apresentado no Portal da Empresa.
 
 -   Deixará de poder instalar aplicações a partir do Portal da Empresa.
 
@@ -52,11 +53,10 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 -   Os dispositivos configurados apenas para e-mail não serão apresentados na aplicação Portal da Empresa ou no site.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

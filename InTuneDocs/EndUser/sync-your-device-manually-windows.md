@@ -3,8 +3,9 @@ title: Sincronizar o seu dispositivo Windows manualmente | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Mobile para acelerar u
     É apresentada a mensagem "Estamos a sincronizar a sua conta" na parte superior do ecrã. O botão **Sincronizar** aparece a cinzento até que seja concluída a sincronização do dispositivo.
 
 ## Windows 10 Desktop
-Para sincronizar manualmente o seu dispositivo Windows 10 Desktop para acelerar uma instalação de aplicações lenta:
+Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de passos. Para saber que passos que deve utilizar, observe as capturas de ecrã e, em seguida, siga os passos que se parecem com o que vê no seu dispositivo. 
 
 1. Selecione o botão **Iniciar** e, em seguida, selecione **Definições**.
 
@@ -63,15 +64,46 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Desktop para acelerar 
 
     ![Selecionar Contas no ecrã Definições](./media/win10pc-sync-2-settings-accounts.png)
 
-3. Na página **Contas** , selecione **Acesso de trabalho**.
+3. Observe os dois ecrãs seguintes e veja qual deles se parece com o que vê no seu dispositivo. Siga os passos que acompanham o ecrã que aparece no seu dispositivo.
+
+    Se vir este ecrã, que mostra "Acesso profissional ou escolar", siga as instruções em [Passos a seguir se vir Acesso profissional ou escolar](#steps-to-follow-if-you-see-access-work-or-school).
+
+    ![Passos de sincronização a seguir se vir Acesso profissional ou escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Se vir este ecrã, que mostra "Acesso de trabalho", siga os passos em [Passos a seguir se vir Acesso profissional ou escolar](#steps-to-follow-if-you-see-your-account).
+
+    ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png) 
+
+### Passos a seguir se vir Acesso profissional ou escolar
+
+1. Na página **Contas**, selecione **Acesso profissional ou escolar**.
+
+    ![Selecionar Acesso profissional ou escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. Selecione a sua conta escolar ou profissional. Dependendo da configuração que o administrador de TI efetuou, poderá ver duas contas com aspeto semelhante ao exemplo mostrado abaixo. Uma conta tem uma pasta junto à mesma, e a outra conta tem o logótipo da Microsoft. 
+
+    - Se vir a conta com a pasta, selecione-a e procure o botão **Informações** sob a mesma. 
+    - Se vir apenas a conta com o logótipo da Microsoft, selecione a conta e procure o botão **Informações** sob a mesma.
+
+    ![Selecione o nome da sua conta junto à pasta ou ao logótipo da Microsoft](./media/win10pc-rs1-sync-info-button.png)
+
+3. Selecione o botão **Informações**. É aberta uma caixa de diálogo semelhante à do exemplo abaixo.
+
+    ![Selecione o nome da sua conta junto à pasta ou ao logótipo da Microsoft](./media/win10pc-rs1-sync-button.png)
+
+4. Selecione o botão**Sincronizar**. O seu dispositivo será sincronizado com o Intune.
+
+### Passos a seguir se vir Acesso de trabalho
+    
+1. Na página **Contas** , selecione **Acesso de trabalho**.
 
     ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png)
 
-4. Na secção **Inscrever na gestão de dispositivos**, selecione o nome da sua empresa.
+2. Na secção **Inscrever na gestão de dispositivos**, selecione o nome da sua empresa.
 
     ![Selecionar o nome da empresa para a gestão de dispositivos](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Selecione o botão**Sincronizar**.
+3. Selecione o botão**Sincronizar**.
 
     ![Selecionar o botão sincronizar](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

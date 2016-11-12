@@ -3,6 +3,7 @@ title: "Escolher como inscrever dispositivos móveis | Microsoft Intune"
 description: "Decidir como inscrever dispositivos móveis no Intune respondendo a algumas perguntas simples"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 0e516e3762dc5712a1b2d0f83016b51b15b7070f
+ms.sourcegitcommit: 2c14071f5fb1a3604b897d6b2f81797d40bedc6d
+ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
 
 
 ---
 
 # Escolher como inscrever dispositivos móveis
 
-As respostas às questões que se seguem irão ajudá-lo a determinar o melhor método de inscrição para os dispositivos que gere.
+As respostas às seguintes perguntas ajudam-no a determinar o melhor método de inscrição para os dispositivos que gere.
 
-## **Os empregados utilizam os respetivos dispositivos ou os fornecidos pela sua organização?**
+## **Os funcionários utilizam os respetivos dispositivos ou os fornecidos pela sua organização?**
 
-  - **Dispositivos pertencentes ao utilizador** - inscrição "Bring Your Own Device" (BYOD)
+  - **Dispositivos pertencentes ao utilizador** – inscrição "Bring Your Own Device" (BYOD)
   - **Dispositivos pertencentes à empresa** -inscrição COD
 
 > [!div class="button"]
@@ -53,27 +54,27 @@ As respostas às questões que se seguem irão ajudá-lo a determinar o melhor m
   > [!div class="button"]
   [Inscrição de DEP para iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscrição direta para iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscrição de DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-  - **Programa de registo de dispositivos da Apple (DEP)** - os dispositivos iOS adquiridos ou geridos com o DEP podem ser segmentados com um perfil de inscrição. Da primeira vez que os utilizadores inscrevem os dispositivos, estes transferem o perfil do DEP e são inscritos com o mesmo.
+  - **Programa de Registo de Dispositivos da Apple (DEP)** – os dispositivos iOS adquiridos ou geridos com o DEP podem ser associados a um perfil de inscrição. Da primeira vez que os utilizadores ligam os dispositivos, estes transferem o perfil do DEP e são inscritos com o mesmo.
 
-  - **Apple Configurator num Mac** - o Apple Configurator é uma aplicação da Apple que é executada em PCs Mac. Pode ligar os seus dispositivos iOS ao Mac com um cabo USB para instalar um perfil de inscrição nos mesmos. Se puder repor os dispositivos para as definições de fábrica para os inscrever, utilize a inscrição através do Assistente de Configuração. Se não quiser repor os dispositivos para as definições de fábrica, utilize a inscrição direta.
+  - **Apple Configurator num Mac** – o Apple Configurator é uma aplicação da Apple que é executada em PCs Mac. Pode ligar os seus dispositivos iOS ao Mac com um cabo USB para instalar um perfil de inscrição nos mesmos. Se puder repor os dispositivos para as definições de fábrica para os inscrever, utilize a opção de inscrição através do Assistente de Configuração. Se não quiser repor os dispositivos para as definições de fábrica, utilize a opção de inscrição Direta.
 
-  - **Gestor de Inscrição de Dispositivos** - o gestor de inscrição de dispositivos (DEM) do Intune permite a um gestor ou administrador inscrever vários dispositivos móveis com uma única conta de utilizador. Estes dispositivos não podem ter afinidade do utilizador (ou seja, utilizadores dedicados) e têm de estar inscritos através da instalação e início de sessão na aplicação Portal da Empresa.
+  - **Gestor de inscrição de dispositivos (Intune)** – o gestor de inscrição de dispositivos (DEM) do Intune permite a um gestor ou administrador inscrever vários dispositivos móveis com uma única conta de utilizador. Estes dispositivos não podem ter utilizadores dedicados (afinidade de utilizadores) e têm de ser inscritos através da instalação e início de sessão na aplicação Portal da Empresa.
 
 ## **Como vai gerir os dispositivos iOS dedicados?**
 
   > [!div class="button"]
-  [Etiqueta com IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [DEP para iOs](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente de Configuração de iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Etiqueta com IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+   [DEP para iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente de Configuração de iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Etiqueta com IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Pode inscrever dispositivos pertencentes à empresa com utilizadores dedicados através das seguintes formas:
 
-  - **Programa de registo de dispositivos da Apple (DEP)** - os dispositivos iOS adquiridos ou geridos com o DEP podem ser segmentados com um perfil de inscrição. Da primeira vez que os utilizadores inscrevem os dispositivos, estes transferem o perfil do DEP e são inscritos com o Intune.
+  - **Programa de Registo de Dispositivos da Apple (DEP)** – os dispositivos iOS adquiridos ou geridos com o DEP podem ser associados a um perfil de inscrição. Da primeira vez que os utilizadores ligarem os dispositivos, estes transferem o perfil do DEP e são inscritos com o Intune.
 
-  - **Apple Configurator num Mac** - o Apple Configurator é uma aplicação da Apple que é executada em PCs Mac. Pode ligar os seus dispositivos iOS ao Mac com um cabo USB para instalar um perfil de inscrição nos mesmos. Se puder repor os dispositivos para as definições de fábrica para os inscrever, utilize a inscrição através do Assistente de Configuração.
+  - **Apple Configurator num Mac** – o Apple Configurator é uma aplicação da Apple que é executada em PCs Mac. Pode ligar os seus dispositivos iOS ao Mac com um cabo USB para instalar um perfil de inscrição nos mesmos. Se puder repor os dispositivos para as definições de fábrica para os inscrever, utilize a opção de inscrição através do Assistente de Configuração.
 
-  - **Etiqueta com o número IMEI** - ao importar os números de identidade internacional do equipamento móvel (IMEI) dos dispositivos pertencentes à empresa, pode marcá-los como tal no Intune. Os utilizadores podem, em seguida, inscrever os dispositivos deles como dispositivos pessoais através da instalação do Portal da Empresa para aceder aos recursos da empresa, como e-mail, aplicações e dados.
+  - **Etiqueta com o número IMEI** – ao importar os números de identidade internacional do equipamento móvel (IMEI) dos dispositivos pertencentes à empresa, pode marcá-los como tal no Intune. Os utilizadores podem, em seguida, inscrever os dispositivos deles como dispositivos pessoais através da instalação do Portal da Empresa, para aceder aos recursos da empresa, como e-mail, aplicações e dados.
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

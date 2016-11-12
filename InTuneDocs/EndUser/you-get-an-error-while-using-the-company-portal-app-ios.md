@@ -3,6 +3,7 @@ title: "Obtenho um erro quando utilizo a aplicação Portal da Empresa | Microso
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
 
 
 ---
@@ -25,17 +26,14 @@ ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
 
 Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo iOS, pode enviar informações sobre o erro para ajudar o seu administrador de TI a resolver o problema. Pode enviar informações de erro de formas diferentes:
 
--   Ao tocar em **Relatório** nas mensagens de alerta de erros.
+-   Toque em **Relatório** nas mensagens de alerta do erro.
 
--   Ao tocar em **Enviar Relatório de Diagnóstico** no ecrã **Acerca De** da aplicação Portal da Empresa
+-   Toque em **Enviar Relatório de Diagnóstico** no ecrã **Acerca de** da aplicação Portal da Empresa.
 
--   Ao abanar o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, ao tocar em **E-mail** quando é apresentado o alerta diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** &gt; ** Portal da Empresa** e confirme que a opção **Gesto de Abanar** está ativada.
-
-
+-   Abane o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, toque em **E-mail** quando for apresentado o alerta de diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** &gt; ** Portal da Empresa** e confirme que a opção **Gesto de Abanar** está ativada.
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -4,17 +4,17 @@ description: Browsers que o Intune suporta
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
-ms.reviewer: jeffgilb
+ms.reviewer: camoya
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7d2852c2ae18ff09eddd99bc76a1e1800546d304
+ms.sourcegitcommit: b63b82b6eb87a90013452825a2049c2a2bc4e91d
+ms.openlocfilehash: de5ca1b5fda988f96437696ff705178b9c49814f
 
 
 ---
@@ -25,16 +25,17 @@ Antes de configurar o Intune, reveja este tópico e outros requisitos listados e
 
 |Funcionalidade do Intune |Browsers suportados|
 |---------|---------|
-|Consola de Administração do Intune     |  Internet Explorer 10 ou posterior<br /><br />Google Chrome (versões anteriores à versão 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** o Microsoft Edge e o browsers para dispositivos móveis não são suportados pela consola de Administração.                      
+|Consola de Administração do Intune     |  Internet Explorer 10 ou posterior<br /><br />Google Chrome (versões anteriores à versão 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** o Microsoft Edge e os browsers para dispositivos móveis não são suportados na consola de Administração<sup>1</sup>.                      
 |Portal de Administração do Office 365     |Todos os browsers, incluindo browsers para dispositivos móveis e browsers geridos  |
 |Web site do Portal da Empresa     |**Em dispositivos móveis:** utilize o browser predefinido de cada plataforma suportada   <br /><br />**Em PCs com Windows:** Internet Explorer 10 ou posterior ou o Microsoft Edge<br /><br />**Em Mac OS X 10.9 ou posterior:** Apple Safari    |
 
+> [!Note] <sup>1</sup>O Microsoft Edge e os browsers para dispositivos móveis não são suportados na consola de administração porque não suportam o [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx). A consola do Intune está a abandonar a experiência do Silverlight ao longo de um período de tempo; eventualmente, todas as funcionalidades de gestão de aplicações e dispositivos móveis do Intune serão [disponibilizadas no novo portal do Microsoft Azure](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 ### Consulte também
 [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

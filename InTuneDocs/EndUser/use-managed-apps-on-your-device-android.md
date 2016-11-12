@@ -3,6 +3,7 @@ title: "Utilizar aplicações geridas no seu dispositivo Android | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
 
 # Utilizar aplicações geridas no seu dispositivo Android
 
-As aplicações geridas são as aplicações que o seu administrador de TI pode configurar para ajudar a proteger os dados da empresa que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo Android, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
+As aplicações geridas são as aplicações que o administrador de TI pode configurar para ajudar a proteger os dados da empresa a que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo Android, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
 
 As diferentes aplicações geridas também podem trabalhar em conjunto no seu dispositivo para que possa efetuar as tarefas diárias, mantendo os dados empresariais protegidos. Por exemplo, se abrir um ficheiro da empresa numa aplicação gerida e for necessária outra aplicação gerida para ver esse ficheiro, a aplicação gerida que lhe permite ver o ficheiro abre-se automaticamente. Se não estiver disponível uma aplicação necessária, determinadas ações, como abrir um documento ou aceder a uma ligação Web a partir de um documento gerido, poderão não estar disponíveis.
 
@@ -34,12 +35,12 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 ## Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o seu administrador de TI poderá instalá-la no seu dispositivo. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
 
 -   Instala uma aplicação da Play Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
 ## O que o meu administrador de TI pode gerir na minha aplicação?
-Aqui estão alguns exemplos das opções que o seu administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
+Aqui estão alguns exemplos das opções que o administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
 
 -   Acesso a Web sites específicos
 
@@ -51,7 +52,7 @@ Aqui estão alguns exemplos das opções que o seu administrador de TI pode geri
 
 -   Requisitos de acesso do PIN
 
--   Início de sessão com as credenciais da empresa
+-   O seu início de sessão com as credenciais da empresa
 
 -   Capacidade de cópia de segurança para a nuvem
 
@@ -69,14 +70,12 @@ Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
 
 -   Leitor do Intune AV
 
--   Microsoft Word, Excel, PowerPoint
+-   Microsoft Word, Excel e PowerPoint
 
-Contacte o seu administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
+Contacte o administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: "O dispositivo Android tem root e não liga | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,27 +15,25 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 14180d4dd324134f3b4e0a8d0241ccb61c3207e0
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
 
 
 ---
 
 
-# O dispositivo Android tem root e não liga
+# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>O dispositivo Android tem root e não liga
 
-Quando o dispositivo Android tiver root, significa que o dispositivo foi alterado para ativar determinadas funcionalidades que poderão comprometer recursos da empresa e de segurança. Se vir esta mensagem, não poderá aceder aos recursos da empresa enquanto o problema não for resolvido.
+Quando o dispositivo Android tem root, significa que foi alterado para ativar determinadas funcionalidades que poderão comprometer recursos da empresa e de segurança. Se vir esta mensagem, não poderá aceder aos recursos da empresa enquanto o problema não for corrigido.
 
 Se achar que não fez nada que tenha levado ao rooting deliberado do dispositivo, veja estes motivos adicionais que podem ter levado ao rooting:
 
 - Poderá ter instalada uma aplicação no seu dispositivo que o software de deteção de root pensa ser um risco de segurança. Se vir esta mensagem depois de instalar uma aplicação, pode experimentar desinstalar a aplicação para ver se ajuda.
 
-- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Contacte o seu administrador de TI para obter ajuda. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Contacte o administrador de TI para obter ajuda. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

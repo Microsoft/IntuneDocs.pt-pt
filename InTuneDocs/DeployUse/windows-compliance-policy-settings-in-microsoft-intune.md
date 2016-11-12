@@ -1,10 +1,11 @@
 ---
 title: "Definições de política de conformidade para dispositivos Windows| Microsoft Intune"
-description: 
+description: "Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos Windows."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
 
 
 ---
@@ -70,7 +71,7 @@ As definições apresentadas nesta secção são suportadas no Windows Phone 8.1
 
   Para obter informações sobre como funciona o serviço HAS, veja [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
 ##  Definições de propriedade do dispositivo
-- **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não conforme.
+- **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme.
     É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
 - **Versão do SO máxima permitida:** quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
@@ -140,6 +141,6 @@ Para localizar a versão de SO a utilizar para as definições **SO mínimo obri
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

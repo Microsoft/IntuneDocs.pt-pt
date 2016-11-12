@@ -3,6 +3,7 @@ title: "O que acontece se instalar a aplicação do Portal da Empresa e inscreve
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/16/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
 
 
 ---
@@ -25,41 +26,40 @@ ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 Quando instalar a aplicação Portal da Empresa e inscrever o dispositivo Android no Intune, pode utilizar a aplicação Portal da Empresa para:
 
--   Aceder à rede da empresa e ao seu e-mail e ficheiros de trabalho
+-   Aceder à rede da empresa e ao seu e-mail e ficheiros de trabalho.
 
--   Obter aplicações da empresa a partir do Portal da Empresa
+-   Obter aplicações da empresa a partir do Portal da Empresa.
 
--   Configurar automaticamente a conta de e-mail empresarial
+-   Configurar automaticamente a sua conta de e-mail profissional.
 
--   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo
+-   Repor o telemóvel para as definições de fábrica em caso de perda ou roubo.
 
-Ao inscrever o seu dispositivo Android, dá permissão ao seu administrador de TI para aceder ao mesmo. O administrador de TI pode efetuar ações como:
+Ao inscrever o seu dispositivo Android, dá permissão ao administrador de TI para aceder ao mesmo. O administrador de TI pode efetuar ações como:
 
 -   Repor as predefinições do fabricante do seu dispositivo. Esta ação é útil em caso de perda ou roubo do dispositivo.
 
 -   Remover todos os dados relacionados com a empresa. Os dados e definições pessoais não são removidos.
 
--   Definir requisitos no seu dispositivo, como exigir que tenha uma palavra-passe de dispositivo ou um PIN para proteger os dados da empresa. O seu administrador de TI também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do dispositivo se tentar demasiadas vezes.
+-   Definir requisitos no seu dispositivo, como exigir que tenha uma palavra-passe de dispositivo ou um PIN para ajudar a proteger os dados da empresa. O administrador de TI também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do dispositivo se tentar demasiadas vezes.
 
--   O seu administrador de TI pode exigir que aceite os termos e condições.
+-   O administrador de TI pode exigir que aceite os termos e condições.
 
 -   Desativar a câmara (apenas em dispositivos Samsung Knox, não em dispositivos Nexus) para o impedir de tirar fotografias de material de trabalho confidencial que não deve ser partilhado.
 
 -   Exigir que todos os dados no dispositivo sejam encriptados para ajudar a proteger os mesmos em caso de perda ou roubo do dispositivo.
 
--   Após o seu dispositivo ser adicionado ao portal da empresa, este irá, aproximadamente a cada 8 horas:
+Após o seu dispositivo ser adicionado ao portal da empresa, este irá, aproximadamente a cada oito horas:
 
-    -   Transferir atualizações de políticas ou aplicações disponibilizadas pelo seu administrador de TI.
+-   Transferir atualizações de políticas ou aplicações disponibilizadas pelo administrador de TI.
 
-    -   Enviar atualizações de inventário de hardware (estas atualizações não contêm informações pessoais).
+-   Enviar atualizações de inventário de hardware. (Estas atualizações não têm informações pessoais.)
 
-    -   Enviar atualizações de inventário de aplicações da empresa (estas atualizações não contêm informações pessoais).
+-   Enviar atualizações de inventário de aplicações da empresa. (Estas atualizações não têm informações pessoais.)
 
-Precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
-
-
+Precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa Android da Microsoft, através do endereço wintunedroidfbk@microsoft.com.
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

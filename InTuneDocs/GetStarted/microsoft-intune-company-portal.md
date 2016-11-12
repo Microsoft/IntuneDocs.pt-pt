@@ -3,18 +3,19 @@ title: Portal da Empresa do Microsoft Intune| Microsoft Intune
 description: configurar o Portal da Empresa do Intune
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Algumas das tarefas que os utilizadores podem fazer no Portal da Empresa são:
 
 Para que os utilizadores possam aceder ao Portal da Empresa, tem de ser dada uma licença às conta deles para utilizar o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], que têm de ter o estado de início de sessão definido como **Permitido**. Saiba mais sobre como [adicionar utilizadores](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) e [atribuir licenças para a sua subscrição](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Também pode [personalizar o site do Portal da Empresa](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) com o logótipo da sua empresa, os Termos de Utilização, entre outros. Para aceder ao site do Portal da Empresa, os utilizadores acedem ao site e iniciam sessão com a conta escolar ou profissional.
 
+> [!NOTE]
+> A aplicação Portal da Empresa ainda não está disponível em alguns países.
+
+> __iOS__: a aplicação Portal da Empresa para iOS está publicada em [todos os territórios disponíveis](https://go.microsoft.com/fwlink/?linkid=831284) da App Store da Apple para iOS.
+
+> __Android__: a aplicação Portal da Empresa para Android não está disponível em Antígua e Barbuda, Antilhas Holandesas, Aruba, Benim, Burquina Faso, Camboja, China, Cuba, Gabão, Guiné-Bissau, Haiti, Irão, Laos, Mali, Mianmar (Birmânia), Moçambique, Níger, Papua-Nova Guiné, Sudão, Togo. Nestes países, uma solução alternativa é [efetuar sideload da versão para Android da aplicação Portal da Empresa](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
 ### Consulte também
 [What to know before you start Microsoft Intune (O que deve saber antes de iniciar o Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
