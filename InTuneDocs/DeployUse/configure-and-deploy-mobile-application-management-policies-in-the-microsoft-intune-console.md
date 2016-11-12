@@ -194,6 +194,6 @@ Nos casos em que o dispositivo ou o utilizador recebe duas políticas em conflit
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
