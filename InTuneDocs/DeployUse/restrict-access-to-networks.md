@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Restringir o acesso às redes com Cisco ISE | Microsoft Intune"
 description: "Utilize o Cisco ISE com o Intune para que os dispositivos sejam inscritos no Intune e estejam em conformidade com as políticas antes de acederem ao Wi-Fi e à VPN que são controlados pelo Cisco ISE."
@@ -17,20 +18,69 @@ translationtype: Human Translation
 ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
 ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
 
+||||||| merged common ancestors
+---
+title: "Restringir o acesso às redes com Cisco ISE | Microsoft Intune"
+description: "Utilize o Cisco ISE com o Intune para que os dispositivos sejam inscritos no Intune e estejam em conformidade com as políticas antes de acederem ao Wi-Fi e à VPN que são controlados pelo Cisco ISE."
+keywords: 
+author: nbigman
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/05/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
+ms.reviewer: muhosabe
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+
+=======
+---
+title: "Restringir o acesso às redes com Cisco ISE | Microsoft Intune"
+description: "Utilize o Cisco ISE com o Intune para que os dispositivos sejam inscritos no Intune e estejam em conformidade com as políticas antes de acederem ao Wi-Fi e à VPN que são controlados pelo Cisco ISE."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 10/05/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
+ms.reviewer: muhosabe
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # Utilizar o Cisco ISE com o Microsoft Intune
+||||||| merged common ancestors
+
+# Utilizar o Cisco ISE com o Microsoft Intune
+=======
+
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Utilizar o Cisco ISE com o Microsoft Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 A integração do Intune com o Cisco Identity Services Engine (ISE) permite-lhe criar políticas de rede no seu ambiente de ISE utilizando o estado de inscrição de dispositivos e de conformidade do Intune. Pode utilizar estas políticas para garantir que o acesso à rede da sua empresa está limitado aos dispositivos geridos pelo Intune e em conformidade com as políticas do Intune.
 
-## Passos de configuração
+## <a name="configuration-steps"></a>Passos de configuração
 
 Para ativar esta integração, não precisa de efetuar qualquer configuração no seu inquilino do Intune. Terá de fornecer permissões ao servidor do Cisco ISE para aceder ao inquilino do Intune. Depois de o fazer, ocorre a restante configuração no servidor do Cisco ISE. Este artigo dá instruções sobre como fornecer o servidor do ISE com permissões para aceder ao seu inquilino do Intune.
 
-### Passo 1: gerir os certificados
+### <a name="step-1-manage-the-certificates"></a>Passo 1: gerir os certificados
 Exporte o certificado da consola do Azure Active Directory (Azure AD) e, em seguida, importe-o para a loja de Certificados Fidedignos da consola do ISE:
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. Execute o Internet Explorer como administrador e inicie sessão na consola do Azure AD.
@@ -47,7 +97,7 @@ Exporte o certificado da consola do Azure Active Directory (Azure AD) e, em segu
 
    g. A partir da consola do ISE, importe o certificado do Intune (o ficheiro que exportou) para o  armazenamento **Certificados Fidedignos**.
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Inicie sessão na consola do Azure AD.
 
@@ -64,7 +114,7 @@ b. Selecione o ícone de cadeado &gt;  **Mais informações**.
 > Verifique a data de expiração do certificado, porque terá de exportar e importar um novo certificado quando este expirar.
 
 
-### Obter um certificado autoassinado do ISE 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>Obter um certificado autoassinado do ISE 
 
 1.  Na consola do ISE, vá para **Administração** > **Certificados** > **Certificados de Sistema** > **Gerar Certificado Autoassinado**.  
 2.       Exporte o certificado autoassinado.
@@ -75,7 +125,7 @@ b. Selecione o ícone de cadeado &gt;  **Mais informações**.
 Certifique-se de que todo o texto é uma linha única
 
 
-### Passo 2: criar uma aplicação para ISE no seu inquilino do Azure AD
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>Passo 2: criar uma aplicação para ISE no seu inquilino do Azure AD
 1. Na consola do Azure AD, escolha **Aplicações** > **Adicionar uma Aplicação** > **Adicionar uma aplicação que a minha organização está a desenvolver**.
 2. Forneça um nome e um URL para a aplicação. O URL pode ser o Web site da sua empresa.
 3. Transfira o manifesto da aplicação (um ficheiro JSON).
@@ -99,7 +149,7 @@ Certifique-se de que todo o texto é uma linha única
 |Ponto final de tokens de OAuth 2.0|URL de Emissão de tokens|
 |Atualize o seu código com o seu ID de Cliente|ID de Cliente|
 
-### Passo 3: carregar o certificado autoassinado a partir do ISE para a aplicação ISE que criou no Azure AD
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Passo 3: carregar o certificado autoassinado a partir do ISE para a aplicação ISE que criou no Azure AD
 1.     Obtenha o thumbprint e o valor do certificado codificado base64 a partir do ficheiro de certificado público .cer X509. Este exemplo utiliza o PowerShell:
    
       
@@ -136,7 +186,7 @@ Por exemplo:
 > KeyCredentials é uma coleção, pelo que pode carregar vários certificados X.509 para cenários de rollover ou eliminar certificados em cenários de compromisso.
 
 
-### Passo 4: configurar as definições de ISE
+### <a name="step-4-configure-ise-settings"></a>Passo 4: configurar as definições de ISE
 Na consola de administração de ISE, forneça estes valores de definição:
   - **Tipo de Servidor**: o Gestor de Dispositivos Móveis
   - **Tipo de autenticação**: OAuth – Credenciais de Cliente
@@ -147,7 +197,7 @@ Na consola de administração de ISE, forneça estes valores de definição:
 
 
 
-## As informações partilhadas entre o seu inquilino do Intune e o servidor de Cisco ISE
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>As informações partilhadas entre o seu inquilino do Intune e o servidor de Cisco ISE
 Esta tabela lista as informações partilhadas entre o seu inquilino do Intune e o servidor do Cisco ISE para dispositivos geridos pelo Intune.
 
 |Propriedade|  Descrição|
@@ -166,7 +216,7 @@ Esta tabela lista as informações partilhadas entre o seu inquilino do Intune e
 |lastContactTimeUtc|A data e a hora em que o dispositivo fez o registo pela última vez no serviço de gestão do Intune.
 
 
-## Experiência de utilizador
+## <a name="user-experience"></a>Experiência de utilizador
 
 Quando um utilizador tenta aceder aos recursos através de um dispositivo não inscrito, recebe uma linha de comandos para a inscrição, tal como a mostrada aqui:
 
@@ -174,20 +224,28 @@ Quando um utilizador tenta aceder aos recursos através de um dispositivo não i
 
 Quando o utilizador opta pela inscrição, é redirecionado para o processo de inscrição do Intune. A experiência de inscrição do utilizador para o Intune é descrita nos seguintes tópicos:
 
-- [Inscrever o dispositivo Android no Intune](/intune/enduser/enroll-your-device-in-Intune-android)</br>
-- [Inscrever o dispositivo iOS no Intune](/intune/enduser/enroll-your-device-in-intune-ios)</br>
-- [Inscrever o dispositivo Mac OS X no Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
-- [Inscrever o dispositivo Windows no Intune](/intune/enduser/enroll-your-device-in-intune-windows)</br>
+- [Inscrever o seu dispositivo Android no Intune](/intune/enduser/enroll-your-device-in-Intune-android)</br>
+- [Inscrever o seu dispositivo iOS no Intune](/intune/enduser/enroll-your-device-in-intune-ios)</br>
+- [Inscrever o seu dispositivo Mac OS X no Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
+- [Inscrever o seu dispositivo Windows no Intune](/intune/enduser/enroll-your-device-in-intune-windows)</br>
 
 Também existe um [conjunto transferível de instruções de inscrição](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) que pode utilizar para criar orientações personalizadas para a sua experiência de utilizador.
 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 
+<<<<<<< HEAD
 [Guia do Administrador do Motor dos Serviços de Identidade Cisco, Versão 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
+||||||| merged common ancestors
+[Guia do Administrador do Motor dos Serviços de Identidade Cisco, Versão 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
+
+=======
+[Cisco Identity Services Engine Administrator Guide, Release 2.1 (Guia do Administrador do Motor de Serviços de Identidade Cisco, Versão 2.1 – em inglês)](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

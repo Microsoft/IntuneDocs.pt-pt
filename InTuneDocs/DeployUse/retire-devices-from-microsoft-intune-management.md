@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Extinguir dispositivos | Microsoft Intune
 description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
@@ -17,12 +18,66 @@ translationtype: Human Translation
 ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 834f20a0280c2e3c4301e1a0769ed44c82a6bad0
 
+||||||| merged common ancestors
+---
+title: Extinguir dispositivos | Microsoft Intune
+description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
+keywords: 
+author: NathBarn
+manager: angrobe
+ms.date: 07/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
+
+=======
+---
+title: Extinguir dispositivos | Microsoft Intune
+description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 07/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 834f20a0280c2e3c4301e1a0769ed44c82a6bad0
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
+||||||| merged common ancestors
 
+# Extinguir dispositivos da gestão do Intune
+=======
+
+# <a name="retire-devices-from-intune-management"></a>Extinguir dispositivos da gestão do Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+
+<<<<<<< HEAD
 # <a name="retire-devices-from-intune-management"></a>Extinguir dispositivos da gestão do Intune
 
 Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. Poderá ter de extinguir um dispositivo por vários motivos:
+||||||| merged common ancestors
+Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. Poderá ser necessário extinguir um dispositivo por vários motivos:
+=======
+Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. Poderá ter de extinguir um dispositivo por vários motivos:
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 -   O utilizador sai da empresa de forma planeada (saída “gerida”)
 -   O utilizador sai abruptamente (é despedido, despede-se, etc.).
@@ -65,11 +120,27 @@ Também deve revogar a licença da conta de utilizador do Intune do empregado. E
 ## <a name="retire-hardware"></a>Extinguir hardware
 Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes casos, [repor as definições de fábrica](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) com uma limpeza completa remove todos os dados e retira o dispositivo do Intune. Em seguida, pode eliminar o hardware de acordo com a política da sua empresa.
 
+<<<<<<< HEAD
 ### <a name="see-also"></a>Consulte também
 [Ajudar a proteger os seus dados com a eliminação completa ou seletiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 
 
+||||||| merged common ancestors
+### Consulte também
+[Ajudar a proteger os dados com a eliminação completa ou seletiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
+
+=======
+### <a name="see-also"></a>Consulte também
+[Ajudar a proteger os seus dados com a eliminação completa ou seletiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Aug16_HO4-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 

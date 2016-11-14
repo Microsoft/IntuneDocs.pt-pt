@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
 description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
@@ -17,11 +18,61 @@ translationtype: Human Translation
 ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
+||||||| merged common ancestors
+---
+title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
+description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
+keywords: 
+author: karthikaraman
+manager: angrobe
+ms.date: 07/18/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+
+=======
+---
+title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
+description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 07/18/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gerir aplicações iOS
+||||||| merged common ancestors
+
+# Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune
+## Gerir aplicações iOS
+=======
+
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune
+## <a name="manage-ios-apps"></a>Gerir aplicações iOS
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 A proteção dos dados da sua empresa inclui garantir que as transferências de ficheiros estão limitadas a aplicações que são geridas por si.  Pode gerir aplicações iOS das seguintes formas:
 
 -   Evite a perda de dados da empresa ao configurar uma política de MAM para as aplicações, que serão denominadas aplicações **geridas por políticas**.
@@ -75,6 +126,12 @@ Esta configuração é necessária para os dispositivos geridos por uma soluçã
 [Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Jul16_HO5-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 

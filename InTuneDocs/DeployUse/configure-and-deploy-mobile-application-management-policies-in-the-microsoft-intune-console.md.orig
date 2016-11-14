@@ -1,3 +1,44 @@
+<<<<<<< HEAD
+---
+title: "Configurar políticas de MAM na consola do Intune | Microsoft Intune"
+description: "As políticas de gestão de aplicações móveis no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 09/06/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
+ms.reviewer: joglocke
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+
+||||||| merged common ancestors
+---
+title: "Configurar políticas de MAM na consola do Intune | Microsoft Intune"
+description: "As políticas de gestão de aplicações móveis no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 09/06/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
+ms.reviewer: joglocke
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+
+=======
 ---
 title: "Configurar políticas de MAM na consola do Intune | Microsoft Intune"
 description: "As políticas de gestão de aplicações móveis no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa."
@@ -17,10 +58,19 @@ translationtype: Human Translation
 ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
+
+# Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
+||||||| merged common ancestors
+
+# Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
+=======
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 As políticas de gestão de aplicações móveis (MAM) no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa. Por exemplo, pode restringir operações de corte, cópia e colagem numa aplicação gerida ou configurar uma aplicação para abrir todas as ligações num browser gerido.
 
 As políticas de gestão de aplicações móveis suportam:

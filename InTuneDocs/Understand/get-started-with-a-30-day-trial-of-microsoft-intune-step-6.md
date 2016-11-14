@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Outras opções e extras para avaliações do Intune | Microsoft Intune"
 description: "Descreve os alertas, as notificações, os relatórios e as capacidades gerais do Intune que é necessário saber quando se inscreve numa avaliação gratuita de 30 dias do Intune"
@@ -17,12 +18,66 @@ translationtype: Human Translation
 ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: ede6429d334608a326c6c2eed311df37ab9e344b
 
+||||||| merged common ancestors
+---
+title: "Outras opções e extras para avaliações do Intune | Microsoft Intune"
+description: "Descreve os alertas, as notificações, os relatórios e as capacidades gerais do Intune que é necessário saber quando se inscreve numa avaliação gratuita de 30 dias do Intune"
+keywords: 
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
+
+=======
+---
+title: "Outras opções e extras para avaliações do Intune | Microsoft Intune"
+description: "Descreve os alertas, as notificações, os relatórios e as capacidades gerais do Intune que é necessário saber quando se inscreve numa avaliação gratuita de 30 dias do Intune"
+keywords: 
+author: lindavr
+ms.author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ede6429d334608a326c6c2eed311df37ab9e344b
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
+||||||| merged common ancestors
 
+# Outras opções e extras para subscrições de avaliação do Intune
+=======
+
+# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Outras opções e extras para subscrições de avaliação do Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+
+<<<<<<< HEAD
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Outras opções e extras para subscrições de avaliação do Intune
 
 ## <a name="alerts-notifications-and-reports"></a>Alertas, notificações e relatórios
+||||||| merged common ancestors
+## Alertas, notificações e relatórios
+=======
+## <a name="alerts-notifications-and-reports"></a>Alertas, notificações e relatórios
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 Na consola de administração do Intune , os **alertas** são utilizados para aceder rapidamente ao estado de funcionamento geral dos dispositivos geridos na sua organização. Pode configurar e personalizar alertas para que comuniquem e apresentem apenas as informações de que precisa para a sua organização. Pode definir se um alerta é ativado ou desativado, configurar a gravidade, utilizar o limiar de apresentação para determinar a frequência com que um evento de alerta tem de ser acionado antes de o alerta ser apresentado e pode também configurar definições específicas para determinados tipos de alertas.
 
 As**Notificações** são e-mails utilizados para informar os administradores (e outros utilizadores) quando determinados tipos de alertas são acionados.
@@ -58,6 +113,12 @@ Parabéns! Acabou de concluir as instruções da *avaliação do Microsoft Intun
 >[&larr; **Inscrever dispositivos**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)     [**Próximos passos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)  
 
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Aug16_HO2-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 

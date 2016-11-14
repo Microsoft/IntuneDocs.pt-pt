@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune"
 description: "Como se inscrever numa avaliação de 30 dias gratuita do Intune e o que tem de considerar antes de se inscrever"
@@ -17,10 +18,58 @@ translationtype: Human Translation
 ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
 
+||||||| merged common ancestors
+---
+title: "Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune"
+description: "Como se inscrever numa avaliação de 30 dias gratuita do Intune e o que tem de considerar antes de se inscriver"
+keywords: 
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
+
+=======
+---
+title: "Inscrever-se para uma avaliação de 30 dias do Microsoft Intune | Microsoft Intune"
+description: "Como se inscrever numa avaliação de 30 dias gratuita do Intune e o que tem de considerar antes de se inscrever"
+keywords: 
+author: lindavr
+ms.author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>Inscrever-se para uma avaliação de 30 dias do Microsoft Intune
+||||||| merged common ancestors
+
+# Inscrever-se para uma avaliação de 30 dias do Microsoft Intune
+=======
+
+# <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>Inscrever-se para uma avaliação de 30 dias do Microsoft Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 Configurar uma avaliação gratuita de 30 dias do Microsoft Intune para gerir os seus dispositivos móveis e computadores é um processo rápido e fácil. Com apenas alguns passos simples na avaliação, pode adicionar até 100 utilizadores e dispositivos, configurar grupos, configurar políticas de conformidade, bem como inscrever e gerir dispositivos móveis e computadores. Neste tópico, irá aprender as noções básicas para ter acesso a uma avaliação do Intune operacional e obter uma descrição geral do serviço que lhe permitirá avaliar as funcionalidades e capacidades do Intune.
 
@@ -61,6 +110,12 @@ Parabéns! Acabou de concluir o passo 1 das instruções da *avaliação do Micr
 >[&larr; **Introdução**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Adicionar utilizadores** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Aug16_HO2-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 
