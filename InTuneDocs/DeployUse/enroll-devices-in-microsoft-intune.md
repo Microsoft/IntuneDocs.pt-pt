@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 
 ---
@@ -100,7 +100,7 @@ Também pode utilizar o Microsoft Intune para gerir PCs Windows com o software d
 
  - Reportar inventários de software e hardware
  - Instalar aplicações de ambiente de trabalho (por exemplo, ficheiros .exe e .msi)
- - Definições de firewall
+ - Gerir as definições da firewall
 
 Não é possível eliminar completamente os PCs geridos com o software de cliente do Intune, embora a eliminação seletiva esteja disponível. Os PCs geridos com o software de cliente do Intune não podem tirar partido de muitas funcionalidades de gestão do Intune, tal como o acesso condicional, as definições de VPN e Wi-Fi ou a implementação de certificados e a configuração de e-mail.
 
@@ -119,6 +119,6 @@ O Intune pode gerir as seguintes plataformas de dispositivos:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
