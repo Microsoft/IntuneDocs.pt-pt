@@ -122,6 +122,6 @@ Para obter uma cópia transferível deste guia completo, visite a [TechNet Galle
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

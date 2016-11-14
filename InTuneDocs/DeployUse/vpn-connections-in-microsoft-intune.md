@@ -3,8 +3,9 @@ title: "Ligações VPN | Microsoft Intune"
 description: "Utilize Perfis de VPN para implementar definições da VPN em utilizadores e dispositivos na sua organização."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ O Intune suporta a criação de perfis de VPN que utilizem os seguintes tipos de
 
 
 
-Tipo de ligação |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
+Tipo de ligação |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Sim |Sim   |Não    |     Não    |Não  |Não    | Sim, (apenas OMA-URI, Mobile)|     
-Cisco (IPsec)|Sim |Não   |Não  |  Não|Não  |Não | Não|
-Citrix|Sim |Não   |Não  |  Não|Não  |Não | Não|
-Pulse Secure|Sim  |Sim |Sim   |Não  |Sim  |Sim| Sim|        
-F5 Edge Client|Sim |Sim |Sim |Não  |Sim  |   Sim |  Sim|   
-Dell SonicWALL Mobile Connect|Sim |Sim |Sim |Não  |Sim |Sim |Sim|         
-CheckPoint Mobile VPN|Sim |Sim |Sim |Sim |Sim|Sim|Sim|
-Microsoft SSL (SSTP)|Não |Não |Não |Não |Não|Não|VPNv1 OMA-URI *|
-Microsoft Automatic|Não |Não |Não |Não |Não|Sim (OMA-URI)|Sim|
-IKEv2|Perfil personalizado iOS|Não |Não |Não |Não|Sim (OMA-URI)|Sim|
-PPTP|Perfil personalizado iOS|Não |Não |Não |Não|Não|Sim|
-L2TP|Perfil personalizado iOS|Não |Não |Não |Não|Sim (OMA-URI)|Sim|
+Cisco AnyConnect|Sim |Sim   |Não    |Não  |Não    | Sim, (apenas OMA-URI, Mobile)|     
+Cisco (IPsec)|Sim |Não   |Não  |Não  |Não | Não|
+Citrix|Sim |Não   |Não  |Não  |Não | Não|
+Pulse Secure|Sim  |Sim |Sim   |Sim  |Sim| Sim|        
+F5 Edge Client|Sim |Sim |Sim |Sim  |   Sim |  Sim|   
+Dell SonicWALL Mobile Connect|Sim |Sim |Sim |Sim |Sim |Sim|         
+CheckPoint Mobile VPN|Sim |Sim |Sim |Sim|Sim|Sim|
+Microsoft SSL (SSTP)|Não |Não |Não |Não|Não|VPNv1 OMA-URI *|
+Microsoft Automatic|Não |Não |Não |Não|Sim (OMA-URI)|Sim|
+IKEv2|Perfil personalizado iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
+PPTP|Perfil personalizado iOS|Não |Não |Não|Não|Sim|
+L2TP|Perfil personalizado iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
 
 \* Sem definições adicionais, que estão disponíveis para o Windows 10.
 
@@ -96,6 +97,8 @@ O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e 
 
 > [!Note]
 > Um perfil da VPN para dispositivos Android for Work irá ativar uma ligação VPN apenas para aplicações que estejam instaladas no perfil de trabalho do dispositivo.
+>
+> Alguns tipos de ligação VPN suportam VPN por aplicação para dispositivos Android for Work e para a ativação da VPN por aplicação em aplicações distribuídas através do Intune.  
 
 3. Utilize a seguinte tabela que o ajuda a configurar as definições de perfil da VPN:
 
@@ -111,7 +114,7 @@ Nome da definição  |Mais informações
 **Enviar todo o tráfego de rede através da ligação VPN**     |Se selecionar esta opção, todo o tráfego de rede será enviado através da ligação VPN. Se não selecionar esta opção, o cliente negociará dinamicamente as rotas de divisão do túnel ao estabelecer a ligação com o servidor VPN de terceiros. Apenas as ligações à rede da empresa são enviadas através de um túnel VPN. Os túneis VPN não são utilizados ao ligar-se a recursos na Internet.
 **Método de autenticação**| Selecione o método de autenticação utilizado pela ligação VPN: **Certificados** ou **Nome de Utilizador e Palavra-passe**. (O **Nome de Utilizador e a Palavra-passe** não estarão disponíveis se o tipo de ligação for Cisco AnyConnect.) A opção **Método de autenticação** não está disponível para o Windows 8.1.
 **Memorizar as credenciais do utilizador sempre que iniciar sessão**|Selecione este opção para garantir que as credenciais do utilizador são memorizadas, para que o mesmo não tenha de introduzi-las sempre que for efetuada uma ligação.
-**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação VPN. Para obter mais informações sobre como utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.
+**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação VPN. Para mais informações sobre como utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.
 **Função**| Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure**.
 **Realm**|Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure**.
 **Grupo ou domínio de início de sessão**|Especifique o nome do grupo ou domínio de início de sessão ao qual pretende ligar-se. Esta opção só é apresentada se o tipo de ligação for **Dell SonicWALL Mobile Connect**.
@@ -158,7 +161,7 @@ Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
 1. Na página de configuração de políticas, localize **Regras a pedido para esta ligação VPN**. As colunas têm a etiqueta **Correspondência**, a condição que as regras verificam, e **Ação**, a ação que a política aciona quando a condição é cumprida. 
 2. Escolha **Adicionar** para criar uma regra. Existem dois tipos de correspondências que pode configurar na regra. Só pode configurar um dos seguintes tipos por regra.
   - **SSIDs**, que se referem às redes sem fios. 
-  - **Domínios de pesquisa DNS**, que são...  Pode utilizar nomes de domínio completamente qualificados como *equpa.corp.contoso.com* ou utilizar domínios como *contoso.com*, que é o equivalente a utilizar * *.contoso.com*.
+  - **Domínios de pesquisa DNS**, que são...  Pode utilizar nomes de domínio completamente qualificados como *equipa.corp.contoso.com* ou utilizar domínios como *contoso.com*, que é o equivalente a utilizar * *.contoso.com*.
 3. Opcional: forneça uma pesquisa de cadeia de URL, que é um URL que a regra utiliza como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a VPN será estabelecida e ligará o dispositivo ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
 4. Escolha uma das seguintes ações:
   - **Ligar**
@@ -178,7 +181,7 @@ As regras específicas do domínio são avaliadas antes das regras de todos os d
 
 1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
 
-2.  Na caixa de diálogo **Gerir a Implementação** , para:
+2.  Na caixa de diálogo **Gerir a Implementação**, para:
 
     -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Adicionar** &gt; **OK**.
 

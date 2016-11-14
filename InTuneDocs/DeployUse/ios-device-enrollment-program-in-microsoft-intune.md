@@ -174,6 +174,6 @@ A partir de novembro, a gestão de grupos de dispositivos irá mudar para o Azur
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

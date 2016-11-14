@@ -2,7 +2,8 @@
 title: Criar um perfil de trabalho e inscrever o seu dispositivo no Intune | Microsoft Intune
 description: Descreve como encriptar dispositivos Android
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Criar um perfil de trabalho e inscrever o seu dispositivo no Intune
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Criar um perfil de trabalho e inscrever o seu dispositivo no Intune
 
-Um perfil de trabalho é algo que configura no seu dispositivo para lhe permitir aceder aos seus ficheiros, aplicações ou e-mail escolares ou profissionais. Pode saber mais sobre [o que acontece quando cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).
+Inscrever o seu dispositivo Android dá-lhe acesso a e-mails da empresa, aplicações e outros dados de trabalho. Como parte da inscrição, configura um perfil de trabalho, que separa os dados pessoais no seu dispositivo dos dados de trabalho. O administrador de TI apenas pode gerir o perfil de trabalho, que contém os seus dados de trabalho. O administrador de TI não pode gerir os dados pessoais no seu dispositivo. Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).
 
 Para criar um perfil de trabalho:
 
@@ -56,11 +57,11 @@ Para criar um perfil de trabalho:
 
     Verá duas mensagens com as seguintes informações "A configurar o seu perfil de trabalho" e "A inscrever o seu dispositivo".
 
-8. No ecrã **Está a meio!**, toque no ícone da aplicação Portal da Empresa que tem o distintivo.
+8. No ecrã **Está a meio!**, aguarde alguns segundos até que aplicação Portal da Empresa seja aberta.
 
     ![Toque na aplicação Portal da Empresa com o distintivo](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. No ecrã **Bem-vindo** do Portal da Empresa para Android, toque em **Iniciar sessão** e, em seguida, inicie sessão com a sua conta escolar ou profissional.
+9. No ecrã **Bem-vindo** do Portal da Empresa para Android, toque em **Iniciar sessão** e, em seguida, inicie sessão com a mesma conta escolar ou profissional que utilizou para iniciar sessão anteriormente neste processo.
 
 10. No ecrã **Configuração de Acesso à Empresa**, confirme que a Configuração do seu Perfil de Trabalho está concluída e, em seguida, toque em **CONTINUAR**.
 
@@ -72,15 +73,15 @@ Para criar um perfil de trabalho:
 
     ![A Configuração de Acesso à Empresa mostra que o perfil de trabalho e a inscrição estão concluídos](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. No ecrã **Configuração de Acesso à Empresa concluída**, toque em **CONCLUÍDO**.
+12. No ecrã **Configuração de Acesso à Empresa concluída**, toque em **CONCLUÍDO**. Poderá ter de concluir passos adicionais se o administrador de TI tiver adicionado outros requisitos.
 
     ![A Configuração de Acesso à Empresa está concluída](./media/andr-afw-company-access-setup-complete.png)
 
-    É direcionado para a Play Store for Work, onde pode obter aplicações de empresa.
+    Agora, pode obter aplicações de empresa na Play Store for Work.
 
     ![Página de aplicações Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 

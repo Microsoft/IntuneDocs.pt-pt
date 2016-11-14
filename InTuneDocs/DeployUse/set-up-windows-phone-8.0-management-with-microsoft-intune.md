@@ -3,6 +3,7 @@ title: "Configurar a gestão do Windows Phone 8.0 | Microsoft Intune"
 description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Windows Phone 8.0 com o Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,9 +25,9 @@ ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 O Windows Phone 8.0 requer um certificado da Symantec para instalar a aplicação Portal da Empresa do Intune e permitir a gestão de dispositivos. Também é necessário um certificado para assinar aplicações de linha de negócio. O tópico seguinte é apenas para o Windows Phone 8.0. Para gerir o Windows Phone 8.1 ou posterior, incluindo o Windows 10 Mobile, consulte [Configurar a inscrição do Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md).
 
 > [!IMPORTANT]
-> A partir de setembro de 2016, a aplicação Portal da empresa para Windows 8.0 e Windows Phone 8.0 deixará de estar disponível para transferência.
+> A partir de setembro de 2016, a aplicação Portal da Empresa para Windows Phone 8 e Windows 8 deixa de estar disponível para transferência.
 
--   **Windows Phone 8** - Certificado necessário
+-   **Windows Phone 8** – Certificado necessário
 -   O **Windows Phone 8.1 e o Windows 10 Mobile** apenas requerem um certificado se:
 
     -   Pretender implementar a aplicação Portal da Empresa utilizando o Intune
@@ -56,8 +57,8 @@ Os requisitos de configuração da gestão de dispositivos móveis Windows Phone
 
         |Nome do Anfitrião|Aponta para|TTL|
         |-------------|-------------|-------|
-        |enterpriseenrollment.dominio_da_empresa.com|enterpriseenrollment-s.manage.microsoft.com |1 Hora|
-        |enterpriseregistration.dominio_da_empresa.com|enterpriseregistration.windows.net|1 Hora|
+        |enterpriseenrollment.dominio_empresa.com|enterpriseenrollment-s.manage.microsoft.com |1 Hora|
+        |enterpriseregistration.dominio_empresa.com|enterpriseregistration.windows.net|1 Hora|
         Por exemplo, se o Web site da sua empresa fosse contoso.com, criaria um CNAME em DNS que redireciona EnterpriseEnrollment.contoso.com para manage.microsoft.com. Se existir mais do que um domínio verificado, crie um registo CNAME para cada domínio.
 
         -   `enterpriseenrollment-s.manage.microsoft.com` – Suporta o redirecionamento para o serviço Intune com reconhecimento de domínio a partir do nome de domínio do e-mail
@@ -78,7 +79,7 @@ Os requisitos de configuração da gestão de dispositivos móveis Windows Phone
 
     1.  **Aderir ao Windows Phone Dev Center** Adira ao [Windows Phone Dev Center](http://go.microsoft.com/fwlink/?LinkId=268442) ao utilizar as informações de conta empresarial quando iniciar sessão para comprar a sua conta de empresa. Este pedido terá de ser autorizado por um responsável da empresa antes de poder receber um certificado de assinatura com código.
 
-    2.  **Obter um certificado empresarial da Symantec** Compre um certificado no [Web site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) .
+    2.  **Obter um certificado empresarial da Symantec** Compre um certificado no [Web site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
 
     3.  **Importar certificados** Quando o pedido for aprovado, receberá um e-mail com instruções para importar os certificados. Siga as instruções no e-mail para importar os certificados.
 
@@ -183,6 +184,6 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows Phone 8
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

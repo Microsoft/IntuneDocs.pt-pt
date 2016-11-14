@@ -3,6 +3,7 @@ title: "O que acontece se anular a inscrição do seu dispositivo iOS no Intune?
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
 
 
 ---
@@ -25,17 +26,17 @@ ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
 
 Ao anular a inscrição do dispositivo iOS no Intune:
 
--   O seu dispositivo deixará de ser apresentado no Portal da Empresa.
+-   O seu dispositivo deixa de ser apresentado no Portal da Empresa.
 
 -   Deixará de poder instalar aplicações a partir do Portal da Empresa.
 
 -   As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
 
--   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou web sites internos, no seu dispositivo.
+-   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
 
 -   Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
 
--   É possível que deixe de conseguir ligar-se à rede da sua empresa através de Wi-Fi ou de uma rede privada virtual (VPN).
+-   É possível que deixe de conseguir ligar-se à rede da sua empresa utilizando Wi-Fi ou uma rede privada virtual (VPN).
 
 -   Os perfis de e-mail da empresa são removidos do dispositivo.
 
@@ -45,8 +46,6 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 
