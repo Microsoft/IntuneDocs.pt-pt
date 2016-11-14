@@ -1,42 +1,3 @@
-<<<<<<< HEAD
----
-title: Conector do Exchange para o Exchange Online | Microsoft Intune
-description: "Ligue o Intune ao serviço do Exchange do Office 365 para suportar a gestão de dispositivos móveis (MDM) do Exchange Active Sync."
-keywords: 
-author: NathBarn
-manager: angrobe
-ms.date: 07/29/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: muhosabe
-ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: a6438bb3ca21e5c46dca5ebe69266fd9bce9a4b8
-
-||||||| merged common ancestors
----
-title: Conector do Exchange para o Exchange Online | Microsoft Intune
-description: "Ligue o Intune ao serviço do Exchange do Office 365 para suportar a gestão de dispositivos móveis (MDM) do Exchange Active Sync."
-keywords: 
-author: NathBarn
-manager: angrobe
-ms.date: 07/29/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: muhosabe
-ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: a6438bb3ca21e5c46dca5ebe69266fd9bce9a4b8
-
-=======
 ---
 title: Conector do Exchange para o Exchange Online | Microsoft Intune
 description: "Ligue o Intune ao serviço do Exchange do Office 365 para suportar a gestão de dispositivos móveis (MDM) do Exchange Active Sync."
@@ -56,19 +17,10 @@ translationtype: Human Translation
 ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
 ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
 
->>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
-<<<<<<< HEAD
-
-# Configurar o conector de serviços do Intune para o Exchange Online
-||||||| merged common ancestors
-
-# Configurar o conector de serviços do Intune para o Exchange Online
-=======
 
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Configurar o conector de serviços do Intune para o Exchange Online
->>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 Utilize estas informações para ligar o Microsoft Intune e o Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta. O Intune apenas suporta uma ligação de conector do Exchange de qualquer tipo por subscrição.
 

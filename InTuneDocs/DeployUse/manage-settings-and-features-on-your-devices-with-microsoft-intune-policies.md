@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gerir definições de dispositivos com políticas | Microsoft Intune"
 description: "Utilize o Intune para criar e implementar políticas que controlam as definições e funcionalidades em dispositivos que gere."
@@ -17,10 +18,59 @@ translationtype: Human Translation
 ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
 ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
 
+||||||| merged common ancestors
+---
+title: "Gerir definições de dispositivos com políticas | Microsoft Intune"
+description: "Utilize o Intune para criar e implementar políticas que controlam as definições e funcionalidades em dispositivos que gere."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 10/11/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
+ms.reviewer: heenamac
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
+
+=======
+---
+title: "Gerir definições de dispositivos com políticas | Microsoft Intune"
+description: "Utilize o Intune para criar e implementar políticas que controlam as definições e funcionalidades em dispositivos que gere."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 11/02/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
+ms.reviewer: heenamac
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
+ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune
+||||||| merged common ancestors
+
+# Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune
+=======
+
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 As *políticas* do Microsoft Intune são grupos de definições que controlam funcionalidades em dispositivos móveis e computadores. As políticas são criadas com modelos que contêm definições recomendadas ou personalizadas e, depois, implementadas em grupos de dispositivos ou de utilizadores.
 
 ## <a name="types-of-policies"></a>Tipos de políticas
@@ -210,6 +260,12 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
 Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Oct16_HO2-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 

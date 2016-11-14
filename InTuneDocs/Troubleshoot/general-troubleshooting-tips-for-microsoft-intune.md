@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Sugestões de resolução de problemas genéricos | Microsoft Intune"
 description: Recursos gerais para ajudar a resolver problemas com o Intune.
@@ -17,10 +18,58 @@ translationtype: Human Translation
 ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
 ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
 
+||||||| merged common ancestors
+---
+title: "Sugestões de resolução de problemas genéricos | Microsoft Intune"
+description: Recursos gerais para ajudar a resolver problemas com o Intune.
+keywords: 
+author: nbigman
+manager: angrobe
+ms.date: 07/21/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
+ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
+
+=======
+---
+title: "Sugestões de resolução de problemas genéricos | Microsoft Intune"
+description: Recursos gerais para ajudar a resolver problemas com o Intune.
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 10/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
+ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Sugestões de resolução de problemas genéricos do Microsoft Intune
+||||||| merged common ancestors
+
+# Sugestões de resolução de problemas genéricos do Microsoft Intune
+=======
+
+# <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Sugestões de resolução de problemas genéricos do Microsoft Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 Depois de implementar o Microsoft Intune, poderá deparar-se com problemas relacionados com a sua configuração ou com os clientes. Os recursos abaixo podem ajudá-lo a identificar a causa do problema para que o possa resolver.
 
 > [!NOTE]
@@ -78,22 +127,72 @@ Pode encontrar outras informações úteis nestes recursos comunitários:
 ### <a name="next-steps"></a>Passos seguintes
 Os tópicos indicados abaixo incluem ajuda para a resolução de problemas específicos. Se estas informações de resolução de problemas não o ajudarem, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
+<<<<<<< HEAD
 [Resolução de problemas do Endpoint Protection no Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
 [Resolução de problemas de acesso a recursos da empresa com o Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 
 [Resolução de problemas de implementação da aplicação no Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+||||||| merged common ancestors
+[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+=======
+[Resolução de problemas do Endpoint Protection no Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
+<<<<<<< HEAD
 [Resolução de problemas de inscrição de dispositivos no Intune](troubleshoot-device-enrollment-in-intune.md)
+||||||| merged common ancestors
+[Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+=======
+[Resolução de problemas de acesso a recursos da empresa com o Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
+<<<<<<< HEAD
 [Resolução de problemas de políticas no Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+||||||| merged common ancestors
+[Resolução de problemas de implementação de aplicações no Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+=======
+[Resolução de problemas de implementação da aplicação no Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
+<<<<<<< HEAD
 [Resolução de problemas de configuração de cliente no Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+||||||| merged common ancestors
+[Resolver problemas de inscrição de dispositivos no Intune](troubleshoot-device-enrollment-in-intune.md)
+=======
+[Resolução de problemas de inscrição de dispositivos no Intune](troubleshoot-device-enrollment-in-intune.md)
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
+<<<<<<< HEAD
+[Resolução de problemas de atualizações de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
+||||||| merged common ancestors
+[Resolver problemas de políticas no Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+=======
+[Resolução de problemas de políticas no Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+
+<<<<<<< HEAD
+||||||| merged common ancestors
+[Resolver problemas de configuração do cliente no Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+=======
+[Resolução de problemas de configuração de cliente no Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+
+<<<<<<< HEAD
+||||||| merged common ancestors
+[Resolver problemas de atualizações de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
+
+=======
 [Resolução de problemas de atualizações de software no Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
-
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Aug16_HO3-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 

@@ -1,3 +1,44 @@
+<<<<<<< HEAD
+---
+title: Instalar o software de cliente de PCs | Microsoft Intune
+description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através do software de cliente do Microsoft Intune."
+keywords: 
+author: NathBarn
+ms.author: nathbarn
+manager: arob98
+ms.date: 07/19/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
+ms.reviewer: owenyen
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 13fa09a2b029818467062a5c589292c5f0bd0a58
+
+||||||| merged common ancestors
+---
+title: Instalar o software de cliente de PCs | Microsoft Intune
+description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através do software de cliente do Microsoft Intune."
+keywords: 
+author: NathBarn
+ms.author: nathbarn
+manager: arob98
+ms.date: 07/19/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
+ms.reviewer: owenyen
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 13fa09a2b029818467062a5c589292c5f0bd0a58
+
+=======
 ---
 
 title: Instalar o software de cliente de PCs | Microsoft Intune
@@ -17,10 +58,19 @@ translationtype: Human Translation
 ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
 ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
+
+# Instalar o cliente de software do Intune em PCs Windows
+||||||| merged common ancestors
+
+# Instalar o cliente de software do Intune em PCs Windows
+=======
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 Os PCs Windows podem ser inscritos instalando o software de cliente do Intune. O software de cliente do Intune pode ser instalado das seguintes formas:
 
 - Instalado manualmente

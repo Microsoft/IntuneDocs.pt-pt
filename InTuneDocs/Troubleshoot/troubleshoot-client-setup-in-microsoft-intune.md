@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Resolver problemas de configuração do cliente | Microsoft Intune"
 description: "Resolva problemas comuns de configuração do cliente."
@@ -17,10 +18,58 @@ translationtype: Human Translation
 ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
 ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
+||||||| merged common ancestors
+---
+title: "Resolver problemas de configuração do cliente | Microsoft Intune"
+description: "Resolva problemas comuns de configuração do cliente."
+keywords: 
+author: Nbigman
+manager: angrobe
+ms.date: 08/02/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+
+=======
+---
+title: "Resolver problemas de configuração do cliente | Microsoft Intune"
+description: "Resolva problemas comuns de configuração do cliente."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 08/02/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
+ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Resolver problemas de configuração do cliente no Microsoft Intune
+||||||| merged common ancestors
+
+# Resolver problemas de configuração do cliente no Microsoft Intune
+=======
+
+# <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Resolver problemas de configuração do cliente no Microsoft Intune
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 Utilize as seguintes informações para o ajudar a resolver problemas comuns de configuração de clientes. Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
 
 ## <a name="client-installation-fails"></a>Falha na instalação do cliente
@@ -126,6 +175,12 @@ Se os problemas de instalação persistirem, contacte o Suporte, conforme descri
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Aug16_HO1-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 

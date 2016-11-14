@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Resolver problemas de acesso condicional | Microsoft Intune
 description: "O que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune."
@@ -16,10 +17,57 @@ translationtype: Human Translation
 ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
 ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
+||||||| merged common ancestors
+---
+title: Resolver problemas de acesso condicional | Microsoft Intune
+description: "O que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune."
+keywords: 
+author: karaman
+manager: angrobe
+ms.date: 07/24/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+
+=======
+---
+title: Resolver problemas de acesso condicional | Microsoft Intune
+description: "O que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune."
+keywords: 
+author: karaman
+manager: angrobe
+ms.date: 10/24/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 ---
+<<<<<<< HEAD
 
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
+||||||| merged common ancestors
+
+# Resolver problemas de acesso condicional
+=======
+
+# <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 Normalmente, um utilizador tenta aceder ao e-mail ou ao SharePoint e recebe uma mensagem para se inscrever. Esse pedido direciona o utilizador para o portal da empresa.
 
@@ -157,6 +205,12 @@ Para ativar o registo verboso:
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+<!--HONumber=Aug16_HO1-->
+=======
+<!--HONumber=Nov16_HO1-->
+>>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <!--HONumber=Nov16_HO1-->
 
