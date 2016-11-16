@@ -3,37 +3,38 @@ title: "Ativar a regra de proteção do dispositivo na política de conformidade
 description: "Ative a regra de proteção contra ameaças móveis na política de conformidade do dispositivo."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa05027e1785bb27a607aa9e31b685107a84f63f
-ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
 
 
 ---
 
-# Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade
+# <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade
 O Intune com o Lookout Mobile Threat Protection permite-lhe detetar ameaças e avaliar os riscos no dispositivo. Pode criar uma regra da política de conformidade para incluir a avaliação de riscos para determinar se o dispositivo está em conformidade. Pode utilizar a política de acesso condicional para permitir ou bloquear o acesso ao Exchange, o SharePoint e outros serviços com base na conformidade do dispositivo.
 
-Para que a deteção de ameaças do Lookout MTP influencie a política de conformidade do dispositivo:
+Para que a deteção de ameaças de dispositivos do Lookout influencie a política de conformidade do dispositivo:
 
 * A regra de **Proteção Contra Ameaças de Dispositivos** tem de ser ativada na política de conformidade.
 
 * A página **Estado do Lookout** na **Consola de Administrador do Intune** tem de apresentar a opção **Ativado**. Consulte [Enable Lookout MTP connection in Intune (Ativar a ligação do Lookout MTP ao Intune – em inglês)](enable-lookout-mtp-connection-in-intune.md) para obter mais detalhes e instruções sobre como ativar a integração do Lookout.
 
 
-Antes de criar uma regra de proteção contra ameaças de dispositivos na política de conformidade, recomendamos que [configure a sua subscrição com o Lookout MTP](set-up-your-subscription-with-lookout-mtp.md), [ative a ligação do Lookout no Intune](enable-lookout-mtp-connection-in-intune.md) e [configure a aplicação Lookout for Work](configure-and-deploy-lookout-for-work-apps.md). A regra de conformidade é aplicada apenas quando a configuração estiver concluída.
+Antes de criar uma regra de proteção contra ameaças de dispositivos na política de conformidade, recomendamos que [configure a sua subscrição para a proteção contra ameaças de dispositivos do Lookout](set-up-your-subscription-with-lookout-mtp.md), [ative a ligação do Lookout no Intune](enable-lookout-mtp-connection-in-intune.md) e [configure a aplicação Lookout for Work](configure-and-deploy-lookout-for-work-apps.md). A regra de conformidade é aplicada apenas quando a configuração estiver concluída.
 
 Para ativar a regra de proteção contra ameaças de dispositivos, pode utilizar uma política de conformidade existente ou pode criar uma política nova.
 
-Como parte da configuração do Lookout MTP, na [consola do Lookout MTP](https://aad.lookout.com), criou uma política que categoriza as várias ameaças nos níveis alto, médio e baixo. Na política de conformidade do Intune irá utilizar o nível de ameaça para configurar qual o nível de ameaça máximo permitido.
+Como parte da configuração da proteção contra ameaças de dispositivos do Lookout, na [consola do Lookout](https://aad.lookout.com), criou uma política que classifica as várias ameaças nos níveis alto, médio e baixo. Na política de conformidade do Intune irá utilizar o nível de ameaça para configurar qual o nível de ameaça máximo permitido.
 
 Na página **Políticas de Conformidade** na **Consola de administrador do Intune**, aceda a **Estado de Funcionamento do Dispositivo** e ative a regra **Proteção Contra Ameaças de Dispositivos** através da opção de alternar. Em seguida selecione o nível de ameaça máximo permitido, que será um dos seguintes:
 * **Nenhum (seguro)**: este é o nível mais seguro.  Isto significa que o dispositivo não pode ter nenhuma ameaça.  Se for encontrado qualquer nível de ameaças, o dispositivo é avaliado como não conforme.  
@@ -51,7 +52,7 @@ Poderá ver o estado de conformidade de um dispositivo na página **Todos os Dis
 
 ![captura de ecrã da página do dispositivo na consola de administração do Intune que apresenta o estado de conformidade de um dispositivo](../media/mtp/mtp-device-status-intune-console.png)
 
-## Passos seguintes
+## <a name="next-steps"></a>Passos seguintes
 * Criar uma política de acesso condicional
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange no local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
@@ -61,6 +62,6 @@ Poderá ver o estado de conformidade de um dispositivo na página **Todos os Dis
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

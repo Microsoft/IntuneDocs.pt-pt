@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
 description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
@@ -58,6 +59,47 @@ ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+---
+title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
+description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 07/18/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
+
+=======
+---
+title: "Gerir a transferência de dados entre aplicações iOS | Microsoft Intune"
+description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 11/14/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
+
+>>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
 
 ---
 <<<<<<< HEAD

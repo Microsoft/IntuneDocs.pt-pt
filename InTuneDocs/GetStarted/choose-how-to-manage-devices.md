@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: Escolher como gerir dispositivos | Microsoft Intune
 description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
@@ -57,6 +58,47 @@ ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+---
+title: Escolher como gerir dispositivos | Microsoft Intune
+description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 08/31/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
+ms.reviewer: angrobe
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
+
+=======
+---
+title: Escolher como gerir dispositivos | Microsoft Intune
+description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 11/14/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
+ms.reviewer: angrobe
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
+
+>>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
 
 ---
 <<<<<<< HEAD
@@ -110,8 +152,15 @@ Embora esta seja uma terceira opção para gerir dispositivos, fornece um conjun
 
 
 - [Gestão de dispositivos móveis do Exchange ActiveSync com o Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+<<<<<<< HEAD
 
 
+||||||| merged common ancestors
+
+
+=======
+
+>>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
 
 
 <!--HONumber=Nov16_HO1-->

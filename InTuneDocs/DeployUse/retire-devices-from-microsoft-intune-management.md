@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: Extinguir dispositivos | Microsoft Intune
 description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
@@ -58,6 +59,47 @@ ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 834f20a0280c2e3c4301e1a0769ed44c82a6bad0
 
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+---
+title: Extinguir dispositivos | Microsoft Intune
+description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 07/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 834f20a0280c2e3c4301e1a0769ed44c82a6bad0
+
+=======
+---
+title: Extinguir dispositivos | Microsoft Intune
+description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 07/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+
+>>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
 
 ---
 <<<<<<< HEAD
@@ -125,6 +167,7 @@ Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes 
 [Ajudar a proteger os seus dados com a eliminação completa ou seletiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 
 
+<<<<<<< HEAD
 ||||||| merged common ancestors
 ### Consulte também
 [Ajudar a proteger os dados com a eliminação completa ou seletiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -143,4 +186,9 @@ Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes 
 =======
 <!--HONumber=Nov16_HO1-->
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+<!--HONumber=Nov16_HO1-->
+=======
+<!--HONumber=Nov16_HO3-->
+>>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
 
