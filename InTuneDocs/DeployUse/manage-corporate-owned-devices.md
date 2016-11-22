@@ -1,8 +1,9 @@
 ---
 title: "Gerir dispositivos pertencentes à empresa | Microsoft Intune"
-description: "Os dispositivos pertencentes à empresa (COD) podem ser colocados em gestão de variadas formas, consoante o dispositivo, a forma como foi comprado e as necessidades da sua organização."
+description: "Inscreva dispositivos da empresa de várias formas com base no tipo de dispositivo, na forma como foi comprado e nas necessidades da organização."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,46 +14,53 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
 
-# Inscrever dispositivos pertencentes à empresa com o Microsoft Intune
-Os dispositivos pertencentes à empresa (COD) ou à organização podem ser colocados em gestão pelo Intune de variadas formas consoante o dispositivo, de como foi comprado e das necessidades da organização. Os dispositivos pertencentes à empresa também podem ser inscritos e geridos através da instalação da aplicação Portal da Empresa, tal como nos cenários "bring your own device" (BYOD).
+# <a name="enroll-corporateowned-devices-by-using-intune"></a>Inscrever dispositivos pertencentes à empresa através do Intune
 
-## Dispositivos iOS pertencentes à empresa
-Estes métodos de inscrição são ideais para cenários "Choose your own device" (CYOD), em que a organização compra os dispositivos para os utilizadores, mas pretende manter a gestão dos mesmos. Se a sua organização tiver comprado dispositivos iOS, pode pré-configurar a inscrição para que o dispositivo seja gerido desde a primeira vez que o respetivo utilizador o ligar. O Intune suporta a inscrição através do [Programa de Registo de Dispositivos da Apple (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) ou da ferramenta Apple Configurator em execução num computador Mac para inscrição [direta](ios-direct-enrollment-in-microsoft-intune.md) ou com o [Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+Pode inscrever dispositivos pertencentes à empresa ou à organização para os gerir com o Intune de várias formas, consoante o tipo de dispositivo, como foi comprado e as necessidades da organização. Também pode instalar a aplicação do Portal da Empresa para gerir dispositivos da empresa, como num cenário "traga o seu próprio dispositivo" (BYOD).
 
-[Inscrever dispositivos iOS pertencentes à empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+## <a name="enroll-corporateowned-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa
 
-## Gestor de inscrição de dispositivos
-As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador, denominada conta do gestor de inscrição de dispositivos. Após a criação de uma conta de gestor de inscrição de dispositivos, essa conta pode ser utilizada por um gestor para inscrever mais do que os cinco dispositivos padrão permitidos por predefinição para os utilizadores normais. A inscrição de dispositivos com um gestor de inscrição de dispositivos funciona apenas para dispositivos que não sejam utilizados por um utilizador específico. Estes dispositivos são ideais para aplicações de ponto de venda ou utilitários, mas inadequados para utilizadores que necessitem de aceder ao e-mail ou aos recursos da empresa.
+Os métodos de inscrição de dispositivos da empresa são uma boa opção para cenários "selecione o seu próprio dispositivo" (CYOD). Num ambiente CYOD, a organização paga um dispositivo que o utilizador seleciona e a organização gere o dispositivo.
 
-[Inscrever dispositivos pertencentes à empresa com o gestor de inscrição de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+Se oferecer aos utilizadores dispositivos iOS para escolha, pode pré-configurar a inscrição para que o dispositivo seja gerido com o Intune na primeira vez que o utilizador o ligar. O Intune suporta a inscrição através do [Programa de Registo de Dispositivos da Apple (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) ou da ferramenta Apple Configurator num computador Mac para inscrição [direta](ios-direct-enrollment-in-microsoft-intune.md) ou com o [Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
-## Inscrever dispositivos Windows 10 pertencentes à empresa
+Saiba como [inscrever dispositivos iOS pertencentes à empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
-Se a sua organização tiver o Azure Active Directory Premium (AADP) ou o Enterprise Management Suite (EMS), pode [inscrever o Windows 10 para empresas](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) e os dispositivos serão automaticamente assinalados como “pertencentes à empresas” quando os utilizadores adicionam as contas escolares ou profissionais deles.
+## <a name="create-a-device-enrollment-manager-account"></a>Criar uma conta de gestor de inscrição de dispositivos
 
-## Identificar os dispositivos como pertencentes à empresa
+Pode criar uma conta de gestor de inscrição de dispositivos (DEM) no Intune para gerir um grande número de dispositivos móveis para a sua organização. Após criar uma conta DEM, um gestor de conta designado pode inscrever mais de 15 dispositivos (que um utilizador padrão pode inscrever).
 
-Os dispositivos pertencentes à empresa são listados como **Empresa** em **Propriedade**, nas listas de dispositivos. Os dispositivos podem ser identificados como pertencentes à empresa das seguintes formas:
+Pode utilizar uma conta DEM para inscrever apenas dispositivos não utilizados por um único utilizador específico. Estes tipos de dispositivo são bons, por exemplo, para aplicações de utilitários ou ponto de venda, mas não para utilizadores que necessitem de aceder a recursos de empresa ou e-mail.
 
- - [Inscritos com o gestor de inscrição de dispositivos (DEM)](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
- - Inscritos com o [Programa de Inscrição de Dispositivos (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) ou o [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) da Apple
- - [Pré-declarar dispositivos com números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
- - [Registo de dispositivos Windows 10 do Azure Active Directory/Enterprise Management Suite](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+Saiba como [inscrever dispositivos pertencentes à empresa ao utilizar uma conta DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-### Identidade internacional do equipamento móvel (IMEI)
+## <a name="enroll-corporateowned-windows-10-enterprise-devices"></a>Inscrever dispositivos Windows 10 Enterprise pertencentes à empresa
 
-Os números de identidade internacional do equipamento móvel (IMEI) exclusivos são uma propriedade de dispositivo comum para inúmeros fabricantes de dispositivos móveis. Os administradores do Intune podem importar os números IMEI para os dispositivos pertencentes à empresa. Quando o dispositivo ficar gerido pelo Intune, é identificado como dispositivo pertencente à empresa.
+Se utilizar o Azure Active Directory Premium ou o Microsoft Enterprise Mobility Suite na sua organização, pode [inscrever dispositivos com Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Quando um utilizador adiciona uma conta escolar ou profissional a um dispositivo, este é automaticamente marcado como "pertencente à empresa".
 
-[Especifique os dispositivos da empresa com os números de identidade internacional do equipamento móvel (IMEI)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+## <a name="import-imei-numbers"></a>Importar números IMEI
+
+Muitos fabricantes de dispositivos móveis utilizam um número exclusivo, denominado Identidade Internacional do Equipamento Móvel (IMEI) nos respetivos dispositivos. Pode importar números IMEI para dispositivos pertencentes à sua organização. Quando o dispositivo for gerido pelo Intune, é identificado como dispositivo pertencente à empresa.
+
+Saiba como [identificar dispositivos pertencentes à empresa ao utilizar números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+
+## <a name="identify-a-device-as-corporateowned"></a>Identificar um dispositivo como pertencente à empresa
+
+Numa lista de dispositivos, o valor de **Propriedade** é **Empresarial**. Um dispositivo pertencente à empresa tem uma das seguintes características:
+
+ - O dispositivo foi [inscrito ao utilizar uma conta DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+ - O dispositivo foi inscrito através do [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) ou do [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+ - O fabricante do dispositivo [pré-declarou o dispositivo através de números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+ - O dispositivo está registado no [Azure Active Directory ou Enterprise Mobility Suite como um dispositivo Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

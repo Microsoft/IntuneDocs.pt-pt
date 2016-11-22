@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,25 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
 
 
-# Definições de política de conformidade para dispositivos Android no Microsoft Intune
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Android no Microsoft Intune
 
-As definições de política descritas neste tópico aplicam-se a dispositivos com o Android 4.0 e posterior, ou Samsung KNOX 4.0 e posterior.
+As definições de política descritas neste tópico aplicam-se a dispositivos com o Android 4.0 e posterior, ou Samsung KNOX Standard 4.0 e posterior.
 
 Se estiver à procura de informações sobre outras plataformas, selecione uma das seguintes opções:
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Definições da política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Definições de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Definições de política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Definições de segurança do sistema
-### Palavra-passe
+## <a name="system-security-settings"></a>Definições de segurança do sistema
+### <a name="password"></a>Palavra-passe
 - **Palavra-passe obrigatória para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os utilizadores introduzam uma palavra-passe para que possam aceder ao respetivo dispositivo.
 
 -  **Comprimento mínimo da palavra-passe**: especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
@@ -55,10 +56,10 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 - **Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**: utilize esta definição em conjunto com a definição **Minutos de inatividade antes de a palavra-passe ser exigida**. Será pedido ao utilizador que introduza uma palavra-passe para aceder a dispositivos que tenham estado inativos durante o período de tempo especificado na definição **Minutos de inatividade antes de a palavra-passe ser exigida**.
 
-### Encriptação
+### <a name="encryption"></a>Encriptação
 - **Exigir encriptação no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam encriptados para ligar aos recursos. Os dispositivos são encriptados quando seleciona a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.
 
-## Definições de estado de funcionamento e segurança do dispositivo
+## <a name="device-health-and-security-settings"></a>Definições de estado de funcionamento e segurança do dispositivo
 
 - **O dispositivo não pode ter jailbreak ou root**: se ativar esta definição, os dispositivos com jailbreak serão avaliados como não conformes.
 - **Exigir que os dispositivos impeçam a instalação de aplicações de origens desconhecidas (Android 4.0 ou posterior)**: para bloquear os dispositivos que tenham a opção **Segurança** > **Origens desconhecidas** ativada no dispositivo, ative esta definição e defina-a como **Sim**.  
@@ -77,7 +78,7 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
   Para obter mais detalhes, consulte [Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Definições de propriedade do dispositivo
+## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 - **SO mínimo necessário**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não conforme.
   É apresentada uma hiperligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
@@ -85,6 +86,6 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

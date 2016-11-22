@@ -2,9 +2,10 @@
 title: "Configurações personalizadas para perfis VPN | Microsoft Intune"
 description: "Utilize configurações personalizadas para criar perfis de VPN no Intune."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,38 +14,46 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
 
-# Configurações personalizadas para perfis VPN
+# <a name="custom-configurations-for-vpn-profiles"></a>Configurações personalizadas para perfis VPN
 
-## Criar uma configuração personalizada
-Pode utilizar configurações personalizadas para criar perfis VPN no Intune. Para criar uma configuração personalizada:
+## <a name="create-a-custom-configuration"></a>Criar uma configuração personalizada
+Pode utilizar configurações personalizadas para criar perfis VPN no Intune para:
 
-   1. Na consola de administração do Intune, **Política** > **Adicionar Política** > *<Expand platform>* > **Configuração personalizada** > **Criar Política**.
+* Dispositivos a executar o Android 4 e posterior
+* Dispositivos Android for Work
+* Dispositivos inscritos com Windows 8.1 e posterior
+* Dispositivos a executar o Windows Phone 8.1 e posterior
+* Dispositivos que executam o Windows 10 Desktop e Mobile
+
+Para criar uma configuração personalizada:
+
+   1. Na consola de administração do Intune, **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
    2. Forneça um nome para a política.
-   3. Para cada definição de URI, escolha **Adicionar** e forneça as informações pedidas. Segue-se um exemplo:
+   3. Para cada definição de URI, escolha **Add** e forneça as informações pedidas. Segue-se um exemplo:
 
    ![Caixa de diálogo de configuração personalizada de perfil VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Após introduzir todas as definições de URI, escolha **Guardar política** e, em seguida, implemente a política.
+   4.  Após introduzir todas as definições de URI, escolha **Save policy** e, em seguida, implemente a política.
 
-## Implementar uma política de configuração
+## <a name="deploy-a-configuration-policy"></a>Implementar uma política de configuração
 
-1.  Na área de trabalho **Política**, escolha a que pretende implementar e, em seguida, clique em **Gerir a Implementação**.
+1.  Na área de trabalho **Policy**, escolha a que pretende implementar e, em seguida, clique em **Manage Deployment**.
 
-2.  Na caixa de diálogo **Gerir a Implementação** , para:
+2.  Na caixa de diálogo **Manage Deployment**, para:
 
-    -   **Para implementar a política** - Escolha um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Adicionar** &gt; **OK**.
+    -   **To deploy the policy** – escolha um ou mais grupos nos quais pretende implementar a política e, em seguida, clique em **Add** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implementar a política** - escolha **Cancelar**.
+    -   **To close the dialog box without deploying it** – escolha **Cancel**.
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
-##Exemplo de definições de URI para uma configuração de perfil VPN personalizada
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Exemplo de definições de URI para uma configuração de perfil VPN personalizada
 Seguem-se entradas de exemplo para valores URI para criar uma configuração personalizada para uma VPN numa empresa fictícia denominada Contoso. Para obter mais informações, como o tipo de dados para cada entrada, veja [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN nativa da Contoso (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +94,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Para quaisquer perguntas sobre a forma como estas definições devem ser utilizadas ou para obter mais detalhes sobre o que fazem, os clientes devem consultar a documentação do fornecedor de serviços de configuração (CSP): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## Definições de URI para VPN por aplicação Android no PulseSecure
-### URI PERSONALIZADO PARA LISTA DE PACOTES
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>Definições de URI para VPN por aplicação Android no PulseSecure
+### <a name="custom-uri-for-package-list"></a>URI PERSONALIZADO PARA LISTA DE PACOTES
 -  Tipo de dados = Cadeia
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Valor = Lista de pacotes separada por delimitadores.
    - Delimitadores: ponto e vírgula (;), dois pontos (:), vírgula (,), barra (|)
 
@@ -96,7 +105,7 @@ Exemplos:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### URI PERSONALIZADO PARA MODO (OPCIONAL)
+### <a name="custom-uri-for-mode-optional"></a>URI PERSONALIZADO PARA MODO (OPCIONAL)
 - Tipo de Dados = Cadeia
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +116,11 @@ Exemplos:
 > - Assume a predefinição *WHITELIST* se for fornecido um PackageList
 
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 (Ligações VPN no Microsoft Intune)[vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

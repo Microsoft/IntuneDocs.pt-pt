@@ -2,43 +2,52 @@
 title: "Implementar a aplicação Lookout for Work | Microsoft Intune"
 description: "Configure e implemente a aplicação Lookout for Work para Android."
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
-ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# Configurar e implementar a aplicação Lookout for Work
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>Configurar e implementar a aplicação Lookout for Work
 Este artigo explica-lhe como configurar e implementar a aplicação Lookout for Work em dispositivos Android e iOS.
 
-## Android (aplicação da Google Play Store)
+## <a name="android-google-play-store-app"></a>Android (aplicação da Google Play Store)
 
-* **Passo 1:**   carregue a aplicação Lookout for Work para Android na [consola do administrador do Microsoft Intune](https://manage.microsoft.com) tal como descrito no tópico [Adicionar aplicações para dispositivos móveis no Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune).
+* **Passo 1:** na [Consola de administrador do Microsoft Intune](https://manage.microsoft.com), aceda a **Aplicações** e selecione **Adicionar Aplicações**.   
+* **Passo 2:** na página **Configuração do Software** do editor, selecione **Ligação externa** e especifique o URL seguinte: https://play.google.com/store/apps/details?id=com.lookout.enterprise
 >[!NOTE]
-> Não clique na caixa para exigir um browser gerido.
+>Não clique na caixa para exigir um browser gerido.
 
-![captura de ecrã da página de aplicações da consola do administrador do Intune a mostrar as aplicações Lookout for Work na lista](../media/mtp/lookout-app-listed-intune-console.png)
+* **Passo 3:** na página **Descrição do software**, preencha as seguintes informações:
+  * **Editor:** Lookout Mobile Security
+  * **Nome:** Lookout for Work
+  * **Descrição:** o Lookout oferece a melhor proteção contra ameaças para dispositivos móveis para manter o seu dispositivo seguro. Quando a aplicação Lookout está instalada no dispositivo, a aplicação protege o seu dispositivo de ameaças e irá alertá-lo a si e ao administrador da sua empresa, se forem detetadas algumas.
+  * **Categoria:** Gestão de Computadores
+* **Passo 4:** após a conclusão com êxito, verá uma mensagem **Carregamento de dados para o Microsoft Intune concluído com êxito**.
 
-* **Passo 2:** implemente a aplicação aos utilizadores. Selecione a aplicação Lookout for Work apresentada no ecrã acima e selecione **Gerir Implementação**.
+Na Consola do Intune, quando clica em **Aplicações** verá a aplicação Lookout for Work na lista ![captura de ecrã da página de aplicações da consola de administração do Intune a mostrar as aplicações Lookout for Work na lista](../media/mtp/lookout-app-listed-intune-console.png)
 
-  Tem de selecionar os mesmos utilizadores que foram adicionados à opção Gestão de Inscrições na consola do Lookout.  Consulte o Passo 3 na [secção Configurar a sua subscrição para a proteção contra ameaças de dispositivos do Lookout](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) para obter informações sobre como adicionar grupos de utilizadores ao Lookout MTP.
->[!IMPORTANT]
-> O assistente de implementação da aplicação Intune não se apercebe dos grupos de utilizadores do Azure AD e utiliza os grupos de utilizadores do Intune, pelo que tem de criar um grupo de utilizadores do Intune com base no grupo de utilizadores do Azure AD inscrito na consola do Lookout, conforme descrito [neste](plan-your-user-and-device-groups.md) tópico.
+* **Passo 5:** implemente a aplicação para os utilizadores ao selecionar a aplicação Lookout for Work e selecionar **Manage Deployment**.
 
-Selecione a opção **Instalação Necessária** para exigir que a aplicação Lookout seja instalada no dispositivo do utilizador.
+  Tem de selecionar os mesmos utilizadores adicionados na opção Gestão de Inscrições na consola do Lookout MTP.  Consulte o Passo 3 na [secção Configurar a sua subscrição com o Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) para obter informações sobre adicionar grupos de utilizadores ao Lookout MTP.
+  >[!IMPORTANT]
+  > O assistente de implementação de aplicações do Intune não tem conhecimento dos grupos de utilizadores do Azure AD e em alternativa utiliza os grupos de utilizadores do Intune. Por isso, tem de criar um grupo de utilizadores do Intune com base no grupo de utilizadores do Azure AD que está inscrito na consola do Lookout MTP, conforme descrito [neste](plan-your-user-and-device-groups.md) tópico.
+
+* **Passo 6**: selecione a opção **Instalação Necessária** para exigir que a aplicação Lookout seja instalada no dispositivo do utilizador.
 
 
-## iOS (versão Enterprise da aplicação Lookout)
+## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (versão Enterprise da aplicação Lookout)
 
 * **Passo 1:** certifique-se de que a **gestão de iOS** está configurada no seu dispositivo. Para obter instruções sobre como configurar o seu dispositivo para a gestão de iOS consulte [Configurar a gestão de dispositivos iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -48,7 +57,7 @@ Selecione a opção **Instalação Necessária** para exigir que a aplicação L
 * **Passo 3:** ative a autenticação do Azure Active Directory para utilizadores iOS do seguinte modo:
   1.  Inicie sessão no portal de gestão do [Azure Active Directory](https://manage.windowsazure.com) e navegue para a página da aplicação.
   2.  Adicione a **aplicação Lookout for Work para iOS** como uma **aplicação de cliente nativo**.
-  ![captura de ecrã da caixa de diálogo adicionar aplicações a mostrar a opção aplicação de cliente nativo](../media/mtp/aad-add-app.png)
+  ![captura de ecrã da caixa de diálogo Adicionar aplicações a mostrar a opção Aplicação de cliente nativo](../media/mtp/aad-add-app.png)
 
   3. Substitua o valor **com.lookout.enterprise.onomedasuaempresa** pelo ID de pacote de cliente que selecionou quando assinou o IPA.
   4.  Adicione o URI de redirecionamento adicional: **&lt;companyportal://code/>** seguido de uma versão com codificação URL do seu URI de redirecionamento original.
@@ -65,7 +74,7 @@ Selecione a opção **Instalação Necessária** para exigir que a aplicação L
 
   ![captura de ecrã do assistente criar nova política com a política de configuração de aplicações para iOS 8.0 ou posterior realçada](../media/mtp/ios-app-config.png)
 
-* **Passo 6:** **para implementar a aplicação aos utilizadores**, selecione a aplicação Lookout for Work e selecione **Gerir Implementação**.
+* **Passo 6:** **para implementar a aplicação aos utilizadores**, selecione a aplicação Lookout for Work e selecione **Manage Deployment**.
 
   Tem de selecionar os mesmos utilizadores que foram adicionados à opção Gestão de Inscrições na consola do Lookout.  Consulte o Passo 3 na [secção Configurar a sua subscrição para a proteção contra ameaças de dispositivos do Lookout](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) para obter informações sobre como adicionar grupos de utilizadores ao Lookout MTP.
 >[!IMPORTANT]
@@ -73,7 +82,7 @@ Selecione a opção **Instalação Necessária** para exigir que a aplicação L
 
 Selecione a opção **Instalação Necessária** para exigir que a aplicação Lookout seja instalada no dispositivo do utilizador.
 
-## O que acontece quando a aplicação implementada é aberta no dispositivo
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>O que acontece quando a aplicação implementada é aberta no dispositivo
 
 
 
@@ -84,11 +93,11 @@ Quando o utilizador abre o Lookout for Work no dispositivo, é-lhe pedido para a
 
 * [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## Passos seguintes
+## <a name="next-steps"></a>Passos seguintes
 * [Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
