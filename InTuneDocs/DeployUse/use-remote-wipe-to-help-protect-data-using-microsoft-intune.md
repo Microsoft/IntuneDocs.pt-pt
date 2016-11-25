@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ A **Eliminação completa** restaura as predefinições do dispositivo, removend
 
 Se o dispositivo estiver ativo e ligado, demora menos de 15 minutos até um comando de eliminação ser propagado em todos os tipos de dispositivo.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para eliminar dispositivos no portal do Azure Active Directory
+
+1.  Navegue para [http://aka.ms/accessaad](http://aka.ms/accessaad) ou escolha **Administração** &gt; **Azure AD** a partir de [https://portal.office.com](https://portal.office.com).
+
+2.  Inicie sessão com o seu ID de Organização através da ligação no lado esquerdo da página.
+
+3.  Se não tiver uma, crie uma Subscrição do Azure. Se tiver uma conta paga (escolha a ligação de subscrição **Registar o Azure Active Directory gratuito**), não deverá ser preciso um cartão de crédito ou um pagamento para esta subscrição.
+
+4.  Selecione **Active Directory** e, em seguida, selecione a sua organização.
+
+5.  Selecione o separador **Utilizadores** .
+
+6.  Selecione o utilizador cujos dispositivos pretende eliminar.
+
+7.  Escolha **Dispositivos**.
+
+8.  Remova os dispositivos conforme adequado, como aqueles que já não estão em utilização ou que têm definições incorretas.
+
+
 ## <a name="selective-wipe"></a>Eliminação seletiva
 
 A **eliminação seletiva** remove os dados da empresa, incluindo os dados de gestão de aplicações móveis (MAM) (onde for aplicável), definições e perfis de e-mail de um dispositivo. A eliminação seletiva mantém os dados pessoais do utilizador no dispositivo. O dispositivo é removido do Intune. As seguintes tabelas descrevem os dados que são removidos e o efeito nos dados que permanecem no dispositivo após uma eliminação seletiva. (As tabelas estão organizadas por plataforma.)
@@ -95,7 +114,7 @@ A **eliminação seletiva** remove os dados da empresa, incluindo os dados de ge
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|
 |Definições de perfil de certificado|Certificados revogados mas não removidos.|Certificados removidos e revogados.|
 |Agente de Gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
-|E-mail|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado. Se o Microsoft Exchange estiver alojado no local, os perfis de e-mail e o e-mail em cache não serão removidos.|
+|E-mail|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
 |Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos.</br>Exceção: se o Exchange estiver alojado no local, o e-mail não será removido.|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos.</br>Exceção: se o Exchange estiver alojado no local, o e-mail não será removido.|
 |Anulação da associação ao Azure Active Directory (AAD)|Registo do AAD removido.|Registo do AAD removido.|
 |Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.|Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
@@ -111,7 +130,7 @@ A **eliminação seletiva** remove os dados da empresa, incluindo os dados de ge
 |E-mail|Remove o e-mail que tenha o EFS ativado, que inclui a aplicação Correio para e-mail e anexos do Windows.|Não suportada.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|Remove o e-mail que tenha o EFS ativado, que inclui a aplicação Correio para e-mail e anexos do Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.</br>**Exceção**: se o Microsoft Exchange estiver alojado no local, as contas de e-mail não serão removidas.|
 |Anulação da associação ao Azure Active Directory (AAD)|Não.|Não.|Registo do AAD removido.|Não aplicável. O Windows 10 não suporta a eliminação seletiva para dispositivos associados ao Azure Active Directory.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>Apagar conteúdo com o Sistema de Encriptação de Ficheiros (EFS) ativado
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Apagar conteúdo com o Sistema de Encriptação de Ficheiros (EFS) ativado
 A eliminação seletiva de conteúdo encriptado com o EFS é suportada pelo Windows 8.1 e Windows RT 8.1. As seguintes informações aplicam-se a uma eliminação seletiva de conteúdos com o EFS ativado:
 
 -   Apenas as aplicações e os dados protegidos pelo EFS através do mesmo domínio de Internet que a conta do Intune são apagados seletivamente. Para mais informações, consulte o artigo [Eliminação Seletiva do Windows para a Gestão de Dados de Dispositivos](http://technet.microsoft.com/library/dn486874.aspx).
@@ -146,6 +165,6 @@ Este relatório também mostra quem efetuou a ação.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

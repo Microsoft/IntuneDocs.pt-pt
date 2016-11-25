@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
+ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 ---
 
-# Restringir o acesso ao e-mail no Exchange Online e no novo Exchange Online Dedicado com o Intune
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Restringir o acesso ao e-mail no Exchange Online e no novo Exchange Online Dedicado com o Intune
 
 Se tiver um ambiente do Exchange Online Dedicado e precisar de saber se está na configuração nova ou legada, contacte o seu gestor de conta.
 
@@ -62,12 +62,14 @@ O diagrama abaixo ilustra o fluxo utilizado pelas políticas de acesso condicion
 
 ![Diagrama que ilustra os pontos de decisão que determinam se o acesso ao dispositivo foi permitido ou bloqueado](../media/ConditionalAccess8-1.png)
 
-## Suporte para dispositivos móveis
+## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 Pode restringir o acesso ao e-mail do Exchange Online a partir do **Outlook** e de outras **aplicações que utilizam autenticação moderna**:-
 
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior e Android for Work
 - iOS 8.0 e posterior
 - Windows Phone 8.1 e posterior
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 A **autenticação moderna** proporciona um início de sessão baseado em ADAL (Active Directory Authentication Library) aos clientes do Microsoft Office.
 
@@ -79,11 +81,11 @@ Pode restringir o acesso ao **Outlook Web Access (OWA)** no Exchange Online quan
 
 * Safari (iOS)
 * Chrome (Android)
-* Browser gerido (iOS e Android)
+* Browser Gerido (iOS e Android 5.0 e posteriores)
 
 **Os browsers não suportados serão bloqueados**.
 
-**A aplicação OWA para iOS e Android pode ser modificada de forma a não utilizar autenticação moderna e não é suportada.  O acesso da aplicação OWA tem de ser bloqueado através regras de afirmações de ADFS.**
+**A aplicação OWA para iOS e Android pode ser modificada de forma a não utilizar autenticação moderna e não é suportada.  O acesso da aplicação OWA tem de ser bloqueado através de regras de afirmações do ADFS.**
 
 
 Pode restringir o acesso ao e-mail do Exchange no **cliente de e-mail Exchange ActiveSync** incorporado nas seguintes plataformas:
@@ -94,7 +96,7 @@ Pode restringir o acesso ao e-mail do Exchange no **cliente de e-mail Exchange A
 
 - Windows Phone 8.1 e posterior
 
-## Suporte de PCs
+## <a name="support-for-pcs"></a>Suporte de PCs
 
 Pode configurar o acesso condicional para computadores que executem aplicações de ambiente de trabalho do Office para aceder a **Exchange Online** e **SharePoint Online** para computadores que cumpram os requisitos seguintes:
 
@@ -118,25 +120,25 @@ Pode configurar o acesso condicional para computadores que executem aplicações
 
 -   Configure regras de afirmações do ADFS para bloquear protocolos de autenticação não moderna. São fornecidas instruções detalhadas no cenário 3 - [bloquear todo o acesso ao O365, exceto aplicações baseadas no browser](https://technet.microsoft.com/library/dn592182.aspx).
 
-## Configurar o acesso condicional
-### Passo 1: Configurar e implementar uma política de conformidade
+## <a name="configure-conditional-access"></a>Configurar o acesso condicional
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>Passo 1: Configurar e implementar uma política de conformidade
 Certifique-se de que [cria](create-a-device-compliance-policy-in-microsoft-intune.md) e [implementa](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) uma política de conformidade para os grupos de utilizadores que também irão receber a política de acesso condicional.
 
 
 > [!IMPORTANT]
 > Se não tiver implementado uma política de conformidade, os dispositivos serão considerados conformes e terão permissão de acesso ao Exchange.
 
-### Passo 2: Avaliar o efeito da política de acesso condicional
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Passo 2: Avaliar o efeito da política de acesso condicional
 Pode utilizar os **Relatórios de Inventário de Dispositivos Móveis** para identificar os dispositivos que poderão ser impedidos de aceder ao Exchange após configurar a política de acesso condicional.
 
 Para tal, configure uma ligação entre o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e o Exchange utilizando o [Conector de serviços do Microsoft Intune](intune-service-to-service-exchange-connector.md).
 1.  Navegue para **Relatórios -> Relatórios de Inventário de Dispositivos Móveis**.
-![Captura de ecrã da página do relatório de inventário de dispositivos móveis](../media/IntuneSA2bMobileDeviceInventoryReport.png)
+![Captura de ecrã da página do Relatório de inventário de dispositivos móveis](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
 2.  Nos parâmetros do relatório, selecione o grupo do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que pretende avaliar e, se necessário, as plataformas de dispositivos às quais será aplicada a política.
 3.  Depois de selecionar os critérios que satisfazem as necessidades da sua organização, escolha **Ver Relatório**.
 O Visualizador de Relatórios é aberto numa nova janela.
-![Captura de ecrã de um relatório de inventário de dispositivos móveis de exemplo](../media/IntuneSA2cViewReport.PNG)
+![Captura de ecrã de um Relatório de inventário de dispositivos móveis de exemplo](../media/IntuneSA2cViewReport.PNG)
 
 Depois de executar o relatório, examine estas quatro colunas para determinar se um utilizador será bloqueado:
 
@@ -161,7 +163,7 @@ Os dispositivos que fazem parte de um grupo de destino serão impedidos de acede
 ----------------------
 Pode exportar os conteúdos do relatório e utilizar a coluna **Endereço de E-mail** para informar os utilizadores de que serão bloqueados.
 
-### Passo 3: Configurar grupos de utilizadores para a política de acesso condicional
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>Passo 3: Configurar grupos de utilizadores para a política de acesso condicional
 As políticas de acesso condicional estão direcionadas para diferentes grupos de segurança de utilizadores do Azure Active Directory. Também pode isentar determinados grupos de utilizadores desta política.  Quando um utilizador é direcionado por uma política, cada dispositivo que utiliza tem de estar em conformidade para poder aceder ao e-mail.
 
 Pode configurar estes grupos no **centro de administração do Office 365**ou no **portal de contas do Intune**.
@@ -176,16 +178,16 @@ Se um utilizador estiver em ambos os grupos, estará excluído da política.
 
 Apenas os grupos direcionados pela política de acesso condicional são avaliados.
 
-### Passo 4: Configurar a política de acesso condicional
+### <a name="step-4-configure-the-conditional-access-policy"></a>Passo 4: Configurar a política de acesso condicional
 
 >[!NOTE]
 > Também pode criar uma política de acesso condicional na consola de gestão do Azure AD. A consola de gestão do Azure AD permite-lhe criar as políticas de acesso condicional a dispositivos do Intune (designadas como **políticas de acesso condicional com base no dispositivo** no Azure AD) para além de outras políticas de acesso condicional, como a autenticação multifator.  Também pode definir políticas de acesso condicional para aplicações empresariais de terceiros suportadas pelo Azure AD, como a Salesforce e a Box. Para obter mais detalhes, consulte [Como definir a política de acesso condicional com base no dispositivo do Azure Active Directory para controlar o acesso a aplicações ligadas do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do Exchange Online**.
-![Captura de ecrã da página de política de acesso condicional do Exchange Online](../media/mdm-ca-exo-policy-configuration.png)
 
-2.  Na página **Política do Exchange Online** , selecione **Ativar política de acesso condicional no Exchange Online**.
+
+2.  Na página **Política do Exchange Online**, selecione **Ativar política de acesso condicional no Exchange Online**.
 
     > [!NOTE]
     > Se não tiver implementado uma política de conformidade, os dispositivos são tratados como conformes.
@@ -214,7 +216,7 @@ Apenas os grupos direcionados pela política de acesso condicional são avaliado
   3.    Prima o botão **Ativar o Acesso ao Browser**.
   4.    No browser Chrome, termine a sessão no Office 365 e reinicie o Chrome.
 
-  Nas plataformas **iOS e Android**, para identificar o dispositivo utilizado para aceder ao serviço, o Azure Active Directory irá emitir um certificado de Transport layer security (TLS) para o dispositivo.  O dispositivo apresenta o certificado com uma linha de comandos para o utilizador final para selecionar o certificado, conforme indicado nas capturas de ecrã abaixo. O utilizador final tem de selecionar este certificado antes de este poder continuar a utilizar o browser.
+  Nas plataformas **iOS e Android**, para identificar o dispositivo utilizado para aceder ao serviço, o Azure Active Directory irá emitir um certificado de Transport layer security (TLS) para o dispositivo.  O dispositivo apresenta o certificado com uma linha de comandos para o utilizador final para selecionar o certificado, conforme indicado nas capturas de ecrã abaixo. O utilizador final tem de selecionar este certificado para poder continuar a utilizar o browser.
 
   **iOS**
 
@@ -227,10 +229,10 @@ Apenas os grupos direcionados pela política de acesso condicional são avaliado
 5.  Em **Aplicações do Exchange ActiveSync**, pode optar por bloquear o acesso de dispositivos não conformes ao Exchange Online. Também pode selecionar se pretende permitir ou bloquear o acesso ao e-mail quando o dispositivo não está a executar uma plataforma suportada. As plataformas suportadas incluem Android, iOS, Windows e Windows Phone.
 
  Aplicações do Exchange Active Sync em dispositivos **Android for Work**:
- -  No **perfil de trabalho**, apenas as aplicações **Gmail** e **Nine Work** são suportadas em dispositivos Android for Work. Para obter acesso condicional ao seu trabalho em dispositivos Android for Work, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work, bem como implementar essas aplicações como uma instalação **obrigatória**. 
+ -  No **perfil de trabalho**, apenas as aplicações **Gmail** e **Nine Work** são suportadas em dispositivos Android for Work. Para obter acesso condicional ao seu trabalho em dispositivos Android for Work, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work, bem como implementar essas aplicações como uma instalação **obrigatória**.
 
 6.  Em **Grupos Direcionados**, selecione os grupos de segurança do Active Directory dos utilizadores aos quais será aplicada a política. Pode optar por segmentar todos os utilizadores ou uma lista selecionada de grupos de utilizadores.
-![Captura de ecrã da página de política de acesso condicional do Exchange Online, que mostra as opções de grupos de destino e grupos excluídos](../media/IntuneSA5eTargetedExemptedGroups.PNG)
+![Captura de ecrã da página de política de acesso condicional do Exchange Online, que mostra as opções de Grupos de destino e Grupos excluídos](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
     > Para os utilizadores que estão nos **Grupos de destino**, as políticas do Intune irão substituir as regras e as políticas do Exchange.
     >
@@ -253,20 +255,20 @@ Apenas os grupos direcionados pela política de acesso condicional são avaliado
 
 **Para ver alguns cenários de exemplo de como poderia configurar a política de acesso condicional para restringir o acesso do dispositivo, consulte os [cenários de exemplo da restrição de acesso ao e-mail](restrict-email-access-example-scenarios.md).**
 
-## Monitorizar a conformidade e as políticas de acesso condicional
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorizar a conformidade e as políticas de acesso condicional
 
-#### Para ver os dispositivos bloqueados no Exchange
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Para ver os dispositivos bloqueados no Exchange
 
 No dashboard do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha o mosaico **Dispositivos Bloqueados no Exchange** para ver o número de dispositivos bloqueados e ligações para obter mais informações.
 ![Captura de ecrã do dashboard do Intune, que mostra o número de dispositivos que estão impedidos de aceder ao Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
-## Passos seguintes
+## <a name="next-steps"></a>Passos seguintes
 [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Restringir o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

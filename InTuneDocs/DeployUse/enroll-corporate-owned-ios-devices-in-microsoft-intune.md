@@ -2,8 +2,8 @@
 title: "Inscrever dispositivos iOS pertencentes à empresa | Microsoft Intune"
 description: "Inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou do Apple Configurator"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: c28b51146deb6a0a28070f72449972fd60076231
+ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
+ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
 
 
 ---
 
-# Inscrever dispositivos iOS pertencentes à empresa no Microsoft Intune
+# <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Inscrever dispositivos iOS pertencentes à empresa no Microsoft Intune
 O Microsoft Intune suporta a inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou da ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac.
 
 **Pré-requisito:** é necessário um [Certificado do serviço Apple Push Notification](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 Pode inscrever dispositivos iOS pertencentes à empresa de três formas: através do Apple Configurator, do DEP ou do Portal da Empresa.
 
-## Utilizar o Apple Configurator
+## <a name="use-apple-configurator"></a>Utilizar o Apple Configurator
 
 É possível inscrever dispositivos iOS ao exportar um perfil de Inscrição Empresarial e, em seguida, ligar esses dispositivos móveis a um Mac com o Apple Configurator. O Apple Configurator suporta duas formas de inscrição:
 
@@ -35,10 +35,10 @@ Pode inscrever dispositivos iOS pertencentes à empresa de três formas: atravé
 
 - **Inscrição Direta**: cria um ficheiro compatível com o Apple Configurator para utilização durante a preparação do dispositivo. Não é efetuada a reposição de fábrica no dispositivo inscrito e não existe nenhuma afiliação de utilizadores. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac a executar o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para o inscrever. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e a Inscrição Direta](ios-direct-enrollment-in-microsoft-intune.md).
 
-## Utilizar o Programa de Inscrição de Dispositivos (DEP)
+## <a name="use-the-device-enrollment-program-dep"></a>Utilizar o Programa de Inscrição de Dispositivos (DEP)
 O DEP implementa um perfil de inscrição “por ondas eletromagnéticas” para dispositivos que são adquiridos através do DEP. Quando um utilizador executa o Assistente de Configuração no dispositivo, este é inscrito no Intune.  Os utilizadores não podem anular a inscrição de dispositivos inscritos através do DEP. Para obter mais informações, veja [Inscrever dispositivos iOS do Programa de Inscrição de Dispositivos](ios-device-enrollment-program-in-microsoft-intune.md).
 
-## Utilizar o Portal da Empresa em dispositivos inscritos pelo Apple Configurator ou pelo DEP
+## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Utilizar o Portal da Empresa em dispositivos inscritos pelo Apple Configurator ou pelo DEP
 
 Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação do Portal da Empresa.
 
@@ -64,11 +64,11 @@ A afinidade de utilizador é necessária para suportar o seguinte:
 
   Este passo verifica se o dispositivo é o dispositivo da empresa inscrito no Intune. Se o número de série do dispositivo não coincidir, significa que foi selecionado o dispositivo errado. O utilizador deve voltar ao ecrã anterior e selecionar um dispositivo diferente.
 
-7. Depois de verificar o número de série, a aplicação Portal da Empresa redireciona o utilizador para o site Portal da Empresa para finalizar a inscrição. Em seguida, o site solicita ao utilizador que volte para a aplicação.
+7. Depois de verificar o número de série, a aplicação Portal da Empresa redireciona o utilizador para o site do Portal da Empresa para finalizar a inscrição. Em seguida, o site solicita ao utilizador que volte para a aplicação.
 
 8. A inscrição está agora concluída. Agora, o utilizador pode utilizar este dispositivo com o conjunto completo de capacidades.
 
-### Sobre dispositivos pertencentes à empresa geridos sem afinidade de utilizador
+### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>Sobre dispositivos pertencentes à empresa geridos sem afinidade de utilizador
 
 Os dispositivos configurados sem afinidade de utilizador não suportam o Portal da Empresa e não devem ter a aplicação instalada. O Portal da Empresa foi concebido para utilizadores com credenciais da empresa e que necessitam de acesso a recursos empresariais personalizados (por exemplo, e-mail). Os dispositivos inscritos sem afinidade de utilizador não se destinam a ter um início de sessão de utilizador dedicado. Os dispositivos de quiosque, ponto de venda (POS) ou utilitário partilhado são casos de utilização típicos para dispositivos inscritos sem afinidade de utilizador.
 
@@ -76,11 +76,11 @@ Se for necessária afinidade de utilizador, confirme que o perfil de inscrição
 
 
 
-### Consulte também
-[Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](gprerequisites-for-enrollment.md)
+### <a name="see-also"></a>Consulte também
+[Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

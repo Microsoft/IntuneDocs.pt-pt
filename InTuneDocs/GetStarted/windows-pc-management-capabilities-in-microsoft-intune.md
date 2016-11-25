@@ -3,8 +3,9 @@ title: Funcionalidades de cliente de software de PCs do Intune | Microsoft Intun
 description: Saiba mais acerca das funcionalidades do Intune quando gere PCs Windows com o cliente de software do Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
-ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# Funcionalidades de gestão de PCs Windows ao utilizar o cliente de software do Intune
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Funcionalidades de gestão de PCs Windows ao utilizar o cliente de software do Intune
 Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o que fornece um conjunto maior de capacidades. No entanto, também pode gerir os PCs com o cliente de software do Intune, que proporciona as seguintes funcionalidades:
 
 -   **[Gestão de atualizações de software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** pode manter os PCs atualizados e decidir quando as atualizações são aplicadas.
@@ -36,7 +37,7 @@ Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o 
 
 O Intune suporta a instalação do cliente de software num máximo de 7000 dispositivos Windows.
 
-## Requisitos do sistema operativo
+## <a name="operating-system-requirements"></a>Requisitos do sistema operativo
 O Intune pode gerir PCs com as seguintes versões do Windows (32 e 64 bits):
 
 
@@ -51,7 +52,7 @@ O Intune pode gerir PCs com as seguintes versões do Windows (32 e 64 bits):
 - **Windows 10** – Versões Pro, Education e Enterprise
 
 
-## Requisitos mínimos de hardware
+## <a name="minimum-hardware-requirements"></a>Requisitos mínimos de hardware
 Seguem-se os requisitos mínimos de hardware para instalar o cliente de software do Intune:
 
 |Requisito|Detalhes|
@@ -60,7 +61,7 @@ Seguem-se os requisitos mínimos de hardware para instalar o cliente de software
 |Processador e memória|Consulte os requisitos de processador e RAM do sistema operativo do computador.|
 |Espaço em disco|200 MB de espaço disponível no disco antes da instalação do software do cliente.|
 
-## Mais requisitos
+## <a name="further-requirements"></a>Mais requisitos
 Seguem-se os requisitos de software para instalar o cliente de software do Intune:
 
 |Requisito|Detalhes|
@@ -69,11 +70,11 @@ Seguem-se os requisitos de software para instalar o cliente de software do Intun
 |Windows Installer 3.1|O computador tem de ter instalado, no mínimo, o Windows Installer 3.1.|
 |Remover software de cliente incompatível|Antes de instalar o cliente de PC do Intune, tem de desinstalar o software cliente seguinte nesse computador:<br /><br />– Qualquer versão do Configuration Manager<br />– Qualquer versão do Microsoft Systems Management Server (SMS)|
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Funcionalidades de gestão de dispositivos inscritos do Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
