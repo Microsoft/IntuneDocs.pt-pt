@@ -14,41 +14,41 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
-ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
 
 
 ---
 
-# Criar uma política de conformidade de dispositivos no Microsoft Intune
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade de dispositivos no Microsoft Intune
 Este tópico descreve os passos que pode utilizar para criar uma política de conformidade que um dispositivo tem de seguir para ser considerado conforme.
 
-##  Passo 1: Adicionar uma nova política
+##  <a name="step-1-add-a-new-policy"></a>Passo 1: Adicionar uma nova política
   Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Política** &gt; **Políticas de Conformidade** &gt; **Adicionar**.
 
   ![Captura de ecrã da página de política de conformidade na consola de administração do Intune, que mostra a opção de adicionar no menu na parte superior da página](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  Passo 2: Configurar as definições
+##  <a name="step-2-configure-settings"></a>Passo 2: Configurar as definições
 Na página **Criar Política**, ative as definições necessárias:
-  -   As definições de segurança do sistema, como palavra-passe e encriptação
+  -   As definições de segurança do sistema, como palavra-passe e encriptação.
   -   As definições de estado de funcionamento do dispositivo, como se o dispositivo tem ou não jailbrake ou se é considerado como estando em bom estado de funcionamento pelo serviço de atestado de estado de funcionamento de dispositivos do Windows.
-  -   Definições de propriedades do dispositivo, como a versão mínima do SO necessária ou a versão máxima do SO permitida.
+  -   Definições de propriedades do dispositivo, como a versão mínima do sistema operativo necessária ou a versão máxima do sistema operativo permitida.
 ![Separador Geral da página Criar Política ](./media/intune-sa-3b-create-policy.png)
 
 
-##  Passo 3: Guardar a política
+##  <a name="step-3-save-the-policy"></a>Passo 3: Guardar a política
 Quando terminar, selecione **Guardar Política**.
 
-Terá a opção de implementar a política logo após guardá-la ou pode optar por implementá-la mais tarde. A nova política é apresentada no nó **Políticas de Conformidade** da área de trabalho **Política**.
+Tem a opção de implementar a política logo após guardá-la ou pode optar por implementá-la mais tarde. A nova política é apresentada no nó **Políticas de Conformidade** da área de trabalho **Política**.
 
-##  Passo 4: Definir o período de validade do Estado de conformidade
-Para especificar o tempo que o dispositivo tem para se registar antes de ser considerado como não estando em conformidade, aceda às definições da política de conformidade e atualize esse período.  A predefinição são 30 dias.
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>Passo 4: Definir o período de validade do Estado de conformidade
+Para especificar o tempo que o dispositivo tem para se registar antes de ser considerado como não estando em conformidade, aceda às definições da política de conformidade e atualize esse período. A predefinição são 30 dias.
 
-![opção de definições da política de conformidade na barra de menus da política](../media/mdm-compliance-policy-settings.png)
+![Opção de definições da política de conformidade na barra de menus da política](../media/mdm-compliance-policy-settings.png)
 
-![caixa de diálogo da política de conformidade](../media/mdm-ca-compliance-status-validity-period.png)
+![Caixa de diálogo da política de conformidade](../media/mdm-ca-compliance-status-validity-period.png)
 
-## Definições de política suportadas
+## <a name="supported-policy-settings"></a>Definições de política suportadas
 A tabela seguinte lista as definições de política de conformidade e as plataformas em que são suportadas.
 
 -------------
@@ -80,14 +80,14 @@ Selecione um dos seguintes passos para obter mais informações sobre as defini�
 - [Definições de política de conformidade para dispositivos Windows Phone ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## Passos seguintes
+## <a name="next-steps"></a>Passos seguintes
 [Implementar e monitorizar políticas de conformidade](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Introdução às políticas de conformidade de dispositivos](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

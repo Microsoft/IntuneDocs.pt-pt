@@ -4,19 +4,19 @@ experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
 title: "Documentação do Intune | Documentos Microsoft"
-description: "Documentação técnica do Microsoft Intune - Gestão de Aplicações e Dispositivos Móveis"
+description: "Documentação técnica do Microsoft Intune – Gestão de Aplicações e Dispositivos Móveis"
 keywords: "documentação do Intune, gestão de aplicações, gestão de dispositivos, documentação de MDM, documentação de MAM"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/07/2016
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
-ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
       <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em Destaque</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">Novidades?</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Mais de 150 licenças? Tirar partido dos benefícios do FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Formas comuns de utilizar o Intune</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteger os dados da aplicação</a></li>
         </ul>
@@ -285,6 +285,6 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

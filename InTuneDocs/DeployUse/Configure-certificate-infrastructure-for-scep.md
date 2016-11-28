@@ -2,9 +2,10 @@
 title: Configurar a infraestrutura de certificados para SCEP | Microsoft Intune
 description: Infraestrutura para criar e implementar perfis de certificado SCEP.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +14,21 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
-ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
+ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
+ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
 
 ---
-# Configurar a infraestrutura de certificados para SCEP
+# <a name="configure-certificate-infrastructure-for-scep"></a>Configurar a infraestrutura de certificados para SCEP
 Este tópico descreve a infraestrutura necessária para criar e implementar perfis de certificado SCEP.
 
-### Infraestrutura no local
+### <a name="on-premises-infrastructure"></a>Infraestrutura no local
 
 -    **Domínio do Active Directory**: todos os servidores indicados nesta secção (exceto o Servidor de Proxy de Aplicações Web) têm de ser associados ao seu domínio do Active Directory.
 
 -  **Autoridade de Certificação** (AC): uma Autoridade de Certificação (AC) Empresarial que seja executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter instruções sobre como configurar uma Autoridade de Certificação, consulte [Instalar a Autoridade de Certificação](http://technet.microsoft.com/library/jj125375.aspx).
     Se a sua AC for executada no Windows Server 2008 R2, tem de [instalar a correção de KB2483564](http://support.microsoft.com/kb/2483564/).
 I
--  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede. O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+-  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Consulte a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede. O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: utilize a consola de administração do Intune para transferir o instalador do **Certificate Connector** (**ndesconnectorssetup.exe**). Em seguida, pode executar **ndesconnectorssetup.exe** no computador onde pretende instalar o Certificate Connector.
 -  **Servidor de Proxy de Aplicações Web** (opcional): pode utilizar um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
@@ -37,9 +38,9 @@ I
  > [!NOTE]           
 > -    O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Além disso, o servidor que aloja o WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos, e tem de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
-    Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, consulte [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
-### Requisitos de rede
+### <a name="network-requirements"></a>Requisitos de rede
 
 A partir da Internet para a rede de perímetro, permita a porta 443 a partir de todos os anfitriões/endereços IP na Internet para o servidor do NDES.
 
@@ -48,7 +49,7 @@ A partir da rede de perímetro para uma rede fidedigna, permita todas as portas 
 Recomendamos a publicação do servidor NDES através de um proxy, tal como o [proxy de aplicações do Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Proxy de Acesso Web](https://technet.microsoft.com/en-us/library/dn584107.aspx) ou um proxy de terceiros.
 
 
-### <a name="BKMK_CertsAndTemplates"></a>Certificados e Modelos
+### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Certificados e Modelos
 
 |Objeto|Detalhes|
 |----------|-----------|
@@ -57,13 +58,13 @@ Recomendamos a publicação do servidor NDES através de um proxy, tal como o [p
 |**Certificado de autenticação do servidor**|Pedido pela sua AC emissora ou a AC pública, instala e vincula este certificado SLL no IIS no servidor do NDES.|
 |**Certificado da AC de Raiz Fidedigna**|Exporta-o como um ficheiro **.cer** a partir da AC de raiz emissora ou de qualquer dispositivo que confie na AC de raiz emissora e implementa-o em dispositivos com o perfil de certificado da AC Fidedigna.<br /><br />Utiliza apenas um certificado da AC de Raiz Fidedigna por cada plataforma de sistema operativo e associa-o a cada perfil de Certificado de Raiz Fidedigna que criar.<br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
 
-### <a name="BKMK_Accounts"></a>Contas
+### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Contas
 
 |Nome|Detalhes|
 |--------|-----------|
 |**Conta do serviço do NDES**|Especifica uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES.|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>Configurar a sua infraestrutura
+## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Configurar a sua infraestrutura
 Antes de poder configurar perfis de certificado, tem de concluir as seguintes tarefas, o que requer conhecimento do Windows Server 2012 R2 e dos Serviços de Certificados do Active Directory (ADCS):
 
 **Tarefa 1**: criar uma conta do serviço do NDES
@@ -76,21 +77,21 @@ Antes de poder configurar perfis de certificado, tem de concluir as seguintes ta
 
 **Tarefa 5**: ativar, instalar e configurar o Intune Certificate Connector
 
-### Tarefa 1 - criar uma conta do serviço do NDES
+### <a name="task-1---create-an-ndes-service-account"></a>Tarefa 1 – criar uma conta do serviço do NDES
 
 Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Irá especificar esta conta quando configurar os modelos na AC emissora antes de instalar e configurar o NDES. Certifique-se de que o utilizador tem os direitos predefinidos para **Iniciar Sessão Local**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
 
 
 
 
-### Tarefa 2 - configurar modelos de certificado na autoridade de certificação
+### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>Tarefa 2 – configurar modelos de certificado na autoridade de certificação
 Nesta tarefa irá:
 
 -   Configurar um modelo de certificados para o NDES
 
 -   Publicar o modelo de certificado para o NDES
 
-##### Para configurar a autoridade de certificação
+##### <a name="to-configure-the-certification-authority"></a>Para configurar a autoridade de certificação
 
 1.  Inicie sessão como administrador da empresa. 
 
@@ -100,7 +101,7 @@ Nesta tarefa irá:
 
     -   Especifique um **Nome a apresentar do modelo** amigável.
 
-    -   No separador **Nome do Requerente** , selecione **Fornecer no pedido**. (A segurança é imposta pelo módulo de política do Intune para o NDES).
+    -   No separador **Nome do Requerente**, selecione **Fornecer no pedido**. (A segurança é imposta pelo módulo de política do Intune para o NDES).
 
     -   No separador **Extensões** certifique-se de que a **Descrição das Políticas de Aplicações** inclui a **Autenticação do Cliente**.
 
@@ -143,12 +144,12 @@ Para configurar a AC de modo a que permita ao autor do pedido especificar o per�
 
 4.  Na AC emissora, utilize o snap-in Autoridade de Certificação para publicar o modelo de certificado.
 
-    1.  Selecione o nó **Modelos de Certificados**, clique em **Ação**-&gt; **Novo** &gt; **Modelo de Certificado a Emitir** e, em seguida, selecione o modelo que criou no passo 2.
+    1.  Selecione o nó **Modelos de Certificados**, clique em **Ação**-&gt; **Novo** &gt; **Modelo de certificado a emitir** e, em seguida, selecione o modelo que criou no passo 2.
 
     2.  Valide o modelo publicado ao visualizá-lo na pasta **Modelos de Certificado** .
 
 
-### Tarefa 3 - configurar pré-requisitos no servidor do NDES
+### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>Tarefa 3 – configurar pré-requisitos no servidor do NDES
 Nesta tarefa irá:
 
 -   Adicionar o NDES a um Windows Server e configurar ISS para suportar o NDES
@@ -189,7 +190,7 @@ Nesta tarefa irá:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### Tarefa 4 - configurar o NDES para ser utilizado com o Intune
+### <a name="task-4---configure-ndes-for-use-with-intune"></a>Tarefa 4 – configurar o NDES para ser utilizado com o Intune
 Nesta tarefa irá:
 
 -   Configurar o NDES para ser utilizado com a AC emissora
@@ -198,22 +199,22 @@ Nesta tarefa irá:
 
 -   Configurar a Filtragem de Pedidos no IIS
 
-##### Para configurar o NDES para ser utilizado com o Intune
+##### <a name="to-configure-ndes-for-use-with-intune"></a>Para configurar o NDES para ser utilizado com o Intune
 
 1.  No Servidor do NDES, abra o assistente de Configuração de AD CS e, em seguida, efetue as seguintes configurações.
 
     > [!TIP]
     > Caso tenha clicado na ligação na tarefa anterior, este assistente já estará aberto. Caso contrário, abra o Gestor de Servidores para aceder à configuração pós-implementação dos Serviços de Certificados do Active Directory.
 
-    -   Na página **Serviços de Função** , selecione o **Serviço de Inscrição de Dispositivos de Rede**.
+    -   Na página **Serviços de Função**, selecione o **Serviço de Inscrição de Dispositivos de Rede**.
 
     -   Na página **Conta do Serviço do NDES** especifique a Conta do Serviço do NDES.
 
-    -   Na página **AC para NDES** , clique em **Selecionar**e, em seguida, clique na AC emissora na qual configurou o modelo de certificado.
+    -   Na página **AC para NDES**, clique em **Selecionar**e, em seguida, clique na AC emissora na qual configurou o modelo de certificado.
 
     -   Na página **Criptografia para NDES** defina o comprimento da chave para corresponder aos requisitos da sua empresa.
 
-    Na página **Confirmação** , clique em **Configurar** para concluir o assistente.
+    Na página **Confirmação**, clique em **Configurar** para concluir o assistente.
 
 2.  Após o assistente ser concluído, edite a seguinte chave de registo no Servidor do NDES:
 
@@ -247,7 +248,7 @@ Nesta tarefa irá:
 
     Se obtiver **503 Serviço indisponível**, verifique o visualizador de eventos. É provável que o conjunto aplicacional esteja parado devido a um direito em falta para o utilizador do NDES. Esses direitos estão descritos na Tarefa 1.
 
-##### Para Instalar e vincular certificados no Servidor do NDES
+##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>Para Instalar e vincular certificados no Servidor do NDES
 
 1.  No seu Servidor do NDES, peça e instale um certificado de **autenticação de servidor** à sua AC interna ou pública. Irá, em seguida, vincular este certificado SSL no IIS.
 
@@ -267,11 +268,11 @@ Nesta tarefa irá:
 
     O certificado de autenticação de cliente tem de ter as seguintes propriedades:
 
-    **Utilização de Chave Avançada** - tem de incluir **Autenticação de Cliente**.
+    **Utilização de Chave Avançada** – tem de incluir **Autenticação de Cliente**.
 
-    **Nome do Requerente** - tem de ser igual ao nome DNS do servidor no qual está a instalar o certificado (o Servidor do NDES).
+    **Nome do Requerente** – tem de ser igual ao nome DNS do servidor no qual está a instalar o certificado (o Servidor do NDES).
 
-##### Para configurar a Filtragem de Pedidos no IIS
+##### <a name="to-configure-iis-request-filtering"></a>Para configurar a Filtragem de Pedidos no IIS
 
 1.  No Servidor do NDES, abra o **Gestor de IIS**, selecione o **Site Predefinido** no painel **Ligações** e, em seguida, abra a **Filtragem de Pedidos**.
 
@@ -293,14 +294,14 @@ Nesta tarefa irá:
 
 4.  Reinicie o servidor do NDES. O servidor está agora pronto para suportar o Certificate Connector.
 
-### Tarefa 5 - ativar, instalar e configurar o Intune Certificate Connector
+### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>Tarefa 5 – ativar, instalar e configurar o Intune Certificate Connector
 Nesta tarefa irá:
 
 Ativar o suporte para o NDES no Intune.
 
 Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
 
-##### Para ativar o suporte do Certificate Connector
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Para ativar o suporte do Certificate Connector
 
 1.  Abra a [consola de administração do Intune](https://manage.microsoft.com), clique em **Administração** &gt; **Certificate Connector**.
 
@@ -308,7 +309,7 @@ Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
 
 3.  Selecione **Ativar Certificate Connector**e, em seguida, clique em **OK**.
 
-##### Para transferir, instalar e configurar o Certificate Connector
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Para transferir, instalar e configurar o Certificate Connector
 
 1.  Abra a [consola de administração do Intune](https://manage.microsoft.com) e, em seguida, clique em **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **Certificate Connector** &gt; **Transferir Certificate Connector**.
 
@@ -342,13 +343,13 @@ Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
 
 Para se certificar de que o serviço está em execução, abra um browser e introduza o seguinte URL que deverá devolver um erro **403** :
 
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
+**https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-## Passos seguintes
+## <a name="next-steps"></a>Passos seguintes
 Está agora pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](Configure-Intune-certificate-profiles.md).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 
