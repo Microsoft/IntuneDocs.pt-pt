@@ -3,8 +3,9 @@ title: "Compreender os seus dispositivos com o inventário | Microsoft Intune"
 description: "Utilize o Intune para ver informações sobre o hardware dos dispositivos que gere."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
-ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Compreender os seus dispositivos com o inventário no Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Compreender os seus dispositivos com o inventário no Microsoft Intune
 O Microsoft Intune permite ver o inventário de dispositivos inscritos e PCs Windows que executam o software de cliente do Intune.
 Normalmente, o Intune recolhe o inventário de dispositivos geridos a cada 7 dias. Por este motivo, poderá haver um atraso antes de os relatórios mostrarem os resultados de alterações recentes nos dispositivos, por exemplo, uma alteração no nome do dispositivo ou no espaço de armazenamento livre.
 
-## O que é recolhido dos dispositivos inscritos?
+## <a name="whats-collected-from-enrolled-devices"></a>O que é recolhido dos dispositivos inscritos?
 Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relatórios de Inventário de Dispositivos Móveis](understand-microsoft-intune-operations-by-using-reports.md). O Intune recolhe o seguinte inventário dos dispositivos inscritos:
 
 |Propriedade|Recolhido por|
@@ -34,18 +35,18 @@ Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relató
 |**Modelo**|Todos os dispositivos|
 |**Canal de Gestão**|Todos os dispositivos|
 |**Registado no AAD**|Todos os dispositivos, exceto Mac OS X|
-|**Compatível**|Todos os dispositivos|
+|**Compatibilidade:**|Todos os dispositivos|
 |**EAS Ativado**|Todos os dispositivos, exceto Mac OS X|
 |**ID de Ativação do EAS**|Todos os dispositivos, exceto Mac OS X|
 |**Hora de Ativação do EAS**|Todos os dispositivos, exceto Mac OS X|
 |**Estado da Gestão**|Todos os dispositivos|
 |**Endereço de E-mail**|Todos os dispositivos|
 |**ID do Exchange ActiveSync**|Todos os dispositivos|
-|**Com jailbreak ou root**|Apenas dispositivos iOS e Android|
-|**ID de Dispositivo Exclusivo**|Todos os dispositivos, exceto Exchange ActiveSync|
-|**Número de série**|Dispositivos iOS, Mac OS X, Android, Windows 8.1 e Windows 10|
-|**Espaço de Armazenamento Total**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10|
-|**Espaço de Armazenamento Livre**|Dispositivos iOS, Mac OS X, Windows 8.1 e Windows 10|
+|**Com Jailbreak ou Root**|Apenas dispositivos iOS e Android|
+|**ID Exclusivo de Dispositivo**|Todos os dispositivos, exceto Exchange ActiveSync|
+|**Número de série**|Dispositivos com iOS, Mac OS X, Android, Windows 8.1 e computadores com o Windows 10|
+|**Espaço de Armazenamento Total**|Dispositivos com iOS, Mac OS X, Windows 8.1, Windows 10 Mobile e computadores com o Windows 10|
+|**Espaço de Armazenamento Livre**|Dispositivos com iOS, Mac OS X, Windows 8.1 e computadores com o Windows 10|
 |**Número de Telefone**<br>Os telefones que são classificados como empresariais estão identificados com o respetivo número de telefone completo (por exemplo, quando executa um relatório de inventário de dispositivos móveis). Os números de telefone BYOD são mascarados com &#42;, e apenas são apresentados os quatro últimos dígitos.|Dispositivos iOS, Android e Windows Phone|
 |**IMEI**|Dispositivos Exchange ActiveSync, iOS, Android e Windows Phone|
 |**MEID**<br>Identificador de Equipamento Móvel|Apenas dispositivos iOS|
@@ -55,12 +56,12 @@ Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relató
 |**Supervisionado**|Apenas dispositivos iOS|
 |**Estado do Bloqueio de Ativação**|Apenas dispositivos iOS|
 |**Data de Inscrição**|Todos os dispositivos|
-|**Última Actualização**|Todos os dispositivos|
+|**Última Atualização**|Todos os dispositivos|
 |**MAC Ethernet**|Apenas dispositivos Mac OS X|
 |**Bloqueio de Ativação Ativado**|Apenas dispositivos iOS|
 |**Encriptação Ativada**|Todos os dispositivos|
 
-## O que é recolhido dos PCs Windows?
+## <a name="whats-collected-from-windows-pcs"></a>O que é recolhido dos PCs Windows?
 > [!IMPORTANT]
 > Esta secção aplica-se apenas aos PCs Windows que executam o software de cliente de PC Windows do Intune.
 
@@ -106,7 +107,7 @@ Para ver o inventário recolhido pelos PCs Windows, execute os [Relatórios de I
 
 -   **Utilizador Atribuído**
 
--   **Última Actualização**
+-   **Última Atualização**
 
 <!-- this section below belongs in the planning journey
 ### See Also
@@ -115,6 +116,6 @@ Para ver o inventário recolhido pelos PCs Windows, execute os [Relatórios de I
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

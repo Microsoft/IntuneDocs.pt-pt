@@ -14,46 +14,46 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
-ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
+ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
+ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune
-Quando um dispositivo se perde ou é roubado ou se o empregado sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, poderá não querer remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao empregado.
+Quando um dispositivo se perde ou é roubado ou se o funcionário sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, poderá não querer remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao funcionário.
 
-Para remover seletivamente os dados empresariais da aplicação, crie um pedido de apagamento com os passos descritos na secção **Criar um pedido de apagamento** deste tópico.  Depois de concluído o pedido, da próxima vez que a aplicação for executada no dispositivo, os dados da empresa são removidos da aplicação.
+Para remover seletivamente os dados de aplicações da empresa, utilize os passos neste tópico para criar um pedido de eliminação de dados. Depois de concluir o pedido, da próxima vez que a aplicação for executada no dispositivo, os dados da empresa são removidos da aplicação.
 >[!NOTE]
-> Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, apenas é aplicável à aplicação Microsoft Outlook.
+> Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, só é aplicável à aplicação Microsoft Outlook.
 
 
 
-## <a name="create-a-wipe-request"></a>Criar um pedido de apagamento
+## <a name="create-a-wipe-request"></a>Criar um pedido de eliminação
 
-1.  No painel **Gestão de aplicações móveis do Intune** , escolha o mosaico **Pedidos de apagamento**.
+1.  No painel **Gestão de aplicações móveis do Intune**, selecione o mosaico **Pedidos de eliminação**.
 
-    ![Captura de ecrã do painel de gestão de aplicações móveis do Intune com o mosaico Resumo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![Captura de ecrã do painel de gestão de aplicações móveis do Intune com os mosaicos Resumo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Selecione **Novos pedidos de apagamento**.
+2.  Selecione **Novos pedidos de eliminação**. Esta ação abre o painel **Novo pedido de eliminação**.
 
-    ![Captura de ecrã do painel Novo pedido de apagamento](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
+    ![Captura de ecrã do painel Novo pedido de eliminação](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  No painel **Novo pedido de apagamento** , escolha **Utilizador** para abrir o painel **Utilizador** e selecione o utilizador cujos dados da aplicação pretende apagar.
+3.  Selecione **Utilizador** para abrir o painel **Utilizador** e selecione o utilizador cujos dados da aplicação quer apagar.
 
 4.  Escolha **Dispositivo**.  É aberto o painel **Dispositivo** que lista todos os dispositivos associados ao utilizador selecionado.  Selecione o dispositivo que pretende eliminar.
 
-5.  Está agora novamente no painel **Novo pedido de apagamento**. Escolha **Ok** para fazer um pedido de apagamento. O serviço cria e controla um pedido de eliminação separado para cada aplicação protegida no dispositivo.
+5.  Está agora novamente no painel **Novo pedido de eliminação**. Escolha **Ok** para fazer um pedido de eliminação. O serviço cria e controla um pedido de eliminação separado para cada aplicação protegida no dispositivo.
 
 
-![Captura de ecrã do mosaico Pedidos de apagamento ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
+![Captura de ecrã do mosaico Pedidos de eliminação ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Monitorizar os pedidos de eliminação
-O painel **Gestão de aplicações móveis do Intune** tem um relatório resumido no mosaico **Pedido de eliminação** .  Apresenta o estado geral e inclui o número de pedidos pendentes e falhas. Pode seguir os passos descritos abaixo para obter mais detalhes:
+O painel **Gestão de aplicações móveis do Intune** tem um relatório resumido no mosaico **Pedido de eliminação** .  Apresenta o estado geral e inclui o número de pedidos pendentes e falhas. Pode seguir os seguintes passos para obter mais detalhes:
 
-1.  No painel **Gestão de aplicações móveis do Intune** , escolha o mosaico **Pedido de eliminação** para abrir o painel **Pedido de eliminação**.
+1.  No painel **Gestão de aplicações móveis do Intune**, selecione o mosaico **Pedido de eliminação** para abrir o painel **Pedido de eliminação**.
 
-2.  No painel **Pedido de eliminação** , pode ver a lista dos pedidos agrupados por utilizadores.  Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver vários pedidos para um utilizador.  O estado indica se um pedido de eliminação ainda está **pendente**, **falhou**ou **teve êxito**.
+2.  No painel **Pedido de eliminação**, pode ver a lista dos pedidos agrupados por utilizadores. Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver múltiplos pedidos para um utilizador. O estado indica se um pedido de eliminação está **pendente**, **falhou** ou se teve **êxito**.
 
 O utilizador tem de abrir a aplicação para que a eliminação ocorra. Após efetuar o pedido, a eliminação pode durar até 30 minutos. 
 
@@ -66,6 +66,6 @@ As eliminações em estado pendente são apresentadas até que as elimine manual
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

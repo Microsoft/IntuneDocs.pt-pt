@@ -3,13 +3,15 @@
 # [Novidades](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Implementar e Utilizar](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Desenvolver e Personalizar Aplicações](intune-app-sdk.md)
-## [Descrição Geral do SDK da Aplicação Microsoft Intune](intune-app-sdk.md)
-## [Introdução ao SDK da Aplicação Microsoft Intune](intune-app-sdk-get-started.md)
-## [Guia para Programadores do SDK da Aplicação Microsoft Intune para iOS](intune-app-sdk-ios.md)
-## [Guia para Programadores do SDK da Aplicação do Microsoft Intune para Android](intune-app-sdk-android.md)
-# [Resolver Problemas](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+## [Descrição Geral do SDK da Aplicação do Microsoft Intune](intune-app-sdk.md)
+## [Introdução ao SDK da Aplicação do Microsoft Intune](intune-app-sdk-get-started.md)
+## [Guia para Programadores do SDK da Aplicação do Intune para iOS](intune-app-sdk-ios.md)
+## [Guia para Programadores do SDK da Aplicação do Intune para Android](intune-app-sdk-android.md)
+## [Plugin Cordova do SDK da Aplicação do Intune](intune-app-sdk-cordova.md)
+## [Componente Xamarin do SDK da Aplicação do Intune](intune-app-sdk-xamarin.md)
+# [Resolução de Problemas](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

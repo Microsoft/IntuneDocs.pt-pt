@@ -2,10 +2,10 @@
 title: "Ligações VPN | Microsoft Intune"
 description: "Utilize Perfis de VPN para implementar definições da VPN em utilizadores e dispositivos na sua organização."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 
 ---
 
-# Ligações VPN no Microsoft Intune
+# <a name="vpn-connections-in-microsoft-intune"></a>Ligações VPN no Microsoft Intune
 
-As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um *perfil de ligação VPN* para iniciar uma ligação com o servidor VPN. Utilize os *Perfis VPN* no Microsoft Intune para implementar definições de VPN a utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede. 
+As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um *perfil de ligação VPN* para iniciar uma ligação com o servidor VPN. Utilize os *Perfis VPN* no Microsoft Intune para implementar definições de VPN a utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede.
 
 Por exemplo, suponha que pretende aprovisionar todos os dispositivos iOS com as definições necessárias para estabelecer uma ligação a uma partilha de ficheiros na rede da empresa. Pode criar um perfil de VPN com as definições necessárias para se ligar à rede da empresa e, em seguida, implementar este perfil em todos os utilizadores com dispositivos iOS. Os utilizadores verão a ligação VPN na lista de redes disponíveis e poderão ligar-se sem qualquer esforço.
 
@@ -34,21 +34,23 @@ Pode configurar os seguintes tipos de dispositivo com perfis de VPN:
 * Dispositivos com Mac OS X 10.9 e posterior
 * Dispositivos inscritos com Windows 8.1 e posterior
 * Dispositivos a executar o Windows Phone 8.1 e posterior
-* Dispositivos que executam o Windows 10 Desktop e Mobile
+* Dispositivos que executam o Windows 10 para computadores e dispositivos móveis
 
 As opções de configuração do perfil da VPN variam consoante o tipo de dispositivo selecionado.
 
-## Tipos de ligação VPN
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
+## <a name="vpn-connection-types"></a>Tipos de ligação VPN
 
 O Intune suporta a criação de perfis de VPN que utilizem os seguintes tipos de ligação:
 
 
 
 
-Tipo de ligação |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
+Tipo de ligação |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 para computadores e dispositivos móveis |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |Não  |Não    | Sim, (apenas OMA-URI, Mobile)|     
-Cisco (IPsec)|Sim |Não   |Não  |Não  |Não | Não|
+Cisco (IPsec)|Sim |Sim   |Não  |Não  |Não | Não|
 Citrix|Sim |Não   |Não  |Não  |Não | Não|
 Pulse Secure|Sim  |Sim |Sim   |Sim  |Sim| Sim|        
 F5 Edge Client|Sim |Sim |Sim |Sim  |   Sim |  Sim|   
@@ -67,21 +69,21 @@ L2TP|Perfil personalizado iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
 
  Saiba como criar perfis de VPN personalizados com definições URI em [Configurações personalizadas para perfis de VPN](custom-configurations-for-vpn-profiles.md).     
 
-## Métodos para proteger perfis de VPN
+## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
 
 Os perfis da VPN podem utilizar vários tipos de ligação e protocolos diferentes de fabricantes diferentes. Normalmente, estas ligações são protegidas através de um de dois métodos.
 
-### Certificados
+### <a name="certificates"></a>Certificados
 
 Quando cria o perfil da VPN, pode escolher um perfil de certificado SCEP ou .PFX que tenha criado anteriormente no Intune. Este é conhecido como certificado de identidade. É utilizado para autenticação em relação a um certificado fidedigno (ou um *certificado de raiz*) que criou para estabelecer que o dispositivo do utilizador tem permissões para se ligar. O certificado fidedigno é implementado no computador que irá autenticar a ligação VPN (normalmente, o servidor VPN).
 
 Para mais informações sobre como criar e utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
-### Nome de utilizador e palavra-passe
+### <a name="user-name-and-password"></a>Nome de utilizador e palavra-passe
 
 O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e uma palavra-passe.
 
-## Criar um perfil da VPN
+## <a name="create-a-vpn-profile"></a>Criar um perfil da VPN
 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Adicionar Política**.
 2. Selecione um modelo para a nova política expandindo o tipo de dispositivo relevante e, em seguida, selecione o perfil da VPN desse dispositivo:
@@ -91,7 +93,7 @@ O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e 
     * **Perfil da VPN (Mac OS X 10.9 e posterior)**
     * **Perfil da VPN (Windows 8.1 e posterior)**
     * **Perfil da VPN (Windows Phone 8.1 e posterior)**
-    * **Perfil da VPN (Windows 10 Desktop e Mobile e posterior)**
+    * **Perfil da VPN (Windows 10 para computadores e dispositivos móveis e posterior)**
 
  Só pode criar e implementar uma política de perfil da VPN personalizada. As definições recomendadas não estão disponíveis.
 
@@ -107,7 +109,7 @@ Nome da definição  |Mais informações
 **Nome**     |Introduza um nome exclusivo para o perfil da VPN, de modo a conseguir identificá-lo na consola do Intune.         
 **Descrição**     |Forneça uma descrição geral do perfil da VPN e outras informações relevantes que poderão ajudá-lo a localizá-lo.         
 **Nome da ligação VPN (apresentado aos utilizadores)**     |Especifique um nome para o perfil da VPN. Este é nome que será visto pelos utilizadores na lista de ligações VPN disponíveis nos respetivos dispositivos.         
-**Tipo de ligação**     |  Selecione um dos seguintes tipos de ligação a utilizar no perfil da VPN: **Cisco AnyConnect** (não disponível para Windows 8.1 nem Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Tipo de ligação**     |  Selecione um dos seguintes tipos de ligação a utilizar no perfil da VPN: **Cisco AnyConnect** (não disponível para Windows 8.1 nem Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
 **Descrição do servidor VPN**     | Especifique uma descrição do servidor VPN ao qual os dispositivos serão ligados. Exemplo: **Servidor VPN da Contoso**. Se o tipo de ligação for **F5 Edge Client**, utilize o campo **Lista de servidores** para especificar uma lista de descrições e endereços IP de servidores.
 **Endereço IP ou FQDN do servidor**    |Fornece o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos serão ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.  Se o tipo de ligação for **F5 Edge Client**, utilize o campo **Lista de servidores** para especificar uma lista de descrições e endereços IP de servidores.         |         
 **Lista de servidores**     |Escolha **Adicionar** para adicionar um servidor VPN novo para utilizar na ligação da VPN. Também pode especificar o servidor predefinido da ligação. Esta opção só é apresentada se o tipo de ligação for **F5 Edge Client**.         
@@ -115,8 +117,8 @@ Nome da definição  |Mais informações
 **Método de autenticação**| Selecione o método de autenticação utilizado pela ligação VPN: **Certificados** ou **Nome de Utilizador e Palavra-passe**. (O **Nome de Utilizador e a Palavra-passe** não estarão disponíveis se o tipo de ligação for Cisco AnyConnect.) A opção **Método de autenticação** não está disponível para o Windows 8.1.
 **Memorizar as credenciais do utilizador sempre que iniciar sessão**|Selecione este opção para garantir que as credenciais do utilizador são memorizadas, para que o mesmo não tenha de introduzi-las sempre que for efetuada uma ligação.
 **Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação VPN. Para mais informações sobre como utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.
-**Função**| Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure**.
-**Realm**|Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure**.
+**Função**| Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure** ou **Citrix**.
+**Realm**|Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure ou Citrix. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure** ou **Citrix**.
 **Grupo ou domínio de início de sessão**|Especifique o nome do grupo ou domínio de início de sessão ao qual pretende ligar-se. Esta opção só é apresentada se o tipo de ligação for **Dell SonicWALL Mobile Connect**.
 **Identificação digital**|Especifique uma cadeia de carateres (por exemplo "Código de Identificação Digital da Contoso") que será utilizada para verificar a fidedignidade do servidor VPN. A identificação digital pode ser enviada para o cliente para que confie em qualquer servidor que apresente essa mesma identificação digital ao ligar. Se o dispositivo ainda não incluir a identificação digital, pedirá ao utilizador para confiar no servidor VPN ao qual está a ligar e mostrar a identificação digital. (O utilizador verifica manualmente a mesma e escolhe **fidedignidade** para estabelecer a ligação.) Esta opção só é apresentada se o tipo de ligação for **CheckPoint Mobile VPN**.
 **VPN Por Aplicação**|Selecione esta opção se pretende associar esta ligação VPN a uma aplicação iOS ou Mac OS X, para que a ligação seja aberta quando a aplicação é executada. Pode associar o perfil da VPN a uma aplicação ao implementar o software. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
@@ -130,7 +132,7 @@ Nome da definição  |Mais informações
 **Ignorar a VPN quando estiver ligado à rede Wi-Fi da empresa** (apenas no Windows Phone 8.1)|Selecione esta opção para especificar que a ligação VPN não será utilizada quando o dispositivo estiver ligado à rede Wi-Fi da empresa.
 **Ignorar a VPN quando estiver ligado à rede Wi-Fi doméstica** (apenas no Windows Phone 8.1)|Selecione esta opção para especificar que a ligação VPN não será utilizada quando o dispositivo estiver ligado à rede Wi-Fi doméstica.
 
-As seguintes definições adicionais estão disponíveis para dispositivos Windows 10 Desktop e Mobile.
+As seguintes definições adicionais estão disponíveis para computadores com o Windows 10 e dispositivos com o Windows 10 Mobile.
 
 Nome da definição  |Mais informações  
 ---------|---------
@@ -147,26 +149,26 @@ Segue-se um exemplo de quando poderá utilizar definições de limites da empres
 
 Definir rotas em limites empresariais é útil quando o seu tipo de ligação VPN não lhe permite definir o modo como o tráfego é processado em túnel dividido. Nesse caso, utilize **Rotas** para listar as rotas que utilizarão a VPN.
 
-Pode restringir a utilização da VPN para dispositivos Windows 10 para aplicações específicas, criando uma definição de OMA-URI personalizada.
+Pode restringir a utilização da VPN para dispositivos com o Windows 10 para aplicações específicas, criando uma definição de OMA-URI personalizada.
 
 A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política**.
 
-### VPN a pedido para dispositivos iOS
+### <a name="on-demand-vpn-for-ios-devices"></a>VPN a pedido para dispositivos iOS
 Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
 
 > [!NOTE]
 >  
 > Não é possível utilizar a VPN por aplicação e a VPN a pedido na mesma política.
- 
-1. Na página de configuração de políticas, localize **Regras a pedido para esta ligação VPN**. As colunas têm a etiqueta **Correspondência**, a condição que as regras verificam, e **Ação**, a ação que a política aciona quando a condição é cumprida. 
+
+1. Na página de configuração de políticas, localize **Regras a pedido para esta ligação VPN**. As colunas têm a etiqueta **Correspondência**, a condição que as regras verificam, e **Ação**, a ação que a política aciona quando a condição é cumprida.
 2. Escolha **Adicionar** para criar uma regra. Existem dois tipos de correspondências que pode configurar na regra. Só pode configurar um dos seguintes tipos por regra.
-  - **SSIDs**, que se referem às redes sem fios. 
+  - **SSIDs**, que se referem às redes sem fios.
   - **Domínios de pesquisa DNS**, que são...  Pode utilizar nomes de domínio completamente qualificados como *equipa.corp.contoso.com* ou utilizar domínios como *contoso.com*, que é o equivalente a utilizar * *.contoso.com*.
 3. Opcional: forneça uma pesquisa de cadeia de URL, que é um URL que a regra utiliza como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a VPN será estabelecida e ligará o dispositivo ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
 4. Escolha uma das seguintes ações:
   - **Ligar**
   - **Avaliar ligação**, que tem três definições: a. **Ação de domínio** – escolha **Ligar caso seja necessário** ou **Nunca ligar**
-    ; b. **Lista de domínios separada por vírgulas** – configure esta opção apenas se escolher uma **Ação de domínio** em **Ligar caso seja necessário** 
+    ; b. **Lista de domínios separada por vírgulas** – configure esta opção apenas se escolher uma **Ação de domínio** em **Ligar caso seja necessário**
      c. **Pesquisa de cadeia de URL necessária** – um URL de HTTP ou HTTPS (preferencial) como *https://vpntestprobe.contoso.com*. A regra verificará se existe uma resposta deste endereço. Caso contrário e se a **Ação de domínio** for **Ligar caso seja necessário**, será acionada a VPN.
      > [!TIP]
      >
@@ -174,16 +176,16 @@ Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
   - **Ignorar** – esta ação não efetua alterações na conetividade da VPN. Se a VPN estiver ligada, deixe-a ligada; se não estiver ligada, não a ligue. Por exemplo, poderá ter uma regra que liga a VPN para todos os seus sites internos da empresa, mas deseja que um desses sites internos esteja acessível apenas quando o dispositivo está, realmente, ligado à rede empresarial. Nesse caso, poderia criar uma regra para ignorar para esse site.
   - **Desligar** – desligue dispositivos da VPN quando as condições corresponderem. Por exemplo, pode listar as redes sem fios da empresa no campo **SSIDs** e criar uma regra que desliga os dispositivos da VPN, quando estes ligam a uma dessas redes.
 
-As regras específicas do domínio são avaliadas antes das regras de todos os domínios. 
+As regras específicas do domínio são avaliadas antes das regras de todos os domínios.
 
 
-## Implementar a política
+## <a name="deploy-the-policy"></a>Implementar a política
 
-1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
+1.  Na área de trabalho **Policy**, selecione a que pretende implementar e escolha **Manage Deployment**.
 
-2.  Na caixa de diálogo **Gerir a Implementação**, para:
+2.  Na caixa de diálogo **Manage Deployment**, para:
 
-    -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Adicionar** &gt; **OK**.
+    -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Add** &gt; **OK**.
 
     -   Para fechar a caixa de diálogo sem implementar a política, escolha **Cancelar**.
 
@@ -192,13 +194,13 @@ Após uma implementação efetuada com êxito, os utilizadores verão o nome da 
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
 
-### Consulte também
+### <a name="see-also"></a>Consulte também
 [Configurações personalizadas para perfis VPN](Custom-configurations-for-VPN-profiles.md)
 
 [VPN por aplicação para Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

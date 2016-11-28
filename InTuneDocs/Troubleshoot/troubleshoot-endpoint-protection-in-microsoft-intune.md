@@ -2,7 +2,8 @@
 title: "Resolução de Problemas do Endpoint Protection | Microsoft Intune"
 description: "Resolva problemas quando o Endpoint Protection do Microsoft Intune está a ser utilizado."
 keywords: 
-author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 71f976fba252950fd9a8818fb27fbbb294369894
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
 
 
 ---
 
-# Troubleshoot Endpoint Protection in Microsoft Intune
+# <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
 Utilize as informações nesta secção para o ajudar a resolver problemas ao utilizar o Endpoint Protection do Microsoft Intune.
 
 Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
 
 
-### Mensagens de erro do Endpoint Protection
+### <a name="endpoint-protection-error-messages"></a>Mensagens de erro do Endpoint Protection
 Esta secção descreve possíveis causas e soluções para os seguintes erros e avisos que são apresentados no painel **Estado do Endpoint Protection** na [consola de administração do Intune](https://manage.microsoft.com).
 
 |Item de estado|Possíveis causas|Possíveis soluções|
@@ -44,11 +45,11 @@ Esta secção descreve possíveis causas e soluções para os seguintes erros e 
 |**Análise rápida em atraso**|Não foi concluída nenhuma análise rápida nos últimos 14 dias. Esta situação pode ocorrer se o computador for reiniciado durante uma análise rápida.|Se tiver uma análise rápida em atraso, pode executar uma única análise rápida ou agendar análises rápidas periódicas a partir da [consola de administração do Intune](https://manage.microsoft.com), seguindo as informações contidas no tópico [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).|
 |**Outra aplicação de Endpoint Protection em execução**|Está a ser executada outra aplicação de Endpoint Protection e o computador está em bom estado de funcionamento.|Por predefinição, se estiver instalada outra aplicação de Endpoint Protection e o Intune detetar essa aplicação, o Endpoint Protection desativa-se automaticamente. Se o Intune não detetar a outra aplicação de Endpoint Protection, o Endpoint Protection permanecerá ativado. Para mais informações, consulte [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
-### Passos seguintes
+### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
