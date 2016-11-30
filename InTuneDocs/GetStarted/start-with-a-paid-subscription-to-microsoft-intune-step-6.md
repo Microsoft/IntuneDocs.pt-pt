@@ -1,10 +1,11 @@
 ---
-title: "Criar políticas e publicar aplicações | Microsoft Intune"
-description: "Explica como pode criar políticas e publicar uma aplicação de exemplo na sua subscrição do Intune"
+title: "Implementar políticas e aplicações | Microsoft Intune"
+description: "Pode ativar as definições de política e implementar aplicações que serão aplicadas assim que os dispositivos são inscritos na gestão."
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,94 +14,57 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 0bf3eb60b60e8ad1c91d3010230a41ce5d863dfe
+ms.sourcegitcommit: 0d2a3e5c05180c1a3f2ee3bf91813df3b5fa7bc6
+ms.openlocfilehash: 679c49d135c9161ecae5db704a3f6c96add003dc
 
 
 ---
 
-# Criar políticas e publicar aplicações
-As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Pode obter mais informações em [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+# <a name="create-policies-and-publish-apps"></a>Criar políticas e publicar aplicações
+Antes de começar a inscrição de aplicações no Intune, pode ativar as definições de política e as aplicações que serão implementadas assim que esses dispositivos fiquem disponíveis para gestão. As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Pode configurar a política, adicionar aplicações e implementar essas aplicações para que os dispositivos recebem as definições e aplicações assim que se inscrevam no Intune.
 
-Pode executar dois tipos de instalações de aplicações com o Intune. O primeiro é uma **instalação necessária**, que implementa automaticamente as aplicações nos computadores geridos. O segundo tipo é uma **instalação disponível**, que implementa as aplicações, ou ligações para as mesmas, no Portal da Empresa do Intune, para que os utilizadores possam optar por instalá-las nos computadores ou dispositivos móveis deles.
+As políticas e aplicações são específicas da plataforma.
 
-Os passos seguintes ajudá-lo-ão a configurar uma política de configuração de dispositivos móveis, uma política de firewall de PC Windows e ainda o Skype como instalação disponível para dispositivos móveis depois de serem inscritos.
+## <a name="manage-device-settings"></a>Gerir definições do dispositivo
 
-> [!TIP]
-> Depois de adicionar e implementar uma política nova, todos os utilizadores ou grupos nos quais tiver implementado a política herdam as definições como a respetiva política de linha de base. Pode sempre rever e editar os detalhes destas políticas mais tarde, a partir da Área de trabalho de política.
+ As definições de política do dispositivo são configuradas e geridas por plataforma. Pode configurar a política das seguintes plataformas:
 
+- [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android e Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [Windows 10 (PC e mobile)](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 8.1](https://docs.microsoft.com/intune/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](https://docs.microsoft.com/intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows Team](https://docs.microsoft.com/intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [PCs Windows com o cliente de software do Intune](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-## Criar e implementar políticas de configuração de dispositivos móveis
+Pode saber mais sobre como [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
-1.  Abra a [consola de administração do Intune](https://manage.microsoft.com/).
+## <a name="add-and-deploy-apps"></a>Adicionar e implementar aplicações
 
-2.  No painel esquerdo, escolha o ícone **Política**.
+Pode adicionar aplicações ao Intune e, em seguida, implementá-las em dispositivos geridos de duas formas:
+- **Instalação obrigatória** – As aplicações instalam automaticamente a aplicação para os dispositivos geridos
+- **Instalação disponível** – As aplicações são apresentadas no Portal da Empresa do Intune para que os utilizadores possam escolher se pretendem instalá-las nos seus dispositivos
 
-    ![admin-console-policy-workspace](./media/policy.png)
+### <a name="add-apps"></a>Adicionar aplicações
 
-3.  Na lista **Tarefas**, na página **Descrição Geral da Política**, escolha **Adicionar Política**.
+Primeiro, torne as aplicações disponíveis no Intune através de um dos seguintes métodos:
+- [Adicionar aplicações a dispositivos inscritos](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [Adicionar aplicações a PCs do cliente de software do Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
-4.  Na lista de políticas, expanda a plataforma para a qual pretende criar uma política e, em seguida, escolha **Configuração Geral** > **Criar e Implementar uma Política com as Definições Recomendadas** > **Criar Política**.
+### <a name="deploy-apps"></a>Implementar aplicações
 
-> [!NOTE]
-> Não existem definições recomendadas para políticas de configuração de dispositivos, uma vez que tem muitas opções por onde escolher. Tem de criar uma política de configuração de dispositivo personalizada.
+Agora que a aplicação está disponível no Intune, pode implementá-la em dispositivos geridos:
+- [Implementar aplicações em dispositivos](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- Implementar aplicações compradas em volume:
+    - [iOS – Programa comprado em volume](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+    - [Loja Windows para Empresas](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
 
-
-5.  Quando lhe for pedido para **Selecionar os grupos nos quais pretende implementar esta política**, escolha um grupo da lista de grupos disponíveis e escolha **Adicionar** > **OK**.
-
-A sua política é apresentada na lista de políticas de configuração e foi implementada no grupo **Utilizadores do Intune**. Faça duplo clique na política para ver as respetivas definições.
-
-## Publicar a aplicação Skype em dispositivos móveis
-
-1.  Na [consola de administração do Intune](https://manage.microsoft.com/), escolha o ícone **Aplicações** e, em seguida, escolha **Aplicações** > **Adicionar Aplicação**. Introduza as suas credenciais do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], caso pedido.
-
-    ![admin-console-apps-workspace](./media/apps.png)
-
-    > [!NOTE]
-    > Quando inicia o **Intune Software Publisher** pela primeira vez, ocorre um pequeno atraso durante a instalação da aplicação.
-
-2.  Leia o aviso de segurança e escolha **Executar**.
-
-3.  Na página **Antes de começar**, escolha **Seguinte**.
-
-4.  Na página **Configuração do software**, em **Selecione de que forma este software é disponibilizado nos dispositivos**, escolha **Ligação externa**.
-
-5.  Introduza uma ligação externa para o software em **Especificar o URL** e, em seguida, escolha **Seguinte** Certifique-se de que precede o URL com **http://**. Para a aplicação Skype, utilize a ligação abaixo que corresponda à plataforma de dispositivos móveis que está a utilizar:
-
-    -   **iOS:**   [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
-
-    -   **Android:**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
-
-    -   **Windows Phone 8 ou Windows Phone 8.1:**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
-
-6.  Na página **Descrição do software** , indique as informações que pretende que os utilizadores vejam no Portal da Empresa relativamente ao software e, em seguida, escolha **Seguinte**. Estão disponíveis as seguintes definições (este exemplo é relativo ao Skype):
-
-    -   **Editor:** introduza o nome do editor, "Microsoft"
-
-    -   **Nome:** introduza **Skype**
-
-    -   **Descrição:** introduza uma descrição para o software, como **aplicação de comunicação Skype**
-
-    -   **Categoria:** selecione a categoria que melhor se adequa a este software, como **Colaboração**
-
-    -   **Apresentar esta aplicação como uma aplicação em destaque e destacá-la no portal da empresa:** selecione esta opção para apresentar a aplicação de forma destacada no Portal da Empresa nos dispositivos móveis.
-
-    -   **Ícone:** selecione se pretende associar um ícone ao software. O tamanho máximo do ícone opcional é de 250 x 250 pixels e o tamanho recomendado é de 32 x 32 pixels.
-
-7.  Na página **Resumo**, verifique as informações do software e, em seguida, escolha **Carregar**. Escolha **Fechar** para sair do assistente.
-
-8.  Na [consola de administração do Intune](https://manage.microsoft.com/), escolha **Aplicações** > **Aplicações** > **Skype** > **Gerir Implementação**.
-
-9. Na página **Selecionar Grupos**, escolha **Utilizadores do Intune** para implementar o software nesse grupo de utilizadores e, em seguida, escolha **Adicionar** > **Seguinte**.
-
-10. Na página **Ação de Implementação** , selecione **Instalação Disponível** na coluna **Aprovação** do seu grupo.
-
-11. Escolha **Concluir**.
-
-A aplicação Skype está agora disponível para instalação em dispositivos móveis a partir do Portal da Empresa, mas tem primeiro de instalar o software do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] nos computadores e nos dispositivos móveis.
+    Depois de ter configurado as aplicações para implementação, pode [configurar aplicações](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune) e [monitorizar aplicações](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
-### Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Parabéns! Acabou de concluir o passo 6 do *Guia de introdução do Intune*.
 
 >[!div class="step-by-step"]
@@ -109,6 +73,6 @@ Parabéns! Acabou de concluir o passo 6 do *Guia de introdução do Intune*.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
