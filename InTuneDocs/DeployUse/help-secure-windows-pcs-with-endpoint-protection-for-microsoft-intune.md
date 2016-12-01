@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Endpoint Protection para PCs Windows | Microsoft Intune
 description: "Proteja os seus computadores geridos com o Endpoint Protection, que proporciona proteção em tempo real contra ameaças de software maligno."
@@ -16,17 +17,65 @@ translationtype: Human Translation
 ms.sourcegitcommit: a7d2c59332f2454694ecf58449a3b75a12027dfe
 ms.openlocfilehash: 5d662cab67c879a1f8bd5dbaf8e0461bf35b6e42
 
+||||||| merged common ancestors
+---
+title: Endpoint Protection para PCs Windows | Microsoft Intune
+description: "Proteja os seus computadores geridos com o Endpoint Protection, que proporciona proteção em tempo real contra ameaças de software maligno."
+keywords: 
+author: NathBarn
+manager: arob98
+ms.date: 07/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
+ms.reviewer: damionw
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a7d2c59332f2454694ecf58449a3b75a12027dfe
+ms.openlocfilehash: 5d662cab67c879a1f8bd5dbaf8e0461bf35b6e42
+
+=======
+---
+title: Endpoint Protection para PCs Windows | Microsoft Intune
+description: "Proteja os seus computadores geridos com o Endpoint Protection, que proporciona proteção em tempo real contra ameaças de software maligno."
+keywords: 
+author: staciebarker
+ms.author: stabar
+manager: arob98
+ms.date: 07/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
+ms.reviewer: damionw
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
+<<<<<<< HEAD
 
 # Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
+||||||| merged common ancestors
+
+# Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
+=======
+
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 O Microsoft Intune pode ajudá-lo a proteger os seus computadores geridos com o Endpoint Protection, que proporciona proteção em tempo real contra ameaças de software maligno, mantém as definições de software maligno atualizadas e analisa automaticamente os computadores. O Endpoint Protection também proporciona ferramentas que o ajudam a gerir e monitorizar ataques de software maligno.
 
 Se ainda não instalou o cliente Intune nos seus computadores, consulte [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Utilize as informações das secções seguintes para o ajudar a configurar, implementar e monitorizar o Endpoint Protection.
 
-## Escolher quando utilizar o Endpoint Protection
+## <a name="choose-when-to-use-endpoint-protection"></a>Escolher quando utilizar o Endpoint Protection
 Enquanto administrador de TI, uma das suas principais prioridades é manter os computadores que gere protegidos de software maligno e vírus. Antes de implementar o Intune em PCs Windows na sua organização, deve decidir como pretende proteger os seus computadores ao selecionar uma das seguintes opções e configurar as definições de política associadas:
 
 |Pretende:|Definições de política do Endpoint Protection|Mais informações|
@@ -49,7 +98,7 @@ Para mudar da sua aplicação de proteção de pontos finais atual para o Endpoi
 > [!NOTE]
 > O Intune não desinstalará automaticamente aplicações de proteção de pontos finais de terceiros.
 
-## Configurar o Endpoint Protection do Microsoft Intune
+## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurar o Endpoint Protection do Microsoft Intune
 Utilize os seguintes passos para o ajudar a configurar o Endpoint Protection do Microsoft Intune.
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** > **Adicionar Política**.
@@ -62,7 +111,7 @@ Pode utilizar as definições recomendadas ou personalizar as mesmas. Se precisa
 
 Pode ver a política implementada do Endpoint Protection na página **Todas as Políticas** da área de trabalho **Política**.
 
-## Especificar as definições de serviço do Endpoint Protection
+## <a name="specify-endpoint-protection-service-settings"></a>Especificar as definições de serviço do Endpoint Protection
 
 |Definição de política|Detalhes|
 |------------------|--------------------|
@@ -77,7 +126,7 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 
   O Microsoft Security Essentials alerta o utilizador com proteção em tempo real quando potenciais ameaças, tais como vírus e spyware, estão a tentar instalar-se ou a executar no seu PC. No momento em que isto acontecer, verá uma mensagem na área de notificação no lado direito da barra de tarefas.
 
-### Especificar definições de proteção em tempo real
+### <a name="specify-real-time-protection-settings"></a>Especificar definições de proteção em tempo real
 
 |Definição de política|Detalhes|
 |------------------|--------------------|
@@ -90,7 +139,7 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 
   ![Definições em tempo real do Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
-### Especificar definições de agendamento de análise
+### <a name="specify-scan-schedule-settings"></a>Especificar definições de agendamento de análise
 
 |Definição de política|Mais informações|
 |------------------|--------------------|
@@ -99,7 +148,7 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 |**Agendar uma análise completa**|Configura uma análise completa de todos os ficheiros e recursos nos discos rígidos dos computadores locais. Esta análise pode demorar algum tempo e pode afetar o desempenho do computador (o tempo que demora depende do número de ficheiros e recursos que são analisados).<br /><br />Valor recomendado: **Não**|
 |**Executar uma análise completa caso não tenham ocorrido duas análises completas consecutivas**|Configura o Endpoint Protection para executar automaticamente uma análise completa em computadores caso não tenham sido efetuadas duas análises consecutivas.<br /><br />Valor recomendado: Não configurado|
 
-### Especificar definições de opções de análise
+### <a name="specify-scan-options-settings"></a>Especificar definições de opções de análise
 
 |Definição de política|Detalhes|
 |------------------|--------------------|
@@ -114,59 +163,59 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 |**Analisar unidades amovíveis**|Defina como **Sim** para configurar o Endpoint Protection para procurar software maligno e software indesejado em unidades amovíveis, como pens USB, quando executa uma análise completa em computadores.<br /><br />Valor recomendado: **Sim**|
 |**Limitar a utilização da CPU durante a análise**|Defina a percentagem máxima da utilização do CPU que pode ser utilizada durante as análises agendadas em computadores. Pode definir este valor de 1 a 100 %.<br /><br />Valor recomendado: **50%**|
 
-### Selecionar as predefinições de ações
+### <a name="choose-default-actions-settings"></a>Selecionar as predefinições de ações
 
 A definição **Escolher como o Endpoint Protection age em software maligno dos seguintes níveis de alerta** especifica a ação predefinida que o Endpoint Protection executa quando é detetado software maligno de vários níveis de alerta. Para cada nível de alerta, pode remover o software maligno, colocá-lo em quarentena ou efetuar a ação recomendada da Microsoft.
 
 Valor recomendado: **Ação recomendada**, que permite que o Endpoint Protection efetue uma ação recomendada.   
 
-### Decidir se deve selecionar as definições de pastas e ficheiros excluídos
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Decidir se deve selecionar as definições de pastas e ficheiros excluídos
 
 A definição **Ficheiros e pastas a serem excluídos ao executar uma análise ou utilizar a proteção em tempo real** exclui ficheiros ou pastas específicos quando uma análise é executada ou quando a proteção em tempo real é utilizada em computadores.
 
-### Decidir se deve selecionar as definições de processos excluídos
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>Decidir se deve selecionar as definições de processos excluídos
 
 A definição **Processos a serem excluídos ao executar uma análise ou ao utilizar a proteção em tempo real** permite-lhe excluir processos específicos quando uma análise está em execução ou quando a proteção em tempo real é utilizada em computadores. Só pode excluir ficheiros com as seguintes extensões: **.exe**, **.com** ou **.scr**.
 
-### Decidir se pretende escolher as definições de tipos de ficheiro excluídos
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>Decidir se pretende escolher as definições de tipos de ficheiro excluídos
 
 A definição **Extensões de ficheiros a serem excluídas ao executar uma análise ou ao utilizar a proteção em tempo real** permite excluir extensões de nome de ficheiro específicas quando uma análise é executada ou quando a proteção em tempo real é utilizada em computadores.
 
-### Especificar definições do Serviço de Proteção Ativa Microsoft
+### <a name="specify-microsoft-active-protection-service-settings"></a>Especificar definições do Serviço de Proteção Ativa Microsoft
 O Serviço de Proteção Ativa Microsoft é uma comunidade online que o ajuda a decidir como reagir a potenciais ameaças. A comunidade também ajuda a parar a propagação de novas infeções de software maligno. Pode **Aderir ao Serviço de Proteção Ativa Microsoft** ao selecionar **Sim** e, em seguida, especificar o **Nível de Associação**:
   - **Básico** – envia informações básicas sobre software maligno detetado à Microsoft. Estas informações incluem a origem do software, as ações aplicadas por si ou que o Endpoint Protection aplica automaticamente e se as mesmas tiveram êxito.
   - **Avançado** – envia mais informações sobre software maligno, spyware e software potencialmente indesejado à Microsoft. Isto inclui informações sobre a localização do software, nomes dos ficheiros, como o software funciona e como afetou o seu computador.
 
 Também pode **Receber definições dinâmicas baseadas em relatórios do Serviço de Proteção Ativa Microsoft**.
 
-## Selecionar tarefas de gestão do Endpoint Protection
+## <a name="choose-management-tasks-for-endpoint-protection"></a>Selecionar tarefas de gestão do Endpoint Protection
 As tarefas seguintes ajudam-no a realizar várias tarefas de gestão em computadores geridos que executam o Endpoint Protection.
  - Atualizar definições de software maligno
   - Consola do Intune – a partir da área de trabalho **Grupos**, selecione os computadores que pretende atualizar. Selecione **Tarefas Remotas** &gt; **Atualizar Definições de Software Maligno**.
-  - Computador gerido - Inicie o software do cliente Endpoint Protection a partir da área de notificação do Windows. Selecione o separador **Atualizar** e, em seguida, selecione **Atualizar**.
+  - Computador gerido – Inicie o software do cliente Endpoint Protection a partir da área de notificação do Windows. Selecione o separador **Atualizar** e, em seguida, selecione **Atualizar**.
  - Executar uma análise de software maligno:
   - Consola do Intune – a partir da área de trabalho **Grupos**, selecione os computadores que pretende analisar. Selecione **Executar uma Análise Completa de Software Maligno** ou **Executar uma Análise Rápida de Software Maligno**.
   - Computador gerido – inicie o software do cliente Endpoint Protection a partir da área de notificação do Windows. Selecione **Rápida**, **Completa** ou **Personalizada** e, em seguida, selecione **Analisar agora**.
 
 Pode ver o estado de uma tarefa remota ao selecionar a ligação **Tarefas Remotas** no canto inferior direito da consola do Intune. A caixa de diálogo **Estado da Tarefa Remota** indica as tarefas remotas atuais, o estado da tarefa, o nome do dispositivo e quaisquer erros comunicados. Também fornece uma ligação para informações de resolução de problemas, se adequado.
 
-## Monitorizar o Endpoint Protection
+## <a name="monitor-endpoint-protection"></a>Monitorizar o Endpoint Protection
 Pode monitorizar o estado de software maligno nos seus computadores ao utilizar a área de trabalho **Proteção** da [consola de administração do Microsoft Intune](https://manage.microsoft.com/). Esta área de trabalho contém duas páginas:
  - **Descrição Geral da Proteção** – apresenta problemas importantes como ligações que pode escolher para obter mais informações. Os problemas que podem ser apresentados incluem:
   - **Instâncias de software maligno que necessitam de seguimento** – clique na ligação para ver uma lista de problemas de software maligno, incluindo a ação de seguimento necessária para resolver o problema. Pode explorar esta lista para ver que computadores são afetados.
   - **Computadores com software maligno que necessitam de seguimento** – clique na ligação para ver todos os computadores com problemas de software maligno não resolvidos, incluindo a ação de seguimento necessária para resolver o problema.
-  - **Dispositivos não protegidos** - Clique na ligação para ver computadores não protegidos por software do proteção de pontos finais, devido à não instalação do software ou a um erro. Selecione um computador para ver mais detalhes.
-  - **Dispositivos com outra aplicação de proteção de pontos finais em execução** - Clique na ligação para ver computadores com uma aplicação de proteção de pontos finais de terceiros em execução.
+  - **Dispositivos não protegidos** – Clique na ligação para ver computadores não protegidos por software do proteção de pontos finais, devido à não instalação do software ou a um erro. Selecione um computador para ver mais detalhes.
+  - **Dispositivos com outra aplicação de proteção de pontos finais em execução** – Clique na ligação para ver computadores com uma aplicação de proteção de pontos finais de terceiros em execução.
  - **Todo o Software Maligno** – apresenta uma lista de todo o software maligno ativo que se encontra nos seus computadores. Pode explorar esta lista para ver todos os computadores que são afetados por um software maligno específico ou pode selecionar uma das seguintes tarefas:
   - **Ver Propriedades** – abre uma página com mais informações sobre o software maligno selecionado.
-  - **Saber Mais Sobre Este Software Maligno** - Abre um tópico do Centro Microsoft de Proteção Contra Software Maligno com mais informações sobre o software maligno.
+  - **Saber Mais Sobre Este Software Maligno** – Abre um tópico do Centro Microsoft de Proteção Contra Software Maligno com mais informações sobre o software maligno.
 
 > [!IMPORTANT]
 > A área de trabalho **Proteção** só é apresentada na consola de administração quando tiver instalado o cliente e estiver a gerir, no mínimo, um cliente do computador.
 
   ![Monitorizar o Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
-### Como ver Caminhos de Deteção Recentes para software maligno em computadores
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Como ver Caminhos de Deteção Recentes para software maligno em computadores
 O Intune pode apresentar os caminhos de até 10 das instâncias de software maligno detetadas mais recentemente num dispositivo. O **Caminho de Deteção Recente** está desativado por predefinição. Para ativar esta vista:
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** > **Todos os Dispositivos** > **Software Maligno**.
@@ -175,7 +224,7 @@ O Intune pode apresentar os caminhos de até 10 das instâncias de software mali
 
 3.  Selecione a caixa de verificação **Caminhos de Deteção Recentes** na lista. A coluna **Caminhos de Deteção Recentes** aparece e apresenta até 10 das instâncias de software maligno monitorizadas mais recentemente no dispositivo.
 
-## Executar uma análise de software maligno ou atualizar as definições de software maligno num computador
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Executar uma análise de software maligno ou atualizar as definições de software maligno num computador
 O Intune pode executar uma análise de software maligno completa ou rápida ao utilizar o Endpoint Protection ou o Windows Defender num PC gerido remotamente que tenha o cliente do Intune instalado.
 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), aceda a **Grupos** > **Descrição Geral** > **Todos os Dispositivos** > **Todos os Computadores** e, em seguida, selecione o computador que pretende direcionar.
@@ -185,14 +234,14 @@ O Intune pode executar uma análise de software maligno completa ou rápida ao u
 
 
 
-## Precisa de mais ajuda?
+## <a name="need-more-help"></a>Precisa de mais ajuda?
 Para mais ajuda e suporte, consulte [Resolução de Problemas do Endpoint Protection no Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
-### Consulte Também
+### <a name="see-also"></a>Consulte Também
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

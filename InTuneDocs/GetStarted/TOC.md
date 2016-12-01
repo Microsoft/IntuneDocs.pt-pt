@@ -1,54 +1,37 @@
 # [Compreender e Explorar](/intune/understand-explore/introduction-to-microsoft-intune)
-
-# [Introdução](what-to-know-before-you-start-microsoft-intune.md)
-## [O que deve saber antes de começar](what-to-know-before-you-start-microsoft-intune.md)
-### [Dispositivos móveis e computadores suportados](supported-mobile-devices-and-computers.md)
-### [Browsers suportados](supported-web-browsers.md)
-### [Requisitos de infraestrutura de rede](network-infrastructure-requirements-for-microsoft-intune.md)
-### [Contas administrativas, sites e permissões](administrative-accounts-websites-perms.md)
-### [Portal da Empresa](microsoft-intune-company-portal.md)
-### [Integração com serviços em nuvem e produtos da Microsoft](integration-with-cloud-services.md)
-### [Utilização da largura de banda de rede](network-bandwidth-use.md)
-### [Nomes de domínio personalizados](domain-names-for-microsoft-intune.md)
-
-## [Escolher como gerir dispositivos](choose-how-to-manage-devices.md)
-### [Funcionalidades de gestão de dispositivos inscritos](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Funcionalidades de cliente de software de PCs do Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
-
-## [Migrar para o Intune](migrate-to-intune.md)
-
-## [Guia de introdução](start-with-a-paid-subscription-to-microsoft-intune.md)
+# [Introdução](get-started.md)
+## [Guia de Introdução](start-with-a-paid-subscription-to-microsoft-intune.md)
+### [Pré-requisitos](what-to-know-before-you-start-microsoft-intune.md)
+#### [Dispositivos móveis e computadores suportados](supported-mobile-devices-and-computers.md)
+#### [Utilização da largura de banda de rede](network-bandwidth-use.md)
 ### [Iniciar sessão no Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurar um nome de domínio personalizado](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Sincronizar o AD e adicionar utilizadores](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
 ### [Gerir licenças do Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Organizar utilizadores e dispositivos](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
-### [Criar políticas e publicar aplicações](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
-### [personalizar o Portal da Empresa](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Inscrever dispositivos móveis e instalar aplicações](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Implementar políticas e aplicações](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [Personalizar o Portal da Empresa](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
+### [Inscrever dispositivos móveis](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Publicar tarefas de configuração](post-configuration-tasks.md)
-
-## [Guias rápidos](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Guia rápido: Impedir fugas de dados da empresa a partir das aplicações móveis do Office 365](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Guia rápido: Proteger os dados da empresa com a encriptação de dados](protect-data-encryption.md)
-### [Guia rápido: Publicar aplicações móveis para os utilizadores](publish-mobile-apps-to-users.md)
-### [Guia rápido: Simplificar a configuração de e-mail em dispositivos móveis](simplify-email-configuration-on-mobile-devices.md)
-### [Guia rápido: Proteger os PCs Windows contra ameaças de software maligno](protect-pcs-against-malware-threats.md)
-
-## [Fases de implementação para implementações do Intune](rollout-phases-for-microsoft-intune-deployment.md)
+## [Migrar para o Intune](migrate-to-intune.md)
+## [Passos seguintes](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Impedir fugas de dados da empresa a partir das aplicações móveis do Office 365](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Proteger os dados da empresa com a encriptação de dados](protect-data-encryption.md)
+### [Publicar aplicações móveis para os utilizadores](publish-mobile-apps-to-users.md)
+### [Simplificar a configuração de e-mail em dispositivos móveis](simplify-email-configuration-on-mobile-devices.md)
+### [Proteger os PCs Windows contra ameaças de software maligno](protect-pcs-against-malware-threats.md)
+## [Fases da implementação do Intune](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Âmbito do projeto](project-scope.md)
 ### [Prova de conceito](proof-of-concept.md)
 ### [Piloto](pilot.md)
 ### [Implementação empresarial](enterprise-rollout.md)
 ### [Operações e manutenção](operations-and-maintenance.md)
-
-<!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Novidades](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Implementar e Utilizar](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Desenvolver e Personalizar Aplicações](/intune/develop/intune-app-sdk)
-# [Resolver Problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
+# [Resolução de Problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

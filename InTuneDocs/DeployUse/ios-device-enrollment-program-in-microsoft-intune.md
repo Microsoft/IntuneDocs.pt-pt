@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Gestão do Apple DEP para dispositivos iOS | Microsoft Intune"
 description: "Implemente um perfil de inscrição que inscreva dispositivos iOS comprados com o Programa de Inscrição de Dispositivos iOS (DEP) por ondas eletromagnéticas em dispositivos Apple geridos."
@@ -57,8 +58,50 @@ ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
 ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
 
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+---
+title: "Gestão do Apple DEP para dispositivos iOS | Microsoft Intune"
+description: "Implemente um perfil de inscrição que inscreva dispositivos iOS comprados através do Programa de Inscrição de Dispositivos iOS (DEP) por ondas eletromagnéticas em dispositivos Apple geridos."
+keywords: 
+author: staciebarker
+ms.author: stabar
+manager: arob98
+ms.date: 07/19/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
+ms.reviewer: dagerrit
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
+
+=======
+---
+title: "Gestão do Apple DEP para dispositivos iOS | Microsoft Intune"
+description: "Implemente um perfil de inscrição que inscreva dispositivos iOS comprados através do Programa de Inscrição de Dispositivos iOS (DEP) por ondas eletromagnéticas em dispositivos Apple geridos."
+keywords: 
+author: staciebarker
+ms.author: stabar
+manager: arob98
+ms.date: 07/19/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
+ms.reviewer: dagerrit
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
@@ -69,6 +112,13 @@ ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
 
 # <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+
+# <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
+=======
+
+# <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 O Microsoft Intune pode implementar um perfil de inscrição que inscreve os dispositivos iOS comprados através do Programa de Inscrição de Dispositivos (DEP) por ondas eletromagnéticas. O pacote de inscrição pode incluir opções do assistente de configuração do dispositivo. Os utilizadores não podem anular a inscrição de dispositivos inscritos através do DEP.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestão do Apple DEP para dispositivos iOS com o Microsoft Intune
@@ -104,7 +154,7 @@ Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precis
     Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) vá para **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, selecione **Adicionar**.
 
     Forneça detalhes **Gerais** , incluindo o **Nome** e a **Descrição**, especifique se os dispositivos atribuídos ao perfil têm afinidade com o utilizador ou se pertencem a um grupo.
-      - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações).</br> **Nota:** os dispositivos DEP com afinidade de utilizador não podem suportar a autenticação multifator.
+      - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações). A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos DEP com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos. 
 
       > [!NOTE]
       > O DEP com afinidade de utilizador requer a ativação de um ponto final de Nome de Utilizador/Misto WS-Trust 1.3 para pedir o token de utilizador.
@@ -174,6 +224,6 @@ A partir de novembro, a gestão de grupos de dispositivos irá mudar para o Azur
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

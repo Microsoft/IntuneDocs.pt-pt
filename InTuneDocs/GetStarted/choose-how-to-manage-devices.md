@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: Escolher como gerir dispositivos | Microsoft Intune
 description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
@@ -99,6 +100,47 @@ ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
 ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 >>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
+||||||| merged common ancestors
+---
+title: Escolher como gerir dispositivos | Microsoft Intune
+description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 11/14/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
+ms.reviewer: angrobe
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
+
+=======
+---
+title: Escolher como gerir dispositivos | Microsoft Intune
+description: "Saiba mais sobre as várias formas de inscrever e gerir dispositivos."
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 11/22/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
+ms.reviewer: angrobe
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: fccdf689868dbb181a171328fb7a8d186b9cb309
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
 <<<<<<< HEAD
@@ -163,6 +205,6 @@ Embora esta seja uma terceira opção para gerir dispositivos, fornece um conjun
 >>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

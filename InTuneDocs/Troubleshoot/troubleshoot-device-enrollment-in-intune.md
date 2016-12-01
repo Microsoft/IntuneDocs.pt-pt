@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Resolver problemas de inscrição de dispositivos| Microsoft Intune"
 description: "Sugestões para resolver problemas de inscrição de dispositivos."
@@ -59,6 +60,47 @@ ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
 ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 >>>>>>> 7353fd98b7133f29a0609623f98f8455486209c3
+||||||| merged common ancestors
+---
+title: "Resolver problemas de inscrição de dispositivos| Microsoft Intune"
+description: "Sugestões para resolver problemas de inscrição de dispositivos."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 08/02/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+ms.reviewer: damionw
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+
+=======
+---
+title: "Resolver problemas de inscrição de dispositivos| Microsoft Intune"
+description: "Sugestões para resolver problemas de inscrição de dispositivos."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 11/20/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+ms.reviewer: damionw
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
 <<<<<<< HEAD
@@ -79,7 +121,7 @@ Este tópico fornece sugestões para resolver problemas de inscrição de dispos
 
 Antes de iniciar a resolução de problemas, certifique-se de que configurou o Intune corretamente para permitir a inscrição. Pode ler sobre estes requisitos de configuração em:
 
--   [Preparar a inscrição de dispositivos no Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Preparar a inscrição de dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [Configurar a gestão de dispositivos iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Configurar a gestão do Windows Phone e Windows 10 Mobile com o Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Configurar a gestão de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -97,16 +139,16 @@ Os utilizadores de dispositivos geridos podem recolher registos de inscrição e
 ## <a name="general-enrollment-issues"></a>Problemas de inscrição gerais
 Estes problemas podem ocorrer em todas as plataformas de dispositivos.
 
-### <a name="device-cap-reached"></a>Máximo de Dispositivos atingido
+### <a name="device-cap-reached"></a>Máximo de dispositivos atingido
 **Problema:** Um utilizador recebe um erro no dispositivo durante a inscrição, tal como um erro **Portal da Empresa Temporariamente Indisponível** num dispositivo iOS e o DMPdownloader.log no Configuration Manager contém o erro **DeviceCapReached**.
 
-**Resolução:** Por predefinição, os utilizadores não podem inscrever mais de 5 dispositivos.
+**Resolução:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Verificar número de dispositivos inscritos e permitidos
 
-1.  Validar no portal de administração do Intune que o utilizador não tem mais de 5 dispositivos atribuídos
+1.  Validar no portal de administração do Intune que o utilizador não excede o valor máximo de 15 dispositivos permitidos atribuídos.
 
-2.  Consulte o portal de administração do Intune em Admin\Gestão de Dispositivos Móveis\Regras de Inscrição para verificar se o limite de inscrição de dispositivos está definido como 5
+2.  Verifique na consola de administração do Intune em Administração\Gestão de Dispositivos Móveis\Regras de Inscrição se o limite de inscrição de dispositivos está definido como 15.
 
 Os utilizadores de dispositivos móveis podem eliminar dispositivos no seguinte URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -139,7 +181,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 ### <a name="company-portal-temporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
 **Problema:** Um utilizador recebe um erro **Portal da Empresa Temporariamente Indisponível** no dispositivo.
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>Resolução de problemas do erro Portal da Empresa Temporariamente Indisponível
+**Resolução:**
 
 1.  Remova a aplicação Portal da Empresa do Intune do dispositivo.
 
@@ -154,7 +196,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 ### <a name="mdm-authority-not-defined"></a>Autoridade de MDM não definida
 **Problema:** Um utilizador recebe um erro **Autoridade de MDM não definida**.
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>Resolução de problemas do erro Autoridade de MDM não definida
+**Resolução:**
 
 1.  Verifique se a Autoridade de MDM foi definida adequadamente para a versão do serviço Intune que estiver a utilizar, ou seja, para o Intune, o Office 365 MDM ou o System Center Configuration Manager com o Intune. No Intune, a Autoridade de MDM é definida em **Administração** &gt; **Gestão de Dispositivos Móveis**. No Configuration Manager com o Intune, pode defini-la quando configurar o conector do Intune e, no O365, é a definição **Dispositivos Móveis**.
 
@@ -202,16 +244,65 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 
 ## <a name="android-issues"></a>Problemas do Android
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Os dispositivos não conseguem registar com o serviço Intune e são apresentados como em "Mau estado de funcionamento" na consola de administração do Intune
+**Problema:** alguns dispositivos Samsung a executar as versões Android 4.4.x e 5.x poderão deixar de fazer o registo com o serviço do Intune. Se os dispositivos não fizerem o registo:
+
+- Não podem receber políticas, aplicações e comandos remotos a partir do serviço do Intune.
+- Mostram o Estado de Gestão **Mau estado de funcionamento** na consola do administrador.
+- Os utilizadores protegidos por políticas de acesso condicional podem perder o acesso a recursos empresariais.
+
+A Samsung confirmou que o software Samsung Smart Manager, incluído em determinados dispositivos Samsung, pode desativar o Portal da Empresa do Intune e os respetivos componentes. Quando o Portal da Empresa está num estado desativado, este não pode ser executado em segundo plano e, por conseguinte, não pode contactar o serviço do Intune.
+
+**Resolução n.º 1:**
+
+Informe os utilizadores para iniciarem manualmente a aplicação do Portal da Empresa. Depois de a aplicação reiniciar, o dispositivo faz o registo com o serviço do Intune.
+
+> [!IMPORTANT]
+> Abrir a aplicação do Portal da Empresa manualmente é uma solução temporária, uma vez que o Samsung Smart Manager poderá desativar novamente a aplicação do Portal da Empresa.
+
+**Resolução n.º 2:**
+
+Informe os utilizadores para tentarem atualizar para Android 6.0. O problema da desativação não ocorre em dispositivos com Android 6.0. Para verificar se está disponível uma atualização, os utilizadores podem aceder a **Definições** > **Acerca do dispositivo** > **Transferir atualizações manualmente** e seguir as instruções no dispositivo.
+
+**Resolução n.º 3:**
+
+Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam estes passos para fazer com o que o Smart Manager exclua a aplicação do Portal da Empresa:
+
+1. Inicie a aplicação Smart Manager no dispositivo.
+
+  ![Selecione o ícone do Smart Manager no dispositivo](./media/smart-manager-app-icon.png)
+
+2. Escolha o mosaico **Bateria**.
+
+  ![Selecione o mosaico Bateria](./media/smart-manager-battery-tile.png)
+
+3. Em **Poupança de energia da aplicação** ou **Otimização da aplicação**, selecione **Detalhes**.
+
+  ![Selecionar Detalhes em Poupança de energia da aplicação ou Otimização da aplicação](./media/smart-manager-app-power-saving-detail.png)
+
+4. Escolha **Portal da Empresa** da lista de aplicações.
+
+  ![Selecionar o Portal da Empresa da lista de aplicações](./media/smart-manager-company-portal.png)
+
+5. Marque **Desativado**.
+
+  ![Selecionar Desativado na caixa de diálogo Otimização da aplicação](./media/smart-manager-app-optimization-turned-off.png)
+
+6. Em **Poupança de energia da aplicação** ou **Otimização da aplicação**, confirme que o Portal da Empresa está desativado.
+
+  ![Confirmar que o Portal da Empresa está desativado](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
 **Problema:** um utilizador recebe o erro **Falha na instalação do perfil** num dispositivo Android.
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Passos de resolução de problemas para a falha na instalação do perfil
+**Resolução:**
 
 1.  Confirme que foi atribuída ao utilizador uma licença adequada para a versão do serviço Intune que estiver a utilizar.
 
 2.  Confirme que o dispositivo ainda não está inscrito noutro fornecedor de MDM ou que ainda não tem um perfil de gestão instalado.
 
-4.  Confirme que o Chrome para Android é o browser predefinido e que os cookies estão ativados.
+3.  Confirme que o Chrome para Android é o browser predefinido e que os cookies estão ativados.
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados do Android
 
@@ -305,7 +396,7 @@ O utilizador deverá conseguir agora iniciar sessão no Portal da Empresa no dis
 
 ## <a name="pc-issues"></a>Problemas do PC
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
 **Problema:** A inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
 
 Isto pode acontecer porque o computador tinha sido inscrito anteriormente ou tem a imagem clonada de um computador que já tinha sido inscrito. O certificado de conta da conta anterior ainda está presente no computador.
@@ -357,6 +448,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -5,54 +5,62 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2c14071f5fb1a3604b897d6b2f81797d40bedc6d
-ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
+ms.sourcegitcommit: a563105aafb447c6e009cca09645e630709ff72d
+ms.openlocfilehash: 143f77bde09648a233ff09e9740668191a50cb1e
 
 
 ---
+<<<<<<< HEAD
 
 # Escolher como inscrever dispositivos móveis
+||||||| merged common ancestors
+
+# Escolher como inscrever dispositivos móveis
+=======
+
+# <a name="choose-how-to-enroll-mobile-devices"></a>Escolher como inscrever dispositivos móveis
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 As respostas às seguintes perguntas ajudam-no a determinar o melhor método de inscrição para os dispositivos que gere.
 
-## **Os funcionários utilizam os respetivos dispositivos ou os fornecidos pela sua organização?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**Os funcionários utilizam os respetivos dispositivos ou os fornecidos pela sua organização?**
 
   - **Dispositivos pertencentes ao utilizador** – inscrição "Bring Your Own Device" (BYOD)
-  - **Dispositivos pertencentes à empresa** -inscrição COD
+  - **Dispositivos pertencentes à empresa** – inscrição COD
 
 > [!div class="button"]
 [Inscrição BYOD >](#what-byod-devices-can-your-users-enroll)   
 > [!div class="button"]
 [Inscrição COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Que dispositivos BYOD podem inscrever os seus utilizadores?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Que dispositivos BYOD podem os seus utilizadores inscrever?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile e Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [PCs Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **Os dispositivos pertencentes à empresa são partilhados ou têm utilizadores dedicados?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**Os dispositivos pertencentes à empresa são partilhados ou têm utilizadores dedicados?**
 
 > [!div class="button"]
 [Partilhados >](#what-operating-system-are-your-shared-devices-running)   [Dedicados >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Qual é o sistema operativo dos dispositivos partilhados?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Qual é o sistema operativo dos dispositivos partilhados?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Como vai gerir os dispositivos iOS partilhados?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Como irá gerir os dispositivos iOS partilhados?**
 
-  > [!div class="button"]
-  [Inscrição de DEP para iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscrição direta para iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscrição de DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[Inscrição de DEP para iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscrição direta para iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscrição de DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programa de Registo de Dispositivos da Apple (DEP)** – os dispositivos iOS adquiridos ou geridos com o DEP podem ser associados a um perfil de inscrição. Da primeira vez que os utilizadores ligam os dispositivos, estes transferem o perfil do DEP e são inscritos com o mesmo.
 
@@ -60,10 +68,10 @@ As respostas às seguintes perguntas ajudam-no a determinar o melhor método de 
 
   - **Gestor de inscrição de dispositivos (Intune)** – o gestor de inscrição de dispositivos (DEM) do Intune permite a um gestor ou administrador inscrever vários dispositivos móveis com uma única conta de utilizador. Estes dispositivos não podem ter utilizadores dedicados (afinidade de utilizadores) e têm de ser inscritos através da instalação e início de sessão na aplicação Portal da Empresa.
 
-## **Como vai gerir os dispositivos iOS dedicados?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Como irá gerir os dispositivos iOS dedicados?**
 
-  > [!div class="button"]
-   [DEP para iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente de Configuração de iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Etiqueta com IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [!div class="button"]
+[DEP para iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente de Configuração de iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Etiqueta com IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Pode inscrever dispositivos pertencentes à empresa com utilizadores dedicados através das seguintes formas:
 
@@ -75,6 +83,6 @@ As respostas às seguintes perguntas ajudam-no a determinar o melhor método de 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

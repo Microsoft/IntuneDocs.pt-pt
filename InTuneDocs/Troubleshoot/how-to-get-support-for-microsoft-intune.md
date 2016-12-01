@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ||||||| merged common ancestors
 ---
 title: Como obter suporte | Microsoft Intune
@@ -109,6 +110,47 @@ O suporte do Intune, bem como do Intune quando utilizado com o Gestor de Configu
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
 
 <<<<<<< HEAD
+||||||| merged common ancestors
+---
+title: Como obter suporte | Microsoft Intune
+description: "O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 10/31/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
+ms.reviewer: cacamp
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
+ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
+
+=======
+---
+title: Como obter suporte | Microsoft Intune
+description: "O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação."
+keywords: 
+author: staciebarker
+ms.author: staciebarker
+manager: angrobe
+ms.date: 11/16/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
+ms.reviewer: cacamp
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 2c50c38843521dfc2c9df48305e619803f32b1e9
+ms.openlocfilehash: 8b0591195b58f5fa331d213cfe03a38aa5ffafdd
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
 
@@ -128,11 +170,12 @@ O suporte do Intune, bem como do Intune quando utilizado com o Gestor de Configu
 2.  Selecione o mosaico Administrador.
 3.  Do lado esquerdo, em **Suporte**, selecione **Suporte** para abrir um pedido de suporte. Provavelmente irá ver o seguinte:
 
-    ![Abrir um novo pedido de suporte do Intune](../media/suport-open-ticket.png)
+    ![Abrir um novo pedido de suporte do Intune](../media/support-open-ticket.png)
 
     >[!NOTE]
     >
     >  Os clientes que têm ou já tiveram uma conta do Office 365 com 100 licenças ou menos verão esta mensagem e devem consultar [Alternate method to open a support ticket (Método alternativo para abrir um pedido de suporte – em inglês)](#alternate-method-to-open-a-support-ticket).
+    >  
     > ![Suporte alternativo do Intune](../media/alternate-support-ui.png)
 
     -   Para problemas de faturação, licenciamento e contas, selecione **Informações de faturação e de produto**.
@@ -432,9 +475,15 @@ Se já tiver comprado licenças da Microsoft através de um programa de licencia
 <!--HONumber=Nov16_HO1-->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ||||||| merged common ancestors
 <!--HONumber=Aug16_HO3-->
 =======
 <!--HONumber=Nov16_HO1-->
 >>>>>>> 2cebb9c337e0b62262ed35e10437cf949bee5815
+||||||| merged common ancestors
+<!--HONumber=Nov16_HO1-->
+=======
+<!--HONumber=Nov16_HO3-->
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
