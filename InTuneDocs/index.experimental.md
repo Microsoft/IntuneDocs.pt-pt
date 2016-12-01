@@ -2,25 +2,25 @@
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Documentação do Intune - documentação do MDM | Microsoft Docs"
-description: "Documentação técnica do Microsoft Intune - Gestão de Aplicações e Dispositivos Móveis"
+title: "Documentação do Intune – documentação do MDM | Documentos Microsoft"
+description: "Documentação técnica do Microsoft Intune – Gestão de Aplicações e Dispositivos Móveis"
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
 
 
 ---
-# Documentação do Intune
+# <a name="intune-documentation"></a>Documentação do Intune
 <article id="main">
     <section id="hero-content">
       <h1>Documentação do Intune</h1>
@@ -31,7 +31,7 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
       <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em Destaque</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introdução ao Microsoft Intune</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Mais de 150 licenças? Tirar partido dos benefícios do FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Cenários comuns que dependem do Intune</a></li>
           <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Guia de introdução do Intune</a></li>
         </ul>
@@ -119,7 +119,7 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
               <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">3</span>
-                  <p>Implementar &amp; Utilizar</p>
+                  <p>Implementar e Utilizar</p>
                 </div>
                 <p class="description column-two-thirds">Faça a gestão de dispositivos, aplicações e dados com o Intune.
                 </p>
@@ -285,6 +285,6 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

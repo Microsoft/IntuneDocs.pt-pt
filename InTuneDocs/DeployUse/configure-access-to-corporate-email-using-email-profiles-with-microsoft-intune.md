@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -84,7 +84,7 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador tem
 
     -   **Perfil de E-mail (Windows Phone 8.1 e posterior)**
 
-    -   **Perfil de E-mail (Windows 10 Desktop e Mobile e posterior)**
+    -   **Perfil de E-mail (Windows 10 para computadores e dispositivos móveis e posterior)**
 
     -   **Perfil de E-mail (Android for Work – Gmail)**
 
@@ -100,7 +100,7 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador tem
     |**Descrição**|Uma descrição que o ajude a identificar este perfil.|
     |**Anfitrião**|O nome do anfitrião do servidor da empresa que aloja o seu serviço de e-mail nativo.|
     |**Nome da conta**|O nome a apresentar para a conta de e-mail, conforme irá aparecer aos utilizadores nos respetivos dispositivos.|
-    |**Nome de Utilizador**|Como será obtido o nome de utilizador para a conta de e-mail. Selecione **Nome de utilizador** para um Exchange Server no local ou selecione **Nome Principal de Utilizador** para o Office 365.|
+    |**Nome de Utilizador**|Este é o atributo no Active Directory (AD) ou Azure AD que será utilizado para gerar o nome de utilizador para este perfil de e-mail. Selecione o Endereço SMTP Principal, como *user1@contoso.com*, ou o Nome Principal de Utilizador, como *user1* ou *user1@contoso.com*.|
     |**Endereço de e-mail**|Como é gerado o endereço de e-mail para o utilizador em cada dispositivo. Selecione **Endereço SMTP Principal** para utilizar o endereço SMTP principal para iniciar sessão no Exchange ou selecione **Nome Principal de Utilizador** para utilizar o nome principal completo como o endereço de e-mail.|
     |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.|
     |**Selecionar um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação ao Exchange. Para mais informações sobre como utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.|
@@ -126,7 +126,7 @@ A nova política é apresentada no nó **Políticas de Configuração** da área
 
 2.  Na caixa de diálogo **Gerir a Implementação**, para:
 
-    -   **Para implementar a política** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
+    -   **To deploy the policy** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Add** &gt; **OK**.
 
     -   **Para fechar a caixa de diálogo sem implementar a política** – selecione **Cancelar**.
 
@@ -138,6 +138,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

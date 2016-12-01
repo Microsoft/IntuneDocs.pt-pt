@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Restringir o acesso ao SharePoint Online | Microsoft Intune
 description: Proteja e controle o acesso ao e-mail da empresa no SharePoint Online com o acesso condicional.
@@ -17,10 +18,59 @@ translationtype: Human Translation
 ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
 ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
+||||||| merged common ancestors
+---
+title: Restringir o acesso ao SharePoint Online | Microsoft Intune
+description: Proteja e controle o acesso ao e-mail da empresa no SharePoint Online com o acesso condicional.
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 07/13/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+
+=======
+---
+title: Restringir o acesso ao SharePoint Online | Microsoft Intune
+description: Proteja e controle o acesso ao e-mail da empresa no SharePoint Online com o acesso condicional.
+keywords: 
+author: karthikaraman
+ms.author: karaman
+manager: angrobe
+ms.date: 11/14/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
+ms.reviewer: chrisgre
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
+<<<<<<< HEAD
 
 # Restringir o acesso ao SharePoint Online com o Microsoft Intune
+||||||| merged common ancestors
+
+# Restringir o acesso ao SharePoint Online com o Microsoft Intune
+=======
+
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Restringir o acesso ao SharePoint Online com o Microsoft Intune
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 Utilize o acesso condicional do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar o acesso a ficheiros localizados no SharePoint Online.
 O acesso condicional tem dois componentes:
 - A política de conformidade de dispositivos que o dispositivo tem de cumprir para ser considerado conforme.
@@ -55,12 +105,12 @@ Se não for cumprida uma condição, é apresentada ao utilizador uma das duas m
 
 -   Se o dispositivo não for conforme, é apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], onde poderá encontrar informações sobre o problema e como resolvê-lo.
 
-**O acesso condicional é aplicado em todos os sites SharePoint e a partilha externa é bloqueada**
+**O acesso condicional não se aplica à partilha externa**. Para saber como impedir a partilha externa no seu inquilino ou numa coleção de sites, consulte [Gerir a partilha externa para o seu ambiente do SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >Se ativar o acesso condicional para o SharePoint Online, recomendamos que desative o domínio na lista, conforme descrito no tópico [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 
-## Suporte para dispositivos móveis
+## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 - iOS 8.0 e posterior
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 ou posterior
 - Windows Phone 8.1 e posterior
@@ -68,11 +118,11 @@ Se não for cumprida uma condição, é apresentada ao utilizador uma das duas m
 Pode restringir o acesso ao SharePoint Online quando acede a partir de um browser a partir de dispositivos **iOS** e **Android**.  O acesso só é permitido aos browsers suportados em dispositivos compatíveis:
 * Safari (iOS)
 * Chrome (Android)
-* Browser gerido (iOS e Android)
+* Browser Gerido (iOS e Android 5.0 e posteriores)
 
 **Os browsers não suportados serão bloqueados**.
 
-## Suporte de PCs
+## <a name="support-for-pcs"></a>Suporte de PCs
 - Windows 8.1 e posterior (quando inscrito com o Intune)
 - Windows 7.0, Windows 8.1 ou Windows 10 (quando associado a um domínio),
 > [!NOTE]
@@ -92,10 +142,10 @@ O AAD DRS será automaticamente ativado para os clientes do Intune e do Office 3
     A autenticação moderna inclui o início de sessão baseado na Active Directory Authentication Library (ADAL) para clientes do Office 2013 Windows e permite uma maior segurança como **multi-factor authentication** e **autenticação baseada em certificado**.
 
 
-## Configurar o acesso condicional para o SharePoint Online
+## <a name="configure-conditional-access-for-sharepoint-online"></a>Configurar o acesso condicional para o SharePoint Online
 
-### Passo 1: configurar grupos de segurança do Active Directory
-Antes de começar, configure grupos de segurança do Azure Active Directory para a política de acesso condicional. Pode configurar estes grupos no **centro de administração do Office 365**ou no **portal de contas do Intune**. Estes grupos serão utilizados para visar ou excluir utilizadores da política. Quando um utilizador é direcionado por uma política, cada dispositivo que utiliza tem de estar em conformidade para poder aceder aos recursos.
+### <a name="step-1-configure-active-directory-security-groups"></a>Passo 1: configurar grupos de segurança do Active Directory
+Antes de começar, configure grupos de segurança do Azure Active Directory para a política de acesso condicional. Pode configurar estes grupos no **centro de administração do Office 365**ou no **portal de contas do Intune**. Estes grupos serão utilizados para visar ou excluir os utilizadores da política. Quando um utilizador é direcionado por uma política, cada dispositivo que utiliza tem de estar em conformidade para poder aceder aos recursos.
 
 Pode especificar dois tipos de grupos numa política do SharePoint Online:
 
@@ -105,7 +155,7 @@ Pode especificar dois tipos de grupos numa política do SharePoint Online:
 
 Se um utilizador estiver em ambos os grupos, estará excluído da política.
 
-### Passo 2: configurar e implementar uma política de conformidade
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Passo 2: configurar e implementar uma política de conformidade
 Se ainda não o fez, crie e implemente uma política de conformidade para os utilizadores que a política do SharePoint Online irá visar.
 
 > [!NOTE]
@@ -118,7 +168,7 @@ Para obter detalhes sobre como configurar a política de conformidade, consulte 
 
 Quando estiver pronto, avance para o **Passo 3**.
 
-### Passo 3: configurar a política do SharePoint Online
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Passo 3: configurar a política do SharePoint Online
 Em seguida, configure a política para exigir que apenas os dispositivos geridos e conformes podem aceder ao SharePoint Online. Esta política será armazenada no Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -162,7 +212,7 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
   3.    Prima o botão **Ativar o Acesso ao Browser**.
   4.  No browser Chrome, termine a sessão no Office 365 e reinicie o Chrome.
 
-  Nas plataformas **iOS e Android**, para identificar o dispositivo utilizado para aceder ao serviço, o Azure Active Directory irá emitir um certificado de Transport layer security (TLS) para o dispositivo.  O dispositivo apresenta o certificado com uma linha de comandos para o utilizador final para selecionar o certificado, conforme indicado nas capturas de ecrã abaixo. O utilizador final tem de selecionar este certificado antes de este poder continuar a utilizar o browser.
+  Nas plataformas **iOS e Android**, para identificar o dispositivo utilizado para aceder ao serviço, o Azure Active Directory irá emitir um certificado de Transport layer security (TLS) para o dispositivo.  O dispositivo apresenta o certificado com uma linha de comandos para o utilizador final para selecionar o certificado, conforme indicado nas capturas de ecrã abaixo. O utilizador final tem de selecionar este certificado para poder continuar a utilizar o browser.
 
   **iOS**
 
@@ -179,10 +229,10 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
 
 Não tem de implementar a política de acesso condicional, pois esta entra em vigor imediatamente.
 
-### Passo 4: Monitorizar a conformidade e as políticas de acesso condicional
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>Passo 4: Monitorizar a conformidade e as políticas de acesso condicional
 Na área de trabalho **Grupos**, pode ver o estado dos seus dispositivos.
 
-Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **Dispositivos** , selecione um dos seguintes **Filtros**:
+Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **Dispositivos**, selecione um dos seguintes **Filtros**:
 
 -   **Dispositivos não registados no AAD** – estes dispositivos estão bloqueados no SharePoint Online.
 
@@ -190,11 +240,21 @@ Selecione qualquer grupo de dispositivos móveis e, em seguida, no separador **D
 
 -   **Dispositivos registados no AAD e conformes** – estes dispositivos podem aceder ao SharePoint Online.
 
+<<<<<<< HEAD
 ### Consulte também
 [Restringir o acesso ao e-mail e aos serviços do Office 365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
+||||||| merged common ancestors
+### Consulte também
+[Restringir o acesso ao e-mail e aos serviços do Office 365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+=======
+### <a name="see-also"></a>Consulte também
+[Restringir o acesso ao e-mail e aos serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

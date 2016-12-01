@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Inscrever com o gestor de inscrição de dispositivos | Microsoft Intune"
 description: "A conta do gestor de inscrição de dispositivos (DEM) pode gerir um grande número de dispositivos móveis pertencentes à empresa partilhados com uma única conta de utilizador."
@@ -16,12 +17,62 @@ translationtype: Human Translation
 ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
 ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
+||||||| merged common ancestors
+---
+title: "Inscrever com o gestor de inscrição de dispositivos | Microsoft Intune"
+description: "A conta do gestor de inscrição de dispositivos (DEM) pode gerir um grande número de dispositivos móveis pertencentes à empresa partilhados com uma única conta de utilizador."
+keywords: 
+author: NathBarn
+manager: angrobe
+ms.date: 07/12/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
+ms.reviewer: dagerrit
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+
+=======
+---
+title: "Inscrever com o gestor de inscrição de dispositivos | Microsoft Intune"
+description: "A conta do gestor de inscrição de dispositivos (DEM) pode gerir um grande número de dispositivos móveis pertencentes à empresa partilhados com uma única conta de utilizador."
+keywords: 
+author: staciebarker
+ms.author: stabar
+manager: angrobe
+ms.date: 07/12/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
+ms.reviewer: dagerrit
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
 
+<<<<<<< HEAD
 
 # Inscrever dispositivos pertencentes à empresa com o gestor de inscrição de dispositivos no Microsoft Intune
 As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do *gestor de inscrição de dispositivos* (DEM) é uma conta especial do Intune, que pode inscrever mais de 1000 dispositivos. Recomendamos que utilize os dispositivos inscritos através desta conta como dispositivos partilhados em vez de dispositivos pessoais (“BYOD”). Os utilizadores não poderão utilizar as aplicações de e-mail “nativas”, por exemplo.
+||||||| merged common ancestors
+
+# Inscrever dispositivos pertencentes à empresa com o gestor de inscrição de dispositivos no Microsoft Intune
+As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do *gestor de inscrição de dispositivos* (DEM) é uma conta especial do Intune, que pode inscrever mais de 1000 dispositivos. Recomendamos que utilize os dispositivos inscritos através desta conta como dispositivos partilhados em vez de dispositivos pessoais (“BYOD”). Os utilizadores não poderão utilizar as aplicações de e-mail “nativas”, por exemplo.
+=======
+
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscrever dispositivos pertencentes à empresa com o gestor de inscrição de dispositivos no Microsoft Intune
+As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do *gestor de inscrição de dispositivos* (DEM) é uma conta especial do Intune, que pode inscrever mais de 1000 dispositivos. Cada dispositivo inscrito utiliza uma única licença. Recomendamos que utilize os dispositivos inscritos através desta conta como dispositivos partilhados em vez de dispositivos pessoais (“BYOD”). Os utilizadores não poderão utilizar as aplicações de e-mail “nativas”, por exemplo.
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 Como exemplo, pode atribuir uma conta de utilizador do gestor de inscrição de dispositivos a um gerente ou supervisor de loja para:
 
@@ -34,7 +85,7 @@ Como exemplo, pode atribuir uma conta de utilizador do gestor de inscrição de 
 -   Configurar o acesso a dados da empresa.
 
 
-**Um cenário do gestor de inscrição de dispositivos:** um restaurante pretende obter tablets de ponto de venda para os empregados de mesa e monitores de apresentação de pedidos para os empregados da cozinha. Os empregados não precisam nunca de aceder aos dados da empresa nem de iniciar sessão como utilizadores. O administrador do Intune cria uma conta do gestor de inscrição de dispositivos e inscreve os dispositivos da empresa através dessa conta. Em alternativa, o administrador pode conceder as credenciais de gestor de inscrição de dispositivos ao gestor do restaurante, o que lhe permitirá inscrever e gerir os dispositivos.
+**Um cenário do gestor de inscrição de dispositivos:** um restaurante pretende obter tablets de ponto de venda para os empregados de mesa e monitores de apresentação de pedidos para o pessoal da cozinha. Os funcionários não precisam nunca de aceder aos dados da empresa nem de iniciar sessão como utilizadores. O administrador do Intune cria uma conta do gestor de inscrição de dispositivos e inscreve os dispositivos da empresa através dessa conta. Em alternativa, o administrador pode conceder as credenciais de gestor de inscrição de dispositivos ao gestor do restaurante, o que lhe permitirá inscrever e gerir os dispositivos.
 
 O administrador ou gestor pode implementar aplicações específicas de cada função nos dispositivos do restaurante. Um administrador também pode selecionar o dispositivo na consola do Intune e extingui-lo da gestão de dispositivos móveis com a consola de administração.
 
@@ -50,10 +101,10 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
 > Para implementar aplicações da empresa em dispositivos geridos com o gestor de inscrição de dispositivos, implemente a aplicação Portal da Empresa como uma **Instalação Obrigatória** na conta de utilizador do gestor de inscrição de dispositivos.
 > Para melhorar o desempenho, a visualização da aplicação Portal da Empresa num dispositivo DEM mostra apenas os dispositivos locais. A gestão remota de outros dispositivos DEM só pode ser efetuada a partir da consola de administração do Intune.
 
-## Criar contas de gestor de inscrição de dispositivos
+## <a name="create-device-enrollment-manager-accounts"></a>Criar contas de gestor de inscrição de dispositivos
 As contas de gestor de inscrição de dispositivos são contas de utilizador que têm permissão para inscrever um grande número de dispositivos pertencentes à empresa. Apenas os utilizadores da consola do Intune podem ser gestores de inscrição de dispositivos.
 
-#### Adicionar um gestor de inscrição de dispositivos ao Intune
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>Adicionar um gestor de inscrição de dispositivos ao Intune
 
 1.  Aceda ao [Portal de contas do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) e inicie sessão na sua conta de administrador.
 
@@ -71,7 +122,7 @@ As contas de gestor de inscrição de dispositivos são contas de utilizador que
 
 8.  O gestor de inscrição de dispositivos agora pode inscrever dispositivos móveis com o mesmo procedimento utilizado por um utilizador final num cenário BYOD no Portal da Empresa.
 
-## Eliminar um gestor de inscrição de dispositivos do Intune
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eliminar um gestor de inscrição de dispositivos do Intune
 
 1.  Inicie sessão no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com as credenciais de administrador.
 
@@ -95,6 +146,6 @@ A eliminação de um gestor de inscrição de dispositivos não afeta os disposi
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

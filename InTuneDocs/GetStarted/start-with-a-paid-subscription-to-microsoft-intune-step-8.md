@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Inscrever dispositivos móveis e instalar aplicações | Microsoft Intune"
 description: "Explica como inscrever dispositivos móveis e instalar uma aplicação num dispositivo inscrito no Intune"
@@ -17,46 +18,98 @@ translationtype: Human Translation
 ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
 ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
+||||||| merged common ancestors
+---
+title: "Inscrever dispositivos móveis e instalar aplicações | Microsoft Intune"
+description: "Explica como inscrever dispositivos móveis e instalar uma aplicação num dispositivo inscrito no Intune"
+keywords: 
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 08/29/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
+
+=======
+---
+title: "Ativar a inscrição de dispositivos | Microsoft Intune"
+description: "Definir autoridade MDM e ativar a inscrição de dispositivos iOS, Mac, Android e Windows."
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 11/22/2016
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
+ms.reviewer: jeffgilb
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
+
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
 
 ---
+<<<<<<< HEAD
 
 # Inscrever dispositivos móveis e instalar aplicações
 Para configurar a gestão de dispositivos móveis com o Intune, tem de começar por definir a autoridade de gestão de dispositivos móveis, ativar a gestão para as plataformas de dispositivos e, em seguida, inscrever os dispositivos com a aplicação Portal da Empresa. Em seguida, pode implementar a aplicação Microsoft Skype que publicou no passo 6.
+||||||| merged common ancestors
 
-## Ativar a gestão de dispositivos e inscrever dispositivos
+# Inscrever dispositivos móveis e instalar aplicações
+Para configurar a gestão de dispositivos móveis com o Intune, tem de começar por definir a autoridade de gestão de dispositivos móveis, ativar a gestão para as plataformas de dispositivos e, em seguida, inscrever os dispositivos com a aplicação Portal da Empresa. Em seguida, pode implementar a aplicação Microsoft Skype que publicou no passo 6.
+=======
 
-1.  **Tornar o Intune a autoridade de gestão de dispositivos móveis** Na [consola de administração do Intune](https://manage.microsoft.com/), escolha **Administração**  >  **Gestão de Dispositivos Móveis** e escolha **Definir Autoridade MDM**, em **Tarefas**.  Escolha **Sim** na caixa de diálogo Autoridade de MDM.
+# <a name="enroll-mobile-devices-and-install-an-app"></a>Inscrever dispositivos móveis e instalar aplicações
+Para configurar a gestão de dispositivos móveis com o Intune, primeiro, tem de definir a *autoridade de gestão de dispositivos móveis*, que identifica o serviço que pode gerir dispositivos associados à sua conta. Esta orientação assume que irá utilizar o serviço Intune em vez do System Center Configuration Manager. Assim que a autoridade de MDM seja definida, pode ativar a gestão para plataformas de dispositivos e inscrever os seus dispositivos com a aplicação do Portal da Empresa.
+>>>>>>> 6851ab9d7bde3f80f14f27ebf43e5f2b265939e2
+
+## <a name="enable-device-enrollment"></a>Ativar a inscrição de dispositivos
+
+1. **Tornar o Intune a autoridade de gestão de dispositivos móveis**
+    Na [consola de administração do Intune](https://manage.microsoft.com/), escolha **Administração** > **Gestão de Dispositivos Móveis** e escolha **Definir Autoridade MDM**, em **Tarefas**.  
+
+2. Escolha **Sim** na caixa de diálogo Autoridade de MDM.
+
     ![Consola de administração. Definir MDM para o Intune](./media/mdmAuthority.png)
 
-2.  **Ativar MDM na plataforma de dispositivos** Ative a gestão de dispositivos móveis na plataforma de dispositivos que pretende gerir. Dependendo da sua plataforma, são necessários requisitos diferentes:
+## <a name="choose-how-to-enroll-devices"></a>Escolher como inscrever dispositivos
 
-    -   **iOS e Mac OS X**: consulte [Configurar a gestão de iOS e Mac com o Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
+O Intune pode gerir dispositivos numa variedade de modos consoante os requisitos da sua empresa. "Traga o seu próprio dispositivo" (BYOD), dispositivos pertencentes à empresa, "escolha o seu próprio dispositivo" (CYOD) e dispositivos no modo local público são apenas alguns cenários de inscrição disponíveis.
 
-    -   **Windows Phone**: consulte [Configurar a gestão do Windows Phone com o Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+Siga estes passos para [Escolher como inscrever dispositivos](choose-how-to-enroll-devices1.md).
 
-    -   **Android**: os dispositivos móveis Android permitem aos utilizadores utilizar a aplicação Portal da Empresa, disponível no [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider), para se inscreverem. Não é necessária nenhuma configuração adicional no Intune.
+## <a name="enable-mdm-for-your-device-platform"></a>Ativar MDM na plataforma de dispositivos
+A inscrição tem de estar ativada para dispositivos iOS, Mac e Android for Work a estabelecer uma relação entre o fornecedor da plataforma e o seu inquilino do Intune. Os dispositivos Windows e Android não precisam de passos adicionais, contudo, pode simplificar a inscrição de dispositivos Windows para os seus utilizadores com a criação de uma entrada de registo DNS especial.
 
-3.  **Inscrever dispositivos**:
+Ative a gestão de dispositivos na plataforma de dispositivos que pretende gerir. Dependendo da sua plataforma, são necessários requisitos diferentes:
 
-    -   **Android** - Instale a aplicação **Portal da Empresa do Intune**, da Microsoft Corporation, disponível no [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), e inicie sessão com as credenciais de utilizador do Intune adicionadas acima.
+-  [iOS e macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [Window PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-  [Windows 10 Mobile e Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-    -   **iOS e Mac OS X** - Instale a aplicação **Portal da Empresa do Microsoft Intune**, da Microsoft Corporation, disponível na Loja de Aplicações, e inicie sessão com as credenciais de utilizador do Intune adicionadas acima. Veja os **Dispositivos inscritos** para adicionar o seu dispositivo.
+Depois de a inscrição estar ativada, os utilizadores podem transferir a aplicação do Portal da Empresa para o respetivo dispositivo e concluir o processo de inscrição do dispositivo.
 
-    -   **Windows Phone 8.1** - Os utilizadores devem instalar a aplicação **Portal da Empresa**, da Microsoft Corporation, disponível na loja do Windows Phone, e iniciar sessão com as credenciais de utilizador do Intune adicionadas acima.  Veja os **Dispositivos inscritos** para adicionar o seu dispositivo.
+### <a name="enable-company-owned-device-enrollment"></a>Ativar a inscrição de dispositivos pertencentes à empresa
+Também pode ativar uma variedade de cenários de [inscrição de dispositivos pertencentes à empresa](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices), incluindo:
+- [Programa de Inscrição de Dispositivos da Apple](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Inscrição do Assistente de Configuração do Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Inscrição do Assistente de Configuração do Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Gestor de Inscrição de Dispositivos](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-    -   **Windows Phone 8.0** - os utilizadores devem escolher **definições do sistema** &gt; **aplicações da empresa** e iniciar sessão com as credenciais de utilizador do Intune adicionadas acima. A aplicação Portal da Empresa é implementada no seu telemóvel.
-
-    Se for pedido o **Endereço do servidor**, escreva "manage.microsoft.com".
-
-## Instalar uma aplicação num dispositivo inscrito
-No [passo 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) deste guia de introdução, publicou a aplicação Skype no grupo de Utilizadores do Intune personalizado. Agora, irá instalar a aplicação num dispositivo inscrito recentemente.
-
-Abra o Portal da Empresa no dispositivo móvel inscrito, escolha **Aplicações**e, em seguida, instale o **Microsoft Skype**.
-
-Para saber mais sobre a gestão de dispositivos móveis com o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], consulte [Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
-
-
-### Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Parabéns! Acabou de concluir o último passo do *Guia de introdução do Intune*. Agora que a configuração inicial está concluída, pode considerar a ativação da funcionalidade MDM adicional.
 
 >[!div class="step-by-step"]
@@ -65,6 +118,6 @@ Parabéns! Acabou de concluir o último passo do *Guia de introdução do Intune
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
