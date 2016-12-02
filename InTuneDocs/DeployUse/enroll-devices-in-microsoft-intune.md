@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
 
 
 ---
@@ -30,7 +30,7 @@ Se utilizar o [Exchange ActiveSync](#mobile-device-management-with-exchange-acti
 A seguinte tabela mostra métodos de inscrição do Intune, bem como as funcionalidades suportadas e os requisitos de cada método. As funcionalidades e os requisitos encontram-se descritos abaixo.
 
 - **Apagar** – indica se o dispositivo tem de ser apagado antes de os utilizadores poderem inscrever o dispositivo. O termo "apagar" significa uma reposição de fábrica do dispositivo, a qual remove todos os dados. Para obter mais informações, consulte [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md).
-- **Afinidade** – associa dispositivos a utilizadores. Necessário para gestão de aplicações móveis (MAM) e acesso condicional a dados da empresa. Para obter mais informações, consulte [Afinidade do utilizador](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
+- **Afinidade** – associa dispositivos a utilizadores. Necessário para gestão de aplicações móveis (MAM) e acesso condicional a dados da empresa. Para obter mais informações, consulte [Afinidade do utilizador](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
 - **Bloquear** – impede os utilizadores de remover o dispositivo da gestão. Os dispositivos iOS necessitam do modo supervisionado para Bloquear. Para obter mais informações, consulte [Bloqueio remoto](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **Métodos de inscrição do iOS**
@@ -120,6 +120,6 @@ O Intune pode gerir as seguintes plataformas de dispositivos:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
