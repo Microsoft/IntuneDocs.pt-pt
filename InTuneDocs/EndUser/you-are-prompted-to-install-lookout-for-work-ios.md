@@ -2,7 +2,7 @@
 title: "É-lhe pedido que instale o Lookout for Work no seu dispositivo iOS | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# É-lhe pedido que instale o Lookout for Work no seu dispositivo iOS
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>É-lhe pedido que instale o Lookout for Work no seu dispositivo iOS
 
 Antes de poder aceder ao seu trabalho, o administrador de TI precisa que instale a aplicação Lookout for Work, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança. Poderá ver pedidos diferentes no seu dispositivo, consoante a forma como o administrador de TI configurar o Lookout for Work.
 
@@ -50,11 +50,11 @@ Se o Lookout for Work encontrar uma ameaça à segurança do seu dispositivo, ve
 
 **Se a instalação não funcionar**
 
-Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

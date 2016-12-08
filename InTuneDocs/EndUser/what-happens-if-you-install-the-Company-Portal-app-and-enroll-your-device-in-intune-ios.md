@@ -2,7 +2,7 @@
 title: "O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo iOS ou Mac OS X no Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
 
 
 ---
 
 
-# O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo iOS ou Mac OS X no Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo iOS ou Mac OS X no Intune?
 
 Quando instalar a aplicação Portal da Empresa e inscrever o dispositivo iOS ou Mac OS X no Intune, pode utilizar a aplicação Portal da Empresa para:
 
@@ -38,7 +38,7 @@ Quando inscreve o seu dispositivo no Intune, está a dar permissão ao administr
 
 **O que o administrador de TI não pode ver**
 
--   Histórico Web e chamadas
+-   Histórico de chamadas e da Web
 
 -   Localização
 
@@ -92,10 +92,10 @@ Quando o seu dispositivo está inscrito, o administrador de TI pode:
 
 -   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
