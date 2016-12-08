@@ -2,10 +2,10 @@
 title: Sincronizar o seu dispositivo iOS manualmente | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
-ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 
 ---
 
 
-# Sincronizar o seu dispositivo iOS manualmente
+# <a name="sync-your-ios-device-manually"></a>Sincronizar o seu dispositivo iOS manualmente
 
-Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as seguintes instruções para sincronizar manualmente o seu dispositivo iOS. A sincronização manual poderá ajudar a acelerar a instalação. A funcionalidade de sincronização aplica-se apenas ao iOS e não ao Mac OS X.
+Caso a instalação da sua aplicação esteja a demorar muito tempo, pode tentar sincronizar o seu dispositivo manualmente. A sincronização manual poderá ajudar a acelerar a instalação. A funcionalidade de sincronização aplica-se apenas ao iOS e não ao Mac OS X.
 
 1. Abra a aplicação Portal da Empresa iOS.
 
@@ -38,10 +38,10 @@ Se a instalação da aplicação estiver a demorar demasiado tempo, utilize as s
 
 Até que a sincronização esteja concluída, é apresentado um círculo a girar no ecrã.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

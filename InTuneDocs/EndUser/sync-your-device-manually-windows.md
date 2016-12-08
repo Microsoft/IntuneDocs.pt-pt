@@ -2,8 +2,8 @@
 title: Sincronizar o seu dispositivo Windows manualmente | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
-ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 ---
 
 
-# Sincronizar o seu dispositivo Windows manualmente
+# <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 Caso a instalação da sua aplicação esteja a demorar muito tempo, pode tentar sincronizar manualmente o seu dispositivo Windows. A sincronização manual poderá ajudar a acelerar a instalação.
 
-Apenas as seguintes versões são suportadas. Utilize as instruções que correspondem ao tipo de dispositivo que tem.
+Apenas as seguintes versões são suportadas. Se o seu dispositivo não estiver na lista, a sincronização não é suportada. Utilize as instruções que correspondem ao tipo de dispositivo que tem.
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
 * [Windows Phone 8.1](#windows-phone-8-1)
 
 
-## Windows 10 Mobile
+## <a name="windows-10-mobile"></a>Windows 10 Mobile
 Para sincronizar manualmente o seu dispositivo Windows 10 Mobile para acelerar uma instalação de aplicações lenta:
 
 1. Aceda a **Todas as aplicações** > **Definições** > **Contas**.
@@ -53,7 +53,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Mobile para acelerar u
 
     É apresentada a mensagem "Estamos a sincronizar a sua conta" na parte superior do ecrã. O botão **Sincronizar** aparece a cinzento até que seja concluída a sincronização do dispositivo.
 
-## Windows 10 Desktop
+## <a name="windows-10-desktop"></a>Windows 10 Desktop
 Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de passos. Para saber que passos que deve utilizar, observe as capturas de ecrã e, em seguida, siga os passos que se parecem com o que vê no seu dispositivo. 
 
 1. Selecione o botão **Iniciar** e, em seguida, selecione **Definições**.
@@ -74,7 +74,7 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 
     ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png) 
 
-### Passos a seguir se vir Acesso profissional ou escolar
+### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Passos a seguir se vir Acesso profissional ou escolar
 
 1. Na página **Contas**, selecione **Acesso profissional ou escolar**.
 
@@ -93,9 +93,9 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 
 4. Selecione o botão**Sincronizar**. O seu dispositivo será sincronizado com o Intune.
 
-### Passos a seguir se vir Acesso de trabalho
+### <a name="steps-to-follow-if-you-see-work-access"></a>Passos a seguir se vir Acesso de trabalho
     
-1. Na página **Contas** , selecione **Acesso de trabalho**.
+1. Na página **Contas**, selecione **Acesso de trabalho**.
 
     ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png)
 
@@ -109,7 +109,7 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 
    O botão fica a cinzento até a sincronização estar concluída.
 
-## Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar uma instalação de aplicações lenta:
 
 1. Aceda a **Todas as aplicações** > **Definições** > **área de trabalho**.
@@ -126,10 +126,10 @@ Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar u
 
    É apresentada a mensagem "Estamos a sincronizar a sua conta" na parte superior do ecrã até que seja concluída a sincronização do dispositivo.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

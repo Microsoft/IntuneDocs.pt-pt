@@ -1,11 +1,11 @@
 ---
 title: Utilizar o site do Portal da Empresa do Intune | Microsoft Intune
-description: "Descreve o Web site do Portal da Empresa e fornece ligações para passos para tarefas que pode fazer no Web site"
+description: "Descreve o site do Portal da Empresa e fornece ligações para passos de tarefas que os utilizadores finais podem fazer no site"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,36 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
-ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
 
 
 ---
 
-# Utilizar o Site do Portal da Empresa do Intune
-O [site do Portal da Empresa](http://portal.manage.microsoft.com) é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune.
+# <a name="using-the-intune-company-portal-website"></a>Utilizar o Site do Portal da Empresa do Intune
+O [site do Portal da Empresa](http://portal.manage.microsoft.com) é uma página Web que os utilizadores podem utilizar para gerir computadores e dispositivos que tenham inscrito no Intune.
 
-Pode utilizar o site do Portal da Empresa para:
+Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da Empresa:
 
 -   [Mudar o nome do seu dispositivo](rename-your-device-cpwebsite.md)
 
--   [Remover o dispositivo](remove-your-device-cpwebsite.md)
+-   [Remover o seu dispositivo](remove-your-device-cpwebsite.md)
 
--   [Repor o dispositivo](reset-your-device-cpwebsite.md)
+-   [Repor o seu dispositivo](reset-your-device-cpwebsite.md)
 
--   [Reposição do código de acesso do dispositivo](reset-your-passcode-cpwebsite.md)
+-   [Repor o código de acesso do seu dispositivo](reset-your-passcode-cpwebsite.md)
 
 -   [Bloquear remotamente um dispositivo](remote-lock-your-device-cpwebsite.md)
 
--   [Sincronizar o dispositivo manualmente para acelerar a instalações de aplicações lentas](sync-your-device-manually-cpwebsite.md)
+-   [Sincronizar o dispositivo manualmente para acelerar as instalações de aplicações lentas](sync-your-device-manually-cpwebsite.md)
 
--   Localizar as informações de contacto do administrador de TI, se este as tiver configurado
+-   Localizar as informações de contacto do administrador de TI, se as tiver configurado
 
--   Ver detalhes acerca do seu dispositivo, incluindo se está em conformidade com as políticas da sua empresa ou escola
+-   Ver detalhes acerca do respetivo dispositivo, incluindo se está em conformidade com as políticas da empresa ou escola
 
--   Gerir remotamente o seu PC (funciona apenas para PCs)
+-   Gerir remotamente o respetivo PC (funciona apenas para PCs)
 
-Pode efetuar a maioria das mesmas tarefas no **site do Portal da Empresa** que pode fazer utilizando a **aplicação Portal da Empresa** que instala no seu dispositivo. Para obter mais informações sobre a aplicação Portal da Empresa, sobre como inscrever um dispositivo no Intune e muito mais, toque na ligação para o tipo de dispositivo que tem:
+Os utilizadores finais podem efetuar a maioria das mesmas tarefas no **site do Portal da Empresa** que podem fazer através da **aplicação Portal da Empresa** que instalam no seu dispositivo. Consulte as seguintes páginas para obter ligações para todas as tarefas que os utilizadores finais podem efetuar no respetivo dispositivo:
 
 - [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 - [Utilizar o seu dispositivo iOS ou Mac OS X com o Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
@@ -51,6 +51,6 @@ Pode efetuar a maioria das mesmas tarefas no **site do Portal da Empresa** que p
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
