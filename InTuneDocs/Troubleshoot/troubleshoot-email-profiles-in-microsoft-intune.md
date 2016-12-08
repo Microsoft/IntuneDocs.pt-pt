@@ -2,7 +2,8 @@
 title: Resolver problemas com perfis de e-mail| Microsoft Intune
 description: "Problemas de perfis de e-mail e como resolvê-los."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
+ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
+ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 
 ---
 
-# Resolver problemas com perfis de e-mail no Microsoft Intune
+# <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Resolver problemas com perfis de e-mail no Microsoft Intune
 Alguns problemas de perfis de e-mail e a forma de resolvê-los encontram-se descritos aqui.
 
 Se estas informações não resolverem o problema, veja [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
 
 
-## Não é possível enviar imagens a partir da conta de e-mail
+## <a name="unable-to-send-images-from-email-account"></a>Não é possível enviar imagens a partir da conta de e-mail
 Os utilizadores que têm contas de e-mail configuradas automaticamente não conseguem enviar imagens a partir dos dispositivos deles.
 Isto ocorre quando a opção **Permitir o envio de e-mails a partir de aplicações de terceiros** não está ativada.
 
-### Solução do Intune
+### <a name="intune-solution"></a>Solução do Intune
 
 1.  Abra a Consola de Administração do Microsoft Intune, selecione a carga de trabalho **Política** &gt;**Política de Configuração**.
 
@@ -37,7 +38,7 @@ Isto ocorre quando a opção **Permitir o envio de e-mails a partir de aplicaç�
 
 3.  Selecione **Permitir o envio de e-mails a partir de aplicações de terceiros.**
 
-### Solução do Configuration Manager integrado com o Intune
+### <a name="configuration-manager-integrated-with-intune-solution"></a>Solução do Configuration Manager integrado com o Intune
 
 1.  Abra a consola do Configuration Manager &gt; **Ativos e Conformidade**.
 
@@ -48,7 +49,7 @@ Isto ocorre quando a opção **Permitir o envio de e-mails a partir de aplicaç�
 4.  No separador **Definições de Sincronização**, selecione **Permitir o envio de e-mails a partir de aplicações de terceiros**.
 
 
-## O dispositivo já tem um perfil de email instalado
+## <a name="device-already-has-an-email-profile-installed"></a>O dispositivo já tem um perfil de email instalado
 
 Se o utilizador tiver instalado um perfil de e-mail anterior ao aprovisionamento de um perfil pelo Intune, sendo que o resultado da implementação do perfil de e-mail do Intune depende da plataforma do dispositivo:
 
@@ -56,20 +57,20 @@ Se o utilizador tiver instalado um perfil de e-mail anterior ao aprovisionamento
 
 -**Windows**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. O Intune vai substituir o perfil de e-mail existente criado pelo utilizador.
 
--**Samsung KNOX**: o Intune identifica uma conta de e-mail duplicada com base no endereço de e-mail e substituí-lo com o perfil do Intune. Se o utilizador configurar essa conta, esta será substituída novamente pelo perfil do Intune. Tenha em atenção que isto pode causar alguma confusão ao utilizador cuja configuração de conta seja substituída.
+-**Samsung KNOX Standard**: o Intune identifica uma conta de e-mail duplicada com base no endereço de e-mail e substitui a conta duplicada pelo perfil do Intune. Se o utilizador configurar essa conta, esta será substituída novamente pelo perfil do Intune. Tenha em atenção que isto pode causar alguma confusão ao utilizador cuja configuração de conta seja substituída.
 
 Dado que o Samsung KNOX não utiliza o nome de anfitrião para identificar o perfil, recomendamos que não crie múltiplos perfis de e-mail para implementar o mesmo endereço de e-mail em diferentes anfitriões, como estes serão substituídas entre si.
 
-## Erro 0x87D1FDE8 para dispositivo KNOX
-**Problema**: depois de criar e implementar um perfil de e-mail do Exchange Active Sync para Samsung KNOX em vários dispositivos Android, é comunicado o erro **0x87D1FDE8** ou **falha na remediação** no separador propriedades &gt; política do dispositivo.
+## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
+**Problema**: depois de criar e implementar um perfil de e-mail do Exchange Active Sync para Samsung KNOX Standard em vários dispositivos Android, é comunicado o erro **0x87D1FDE8** ou **falha na remediação** no separador propriedades &gt; política do dispositivo.
 
 Reveja a configuração do seu perfil EAS para Samsung KNOX e a política de origem. A opção de sincronização do Samsung Notes já não é suportada e não deve ser selecionada no seu perfil. Certifique-se de que os dispositivos têm tido tempo suficiente para processar a política, até 24 horas.
 
-## Passos seguintes
+## <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
