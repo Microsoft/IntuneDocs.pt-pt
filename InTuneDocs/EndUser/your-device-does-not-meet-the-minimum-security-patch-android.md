@@ -2,7 +2,7 @@
 title: "O dispositivo não cumpre o patch mínimo de segurança | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/25/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
 
 
 ---
 
-# O dispositivo não cumpre o patch mínimo de segurança
+# <a name="your-device-does-not-meet-the-minimum-security-patch"></a>O dispositivo não cumpre o patch mínimo de segurança
 
 Se vir a mensagem "O nível de patch de segurança Android mínimo não está configurado", terá de instalar pelo menos o patch mínimo de segurança ou um posterior. O administrador de TI requer esta instalação para proteger os dados da empresa no seu dispositivo Android.
 
@@ -37,10 +37,10 @@ A localização do nível de patch de segurança atual varia consoante o tipo de
 
 - Dispositivos Samsung Knox: aceda a **Definições** > **Atualizações do sistema** > **Verificar novas atualizações do sistema**.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
