@@ -2,7 +2,7 @@
 title: Inscrever o dispositivo Windows Phone 8.1 no Intune | Microsoft Intune
 description: Descreve como inscrever dispositivos Windows Phone 8.1 no Intune
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -14,25 +14,25 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# Inscrever o dispositivo Windows Phone 8.1 no Intune
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o dispositivo Windows Phone 8.1 no Intune
 
 Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação do Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 Para inscrever o dispositivo Windows Phone 8.1 no Intune, siga as instruções que se aplicam à sua empresa ou escola:
 
--   [Se a sua empresa permitir a utilização do Portal da Empresa a partir da Loja Windows](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Caso a sua empresa permita a utilização do Portal da Empresa a partir da Loja Windows](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Se não tiver permissão para aceder à Loja Windows a partir do seu Windows Phone ou se não tiver uma Conta Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Caso não tenha permissão para aceder à Loja Windows a partir do seu Windows Phone ou não tenha uma Conta Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## Se a sua empresa permitir a utilização do Portal da Empresa a partir da Loja Windows
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Se a sua empresa permitir a utilização do Portal da Empresa a partir da Loja Windows
 Instalar a aplicação Portal da Empresa no dispositivo:
 
 1.  Toque em **Iniciar** &gt; **Loja**.
@@ -71,7 +71,7 @@ Inscrever o dispositivo:
 
     ![Ecrã de conta adicionada](./media/WP81-enroll-4-account-added.png)
 
-## Se não tiver permissão para aceder à Loja Windows a partir do seu Windows Phone ou se não tiver uma Conta Microsoft
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Se não tiver permissão para aceder à Loja Windows a partir do seu Windows Phone ou se não tiver uma Conta Microsoft
 
 1.  Toque em **Definições** &gt; **área de trabalho**.
 
@@ -83,10 +83,10 @@ Inscrever o dispositivo:
 
 Se o administrador de TI tiver configurado o Portal da Empresa para ser instalado durante a inscrição, o Portal da Empresa irá aparecer na sua lista de aplicações.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

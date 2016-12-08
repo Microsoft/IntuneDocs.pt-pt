@@ -2,10 +2,10 @@
 title: Inscrever o dispositivo iOS no Intune | Microsoft Intune
 description: Descreve como encriptar dispositivos iOS no Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 
 ---
 
 
-# Inscrever o dispositivo iOS no Intune
+# <a name="enroll-your-ios-device-in-intune"></a>Inscrever o dispositivo iOS no Intune
 
 Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo iOS para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, o seu departamento de TI pode gerir esses recursos de trabalho ou da escola, mantê-los seguros e dar-lhe a liberdade para utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, consulte [O que acontece quando instalar a aplicação Portal da Empresa e inscrever um dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -92,10 +92,10 @@ Se estiver a tentar inscrever um dispositivo Mac OS X, consulte [Inscrever o dis
 O dispositivo está agora inscrito no Intune e o utilizador é direcionado novamente para a aplicação Portal da Empresa.
 
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

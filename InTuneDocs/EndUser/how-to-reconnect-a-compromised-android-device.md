@@ -2,9 +2,10 @@
 title: Como ligar novamente um dispositivo Android comprometido | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: eff3eee3d655e27c62b9083a98813cf24c10cba4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0d2b62eb8e487e555d568a1ad968081a1929f019
 
 
 ---
 
-# Como ligar novamente um dispositivo Android comprometido
+# <a name="how-to-reconnect-a-compromised-android-device"></a>Como ligar novamente um dispositivo Android comprometido
 O seu administrador de TI detetou que está a utilizar um dispositivo desbloqueado por rooting. "Rooted" refere-se ao dispositivo ter sido alterado para permitir acesso ao sistema operativo, o que pode pôr em risco a segurança e ser uma ameaça aos recursos da sua empresa. Se isto acontecer, o dispositivo deixa de poder aceder a recursos da empresa.
 
-Precisa de ajuda? Contacte o se administrador de TI (verifique as informações de contacto no [Web site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa do Microsoft Android, através do endereço wintunedroidfbk@microsoft.com.
+Precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a [equipa Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
