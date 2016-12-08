@@ -2,10 +2,10 @@
 title: Encriptar o seu dispositivo | Microsoft Intune
 description: Descreve como encriptar dispositivos Android
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# Encriptar o dispositivo
+# <a name="encrypt-your-device"></a>Encriptar o dispositivo
 
 Se a sua empresa ou organização exigir que encripte o seu dispositivo Android antes de poder aceder a ficheiros, a e-mails ou a dados da empresa, siga os passos abaixo para encriptar o seu dispositivo. Poderá ser-lhe pedido para definir um PIN ou uma palavra-passe antes de encriptar, se o administrador de TI exigir um deles.
 
@@ -34,7 +34,7 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
 3.  Siga as instruções no ecrã. Durante a encriptação, o seu dispositivo poderá reiniciar várias vezes.
 
-### O que fazer se tiver problemas
+### <a name="what-to-do-if-you-have-issues"></a>O que fazer se tiver problemas
 **Problema**: já encriptou o seu dispositivo e vê um dos seguintes:
 
 - O botão de encriptação está desativado.
@@ -57,10 +57,10 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
     5. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
 
-Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a equipa Android da Microsoft, através do endereço wintunedroidfbk@microsoft.com.
+Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a [equipa Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
