@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ Como administrador do Intune, pode ativar a inscrição e gestão de dispositivo
 ## <a name="company-portal-app-enrollment"></a>Inscrição de aplicações no Portal da Empresa
 Pode permitir que os utilizadores instalem e inscrevam os respetivos dispositivos ao utilizar a aplicação Portal da Empresa do Intune. Se criar registos de recursos CNAME DNS, os utilizadores ligam e inscrevem-se no Intune sem que seja necessário introduzir um nome de servidor.
 
-1.  **Configurar o Intune**<br>Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis (MDM)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
+1.  **Configurar o Intune**<br>Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis (MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e ao configurar a MDM.
 
 2.  **Criar CNAMEs** (opcional)<br>Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://manage.microsoft.com. 
+    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://manage.microsoft.com.
 
     Se atualmente tiver um CNAME no DNS que redireciona EnterpriseEnrollment.contoso.com para manage.microsoft.com, sugerimos que o substitua por um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. Esta alteração é recomendada, uma vez que o ponto final de manage.microsoft.com vai ser preterido para as inscrições numa versão futura.
 
@@ -64,7 +64,7 @@ Pode permitir que os utilizadores instalem e inscrevam os respetivos dispositivo
 
 5.  **Indique aos utilizadores como devem inscrever os respetivos dispositivos para poderem aceder aos recursos da empresa.**
 
-    Para obter instruções de inscrição do utilizador final, veja [Inscrever o dispositivo Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md). Também pode encaminhar os utilizadores para [O que pode o administrador de TI ver ao inscrever o dispositivo no Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)
+    Para obter instruções de inscrição do utilizador final, veja [Inscrever o dispositivo Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md). Também pode encaminhar os utilizadores para [O que pode o administrador de TI ver ao inscrever o dispositivo no Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
     Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
     - [O que dizer aos seus utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Não é necessário qualquer ação adicional, a não ser que pretenda implement
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

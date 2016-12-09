@@ -2,8 +2,8 @@
 title: "Encapsular aplicações iOS com a Ferramenta de Encapsulamento de Aplicações do Intune | Microsoft Intune"
 description: "Utilize as informações neste tópico para saber como pode encapsular as suas aplicações iOS sem alterar os próprios códigos. Prepare as aplicações para que possa aplicar políticas de gestão de aplicações móveis."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
-ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
 
 
 ---
@@ -277,6 +277,6 @@ Utilize as seguintes práticas recomendadas de segurança e privacidade quando u
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

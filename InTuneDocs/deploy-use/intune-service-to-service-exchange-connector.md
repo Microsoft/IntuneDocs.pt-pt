@@ -14,8 +14,8 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
 
 
 ---
@@ -30,7 +30,7 @@ O **Conector de Serviços** suporta apenas o Exchange Online ou o Exchange Onlin
 |Requisito|Mais informações|
 |---------------|--------------------|
 |Exchange Online configurado e em execução|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Autoridade de gestão de dispositivos móveis| [Definir o Microsoft Intune como a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
+|Autoridade de gestão de dispositivos móveis| [Definir o Microsoft Intune como a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
 |Versão do Microsoft Exchange|Exchange Online ou o novo serviço do Exchange Online Dedicado|
 |Sincronização do Active Directory|Antes de poder utilizar o Conector do Intune, tem de [configurar a sincronização do Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), para que os seus utilizadores e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.|
 
@@ -65,6 +65,6 @@ Também pode ver a data e hora da última tentativa de sincronização efetuada 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

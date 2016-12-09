@@ -2,8 +2,8 @@
 title: "Eliminar dados de aplicações geridas pela empresa | Microsoft Intune"
 description: Saiba como pode remover de forma seletiva dados da empresa de dispositivos remotamente.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ O painel **Gestão de aplicações móveis do Intune** tem um relatório resumid
 
 2.  No painel **Pedido de eliminação**, pode ver a lista dos pedidos agrupados por utilizadores. Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver múltiplos pedidos para um utilizador. O estado indica se um pedido de eliminação está **pendente**, **falhou** ou se teve **êxito**.
 
-O utilizador tem de abrir a aplicação para que a eliminação ocorra. Após efetuar o pedido, a eliminação pode durar até 30 minutos. 
+O utilizador tem de abrir a aplicação para que a eliminação ocorra. Após efetuar o pedido, a eliminação pode durar até 30 minutos.
 
 As eliminações em estado pendente são apresentadas até que as elimine manualmente.  Para eliminar manualmente um pedido de eliminação, clique com o botão direito do rato e selecione eliminar.
 
@@ -66,6 +66,6 @@ As eliminações em estado pendente são apresentadas até que as elimine manual
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Para os dispositivos que têm de ser reaproveitados, também pode utilizar uma [
 8.  Selecione os dispositivos conforme adequado e escolha **Eliminar dispositivo**. O dispositivo será eliminado da próxima vez que sincronizar com o Active Directory. Esta situação ocorre normalmente no prazo de quatro horas. Após a sincronização, o dispositivo é removido da gestão. Esta ação remove um dispositivo do limite do dispositivo para este utilizador.
 
 ## <a name="retire-managed-computers"></a>Extinguir computadores geridos
-Os computadores geridos com o software de cliente Intune podem ser removidos da gestão a partir da consola de administração do Intune. Isto também desinstala o software de cliente e elimina a política do Intune do computador. Veja informações sobre como [extinguir computadores geridos com o software de cliente Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Os computadores geridos com o software de cliente Intune podem ser removidos da gestão a partir da consola de administração do Intune. Isto também desinstala o software de cliente e elimina a política do Intune do computador. Veja informações sobre como [extinguir computadores geridos com o software de cliente Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Bloquear o acesso a um dispositivo
 No caso de um dispositivo perdido ou quando tem de extinguir um dispositivo porque um funcionário saiu da empresa sem devolver um hardware pertencente à empresa, também pode [repor o código de acesso e bloquear remotamente](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) o dispositivo. Este procedimento impede que as informações sejam utilizadas indevidamente, embora possa ter de identificar o dispositivo como perdido.
@@ -70,6 +70,6 @@ Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

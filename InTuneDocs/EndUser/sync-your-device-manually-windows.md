@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ Apenas as seguintes versões são suportadas. Se o seu dispositivo não estiver 
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ Para sincronizar manualmente o seu dispositivo Windows 10 Mobile para acelerar u
     É apresentada a mensagem "Estamos a sincronizar a sua conta" na parte superior do ecrã. O botão **Sincronizar** aparece a cinzento até que seja concluída a sincronização do dispositivo.
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de passos. Para saber que passos que deve utilizar, observe as capturas de ecrã e, em seguida, siga os passos que se parecem com o que vê no seu dispositivo. 
+Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de passos. Para saber que passos que deve utilizar, observe as capturas de ecrã e, em seguida, siga os passos que se parecem com o que vê no seu dispositivo.
 
 1. Selecione o botão **Iniciar** e, em seguida, selecione **Definições**.
 
@@ -72,7 +72,7 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 
     Se vir este ecrã, que mostra "Acesso de trabalho", siga os passos em [Passos a seguir se vir Acesso profissional ou escolar](#steps-to-follow-if-you-see-your-account).
 
-    ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png) 
+    ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Passos a seguir se vir Acesso profissional ou escolar
 
@@ -80,9 +80,9 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 
     ![Selecionar Acesso profissional ou escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Selecione a sua conta escolar ou profissional. Dependendo da configuração que o administrador de TI efetuou, poderá ver duas contas com aspeto semelhante ao exemplo mostrado abaixo. Uma conta tem uma pasta junto à mesma, e a outra conta tem o logótipo da Microsoft. 
+2. Selecione a sua conta escolar ou profissional. Dependendo da configuração que o administrador de TI efetuou, poderá ver duas contas com aspeto semelhante ao exemplo mostrado abaixo. Uma conta tem uma pasta junto à mesma, e a outra conta tem o logótipo da Microsoft.
 
-    - Se vir a conta com a pasta, selecione-a e procure o botão **Informações** sob a mesma. 
+    - Se vir a conta com a pasta, selecione-a e procure o botão **Informações** sob a mesma.
     - Se vir apenas a conta com o logótipo da Microsoft, selecione a conta e procure o botão **Informações** sob a mesma.
 
     ![Selecione o nome da sua conta junto à pasta ou ao logótipo da Microsoft](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 4. Selecione o botão**Sincronizar**. O seu dispositivo será sincronizado com o Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Passos a seguir se vir Acesso de trabalho
-    
+
 1. Na página **Contas**, selecione **Acesso de trabalho**.
 
     ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

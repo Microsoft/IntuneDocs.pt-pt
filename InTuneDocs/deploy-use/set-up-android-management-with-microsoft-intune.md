@@ -14,8 +14,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: f1e019d66858357987ee34e8a5144fb6a3511400
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 Como administrador do Intune, pode ativar a gestão de dispositivos Android, incluindo dispositivos Samsung Knox Standard a partir do Portal da Empresa. Os utilizadores podem então inscrever os respetivos dispositivos com a aplicação Portal da Empresa disponível no Google Play.
 
 1.  **Configurar o Intune**<br>
-    Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#set-mobile-device-management-authority) como **Microsoft Intune** e ao configurar a MDM.
+    Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e ao configurar a MDM.
 
 2.  **Inscrição de dispositivos Android ativada**<br>
     Não são necessárias configurações adicionais na consola do Intune para ativar a inscrição de dispositivos móveis Android.
@@ -42,6 +42,6 @@ Como administrador do Intune, pode ativar a gestão de dispositivos Android, inc
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

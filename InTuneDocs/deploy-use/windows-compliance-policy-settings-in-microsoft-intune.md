@@ -2,8 +2,8 @@
 title: "Definições de política de conformidade para dispositivos Windows| Microsoft Intune"
 description: "Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos Windows."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 ---
@@ -28,7 +28,7 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 > [!div class="op_single_selector"]
 - [Definições de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
+- [Definições de política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Definições de política de conformidade para dispositivos Windows Phone
 As definições apresentadas nesta secção são suportadas no Windows Phone 8.1 e posterior.
@@ -151,6 +151,6 @@ Para localizar a versão de SO a utilizar nas definições **SO mínimo obrigat�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

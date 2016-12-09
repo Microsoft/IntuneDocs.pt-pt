@@ -2,7 +2,8 @@
 title: Resolver problemas de acesso condicional | Microsoft Intune
 description: "O que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune."
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Um dispositivo pode ser bloqueado no Acesso Condicional sem receber um e-mail de
 - Verifique os registos do Exchange Connector para a atividade de sendemail e procure a existência de erros. Um exemplo do comando a procurar é SendEmail da conta de notificação para useremail.
 - Antes do Exchange Connector bloquear o dispositivo, envia o e-mail de ativação. Se o dispositivo estiver offline, poderá não receber o e-mail de ativação. Verifique se o cliente de e-mail do dispositivo tem a obtenção de e-mail através de Push em vez de Poll, uma vez que isto também pode fazer com que o utilizador não receba o e-mail. Mude para Poll e verifique se o dispositivo recebe o e-mail.
 
-## <a name="noncompliant-device-not-blocked"></a>Dispositivo não conforme não bloqueado
+## <a name="non-compliant-device-not-blocked"></a>Dispositivo não conforme não bloqueado
 
 Se tiver um dispositivo que não esteja em conformidade mas continue a ter acesso, siga os passos seguintes.
 
@@ -158,6 +159,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

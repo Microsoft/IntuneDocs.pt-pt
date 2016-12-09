@@ -3,8 +3,9 @@ title: Funcionalidades de Acessibilidade | Microsoft Intune
 description: "Saiba mais sobre as funcionalidades do Intune que melhoram a acessibilidade para pessoas portadoras de deficiência."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55bdbaf5e521caa05d44bc45d4ec226dc05bf64b
-ms.openlocfilehash: 819fdb5bf4fd06a2b3b5010057cdd003e46f4758
+ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
+ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
 
 
 ---
 
-# Funcionalidades de Acessibilidade do Microsoft Intune
+# <a name="accessibility-features-of-microsoft-intune"></a>Funcionalidades de Acessibilidade do Microsoft Intune
 Para além das funcionalidades e ferramentas de acessibilidade no Microsoft Windows, as seguintes funcionalidades tornam o [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] mais acessível para pessoas com incapacidade:
 
 -   Utilizar atalhos de teclado
@@ -27,7 +28,7 @@ Para além das funcionalidades e ferramentas de acessibilidade no Microsoft Wind
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Utilizar Atalhos de Teclado
+## <a name="using-keyboard-shortcuts"></a>Utilizar Atalhos de Teclado
 
 |Para efetuar isto|Utilize este atalho de teclado|
 |--------------|------------------------------|
@@ -43,11 +44,10 @@ Para além das funcionalidades e ferramentas de acessibilidade no Microsoft Wind
 |Mover para o grupo de aplicações seguinte|SETA PARA CIMA|
 |Apresentar as ações para um dispositivo selecionado|SETA PARA A DIREITA|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Os portais são navegáveis através dos atalhos de teclado padrão do Internet Explorer.
+> Os portais do [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] são navegáveis através dos atalhos de teclado padrão do Internet Explorer.
 
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 
