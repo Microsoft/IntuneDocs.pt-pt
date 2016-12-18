@@ -14,8 +14,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8dba2883b3261017bc66a409c5261f4422890015
+ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
+ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
 
 
 ---
@@ -91,7 +91,7 @@ Escolha qualquer grupo de dispositivos móveis e, em seguida, no separador **Dis
 * **Dispositivos que não são compatíveis**. Estes dispositivos são bloqueados no Dynamics CRM.
 * **Dispositivos registados com o AAD e que são compatíveis**. Estes dispositivos podem aceder ao Dynamics CRM.
 
-##  <a name="next-steps"></a>Passos seguintes
+##  <a name="next-steps"></a>Próximos passos
 * [Acesso restrito ao Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
 * [Acesso restrito ao Exchange no local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
@@ -101,6 +101,6 @@ Escolha qualquer grupo de dispositivos móveis e, em seguida, no separador **Dis
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

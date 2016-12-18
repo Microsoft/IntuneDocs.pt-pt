@@ -1,25 +1,25 @@
 ---
-title: "Plug-in Cordova do SDK da Aplicação Microsoft Intune | Microsoft Intune"
+title: "Plug-in Cordova do SDK da Aplicação Microsoft Intune | Documentos da Microsoft"
 description: 
 keywords: sdk, Cordova, intune
 author: oydang
 manager: angrobe
 ms.author: oydang
-ms.date: 11/15/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2af369cc44c710789ab65eb25f10602882772019
+ms.sourcegitcommit: 613e293d9bd853d6de7cdc0d753cc8473afc180b
+ms.openlocfilehash: 9ef09f43e6c878af689a500457bab578149de499
 
 
 ---
-# ﻿<a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova do SDK da Aplicação Microsoft Intune
+# <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova do SDK da Aplicação Microsoft Intune
 
 > [!NOTE]
 > Pode ler primeiro o artigo [Introdução ao SDK da Aplicação Intune](intune-app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.
@@ -161,6 +161,6 @@ Depois de iniciar a aplicação pela primeira vez, deverá ver uma caixa de diá
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

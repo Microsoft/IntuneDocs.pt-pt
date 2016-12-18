@@ -14,8 +14,8 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3a58e075813fac6a37ec8f82a39e44a856ef1cce
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 5665ca431eb186d4378953b7047228e07ae9dc60
 
 
 ---
@@ -49,7 +49,7 @@ Pode definir uma política de acesso condicional para restringir o acesso com ba
 Ao contrário de outras políticas do Intune, não precisa implementar políticas de acesso condicional. Em vez disso, depois de configurar a política e selecionar os utilizadores que devem ter a política, esta é aplicada a todos os utilizadores visados. Quando um utilizador é direcionado por uma política, cada dispositivo que utiliza tem de estar em conformidade para que possam aceder aos recursos.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 1. [Saiba mais sobre a política de conformidade de dispositivos e como funciona](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 
 2. [Criar uma política de conformidade](create-a-device-compliance-policy-in-microsoft-intune.md).
@@ -66,6 +66,6 @@ Ao contrário de outras políticas do Intune, não precisa implementar política
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

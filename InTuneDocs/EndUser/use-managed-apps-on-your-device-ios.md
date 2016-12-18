@@ -2,10 +2,10 @@
 title: "Utilizar aplicações geridas no seu dispositivo iOS | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 509a0fda9355cc77a2f7690771dbe086c0cc59fc
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
 
 
 ---
 
 
-# Utilizar aplicações geridas no seu dispositivo iOS
+# <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 
 As aplicações geridas são as aplicações que o administrador de TI pode configurar para ajudar a proteger os dados da empresa a que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo iOS, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
 
@@ -32,14 +32,14 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### Como obtenho aplicações geridas?
+### <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para informações sobre a inscrição, consulte [Inscrever o seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o seu dispositivo Mac OS X no Intune](enroll-your-device-in-intune-mac-os-x.md).
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instala uma aplicação da App Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
-### O que o meu administrador de TI pode gerir na minha aplicação?
+### <a name="what-can-my-it-admin-manage-in-an-app"></a>O que o meu administrador de TI pode gerir na minha aplicação?
 Aqui estão alguns exemplos das opções que o administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
 
 -   Acesso a Web sites específicos
@@ -65,6 +65,6 @@ Contacte o administrador de TI para obter mais informações sobre as aplicaçõ
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

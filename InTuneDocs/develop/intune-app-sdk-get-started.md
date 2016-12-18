@@ -1,21 +1,21 @@
 ---
-title: "Introdução ao SDK da Aplicação do Microsoft Intune | Microsoft Intune"
+title: "Introdução ao SDK da Aplicação do Microsoft Intune | Documentos da Microsoft"
 description: 
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
 
 
 ---
@@ -85,11 +85,11 @@ Para integrar o SDK da Aplicação do Intune na sua aplicação Android nativa, 
 
 Para criar aplicações Cordova com o Plug-in Cordova do SDK da Aplicação Intune, vai precisar do seguinte:
 
-* **[Guia do Plug-in Cordova do SDK da Aplicação Intune](intune-app-sdk-cordova)**: este documento ajuda-o a criar aplicações para iOS e Android com o Cordova para a gestão de aplicações móveis do Intune.
+* **[Guia do Plug-in Cordova do SDK da Aplicação Intune](intune-app-sdk-cordova.md)**: este documento ajuda-o a criar aplicações para iOS e Android com o Cordova para a gestão de aplicações móveis do Intune.
 
 Para criar aplicações Xamarin com o Componente Xamarin do SDK da Aplicação Intune, vai precisar do seguinte:
 
-* **[Guia do Componente Xamarin do SDK da Aplicação Intune](intune-app-sdk-xamarin)**: este documento ajuda-o a criar aplicações para iOS e Android com o Cordova para a gestão de aplicações móveis do Intune.
+* **[Guia do Componente Xamarin do SDK da Aplicação Intune](intune-app-sdk-xamarin.md)**: este documento ajuda-o a criar aplicações para iOS e Android com o Cordova para a gestão de aplicações móveis do Intune.
 
 
 
@@ -118,6 +118,6 @@ Após ter concluído os passos necessários para integrar a aplicação iOS ou A
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

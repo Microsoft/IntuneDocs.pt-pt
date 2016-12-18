@@ -1,9 +1,9 @@
 ---
-title: "Resolução de Problemas da Integração do Lookout | Microsoft Intune"
+title: "Resolução de Problemas da Integração do Lookout | Documentos da Microsoft"
 description: "Este tópico descreve resoluções de problemas que ocorrem frequentemente com a Integração do Lookout"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ Poderá ver o seguinte erro se o utilizador de administração global do Azure A
 
 ![captura de ecrã do ecrã de início de sessão do Lookout a mostrar um erro de início de sessão](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Para resolver este problema, o utilizador de administração global tem de iniciar sessão em https://aad.lookout.com/les?action=consent e aceitar o pedido para iniciar a configuração. Pode encontrar mais informações detalhadas no tópico [Configurar a sua subscrição com o Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+Para resolver este problema, o utilizador de administração global tem de iniciar sessão em https://aad.lookout.com/les?action=consent e aceitar o pedido para iniciar a configuração. Pode encontrar mais informações detalhadas no tópico [Configurar a sua subscrição com o Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 
 ## <a name="troubleshoot-device-status-issues"></a>Resolução de problemas do estado do dispositivo
 
@@ -90,6 +90,6 @@ Desde que o utilizador novo esteja num dos grupos de inscrição especificados n
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 87c1f90f41ec72ff74c23bfa270efade31890fc0
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
 
 
 ---
@@ -123,13 +123,13 @@ Por exemplo, quando um utilizador inicia a aplicação OneDrive com a sua conta 
 
 Todas as aplicações móveis do Office suportam acesso de várias identidades.
 
-##  <a name="next-steps"></a>Passos seguintes
-- [Configurar políticas de gestão de aplicações móveis](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+##  <a name="next-steps"></a>Próximos passos
+- [Preparar-se para configurar políticas de gestão de aplicações móveis](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

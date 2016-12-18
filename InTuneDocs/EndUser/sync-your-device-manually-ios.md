@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 # <a name="sync-your-ios-device-manually"></a>Sincronizar o seu dispositivo iOS manualmente
 
-Caso a instalação da sua aplicação esteja a demorar muito tempo, pode tentar sincronizar o seu dispositivo manualmente. A sincronização manual poderá ajudar a acelerar a instalação. A funcionalidade de sincronização aplica-se apenas ao iOS e não ao Mac OS X.
+Caso a instalação da sua aplicação esteja a demorar muito tempo, pode tentar sincronizar o seu dispositivo manualmente. A sincronização manual poderá ajudar a acelerar a instalação. A funcionalidade de sincronização aplica-se apenas ao iOS e não ao macOS.
 
 1. Abra a aplicação Portal da Empresa iOS.
 
@@ -42,6 +42,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

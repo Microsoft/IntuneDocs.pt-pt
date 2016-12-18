@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>O seu dispositivo Android tem root e, por isso, não liga
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>O dispositivo Android tem root e não liga
+Foi direcionado para aqui porque viu uma mensagem a indicar que o dispositivo tem _root_.
 
-Quando o dispositivo Android tem root, significa que foi alterado para ativar determinadas funcionalidades que poderão comprometer recursos da empresa e de segurança. Se vir esta mensagem, não poderá aceder aos recursos da empresa enquanto o problema não for corrigido.
+Se um dispositivo Android tem "root", isto significa que algumas partes do software do dispositivo foram alteradas para ativar funcionalidades que, de outro modo, não poderiam estar presentes. Estas alterações, muitas vezes, podem comprometer um acesso seguro aos recursos organizacionais, como o e-mail e documentos. Os dispositivos com root são, por conseguinte, impedidos de serem utilizados para aceder a estes recursos até que o problema seja corrigido.  
 
-Se achar que não fez nada que tenha levado ao rooting deliberado do dispositivo, veja estes motivos adicionais que podem ter levado ao rooting:
+Existem algumas formas comuns pelas quais o dispositivo pode ter ficado com root:
 
-- Poderá ter instalada uma aplicação no seu dispositivo que o software de deteção de root pensa ser um risco de segurança. Se vir esta mensagem depois de instalar uma aplicação, pode experimentar desinstalar a aplicação para ver se ajuda.
+- Poderá ter instalada uma aplicação no seu dispositivo que o software de deteção de root pensa ser um risco de segurança. Se vir esta mensagem imediatamente depois de instalar uma aplicação, tente desinstalar essa aplicação.
 
-- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Contacte o administrador de TI para obter ajuda. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Neste caso, precisa de contactar o administrador de TI para obter ajuda. Para encontrar as informações de contacto, veja o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+
+Se tiver colocado o seu próprio dispositivo em root, terá de reverter o processo e restaurar o dispositivo novamente para o seu estado normal.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

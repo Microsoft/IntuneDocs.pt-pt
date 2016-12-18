@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 >
 > A inscrição de uma conta de utilizador adicionada ao grupo Gestores de Inscrição de Dispositivos não pode ser concluída quando a política de Acesso Condicional é imposta para o início de sessão desse utilizador específico.
 
-### <a name="company-portal-temporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
+### <a name="company-portal-emporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
 **Problema:** Um utilizador recebe um erro **Portal da Empresa Temporariamente Indisponível** no dispositivo.
 
 **Resolução:**
@@ -214,23 +214,40 @@ Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados do Android
 
-**Problema**: o utilizador recebe a mensagem seguinte no dispositivo: *Não pode iniciar sessão porque está em falta um certificado necessário no seu dispositivo.*
+**Problema**: os utilizadores recebem a mensagem seguinte no dispositivo: *não pode iniciar sessão porque está em falta um certificado obrigatório no seu dispositivo.*
 
-**Resolução**:
+**Resolução 1**:
 
-- O utilizador pode seguir [estas instruções](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) para obter o certificado em falta.
-- Se não conseguir obter o certificado, poderão estar em falta certificados intermediários no seu servidor do ADFS. O Android precisa dos certificados intermediários para confiar no servidor.
+Peça aos seus utilizadores para seguir as instruções em [O dispositivo tem um certificado obrigatório em falta](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro continuar a aparecer depois de os utilizadores seguirem as instruções, experimente a Resolução 2.
 
-Pode importar os certificados para o arquivo intermediário no servidor do ADFS ou para os proxies da seguinte forma:
+**Resolução 2**:
 
-1.  No servidor do ADFS, inicie a **Consola de Gestão da Microsoft** e adicione o snap de Certificados à **Conta de computador**.
-5.  Localize o certificado que o serviço do ADFS está a utilizar e veja o certificado principal.
-6.  Copie o certificado principal e cole-o em **Computer\Intermediate Certification Authorities\Certificate**.
-7.  Copie os certificados do ADFS, do ADFS Decrypting e do ADFS Signing e cole-os no Arquivo Pessoal do serviço do ADFS.
-8.  Reinicie os servidores do ADFS.
+Se os utilizadores ainda veem o erro de certificado em falta após introduzir as respetivas credenciais empresariais e forem redirecionados para a experiência de início de sessão federado, um certificado intermédio pode estar em falta no seu servidor de Serviços de Federação do Active Directory (AD FS).
 
+O erro de certificado ocorre porque os dispositivos Android necessitam de certificados intermédios a serem incluídos num [hello do Servidor SSL](https://technet.microsoft.com/library/cc783349.aspx), mas atualmente um servidor predefinido do AD FS ou a instalação do servidor Proxy do AD FS envia apenas o certificado SSL de serviço do AD FS na resposta hello do servidor de SSL ao hello do Cliente de SSL.
+
+Para corrigir o problema, importe os certificados para os Certificados dos Computadores Pessoais no servidor do AD FS ou nos proxies da seguinte forma:
+
+1.  Nos servidores ADFS e do proxy, inicie a consola de Gestão de Certificados para o computador local, ao clicar com o botão direito do rato no botão **Iniciar**, escolha **Executar** e escreva **certlm.msc**.
+2.  Expanda **Pessoal** e selecione **Certificados**.
+3.  Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
+4.  Selecione o separador **Caminho de Certificação** para ver o certificado(s) principal para o certificado.
+5.  Em cada certificado principal, selecione **Ver Certificado**.
+6.  Selecione o separador **Detalhes** e escolha **Copiar para o ficheiro...**.
+7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado para a localização de ficheiro pretendido.
+8.  Importe os certificados principais que foram exportados no Passo 3 para Computador Local\Pessoal\Certificados ao clicar com o botão direito do rato em **Certificados**, selecionar **Todas as Tarefas** > **Importar** e, em seguida, seguir as instruções do assistente para importar o(s) certificado(s).
+9.  Reinicie os servidores do AD FS.
+10. Repita os passos acima em todos os servidores do AD FS e do proxy.
 O utilizador deverá conseguir agora iniciar sessão no Portal da Empresa no dispositivo Android.
 
+**Para validar que o certificado foi instalado corretamente**:
+
+Os passos seguintes descrevem apenas um dos vários métodos e ferramentas que pode utilizar para validar que o certificado está instalado corretamente.
+
+1. Aceda à [ferramenta gratuita Digicert](ttps://www.digicert.com/help/).
+2. Introduza o nome de domínio completamente qualificado do servidor do AD FS (por ex., sts.contoso.com) e selecione **VERIFICAR SERVIDOR**.
+
+Se o certificado de Servidor estiver corretamente instalado, verá todas as marcas de verificação nos resultados. Se existir o problema acima, vê um X vermelho nas secções do relatório "Correspondências de Nome de Certificado" e "Certificado SSL está corretamente instalado".
 
 
 ## <a name="ios-issues"></a>Problemas do iOS
@@ -356,6 +373,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
