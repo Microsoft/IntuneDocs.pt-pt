@@ -1,5 +1,5 @@
 ---
-title: "O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Windows 10 no Intune? | Microsoft Intune"
+title: "O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Windows 10 no Intune? | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
 
 
 ---
@@ -52,10 +52,10 @@ Ao adicionar um computador:
 
 -   O administrador de TI poderá impor políticas no computador. Por exemplo, poderá ser necessário definir uma palavra-passe ou PIN no computador. O administrador de TI também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do computador ou eliminar todos os dados do disco rígido do computador se tentar demasiadas vezes.
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
