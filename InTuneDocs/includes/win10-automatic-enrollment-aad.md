@@ -1,4 +1,4 @@
-## Inscrição no Azure Active Directory
+## <a name="azure-active-directory-enrollment"></a>Inscrição no Azure Active Directory
 
 A inscrição automática permite aos utilizadores inscrever PCs Windows 10 e dispositivos Windows 10 Mobile pertencentes à empresa ou pessoais no Intune, ao adicionar uma conta profissional ou escolar e ao aceitar que sejam geridos. Tão simples quanto isto. Em segundo plano, o dispositivo do utilizador regista e associa-se ao Azure Active Directory. Depois de registado, o dispositivo é gerido com o Intune.
 
@@ -7,7 +7,7 @@ A inscrição automática permite aos utilizadores inscrever PCs Windows 10 e di
 - Subscrição do Microsoft Intune
 
 
-### Configurar a inscrição MDM automática
+### <a name="configure-automatic-mdm-enrollment"></a>Configurar a inscrição MDM automática
 
 1. No [portal de gestão do Azure](https://manage.windowsazure.com) (https://manage.windowsazure.com), navegue para o nó **Active Directory** e selecione o seu diretório.
 
@@ -27,13 +27,13 @@ A inscrição automática permite aos utilizadores inscrever PCs Windows 10 e di
 
 6.  Especifique os dispositivos de utilizadores que devem ser geridos pelo Microsoft Intune. Os dispositivos Windows 10 dos utilizadores serão automaticamente inscritos na gestão com o Microsoft Intune.
 
-  - **Todas**
-  - **Grupos**
+  - **Todos**
+  - **GRUPOS**
   - **Nenhum**
 
 7. Escolha **Guardar**.
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
