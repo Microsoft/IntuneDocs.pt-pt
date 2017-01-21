@@ -1,5 +1,5 @@
 ---
-title: "Gestão do Apple DEP para dispositivos iOS | Microsoft Intune"
+title: "Gestão do Apple DEP para dispositivos iOS | Documentos da Microsoft"
 description: "Implemente um perfil de inscrição que inscreva dispositivos iOS comprados através do Programa de Inscrição de Dispositivos iOS (DEP) por ondas eletromagnéticas em dispositivos Apple geridos."
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
 
 
 ---
@@ -53,9 +53,9 @@ Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precis
     Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **iOS** &gt; **Programa de Inscrição de Dispositivos** e, em seguida, selecione **Carregar o Token do DEP**. **Procure** o ficheiro do certificado (.p7m), introduza o seu **ID Apple**e, em seguida, selecione **Carregar**.
 
 5.  **Adicionar a Política de Inscrição de Dispositivos da Empresa**</br>
-    Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) vá para **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, selecione **Adicionar**.
+    Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, selecione **Adicionar**.
 
-    Forneça detalhes **Gerais** , incluindo o **Nome** e a **Descrição**, especifique se os dispositivos atribuídos ao perfil têm afinidade com o utilizador ou se pertencem a um grupo.
+    Forneça detalhes **Gerais**, incluindo o **Nome** e a **Descrição**, especifique se os dispositivos atribuídos ao perfil têm afinidade com o utilizador ou se pertencem a um grupo.
       - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações). A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos DEP com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos. 
 
       > [!NOTE]
@@ -116,6 +116,6 @@ A partir de novembro, a gestão de grupos de dispositivos irá mudar para o Azur
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

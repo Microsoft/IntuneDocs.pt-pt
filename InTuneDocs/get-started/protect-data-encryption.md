@@ -1,12 +1,12 @@
 ---
-title: "Proteger dados da empresa com a encriptação de dados | Microsoft Intune"
+title: "Proteger dados da empresa com a encriptação de dados | Documentos da Microsoft"
 description: "Este guia pode ajudá-lo a proteger a sua empresa contra a perda de dados ao aplicar um código de acesso e a encriptação de dados, através de uma política em aplicações móveis."
 keywords: "encriptação, PIN, dados"
 author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: b907803b2170a09e076712e018987821dfb3caef
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
 
 
 ---
 
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Guia de Introdução: proteger os dados da empresa com a encriptação de dados
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune pode ajudá-lo a evitar a perda de dados de aplicações móveis do Office de várias formas, incluindo:
 - Ao encriptar dados da empresa com o nível mais elevado de encriptação do dispositivo fornecida por iOS e Android.
 - Em dispositivos iOS e Android que, devido a requisitos legais ou de privacidade, não podem ser inscritos numa solução de gestão de dispositivos móveis.
@@ -50,6 +53,6 @@ Este guia pode ajudá-lo a proteger a sua empresa contra a perda de dados ao apl
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

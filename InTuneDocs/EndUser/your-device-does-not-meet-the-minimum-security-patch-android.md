@@ -1,5 +1,5 @@
 ---
-title: "O dispositivo não cumpre o patch mínimo de segurança | Microsoft Intune"
+title: "O dispositivo não cumpre o patch mínimo de segurança | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bdcaa12d8b62b5e7497a844d91777e2af0a76bfd
 
 
 ---
@@ -41,6 +41,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

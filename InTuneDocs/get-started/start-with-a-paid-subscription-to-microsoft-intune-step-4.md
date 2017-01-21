@@ -1,5 +1,5 @@
 ---
-title: "Gerir licenças do Intune | Microsoft Intune"
+title: "Gerir licenças do Intune | Documentos da Microsoft"
 description: "Atribuir licenças a utilizadores na sua subscrição do Intune"
 keywords: 
 author: nathbarn
@@ -14,8 +14,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f0f9d60a27afa580aaba8a3c24fff6325ae53f08
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 68cdc77de1fa77b4fed6a1f37850b5427fb2b121
 
 
 ---
@@ -26,20 +26,20 @@ Antes de os utilizadores poderem iniciar sessão para utilizar o serviço do Int
 As organizações que utilizam Microsoft Enterprise Mobility + Security (EMS) podem ter utilizadores que apenas necessitam do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços através dos [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Para obter mais informações, consulte [Gerir licenças do Intune através do PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## <a name="how-intune-licenses-are-assigned"></a>Como são atribuídas as licenças do Intune
-Quando as contas de utilizador são sincronizadas a partir do Active Directory no local ou adicionadas manualmente à subscrição de serviços em nuvem através do [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), não lhes é atribuída automaticamente uma licença do Intune. Em vez disso, posteriormente, um administrador inquilino do Intune tem de editar a conta de utilizador para atribuir uma licença ao utilizador a partir do portal do Office 365.
+Quando as contas de utilizador são sincronizadas a partir do Active Directory no local ou adicionadas manualmente à subscrição de serviços em cloud através do [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), não lhes é atribuída automaticamente uma licença do Intune. Em vez disso, posteriormente, um administrador inquilino do Intune tem de editar a conta de utilizador para atribuir uma licença ao utilizador a partir do portal do Office 365.
 
-Quando a sua subscrição partilha o Azure AD com outros serviços na nuvem associados à subscrição, também tem acesso aos utilizadores que foram adicionados a esses serviços. Estes utilizadores não possuem uma licença para o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] até que a atribua a cada um deles.
+Quando a sua subscrição partilha o Azure AD com outros serviços na cloud associados à subscrição, também tem acesso aos utilizadores que foram adicionados a esses serviços. Estes utilizadores não possuem uma licença para o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] até que a atribua a cada um deles.
 
 > [!TIP]
 > Se a opção de atribuir ou revogar uma licença do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] estiver desativada, a sua subscrição poderá incluir opções de licenciamento em volume, como as que estão disponíveis ao utilizar o [Enterprise Mobility Suite + Security](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). Para obter informações sobre como atribuir ou revogar licenças, consulte a documentação das opções de licenciamento.
 
 ## <a name="assign-an-intune-user-license"></a>Atribuir uma licença de utilizador do Intune
 
-Para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas do Active Directory no local com o Azure AD, é utilizado o [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
+Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças às contas de utilizador baseadas na cloud e às contas sincronizadas do Active Directory no local com o Azure AD, é utilizado o [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
 1.  Inicie sessão no [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as suas credenciais de administrador inquilino e depois selecione **Pessoas** > **Todos os Utilizadores**.
 
-2.  Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e então selecione ou **Microsoft Intune** (autónome) ou o **Enterprise Mobility Suite**.
+2.  Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e então selecione ou **Microsoft Intune** (autónomo) ou o **Enterprise Mobility Suite**.
 
 3.  A conta de utilizador tem agora as permissões necessárias para utilizar o serviço e inscrever dispositivos para gestão.
 

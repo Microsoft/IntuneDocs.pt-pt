@@ -1,21 +1,23 @@
 ---
-title: "Anular a inscrição do seu dispositivo Android no Intune | Microsoft Intune"
+title: "Como anular a inscrição do seu dispositivo Android no Intune | Documentos da Microsoft"
 description: "Descreve como anular a encriptação de dispositivos Android no Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
+ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
+ms.openlocfilehash: 098fc108bb423f80a52e27fabfe2dfeb0124d72e
 
 
 ---
@@ -25,11 +27,11 @@ ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
 
 Quando anula a inscrição do seu dispositivo Android no Intune, o seu dispositivo deixa de poder aceder aos recursos da empresa.  Para obter mais informações sobre o que acontece quando anula a inscrição, veja [What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do seu dispositivo no Intune?)](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
-Para anular a inscrição do dispositivo no Intune e desinstalar a aplicação do Portal da Empresa, siga estes passos ou veja este vídeo:
+Para anular a inscrição do dispositivo no Intune e desinstalar a aplicação Portal da Empresa, siga estes passos ou veja este vídeo:
 
 <iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
-1.  Iniciar sessão na aplicação do Portal da Empresa.
+1.  Iniciar sessão na aplicação Portal da Empresa.
 
 2.  Toque em **Os Meus Dispositivos** e, em seguida, selecione o dispositivo cuja inscrição quer anular.
 
@@ -47,6 +49,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

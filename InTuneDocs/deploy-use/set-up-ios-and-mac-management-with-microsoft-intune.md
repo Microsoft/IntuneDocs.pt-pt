@@ -1,5 +1,5 @@
 ---
-title: "Configurar a gestão de iOS e Mac | Microsoft Intune"
+title: "Configurar a gestão de iOS e Mac | Documentos da Microsoft"
 description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos iOS, incluindo iPads e iPhones, bem como dispositivos Mac OS X com o Microsoft Intune."
 keywords: 
 author: staciebarker
@@ -14,14 +14,14 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 641d2db2bfb49ce6c4f88d823188a714e61f683c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d4dffccca11582b11196c6441ba8828ceeb4ebb8
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>Configurar a gestão de dispositivos iOS e Mac
-O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e dispositivos Mac OS X e concede aos utilizadores acesso a aplicações e e-mail empresariais. É necessário um certificado do serviço Apple Push Notification (APNs) para que o Intune possa gerir dispositivos iOS e Mac. Quando o certificado for adicionado ao Intune, os utilizadores podem instalar a aplicação do Portal da Empresa para inscrever os respetivos dispositivos ou o administrador pode configurar a [gestão de dispositivos iOS pertencentes à empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
+O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e dispositivos Mac OS X e concede aos utilizadores acesso a aplicações e e-mail empresariais. É necessário um certificado do serviço Apple Push Notification (APNs) para que o Intune possa gerir dispositivos iOS e Mac. Quando o certificado for adicionado ao Intune, os utilizadores podem instalar a aplicação Portal da Empresa para inscrever os respetivos dispositivos ou o administrador pode configurar a [gestão de dispositivos iOS pertencentes à empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurar o Intune**<br>
     Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e ao configurar a MDM.
@@ -32,7 +32,7 @@ O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e 
     ![Caixa de diálogo Carregar certificado do APNs](../media/Intune-iOS-enrollment-with-apns.png)
 
 3.  **Obter um certificado do serviço Apple Push Notification**<br>
-    Vá para o [Portal Apple Push Certificates](http://go.microsoft.com/fwlink/?LinkId=269844) e inicie sessão com o ID Apple da sua empresa para criar o certificado de APNs através do ficheiro .csr. Após selecionar **Carregar** no Portal do Certificado Push da Apple, irá receber um ficheiro .json que não pode ser utilizado para o APNs. Conclua a transferência, regresse ao Apple Push Certificates Portal para obter **Certificados para Servidores de Terceiros** e selecione **Transferir**.
+    Aceda ao [Portal Apple Push Certificates](http://go.microsoft.com/fwlink/?LinkId=269844) e inicie sessão com o ID Apple da sua empresa para criar o certificado de APNs através do ficheiro .csr. Após selecionar **Carregar** no Portal do Certificado Push da Apple, irá receber um ficheiro .json que não pode ser utilizado para o APNs. Conclua a transferência, regresse ao Apple Push Certificates Portal para obter **Certificados para Servidores de Terceiros** e selecione **Transferir**.
 
     Transfira o certificado de APNs (.pem) e guarde o ficheiro localmente.
 

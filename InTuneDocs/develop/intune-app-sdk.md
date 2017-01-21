@@ -1,10 +1,10 @@
 ---
-title: "Vantagens do SDK da Aplicação do Intune | Documentos da Microsoft"
-description: 
+title: "Vantagens do SDK da Aplicação Intune | Documentos da Microsoft"
+description: "O SDK da Aplicação Intune está disponível para as plataformas iOS e Android e permite funcionalidades de gestão de aplicações móveis com o Microsoft Intune."
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,26 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 613e293d9bd853d6de7cdc0d753cc8473afc180b
-ms.openlocfilehash: e8f96499f006af590b6e7da295503696110dad4e
+ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
+ms.openlocfilehash: a967758387e9904eb9ce794b3783e777322c83a7
 
 
 ---
 
-# <a name="intune-app-sdk-overview"></a>Descrição Geral do SDK da Aplicação do Intune
-O SDK da Aplicação do Intune está disponível para as plataformas iOS e Android e permite funcionalidades de gestão de aplicações móveis com o Microsoft Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma melhor experiência de utilizador final e administrador de TI, pode utilizar as nossas APIs para personalizar o comportamento da sua aplicação para funcionalidades que requerem a participação na aplicação. 
+# <a name="intune-app-sdk-overview"></a>Descrição geral do SDK da Aplicação Intune
+O SDK da Aplicação Intune, disponível para iOS e Android, permite à sua aplicação ter políticas de proteção de aplicações do Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma melhor experiência de utilizador final e administrador de TI, pode utilizar as nossas APIs para personalizar o comportamento da sua aplicação para funcionalidades que requerem a participação na aplicação.
 
-Assim que tiver a aplicação ativada, os administradores de TI podem implementar políticas em aplicações geridas pelo Intune e tirar partido destas funcionalidades para proteger os dados empresariais.
+Após ativar as políticas de proteção de aplicações na sua aplicação, os administradores de TI podem implementar estas políticas de forma a proteger os respetivos dados empresariais dentro da aplicação.
 
-## <a name="regular-features"></a>Funcionalidades Normais
+## <a name="app-protection-features"></a>Funcionalidades de proteção de aplicações
 
-### <a name="control-users-ability-to-move-corporate-documents"></a>Controlar a capacidade dos utilizadores moverem documentos empresariais
-Os administradores de TI podem controlar o reposicionamento de ficheiros dos documentos empresariais em aplicações geridas pelo Intune. Por exemplo, podem implementar uma política que desative as aplicações de cópia de segurança de ficheiros de efetuarem uma cópia de segurança dos dados empresariais para a nuvem.
+Seguem-se exemplos de funcionalidades de proteção de aplicações do Intune que podem ser ativadas com o SDK.
+
+### <a name="control-users-ability-to-move-corporate-files"></a>Controlar a capacidade dos utilizadores de mover ficheiros empresariais
+Os administradores de TI podem controlar para onde podem ser movidos os dados escolares ou profissionais na aplicação. Por exemplo, podem implementar uma política que não permita à aplicação criar cópias de segurança de dados empresariais na cloud.
 
 ### <a name="configure-clipboard-restrictions"></a>Configurar restrições da área de transferência
-Os administradores de TI podem configurar o comportamento da área de transferência nas aplicações geridas pelo Intune. Por exemplo, podem implementar uma política para que os utilizadores finais não possam utilizar a área de transferência para cortar/copiar de uma aplicação gerida pelo Intune e colar numa aplicação pessoal e não gerida.
+Os administradores de TI podem configurar o comportamento da área de transferência nas aplicações geridas pelo Intune. Por exemplo, podem implementar uma política que impeça os utilizadores de cortar ou copiar dados da aplicação e colá-los numa aplicação pessoal não gerida.
 
 ### <a name="enforce-encryption-on-saved-data"></a>Impor encriptação nos dados guardados
 Os administradores de TI podem impor uma política que assegure que os dados guardados no dispositivo pela aplicação são encriptados.
@@ -39,36 +41,37 @@ Os administradores de TI podem impor uma política que assegure que os dados gua
 Os administradores de TI podem apagar remotamente dados empresariais a partir de uma aplicação gerida pelo Intune. Esta funcionalidade é baseada na identidade e só irá eliminar os ficheiros associados à identidade empresarial do utilizador final. Para tal, a funcionalidade requer a participação da aplicação. A aplicação pode especificar a identidade na qual deve ocorrer a eliminação com segundo as definições de utilizador. Na ausência destas definições de utilizador específicas da aplicação, o comportamento predefinido é apagar o diretório da aplicação e notificar o utilizador final que o acesso foi removido.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Impor a utilização de um browser gerido
-Os administradores de TI podem impor a utilização da aplicação Browser Gerido do Intune ao abrir ligações a partir de aplicações geridas pelo Intune. Isto garante que as ligações apresentadas num ambiente empresarial são mantidas no domínio das aplicações geridas pelo Intune.
+Os administradores de TI podem forçar as ligações Web na aplicação a serem abertas com a aplicação [Browser Gerido do Intune](../deploy-use/manage-internet-access-using-managed-browser-policies.md). Isto garante que as ligações apresentadas num ambiente empresarial são mantidas no domínio das aplicações geridas pelo Intune.
 
 ### <a name="enforce-a-pin-policy"></a>Impor uma política de PIN
-Os administradores de TI podem impor uma política de PIN quando uma aplicação gerida pelo Intune é iniciada. Isto garante que o utilizador a iniciar a aplicação é o mesmo utilizador que iniciou sessão com uma conta escolar ou profissional inscrita. Quando os utilizadores finais configuram o PIN, o SDK da Aplicação do Intune utiliza o Azure Active Directory para verificar as credenciais dos utilizadores finais em relação à conta do Intune inscrita.
+Os administradores de TI podem exigir que o utilizador final introduza um PIN antes de aceder a dados empresariais na aplicação. Isto garante que a pessoa a utilizar a aplicação é a mesma pessoa que iniciou sessão com uma conta escolar ou profissional. Quando os utilizadores finais configuram o PIN, o SDK da Aplicação Intune utiliza o Azure Active Directory para verificar as credenciais dos utilizadores finais em relação à conta do Intune inscrita.
 
-### <a name="require-users-to-enter-credentials-before-they-can-start-apps"></a>Exigir que os utilizadores introduzam credenciais antes de poderem iniciar a aplicações
-Os administradores de TI podem exigir que os utilizadores introduzam as credenciais antes dos utilizadores poderem iniciar uma aplicação gerida  O SDK da Aplicação do Intune utiliza o Azure Active Directory para fornecer uma experiência de início de sessão único, em que as credenciais, uma vez introduzidas, são reutilizadas para inícios de sessão subsequentes. Também é suportada a autenticação de soluções de gestão de identidades [federadas com o Azure Active Directory](https://msdn.microsoft.com/library/azure/jj679342.aspx).
+### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>Exigir que os utilizadores iniciem sessão com contas escolares ou profissionais para aceder à aplicação
+Os administradores de TI podem exigir que os utilizadores iniciem sessão com a respetiva conta escolar ou profissional para aceder à aplicação. O SDK da Aplicação Intune utiliza o Azure Active Directory para fornecer uma experiência de início de sessão único, em que as credenciais, uma vez introduzidas, são reutilizadas para inícios de sessão subsequentes. Também é suportada a autenticação de soluções de gestão de identidades federadas com o Azure Active Directory.
 
 ### <a name="check-device-health-and-compliance"></a>Verificar o estado de funcionamento e a conformidade do dispositivo
-Os administradores de TI podem verificar o estado de funcionamento e a conformidade do dispositivo com políticas empresariais antes de os utilizadores finais acederem a aplicações geridas pelo Intune. Na plataforma iOS, esta política verifica se o dispositivo tem jailbreak. Na plataforma Android, esta política verifica se o dispositivo tem root.
+Os administradores de TI podem verificar o estado de funcionamento e a conformidade do dispositivo com políticas do Intune antes de os utilizadores finais acederem à aplicação. No iOS, esta política verifica se o dispositivo foi desbloqueado por jailbreak. No Android, esta política verifica se o dispositivo foi desbloqueado por root.
 
-### <a name="sdk-multi-identity-support"></a>Suporte de identidades múltiplas do SDK
-O suporte de identidades múltiplas é uma funcionalidade que permite a coexistência de contas geridas por políticas (empresariais) e não geridas (pessoais) numa única aplicação.
+### <a name="multi-identity-support"></a>Suporte de identidades múltiplas
+O suporte de identidades múltiplas é uma funcionalidade do SDK que permite a coexistência de contas geridas por políticas (empresariais) e não geridas (pessoais) numa única aplicação.
 
-Por exemplo, muitos utilizadores configuram as contas de e-mail empresariais e pessoais na aplicação Outlook para iOS e Android. Quando um utilizador acede aos dados na respetiva conta empresarial, o administrador de TI tem de ter a certeza de que a gestão de políticas de MAM será aplicada. No entanto, quando um utilizador está a aceder a uma conta de e-mail pessoal, esses dados devem estar fora do controlo do administrador de TI. O Microsoft Intune permite isto ao direcionar a política de gestão para a conta empresarial apenas na aplicação. Esta funcionalidade de identidades múltiplas ajuda a resolver o problema de proteção de dados que as organizações estão a enfrentar com dispositivos e aplicações que suportam contas pessoais e profissionais.
+Por exemplo, muitos utilizadores configuram as contas de e-mail empresariais e pessoais nas aplicações móveis do Office para iOS e Android. Quando um utilizador acede aos dados com a respetiva conta empresarial, o administrador de TI tem de ter a certeza de que a política de proteção de aplicações será aplicada. No entanto, quando um utilizador está a aceder a uma conta de e-mail pessoal, esses dados devem estar fora do controlo do administrador de TI. O SDK da Aplicação Intune cumpre este processo ao filtrar a política de proteção de aplicações para **apenas** a identidade empresarial na aplicação.
 
-* **Como suportar identidades múltiplas**: as APIs do SDK da Aplicação Microsoft Intune permitem-lhe especificar um Nome Principal de Utilizador (UPN) com operações de dados específicas, tais como operações de área de transferência e operações de ficheiros. O SDK utiliza o UPN para corresponder a chamada efetuada ao UPN utilizado para inscrever o dispositivo no serviço Microsoft Intune. Se os UPNs corresponderem, a chamada é tratada como uma chamada de "dados empresariais" e os dados estão protegidos; se os UPNs não corresponderem, a chamada é tratada como uma chamada de "dados pessoais" e os dados não estão protegidos.
+A funcionalidade de identidades múltiplas ajuda a resolver o problema de proteção de dados que as organizações enfrentam com aplicações de loja que suportam contas pessoais e profissionais.
 
-### <a name="app-management-without-device-enrollment"></a>Gestão de aplicações sem inscrição de dispositivos
+
+### <a name="app-protection-without-device-enrollment"></a>Proteção de aplicações sem inscrição de dispositivos
 
 >[!IMPORTANT]
->Atualmente, a gestão de aplicações móveis do Intune sem inscrição de dispositivos só está disponível com o SDK da Aplicação do Intune para iOS. 
+>A proteção de aplicações do Intune sem inscrição de dispositivos ainda não está disponível com o SDK da Aplicação Intune para Android. Está disponível com as Ferramentas de Encapsulamento de Aplicações do Intune, o SDK para iOS, o Componente Xamarin do SDK e o Plug-in Cordova do SDK.
 
 
-Muitos utilizadores com dispositivos pessoais pretendem ver e utilizar os dados empresariais sem inscrever o respetivo dispositivo pessoal num produto de Gestão de Dispositivos Móveis (MDM). Uma vez que a inscrição MDM requer controlo global do dispositivo, os utilizadores hesitam em fornecer esse controlo global do seu próprio dispositivo pessoal à empresa.
+Muitos utilizadores com dispositivos pessoais querem aceder a dados empresariais sem inscrever o respetivo dispositivo pessoal num fornecedor de Gestão de Dispositivos Móveis (MDM). Uma vez que a inscrição MDM requer controlo global do dispositivo, os utilizadores costumam hesitar em ceder esse controlo do seu dispositivo pessoal à empresa.
 
-A gestão de aplicações sem inscrição de dispositivos permite ao serviço Microsoft Intune implementar a política de MAM diretamente numa aplicação, sem depender de um canal de MDM para implementar a política. Uma vez que não é preciso nenhum canal MDM, a inscrição MDM não é necessária.
+A proteção de aplicações sem inscrição de dispositivos permite ao serviço Microsoft Intune implementar a política de proteção de aplicações diretamente numa aplicação, sem depender de um canal de gestão de dispositivos para implementar a política.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

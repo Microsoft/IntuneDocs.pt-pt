@@ -1,5 +1,5 @@
 ---
-title: "Definições de políticas do Windows 10 | Microsoft Intune"
+title: "Definições de políticas do Windows 10 | Documentos da Microsoft"
 description: "Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o Windows 10 e o Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de política do Intune para dispositivos com o Windows 10 no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Este tópico contém informações para ajudá-lo a compreender as definições de política do Intune que pode utilizar para gerir dispositivos com o Windows 10. Leia este tópico juntamente com os procedimentos no artigo [Gerir as definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) para configurar definições incorporadas e personalizadas para dispositivos com o Windows 10 e o Windows 10 Mobile inscritos. Não é possível utilizar estas políticas com PCs que executam o [software de cliente de PCs do Intune](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 

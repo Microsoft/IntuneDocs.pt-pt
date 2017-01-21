@@ -1,5 +1,5 @@
 ---
-title: "Aplicações Android com políticas de MAM | Microsoft Intune"
+title: "Aplicações Android com políticas de MAM | Documentos da Microsoft"
 description: "Este tópico descreve o que esperar quando a sua aplicação é gerida por políticas de gestão de aplicações móveis."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>O que esperar quando a sua aplicação Android é gerida por políticas de MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve a experiência do utilizador para aplicações com políticas de MAM (gestão de aplicações móveis). As políticas de MAM são aplicadas apenas quando as aplicações são utilizadas num contexto de trabalho: por exemplo, quando o utilizador está a aceder a aplicações com a sua conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
 ##  <a name="access-apps"></a>Acesso às aplicações
 
@@ -77,7 +80,7 @@ São suportados os seguintes tipos de ficheiro:
 |----|----|
 |Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças do Azure Information Protection. Pode servir para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [O que esperar quando a sua aplicação iOS é gerida por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Consulte também

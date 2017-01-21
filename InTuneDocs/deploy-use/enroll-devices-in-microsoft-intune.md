@@ -1,5 +1,5 @@
 ---
-title: Inscrever dispositivos | Microsoft Intune
+title: Inscrever dispositivos | Documentos da Microsoft
 description: "A gestão de dispositivos móveis (MDM) utiliza a inscrição para trazer dispositivos para gestão e permitir o acesso aos recursos."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>Inscrever dispositivos para gestão no Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Pode inscrever dispositivos, incluindo PCs Windows, para ativar a gestão de dispositivos móveis (MDM) com o Microsoft Intune. Este tópico descreve formas diferentes de inscrever dispositivos móveis na gestão do Intune. A forma como inscreve dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão necessário. A inscrição "Bring your own device" (BYOD) permite que os utilizadores inscrevam os seus telemóveis, tablets ou PCs pessoais. A inscrição Dispositivos pertencentes à empresa (COD) permite cenários de gestão como eliminação remota, dispositivos partilhados ou afinidade de utilizador para um dispositivo.
 
 Se utilizar o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), no local ou alojado na cloud, pode ativar a gestão simples do Intune sem inscrição. Os PCs Windows também podem ser geridos com o [software de cliente do Intune](#manage-windows-pcs-with-intune).

@@ -1,5 +1,5 @@
 ---
-title: "Outras opções e extras para avaliações do Intune | Microsoft Intune"
+title: "Outras opções e extras para avaliações do Intune | Documentos da Microsoft"
 description: "Descreve os alertas, as notificações, os relatórios e as capacidades gerais do Intune que é necessário saber quando se inscreve numa avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
@@ -13,16 +13,18 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Outras opções e extras para subscrições de avaliação do Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="alerts-notifications-and-reports"></a>Alertas, notificações e relatórios
-Na consola de administração do Intune , os **alertas** são utilizados para aceder rapidamente ao estado de funcionamento geral dos dispositivos geridos na sua organização. Pode configurar e personalizar alertas para que comuniquem e apresentem apenas as informações de que precisa para a sua organização. Pode definir se um alerta é ativado ou desativado, configurar a gravidade, utilizar o limiar de apresentação para determinar a frequência com que um evento de alerta tem de ser acionado antes de o alerta ser apresentado e pode também configurar definições específicas para determinados tipos de alertas.
+Na consola de administração do Intune, os **alertas** são utilizados para aceder rapidamente ao estado de funcionamento geral dos dispositivos geridos na sua organização. Pode configurar e personalizar alertas para que comuniquem e apresentem apenas as informações de que precisa para a sua organização. Pode definir se um alerta é ativado ou desativado, configurar a gravidade, utilizar o limiar de apresentação para determinar a frequência com que um evento de alerta tem de ser acionado antes de o alerta ser apresentado e pode também configurar definições específicas para determinados tipos de alertas.
 
 As**Notificações** são e-mails utilizados para informar os administradores (e outros utilizadores) quando determinados tipos de alertas são acionados.
 
@@ -56,6 +58,6 @@ Converter numa [subscrição paga](get-started-with-a-30-day-trial-of-microsoft-
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

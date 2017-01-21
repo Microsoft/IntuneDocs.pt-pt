@@ -1,5 +1,5 @@
 ---
-title: "Inscrever dispositivos iOS pertencentes à empresa | Microsoft Intune"
+title: "Inscrever dispositivos iOS pertencentes à empresa | Documentos da Microsoft"
 description: "Inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou do Apple Configurator"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Inscrever dispositivos iOS pertencentes à empresa no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune suporta a inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou da ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac.
 
 **Pré-requisito:** é necessário um [Certificado do serviço Apple Push Notification](set-up-ios-and-mac-management-with-microsoft-intune.md).
@@ -31,7 +34,7 @@ Pode inscrever dispositivos iOS pertencentes à empresa de três formas: atravé
 
 É possível inscrever dispositivos iOS ao exportar um perfil de Inscrição Empresarial e, em seguida, ligar esses dispositivos móveis a um Mac com o Apple Configurator. O Apple Configurator suporta duas formas de inscrição:
 
-- **Inscrição com o Assistente de Configuração**: repõe o dispositivo para as definições de fábrica e prepara-o para a configuração por parte do novo utilizador do dispositivo. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac com o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para pré-configurar a inscrição. Em seguida, são entregues dispositivos aos respetivos utilizadores,que executam o processo do Assistente de Configuração. Este processo configura o dispositivo com as credenciais da escola ou do trabalho e conclui o processo de inscrição. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e o Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+- **Inscrição com o Assistente de Configuração**: repõe o dispositivo para as definições de fábrica e prepara-o para a configuração por parte do novo utilizador do dispositivo. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac com o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para pré-configurar a inscrição. Em seguida, são entregues dispositivos aos respetivos utilizadores, que executam o processo do Assistente de Configuração. Este processo configura o dispositivo com as credenciais da escola ou do trabalho e conclui o processo de inscrição. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e o Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
 - **Inscrição Direta**: cria um ficheiro compatível com o Apple Configurator para utilização durante a preparação do dispositivo. Não é efetuada a reposição de fábrica no dispositivo inscrito e não existe nenhuma afiliação de utilizadores. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac a executar o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para o inscrever. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e a Inscrição Direta](ios-direct-enrollment-in-microsoft-intune.md).
 
@@ -40,19 +43,19 @@ O DEP implementa um perfil de inscrição “por ondas eletromagnéticas” para
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Utilizar o Portal da Empresa em dispositivos inscritos pelo Apple Configurator ou pelo DEP
 
-Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação do Portal da Empresa.
+Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação Portal da Empresa.
 
 A afinidade de utilizador é necessária para suportar o seguinte:
   - Aplicações de gestão de aplicações móveis (MAM)
   - Acesso condicional a e-mail e dados da empresa
-  - Aplicação do Portal da Empresa
+  - Aplicação Portal da Empresa
 
 **Como os utilizadores inscrevem dispositivos iOS pertencentes à empresa com afinidade de utilizador**
 1. Quando os utilizadores ligam os dispositivos, é-lhes pedido que concluam o Assistente de Configuração. Durante a configuração, os utilizadores recebem um pedido de credenciais. Terão de utilizar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à respetiva subscrição no Intune.
 
 2. Durante a configuração, os utilizadores recebem um pedido do Apple ID. Terão de fornecer um Apple ID para permitir que o dispositivo instale o Portal da Empresa. Também podem fornecer o ID no menu de definições do iOS após a conclusão da configuração.
 
-3. Depois de concluir a configuração, o dispositivo iOS tem de instalar a aplicação do Portal da Empresa a partir da App Store.
+3. Depois de concluir a configuração, o dispositivo iOS tem de instalar a aplicação Portal da Empresa a partir da App Store.
 
 4. O utilizador poderá então iniciar sessão no Portal da Empresa através do UPN utilizado quando configurou o dispositivo.
 
@@ -81,6 +84,6 @@ Se for necessária afinidade de utilizador, confirme que o perfil de inscrição
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

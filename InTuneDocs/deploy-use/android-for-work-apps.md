@@ -1,5 +1,5 @@
 ---
-title: "Implementar aplicações em dispositivos Android for Work | Microsoft Intune"
+title: "Implementar aplicações em dispositivos Android for Work | Documentos da Microsoft"
 description: "Utilize este tópico para sincronizar e, em seguida, implementar aplicações em dispositivos Android for Work a partir da Google Play for Work Store."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 35ee89248e42c67f48d4607f5d415896e35b90e9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 
 
 ---
 
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Como implementar aplicações em dispositivos Android for Work com o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 

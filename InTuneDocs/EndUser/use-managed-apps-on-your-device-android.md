@@ -1,28 +1,30 @@
 ---
-title: "Utilizar aplicações geridas no seu dispositivo Android | Microsoft Intune"
+title: "Utilizar aplicações geridas no seu dispositivo Android | Documentos da Microsoft"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ca37b4bf393d03e61bed93fa8e7d83efe3922412
 
 
 ---
 
 
-# Utilizar aplicações geridas no seu dispositivo Android
+# <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
 
 As aplicações geridas são as aplicações que o administrador de TI pode configurar para ajudar a proteger os dados da empresa a que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo Android, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
 
@@ -32,17 +34,17 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
-## Como obtenho aplicações geridas?
+## <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
 
 -   Instala uma aplicação da Play Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
-## O que o meu administrador de TI pode gerir na minha aplicação?
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>O que o meu administrador de TI pode gerir na minha aplicação?
 Aqui estão alguns exemplos das opções que o administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
 
--   Acesso a Web sites específicos
+-   Acesso a sites específicos
 
 -   Transferências de dados entre aplicações
 
@@ -54,7 +56,7 @@ Aqui estão alguns exemplos das opções que o administrador de TI pode gerir nu
 
 -   O seu início de sessão com as credenciais da empresa
 
--   Capacidade de cópia de segurança para a nuvem
+-   Capacidade de cópia de segurança para a cloud
 
 -   Capacidade para tirar capturas de ecrã
 
@@ -72,10 +74,10 @@ Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
 
 -   Microsoft Word, Excel e PowerPoint
 
-Contacte o administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Contacte o administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

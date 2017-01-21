@@ -1,35 +1,37 @@
 ---
-title: Repor (apagar) o dispositivo iOS perdido ou roubado | Microsoft Intune
+title: Repor (apagar) o dispositivo iOS perdido ou roubado | Documentos da Microsoft
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 705c70b034378113a29003891f465a0e88186c69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9014a09c79287a28502adfbf7e66c4b004336fa9
 
 
 ---
 
 
-# Repor (apagar) o dispositivo iOS perdido ou roubado
+# <a name="reset-erase-your-lost-or-stolen-ios-device"></a>Repor (apagar) o dispositivo iOS perdido ou roubado
 
-Se um telefone que tenha sido inscrito no Intune for perdido ou roubado, pode repô-lo para as predefinições de fábrica utilizando a aplicação do Portal da Empresa a partir de um dispositivo diferente ou através do [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se um telefone que tenha sido inscrito no Intune for perdido ou roubado, pode repô-lo para as predefinições de fábrica utilizando a aplicação Portal da Empresa a partir de um dispositivo diferente ou através do [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 > [!WARNING]
 > Repor um dispositivo para as predefinições de fábrica remove, quer as suas informações pessoais, quer de trabalho, do mesmo. Para obter mais informações sobre o que acontece quando repõe o seu dispositivo, veja [What happens if you reset your device using the Company Portal (O que acontece se utilizar o Portal da Empresa para repor o seu dispositivo?)](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
 
-## Para repor o seu dispositivo com a aplicação do Portal da Empresa
+## <a name="to-reset-your-device-using-the-company-portal-app"></a>Para repor o seu dispositivo com a aplicação Portal da Empresa
 
 1.  A partir de outro dispositivo inscrito, abra a aplicação Portal da Empresa e inicie sessão com a sua conta escolar ou profissional.
 
@@ -37,7 +39,7 @@ Se um telefone que tenha sido inscrito no Intune for perdido ou roubado, pode re
 
 3.  Toque em **Repor** &gt; **Repor**.
 
-## Para repor o seu dispositivo com o Web site do Portal da Empresa
+## <a name="to-reset-your-device-using-the-company-portal-website"></a>Para repor o seu dispositivo com o Web site do Portal da Empresa
 
 Pode utilizar os passos seguintes ou ver este vídeo:
 
@@ -47,12 +49,10 @@ Pode utilizar os passos seguintes ou ver este vídeo:
 
 2.  Toque em **Repor** &gt; **Repor**.
 
-Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao seu administrador de TI para o fazer por si. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao seu administrador de TI para o fazer por si. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "É-lhe pedido para identificar o seu dispositivo quando está a tentar inscrever-se | Microsoft Intune"
+title: "É-lhe pedido para identificar o seu dispositivo quando está a tentar inscrever-se | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
 
 
 ---
@@ -34,6 +36,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Criar um perfil de trabalho e inscrever o seu dispositivo no Intune | Microsoft Intune
+title: Criar um perfil de trabalho e inscrever o seu dispositivo no Intune | Documentos da Microsoft
 description: Descreve como encriptar dispositivos Android
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
 
 
 ---
@@ -81,12 +83,12 @@ Para criar um perfil de trabalho:
 
     ![Página de aplicações Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

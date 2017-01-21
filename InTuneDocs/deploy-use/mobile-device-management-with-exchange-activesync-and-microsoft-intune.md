@@ -1,5 +1,5 @@
 ---
-title: "Gestão de Dispositivos com o Exchange ActiveSync | Microsoft Intune"
+title: "Gestão de Dispositivos com o Exchange ActiveSync | Documentos da Microsoft"
 description: "Gerir dispositivos móveis com a gestão do Exchange ActiveSync (EAS) com o conector do Exchange"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
 
 
 ---
 
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Gestão de dispositivos móveis do Exchange ActiveSync com Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Para o Microsoft Intune gerir diretamente os dispositivos móveis, os dispositivos devem estar [inscritos no Intune](prerequisites-for-enrollment.md). Como alternativa, os administradores podem ativar uma solução de gestão mais limitada que utiliza a gestão do Exchange ActiveSync (EAS) com um conector do Exchange. Os dispositivos podem ser geridos em servidores do Exchange no local ou no Exchange Online com o Office 365. O Intune apenas suporta uma ligação de conector do Exchange de qualquer tipo por subscrição.
 
 ## <a name="exchange-access-rules-for-mobile-devices"></a>Regras de acesso ao Exchange para dispositivos móveis ##
@@ -30,7 +33,7 @@ O Exchange necessita de um conjunto de regras que defina o que acontece quando o
 [Regras de acesso ao Exchange para dispositivos móveis](exchange-access-rules-for-mobile-devices.md)
 
 ## <a name="install-the-exchange-connector"></a>Instalar o conector do Exchange
-O conector do Exchange permite gerir a sua implementação do Exchange na consola do Intune. Primeiro, tem de instalar e configurar o conector do Intune-para-Exchange adequado. Escolha a opção adequada consoante o seu servidor do Exchange esteja no local ou alojado como um serviço na nuvem:
+O conector do Exchange permite gerir a sua implementação do Exchange na consola do Intune. Primeiro, tem de instalar e configurar o conector do Intune-para-Exchange adequado. Escolha a opção adequada consoante o seu servidor do Exchange esteja no local ou alojado como um serviço na cloud:
 
 -   [Configurar o Intune para o Exchange Online ou novos ambientes Dedicados do Exchange Online](intune-service-to-service-exchange-connector.md)
 -   [Instalar o conector do Intune para servidores do Exchange locais e ambientes legados dedicados do Exchange Online](intune-on-premises-exchange-connector.md)
@@ -47,6 +50,6 @@ Por fim, pode [apagar dados da empresa dos dispositivos móveis geridos pelo EAS
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

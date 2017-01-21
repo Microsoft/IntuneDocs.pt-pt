@@ -1,9 +1,9 @@
 ---
-title: "Pré-requisitos para políticas de MAM | Microsoft Intune"
+title: "Pré-requisitos para políticas de MAM | Documentos da Microsoft"
 description: "Este tópico descreve os pré-requisitos para a configuração de utilizadores antes de criar políticas de gestão de aplicações móveis."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>Prepare-se para configurar políticas de gestão de aplicações móveis no portal do Azure
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve os pré-requisitos e os passos que tem de concluir **antes** de poder criar políticas de gestão de aplicações móveis (MAM) no portal do Azure.
 
 Para compreender como as políticas de MAM do Intune podem proteger os dados da sua empresa, consulte [Proteger aplicações e dados através de políticas de gestão de aplicações móveis](protect-apps-and-data-with-microsoft-intune.md).
@@ -58,10 +61,10 @@ Para obter instruções sobre como criar uma política de MAM na consola de admi
 >Os dispositivos Windows não suportam estas políticas de gestão de aplicações móveis. No entanto, quando inscrever dispositivos Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Aplicações suportadas
-* **Aplicações da Microsoft:** estas aplicações têm o SDK da Aplicação do Intune incorporado e não requerem processamento adicional antes de aplicar as políticas de MAM.
+* **Aplicações da Microsoft:** estas aplicações têm o SDK da Aplicação Intune incorporado e não requerem processamento adicional antes de aplicar as políticas de MAM.
 Para ver a lista completa de aplicações da Microsoft suportadas, aceda à [galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), na página de parceiros de aplicações do Microsoft Intune. Clique numa aplicação para ver os cenários e as plataformas suportados e se suporta várias identidades.
 
-* **As aplicações de linha de negócio da sua organização:** tem de preparar estas aplicações para incluir o SDK da Aplicação do Intune antes de poder aplicar políticas de MAM.
+* **As aplicações de linha de negócio da sua organização:** tem de preparar estas aplicações para incluir o SDK da Aplicação Intune antes de poder aplicar políticas de MAM.
 
   * Para saber que dispositivos são geridos pelo Intune, consulte [Decidir como preparar as aplicações para MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
@@ -116,11 +119,11 @@ A tabela seguinte lista as funções e as permissões que pode atribuir aos util
 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

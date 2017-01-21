@@ -1,12 +1,12 @@
 ---
 
-title: "Definições de política do Android for Work | Microsoft Intune"
+title: "Definições de política do Android for Work | Documentos da Microsoft"
 description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android for Work que gere com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Definições de política do Android for Work no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -66,9 +68,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 Utilize a **política de configuração personalizada para Android for Work** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android for Work. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
 Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
-
-> [!NOTE]
-> Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada.
+Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para saber quais as políticas que pode configurar.
 
 ### <a name="general-settings"></a>Definições gerais
 
@@ -97,6 +97,6 @@ Esta capacidade destina-se a permitir a implementação de definições do Andro
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Gerir alertas | Microsoft Intune
+title: Gerir alertas | Documentos da Microsoft
 description: "Utilize a área de trabalho Alertas no Intune para avaliar o estado de funcionamento geral dos dispositivos na sua organização."
 keywords: 
 author: arob98
@@ -15,13 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b84a6e353103f35ad62fb95052c44581dd439963
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 67a7e25c8365970eb108b2529692a6f67c5de054
 
 
 ---
 
 # <a name="manage-alerts-in-microsoft-intune"></a>Gerir alertas no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Utilize a área de trabalho **Alerts (Alertas)** na consola de administração do Intune para avaliar o estado de funcionamento geral dos dispositivos na sua organização e identificar problemas.
 
 ## <a name="view-active-alerts"></a>Ver alertas ativos
@@ -52,7 +55,7 @@ Na consola de administração do Intune, siga um dos seguintes conjuntos de pass
 
     -   **Source (Origem)**. Esta coluna tem uma ligação para a origem do alerta. Se o limiar de apresentação do tipo de alerta estiver definido como **Display All (Apresentar Tudo)**, esta ligação mostra um único dispositivo. Se o limiar de apresentação do tipo de alerta estiver definido como um valor, a ligação mostra uma lista de cada dispositivo que é afetado por este alerta.
 
-    -   **Last Updadted (Última Atualização)**. Indica a hora a que o alerta foi modificado pela última vez. Se um alerta estiver fechado, será mostrada a hora a que foi fechado.
+    -   **Last Updated (Última Atualização)**. Indica a hora a que o alerta foi modificado pela última vez. Se um alerta estiver fechado, será mostrada a hora a que foi fechado.
 
     -   **Severity (Gravidade)**. Esta coluna indica a gravidade do alerta.
 

@@ -1,5 +1,5 @@
 ---
-title: "Como os utilizadores de dispositivos iOS obtêm as aplicações | Microsoft Intune"
+title: "Como os utilizadores de dispositivos iOS obtêm as aplicações | Documentos da Microsoft"
 description: "Métodos para disponibilizar aplicações iOS aos utilizadores finais"
 keywords: 
 author: barlanmsft
@@ -14,14 +14,16 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3ba0a5cda91164761c4576df935c54390bc78f8c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
 
 
 ---
 
 
 # <a name="how-your-ios-users-get-their-apps"></a>Como os utilizadores de dispositivos iOS obtêm as aplicações
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Utilize estas informações para saber como e onde é que os seus utilizadores finais podem obter as aplicações que distribuir através do Microsoft Intune.
 
@@ -55,6 +57,6 @@ Para obter informações sobre como adicionar aplicações e colocá-las nestes 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

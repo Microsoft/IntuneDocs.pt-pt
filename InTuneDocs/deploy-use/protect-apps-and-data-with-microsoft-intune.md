@@ -1,11 +1,11 @@
 ---
-title: "Proteger aplicações e dados | Microsoft Intune"
+title: "Proteger aplicações e dados | Documentos da Microsoft"
 description: "Este tópico descreve as várias funcionalidades e capacidades do Intune que estão disponíveis para que possa ajudar a proteger os dados e aplicações da sua empresa."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteger aplicações e dados com o Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune protege os dados da empresa através de várias camadas de tecnologia. Na camada de identidade, o acesso condicional protege o acesso aos serviços ao permitir apenas o acesso a partir de dispositivos geridos e conformes. Na camada de aplicação de cliente, a gestão de aplicações móveis (MAM) protege a perda de dados ao impedir que os dados sejam movidos para aplicações não protegidas ou localizações de armazenamento e ao apagar dados em caso de perda ou roubo de um dispositivo. Recomendamos a utilização destas duas camadas de proteção em conjunto para ajudar a proteger os dados enquanto mantém a sua força de trabalho móvel produtiva.
 
@@ -36,7 +37,7 @@ O [acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft
 
 Proteger o acesso aos recursos da empresa é apenas o primeiro passo para proteger os dados da empresa. Ainda precisa de proteger os dados depois de terem sido acedidos no dispositivo. Os dados podem agora ser copiados, movidos, guardados numa localização diferente ou partilhados. O Intune resolve este problema ao permitir restringir o movimento de dados através da criação de um conjunto de regras como:
 - Bloquear operações copiar e colar ou impedir a transferência de dados fora do contexto de trabalho.
-- Impedir cópias de segurança para o armazenamento pessoal na nuvem e impedir operações “Guardar como”.
+- Impedir cópias de segurança para o armazenamento pessoal na cloud e impedir operações “Guardar como”.
 - Proteger o acesso às aplicações ao exigir um PIN/código de acesso ou credenciais empresariais.
 - Fazer com que todas as ligações Web abram no Browser Gerido do Intune.
 
@@ -46,7 +47,7 @@ Pode proteger os dados da empresa através de políticas de MAM para dispositivo
 
 Para associar uma aplicação a uma política de MAM, a aplicação tem de incorporar o Software Development Kit (SDK) da Aplicação do Microsoft Intune ou pode utilizar a Ferramenta de Encapsulamento de Aplicações.
 
-Aplicações como as do Microsoft Office têm o SDK da Aplicação do Intune incorporado. Pode ver a lista completa de aplicações suportadas na [Galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicações do Microsoft Intune. Escolha a aplicação para ver os cenários e as plataformas suportados e se a aplicação suporta várias identidades.
+Aplicações como as do Microsoft Office têm o SDK da Aplicação Intune incorporado. Pode ver a lista completa de aplicações suportadas na [Galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicações do Microsoft Intune. Escolha a aplicação para ver os cenários e as plataformas suportados e se a aplicação suporta várias identidades.
 
 Também pode [ativar as suas aplicações de linha de negócios personalizadas incorporadas](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para utilizar com políticas de MAM.
 
@@ -54,6 +55,6 @@ Além de restringir o movimento de dados, se um dispositivo se perder ou for rou
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

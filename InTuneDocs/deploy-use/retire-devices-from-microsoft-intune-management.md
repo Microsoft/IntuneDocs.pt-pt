@@ -1,11 +1,11 @@
 ---
-title: Extinguir dispositivos | Microsoft Intune
+title: Extinguir dispositivos | Documentos da Microsoft
 description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Extinguir dispositivos da gestão do Intune
 
-Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. Poderá ter de extinguir um dispositivo por vários motivos:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. 
+
+Os dispositivos nunca são removidos do Intune sem a intervenção do utilizador, mesmo que os dispositivos não tenham ligado ao serviço do Intune há algum tempo. 
+
+Poderá ter de extinguir um dispositivo por vários motivos:
 
 -   O utilizador sai da empresa de forma planeada (saída “gerida”)
 -   O utilizador sai abruptamente (é despedido, despede-se, etc.).
@@ -42,7 +48,7 @@ Para os dispositivos que têm de ser reaproveitados, também pode utilizar uma [
 
 1.  Inicie sessão com as credenciais da sua organização em [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com) e, em seguida, escolha **Centros de administração** &gt; **Azure AD**.
 
-2.  Se não tiver uma subscrição do Azure, crie uma. Não deverá ser necessário um cartão de crédito nem efetuar o pagamento se tiver uma conta paga. Clique na ligação de subscrição **Registar o Azure Active Directory gratuitamente**.
+2.  Se não tiver uma, crie uma Subscrição do Azure. Não deverá ser necessário um cartão de crédito nem efetuar o pagamento se tiver uma conta paga. Clique na ligação de subscrição **Registar o Azure Active Directory gratuitamente**.
 
 4.  Selecione **Active Directory** e, em seguida, selecione a sua organização.
 
@@ -70,6 +76,6 @@ Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

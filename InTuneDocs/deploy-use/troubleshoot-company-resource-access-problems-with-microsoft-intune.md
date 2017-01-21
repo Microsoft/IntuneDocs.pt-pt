@@ -1,5 +1,5 @@
 ---
-title: "Resolução de problemas de acesso aos recursos da empresa | Microsoft Intune"
+title: "Resolução de problemas de acesso aos recursos da empresa | Documentos da Microsoft"
 description: "Códigos de erros e de estado neste tópico para o ajudar a resolver problemas de acesso a recursos."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,19 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 76056f04440b53aa76f833b5fd4f5cf3cbeb88b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Utilize os códigos de estado e de erro deste tópico para obter ajuda para resolver problemas se uma ação do Microsoft Intune devolver um código de erro.
 
-Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
+Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de estado para dispositivos Windows geridos por MDM
 
@@ -57,7 +60,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016281107|0x87D1FDED|Definição de origem de deteção não suportada|
 |-2016281108|0x87D1FDEC|Definição referenciada não localizada no CI|
 |-2016281109|0x87D1FDEB|Falha ao concluir a conversão do tipo de dados|
-|-2016281110|0x87D1FDEA|  Parâmetro inválido na definição de CIM|
+|-2016281110|0x87D1FDEA| Parâmetro inválido na definição de CIM|
 |-2016281111|0x87D1FDE9|Não aplicável a este dispositivo|
 |-2016281112|0x87D1FDE8|Falha na remediação|
 |-2016330905|0x87D13B67|O estado da aplicação é desconhecido|
@@ -153,7 +156,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016321110|0x87D161AA|15002: não é possível bloquear configuração de rede|
 |-2016321111|0x87D161A9|15001: não é possível remover VPN|
 |-2016321112|0x87D161A8|15000: não é possível instalar VPN|
-|-2016322110|0x87D15DC2|14002: a configuração de nuvem já existe|
+|-2016322110|0x87D15DC2|14002: a configuração de cloud já existe|
 |-2016322111|0x87D15DC1|14001: dispositivo bloqueado|
 |-2016322112|0x87D15DC0|14000: campo inválido|
 |-2016323107|0x87D159DD|13005: não é possível configurar proxy|

@@ -1,5 +1,5 @@
 ---
-title: "Configurar a gestão do Android for Work | Microsoft Intune"
+title: "Configurar a gestão do Android for Work | Documentos da Microsoft"
 description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Android for Work com o Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -12,13 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: cfb1ba8ad3d737538fe1e54167121552571d7a1b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 
 
 ---
 
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Ativar a inscrição de dispositivos Android for Work
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -45,7 +47,7 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
    - **Gerir dispositivos suportados como Android for Work** – (ativado) todos os dispositivos que suportam o Android for Work são inscritos como dispositivos Android for Work. Qualquer dispositivo Android que não suporte o Android for Work é inscrito como um dispositivo Android convencional.
    - **Gerir dispositivos suportados para utilizadores apenas nestes grupos de utilizadores como Android for Work** – (em teste) permite-lhe direcionar a gestão do Android for Work a um conjunto limitado de utilizadores. Apenas os membros destes grupos selecionados que inscrevam um dispositivo que suporte o Android for Work são inscritos como dispositivos Android for Work. Todos os outros dispositivos são inscritos como dispositivos Android.
 
-## <a name="next-steps-for-android-for-work"></a>Próximos passos para Android for Work
+## <a name="next-steps-for-android-for-work"></a>Passos seguintes para Android for Work
 Após configurar as definições e o enlace Android for Work, pode gerir o seguinte:
 - [Implementar aplicações Android for Work](android-for-work-apps.md)
 - [Adicionar políticas de configuração Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)

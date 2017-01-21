@@ -1,5 +1,5 @@
 ---
-title: O que acontece quando cria um perfil de trabalho | Microsoft Intune
+title: O que acontece quando cria um perfil de trabalho | Documentos da Microsoft
 description: Descreve como encriptar dispositivos Android
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
 
 
 ---
@@ -42,12 +44,12 @@ Quando cria um perfil de trabalho:
 
 Para obter os passos para criar um perfil de trabalho, consulte [Criar um perfil de trabalho e inscrever o seu dispositivo](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

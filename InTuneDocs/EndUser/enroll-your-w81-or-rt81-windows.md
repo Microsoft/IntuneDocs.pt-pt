@@ -1,5 +1,5 @@
 ---
-title: Inscrever o seu dispositivo Windows 8.1 ou Windows RT 8.1 | Microsoft Intune
+title: Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 | Documentos da Microsoft
 description: Descreve como inscrever dispositivos Windows 8.1 ou Windows RT 8.1 no Intune
 keywords: 
 author: barlanmsft
@@ -14,16 +14,16 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d0a773edf51214ac9f921c17185b32f6b3fbf287
 
 
 ---
 
 
-# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 no Intune
+# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Inscrever o seu dispositivo Windows 8.1 ou Windows RT 8.1 no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação do Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
@@ -52,7 +52,7 @@ Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
-Também recomendamos a instalação da aplicação do Portal da Empresa, que lhe permite identificar e obter facilmente as aplicações da empresa relevantes para si e a sua função. Consoante o modo como a empresa configurou o Intune, a aplicação Portal da Empresa pode ter sido instalada como parte do seu processo de inscrição. Para verificar se tem a aplicação, procure **Portal da Empresa** na lista de aplicações. Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
+Também recomendamos a instalação da aplicação Portal da Empresa, que lhe permite identificar e obter facilmente as aplicações da empresa relevantes para si e a sua função. Consoante o modo como a empresa configurou o Intune, a aplicação Portal da Empresa pode ter sido instalada como parte do seu processo de inscrição. Para verificar se tem a aplicação, procure **Portal da Empresa** na lista de aplicações. Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
 
 1.  Toque em **Iniciar** &gt; **Loja**.
 
@@ -62,10 +62,10 @@ Também recomendamos a instalação da aplicação do Portal da Empresa, que lhe
 
 4.  Toque em **Instalar** ou em **Gratuito**. A opção apresentada depende da forma como a sua empresa configurou a aplicação.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

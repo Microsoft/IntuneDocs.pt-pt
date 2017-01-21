@@ -1,5 +1,5 @@
 ---
-title: "Aplicações em Sideload para Windows e Windows Phone | Microsoft Intune"
+title: "Aplicações em sideload para Windows e Windows Phone | Documentos da Microsoft"
 description: "Saiba como assinar aplicações de linha empresarial de forma a poder utilizar o Intune para as implementar."
 keywords: 
 author: robstackmsft
@@ -11,16 +11,18 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
-Enquanto administrador do Intune, pode implementar aplicações de linha de negócio (LOB) em dispositivos Windows e Windows 10 Mobile, incluindo a aplicação do Portal da Empresa. Para implementar aplicações .appx ou .xap em dispositivos Windows 10 e Windows 10 Mobile ou implementar qualquer aplicação LOB em dispositivos Windows 8.1 ou Windows Phone 8.1, tem de obter um **Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec**. Apenas o certificado da Symantec é considerado fidedigno para essas aplicações para os respetivos dispositivos do Windows. Pode utilizar a sua própria autoridade de certificação para aplicações do Windows 10 e aplicações "universais". Este certificado é necessário para:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   Assine a aplicação do Portal da Empresa para a implementação de PCs Windows, dispositivos Windows 10 Mobile e dispositivos Windows Phone
+Enquanto administrador do Intune, pode implementar aplicações de linha de negócio (LOB) em dispositivos Windows e Windows 10 Mobile, incluindo a aplicação Portal da Empresa. Para implementar aplicações .appx ou .xap em dispositivos Windows 10 e Windows 10 Mobile ou implementar qualquer aplicação LOB em dispositivos Windows 8.1 ou Windows Phone 8.1, tem de obter um **Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec**. Apenas o certificado da Symantec é considerado fidedigno para essas aplicações para os respetivos dispositivos do Windows. Pode utilizar a sua própria autoridade de certificação para aplicações do Windows 10 e aplicações "universais". Este certificado é necessário para:
+
+-   Assine a aplicação Portal da Empresa para a implementação de PCs Windows, dispositivos Windows 10 Mobile e dispositivos Windows Phone
 
 -   Assine aplicações de linha de negócio para que o Intune as possa implementar em dispositivos Windows
 
@@ -31,13 +33,13 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
    Adira ao [Windows Phone Dev Center](http://go.microsoft.com/fwlink/?LinkId=268442) ao utilizar as informações de conta empresarial quando iniciar sessão para comprar a sua conta de empresa. Este pedido terá de ser autorizado por um responsável da empresa antes de poder receber um certificado de assinatura com código.
 
 2. **Obter um certificado empresarial da Symantec**<br>
-  Compre um certificado no [Web site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
+  Compre um certificado no [site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
 
 3.  **Importar certificados**<br>
     Quando o pedido for aprovado, receberá um e-mail com instruções para importar os certificados. Siga as instruções no e-mail para importar os certificados.
 
 4.  **Verificar os certificados importados**<br>
-    Para verificar se os certificados foram corretamente importados, vá para o snap-in **Certificados**, clique com o botão direito do rato em **Certificados** e selecione **Localizar Certificados**. No campo **Contém** , escreva “Symantec” e clique em **Localizar Agora**. Os certificados que importou deverão ser apresentados nos resultados.
+    Para verificar se os certificados foram corretamente importados, aceda ao snap-in **Certificados**, clique com o botão direito do rato em **Certificados** e selecione **Localizar Certificados**. No campo **Contém**, escreva “Symantec” e clique em **Localizar Agora**. Os certificados que importou deverão ser apresentados nos resultados.
 
     ![Localizar o certificado da Symantec](./media/wit.gif)
 
@@ -59,20 +61,20 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 
     4.  Conclua o assistente.
 
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemplo: transferir, assinar e implementar a aplicação do Portal da Empresa para dispositivos Windows
+## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemplo: transferir, assinar e implementar a aplicação Portal da Empresa para dispositivos Windows
 
-Pode implementar a aplicação do Portal da Empresa em dispositivos Windows, incluindo Windows Phone e Windows 10 Mobile, com o Intune em vez de instalá-la a partir da Loja Windows. Tem de transferir a aplicação do Portal da Empresa e assiná-la com o seu certificado.  Isto apenas é necessário se os utilizadores não utilizarem a Loja da Empresa e pretender implementar o Portal da Empresa em dispositivos Windows Phone 8.1.
+Pode implementar a aplicação Portal da Empresa em dispositivos Windows, incluindo Windows Phone e Windows 10 Mobile, com o Intune em vez de instalá-la a partir da Loja Windows. Tem de transferir a aplicação Portal da Empresa e assiná-la com o seu certificado.  Isto apenas é necessário se os utilizadores não utilizarem a Loja da Empresa e pretender implementar o Portal da Empresa em dispositivos Windows Phone 8.1.
 
 
 1.  **Transferir o Portal da Empresa**
 
-    Para implementar a aplicação do Portal da Empresa com o Intune, pode transferir a [Aplicação Portal da Empresa do Microsoft Intune para Windows Phone 8.1](http://go.microsoft.com/fwlink/?LinkId=615799) a partir do Centro de Transferências e execute o ficheiro de extração automática (.exe). Este ficheiro contém dois ficheiros:
+    Para implementar a aplicação Portal da Empresa com o Intune, pode transferir a [Aplicação Portal da Empresa do Microsoft Intune para Windows Phone 8.1](http://go.microsoft.com/fwlink/?LinkId=615799) a partir do Centro de Transferências e execute o ficheiro de extração automática (.exe). Este ficheiro contém dois ficheiros:
 
     -   CompanyPortal.appx – a aplicação de instalação do Portal da Empresa para Windows Phone 8.1
 
-    -   WinPhoneCompanyPortal.ps1 – um script do PowerShell que pode utilizar para assinar o ficheiro de aplicação do Portal da Empresa, para que possa ser implementado em dispositivos Windows Phone 8.1
+    -   WinPhoneCompanyPortal.ps1 – um script do PowerShell que pode utilizar para assinar o ficheiro de aplicação Portal da Empresa, para que possa ser implementado em dispositivos Windows Phone 8.1
 
-    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Windows para Empresas](http://businessstore.microsoft.com/). A aplicação do Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Manage apps you purchased from the Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) (Gerir aplicações compradas na Loja Windows para Empresas).
+    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Windows para Empresas](http://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Manage apps you purchased from the Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) (Gerir aplicações compradas na Loja Windows para Empresas).
 
 2.  **Transferir o Windows Phone SDK** Transfira o Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) e instale o SDK no seu computador. Este SDK é necessário para gerar um token de inscrição de aplicações.
 
@@ -124,7 +126,7 @@ O certificado da Symantec utilizado para implementar aplicações para dispositi
 
     Para obter informações adicionais sobre os certificados da Symantec, aceda a [www.symantec.com](http://www.symantec.com) ou ligue para o 1-877-438-8776 ou 1-650-426-3400.
 
-2.  Aceda ao Web site (exemplo: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e inicie sessão com o ID de publicador da Symantec e o endereço de e-mail associado ao certificado. Lembre-se de utilizar o mesmo computador para iniciar a renovação e para transferir o certificado.
+2.  Aceda ao site (exemplo: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e inicie sessão com o ID de publicador da Symantec e o endereço de e-mail associado ao certificado. Lembre-se de utilizar o mesmo computador para iniciar a renovação e para transferir o certificado.
 
 3.  Após a aprovação e pagamento da renovação, transfira o certificado.
 

@@ -1,5 +1,5 @@
 ---
-title: Novidades | Microsoft Intune
+title: Novidades | Documentos da Microsoft
 description: "Saiba quais são as novidades deste mês e as versões anteriores do Microsoft Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9fd309a10d9eb020795c5ce46df124b13dc1a006
-ms.openlocfilehash: d117c929fbde4dd0a39503b8da695aa9c9ea91ad
+ms.sourcegitcommit: 1d9ebc7fd727b80091625ed5256ae634323a9257
+ms.openlocfilehash: f7e71d20923e113b533668a7b5aef688de196182
 
 
 ---
@@ -33,15 +33,12 @@ A experiência de administração no portal do Azure irá utilizar a já anuncia
 Se tiver dúvidas sobre a linha cronológica para a migração do inquilino, contacte a nossa equipa de migração através do e-mail [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Integração da gestão de despesas de telecomunicações na pré-visualização pública do portal do Azure<!--747605-->
-Estamos agora a começar a pré-visualizar a integração com os serviços de gestão de despesas de telecomunicações (TEM) de terceiros no portal do Azure. Pode utilizar o Intune para impor limites de utilização de dados nacionais e itinerantes. Estamos a começar essas integrações com [Saaswedo](http://www.saaswedo.com).
+Estamos agora a começar a pré-visualizar a integração com os serviços de gestão de despesas de telecomunicações (TEM) de terceiros no portal do Azure. Pode utilizar o Intune para impor limites de utilização de dados nacionais e itinerantes. Estamos a começar essas integrações com [Saaswedo](http://www.saaswedo.com). Para ativar esta funcionalidade no seu inquilino de avaliação, [contacte o suporte da Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ## <a name="new-capabilities"></a>Novas Funcionalidades
 
 ### <a name="multi-factor-authentication-across-all-platforms---747590--"></a>Autenticação multifator em todas as plataformas <!--747590-->
 Agora pode impor a autenticação multifator (MFA) num grupo selecionado de utilizadores quando estes inscrevem um dispositivo iOS, Android, Windows 8.1+ ou Windows Phone 8.1+ a partir do Portal de Gestão do Azure ao configurar a MFA na aplicação de Inscrição do Microsoft Intune no Azure Active Directory.
-
-<!--VSO 679339, awaiting chrisgre for go-live--><!--### Conditional access for MAM with SharePoint Online
-Pode bloquear o acesso ao SharePoint Online de aplicações não suportadas pelas políticas de gestão de aplicações móveis (MAM) do Intune.  Pode começar a utilizar a gestão de aplicações móveis do Intune no portal do Azure. Procure a secção __Acesso Condicional__ no painel __Definições__, que incluirá a opção para o SharePoint Online. Esta funcionalidade será enviada separadamente do restante serviço. Saiba mais sobre esta nova funcionalidade [aqui](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
 
 ### <a name="ability-to-restrict-mobile-device-enrollment--747596--"></a>Capacidade para restringir a inscrição de dispositivos móveis<!--747596-->
 O Intune está a adicionar novas restrições de inscrição que controlam as plataformas de dispositivos móveis autorizadas a inscrever. O Intune separa plataformas de dispositivos móveis como iOS, macOS, Android, Windows e Windows Mobile.
@@ -56,17 +53,17 @@ O Intune marca todos os novos dispositivos como pessoais, a menos que o administ
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Multi-Factor Authentication na Inscrição ao mover para o portal do Azure <!--VSO 750545-->
 Anteriormente, os administradores utilizariam a consola do Intune ou a consola do Gestor de Configuração (anterior à versão de outubro 2016) para configurar a MFA para inscrições no Intune. Com esta funcionalidade atualizada, irá agora iniciar a sessão no [portal do Microsoft Azure](https://manage.windowsazure.com) com as suas credenciais do Intune e configurar as definições da MFA através do Azure AD. Saiba mais sobre o assunto [aqui](https://aka.ms/mfa_ad).
 
-### <a name="company-portal-app-for-android-now-available-in-china---vso-658093--"></a>Aplicação do Portal da Empresa para Android, agora disponível na China <!--VSO 658093-->
-Estamos a disponibilizar a aplicação do Portal da Empresa para Android para transferência na China. Devido à ausência da Google Play Store na China, os dispositivos Android têm de obter aplicações a partir de mercados de aplicações chineses. A aplicação do Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
+### <a name="company-portal-app-for-android-now-available-in-china--vso-658093--"></a>Aplicação Portal da Empresa para Android, agora disponível na China <!--VSO 658093-->
+Estamos a disponibilizar a aplicação Portal da Empresa para Android para transferência na China. Devido à ausência da Google Play Store na China, os dispositivos Android têm de obter aplicações a partir de mercados de aplicações chineses. A aplicação Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 * [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
 
-A aplicação do Portal da Empresa para Android utiliza os Serviços do Google Play para comunicar com o serviço Microsoft Intune. Uma vez que os Serviços do Google Play ainda não estão disponíveis na China, pode demorar até 8 horas a concluir a realização de qualquer uma das seguintes tarefas. 
+A aplicação Portal da Empresa para Android utiliza os Serviços do Google Play para comunicar com o serviço Microsoft Intune. Uma vez que os Serviços do Google Play ainda não estão disponíveis na China, pode demorar até 8 horas a concluir a realização de qualquer uma das seguintes tarefas. 
 
-|Consola de Administração do Intune| Aplicação do Portal da Empresa do Intune para Android |Site do Portal da Empresa do Intune|   
+|Consola de Administração do Intune| Aplicação Portal da Empresa do Intune para Android |Site do Portal da Empresa do Intune|   
 |---|---|---|
 |Eliminação completa| Remover um dispositivo remoto| Remover dispositivo (local e remoto)|
 |Eliminação seletiva| Repor dispositivo| Repor dispositivo|
@@ -88,10 +85,10 @@ A partir de meados de dezembro de 2016, os utilizadores já não poderão utiliz
 ### <a name="see-also"></a>Consulte também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Versões anteriores do Intune](whats-new-archive.md)
+* [Novidades – Arquivo](whats-new-archive.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

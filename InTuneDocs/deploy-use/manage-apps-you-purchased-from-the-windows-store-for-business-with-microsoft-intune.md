@@ -1,5 +1,5 @@
 ---
-title: "Gerir aplicações da Loja Windows para Empresas | Microsoft Intune"
+title: "Gerir aplicações da Loja Windows para Empresas | Documentos da Microsoft"
 description: "Ligue o Microsoft Intune à Loja Windows para Empresas se quiser gerir e implementar aplicações compradas em volume a partir da consola do Intune"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Manage apps you purchased from the Windows Store for Business with Microsoft Intune (Gerir aplicações compradas na Loja Windows para Empresas com o Microsoft Intune)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Na [Loja Windows para Empresas](https://www.microsoft.com/business-store), pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume a partir da consola do Intune. Por exemplo:
 * Pode sincronizar a lista de aplicações adquiridas na loja com o Intune.
 * As aplicações que são sincronizadas aparecem na consola de administração do Intune e pode implementá-las como todas as outras aplicações.
@@ -60,12 +63,12 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 1. Na página **Loja Windows para Empresas**, escolha **Sincronizar agora** para sincronizar as aplicações que comprou na loja com o Intune.
 2. Na área de trabalho **Aplicações**, escolha **Aplicações** > **Aplicações Compradas em Volume** para ver as aplicações que pode implementar e para confirmar se aquelas que comprou foram importadas corretamente. As aplicações neste nó são apresentadas com o número total de licenças que tiver e o número de licenças que tem disponíveis.
-Por exemplo, pode comprar a aplicação do Portal da Empresa (licenciamento online) na loja Windows para Empresas, sincronizá-la com a consola do Intune e, em seguida, implementá-la como uma aplicação necessária nos dispositivos Windows 10 necessários. 
+Por exemplo, pode comprar a aplicação Portal da Empresa (licenciamento online) na loja Windows para Empresas, sincronizá-la com a consola do Intune e, em seguida, implementá-la como uma aplicação necessária nos dispositivos Windows 10 necessários. 
 
 
 ## <a name="deploy-apps"></a>Implementar aplicações
 
-As aplicações da loja são implementadas da mesma forma que implementa qualquer outra aplicação do Intune. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+As aplicações da loja são implementadas da mesma forma que implementa qualquer outra aplicação Intune. Para mais informações, consulte [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada uma licença por cada utilizador que instalar a aplicação. Se utilizar todas as licenças disponíveis para uma aplicação implementada, não poderá implementar mais cópias. Deve efetuar uma das seguintes ações:
 * Desinstale a aplicação de dispositivos.
 * Reduza o âmbito da implementação atual para segmentar apenas os utilizadores para os quais tem licenças suficientes.
@@ -80,6 +83,6 @@ Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada um
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

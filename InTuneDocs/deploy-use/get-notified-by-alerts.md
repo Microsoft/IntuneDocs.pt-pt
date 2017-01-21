@@ -1,5 +1,5 @@
 ---
-title: "Ser notificado através de alertas | Microsoft Intune"
+title: "Seja notificado através de alertas | Documentos da Microsoft"
 description: "Saiba como os alertas o mantêm a par do que está a acontecer no Microsoft Intune."
 keywords: 
 author: arob98
@@ -14,13 +14,16 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 27aed0126b8aac032f334c712108b23482ef70d7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: efad781dca4a759335b67126026bf4fed127380e
 
 
 ---
 
 # <a name="get-notified-by-microsoft-intune-alerts"></a>Seja notificado através de alertas do Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Os alertas mantêm-no a par do que está a acontecer no Microsoft Intune.
 
 Por exemplo, os alertas podem notificá-lo sobre os seguintes eventos:
@@ -33,7 +36,7 @@ Por exemplo, os alertas podem notificá-lo sobre os seguintes eventos:
 
 
 ## <a name="how-alerts-work"></a>Como funcionam os alertas
-Os alertas são gerados com base nos **tipos de alerta**, um conjunto de regras pré-configuradas incorporadas no Intune. Por exemplo, o tipo de alerta **Armazenamento na nuvem tem 10% de espaço livre ou menos** alerta-o se estiver a ficar sem espaço para armazenar as suas aplicações na nuvem. Pode ativar ou desativar tipos de alerta e configurar as propriedades para cada tipo de alerta. Por exemplo, utilizando o tipo de alerta acima, pode configurar:
+Os alertas são gerados com base nos **tipos de alerta**, um conjunto de regras pré-configuradas incorporadas no Intune. Por exemplo, o tipo de alerta **Armazenamento na cloud tem 10% de espaço livre ou menos** alerta-o se estiver a ficar sem espaço para armazenar as suas aplicações na cloud. Pode ativar ou desativar tipos de alerta e configurar as propriedades para cada tipo de alerta. Por exemplo, utilizando o tipo de alerta acima, pode configurar:
 
 -   **Estado:** Se este tipo de alerta está ativado ou desativado
 

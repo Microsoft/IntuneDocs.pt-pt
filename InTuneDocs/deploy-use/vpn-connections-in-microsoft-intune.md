@@ -1,11 +1,11 @@
 ---
-title: "Ligações VPN | Microsoft Intune"
+title: "Ligações VPN | Documentos da Microsoft"
 description: "Utilize Perfis de VPN para implementar definições da VPN em utilizadores e dispositivos na sua organização."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>Ligações VPN no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um *perfil de ligação VPN* para iniciar uma ligação com o servidor VPN. Utilize os *Perfis VPN* no Microsoft Intune para implementar definições de VPN a utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede.
 
@@ -34,7 +36,7 @@ Pode configurar os seguintes tipos de dispositivo com perfis de VPN:
 * Dispositivos com Mac OS X 10.9 e posterior
 * Dispositivos inscritos com Windows 8.1 e posterior
 * Dispositivos a executar o Windows Phone 8.1 e posterior
-* Dispositivos que executam o Windows 10 para computadores e dispositivos móveis
+* Dispositivos que executam o Windows 10 e o Windows 10 Mobile
 
 As opções de configuração do perfil da VPN variam consoante o tipo de dispositivo selecionado.
 
@@ -47,7 +49,7 @@ O Intune suporta a criação de perfis de VPN que utilizem os seguintes tipos de
 
 
 
-Tipo de ligação |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 para computadores e dispositivos móveis |
+Tipo de ligação |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Computadores com o Windows 10 e dispositivos móveis com o Windows 10 Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sim |Sim   |Não    |Não  |Não    | Sim, (apenas OMA-URI, Mobile)|     
 Cisco (IPsec)|Sim |Sim   |Não  |Não  |Não | Não|
@@ -67,7 +69,7 @@ L2TP|Perfil personalizado iOS|Não |Não |Não|Sim (OMA-URI)|Sim|
 > [!IMPORTANT]
 > Antes de poder utilizar os perfis da VPN implementados num dispositivo, tem de instalar a aplicação VPN aplicável para o perfil. Pode utilizar as informações do tópico [Implementar aplicações em dispositivos móveis no Microsoft Intune](deploy-apps-in-microsoft-intune.md), que o ajuda a implementar a aplicação aplicável com o Intune.  
 
- Saiba como criar perfis de VPN personalizados com definições URI em [Configurações personalizadas para perfis de VPN](custom-configurations-for-vpn-profiles.md).     
+ Saiba como criar perfis de VPN personalizados com definições URI em [Configurações personalizadas para perfis de VPN](create-custom-vpn-profiles.md).     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
 
@@ -77,7 +79,7 @@ Os perfis da VPN podem utilizar vários tipos de ligação e protocolos diferent
 
 Quando cria o perfil da VPN, pode escolher um perfil de certificado SCEP ou .PFX que tenha criado anteriormente no Intune. Este é conhecido como certificado de identidade. É utilizado para autenticação em relação a um certificado fidedigno (ou um *certificado de raiz*) que criou para estabelecer que o dispositivo do utilizador tem permissões para se ligar. O certificado fidedigno é implementado no computador que irá autenticar a ligação VPN (normalmente, o servidor VPN).
 
-Para mais informações sobre como criar e utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
+Para mais informações sobre como criar e utilizar perfis de certificado no Intune, veja [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
 ### <a name="user-name-and-password"></a>Nome de utilizador e palavra-passe
 
@@ -93,7 +95,7 @@ O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e 
     * **Perfil da VPN (Mac OS X 10.9 e posterior)**
     * **Perfil da VPN (Windows 8.1 e posterior)**
     * **Perfil da VPN (Windows Phone 8.1 e posterior)**
-    * **Perfil da VPN (Windows 10 para computadores e dispositivos móveis e posterior)**
+    * **Perfil da VPN (computadores com o Windows 10 e dispositivos móveis com o Windows 10 Mobile e posterior)**
 
  Só pode criar e implementar uma política de perfil da VPN personalizada. As definições recomendadas não estão disponíveis.
 
@@ -116,7 +118,7 @@ Nome da definição  |Mais informações
 **Enviar todo o tráfego de rede através da ligação VPN**     |Se selecionar esta opção, todo o tráfego de rede será enviado através da ligação VPN. Se não selecionar esta opção, o cliente negociará dinamicamente as rotas de divisão do túnel ao estabelecer a ligação com o servidor VPN de terceiros. Apenas as ligações à rede da empresa são enviadas através de um túnel VPN. Os túneis VPN não são utilizados ao ligar-se a recursos na Internet.
 **Método de autenticação**| Selecione o método de autenticação utilizado pela ligação VPN: **Certificados** ou **Nome de Utilizador e Palavra-passe**. (O **Nome de Utilizador e a Palavra-passe** não estarão disponíveis se o tipo de ligação for Cisco AnyConnect.) A opção **Método de autenticação** não está disponível para o Windows 8.1.
 **Memorizar as credenciais do utilizador sempre que iniciar sessão**|Selecione este opção para garantir que as credenciais do utilizador são memorizadas, para que o mesmo não tenha de introduzi-las sempre que for efetuada uma ligação.
-**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação VPN. Para mais informações sobre como utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.
+**Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação VPN. Para mais informações sobre como utilizar perfis de certificado no Intune, veja [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.
 **Função**| Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure** ou **Citrix**.
 **Realm**|Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure ou Citrix. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure** ou **Citrix**.
 **Grupo ou domínio de início de sessão**|Especifique o nome do grupo ou domínio de início de sessão ao qual pretende ligar-se. Esta opção só é apresentada se o tipo de ligação for **Dell SonicWALL Mobile Connect**.
@@ -132,7 +134,7 @@ Nome da definição  |Mais informações
 **Ignorar a VPN quando estiver ligado à rede Wi-Fi da empresa** (apenas no Windows Phone 8.1)|Selecione esta opção para especificar que a ligação VPN não será utilizada quando o dispositivo estiver ligado à rede Wi-Fi da empresa.
 **Ignorar a VPN quando estiver ligado à rede Wi-Fi doméstica** (apenas no Windows Phone 8.1)|Selecione esta opção para especificar que a ligação VPN não será utilizada quando o dispositivo estiver ligado à rede Wi-Fi doméstica.
 
-As seguintes definições adicionais estão disponíveis para computadores com o Windows 10 e dispositivos com o Windows 10 Mobile.
+As seguintes definições adicionais estão disponíveis para computadores e dispositivos móveis com o Windows 10.
 
 Nome da definição  |Mais informações  
 ---------|---------
@@ -187,20 +189,17 @@ As regras específicas do domínio são avaliadas antes das regras de todos os d
 
     -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Add** &gt; **OK**.
 
-    -   Para fechar a caixa de diálogo sem implementar a política, escolha **Cancelar**.
+    -   Para fechar a caixa de diálogo sem implementar a política, escolha **Cancel**.
 
 
 Após uma implementação efetuada com êxito, os utilizadores verão o nome da ligação VPN especificado na lista de ligações VPN nos respetivos dispositivos.
 
-Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
-
-### <a name="see-also"></a>Consulte também
-[Configurações personalizadas para perfis VPN](Custom-configurations-for-VPN-profiles.md)
-
-[VPN por aplicação para Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
+Um resumo do estado e alertas na página **Overview** da área de trabalho **Policy** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+
+<!--HONumber=Dec16_HO3-->
 
 

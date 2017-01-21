@@ -1,11 +1,11 @@
 ---
-title: "Definições de política de conformidade para dispositivos Windows| Microsoft Intune"
+title: "Definições de política de conformidade para dispositivos Windows| Documentos da Microsoft"
 description: "Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos Windows."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Windows no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As definições de política descritas neste tópico aplicam-se a dispositivos com o sistema operativo Windows. As secções seguintes descrevem as versões do Windows suportadas.
 
@@ -37,7 +39,7 @@ As definições apresentadas nesta secção são suportadas no Windows Phone 8.1
 #### <a name="password"></a>Palavra-passe
 - **Exigir uma palavra-passe para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que o utilizador introduza uma palavra-passe para que possa aceder ao respetivo dispositivo.
 
-- **Permitir palavras-passe simples**: defina esta opção para **Sim** para permitir que o utilizador crie uma palavra-passe simples como **1234** ou **1111**.
+- **Permitir palavras-passe simples**: defina esta opção para **Sim** para permitir que o utilizador crie uma palavra-passe simples, como **1234** ou **1111**.
 
 -  **Comprimento mínimo da palavra-passe**: especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 - **Solicitar tipo de palavra-passe:** especifique se o utilizador tem de criar uma palavra-passe **Alfanumérica** ou **Numérica**.
@@ -127,7 +129,7 @@ Pode definir uma regra para exigir que os dispositivos com o Windows 10 sejam co
   -  **BitLocker está ativado**: se o BitLocker estiver ativado, o dispositivo poderá ajudar a proteger os dados que são armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra em hibernação. A Encriptação de Unidade BitLocker do Windows encripta todos os dados armazenados no volume do sistema operativo Windows. O BitLocker utiliza o TPM para ajudar a proteger o sistema operativo Windows e os dados de utilizador. O BitLocker também ajuda a garantir que os computadores não são adulterados, mesmo que não estejam a ser vigiados, sejam roubados ou se percam. Se os computadores estiverem equipados com um TPM compatível, o BitLocker utiliza o TPM para bloquear as chaves de encriptação que ajudam a proteger os dados. Como resultado, as chaves não podem ser acedidas até o TPM ter verificado o estado dos computadores.
   -  **A integridade do código está ativada**: a integridade do código é uma funcionalidade que valida a integridade de um ficheiro de controlador ou de sistema sempre que é carregado para a memória. A integridade do código deteta se um ficheiro de controlador ou de sistema não assinado está a ser carregado para o kernel. Também deteta se um ficheiro de sistema foi modificado por software malicioso que está a ser executado por uma conta de utilizador com privilégios administrativos.
   - **O Arranque Seguro está ativado**: se o Arranque Seguro estiver ativado, o sistema é forçado a fazer o arranque para um estado de fábrica fidedigno. Além disso, com o Arranque Seguro ativado, os componentes do núcleo utilizados para arrancar o computador têm de ter assinaturas criptográficas corretas e que sejam consideradas fidedignas pela organização que fabricou o dispositivo. O firmware UEFI verifica isto antes de permitir que o computador seja iniciado. Se um ficheiro tiver sido adulterado, danificando a respetiva assinatura, o sistema não arrancará.
-  - **O antimalware de início antecipado está ativado**: o antimalware de início antecipado (ELAM) assegura proteção para os computadores da sua rede quando são iniciados e antes de os controladores de terceiros serem inicializados.
+  - **O antimalware de arranque de início antecipado está ativado**: o antimalware de arranque de início antecipado (ELAM) assegura proteção para os computadores da sua rede quando são iniciados e antes de os controladores de terceiros serem inicializados.
 
   Para obter informações sobre como funciona o serviço HAS, consulte [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
 
@@ -151,6 +153,6 @@ Para localizar a versão de SO a utilizar nas definições **SO mínimo obrigat�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

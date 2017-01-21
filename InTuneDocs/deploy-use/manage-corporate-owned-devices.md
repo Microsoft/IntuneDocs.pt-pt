@@ -1,5 +1,5 @@
 ---
-title: "Gerir dispositivos pertencentes à empresa | Microsoft Intune"
+title: "Gerir dispositivos pertencentes à empresa | Documentos da Microsoft"
 description: "Inscreva dispositivos da empresa de várias formas com base no tipo de dispositivo, na forma como foi comprado e nas necessidades da organização."
 keywords: 
 author: staciebarker
@@ -14,15 +14,17 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Inscrever dispositivos pertencentes à empresa através do Intune
 
-Pode inscrever dispositivos pertencentes à empresa ou à organização para os gerir com o Intune de várias formas, consoante o tipo de dispositivo, como foi comprado e as necessidades da organização. Também pode instalar a aplicação do Portal da Empresa para gerir dispositivos da empresa, como num cenário "traga o seu próprio dispositivo" (BYOD).
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Pode inscrever dispositivos pertencentes à empresa ou à organização para os gerir com o Intune de várias formas, consoante o tipo de dispositivo, como foi comprado e as necessidades da organização. Também pode instalar a aplicação Portal da Empresa para gerir dispositivos da empresa, como num cenário "traga o seu próprio dispositivo" (BYOD).
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa
 
@@ -63,6 +65,6 @@ Quando um dispositivo é marcado como empresarial, verá **Empresarial** na colu
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

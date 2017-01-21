@@ -1,5 +1,5 @@
 ---
-title: "Compreender os seus dispositivos com o inventário | Microsoft Intune"
+title: "Compreender os seus dispositivos com o inventário | Documentos da Microsoft"
 description: "Utilize o Intune para ver informações sobre o hardware dos dispositivos que gere."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
-ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3ae5809f8506e2255d9443d3587f2564bc863066
 
 
 ---
 
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Compreender os seus dispositivos com o inventário no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune permite ver o inventário de dispositivos inscritos e PCs Windows que executam o software de cliente do Intune.
 Normalmente, o Intune recolhe o inventário de dispositivos geridos a cada 7 dias. Por este motivo, poderá haver um atraso antes de os relatórios mostrarem os resultados de alterações recentes nos dispositivos, por exemplo, uma alteração no nome do dispositivo ou no espaço de armazenamento livre.
 
@@ -45,8 +48,8 @@ Para ver o inventário recolhido pelos dispositivos móveis, execute os [Relató
 |**Com Jailbreak ou Root**|Apenas dispositivos iOS e Android|
 |**ID Exclusivo de Dispositivo**|Todos os dispositivos, exceto Exchange ActiveSync|
 |**Número de série**|Dispositivos com iOS, Mac OS X, Android, Windows 8.1 e computadores com o Windows 10|
-|**Espaço de Armazenamento Total**|Dispositivos com iOS, Mac OS X, Windows 8.1, Windows 10 Mobile e computadores com o Windows 10|
-|**Espaço de Armazenamento Livre**|Dispositivos com iOS, Mac OS X, Windows 8.1 e computadores com o Windows 10|
+|**Espaço de Armazenamento Total**|Dispositivos com iOS, Mac OS X, Windows 8.1, Windows 10 e Windows 10 Mobile|
+|**Espaço de Armazenamento Livre**|Dispositivos com iOS, Mac OS X, Windows 8.1 e Windows 10|
 |**Número de Telefone**<br>Os telefones que são classificados como empresariais estão identificados com o respetivo número de telefone completo (por exemplo, quando executa um relatório de inventário de dispositivos móveis). Os números de telefone BYOD são mascarados com &#42;, e apenas são apresentados os quatro últimos dígitos.|Dispositivos iOS, Android e Windows Phone|
 |**IMEI**|Dispositivos Exchange ActiveSync, iOS, Android e Windows Phone|
 |**MEID**<br>Identificador de Equipamento Móvel|Apenas dispositivos iOS|
@@ -116,6 +119,6 @@ Para ver o inventário recolhido pelos PCs Windows, execute os [Relatórios de I
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

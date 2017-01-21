@@ -1,5 +1,5 @@
 ---
-title: Perfis de certificado para acesso a recursos | Microsoft Intune
+title: Perfis de certificado para acesso a recursos | Documentos da Microsoft
 description: Proteja o acesos a VPN, Wi-Fi e e-mail com um certificado instalado no dispositivo de cada utilizador.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Proteger o acesso a recursos com perfis de certificados no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Quando concede aos utilizadores acesso aos recursos da empresa através de VPN, Wi-Fi ou perfis de e-mail, pode proteger o acesso através de um certificado instalado em cada dispositivo do utilizador. Como funciona:
 
 1. Certifique-se de que tem a infraestrutura de certificados certa, conforme descrito em [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) e [Configurar a infraestrutura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md).
@@ -40,11 +43,11 @@ Quando concede aos utilizadores acesso aos recursos da empresa através de VPN, 
   -  iOS 8.0 e posterior
   -  Android 4.0 e posterior
   -  Android for Work
-  -  Windows 10 (Desktop e Mobile) e posterior
+  -  Windows 10 (computadores e dispositivos móveis) e posterior
 
   Utilize um **Perfil de Certificado SCEP** para os dispositivos que executam as seguintes plataformas:
     -   Mac OS X 10.9 e posterior
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 Tem de criar um perfil separado para cada plataforma. Ao criar o perfil, associe-o ao **Perfil de Certificado de Raiz Fidedigna** criado.
 
@@ -61,6 +64,6 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil, associe
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

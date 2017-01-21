@@ -1,5 +1,5 @@
 ---
-title: Aceder ao e-mail empresarial com perfis de e-mail | Microsoft Intune
+title: Aceder ao e-mail empresarial com perfis de e-mail | Documentos da Microsoft
 description: "As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -34,7 +36,7 @@ Os administradores de TI ou os utilizadores também podem optar por instalar cli
 
 Pode utilizar os perfis de e-mail para configurar o cliente de e-mail nativo nos seguintes tipos de dispositivos:
 -   Windows Phone 8.1 e posterior
--   Windows 10 (para ambiente de trabalho), Windows 10 Mobile e posterior
+-   Windows 10 (para computadores), Windows 10 Mobile e posterior
 -   iOS 8.0 e posterior
 -   Samsung KNOX Standard (4.0 e posterior)
 -   Android for Work
@@ -65,7 +67,7 @@ Pode proteger os perfis de e-mail através de um certificado ou de uma palavra-p
 ### <a name="certificates"></a>Certificados
 Quando cria o perfil de e-mail, escolhe um perfil de certificado que tenha criado anteriormente no Intune. Este é conhecido como o certificado de identidade e é utilizado para autenticar um perfil de certificado fidedigno (ou um certificado de raiz) para determinar que o dispositivo do utilizador tem permissões para se ligar. O certificado fidedigno é implementado no computador que autentica a ligação de e-mail, normalmente, o servidor de e-mail nativo.
 
-Para mais informações sobre como criar e utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
+Para mais informações sobre como criar e utilizar perfis de certificado no Intune, veja [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md).
 
 ### <a name="user-name-and-password"></a>Nome de utilizador e palavra-passe
 O utilizador é autenticado no servidor de e-mail nativo ao fornecer o respetivo nome de utilizador e palavra-passe.
@@ -84,7 +86,7 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador tem
 
     -   **Perfil de E-mail (Windows Phone 8.1 e posterior)**
 
-    -   **Perfil de E-mail (Windows 10 para computadores e dispositivos móveis e posterior)**
+    -   **Perfil de E-mail (Dispositivos com o Windows 10, Windows 10 Mobile e posterior)**
 
     -   **Perfil de E-mail (Android for Work – Gmail)**
 
@@ -103,7 +105,7 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador tem
     |**Nome de Utilizador**|Este é o atributo no Active Directory (AD) ou Azure AD que será utilizado para gerar o nome de utilizador para este perfil de e-mail. Selecione o Endereço SMTP Principal, como *user1@contoso.com*, ou o Nome Principal de Utilizador, como *user1* ou *user1@contoso.com*.|
     |**Endereço de e-mail**|Como é gerado o endereço de e-mail para o utilizador em cada dispositivo. Selecione **Endereço SMTP Principal** para utilizar o endereço SMTP principal para iniciar sessão no Exchange ou selecione **Nome Principal de Utilizador** para utilizar o nome principal completo como o endereço de e-mail.|
     |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.|
-    |**Selecionar um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação ao Exchange. Para mais informações sobre como utilizar perfis de certificado no Intune, consulte [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.|
+    |**Selecionar um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação ao Exchange. Para mais informações sobre como utilizar perfis de certificado no Intune, veja [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.|
     |**Utilizar S/MIME** (Samsung KNOX e iOS)|Envie e-mail através de encriptação S/MIME.|
     |**Certificado de assinatura** (Samsung KNOX e iOS)|Selecione o certificado de assinatura que será utilizado para assinar o e-mail de envio. Esta opção só é apresentada quando seleciona **Utilizar S/MIME**.|
     |**Número de dias de e-mail a sincronizar**|O número de dias de e-mail que pretende sincronizar ou selecione **Sem limite** para sincronizar todos os e-mails disponíveis.|
@@ -118,17 +120,17 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador tem
 
 4.  Quando terminar, clique em **Guardar Política**.
 
-A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política** .
+A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política**.
 
 ## <a name="deploy-the-policy"></a>Implementar a política
 
-1.  Na área de trabalho **Política**, selecione a política que pretende implementar e, em seguida, escolha **Gerir Implementação**.
+1.  Na área de trabalho **Policy**, selecione a política que pretende implementar e, em seguida, escolha **Manage Deployment**.
 
 2.  Na caixa de diálogo **Gerir a Implementação**, para:
 
     -   **To deploy the policy** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Add** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implementar a política** – selecione **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implementar a política** – escolha **Cancel**.
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
 
@@ -138,6 +140,6 @@ Um resumo do estado e alertas na página **Descrição Geral** da área de traba
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

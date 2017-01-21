@@ -1,11 +1,11 @@
 ---
-title: "Configurar políticas de MAM na consola do Intune | Microsoft Intune"
+title: "Configurar políticas de MAM na consola do Intune | Documentos da Microsoft"
 description: "As políticas de gestão de aplicações móveis no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As políticas de gestão de aplicações móveis (MAM) no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa. Por exemplo, pode restringir operações de corte, cópia e colagem numa aplicação gerida ou configurar uma aplicação para abrir todas as ligações num browser gerido.
 
 As políticas de gestão de aplicações móveis suportam:
@@ -42,9 +45,9 @@ Para aplicar restrições a uma aplicação, esta tem de incorporar o SDK da Apl
 
 -   **Utilizar uma aplicação encapsulada**. Uma aplicação encapsulada é uma aplicação que empacota novamente para incluir o SDK da Aplicação através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune. Normalmente, esta ferramenta é utilizada para processar aplicações da empresa que foram criadas internamente. Não pode ser utilizada para processar aplicações que foram transferidas a partir da loja de aplicações. Para obter mais informações, veja [Preparar as aplicações iOS para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparar as aplicações Android para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Escrever a sua própria aplicação que incorpora o SDK da Aplicação do Intune**. O SDK da Aplicação do Intune permite-lhe incorporar funcionalidades de gestão de aplicação numa aplicação enquanto estiver a escrevê-la. Para obter mais informações, veja [Descrição Geral do SDK da Aplicação do Intune](/intune/develop/intune-app-sdk).
+- **Escrever a sua própria aplicação que incorpora o SDK da Aplicação Intune**. O SDK da Aplicação  Intune permite-lhe incorporar funcionalidades de gestão de aplicação numa aplicação enquanto estiver a escrevê-la. Para obter mais informações, veja [Descrição Geral do SDK da Aplicação Intune](/intune/develop/intune-app-sdk).
 
-Para obter ajuda na escolha entre a Ferramenta de Encapsulamento de Aplicações e o SDK da Aplicação do Intune, veja [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Para obter ajuda na escolha entre a Ferramenta de Encapsulamento de Aplicações e o SDK da Aplicação Intune, veja [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 Algumas aplicações geridas, como a aplicação Outlook para iOS e Android, suportam *várias identidades*. Isto significa que o Intune apenas aplica definições de gestão a contas empresariais ou dados na aplicação.
 
@@ -61,9 +64,9 @@ Por exemplo, ao utilizar a aplicação do Outlook:
 
 ## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Criar e implementar uma aplicação com uma política de gestão de aplicações móveis
 
--   **Passo 1:** Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada, ou utilizar o SDK da Aplicação do Intune para escrever uma aplicação com MAM.
+-   **Passo 1:** Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada, ou utilizar o SDK da Aplicação Intune para escrever uma aplicação com MAM.
 
--   **Passo 2:** Publicar a aplicação no seu espaço de armazenamento na nuvem.
+-   **Passo 2:** Publicar a aplicação no seu espaço de armazenamento na cloud.
 
 -   **Passo 3:** Criar uma política de gestão de aplicações móveis.
 
@@ -71,17 +74,17 @@ Por exemplo, ao utilizar a aplicação do Outlook:
 
 -   **Passo 5:** Monitorizar a implementação da aplicação.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Passo 1: Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada ou utilizar o SDK da Aplicação do Intune para escrever uma aplicação com MAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Passo 1: Obter a ligação para uma aplicação gerida por política, criar uma aplicação encapsulada ou utilizar o SDK da Aplicação Intune para escrever uma aplicação com MAM
 
 Na loja de aplicações, encontre e anote o URL da aplicação gerida por política que pretende implementar. Por exemplo, o URL da aplicação Microsoft Word para iPad é **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Passo 2: Publicar a aplicação no seu espaço de armazenamento na nuvem
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Passo 2: Publicar a aplicação no seu espaço de armazenamento na cloud
 Quando publica uma aplicação gerida, os procedimentos diferem dependendo de estar a publicar uma aplicação gerida por política ou uma aplicação que foi processada ao utilizar a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS.
 
 #### <a name="to-publish-a-policy-managed-app"></a>Para publicar uma aplicação gerida por política
 
-1.  Quando estiver pronto para carregar a aplicação para o seu espaço de armazenamento na nuvem, siga as instruções em [Adicionar aplicações a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Quando estiver pronto para carregar a aplicação para o seu espaço de armazenamento na cloud, siga as instruções em [Adicionar aplicações a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 2.  Para aplicações iOS, selecione **Aplicação iOS gerida a partir da App Store**, em **Selecionar como este software é disponibilizado para os dispositivos**.
 
@@ -95,7 +98,7 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
 
 #### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Para publicar uma aplicação que foi processada através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune
 
-1.  Quando estiver pronto para carregar a aplicação para o seu espaço de armazenamento na nuvem, siga as instruções em [Adicionar aplicações a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Quando estiver pronto para carregar a aplicação para o seu espaço de armazenamento na cloud, siga as instruções em [Adicionar aplicações a dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 2.  Selecione **Instalador de Software**, em **Selecionar como este software é disponibilizado para os dispositivos**.
 
@@ -125,9 +128,9 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
     |**Descrição**|Opcionalmente, especifique uma descrição para esta política.|
     |**Restringir o conteúdo Web a apresentar num browser gerido pela empresa**|Quando esta definição está ativada, as ligações na aplicação serão abertas no browser gerido. Para esta opção funcionar, esta aplicação tem de estar implementada em dispositivos.|
     |**Impedir cópias de segurança do Android** ou **Impedir cópias de segurança do iTunes e iCloud**|Esta definição desativa a cópia de segurança de informações da aplicação.|
-    |**Permitir que a aplicação transfira dados para outras aplicações**|Esta definição especifica as aplicações para as quais esta aplicação pode enviar dados. Pode optar por não permitir a transferência de dados para qualquer aplicação, permitir a transferência apenas para outras aplicações geridas ou permitir a transferência para qualquer aplicação. <br /><br />Por exemplo, quando não permite a transferência de dados, restringe a transferência de dados para serviços como mensagens SMS, atribuição de imagens a contactos e publicação no Facebook e Twitter.<br /><br />Para dispositivos iOS, para impedir a transferência de documentos entre aplicações geridas e não geridas, também tem de configurar e implementar uma política de segurança de dispositivos móveis que desativa a definição **Permitir documentos geridos noutras aplicações não geridas**. Se optar por permitir a transferência apenas para outras aplicações geridas, os visualizadores de PDF e imagem do Intune (se estiverem implementados) serão utilizados para abrir conteúdos dos respetivos tipos.<br /><br />Além disso, se definir esta opção como **Aplicações Geridas por Políticas** ou **Nenhuma**, a funcionalidade do iOS 9 que permite que o Spotlight Search procure dados dentro de aplicações será bloqueada.<br><br>Esta definição não controla a utilização da funcionalidade Abrir Em nos dispositivos móveis. Para gerir a funcionalidade Abrir Em, veja [Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
+    |**Permitir que a aplicação transfira dados para outras aplicações**|Esta definição especifica as aplicações para as quais esta aplicação pode enviar dados. Pode optar por não permitir a transferência de dados para qualquer aplicação, permitir a transferência apenas para outras aplicações geridas ou permitir a transferência para qualquer aplicação. <br /><br />Por exemplo, quando não permite a transferência de dados, restringe a transferência de dados para serviços como mensagens SMS, atribuição de imagens a contactos e publicação no Facebook e Twitter.<br /><br />Para dispositivos iOS, para impedir a transferência de documentos entre aplicações geridas e não geridas, também tem de configurar e implementar uma política de segurança de dispositivos móveis que desativa a definição **Permitir documentos geridos noutras aplicações não geridas**. Se optar por permitir a transferência apenas para outras aplicações geridas, os visualizadores de PDF e imagem do Intune (se estiverem implementados) serão utilizados para abrir conteúdos dos respetivos tipos.<br /><br />Além disso, se definir esta opção como **Aplicações Geridas por Políticas** ou **Nenhuma**, a funcionalidade do iOS 9 que permite que a Pesquisa Spotlight procure dados dentro de aplicações será bloqueada.<br><br>Esta definição não controla a utilização da funcionalidade Abrir Em nos dispositivos móveis. Para gerir a funcionalidade Abrir Em, veja [Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
     |**Permitir que a aplicação receba dados de outras aplicações**|Esta definição especifica de que aplicações esta aplicação pode receber dados. Pode optar por não permitir a transferência de dados de qualquer aplicação, permitir a transferência apenas de outras aplicações geridas ou permitir a transferência de qualquer aplicação.<br /><br />Quando um utilizador acede a dados a partir de uma aplicação que não seja gerida por uma política de gestão de aplicações móveis, os dados serão tratados como dados empresariais e protegidos pela política. Isto aplica-se às aplicações iOS que suportem várias identidades (em que o Intune aplica definições de gestão apenas a contas empresariais ou dados na aplicação). Em alternativa, isto aplica-se a um dispositivo inscrito com uma política de gestão de aplicações móveis aplicada.|
-    |**Impedir "Guardar Como"**|Esta definição desativa a utilização da opção **Guardar Como** para guardar dados em localizações de armazenamento na nuvem pessoal (tais como OneDrive ou Dropbox) em qualquer aplicação que utiliza esta política.|
+    |**Impedir "Guardar Como"**|Esta definição desativa a utilização da opção **Guardar Como** para guardar dados em localizações de armazenamento na cloud pessoal (tais como OneDrive ou Dropbox) em qualquer aplicação que utiliza esta política.|
     |**Restringir as operações de corte, cópia e colagem com outras aplicações**|Esta definição especifica como as operações de corte, cópia e colagem podem ser utilizadas com a aplicação. Escolha entre:<br /><br />**Bloqueado**. Não permitir operações de corte, cópia e colagem entre esta aplicação e outras aplicações.<br /><br />**Aplicações Geridas por Políticas**. Permitir apenas operações de corte, cópia e colagem entre esta aplicação e outras aplicações geridas.<br /><br />**Aplicações Geridas por Políticas com Colar Em**. Permitir que os dados cortados ou copiados desta aplicação sejam colados apenas noutras aplicações geridas. Permitir que os dados cortados ou copiados de qualquer aplicação sejam colados nesta aplicação.<br /><br />**Qualquer Aplicação**. Sem restrições nas operações de corte, cópia e colagem para ou desta aplicação.<br /><br />Para copiar e colar dados entre aplicações geridas, ambas as aplicações têm de ter configuradas as definições **Aplicações Geridas por Políticas** ou **Aplicações Geridas por Políticas com Colar Em**.|
     |**Exigir PIN simples para acesso**|Esta definição exige que o utilizador introduza um PIN que especifica para utilizar esta aplicação. Será pedido ao utilizador para configurar isto da primeira vez que executar a aplicação.|
     |**Número de tentativas antes de redefinição do PIN**|Especifique o número de tentativas de introdução do PIN que podem ser efetuadas antes de o utilizador ter de redefinir o PIN.|
@@ -173,7 +176,7 @@ Depois de criar e implementar uma aplicação associada a uma política de gest�
 
     -   Clique em **Todos os Dispositivos** &gt; **Todos os Dispositivos Móveis**. Na página **Propriedades do Grupo de Dispositivos**, escolha **Dispositivos** e, em seguida, faça duplo clique no dispositivo que pretende examinar.
 
-3.  Na página **Propriedades dos Dispositivos Móveis** , selecione **Política** para ver uma lista das políticas de gestão de aplicações móveis que foram implementadas no dispositivo.
+3.  Na página **Propriedades dos Dispositivos Móveis**, selecione **Política** para ver uma lista das políticas de gestão de aplicações móveis que foram implementadas no dispositivo.
 
 4.  Selecione a política de gestão de aplicações móveis cujo estado pretende ver. Pode ver os detalhes da política no painel inferior e expandir o nó para apresentar as definições.
 
@@ -194,6 +197,6 @@ Nos casos em que o dispositivo ou o utilizador recebe duas políticas em conflit
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Regras de acesso ao Exchange para dispositivos móveis | Microsoft Intune"
+title: "Regras de acesso ao Exchange para dispositivos móveis | Documentos da Microsoft"
 description: "As regras de acesso do Exchange ActiveSync para permitir ou bloquear as ligações do dispositivo com o EAS"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e11263115088005123562b2afae1804528d0d5d5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
 
 
 ---
 
 # <a name="exchange-access-rules-for-mobile-devices"></a>Regras de acesso ao Exchange para dispositivos móveis
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As regras de acesso ao Exchange para dispositivos móveis determinam o nível de acesso ao Exchange ActiveSync que é concedido a esses dispositivos. Estas definições afetam todos os dispositivos móveis, incluindo os que não estão inscritos no Microsoft Intune. Pode começar por definir uma **Regra Predefinida**, aplicável a todos os dispositivos móveis que não tenham uma regra personalizada aplicada.
 
 A tabela seguinte contém os níveis de acesso geridos pelo Exchange ActiveSync:
@@ -56,6 +59,6 @@ O procedimento seguinte descreve o processo de criação de uma regra personaliz
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

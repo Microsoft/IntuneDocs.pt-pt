@@ -1,11 +1,11 @@
 ---
-title: "Perfis de aprovisionamento de aplicações | Microsoft Intune"
+title: "Perfis de aprovisionamento de aplicações | Documentos da Microsoft"
 description: "O Intune proporciona-lhe as ferramentas para implementar proativamente uma nova política de perfil de aprovisionamento em dispositivos que tenham aplicações prestes a expirar."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 409433dbe5ca777b33b21a2655e15cde8003b4a2
-ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
 
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Utilizar políticas de perfil de aprovisionamento móvel de iOS para impedir as aplicações de expirar
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As aplicações de linha de negócio iOS da Apple implementadas em iPhones e iPads são criadas com um perfil de aprovisionamento incluído e o respetivo código assinado com um certificado. Quando as aplicações são executadas, o iOS confirma a integridade das mesmas e aplica as políticas definidas pelo perfil de aprovisionamento. São feitas as confirmações seguintes:
 
@@ -47,12 +48,12 @@ Quando o certificado expirar, tem de voltar a assinar a aplicação com um certi
 3. Na página **Geral**, configure os valores seguintes:
     - **Nome** - indique um nome para esta política de perfil de aprovisionamento móvel.
     - **Descrição** - opcionalmente, indique uma descrição para a política.
-    - **Ficheiro de perfil de configuração** -clique em **Importar** e em seguida, escolha um ficheiro de Perfil de Configuração Móvel da Apple (com a extensão **.mobileprovision**) que transferiu a partir do Web site Apple Developer (Programador Apple).
+    - **Ficheiro de perfil de configuração** -clique em **Importar** e em seguida, escolha um ficheiro de Perfil de Configuração Móvel da Apple (com a extensão **.mobileprovision**) que transferiu a partir do site Apple Developer (Programador Apple).
 4. Quando terminar, escolha **Guardar Política**.
 5. Agora, implemente a política nos dispositivos iOS necessários. Para obter mais informações, veja [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

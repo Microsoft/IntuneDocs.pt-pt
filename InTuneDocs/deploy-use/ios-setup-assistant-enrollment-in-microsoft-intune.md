@@ -1,5 +1,5 @@
 ---
-title: "Inscrever dispositivos iOS com o Assistente de Configuração | Microsoft Intune"
+title: "Inscrever dispositivos iOS com o Assistente de Configuração | Documentos da Microsoft"
 description: "Inscreva dispositivos iOS pertencentes à empresa com a ferramenta Apple Configurator para repor as predefinições de fábrica do dispositivo e prepará-lo para executar o Assistente de Configuração."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 01de894167a65f6b3a46808610232feb8dd7e536
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscrever dispositivos iOS com o Apple Configurator ao utilizar o Assistente de Configuração
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac. Este processo efetua a reposição de fábrica do dispositivo e prepara-o para executar o Assistente de Configuração, ao instalar as políticas da empresa para o novo utilizador do dispositivo.
 
 ## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune
@@ -151,6 +154,6 @@ Através do Apple Configurator, pode repor um dispositivo iOS para as definiçõ
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

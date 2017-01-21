@@ -1,5 +1,5 @@
 ---
-title: Utilizar o dispositivo Android com o Intune | Microsoft Intune
+title: Utilizar o dispositivo Android com o Intune | Documentos da Microsoft
 description: "Lista de ligações para tarefas que os utilizadores finais podem fazer no respetivo dispositivo móvel Android quando este está inscrito no Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 ---
@@ -62,8 +62,8 @@ As informações desta secção irão ajudar os utilizadores a corrigir problema
 - [Enviar registos de dados de diagnóstico ao administrador de TI por e-mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [Enviar registos de dados de diagnóstico ao administrador de TI por cabo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Enviar erros de inscrição ao administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)
-- [O dispositivo não tem a versão mínima do sistema operativo necessária](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [O dispositivo não é compatível com a versão máxima do sistema de operativo](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [O dispositivo não tem a versão mínima do sistema operativo necessária](you-need-to-update-your-android-device.md)
+- [O dispositivo não é compatível com a versão máxima do sistema de operativo](your-android-version-isnt-yet-supported.md)
 - [O dispositivo tem root e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
 - [O dispositivo tem um certificado necessário em falta](your-device-is-missing-a-required-certificate-android.md)
 - [É-lhe pedido para desativar origens desconhecidas](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ As informações desta secção irão ajudar os utilizadores a corrigir problema
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

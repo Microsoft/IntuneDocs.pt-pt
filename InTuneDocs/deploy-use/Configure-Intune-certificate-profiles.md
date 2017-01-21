@@ -1,5 +1,5 @@
 ---
-title: Configurar perfis de certificado | Microsoft Intune
+title: Configurar perfis de certificado | Documentos da Microsoft
 description: Saiba como criar um perfil de certificado do Intune.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfis de certificado do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Após ter configurado a infraestrutura e os certificados, conforme descrito em [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) ou em [Configurar a infraestrutura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md), pode criar perfis de certificados. Eis o processo:
 
 - **Tarefa 1**: exportar o certificado da AC de Raiz Fidedigna
@@ -143,7 +146,7 @@ Implemente perfis de certificado da mesma forma que implementa outras políticas
 1.  Na área de trabalho **Policy**, selecione a política que pretende implementar e, em seguida, escolha **Manage Deployment**.
 2.  Na caixa de diálogo **Manage Deployment**, para:
     -   **To deploy the policy**, selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Add** &gt; **OK**.
-    -   **To close the dialog box without deploying it**, escolha **Cancel**.
+    -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancel**.
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
@@ -157,6 +160,6 @@ Em seguida, pode utilizar certificados para ajudar a proteger os perfis de e-mai
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

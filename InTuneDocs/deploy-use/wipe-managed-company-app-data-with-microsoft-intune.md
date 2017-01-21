@@ -1,5 +1,5 @@
 ---
-title: "Eliminar dados de aplicações geridas pela empresa | Microsoft Intune"
+title: "Eliminar dados de aplicações geridas pela empresa | Documentos da Microsoft"
 description: Saiba como pode remover de forma seletiva dados da empresa de dispositivos remotamente.
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Quando um dispositivo se perde ou é roubado ou se o funcionário sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, poderá não querer remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao funcionário.
 
 Para remover seletivamente os dados de aplicações da empresa, utilize os passos neste tópico para criar um pedido de eliminação de dados. Depois de concluir o pedido, da próxima vez que a aplicação for executada no dispositivo, os dados da empresa são removidos da aplicação.
@@ -49,7 +52,7 @@ Para remover seletivamente os dados de aplicações da empresa, utilize os passo
 ![Captura de ecrã do mosaico Pedidos de eliminação ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Monitorizar os pedidos de eliminação
-O painel **Gestão de aplicações móveis do Intune** tem um relatório resumido no mosaico **Pedido de eliminação** .  Apresenta o estado geral e inclui o número de pedidos pendentes e falhas. Pode seguir os seguintes passos para obter mais detalhes:
+O painel **Gestão de aplicações móveis do Intune** tem um relatório resumido no mosaico **Pedido de eliminação**.  Apresenta o estado geral e inclui o número de pedidos pendentes e falhas. Pode seguir os seguintes passos para obter mais detalhes:
 
 1.  No painel **Gestão de aplicações móveis do Intune**, selecione o mosaico **Pedido de eliminação** para abrir o painel **Pedido de eliminação**.
 

@@ -1,5 +1,5 @@
 ---
-title: "O dispositivo Android tem root e não liga | Microsoft Intune"
+title: "O dispositivo Android tem root e não liga | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
-ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b0684903a8a4d78620f0ef3f8530438419924dc
 
 
 ---
@@ -31,7 +33,7 @@ Existem algumas formas comuns pelas quais o dispositivo pode ter ficado com root
 
 - Poderá ter instalada uma aplicação no seu dispositivo que o software de deteção de root pensa ser um risco de segurança. Se vir esta mensagem imediatamente depois de instalar uma aplicação, tente desinstalar essa aplicação.
 
-- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Neste caso, precisa de contactar o administrador de TI para obter ajuda. Para encontrar as informações de contacto, veja o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Neste caso, precisa de contactar o administrador de TI para obter ajuda. Para encontrar as informações de contacto, veja o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 Se tiver colocado o seu próprio dispositivo em root, terá de reverter o processo e restaurar o dispositivo novamente para o seu estado normal.
 

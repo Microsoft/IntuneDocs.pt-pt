@@ -1,5 +1,5 @@
 ---
-title: "Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo iOS | Microsoft Intune"
+title: "Necessita de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo iOS | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: 88b6a7107efb04accac4e7028e04a5505d8c865b
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 9e958dc7421ac9373d80268db654c87c61ab3729
 
 
 ---
@@ -45,12 +47,12 @@ Se vir algo deste género, toque no nome da aplicação que aparece na parte sup
 
 Depois de desinstalar a aplicação, recupera o acesso ao e-mail e a outros dados da empresa ou escola imediatamente. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados da empresa até desinstalar a aplicação.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

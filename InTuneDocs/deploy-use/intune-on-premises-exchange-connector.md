@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector para EAS no Local | Microsoft Intune
+title: Exchange Connector para EAS no Local | Documentos da Microsoft
 description: "Utilize a ferramenta Connector para permitir a comunicação entre a consola de administração do Intune e o Exchange Server no Local na MDM do Exchange ActiveSync."
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Instalar o Exchange Connector no Local do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Para configurar uma ligação que permite a comunicação entre o Microsoft Intune e o Exchange Server que aloja as caixas de correio dos dispositivos móveis, tem de transferir e configurar o Exchange Connector no Local na consola do administrador do Intune. O Intune apenas suporta uma ligação do Exchange Connector de qualquer tipo por subscrição.
@@ -93,7 +95,7 @@ Execute os seguintes passos para instalar o Exchange Connector no Local do Intun
 
     2. Escolha o ícone **?** no canto superior esquerdo e, em seguida, selecione **Sobre**.
 
-    3. Localize o valor do **Servidor POP Externo** .
+    3. Localize o valor do **Servidor POP Externo**.
 
     4. Escolha o **Servidor Proxy** para especificar as definições do servidor proxy do seu servidor do Exchange alojado.
         1. Selecione **Utilizar um servidor proxy ao sincronizar informações de dispositivos móveis**.

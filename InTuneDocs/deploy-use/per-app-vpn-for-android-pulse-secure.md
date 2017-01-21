@@ -1,5 +1,5 @@
 ---
-title: "VPN por aplicação para Android com Pulse Secure | Microsoft Intune"
+title: "VPN por aplicação para Android com Pulse Secure | Documentos da Microsoft"
 description: "Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar uma política personalizada para criar um perfil de VPN por aplicação para dispositivos Android
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Pode criar um perfil VPN por aplicação para dispositivos Android 5.0 e posteriores geridos pelo Intune. Primeiro, crie um perfil de VPN que utilize o tipo de ligação Pulse Secure ou Citrix. Em seguida, crie uma política de configuração personalizada que associe o perfil de VPN a aplicações específicas. 
 
@@ -70,14 +72,14 @@ Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista d
 Tem de implementar as *duas* políticas nos *mesmos* grupos do Intune.
 
 1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
-2.  Na caixa de diálogo **Gerir a Implementação** , para:
+2.  Na caixa de diálogo **Gerir a Implementação**, para:
     -   **Para implementar a política**, selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** > **OK**.
-    -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancel**.
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Também é apresentado um resumo de estado na área de trabalho **Dashboard**.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

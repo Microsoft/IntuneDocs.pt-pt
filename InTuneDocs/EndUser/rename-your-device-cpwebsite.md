@@ -1,9 +1,9 @@
 ---
-title: Mudar o nome do dispositivo a partir do site do Portal da Empresa | Microsoft Intune
+title: Mudar o nome do dispositivo a partir do site do Portal da Empresa | Documentos da Microsoft
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
 
 
 ---
 
 
-# Mudar o nome do dispositivo a partir do site do Portal da Empresa
+# <a name="rename-your-device-from-the-company-portal-website"></a>Mudar o nome do dispositivo a partir do site do Portal da Empresa
 
 Se decidir mudar o nome do seu dispositivo, pode fazê-lo de forma remota a partir do [Site do Portal da empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
@@ -36,10 +36,10 @@ Para mudar o nome o seu dispositivo:
 
 3.  Na caixa de onde aparece o nome do dispositivo atual, escreva o novo nome do seu dispositivo e, em seguida, toque no botão **Mudar o nome**. O dispositivo aparece agora com o novo nome.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

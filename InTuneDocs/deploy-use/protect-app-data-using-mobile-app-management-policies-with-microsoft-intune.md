@@ -1,9 +1,9 @@
 ---
-title: "Proteger dados das aplicações através de políticas de MAM | Microsoft Intune"
+title: "Proteger dados das aplicações através de políticas de MAM | Documentos da Microsoft"
 description: "Este tópico explica de que forma é que as políticas de gestão de aplicações móveis podem ajudar a proteger os dados empresariais, a evitar a perda de dados e a manter as informações pessoais e de trabalho separadas."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Como pode proteger dados de aplicações
 Os seus funcionários utilizam dispositivos móveis para tarefas pessoais e profissionais. Se, por um lado, quer garantir que os seus funcionários são produtivos, por outro, também quer evitar a perda de dados, intencional e acidental.  Além disso, pretende ser capaz de proteger os dados da empresa aos quais os seus funcionários acedem com dispositivos que não gere.
@@ -123,13 +125,13 @@ Por exemplo, quando um utilizador inicia a aplicação OneDrive com a sua conta 
 
 Todas as aplicações móveis do Office suportam acesso de várias identidades.
 
-##  <a name="next-steps"></a>Próximos passos
+##  <a name="next-steps"></a>Passos seguintes
 - [Preparar-se para configurar políticas de gestão de aplicações móveis](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,24 +1,26 @@
 ---
-title: "Glossário do Intune | Microsoft Intune"
+title: "Glossário do Intune | Documentos da Microsoft"
 description: Saiba mais sobre alguma da terminologia do Microsoft Intune
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
-ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 
 
 ---
 
 # <a name="microsoft-intune-glossary"></a>Glossário do Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -32,13 +34,13 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="b"></a>B
 |||
 |-|-|
-|BYOD|[Traga o seu próprio dispositivo](/intune/get-started/choose-how-to-enroll-devices1). Os utilizadores podem instalar a aplicação do Portal da Empresa do Intune nos respetivos dispositivos e, em seguida, inscrevê-los, obtendo acesso aos recursos da empresa como e-mail, aplicações da empresa, dados da empresa e suporte.| 
+|BYOD|[Traga o seu próprio dispositivo](/intune/get-started/choose-how-to-enroll-devices1). Os utilizadores podem instalar a aplicação Portal da Empresa do Intune nos respetivos dispositivos e, em seguida, inscrevê-los, obtendo acesso aos recursos da empresa como e-mail, aplicações da empresa, dados da empresa e suporte.|
 
 ## <a name="c"></a>C
 |||
 |-|-|
 |Perfil de certificado|Pode utilizar este tipo de política para [acesso seguro a recursos empresariais](/intune/deploy-use/secure-resource-access-with-certificate-profiles) com certificados quando utilizar perfis de Wi-Fi, e-mail ou VPN.|
-|Espaço de armazenamento na nuvem|Um local onde as aplicações ou os dados sobre as aplicações que criar [serão armazenados](/intune/deploy-use/add-apps#cloud-storage-space).|
+|Espaço de armazenamento na cloud|Um local onde as aplicações ou os dados sobre as aplicações que criar [serão armazenados](/intune/deploy-use/add-apps#cloud-storage-space).|
 |COD|Os [Dispositivos pertencentes à empresa](/intune/get-started/choose-how-to-enroll-devices1) podem ser inscritos de diversas formas, consoante as necessidades da organização e os tipos de dispositivos geridos.|
 |Portal da Empresa|Uma aplicação ou um site que proporciona aos utilizadores [acesso a aplicações e dados da empresa](/intune/get-started/microsoft-intune-company-portal).|
 |Política de conformidade|Assegura que os dispositivos utilizados para aceder às aplicações e aos dados da empresa [estão em conformidade com determinadas regras ](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune), como a utilização de um PIN para aceder ao dispositivo e a encriptação dos dados armazenados no dispositivo.|
@@ -82,7 +84,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |consola de administração do Intune|A consola atual que utiliza na maioria das operações de gestão do Intune.|
 |Cliente de software do Intune|Uma forma alternativa de [gerir alguns PCs Windows](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune). Consulte o artigo [Escolher como gerir dispositivos](/intune/get-started/choose-how-to-manage-devices) para obter ajuda para decidir o método a utilizar.|
-|Intune Software Publisher|Uma ferramenta que utiliza para [definir as aplicações que pretende implementar e carregá-las para o seu espaço de armazenamento na nuvem](/intune/deploy-use/add-apps).|
+|Intune Software Publisher|Uma ferramenta que utiliza para [definir as aplicações que pretende implementar e carregá-las para o seu espaço de armazenamento na cloud](/intune/deploy-use/add-apps).|
 |Inventário|Utilize-o para ver o [hardware e o software instalado](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) nos dispositivos que gere.|
 
 ## <a name="k"></a>K
@@ -95,7 +97,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Browser Gerido|Uma [aplicação de navegação na Web](/intune/deploy-use/manage-internet-access-using-managed-browser-policies) que pode implementar na sua organização ao utilizar o Microsoft Intune. Uma política de browser gerido configura uma lista de permissões ou uma lista de bloqueios que restringe os sites que os utilizadores do browser gerido podem visitar.|
 |Gestão de aplicações móveis|A [Gestão de aplicações móveis (MAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) permite-lhe publicar, efetuar push, configurar, proteger, monitorizar e atualizar aplicações móveis para os seus utilizadores.
-|Gestão de dispositivos móveis|A [gestão de dispositivos móveis (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) permite-lhe inscrever dispositivos no Intune para que possa aprovisionar, configurar, monitorizar e executar ações nesses dispositivos. 
+|Gestão de dispositivos móveis|A [gestão de dispositivos móveis (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) permite-lhe inscrever dispositivos no Intune para que possa aprovisionar, configurar, monitorizar e executar ações nesses dispositivos.
 |Autoridade MDM|A [autoridade MDM](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) define o serviço de gestão que tem permissão para gerir um conjunto de dispositivos. As opções para a autoridade de MDM incluem o Intune autónomo e o Configuration Manager com o Intune.|
 |Política de aprovisionamento de aplicações móveis|Uma política de iOS que o ajuda a garantir que os [perfis de aprovisionamento](/intune/deploy-use/ios-mobile-app-provisioning-profiles) que implementa para aplicações iOS não expiram.|
 |Política de configuração de aplicações móveis|Uma política de iOS que é utilizada para [fornecer definições a aplicações compatíveis com iOS](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) quando estas são executadas (por exemplo, um nome de empresa ou endereço de servidor).|
@@ -146,9 +148,6 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 
 
 
-
-
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

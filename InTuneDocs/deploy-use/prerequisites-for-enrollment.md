@@ -1,5 +1,5 @@
 ---
-title: "Pré-requisitos para a inscrição de dispositivos móveis | Microsoft Intune"
+title: "Pré-requisitos para a inscrição de dispositivos móveis | Documentos da Microsoft"
 description: "Configurar os pré-requisitos da gestão de dispositivos móveis (MDM) e preparar-se para inscrever sistemas operativos diferentes."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Pré-requisitos para a gestão de dispositivos móveis no Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Para permitir que os seus funcionários inscrevam os respetivos dispositivos móveis no Intune, é necessário aplicar os passos que se seguem. Estes passos também são necessários para gerir dispositivos pertencentes à empresa.
 
 |Passos|Detalhes|  
@@ -111,7 +114,7 @@ Depois de guardar as alterações, pode utilizar as ligações fornecidas na par
 
 ## <a name="step-5-assign-user-licenses"></a>Passo 5: atribuir licenças de utilizador
 
-Para adicionar manualmente utilizadores baseados na nuvem e atribuir licenças às contas de utilizador baseadas na nuvem e às contas sincronizadas do Active Directory no local com o Azure Active Directory (Azure AD), é utilizado o **portal de gestão do Office 365**. Pode [sincronizar utilizadores no local com o Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças às contas de utilizador baseadas na cloud e às contas sincronizadas do Active Directory no local com o Azure Active Directory (Azure AD), é utilizado o **portal de gestão do Office 365**. Pode [sincronizar utilizadores no local com o Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Inicie sessão no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx) com as suas credenciais de administrador de inquilino.
 

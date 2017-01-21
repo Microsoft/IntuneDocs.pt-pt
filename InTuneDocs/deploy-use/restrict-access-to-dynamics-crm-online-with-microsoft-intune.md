@@ -1,5 +1,5 @@
 ---
-title: Restringir o acesso ao Dynamics CRM Online | Microsoft Intune
+title: Restringir o acesso ao Dynamics CRM Online | Documentos da Microsoft
 description: Proteger e controlar o acesso ao Dynamics CRM online com acesso condicional.
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: abbfeb493d9e85eaa601b127d618996f2e01a01d
 
 
 ---
@@ -42,8 +42,8 @@ O dispositivo que necessita de acesso ao Dynamics CRM tem de:
 O estado do dispositivo é armazenado no Azure Active Directory, o qual concede ou bloqueia o acesso, com base nas condições que especificar.
 
 Se não for cumprida uma condição, é apresentada ao utilizador uma das duas mensagens seguintes quando iniciar sessão:
-* Se o dispositivo não estiver inscrito no Intune ou registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação do Portal da Empresa e inscrevê-la.
-* Se o dispositivo não for compatível, será apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do Microsoft Intune ou para a aplicação do Portal da Empresa, onde pode obter informações sobre o problema e como resolvê-lo.
+* Se o dispositivo não estiver inscrito no Intune ou registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa e inscrevê-la.
+* Se o dispositivo não for compatível, será apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do Microsoft Intune ou para a aplicação Portal da Empresa, onde pode obter informações sobre o problema e como resolvê-lo.
 
 ## <a name="configure-conditional-access-for-dynamics-crm-online"></a>Configurar o acesso condicional para o Dynamics CRM Online  
 ### <a name="step-1-configure-active-directory-security-groups"></a>Passo 1: configurar grupos de segurança do Active Directory
@@ -91,7 +91,7 @@ Escolha qualquer grupo de dispositivos móveis e, em seguida, no separador **Dis
 * **Dispositivos que não são compatíveis**. Estes dispositivos são bloqueados no Dynamics CRM.
 * **Dispositivos registados com o AAD e que são compatíveis**. Estes dispositivos podem aceder ao Dynamics CRM.
 
-##  <a name="next-steps"></a>Próximos passos
+##  <a name="next-steps"></a>Passos seguintes
 * [Acesso restrito ao Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
 * [Acesso restrito ao Exchange no local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)

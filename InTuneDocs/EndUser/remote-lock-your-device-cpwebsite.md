@@ -1,9 +1,9 @@
 ---
-title: Bloquear dispositivos remotamente a partir do Portal da Empresa | Microsoft Intune
+title: Bloquear dispositivos remotamente a partir do Portal da Empresa | Documentos da Microsoft
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 04c7ae7df65a0873e794420c1880aa901aa230b6
 
 
 ---
 
 
-# Bloquear dispositivos remotamente a partir do Portal da Empresa
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Bloquear dispositivos remotamente a partir do Portal da Empresa
 
 Se tiver perdido o seu dispositivo ou se este for roubado, pode bloqueá-lo através da opção Bloqueio Remoto do [site do Portal da Empresa](http://portal.manage.microsoft.com). O Bloqueio Remoto funciona para os seguintes tipos de dispositivos:
 
@@ -31,7 +31,7 @@ Plataforma  |Detalhes do suporte
 Android | Suportado       
 iOS | Suportado
 Windows 10 Mobile | Suportado apenas se o telemóvel tiver um código de acesso definido     
-Windows 10 Desktop | Não suportado  
+Computadores com o Windows 10 | Não suportado  
 Windows Phone 8.1 | Suportado apenas se o telemóvel tiver um código de acesso definido
 PC (Windows 8.0 e anterior) | Não suportado       
 PC (Windows 8.1) | Não suportado
@@ -59,11 +59,11 @@ Para bloquear o seu dispositivo com o Bloqueio Remoto:
 
     Se uma repetição não funcionar, contacte o administrador de TI para obter ajuda. Se encontrar o seu dispositivo e quiser desbloqueá-lo depois de utilizar o Bloqueio Remoto, basta introduzir o código de acesso.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Como os utilizadores de dispositivos Windows obtêm as aplicações | Microsoft Intune"
+title: "Como os utilizadores de dispositivos Windows obtêm as aplicações | Documentos da Microsoft"
 description: "Métodos para disponibilizar aplicações Windows aos utilizadores"
 keywords: 
 author: barlanmsft
@@ -14,14 +14,16 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e9c6add00356cbea0e86a1a5597813ba9b2811c4
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6e295c5df6ec52d3c106fe934d05f10dbc2a3e1f
 
 
 ---
 
 
 # <a name="how-your-windows-users-get-their-apps"></a>Como os utilizadores de dispositivos Windows obtêm as aplicações
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Utilize estas informações para saber como e onde é que os seus utilizadores podem obter as aplicações que distribuir através do Microsoft Intune.
 

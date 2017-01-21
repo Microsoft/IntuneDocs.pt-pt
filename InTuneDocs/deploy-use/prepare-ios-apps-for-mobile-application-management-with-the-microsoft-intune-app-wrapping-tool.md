@@ -1,5 +1,5 @@
 ---
-title: "Encapsular aplicações iOS com a Ferramenta de Encapsulamento de Aplicações do Intune | Microsoft Intune"
+title: "Encapsular aplicações iOS com a Ferramenta de Encapsulamento de Aplicações do Intune | Documentos da Microsoft"
 description: "Utilize as informações neste tópico para saber como pode encapsular as suas aplicações iOS sem alterar os próprios códigos. Prepare as aplicações para que possa aplicar políticas de gestão de aplicações móveis."
 keywords: 
 author: mtillman
@@ -14,34 +14,154 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Intune
 
-Utilize a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS para alterar o comportamento das aplicações iOS internas ao ativar as funcionalidades de proteção da aplicação Intune sem alterar o código da aplicação em si.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-A ferramenta consiste numa aplicação da linha de comandos do macOS que cria um encapsulamento em torno de uma aplicação. Assim que uma aplicação é processada, pode alterar as funcionalidades da mesma com [políticas de gestão de aplicações móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) do Intune implementadas pelo administrador de TI.
+Utilize a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS para ativar as políticas de proteção da aplicação Intune para aplicações iOS internas sem alterar o código da aplicação em si.
+
+A ferramenta consiste numa aplicação da linha de comandos do macOS que cria um encapsulamento em torno de uma aplicação. Depois de uma aplicação ser processada, pode alterar a funcionalidade da aplicação ao implementar [políticas de proteção de aplicações](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) à mesma.
 
 Para transferir a ferramenta, veja [Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Cumprir os pré-requisitos da Ferramenta de Encapsulamento de Aplicações
-Veja a mensagem do blogue [Como obter pré-requisitos para a Ferramenta de Encapsulamento de Aplicações do Intune para iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) para saber mais sobre como obter os pré-requisitos.
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Pré-requisitos gerais da Ferramenta de Encapsulamento de Aplicações
 
-|Requisito|Mais informações|
-|---------------|--------------------------------|
-|Sistema operativo e conjunto de ferramentas suportados | Tem de executar a Ferramenta de Encapsulamento de Aplicações num computador macOS que execute o OS X 10.8.5 ou posterior e tenha a versão 5 ou posterior do conjunto de ferramentas do XCode instalada.|
-|Certificado de assinatura e perfil de aprovisionamento | Precisa de ter um perfil de aprovisionamento e um certificado de assinatura da Apple. Veja a [documentação para programadores Apple](https://developer.apple.com/).|
-|Processar uma aplicação com a Ferramenta de Encapsulamento de Aplicações  |As aplicações têm de ser programadas e assinadas pela sua empresa ou por um fabricante de software independente (ISV). Não pode utilizar esta ferramenta para processar aplicações da Apple Store. As aplicações têm de ter sido escritas para o iOS 8.0 ou posterior. As aplicações têm de estar no formato PIE (Position Independent Executable). Para obter mais informações sobre o formato PIE, consulte a sua documentação de programador da Apple. Por fim, a aplicação tem de ter a extensão **.app** ou **.ipa**.|
-|Aplicações que a ferramenta não consegue processar | Aplicações encriptadas, aplicações não assinadas e aplicações com atributos de ficheiro expandidos.|
-|Definir a elegibilidade para a sua aplicação|Antes de encapsular a aplicação, tem de definir a elegibilidade, que fornece as capacidades e permissões adicionais de aplicações além das normalmente concedidas. Consulte [Definição de elegibilidade da aplicação](#setting-app-entitlements) para obter instruções.|
+Antes de executar a Ferramenta de Encapsulamento de Aplicações, terá de cumprir alguns pré-requisitos gerais:
 
-## <a name="install-the-app-wrapping-tool"></a>instalar a Ferramenta de Encapsulamento de Aplicações
+* Transfira a [Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) a partir do GitHub.
+
+* Ter um computador macOS que execute o OS X 10.8.5 ou posterior e tenha a versão 5 ou posterior do conjunto de ferramentas do Xcode instalada.
+
+* A aplicação iOS de entrada tem de ser programada e assinada pela sua empresa ou por um fabricante de software independente (ISV).
+
+  * O ficheiro de aplicação de entrada tem de ter a extensão **.ipa** ou **.app**.
+
+  * A aplicação de entrada tem de estar compilada para o iOS 8.0. ou posterior.
+
+  * A aplicação de entrada não pode ser encriptada.
+
+  * A aplicação de entrada não pode ter atributos de ficheiro expandidos.
+
+  * A aplicação de entrada tem de ter elegibilidades definidas antes de ser processada pela Ferramenta de Encapsulamento de Aplicações do Intune. As [elegibilidades](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) fornecem as capacidades e permissões adicionais de aplicações além das normalmente concedidas. Consulte [Definição de elegibilidade da aplicação](#setting-app-entitlements) para obter instruções.
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Pré-requisitos para Programadores Apple da Ferramenta de Encapsulamento de Aplicações
+
+
+Para distribuir aplicações encapsuladas exclusivamente para os utilizadores da sua organização, precisa de uma conta do [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) e várias entidades de assinatura de aplicações ligadas à sua conta de Programador Apple.
+
+Para saber mais sobre a distribuição de aplicações iOS internamente para os utilizadores da sua organização, leia o guia oficial para [Distribuir Aplicações do Apple Developer Enterprise Program](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1).
+
+É necessário o seguinte para distribuir aplicações encapsuladas pelo Intune:
+
+* Uma conta de programador do Apple Developer Enterprise Program.
+
+* Um certificado de assinatura de distribuição interna e ad-hoc com um Identificador de Equipa válido.
+
+  * É necessário o hash SHA1 do certificado de assinatura como um parâmetro para a Ferramenta de Encapsulamento de Aplicações do Intune.
+
+
+* Um perfil de aprovisionamento de distribuição interna.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Passos para criar uma conta do Apple Developer Enterprise
+1. Aceda ao [site do Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
+
+2. Na parte superior direita da página, clique em **Inscrever**.
+
+3. Leia a lista de verificação sobre o que precisa para se inscrever. Clique em **Iniciar Inscrição** na parte inferior da página.
+
+4. **Inicie sessão** com o ID Apple da sua organização. Se não tiver um, clique em **Criar ID Apple**.
+
+5. Selecione o **Tipo de Entidade** e clique em **Continuar**.
+
+6. Preencha o formulário com as informações da sua organização. Clique em **Continuar**. Neste passo, a Apple contacta-o para verificar se está autorizado a inscrever a sua organização.
+
+8. Após a verificação, clique em **Aceitar Licenciar**.
+
+9. Depois de aceitar licenciar, conclua ao **comprar e ativar o programa**.
+
+10. Se for o agente da equipa (a pessoa associada ao Apple Developer Enterprise Program em nome da sua organização), crie primeiro a equipa ao convidar os membros de equipa e atribuir funções. Para saber como gerir a sua equipa, leia a documentação da Apple em [Gerir a Sua Equipa de Conta de Programador](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1).
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Passos para criar um certificado de assinatura da Apple
+
+1. Aceda ao [portal de Programador da Apple](https://developer.apple.com/).
+
+2. Na parte superior direita da página, clique em **Conta**.
+
+3. **Inicie sessão** com o seu ID Apple organizacional.
+
+4. Clique em **Certificados, IDs e Perfis**.
+
+  ![Portal de Programador da Apple](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Clique no ![sinal de adição do portal de Programador da Apple](../media/app-wrapper/iOS-signing-cert-2.png) no canto superior direito para adicionar um certificado iOS.
+
+6. Opte por criar um certificado **Interno e Ad-Hoc** em **Produção**.
+
+  ![Selecionar o certificado Interno e Ad-Hoc](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. Clique em **Seguinte** na parte inferior da página.
+
+8. Leia as instruções sobre a criação de um **Pedido de Assinatura de Certificado (CSR)** através da aplicação Acesso a Porta-chaves no seu computador macOS.
+
+  ![Leia as instruções para criar um CSR](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Siga as instruções acima para criar um Pedido de Assinatura de Certificado. No seu computador macOS, inicie a aplicação **Acesso a Porta-chaves**.
+
+10. No menu do macOS na parte superior do ecrã, aceda a **Acesso a Porta-chaves > Assistente de Certificados > Pedir um Certificado a Partir de uma Autoridade de Certificação**.  
+
+  ![Pedir um certificado a partir de uma Autoridade de Certificação no Acesso a Porta-chaves](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Siga as instruções do site de programador da Apple acima sobre como criar um ficheiro CSR. Guarde o ficheiro CSR no seu computador macOS.
+
+  ![Pedir um certificado a partir de uma Autoridade de Certificação no Acesso a Porta-chaves](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Regresse ao site de programador da Apple. Clique em **Continuar**. Em seguida, carregue o ficheiro CSR.
+
+13. A Apple gera o certificado de assinatura. Transfira e guarde-o numa localização fácil de memorizar no seu computador macOS.
+
+  ![Transferir o certificado de assinatura](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Faça duplo clique no ficheiro de certificado que acabou de transferir para adicionar o certificado a um porta-chaves.
+
+15. Abra novamente o **Acesso a Porta-chaves**. Localize o certificado ao procurar **"iPhone"** na barra de pesquisa no canto superior direito na janela do Acesso a Porta-chaves. Clique com o botão direito do rato no item para aceder ao menu e clique em **Obter Informações**.
+
+  ![Adicionar o certificado a um porta-chaves](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. É apresentada uma janela informativa. Desloque para baixo e procure a etiqueta **Impressões Digitais**. Copie a cadeia **SHA1** a utilizar como o parâmetro -c para a Ferramenta de Encapsulamento de Aplicações.
+
+  ![Adicionar o certificado a um porta-chaves](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Passos para criar um perfil de Aprovisionamento de Distribuição Interna
+
+1. Volte ao [portal de contas de Programador da Apple](https://developer.apple.com/account/) e **inicie sessão** com o seu ID Apple organizacional.
+
+2. Clique em **Certificados, IDs e Perfis**.
+
+3. Clique no ![sinal de adição do portal de Programador da Apple](../media/app-wrapper/iOS-signing-cert-2.png) no canto superior direito para adicionar um perfil de aprovisionamento do iOS.
+
+4. Opte por criar um perfil de aprovisionamento **Interno** em **Distribuição**.
+
+  ![Selecionar o perfil de aprovisionamento interno](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Clique em **Continuar**. Certifique-se de que associa o certificado de assinatura gerado anteriormente ao perfil de aprovisionamento.
+
+6. Siga os passos para transferir o perfil (com a extensão .mobileprovision) para o seu computador macOS.
+
+7. Guarde o ficheiro numa localização fácil de memorizar. Este ficheiro será utilizado para o parâmetro -p quando utilizar a Ferramenta de Encapsulamento de Aplicações.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Transferir a Ferramenta de Encapsulamento de Aplicações
 
 1.  Transfira os ficheiros para a Ferramenta de Encapsulamento de Aplicações do [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) para um computador macOS.
 

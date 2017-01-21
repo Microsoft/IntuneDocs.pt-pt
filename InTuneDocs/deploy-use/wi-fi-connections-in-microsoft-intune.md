@@ -1,5 +1,5 @@
 ---
-title: "Ligações Wi-Fi | Microsoft Intune"
+title: "Ligações Wi-Fi | Documentos da Microsoft"
 description: "Utilize perfis Wi-Fi para ajudar os utilizadores a ligar às suas redes Wi-Fi."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurar dispositivos para ligar às suas redes Wi-Fi empresariais
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Utilize os perfis de Wi-Fi do Microsoft Intune para implementar definições de rede sem fios para utilizadores e dispositivos na sua organização. Quando implementa um perfil Wi-Fi, os seus utilizadores têm acesso ao seu Wi-Fi empresarial sem precisarem de configurá-lo.
 
@@ -47,7 +49,7 @@ Pode implementar perfis de Wi-Fi nas seguintes plataformas:
 
 -   Mac OS X 10.9 e posterior
 
-Para dispositivos com o sistema operativo Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro. Para obter mais detalhes, veja [Exportar ou importar um perfil de configuração de Wi-Fi para dispositivos Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
+Para dispositivos com o sistema operativo Windows 8.1 ou computadores com o Windows 10 ou Windows 10 Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro. Para obter mais detalhes, veja [Exportar ou importar um perfil de configuração de Wi-Fi para dispositivos Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -88,7 +90,7 @@ A nova política é apresentada no nó **Políticas de Configuração** da área
 
 ## <a name="export-or-import-a-wi-fi-configuration-profile-for-windows-devices"></a>Exportar ou importar um perfil de configuração de Wi-Fi para dispositivos Windows
 
-Para dispositivos com o sistema operativo Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro.
+Para dispositivos com o sistema operativo Windows 8.1 ou computadores com o Windows 10 ou Windows 10 Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro.
 
 ### <a name="export-a-wi-fi-profile"></a>Exportar um perfil de Wi-Fi
 No Windows, pode utilizar o utilitário **netsh wlan** para exportar um perfil de Wi-Fi existente para um ficheiro XML, que pode ser lido pelo Intune. Num computador Windows que já tenha o perfil Wi-Fi obrigatório instalado, siga estes passos:
@@ -109,7 +111,7 @@ Utilize a **Política de Importação de Wi-Fi do Windows** para importar um con
 
 2.  Configure uma política do tipo **Windows** &gt; **Política de Importação Wi-Fi (Windows 8.1 e posterior)**.
 
-    Esta política pode ser aplicada a dispositivos a executar sistemas operativos Windows 8.1 e Windows 10 Desktop e Mobile.
+    Esta política pode ser aplicada a dispositivos a executar sistemas operativos Windows 8.1 e computadores com o Windows 10 ou Windows 10 Mobile.
 
     Só pode criar e implementar uma política de importação de Wi-Fi do Windows *personalizada*. As definições recomendadas não estão disponíveis.
 
@@ -130,7 +132,7 @@ Utilize a **Política de Importação de Wi-Fi do Windows** para importar um con
 
 5.  Quando terminar, selecione **Guardar Política**.
 
-6.  A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política** .
+6.  A nova política é apresentada no nó **Políticas de Configuração** da área de trabalho **Política**.
 
 ## <a name="deploy-the-profile"></a>Implementar o perfil
 
@@ -142,7 +144,7 @@ Uma vez que um perfil é um tipo de política, utiliza a área de trabalho **Pol
 
     -   **Implementar a política**: selecione um ou mais grupos nos quais pretende implementar a política. Em seguida, escolha **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implementar a política**: clique em **Cancelar**.
+    -   **Para fechar a caixa de diálogo sem implementar a política**: clique em **Cancel**.
 
 
 A página **Descrição geral** da área de trabalho **Política** apresenta problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
@@ -181,6 +183,6 @@ Saiba como criar um perfil Wi-Fi com uma chave pré-partilhada em [Perfil Wi-Fi 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

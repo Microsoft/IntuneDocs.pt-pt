@@ -1,11 +1,11 @@
 ---
-title: "Definições de política do iOS | Microsoft Intune"
+title: "Definições de política do iOS | Documentos da Microsoft"
 description: "Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Definições de política do iOS no Microsoft Intune
 
-O Intune oferece uma variedade de definições gerais incorporadas que pode configurar nos dispositivos iOs. Além disso, pode utilizar a ferramenta Apple Configurator para criar definições personalizadas que não estão disponíveis no Intune.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+O Intune oferece uma variedade de definições gerais incorporadas que pode configurar nos dispositivos iOS. Além disso, pode utilizar a ferramenta Apple Configurator para criar definições personalizadas que não estão disponíveis no Intune.
 
 ## <a name="general-configuration-policy-settings"></a>Definições de política de configuração geral
 
@@ -71,19 +73,19 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir submissão de dados de diagnóstico**|Permitir ou impedir o dispositivo de submeter dados de diagnóstico para a Apple.|
 |**Permitir passbook quando bloqueado**|Permitir que o utilizador aceda à aplicação Passbook quando o dispositivo está bloqueado.|
 
-### <a name="cloud-settings-for-documents-and-data"></a>Definições da nuvem para documentos e dados
+### <a name="cloud-settings-for-documents-and-data"></a>Definições da cloud para documentos e dados
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|-------|
 |**Permitir cópia de segurança para iCloud**|Permitir ao utilizador realizar uma cópia de segurança do dispositivo para iCloud.|
 |**Permitir sincronização de documentos para iCloud**|Permitir a sincronização de documentos e pares chave-valor para o seu espaço de armazenamento do iCloud.|
-|**Permitir sincronização de Fluxo de Fotografias para iCloud**|Permitir a sincronização das fotografias no dispositivo com o iCloud.|
+|**Permitir sincronização de Fluxo de Fotografias para iCloud**|Permite aos utilizadores ativar **O Meu Fluxo de Fotografias** no respetivo dispositivo, o que permite que as fotografias sejam sincronizadas com o iCloud e disponibilizadas em todos os dispositivos dos utilizadores.|
 |**Exigir cópia de segurança encriptada**|Exigir que qualquer cópia de segurança seja encriptada.|
 |**Permitir que as aplicações geridas sincronizem dados para o serviço iCloud**|Permitir que as aplicações que gere com o Intune sincronizem dados para a conta do iCloud dos utilizadores.|
 |**Permitir que o Handoff continue as atividades noutro dispositivo**|Permitir ao utilizador continuar o trabalho que iniciaram num dispositivo iOS noutro dispositivo iOS ou Mac OS X.|
-|**Permitir Partilha de Fotografias em iCloud**|Permitir a utilização da funcionalidade de fluxo de fotografias partilhadas do iOS.|
-|**Permitir Fototeca em iCloud**|Permitir que o utilizador armazene fotografias em iCloud. Se for desativado, as fotografias já armazenadas em iCloud serão removidas.|
+|**Permitir Partilha de Fotografias em iCloud**|Definido como **Não** para desativar a **Partilha de Fotografias do iCloud** no dispositivo.|
+|**Permitir Fototeca em iCloud**|Se estiver definido como **Não**, desativa a utilização da biblioteca de fotografias do iCloud que permite aos utilizadores armazenar fotografias e vídeos na cloud.   Se isto estiver definido como **Não**, todas as fotografias que não tiverem sido completamente transferidas da Biblioteca de Fotografias do iCloud para o dispositivo serão removidas do mesmo.|
 
 ### <a name="application-settings-for-the-browser"></a>Definições da aplicação para o browser
 As definições aplicam-se ao iOS 8.0 e posterior.
@@ -173,6 +175,8 @@ Na lista **Aplicações Conformes &amp;Não Conformes**, especifique uma lista d
 |**Editar**|Editar nome, fabricante e URL da aplicação selecionada.|
 |**Eliminar**|Eliminar a aplicação selecionada da lista.|
 
+As políticas que contêm as definições de aplicações conformes e não conformes têm de ser implementadas em grupos de utilizadores.
+
 ### <a name="kiosk-mode-settings"></a>Definições do modo de local público
 
 |Nome da definição|Detalhes|
@@ -187,13 +191,13 @@ Na lista **Aplicações Conformes &amp;Não Conformes**, especifique uma lista d
 |**Ativar o áudio mono**|Ativar ou desativar a definição de acessibilidade **Áudio Mono**.|
 |**Ativar o VoiceOver**|Ativar ou desativar a definição de acessibilidade **VoiceOver**, que lê em voz alta o texto no ecrã do dispositivo.|
 |**Ativar ajustes do VoiceOver**|Ativar ou desativar os ajustes do VoiceOver, o que permite ao utilizador ajustar a função VoiceOver (por exemplo, a rapidez de leitura em voz alta do texto no ecrã).|
-|**Ativar o zoom**|Ativar ou desativar a definição de acessibilidade **Zoom** , o que permite ao utilizador tocar para aplicar zoom no ecrã do dispositivo.|
+|**Ativar o zoom**|Ativar ou desativar a definição de acessibilidade **Zoom**, o que permite ao utilizador tocar para aplicar zoom no ecrã do dispositivo.|
 |**Ativar os ajustes do zoom**|Ativar ou desativar os ajustes do Zoom, o que permite ao utilizador ajustar a função Zoom.|
 |**Ativar a funcionalidade inverter cores**|Ativar ou desativar a definição de acessibilidade **Inverter cores**, que ajusta o ecrã para ajudar os utilizadores com deficiências visuais.|
 |**Ativar os ajustes da funcionalidade inverter cores**|Ativar ou desativar a funcionalidade de inverter ajustes de cores, o que permite ao utilizador ajustar a função Inverter Cores.|
-|**Ativar o AssistiveTouch**|Ativar ou desativar a definição de acessibilidade **AssistiveTouch** , que ajuda o utilizador a executar gestos no ecrã que lhes poderão ser difíceis de efetuar.|
+|**Ativar o AssistiveTouch**|Ativar ou desativar a definição de acessibilidade **AssistiveTouch**, que ajuda o utilizador a executar gestos no ecrã que lhes poderão ser difíceis de efetuar.|
 |**Ativar os ajustes do AssistiveTouch**|Ativar ou desativar os ajustes do AssistiveTouch, o que permite ao utilizador ajustar a função AssistiveTouch.|
-|**Ativar a funcionalidade Seleção de voz**|Ativar ou desativar a definição de acessibilidade **Enunciar Seleção** , que lê em voz alta o texto que o utilizador seleciona.|
+|**Ativar a funcionalidade Seleção de voz**|Ativar ou desativar a definição de acessibilidade **Enunciar Seleção**, que lê em voz alta o texto que o utilizador seleciona.|
 > [!NOTE]
 > As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
 >
@@ -353,7 +357,7 @@ Weather,Apple,com.apple.weather
 
 ## <a name="custom-policy-settings"></a>Definições de política personalizada
 
-Utilizar a **política personalizada do iOs** do Itune da Microsoft para implementar as definições que criou utilizando a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) para dispositivos iOS. Esta ferramenta permite criar muitas definições que controlam o funcionamento destes dispositivos e exportá-las para um perfil de configuração. Em seguida, pode importar este perfil de configuração para uma política personalizada do iOS do Intune e implementar as definições em utilizadores e dispositivos da sua organização.
+Utilizar a **política personalizada do iOS** do Microsoft Intune para implementar as definições que criou utilizando a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) para dispositivos iOS. Esta ferramenta permite criar muitas definições que controlam o funcionamento destes dispositivos e exportá-las para um perfil de configuração. Em seguida, pode importar este perfil de configuração para uma política personalizada do iOS do Intune e implementar as definições em utilizadores e dispositivos da sua organização.
 
 Esta capacidade permite-lhe a implementação de definições do iOS que não são configuráveis com as políticas de configuração gerais do Intune.
 
@@ -383,6 +387,6 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Gerir definições de dispositivos com políticas | Microsoft Intune"
+title: "Gerir definições de dispositivos com políticas | Documentos da Microsoft"
 description: "Utilize o Intune para criar e implementar políticas que controlam as definições e funcionalidades em dispositivos que gere."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
 
 
 ---
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As *políticas* do Microsoft Intune são grupos de definições que controlam funcionalidades em dispositivos móveis e computadores. As políticas são criadas com modelos que contêm definições recomendadas ou personalizadas e, depois, implementadas em grupos de dispositivos ou de utilizadores.
 
 ## <a name="types-of-policies"></a>Tipos de políticas
@@ -63,7 +66,7 @@ Para obter uma lista completa das políticas do Intune, consulte [Referência de
     - [Definições para dispositivos Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-    - [Definições para dispositivos móveis e computadores com Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
+    - [Definições para dispositivos móveis e computadores com o Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Windows Team](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Definições para a atualização da edição Windows](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Definições para dispositivos Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
@@ -86,11 +89,11 @@ Depois de criar uma política, normalmente, irá querer implementá-la num ou ma
 
 1.  Na área de trabalho **Policy (Política)**, selecione a política que pretende implementar e escolha **Manage Deployment (Gerir a Implementação)**.
 
-2.  Na caixa de diálogo **Manage Deployment (Gerir a Implementação)**, para:
+2.  Na caixa de diálogo **Manage Deployment**, para:
 
     -   Para implementar a política, selecione um ou mais grupos nos quais pretende implementá-la e, em seguida, escolha **Add (Adicionar)** &gt; **OK**.
 
-    -   Para fechar a caixa de diálogo sem implementar a política, escolha **Cancel (Cancelar)**.
+    -   Para fechar a caixa de diálogo sem implementar a política, escolha **Cancel**.
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
@@ -100,7 +103,7 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 
 2.  Selecione uma das seguintes ações:
 
-- **Edirt (Editar)**: abra as propriedades da política selecionada para poder fazer alterações.
+- **Edit (Editar)**: abra as propriedades da política selecionada para poder fazer alterações.
 - **Delete (Eliminar)** – elimine a política selecionada.<br>Quando elimina uma política, esta é removida de todos os grupos nos quais estava implementada.
 - **Manage Deployment (Gerir a Implementação)** – selecione o grupo no qual pretende implementar a política e escolha **Add (Adicionar)**.
 
@@ -211,6 +214,6 @@ Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubles
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

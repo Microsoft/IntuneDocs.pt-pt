@@ -1,11 +1,11 @@
 ---
-title: "Resolver problemas de inscrição de dispositivos| Microsoft Intune"
+title: "Resolver problemas de inscrição de dispositivos| Documentos da Microsoft"
 description: "Sugestões para resolver problemas de inscrição de dispositivos."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,22 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
+ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
 
 
 ---
 
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
-Este tópico fornece sugestões para resolver problemas de inscrição de dispositivos. Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
+Este tópico fornece sugestões para resolver problemas de inscrição de dispositivos. Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Passos iniciais de resolução de problemas
 
 Antes de iniciar a resolução de problemas, certifique-se de que configurou o Intune corretamente para permitir a inscrição. Pode ler sobre estes requisitos de configuração em:
 
--   [Preparar a inscrição de dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [Preparar a inscrição de dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -   [Configurar a gestão de dispositivos iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Configurar a gestão do Windows Phone e Windows 10 Mobile com o Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Configurar a gestão de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ Estes problemas podem ocorrer em todas as plataformas de dispositivos.
 
 2.  Verifique na consola de administração do Intune em Administração\Gestão de Dispositivos Móveis\Regras de Inscrição se o limite de inscrição de dispositivos está definido como 15.
 
-Os utilizadores de dispositivos móveis podem eliminar dispositivos no seguinte URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Os administradores podem eliminar dispositivos no portal do Azure Active Directory.
 
@@ -86,7 +86,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 >
 > A inscrição de uma conta de utilizador adicionada ao grupo Gestores de Inscrição de Dispositivos não pode ser concluída quando a política de Acesso Condicional é imposta para o início de sessão desse utilizador específico.
 
-### <a name="company-portal-emporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
+### <a name="company-portal-temporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
 **Problema:** Um utilizador recebe um erro **Portal da Empresa Temporariamente Indisponível** no dispositivo.
 
 **Resolução:**
@@ -122,7 +122,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
     4.  Ative novamente o DirSync e verifique se o utilizador está agora sincronizado corretamente.
 
-3.  Num cenário em que esteja a utilizar o System Center Configuration Manager com o Intune, verifique se o utilizador tem um ID de Utilizador de Nuvem válido:
+3.  Num cenário em que esteja a utilizar o System Center Configuration Manager com o Intune, verifique se o utilizador tem um ID de Utilizador de Cloud válido:
 
     1.  Abra o SQL Management Studio.
 
@@ -163,10 +163,10 @@ A Samsung confirmou que o software Samsung Smart Manager, incluído em determina
 
 **Resolução n.º 1:**
 
-Informe os utilizadores para iniciarem manualmente a aplicação do Portal da Empresa. Depois de a aplicação reiniciar, o dispositivo faz o registo com o serviço do Intune.
+Informe os utilizadores para iniciarem manualmente a aplicação Portal da Empresa. Depois de a aplicação reiniciar, o dispositivo faz o registo com o serviço do Intune.
 
 > [!IMPORTANT]
-> Abrir a aplicação do Portal da Empresa manualmente é uma solução temporária, uma vez que o Samsung Smart Manager poderá desativar novamente a aplicação do Portal da Empresa.
+> Abrir a aplicação Portal da Empresa manualmente é uma solução temporária, uma vez que o Samsung Smart Manager poderá desativar novamente a aplicação Portal da Empresa.
 
 **Resolução n.º 2:**
 
@@ -174,7 +174,7 @@ Informe os utilizadores para tentarem atualizar para Android 6.0. O problema da 
 
 **Resolução n.º 3:**
 
-Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam estes passos para fazer com o que o Smart Manager exclua a aplicação do Portal da Empresa:
+Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam estes passos para fazer com o que o Smart Manager exclua a aplicação Portal da Empresa:
 
 1. Inicie a aplicação Smart Manager no dispositivo.
 
@@ -317,9 +317,9 @@ Se o certificado de Servidor estiver corretamente instalado, verá todas as marc
 
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de inscrição do iOS
-É disponibilizada uma lista de outros erros de inscrição do iOS na documentação do utilizador do dispositivo, em [ou see errors while trying to enroll your device in Intune (Obtém erros quando tenta inscrever o dispositivo no Intune)](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+É disponibilizada uma lista de outros erros de inscrição do iOS na documentação do utilizador do dispositivo, em [You see errors while trying to enroll your device in Intune (Obtém erros quando tenta inscrever o dispositivo no Intune)](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
-## <a name="pc-issues"></a>Problemas do PC
+## <a name="pc--issues"></a>Problemas do PC
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
 **Problema:** A inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
@@ -373,6 +373,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

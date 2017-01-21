@@ -1,5 +1,5 @@
 ---
-title: "Acesso condicional ao O365 com base na aplicação| Microsoft Intune"
+title: "Acesso condicional ao Office 365 com base na aplicação| Documentos da Microsoft"
 description: "Compreenda os conceitos de como o acesso condicional para MAM pode ajudar a controlar as aplicações que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Permitir aplicações móveis que suportem políticas de MAM do Intune para aceder aos serviços do Office 365
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [As políticas de gestão de aplicações móveis (MAM) do Intune](protect-apps-and-data-with-microsoft-intune.md) ajudam a proteger os dados da sua empresa em dispositivos que estão inscritos para gestão no Intune. Também pode utilizar políticas de MAM em **dispositivos que sejam propriedade de funcionários e não estejam inscritos para gestão no Intune**.  Neste caso, apesar de não gerir o dispositivo, ainda precisa de garantir que os recursos e os dados da sua empresa estão protegidos. Ao utilizar acesso condicional para MAM, pode criar uma política para permitir que apenas as aplicações móveis que suportam políticas de MAM do Intune acedam a serviços do O365, como o Exchange Online.
 
 Por exemplo, ao permitir que apenas a **aplicação Microsoft Outlook** aceda ao Exchange Online, pode **bloquear as aplicações de correio incorporadas no iOS e Android**, que não têm a proteção de dados das políticas de MAM do Intune para obter e-mails do **Exchange Online**.
@@ -43,7 +46,7 @@ Descrição das abreviações utilizadas nos diagramas:
 Para conhecer a experiência de utilizador com uma aplicação com políticas de acesso condicional para MAM, consulte [O que esperar ao utilizar uma aplicação com acesso condicional para MAM](use-apps-with-mam-ca.md).
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Criar uma Política do Exchange Online para aplicações de MAM](mam-ca-for-exchange-online.md)
 
 [Bloquear aplicações que não tenham autenticação moderna](block-apps-with-no-modern-authentication.md)

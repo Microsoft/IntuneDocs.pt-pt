@@ -1,11 +1,11 @@
 ---
-title: "Adicionar aplicações | Microsoft Intune"
+title: "Adicionar aplicações | Documentos da Microsoft"
 description: "Antes de começar a implementar aplicações com o Intune, familiarize-se com os conceitos apresentados neste tópico."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Adicionar aplicações com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de iniciar a implementação de aplicações com o Microsoft Intune, familiarize-se com os conceitos apresentados neste tópico. Estes conceitos irão ajudá-lo a compreender que aplicações pode implementar em que plataforma. Também podem ajudá-lo a compreender os pré-requisitos que devem ser cumpridos antes de implementar as aplicações.
 
 ## <a name="app-types-that-you-can-deploy"></a>Tipos de aplicações que pode implementar
@@ -35,16 +38,16 @@ Antes de iniciar a implementação de aplicações com o Microsoft Intune, famil
 |**Pacote de aplicações do Windows Phone (&#42;.xap, .appx, .appxbundle)**|Para implementar aplicações, precisará de um certificado de assinatura de código de dispositivos móveis empresariais. Para obter detalhes, consulte [Configurar a gestão do Windows Phone com o Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
 |**Pacote de aplicações do Windows (.appx, .appxbundle)**|Para implementar aplicações, precisará de um certificado de assinatura de código de dispositivos móveis empresariais. Para obter detalhes, consulte [Configurar a gestão de dispositivos Windows com o Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows Installer através de MDM (&#42;.msi)**|Utiliza esta aplicação para criar e implementar aplicações baseadas no Windows Installer em PCs inscritos com o Windows 10. Estes PCs são geridos através da gestão de dispositivos móveis (MDM).<br /><br />Só pode carregar um único ficheiro com a extensão .msi.<br><br>O código de produto do ficheiro e a versão do produto são utilizados para deteção da aplicação.<br><br>Será utilizado o comportamento de reinício predefinido da aplicação. O Intune não controla este procedimento.<br><br>Serão instalados pacotes MSI por utilizador para um único utilizador.<br><br>Serão instalados pacotes MSI por máquina para todos os utilizadores do dispositivo.<br><br>Atualmente, os pacotes MSI de modo duplo são instalados apenas para todos os utilizadores do dispositivo.<br><br>As atualizações de aplicações são suportadas quando o código de produto MSI de cada versão for igual.<br>
-Todos os tipos de aplicações de instalador de software são carregados para o seu espaço de armazenamento na nuvem.
+Todos os tipos de aplicações de instalador de software são carregados para o seu espaço de armazenamento na cloud.
 
 ### <a name="external-link"></a>**Ligação Externa**
 Utilizar uma ligação externa quando tiver:
 - Um URL que permita aos utilizadores transferir uma aplicação a partir de uma loja de aplicações.
 - Uma ligação para uma aplicação baseada na Web executada a partir do browser.
 
-As aplicações baseadas em ligações externas não são armazenadas no seu espaço de armazenamento na nuvem do Intune.
+As aplicações baseadas em ligações externas não são armazenadas no seu espaço de armazenamento na cloud do Intune.
 ### <a name="managed-ios-app-from-the-app-store"></a>**Aplicação iOS gerida da loja de aplicações**
-Pode utilizar aplicações iOS geridas para gerir e implementar aplicações iOS gratuitas a partir da loja de aplicações. Também pode utilizar aplicações iOS geridas para associar [políticas de gestão de aplicações móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicações compatíveis](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e rever o respetivo estado na consola do administrador.<br /><br />As aplicações iOS geridas não são armazenadas no seu espaço de armazenamento na nuvem do Intune.
+Pode utilizar aplicações iOS geridas para gerir e implementar aplicações iOS gratuitas a partir da loja de aplicações. Também pode utilizar aplicações iOS geridas para associar [políticas de gestão de aplicações móveis](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicações compatíveis](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e rever o respetivo estado na consola do administrador.<br /><br />As aplicações iOS geridas não são armazenadas no seu espaço de armazenamento na cloud do Intune.
 
 > [!TIP]
 > As opções para dispositivos móveis só estão disponíveis quando [definir a autoridade MDM](prerequisites-for-enrollment.md) para o Intune.
@@ -52,17 +55,17 @@ Pode utilizar aplicações iOS geridas para gerir e implementar aplicações iOS
 ## <a name="intune-software-publisher"></a>Intune Software Publisher
 O Microsoft Intune Software Publisher é iniciado quando adiciona ou modifica aplicações a partir da consola do administrador do Intune. A partir do publicador, pode selecionar e configurar um tipo de instalador de software que irá permitir:
 
-- Carregar aplicações (programas para computadores ou aplicações para dispositivos móveis) a guardar no armazenamento na nuvem do Intune.
+- Carregar aplicações (programas para computadores ou aplicações para dispositivos móveis) a guardar no armazenamento na cloud do Intune.
 - Ligar a uma loja online ou aplicação Web.
 
 Antes de começar a utilizar o Software Publisher, tem de instalar a versão completa do [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Após a instalação, poderá ser necessário reiniciar o computador para que o Software Publisher seja aberto corretamente.
 
-## <a name="cloud-storage-space"></a>Espaço de armazenamento na nuvem
-Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na nuvem do Microsoft Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na nuvem, o qual é utilizado para armazenar aplicações e atualizações geridas. A subscrição completa inclui 20 GB de espaço de armazenamento.
+## <a name="cloud-storage-space"></a>Espaço de armazenamento na cloud
+Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na cloud do Microsoft Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na cloud, o qual é utilizado para armazenar aplicações e atualizações geridas. A subscrição completa inclui 20 GB de espaço de armazenamento.
 
 Pode ver quanto espaço está a utilizar no nó **Utilização do Armazenamento** da área de trabalho **Administração**.
 
-Requisitos de espaço de armazenamento na nuvem:
+Requisitos de espaço de armazenamento na cloud:
 
 -   Todos os ficheiros de instalação da aplicação têm de estar na mesma pasta.
 -   O tamanho máximo para qualquer ficheiro que carregar é de 2 GB.
@@ -87,12 +90,12 @@ Dessa forma, ao carregar a aplicação para o Intune, quaisquer ficheiros na pas
 ![como selecionar dependências do appxbundle UWP Windows 10](./media/w10-dependencies.png)
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Terá de adicionar as aplicações na consola do Intune antes de poder implementá-las. Pode adicionar aplicações a [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) ou [PCs com Windows que gere através do software de cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

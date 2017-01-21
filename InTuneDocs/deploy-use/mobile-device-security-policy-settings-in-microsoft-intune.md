@@ -1,5 +1,5 @@
 ---
-title: "Definições de política de segurança de dispositivos móveis | Microsoft Intune"
+title: "Definições de política de segurança de dispositivos móveis | Documentos da Microsoft"
 description: "Utilize o Intune para configurar uma grande variedade de definições que pode implementar em dispositivos geridos na sua organização."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Definições de política de segurança de dispositivos móveis no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > O Microsoft Intune apresenta agora políticas de configuração separadas para cada plataforma de dispositivos. Estas políticas contêm as definições mais atualizadas que pode utilizar. Pode continuar a utilizar a política de segurança do dispositivo móvel e todas as implementações existentes continuarão a funcionar. No entanto, deve planear a migração para as novas políticas de configuração logo que possível, pois a política de segurança do dispositivo móvel será removida no futuro.
 
@@ -53,7 +56,7 @@ Pode criar e implementar políticas de segurança de dispositivos móveis para o
 |**Comprimento mínimo da palavra-passe**|Sim|Sim|Sim|Sim|Sim|
 |**Permitir palavras-passe simples**<br /><br />As palavras-passes simples incluem "0000" e "1234".|Não|Não|Sim|Sim|Não|
 |**Número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado**|Sim|Sim|Sim|Sim|Sim|
-|**Minutos de inatividade antes de o ecrã se desligar**1|Sim|Sim|Sim|Sim|Sim|
+|**Minutos de inatividade antes de o ecrã se desligar**<sup>1</sup>|Sim|Sim|Sim|Sim|Sim|
 |**Expiração da Palavra-passe (dias)**|Sim|Sim|Sim|Sim|Sim|
 |**Memorizar histórico de palavras-passe**|Sim|Sim|Sim|Sim|Sim|
 |**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Sim|Sim|Sim|Sim|Sim|
@@ -61,7 +64,7 @@ Pode criar e implementar políticas de segurança de dispositivos móveis para o
 |**Permitir palavra-passe por imagem e PIN**|Sim|Sim|Não|Não|Não|
 |**Minutos de inatividade antes de a palavra-passe ser exigida**|Não|Não|Não|Sim|Não|
 |**Permitir desbloqueio por impressão digital**|Não|Não|Não|iOS 7 e posterior|Não|
-1Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
+<sup>1</sup>Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de a palavra-passe ser exigida**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
 Quando implementa uma política de comprimento de palavra-passe em dispositivos com o Windows RT, os utilizadores serão forçados a repor as respetivas palavras-passe, ainda que estas estejam em conformidade com os requisitos da política.
 
@@ -69,9 +72,9 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Encriptação obrigatória no dispositivo móvel**1<br /><br />Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
+|**Encriptação obrigatória no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
 |**Encriptação obrigatória nos cartões de armazenamento**<br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d <br />As aplicações e os dados associados são encriptados automaticamente.|n/d|Sim|
-1Seguem-se informações adicionais para dispositivos com o Windows 8.1:
+<sup>1</sup>Seguem-se informações adicionais para dispositivos com o Windows 8.1:
 
 -   Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](http://support.microsoft.com/kb/3013816) em cada dispositivo.
 
@@ -105,7 +108,7 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 |**Permitir a reposição de fábrica**|Não|Não|Não|Não|Sim (apenas Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Definições da nuvem - documentos e dados
+## <a name="cloud-settings--documents-and-data"></a>Definições da cloud – documentos e dados
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +119,7 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 |**URL das Pastas de Trabalho**<br /><br />Esta definição define o URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.|Sim|Não|Não|Não|Não|
 |**Permitir cópia de segurança do Google**|Não|Não|Não|Não|Sim (apenas Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Definições da nuvem – contas e sincronização
+## <a name="cloud-settings--accounts-and-synchronization"></a>Definições da cloud – contas e sincronização
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,13 +130,13 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Permitir que os utilizadores transfiram anexos de e-mail**1|n/d|n/d|n/d|n/d|n/d|
+|**Permitir que os utilizadores transfiram anexos de e-mail**<sup>1</sup>|n/d|n/d|n/d|n/d|n/d|
 |**Período de sincronização de e-mail** <br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
 |**Permitir que os dispositivos móveis que não suportam completamente estas definições se sincronizem com o Exchange (Exchange ActiveSync)** <br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
 |**Tornar a conta Microsoft opcional na aplicação Windows Mail**|Sim|Não|Não|Não|Não|
 |**Permitir contas de e-mail personalizadas**|Não|Não|Apenas no Windows Phone 8.1|Não|Não|
 
-## <a name="application-settings---browser"></a>Definições da aplicação - browser
+## <a name="application-settings---browser"></a>Definições da aplicação – browser
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -189,7 +192,7 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 |**Permitir Bluetooth**|Não|Não|Apenas no Windows Phone 8.1|Não|Sim (apenas Samsung KNOX Standard)|
 |**Permitir desligar**<br>Se esta definição estiver desativada, a definição **Número de falhas de início de sessão repetidas permitidas antes da eliminação de dados no dispositivo** para dispositivos Samsung KNOX Standard não funcionará.|Não|Não|Não|Não|Sim (apenas Samsung KNOX Standard)|
 
-## <a name="device-capabilities-settings---cellular"></a>Definições das capacidades do dispositivo - rede móvel
+## <a name="device-capabilities-settings---cellular"></a>Definições das capacidades do dispositivo – rede móvel
 
 |Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -214,6 +217,6 @@ Quando implementa uma política de comprimento de palavra-passe em dispositivos 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

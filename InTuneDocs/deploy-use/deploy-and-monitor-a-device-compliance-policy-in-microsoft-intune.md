@@ -1,5 +1,5 @@
 ---
-title: "Implementar e monitorizar políticas de conformidade | Microsoft Intune"
+title: "Implementar e monitorizar políticas de conformidade | Documentos da Microsoft"
 description: "Utilize as instruções passo a passo neste tópico para implementar e monitorizar uma política de conformidade de dispositivos."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Implementar e monitorizar políticas de conformidade de dispositivos no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>Implementar uma política de conformidade
 Implemente a política de conformidade que [criou](create-a-device-compliance-policy-in-microsoft-intune.md) em um ou mais grupos de utilizadores na sua organização. Quando uma política de conformidade é implementada num utilizador, os dispositivos do utilizador são verificados relativamente à conformidade.
 

@@ -1,12 +1,12 @@
 ---
-title: "Publicar aplicações móveis para os utilizadores | Microsoft Intune"
+title: "Publicar aplicações móveis para os utilizadores | Documentos da Microsoft"
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,19 +14,22 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
 
 
 ---
 
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Guia de Introdução Rápido: publicar aplicações móveis para os utilizadores
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune pode ajudá-lo a aumentar a produtividade dos utilizadores finais de forma rápida e fácil, concedendo-lhes acesso às aplicações de ambiente de trabalho e móveis que necessitam, a partir dos dispositivos que desejem. Disponibilizar aplicações facilmente aos utilizadores finais reduz o tempo e o esforço que o utilizador dedica a procurar e a instalar as aplicações corretas, o que reduz a chamadas ao suporte técnico quando os utilizadores não conseguem encontrar as aplicações que necessitam.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Este guia de introdução é indicado para mim?
 Gostaria que os utilizadores tivessem acesso rápido a todas as aplicações que precisam para serem produtivos no trabalho, apresentadas num portal comum independentemente do tipo de dispositivo que estes utilizam?
 
-Se Sim, o Microsoft Intune permite-lhe publicar aplicações (Office mobile, linha interna de negócios ou outras aplicações de ambiente de trabalho e móveis) num portal comum único: o [a aplicação Portal da empresa do site](/intune/enduser/company-portal-frequently-asked-questions).
+Se sim, o Microsoft Intune permite-lhe publicar aplicações (Office mobile, linha interna de negócios ou outras aplicações de ambiente de trabalho e móveis) num portal comum único: o [a aplicação Portal da empresa do site](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
 1.  [Inscrever os dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) na gestão de dispositivos móveis do Intune.
@@ -42,6 +45,6 @@ Se a publicação de aplicações móveis do Office for feita com a intenção d
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

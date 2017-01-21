@@ -1,5 +1,5 @@
 ---
-title: "Bloqueio remoto e reposição do código de acesso | Microsoft Intune"
+title: "Bloqueio remoto e reposição do código de acesso | Documentos da Microsoft"
 description: "O Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso."
 keywords: 
 author: staciebarker
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
-ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso
@@ -28,7 +28,7 @@ Se um utilizador perder um dispositivo, pode bloquear o mesmo remotamente. A tab
 |macOS|Não suportado|
 |iOS|Suportado|
 |Android|Suportado|
-|Windows 10 e Windows 10 Mobile|Suportado|
+|Computadores e dispositivos móveis com o Windows 10 Mobile|Suportado|
 |Windows Phone 8 e Windows Phone 8.1|Suportado|
 |Windows RT 8.1 e Windows RT|Suportado se o utilizador atual do dispositivo for o mesmo utilizador que inscreveu o dispositivo.|
 |Windows 8.1|Suportado se o utilizador atual do dispositivo for o mesmo utilizador que inscreveu o dispositivo.|
@@ -53,12 +53,12 @@ Se um utilizador se esquecer de um código de acesso, pode ajudá-lo ao remover 
 |------------|------------------|
 |macOS|Não suportado|
 |iOS|Suportado para a eliminação do código de acesso de um dispositivo. Não cria um novo código de acesso temporário.|
-|Android|Suportado em versões anteriores ao Android 7.0. Cria um código de acesso temporário.|
+|Android|Suportado em versões anteriores ao Android 7.0. Cria um código de acesso temporário.|
 |Windows 10 Mobile|Suportado|
 |Windows Phone 8 e Windows Phone 8.1|Suportado|
 |Windows RT 8.1|Não Suportado|
 |Windows 8.1|Não Suportado|
-|Windows 10 Desktop|Não Suportado|
+|Computadores com o Windows 10|Não Suportado|
 
 A reposição do código de acesso não é suportada para PCs Windows inscritos com o cliente de software do Intune.
 
@@ -79,6 +79,6 @@ A reposição do código de acesso não é suportada para PCs Windows inscritos 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

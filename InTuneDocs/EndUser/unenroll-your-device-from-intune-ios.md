@@ -1,28 +1,30 @@
 ---
-title: "Anular a inscrição do seu dispositivo iOS no Intune | Microsoft Intune"
+title: "Anular a inscrição do seu dispositivo iOS no Intune | Documentos da Microsoft"
 description: "Descreve como anular a inscrição de dispositivos iOS no Intune"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
+searchScope:
+- Company Portal
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
 
 
 ---
 
 
-# Anular a inscrição do seu dispositivo iOS no Intune
+# <a name="unenroll-your-ios-device-from-intune"></a>Anular a inscrição do seu dispositivo iOS no Intune
 
 Quando termina a inscrição do seu dispositivo iOS no Intune, este não poderá continuar a aceder a recursos de empresa e deixará de ser gerido pelo Intune.
 
@@ -43,7 +45,7 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 -   As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
 
--   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou web sites internos, no seu dispositivo.
+-   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
 
 -   Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
 
@@ -53,10 +55,10 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 -   Os dispositivos configurados apenas para e-mail não serão apresentados na aplicação Portal da Empresa ou no site.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

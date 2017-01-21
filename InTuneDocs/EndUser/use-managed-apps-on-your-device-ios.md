@@ -1,5 +1,5 @@
 ---
-title: "Utilizar aplicações geridas no seu dispositivo iOS | Microsoft Intune"
+title: "Utilizar aplicações geridas no seu dispositivo iOS | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 340c160b2741856c91e7136fa60318c83b1ea8bb
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
 
 
 ---
@@ -35,14 +37,14 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 ### <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação do Portal da Empresa ou do Web site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instala uma aplicação da App Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>O que o meu administrador de TI pode gerir na minha aplicação?
 Aqui estão alguns exemplos das opções que o administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
 
--   Acesso a Web sites específicos
+-   Acesso a sites específicos
 
 -   Transferências de dados entre aplicações
 
@@ -54,14 +56,14 @@ Aqui estão alguns exemplos das opções que o administrador de TI pode gerir nu
 
 -   O seu início de sessão com as credenciais da empresa
 
--   Capacidade de cópia de segurança para a nuvem
+-   Capacidade de cópia de segurança para a cloud
 
 -   Capacidade para tirar capturas de ecrã
 
 -   Requisitos de encriptação de dados
 
 
-Contacte o administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Contacte o administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 

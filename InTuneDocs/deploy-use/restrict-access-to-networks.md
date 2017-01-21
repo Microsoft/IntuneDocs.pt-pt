@@ -1,5 +1,5 @@
 ---
-title: "Restringir o acesso às redes com Cisco ISE | Microsoft Intune"
+title: "Restringir o acesso às redes com Cisco ISE | Documentos da Microsoft"
 description: "Utilize o Cisco ISE com o Intune para que os dispositivos sejam inscritos no Intune e estejam em conformidade com as políticas antes de acederem ao Wi-Fi e à VPN que são controlados pelo Cisco ISE."
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,9 +64,9 @@ b. Selecione o ícone de cadeado &gt;  **Mais informações**.
 > Verifique a data de expiração do certificado, porque terá de exportar e importar um novo certificado quando este expirar.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Obter um certificado autoassinado do ISE 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Obter um certificado autoassinado do ISE 
 
-1.  Na consola do ISE, vá para **Administração** > **Certificados** > **Certificados de Sistema** > **Gerar Certificado Autoassinado**.  
+1.  Na consola do ISE, aceda a **Administração** > **Certificados** > **Certificados de Sistema** > **Gerar Certificado Autoassinado**.  
 2.       Exporte o certificado autoassinado.
 3. Num editor de texto, edite o certificado exportado:
 
@@ -78,7 +78,7 @@ Certifique-se de que todo o texto é uma linha única
 
 ### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>Passo 2: criar uma aplicação para ISE no seu inquilino do Azure AD
 1. Na consola do Azure AD, escolha **Aplicações** > **Adicionar uma Aplicação** > **Adicionar uma aplicação que a minha organização está a desenvolver**.
-2. Forneça um nome e um URL para a aplicação. O URL pode ser o Web site da sua empresa.
+2. Forneça um nome e um URL para a aplicação. O URL pode ser o site da sua empresa.
 3. Transfira o manifesto da aplicação (um ficheiro JSON).
 4. Edite o ficheiro de manifesto JSON. Na definição denominada **keyCredentials**, forneça o texto editado do certificado a partir do Passo 1, como o valor de definição.
 5. Guarde o ficheiro sem alterar o respetivo nome.
@@ -100,7 +100,7 @@ Certifique-se de que todo o texto é uma linha única
 |Ponto final de tokens de OAuth 2.0|URL de Emissão de tokens|
 |Atualize o seu código com o seu ID de Cliente|ID de Cliente|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Passo 3: carregar o certificado autoassinado a partir do ISE para a aplicação ISE que criou no Azure AD
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Passo 3: carregar o certificado autoassinado a partir do ISE para a aplicação ISE que criou no Azure AD
 1.     Obtenha o thumbprint e o valor do certificado codificado base64 a partir do ficheiro de certificado público .cer X509. Este exemplo utiliza o PowerShell:
    
       
@@ -189,6 +189,6 @@ Também existe um [conjunto transferível de instruções de inscrição](https:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

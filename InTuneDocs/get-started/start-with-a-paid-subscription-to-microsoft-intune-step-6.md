@@ -1,5 +1,5 @@
 ---
-title: "Implementar políticas e aplicações | Microsoft Intune"
+title: "Implementar políticas e aplicações | Documentos da Microsoft"
 description: "Pode ativar as definições de política e implementar aplicações que serão aplicadas assim que os dispositivos são inscritos na gestão."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Criar políticas e publicar aplicações
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de começar a inscrição de aplicações no Intune, pode ativar as definições de política e as aplicações que serão implementadas assim que esses dispositivos fiquem disponíveis para gestão. As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Pode configurar a política, adicionar aplicações e implementar essas aplicações para que os dispositivos recebem as definições e aplicações assim que se inscrevam no Intune.
 
 As políticas e aplicações são específicas da plataforma.

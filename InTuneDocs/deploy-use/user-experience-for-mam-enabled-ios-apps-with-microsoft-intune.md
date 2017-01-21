@@ -1,11 +1,11 @@
 ---
-title: "Aplicações iOS com políticas de MAM | Microsoft Intune"
+title: "Aplicações iOS com políticas de MAM | Documentos da Microsoft"
 description: "Este tópico descreve o que esperar quando a sua aplicação iOS é gerida por políticas de gestão de aplicações móveis."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  Este tópico descreve a experiência do utilizador para aplicações com políticas de MAM (gestão de acesso móvel). As políticas de MAM são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho: por exemplo, quando o utilizador está a aceder a aplicações com a sua conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
 
 ##  <a name="access-apps"></a>Acesso às aplicações
 
-Se o dispositivo **não estiver inscrito no Intune**, será pedido ao utilizador para reiniciar a aplicação quando utilizá-la pela primeira vez.  É preciso um reinício para que as políticas de MAM possam ser aplicadas à aplicação. A seguinte captura de ecrã da aplicação Skype ilustra este pedido de reinício:
+Se o dispositivo **não estiver inscrito no Intune**, será pedido ao utilizador para reiniciar a aplicação quando utilizá-la pela primeira vez.  É preciso um reinício para que as políticas de MAM possam ser aplicadas à aplicação. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![captura de ecrã do dispositivo iOS que mostra o pedido de PIN](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 Para dispositivos que estejam **inscritos para gestão no Intune**, o utilizador vê uma mensagem a indicar que a sua aplicação é agora gerida:
 
@@ -61,13 +66,13 @@ O utilizador A trabalha para duas empresas — a **Empresa X** e a **Empresa Y**
 Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional nesse dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida. As contas serão apresentadas e, em seguida, pode escolher a conta que pretende remover.
 
 ![Captura de ecrã da caixa de diálogo com a mensagem a informar que a ação não é permitida e com as opções Sim e Não](../media/AppManagement/iOS_SwitchUser.PNG)
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [O que esperar quando a sua aplicação Android é gerida por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### <a name="see-also"></a>Consulte também
 [Criar e implementar políticas de gestão de aplicações móveis com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,9 +1,10 @@
 ---
 
-title: Instalar o software de cliente de PCs | Microsoft Intune
+title: Instalar o software de cliente de PCs | Documentos da Microsoft
 description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através do software de cliente do Microsoft Intune."
 keywords: 
 author: staciebarker
+ms.author: stabar
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
-ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
+ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
+ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
 
 
 ---
@@ -97,7 +98,7 @@ Pode implementar o software de cliente do Intune em computadores como parte de u
 
 5.  Capture uma imagem do computador de referência e, em seguida, efetue a implementação nos computadores visados.
 
-Quando o computador de destino reiniciar no final da Configuração do Windows, é criada a chave de registo **WindowsIntuneEnrollPending** . O pacote de inscrição verifica se o computador está inscrito. Se o computador estiver inscrito, não é necessária mais nenhuma ação. Se o computador não estiver inscrito, o pacote de inscrição cria uma Tarefa de Inscrição Automática do Microsoft Intune.
+Quando o computador de destino reiniciar no final da Configuração do Windows, é criada a chave de registo **WindowsIntuneEnrollPending**. O pacote de inscrição verifica se o computador está inscrito. Se o computador estiver inscrito, não é necessária mais nenhuma ação. Se o computador não estiver inscrito, o pacote de inscrição cria uma Tarefa de Inscrição Automática do Microsoft Intune.
 
 Quando a tarefa de inscrição automática for executada na próxima hora agendada, verifica a existência do valor de registo **WindowsIntuneEnrollPending** e tenta inscrever o PC de destino no Intune. Se a inscrição falhar por alguma razão, é repetida da próxima vez que a tarefa for executada. As repetições serão efetuadas durante um mês.
 
@@ -138,6 +139,6 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

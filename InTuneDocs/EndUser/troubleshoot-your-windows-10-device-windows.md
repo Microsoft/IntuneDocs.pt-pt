@@ -1,27 +1,30 @@
 ---
-title: "Resolver problemas de inscrição no dispositivo Windows 10 | Microsoft Intune"
+title: "Resolver problemas de inscrição no dispositivo Windows 10 | Documentos da Microsoft"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b81465ae9ae22cea347a3e052b70ac3b2be465c5
 
 
 ---
 
-# Resolver problemas de inscrição no dispositivo Windows 10
-Se tiver seguido os passos em [Inscrever o dispositivo de ambiente de trabalho Windows 10 Mobile ou Windows 10 no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
+Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
 
 1.  Observe os dois ecrãs abaixo e veja qual deles se parece com o que vê no seu dispositivo. Siga os passos que acompanham o ecrã que aparece no seu dispositivo.
 
@@ -33,7 +36,7 @@ Se tiver seguido os passos em [Inscrever o dispositivo de ambiente de trabalho W
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## Passos de resolução de problemas a seguir se vir Acesso profissional ou escolar
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Passos de resolução de problemas a seguir se vir Acesso profissional ou escolar
 
 1.  Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail e aos ficheiros profissionais ou escolares, volte a **Acesso profissional ou escolar**.
 
@@ -45,7 +48,7 @@ Se tiver seguido os passos em [Inscrever o dispositivo de ambiente de trabalho W
 
     - Se não vir as informações de ligação mostradas acima ou se de facto as vir, mas faltarem algumas das opções, toque em **Ligar** e, em seguida, inicie sessão com as suas credenciais profissionais ou escolares. Agora, já deverá estar ligado.
 
-## Passos de resolução de problemas a seguir se vir A sua conta
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passos de resolução de problemas a seguir se vir A sua conta
 
 Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos ficheiros e a outros dados profissionais ou escolares, volte a **Contas** e toque em **Acesso profissional**.
 
@@ -53,10 +56,10 @@ Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos f
 
 - Se não vir a sua conta profissional ou escolar, toque em **Ligar** e, em seguida, inicie sessão com as credenciais da sua conta profissional ou escolar.
 
-Ainda precisa de ajuda? Contacte o seu administrador de TI. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

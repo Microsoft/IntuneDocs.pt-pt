@@ -1,12 +1,12 @@
 ---
 
-title: "Definições da política para Android e Samsung KNOX Standard | Microsoft Intune"
+title: "Definições da política para Android e Samsung KNOX Standard | Documentos da Microsoft"
 description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android que gere com o Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Definições da política para Android e Samsung KNOX Standard no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune oferece um conjunto de definições gerais incorporadas que pode configurar em dispositivos Android. Além disso, pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar definições personalizadas que não estão disponíveis no Intune.
 
@@ -70,19 +72,19 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |**Permitir submissão de dados de diagnóstico**|Permite ao dispositivo enviar informações de diagnóstico para a Google.|Não|Sim|
 |**Permitir a reposição de fábrica**|Permite ao utilizador efetuar uma reposição de fábrica no dispositivo.|Não|Sim|
 
-### <a name="cloud-settings---documents-and-data"></a>Definições da nuvem - documentos e dados
+### <a name="cloud-settings---documents-and-data"></a>Definições da cloud – documentos e dados
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------------------|----------------|
 |**Permitir cópia de segurança do Google**|Permite a utilização da cópia de segurança do Google.|Não|Sim|
 
-### <a name="cloud-settings---accounts-and-synchronization"></a>Definições da nuvem – contas e sincronização
+### <a name="cloud-settings---accounts-and-synchronization"></a>Definições da cloud – contas e sincronização
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Permitir sincronização automática da conta Google**|Permite que as definições da conta Google sejam sincronizadas automaticamente.|Não|Sim|
 
-### <a name="application-settings---browser"></a>Definições da aplicação - browser
+### <a name="application-settings---browser"></a>Definições da aplicação – browser
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
@@ -111,7 +113,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |**Permitir Bluetooth**|Permite a utilização de Bluetooth no dispositivo.|Não|Sim|
 |**Permitir desligar**|Permite ao utilizador desligar o dispositivo.<br /><br />Se esta definição estiver desativada, a definição **Número de falhas de início de sessão repetidas permitidas antes da eliminação de dados no dispositivo** para dispositivos Samsung KNOX Standard não funcionará.|Não|Sim|
 
-### <a name="device-capabilities-settings---cellular"></a>Definições das capacidades do dispositivo - rede móvel
+### <a name="device-capabilities-settings---cellular"></a>Definições das capacidades do dispositivo – rede móvel
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
@@ -143,6 +145,8 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
 |**Editar**|Permite editar o nome, o fabricante e o URL da aplicação selecionada.|
 |**Eliminar**|Elimina a aplicação selecionada da lista.|
+
+As políticas que contêm as definições de aplicações conformes e não conformes têm de ser implementadas em grupos de utilizadores.
 
 ### <a name="kiosk-mode-settings"></a>Definições do modo de local público
 Especifique as seguintes definições para **dispositivos Samsung KNOX Standard**:
@@ -177,9 +181,7 @@ Exemplo: procure Microsoft Office Mobile no Google Play. O URL a utilizar será 
 Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
 Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
-
-> [!NOTE]
-> Atualmente, as políticas personalizadas do Android apenas suportam a configuração de definições Wi-Fi para dispositivos Android que incluam uma chave pré-partilhada.
+Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para saber quais as políticas que pode configurar.
 
 ### <a name="general-settings"></a>Definições gerais
 
@@ -209,6 +211,6 @@ Esta capacidade destina-se a permitir a implementação de definições do Andro
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

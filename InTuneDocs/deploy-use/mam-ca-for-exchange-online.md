@@ -1,5 +1,5 @@
 ---
-title: "Configurar acesso de aplicação para o Exchange Online | Microsoft Intune"
+title: "Configurar acesso de aplicação para o Exchange Online | Documentos da Microsoft"
 description: "Este tópico descreve como pode configurar uma política de acesso condicional para aplicações MAM."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
 
 
 ---
 
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Criar um acesso condicional do Exchange Online para permitir apenas aplicações suportadas por MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico fornece-lhe as instruções passo a passo sobre como configurar o acesso condicional para que o Exchange Online permita apenas aplicações móveis que suportem políticas de gestão de aplicações móveis (MAM) do Intune.
 
 
@@ -31,7 +34,7 @@ Este tópico fornece-lhe as instruções passo a passo sobre como configurar o a
 
   ![Captura de ecrã do painel de definições a mostrar a secção de acesso condicional com a opção Exchange Online realçada](../media/mam-ca-settings-exo.png)
 
-3.  No painel **Aplicações permitidas**, selecione a opção **Permitir aplicações que suportam políticas de aplicação do Intune** para permitir que apenas as aplicações que são suportadas pelas políticas da MAM do Intune consigam aceder ao Exchange Online. Quando selecionar esta opção, é apresentada a lista de aplicações suportadas.
+3.  No painel **Aplicações permitidas**, selecione a opção **Permitir aplicações que suportam políticas de aplicação Intune** para permitir que apenas as aplicações que são suportadas pelas políticas da MAM do Intune consigam aceder ao Exchange Online. Quando selecionar esta opção, é apresentada a lista de aplicações suportadas.
 
   >[!NOTE]
   >Todos os clientes de correio do Exchange Active Sync, incluindo os clientes de correio incorporado em iOS e Android que se ligam ao Exchange Online ficarão impedidos de enviar ou receber e-mail. Em alternativa, os utilizadores irão receber um único e-mail a informar que têm de utilizar a aplicação de correio do Outlook. 
@@ -39,15 +42,15 @@ Este tópico fornece-lhe as instruções passo a passo sobre como configurar o a
 
   ![Captura de ecrã do painel de grupos de utilizadores restritos com a opção adicionar grupo de utilizadores realçada](../media/mam-ca-add-user-group.png)
 
-5.  Poderá querer que alguns utilizadores do grupo que selecionou no passo anterior não sejam afetados por esta política. Nesses casos, adicione o grupo de utilizadores à lista de grupos de utilizadores isentos. No painel **Exchange Online**, selecione **Grupos de utilizadores isentos**. Selecione **Adicionar grupo de utilizadores** para abrir a lista de grupos de utilizadores. Selecione os grupos aos quais pretende dar isenção desta política.  
+5.  Poderá querer que alguns utilizadores do grupo que selecionou no passo anterior não sejam afetados por esta política. Nesses casos, adicione o grupo de utilizadores à lista de grupos de utilizadores excluídos. No painel **Exchange Online**, selecione **Grupos de utilizadores excluídos**. Selecione **Adicionar grupo de utilizadores** para abrir a lista de grupos de utilizadores. Selecione os grupos que pretende excluir desta política.  
 
 ## <a name="modify-an-existing-policy"></a>Modificar uma política existente
 ### <a name="add-or-delete-user-groups"></a>Adicionar ou eliminar grupos de utilizadores
 
-Para **eliminar um grupo de utilizadores**, na lista de **grupos de utilizadores restritos**, abra o painel **Grupos de utilizadores restritos**, selecione o grupo que quer eliminar e clique nas **reticências (...)** para ver a opção **Eliminar**. Selecione **Eliminar** para remover o grupo de utilizadores da lista. Pode seguir o mesmo procedimento para remover um grupo de utilizadores da lista de **grupos de utilizadores isentos**.
+Para **eliminar um grupo de utilizadores**, na lista de **grupos de utilizadores restritos**, abra o painel **Grupos de utilizadores restritos**, selecione o grupo que quer eliminar e clique nas **reticências (...)** para ver a opção **Eliminar**. Selecione **Eliminar** para remover o grupo de utilizadores da lista. Pode seguir o mesmo procedimento para remover um grupo de utilizadores da lista de **grupos de utilizadores excluídos**.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Bloquear aplicações que não tenham autenticação moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Consulte também
 [Proteger dados de aplicações com políticas de MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

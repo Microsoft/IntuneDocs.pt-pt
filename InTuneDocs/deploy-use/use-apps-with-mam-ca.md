@@ -1,5 +1,5 @@
 ---
-title: "Utilizar aplicações com acesso condicional para MAM | Microsoft Intune"
+title: "Utilizar aplicações com acesso condicional para MAM | Documentos da Microsoft"
 description: "Compreenda os conceitos de como o acesso condicional para MAM pode ajudar a controlar as aplicações que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
@@ -14,12 +14,15 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 317d101c34854fdf4913adcf53bdef614599deb7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
 
 
 ---
 # <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>O que esperar ao utilizar uma aplicação com acesso condicional para MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O acesso condicional para MAM verifica a identidade da aplicação aprovada através de uma aplicação de mediação que tem de estar presente no dispositivo:
 *  No **iOS**, a **aplicação Azure Authenticator** é a aplicação de mediação.
 * No **Android**, a **aplicação Portal da Empresa do Intune** é a aplicação de mediação. 
@@ -38,13 +41,13 @@ Pode remover o registo do dispositivo através da consola de administração do 
 
 * **Consola de administração do Azure AD**: na consola de administração do Azure AD**, elimine o dispositivo que pretende remover.
 * **Dispositivo iOS**: abra a aplicação Azure Authenticator, percorra para a esquerda na conta e selecione anular o registo.  
-* **Dispositivo Android**: desinstale a aplicação do portal da empresa ou remova a conta nas **Definições do sistema**.
+* **Dispositivo Android**: desinstale a aplicação Portal da Empresa ou remova a conta nas **Definições do sistema**.
 
 
 
 ## <a name="mam-ca-with-conditional-access-based-on-device-compliance"></a>Acesso condicional para MAM baseado na conformidade do dispositivo  
 
-Pode configurar o [Acesso condicional baseado na conformidade do dispositivo ](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)(**Acesso condicional de dispositivo**) na [consola de administração do Intune](https://manage.microsoft.com) ou na [consola de gestão do Azure AD Premium] (https://manage.windowsazure.com). O acesso condicional de dispositivo exige que os utilizadores estabeleçam ligação ao Exchange Online através de dispositivos geridos pelo Intune que sejam compatíveis com a política de conformidade de dispositivo do Intune ou PCs associados a um domínio.  Se um utilizador pertencer a um ou mais grupos de segurança que são direcionados para políticas de acesso condicional de dispositivo e acesso condicional para MAM, o utilizador tem de cumprir um dos dois requisitos:
+Pode configurar o [Acesso condicional baseado na conformidade do dispositivo ](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)(**Acesso condicional de dispositivo**) na [consola de administração do Intune](https://manage.microsoft.com) ou na [consola de gestão do Azure AD Premium] (https://manage.windowsazure.com). O acesso condicional de dispositivo exige que os utilizadores estabeleçam ligação ao Exchange Online através de dispositivos geridos pelo Intune que sejam compatíveis com a política de conformidade de dispositivo do Intune ou PCs associados a um domínio.  Se um utilizador pertencer a um ou mais grupos de segurança que são visados por políticas de acesso condicional de dispositivo e acesso condicional para MAM, o utilizador tem de cumprir um dos dois requisitos:
 * A aplicação utilizada para aceder ao serviço é uma aplicação móvel que é suportada pelo acesso condicional para MAM e o dispositivo em que a aplicação está em execução tem o **Autenticador para iOS (para dispositivos iOS)** ou a **aplicação Portal da Empresa (para dispositivos Android)** instalado.
 * O dispositivo utilizado para aceder ao serviço é **gerido pelo Intune e é compatível** com a política de conformidade de dispositivo do Intune ou é um **PC associado a um domínio**.  Eis alguns exemplos para ajudar a ilustrar isto:
   * Se um utilizador tentar estabelecer ligação a partir da **aplicação de e-mail nativa no iOS**, o utilizador precisará de ter um **dispositivo compatível e gerido**, uma vez que a aplicação de e-mail nativa não é suportada pelo acesso condicional para MAM.

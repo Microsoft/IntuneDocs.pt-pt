@@ -1,11 +1,11 @@
 ---
-title: "Utilizar políticas para simplificar a gestão de PCs Windows | Microsoft Intune"
+title: "Utilizar políticas para simplificar a gestão de PCs Windows | Documentos da Microsoft"
 description: "Descreve as políticas de gestão de PCs Windows e as definições do Microsoft Intune Center."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utilizar políticas para simplificar a gestão de PCs Windows
 
-Os PCs Windows que executam o cliente de software do Intune podem ser geridos através das políticas de **Gestão de Computadores** do Intune. Utilize as políticas de **Gestão de Computadores** do Intune para configurar as definições no Microsoft Intune Center, para controlar as atualizações nos PCs e para configurar a Firewall do Windows para PCs.
+Para gerir computadores Windows como PCs ao executar o cliente de software do Intune nos mesmos, só pode utilizar as políticas em **Gestão de Computadores** na consola de administração do Intune. Todas as outras políticas listadas na consola de administração destinam-se apenas a dispositivos móveis. Através das políticas de **Gestão de Computadores**, pode configurar as definições no Microsoft Intune Center, controlar as atualizações nos PCs e configurar a Firewall do Windows para PCs.
 
 ![Modelo de políticas para PCs Windows](../media/pc_policy_template.png)
 
@@ -63,6 +63,6 @@ Consulte os seguintes recursos para obter informações sobre as políticas e de
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

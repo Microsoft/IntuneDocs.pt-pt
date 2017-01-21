@@ -1,5 +1,5 @@
 ---
-title: "Definições de política de conformidade para Android for Work | Microsoft Intune"
+title: "Definições de política de conformidade para Android for Work | Documentos da Microsoft"
 description: "Este tópico descreve as definições de política de conformidade do dispositivo para dispositivos Android que são compatíveis com o Android for Work."
 keywords: 
 author: andredm7
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Android for Work no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 

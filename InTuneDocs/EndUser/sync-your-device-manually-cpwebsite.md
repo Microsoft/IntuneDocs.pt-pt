@@ -1,5 +1,5 @@
 ---
-title: Sincronizar o seu dispositivo manualmente utilizando o site do Portal da Empresa | Microsoft Intune
+title: Sincronizar o seu dispositivo manualmente com o site do Portal da Empresa | Documentos da Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 68e4df02fa298af68f6c01a4dbb658cca5bb231b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fbbe9233ae2e07209356a0cec14d085f742e6436
 
 
 ---
@@ -31,7 +33,7 @@ Por vezes, a instalação de uma aplicação ou a execução de outra tarefa pod
 
 * [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
-* [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
+* [Computadores com o Windows 10](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
 
 

@@ -10,34 +10,41 @@
 ## [Glossário](understand-explore/intune-glossary.md)
 
 # [Introdução](get-started/get-started.md)
-## [Guia de introdução](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Configurar o Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Pré-requisitos](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [Dispositivos e browsers suportados](get-started/supported-mobile-devices-and-computers.md)
-#### [Utilização da largura de banda de rede](get-started/network-bandwidth-use.md)
+#### [Utilização de rede](get-started/network-bandwidth-use.md)
 ### [Iniciar sessão no Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Configurar nome de domínio](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Configurar domínios](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Adicionar utilizadores](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Gerir licenças do Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Gerir licenças](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Organizar utilizadores e dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Implementar políticas e aplicações](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Personalizar o Portal da Empresa](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Inscrever dispositivos móveis](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Inscrever dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Publicar tarefas de configuração](get-started/post-configuration-tasks.md)
 ## [Migrar para o Intune](get-started/migrate-to-intune.md)
-## Próximos passos
+## Passos seguintes
 ### [Impedir fugas de dados da empresa a partir das aplicações móveis do Office 365](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Proteger os dados da empresa com a encriptação de dados](get-started/protect-data-encryption.md)
 ### [Publicar aplicações móveis para os utilizadores](get-started/publish-mobile-apps-to-users.md)
 ### [Simplificar a configuração de e-mail em dispositivos móveis](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Proteger os PCs Windows contra ameaças de software maligno](get-started/protect-pcs-against-malware-threats.md)
-## [Fases da implementação do Intune](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [Âmbito do projeto](get-started/project-scope.md)
-### [Prova de conceito](get-started/proof-of-concept.md)
-### [Piloto](get-started/pilot.md)
-### [Implementação empresarial](get-started/enterprise-rollout.md)
-### [Operações e manutenção](get-started/operations-and-maintenance.md)
 
-# [Novidades](whats-new/whats-new-in-microsoft-intune.md)
+# [Planear e Estruturar](plan-design/introduction.md)
+## [Secção 1: determinar metas, objetivos e obstáculos da implementação](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [Secção 2: identificar cenários de casos de utilização](plan-design/section-2-identify-use-case-scenarios.md)
+## [Secção 3: determinar requisitos de cenários de casos de utilização](plan-design/section-3-determine-use-case-requirements.md)
+## [Secção 4: desenvolver um plano de implementação](plan-design/section-4-develop-a-rollout-plan.md)
+## [Secção 5: desenvolver um plano de comunicação](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [Secção 6: desenvolver um plano de suporte](plan-design/section-6-develop-a-support-plan.md)
+## [Secção 7: criar uma estrutura do Intune](plan-design/section-7-create-an-intune-design.md)
+## [Secção 8: implementação do Intune](plan-design/section-8-onboarding-process.md)
+## [Secção 9: testes e validação](plan-design/section-9-test-and-validation.md)
+## [Recursos adicionais](plan-design/additional-resources.md)
+
+# Novidades
+## [Novidades](whats-new/whats-new-in-microsoft-intune.md)
+## [Novidades – Arquivo](whats-new/whats-new-archive.md)
 
 # Implementar e Utilizar
 ## [Descrição geral dos ciclos de vida de dispositivos e aplicações](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -76,7 +83,7 @@
 #### [Definições do Android for Work](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Definições do Windows 8 e Windows 8.1](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Definições do Windows Phone 8.1](deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-#### [Definições para dispositivos móveis e computadores Windows 10](deploy-use/windows-10-policy-settings-in-microsoft-intune.md)
+#### [Definições para dispositivos móveis e computadores com Windows 10](deploy-use/windows-10-policy-settings-in-microsoft-intune.md)
 #### [Definições do Windows Team](deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune.md)
 #### [Definições de atualização da edição do Windows](deploy-use/edition-upgrade-policy-settings-in-microsoft-intune.md)
 #### [Definições do Mac OS X](deploy-use/mac-os-x-policy-settings-in-microsoft-intune.md)
@@ -184,12 +191,12 @@
 ### [Aplicações iOS com políticas de MAM](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # Desenvolver e Personalizar Aplicações
-## [Descrição Geral do SDK da Aplicação do Microsoft Intune](develop/intune-app-sdk.md)
-## [Introdução ao SDK da Aplicação do Microsoft Intune](develop/intune-app-sdk-get-started.md)
-## [Guia para Programadores do SDK da Aplicação do Intune para iOS](develop/intune-app-sdk-ios.md)
-## [Guia para Programadores do SDK da Aplicação do Intune para Android](develop/intune-app-sdk-android.md)
-## [Plugin Cordova do SDK da Aplicação do Intune](develop/intune-app-sdk-cordova.md)
-## [Componente Xamarin do SDK da Aplicação do Intune](develop/intune-app-sdk-xamarin.md)
+## [Descrição Geral do SDK da Aplicação Microsoft Intune](develop/intune-app-sdk.md)
+## [Introdução ao SDK da Aplicação Microsoft Intune](develop/intune-app-sdk-get-started.md)
+## [Guia para Programadores do SDK da Aplicação Intune para iOS](develop/intune-app-sdk-ios.md)
+## [Guia para Programadores do SDK da Aplicação Intune para Android](develop/intune-app-sdk-android.md)
+## [Plugin Cordova do SDK da Aplicação Intune](develop/intune-app-sdk-cordova.md)
+## [Componente Xamarin do SDK da Aplicação Intune](develop/intune-app-sdk-xamarin.md)
 
 # [Resolver problemas](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Como obter suporte](troubleshoot/how-to-get-support-for-microsoft-intune.md)
@@ -209,6 +216,6 @@
 ## [Resolução de problemas da Integração do Lookout](troubleshoot/troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 
