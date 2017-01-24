@@ -7,7 +7,7 @@
 ### [Outras opções e extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Converter numa subscrição paga](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Cenários comuns](understand-explore/common-ways-to-use-intune.md)
-## [Glossário](understand-explore/intune-glossary.md)
+
 
 # [Introdução](get-started/get-started.md)
 ## [Configurar o Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -44,6 +44,7 @@
 
 # Novidades
 ## [Novidades](whats-new/whats-new-in-microsoft-intune.md)
+## [Novidades na pré-visualização do Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Novidades – Arquivo](whats-new/whats-new-archive.md)
 
 # Implementar e Utilizar
@@ -72,6 +73,7 @@
 #### [Instalar o cliente de PC](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Tarefas de gestão comuns do PC](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolver conflitos da política de PC](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Android for Work](deploy-use/android-for-work.md)
 
 ## Configurar dispositivos
 ### [Gerir definições e funcionalidades nos seus dispositivos com políticas](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -97,6 +99,7 @@
 #### [Ligações VPN no Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Perfis de e-mail no Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Utilizar grupos para gerir utilizadores e dispositivos](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Migrar grupos para o Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Mapear dispositivos a grupos](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Compreender os seus dispositivos com o inventário](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
@@ -142,24 +145,24 @@
 #### [Windows e Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Implementar uma política de conformidade de dispositivo](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Restringir o acesso com base na conformidade do dispositivo](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Proteger o acesso com base na conformidade do dispositivo](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online e o novo Exchange Online Dedicado](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange no local e o Exchange Online Dedicado legado](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype para Empresas Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [Restringir o acesso ao e-mail: exemplos](deploy-use/restrict-email-access-example-scenarios.md)
+#### [Proteger o acesso ao e-mail: exemplos](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Permitir que apenas aplicações geridas pela política acedam aos serviços do O365](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [Aplicações com acesso condicionado para MAM](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Bloquear aplicações sem ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
-### [Restringir o acesso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Restringir o acesso com base no dispositivo, na rede e no risco da aplicação](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Configurar a proteção contra ameaças de dispositivos do Lookout](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Ativar o Lookout no Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Implementar o Lookout em aplicações de trabalho](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Ativar a política de conformidade de proteção contra ameaças de dispositivos](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Proteger o acesso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [Proteger o acesso com base no dispositivo, na rede e no risco da aplicação](deploy-use/device-threat-protection.md)
+#### [Configurar a proteção contra ameaças de dispositivos do Lookout](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Ativar o Lookout no Intune](deploy-use/device-threat-protection-enable.md)
+#### [Implementar o Lookout em aplicações de trabalho](deploy-use/device-threat-protection-apps.md)
+#### [Ativar a política de conformidade de proteção contra ameaças de dispositivos](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteger os dados da aplicação com MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portal do Azure para políticas de MAM](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -179,6 +182,7 @@
 #### [Aplicações LOB em dispositivos não geridos pelo Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Utilizar o SDK quando escreve uma aplicação](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [FAQ sobre MAM e proteção de aplicações](deploy-use/mam-faq.md)
 
 ## Extinguir aplicações e dados
 ### [Utilizar a eliminação completa ou seletiva](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -215,7 +219,9 @@
 
 ## [Resolução de problemas da Integração do Lookout](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [Glossário](understand-explore/intune-glossary.md)
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Jan17_HO3-->
 
 

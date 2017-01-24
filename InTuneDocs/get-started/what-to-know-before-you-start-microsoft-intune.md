@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: d07c7e667dbb5c01a9dcd8b2f69e7d930c27f25a
+ms.sourcegitcommit: e2810513646828cc5da734f3af9cc8d81e0c03fc
+ms.openlocfilehash: 444d08d1a5e709572efbc2f639cef037453b9c0e
 
 
 ---
@@ -43,7 +43,7 @@ A gestão de dispositivos do Intune proporciona [estas capacidades](mobile-devic
 
 ### <a name="windows-pc-software-client"></a>Software cliente em PC com Windows
 
-Um [software cliente do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) pode ser implementado e instalado em PCs com Windows como um método alternativo de inscrição. Pode utilizar o software cliente do Intune para gerir PCs com Windows 7 e versões posteriores, com exceção do Windows 10 Home. A gestão de PCs com o software de cliente fornece [estas funcionalidades](windows-pc-management-capabilities-in-microsoft-intune.md).
+Um [software cliente do Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) pode ser implementado e instalado em PCs com Windows como um método alternativo de inscrição. Pode utilizar o cliente do software Intune para gerir computadores com o Windows 7 e posterior, com a exceção da edição Windows 10 Home. A gestão de PCs com o software de cliente fornece [estas funcionalidades](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### <a name="exchange-activesync-management"></a>Gestão do Exchange ActiveSync
 
@@ -74,6 +74,6 @@ Apenas os utilizadores com permissões de administrador de serviços ou administ
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 
