@@ -1,3 +1,53 @@
+## <a name="december-2016"></a>Dezembro de 2016
+
+### <a name="public-preview-of-the-new-intune-admin-experience-on-azure--736542--"></a>Pré-visualização pública da nova experiência de administrador do Intune no Azure<!--736542-->
+No início de 2017 iremos migrar toda a nossa experiência de administrador para o Azure, permitindo uma gestão poderosa e integrada de fluxos de trabalho de EMS principais numa plataforma de serviço moderna extensível com Graph APIs. Antes da disponibilidade geral deste portal para todos os inquilinos do Intune, estamos entusiasmados por anunciar que iremos começar a lançar uma pré-visualização desta nova experiência de administração ainda este mês para selecionar os inquilinos.
+
+A experiência de administração no portal do Azure irá utilizar a já anunciada nova funcionalidade de agrupamento e filtragem; quando o seu inquilino existente é migrado para a nova experiência de agrupamento, o utilizador também será migrado para pré-visualizar a nova experiência de administração do inquilino. Entretanto, pode obter mais informações sobre o que temos reservado para o Microsoft Intune no portal do Azure na nossa [nova documentação](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
+
+Se tiver dúvidas sobre a linha cronológica para a migração do inquilino, contacte a nossa equipa de migração através do e-mail [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+
+__Integração da gestão de despesas de telecomunicações na pré-visualização pública do portal do Azure__ <!--747605--> Estamos agora a começar a pré-visualizar a integração com os serviços de gestão de despesas de telecomunicações (TEM) de terceiros no portal do Azure. Pode utilizar o Intune para impor limites de utilização de dados nacionais e itinerantes. Estamos a começar essas integrações com [Saaswedo](http://www.saaswedo.com). Para ativar esta funcionalidade no seu inquilino de avaliação, [contacte o suporte da Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+
+### <a name="new-capabilities"></a>Novas Funcionalidades
+
+__Multi-factor authentication em todas as plataformas__ <!--747590--> Agora pode impor a multi-factor authentication (MFA) num grupo selecionado de utilizadores quando estes inscrevem um dispositivo iOS, Android, Windows 8.1+ ou Windows Phone 8.1+ a partir do Portal de Gestão do Azure ao configurar a MFA na aplicação de Inscrição do Microsoft Intune no Azure Active Directory.
+
+__Capacidade de impedir a inscrição do dispositivo móvel__ <!--747596--> O Intune está a adicionar novas restrições de inscrição que controlam as plataformas de dispositivos móveis autorizadas a inscrever. O Intune separa plataformas de dispositivos móveis como iOS, macOS, Android, Windows e Windows Mobile.
+* A restrição da inscrição de dispositivos móveis não restringe a inscrição do cliente de PC.
+* Especificamente para iOS, existe uma opção adicional para bloquear a inscrição de dispositivos pessoais.
+
+O Intune marca todos os novos dispositivos como pessoais, a menos que o administrador de TI os marque como pertencentes à empresa, conforme explicado [neste artigo](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+### <a name="notices"></a>Avisos
+
+__Multi-Factor Authentication na Inscrição ao mover para o portal do Azure__ <!--VSO 750545--> Anteriormente, os administradores utilizavam a consola do Intune ou a consola do Gestor de Configuração (anterior à versão de outubro de 2016) para configurar a MFA para inscrições no Intune. Com esta funcionalidade atualizada, irá agora iniciar a sessão no [portal do Microsoft Azure](https://manage.windowsazure.com) com as suas credenciais do Intune e configurar as definições da MFA através do Azure AD. Saiba mais sobre o assunto [aqui](https://aka.ms/mfa_ad).
+
+__Aplicação do Portal da Empresa para Android, agora disponível na China__  <!--VSO 658093--> Estamos a publicar a aplicação do Portal da Empresa para Android para transferência na China. Devido à ausência da Google Play Store na China, os dispositivos Android têm de obter aplicações a partir de mercados de aplicações chineses. A aplicação do Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+A aplicação do Portal da Empresa para Android utiliza os Serviços do Google Play para comunicar com o serviço Microsoft Intune. Uma vez que os Serviços do Google Play ainda não estão disponíveis na China, pode demorar até 8 horas a concluir a realização de qualquer uma das seguintes tarefas. 
+
+|Consola de Administração do Intune| Aplicação do Portal da Empresa do Intune para Android |Site do Portal da Empresa do Intune|   
+|---|---|---|
+|Eliminação completa| Remover um dispositivo remoto| Remover dispositivo (local e remoto)|
+|Eliminação seletiva| Repor dispositivo| Repor dispositivo|
+|Implementações de aplicações novas ou atualizadas| Instalar aplicações de linha de negócio disponíveis| Repor código de acesso do dispositivo|
+|Bloqueio remoto|||
+|Repor código de acesso|||
+
+### <a name="deprecations"></a>Depreciação
+
+__O Firefox vai deixar de suportar o Silverlight__ <!--VSO TBA--> A Mozilla vai remover o suporte do Silverlight na versão 52 do [browser Firefox](https://www.mozilla.org/firefox) a partir de março de 2017. Como resultado, já não será possível iniciar sessão na consola do Intune existente quando utilizar versões do Firefox superiores a 51. Recomendamos que utilize o Internet Explorer 10 ou 11 para aceder à consola de administração ou uma [versão do Firefox anterior à versão 52](https://ftp.mozilla.org/pub/firefox/releases/). A transição do Intune para o portal do Azure irá permitir suportar um número de [browsers modernos](https://docs.microsoft.com/en-us/azure/azure-preview-portal-supported-browsers-devices) sem dependência do Silverlight.
+
+__Remoção das políticas da pasta a receber móvel do Exchange Online__ <!--770687--> A partir de dezembro, os administradores deixarão de ser capazes de ver ou configurar políticas de caixa de correio móvel do Exchange Online (EAS) na consola do Intune. Esta alteração vai ser implementada em todos os inquilinos do Intune entre dezembro e janeiro. Todas as políticas existentes permanecerão tal como configuradas. Para configurar novas políticas, utilize a Shell de Gestão do Exchange. Saiba mais informações [aqui](https://technet.microsoft.com/en-us/library/bb123783%28v=exchg.150%29.aspx).
+
+__As aplicações Leitor do Intune AV, Visualizador de Imagens e o Visualizador de PDFs já não são suportadas nos sistemas Android__ <!--747553--> A partir de meados de dezembro de 2016, os utilizadores já não poderão utilizar as aplicações Leitor do Intune AV, Visualizador de Imagens e Visualizador de PDFs. Estas aplicações foram substituídas pela aplicação Azure Information Protection. Saiba mais sobre a aplicação Azure Information Protection [aqui](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
+
 ## <a name="november-2016"></a>Novembro de 2016
 
 ### <a name="new-capabilities"></a>Novas funcionalidades
@@ -310,7 +360,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
     - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
 --->
-
 ## <a name="july-2016"></a>Julho de 2016
 ### <a name="app-management"></a>Gestão de aplicações
 
@@ -357,52 +406,7 @@ Utilize apenas contas DEM quando a inscrição sem a ação do utilizador para d
 - O [Microsoft Passport para Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) é agora conhecido como **Windows Hello para Empresas**.
 - A [Proteção de dados da empresa](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) é agora conhecida como **Windows Information Protection**.
 
-## <a name="june-2016"></a>Junho de 2016
-### <a name="intune-service-health"></a>Estado de funcionamento do serviço do Intune
-As informações de estado de funcionamento do serviço do Intune foram movidas para uma localização central com outros serviços Microsoft. Agora, pode encontrar estas informações no portal de gestão do Office 365, em Estado de Funcionamento do Serviço. Para obter mais informações, consulte [esta mensagem do blogue](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/).
 
-### <a name="app-management"></a>Gestão de aplicações
-- **Experiência de configuração da política de dados empresariais do Windows 10 melhorada.** Efetuamos melhoramentos para a experiência de configuração da política de proteção de dados empresariais do Windows 10 sobre a criação de regras de aplicação, como especificar a definição de limites de rede e outras definições de proteção de dados empresariais. Para saber mais, consulte [Criar uma política de proteção de dados empresariais (EDP) através do Microsoft Intune](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune).
-
-
-### <a name="device-management"></a>Gestão de dispositivos
-- **Definição de política do Windows Defender contra aplicações potencialmente indesejáveis.** Uma nova definição do Windows Defender com o nome **Deteção de Aplicação Potencialmente Indesejável** foi adicionado à política de configuração geral para dispositivos com o Windows 10 e o Windows 10 Mobile. Pode utilizar esta definição para proteger computadores de secretária Windows inscritos contra software em execução classificado pelo Windows Defender como potencialmente indesejado. Pode proteger contra estas aplicações em execução ou utilizar o modo de auditoria para relatar quando uma aplicação potencialmente indesejável é instalada. Para obter mais informações, consulte [Definições de política do Windows 10 no Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
-<!---TFS 1244478--->
-
-### <a name="conditional-access"></a>Acesso condicional
-- **Política de controlo de acesso à rede Cisco ISE para o Intune.**  Os clientes que utilizam o Motor de Serviço de Identidade Cisco (ISE) 2.1 e que também utilizam o Microsoft Intune podem definir uma política de controlo de acesso de rede no ISE.
-
-    Ao utilizar esta política, os dispositivos que precisa de ligar à rede através de Wi-Fi ou VPN devem cumprir seguintes condições antes de lhes ser concedido acesso:
-
-    * Deve ser gerido pelo Intune
-    * Deve ser compatível com todas políticas de conformidade do Intune implementadas
-
- Os utilizadores finais de dispositivos não conformes serão solicitados para inscrever-se e para retificar quaisquer problemas de compatibilidade para obter acesso.
-- **Acesso condicional para browser.** Pode definir uma política de acesso condicional para o [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) e o [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) para que apenas os dispositivos iOS e Android geridos e compatíveis possam ser acedidos a partir de Web browsers suportados. Aos utilizadores finais que tentarem iniciar sessão no Outlook Web Access (OWA) e em sites do SharePoint com dispositivos iOS e Android será pedido que inscrevam o respetivo dispositivo no Intune, bem como que corrijam quaisquer problemas de não conformidade, para poderem concluir o início de sessão.
-<!---TFS 1175844--->
-
-- **O Dynamics CRM Online suporta o acesso condicional.** Pode definir uma política de acesso condicional para o [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) para que apenas dispositivos iOS e Android geridos e compatíveis possam aceder ao mesmo. Aos utilizadores finais que tentarem iniciar sessão na aplicação móvel Dynamics CRM Online em dispositivos iOS e Android será pedido que se inscrevam primeiro no Intune e que corrijam quaisquer problemas de não conformidade para que o início de sessão possa ser concluído.
-<!---TFS1295358--->
-
-### <a name="intune-company-portal-updates"></a>Atualizações ao Portal da Empresa do Intune
-
-__Aplicação do Portal da Empresa para Android__
-
-- Quando os administradores de TI aplicam a nova política "Exigir que os dispositivos não permitam a instalação de aplicações a partir de origens desconhecidas (Android 4.0 +)", os utilizadores finais com Android 4.0 ou dispositivos posteriores irão ver a mensagem "A instalação tem de ser desativada a partir de origens desconhecidas." Os utilizadores terão de ir para **Definições** > **Segurança** e desativar **Origens desconhecidas**. Uma ligação na mensagem de compatibilidade permite aos utilizadores obterem mais [informações](/Intune/EndUser/you-are-asked-to-turn-off-unknown-sources-android) sobre a mensagem e por que motivo é necessário desativar a definição.
-
-- Quando os administradores de TI aplicam a nova política "Exigir que os dispositivos ativem a análise de ameaças de segurança em aplicações (Android 4.0 +)", os utilizadores finais com Android 4.0 ou dispositivos posteriores irão ver a mensagem "Analisar se o dispositivo apresenta ameaças de segurança." Os utilizadores terão de ir para **Definições** > **Google** > **Segurança** e ativar **Analisar se o dispositivo apresenta ameaças de segurança**. Uma ligação na mensagem de compatibilidade permite aos utilizadores obterem mais [informações](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) sobre a mensagem e por que motivo é necessário ativar a definição.
-
-- Quando os administradores de TI aplicam a nova política "Exigir a desativação da depuração de USB (Android 4.2 +)", os utilizadores finais com Android 4.2 ou dispositivos posteriores irão ver a mensagem "A depuração de USB deve ser desativada." Os utilizadores terão de ir para **Definições** > **Opções de programador** e desativar **Depuração de USB**." Uma ligação na mensagem de compatibilidade permite aos utilizadores obterem mais [informações](/Intune/EndUser/you-are-asked-to-turn-off-usb-debugging-android) sobre a mensagem e por que motivo é necessário desativar a definição.
-
-- Quando os administradores de TI aplicam a nova política "Nível mínimo de patch de segurança do Android (Android 6.0 +)", os utilizadores finais com Android 6.0 ou dispositivos posteriores irão ver a mensagem "Este dispositivo não cumpre o nível mínimo de patch de segurança do Android." Os utilizadores têm de instalar o patch de segurança necessário. Uma ligação na mensagem de compatibilidade permite aos utilizadores obter [informações](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android) sobre como instalar o patch de segurança necessário e ver que patch de segurança está atualmente instalado.
-
-__Aplicação do Portal da Empresa para iOS__
-
-- Quando os utilizadores finais estiverem a instalar aplicações de linha de negócio, irão ver agora uma experiência de instalação de aplicações melhorada. Se a instalação da aplicação estiver a demorar muito tempo, os utilizadores podem sincronizar manualmente os respetivos dispositivos para forçar a continuação do processo de sincronização. Para ver as instruções para utilizadores finais, consulte [Sincronizar o dispositivo iOS manualmente](/Intune/EndUser/sync-your-device-manually-ios).
-
-- A aplicação do Portal da Empresa do Microsoft Intune para iOS foi atualizada para suportar a versão 8.0 do iOS e posteriores. Esta atualização significa que os utilizadores finais só podem instalar a aplicação do Portal da Empresa e inscrever dispositivos novos no Intune se estes executarem a versão 8.0 do iOS ou posterior. Os utilizadores que já inscreveram dispositivos que executem uma versão não suportada do iOS podem continuar a utilizar a aplicação Portal da Empresa que está nos dispositivos deles.
-
-
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

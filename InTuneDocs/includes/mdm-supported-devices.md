@@ -5,7 +5,7 @@
   - Mac OS X 10.9 e posterior
 
 ### <a name="windows"></a>Windows
-  - PCs com o Windows 10 (versões Home, Pro, Educação e Enterprise)
+  - PCs com o Windows 10 (versões Pro, Education e Enterprise)
   - Windows Phone 8.1 e posterior
   - Windows 8.1 RT
   - PCs com o Windows 8.1
@@ -23,6 +23,6 @@ Os clientes com o Enterprise Management + Security (EMS) também podem [utilizar
  
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
@@ -95,7 +95,7 @@ A maioria das soluções de gestão da mobilidade empresarial suporta dispositiv
 
 As organizações divergem na forma de adoção de cenários "sem inscrição". Algumas organizações efetuam uma padronização. Outras permitem dispositivos complementares, como um tablet pessoal. Outras não suportam nenhuma das situações. Mesmo neste último caso, em que uma organização requer que todos os dispositivos dos funcionários estejam inscritos na MDM, normalmente estas organizações suportam cenários "sem inscrição" para subcontratados, fornecedores e para outros dispositivos que tenham uma isenção específica.
 
-Pode até utilizar a tecnologia "sem inscrição" do Intune em dispositivos inscritos. Por exemplo, um dispositivo inscrito na MDM pode ter proteções "open in" fornecidas pelo sistema operativo móvel. Além disso, o departamento de IT pode aplicar a política de proteção de aplicações para aplicações móveis geridas pelo EMS, para controlar a função Guardar Como ou proporcionar autenticação multifator.
+Pode até utilizar a tecnologia "sem inscrição" do Intune em dispositivos inscritos. Por exemplo, um dispositivo inscrito na MDM pode ter proteções "open in" fornecidas pelo sistema operativo móvel. (A Proteção de abertura é uma funcionalidade do iOS que impede a abertura de um documento a partir de uma aplicação, como o Outlook, para outra aplicação, como o Word, a menos que ambas as aplicações sejam geridas pelo fornecedor de MDM.) Além disso, o departamento de IT pode aplicar a política de proteção de aplicações para aplicações móveis geridas pelo EMS, para controlar a função Guardar Como ou proporcionar autenticação multifator.
 
 Qualquer que seja a posição da sua organização relativamente às aplicações e aos dispositivos móveis inscritos e não inscritos, o Intune, como parte do EMS, dispõe de ferramentas que o irão ajudar a aumentar a produtividade da força de trabalho, protegendo os seus dados empresariais.
 
@@ -116,6 +116,6 @@ A seguinte lista de problemas empresariais permite aceder a informações mais d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

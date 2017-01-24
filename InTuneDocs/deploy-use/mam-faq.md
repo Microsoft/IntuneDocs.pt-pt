@@ -86,15 +86,17 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 
   2. **O que é encriptado?** Só os dados marcados como "empresariais" são encriptados de acordo com a política de proteção de aplicações do administrador de TI. Os dados são considerados "empresariais" quando a sua origem tem uma localização empresarial. Para as aplicações do Office, o Intune considera as seguintes localizações como localizações empresariais: e-mail (Exchange) ou armazenamento da cloud (aplicação OneDrive com uma conta do OneDrive para Empresas). Para aplicações de linha de negócio otimizadas com a Ferramenta de Encapsulamento de Aplicações do Intune, todos os dados da aplicação são considerados "empresariais".
 
-**Como é que o Intune elimina os dados remotamente?** O Intune pode eliminar dados da aplicação de duas formas diferentes: eliminação completa ou eliminação seletiva. Para obter mais informações sobre a eliminação remota, veja [Ajudar a proteger os dados com a eliminação completa ou seletiva no Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md).
+**Como é que o Intune elimina os dados remotamente?** O Intune pode eliminar os dados da aplicação de três formas diferentes: eliminação total do dispositivo, eliminação seletiva para MDM e eliminação seletiva MAM. Para obter mais informações sobre a eliminação remota para MDM, veja [Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Para obter mais informações sobre a eliminação seletiva através do MAM, veja [Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
 
   1. **O que é uma eliminação completa?** A [eliminação completa](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) elimina todos os dados e definições do utilizador a partir do seu **dispositivo**, ao restaurar o dispositivo com as predefinições de fábrica. O dispositivo é removido do Intune.
   >[!NOTE]
   > A eliminação completa só pode ser realizada em dispositivos inscritos na gestão de dispositivos móveis do Intune (MDM).
 
-  2. **O que é uma eliminação seletiva?** Veja [Ajudar a proteger os dados com a eliminação completa ou seletiva no Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para saber mais sobre a eliminação seletiva.
+  2. **O que é uma eliminação seletiva para MDM?** Veja [Ajudar a proteger os dados com a eliminação completa ou seletiva no Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para saber mais sobre a eliminação seletiva.
 
-  3. **Qual é a velocidade da eliminação seletiva?** Se o utilizador estiver a utilizar a aplicação quando a eliminação seletiva for iniciada, o SDK da Aplicação Intune verifica a existência de pedidos de eliminação seletiva a cada 30 minutos a partir do serviço MAM do Intune. Também verifica a existência de pedidos de eliminação seletiva quando o utilizador inicia a aplicação pela primeira vez e inicia sessão com a conta profissional ou escolar.
+  3. **O que é uma eliminação seletiva para MAM?** A eliminação seletiva para MAM simplesmente remove os dados da aplicação da empresa de uma aplicação. O pedido é iniciado através do portal do Intune Azure. Para obter mais informações sobre como iniciar um pedido de eliminação, veja [Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
+
+  4. **Qual é a velocidade da eliminação seletiva para MAM?** Se o utilizador estiver a utilizar a aplicação quando a eliminação seletiva for iniciada, o SDK da Aplicação Intune verifica a existência de pedidos de eliminação seletiva a cada 30 minutos a partir do serviço MAM do Intune. Também verifica a existência de pedidos de eliminação seletiva quando o utilizador inicia a aplicação pela primeira vez e inicia sessão com a conta profissional ou escolar.
 
 **Por que razão os serviços no local não funcionam com as aplicações protegidas pelo Intune?** A proteção de aplicações do Intune depende da identidade do utilizador para ser consistente entre a aplicação e o SDK da Aplicação Intune. A única forma de o garantir é através da autenticação moderna. Existem cenários onde aplicações podem funcionar com uma configuração no local, mas não é garantido e nem consistente.
 
@@ -110,6 +112,6 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 **Posso utilizar a extensão de partilha do iOS para abrir dados escolares ou profissionais em aplicações não geridas, mesmo com a política de transferência de dados definida para "apenas aplicações geridas" ou "nenhuma aplicação". Isto não resulta numa fuga de dados?** A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados "empresariais" antes de estes serem partilhados fora da aplicação**_. Para comprovar, pode tentar abrir o ficheiro "empresarial" fora da aplicação gerida. O ficheiro deve estar encriptado e não deve ser possível abri-lo fora da aplicação gerida.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
