@@ -42,8 +42,8 @@
 ## [Secção 9: testes e validação](plan-design/section-9-test-and-validation.md)
 ## [Recursos adicionais](plan-design/additional-resources.md)
 
-# Novidades
-## [Novidades](whats-new/whats-new-in-microsoft-intune.md)
+# [Novidades](whats-new/whats-new-in-microsoft-intune.md)
+## [Novidades na IU da Aplicação Intune](whats-new/whats-new-in-intune-app-ui.md)
 ## [Novidades na pré-visualização do Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Novidades – Arquivo](whats-new/whats-new-archive.md)
 
@@ -222,6 +222,6 @@
 # [Glossário](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
