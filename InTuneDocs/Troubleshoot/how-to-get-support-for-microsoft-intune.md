@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
@@ -30,21 +30,33 @@ O suporte do Intune, bem como do Intune quando utilizado com o Gestor de Configu
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>Obter ajuda sem abrir um pedido de suporte
 
-Consulte os seguintes recursos para obter respostas antes de criar um pedido de suporte.
+Antes de criar um pedido de suporte, veja os seguintes recursos para obter respostas e informações. Também poderá querer consultar as [sugestões de resolução de problemas gerais do Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
 
 ### <a name="microsoft-intune-technet-forums"></a>Fóruns da TechNet sobre o Microsoft Intune
 
 Faça uma pergunta ou inicie um debate com os especialistas técnicos da Microsoft! Fornecemos respostas e informações no [Fórum da TechNet sobre o Microsoft Intune](https://social.technet.microsoft.com/Forums/home) pesquisável.
 
-    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+![Fórum TechNet do Microsoft Intune](./media/technet-forum-for-support.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de feedback do Microsoft Intune no UserVoice
 
 Tem feedback para ajudar a Microsoft a tornar o Intune ainda melhor? Dê-nos a sua opinião ao adicionar as suas ideias no site de feedback [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) do Microsoft Intune. Também pode votar nas ideias que outras pessoas adicionaram ao UserVoice. 
 
-    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
+![Página de feedback do Microsoft Intune no UserVoice](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-service-ticket"></a>Para criar uma permissão de serviço online
+## <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online
+
+Se não conseguir encontrar respostas com os recursos de ajuda autónomos, pode criar um pedido de suporte online.
+
+**Mantenha um limite de apenas um problema por pedido de suporte**, para que o consigamos ajudar melhor. Eis a razão:
+
+- É provável que os engenheiros de suporte sejam especializados em áreas específicas, sendo que desta forma é mais fácil identificar os especialistas de um determinado assunto para ajudar com o seu problema.
+- As equipas de engenharia podem dar mais prioridade às áreas em que existem mais incidentes.
+- É mais fácil encaminhar problemas desafiantes para o recurso correto.
+
+Veja a [definição de um incidente de suporte](#definition-of-a-support-incident) antes de criar um pedido de suporte.
+
+**Para criar um pedido de suporte online**:
 
 1.  Inicie sessão no [centro de administração do Office 365](https://portal.office.com) com as suas credenciais do Intune.
     >[!NOTE]
@@ -87,12 +99,12 @@ Siga este procedimento se a sua página de suporte tiver o seguinte aspeto:
 ## <a name="get-phone-support"></a>Obter suporte por telefone
 Veja [Contactar o suporte assistido por telefone do Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) para obter uma lista de números de telefone de suporte por país e região, horas de suporte e idiomas suportados para cada região.
 
-## <a name="track-your-service-requests"></a>Monitorizar os seus pedidos de serviço
+## <a name="track-your-support-requests"></a>Monitorizar os pedidos de suporte
 1.  Inicie sessão no [centro de administração do Office 365](https://portal.office.com) com as suas credenciais do Intune.
 2.  Escolha o mosaico **Administrador**.
 3.  Do lado esquerdo, em **Suporte**, escolha **Pedidos de serviço**. Em seguida, pode rever os seus pedidos.
 
-As nossas respostas iniciais a pedidos de serviço dependem da gravidade do problema. No caso de problemas mais graves, a resposta inicial para clientes Profissionais é dada no espaço de duas horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte. Existem casos em que:
+As nossas respostas iniciais aos pedidos de suporte dependem da gravidade do problema. No caso de problemas mais graves, a resposta inicial para clientes Profissionais é dada no espaço de duas horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte. Existem casos em que:
 
 - Um ou mais serviços não são acessíveis ou não são utilizáveis.
 - Os prazos de produção, operações ou implementação são gravemente afetados ou existirá um impacto grave na produção ou rentabilidade.
@@ -115,12 +127,6 @@ No caso de outro tipo de problema, a resposta inicial para clientes Profissionai
 >
 > O suporte técnico do System Center Configuration Manager ou do System Center Endpoint Protection requer pagamento ou este é debitado do seu licenciamento ou contratos de Suporte Premier existentes.
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>Resolver problemas sem abrir um pedido de suporte
-
-Poderá conseguir resolver o seu problema sem que seja necessário abrir um pedido de suporte.
-
-Para obter ajuda autónoma com o Intune, veja [Sugestões de resolução de problemas genéricos do Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou qualquer um dos tópicos de resolução de problemas específicos. Também pode procurar uma solução ou publicar a sua pergunta no [fórum do Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
-
 ## <a name="find-support-for-volume-licensing"></a>Encontrar suporte para licenciamento em volume
 Se já tiver comprado licenças da Microsoft através de um programa de licenciamento em volume, utilize os seguintes recursos para obter suporte:
 
@@ -129,6 +135,16 @@ Se já tiver comprado licenças da Microsoft através de um programa de licencia
 -   Para perguntas sobre faturação, veja [Suporte de gestão de subscrição e faturação](http://support.microsoft.com/oas/default.aspx?prid=15371).
 
 -   Para obter informações gerais sobre licenciamento em volume, veja [Licenciamento em volume](http://go.microsoft.com/fwlink/p/?LinkID=282015).
+
+## <a name="definition-of-a-support-incident"></a>Definição de um incidente de suporte
+
+Um incidente de suporte é definido como um problema de suporte único e o trabalho necessário para o resolver. Um problema de suporte não pode ser decomposto em problemas subordinados. Se identificar problemas subordinados, cada problema subordinado é considerado um incidente individual. Poderão ser necessários múltiplos contactos e pesquisas offline para resolver um problema específico. O montante que lhe será cobrado não está relacionado com o tempo despendido a fornecer estas soluções.
+
+O suporte "Break-fix" está incluído nas subscrições do Microsoft Intune e da Gestão de Dispositivos Móveis para o Office 365. Consequentemente, a abertura de incidentes de suporte adicionais nunca implicará taxas adicionais.
+
+Se um engenheiro de suporte lhe pedir para abrir incidentes de suporte adicionais para problemas adicionais, tenha em atenção que tal é para o melhor interesse de todos os envolvidos. Agradecemos-lhe pela sua compreensão e por colaborar connosco para fornecermos um excelente nível de suporte!
+
+Para obter os preços por incidente e níveis de gravidade, veja [Opções de Suporte Profissional](https://support.microsoft.com/gp/offerprophone).
 
 
 
