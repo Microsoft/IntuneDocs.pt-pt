@@ -64,6 +64,6 @@ Para **eliminar um grupo de utilizadores**, na lista de **grupos de utilizadores
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
