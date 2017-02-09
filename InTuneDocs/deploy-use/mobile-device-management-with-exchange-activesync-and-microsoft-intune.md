@@ -2,8 +2,8 @@
 title: "Gestão de Dispositivos com o Exchange ActiveSync | Documentos da Microsoft"
 description: "Gerir dispositivos móveis com a gestão do Exchange ActiveSync (EAS) com o conector do Exchange"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
