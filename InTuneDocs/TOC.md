@@ -11,7 +11,8 @@
 
 # [Introdução](get-started/get-started.md)
 ## [Configurar o Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Pré-requisitos](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Pré-requisitos]
+#### [Dispositivos suportados](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Utilização de rede](get-started/network-bandwidth-use.md)
 ### [Iniciar sessão no Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurar domínios](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +58,6 @@
 #### [Gestão de Android](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Gestão do Android for Work](deploy-use/set-up-android-for-work.md)
 #### [Gestão de dispositivos Windows](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile e Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Gerir dispositivos pertencentes à empresa](deploy-use/manage-corporate-owned-devices.md)
 #### [Inscrever dispositivos iOS pertencentes à empresa](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Inscrição através do Assistente de Configuração](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [Glossário](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
