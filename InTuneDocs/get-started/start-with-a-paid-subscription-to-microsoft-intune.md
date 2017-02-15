@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -22,6 +22,9 @@ ms.openlocfilehash: 7777b7fb4a0977ed663a3ef01547f22e9e61bb8a
 
 
 # <a name="intune-quick-start-guide"></a>Guia de introdução do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este guia ajuda-o a começar com a sua subscrição paga no Microsoft Intune. Siga estes passos para gerir os dispositivos móveis e PCs Windows, assim como as aplicações na sua organização. Pode seguir os passos por ordem ou avançar se um passo não for aplicável ao seu ambiente ou às necessidades da sua empresa. Se quiser experimentar o Intune, veja o [guia de avaliação do Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
 
 Se utilizar atualmente o Microsoft System Center Configuration Manager para gerir computadores e servidores, pode [expandir o Configuration Manager para gerir dispositivos móveis](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
