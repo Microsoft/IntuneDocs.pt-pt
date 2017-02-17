@@ -1,5 +1,5 @@
 ---
-title: "Configurar a gestão do Windows 10 Mobile e Windows Phone | Microsoft Intune"
+title: "Configurar a gestão do Windows 10 Mobile e Windows Phone | Documentos da Microsoft"
 description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Windows 10 Mobile ou Windows Phone com o Microsoft Intune."
 keywords: 
 author: staciebarker
@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: ac22478c1de2421e1a7345aca92510fbda73f7e8
 
 
 ---
 
 
 # <a name="set-up-windows-phone-and-windows-10-mobile-management-with-microsoft-intune"></a>Configurar a gestão do Windows Phone e Windows 10 Mobile com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Como administrador do Intune, pode ativar a inscrição e gestão de dispositivos Windows 10 Mobile e Windows Phone de duas formas:
 
@@ -37,7 +39,7 @@ Pode permitir que os utilizadores instalem e inscrevam os respetivos dispositivo
 
 2.  **Criar CNAMEs** (opcional)<br>Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://manage.microsoft.com.
+    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://enrollment.manage.microsoft.com.
 
     Se atualmente tiver um CNAME no DNS que redireciona EnterpriseEnrollment.contoso.com para manage.microsoft.com, sugerimos que o substitua por um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. Esta alteração é recomendada, uma vez que o ponto final de manage.microsoft.com vai ser preterido para as inscrições numa versão futura.
 
@@ -54,17 +56,15 @@ Pode permitir que os utilizadores instalem e inscrevam os respetivos dispositivo
 
   Se a sua empresa utilizar vários domínios para as credenciais do utilizador, crie os registos CNAME para cada domínio.
 
-  Por exemplo, se o Web site da sua empresa fosse contoso.com, criaria um CNAME em DNS que redirecionaria EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com. As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
+  Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
 
 3.  **Verificar o CNAME**<br>Na [consola de administração do Intune](http://manage.microsoft.com), selecione **Admin** &gt; **Mobile Device Management** &gt; **Windows Phone**. Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, selecione **Testar Deteção Automática**.
 
     ![Caixa de diálogo Configurar a gestão de dispositivos móveis do Windows](../media/windows-phone-enrollment.png)
 
-4.  **Passos opcionais**<br>O passo **Adicionar as Chaves de Sideload** não é necessário para o Windows 10. O passo **Carregar o Certificado de Assinatura de Código** será preciso só se distribuir aplicações de linha de negócio (LOB) não disponíveis em dispositivos da Loja Windows.
+4.  **Indique aos utilizadores como devem inscrever os respetivos dispositivos para poderem aceder aos recursos da empresa.**
 
-5.  **Indique aos utilizadores como devem inscrever os respetivos dispositivos para poderem aceder aos recursos da empresa.**
-
-    Para obter instruções de inscrição do utilizador final, veja [Inscrever o dispositivo Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md). Também pode encaminhar os utilizadores para [O que pode o administrador de TI ver ao inscrever o dispositivo no Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+    Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](../enduser/enroll-your-device-in-intune-windows.md). Também pode encaminhar os utilizadores para [O que pode o administrador de TI ver ao inscrever o dispositivo no Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
     Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
     - [O que dizer aos seus utilizadores finais sobre a utilização do Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Não é necessário qualquer ação adicional, a não ser que pretenda implement
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

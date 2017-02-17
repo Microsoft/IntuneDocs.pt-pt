@@ -4,7 +4,7 @@ description: "Ative a gestão de dispositivos móveis (MDM) para PCs Windows, in
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 11/29/2016
+ms.date: 01/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 31d58d9973cca4023186731a5411c9c9e830e32a
-ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: f4f3b89cf066bcc98d043f66d4d40fd9d9ca3fd5
 
 
 ---
@@ -39,6 +39,8 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
 
 2. **Criar CNAMEs** (opcional)<br>Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
+    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://enrollment.manage.microsoft.com. 
+
     Se atualmente tiver um CNAME no DNS que redireciona EnterpriseEnrollment.contoso.com para manage.microsoft.com, sugerimos que o substitua por um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. Esta alteração é recomendada, uma vez que o ponto final de manage.microsoft.com vai ser preterido para as inscrições numa versão futura.
 
     Os registos de recursos CNAME têm de ter as seguintes informações:
@@ -58,9 +60,7 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
 
 3.  **Verificar o CNAME**<br>Na [Consola de administração do Intune](http://manage.microsoft.com), selecione **Admin** &gt; **Mobile Device Management** &gt; **Windows**. Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, selecione **Testar Deteção Automática**.
 
-4.  **Passos opcionais**<br>O passo **Adicionar as Chaves de Sideload** não é necessário para o Windows 10. O passo **Carregar o Certificado de Assinatura de Código** só é necessário se distribuir aplicações de linha de negócio (LOB) não disponíveis em dispositivos da Loja Windows.
-
-6.  **Indique aos utilizadores como devem inscrever os dispositivos e o que esperar quando passarem a ser geridos.**
+4.  **Indique aos utilizadores como devem inscrever os dispositivos e o que esperar quando passarem a ser geridos.**
 
     Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
 
@@ -72,6 +72,6 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
