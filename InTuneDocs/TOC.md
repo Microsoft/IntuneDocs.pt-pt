@@ -6,6 +6,7 @@
 ### [Criar políticas e publicar aplicações](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Outras opções e extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Converter numa subscrição paga](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [FAQ sobre MAM e proteção de aplicações](understand-explore/mam-faq.md)
 ## [Cenários comuns](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -165,13 +166,13 @@
 #### [Ativar a política de conformidade de proteção contra ameaças de dispositivos](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteger os dados da aplicação com MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Portal do Azure para políticas de MAM](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Preparar-se para configurar políticas de MAM](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Criar e implementar políticas de MAM](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Políticas de MAM para Android](deploy-use/android-mam-policy-settings.md)
-#### [Políticas de MAM para iOS](deploy-use/ios-mam-policy-settings.md)
-#### [Validar políticas de MAM](deploy-use/validate-mobile-application-management.md)
-#### [Monitorizar a conformidade da política](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Portal do Azure para políticas de proteção de aplicações](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Preparar-se para configurar políticas de proteção de aplicações](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Criar e implementar políticas de proteção de aplicações](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Políticas de proteção de aplicações para Android](deploy-use/android-mam-policy-settings.md)
+#### [Políticas de proteção de aplicações para iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Validar as políticas de proteção de aplicações](deploy-use/validate-mobile-application-management.md)
+#### [Monitorizar a conformidade da política de proteção de aplicações](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gerir a transferência de dados entre aplicações iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Consola de administração do Intune para políticas MAM](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,7 +183,6 @@
 #### [Aplicações LOB em dispositivos não geridos pelo Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Utilizar o SDK quando escreve uma aplicação](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [FAQ sobre MAM e proteção de aplicações](deploy-use/mam-faq.md)
 
 ## Extinguir aplicações e dados
 ### [Utilizar a eliminação completa ou seletiva](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [Glossário](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
