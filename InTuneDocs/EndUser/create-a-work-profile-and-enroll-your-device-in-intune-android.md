@@ -1,11 +1,11 @@
 ---
-title: Criar um perfil de trabalho e inscrever o seu dispositivo no Intune | Documentos da Microsoft
-description: Descreve como encriptar dispositivos Android
+title: Inscrever o seu dispositivo com um perfil de trabalho | Documentos da Microsoft
+description: Como tornar dispositivos Android mais seguros com perfis de trabalho.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -71,7 +73,7 @@ Para criar um perfil de trabalho:
 
     Durante breves momentos verá a mensagem "A inscrever o seu dispositivo".
 
-11. Quando o ecrã **Configuração de Acesso à Empresa** mostrar que foi tudo configurado corretamente, toque em **CONTINUAR**. 
+11. Quando o ecrã **Configuração de Acesso à Empresa** mostrar que foi tudo configurado corretamente, toque em **CONTINUAR**.
 
     ![A Configuração de Acesso à Empresa mostra que o perfil de trabalho e a inscrição estão concluídos](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -87,8 +89,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 1ada4c83d848d30877bd3afa0a6a706880372b4a
+ms.sourcegitcommit: 69e11110d41c4029a52d690d4134b76912e49db3
+ms.openlocfilehash: 5f77b7c9eadc9f066a148a813f3a750e220b3981
 
 
 ---
@@ -26,12 +27,12 @@ ms.openlocfilehash: 1ada4c83d848d30877bd3afa0a6a706880372b4a
 
 Quando tenta encriptar um dispositivo, está a encapsular as informações do mesmo numa camada de código de proteção que impede pessoas não autorizadas de acederem ao mesmo. Como um dos passos para garantir que as suas informações estão protegidas, a sua organização exige que ative o BitLocker.
 
-O BitLocker é um software que encripta a sua unidade e ajuda a proteger os seus dados. Siga [estas instruções](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) para ativar o BitLocker no Windows 10, consulte.
+O BitLocker é um software que encripta a sua unidade e ajuda a proteger os seus dados. Siga [estas instruções](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) para ativar o BitLocker em dispositivos com Windows 10.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 
