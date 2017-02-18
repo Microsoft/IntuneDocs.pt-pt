@@ -1,11 +1,11 @@
 ---
-title: "O que acontece se anular a inscrição do seu dispositivo iOS no Intune? | Documentos da Microsoft"
+title: "O que acontece se anular a inscrição do seu dispositivo iOS ou macOS? | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,20 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: esmich, elocholi
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a88b89114db0f9d76c783bf99ff55e4eb4107865
+ms.sourcegitcommit: 9b2eba939bccf5b1296e21868fdf3af93297b42c
+ms.openlocfilehash: e8065b2964e8995a58a2aa3e6322fb235f0829af
 
 
 ---
 
 
-# <a name="what-happens-if-you-unenroll-your-ios-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo iOS no Intune?
+# <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo iOS ou macOS no Intune?
 
-Ao anular a inscrição do dispositivo iOS no Intune:
+Quando anula a inscrição do seu dispositivo iOS ou macOS no Intune:
 
 -   O seu dispositivo deixa de ser apresentado no Portal da Empresa.
 
@@ -48,6 +49,6 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

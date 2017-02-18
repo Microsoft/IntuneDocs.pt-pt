@@ -1,11 +1,11 @@
 ---
-title: "Definições de política de conformidade para Android for Work | Documentos da Microsoft"
+title: "Definições de conformidade do Android for Work | Documentos da Microsoft"
 description: "Este tópico descreve as definições de política de conformidade do dispositivo para dispositivos Android que são compatíveis com o Android for Work."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1b84b7137bd01b695d20bea67d77c694f2533b4e
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: 2b53e7a410d0ce268ce395c08161095af42857b7
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Android for Work no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 As definições de política descritas neste tópico aplicam-se a dispositivos Android for Work.
 
@@ -69,8 +68,8 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
 
 - **Exigir que a depuração USB esteja desativada**: uma vez que a depuração USB já se encontra desativada em dispositivos Android for Work, não necessita de configurar esta definição.
 
-- **Nível mínimo de correção de segurança Android**: utilize esta definição para especificar o nível mínimo de correção Android.  Os dispositivos que não tenham, pelo menos, este nível de correção não serão conformes. A data tem de ser especificada no formato: AAAA-MM-DD.
-- **Exigir que a proteção contra ameaças de dispositivos seja ativada**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição para conformidade. Selecione o nível de ameaça máximo permitido, que será um dos seguintes:
+- **Nível do patch de segurança mínimo Android**: utilize esta definição para especificar o nível de patch de segurança mínimo de Android.  Os dispositivos que não tenham, pelo menos, este nível de correção não serão conformes. A data tem de ser especificada no formato: AAAA-MM-DD.
+- **Exigir a ativação da proteção contra ameaças de dispositivos**: utilize esta definição para assumir a avaliação de riscos da solução sugerida pela proteção contra ameaças de dispositivos como condição de conformidade. Selecione o nível de ameaça máximo permitido, que será um dos seguintes:
 
   - **Nenhum (seguro):** é o nível mais seguro. Isto significa que o dispositivo não pode ter nenhuma ameaça. Se o dispositivo detetar qualquer nível de ameaças, será avaliado como não conforme.
   - **Baixo:** o dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
@@ -80,13 +79,13 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
   Para obter mais detalhes, consulte [Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
-- **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme.
+- **SO mínimo obrigatório:** quando um dispositivo não cumpre o requisito mínimo de sistema operativo (OS), é comunicado como não sendo conforme.
   É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
-- **Versão do SO máxima permitida:** quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
+- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do sistema operativo (SO) posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até que seja feita uma alteração à regra que permita a versão do sistema operativo, este dispositivo não pode ser utilizado para aceder aos recursos da empresa.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

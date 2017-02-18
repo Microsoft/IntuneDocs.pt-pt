@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-O Intune oferece um conjunto de definições gerais incorporadas que pode configurar em dispositivos Android for Work.
+O Intune oferece um conjunto de definições gerais incorporadas que pode configurar em [dispositivos Android for Work](android-for-work.md).
 
 ## <a name="general-configuration-policy"></a>Política de configuração geral
 
@@ -60,8 +59,6 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |**Permitir a partilha de dados entre perfis de trabalho e pessoais**|Permite que as aplicações do perfil de trabalho partilhem dados com as aplicações no perfil pessoal do utilizador. Escolha entre:<br><br>- **Impedir qualquer partilha entre limites**<br>- **As aplicações no perfil de trabalho podem processar um pedido de partilha do perfil pessoal**<br>- **Sem restrições à partilha**|
 |**Ocultar notificações do perfil de trabalho quando o dispositivo está bloqueado**<br>(Android 6 e posterior)|Controlar quando mostrar as notificações do perfil de trabalho quando o dispositivo está bloqueado.|
 |**Predefinir uma política de permissões de aplicação**<br>(Android 6 e posterior)|Predefine a política de permissões para todas as aplicações do perfil de trabalho.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Definições de política personalizada
@@ -97,6 +94,6 @@ Atualmente, o Intune suporta um número limitado de políticas personalizadas do
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
