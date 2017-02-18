@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
   ![Selecionar o certificado Interno e Ad-Hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Se não planeia distribuir a aplicação e apenas pretende testá-la internamente, pode utilizar um certificado de Programação de Aplicações para iOS em alternativa ao certificado de Produção. Se utilizar um certificado de programação, certifique-se de que o perfil de aprovisionamento móvel refere os dispositivos em que a aplicação será instalada.
+
 7. Clique em **Seguinte** na parte inferior da página.
 
 8. Leia as instruções sobre a criação de um **Pedido de Assinatura de Certificado (CSR)** através da aplicação Acesso a Porta-chaves no seu computador macOS.
@@ -131,11 +135,12 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 14. Faça duplo clique no ficheiro de certificado que acabou de transferir para adicionar o certificado a um porta-chaves.
 
-15. Abra novamente o **Acesso a Porta-chaves**. Localize o certificado ao procurar **"iPhone"** na barra de pesquisa no canto superior direito na janela do Acesso a Porta-chaves. Clique com o botão direito do rato no item para aceder ao menu e clique em **Obter Informações**.
+15. Abra novamente o **Acesso a Porta-chaves**. Localize o seu certificado ao procurar o respetivo nome no canto superior direito da barra de pesquisa. Clique com o botão direito do rato no item para aceder ao menu e clique em **Obter Informações**. Nos ecrãs de exemplo, estamos a utilizar um certificado de programação em alternativa ao certificado de produção.
+
 
   ![Adicionar o certificado a um porta-chaves](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. É apresentada uma janela informativa. Desloque para baixo e procure a etiqueta **Impressões Digitais**. Copie a cadeia **SHA1** a utilizar como o parâmetro -c para a Ferramenta de Encapsulamento de Aplicações.
+16. É apresentada uma janela informativa. Desloque para baixo e procure a etiqueta **Impressões Digitais**. Copie a cadeia **SHA1** (desfocada) a utilizar como argumento "-c" para a Ferramenta de Encapsulamento de Aplicações.
 
   ![Adicionar o certificado a um porta-chaves](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ Utilize as seguintes práticas recomendadas de segurança e privacidade quando u
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

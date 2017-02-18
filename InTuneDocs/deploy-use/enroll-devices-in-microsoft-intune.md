@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
 
 
 ---
@@ -28,6 +29,8 @@ Pode inscrever dispositivos, incluindo PCs Windows, para ativar a gestão de dis
 
 Se utilizar o [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), no local ou alojado na cloud, pode ativar a gestão simples do Intune sem inscrição. Os PCs Windows também podem ser geridos com o [software de cliente do Intune](#manage-windows-pcs-with-intune).
 
+Por predefinição, os dispositivos para todas as plataformas têm permissão para serem inscritos no Intune. Para bloquear a inscrição de dispositivos, inicie sessão no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com as suas credenciais de administrador. Selecione **Admin** > **Gestão de Dispositivos Móveis** > **Regras de Inscrição** e, em seguida, desmarque as caixas de verificação aplicáveis às plataformas que quer bloquear.
+
 ## <a name="overview-of-device-enrollment-methods"></a>Descrição geral dos métodos de inscrição para dispositivos
 
 A seguinte tabela mostra métodos de inscrição do Intune, bem como as funcionalidades suportadas e os requisitos de cada método. As funcionalidades e os requisitos encontram-se descritos abaixo.
@@ -38,41 +41,41 @@ A seguinte tabela mostra métodos de inscrição do Intune, bem como as funciona
 
 **Métodos de inscrição do iOS**
 
-| **Método** |  **Eliminação necessária?** |    **Afinidade**    |   **Bloqueio** | **Detalhes** |
+| **Método** |    **Eliminação necessária?** |    **Afinidade**    |    **Bloqueio** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**| Não |    Não  | Não|[Mais informações](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    | [Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|    Sim |    Opcional |    Opcional|[Mais informações](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**|    Sim |    Opcional |    Não| [Mais informações](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**|    Não |    Não    | Não|[Mais informações](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Métodos de inscrição do Windows**
 
-| **Método** |  **Eliminação necessária?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Eliminação necessária?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sim|   Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Sim|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de inscrição do Android**
 
-| **Método** |  **Eliminação necessária?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Eliminação necessária?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de inscrição do Android for Work**
 
-| **Método** |  **Eliminação necessária?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Eliminação necessária?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Não|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    Não |Não |Não    |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de inscrição do macOS**
 
-| **Método** |  **Eliminação necessária?** |    **Afinidade**    |   **Bloqueio** | **Detalhes**|
+| **Método** |    **Eliminação necessária?** |    **Afinidade**    |    **Bloqueio** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sim|   Sim |   Não | [Mais informações](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Sim|    Sim |    Não | [Mais informações](prerequisites-for-enrollment.md)|
+
 
 Para ver uma série de perguntas que o ajudem a encontrar o método correto, veja [Escolher como inscrever dispositivos](/intune/get-started/choose-how-to-enroll-devices1).
 
@@ -89,15 +92,15 @@ A gestão de inscrição de dispositivos (DEM) é uma conta especial do Intune u
 
 ### <a name="dep"></a>DEP
 A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo **iOS Supervisionado** que, por sua vez, permite:
-  - Inscrição bloqueada
-  - Modo de Local Público e outras restrições e configurações avançadas
+  -    Inscrição bloqueada
+  -    Modo de Local Público e outras restrições e configurações avançadas
 
 Saiba mais sobre o [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os utilizadores recebem os seus dispositivos, é-lhes pedido que executem o Assistente de Configuração para inscreverem os seus dispositivos. Este método suporta o modo **iOS Supervisionado** que, por sua vez, permite:
-  - Inscrição bloqueada
-  - Modo de Local Público e outras restrições e configurações avançadas
+  -    Inscrição bloqueada
+  -    Modo de Local Público e outras restrições e configurações avançadas
 
 Saiba mais sobre [inscrição através do Assistente de Configuração com o Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
@@ -130,6 +133,6 @@ O Intune pode gerir as seguintes plataformas de dispositivos:
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

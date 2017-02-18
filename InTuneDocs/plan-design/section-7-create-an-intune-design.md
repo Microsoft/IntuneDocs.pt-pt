@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -411,6 +412,6 @@ A próxima secção fornece orientações sobre o [processo de implementação d
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 
