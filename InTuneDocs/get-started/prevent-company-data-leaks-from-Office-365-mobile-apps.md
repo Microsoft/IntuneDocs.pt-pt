@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
@@ -32,9 +33,9 @@ Gostaria de permitir que os utilizadores finais acedem ao Office 365 e aos dados
 Se sim, o Microsoft Intune permite-lhe definir políticas MAM para as aplicações móveis do Office 365 no iOS e no Android, incluindo restrições de cortar/copiar/colar, impedir "Guardar como", definição de requisição de PIN e a capacidade de apagar remotamente dados protegidos MAM.  Esta ação protege os dados da empresa sem necessidade de que utilizadores inscrevam os respetivos dispositivos numa solução MDM, mantendo, ao mesmo tempo, uma excelente experiência de utilizador final com aplicações do Office mobile.
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
-1.  Obter uma compreensão básica sobre [como funciona a gestão de aplicações móveis do Intune (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
-2.  Descura [o que tem de fazer antes de poder criar políticas MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) no portal do Azure.
-3.  [Criar e implementar políticas de MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) com o Intune.
+1.    Obter uma compreensão básica sobre [como funciona a gestão de aplicações móveis do Intune (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
+2.    Descura [o que tem de fazer antes de poder criar políticas MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) no portal do Azure.
+3.    [Criar e implementar políticas de MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) com o Intune.
 
 ### <a name="additional-information"></a>Informações adicionais:
 - [Experiência de utilizador final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) utilizando aplicações com MAM ativada.

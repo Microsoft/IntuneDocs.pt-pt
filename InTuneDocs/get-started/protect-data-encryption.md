@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Este guia de introdução é um bom recurso se cumprir os seguintes pré-requisi
 Este guia pode ajudá-lo a proteger a sua empresa contra a perda de dados ao aplicar códigos de acesso e a encriptação de dados, através de políticas nas aplicações móveis que os funcionários utilizam para aceder a dados confidenciais, sem necessidade de inscrição completa numa qualquer solução de gestão de dispositivos. O Microsoft Intune permite definir políticas de gestão de aplicações móveis (MAM) em aplicações móveis do Office para [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) e [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android). Esta abordagem protege dados do O365 sem precisar de que os utilizadores inscrevam os respetivos dispositivos numa solução de gestão de dispositivos móveis, mantendo também uma excelente experiência de utilizador final com aplicações móveis do Office.
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
-1.  [Rever como pode proteger dados de aplicações](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [Configurar políticas de gestão de aplicações móveis](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [Criar e implementar políticas de gestão de aplicações móveis](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [Rever como pode proteger dados de aplicações](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [Configurar políticas de gestão de aplicações móveis](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [Criar e implementar políticas de gestão de aplicações móveis](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Informações adicionais:
 - [Saiba mais sobre a experiência de utilizador final para aplicações com MAM ativada com o Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

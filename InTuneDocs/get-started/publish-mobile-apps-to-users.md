@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Gostaria que os utilizadores tivessem acesso rápido a todas as aplicações que
 Se sim, o Microsoft Intune permite-lhe publicar aplicações (Office mobile, linha interna de negócios ou outras aplicações de ambiente de trabalho e móveis) num portal comum único: o [a aplicação Portal da empresa do site](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
-1.  [Inscrever os dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) na gestão de dispositivos móveis do Intune.
-2.  [Adicionar ao Intune as aplicações](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que pretende implementar nos dispositivos inscritos.
-3.  [Implementar aplicações através do Intune](/intune/deploy-use/deploy-apps) para os dispositivos inscritos.
+1.    [Inscrever os dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) na gestão de dispositivos móveis do Intune.
+2.    [Adicionar ao Intune as aplicações](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que pretende implementar nos dispositivos inscritos.
+3.    [Implementar aplicações através do Intune](/intune/deploy-use/deploy-apps) para os dispositivos inscritos.
 
 ### <a name="additional-information"></a>Informações adicionais:
 Se a publicação de aplicações móveis do Office for feita com a intenção de utilizar as capacidades MAM do Intune para gerir a proteção de perda de dados destas aplicações então, terá de ser [atribuída uma licença de utilizador para o Office 365](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) a cada utilizador final ao qual foram atribuídas políticas MAM.
