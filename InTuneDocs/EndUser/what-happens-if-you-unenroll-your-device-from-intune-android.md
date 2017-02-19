@@ -1,11 +1,11 @@
 ---
-title: "O que acontece se anular a inscrição do seu dispositivo Android no Intune? | Documentos da Microsoft"
+title: "O que acontece se anular a inscrição do seu dispositivo Android? | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 3cbc2b085ec8ad04e00527fda0665c905314aaea
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
 
 
 ---
@@ -30,7 +31,7 @@ Ao anular a inscrição do dispositivo Android no Intune:
 
 -   O administrador de TI já não gere o dispositivo.
 
--   Perde o acesso aos dados e aos recursos da empresa.
+-    Perde o acesso aos dados e aos recursos da empresa.
 
 -   O seu dispositivo deixa de ser apresentado no Portal da Empresa.
 
@@ -46,6 +47,6 @@ Precisa de ajuda? Contacte o administrador de TI (verifique as informações de 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

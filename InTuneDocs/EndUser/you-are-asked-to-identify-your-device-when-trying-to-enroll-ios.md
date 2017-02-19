@@ -1,11 +1,11 @@
 ---
-title: "É-lhe pedido para identificar o seu dispositivo quando está a tentar inscrever-se | Documentos da Microsoft"
+title: "Tem de identificar o seu dispositivo iOS quando está a tentar inscrever-se | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 94380907981fbb50892b35244ef5eecab8fd8e7b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a1a669b12e3c072bf532dc25352889015aec7d47
 
 
 ---
 
 
-# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>É-lhe pedido para identificar o seu dispositivo quando está a tentar inscrever-se
+# <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Tem de identificar o seu dispositivo quando está a tentar inscrever-se
 
 Se estiver a tentar inscrever o seu dispositivo iOS ou macOS no Intune e vir um ecrã que lhe pede para identificá-lo, significa que pelo menos um dos seus dispositivos já foi inscrito e atribuído à sua conta através de um método que não a aplicação Portal da Empresa. Para que a aplicação Portal da Empresa funcione corretamente, tem de identificar se o dispositivo que está a utilizar já foi inscrito no Intune.
 
@@ -36,6 +37,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

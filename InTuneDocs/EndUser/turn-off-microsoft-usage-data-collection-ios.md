@@ -1,11 +1,11 @@
 ---
-title: Como desativar a recolha de dados da Microsoft | Documentos da Microsoft
+title: Como desativar a recolha de dados da Microsoft para iOS | Documentos da Microsoft
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,17 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: cea226a32c5c2c6d49f1444e55a986d0c68d5448
 
 
 ---
 
-# <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a recolha de dados da Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Como desativar a recolha de dados da Microsoft
 
-A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazêmo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. Os seus administradores de TI não têm controlo sobre a recolha destes dados e não podem alterar a sua seleção desta definição.
+A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazemo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. Os seus administradores de TI não têm controlo sobre a recolha destes dados e não podem alterar a sua seleção desta definição.
 
 Se quiser desativar a recolha de dados de utilização no seu dispositivo iOS, abra as **Definições**, toque em **Portal da Empresa** e, em seguida, desative os **Dados de Utilização**.
 
@@ -33,6 +34,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

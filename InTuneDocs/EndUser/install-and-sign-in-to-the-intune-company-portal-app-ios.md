@@ -1,11 +1,11 @@
 ---
-title: "Instalar e iniciar sessão na aplicação Portal da Empresa do Intune | Documentos da Microsoft"
+title: "Instalar e iniciar sessão na aplicação Portal da Empresa | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: fa7527d3dad71fada2abd0aeb8e2dd0f76b983b3
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
 
 
 ---
 
 
-# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Instalar e iniciar sessão na aplicação Portal da Empresa do Intune
+# <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e iniciar sessão na aplicação Portal da Empresa
 
 O Portal da Empresa é uma aplicação que instala no seu dispositivo iOS para lhe conceder acesso às suas aplicações empresariais e escolares, e-mail e de rede.  Antes de poder obter acesso, tem de instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplicação para inscrever o dispositivo no Microsoft Intune. Para obter mais informações, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -42,6 +43,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

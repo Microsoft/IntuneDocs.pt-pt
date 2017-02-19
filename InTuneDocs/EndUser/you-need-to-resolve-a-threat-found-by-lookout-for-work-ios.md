@@ -1,11 +1,11 @@
 ---
-title: "Necessita de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo iOS | Documentos da Microsoft"
+title: "Resolver ameaças encontradas pelo Lookout for Work em dispositivos iOS | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,17 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 9e958dc7421ac9373d80268db654c87c61ab3729
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
 
 
 ---
 
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Tem de resolver uma ameaça encontrada pelo Lookout for Work
 
-O Lookout for Work encontrou uma potencial ameaça no seu dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, aplicações e ficheiros. A mensagem que vê poderá ter o seguinte aspeto: 
+O Lookout for Work encontrou uma potencial ameaça no seu dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, aplicações e ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
 
 ![Mensagem de não conformidade do Lookout for Work](./media/ios-lfw-noncompliant-in-ssp.png)
 
@@ -51,8 +52,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

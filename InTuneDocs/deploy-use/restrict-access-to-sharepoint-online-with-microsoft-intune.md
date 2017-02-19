@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso ao SharePoint Online | Documentos da Microsoft
+title: Proteger o SharePoint Online | Documentos da Microsoft
 description: Proteger e controlar o acesso ao e-mail da empresa no SharePoint Online com o acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Restringir o acesso ao SharePoint Online com o Microsoft Intune
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Proteger o acesso ao SharePoint Online com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Utilize o acesso condicional do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar o acesso a ficheiros que estão localizados no SharePoint Online.
 O acesso condicional tem dois componentes:
 - Uma política de conformidade de dispositivos que o dispositivo tem de cumprir para ser considerado compatível.
 - Uma política de acesso condicional onde especifica as condições que o dispositivo tem de cumprir para poder aceder ao serviço.
-Para saber mais sobre como funciona o acesso condicional, leia o tópico [Restringir o acesso ao e-mail, ao Office 365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como funciona o acesso condicional, leia o tópico [Proteger o acesso ao e-mail, ao Office&365; e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Pode implementar as políticas de conformidade e de acesso condicional aos utilizadores. Qualquer dispositivo que o utilizador utilize para aceder aos serviços é analisado relativamente à conformidade com as políticas.
 
@@ -66,7 +70,7 @@ As seguintes versões são suportadas:
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 ou posterior
 - Windows Phone 8.1 e posterior
 
-Pode restringir o acesso ao SharePoint Online quando os dispositivos **iOS** e **Android** acedem a partir de um browser. O acesso só é permitido aos browsers suportados em dispositivos compatíveis:
+Pode proteger o acesso ao SharePoint Online quando os dispositivos **iOS** e **Android** acedem a partir de um browser. O acesso só é permitido aos browsers suportados em dispositivos compatíveis:
 * Safari (iOS)
 * Chrome (Android)
 * Browser Gerido do Intune (iOS e Android 5.0 e posteriores)
@@ -140,7 +144,7 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
         Esta opção requer que todos os dispositivos que servem para aceder ao **SharePoint Online** estejam inscritos no Intune e estejam em conformidade com as políticas. Qualquer aplicação cliente que utilize a **autenticação moderna** está sujeita à política de acesso condicional. Se a plataforma não for atualmente suportada pelo Intune, o acesso ao **SharePoint Online** está bloqueado.
 
         Selecionar a opção **Todas as plataformas** significa que o Azure Active Directory aplica esta política a todos os pedidos de autenticação, independentemente da plataforma que é comunicada pela aplicação de cliente. Todas as plataformas terão de estar inscritas e compatíveis, exceto:
-        *   Os dispositivos Windows terão de ser inscritos e estar em conformidade, o domínio deve estar associado ao Active Directory no local, ou ambos.
+        *    Os dispositivos Windows terão de ser inscritos e estar em conformidade, o domínio deve estar associado ao Active Directory no local, ou ambos.
         * Plataformas não suportadas, como Mac. No entanto, as aplicações que utilizam autenticação moderna proveniente destas plataformas continuarão a ser bloqueadas.
 
     -   **Plataformas específicas**
@@ -192,10 +196,10 @@ Selecione qualquer grupo de dispositivos móveis. Em seguida, no separador **Dis
 -   **Dispositivos registados com o AAD e que são compatíveis**. Estes dispositivos podem aceder ao SharePoint Online.
 
 ### <a name="see-also"></a>Consulte também
-[Restringir o acesso ao e-mail e aos serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Proteger o acesso ao e-mail e aos serviços do O365 com o Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

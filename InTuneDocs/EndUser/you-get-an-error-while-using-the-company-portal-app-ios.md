@@ -1,11 +1,11 @@
 ---
-title: "Obtenho um erro quando utilizo a aplicação Portal da Empresa | Documentos da Microsoft"
+title: "Obtém um erro na aplicação Portal da Empresa | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: e4c91d96c11847dac28142993d9825c42d9f2b31
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
 
 
 ---
 
 
-# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtenho um erro quando utilizo a aplicação Portal da Empresa
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtém um erro ao utilizar a aplicação Portal da Empresa
 
 Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo iOS, pode ajudar o seu administrador de TI a resolver o problema ao enviar-lhe informações. Pode enviar informações de erro de formas diferentes:
 
@@ -38,6 +39,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

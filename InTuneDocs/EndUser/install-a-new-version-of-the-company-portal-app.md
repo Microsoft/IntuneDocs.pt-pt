@@ -1,11 +1,11 @@
 ---
-title: "Instalar uma versão nova da aplicação Portal da Empresa | Documentos da Microsoft"
+title: "Como atualizar a aplicação Portal da Empresa | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 82679d4d9ef017dd29429b83a039f3edbfb7911d
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
 
 
 ---
 
-# <a name="install-a-new-version-of-the-company-portal-app"></a>Instalar uma versão nova da aplicação Portal da Empresa
+# <a name="how-to-update-the-company-portal-app"></a>Como atualizar a aplicação Portal da Empresa
 
 Se a sua versão da aplicação Portal da Empresa já não for suportada ou se estiver disponível uma versão mais recente da aplicação Portal da Empresa, tem de atualizá-la para uma versão posterior. Utilize os passos que correspondem ao tipo de dispositivo que tem.
 
@@ -53,6 +54,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

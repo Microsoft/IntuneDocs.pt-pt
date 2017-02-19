@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso ao Dynamics CRM Online | Documentos da Microsoft
+title: Proteger o Dynamics CRM Online | Documentos da Microsoft
 description: Proteger e controlar o acesso ao Dynamics CRM online com acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: abbfeb493d9e85eaa601b127d618996f2e01a01d
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Restringir o acesso ao Dynamics CRM Online com o Intune
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteger o acesso ao Dynamics CRM Online com o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Pode controlar o acesso ao Microsoft Dynamics CRM Online a partir de dispositivos iOS e Android com acesso condicional do Microsoft Intune.  O acesso condicional do Intune tem dois componentes:
 * Uma [política de conformidade de dispositivos](introduction-to-device-compliance-policies-in-microsoft-intune.md) que o dispositivo tem de cumprir para ser considerado compatível.
 * Uma [política de acesso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) onde especifica as condições que o dispositivo tem de cumprir para poder aceder ao serviço.
 
-Para saber mais sobre como funciona o acesso condicional, leia o artigo [Restringir o acesso ao e-mail, 0365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao e-mail, O365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
 > Para implementar o acesso condicional, tem de ter subscrições do Intune e do Azure Active Directory Premium e os utilizadores têm de estar licenciados para ambos os produtos. A **subscrição do Enterprise Mobility + Security (EMS)** inclui as subscrições do Intune e do Azure Active Directory Premium. Para obter mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se não tiver uma subscrição do EMS, pode obter uma subscrição do Azure Active Directory Premium. Consulte a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -78,8 +82,8 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
   * **iOS**
   * **Android**
 4.  Em **Grupos Visados**, escolha **Modificar** para selecionar os grupos de segurança do Azure Active Directory aos quais será aplicada a política. Pode optar por direcionar esta opção a todos os utilizadores ou apenas a um grupo de utilizadores específico.
-5.  Como opção, em **Grupos Excluídos**, selecione **Modificar** para selecionar os grupos de segurança do Azure Active Directory que estão excluídos desta política.
-6.  Quando tiver terminado, escolha **Guardar**.
+5.    Como opção, em **Grupos Excluídos**, selecione **Modificar** para selecionar os grupos de segurança do Azure Active Directory que estão excluídos desta política.
+6.    Quando tiver terminado, escolha **Guardar**.
 
 Configurou o acesso condicional para o Dynamics CRM. Não tem de implementar a política de acesso condicional, pois esta entra em vigor imediatamente.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorizar a conformidade e as políticas de acesso condicional
@@ -92,15 +96,15 @@ Escolha qualquer grupo de dispositivos móveis e, em seguida, no separador **Dis
 * **Dispositivos registados com o AAD e que são compatíveis**. Estes dispositivos podem aceder ao Dynamics CRM.
 
 ##  <a name="next-steps"></a>Passos seguintes
-* [Acesso restrito ao Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Proteger o acesso ao Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Acesso restrito ao Exchange no local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Proteger o acesso ao Exchange no local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Restringir o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Proteger o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

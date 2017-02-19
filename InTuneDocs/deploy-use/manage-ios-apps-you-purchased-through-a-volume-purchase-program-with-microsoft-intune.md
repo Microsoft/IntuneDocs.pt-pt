@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1f4bffd4aad8915034b3e6f4f962aed4d5ccd731
-ms.openlocfilehash: 29ed9bea92b23998899fcf57502a9982377c3eb6
+ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
+ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
 
 
 ---
@@ -45,7 +46,7 @@ Antes de começar, terá de obter um token VPP da Apple e carregá-lo para a sua
 * Por predefinição, o Intune sincroniza-se com o serviço Apple VPP duas vezes por dia. Pode iniciar uma sincronização manual em qualquer altura.
 * Após importar o token VPP para o Intune, não importe o mesmo token para nenhuma outra solução de gestão de dispositivos. Se o fizer, pode perder atribuições de licenças e registos de utilizadores.
 * Antes de começar a utilizar o VPP iOS com o Intune, remova as contas de utilizador VPP existentes criadas com outros fornecedores de gestão de dispositivos móveis (MDM). O Intune não irá sincronizar essas contas de utilizador no serviço como medida de segurança. O Intune só irá sincronizar os dados do serviço Apple VPP que foram criados pelo Intune.
-* Não é possível implementar as aplicações iOS VPP para os dispositivos do utilizador que foram inscritos utilizando o Protocolo de Inscrição de Dispositivos (DEP).
+* Só pode implementar as aplicações VPP do iOS em dispositivos de utilizadores que tenham sido inscritos com o Protocolo de Inscrição de Dispositivos (DEP) se a afinidade de utilizador do dispositivo estiver configurada.
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obter e carregar um token Apple VPP
 
@@ -94,6 +95,6 @@ Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

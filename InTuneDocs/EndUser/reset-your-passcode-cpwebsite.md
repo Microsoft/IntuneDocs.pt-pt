@@ -1,33 +1,35 @@
 ---
-title: "Repor o código de acesso do dispositivo a partir do site do Portal da Empresa | Documentos da Microsoft"
+title: "Como repor o código de acesso a partir do site do Portal da Empresa | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a8ce59755a74199eda6865feda68c0613d10c2a7
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Repor o código de acesso do dispositivo a partir do site do Portal da Empresa
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
 Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para efetuar a reposição. Pode utilizar o site do Portal da Empresa para gerir computadores e dispositivos que tenha inscrito no Intune e para realizar a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
 > [!NOTE]
-> Poderá não ver o botão **Repor Código de Acesso** no site do Portal da Empresa, dependendo de como o administrador de TI configurou o Intune. A reposição do código de acesso não é suportada em dispositivos Windows 8.1.
+> É possível que não veja o botão **Repor Código de Acesso** no site do Portal da Empresa. Se não o vir, terá de contactar o seu administrador de TI para obter suporte através do site do Portal da Empresa.
 
 Para repor o código de acesso:
 
@@ -47,15 +49,14 @@ Para repor o código de acesso:
 
     Consulte a tabela para ver como funciona a opção **Repor Código de Acesso** no seu dispositivo.
 
-    |Plataforma|Support|
+    |Tipo de Dispositivo|O Que Acontece Quando Repõe|
     |------------|-----------|
-    |Android|Cria um código de acesso alfanumérico temporário.|
-    |iOS|Remove o código de acesso do dispositivo e não cria um código de acesso temporário. Se estiver a utilizar o Touch ID, terá de configurá-lo novamente no seu dispositivo, porque este é removido quando o código de acesso for reposto.|
-    |Windows 10 (apenas para dispositivos móveis)|Cria um código de acesso alfanumérico temporário. O Windows Hello é suportado.|
-    |Windows Phone 8.1|Cria um código de acesso numérico temporário.|
-    Depois de desbloquear o dispositivo, pode definir um novo código de acesso ao aceder a **Definições** no seu dispositivo.
+    |Android|Remove o código de acesso existente e cria um código de acesso alfanumérico temporário|
+    |iOS|Remove o código de acesso existente e não cria um código de acesso temporário. Se estiver a utiliza a deteção de impressão digital do Touch ID para abrir o dispositivo ou efetuar compras, terá de voltar a configurá-la.|
+    |Windows 10 Mobile|Remove o código de acesso existente e cria um código de acesso alfanumérico temporário. Se estiver a utilizar o reconhecimento de rosto do Windows Hello para iniciar sessão, este continuará a ser suportado.|
+    |Windows Phone 8.1|Remove o código de acesso existente e cria um código de acesso numérico temporário.|
 
-5.  Desbloqueie o dispositivo e, em seguida, defina um novo código de acesso ou altere o código de acesso temporário, acedendo a **Definições** no seu dispositivo.
+    5.  Desbloqueie o dispositivo e defina um novo código de acesso ou altere o código de acesso temporário ao aceder a **Definições** no seu dispositivo.
 
     Para ver uma notificação a confirmar que a palavra-passe foi reposta com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
@@ -63,6 +64,6 @@ Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as inform
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

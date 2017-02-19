@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso ao Skype para Empresas Online | Documentos da Microsoft
+title: Proteger o Skype para Empresas Online | Documentos da Microsoft
 description: Proteger e controlar o acesso ao Skype para Empresas com o acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 23199b84ca1acf202442e096c637f0dbad53f3e0
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Restringir o acesso ao Skype para Empresas Online com o Microsoft Intune
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteger o acesso ao Skype para Empresas Online com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Pode utilizar a política de acesso condicional para o **Skype para Empresas Online** para controlar o acesso ao Skype para Empresas Online.
 O acesso condicional tem dois componentes:
 - Uma política de conformidade de dispositivos que o dispositivo tem de cumprir para ser considerado compatível.
 - Uma política de acesso condicional onde especifica as condições que o dispositivo tem de cumprir para poder aceder ao serviço.
-Para saber mais sobre como funciona o acesso condicional, leia o artigo [Restringir o acesso ao e-mail e a serviços do Office 365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao e-mail e aos serviços do Office&365;](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Quando um utilizador visado tentar utilizar o Skype para Empresas Online no respetivo dispositivo, ocorre a seguinte avaliação:
 
@@ -117,6 +121,6 @@ Selecione qualquer grupo de dispositivos móveis. Em seguida, no separador **Dis
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
