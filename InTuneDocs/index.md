@@ -15,8 +15,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
-ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -31,12 +31,12 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
       <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em Destaque</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">Mais de 150 licenças? Tirar partido dos benefícios do FastTrack</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Tem mais de&150; licenças? Tire partido dos benefícios do FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Formas comuns de utilizar o Intune</a></li>
           <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune na pré-visualização do portal do Azure</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteja o acesso aos recursos da empresa</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteger o acesso aos recursos da empresa</a></li>
           <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Trabalhar com o Intune no Microsoft Graph</a></li>
           <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Recursos sobre a experiência do utilizador final com o Microsoft Intune</a></li>
         </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>O que dizer aos utilizadores finais</h3>
                     <p>Compreenda os passos que os seus utilizadores finais têm de efetuar para utilizarem os seus dispositivos com o Intune e partilhar estas informações com os utilizadores finais, de modo a ajudá-los a concluir as tarefas por si próprios.</p>
                   </a>
@@ -285,6 +285,6 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 
