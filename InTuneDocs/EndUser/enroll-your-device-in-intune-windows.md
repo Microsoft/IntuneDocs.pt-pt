@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 850a85e724a15859d925bd466171212c75d91691
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: 850a85e724a15859d925bd466171212c75d91691
 
 # <a name="enroll-your-windows-device-in-intune"></a>Inscrever o seu dispositivo Windows no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Windows para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Windows para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador de TI pode e não pode ver no seu dispositivo)](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 Para se inscrever, utilize a ligação correspondente ao dispositivo que está a utilizar:
 
@@ -35,6 +36,6 @@ Para se inscrever, utilize a ligação correspondente ao dispositivo que está a
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

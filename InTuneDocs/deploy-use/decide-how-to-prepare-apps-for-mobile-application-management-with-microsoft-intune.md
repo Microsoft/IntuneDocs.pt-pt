@@ -1,11 +1,11 @@
 ---
-title: "Preparar as aplicações para gestão de aplicações móveis | Documentos da Microsoft"
+title: "Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune | Documentos da Microsoft"
 description: "As informações neste tópico ajudam-no a decidir quando deve utilizar a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócio personalizadas utilizem políticas de gestão de aplicações móveis."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 8ee3f539e619d4646013db4982ea96223eea5896
+ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
+ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Preparar aplicações de linha de negócio para MAM
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -109,6 +109,6 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

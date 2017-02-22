@@ -1,35 +1,41 @@
 ---
-title: Inscrever o dispositivo Android no Intune | Microsoft Intune
+title: Inscrever o seu dispositivo Android no Intune | Documentos da Microsoft
 description: Descreve como encriptar dispositivos Android no Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/09/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
-ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: b1de425a00e3c4200f71c8bf03661e4d0aca45c7
 
 
 ---
 
 
-# <a name="enroll-your-android-device-in-intune"></a>Inscrever o dispositivo Android no Intune
+# <a name="enroll-your-android-device-in-intune"></a>Inscrever o seu dispositivo Android no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Android para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, o seu departamento de TI pode gerir esses recursos de trabalho ou da escola, mantê-los seguros e dar-lhe a liberdade para utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, consulte [O que acontece quando instalo a aplicação Portal da Empresa e inscrevo o meu dispositivo?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo Android para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, o seu departamento de TI pode gerir esses recursos de trabalho ou da escola, mantê-los seguros e dar-lhe a liberdade para utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para mais informações sobre a inscrição, consulte [O que acontece quando instalo a aplicação Portal da Empresa e inscrevo o meu dispositivo?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-Estas instruções de inscrição destinam-se a dispositivos Samsung KNOX Android e a dispositivos Android "nativos" (não Samsung Knox). Para verificar se tem um dispositivo Samsung KNOX, aceda a **Definições** &gt; **Acerca do dispositivo**. Se não vir a "versão KNOX" aí listada, tem um dispositivo Android nativo.
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+Estas instruções de inscrição destinam-se a dispositivos nativos e a dispositivos Samsung KNOX Android. Samsung KNOX é um tipo de segurança utilizado por determinados dispositivos Samsung para proporcionar proteção adicional fora de o que proporciona o Android nativo. Para verificar se tem um dispositivo Samsung KNOX, aceda a **Definições** > **Acerca do dispositivo**. Se não vir a "versão KNOX" aí listada, tem um dispositivo Android nativo.
 
 Antes ou depois da inscrição, poderá ser-lhe pedido para escolher uma categoria que melhor descreve como utiliza o seu dispositivo. O seu administrador de TI utiliza esta categoria para ajudar a verificar as aplicações a que tem acesso.
 
-Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [enviar erros de inscrição ao administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md).
+Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [enviar erros de inscrição ao administrador de TI](send-enrollment-errors-to-your-it-admin-android.md).
 
 **Para inscrever o seu dispositivo Android:**
 
@@ -68,7 +74,7 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 10.  Se estiver a utilizar o Android 6.0 ou posterior, efetue este passo. Caso contrário, avance para o passo seguinte.
 
     Se o administrador de TI tiver configurado determinadas políticas, poderá ver as seguintes mensagens:
-    -   **Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?**
+    -    **Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -76,7 +82,7 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 
     Se negar o acesso, a mensagem aparecerá quando iniciar sessão novamente no Portal da Empresa, mas pode desativar futuras mensagens ao tocar na caixa **Não voltar a perguntar**. Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telemóvel** e ative a permissão.
 
-    -   **Permitir que o Portal da Empresa aceda aos seus contactos?**
+    -    **Permitir que o Portal da Empresa aceda aos seus contactos?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -110,10 +116,10 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 
 Antes de tentar instalar aplicações da empresa, aceda a **Definições** &gt; **Segurança** e ative as **Origens desconhecidas**. Se não ativar esta opção antes de tentar instalar aplicações, verá a seguinte mensagem: "Instalação bloqueada. Por motivos de segurança, o dispositivo está definido para bloquear as instalações de aplicações obtidas a partir de origens desconhecidas." Pode tocar em **Definições**, na caixa de diálogo de erro, para ir para a opção **Origens desconhecidas**.
 
-Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva à equipa Android da Microsoft através do endereço wintunedroidfbk@microsoft.com.
+Ainda precisa de ajuda? Contacte o seu administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva à equipa Android da Microsoft através do endereço wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

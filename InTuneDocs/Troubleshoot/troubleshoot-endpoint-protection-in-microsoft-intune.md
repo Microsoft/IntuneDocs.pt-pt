@@ -1,11 +1,11 @@
 ---
-title: "Resolução de Problemas do Endpoint Protection | Microsoft Intune"
+title: "Resolução de problemas do Endpoint Protection | Documentos da Microsoft"
 description: "Resolva problemas quando o Endpoint Protection do Microsoft Intune está a ser utilizado."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,21 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
 
 # <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
-Utilize as informações nesta secção para o ajudar a resolver problemas ao utilizar o Endpoint Protection do Microsoft Intune.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
+Utilize as informações nesta secção para o ajudar a resolver problemas ao utilizar o Endpoint Protection do Microsoft Intune. Também pode rever as informações sobre a [resolução de problemas do Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
+Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
 
 ### <a name="endpoint-protection-error-messages"></a>Mensagens de erro do Endpoint Protection
 Esta secção descreve possíveis causas e soluções para os seguintes erros e avisos que são apresentados no painel **Estado do Endpoint Protection** na [consola de administração do Intune](https://manage.microsoft.com).
@@ -50,6 +52,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -5,7 +5,7 @@ description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através d
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 01/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,27 +14,29 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
-ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
-Os PCs Windows podem ser inscritos instalando o software de cliente do Intune. O software de cliente do Intune pode ser instalado das seguintes formas:
+Os PCs Windows podem ser inscritos instalando o software de cliente do Intune. O software de cliente do Intune pode ser instalado através dos seguintes métodos:
 
-- Instalado manualmente
-- Instalado através da Política de Grupo
-- Incluído numa imagem de disco
-- Instalado por utilizadores
+- Pelo administrador de TI:
+  - Instalação manual
+  - Instalação através de uma Política de Grupo
+  - Instalação incluída numa imagem de disco
 
-O software de cliente do Intune que foi transferido pela primeira vez contém os requisitos mínimos de software necessários para inscrever o PC na gestão do Intune. Quando um PC é inscrito, o software de cliente do Intune transfere o software de cliente completo que é necessário para a gestão do PC.
+- Pelos utilizadores finais, que instalam o cliente de software manualmente
 
-Esta série de transferências minimiza o tempo necessário para a inscrição inicial do seu PC no Intune. Também garante que, após a conclusão da segunda transferência, o cliente tem o software mais recente disponível.
+O software de cliente do Intune, que é implementado pelo administrador de TI para o utilizador ou transferido pelo utilizador final, contém o software essencial necessário para inscrever o PC na gestão do Intune. Depois de um PC ter sido inscrito, o software de cliente do Intune transfere o software de cliente completo que é necessário para gerir o PC.
+
+Esta série de transferências reduz o impacto sobre a largura de banda da rede e minimiza o tempo necessário para efetuar a inscrição inicial do PC no Intune. Também garante que, após a conclusão da segunda transferência, o cliente tem o software mais recente disponível.
 
 ## <a name="download-the-intune-client-software"></a>Transferir o software de cliente do Intune
 
-Todos os métodos, com exceção daqueles em que são os próprios utilizadores a instalar o software de cliente do Intune, necessitam que o software seja transferido para poder ser implementado.
+Todos os métodos mencionados, com exceção daqueles em que os utilizadores instalam o software de cliente do Intune manualmente, exigem que os administradores de TI transfiram primeiro o software, de modo a que este possa ser implementado posteriormente para os utilizadores finais.
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Admin (Administrador)** &gt; **Client Software Download (Transferir Software de Cliente)**.
 
@@ -43,7 +45,7 @@ Todos os métodos, com exceção daqueles em que são os próprios utilizadores 
 2.  Na página **Client Software Download (Transferência de Software de Cliente)**, clique em **Client Software Download (Transferir Software de Cliente)**. Em seguida, guarde o pacote **Microsoft_Intune_Setup.zip** que contém o software numa localização segura na sua rede.
 
     > [!NOTE]
-    > O pacote de instalação do software de cliente do Intune contém informações sobre a sua conta. Se utilizadores não autorizados conseguirem obter acesso ao pacote de instalação, poderão inscrever computadores na conta representada pelo certificado incorporado e poderão obter acesso a recursos da empresa.
+    > O pacote de instalação do software de cliente do Intune contém informações exclusivas e específicas sobre a sua conta, disponíveis num certificado incorporado. Se utilizadores não autorizados conseguirem obter acesso ao pacote de instalação, poderão inscrever computadores na conta representada pelo certificado incorporado e poderão obter acesso a recursos da empresa.
 
 3.  Extraia os conteúdos do pacote de instalação para uma localização segura na sua rede.
 
@@ -52,10 +54,10 @@ Todos os métodos, com exceção daqueles em que são os próprios utilizadores 
 
 ## <a name="deploy-the-client-software-manually"></a>Implementar o software de cliente manualmente
 
-Num computador, aceda à pasta onde se encontram os ficheiros de instalação do software de cliente. Em seguida, execute **Microsoft_Intune_Setup.exe** para instalar o software de cliente.
+Nos computadores onde pretende instalar o software de cliente, aceda à pasta onde se encontram os ficheiros de instalação do software de cliente. Em seguida, execute **Microsoft_Intune_Setup.exe** para instalar o software de cliente.
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> O estado da instalação é apresentado quando paira o rato sobre o ícone na barra de tarefas no computador cliente.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Implementar o software de cliente com uma Política de Grupo
 
@@ -72,7 +74,7 @@ Num computador, aceda à pasta onde se encontram os ficheiros de instalação do
 
 3.  Utilize a Política de Grupo para implementar software nos computadores na sua rede.
 
-    Para obter mais informações sobre como utilizar a Política de Grupo para implementar software automaticamente, consulte a documentação do Windows Server.
+    Para obter mais informações sobre como utilizar a Política de Grupo para implementar software automaticamente, veja [Group Policy for Beginners (Política de Grupos para Principiantes)](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Implementar o software de cliente como parte de uma imagem
 Pode implementar o software de cliente do Intune em computadores como parte de uma imagem de sistema operativo, ao utilizar o seguinte procedimento como guia:
@@ -98,15 +100,17 @@ Pode implementar o software de cliente do Intune em computadores como parte de u
 
 5.  Capture uma imagem do computador de referência e, em seguida, efetue a implementação nos computadores visados.
 
-Quando o computador de destino reiniciar no final da Configuração do Windows, é criada a chave de registo **WindowsIntuneEnrollPending**. O pacote de inscrição verifica se o computador está inscrito. Se o computador estiver inscrito, não é necessária mais nenhuma ação. Se o computador não estiver inscrito, o pacote de inscrição cria uma Tarefa de Inscrição Automática do Microsoft Intune.
+    Quando o computador de destino reiniciar no final da Configuração do Windows, é criada a chave de registo **WindowsIntuneEnrollPending**. O pacote de inscrição verifica se o computador está inscrito. Se o computador estiver inscrito, não é necessária mais nenhuma ação. Se o computador não estiver inscrito, o pacote de inscrição cria uma Tarefa de Inscrição Automática do Microsoft Intune.
 
-Quando a tarefa de inscrição automática for executada na próxima hora agendada, verifica a existência do valor de registo **WindowsIntuneEnrollPending** e tenta inscrever o PC de destino no Intune. Se a inscrição falhar por alguma razão, é repetida da próxima vez que a tarefa for executada. As repetições serão efetuadas durante um mês.
+    Quando a tarefa de inscrição automática for executada na próxima hora agendada, verifica a existência do valor de registo **WindowsIntuneEnrollPending** e tenta inscrever o PC de destino no Intune. Se a inscrição falhar por alguma razão, é repetida da próxima vez que a tarefa for executada. As repetições serão efetuadas durante um mês.
 
-A Tarefa de Inscrição Automática do Intune, o valor de registo **WindowsIntuneEnrollPending** e o certificado de conta serão eliminados do computador de destino quando a inscrição for bem sucedida ou após um mês (o que ocorrer primeiro).
+    A Tarefa de Inscrição Automática do Intune, o valor de registo **WindowsIntuneEnrollPending** e o certificado de conta serão eliminados do computador de destino quando a inscrição for bem sucedida ou após um mês (o que ocorrer primeiro).
 
 ## <a name="instruct-users-to-self-enroll"></a>Dar instruções aos utilizadores para se inscreverem
 
 Os utilizadores podem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com). Se o portal Web conseguir detetar que o dispositivo é um PC Windows, irá pedir aos utilizadores para inscreverem o PC através da transferência do software de cliente do Intune. Após a transferência do software, os utilizadores poderão instalá-lo para que os seu PCs passem a ser geridos.
+
+As informações exatas que os utilizadores veem no portal Web poderão variar consoante a Autoridade de MDM da sua conta e a plataforma e versão do PC do utilizador.
 
 ![O Portal do Intune pede-lhe para transferir o software de cliente do Intune](../media/software-client-download.png)
 
@@ -139,6 +143,6 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

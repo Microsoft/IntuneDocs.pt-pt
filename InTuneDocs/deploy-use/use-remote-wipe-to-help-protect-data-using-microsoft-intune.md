@@ -1,11 +1,11 @@
 ---
-title: "Utilizar a eliminação remota para ajudar a proteger dados | Microsoft Intune"
+title: "Utilizar a eliminação remota para ajudar a proteger dados | Documentos da Microsoft"
 description: "O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune
-Pode eliminar aplicações e dados a partir dos dispositivos geridos pelo Intune que já não são precisos, que estão a ser reobjetivados ou que desapareceram. Para tal, o Intune fornece as funcionalidades de eliminação completa e eliminação seletiva. Os utilizadores também podem emitir um comando de eliminação remota de dados no dispositivo a partir da aplicação do Portal da Empresa do Intune em dispositivos de propriedade privada inscritos no Intune.
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Pode eliminar aplicações e dados a partir dos dispositivos geridos pelo Intune que já não são precisos, que estão a ser reobjetivados ou que desapareceram. Para tal, o Intune fornece as funcionalidades de eliminação completa e eliminação seletiva. Os utilizadores também podem emitir um comando de eliminação remota de dados no dispositivo a partir da aplicação Portal da Empresa do Intune em dispositivos de propriedade privada inscritos no Intune.
 
   > [!NOTE]
   > Este tópico aborda apenas a eliminação de dispositivos geridos pela gestão de dispositivos móveis do Intune. Também pode utilizar o [portal do Azure](https://portal.azure.com) para [apagar dados da empresa das aplicações](wipe-managed-company-app-data-with-microsoft-intune.md). Também pode [extinguir computadores geridos com o software de cliente Intune](retire-a-windows-pc-with-microsoft-intune.md).
@@ -114,10 +118,14 @@ A **eliminação seletiva** remove os dados da empresa, incluindo os dados de ge
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|
 |Definições de perfil de certificado|Certificados revogados mas não removidos.|Certificados removidos e revogados.|
 |Agente de Gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
-|E-mail|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
-|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos.</br>Exceção: se o Exchange estiver alojado no local, o e-mail não será removido.|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos.</br>Exceção: se o Exchange estiver alojado no local, o e-mail não será removido.|
+|E-mail|N/D. Veja o item do Outlook.|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
+|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é eliminado durante a anulação da inscrição.</br>Exceção: se o Exchange estiver alojado no local, o e-mail não será removido.|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é eliminado durante a anulação da inscrição.</br>Exceção: se o Exchange estiver alojado no local, o e-mail não será removido.|
 |Anulação da associação ao Azure Active Directory (AAD)|Registo do AAD removido.|Registo do AAD removido.|
 |Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.|Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
+
+**Android for Work**
+
+Ao efetuar uma eliminação seletiva num dispositivo Android for Work, remove todos os dados, aplicações e definições no perfil de trabalho nesse dispositivo. Esta ação extingue o dispositivo da gestão com o Intune. A eliminação completa não é suportada no Android for Work.
 
 **Windows**
 
@@ -165,6 +173,6 @@ Este relatório também mostra quem efetuou a ação.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

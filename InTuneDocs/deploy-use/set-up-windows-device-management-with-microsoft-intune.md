@@ -1,10 +1,10 @@
 ---
 title: "Configurar a gestão de dispositivos Windows com o Microsoft Intune | Documentos da Microsoft"
-description: "Ative a gestão de dispositivos móveis (MDM) para PCs Windows, incluindo dispositivos Windows 10, com o Microsoft Intune."
+description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Windows com o Microsoft Intune."
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 01/26/2016
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: f4f3b89cf066bcc98d043f66d4d40fd9d9ca3fd5
+ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
+ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
 
 ---
@@ -23,23 +23,29 @@ ms.openlocfilehash: f4f3b89cf066bcc98d043f66d4d40fd9d9ca3fd5
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Como administrador do Intune, pode ativar a inscrição e gestão de PCs Windows de duas formas:
+Utilize um dos seguintes métodos para configurar a inscrição para dispositivos Windows:
 
-- **[Inscrição automática com o Azure Active Directory](#azure-active-directory-enrollment)** – os utilizadores do Windows 10 e Windows 10 Mobile inscrevem os respetivos dispositivos ao adicionarem uma conta escolar ou profissional ao dispositivo.
+- **[Inscrição automática no Windows 10 e Windows 10 Mobile com o Azure Active Directory Premium](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+ -  Este método é aplicável apenas para dispositivos Windows 10 e Windows 10 Mobile.
+ -  Tem de ter o Azure Active Directory Premium para utilizar este método. Caso contrário, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
+ -  Se optar por não ativar a inscrição automática, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
 
-- **[Inscrição no Portal da Empresa](#set-up-company-portal-app-enrollment)** – os utilizadores do Windows 8.1 e posterior inscrevem os respetivos dispositivos ao transferir e instalar a aplicação Portal da Empresa e, em seguida, ao introduzir as respetivas credenciais da conta escolar ou profissional na aplicação.
+
+- **[Inscrição no Windows 8.1 e Windows Phone 8.1 através da configuração do CNAME](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+ - Tem de utilizar este método para inscrever dispositivos Windows 8.1 e Windows Phone 8.1.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="set-up-company-portal-app-enrollment"></a>Configurar a inscrição na aplicação Portal da Empresa
-Pode permitir que os utilizadores instalem e inscrevam os respetivos dispositivos ao utilizar a aplicação Portal da Empresa do Intune. Se criar registos de recursos CNAME DNS, os utilizadores ligam e inscrevem-se no Intune sem que seja necessário introduzir um nome de servidor.
+## <a name="set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname"></a>Configurar a inscrição no Windows 8.1 e Windows Phone 8.1 através da configuração do CNAME
+Pode permitir que os utilizadores instalem e inscrevam os dispositivos deles com o Portal da Empresa do Intune. Se criar registos de recursos CNAME DNS, os utilizadores ligam e inscrevem-se no Intune sem que seja necessário introduzir um nome de servidor.
 
 1. **Configurar o Intune**<br>
 Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis (MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e ao configurar a MDM.
 
-2. **Criar CNAMEs** (opcional)<br>Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
+2. **Criar CNAMEs** (opcional)<br>
+Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://enrollment.manage.microsoft.com. 
+    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.    
 
     Se atualmente tiver um CNAME no DNS que redireciona EnterpriseEnrollment.contoso.com para manage.microsoft.com, sugerimos que o substitua por um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. Esta alteração é recomendada, uma vez que o ponto final de manage.microsoft.com vai ser preterido para as inscrições numa versão futura.
 
@@ -72,6 +78,6 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

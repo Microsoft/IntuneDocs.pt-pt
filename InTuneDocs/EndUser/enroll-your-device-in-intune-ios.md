@@ -1,22 +1,25 @@
 ---
-title: Inscrever o dispositivo iOS no Intune | Microsoft Intune
+title: Inscrever o dispositivo iOS no Intune | Documentos da Microsoft
 description: Descreve como encriptar dispositivos iOS no Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 
 ---
@@ -24,9 +27,12 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 # <a name="enroll-your-ios-device-in-intune"></a>Inscrever o dispositivo iOS no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo iOS para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, o seu departamento de TI pode gerir esses recursos de trabalho ou da escola, mantê-los seguros e dar-lhe a liberdade para utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, consulte [O que acontece quando instalar a aplicação Portal da Empresa e inscrever um dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu dispositivo iOS para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, o seu departamento de TI pode gerir esses recursos de trabalho ou da escola, mantê-los seguros e dar-lhe a liberdade para utilizar o seu dispositivo preferencial para realizar o seu trabalho. Para saber mais sobre a inscrição, consulte [O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-Se estiver a tentar inscrever um dispositivo macOS, veja [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+> [!NOTE]
+> Se estiver realmente a tentar inscrever um dispositivo macOS, tal como um MacBook Pro ou um iMac, [experimente antes estas instruções](enroll-your-device-in-intune-macos.md).
 
 **Antes de começar:**
 
@@ -53,7 +59,7 @@ Se estiver a tentar inscrever um dispositivo macOS, veja [Inscrever o dispositiv
 
 5.  No ecrã **O que vem a seguir**, leia sobre o que acontece durante a inscrição e, em seguida, toque em **Inscrever**.
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  No ecrã **Instalar Perfil**, toque em **Instalar** e introduza o código de acesso, se lhe for solicitado.
 
@@ -65,15 +71,15 @@ Se estiver a tentar inscrever um dispositivo macOS, veja [Inscrever o dispositiv
 
 8.  Toque em **Instalar** para indicar que leu o aviso.
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Toque em **Confiar**.
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Quando o ecrã mudar para mostrar que o perfil concluiu a instalação, toque em **Concluído**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     A mensagem "A inscrever dispositivo" é apresentada no ecrã.
 
@@ -91,11 +97,10 @@ Se estiver a tentar inscrever um dispositivo macOS, veja [Inscrever o dispositiv
 
 O dispositivo está agora inscrito no Intune e o utilizador é direcionado novamente para a aplicação Portal da Empresa.
 
-
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Restringir o acesso ao e-mail no Exchange no local | Documentos da Microsoft
+title: Proteger o e-mail no Exchange no local | Documentos da Microsoft
 description: Proteja e controle o acesso ao e-mail da empresa no Exchange no local com o acesso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,43 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Restringir o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado com o Intune
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Proteger o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado com o Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Com o Microsoft Intune, pode configurar o acesso condicional para controlar o acesso ao e-mail no Exchange no local ou no Exchange Online Dedicado legado.
+Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao e-mail e aos serviços do Office&365;](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!NOTE]
 > Se tiver um ambiente do Exchange Online Dedicado e precisar de saber se está na configuração nova ou legada, contacte o seu gestor de conta.
 
+## <a name="before-you-begin"></a>Antes de começar
 
-Para controlar o acesso ao e-mail no Exchange no local ou no ambiente do Exchange Online Dedicado legado, pode configurar o acesso condicional para o Exchange no local através do Microsoft Intune.
-Para saber mais sobre como funciona o acesso condicional, leia o artigo [Restringir o acesso ao e-mail e a serviços do Office 365]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-
-**Antes** de poder configurar o acesso condicional, verifique o seguinte:
+Certifique-se de que verifica o seguinte:
 
 -   A sua versão do Exchange tem de ser o **Exchange 2010 ou posterior**. São suportadas matrizes do Servidor de Acesso de Cliente (CAS) do Exchange Server.
 
--   Tem de utilizar o **conector do Exchange no local**, que liga o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Exchange no local. Este procedimento permite-lhe gerir dispositivos através da consola do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Para obter detalhes sobre o conetor, consulte [Conetor do Exchange no local do Intune](intune-on-premises-exchange-connector.md).
+-   Tem de utilizar o [conector do Exchange no local do Intune](intune-on-premises-exchange-connector.md), que liga o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Exchange no local. Este procedimento permite-lhe gerir dispositivos através da consola do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
     -   O conector do Exchange no local disponível na consola do Intune é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. Recomendamos que também assegure que o conector do Exchange para o seu inquilino está instalado **em apenas um computador**.
 
-        Pode transferir o conector a partir da consola de administração do Intune. Para obter instruções sobre como configurar o conetor do Exchange no local, consulte [Configurar o conetor do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
+        Pode transferir o conector a partir da consola de administração do Intune. Para obter instruções sobre como configurar o conector do Exchange no local, consulte [Configurar o conector do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
 
     -   Pode instalar o conector em qualquer computador, desde que o mesmo possa comunicar com o servidor do Exchange.
 
     -   O conector suporta o **ambiente do Exchange CAS**. Em teoria, pode instalar o conector no servidor do Exchange CAS diretamente, se quiser. No entanto, não o recomendamos porque aumenta a carga no servidor. Quando configurar o conector, tem de configurá-lo para comunicar com um dos servidores do Exchange CAS.
 
 -   Tem de configurar o **Exchange ActiveSync** com a autenticação baseada em certificado ou com a entrada de credenciais de utilizador.
+
+### <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
 
 Quando configurar políticas de acesso condicional e direcioná-las para um utilizador, antes de um utilizador poder ligar ao respetivo e-mail, o **dispositivo** que utiliza tem de ser:
 
@@ -55,11 +61,13 @@ Quando configurar políticas de acesso condicional e direcioná-las para um util
 
 -   **Conforme** com todas as políticas de conformidade do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas nesse dispositivo.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Como o acesso condicional funciona com o Exchange no local
+
 O seguinte diagrama ilustra o fluxo utilizado pelas políticas de acesso condicional no Exchange no local para avaliar se deve permitir ou bloquear dispositivos.
 
 ![Diagrama que mostra os pontos de decisão que determinam se um dispositivo tem permissão para aceder ao Exchange no local ou é bloqueado](../media/ConditionalAccess8-2.png)
 
-Se não for cumprida uma política de acesso, o utilizador vê uma das duas mensagens seguintes quando iniciar sessão:
+Se uma política de acesso condicional não for cumprida, existirá um período de 10 minutos entre o bloqueio do dispositivo e a receção por parte do utilizador de uma das seguintes mensagens de quarentena quando inicia sessão:
 
 - Se o dispositivo não estiver inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], ou não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa, inscrever o dispositivo e ativar o e-mail. Este processo também associa o ID do Exchange ActiveSync do ao registo do dispositivo no Azure Active Directory.
 
@@ -85,7 +93,7 @@ As seguintes versões são suportadas:
 
 ##  <a name="configure-a-conditional-access-policy"></a>Configurar uma política de acesso condicional
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Política** > **Acesso Condicional** > **Política do Exchange no local**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Policy** > **Conditional Access** > **Exchange on-premises policy**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
 2.  Configure a política com as definições necessárias: ![Captura de ecrã da página da política do Exchange no local](../media/IntuneSA5bExchangeOnPremPolicy.png)
@@ -125,15 +133,15 @@ As seguintes versões são suportadas:
 
 -   Se o utilizador anular a inscrição no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], o dispositivo poderá demorar entre uma a três horas até ser bloqueado.
 
-**Para ver alguns cenários de exemplo de como poderia configurar a política de acesso condicional para restringir o acesso do dispositivo, veja [Cenários de exemplo da restrição de acesso ao e-mail](restrict-email-access-example-scenarios.md).**
+**Para ver alguns cenários de exemplo de como poderia configurar a política de acesso condicional para proteger o acesso ao dispositivo[, veja ](restrict-email-access-example-scenarios.md)Cenários de exemplo da proteção de acesso ao e-mail**.
 
 ## <a name="next-steps"></a>Passos seguintes
--   [Restringir o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Restringir o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Proteger o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

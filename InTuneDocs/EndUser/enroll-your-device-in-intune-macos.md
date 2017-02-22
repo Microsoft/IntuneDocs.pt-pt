@@ -1,5 +1,5 @@
 ---
-title: Inscrever o dispositivo macOS no Intune | Microsoft Intune
+title: Inscrever o dispositivo macOS no Intune | Documentos da Microsoft
 description: Descreve como encriptar dispositivos macOS no Intune
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
@@ -11,19 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
 
 ---
 
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrever o dispositivo macOS no Intune
 
-O acesso às aplicações, aos dados e aos recursos da sua organização permite-lhe fazer o seu trabalho. Se estiver a utilizar um dispositivo macOS no trabalho, precisa de instalar um __Perfil de Gestão__. Este é apenas um ficheiro configurado pelo seu administrador de TI que carrega as definições e acede a informações no seu Mac. Quer saber mais? Saiba [o que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+O acesso às aplicações, aos dados e aos recursos da sua organização permite-lhe fazer o seu trabalho. Se estiver a utilizar um dispositivo macOS no trabalho, precisa de instalar um __Perfil de Gestão__. Este é apenas um ficheiro configurado pelo seu administrador de TI que carrega as definições e acede a informações no seu Mac. Quer saber mais? Saiba [o que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > Se estiver realmente a tentar inscrever um dispositivo iOS, tal como um iPhone ou iPad, [experimente antes estas instruções](enroll-your-device-in-intune-ios.md).
@@ -64,6 +67,6 @@ Ainda precisa de ajuda? Consulte o seu administrador de TI. Pode encontrar as in
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
