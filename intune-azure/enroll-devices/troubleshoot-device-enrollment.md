@@ -1,5 +1,6 @@
 ---
-title: "Resolver problemas de inscrição de dispositivos | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Resolver problemas de inscrição de dispositivos"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como resolver problemas de inscrição de dispositivos."
 keywords: 
 author: staciebarker
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
 
 
 ---
@@ -72,7 +74,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 > [!NOTE]
 
-> Pode evitar o limite máximo de inscrições de dispositivos com os Gestores de Inscrição de Dispositivos, conforme descrito em [Inscrever dispositivos com o mesmo gestor de inscrição de dispositivos](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
+> Pode evitar o limite máximo de inscrições de dispositivos com os Gestores de Inscrição de Dispositivos, conforme descrito em [Inscrever dispositivos com o gestor de inscrição de dispositivos](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
 >
 > A inscrição de uma conta de utilizador adicionada ao grupo Gestores de Inscrição de Dispositivos não pode ser concluída quando a política de Acesso Condicional é imposta para o início de sessão desse utilizador específico.
 
@@ -96,7 +98,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 **Resolução:**
 
-1.  Verifique se a Autoridade de MDM foi definida adequadamente para o tipo do serviço do Intune que estiver a utilizar (ou seja, para o Intune, o Office 365 ou o System Center Configuration Manager com o Intune). Veja [Definir a autoridade de gestão de dispositivos móveis](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) para obter instruções.
+1.  Verifique se a Autoridade de MDM foi definida adequadamente para o tipo do serviço Intune que estiver a utilizar (ou seja, Intune, Office 365 ou System Center Configuration Manager com o Intune). Veja [Set the mobile device management authority (Definir a autoridade de gestão de dispositivos móveis)](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) para obter instruções.
 
     > [!NOTE]
     > Depois de definir a autoridade de MDM, só pode alterá-la se contactar o Suporte, conforme descrito em [Como obter suporte para o Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
@@ -306,7 +308,7 @@ Após a inscrição, os dispositivos regressam a um bom estado e recuperam o ace
     1. elimine de MDMPolicy, em que PolicyType = 11
     1. elimine de MDMPolicyAssignment, em que PolicyType = 11
     1. DELETE Drs_Signals
-3. Reinicie o serviço do SMS Executive ou reinicie o Servidor de CM.
+3. Reinicie o serviço SMS Executive ou o Servidor do CM.
 
 4. Obtenha um novo certificado APN e carregue-o. Para tal, clique com o botão direito do rato na subscrição do Intune no painel esquerdo do Configuration Manager. Selecione **Criar pedido de certificado do APNs** e siga as instruções.
 5. 
@@ -335,14 +337,14 @@ Após a inscrição, os dispositivos regressam a um bom estado e recuperam o ace
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de inscrição do iOS
 
-Pode ver uma lista de [Erros de inscrição do iOS](https://docs.microsoft.com/intune/enduser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios) que os utilizadores finais podem ver. A lista disponibiliza informações sobre mensagens de erro que os utilizadores finais podem ver e os passos que tem de seguir para resolver o problema.
+Pode ver uma lista de [Erros de inscrição do iOS](https://docs.microsoft.com/intune/enduser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios) que os utilizadores finais podem ver. A lista apresenta informações sobre mensagens de erro que os utilizadores finais podem ver e os passos que têm de seguir para resolver o problema.
 
 ## <a name="pc--issues"></a>Problemas do PC
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
 **Problema:** a inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
 
-Este erro pode acontecer porque o computador tinha sido inscrito anteriormente ou tem a imagem clonada de um computador que já tinha sido inscrito. O certificado de conta da conta anterior ainda está presente no computador.
+Este erro pode acontecer porque o computador já foi anteriormente inscrito ou tem a imagem clonada de um computador que já foi inscrito. O certificado de conta da conta anterior ainda está presente no computador.
 
 **Resolução:**
 
@@ -358,7 +360,7 @@ Este erro pode acontecer porque o computador tinha sido inscrito anteriormente o
 
     > [!IMPORTANT]
     > Esta secção, método ou tarefa contém passos que indicam como modificar o registo. No entanto, poderão ocorrer problemas graves se modificar o registo incorretamente. Por isso, certifique-se de que segue estes passos cuidadosamente. Para maior proteção, faça uma cópia de segurança do registo antes de o modificar. Em seguida, pode restaurar o registo se ocorrer um problema.
-    > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, veja [Como fazer cópias de segurança e restaurar o registo no Windows](https://support.microsoft.com/en-us/kb/322756).
+    > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, veja [How to back up and restore the registry in Windows (Como fazer cópias de segurança e restaurar o registo no Windows)](https://support.microsoft.com/en-us/kb/322756).
 
 ## <a name="general-enrollment-error-codes"></a>Códigos de erros de inscrição gerais
 
