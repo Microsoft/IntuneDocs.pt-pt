@@ -5,17 +5,21 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-ms.reviewer: priyar
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: jieyan
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 
 
 ---
@@ -25,10 +29,10 @@ ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
 
 Inscrever os seus dispositivos no Microsoft Intune permite que os dispositivos com o Windows 10 acedam aos dados seguros da sua organização, incluindo o e-mail, ficheiros e outros recursos. Isto aplica-se a computadores com o Windows 10 e a dispositivos móveis com o Windows 10 Mobile. A inscrição dos dispositivos ajuda a proteger o seu acesso e o da sua organização e ajuda a manter os dados de trabalho separados dos seus dados pessoais.
 
-Quer saber mais? Descubra o que acontece quando [inscreve o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e o que isso significa para as [informações no dispositivo](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Quer saber mais? Descubra o que acontece quando [inscreve o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e o que isso significa para as [informações no dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="windows-10-desktop-devices"></a>Computadores com o Windows 10
-1.  Aceda a __Iniciar__.
+1.    Aceda a __Iniciar__.
 
  ![Menu Iniciar do Windows](../media/windows-start-menu.png).
 
@@ -36,23 +40,23 @@ Quer saber mais? Descubra o que acontece quando [inscreve o seu dispositivo no I
 
  ![definições de pesquisa para Sobre o seu PC](../media/searching_for_about_your_pc.png)
 
-2.  Nas __Definições__, verá uma lista de informações sobre a versão do Windows 10 instalada no seu PC. Nessa lista, localize a __Versão__.
+2.    Nas __Definições__, verá uma lista de informações sobre a versão do Windows 10 instalada no seu PC. Nessa lista, localize a __Versão__.
 
  ![Sobre o Seu PC com o Windows 10](../media/settings_about_pc.png)
 
-3.  Se a sua versão for a __1607__, prossiga com [estes passos](enroll-your-w10-device-access-work-or-school.md). Se a sua versão for a __1511__, prossiga com [estes passos](enroll-your-w10-device-your-account.md).
+3.    Se a sua versão for a __1607__, prossiga com [estes passos](enroll-your-w10-device-access-work-or-school.md). Se a sua versão for a __1511 ou inferior__, continue com [estes passos](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Dispositivos com o Windows 10 Mobile
 
-1.  Em __Iniciar__, percorra até à lista __Todas as aplicações__ e selecione a aplicação __Definições__.
-2.  Toque em __Sistema__ e em __Acerca de__.
-3.  Em __Informações do dispositivo__, toque em __Mais informações__. Verá uma lista de informações sobre o seu dispositivo. Nessa lista, localize a __Versão__.
-4.  Se a sua versão for a __1607__, prossiga com [estes passos](enroll-your-w10-device-access-work-or-school.md). Se a sua versão for a __1511__, prossiga com [estes passos](enroll-your-w10-device-your-account.md).
+1.    Em __Iniciar__, percorra até à lista __Todas as aplicações__ e selecione a aplicação __Definições__.
+2.    Toque em __Sistema__ e em __Acerca de__.
+3.    Em __Informações do dispositivo__, toque em __Mais informações__. Verá uma lista de informações sobre o seu dispositivo. Nessa lista, localize a __Versão__.
+4.    Se a sua versão for a __1607__, prossiga com [estes passos](enroll-your-w10-device-access-work-or-school.md). Se a sua versão for a __1511 ou inferior__, continue com [estes passos](enroll-your-w10-device-your-account.md).
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

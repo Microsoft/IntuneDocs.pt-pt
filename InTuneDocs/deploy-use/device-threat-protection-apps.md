@@ -14,8 +14,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: ab94439d9fd5300d61c5991434d41f7fdca693d2
 
 
 ---
@@ -78,7 +78,7 @@ Este artigo explica-lhe como configurar e implementar a aplicação Lookout for 
 
 6. **Para implementar a aplicação para os utilizadores**, selecione a aplicação Lookout for Work e **Gerir Implementação**.
 
-  Tem de selecionar os mesmos utilizadores que foram adicionados à opção Gestão de Inscrições na consola do Lookout.  Consulte o Passo 3 na [secção Configurar a sua subscrição para a proteção contra ameaças de dispositivos do Lookout](configure-and-deploy-lookout-for-work-apps.md) para obter informações sobre como adicionar grupos de utilizadores ao Lookout MTP.
+  Tem de selecionar os mesmos utilizadores que foram adicionados à opção Gestão de Inscrições na consola do Lookout.  Consulte o Passo 3 na [secção Configurar a sua subscrição para a proteção contra ameaças de dispositivos do Lookout](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) para obter informações sobre como adicionar grupos de utilizadores ao Lookout MTP.
 
   >[!IMPORTANT]
   > O assistente de implementação da aplicação Intune não se apercebe dos grupos de utilizadores do Azure AD e utiliza os grupos de utilizadores do Intune, pelo que tem de criar um grupo de utilizadores do Intune com base no grupo de utilizadores do Azure AD inscrito na consola do Lookout, conforme descrito [neste](plan-your-user-and-device-groups.md) tópico.
@@ -94,10 +94,10 @@ Quando o utilizador abre o Lookout for Work no dispositivo, é-lhe pedido para a
 * [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Passos seguintes
-* [Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ Quando instalar a aplicação Portal da Empresa e inscrever o dispositivo iOS ou
 -   Configurar automaticamente a sua conta de e-mail profissional.
 
 Quando inscreve o seu dispositivo no Intune, está a dar permissão ao administrador de TI para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
-
-**O que o administrador de TI não pode ver**
-
--   Histórico de chamadas e da Web
-
--    Localização
-
--   Mensagens de e-mail e texto
-
--   Contactos
-
--    Palavras-passe
-
--   Calendário
-
--   Imagens da câmara
-
-**O que o administrador de TI pode ver**
-
--   Modelo
-
--   Número de série
-
--   Sistema operativo
-
--   Nomes das aplicações
-
--   Proprietário
-
--   Nome do dispositivo
 
 Quando o seu dispositivo está inscrito, o administrador de TI pode:
 
@@ -99,6 +69,6 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

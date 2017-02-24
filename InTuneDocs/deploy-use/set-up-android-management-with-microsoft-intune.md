@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 99612d5c83030ee05c19c21471cfd23f423fcd80
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
 
 
 ---
 
 # <a name="set-up-android-device-management"></a>Configurar a gestão de dispositivos Android
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Como administrador do Intune, pode ativar a gestão de dispositivos Android, incluindo dispositivos Samsung Knox Standard a partir do Portal da Empresa. Os utilizadores podem então inscrever os respetivos dispositivos com a aplicação Portal da Empresa disponível no Google Play.
+
+Por predefinição, é permitido inscrever dispositivos Android no Intune. Para bloquear a inscrição de dispositivos Android, inicie sessão no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com as suas credenciais de administrador. Selecione **Admin** > **Gestão de Dispositivos Móveis** > **Regras de Inscrição** e, em seguida, desmarque a caixa de verificação **Permitir dispositivos Android**.
 
 1.  **Configurar o Intune**<br>
     Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e ao configurar a MDM.
@@ -34,14 +40,31 @@ Como administrador do Intune, pode ativar a gestão de dispositivos Android, inc
     Para obter instruções de inscrição do utilizador final, veja [Inscrever o dispositivo Android no Intune](../enduser/enroll-your-device-in-intune-android.md). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
 
     Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
-  - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
   - [Orientações para o utilizador final sobre os dispositivos Android](../enduser/using-your-android-device-with-intune.md)
 
-### <a name="see-also"></a>Consulte também
+Devido ao facto de a Google Play Store não estar disponível na China, os dispositivos Android têm de obter o Portal da Empresa a partir das lojas de aplicações chinesas. A aplicação Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+A aplicação Portal da Empresa para Android utiliza os Serviços do Google Play para comunicar com o serviço Microsoft Intune. Uma vez que os Serviços do Google Play ainda não estão disponíveis na China, pode demorar até 8 horas a concluir a realização de qualquer uma das seguintes tarefas. 
+
+|Consola de Administração do Intune| Aplicação Portal da Empresa do Intune para Android |Site do Portal da Empresa do Intune|   
+|---|---|---|
+|Eliminação completa| Remover um dispositivo remoto| Remover dispositivo (local e remoto)|
+|Eliminação seletiva| Repor dispositivo| Repor dispositivo|
+|Implementações de aplicações novas ou atualizadas| Instalar aplicações de linha de negócio disponíveis| Repor código de acesso do dispositivo|
+|Bloqueio remoto|||
+|Repor código de acesso|||
+
+### <a name="see-also"></a>Veja também
 [Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

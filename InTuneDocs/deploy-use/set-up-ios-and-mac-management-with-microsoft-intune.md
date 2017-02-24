@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4dffccca11582b11196c6441ba8828ceeb4ebb8
+ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
+ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>Configurar a gestão de dispositivos iOS e Mac
-O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e dispositivos Mac OS X e concede aos utilizadores acesso a aplicações e e-mail empresariais. É necessário um certificado do serviço Apple Push Notification (APNs) para que o Intune possa gerir dispositivos iOS e Mac. Quando o certificado for adicionado ao Intune, os utilizadores podem instalar a aplicação Portal da Empresa para inscrever os respetivos dispositivos ou o administrador pode configurar a [gestão de dispositivos iOS pertencentes à empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e dispositivos macOS, e concede aos utilizadores acesso a aplicações e e-mail empresariais. É necessário um certificado do serviço Apple Push Notification (APNs) para que o Intune possa gerir dispositivos iOS e Mac. Quando o certificado for adicionado ao Intune, os utilizadores podem instalar a aplicação Portal da Empresa para inscrever os respetivos dispositivos ou o administrador pode configurar a [gestão de dispositivos iOS pertencentes à empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurar o Intune**<br>
     Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](prerequisites-for-enrollment.md#step-2-set-mdm-authority) como **Microsoft Intune** e ao configurar a MDM.
@@ -44,11 +48,11 @@ O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e 
 
 5.  **Indique aos utilizadores como devem inscrever os respetivos dispositivos para poderem aceder aos recursos da empresa.**
 
-    Para obter instruções sobre a inscrição do utilizador final, veja [Inscrever o dispositivo iOS no Intune](../enduser/enroll-your-device-in-intune-ios.md) e [Inscrever o dispositivo Mac OS X no Intune](../enduser/enroll-your-device-in-intune-macos.md). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
+    Para obter instruções sobre a inscrição do utilizador final, veja [Inscrever o dispositivo iOS no Intune](../enduser/enroll-your-device-in-intune-ios.md) e [Inscrever o dispositivo macOS no Intune](../enduser/enroll-your-device-in-intune-macos.md). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
 
     Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
-    - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [Orientações para o utilizador final para dispositivos iOS e Mac](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
+    - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+    - [Orientações para o utilizador final para dispositivos iOS e Mac](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 Se a sua empresa ou organização comprar dispositivos iOS para os utilizadores, esses dispositivos também podem ser inscritos para gestão como [dispositivos iOS propriedade da empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -57,6 +61,6 @@ Se a sua empresa ou organização comprar dispositivos iOS para os utilizadores,
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

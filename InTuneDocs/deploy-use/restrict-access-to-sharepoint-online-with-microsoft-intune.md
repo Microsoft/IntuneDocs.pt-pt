@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
 
      -   **Os dispositivos têm de estar associados a um domínio ou em conformidade.** Escolha esta opção para exigir que os PCs estejam associados a um domínio ou em conformidade com as políticas que são definidas no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Se um PC não cumprir nenhum destes requisitos, é pedido ao utilizador que inscreva o dispositivo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Os dispositivos têm de estar associados a um domínio.** Escolha esta opção para exigir que os PCs estejam associados a um domínio para aceder ao Exchange Online. Se o PC não estiver associado a um domínio, o acesso ao e-mail é bloqueado e é pedido ao utilizador para contactar o administrador de TI.
-
      -   **Os dispositivos têm de estar em conformidade.** Escolha esta opção para exigir que os PCs sejam inscritos no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e em conformidade. Se um PC não estiver inscrito, será apresentada uma mensagem com instruções sobre como inscrevê-lo.
 
 4.   Em **Acesso pelo Browser** ao SharePoint Online e OneDrive para Empresas, pode optar por permitir acesso ao Exchange Online apenas através de browsers suportados: Safari (iOS) e o Chrome (Android). O acesso a partir de outros browsers é bloqueado. As restrições de plataforma que selecionou para o acesso pela aplicação do OneDrive também se aplicam aqui.
@@ -200,6 +198,6 @@ Selecione qualquer grupo de dispositivos móveis. Em seguida, no separador **Dis
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

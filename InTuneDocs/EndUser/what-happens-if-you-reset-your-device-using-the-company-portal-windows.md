@@ -18,8 +18,8 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa?
 
-Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](reset-your-device-cpwebsite.md) para repor o dispositivo Windows, este repõe o dispositivo para as respetivas definições de fábrica e elimina todas as aplicações, definições e dados, incluindo dados pessoais. O que acontece em cada dispositivo depende do dispositivo e da forma como o utiliza (conforme descrito na seguinte tabela). Para obter instruções sobre como repor o seu dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device (Repor (apagar) o dispositivo perdido ou roubado)](reset-erase-your-lost-or-stolen-device-windows.md).
+Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](reset-erase-your-device-cpwebsite.md) para repor o dispositivo Windows, este repõe o dispositivo para as respetivas definições de fábrica e elimina todas as aplicações, definições e dados, incluindo dados pessoais. O que acontece em cada dispositivo depende do dispositivo e da forma como o utiliza (conforme descrito na seguinte tabela). Para obter instruções sobre como repor o seu dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device (Repor (apagar) o dispositivo perdido ou roubado)](reset-erase-your-device-cpwebsite.md).
 
 |Gestão e configuração do dispositivo|Tipo de dispositivo|
 |---------------------------------------|---------------|
@@ -39,6 +39,6 @@ Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informaçõ
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

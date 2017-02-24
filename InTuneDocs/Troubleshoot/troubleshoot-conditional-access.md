@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
@@ -33,11 +34,11 @@ Este tópico descreve o que fazer quando os utilizadores não conseguem obter ac
 
 Para que o acesso condicional funcione, é necessário respeitar as seguintes condições:
 
--   O dispositivo tem de ser gerido pelo Intune
--   O dispositivo tem de ser registado no Azure Active Directory (AAD). Em circunstâncias normais, este registo ocorre automaticamente durante a inscrição do Intune
--   O dispositivo tem de estar em conformidade com as políticas de conformidade do Intune, para o dispositivo e para o utilizador do dispositivo.  Se não existirem políticas de conformidade, a inscrição do Intune é suficiente.
--   O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador tentar obter correio através do cliente de correio nativo do dispositivo, em vez de através do Outlook.     Isto acontece automaticamente em dispositivos iOS, Windows Phone e Android/KNOX Standard.
--   O Intune Exchange Connector deve estar corretamente configurado. Veja [Resolução de Problemas do Exchange Connector no Microsoft Intune](troubleshoot-exchange-connector.md) para obter mais informações.
+-    O dispositivo tem de ser gerido pelo Intune
+-    O dispositivo tem de ser registado no Azure Active Directory (AAD). Em circunstâncias normais, este registo ocorre automaticamente durante a inscrição do Intune
+-    O dispositivo tem de estar em conformidade com as políticas de conformidade do Intune, para o dispositivo e para o utilizador do dispositivo.  Se não existirem políticas de conformidade, a inscrição do Intune é suficiente.
+-    O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador tentar obter correio através do cliente de correio nativo do dispositivo, em vez de através do Outlook.     Isto acontece automaticamente em dispositivos iOS, Windows Phone e Android/KNOX Standard.
+-    O Intune Exchange Connector deve estar corretamente configurado. Veja [Resolução de Problemas do Exchange Connector no Microsoft Intune](troubleshoot-exchange-connector.md) para obter mais informações.
 
 Estas condições podem ser visualizadas para cada dispositivo no Portal de Gestão do Azure e no relatório de inventário do dispositivo.
 
@@ -52,7 +53,7 @@ Estas condições podem ser visualizadas para cada dispositivo no Portal de Gest
  -  Pode demorar algum tempo para que as informações de compatibilidade sejam registadas num dispositivo. Aguarde alguns minutos e tente novamente.
  -  Para dispositivos com iOS:
      -   Um perfil de e-mail existente criado pelo utilizador irá bloquear a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum, uma vez que os utilizadores do iOS criam um perfil de e-mail e depois fazem a inscrição. O portal da empresa irá informar o utilizador da não conformidade devido ao respetivo perfil de e-mail configurado manualmente e solicitará ao utilizador para remover esse perfil. O utilizador deve remover o respetivo perfil de e-mail, para que o perfil do Intune possa ser implementado. Para evitar este problema, indique aos seus utilizadores para inscreverem-se sem instalar um perfil de e-mail e para permitir que o Intune implemente o perfil.
-     -   Um dispositivo iOS pode ficar bloqueado num estado de verificação de conformidade, impedindo que o utilizador inicie outra verificação. Reiniciar o portal da empresa pode corrigir este problema e o estado de conformidade irá refletir o estado do dispositivo no Intune. Após todos os dados terem sido recolhidos a partir de uma sincronização do dispositivo, a verificação de conformidade é rápida, cerca de meio segundo em média.
+     -     Um dispositivo iOS pode ficar bloqueado num estado de verificação de conformidade, impedindo que o utilizador inicie outra verificação. Reiniciar o portal da empresa pode corrigir este problema e o estado de conformidade irá refletir o estado do dispositivo no Intune. Após todos os dados terem sido recolhidos a partir de uma sincronização do dispositivo, a verificação de conformidade é rápida, cerca de meio segundo em média.
 
         Normalmente, a razão pela qual os dispositivos se mantêm neste estado é terem problemas de ligação ao serviço ou de sincronização a demorar muito tempo.  Se o problema persistir em diferentes configurações de rede (telemóvel, Wi-Fi, VPN), após os reinícios do dispositivo e depois de verificar que o SSP está atualizado no dispositivo, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
@@ -125,7 +126,7 @@ Para ver quais os registos do Exchange Connector que utilizam a [Ferramenta Visu
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Detalhes: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   Localize uma sincronização (delta) rápida nos registos ao procurar **sincronização rápida**.
+-    Localize uma sincronização (delta) rápida nos registos ao procurar **sincronização rápida**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Exceções no comando Get next
 Consulte os registos do Exchange Connector para obter as exceções no **comando Get next** e forneça-as ao Suporte da Microsoft.
@@ -134,9 +135,9 @@ Consulte os registos do Exchange Connector para obter as exceções no **comando
 
 Para ativar o registo verboso:
 
-1.  Abra o ficheiro de configuração de rastreio do Exchange Connector. O ficheiro está localizado em: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Localize o TraceSourceLine com a seguinte chave: OnPremisesExchangeConnectorService
-3.  Altere o valor do nó **SourceLevel** de **Warning ActivityTracing** (predefinição) para **Verbose ActivityTracing**, conforme mostrado abaixo.
+1.    Abra o ficheiro de configuração de rastreio do Exchange Connector. O ficheiro está localizado em: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Localize o TraceSourceLine com a seguinte chave: OnPremisesExchangeConnectorService
+3.    Altere o valor do nó **SourceLevel** de **Warning ActivityTracing** (predefinição) para **Verbose ActivityTracing**, conforme mostrado abaixo.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -161,6 +162,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
