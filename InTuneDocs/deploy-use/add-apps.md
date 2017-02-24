@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
@@ -63,7 +64,7 @@ Antes de começar a utilizar o Software Publisher, tem de instalar a versão com
 ## <a name="cloud-storage-space"></a>Espaço de armazenamento na cloud
 Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na cloud do Microsoft Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na cloud, o qual é utilizado para armazenar aplicações e atualizações geridas. A subscrição completa inclui 20 GB de espaço de armazenamento.
 
-Pode ver quanto espaço está a utilizar no nó **Utilização do Armazenamento** da área de trabalho **Administração**.
+Pode ver quanto espaço está a utilizar no nó **Utilização do Armazenamento** da área de trabalho **Administração**. Pode comprar armazenamento adicional para o Intune com o seu método de compra original.  Se tiver pago através de fatura ou cartão de crédito, visite o [Portal de Gestão de Subscrições](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Caso contrário, contacte o seu parceiro ou representante de vendas.
 
 Requisitos de espaço de armazenamento na cloud:
 
@@ -96,6 +97,6 @@ Terá de adicionar as aplicações na consola do Intune antes de poder implement
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

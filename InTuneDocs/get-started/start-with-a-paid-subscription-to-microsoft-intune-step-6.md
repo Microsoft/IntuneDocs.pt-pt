@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Este tópico informa os administradores do Intune sobre como podem criar políticas e publicar aplicações que possam implementar em dispositivos geridos.
+
 Antes de começar a inscrição de aplicações no Intune, pode ativar as definições de política e as aplicações que serão implementadas assim que esses dispositivos fiquem disponíveis para gestão. As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Pode configurar a política, adicionar aplicações e implementar essas aplicações para que os dispositivos recebem as definições e aplicações assim que se inscrevam no Intune.
 
 As políticas e aplicações são específicas da plataforma.
 
 ## <a name="manage-device-settings"></a>Gerir definições do dispositivo
 
- As definições de política do dispositivo são configuradas e geridas por plataforma. Pode configurar a política das seguintes plataformas:
+ As definições de política do dispositivo são configuradas e geridas por plataforma. As ligações seguintes fornecem listas de definições disponíveis para as respetivas plataformas:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android e Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -72,6 +75,6 @@ Agora que a aplicação está disponível no Intune, pode implementá-la em disp
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

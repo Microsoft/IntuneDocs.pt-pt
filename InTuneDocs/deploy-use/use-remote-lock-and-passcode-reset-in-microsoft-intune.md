@@ -2,33 +2,40 @@
 title: "Bloqueio remoto e reposição do código de acesso | Documentos da Microsoft"
 description: "O Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso.
 
 ## <a name="lock-a-device-remotely"></a>Bloquear remotamente um dispositivo
-Se um utilizador perder um dispositivo, pode bloquear o mesmo remotamente. A tabela seguinte indica como o bloqueio remoto funciona em diferentes plataformas móveis.
+Se um utilizador perder um dispositivo, pode bloquear o mesmo remotamente. É necessário que o dispositivo já tenha um PIN ou código de acesso definido para que possa utilizar o bloqueio remoto.
+
+A tabela seguinte indica como o bloqueio remoto funciona em diferentes plataformas móveis.
 
 |Plataforma|Bloqueio remoto|
 |------------|---------------|
 |macOS|Não suportado|
 |iOS|Suportado|
 |Android|Suportado|
-|Computadores e dispositivos móveis com o Windows 10 Mobile|Suportado|
+|Windows 10 (dispositivo móvel)|Suportado|
+|Windows 10 (computador)|Não suportado|
 |Windows Phone 8 e Windows Phone 8.1|Suportado|
 |Windows RT 8.1 e Windows RT|Suportado se o utilizador atual do dispositivo for o mesmo utilizador que inscreveu o dispositivo.|
 |Windows 8.1|Suportado se o utilizador atual do dispositivo for o mesmo utilizador que inscreveu o dispositivo.|
@@ -79,6 +86,6 @@ A reposição do código de acesso não é suportada para PCs Windows inscritos 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

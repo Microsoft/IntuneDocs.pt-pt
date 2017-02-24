@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
-ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 # <a name="customize-the-company-portal"></a>Personalizar o Portal da Empresa
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Este tópico informa os administradores sobre como podem personalizar a aplicação Portal da Empresa do Intune e o site do Portal da Empresa.
 
 O Portal da Empresa do Intune é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.
 
@@ -89,6 +92,6 @@ Depois de guardar as alterações, pode utilizar as ligações fornecidas na par
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

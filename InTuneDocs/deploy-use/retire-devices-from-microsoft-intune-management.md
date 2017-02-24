@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
@@ -24,16 +25,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune. 
+Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune.
 
-Os dispositivos nunca são removidos do Intune sem a intervenção do utilizador, mesmo que os dispositivos não tenham ligado ao serviço do Intune há algum tempo. 
+Os dispositivos nunca são removidos do Intune sem a intervenção do utilizador, mesmo que os dispositivos não tenham ligado ao serviço do Intune há algum tempo.
 
 Poderá ter de extinguir um dispositivo por vários motivos:
 
--   O utilizador sai da empresa de forma planeada (saída “gerida”)
--   O utilizador sai abruptamente (é despedido, despede-se, etc.).
--   Perda do dispositivo
--   Redefinição do objetivo de um dispositivo (passar para outro utilizador, reutilizar para uma finalidade diferente, etc.)
+-    O utilizador sai da empresa de forma planeada (saída “gerida”)
+-    O utilizador sai abruptamente (é despedido, despede-se, etc.).
+-    Perda do dispositivo
+-    Redefinição do objetivo de um dispositivo (passar para outro utilizador, reutilizar para uma finalidade diferente, etc.)
 
 Pode efetuar uma eliminação seletiva ou uma eliminação completa nos dispositivos geridos como dispositivos móveis, ou pode bloquear um dispositivo e repor a respetiva palavra-passe. Ao limpar o dispositivo, liberta a subscrição do utilizador para adicionar um dispositivo diferente. Também pode extinguir PCs geridos com o software de cliente do Intune.
 
@@ -43,6 +44,9 @@ A eliminação seletiva e a eliminação completa removem o dispositivo da gest�
 A [eliminação seletiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) é a ação preferencial para os empregados que inscreveram os dispositivos pessoais no Intune, porque não afeta as informações pessoais do dispositivo. Só são removidos os dados empresariais.
 
 Para os dispositivos que têm de ser reaproveitados, também pode utilizar uma [eliminação completa](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), que repõe as definições de fábrica do dispositivo.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Remover licenças de utilizador e dispositivos geridos
+Quando remove uma licença de utilizador, os dispositivos inscritos desse utilizador deixam de estar inscritos. Como melhor prática, deve utilizar a eliminação seletiva para remover os dados da empresa de dispositivos geridos antes de remover a licença do Intune de um utilizador. Assim que remover a licença de utilizador, o dispositivo não pode ser direcionado para ações remotas.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para eliminar dispositivos no portal do Azure Active Directory
 
@@ -76,6 +80,6 @@ Por vezes, é o próprio dispositivo que atinge o respetivo fim de vida. Nestes 
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

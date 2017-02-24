@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
 
 
 ---
@@ -24,11 +25,11 @@ ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Este tópico fornece-lhe as instruções passo a passo sobre como configurar o acesso condicional para que o Exchange Online permita apenas aplicações móveis que suportem políticas de gestão de aplicações móveis (MAM) do Intune.
+Este tópico fornece-lhe instruções passo a passo sobre como configurar o acesso condicional para que o Exchange Online permita apenas aplicações móveis que suportem políticas de proteção da aplicações do Intune.
 
 
 ## <a name="create-an-exchange-online-policy"></a>Criar uma política do Exchange Online
-1.  Inicie sessão no [portal do Azure](https://portal.azure.com) que inclui a funcionalidade de acesso da aplicação. Caso não esteja familiarizado com a experiência do portal do Azure, leia o tópico [Portal do Azure para políticas de MAM](azure-portal-for-microsoft-intune-mam-policies.md).
+1.  Inicie sessão no [portal do Azure](https://portal.azure.com) que inclui a funcionalidade de acesso da aplicação. Se não estiver familiarizado com a experiência do portal do Azure, leia o tópico [Portal do Azure para políticas de proteção de aplicações](azure-portal-for-microsoft-intune-mam-policies.md).
 
 2.  Selecione **Mais Serviços** e escreva "Intune".
 
@@ -40,7 +41,7 @@ Este tópico fornece-lhe as instruções passo a passo sobre como configurar o a
 
     ![Captura de ecrã do painel de definições a mostrar a secção de acesso condicional com a opção Exchange Online realçada](../media/MAM-conditional-access-1.png)
 
-6. No painel **Aplicações permitidas**, selecione a opção **Permitir aplicações que suportam políticas de aplicação Intune** para permitir que apenas as aplicações que são suportadas pelas políticas da MAM do Intune consigam aceder ao Exchange Online. Quando selecionar esta opção, é apresentada a lista de aplicações suportadas.
+6. No painel **Aplicações permitidas**, selecione a opção **Permitir aplicações que suportem políticas de aplicação do Intune** para permitir que apenas as aplicações que são suportadas pelas políticas de proteção de aplicações do Intune consigam aceder ao Exchange Online. Quando selecionar esta opção, é apresentada a lista de aplicações suportadas.
 
     >[!NOTE]
     >Todos os clientes de correio do Exchange Active Sync, incluindo os clientes de correio incorporado em iOS e >Android que se ligam ao Exchange Online ficarão impedidos de enviar ou receber >e-mail. Em alternativa, os utilizadores irão receber um único e-mail a informar que têm de utilizar a aplicação de correio do >Outlook.
@@ -60,10 +61,10 @@ Para **eliminar um grupo de utilizadores**, na lista de **grupos de utilizadores
 ## <a name="next-steps"></a>Passos seguintes
 [Bloquear aplicações que não tenham autenticação moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Consulte também
-[Proteger dados de aplicações com políticas de MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Proteger os dados da aplicação com políticas de proteção de aplicações](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

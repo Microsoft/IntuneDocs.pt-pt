@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Este tópico informa os administradores sobre como podem adicionar utilizadores ao Intune e que permissões administrativas estão disponíveis no serviço do Intune.
 
 Como administrador, pode adicionar utilizadores diretamente ou sincronizar utilizadores do Active Directory no local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Também pode dar aos utilizadores permissões adicionais, incluindo *administrador inquilino*, *administrador de serviços* e *permissões de gestor de inscrição de dispositivo*.
 
@@ -33,7 +38,7 @@ Este tópico ajuda-o a:
   - [Gestores de inscrição de dispositivos](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Adicionar utilizadores ao Intune
-Pode adicionar manualmente os utilizadores na sua subscrição do Intune através do [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), uma vez que não são atribuídos automaticamente a uma licença do Intune. Em vez disso, posteriormente, um administrador inquilino do Intune tem de editar a conta de utilizador para atribuir uma licença ao utilizador a partir do portal do Office 365. Para obter orientação, veja [Adicionar utilizadores individualmente ou em volume ao Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Pode adicionar manualmente os utilizadores na sua subscrição do Intune através do [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), mas eles não são atribuídos automaticamente a uma licença do Intune. Em vez disso, posteriormente, um administrador inquilino do Intune tem de editar a conta de utilizador para atribuir uma licença ao utilizador a partir do portal do Office 365. Para obter orientação, veja [Adicionar utilizadores individualmente ou em volume ao Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizar o Active Directory e adicionar utilizadores ao Intune
 Pode configurar a sincronização de diretórios para importar contas de utilizador do Active Directory no local para o Microsoft Azure Active Directory (Azure AD) que inclui utilizadores do Intune. Ligar o serviço do Active Directory no local a todos os serviços baseados no Azure Active Directory simplifica bastante a gestão da identidade de utilizadores. Também pode configurar funcionalidades de início de sessão único para tornar a experiência de autenticação dos utilizadores familiar e fácil. Ao ligar o mesmo [inquilino do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) com múltiplos serviços, as contas de utilizador que anteriormente foram sincronizados estão disponíveis para todos os serviços baseados na cloud.
@@ -101,6 +106,6 @@ Os gestores de inscrição de dispositivos são contas de utilizador padrão com
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

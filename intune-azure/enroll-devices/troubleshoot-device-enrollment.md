@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
 
 
 ---
@@ -46,7 +46,7 @@ Estes problemas podem ocorrer em todas as plataformas de dispositivos.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Verificar número de dispositivos inscritos e permitidos
 
-No painel Intune do portal do Azure, aceda a **Inscrever dispositivos** > **Restrições de Inscrição** e confirme que o utilizador não tem mais do que o máximo permitido de 15 dispositivos atribuídos.
+No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**. No painel do Intune do portal do Azure, aceda a **Inscrever dispositivos** > **Restrições de Inscrição** e confirme que o utilizador não tem mais do que o máximo permitido de 15 dispositivos atribuídos.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -72,7 +72,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 > [!NOTE]
 
-> Pode evitar o limite máximo de inscrições de dispositivos com os Gestores de Inscrição de Dispositivos, conforme descrito em [Inscrever dispositivos com o gestor de inscrição de dispositivos](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
+> Pode evitar o limite máximo de inscrições de dispositivos com os Gestores de Inscrição de Dispositivos, conforme descrito em [Inscrever dispositivos com o mesmo gestor de inscrição de dispositivos](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
 >
 > A inscrição de uma conta de utilizador adicionada ao grupo Gestores de Inscrição de Dispositivos não pode ser concluída quando a política de Acesso Condicional é imposta para o início de sessão desse utilizador específico.
 
@@ -96,7 +96,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 **Resolução:**
 
-1.  Verifique se a Autoridade de MDM foi definida adequadamente para o tipo do serviço Intune que estiver a utilizar (ou seja, Intune, Office 365 ou System Center Configuration Manager com o Intune). Veja [Set the mobile device management authority (Definir a autoridade de gestão de dispositivos móveis)](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) para obter instruções.
+1.  Verifique se a Autoridade de MDM foi definida adequadamente para o tipo do serviço do Intune que estiver a utilizar (ou seja, para o Intune, o Office 365 ou o System Center Configuration Manager com o Intune). Veja [Definir a autoridade de gestão de dispositivos móveis](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) para obter instruções.
 
     > [!NOTE]
     > Depois de definir a autoridade de MDM, só pode alterá-la se contactar o Suporte, conforme descrito em [Como obter suporte para o Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
@@ -218,16 +218,16 @@ O erro de certificado ocorre porque os dispositivos Android necessitam de certif
 
 Para corrigir o problema, importe os certificados para os Certificados dos Computadores Pessoais no servidor do AD FS ou nos proxies da seguinte forma:
 
-1.  Nos servidores ADFS e do proxy, inicie a consola de Gestão de Certificados para o computador local, ao clicar com o botão direito do rato no botão **Iniciar**, escolha **Executar** e escreva **certlm.msc**.
-2.  Expanda **Pessoal** e selecione **Certificados**.
-3.  Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
-4.  Selecione o separador **Caminho de Certificação** para ver o certificado(s) principal para o certificado.
-5.  Em cada certificado principal, selecione **Ver Certificado**.
-6.  Selecione o separador **Detalhes** e escolha **Copiar para o ficheiro...**.
-7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado para a localização de ficheiro pretendido.
-8.  Importe os certificados principais que foram exportados no Passo 3 para Computador Local\Pessoal\Certificados ao clicar com o botão direito do rato em **Certificados**, selecionar **Todas as Tarefas** > **Importar** e, em seguida, seguir as instruções do assistente para importar o(s) certificado(s).
-9.  Reinicie os servidores do AD FS.
-10. Repita os passos acima em todos os servidores do AD FS e do proxy.
+1.    Nos servidores ADFS e do proxy, inicie a consola de Gestão de Certificados para o computador local, ao clicar com o botão direito do rato no botão **Iniciar**, escolha **Executar** e escreva **certlm.msc**.
+2.    Expanda **Pessoal** e selecione **Certificados**.
+3.    Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
+4.    Selecione o separador **Caminho de Certificação** para ver o certificado(s) principal para o certificado.
+5.    Em cada certificado principal, selecione **Ver Certificado**.
+6.    Selecione o separador **Detalhes** e escolha **Copiar para o ficheiro...**.
+7.    Siga as instruções do assistente para exportar ou guardar a chave pública do certificado para a localização de ficheiro pretendido.
+8.    Importe os certificados principais que foram exportados no Passo 3 para Computador Local\Pessoal\Certificados ao clicar com o botão direito do rato em **Certificados**, selecionar **Todas as Tarefas** > **Importar** e, em seguida, seguir as instruções do assistente para importar o(s) certificado(s).
+9.    Reinicie os servidores do AD FS.
+10.    Repita os passos acima em todos os servidores do AD FS e do proxy.
 O utilizador deverá conseguir agora iniciar sessão no Portal da Empresa no dispositivo Android.
 
 **Para validar que o certificado foi instalado corretamente**:
@@ -306,7 +306,7 @@ Após a inscrição, os dispositivos regressam a um bom estado e recuperam o ace
     1. elimine de MDMPolicy, em que PolicyType = 11
     1. elimine de MDMPolicyAssignment, em que PolicyType = 11
     1. DELETE Drs_Signals
-3. Reinicie o serviço SMS Executive ou o Servidor do CM.
+3. Reinicie o serviço do SMS Executive ou reinicie o Servidor de CM.
 
 4. Obtenha um novo certificado APN e carregue-o. Para tal, clique com o botão direito do rato na subscrição do Intune no painel esquerdo do Configuration Manager. Selecione **Criar pedido de certificado do APNs** e siga as instruções.
 5. 
@@ -335,14 +335,14 @@ Após a inscrição, os dispositivos regressam a um bom estado e recuperam o ace
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de inscrição do iOS
 
-Pode ver uma lista de [Erros de inscrição do iOS](https://docs.microsoft.com/intune/enduser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios) que os utilizadores finais podem ver. A lista apresenta informações sobre mensagens de erro que os utilizadores finais podem ver e os passos que têm de seguir para resolver o problema.
+Pode ver uma lista de [Erros de inscrição do iOS](https://docs.microsoft.com/intune/enduser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios) que os utilizadores finais podem ver. A lista disponibiliza informações sobre mensagens de erro que os utilizadores finais podem ver e os passos que tem de seguir para resolver o problema.
 
 ## <a name="pc--issues"></a>Problemas do PC
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
 **Problema:** a inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
 
-Este erro pode acontecer porque o computador já foi anteriormente inscrito ou tem a imagem clonada de um computador que já foi inscrito. O certificado de conta da conta anterior ainda está presente no computador.
+Este erro pode acontecer porque o computador tinha sido inscrito anteriormente ou tem a imagem clonada de um computador que já tinha sido inscrito. O certificado de conta da conta anterior ainda está presente no computador.
 
 **Resolução:**
 
@@ -358,7 +358,7 @@ Este erro pode acontecer porque o computador já foi anteriormente inscrito ou t
 
     > [!IMPORTANT]
     > Esta secção, método ou tarefa contém passos que indicam como modificar o registo. No entanto, poderão ocorrer problemas graves se modificar o registo incorretamente. Por isso, certifique-se de que segue estes passos cuidadosamente. Para maior proteção, faça uma cópia de segurança do registo antes de o modificar. Em seguida, pode restaurar o registo se ocorrer um problema.
-    > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, veja [How to back up and restore the registry in Windows (Como fazer cópias de segurança e restaurar o registo no Windows)](https://support.microsoft.com/en-us/kb/322756).
+    > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, veja [Como fazer cópias de segurança e restaurar o registo no Windows](https://support.microsoft.com/en-us/kb/322756).
 
 ## <a name="general-enrollment-error-codes"></a>Códigos de erros de inscrição gerais
 
@@ -389,6 +389,6 @@ Se estas informações de resolução de problemas não o ajudaram, contacte o S
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

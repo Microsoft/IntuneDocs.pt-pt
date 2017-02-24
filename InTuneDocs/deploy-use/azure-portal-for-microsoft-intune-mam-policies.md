@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Portal do Azure para políticas de MAM do Microsoft Intune
+# <a name="azure-portal-for-intune-app-protection-policies"></a>Portal do Azure para políticas de proteção de aplicações do Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="use-the-azure-portal"></a>Utilizar o portal do Azure
-O portal do Azure permite criar e gerir políticas de gestão de aplicações móveis (MAM).
+O portal do Azure é utilizado para criar e gerir políticas de proteção de aplicações para:
 
-O portal do Azure suporta a criação de políticas de MAM para:
 - Aplicações em execução em dispositivos **inscritos e geridos no Intune**.
 
 - Aplicações em execução em dispositivos que **não estão inscritos** em nenhuma solução de MDM.
 - Aplicações em execução em dispositivos que estão **inscritos numa solução de MDM de terceiros**.
 
 >[!IMPORTANT]
+> O portal do Azure é a nova consola de administração para criar políticas de proteção de aplicações, mas também pode criar uma política de proteção de aplicações que suporte aplicações para dispositivos inscritos no Intune ao utilizar a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) para cenários MDM.
 
-
-> Se estiver a utilizar a consola de administração do Intune para gerir os seus dispositivos, pode criar uma política MAM que suporte aplicações para dispositivos inscritos no Intune através da [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-
-> Poderá não ver todas as definições de política de MAM na consola de administração do Intune. O portal do Azure é a nova consola de administração para a criação de políticas de MAM. Se criar políticas de MAM na consola de administração do Intune e no portal do Azure, a política no portal do Azure é aplicada às aplicações e implementada nos utilizadores.
+> Poderá não ver todas as definições de políticas de proteção de aplicações disponíveis na consola de administração do Intune. Além disso, se criar políticas de proteção de aplicações na consola de administração do Intune e no portal do Azure, as políticas criadas no portal do Azure irão substituir as que tiverem sido criadas na consola de administração do Intune. Neste cenário, as políticas de proteção de aplicações do portal do Azure serão aplicadas às aplicações e implementadas para os utilizadores.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Iniciar sessão no portal do Azure e personalizar a página inicial
@@ -51,24 +48,25 @@ O portal do Azure suporta a criação de políticas de MAM para:
 
     ![Captura de ecrã do dashboard do portal do Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  No menu **Procurar**, localize **Intune**.![Captura de ecrã do menu Procurar com o Intune realçado](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  Selecione **Mais serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro de caixa de texto.
 
-4.  Escolha **Intune** > **Gestão de aplicações móveis do Intune** > **Definições**.
+    ![Captura de ecrã do menu Procurar com o Intune realçado](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-    ![Captura de ecrã do painel de gestão de aplicações móveis do Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+4.  Selecione **Intune App Protection** > **Gestão de aplicações móveis do Intune** > **Todas as Definições**.
 
-    > [!TIP]
+    ![Captura de ecrã do painel de gestão de aplicações móveis do Intune](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > Para afixar um painel à página **Início**, pode utilizar a opção **afixar** no painel. Clique no ícone de afixação no **painel de gestão de aplicações móveis do Intune** para o afixar à página **Início**.
+5. (Opcional): Para afixar um painel à página **Início**, pode utilizar a opção **afixar** no painel. Clique no ícone de afixação no **painel de gestão de aplicações móveis do Intune** para o afixar à página **Início**.
 
     ![Captura de ecrã do painel de gestão de aplicações móveis do Intune com o ícone de afixação realçado](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Captura de ecrã do dashboard com o mosaico do Intune afixado](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>Passos seguintes
-[Configurar políticas de gestão de aplicações móveis](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Preparar-se para configurar políticas de proteção de aplicações](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "A palavra-passe não cumpre os requisitos do administrador de TI | Documentos da Microsoft"
+title: "A sua palavra-passe não cumpre os requisitos do administrador de TI | Documentos da Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>A palavra-passe não cumpre os requisitos do administrador de TI
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>A sua palavra-passe não cumpre os requisitos do administrador de TI
 
 A palavra-passe que utiliza para aceder aos recursos da empresa ou escola não cumpre um ou mais requisitos que o administrador de TI configurou. Para corrigir o problema, siga as instruções apresentadas no dispositivo. As descrições dos problemas são apresentadas abaixo.
 
@@ -45,12 +46,12 @@ Descrições de problemas com o PIN ou a palavra-passe:
 
 - **A palavra-passe foi utilizada muito recentemente**. O administrador de TI está a impedir a utilização de palavras-passe que tenha utilizado anteriormente. Escolha uma palavra-passe que nunca tenha utilizado.
 
-- **A palavra-passe não é suficientemente complexa para cumprir os requisitos**. O administrador de TI requer a utilização de carateres mais complexos na sua palavra-passe. Tente utilizar carateres como números, letras maiúsculas e símbolos como $, % e #.
+- **A palavra-passe não é suficientemente complexa para cumprir os requisitos**. O administrador de TI requer a utilização de carateres mais complexos na sua palavra-passe. Tente utilizar carateres como números, letras maiúsculas e símbolos como $, % e #. Isto também pode ser verdadeiro relativamente a outras contas no seu dispositivo, por isso certifique-se de que verifica outras contas para garantir que a sua palavra-passe cumpre os requisitos configurados pelas TI para o seu dispositivo.
 
 Se tiver dificuldades em perceber como fazer com que a sua palavra-passe cumpra os requisitos, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
