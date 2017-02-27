@@ -1,5 +1,6 @@
 ---
-title: "Definições de VPN do Intune para dispositivos Windows 8.1 | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Definições de VPN do Intune para dispositivos Windows 8.1"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos Windows 8.1."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: f38526a3e60f2a6628e61ffca5f5d179a2718e9b
 
 
 ---
@@ -29,14 +31,14 @@ Consoante as definições que escolher, nem todos os valores na lista abaixo ser
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
 
-- **Aplicar todas as definições apenas ao Windows 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se estiver definida como **Configurada**, quaisquer definições só serão aplicadas a dispositivos Windows 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos Windows 10.
+- **Aplicar todas as definições apenas ao Windows 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10.
 - **Nome da ligação** – introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
 - **Servidores** – adicione um ou mais servidores VPN aos quais os dispositivos serão ligados.
     - **Adicionar** – abre o painel **Adicionar Linha**, onde pode especificar as seguintes informações:
         - **Descrição** – especifique um nome descritivo para o servidor, como **Servidor VPN Contoso**.
         - **Endereço IP ou FQDN** – indique o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos serão ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
         - **Servidor predefinido** – ativa este servidor como o servidor predefinido que os dispositivos vão utilizar para estabelecer a ligação. Certifique-se de que predefine apenas um servidor.
-    - **Importar** – Navegue até um ficheiro que contenha uma lista separada por vírgulas de servidores na descrição do formato, endereço IP ou FQDN, servidor predefinido. Selecione **OK** para importá-los para a lista **Servidores**.
+    - **Importar** – Navegue até um ficheiro que contenha uma lista separada por vírgulas de servidores no formato descrição, endereço IP ou FQDN, Servidor predefinido. Escolha **OK** para importá-los para a lista **Servidores**.
     - **Exportar** – Exporta a lista de servidores para um ficheiro de valores separados por vírgulas (csv).
 
 - **Tipo de ligação** – selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
@@ -54,7 +56,7 @@ Consoante as definições que escolher, nem todos os valores na lista abaixo ser
 - **Realm** (apenas no Pulse Secure) – Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure.
 
 
-- **XML personalizado** – Especifique quaisquer comandos XML personalizados que configuram a ligação VPN.
+- **XML personalizado** – Especifique todos os comandos XML personalizados que configuram a ligação VPN.
 
 **Exemplo para o Pulse Secure:**
 
