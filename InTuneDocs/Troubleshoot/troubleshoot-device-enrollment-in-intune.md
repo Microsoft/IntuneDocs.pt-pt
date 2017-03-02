@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -261,7 +262,7 @@ Se o certificado de Servidor estiver corretamente instalado, verá todas as marc
 
 **Resolução:** partilhe as seguintes resoluções com os seus utilizadores finais para ajudá-los a recuperar o acesso aos recursos empresariais.
 
-Quando os utilizadores iniciam a aplicação Portal da Empresa para iOS, esta saberá se o dispositivo tiver perdido o contacto com o Intune. Se a aplicação detetar que não existe contacto, tentará automaticamente sincronizar com o Intune para voltar a ligar-se e os utilizadores verão a notificação inline **A tentar sincronizar…** . 
+Quando os utilizadores iniciam a aplicação Portal da Empresa para iOS, esta saberá se o dispositivo tiver perdido o contacto com o Intune. Se a aplicação detetar que não existe contacto, tentará automaticamente sincronizar com o Intune para voltar a ligar-se e os utilizadores verão a notificação inline **A tentar sincronizar…** .
 
   ![Notificação A tentar sincronizar](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Se a sincronização for efetuada com êxito, verá uma notificação inline a i
 
   ![Notificação Sincronização efetuada com êxito](./media/ios_cp_app_sync_successful_notification.png)
 
-Se a sincronização não for efetuada com êxito, os utilizadores verão uma notificação inline a informar que **Não é possível sincronizar** na aplicação Portal da Empresa para iOS. 
+Se a sincronização não for efetuada com êxito, os utilizadores verão uma notificação inline a informar que **Não é possível sincronizar** na aplicação Portal da Empresa para iOS.
 
   ![Notificação Não é possível sincronizar](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Para resolver o problema, os utilizadores têm de selecionar o botão **Configurar**, que se encontra à direita da notificação **Não é possível sincronizar**. O botão Configurar direciona os utilizadores para o ecrã do fluxo Configuração de Acesso à Empresa, onde podem seguir as instruções para inscrever o dispositivo. 
+Para resolver o problema, os utilizadores têm de selecionar o botão **Configurar**, que se encontra à direita da notificação **Não é possível sincronizar**. O botão Configurar direciona os utilizadores para o ecrã do fluxo Configuração de Acesso à Empresa, onde podem seguir as instruções para inscrever o dispositivo.
 
   ![Ecrã Configuração de Acesso à Empresa](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ Isto pode acontecer porque o computador tinha sido inscrito anteriormente ou tem
 
 ### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
