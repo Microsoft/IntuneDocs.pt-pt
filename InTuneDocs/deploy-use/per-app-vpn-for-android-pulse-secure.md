@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
+ms.lasthandoff: 01/13/2017
 
 
 ---
@@ -30,7 +32,7 @@ Depois de implementar a política no dispositivo Android ou nos grupos de utiliz
 
 > [!NOTE]
 >
-> Apenas o tipo de ligação Pulse Secure é suportado para este perfil.
+> Apenas os tipos de ligação Pulse Secure e Citrix são suportados para este perfil.
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>Passo 1: criar um perfil de VPN
@@ -52,7 +54,7 @@ Depois de implementar a política no dispositivo Android ou nos grupos de utiliz
    4. Introduza um nome para a definição.
    5. Para **Tipo de dados**, especifique **Cadeia**.
    6. Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, onde *Name* é o nome do perfil de VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.   Para **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a associar ao perfil. Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, introduza **com.microsoft.office.excel;com.android.chrome**.
+   7.    Para **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a associar ao perfil. Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, introduza **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicação Android](./media/android_per_app_vpn_oma_uri.png)
 
@@ -74,12 +76,7 @@ Tem de implementar as *duas* políticas nos *mesmos* grupos do Intune.
 1.  Na área de trabalho **Política**, selecione a que pretende implementar e escolha **Gerir a Implementação**.
 2.  Na caixa de diálogo **Gerir a Implementação**, para:
     -   **Para implementar a política**, selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** > **OK**.
-    -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancel**.
+    -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancelar**.
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Também é apresentado um resumo de estado na área de trabalho **Dashboard**.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
