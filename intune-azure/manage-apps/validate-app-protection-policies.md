@@ -1,5 +1,6 @@
 ---
-title: "Validar as políticas de proteção de aplicações | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Validar as políticas de proteção de aplicações"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: este tópico descreve como pode testar e confirmar se a sua política de proteção de aplicações está corretamente definida e a funcionar conforme esperado."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: e0d5b4b0c3557c1d8158f9e0ea6e33c426dba925
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 086ea61de3423be254d3d8f2224c4ad96d90385d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -54,12 +57,7 @@ Eis as ações a efetuar com base no estado de utilizador:
 - Se a aplicação de um utilizador estiver listada como **Sem verificação**, confirme que configurou corretamente uma política de proteção de aplicações para essa aplicação.
 - Confirme que estas condições são aplicadas em todos os utilizadores aos quais quer aplicar as políticas de proteção de aplicações.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 
 [O que é uma política de proteção de aplicações do Intune?](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -102,7 +104,7 @@ Após criar um perfil de certificado da AC Fidedigna, crie perfis de certificado
     >
     > Em **Formato de nome do requerente**, selecione **Personalizado** para introduzir um formato de nome do requerente (apenas nos perfis iOS).
     >
-    > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado,como o seguinte:
+    > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como o seguinte:
 
     >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
 
@@ -157,9 +159,4 @@ Em seguida, pode utilizar certificados para ajudar a proteger os perfis de e-mai
 -  [Configurar o acesso a e-mail empresarial através de perfis de e-mail](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Ligações Wi-Fi no Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 -  [Ligações VPN no Microsoft Intune](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

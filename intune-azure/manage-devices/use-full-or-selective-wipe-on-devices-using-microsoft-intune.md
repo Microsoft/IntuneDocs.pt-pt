@@ -1,5 +1,6 @@
 ---
-title: "Eliminação completa ou seletiva em dispositivos com o Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Eliminação completa ou seletiva em dispositivos através do Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como fazer uma eliminação seletiva de dados da empresa num dispositivo ou fazer uma eliminação completa para uma reposição de fábrica do dispositivo."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ A **eliminação seletiva** remove os dados da empresa, incluindo os dados de ge
 3.  No painel que mostra o nome do dispositivo, selecione **Remover dados...** (significa Remover dados da empresa) e, em seguida, selecione **Sim** para confirmar a eliminação dos dados.
 
 Se o dispositivo estiver ativo e ligado, demora menos de 15 minutos até um comando de eliminação ser propagado em todos os tipos de dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: ddfd4e8a23f1a7e20230c188ac8203a11e48c4a6
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 178fbaeb1d3235a81cb4da49b7a955f6999c49a2
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -81,12 +83,12 @@ O SDK da Aplicação do Intune requer três [permissões do sistema Android](htt
 A Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) requer estas permissões para executar a autenticação mediada. Se estas permissões não forem concedidas pela aplicação ou forem revogadas pelo utilizador, os fluxos de autenticação que exigirem o mediador (a aplicação Portal da Empresa) serão desativados.
 
 
-###<a name="company-portal-app"></a>Aplicação do Portal da Empresa
+###<a name="company-portal-app"></a>Aplicação Portal da Empresa
 
-Porque é que a aplicação Portal da Empresa é necessária? Quando a aplicação Portal da Empresa for instalada no dispositivo e obtiver uma política de restrição da aplicação para o utilizador do serviço Intune, os pontos de entrada do SDK serão inicializados de forma assíncrona. A inicialização é obrigatória apenas quando o Android cria inicialmente o processo. Durante a inicialização, é estabelecida uma ligação à aplicação do Portal da Empresa e a política é obtida da aplicação.  
+Porque é que a aplicação Portal da Empresa é necessária? Quando a aplicação Portal da Empresa for instalada no dispositivo e obtiver uma política de restrição da aplicação para o utilizador do serviço Intune, os pontos de entrada do SDK serão inicializados de forma assíncrona. A inicialização é obrigatória apenas quando o Android cria inicialmente o processo. Durante a inicialização, é estabelecida uma ligação à aplicação Portal da Empresa e a política é obtida da aplicação.  
 
 > [!NOTE]
-> Se a aplicação do Portal da Empresa não estiver presente no dispositivo, o comportamento da aplicação ativada para Intune não irá mudar, sendo igual ao de uma aplicação normal.
+> Se a aplicação Portal da Empresa não estiver presente no dispositivo, o comportamento da aplicação ativada para Intune não irá mudar, sendo igual ao de uma aplicação normal.
 
 
 ## <a name="how-to-integrate-with-the-intune-app-sdk"></a>Como integrar no SDK da Aplicação do Intune
@@ -602,9 +604,9 @@ String getIdentity();
 
 > [!NOTE]
 > A etiquetagem de identidade de ficheiros é sensível ao modo offline. Leve em consideração os seguintes pontos:
-> * Se a aplicação do Portal da Empresa não estiver instalada, a etiquetagem de identidade dos ficheiros não poderá ser feita.
+> * Se a aplicação Portal da Empresa não estiver instalada, a etiquetagem de identidade dos ficheiros não poderá ser feita.
 >
-> * Se a aplicação do Portal da Empresa estiver instalada, mas a aplicação não tiver uma política, os ficheiros não poderão ter etiquetagem de identidade de forma fiável.
+> * Se a aplicação Portal da Empresa estiver instalada, mas a aplicação não tiver uma política, os ficheiros não poderão ter etiquetagem de identidade de forma fiável.
 >
 > * Quando a etiquetagem de identidade for disponibilizada, todos os ficheiros anteriormente criados serão tratados como pessoais (pertencentes à identidade de cadeia vazia), a menos que a aplicação tenha sido anteriormente instalada como aplicação gerida com identidade única. Nesse caso, serão tratados como pertencentes ao utilizador inscrito.
 
@@ -677,7 +679,7 @@ public final class MAMDataProtectionManager {
      * @param input
      *            Input stream to get information on. Either this input
  *            stream must have been returned by a previous call to
-     *            protect OR input.markSupported() must return true.
+      *            protect OR input.markSupported() must return true.
  *            Otherwise it will be impossible to get protection info
  *            without advancing the stream position. The stream must be
  *            positioned at the beginning of the protected data.
@@ -739,7 +741,7 @@ Se forem incluídos muitos projetos, cada `android:package` obterá uma cópia d
 
     MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI)
 
-**Serviços exportados**: o ficheiro `AndroidManifest.xml` incluído no SDK da aplicação do Intune tem `MAMNotificationReceiverService`. Tem de ser um serviço exportado para permitir que a aplicação de Portal da empresa envie notificações para uma aplicação otimizada. O serviço verifica o autor da chamada para assegurar que apenas a aplicação do Portal da Empresa está autorizada a enviar notificações.
+**Serviços exportados**: o ficheiro `AndroidManifest.xml` incluído no SDK da aplicação do Intune tem `MAMNotificationReceiverService`. Tem de ser um serviço exportado para permitir que a aplicação Portal da Empresa envie notificações para uma aplicação otimizada. O serviço verifica o autor da chamada para assegurar que apenas a aplicação Portal da Empresa está autorizada a enviar notificações.
 
 ### <a name="android-best-practices"></a>Melhores práticas de Android
 
@@ -752,9 +754,4 @@ O SDK do Intune mantém o contrato proporcionado pela API Android, embora possam
 * As funções derivadas têm de fazer chamadas através das respetivas versões de superclasses.
 
 * Evitar utilizar qualquer API de uma forma ambígua. Por exemplo, a utilização de `Activity.startActivityForResult/onActivityResult` sem verificar o `requestCode` causará um comportamento invulgar.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

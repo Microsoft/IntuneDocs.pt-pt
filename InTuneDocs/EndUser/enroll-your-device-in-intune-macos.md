@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,42 +32,41 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
   > [!NOTE]
   > Se estiver realmente a tentar inscrever um dispositivo iOS, tal como um iPhone ou iPad, [experimente antes estas instruções](enroll-your-device-in-intune-ios.md).
 
-1. Na sua __Estação de Ancoragem__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 2. Inicie sessão no site do Portal da Empresa com a sua conta escolar ou profissional.
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. Quando inicia a sessão, poderá ver as __Aplicações__ disponíveis, __Os Meus Dispositivos__ e outras __informações de contacto__ disponíveis para a sua equipa de TI. Na parte superior da página, verá um aviso a indicar que **Este dispositivo não está inscrito ou o Portal da Empresa não consegue identificá-lo. <u>Toque aqui</u> para selecionar um dispositivo diferente.** Clique em __Toque aqui__.
+3. Quando iniciar sessão, verá os separadores __Base__, __Aplicações__ e __Categorias__ disponíveis. Esta página irá mostrar as aplicações disponíveis para instalação. Se ainda não tiver todos os dispositivos inscritos, será apresentado um aviso a indicar **Não conseguimos apresentar-lhe aplicações.** Pode continuar ao selecionar __Os Meus Dispositivos__.
 
- ![Página de Destino do macOS do Portal da Empresa](./media/macOS_enroll_001_landing_page.png)
+ ![Uma captura de ecrã da página de destino do portal Web, com o mesmo a indicar que as aplicações ainda não podem ser instaladas e o botão Os Meus Dispositivos abaixo.](./media/macOS_enroll_001_landing_page.png)
 
-4. Será apresentada uma janela de pop-up com uma breve explicação sobre o motivo pelo qual vai __Identificar ou inscrever este dispositivo__. Analise-a e, em seguida, clique em __Inscrever__ para continuar.
+4. Na página __Os Meus Dispositivos__, será apresentada uma lista de dispositivos inscritos ou simplesmente uma faixa. Isto varia consoante já tenha um dispositivo macOS ou outro inscrito. Para inscrever um dispositivo que não esteja listado, selecione a faixa __Se o seu dispositivo estiver listado, toque aqui para identificá-lo. Também pode tocar aqui para inscrever o seu dispositivo se não estiver listado__.
 
- ![Identificar ou Inscrever este Dispositivo macOS](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![Captura de ecrã a mostrar a página Os Meus Dispositivos, com alguns dispositivos não identificados, acima da faixa de aviso para inscrever dispositivos não listados ou identificar os dispositivos não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. Será apresentada uma segunda janela de pop-up com uma breve explicação sobre o que acontecerá quando __Inscrever este dispositivo__. Analise-a e, em seguida, clique em __Instalar__ para continuar.
+5. Será apresentada uma janela de pop-up com uma breve explicação sobre o motivo pelo qual vai __Identificar ou inscrever este dispositivo__. Analise-a e, em seguida, clique em __Inscrever__ para continuar.
 
- ![Inscrever este dispositivo macOS](./media/macOS_enroll_003_enroll_popup.png)
+ ![Identificar ou Inscrever este Dispositivo macOS](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. Será apresentada uma segunda janela de pop-up com uma breve explicação sobre o que acontecerá quando __Inscrever este dispositivo__. Analise-a e, em seguida, clique em __Instalar__ para continuar.
+
+ ![Inscrever este dispositivo macOS](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > O Intune precisa de aceder ao seu computador para confirmar que o dispositivo é suficientemente seguro para aceder aos recursos da sua organização. Saiba [o que o acontece quando inscreve o dispositivo no Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
-6. A janela __Preferências do Sistema__ irá abrir e perguntar se pretende __Instalar o "Perfil de Gestão"?__ Clique em __Instalar__ para continuar ou clique em __Mostrar Perfil__ para obter mais detalhes.
+7. A janela __Preferências do Sistema__ irá abrir e perguntar se pretende __Instalar o "Perfil de Gestão"?__ Clique em __Instalar__ para continuar ou clique em __Mostrar Perfil__ para obter mais detalhes.
 
- ![Instalar Perfil de Gestão](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![Instalar Perfil de Gestão](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. Será apresentada uma janela de pop-up do macOS. Confirme que pretende fazer alterações ao disponibilizar o __Nome de Utilizador__ e a __Palavra-passe__ do seu computador e, em seguida, clique em __OK__. Esta ação irá instalar o perfil de gestão no seu Mac.
+8. Será apresentada uma janela de pop-up do macOS. Confirme que pretende fazer alterações ao disponibilizar o __Nome de Utilizador__ e a __Palavra-passe__ do seu computador e, em seguida, clique em __OK__. Esta ação irá instalar o perfil de gestão no seu Mac.
 
- ![Pop-up de Instalação do Perfil do macOS](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![Pop-up de Instalação do Perfil do macOS](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. Poderá ver algumas mensagens adicionais a partir do seu Mac com mais detalhes sobre o perfil ou se tem a certeza que quer __Instalar__. Clique em __Continuar__ e __Instalar__ nestes para continuar. Depois da conclusão da instalação, poderá ver o seu __Perfil de Gestão__ recém-instalado na lista de __Perfis de Dispositivo__.
+9. Poderá ver algumas mensagens adicionais a partir do seu Mac com mais detalhes sobre o perfil ou se tem a certeza que quer __Instalar__. Clique em __Continuar__ e __Instalar__ nestes para continuar. Depois da conclusão da instalação, poderá ver o seu __Perfil de Gestão__ recém-instalado na lista de __Perfis de Dispositivo__.
 
- ![Perfil do macOS Instalado](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![Perfil do macOS Instalado](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Ainda precisa de ajuda? Consulte o seu administrador de TI. Pode encontrar as informações de contacto no [Site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

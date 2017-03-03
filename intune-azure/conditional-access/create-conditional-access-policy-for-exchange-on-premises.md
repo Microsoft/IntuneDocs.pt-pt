@@ -1,5 +1,6 @@
 ---
-title: "Política de acesso condicional do Exchange no local | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Política de acesso condicional no local do Exchange"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: como pode configurar o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune"
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -55,8 +58,8 @@ O AAD DRS será automaticamente ativado para os clientes do Intune e do Office 3
 
 Se o dispositivo não estiver em conformidade com as definições de acesso condicional, será apresentada ao utilizador uma das mensagens seguintes quando iniciar sessão:
 
-- Se o dispositivo não estiver inscrito no Intune ou não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação do Portal da Empresa, como inscrever o dispositivo e como ativar o e-mail. Este processo também associa o ID do Exchange ActiveSync do dispositivo ao registo do dispositivo no Azure Active Directory.
-- Se o dispositivo não estiver em conformidade, será apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do Intune ou para a aplicação do Portal da Empresa, onde pode obter informações sobre o problema e como resolvê-lo.
+- Se o dispositivo não estiver inscrito no Intune ou não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa, como inscrever o dispositivo e como ativar o e-mail. Este processo também associa o ID do Exchange ActiveSync do dispositivo ao registo do dispositivo no Azure Active Directory.
+- Se o dispositivo não estiver em conformidade, será apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do Intune ou para a aplicação Portal da Empresa, onde pode obter informações sobre o problema e como resolvê-lo.
 
 ## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 
@@ -96,9 +99,4 @@ A aplicação **Correio** no Windows 8.1 e posterior (quando inscrita através 
   - Quando definir esta opção como bloquear o acesso, todos os dispositivos serão imediatamente impedidos de aceder ao Exchange no local inicialmente.  Os dispositivos que pertencem aos utilizadores nos **Grupos Incluídos** obterão acesso assim que o dispositivo for inscrito no Intune e avaliado como estando em conformidade. Os dispositivos Android que não executem o Samsung KNOX standard estarão sempre bloqueados porque não suportam esta definição.
 10. Em **Exceções da plataforma do dispositivo**, selecione **Adicionar** para especificar as plataformas. Se a definição **acesso de dispositivo não gerido** estiver definida como **bloqueado**, os dispositivos que estão inscritos e em conformidade terão permissão, mesmo que exista uma exceção de plataforma para bloquear. Selecione **OK** para guardar as definições.
 11. No painel **No local**, clique em **Guardar** para guardar a política de acesso condicional.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

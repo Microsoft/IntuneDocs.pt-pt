@@ -1,11 +1,11 @@
 ---
-title: Proteger dispositivos | Documentos da Microsoft
+title: Proteger dispositivos com o Microsoft Intune | Documentos da Microsoft
 description: "Saiba mais sobre algumas das formas como o Intune o pode ajudar a que proteger os dispositivos contra acesso não autorizado e outras ameaças."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -45,10 +47,10 @@ O Intune inclui [políticas de conformidade do dispositivo](introduction-to-devi
 ### <a name="protect-apps-and-the-data-they-use"></a>Proteger aplicações e os dados que utilizam
 O Intune oferece-lhe uma variedade de funcionalidades para o ajudar a proteger as aplicações e os respetivos dados. Por exemplo, as políticas de gestão de aplicações móveis (MAM) podem impedir que seja criada uma cópia de segurança de uma aplicação protegida, restringir copiar e colar para outras aplicações, exigir um PIN para aceder a uma aplicação e muito mais. Para obter mais detalhes sobre como proteger aplicações, veja [Proteger aplicações e dados com o Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md)
 
-## <a name="further-capabilities-for-windows-devices"></a>Capacidades adicionais para dispositivos Windows
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>Adicionar uma camada adicional de proteção aos dispositivos
+A [autenticação multifator (MFA)](multi-factor-authentication-azure-active-directory.md) é uma forma mais segura de autenticar os utilizadores dos dispositivos na rede.  Com a MFA, os utilizadores necessitam de confirmar a identidade para além do nome de utilizador e da palavra-passe, através de uma chamada telefónica ou mensagem de texto.
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Adicionar uma camada adicional de proteção aos dispositivos Windows
-A [autenticação multifator (MFA)](protect-windows-devices-with-multi-factor-authentication.md) é uma forma mais segura de autenticar os utilizadores com dispositivos Windows e Windows Phone na rede.  Com a MFA, os utilizadores necessitam de confirmar a identidade para além do nome de utilizador e da palavra-passe, através de uma chamada telefónica ou mensagem de texto.
+## <a name="further-capabilities-for-windows-devices"></a>Capacidades adicionais para dispositivos Windows
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Controlar as definições do Windows Hello para Empresas em dispositivos Windows
 O Intune permite efetuar a integração com o [Windows Hello para Empresas](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (anteriormente denominado Microsoft Passport), que é um método de início de sessão alternativo para Windows 10 e posterior que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual.
@@ -62,9 +64,4 @@ O Bloqueio de Ativação é uma funcionalidade que o ajuda a proteger os disposi
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Proteger os PCs Windows geridos com o cliente do Intune
 O Intune continua a suportar políticas de segurança para PCs Windows que não inscreve, mas que gere com o software cliente de computador do Intune. Para saber como estas políticas podem ajudar a proteger os seus PCs Windows, consulte [Utilizar políticas para ajudar a proteger PCs Windows que executem o software cliente do Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -53,7 +55,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |Implementação|A ação de enviar uma aplicação ou política para um dispositivo ou utilizador gerido por si.|
 |Ação de implementação|Uma escolha que faz quando [implementa uma aplicação](/intune/deploy-use/deploy-apps-in-microsoft-intune). Pode optar por tornar a instalação da aplicação obrigatória, opcional ou pode desinstalá-la.|
-|Gestor de inscrição de dispositivos|As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do [gestor de inscrição de dispositivos (DEM)](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) é uma conta especial do Intune, que pode inscrever até 1 000 dispositivos.|
+|Gestor de inscrição de dispositivos|As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do [gestor de inscrição de dispositivos (DEM)](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) é uma conta especial do Intune, que pode inscrever até 1000 dispositivos.|
 |Mapeamento do grupo de dispositivos|Ajuda-o a [adicionar automaticamente dispositivos aos grupos](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) com base numa categoria de dispositivo (por exemplo, "Pessoal" ou "Vendas") que o utilizador ou o utilizador final pode atribuir ao dispositivo.|
 
 ## <a name="e"></a>E
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |Perfil de e-mail|Esta política pode ser utilizada para configurar as [definições de acesso ao e-mail](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) para clientes de e-mail específicos em dispositivos móveis, minimizando a quantidade de configuração que o utilizador final tem de efetuar.|
 |EMS|O Microsoft Enterprise Mobility + Security (anteriormente conhecido por Enterprise Mobility Suite) mantém os dados da sua empresa protegidos e permite que os utilizadores [acedam às aplicações e aos conteúdos de que precisam](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|Utilizador final|[Utilizadores de dispositivos como telefones ou PCs](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) que gere através do Intune.|
+|Utilizador final|Os [utilizadores de dispositivos como telemóveis e PCs ](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) geridos através do Intune.|
 |Inscrever|O Microsoft Intune utiliza a [inscrição](/intune/deploy-use/enroll-devices-in-microsoft-intune) para trazer dispositivos para gestão e permitir o acesso aos recursos.|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Perfil Wi-Fi|Uma política que implementa [definições de redes móveis](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) para dispositivos, permitindo aos utilizadores ligarem-se à sua rede empresarial sem terem de conhecer ou configurar definições.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

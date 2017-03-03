@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
     (Em alguns telemóveis, terá de selecionar **Armazenamento** &gt; **Encriptação de armazenamento** ou **Armazenamento** &gt; **Bloqueio de ecrã e segurança** &gt; **Outras definições de segurança** para encontrar a opção "Encriptar").
 
 3.  Siga as instruções no ecrã. Durante a encriptação, o seu dispositivo poderá reiniciar várias vezes.
+
+> [!Note]
+> Determinados dispositivos Android não podem ser encriptados. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>O que fazer se tiver problemas
 **Problema**: já encriptou o seu dispositivo e vê um dos seguintes:
@@ -64,10 +68,6 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
     5. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
 
+
 Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a [equipa Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

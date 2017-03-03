@@ -1,42 +1,49 @@
 ---
-title: Inscrever o seu dispositivo 10 Windows no Intune | Microsoft Intune
+title: Inscrever o seu dispositivo com o Windows 10 no Intune | Documentos da Microsoft
 description: Inscrever um dispositivo com o Windows 10 1511 no Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
-ms.openlocfilehash: 83c69c69f006128a755053f22c7b6848441c522c
+ms.sourcegitcommit: 580ca62628981016c444b2992e792ecc4a5da442
+ms.openlocfilehash: 7afe4eca15c395806bcc800bc261d5e6b7ba5f0c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 
-1.  Aceda às **Definições** do Windows e, em seguida, toque em **Contas**.
+1.  Abra a aplicação **Definições** do Windows ao aceder ao **menu Iniciar** e selecione o botão **Definições**. Também pode procurar "definições" na barra de pesquisa.
+
+2. Selecione **Contas**.
 
     ![Aceda a Definições e Contas](./media/W10-enroll-1-settings-accounts.png)
 
-2.  Toque em **A sua conta**.
+3. Selecione **A sua conta**.
 
-    ![Toque na sua conta](./media/W10-enroll-2-accounts-your-account.png)
+    ![Selecione A sua conta](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  Toque em **Adicionar uma conta escolar ou profissional**.
+4. Selecione **Adicionar uma conta escolar ou profissional**.
 
-    ![Toque em adicionar uma conta profissional ou escolar](./media/w10-enroll-3-add-work-school-acct.png)
+    ![Selecione Adicionar uma conta escolar ou profissional](./media/w10-enroll-3-add-work-school-acct.png)
 
-4.  Inicie sessão com as credenciais da sua conta profissional ou escolar.
+5. Inicie sessão com as credenciais da sua conta profissional ou escolar.
 
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
+    ![Iniciar sessão](./media/W10-enroll-4-sign-in.png)
 
 Continua sem aceder ao seu e-mail, ficheiros ou outros dados do trabalho ou da escola? Tente corrigir o acesso através da [resolução de problemas com a sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se continuar sem funcionar, terá de contactar o seu administrador de TI para obter mais ajuda.
 
@@ -44,16 +51,11 @@ Uma forma fácil de obter a ajuda do seu administrador de TI é através das inf
 
 Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
 
-1.  Toque em **Iniciar** &gt; **Loja**.
+1. Selecione **Iniciar** > **Loja**.
 
-2.  Toque em **Pesquisar** e, em seguida, escreva **portal da empresa**.
+2. Selecione **Pesquisar** e, em seguida, escreva **portal da empresa**.
 
-3.  Na lista de resultados, toque em **Portal da Empresa** &gt; **Instalar**.
+3. Na lista de resultados, selecione **Portal da Empresa** > **Instalar**.
 
-4.  Toque em **Instalar** ou em **Gratuito**. Não existe qualquer diferença entre estas duas opções; a opção apresentada depende da forma como a sua organização configurou a aplicação Portal da Empresa.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
+4. Selecione **Instalar** ou **Gratuito**. Não existe qualquer diferença entre estas duas opções; a opção apresentada depende da forma como a sua organização configurou a aplicação Portal da Empresa.
 

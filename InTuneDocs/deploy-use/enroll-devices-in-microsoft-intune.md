@@ -2,10 +2,10 @@
 title: Inscrever dispositivos | Documentos da Microsoft
 description: "A gestão de dispositivos móveis (MDM) utiliza a inscrição para trazer dispositivos para gestão e permitir o acesso aos recursos."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -37,7 +38,7 @@ A seguinte tabela mostra métodos de inscrição do Intune, bem como as funciona
 
 - **Apagar** – indica se o dispositivo tem de ser apagado antes de os utilizadores poderem inscrever o dispositivo. O termo "apagar" significa uma reposição de fábrica do dispositivo, a qual remove todos os dados. Para obter mais informações, veja [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md).
 - **Afinidade** – associa dispositivos a utilizadores. Necessário para gestão de aplicações móveis (MAM) e acesso condicional a dados da empresa. Para obter mais informações, veja [Afinidade do utilizador](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Bloqueio** – indica se os utilizadores estão impedidos de anular a inscrição dos seus dispositivos na gestão. Os utilizadores podem anular a inscrição dos seus dispositivos em todas as plataformas ao utilizar a aplicação Portal da Empresa. Eles não podem utilizar os menus do sistema operativo nativo para anular a inscrição. 
+- **Bloquear** – indica se os utilizadores estão impedidos de anular a inscrição dos seus dispositivos através dos menus do sistema operativo nativo. Os utilizadores podem anular a inscrição dos seus dispositivos em todas as plataformas ao utilizar a aplicação Portal da Empresa. 
 
 **Métodos de inscrição do iOS**
 
@@ -88,7 +89,7 @@ Os dispositivos pertencentes à empresa (COD) podem ser geridos com a consola do
 Para obter mais informações, veja [Inscrever dispositivos pertencentes à empresa](manage-corporate-owned-devices.md).
 
 ### <a name="dem"></a>DEM
-A gestão de inscrição de dispositivos (DEM) é uma conta especial do Intune utilizada para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
+O gestor de inscrição de dispositivos (DEM) é uma conta especial do Intune utilizada para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Voltar à tabela](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo **iOS Supervisionado** que, por sua vez, permite:
@@ -130,9 +131,4 @@ O Intune pode gerir as seguintes plataformas de dispositivos:
 - [Pré-requisitos para a inscrição de dispositivos](prerequisites-for-enrollment.md)
 - [Gerir dispositivos pertencentes à empresa](manage-corporate-owned-devices.md)
 - [Dispositivos móveis e computadores suportados](../get-started/supported-mobile-devices-and-computers.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

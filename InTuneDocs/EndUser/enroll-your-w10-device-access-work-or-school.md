@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,43 +16,42 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 865c0e607b053c4d5aff648332b1dcfc68dc0e6c
+ms.sourcegitcommit: cfd6d509b6683f563d56ef149ff3739de4772394
+ms.openlocfilehash: c87be1a3cdea23d5d40dcd8abe902b4ee5c06bc4
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment-with-AAD/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Toque em **Aceder ao trabalho ou escola** e, em seguida, toque em **Ligar**.
+1.  Abra a aplicação **Definições** do Windows ao aceder ao **menu Iniciar** e selecione o botão **Definições**. Também pode procurar "definições" na barra de pesquisa.
 
-    ![Toque na conta Acesso profissional escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Selecione **Contas** > **Aceder a profiss./escolar** > **Ligar**.
 
-2.  Introduza o seu e-mail profissional ou escolar e, em seguida, toque em **Seguinte**.
+    ![Selecione Contas, Aceder a profiss./escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+3.  Introduza o seu e-mail profissional ou escolar e, em seguida, selecione **Seguinte**.
 
     ![Introduza a sua conta profissional ou escolar](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-3. Inicie sessão no Intune com a sua conta profissional ou escolar.
+4. Inicie sessão no Intune com a sua conta profissional ou escolar.
 
     ![Adicionar uma conta escolar ou profissional](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     Verá uma mensagem a indicar que a sua empresa ou escola está a registar o dispositivo.
 
-4. Quando vir a página **Está tudo pronto!** toque em **Fechar**. Terminou.
+5. Quando vir o ecrã **Está tudo pronto!** selecione **Fechar**. Terminou.
 
-  ![Toque em "Está tudo pronto!" ecrã](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Selecione Fechar em "Está tudo pronto!" ecrã](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. Se pretender verificar novamente se a ligação tem o aspeto pretendido, volte às **Definições**, onde deve conseguir ver a sua conta profissional ou escolar listada.
+6. Se pretender verificar novamente se a ligação tem o aspeto pretendido, volte às **Definições**, onde deve conseguir ver a sua conta profissional ou escolar listada.
 
     ![Validar a definição correta da ligação](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
 Se seguiu os passos anteriores, mas continua a não conseguir aceder à conta de e-mail e aos ficheiros profissionais ou escolares, siga os passos em [Passos de resolução de problemas a seguir se vir Acesso profissional ou escolar](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

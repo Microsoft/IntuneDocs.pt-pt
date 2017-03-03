@@ -1,5 +1,6 @@
 ---
-title: "Introdução à conformidade de dispositivos | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Introdução à compatibilidade de dispositivos"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: utilize este tópico para compreender os pré-requisitos obrigatórios para criar políticas de conformidade no Microsoft Intune"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: c868bc9adc0afbc216d47530a7eace10f8ca2d9b
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -71,7 +74,7 @@ This section is a detailed view of what you see in the **Overview**. A list of a
 
 Período de validade do estado de conformidade
 
-##  <a name="next-steps"></a>Próximos passos
+##  <a name="next-steps"></a>Passos seguintes
 [Criar uma política de conformidade para Android](create-a-compliance-policy-for-android.md)
 
 [Criar uma política de conformidade para Android for Work](create-a-compliance-policy-for-android-for-work.md)
@@ -79,9 +82,4 @@ Período de validade do estado de conformidade
 [Criar uma política de conformidade para iOS](create-a-compliance-policy-for-ios.md)
 
 [Criar uma política de conformidade para Windows](create-a-compliance-policy-for-windows.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

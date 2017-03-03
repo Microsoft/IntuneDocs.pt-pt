@@ -1,5 +1,6 @@
 ---
-title: "Configurar a gestão de dados básicos em aplicações do Office 365 – pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Configurar a gestão de dados básicos em aplicações do Office 365 – pré-visualização do Azure no Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: documentação de suporte do assistente Gerir aplicações do Office 365."
 keywords: 
 author: lindavr
@@ -14,9 +15,11 @@ ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4c45b7fc8a520d869f21717fea36e27b242cf39
-ms.openlocfilehash: 7cff88f0365cff1de133fdafdce2bd45b36d551e
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -70,11 +73,11 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 
 1. Inicie a aplicação OneDrive para Empresas para abrir a página de início de sessão.  <br/> ![Imagem do ecrã de boas-vindas da aplicação OneDrive](./media/onedrive-android-welcome.png)
 2. Escreva o nome de utilizador da sua conta profissional. Será redirecionado para a página de autenticação do Office 365 para introduzir as suas credenciais de trabalho. <br/> ![Imagem do início de sessão no O365 no Android](./media/o365-sign-in-android.png)
-3. Após as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, verá uma mensagem com instruções para instalar a aplicação do Portal da Empresa, caso ainda não esteja instalada no dispositivo. Toque em **Ir para loja** para continuar. <br/> ![Imagem da mensagem para obter a aplicação do Portal da Empresa](./media/get-company-portal-android.png) <br/>Se já tiver a aplicação do Portal da Empresa instalada no telemóvel, a aplicação OneDrive para Empresas será automaticamente iniciada e poderá avançar para a nota final.
+3. Após as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, verá uma mensagem com instruções para instalar a aplicação Portal da Empresa, caso ainda não esteja instalada no dispositivo. Toque em **Ir para loja** para continuar. <br/> ![Imagem da mensagem para obter a aplicação Portal da Empresa](./media/get-company-portal-android.png) <br/>Se já tiver a aplicação Portal da Empresa instalada no telemóvel, a aplicação OneDrive para Empresas será automaticamente iniciada e poderá avançar para a nota final.
 >[!IMPORTANT]
->No Android, depois de configurar as aplicações do Office para serem geridas por uma política MAM, o utilizador do dispositivo **tem** de instalar a aplicação do Portal da Empresa para aceder aos e-mails e aos documentos do trabalho, embora o utilizador final não precise de abrir ou iniciar sessão na aplicação para de facto ler os e-mails ou os documentos.
+>No Android, depois de configurar as aplicações do Office para serem geridas por uma política MAM, o utilizador do dispositivo **tem** de instalar a aplicação Portal da Empresa para aceder aos e-mails e aos documentos do trabalho, embora o utilizador final não precise de abrir ou iniciar sessão na aplicação para de facto ler os e-mails ou os documentos.
 
-4. Entrou na Google Play Store, onde pode transferir e instalar a aplicação do Portal da Empresa. A aplicação ajuda a manter os dados em segurança. <br/> ![Imagem da aplicação na Google Play Store](./media/google-play-get-app-android.png)
+4. Entrou na Google Play Store, onde pode transferir e instalar a aplicação Portal da Empresa. A aplicação ajuda a manter os dados em segurança. <br/> ![Imagem da aplicação na Google Play Store](./media/google-play-get-app-android.png)
 5. Depois de concluir a instalação da aplicação, selecione **Aceitar** para aceitar os termos. A aplicação OneDrive para Empresas é iniciada automaticamente.
 
 
@@ -128,11 +131,6 @@ Pode sempre editar estas definições da política para satisfazer os requisitos
 Para ver ou atualizar estas políticas, ou todas as políticas que criar na pré-visualização do Azure no Intune, no dashboard, selecione **Gerir aplicações** > **Políticas de Proteção de Aplicações**. A lista de políticas é apresentada do lado direito. Escolha a política que quer visualizar para ver e editar as definições. <br/>
 ![Imagem do caminho da interface de utilizador para ver as políticas](./media/image-for-faq.png)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 Saiba mais sobre as [políticas de proteção de aplicações](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

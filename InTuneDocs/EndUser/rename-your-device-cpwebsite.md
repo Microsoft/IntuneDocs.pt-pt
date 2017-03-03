@@ -5,41 +5,43 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: c539af3b4ac901029faeaa4947491eec8ff0c378
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-
 # <a name="rename-your-device-from-the-company-portal-website"></a>Mudar o nome do dispositivo a partir do site do Portal da Empresa
 
-Se decidir mudar o nome do seu dispositivo, pode fazê-lo de forma remota a partir do [Site do Portal da empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune e para fazer a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
+Poderá decidir mudar o nome do dispositivo para o tornar mais fácil de identificar. Pode fazê-lo a partir do [site do Portal da Empresa](http://portal.manage.microsoft.com). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito na gestão no seu departamento de TI.
 
 Para mudar o nome o seu dispositivo:
 
-1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e toque no dispositivo cujo nome quer mudar.
+1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
 
-2.  Toque em **Mudar o nome**.
+2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo que pretende mudar.
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![Captura de ecrã a mostrar a página Os Meus Dispositivos, com alguns dispositivos não identificados, acima da faixa de aviso para inscrever dispositivos não listados ou identificar os dispositivos não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Na caixa de onde aparece o nome do dispositivo atual, escreva o novo nome do seu dispositivo e, em seguida, toque no botão **Mudar o nome**. O dispositivo aparece agora com o novo nome.
+3.    O dispositivo será aberto numa janela de pop-up. Toque no botão **Mudar o Nome**.
+
+    ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+
+4.  Na caixa onde aparece o nome do seu dispositivo, escreva um novo nome de dispositivo e, em seguida, toque no botão **Mudar o Nome**. O dispositivo aparece agora com o novo nome.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

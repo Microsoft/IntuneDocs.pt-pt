@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: ab035d069fa1dbf5f5f38a959dc2f896a0109b6f
+ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
+ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -44,7 +45,7 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 ### <a name="get-an-encryption-key"></a>Obter uma Chave de Encriptação
 
-1. Como utilizador administrativo, abra a [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program** e selecione **Download Encryption Key**. 
+1. Como utilizador administrativo, abra a [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **iOS** &gt; **Programa de Inscrição de Dispositivos** e selecione **Transferir a Chave de Encriptação**. 
 
 2. Guarde o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos da Apple.
 
@@ -66,17 +67,17 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 ### <a name="add-the-dep-token-to-intune"></a>Adicionar o token do DEP ao Intune
 
-1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**.
+1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **iOS** &gt; **Programa de Inscrição de Dispositivos**.
 
-2. Selecione **Upload the DEP Token**. **Procure** o ficheiro do certificado (.p7m), introduza o seu **ID Apple**e, em seguida, selecione **Carregar**.
+2. Selecione **Upload the DEP Token**. **Procure** o ficheiro do certificado (.p7m), introduza o seu **ID Apple** e, em seguida, selecione **Carregar**.
 
 ### <a name="add-the-corporate-device-enrollment-policy"></a>Adicionar a Política de Inscrição de Dispositivos da Empresa
 
-1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Policy** &gt; **Corporate Device Enrollment** e, em seguida, selecione **Add**.
+1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, selecione **Adicionar**.
 
 2. Forneça detalhes **Gerais**, incluindo **Nome** e **Descrição** e especifique se os dispositivos atribuídos ao perfil têm afinidade de utilizador ou se pertencem a um grupo:
 
-   - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações). A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos DEP com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos.
+   - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações). A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos DEP com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos. Durante a inscrição em dispositivos DEP, não pode ser pedida a alteração da palavra-passe aos novos utilizadores que tenham de alterar a palavra-passe no primeiro início de sessão. Além disso, não será pedido aos utilizadores cujas palavras-passe expiraram que reponham a palavra-passe durante a inscrição DEP e os mesmos terão de repor a palavra-passe a partir de um dispositivo diferente. 
 
    > [!NOTE]
    > O DEP com afinidade de utilizador requer a ativação de um ponto final de Nome de Utilizador/Misto WS-Trust 1.3 para pedir o token de utilizador.
@@ -120,9 +121,9 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 ### <a name="assign-the-profile-to-devices"></a>Atribuir o perfil a dispositivos
 
-1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Policy** &gt; **Corporate Device Enrollment** e, em seguida, selecione **Assign**.
+1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Política** &gt; **Inscrição de Dispositivos da Empresa** e, em seguida, selecione **Atribuir**.
 
-2. Selecione os dispositivos aos quais quer atribuir o perfil que criou. Pode selecionar **All devices** ou selecionar dispositivos específicos e, em seguida, selecionar **Add**.
+2. Selecione os dispositivos aos quais quer atribuir o perfil que criou. Pode selecionar **Todos os dispositivos** ou selecionar dispositivos específicos e, em seguida, selecionar **Adicionar**.
 
 > [!Important]
 > Atualmente, o Intune permite-lhe designar um perfil de inscrição de dispositivos "predefinido", o que significa que os novos números de série são atribuídos automaticamente a esse perfil predefinido quando sincronizar novos números de série com o serviço DEP da Apple. Quando o seu inquilino for migrado para o novo portal do Azure num futuro próximo, deixará de poder predefinir um perfil e de ter números de série atribuídos automaticamente a esse perfil. Em vez disso, terá de atribuir números de série a um perfil específico. [Saiba mais](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
@@ -141,9 +142,9 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 Este passo sincroniza dispositivos com o serviço DEP da Apple e faz com que os dispositivos sejam apresentados na consola do Intune.
 
-1. Como utilizador administrativo, abra a [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program** e, em seguida, selecione **Sync now**. É enviado um pedido de sincronização para a Apple.
+1. Como utilizador administrativo, abra a [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **iOS** &gt; **Programa de Inscrição de Dispositivos** e, em seguida, selecione **Sincronizar agora**. É enviado um pedido de sincronização para a Apple.
 
-2. Para ver dispositivos geridos por DEP após a sincronização, na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Groups** &gt; **All Devices** &gt; **Corporate Pre-enrolled devices** &gt; **By iOS Serial Number**. Na área de trabalho **By iOS Serial Number (Por Número de Série do iOS)**, o **State (Estado)** dos dispositivos geridos indica "Not contacted" ("Não contactado") até o dispositivo ser ligado e executar o Assistente de Configuração para inscrever o dispositivo.
+2. Para ver dispositivos geridos por DEP após a sincronização, na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Grupos** &gt; **Todos os Dispositivos** &gt; **Dispositivos da Empresa Pré-inscritos** &gt; **Por Número de Série iOS**. Na área de trabalho **By iOS Serial Number (Por Número de Série iOS)**, o **State (Estado)** dos dispositivos geridos indica "Not contacted" ("Não contactado") até o dispositivo ser ligado e executar o Assistente de Configuração para inscrever o dispositivo.
 
    Para estar em conformidade com os termos da Apple para o tráfego DEP aceitável, o Intune impõe as seguintes restrições:
 
@@ -161,9 +162,4 @@ A partir de dezembro de 2016, a gestão de grupos de dispositivos irá mudar par
 
 ### <a name="see-also"></a>Veja também
 [Pré-requisitos para inscrever dispositivos](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

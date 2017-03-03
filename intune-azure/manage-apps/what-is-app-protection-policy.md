@@ -1,5 +1,6 @@
 ---
-title: "O que são as políticas de proteção de aplicações | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "O que são as políticas de proteção de aplicações"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: utilize este tópico para saber como proteger os dados da sua empresa com as políticas de proteção de aplicações do Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 34f5f17e581e8e146fccce6534202939d1418135
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -64,7 +67,7 @@ A utilização da MDM com políticas de proteção de aplicações tem outras va
 
 -   Android 4 ou posterior
 
-Os dispositivos Windows não são atualmente suportados. No entanto, quando inscrever dispositivos Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Os dispositivos Windows não são atualmente suportados. No entanto, quando inscrever dispositivos com o Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações
 
 ####  <a name="apps-without-app-protection-policies"></a>Aplicações sem políticas de proteção de aplicações
@@ -131,12 +134,7 @@ Por exemplo, quando o utilizador final inicia a aplicação OneDrive com a sua c
 
 Todas as aplicações móveis do Office suportam várias identidades.
 
-##  <a name="next-steps"></a>Próximos passos
+##  <a name="next-steps"></a>Passos seguintes
 
 [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

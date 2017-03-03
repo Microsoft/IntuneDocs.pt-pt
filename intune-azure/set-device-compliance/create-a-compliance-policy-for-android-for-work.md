@@ -1,5 +1,6 @@
 ---
-title: "Criar política de conformidade para Android for Work | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Criar uma política de conformidade para Android for Work"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como criar uma política de conformidade para dispositivos Android for Work."
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 05199796c4fff0a86b4c22a1a75bb97e9de92d55
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 48eaa3cbe1ff4e3fb18bfa762a341dbe74a7adce
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -65,7 +68,7 @@ A tabela que se segue descreve como as definições não conformes são geridas 
 
 Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade – política**.
 
-1. Escolha a política que quer atribuir aos utilizadores e, em seguida, escolha **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+1. Escolha a política que quer atribuir aos utilizadores e, em seguida, **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
 2. Escolha **Selecionar grupos** para abrir o painel que apresenta os grupos de segurança do Azure AD.  Escolher **Selecionar** implementa a política para os utilizadores.
 
 Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
@@ -119,9 +122,4 @@ Para obter mais detalhes, consulte [Ativar a regra de proteção contra ameaças
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

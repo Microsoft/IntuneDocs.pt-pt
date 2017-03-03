@@ -1,5 +1,6 @@
 ---
-title: "Problemas conhecidos na Pré-visualização do Microsoft Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Problemas conhecidos na Pré-visualização do Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: leia sobre os problemas conhecidos na pré-visualização"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ Se quiser pedir uma nova funcionalidade para adicionar ao Intune, considere o pr
 ## <a name="administration-and-accounts"></a>Administração e contas
 
 - Os Administradores Globais (também designados por Administradores Inquilinos) podem continuar a realizar tarefas diárias de administração sem uma licença separada do Intune ou do Enterprise Mobility Suite (EMS). No entanto, se os Administradores Globais pretenderem utilizar o serviço, como, por exemplo, para inscrever os seus próprios dispositivos, um dispositivo da empresa ou utilizar o Portal da Empresa do Intune, precisarão de uma licença do Intune ou do EMS como qualquer outro utilizador.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

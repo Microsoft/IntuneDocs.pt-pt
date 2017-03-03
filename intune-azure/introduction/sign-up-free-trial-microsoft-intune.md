@@ -1,5 +1,6 @@
 ---
-title: "Inscrever-se numa avaliação gratuita de 30 dias | Documentos da Microsoft"
+title: "Inscrever-se numa avaliação gratuita de 30 dias"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: como inscrever-se no Intune no Azure."
 keywords: 
 author: lindavr
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cd98141b4b377f0013607f2a2ebb93a93cd7f0ce
-ms.openlocfilehash: ce69e7efbee286839a1bf3440db692bd237b0e06
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 29b33341b136c8e8d76b666f94a9f620212944c5
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -130,7 +133,7 @@ Para aceder ao dashboard do Intune a partir do centro de administração do Offi
 
 Para voltar para o centro de administração do Office 365 a partir do Intune, introduza https://portal.office.com na barra de endereço do seu browser. Se já iniciou sessão no Intune, será diretamente reencaminhado para o centro de administração do Office 365.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 ### <a name="intune-azure-preview"></a>Pré-visualização do Azure no Intune
 Saiba mais sobre a [pré-visualização do Intune no portal do Azure](what-is-microsoft-intune.md)
@@ -144,9 +147,4 @@ Saiba mais sobre a utilização das suas contas de utilizador do Azure Active Di
 - [Requisitos de autenticação multifator](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 Saiba mais sobre a utilização do [Intune com o System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

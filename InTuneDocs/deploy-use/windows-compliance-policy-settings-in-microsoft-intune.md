@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -76,7 +77,10 @@ As definições apresentadas nesta secção são suportadas no Windows Phone 8.1
   -  **A integridade do código está ativada**: a integridade do código é uma funcionalidade que valida a integridade de um ficheiro de controlador ou de sistema sempre que é carregado para a memória. A integridade do código deteta se um ficheiro de controlador ou de sistema não assinado está a ser carregado para o kernel. Também deteta se um ficheiro de sistema foi modificado por software malicioso que está a ser executado por uma conta de utilizador com privilégios administrativos.
   - **O Arranque Seguro está ativado**: se o Arranque Seguro estiver ativado, o sistema é forçado a fazer o arranque para um estado de fábrica fidedigno. Além disso, com o Arranque Seguro ativado, os componentes do núcleo utilizados para arrancar o computador têm de ter assinaturas criptográficas corretas e que sejam consideradas fidedignas pela organização que fabricou o dispositivo. O firmware UEFI verifica isto antes de permitir que o computador seja iniciado. Se um ficheiro tiver sido adulterado, danificando a respetiva assinatura, o sistema não arrancará.
 
-  Para obter informações sobre como funciona o serviço HAS, consulte [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
+  > [!IMPORTANT]
+  > Os dispositivos Windows não suportam software **Antimalware de Arranque de Início Antecipado** (ELAM) de terceiros instalado como parte do atestado de estado de funcionamento do dispositivo.
+
+  Para obter informações sobre como funciona o serviço HAS, veja [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme.
     É apresentada uma ligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para, em seguida, poder aceder aos recursos da empresa.
@@ -130,9 +134,9 @@ Pode definir uma regra para exigir que os dispositivos com o Windows 10 sejam co
   -  **BitLocker está ativado**: se o BitLocker estiver ativado, o dispositivo poderá ajudar a proteger os dados que são armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra em hibernação. A Encriptação de Unidade BitLocker do Windows encripta todos os dados armazenados no volume do sistema operativo Windows. O BitLocker utiliza o TPM para ajudar a proteger o sistema operativo Windows e os dados de utilizador. O BitLocker também ajuda a garantir que os computadores não são adulterados, mesmo que não estejam a ser vigiados, sejam roubados ou se percam. Se os computadores estiverem equipados com um TPM compatível, o BitLocker utiliza o TPM para bloquear as chaves de encriptação que ajudam a proteger os dados. Como resultado, as chaves não podem ser acedidas até o TPM ter verificado o estado dos computadores.
   -  **A integridade do código está ativada**: a integridade do código é uma funcionalidade que valida a integridade de um ficheiro de controlador ou de sistema sempre que é carregado para a memória. A integridade do código deteta se um ficheiro de controlador ou de sistema não assinado está a ser carregado para o kernel. Também deteta se um ficheiro de sistema foi modificado por software malicioso que está a ser executado por uma conta de utilizador com privilégios administrativos.
   - **O Arranque Seguro está ativado**: se o Arranque Seguro estiver ativado, o sistema é forçado a fazer o arranque para um estado de fábrica fidedigno. Além disso, com o Arranque Seguro ativado, os componentes do núcleo utilizados para arrancar o computador têm de ter assinaturas criptográficas corretas e que sejam consideradas fidedignas pela organização que fabricou o dispositivo. O firmware UEFI verifica isto antes de permitir que o computador seja iniciado. Se um ficheiro tiver sido adulterado, danificando a respetiva assinatura, o sistema não arrancará.
-  - **O antimalware de arranque de início antecipado está ativado**: o antimalware de arranque de início antecipado (ELAM) assegura proteção para os computadores da sua rede quando são iniciados e antes de os controladores de terceiros serem inicializados.
+  - **O antimalware de início antecipado está ativado**: o antimalware de arranque de início antecipado (ELAM) assegura proteção para os computadores da sua rede quando são iniciados e antes de os controladores de terceiros serem inicializados.
 
-  Para obter informações sobre como funciona o serviço HAS, consulte [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
+  Para obter informações sobre como funciona o serviço HAS, veja [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
 
 ### <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 - **SO mínimo obrigatório**: suportado no Windows 8.1 e Windows 10.
@@ -151,9 +155,4 @@ Para localizar a versão de SO a utilizar nas definições **SO mínimo obrigat�
 
 - Nos PCs com o Windows 10, a versão deve ser definida como **10.0** mais o número de compilação do SO devolvido pelo comando **winver**. Por exemplo, pode ser semelhante a 10.0.10586.
 > ![Versão de compilação do SO realçada na caixa de diálogo "Acerca do Windows"](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

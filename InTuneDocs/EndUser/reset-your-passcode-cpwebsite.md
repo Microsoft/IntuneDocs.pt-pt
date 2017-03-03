@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: a8ce59755a74199eda6865feda68c0613d10c2a7
+ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
+ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -33,21 +34,26 @@ Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intun
 
 Para repor o código de acesso:
 
-1.  Abra o [site do Portal da Empresa](http://portal.manage.microsoft.com) e selecione o dispositivo cujo código de acesso pretende repor.
+1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
 
-2.  Selecione **Repor Código de Acesso**.
+2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo cujo código de acesso quer repor.
 
-    ![Informações do dispositivo com o botão Repor Código de Acesso](./media/iwp-screen-with-all-options.png)
+  ![Captura de ecrã a mostrar a página Os Meus Dispositivos, com alguns dispositivos não identificados, acima da faixa de aviso para inscrever dispositivos não listados ou identificar os dispositivos não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Selecione **Terminar sessão** e, em seguida, volte a iniciar sessão com as credenciais da sua conta escolar ou profissional. Tem de voltar a iniciar sessão dentro de cinco minutos.
+3.    O dispositivo será aberto numa janela de pop-up. Selecione o botão **Repor Código de Acesso**.
 
-    ![Mensagem de reposição com botão para terminar sessão](./media/iwp-2-sign-out.png)
+    ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
 
-4.  Selecione **Repor Código de Acesso**.
+4.  Será apresentada uma faixa a pedir-lhe para confirmar que pretende repor o código de acesso e que a sua sessão irá terminar no dispositivo depois de esta ação ser efetuada. Em seguida, terá de aguardar 5 minutos antes de iniciar sessão novamente.
 
-    ![Mensagem a explicar o que acontece quando repõe o código de acesso](./media/iwp-3-tap-reset-passcode-after-signin.png)
+  ![A faixa de reposição do código de acesso com o aviso sobre a reposição do código de acesso do dispositivo e como a sessão do utilizador irá terminar. Os botões de intervenção do utilizador são Terminar Sessão e Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-    Consulte a tabela para ver como funciona a opção **Repor Código de Acesso** no seu dispositivo.
+4.  Selecione **Terminar sessão** e receberá uma mensagem no final a informar sobre a remoção do código de acesso do dispositivo. Se não tiver o dispositivo consigo, não remova o código de acesso, pois quem tiver acesso físico ao dispositivo poderá aceder à maioria das informações pessoais ou empresariais no mesmo.
+
+  ![A segunda faixa de reposição do código de acesso com o aviso sobre a reposição do código de acesso do dispositivo e como o código de acesso será removido do dispositivo. Também informa sobre como definir um novo código de acesso ao aceder às definições do dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
+
+
+Como os dispositivos têm diferentes tipos de código de acesso, pode descobrir como a reposição do código de acesso poderá afetar o seu dispositivo específico na tabela abaixo. 
 
     |Tipo de Dispositivo|O Que Acontece Quando Repõe|
     |------------|-----------|
@@ -61,9 +67,4 @@ Para repor o código de acesso:
     Para ver uma notificação a confirmar que a palavra-passe foi reposta com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: "Aplicações Android com políticas de proteção de aplicações | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Aplicações Android com políticas de proteção de aplicações"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: este tópico descreve o que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 949686ea8a13072e820d1fdc4f14a22e2730e8f1
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 896a7143bc0b7ec80f69482681f4ed17d79661d4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -75,14 +78,9 @@ São suportados os seguintes tipos de ficheiro:
 |----|----|
 |Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças do Azure Information Protection e pode ser utilizado para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-ios-apps.md)
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

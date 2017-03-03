@@ -1,5 +1,6 @@
 ---
-title: "Como monitorizar a conformidade dos dispositivos | Pé-visualização do Azure no Intune | Documentos da Microsoft"
+title: Como monitorizar a compatibilidade do dispositivo
+titleSuffix: Intune Azure preview
 description: "Pé-visualização do Azure no Intune: saiba como monitorizar a conformidade dos dispositivos."
 keywords: 
 author: andredm7
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: eb27002f449b3bbebb2a9b4ed780350c71eda881
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d59d94aafa71a9891a6746902339255ea7a9ad15
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -44,9 +47,4 @@ O relatório de conformidade com definições disponibiliza os detalhes para cad
 - A plataforma à qual se aplica a definição.
 
 Pode desagregar cada uma das definições para ver mais informações sobre os perfis nos quais estas definições tenham sido ativadas, bem como o valor configurado da definição.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
