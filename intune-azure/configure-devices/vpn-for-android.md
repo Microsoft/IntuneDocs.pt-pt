@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: edf359b326626155a2e6acd01f72321c4cd0fe9c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-android-devices-in-intune-azure-preview"></a>Definições de VPN para dispositivos Android na pré-visualização do Azure no Intune
+# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos Android no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,9 +42,4 @@ Consoante as definições que escolher, nem todos os valores na lista abaixo ser
 
 - **Identificação Digital** (apenas no Check Point Capsule VPN) – Especifique uma cadeia de carateres (por exemplo, “Código de Identificação Digital da Contoso”) que servirá para verificar a fidedignidade do servidor VPN. A identificação digital pode ser enviada para o cliente para que confie em qualquer servidor que apresente essa mesma identificação digital ao ligar. Se o dispositivo ainda não incluir a identificação digital, pedirá ao utilizador para confiar no servidor VPN ao qual se está a ligar e mostra a identificação digital (o utilizador verifica-a manualmente e escolhe Confiar para ligar).
 - **Introduzir pares de chave e valor para os atributos de VPN do Citrix** (apenas no Citrix) – Introduza pares de chave e valor, disponibilizados pelo Citrix, para configurar as propriedades da ligação VPN.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

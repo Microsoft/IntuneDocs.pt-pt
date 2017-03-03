@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: 331299dc1e5cae4b789ce43400dc9daaa4fb5351
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: aeed271699656addce8f2bd8cde2a69ab8ede8f9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="use-an-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices-in-intune-azure-preview"></a>Utilizar um perfil personalizado do Intune para criar um perfil de VPN por aplicação para dispositivos Android na pré-visualização do Azure no Intune
+# <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicação para dispositivos Android
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -81,9 +82,4 @@ Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista d
 ## <a name="step-3-assign-both-policies"></a>Passo 3: atribuir ambas as políticas
 
 Utilize as instruções em [Como atribuir perfis de dispositivo](how-to-assign-device-profiles.md) para atribuir ambos os perfis aos utilizadores ou dispositivos obrigatórios.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

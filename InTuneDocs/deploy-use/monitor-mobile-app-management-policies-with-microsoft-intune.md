@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorizar políticas de gestão de aplicações móveis com o Microsoft Intune
-Pode monitorizar o estado de conformidade das políticas de gestão de aplicações móveis (MAM) que aplicou aos utilizadores. Irá encontrar informações sobre os utilizadores afetados pelas políticas de MAM, o estado de conformidade e quaisquer problemas que os utilizadores possam estar a ter.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorizar políticas de proteção de aplicações com o Microsoft Intune
+Pode monitorizar o estado de conformidade das políticas de proteção de aplicações que aplicou aos utilizadores. Irá encontrar informações sobre os utilizadores afetados pelas políticas de proteção de aplicações, o estado de conformidade e quaisquer problemas que os utilizadores possam estar a ter.
 
 Existem três locais diferentes para monitorizar o estado de conformidade:
 
@@ -59,7 +61,7 @@ Pode aceder à vista detalhada do resumo ao selecionar os mosaicos **Estado do u
 Pode procurar um único utilizador e ver o estado de conformidade do mesmo. O painel **Relatório da aplicação** mostra as seguintes informações para um utilizador selecionado:
 - Dispositivos associados à conta de utilizador
 
-- Aplicações com a política de MAM no dispositivo
+- Aplicações com uma política de proteção de aplicações no dispositivo
 
 - Estado:
 
@@ -68,7 +70,7 @@ Pode procurar um único utilizador e ver o estado de conformidade do mesmo. O pa
   - **Sem entrada dada:** a política foi implementada para o utilizador, mas a aplicação não foi utilizada no contexto profissional desde então.
 
 >[!NOTE]
-> Se os utilizadores que procurou não tiverem a política de MAM implementada, verá uma mensagem a informar que não existem políticas de MAM que abranjam esses utilizadores.
+> Se os utilizadores que procurou não tiverem a política de proteção de aplicações implementada, verá uma mensagem a informar que não existem políticas de proteção de aplicações que visem esses utilizadores.
 
 Para ver o relatório para um utilizador, siga estes passos:
 
@@ -87,7 +89,7 @@ A vista detalhada mostra a mensagem de erro, a aplicação que foi acedida quand
 
 ## <a name="reporting-view"></a>Vista de relatórios
 
-Pode encontrar os mesmos relatórios da vista Detalhada, bem como relatórios adicionais que o ajudam com o estado de conformidade da política de MAM:
+Pode encontrar os mesmos relatórios da vista Detalhada, bem como relatórios adicionais que o ajudam com o estado de conformidade da política de proteção de aplicações:
 
 ![Captura de ecrã&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Pode encontrar os mesmos relatórios da vista Detalhada, bem como relatórios ad
 
     -   Estado de utilizador para atividade MAM gerida (Protegido): este relatório descreve a atividade de cada aplicação MAM gerida, por utilizador.
 
-        -   Mostra todas as aplicações visadas pelas políticas de MAM para cada utilizador e uma discriminação do estado de cada aplicação como registada com políticas de MAM ou como visada por uma política de MAM, mas nunca registada.
+        -   Mostra todas as aplicações visadas pelas políticas de proteção de aplicações para cada utilizador e uma discriminação do estado de cada aplicação como registada com políticas de proteção de aplicações ou como visada por uma política de proteção de aplicações, mas nunca registada.
 <br></br>
     -   Estado de utilizador para atividade MAM não gerida (Não protegido): este relatório descreve a atividade das aplicações ativadas para MAM que atualmente não são geridas, por utilizador. Isto pode acontecer pelos seguintes motivos:
 
-        -   Estas aplicações estão a ser utilizadas por um utilizador ou por uma aplicação que não seja atualmente visada por uma política de MAM.
+        -   Estas aplicações estão a ser utilizadas por um utilizador ou por uma aplicação que não seja atualmente visada por uma política de proteção de aplicações.
 
-        -   Todas as aplicações estão registadas, mas não estão a receber políticas de MAM.
+        -   Todas as aplicações estão registadas, mas não estão a receber políticas de proteção de aplicações.
 
 ![Captura de ecrã&2;](../media/MAM-reporting-4.png)
 
@@ -128,14 +130,9 @@ Siga estes passos para gerar o Relatório de proteção de aplicações:
 
     ![Captura de ecrã 7](../media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [Gerir a transferência de dados entre aplicações iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [O que esperar quando a sua aplicação Android é gerida por políticas de MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

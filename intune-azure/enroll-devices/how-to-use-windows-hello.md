@@ -14,8 +14,9 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: a7249e96e737cc844e742a78d8a34899a428f52b
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 56e78f2c80c860c4cdf1c79bf94d7575d5cd9674
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -49,7 +50,7 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Criar uma política do Windows Hello para Empresas
 
-1.  No portal do Azure, escolha **Mais Serviços**, introduza **Intune** na caixa de texto e, em seguida, escolha **Outros** > **Intune**.
+1.  No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
 2.  No painel Intune, selecione **Inscrever dispositivos** e, em seguida, selecione **Gerir** > **Windows Hello para Empresas**.
 
@@ -96,9 +97,4 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
 ## <a name="further-information"></a>Informações adicionais
 Para obter mais informações sobre o Microsoft Passport, consulte [o guia](https://technet.microsoft.com/library/mt589441.aspx) na documentação do Windows 10.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

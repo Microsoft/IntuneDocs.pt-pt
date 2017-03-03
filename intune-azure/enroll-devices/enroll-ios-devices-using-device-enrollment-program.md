@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ Antes de configurar a inscrição de dispositivos iOS, tem de cumprir os seguint
 
 Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos. Os seguintes passos mostram como criar um perfil de inscrição de dispositivos para os dispositivos iOS inscritos através do DEP.
 
-1. No portal do Azure, escolha **Mais Serviços**, introduza **Intune** na caixa de texto e, em seguida, escolha **Outros** > **Intune**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
 2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Inscrição da Apple**.
 
@@ -110,17 +111,19 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
 ## <a name="synchronize-dep-managed-devices"></a>Sincronizar dispositivos geridos por DEP
 
-1. No painel Intune do portal do Azure, escolha **Inscrever Dispositivos** e, em seguida, escolha **Inscrição da Apple**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2. Em **Definições do Programa de Registo de Aparelho (DEP) da Apple**, selecione **Números de Série de DEP**.
+2. No painel Intune do portal do Azure, escolha **Inscrever Dispositivos** e, em seguida, escolha **Inscrição da Apple**.
+
+3. Em **Definições do Programa de Registo de Aparelho (DEP) da Apple**, selecione **Números de Série de DEP**.
 
 4. No painel **Números de Série do DEP da Apple**, selecione **Sincronização**.
 
 5. No painel **Sincronização**, selecione **Pedir Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
 
     Para estar em conformidade com os termos da Apple para o tráfego DEP aceitável, o Intune impõe as seguintes restrições:
-     -  Uma sincronização completa do DEP não pode ser executada mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza cada número de série que a Apple tenha atribuído ao Intune, quer o número tenha sido ou não sincronizado anteriormente. Se for tentada uma sincronização completa no prazo de sete dias após a sincronização completa anterior, o Intune apenas atualiza os números de série que ainda não estejam listados no Intune.
-     -  São atribuídos 10 minutos a qualquer pedido de sincronização para ser concluído. Durante este tempo ou até o pedido ser concluído com êxito, o botão **Sync (Sincronizar)** está desativado.
+     -    Uma sincronização completa do DEP não pode ser executada mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza cada número de série que a Apple tenha atribuído ao Intune, quer o número tenha sido ou não sincronizado anteriormente. Se for tentada uma sincronização completa no prazo de sete dias após a sincronização completa anterior, o Intune apenas atualiza os números de série que ainda não estejam listados no Intune.
+     -    São atribuídos 10 minutos a qualquer pedido de sincronização para ser concluído. Durante este tempo ou até o pedido ser concluído com êxito, o botão **Sync (Sincronizar)** está desativado.
 
 >[!NOTE]
 >Também pode atribuir números de série do DEP aos perfis no painel **Números de Série do DEP da Apple**.
@@ -153,9 +156,4 @@ Os dispositivos configurados com a afinidade de utilizador podem instalar e exec
 7. Depois de verificar o número de série, a aplicação Portal da Empresa redireciona o utilizador para o site do Portal da Empresa para finalizar a inscrição. Em seguida, o site solicita aos utilizadores que voltem para a aplicação.
 
 A inscrição está concluída e os utilizadores podem utilizar este dispositivo com o conjunto completo de capacidades.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

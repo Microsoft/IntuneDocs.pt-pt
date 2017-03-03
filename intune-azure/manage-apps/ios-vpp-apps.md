@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87250baede6c86e7ac5c402e79026908e712f48c
-ms.openlocfilehash: 809fe8d8eea7e472d80f6ee22e26c1f376e870eb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7a2d494a995072c6fa61cf99aa5f841256e86885
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program"></a>Como gerir aplicações iOS compradas através de um programa de compra em volume
+# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -81,9 +82,4 @@ Se atribuir a aplicação como uma instalação **Obrigatória**, é utilizada u
 Para recuperar uma licença, tem de alterar a ação de atribuição para **Desinstalar**. A licença será recuperada quando desinstalar a aplicação.
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação VPP pela primeira vez, é-lhe pedido para se associar ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

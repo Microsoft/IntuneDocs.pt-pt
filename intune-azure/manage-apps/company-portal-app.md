@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: f27eacc8a8282c9216f8983db32dc5e4e8bc7006
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 142b57f48c2950f6eecc228decfa06ce44c76319
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-configure-the-company-portal-app"></a>Como configurar a aplicação do Portal da Empresa
+# <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -64,9 +65,4 @@ Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor
 |**Mostrar o logótipo da empresa**|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. Cada logótipo tem de ser um tipo de ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 100 pixéis e ter um tamanho até 750 KB.<br>Também pode mostrar o nome da empresa que introduziu junto do logótipo carregado.|
 
 Depois de guardar as alterações, pode escolher **Pré-visualizar as definições no Portal Web do Intune** para ver qual será o aspeto das configurações.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

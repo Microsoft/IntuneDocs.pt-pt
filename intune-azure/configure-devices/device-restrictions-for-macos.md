@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e9c97d66e80de635ad43a1339d092b7987f738b
-ms.openlocfilehash: 6856303581f5275c88d5d4efe07088de8f7ab713
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: b666f442fe2f71b2a04747a50951da38d8d8b3b4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="macos-device-restriction-settings-in-intune-azure-preview"></a>Definições de restrições de dispositivos macOS na pré-visualização do Azure no Intune
+# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos macOS no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="password"></a>Palavra-passe
--   **Palavra-passe obrigatória** – Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
-    -   **Tipo obrigatório de palavra-passe** – Especifique se a palavra-passe pode ser só Numérica ou se tem de ser Alfanumérica (conter letras e números). Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.
-    -   **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres complexos obrigatórios na palavra-passe (**0** a **4**).<br>Um caráter complexo é um símbolo, tal como **?**.
-    -   **Comprimento mínimo da palavra-passe** –Introduza o comprimento mínimo da palavra-passe que um utilizador tem de configurar (entre **4** e **16** carateres).
-    -   **Palavras-passes simples** – Permita a utilização de palavras-passe simples, como **0000** ou **1234**.
-    -   **Máximo de minutos após o bloqueio de ecrã até ao pedido de palavra-passe** – Especifique durante quanto tempo o computador tem de estar inativo até uma palavra-passe ser pedida para o desbloquear.
-    -   **Máximo de minutos de inatividade até o ecrã bloquear** – Especifique o período de tempo durante o qual o computador tem de estar inativo até o ecrã bloquear.
-    -   **Expiração da palavra-passe (dias)** – Especifique o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** a **255** dias).
-    -   **Impedir reutilização de palavras-passe anteriores** – Especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas (**1** a **24**).
+-     **Palavra-passe obrigatória** – Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
+    -     **Tipo obrigatório de palavra-passe** – Especifique se a palavra-passe pode ser só Numérica ou se tem de ser Alfanumérica (conter letras e números). Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.
+    -     **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres complexos obrigatórios na palavra-passe (**0** a **4**).<br>Um caráter complexo é um símbolo, tal como **?**.
+    -     **Comprimento mínimo da palavra-passe** –Introduza o comprimento mínimo da palavra-passe que um utilizador tem de configurar (entre **4** e **16** carateres).
+    -     **Palavras-passes simples** – Permita a utilização de palavras-passe simples, como **0000** ou **1234**.
+    -     **Máximo de minutos após o bloqueio de ecrã até ao pedido de palavra-passe** – Especifique durante quanto tempo o computador tem de estar inativo até uma palavra-passe ser pedida para o desbloquear.
+    -     **Máximo de minutos de inatividade até o ecrã bloquear** – Especifique o período de tempo durante o qual o computador tem de estar inativo até o ecrã bloquear.
+    -     **Expiração da palavra-passe (dias)** – Especifique o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** a **255** dias).
+    -     **Impedir reutilização de palavras-passe anteriores** – Especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas (**1** a **24**).
 
 ## <a name="restricted-apps"></a>Aplicações restritas
 
@@ -44,10 +45,5 @@ Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utili
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, opcionalmente, o publicador da aplicação e o ID do grupo da aplicação (por exemplo, *com.apple.calculator*).
 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

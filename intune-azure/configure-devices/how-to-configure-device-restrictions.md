@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67e3481f9cf01bd1b298cfb26f25d1a3205e0f29
-ms.openlocfilehash: 0c22d8a85d90139b3ac17c54668890d5b4c0afe6
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: c6293e9c669266203705a8fe06c323869dc7881f
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-device-restriction-settings-in-intune-azure-preview"></a>Como configurar definições de restrições de dispositivos na pré-visualização do Azure no Intune
+# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Como configurar definições de restrições de dispositivos no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -62,10 +63,5 @@ Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis 
 Neste exemplo de alto nível, vai criar uma política de restrição de dispositivos que bloqueia a utilização da aplicação da câmara incorporada em dispositivos Android.
 
 ![Como desativar a câmara em dispositivos Android](./media/disable-android-camera.png)
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

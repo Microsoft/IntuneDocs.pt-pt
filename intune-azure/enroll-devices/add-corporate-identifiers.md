@@ -3,9 +3,9 @@ title: "Adicionar identificadores IMEI ao Intune | Pré-visualização do Azure 
 description: "Pré-visualização do Azure no Intune: saiba como adicionar identificadores empresariais (números IMEI) ao Microsoft Intune. "
 keywords: 
 author: staciebarker
-ms.author: stabark
+ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: e134a6e3ff143dacce1d70ef0ab44ade0722ed57
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -34,7 +35,7 @@ Num editor de texto, a lista .csv tem um aspeto semelhante ao seguinte:
 
 **Para adicionar uma lista .csv de identificadores empresariais**
 
-1. No portal do Azure, escolha **Mais Serviços**, introduza **Intune** na caixa de texto e, em seguida, escolha **Outros** > **Intune**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
 2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Identificadores de Dispositivo da Empresa**.
 
@@ -44,12 +45,9 @@ Num editor de texto, a lista .csv tem um aspeto semelhante ao seguinte:
 
 **Para eliminar uma lista .csv de identificadores empresariais**
 
-1. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Identificadores de Dispositivo da Empresa**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2. Escolha **Eliminar**.
+2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Identificadores de Dispositivo da Empresa**.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. Escolha **Eliminar**.
 

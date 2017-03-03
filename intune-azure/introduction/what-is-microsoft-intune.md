@@ -1,21 +1,23 @@
 ---
-title: "Introdução ao Intune na pré-visualização do portal do Azure | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Introdução ao Intune na pré-visualização no portal do Azure"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: conheça os princípios básicos sobre o Intune na pré-visualização do portal do Azure e como o pode ajudar a gerir os seus dispositivos."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 01/08/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: f7f6dd79531d8d69eda3ed80bbb1cddf2692ab81
+ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
+ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -44,14 +46,14 @@ Os destaques da nova experiência incluem:
 - Uma consola integrada para todos os componentes do Enterprise Mobility + Security (EMS)
 - Uma consola baseada em HTML baseada em normas da Web
 - Suporte do Microsoft Graph API para automatizar várias ações
-- Grupos do Azure AD para proporcionar compatibilidade em todas as suas aplicações do Azure
+- Grupos do Azure Active Directory (AD) para proporcionar compatibilidade em todas as suas aplicações do Azure
 - Suporte para os browsers mais modernos
 
-Se estiver à procura de documentação da consola clássica do Intune, veja a [Biblioteca de Documentação do Intune](https://docs.microsoft.com/en-us/intune/).
+Se estiver à procura de documentação da consola clássica do Intune, veja a [biblioteca de documentação do Intune](https://docs.microsoft.com/en-us/intune/).
 
 ## <a name="before-you-start"></a>Antes de começar
 
-Para utilizar o Intune no portal do Azure, tem de ter uma conta de administrador e de inquilino do Intune. Pode inscrever-se para obter uma conta [aqui](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+Para utilizar o Intune no portal do Azure, tem de ter uma conta de administrador e de inquilino do Intune. Caso ainda não o tenha feito, [inscreva-se numa conta](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 ## <a name="supported-web-browsers-for-the-azure-portal"></a>Browsers suportados para o portal do Azure
 
@@ -64,7 +66,7 @@ Atualmente, são suportados os seguintes browsers:
 - Chrome (versão mais recente)
 - Firefox (versão mais recente)
 
-Para obter as informações mais recentes acerca dos browsers suportados, veja [aqui](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices).
+Consulte o [portal do Azure](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) para obter as informações mais recentes sobre browsers suportados.
 
 ## <a name="whats-in-this-library"></a>O que existe nesta biblioteca?
 
@@ -76,35 +78,25 @@ A documentação reflete o esquema do portal do Intune para que seja mais fácil
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### <a name="enroll-devices"></a>Inscrever dispositivos
-Como fazer com que os seus dispositivos sejam geridos pelo Intune.
-[Saiba mais](/intune-azure/enroll-devices/what-is)
+[Como fazer com que os seus dispositivos sejam geridos pelo Intune](/intune-azure/enroll-devices/what-is).
 ### <a name="devices--groups"></a>Dispositivos e Grupos
-Conheça os dispositivos que gere através do inventário e dos relatórios.
-[Saiba mais](/intune-azure/manage-devices/what-is)
+[Conheça os dispositivos que gere através do inventário e dos relatórios](/intune-azure/manage-devices/what-is).
 ### <a name="manage-users"></a>Gerir utilizadores
-Saiba mais sobre os utilizadores dos dispositivos que gere.
-[Saiba mais](/intune-azure/manage-users/what-is)
+[Saiba mais sobre os utilizadores dos dispositivos que gere](/intune-azure/manage-users/what-is).
 ### <a name="manage-apps"></a>Gerir aplicações
-Contém informações sobre como publicar, gerir, configurar e proteger aplicações.
-[Saiba mais](/intune-azure/manage-apps/what-is-app-management)
+[Como publicar, gerir, configurar e proteger aplicações](/intune-azure/manage-apps/what-is-app-management).
 ### <a name="configure-devices"></a>Configurar dispositivos
-Contém informações sobre os perfis que pode utilizar para configurar as definições e as funcionalidades nos dispositivos que gere.
-[Saiba mais](/intune-azure/configure-devices/what-are-device-profiles)
+[Compreenda os perfis que pode utilizar para configurar definições e funcionalidades nos dispositivos que gere](/intune-azure/configure-devices/what-are-device-profiles).
 ### <a name="set-device-compliance"></a>Definir conformidade do dispositivo
-Defina um nível de conformidade para os seus dispositivos e, em seguida, comunique caso existam dispositivos que não sejam compatíveis [Saiba mais](/intune-azure/set-device-compliance/what-is-device-compliance)
+[Defina um nível de conformidade para os seus dispositivos e, em seguida, comunique caso existam dispositivos que não sejam compatíveis](/intune-azure/set-device-compliance/what-is-device-compliance).
 ### <a name="conditional-access"></a>Acesso condicional
-Restrinja o acesso aos serviços Exchange consoante as condições que especificar.
-[Saiba mais](/intune-azure/conditional-access/what-is-conditional-access)
+[Restrinja o acesso aos serviços Exchange consoante as condições que especificar](/intune-azure/conditional-access/what-is-conditional-access).
 ### <a name="access-control"></a>Controlo de acesso
-Controle quem pode realizar várias ações do Intune e a quem se aplicam essas ações. Pode utilizar as funções incorporadas que abrangem alguns cenários comuns do Intune ou pode criar as suas próprias funções.
-[Saiba mais](/intune-azure/access-control/role-based-access-control)
+[Controle quem pode realizar várias ações do Intune e a quem se aplicam essas ações](/intune-azure/access-control/role-based-access-control). Pode utilizar as funções incorporadas que abrangem alguns cenários comuns do Intune ou pode criar as suas próprias funções.
+
 
 
 ## <a name="whats-new"></a>Novidades?
 
 [Conheça as novidades da versão de pré-visualização](/intune-azure/introduction/whats-new).
-
-
-<!--HONumber=Feb17_HO1-->
-
 

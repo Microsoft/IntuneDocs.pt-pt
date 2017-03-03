@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ Utilize as seguintes informações para decidir qual o método a utilizar para i
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS propriedade do utilizador (BYOD)
 
-Se os utilizadores quiserem inscrever os dispositivos pessoais BYOD (traga o seu próprio dispositivo), o único método de inscrição disponível é ao transferir a aplicação do Portal da Empresa para iOS a partir da App Store e seguir as instruções de inscrição na aplicação. Uma vez inscritos, os utilizadores podem ligar-se à rede da empresa, associar o domínio ou o Azure Active Directory e obter acesso aos recursos empresariais.
+Se os utilizadores quiserem inscrever os dispositivos pessoais BYOD (traga o seu próprio dispositivo), o único método de inscrição disponível é ao transferir a aplicação do Portal da Empresa para iOS a partir da App Store e seguir as instruções de inscrição na aplicação. Uma vez inscritos, os utilizadores podem ligar-se à rede da empresa, associar o domínio ou o Azure Active Directory e obter acesso aos recursos empresariais. Pode bloquear a inscrição de dispositivos iOS pessoais. Veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) para obter instruções.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ O DEP implementa um perfil de inscrição “por ondas eletromagnéticas” para
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>Utilizar o gestor de inscrição de dispositivos (DEM)
 O gestor de inscrição de dispositivos é um tipo de conta de utilizador que pode inscrever e gerir até mil dispositivos. Pode adicionar utilizadores existentes à conta DEM de forma a conceder-lhes estas capacidades. Cada dispositivo que o utilizador DEM inscreve utiliza uma licença individual do Intune. Para obter mais informações, veja [Inscrever dispositivos com o gestor de inscrição de dispositivos](enroll-devices-using-device-enrollment-manager.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

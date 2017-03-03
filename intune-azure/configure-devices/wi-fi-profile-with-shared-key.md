@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,37 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: b46d445ce1da103308559939a5bfd8e5e38d46d3
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-an-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key-in-intune-azure-preview"></a>Utilizar um perfil de dispositivo personalizado do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada na pré-visualização do Azure no Intune
+# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utilizar um perfil de dispositivo personalizado do Microsoft Intune para criar um perfil Wi-Fi com uma chave pré-partilhada
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Veja como utilizar os **Perfis de dispositivos personalizados** do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada. Este tópico também contém um exemplo de como criar um perfil Wi-Fi baseado em EAP.
 
 > [!NOTE]
--   Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
+-    Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
 - Para Android, tem também a opção de utilizar este [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornecido por Johnathon Biersack.
--   Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
+-    Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
 -  Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize este [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornecido por Johnathon Biersack.
 
 
-1.  Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar um perfil de dispositivo, escolha **Personalizado** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.
+1.    Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar um perfil de dispositivo, escolha **Personalizado** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.
 
-2.  Forneça um nome e uma descrição.
-3.  Adicione uma nova definição de OMA-URI:
+2.    Forneça um nome e uma descrição.
+3.    Adicione uma nova definição de OMA-URI:
 
-   a.   Introduza um nome para esta definição de rede Wi-Fi.
+   a.    Introduza um nome para esta definição de rede Wi-Fi.
 
-   b.   Introduza uma descrição da definição de OMA-URI ou deixe em branco.
+   b.    Introduza uma descrição da definição de OMA-URI ou deixe em branco.
 
-   c.   **Tipo de Dados**: definido como **Cadeia**.
+   c.    **Tipo de Dados**: definido como **Cadeia**.
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -204,9 +205,4 @@ Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente:
     É melhor utilizar um computador que não tenha ligado a muitas redes sem fios, uma vez que tem de procurar em cada perfil para encontrar a correta.
 3.     Procure nos ficheiros XML para localizar o ficheiro com o nome correto.
 4.     Depois de localizar o ficheiro XML correto, copie e cole o código XML no campo de Dados da página de definições de OMA-URI.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

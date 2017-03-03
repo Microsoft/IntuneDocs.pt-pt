@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 3a80a69a27b540b66fb96e098c0b0f66a0854297
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6a49a87984a465c6a656ad40122d0e64b23599fc
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-android-devices-in-intune-azure-preview"></a>Definições personalizadas para dispositivos Android na pré-visualização do Azure no Intune
+# <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Definições personalizadas para dispositivos Android no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ Esta capacidade destina-se a permitir a implementação de definições do Andro
     - **OMA-URI** – Especifique o OMA-URI para o qual pretende fornecer uma definição.
     - **Valor** – Introduza o valor que quer associar ao OMA-URI que introduziu.
 4. Clique em **OK** quando tiver terminado e, em seguida, continue a adicionar mais definições, conforme necessário.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

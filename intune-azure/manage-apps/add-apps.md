@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 969ce8deae9142944f3481172277dc252baa5779
-ms.openlocfilehash: a7838f57b2eb8bd36a875f7b5b001b12eafcbf8d
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 472e65be196d1090e89b46271bb97a82b6fb1a9c
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-an-app"></a>Como adicionar uma aplicação 
+# <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar uma aplicação ao Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,6 +43,16 @@ São suportadas as seguintes plataformas. Clique num dos tópicos para obter mai
 > [!NOTE]
 > Quando adicionar e implementar uma aplicação a partir de uma loja, os utilizadores finais têm de ter uma conta nessa loja para conseguir instalar a aplicação.
 
+## <a name="cloud-storage-space"></a>Espaço de armazenamento na cloud
+Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na cloud do Microsoft Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na cloud, o qual é utilizado para armazenar aplicações e atualizações geridas. A subscrição completa inclui 20 GB de espaço de armazenamento.
+
+Pode comprar armazenamento adicional para o Intune com o seu método de compra original.  Se tiver pago através de fatura ou cartão de crédito, visite o [Portal de Gestão de Subscrições](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Caso contrário, contacte o seu parceiro ou representante de vendas.
+
+Requisitos de espaço de armazenamento na cloud:
+
+-   Todos os ficheiros de instalação da aplicação têm de estar na mesma pasta.
+-   O tamanho máximo para qualquer ficheiro que carregar é de 2 GB.
+
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>Como criar e editar categorias para as aplicações 
 
 As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as aplicações de modo a serem mais fáceis de encontrar por parte dos utilizadores finais no portal da empresa. Pode atribuir uma ou mais categorias a uma aplicação, por exemplo, **Aplicações de programador** ou **Aplicações de comunicação**. Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a categoria que quiser. Utilize os tópicos das plataformas específicas para adicionar uma aplicação e atribuir categorias. Para criar e editar as suas próprias categorias, utilize o seguinte procedimento: 
@@ -52,13 +63,8 @@ As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as ap
 4. Na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Categorias de aplicações**. 
 5. No painel **Categorias aplicações**, é apresentada uma lista das categorias atuais. Escolha uma das seguintes ações: 
     - **Criar uma categoria** – No painel **Criar categoria**, introduza um nome para a nova categoria. Os nomes podem ser introduzidos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
-    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...**”. No painel **Propriedades**, pode introduzir um novo nome para a categoria ou eliminá-la. --->
+    - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...**”. No painel **Propriedades**, pode introduzir um novo nome para a categoria ou eliminá-la.
 
 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Como administrador do Intune, pode gerir dispositivos macOS. Por predefinição, o portal do Azure permite aos utilizadores inscrever os dispositivos macOS. Apenas terá de informar os utilizadores para acederem ao [site do Portal da Empresa](http://portal.manage.microsoft.com) e inscreverem o dispositivo macOS. 
+O Intune permite-lhe gerir dispositivos macOS. Para ativar a gestão de dispositivos, os utilizadores têm de inscrever os seus dispositivos ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com) e seguir as instruções. Assim que os dispositivos macOS estiverem a ser geridos, pode [criar definições personalizadas para dispositivos macOS](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Serão disponibilizadas brevemente funcionalidades adicionais.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -39,20 +40,17 @@ Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os segui
 
 ## <a name="set-up-macos-enrollment"></a>Configurar a inscrição de macOS
 
-Por predefinição, o Intune já está configurado para permitir a inscrição de dispositivos macOS. 
+Por predefinição, o Intune permite a inscrição de dispositivos macOS. 
 
-Para ver a definição para permitir ou bloquear a inscrição de dispositivos macOS, aceda ao painel do Intune no portal do Azure e escolha **Inscrição** > **Restrições de Inscrição**. 
+Para impedir a inscrição de dispositivos macOS, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
 
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indique aos utilizadores como devem inscrever os dispositivos para acederem aos recursos da empresa
+Para definir o máximo de dispositivos que um utilizador pode inscrever, veja [Set device limit restrictions (Definir restrições de limite de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
 
-Para obter as instruções de inscrição do utilizador final, veja [Inscrever o dispositivo macOS no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
+## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indicar aos utilizadores como devem inscrever os dispositivos para acederem aos recursos da empresa
+
+Terá de indicar aos utilizadores para acederem ao [site do Portal da Empresa](http://portal.manage.microsoft.com) e seguirem as instruções para inscrever os seus dispositivos. Também poderá enviar-lhes uma ligação para os passos de inscrição online: [Inscrever o dispositivo macOS no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). 
 
 Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
 
 - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Utilizar o seu dispositivo iOS ou macOS com o Intune](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

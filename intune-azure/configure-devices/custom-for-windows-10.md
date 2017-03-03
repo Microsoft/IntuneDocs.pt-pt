@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Definições personalizadas para dispositivos Windows 10 na pré-visualização do Azure no Intune
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de dispositivos personalizadas para dispositivos Windows 10 no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -92,7 +93,7 @@ Na captura de ecrã abaixo, a definição **Connectivity/AllowVPNOverCellular** 
 |**Security/AllowRemoveProvisioningPackage**<br>./Vendor/MSFT/Policy/Config/Security/AllowRemoveProvisioningPackage|Ambiente de trabalho e dispositivos móveis<br />**Tipo de dados:** Número inteiro<br />**Valores:** **0** – não permitido **1** – permitido (predefinição)|
 |**Security/RequireProvisioningPackageSignature**<br>./Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature|Ambiente de trabalho e dispositivos móveis<br />**Tipo de dados:** Número inteiro<br />**Valores:** **0** (predefinição), **1**|
 |**AboveLock/AllowActionCenterNotifications**<br>./Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications|Ambiente de trabalho e dispositivos móveis<br />**Tipo de dados:** Número inteiro<br />**Valores:** **0** – não permitido **1** – permitido (predefinição)|
-|**TextInput/AllowIMENetworkAccess**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess|Apenas ambiente de trabalho<br />**Tipo de dados:** Número inteiro<br />**Valores:**<br>**0** – não permitir<br>O Dicionário Expandido Aberto está desativado.<br>O utilizador não pode:<br>- Adicionar um novo Dicionário Expandido Aberto<br />- Adicionar um novo ficheiro de configuração de integração de pesquisa<br>- Utilizar a funcionalidade de candidato na nuvem<br>- Enviar palavras registadas pelo utilizador.<br>**1** - permitir<br>É possível adicionar e utilizar um Dicionário Expandido Aberto como predefinição. Além disso, a função de integração de pesquisas pode ser utilizada como predefinição.<br>O utilizador pode:<br>Utilizar a funcionalidade de candidato na nuvem.|
+|**TextInput/AllowIMENetworkAccess**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMENetworkAccess|Apenas ambiente de trabalho<br />**Tipo de dados:** Número inteiro<br />**Valores:**<br>**0** – não permitir<br>O Dicionário Expandido Aberto está desativado.<br>O utilizador não pode:<br>- Adicionar um novo Dicionário Expandido Aberto<br />- Adicionar um novo ficheiro de configuração de integração de pesquisa<br>- Utilizar a funcionalidade de candidato na cloud<br>- Enviar palavras registadas pelo utilizador.<br>**1** - permitir<br>É possível adicionar e utilizar um Dicionário Expandido Aberto como predefinição. Além disso, a função de integração de pesquisas pode ser utilizada como predefinição.<br>O utilizador pode:<br>Utilizar a funcionalidade de candidato na cloud.|
 |**TextInput/AllowIMELogging**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowIMELogging|Apenas ambiente de trabalho<br />**Tipo de dados:** Número inteiro<br />**Valores:**<br>**0** - registo de conversões incorretas desativado.<br>**1** – registo de conversões incorretas ativado (predefinição)|
 |**TextInput/AllowJapaneseNonPublishingStandardGlyph**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseNonPublishingStandardGlyph|Apenas ambiente de trabalho<br />**Tipo de dados:** Número inteiro<br />**Valores:** **0** – não permitido **1** – permitido (predefinição)|
 |**TextInput/AllowJapaneseIVSCharacters**<br>./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters|Apenas ambiente de trabalho<br />**Tipo de dados:** Número inteiro<br />**Valores:** **0** – não permitido **1** – permitido (predefinição)|
@@ -167,9 +168,4 @@ Na captura de ecrã abaixo, a definição **Connectivity/AllowVPNOverCellular** 
 |**Permitir Guardar Palavra-passe**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Ambiente de trabalho e dispositivos móveis<br />**Tipo de dados:** Número inteiro<br />**Valores:**<br>**0** – o gestor de palavras-passe está desativado; <br>**1** – o gestor de palavras-passe está ativado (predefinição)|
 |**Permitir Preenchimento Automático**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Apenas ambiente de trabalho<br />**Tipo de dados:** Número inteiro<br />**Valores:** **0** – desativado (predefinição), **1** – ativado|
 |**Configurar a Lista de Sites da Empresa**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Apenas ambiente de trabalho<br />**Tipo de dados:** Cadeia<br />**Valores:<br>**0** – Não configurado<br>**1** – Utilizar a localização da lista de sites do modo empresarial do IE, se estiver configurada (predefinição)<br>**2** – Especificar a localização da lista de sites da empresa|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

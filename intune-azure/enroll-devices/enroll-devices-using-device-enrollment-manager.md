@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 1ab58388f3d126d5d831c65ad3342ec87fb77b91
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -66,7 +67,7 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gestor de inscrição de dispositivos
 
-1.  No portal do Azure, escolha **Mais Serviços**, introduza **Intune** na caixa de texto e, em seguida, escolha **Outros** > **Intune**.
+1.  No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
 2.  No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
 
@@ -82,24 +83,23 @@ A remoção de um gestor de inscrição de dispositivos não afeta os dispositiv
 
 -   As credenciais da conta do gestor de inscrição de dispositivos removido permanecem válidas.
 
--   O gestor de inscrição de dispositivos removido continuam sem poder apagar ou extinguir dispositivos.
+-   O gestor de inscrição de dispositivos removido continua sem poder apagar ou extinguir dispositivos.
 
 -   O gestor de inscrição de dispositivos removido não pode inscrever mais dispositivos, a menos que o limite por dispositivo, configurado pelo administrador do Intune, não tenha sido atingido.
 
 **Para remover um gestor de inscrição de dispositivos**
 
-1. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Remover**.
+2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
+
+3. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Remover**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Ver as propriedades de um gestor de inscrição de dispositivos
 
-1. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
+1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Propriedades**.
+2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Propriedades**.
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: 132ce1c8e6ad69c5d8998f233c114f912cb4bf8b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 2600c8363c677465e29af382fa5ef4a921048fef
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-intune-azure-preview"></a>Como importar definições de Wi-Fi para dispositivos Windows 8.1 e posterior na pré-visualização do Azure no Intune
+# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Como importar as definições de Wi-Fi do Windows 8.1 e de dispositivos posteriores para o Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -51,9 +52,4 @@ No Windows, utilize o utilitário **netsh wlan** para exportar um perfil de Wi-F
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
 O perfil será criado e é apresentado no painel da lista de perfis.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

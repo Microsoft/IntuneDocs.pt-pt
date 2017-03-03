@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: abe6fb1a5684cbeb0b893793a1932652b7ec1c16
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 674a806b16d1f88413c1d1bbda1fb1d4f3363771
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-phone-81-devices-in-intune-azure-preview"></a>Definições de VPN para dispositivos Windows Phone 8.1 na pré-visualização do Azure no Intune
+# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos Windows Phone 8.1 no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -98,9 +99,4 @@ Consulte a documentação de cada fabricante relativa à VPN para obter mais inf
     - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
     - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
 - **Ignorar o proxy para endereços locais** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, consulte a documentação do Windows Server.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
