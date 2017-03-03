@@ -20,10 +20,10 @@ ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
+ms.lasthandoff: 01/24/2017
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Android no Intune?
 
@@ -60,9 +60,4 @@ Após o seu dispositivo ser adicionado ao portal da empresa, este irá, aproxima
 -   Enviar atualizações de inventário de aplicações da empresa. (Estas atualizações não têm informações pessoais.)
 
 Precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a [equipa Android da Microsoft](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
