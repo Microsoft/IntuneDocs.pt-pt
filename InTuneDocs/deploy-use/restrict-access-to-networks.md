@@ -1,11 +1,11 @@
 ---
-title: "Restringir o acesso às redes com Cisco ISE | Documentos da Microsoft"
+title: "Proteger o acesso às redes com Cisco ISE | Documentos da Microsoft"
 description: "Utilize o Cisco ISE com o Intune para que os dispositivos sejam inscritos no Intune e estejam em conformidade com as políticas antes de acederem ao Wi-Fi e à VPN que são controlados pelo Cisco ISE."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
+ms.lasthandoff: 01/04/2017
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Utilizar o Cisco ISE com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A integração do Intune com o Cisco Identity Services Engine (ISE) permite-lhe criar políticas de rede no seu ambiente de ISE utilizando o estado de inscrição de dispositivos e de conformidade do Intune. Pode utilizar estas políticas para garantir que o acesso à rede da sua empresa está limitado aos dispositivos geridos pelo Intune e em conformidade com as políticas do Intune.
 
 ## <a name="configuration-steps"></a>Passos de configuração
@@ -151,7 +156,7 @@ Na consola de administração de ISE, forneça estes valores de definição:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>As informações partilhadas entre o seu inquilino do Intune e o servidor de Cisco ISE
 Esta tabela lista as informações partilhadas entre o seu inquilino do Intune e o servidor do Cisco ISE para dispositivos geridos pelo Intune.
 
-|Propriedade|  Descrição|
+|Propriedade|    Descrição|
 |---------------|------------------------------------------------------------|
 |complianceState|A cadeia verdadeiro ou falso que indica se o dispositivo é ou não compatível.|
 |isManaged|A cadeia verdadeiro ou falso que indica se o cliente é gerido ou não pelo Intune.|
@@ -186,9 +191,4 @@ Também existe um [conjunto transferível de instruções de inscrição](https:
 ### <a name="see-also"></a>Consulte também
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1 (Guia do Administrador do Motor de Serviços de Identidade Cisco, Versão 2.1 – em inglês)](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

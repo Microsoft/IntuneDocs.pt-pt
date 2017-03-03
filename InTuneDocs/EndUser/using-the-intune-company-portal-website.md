@@ -1,5 +1,5 @@
 ---
-title: Utilizar o site do Portal da Empresa do Intune | Microsoft Intune
+title: Utilizar o site do Portal da Empresa do Intune | Documentos da Microsoft
 description: "Descreve o site do Portal da Empresa e fornece ligações para passos de tarefas que os utilizadores finais podem fazer no site"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -35,7 +40,7 @@ Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da
 
 -   [Bloquear remotamente um dispositivo](remote-lock-your-device-cpwebsite.md)
 
--   [Sincronizar o dispositivo manualmente para acelerar as instalações de aplicações lentas](sync-your-device-manually-cpwebsite.md)
+-    [Sincronizar o dispositivo manualmente para acelerar as instalações de aplicações lentas](sync-your-device-manually-cpwebsite.md)
 
 -   Localizar as informações de contacto do administrador de TI, se as tiver configurado
 
@@ -46,11 +51,6 @@ Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da
 Os utilizadores finais podem efetuar a maioria das mesmas tarefas no **site do Portal da Empresa** que podem fazer através da **aplicação Portal da Empresa** que instalam no seu dispositivo. Consulte as seguintes páginas para obter ligações para todas as tarefas que os utilizadores finais podem efetuar no respetivo dispositivo:
 
 - [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
-- [Utilizar o seu dispositivo iOS ou macOS com o Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Utilizar o seu dispositivo iOS ou macOS com o Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
-
-
-
-<!--HONumber=Dec16_HO1-->
-
 
