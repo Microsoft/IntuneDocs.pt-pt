@@ -1,5 +1,6 @@
 ---
-title: "Criar e implementar políticas de proteção de aplicações | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Criar e implementar políticas de proteção de aplicações"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como as políticas de proteção de aplicações do Intune podem ajudar a proteger os dados da empresa utilizados por aplicações geridas."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -119,12 +122,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 ## <a name="next-steps"></a>Passos seguintes
 [Monitorizar o estado do utilizador e de conformidade](monitor-app-protection-policies-with-microsoft-intune.md)
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-android-apps.md)
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

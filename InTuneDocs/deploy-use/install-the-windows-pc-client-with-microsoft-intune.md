@@ -5,7 +5,7 @@ description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através d
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 01/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -23,14 +25,11 @@ ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
 Os PCs Windows podem ser inscritos instalando o software de cliente do Intune. O software de cliente do Intune pode ser instalado através dos seguintes métodos:
 
-- Pelo administrador de TI:
-  - Instalação manual
-  - Instalação através de uma Política de Grupo
-  - Instalação incluída numa imagem de disco
+- Pelo administrador de TI, com recurso a um dos seguintes métodos: instalação manual, Política de Grupo ou da instalação incluída numa imagem de disco
 
-- Pelos utilizadores finais, que instalam o cliente de software manualmente
+- Pelos utilizadores finais, que instalam manualmente o software de cliente
 
-O software de cliente do Intune, que é implementado pelo administrador de TI para o utilizador ou transferido pelo utilizador final, contém o software essencial necessário para inscrever o PC na gestão do Intune. Depois de um PC ter sido inscrito, o software de cliente do Intune transfere o software de cliente completo que é necessário para gerir o PC.
+O software de cliente do Intune contém o software mínimo necessário para inscrever o PC na gestão do Intune. Após um PC ter sido inscrito, o software de cliente do Intune transfere todo o software de cliente necessário para efetuar a gestão de PCs.
 
 Esta série de transferências reduz o impacto sobre a largura de banda da rede e minimiza o tempo necessário para efetuar a inscrição inicial do PC no Intune. Também garante que, após a conclusão da segunda transferência, o cliente tem o software mais recente disponível.
 
@@ -44,8 +43,7 @@ Todos os métodos mencionados, com exceção daqueles em que os utilizadores ins
 
 2.  Na página **Client Software Download (Transferência de Software de Cliente)**, clique em **Client Software Download (Transferir Software de Cliente)**. Em seguida, guarde o pacote **Microsoft_Intune_Setup.zip** que contém o software numa localização segura na sua rede.
 
-    > [!NOTE]
-    > O pacote de instalação do software de cliente do Intune contém informações exclusivas e específicas sobre a sua conta, disponíveis num certificado incorporado. Se utilizadores não autorizados conseguirem obter acesso ao pacote de instalação, poderão inscrever computadores na conta representada pelo certificado incorporado e poderão obter acesso a recursos da empresa.
+O pacote de instalação do software de cliente do Intune contém informações exclusivas e específicas sobre a sua conta, disponíveis num certificado incorporado. Se existirem utilizadores não autorizados que consigam obter acesso ao pacote de instalação, estes poderão inscrever PCs na conta representada pelo certificado incorporado e poderão obter acesso a recursos da empresa.
 
 3.  Extraia os conteúdos do pacote de instalação para uma localização segura na sua rede.
 
@@ -57,7 +55,7 @@ Todos os métodos mencionados, com exceção daqueles em que os utilizadores ins
 Nos computadores onde pretende instalar o software de cliente, aceda à pasta onde se encontram os ficheiros de instalação do software de cliente. Em seguida, execute **Microsoft_Intune_Setup.exe** para instalar o software de cliente.
 
 > [!NOTE]
-> O estado da instalação é apresentado quando paira o rato sobre o ícone na barra de tarefas no computador cliente.
+> O estado da instalação é apresentado quando paira o rato sobre o ícone na barra de tarefas no PC cliente.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Implementar o software de cliente com uma Política de Grupo
 
@@ -104,15 +102,60 @@ Pode implementar o software de cliente do Intune em computadores como parte de u
 
     Quando a tarefa de inscrição automática for executada na próxima hora agendada, verifica a existência do valor de registo **WindowsIntuneEnrollPending** e tenta inscrever o PC de destino no Intune. Se a inscrição falhar por alguma razão, é repetida da próxima vez que a tarefa for executada. As repetições serão efetuadas durante um mês.
 
-    A Tarefa de Inscrição Automática do Intune, o valor de registo **WindowsIntuneEnrollPending** e o certificado de conta serão eliminados do computador de destino quando a inscrição for bem sucedida ou após um mês (o que ocorrer primeiro).
+    A Tarefa de Inscrição Automática do Intune, o valor de registo **WindowsIntuneEnrollPending** e o certificado de conta serão eliminados do computador de destino quando a inscrição for bem-sucedida ou após um mês (o que ocorrer primeiro).
 
 ## <a name="instruct-users-to-self-enroll"></a>Dar instruções aos utilizadores para se inscreverem
 
-Os utilizadores podem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com). Se o portal Web conseguir detetar que o dispositivo é um PC Windows, irá pedir aos utilizadores para inscreverem o PC através da transferência do software de cliente do Intune. Após a transferência do software, os utilizadores poderão instalá-lo para que os seu PCs passem a ser geridos.
+Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web varia consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador. 
 
-As informações exatas que os utilizadores veem no portal Web poderão variar consoante a Autoridade de MDM da sua conta e a plataforma e versão do PC do utilizador.
+Se não tiver sido atribuída uma licença do Intune aos utilizadores ou se a Autoridade MDM da organização não tiver sido definida como o Intune, não serão apresentadas quaisquer opções de inscrição aos utilizadores.
 
-![O Portal do Intune pede-lhe para transferir o software de cliente do Intune](../media/software-client-download.png)
+Se tiver sido atribuída uma licença do Intune aos utilizadores e a Autoridade MDM da organização tiver sido definida como o Intune:
+
+- Os utilizadores que tiverem PCs com o Windows 7 ou o Windows 8 verão APENAS a opção para se inscreverem no Intune ao transferir e instalar o software de cliente do PC que é exclusivo da sua organização.
+
+- Os utilizadores que tiverem PCs com o Windows 10 ou o Windows 8.1 verão duas opções de inscrição:
+
+  -  **Inscrever o PC como um dispositivo móvel**: os utilizadores irão selecionar o botão **Find Out How to Enroll (Saiba Como Inscrever-se)** e serão direcionados para instruções sobre como podem inscrever o seu PC como um dispositivo móvel. Este botão é apresentado em destaque, dado que a inscrição MDM é considerada a opção de inscrição predefinida e preferida. No entanto, a opção de inscrição MDM não se aplica a este tópico, que abrange apenas a instalação de software de cliente.
+  - **Inscrever o PC através do software de cliente do Intune**: terá de indicar aos utilizadores para selecionar a ligação **Clique aqui para transferir**, que os direcionará à instalação do software de cliente.
+
+A seguinte tabela apresenta um resumo das opções.
+
+  ![Opções de inscrição predefinidas por plataforma](../media/default-enrollment-options-table.png)
+
+As seguintes capturas de ecrã mostram aquilo que os utilizadores veem ao inscrever os seus dispositivos com o software de cliente.
+
+Inicialmente, será pedido aos utilizadores para identificarem ou inscreverem o seu dispositivo.
+
+  ![identificar ou inscrever o dispositivo](../media/identify-device-or-enroll.png)
+
+Para que os seus utilizadores possam instalar o software de cliente do PC, terá de indicar-lhes que selecionem a ligação **Clique aqui para transferir**, que permite aos utilizadores que transfiram o software de cliente do PC e guia os mesmos ao longo do processo de instalação. O botão **Find out how to enroll (Saiba como inscrever-se)** direciona os utilizadores a um conjunto de documentação sobre como inscrever dispositivos através da inscrição MDM, a qual não é relevante para as instruções deste software de cliente.
+
+  ![selecione a ligação Clique aqui para transferir](../media/enroll-your-windows-device.png)
+
+Quando os utilizadores clicam na ligação é-lhes apresentado o botão **Download Software (Transferir Software)**, o qual devem selecionar para iniciar a instalação do software de cliente do PC.
+
+  ![selecione o botão Download Software (Transferir Software)](../media/download-pc-client-software.png)
+
+Em seguida, é pedido aos utilizadores que iniciem sessão com as credenciais da sua empresa.
+
+  ![Inicie sessão com as suas credenciais](../media/sign-in-to-intune.png)
+
+Os utilizadores serão direcionados para a página de Boas-vindas para proceder à instalação.
+
+  ![Página de boas-vindas da instalação do cliente do PC](../media/welcome-to-pc-agent-install-wizard.png)
+
+Os utilizadores devem selecionar **Seguinte** para iniciar a instalação.
+
+  ![Página de boas-vindas da instalação do cliente do PC](../media/welcome-to-pc-agent-install-wizard.png)
+
+Quando a instalação estiver concluída, os utilizadores devem selecionar **Concluir**.
+
+  ![Conclua a instalação do cliente do PC](../media/completed-the-setup-wizard.png)
+
+Se os utilizadores tentarem inscrever o PC como um dispositivo móvel após o terem inscrito através do cliente de software de PC do Intune, verão o seguinte ecrã de erro.
+
+  ![Ecrã que é apresentado se o PC já estiver inscrito](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>Monitorizar e validar implementações de cliente com êxito
 Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar implementações de cliente com êxito.
@@ -137,12 +180,7 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
     > Clique em qualquer cabeçalho de coluna no relatório para ordenar a lista pelos conteúdos dessa coluna.
 
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 [Gerir PCs Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Resolver problemas da configuração do cliente](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

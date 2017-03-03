@@ -12,9 +12,11 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 115eae8e2d733397eb4b0f025789ca7d0522a845
-ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +28,7 @@ ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
 Utilize um dos seguintes métodos para configurar a inscrição para dispositivos Windows:
 
 - [**Inscrição automática no Windows 10 e Windows 10 Mobile com o Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
- -  Este método é aplicável apenas para dispositivos Windows 10 e Windows 10 Mobile.
+ -  Este método é aplicável apenas para dispositivos com o Windows 10 e Windows 10 Mobile.
  -  Tem de ter o Azure Active Directory Premium para utilizar este método. Caso contrário, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
  -  Se optar por não ativar a inscrição automática, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
 
@@ -45,7 +47,9 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
 2. **Criar CNAMEs** (opcional)<br>
 Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.    
+
+    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores recebem um pedido para introduzir manualmente o nome do servidor MDM, https://enrollment.manage.microsoft.com.
+
 
     Os registos de recursos CNAME têm de ter as seguintes informações:
 
@@ -62,7 +66,7 @@ Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exem
 
   Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
 
-3.  **Verificar o CNAME**<br>Na [Consola de administração do Intune](http://manage.microsoft.com), selecione **Admin** &gt; **Mobile Device Management** &gt; **Windows**. Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, selecione **Testar Deteção Automática**.
+3.  **Verificar o CNAME**<br>Na [Consola de administração do Intune](http://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows**. Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, selecione **Testar Deteção Automática**.
 
 4.  **Indique aos utilizadores como devem inscrever os dispositivos e o que esperar quando passarem a ser geridos.**
 
@@ -70,12 +74,9 @@ Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exem
 
     Para obter mais informações sobre as tarefas do utilizador final, consulte [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
+Para obter mais informações sobre as tarefas do utilizador final, veja estes artigos:       - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+      - [Orientação para o utilizador final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 [Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
