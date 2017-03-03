@@ -1,5 +1,5 @@
 ---
-title: Configurar a infraestrutura de certificados para SCEP | Microsoft Intune
+title: Configurar a infraestrutura de certificados para SCEP | Documentos da Microsoft
 description: Infraestrutura para criar e implementar perfis de certificado SCEP.
 keywords: 
 author: robstackmsft
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
+ms.lasthandoff: 12/10/2016
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar a infraestrutura de certificados para SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve a infraestrutura necessária para criar e implementar perfis de certificado SCEP.
 
 ### <a name="on-premises-infrastructure"></a>Infraestrutura no local
 
--    **Domínio do Active Directory**: todos os servidores indicados nesta secção (exceto o Servidor de Proxy de Aplicações Web) têm de ser associados ao seu domínio do Active Directory.
+-    **Domínio do Active Directory**: todos os servidores indicados nesta secção (exceto o Servidor Proxy de Aplicações Web) têm de ser associados ao seu domínio do Active Directory.
 
 -  **Autoridade de Certificação** (AC): uma Autoridade de Certificação (AC) Empresarial que seja executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter instruções sobre como configurar uma Autoridade de Certificação, consulte [Instalar a Autoridade de Certificação](http://technet.microsoft.com/library/jj125375.aspx).
     Se a sua AC for executada no Windows Server 2008 R2, tem de [instalar a correção de KB2483564](http://support.microsoft.com/kb/2483564/).
@@ -31,14 +36,14 @@ I
 -  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Consulte a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede. O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: utilize a consola de administração do Intune para transferir o instalador do **Certificate Connector** (**ndesconnectorssetup.exe**). Em seguida, pode executar **ndesconnectorssetup.exe** no computador onde pretende instalar o Certificate Connector.
--  **Servidor de Proxy de Aplicações Web** (opcional): pode utilizar um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
+-  **Servidor Proxy de Aplicações Web** (opcional): pode utilizar um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
     -  Permite aos dispositivos receberem certificados através de uma ligação à Internet.
     -  É uma recomendação de segurança quando os dispositivos se ligam através da Internet para receber e renovar certificados.
 
  > [!NOTE]           
 > -    O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Além disso, o servidor que aloja o WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos, e tem de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
-    Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, consulte [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### <a name="network-requirements"></a>Requisitos de rede
 
@@ -93,7 +98,7 @@ Nesta tarefa irá:
 
 ##### <a name="to-configure-the-certification-authority"></a>Para configurar a autoridade de certificação
 
-1.  Inicie sessão como administrador da empresa. 
+1.  Inicie sessão como administrador da empresa.
 
 2.  Na AC emissora, utilize o snap-in Modelos de Certificado para criar um novo modelo personalizado ou copie um modelo existente, em seguida, edite um modelo existente (como o Modelo de Utilizador) para utilizar com o NDES.
 
@@ -109,7 +114,7 @@ Nesta tarefa irá:
         > Para os modelos de certificado iOS e Mac OS X, no separador **Extensões**, edite **Utilização de Chaves** e certifique-se de que a opção **A assinatura é uma prova de origem** não está selecionada.
 
     -   No separador **Segurança**, adicione a conta de serviço do NDES e conceda-lhe permissões de **Inscrição** no modelo. Os administradores do Intune que irão criar perfis SCEP precisam de direitos de **Leitura** para poderem navegar para o modelo ao criarem perfis de SCEP.
-    
+
     > [!NOTE]
     > Para revogar certificados, a conta de serviço do NDES necessita de direitos para *Emitir e Gerir Certificados* para cada modelo de certificado utilizado por um perfil de certificado.
 
@@ -120,19 +125,19 @@ Nesta tarefa irá:
 
 Seguem-se capturas de ecrã de um exemplo de configuração de modelo.
 
-![Modelo, separador processamento de pedidos](..\media\scep_ndes_request_handling.png) 
+![Modelo, separador processamento de pedidos](..\media\scep_ndes_request_handling.png)
 
-![Modelo, separador nome do requerente](..\media\scep_ndes_subject_name.jpg) 
+![Modelo, separador nome do requerente](..\media\scep_ndes_subject_name.jpg)
 
-![Modelo, separador segurança](..\media\scep_ndes_security.jpg) 
+![Modelo, separador segurança](..\media\scep_ndes_security.jpg)
 
-![Modelo, separador extensões](..\media\scep_ndes_extensions.jpg) 
+![Modelo, separador extensões](..\media\scep_ndes_extensions.jpg)
 
-![Modelo, separador requisitos de emissão](..\media\scep_ndes_issuance_reqs.jpg) 
+![Modelo, separador requisitos de emissão](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > Em Políticas de Aplicações (na quarta captura de ecrã), adicione apenas as políticas de aplicações necessárias. Confirme as escolhas com os administradores de segurança.
-   
+
 
 
 Para configurar a AC de modo a que permita ao autor do pedido especificar o período de validade, execute os seguintes comandos na AC:
@@ -146,7 +151,7 @@ Para configurar a AC de modo a que permita ao autor do pedido especificar o per�
 
     1.  Selecione o nó **Modelos de Certificados**, clique em **Ação**-&gt; **Novo** &gt; **Modelo de certificado a emitir** e, em seguida, selecione o modelo que criou no passo 2.
 
-    2.  Valide o modelo publicado ao visualizá-lo na pasta **Modelos de Certificado** .
+    2.  Valide o modelo publicado ao visualizá-lo na pasta **Modelos de Certificado**.
 
 
 ### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>Tarefa 3 – configurar pré-requisitos no servidor do NDES
@@ -239,12 +244,12 @@ Nesta tarefa irá:
 
 4. No Gestor do IIS, escolha **Site Predefinido** -> **Filtragem de Pedidos** -> **Editar Definição de Funcionalidade** e altere o **Comprimento Máximo do URL** e a **Cadeia máxima de consulta** para *65534*, conforme mostrado.
 
-    ![Comprimento máximo de URL e de consulta no IIS](..\media\SCEP_IIS_max_URL.png) 
+    ![Comprimento máximo de URL e de consulta no IIS](..\media\SCEP_IIS_max_URL.png)
 
 5.  Reinicie o servidor. Executar **iisreset** no servidor não será suficiente para finalizar estas alterações.
 6. Navegue para http://*FQDN*/certsrv/mscep/mscep.dll. Deverá ver uma página NDES semelhante a esta:
 
-    ![Testar NDES](..\media\SCEP_NDES_URL.png) 
+    ![Testar NDES](..\media\SCEP_NDES_URL.png)
 
     Se obtiver **503 Serviço indisponível**, verifique o visualizador de eventos. É provável que o conjunto aplicacional esteja parado devido a um direito em falta para o utilizador do NDES. Esses direitos estão descritos na Tarefa 1.
 
@@ -347,9 +352,4 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
 ## <a name="next-steps"></a>Passos seguintes
 Está agora pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](Configure-Intune-certificate-profiles.md).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Criar uma política de conformidade de dispositivos | Microsoft Intune"
+title: "Criar uma política de conformidade de dispositivos | Documentos da Microsoft"
 description: "Crie uma política de conformidade para ajudar a proteger dispositivos móveis e PCs utilizados para aceder aos dados da sua empresa."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade de dispositivos no Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este tópico descreve os passos que pode utilizar para criar uma política de conformidade que um dispositivo tem de seguir para ser considerado conforme.
 
 ##  <a name="step-1-add-a-new-policy"></a>Passo 1: Adicionar uma nova política
@@ -28,7 +33,7 @@ Este tópico descreve os passos que pode utilizar para criar uma política de co
 
   ![Captura de ecrã da página de política de conformidade na consola de administração do Intune, que mostra a opção de adicionar no menu na parte superior da página](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>Passo 2: Configurar as definições
+##  <a name="step-2--configure-settings"></a>Passo 2: Configurar as definições
 Na página **Criar Política**, ative as definições necessárias:
   -   As definições de segurança do sistema, como palavra-passe e encriptação.
   -   As definições de estado de funcionamento do dispositivo, como se o dispositivo tem ou não jailbrake ou se é considerado como estando em bom estado de funcionamento pelo serviço de atestado de estado de funcionamento de dispositivos do Windows.
@@ -57,13 +62,13 @@ A tabela seguinte lista as definições de política de conformidade e as plataf
 |Palavra-passe obrigatória para desbloquear os dispositivos móveis|iOS 6 e posterior|Android 4.0 e posterior <br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior|
 |Permitir palavras-passe simples|iOS 6 e posterior|Não suportado|Windows Phone 8.1 e posterior|
 |Comprimento mínimo da palavra-passe|iOS 6 e posterior| Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior| Windows Phone 8.1 e posterior<br>Windows 8.1|
-|Tipo obrigatório de palavra-passe|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8,1|
-|Número mínimo de conjuntos de carateres|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8,1|
+|Tipo obrigatório de palavra-passe|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Número mínimo de conjuntos de carateres|iOS 6 e posterior|Não disponível|Windows Phone 8.1 e posterior <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Qualidade da palavra-passe|Não disponível|Android 4.0 e posterior <br>Samsung KNOX Standard 4.0 e posterior|Não disponível|
-|Minutos de inatividade antes da palavra-passe ser exigida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
-|Expiração da Palavra-passe (dias)|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
-|Memorizar histórico de palavras-passe|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
-|Impedir a reutilização de palavras-passe anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8,1|
+|Minutos de inatividade antes da palavra-passe ser exigida|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Expiração da Palavra-passe (dias)|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Memorizar histórico de palavras-passe|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Impedir a reutilização de palavras-passe anteriores|iOS 6 e posterior|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
 |Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo| Não disponível| Não disponível|Windows 10 Mobile|
 |Encriptação obrigatória no dispositivo móvel|Não aplicável|Android 4.0 e posterior<br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior<br> Windows 8.1|
 |Exigir que os dispositivos sejam comunicados como estando em bom estado de funcionamento| Não disponível| Não disponível|Windows <br>Windows 10 Mobile|
@@ -85,9 +90,4 @@ Selecione um dos seguintes passos para obter mais informações sobre as defini�
 
 ### <a name="see-also"></a>Consulte também
 [Introdução às políticas de conformidade de dispositivos](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

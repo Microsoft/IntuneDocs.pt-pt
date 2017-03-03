@@ -1,5 +1,5 @@
 ---
-title: Definir ou alterar a sua palavra-passe | Microsoft Intune
+title: Definir ou alterar a palavra-passe | Documentos da Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -11,10 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
-ms.openlocfilehash: 9a2f435220b9b2d4304f78e30cf152a4bb2af0c6
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -44,9 +48,4 @@ Se o dispositivo Windows não estiver em conformidade com a política de palavra
 4. Selecione **concluído**.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

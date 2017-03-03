@@ -1,27 +1,32 @@
 ---
-title: "Utilizar o SDK para ativar as aplicações para MAM | Microsoft Intune"
-description: "Este tópico fornece uma descrição geral rápida dos motivos pelos quais deve utilizar o SDK da Aplicação do Intune."
+title: "Utilizar o SDK para ativar as aplicações para MAM | Documentos da Microsoft"
+description: "Este tópico fornece uma descrição geral rápida dos motivos pelos quais deve utilizar o SDK da Aplicação Intune."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0a0a9271d32531e4727c7aa20f456f7d3ba53d13
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 7b35b461cf261f837007ebd532ea8dfc1cabfc17
+ms.lasthandoff: 12/20/2016
 
 
 ---
 
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>Utilizar o SDK para ativar aplicações para gestão de aplicações móveis
-Utilize o SDK da Aplicação do Microsoft Intune para permitir que o Intune faça a gestão de determinadas funcionalidades das suas aplicações para iOS ou Android. Depois de a aplicação ser ativada, pode implementar políticas na mesma. Estas políticas utilizam essas funcionalidades para ajudar a proteger os dados da sua empresa. Alguns exemplos dos tipos de proteção que pode implementar com o SDK incluem:
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Utilize o SDK da Aplicação Microsoft Intune para permitir que o Intune faça a gestão de determinadas funcionalidades das suas aplicações para iOS ou Android. Depois de a aplicação ser ativada, pode implementar políticas na mesma. Estas políticas utilizam essas funcionalidades para ajudar a proteger os dados da sua empresa. Alguns exemplos dos tipos de proteção que pode implementar com o SDK incluem:
 
 -   Impedir que os utilizadores copiem documentos da empresa para a cloud.
 
@@ -37,9 +42,4 @@ Para uma descrição geral do SDK, consulte a página [Descrição geral](/intun
 
 ### <a name="see-also"></a>Consulte também
 [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

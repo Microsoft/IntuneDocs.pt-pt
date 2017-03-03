@@ -1,11 +1,11 @@
 ---
-title: "Resolução de problemas de acesso aos recursos da empresa | Microsoft Intune"
+title: "Resolução de problemas de acesso aos recursos da empresa | Documentos da Microsoft"
 description: "Códigos de erros e de estado neste tópico para o ajudar a resolver problemas de acesso a recursos."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2640df8eb3f8505320f965ee1f6edbf5d4f8cfe7
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Utilize os códigos de estado e de erro deste tópico para obter ajuda para resolver problemas se uma ação do Microsoft Intune devolver um código de erro.
 
-Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
+Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de estado para dispositivos Windows geridos por MDM
 
@@ -57,7 +62,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016281107|0x87D1FDED|Definição de origem de deteção não suportada|
 |-2016281108|0x87D1FDEC|Definição referenciada não localizada no CI|
 |-2016281109|0x87D1FDEB|Falha ao concluir a conversão do tipo de dados|
-|-2016281110|0x87D1FDEA|  Parâmetro inválido na definição de CIM|
+|-2016281110|0x87D1FDEA| Parâmetro inválido na definição de CIM|
 |-2016281111|0x87D1FDE9|Não aplicável a este dispositivo|
 |-2016281112|0x87D1FDE8|Falha na remediação|
 |-2016330905|0x87D13B67|O estado da aplicação é desconhecido|
@@ -153,7 +158,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016321110|0x87D161AA|15002: não é possível bloquear configuração de rede|
 |-2016321111|0x87D161A9|15001: não é possível remover VPN|
 |-2016321112|0x87D161A8|15000: não é possível instalar VPN|
-|-2016322110|0x87D15DC2|14002: a configuração de nuvem já existe|
+|-2016322110|0x87D15DC2|14002: a configuração de cloud já existe|
 |-2016322111|0x87D15DC1|14001: dispositivo bloqueado|
 |-2016322112|0x87D15DC0|14000: campo inválido|
 |-2016323107|0x87D159DD|13005: não é possível configurar proxy|
@@ -370,9 +375,4 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 
 ### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Sep16_HO4-->
-
 

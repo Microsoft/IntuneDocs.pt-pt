@@ -1,5 +1,5 @@
 ---
-title: Ativar o acesso aos recursos da empresa | Microsoft Intune
+title: Ativar o acesso aos recursos da empresa | Documentos da Microsoft
 description: Os perfis de e-mail, de VPN e de Wi-FI funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam.
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Ativar o acesso aos recursos da empresa com o Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Os perfis de e-mail, VPN e Wi-FI do Microsoft Intune funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam para trabalhar, estejam onde estiverem. Os perfis de certificado ajudam a proteger esse acesso.
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Perfis de Wi-Fi](wi-fi-connections-in-microsoft-intune.md) e plataformas suportadas
@@ -54,9 +59,4 @@ Ajuda a proteger o acesso aos recursos da empresa, incluindo redes sem fios e li
 |Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Sim|Sim|Sim|Sim|Sim|
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +38,4 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 - **Dispositivos pertencentes ao utilizador** – inscrição "BYOD" (Bring your own device) – os utilizadores podem instalar a aplicação Portal da Empresa do Intune nos dispositivos deles e, depois, inscrevê-los, obtendo acesso aos recursos da empresa como e-mail, aplicações da empresa, dados da empresa e suporte.  
 
 - **Dispositivos pertencentes à empresa** – é possível inscrever dispositivos pertencentes à empresa (COD) de diversas formas, consoante as necessidades da organização e os tipos de dispositivos geridos.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

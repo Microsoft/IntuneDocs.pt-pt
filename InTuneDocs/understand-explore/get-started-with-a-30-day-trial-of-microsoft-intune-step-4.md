@@ -1,11 +1,11 @@
 ---
-title: "Criar políticas e publicar uma aplicação para os utilizadores | Microsoft Intune"
+title: "Criar políticas e publicar uma aplicação para os utilizadores | Documentos da Microsoft"
 description: "Como criar políticas e publicar uma aplicação quando se inscreve numa avaliação gratuita de 30 dias do Intune"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
+ms.lasthandoff: 12/14/2016
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Criar políticas e publicar uma aplicação para utilizadores de avaliação
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As políticas do Intune disponibilizam definições que o ajudam a controlar as definições de segurança nos dispositivos móveis, a gerir as definições de Endpoint Protection e Firewall do Windows de computadores e a implementar aplicações. Se estiver a planear utilizar o Intune para os dispositivos que configurou para utilização de produção após a avaliação, é absolutamente essencial que siga as instruções em [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Ajudar a proteger os PC Windows com o Endpoint Protection para o Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Pode executar dois tipos de instalações de aplicações com o Intune. O primeiro é uma **instalação necessária**, que implementa automaticamente as aplicações nos dispositivos geridos. O segundo tipo é uma **instalação disponível**, que implementa as aplicações, ou ligações para as mesmas, no Portal da Empresa do Intune, para que os utilizadores possam optar por instalá-las nos computadores ou dispositivos móveis deles.
@@ -99,9 +104,4 @@ Saber mais sobre outras [funcionalidades do Intune](get-started-with-a-30-day-tr
 Ler sobre as [formas comuns de utilizar o Intune](common-ways-to-use-intune.md)
 
 Converter numa [subscrição paga](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 
