@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 3400a49feaca9ef34bcffcc176bc496310d4c357
+ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
+ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
+ms.lasthandoff: 02/28/2017
 
 
 
@@ -70,11 +71,5 @@ Os relatórios suportam também as seguintes ações:
 |**Carregar**|Na página **Criar Novo Relatório**, escolha **Carregar** para obter conjuntos de parâmetros de relatórios guardados anteriormente.|
 |**Eliminar**|Na área de trabalho **Relatórios**, selecione o tipo de relatório pretendido e escolha **Carregar**. Em seguida, na lista de relatórios, selecione o ícone eliminar (x) junto ao relatório.|
 
-### <a name="see-also"></a>Consulte também
-[Monitorização e relatórios com o Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
 
 
