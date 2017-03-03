@@ -1,5 +1,6 @@
 ---
-title: "Como adicionar aplicações da loja iOS ao Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Como adicionar aplicações da loja iOS ao Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba mais sobre como adicionar aplicações da loja iOS ao Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6026c942aea906e7e730152e6e92797ec5775bc3
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 21e6089bf8a88f107518c7bccfa7bf79b3021a23
+ms.lasthandoff: 02/18/2017
 
 ---
 
