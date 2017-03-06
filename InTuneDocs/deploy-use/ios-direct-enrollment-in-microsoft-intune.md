@@ -4,7 +4,7 @@ description: "Utilize a ferramenta Apple Configurator para inscrever diretamente
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Quando estiver a inscrever diretamente dispositivos iOS, pode inscrever um dispo
 9.  No dispositivo iOS, abra as **Definições** e aceda a **Geral** &gt; **Gestão de Dispositivos** &gt; **Perfil de Gestão**. Confirme que a instalação do perfil se encontra na lista e verifique as restrições de política do iOS e as aplicações instaladas. As restrições de política e as aplicações poderão demorar até 10 minutos a aparecer no dispositivo.
 
 10.  Distribua os dispositivos. O dispositivo iOS está agora inscrito no Intune e gerido.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -4,7 +4,7 @@ description: "Proteja os seus computadores geridos com o Endpoint Protection, qu
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: angrobe
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -192,9 +193,4 @@ Para mais ajuda e suporte, consulte [Resolução de Problemas do Endpoint Protec
 
 ### <a name="see-also"></a>Consulte Também
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
