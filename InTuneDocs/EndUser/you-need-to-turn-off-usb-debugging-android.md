@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 604bdec9cfbb982b75fc9b54dda6a572d2b11802
 ms.openlocfilehash: 47b9b0e882c277f5ad3200ab6eb8999ea000a696
+ms.lasthandoff: 01/12/2017
 
 
 ---
@@ -31,9 +32,4 @@ Pode desativar a depuração de USB ao aceder a **Definições** > **Opções de
 Após desativar a **Depuração de USB**, aguarde alguns minutos e, em seguida, poderá continuar a utilizar o dispositivo Android para aceder aos dados da empresa ou da escola como habitual.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

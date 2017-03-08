@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
 ms.openlocfilehash: d51bef2220ebf199df6f54e307e2f021faa83d33
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -32,9 +33,4 @@ Para ver as instruções de inscrição, utilize a ligação que corresponde ao 
 - [Inscrever o seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md)
 - [Inscrever o seu dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md)
 - [Inscrever o seu dispositivo Windows no Intune](enroll-your-device-in-intune-windows.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

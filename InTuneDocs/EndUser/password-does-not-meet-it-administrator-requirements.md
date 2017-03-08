@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
 ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -49,9 +50,4 @@ Descrições de problemas com o PIN ou a palavra-passe:
 - **A palavra-passe não é suficientemente complexa para cumprir os requisitos**. O administrador de TI requer a utilização de carateres mais complexos na sua palavra-passe. Tente utilizar carateres como números, letras maiúsculas e símbolos como $, % e #. Isto também pode ser verdadeiro relativamente a outras contas no seu dispositivo, por isso certifique-se de que verifica outras contas para garantir que a sua palavra-passe cumpre os requisitos configurados pelas TI para o seu dispositivo.
 
 Se tiver dificuldades em perceber como fazer com que a sua palavra-passe cumpra os requisitos, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

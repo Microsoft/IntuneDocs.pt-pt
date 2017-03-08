@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 06866b9db458851dbb23d5ccf741cad3e1d4c5d0
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ A tabela seguinte indica os erros que poderá ver quando inscrever o seu disposi
 |DeviceTypeNotSupported|Poderá ter tentado inscrever através de um dispositivo não iOS. O tipo de dispositivo móvel que está a tentar inscrever não é suportado.<br /><br />Certifique-se de que o dispositivo está a executar a versão 8.0 do iOS ou posterior.<br /><br />Contacte os administradores de TI, informe-os de que recebeu a mensagem **DeviceTypeNotSupported** quando tentou inscrever o seu dispositivo móvel e peça-lhes para verem a resolução nesta tabela.|Certifique-se de que o dispositivo do utilizador está a executar a versão 8.0 do iOS ou posterior.|
 |UserLicenseTypeInvalid|Não pode inscrever o seu dispositivo móvel porque a sua conta de utilizador ainda não é um membro de um grupo de utilizadores necessário.<br /><br />Contacte os administradores de TI, informe-os de que recebeu a mensagem **UserLicenseTypeInvalid** quando tentou inscrever o seu dispositivo móvel e peça-lhes para verem a resolução nesta tabela.|Para poderem inscrever os respetivos dispositivos, os utilizadores têm de ser membros do grupo de utilizadores correto. Esta mensagem indica que têm o tipo de licença errado para a autoridade de gestão de dispositivos móveis designada. Por exemplo, se o Intune foi designado como autoridade de gestão de dispositivos móveis e estiverem a utilizar uma licença do System Center 2012 R2 Configuration Manager, será obtido este erro.<br /><br />Reveja o seguinte para mais informações:<br /><br />Veja [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) e as informações sobre como configurar utilizadores em [Sincronizar o Active Directory e adicionar utilizadores ao Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) e [Organizar utilizadores e dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|O administrador de TI precisa de configurar a forma como os dispositivos móveis existentes na sua empresa são geridos.<br /><br />Contacte os administradores de TI, informe-os de que recebeu a mensagem **MdmAuthorityNotDefined** quando tentou inscrever o seu dispositivo móvel e peça-lhes para verem a resolução nesta tabela.|A autoridade de gestão de dispositivos móveis não foi designada no Intune.<br /><br />Reveja o primeiro item na secção "Passo 6: inscrever dispositivos móveis e instalar uma aplicação", em [Começar com uma versão de avaliação de 30 dias do Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b90aec6297fdeb00940109ae0465e2bc25ab9436
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -34,9 +35,4 @@ A ativação do Arranque Seguro é uma tarefa avançada. Se estiver a utilizar u
 Se estiver a utilizar um PC, pode contactar o seu administrador de TI ou ver a secção “Para reativar o Arranque Seguro", na página [Desativar o Arranque Seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), para tentar ativar o Arranque Seguro por si.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

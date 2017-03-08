@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 38edb26334cdfdee0ab66465c4bed21d6e8d14c1
 ms.openlocfilehash: 7506063b56231feea1b2f6b22b157171896e25ab
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -29,9 +30,4 @@ ms.openlocfilehash: 7506063b56231feea1b2f6b22b157171896e25ab
 O seu administrador de TI detetou que está a usar um dispositivo desbloqueado por jailbreak. "Desbloqueado por jailbreak" refere-se ao dispositivo ter sido alterado para permitir acesso sem restrições a determinados ficheiros críticos, o que pode pôr em risco a segurança e ser uma ameaça aos recursos da sua empresa.
 
 Quando isto acontecer, o seu dispositivo deixa de poder aceder aos recursos da empresa e tem de contactar o seu administrador de TI para obter ajuda. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
