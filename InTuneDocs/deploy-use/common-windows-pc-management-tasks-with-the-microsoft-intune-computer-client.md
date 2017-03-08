@@ -2,8 +2,8 @@
 title: "Tarefas de gestão comuns do PC Windows | Documentos da Microsoft"
 description: Saiba como pode gerir PCs Windows que executam o cliente de software do Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ Este tópico apresenta uma lista de tarefas que pode desempenhar para gerir comp
 
 - [Pedir e fornecer assistência remota para PCs Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) – Explica como os utilizadores de PCs do Intune obtêm a ajuda de assistência remota do utilizador e descreve os pré-requisitos e a configuração do TeamViewer.
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

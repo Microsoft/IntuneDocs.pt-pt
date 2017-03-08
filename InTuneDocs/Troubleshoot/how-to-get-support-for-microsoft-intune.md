@@ -2,8 +2,8 @@
 title: Como obter suporte | Documentos da Microsoft
 description: "O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 02/05/2017
 
 
 ---
@@ -146,9 +147,4 @@ O suporte "Break-fix" está incluído nas subscrições do Microsoft Intune e da
 Se um engenheiro de suporte lhe pedir para abrir incidentes de suporte adicionais para problemas adicionais, tenha em atenção que tal é para o melhor interesse de todos os envolvidos. Agradecemos-lhe pela sua compreensão e por colaborar connosco para fornecermos um excelente nível de suporte!
 
 Para obter os preços por incidente e níveis de gravidade, veja [Opções de Suporte Profissional](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

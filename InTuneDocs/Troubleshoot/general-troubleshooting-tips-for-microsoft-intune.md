@@ -2,7 +2,8 @@
 title: "Sugestões de resolução de problemas genéricos | Documentos da Microsoft"
 description: Recursos gerais para ajudar a resolver problemas com o Intune.
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article

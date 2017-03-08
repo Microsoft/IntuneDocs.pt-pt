@@ -2,8 +2,8 @@
 title: "Resolver problemas de configuração do cliente | Documentos da Microsoft"
 description: "Resolva problemas comuns de configuração do cliente."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

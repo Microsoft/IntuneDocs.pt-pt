@@ -2,8 +2,8 @@
 title: Contactar o suporte assistido por telefone | Documentos da Microsoft
 description: "Números de telefone para ajuda do Microsoft Intune."
 keywords: "horário comercial"
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

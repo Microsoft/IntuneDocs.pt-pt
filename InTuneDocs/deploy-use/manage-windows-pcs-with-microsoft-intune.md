@@ -2,8 +2,8 @@
 title: Gerir PCs com software de cliente | Documentos da Microsoft
 description: "Efetue a gestão de PCs Windows instalando o software de cliente do Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

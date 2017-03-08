@@ -3,8 +3,8 @@ title: "Definir a autoridade de gestão de dispositivos móveis"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como definir a autoridade de gestão de dispositivos móveis no Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article

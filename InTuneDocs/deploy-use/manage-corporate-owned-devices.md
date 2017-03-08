@@ -2,8 +2,8 @@
 title: "Gerir dispositivos pertencentes à empresa | Documentos da Microsoft"
 description: "Inscreva dispositivos da empresa de várias formas com base no tipo de dispositivo, na forma como foi comprado e nas necessidades da organização."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ O Intune reconhece um dispositivo como "empresarial" quando qualquer uma das seg
  - O dispositivo está registado no [Azure Active Directory ou Enterprise Mobility Suite como um dispositivo Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (apenas Windows 10).
 
 Quando um dispositivo é marcado como empresarial, verá **Empresarial** na coluna **Propriedade** para o registo desse dispositivo na consola do administrador. 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -2,8 +2,8 @@
 title: "Inscrição direta para dispositivos iOS | Documentos da Microsoft"
 description: "Utilize a ferramenta Apple Configurator para inscrever diretamente dispositivos iOS pertencentes à empresa com uma política predefinida ao ligá-los por USB a um computador Mac."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

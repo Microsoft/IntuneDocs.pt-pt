@@ -2,8 +2,8 @@
 title: "Ver o inventário de hardware e software dos PCs Windows | Documentos da Microsoft"
 description: "Como ver as informações de hardware e software dos computadores com Windows que gere como PCs com o cliente de software do Intune"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
