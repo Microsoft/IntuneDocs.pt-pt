@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: a49f27dd42d2c9d16be49cb222e56147c4699208
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: e60b049e9dd137993d38b822f6268419a27bdc2a
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -47,9 +48,4 @@ Se instalou uma aplicação que o Lookout for Work pensa ser uma ameaça, verá 
 Depois de desinstalar a aplicação, recupera de imediato o acesso ao e-mail e aos dados da empresa. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

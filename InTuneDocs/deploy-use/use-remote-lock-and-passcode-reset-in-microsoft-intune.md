@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso
@@ -34,6 +35,7 @@ A tabela seguinte indica como o bloqueio remoto funciona em diferentes plataform
 |macOS|Não suportado|
 |iOS|Suportado|
 |Android|Suportado|
+|Android for Work|Suportado|
 |Windows 10 (dispositivo móvel)|Suportado|
 |Windows 10 (computador)|Não suportado|
 |Windows Phone 8 e Windows Phone 8.1|Suportado|
@@ -61,6 +63,7 @@ Se um utilizador se esquecer de um código de acesso, pode ajudá-lo ao remover 
 |macOS|Não suportado|
 |iOS|Suportado para a eliminação do código de acesso de um dispositivo. Não cria um novo código de acesso temporário.|
 |Android|Suportado em versões anteriores ao Android 7.0. Cria um código de acesso temporário.|
+|Android for Work|Não suportado|
 |Windows 10 Mobile|Suportado|
 |Windows Phone 8 e Windows Phone 8.1|Suportado|
 |Windows RT 8.1|Não Suportado|
@@ -83,9 +86,4 @@ A reposição do código de acesso não é suportada para PCs Windows inscritos 
 
 ### <a name="see-also"></a>Consulte também
 [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md) e [Eliminação Seletiva do Windows para Gestão de Dados do Dispositivo](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
