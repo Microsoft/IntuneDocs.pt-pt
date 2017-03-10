@@ -1,9 +1,10 @@
 ---
-title: "O que é a inscrição de dispositivos do Microsoft Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "O que é a inscrição de dispositivos do Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba mais sobre a inscrição de dispositivos iOS, Android e Windows."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 Este tópico descreve a inscrição e indica as formas diferentes de inscrever dispositivos móveis na gestão do Intune.
 
-Os dispositivos, incluindo PCs Windows, são inscritos no Intune para que os possa gerir. Esta capacidade é mencionada na documentação do Intune como gestão de dispositivos móveis (MDM). Quando os dispositivos são inscritos como dispositivos móveis (e não como PCs), é-lhes emitido um certificado MDM, que utilizam para comunicar com o serviço do Intune. 
+Os dispositivos, incluindo PCs Windows, são inscritos no Intune para que os possa gerir. Esta capacidade é mencionada na documentação do Intune como gestão de dispositivos móveis (MDM). Quando os dispositivos são inscritos como dispositivos móveis (e não como PCs), é-lhes emitido um certificado MDM, que utilizam para comunicar com o serviço do Intune.
 
 A forma como inscreve dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão de que precisa. A inscrição "Bring your own device" (BYOD) permite que os utilizadores inscrevam os seus telemóveis, tablets ou PCs pessoais. A inscrição de dispositivos pertencentes à empresa (COD) permite cenários de gestão, como a inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados.
 
@@ -87,7 +88,7 @@ A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe 
 Para obter mais informações sobre a inscrição do iOS, veja:
 
 - [Escolher como inscrever dispositivos iOS](choose-ios-enrollment-method.md)
-- [Inscrever dispositivos iOS com o Programa de Inscrição de Dispositivos](enroll-ios-devices-using-device-enrollment-program.md). 
+- [Inscrever dispositivos iOS com o Programa de Inscrição de Dispositivos](enroll-ios-devices-using-device-enrollment-program.md)
 - [Voltar à tabela acima](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ Os administradores de TI utilizam o Apple Configurator, através de USB, para pr
 Para obter mais informações sobre a inscrição do iOS, veja:
 
 - [Decidir como inscrever dispositivos iOS](choose-ios-enrollment-method.md)
-- [Inscrever dispositivos iOS com o Configurator e o Assistente de Configuração](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). 
+- [Inscrever dispositivos iOS com o Configurator e o Assistente de Configuração](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Para a inscrição direta, o administrador tem de inscrever cada dispositivo manualmente através da criação de uma política de inscrição e exportá-lo para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente e não necessitam de uma reposição de fábrica. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados e não suportam acesso condicional, deteção de jailbreak ou gestão de aplicações móveis. 
+Para a inscrição direta, o administrador tem de inscrever cada dispositivo manualmente através da criação de uma política de inscrição e exportá-lo para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente e não necessitam de uma reposição de fábrica. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados e não suportam acesso condicional, deteção de jailbreak ou gestão de aplicações móveis.
 
 Para obter mais informações sobre a inscrição do iOS, veja:
 

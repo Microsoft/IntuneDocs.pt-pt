@@ -1,5 +1,6 @@
 ---
-title: "Definições de Wi-Fi do Intune para dispositivos iOS | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Definições de Wi-Fi do Intune para dispositivos iOS"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: conheça as definições do Intune que pode utilizar para configurar ligações Wi-Fi em dispositivos iOS."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 85224b2758eeb1f9c7745b9f18f250a7d1292e0f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0fd7b82dde498d2ab53126943cb60965aa17f40b
+ms.lasthandoff: 02/18/2017
 
 
 ---
