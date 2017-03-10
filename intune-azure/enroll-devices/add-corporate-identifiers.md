@@ -1,11 +1,12 @@
 ---
-title: "Adicionar identificadores IMEI ao Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: Adicionar identificadores IMEI ao Intune
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como adicionar identificadores empresariais (números IMEI) ao Microsoft Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 47d326c4422a2908dd29dd963fd8835b36b9f9f3
+ms.lasthandoff: 02/25/2017
 
 ---
 
@@ -42,6 +44,9 @@ Num editor de texto, a lista .csv tem um aspeto semelhante ao seguinte:
 3. Se estiver a importar um ficheiro com novos detalhes que vão substituir os existentes, selecione **Substituir detalhes para os identificadores existentes** para que os novos detalhes substituam os detalhes existentes.
 
 4. Navegue até ao ficheiro CSV do IMEI e selecione **Adicionar**.
+
+> [!IMPORTANT]
+> Se estiver a importar números IMEI para dispositivos Android, tenha em atenção que alguns desses dispositivos poderão ter múltiplos números IMEI. Se importar um número IMEI, mas este não corresponder ao IMEI reportado para o Intune pelo dispositivo, este último será classificado como um dispositivo pessoal em vez de um dispositivo da empresa.
 
 **Para eliminar uma lista .csv de identificadores empresariais**
 

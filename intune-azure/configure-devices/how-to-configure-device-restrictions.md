@@ -1,5 +1,6 @@
 ---
-title: "Configurar definições de restrições de dispositivos do Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Configurar as definições de restrição de dispositivos no Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como utilizar o Intune para configurar definições e funcionalidades nos dispositivos que gere."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: c6293e9c669266203705a8fe06c323869dc7881f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 14b26c06ce9f880e44167c194d1d14f78c5e7386
+ms.lasthandoff: 02/18/2017
 
 
 ---

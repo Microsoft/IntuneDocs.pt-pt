@@ -1,5 +1,6 @@
 ---
-title: "Gerir a transferência de dados entre aplicações iOS | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Gerir as transferências de dados entre aplicações iOS | Pré-visualização do Azure no Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
 keywords: 
 author: NathBarn
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 4ad494b42313e064a2d5ecc8056e19a522cfe051
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 2b589f98ef77329ca495c894054acd7cd6c2812e
+ms.lasthandoff: 02/18/2017
 
 
 ---

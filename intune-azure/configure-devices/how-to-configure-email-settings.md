@@ -1,5 +1,6 @@
 ---
-title: "Como configurar definições de e-mail do Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Como configurar as definições de e-mail do Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como configurar o Intune para criar ligações a e-mail empresarial nos dispositivos que gere."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -25,7 +27,7 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Pode utilizar definições de perfil de e-mail para configurar dispositivos que gere com as definições que são precisas para ligar e sincronizar com o e-mail da empresa. Esta funcionalidade pode ajudar a assegurar que as definições são padronizadas em todos os seus dispositivos e também pode ajudar a reduzir as chamadas de suporte dos utilizadores finais que não saibam as definições de e-mail corretas.
+Pode utilizar perfis de e-mail para configurar os dispositivos que gere com as definições que são precisas para ligar e sincronizar com o e-mail da empresa. Esta funcionalidade pode ajudar a assegurar que as definições são padronizadas em todos os seus dispositivos e também pode ajudar a reduzir as chamadas de suporte dos utilizadores finais que não saibam as definições de e-mail corretas.
 
 O cliente de correio incorporado é suportado na maioria das plataformas. Atualmente, a maioria das aplicações de e-mail de terceiros não são suportadas.
 

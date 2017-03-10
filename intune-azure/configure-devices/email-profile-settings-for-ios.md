@@ -1,11 +1,12 @@
 ---
-title: "Definições de e-mail do Intune para dispositivos iOS | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Definições de e-mail no Intune para dispositivos iOS"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de e-mail em dispositivos iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.lasthandoff: 02/16/2017
 - **Método de autenticação** – Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.
     - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente que servirá para autenticar a ligação ao Exchange.
 - **SSL** – Utilize a comunicação SSL (Secure Sockets Layer) ao enviar e-mails, ao receber e-mails e ao comunicar com o Exchange Server.
-- **S/MIME** – Envie e-mails com a encriptação S/MIME.
+- **S/MIME** – Envie e-mails com uma assinatura S/MIME.
     - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente que servirá para autenticar a ligação ao Exchange.
 - **Quantidade de e-mails a sincronizar** – Selecione o número de dias de e-mail que pretende sincronizar ou selecione **Sem Limite** para sincronizar todos os e-mails disponíveis.
 - **Permitir que as mensagens sejam movidas para outras contas de e-mail** – Esta opção permite que os utilizadores movam mensagens de e-mail entre contas diferentes configuradas nos dispositivos.

@@ -1,5 +1,6 @@
 ---
-title: "Como adicionar aplicações de linha de negócio Android ao Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Como adicionar aplicações Android de linha de negócio ao Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como adicionar aplicações de linha de negócio Android ao Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: dbeaabe0f119a0e819857ef7181bbf6de2b1dbd8
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: af0b2bd72ae262d10e1a18c0d242b1816819c677
+ms.lasthandoff: 02/18/2017
 
 ---
 

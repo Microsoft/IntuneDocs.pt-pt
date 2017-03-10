@@ -1,5 +1,6 @@
 ---
-title: "Importar definições de Wi-Fi para Windows 8.1 e posterior | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Importar definições de Wi-Fi do Windows 8.1 e posterior"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: como importar definições de Wi-Fi do Windows para um perfil Wi-Fi do Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2600c8363c677465e29af382fa5ef4a921048fef
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b0157f1021ae7c98392dc3c96481a4514758b059
+ms.lasthandoff: 02/18/2017
 
 
 ---

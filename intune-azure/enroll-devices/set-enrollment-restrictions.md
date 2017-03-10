@@ -1,9 +1,10 @@
 ---
-title: "Definir restrições de inscrição no Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
+title: "Definir restrições de inscrição no Intune"
+titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: restringir a inscrição por plataforma e definir um limite de inscrição de dispositivos no Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 56996592febf0be5ab74b158a70404728fe17a4d
+ms.lasthandoff: 02/18/2017
 
 ---
 

@@ -3,9 +3,9 @@
 title: Instalar o software de cliente de PCs | Documentos da Microsoft
 description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através do software de cliente do Microsoft Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/14/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -179,6 +179,83 @@ Utilize um dos seguintes procedimentos para ajudá-lo a monitorizar e a validar 
     > [!TIP]
     > Clique em qualquer cabeçalho de coluna no relatório para ordenar a lista pelos conteúdos dessa coluna.
 
+## <a name="uninstall-the-windows-client-software"></a>Desinstalar o cliente de software do Windows
+
+Existem duas formas de anular a inscrição do software de cliente do Windows:
+
+- A partir da consola de administração do Intune (método recomendado)
+- A partir de uma linha de comandos no cliente
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>Anular a inscrição através da consola de administração do Intune
+
+Para anular a inscrição do software de cliente através da consola de administração do Intune, aceda a **Grupos** > **Todos os Computadores** > **Dispositivos**. Clique com o botão direito do rato no cliente e selecione **Extinguir/Limpar**.
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>Anular a inscrição através de uma linha de comandos no cliente
+
+Numa linha de comandos elevada, execute um dos seguintes comandos.
+
+**Método 1**:
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**Método 2** tenha em atenção que nem todos estes agentes se encontram instalados em todos os SKUs do Windows):
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> A anulação da inscrição do cliente irá gerar um registo obsoleto em separado para o cliente afetado. A anulação da inscrição é um processo assíncrono e existem nove agentes a desinstalar, pelo que poderá demorar até 30 minutos a ser concluída.
+
+### <a name="check-the-unenrollment-status"></a>Verificar o estado da anulação da inscrição
+
+Verifique o caminho "%ProgramFiles%\Microsoft\OnlineManagement" e certifique-se de que são apresentados apenas os seguintes diretórios à esquerda:
+
+- AgentInstaller
+- Logs
+- Updates
+- Common 
+
+### <a name="remove-the-onlinemanagement-folder"></a>Remover a pasta OnlineManagement
+
+O processo de anulação da inscrição não remove a pasta OnlineManagement. Aguarde 30 minutos após a desinstalação e, em seguida, execute este comando. Se o executar demasiado cedo, a desinstalação poderá apresentar um estado desconhecido. Para remover a pasta, inicie uma linha de comandos elevada e execute:
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>Veja também
 [Gerir PCs Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
