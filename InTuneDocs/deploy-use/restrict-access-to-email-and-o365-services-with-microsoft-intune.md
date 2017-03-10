@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,8 +30,9 @@ Pode proteger o acesso aos e-mails da sua empresa, aos serviços do Office 365 c
 ## <a name="how-does-conditional-access-work"></a>Como funciona o acesso condicional?
 Pode utilizar as definições de política de conformidade para avaliar a conformidade de um dispositivo. Uma política de acesso condicional utiliza a avaliação para restringir ou permitir o acesso a um serviço específico. Quando utiliza uma política de acesso condicional em combinação com uma política de conformidade de dispositivos, apenas os dispositivos conformes têm permissão para aceder ao serviço. A política de conformidade e a política de acesso condicional são implementadas no utilizador. Qualquer dispositivo que o utilizador utilize para aceder aos serviços é analisado relativamente à conformidade com as políticas.
 
-Tenha em atenção que o utilizador que está a utilizar o dispositivo tem de ter uma política de conformidade implementada para que o dispositivo seja avaliado em termos de conformidade.
-Se não estiver implementada nenhuma política de conformidade para o utilizador, o dispositivo é tratado como conforme e não são aplicadas restrições de acesso.
+> [!IMPORTANT] 
+> Tenha em atenção que o utilizador que está a utilizar o dispositivo tem de ter uma política de conformidade implementada para que o dispositivo seja avaliado em termos de conformidade.
+> Se não estiver implementada nenhuma política de conformidade para o utilizador, o dispositivo é tratado como conforme e não são aplicadas restrições de acesso.
 
 Quando os dispositivos não cumprem as condições definidas nas políticas, o utilizador final é orientado através do processo de inscrição do dispositivo e da correção do problema que impede o dispositivo de estar conforme.
 
@@ -80,9 +82,4 @@ Ao contrário de outras políticas do Intune, não precisa implementar política
   - [Criar uma política de acesso condicional para o SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Criar uma política de acesso condicional para o Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ O Intune pode facilitar a sua vida profissional de muitas formas. Eis uma lista 
 
 - [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Definir ou alterar o código de acesso](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Repor (apagar) o dispositivo perdido ou roubado](reset-erase-your-device-cpwebsite.md)
 - [Desativar a recolha de dados da Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Anular a inscrição do dispositivo no Intune](unenroll-your-device-from-intune-ios.md)
