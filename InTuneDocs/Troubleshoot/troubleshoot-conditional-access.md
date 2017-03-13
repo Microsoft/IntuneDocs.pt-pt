@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
+ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -55,7 +56,7 @@ Estas condições podem ser visualizadas para cada dispositivo no Portal de Gest
      -   Um perfil de e-mail existente criado pelo utilizador irá bloquear a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum, uma vez que os utilizadores do iOS criam um perfil de e-mail e depois fazem a inscrição. O portal da empresa irá informar o utilizador da não conformidade devido ao respetivo perfil de e-mail configurado manualmente e solicitará ao utilizador para remover esse perfil. O utilizador deve remover o respetivo perfil de e-mail, para que o perfil do Intune possa ser implementado. Para evitar este problema, indique aos seus utilizadores para inscreverem-se sem instalar um perfil de e-mail e para permitir que o Intune implemente o perfil.
      -     Um dispositivo iOS pode ficar bloqueado num estado de verificação de conformidade, impedindo que o utilizador inicie outra verificação. Reiniciar o portal da empresa pode corrigir este problema e o estado de conformidade irá refletir o estado do dispositivo no Intune. Após todos os dados terem sido recolhidos a partir de uma sincronização do dispositivo, a verificação de conformidade é rápida, cerca de meio segundo em média.
 
-        Normalmente, a razão pela qual os dispositivos se mantêm neste estado é terem problemas de ligação ao serviço ou de sincronização a demorar muito tempo.  Se o problema persistir em diferentes configurações de rede (telemóvel, Wi-Fi, VPN), após os reinícios do dispositivo e depois de verificar que o SSP está atualizado no dispositivo, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+        Normalmente, a razão pela qual os dispositivos se mantêm neste estado é terem problemas de ligação ao serviço ou de sincronização a demorar muito tempo.  Se o problema persistir em diferentes configurações de rede (dados móveis, Wi-Fi, VPN), após reiniciar o dispositivo e depois de verificar que o SSP está atualizado no dispositivo, contacte o Suporte da Microsoft conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## <a name="policy-issues"></a>Problemas de políticas
 
@@ -106,7 +107,7 @@ Se estes procedimentos não resolverem o problema, o Suporte da Microsoft pode p
 6. Quando for solicitado, selecione **Sim** na caixa de diálogo de pop-up.
 7. Execute a ação que causou o problema, para que possa reproduzi-la.
 8. Aguarde 1 a 2 minutos e depois volte para a lista telefónica no OWA. Certifique-se de que o seu telemóvel está selecionado na lista e, no menu superior, escolha **Obter Registo**.
-9. Deverá receber um e-mail enviado por si com um anexo. Quando abre um pedido de suporte, forneça o conteúdo do e-mail ao Microsoft Support.
+9. Deverá receber um e-mail enviado por si com um anexo. Quando abre um pedido de suporte, forneça o conteúdo do e-mail ao Suporte da Microsoft.
 
 ### <a name="exchange-connector-logs"></a>Registos do Exchange Connector
 
@@ -159,9 +160,4 @@ Para ativar o registo verboso:
 
 ### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

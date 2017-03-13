@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ Pode remover o registo do dispositivo através da consola de administração do 
 * **Dispositivo iOS**: abra a aplicação Azure Authenticator, percorra para a esquerda na conta e selecione anular o registo.  
 * **Dispositivo Android**: desinstale a aplicação Portal da Empresa ou remova a conta nas **Definições do sistema**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Acesso condicional com base na aplicação com acesso condicional com base na conformidade do dispositivo  
+## <a name="app-based-ca-with-device-based-ca"></a>Acesso Condicional Baseado na Aplicação com Acesso Condicional Baseado no Dispositivo  
 
 Pode configurar o [Acesso condicional baseado na conformidade do dispositivo ](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)(**Acesso condicional de dispositivo**) na [consola de administração do Intune](https://manage.microsoft.com) ou na [consola de gestão do Azure AD Premium] (https://manage.windowsazure.com). O acesso condicional de dispositivo exige que os utilizadores estabeleçam ligação ao Exchange Online através de dispositivos geridos pelo Intune que sejam compatíveis com a política de conformidade de dispositivo do Intune ou PCs associados a um domínio.  Se um utilizador pertencer a um ou mais grupos de segurança que são visados por políticas de acesso condicional de dispositivo e acesso condicional com base na aplicação, o utilizador tem de cumprir um dos dois requisitos:
 * A aplicação utilizada para aceder ao serviço é uma aplicação móvel que é suportada pelo 
@@ -63,9 +62,4 @@ Pode configurar o [Acesso condicional baseado na conformidade do dispositivo ](r
 ### <a name="see-also"></a>Consulte também
 
 [Proteger os dados da aplicação com políticas de proteção de aplicações](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

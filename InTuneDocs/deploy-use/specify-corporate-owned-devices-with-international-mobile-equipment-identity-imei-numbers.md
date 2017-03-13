@@ -2,10 +2,10 @@
 title: "Especificar os números IMEI | Documentos da Microsoft"
 description: "O Microsoft Intune permite aos administradores importar números IMEI para plataformas de dispositivos móveis para ajudar a identificar os dispositivos móveis pertencentes à empresa"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
 
 O Microsoft Intune permite aos administradores importar números de identidade internacional do equipamento móvel (IMEI) para plataformas de dispositivos móveis com números IMEI para ajudar a identificar os dispositivos móveis pertencentes à empresa. Após a inscrição dos dispositivos no Intune, pode ver os dispositivos cujos números IMEI foram importados em **Grupos** > **Descrição Geral** > **Todos os Dispositivos**. O **Grupo de dispositivos** lista os dispositivos com números IMEI importados como **Empresa** na coluna **Propriedade**.
 
-1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), selecione **Grups**&gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)** e, em seguida, clique em **Add devices…**. Pode adicionar dispositivos de duas formas:
+1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), selecione **Groups**&gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)** e, em seguida, clique em **Add devices…**. Pode adicionar dispositivos de duas formas:
 
     -   **Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
 
@@ -50,13 +51,11 @@ O Microsoft Intune permite aos administradores importar números de identidade i
 3.  No painel **Rever Dispositivos**, pode confirmar os números IMEI de dispositivos importados. Também pode decidir se quer substituir os **Detalhes** dos números IMEI que serão importados novamente. Pode desmarcar a caixa **Substituir** para manter os Detalhes atuais. Escolha **Concluir** para importar os números IMEI.
 4.  Os números IMEI importados e as descrições são adicionadas à lista **Por IMEI (Todas as plataformas)**.
 
+> [!IMPORTANT]
+> Se estiver a importar números IMEI para dispositivos Android, tenha em atenção que alguns desses dispositivos poderão ter múltiplos números IMEI. Se importar um número IMEI que não corresponda ao IMEI comunicado ao Intune pelo dispositivo, este será classificado como um dispositivo pessoal em vez de um dispositivo da empresa.
+
 Quando um dispositivo com um número IMEI é inscrito no Intune, normalmente, quando um utilizador instalar a aplicação Portal da Empresa e concluir o processo de inscrição, o dispositivo será marcado como sendo de propriedade da empresa e será apresentado como inscrito no grupo **Dispositivos IMEI**.
 
->[!NOTE] 
+>[!NOTE]
 > Quando a sua organização for migrada para o novo portal do Azure num futuro próximo, verá uma alteração desta funcionalidade. Na consola de administrador do Intune existente, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes por identificadores de hardware individuais. No novo portal do Azure, poderá substituir automaticamente os detalhes de todos os identificadores de hardware ou ignorar os novos detalhes de identificadores existentes.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

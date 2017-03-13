@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ Pode utilizar os perfis de e-mail para configurar o cliente de e-mail nativo nos
 -    Android for Work
 
 >[!NOTE]
->O Intune fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store e suportam ligações com o Exchange. Para ativar a conectividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos seus utilizadores e, em seguida, crie e implemente o perfil adequado.
+>O Intune fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store e suportam ligações com o Exchange. Para ativar a conectividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos seus utilizadores e, em seguida, crie e implemente o perfil adequado. As aplicações de e-mail como o Nine Work poderão não ser gratuitas. Reveja os detalhes de licenciamento da aplicação ou contacte a empresa da aplicação para colocar as suas questões.
 
 Além de configurar uma conta de e-mail no dispositivo, pode configurar a quantidade de e-mails a sincronizar e, dependendo do tipo de dispositivo, os tipos de conteúdo a sincronizar.
 
@@ -105,7 +106,7 @@ A palavra-passe não se encontra no perfil de e-mail, por isso, o utilizador tem
     |**Endereço de e-mail**|Como é gerado o endereço de e-mail para o utilizador em cada dispositivo. Selecione **Endereço SMTP Principal** para utilizar o endereço SMTP principal para iniciar sessão no Exchange ou selecione **Nome Principal de Utilizador** para utilizar o nome principal completo como o endereço de e-mail.|
     |**Método de autenticação** (Android for Work, Samsung KNOX e iOS)|Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.|
     |**Selecionar um certificado de cliente para autenticação de cliente (Certificado de Identidade)** (Android for Work, Samsung KNOX e iOS)|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação ao Exchange. Para mais informações sobre como utilizar perfis de certificado no Intune, veja [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.|
-    |**Utilizar S/MIME** (Samsung KNOX e iOS)|Envie e-mail através de encriptação S/MIME.|
+    |**Utilizar S/MIME** (Samsung KNOX e iOS)|Envie e-mails com uma assinatura S/MIME.|
     |**Certificado de assinatura** (Samsung KNOX e iOS)|Selecione o certificado de assinatura que será utilizado para assinar o e-mail de envio. Esta opção só é apresentada quando seleciona **Utilizar S/MIME**.|
     |**Número de dias de e-mail a sincronizar**|O número de dias de e-mail que pretende sincronizar ou selecione **Sem limite** para sincronizar todos os e-mails disponíveis.|
     |**Agenda de sincronização** (Android for Work, Samsung KNOX, Windows Phone 8 e posterior, Windows 10)|Selecione a agenda pela qual os dispositivos irão sincronizar os dados do Exchange Server. Também pode selecionar **Quando chegarem mensagens**, que sincroniza os dados assim que chegam, ou **Manual**, em que o utilizador do dispositivo tem de iniciar a sincronização.|
@@ -123,22 +124,17 @@ A nova política é apresentada no nó **Políticas de Configuração** da área
 
 ## <a name="deploy-the-policy"></a>Implementar a política
 
-1.  Na área de trabalho **Policy**, selecione a política que pretende implementar e, em seguida, escolha **Manage Deployment**.
+1.  Na área de trabalho **Política**, selecione a política que pretende implementar e, em seguida, escolha **Gerir a Implementação**.
 
 2.  Na caixa de diálogo **Gerir a Implementação**, para:
 
-    -   **To deploy the policy** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Add** &gt; **OK**.
+    -   **Para implementar a política** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
 
-    -   **Para fechar a caixa de diálogo sem implementar a política** – escolha **Cancel**.
+    -   **Para fechar a caixa de diálogo sem implementar a política** – escolha **Cancelar**.
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
 
 > [!NOTE]
 > - No Android for Work, certifique-se de que também implementa as aplicações Gmail ou Nine Work para além do perfil de e-mail adequado.
 > - Se pretende remover um perfil de e-mail de um dispositivo, edite a implementação e remova todos os grupos dos quais o dispositivo é membro. Tenha em atenção que não pode remover um perfil de e-mail desta forma se este for o único num dispositivo.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
