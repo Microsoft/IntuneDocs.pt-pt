@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ Por exemplo, suponha que pretende aprovisionar todos os dispositivos iOS com as 
 
 Pode criar perfis VPN com os seguintes tipos de ligação:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Tipo de ligação|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Sim|Sim|Sim|Sim|Sim|Sim|
 |Cisco (IPSec)|Não|Sim|Não|Não|Não|Não|
