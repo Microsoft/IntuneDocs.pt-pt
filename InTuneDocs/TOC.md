@@ -193,12 +193,10 @@
 ### [Eliminar dados de aplicações geridas pela empresa](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Como dar formação aos seus utilizadores finais sobre o Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Utilizar um dispositivo Android com o Intune](EndUser/using-your-android-device-with-intune.md)
-#### [Como os utilizadores de dispositivos Android obtêm as aplicações](deploy-use/how-your-android-users-get-their-apps.md)
-### [Utilizar um dispositivo iOS com o Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [Como os utilizadores de dispositivos iOS obtêm as aplicações](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Utilizar um dispositivo Windows com o Intune](EndUser/using-your-windows-device-with-intune.md)
-#### [Como os utilizadores de dispositivos Windows obtêm as aplicações](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Mensagens do Portal da Empresa vistas pelos utilizadores finais](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Como os utilizadores de dispositivos Android obtêm as aplicações](deploy-use/how-your-android-users-get-their-apps.md)
+### [Como os utilizadores de dispositivos iOS obtêm as aplicações](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Como os utilizadores de dispositivos Windows obtêm as aplicações](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Desenvolver e Personalizar Aplicações
 ## [Descrição Geral do SDK da Aplicação Microsoft Intune](develop/intune-app-sdk.md)
