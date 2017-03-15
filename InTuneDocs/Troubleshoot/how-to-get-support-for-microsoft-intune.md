@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
-ms.lasthandoff: 02/05/2017
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -42,15 +42,13 @@ Faça uma pergunta ou inicie um debate com os especialistas técnicos da Microso
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de feedback do Microsoft Intune no UserVoice
 
-Tem feedback para ajudar a Microsoft a tornar o Intune ainda melhor? Dê-nos a sua opinião ao adicionar as suas ideias no site de feedback [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) do Microsoft Intune. Também pode votar nas ideias que outras pessoas adicionaram ao UserVoice. 
+Tem feedback para ajudar a Microsoft a tornar o Intune ainda melhor? Dê-nos a sua opinião ao adicionar as suas ideias no site de feedback [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) do Microsoft Intune. Também pode votar nas ideias que outras pessoas adicionaram ao UserVoice.
 
 ![Página de feedback do Microsoft Intune no UserVoice](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online
+## <a name="create-a-support-ticket"></a>Criar um pedido de suporte
 
-Se não conseguir encontrar respostas com os recursos de ajuda autónomos, pode criar um pedido de suporte online.
-
-**Mantenha um limite de apenas um problema por pedido de suporte**, para que o consigamos ajudar melhor. Eis a razão:
+Se não conseguir encontrar respostas com os recursos de ajuda autónomos, pode criar um pedido de suporte online. **Mantenha um limite de apenas um problema por pedido de suporte**, para que o consigamos ajudar melhor. Eis a razão:
 
 - É provável que os engenheiros de suporte sejam especializados em áreas específicas, sendo que desta forma é mais fácil identificar os especialistas de um determinado assunto para ajudar com o seu problema.
 - As equipas de engenharia podem dar mais prioridade às áreas em que existem mais incidentes.
@@ -58,12 +56,15 @@ Se não conseguir encontrar respostas com os recursos de ajuda autónomos, pode 
 
 Veja a [definição de um incidente de suporte](#definition-of-a-support-incident) antes de criar um pedido de suporte.
 
-**Para criar um pedido de suporte online**:
+### <a name="steps-to-create-an-online-support-ticket"></a>Passos para criar um pedido de suporte online
 
 1.  Inicie sessão no [centro de administração do Office 365](https://portal.office.com) com as suas credenciais do Intune.
+
+    Se for um cliente do Suporte Premier, poderá abrir um pedido de suporte do Intune na [página do suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+
     >[!NOTE]
     >
-    >Os clientes do Suporte Premier podem abrir um pedido de suporte do Intune na [página do suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
+    >Os clientes do Suporte Premier devem abrir um pedido de suporte do Intune na [página do suporte Premier](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Escolha o mosaico **Administrador**.
 3.  Do lado esquerdo, em **Suporte**, escolha **Suporte** para abrir um pedido de suporte.
@@ -84,9 +85,9 @@ Veja a [definição de um incidente de suporte](#definition-of-a-support-inciden
 
 3.  Siga as instruções para abrir o seu pedido.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Criar um pedido de suporte com métodos alternativos
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Passos para criar um pedido de suporte com métodos alternativos
 
-Siga este procedimento se a sua página de suporte tiver o seguinte aspeto:
+Siga este procedimento se a sua página de suporte do centro de administração do Office 365 tiver o seguinte aspeto:
 
 ![Suporte alternativo do Intune](../media/alternate-support-ui.png)
 
@@ -102,30 +103,30 @@ Siga este procedimento se a sua página de suporte tiver o seguinte aspeto:
 Veja [Contactar o suporte assistido por telefone do Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) para obter uma lista de números de telefone de suporte por país e região, horas de suporte e idiomas suportados para cada região.
 
 ## <a name="track-your-support-requests"></a>Monitorizar os pedidos de suporte
-1.  Inicie sessão no [centro de administração do Office 365](https://portal.office.com) com as suas credenciais do Intune.
+1.  Inicie sessão no [centro de administração do Office 365](https://portal.office.com) com as suas credenciais de administrador do Intune.
 2.  Escolha o mosaico **Administrador**.
 3.  Do lado esquerdo, em **Suporte**, escolha **Pedidos de serviço**. Em seguida, pode rever os seus pedidos.
 
-As nossas respostas iniciais aos pedidos de suporte dependem da gravidade do problema. No caso de problemas mais graves, a resposta inicial para clientes Profissionais é dada no espaço de duas horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte. Existem casos em que:
+As nossas respostas iniciais aos pedidos de suporte dependem da gravidade do problema. No caso de problemas mais graves, a resposta inicial para clientes Profissionais é dada no espaço de duas horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte. Um caso é **mais grave** quando:
 
 - Um ou mais serviços não são acessíveis ou não são utilizáveis.
 - Os prazos de produção, operações ou implementação são gravemente afetados ou existirá um impacto grave na produção ou rentabilidade.
 - Vários utilizadores ou serviços são afetados.
 
-No caso de problemas de gravidade moderada, a resposta inicial para clientes Profissionais é dada no espaço de quatro horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte.  Existem casos em que:
+No caso de problemas de gravidade moderada, a resposta inicial para clientes Profissionais é dada no espaço de quatro horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte. Um caso é **moderadamente grave** quando:
 
 - O serviço pode ser utilizado, mas não está a funcionar corretamente.
 - A situação tem um impacto moderado sobre o negócio e pode ser resolvida durante as horas comerciais.
 - Um único utilizador, cliente ou serviço é afetado parcialmente.
 
-No caso de outro tipo de problema, a resposta inicial para clientes Profissionais é dada no espaço de oito horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte.  Existem casos em que:
+Para outros problemas, a resposta inicial para clientes Profissionais é dada no espaço de oito horas. Para clientes do Suporte Premier, o tempo de resposta varia de acordo com o respetivo contrato de suporte. Um caso é menos grave quando:
 
 - A situação tem um impacto mínimo sobre o negócio.
 - O problema é importante, mas não tem um impacto significativo e imediato sobre o serviço ou a produtividade do cliente.
 - Um único utilizador está a experienciar uma perturbação parcial mas existe uma solução aceitável.
 
 > [!NOTE]
-> **Caso utilize o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, contacte o seu parceiro ou visite o [Solution Center do Microsoft System Center Configuration Manager e do System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) para encontrar material avançado de autoajuda. Este também oferece a opção de abrir um pedido de suporte online ou por telefone.
+> **Caso utilize o Microsoft System Center Configuration Manager** ou o **Microsoft System Center Endpoint Protection:** para obter suporte técnico para o Configuration Manager ou o Endpoint Protection, contacte o seu parceiro ou aceda à documentação do [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) e do [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) para encontrar material avançado de ajuda autónoma. Este também oferece a opção de abrir um pedido de suporte online ou por telefone.
 >
 > O suporte técnico do System Center Configuration Manager ou do System Center Endpoint Protection requer pagamento ou este é debitado do seu licenciamento ou contratos de Suporte Premier existentes.
 

@@ -5,7 +5,7 @@ keywords: "o que é o Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ O Intune é um serviço de gestão de mobilidade empresarial (EMM) baseado na cl
 * Proteger as informações da sua empresa ao ajudar a controlar a forma como a sua força de trabalho acede às mesmas e as partilha.
 * Garantir que os dispositivos e as aplicações são compatíveis com os requisitos de segurança da empresa.
 
-O Intune está estreitamente integrado no Azure Active Directory (Azure AD) para controlo de identidade e acesso e no Azure Rights Management (Azure RMS) para proteção de dados. É o *braço de gestão* do Microsoft Enterprise Mobility + Security (EMS), enquanto o Office 365 é o *braço de produtividade* da solução de mobilidade da Microsoft.  
+O Intune está estreitamente integrado no Azure Active Directory (Azure AD) para controlo de identidade e de acesso e no Azure Information Protection para proteção de dados. É o *braço de gestão* do Microsoft Enterprise Mobility + Security (EMS), enquanto o Office 365 é o *braço de produtividade* da solução de mobilidade da Microsoft.  
 
 Em conjunto, o Office 365 e o EMS permitem que a sua força de trabalho seja produtiva em todos os respetivos dispositivos, mantendo as informações da sua organização protegidas. O Office 365 com EMS é um conjunto integrado completo para mobilidade empresarial, que inclui produtividade, identidade, controlo de acesso, gestão e proteção de dados. Proporciona uma forma eficaz de implementar e utilizar uma solução de mobilidade na sua organização.
 
@@ -114,9 +115,4 @@ A seguinte lista de problemas empresariais permite aceder a informações mais d
 * Ler sobre algumas das [formas comuns de utilizar o Intune](common-ways-to-use-intune.md).
 * Familiarizar-se com o produto [com uma avaliação de 30 dias do Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Aprofundar conhecimentos sobre os [requisitos técnicos e as capacidades](/intune/get-started/what-to-know-before-you-start-microsoft-intune) do Intune
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

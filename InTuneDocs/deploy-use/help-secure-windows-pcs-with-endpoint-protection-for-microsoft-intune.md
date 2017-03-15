@@ -4,8 +4,8 @@ description: "Proteja os seus computadores geridos com o Endpoint Protection, qu
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ Pode monitorizar o estado de software maligno nos seus computadores ao utilizar 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Como ver Caminhos de Deteção Recentes para software maligno em computadores
 O Intune pode apresentar os caminhos de até 10 das instâncias de software maligno detetadas mais recentemente num dispositivo. O **Caminho de Deteção Recente** está desativado por predefinição. Para ativar esta vista:
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** > **Todos os Dispositivos** > **Software Maligno**.
+1. Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** > **Todos os Dispositivos** > **Todos os Computadores**.
+2. Clique com o botão direito do rato no computador cujos caminhos de deteção recentes pretende ver e selecione **Propriedades**.
+3. Selecione **Software Maligno** nos separadores na parte superior.
 
-2.  Clique no cabeçalho de uma coluna. É apresentada uma lista das colunas disponíveis.
-
-3.  Selecione a caixa de verificação **Caminhos de Deteção Recentes** na lista. A coluna **Caminhos de Deteção Recentes** aparece e apresenta até 10 das instâncias de software maligno monitorizadas mais recentemente no dispositivo.
+   ![Selecionar o separador Software Maligno e clicar na caixa de verificação Caminhos de Deteção Recentes](../media/malware-path-column.png)
+4. Clique com o botão direito do rato no cabeçalho da coluna. É apresentada uma lista das colunas disponíveis. Selecione a caixa de verificação **Caminhos de Deteção Recentes** na lista. A coluna **Caminhos de Deteção Recentes** aparece e apresenta até 10 das instâncias de software maligno monitorizadas mais recentemente no dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Executar uma análise de software maligno ou atualizar as definições de software maligno num computador
 O Intune pode executar uma análise de software maligno completa ou rápida ao utilizar o Endpoint Protection ou o Windows Defender num PC gerido remotamente que tenha o cliente do Intune instalado.
@@ -184,9 +185,6 @@ O Intune pode executar uma análise de software maligno completa ou rápida ao u
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), aceda a **Grupos** > **Descrição Geral** > **Todos os Dispositivos** > **Todos os Computadores** e, em seguida, selecione o computador que pretende direcionar.
 
 2. Selecione a lista pendente **Tarefas Remotas** e, em seguida, selecione a tarefa para executar no computador remoto.
-
-
-
 
 ## <a name="need-more-help"></a>Precisa de mais ajuda?
 Para mais ajuda e suporte, consulte [Resolução de Problemas do Endpoint Protection no Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).

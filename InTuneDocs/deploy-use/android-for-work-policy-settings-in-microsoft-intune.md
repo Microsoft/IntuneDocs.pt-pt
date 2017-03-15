@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |----------------|-|
 |**Permitir a partilha de dados entre perfis de trabalho e pessoais**|Permite que as aplicações do perfil de trabalho partilhem dados com as aplicações no perfil pessoal do utilizador. Escolha entre:<br><br>- **Impedir qualquer partilha entre limites**<br>- **As aplicações no perfil de trabalho podem processar um pedido de partilha do perfil pessoal**<br>- **Sem restrições à partilha**|
 |**Ocultar notificações do perfil de trabalho quando o dispositivo está bloqueado**<br>(Android 6 e posterior)|Controlar quando mostrar as notificações do perfil de trabalho quando o dispositivo está bloqueado.|
-|**Predefinir uma política de permissões de aplicação**<br>(Android 6 e posterior)|Predefine a política de permissões para todas as aplicações do perfil de trabalho.|
+|**Predefinir uma política de permissões de aplicação**<br>(Android 6 e posterior)|Predefine a política de permissões para todas as aplicações do perfil de trabalho. A partir do Android 6, algumas permissões exigidas pelas aplicações são pedidas ao utilizador final no runtime.  Esta definição de política permite que o departamento de TI decida como ou se é pedido aos utilizadores a concessão de permissões de aplicações no perfil de trabalho. <br/><br/>Por exemplo, o departamento de TI poderá transferir uma aplicação para o perfil de trabalho que necessita de acesso de localização.  Normalmente, essa aplicação apresentaria uma caixa de diálogo a perguntar ao utilizador se pretende conceder acesso de localização à aplicação e o utilizador pode aprová-lo ou negá-lo.  Esta política permite que o departamento de TI decida se todas as permissões devem ser concedidas automaticamente sem uma linha de comandos, negadas automaticamente sem uma linha de comandos ou permitir que o utilizador final decida.|
 
 
 ## <a name="custom-policy-settings"></a>Definições de política personalizada
@@ -91,9 +92,4 @@ Atualmente, o Intune suporta um número limitado de políticas personalizadas do
 
 ### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
