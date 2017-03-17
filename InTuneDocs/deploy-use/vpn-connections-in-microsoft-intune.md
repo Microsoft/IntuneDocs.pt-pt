@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
   - **Avaliar ligação**, que tem três definições: a. **Ação de domínio** – escolha **Ligar caso seja necessário** ou **Nunca ligar**
     ; b. **Lista de domínios separada por vírgulas** – configure esta opção apenas se escolher uma **Ação de domínio** em **Ligar caso seja necessário**
      c. **Pesquisa de cadeia de URL necessária** – um URL de HTTP ou HTTPS (preferencial) como *https://vpntestprobe.contoso.com*. A regra verificará se existe uma resposta deste endereço. Caso contrário e se a **Ação de domínio** for **Ligar caso seja necessário**, será acionada a VPN.
+      
      > [!TIP]
      >
      >Um exemplo de quando utilizar esta ação é quando alguns sites na rede da sua empresa requerem uma ligação de rede empresarial de VPN ou direta, mas outras não. Se estiver listada em **Lista de domínios de pesquisa DNS separada por vírgulas** *corp.contoso.com*, pode escolher **Ligar caso seja necessário** e, em seguida, listar sites específicos dentro dessa rede que possam precisar de uma VPN, tais como *sharepoint.corp.contoso.com*. A regra, em seguida, verificará se *vpntestprobe.contoso.com* pode ser contactado. Se não for possível, será acionada a VPN para o site do SharePoint.
@@ -192,9 +194,4 @@ As regras específicas do domínio são avaliadas antes das regras de todos os d
 Após uma implementação efetuada com êxito, os utilizadores verão o nome da ligação VPN especificado na lista de ligações VPN nos respetivos dispositivos.
 
 Um resumo do estado e alertas na página **Overview** da área de trabalho **Policy** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
