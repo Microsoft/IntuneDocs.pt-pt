@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
-ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -89,16 +90,5 @@ Os atributos podem ter propriedades de dispositivos que podem ser utilizadas na 
 ## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>O que acontece às políticas e às aplicações já implementadas?
 
 As políticas e as aplicações continuam a ser implementadas em grupos, tal como antes. No entanto, agora irá gerir estes grupos a partir do portal do Azure, em vez da consola clássica do Intune.
-
-
-## <a name="how-to-get-more-information"></a>Como obter mais informações
-
-Contacte a nossa equipa de migração em [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).    
-     
-
-
-
-
-<!--HONumber=Dec16_HO4-->
-
+ 
 

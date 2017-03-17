@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 207297601634f390051a6345b96bf09e1d031747
-ms.openlocfilehash: 6b37cede797f965b82c067b274517277d8597939
-ms.lasthandoff: 01/12/2017
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
+ms.lasthandoff: 03/16/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/12/2017
 
 ## <a name="whats-a-certificate"></a>O que é um certificado?
 
-A [criptografia](https://technet.microsoft.com/en-us/library/cc962030.aspx) é a ciência de proteger as informações. A criptografia foi utilizada, tradicionalmente, para enviar mensagens em código para [assegurar que a comunicação é secreta](https://technet.microsoft.com/en-us/library/cc962019.aspx). Na sua forma mais simples, a criptografia substitui ou transpõe as letras para criar uma mensagem em código numa mensagem oculta, ilegível ou codificada. Só alguém com uma chave de descodificação ou um _certificado_ pode converter a mensagem novamente para a sua forma original e legível. Os seus dispositivos Android utilizam certificados no Intune para assegurar que as comunicações entre o seu dispositivo e os recursos da sua organização, como e-mails e documentos, são sempre mantidos em segurança desde o envio até à receção.
+A [criptografia](https://technet.microsoft.com/library/cc962030.aspx) é a ciência de proteger as informações. A criptografia foi utilizada, tradicionalmente, para enviar mensagens em código para [assegurar que a comunicação é secreta](https://technet.microsoft.com/library/cc962019.aspx). Na sua forma mais simples, a criptografia substitui ou transpõe as letras para criar uma mensagem em código numa mensagem oculta, ilegível ou codificada. Só alguém com uma chave de descodificação ou um _certificado_ pode converter a mensagem novamente para a sua forma original e legível. Os seus dispositivos Android utilizam certificados no Intune para assegurar que as comunicações entre o seu dispositivo e os recursos da sua organização, como e-mails e documentos, são sempre mantidos em segurança desde o envio até à receção.
 
 ## <a name="fixing-certificate-issues"></a>Corrigir problemas de certificados
 
