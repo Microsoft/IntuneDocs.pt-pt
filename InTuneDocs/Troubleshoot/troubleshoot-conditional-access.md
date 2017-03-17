@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ Estas condições podem ser visualizadas para cada dispositivo no Portal de Gest
      -     Um dispositivo iOS pode ficar bloqueado num estado de verificação de conformidade, impedindo que o utilizador inicie outra verificação. Reiniciar o portal da empresa pode corrigir este problema e o estado de conformidade irá refletir o estado do dispositivo no Intune. Após todos os dados terem sido recolhidos a partir de uma sincronização do dispositivo, a verificação de conformidade é rápida, cerca de meio segundo em média.
 
         Normalmente, a razão pela qual os dispositivos se mantêm neste estado é terem problemas de ligação ao serviço ou de sincronização a demorar muito tempo.  Se o problema persistir em diferentes configurações de rede (dados móveis, Wi-Fi, VPN), após reiniciar o dispositivo e depois de verificar que o SSP está atualizado no dispositivo, contacte o Suporte da Microsoft conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
+ - Para dispositivos Android:
+     - É possível que certos dispositivos Android pareçam estar encriptados, mas que a aplicação Portal da Empresa reconheça estes dispositivos como não encriptados. 
+    
+        -    Os dispositivos que se encontrarem neste estado necessitam que o utilizador defina um código de acesso de arranque seguro. O utilizador verá uma notificação de dispositivo da aplicação Portal da Empresa que pede para definir um código de acesso para o dispositivo. Depois de tocar na notificação de dispositivo e confirmar a palavra-passe ou PIN existente, selecione a opção **Require PIN to start device (Exigir PIN para iniciar o dispositivo)** no ecrã **Secure start-up (Arranque seguro)**. Em seguida, toque no botão **Check Compliance (Verificar Conformidade)** do dispositivo na aplicação Portal da Empresa. O dispositivo deverá ser detetado como encriptado agora.
+    
+        -     Alguns fabricantes de dispositivos encriptam os seus dispositivos através de um PIN predefinido em vez do PIN secreto definido pelo utilizador. O Intune reconhece a encriptação de dispositivos com o PIN predefinido como não sendo segura, dado que este método de encriptação pode colocar os dados do dispositivo em risco de serem acedidos fisicamente por utilizadores mal intencionados. Se for este o problema, pondere utilizar [políticas de proteção de aplicações](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de políticas
 
@@ -125,7 +132,7 @@ Para ver quais os registos do Exchange Connector que utilizam a [Ferramenta Visu
 
     O fim do registo de uma sincronização completa tem o seguinte aspeto:
 
-    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Detalhes: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
+    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Detalhes: Inventory command result - Devices synced: 0 Command ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
 -    Localize uma sincronização (delta) rápida nos registos ao procurar **sincronização rápida**.
 
