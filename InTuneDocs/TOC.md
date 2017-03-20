@@ -120,6 +120,7 @@
 
 ## [Adicionar aplicações](deploy-use/add-apps.md)
 ### [Adicionar aplicações a dispositivos inscritos](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Sideload de aplicações Windows](deploy-use/sideload-apps-for-windows.md)
 ### [Adicionar aplicações a PCs do cliente Intune](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Gerir contratos de licença de PCs do cliente Intune](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Implementar aplicações](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Políticas de configuração da aplicação Android for Work](deploy-use/afw-app-configuration-policy.md)
 ### [Perfis de aprovisionamento de aplicações móveis iOS](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [Gerir o acesso à Internet](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [Aplicações de LOB em sideload](deploy-use/sideload-apps-for-windows.md)
 
 ## [Proteger aplicações e dados](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Políticas de conformidade de dispositivo](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
