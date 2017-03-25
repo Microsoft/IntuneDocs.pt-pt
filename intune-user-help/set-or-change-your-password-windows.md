@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="make-your-device-safer-with-the-right-password"></a>Torne o seu dispositivo mais seguro com a palavra-passe correta
 
-O acesso a recursos empresariais, como e-mail e documentos, é algo que as pessoas precisam de fazer diariamente a partir dos dispositivos Windows. A sua organização quer ter a certeza de que o dispositivo está a fazê-lo em segurança. Uma forma de garantir que o dispositivo está a aceder de forma segura a esses recursos passa por exigir que os dispositivos utilizem uma palavra-passe.
+O acesso a recursos empresariais, como e-mail e documentos, é algo que as pessoas precisam de fazer diariamente a partir dos dispositivos Windows. A sua organização quer ter a certeza de que o dispositivo está a fazê-lo em segurança. Uma forma de garantir que o dispositivo está a aceder de forma segura a esses recursos passa por exigir que os dispositivos utilizem uma palavra-passe. Estas palavras-passe servem, por exemplo, para aceder ao dispositivo a partir do ecrã de bloqueio.
 
 Se o dispositivo Windows não estiver em conformidade com a política de palavra-passe do administrador de TI, verá uma mensagem que descreve resumidamente o problema e explica o que precisa de fazer para que a palavra-passe cumpra os requisitos.
 

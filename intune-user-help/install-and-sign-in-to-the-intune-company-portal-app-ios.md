@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 
 O Portal da Empresa é uma aplicação que instala no seu dispositivo iOS para lhe conceder acesso às suas aplicações empresariais e escolares, e-mail e de rede.  Antes de poder obter acesso, tem de instalar a aplicação Portal da Empresa e, em seguida, utilizar a aplicação para inscrever o dispositivo no Microsoft Intune. Para obter mais informações, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1.  Abra a **App Store** e procure **intune**.
+1.  Abra a **App Store** e procure o **portal da empresa do intune**.
 
 2.  Transfira a aplicação **Portal da Empresa do Microsoft Intune**.
 

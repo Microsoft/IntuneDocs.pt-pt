@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,21 +18,21 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: b90aec6297fdeb00940109ae0465e2bc25ab9436
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
+ms.lasthandoff: 03/16/2017
 
 
 ---
 
 
-# <a name="device-doesnt-have-secure-boot-enabled"></a>O dispositivo não tem o Arranque Seguro ativado
+# <a name="you-need-to-enable-secure-boot"></a>Necessita de ativar o Arranque Seguro
 
 A sua organização obriga-o a ativar o Arranque Seguro do Windows, que é uma funcionalidade de segurança que ajuda a proteger o seu dispositivo.
 
 A ativação do Arranque Seguro é uma tarefa avançada. Se estiver a utilizar um dispositivo móvel, contacte o seu administrador de TI para obter ajuda.
 
-Se estiver a utilizar um PC, pode contactar o seu administrador de TI ou ver a secção “Para reativar o Arranque Seguro", na página [Desativar o Arranque Seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), para tentar ativar o Arranque Seguro por si.
+Se estiver a utilizar um PC, pode contactar o seu administrador de TI ou ver a secção “To re-enable Secure Boot" (“Para reativar o Arranque Seguro"), na página [Disabling Secure Boot (Desativar o Arranque Seguro)](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), para tentar ativar o Arranque Seguro por si.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 

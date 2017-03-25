@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5edcdf20d07c63a33707c31134af8adf22049929
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 617ca50569885431394ab630f297ba919d119522
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -29,9 +29,10 @@ ms.lasthandoff: 02/18/2017
 
 Utilize as informações deste tópico para saber como configurar um perfil de atualização de edição do Windows 10. Este perfil permite-lhe atualizar automaticamente dispositivos que executam uma das seguintes versões do Windows 10 para uma edição mais recente:
 
-- Computadores com o Windows 10
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
+
 
 Os seguintes caminhos de atualização são suportados:
 
@@ -39,6 +40,7 @@ Os seguintes caminhos de atualização são suportados:
 - Desde o Windows 10 Home ao Windows 10 Education
 - Desde o Windows 10 Mobile ao Windows 10 Mobile Enterprise
 - Desde o Windows 10 Holographic Pro ao Windows 10 Holographic Enterprise
+
 
 ## <a name="before-you-start"></a>Antes de começar
 Antes de começar a atualizar dispositivos para a versão mais recente, irá necessitar de um dos seguintes:

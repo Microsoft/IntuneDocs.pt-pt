@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 A secção do guia deverá ser utilizada em paralelo com outros tópicos na Secção 2. Esta estrutura basear-se-á nas informações que está a recolher e em decisões que irá tomar ao concluir as secções anteriores deste guia. Nesta secção de estruturação, vamos concentrar-nos na versão autónoma do Intune, que é um serviço da Microsoft baseado na cloud.
 
-Apesar de os requisitos de infraestrutura no local serem extremamente reduzidos, continua a ser recomendado trabalhar num plano de estrutura para ter a certeza de que tem a solução de gestão de dispositivos móveis correta e de que cumpre os seus objetivos, requisitos e metas.
+Apesar de os requisitos de infraestrutura no local serem extremamente reduzidos, trabalhe num plano de estrutura para garantir que tem a solução de gestão de dispositivos móveis correta e de que cumpre os seus objetivos, requisitos e metas.
 
 Além disso, é frequente haver mudanças de estrutura durante as fases de implementação e testes. Documente estas alterações e os motivos das mesmas à medida que ocorrem. Iremos abordar as seguintes áreas:
 
@@ -409,9 +410,4 @@ Eis um exemplo de como documentar políticas de acesso condicional:
 ## <a name="next-section"></a>Secção Seguinte
 
 A próxima secção fornece orientações sobre o [processo de implementação do Intune](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

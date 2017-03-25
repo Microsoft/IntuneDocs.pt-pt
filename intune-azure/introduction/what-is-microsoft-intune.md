@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
-ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -30,11 +30,11 @@ ms.lasthandoff: 02/16/2017
 
 O Microsoft Intune vai mudar para o portal do Azure, o que significa que as funcionalidades e os fluxos de trabalho a que está habituado vão mudar.
 O novo portal oferece-lhe uma pré-visualização das funcionalidades novas e atualizadas no portal do Azure, onde pode gerir os dispositivos móveis, os PCs e as aplicações da sua organização.
-Todas as funcionalidades do Intune vão acabar por mudar para o Azure, mas pode realizar determinadas tarefas do Intune no portal do Azure atualmente. Uma vez que esta nova experiência está em pré-visualização, algumas funcionalidades podem ainda não estar presentes no portal. Reveja a secção [Novidades na pré-visualização](#what's-new-in-the-preview) para obter mais detalhes.
+Todas as funcionalidades do Intune vão acabar por passar para o Azure, mas pode realizar muitas tarefas do Intune no portal do Azure atualmente. Uma vez que esta nova experiência está em pré-visualização, algumas funcionalidades podem ainda não estar presentes no portal. Reveja a secção [Novidades](#what's-new) para obter detalhes.
 
 > [!IMPORTANT]
 > **Ainda não vê o novo portal?**<br>
-> Já começamos a implementar a pré-visualização em inquilinos selecionados. Os inquilinos existentes serão migrados para a nova experiência que começa no início do ano de calendário de 2017. Vai receber uma notificação no Centro de Mensagens do Office antes da migração do seu inquilino. Se tiver dúvidas sobre a linha cronológica para a migração do inquilino, contacte a nossa equipa de migração através do e-mail [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+> Já começamos a implementar a pré-visualização em inquilinos selecionados. Os inquilinos existentes serão migrados para a nova experiência que começa no início do ano de calendário de 2017. Vai receber uma notificação no Centro de Mensagens do Office antes da migração do seu inquilino.
 
 
 Nesta biblioteca, encontrará documentação sobre novos produtos e será constantemente atualizada durante a pré-visualização. Se tiver sugestões que gostaria de ver, deixe a sua opinião nos comentários do tópico. Gostaríamos de saber a sua opinião.
@@ -74,24 +74,25 @@ A documentação reflete o esquema do portal do Intune para que seja mais fácil
 
 ![Cargas de trabalho do portal do Azure](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### <a name="enroll-devices"></a>Inscrever dispositivos
+### <a name="introduction-and-get-started"></a>Introdução
+Esta secção contém informações sobre as [novidades](/intune-azure/introduction/whats-new), os [problemas conhecidos](/intune-azure/introduction/known-issues-in-the-intune-preview), [como obter suporte](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) e [como começar a utilizar uma versão de avaliação gratuita](/intune-azure/introduction/sign-up-free-trial-microsoft-intune) do Intune.
+### <a name="plan-and-design"></a>Planear e estruturar
+Informações para o ajudar a [planear e estruturar](/intune-azure/plan-and-design/get-started) o ambiente do Intune.
+### <a name="device-enrollment"></a>Inscrição de dispositivos
 [Como fazer com que os seus dispositivos sejam geridos pelo Intune](/intune-azure/enroll-devices/what-is).
-### <a name="devices--groups"></a>Dispositivos e Grupos
+### <a name="devices"></a>Dispositivos
 [Conheça os dispositivos que gere através do inventário e dos relatórios](/intune-azure/manage-devices/what-is).
-### <a name="manage-users"></a>Gerir utilizadores
-[Saiba mais sobre os utilizadores dos dispositivos que gere](/intune-azure/manage-users/what-is).
+### <a name="manage-users-and-groups"></a>Gerir utilizadores e grupos
+[Saiba mais sobre os utilizadores de dispositivos que gere e ordene recursos em grupos](/intune-azure/manage-users/what-is).
 ### <a name="manage-apps"></a>Gerir aplicações
 [Como publicar, gerir, configurar e proteger aplicações](/intune-azure/manage-apps/what-is-app-management).
-### <a name="configure-devices"></a>Configurar dispositivos
+### <a name="device-configuration"></a>Configuração do dispositivo
 [Compreenda os perfis que pode utilizar para configurar definições e funcionalidades nos dispositivos que gere](/intune-azure/configure-devices/what-are-device-profiles).
-### <a name="set-device-compliance"></a>Definir conformidade do dispositivo
+### <a name="device-compliance"></a>Conformidade do dispositivo
 [Defina um nível de conformidade para os seus dispositivos e, em seguida, comunique caso existam dispositivos que não sejam compatíveis](/intune-azure/set-device-compliance/what-is-device-compliance).
 ### <a name="conditional-access"></a>Acesso condicional
 [Restrinja o acesso aos serviços Exchange consoante as condições que especificar](/intune-azure/conditional-access/what-is-conditional-access).
-### <a name="access-control"></a>Controlo de acesso
+### <a name="intune-roles"></a>Funções do Intune
 [Controle quem pode realizar várias ações do Intune e a quem se aplicam essas ações](/intune-azure/access-control/role-based-access-control). Pode utilizar as funções incorporadas que abrangem alguns cenários comuns do Intune ou pode criar as suas próprias funções.
 
 

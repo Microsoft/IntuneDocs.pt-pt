@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,9 +28,9 @@ ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 Os planos de suporte do Intune podem ser vantajosos para identificar e resolver problemas relacionados com o Intune mais eficazmente, bem como para melhorar a experiência geral de utilizador final do Intune. Eis algumas questões a ter em consideração quando desenvolver o seu plano de suporte do Intune:
 
--   Que equipas serão responsáveis por fornecer suporte do Intune?
+-   Que equipas serão responsáveis por fornecer o suporte do Intune?
 
--   Se a sua organização de suporte tiver múltiplas camadas (por exemplo, camada 1, 2 e 3), quais são as responsabilidades em termos de suporte do Intune de cada camada?
+-   Se a sua organização de suporte tiver múltiplas camadas (por exemplo, as camadas 1 a 3), quais são as responsabilidades em termos de suporte do Intune para cada camada?
 
 -   Que processo será utilizado para fornecer suporte do Intune?
 
@@ -41,7 +42,7 @@ Vamos então rever cada área de forma mais detalhada.
 
 ## <a name="which-teams-are-responsible-for-providing-support"></a>Que equipas são responsáveis por fornecer suporte?
 
-As organizações podem ter camadas/níveis diferentes de suporte (de 1 a 3). Por exemplo, as camadas 1 e 2 poderão fazer parte da equipa de suporte e a camada 3 poderá incluir os membros da equipa de MDM responsáveis pela implementação do Intune.
+As organizações podem ter camadas/níveis diferentes de suporte (de&1; a&3;). Por exemplo, as camadas 1 e 2 poderão fazer parte da equipa de suporte e a camada 3 poderá incluir os membros da equipa de MDM responsáveis pela implementação do Intune.
 
 ## <a name="what-is-the-support-process"></a>Qual é o processo de suporte?
 
@@ -95,9 +96,4 @@ O envolvimento do suporte técnico/suporte de TI nas fases iniciais do planeamen
 ## <a name="next-section"></a>Secção Seguinte
 
 A secção seguinte fornece orientações relativas à [estruturação do Intune](section-7-create-an-intune-design.md).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

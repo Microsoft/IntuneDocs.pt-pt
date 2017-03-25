@@ -1,12 +1,12 @@
 ---
-title: "Controlo de acesso baseado em funções (RBAC) para o Microsoft Intune"
+title: "Funções do Intune (RBAC) para o Microsoft Intune"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como o RBAC lhe permite controlar quem pode realizar ações e fazer alterações."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) para o Microsoft Intune
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Funções do Intune (RBAC) para o Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -68,7 +68,7 @@ Contrata um administrador de TI novo que vai ser responsável pela implementaç�
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Controlo de acesso**.
+3. No painel **Intune**, escolha **Funções do Intune**.
 ![Carga de trabalho Controlo de acesso](./media/axxess-control.png)
 1. No painel **Funções** da carga de trabalho **Controlo de acesso**, escolha **Adicionar personalizado**.
 2. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
