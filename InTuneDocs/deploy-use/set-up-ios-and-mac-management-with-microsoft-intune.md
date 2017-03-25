@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -45,15 +45,15 @@ O Intune permite a gestão de dispositivos móveis (MDM), como iPads, iPhones e 
     > Terá de renovar (e não substituir) este certificado de APNs todos os anos. Utilize o mesmo ID Apple para iniciar sessão no Portal do Certificado Push da Apple para renovar o certificado e, em seguida, utilize as mesmas instruções neste tópico para transferir o certificado e carregue-o para o Intune.
 
 4.  **Adicionar o certificado APNs ao Intune**<br>
-    Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Admin** &gt; **Mobile Device Management** &gt; **iOS and Mac OSX** &gt; **Upload an APNs Certificate** e selecione** Upload the APNs certificate**. Aceda ao ficheiro de certificado (.pem), selecione **Abrir** e, em seguida, introduza o seu **ID Apple**. Com o certificado APNs, o Intune pode inscrever e gerir dispositivos iOS ao enviar políticas para dispositivos móveis inscritos.
+    Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Admin** &gt; **Mobile Device Management** &gt; **iOS and Mac OSX** &gt; **Upload an APNs Certificate** e selecione**Upload the APNs certificate**. Aceda ao ficheiro de certificado (.pem), selecione **Abrir** e, em seguida, introduza o seu **ID Apple**. Com o certificado APNs, o Intune pode inscrever e gerir dispositivos iOS ao enviar políticas para dispositivos móveis inscritos.
 
 5.  **Indique aos utilizadores como devem inscrever os respetivos dispositivos para poderem aceder aos recursos da empresa.**
 
-    Para obter instruções sobre a inscrição do utilizador final, veja [Inscrever o dispositivo iOS no Intune](../enduser/enroll-your-device-in-intune-ios.md) e [Inscrever o dispositivo macOS no Intune](../enduser/enroll-your-device-in-intune-macos.md). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
+    Para obter instruções sobre a inscrição do utilizador final, veja [Inscrever o dispositivo iOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) e [Inscrever o dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
 
     Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
     - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [Orientações para o utilizador final para dispositivos iOS e Mac](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [Orientações para o utilizador final para dispositivos iOS e Mac](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Se a sua empresa ou organização comprar dispositivos iOS para os utilizadores, esses dispositivos também podem ser inscritos para gestão como [dispositivos iOS propriedade da empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 

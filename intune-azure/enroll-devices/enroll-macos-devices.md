@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 63ac5ecf6fbe9ae66c879466c7785b051dfb7a61
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -42,17 +42,18 @@ Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os segui
 
 ## <a name="set-up-macos-enrollment"></a>Configurar a inscrição de macOS
 
-Por predefinição, o Intune permite a inscrição de dispositivos macOS. 
+Por predefinição, o Intune permite a inscrição de dispositivos macOS.
 
-Para impedir a inscrição de dispositivos macOS, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+Para impedir a inscrição de dispositivos macOS, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 Para definir o máximo de dispositivos que um utilizador pode inscrever, veja [Set device limit restrictions (Definir restrições de limite de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indicar aos utilizadores como devem inscrever os dispositivos para acederem aos recursos da empresa
 
-Terá de indicar aos utilizadores para acederem ao [site do Portal da Empresa](http://portal.manage.microsoft.com) e seguirem as instruções para inscrever os seus dispositivos. Também poderá enviar-lhes uma ligação para os passos de inscrição online: [Inscrever o dispositivo macOS no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). 
+Terá de indicar aos utilizadores para acederem ao [site do Portal da Empresa](http://portal.manage.microsoft.com) e seguirem as instruções para inscrever os seus dispositivos. Também poderá enviar-lhes uma ligação para os passos de inscrição online: [Inscrever o dispositivo macOS no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos).
 
 Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
 
-- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
 - [Utilizar o seu dispositivo iOS ou macOS com o Intune](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
+

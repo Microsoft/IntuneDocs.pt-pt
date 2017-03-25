@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -38,11 +38,11 @@ Por predefinição, é permitido inscrever dispositivos Android no Intune. Para 
 
 3.  **Indique aos utilizadores como devem inscrever os respetivos dispositivos para poderem aceder aos recursos da empresa.**
 
-    Para obter instruções de inscrição do utilizador final, veja [Inscrever o dispositivo Android no Intune](../enduser/enroll-your-device-in-intune-android.md). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
+    Para obter instruções de inscrição do utilizador final, veja [Inscrever o dispositivo Android no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). O processo de inscrição informa os utilizadores sobre o que podem esperar e o que os administradores de TI podem e não podem ver nos respetivos dispositivos.
 
     Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
   - [Recursos sobre a experiência do utilizador final com o Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-  - [Orientações para o utilizador final sobre os dispositivos Android](../enduser/using-your-android-device-with-intune.md)
+  - [Orientações para o utilizador final sobre os dispositivos Android](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Devido ao facto de a Google Play Store não estar disponível na China, os dispositivos Android têm de obter o Portal da Empresa a partir das lojas de aplicações chinesas. A aplicação Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)

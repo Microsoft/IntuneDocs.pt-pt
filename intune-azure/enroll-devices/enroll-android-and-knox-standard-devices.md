@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b7188dd8163334429396e7b7c8687810a6e63bb2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -31,13 +31,13 @@ O Intune permite-lhe gerir dispositivos Android, incluindo dispositivos Samsung 
 
 ## <a name="prerequisite"></a>Pré-requisito
 
-Tem de definir a autoridade de MDM **Microsoft Intune** para se preparar para gerir dispositivos móveis. Veja [Set the MDM authority (Definir a autoridade de MDM)](set-mdm-authority.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para gestão de dispositivos móveis, pelo que é provável que já o tenha feito. 
+Tem de definir a autoridade de MDM **Microsoft Intune** para se preparar para gerir dispositivos móveis. Veja [Set the MDM authority (Definir a autoridade de MDM)](set-mdm-authority.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para gestão de dispositivos móveis, pelo que é provável que já o tenha feito.
 
 ## <a name="set-up-android-enrollment"></a>Configurar inscrição do Android
 
-Por predefinição, o Intune permite a inscrição de dispositivos Android e Samsung Knox Standard. 
+Por predefinição, o Intune permite a inscrição de dispositivos Android e Samsung Knox Standard.
 
-Para impedir a inscrição de dispositivos Android ou apenas de dispositivos Android pessoais, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+Para impedir a inscrição de dispositivos Android ou apenas de dispositivos Android pessoais, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 Para definir o máximo de dispositivos que um utilizador pode inscrever, veja [Set device limit restrictions (Definir restrições de limite de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
 
@@ -45,9 +45,10 @@ Para definir o máximo de dispositivos que um utilizador pode inscrever, veja [S
 
 Terá de indicar aos utilizadores finais para acederem ao Google Play para transferir a aplicação Portal da Empresa do Intune e, em seguida, para abrirem a aplicação e seguirem as instruções para inscrever os seus dispositivos. A aplicação guia os utilizadores ao longo do processo de inscrição ao explicar aquilo que os utilizadores podem esperar e que os administradores de TI poderão ver ou não nos seus dispositivos.
 
-Também poderá enviar-lhes uma ligação para os passos de inscrição online: [Inscrever o seu dispositivo Android no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android). 
+Também poderá enviar-lhes uma ligação para os passos de inscrição online: [Inscrever o seu dispositivo Android no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android).
 
 Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
 
-- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
 - [Utilizar o dispositivo Android com o Intune](https://docs.microsoft.com/intune/enduser/using-your-android-device-with-intune)
+
