@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/16/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
 ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -25,7 +26,6 @@ ms.openlocfilehash: ef14eba575df3c4498a5a70384c3cf59c34b86b0
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As respostas a esta série de questões irão ajudá-lo a determinar o melhor método de inscrição para os dispositivos que gere.
-
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Como irá gerir os dispositivos iOS partilhados?**
 
@@ -42,11 +42,6 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 
   - **Gestor de Inscrição de Dispositivos** – o gestor de inscrição de dispositivos (DEM) do Intune permite a um gestor ou administrador inscrever vários dispositivos móveis com uma única conta de utilizador. Estes dispositivos não podem ter afinidade do utilizador (ou seja, utilizadores dedicados) e têm de estar inscritos através da instalação e início de sessão na aplicação Portal da Empresa.
 
-  > [!div class="button"]
-  [< Anterior](choose-how-to-enroll-devices3.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+> [!div class="button"]
+[< Anterior](choose-how-to-enroll-devices3.md)
 

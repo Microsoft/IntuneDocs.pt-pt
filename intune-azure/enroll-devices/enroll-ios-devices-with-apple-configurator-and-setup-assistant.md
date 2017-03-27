@@ -23,7 +23,7 @@ ms.lasthandoff: 02/18/2017
 
 ---
 
-# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>Inscrever dispositivos iOS com o Apple Configurator e o Assistente de configuração 
+# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>Inscrever dispositivos iOS com o Apple Configurator e o Assistente de configuração
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -102,50 +102,39 @@ Depois de criar o perfil e atribuir números de série, terá de exportar o perf
 3. No painel do perfil, selecione **Exportar Perfil**.
 
 4. Copie o URL do perfil para o [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), com o dispositivo iOS ligado. Irá carregá-lo no Apple Configurator mais tarde para definir o perfil do Intune utilizado pelos dispositivos iOS.
-
   Para suportar o Apple Configurator 2, o URL do Perfil 2.0 tem de ser editado. Para tal, substitua este código:
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
     Por este código:
-
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-
-   No procedimento seguinte, irá carregar o URL deste perfil para o serviço DEP da Apple com o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
+No procedimento seguinte, irá carregar o URL deste perfil para o serviço DEP da Apple com o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
 5. Carregue o URL deste perfil para o serviço DEP da Apple com o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
+ 1.  Num computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e selecione **Preferências**.
 
+  > [!WARNING]
+  > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando liga o dispositivo.
 
-    1.  Num computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e selecione **Preferências**.
+  2. No painel **preferências**, selecione **Servidores** e escolha o símbolo de adição (+) para iniciar o assistente do Servidor MDM. Selecione **Seguinte**.
 
-         > [!WARNING]
-         > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando liga o dispositivo.
+  3. Introduza o **Nome** e o **URL de inscrição** para o servidor MDM do Passo n.º 6, em Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Seguinte**.  
 
-    2. No painel **preferências**, selecione **Servidores** e escolha o símbolo de adição (+) para iniciar o assistente do Servidor MDM. Selecione **Seguinte**.
+  Pode ignorar o aviso "URL do servidor não verificado" em segurança. Para continuar, selecione **Seguinte** até que o assistente esteja concluído.
 
-    3. Introduza o **Nome** e o **URL de inscrição** para o servidor MDM do Passo n.º 6, em Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Seguinte**.  
+  4.  Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
 
-       Pode ignorar o aviso "URL do servidor não verificado" em segurança. Para continuar, selecione **Seguinte** até que o assistente esteja concluído.
+  > [!WARNING]
+  > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando inicia o Assistente de Configuração.
 
-    4.  Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
-
-        > [!WARNING]
-        > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando inicia o Assistente de Configuração.
-
-    5.  Selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e selecione **Seguinte**.
-
-    6. No painel **Inscrever no Servidor MDM**, selecione o nome do servidor que criou e escolha **Seguinte**.
-
-    7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Seguinte**.
-
-    8. No painel **Criar uma Organização**, escolha a **Organização** ou crie uma nova e escolha **Seguinte**.
-
-    9. No painel **Configurar Assistente de Configuração iOS**, escolha os passos a serem apresentados ao utilizador e, em seguida, escolha **Preparar**. Se lhe for pedido, autentique para atualizar as definições de fidedignidade.  
-
-    10. Quando concluir a preparação do dispositivo iOS, desligue o cabo USB.  
-
+  5.  Selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e selecione **Seguinte**.
+  6. No painel **Inscrever no Servidor MDM**, selecione o nome do servidor que criou e escolha **Seguinte**.
+  7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Seguinte**.
+  8. No painel **Criar uma Organização**, escolha a **Organização** ou crie uma nova e escolha **Seguinte**.
+  9. No painel **Configurar Assistente de Configuração iOS**, escolha os passos a serem apresentados ao utilizador e, em seguida, escolha **Preparar**. Se lhe for pedido, autentique para atualizar as definições de fidedignidade.  
+  10. Quando concluir a preparação do dispositivo iOS, desligue o cabo USB.  
 6.  **Distribua os dispositivos**.
     Os dispositivos estão agora prontos para a inscrição na empresa. Desligue os dispositivos e distribua-os pelos utilizadores. Quando os utilizadores ligarem os seus dispositivos, o Assistente de Configuração será iniciado.
 
