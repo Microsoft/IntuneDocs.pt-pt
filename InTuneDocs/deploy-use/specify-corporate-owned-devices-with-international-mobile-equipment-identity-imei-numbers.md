@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -30,7 +30,7 @@ O Microsoft Intune permite aos administradores importar números de identidade i
 
 1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), selecione **Groups**&gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)** e, em seguida, clique em **Add devices…**. Pode adicionar dispositivos de duas formas:
 
-    -   **Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
+    -   **Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv. O campo de detalhes está limitado a 128 carateres.
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ O Microsoft Intune permite aos administradores importar números de identidade i
         Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
         ```
-        AABBBBBBCCCCCCD,PO 1234
-        AABBBBBBCCCCCCE,PO 1234
+        01 234567 890123,device details
+        02 234567 890123,device details
         ```
 
     -   **Adicionar manualmente os detalhes de dispositivos** – introduza o número IMEI e os detalhes de um máximo de 15 dispositivos.
@@ -58,4 +58,6 @@ Quando um dispositivo com um número IMEI é inscrito no Intune, normalmente, qu
 
 >[!NOTE]
 > Quando a sua organização for migrada para o novo portal do Azure num futuro próximo, verá uma alteração desta funcionalidade. Na consola de administrador do Intune existente, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes por identificadores de hardware individuais. No novo portal do Azure, poderá substituir automaticamente os detalhes de todos os identificadores de hardware ou ignorar os novos detalhes de identificadores existentes.
+
+Para obter especificações detalhadas sobre os Identificadores Internacionais do Equipamento Móvel, veja [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

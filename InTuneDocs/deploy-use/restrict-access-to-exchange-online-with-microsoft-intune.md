@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Com o Microsoft Intune, pode configurar o acesso condicional para o Exchange Online ou para o Exchange Online Dedicado. Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao e-mail, ao Office&365; e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Com o Microsoft Intune, pode configurar o acesso condicional para o Exchange Online ou para o Exchange Online Dedicado. Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao e-mail, ao Office 365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!NOTE]
 >Se tiver um ambiente do Exchange Online Dedicado e precisar de saber se está na configuração nova ou legada, contacte o seu gestor de conta.
@@ -37,7 +38,7 @@ Para configurar o acesso condicional, tem de:
 
 -   Ter uma **subscrição do Office 365 que inclua o Exchange Online (como o plano E3)** e os utilizadores têm de estar licenciados para o Exchange Online.
 
-- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium ** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Pondere configurar o **Conector de serviços do Intune** opcional, que liga o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Exchange Online e ajuda-o a gerir informações de dispositivos através da consola do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Não tem de utilizar o conector para utilizar políticas de conformidade ou políticas de acesso condicional, mas é necessário executar relatórios que ajudam a avaliar o impacto do acesso condicional.
     -  Saiba mais sobre o [conector de serviços do Intune](intune-service-to-service-exchange-connector.md).
@@ -59,7 +60,7 @@ Quando configurar políticas de acesso condicional e direcioná-las para um util
 
 ### <a name="when-the-device-is-not-compliant"></a>Quando o dispositivo não é compatível
 
-Se uma política de acesso condicional não for cumprida, o dispositivo é imediatamente colocado em quarentena e o utilizador recebe uma mensagem de e-mail onde verá uma das seguintes notificações de quarentena quando inicia sessão:
+Se uma política de acesso condicional não for cumprida, o dispositivo será imediatamente colocado em quarentena e o utilizador receberá um e-mail onde verá uma das seguintes notificações de quarentena quando inicia sessão:
 
 - Se o dispositivo não estiver inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], ou não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa, inscrever o dispositivo e ativar o e-mail. Este processo também associa o ID do Exchange ActiveSync do dispositivo ao registo no Azure Active Directory.
 
@@ -275,9 +276,4 @@ No dashboard do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], escolha 
 - [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Proteger o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

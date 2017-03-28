@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -139,7 +140,7 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
     |**Exigir a conformidade do dispositivo com a política empresarial para acesso**|Esta definição apenas permite que a aplicação seja utilizada quando o dispositivo não tem jailbreak nem root.|
     |**Verificar novamente os requisitos de acesso após (minutos)**|No campo **Tempo limite**, especifique o período de tempo antes de os requisitos de acesso da aplicação serem novamente verificados após a aplicação ser aberta.|
     |**Período de tolerância offline**|Se o dispositivo estiver offline, especifique o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados.|
-    |**Encriptar dados da aplicação**|Esta definição especifica que todos os dados associados a esta aplicação serão encriptados. Isto inclui os dados armazenados externamente, como em cartões SD.<br /><br />**Encriptação para iOS**<br /><br />Para aplicações associadas à política de gestão de aplicações móveis do Intune, os dados são encriptados em descanso através da encriptação ao nível do dispositivo fornecida pelo sistema operativo. Isto é ativado através da política de PIN de dispositivo definida pelo administrador de TI. Quando for necessário um PIN, os dados serão encriptados de acordo com as definições na política de gestão de aplicações móveis. Conforme indicado na documentação da Apple, [os módulos utilizados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Encriptação para Android**<br /><br />Para as aplicações associadas a uma política de gestão de aplicações móveis do Intune, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros.  O conteúdo no armazenamento do dispositivo será sempre encriptado. O método de encriptação não tem certificação FIPS 140-2.|
+    |**Encriptar dados da aplicação**|Esta definição especifica que todos os dados associados a esta aplicação serão encriptados. Isto inclui os dados armazenados externamente, como em cartões SD.<br /><br />**Encriptação para iOS**<br /><br />Para aplicações associadas à política de gestão de aplicações móveis do Intune, os dados são encriptados em descanso através da encriptação ao nível do dispositivo fornecida pelo sistema operativo. Isto é ativado através da política de PIN de dispositivo definida pelo administrador de TI. Quando for necessário um PIN, os dados serão encriptados de acordo com as definições na política de gestão de aplicações móveis. Conforme indicado na documentação da Apple, [os módulos utilizados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Encriptação para Android**<br /><br />Para as aplicações associadas a uma política de gestão de aplicações móveis do Intune, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros.  O conteúdo no armazenamento do dispositivo será sempre encriptado. O método de encriptação tem conformidade com FIPS 140-2 apenas para dispositivos Samsung KNOX.|
     |**Bloquear captura de ecrã** (apenas dispositivos Android)|Esta definição especifica que as funções de captura de ecrã do dispositivo estão bloqueadas durante a utilização desta aplicação.|
 
 4. Quando terminar, selecione **Guardar Política**.
@@ -195,9 +196,4 @@ Nos casos em que o dispositivo ou o utilizador recebe duas políticas em conflit
 -   Se uma política já tiver sido implementada no dispositivo, as definições da política existente não são substituídas.
 
 -   Se ainda não tiver sido implementada uma política no dispositivo e forem implementadas duas definições em conflito, a predefinição incorporada no dispositivo é utilizada.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

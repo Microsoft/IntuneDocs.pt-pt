@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 
     ![Ecrã Configuração de acesso à empresa](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> Os triângulos amarelos não significam que já tem um erro. Esses ícones indicam que ainda existem passos a concluir no processo de inscrição.
+    > [!NOTE]
+    > Os triângulos amarelos não significam que já tem um erro. Esses ícones indicam que ainda existem passos a concluir no processo de inscrição.
 
-7.  No ecrã **Porquê inscrever o seu dispositivo?**, leia sobre o que pode fazer quando inscrever o seu dispositivo e, em seguida, toque em **CONTINUAR**.
+7. No ecrã **Porquê inscrever o seu dispositivo?**, leia sobre o que pode fazer quando inscrever o seu dispositivo e, em seguida, toque em **CONTINUAR**.
 
     ![Ecrã Porquê inscrever o seu dispositivo](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acede aos seus contactos.** A Google controla o texto da mensagem e a Microsoft não a pode alterar. Ao permitir o acesso, só permite à aplicação Portal da Empresa criar, utilizar e gerir a sua conta profissional.
+        Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca acede aos seus contactos.** A Google controla o texto da mensagem e a Microsoft não a pode alterar. Ao permitir o acesso, só permite à aplicação Portal da Empresa criar, utilizar e gerir a sua conta profissional.
 
-    Se negar o acesso, a mensagem aparecerá quando iniciar sessão novamente no Portal da Empresa, mas pode desativar futuras mensagens ao tocar na caixa **Não voltar a perguntar**. Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telemóvel** e ative a permissão.
+        Se negar o acesso, a mensagem aparecerá quando iniciar sessão novamente no Portal da Empresa, mas pode desativar futuras mensagens ao tocar na caixa **Não voltar a perguntar**. Se, posteriormente, decidir permitir o acesso, aceda a **Definições** &gt; **Aplicações** &gt; **Portal da Empresa** &gt; **Permissões** &gt; **Telemóvel** e ative a permissão.
 
 11.  No ecrã **Ativar administrador de dispositivo**, toque em **Ativar**.
 
     ![Ecrã Ativar administrador de dispositivo](./media/and-enroll-5-activate.png)
+
+    A função de administrador de dispositivos é uma função que o Portal da Empresa precisa para gerir o seu dispositivo. Permite ao administrador ver algumas coisas como, por exemplo, quantas vezes tentou desbloquear o ecrã e tomar algumas ações.
+
+    O fundamental a recordar é que estas ações são executadas em nome da segurança. O administrador de TI não está a tentar violar a sua privacidade ou a apagar as suas informações sem motivo, mas quer confirmar se os dados da empresa estão seguros.
+
+    A Microsoft não controla esta mensagem e compreendemos que a respetiva formulação pode parecer um pouco drástica. Não há uma forma para o Portal da Empresa apresentar apenas as restrições e o acesso que são relevantes para a sua organização. Todos eles são concedidos em simultâneo neste ecrã. Contacte o seu administrador de TI para obter mais informações, através das informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com), se tiver questões específicas para a utilização da sua organização individual.
 
 12.  Siga as indicações para introduzir um PIN ou palavra-passe. Se já configurou um PIN ou uma palavra-passe neste dispositivo, não verá este ecrã nem terá de introduzir um novo PIN ou palavra-passe.
 
@@ -108,21 +114,21 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 
     Este ecrã mostra que o dispositivo está a ser inscrito.
 
-      ![Ecrã Inscrever dispositivo](./media/and-enroll-8-device-enrolling.png)
+    ![Ecrã Inscrever dispositivo](./media/and-enroll-8-device-enrolling.png)
 
 14. Quando o ecrã **Configuração de Acesso à Empresa** aparece, toque em **CONTINUAR**. Se uma mensagem indicar que o seu dispositivo não está em conformidade, siga as instruções para corrigir o problema e, em seguida, toque em **CONTINUAR**.
 
-  ![O dispositivo não está conforme, mas está inscrito](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![O dispositivo não está conforme, mas está inscrito](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Aparecem problemas de conformidade do dispositivo que precisam de resolução](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Aparecem problemas de conformidade do dispositivo que precisam de resolução](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-Pode encontrar mais informações sobre os problemas ao tocar nos mesmos. 
+    Pode encontrar mais informações sobre os problemas ao tocar nos mesmos.
 
-  ![Problemas de conformidade do dispositivo expandidos](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problemas de conformidade do dispositivo expandidos](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Ecrã Configuração de acesso à empresa](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. No ecrã **Configuração de Acesso à Empresa concluída**, toque em **CONCLUÍDO**. O dispositivo está agora inscrito.
+15. No ecrã **Configuração de Acesso à Empresa concluída**, toque em **CONCLUÍDO**. O dispositivo está agora inscrito.
 
     ![Ecrã Configuração de acesso à empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 132844bb1d1119390b7f55cca58cecbd5b8ee90a
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 990f3ff6528b537d1ea62c82440f1e46bcde8c95
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -40,7 +40,7 @@ Este tipo de política pode ser útil quando as políticas de VPN do Intune padr
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Configurar dispositivos**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
 4. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 5. No painel de perfis, escolha **Criar Perfil**.
 6. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de VPN.

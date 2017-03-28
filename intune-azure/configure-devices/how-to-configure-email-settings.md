@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
-ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 786028412ca46d07e5180f469d07f9103f956033
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -44,7 +44,7 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Configurar dispositivos**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 3. No painel de perfis, escolha **Criar Perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e **Descrição** para o perfil de e-mail.

@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b7ab3041a38bd394195a67690d245d1ad9fd0566
-ms.openlocfilehash: fd54a1c94c9a4a279710d6be9f7cfe3b48468cb7
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: c3c5126b1c9437c2689b162c28e1a60e5dc4b108
+ms.openlocfilehash: ad39f4b2cc4a51346fcf226dc07208af336d3581
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,14 +41,15 @@ Os conectores protegem os recursos da empresa ao criar um canal de comunicação
 
 Quando um dispositivo é considerado infetado pela solução de Defesa Contra Ameaças para Dispositivos Móveis:
 
-![](http://i.imgur.com/kF8tI42.png)
+![Dispositivo considerado infetado pela Defesa Contra Ameaças para Dispositivos Móveis](../media/mtp/MTD-image-1.png)
 
 O acesso será concedido quando o dispositivo for remediado:
 
-![](http://i.imgur.com/zG4ZrzX.png)
+![Acesso à Defesa Contra Ameaças para Dispositivos Móveis concedido](../media/mtp/MTD-image-2.png)
 
 ## <a name="mobile-threat-defense-partners"></a>Parceiros de Defesa Contra Ameaças a Dispositivos Móveis
 
 Saiba como pode proteger o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos com o:
 
 - [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)
+- [Skycure](https://docs.microsoft.com/intune/deploy-use/skycure-mobile-threat-defense-connector)

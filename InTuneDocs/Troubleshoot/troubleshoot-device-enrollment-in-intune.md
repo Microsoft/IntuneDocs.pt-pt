@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Antes de iniciar a resolução de problemas, certifique-se de que configurou o I
 
 -    [Preparar a inscrição de dispositivos no Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -    [Configurar a gestão de dispositivos iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Configurar a gestão do Windows Phone e Windows 10 Mobile com o Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Configurar a gestão de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Configurar a gestão de dispositivos Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) –não são precisos passos adicionais
+-    [Configurar a gestão de dispositivos Android for Work](/intune/deploy-use/set-up-android-for-work)
 
 Os utilizadores de dispositivos geridos podem recolher registos de inscrição e de diagnóstico para que possa analisá-los. Pode encontrar instruções de utilizador para recolher os registos em:
 
@@ -117,7 +117,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
     1.  Desative o DirSync no servidor local.
 
-    2.  Elimine o utilizador sem correspondência da lista de utilizadores **Portal de Contas do Intune** .
+    2.  Elimine o utilizador sem correspondência da lista de utilizadores **Portal de Contas do Intune**.
 
     3.  Aguarde cerca de uma hora para permitir que o serviço do Azure remova os dados incorretos.
 
@@ -149,7 +149,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 **Problema:** quando adiciona um segundo domínio verificado ao seu AD FS, os utilizadores com o sufixo de nome principal de utilizador (UPN) do segundo domínio podem não conseguir iniciar sessão nos portais ou inscrever dispositivos.
 
 
-**Resolução:** os clientes do Microsoft Office 365 que utilizam o início de sessão único (SSO) através do AD FS 2.0 e têm vários domínios de nível superior para sufixos UPN dos utilizadores dentro da respetiva empresa (por exemplo, @contoso.com ou @fabrikam.com)) têm de implementar uma instância separada do Serviço de Federação AD FS 2.0 para cada sufixo. Agora, existe um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Consulte [este blogue](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
+**Resolução:** os clientes do Microsoft Office 365 que utilizam o início de sessão único (SSO) através do AD FS 2.0 e têm vários domínios de nível superior para sufixos UPN dos utilizadores dentro da organização (por exemplo, @contoso.com ou @fabrikam.com) têm de implementar uma instância separada do Serviço de Federação AD FS 2.0 para cada sufixo. Agora, existe um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Consulte [este blogue](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
 
 ## <a name="android-issues"></a>Problemas do Android
@@ -279,6 +279,18 @@ Para resolver o problema, os utilizadores têm de selecionar o botão **Configur
   ![Ecrã Configuração de Acesso à Empresa](./media/ios_cp_app_company_access_setup.png)
 
 Após a inscrição, os dispositivos regressam a um bom estado e recuperam o acesso aos recursos da empresa.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>Confirmar se WS-Trust 1.3 está ativado
+**Problema**: os dispositivos iOS do Programa de Inscrição de Dispositivos (DEP) não podem ser inscritos
+
+Os dispositivos do Programa de Inscrição de Dispositivos com afinidade de utilizador requerem que o ponto final de Nome de Utilizador/Misto WS-Trust 1.3 seja ativado para solicitar tokens de utilizadores. O Active Directory ativa este ponto final por predefinição. Obtém uma lista dos pontos finais ativados, ao utilizar o cmdlet Get-AdfsEndpoint do PowerShell e ao procurar o ponto final de confiança/13/Nome de Utilizador Misto. Por exemplo:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Para obter mais informações, veja [a documentação do Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+Para obter mais informações, veja o artigo [Práticas recomendadas para proteger os Serviços de Federação do Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se precisar de assistência adicional para determinar se o Nome de Utilizador/Misto WS-Trust 1.3 está ativado no seu fornecedor de federação de identidades, entre em contacto com o Suporte da Microsoft se utilizar o ADFS ou o fornecedor de identidades de terceiros.
+
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
 **Problema:** um utilizador recebe o erro **Falha na instalação do perfil** num dispositivo iOS.

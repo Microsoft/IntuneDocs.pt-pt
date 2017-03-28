@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/08/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
-ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -26,14 +26,24 @@ ms.lasthandoff: 03/09/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Pode criar uma lista de números de Identidade Internacional de Equipamento Móvel (IMEI) para identificar os seus dispositivos da empresa. Estes dispositivos podem ou não ser inscritos e têm um estado de “Inscrito” ou “Não contactado”. “Não contactado” significa que o dispositivo nunca faz o registo com o serviço do Intune.
+Como administrador de TI, pode criar e importar um ficheiro de valores separados por vírgulas (.csv) que liste os números de Identidade Internacional do Equipamento Móvel (IMEI) para identificar os dispositivos da empresa. Cada número IMEI pode ter detalhes especificados na lista para fins administrativos.
 
-Para criar a lista, crie uma lista de valores de duas colunas, separados por vírgulas (.csv) sem cabeçalho. Adicione o identificador IMEI na coluna da esquerda e os detalhes na coluna da direita. O máximo atual para a lista é de 500 linhas.
+## <a name="create-a-csv-file"></a>Criar um ficheiro .csv
+Para criar a lista, crie uma lista de valores de duas colunas, separados por vírgulas (.csv) sem cabeçalho. Adicione o identificador IMEI na coluna da esquerda e os detalhes na coluna da direita. Os detalhes estão limitados a 128 carateres. O limite atual é de 500 linhas por ficheiro .csv.
 
-Num editor de texto, a lista .csv tem um aspeto semelhante ao seguinte:
+**Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
 
-01 234567 890123,detalhes do dispositivo</br>
-02 234567 890123,detalhes do dispositivo
+|||
+|-|-|
+|&lt;IMEI n.º 1&gt;|&lt;Detalhes do Dispositivo n.º 1&gt;|
+|&lt;IMEI n.º 2&gt;|&lt;Detalhes do Dispositivo n.º 2&gt;|
+
+    This .csv file when viewed in a text editor appears as:
+
+    ```
+    01 234567 890123,device details
+    02 234567 890123,device details
+    ```
 
 **Para adicionar uma lista .csv de identificadores empresariais**
 
@@ -48,11 +58,15 @@ Num editor de texto, a lista .csv tem um aspeto semelhante ao seguinte:
 > [!IMPORTANT]
 > Alguns dispositivos Android têm múltiplos números IMEI. O Intune fará o inventário de um número IMEI por dispositivo. Se importar um número IMEI inventariado pelo Intune, o dispositivo será classificado como um dispositivo pessoal em vez de um dispositivo da empresa. Se importar múltiplos números IMEI de um dispositivo, os números não inventariados irão apresentar o estado de inscrição **Desconhecido**.
 
-**Para eliminar uma lista .csv de identificadores empresariais**
+Depois de importados, estes dispositivos podem ou não ser inscritos e podem ter um estado de **Inscrito** ou **Não contactado**. **Não contactado** significa que o dispositivo nunca comunicou com o serviço do Intune.
+
+## <a name="delete-a-csv-list"></a>Eliminar uma lista .csv
 
 1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
 2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Identificadores de Dispositivo da Empresa**.
 
 3. Escolha **Eliminar**.
+
+Para obter especificações detalhadas sobre os Identificadores Internacionais do Equipamento Móvel, veja [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

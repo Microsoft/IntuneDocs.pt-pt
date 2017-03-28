@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Se um dispositivo iOS for perdido ou tiver sido roubado, poderá ativar o modo p
 2.    No painel **Modo perdido**, ative o modo perdido, introduza a mensagem que será apresentada e, opcionalmente, um número de telefone de contacto.
 3.    Clique em **OK**.
 Quando ativar o modo perdido, bloqueia qualquer utilização do dispositivo. O utilizador final não pode aceder ao dispositivo até desativar o modo perdido. Quando o modo perdido está ativado, pode utilizar a ação **Localizar dispositivo** para saber onde este se encontra.
+Para utilizar o modo perdido, o dispositivo tem de ser um dispositivo iOS pertencente à empresa, inscrito através do DEP, que esteja no modo supervisionado.
 
 ### <a name="locate-device"></a>**Localizar dispositivo**
-Utilize esta ação remota para apresentar a localização de um dispositivo iOS perdido ou roubado num mapa. O dispositivo tem de ser um dispositivo iOS pertencente à empresa que esteja num modo supervisionado. Para utilizar esta ação, o dispositivo tem de ter o modo perdido ativado.
+Utilize esta ação remota para apresentar a localização de um dispositivo iOS perdido ou roubado num mapa. O dispositivo tem de ser um dispositivo iOS pertencente à empresa, inscrito através do DEP, que esteja no modo supervisionado. Para utilizar esta ação, o dispositivo tem de ter o modo perdido ativado.
 1.    No painel de propriedades de um dispositivo iOS, escolha **Mais** > **Localizar dispositivo**.
 2.    Depois de o dispositivo ser localizado, é apresentada a sua localização no painel **Localizar dispositivo**. 
     ![Painel Localizar dispositivo](./media/locate-device.png)

@@ -5,7 +5,7 @@ description: "Pré-visualização do Azure no Intune: ative a gestão de disposi
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Utilize um dos seguintes métodos para configurar a inscrição para dispositivo
  -  Tem de ter o Azure Active Directory Premium para utilizar este método. Caso contrário, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
  -  Se optar por não ativar a inscrição automática, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
 
-- [**Inscrição no Windows 8.1 e Windows Phone 8.1 através da configuração do CNAME**](#simplify-enrollment-by-configuring-cname)
+- [**Inscrição sem a inscrição automática do Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
  - Tem de utilizar este método para inscrever dispositivos Windows 8.1 e Windows Phone 8.1.
- - Também poderá utilizar este método se não tiver o Azure Active Directory (AD) Premium.
-
-
-## <a name="prerequisites"></a>Pré-requisitos
-
-Se alguns dos pré-requisitos seguintes ainda não estiverem na pré-visualização do Azure no Intune, terá de realizá-los na consola de administração clássica do Intune.
-
-- [Configurar um nome de domínio personalizado](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Definir a autoridade de gestão de dispositivos móveis (MDM)](set-mdm-authority.md) como o **Microsoft Intune**
-- [Configurar a aplicação Portal da Empresa](/intune-azure/manage-apps/company-portal-app.md)
-- Atribuir licenças aos utilizadores
+ - Poderá utilizar este método para os dispositivos Windows 8.1 e posterior se não pretender utilizar o Azure Active Directory (AD) Premium.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Ativar a inscrição na área de trabalho do Windows
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Ativar a inscrição do Windows sem o Azure AD Premium
 
 Pode permitir que os utilizadores instalem e inscrevam os dispositivos sem a inscrição automática do Azure AD Premium. Se criar registos de recursos CNAME DNS, os utilizadores ligam e inscrevem-se no Intune sem que seja necessário introduzir um nome de servidor.
 
@@ -79,7 +69,7 @@ Pode permitir que os utilizadores instalem e inscrevam os dispositivos sem a ins
 
     Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Também pode encaminhar os utilizadores para [What can my IT admin see on my device (O que é que o meu administrador de TI pode ver no meu dispositivo)](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-    Para obter mais informações sobre as tarefas do utilizador final, consulte [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    Para obter mais informações sobre as tarefas do utilizador final, consulte [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 Não é necessário qualquer ação adicional, a não ser que pretenda implementar o Portal da Empresa nos dispositivos.  Os passos 2 e 3 na consola de administração podem ser ignorados em segurança.
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Atalhos de teclado (apenas supervisionado)** – Permite a utilização de atalhos de teclado.
 -     **Deteção de pulso para Apple Watch emparelhado** – Quando ativada, o Apple Watch não apresenta notificações quando não estiver a ser utilizado.
 - **Pedir palavra-passe de emparelhamento para pedidos do AirPlay a enviar** – Exija uma palavra-passe de emparelhamento quando o utilizador utiliza o AirPlay para a transmissão de conteúdo para outros dispositivos da Apple.
-- **Modificação da conta (apenas supervisionado)** – Permita que o utilizador alterar as definições de conta, tais como configurações de e-mail.
+- **Modificação da conta (apenas supervisionado)** – quando está bloqueada, esta opção impede que o utilizador modifique as definições específicas do dispositivo a partir da aplicação de definições do iOS, como criar novas contas de dispositivo e alterar o nome de utilizador ou palavra-passe.
+Também se aplica às definições acessíveis a partir da aplicação de definições do iOS, tais como o Correio, Contactos, Calendário, Facebook e Twitter. Não se aplica a aplicações com definições da conta que não sejam configuráveis a partir da aplicação de definições do iOS, por exemplo, a aplicação Microsoft Outlook.
 - **Emparelhamento com Apple Watch (apenas supervisionado)** – Permita que o dispositivo se emparelhe com um Apple Watch.
 - **Modificação de Bluetooth (apenas supervisionado)** – Não permita que o utilizador final altere as definições de Bluetooth no dispositivo.
 - **Observação remota do ecrã através da aplicação Classroom (apenas supervisionado)** – Permita ou bloqueie a observação do ecrã em dispositivos remotos por parte da aplicação de sala de aulas.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Utilize a carga de trabalho **Configurar dispositivos** do Microsoft Intune para gerir as definições e as funcionalidades em todos os dispositivos geridos por si. Esta é a carga de trabalho que utilizará principalmente para criar perfis de dispositivos, que lhe permitem gerir e controlar uma série inteira de diferentes funcionalidades nos dispositivos que gerir.
+Utilize a carga de trabalho **Configuração de dispositivos** do Microsoft Intune para gerir as definições e as funcionalidades em todos os dispositivos geridos por si. Esta é a carga de trabalho que utilizará principalmente para criar perfis de dispositivos, que lhe permitem gerir e controlar uma série inteira de diferentes funcionalidades nos dispositivos que gerir.
 
 Quando abrir esta carga de trabalho, verá as seguintes opções:
 
@@ -41,8 +41,13 @@ O fluxo de trabalho para a criação de perfis de dispositivo é semelhante para
 
 Pode gerir as seguintes funcionalidades nos seus dispositivos:
 
+## <a name="device-features"></a>Funcionalidades do dispositivo
+
+As funcionalidades do dispositivo permitem-lhe controlar as funcionalidades nos dispositivos iOS e macOS como configurações de dispositivos partilhados, notificações e AirPrint.
+Para obter mais informações, veja [Como configurar definições de funcionalidades do dispositivo](how-to-configure-device-features.md) Suporta: iOS e macOS.
+
 ## <a name="device-restrictions"></a>Restrições de dispositivos
-As restrições de dispositivos permitem-lhe controlar uma grande variedade de definições e funcionalidades que gere através de um intervalo de categorias, incluindo segurança, browser, hardware e definições de partilha de dados. Por exemplo, pode criar um perfil de restrição de dispositivo para impedir que os utilizadores dos dispositivos iOS de acedam à câmara do dispositivo.
+As restrições de dispositivos permitem-lhe controlar uma grande variedade de definições nos dispositivos que gere através de uma variedade de categorias, incluindo definições de partilha de dados, segurança, browser e hardware. Por exemplo, pode criar um perfil de restrição de dispositivo para impedir que os utilizadores dos dispositivos iOS de acedam à câmara do dispositivo.
 Para obter mais informações, veja [Como configurar as definições de restrições de dispositivos](how-to-configure-device-restrictions.md). Suporta: Android, iOS, macOS, Windows 10 e Windows 10 Team.
 
 ## <a name="email"></a>E-mail
@@ -57,6 +62,10 @@ Para obter mais informações, veja [Como configurar definições de Wi-Fi](how-
 As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um perfil de ligação VPN para iniciar uma ligação com o servidor VPN. Utilize os perfis VPN para implementar definições de VPN em utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede.
 Para obter mais informações, veja [Como configurar definições de VPN](how-to-configure-vpn-settings.md).
 Suporta: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 e Windows 10.
+
+## <a name="education"></a>Educação
+Permite-lhe configurar as opções da aplicação Fazer um Teste do Windows. Quando configurar estas opções, não pode executar qualquer outra aplicação no dispositivo até o teste estar concluído.
+Para obter mais informações, veja [Como configurar definições de educação](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>Certificados
 Este tipo de perfil permite-lhe configurar certificados SCEP e PKCS fidedignos que podem ser atribuídos aos dispositivos e que servem para autenticar perfis de Wi-Fi, de VPN e de e-mail.

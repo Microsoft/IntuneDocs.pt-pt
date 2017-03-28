@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: f7680666ca466bd37711eeb363fe2c1f9d52e371
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.lasthandoff: 03/17/2017
 
 
 
@@ -35,7 +35,7 @@ Estas definições só podem ser utilizadas por dispositivos que executem Samsun
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Configurar dispositivos**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 2. No painel da lista de perfis, escolha **Criar Perfil**.
 3. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** opcional para este perfil de dispositivo.

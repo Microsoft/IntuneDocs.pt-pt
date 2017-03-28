@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6f78150b6c3821f6e9822ccfa905ac367bd359ad
-ms.openlocfilehash: 9e00e60472c8ba9f10a6071c42a53f58dcc00a08
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,17 +26,17 @@ ms.lasthandoff: 03/02/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Pode controlar o acesso dos dispositivos móveis a recursos da empresa, com base na avaliação de riscos realizada pelo Lookout, uma solução de proteção contra ameaças de dispositivos integrada no Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do serviço Lookout, incluindo:
+Pode controlar o acesso dos dispositivos móveis a recursos da empresa, com base na avaliação de riscos realizada pelo Lookout, uma solução de Defesa Contra Ameaças para Dispositivos Móveis integrada no Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do serviço Lookout, incluindo:
 - Vulnerabilidades do sistema operativo
 - Aplicações maliciosas instaladas
 - Perfis de rede maliciosos
 
 Pode configurar políticas de acesso condicional com base na avaliação de riscos do Lookout ativada através de políticas de conformidade do Intune. As definições permitem-lhe autorizar ou bloquear dispositivos não conformes com base nas ameaças detetadas.
 
-## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>Como é que o Intune e a proteção contra ameaças de dispositivos do Lookout ajudam a proteger os recursos da empresa?
+## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Como é que o Intune e o Conetor de Defesa Contra Ameaças para Dispositivos Móveis do Lookout ajudam a proteger os recursos da empresa?
 A aplicação móvel da Lookout, o **Lookout for Work**, está instalada e em execução nos dispositivos móveis. Esta aplicação captura o sistema de ficheiros, a pilha de rede e a telemetria de dispositivos e aplicações sempre que estiverem disponíveis e, em seguida, envia-os para o serviço Lookout na cloud para avaliar o risco do dispositivo relativamente a ameaças móveis. Pode alterar as classificações dos níveis de risco das ameaças na consola do Lookout para atender às suas necessidades.  
 
-A política de conformidade no Intune inclui uma regra para o Lookout Mobile Threat Protection baseada na avaliação de riscos do Lookout. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
+A política de conformidade no Intune inclui uma regra para a Defesa Contra Ameaças para Dispositivos Móveis do Lookout baseada na avaliação de riscos do Lookout. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
 
 Se o dispositivo for considerado não conforme, o acesso a recursos como o Exchange Online e o SharePoint Online poderá ser bloqueado. Os utilizadores com dispositivos bloqueados recebem os passos para resolver o problema e recuperar o acesso. As orientações são iniciadas a partir da aplicação Lookout for Work.
 
@@ -92,9 +92,9 @@ Detete ameaças à sua rede, tal como ataques Man-in-the-middle e impeça a sinc
 
 ## <a name="next-steps"></a>Passos seguintes
 Seguem-se os principais passos que tem de efetuar para implementar esta solução:
-1.    [Configurar a sua subscrição para proteção contra ameaças de dispositivos](device-threat-protection-subscription-setup.md)
-2.    [Ativar a ligação de proteção contra ameaças de dispositivos no Intune](device-threat-protection-enable.md)
-3.  [Configurar e implementar a aplicação de proteção contra ameaças de dispositivos](device-threat-protection-apps.md)
-4.    [Configurar a política de conformidade de proteção contra ameaças de dispositivos](device-threat-protection-policy.md)
-5.    [Resolver problemas de integração da proteção contra ameaças de dispositivos](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.    [Configurar a sua subscrição do Lookout](device-threat-protection-subscription-setup.md)
+2.    [Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Lookout no Intune](device-threat-protection-enable.md)
+3.  [Configurar e implementar a aplicação Defesa Contra Ameaças para Dispositivos Móveis do Lookout](device-threat-protection-apps.md)
+4.    [Configurar a política de conformidade do dispositivo do Lookout](device-threat-protection-policy.md)
+5.    [Resolver problemas com a integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 

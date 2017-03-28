@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -39,27 +39,21 @@ Pode utilizar os perfis de e-mail para configurar o cliente de e-mail nativo nos
 -    Windows 10 (para computadores), Windows 10 Mobile e posterior
 -    iOS 8.0 e posterior
 -    Samsung KNOX Standard (4.0 e posterior)
--    Android for Work
-
->[!NOTE]
->O Intune fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store e suportam ligações com o Exchange. Para ativar a conectividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos seus utilizadores e, em seguida, crie e implemente o perfil adequado. As aplicações de e-mail como o Nine Work poderão não ser gratuitas. Reveja os detalhes de licenciamento da aplicação ou contacte a empresa da aplicação para colocar as suas questões.
+-    Android for Work (as aplicações de e-mail de terceiros e a aplicação de e-mail nativa são apenas para o perfil pessoal)
 
 Além de configurar uma conta de e-mail no dispositivo, pode configurar a quantidade de e-mails a sincronizar e, dependendo do tipo de dispositivo, os tipos de conteúdo a sincronizar.
 
->[!NOTE]
->
->Se o utilizador tiver instalado um perfil de e-mail antes da configuração de um perfil pelo Intune, o resultado da implementação do perfil de e-mail do Intune depende da plataforma do dispositivo:
+Se o utilizador tiver instalado um perfil de e-mail antes da configuração de um perfil pelo Intune, o resultado da implementação do perfil de e-mail do Intune depende da plataforma do dispositivo:
 
->**iOS**: um perfil de e-mail duplicado existente é detetado com base no nome de anfitrião e no endereço de e-mail. O perfil de e-mail duplicado criado pelo utilizador bloqueia a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum, uma vez que os utilizadores do iOS criam um perfil de e-mail e depois fazem a inscrição. O portal da empresa informa o utilizador de que não é compatível devido ao respetivo perfil de e-mail configurado manualmente e indica-lhe para remover esse perfil. O utilizador deve remover o seu perfil de e-mail, para que o perfil do Intune possa ser configurado. De modo a evitar este problema, indique aos seus utilizadores para efetuarem a inscrição antes da instalação de um perfil de e-mail e permitirem que o Intune configure o perfil.
+**iOS**<br>Um perfil de e-mail duplicado existente é detetado com base no nome de anfitrião e no endereço de e-mail. O perfil de e-mail duplicado criado pelo utilizador bloqueia a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum, uma vez que os utilizadores do iOS criam um perfil de e-mail e depois fazem a inscrição. O portal da empresa informa o utilizador de que não é compatível devido ao respetivo perfil de e-mail configurado manualmente e indica-lhe para remover esse perfil. O utilizador deve remover o seu perfil de e-mail, para que o perfil do Intune possa ser configurado. De modo a evitar este problema, indique aos seus utilizadores para efetuarem a inscrição antes da instalação de um perfil de e-mail e permitirem que o Intune configure o perfil.
 
->**Windows**: um perfil de e-mail duplicado existente é detetado com base no nome de anfitrião e no endereço de e-mail. O Intune substitui o perfil de e-mail existente criado pelo utilizador.
+**Windows**<br>Um perfil de e-mail duplicado existente é detetado com base no nome de anfitrião e no endereço de e-mail. O Intune substitui o perfil de e-mail existente criado pelo utilizador.
 
->**Samsung KNOX**: um perfil de e-mail duplicado existente é detetado com base no endereço de e-mail e é substituído pelo perfil do Intune. Se o utilizador configurar essa conta, esta é substituída novamente pelo perfil do Intune. Tenha em atenção que isto pode causar alguma confusão ao utilizador.
+**Samsung KNOX**<br>Um perfil de e-mail duplicado existente é detetado com base no endereço de e-mail e é substituído pelo perfil do Intune. Se o utilizador configurar essa conta, esta é substituída novamente pelo perfil do Intune. Tenha em atenção que isto pode causar alguma confusão ao utilizador.
 
->Dado que o Samsung KNOX não utiliza o nome de anfitrião para identificar o perfil, recomendamos que não crie múltiplos perfis de e-mail a utilizar no mesmo endereço de e-mail em diferentes anfitriões, uma vez que estes substituem-se uns aos outros.
+Dado que o Samsung KNOX não utiliza o nome de anfitrião para identificar o perfil, recomendamos que não crie múltiplos perfis de e-mail a utilizar no mesmo endereço de e-mail em diferentes anfitriões, uma vez que estes substituem-se uns aos outros.
 
->**Android for Work**: o perfil do Intune só é aplicado a aplicações de e-mail específicas no perfil de trabalho do dispositivo e não afeta a configuração de e-mail do dispositivo.
-
+**Android for Work**<br>O Intune fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store, são instaladas no perfil de trabalho do dispositivo e suportam ligações para o Exchange. Para ativar a conectividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos seus utilizadores e, em seguida, crie e implemente o perfil adequado. As aplicações de e-mail como o Nine Work poderão não ser gratuitas. Reveja os detalhes de licenciamento da aplicação ou contacte a empresa da aplicação para colocar as suas questões.
 
 ## <a name="secure-email-profiles"></a>Proteger perfis de e-mail
 Pode proteger os perfis de e-mail através de um certificado ou de uma palavra-passe.

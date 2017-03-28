@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 2d93edb688dbf296137a133f0b7ae065fc1cc89d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -61,7 +61,7 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar perfis
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Configurar dispositivos**.
+3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 3. No painel de perfis, escolha **Criar Perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de VPN.

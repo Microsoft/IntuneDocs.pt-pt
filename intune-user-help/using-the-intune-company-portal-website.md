@@ -14,13 +14,13 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 9b5ca824612f2ad40690f14a4845e9fafc7b6fed
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: 0a4f5cbc81ed1fa7a1d1110080cc298a18463b22
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -34,7 +34,7 @@ Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da
 
 -   [Remover o seu dispositivo](remove-your-device-cpwebsite.md)
 
--   [Repor o seu dispositivo](reset-your-device-cpwebsite.md)
+-   [Repor (apagar) o dispositivo](reset-erase-your-device-cpwebsite.md)
 
 -   [Repor o código de acesso do seu dispositivo](reset-your-passcode-cpwebsite.md)
 
