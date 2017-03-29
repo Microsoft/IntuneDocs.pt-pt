@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,7 +38,7 @@ Quando um utilizador visado tentar utilizar o Skype para Empresas Online no resp
 
 **Antes de** configurar uma política de acesso condicional para o Skype para Empresas Online, tem de:
 - Ter uma **subscrição do Skype para Empresas Online** e atribuir uma licença do Skype para Empresas Online aos utilizadores.
-- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium ** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para obter mais detalhes, veja [Preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou [Preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para obter mais detalhes, veja [Preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou [Preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -   [Ativar a autenticação moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para o Skype para Empresas Online.
 -  Todos os seus utilizadores têm de utilizar o **Skype para Empresas Online**. Se tiver uma implementação com o Skype para Empresas Online e o Skype para Empresas no local, a política de acesso condicional não será aplicada aos utilizadores.
@@ -118,9 +119,4 @@ Selecione qualquer grupo de dispositivos móveis. Em seguida, no separador **Dis
 * **Dispositivos não conformes**: estes dispositivos estão bloqueados no Skype para Empresas Online.
 
 * **Dispositivos registados no AAD e conformes**: estes dispositivos podem aceder ao Skype para Empresas Online.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
