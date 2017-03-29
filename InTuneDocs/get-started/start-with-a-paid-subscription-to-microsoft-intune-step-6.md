@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
 ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -71,10 +72,5 @@ Agora que a aplicação está disponível no Intune, pode implementá-la em disp
 
 >[!div class="step-by-step"]
 
->[&larr; **Organizar utilizadores e dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personalizar o Portal da Empresa ** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+>[&larr; **Organizar utilizadores e dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personalizar o Portal da Empresa** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
