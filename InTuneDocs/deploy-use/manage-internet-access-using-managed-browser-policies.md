@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
     -   Porta 443 para https
 
-    Não é suportado utilizar carateres universais para o número de porta. Por exemplo, **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*; * * não são suportados.
+    Não é suportado utilizar carateres universais para o número de porta. Por exemplo, **http&colon;//www&period;contoso&period;com:*;**e**http&colon;//www&period;contoso&period;com: /*; * * não são suportados.
 
 -   Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
 
@@ -156,9 +157,4 @@ Se forem implementadas várias políticas de browser gerido num dispositivo e as
 -   Se um dispositivo estiver a receber políticas de browser gerido pela primeira vez e duas políticas entrarem em conflito, os URLs não serão impostos no dispositivo. Utilize o nó **Conflitos de Política** da área de trabalho **Política** para ver os conflitos.
 
 -   Se um dispositivo já tiver recebido uma política de browser gerido e for implementada uma segunda política com definições em conflito, as definições originais permanecem no dispositivo. Utilize o nó **Conflitos de Política** da área de trabalho **Política** para ver os conflitos.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

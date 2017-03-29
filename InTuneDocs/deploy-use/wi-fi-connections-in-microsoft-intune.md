@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -106,7 +107,7 @@ No Windows, pode utilizar o utilitário **netsh wlan** para exportar um perfil d
 Utilize a **Política de Importação de Wi-Fi do Windows** para importar um conjunto de definições de Wi-Fi que poderá implementar consoante necessário nos grupos de utilizadores ou de dispositivos.
 
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; ** Adicionar Política**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Adicionar Política**.
 
 2.  Configure uma política do tipo **Windows** &gt; **Política de Importação Wi-Fi (Windows 8.1 e posterior)**.
 
@@ -179,9 +180,4 @@ Estas tabelas incluem os detalhes para as definições de segurança que estão 
 
 ### <a name="see-also"></a>Consulte também
 Saiba como criar um perfil Wi-Fi com uma chave pré-partilhada em [Perfil Wi-Fi com chave pré-partilhada](pre-shared-key-wi-fi-profile.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
