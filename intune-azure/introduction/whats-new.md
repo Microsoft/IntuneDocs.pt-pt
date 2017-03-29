@@ -3,8 +3,8 @@ title: "Novidades na Pré-visualização do Microsoft Intune"
 titleSuffix: Intune Azure preview
 description: "Saiba quais são as novidades da pré-visualização do Azure no Intune"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: get-started-article
