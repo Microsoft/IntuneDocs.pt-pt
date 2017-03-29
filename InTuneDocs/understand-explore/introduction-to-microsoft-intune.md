@@ -52,7 +52,7 @@ A MDM funciona através de protocolos ou APIs disponíveis nos sistemas operativ
 * A criação de relatórios e a medição da conformidade dos dispositivos com as normas empresariais
 * A remoção de dados empresariais dos dispositivos geridos  
 
-Por vezes, as pessoas pensam que **o controlo do acesso a dados empresariais ** é uma funcionalidade da MDM. Não pensamos dessa forma, porque não é algo que seja fornecido pelo sistema operativo do dispositivo móvel. Em vez disso, é algo proporcionado pelo fornecedor de identidade. No nosso caso, o fornecedor de identidade é o Azure Active Directory (Azure AD), o sistema de gestão de identidade e acesso da Microsoft.  
+Por vezes, as pessoas pensam que **o controlo do acesso a dados empresariais** é uma funcionalidade da MDM. Não pensamos dessa forma, porque não é algo que seja fornecido pelo sistema operativo do dispositivo móvel. Em vez disso, é algo proporcionado pelo fornecedor de identidade. No nosso caso, o fornecedor de identidade é o Azure Active Directory (Azure AD), o sistema de gestão de identidade e acesso da Microsoft.  
 
 O Intune está integrado no Azure AD para possibilitar um conjunto abrangente de cenários de controlo de acesso. Por exemplo, pode exigir que um dispositivo móvel esteja em conformidade com as normas empresariais, conforme definido no Intune, para que possa aceder a um serviço empresarial, como o Exchange. Da mesma forma, pode bloquear o serviço empresarial para um conjunto específico de aplicações móveis. Por exemplo, pode bloquear o Exchange Online para que seja apenas acedido pelo Outlook ou o Outlook Mobile.
 
