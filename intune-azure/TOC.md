@@ -33,6 +33,7 @@
 ### [Obter um token DEP da Apple](enroll-devices/get-apple-dep-token.md)
 ### [Escolher como inscrever dispositivos iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Procedimento
+### [Atribuir licenças aos utilizadores](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Inscrever dispositivos Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Inscrever dispositivos iOS
 #### [Inscrever dispositivos iOS com o Assistente de Configuração ](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
