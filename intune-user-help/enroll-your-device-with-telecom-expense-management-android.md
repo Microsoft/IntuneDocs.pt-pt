@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 A sua organização poderá estar a utilizar software de gestão de despesas de telecomunicações para garantir que os planos de voz e de dados estão a ser utilizados dentro dos limites aceitáveis. Depois de concluir a inscrição do seu dispositivo, ser-lhe-á solicitado que selecione a melhor categoria para esse dispositivo.
 
-  ![Uma captura do ecrã “selecionar a melhor categoria para um dispositivo” num dispositivo iOS. Mostra uma seleção de inscrição empresarial ou pessoal.](./media/and-enroll-11-tem-select-best-category.png)
+![Uma captura do ecrã “selecionar a melhor categoria para um dispositivo” num dispositivo iOS. Mostra uma seleção de inscrição empresarial ou pessoal.](./media/and-enroll-11-tem-select-best-category.png)
 
 1. Selecione a opção adequada para receber uma notificação e instalar a aplicação [ __Datalert__ ](https://play.google.com/store/apps/details?id=fr.memobox.databox) a partir da Google Play Store. A aplicação Datalert é o modo como a sua organização pode medir a utilização de dados. Toque na seta __seguinte__, no canto superior direito do ecrã, para continuar.
 
