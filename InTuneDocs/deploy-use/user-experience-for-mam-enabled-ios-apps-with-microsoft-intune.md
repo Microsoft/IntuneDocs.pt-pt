@@ -2,8 +2,8 @@
 title: "Aplicações iOS com políticas de proteção de aplicações | Documentos da Microsoft"
 description: "Este tópico descreve o que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
