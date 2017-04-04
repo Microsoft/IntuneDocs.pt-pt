@@ -1,5 +1,6 @@
 # Introdução
 ## [O que é a pré-visualização do portal do Azure?](introduction/what-is-microsoft-intune.md)
+## [Funcionalidades do Intune no Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Introdução
 <!---(introduction/get-started.md) --->
 ### [Inscrever-se numa avaliação gratuita](introduction/sign-up-free-trial-microsoft-intune.md)
