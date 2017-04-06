@@ -5,7 +5,7 @@ description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através d
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Pode implementar o software de cliente do Intune em computadores como parte de u
 
 ## <a name="instruct-users-to-self-enroll"></a>Dar instruções aos utilizadores para se inscreverem
 
-Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web varia consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador. 
+Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web varia consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador.
 
 Se não tiver sido atribuída uma licença do Intune aos utilizadores ou se a Autoridade MDM da organização não tiver sido definida como o Intune, não serão apresentadas quaisquer opções de inscrição aos utilizadores.
 
@@ -200,7 +200,7 @@ Numa linha de comandos elevada, execute um dos seguintes comandos.
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**Método 2** tenha em atenção que nem todos estes agentes se encontram instalados em todos os SKUs do Windows):
+**Método 2**<br>Tenha em atenção que todos estes agentes se encontram instalados em todos os SKUs do Windows:
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Verifique o caminho "%ProgramFiles%\Microsoft\OnlineManagement" e certifique-se 
 - AgentInstaller
 - Logs
 - Updates
-- Common 
+- Common
 
 ### <a name="remove-the-onlinemanagement-folder"></a>Remover a pasta OnlineManagement
 

@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
-ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -48,7 +48,7 @@ Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [envia
 
     ![O ecrã de boas-vindas da aplicação Portal da Empresa para Android, que pede ao utilizador para iniciar sessão com a sua conta escolar ou profissional necessária. Tenha em atenção que as contas Microsoft e outras contas pessoais não são aceites.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Se o seu administrador de TI configurar termos e condições empresariais, toque em **ACEITAR** para aceitar os termos.
+4.  Se o seu administrador de TI configurar termos e condições empresariais, toque em **ACEITAR** para aceitar os termos. Este ecrã poderá ser ligeiramente diferente da imagem abaixo, com base na versão do Android que está a utilizar atualmente.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 

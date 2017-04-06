@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -28,6 +28,17 @@ Saiba quais são as novidades nesta versão do Microsoft Intune. Pode também de
 > Todas estas funcionalidades também serão suportadas, em algum momento, em implementações de clientes híbridas (Configuration Manager com o Intune). Para mais informações sobre as novas funcionalidades híbridas, consulte a [página Hybrid What’s New (Novidades nas Implementações Híbridas)](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## <a name="new-capabilities"></a>Novas Funcionalidades
+
+### <a name="support-for-skycure"></a>Suporte para Skycure
+
+Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Skycure, uma solução de defesa contra ameaças para dispositivos móveis que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do Skycure, incluindo:
+
+- Defesa física
+- Defesa da rede
+- Defesa da aplicação
+- Defesa contra vulnerabilidades
+
+Pode configurar políticas de acesso condicional de EMS com base na avaliação de riscos do Skycure ativada através de políticas de conformidade de dispositivos do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais com base em ameaças detetadas. Para obter mais informações, veja[Conector de Defesa Contra Ameaças para Dispositivos Móveis do Skycure](/intune/deploy-use/skycure-mobile-threat-defense-connector).
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência de utilizador da aplicação Portal da Empresa para Android<!--621622-->
 
@@ -51,6 +62,12 @@ Se precisar de transferir e de carregar em sideload a aplicação Portal da Empr
 
 
 ## <a name="notices"></a>Avisos
+
+### <a name="support-for-ios-103"></a>Suporte para iOS 10.3
+
+A versão do iOS 10.3 começou a ser implementada a 27 de março de 2017 para os utilizadores de iOS. Todos os cenários MDM e MAM existentes do Intune são compatíveis com a versão mais recente do SO da Apple. Prevemos que todas as funcionalidades existentes do Intune atualmente disponíveis para gerir dispositivos iOS continuem a funcionar quando os utilizadores atualizarem os seus dispositivos e aplicações para o iOS 10.3.
+
+Não existem atualmente problemas conhecidos para partilhar. Caso se depare com problemas com o iOS 10.3, contacte a [equipa de suporte do Intune](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Suporte melhorado para os utilizadores do Android sediados na China<!--720444-->
 
@@ -82,10 +99,15 @@ No início de 2017 iremos migrar toda a nossa experiência de administrador para
 
 Os novos inquilinos de avaliação começarão a ver a pré-visualização pública da nova experiência de administrador no portal do Azure este mês. Enquanto estiverem no estado de pré-visualização, as capacidades e a paridade com a consola do Intune existente serão proporcionadas iterativamente.
 
-A experiência de administração no portal do Azure irá utilizar a já anunciada nova funcionalidade de agrupamento e filtragem; quando o seu inquilino existente é migrado para a nova experiência de agrupamento, o utilizador também será migrado para pré-visualizar a nova experiência de administração do inquilino. Entretanto, se pretende testar ou observar qualquer uma das novas funcionalidades até que o seu inquilino seja migrado, inscreva-se para uma nova conta de avaliação do Intune ou veja a [nova documentação](https://docs.microsoft.com/intune-azure/introduction/whats-new).
+A experiência de administração no portal do Azure irá utilizar a já anunciada nova funcionalidade de agrupamento e filtragem; quando o seu inquilino existente é migrado para a nova experiência de agrupamento, o utilizador também será migrado para pré-visualizar a nova experiência de administração do inquilino. Entretanto, se pretende testar ou observar qualquer uma das novas funcionalidades até que o seu inquilino seja migrado, inscreva-se para uma nova conta de avaliação do Intune ou veja a [nova documentação](/intune-azure/introduction/whats-new).
 
 > [!Note]
 > Para a pré-visualização do portal do Azure, estamos a implementar as atualizações deste mês. No entanto, as alterações poderão não estar disponíveis imediatamente devido à forma como o serviço do Intune é implementado.  Vários componentes do serviço têm de ser atualizados sequencialmente antes de as novas funcionalidades do portal estarem disponíveis. Procure as alterações na pré-visualização do portal do Azure à medida que são implementadas durante este mês. Para obter a lista completa das alterações, veja [Novidades na pré-visualização do Microsoft Intune](/intune-azure/introduction/whats-new).
+
+### <a name="administration-roles-being-replaced-in-azure-portal"></a>Substituição das funções de administração no portal do Azure
+
+As funções de administração de gestão de aplicações móveis (MAM) existentes (Contribuidor, Proprietário e Só de leitura) utilizadas no portal clássico do Intune (Silverlight) estão a ser substituídas por um conjunto completo de novos controlos de administração baseados em funções (RBAC) no portal do Azure no Intune. Após concluir a migração para o portal do Azure, terá de atribuir novamente os seus administradores a estas novas funções de administração. Para obter mais informações sobre as RBAC e as novas funções, veja [Controlo de acesso baseado em funções do Microsoft Intune](/intune-azure/access-control/role-based-access-control).
+
 
 ## <a name="whats-coming"></a>Novidades futuras
 

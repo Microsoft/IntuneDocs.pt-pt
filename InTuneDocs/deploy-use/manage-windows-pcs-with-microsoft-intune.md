@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Gerir PCs Windows com o software de cliente de PC do Intune
-[A inscrição de PCs Windows como dispositivos móveis](set-up-windows-device-management-with-microsoft-intune.md) é o método preferencial de inscrição de PCs Windows no Intune. No entanto, pode optar por inscrever e gerir PCs Windows ao instalar o software de cliente do Intune, conforme descrito neste tópico.
+A [inscrição de PCs Windows como dispositivos móveis](set-up-windows-device-management-with-microsoft-intune.md) é o método preferencial de inscrição de PCs Windows no Intune. No entanto, como administrador de TI, pode optar por inscrever e gerir PCs Windows ao instalar o software de cliente do Intune, conforme descrito neste tópico. O cliente de software do Intune não é suportado com a inscrição como um dispositivo móvel.
 
 O Intune gere os PCs Windows através de políticas semelhantes às utilizadas pelos Objetos de Política de Grupo (GPOs) dos Serviços de Domínio do Active Directory do Windows Server (AD DS). Se pretende gerir computadores associados a domínios do Active Directory com o Intune, [certifique-se de que as políticas do Intune não entram em conflito com quaisquer GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) que estejam implementadas na sua organização. Pode ler mais sobre [GPOs](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Políticas e implementações de aplicações do software de cliente do Intune
 
-Embora o software de cliente do Intune suporte [capacidades de gestão que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a firewall do Windows e o Endpoint Protection, os PCs geridos com o software de cliente do Intune não podem ser segmentados com outras políticas do Intune, incluindo essas definições da política do **Windows** específicas da gestão do dispositivo móvel. 
+Embora o software de cliente do Intune suporte [capacidades de gestão que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a firewall do Windows e o Endpoint Protection, os PCs geridos com o software de cliente do Intune não podem ser segmentados com outras políticas do Intune, incluindo essas definições da política do **Windows** específicas da gestão do dispositivo móvel.
 
 Quando utiliza o software de cliente do Intune para gerir PCs Windows, pode utilizar apenas as políticas apresentadas na secção **Gestão de Computadores**.
 
@@ -70,7 +70,7 @@ Além disso, quando implementar aplicações, pode utilizar apenas o Windows Ins
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Capacidades de gestão de computadores do software de cliente do Intune
 
-Uma vez que o software de cliente do Intune esteja instalado, as capacidades de gestão incluem: 
+Uma vez que o software de cliente do Intune esteja instalado, as capacidades de gestão incluem:
 
 - [Gestão de aplicações](deploy-apps-in-microsoft-intune.md)
 

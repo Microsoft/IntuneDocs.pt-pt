@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ As organizações podem utilizar o Intune para gerir um grande número de dispos
 Têm de existir utilizadores no portal do Azure para serem adicionados como gestores de inscrição de dispositivos. Para garantir a segurança, o utilizador DEM não deve ser também um administrador do Intune.
 
 >[!NOTE]
->O método de inscrição DEM não pode ser utilizado com o [Assistente de Configuração do Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou a [inscrição direta](ios-direct-enrollment-in-microsoft-intune.md), nem com o [método de inscrição DEP](ios-device-enrollment-program-in-microsoft-intune.md). 
+>O método de inscrição DEM não pode ser utilizado com o [Assistente de Configuração do Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou a [inscrição direta](ios-direct-enrollment-in-microsoft-intune.md), nem com o [método de inscrição DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gestor de inscrição de dispositivos
 
@@ -42,9 +42,9 @@ Apenas os utilizadores da consola do Intune podem ser gestores de inscrição de
 
 O utilizador DEM pode:
 
--   Inscrever até 1000 dispositivos no Intune.
--   Iniciar sessão no Portal da Empresa para obter aplicações da empresa.
--   Configurar o acesso aos dados da empresa ao implementar aplicações específicas de funções nos tablets.
+-   Inscrever até 1000 dispositivos no Intune
+-   Utilizar a aplicação Portal da Empresa para obter aplicações da empresa
+-   Configurar o acesso aos dados da empresa ao implementar aplicações específicas de funções nos tablets
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitações dos dispositivos inscritos com uma conta DEM
 
@@ -57,9 +57,9 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
   - O utilizador DEM não pode utilizar o Portal da Empresa para anular a inscrição de dispositivos inscritos para DEM no próprio dispositivo. O administrador do Intune tem esta capacidade, mas o utilizador DEM não a tem.
 
   - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
- 
+
   - Os utilizadores não podem utilizar aplicações Apple Volume Purchase Program (VPP) devido aos requisitos do Apple ID por utilizador para a gestão de aplicações.
- 
+
   - (Apenas para iOS) Se utiliza DEM para inscrever dispositivos iOS, não pode utilizar o Apple Configurator nem o Programa de Inscrição de Dispositivos Apple (DEP) para inscrever dispositivos.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
 
 4.  Selecione **Adicionar...**. A caixa de diálogo **Adicionar Gestor de Inscrição de Dispositivos** é aberta.
 
-5.  Introduza o **ID de Utilizador** da conta do Intune e, em seguida, selecione **OK**. 
+5.  Introduza o **ID de Utilizador** da conta do Intune e, em seguida, selecione **OK**.
 
     O utilizador DEM pode agora inscrever dispositivos móveis com o mesmo procedimento utilizado por um utilizador final num cenário BYOD no Portal da Empresa. O utilizador final do gestor pode instalar a aplicação Portal da Empresa e inscrever o dispositivo com as suas credenciais DEM até um máximo de 1000 dispositivos. Para obter os passos de inscrição em cada plataforma para utilizadores finais, consulte:
 

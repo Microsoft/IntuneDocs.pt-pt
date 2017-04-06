@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
-ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
-ms.lasthandoff: 03/23/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -53,7 +53,7 @@ Se o utilizador tiver instalado um perfil de e-mail antes da configuração de u
 
 Dado que o Samsung KNOX não utiliza o nome de anfitrião para identificar o perfil, recomendamos que não crie múltiplos perfis de e-mail a utilizar no mesmo endereço de e-mail em diferentes anfitriões, uma vez que estes substituem-se uns aos outros.
 
-**Android for Work**<br>O Intune fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store, são instaladas no perfil de trabalho do dispositivo e suportam ligações para o Exchange. Para ativar a conectividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos seus utilizadores e, em seguida, crie e implemente o perfil adequado. As aplicações de e-mail como o Nine Work poderão não ser gratuitas. Reveja os detalhes de licenciamento da aplicação ou contacte a empresa da aplicação para colocar as suas questões.
+**Android for Work**<br>O Intune fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store e são instaladas no perfil de trabalho dos dispositivos, pelo que não podem resultar em perfis duplicados. Ambas as aplicações suportam ligações ao Exchange. Para ativar a conetividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos utilizadores e, em seguida, crie e implemente o perfil de e-mail adequado. As aplicações de e-mail como o Nine Work poderão não ser gratuitas. Reveja os detalhes de licenciamento da aplicação ou contacte a empresa da aplicação para colocar as suas questões.
 
 ## <a name="secure-email-profiles"></a>Proteger perfis de e-mail
 Pode proteger os perfis de e-mail através de um certificado ou de uma palavra-passe.

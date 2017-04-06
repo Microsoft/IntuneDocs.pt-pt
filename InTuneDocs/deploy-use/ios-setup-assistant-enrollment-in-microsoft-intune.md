@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Adicionar dispositivos iOS para inscrição com o Assistente de Configuração
 
-1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices** e, em seguida, selecione **Add devices**. 
+1. Na [Consola de administração do Microsoft Intune](http://manage.microsoft.com), aceda a **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices** e, em seguida, selecione **Add devices**.
 
    Pode adicionar dispositivos de duas formas:
 
@@ -107,13 +107,13 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
   -  **Adicionar manualmente os detalhes dos dispositivos**&mdash;Introduza os números de série e todas as notas ou detalhes de até 15 dispositivos.
 
-  Pode confirmar os números de série no painel **Review Devices**. Também pode decidir se quer substituir os **Details** dos números de série que serão importados novamente ou pode desmarcar a caixa **Overwrite** para manter os Detalhes atuais. 
+  Pode confirmar os números de série no painel **Review Devices**. Também pode decidir se quer substituir os **Details** dos números de série que serão importados novamente ou pode desmarcar a caixa **Overwrite** para manter os Detalhes atuais.
 
-> [!NOTE] 
+> [!NOTE]
 > Na consola de administrador existente do Intune, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes por números de série individuais. No novo portal do Azure, apenas poderá substituir os detalhes de todos os números de série ou ignorar os novos detalhes de todos os números de série.
 
-  > [!NOTE]
-  > Posteriormente, se quiser remover dispositivos pertencentes à empresa da gestão do Intune, poderá ter de aceder ao grupo de dispositivos **Por Números de Série iOS** em **Dispositivos Pré-inscritos empresariais** e remova o número de série do dispositivo do Intune para desativar a inscrição de dispositivos. Se o Intune efetuar um procedimento de recuperação após desastre na altura em que remover os números de série, terá de verificar que apenas os números de série dos dispositivos ativos estão presentes nesse grupo.
+> [!NOTE]
+> Posteriormente, se quiser remover dispositivos pertencentes à empresa da gestão do Intune, poderá ter de aceder ao grupo de dispositivos **Por Números de Série iOS** em **Dispositivos Pré-inscritos empresariais** e remova o número de série do dispositivo do Intune para desativar a inscrição de dispositivos. Se o Intune efetuar um procedimento de recuperação após desastre na altura em que remover os números de série, terá de verificar que apenas os números de série dos dispositivos ativos estão presentes nesse grupo.
 
 2. Selecione **Next**.
 
@@ -128,23 +128,22 @@ Especifique o perfil a atribuir aos dispositivos adicionados a partir da lista d
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exportar um perfil a implementar nos dispositivos iOS
 
-1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Policy** &gt; **Corporate Device Enrollment**e, em seguida, selecione o perfil de dispositivo a implementar nos dispositivos móveis. 
+1. Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) aceda a **Policy** &gt; **Corporate Device Enrollment**e, em seguida, selecione o perfil de dispositivo a implementar nos dispositivos móveis.
 
 2. Selecione **Export** na barra de tarefas. Copie e guarde o **URL do Perfil**. Irá carregá-lo no Apple Configurator mais tarde para definir o perfil do Intune utilizado pelos dispositivos iOS.
 
   Para suportar o Apple Configurator 2, o URL do Perfil 2.0 tem de ser editado. Para tal, substitua este código:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    Por este código:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  Por este código:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    No procedimento seguinte, irá carregar o URL deste perfil para o serviço DEP da Apple com o Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Preparar o dispositivo com o Apple Configurator
 
@@ -180,9 +179,10 @@ Os dispositivos iOS são ligados ao computador Mac e inscritos na gestão de dis
 
 ### <a name="distribute-devices"></a>Distribuir dispositivos
 
-Os dispositivos estão agora prontos para a inscrição na empresa. 
+Os dispositivos estão agora prontos para a inscrição na empresa. Desligue os dispositivos e distribua-os pelos utilizadores. Quando os utilizadores ligarem os seus dispositivos, o Assistente de Configuração será iniciado.
 
-Desligue os dispositivos e distribua-os pelos utilizadores. Quando os utilizadores ligarem os seus dispositivos, o Assistente de Configuração será iniciado.
+>[!NOTE]
+>Se um utilizador tentar inscrever um dispositivo DEP, mas tiver excedido o limite de dispositivos, a inscrição falhará silenciosamente sem avisar o utilizador.
 
 
 ### <a name="see-also"></a>Consulte também

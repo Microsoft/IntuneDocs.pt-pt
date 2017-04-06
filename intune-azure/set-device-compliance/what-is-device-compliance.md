@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Se tem utilizado a consola de administração clássica do Intune, tenha em cons
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migração da consola clássica do Intune para o portal de pré-visualização do Azure no Intune
+
+As políticas de conformidade de dispositivos criadas na [consola clássica do Intune](https://manage.microsoft.com) não aparecem no novo [portal do Azure do Intune](https://portal.azure.com). No entanto, continuarão a ser visadas para os utilizadores e geríveis através da consola clássica do Intune.
+
+Se pretender tirar partido das novas funcionalidades relacionadas com a conformidade de dispositivos no portal do Azure no Intune, terá de criar novas políticas de conformidade de dispositivos no próprio portal do Azure do Intune. Se atribuir uma nova política de conformidade de dispositivos no portal do Azure do Intune a um utilizador a quem também tenha sido atribuída uma política de conformidade de dispositivos do portal clássico do Intune, as políticas de conformidade de dispositivos do portal do Azure do Intune terão precedência sobre as criadas na consola clássica do Intune.
 
 ##  <a name="next-steps"></a>Próximos passos
 
