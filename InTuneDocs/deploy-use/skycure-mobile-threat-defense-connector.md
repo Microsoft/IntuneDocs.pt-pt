@@ -1,6 +1,6 @@
 ---
-title: "Conetor de defesa contra ameaças para dispositivos móveis do Skycure | Documentos da Microsoft"
-description: "Proteja o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos com o conetor de Defesa Contra Ameaças para Dispositivos Móveis do Skycure e o Intune."
+title: Conector Skycure Mobile Threat Defense | Microsoft Docs
+description: "Proteja o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos com o conector Skycure Mobile Threat Defense e o Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/21/2017
 
 ---
 
-# <a name="skycure-mobile-threat-defense-connector"></a>Conetor de Defesa Contra Ameaças para Dispositivos Móveis do Skycure
+# <a name="skycure-mobile-threat-defense-connector"></a>Conector Skycure Mobile Threat Defense
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -36,13 +36,13 @@ Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis
 
 -   Defesa contra vulnerabilidades
 
-Pode configurar políticas de acesso condicional com base na avaliação de riscos do Skycure ativada através de políticas de conformidade do dispositivo do Intune, que pode utilizar para permitir ou impedir que os dispositivos não conformes acedam aos recursos da empresa com base em ameaças detetadas.
+Pode configurar políticas de acesso condicional baseadas na avaliação de riscos do Skycure, que é ativada através de políticas de conformidade de dispositivos do Intune, as quais pode utilizar para permitir ou impedir que os dispositivos não conformes acedam aos recursos da empresa com base em ameaças detetadas.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Como é que o Intune e o Skycure ajudam a proteger os recursos da empresa?
 
 A aplicação Skycure para dispositivos móveis Android ou iOS captura o sistema de ficheiros, a pilha de rede e a telemetria dos dispositivos e das aplicações sempre que estiverem disponíveis e, em seguida, envia-os para o serviço cloud do Skycure para avaliar o risco do dispositivo relativamente a ameaças móveis.
 
-A política de conformidade do dispositivo do Intune inclui uma regra para a defesa contra ameaças para dispositivos móveis do Skycure, que se baseia na avaliação de riscos do Skycure. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
+A política de conformidade de dispositivos do Intune inclui uma regra para o Skycure Mobile Threat Defense, que se baseia na avaliação de riscos do Skycure. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
 
 Se o dispositivo for considerado não conforme, o acesso a recursos como o Exchange Online e o SharePoint Online poderá ser bloqueado. Os utilizadores com os dispositivos bloqueados recebem orientações da aplicação móvel Skycure para resolver o problema e recuperar o acesso aos recursos empresariais.
 
@@ -110,7 +110,7 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 -   Subscrição do Microsoft Intune
 
--   Subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Skycure
+-   Subscrição do Skycure Mobile Threat Defense
 
 Para obter mais informações, veja o [site do Skycure](https://www.skycure.com/skycure-microsoft-integration/).
 
@@ -128,7 +128,7 @@ Veja a seguir os passos necessários para integrar o Intune com o Skycure:
 
 5.  [Configurar a integração do Skycure com o Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
-6.  [Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Skycure no Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
+6.  [Ativar o Skycure Mobile Threat Defense no Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
-7.  [Ativar a política de conformidade da Defesa Contra Ameaças para Dispositivos Móveis no Skycure no Intune](https://docs.microsoft.com/intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
+7.  [Criar a política de conformidade do Skycure Mobile Threat Defense no Intune](https://docs.microsoft.com/intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
 

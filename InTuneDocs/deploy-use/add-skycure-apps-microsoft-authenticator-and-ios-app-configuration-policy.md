@@ -1,5 +1,5 @@
 ---
-title: "Adicionar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS | Documentos da Microsoft"
+title: "Adicionar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS | Microsoft Docs"
 description: "Adicione aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS na consola clássica do Intune."
 keywords: 
 author: andredm7
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Tem de utilizar o Intune para adicionar e implementar as aplicações do Skycure para que os utilizadores finais possam receber notificações quando uma ameaça é identificada nos seus dispositivos móveis e para receber orientações sobre como remediar as ameaças.
+Tem de utilizar o Intune para adicionar e implementar as aplicações do Skycure, para que os utilizadores finais possam receber notificações quando são identificadas ameaças nos dispositivos móveis deles e para receber orientações sobre como remediar essas ameaças.
 
-Além disso, precisa do [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to), para que as identidades dos utilizadores possam ser verificadas pelo Azure AD, e da política de configuração de aplicações iOS que indica à aplicação iOS do Skycure para utilizar o Intune e o Início de Sessão Único (SSO) do Azure AD para que os utilizadores não tenham de escrever o nome de utilizador e a palavra-passe sempre que iniciarem sessão na aplicação do Skycure.
+Além disso, precisa do [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to), para que as identidades dos utilizadores possam ser verificadas pelo Azure AD, e da política de configuração de aplicações iOS, que indica à aplicação iOS do Skycure para utilizar o Intune e o Início de Sessão Único (SSO) do Azure AD, de modo a que os utilizadores não tenham de escrever o nome de utilizador e a palavra-passe sempre que iniciarem sessão na aplicação do Skycure.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
