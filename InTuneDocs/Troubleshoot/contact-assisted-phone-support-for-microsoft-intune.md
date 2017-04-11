@@ -1,11 +1,11 @@
----
-title: Contactar o Suporte Assistido por Telefone | Microsoft Intune
-description: "Números de telefone para suporte do Intune"
-keywords: 
-author: staciebarker
-ms.author: staciebarker
+﻿---
+title: Contactar o suporte assistido por telefone | Documentos da Microsoft
+description: "Números de telefone para ajuda do Microsoft Intune."
+keywords: "horário comercial"
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
-ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
+ms.lasthandoff: 01/10/2017
 
 
 ---
 
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contactar o suporte assistido por telefone do Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>Números de telefone e horário comercial
 
@@ -54,7 +58,7 @@ ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 |Grécia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 EET (UTC +2)|Grego &#42;, Inglês|0080044142831||
 |Guatemala|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 CST (UTC -6)|Espanhol&#42;, Inglês|1-800-300-0069<br /><br />Passo 1. selecione a opção 4 (para acesso especial)<br /><br />Passo 2. Introduza o código: 7007||
 |RAE de Hong Kong|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 18:00 HKT (UTC +8)|Cantonês&#42;, Mandarim&#42;, Inglês||30713055|
-|Hungria|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Hungaro&#42;, Inglês|36 80 983 899|36 1 778 9292|
+|Hungria|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 – 17:00 CET (UTC +1)|Húngaro&#42;, Inglês|36 80 983 899|36 1 778 9292|
 |Islândia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 GMT (UTC)|Inglês|8009609||
 |Índia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 IST (UTC +5:30)|Inglês|000800 4402038|18002002052|
 |Indonésia|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />08:00 - 17:00 WIB (UTC +7)|Bahasa&#42;, Inglês|001-803-442-304 (Indosat)<br /><br />007-803-011-0882 (Telkom)||
@@ -115,9 +119,4 @@ ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 |Uruguai|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 UYST (UTC -2)|Espanhol&#42;, Inglês|000-411-002-7131||
 |Venezuela|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 VET (UTC -4:30)|Espanhol&#42;, Inglês|0-800-100-8763||
 &#42; Suportado com interpretação via telefone.
-
-
-
-<!--HONumber=Oct16_HO3-->
-
 

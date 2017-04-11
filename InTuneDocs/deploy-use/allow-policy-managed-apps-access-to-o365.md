@@ -1,0 +1,59 @@
+---
+title: "Acesso condicional ao Office 365 com base na aplicação| Documentos da Microsoft"
+description: "Compreenda os conceitos de como o acesso condicional para MAM pode ajudar a controlar as aplicações que têm acesso aos serviços do O365."
+keywords: 
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 10/25/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
+ms.reviewer: chrisgre
+ms.suite: ems
+ms.custom: intune-classic
+translationtype: Human Translation
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: d53cded6670069f10bf645d23ff9a9102bd97539
+ms.lasthandoff: 02/25/2017
+
+
+---
+
+# <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Permitir que apenas as aplicações móveis que suportam políticas de proteção de aplicações do Intune acedam aos serviços do Office 365
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+As [políticas de proteção de aplicações do Intune](protect-apps-and-data-with-microsoft-intune.md) ajudam-no a proteger os dados da sua empresa em dispositivos inscritos para gestão no Intune. Também pode utilizar políticas de proteção de aplicações em **dispositivos de funcionários que não estejam inscritos para gestão no Intune**.  Neste caso, apesar de não gerir o dispositivo, ainda precisa de garantir que os recursos e os dados da sua empresa estão protegidos. Através do Acesso condicional com base na aplicação com MAM, pode criar uma política que permita que apenas as aplicações móveis que suportam políticas de proteção de aplicações do Intune possam aceder a serviços do Office&365;, como o Exchange Online.
+
+Por exemplo, ao permitir que apenas a **aplicação Microsoft Outlook** aceda ao Exchange Online, pode **bloquear as aplicações de correio incorporadas no iOS e Android**, que não têm a proteção de dados das políticas de MAM do Intune para obter e-mails do **Exchange Online**.
+
+O diagrama abaixo ilustra o fluxo utilizado pelas políticas de Acesso condicional com base na aplicação para determinar quando deve permitir ou bloquear o acesso: ![Diagrama que mostra os vários critérios incluídos para determinar quando se deve permitir ou bloquear o acesso ](../media/mam-ca-decision-flow_simple.png).
+
+Descrição das abreviações utilizadas nos diagramas:
+* **CP**: aplicação Portal da Empresa
+* **AA**: aplicação Azure Authenticator
+* **AAD**: Azure Active Directory
+* **EAS**: Exchange Active Sync
+
+## <a name="prerequisites"></a>Pré-requisitos
+**Antes** de criar uma política de Acesso condicional com base na aplicação, tem de ter uma **subscrição premium do Enterprise Mobility + Security ou do Azure Active Directory** e os utilizadores têm de ter licença para o EMS ou para o Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
+
+## <a name="supported-apps"></a>Aplicações suportadas
+**Exchange Online**: **Microsoft Outlook** para Android e iOS.
+
+Para saber mais sobre a experiência de utilizador de uma aplicação com políticas de Acesso condicional com base na aplicação, veja [O que esperar ao utilizar uma aplicação com acesso condicional para MAM](use-apps-with-mam-ca.md).
+
+
+## <a name="next-steps"></a>Passos seguintes
+[Criar uma Política do Exchange Online para aplicações de MAM](mam-ca-for-exchange-online.md)
+
+[Bloquear aplicações que não tenham autenticação moderna](block-apps-with-no-modern-authentication.md)
+
+### <a name="see-also"></a>Consulte também
+
+[Proteger os dados da aplicação com políticas de proteção de aplicações](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+
