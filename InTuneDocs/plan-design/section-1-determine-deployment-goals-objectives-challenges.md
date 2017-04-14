@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ Os obstáculos à implementação são problemas prioritários para uma organiza
 <br>
     -   **Mitigação:** embora possa estar ansioso por se lançar no seu projeto, certifique-se de que definiu claramente as suas metas e objetivos. Inclua estas metas e objetivos em todas as atividades de sensibilização e de formação para ajudar a garantir que os utilizadores compreendem por que razão a sua organização escolheu o Intune.
 
-## <a name="next-section"></a>Secção Seguinte
+## <a name="next-steps"></a>Próximos passos
 
 Agora que já identificou as suas metas, objetivos e potenciais obstáculos à implementação, vamos avançar para a secção seguinte: [Identificar cenários de casos de utilização](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
