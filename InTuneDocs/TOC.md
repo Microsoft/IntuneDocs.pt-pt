@@ -24,8 +24,7 @@
 ### [Personalizar o Portal da Empresa](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Inscrever dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Publicar tarefas de configuração](get-started/post-configuration-tasks.md)
-## [Migrar para o Intune](get-started/migrate-to-intune.md)
-## Passos seguintes
+## Próximos passos
 ### [Impedir fugas de dados da empresa a partir das aplicações móveis do Office 365](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Proteger os dados da empresa com a encriptação de dados](get-started/protect-data-encryption.md)
 ### [Publicar aplicações móveis para os utilizadores](get-started/publish-mobile-apps-to-users.md)
