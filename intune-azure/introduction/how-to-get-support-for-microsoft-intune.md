@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4c790438911b06915c49bd76a4ae413b7a9471d1
-ms.openlocfilehash: 70f9638941b61309fc2d97987ab20b3d54e529ee
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 679ac408349a82b17ec63109770126e0ad072c6d
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -31,6 +31,10 @@ A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de
 
 O suporte do Intune, bem como do Intune quando utilizado com o Gestor de Configuração, é gratuito. Os clientes do Suporte Premier incorrem numa cobrança para perguntas sobre procedimentos (por exemplo, como configurar uma funcionalidade do Intune).
 
+>[!IMPORTANT]
+> Para obter suporte técnico para produtos que funcionam com o Intune, mas não são criados pela Microsoft, por exemplo, SaaSwedo, Cisco ou Lookout, contacte o fornecedor desse produto para confirmar se o configurou corretamente antes de abrir um caso no suporte do Intune.
+
+
 ## <a name="find-help-without-opening-a-support-ticket"></a>Obter ajuda sem abrir um pedido de suporte
 
 Antes de criar um pedido de suporte, veja os seguintes recursos para obter respostas e informações. Também poderá querer consultar as [sugestões de resolução de problemas gerais do Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
@@ -40,6 +44,13 @@ Antes de criar um pedido de suporte, veja os seguintes recursos para obter respo
 Faça uma pergunta ou inicie um debate com os especialistas técnicos da Microsoft! Fornecemos respostas e informações no [Fórum da TechNet sobre o Microsoft Intune](https://social.technet.microsoft.com/Forums/home) pesquisável.
 
 ![Fórum TechNet do Microsoft Intune](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>Introdução ao fórum
+
+1. Na página de fóruns, introduza o Microsoft Intune na caixa Fóruns e, em seguida, selecione-o na lista.<br>
+![Controlo de seleção de fóruns do Intune](./media/forum-select-intune.png)
+2. Agora, verá o Microsoft Intune na lista de fóruns selecionados.<br>
+![Controlo de fóruns selecionados do Intune](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de feedback do Microsoft Intune no UserVoice
 
