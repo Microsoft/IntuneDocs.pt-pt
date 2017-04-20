@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -57,9 +58,10 @@ Para obter instruções sobre como criar uma política de aplicações na consol
 ##  <a name="supported-platforms"></a>Plataformas suportadas
 - iOS 8.1 ou posterior
 - Android 4 ou posterior
+- Windows 10
 
 >[!NOTE]
->Os dispositivos Windows não suportam estas políticas de proteção de aplicações. No entanto, quando inscrever dispositivos Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>A partir da versão 1703, as políticas de proteção de aplicações podem ser definidas para dispositivos Windows 10 no MAM sem o cenário de inscrição. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Aplicações suportadas
 * **Aplicações da Microsoft:** estas aplicações têm o SDK da Aplicação Intune incorporado e não requerem processamentos adicionais antes de aplicar as políticas de proteção de aplicações.
@@ -106,9 +108,4 @@ Os Administradores globais têm acesso ao [portal do Azure](https://portal.azure
 
 ## <a name="next-steps"></a>Passos seguintes
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

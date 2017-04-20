@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Configurar a gestão das seguintes plataformas:
 - [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [PCs e Portáteis Windows](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile e Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [PCs e portáteis com Windows](manage-windows-pcs-with-microsoft-intune.md) (software de cliente do Intune)
 
 Também pode ativar a [inscrição de dispositivos pertencentes à empresa](manage-corporate-owned-devices.md).
 
@@ -170,7 +170,7 @@ Se estiver a utilizar a coexistência, precisa de verificar as listas de verific
 Conclua estes passos antes de contactar o Suporte da Microsoft para repor a sua autoridade MDM.
 
 - Extinga todos os dispositivos da consola de administração do Intune. Não tente extinguir um dispositivo a partir do próprio dispositivo. 
-- Elimine o Conector Serviço a Serviço (em **Administração** > **Gestão de Dispositivos Móveis** > **Microsoft Exchange**) ou desative o Conector do Exchange se o tiver configurado. 
+- Elimine o Conector Serviço a Serviço (em **Administração** > **Gestão de Dispositivos Móveis** > **Microsoft Exchange**) ou desative o Conector do Exchange se o tiver configurado.
 - Remova a função de Gestor de Inscrição de Dispositivos em **Administração** > **Gestor de Inscrição de Dispositivos**.
 - Desative o Mapeamento do Grupo de Dispositivos em **Administração** > **Gestão de Dispositivos Móveis** > **Mapeamento de Grupos de Dispositivos**.
 - Elimine chaves de sideloading em **Administração** > **Gestão de Dispositivos Móveis** > **Windows** > **Chaves de Sideloading**.
@@ -187,7 +187,7 @@ Conclua estes passos antes de contactar o Suporte da Microsoft para repor a sua 
 - Remova todos os utilizadores do grupo de utilizadores do Intune. Aponte a subscrição do Intune para uma coleção de utilizadores vazia ou remova todos os utilizadores da coleção visada.  Confirme no CloudUserSync.log que os utilizadores foram removidos. 
 - Desmarque a plataforma iOS para remover o certificado do APNs.
 - Elimine todas as aplicações publicadas para dispositivos MDM.
-- Elimine todas as políticas para dispositivos MDM. 
+- Elimine todas as políticas para dispositivos MDM.
 - Remova o Conector do Windows Intune a partir da Consola do Configuration Manager (aplicável apenas para a versão R2 SP1 ou abaixo).
 Remova a subscrição do Intune ao clicar com o botão direito do rato na subscrição e selecionar **Eliminar**.
 - Reinicie o Serviço SMS Executive.
@@ -196,18 +196,18 @@ Remova a subscrição do Intune ao clicar com o botão direito do rato na subscr
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Repor a autoridade MDM do Office 365 para o Configuration Manager
 
 1. Aceda a [https://protection.office.com](https://protection.office.com).
-2. Selecione o separador **Políticas de Segurança** e selecione **Gestão de Dispositivos**. 
+2. Selecione o separador **Políticas de Segurança** e selecione **Gestão de Dispositivos**.
 3. Extinga todos os dispositivos ao selecionar **Eliminação Seletiva**. Não tente extinguir um dispositivo a partir do próprio dispositivo. Se a eliminação seletiva estiver desativada, não são necessárias mais ações.
-4. Selecione o separador **Políticas de Segurança** e selecione **Políticas de Segurança de Dispositivos**. 
+4. Selecione o separador **Políticas de Segurança** e selecione **Políticas de Segurança de Dispositivos**.
 5. Selecione **Eliminar** para todas as políticas existentes. Se as políticas estiverem com um estado pendente, não são necessárias mais ações.
 
 >[!NOTE]
->O certificado do APsN do iOS não pode ser eliminado e permanece associado à conta. 
+>O certificado do APsN do iOS não pode ser eliminado e permanece associado à conta.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Passos seguintes para as reposições da autoridade MDM
 
-Após o Suporte da Microsoft verificar os itens na lista de verificação aplicável, a reposição da autoridade MDM pode demorar até três dias úteis, mas normalmente ocorre no prazo de um dia. 
+Após o Suporte da Microsoft verificar os itens na lista de verificação aplicável, a reposição da autoridade MDM pode demorar até três dias úteis, mas normalmente ocorre no prazo de um dia.
 
 >[!IMPORTANT]
->Não tente configurar a sua subscrição até o Suporte da Microsoft confirmar que a reposição foi concluída com êxito! A configuração prematura pode causar danos e/ou afetar a sua capacidade de utilizar o serviço do Intune. 
+>Não tente configurar a sua subscrição até o Suporte da Microsoft confirmar que a reposição foi concluída com êxito! A configuração prematura pode causar danos e/ou afetar a sua capacidade de utilizar o serviço do Intune.
 

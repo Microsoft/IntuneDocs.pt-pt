@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -93,8 +94,6 @@ Siga os passos abaixo para criar políticas de proteção de aplicações:
 
     ![Captura de ecrã do painel Adicionar uma política a mostrar que as Aplicações e Definições foram configuradas](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 Quando acabar de criar uma política, conforme descrito no procedimento anterior, esta não é implementada para nenhum utilizador. Para implementar uma política, consulte a secção seguinte, "Implementar uma política para utilizadores".
 
 > [!IMPORTANT]
@@ -105,6 +104,46 @@ Quando acabar de criar uma política, conforme descrito no procedimento anterior
 > -   Associa ambas estas políticas à mesma aplicação.
 > -   A política que criou a partir da consola do Azure tem precedência e a cópia é permitida.
 > -   No entanto, o estado e os relatórios na consola do Intune indicarão incorretamente que a cópia está bloqueada.
+
+## <a name="line-of-business-lob-apps-optional"></a>Aplicações LOB (linha de negócio) (opcional)
+
+A partir da versão 1703 do Intune, tem a opção de adicionar aplicações LOB ao Intune em geral ao criar uma nova política de proteção de aplicações. Tem a opção de definir políticas de proteção de aplicações para aplicações LOB que utilizem SDK de MAM sem precisar de permissões totais de implementação de aplicações.
+
+> [!TIP] 
+> Também pode adicionar aplicações LOB ao Intune ao aceder através do fluxo de trabalho do [SDK da Aplicação Intune](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
+
+> [!IMPORTANT]
+> Se os utilizadores tiverem apenas permissões específicas para implementar aplicações MAM e não permissões totais, o que lhes permitiria implementar aplicações no Intune, não poderão aceder através do fluxo de trabalho do SDK do Intune, mas ainda poderão adicionar as aplicações LOB através do fluxo de trabalho da criação de políticas de proteção de aplicações de MAM.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>Para adicionar aplicações LOB (iOS e Android)
+
+1.  No painel Adicionar uma política, selecione **Configurar Aplicações** para abrir o painel Aplicações.
+
+    ![MAM – painel Adicionar uma política](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Clique em **Mais aplicações** e, em seguida, introduza o **ID do Pacote** (para iOS), **ID de pacote** (para Android) e, em seguida, clique em Selecionar para adicionar as suas aplicações LOB.
+
+    ![MAM – painel Mais aplicações](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>Para adicionar aplicações LOB (Windows)
+
+> [!IMPORTANT] 
+> Tem de selecionar o Windows 10 na lista pendente de plataformas ao criar uma nova política de proteção de aplicações.
+
+1.  No painel Adicionar uma política, selecione **Aplicações permitidas** ou **Excluir aplicações** para abrir o painel Aplicações permitidas ou Excluir aplicações.
+
+    > [!NOTE]
+    > 
+    - **Aplicações permitidas**: estas são as aplicações que precisam de cumprir esta política.
+    - **Excluir aplicações**: estas aplicações estão isentas desta política e podem aceder a dados empresariais sem restrições.
+<br></br>
+2. No painel Aplicações permitidas ou Excluir aplicações, clique em **Adicionar aplicações**. Pode adicionar aplicações da Microsoft recomendadas, aplicações da loja ou aplicações do ambiente de trabalho.
+
+    a.  **Aplicações recomendadas:** uma lista preenchida previamente de aplicações do Office (a maioria) que os administradores podem facilmente importar para a política.
+
+    b.  **Aplicações da loja:** o administrador pode adicionar qualquer aplicação da Loja Windows à política.
+
+    c.  **Aplicações de ambiente de trabalho do Windows:** o administrador pode adicionar qualquer aplicação de ambiente de trabalho do Windows à política (por exemplo, exe, dll, etc.)
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar uma política para utilizadores
 
@@ -134,7 +173,7 @@ Para ver o efeito das alterações imediatamente, o utilizador final terá de te
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>Para alterar a lista de aplicações associadas à política
 
-1.  No painel **Política de aplicações**, escolha a política que pretende alterar. Esta ação abre um painel específico da política que acabou de selecionar.
+1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre um painel específico da política que acabou de selecionar.
 
     ![Captura de ecrã de uma política existente aberta num painel separado](../media/AppManagement/AzurePortal_MAM_OpenPolicy.png)
 
@@ -144,7 +183,7 @@ Para ver o efeito das alterações imediatamente, o utilizador final terá de te
 
 ### <a name="to-change-the-list-of-user-groups"></a>Para alterar a lista de grupos de utilizadores
 
-1.  No painel **Política de aplicações**, escolha a política que pretende alterar. Esta ação abre o painel específico da política que selecionou.
+1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre o painel específico da política que selecionou.
 
 2.  No painel da política, escolha **Grupos de utilizadores** para abrir o painel **Grupo de utilizadores** que mostra a lista dos grupos de utilizadores atuais que têm esta política.
 
@@ -158,7 +197,7 @@ Para ver o efeito das alterações imediatamente, o utilizador final terá de te
 
 ### <a name="to-change-policy-settings"></a>Para alterar definições de política
 
-1.  No painel **Política de aplicações**, escolha a política que pretende alterar. Esta ação abre um painel específico da política que acabou de selecionar.
+1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre um painel específico da política que acabou de selecionar.
 
     ![Captura de ecrã de uma política existente aberta num painel separado ](../media/AppManagement/AzurePortal_MAM_OpenPolicy.png)
 
@@ -181,9 +220,4 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 ### <a name="see-also"></a>Consulte também
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
