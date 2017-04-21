@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Eis uma descrição geral de cada tarefa inerente ao processo de implementação
 
 Conforme indicado na secção de requisitos acima, é necessária uma subscrição do Intune ou do EMS. Se a sua organização não tiver uma subscrição do Intune ou do EMS, contacte a Microsoft ou a sua equipa da conta Microsoft para a informar de que pretende comprar o Enterprise Mobility + Security (EMS) ou o Intune.
 
--   Saiba mais sobre [como pode comprar o Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing).
+-   Saiba mais sobre [como pode comprar o Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### <a name="task-2-add-office-365-subscription"></a>Tarefa 2: adicionar a subscrição do Office 365
 
@@ -115,7 +116,7 @@ O Microsoft Intune suporta os perfis de E-mail, Wi-Fi e VPN. A adição e implem
 
 O Microsoft Intune suporta a implementação de aplicações Web, LOB e de lojas de aplicações públicas. Também suporta a gestão de aplicações que integraram o SDK do Intune através da sua associação a políticas de MAM. A adição e implementação de aplicações são concluídas na área de trabalho Aplicações do Portal de Administração do Intune. A adição e implementação de políticas de MAM são concluídas na área de trabalho Política do Portal de Administração do Intune. Adicione aplicações conforme adequado e implemente-as em grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [a adição e implementação de aplicações](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   Saiba mais sobre [a adição e implementação de aplicações](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>Tarefa 11: adicionar e implementar políticas de conformidade
 
@@ -141,9 +142,4 @@ O Intune suporta plataformas de dispositivos iOS, Mac OS, Android, Windows Deskt
 ## <a name="next-section"></a>Secção Seguinte
 
 A secção seguinte fornece orientações para [testar e validar a sua implementação do Intune](section-9-test-and-validation.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

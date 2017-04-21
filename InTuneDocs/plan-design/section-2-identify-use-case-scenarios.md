@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Os cenários de casos de utilização de gestão de dispositivos móveis descrevem o tipo ou a função do utilizador e a propriedade do respetivo dispositivo (por exemplo, pessoal ou da empresa). Os cenários de casos de utilização são úteis porque permitem dividir os seus utilizadores em grupos mais fáceis de gerir. Identificar os seus cenários de casos de utilização é uma parte importante do processo de planeamento numa implementação bem-sucedida do Intune.
+Os cenários de casos de utilização de gestão de dispositivos móveis descrevem o tipo ou a função do utilizador e a propriedade do respetivo dispositivo (por exemplo, pessoal ou da empresa). Os cenários de casos de utilização são úteis porque permitem dividir os utilizadores em grupos mais fáceis de gerir. Identificar os seus cenários de casos de utilização é uma parte importante do processo de planeamento numa implementação bem-sucedida do Intune.
 
 Vamos abordar alguns exemplos que ajudam a sua organização a identificar cenários de casos de utilização do Intune, bem como grupos organizacionais e plataformas de dispositivos móveis associadas a cada caso de utilização.
 
 ## <a name="use-case-scenarios"></a>Cenários de casos de utilização
 
-Pode começar por consultar os objetivos e metas da implementação do Intune da sua organização para o ajudar a identificar os principais cenários de casos de utilização da sua implementação. No âmbito do seu plano de implementação do Intune, terá de responder às seguintes perguntas:
+Pode começar por consultar os objetivos e metas da implementação do Intune da sua organização para o ajudar a identificar os principais cenários de casos de utilização da implementação. No âmbito do seu plano de implementação do Intune, terá de responder às seguintes perguntas:
 
 -   Planeia suportar dispositivos pertencentes à empresa?
 
@@ -81,12 +82,7 @@ Aqui, irá identificar as plataformas de dispositivos móveis associados a cada 
 | BYOD | Técnico de informação | Marketing, Vendas | iOS |                                                           
 | BYOD | Executivos | Marketing, Vendas | iOS |
 
-## <a name="next-section"></a>Secção Seguinte
+## <a name="next-steps"></a>Próximos passos
 
 A secção seguinte fornece orientações sobre como [identificar os requisitos do Intune para cada cenário de caso de utilização](section-3-determine-use-case-requirements.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

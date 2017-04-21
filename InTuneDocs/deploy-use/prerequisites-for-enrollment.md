@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -125,9 +125,9 @@ Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças �
 
 ### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>Sincronizar os utilizadores no local com o Azure AD
 
-1. [Adicionar o sufixo UPN](https://technet.microsoft.com/en-us/library/cc772007.aspx) para o seu domínio personalizado no Active Directory no local.
+1. [Adicionar o sufixo UPN](https://technet.microsoft.com/library/cc772007.aspx) para o seu domínio personalizado no Active Directory no local.
 2. Defina o sufixo UPN novo para os utilizadores no local que pretende importar.
-3. Execute a [sincronização do Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) para integrar os seus utilizadores no local com o Azure AD.
+3. Execute a [sincronização do Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) para integrar os seus utilizadores no local com o Azure AD.
 4. Assim que as informações de conta de utilizador forem sincronizadas com êxito, pode atribuir licenças do Microsoft Intune utilizando o [Portal de Gestão do Office 365](https://portal.office.com/Admin/Default.aspx).
 
 ## <a name="step-6-enable-enrollment"></a>Passo 6: ativar a inscrição
@@ -137,8 +137,8 @@ Configurar a gestão das seguintes plataformas:
 - [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [PCs e Portáteis Windows](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile e Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [PCs e portáteis com Windows](manage-windows-pcs-with-microsoft-intune.md) (software de cliente do Intune)
 
 Também pode ativar a [inscrição de dispositivos pertencentes à empresa](manage-corporate-owned-devices.md).
 
@@ -170,7 +170,7 @@ Se estiver a utilizar a coexistência, precisa de verificar as listas de verific
 Conclua estes passos antes de contactar o Suporte da Microsoft para repor a sua autoridade MDM.
 
 - Extinga todos os dispositivos da consola de administração do Intune. Não tente extinguir um dispositivo a partir do próprio dispositivo. 
-- Elimine o Conector Serviço a Serviço (em **Administração** > **Gestão de Dispositivos Móveis** > **Microsoft Exchange**) ou desative o Conector do Exchange se o tiver configurado. 
+- Elimine o Conector Serviço a Serviço (em **Administração** > **Gestão de Dispositivos Móveis** > **Microsoft Exchange**) ou desative o Conector do Exchange se o tiver configurado.
 - Remova a função de Gestor de Inscrição de Dispositivos em **Administração** > **Gestor de Inscrição de Dispositivos**.
 - Desative o Mapeamento do Grupo de Dispositivos em **Administração** > **Gestão de Dispositivos Móveis** > **Mapeamento de Grupos de Dispositivos**.
 - Elimine chaves de sideloading em **Administração** > **Gestão de Dispositivos Móveis** > **Windows** > **Chaves de Sideloading**.
@@ -187,7 +187,7 @@ Conclua estes passos antes de contactar o Suporte da Microsoft para repor a sua 
 - Remova todos os utilizadores do grupo de utilizadores do Intune. Aponte a subscrição do Intune para uma coleção de utilizadores vazia ou remova todos os utilizadores da coleção visada.  Confirme no CloudUserSync.log que os utilizadores foram removidos. 
 - Desmarque a plataforma iOS para remover o certificado do APNs.
 - Elimine todas as aplicações publicadas para dispositivos MDM.
-- Elimine todas as políticas para dispositivos MDM. 
+- Elimine todas as políticas para dispositivos MDM.
 - Remova o Conector do Windows Intune a partir da Consola do Configuration Manager (aplicável apenas para a versão R2 SP1 ou abaixo).
 Remova a subscrição do Intune ao clicar com o botão direito do rato na subscrição e selecionar **Eliminar**.
 - Reinicie o Serviço SMS Executive.
@@ -196,18 +196,18 @@ Remova a subscrição do Intune ao clicar com o botão direito do rato na subscr
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Repor a autoridade MDM do Office 365 para o Configuration Manager
 
 1. Aceda a [https://protection.office.com](https://protection.office.com).
-2. Selecione o separador **Políticas de Segurança** e selecione **Gestão de Dispositivos**. 
+2. Selecione o separador **Políticas de Segurança** e selecione **Gestão de Dispositivos**.
 3. Extinga todos os dispositivos ao selecionar **Eliminação Seletiva**. Não tente extinguir um dispositivo a partir do próprio dispositivo. Se a eliminação seletiva estiver desativada, não são necessárias mais ações.
-4. Selecione o separador **Políticas de Segurança** e selecione **Políticas de Segurança de Dispositivos**. 
+4. Selecione o separador **Políticas de Segurança** e selecione **Políticas de Segurança de Dispositivos**.
 5. Selecione **Eliminar** para todas as políticas existentes. Se as políticas estiverem com um estado pendente, não são necessárias mais ações.
 
 >[!NOTE]
->O certificado do APsN do iOS não pode ser eliminado e permanece associado à conta. 
+>O certificado do APsN do iOS não pode ser eliminado e permanece associado à conta.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Passos seguintes para as reposições da autoridade MDM
 
-Após o Suporte da Microsoft verificar os itens na lista de verificação aplicável, a reposição da autoridade MDM pode demorar até três dias úteis, mas normalmente ocorre no prazo de um dia. 
+Após o Suporte da Microsoft verificar os itens na lista de verificação aplicável, a reposição da autoridade MDM pode demorar até três dias úteis, mas normalmente ocorre no prazo de um dia.
 
 >[!IMPORTANT]
->Não tente configurar a sua subscrição até o Suporte da Microsoft confirmar que a reposição foi concluída com êxito! A configuração prematura pode causar danos e/ou afetar a sua capacidade de utilizar o serviço do Intune. 
+>Não tente configurar a sua subscrição até o Suporte da Microsoft confirmar que a reposição foi concluída com êxito! A configuração prematura pode causar danos e/ou afetar a sua capacidade de utilizar o serviço do Intune.
 

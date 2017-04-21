@@ -1,11 +1,11 @@
 ﻿---
-title: O que acontece se repuser o dispositivo | Documentos da Microsoft
-description: 
+title: "O que acontece durante a reposição do dispositivo? | Documentos da Microsoft"
+description: "Saiba mais sobre o que acontece quando repõe o dispositivo em cada uma das plataformas suportadas do Intune."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: fe110bbc-479b-4d11-beeb-70d15b199eda
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
-ms.openlocfilehash: b79d7b59a887e0d29e17816ff6acc58bd30b6a35
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 97cf2d5544a74d31141593fe96d724988ae45ce5
+ms.lasthandoff: 04/13/2017
 
 
 ---

@@ -15,9 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
-ms.lasthandoff: 12/15/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -90,7 +90,7 @@ Pode encontrar o grupo recém-criado na lista **Groups**, na área de trabalho *
     > Atualmente, se o seu grupo incluir membros de grupos de segurança ou grupos de gestores específicos e se excluir membros de alguns grupos, os membros incluídos inicialmente serão removidos. Para criar um grupo com membros incluídos e excluídos, aconselhamos a criar primeiro um grupo principal com os membros incluídos. Em seguida, crie um grupo subordinado ao grupo principal. No novo grupo subordinado, liste os membros excluídos. Em seguida, utilize o grupo subordinado para gerir políticas, perfis e a distribuição de aplicações no Intune.
 
     > [!NOTE]
-    > No portal do Azure, pode criar grupos com base nos gestores a quem os utilizadores reportam. Este tipo de grupo é dinâmico e é alterado à medida que se adicionam ou removem funcionários da equipa de um gestor no Azure Active Directory. O procedimento para criar um grupo do Azure com base num gestor encontra-se descrito no artigo [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), na secção **Configurar um grupo como um grupo de "Gestores"**.
+    > No portal do Azure, pode criar grupos com base nos gestores a quem os utilizadores reportam. Este tipo de grupo é dinâmico e é alterado à medida que se adicionam ou removem funcionários da equipa de um gestor no Azure Active Directory. O procedimento para criar um grupo do Azure com base num gestor encontra-se descrito no artigo [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), na secção **Configurar um grupo como um grupo de "Gestores"**.
 
 4.  Na página **Definir Associação Direta**, selecione **Procurar** para selecionar os utilizadores individuais a incluir ou excluir. Se selecionar utilizadores que não se encontram no grupo principal que especificou, esses utilizadores são adicionados automaticamente ao grupo principal. Na parte inferior da caixa de diálogo **Selecionar Membros** encontrará a opção para adicionar manualmente um utilizador. Esta ação é útil se pretender adicionar um utilizador que ainda não tem um dispositivo inscrito.
 
