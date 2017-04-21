@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -153,7 +153,7 @@ Os grupos de utilizadores e dispositivos determinam o destino de uma implementa�
 
 -   Saiba mais sobre como [planear os seus grupos de utilizadores e de dispositivos](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Saiba [como criar grupos de utilizadores e dispositivos](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Saiba [como criar grupos de utilizadores e dispositivos](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### <a name="public-key-infrastructure-pki"></a>Infraestrutura de Chaves Públicas (PKI)
 
@@ -326,7 +326,7 @@ Segue-se um exemplo de como documentar a estrutura de um perfil VPN.
 
 Os perfis de e-mail permitem a um cliente de e-mail ser automaticamente configurado com informações de ligação e configurar o e-mail. O Intune suporta perfis de e-mail em determinados países.
 
--   Saiba mais sobre os [perfis de e-mail](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) e que plataformas são suportadas.
+-   Saiba mais sobre os [perfis de e-mail](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) e que plataformas são suportadas.
 
 Segue-se um exemplo de como documentar a estrutura de perfis de e-mail:
 

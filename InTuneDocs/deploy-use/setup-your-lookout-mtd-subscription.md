@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 074af85385a843bd5fac9747abf0209a3ba92b9c
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 60dbfa644a53fec3823e1182f5dec7eb97d8b5df
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -55,12 +55,12 @@ Utilize os seguintes passos para reunir as informações que deve fornecer à eq
 
 1. Inicie sessão no [portal de gestão do Azure AD](https://manage.windowsazure.com) e selecione a sua subscrição. 
   ![captura de ecrã da página do Azure AD a mostrar o nome do inquilino](../media/mtp/aad_tenant_name.png)
-2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, consulte este [artigo do suporte da Microsoft](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) para obter sugestões para saber o seu ID de subscrição. 
+2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, consulte este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter sugestões para saber o seu ID de subscrição. 
 3. Localize o ID de Grupo do Azure AD. A consola do Lookout suporta 2 níveis de acesso:  
   * **Acesso Total:** os administradores do Azure AD podem criar um grupo para utilizadores que terão Acesso Total e criar, opcionalmente, outro grupo para os utilizadores que terão Acesso Restrito.  Apenas os utilizadores nestes grupos poderão iniciar sessão na **consola do Lookout**.
   * **Acesso Restrito:** os utilizadores neste grupo não têm acesso a vários módulos de configuração e inscrição da consola do Lookout e têm acesso só de leitura ao módulo **Política de Segurança** da consola do Lookout.  
 
-  Para obter mais detalhes sobre as permissões, consulte [este artigo](https://personal.support.lookout.com/hc/en-us/articles/114094105653) no site do Lookout.
+  Para obter mais detalhes sobre as permissões, consulte [este artigo](https://personal.support.lookout.com/hc/articles/114094105653) no site do Lookout.
 
   O **ID de Objeto de Grupo** encontra-se na página **Propriedades** do grupo na **consola de gestão do Azure AD**.
 
@@ -127,7 +127,7 @@ Se quiser receber alertas de e-mail de ameaças, inicie sessão na [consola do L
 ![captura de ecrã da página de preferências a apresentar a conta de utilizador](../media/mtp/lookout-mtp-email-notifications.png) Se pretende deixar de receber notificações por e-mail, defina as mesmas como **DESATIVADO** e guarde as suas alterações.
 
 ### <a name="configure-threat-classification"></a>Configurar a classificação de ameaças
-A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaças contra dispositivos móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/en-us/articles/114094130693) apresentam níveis de risco predefinidos inerentes às mesmas. Estas classificações podem ser alteradas a qualquer momento de forma a ajustá-las aos requisitos da sua empresa.
+A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaças contra dispositivos móveis de vários tipos. As [classificações de ameaças do Lookout](http://personal.support.lookout.com/hc/articles/114094130693) apresentam níveis de risco predefinidos inerentes às mesmas. Estas classificações podem ser alteradas a qualquer momento de forma a ajustá-las aos requisitos da sua empresa.
 
 ![captura de ecrã da página de políticas a apresentar ameaças e as respetivas classificações](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -137,5 +137,5 @@ A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaça
 ## <a name="watching-enrollment"></a>Monitorizar as inscrições
 Quando a configuração estiver concluída, a Defesa Contra Ameaças para Dispositivos Móveis do Lookout inicia uma consulta no Azure AD para detetar dispositivos que correspondam aos grupos de inscrição especificados.  Poderá encontrar informações sobre os dispositivos inscritos no módulo Dispositivos.  O estado inicial dos dispositivos é apresentado como Pendente.  O estado dos dispositivos é alterado assim que a aplicação Lookout for Work for instalada, aberta e ativada nos mesmos.  Para obter detalhes sobre como instalar a aplicação Lookout for Work no dispositivo pretendido, consulte o tópico [Configurar e implementar as aplicações Lookout for Work](configure-and-deploy-lookout-for-work-apps.md).
 ## <a name="next-steps"></a>Passos seguintes
-[Ativar a ligação do Lookout MTP ao Intune](enable-lookout-mtp-connection-in-intune.md)
+[Ativar a ligação do Lookout MTP ao Intune](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
 

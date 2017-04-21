@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 924dc37b310b27fe40ece9f8019061b02cb7ac2d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar a infraestrutura de certificados para SCEP
@@ -33,7 +33,7 @@ Este tópico descreve a infraestrutura necessária para criar e implementar perf
 -  **Autoridade de Certificação** (AC): uma Autoridade de Certificação (AC) Empresarial que seja executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter instruções sobre como configurar uma Autoridade de Certificação, consulte [Instalar a Autoridade de Certificação](http://technet.microsoft.com/library/jj125375.aspx).
     Se a sua AC for executada no Windows Server 2008 R2, tem de [instalar a correção de KB2483564](http://support.microsoft.com/kb/2483564/).
 I
--  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Consulte a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede. O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+-  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Consulte a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede. O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: utilize a consola de administração do Intune para transferir o instalador do **Certificate Connector** (**ndesconnectorssetup.exe**). Em seguida, pode executar **ndesconnectorssetup.exe** no computador onde pretende instalar o Certificate Connector.
 -  **Servidor Proxy de Aplicações Web** (opcional): pode utilizar um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
@@ -51,10 +51,10 @@ A partir da Internet para a rede de perímetro, permita a porta 443 a partir de 
 
 A partir da rede de perímetro para uma rede fidedigna, permita todas as portas e protocolos necessários para acesso ao domínio do servidor do NDES associado a um domínio. O servidor do NDES precisa de acesso aos servidores de certificado, aos servidores DNS, aos servidores do Configuration Manager e aos controladores de domínio.
 
-Recomendamos a publicação do servidor NDES através de um proxy, tal como o [proxy de aplicações do Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Proxy de Acesso Web](https://technet.microsoft.com/en-us/library/dn584107.aspx) ou um proxy de terceiros.
+Recomendamos a publicação do servidor NDES através de um proxy, tal como o [proxy de aplicações do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [Proxy de Acesso Web](https://technet.microsoft.com/library/dn584107.aspx) ou um proxy de terceiros.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Certificados e Modelos
+### <a name="BKMK_CertsAndTemplates"></a>Certificados e Modelos
 
 |Objeto|Detalhes|
 |----------|-----------|
@@ -63,13 +63,13 @@ Recomendamos a publicação do servidor NDES através de um proxy, tal como o [p
 |**Certificado de autenticação do servidor**|Pedido pela sua AC emissora ou a AC pública, instala e vincula este certificado SLL no IIS no servidor do NDES.|
 |**Certificado da AC de Raiz Fidedigna**|Exporta-o como um ficheiro **.cer** a partir da AC de raiz emissora ou de qualquer dispositivo que confie na AC de raiz emissora e implementa-o em dispositivos com o perfil de certificado da AC Fidedigna.<br /><br />Utiliza apenas um certificado da AC de Raiz Fidedigna por cada plataforma de sistema operativo e associa-o a cada perfil de Certificado de Raiz Fidedigna que criar.<br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Contas
+### <a name="BKMK_Accounts"></a>Contas
 
 |Nome|Detalhes|
 |--------|-----------|
 |**Conta do serviço do NDES**|Especifica uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Configurar a sua infraestrutura
+## <a name="BKMK_ConfigureInfrastructure"></a>Configurar a sua infraestrutura
 Antes de poder configurar perfis de certificado, tem de concluir as seguintes tarefas, o que requer conhecimento do Windows Server 2012 R2 e dos Serviços de Certificados do Active Directory (ADCS):
 
 **Tarefa 1**: criar uma conta do serviço do NDES

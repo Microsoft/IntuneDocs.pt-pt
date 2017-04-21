@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: b01b68b7587cb91f24285cdffafeab43296886e6
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fce3edb43a147491465d8a58d1a9a4f009fba55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -42,7 +42,7 @@ O Intune precisa do Azure Active Directory (AAD) como o fornecedor de identidade
 
 -   Saiba mais sobre como [planear os seus grupos de utilizadores e de dispositivos](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Saiba [como criar grupos de utilizadores e dispositivos](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Saiba [como criar grupos de utilizadores e dispositivos](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 Se a sua organização já utiliza o Office 365, é importante que o Intune utilize o mesmo ambiente do Azure Active Directory.
 

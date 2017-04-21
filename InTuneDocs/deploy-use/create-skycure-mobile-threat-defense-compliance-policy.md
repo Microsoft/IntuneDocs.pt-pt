@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3a7322bd389b6d2ca72108b9f54318000857895b
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ O Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Skycure permi
 
 Pré-requisitos da política de conformidade com a proteção contra ameaças de dispositivos do Skycure:
 
--   [Configurar a integração do Skycure com o Intune](https://docs.microsoft.com/en-us/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [Configurar a integração do Skycure com o Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [Ativar a ligação do Skycure no Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 

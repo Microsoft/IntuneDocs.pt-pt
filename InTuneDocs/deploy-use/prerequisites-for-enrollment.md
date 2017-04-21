@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -125,9 +125,9 @@ Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças �
 
 ### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>Sincronizar os utilizadores no local com o Azure AD
 
-1. [Adicionar o sufixo UPN](https://technet.microsoft.com/en-us/library/cc772007.aspx) para o seu domínio personalizado no Active Directory no local.
+1. [Adicionar o sufixo UPN](https://technet.microsoft.com/library/cc772007.aspx) para o seu domínio personalizado no Active Directory no local.
 2. Defina o sufixo UPN novo para os utilizadores no local que pretende importar.
-3. Execute a [sincronização do Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) para integrar os seus utilizadores no local com o Azure AD.
+3. Execute a [sincronização do Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) para integrar os seus utilizadores no local com o Azure AD.
 4. Assim que as informações de conta de utilizador forem sincronizadas com êxito, pode atribuir licenças do Microsoft Intune utilizando o [Portal de Gestão do Office 365](https://portal.office.com/Admin/Default.aspx).
 
 ## <a name="step-6-enable-enrollment"></a>Passo 6: ativar a inscrição

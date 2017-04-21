@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Algumas funcionalidades existentes de grupos do Intune não estão disponíveis 
 ## <a name="how-to-get-ready"></a>Como se preparar
 
 - Leia os seguintes tópicos do Azure AD para saber mais sobre os grupos de segurança do Azure AD e como funcionam:
-    -  [Gerir o acesso aos recursos com grupos do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Gerir grupos no Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Gerir o acesso aos recursos com grupos do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Gerir grupos no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Pondere remover todos os grupos do Intune que já não utiliza antes de migrar.
 -  Certifique-se de que os administradores que precisam de criar grupos estão adicionados à função **Administrador do Serviço Intune** do Azure AD. Tenha em atenção que a função Administrador do Serviço Azure AD não tem as permissões **Gerir Grupo**.
 -  Se utilizar grupos com a opção **Excluir membros específicos**, pondere se pode reestruturar estes grupos para não precisarem de exclusões ou se é possível utilizar regras avançadas na sua consulta do Azure AD para alcançar o mesmo resultado.

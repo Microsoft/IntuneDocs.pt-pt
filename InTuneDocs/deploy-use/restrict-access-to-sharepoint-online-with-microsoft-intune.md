@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Utilize o acesso condicional do [!INCLUDE[wit_firstref](../includes/wit_firstref
 O acesso condicional tem dois componentes:
 - Uma política de conformidade de dispositivos que o dispositivo tem de cumprir para ser considerado compatível.
 - Uma política de acesso condicional onde especifica as condições que o dispositivo tem de cumprir para poder aceder ao serviço.
-Para saber mais sobre como funciona o acesso condicional, leia o tópico [Proteger o acesso ao e-mail, ao Office&365; e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para saber mais sobre como funciona o acesso condicional, leia o tópico [Proteger o acesso ao e-mail, ao Office 365 e a outros serviços](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Pode implementar as políticas de conformidade e de acesso condicional aos utilizadores. Qualquer dispositivo que o utilizador utilize para aceder aos serviços é analisado relativamente à conformidade com as políticas.
 
@@ -41,7 +41,7 @@ Quando um utilizador se tentar ligar a um ficheiro através de uma aplicação s
 
 **Antes de** configurar uma política de acesso condicional para o Skype para o SharePoint Online, tem de:
 - Ter uma **subscrição do SharePoint Online** e os utilizadores têm de estar licenciados para o SharePoint Online.
-- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   Para ligar aos ficheiros obrigatórios, o dispositivo tem de estar:
@@ -60,10 +60,10 @@ Se não for cumprida uma condição, o utilizador vê uma das duas mensagens seg
 
 -   Se o dispositivo não for conforme, é apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], onde poderá encontrar informações sobre o problema e como resolvê-lo.
 
-**O acesso condicional não se aplica à partilha externa**. Para saber como impedir a partilha externa no seu inquilino ou numa coleção de sites, veja [Gerir a partilha externa para o seu ambiente do SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**O acesso condicional não se aplica à partilha externa**. Para saber como impedir a partilha externa no seu inquilino ou numa coleção de sites, veja [Gerir a partilha externa para o seu ambiente do SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
->Se ativar o acesso condicional para o SharePoint Online, recomendamos que desative o domínio na lista, conforme descrito no tópico [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
+>Se ativar o acesso condicional para o SharePoint Online, recomendamos que desative o domínio na lista, conforme descrito no tópico [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx).  
 
 ## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 As seguintes versões são suportadas:
@@ -85,7 +85,7 @@ As seguintes versões são suportadas:
 > [!NOTE]
 >Para utilizar o acesso condicional em PCs com o Windows 10, tem de atualizar esses mesmos PCs para a Atualização de Aniversário do Windows 10.
 
-  - Deve configurar os PCs associados a um domínio para serem [registados automaticamente](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) no Azure Active Directory. O serviço de Registos de Dispositivos do Azure AD será automaticamente ativado para os clientes do Intune e do Office 365. Os clientes que já implementaram o serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no Active Directory no local.
+  - Deve configurar os PCs associados a um domínio para serem [registados automaticamente](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) no Azure Active Directory. O serviço de Registos de Dispositivos do Azure AD será automaticamente ativado para os clientes do Intune e do Office 365. Os clientes que já implementaram o serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no Active Directory no local.
 
   - Se a política estiver definida para exigir a associação a um domínio e o PC não estiver associado a um domínio, é apresentada uma mensagem para contactar o administrador de TI.
 
@@ -93,7 +93,7 @@ As seguintes versões são suportadas:
   >[!NOTE]
   >O acesso condicional não é suportado em PCs que estão a executar o cliente de computador do Intune.
 
-A [autenticação moderna do Office 365 tem de estar ativada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
+A [autenticação moderna do Office 365 tem de estar ativada](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) e ter todas as atualizações mais recentes do Office.
 
 A autenticação moderna inclui o início de sessão baseado na Active Directory Authentication Library (ADAL) para clientes do Office 2013 Windows e permite uma maior segurança como **autenticação multifator** e **autenticação baseada em certificado**.
 
@@ -130,7 +130,7 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> Também pode criar uma política de acesso condicional para dispositivos Intune na consola de gestão do Azure AD (a política é referida como **política de acesso condicional baseada no dispositivo** no Azure AD). Além disso, pode criar outras políticas de acesso condicional, como a autenticação multifator. Também pode definir políticas de acesso condicional para aplicações empresariais de terceiros suportadas pelo Azure AD, como a Salesforce e a Box. Para obter mais detalhes, consulte [Como definir a política de acesso condicional com base no dispositivo do Azure Active Directory para controlar o acesso a aplicações ligadas do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> Também pode criar uma política de acesso condicional para dispositivos Intune na consola de gestão do Azure AD (a política é referida como **política de acesso condicional baseada no dispositivo** no Azure AD). Além disso, pode criar outras políticas de acesso condicional, como a autenticação multifator. Também pode definir políticas de acesso condicional para aplicações empresariais de terceiros suportadas pelo Azure AD, como a Salesforce e a Box. Para obter mais detalhes, consulte [Como definir a política de acesso condicional com base no dispositivo do Azure Active Directory para controlar o acesso a aplicações ligadas do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** > **Acesso Condicional** > **Política do SharePoint Online**.

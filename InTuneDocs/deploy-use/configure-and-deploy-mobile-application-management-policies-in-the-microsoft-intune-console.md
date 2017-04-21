@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Ao contrário de outras políticas do Intune, o utilizador não implementa diret
 
 Para aplicar restrições a uma aplicação, esta tem de incorporar o SDK da Aplicação do Microsoft Intune. Existem três métodos para obter este tipo de aplicação:
 
--   **Utilizar uma aplicação gerida por política**. Uma aplicação gerida por política tem o SDK da Aplicação incorporado. Para adicionar este tipo de aplicação, especifique uma ligação para a aplicação a partir de uma loja de aplicações, como o iTunes ou o Google Play. Não é necessário processamento adicional para este tipo de aplicação. Para obter mais informações, veja a [lista de aplicações que pode utilizar com políticas de gestão de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+-   **Utilizar uma aplicação gerida por política**. Uma aplicação gerida por política tem o SDK da Aplicação incorporado. Para adicionar este tipo de aplicação, especifique uma ligação para a aplicação a partir de uma loja de aplicações, como o iTunes ou o Google Play. Não é necessário processamento adicional para este tipo de aplicação. Para obter mais informações, veja a [lista de aplicações que pode utilizar com políticas de gestão de aplicações móveis do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 -   **Utilizar uma aplicação encapsulada**. Uma aplicação encapsulada é uma aplicação que empacota novamente para incluir o SDK da Aplicação através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune. Normalmente, esta ferramenta é utilizada para processar aplicações da empresa que foram criadas internamente. Não pode ser utilizada para processar aplicações que foram transferidas a partir da loja de aplicações. Para obter mais informações, veja [Preparar as aplicações iOS para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparar as aplicações Android para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -140,7 +140,7 @@ Depois de ter verificado que a aplicação foi carregada com êxito, continue pa
     |**Exigir a conformidade do dispositivo com a política empresarial para acesso**|Esta definição apenas permite que a aplicação seja utilizada quando o dispositivo não tem jailbreak nem root.|
     |**Verificar novamente os requisitos de acesso após (minutos)**|No campo **Tempo limite**, especifique o período de tempo antes de os requisitos de acesso da aplicação serem novamente verificados após a aplicação ser aberta.|
     |**Período de tolerância offline**|Se o dispositivo estiver offline, especifique o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados.|
-    |**Encriptar dados da aplicação**|Esta definição especifica que todos os dados associados a esta aplicação serão encriptados. Isto inclui os dados armazenados externamente, como em cartões SD.<br /><br />**Encriptação para iOS**<br /><br />Para aplicações associadas à política de gestão de aplicações móveis do Intune, os dados são encriptados em descanso através da encriptação ao nível do dispositivo fornecida pelo sistema operativo. Isto é ativado através da política de PIN de dispositivo definida pelo administrador de TI. Quando for necessário um PIN, os dados serão encriptados de acordo com as definições na política de gestão de aplicações móveis. Conforme indicado na documentação da Apple, [os módulos utilizados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Encriptação para Android**<br /><br />Para as aplicações associadas a uma política de gestão de aplicações móveis do Intune, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros.  O conteúdo no armazenamento do dispositivo será sempre encriptado. O método de encriptação tem conformidade com FIPS 140-2 apenas para dispositivos Samsung KNOX.|
+    |**Encriptar dados da aplicação**|Esta definição especifica que todos os dados associados a esta aplicação serão encriptados. Isto inclui os dados armazenados externamente, como em cartões SD.<br /><br />**Encriptação para iOS**<br /><br />Para aplicações associadas à política de gestão de aplicações móveis do Intune, os dados são encriptados em descanso através da encriptação ao nível do dispositivo fornecida pelo sistema operativo. Isto é ativado através da política de PIN de dispositivo definida pelo administrador de TI. Quando for necessário um PIN, os dados serão encriptados de acordo com as definições na política de gestão de aplicações móveis. Conforme indicado na documentação da Apple, [os módulos utilizados pelo iOS têm a certificação FIPS 140-2](http://support.apple.com/HT202739).<br /><br />**Encriptação para Android**<br /><br />Para as aplicações associadas a uma política de gestão de aplicações móveis do Intune, a encriptação é fornecida pela Microsoft. Os dados são encriptados de modo síncrono durante as operações de E/S de ficheiros.  O conteúdo no armazenamento do dispositivo será sempre encriptado. O método de encriptação tem conformidade com FIPS 140-2 apenas para dispositivos Samsung KNOX.|
     |**Bloquear captura de ecrã** (apenas dispositivos Android)|Esta definição especifica que as funções de captura de ecrã do dispositivo estão bloqueadas durante a utilização desta aplicação.|
 
 4. Quando terminar, selecione **Guardar Política**.
