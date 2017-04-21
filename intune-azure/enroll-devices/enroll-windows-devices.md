@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
+ms.lasthandoff: 04/06/2017
 
 
 ---
@@ -26,50 +26,48 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Utilize um dos seguintes métodos para configurar a inscrição para dispositivos Windows:
+Este tópico ajuda os administradores de TI a simplificar a inscrição de dispositivos Windows para os seus utilizadores.  Os dispositivos Windows podem ser inscritos sem passos adicionais, mas pode tornar a inscrição mais fácil para os utilizadores.
 
-- [**Inscrição automática no Windows 10 e Windows 10 Mobile com o Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  Este método é aplicável apenas para dispositivos com o Windows 10 e Windows 10 Mobile.
- -  Tem de ter o Azure Active Directory Premium para utilizar este método. Caso contrário, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
- -  Se optar por não ativar a inscrição automática, utilize o método de inscrição para Windows 8.1 e Windows Phone 8.1.
+Dois fatores determinam como inscreve os dispositivos Windows:
+- **Utiliza o Azure Active Directory Premium?** <br>O [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído com o Enterprise Mobility + Security e outros planos de licenciamento.
+- **Que versões de clientes do Windows serão inscritas?** <br>Os dispositivos Windows 10 podem ser inscritos automaticamente ao adicionar uma conta escolar ou profissional. As versões anteriores têm de ser inscritas através da aplicação Portal da Empresa.
 
-- [**Inscrição sem a inscrição automática do Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
- - Tem de utilizar este método para inscrever dispositivos Windows 8.1 e Windows Phone 8.1.
- - Poderá utilizar este método para os dispositivos Windows 8.1 e posterior se não pretender utilizar o Azure Active Directory (AD) Premium.
+||**Azure AD Premium**|**Outros AD**|
+|----------|---------------|---------------|  
+|**Windows 10**|[Inscrição automática](#enable-windows-10-automatic-enrollment) |[Inscrição de utilizadores](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Versões do Windows anteriores**|[Inscrição de utilizadores](#enable-windows-enrollment-without-azure-ad-premium)|[Inscrição de utilizadores](#enable-windows-enrollment-without-azure-ad-premium)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Ativar a inscrição do Windows sem o Azure AD Premium
+Pode permitir que os utilizadores inscrevam os dispositivos com a inscrição automática do Azure AD Premium. Após atribuir licenças à conta dos utilizadores, os mesmos podem adicionar a conta a um dispositivo Windows e concordar em inscrever o dispositivo para ser gerido. Criar um alias de DNS (tipo de registo CNAME) torna mais fácil para os utilizadores inscreverem os respetivos dispositivos. Se criar registos de recursos DNS CNAME, os utilizadores ligam-se e inscrevem-se no Intune sem ter de introduzir o nome do servidor do Intune.
 
-Pode permitir que os utilizadores instalem e inscrevam os dispositivos sem a inscrição automática do Azure AD Premium. Se criar registos de recursos CNAME DNS, os utilizadores ligam e inscrevem-se no Intune sem que seja necessário introduzir um nome de servidor.
+**Passo 1: criar o registo CNAME** (opcional)<br>
+Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-1. **Criar CNAMEs** (opcional)<br>
- Crie registos de recursos DNS **CNAME** para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
+Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-    Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
+|Tipo|Nome do anfitrião|Aponta para|TTL|  
+|----------|---------------|---------------|---|
+|CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 
-    Se existir mais do que um domínio verificado, crie um registo CNAME para cada domínio. Os registos de recursos CNAME têm de conter as seguintes informações:
+Se tiver mais do que um sufixo UPN, tem criar um CNAME para cada nome de domínio e apontar cada um para EnterpriseEnrollment-s.manage.microsoft.com. Por exemplo, se os utilizadores na Contoso utilizarem name@contoso.com e também name@us.contoso.com e name@eu.constoso.com como e-mail/UPN, o administrador de DNS da Contoso teria de criar os seguintes CNAMEs.
 
-    Os registos de recursos CNAME têm de ter as seguintes informações:
+|Tipo|Nome do anfitrião|Aponta para|TTL|  
+|----------|---------------|---------------|---|
+|CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
+|CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
+|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 
-  |TIPO|Nome do anfitrião|Aponta para|TTL|
-  |--------|-------------|-------------|-------|
-  |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Hora|
-  |CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 Hora|
+`EnterpriseEnrollment-s.manage.microsoft.com` – suporta o redirecionamento para o serviço Intune com reconhecimento de domínio a partir do nome de domínio do e-mail
 
-  `EnterpriseEnrollment-s.manage.microsoft.com` – suporta o redirecionamento para o serviço Intune com reconhecimento de domínio a partir do nome de domínio do e-mail
+As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
 
-  Se a sua empresa utilizar vários domínios para as credenciais do utilizador, crie os registos CNAME para cada domínio.
+**Passo 2: verificar o CNAME** (opcional)<br>
+No portal do Azure no Intune, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**. No painel Intune, escolha **Inscrever dispositivos** > **Inscrição do Windows**. Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, selecione **Testar Deteção Automática**.
 
-  Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com. As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
+## <a name="tell-users-how-to-enroll-windows-devices"></a>Informar os utilizadores sobre como inscrever dispositivos Windows
+Informe os seus utilizadores sobre como inscrever os dispositivos Windows e o que esperar após começarem a ser geridos. Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Também pode informar os utilizadores sobre [Que informações pode o administrador de TI ver no dispositivo](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-2.  **Verificar o CNAME**<br>No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**. No painel Intune, escolha **Inscrever dispositivos** > **Inscrição do Windows**. Introduza o URL do domínio verificado do site da empresa na caixa **Especificar o nome de um domínio verificado** e, em seguida, selecione **Testar Deteção Automática**.
-
-3.  **Indique aos utilizadores como devem inscrever os dispositivos e o que esperar quando estiverem a ser geridos.**
-
-    Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Também pode encaminhar os utilizadores para [What can my IT admin see on my device (O que é que o meu administrador de TI pode ver no meu dispositivo)](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
-
-    Para obter mais informações sobre as tarefas do utilizador final, consulte [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
-
-Não é necessário qualquer ação adicional, a não ser que pretenda implementar o Portal da Empresa nos dispositivos.  Os passos 2 e 3 na consola de administração podem ser ignorados em segurança.
+Para obter mais informações sobre as tarefas do utilizador final, consulte [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 

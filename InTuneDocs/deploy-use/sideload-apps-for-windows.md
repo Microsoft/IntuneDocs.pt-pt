@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
    Adira ao [Windows Phone Dev Center](http://go.microsoft.com/fwlink/?LinkId=268442) ao utilizar as informações de conta empresarial quando iniciar sessão para comprar a sua conta de empresa. Este pedido terá de ser autorizado por um responsável da empresa antes de poder receber um certificado de assinatura com código.
 
 2. **Obter um certificado empresarial da Symantec**<br>
-  Compre um certificado no [site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
+  Compre um certificado no [site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado na sua conta do Windows Phone Dev Center receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
 
 3.  **Importar certificados**<br>
     Quando o pedido for aprovado, receberá um e-mail com instruções para importar os certificados. Siga as instruções no e-mail para importar os certificados.

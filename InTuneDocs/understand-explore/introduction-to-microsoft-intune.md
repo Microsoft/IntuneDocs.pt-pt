@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,13 +72,13 @@ Isto, em conjunto com as funcionalidades do sistema operativo para a proteção 
 
 Ao utilizar o Intune com outros serviços do EMS, pode proporcionar a segurança de aplicações móveis à sua organização acima do que é fornecido pelo sistema operativo móvel e pelas próprias aplicações móveis através da configuração de aplicações. Uma aplicação gerida com o EMS tem acesso a um conjunto mais abrangente de proteções de aplicações móveis e dados que incluem:
 
-* [Início de sessão único](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*    [Autenticação multifator](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [Acesso condicional a aplicações (permite o acesso se a aplicação móvel contiver dados empresariais)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [Separação entre dados empresariais e dados pessoais na mesma aplicação](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Política de proteção de aplicações (PIN, encriptação, Guardar Como, área de transferência, etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Eliminação de dados empresariais de uma aplicação móvel](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Suporte à gestão de direitos](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [Início de sessão único](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*    [Autenticação multifator](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [Acesso condicional a aplicações (permite o acesso se a aplicação móvel contiver dados empresariais)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [Separação entre dados empresariais e dados pessoais na mesma aplicação](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Política de proteção de aplicações (PIN, encriptação, Guardar Como, área de transferência, etc.)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Eliminação de dados empresariais de uma aplicação móvel](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Suporte à gestão de direitos](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Imagem que mostra os níveis da segurança de dados de gestão de aplicações](./media/managing-mobile-apps.png)
 

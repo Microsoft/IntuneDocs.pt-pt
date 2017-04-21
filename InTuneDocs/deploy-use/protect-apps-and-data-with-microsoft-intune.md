@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Pode proteger os dados da empresa através de políticas de MAM para dispositivo
 
 Para associar uma aplicação a uma política de MAM, a aplicação tem de incorporar o Software Development Kit (SDK) da Aplicação do Microsoft Intune ou pode utilizar a Ferramenta de Encapsulamento de Aplicações.
 
-Aplicações como as do Microsoft Office têm o SDK da Aplicação Intune incorporado. Pode ver a lista completa de aplicações suportadas na [Galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicações do Microsoft Intune. Escolha a aplicação para ver os cenários e as plataformas suportados e se a aplicação suporta várias identidades.
+Aplicações como as do Microsoft Office têm o SDK da Aplicação Intune incorporado. Pode ver a lista completa de aplicações suportadas na [Galeria de aplicações móveis do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) na página de parceiros de aplicações do Microsoft Intune. Escolha a aplicação para ver os cenários e as plataformas suportados e se a aplicação suporta várias identidades.
 
 Também pode [ativar as suas aplicações de linha de negócios personalizadas incorporadas](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para utilizar com políticas de MAM.
 
 Além de restringir o movimento de dados, se um dispositivo se perder ou for roubado ou se o utilizador já não estiver a trabalhar na sua empresa, pode [apagar seletivamente os dados da empresa](wipe-managed-company-app-data-with-microsoft-intune.md), deixando apenas os dados pessoais.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

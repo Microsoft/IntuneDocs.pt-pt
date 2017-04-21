@@ -14,8 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Para saber mais sobre alertas, notificações e relatórios, consulte [Monitoriz
 ## <a name="intune-capabilities"></a>Funcionalidades do Intune
 O Intune dispõe de uma ampla gama de funcionalidades que vão além das que são apresentadas nestes breves passos de configuração. Alguns exemplos dessas funcionalidades incluem:
 
--   **Controlo do acesso ao Exchange e ao Office 365.** Para obter mais detalhes, consulte [Gerir o acesso da aplicação ao Exchange Online](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) e [Gerir o acesso da aplicação aos serviços do Office 365](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   **Controlo do acesso ao Exchange e ao Office 365.** Para obter mais detalhes, consulte [Gerir o acesso da aplicação ao Exchange Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) e [Gerir o acesso da aplicação aos serviços do Office 365](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 -   **Gestão de dispositivos iOS propriedade da empresa.** Para obter detalhes, consulte [Inscrever dispositivos iOS pertencentes à empresa no Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
@@ -56,9 +57,4 @@ As opções de suporte estão descritas em [Como obter suporte para o Microsoft 
 Ler sobre as [formas comuns de utilizar o Intune](common-ways-to-use-intune.md)
 
 Converter numa [subscrição paga](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

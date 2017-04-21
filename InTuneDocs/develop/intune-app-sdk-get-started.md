@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,14 +38,14 @@ O SDK da Aplicação Intune suporta cenários semelhantes entre iOS e Android e 
 
 Primeiro, _**tem**_ de registar a sua aplicação com o Microsoft Intune e aceitar os termos de registo. Os administradores de TI poderão aplicar a política de proteção de aplicações à aplicação otimizada, que será listada como parceira de aplicações do Intune.
 
-Até o registo ser concluído e confirmado pela equipa do Microsoft Intune, os administradores do Intune não terão a opção de aplicar a política de proteção de aplicações na ligação avançada da sua aplicação. A Microsoft também vai adicionar a sua aplicação à respetiva [página de Parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Nesta página, o ícone da aplicação será apresentado para mostrar que suporta políticas de proteção de aplicações do Intune.
+Até o registo ser concluído e confirmado pela equipa do Microsoft Intune, os administradores do Intune não terão a opção de aplicar a política de proteção de aplicações na ligação avançada da sua aplicação. A Microsoft também vai adicionar a sua aplicação à respetiva [página de Parceiros do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Nesta página, o ícone da aplicação será apresentado para mostrar que suporta políticas de proteção de aplicações do Intune.
 
 Para iniciar o processo de registo, preencha o [Microsoft Intune App Partner Questionnaire (Questionário dos Parceiros da Aplicação do Microsoft Intune)](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
 Utilizaremos os endereços de e-mail listados na sua resposta do questionário para entrar em contacto e continuar o processo de registo. Além disso, utilizamos o seu endereço de e-mail de registo para contactá-lo caso surja alguma questão.
 
 > [!NOTE]
-> Todas as informações recolhidas no questionário e através da correspondência por e-mail com a equipa do Microsoft Intune respeitarão a [Declaração de Privacidade da Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+> Todas as informações recolhidas no questionário e através da correspondência por e-mail com a equipa do Microsoft Intune respeitarão a [Declaração de Privacidade da Microsoft](https://www.microsoft.com/privacystatement/default.aspx).
 
 **O que pode esperar no processo de registo**:
 
@@ -52,7 +53,7 @@ Utilizaremos os endereços de e-mail listados na sua resposta do questionário p
 
 2. Depois de recebermos todas as informações necessárias, ser-lhe-á enviado o Contrato de Parceiro de Aplicações do Microsoft Intune para assinar. Este contrato descreve os termos que a sua empresa tem de aceitar antes de se tornar parceira de aplicações do Microsoft Intune.
 
-3. Também receberá uma notificação quando a sua aplicação for registada com êxito no serviço Microsoft Intune e estiver em destaque no site dos [parceiros do Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+3. Também receberá uma notificação quando a sua aplicação for registada com êxito no serviço Microsoft Intune e estiver em destaque no site dos [parceiros do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 4. Por fim, a ligação avançada da sua aplicação será adicionada à próxima atualização mensal do Serviço Intune. Por exemplo, se as informações de registo estiverem concluídas em julho, a ligação avançada será suportada em meados de agosto.
 
@@ -137,9 +138,4 @@ Este distintivo é um ícone de mala e pode ser visto nos exemplos abaixo:
 * Uma aplicação de manipulação de imagens que possa ler ficheiros **.eps** ou uma aplicação do Adobe que possa ler ficheiros **.ai**.
 
 * Pode encontrar os [itens e diretrizes de distintivos da aplicação Intune](https://github.com/msintuneappsdk/intune-app-partner-badge) no GitHub do Microsoft Intune.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
