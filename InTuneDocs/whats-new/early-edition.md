@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ O Microsoft My Apps agora tem melhor suporte no Managed Browser. Os utilizadores
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Novos ícones para o Managed Browser e o Portal da Empresa <!--918433, 918431-->
 
-O Managed Browser receberá ícones atualizados nas versões para Android e iOS da aplicação. O novo ícone irá incluir o emblema do Intune atualizado para o tornar mais consistente com outras aplicações no Enterprise Mobility + Security (EM+S).
+O Managed Browser receberá ícones atualizados nas versões para Android e iOS da aplicação. O novo ícone irá incluir o emblema do Intune atualizado para o tornar mais consistente com outras aplicações no Enterprise Mobility + Security (EM+S). Pode ver o novo ícone do Managed Browser na [página Novidades na IU da aplicação Intune](whats-new-in-intune-app-ui.md).
 
 O Portal da Empresa também receberá ícones atualizados para as versões para Android, iOS e Windows da aplicação para melhorar a consistência com outras aplicações no EM+S. Estes ícones serão lançados gradualmente nas plataformas a partir de abril até finais de maio.
 
@@ -59,7 +59,7 @@ Os utilizadores já não precisam de iniciar sessão na aplicação Outlook se j
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progresso de início de sessão no Portal da Empresa para Android <!--953374-->
 
-Uma atualização à aplicação Portal da Empresa para Android mostra um indicador de progresso de início de sessão quando o utilizador inicia ou retoma a aplicação. O indicador mostra novos estados de progresso, a começar por "A ligar...", "A iniciar sessão..." e depois "A verificar os requisitos de segurança..." antes de o utilizador poder aceder à aplicação.
+Uma atualização à aplicação Portal da Empresa para Android mostra um indicador de progresso de início de sessão quando o utilizador inicia ou retoma a aplicação. O indicador mostra novos estados de progresso, a começar por "A ligar...", "A iniciar sessão..." e depois "A verificar os requisitos de segurança..." antes de o utilizador poder aceder à aplicação. Pode ver os novos ecrãs para a aplicação Portal da Empresa para Android na [página Novidades na IU da Aplicação Intune](whats-new-in-intune-app-ui.md). 
 
 
 ## <a name="notices"></a>Avisos
@@ -175,11 +175,6 @@ Pode atribuir aplicações iOS compradas em volume (VPP) como instalações em m
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Sincronizar eBooks a partir da Apple VPP Store <!-- 800878 -->
 
 Pode sincronizar eBooks que tenha comprado na loja do programa de compras em volume da Apple com o Intune e atribuí-los aos utilizadores.
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Dispositivos Samsung KNOX Standard partilhados por trabalhadores por turnos <!-- 773753 -->
-
-Pode configurar um dispositivo Samsung KNOX Standard como um dispositivo partilhado por trabalhadores por turnos do portal do Intune. Quando o dispositivo está em modo partilhado, as aplicações, políticas e e-mails no mesmo estão ligados à identidade do utilizador com sessão iniciada no Portal da Empresa.
-Os utilizadores podem iniciar sessão na aplicação Portal da Empresa com as credenciais do Azure Active Directory e as suas aplicações, políticas e definições de e-mail serão automaticamente aplicadas ao dispositivo.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Gestão de vários utilizadores para dispositivos Samsung KNOX Standard <!-- 971988 -->
 
