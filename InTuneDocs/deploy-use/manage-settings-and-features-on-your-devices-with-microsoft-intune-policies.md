@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Para obter detalhes, consulte [Restringir o acesso ao e-mail e aos serviços do 
 - **Políticas de acesso a recursos:** estas políticas funcionam em conjunto para ajudar os seus utilizadores a obterem acesso aos ficheiros e recursos de que precisam para trabalhar com êxito, onde quer que estejam.
 Para obter detalhes, consulte [Ativar o acesso aos recursos da empresa com o Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Para obter uma lista completa das políticas do Intune, consulte [Referência de políticas do Microsoft Intune](microsoft-intune-policy-reference.md).
 
@@ -212,9 +212,4 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Onde posso encontrar as políticas de resolução de problemas?
 
 Consulte [Resolver problemas de políticas no Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

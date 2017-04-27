@@ -83,10 +83,7 @@ As seguintes versões são suportadas:
 -   Clientes de correio Exchange ActiveSync, como o Gmail para Android 4 ou posterior.
 -   Clientes de correio Exchange ActiveSync em **dispositivos Android for Work**: apenas as aplicações **Gmail** e **Nine Work** são suportadas no **perfil de trabalho** em dispositivos Android for Work. Para obter acesso condicional ao seu trabalho com o Android for Work, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work, bem como implementar essas aplicações como uma instalação obrigatória. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > A aplicação Microsoft Outlook para Android e iOS não é suportada.
 
 ## <a name="support-for-pcs"></a>Suporte de PCs
