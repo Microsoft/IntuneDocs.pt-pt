@@ -78,8 +78,6 @@ Pode proteger o acesso ao e-mail do Exchange Online a partir do **Outlook** e de
 - Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior e Android for Work
 - iOS 8.0 e posterior
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 A **autenticação moderna** proporciona um início de sessão baseado na ADAL (Active Directory Authentication Library) aos clientes do Microsoft Office.
 
 -   A autenticação baseada na ADAL permite que os clientes do Office participem na autenticação baseada no browser (também conhecido como autenticação passiva). Para autenticar, o utilizador é direcionado para uma página Web de início de sessão.
