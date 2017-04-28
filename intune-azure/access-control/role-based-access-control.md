@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ A nova função é apresentada na lista no painel **Funções**.
 ## <a name="how-to-assign-a-role"></a>Como atribuir uma função
 
 1. No painel **Funções** da carga de trabalho **Controlo de acesso**, escolha a função incorporada ou personalizada que pretende atribuir.
-2. No painel <*nome da função*> – **Propriedades**, escolha **Gerir** > **Atribuições**.
-    >[!TIP]
-    >Neste painel, também pode editar ou eliminar funções existentes.
+2. No painel <*nome da função*> – **Propriedades**, escolha **Gerir** > **Atribuições**. Neste painel, também pode editar ou eliminar funções existentes.
 3. No painel seguinte, escolha **Atribuir**.
 4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, escolha o seguinte:
     - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.

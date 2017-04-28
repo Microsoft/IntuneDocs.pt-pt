@@ -12,7 +12,7 @@
 
 # [Introdução](get-started/get-started.md)
 ## [Configurar o Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Pré-requisitos]
+### Pré-requisitos
 #### [Dispositivos suportados](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Utilização de rede](get-started/network-bandwidth-use.md)
 ### [Iniciar sessão no Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Proteger os dados da aplicação com MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portal do Azure para políticas de proteção de aplicações](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Preparar-se para configurar políticas de proteção de aplicações](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Criar e implementar políticas de proteção de aplicações](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Preparar-se para configurar políticas de proteção de aplicações para iOS e Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Preparar-se para configurar políticas de proteção de aplicações para o Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Políticas de proteção de aplicações para Android](deploy-use/android-mam-policy-settings.md)
 #### [Políticas de proteção de aplicações para iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Políticas de proteção de aplicações para o Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Criar e implementar políticas de proteção de aplicações para iOS e Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Criar e implementar políticas de proteção de aplicações WIP para o Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Validar as políticas de proteção de aplicações](deploy-use/validate-mobile-application-management.md)
 #### [Monitorizar a conformidade da política de proteção de aplicações](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 

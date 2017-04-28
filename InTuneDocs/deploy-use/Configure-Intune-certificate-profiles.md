@@ -58,8 +58,6 @@ Tem de criar um perfil de certificado Fidedigno antes de poder criar um protocol
 
 -  Windows Phone 8.1 e posterior
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Adicione uma política **Perfil de Certificado Fidedigno**.
 
     Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

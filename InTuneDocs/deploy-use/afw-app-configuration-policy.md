@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
 ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurar as aplicações do Android for Work com as políticas de configuração de aplicações móveis no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Utilize políticas de configuração de aplicações móveis no Microsoft Intune para disponibilizar definições que poderão ser necessárias quando os utilizadores executarem uma aplicação. Por exemplo, uma aplicação poderá exigir que os utilizadores especifiquem:
 
@@ -76,9 +75,4 @@ Quando a aplicação implementada for executada num dispositivo, será executada
 
 > [!TIP]
 > Implemente apenas uma política de configuração de aplicação por cada aplicação para um utilizador.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

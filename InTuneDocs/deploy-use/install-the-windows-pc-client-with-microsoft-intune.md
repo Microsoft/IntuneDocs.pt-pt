@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Pode implementar o software de cliente do Intune em computadores como parte de u
 
 ## <a name="instruct-users-to-self-enroll"></a>Dar instruções aos utilizadores para se inscreverem
 
-Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](http://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web varia consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador.
+Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](https://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web varia consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador.
 
 Se não tiver sido atribuída uma licença do Intune aos utilizadores ou se a Autoridade MDM da organização não tiver sido definida como o Intune, não serão apresentadas quaisquer opções de inscrição aos utilizadores.
 

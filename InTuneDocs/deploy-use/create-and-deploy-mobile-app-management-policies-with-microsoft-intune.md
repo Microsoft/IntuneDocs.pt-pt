@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ As políticas de proteção de aplicações são criadas no portal do Azure. Se 
 
 Siga os passos abaixo para criar políticas de proteção de aplicações:
 
-1. Aceda ao [portal do Azure](http://portal.azure.com) e introduza as suas credenciais.
+1. Aceda ao [portal do Azure](https://portal.azure.com) e introduza as suas credenciais.
 
 2. Selecione **Mais Serviços** e escreva "Intune".
 
@@ -109,7 +109,7 @@ Quando acabar de criar uma política, conforme descrito no procedimento anterior
 
 A partir da versão 1703 do Intune, tem a opção de adicionar aplicações LOB ao Intune em geral ao criar uma nova política de proteção de aplicações. Tem a opção de definir políticas de proteção de aplicações para aplicações LOB que utilizem SDK de MAM sem precisar de permissões totais de implementação de aplicações.
 
-> [!TIP] 
+> [!TIP]
 > Também pode adicionar aplicações LOB ao Intune ao aceder através do fluxo de trabalho do [SDK da Aplicação Intune](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ A partir da versão 1703 do Intune, tem a opção de adicionar aplicações LOB 
 
 ### <a name="to-add-lob-apps-windows"></a>Para adicionar aplicações LOB (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Tem de selecionar o Windows 10 na lista pendente de plataformas ao criar uma nova política de proteção de aplicações.
 
 1.  No painel Adicionar uma política, selecione **Aplicações permitidas** ou **Excluir aplicações** para abrir o painel Aplicações permitidas ou Excluir aplicações.
 
     > [!NOTE]
-    > 
+    >
     - **Aplicações permitidas**: estas são as aplicações que precisam de cumprir esta política.
     - **Excluir aplicações**: estas aplicações estão isentas desta política e podem aceder a dados empresariais sem restrições.
 <br></br>
