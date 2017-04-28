@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 |**Monitorizar a atividade de programas e ficheiros em computadores**|Ativa a monitorização de ficheiros recebidos e ficheiros enviados e a atividade de programas em computadores. Com esta definição, o Endpoint Protection pode monitorizar a altura em que os ficheiros e programas começam a ser executados e alertá-lo relativamente a ações realizadas pelos mesmos ou ações efetuadas nos mesmos.<br /><br />Valor recomendado: **Sim**|
 |**Ficheiros monitorizados**|Permite-lhe escolher se apenas os ficheiros recebidos, os ficheiros enviados ou se todos os ficheiros são monitorizados.<br /><br />Valor recomendado: **Monitorizar todos os ficheiros**|
 |**Ativar a monitorização de comportamento**|Permite ao Endpoint Protection do Microsoft Intune verificar a existência de padrões específicos de atividades suspeitas em computadores cliente.<br /><br />Valor recomendado: **Sim**|
-|**Ativar o Sistema de Inspeção de Rede**|Ativa o Sistema de Inspeção de Rede (NIS) em computadores cliente. O NIS utiliza assinaturas de vulnerabilidades conhecidas do [Centro Microsoft de Proteção Contra Software Maligno](http://go.microsoft.com/fwlink/?LinkId=234249) para ajudar a detetar e a bloquear tráfego de rede malicioso.<br /><br />Valor recomendado: **Sim**|
+|**Ativar o Sistema de Inspeção de Rede**|Ativa o Sistema de Inspeção de Rede (NIS) em computadores cliente. O NIS utiliza assinaturas de vulnerabilidades conhecidas do [Centro Microsoft de Proteção Contra Software Maligno](https://go.microsoft.com/fwlink/?LinkId=234249) para ajudar a detetar e a bloquear tráfego de rede malicioso.<br /><br />Valor recomendado: **Sim**|
 
   ![Definições em tempo real do Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
