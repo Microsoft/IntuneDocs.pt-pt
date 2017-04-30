@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-O Microsoft Intune suporta a inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou da ferramenta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac.
+O Microsoft Intune suporta a inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou da ferramenta [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac.
 
 **Pré-requisito:** um [certificado do serviço Apple Push Notification](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
@@ -39,15 +39,15 @@ Pode inscrever dispositivos iOS inscritos pela empresa com um de três métodos:
 >[!NOTE]
 >Os métodos de inscrição Apple Configurator e Programa de Inscrição de Dispositivos não podem ser utilizados com o método do [gestor de inscrição de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-Por predefinição, é permitido inscrever qualquer dispositivo iOS no Intune. Para bloquear a inscrição de dispositivos pessoais ou pertencentes à empresa, inicie sessão no [Portal de administração do Microsoft Intune](http://manage.microsoft.com) com as suas credenciais de administrador. Selecione **Administração** > **Gestão de Dispositivos Móveis** > **Regras de Inscrição** e, em seguida, desmarque as opções aplicáveis.
+Por predefinição, é permitido inscrever qualquer dispositivo iOS no Intune. Para bloquear a inscrição de dispositivos pessoais ou pertencentes à empresa, inicie sessão no [Portal de administração do Microsoft Intune](https://manage.microsoft.com) com as suas credenciais de administrador. Selecione **Administração** > **Gestão de Dispositivos Móveis** > **Regras de Inscrição** e, em seguida, desmarque as opções aplicáveis.
 
 ## <a name="use-apple-configurator"></a>Utilizar o Apple Configurator
 
 É possível inscrever dispositivos iOS ao exportar um perfil de Inscrição Empresarial e, em seguida, ligar esses dispositivos móveis a um Mac com o Apple Configurator. O Apple Configurator suporta duas formas de inscrição:
 
-- **Inscrição com o Assistente de Configuração**: repõe o dispositivo para as definições de fábrica e prepara-o para a configuração por parte do novo utilizador do dispositivo. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac com o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para pré-configurar a inscrição. Em seguida, são entregues dispositivos aos respetivos utilizadores, que executam o processo do Assistente de Configuração. Este processo configura o dispositivo com as credenciais da escola ou do trabalho e conclui o processo de inscrição. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e o Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+- **Inscrição com o Assistente de Configuração**: repõe o dispositivo para as definições de fábrica e prepara-o para a configuração por parte do novo utilizador do dispositivo. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac com o [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) para pré-configurar a inscrição. Em seguida, são entregues dispositivos aos respetivos utilizadores, que executam o processo do Assistente de Configuração. Este processo configura o dispositivo com as credenciais da escola ou do trabalho e conclui o processo de inscrição. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e o Assistente de Configuração](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
-- **Inscrição Direta**: cria um ficheiro compatível com o Apple Configurator para utilização durante a preparação do dispositivo. Não é efetuada a reposição de fábrica no dispositivo inscrito e não existe nenhuma afiliação de utilizadores. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac a executar o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para o inscrever. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e a Inscrição Direta](ios-direct-enrollment-in-microsoft-intune.md).
+- **Inscrição Direta**: cria um ficheiro compatível com o Apple Configurator para utilização durante a preparação do dispositivo. Não é efetuada a reposição de fábrica no dispositivo inscrito e não existe nenhuma afiliação de utilizadores. Este método requer que o administrador ligue o dispositivo iOS por USB a um computador Mac a executar o [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) para o inscrever. Para obter mais informações, veja [Inscrever dispositivos iOS com o Apple Configurator e a Inscrição Direta](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Utilizar o Programa de Inscrição de Dispositivos (DEP)
 O DEP implementa um perfil de inscrição “por ondas eletromagnéticas” para dispositivos que são adquiridos através do DEP. Quando um utilizador executa o Assistente de Configuração no dispositivo, este é inscrito no Intune. Para obter mais informações, veja [Inscrever dispositivos iOS do Programa de Inscrição de Dispositivos](ios-device-enrollment-program-in-microsoft-intune.md).
