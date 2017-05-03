@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44af7e7805843eeb6a2112afc89057c10c26f835
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 6.  **Carregar a aplicação para o Intune**<br>
     Carregue o ficheiro assinado da aplicação e o seu certificado de assinatura com código para disponibilizar a aplicação aos seus utilizadores finais.
 
-    1.  Na [consola de administração do Intune](http://manage.microsoft.com), clique em **Administração** &gt; **Windows Phone**.
+    1.  Na [consola de administração do Intune](https://manage.microsoft.com), clique em **Administração** &gt; **Windows Phone**.
 
     2.  Clique em **Carregar o Ficheiro Assinado da Aplicação** e inicie sessão com o seu ID de Administrador do Intune.
 

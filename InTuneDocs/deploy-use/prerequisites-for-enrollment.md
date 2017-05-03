@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ A autoridade de MDM define o serviço de gestão que tem permissão para gerir u
 > Considere cuidadosamente se pretende gerir dispositivos móveis apenas com o Intune (serviço online) ou com o System Center Configuration Manager com o Intune (solução de software no local em conjunto com o serviço online). Depois de definir a autoridade de gestão de dispositivos móveis, não pode alterá-la sem a ajuda do Suporte da Microsoft. Veja [O que fazer se escolher a definição de autoridade MDM errada](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) para obter instruções.
 
 
-1.  Na [Consola do administração do Microsoft Intune](http://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**.
+1.  Na [Consola do administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**.
 
 2.  Na lista **Tarefas**, clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
 
