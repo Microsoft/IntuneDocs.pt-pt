@@ -1,5 +1,5 @@
 ---
-title: "Bloquear aplicações sem autenticação moderna | Documentos da Microsoft"
+title: "Bloquear aplicações sem autenticação moderna"
 description: 
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: b2d708e35a7993ff7c5e3db170b1025794b33baf
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0f192c0e41cf3b639cbfdac3f8c4fc3b8167266d
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -26,11 +26,18 @@ ms.lasthandoff: 02/25/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-O acesso condicional com base na aplicação com políticas de proteção de aplicações depende de aplicações que utilizem o método de [autenticação moderna](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), que se trata de uma implementação de OAuth2. A maioria das aplicações modernas do Office para ambiente de trabalho e para dispositivos móveis utilizam autenticação moderna, no entanto, existem aplicações de terceiros e aplicações do Office mais antigas que utilizam outros métodos de autenticação como a autenticação básica e a autenticação baseada em formulários.
+O acesso condicional com base na aplicação com políticas de proteção de aplicações depende de aplicações que utilizem o método de [autenticação moderna](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), que se trata de uma implementação de OAuth2. A maioria das aplicações modernas do Office para ambiente de trabalho e para dispositivos móveis utilizam autenticação moderna, no entanto, existem aplicações de terceiros e aplicações do Office mais antigas que utilizam outros métodos de autenticação como a autenticação básica e a autenticação baseada em formulários.
 
 Para bloquear o acesso a estas aplicações, recomendamos que efetue o seguinte:
 
 * Configure regras de afirmações do ADFS para bloquear protocolos de autenticação não moderna. São fornecidas instruções detalhadas no cenário 3 – [bloquear todo o acesso ao O365, exceto aplicações baseadas no browser](https://technet.microsoft.com/library/dn592182.aspx).
+* Para o **SharePoint Online**, desative a autenticação não moderna no serviço do SharePoint Online através do commandlet PowerShell [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) para definir a propriedade de protocolos de autenticação legada como falsa:
+
+```
+ Set-SPOTenant -LegacyAuthProtocolsEnabled $false
+
+```
+
 
 >[!IMPORTANT]
 >O acesso condicional baseado na aplicação não pode ser utilizado com a autenticação baseada no certificado do Azure Active Directory (Azure AD). Só pode ter um destes configurado de cada vez.
