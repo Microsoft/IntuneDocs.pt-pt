@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Pode criar e implementar diversas políticas que contêm diferentes termos e con
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Criar uma política de termos e condições
 
-1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com) clique em **Política** &gt; **Termos e Condições**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com) clique em **Política** &gt; **Termos e Condições**.
 
     ![Captura de ecrã da política de termos e condições](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Pode criar e implementar diversas políticas que contêm diferentes termos e con
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Implementar uma política de termos e condições
 
-1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
 2.  Na lista **Políticas dos Termos e Condições**, selecione a política que pretende implementar e, em seguida, clique em **Gerir Implementação**.
 
@@ -64,7 +64,7 @@ Pode criar e implementar diversas políticas que contêm diferentes termos e con
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Monitorizar uma política de termos e condições
 
-1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
 2.  Na janela **Criar Novo Relatório**, clique em **Ver Relatório**. O relatório irá abrir com detalhes sobre quais os utilizadores aceitaram os termos e condições implementados.
 
@@ -73,7 +73,7 @@ Ao editar uma política de termos e condições existentes, pode escolher que co
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Trabalhar com múltiplas versões de termos e condições
 
-1.  Na [consola de administração do Microsoft Intune](http://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
+1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), clique em **Política** &gt; **Termos e Condições**.
 
 2.  Selecione a política de termos e condições que pretende editar e, em seguida, clique em **Editar**.
 

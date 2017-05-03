@@ -1,4 +1,4 @@
----
+﻿---
 title: "Definições de política do Exchange ActiveSync | Documentos da Microsoft"
 description: "Utilize a política do Exchange ActiveSync do Intune para configurar definições que lhe permitam controlar funcionalidades em dispositivos geridos pelo Exchange ActiveSync."
 keywords: 
@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 |**Encriptação obrigatória nos cartões de armazenamento**|Requer que os dados que estejam num armazenamento externo, como um cartão SD, sejam encriptados (nos dispositivos suportados).
 <sup>1</sup> Informações adicionais para dispositivos com o Windows 8.1
 
--   Se quiser impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](http://support.microsoft.com/kb/3013816) em cada dispositivo.
+-   Se quiser impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](https://support.microsoft.com/kb/3013816) em cada dispositivo.
 
 -   Se ativar esta definição em dispositivos com o Windows 8.1, todos os utilizadores do dispositivo têm de ter uma conta Microsoft.
 
@@ -82,9 +83,4 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 
 ### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
