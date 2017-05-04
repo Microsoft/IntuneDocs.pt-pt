@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ Pode filtrar a vista da consola de administração do Microsoft Intune para perm
     -   **Acesso só de leitura**
     -   **Suporte técnico – nó Grupos**
 
-    O acesso total e o acesso só de leitura são facilmente compreensíveis. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    O acesso total e o acesso só de leitura são facilmente compreensíveis. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Suporte técnico - nó Grupos** restringe o que o administrador pode ver e fazer ao seguinte:
 
@@ -70,9 +71,4 @@ Pode filtrar a vista da consola de administração do Microsoft Intune para perm
         -   Repor um código de acesso
 
 Da próxima vez que o administrador configurado abrir a consola de administração do Intune, ser-lhe-á concedido o nível de acesso que lhe tiver designado.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
