@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,14 +30,14 @@ Este tópico descreve alguns problemas comuns que pode encontrar na configuraç�
 
 **Erros de início de sessão**
 
-## <a name="403-errors"></a>Erros&403;
+## <a name="403-errors"></a>Erros 403
 Quando inicia sessão na [consola do Lookout MTP](https://aad.lookout.com), vê um erro 403: **não tem autorização para aceder ao serviço** Isto pode acontecer quando o nome de utilizador especificado não é um membro do grupo do Azure Active Directory (Azure AD) que está configurado para aceder ao Lookout MTP.
 
 O Lookout MTP só concede autorização para aceder ao serviço aos utilizadores de um grupo AD configurado. Para saber que grupo está configurado com acesso ao Lookout MTP, contacte o Suporte do Lookout:
 
 * E-mail: enterprisesupport@lookout.com
 * Inicie sessão na [Consola do MTP](http://aad.lookout.com) e navegue até ao módulo **Suporte**.
-* Aceda a https://enterprise.support.lookout.com/hc/en-us/requests e efetue um pedido de suporte.
+* Aceda a: https://enterprise.support.lookout.com/hc/requests e solicite um pedido de suporte.
 
 ## <a name="unable-to-sign-in"></a>Não é possível iniciar sessão
 Verá o seguinte erro se o utilizador de administração global do Azure AD não aceitar a configuração inicial do Lookout.
@@ -55,7 +56,7 @@ Isto pode ocorrer em qualquer um dos seguintes cenários:
 
 ### <a name="device-reported-as-pending"></a>Dispositivo comunicado como **pendente**
 
-Um dispositivo apresentado como **Pendente** significa que o utilizador final não abriu a aplicação Lookout for Work e não tocou no botão **Ativar**. Para obter mais detalhes sobre a ativação de dispositivos com a aplicação Lookout for Work, consulte [É-lhe pedido que instale o Lookout for Work no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) ou [É-lhe pedido que instale o Lookout for Work no seu dispositivo iOS](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
+Um dispositivo apresentado como **Pendente** significa que o utilizador final não abriu a aplicação Lookout for Work e não tocou no botão **Ativar**. Para obter mais detalhes sobre a ativação de dispositivos com a aplicação Lookout for Work, consulte [É-lhe pedido que instale o Lookout for Work no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) ou [É-lhe pedido que instale o Lookout for Work no seu dispositivo iOS](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>O dispositivo está ativo, mas não tem ID de dispositivo
 Na consola do Lookout MTP, se um dispositivo ativo não tiver ID de dispositivo, significa que o utilizador do dispositivo não está no grupo de inscrição. Um dispositivo pode ficar neste estado se o utilizador do dispositivo tiver sido removido do grupo de inscrição ou se o grupo de inscrição tiver sido removido.
@@ -83,14 +84,9 @@ Se o novo utilizador estiver num grupo de inscrição do Lookout MTP, o disposit
 ## <a name="compliance-remediation-workflows"></a>Fluxos de trabalho de remediação de conformidade
 - [É-lhe pedido que instale o Lookout for Work no seu dispositivo Android]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo iOS](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo iOS](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Consulte também
-[Configurar a sua subscrição com o Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Configurar a sua subscrição com o Lookout MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 

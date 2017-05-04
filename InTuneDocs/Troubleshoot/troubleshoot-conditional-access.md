@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Estas condições podem ser visualizadas para cada dispositivo no Portal de Gest
     
         -    Os dispositivos que se encontrarem neste estado necessitam que o utilizador defina um código de acesso de arranque seguro. O utilizador verá uma notificação de dispositivo da aplicação Portal da Empresa que pede para definir um código de acesso para o dispositivo. Depois de tocar na notificação de dispositivo e confirmar a palavra-passe ou PIN existente, selecione a opção **Require PIN to start device (Exigir PIN para iniciar o dispositivo)** no ecrã **Secure start-up (Arranque seguro)**. Em seguida, toque no botão **Check Compliance (Verificar Conformidade)** do dispositivo na aplicação Portal da Empresa. O dispositivo deverá ser detetado como encriptado agora.
     
-        -     Alguns fabricantes de dispositivos encriptam os seus dispositivos através de um PIN predefinido em vez do PIN secreto definido pelo utilizador. O Intune reconhece a encriptação de dispositivos com o PIN predefinido como não sendo segura, dado que este método de encriptação pode colocar os dados do dispositivo em risco de serem acedidos fisicamente por utilizadores mal intencionados. Se for este o problema, pondere utilizar [políticas de proteção de aplicações](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -     Alguns fabricantes de dispositivos encriptam os seus dispositivos através de um PIN predefinido em vez do PIN secreto definido pelo utilizador. O Intune reconhece a encriptação de dispositivos com o PIN predefinido como não sendo segura, dado que este método de encriptação pode colocar os dados do dispositivo em risco de serem acedidos fisicamente por utilizadores mal intencionados. Se for este o problema, pondere utilizar [políticas de proteção de aplicações](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de políticas
 
@@ -119,7 +119,7 @@ Se estes procedimentos não resolverem o problema, o Suporte da Microsoft pode p
 ### <a name="exchange-connector-logs"></a>Registos do Exchange Connector
 
 #### <a name="general-log-information"></a>Informações gerais de registo
-Para ver quais os registos do Exchange Connector que utilizam a [Ferramenta Visualizador de Rastreio do Servidor](ferramenta visualizador de rastreio do servidor (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx'). Esta ferramenta requer que transfira o SDK do Windows Server.
+Para ver que registos do Exchange Connector utilizam a [Ferramenta Visualizador de Rastreio do Servidor](ferramenta visualizador de rastreio do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta ferramenta requer que transfira o SDK do Windows Server.
 
 >[!NOTE]
 >Os registos estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os registos estão contidos numa série de 30 ficheiros de registo com início em *Connector0.log* e fim em *Connector29.log*. Os registos passam de um para outro após terem sido acumulados 10 MB de dados num registo. Depois de os registos chegarem a Connector29, vão recomeçar novamente em Connector0, substituindo os ficheiros de registo anteriores.

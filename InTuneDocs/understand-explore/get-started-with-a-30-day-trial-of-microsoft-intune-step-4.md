@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
-ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
-ms.lasthandoff: 12/14/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 21d1e624069117d905dc7aced33b70abeb0e1109
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -68,7 +68,7 @@ A sua política é apresentada na lista de políticas de configuração e foi im
 
     -   **Android:** [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8.1:** [http://www.windowsphone.com/pt-pt/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **No Windows Phone 8.1:** [http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  Na página **Descrição do software**, indique as informações que pretende que os utilizadores vejam no Portal da Empresa relativamente ao software e, em seguida, escolha **Seguinte**. Estão disponíveis as seguintes definições (este exemplo é relativo ao Skype):
 
