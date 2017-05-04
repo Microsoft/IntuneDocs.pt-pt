@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
-ms.openlocfilehash: fe12a6b890c2d5cba874e820afbe7671b754deb5
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
+ms.lasthandoff: 04/19/2017
 
 ---
 
@@ -28,20 +28,28 @@ ms.lasthandoff: 04/11/2017
 
 Para poder gerir e atribuir aplicações aos utilizadores, tem de adicioná-las ao Intune. O Intune suporta uma vasta gama de tipos de aplicações diferentes, pelo que as opções podem ser diferentes consoante o tipo.
 
-O Intune suporta a adição e atribuição destes tipos de aplicação:
+O Intune permite-lhe adicionar e atribuir estes tipos de aplicação:
 
 ![Tipos de aplicação suportados pelo Intune](./media/app-types.png)
 
 São suportadas as seguintes plataformas. Clique num dos tópicos para obter mais informações sobre como adicionar cada tipo de aplicação.
 
 - [Aplicações da loja Android](/intune-azure/manage-apps/android-store-app)
+- [Aplicações LOB Android](/intune-azure/manage-apps/android-lob-app)
 - [Aplicações da loja iOS](/intune-azure/manage-apps/ios-store-app)
+- [Aplicações LOB iOS](/intune-azure/manage-apps/ios-lob-app)
 - [Aplicações Web (para todas as plataformas)](/intune-azure/manage-apps/web-app)
 - [Aplicações da loja Windows Phone 8.1](/intune-azure/manage-apps/windows-phone-8-1-store-app)
 - [Aplicações da loja Windows](/intune-azure/manage-apps/windows-store-app)
 
-> [!NOTE]
-> Quando adicionar e implementar uma aplicação a partir de uma loja, os utilizadores finais têm de ter uma conta nessa loja para conseguir instalar a aplicação.
+Além disso, algumas aplicações da Microsoft são adicionadas automaticamente pelo Intune ao configurar o seu inquilino. Encontrará uma lista destas aplicações mais adiante neste tópico.
+
+## <a name="before-you-start"></a>Antes de começar
+
+Considere os seguintes pontos antes de começar a adicionar e a atribuir as aplicações.
+
+- Quando adicionar e implementar uma aplicação a partir de uma loja, os utilizadores finais têm de ter uma conta nessa loja para conseguir instalar a aplicação.
+- Algumas aplicações ou itens que implementar poderão estar dependentes de aplicações iOS incorporadas. Por exemplo, se implementar um livro a partir da loja iOS, a aplicação iBooks terá de estar presente no dispositivo. Se tiver removido a aplicação iBooks incorporada, não poderá utilizar o Intune para a restabelecer.
 
 ## <a name="cloud-storage-space"></a>Espaço de armazenamento na cloud
 Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na cloud do Microsoft Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na cloud, o qual é utilizado para armazenar aplicações e atualizações geridas. A subscrição completa inclui 20 GB de espaço de armazenamento.
@@ -53,18 +61,48 @@ Requisitos de espaço de armazenamento na cloud:
 -   Todos os ficheiros de instalação da aplicação têm de estar na mesma pasta.
 -   O tamanho máximo para qualquer ficheiro que carregar é de 2 GB.
 
-## <a name="how-to-create-and-edit-categories-for-apps"></a>Como criar e editar categorias para as aplicações 
+## <a name="how-to-create-and-edit-categories-for-apps"></a>Como criar e editar categorias para as aplicações
 
-As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as aplicações de modo a serem mais fáceis de encontrar por parte dos utilizadores finais no portal da empresa. Pode atribuir uma ou mais categorias a uma aplicação, por exemplo, **Aplicações de programador** ou **Aplicações de comunicação**. Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a categoria que quiser. Utilize os tópicos das plataformas específicas para adicionar uma aplicação e atribuir categorias. Para criar e editar as suas próprias categorias, utilize o seguinte procedimento: 
+As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as aplicações de modo a serem mais fáceis de encontrar por parte dos utilizadores finais no portal da empresa. Pode atribuir uma ou mais categorias a uma aplicação, por exemplo, **Aplicações de programador** ou **Aplicações de comunicação**.
+Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a categoria que quiser. Utilize os tópicos das plataformas específicas para adicionar uma aplicação e atribuir categorias. Para criar e editar as suas próprias categorias, utilize o seguinte procedimento:
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**. 
-3. No painel **Intune**, escolha **Gerir aplicações**. 
-4. Na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Categorias de aplicações**. 
-5. No painel **Categorias aplicações**, é apresentada uma lista das categorias atuais. Escolha uma das seguintes ações: 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+3. No painel **Intune**, escolha **Gerir aplicações**.
+4. Na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Categorias de aplicações**.
+5. No painel **Categorias aplicações**, é apresentada uma lista das categorias atuais. Escolha uma das seguintes ações:
     - **Criar uma categoria** – No painel **Criar categoria**, introduza um nome para a nova categoria. Os nomes podem ser introduzidos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
     - **Editar uma categoria** – Para qualquer categoria na lista, escolha “**...**”. No painel **Propriedades**, pode introduzir um novo nome para a categoria ou eliminá-la.
 
 
+## <a name="apps-added-automatically-by-intune"></a>Aplicações adicionadas automaticamente pelo Intune
 
+As seguintes aplicações publicadas pela Microsoft estão incorporadas no Intune e estão prontas a ser atribuídas:
+
+|||
+|-|-|
+|Nome|Plataforma|Tipo de aplicação|
+|Azure Information Protection|Android|Aplicação da loja Android gerida|
+|Dynamics CRM para Telemóveis|Android|Aplicação da loja Android gerida|
+|Dynamics CRM para Tablets|Android|Aplicação da loja Android gerida|
+|Excel|iOS|Aplicação da loja iOS gerida|
+|Excel|Android|Aplicação da loja Android gerida|
+|Browser Gerido|Android|Aplicação da loja Android gerida|
+|Browser Gerido|iOS|Aplicação da loja iOS gerida|
+|Microsoft Dynamics CRM em Telemóveis|iOS|Aplicação da loja iOS gerida|
+|Microsoft Dynamics CRM em Tablets|iOS|Aplicação da loja iOS gerida|
+|Microsoft Power BI|iOS|Aplicação da loja iOS gerida|
+|Microsoft Power BI|Android|Aplicação da loja Android gerida|
+|Microsoft SharePoint|iOS|Aplicação da loja iOS gerida|
+|Microsoft SharePoint|Android|Aplicação da loja Android gerida|
+|Microsoft Teams|Android|Aplicação da loja Android gerida|
+|Microsoft Teams|iOS|Aplicação da loja iOS gerida|
+|OneDrive para Empresas|iOS|Aplicação da loja iOS gerida|
+|OneDrive para Empresas|Android|Aplicação da loja Android gerida|
+|OneNote|iOS|Aplicação da loja iOS gerida|
+|Outlook|Android|Aplicação da loja Android gerida|
+|Outlook|iOS|Aplicação da loja iOS gerida|
+|Grupos do Outlook|Android|Aplicação da loja Android gerida|
+|Grupos do Outlook|iOS|Aplicação da loja iOS gerida|
+|PowerPoint|iOS|Aplicação da loja iOS gerida|
 

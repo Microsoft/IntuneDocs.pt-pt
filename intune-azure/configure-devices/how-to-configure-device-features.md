@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: fddd4963ceea09b37ad4d8c739f437dbcf3b053e
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -44,8 +44,11 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
     - **macOS**
 6. Na lista pendente **Tipo de perfil**, escolha **Funcionalidades de dispositivos**. 
 7. As definições que pode configurar diferem consoante a plataforma que escolheu. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
-    - [Definições do iOS](device-features-for-ios.md)
-    - [Definições do macOS](device-features-for-macos.md)
+    - [Definições do AirPrint para iOS e MacOS](air-print-settings-for-ios-and-macos.md)
+     - [Definições do AirPlay para iOS](airplay-settings-for-ios-devices.md)
+    - [Definições de esquema do ecrã principal para iOS](home-screen-settings-for-ios.md)
+    - [Definições de notificação das aplicações para iOS](app-notification-settings-for-ios.md)
+    - [Definições de configuração de dispositivos partilhados para iOS](shared-device-settings-for-ios.md)
 
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
