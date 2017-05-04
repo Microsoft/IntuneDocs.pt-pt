@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune? 
+# <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Agora, escolha uma das seguintes opções:
 - **Descrição geral** – Obtenha informações sobre os dispositivos que inscreveu e os sistemas operativos executados em cada dispositivo.
 - **Gerir** – Escolha **Todos os Dispositivos** para ver uma lista de todos os dispositivos que gere.
     Selecione um desses dispositivos na lista para abrir o painel <*nome do dispositivo*> **Descrição Geral**, onde pode selecionar uma das opções:
-    - **Descrição Geral** – Veja as informações gerais do dispositivo, incluindo informações sobre o nome, o proprietário, se é um dispositivo BYOD, quando foi registado pela última vez e muito mais. 
-                
+    - **Descrição Geral** – Veja as informações gerais do dispositivo, incluindo informações sobre o nome, o proprietário, se é um dispositivo BYOD, quando foi registado pela última vez e muito mais.
+
     - **Hardware** – Veja informações mais detalhadas sobre o dispositivo, incluindo o espaço de armazenamento livre, o modelo e fabricante, entre outros.
     ![Inventário do hardware do dispositivo gerido](./media/hardware-inventory.png)
     - **Aplicações Detetadas** – Apresenta uma lista de todas as aplicações que o Intune encontrou instaladas no dispositivo.
@@ -67,6 +67,12 @@ Gera um novo código de acesso para o dispositivo, que será apresentado no pain
 ### <a name="bypass-activation-lock"></a>**Ignorar Bloqueio de Ativação**
 Esta ação remove o bloqueio de ativação de um dispositivo iOS sem o ID Apple e a palavra-passe do utilizador. Depois de ignorar o bloqueio de ativação, o dispositivo ativa novamente o bloqueio de ativação quando a aplicação Encontrar o Meu iPhone é iniciada. Ignore o bloqueio de ativação apenas se tiver acesso físico ao dispositivo.
 
+### <a name="fresh-start"></a>**Fresh Start**
+
+Remove todas as aplicações que foram instaladas nos PCs a executar a Atualização para Criativos do Windows 10 e, em seguida, atualiza automaticamente os PCs para a versão mais recente do Windows.
+Esta ação pode ajudar a remover aplicações (OEM) que vêm frequentemente pré-instaladas em PCs novos. Pode configurar se os dados de utilizador são retidos ao efetuar esta ação. Neste caso, as aplicações e as definições são removidas, mas o conteúdo da pasta Raiz dos utilizadores é mantido.
+
+
 ### <a name="lost-mode"></a>**Modo perdido**
 Se um dispositivo iOS for perdido ou tiver sido roubado, poderá ativar o modo perdido. Esta opção permite-lhe especificar uma mensagem e um número de telefone que serão apresentados no ecrã de bloqueio do dispositivo. Para efetuar este procedimento:
 1.    No painel de propriedades de um dispositivo iOS, escolha **Mais** > **Modo perdido**.
@@ -78,7 +84,7 @@ Para utilizar o modo perdido, o dispositivo tem de ser um dispositivo iOS perten
 ### <a name="locate-device"></a>**Localizar dispositivo**
 Utilize esta ação remota para apresentar a localização de um dispositivo iOS perdido ou roubado num mapa. O dispositivo tem de ser um dispositivo iOS pertencente à empresa, inscrito através do DEP, que esteja no modo supervisionado. Para utilizar esta ação, o dispositivo tem de ter o modo perdido ativado.
 1.    No painel de propriedades de um dispositivo iOS, escolha **Mais** > **Localizar dispositivo**.
-2.    Depois de o dispositivo ser localizado, é apresentada a sua localização no painel **Localizar dispositivo**. 
+2.    Depois de o dispositivo ser localizado, é apresentada a sua localização no painel **Localizar dispositivo**.
     ![Painel Localizar dispositivo](./media/locate-device.png)
 
 >[!NOTE]

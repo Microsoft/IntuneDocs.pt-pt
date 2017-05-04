@@ -1,5 +1,5 @@
 ---
-title: "Utilizar aplicações com acesso condicional para MAM | Documentos da Microsoft"
+title: "Utilizar aplicações com acesso condicionado para MAM"
 description: "Compreenda os conceitos de como o acesso condicional para MAM pode ajudar a controlar as aplicações que têm acesso aos serviços do O365."
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ Segue-se uma lista de propriedades diretamente derivadas do dispositivo:
 * tipoDeSODoDispositivo
 * versãoDeSODoDispositivo
 * nomeaApresentar
+
+> [!NOTE]
+> Nos dispositivos Android:
+  * É preciso que a aplicação Portal da Empresa esteja instalada no dispositivo, mas o utilizador final não precisa de iniciar sessão na aplicação.
+  * O registo do dispositivo tem de ser feito através da aplicação OneDrive ou Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Para remover um dispositivo do registo do Azure AD
 Pode remover o registo do dispositivo através da consola de administração do Azure AD, o que, normalmente, é algo a cargo do administrador de TI.  Também pode ser o utilizador final a fazê-lo no próprio dispositivo.

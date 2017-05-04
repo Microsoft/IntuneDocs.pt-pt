@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ Utilize as informações nesta lista para identificar o nome, o publicador e o I
 -     **Transmissão partilhada de fotografias** – Definido como **Não** para desativar a **Partilha de Fotografias do iCloud** no dispositivo.
 -     **Continuação da atividade** – permita ao utilizador continuar o trabalho que iniciou num dispositivo iOS noutro dispositivo iOS ou macOS (Handoff).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Modo de aplicação única autónomo (apenas supervisionado)
+
+Utilize estas definições para configurar os dispositivos iOS para executar aplicações específicas no modo de aplicação única autónomo. Quando este modo está configurado e a aplicação é executada, o dispositivo é bloqueado para que possa apenas executar essa aplicação. Um exemplo desta funcionalidade é quando configura uma aplicação que permite aos utilizadores fazer um teste no dispositivo. Quando as ações das aplicações forem concluídas ou quando remover esta política, o dispositivo regressa ao estado de funcionamento normal.
+
+### <a name="settings"></a>Definições
+
+- **Nome da aplicação** –introduza o nome da aplicação conforme irá aparecer na lista de aplicações neste painel.
+- **ID do Pacote de Aplicações** -introduza o ID do pacote da aplicação. Para obter ajuda, veja **Referência de ID do pacote para aplicações iOS incorporadas** deste tópico.
+
+Depois de especificar cada nome da aplicação e ID do pacote, escolha **Adicionar** para o acrescentar à lista.
+
+- **Importar** – importe um ficheiro de valores separados por vírgulas (.csv) que contenha uma lista de nomes das aplicações e os IDs de pacotes associados.
+- **Exportar** – exporte os nomes das aplicações e IDs de pacotes associados que configurou para um ficheiro de valores separados por vírgulas (.csv).
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID do pacote para aplicações iOS incorporadas
+
+Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software.
+
+|||
+|-|-|
+|Nome da aplicação|ID do Pacote|
+|App Store|com.apple.AppStore|
+|Calculadora|com.apple.calculator|
+|Calendário|com.apple.mobilecal|
+|Câmara|com.apple.camera|
+|Relógio|com.apple.mobiletimer|
+|Bússola|com.apple.compass|
+|Contactos|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Encontrar Amigos|com.apple.mobileme.fmf1|
+|Localizar iPhone|com.apple.mobileme.fmip1|
+|Centro de Jogos|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Estado de Funcionamento|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Correio|com.apple.mobilemail|
+|Mapas|com.apple.Maps|
+|Mensagens|com.apple.MobileSMS|
+|Música|com.apple.Music|
+|Notícias|com.apple.news|
+|Notas|com.apple.mobilenotes|
+|Números|com.apple.Numbers|
+|Páginas|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Fotografias|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Lembretes|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Definições|com.apple.Preferences|
+|Bolsa|com.apple.stocks|
+|Sugestões|com.apple.tips|
+|Vídeos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|Meteorologia|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Kiosk
 -     **Bloqueio de ativação** – Ative o Bloqueio de ativação em dispositivos iOS supervisionados.
 -     **Aplicação que é executada no modo de local público** – Selecione **Aplicação Gerida** para selecionar uma aplicação que tenha adicionado ao Intune ou **Aplicação da Loja** para especificar o URL de uma aplicação na loja. Não será permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte "Como especificar URLs para lojas de aplicações" mais adiante neste tópico.
@@ -256,4 +317,21 @@ Utilize as informações nesta lista para identificar o nome, o publicador e o I
 -     **JavaScript** – Permita a execução de scripts de Java no browser.
 -     **Avisos de fraude** – Permita avisos de fraude no browser.
 -     **Pop-ups** – Ative ou desative o bloqueador de janelas de pop-up do browser.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>Domínios de e-mail não marcados
+
+No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quando os utilizadores finais recebem um e-mail de um domínio não configurado, o e-mail será marcado como não fidedigno na aplicação Correio do iOS.
+
+
+### <a name="managed-web-domains"></a>Domínios Web geridos
+
+No campo **URL de Domínio Web**, adicione um ou mais URLs à lista. Quando os documentos são transferidos a partir de domínios especificados, estes serão considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Domínios de preenchimento automático de palavras-passe do Safari
+
+No campo **URL de Domínio**, adicione um ou mais URLs à lista. Os utilizadores só podem guardar as palavras-passe Web de URLs nesta lista. Esta definição aplica-se apenas ao browser Safari e aos dispositivos iOS 9.3 e posterior no modo supervisionado. Se não especificar nenhum URL, as palavras-passe poderão ser guardadas a partir de todos os sites.
 
