@@ -33,7 +33,7 @@ Como administrador de TI, pode criar e importar um ficheiro de valores separados
 ## <a name="add-corporate-identifiers"></a>Adicionar identificadores empresariais
 Para criar a lista, crie uma lista de valores de duas colunas, separados por vírgulas (.csv) sem cabeçalho. Adicione o identificador IMEI na coluna da esquerda e os detalhes na coluna da direita. Os detalhes estão limitados a 128 carateres e destinam-se apenas a utilização administrativa. Os detalhes não são apresentados no dispositivo. O limite atual é de 500 linhas por ficheiro .csv.
 
-**Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
+**Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Para criar a lista, crie uma lista de valores de duas colunas, separados por ví
 Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
