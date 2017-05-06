@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 73360154765d53fe1f42e4e97699ad9385bfda6f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -54,8 +54,8 @@ Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em 
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
-1.  Na carga de trabalho **Gerir aplicações**, escolha **Gerir** > **Políticas de Configuração de Aplicação**.
+3. No painel **Intune**, escolha **Aplicações móveis**.
+1.  Na carga de trabalho **Aplicações móveis**, escolha **Gerir** > **Políticas de Configuração da Aplicação**.
 
 2.  No painel da lista de políticas, escolha **Adicionar**.
 

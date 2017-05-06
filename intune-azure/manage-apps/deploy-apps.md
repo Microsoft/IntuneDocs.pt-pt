@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ Terá de efetuar as alterações necessárias aos grupos de utilizadores e dispo
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
-1. Na carga de trabalho **Gerir Aplicações**, escolha **Gerir** > **Aplicações**.
+3. No painel **Intune**, escolha **Aplicações móveis**.
+1. Na carga de trabalho **Aplicações Móveis**, escolha **Gerir** > **Aplicações**.
 2. No painel da lista de aplicações, clique na aplicação que quer atribuir.
 3. No painel <*nome da aplicação*> – **Descrição geral**, escolha **Gerir** > **Atribuições**.
 4. Escolha **Selecionar Grupos** e, no painel **Selecionar grupos**, escolha os grupos do Azure AD aos quais pretende atribuir a aplicação.

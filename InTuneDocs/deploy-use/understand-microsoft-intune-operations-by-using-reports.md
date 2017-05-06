@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Utilize as informações neste tópico para o ajudar a criar e a gerir relatóri
 ## <a name="using-reports"></a>Utilizar relatórios
 Os relatórios do Intune fornecem informações sobre o software, o hardware e as licenças de software na sua organização. Os relatórios podem ajudar a confirmar as suas necessidades atuais e a prever despesas futuras. A área de trabalho **Relatórios** fornece as ferramentas para criar e gerir relatórios. 
 
-### <a name="report-types"></a>Tipos de relatório
+## <a name="report-types"></a>Tipos de relatório
 
 |Tipo de relatório|Descrição|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Os relatórios do Intune fornecem informações sobre o software, o hardware e a
 |**Relatórios do Atestado de Estado de Funcionamento**|Mostra o estado de funcionamento de dispositivos móveis.|
 |**Relatório de Hardware do Mac OS X**|Apresenta detalhes de hardware para todos os dispositivos Mac OS X inscritos nos grupos que selecionar. Para obter informações sobre o inventário de hardware que é recolhido a partir destes dispositivos, veja [Compreender os seus dispositivos com o inventário no Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Relatório de Software do Mac OS X**|Apresenta o software que está instalado em todos os dispositivos Mac OS X nos grupos que selecionou. Este relatório lista o nome do software (como ID de pacote), o nome da versão abreviada (ou amigável), a versão e o número de dispositivos com o software instalado.|
+|**Relatórios do Windows Information Protection**|Mostra informações acerca das operações do Windows Information Protection (WIP) nos dispositivos que gere.|
+|**Relatórios do Atestado de Estado de Funcionamento**|Mostra informações comunicadas pelo serviço Atestado do Estado de Funcionamento do Windows dos dispositivos que geriu.|
 
-#### <a name="to-create-a-report"></a>Para criar um relatório
+## <a name="to-create-a-report"></a>Para criar um relatório
 
 1.  Na consola de administração do Intune, escolha **Relatórios**. Em seguida, escolha o tipo de relatório que pretende gerar, conforme descrito na tabela anterior.
 

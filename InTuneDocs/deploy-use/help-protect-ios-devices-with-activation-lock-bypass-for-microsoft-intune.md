@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
-ms.lasthandoff: 01/10/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -48,6 +48,8 @@ Para ajudar a resolver estes problemas, a Apple introduziu a desativação do Bl
 > [!TIP]
 > O modo supervisionado para dispositivos iOS permite-lhe utilizar a Configuração da Apple para bloquear um dispositivo e limitar a funcionalidade para fins empresariais específicos. O modo supervisionado destina-se, geralmente, apenas para dispositivos dos utilizadores da empresa.
 
+Pode ler mais sobre o Bloqueio de Ativação [aqui](https://support.apple.com/en-us/HT201365).
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>De que forma o Intune o ajuda a gerir o Bloqueio de Ativação
 O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisionados com o iOS 8.0 e posterior. Apenas para dispositivos supervisionados, o Intune pode obter o código de desativação do Bloqueio de Ativação e enviá-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo com um nome de utilizador em branco e o código como a palavra-passe.
 
@@ -56,6 +58,14 @@ O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisi
 -   O utilizador obtém as vantagens de segurança da aplicação Encontrar o Meu iPhone.
 
 -   Pode permitir que os utilizadores trabalhem e saibam que quando um dispositivo tiver de ser reaproveitado, pode extingui-lo ou desbloqueá-lo.
+
+## <a name="before-you-start"></a>Antes de começar
+
+Para poder ignorar o Bloqueio de Ativação nos dispositivos, tem de o ativar primeiro. Para efetuar este procedimento:
+
+1. Utilize as informações no tópico [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) para criar uma [política de configuração de dispositivos](/intune/deploy-use/ios-policy-settings-in-microsoft-intune) iOS.
+2. Na secção **Inscrição**, da página de definições, configure a definição **Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado** como **Sim**.
+3. Guarde a política e implemente-a nos dispositivos nos quais pretende ignorar o Bloqueio de Ativação.
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Como utilizar a desativação de Bloqueio de Ativação a partir da consola de administração do Intune
 > [!IMPORTANT]

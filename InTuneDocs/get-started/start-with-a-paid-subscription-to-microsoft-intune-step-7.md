@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -34,7 +35,7 @@ O Portal da Empresa do Intune proporciona aos utilizadores acesso a aplicações
 -   **A aplicação Portal da Empresa**: uma aplicação disponível nos dispositivos que gere com o Intune. Saiba mais sobre as aplicações Portal da Empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **O site do Portal da Empresa**: um site que permite aos utilizadores finais realizar a maioria das tarefas executáveis a partir da aplicação Portal da Empresa. O URL do Portal da Empresa do Intune é [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Saiba mais sobre este site em [Utilizar o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website).
+- **O site do Portal da Empresa**: um site que permite aos utilizadores finais realizar a maioria das tarefas executáveis a partir da aplicação Portal da Empresa. O URL do Portal da Empresa do Intune é [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Saiba mais sobre este site em [Utilizar o site do Portal da Empresa do Intune](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
 > Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa.
@@ -89,9 +90,4 @@ Depois de guardar as alterações, pode utilizar as ligações fornecidas na par
 >[!div class="step-by-step"]
 
 >[&larr; **Criar políticas e aplicações**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Inscrever dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
