@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 9f1d00d5773aa604ec039d6f64bb901a795468ba
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: f6e3783e2d30d26424f3876d8bd22e3d2c8ef630
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -35,13 +36,12 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Impedir cópias de segurança Android** | Selecione **Sim** para impedir que esta aplicação crie uma cópia de segurança dos dados escolares ou profissionais no [Serviço de Cópia de Segurança do Android](https://developer.android.com/google/backup/index.html). Selecione **Não** para permitir que esta aplicação crie uma cópia de segurança dos dados escolares ou profissionais.| Sim |
 | **Permitir que a aplicação transfira dados para outras aplicações** | Especifique que aplicações podem receber dados desta aplicação: <ul><li> **Aplicações geridas por políticas**: permitir transferências apenas para outras aplicações geridas por políticas.</li> <li>**Todas as aplicações**: permitir a transferência para qualquer aplicação. </li> <li>**Nenhuma**: não permite a transferência de dados para nenhuma aplicação, incluindo outras aplicações geridas por políticas.</li></ul> <p>Existem algumas aplicações e serviços isentos aos quais o Intune poderá permitir a transferência de dados. Veja [Isenções de transferência de dados](#Data-transfer-exemptions) para obter uma lista completa das aplicações e dos serviços.| Todas as aplicações |
 | **Permitir que a aplicação receba dados de outras aplicações** | Especifique que aplicações podem transferir dados para esta aplicação: <ul><li>**Aplicações geridas por políticas**: permitir transferências apenas a partir de outras aplicações geridas por políticas.</li><li>**Todas as aplicações**: permitir a transferência de dados a partir de qualquer aplicação.</li><li>**Nenhuma**: não permite transferências de dados a partir de nenhuma aplicação, incluindo outras aplicações geridas por políticas. </li></ul> <p>Existem algumas aplicações e serviços isentos a partir dos quais o Intune poderá permitir a transferência de dados. Veja [Isenções de transferência de dados](#Data-transfer-exemptions) para obter uma lista completa das aplicações e dos serviços. | Todas as aplicações |
-| **Impedir "Guardar Como"** | Selecione **Sim** para desativar a utilização da opção Guardar Como nesta aplicação. Selecione **Não** se quiser permitir a utilização da opção Guardar Como. | Não |
+| **Impedir "Guardar Como"** | Selecione **Sim** para desativar a utilização da opção Guardar Como nesta aplicação. Selecione **Não** se quiser permitir a utilização da opção Guardar Como. <p>**Selecionar os serviços de armazenamento nos quais os dados empresariais podem ser guardados** <br>Os utilizadores são capazes de guardar nos serviços selecionados (OneDrive para Empresas, SharePoint e Armazenamento Local). Todos os outros serviços serão bloqueados.</p> | Não |
 | **Restringir as operações de corte, cópia e colagem com outras aplicações** | Especifique quando as ações de corte, cópia e colagem podem ser utilizadas com esta aplicação. Escolha entre: <ul><li>**Bloqueado**: não permitir ações de corte, cópia e colagem entre esta aplicação e outras aplicações.</li><li>**Aplicações geridas por políticas**: permitir ações de corte, cópia e colagem entre esta aplicação e outras aplicações geridas por políticas.</li><li>**Aplicações geridas por políticas com colar em**: permitir ações de corte ou cópia entre esta aplicação e outras aplicações geridas por políticas. Permitir que os dados de qualquer aplicação sejam colados nesta aplicação.</li><li>**Qualquer aplicação**: sem restrições para ações de corte, cópia e colagem de e para esta aplicação. | Qualquer aplicação |
 |**Restringir o conteúdo Web a apresentar no Managed Browser** | Selecione **Sim** para impor que as ligações Web na aplicação sejam abertas na aplicação Managed Browser. <br><br> Para os dispositivos não inscritos no Intune, as ligações Web em aplicações geridas por políticas só podem ser abertas na aplicação Managed Browser. <br><br> Se utiliza o Intune para gerir os dispositivos, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md). | Não |
 | **Encriptar dados da aplicação** | Selecione **Sim** para ativar a encriptação de dados escolares ou profissionais nesta aplicação. O Intune utiliza um esquema de encriptação OpenSSL, AES de 128 bits juntamente com o sistema Android Keystore para encriptar dados da aplicação em segurança. Os dados são encriptados de modo síncrono durante as tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. <br><br> O método de encriptação **não** tem certificação FIPS 140-2.  | Sim |
 | **Desativar a sincronização de contactos** | Selecione **Sim** para impedir que a aplicação guarde os dados na aplicação nativa Contactos no dispositivo. Se selecionar **Não**, a aplicação pode guardar os dados na aplicação nativa Contactos no dispositivo. <br><br>Ao efetuar uma eliminação seletiva para remover dados escolares ou profissionais da aplicação, os contactos sincronizados diretamente a partir da aplicação para a aplicação nativa Contactos são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, só é aplicável à aplicação Microsoft Outlook. | Não |
 | **Desativar a impressão** | Selecione **Sim** para impedir que a aplicação imprima dados escolares ou profissionais. | Não |
-
 
   >[!NOTE]
   >O método de encriptação para a definição **Encriptar dados da aplicação** **não** tem certificação FIPS 140-2.
@@ -65,15 +65,15 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
   | com.google.android.tts | Síntese de Voz Google |
   | com.android.providers.settings | Definições de sistema do Android |
   | com.azure.authenticator | Aplicação Azure Authenticator, que é necessária para uma autenticação com êxito em muitos cenários. |
-  | com.microsoft.windowsintune.companyportal | Portal da Empresa do Intune|
+  | com.microsoft.windowsintune.companyportal | Intune Portal da Empresa|
 
   ### <a name="conditional-exemptions"></a>Isenções condicionais
   Estas aplicações e serviços só têm permissão para transferir dados de e para aplicações geridas pelo Intune em determinadas condições.
 
   |Nome da aplicação/serviço | Descrição | Condição de isenção|
   | ------ | ---- | --- |
-  | com.android.chrome | Browser Google Chrome | O Chrome é utilizado para alguns componentes WebView no Android 7.0+ e nunca é ocultado da vista. No entanto, o fluxo de dados de e para a aplicação é sempre restrito.
-  | com.skype.raider | Skype | A aplicação Skype só tem permissão para efetuar determinadas ações que resultam numa chamada telefónica. |
+  | com.android.chrome | Browser Google Chrome | O Chrome é utilizado para alguns componentes WebView no Android 7.0+ e nunca é ocultado da vista. No entanto, o fluxo de dados de e para a aplicação será sempre restringido.
+  | com.skype.raider | Skype | A aplicação Skype é permitida apenas em determinadas ações que resultam numa chamada telefónica. |
   | com.android.providers.media | Fornecedor de conteúdos multimédia do Android | O fornecedor de conteúdos multimédia só tem permissão para a ação de seleção de toque. |
   | com.google.android.gms; com.google.android.gsf | Pacotes dos Serviços do Google Play | Estes pacotes têm permissão para ações do Google Cloud Messaging, tal como notificações push. |
 
@@ -89,9 +89,5 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Verificar novamente os requisitos de acesso após (minutos)** | Configure as seguintes definições: <ul><li>**Tempo Limite**: este é o número de minutos que passam até os requisitos de acesso (definidos anteriormente na política) serem verificados novamente. Por exemplo, um administrador ativa o PIN na política, um utilizador abre uma aplicação de MAM e tem de introduzir um PIN. Quando utiliza esta definição, o utilizador não tem de introduzir um PIN numa aplicação de MAM durante **30 minutos** (valor predefinido).</li><li>**Período de tolerância offline**: este é o número de minutos em que as aplicações de MAM podem ser executadas offline, especifique o tempo (em minutos) antes de os requisitos de acesso da aplicação serem verificados novamente. Valor predefinido = **720** minutos (12 horas). Após este período expirar, a aplicação pedirá uma autenticação de utilizador para o AAD, para que a mesma possa continuar em execução.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá fazer uma eliminação seletiva. Esta eliminação seletiva é a mesma eliminação que aquela que pode ser iniciada pelo administrador no fluxo de trabalho de eliminação de MAM. <br><br> | 90 dias |
 | **Bloquear captura de ecrã e Android Assistant (Android 6.0+)** | Selecione **Sim** para bloquear a captura de ecrã e as capacidades do **Android Assistant** do dispositivo quando utilizar esta aplicação. Selecionar **Sim** também desfocará a imagem de pré-visualização do comutador da aplicação quando utilizar esta aplicação com uma conta escolar ou profissional. | Não |
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+| **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
 

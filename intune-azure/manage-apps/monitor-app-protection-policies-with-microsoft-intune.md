@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Existem três locais diferentes para monitorizar o estado de conformidade:
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
-4. Na carga de trabalho **Gerir aplicações**, escolha **Monitor** > **Estado de utilizador da proteção de aplicações**, para ver a vista de resumo:
+3. No painel **Intune**, escolha **Aplicações móveis**.
+4. Na carga de trabalho **Aplicações móveis**, escolha **Monitor** > **Estado dos utilizadores da proteção de aplicações** para ver a vista de resumo:
 
 ![Mosaico de resumo no painel de gestão de aplicações móveis do Intune](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ A vista detalhada mostra a mensagem de erro, a aplicação que foi acedida quand
 
 Pode encontrar os mesmos relatórios da vista Detalhada, bem como relatórios adicionais que o ajudam com o estado de conformidade da política de MAM:
 
-![Captura de ecrã&4;](../media/MAM-reporting-7.png)
+![Captura de ecrã 4](../media/MAM-reporting-7.png)
 
 -   **Relatório de utilizadores de proteção de aplicações:** descreve as mesmas informações presentes no relatório **Estado de utilizador**, na secção Vista detalhada acima.
 
@@ -109,7 +110,7 @@ Pode encontrar os mesmos relatórios da vista Detalhada, bem como relatórios ad
 
         -   Todas as aplicações estão registadas, mas não estão a receber políticas de MAM.
 
-![Captura de ecrã&2;](../media/MAM-reporting-4.png)
+![Captura de ecrã 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupamento de tabelas
 
@@ -132,14 +133,9 @@ Siga estes passos para gerar o Relatório de proteção de aplicações:
 
     ![Captura de ecrã 7](../media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [Gerir a transferência de dados entre aplicações iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-android-apps.md)
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

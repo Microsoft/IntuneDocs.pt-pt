@@ -1,11 +1,11 @@
----
+﻿---
 title: "Gerir aplicações iOS compradas em volume | Documentos da Microsoft"
 description: "Utilize o Intune para gerir aplicações compradas em volume na Apple ao importar as informações da licença a partir da loja de aplicações, ao controlar a quantidade de licenças que utilizou e ao impedir que instale mais cópias da sua aplicação do que as que tem."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Implementar uma aplicação adquirida em grandes volumes
 
-1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Software Gerido** &gt; **Aplicações Compradas em Volume**. Esta lista mostra todas as aplicações que foram sincronizadas a partir do serviço Apple VPP.
+1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Aplicações** &gt; **Aplicações** &gt; **Aplicações Compradas em Volume**. Esta lista mostra todas as aplicações que foram sincronizadas a partir do serviço Apple VPP.
 
 2.  Escolha a aplicação que pretende implementar, escolha **Gerir Implementação** e, em seguida, utilize as instruções no tópico [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md) para concluir o carregamento, a criação e a implementação da aplicação.
 
@@ -79,22 +80,14 @@ Para recuperar uma licença, tem de alterar a ação de implementação para **D
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação VPP pela primeira vez, é-lhe pedido para se associar ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação.
 
-> [!TIP]
-> Observe a coluna **Estados dos Termos VPP** para ver o estado de aceitação de cada utilizador no qual a aplicação foi implementada.
-
 Se não existirem licenças adicionais disponíveis, a implementação irá falhar.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Para monitorizar as aplicações Apple VPP
-Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças são utilizadas a partir da área de trabalho **Aplicações**, no nó **Software Gerido** &gt; **Aplicações Compradas em Volume**.
+Pode monitorizar as aplicações VPP que foram implementadas e quantas licenças são utilizadas na área de trabalho **Aplicações**, no nó **Aplicações Compradas em Volume**.
 
 > [!TIP]
 > Também pode utilizar a aplicação **Filtros** para examinar o estado de cada instalação da aplicação.
 
 ### <a name="see-also"></a>Consulte também
 [Implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

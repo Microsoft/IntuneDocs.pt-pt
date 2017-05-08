@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 As políticas de proteção de aplicações podem ser aplicadas às aplicações em execução nos dispositivos que podem ou não ser geridos pelo Intune. Para obter uma descrição mais detalhada acerca do funcionamento das políticas de proteção de aplicações e dos cenários suportados pelas políticas de proteção de aplicações do Intune, veja [O que são políticas de proteção de aplicações do Microsoft Intune](what-is-app-protection-policy.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicações
-1.  Na carga de trabalho **Gerir aplicações**, selecione **Gerir** > **Políticas de proteção de aplicações**.
+1.  Na carga de trabalho **Aplicações móveis**, escolha **Gerir** > **Políticas de proteção de aplicações**.
 
 2.  É apresentado o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes. Selecione **Adicionar uma política**.
 
@@ -122,7 +122,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 ## <a name="next-steps"></a>Passos seguintes
 [Monitorizar o estado do utilizador e de conformidade](monitor-app-protection-policies-with-microsoft-intune.md)
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-android-apps.md)
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-ios-apps.md)
 

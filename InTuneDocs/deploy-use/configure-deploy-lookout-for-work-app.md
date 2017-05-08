@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +55,7 @@ Este artigo explica-lhe como configurar e implementar a aplicação Lookout for 
 
 ## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (versão Enterprise da aplicação Lookout)
 
-1. Certifique-se de que a **gestão de iOS** está configurada no seu dispositivo. Para obter instruções sobre como configurar o seu dispositivo para a gestão de iOS consulte [Configurar a gestão de dispositivos iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
+1. Certifique-se de que a **gestão de iOS** está configurada no seu dispositivo. Para obter instruções sobre como configurar o dispositivo para a gestão de iOS, veja [Configurar a gestão de dispositivos iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 2. **Volte a assinar** a aplicação Lookout for Work para iOS. A Lookout faz a distribuição da respetiva aplicação Lookout for Work para iOS fora da iOS App Store. **Antes de distribuir a aplicação**,tem de voltar a assinar a aplicação com o seu iOS Enterprise Developer Certificate. Para obter instruções detalhadas para voltar a assinar a aplicação Lookout for Work para iOS, consulte [Lookout for Work iOS app re-signing process (Processo de reassinatura da aplicação Lookout for Work para iOS – em inglês)](https://personal.support.lookout.com/hc/articles/114094038714) no site da Lookout.
 
@@ -87,12 +87,11 @@ Este artigo explica-lhe como configurar e implementar a aplicação Lookout for 
   Selecione a opção **Instalação Necessária** para exigir que a aplicação Lookout seja instalada no dispositivo do utilizador.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>O que acontece quando a aplicação implementada é aberta no dispositivo
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md. Quando o utilizador abre o Lookout for Work no dispositivo, é-lhe pedido que ative a aplicação e escolha a opção Iniciar sessão com o Azure Active Directory. Pode encontrar instruções detalhadas sobre o fluxo do utilizador final nos tópicos seguintes:
 
-Quando o utilizador abre o Lookout for Work no dispositivo, é-lhe pedido para ativar a aplicação e selecionar a opção Iniciar sessão com o Azure Active Directory. Pode encontrar instruções detalhadas sobre o fluxo do utilizador final nos tópicos seguintes:
+* [É-lhe pedido que instale o Lookout for Work no seu dispositivo Android](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [É-lhe pedido que instale o Lookout for Work no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [Tem de resolver uma ameaça que o Lookout for Work encontrou no seu dispositivo Android](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Próximos passos
 * [Criar política de conformidade do dispositivo Lookout no Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

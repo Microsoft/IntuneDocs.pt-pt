@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
+3. No painel **Intune**, escolha **Aplicações móveis**.
 1. No painel **Aplicações Móveis**, escolha **Configuração** > **Loja Windows para Empresas**.
 2. Clique em **Ativar**.
 3. Se ainda não o fez, clique na ligação para se inscrever na Loja Windows para Empresas e associe a sua conta conforme explicado anteriormente.
@@ -67,7 +67,7 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## <a name="synchronize-apps"></a>Sincronizar aplicações
 
-1. Na carga de trabalho **Gerir aplicações**, escolha **Configuração** > **Loja Windows para Empresas**.
+1. Na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Loja Windows para Empresas**.
 2. Clique em **Sincronização** para obter as aplicações que comprou na Loja Windows para o Intune.
 
 ## <a name="assign-apps"></a>Atribuir aplicações

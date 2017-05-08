@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 4e20ab540aa66be0c553b6e185bbdf755a1c5aa3
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 406b864557a8dd6e5b75f599544d9c4b6ace9d22
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -30,7 +30,7 @@ O Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Lookout permi
 
 Pré-requisitos da política de conformidade com a Defesa Contra Ameaças para Dispositivos Móveis do Lookout:
 
-- [Subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](set-up-your-subscription-with-lookout-mtp.md)
+- [Configurar a subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](set-up-your-subscription-with-lookout-mtp.md)
 - [Ativar a ligação Lookout no Intune](enable-lookout-mtp-connection-in-intune.md)
 - [Configurar e implementar a aplicação Lookout for Work](configure-and-deploy-lookout-for-work-apps.md)
 
