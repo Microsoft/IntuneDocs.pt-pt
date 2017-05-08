@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 36530602813467c184b4f262719a56cedbaa2ba9
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 2a970badf5ac18a05115a72dc267ee455ba4628d
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -70,7 +70,7 @@ Esta é conhecida como a abordagem "meticulosa". Neste caso, um membro da equipa
 
 ### <a name="it-tech-fair"></a>Feira técnica de TI
 
-Em alternativa, pode organizar uma feira técnica de TI para inscrever utilizadores no Intune. Neste evento, o grupo TI montaria um stand de assistência à inscrição no Intune, onde os utilizadores poderiam receber informações sobre a inscrição no Intune, colocar questões e obter assistência relativa ao processo de inscrição. Esta opção pode ser vantajosa tanto para o grupo de TI como para o utilizador, especialmente durante as fases iniciais da implementação do Intune.
+Em alternativa, pode organizar uma feira técnica de TI para inscrever utilizadores no Intune. Neste evento, o grupo de TI montaria um stand de assistência à inscrição no Intune, onde os utilizadores poderiam receber informações sobre a inscrição no Intune, colocar questões e obter assistência relativa ao processo de inscrição. Esta opção pode ser vantajosa tanto para o grupo de TI como para o utilizador, especialmente durante as fases iniciais da implementação do Intune.
 
 Eis um exemplo de um plano de implementação do Intune com grupos visados, linhas cronológicas e abordagens de inscrição:
 

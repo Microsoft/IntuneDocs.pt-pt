@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 307a4aec1d9b86a92bde9114fdfd45846a82a2f3
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -84,7 +84,7 @@ Todos os utilizadores que serão visados para a implementação do Office 365 e 
 
 #### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tarefa 5: definir o Intune como a Autoridade de Gestão de Dispositivos Móveis
 
-Antes de poder configurar, gerir e inscrever dispositivos através do Intune, tem de definir o Intune como a Autoridade de Gestão de Dispositivos Móveis. A definição da Autoridade de Gestão de Dispositivos é concluída na área de trabalho Administração do Portal de Administração do Intune.
+Para poder configurar, gerir e inscrever dispositivos através do Intune, tem de definir o Intune como a Autoridade de Gestão de Dispositivos. A definição da Autoridade de Gestão de Dispositivos é concluída na área de trabalho Administração do Portal de Administração do Intune.
 
 -   Saiba mais sobre [como definir a Autoridade de Gestão de Dispositivos](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
 

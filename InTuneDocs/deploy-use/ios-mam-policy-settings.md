@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Encriptar dados da aplicação** | Para aplicações geridas por políticas, os dados inativos são encriptados através do esquema de encriptação ao nível do dispositivo fornecido pelo iOS. Quando for necessário um PIN, os dados são encriptados de acordo com as definições na política de proteção de aplicações. <br><br> Aceda à documentação oficial da Apple [aqui](https://support.apple.com/HT202739) para ver quais os módulos de encriptação iOS que têm a certificação FIPS 140-2 ou a certificação FIPS 140-2 pendente. <br><br> Especifique quando os dados escolares ou profissionais são encriptados nesta aplicação. Escolha entre: <ul><li>**Quando o dispositivo está bloqueado**: todos os dados de aplicação associados a esta política são encriptados quando o dispositivo está bloqueado.</li><li>**Quando o dispositivo está bloqueado e existem ficheiros abertos**: todos os dados de aplicação associados a esta política são encriptados quando o dispositivo está bloqueado, exceto para os dados dos ficheiros atualmente abertos na aplicação.</li><li>**Após o reinício do dispositivo**: todos os dados de aplicação associados a esta política são encriptados quando o dispositivo é reiniciado, até que o dispositivo seja desbloqueado pela primeira vez.</li><li>**Utilizar as definições do dispositivo:** os dados de aplicação são encriptados com base nas predefinições no dispositivo. Quando ativa esta definição, o utilizador tem de configurar e utilizar um PIN para aceder ao respetivo dispositivo.  Se não existir um PIN, as aplicações não serão abertas e será pedido ao utilizador para definir um PIN com a mensagem "A sua organização requer que ative primeiro um PIN do dispositivo para aceder a esta aplicação". </li></ul> | Quando o dispositivo está bloqueado |
 | **Desativar a sincronização de contactos** | Selecione **Sim** para impedir que a aplicação guarde os dados na aplicação nativa Contactos no dispositivo. Se selecionar **Não**, a aplicação pode guardar os dados na aplicação nativa Contactos no dispositivo. <br><br>Ao efetuar uma eliminação seletiva para remover dados escolares ou profissionais da aplicação, os contactos sincronizados diretamente a partir da aplicação para a aplicação nativa Contactos são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, só é aplicável à aplicação Microsoft Outlook. | Não |
 | **Desativar a impressão** | Selecione **Sim** para impedir que a aplicação imprima dados escolares ou profissionais. | Não |
-
+| **Selecionar os serviços de armazenamento nos quais os dados empresariais podem ser guardados** | Os utilizadores são capazes de guardar nos serviços selecionados (OneDrive para Empresas, SharePoint e Armazenamento Local). Todos os outros serviços serão bloqueados. | OneDrive para Empresas e SharePoint |
 
 > [!NOTE]
 > Nenhuma das definições de reposicionamento de dados controla a funcionalidade de gestão Open-in da Apple em dispositivos iOS. Para gerir a funcionalidade Open-in da Apple, veja [Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
@@ -72,6 +72,7 @@ Existem algumas aplicações e serviços de plataforma isentos aos quais a polí
 | **Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root** |  Selecione **Sim** para bloquear a execução desta aplicação em dispositivos com jailbreak ou root. O utilizador continuará a poder utilizar esta aplicação para tarefas pessoais, mas terá de utilizar um dispositivo diferente para aceder aos dados escolares ou profissionais nesta aplicação. | Sim |
 | **Verificar novamente os requisitos de acesso após (minutos)** | Configure as seguintes definições: <ul><li>**Tempo Limite**: este é o número de minutos que passam até os requisitos de acesso (definidos anteriormente na política) serem verificados novamente. Por exemplo, um administrador ativa o PIN na política, um utilizador abre uma aplicação de MAM e tem de introduzir um PIN. Quando utiliza esta definição, o utilizador não tem de introduzir um PIN numa aplicação de MAM durante **30 minutos** (valor predefinido).</li><li>**Período de tolerância offline**: este é o número de minutos em que as aplicações de MAM podem ser executadas offline, especifique o tempo (em minutos) antes de os requisitos de acesso da aplicação serem verificados novamente. Valor predefinido = **720** minutos (12 horas). Após este período expirar, a aplicação pedirá uma autenticação de utilizador para o AAD, para que a mesma possa continuar em execução.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá fazer uma eliminação seletiva. Esta eliminação seletiva é a mesma eliminação que aquela que pode ser iniciada pelo administrador no fluxo de trabalho de eliminação de MAM. <br><br> | 90 dias |
+| **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
 
 ##  <a name="add-ins-for-outlook-app"></a>Suplementos para a aplicação Outlook
 
