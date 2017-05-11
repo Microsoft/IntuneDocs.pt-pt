@@ -1,5 +1,6 @@
 # Introdução
 ## [O que é a pré-visualização do portal do Azure?](introduction/what-is-microsoft-intune.md)
+## [O que é o Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Funcionalidades do Intune no Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Introdução
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [Aplicações LOB iOS](manage-apps/ios-lob-app.md)
 #### [Aplicações Web](manage-apps/web-app.md)
 #### [Aplicações da loja Windows Phone 8.1](manage-apps/windows-phone-8-1-store-app.md)
+#### [Aplicações LOB para Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [Aplicações da loja Windows](manage-apps/windows-store-app.md)
+#### [Aplicações LOB do Windows](manage-apps/windows-line-of-business-app.md)
 ### [Atribuir aplicações](manage-apps/deploy-apps.md)
 ### [Monitorizar aplicações](manage-apps/monitor-apps.md)
-### [Utilizar políticas de configuração de aplicações](manage-apps/app-configuration-policies.md)
+### [Utilizar perfis de configuração de aplicações](manage-apps/app-configuration-policies.md)
+### [Utilizar perfis de aprovisionamento de aplicações iOS](manage-apps/ios-app-provisioning-profile.md)
 ### [Eliminação seletiva de aplicações](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Trabalhar com aplicações compradas em volume](manage-apps/volume-purchased-apps.md)
@@ -96,8 +100,8 @@
 ### [Criar e atribuir políticas de proteção de aplicações](manage-apps/app-protection-policies.md)
 ### [Preparar-se para políticas de proteção de aplicações WIP](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [Criar e atribuir políticas de proteção de aplicações WIP](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Definições do Android](manage-apps/android-app-protection-policy-settings.md)
-#### [Definições do iOS](manage-apps/ios-app-protection-policy-settings.md)
+### [Definições do Android](manage-apps/android-app-protection-policy-settings.md)
+### [Definições do iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validar as políticas de proteção de aplicações](manage-apps/validate-app-protection-policies.md)
 ### [Monitorizar o estado dos utilizadores da proteção de aplicações](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [Gerir a transferência de dados entre aplicações iOS](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -186,7 +190,7 @@
 ### [Criar uma política de conformidade do Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Criar uma política de conformidade para iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Criar uma política de conformidade para Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Criar ações de não conformidade](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Monitorizar a compatibilidade do dispositivo](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
