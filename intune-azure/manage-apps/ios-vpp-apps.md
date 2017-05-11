@@ -1,12 +1,12 @@
 ---
-title: "Gerir aplicações iOS compradas em grandes volumes"
+title: "Gerir aplicações compradas em volume iOS | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como pode sincronizar as aplicações que comprou em volume na loja iOS para o Intune e, em seguida, gerir e controlar a utilização das mesmas."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -53,8 +54,8 @@ Antes de começar, terá de obter um token VPP da Apple e carregá-lo para a sua
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Outros** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
-1.  Na carga de trabalho **Gerir Aplicações**, escolha **Gerir** > **Tokens iOS VPP**.
+3. No painel **Intune**, escolha **Aplicações móveis**.
+1.  Na carga de trabalho **Aplicações Móveis**, escolha **Configurar** > **Tokens iOS VPP**.
 2.  No painel da lista de tokens VPP, clique em **Adicionar**.
 3.  No painel Novo Token VPP, especifique as seguintes informações:
     - **Ficheiro de token VPP** – Se ainda não o fez, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Após a inscrição, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
@@ -69,7 +70,7 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir uma aplicação comprada em volume
 
-1. Na carga de trabalho **Gerir Aplicações**, escolha **Gerir** > **Aplicações Licenciadas**.
+1. Na carga de trabalho **Aplicações Móveis**, escolha **Gerir** > **Aplicações Licenciadas**.
 2. No painel da lista de aplicações, escolha a aplicação que quer atribuir e, em seguida, escolha “**...**” > **Atribuir Grupos**.
 3. No painel <*nome da aplicação*> – **Grupos Atribuídos**, escolha **Gerir** > **Grupos Atribuídos**.
 4. Selecione **Atribuir Grupos** e, em seguida, no painel **Selecionar grupos**, selecione o utilizador ou grupos de dispositivos do Azure AD aos quais pretende atribuir a aplicação.
@@ -86,5 +87,5 @@ Para recuperar uma licença, tem de alterar a ação de atribuição para **Desi
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação VPP pela primeira vez, é-lhe pedido para se associar ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação.
 
-Quando implementa uma aplicação VPP como Disponível, a licença e o conteúdo de aplicação são implementados diretamente a partir da loja de aplicações.
+Quando atribui uma aplicação VPP como Disponível, a licença e o conteúdo da aplicação são atribuídos diretamente a partir da loja de aplicações.
 
