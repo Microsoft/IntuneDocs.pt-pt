@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 2a011bf390bb55d685f580cfc782b21ff0c2ebd5
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 289635354e7e2244857f56655de6ee227bf97ee7
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -36,7 +37,7 @@ Para poder configurar o acesso condicional, verifique o seguinte:
 
 - A sua versão do Exchange tem de ser o **Exchange 2010 SP1 ou posterior**. Matriz de Servidor de Acesso de Cliente (CAS) do Exchange Server é suportada.
 
-- Tem de utilizar o [Exchange Connector do Exchange Active Sync no local](https://docs.microsoft.com/intune-azure/conditional-access/install-intune-on-premises-exchange-connector), que liga o Intune ao Exchange no local.
+- Tem de utilizar o [Exchange Connector do Exchange Active Sync no local](install-intune-on-premises-exchange-connector.md), que liga o Intune ao Exchange no local.
 
     >[!IMPORTANT]
     >O conector do Exchange no local é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. Deve também assegurar que o conetor do Exchange para o seu inquilino está instalado **em apenas um computador**.

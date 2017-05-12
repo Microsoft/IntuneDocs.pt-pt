@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
-ms.openlocfilehash: 20af19a2051a8ebb6f1b2103d761d87fbfdf5da2
+ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
+ms.openlocfilehash: 69ae0926631edc00cc2dc12be559d366e1623140
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/11/2017
 
 ---
 
@@ -72,7 +72,7 @@ Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
+3. No painel **Intune**, escolha **Aplicações móveis**.
 4. Na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Categorias de aplicações**.
 5. No painel **Categorias aplicações**, é apresentada uma lista das categorias atuais. Escolha uma das seguintes ações:
     - **Criar uma categoria** – No painel **Criar categoria**, introduza um nome para a nova categoria. Os nomes podem ser introduzidos em apenas um idioma e não são traduzidos pelo Intune. Quando terminar, clique em **Criar**.
@@ -114,13 +114,13 @@ As seguintes aplicações publicadas pela Microsoft estão incorporadas no Intun
 
 Escolha um dos seguintes tópicos para saber como adicionar aplicações para cada plataforma ao Intune:
 
-- [Aplicações da loja Android](/intune-azure/manage-apps/android-store-app)
-- [Aplicações LOB Android](/intune-azure/manage-apps/android-lob-app)
-- [Aplicações da loja iOS](/intune-azure/manage-apps/ios-store-app)
-- [Aplicações LOB iOS](/intune-azure/manage-apps/ios-lob-app)
-- [Aplicações Web (para todas as plataformas)](/intune-azure/manage-apps/web-app)
-- [Aplicações da loja Windows Phone 8.1](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Aplicações LOB para Windows Phone](/intune-azure/manage-apps/windows-phone-line-of-business-app)
-- [Aplicações da loja Windows](/intune-azure/manage-apps/windows-store-app)
-- [Aplicação LOB do Windows](/intune-azure/manage-apps/windows-line-of-business-app)
+- [Aplicações da loja Android](android-store-app.md)
+- [Aplicações LOB Android](android-lob-app.md)
+- [Aplicações da loja iOS](ios-store-app.md)
+- [Aplicações LOB iOS](ios-lob-app.md)
+- [Aplicações Web (para todas as plataformas)](web-app.md)
+- [Aplicações da loja Windows Phone 8.1](windows-phone-8-1-store-app.md)
+- [Aplicações LOB para Windows Phone](windows-phone-line-of-business-app.md)
+- [Aplicações da loja Windows](windows-store-app.md)
+- [Aplicação LOB do Windows](windows-line-of-business-app.md)
 

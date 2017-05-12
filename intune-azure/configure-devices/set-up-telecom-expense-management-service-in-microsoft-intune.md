@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Para assegurar que recolheu apenas a utilização de dados relativa a linhas tel
 
 Conforme as necessidades da sua organização, terá de criar, no mínimo, duas categorias de dispositivos (por exemplo, Empresarial e Pessoal) e criar grupos de dispositivos dinâmicos para cada categoria. Se necessário, pode criar categorias adicionais para a sua organização.
 
-Estas categorias serão apresentadas aos utilizadores durante a inscrição. Consoante a categoria que os utilizadores selecionarem, o dispositivo inscrito será movido para o grupo de dispositivos correspondente. Para obter passos sobre como criar categorias de dispositivos, veja [Map devices to groups (Mapear dispositivos para grupos)](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
+Estas categorias serão apresentadas aos utilizadores durante a inscrição. Consoante a categoria que os utilizadores selecionarem, o dispositivo inscrito será movido para o grupo de dispositivos correspondente. Para obter passos sobre como criar categorias de dispositivos, veja [Map devices to groups (Mapear dispositivos para grupos)](../enroll-devices/how-to-use-device-group-mapping.md).
 
   ![Captura de ecrã do painel Adicionar uma política](../media/tem-dynamic-membership-rules.png)
 

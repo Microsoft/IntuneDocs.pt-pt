@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Se utilizar o Exchange ActiveSync, no local ou alojado na cloud, pode ativar a g
 
 A seguinte tabela mostra métodos de inscrição do Intune, bem como as funcionalidades suportadas e os requisitos de cada método. As funcionalidades e os requisitos encontram-se descritos abaixo. Os termos seguintes são utilizados na tabela:
 
-- **Apagar** – indica se o dispositivo tem de ser apagado antes de os utilizadores poderem inscrever o dispositivo. O termo "apagar" significa uma reposição de fábrica do dispositivo, a qual remove todos os dados. Para obter mais informações, veja [Utilizar a eliminação completa ou seletiva em dispositivos](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Apagar** – indica se o dispositivo tem de ser apagado antes de os utilizadores poderem inscrever o dispositivo. O termo "apagar" significa uma reposição de fábrica do dispositivo, a qual remove todos os dados. Para obter mais informações, veja [Utilizar a eliminação completa ou seletiva em dispositivos](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Afinidade** – associa dispositivos a utilizadores. Necessário para gestão de aplicações móveis (MAM) e acesso condicional a dados da empresa. Para obter mais informações, veja [Afinidade do utilizador](enroll-ios-devices-using-device-enrollment-program.md).
 - **Bloqueio** – indica se os utilizadores estão impedidos de anular a inscrição dos seus dispositivos na gestão. Os utilizadores podem anular a inscrição dos seus dispositivos em todas as plataformas ao utilizar a aplicação Portal da Empresa. Eles não podem utilizar os menus do sistema operativo nativo para anular a inscrição.
 
@@ -70,7 +71,7 @@ A seguinte tabela mostra métodos de inscrição do Intune, bem como as funciona
 
 
 ## <a name="byod"></a>BYOD
-Os utilizadores da inscrição "Bring your own device" instalam a aplicação Portal da Empresa e inscrevem o respetivo dispositivo. Isto permite que os utilizadores se liguem à rede da empresa e adiram ao domínio ou ao Azure Active Directory. Para a maioria das plataformas, tem de ativar a inscrição BYOD para vários cenários COD. Pode bloquear a inscrição de dispositivos iOS e Android pessoais. Veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) para obter instruções.
+Os utilizadores da inscrição "Bring your own device" instalam a aplicação Portal da Empresa e inscrevem o respetivo dispositivo. Isto permite que os utilizadores se liguem à rede da empresa e adiram ao domínio ou ao Azure Active Directory. Para a maioria das plataformas, tem de ativar a inscrição BYOD para vários cenários COD. Pode bloquear a inscrição de dispositivos iOS e Android pessoais. Veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](set-enrollment-restrictions.md#set-device-type-restrictions) para obter instruções.
 
 ## <a name="corporate-owned-devices"></a>Dispositivos pertencentes à empresa
 Os dispositivos pertencentes à empresa (COD) podem ser geridos com o portal do Azure. Os dispositivos iOS podem ser inscritos diretamente através das ferramentas fornecidas pela Apple. Todos os tipos de dispositivos podem ser inscritos por um administrador ou gestor utilizando o gestor de inscrição de dispositivos. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à empresa para ativar cenários COD.
