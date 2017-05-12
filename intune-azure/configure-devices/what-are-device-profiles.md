@@ -1,5 +1,5 @@
 ---
-title: "O que são perfis de dispositivo no Microsoft Intune?"
+title: "O que são perfis de dispositivo no Microsoft Intune? | Documentos da Microsoft"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba mais sobre os perfis de dispositivo do Intune e de que forma podem ajudar a gerir e a proteger os dispositivos na sua empresa."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Quando abrir esta carga de trabalho, verá as seguintes opções:
 
 ## <a name="getting-started"></a>Introdução
 
-O fluxo de trabalho para a criação de perfis de dispositivo é semelhante para todos os perfis. Leia [Como criar perfis de configuração de dispositivos do Microsoft Intune](/intune-azure/configure-devices/how-to-create-device-profiles) para obter mais informações sobre como criar perfis. Continue a ler para obter informações específicas sobre a criação de definições para cada tipo de perfil.
+O fluxo de trabalho para a criação de perfis de dispositivo é semelhante para todos os perfis. Leia [Como criar perfis de configuração de dispositivos do Microsoft Intune](how-to-create-device-profiles.md) para obter mais informações sobre como criar perfis. Continue a ler para obter informações específicas sobre a criação de definições para cada tipo de perfil.
 
 Pode gerir as seguintes funcionalidades nos seus dispositivos:
 
@@ -51,15 +52,15 @@ As restrições de dispositivos permitem-lhe controlar uma grande variedade de d
 Para obter mais informações, veja [Como configurar as definições de restrições de dispositivos](how-to-configure-device-restrictions.md). Suporta: Android, iOS, macOS, Windows 10 e Windows 10 Team.
 
 ## <a name="email"></a>E-mail
-Os perfis de e-mail permitem-lhe criar, implementar e monitorizar definições de e-mail do Exchange ActiveSync em dispositivos geridos por si. Ao implementar estas definições, assegura a consistência, reduz as chamadas de suporte e permite que os utilizadores finais acedam ao e-mail da empresa nos dispositivos pessoais deles sem qualquer configuração obrigatória por parte dos mesmos.
+Os perfis de e-mail permitem-lhe criar, atribuir e monitorizar definições de e-mail do Exchange ActiveSync em dispositivos geridos por si. Ao atribuir estas definições, assegura a consistência, reduz as chamadas de suporte e permite que os utilizadores finais acedam ao e-mail da empresa nos dispositivos pessoais deles sem precisarem de efetuar qualquer configuração.
 Para obter mais informações, veja [Como configurar definições de e-mail](how-to-configure-email-settings.md). Suporta: Android, iOS, Windows Phone 8.1 e Windows 10.
 
 ## <a name="wi-fi"></a>Wi-Fi
-Utilize perfis de Wi-Fi para implementar definições de redes sem fios em utilizadores e dispositivos na sua organização. Quando implementa um perfil Wi-Fi, os seus utilizadores terão acesso ao seu Wi-Fi empresarial sem ser necessário serem eles a configurá-lo.
+Utilize perfis de Wi-Fi para atribuir definições de redes sem fios a utilizadores e dispositivos na sua organização. Quando atribui um perfil Wi-Fi, os utilizadores terão acesso ao seu Wi-Fi empresarial sem qualquer necessidade de configuração.
 Para obter mais informações, veja [Como configurar definições de Wi-Fi](how-to-configure-wi-fi-settings.md). Suporta: Android, iOS, macOS e Windows 8.1 (apenas de importação).
 
 ## <a name="vpn"></a>VPN
-As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um perfil de ligação VPN para iniciar uma ligação com o servidor VPN. Utilize os perfis VPN para implementar definições de VPN em utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede.
+As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um perfil de ligação VPN para iniciar uma ligação com o servidor VPN. Utilize os perfis VPN para atribuir definições de VPN a utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede.
 Para obter mais informações, veja [Como configurar definições de VPN](how-to-configure-vpn-settings.md).
 Suporta: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 e Windows 10.
 

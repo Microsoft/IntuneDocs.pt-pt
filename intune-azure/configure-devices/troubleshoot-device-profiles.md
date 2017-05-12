@@ -1,12 +1,12 @@
 ---
-title: Resolver problemas de perfis de dispositivos no Microsoft Intune
+title: "Resolução de problemas de perfis de dispositivo no Microsoft Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: se estiver com dificuldades, utilize este tópico para o ajudar a resolver problemas com perfis de dispositivos do Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e2d0adc25417db96a2aeb1e57c2ef444dc96ff4d
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -30,8 +31,8 @@ ms.lasthandoff: 03/13/2017
 
 As informações neste tópico podem servir para o ajudar a resolver problemas comuns sobre perfis de dispositivos do Intune.
 
-## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Quanto tempo é necessário para que os dispositivos móveis obtenham a política ou as aplicações após a implementação?
-Quando uma política ou aplicação é implementada, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de cinco minutos.
+## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Quanto tempo é necessário para que os dispositivos móveis obtenham a política ou as aplicações após a atribuição?
+Quando uma política ou aplicação é atribuída, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de cinco minutos.
 
 Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, o Intune faz mais três tentativas.  Se o dispositivo estiver offline (por exemplo, se estiver desligado ou se não estiver ligado a uma rede), pode não receber as notificações. Neste caso, o dispositivo irá obter a política na entrada seguinte agendada com o serviço do Intune, da seguinte forma:
 
@@ -50,12 +51,12 @@ Se o dispositivo tiver acabado de se inscrever, a frequência de entrada será m
 Os utilizadores também podem abrir a aplicação Portal da Empresa e sincronizar o dispositivo para verificar imediatamente a política a qualquer altura.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
-Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que deem entrada ou durante as entradas agendada regulares.  Quando segmenta um dispositivo ou utilizador especificamente com uma ação, tal como uma eliminação, bloqueio, reposição de código de acesso, implementação de aplicação, implementação de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma implementação de política, o Intune começará imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço do Intune para receber estas atualizações.
+Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que deem entrada ou durante as entradas agendada regulares.  Quando segmenta um dispositivo ou utilizador especificamente com uma ação, tal como uma eliminação, um bloqueio, uma reposição de código de acesso, uma atribuição de aplicações, uma atribuição de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma atribuição de política, o Intune começará imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço do Intune para receber estas atualizações.
 
 Outras alterações, como a revisão das informações de contacto no portal da empresa, não dão origem a uma notificação imediata para os dispositivos.
 
-## <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Se forem implementadas várias políticas no mesmo utilizador ou dispositivo, como posso saber que definições irão ser aplicadas?
-Quando são implementadas duas ou mais políticas no mesmo utilizador ou dispositivo, a avaliação relativa à definição que vai ser aplicada é realizada ao nível das definições individuais:
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Se forem atribuídas várias políticas ao mesmo utilizador ou dispositivo, como posso saber que definições serão aplicadas?
+Quando são atribuídas duas ou mais políticas ao mesmo utilizador ou dispositivo, a avaliação relativa à definição que vai ser aplicada é realizada ao nível das definições individuais:
 
 -   As definições de políticas de conformidade têm sempre precedência sobre as definições de políticas de configuração.
 
@@ -63,25 +64,25 @@ Quando são implementadas duas ou mais políticas no mesmo utilizador ou disposi
 
 -   Se uma definição de política de configuração entrar em conflito com uma definição de uma política de configuração diferente, este conflito será apresentado na consola do Intune. Tem de resolver manualmente esses conflitos.
 
-## <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>O que acontece quando as políticas de gestão de aplicações móveis entram em conflito entre si? Qual delas é aplicada à aplicação?
-Os valores em conflito são as definições mais restritivas disponíveis numa política de MAM, exceto no que respeita aos campos de entrada de números (como tentativas de PIN antes da reposição).  Os campos de entrada de números serão definidos para os valores que teria uma política de MAM que criasse na consola através da opção de definições recomendadas.
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicações estão em conflito entre si? Qual delas é aplicada à aplicação?
+Os valores em conflito são as definições mais restritivas disponíveis numa política de proteção de aplicação, exceto no que respeita aos campos de entrada de números (como tentativas de PIN antes da reposição).  Os campos de entrada de números serão definidos para os valores que teria uma política de MAM que criasse na consola através da opção de definições recomendadas.
 
-Os conflitos ocorrem quando duas definições de políticas são iguais.  Por exemplo, se configurou duas políticas MAM idênticas, à exceção da definição de copiar/colar.  Neste cenário, a definição de copiar/colar será definida para o valor mais restritivo, mas as definições restantes serão aplicadas conforme configuradas.
+Os conflitos ocorrem quando duas definições de perfil são iguais.  Por exemplo, se configurou duas políticas MAM idênticas, à exceção da definição de copiar/colar.  Neste cenário, a definição de copiar/colar será definida para o valor mais restritivo, mas as definições restantes serão aplicadas conforme configuradas.
 
-Se uma política for implementada na aplicação e entrar em vigor e, em seguida, for implementada uma segunda, a primeira implementada terá precedência e manter-se-á aplicada, ao passo que a segunda estará em conflito. Se forem aplicadas ao mesmo tempo, o que significa que nenhuma tem precedência sobre a outra, estarão ambas em conflito. As definições em conflito serão definidas para os valores mais restritivos.
+Se for atribuído um perfil à aplicação e entrar em vigor e, em seguida, for atribuído um segundo, o primeiro atribuído terá precedência e manter-se-á aplicado, ao passo que o segundo estará em conflito. Se forem atribuídos ao mesmo tempo, o que significa que nenhum perfil tem precedência sobre o outro, estarão ambos em conflito. As definições em conflito serão definidas para os valores mais restritivos.
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando políticas personalizadas do iOS entram em conflito?
-O Intune não avalia o payload dos ficheiros do Apple Configurator nem de políticas OMA-URI (Open Mobile Alliance Uniform Resource Identifier) personalizadas. Serve apenas como o mecanismo de entrega.
+O Intune não avalia o payload dos ficheiros Apple Configuration nem dos perfis OMA-URI (Open Mobile Alliance Uniform Resource Identifier) personalizados. Serve apenas como o mecanismo de entrega.
 
-Quando implementar uma política personalizada, confirme que as definições configuradas não entram em conflito com a política de conformidade, de configuração ou outras políticas personalizadas. No caso de uma política personalizada com conflitos de definições, a ordem pela qual as definições são aplicadas é aleatória.
+Quando atribuir um perfil personalizado, confirme que as definições configuradas não entram em conflito com a política de conformidade, de configuração ou outras políticas personalizadas. No caso de um perfil personalizado com conflitos de definições, a ordem pela qual as definições são aplicadas é aleatória.
 
-## <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>O que acontece quando uma política é eliminada ou deixa de ser aplicável?
-Quando elimina uma política ou remove um dispositivo de um grupo no qual a política foi implementada, a política e as definições serão removidos do dispositivo de acordo com as listas seguintes.
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>O que acontece quando um perfil é eliminado ou deixa de ser aplicável?
+Quando elimina um perfil ou remove um dispositivo de um grupo no qual a política foi atribuída, o perfil e as definições serão removidos do dispositivo de acordo com as listas seguintes.
 
 ### <a name="enrolled-devices"></a>Dispositivos inscritos
 
 - Perfis de Wi-Fi, VPN, certificado e e-mail: estes perfis são removidos de todos os dispositivos inscritos suportados.
-- Todos os outros tipos de políticas:
+- Todos os outros tipos de perfil:
     - **Dispositivos Windows e Android**: as definições não são removidas do dispositivo.
     - **Dispositivos Windows Phone 8.1**: as definições seguintes são removidas:
         - Palavra-passe obrigatória para desbloquear os dispositivos móveis
@@ -115,44 +116,13 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
         - Permitir roaming de dados
         - Permitir sincronização automática em roaming
 
-### <a name="windows-pcs-running-the-intune-client-software"></a>PCs Windows com o software de cliente Intune
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivos, mas as alterações ainda não foram aplicadas
+Os dispositivos Windows Phone não permitem que as políticas de segurança definidas através de MDM ou EAS sejam reduzidas em termos de segurança depois de serem configuradas. Por exemplo, defina um **Número mínimo de carateres de palavra-passe** para 8 e, em seguida, tente reduzir para 4. O perfil mais restritivo já foi aplicado ao dispositivo.
 
-- **Definições do Endpoint Protection**: as definições são restauradas para os valores recomendados. A única exceção é a definição **Aderir ao Serviço de Proteção Ativa Microsoft**, na qual o valor predefinido é **Não**. Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-- **Definições de atualizações de software**: as definições são repostas para o estado predefinido do sistema operativo. Para obter detalhes, consulte [Manter os PCs com Windows atualizados com atualizações de software no Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
-- **Definições do Microsoft Intune Center**: todas as informações de contacto para suporte que foram configuradas pela política são eliminadas dos computadores.
-- **Definições da Firewall do Windows**: as definições são repostas para o estado predefinido do sistema operativo do computador. Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-
-
-## <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>Posso atualizar as políticas num dispositivo para garantir que estão atualizadas (aplica-se a PCs Windows que executem apenas o software de cliente do Intune)?
-
-1.  Em qualquer grupo de dispositivos, selecione em que dispositivos pretende atualizar as políticas e selecione **Tarefas Remotas** &gt; **Atualizar Políticas**.
-2.  Escolha **Tarefas Remotas**, no canto inferior direito da consola de administração do Intune, para verificar o estado das tarefas.
-
-
-
-### <a name="how-do-i-know-that-my-profile-was-assigned-to-a-device"></a>Como posso saber que o meu perfil foi atribuído a um dispositivo?
-
-Na consola de administração do Intune, todos os dispositivos têm um separador de política em **Propriedades do Dispositivo**. Cada política tem um **Valor Pretendido** e um **Estado**. O valor pretendido é o que esperava obter com a atribuição da política. O estado é o que é realmente aplicado quando todas as políticas aplicáveis ao dispositivo, bem como as restrições e os requisitos de hardware e do sistema operativo, são consideradas em conjunto. Estados possíveis:
-
--   **Em conformidade**: o dispositivo recebeu a política e comunica ao serviço que está em conformidade com a definição.
-
--   **Não aplicável**: a definição de política não é aplicável. Por exemplo, as definições de e-mail para dispositivos iOS não seriam aplicadas a um dispositivo Android.
-
--   **Pendente**: a política foi enviada para o dispositivo, mas ainda não comunicou o estado ao serviço. Por exemplo, a encriptação no Android requer que o utilizador final ative a encriptação e, por isso, poderá estar pendente.
-
-
-> [!NOTE]
-> Lembre-se de que quando duas políticas com diferentes níveis de restrição se aplicam ao mesmo dispositivo ou utilizador, na prática, é aplicada a política mais restrita.
-
-
-## <a name="i-changed-a-device-restriction-policy-but-the-changes-havent-taken-effect"></a>Alterei uma política de restrição de dispositivos, mas as alterações ainda não foram aplicadas
-Os dispositivos Windows Phone não permitem que as políticas de segurança definidas através de MDM ou EAS sejam reduzidas em termos de segurança depois de serem configuradas. Por exemplo, defina um **Número mínimo de carateres de palavra-passe** para 8 e, em seguida, tente reduzir para 4. A política mais restritiva já foi aplicada ao dispositivo.
-
-Consoante a plataforma de dispositivo, se pretender alterar a política para um valor menos seguro, poderá ter de repor as políticas de segurança.
+Consoante a plataforma de dispositivo, se pretender alterar o perfil para um valor menos seguro, poderá ter de repor as políticas de segurança.
 Por exemplo, no ambiente de trabalho do Windows, percorra a partir da direita para abrir a barra **Atalhos** e selecione **Definições** &gt; **Painel de Controlo**.  Selecione a miniaplicação **Contas de Utilizador** .
 No menu de navegação esquerdo, existe uma ligação **Repor Políticas de Segurança** na parte inferior. Escolha a mesma e, em seguida, escolha o botão **Repor Políticas**.
-Outros dispositivos MDM, tal como Android, Windows Phone 8.1 e posterior e iOS, poderão ter de ser extintos e reinscritos no serviço para que possa aplicar uma política menos restritiva.
-
+Outros dispositivos MDM, tal como Android, Windows Phone 8.1 e posterior e iOS, poderão ter de ser extintos e reinscritos no serviço para que possa aplicar um perfil menos restritivo.
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -499,4 +469,4 @@ Outros dispositivos MDM, tal como Android, Windows Phone 8.1 e posterior e iOS,
 --->
 
 ### <a name="next-steps"></a>Próximos passos
-Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](../introduction/how-to-get-support-for-microsoft-intune.md).

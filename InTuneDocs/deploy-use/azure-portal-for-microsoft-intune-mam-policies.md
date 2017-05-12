@@ -14,9 +14,11 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
-ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -40,7 +42,7 @@ O portal do Azure é utilizado para criar e gerir políticas de proteção de ap
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Iniciar sessão no portal do Azure e personalizar a página inicial
 
-1.  Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as credenciais do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+1.  Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as credenciais do Intune.
 
     ![Captura de ecrã da página de início de sessão do portal do Azure](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -48,7 +50,7 @@ O portal do Azure é utilizado para criar e gerir políticas de proteção de ap
 
     ![Captura de ecrã do dashboard do portal do Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Selecione **Mais serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro de caixa de texto.
+3.  Selecione **Mais serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
     ![Captura de ecrã do menu Procurar com o Intune realçado](../media/AppManagement/MAM-Azure-Portal-1.png)
 
@@ -64,9 +66,4 @@ O portal do Azure é utilizado para criar e gerir políticas de proteção de ap
 
 ## <a name="next-steps"></a>Passos seguintes
 [Preparar-se para configurar políticas de proteção de aplicações](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
