@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
     ![Definição do Windows para os dados de diagnóstico e utilização](./media/telemetry-basic.png)
 
-    Pode configurar esta definição manualmente ou utilizar um perfil de restrição de dispositivos do Intune para o Windows 10 e posterior. Para o fazer, configure a definição **Geral** > **Submissão de dados de diagnóstico**, pelo menos, para **Básico**. Para obter mais informações sobre os perfis de dispositivo, veja [Como configurar definições de restrições de dispositivos](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+    Pode configurar esta definição manualmente ou utilizar um perfil de restrição de dispositivos do Intune para o Windows 10 e posterior. Para o fazer, configure a definição **Geral** > **Submissão de dados de diagnóstico**, pelo menos, para **Básico**. Para obter mais informações sobre os perfis de dispositivo, veja [Como configurar definições de restrições de dispositivos](how-to-configure-device-restrictions.md).
 
 - Na consola clássica de administração do Intune, existem quatro definições que controlam o comportamento das atualizações do software. Estas definições fazem parte da política de configuração geral dos dispositivos móveis e computadores com o Windows 10:
     - **Permitir atualizações automáticas**
@@ -142,7 +143,7 @@ Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atuali
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Atualizações de Software**.
 4. No painel **Atualizações de Software**, escolha **Gerir** > **Anéis de Atualização do Windows 10**.
-5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **...** > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
+5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **...**  > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
 
 > [!IMPORTANT]
 > Quando emitir um comando de pausa, os dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo.

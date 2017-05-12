@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Utilize as seguintes informações para decidir qual o método a utilizar para i
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS propriedade do utilizador (BYOD)
 
-Se os utilizadores quiserem inscrever os dispositivos pessoais BYOD (traga o seu próprio dispositivo), o único método de inscrição disponível é ao transferir a aplicação do Portal da Empresa para iOS a partir da App Store e seguir as instruções de inscrição na aplicação. Uma vez inscritos, os utilizadores podem ligar-se à rede da empresa, associar o domínio ou o Azure Active Directory e obter acesso aos recursos empresariais. Pode bloquear a inscrição de dispositivos iOS pessoais. Veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) para obter instruções.
+Se os utilizadores quiserem inscrever os dispositivos pessoais BYOD (traga o seu próprio dispositivo), o único método de inscrição disponível é ao transferir a aplicação do Portal da Empresa para iOS a partir da App Store e seguir as instruções de inscrição na aplicação. Uma vez inscritos, os utilizadores podem ligar-se à rede da empresa, associar o domínio ou o Azure Active Directory e obter acesso aos recursos empresariais. Pode bloquear a inscrição de dispositivos iOS pessoais. Veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](set-enrollment-restrictions.md#set-device-type-restrictions) para obter instruções.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

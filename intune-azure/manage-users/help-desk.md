@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: 723830f686991fe13de13f75c6a5d1bc84e6920b
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8cf12e434518c9f06c105a22f3b7aef2613fcdb0
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Ajudar os utilizadores com o Portal de resolução de problemas no Microsoft Intune
@@ -35,13 +36,14 @@ Um administrador do Intune pode atribuir a permissão de operador de suporte té
 4. Escreva um **Nome da atribuição** (obrigatório), uma **Descrição da atribuição** (opcional) e, em seguida, atribua **Membros (Grupos)** e **Âmbito (Grupos)**.
 5. Os membros da função Operador de Suporte Técnico podem agora utilizar o portal de resolução de problemas.
 
-Para obter mais informações sobre as funções do Intune, veja [Funções do Intune (RBAC)](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control).
+Para obter mais informações sobre as funções do Intune, veja [Funções do Intune (RBAC)](../access-control/role-based-access-control.md).
 
 ## <a name="access-the-troubleshooting-portal"></a>Aceder ao portal de resolução de problemas
 
 O pessoal de suporte técnico e os administradores do Intune podem aceder ao portal de resolução de problemas de duas formas:
-- No [portal do Azure](https:portal.azure.com), selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune** e, em seguida, no painel de navegação à esquerda, selecione **Resolução de problemas**. As outras cargas de trabalho são visíveis no painel de navegação à esquerda, mas não estão disponíveis.
-![Captura de ecrã da carga de trabalho da Resolução de problemas do Intune com a ligação Selecionar Utilizador](media/help-desk-user.png)
+- No [portal do Azure](https://portal.azure.com), selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune** e, em seguida, no painel de navegação à esquerda, selecione **Resolução de problemas**. As outras cargas de trabalho são visíveis no painel de navegação à esquerda, mas não estão disponíveis.
+
+![Captura de ecrã da carga de trabalho da Resolução de Problemas do Intune com a ligação Selecionar Utilizador](media/help-desk-user.png)
 - Abra [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) num browser. Apenas o Portal de resolução de problemas está visível.
 
 ## <a name="use-the-troubleshooting-portal"></a>Utilizar o portal de resolução de problemas

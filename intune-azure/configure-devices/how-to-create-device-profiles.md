@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **Plataforma** – Selecione o tipo de plataforma para o perfil que quer criar.
     - **Tipo de perfil** – Selecione o tipo de perfil que quer criar. A lista de tipos disponíveis varia consoante a plataforma que escolheu.
     - **Definições** – Veja os tópicos seguintes para obter mais informações sobre as definições para cada tipo de perfil:
-        -  [Definições das funcionalidades de dispositivos](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [Definições de restrição de dispositivos](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-        -  [Definições de e-mail](/intune-azure/configure-devices/how-to-configure-email-settings)
-        -  [Definições de VPN](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-        -  [Definições de Wi-Fi](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-        -  [Definições de atualização da edição do Windows 10](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-        -  [Definições de certificado](/intune-azure/configure-devices/how-to-configure-certificates)
-        -  [Definições do Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [Definições de educação](/intune-azure/configure-devices/how-to-configure-education-settings)
-        -  [Definições personalizadas](/intune-azure/configure-devices/how-to-configure-custom-settings)
+        -  [Definições das funcionalidades de dispositivos](how-to-configure-device-features.md)
+        -  [Definições de restrição de dispositivos](how-to-configure-device-restrictions.md)
+        -  [Definições de e-mail](how-to-configure-email-settings.md)
+        -  [Definições de VPN](how-to-configure-vpn-settings.md)
+        -  [Definições de Wi-Fi](how-to-configure-wi-fi-settings.md)
+        -  [Definições de atualização da edição do Windows 10](how-to-configure-windows-10-edition-upgrade.md)
+        -  [Definições de certificado](how-to-configure-certificates.md)
+        -  [Definições do Windows Information Protection](how-to-configure-windows-information-protection.md)
+        -  [Definições de educação](how-to-configure-education-settings.md)
+        -  [Definições personalizadas](how-to-configure-custom-settings.md)
 
     ![Criar perfil de dispositivo](./media/create-device-profile.png)
 4. Quando tiver terminado de configurar as definições, no painel **Criar Perfil**, escolha **Criar**.
@@ -58,5 +59,5 @@ Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis 
 
 
 ### <a name="next-steps"></a>Passos seguintes
-Para obter mais informações sobre como atribuir perfis de dispositivo, veja [Como atribuir perfis de dispositivo com o Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
+Para obter mais informações sobre como atribuir perfis de dispositivo, veja [Como atribuir perfis de dispositivo com o Microsoft Intune](how-to-assign-device-profiles.md).
 

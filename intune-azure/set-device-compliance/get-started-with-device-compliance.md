@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ Neste tópico, irá aprender o seguinte:
 - O que precisa para começar a criar uma política de conformidade do dispositivo.
 - Uma vista rápida sobre o que pode ver e fazer no portal de pré-visualização do Azure do Intune. 
 
-Se a conformidade do dispositivo for uma novidade para si, aconselhamos que leia [este tópico](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) para saber o que é a conformidade do dispositivo e como pode utilizá-la na sua organização.
+Se a conformidade do dispositivo for uma novidade para si, aconselhamos que leia [este tópico](what-is-device-compliance.md) para saber o que é a conformidade do dispositivo e como pode utilizá-la na sua organização.
 
 ##  <a name="pre-requisites"></a>Pré-requisitos
 
