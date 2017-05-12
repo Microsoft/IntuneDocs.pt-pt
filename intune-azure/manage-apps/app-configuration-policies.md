@@ -1,12 +1,12 @@
 ---
-title: "Como utilizar políticas de configuração de aplicação"
+title: "Como utilizar as políticas de configuração de aplicações do Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como utilizar políticas de configuração de aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -40,7 +41,7 @@ Se os utilizadores introduzirem estas definições incorretamente, isso pode aum
 
 As políticas de configuração de aplicação podem ajudar a eliminar estes problemas, permitindo-lhe atribuir estas definições aos utilizadores de uma política antes de executarem a aplicação. As definições são então fornecidas automaticamente e os utilizadores não têm de executar nenhuma ação.
 
-Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, implemente-a. As definições de política serão utilizadas sempre que a aplicação as verificar (normalmente, a primeira vez for executada).
+Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política serão utilizadas sempre que a aplicação as verificar (normalmente, a primeira vez for executada).
 
 > [!TIP]
 > Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 8.0 e posterior. Suporta os seguintes tipos de instalação de aplicações:
@@ -48,7 +49,7 @@ Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em 
 > -   **Aplicação iOS gerida da loja de aplicações**
 > -   **Pacote de aplicações para iOS**
 >
-> Para obter mais informações sobre os tipos de instalação de aplicações, veja [How to add an app to Microsoft Intune (Como adicionar uma aplicação ao Microsoft Intune)](/intune-azure/manage-apps/add-apps).
+> Para obter mais informações sobre os tipos de instalação de aplicações, veja [How to add an app to Microsoft Intune (Como adicionar uma aplicação ao Microsoft Intune)](add-apps.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração de aplicação
 

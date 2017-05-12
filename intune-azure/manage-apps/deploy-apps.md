@@ -1,12 +1,12 @@
 ---
-title: "Como atribuir aplicações a grupos"
+title: "Como atribuir aplicações a grupos | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: depois de adicionar uma aplicação ao Intune, deve atribuí-la a grupos de utilizadores ou dispositivos."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ As aplicações podem ser atribuídas a dispositivos, independentemente de estes
 |Atribuir aplicações encapsuladas ou aplicações que incorporem o SDK do Intune (para políticas de proteção de aplicações)|Sim|Sim|
 |Atribuir aplicações como Disponíveis|Sim|Sim|
 |Atribuir aplicações como Obrigatórias|Sim|Não|
-|Desinstalar aplicações|Sim|Sim|
+|Desinstalar aplicações|Sim|Não|
 |Os utilizadores finais instalam as aplicações disponíveis a partir da aplicação do Portal da Empresa|Sim|Não|
 |Os utilizadores finais instalam as aplicações disponíveis a partir do Portal da Empresa baseado na Web|Sim|Sim|
 
@@ -53,21 +54,21 @@ O aspeto mais importante a ter em atenção é que o conceito de grupos subordin
 ||||||
 |-|-|-|-|-|
 |**Intune Clássico (antes da migração do inquilino)**|-|**Intune Azure (após a migração do inquilino estar concluída)**|-|**Mais informações**|
-|**Objetivo de implementação de grupos principais**|**Objetivo de implementação de grupos subordinados**|**Objetivo de atribuição resultante para os membros comuns de grupos principais e subordinados anteriores**|**Ação resultante do objetivo de atribuição para os membros do grupo principal**|-|    
+|**Objetivo de atribuição de grupos principais**|**Objetivo de atribuição de grupos subordinados**|**Objetivo de atribuição resultante para os membros comuns de grupos principais e subordinados anteriores**|**Ação resultante do objetivo de atribuição para os membros do grupo principal**|-|    
 |Disponível|Necessário|Necessário e Disponível|Disponível|O objetivo de implementação Necessário e Disponível significa que as aplicações atribuídas como necessárias também podem ser vistas na aplicação Portal da Empresa.
-|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução: remova o objetivo de implementação "Não Aplicável" do grupo principal do Intune.
+|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução: remova o objetivo de atribuição “Não Aplicável” do grupo principal do Intune.
 |Necessário|Disponível|Necessário e Disponível|Necessário|-|
 |Necessário e Disponível<sup>1</sup>|Disponível|Necessário e Disponível|Necessário e Disponível|-|    
 |Necessário|Não Aplicável|Necessário|Necessário|-|    
 |Necessário e Disponível|Não Aplicável|Necessário e Disponível|Necessário e Disponível|-|    
 |Necessário|Desinstalar|Necessário|Necessário|-|    
 |Necessário e Disponível|Desinstalar|Necessário e Disponível|Necessário e Disponível|-|
-<sup>1</sup> Apenas para aplicações da loja iOS geridas. Quando as adiciona ao Intune e as implementa como Necessário, estas aplicações são criadas automaticamente com os objetivos Necessário e Disponível.
+<sup>1</sup> Apenas para aplicações da loja iOS geridas. Quando as adiciona ao Intune e as atribui como Necessário, estas aplicações são criadas automaticamente com os objetivos Necessário e Disponível.
 
-Pode efetuar as seguintes ações de modo a evitar conflitos de implementação:
+Pode efetuar as seguintes ações de modo a evitar conflitos de atribuição:
 
-1.    Se implementou aplicações em grupos principais e subordinados relacionados do Intune anteriormente, pondere remover essas implementações antes de iniciar a migração do seu inquilino.
-2.    Remova os grupos subordinados dos grupos principais e crie um novo grupo com os membros do grupo subordinado antigo. Em seguida, poderá criar uma nova implementação de aplicações para este grupo.
+1.    Se tiver atribuído aplicações a grupos principais e subordinados relacionados do Intune anteriormente, pondere remover essas atribuições antes de iniciar a migração do inquilino.
+2.    Remova os grupos subordinados dos grupos principais e crie um novo grupo com os membros do grupo subordinado antigo. Em seguida, poderá criar uma nova atribuição de aplicações para este grupo.
 Notas: se o tipo de grupo principal anterior era "Todos os Utilizadores", terá de criar um novo grupo dinâmico que não inclua membros do grupo subordinado.
 Terá de efetuar as alterações necessárias aos grupos de utilizadores e dispositivos no [Portal do Azure](https://portal.azure.com/). O [Portal do Azure Clássico](https://manage.windowsazure.com/) só lhe permitirá efetuar alterações a grupos de utilizadores.
 

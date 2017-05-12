@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
-ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/04/2017
     - **Carregar Ícone** – Carregue um ícone que será associado à aplicação. Este é o ícone que será apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 8. Quando terminar, no painel **Adicionar Aplicação**, escolha **Guardar**.
 
-A aplicação que criou será apresentada na lista de aplicações onde a pode atribuir aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](/intune-azure/manage-apps/deploy-apps).
+A aplicação que criou será apresentada na lista de aplicações onde a pode atribuir aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](deploy-apps.md).
 
-## <a name="manually-deploy-windows-10-company-portal-app"></a>Implementar manualmente a aplicação Portal da Empresa do Windows 10
-Os utilizadores finais podem instalar a aplicação Portal da Empresa a partir da Loja Windows para gerir dispositivos e instalar aplicações. No entanto, se as suas necessidades empresariais incluírem a implementação da aplicação Portal da Empresa, pode implementar a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune, mesmo que não tenha integrado o Intune com a Loja Windows para Empresas.
+## <a name="manually-assign-windows-10-company-portal-app"></a>Atribuir manualmente a aplicação Portal da Empresa do Windows 10
+Os utilizadores finais podem instalar a aplicação Portal da Empresa a partir da Loja Windows para gerir dispositivos e instalar aplicações. No entanto, se as suas necessidades empresariais incluírem a atribuição da aplicação Portal da Empresa, poderá atribuir manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune, mesmo que não tenha integrado o Intune com a Loja Windows para Empresas.
 
  > [!NOTE]
- > Esta opção precisará da implementação das atualizações manuais sempre que uma atualização da aplicação for disponibilizada.
+ > Esta opção precisará da atribuição das atualizações manuais sempre que uma atualização da aplicação for disponibilizada.
 
 1. Inicie sessão na sua conta na [Loja Windows para Empresas](https://www.microsoft.com/business-store) e compre a versão da **licença offline** da aplicação Portal da Empresa.  
 2. Assim que a aplicação tiver sido comprada, selecione a aplicação na página **Inventário**.  
@@ -69,8 +70,8 @@ Os utilizadores finais podem instalar a aplicação Portal da Empresa a partir d
   ![Imagem da pasta Dependências guardada com o ficheiro APPXBUN](../media/Win10CP-Dependencies-save.png)
   2. Coloque os nove pacotes de dependências na pasta Dependências.  
   Se as dependências não forem colocadas neste formato, o Intune não poderá reconhecê-los e carregá-los durante o carregamento do pacote, o que fará com que o carregamento falhe com o seguinte erro.  
-  ![A dependência de aplicação do Windows para este instalador de software não foi encontrada na pasta da aplicação. Pode continuar a criar e a implementar esta aplicação, mas só será executada quando a dependência de aplicação do Windows em falta for disponibilizada.](../media/Win10CP-error-message.png)
-6. Volte ao Intune e, em seguida, carregue a aplicação Portal da Empresa como uma nova aplicação. Implemente-a como uma aplicação obrigatória para o conjunto de utilizadores de destino pretendido.  
+  ![A dependência de aplicação do Windows para este instalador de software não foi encontrada na pasta da aplicação. Pode continuar a criar e a atribuir esta aplicação, mas só será executada quando a dependência de aplicação do Windows em falta for disponibilizada.](../media/Win10CP-error-message.png)
+6. Volte ao Intune e, em seguida, carregue a aplicação Portal da Empresa como uma nova aplicação. Atribua-a como uma aplicação obrigatória para o conjunto de utilizadores visados pretendido.  
 
 Para obter mais informações sobre como o Intune processa as dependências de aplicações Universais, veja [Deploying an appxbundle with dependencies via Microsoft Intune MDM (Implementar um appxbundle com dependências através da MDM do Microsoft Intune) ](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
 
@@ -78,20 +79,20 @@ Para obter mais informações sobre como o Intune processa as dependências de a
 Se os utilizadores já tiverem instalado as aplicações Portal da Empresa do Windows 8.1 ou Windows Phone 8.1 a partir da Loja, estas deverão ser atualizadas automaticamente para a nova versão sem ser preciso realizar qualquer ação da sua parte ou do utilizador. Se a atualização não ocorrer, peça aos utilizadores para verificarem se ativaram as atualizações automáticas para as aplicações da Loja nos dispositivos.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Como atualizo a minha aplicação Portal da Empresa do Windows 8.1 de sideload para a aplicação Portal da Empresa do Windows 10?
-O nosso caminho de migração recomendado consiste em eliminar a implementação da aplicação Portal da Empresa do Windows 8.1 através da definição da ação de implementação como “Desinstalar”. Em seguida, a aplicação Portal da Empresa do Windows 10 pode ser implementada através de qualquer uma das opções acima.  
+O nosso caminho de migração recomendado consiste em eliminar a atribuição da aplicação Portal da Empresa do Windows 8.1 através da definição da ação de atribuição como “Desinstalar”. Em seguida, a aplicação Portal da Empresa do Windows 10 pode ser atribuída através de qualquer uma das opções acima.  
 
-Se precisar de carregar a aplicação em sideload e tiver implementado o Portal da Empresa do Windows 8.1 sem a assinar com o Certificado da Symantec, siga os passos na secção Implementar diretamente através do Intune acima para concluir a atualização.
+Se precisar de carregar a aplicação em sideload e tiver atribuído o Portal da Empresa do Windows 8.1 sem o assinar com o Certificado da Symantec, siga os passos na secção Atribuir diretamente através do Intune acima para concluir a atualização da versão.
 
-Se precisar de carregar a aplicação em sideload e tiver assinado e implementado o Portal da Empresa do Windows 8.1 com o certificado de assinatura de código da Symantec, siga os passos da secção abaixo.  
+Se precisar de carregar a aplicação em sideload e tiver assinado e atribuído o Portal da Empresa do Windows 8.1 com o certificado de assinatura de código da Symantec, siga os passos da secção abaixo.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Como atualizo a minha aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 de sideload e assinada para a aplicação Portal da Empresa do Windows 10?
-O nosso caminho de migração recomendado consiste em eliminar a implementação existente da aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 através da definição da ação de implementação como “Desinstalar”. Em seguida, a aplicação Portal da Empresa do Windows 10 poderá ser implementada normalmente.  
+O nosso caminho de migração recomendado consiste em eliminar a atribuição existente da aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 através da definição da ação de atribuição como “Desinstalar”. Em seguida, a aplicação Portal da Empresa do Windows 10 poderá ser atribuída normalmente.  
 
 Caso contrário, a aplicação Portal da Empresa do Windows 10 terá de ser corretamente atualizada e assinada para garantir que o caminho de atualização é respeitado.  
 
-Se a aplicação Portal da Empresa do Windows 10 estiver assinada e implementada desta forma, terá de repetir este processo para cada nova atualização de aplicação disponibilizada na loja. A aplicação não será automaticamente atualizada quando a loja é atualizada.  
+Se a aplicação Portal da Empresa do Windows 10 estiver assinada e atribuída desta forma, terá de repetir este processo para cada nova atualização de aplicação disponibilizada na loja. A aplicação não será automaticamente atualizada quando a loja é atualizada.  
 
-Veja a seguir como pode assinar e implementar a aplicação desta forma:
+Veja a seguir como pode assinar e atribuir a aplicação desta forma:
 
 1. Transfira o Script de Assinatura da Aplicação Portal da Empresa do Windows 10 do Microsoft Intune a partir de [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requer que o Windows SDK para o Windows 10 esteja instalado no computador anfitrião. Para transferir o Windows SDK para o Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
 2. Transfira a aplicação Portal da Empresa do Windows 10 na Loja Windows para Empresas, conforme detalhado acima.  
@@ -105,5 +106,5 @@ Veja a seguir como pode assinar e implementar a aplicação desta forma:
 |PfxPassword| A palavra-passe do Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec. |
 |PublisherId |O ID de Publicador da empresa. Se estiver ausente, é utilizado o campo "Assunto" do Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec.|
 |SdkPath | O caminho da pasta raiz do Windows SDK para Windows 10. Este argumento é opcional e assume a predefinição de ${env:ProgramFiles(x86)}\Windows Kits\10|
-O script irá transmitir a versão assinada da aplicação Portal da Empresa do Windows 10 após a respetiva execução. Em seguida, pode implementar a versão assinada da aplicação como uma aplicação de LOB através do Intune, que irá atualizar as versões atualmente implementadas para esta aplicação nova.  
+O script irá transmitir a versão assinada da aplicação Portal da Empresa do Windows 10 após a respetiva execução. Em seguida, pode atribuir a versão assinada da aplicação como uma aplicação LOB através do Intune, que irá atualizar as versões atualmente atribuídas a esta aplicação nova.  
 
