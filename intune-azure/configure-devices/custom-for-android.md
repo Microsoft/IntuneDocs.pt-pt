@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d6181b24d94bb151df036241d0a8b6b987f1483d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 0ac1a6eeca125261f44607bbbb76b04253d5270e
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -27,9 +28,9 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Utilize o perfil **Personalizado** para Android do Microsoft Intune para implementar as definições OMA-URI que podem servir para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
+Utilize o perfil **Personalizado** para Android do Microsoft Intune para atribuir as definições OMA-URI que podem servir para controlar as funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
-Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
+Esta capacidade destina-se a permitir a atribuição de definições do Android que não são configuráveis com as políticas do Intune.
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Definições de perfil personalizado para dispositivos Android
 

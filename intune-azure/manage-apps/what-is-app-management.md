@@ -1,12 +1,12 @@
 ---
-title: "O que é a gestão de aplicações"
+title: "O que é a gestão de aplicações | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: utilizar este tópico para conhecer as noções básicas sobre a gestão de aplicações com o Microsoft Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 |Adicionar e atribuir aplicações a dispositivos e utilizadores|Sim|Sim|Sim|Sim|
 |Atribuir aplicações a dispositivos não inscritos no Intune|Sim|Sim|Não|Não|
 |Utilizar políticas de configuração de aplicações para controlar o comportamento de arranque das aplicações|Não|Sim|Não|Não|
+|Utilizar políticas de aprovisionamento de aplicações móveis para renovar aplicações expiradas|Não|Sim|Não|Não|
 |Proteger dados da empresa em aplicações com políticas de proteção|Sim|Sim|Não|Não<sup>1</sup>|
 |Remover apenas dados empresariais a partir de uma aplicação instalada (eliminação seletiva de aplicações)|Sim|Sim|Sim|Sim|
 |Monitorizar atribuições de aplicações|Sim|Sim|Sim|Sim|
@@ -68,7 +70,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Gerir aplicações**.
+3. No painel **Intune**, escolha **Aplicações móveis**.
 
     ![A carga de trabalho Aplicações Móveis](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
     - [Adicionar aplicações](add-apps.md)
     - [Atribuir aplicações](deploy-apps.md)
     - [Monitorizar aplicações](monitor-apps.md)
-- **Aplicações Licenciadas** – Veja, implemente e monitorize aplicações compradas em volume nas lojas de aplicações.
-    - [Aplicações compradas em volume na Loja Windows para Empresas](wsfb-apps.md)
-- **Políticas de Configuração de Aplicações** – As políticas de configuração de aplicações permitem-lhe disponibilizar definições que poderão ser precisas quando um utilizador executar uma aplicação. Para mais detalhes, consulte:
+- **Políticas de configuração de aplicações** – as políticas de configuração de aplicações permitem-lhe disponibilizar definições que poderão ser exigidas quando um utilizador executar uma aplicação. Para mais detalhes, consulte:
     - [Políticas de configuração de aplicações](app-configuration-policies.md)
-- **Políticas de Proteção de Aplicações** – Permitem-lhe associar definições a uma aplicação para o ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa.
+- **Políticas de proteção de aplicações** – permitem-lhe associar definições a uma aplicação para o ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa.
     - [Políticas de proteção de aplicações](app-protection-policies.md)
-- **Eliminação Seletiva de Aplicações** – Remova apenas os dados empresariais do dispositivo de um utilizador selecionado por si.
+- **Eliminação seletiva de aplicações** – remova apenas os dados empresariais do dispositivo de um utilizador selecionado por si.
     - [Eliminação seletiva de aplicações](app-selective-wipe.md)
+- **Perfis de aprovisionamento do iOS** – as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir pró-ativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar.
+    - [Perfis de aprovisionamento de aplicações iOS](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>Monitor
+- **Aplicações Licenciadas** – veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações.
+    - [Aplicações compradas em volume na Loja Windows para Empresas](wsfb-apps.md)
 - **Aplicações Detetadas** – Mostra todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo.
 - **Estado da Instalação da Aplicação** – Mostra o estado da atribuição de uma aplicação que criou.
-- **Estado de Utilizador da Proteção da Aplicação** – Mostra o estado da política de proteção de uma aplicação para um utilizador que selecionou.
+- **Estado da proteção da aplicação** – mostra o estado da política de proteção de uma aplicação de um utilizador selecionado.
 
 Para obter mais detalhes, veja [Monitorizar aplicações](monitor-apps.md)
 
@@ -98,6 +102,6 @@ Para obter mais detalhes, veja [Monitorizar aplicações](monitor-apps.md)
     - [iOS volume-purchased apps](ios-vpp-apps.md) --->
 - **Loja Windows para Empresas** – Configure a integração na Loja Windows para Empresas. Depois de fazê-lo, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização da suas licenças. 
     - [Aplicações compradas em volume na Loja Windows para Empresas](wsfb-apps.md)
-- **Imagem Corporativa do Portal da Empresa** – Personalize o Portal da Empresa de modo a dar-lhe a imagem corporativa da sua empresa. 
+- **Imagem corporativa do Portal da Empresa** – personalize o Portal da Empresa de modo a dar-lhe a imagem corporativa da sua empresa. 
     - [Configuração do portal da empresa](company-portal-app.md)
 

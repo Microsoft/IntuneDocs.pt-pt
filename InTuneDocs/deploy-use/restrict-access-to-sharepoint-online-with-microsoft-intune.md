@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Utilize o acesso condicional do [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar o acesso a ficheiros que estão localizados no SharePoint Online.
+Utilize o acesso condicional do Microsoft Intune para controlar o acesso aos ficheiros que estão localizados no SharePoint Online.
 O acesso condicional tem dois componentes:
 - Uma política de conformidade de dispositivos que o dispositivo tem de cumprir para ser considerado compatível.
 - Uma política de acesso condicional onde especifica as condições que o dispositivo tem de cumprir para poder aceder ao serviço.
@@ -41,24 +42,24 @@ Quando um utilizador se tentar ligar a um ficheiro através de uma aplicação s
 
 **Antes de** configurar uma política de acesso condicional para o Skype para o SharePoint Online, tem de:
 - Ter uma **subscrição do SharePoint Online** e os utilizadores têm de estar licenciados para o SharePoint Online.
-- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium** e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+- Ter uma subscrição do **Enterprise Mobility + Security (EMS)** ou do **Azure Active Directory (Azure AD) Premium**  e os utilizadores têm de ter uma licença do EMS ou do Azure AD. Para saber mais detalhes, consulte a [página de preços do Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   Para ligar aos ficheiros obrigatórios, o dispositivo tem de estar:
--   **Inscrito** no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou ser um PC associado a um domínio.
+-   **Inscrito** no Intune ou ser um PC associado a um domínio.
 
--   **Registado** no Azure Active Directory (isto ocorre automaticamente quando o dispositivo é inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Registado** no Azure Active Directory (esse registo ocorre automaticamente quando o dispositivo é inscrito no Intune).
 
 
--   **Em conformidade** com quaisquer políticas de conformidade de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas.
+-   Ser **compatível** com todas políticas de conformidade do Intune implementadas.
 
 O estado do dispositivo é armazenado no Azure Active Directory, o qual concede ou bloqueia o acesso aos ficheiros, com base nas condições que especificar.
 
 Se não for cumprida uma condição, o utilizador vê uma das duas mensagens seguintes quando iniciar sessão:
 
--   Se o dispositivo não estiver inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou não estiver registado no Azure Active Directory, é apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa e inscrevê-lo.
+-   Se o dispositivo não estiver inscrito no Intune ou não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa e inscrevê-la.
 
--   Se o dispositivo não for conforme, é apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], onde poderá encontrar informações sobre o problema e como resolvê-lo.
+-   Se o dispositivo não estiver conforme, será apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do Intune, onde poderá encontrar informações sobre o problema e como resolvê-lo.
 
 **O acesso condicional não se aplica à partilha externa**. Para saber como impedir a partilha externa no seu inquilino ou numa coleção de sites, veja [Gerir a partilha externa para o seu ambiente do SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
@@ -115,7 +116,7 @@ Se um utilizador estiver em ambos os grupos, significa que está excluído da po
 Se ainda não o fez, crie uma política de conformidade e implemente-a para os utilizadores visados pela política do SharePoint Online.
 
 > [!NOTE]
-> Enquanto as políticas de conformidade são implementadas nos grupos do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], as políticas de acesso condicional são direcionadas para os grupos de segurança do Azure Active Directory.
+> Enquanto as políticas de conformidade são implementadas nos grupos do Intune, as políticas de acesso condicional são direcionadas para os grupos de segurança do Azure Active Directory.
 
 Para obter detalhes sobre como configurar a política de conformidade, veja [Criar uma política de conformidade](create-a-device-compliance-policy-in-microsoft-intune.md).
 
@@ -152,11 +153,11 @@ Em seguida, configure a política para exigir que apenas os dispositivos geridos
 
          A política de acesso condicional aplica-se a todas as aplicações cliente que utilizem a autenticação moderna nas plataformas que especificar.
 
-     Para PCs Windows, o PC tem de estar associado a um domínio ou inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e estar em conformidade. Pode definir os seguintes requisitos:
+     Para PCs Windows, o PC tem de estar associado a um domínio ou inscrito no Intune e estar em conformidade. Pode definir os seguintes requisitos:
 
-     -   **Os dispositivos têm de estar associados a um domínio ou em conformidade.** Escolha esta opção para exigir que os PCs estejam associados a um domínio ou em conformidade com as políticas que são definidas no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Se um PC não cumprir nenhum destes requisitos, é pedido ao utilizador que inscreva o dispositivo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Os dispositivos têm de estar associados a um domínio ou em conformidade.** Escolha esta opção para exigir que os PCs estejam associados a um domínio ou em conformidade com as políticas que estão definidas no Intune. Se um PC não cumprir nenhum destes requisitos, será pedido ao utilizador que inscreva o dispositivo no Intune.
 
-     -   **Os dispositivos têm de estar em conformidade.** Escolha esta opção para exigir que os PCs sejam inscritos no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e em conformidade. Se um PC não estiver inscrito, será apresentada uma mensagem com instruções sobre como inscrevê-lo.
+     -   **Os dispositivos têm de estar em conformidade.** Escolha esta opção para exigir que os PCs sejam inscritos no Intune e estejam em conformidade. Se um PC não estiver inscrito, será apresentada uma mensagem com instruções sobre como inscrevê-lo.
 
 4.   Em **Acesso pelo Browser** ao SharePoint Online e OneDrive para Empresas, pode optar por permitir acesso ao Exchange Online apenas através de browsers suportados: Safari (iOS) e o Chrome (Android). O acesso a partir de outros browsers é bloqueado. As restrições de plataforma que selecionou para o acesso pela aplicação do OneDrive também se aplicam aqui.
 
