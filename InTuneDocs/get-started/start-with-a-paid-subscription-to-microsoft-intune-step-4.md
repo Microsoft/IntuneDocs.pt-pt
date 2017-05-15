@@ -14,10 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: b2fc3a3dc47466313a54d2f6aef6b67dff8d7343
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
+ms.openlocfilehash: 793df9f3734b84c74ecac9b8192d0b06306607e8
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -42,6 +43,17 @@ Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças �
 
 > [!NOTE]
 > Os utilizadores apenas serão apresentados na Consola de administração após terem inscrito um dispositivo. Além disso, pode selecionar um grupo de utilizadores para editar ao mesmo tempo, ao selecionar para adicionar ou substituir uma licença para todos os utilizadores selecionados.
+
+## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Utilizar o School Data Sync para atribuir licenças aos utilizadores do Intune for Education
+Se for uma organização de ensino, poderá utilizar o School Data Sync (SDS) para atribuir licenças do Intune for Education aos utilizadores sincronizados. Basta selecionar a caixa de verificação do Intune for Education quando estiver a configurar o perfil SDS.  
+
+![Imagem da definição do perfil SDS](./media/i4e-sds-profile-setup-setting.png)
+
+Quando atribuir uma licença do Intune for Education, confirme se a licença do Intune A Direct também foi atribuída.
+
+![Imagem da configuração da licença do produto](./media/i4e-set-licenses.png)
+
+Veja esta [descrição geral do School Data Sync](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US) para saber mais sobre o SDS.
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Utilizar o PowerShell para gerir seletivamente licenças de utilizador do EMS
 As organizações que utilizam Microsoft Enterprise Mobility + Security (anteriormente denominado Enterprise Mobility Suite) podem ter utilizadores que apenas necessitam do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços através dos [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).

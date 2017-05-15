@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Cenário 1: impedir os utilizadores de utilizarem dispositivos não conformes para aceder ao Exchange Online
 ### <a name="scenario-requirements"></a>Requisitos do cenário
 - Todos os utilizadores no grupo de segurança **Contabilidade** do Azure Active Directory têm de ser impedidos de aceder ao Exchange Online se o respetivo dispositivo não for conforme com uma política de conformidade implementada por si.
-- Se existirem utilizadores neste grupo cujos dispositivos não sejam suportados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], têm de ser impedidos de aceder ao Exchange Online nesse dispositivo.
+- Se existirem utilizadores neste grupo cujos dispositivos não sejam suportados pelo Intune, terão de ser impedidos de aceder ao Exchange Online nesse dispositivo.
 - Os utilizadores no grupo de segurança **Finanças** do Azure Active Directory têm de estar excluídos da política, mesmo que também estejam no grupo de segurança **Contabilidade**.
 
 Para tal, configure uma política de acesso condicional para o Exchange Online com as seguintes definições:
@@ -68,7 +70,7 @@ Para tal, configure a política de acesso condicional seguinte para o Exchange n
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>Cenário 3: nenhum dispositivo Android pode aceder ao Exchange no local
 ### <a name="scenario-requirements"></a>Requisitos do cenário
 - Todos os dispositivos Android devem ser impedidos de aceder ao Exchange.
-- Todos os outros dispositivos suportados podem aceder ao Exchange, desde que sejam geridos pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Todos os outros dispositivos suportados podem aceder ao Exchange, desde que sejam geridos pelo Intune.
 
 Para tal, configure uma política de acesso condicional para o Exchange no local com as seguintes definições:
 
@@ -82,9 +84,4 @@ Para tal, configure uma política de acesso condicional para o Exchange no local
 É utilizado o fluxo seguinte para decidir quais os dispositivos que podem aceder ao Exchange:
 
 ![Fluxo de acesso a dispositivos](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Definições de restrição de dispositivos no Intune para Android for Work"
+title: "Definições de restrição de dispositivos no Intune para Android for Work | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba que definições do Intune pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Android for Work."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 03fec9d22e705ccb27f4eb1f8f82c7ace95e841e
-ms.openlocfilehash: c5cff131e7bcedadbad42fe6ab8bf00017f933ff
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: be6303f2db508c2aca9ba9a40fcd43278f83c045
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -62,9 +63,9 @@ Por exemplo, poderá transferir uma aplicação para o perfil de trabalho que pr
 - **Smart Lock e outros agentes de fidedignidade** – permite-lhe controlar a funcionalidade Smart Lock em dispositivos compatíveis. Esta capacidade de telefone, por vezes conhecida como agente de fidedignidade, permitirá desativar ou ignorar a palavra-passe de ecrã de bloqueio do dispositivo se o dispositivo estiver numa localização fidedigna (por exemplo, quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC). Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.
 
 ## <a name="custom-policy-settings"></a>Definições de política personalizada
-Utilize a **política de configuração personalizada para Android for Work** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android for Work. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
+Utilize a **política de configuração personalizada para Android for Work** do Microsoft Intune para atribuir as definições OMA-URI que podem ser utilizadas para controlar as funcionalidades nos dispositivos Android for Work. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
-Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
+Esta capacidade destina-se a permitir a atribuição de definições do Android que não são configuráveis com as políticas do Intune.
 Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para saber quais as políticas que pode configurar.
 
 ### <a name="general-settings"></a>Definições gerais

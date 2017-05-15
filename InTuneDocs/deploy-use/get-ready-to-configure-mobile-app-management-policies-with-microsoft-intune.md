@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Para ver a lista completa de aplicações da Microsoft suportadas, aceda à [gal
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   **Uma subscrição do Microsoft Intune**. Os utilizadores precisam de licenças do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para obter aplicações com as políticas de proteção de aplicações.
-Já tem uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se estiver a utilizar atualmente o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para gerir os dispositivos. Também tem uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se tiver comprado uma licença do Enterprise Mobility Suite (EMS). Se estiver a tentar [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] verificar as capacidades do MAM, pode obter uma conta de avaliação na [página do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+-   **Uma subscrição do Microsoft Intune**. Os utilizadores precisam de licenças do Intune para obter aplicações com as políticas de proteção de aplicações.
+Já terá uma subscrição do Intune se estiver a utilizar atualmente o Intune para gerir os dispositivos. Também terá uma subscrição do Intune se tiver comprado uma licença do Enterprise Mobility Suite (EMS). Se estiver a experimentar o Intune para verificar as capacidades do MAM, pode obter uma conta de avaliação na [página do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Para verificar se tem uma subscrição do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], no portal do Office, aceda à página de **Faturação**.  Se tiver uma subscrição, deverá ver [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] como **Ativo** nas subscrições.
+    Para verificar se tem uma subscrição do Intune, no portal do Office, aceda à página de **Faturação**.  Se tiver uma subscrição, deverá ver o Intune como **Ativo** nas subscrições.
 
 -   **Uma subscrição do Office 365**, que é precisa para o seguinte:
 
