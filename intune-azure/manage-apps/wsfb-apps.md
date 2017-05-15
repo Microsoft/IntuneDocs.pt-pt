@@ -1,12 +1,12 @@
 ---
-title: "Gerir aplicações a partir da Loja Windows para Empresas"
+title: "Gerir aplicações da Loja Windows para Empresas | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Pré-visualização do Azure no Intune: saiba como pode sincronizar aplicações no Intune a partir da Loja Windows para Empresas e, em seguida, atribuir e controlá-las."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ Na [Loja Windows para Empresas](https://www.microsoft.com/business-store), pode 
 * Pode sincronizar a lista de aplicações adquiridas na loja com o Intune.
 * As aplicações que são sincronizadas aparecem na consola de administração do Intune e pode atribuí-las como todas as outras aplicações.
 * Pode controlar quantas licenças estão disponíveis e quantas estão a ser utilizadas na consola de administração do Intune.
-* O Intune bloqueia a implementação e instalação de aplicações se tiver um número insuficiente de licenças disponíveis.
+* O Intune bloquerá a atribuição e instalação de aplicações se tiver um número insuficiente de licenças disponíveis.
 
 ## <a name="before-you-start"></a>Antes de começar
-Antes de iniciar a sincronização e a implementação de aplicações da Loja Windows para Empresas, reveja as seguintes informações:
+Antes de iniciar a sincronização e a atribuição de aplicações da Loja Windows para Empresas, reveja as seguintes informações:
 * Tem de configurar o Intune como a autoridade de gestão de dispositivos móveis da sua organização.
 * Tem de se ter inscrito numa conta na Loja Windows para Empresas.
 * Assim que tiver associado uma conta da Loja Windows para Empresas, não pode mudar para uma conta diferente no futuro.
@@ -50,7 +51,7 @@ Antes de ativar a sincronização na consola do Intune, tem de configurar a cont
 3. Na página Ferramentas de gestão, escolha **Adicionar uma ferramenta de gestão** e **Microsoft Intune**.
 
 > [!NOTE]
-> Se estiver a utilizar mais do que uma ferramenta de gestão para implementar aplicações da Loja Windows para Empresas, antes só podia associar uma destas com a Loja Windows para Empresas. Agora, pode associar várias ferramentas de gestão com a loja, como o Intune e o Configuration Manager.
+> Se estiver a utilizar mais do que uma ferramenta de gestão para atribuir aplicações da Loja Windows para Empresas, antes só podia associar uma destas com a Loja Windows para Empresas. Agora, pode associar várias ferramentas de gestão com a loja, como o Intune e o Configuration Manager.
 
 Agora, pode continuar e configurar a sincronização na consola do Intune.
 
@@ -72,13 +73,13 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## <a name="assign-apps"></a>Atribuir aplicações
 
-As aplicações da loja são atribuídas da mesma forma que implementa qualquer outra aplicação Intune. Para obter mais informações, veja [Como atribuir aplicações a grupos com o Microsoft Intune](deploy-apps.md). No entanto, em vez de atribuir aplicações a partir da página **Todas as Aplicações**, deve atribuí-las a partir da página **Aplicações Licenciadas**.
+As aplicações da loja são atribuídas da mesma forma que atribui qualquer outra aplicação Intune. Para obter mais informações, veja [Como atribuir aplicações a grupos com o Microsoft Intune](deploy-apps.md). No entanto, em vez de atribuir aplicações a partir da página **Todas as Aplicações**, deve atribuí-las a partir da página **Aplicações Licenciadas**.
 
-Quando atribui uma aplicação da Loja Windows para Empresas, é utilizada uma licença por cada utilizador que instalar a aplicação. Se utilizar todas as licenças disponíveis para uma aplicação implementada, não poderá implementar mais cópias. Deve efetuar uma das seguintes ações:
+Quando atribui uma aplicação da Loja Windows para Empresas, é utilizada uma licença por cada utilizador que instalar a aplicação. Se utilizar todas as licenças disponíveis para uma aplicação atribuída, não poderá atribuir mais cópias. Deve efetuar uma das seguintes ações:
 * Desinstale a aplicação de dispositivos.
-* Reduza o âmbito da implementação atual para segmentar apenas os utilizadores para os quais tem licenças suficientes.
+* Reduza o âmbito da atribuição atual para segmentar apenas os utilizadores para os quais tem licenças suficientes.
 * Compre mais cópias da aplicação na Loja Windows para Empresas.
 
 > [!Important]
-> As aplicações implementadas só estão disponíveis para o utilizador que inscreveu originalmente o dispositivo. Nenhum outro utilizador pode aceder à aplicação.
+> As aplicações atribuídas só estão disponíveis para o utilizador que inscreveu originalmente o dispositivo. Nenhum outro utilizador pode aceder à aplicação.
 

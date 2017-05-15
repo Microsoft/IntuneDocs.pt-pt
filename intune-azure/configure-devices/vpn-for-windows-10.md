@@ -1,7 +1,7 @@
 ---
-title: "Definições de VPN do Intune para dispositivos com o Windows 10"
+title: "Definições de VPN do Intune para dispositivos Windows 10"
 titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos com o Windows 10."
+description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos Windows 10."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,16 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 87004408ddcb07571507f68d5b9925b7e475282a
+ms.contentlocale: pt-pt
 ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos com o Windows 10 no Microsoft Intune
+# <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos Windows 10 no Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -105,7 +106,7 @@ Consulte a documentação de cada fabricante relativa à VPN para obter mais inf
 
 ## <a name="dns-settings"></a>Definições de DNS
 
-** Nomes e servidores DNS para esta ligação VPN ** – Selecione os servidores DNS que a ligação VPN utilizará depois de a ligação ser estabelecida.
+**Nomes e servidores DNS para esta ligação VPN** – Selecione os servidores DNS que a ligação VPN utilizará depois de a ligação ser estabelecida.
 Para cada servidor. especifique:
 - **Nome DNS**
 - **Servidor DNS**

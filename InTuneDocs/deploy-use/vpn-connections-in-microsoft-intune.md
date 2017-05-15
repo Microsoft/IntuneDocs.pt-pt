@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -163,7 +164,7 @@ Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
 1. Na página de configuração de políticas, localize **Regras a pedido para esta ligação VPN**. As colunas têm a etiqueta **Correspondência**, a condição que as regras verificam, e **Ação**, a ação que a política aciona quando a condição é cumprida.
 2. Escolha **Adicionar** para criar uma regra. Existem dois tipos de correspondências que pode configurar na regra. Só pode configurar um dos seguintes tipos por regra.
   - **SSIDs**, que se referem às redes sem fios.
-  - **Domínios de pesquisa DNS**, que são...  Pode utilizar nomes de domínio completamente qualificados como *equipa.corp.contoso.com* ou utilizar domínios como *contoso.com*, que é o equivalente a utilizar **.contoso.com*.
+  - **Domínios de pesquisa DNS** – pode utilizar nomes de domínio completamente qualificados como *equipa.corp.contoso.com* ou utilizar domínios como *contoso.com*, que é o equivalente a utilizar * *.contoso.com*.
 3. Opcional: forneça uma pesquisa de cadeia de URL, que é um URL que a regra utiliza como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a VPN será estabelecida e ligará o dispositivo ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
 4. Escolha uma das seguintes ações:
   - **Ligar**

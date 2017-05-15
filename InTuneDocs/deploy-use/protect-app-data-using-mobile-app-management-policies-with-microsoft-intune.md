@@ -14,10 +14,11 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -66,7 +67,7 @@ Atualmente, as políticas de proteção de aplicações são suportadas em:
 >Os dispositivos Windows não são suportados pelo MAM sem um cenário de inscrição. No entanto, quando inscrever dispositivos Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
-##  <a name="how-app-protection-policies-protect-app-data"></a>Como é que as políticas de proteção de aplicações protegem os dados das aplicações
+##  <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações
 
 ###  <a name="apps-without-app-protection-policies"></a>Aplicações sem políticas de proteção de aplicações
 
@@ -128,9 +129,9 @@ As aplicações que suportam várias identidades permitem-lhe utilizar contas di
 
 Por exemplo, quando um utilizador inicia a aplicação OneDrive com a sua conta profissional, não é possível mover os ficheiros para uma localização de armazenamento pessoal. No entanto, quando utilizam o OneDrive com a sua conta pessoal, podem copiar e mover dados dos seus OneDrive pessoais, sem restrições.  
 
-Todas as aplicações móveis do Office suportam acesso de várias identidades.
+- Saiba mais sobre as aplicações que suportam [MAM e múltiplas identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
-##  <a name="next-steps"></a>Passos seguintes
+##  <a name="next-steps"></a>Próximos passos
 - [Preparar-se para configurar políticas de proteção de aplicações](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

@@ -14,10 +14,11 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 3098a301550413a982d3ce9664646f7dfc0b1d1f
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -38,7 +39,7 @@ Certifique-se de que verifica o seguinte:
 
 -   A sua versão do Exchange tem de ser o **Exchange 2010 ou posterior**. São suportadas matrizes do Servidor de Acesso de Cliente (CAS) do Exchange Server.
 
--   Tem de utilizar o [conector do Exchange no local do Intune](intune-on-premises-exchange-connector.md), que liga o [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ao Exchange no local. Este procedimento permite-lhe gerir dispositivos através da consola do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Tem de utilizar o [conector do Exchange no local do Intune](intune-on-premises-exchange-connector.md), que liga o Intune ao Exchange no local. Este procedimento permite-lhe gerir dispositivos através da consola do Intune.
 
     -   O conector do Exchange no local disponível na consola do Intune é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. Recomendamos que também assegure que o conector do Exchange para o seu inquilino está instalado **em apenas um computador**.
 
@@ -54,13 +55,13 @@ Certifique-se de que verifica o seguinte:
 
 Quando configurar políticas de acesso condicional e direcioná-las para um utilizador, antes de um utilizador poder ligar ao respetivo e-mail, o **dispositivo** que utiliza tem de ser:
 
--  Um PC associado a um domínio ou **inscrito** no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-  Um PC associado a um domínio ou **inscrito** no Intune.
 
 -  **Registado no Azure Active Directory**. Além disso, o ID do Exchange ActiveSync do cliente tem de ser registado no Azure Active Directory.
 
   O serviço de Registos de Dispositivos do Azure Active Directory é ativado automaticamente para os clientes do Intune e do Office 365. Os clientes que já implementaram o serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no Active Directory no local. **Isto não é aplicável a PC com Windows ou a dispositivos Windows Phone**.
 
--   **Conforme** com todas as políticas de conformidade do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas nesse dispositivo.
+-   **Conforme** com todas as políticas de conformidade do Intune implementadas nesse dispositivo.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Como o acesso condicional funciona com o Exchange no local
 
@@ -70,9 +71,9 @@ O seguinte diagrama ilustra o fluxo utilizado pelas políticas de acesso condici
 
 Se uma política de acesso condicional não for cumprida, existirá um período de 10 minutos entre o bloqueio do dispositivo e a receção por parte do utilizador de uma das seguintes mensagens de quarentena quando inicia sessão:
 
-- Se o dispositivo não estiver inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], ou não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa, inscrever o dispositivo e ativar o e-mail. Este processo também associa o ID do Exchange ActiveSync do ao registo do dispositivo no Azure Active Directory.
+- Se o dispositivo não estiver inscrito no Intune ou se não estiver registado no Azure Active Directory, será apresentada uma mensagem com instruções sobre como instalar a aplicação Portal da Empresa, inscrever o dispositivo e ativar o e-mail. Este processo também associa o ID do Exchange ActiveSync do ao registo do dispositivo no Azure Active Directory.
 
--   Se o dispositivo não for conforme, é apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou para a aplicação Portal da Empresa, onde é possível localizar informações sobre o problema e como resolvê-lo.
+-   Se o dispositivo não estiver em conformidade, será apresentada uma mensagem que direciona o utilizador para o site do Portal da Empresa do Intune ou para a aplicação Portal da Empresa, onde poderá obter informações sobre o problema e como resolvê-lo.
 
 ## <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 As seguintes versões são suportadas:
@@ -88,7 +89,7 @@ As seguintes versões são suportadas:
 
 ## <a name="support-for-pcs"></a>Suporte de PCs
 É suportado o seguinte:
--   A aplicação **Correio**no Windows 8.1 e posterior (quando o PC está inscrito no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   A aplicação **Correio** no Windows 8.1 e posterior (quando o PC está inscrito no Intune).
 
 ##  <a name="configure-a-conditional-access-policy"></a>Configurar uma política de acesso condicional
 
@@ -97,21 +98,21 @@ As seguintes versões são suportadas:
 
 2.  Configure a política com as definições necessárias: ![Captura de ecrã da página da política do Exchange no local](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Impedir que as aplicações de e-mail acedam ao Exchange no local se o dispositivo não estiver em conformidade ou não estiver inscrito no Microsoft Intune**: quando seleciona esta opção, os dispositivos que não são geridos pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], ou que não estão em conformidade com uma política de conformidade, são impedidos de aceder aos serviços do Exchange.
+  - **Impedir que as aplicações de e-mail acedam ao Exchange no local se o dispositivo não estiver em conformidade ou não estiver inscrito no Microsoft Intune**: quando seleciona esta opção, os dispositivos que não são geridos pelo Intune ou que não estão em conformidade com uma política de conformidade, são impedidos de aceder aos serviços do Exchange.
 
   - **Substituição da regra predefinida - Permitir sempre aos dispositivos inscritos e em conformidade aceder ao Exchange**: quando seleciona esta opção, os dispositivos inscritos no Intune e em conformidade com as políticas de conformidade estão autorizados a aceder ao Exchange.
   Esta regra substitui a **Regra Predefinida**, o que significa que mesmo que defina a **Regra Predefinida** para colocar em quarentena ou bloquear o acesso, os dispositivos inscritos e em conformidade continuarão a poder aceder ao Exchange.
 
-  - **Grupos Visados**: selecione os grupos de utilizadores do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que têm de inscrever o respetivo dispositivo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] antes de poderem aceder ao Exchange.
+  - **Grupos Visados**: selecione os grupos de utilizadores do Intune que têm de inscrever o dispositivo no Intune para poderem aceder ao Exchange.
 
-  - **Grupos Excluídos**: selecione os grupos de utilizadores do [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] excluídos da política de acesso condicional. Os utilizadores nesta lista estão excluídos, mesmo que também estejam na lista **Grupos Visados**.
+  - **Grupos Excluídos**: selecione os grupos de utilizadores do Intune excluídos da política de acesso condicional. Os utilizadores nesta lista estão excluídos, mesmo que também estejam na lista **Grupos Visados**.
 
-  - **Exceções de Plataforma**: selecione **Adicionar Regra** para configurar uma regra que defina os níveis de acesso para famílias e modelos de dispositivos móveis especificados. Como estes dispositivos podem ser de qualquer tipo, também pode configurar os tipos de dispositivos não suportados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+  - **Exceções de Plataforma**: selecione **Adicionar Regra** para configurar uma regra que defina os níveis de acesso para famílias e modelos de dispositivos móveis especificados. Como estes dispositivos podem ser de qualquer tipo, também pode configurar os tipos de dispositivos não suportados pelo Intune.
 
   - **Regra Predefinida**: em dispositivos que não são abrangidos por qualquer uma das outras regras, pode optar por permitir que acedam ao Exchange, que o bloqueiem ou o coloquem em quarentena. Quando define a regra para permitir o acesso, para os dispositivos inscritos e em conformidade, o acesso ao e-mail é concedido automaticamente para dispositivos iOS, Windows e Samsung KNOX. O utilizador não tem de passar por nenhum processo para obter acesso ao respetivo e-mail.
       - Em dispositivos Android sem o Samsung KNOX, os utilizadores finais recebem um e-mail de quarentena que inclui instruções orientadas para verificar a inscrição e a conformidade antes de poderem aceder ao e-mail. Se definir a regra para bloquear o acesso ou colocar dispositivos em quarentena, todos os dispositivos ficam bloqueados de aceder ao Exchange, independentemente de já estarem inscritos ou não no Intune. Para impedir que os dispositivos inscritos e em conformidade sejam afetados por esta regra, selecione a caixa **Substituição da Regra Predefinida**.
 >[!TIP]
->Se a sua intenção for bloquear primeiro todos os dispositivos antes de conceder acesso ao e-mail, selecione a regra Bloquear acesso ou Quarentena. A regra predefinida é aplicada a todos os tipos de dispositivos, pelo que os tipos de dispositivos configurados como exceções de plataforma não suportados pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] também são afetados.
+>Se a sua intenção for bloquear primeiro todos os dispositivos antes de conceder acesso ao e-mail, selecione a regra Bloquear acesso ou Quarentena. A regra predefinida é aplicada a todos os tipos de dispositivos, pelo que os tipos de dispositivos configurados como exceções de plataforma não suportados pelo Intune também são afetados.
 
   - **Notificação do Utilizador**: além do e-mail de notificação enviado pelo Exchange, o Intune envia um e-mail que contém passos para desbloquear o dispositivo. Pode editar a mensagem predefinida para personalizá-la de acordo com as suas necessidades. No caso de o dispositivo do utilizador ser bloqueado antes de receber o e-mail de notificação do Intune com as instruções de correção (este e-mail é enviado para a caixa de correio do Exchange do utilizador), o utilizador pode utilizar um dispositivo desbloqueado ou outro método para aceder ao Exchange e ver a mensagem.
       - Isto é particularmente verdadeiro quando a **Regra Predefinida** estiver definida como bloqueio ou quarentena. Neste caso, o utilizador tem de aceder à loja de aplicações, transferir a aplicação Portal da Empresa da Microsoft e inscrever o dispositivo. Isto é aplicável a dispositivos iOS, Windows e Samsung KNOX. Para os dispositivos sem o Samsung KNOX, tem de enviar o e-mail de quarentena para uma conta de e-mail alternativa. O utilizador tem de copiar o e-mail para o dispositivo bloqueado para concluir o processo de inscrição e de conformidade.
@@ -124,11 +125,11 @@ As seguintes versões são suportadas:
 
 -   Não tem de implementar a política de acesso condicional, pois esta entra em vigor imediatamente.
 
--   Depois de um utilizador configurar um perfil do Exchange ActiveSync, o dispositivo pode demorar entre uma a três horas até ser bloqueado (se não for gerido pelo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Depois de um utilizador configurar um perfil do Exchange ActiveSync, o dispositivo pode demorar entre uma a três horas até ser bloqueado (se não for gerido pelo Intune).
 
--   Se um utilizador bloqueado inscrever posteriormente o dispositivo no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e corrigir a não conformidade, o acesso ao e-mail será desbloqueado em dois minutos.
+-   Se um utilizador bloqueado inscrever posteriormente o dispositivo no Intune e corrigir a não conformidade, o acesso ao e-mail será desbloqueado em dois minutos.
 
--   Se o utilizador anular a inscrição no [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], o dispositivo poderá demorar entre uma a três horas até ser bloqueado.
+-   Se o utilizador anular a inscrição no Intune, o dispositivo poderá demorar entre uma a três horas até ser bloqueado.
 
 **Para ver alguns cenários de exemplo de como poderia configurar a política de acesso condicional para proteger o acesso ao dispositivo[, veja ](restrict-email-access-example-scenarios.md)Cenários de exemplo da proteção de acesso ao e-mail**.
 

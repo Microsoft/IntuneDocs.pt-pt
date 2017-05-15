@@ -14,40 +14,26 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0060eb9c912c3a770220c16acde9f4705fa27194
+ms.contentlocale: pt-pt
+ms.lasthandoff: 04/28/2017
 
 
 ---
 
-# <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Gerir PCs Windows com o software de cliente de PC do Intune
-A [inscrição de PCs Windows como dispositivos móveis](set-up-windows-device-management-with-microsoft-intune.md) é o método preferencial de inscrição de PCs Windows no Intune. No entanto, como administrador de TI, pode optar por inscrever e gerir PCs Windows ao instalar o software de cliente do Intune, conforme descrito neste tópico. O cliente de software do Intune não é suportado com a inscrição como um dispositivo móvel.
+# <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
 
-O Intune gere os PCs Windows através de políticas semelhantes às utilizadas pelos Objetos de Política de Grupo (GPOs) dos Serviços de Domínio do Active Directory do Windows Server (AD DS). Se pretende gerir computadores associados a domínios do Active Directory com o Intune, [certifique-se de que as políticas do Intune não entram em conflito com quaisquer GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) que estejam implementadas na sua organização. Pode ler mais sobre [GPOs](https://technet.microsoft.com/library/hh147307.aspx).
+O Intune oferece uma solução abrangente de gestão de dispositivos móveis para organizações. O Intune pode gerir PCs Windows como dispositivos móveis através das capacidades de gestão de dispositivos modernas incorporadas no sistema operativo do Windows 10. Para satisfazer as necessidades de gestão da sua organização, o Intune também pode gerir PCs Windows como computadores com o software de cliente do Intune. Este método de gestão utiliza capacidades de gestão de computadores tradicionais no sistema operativo Windows legado.
 
-## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Políticas e implementações de aplicações do software de cliente do Intune
+O cliente de software do Intune é mais adequado para PCs Windows que executem sistemas operativos legados, tais como o Windows 7, que não podem ser geridos como dispositivos móveis. O cliente de software do Intune utiliza as capacidades de gestão, como a Política de Grupo, para gerir os PCs a partir da cloud.
 
-Embora o software de cliente do Intune suporte [capacidades de gestão que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a firewall do Windows e o Endpoint Protection, os PCs geridos com o software de cliente do Intune não podem ser segmentados com outras políticas do Intune, incluindo essas definições da política do **Windows** específicas da gestão do dispositivo móvel.
+O Intune suporta a gestão de PCs Windows como computadores através do cliente de software para um máximo de 7000 PCs. Para implementações maiores, faça a gestão dos PCs Windows 10 como dispositivos móveis. Cada versão do Intune e atualização do Windows 10 inclui funcionalidades de gestão com base na arquitetura de gestão de dispositivos móveis. Recomendamos que mova a sua organização para o Windows 10 gerido como dispositivos móveis.
 
-Quando utiliza o software de cliente do Intune para gerir PCs Windows, pode utilizar apenas as políticas apresentadas na secção **Gestão de Computadores**.
-
-  ![Selecionar modelo para a nova política do PC Windows](../media/select-template-for-pc-policy.png)
-
-Para obter as descrições detalhadas das políticas que pode definir, veja:
-
-- [Utilizar políticas para ajudar a proteger PCs Windows que executem o software de cliente do Intune](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
-- [Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Ajudar a proteger os PCs Windows através de políticas de Firewall do Windows no Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
-- [Ajudar a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-Além disso, quando implementar aplicações, pode utilizar apenas o Windows Installer (.exe, .msi).
-
-  ![Selecionar a plataforma e a localização para os ficheiros de software de cliente de PC](../media/select-platform-of-software-files-for-pc-agent.png)
 
 > [!NOTE]
-> Pode gerir dispositivos com o Windows 8.1 ou posterior como PCs através do software de cliente do Intune ou como dispositivos móveis com a funcionalidade de gestão de dispositivos móveis (MDM). Não pode utilizar ambos os métodos em conjunto, por isso pondere cuidadosamente a sua decisão antes de decidir gerir PCs com o software de cliente do Intune. Este tópico aplica-se apenas à gestão de dispositivos como PCs ao executar o software de cliente do Intune.
+> Pode gerir dispositivos com o Windows 8.1 e posterior, como PCs através do software de cliente do Intune ou como dispositivos móveis. Não pode utilizar ambos os métodos no mesmo dispositivo. Pondere com atenção antes de decidir gerir os PCs com software de cliente do Intune. Este tópico aplica-se apenas à gestão de dispositivos como PCs ao executar o software de cliente do Intune.
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Requisitos para a gestão do cliente de PC do Intune
 
@@ -68,31 +54,48 @@ Além disso, quando implementar aplicações, pode utilizar apenas o Windows Ins
 |Windows Installer 3.1|O computador tem de ter instalado, no mínimo, o Windows Installer 3.1.<br /><br />Para ver a versão existente do Windows Installer num computador:<br /><br />  No PC, clique com o botão direito do rato em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Pode transferir a versão mais recente do Windows Installer em [Redistribuíveis do Windows Installer](http://go.microsoft.com/fwlink/?LinkID=234258) no site da Microsoft Developer Network.|
 |Remover software de cliente incompatível|Antes de instalar o software de cliente do Intune, desinstale qualquer software de cliente do Configuration Manager, Operations Manager, Operations Management Suite e Service Manager desse PC.|
 
+## <a name="deploying-the-intune-software-client"></a>Implementar o cliente de software do Intune
+Como administrador do Intune, pode disponibilizar o cliente de software do Intune aos utilizadores de várias formas. Para obter orientações, veja [Instalar o cliente de software do Intune em PCs Windows](install-the-windows-pc-client-with-microsoft-intune.md).
+
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Capacidades de gestão de computadores do software de cliente do Intune
+Na maioria dos cenários, irá inscrever os dispositivos no Microsoft Intune, o que fornece um conjunto maior de capacidades. No entanto, também pode gerir os PCs com o cliente de software do Intune, que proporciona as seguintes funcionalidades:
 
-Uma vez que o software de cliente do Intune esteja instalado, as capacidades de gestão incluem:
+-   **[Gestão de atualizações de software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** pode manter os PCs atualizados e decidir quando as atualizações são aplicadas.
 
-- [Gestão de aplicações](deploy-apps-in-microsoft-intune.md)
+-   **[Política de Firewall do Windows](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** ajuda a garantir que nenhum PC utilizado na sua empresa tem uma Firewall do Windows configurada incorretamente ou inativa.
 
-- [Monitorização em tempo real e Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) – o Endpoint Protection é o mesmo que o Windows Defender. O Endpoint Protection aplica-se ao Windows 7 e Windows 8. Para o Windows 10 e versões posteriores, o nome de produto foi alterado para Windows Defender.
+-   **[Proteção antimalware](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**o Intune inclui o Endpoint Protection, que ajuda a proteger os seus PCs de software malicioso.
 
-- [Gestão de definições da Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), inventário de hardware e software, controlo remoto (através de pedidos de assistência remota)
+-   **[Assistência remota](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** o Intune permite que os utilizadores contactem os técnicos de suporte de TI, que podem fornecer assistência através de uma funcionalidade de ambiente de trabalho remoto incluída no Intune (requer o software TeamViewer).
 
-- [Definições de atualização de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
+-   **[Gestão de licenças de software](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão a ser utilizadas.
+-   **[Implementação de aplicações](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** implemente software em PCs geridos por si. Algumas funcionalidades de gestão de aplicações não estão disponíveis ao gerir PCs com o cliente de software.
 
-- Relatórios de definições de compatibilidade
+<!-- - **Compliance settings reporting** -->
 
-Na consola de administração do Intune, certas secções como "Atualizações", "Proteção" e "Licenças" só aparecem se tiver inscrito dispositivos com o cliente de software do Intune.
+## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Políticas e implementações de aplicações do software de cliente do Intune
 
-  ![Itens da consola de administrador que são apresentados apenas para clientes de PC](../media/admin-console-settings-only-for-pc-agent.png)
+Embora o software de cliente do Intune suporte [capacidades de gestão que ajudam a proteger PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) ao gerir atualizações de software, a firewall do Windows e o Endpoint Protection, os PCs geridos com o software de cliente do Intune não podem ser segmentados com outras políticas do Intune, incluindo essas definições da política do **Windows** específicas da gestão do dispositivo móvel.
 
-Também pode utilizar a consola de administração do Intune para realizar outras tarefas comuns de gestão de computadores nos PCs Windows que tenham o cliente instalado:
+Quando utiliza o software de cliente do Intune para gerir PCs Windows, pode utilizar apenas as políticas apresentadas na secção **Gestão de Computadores**.
 
--   Ver informações de inventário de hardware e de software acerca dos computadores geridos.
--   Para reiniciar um computador remotamente
--   Extinguir um computador para desinstalar o software de cliente e removê-lo da gestão com o Intune
--   Ligar utilizadores a computadores geridos específicos
--   Responder a pedidos de assistência remota
+O Intune faz a gestão dos PCs Windows através de políticas semelhantes às utilizadas pelos Objetos de Política de Grupo (GPOs) dos Serviços de Domínio do Active Directory (AD DS) do Windows Server. Se gerir computadores associados a domínios do Active Directory com o Intune, [confirme que as políticas do Intune não entram em conflito com outros GPOs](https://docs.microsoft.com/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) utilizados na sua organização. Para obter mais informações, veja [Group Policy for beginners (Política de Grupo para principiantes)](https://technet.microsoft.com/library/hh147307.aspx).
+
+  ![Selecionar modelo para a nova política do PC Windows](../media/select-template-for-pc-policy.png)
+
+Quando estiver a implementar aplicações, pode utilizar apenas o Windows Installer (.exe, .msi).
+
+  ![Selecionar a plataforma e a localização para os ficheiros de software de cliente de PC](../media/select-platform-of-software-files-for-pc-agent.png)
+
+## <a name="common-tasks-for-windows-pcs"></a>Tarefas comuns dos PCs Windows
+
+Pode utilizar a consola de administração do Intune para realizar outras tarefas comuns de gestão de computadores nos PCs Windows que tenham o cliente instalado:
+- [Utilizar políticas para simplificar a gestão de PCs](use-policies-to-simplify-windows-pc-management.md) – Descreve as políticas de **Gestão de Computadores** do Intune e lista as definições do Microsoft Intune Center.
+
+- [Ver o inventário de hardware e software dos PCs Windows](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md) – Explica como criar um relatório que lista as informações sobre as capacidades do hardware dos PCs e o software instalado nos mesmos. Também explica como atualizar o inventário dos PCs para garantir que está atualizado.
+- [Extinguir um PC Windows](retire-a-windows-pc-with-microsoft-intune.md) – Lista os passos para extinguir um PC Windows e descreve o que acontece quando extingue um PC.
+- [Gerir a associação utilizador-dispositivo dos PCs Windows](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) – Explica quando e como precisa de associar um utilizador a um PC antes de implementar software para o utilizador.
+- [Pedir e fornecer assistência remota para PCs Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) – Explica como os utilizadores de PCs do Intune obtêm a ajuda de assistência remota do utilizador e descreve os pré-requisitos e a configuração do TeamViewer.
 
 Para obter mais informações sobre as tarefas mencionadas acima, veja [Tarefas comuns de gestão de computadores](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -101,8 +104,11 @@ Para obter mais informações sobre as tarefas mencionadas acima, veja [Tarefas 
 Algumas opções de gestão, que podem ser utilizadas para gerir os PCs como dispositivos móveis, não podem ser utilizadas para PCs que sejam geridos com o software de cliente do Intune:
 
 -   Eliminação completa (a eliminação seletiva está disponível)
-
 -   Acesso condicional
+
+Tenha também em atenção que na consola de administração do Intune, certas secções como **Atualizações**, **Proteção** e **Licenças** só serão apresentadas se tiver inscrito os dispositivos com o software de cliente do Intune.
+
+  ![Itens da consola de administrador que são apresentados apenas para clientes de PC](../media/admin-console-settings-only-for-pc-agent.png)
 
 ## <a name="help-with-troubleshooting"></a>Ajuda na resolução de problemas
 
