@@ -86,6 +86,7 @@
 #### [Aplicações LOB para Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [Aplicações da loja Windows](manage-apps/windows-store-app.md)
 #### [Aplicações LOB do Windows](manage-apps/windows-line-of-business-app.md)
+#### [Aplicações Android for Work](/manage-apps/android-for-work-apps.md)
 ### [Atribuir aplicações](manage-apps/deploy-apps.md)
 ### [Monitorizar aplicações](manage-apps/monitor-apps.md)
 ### [Utilizar perfis de configuração de aplicações](manage-apps/app-configuration-policies.md)
