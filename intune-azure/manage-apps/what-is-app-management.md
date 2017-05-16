@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
-ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 430329939c99fefcc2ace551545e079f874e83cb
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/05/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -59,7 +59,7 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 |Aplicações de uma loja|Sim|Sim|Sim|Sim|
 |Atualizar aplicações|Sim|Sim|Sim|Sim|
 
-<sup>1</sup> Considere a utilização do [Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection) para proteger aplicações em dispositivos com o Windows 10.
+<sup>1</sup> Considere a utilização do [Windows Information Protection]../configure-devices/how-to-configure-windows-information-protection.md) para proteger aplicações em dispositivos com o Windows 10.
 
 <sup>2</sup>Aplica-se apenas a dispositivos geridos pelo Intune.
 

@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
-ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.sourcegitcommit: 1445c29c9b2b1754bad733096dbc08a76481f85b
+ms.openlocfilehash: e8922fa67381f410194b9db333758a533cecb3c4
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/04/2017
 
 
 ## <a name="overview"></a>Descrição geral
-O [Componente Xamarin do SDK da Aplicação Intune](https://components.xamarin.com/view/microsoft.intune.mam) proporciona [funcionalidades de gestão de aplicações móveis do Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) em aplicações para iOS e Android compiladas com o Xamarin. O componente permite aos programadores incorporar facilmente funcionalidades de proteção da aplicação do Intune na respetiva aplicação baseada no Xamarin.
+O [Componente Xamarin do SDK da Aplicação Intune](https://components.xamarin.com/view/microsoft.intune.mam) ativa a [política de proteção de aplicações do Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) em aplicações para iOS e Android compiladas com o Xamarin. O componente permite aos programadores incorporar facilmente funcionalidades de proteção da aplicação do Intune na respetiva aplicação baseada no Xamarin.
 
 Verá que pode ativar funcionalidades SDK sem alterar o comportamento da sua aplicação. Depois de incorporar o componente na sua aplicação móvel para iOS ou Android, o administrador de TI poderá implementar a política através da Gestão de Aplicações Móveis (MAM) do Microsoft Intune com uma variedade de funcionalidades de proteção de dados.
 
@@ -108,7 +108,7 @@ As aplicações Xamarin compiladas com o Componente Xamarin do SDK da Aplicaçã
 Concluiu os passos necessários para incorporar o componente na aplicação para iOS baseada no Xamarin. Se estiver a utilizar o Xcode para compilar o projeto, pode utilizar o `Intune App SDK Settings.bundle`. Isto permitir ativar e desativar as definições de política do Intune enquanto compila o projeto para testar e depurar. Para tirar partido deste pacote, siga os passos indicados no [Guia para Programadores do SDK da Aplicação Intune para iOS](intune-app-sdk-ios.md) e consulte a secção sobre [depuração no Xcode](intune-app-sdk-ios.md#status-result-and-debug-notifications).
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>Ativar a MAM na aplicação móvel para Android
-Para aplicações para Android baseadas no Xamarin que não utilizam uma estrutura de IU, terá de consultar e seguir o [Guia para Programadores do SDK da Aplicação Intune para Android]. Para a sua aplicação para Android baseada no Xamarin, terá de substituir a classe, os métodos e as atividades na respetiva MAM equivalente com base na [tabela](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required) incluída no guia. Se a aplicação não definir uma classe `android.app.Application`, terá de criar uma e garantir que é herdada de `MAMApplication`.
+Para aplicações para Android baseadas no Xamarin que não utilizam uma estrutura de IU, terá de consultar e seguir o [Guia para Programadores do SDK da Aplicação Intune para Android]. Para a sua aplicação para Android baseada no Xamarin, terá de substituir a classe, os métodos e as atividades na respetiva MAM equivalente com base na [tabela](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) incluída no guia. Se a aplicação não definir uma classe `android.app.Application`, terá de criar uma e garantir que é herdada de `MAMApplication`.
 
 Para Xamarin.Forms e outras estruturas de IU, fornecemos uma ferramenta denominada `MAM.Remapper`. A ferramenta irá efetuar a substituição da classe. No entanto, terá de executar os seguintes passos:
 
