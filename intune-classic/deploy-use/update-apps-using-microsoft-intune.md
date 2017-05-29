@@ -14,9 +14,11 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 512f19a1e894479404d25d2500b0db79ba0882cf
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -60,9 +62,4 @@ Quando os dispositivos voltarem a verificar as aplicações disponíveis, a apli
 Em relação às aplicações instaladas a partir de um pacote de aplicação (aplicações de linha de negócio), a aplicação será atualizada automaticamente tanto para implementações necessárias como disponíveis, desde que a aplicação tenha o mesmo identificador.
 
 No que respeita às aplicações implementadas como ligação a uma loja, a atualização é gerida pela loja onde a aplicação foi comprada.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

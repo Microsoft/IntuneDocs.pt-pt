@@ -14,9 +14,11 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -179,9 +181,4 @@ Os contratos de licenciamento de software podem ser adicionados a grupos de lice
 |Remover um grupo de licenças|Na área de trabalho **Licenças**, escolha um grupo de licenças e, em seguida, escolha **Editar Grupo de Licenças** no menu **Tarefas**.|
 |Eliminar um grupo de licenças|Na área de trabalho **Licenças**, escolha um grupo de licenças e, em seguida, escolha **Eliminar Grupo de Licenças** no menu **Tarefas**. **Sugestão:** As licenças que estavam no grupo eliminado são movidas para o grupo de licenças **Contratos Não Atribuídos**.|
 |Eliminar um contrato de licença|Na área de trabalho **Licenças**, escolha um contrato e, em seguida, escolha **Eliminar**. **Sugestão:** depois de eliminar contratos de Licenciamento em Volume, para atualizar as informações da licença, escolha **Atualizar Agora**, na página **Descrição Geral de Licenças** ou no separador **Geral**, se se tratar de um grupo de licenças específico.|
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

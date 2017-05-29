@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
-ms.openlocfilehash: 88770ba06718a767f8229e1b5aa4d543c87bc852
-ms.lasthandoff: 01/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 ---
 
@@ -37,7 +38,7 @@ Para resolver este problema e obter o certificado necessário, tem de efetuar do
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identificar o certificado em falta ao procurar num PC da escola ou empresa
 
-1. Num PC, abra o Internet Explorer. Se não tiver um PC para utilizar para esta finalidade, contacte o administrador de TI. Para encontrar as informações de contacto do administrador de TI, veja o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+1. Num PC, abra o Internet Explorer. Se não tiver um PC para utilizar para esta finalidade, contacte o administrador de TI. Para encontrar as informações de contacto do administrador de TI, consulte o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 2. Aceda ao [Web site do Portal da Empresa](http://portal.manage.microsoft.com) e inicie sessão com as credenciais profissionais ou escolares.
 
@@ -55,7 +56,7 @@ Para resolver este problema e obter o certificado necessário, tem de efetuar do
 
 ## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Transferir e instalar o certificado em falta no dispositivo móvel Android
 
-1. Num motor de busca como o Bing ou o Google, procure o nome do certificado em falta que identificou na secção anterior. O certificado pode terminar com diferentes "extensões", como ".crt", ".pem", etc.
+1. Num motor de busca como o Bing ou o Google, procure o nome do certificado em falta que identificou na secção anterior. O certificado pode terminar com diferentes "extensões," como ".crt", “.pem", etc.
 
 2. Transfira o certificado de raiz do Web site.
 
