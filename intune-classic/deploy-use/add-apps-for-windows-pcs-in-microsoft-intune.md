@@ -14,9 +14,11 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
-ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -97,9 +99,4 @@ A aplicação é apresentada no nó **Aplicações** da área de trabalho **Apli
 Depois de criar uma aplicação, o passo seguinte é implementá-la. Para obter mais informações, veja [Implementar aplicações no Microsoft Intune](deploy-apps.md).
 
 Se quiser ler mais informações sobre sugestões e truques para implementar software para PCs com Windows, veja a mensagem do blogue [Sugestão de Suporte: Melhores Práticas para Distribuição de Software do Intune para PCs](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

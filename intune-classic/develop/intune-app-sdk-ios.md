@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
-ms.openlocfilehash: c27a7a55e50ea2f9c3098d17e8c51bed24c8a404
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 767b0564e88cd1662f7567829d26baff1218e312
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -446,8 +446,10 @@ ContainingAppBundleId | Cadeia | Especifica o ID do pacote da aplicação que co
 DebugSettingsEnabled| Booleano | Se for definido como YES, as políticas de teste no pacote de Definições podem ser aplicadas. As aplicações *não* devem ser fornecidas com esta definição ativada. | Opcional. |
 MainNibFile<br>MainNibFile~ipad  | Cadeia  | Esta definição deve ter o nome de ficheiro nib principal da aplicação.  | Obrigatório se a aplicação definir MainNibFile no ficheiro Info.plist. |
 MainStoryboardFile<br>MainStoryboardFile~ipad  | Cadeia  | Esta definição deve ter o nome de ficheiro de guião gráfico principal da aplicação. | Obrigatório se a aplicação definir UIMainStoryboardFile no ficheiro Info.plist. |
-MAMPolicyRequired| Booleano| Especifica se a aplicação será impedida de iniciar se não tiver uma política de proteção de aplicação do Intune. Assume a predefinição de NO. <br><br> Nota: as aplicações não podem ser submetidas à App Store com a MAMPolicyRequired definida como YES. | Opcional. |
-MAMPolicyWarnAbsent | Booleano| Especifica se a aplicação irá avisar o utilizador ao iniciar se a aplicação não tiver uma política de proteção de aplicação do Intune. Tenha em atenção que as aplicações não podem ser submetidas à loja com esta definição definida como YES. | Opcional. |
+AutoEnrollOnLaunch| Booleano| Especifica se a aplicação deve tentar inscrever-se automaticamente quando inicia se for detetada uma identidade gerida existente e ainda não o tiver feito. Assume a predefinição de NO. <br><br> Notas: se não for encontrada uma identidade gerida ou se não existir um token válido disponível na cache ADAL, a tentativa de inscrição irá falhar automaticamente sem pedir credenciais, a menos que a aplicação também tenha definido a MAMPolicyRequired como YES. | Opcional. |
++AutoEnrollOnLaunch| Booleano| Especifica se a aplicação deve tentar inscrever-se automaticamente quando inicia se for detetada uma identidade gerida existente e ainda não o tiver feito. Assume a predefinição de NO. <br><br> Notas: se não for encontrada uma identidade gerida ou se não existir um token válido disponível na cache ADAL, a tentativa de inscrição irá falhar automaticamente sem pedir credenciais, a menos que a aplicação também tenha definido a MAMPolicyRequired como YES. | Opcional. |
+ +MAMPolicyRequired| Booleano| Especifica se a aplicação será impedida de iniciar se não tiver uma política de proteção de aplicação do Intune. Assume a predefinição de NO. <br><br> Notas: as aplicações não podem ser submetidas à App Store com a MAMPolicyRequired definida como YES. Ao definir a MAMPolicyRequired como YES, a AutoEnrollOnLaunch também deve ser definida como YES. | Opcional. |
+ +MAMPolicyWarnAbsent | Booleano| Especifica se a aplicação irá avisar o utilizador ao iniciar se a aplicação não tiver uma política de proteção de aplicação do Intune. <br><br> Nota: os utilizadores ainda poderão utilizar a aplicação sem a política após ignorarem o aviso. | Opcional. |
 MultiIdentity | Booleano| Especifica se a aplicação tem conhecimento de identidades múltiplas. | Opcional. |
 SplashIconFile <br>SplashIconFile~ipad | Cadeia  | Especifica o ficheiro de ícone de ecrã inicial (arranque) do Intune. | Opcional. |
 SplashDuration | Número | Quantidade mínima de tempo, em segundos, durante a qual será mostrado o ecrã de arranque do Intune na iniciação da aplicação. Assume a predefinição de 1,5. | Opcional. |

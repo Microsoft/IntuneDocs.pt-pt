@@ -14,10 +14,11 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
-ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
-ms.lasthandoff: 01/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -53,7 +54,7 @@ Depois de implementar a política no dispositivo Android ou nos grupos de utiliz
    3. Em **Definições OMA-URI**, escolha **Adicionar**.
    4. Introduza um nome para a definição.
    5. Para **Tipo de dados**, especifique **Cadeia**.
-   6. Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, onde *Name* é o nome do perfil de VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+   6. Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, em que *Name* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
    7.    Para **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a associar ao perfil. Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, introduza **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicação Android](./media/android_per_app_vpn_oma_uri.png)
@@ -64,7 +65,7 @@ Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista d
   1.    Em **Definições OMA-URI**, escolha **Adicionar**.
   2.    Introduza um nome para a definição.
   3.    Para **Tipo de dados**, especifique **Cadeia**.
-  4.    Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, onde *Name* é o nome do perfil da VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, em que *Name* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    Para **Valor**, introduza **BLACKLIST** ou **WHITELIST**.
 
 

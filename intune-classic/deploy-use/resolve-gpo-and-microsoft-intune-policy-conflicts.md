@@ -1,4 +1,4 @@
----
+﻿---
 title: "Resolver conflitos de políticas de GPO e do Intune | Documentos da Microsoft"
 description: "Saiba como resolver conflitos entre as Políticas de Grupos e as políticas de configuração do Intune."
 keywords: 
@@ -14,9 +14,11 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -116,9 +118,4 @@ O novo grupo de segurança deve ser mantido à medida que a inscrição no servi
 
 ### <a name="see-also"></a>Consulte também
 [Gerir PCs Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

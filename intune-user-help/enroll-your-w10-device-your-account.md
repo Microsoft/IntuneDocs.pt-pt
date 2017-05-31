@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 
-1.  Abra a aplicação **Definições** do Windows ao aceder ao **menu Iniciar** e selecione o botão **Definições**. Também pode procurar "definições" na barra de pesquisa.
+> [!NOTE]
+> O Windows 10 funciona em todos os tipos de dispositivos. Quer esteja a utilizar um computador, telemóvel ou tablet, os passos que segue são os mesmos, ainda que tenham um aspeto ligeiramente diferente daquele nas imagens nesta página.
 
-2. Selecione **Contas**.
+1.  Aceda a **Iniciar**.
+
+  - Se estiver a utilizar um dispositivo com **Windows 10 Desktop**, aceda ao **menu Iniciar**.
+  - Se estiver a utilizar um dispositivo **Windows 10 Mobile**, aceda ao **ecrã Início** e, em seguida, percorra até à lista **Todas as Aplicações**.
+
+2. Abra as **Definições** da aplicação Windows ao procurar "definições" na barra de pesquisa.
+
+3. Selecione **Contas**.
 
     ![Aceda a Definições e Contas](./media/W10-enroll-1-settings-accounts.png)
 
-3. Selecione **A sua conta**.
+4. Selecione **A sua conta**.
 
     ![Selecione A sua conta](./media/W10-enroll-2-accounts-your-account.png)
 
-4. Selecione **Adicionar uma conta escolar ou profissional**.
+5. Selecione **Adicionar uma conta escolar ou profissional**.
 
     ![Selecione Adicionar uma conta escolar ou profissional](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. Inicie sessão com as credenciais da sua conta profissional ou escolar.
+6. Inicie sessão com as credenciais da sua conta profissional ou escolar.
 
     ![Iniciar sessão](./media/W10-enroll-4-sign-in.png)
 

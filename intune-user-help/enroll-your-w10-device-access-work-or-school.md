@@ -1,11 +1,11 @@
 ---
 title: Inscrever o seu dispositivo com o Windows 10 no Intune | Documentos da Microsoft
-description: Inscrever um dispositivo com o Windows 10 1607 no Intune
+description: "Inscrever um dispositivo com o Windows 10 versão 1607 ou superior no Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 
+> [!NOTE]
+> O Windows 10 funciona em todos os tipos de dispositivos. Quer esteja a utilizar um computador, telemóvel ou tablet, os passos que segue são os mesmos, ainda que tenham um aspeto ligeiramente diferente daquele nas imagens nesta página.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Abra a aplicação **Definições** do Windows ao aceder ao **menu Iniciar** e selecione o botão **Definições**. Também pode procurar "definições" na barra de pesquisa.
+1. Aceda a **Iniciar**.
 
-2. Selecione **Contas** > **Aceder a profiss./escolar** > **Ligar**.
+  - Se estiver a utilizar um dispositivo com **Windows 10 Desktop**, aceda ao **menu Iniciar**.
+  - Se estiver a utilizar um dispositivo **Windows 10 Mobile**, aceda ao **ecrã Início** e, em seguida, percorra até à lista **Todas as Aplicações**.
+
+2.  Abra as **Definições** da aplicação Windows ao procurar "definições" na barra de pesquisa.
+
+3. Selecione **Contas** > **Aceder a profiss./escolar** > **Ligar**.
 
     ![Selecione Contas, Aceder a profiss./escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

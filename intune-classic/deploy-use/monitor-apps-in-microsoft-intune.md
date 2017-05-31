@@ -1,4 +1,4 @@
----
+﻿---
 title: "Monitorizar implementações de aplicações| Documentos da Microsoft"
 description: "Saiba como monitorizar aplicações implementadas com o Intune."
 keywords: 
@@ -14,9 +14,11 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ee0d10f9b86b1122d0f16568b71b087c341e88df
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -47,9 +49,4 @@ Na lista de aplicações, selecione uma aplicação e, em seguida, escolha **Ver
 Na página **Propriedades de Software** da aplicação, escolha um dos seguintes separadores: **Geral** - Mostra informações gerais sobre a aplicação e o estado de instalação da mesma; **Dispositivos** - Mostra os dispositivos que instalaram com êxito a implementação segmentada de uma aplicação; **Utilizadores** - Mostra os utilizadores cujos dispositivos instalaram com êxito a implementação segmentada de uma aplicação.
 
 Como anteriormente, pode utilizar a lista pendente **Filtros** para configurar os valores apresentados em cada um dos separadores.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
