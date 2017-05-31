@@ -14,9 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
-ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 
@@ -211,7 +213,7 @@ Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente:
 
 2.  Na caixa de diálogo **Manage Deployment**, para:
 
-    -   **To deploy the policy** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Add** &gt; **OK**.
+    -   **Para implementar a política** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
 
     -   **Para fechar a caixa de diálogo sem implementar a política** – escolha **Cancel**.
 
@@ -219,9 +221,4 @@ Ao selecionar uma política implementada, pode ver mais informações sobre a im
 
 ### <a name="see-also"></a>Consulte também
 [Ligações Wi-Fi no Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

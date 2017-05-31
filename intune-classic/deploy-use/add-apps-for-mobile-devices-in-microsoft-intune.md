@@ -1,4 +1,4 @@
----
+﻿---
 title: "Adicionar aplicações a dispositivos inscritos | Documentos da Microsoft"
 description: "Antes de poder implementar uma aplicação, tem de adicioná-la ao Intune. Em seguida, fica disponível na consola do Intune, onde pode implementar e geri-la."
 keywords: 
@@ -14,10 +14,11 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
-ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
-ms.lasthandoff: 01/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 87d8af0c3e014a6c8bcf2cda72bc6815143c34a9
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -52,7 +53,7 @@ O Intune Software Publisher é utilizado para configurar as propriedades da apli
             - O URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se quiser implementar a aplicação Ambiente de Trabalho Remoto da Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar o URL da aplicação, utilize um motor de busca para procurar a página da loja que contém a aplicação. Por exemplo, para localizar a aplicação Ambiente de Trabalho Remoto, pode pesquisar por **Ambiente de Trabalho Remoto da Microsoft para Android**.
             - Um site. O Intune irá implementar um ícone de atalho para o site no dispositivo (conhecido como clip da Web).
             - Uma aplicação na Web. O Intune irá implementar um ícone de atalho para a aplicação no dispositivo.
-        - **Solicitar um browser gerido para abrir esta ligação (apenas no Android e no iOS).**. Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.<br>Para mais detalhes sobre o Managed Browser, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
+        - **Solicitar um browser gerido para abrir esta ligação (apenas no Android e no iOS)**. Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.<br>Para mais detalhes sobre o Managed Browser, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
 
   -   **Aplicação iOS gerida da loja de aplicações**, para aplicações gratuitas da iTunes Store que pretende gerir com políticas de gestão de aplicações móveis (MAM):
 

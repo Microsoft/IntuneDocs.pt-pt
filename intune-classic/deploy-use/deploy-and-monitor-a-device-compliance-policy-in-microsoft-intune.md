@@ -14,9 +14,11 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 40826175eb7c71220a521ac45bb8b9b9e84dec4a
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -71,9 +73,4 @@ Para saber como utilizar a política de conformidade com políticas de acesso co
 
 ### <a name="see-also"></a>Consulte também
 [Introdução às políticas de conformidade de dispositivos no Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Resolução de Problemas do Exchange Connector | Documentos da Microsoft"
 description: "Resolução de problemas relacionados com o Intune Exchange Connector."
 keywords: 
@@ -14,10 +14,11 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 04c89b6dba34be4e3c49bfc907abe7a6240f3d51
-ms.openlocfilehash: 4ada25264aee779f5b31708fdec4f44d19b2e7f7
-ms.lasthandoff: 12/30/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: ad0519145b6cc7c837490892089c18bf20e08d57
+ms.contentlocale: pt-pt
+ms.lasthandoff: 05/23/2017
 
 
 ---
