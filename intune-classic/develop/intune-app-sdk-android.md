@@ -18,7 +18,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 973e97c7dc5f16df93d2c74546b9a4c6c05a0354
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/31/2017
 
 
 ---
@@ -80,8 +80,7 @@ Se o [ProGuard](http://proguard.sourceforge.net/) (ou qualquer outro mecanismo d
 As Azure Active Directory Authentication Libraries (ADAL) podem ter as suas próprias restrições ProGuard. Se a sua aplicação integrar a ADAL, terá de seguir a documentação da ADAL referente a essas restrições.
 
 ### <a name="entry-points"></a>Pontos de entrada
-=======
-A Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) requer estas permissões para executar a autenticação mediada. Se estas permissões não forem concedidas pela aplicação ou forem revogadas pelo utilizador, os fluxos de autenticação que exigirem o mediador (a aplicação Portal da Empresa) serão desativados.
+======= A Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) requer estas permissões para executar a autenticação mediada. Se estas permissões não forem concedidas pela aplicação ou forem revogadas pelo utilizador, os fluxos de autenticação que exigirem o mediador (a aplicação Portal da Empresa) serão desativados.
 
 Para ativar as políticas de proteção de aplicações do Intune, o SDK da Aplicação do Intune requer alterações ao código fonte da aplicação. Estas alterações são feitas através da substituição das classes base do Android por classes base do Intune equivalentes, referidas no documento com o prefixo **MAM**. As classes do SDK estão entre a classe base Android e a própria versão derivada da aplicação dessa classe. Com uma atividade como exemplo, pode ficar com uma hierarquia de herança semelhante a: `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
