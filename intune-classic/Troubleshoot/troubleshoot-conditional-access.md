@@ -127,15 +127,15 @@ Para ver que registos do Exchange Connector utilizam a [Ferramenta Visualizador 
 
 #### <a name="locating-sync-logs"></a>Localizar registos de sincronização
 
--    Localize uma sincronização completa nos registos ao procurar **sincronização completa**. O início de uma sincronização completa estará marcada pelo seguinte texto:
+-    Localize uma sincronização completa nos registos ao procurar **full sync**. O início de uma sincronização completa estará marcada pelo seguinte texto:
 
     'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
 
     O fim do registo de uma sincronização completa tem o seguinte aspeto:
 
-    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Detalhes: Inventory command result - Devices synced: 0 Command ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
+    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Command ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--    Localize uma sincronização (delta) rápida nos registos ao procurar **sincronização rápida**.
+-    Localize uma sincronização (delta) rápida nos registos ao procurar **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Exceções no comando Get next
 Consulte os registos do Exchange Connector para obter as exceções no **comando Get next** e forneça-as ao Suporte da Microsoft.
