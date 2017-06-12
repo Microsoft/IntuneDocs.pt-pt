@@ -25,7 +25,7 @@ ms.lasthandoff: 05/23/2017
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
-[!INCLUDE[azure_preview](./includes/azure_preview.md)] Este tópico descreve a experiência do utilizador para aplicações com políticas de proteção de aplicações. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho, como aceder a aplicações com a conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]Este tópico descreve a experiência do utilizador para aplicações com políticas de proteção de aplicações. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho, como aceder a aplicações com a conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
 ##  <a name="accessing-apps"></a>Aceder a aplicações
 
 Se o dispositivo **não estiver inscrito no Intune**, será pedido ao utilizador final para reiniciar a aplicação quando utilizar a aplicação pela primeira vez.  É preciso um reinício para que as políticas de proteção de aplicações possam ser aplicadas à aplicação. A seguinte captura de ecrã ilustra isto, utilizando a aplicação Skype:
