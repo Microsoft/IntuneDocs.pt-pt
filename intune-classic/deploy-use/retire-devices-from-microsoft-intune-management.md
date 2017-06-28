@@ -1,5 +1,5 @@
 ---
-title: Extinguir dispositivos | Documentos da Microsoft
+title: Extinguir dispositivos
 description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Os dispositivos nunca são removidos do Intune sem a intervenção do utilizador
 
 Poderá ter de extinguir um dispositivo por vários motivos:
 
--    O utilizador sai da empresa de forma planeada (saída “gerida”)
--    O utilizador sai abruptamente (é despedido, despede-se, etc.).
--    Perda do dispositivo
--    Redefinição do objetivo de um dispositivo (passar para outro utilizador, reutilizar para uma finalidade diferente, etc.)
+-   O utilizador sai da empresa de forma planeada (saída “gerida”)
+-   O utilizador sai abruptamente (é despedido, despede-se, etc.).
+-   Perda do dispositivo
+-   Redefinição do objetivo de um dispositivo (passar para outro utilizador, reutilizar para uma finalidade diferente, etc.)
 
 Pode efetuar uma eliminação seletiva ou uma eliminação completa nos dispositivos geridos como dispositivos móveis, ou pode bloquear um dispositivo e repor a respetiva palavra-passe. Ao limpar o dispositivo, liberta a subscrição do utilizador para adicionar um dispositivo diferente. Também pode extinguir PCs geridos com o software de cliente do Intune.
 

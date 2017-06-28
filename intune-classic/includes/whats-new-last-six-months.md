@@ -1,3 +1,103 @@
+## <a name="april-2017"></a>Abril de 2017
+
+### <a name="new-capabilities"></a>Novas funcionalidades
+
+#### <a name="myapps-available-for-managed-browser---822308-822303--"></a>My Apps disponível para o Managed Browser <!--822308, 822303-->
+
+O Microsoft My Apps agora tem melhor suporte no Managed Browser. Os utilizadores do Managed Browser que não forem geridos poderão aceder diretamente ao serviço My Apps e às aplicações SaaS aprovisionadas pelo administrador. Os utilizadores geridos através do Intune poderão continuar a aceder ao My Apps a partir do marcador incorporado no Managed Browser.
+
+#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Novos ícones para o Managed Browser e o Portal da Empresa <!--918433, 918431, 971473-->
+
+O Managed Browser receberá ícones atualizados nas versões para Android e iOS da aplicação. O novo ícone incluirá o emblema do Intune atualizado para o tornar mais consistente com as outras aplicações no Enterprise Mobility + Security (EM+S). Pode ver o novo ícone do Managed Browser na [página Novidades na IU da aplicação Intune](/intune/whats-new-app-ui).
+
+O Portal da Empresa também receberá ícones atualizados para as versões para Android, iOS e Windows da aplicação para melhorar a consistência com as outras aplicações no EM+S. Estes ícones serão lançados gradualmente nas plataformas a partir de abril até finais de maio.
+
+#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progresso de início de sessão no Portal da Empresa para Android <!--953374-->
+
+Uma atualização à aplicação Portal da Empresa para Android mostra um indicador de progresso de início de sessão quando o utilizador inicia ou retoma a aplicação. O indicador mostra novos estados de progresso, a começar com “A ligar...”, “A iniciar sessão...” e “A verificar os requisitos de segurança...” antes de o utilizador poder aceder à aplicação. Pode ver os novos ecrãs da aplicação Portal da Empresa para Android na [página Novidades na IU da aplicação Intune](/intune/whats-new-app-ui).
+
+#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Impedir que as aplicações acedam ao SharePoint Online<!-- 679339 -->
+
+Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção aplicadas acedam ao [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). No cenário de acesso condicional baseado em aplicações, pode especificar as aplicações que pretende que tenham acesso ao SharePoint Online através do portal do Azure.
+
+#### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Suporte de início de sessão único a partir do Portal da Empresa para iOS para o Outlook para iOS <!--834012-->
+Os utilizadores já não precisam de iniciar sessão na aplicação Outlook se já tiverem sessão iniciada no Portal da Empresa para iOS no mesmo dispositivo com a mesma conta. Quando os utilizadores iniciarem o Outlook, poderão selecionar a conta e iniciar sessão automaticamente. Também estamos a trabalhar no sentido de adicionar esta funcionalidade a outras aplicações da Microsoft.
+
+#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Mensagem de estado melhorada na aplicação Portal da Empresa para iOS <!--744866-->
+Serão apresentadas novas mensagens mais específicas na aplicação Portal da Empresa para iOS para fornecer informações mais acessíveis sobre as ocorrências nos dispositivos. Estes erros eram anteriormente incluídos numa mensagem de erro geral que informava "O Portal da Empresa Está Temporariamente Indisponível". Além disso, se um utilizador iniciar o Portal da Empresa em iOS sem estar ligado à Internet, verá uma barra de estado persistente na home page a informar "Sem Ligação à Internet."
+
+#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Estado da instalação de aplicações melhorado para a aplicação Portal da Empresa do Windows 10 <!--676495-->
+
+Os novos melhoramentos das instalações de aplicações iniciadas na aplicação do Portal da Empresa do Windows 10 incluem:
+-   Relatórios mais rápidos do progresso da instalação para pacotes MSI
+-   Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
+-   Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
+
+Pode ver a nova barra de progresso na [página Novidades na IU da aplicação Intune](/intune/whats-new-app-ui).
+
+#### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscrever dispositivos Windows 10 em volume <!-- 747607 -->
+
+Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](/intune-classic/deploy-use/bulk-enroll-windows) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários Self-service e Portal da Empresa não são suportados.
+
+### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novidades na pré-visualização pública da experiência de administrador do Intune no Azure<!--736542-->
+
+No início de 2017 iremos migrar toda a nossa experiência de administrador para o Azure, permitindo uma gestão poderosa e integrada de fluxos de trabalho de EMS principais numa plataforma de serviço moderna extensível com Graph API.
+
+Os novos inquilinos de avaliação começarão a ver a pré-visualização pública da nova experiência de administrador no portal do Azure este mês. Enquanto estiverem no estado de pré-visualização, as capacidades e a paridade com a consola do Intune existente serão proporcionadas iterativamente.
+
+A experiência de administração no portal do Azure irá utilizar a já anunciada nova funcionalidade de agrupamento e filtragem; quando o seu inquilino existente é migrado para a nova experiência de agrupamento, o utilizador também será migrado para pré-visualizar a nova experiência de administração do inquilino. Entretanto, se pretende testar ou observar qualquer uma das novas funcionalidades até que o seu inquilino seja migrado, inscreva-se para uma nova conta de avaliação do Intune ou veja a [nova documentação](/intune/whats-new).
+
+Pode encontrar as novidades na pré-visualização do Intune no Azure [aqui](/intune/whats-new).
+
+### <a name="notices"></a>Avisos
+
+#### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acesso direto aos cenários de inscrição da Apple <!--951869-->
+
+Para as contas do Intune criadas depois de janeiro de 2017, o Intune ativou o acesso direto aos cenários de inscrição da Apple através da carga de trabalho Inscrever Dispositivos no portal de pré-visualização do Azure. Anteriormente, a pré-visualização da inscrição da Apple apenas estava acessível a partir de ligações no portal do Intune clássico. As contas do Intune criadas antes de Janeiro de 2017 precisam de uma única migração antes de estas funcionalidades ficarem disponíveis no Azure. A agenda para a migração ainda não foi anunciada, mas os detalhes serão disponibilizados logo que possível. Recomendamos vivamente a criação de uma conta de avaliação para testar a nova experiência se a conta existente não conseguir aceder à pré-visualização.
+
+#### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Novidades futuras para Appx no Intune no Azure <!-- 1000270 -->
+
+Como parte da migração do Intune para o Azure, estamos a efetuar três alterações a appx:
+
+1. Adicionar um novo tipo de aplicação appx na consola clássica do Intune que só pode ser implementada em dispositivos inscritos em MDM.
+2. Alterar o tipo de aplicação appx existente para apenas ser direcionada para PCs geridos através do agente do Intune para PC.
+3. Converter todas as appxs existentes em appxs de MDM com a migração.
+
+##### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+
+Não irá afetar as suas implementações existentes em dispositivos geridos através do agente do Intune para PC. No entanto, após a migração, não poderá implementar appxs migradas em novos dispositivos geridos através do agente do Intune para PC que não tenham sido abrangidas anteriormente.
+
+##### <a name="what-action-do-i-need-to-take"></a>Que medidas tenho de tomar
+
+Após a migração, terá de voltar a carregar a appx como uma appx para PC, se quiser efetuar novas implementações em PC. Para saber mais, veja [Appx changes in Intune on Azure (Alterações a appx no Intune no Azure)](https://aka.ms/appxchange) no blogue da Equipa de Suporte do Intune.  
+
+#### <a name="administration-roles-being-replaced-in-azure-portal"></a>Substituição das funções de administração no portal do Azure
+
+As funções de administração de gestão de aplicações móveis (MAM) existentes (Contribuidor, Proprietário e Só de leitura) utilizadas no portal clássico do Intune (Silverlight) estão a ser substituídas por um conjunto completo de novos controlos de administração baseados em funções (RBAC) no portal do Azure no Intune. Após concluir a migração para o portal do Azure, terá de atribuir novamente os seus administradores a estas novas funções de administração. Para obter mais informações sobre as RBAC e as novas funções, veja [Controlo de acesso baseado em funções do Microsoft Intune](/intune/role-based-access-control).
+
+### <a name="whats-coming"></a>Novidades futuras
+
+#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Experiência de início de sessão melhorada nas aplicações Portal da Empresa para todas as plataformas<!--User Story 1132123-->
+
+Anunciamos uma alteração que ficará disponível nos próximos meses e irá melhorar a experiência de início de sessão nas aplicações do Portal da Empresa do Intune para Android, iOS e Windows. A nova experiência de utilizador será apresentada automaticamente em todas as plataformas da aplicação Portal da Empresa quando o Azure AD fizer esta alteração. Além disso, os utilizadores podem agora iniciar sessão no Portal da Empresa a partir de outro dispositivo com um código gerado, de utilização única. Tal é especialmente útil nos casos em que os utilizadores precisam de iniciar sessão sem credenciais.
+
+Pode encontrar capturas de ecrã da experiência de início de sessão anterior, a nova experiência de início de sessão com credenciais e a experiência de início de sessão a partir de outro dispositivo na página [Novidades na IU da aplicação](/intune/whats-new-app-ui).
+
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Planear a alteração: o Intune vai alterar a experiência do Portal de Parceiros do Intune <!-- 1050016 -->
+
+A partir da atualização de serviço que se realizará em meados de maio de 2017, iremos remover a página Parceiro do Intune de manage.microsoft.com.  
+
+Se for um administrador parceiro, já não poderá ver e agir em nome dos clientes a partir da página Parceiro do Intune. Em vez disso, terá de iniciar sessão num dos dois outros portais de parceiro da Microsoft.
+
+Poderá iniciar sessão nas contas de cliente que gere a partir do [Centro de Parceiros da Microsoft](https://partnercenter.microsoft.com/) e do [Centro de Administração do Microsoft Office 365 para Parceiros](https://portal.office.com/). De futuro, utilize um destes sites para gerir os seus clientes.
+
+
+#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
+
+A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS.
+
+Disponibilizamos uma versão da aplicação do Portal da Empresa para iOS através do programa TestFlight da Apple que impõe os novos requisitos da ATS. Se gostaria de a experimentar para testar a sua conformidade com a ATS, envie um e-mail para <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app"> CompanyPortalBeta@microsoft.com </a> com o seu nome próprio, apelido, endereço de e-mail e o nome da empresa. Consulte o nosso [blogue de suporte do Intune](https://aka.ms/compportalats) para obter mais detalhes.
+
 ## <a name="march-2017"></a>Março de 2017
 
 ### <a name="new-capabilities"></a>Novas Funcionalidades
@@ -23,7 +123,7 @@ A aplicação Portal da Empresa para Android irá atualizar a respetiva interfac
 - Navegar em Aplicações: a vista **Todas as Aplicações** mostra uma vista com os separadores **Em Destaque**, **Todas** e **Categorias** para uma navegação mais fácil.
 - Suporte: os separadores **Os Meus Dispositivos** e **Contactar TI** são atualizados para melhorar a legibilidade.
 
-Para obter mais detalhes sobre estas alterações, veja [Atualização da IU para aplicações de utilizadores finais do Intune](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+Para obter mais detalhes sobre estas alterações, veja [Atualização da IU para aplicações de utilizadores finais do Intune](/intune/whats-new-app-ui).
 
 #### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Os dispositivos não geridos podem aceder a aplicações atribuídas <!--664691-->
 
@@ -71,7 +171,7 @@ A Microsoft anunciou a disponibilidade geral do Microsoft Teams. As aplicações
 ### <a name="new-capabilities"></a>Novas Funcionalidades
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Modernizar o site do Portal da Empresa <!--753980-->
-O site do Portal da Empresa irá suportar aplicações visadas para utilizadores que não têm dispositivos geridos. O site será alinhado com outros produtos e serviços Microsoft através de um novo esquema de cores contrastante, ilustrações dinâmicas e um menu de opções, ![Pequena imagem do menu de opções adicionado ao canto superior esquerdo do site do Portal da Empresa](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+O site do Portal da Empresa irá suportar aplicações visadas para utilizadores que não têm dispositivos geridos. O site será alinhado com outros produtos e serviços Microsoft através de um novo esquema de cores contrastante, ilustrações dinâmicas e um menu de opções, ![Pequena imagem do menu de opções adicionado ao canto superior esquerdo do site do Portal da Empresa](/intune/whats-new-app-ui).
 
 ### <a name="notices"></a>Avisos
 
@@ -102,7 +202,7 @@ A partir de março, a aplicação Portal da Empresa para Android seguirá as [di
 * __Navegação__: a secção Todas as Aplicações mostra uma vista com os separadores Em destaque, Todas e Categorias para uma navegação mais fácil.
 * __Serviço__: os separadores Os Meus Dispositivos e Contactar TI foram melhorados para facilitar a leitura.
 
-Poderá encontrar imagens de antes e depois na [página de atualizações de IU](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+Poderá encontrar imagens de antes e depois na [página de atualizações de IU](/intune/whats-new-app-ui).
 
 ### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>Associar várias ferramentas de gestão à Loja Windows para Empresas <!--926135-->
 Se estiver a utilizar mais do que uma ferramenta de gestão para implementar aplicações da Loja Windows para Empresas, antes só podia associar uma destas com a Loja Windows para Empresas. Agora, pode associar várias ferramentas de gestão com a loja, como o Intune e o Configuration Manager. Para obter mais detalhes, veja [Gerir aplicações compradas na Loja Windows para Empresas com o Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
@@ -144,22 +244,22 @@ Os utilizadores finais receberão orientações adicionais sobre como recuperar 
 As ligações na aplicação Portal da Empresa para iOS, incluindo as referentes a documentação e aplicações, serão abertas diretamente na aplicação Portal da Empresa através de uma vista do Safari na aplicação. Esta atualização será fornecida separadamente da atualização do serviço em janeiro.
 
 #### <a name="modernizing-the-company-portal-website---753980--"></a>Modernizar o site do Portal da Empresa <!--753980-->
-A partir de fevereiro, o site do Portal da Empresa irá suportar aplicações visadas para utilizadores que não têm dispositivos geridos. O site será alinhado com outros produtos e serviços Microsoft através de um novo esquema de cores contrastante, ilustrações dinâmicas e um menu de opções, ![Menu de opções do site do Portal da Empresa](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+A partir de fevereiro, o site do Portal da Empresa irá suportar aplicações visadas para utilizadores que não têm dispositivos geridos. O site será alinhado com outros produtos e serviços Microsoft através de um novo esquema de cores contrastante, ilustrações dinâmicas e um menu de opções, ![Menu de opções do site do Portal da Empresa](/intune/whats-new-app-ui).
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>Nova documentação para políticas de proteção de aplicações <!--583398-->
 Atualizámos a nossa documentação para administradores e programadores de aplicações que querem ativar políticas de proteção de aplicações (conhecidas como políticas MAM) nas respetivas aplicações iOS e Android através da Ferramenta de Encapsulamento de Aplicações do Intune ou do SDK da Aplicação Intune.
 
 Foram atualizados os seguintes artigos:
 
-* [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-* [Preparar as aplicações iOS para gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Intune](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
-* [Introdução ao SDK da Aplicação Microsoft Intune](/intune-classic/develop/intune-app-sdk-get-started)
-* [Guia para Programadores do SDK da Aplicação Intune para iOS](/intune-classic/develop/intune-app-sdk-ios)
+* [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](/intune/apps-prepare-mobile-application-management)
+* [Preparar as aplicações iOS para gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Intune](/intune/app-wrapper-prepare-ios)
+* [Introdução ao SDK da Aplicação Microsoft Intune](/intune/app-sdk-get-started)
+* [Guia para Programadores do SDK da Aplicação Intune para iOS](/intune/app-sdk-ios)
 
 Os seguintes artigos são novas adições à biblioteca de documentos:
 
-* [Plugin Cordova do SDK da Aplicação Intune](/intune-classic/develop/intune-app-sdk-cordova)
-* [Componente Xamarin do SDK da Aplicação Intune](/intune-classic/develop/intune-app-sdk-xamarin)
+* [Plugin Cordova do SDK da Aplicação Intune](/intune/app-sdk-cordova)
+* [Componente Xamarin do SDK da Aplicação Intune](/intune/app-sdk-xamarin)
 
 #### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>Barra de progresso ao iniciar o Portal da Empresa no iOS <!--665978-->
 O Portal da Empresa para iOS passará a apresentar uma barra de progresso no ecrã inicial para fornecer ao utilizador informações sobre os processos de carregamento que ocorrem. É possível que haja uma implementação faseada da barra de progresso para substituir a animação giratória. Isto significa que alguns dos seus utilizadores verão a nova barra de progresso enquanto outros continuarão a ver a animação giratória.
@@ -171,7 +271,7 @@ No início de 2017 iremos migrar toda a nossa experiência de administrador para
 
 A experiência de administração no portal do Azure irá utilizar a já anunciada nova funcionalidade de agrupamento e filtragem; quando o seu inquilino existente é migrado para a nova experiência de agrupamento, o utilizador também será migrado para pré-visualizar a nova experiência de administração do inquilino. Entretanto, pode obter mais informações sobre o que temos reservado para o Microsoft Intune no portal do Azure na nossa [nova documentação](/intune/what-is-intune).
 
-__Integração da gestão das despesas de telecomunicações na pré-visualização pública do portal do Azure__ <!--747605--> Estamos a começar a pré-visualizar a integração com a gestão de despesas de telecomunicações de terceiros /intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+__Integração da gestão de despesas de telecomunicações na pré-visualização pública do portal do Azure__ <!--747605--> Estamos agora a começar a pré-visualizar a integração com os serviços de gestão de despesas de telecomunicações (TEM) de terceiros no portal do Azure. Pode utilizar o Intune para impor limites de utilização de dados nacionais e itinerantes. Estamos a começar essas integrações com [Saaswedo](http://www.saaswedo.com/). Para ativar esta funcionalidade no seu inquilino de avaliação, [contacte o suporte da Microsoft](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ### <a name="new-capabilities"></a>Novas Funcionalidades
 
@@ -234,243 +334,3 @@ __O certificado de assinatura Symantec já não precisa do Portal da Empresa do 
 ###<a name="deprecations"></a>Depreciação
 
 __Suporte para o Portal da Empresa do Windows Phone 8__ O suporte para o Portal da Empresa do Windows Phone 8 será preterido. O suporte para as plataformas do Windows Phone 8 e do WinRT foi preterido em outubro de 2016. O suporte para o Portal da Empresa do Windows 8 também foi preterido em outubro de 2016.
-
-## <a name="october-2016"></a>Outubro de 2016
-
-### <a name="conditional-access-for-mobile-application-management"></a>Acesso condicional para a gestão de aplicações móveis
-Poderá restringir o acesso ao Exchange Online de modo a permitir o acesso apenas a partir de aplicações que suportam as políticas de gestão de aplicações móveis do Intune, como o Outlook. [Esta nova funcionalidade](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365) é totalmente compatível com as políticas de gestão de aplicações móveis do Intune (MAM), uma vez que pode bloquear o acesso a clientes de e-mail incorporados ou a outras aplicações que não tenham sido configuradas com as políticas de MAM do Intune. Isto garante que os seus utilizadores acedem aos dados da sua organização através de aplicações que podem ser protegidas pelos serviços de MAM do Intune. Pode começar a utilizar a gestão de aplicações móveis do Intune através do portal do Azure. Localize a nova secção Acesso Condicional no painel "Definições".
-
-### <a name="conditional-access-for-windows-pcs"></a>Acesso condicional para PCs Windows
-Agora pode criar políticas de acesso condicional através da consola de administrador do Intune para bloquear o acesso de PCs Windows ao [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune). Também pode criar políticas de acesso condicional para bloquear o acesso a aplicações universais e de ambiente de trabalho do Office.
-
-### <a name="android-for-work-support"></a>Suporte do Android for Work
-
-> [!IMPORTANT]
-
-> Embora possa implementar aplicações Android for Work com uma ação de __Obrigatório__, só pode implementar aplicações como __Disponível__ se os seus grupos do Intune tiverem sido migrados para a nova experiência de grupos do Azure AD.
-
-O Intune faz agora parte do programa Android for Work (AfW). Começaremos a implementar suporte para funcionalidades do AfW a partir deste mês, continuando nos próximos meses. Note que a implementação de aplicações disponíveis do AfW tira partido da nova experiência de agrupamento e filtragem. As contas do Serviço do Intune recentemente aprovisionadas poderão utilizar esta funcionalidade quando o AfW estiver disponível para as mesmas.
-
-[Leia o anúncio da Microsoft sobre o suporte do Intune para o Android for Work](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
-
-Os seguintes tópicos do Intune são novos ou foram atualizados com informações do Android for Work:
-
-Para profissionais de TI:
-- [Configurar o Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
-- [Restringir o acesso ao e-mail no Exchange Online e no novo Exchange Online Dedicado com o Intune](/intune-classic/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
-- [Restringir o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado com o Intune](/intune-classic/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
-- [Definições de política de conformidade do Android for Work](/intune-classic/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
-- [Como implementar aplicações do Android for Work](/intune-classic/deploy-use/android-for-work-apps)
-- [Configurar as aplicações do Android for Work com as políticas de configuração de aplicações móveis](/intune-classic/deploy-use/afw-app-configuration-policy)
-- [Definições de política do Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
-
-Para utilizadores finais:
-- [O que acontece quando cria um perfil de trabalho](/intune-user-help/what-happens-when-you-create-a-work-profile-android)
-- [Criar um perfil de trabalho e inscrever o seu dispositivo no Intune](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android)
-
-### <a name="lookout-integration-to-protect-ios-devices"></a>Integração com a Lookout para a proteção de dispositivos iOS
-Em outubro, a Microsoft está a integrar a solução de proteção da Lookout contra ameaças que afetam dispositivos móveis para proteger dispositivos móveis iOS através da deteção de software maligno, aplicações de risco e mais. A solução da Lookout ajuda-o a determinar o nível da ameaça, que é configurável. Pode criar uma regra de política de conformidade no Intune para determinar a conformidade dos dispositivos com base na avaliação de riscos feita pela Lookout. Ao utilizar políticas de acesso condicional, pode permitir ou bloquear o acesso a recursos da sua empresa com base no estado de conformidade do dispositivo.
-
-Os utilizadores finais de dispositivos em não conformidade iOS receberão um pedido para os inscrever e terão de instalar a aplicação Lookout for Work nos seus dispositivos, ativar a aplicação e corrigir as ameaças comunicadas na mesma para obterem acesso aos dados da empresa. Saiba como [Configurar e implementar as aplicações do Lookout for Work](/intune-classic/deploy-use/configure-and-deploy-lookout-for-work-apps).
-<!--TFS 1319493-->
-
-### <a name="intune-app-wrapping-tool-for-android"></a>Ferramenta de Encapsulamento de Aplicações do Intune para Android
-Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune para ativar as suas aplicações para que utilizem políticas de gestão de aplicações móveis do Intune (MAM). O suporte para políticas de MAM do Intune sem necessidade de inscrição de dispositivos está agora disponível.
-
-### <a name="manage-printing-from-apps-managed-using-mam-policies"></a>Gerir a impressão a partir de aplicações geridas através de políticas de MAM
-Já pode evitar a impressão de dados da empresa a partir de aplicações com políticas de MDM. Esta definição está disponível nos dispositivos do [portal do Azure](/intune-classic/deploy-use/android-mam-policy-settings).
-<!--TFS 1014328-->
-
-### <a name="support-for-fingerprints-on-android-devices"></a>Suporte para impressões digitais em dispositivos Android
-Gestão de aplicações móveis para Android /intune-classic/deploy-use/android-mam-policy-settings).
-
-### <a name="notices"></a>Avisos
-
-__Compatibilidade do Android Samsung KNOX com o Intune__ Determinados modelos do telemóvel Samsung Galaxy Ace não podem ser geridos pelo Intune como dispositivos Samsung KNOX. Ao inscrever estes dispositivos com o Intune, serão geridos como dispositivos Android padrão.
-
-Os números dos modelos afetados são:
-
-* SM-G313HU
-* SM-G313HY
-* SM-G313M
-* SM-G313MY
-* SM-G313U
-
-Não é necessária nenhuma ação adicional sua ou dos utilizadores finais. Para obter mais informações, visite o site do [Samsung KNOX](https://www.samsungknox.com).
-
-__A aplicação do Portal da Empresa para o Windows 8 foi preterida. O suporte para as plataformas Windows Phone 8 e Windows RT está a ser preterido__ A partir de outubro de 2016, o Microsoft Intune irá preterir o suporte para o Portal da Empresa do Windows 8. O Microsoft Intune irá também preterir o suporte para a plataforma do Windows Phone 8 e do Windows RT. Como resultado, não será capaz de inscrever ou atualizar dispositivos Windows Phone 8 e Windows RT.
-
-Pode continuar a gerir dispositivos Windows Phone 8, Windows RT e Windows 8 que já tenham sido inscritos. Atualize dispositivos Windows Phone 8 e Windows 8 para Windows Phone 8.1 e Windows 8.1, e utilize as aplicações do Portal da Empresa para Windows 8.1 e Windows Phone 8.1 correspondentes para continuar a distribuir aplicações para estes dispositivos, sem interrupções.
-
-A partir de novembro de 2016, iremos preterir o suporte para o Portal da Empresa do Windows Phone 8.
-<!--TFS 1255391-->
-
-### <a name="whats-coming"></a>Novidades futuras
-
-__Novo Portal da Empresa do Microsoft Intune disponível para dispositivos com o Windows 10__ A Microsoft está a lançar o novo Portal da Empresa do Microsoft Intune para dispositivos com o Windows 10. Esta aplicação, que tira partido do novo formato do Windows 10 Universal, irá oferecer ao utilizador uma experiência atualizada na aplicação e experiências idênticas em todos os dispositivos, PC e dispositivos móveis semelhantes com o Windows 10, permitindo que todos tenham a mesma funcionalidade atual.
-
-A nova aplicação também irá permitir aos utilizadores tirarem partido de funcionalidades de plataforma adicionais, como o início de sessão único (SSO) e a autenticação baseada em certificados em dispositivos com o Windows 10. A aplicação será disponibilizada como uma atualização das instalações existentes do Portal da Empresa do Windows 8.1 e do Portal da Empresa do Windows Phone 8.1 a partir da Loja Windows. Para mais detalhes, aceda a [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
-<!--TFS 1016502-->
-
-## <a name="september-2016"></a>Setembro de 2016
-### <a name="new-features-announcements-and-information"></a>Novas funcionalidades, anúncios e informações
-* [Acesso condicional do Windows](#windows-conditional-access)
-* [Suporte do iOS 10](#ios-10-support)
-* [A Ferramenta de Encapsulamento de Aplicações suporta serviços MAM para Android e iOS sem a inscrição de dispositivos](#app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios)
-* [A transição de grupos do Intune para o Azure Active Directory terá início em setembro](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
-* [Integração com o Lookout para a proteção de dispositivos Android](#lookout-integration-to-protect-android-devices)
-* [Atualizações ao Portal da Empresa para Android, iOS e Windows](#company-portal-updates)
-* [Glossário do Intune](#intune-glossary)
-* [Novidades futuras](#whats-coming)
-
-### <a name="windows-conditional-access"></a>Acesso condicional do Windows
-Agora pode criar políticas de acesso condicional através da consola de administrador do Intune para bloquear o acesso de PCs Windows ao Exchange Online e ao SharePoint Online. Também pode criar políticas de acesso condicional para bloquear o acesso a aplicações universais e de ambiente de trabalho do Office.
-
-### <a name="ios-10-support"></a>Suporte do iOS 10
-Os cenários MDM e MAM existentes do Intune são compatíveis com o iOS 10. Para obter sugestões, consulte o [Blogue da Equipa de Suporte do Intune (em inglês)](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
-
-### <a name="app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios"></a>A Ferramenta de Encapsulamento de Aplicações suporta serviços MAM para Android e iOS sem a inscrição de dispositivos
-A Ferramenta de Encapsulamento de Aplicações é uma ferramenta de linha de comandos utilizada para ativar aplicações de linha de negócio (LOB) MAM do Intune para iOS e Android. É a forma mais simples de incorporar o SDK de MAM do Intune na sua aplicação, de modo a que a mesma possa impor as políticas MAM implementadas através do Intune. Ao utilizar políticas de MAM, pode:
-
-1. Encriptar os dados da aplicação.
-2. Pedir ao técnico de informação que introduza um número PIN ao iniciar a aplicação.
-3. Permitir que a aplicação transfira dados apenas para outras aplicações geridas.
-4. Impedir que a aplicação crie cópias de segurança de dados no Android, no iTunes e no iCloud.
-5. Permitir as ações Cortar, Copiar e Colar apenas com outras aplicações geridas.
-
-A pré-visualização pública da Ferramenta de Encapsulamento de Aplicações suporta agora serviços de MAM para iOS e Android sem a inscrição de dispositivos em aplicações LOB internas. Isto significa que os seus utilizadores finais não terão de inscrever os respetivos dispositivos com o Intune para utilizar aplicações LOB preparadas para MAM.
-
-Qualquer pessoa pode testar o software de pré-visualização pública e consultar documentos úteis que se encontram no GitHub de msintuneappsdk:
-
-<p style="margin-left: 40px">http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
-
-<p style="margin-left: 40px">http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
-
-Antes de instalar e utilizar a Versão de Pré-lançamento da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para Android e iOS, tem de:
-
-* Ler os Termos de Licenciamento da Microsoft para a Versão de Pré-lançamento da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para Android e iOS
-* Imprimir e guardar uma cópia dos termos de licenciamento nos seus registos. Ao transferir e utilizar a Versão de Pré-lançamento da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para Android, está a aceitar esses termos de licenciamento. Caso não aceite os termos, não deverá utilizar o software.
-<!---TFS 1235607--->
-
-### <a name="intune-groups-begin-transitioning-to-azure-active-directory-in-september"></a>A transição de grupos do Intune para o Azure Active Directory terá início em setembro
-Algumas das novas contas do Intune utilizarão os grupos de segurança do Azure Active Directory em vez dos grupos de utilizadores do Intune. A página de grupos do portal do Intune terá uma ligação que o direciona para o portal de gestão do Azure e que lhe permite saber se está a trabalhar com grupos de segurança.
-
-### <a name="lookout-integration-to-protect-android-devices"></a>Integração com a Lookout para a proteção de dispositivos Android
-A Microsoft está a integrar a solução de proteção da Lookout contra ameaças que afetam dispositivos móveis para proteger dispositivos móveis Android através da deteção de malware, aplicações de risco e mais. A solução da Lookout ajuda-o a determinar o nível da ameaça, que é configurável. Pode criar uma regra de política de conformidade no Intune para determinar a conformidade dos dispositivos com base na avaliação de riscos feita pela Lookout. Ao utilizar políticas de acesso condicional, pode permitir ou bloquear o acesso a recursos da sua empresa com base no estado de conformidade do dispositivo.
-
-Os utilizadores finais de dispositivos em não conformidade receberão um pedido para os inscrever e terão de instalar a aplicação Lookout for Work em dispositivos Android, ativar a aplicação e corrigir as ameaças comunicadas na mesma para obterem acesso. Para saber mais, veja [Restringir o acesso com base no dispositivo, na rede e no risco da aplicação](/intune-classic/deploy-use/device-threat-protection).
-
-
-### <a name="company-portal-updates"></a>Atualizações ao Portal da Empresa
-
-__Android__
-
-<p style="margin-left: 40px">**Inclusão de "Notificações" no Portal da Empresa para Android**<br/>
-<p style="margin-left: 40px">Foi adicionado um novo ícone Notificações à homepage do Portal da Empresa para Android. Tocar neste ícone permite aceder à página Notificações, que mostra ao utilizador final todos os itens que necessitam de atenção na aplicação Portal da Empresa, como dispositivos que não estejam em conformidade, atualizações de inscrições e ativação de inscrições. A aplicação Portal da Empresa para iOS já tem esta experiência de notificações. A nova página Notificações permite que o utilizador não tenha de ver a página da Configuração do Acesso da Empresa sempre que iniciar ou retomar o Portal da Empresa, desde que o dispositivo já esteja inscrito. Se criar as suas próprias orientações para o utilizador final, poderá querer atualizar a sua documentação para que a mesma reflita esta alteração. Consulte as capturas de ecrã atualizadas [aqui](https://aka.ms/androidcpupdate).  
-
-__iOS__
-<p style="margin-left: 40px">**Alterações ao suporte para a aplicação do Portal da Empresa para iOS**<br/>
-<p style="margin-left: 40px">Todos os utilizadores da aplicação Portal da Empresa do Microsoft Intune para iOS têm de utilizar agora a versão mais recente. Os novos utilizadores só poderão transferir a versão mais recente e aos utilizadores atuais será pedido que atualizem para a mesma. A versão mais recente necessita do iOS 8.0 ou posterior, pelo que os utilizadores com dispositivos com versões mais antigas do iOS não poderão utilizar o Portal da Empresa nem inscrevê-los até os atualizarem para o iOS 8.0 ou posterior e atualizarem a aplicação Portal da Empresa para a versão mais recente. Os dispositivos inscritos que tenham versões anteriores ao iOS 8.0 continuarão a ser geridos e listados na Consola de Administração do Intune.
-<!---TFS 1283165--->
-
-<p style="margin-left: 40px">**Melhorias na forma como os utilizadores finais de iOS obtêm as aplicações**<br/>
-<p style="margin-left: 40px">As seguintes alterações foram feitas aos mosaicos de aplicações na aplicação Portal da Empresa para iOS, para direcionar os utilizadores para diferentes vistas numa única localização – o site do Portal da Empresa – em todas as respetivas aplicações. As restrições da Apple proíbem as aplicações geridas da App Store e de linha de negócio de serem listadas na aplicação Portal da Empresa e exigem também que os utilizadores acedam a vistas diferentes para localizar todas as suas aplicações.
-
-<p style="margin-left: 40px">O mosaico **Aplicações da Empresa** apontava anteriormente para uma lista de todas as aplicações no separador TODOS do site do Portal da Empresa e irá continuar a funcionar da mesma forma. O nome do mosaico foi alterado para **Todas as Aplicações**.
-
-<p style="margin-left: 40px">O mosaico **Outras Aplicações** apontava anteriormente para uma vista, dentro da aplicação Portal da Empresa, que indicava todas as aplicações que a Apple permite que a aplicação Portal da Empresa apresente. O nome do mosaico foi alterado para **Aplicações Em Destaque** e tocar no mosaico irá direcionar os utilizadores para o separador EM DESTAQUE do site do Portal da Empresa.
-
-<p style="margin-left: 40px">O mosaico **Categorias** apontava anteriormente para uma vista, dentro da aplicação Portal da Empresa, que indicava categorias de aplicações. O nome do mosaico não foi alterado, mas aponta agora para o separador CATEGORIAS do site do Portal da Empresa. Pode encontrar capturas de ecrã atualizadas [aqui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-  <!---TFS 1317133--->
-
-<p style="margin-left: 40px">**Solicite a instalação da aplicação Managed Browser do iOS se o Profissional de TI definir esse requisito para uma aplicação**<br/>
-<p style="margin-left: 40px">Se tiver configurado um Web Clip para ser aberto apenas no browser gerido e este não estiver instalado num dispositivo, a aplicação Portal da Empresa irá pedir ao utilizador para instalar o browser gerido antes de poder instalar o Web Clip.
-  <!---TFS 1228570--->
-
-__Windows__
-<p style="margin-left: 40px">**Botão de feedback adicionado à aplicação Portal da Empresa para Windows Phone 8.1**<br/>
-<p style="margin-left: 40px">A aplicação Portal da Empresa para Windows 8.1 permite que os utilizadores finais enviem feedback sobre a aplicação através do novo botão "enviar feedback". Para localizar o botão, os utilizadores têm de tocar no menu de "três pontos"que se encontra no canto inferior direito do ecrã da aplicação Portal da Empresa e, em seguida, tocar em **enviar feedback**. O feedback recolhido é anónimo e irá ajudar a Microsoft a melhorar a experiência da aplicação Portal da Empresa para os utilizadores.
-<!---TFS 1317806--->
-
-### <a name="intune-glossarybr"></a>Glossário do Intune</br>
-Adicionámos um novo [tópico de glossário](/intune-classic/understand-explore/intune-glossary) à biblioteca para o ajudar a compreender alguns dos termos utilizados no produto Intune.
-
-## <a name="august-2016"></a>Agosto de 2016
-### <a name="app-management"></a>Gestão de aplicações
-
-__Aplicações ocultas e apresentadas para iOS 9.3__ Para os dispositivos com o iOS 9.3 ou posterior, pode utilizar a lista das aplicações ocultas e apresentadas na política de configuração geral do iOS para:
-- Especificar uma lista de aplicações que serão ocultas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
-- Especificar uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
-
-As aplicações que pode especificar incluem ambas as aplicações implementadas e as aplicações incorporadas do iOS como Mensagens e Notas. Para obter detalhes, veja [Definições de política para iOS no Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
-<!---TFS 1279009 checked--->
-__Política de aplicações permitidas e bloqueadas para dispositivos Samsung KNOX__ Agora pode configurar uma política personalizada para os dispositivos Samsung KNOX que lhe permite criar um dos seguintes:
-- Uma lista de aplicações que estão bloqueadas de executar no dispositivo. Mesmo que esteja instalada, uma aplicação definida na lista de bloqueadas não pode ser ativada no dispositivo.
-- Uma lista de aplicações que os utilizadores do dispositivo estão autorizados a instalar a partir da loja Google Play. Mais nenhuma outra aplicação pode ser instalada a partir da loja.
-
-Estas definições só podem ser utilizadas por dispositivos que executem Samsung KNOX.
-Para obter detalhes, veja [Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung KNOX](/intune-classic/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps).
-<!---TFS 1311629 checked --->
-
-__Novas aplicações compatíveis com as políticas de gestão de aplicações móveis (MAM)__ A aplicação Yammer para [iOS](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), independentemente de o dispositivo estar inscrito.
-
-Para obter uma lista completa das aplicações compatíveis com o MAM, consulte o site dos [parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-partners).
-<!--- TFS 1252335 & 1252336 checked--->
-
-__Aplicações do Visualizador do Intune__ Com o lançamento da nova aplicação de partilha RMS, iremos remover as seguintes aplicações do Visualizador do Intune, a partir de agosto de 2016:
-- Visualizador AV do Intune
-- Visualizador de PDFs do Intune
-- Visualizador de Imagens do Intune para Android a partir do Google Play
-
-Em vez de utilizar as aplicações do Visualizador do Intune, recomendamos que utilize a nova [aplicação Rights Management /intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), que lhe permite implementar uma aplicação em vez de três separadas para ver os ficheiros da empresa de forma segura em dispositivos Android. Quando a aplicação do visualizador do Intune deixar de ser suportada, será removida da Google Store e indisponibilizada para utilização futura.
-
-### <a name="device-management"></a>Gestão de dispositivos
-__Suporte para Android 7.0__ O Intune fornece suporte no "dia 0" para o lançamento do sistema operativo Android 7.0 para dispositivos móveis.
-<!---TFS 1262053--->
-### <a name="google-removal-of-remote-passcode-reset-capability-on-android-70-devices"></a>A remoção da funcionalidade de reposição de códigos de acesso remotos por parte da Google em dispositivos com o Android 7.0
-A Google está a remover a funcionalidade dos administradores de TI e os utilizadores finais poderem repor remotamente o código de acesso a dispositivos com o Android 7.0. Anteriormente, os administradores de TI podiam repor remotamente o código de acesso de um utilizador, assim como os utilizadores finais podiam repor os seus códigos de acesso a partir do site do Portal da Empresa.
-
-
-
-### <a name="company-portal-updates"></a>Atualizações ao Portal da Empresa
-__Site do Portal da Empresa__
-- **Ligação de comentários do Portal da Empresa para a Microsoft** <br/>
-O site do Portal da Empresa permite que os utilizadores finais toquem numa nova ligação de "Comentários", na parte inferior da página, para enviar comentários à Microsoft sobre as suas experiências com o site. Os comentários recolhidos são anónimos e vão ajudar a Microsoft a melhorar a experiência do site do Portal da Empresa para os utilizadores.
-<!--- TFS 1313657 checked--->
-
-__iOS__
-- **Versão mínima do Managed Browser para iOS atualizada para 8.0**<br/>
-A aplicação Microsoft Intune Managed Browser para iOS foi atualizada para suportar dispositivos com o iOS 8.0 ou posterior. Embora os dispositivos iOS 7.1 continuem a poder utilizar a aplicação Managed Browser atual, incentive os seus utilizadores a atualizarem para o iOS 8.0 ou posterior para aceder e tirar partido das novas funcionalidades do Managed Browser.  
-<!---TFS 1313253 checked--->
-
-### <a name="whats-coming"></a>Novidades futuras
-__Os Grupos do Intune irão transitar para os Grupos do Azure Active Directory a partir de setembro de 2016__ O Intune está a criar uma nova experiência de gestão de grupos que utiliza os grupos de segurança do Azure Active Directory (AAD) como grupos de utilizadores e de dispositivos no Intune. Estes grupos vão ser utilizados para a gestão de todos os grupos, implementações de políticas e implementações de perfis **quando introduzirmos o novo portal de administração do Intune baseado no Azure**.
-
-Esta experiência nova evita que tenha de duplicar grupos entre os serviços, **permite-lhe aceder a algumas funcionalidades novas dos grupos do Azure Active Directory Premium (AADP)** e proporciona extensibilidade através da utilização do PowerShell e do Graph. Esta alteração também vai unificar a experiência de gestão de grupos ao nível da gestão de mobilidade empresarial.
-
-Para permitir a mudança para os Grupos de Segurança, a experiência na **consola de administração atual** vai sofrer algumas alterações. **Estas alterações e a utilização dos grupos de segurança do AAD serão registadas na documentação do Intune**.
-
-Os clientes que só agora estão a utilizar o Intune verão **algumas das alterações aos grupos de segurança antes dos inquilinos atuais**.
-
-Para além das alterações à gestão de grupos, **as funcionalidades seguintes vão ser preteridas**:
-- Excluir membros ou grupos ao criar um novo grupo
-- Grupos **Utilizadores desagrupados** e **Dispositivos desagrupados**
-- **Gerir Grupos** na função Administrador de Serviço
-- Alertas personalizados com base em grupos para Regras de Notificação
-- Ordenar com grupos em relatórios
-<!--- TFS 1295329--->
-
-__Inclusão de "Notificações" no Portal da Empresa para Android__ Vamos lançar uma atualização para o Portal da Empresa para Android em setembro, que vai introduzir um ícone **Notificações** novo na home page. Tocar neste ícone vai permitir aceder à página **Notificações**, que mostrará ao utilizador final todos os itens que requerem atenção na aplicação do Portal da Empresa, como dispositivos não conformes, atualizações de inscrições e ativação de inscrições. Se também utilizar a aplicação do Portal da Empresa para iOS, já vai beneficiar da experiência de notificações. Com a introdução da página **Notificações**, não verá a página **Configuração do Acesso da Empresa** sempre que iniciar ou retomar o Portal da Empresa para Android, desde que o dispositivo já esteja inscrito. Sabemos que muitos dos nossos utilizadores criaram orientações para o utilizador final e agradecemos o aviso antecipado sempre que as suas orientações/capturas de ecrã precisem de ser atualizadas. Atualize a sua documentação de modo a refletir a alteração futura à experiência. Pode obter as capturas de ecrã atualizadas em https://aka.ms/androidcpupdate.  
-
-### <a name="service-deprecation"></a>Depreciação de serviço
-
-- **Alterações ao suporte para a aplicação do Portal da Empresa para iOS**<br/>
-Em setembro, todos os utilizadores da aplicação do Portal da Empresa do Microsoft Intune para iOS terão de utilizar a última versão. Os novos utilizadores só conseguirão transferir a versão mais recente e os utilizadores atuais terão de atualizar para a mesma. A versão mais recente requer o iOS 8.0 ou posterior, pelo que os utilizadores com dispositivos com versões do iOS mais antigas não poderão utilizar o Portal da Empresa nem inscrever enquanto não os atualizarem para o iOS 8.0 ou posterior e atualizarem a aplicação do Portal da Empresa para a última versão. Os dispositivos inscritos que tenham versões anteriores ao iOS 8.0 continuarão a ser geridos e listados na Consola de Administração do Intune.  
-
-- **Versão mínima do Managed Browser para iOS atualizada para 8.0**<br/>
-Em agosto, o Intune vai lançar uma aplicação atualizada do Microsoft Intune Managed Browser para iOS que só irá suportar dispositivos com o iOS 8.0 ou posterior. Embora os dispositivos iOS 7.1 continuem a poder utilizar a aplicação Managed Browser atual, incentive os seus utilizadores a atualizarem para o iOS 8.0 ou posterior para acederem e tirarem partido das novas funcionalidades do Managed Browser.  
-<!---TFS 1313253--->
-
-- **As aplicações do Portal da Empresa para Windows 8 e Windows Phone 8 serão preteridas a partir de setembro de 2016** <br/>
-A partir de setembro de 2016, o Microsoft Intune vai terminar o suporte para as aplicações do Portal da Empresa do Microsoft Intune nas plataformas Windows Phone 8 e Windows 8. Para continuar a distribuir aplicações para estes dispositivos, atualize-os para o Windows 8.1 e o Windows Phone 8.1 e utilize as aplicações do Portal da Empresa para Windows 8.1 e o Windows Phone 8.1 correspondentes.
-<!---TFS 1255391--->

@@ -1,5 +1,5 @@
 ---
-title: "Pedir e fornecer assistência remota para PCs Windows | Documentos da Microsoft"
+title: "Pedir e fornecer assistência remota para PCs Windows"
 description: "Descreve os passos do utilizador final e do administrador de TI para fornecer assistência remota para computadores com Windows geridos como PCs e para iniciar um PC remotamente."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Pedir e fornecer assistência remota para PCs Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune.
 

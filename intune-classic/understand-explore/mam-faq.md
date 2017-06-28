@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 ## <a name="mam-basics"></a>Noções básicas da MAM
 
 
-**O que é a MAM?** A [gestão de aplicações móveis do Intune](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) refere-se ao conjunto de funcionalidades de gestão do Intune que lhe permite publicar, emitir via push, configurar, proteger, monitorizar e atualizar aplicações móveis para os seus utilizadores.
+**O que é a MAM?** A [gestão de aplicações móveis do Intune](/intune/app-lifecycle) refere-se ao conjunto de funcionalidades de gestão do Intune que lhe permite publicar, emitir via push, configurar, proteger, monitorizar e atualizar aplicações móveis para os seus utilizadores.
 
 **Quais são as vantagens da proteção de aplicações da MAM?** A MAM protege os dados de uma empresa dentro da aplicação. Com a MAM-WE, pode gerir uma aplicação relacionada com o trabalho ou com a escola que contenha informações confidenciais na maioria dos dispositivos, incluindo os dispositivos pessoais, em cenários BYOD (Bring Your Own Device). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Veja a lista oficial das [aplicações otimizadas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
 
@@ -50,12 +50,12 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Aplicações que pode gerir com as políticas de proteção de aplicações
 
-**Que aplicações podem ser geridas pelas políticas de proteção de aplicações?** Qualquer aplicação que tenha sido otimizada pelo [SDK da Aplicação Intune](../develop/intune-app-sdk.md) ou encapsulada pela [Ferramenta de Encapsulamento de Aplicações do Intune](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) pode ser gerida com as políticas de proteção de aplicações do Intune. Veja a lista oficial das [aplicações otimizadas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
+**Que aplicações podem ser geridas pelas políticas de proteção de aplicações?** Qualquer aplicação que tenha sido otimizada pelo [SDK da Aplicação Intune](/intune/app-sdk) ou encapsulada pela [Ferramenta de Encapsulamento de Aplicações do Intune](/intune/apps-prepare-mobile-application-management) pode ser gerida com as políticas de proteção de aplicações do Intune. Veja a lista oficial das [aplicações otimizadas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
 
 **Quais são os requisitos base para utilizar as políticas de proteção de aplicações numa aplicação otimizada pelo Intune?**
-  1. O utilizador final tem de ter uma conta no Azure Active Directory (AAD). Veja [Adicionar utilizadores e conceder permissões administrativas no Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) para saber como criar utilizadores do Intune no Azure Active Directory.
+  1. O utilizador final tem de ter uma conta no Azure Active Directory (AAD). Veja [Adicionar utilizadores e conceder permissões administrativas no Intune](/intune/users-permissions-add) para saber como criar utilizadores do Intune no Azure Active Directory.
 
-  2. O utilizador final tem de ter uma licença para o Microsoft Intune atribuída à conta do Azure Active Directory dele. Veja [Gerir licenças do Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) para saber como atribuir licenças do Intune aos utilizadores finais.
+  2. O utilizador final tem de ter uma licença para o Microsoft Intune atribuída à conta do Azure Active Directory dele. Veja [Gerir licenças do Intune](/intune/licenses-assign) para saber como atribuir licenças do Intune aos utilizadores finais.
 
   3. O utilizador final tem de pertencer a um grupo de segurança visado por uma política de proteção de aplicações. A mesma política de proteção de aplicações tem de abranger a aplicação específica em utilização. As políticas de proteção de aplicações podem ser criadas e implementadas na consola do Intune, no [portal do Azure](http://portal.azure.com). Atualmente, os grupos de segurança podem ser criados no [portal do Office](http://portal.office.com).
 

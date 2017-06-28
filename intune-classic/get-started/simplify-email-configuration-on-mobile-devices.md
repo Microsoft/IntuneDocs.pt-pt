@@ -1,5 +1,5 @@
 ---
-title: "Simplificar a configuração de e-mail em dispositivos móveis | Documentos da Microsoft"
+title: "Simplificar a configuração de e-mail em dispositivos móveis"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Se Sim, o Microsoft Intune pode configurar automaticamente o e-mail do colaborad
 Depois do perfil de e-mail estar configurado, pode facilmente restringir o acesso ao e-mail da empresa e aos serviços do Office 365 com as políticas de acesso condicional do Intune. Estas políticas permitem assegurar que o acesso ao e-mail da empresa e aos serviços do Office 365 é restringido aos dispositivos que estão em conformidade com as regras que definir no Intune.
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
-1.    Configurar [automaticamente perfis de e-mail de utilizador final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) em dispositivos Windows, iOS e Android.
-2.    [Controlar o acesso ao e-mail da empresa](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) através das políticas de acesso condicional.
+1.  Configurar [automaticamente perfis de e-mail de utilizador final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) em dispositivos Windows, iOS e Android.
+2.  [Controlar o acesso ao e-mail da empresa](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) através das políticas de acesso condicional.
 
 
 ### <a name="additional-information"></a>Informações adicionais:
