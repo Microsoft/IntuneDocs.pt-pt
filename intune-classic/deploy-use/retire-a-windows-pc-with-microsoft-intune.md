@@ -1,5 +1,5 @@
 ---
-title: Extinguir um PC Windows | Documentos da Microsoft
+title: Extinguir um PC Windows
 description: Como extinguir um PC Windows gerido pelo Intune.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Extinguir um PC Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Siga os seguintes passos para extinguir computadores que está a gerir como PCs através da execução do cliente de software do Intune nos mesmos. Quando extingue um PC, este é removido da gestão do Intune. Não é possível efetuar uma reposição de fábrica num PC a partir do Intune para restaurar as suas definições de fábrica originais.
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que quer extinguir).

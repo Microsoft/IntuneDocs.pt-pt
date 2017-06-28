@@ -1,5 +1,5 @@
 ---
-title: "Escolher como inscrever dispositivos móveis | Documentos da Microsoft"
+title: "Escolher como inscrever dispositivos móveis"
 description: "Decidir como inscrever dispositivos móveis no Intune respondendo a algumas perguntas simples"
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9d1e5ff2fa4f7393b9beff7cca88ce23daeaa87e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5aa97d991c72ae9eb02b6b31f0d924685f4049ce
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -30,11 +30,14 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 
 ## <a name="which-byod-platform-do-you-want-to-enable"></a>**Qual a plataforma BYOD que pretende ativar?**
 
+> [!div  class="button"]
+[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
 > [!div class="button"]
-[Android >]/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) [!div class="button"]
-> [iOS e Mac >]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [!div class="button"]
-[PCs Windows >]/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) [!div class="button"]
-> [Windows 10 Mobile e Windows Phone >]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+[iOS e Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+> [!div class="button"]
+[PCs Windows >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+> [!div class="button"]
+[Windows 10 Mobile e Windows Phone >](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 
 
 > [!div class="button"]

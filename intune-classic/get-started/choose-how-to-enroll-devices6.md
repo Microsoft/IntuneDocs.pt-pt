@@ -1,5 +1,5 @@
 ---
-title: "Escolher como inscrever dispositivos móveis | Documentos da Microsoft"
+title: "Escolher como inscrever dispositivos móveis"
 description: "Decidir como inscrever dispositivos móveis no Intune respondendo a algumas perguntas simples"
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 364064f3507c00f87b367c0aa4ff7b0f31cea4b7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8fe7b2bb58655374d3e92391cd0a37aeda3062d4
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -31,10 +31,11 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**Como irá gerir os dispositivos dedicados pertencentes à empresa?**
 
   > [!div class="button"]
-[iOS DEP >]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
+[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Assistente de Configuração de iOS >]/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [!div class="button"]
-> [Identificar com IMEI >]/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[Assistente de Configuração iOS >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[Identificar com IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Pode inscrever dispositivos pertencentes à empresa com utilizadores dedicados através das seguintes formas:
 
