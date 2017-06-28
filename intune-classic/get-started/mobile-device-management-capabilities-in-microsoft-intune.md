@@ -1,5 +1,5 @@
 ---
-title: "Funcionalidades de gestão de dispositivos inscritos | Documentos da Microsoft"
+title: "Funcionalidades de gestão de dispositivos inscritos"
 description: "Leia este tópico para saber como o Intune o pode ajudar a gerir os dispositivos que inscrever."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 364c7e1fe2bf17b0c804960c3ebaadb1cf4652a8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 
 |Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
-|Políticas de configuração<br><br>Políticas personalizadas| Permite gerir diversas definições e funcionalidades nos dispositivos móveis na sua organização. Por exemplo, pode exigir uma palavra-passe, limitar o número de tentativas falhadas, limitar a quantidade de tempo antes do ecrã bloquear, definir o tempo de expiração da palavra-passe e impedir palavras-passe utilizadas anteriormente. Também pode controlar a utilização das funcionalidades de hardware e software, tais como a câmara do dispositivo ou o browser.<br><br>Utilize políticas personalizadas quando as políticas de configuração não contêm as definições necessárias. Para dispositivos iOS, pode importar definições que exportou da ferramenta Apple Configurator. Para outros dispositivos, pode utilizar o Open Mobile Alliance Uniform Resource Identifier /intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)<br />|
+|Políticas de configuração<br><br>Políticas personalizadas| Permite gerir diversas definições e funcionalidades nos dispositivos móveis na sua organização. Por exemplo, pode exigir uma palavra-passe, limitar o número de tentativas falhadas, limitar a quantidade de tempo antes do ecrã bloquear, definir o tempo de expiração da palavra-passe e impedir palavras-passe utilizadas anteriormente. Também pode controlar a utilização das funcionalidades de hardware e software, tais como a câmara do dispositivo ou o browser.<br><br>Utilize políticas personalizadas quando as políticas de configuração não contêm as definições necessárias. Para dispositivos iOS, pode importar definições que exportou da ferramenta Apple Configurator. Para outros dispositivos, pode utilizar as definições Open Mobile Alliance Uniform Resource Identifier (OMA-URI) para configurar definições e funcionalidades do dispositivo.|[Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)|
 |Eliminação e Bloqueio Remotos e Reposição do Código de Acesso|Apaga dados confidenciais quando um dispositivo é perdido ou roubado. Por exemplo, pode bloquear remotamente o dispositivo, restaurá-lo para as definições de fábrica ou apagar apenas dados empresariais.<br><br>Pode repor códigos de acesso se os utilizadores perderem acesso ao respetivo dispositivo, bloquear dispositivos perdidos ou roubados ou até mesmo apagar dados de dispositivos perdidos ou roubados.|[Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso](/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Modo de local público|Permite-lhe bloquear determinadas funcionalidades de dispositivos móveis, como a captura de ecrã e o botão ligar/desligar. Também permite restringir os dispositivos para que executem uma única aplicação especificada por si.|[Definições de política de configuração do iOS no Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
@@ -47,8 +47,8 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 |Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
 |Implementação e gestão de aplicações|Fornece uma série de ferramentas para ajudá-lo a gerir aplicações móveis ao longo do respetivo ciclo de vida, incluindo a implementação de aplicações a partir de ficheiros de instalação e lojas de aplicações, monitorização detalhada do estado das aplicações e remoção de aplicações.|[Implementar aplicações no Microsoft Intune](/intune-classic/deploy-use/deploy-apps)|
-|Aplicações compatíveis e incompatíveis|Permite-lhe especificar as listas de aplicações compatíveis /intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
-|Gestão de aplicações móveis|Configure restrições para aplicações utilizando a gestão de aplicações móveis para todos os dispositivos geridos e não geridos com o Intune. Isto ajuda a aumentar a segurança dos dados da sua empresa, restringindo operações como a ação copiar e colar, efetuar cópias de segurança externas de dados e a transferência de dados entre aplicações.|[Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
+|Aplicações compatíveis e incompatíveis|Permite-lhe especificar listas de aplicações compatíveis (que os utilizadores têm permissão para instalar) e incompatíveis (que os utilizadores não têm permissão para instalar).|[Definições de política do iOS no Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
+|Gestão de aplicações móveis|Configure restrições para aplicações utilizando a gestão de aplicações móveis para todos os dispositivos geridos e não geridos com o Intune. Isto ajuda a aumentar a segurança dos dados da sua empresa, restringindo operações como a ação copiar e colar, efetuar cópias de segurança externas de dados e a transferência de dados entre aplicações.|[Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune](/intune/app-wrapper-prepare-android)|
 |Configuração de aplicação móvel iOS|Utiliza políticas de configuração de aplicações móveis para fornecer definições para aplicações iOS que poderão ser necessárias quando o utilizador executar a aplicação. Por exemplo, uma aplicação pode requerer que o utilizador especifique um número de porta ou informações de início de sessão. Isto pode ajudar a simplificar a configuração de aplicações e reduzir o número de chamadas para o suporte técnico.|[Configurar aplicações iOS com políticas de configuração de aplicações móveis no Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Perfis de aprovisionamento de aplicações móveis iOS|Ajuda a implementar perfis de aprovisionamento nas aplicações iOS que estão prestes a expirar. |[Utilizar políticas de perfil de aprovisionamento móvel de iOS para impedir as aplicações de expirar](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Browser gerido|Configura as políticas de browser gerido para controlar os sites que os utilizadores do dispositivo podem visitar. Para além disso, também pode aplicar políticas de gestão de aplicações móveis para o browser gerido.|[Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)|
@@ -59,7 +59,7 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 
 |Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
-|Perfis de certificados|Cria e implementa perfis de certificados fidedignos e o Protocolo SCEP (Simple Certificate Enrollment Protocol) /intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
+|Perfis de certificados|Cria e implementa perfis de certificados fidedignos e certificados de protocolo SCEP (Simple Certificate Enrollment Protocol) que podem ser utilizados para proteger e autenticar perfis de Wi-Fi, VPN e e-mail.|[Proteger o acesso a recursos com perfis de certificados no Microsoft Intune](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
 |Perfis de Wi-Fi|Implementa definições de rede sem fios aos seus utilizadores. Ao implementar estas definições, estará a minimizar o esforço do utilizador para se ligar à rede da empresa.|[Ligações Wi-Fi no Microsoft Intune](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)|
 |Perfis de e-mail|Cria e implementa definições de e-mail nos dispositivos. Isto significa que os utilizadores podem aceder ao e-mail da empresa nos seus dispositivos pessoais sem terem de efetuar qualquer configuração.|[Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |Perfis da VPN|Implementa definições da VPN nos utilizadores e dispositivos na sua organização. Ao implementar estas definições, estará a minimizar o esforço do utilizador para se ligar aos recursos na rede da empresa.|[Ligações VPN no Microsoft Intune](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune)|

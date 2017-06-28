@@ -1,5 +1,5 @@
 ---
-title: "Publicar aplicações móveis para os utilizadores | Documentos da Microsoft"
+title: "Publicar aplicações móveis para os utilizadores"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fea0f98051d1a13a2ace178fe440520f495aaa68
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,9 +35,9 @@ Gostaria que os utilizadores tivessem acesso rápido a todas as aplicações que
 Se sim, o Microsoft Intune permite-lhe publicar aplicações (Office mobile, linha interna de negócios ou outras aplicações de ambiente de trabalho e móveis) num portal comum único: o [a aplicação Portal da empresa do site](/intune-user-help/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
-1.    [Inscrever os dispositivos](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) na gestão de dispositivos móveis do Intune.
-2.    [Adicionar ao Intune as aplicações](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que pretende implementar nos dispositivos inscritos.
-3.    [Implementar aplicações através do Intune](/intune-classic/deploy-use/deploy-apps) para os dispositivos inscritos.
+1.  [Inscrever os dispositivos](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) na gestão de dispositivos móveis do Intune.
+2.  [Adicionar ao Intune as aplicações](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que pretende implementar nos dispositivos inscritos.
+3.  [Implementar aplicações através do Intune](/intune-classic/deploy-use/deploy-apps) para os dispositivos inscritos.
 
 ### <a name="additional-information"></a>Informações adicionais:
 Se a publicação de aplicações móveis do Office for feita com a intenção de utilizar as capacidades MAM do Intune para gerir a proteção de perda de dados destas aplicações então, terá de ser [atribuída uma licença de utilizador para o Office 365](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc) a cada utilizador final ao qual foram atribuídas políticas MAM.

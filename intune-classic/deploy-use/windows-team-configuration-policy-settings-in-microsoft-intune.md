@@ -1,6 +1,6 @@
 ﻿---
-title: "Definições de política de configuração do Windows Team | Documentos da Microsoft"
-description: "Utilize a **Política de configuração geral do Windows 10 Team** do Microsoft Intune para configurar definições para dispositivos Windows 10 Team inscritos, como o Microsoft Surface Hub."
+title: "Definições de política de configuração do Windows Team"
+description: "Utilize a **política de configuração geral do Windows 10 Team** do Microsoft Intune para configurar definições para dispositivos Windows 10 Team inscritos, como o Microsoft Surface Hub."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 24a64db3a3cf97b679ab0fa739eb6f452499ca63
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6e0f0ea969ed78f2daf482438b056c8b4eb1a316
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
