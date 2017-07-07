@@ -14,15 +14,12 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d974a3c8fd69ee970991af96afe2011c6d07db2a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="update-apps-using-microsoft-intune"></a>Atualizar aplicações com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ Quando os dispositivos voltarem a verificar as aplicações disponíveis, a apli
 Em relação às aplicações instaladas a partir de um pacote de aplicação (aplicações de linha de negócio), a aplicação será atualizada automaticamente tanto para implementações necessárias como disponíveis, desde que a aplicação tenha o mesmo identificador.
 
 No que respeita às aplicações implementadas como ligação a uma loja, a atualização é gerida pela loja onde a aplicação foi comprada.
-

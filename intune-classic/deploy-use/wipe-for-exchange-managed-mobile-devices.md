@@ -1,5 +1,5 @@
 ---
-title: "Eliminação de dispositivos móveis geridos pelo Exchange | Documentos da Microsoft"
+title: "Eliminação de dispositivos móveis geridos pelo Exchange"
 description: "O Microsoft Intune permite-lhe apagar ou repor dispositivos móveis que são geridos através do Exchange ActiveSync (EAS) com o Intune Exchange Connector"
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b0914ab12456fd3ad5f957d68a59df9de539176
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 665f57a4cdb25c1e9f2bef7f1c25f284589df16f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for Exchange-managed mobile devices
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -35,4 +31,3 @@ O Microsoft Intune permite-lhe apagar ou repor dispositivos móveis que são ger
 |Eliminação completa|Remove a conta de correio e o correio em cache.|Reposição de fábrica.|Reposição de fábrica.|
 |Eliminação seletiva/e-mail|Remove a conta de e-mail.|Não suportada.|Não suportada.|
 |Eliminação seletiva/políticas|A imposição de política foi eliminada, mas as definições não foram alteradas|A imposição de política foi removida, mas as definições não foram alteradas.|A imposição de política foi eliminada, mas as definições não foram alteradas.|
-

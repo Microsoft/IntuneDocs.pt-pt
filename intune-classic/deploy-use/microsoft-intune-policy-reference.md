@@ -1,5 +1,5 @@
 ---
-title: "Referência de políticas de configuração | Documentos da Microsoft"
+title: "Referência de políticas de configuração"
 description: "Utilize as informações neste tópico para ajudá-lo a decidir qual a política do Microsoft Intune a utilizar para gerir os seus dispositivos."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986e720f2b0722dd3f16e35f54c975eac5a12153
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: af13a591bdd0e3185a92702aab093d9ae3bc6434
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referência de políticas de configuração do Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -122,4 +119,3 @@ Agora, o Microsoft Intune inclui **políticas de configuração** separadas para
 ### <a name="see-also"></a>Consulte também
 
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

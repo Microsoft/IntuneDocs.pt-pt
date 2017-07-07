@@ -1,7 +1,7 @@
 ---
 title: "O que é a carga de trabalho Gerir Utilizadores?"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como ver e gerir utilizadores com o Microsoft Intune e Azure."
+titleSuffix: Intune on Azure
+description: Saiba como ver e gerir utilizadores com o Microsoft Intune e Azure."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,19 +14,16 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>O que é a gestão de utilizadores?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Se não estiver familiarizado com o Intune no portal do Azure, lembre-se de que já não tem de criar grupos para o Intune. O Intune utiliza grupos do Azure AD, tal como acontece com muitas outras aplicações.
 
@@ -45,4 +42,3 @@ Para gerir grupos no [portal do Azure](https://portal.azure.com), procure o **In
 ## <a name="next-step"></a>Passo seguinte
 
 [Introdução aos grupos](groups-get-started.md)
-

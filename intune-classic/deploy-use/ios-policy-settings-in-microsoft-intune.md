@@ -1,5 +1,5 @@
 ---
-title: "Definições de política do iOS | Documentos da Microsoft"
+title: "Definições de política para iOS"
 description: "Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Definições de política do iOS no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir que as aplicações geridas sincronizem dados para o serviço iCloud**|Permitir que as aplicações que gere com o Intune sincronizem dados para a conta do iCloud dos utilizadores.|
 |**Permitir que o Handoff continue as atividades noutro dispositivo**|Permitir ao utilizador continuar o trabalho que iniciaram num dispositivo iOS noutro dispositivo iOS ou Mac OS X.|
 |**Permitir Partilha de Fotografias em iCloud**|Definido como **Não** para desativar a **Partilha de Fotografias do iCloud** no dispositivo.|
-|**Permitir Fototeca em iCloud**|Se estiver definido como **Não**, desativa a utilização da biblioteca de fotografias do iCloud que permite aos utilizadores armazenar fotografias e vídeos na cloud.    Se isto estiver definido como **Não**, todas as fotografias que não tiverem sido completamente transferidas da Biblioteca de Fotografias do iCloud para o dispositivo serão removidas do mesmo.|
+|**Permitir Fototeca em iCloud**|Se estiver definido como **Não**, desativa a utilização da biblioteca de fotografias do iCloud que permite aos utilizadores armazenar fotografias e vídeos na cloud.   Se isto estiver definido como **Não**, todas as fotografias que não tiverem sido completamente transferidas da Biblioteca de Fotografias do iCloud para o dispositivo serão removidas do mesmo.|
 
 ### <a name="application-settings-for-the-browser"></a>Definições da aplicação para o browser
 As definições aplicam-se ao iOS 8.0 e posterior.
@@ -387,4 +384,3 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 
 ### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -14,15 +14,12 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Gerir aplicações compradas em grandes volumes com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,4 +35,3 @@ Para saber como gerir aplicações licenciadas a partir de cada loja, escolha um
 
 - [Gerir aplicações iOS compradas em grandes volumes](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 - [Gerir aplicações compradas em grandes volumes a partir da Loja Windows para Empresas](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
-

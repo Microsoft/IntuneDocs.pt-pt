@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b99ce8b30e25960e09e39b81f0f58aa09af2affa
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Anular a inscrição do dispositivo caso tenha recusado os "Termos de Utilização"
 
 A melhor forma de anular a inscrição do dispositivo Android é aceitar os termos de utilização, iniciar sessão na aplicação do Portal da Empresa e, em seguida, utilizar [estas instruções](unenroll-your-device-from-intune-android.md) para anular a inscrição. No entanto, se recusou os termos de utilização ao tentar iniciar sessão na aplicação Portal da Empresa, será impedido de iniciar sessão na mesma em tentativas futuras, por isso terá de utilizar estas instruções de "solução" para anular a inscrição do seu dispositivo.
@@ -46,4 +41,3 @@ Para terminar a inscrição do seu dispositivo no Intune e desinstalar a aplica�
     Já pode desinstalar a aplicação do portal da Empresa.
 
 Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.
-

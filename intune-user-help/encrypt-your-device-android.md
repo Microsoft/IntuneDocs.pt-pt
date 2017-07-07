@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android com encriptação
 
 Quando tenta encriptar um dispositivo, está a encapsular as informações do mesmo numa camada de código de proteção que impede pessoas não autorizadas de acederem ao mesmo. Para se certificar de que a sua informação está segura, a sua organização requer que encripte o seu dispositivo Android antes de poder aceder a ficheiros, e-mail ou dados da empresa.
@@ -70,4 +65,3 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
     5. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
 
 Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.
-

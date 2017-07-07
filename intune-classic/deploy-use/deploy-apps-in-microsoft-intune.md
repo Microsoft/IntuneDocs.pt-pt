@@ -1,5 +1,5 @@
 ---
-title: "Como implementar aplicações | Documentos da Microsoft"
+title: "Como implementar aplicações"
 description: "Utilize as informações neste tópico para obter ajuda para implementar aplicações com o Microsoft Intune."
 keywords: 
 author: robstackmsft
@@ -14,12 +14,11 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: f684a1b8d74f7625d3262d4f02eb9841a203e883
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Implementar aplicações no Microsoft Intune
 
@@ -74,4 +73,3 @@ Se implementou a aplicação como **Obrigatória** num dispositivo iOS, o utiliz
 ## <a name="next-steps"></a>Passos seguintes
 
 Depois de implementar uma aplicação, poderá ser útil monitorizar o progresso da mesma. Para mais informações, consulte [Monitorizar aplicações no Microsoft Intune](monitor-apps-in-microsoft-intune.md).
-

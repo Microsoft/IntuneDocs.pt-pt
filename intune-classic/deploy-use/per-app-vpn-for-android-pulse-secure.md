@@ -1,11 +1,11 @@
 ---
-title: "VPN por aplicação para Android com Pulse Secure | Documentos da Microsoft"
+title: "VPN por aplicação para Android com Pulse Secure"
 description: "Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar uma política personalizada para criar um perfil de VPN por aplicação para dispositivos Android
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,7 +42,7 @@ Depois de implementar a política no dispositivo Android ou nos grupos de utiliz
 
 > [!NOTE]
 >
-> Tome nota do nome do perfil de VPN para utilização no próximo passo. Por exemplo, MyAppVpnProfile.
+> Tome nota do valor **Nome da ligação VPN (apresentado aos utilizadores):** que especificar ao criar o perfil de VPN. Esse valor será necessário no próximo passo. Por exemplo, **MyAppVpnProfile**.
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>Passo 2: criar uma política de configuração personalizada
 
@@ -55,7 +52,7 @@ Depois de implementar a política no dispositivo Android ou nos grupos de utiliz
    4. Introduza um nome para a definição.
    5. Para **Tipo de dados**, especifique **Cadeia**.
    6. Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, em que *Name* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.    Para **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a associar ao perfil. Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, introduza **com.microsoft.office.excel;com.android.chrome**.
+   7.   Para **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a associar ao perfil. Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, introduza **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicação Android](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,4 +77,3 @@ Tem de implementar as *duas* políticas nos *mesmos* grupos do Intune.
     -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancelar**.
 
 Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Também é apresentado um resumo de estado na área de trabalho **Dashboard**.
-

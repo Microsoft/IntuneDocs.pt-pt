@@ -1,5 +1,5 @@
 ---
-title: "Gerir o Bloqueio de Ativação do iOS em dispositivos | Documentos da Microsoft"
+title: "Gerir o Bloqueio de Ativação do iOS em dispositivos"
 description: "O Microsoft Intune pode ajudá-lo a gerir o Bloqueio de Ativação de iOS, uma funcionalidade da aplicação Encontrar o Meu iPhone para iOS 7.1 ou dispositivos posteriores."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 22ccccefae44190ffb2d65bdf475eaef1f9b8bd2
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3695e4c047edd9b788768db36184460f0e27d3bc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Ajudar a proteger dispositivos iOS desativando o Bloqueio de Ativação para o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -106,4 +103,3 @@ Pode ver os dispositivos que estão a utilizar o Bloqueio de Ativação de duas 
 ### <a name="see-also"></a>Veja também
 [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md)
 [Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-

@@ -14,15 +14,12 @@ ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1851fa03d36ffe42a49fd557cdd0c2c6250726f4
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="retire-apps-using-microsoft-intune"></a>Extinguir aplicações com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -41,4 +38,3 @@ Quando o computador ou dispositivo verificar as aplicações, a aplicação ser�
 
 ### <a name="see-also"></a>Consulte também
 [Adicionar aplicações no Microsoft Intune](add-apps.md)
-

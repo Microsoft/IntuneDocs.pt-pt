@@ -14,15 +14,12 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,6 +36,5 @@ Este tópico apresenta uma lista de tarefas que pode desempenhar para gerir comp
 - [Gerir a associação utilizador-dispositivo dos PCs Windows](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) – Explica quando e como precisa de associar um utilizador a um PC antes de implementar software para o utilizador.
 
 - [Pedir e fornecer assistência remota para PCs Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) – Explica como os utilizadores de PCs do Intune obtêm a ajuda de assistência remota do utilizador e descreve os pré-requisitos e a configuração do TeamViewer.
-
 
 
