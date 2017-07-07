@@ -1,7 +1,7 @@
 ---
 title: "Inscrever dispositivos iOS com o Apple Configurator e a inscrição direta"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como utilizar o Apple Configurator para inscrever dispositivos iOS pertencentes à empresa com a inscrição direta."
+titleSuffix: Intune on Azure
+description: "Saiba como utilizar o Apple Configurator para inscrever dispositivos iOS pertencentes à empresa com a inscrição direta.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>Inscrever dispositivos iOS com o Apple Configurator e a inscrição direta 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com o [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) em execução num computador Mac. Este processo não efetua a reposição de fábrica do dispositivo e inscreve o dispositivo com uma política predefinida. Este método destina-se a dispositivos **sem afinidade de utilizadores** e requer que ligue o dispositivo iOS através de USB a um computador Mac para configurar a inscrição empresarial.
 
@@ -42,7 +39,7 @@ Para obter outros métodos para inscrever dispositivos iOS estão descritos em [
 
 Antes de configurar a inscrição de dispositivos iOS, tem de cumprir os seguintes pré-requisitos:
 
-- [Configurar domínios](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [Configurar domínios](custom-domain-name-configure.md)
 - [Definir a Autoridade de MDM](mdm-authority-set.md)
 - [Criar grupos](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Configurar o Portal da Empresa](company-portal-app.md)
@@ -102,4 +99,3 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 4. No dispositivo iOS, abra as **Definições** e aceda a **Geral** > **Gestão de Dispositivos** > **Perfil de Gestão**. Confirme que a instalação do perfil se encontra na lista e verifique as restrições de política do iOS e as aplicações instaladas. As restrições de política e as aplicações poderão demorar até 10 minutos a aparecer no dispositivo.
 
 5. Distribua os dispositivos. O dispositivo iOS está agora inscrito no Intune e gerido.
-

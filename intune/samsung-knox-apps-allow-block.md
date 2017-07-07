@@ -1,12 +1,12 @@
 ---
 title: "Política do Intune para permitir/bloquear aplicações do Samsung KNOX"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: crie um perfil personalizado para permitir e bloquear aplicações para dispositivos Samsung KNOX Standard."
+titleSuffix: Intune on Azure
+description: "Crie um perfil personalizado para permitir e bloquear aplicações para dispositivos Samsung KNOX Standard.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dea090e108d5ea023dc64d8d168b25d30b688cb2
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung KNOX Standard no Microsoft Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Utilize os procedimentos deste tópico para criar uma política personalizada do Microsoft Intune que cria um dos seguintes casos:
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Utilize os procedimentos deste tópico para criar uma política personalizada do Microsoft Intune que cria um dos seguintes casos:
 
 - Uma lista de aplicações que estão bloqueadas de executar no dispositivo. A execução das aplicações nesta lista está bloqueada, mesmo se já tiverem sido instaladas quando a política foi aplicada.
 - Uma lista de aplicações que os utilizadores do dispositivo estão autorizados a instalar a partir da loja Google Play. Apenas as aplicações na lista podem ser instaladas. Mais nenhuma outra aplicação pode ser instalada a partir da loja.
@@ -35,7 +32,7 @@ Estas definições só podem ser utilizadas por dispositivos que executem Samsun
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Criar uma lista de aplicações permitidas ou bloqueadas
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 2. No painel da lista de perfis, escolha **Criar Perfil**.
@@ -49,9 +46,9 @@ Estas definições só podem ser utilizadas por dispositivos que executem Samsun
 
 - **Nome** – Introduza **PreventStartPackages**.
 - **Descrição** – Introduza uma descrição opcional, como “Lista de aplicações cuja execução está bloqueada”.
--     **Tipo de dados** – Na lista pendente, escolha **Cadeia**.
--     **OMA-URI** – Introduza **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--     **Valor** – Introduza uma lista de nomes de pacotes de aplicações que pretende permitir. Pode utilizar **; : ,** ou **|** como delimitador. (Exemplo: pacote1;pacote2;)
+-   **Tipo de dados** – Na lista pendente, escolha **Cadeia**.
+-   **OMA-URI** – Introduza **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-   **Valor** – Introduza uma lista de nomes de pacotes de aplicações que pretende permitir. Pode utilizar **; : ,** ou **|** como delimitador. (Exemplo: pacote1;pacote2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Para uma lista de aplicações que os utilizadores têm permissão para instalar a partir da Google Play Store, excluindo todas as outras aplicações:
 - **Nome** – Introduza **AllowInstallPackages**.
@@ -69,4 +66,3 @@ Da próxima vez que cada dispositivo visado iniciar sessão, serão aplicadas as
 
 
 <!---## Assign the custom profile--->
-
