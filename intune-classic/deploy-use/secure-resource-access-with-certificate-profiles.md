@@ -1,5 +1,5 @@
 ---
-title: Perfis de certificado para acesso a recursos | Documentos da Microsoft
+title: Perfis de certificado para acesso a recursos
 description: Proteja o acesos a VPN, Wi-Fi e e-mail com um certificado instalado no dispositivo de cada utilizador.
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dd6e5971d084773640c577cace43c2f011dbb69
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5570c13b9ca1782b12ad7ca718d18c98bda7bbfa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Proteger o acesso a recursos com perfis de certificados no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ Tem de criar um perfil separado para cada plataforma. Ao criar o perfil, associe
 - [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md)
 - [Configurar a infraestrutura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md)
 - [Configurar perfis de certificado do Intune](configure-intune-certificate-profiles.md)
-
