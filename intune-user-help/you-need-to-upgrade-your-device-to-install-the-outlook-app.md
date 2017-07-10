@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 081798753f3e962e0ca500097fc55e021802c73d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Tem de atualizar o dispositivo para instalar a aplicação Outlook
 
 A aplicação Outlook ajuda milhões de utilizadores a ligar as respetivas contas de e-mail, calendários e ficheiros num só local conveniente, em dispositivos [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook).
@@ -39,4 +35,3 @@ Aceda a **Definições**, e, em seguida, utilize a opção **atualizar** ou **at
 Toque em **Definições** > **Geral** > **Atualização de Software**.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

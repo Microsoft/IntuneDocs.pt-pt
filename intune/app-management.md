@@ -1,12 +1,12 @@
 ---
-title: "O que é a gestão de aplicações | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: utilizar este tópico para conhecer as noções básicas sobre a gestão de aplicações com o Microsoft Intune"
+title: "O que é a gestão de aplicações"
+titleSuffix: Intune on Azure
+description: "Utilize este tópico para conhecer as noções básicas sobre a gestão de aplicações com o Microsoft Intune\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Como administrador de TI, é provável que tenha a tarefa de garantir que os utilizadores finais têm acesso às aplicações de que precisam para trabalhar. Esta tarefa pode ser um desafio porque:
+Como administrador de TI, é responsável por garantir que os utilizadores finais têm acesso às aplicações de que precisam para trabalhar. Esta tarefa pode ser um desafio porque:
 - Existe uma grande variedade de plataformas de dispositivos e de tipos de aplicações.
-- Poderá ter de gerir as aplicações em dispositivos da empresa, bem como os dispositivos próprios dos utilizadores.
-- É preciso fazer tudo isto e, ao mesmo tempo, garantir que a sua rede e os dados permanecem seguros. 
+- Poderá ter de gerir as aplicações em dispositivos da empresa e nos dispositivos próprios dos utilizadores.
+- Deve verificar se a sua rede e os seus dados permanecem seguros.
 
 Além disso, pode querer atribuir e gerir aplicações em dispositivos que não estão inscritos no Intune.
 
@@ -63,7 +60,6 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 
 <sup>2</sup>Aplica-se apenas a dispositivos geridos pelo Intune.
 
-
 ## <a name="how-to-get-started"></a>Como começar
 
 Pode encontrar a maior parte das informações relacionadas com aplicações na carga de trabalho **Aplicações Móveis**, à qual pode aceder da seguinte forma:
@@ -75,12 +71,13 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
     ![A carga de trabalho Aplicações Móveis](./media/apps-workload.png)
 
 ### <a name="manage"></a>Gerir o Endpoint Protection do
-- **Aplicações** – Este é o local onde vai adicionar, atribuir e monitorizar a maior parte das suas aplicações. 
+- **Aplicações** – Este nó é o local onde adiciona, atribui e monitoriza a maior parte das suas aplicações.
     - [Adicionar aplicações](apps-add.md)
     - [Atribuir aplicações](apps-deploy.md)
     - [Monitorizar aplicações](apps-monitor.md)
-- **Políticas de configuração de aplicações** – as políticas de configuração de aplicações permitem-lhe disponibilizar definições que poderão ser exigidas quando um utilizador executar uma aplicação. Para mais detalhes, veja:
-    - [Políticas de configuração de aplicações](app-configuration-policies.md)
+- **Políticas de configuração de aplicações** – as políticas de configuração de aplicações permitem-lhe disponibilizar definições que poderão ser exigidas quando um utilizador executar uma aplicação.
+    - [Políticas de configuração de aplicações iOS](app-configuration-policies-use-ios.md)
+    - [Políticas de configuração de aplicações Android](app-configuration-policies-use-android.md)
 - **Políticas de proteção de aplicações** – permitem-lhe associar definições a uma aplicação para o ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa.
     - [Políticas de proteção de aplicações](app-protection-policies.md)
 - **Eliminação seletiva de aplicações** – remova apenas os dados empresariais do dispositivo de um utilizador selecionado por si.
@@ -100,8 +97,7 @@ Para obter mais detalhes, veja [Monitorizar aplicações](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Loja Windows para Empresas** – Configure a integração na Loja Windows para Empresas. Depois de fazê-lo, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização da suas licenças. 
+- **Loja Windows para Empresas** – Configure a integração na Loja Windows para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças.
     - [Aplicações compradas em volume na Loja Windows para Empresas](windows-store-for-business.md)
-- **Imagem corporativa do Portal da Empresa** – personalize o Portal da Empresa de modo a dar-lhe a imagem corporativa da sua empresa. 
+- **Imagem corporativa do Portal da Empresa** – personalize o Portal da Empresa de modo a dar-lhe a imagem corporativa da sua empresa.
     - [Configuração do portal da empresa](company-portal-app.md)
-

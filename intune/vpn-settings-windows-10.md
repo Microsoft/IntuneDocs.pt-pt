@@ -1,7 +1,7 @@
 ---
 title: "Definições de VPN do Intune para dispositivos com o Windows 10"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos Windows 10."
+titleSuffix: Intune on Azure
+description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos Windows 10.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6dd98b176c76e19d6ff261a4dafbabfb9698f787
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos com o Windows 10 no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Consoante as definições que escolher, nem todos os valores na lista abaixo serão configuráveis.
 
@@ -120,4 +117,3 @@ Para cada servidor. especifique:
     - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
     - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
 - **Ignorar o proxy para endereços locais** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, consulte a documentação do Windows Server.
-

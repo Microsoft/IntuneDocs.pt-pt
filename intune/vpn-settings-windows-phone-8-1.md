@@ -1,7 +1,7 @@
 ---
 title: "Definições de VPN no Intune para dispositivos Windows Phone 8.1"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos Windows Phone 8.1."
+titleSuffix: Intune on Azure
+description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos Windows Phone 8.1.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: bd6d6debcf2f62599518aec7b6998ecf29c3dd6a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos Windows Phone 8.1 no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Consoante as definições que escolher, nem todos os valores na lista abaixo serão configuráveis.
 
@@ -102,4 +99,3 @@ Consulte a documentação de cada fabricante relativa à VPN para obter mais inf
     - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
     - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
 - **Ignorar o proxy para endereços locais** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, consulte a documentação do Windows Server.
-

@@ -14,15 +14,12 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-for-management-in-intune"></a>Inscrever dispositivos para gestão no Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -132,4 +129,3 @@ O Intune pode gerir as seguintes plataformas de dispositivos:
 - [Pré-requisitos para a inscrição de dispositivos](prerequisites-for-enrollment.md)
 - [Gerir dispositivos pertencentes à empresa](manage-corporate-owned-devices.md)
 - [Dispositivos móveis e computadores suportados](/intune/supported-devices-browsers#intune-supported-devices)
-

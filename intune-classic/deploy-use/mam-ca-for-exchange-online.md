@@ -1,5 +1,5 @@
 ---
-title: "Acesso de aplicações no Exchange Online | Documentos da Microsoft"
+title: "Acesso da aplicação para o Exchange Online"
 description: "Este tópico descreve como pode configurar uma política de acesso condicional para aplicações MAM."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: df84bdf2358b596905299c7099ce22e128e9d17d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ef4a0c0e642026d625d7139b2ea2629cdd96930
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Criar um acesso condicional do Exchange Online para permitir apenas aplicações suportadas por MAM
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Para **eliminar um grupo de utilizadores**, na lista de **grupos de utilizadores
 [Bloquear aplicações que não tenham autenticação moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Consulte também
 [Proteger os dados da aplicação com políticas de proteção de aplicações](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

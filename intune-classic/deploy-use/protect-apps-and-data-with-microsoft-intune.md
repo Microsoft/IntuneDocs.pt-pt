@@ -14,15 +14,12 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteger aplicações e dados com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -55,4 +52,3 @@ Aplicações como as do Microsoft Office têm o SDK da Aplicação Intune incorp
 Também pode [ativar as suas aplicações de linha de negócios personalizadas incorporadas](/intune/apps-prepare-mobile-application-management) para utilizar com políticas de MAM.
 
 Além de restringir o movimento de dados, se um dispositivo se perder ou for roubado ou se o utilizador já não estiver a trabalhar na sua empresa, pode [apagar seletivamente os dados da empresa](wipe-managed-company-app-data-with-microsoft-intune.md), deixando apenas os dados pessoais.
-

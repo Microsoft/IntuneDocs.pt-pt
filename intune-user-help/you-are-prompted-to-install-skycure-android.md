@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-skycure-on-your-android-device"></a>Tem de instalar o Skycure no seu dispositivo Android
 
 Para poder aceder ao seu trabalho, o administrador de TI precisa que instale a aplicação Skycure, que ajuda a proteger o dispositivo ao detetar potenciais ameaças de segurança.
@@ -67,4 +63,3 @@ Se tiver problemas com a instalação, tente os passos de resolução de problem
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se tal acontecer, tente instalar o Skycure [manualmente a partir da Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

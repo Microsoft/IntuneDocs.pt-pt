@@ -1,5 +1,5 @@
 ﻿---
-title: "Resolução de problemas de implementação de aplicações | Documentos da Microsoft"
+title: "Resolução de problemas de implementação de aplicações"
 description: "Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0277c0baed66a1340373cb607976d03a07ca5282
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Resolução de problemas de implementação de aplicações no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -37,7 +34,7 @@ Se estiver a ter problemas de implementação e gestão de aplicações com o In
 |0x80073CF0|Não foi possível abrir o pacote.|Causas possíveis:<br /><br />–   O pacote não está assinado.<br />–   O nome do publicador não corresponde ao assunto do certificado de assinatura.<br /><br />Verifique o registo de eventos AppxPackagingOM para obter mais informações.|
 |0x80073CF3|A atualização, dependência ou validação de conflito do pacote falhou|Causas possíveis:<br /><br />–   O pacote recebido está em conflito com o pacote instalado.<br />–   Não foi encontrada uma dependência de pacote especificada.<br />–   O pacote não suporta a arquitetura de processador correta.<br /><br />Verifique o registo de eventos AppXDeployment-Server para obter mais informações.|
 |0x80073CFB|O pacote fornecido já está instalado e a reinstalação do pacote está bloqueada|Poderá receber este erro se estiver a instalar um pacote que não é idêntico ao pacote que já está instalado. Verifique se a assinatura digital também faz parte do pacote. Quando um pacote é reconstruído ou assinado novamente, esse pacote já não é totalmente idêntico ao pacote anteriormente instalado. Existem duas opções possíveis para corrigir este erro:<br /><br />–   Incrementar o número de versão da aplicação e, em seguida, reconstruir e voltar a assinar o pacote.<br />–   Remover o pacote antigo de todos os utilizadores do sistema antes de instalar o pacote novo.|
-|0x87D1041C|A aplicação foi instalada com êxito, mas a aplicação não foi detetada.|– A aplicação foi implementada com êxito pelo Intune, e foi desinstalada posteriormente (possivelmente pelo utilizador final). Diga ao utilizador para reinstalar a aplicação a partir do portal da empresa. As aplicações necessárias serão reinstaladas automaticamente quando o dispositivo efetuar a verificação seguinte.|
+|0x87D1041C|A aplicação foi instalada com êxito, mas a aplicação não foi detetada.|– A aplicação foi implementada com êxito pelo Intune e foi desinstalada posteriormente (possivelmente pelo utilizador final). Diga ao utilizador para reinstalar a aplicação a partir do portal da empresa. As aplicações necessárias serão reinstaladas automaticamente quando o dispositivo efetuar a verificação seguinte.|
 
 ## <a name="troubleshooting-apps-from-the-windows-store"></a>Resolução de problemas de aplicações da Loja Windows
 
@@ -53,4 +50,3 @@ Além disso, se precisar de abrir um caso de suporte para o Intune, também ser�
 
 ### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

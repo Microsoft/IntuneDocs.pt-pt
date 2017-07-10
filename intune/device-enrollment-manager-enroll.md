@@ -1,38 +1,36 @@
 ---
 title: "Inscrever dispositivos – gestor de inscrição de dispositivos"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: utilize a conta do gestor de inscrição de dispositivos para inscrever dispositivos no Intune. "
+titleSuffix: Intune on Azure
+description: "Utilize a conta do gestor de inscrição de dispositivos para inscrever dispositivos no Intune. \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: aded0826c2628e4dc72859387fbe4a76d683db9e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrever dispositivos com o gestor de inscrição de dispositivos
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do *gestor de inscrição de dispositivos* (DEM) é uma conta de utilizador especial que pode inscrever até 1000 dispositivos. Pode adicionar utilizadores existentes à conta DEM de forma a conceder-lhes capacidades especiais de DEM. Cada dispositivo inscrito utiliza uma única licença. Recomendamos que utilize os dispositivos inscritos através desta conta como dispositivos partilhados em vez de dispositivos pessoais (“BYOD”).  
 
 Têm de existir utilizadores no portal do Azure para serem adicionados como gestores de inscrição de dispositivos. Para garantir a segurança, o utilizador DEM não deve ser também um administrador do Intune.
 
 >[!NOTE]
->O método de inscrição DEM não pode ser utilizado com estes métodos de inscrição: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com inscrição direta](apple-configurator-direct-enroll-ios.md) ou [programa de registo de aparelho](device-enrollment-program-enroll-ios.md). 
+>O método de inscrição DEM não pode ser utilizado com estes métodos de inscrição: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com inscrição direta](apple-configurator-direct-enroll-ios.md), [Gestor de Escola da Apple (ASM)](apple-school-manager-set-up-ios.md) ou [Programa de Inscrição de Dispositivos (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gestor de inscrição de dispositivos
 
@@ -50,17 +48,13 @@ O utilizador DEM pode:
 
 Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos têm as seguintes limitações:
 
-  - Não há nenhum "utilizador" de dispositivo específico. Por conseguinte, não existe acesso aos dados da empresa ou ao e-mail. No entanto, a VPN, por exemplo, poderá continuar a ser utilizada para fornecer aplicações de dispositivos com acesso a dados.
-
-  - Não há acesso condicional, porque estes cenários são por utilizador.
-
-  - O utilizador DEM não pode utilizar o Portal da Empresa para anular a inscrição de dispositivos inscritos para DEM no próprio dispositivo. O administrador do Intune tem esta capacidade, mas o utilizador DEM não a tem.
-
+  - Nenhum acesso por utilizador. Uma vez que os dispositivos não têm um utilizador atribuído, o dispositivo não tem nenhum acesso a dados ou e-mails da empresa. As configurações VPN, por exemplo, poderão continuar a ser utilizadas para fornecer aplicações de dispositivos com acesso a dados.
+  - Sem acesso condicional porque estes cenários são por utilizador.
+  - O utilizador DEM não pode utilizar o Portal da Empresa para anular a inscrição de dispositivos inscritos para DEM no próprio dispositivo. O administrador do Intune pode fazer isto, mas o utilizador DEM não.
   - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
- 
   - Os utilizadores não podem utilizar aplicações Apple Volume Purchase Program (VPP) devido aos requisitos do Apple ID por utilizador para a gestão de aplicações.
- 
-  - (Apenas para iOS) Se utiliza DEM para inscrever dispositivos iOS, não pode utilizar o Apple Configurator nem o Programa de Inscrição de Dispositivos Apple (DEP) para inscrever dispositivos.
+  - (Apenas para iOS) Se utilizar o DEM para inscrever dispositivos iOS, não poderá utilizar o Apple Configurator, o Programa de Inscrição de Dispositivos Apple (DEP) ou o Gestor de Escola da Apple (ASM) para inscrever dispositivos.
+  - Cada dispositivo requer uma licença de dispositivo. Saiba mais sobre [licenças de utilizador e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]
@@ -78,31 +72,28 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
 
 4.  No painel **Adicionar Utilizador**, introduza um nome principal para o utilizador DEM e selecione **Adicionar**. O utilizador DEM é adicionado à lista de utilizadores DEM.
 
+## <a name="permissions-for-dem"></a>Permissões para DEM
+
+As funções de Administrador global ou Administrador de Serviço do Intune no Azure AD são necessárias para executar tarefas de inscrição do DEM. Essas funções são também necessárias para ver todos os utilizadores DEM apesar das permissões RBAC indicadas e disponíveis na função de Utilizador personalizada. Um utilizador sem uma função de Administrador global ou Administrador de serviço do Intune atribuída, mas com permissões de leitura para a função de Gestores de Inscrição de Dispositivos, pode ver apenas os utilizadores DEM que criaram. O suporte da função RBAC para estas funcionalidades será comunicado no futuro.
+
+Se um utilizador não tiver uma função de Administrador global ou Administrador de serviço do Intune atribuída, mas tiver permissões de leitura ativadas para a função de Gestores de Inscrição de Dispositivos atribuída ao mesmo, poderá ver apenas os utilizadores DEM que criaram.
+
 ## <a name="remove-a-device-enrollment-manager"></a>Remover um gestor de inscrição de dispositivos
 
 A remoção de um gestor de inscrição de dispositivos não afeta os dispositivos inscritos. Quando um gestor de inscrição de dispositivos é removido:
 
--   Remover um utilizador da lista de utilizadores DEM não afeta os dispositivos inscritos e estes continuam a ser completamente geridos.
-
+-   Os dispositivos inscritos não são afetados e continuam a ser completamente geridos.
 -   As credenciais da conta do gestor de inscrição de dispositivos removido permanecem válidas.
-
 -   O gestor de inscrição de dispositivos removido continua sem poder apagar ou extinguir dispositivos.
-
--   O gestor de inscrição de dispositivos removido não pode inscrever mais dispositivos, a menos que o limite por dispositivo, configurado pelo administrador do Intune, não tenha sido atingido.
+-   O gestor de inscrição de dispositivos removido pode apenas inscrever um número de dispositivos até o limite por utilizador configurado pelo administrador do Intune.
 
 **Para remover um gestor de inscrição de dispositivos**
 
 1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-
 2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
-
 3. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Remover**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Ver as propriedades de um gestor de inscrição de dispositivos
 
-1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-
-2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
-
-3. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Propriedades**.
-
+1. No portal do Intune, escolha **Inscrição de dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
+2. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Propriedades**.

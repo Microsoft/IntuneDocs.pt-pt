@@ -1,5 +1,5 @@
 ---
-title: "Compreender as operações através de relatórios | Documentos da Microsoft"
+title: "Compreender as operações através de relatórios"
 description: "Crie e faça a gestão de relatórios sobre software, hardware e licenças de software na sua organização."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Compreender as operações do Microsoft Intune através de relatórios
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Os relatórios suportam também as seguintes ações:
 |**Guardar**|Na página **Criar Novo Relatório**, cada utilizador pode guardar até 100 relatórios. Configure os parâmetros de relatórios conforme os seus requisitos e, em seguida, escolha **Guardar**ou em **Guardar Como** (se pretender utilizar um nome diferente).|
 |**Carregar**|Na página **Criar Novo Relatório**, escolha **Carregar** para obter conjuntos de parâmetros de relatórios guardados anteriormente.|
 |**Eliminar**|Na área de trabalho **Relatórios**, selecione o tipo de relatório pretendido e escolha **Carregar**. Em seguida, na lista de relatórios, selecione o ícone eliminar (x) junto ao relatório.|
-
 
 

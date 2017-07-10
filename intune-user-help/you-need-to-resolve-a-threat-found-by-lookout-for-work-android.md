@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Tem de resolver uma ameaça encontrada pelo Lookout for Work
 
 O Lookout for Work encontrou uma potencial ameaça no seu dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, aplicações e ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
@@ -49,4 +45,3 @@ Se instalou uma aplicação que o Lookout for Work pensa ser uma ameaça, verá 
 Depois de desinstalar a aplicação, recupera de imediato o acesso ao e-mail e aos dados da empresa. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

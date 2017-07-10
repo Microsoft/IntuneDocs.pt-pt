@@ -1,5 +1,5 @@
 ﻿---
-title: "Utilizar a eliminação remota para ajudar a proteger dados | Documentos da Microsoft"
+title: "Utilizar a eliminação remota para ajudar a proteger dados"
 description: "O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b3aeb3e81a14b0c5e461422741d62c02ab635f7e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -172,4 +169,3 @@ Este relatório também mostra quem efetuou a ação.
 [Extinguir dispositivos](retire-devices-from-microsoft-intune-management.md)
 
 [Eliminação Seletiva do Windows para Gestão de Dados do Dispositivo](http://technet.microsoft.com/library/dn486874.aspx)
-

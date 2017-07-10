@@ -1,5 +1,5 @@
 ---
-title: "Configurar a subscrição com o Lookout | Microsoft Docs"
+title: "Configurar a subscrição com o Lookout"
 description: "Este tópico fornece detalhes sobre como configurar a proteção contra ameaças de dispositivos do Lookout."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c777d8857fd177e5a27840ab8a97c8a137aa189
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Configurar a subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ Utilize os seguintes passos para reunir as informações que deve fornecer à eq
 
   ![captura de ecrã da página do primeiro início de sessão na consola do Lookout](../media/mtp/lookout_mtp_initial_login.png) Ao aceitar e dar o seu consentimento, será redirecionado para a Consola do Lookout.
 
-  Consulte a [resolução de problemas de integração do Lookout](/intune-classic/troubleshoot/troubleshooting-lookout-integration) para obter ajuda com problemas de início de sessão.
+  Consulte a [resolução de problemas de integração do Lookout](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md) para obter ajuda com problemas de início de sessão.
 
 3.  Na [Consola do Lookout](https://aad.lookout.com), no módulo **Sistema**, selecione o separador **Conectores** e selecione **Intune**.
 
@@ -139,4 +136,3 @@ A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaça
 Quando a configuração estiver concluída, a Defesa Contra Ameaças para Dispositivos Móveis do Lookout inicia uma consulta no Azure AD para detetar dispositivos que correspondam aos grupos de inscrição especificados.  Poderá encontrar informações sobre os dispositivos inscritos no módulo Dispositivos.  O estado inicial dos dispositivos é apresentado como Pendente.  O estado dos dispositivos é alterado assim que a aplicação Lookout for Work for instalada, aberta e ativada nos mesmos.  Para obter detalhes sobre como instalar a aplicação Lookout for Work no dispositivo pretendido, consulte o tópico [Configurar e implementar as aplicações Lookout for Work](configure-deploy-lookout-for-work-app.md).
 ## <a name="next-steps"></a>Passos seguintes
 [Ativar a ligação do Lookout MTP ao Intune](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

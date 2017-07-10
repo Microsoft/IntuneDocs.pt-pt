@@ -1,5 +1,5 @@
 ---
-title: Proteger o e-mail no Exchange no local | Documentos da Microsoft
+title: Proteger o e-mail no Exchange no local
 description: Proteja e controle o acesso ao e-mail da empresa no Exchange no local com o acesso condicional.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3098a301550413a982d3ce9664646f7dfc0b1d1f
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 58d89fed98994c3c1bf77118a26592c855e8498e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Proteger o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado com o Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -137,4 +134,3 @@ As seguintes versões são suportadas:
 -   [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Proteger o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

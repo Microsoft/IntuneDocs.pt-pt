@@ -1,5 +1,5 @@
 ---
-title: "Perfis de aprovisionamento de aplicações | Documentos da Microsoft"
+title: "Perfis de aprovisionamento de aplicações"
 description: "O Intune proporciona-lhe as ferramentas para implementar proativamente uma nova política de perfil de aprovisionamento em dispositivos que tenham aplicações prestes a expirar."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: adebcc5a8d8f43bed383b51bb094fa122ebabc0a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6e975aa7ee22f826c7a0a60d637d651fd347bc54
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Utilizar políticas de perfil de aprovisionamento móvel de iOS para impedir as aplicações de expirar
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -54,4 +51,3 @@ Quando o certificado expirar, tem de voltar a assinar a aplicação com um certi
     - **Ficheiro de perfil de configuração** -clique em **Importar** e em seguida, escolha um ficheiro de Perfil de Configuração Móvel da Apple (com a extensão **.mobileprovision**) que transferiu a partir do site Apple Developer (Programador Apple).
 4. Quando terminar, escolha **Guardar Política**.
 5. Agora, implemente a política nos dispositivos iOS necessários. Para obter mais informações, veja [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-

@@ -1,5 +1,5 @@
 ---
-title: "Monitorizar políticas de MAM com o Microsoft Intune | Documentos da Microsoft"
+title: "Monitorizar políticas de MAM com o Microsoft Intune"
 description: "Veja quantos utilizadores têm a política e consulte mais detalhes."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorizar políticas de proteção de aplicações com o Microsoft Intune
 Pode monitorizar o estado de conformidade das políticas de proteção de aplicações que aplicou aos utilizadores. Irá encontrar informações sobre os utilizadores afetados pelas políticas de proteção de aplicações, o estado de conformidade e quaisquer problemas que os utilizadores possam estar a ter.
 
@@ -134,6 +131,5 @@ Siga estes passos para gerar o Relatório de proteção de aplicações:
 ## <a name="see-also"></a>Veja também
 [Gerir a transferência de dados entre aplicações iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-android)
+* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-ios)

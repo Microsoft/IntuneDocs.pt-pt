@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-or-change-your-passcode"></a>Definir ou alterar o código de acesso
 
 Se o seu dispositivo iOS não estiver em conformidade com a política de código de acesso do administrador de TI, é apresentada uma mensagem que descreve resumidamente o problema e explica o que precisa de fazer para que o código de acesso cumpra os requisitos.
@@ -46,4 +42,3 @@ Caso tenham problemas em configurar um código de acesso que cumpra os requisito
 3. Introduza um novo código de acesso que cumpra os requisitos do administrador de TI e, em seguida, introduza-o novamente para o confirmar.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

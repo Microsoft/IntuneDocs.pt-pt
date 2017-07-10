@@ -14,15 +14,12 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflitos de políticas de Objetos de Política de Grupo (GPO) e do Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -121,4 +118,3 @@ O novo grupo de segurança deve ser mantido à medida que a inscrição no servi
 
 ### <a name="see-also"></a>Consulte também
 [Gerir PCs Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
-

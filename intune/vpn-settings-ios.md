@@ -1,7 +1,7 @@
 ---
 title: "Definições de VPN no Intune para dispositivos iOS"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos iOS.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 17859701baa3dc4750ba51482db2228de092c93f
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos iOS no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Consoante as definições que escolher, nem todos os valores na lista abaixo serão configuráveis.
 
@@ -81,4 +78,3 @@ Se tiver selecionado **VPN Personalizada** como o tipo de ligação, configure e
 - **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
 - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
 - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
-

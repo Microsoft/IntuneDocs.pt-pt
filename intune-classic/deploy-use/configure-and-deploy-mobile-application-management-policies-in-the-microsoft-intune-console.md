@@ -1,5 +1,5 @@
 ---
-title: "Configurar políticas de MAM na consola do Intune | Documentos da Microsoft"
+title: "Configurar políticas de MAM na consola do Intune"
 description: "As políticas de gestão de aplicações móveis no Microsoft Intune permitem modificar a funcionalidade das aplicações que implementa para o ajudar a fazê-las cumprir as políticas de conformidade e segurança da sua empresa."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurar e implementar as políticas de gestão de aplicações móveis na consola do Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Para aplicar restrições a uma aplicação, esta tem de incorporar o SDK da Apl
 
 -   **Utilizar uma aplicação gerida por política**. Uma aplicação gerida por política tem o SDK da Aplicação incorporado. Para adicionar este tipo de aplicação, especifique uma ligação para a aplicação a partir de uma loja de aplicações, como o iTunes ou o Google Play. Não é necessário processamento adicional para este tipo de aplicação. Para obter mais informações, veja a [lista de aplicações que pode utilizar com políticas de gestão de aplicações móveis do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Utilizar uma aplicação encapsulada**. Uma aplicação encapsulada é uma aplicação que empacota novamente para incluir o SDK da Aplicação através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune. Normalmente, esta ferramenta é utilizada para processar aplicações da empresa que foram criadas internamente. Não pode ser utilizada para processar aplicações que foram transferidas a partir da loja de aplicações. Para obter mais informações, veja [Preparar as aplicações iOS para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparar as aplicações Android para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Utilizar uma aplicação encapsulada**. Uma aplicação encapsulada é uma aplicação que empacota novamente para incluir o SDK da Aplicação através da Ferramenta de Encapsulamento de Aplicações do Microsoft Intune. Normalmente, esta ferramenta é utilizada para processar aplicações da empresa que foram criadas internamente. Não pode ser utilizada para processar aplicações que foram transferidas a partir da loja de aplicações. Para obter mais informações, veja [Preparar as aplicações iOS para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](/intune/app-wrapper-prepare-ios) e [Preparar as aplicações Android para a gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune](/intune/app-wrapper-prepare-android).
 
-- **Escrever a sua própria aplicação que incorpora o SDK da Aplicação Intune**. O SDK da Aplicação  Intune permite-lhe incorporar funcionalidades de gestão de aplicação numa aplicação enquanto estiver a escrevê-la. Para obter mais informações, veja [Descrição Geral do SDK da Aplicação Intune](/intune-classic/develop/intune-app-sdk).
-
-Para obter ajuda na escolha entre a Ferramenta de Encapsulamento de Aplicações e o SDK da Aplicação Intune, veja [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Escrever a sua própria aplicação que incorpora o SDK da Aplicação Intune**. O SDK da Aplicação  Intune permite-lhe incorporar funcionalidades de gestão de aplicação numa aplicação enquanto estiver a escrevê-la. Para obter mais informações, veja [Descrição Geral do SDK da Aplicação Intune](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Para obter ajuda na escolha entre a Ferramenta de Encapsulamento de Aplicações e o SDK da Aplicação Intune, veja [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 Algumas aplicações geridas, como a aplicação Outlook para iOS e Android, suportam *várias identidades*. Isto significa que o Intune apenas aplica definições de gestão a contas empresariais ou dados na aplicação.
 
@@ -197,4 +193,3 @@ Nos casos em que o dispositivo ou o utilizador recebe duas políticas em conflit
 -   Se uma política já tiver sido implementada no dispositivo, as definições da política existente não são substituídas.
 
 -   Se ainda não tiver sido implementada uma política no dispositivo e forem implementadas duas definições em conflito, a predefinição incorporada no dispositivo é utilizada.
-

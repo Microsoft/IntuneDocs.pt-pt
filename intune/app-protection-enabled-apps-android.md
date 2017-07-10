@@ -1,7 +1,7 @@
 ---
 title: "Aplicações Android com políticas de proteção de aplicações"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: este tópico descreve o que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações."
+titleSuffix: Intune on Azure
+description: "Este tópico descreve o que esperar quando a sua aplicação Android é gerida por políticas de proteção de aplicações.\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c1704e5e63be434eaacaeec6e575640310ce74b3
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Este tópico descreve a experiência do utilizador para aplicações com políticas de proteção de aplicações. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho, como aceder a aplicações com a conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Este tópico descreve a experiência do utilizador para aplicações com políticas de proteção de aplicações. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho, como aceder a aplicações com a conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
 ##  <a name="accessing-apps"></a>Aceder a aplicações
 
 A aplicação Portal da Empresa é exigida para todas as aplicações associadas a políticas de proteção de aplicações em dispositivos Android.
@@ -84,4 +81,3 @@ São suportados os seguintes tipos de ficheiro:
 
 ### <a name="see-also"></a>Veja também
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
-

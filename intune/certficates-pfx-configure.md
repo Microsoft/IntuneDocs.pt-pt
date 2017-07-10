@@ -1,12 +1,12 @@
 ---
 title: Configurar e gerir certificados PKCS com o Intune
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como configurar a sua infraestrutura e, em seguida, crie e atribua certificados PKCS com o Intune."
+titleSuffix: Intune on Azure
+description: Saiba como configurar a sua infraestrutura e, em seguida, crie e atribua certificados PKCS com o Intune."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurar e gerir certificados PKCS com o Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Este tópico mostra como configurar a sua infraestrutura e, em seguida, criar e atribuir perfis de certificados PKCS com o Intune.
 
@@ -118,7 +115,7 @@ Neste passo, irá:
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Para ativar o suporte do Certificate Connector
 
 1.  Inicie sessão no portal do Azure.
-2.  Escolha **Mais Serviços** > **Outros** > **Intune**.
+2.  Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3.  No painel **Intune**, escolha **Configurar dispositivos**.
 2.  No painel **Configuração do Dispositivo**, escolha **Configurar** > **Autoridade de Certificação**.
 2.  No **Passo 1**, escolha **Ativar**.
@@ -190,12 +187,13 @@ No Portal do Azure, selecione a carga de trabalho **Configurar dispositivos**.
         - **Nome comum**
         - **Nome comum, incluindo o e-mail**
         - **Nome comum como e-mail**
-    - **Nome alternativo do requerente** – Especifique o modo como o Intune cria automaticamente os valores para o nome alternativo do requerente (SAN) no pedido de certificado. Por exemplo, se tiver selecionado um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se o certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, tem de definir o nome alternativo do requerente com o UPN.
+    - **Nome alternativo do requerente** – Especifique o modo como o Intune cria automaticamente os valores para o nome alternativo do requerente (SAN) no pedido de certificado. Por exemplo, se tiver selecionado um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se o certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente com o UPN. 
+    Também pode selecionar **atributo Personalizado do Azure AD**. Quando seleciona esta opção, é apresentado outro campo pendente. No campo pendente **atributo Personalizado do Azure AD**, existe uma opção: **Departamento**. Quando seleciona esta opção, se o departamento não estiver identificado no Azure AD, o certificado não é emitido. Para resolver este problema, identifique o departamento e guarde as alterações. Na próxima entrada do dispositivo, o problema é resolvido e o certificado é emitido. ASN.1 é a notação utilizada para este campo. 
     - **Utilização da chave expandida** (Android) – Escolha **Adicionar** para adicionar valores ao objetivo do certificado. Na maioria dos casos, o certificado irá exigir a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário. 
     - **Certificado de Raiz** (Android) – Escolha um perfil de certificado da AC de raiz que tenha configurado anteriormente e atribuído ao utilizador ou dispositivo. Este certificado da AC tem de ser o certificado de raiz da AC que irá emitir o certificado que está a configurar neste perfil de certificado. Este é o perfil de certificado fidedigno criado anteriormente.
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
-O perfil será criado e é apresentado no painel da lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="how-to-assign-the-certificate-profile"></a>Como atribuir o perfil de certificado
 
@@ -208,4 +206,3 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 - Apesar de atribuir cada perfil separadamente, também terá de atribuir a AC de Raiz Confiável e o perfil PKCS. Caso contrário, a política de certificados PKCS falhará.
 
 Para obter informações sobre como atribuir perfis, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
-

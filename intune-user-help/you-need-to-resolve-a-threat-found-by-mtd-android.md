@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d1276c983cdf0e22e2e78e79b6646e045c8fb135
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Precisa de resolver uma ameaça que a aplicação Defesa Contra Ameaças para Dispositivos Móveis encontrou
 
 A Defesa Contra Ameaças para Dispositivos Móveis encontrou uma potencial ameaça no seu dispositivo Android. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, ás aplicações e aos ficheiros. Dependendo de como o seu administrador de TI configurou a Defesa Contra Ameaças para Dispositivos Móveis, deverá utilizar uma das seguintes aplicações para resolver estes tipos de problemas.
@@ -40,4 +36,3 @@ Se tiver instalado uma aplicação que a Defesa Contra Ameaças para Dispositivo
 Depois de desinstalar a aplicação, recupera o acesso ao e-mail e a outros dados da empresa ou escola imediatamente. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados da empresa até desinstalar a aplicação.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

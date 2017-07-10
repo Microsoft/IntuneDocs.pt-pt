@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Anular a inscrição do seu dispositivo Windows no Intune
 
 Se se inscreveu no Intune, mas já não pretende utilizar o seu dispositivo Windows para o trabalho ou escola e não precisa de aceder ao e-mail do trabalho ou da escola, a aplicações ou a outros recursos, terá de anular a inscrição do seu dispositivo. Depois de anular a inscrição do seu dispositivo no Intune, deixará de poder aceder a estes recursos. Para mais informações sobre o que acontece quando anula a inscrição do seu dispositivo, consulte [O que acontece se anular a inscrição do seu dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 Para anular a inscrição do dispositivo, utilize a ligação, mostrado na secção “Neste artigo” acima, que corresponde ao tipo de dispositivo que utiliza:
 
--    [Anular a inscrição do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
--    [Anular a inscrição do seu computador Windows 8.1](#unenroll-your-windows-81-computer)
--    [Anular a inscrição do seu dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
+-   [Anular a inscrição do seu dispositivo Windows 10](#unenroll-your-windows-10-device)
+-   [Anular a inscrição do seu computador Windows 8.1](#unenroll-your-windows-81-computer)
+-   [Anular a inscrição do seu dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Anular a inscrição do seu dispositivo Windows 10
 
@@ -68,4 +63,3 @@ Para anular a inscrição do dispositivo, utilize a ligação, mostrado na secç
 4.  Na caixa de diálogo **Eliminar conta**, toque em **Eliminar**.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

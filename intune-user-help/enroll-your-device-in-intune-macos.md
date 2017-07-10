@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrever o dispositivo macOS no Intune
 
 O acesso às aplicações, aos dados e aos recursos da sua organização permite-lhe fazer o seu trabalho. Se estiver a utilizar um dispositivo macOS no trabalho, precisa de instalar um __Perfil de Gestão__. Este é apenas um ficheiro configurado pelo seu administrador de TI que carrega as definições e acede a informações no seu Mac. Quer saber mais? Saiba [o que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -70,4 +66,3 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
  ![Perfil do macOS Instalado](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Ainda precisa de ajuda? Consulte o seu administrador de TI. Pode encontrar as informações de contacto no [Site do Portal da Empresa](http://portal.manage.microsoft.com).
-

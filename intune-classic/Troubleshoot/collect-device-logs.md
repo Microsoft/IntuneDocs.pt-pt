@@ -1,5 +1,5 @@
 ---
-title: Recolher registos de dispositivos | Documentos da Microsoft
+title: Recolher registos de dispositivos
 description: Saiba como recolher registos dos seus dispositivos geridos.
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="device-logs"></a>Registos de dispositivos
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Para obter mais informações sobre como os seus utilizadores finais podem envia
 
 Os utilizadores podem enviar-lhe os erros de inscrição, conforme descrito em [Enviar erros de inscrição de dispositivos iOS ao administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios).
 
-Os utilizadores podem enviar registos de dispositivos, conforme descrito em [Enviar Registos de Dispositivos iOS](/intune-user-help/send-logs-to-your-it-admin-by-email-ios).
+Os utilizadores podem enviar registos de dispositivos, conforme descrito em [Enviar Registos de Dispositivos iOS](/intune-user-help/send-logs-to-microsoft-ios).
 
 ### <a name="mac-os-x-logs"></a>Registos de Mac OS X
 
@@ -61,4 +58,3 @@ Na aplicação Portal da Empresa do Windows Phone, os utilizadores escolhem as r
 ### <a name="windows"></a>Windows
 
 No Portal da Empresa do Windows, os registos estão localizados em *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-

@@ -1,5 +1,5 @@
 ---
-title: "Definições de políticas de MAM para Android | Documentos da Microsoft"
+title: "Definições de políticas de MAM para Android"
 description: "Este tópico descreve as definições da política de gestão de aplicações móveis para dispositivos Android."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 017c316ce102b71b3ef9552d8fe69181b79473de
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá fazer uma eliminação seletiva. Esta eliminação seletiva é a mesma eliminação que aquela que pode ser iniciada pelo administrador no fluxo de trabalho de eliminação de MAM. <br><br> | 90 dias |
 | **Bloquear captura de ecrã e Android Assistant (Android 6.0+)** | Selecione **Sim** para bloquear a captura de ecrã e as capacidades do **Android Assistant** do dispositivo quando utilizar esta aplicação. Selecionar **Sim** também desfocará a imagem de pré-visualização do comutador da aplicação quando utilizar esta aplicação com uma conta escolar ou profissional. | Não |
 | **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
-

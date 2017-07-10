@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>O seu dispositivo Android tem root e, por isso, não liga
 
 Foi direcionado para aqui porque viu uma mensagem a indicar que o dispositivo tem _root_.
@@ -39,4 +35,3 @@ Existem algumas formas comuns pelas quais o dispositivo pode ter ficado com root
 - O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Neste caso, precisa de contactar o administrador de TI para obter ajuda. Para encontrar as informações de contacto, veja o [site do Portal da Empresa](http://portal.manage.microsoft.com).
 
 Se tiver colocado o seu próprio dispositivo em root, terá de reverter o processo e restaurar o dispositivo novamente para o seu estado normal.
-

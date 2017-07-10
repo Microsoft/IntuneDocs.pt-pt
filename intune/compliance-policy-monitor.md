@@ -1,7 +1,7 @@
 ---
 title: "Monitorizar as políticas de conformidade do dispositivo do Intune"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como monitorizar as políticas de conformidade do dispositivo."
+titleSuffix: Intune on Azure
+description: "Saiba como monitorizar as políticas de conformidade do dispositivo.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -123,8 +121,6 @@ Se clicar no botão **Filtrar**, é apresentada a lista de filtros com as seguin
 
 Se clicar no botão **Atualizar**, a lista de opções deve fechar-se e os resultados devem ser atualizados de acordo com os critérios do filtro selecionado.
 
-![Botão de atualização de filtro](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Detalhes do dispositivo
 
 Ao clicar num dispositivo, abre o **Painel Dispositivos** com o dispositivo selecionado. Este painel apresenta mais detalhes sobre a definição da política de conformidade aplicada a esse dispositivo.
@@ -154,4 +150,3 @@ Este relatório permite-lhe ver o número total de dispositivos em cada estado d
 Depois de clicar no mosaico Conformidade das definições, clique numa das definições da política de conformidade do dispositivo para poder ver o **estado de conformidade**, o **alias de e-mail do utilizador**, o **modelo do dispositivo** e a **localização** de cada dispositivo que foi visado por essa definição de política de conformidade do dispositivo.
 
 ![Mosaico Conformidade das definições](./media/idc-11.png)
-

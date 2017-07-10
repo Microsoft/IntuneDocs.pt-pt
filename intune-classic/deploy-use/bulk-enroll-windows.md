@@ -1,5 +1,5 @@
 ---
-title: "Inscrição em massa para o Windows 10 | Microsoft Docs"
+title: "Inscrição em massa para o Windows 10"
 description: "Criar um pacote de inscrição em massa para o Microsoft Intune"
 keywords: 
 author: NathBarn
@@ -13,12 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 027f2ff4e822f7800405bd0f318afe28a47c5a00
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -48,19 +47,19 @@ A inscrição em massa de dispositivos Windows precisa do seguinte:
   - **Pasta do projeto** – onde o novo projeto será guardado
   - **Descrição** – uma descrição opcional do projeto ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](../media/bulk-enroll-name.png)
 
-4.    Introduza um nome exclusivo para os seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto de carateres aleatório. Opcionalmente, também poderá introduzir uma chave de produto se estiver a atualizar a edição do Windows, a configurar o dispositivo para a utilização partilhada e a remover software pré-instalado.<BR>
+4.  Introduza um nome exclusivo para os seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto de carateres aleatório. Opcionalmente, também poderá introduzir uma chave de produto se estiver a atualizar a edição do Windows, a configurar o dispositivo para a utilização partilhada e a remover software pré-instalado.<BR>
 ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](../media/bulk-enroll-device.png)
 
-5.    Opcionalmente, pode configurar a rede Wi-Fi à qual os dispositivos se ligam quando são iniciados pela primeira vez.  Se esta rede não estiver configurada, precisará de uma ligação de rede com fios quando o dispositivo for iniciado pela primeira vez.
+5.  Opcionalmente, pode configurar a rede Wi-Fi à qual os dispositivos se ligam quando são iniciados pela primeira vez.  Se esta rede não estiver configurada, precisará de uma ligação de rede com fios quando o dispositivo for iniciado pela primeira vez.
 ![Captura de ecrã após ativar a rede Wi-Fi, incluindo as opções de Tipo de rede e SSID de rede, na aplicação Windows Configuration Designer](../media/bulk-enroll-network.png)
 
-6.    Selecione **Inscrever no Azure AD**, introduza uma data de **Expiração do Token em Massa** e, em seguida, selecione **Obter Token em Massa**.
+6.  Selecione **Inscrever no Azure AD**, introduza uma data de **Expiração do Token em Massa** e, em seguida, selecione **Obter Token em Massa**.
 ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](../media/bulk-enroll-account.png)
 
 7. Indique as suas credenciais do Azure AD para obter um token em massa.
 ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](../media/bulk-enroll-cred.png)
 
-8.    Clique em **Seguinte** quando **Token em Massa** for obtido com êxito.
+8.  Clique em **Seguinte** quando **Token em Massa** for obtido com êxito.
 
 9. Opcionalmente, pode **Adicionar aplicações** e **Adicionar certificados**. Estas aplicações e certificados são aprovisionados no dispositivo.
 
@@ -88,4 +87,3 @@ O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As 
 
 - Um pacote de aprovisionamento que tenta associar um domínio do Active Directory ou um inquilino do Azure Active Directory que não crie uma conta local pode tornar o dispositivo inacessível se o processo de associação ao domínio falhar devido à falta de conetividade de rede.
 - Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema e conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou através de uma reposição de fábrica do dispositivo.
-

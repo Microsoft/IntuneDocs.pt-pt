@@ -1,7 +1,7 @@
 ---
 title: "Como monitorizar políticas de proteção de aplicações"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: veja quantos utilizadores têm a política e desagregue para descobrir mais detalhes."
+titleSuffix: Intune on Azure
+description: "Veja quantos utilizadores têm a política e veja mais detalhes.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Se não estiver na pré-visualização do Azure no Intune**, este tópico explica [como criar políticas de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) na consola clássica do Intune.
+**Se não estiver no portal do Azure**, este tópico explica [como criar políticas de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) na consola clássica do Intune.
 
 
 Pode monitorizar o estado de conformidade das políticas de gestão de aplicações móveis (MAM) que aplicou aos utilizadores no painel de proteção de aplicações do Intune no [portal do Azure](https://portal.azure.com). Irá encontrar informações sobre os utilizadores afetados pelas políticas de MAM, o estado de conformidade e quaisquer problemas que os utilizadores possam estar a ter.
@@ -43,7 +40,7 @@ Existem três locais diferentes para monitorizar o estado de conformidade:
 ## <a name="summary-view"></a>Vista de resumo
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Aplicações móveis**.
 4. Na carga de trabalho **Aplicações móveis**, escolha **Monitor** > **Estado dos utilizadores da proteção de aplicações** para ver a vista de resumo:
 
@@ -139,4 +136,3 @@ Siga estes passos para gerar o Relatório de proteção de aplicações:
 
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md)
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-ios.md)
-

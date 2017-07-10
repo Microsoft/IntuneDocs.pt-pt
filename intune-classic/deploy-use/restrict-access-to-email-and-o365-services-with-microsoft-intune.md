@@ -1,5 +1,5 @@
 ---
-title: Proteger o e-mail e o Office 365 | Documentos da Microsoft
+title: "Proteger o e-mail e o Office 365"
 description: "Este tópico descreve como pode utilizar o acesso condicional para permitir que apenas dispositivos compatíveis acedam ao e-mail e aos dados da empresa no SharePoint online e noutros serviços."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Proteger o acesso ao e-mail, ao Office 365 e a outros serviços com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ As **licenças do Azure AD Premium** podem ser compradas como serviço autónomo
 
 - Saiba mais sobre a [página de preços do Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou a [página de preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Além disso, certifique-se de que os utilizadores aos quais planeia aplicar políticas de acesso condicional têm [atribuídas licenças do Azure AD Premium ou EMS](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+Além disso, certifique-se de que os utilizadores aos quais planeia aplicar políticas de acesso condicional têm [atribuídas licenças do Azure AD Premium ou EMS](/intune/licenses-assign).
 
 ### <a name="device-compliance-settings"></a>Definições de conformidade de dispositivos
 
@@ -83,4 +80,3 @@ Ao contrário de outras políticas do Intune, não precisa implementar política
   - [Criar uma política de acesso condicional para o SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Criar uma política de acesso condicional para o Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Criar uma política de acesso condicional para o Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

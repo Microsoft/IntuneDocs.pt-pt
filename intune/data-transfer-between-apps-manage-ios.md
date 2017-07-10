@@ -1,12 +1,12 @@
 ---
-title: "Gerir as transferências de dados entre aplicações iOS | Pré-visualização do Azure no Intune"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações."
+title: "Gerir as transferências de dados entre aplicações iOS"
+titleSuffix: Intune on Azure
+description: "Utilize este tópico para compreender como pode utilizar a funcionalidade Open In do iOS e as políticas de gestão de aplicações móveis para gerir as transferências de dados entre aplicações.\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Como gerir a transferência de dados entre aplicações iOS
 ## <a name="manage-ios-apps"></a>Gerir aplicações iOS
 A proteção dos dados da sua empresa inclui garantir que as transferências de ficheiros estão limitadas a aplicações que são geridas por si.  Pode gerir aplicações iOS das seguintes formas:
@@ -36,7 +33,7 @@ A funcionalidade **Gestão Open in** dos dispositivos iOS pode limitar as transf
 ##  <a name="using-app-protection-with-ios-apps"></a>Utilizar a proteção de aplicações com aplicações iOS
 As políticas proteção de aplicações podem ser utilizadas com a funcionalidade **Gestão Open In** do iOS para proteger os dados da empresa das seguintes formas:
 
--   **Dispositivos propriedade do empregado não geridos por nenhuma solução MDM:** pode configurar as definições de política de proteção de aplicações para **Permitir que a aplicação transfira dados apenas para aplicações geridas**. O utilizador final não poderá abrir o ficheiro protegido numa aplicação que não seja gerida por uma política.
+-   **Dispositivos propriedade do empregado não geridos por nenhuma solução MDM:** pode configurar as definições de política de proteção de aplicações para **Permitir que a aplicação transfira dados apenas para aplicações Geridas por Políticas**. O comportamento Open-In numa aplicação Gerida por Políticas apresentará apenas outras aplicações Geridas por Políticas como uma opção para partilha. Se um utilizador tentar enviar um ficheiro protegido por políticas como um anexo do OneDrive no e-mail nativo, esse ficheiro será ilegível.
 
 -   **Dispositivos geridos pelo Intune:** para dispositivos inscritos no Intune, a transferência de dados entre aplicações com políticas de proteção de aplicações e outras aplicações iOS geridas implementadas através do Intune é permitida automaticamente. Para permitir a transferência de dados entre aplicações com políticas de proteção de aplicações, ative a definição **Permitir que a aplicação transfira dados apenas para aplicações geridas**. Pode utilizar a funcionalidade **Gestão Open in** para controlar a transferência de dados entre as aplicações que são implementadas através do Intune.   
 
@@ -108,4 +105,3 @@ Em primeiro lugar, [crie e atribua uma política de proteção de aplicações](
 
 ### <a name="see-also"></a>Veja também
 [O que é uma política de proteção de aplicações do Intune](app-protection-policy.md)
-

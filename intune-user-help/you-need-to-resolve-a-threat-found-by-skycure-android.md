@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 7f9509ebaf4a0d11568a6cf094fbf699b38321aa
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>Tem de resolver uma ameaça encontrada pelo Skycure
 
 O Skycure encontrou uma potencial ameaça no dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, às aplicações e aos ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
@@ -49,4 +45,3 @@ Se instalou uma aplicação que o Skycure pensa ser uma ameaça, verá um ecrã 
 Depois de desinstalar a aplicação, recupera de imediato o acesso ao e-mail e aos dados da empresa. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

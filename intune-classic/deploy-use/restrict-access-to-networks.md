@@ -1,5 +1,5 @@
 ---
-title: "Proteger o acesso às redes com Cisco ISE | Documentos da Microsoft"
+title: Proteger o acesso a redes com o Cisco ISE
 description: "Utilize o Cisco ISE com o Intune para que os dispositivos sejam inscritos no Intune e estejam em conformidade com as políticas antes de acederem ao Wi-Fi e à VPN que são controlados pelo Cisco ISE."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Utilizar o Cisco ISE com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -157,7 +154,7 @@ Na consola de administração de ISE, forneça estes valores de definição:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>As informações partilhadas entre o seu inquilino do Intune e o servidor de Cisco ISE
 Esta tabela lista as informações partilhadas entre o seu inquilino do Intune e o servidor do Cisco ISE para dispositivos geridos pelo Intune.
 
-|Propriedade|    Descrição|
+|Propriedade|  Descrição|
 |---------------|------------------------------------------------------------|
 |complianceState|A cadeia verdadeiro ou falso que indica se o dispositivo é ou não compatível.|
 |isManaged|A cadeia verdadeiro ou falso que indica se o cliente é gerido ou não pelo Intune.|
@@ -192,4 +189,3 @@ Também existe um [conjunto transferível de instruções de inscrição](https:
 ### <a name="see-also"></a>Veja também
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1 (Guia do Administrador do Motor de Serviços de Identidade Cisco, Versão 2.1 – em inglês)](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-

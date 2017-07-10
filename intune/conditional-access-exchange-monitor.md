@@ -1,6 +1,6 @@
 ---
 title: Monitorizar a compatibilidade de acesso condicional no Exchange Online e no Exchange no local
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Monitorizar a compatibilidade de acesso condicional no Exchange Online e no Exchange no local através do portal do Azure no Intune"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Monitorizar a compatibilidade de acesso condicional no Exchange Online e no Exchange no local na pré-visualização do Azure no Intune
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorizar a conformidade de acesso condicional no Exchange Online e no Exchange no local no Intune
 
 A partir da versão 1704 do Intune, os administradores podem ver informações de relatórios relacionadas com os registos de dispositivos do Exchange ActiveSync que são sincronizados com o Intune através do Exchange Connector no local ou do conector de serviços do Intune (conector do Exchange Online). O relatório de compatibilidade de acesso condicional apresenta um resumo dos dispositivos com diferentes estados de sincronização:
 
@@ -70,4 +67,3 @@ No painel de detalhes do dispositivo, pode ver mais informações:
 -   **Configuração do Dispositivo:** mostra todos os detalhes de configuração do dispositivo.
 
 -   **Acesso ao Exchange:** aqui, pode saber mais sobre o estado do dispositivo depois de aplicar as políticas de acesso condicional.
-

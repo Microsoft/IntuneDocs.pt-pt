@@ -1,7 +1,7 @@
 ---
 title: "Introdução à compatibilidade de dispositivos"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: utilize este tópico para compreender os pré-requisitos obrigatórios para criar políticas de conformidade no Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Utilize este tópico para compreender os pré-requisitos obrigatórios para criar políticas de conformidade no Microsoft Intune\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,24 +15,21 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="get-started-with-device-compliance-in-intune"></a>Introdução à conformidade de dispositivos no Intune
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Introdução à conformidade de dispositivos na pré-visualização do Azure no Intune
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Neste tópico, irá aprender o seguinte: 
 
 - O que precisa para começar a criar uma política de conformidade do dispositivo.
-- Uma vista rápida sobre o que pode ver e fazer no portal de pré-visualização do Azure do Intune. 
+- Uma vista rápida sobre o que pode ver e fazer no Intune no portal do Azure. 
 
 Se a conformidade do dispositivo for uma novidade para si, aconselhamos que leia [este tópico](device-compliance.md) para saber o que é a conformidade do dispositivo e como pode utilizá-la na sua organização.
 
@@ -56,7 +53,7 @@ Se a conformidade do dispositivo for uma novidade para si, aconselhamos que leia
 
 ##  <a name="azure-portal-workflow"></a>Fluxo de trabalho do portal do Azure
 
-Veja a seguir uma descrição geral de como pode criar e gerir a conformidade do dispositivo no portal de pré-visualização do Azure no Intune.
+Veja a seguir uma descrição geral de como pode criar e gerir a conformidade de dispositivos no Intune no portal do Azure.
 
 <!---### Overview
 
@@ -83,4 +80,3 @@ Período de validade do estado de conformidade
 [Criar uma política de conformidade para iOS](compliance-policy-create-ios.md)
 
 [Criar uma política de conformidade para Windows](compliance-policy-create-windows.md)
-

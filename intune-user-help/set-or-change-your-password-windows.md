@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="make-your-device-safer-with-the-right-password"></a>Torne o seu dispositivo mais seguro com a palavra-passe correta
 
 O acesso a recursos empresariais, como e-mail e documentos, é algo que as pessoas precisam de fazer diariamente a partir dos dispositivos Windows. A sua organização quer ter a certeza de que o dispositivo está a fazê-lo em segurança. Uma forma de garantir que o dispositivo está a aceder de forma segura a esses recursos passa por exigir que os dispositivos utilizem uma palavra-passe. Estas palavras-passe servem, por exemplo, para aceder ao dispositivo a partir do ecrã de bloqueio.
@@ -49,4 +45,3 @@ Se o dispositivo Windows não estiver em conformidade com a política de palavra
 4. Selecione **concluído**.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

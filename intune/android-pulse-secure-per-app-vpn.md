@@ -1,12 +1,12 @@
 ---
 title: "Perfil VPN por aplicação para dispositivos Android – Pulse Secure"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune."
+titleSuffix: Intune on Azure
+description: "Saiba como criar um perfil VPN por aplicação para dispositivos Android geridos pelo Intune.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,19 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: babeaa13da863ca3335c3a05dbabb4a9ac7889ce
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0e3a8363eb25ba3a3b2c16f15b8188acb694938
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicação para dispositivos Android
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Pode criar um perfil VPN por aplicação para dispositivos Android 5.0 e posteriores geridos pelo Intune. Primeiro, crie um perfil de VPN que utilize o tipo de ligação Pulse Secure. Em seguida, crie uma política de configuração personalizada que associe o perfil de VPN a aplicações específicas.
 
-Depois de atribuir a política ao dispositivo Android ou aos grupos de utilizadores, os utilizadores devem iniciar a VPN do PulseSecure. O PulseSecure irá então permitir tráfego apenas das aplicações especificadas para utilizar a ligação VPN aberta.
+Depois de atribuir a política ao dispositivo Android ou aos grupos de utilizadores, os utilizadores devem iniciar a VPN do PulseSecure. O PulseSecure permite apenas tráfego das aplicações especificadas para utilizar a ligação VPN aberta.
 
 > [!NOTE]
 >
@@ -41,7 +38,7 @@ Depois de atribuir a política ao dispositivo Android ou aos grupos de utilizado
 
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 2. No painel da lista de perfis, escolha **Criar Perfil**.
@@ -50,12 +47,12 @@ Depois de atribuir a política ao dispositivo Android ou aos grupos de utilizado
 5. Na lista pendente **Tipo de perfil**, escolha **VPN**.
 3. Escolha **Definições** > **Configurar** e, em seguida, configure o perfil de VPN de acordo com as definições em [Como configurar definições de VPN](vpn-settings-configure.md) e em [Definições de VPN do Intune para dispositivos Android](vpn-settings-android.md).
 
-Tome nota do nome do perfil de VPN para utilização no próximo passo. Por exemplo, **MyAppVpnProfile**.
+Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VPN. Esse nome será necessário no próximo passo. Por exemplo, **MyAppVpnProfile**.
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Passo 2: criar uma política de configuração personalizada
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 3. No painel de perfis, clique em **Criar Perfil**.
@@ -72,8 +69,8 @@ Tome nota do nome do perfil de VPN para utilização no próximo passo. Por exem
 ![Exemplo de política personalizada de VPN por aplicação Android](./media/android_per_app_vpn_oma_uri.png)
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Definir a lista de aplicações como lista de bloqueados ou lista de permitidos (opcional)
-  Pode especificar uma lista de aplicações que *não* utilize a ligação VPN com o valor **BLACKLIST**. Todas as outras aplicações estabelecerão ligação através da VPN.
-Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista de aplicações que *possa* utilizar a ligação VPN. As aplicações que não estejam na lista não estabelecerão ligação através da VPN.
+  Pode especificar uma lista de aplicações que *não* utilize a ligação VPN com o valor **BLACKLIST**. Todas as outras aplicações são ligadas através da VPN.
+Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista de aplicações que *possa* utilizar a ligação VPN. As aplicações que não estejam na lista não são ligadas através da VPN.
   1.    No painel **Definições de OMA-URI personalizadas**, escolha **Adicionar**.
   2.    Introduza um nome para a definição.
   3.    Para **Tipo de dados**, especifique **Cadeia**.
@@ -85,4 +82,3 @@ Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista d
 ## <a name="step-3-assign-both-policies"></a>Passo 3: atribuir ambas as políticas
 
 Utilize as instruções em [Como atribuir perfis de dispositivo](device-profile-assign.md) para atribuir ambos os perfis aos utilizadores ou dispositivos obrigatórios.
-
