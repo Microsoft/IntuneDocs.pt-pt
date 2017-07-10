@@ -67,7 +67,7 @@
   ],
   "branches_to_filter": [
     "master-oldev"
-    ],
+  ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs.pt-pt",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
@@ -87,7 +87,7 @@
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/Microsoft/IntuneDocs-pr",
+      "url": "https://github.com/MicrosoftDocs/IntuneDocs-pr",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
