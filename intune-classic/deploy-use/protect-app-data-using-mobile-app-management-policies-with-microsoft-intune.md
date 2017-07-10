@@ -1,5 +1,5 @@
 ---
-title: "Proteger dados das aplicações através de políticas de MAM | Documentos da Microsoft"
+title: "Proteger dados de aplicações com políticas de MAM"
 description: "Este tópico explica de que forma é que as políticas de gestão de aplicações móveis podem ajudar a proteger os dados empresariais, a evitar a perda de dados e a manter as informações pessoais e de trabalho separadas."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger os dados da aplicação através de políticas de proteção de aplicações com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ Pode configurar as políticas de proteção de aplicações para aplicações ex
 
 -   **Inscritos numa solução de MDM de terceiros:** os dispositivos desta categoria pertencem, normalmente, à empresa.
 
-      > [!NOTE]
-      > Não recomendamos a utilização de políticas de proteção de aplicações com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
+    > [!NOTE]
+    > Não recomendamos a utilização de políticas de proteção de aplicações com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
 
 -   **Não inscritos em nenhuma solução de MDM:** os dispositivos desta categoria pertencem, normalmente, aos funcionários e não são geridos ou não estão inscritos no Intune ou noutras soluções de MDM de terceiros.
 
@@ -135,4 +132,3 @@ Por exemplo, quando um utilizador inicia a aplicação OneDrive com a sua conta 
 - [Preparar-se para configurar políticas de proteção de aplicações](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

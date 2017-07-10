@@ -1,5 +1,5 @@
 ---
-title: "Inscrever com o gestor de inscrição de dispositivos | Documentos da Microsoft"
+title: "Inscrever com o gestor de inscrição de dispositivos"
 description: "A conta do gestor de inscrição de dispositivos (DEM) pode gerir um grande número de dispositivos móveis pertencentes à empresa partilhados com uma única conta de utilizador."
 keywords: 
 author: nathbarn
@@ -14,16 +14,12 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1f63a9e65435e2cfc421c23de3ad87363bc446d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 095b89d1428d6b8f06143043d8bb6ed37fd8fa5b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscrever dispositivos pertencentes à empresa com o gestor de inscrição de dispositivos no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -108,4 +104,3 @@ A eliminação de um gestor de inscrição de dispositivos não afeta os disposi
 -   As credenciais da conta de gestor de inscrição de dispositivos eliminada continuam sem poder apagar ou extinguir dispositivos.
 
 -   A relação da conta do gestor de inscrição de dispositivos eliminada com os dispositivos inscritos é mantida, mas não é possível inscrever mais dispositivos.
-

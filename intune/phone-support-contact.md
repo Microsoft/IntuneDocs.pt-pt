@@ -1,7 +1,7 @@
 ---
 title: Contactar o suporte assistido por telefone do Intune
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: números de telefone para ajuda do Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Números de telefone para ajuda do Microsoft Intune.\""
 keywords: "horário comercial"
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e8d284e8bbcf472c4c03e6411902356ee42cd5a5
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a261e01b81e3ad1caa7d8b780a79004dfbbe6ecd
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contactar o suporte assistido por telefone do Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>Números de telefone e horário comercial
 
@@ -121,4 +118,3 @@ ms.lasthandoff: 05/23/2017
 |Uruguai|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 UYST (UTC -2)|Espanhol&#42;, Inglês|000-411-002-7131||
 |Venezuela|Disponível 24 horas por dia, 7 dias por semana.|Segunda - sexta<br /><br />09:00 - 17:00 VET (UTC -4:30)|Espanhol&#42;, Inglês|0-800-100-8763||
 &#42; Suportado com interpretação via telefone.
-

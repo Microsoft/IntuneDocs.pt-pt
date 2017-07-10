@@ -1,7 +1,7 @@
 ---
 title: "Definições de e-mail do Intune para o Windows Phone 8.1"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de e-mail em dispositivos Windows Phone 8.1."
+titleSuffix: Intune on Azure
+description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de e-mail em dispositivos Windows Phone 8.1.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986d02721012ce356b18cf983087b5babd03bb23
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4925ceb1be344a12270ee40519096a62b1f0c739
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Definições de perfis de e-mail para dispositivos Windows Phone 8.1 no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 - **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
     - **Contactos**
     - **Calendário**
     - **Tarefas**
-

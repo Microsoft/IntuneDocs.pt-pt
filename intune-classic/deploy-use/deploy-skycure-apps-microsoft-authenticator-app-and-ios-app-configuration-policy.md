@@ -1,5 +1,5 @@
 ---
-title: "Implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS | Documentos da Microsoft"
+title: "Implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS"
 description: "Implemente aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS na consola clássica do Intune."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 45826fbc-6df5-41b2-8e80-d1353f904b43
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19c8ca7bbfe19649585d63ce2c0c96a8f57b3739
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 60f4ab5a656a2e253d82971d7bea6b3a6c9eb25a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy"></a>Implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração de aplicações iOS
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -68,4 +65,3 @@ ms.lasthandoff: 05/23/2017
 ## <a name="next-steps"></a>Próximos passos
 
 [Configurar a integração do Skycure com o Intune](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)
-

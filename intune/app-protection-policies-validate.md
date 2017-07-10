@@ -1,7 +1,7 @@
 ---
 title: "Validar as políticas de proteção de aplicações"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: este tópico descreve como pode testar e confirmar se a sua política de proteção de aplicações está corretamente definida e a funcionar conforme esperado."
+titleSuffix: Intune on Azure
+description: "Este tópico descreve como pode testar e confirmar se a política de proteção de aplicações está corretamente definida e a funcionar conforme esperado.\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,18 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Como validar a configuração das políticas de proteção de aplicações
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Este tópico disponibiliza informações sobre como verificar a existência de problemas depois de configurar uma política de proteção de aplicações. Esta orientação aplica-se às políticas de proteção de aplicações na **pré-visualização** do portal do Azure.
+Este tópico disponibiliza informações sobre como verificar a existência de problemas depois de configurar uma política de proteção de aplicações. Esta orientação aplica-se às políticas de proteção de aplicações no portal do Azure.
 
 ### <a name="checking-for-symptoms"></a>Procurar sintomas
 É pouco provável que os utilizadores comuniquem problemas, uma vez que a proteção de aplicações é uma ferramenta de proteção de dados. Se existir um problema com a configuração da proteção de aplicações, o utilizador terá acesso sem restrições, tal como teria sem a proteção de aplicações, e não teria conhecimento do problema. Por este motivo, recomendamos que valide a configuração da proteção de aplicações ao controlar as políticas de proteção de aplicações junto de um pequeno grupo de utilizadores que pode testar deliberadamente as restrições da proteção de aplicações.
@@ -61,4 +58,3 @@ Eis as ações a efetuar com base no estado de utilizador:
 ### <a name="see-also"></a>Veja também
 
 [O que é uma política de proteção de aplicações do Intune?](app-protection-policies.md)
-

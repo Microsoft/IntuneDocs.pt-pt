@@ -1,5 +1,5 @@
 ---
-title: "Definições de conformidade do Android for Work | Documentos da Microsoft"
+title: "Definições de conformidade do Android for Work"
 description: "Este tópico descreve as definições de política de conformidade do dispositivo para dispositivos Android que são compatíveis com o Android for Work."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88774055297f06d6901f1a9eea8e6fd60a697e64
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 79be4993c9b23294d1f49743f863588f9d0cb9b5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Android for Work no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -85,4 +81,3 @@ Se estiver à procura de informações sobre outras plataformas, selecione uma d
   É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
 - **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do sistema operativo (SO) posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até que seja feita uma alteração à regra que permita a versão do sistema operativo, este dispositivo não pode ser utilizado para aceder aos recursos da empresa.
-

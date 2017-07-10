@@ -1,5 +1,5 @@
 ---
-title: Gerir PCs com software de cliente | Documentos da Microsoft
+title: Gerir PCs com o software de cliente
 description: "Efetue a gestão de PCs Windows instalando o software de cliente do Intune."
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune oferece uma solução abrangente de gestão de dispositivos móveis para organizações. O Intune pode gerir PCs Windows como dispositivos móveis através das capacidades de gestão de dispositivos modernas incorporadas no sistema operativo do Windows 10. Para satisfazer as necessidades de gestão da sua organização, o Intune também pode gerir PCs Windows como computadores com o software de cliente do Intune. Este método de gestão utiliza capacidades de gestão de computadores tradicionais no sistema operativo Windows legado.
 
@@ -79,7 +78,7 @@ Embora o software de cliente do Intune suporte [capacidades de gestão que ajuda
 
 Quando utiliza o software de cliente do Intune para gerir PCs Windows, pode utilizar apenas as políticas apresentadas na secção **Gestão de Computadores**.
 
-O Intune gere os PCs Windows através de políticas semelhantes às que o Active Directory Domain Services do Windows Server /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) utilizou na sua organização. Para obter mais informações, veja [Group Policy for beginners (Política de Grupo para principiantes)](https://technet.microsoft.com/library/hh147307.aspx).
+O Intune faz a gestão dos PCs Windows através de políticas semelhantes às utilizadas pelos Objetos de Política de Grupo (GPOs) dos Serviços de Domínio do Active Directory (AD DS) do Windows Server. Se gerir computadores associados a domínios do Active Directory com o Intune, [confirme que as políticas do Intune não entram em conflito com outros GPOs](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) utilizados na sua organização. Para obter mais informações, veja [Group Policy for beginners (Política de Grupo para principiantes)](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Selecionar modelo para a nova política do PC Windows](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Tenha também em atenção que na consola de administração do Intune, certas s
 Normalmente, o software de cliente do Intune é executado de forma discreta em segundo plano sem exigir demasiada interação ou resolução de problemas por parte do utilizador. Se tiver de resolver problemas de gestão do PC, pode verificar os registos. O software de cliente do Intune e os registos correspondentes são instalados no diretório %Program Files%\Microsoft\OnlineManagement.
 
 Também pode rever [Resolver problemas de configuração do cliente no Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) para verificar a existência de problemas que possam ocorrer, bem como quaisquer resoluções ou soluções.
-

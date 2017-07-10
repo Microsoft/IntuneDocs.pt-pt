@@ -1,7 +1,7 @@
 ---
-title: "Definições de VPN para dispositivos macOS | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos macOS."
+title: "Definições de VPN no Intune para dispositivos macOS"
+titleSuffix: Intune on Azure
+description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos Mac OS.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4737fc863e3eda92eafd0536a07abf4100ebe9cc
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 83e3776aacbddc37e5e7586d8fd7580143dead64
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos macOS no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Consoante as definições que escolher, nem todos os valores na lista abaixo serão configuráveis.
 
@@ -61,4 +58,3 @@ Se tiver selecionado **VPN Personalizada**, configure estas definições adicion
 - **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
 - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
 - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
-

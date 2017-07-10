@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-ios-device-from-intune"></a>Anular a inscrição do seu dispositivo iOS no Intune
 
 Quando termina a inscrição do seu dispositivo iOS no Intune, este não poderá continuar a aceder a recursos de empresa e deixará de ser gerido pelo Intune.
@@ -59,4 +54,3 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 -   Os dispositivos configurados apenas para e-mail não serão apresentados na aplicação Portal da Empresa ou no site.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

@@ -1,7 +1,7 @@
 ---
 title: Como monitorizar a compatibilidade do dispositivo
-titleSuffix: Intune Azure preview
-description: "Pé-visualização do Azure no Intune: saiba como monitorizar a conformidade dos dispositivos."
+titleSuffix: Intune on Azure
+description: Saiba como monitorizar a conformidade do dispositivo."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,20 +15,18 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Como monitorizar a conformidade do dispositivo na pré-visualização do Azure no Intune
+# <a name="how-to-monitor-device-compliance-in-intune"></a>Como monitorizar a conformidade do dispositivo no Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Pode ver o resumo do estado dos seus **perfis de conformidade** no painel **Descrição geral**.
-Pode clicar interativamente nas tabelas para desagregar os detalhes. Se tiver vários perfis de conformidade configurados, também pode ver o estado de cada política ao aceder ao painel de política e escolher **Relatórios** na secção **Gerir**.  Os detalhes dos relatórios disponíveis para a pré-visualização estão listados abaixo.
+Pode clicar interativamente nas tabelas para desagregar os detalhes. Se tiver vários perfis de conformidade configurados, também pode ver o estado de cada política ao aceder ao painel de política e escolher **Relatórios** na secção **Gerir**.  Os detalhes dos relatórios disponíveis estão listados abaixo.
 
 ##  <a name="device-compliance"></a>Conformidade do dispositivo
 
@@ -48,4 +46,3 @@ O relatório de conformidade com definições disponibiliza os detalhes para cad
 - A plataforma à qual se aplica a definição.
 
 Pode desagregar cada uma das definições para ver mais informações sobre os perfis nos quais estas definições foram ativadas, bem como o valor da definição.
-

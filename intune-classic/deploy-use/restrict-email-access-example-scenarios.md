@@ -1,5 +1,5 @@
 ---
-title: "Cenários de proteção de e-mail | Documentos da Microsoft"
+title: "Cenários de proteção de e-mail"
 description: "Alguns cenários de exemplo e como podem ser implementados com o acesso condicional."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: a60c41d5a35ee60677db3835818ca8b90420c715
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Proteger o acesso ao e-mail com o Microsoft Intune: cenários de exemplo
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ Para tal, configure uma política de acesso condicional para o Exchange no local
 É utilizado o fluxo seguinte para decidir quais os dispositivos que podem aceder ao Exchange:
 
 ![Fluxo de acesso a dispositivos](./media/ConditionalAccess8-4.png)
-

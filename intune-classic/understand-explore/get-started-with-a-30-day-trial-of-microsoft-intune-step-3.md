@@ -1,5 +1,5 @@
 ---
-title: "Criar grupos para organizar utilizadores e dispositivos na avaliação gratuita | Documentos da Microsoft"
+title: "Criar grupos para organizar utilizadores e dispositivos na avaliação gratuita"
 description: "Como criar grupos de dispositivos e grupos de utilizadores quando se inscreve numa avaliação gratuita de 30 dias do Microsoft Intune."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f6a5926876bdd7224d0e9bfef55aa86f51c87aff
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 084cc155a64a58582e3008df10e86c1e5266054d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Criar grupos para organizar utilizadores e dispositivos de subscrições de avaliação
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Para saber mais sobre como utilizar grupos, veja [Utilizar grupos para gerir uti
 
 ## <a name="next-steps"></a>Passos seguintes
 [Criar políticas](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
-

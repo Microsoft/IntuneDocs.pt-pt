@@ -1,7 +1,7 @@
 ---
 title: "Como criar uma política de conformidade para iOS"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como criar uma política de conformidade para dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Saiba como criar uma política de conformidade para dispositivos iOS.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 423c6058c8a2803e62a90f309f4b9c9ad62f9ede
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos iOS no Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Como criar uma política de conformidade para dispositivos iOS na pré-visualização do Azure no Intune
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As políticas de conformidade são criadas para cada plataforma.  Pode criar uma política de conformidade no portal do Azure. Para obter mais informações sobre o que é a política de compatibilidade, veja o tópico [O que é a conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -124,4 +121,3 @@ Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Tem de atualizar o sistema operativo do seu dispositivo Android
 
 Se vir uma mensagem que diz "O nível mínimo de patch de segurança do Android não está configurado", precisa de instalar uma atualização para se certificar de que o seu dispositivo se mantém protegido. É lançado um _patch_ para salvaguardar o bom funcionamento do software e garantir que o mesmo está atualizado. O seu administrador de TI precisa que instale esta atualização para se certificar de que os dados empresariais têm a máxima proteção no seu dispositivo. A localização da atualização de segurança de que precisa varia consoante o tipo específico de dispositivo Samsung que possui.
@@ -43,4 +39,3 @@ Aceda a **Definições** > **Actualizações do sistema** > **Verificar novas ac
 
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

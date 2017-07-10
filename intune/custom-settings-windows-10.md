@@ -1,7 +1,7 @@
 ---
 title: "Definições personalizadas do Intune para dispositivos Windows 10"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba quais são as definições que pode utilizar num perfil personalizado do Windows 10."
+titleSuffix: Intune on Azure
+description: "Saiba quais são as definições que pode utilizar num perfil personalizado do Windows 10.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 52ad4f141c3b2b73a400c69fb9d9beb174bbac64
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de dispositivos personalizadas para dispositivos Windows 10 no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
  Utilize o perfil **personalizado** do Microsoft Intune para Windows 10 e Windows 10 Mobile para implementar definições OMA-URI (Open Mobile Alliance Uniform Resource Identifier) que podem ser utilizadas para controlar as funcionalidades nos dispositivos. O Windows 10 disponibiliza várias definições CSP, por exemplo, o [Fornecedor de Serviços de Configuração de Políticas (CSP de Políticas)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Se estiver à procura de uma determinada definição, lembre-se de que o [perfil de restrição de dispositivos do Windows 10](device-restrictions-windows-10.md) contém muitas definições que estão incorporados no Intune e não necessitam que especifique valores personalizados.
@@ -62,6 +59,5 @@ Encontrará uma lista completa de todos os fornecedores de serviços de configur
 Nem todas as definições são compatíveis com todas as versões do Windows 10. A tabela no tópico Windows indica quais as versões suportadas para cada CSP.
 
 Além disso, o Intune não suporta todas as definições listadas no tópico. Para saber se o Intune suporta a definição que pretende, abra o tópico dessa definição. Cada página de definição mostra a sua operação suportada. Para trabalhar com o Intune, a definição tem de suportar as operações **Adicionar** ou **Substituir**.
-
 
 

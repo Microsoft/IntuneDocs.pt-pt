@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa?
 
 Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](reset-erase-your-device-cpwebsite.md) para repor o dispositivo Windows, este repõe o dispositivo para as respetivas definições de fábrica e elimina todas as aplicações, definições e dados, incluindo dados pessoais. O que acontece em cada dispositivo depende do dispositivo e da forma como o utiliza (conforme descrito na seguinte tabela). Para obter instruções sobre como repor o seu dispositivo perdido ou roubado, consulte [Reset (erase) your lost or stolen device (Repor (apagar) o dispositivo perdido ou roubado)](reset-erase-your-device-cpwebsite.md).
@@ -38,4 +33,3 @@ Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](
 |PCs e portáteis|**Windows 8.1 e Windows 8**<br />Só pode repor um computador com o Windows 8 ou Windows 8.1 se este for utilizado apenas para e-mails.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior.|
 
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

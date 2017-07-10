@@ -1,7 +1,7 @@
 ---
 title: "Definições de perfil personalizado do Intune para Android for Work"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como criar definições de perfil personalizado do Intune para dispositivos Android for Work."
+titleSuffix: Intune on Azure
+description: "Saiba como criar definições de perfil personalizado do Intune para dispositivos Android for Work.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: cd81e911dd1ab7c5d166ee14f2e184ebd54a18df
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Criar definições de perfil personalizado do Intune para dispositivos Android for Work
 
 Utilize a política de configuração personalizada para Android for Work do Intune para atribuir as definições OMA-URI que podem ser utilizadas para controlar as funcionalidades nos dispositivos Android for Work. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.

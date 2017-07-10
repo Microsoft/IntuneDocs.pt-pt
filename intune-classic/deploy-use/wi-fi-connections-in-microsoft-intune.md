@@ -1,5 +1,5 @@
 ﻿---
-title: "Ligações Wi-Fi | Documentos da Microsoft"
+title: "Ligações Wi-Fi"
 description: "Utilize perfis Wi-Fi para ajudar os utilizadores a ligar às suas redes Wi-Fi."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65fe17c42921d2c53153dca386ea40b9dea47d04
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurar dispositivos para ligar às suas redes Wi-Fi empresariais
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Pode implementar perfis de Wi-Fi nas seguintes plataformas:
 
 -   Android 4.0 e posterior
 
--    Android for Work   
+-   Android for Work   
 
 -   iOS 8.0 e posterior
 
@@ -181,4 +178,3 @@ Estas tabelas incluem os detalhes para as definições de segurança que estão 
 
 ### <a name="see-also"></a>Consulte também
 Saiba como criar um perfil Wi-Fi com uma chave pré-partilhada em [Perfil Wi-Fi com chave pré-partilhada](pre-shared-key-wi-fi-profile.md).
-

@@ -14,15 +14,12 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ba84b53fc10b49d932223e208870041762e5663a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -388,4 +385,3 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 
 ### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

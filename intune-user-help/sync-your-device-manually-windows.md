@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
 Por vezes, a tentativa de instalação de uma aplicação no seu dispositivo Windows pode ser mais morosa do que pensa que deveria ser. Se isto acontecer, pode tentar sincronizar manualmente o seu dispositivo Windows. A sincronização pode ajudar a acelerar a instalação.
@@ -134,4 +130,3 @@ Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar u
    É apresentada a mensagem "Estamos a sincronizar a sua conta" na parte superior do ecrã até que seja concluída a sincronização do dispositivo.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

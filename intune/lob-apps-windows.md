@@ -1,7 +1,7 @@
 ---
-title: "Como adicionar aplicações de linha de negócio Windows ao Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba mais sobre como adicionar aplicações de linha de negócio Windows ao Intune."
+title: "Como adicionar aplicações de linha de negócio Windows ao Intune"
+titleSuffix: Intune on Azure
+description: "Saiba como adicionar aplicações de linha de negócio Windows ao Intune.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 696c8f8e72e21c792474f5e52fad9054b3dfade9
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 8f8be4f6bf47ceb966e9042465dc8839d9aa9119
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passo 1 – Especificar o ficheiro de configuração do software
@@ -68,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 2. Escolha **Adicionar** para carregar a aplicação para o Intune.
 
 A aplicação que criou será apresentada na lista de aplicações onde a pode atribuir aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
-

@@ -1,5 +1,5 @@
 ﻿---
-title: "Definições de política de termos e condições | Documentos da Microsoft"
+title: "Definições de políticas dos termos e condições"
 description: "Pode implementar termos e condições do Intune para grupos de utilizadores para explicar como a inscrição, o acesso a recursos de trabalho e a utilização da aplicação Portal da Empresa afetam os dispositivos e os utilizadores."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2e8028abe5f25e4a05d79ae543d3029490c01668
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Definições de política de termos e condições no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ Ao editar uma política de termos e condições existentes, pode escolher que co
 
 ### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

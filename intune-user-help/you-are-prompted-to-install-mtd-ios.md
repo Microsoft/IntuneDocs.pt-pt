@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6157a126abfb2dc145556c4524afa55d1d1e7bc1
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-mobile-threat-defense-on-your-ios-device"></a>Tem de instalar a Defesa Contra Ameaças para Dispositivos Móveis no seu dispositivo iOS
 
 Para poder aceder ao seu trabalho, o administrador de TI precisa de instalar a aplicação Defesa Contra Ameaças para Dispositivos Móveis, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança. Poderá ver pedidos diferentes no dispositivo, consoante a forma como o administrador de TI configurar a Defesa Contra Ameaças para Dispositivos Móveis.
@@ -34,4 +30,3 @@ Para poder aceder ao seu trabalho, o administrador de TI precisa de instalar a a
 **Se a instalação não funcionar**
 
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

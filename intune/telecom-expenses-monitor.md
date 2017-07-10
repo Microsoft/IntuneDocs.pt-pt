@@ -1,7 +1,7 @@
 ---
 title: "Configurar um serviço de gestão de despesas de telecomunicações"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: configurar o serviço de gestão de despesas de telecomunicações Saaswedo a integrar com o Intune."
+titleSuffix: Intune on Azure
+description: "Configure o serviço de gestão de despesas de telecomunicações Saaswedo a integrar com o Intune.\""
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -15,16 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Configurar um serviço de gestão de despesas de telecomunicações na pré-visualização do Azure no Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gestão de despesas de telecomunicações no Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 O Intune permite-lhe gerir as despesas de telecomunicações decorrentes da utilização de dados em dispositivos móveis da empresa. Para ativar esta funcionalidade, o Intune integrou-se com a solução de gestão de despesas de telecomunicações Datalert, do programador de software de terceiros Saaswedo. O Datalert é um software de gestão de despesas de telecomunicações em tempo real que lhe permite gerir a utilização de dados de telecomunicações e evitar excessos dispendiosos e inesperados de dados e roaming nos seus dispositivos geridos pelo Intune.
 
@@ -43,7 +41,7 @@ Para poder utilizar o serviço Datalert com o Intune, tem de configurar as defin
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Uma subscrição do Microsoft Intune e acesso ao portal do Azure, que se encontra atualmente na versão de pré-visualização pública.
+- Uma subscrição do Microsoft Intune e acesso ao portal do Azure.
 - Uma subscrição do serviço de gestão de despesas de telecomunicações Datalert
 
 ## <a name="list-of-telecom-expense-management-providers"></a>Lista de fornecedores de gestão de despesas de telecomunicações
@@ -108,9 +106,9 @@ Estas categorias serão apresentadas aos utilizadores durante a inscrição. Con
 
 Siga estes passos para criar a aplicação Datalert no Intune para cada plataforma. Neste caso, utilizou-se o iOS como exemplo nestes passos.
 
-1. No painel **Intune** do portal do Azure, selecione **Gerir aplicações**.
+1. No painel **Intune** do portal do Azure, selecione **Aplicações móveis**.
 
-2. No painel **Gerir aplicações**, selecione **Gerir** > **Aplicações**.
+2. No painel **Aplicações móveis**, selecione **Gerir** > **Aplicações**.
 
 3. Selecione **Adicionar** para adicionar uma aplicação.
 
@@ -151,8 +149,8 @@ O serviço Datalert está ativo e começa a monitorizar a utilização de dados 
 
 ## <a name="client-enrollment-experience"></a>Experiência de inscrição de clientes
 Na experiência de inscrição de clientes, veja o seguinte:
--    [Inscrever o dispositivo iOS na gestão de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [Inscrever o dispositivo Android na gestão de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [Inscrever o dispositivo iOS na gestão de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [Inscrever o dispositivo Android na gestão de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Desativar o serviço Datalert
 
@@ -173,4 +171,3 @@ Se desativar o serviço Datalert no portal do Azure:
 Neste momento, os relatórios de utilização de dados só estão disponíveis na consola de gestão do Datalert da Saaswedo.
 
 As instruções que os utilizadores finais seguirem para instalar a aplicação Datalert serão adicionadas em breve.
-

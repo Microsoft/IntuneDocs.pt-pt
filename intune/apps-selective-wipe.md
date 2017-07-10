@@ -1,7 +1,7 @@
 ---
 title: "Como eliminar apenas os dados empresariais das aplicações"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como realizar a eliminação seletiva de aplicações com o Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Saiba como realizar a eliminação seletiva de aplicações com o Microsoft Intune.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Quando um dispositivo se perde ou é roubado ou se o funcionário sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, poderá não querer remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao funcionário.
 
@@ -38,7 +36,7 @@ Para remover seletivamente os dados de aplicações da empresa, utilize os passo
 
 1.  Inicie sessão no [portal do Azure](https://portal.azure.com).
 
-2.  Escolha **Mais Serviços**, introduza **Intune** na caixa de texto de filtro e selecione **Intune**. Quando for apresentado o painel de pré-visualização do Intune, escolha o painel **Gerir aplicações**.
+2.  Escolha **Mais Serviços**, introduza **Intune** na caixa de texto de filtro e selecione **Intune**. Quando for apresentado o painel do Intune, escolha o painel **Gerir aplicações**.
 
     ![Captura de ecrã do painel Novo pedido de eliminação](./media/intune-azure-preview-blade.png)
 

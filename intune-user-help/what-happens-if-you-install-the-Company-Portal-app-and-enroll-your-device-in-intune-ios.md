@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/26/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo iOS ou macOS no Intune?
 
 Quando instalar a aplicação Portal da Empresa e inscrever o dispositivo iOS ou macOS no Intune, pode utilizar a aplicação Portal da Empresa para:
@@ -68,4 +63,3 @@ Quando o seu dispositivo está inscrito, o administrador de TI pode:
 -   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
 
 Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
-

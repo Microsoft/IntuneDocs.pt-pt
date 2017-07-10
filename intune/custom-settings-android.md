@@ -1,7 +1,7 @@
 ---
 title: "Definições personalizadas do Intune para dispositivos Android"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba quais são as definições que pode utilizar num perfil personalizado do Android."
+titleSuffix: Intune on Azure
+description: "Saiba quais são as definições que pode utilizar num perfil personalizado do Android.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ff3d3b1596f58213bed2509b1bfd5ae81c63f440
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Definições personalizadas para dispositivos Android no Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Utilize o perfil **Personalizado** para Android do Microsoft Intune para atribuir as definições OMA-URI que podem servir para controlar as funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
@@ -43,4 +40,3 @@ Esta capacidade destina-se a permitir a atribuição de definições do Android 
     - **OMA-URI** – Especifique o OMA-URI para o qual pretende fornecer uma definição.
     - **Valor** – Introduza o valor que quer associar ao OMA-URI que introduziu.
 4. Clique em **OK** quando tiver terminado e, em seguida, continue a adicionar mais definições, conforme necessário.
-

@@ -1,7 +1,7 @@
 ---
 title: "Criar um perfil Wi-Fi com uma chave pré-partilhada"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: utilize um perfil personalizado do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada."
+titleSuffix: Intune on Azure
+description: "Utilize um perfil personalizado do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada.\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,39 +15,36 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utilizar um perfil de dispositivo personalizado do Microsoft Intune para criar um perfil Wi-Fi com uma chave pré-partilhada
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Veja como utilizar os **Perfis de dispositivos personalizados** do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada. Este tópico também contém um exemplo de como criar um perfil Wi-Fi baseado em EAP.
 
 > [!NOTE]
--    Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
+-   Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
 - Para Android, tem também a opção de utilizar este [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornecido por Johnathon Biersack.
--    Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
+-   Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
 -  Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize este [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornecido por Johnathon Biersack.
 
 
-1.    Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar um perfil de dispositivo, escolha **Personalizado** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.
+1.  Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar um perfil de dispositivo, escolha **Personalizado** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.
 
-2.    Forneça um nome e uma descrição.
-3.    Adicione uma nova definição de OMA-URI:
+2.  Forneça um nome e uma descrição.
+3.  Adicione uma nova definição de OMA-URI:
 
-   a.    Introduza um nome para esta definição de rede Wi-Fi.
+   a.   Introduza um nome para esta definição de rede Wi-Fi.
 
-   b.    Introduza uma descrição da definição de OMA-URI ou deixe em branco.
+   b.   Introduza uma descrição da definição de OMA-URI ou deixe em branco.
 
-   c.    **Tipo de Dados**: definido como **Cadeia**.
+   c.   **Tipo de Dados**: definido como **Cadeia**.
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -208,4 +205,3 @@ Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente:
     É melhor utilizar um computador que não tenha ligado a muitas redes sem fios, uma vez que tem de procurar em cada perfil para encontrar a correta.
 3.     Procure nos ficheiros XML para localizar o ficheiro com o nome correto.
 4.     Depois de localizar o ficheiro XML correto, copie e cole o código XML no campo de Dados da página de definições de OMA-URI.
-

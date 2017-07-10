@@ -1,5 +1,5 @@
 ﻿---
-title: "Gerir aplicações da Loja Windows para Empresas | Documentos da Microsoft"
+title: "Gerir aplicações da Loja Windows para Empresas"
 description: "Ligue o Microsoft Intune à Loja Windows para Empresas se quiser gerir e implementar aplicações compradas em volume a partir da consola do Intune"
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 888d825fb9955e97b49e54a0c36ab882055076d8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Manage apps you purchased from the Windows Store for Business with Microsoft Intune (Gerir aplicações compradas na Loja Windows para Empresas com o Microsoft Intune)
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -86,4 +83,3 @@ Quando implementa uma aplicação da Loja Windows para Empresas, é utilizada um
 
 ### <a name="see-also"></a>Veja também
 [Adicionar aplicações para dispositivos móveis no Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
-

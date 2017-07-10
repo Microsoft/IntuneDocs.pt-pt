@@ -1,5 +1,5 @@
 ---
-title: "Proteger dados da empresa com a encriptação de dados | Documentos da Microsoft"
+title: "Proteger os dados da empresa com a encriptação de dados"
 description: "Este guia pode ajudá-lo a proteger a sua empresa contra a perda de dados ao aplicar um código de acesso e a encriptação de dados, através de uma política em aplicações móveis."
 keywords: "encriptação, PIN, dados"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Guia de Introdução: proteger os dados da empresa com a encriptação de dados
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,12 +42,11 @@ Este guia de introdução é um bom recurso se cumprir os seguintes pré-requisi
 Este guia pode ajudá-lo a proteger a sua empresa contra a perda de dados ao aplicar códigos de acesso e a encriptação de dados, através de políticas nas aplicações móveis que os funcionários utilizam para aceder a dados confidenciais, sem necessidade de inscrição completa numa qualquer solução de gestão de dispositivos. O Microsoft Intune permite definir políticas de gestão de aplicações móveis (MAM) em aplicações móveis do Office para [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) e [Android](https://products.office.com/mobile/office-mobile-apps-for-android). Esta abordagem protege dados do O365 sem precisar de que os utilizadores inscrevam os respetivos dispositivos numa solução de gestão de dispositivos móveis, mantendo também uma excelente experiência de utilizador final com aplicações móveis do Office.
 
 ## <a name="how-do-i-do-it"></a>Como fazê-lo?
-1.    [Rever como pode proteger dados de aplicações](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [Configurar políticas de gestão de aplicações móveis](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [Criar e implementar políticas de gestão de aplicações móveis](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [Rever como pode proteger dados de aplicações](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [Configurar políticas de gestão de aplicações móveis](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [Criar e implementar políticas de gestão de aplicações móveis](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Informações adicionais:
-- [Descubra mais sobre a experiência de utilizador final para aplicações com MAM ativada com o Microsoft Intune.]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Decida como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune.]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Saiba mais sobre a experiência de utilizador final para aplicações com MAM ativada com o Microsoft Intune.](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [Decida como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune.](/intune/apps-prepare-mobile-application-management)
 - [Ver a lista de parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

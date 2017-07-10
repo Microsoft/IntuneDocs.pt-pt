@@ -1,5 +1,5 @@
 ---
-title: "Conector de defesa contra ameaças para dispositivos móveis do Lookout | Documentos da Microsoft"
+title: "Conector da defesa contra ameaças para dispositivos móveis do Lookout"
 description: "Proteja o acesso a recursos da empresa com base em riscos de aplicações, redes e dispositivos com o conector de Defesa Contra Ameaças para Dispositivos Móveis do Lookout e o Intune."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67654722e5c2bcbb768cf840a3f7ff1a24f99739
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,9 +90,8 @@ Detete ameaças à sua rede, tal como ataques Man-in-the-middle e impeça a sinc
 
 ## <a name="next-steps"></a>Passos seguintes
 Seguem-se os principais passos que tem de efetuar para implementar esta solução:
-1.    [Configurar a sua subscrição do Lookout](setup-your-lookout-mtd-subscription.md)
-2.    [Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Lookout no Intune](enable-lookout-mtd-connection.md)
+1.  [Configurar a sua subscrição do Lookout](setup-your-lookout-mtd-subscription.md)
+2.  [Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Lookout no Intune](enable-lookout-mtd-connection.md)
 3.  [Configurar e implementar a aplicação Defesa Contra Ameaças para Dispositivos Móveis do Lookout](configure-deploy-lookout-for-work-app.md)
-4.    [Configurar a política de conformidade do dispositivo do Lookout](create-lookout-device-compliance-policy.md)
-5.    [Resolver problemas com a integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
-
+4.  [Configurar a política de conformidade do dispositivo do Lookout](create-lookout-device-compliance-policy.md)
+5.  [Resolver problemas com a integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)

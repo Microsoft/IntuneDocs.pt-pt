@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>Corrigir problemas comuns no seu dispositivo Android
 
 Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o administrador de TI através das informações de contacto dele no [site do Portal da Empresa](http://portal.manage.microsoft.com).
@@ -45,4 +41,3 @@ Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigid
 - [O dispositivo aparece encriptado, mas a aplicação Portal da Empresa diz o contrário](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [É-lhe pedido para instalar a aplicação Device Threat Protection no seu dispositivo Android](you-are-prompted-to-install-mtd-android.md)
 - [Precisa de resolver uma ameaça que a aplicação Device Threat Protection encontrou no seu dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

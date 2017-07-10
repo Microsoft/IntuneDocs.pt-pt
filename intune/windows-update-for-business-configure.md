@@ -1,6 +1,7 @@
 ---
-title: "Configurar as definições do Windows Update para Empresas – Intune | Pré-visualização do Azure no Intune | Documentos da Microsoft"
-description: "Pré-visualização do Azure no Intune: saiba como configurar as definições do Windows Update para Empresas no Intune para controlar as atualizações para dispositivos Windows 10."
+title: "Configurar definições do Windows Update para Empresas – Intune"
+titleSuffix: Intune on Azure
+description: "Saiba como configurar as definições do Windows Update para Empresas no Intune para controlar as atualizações para dispositivos Windows 10.\""
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Como configurar as definições do Windows Update para Empresas com o Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introdução
 O Windows como um Serviço é a nova forma de disponibilizar atualizações para o Windows 10. A partir do Windows 10, todas as novas Atualizações de Funcionalidades e Atualizações de Qualidade irão conter o conteúdo de todas as atualizações anteriores. Tal significa que, desde que instale a atualização mais recente, sabe que os dispositivos Windows 10 estão completamente atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
@@ -87,7 +85,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
     - **Comportamento da atualização automática**: escolha como pretende gerir o comportamento da atualização automática para procurar, transferir e instalar atualizações. Para obter mais detalhes, veja [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Período de diferimento da atualização de qualidade (dias)** – especifique o número de dias de diferimento das atualizações de qualidade. Pode diferir a receção destas Atualizações de Qualidade durante um período máximo de 30 dias a partir do seu lançamento.  
 
-      Geralmente, as Atualizações de Qualidade são correções e melhorias às funcionalidades do Windows existentes e, normalmente, são publicadas na primeira terça-feira de cada mês, embora possam ser lançadas em qualquer altura pela Microsoft. Pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Qualidade, após a sua disponibilidade.
+    Geralmente, as Atualizações de Qualidade são correções e melhorias às funcionalidades do Windows existentes e, normalmente, são publicadas na primeira terça-feira de cada mês, embora possam ser lançadas em qualquer altura pela Microsoft. Pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Qualidade, após a sua disponibilidade.
     - **Período de diferimento da atualização de funcionalidades (dias)** – especifique o número de dias de diferimento das Atualizações de Funcionalidades. Pode diferir a receção destas Atualizações de Funcionalidades durante um período máximo de 180 dias após o seu lançamento.
 
     Geralmente, as Atualizações de Funcionalidades são novas funcionalidades do Windows. Depois de configurar a definição **Servicing branch** (**CB** ou **CBB**), pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Funcionalidades, após a sua disponibilidade da Microsoft no Windows Update.
@@ -148,4 +146,3 @@ Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atuali
 > [!IMPORTANT]
 > Quando emitir um comando de pausa, os dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo.
 > Além disso, se um dispositivo de destino for desativado quando emitir o comando de pausa, ao desativá-lo, este poderá transferir e instalar atualizações agendadas antes do registo no Intune.
-

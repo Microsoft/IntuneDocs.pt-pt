@@ -1,5 +1,5 @@
 ---
-title: "Criar e implementar políticas de MAM | Documentos da Microsoft"
+title: "Criar e implementar políticas de MAM"
 description: "Utilize as instruções passo a passo neste tópico para criar e implementar políticas de gestão de aplicações móveis."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Criar e implementar políticas de proteção de aplicações com o Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Quando acabar de criar uma política, conforme descrito no procedimento anterior
 ## <a name="line-of-business-lob-apps-optional"></a>Aplicações LOB (linha de negócio) (opcional)
 
 A partir da versão 1703 do Intune, tem a opção de adicionar aplicações LOB ao Intune em geral ao criar uma nova política de proteção de aplicações. Tem a opção de definir políticas de proteção de aplicações para aplicações LOB que utilizem SDK de MAM sem precisar de permissões totais de implementação de aplicações.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> Também pode adicionar aplicações LOB ao Intune ao aceder através do fluxo de trabalho do [SDK da Aplicação Intune](/intune-classic/develop/intune-app-sdk-get-started).
+> Também pode adicionar aplicações LOB ao Intune ao aceder através do fluxo de trabalho do [SDK da Aplicação Intune](/intune/app-sdk-get-started).
 
 > [!IMPORTANT]
 > Se os utilizadores tiverem apenas permissões específicas para implementar aplicações MAM e não permissões totais, o que lhes permitiria implementar aplicações no Intune, não poderão aceder através do fluxo de trabalho do SDK do Intune, mas ainda poderão adicionar as aplicações LOB através do fluxo de trabalho da criação de políticas de proteção de aplicações de MAM.
@@ -164,8 +161,8 @@ Apenas os utilizadores com licenças do Intune atribuídas são afetados pela po
 > Se estiver a utilizar o Intune com o Configuration Manager para gerir os seus dispositivos iOS e Android, a política só é aplicada aos utilizadores diretamente no grupo que selecionou. Os membros dos grupos subordinados aninhados dentro do grupo que selecionou não são afetados.
 
 Os utilizadores finais podem transferir as aplicações a partir da Apple Store ou do Google Play. Para obter mais informações, consulte:
-* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-android)
+* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>Alterar políticas existentes
 Pode editar uma política existente e aplicá-la aos utilizadores visados. No entanto, quando altera as políticas existentes, os utilizadores que já têm sessão iniciada nas aplicações não verão as alterações durante um período de 8 horas.
@@ -219,6 +216,5 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 [Monitorizar o estado do utilizador e de conformidade](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Consulte também
-* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-android)
+* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-ios)
