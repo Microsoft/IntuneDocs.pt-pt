@@ -2,8 +2,8 @@
 title: "Aplicações Android com políticas de proteção de aplicações"
 description: "Este tópico descreve o que esperar quando a sua aplicação é gerida por políticas de proteção de aplicações."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
@@ -14,18 +14,20 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7e9dc17cda485be244e05409bca69672edb87969
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 030e17a9f28a9476c82e89d4dd26151a2d3cb953
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações
+# O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações
+<a id="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Este tópico descreve a experiência do utilizador em aplicações com políticas de proteção. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas num contexto de trabalho: por exemplo, quando o utilizador está a aceder a aplicações com uma conta profissional ou a aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
-##  <a name="access-apps"></a>Acesso às aplicações
+##  Acesso às aplicações
+<a id="access-apps" class="xliff"></a>
 
 A aplicação Portal da Empresa é exigida para todas as aplicações associadas a políticas de proteção de aplicações em dispositivos Android.
 
@@ -34,13 +36,15 @@ Para dispositivos que não estão inscritos no Intune, a aplicação Portal da E
 A aplicação Portal da Empresa é uma forma de o Intune partilhar dados numa localização segura. Por conseguinte, a aplicação Portal da Empresa é um requisito para todas as aplicações que estão associadas a políticas de proteção de aplicações, mesmo se o dispositivo não estiver inscrito no Intune.
 
 
-##  <a name="use-apps-with-multi-identity-support"></a>Utilizar aplicações com suporte de identidades múltiplas
+##  Utilizar aplicações com suporte de identidades múltiplas
+<a id="use-apps-with-multi-identity-support" class="xliff"></a>
 
 As políticas de proteção de aplicações só são aplicadas no contexto profissional. Por conseguinte, a aplicação pode comportar-se de forma diferente consoante se o contexto é profissional ou pessoal.
 
 Por exemplo, o utilizador obtém um pedido de PIN ao aceder a dados de trabalho. Para a **aplicação Outlook**, é pedido ao utilizador um PIN ao iniciar a aplicação. Para a **aplicação OneDrive**, é pedido ao utilizador o pin quando escreve na conta profissional. Para o Microsoft **Word**, **PowerPoint** e **Excel**, é pedido o pin ao utilizador quando acede a documentos armazenados na localização empresarial do OneDrive para Empresas.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Gerir contas de utilizador no dispositivo
+##  Gerir contas de utilizador no dispositivo
+<a id="manage-user-accounts-on-the-device" class="xliff"></a>
 
 O Intune suporta a implementação de políticas de proteção de aplicações apenas numa conta de utilizador por dispositivo.
 
@@ -57,13 +61,16 @@ O Intune suporta a implementação de políticas de proteção de aplicações a
 Leia o seguinte cenário de exemplo para obter uma compreensão mais aprofundada de como são tratadas as várias contas de utilizador.
 
 O utilizador A trabalha para duas empresas — a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A conta que está associada à **Empresa X** obtém a política de proteção de aplicações, mas a conta que está associada à Empresa Y não. Se pretender que a conta de utilizador que está associada à Empresa Y seja gerida pelas políticas de proteção de aplicações, terá de remover a conta de utilizador que está associada à Empresa X.
-### <a name="add-a-second-account"></a>Adicionar uma segunda conta
-####  <a name="android"></a>Android
+### Adicionar uma segunda conta
+<a id="add-a-second-account" class="xliff"></a>
+####  Android
+<a id="android" class="xliff"></a>
 Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a informá-lo de que essa ação não é permitida, com instruções sobre como remover a conta existente e adicionar uma nova.  Para remover a conta existente, aceda a **Definições &gt;Geral &gt; Gestor de Aplicações &gt;Portal da Empresa.** Em seguida, escolha **Limpar Dados**.
 
 ![Captura de ecrã da mensagem de erro e instruções para remover a conta](./media/Android_SwitchUser.png)
 
-##  <a name="view-media-files-with-the-azure-information-protection-app"></a>Ver ficheiros de multimédia com a aplicação Azure Information Protection
+##  Ver ficheiros de multimédia com a aplicação Azure Information Protection
+<a id="view-media-files-with-the-azure-information-protection-app" class="xliff"></a>
 Para ver ficheiros AV, PDF e de imagem da empresa em dispositivos Android, utilize a [aplicação Azure Information Protection](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (anteriormente conhecida como aplicação de partilha Rights Management).
 
 Transfira esta aplicação a partir da Google Play store.  
@@ -80,5 +87,6 @@ São suportados os seguintes tipos de ficheiro:
 |----|----|
 |Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças do Azure Information Protection. Pode servir para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
 
-## <a name="next-steps"></a>Próximos passos
+## Próximos passos
+<a id="next-steps" class="xliff"></a>
 [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](end-user-mam-apps-ios.md)
