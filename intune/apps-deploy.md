@@ -1,12 +1,12 @@
 ---
-title: "Como atribuir aplicações a grupos | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: depois de adicionar uma aplicação ao Intune, deve atribuí-la a grupos de utilizadores ou dispositivos."
+title: "Como atribuir aplicações a grupos"
+titleSuffix: Intune on Azure
+description: "Depois de adicionar uma aplicação ao Intune, deve atribuí-la a grupos de utilizadores ou dispositivos.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicações a grupos com o Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Depois de adicionar uma aplicação ao Intune, vai querer disponibilizá-la para os utilizadores e os dispositivos. Para tal, basta atribuí-la.
+Depois de adicionar uma aplicação ao Intune, pode atribui-la a utilizadores e dispositivos.
 
 As aplicações podem ser atribuídas a dispositivos, independentemente de estes serem geridos pelo Intune. Utilize a tabela seguinte para compreender melhor as várias opções para atribuir as aplicações a utilizadores e a dispositivos:
 
@@ -40,38 +38,11 @@ As aplicações podem ser atribuídas a dispositivos, independentemente de estes
 |Atribuir aplicações como Disponíveis|Sim|Sim|
 |Atribuir aplicações como Obrigatórias|Sim|Não|
 |Desinstalar aplicações|Sim|Não|
-|Os utilizadores finais instalam as aplicações disponíveis a partir da aplicação do Portal da Empresa|Sim|Não|
+|Os utilizadores finais instalam as aplicações disponíveis a partir da aplicação Portal da Empresa|Sim|Não|
 |Os utilizadores finais instalam as aplicações disponíveis a partir do Portal da Empresa baseado na Web|Sim|Sim|
 
 > [!NOTE]
 > Atualmente, pode atribuir aplicações iOS e Android (tanto de linha empresarial como compradas na loja) a dispositivos que não estão inscritos no Intune.
-
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Alterações à forma como atribui aplicações a grupos na pré-visualização do Intune
-
-Na pré-visualização do Azure no Intune, deixará de utilizar os grupos do Intune para atribuir aplicações. Em vez disso, passará a utilizar os grupos de segurança do Azure Active Directory (Azure AD). Por este motivo, terá de saber mais sobre as alterações ao funcionamento de atribuição de aplicações, em particular nos casos em que atribuiu aplicações a grupos subordinados do Intune.
-O aspeto mais importante a ter em atenção é que o conceito de grupos subordinados não existe no Azure AD. No entanto, alguns grupos poderão conter os mesmos membros. Neste caso, o comportamento entre o Intune clássico e a pré-visualização do Azure no Intune é diferente. A tabela seguinte ilustra isso mesmo:
-
-||||||
-|-|-|-|-|-|
-|**Intune Clássico (antes da migração do inquilino)**|-|**Intune Azure (após a migração do inquilino estar concluída)**|-|**Mais informações**|
-|**Objetivo de atribuição de grupos principais**|**Objetivo de atribuição de grupos subordinados**|**Objetivo de atribuição resultante para os membros comuns de grupos principais e subordinados anteriores**|**Ação resultante do objetivo de atribuição para os membros do grupo principal**|-|
-|Disponível|Necessário|Necessário e Disponível|Disponível|O objetivo de implementação Necessário e Disponível significa que as aplicações atribuídas como necessárias também podem ser vistas na aplicação Portal da Empresa.
-|Não Aplicável|Disponível|Não Aplicável|Não Aplicável|Solução: remova o objetivo de atribuição “Não Aplicável” do grupo principal do Intune.
-|Necessário|Disponível|Necessário e Disponível|Necessário|-|
-|Necessário e Disponível<sup>1</sup>|Disponível|Necessário e Disponível|Necessário e Disponível|-|
-|Necessário|Não Aplicável|Necessário|Necessário|-|
-|Necessário e Disponível|Não Aplicável|Necessário e Disponível|Necessário e Disponível|-|
-|Necessário|Desinstalar|Necessário|Necessário|-|
-|Necessário e Disponível|Desinstalar|Necessário e Disponível|Necessário e Disponível|-|
-<sup>1</sup> Apenas para aplicações da loja iOS geridas. Quando as adiciona ao Intune e as atribui como Necessário, estas aplicações são criadas automaticamente com os objetivos Necessário e Disponível.
-
-Pode efetuar as seguintes ações de modo a evitar conflitos de atribuição:
-
-1.    Se tiver atribuído aplicações a grupos principais e subordinados relacionados do Intune anteriormente, pondere remover essas atribuições antes de iniciar a migração do inquilino.
-2.    Remova os grupos subordinados dos grupos principais e crie um novo grupo com os membros do grupo subordinado antigo. Em seguida, poderá criar uma nova atribuição de aplicações para este grupo.
-Notas: se o tipo de grupo principal anterior era "Todos os Utilizadores", terá de criar um novo grupo dinâmico que não inclua membros do grupo subordinado.
-Terá de efetuar as alterações necessárias aos grupos de utilizadores e dispositivos no [Portal do Azure](https://portal.azure.com/). O [Portal do Azure Clássico](https://manage.windowsazure.com/) só lhe permitirá efetuar alterações a grupos de utilizadores.
-
 
 ## <a name="how-to-assign-an-app"></a>Como atribuir uma aplicação
 
@@ -83,14 +54,57 @@ Terá de efetuar as alterações necessárias aos grupos de utilizadores e dispo
 3. No painel <*nome da aplicação*> – **Descrição geral**, escolha **Gerir** > **Atribuições**.
 4. Escolha **Selecionar Grupos** e, no painel **Selecionar grupos**, escolha os grupos do Azure AD aos quais pretende atribuir a aplicação.
 5. Para cada aplicação que escolher, selecione um **tipo de atribuição** para a aplicação em:
-    - **Disponível** – Os utilizadores instalam a aplicação a partir do site ou da aplicação do Portal da Empresa.
+    - **Disponível** – Os utilizadores instalam a aplicação a partir do site ou da aplicação Portal da Empresa.
     - **Não Aplicável** – A aplicação não é instalada nem apresentada no Portal da Empresa.
     - **Obrigatório** – A aplicação é instalada em dispositivos nos grupos selecionados.
     - **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.
-    - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. Veja a tabela acima para obter ajuda.
+    - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune.
 6. Assim que tiver terminado, escolha **Guardar**.
 
-A aplicação está agora atribuída ao grupo que escolheu.
+A aplicação está agora atribuída ao grupo que selecionou.
+
+## <a name="how-conflicts-between-app-intents-are-resolved"></a>Como são resolvidos conflitos entre objetivos de aplicações
+
+Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com objetivos diferentes. Nestes casos, utilize esta tabela para compreender o objetivo resultante.
+
+||||
+|-|-|-|
+|Objetivo do grupo 1|Objetivo do grupo 2|Objetivo resultante|
+|Utilizador – Necessário|Utilizador – Disponível|Necessário e Disponível|
+|Utilizador – Necessário|Utilizador – Não Disponível|Necessário|
+|Utilizador – Necessário|Utilizador – Desinstalar|Necessário|
+|Utilizador – Disponível|Utilizador – Não Disponível|Não disponível|
+|Utilizador – Disponível|Utilizador – Desinstalar|Desinstalar|
+|Utilizador – Não Disponível|Utilizador – Desinstalar|Desinstalar
+|Utilizador – Necessário|Dispositivo – Necessário|Ambos existem, o Gateway trata do objetivo Necessário 
+|Utilizador – Necessário|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Necessário 
+|Utilizador – Disponível|Dispositivo – Necessário|Ambos existem, o Gateway resolve o objetivo Necessário (Necessário e Disponível)
+|Utilizador – Disponível|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Disponível.<br>A aplicação é apresentada no Portal da Empresa.<br>Se a aplicação já estiver instalada (como aplicação necessária com o objetivo anterior), será desinstalada.<br>No entanto, se o utilizador clicar em Instalar a partir do portal da empresa e, em seguida, a aplicação for instalada e desinstalada, o objetivo não será cumprido.|
+|Utilizador – Não Disponível|Dispositivo – Necessário|Necessário|
+|Utilizador – Não Disponível|Dispositivo – Desinstalar|Desinstalar|
+|Utilizador – Desinstalar|Dispositivo – Necessário|Ambos existem, o Gateway resolve o objetivo Necessário|
+|Utilizador – Desinstalar|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Desinstalar|
+|Dispositivo – Necessário|Dispositivo – Desinstalar|Necessário|
+|Utilizador – Necessário e Disponível|Utilizador – Disponível|Necessário e Disponível|
+|Utilizador – Necessário e Disponível|Utilizador – Desinstalar|Necessário e Disponível|
+|Utilizador – Necessário e Disponível|Utilizador – Não Disponível|Necessário e Disponível|
+|Utilizador – Necessário e Disponível|Dispositivo – Necessário|Ambos existem, Necessário e Disponível
+|Utilizador – Necessário e Disponível|Dispositivo – Não Disponível|Necessário e Disponível|
+|Utilizador – Necessário e Disponível|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Necessário. Necessário + Disponível
+|Utilizador – Não Disponível|Dispositivo – Não Disponível|Não disponível|
+|Utilizador – Disponível|Dispositivo – Não Disponível|Disponível|
+|Utilizador – Necessário|Dispositivo – Não Disponível|Necessário|
+|Utilizador – Disponível sem inscrição|Utilizador – Necessário e Disponível|Necessário e Disponível
+|Utilizador – Disponível sem inscrição|Utilizador – Necessário|Necessário
+|Utilizador – Disponível sem inscrição|Utilizador – Não Disponível|Não disponível
+|Utilizador – Disponível sem inscrição|Utilizador – Disponível|Disponível|
+|Utilizador – Disponível sem inscrição|Dispositivo – Necessário|Necessário e Disponível sem inscrição|
+|Utilizador – Disponível sem inscrição|Dispositivo – Não Disponível|Disponível sem inscrição|
+|Utilizador – Disponível sem inscrição|Dispositivo – Desinstalar|Desinstalar e Disponível sem inscrição.<br>Se o utilizador não tiver instalado a aplicação a partir do portal da empresa, o objetivo Desinstalação será cumprido.<br>Se o utilizador instalar a aplicação a partir do portal da empresa, a instalação será priorizada em relação à desinstalação.|
+
+>[!NOTE]
+>Apenas para aplicações da loja iOS geridas: quando as adiciona ao Intune e as atribui como Necessário, estas aplicações são criadas automaticamente com os objetivos Necessário e Disponível.
+
+## <a name="next-steps"></a>Passos seguintes
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.
-

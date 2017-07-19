@@ -1,12 +1,12 @@
 ---
 title: "Definições de notificação de aplicações do Intune para dispositivos iOS"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba as definições que pode utilizar para controlar as notificações das aplicações nos dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Saiba quais são as definições que pode utilizar para controlar as notificações das aplicações nos dispositivos iOS.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,34 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c64167275a2628c6a3a4e899e00c25df4c10b06b
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 36a9e9a5be9b2dc45ded1a99c7a5871780f7d9b2
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>Definições de notificações de aplicações do Intune para dispositivos iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Permite-lhe configurar a forma como as aplicações instaladas num dispositivo enviam notificações. Esta definição suporta dispositivos supervisionados que executam o iOS 9.3 e posterior.
+Permite-lhe configurar a forma como as aplicações instaladas num dispositivo enviam notificações. Estas definições suportam dispositivos supervisionados com o iOS 9.3 e posterior.
 
 ## <a name="configure-settings"></a>Configurar definições
 
-1. No painel **Funcionalidades do dispositivo**, escolha **Notificações de Aplicações (apenas supervisionado)**.
+1. No painel Funcionalidades do dispositivo, selecione **Notificações de Aplicações (apenas supervisionado)**.
 2. No painel **Notificações de Aplicações**, escolha **Adicionar** e, em seguida, configure os seguintes valores:
     - **ID do pacote de aplicações** – introduza o **ID do Pacote de Aplicações** da aplicação que pretende configurar. Para obter ajuda, veja **Referência de ID do pacote para aplicações iOS incorporadas** mais adiante neste tópico.
-    - **Nome da aplicação** – introduza o nome da aplicação que pretende configurar. O nome não é apresentado no dispositivo e serve para o ajudar a identificar a aplicação na lista.
-    - **Publicador** – introduza o publicador da aplicação que pretende configurar. O nome não é apresentado no dispositivo e serve para o ajudar a identificar a aplicação na lista.
+    - **Nome da aplicação** – introduza o nome da aplicação que pretende configurar. Este nome não é apresentado no dispositivo e é utilizado para o ajudar a identificar a aplicação na lista.
+    - **Publicador** – introduza o publicador da aplicação que pretende configurar. O nome do publicador não é apresentado no dispositivo e é utilizado apenas para o ajudar a identificar a aplicação na lista.
     - **Notificações** – ative ou desative o envio de notificações da aplicação para o dispositivo. Se desativar esta definição, as seguintes definições também serão desativadas.
-        - **Mostrar na Central de Notificações** – ative para permitir que a aplicação mostre as notificações na Central de Notificações do dispositivo.
-        - **Mostrar no Ecrã de Bloqueio** – ative para ver as notificações da aplicação no ecrã de bloqueio do dispositivo.
+        - **Mostrar no Centro de Notificações** – ative esta definição para permitir que a aplicação mostre notificações no Centro de Notificações do dispositivo.
+        - **Mostrar no Ecrã de Bloqueio** – ative esta definição para ver as notificações da aplicação no ecrã de bloqueio do dispositivo.
         - **Tipo de alerta** – selecione o tipo de notificação que quer quando o dispositivo é desbloqueado em:
             - **Nenhum** – não são apresentadas notificações.
             - **Faixa** – é apresentada uma faixa brevemente a mostrar a notificação.
             - **Modal** – a notificação é apresentada e o utilizador tem de a dispensar manualmente para poder continuar a utilizar o dispositivo.
-        - **Destaque no ícone da aplicação** – ative esta opção para adicionar um destaque ao ícone da aplicação para indicar que a aplicação enviou uma notificação.
-        - **Sons** – ative para reproduzir um som quando uma notificação é entregue.
+        - **Distintivo no ícone da aplicação** – ative esta definição para adicionar um distintivo ao ícone da aplicação para indicar que a mesma enviou uma notificação.
+        - **Sons** – ative esta definição para reproduzir um som quando for recebida uma notificação.
 3. Continue a adicionar aplicações, conforme necessário. Quando terminar, escolha **OK**.
 4. Escolha **OK** até regressar ao painel **Criar Perfil** e, em seguida, escolha **Criar**. 
 
@@ -95,3 +92,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 |Wallet|com.apple.Passbook|
 |Watch|com.apple.Bridge|
 |Meteorologia|com.apple.weather|
+
+## <a name="next-steps"></a>Passos seguintes
+
+Agora pode atribuir o perfil do dispositivo aos grupos que selecionar. Para obter detalhes, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
