@@ -15,6 +15,7 @@
 ### [Ciclo de vida dos dispositivos](device-lifecycle.md)
 ### [Ciclo de vida das aplicações](app-lifecycle.md)
 ## [Cenários comuns](common-scenarios.md)
+## [Descrição do Serviço](microsoft-intune-service-description.md)
 ## [Problemas conhecidos](known-issues.md)
 ## [Obter suporte](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Inscrição do Windows](windows-enroll.md)
 #### [Inscrição em massa](windows-bulk-enroll.md)
 ### [Configurar a inscrição do Android](android-enroll.md)
-### Configurar a inscrição do iOS
-#### [Com Programa de Registo de Aparelho](device-enrollment-program-enroll-ios.md)
-#### [Com Gestor de Escola da Apple](apple-school-manager-set-up-ios.md)
-#### [Com o Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [Configurar a inscrição do iOS](ios-enroll.md)
+#### [Programa de inscrição de dispositivos](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Configurar a inscrição do Mac OS](macos-enroll.md)
 
 ## [Gerir dispositivos](device-management.md)
