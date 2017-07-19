@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
 > [!NOTE]
@@ -460,6 +457,17 @@ MAMTelemetryDisabled| Booleano| Especifica se o SDK não envia dados de telemetr
 > [!NOTE]
 > Se a sua aplicação for disponibilizada na App Store, a `MAMPolicyRequired` tem de ser definida como "NO", segundo as normas da App Store.
 
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Ativar a configuração de MAM direcionada para aplicações iOS
+A configuração de MAM direcionada permite que uma aplicação receba dados de configuração através do SDK da Aplicação Intune. O formato e as variantes destes dados têm de ser definidos e comunicados aos clientes do Intune pelo proprietário/programador da aplicação. Os administradores do Intune podem direcionar e implementar dados de configuração através da consola do Intune no Azure. A partir do SDK da Aplicação Intune para iOS (v 7.0.1), é possível fornecer dados de configuração de MAM direcionada às aplicações que participem na configuração de MAM direcionada através do serviço MAM. Os dados de configuração de aplicações são emitidos através do nosso Serviço de MAM diretamente para a aplicação em vez de através do canal de MDM. O SDK da Aplicação Intune fornece uma classe para aceder aos dados obtidos através destas consolas. Tenha em consideração os seguintes pré-requisitos: <br>
+* A aplicação tem de estar inscrita no MAM-WE antes de poder aceder à IU de configuração de MAM direcionada. Para obter mais informações sobre o MAM-WE, veja [Política de proteção de aplicações sem inscrição de dispositivos no guia do SDK da Aplicação Intune](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* Inclua ```IntuneMAMAppConfigManager.h``` no ficheiro de origem da sua aplicação.
+* Chame ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` para apresentar o Objeto Configuração da Aplicação.
+* Chame o seletor adequado no objeto ```IntuneMAMAppConfig```. Por exemplo, se a chave da aplicação for uma cadeia, é aconselhável utilizar ```stringValueForKey``` ou ```allStringsForKey```. O ficheiro ```IntuneMAMAppConfig.h header``` fala sobre devolver valores/condições de erro.
+
+Para obter mais informações sobre as capacidades da Graph API em relação aos valores de configuração de MAM direcionada, veja [Configuração de MAM Direcionada de Referência para Graph API](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no iOS, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar políticas de configuração da aplicação Microsoft Intune para iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+
 ## <a name="telemetry"></a>Telemetria
 
 Por predefinição, o SDK da Aplicação do Intune para iOS regista dados telemétricos dos seguintes eventos de utilização. Estes dados são enviados para o Microsoft Intune.
@@ -656,4 +664,3 @@ Tanto a biblioteca estática como as compilações de estrutura do SDK da Aplica
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     O primeiro comando retira as arquiteturas de simulador do ficheiro DYLIB da estrutura. O segundo comando copia o ficheiro DYLIB apenas para dispositivo de volta para o diretório da estrutura.
-

@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
 Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para efetuar a reposição. Pode utilizar o site do Portal da Empresa para gerir computadores e dispositivos que tenha inscrito no Intune e para realizar a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
 > [!NOTE]
-> É possível que não veja o botão **Repor Código de Acesso** no site do Portal da Empresa. Se não o vir, terá de contactar o seu administrador de TI para obter suporte através do site do Portal da Empresa.
+> É possível que não veja o botão Repor Código de Acesso no site do Portal da Empresa se utilizar um dispositivo da empresa inscrito. Se não vir o botão, terá de contactar o seu administrador de TI para que este reponha o código de acesso.
 
 Para repor o código de acesso:
 
-1.    No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
+1.  No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/intune/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
 
 2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo cujo código de acesso quer repor.
 
   ![Captura de ecrã a mostrar a página Os Meus Dispositivos, com alguns dispositivos não identificados, acima da faixa de aviso para inscrever dispositivos não listados ou identificar os dispositivos não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    O dispositivo será aberto numa janela de pop-up. Selecione o botão **Repor Código de Acesso**.
+3.  O dispositivo será aberto numa janela de pop-up. Selecione o botão **Repor Código de Acesso**.
 
     ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,7 +51,10 @@ Para repor o código de acesso:
 
   Diferentes dispositivos têm diferentes tipos de códigos de acesso.
 
-  **Android**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário
+  **Android**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário 
+  
+  > [!NOTE]
+  > Não pode repor o código de acesso para dispositivos com o Android 7.0 e versões posteriores. Caso se esqueça do código de acesso, terá de repor as definições de fábrica destes dispositivos.
 
   **iOS**: remove o código de acesso existente e não cria um código de acesso temporário. Se estiver a utilizar a deteção de impressão digital do Touch ID para abrir o dispositivo ou para fazer compras, terá de voltar a configurá-la.
 
@@ -70,4 +69,3 @@ Para repor o código de acesso:
 Para ver uma notificação a confirmar que a palavra-passe foi reposta com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
-

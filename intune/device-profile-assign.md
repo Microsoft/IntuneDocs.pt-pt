@@ -1,12 +1,12 @@
 ---
 title: Como atribuir perfis de dispositivos com o Intune
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: assim que tiver criado um perfil de dispositivo do Intune, utilize este tópico para saber como atribuí-lo a dispositivos."
+titleSuffix: Intune on Azure
+description: "Assim que tiver criado um perfil de dispositivo do Intune, utilize este tópico para saber como atribuí-lo a dispositivos.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +15,45 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41a76a5cd7589ac05a6ed138dd0e25fe2ae9ab76
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cf6bd6cb301491c031e382236eee509e17f08383
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/06/2017
 ---
-
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>Como atribuir perfis de dispositivo do Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
+## <a name="assign-a-device-profile"></a>Atribuir um perfil do dispositivo
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
 1. No painel **Configuração do dispositivo**, escolha **Gerir** > **Perfis**.
 2. No painel da lista de perfis, selecione o perfil que quer gerir e, em seguida, no painel <*nome do perfil*> **Relatórios**, selecione **Gerir** > **Atribuições**.
-3. No painel seguinte, clique em **Selecionar grupos** e, no painel **Selecionar grupos**, selecione os grupos do Azure AD aos quais pretende atribuir o perfil. Pode manter premida a tecla **CTRL** para selecionar vários grupos.
+3. No painel seguinte, selecione **Incluir** (para incluir grupos) ou **Excluir** (para excluir os grupos) e, em seguida, selecione **Selecionar grupos**.
+![Inclua e exclua grupos a partir de uma atribuição de perfis.](./media/group-include-exclude.png)
+4. No painel **Selecionar grupos**, selecione os grupos do Azure AD que pretende incluir ou excluir da atribuição. Pode manter premida a tecla **Ctrl** para selecionar vários grupos.
 4. Quando terminar, no painel **Selecionar grupos**, selecione **Selecionar**.
 
-### <a name="next-steps"></a>Passos seguintes
-Veja [Como monitorizar perfis de dispositivos](device-profile-monitor.md) para obter informações sobre como controlar as atribuições de perfis de dispositivos.
 
+
+## <a name="how-to-exclude-groups-from-a-device-profile-assignment"></a>Como excluir grupos de uma atribuição de perfis de dispositivo
+
+Os perfis de configuração de dispositivos do Intune permitem-lhe excluir grupos da atribuição de políticas. Por exemplo, pode atribuir um perfil do dispositivo ao grupo **Todos os utilizadores da empresa**e excluir membros do grupo **Equipa de Direção**.
+
+Ao excluir grupos de uma atribuição, exclua apenas grupos de utilizadores ou apenas grupos de dispositivos, não uma mistura de grupos. O Intune não tem em consideração a associação de utilizadores a dispositivos ao excluir grupos. Incluir grupos de utilizadores e excluir grupos de dispositivos provavelmente não produzirá os resultados de que precisa. Se utilizar grupos misturados ou se existirem outros conflitos, a inclusão terá prioridade sobre a exclusão.
+
+Por exemplo, suponha que pretende atribuir um perfil do dispositivo a todos os dispositivos na sua organização, exceto a dispositivos de local público. Deve incluir o grupo **Todos os Utilizadores** e excluir o grupo **Todos os Dispositivos**.
+
+Neste caso, a política será aplicada a todos os utilizadores e aos respetivos dispositivos, mesmo que esses dispositivos façam parte do grupo **Todos os Dispositivos**. 
+
+A exclusão só avalia os membros diretos dos grupos e não inclui os dispositivos associados a um utilizador. No entanto, os dispositivos que não estiverem associados a um utilizador não receberão a política, uma vez que não têm associação ao grupo **Todos os Utilizadores**. 
+
+Se incluir o grupo **Todos os Dispositivos** e excluir **Todos os Utilizadores**, todos os dispositivos irão receber a política. Neste caso, o objetivo é excluir desta política os dispositivos que tiverem um utilizador associado. No entanto, tal não acontece porque a funcionalidade de exclusão só compara membros diretos do grupo. 
+
+>[!Tip]
+>As exclusões não estão atualmente disponíveis para políticas de conformidade ou atribuições da aplicação. Para excluir membros de uma atribuição, pode utilizar os objetivos de atribuição Disponível e Não aplicável. Por exemplo, pode atribuir uma aplicação ao grupo **Todos os utilizadores da empresa** com o objetivo **Disponível** e ao grupo **Equipa de Direção** com o objetivo **Não aplicável**. A aplicação é atribuída a todos os utilizadores, *exceto* aos utilizadores no grupo **Equipa de Direção**. Se atribuir a aplicação ao grupo **Todos os utilizadores da empresa** com o objetivo **Necessário**, os utilizadores no grupo **Equipa de Direção** não serão excluídos.
+ 
+    
+## <a name="next-steps"></a>Passos seguintes
+Veja [Como monitorizar perfis de dispositivos](device-profile-monitor.md) para obter informações sobre como controlar as atribuições de perfis de dispositivos.

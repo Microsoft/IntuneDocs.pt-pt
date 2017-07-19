@@ -14,15 +14,12 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 030aa380a1491eb3be4fd8f480b0ddc9a7860448
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="intune-network-bandwidth-use"></a>Utilização de largura de banda de rede do Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -77,7 +74,7 @@ Os clientes Intune podem utilizar o BranchCache para reduzir o tráfego da rede 
 
 - Windows 7
 - Windows 8.0
-- Windows 8.1
+- Windows 8.1
 - Windows 10
 
 Para utilizar o BranchCache, o computador cliente tem de ter o BranchCache ativado e, em seguida, ser configurado para o **modo de cache distribuída**.
@@ -95,7 +92,7 @@ O Intune não utiliza uma infraestrutura no local, como servidores a executar so
 Para gerir computadores atrás de firewalls e de servidores proxy, tem de configurar as firewalls e os servidores proxy para permitirem comunicações com o Intune. Para gerir computadores atrás de um servidor proxy, tenha em conta o seguinte:
 
 -   O servidor proxy tem de suportar **HTTP (80)** e **HTTPS(443)**, porque os clientes do Intune utilizam ambos os protocolos
--   O Intune suporta servidores proxy não autenticados
+-   O Intune necessita de acesso não autenticado ao servidor proxy do site manage.microsoft.com para efetuar certas operações, tais como transferir software e atualizações
 
 Pode modificar as definições de servidor proxy em computadores cliente individuais ou pode utilizar as definições de Política de Grupo para alterar as definições de todos os computadores cliente atrás de um servidor proxy específico.
 
@@ -140,4 +137,17 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 |fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
-
+|fef.msua01.manage.microsoft.com|138.91.243.97|
+|fef.msua02.manage.microsoft.com|52.177.194.236|
+|fef.msua04.manage.microsoft.com|23.96.112.28|
+|fef.msua05.manage.microsoft.com|138.91.244.151|
+|fef.msua06.manage.microsoft.com|13.78.185.97|
+|fef.msua07.manage.microsoft.com|52.175.208.218|
+|fef.msub01.manage.microsoft.com|137.135.128.214|
+|fef.msub02.manage.microsoft.com|137.135.130.29|
+|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub05.manage.microsoft.com|23.97.166.52|
+|fef.msuc01.manage.microsoft.com|52.230.19.86|
+|fef.msuc02.manage.microsoft.com|23.98.66.118|
+|fef.msuc03.manage.microsoft.com|23.101.0.100|
+|fef.msuc05.manage.microsoft.com|52.230.16.180|

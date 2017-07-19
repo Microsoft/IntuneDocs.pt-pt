@@ -14,15 +14,12 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,7 +61,7 @@ Estas condições podem ser visualizadas para cada dispositivo no Portal de Gest
     
         -   Os dispositivos que se encontrarem neste estado necessitam que o utilizador defina um código de acesso de arranque seguro. O utilizador verá uma notificação de dispositivo da aplicação Portal da Empresa que pede para definir um código de acesso para o dispositivo. Depois de tocar na notificação de dispositivo e confirmar a palavra-passe ou PIN existente, selecione a opção **Require PIN to start device (Exigir PIN para iniciar o dispositivo)** no ecrã **Secure start-up (Arranque seguro)**. Em seguida, toque no botão **Check Compliance (Verificar Conformidade)** do dispositivo na aplicação Portal da Empresa. O dispositivo deverá ser detetado como encriptado agora.
     
-        -   Alguns fabricantes de dispositivos encriptam os seus dispositivos através de um PIN predefinido em vez do PIN secreto definido pelo utilizador. O Intune reconhece a encriptação de dispositivos com o PIN predefinido como não sendo segura, dado que este método de encriptação pode colocar os dados do dispositivo em risco de serem acedidos fisicamente por utilizadores mal intencionados. Se for este o problema, pondere utilizar [políticas de proteção de aplicações](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -   Alguns fabricantes de dispositivos encriptam os seus dispositivos através de um PIN predefinido em vez do PIN secreto definido pelo utilizador. O Intune reconhece a encriptação de dispositivos com o PIN predefinido como não sendo segura, dado que este método de encriptação pode colocar os dados do dispositivo em risco de serem acedidos fisicamente por utilizadores mal-intencionados. Se for este o problema, pondere utilizar [políticas de proteção de aplicações](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de políticas
 
@@ -127,7 +124,7 @@ Para ver que registos do Exchange Connector utilizam a [Ferramenta Visualizador 
 
 #### <a name="locating-sync-logs"></a>Localizar registos de sincronização
 
--    Localize uma sincronização completa nos registos ao procurar **full sync**. O início de uma sincronização completa estará marcada pelo seguinte texto:
+-    Localize uma sincronização completa nos registos ao procurar **full sync**. O início de uma sincronização completa estará marcado pelo seguinte texto:
 
     'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
 
@@ -148,24 +145,10 @@ Para ativar o registo verboso:
 2.  Localize o TraceSourceLine com a seguinte chave: OnPremisesExchangeConnectorService
 3.  Altere o valor do nó **SourceLevel** de **Warning ActivityTracing** (predefinição) para **Verbose ActivityTracing**, conforme mostrado abaixo.
 
-    <TraceSourceLine>
-          <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
-          <Value xsi:type="TraceSource">
-            <SourceLevel>All</SourceLevel>
-            <Listeners>
-              <Listener>
-                <ListenerType>CircularTraceListener</ListenerType>
-                <SourceLevel>Verbose ActivityTracing</SourceLevel>
-                <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes>
-                <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName>
-                <FileQuota>30</FileQuota>
-              </Listener>
-            </Listeners>
-          </Value>
+    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>Todos</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
     </TraceSourceLine>
 
 
 
 ### <a name="next-steps"></a>Passos seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

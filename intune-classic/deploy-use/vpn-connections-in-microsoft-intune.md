@@ -1,5 +1,5 @@
 ---
-title: "Ligações VPN | Documentos da Microsoft"
+title: "Ligações VPN"
 description: "Utilize Perfis de VPN para implementar definições da VPN em utilizadores e dispositivos na sua organização."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>Ligações VPN no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -116,7 +113,7 @@ Nome da definição  |Mais informações
 **Lista de servidores**     |Escolha **Adicionar** para adicionar um servidor VPN novo para utilizar na ligação da VPN. Também pode especificar o servidor predefinido da ligação. Esta opção só é apresentada se o tipo de ligação for **F5 Edge Client**.         
 **Enviar todo o tráfego de rede através da ligação VPN**     |Se selecionar esta opção, todo o tráfego de rede será enviado através da ligação VPN. Se não selecionar esta opção, o cliente negociará dinamicamente as rotas de divisão do túnel ao estabelecer a ligação com o servidor VPN de terceiros. Apenas as ligações à rede da empresa são enviadas através de um túnel VPN. Os túneis VPN não são utilizados ao ligar-se a recursos na Internet.
 **Método de autenticação**| Selecione o método de autenticação utilizado pela ligação VPN: **Certificados** ou **Nome de Utilizador e Palavra-passe**. (O **Nome de Utilizador e a Palavra-passe** não estarão disponíveis se o tipo de ligação for Cisco AnyConnect.) A opção **Método de autenticação** não está disponível para o Windows 8.1.
-**Memorizar as credenciais do utilizador sempre que iniciar sessão**|Selecione este opção para garantir que as credenciais do utilizador são memorizadas, para que o mesmo não tenha de introduzi-las sempre que for efetuada uma ligação.
+**Memorizar as credenciais do utilizador sempre que iniciar sessão**|Selecione esta opção para garantir que as credenciais do utilizador são memorizadas, para que o mesmo não tenha de introduzi-las sempre que for efetuada uma ligação.
 **Selecione um certificado de cliente para autenticação de cliente (Certificado de Identidade)**|Selecione o certificado SCEP de cliente criado anteriormente que será utilizado para autenticar a ligação VPN. Para mais informações sobre como utilizar perfis de certificado no Intune, veja [Proteger o acesso a recursos com perfis de certificado](secure-resource-access-with-certificate-profiles.md). Esta opção só é apresentada se o método de autenticação for **Certificados**.
 **Função**| Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure** ou **Citrix**.
 **Realm**|Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure ou Citrix. Esta opção só é apresentada se o tipo de ligação for **Pulse Secure** ou **Citrix**.
@@ -126,7 +123,7 @@ Nome da definição  |Mais informações
 **VPN a pedido**|Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores. As instruções para a configuração são fornecidas em [VPN a pedido para dispositivos iOS](#on-demand-vpn-for-ios-devices).
 **Detetar automaticamente as definições de proxy** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se pretende que os dispositivos detetem automaticamente as definições de ligação. Para mais informações, veja a documentação do Windows Server.
 **Utilizar um script de configuração automática** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se pretende utilizar um script de configuração automática para selecionar as definições e, em seguida, especifique um URL para o ficheiro com as mesmas. Para mais informações, veja a documentação do Windows Server.
-**Utilizar um servidor proxy** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione este opção e, em seguida, especifique o endereço e número de porta do servidor proxy. Para mais informações, veja a documentação do Windows Server.
+**Utilizar um servidor proxy** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção e, em seguida, especifique o endereço e número de porta do servidor proxy. Para mais informações, veja a documentação do Windows Server.
 **Ignorar as definições de proxy para endereços locais** (apenas em iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, veja a documentação do Windows Server.
 **XML Personalizado** (Windows 8.1 e posteriores e Windows Phone 8.1 e posteriores)|Especifique comandos XML personalizados que configuram a ligação VPN. Exemplo para **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Exemplo para **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Exemplo para **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Exemplo para **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Consulte a documentação de cada fabricante relativa à VPN para obter mais informações sobre como escrever comandos XML personalizados.
 **Lista de pesquisa de Sufixos DNS** (apenas no Windows Phone 8.1)|Especifique um sufixo DNS em cada linha. Cada sufixo DNS especificado será procurado ao ligar-se a um site com um nome abreviado. Por exemplo, especifique os sufixos DNS **dominio1.contoso.com** e **dominio2.contoso.com**, aceda ao URL **http://omeuwebsite** e os URLs **http://omeuwebsite.dominio1.contoso.com** e **http://omeuwebsite.dominio2.contoso.com** serão procurados.
@@ -168,9 +165,7 @@ Pode configurar a VPN a pedido para dispositivos iOS 8.0 e posteriores.
 3. Opcional: forneça uma pesquisa de cadeia de URL, que é um URL que a regra utiliza como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a VPN será estabelecida e ligará o dispositivo ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
 4. Escolha uma das seguintes ações:
   - **Ligar**
-  - **Avaliar ligação**, que tem três definições: a. **Ação de domínio** – escolha **Ligar caso seja necessário** ou **Nunca ligar**
-    ; b. **Lista de domínios separada por vírgulas** – configure esta opção apenas se escolher uma **Ação de domínio** em **Ligar caso seja necessário**
-     c. **Pesquisa de cadeia de URL necessária** – um URL de HTTP ou HTTPS (preferencial) como *https://vpntestprobe.contoso.com*. A regra verificará se existe uma resposta deste endereço. Caso contrário e se a **Ação de domínio** for **Ligar caso seja necessário**, será acionada a VPN.
+  - **Avaliar ligação**, que tem três definições: a. **Ação do domínio** – selecione **Ligar se necessário** ou **Nunca ligar** b. **Lista de domínios separada por vírgulas** – configure esta opção apenas se selecionar uma **Ação do domínio** em **Ligar se necessário** c. **Pesquisa de cadeia de URL necessária** – um URL de HTTP ou HTTPS (preferencial) como *https://vpntestprobe.contoso.com*. A regra verificará se existe uma resposta deste endereço. Caso contrário e se a **Ação de domínio** for **Ligar caso seja necessário**, será acionada a VPN.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ As regras específicas do domínio são avaliadas antes das regras de todos os d
 Após uma implementação efetuada com êxito, os utilizadores verão o nome da ligação VPN especificado na lista de ligações VPN nos respetivos dispositivos.
 
 Um resumo do estado e alertas na página **Overview** da área de trabalho **Policy** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
-

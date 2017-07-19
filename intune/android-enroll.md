@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>metadados necessários
-
-título: Inscrever dispositivos Android no Intune titleSuffix: Descrição "Pré-visualização do Azure no Intune": "Pré-visualização do Azure no Intune: saiba como inscrever dispositivos Android na pré-visualização do Azure no Intune".
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>metadados opcionais
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audiência:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: Inscrever dispositivos Android no Intune
+titleSuffix: Intune on Azure
+description: Saiba como inscrever dispositivos Android no Intune."
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Enquanto administrador do Intune, este permite-lhe gerir dispositivos Android, incluindo dispositivos Samsung Knox Standard. Também pode gerir o perfil de trabalho nos [dispositivos Android for Work](#enable-enrollment-of-android-for-work-devices).
 
@@ -25,15 +31,13 @@ Os dispositivos com o Samsung KNOX Standard são suportados para gestão de vár
 
 ## <a name="prerequisite"></a>Pré-requisito
 
-Tem de definir a autoridade de MDM **Microsoft Intune** para se preparar para gerir dispositivos móveis. Veja [Set the MDM authority (Definir a autoridade de MDM)](mdm-authority-set.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para gestão de dispositivos móveis, pelo que é provável que já o tenha feito.
+Tem de definir a autoridade de MDM **Microsoft Intune** para se preparar para gerir dispositivos móveis. Veja [Set the MDM authority (Definir a autoridade de MDM)](mdm-authority-set.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
 
 ## <a name="set-up-android-enrollment"></a>Configurar inscrição do Android
 
 Por predefinição, o Intune permite a inscrição de dispositivos Android e Samsung Knox Standard.
 
-Para impedir a inscrição de dispositivos Android ou apenas de dispositivos Android pessoais, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-Para definir o máximo de dispositivos que um utilizador pode inscrever, veja [Set device limit restrictions (Definir restrições de limite de dispositivos)](enrollment-restrictions-set.md#set-device-limit-restrictions).
+Para impedir a inscrição de dispositivos Android ou apenas de dispositivos Android pessoais, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](enrollment-restrictions-set.md).
 
 Para ativar a gestão de dispositivos, os seus utilizadores têm de inscrever os dispositivos deles ao transferir a aplicação Portal da Empresa do Intune disponível no Google Play e, em seguida, ao abrir a aplicação e seguir as instruções de inscrição. Assim que os dispositivos Android estiverem geridos, pode [atribuir políticas de conformidade](compliance-policy-create-android.md), [gerir aplicações](app-management.md) e mais.
 
@@ -47,7 +51,7 @@ Para ativar a gestão de perfis de trabalho em dispositivos que [suportam Androi
 Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](mdm-authority-set.md) como **Microsoft Intune**.
 
 2. **Configurar o enlace do Android for Work**<br>
-    Como um administrador do Intune, no Portal do Azure, escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+    Como administrador do Intune, no Portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
     1. No painel **Intune**, escolha **Inscrição de dispositivos**, > **Inscrição de Android for Work** e clique em **Configurar** para abrir o site do Android for Work do Google Play. Esta ação irá abrir um novo separador no seu browser.
   ![Captura de ecrã que mostra uma ligação ao enlace Configurar o Android for Work](./media/android-work-bind.png)
@@ -78,7 +82,7 @@ Também poderá enviar-lhes uma ligação para os passos de inscrição online: 
 
 Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
 
-- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](end-user-educate.md)
 - [Utilizar o dispositivo Android com o Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Anular o enlace da conta administrativa do Android for Work
@@ -88,7 +92,7 @@ Pode desativar a gestão e inscrição do Android for Work. Ao clicar em **Unbin
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Como anular o enlace de uma conta Android for Work
 
 1. **Anular o enlace do Android for Work**<br>
-    No Portal do Azure, escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.  No painel **Intune**, escolha **Inscrição de dispositivos**, > **Inscrição do Android for Work** e, em seguida, **Anular o enlace**.
+    Como administrador do Intune, no Portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.  No painel **Intune**, escolha **Inscrição de dispositivos**, > **Inscrição do Android for Work** e, em seguida, **Anular o enlace**.
 
 2. **Concorde com a eliminação do enlace do Android for Work**<br>
   Clique em **Sim** para eliminar o enlace e anular a inscrição de todos os dispositivos Android for Work do Intune.

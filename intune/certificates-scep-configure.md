@@ -1,12 +1,12 @@
 ---
 title: Configurar e gerir certificados SCEP com o Intune
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como configurar a sua infraestrutura e, em seguida, criar e atribuir perfis de certificado SCEP no Intune."
+titleSuffix: Intune on Azure
+description: Saiba como configurar a sua infraestrutura e, em seguida, criar e atribuir perfis de certificado SCEP no Intune."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurar e gerir certificados SCEP com o Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Este tópico mostra como configurar a sua infraestrutura e, em seguida, criar e atribuir perfis de certificado SCEP (Simple Certificate Enrollment Protocol) com o Intune.
 
@@ -34,7 +33,7 @@ Este tópico mostra como configurar a sua infraestrutura e, em seguida, criar e 
 -  **Autoridade de Certificação** (AC): uma Autoridade de Certificação (AC) Empresarial que seja executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter mais detalhes, veja [Instalar a Autoridade de Certificação](http://technet.microsoft.com/library/jj125375.aspx).
     Se a sua AC for executada no Windows Server 2008 R2, tem de [instalar a correção de KB2483564](http://support.microsoft.com/kb/2483564/).
 
--  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Consulte a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede.
+-  **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede.
 O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: utilize o portal do Intune para transferir o instalador do **Certificate Connector** (**ndesconnectorssetup.exe**). Em seguida, pode executar **ndesconnectorssetup.exe** no computador onde pretende instalar o Certificate Connector. 
@@ -45,7 +44,7 @@ O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode
  > [!NOTE]           
 > -    O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Além disso, o servidor que aloja o WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos, e tem de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
-    Para obter informações sobre certificados para o WAP, consulte a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Para obter informações sobre certificados para o WAP, veja a secção **Planear os certificados** do artigo [Planear a Publicação de Aplicações Através do Proxy de Aplicações Web](https://technet.microsoft.com/library/dn383650.aspx). Para obter informações gerais sobre os servidores WAP, veja [Trabalhar com o Proxy da Aplicação Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### <a name="network-requirements"></a>Requisitos de rede
 
@@ -84,9 +83,13 @@ Antes de poder configurar perfis de certificado, tem de concluir as seguintes ta
 
 **Passo 5**: Ativar, instalar e configurar o Intune Certificate Connector
 
+> [!NOTE]
+> Devido a um problema conhecido, transfira, instale e configure o Certificate Connector através do procedimento seguinte: [configurar a infraestrutura de certificados para SCEP -> configurar a sua infraestrutura -> tarefa 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>Passo 1 – Criar uma conta do serviço do NDES
 
-Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Irá especificar esta conta quando configurar os modelos na AC emissora antes de instalar e configurar o NDES. Certifique-se de que o utilizador tem os direitos predefinidos para **Iniciar Sessão Local**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
+Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Irá especificar esta conta quando configurar os modelos na AC emissora antes de instalar e configurar o NDES. Verifique se o utilizador tem os direitos predefinidos para **Iniciar Sessão Localmente**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2 – Configurar modelos de certificado na autoridade de certificação
 Nesta tarefa irá:
@@ -100,6 +103,9 @@ Nesta tarefa irá:
 1.  Inicie sessão como administrador da empresa.
 
 2.  Na AC emissora, utilize o snap-in Modelos de Certificado para criar um novo modelo personalizado ou copie um modelo existente, em seguida, edite um modelo existente (como o Modelo de Utilizador) para utilizar com o NDES.
+
+    >[!NOTE]
+    > O modelo de certificado NDES tem de se basear num Modelo de Certificado v2 (com a compatibilidade do Windows 2003).
 
     O modelo tem de ter as seguintes configurações:
 
@@ -304,7 +310,7 @@ Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Para ativar o suporte do Certificate Connector
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configurar dispositivos**.
 4. No painel **Configuração do Dispositivo**, escolha **Autoridade de Certificação**.
 5.  Selecione **Ativar Certificate Connector**.
@@ -312,10 +318,10 @@ Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Para transferir, instalar e configurar o Certificate Connector
 
 > [!NOTE]
-> Devido a um problema conhecido, transfira, instale e configure o certificate connector através do procedimento seguinte: [configurar a infraestrutura de certificados para SCEP -> configurar a sua infraestrutura -> tarefa 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Devido a um problema conhecido, transfira, instale e configure o Certificate Connector através do procedimento seguinte: [configurar a infraestrutura de certificados para SCEP -> configurar a sua infraestrutura -> tarefa 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configurar dispositivos**.
 4. No painel **Configuração do Dispositivo**, escolha **Autoridade de Certificação**.
 5. Selecione **Transferir o Certificate Connector**.
@@ -377,6 +383,8 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
         - **Nome comum**
         - **Nome comum, incluindo o e-mail**
         - **Nome comum como e-mail**
+        - **Personalizado** – Quando seleciona esta opção, é apresentado outro campo pendente. Pode utilizar esse campo para inserir um formato de nome de requerente personalizado. As duas variáveis suportadas pelo formato personalizado são **Nome Comum (CN)** e **E-mail (E)**. Através de uma combinação de uma ou muitas destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como este: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. Neste exemplo, criou um formato de nome de requerente que, além das variáveis CN e E, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. [Este tópico](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) mostra a função **CertStrToName** e as cadeias suportadas dela.
+        
     - **Nome alternativo do requerente** – Especifique o modo como o Intune cria automaticamente os valores para o nome alternativo do requerente (SAN) no pedido de certificado. Por exemplo, se tiver selecionado um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se o certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, tem de definir o nome alternativo do requerente com o UPN. 
     - **Utilização de chave** – Especifique as opções de utilização de chave para este certificado. Pode selecionar de entre as seguintes opções: 
         - **Cifragem de chaves:** permita a troca de chaves apenas quando a chave for encriptada. 
@@ -392,10 +400,6 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
 O perfil será criado e é apresentado no painel da lista de perfis.
 
->[!Note]
-> Apenas para dispositivos iOS: em Formato de nome do Requerente, selecione Personalizado para introduzir um formato de nome do requerente personalizado.
-> As duas variáveis atualmente suportadas pelo formato personalizado são **Nome Comum (CN)** e **E-mail (E)**. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como este: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. Neste exemplo, criou um formato de nome de requerente que, além das variáveis CN e E, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. [Este tópico](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) mostra a função **CertStrToName** e as cadeias suportadas dela.
-
 ## <a name="how-to-assign-the-certificate-profile"></a>Como atribuir o perfil de certificado
 
 Antes de atribuir perfis de certificado a grupos, considere o seguinte:
@@ -407,5 +411,4 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 - Apesar de atribuir cada perfil separadamente, também terá de atribuir a AC de Raiz Confiável e o perfil SCEP ou PKCS. Caso contrário, a política de certificados SCEP ou PKCS falhará.
 
 Para obter informações sobre como atribuir perfis, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
-
 

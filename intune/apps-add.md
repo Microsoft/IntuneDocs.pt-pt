@@ -1,12 +1,12 @@
 ---
-title: "Como adicionar aplicações ao Microsoft Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: estes procedimentos ajudam-no a preparar as suas aplicações no Intune para serem atribuídas a utilizadores e dispositivos. "
+title: "Como adicionar aplicações ao Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Estes procedimentos ajudam-no a preparar as suas aplicações no Intune para serem atribuídas a utilizadores e dispositivos. \""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36cafd2b943ab1dd5045a8ed1fe1fcf1b28af385
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar uma aplicação ao Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Para poder gerir e atribuir aplicações aos utilizadores, tem de adicioná-las ao Intune. O Intune suporta uma vasta gama de tipos de aplicações diferentes, pelo que as opções podem ser diferentes consoante o tipo.
 
@@ -67,7 +65,7 @@ Requisitos de espaço de armazenamento na cloud:
 
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>Como criar e editar categorias para as aplicações
 
-As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as aplicações de modo a serem mais fáceis de encontrar por parte dos utilizadores finais no portal da empresa. Pode atribuir uma ou mais categorias a uma aplicação, por exemplo, **Aplicações de programador** ou **Aplicações de comunicação**.
+As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as aplicações de modo a serem mais fáceis de encontrar por parte dos utilizadores no portal da empresa. Pode atribuir uma ou mais categorias a uma aplicação, por exemplo, **Aplicações de programador** ou **Aplicações de comunicação**.
 Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a categoria que quiser. Utilize os tópicos das plataformas específicas para adicionar uma aplicação e atribuir categorias. Para criar e editar as suas próprias categorias, utilize o seguinte procedimento:
 
 1. Inicie sessão no portal do Azure.
