@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Ativar a inscrição de dispositivos Android for Work
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -60,8 +57,7 @@ Pode desativar a gestão e inscrição do Android for Work. Ao clicar em **Unbin
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Como anular o enlace de uma conta Android for Work
 
 1. **Anular o enlace do Android for Work**<br>
-    Enquanto utilizador administrativo, abra a [consola de administração do Microsoft Intune](https://manage.microsoft.com), aceda a **Admin** &gt; **Mobile Device Management** &gt; **Android for Work**e clique em **Unbind**.
+    Enquanto utilizador administrativo, abra a [consola de administração do Microsoft Intune](https://manage.microsoft.com), aceda a **Administração** &gt; **Gestão de Dispositivos Móveis** &gt; **Android for Work** e clique em **Anular enlace**.
 
 2. **Concorde com a eliminação do enlace do Android for Work**<br>
   Clique em **Sim** para eliminar o enlace e anular a inscrição de todos os dispositivos Android for Work do Intune.
-

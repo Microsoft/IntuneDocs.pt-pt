@@ -1,7 +1,7 @@
 ---
 title: "Adicionar números de série do Apple Configurator"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: saiba como adicionar números de série em dispositivos iOS pertencentes à empresa com o Apple Configurator."
+titleSuffix: Intune on Azure
+description: "Saiba como adicionar números de série em dispositivos iOS pertencentes à empresa com o Apple Configurator.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Adicionar números de série do Apple Configurator
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Utilize estes passos para adicionar números de série ao Intune quando pretende [inscrever dispositivos iOS da empresa ao utilizar o Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md). Pode adicionar números de série individualmente ou carregar um ficheiro de valores separados por vírgulas (CSV) de números de série. Depois de adicionar os números de série, pode atribuir-lhes um perfil. O perfil contém as definições de gestão específicas que quer aplicar aos dispositivos.
 
@@ -37,7 +34,7 @@ Para obter outros métodos para inscrever dispositivos iOS estão descritos em [
 1. Crie uma lista de valores de duas colunas, separados por vírgulas (.csv) sem cabeçalho. Adicione o identificador IMEI na coluna da esquerda e os detalhes na coluna da direita. O máximo atual para a lista é de 500 linhas. Num editor de texto, a lista .csv tem um aspeto semelhante ao seguinte:
 
     F7TLWCLBX196,detalhes do serviço</br>
-   DLXQPCWVGHMJ,detalhes do dispositivo
+    DLXQPCWVGHMJ,detalhes do dispositivo
 
 2. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
@@ -76,4 +73,3 @@ Os números de série do dispositivo podem ter um de dois estados:
 **Para ver o estado de um número de série**
 
 No painel **Números de Série do Apple Configurator**, selecione o número de série cujo estado quer ver e procure no item **Estado**.
-

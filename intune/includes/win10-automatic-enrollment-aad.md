@@ -34,6 +34,9 @@ A inscrição automática permite aos utilizadores inscreverem os dispositivos W
     - **URL de Deteção de MDM**
     - **URL de Conformidade de MDM**
 
+    > [!IMPORTANT]
+    > Se um utilizador for membro de um grupo que tenha a MAM e a inscrição de MDM automática ativadas e tentar associar o respetivo dispositivo pessoal à área de trabalho, só a MAM será ativada. 
+
 6. Selecione **Guardar**.
 
 Por predefinição, a autenticação de dois fatores não está ativada para o serviço. No entanto, é recomendada a autenticação de dois fatores ao registar um dispositivo. Para exigir a autenticação de dois fatores para este serviço, tem de configurar um fornecedor de autenticação de dois fatores no Azure Active Directory e configurar as contas de utilizador para a autenticação multifator. Veja [Introdução ao Servidor Multi-Factor Authentication do Microsoft Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

@@ -1,12 +1,12 @@
 ---
-title: "Problemas conhecidos na Pré-visualização do Microsoft Intune"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: leia sobre os problemas conhecidos na pré-visualização"
+title: Problemas conhecidos no Microsoft Intune no Azure
+titleSuffix: Intune on Azure
+description: Leia sobre os problemas conhecidos no Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,51 +15,116 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36b35e5311f6262c545a266003fb72b2febb277c
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="known-issues-in-the-microsoft-intune-preview"></a>Problemas conhecidos na pré-visualização do Microsoft Intune
-
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
 
-Utilize este tópico para saber mais sobre os problemas conhecidos na pré-visualização do Intune.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Se quiser comunicar um erro que não se encontra listado aqui, [abra um pedido de suporte](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 
-Se quiser pedir uma nova funcionalidade para adicionar ao Intune, considere o preenchimento de um relatório no nosso site [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Utilize este tópico para saber mais sobre os problemas conhecidos no Microsoft Intune.
+
+Se quiser comunicar um erro que não se encontra listado aqui, [abra um pedido de suporte](get-support.md).
+
+Se quiser pedir uma nova funcionalidade para o Intune, considere o preenchimento de um relatório no nosso site [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+
+## <a name="migration"></a>Migração
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Os grupos criados pelo Intune durante a migração podem afetar o funcionamento de outros produtos da Microsoft
 
-Quando migra do Intune clássico para o Portal do Azure, poderá ver um novo grupo com o nome **Todos os Utilizadores – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Tenha em atenção que este grupo contém todos os utilizadores do Azure Active Directory, não apenas os utilizadores licenciados do Intune. Este facto pode provocar problemas com outros produtos Microsoft se estiver à espera que alguns dos utilizadores existentes ou novos não sejam membros de nenhum dos grupos.
+Quando migra do Intune clássico para o Azure, poderá ver um novo grupo com o nome **Todos os Utilizadores – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contém todos os utilizadores do Azure Active Directory, não apenas os utilizadores licenciados do Intune. Esta utilização pode provocar problemas com outros produtos Microsoft se estiver à espera que alguns dos utilizadores existentes ou novos não sejam membros de nenhum dos grupos.
 
-### <a name="altering-groups-created-by-intune-during-migration-will-delay-migration"></a>A alteração dos grupos criados pelo Intune durante a migração atrasa a migração
+### <a name="secondary-migration-required-for-select-capabilities"></a>Migração secundária necessária para capacidades selecionadas
 
-Durante a preparação para a migração, os grupos são copiados do Intune para o Azure AD. Todas as outras alterações que fizer no portal do Intune clássico serão atualizadas no grupo do Azure AD. No entanto, as alterações feitas no Azure AD não serão sincronizadas de volta na consola do Intune clássico. Este facto pode fazer com que a migração para o portal do Azure falhe e provoque atrasos na migração.
+As contas do Intune criadas antes de janeiro de 2017 devem ser migradas antes destas capacidades poderem ser utilizadas no portal do Azure:
 
-### <a name="compliance-policies-from-intune-will-not-show-up-in-new-console"></a>As políticas de conformidade do Intune não aparecem na consola nova
+- Perfis de Inscrição de Dispositivos Empresariais
+- Programa de Inscrição de Dispositivos da Apple
+- Dispositivos empresariais pré-inscritos por grupo de número de série do iOS
+- Gestores de Inscrição de Dispositivos
+- Apple Volume Purchase Program
 
-As políticas de conformidade que criou no portal do Intune clássico são migradas, mas não são apresentadas no portal do Azure. O facto deve-se à alteração da estrutura no portal do Azure. As políticas de conformidade que criou no portal do Intune clássico ainda são impostas, mas tem de vê-las e editá-las no portal clássico.
-Além disso, as novas políticas de conformidade que criar no portal do Azure não serão visíveis no portal clássico.
+Uma vez que estas capacidades não podem ser geridas no Silverlight clássico e nas consolas do Azure, a migração:
+- Desativa-as na consola clássica
+- Ativa-as na consola do Azure.  
+
+Se agora pode gerir estas funcionalidades do Intune no portal do Azure, tenha em atenção os seguintes pontos:
+
+#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Remove perfis predefinidos de Inscrição de Dispositivos Empresariais no DEP da Apple
+O Portal do Azure não suporta um perfil predefinido de Inscrição de Dispositivos Empresariais para dispositivos do Programa de Inscrição de Dispositivos (DEP) da Apple. Esta funcionalidade, disponível na consola clássica do Intune no Silverlight, é descontinuada para evitar a atribuição inadvertida de perfis. Quando os números de série de DEP são sincronizados no Portal do Azure, não é atribuído nenhum perfil de Inscrição de Dispositivos Empresariais. Um perfil de inscrição deve ser atribuído antes de utilizar o dispositivo.
+
+#### <a name="apple-dep-token-restored-with-migration"></a>Token do DEP da Apple restaurado com a migração
+
+Se eliminar um token do Programa de Inscrição de Dispositivos da Apple no portal clássico do Intune (Silverlight) e não carregar um novo token para o portal do Azure, o token original será restaurado no portal do Azure quando migrar. Para remover este token e impedir a inscrição do DEP, elimine o token no portal do Azure.
+
+### <a name="status-blades-for-migrated-policies-do-not-work"></a>Os painéis de estado de políticas migradas não funcionam
+
+Não pode ver as informações de estado de políticas que foram migradas do portal clássico no portal do Azure. No entanto, pode continuar a ver relatórios dessas políticas no Portal clássico.
+Para ver as informações de estado de políticas de configuração migradas, recrie as mesmas no portal do Azure.
+
+## <a name="apps"></a>Aplicações
+
+### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>As aplicações para iOS compradas em volume só estão disponíveis no idioma predefinido do inquilino do Intune
+As aplicações para iOS compradas em volume são apresentadas e só podem ser atribuídas para os mesmos indicativos de país que a sua conta do Intune. O Intune só sincroniza aplicações da mesma região do iTunes que o indicativo de país da conta do inquilino do Intune. Por exemplo, se comprar uma aplicação que só está disponível na loja dos E.U.A., mas a sua conta estiver em alemão, o Intune não irá mostrar essa aplicação.
+
+### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>São carregadas múltiplas cópias do mesmo programa para iOS comprado em volume
+Não clique no botão **Carregar** múltiplas vezes para o mesmo token VPP. Isto irá resultar no carregamento de tokens VPP duplicados e as aplicações irão sincronizar múltiplas vezes para o mesmo token VPP. 
+
+<!-- ## Groups -->
+
+## <a name="device-configuration"></a>Configuração do dispositivo
+
+### <a name="you-cannot-save-a-windows-information-protection-policy-for-some-devices"></a>Não pode guardar uma política do Windows Information Protection para alguns dispositivos
+
+Para dispositivos não inscritos com o Intune, apenas pode especificar um domínio primário no campo **Identificar Empresa** nas definições de uma política do Windows Information Protection.
+Se adicionar domínios adicionais (através de **Definições avançadas** > **Perímetro da rede** > **Adicionar um domínio protegido**), não poderá guardar a política. A mensagem de erro apresentada será alterada em breve para ser mais precisa.
+
+### <a name="cisco-anyconnect-vpn-client-support"></a>Suporte do cliente VPN do Cisco AnyConnect
+ 
+O lançamento mais recente do cliente VPN do Cisco AnyConnect (4.0.07072) não é atualmente compatível com o Intune. Uma atualização do Intune futura irá incluir compatibilidade com esta versão do cliente VPN. Até lá, recomendamos que não atualize o cliente VPN do Cisco AnyConnect e que continue a utilizar a versão existente.
+
+### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Utilizar o tipo de palavra-passe numérica com dispositivos Mac OS Sierra
+
+Atualmente, se selecionar o **Tipo de palavra-passe necessária** **Numérica** num perfil de restrição de dispositivos para dispositivos Mac OS Sierra, aquela é imposta como **Alfanumérica**. Se pretender utilizar uma palavra-passe numérica com esses dispositivos, não configure esta definição.
+Este problema pode ser corrigido numa versão futura do Mac OS.
+
+Para obter mais informações sobre estas definições, veja [Definições de restrição de dispositivos macOS no Microsoft Intune](device-restrictions-macos.md).
+
+## <a name="compliance"></a>Conformidade
+
+### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>As políticas de conformidade do Intune não aparecem na consola nova
+
+As políticas de conformidade que criou no portal clássico são migradas, mas não são apresentadas no portal do Azure devido a alterações de estrutura do portal do Azure. As políticas de conformidade que criou no portal do Intune clássico ainda são impostas, mas tem de vê-las e editá-las no portal clássico do Intune.
+Além disso, as novas políticas de conformidade que criar no portal do Azure não são visíveis no portal clássico do Intune.
+
 Para obter mais informações, veja [O que é a conformidade do dispositivo](device-compliance.md).
 
+<!-- ## Enrollment -->
+
+
+<!-- ## Data protection -->
+
+
+## <a name="administration-and-accounts"></a>Administração e contas
+
+Os Administradores Globais (também designados por Administradores Inquilinos) podem continuar a realizar tarefas diárias de administração sem uma licença separada do Intune ou do Enterprise Mobility Suite (EMS). No entanto, para utilizar o serviço, como, por exemplo, para inscrever os seus próprios dispositivos, um dispositivo da empresa ou utilizar o Portal da Empresa do Intune, precisam de uma licença do Intune ou do EMS.
+
+<!-- ## Additional items -->
 
 
 
-### <a name="administration-and-accounts"></a>Administração e contas
 
-Os Administradores Globais (também designados por Administradores Inquilinos) podem continuar a realizar tarefas diárias de administração sem uma licença separada do Intune ou do Enterprise Mobility Suite (EMS). No entanto, se os Administradores Globais pretenderem utilizar o serviço, como, por exemplo, para inscrever os seus próprios dispositivos, um dispositivo da empresa ou utilizar o Portal da Empresa do Intune, precisarão de uma licença do Intune ou do EMS como qualquer outro utilizador.
 
-### <a name="apple-enrollment-profile-migration"></a>Migração de perfis de inscrição da Apple
-Nos próximos meses, o Intune vai ativar a gestão de inscrições do Apple Configurator e do Programa de Inscrição de Dispositivos Apple através do novo Portal do Azure. Se eliminar o token do Programa de Inscrição de Dispositivos da Apple e não carregar um token atualizado, o token original será restaurado no novo Portal do Azure como parte da migração da sua conta do Intune. Para remover este token e impedir a inscrição do DEP, basta eliminar o token no Portal do Azure. 
 
-### <a name="rbac-for-apple-corporate-owned-device-enrollment"></a>RBAC para a inscrição de dispositivos pertencentes à empresa da Apple
-As funções de Inquilino ou Administrador de Serviço Intune do Azure AD são necessárias para realizar tarefas de inscrição de DEP da Apple e do Configurador da Apple, apesar de as permissões RBAC estarem listadas e disponíveis na função de Utilizador personalizada. O suporte da função RBAC para estas funcionalidades será comunicado no futuro.
 
+
+
+
+
+
+ 

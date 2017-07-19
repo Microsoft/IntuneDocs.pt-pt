@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: pt-pt
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Ativar a inscrição de dispositivos móveis
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Para configurar a gestão de dispositivos móveis com o Intune, primeiro, tem de
 
 ## <a name="enable-device-enrollment"></a>Ativar a inscrição de dispositivos
 
-1. **Tornar o Intune a autoridade de gestão de dispositivos móveis**
-    Na [consola de administração do Intune](https://manage.microsoft.com/), escolha **Administração** > **Gestão de Dispositivos Móveis** e escolha **Definir Autoridade MDM**, em **Tarefas**.  
+1. **Tornar o Intune a autoridade de gestão de dispositivos móveis** Na [consola de administração do Intune](https://manage.microsoft.com/), selecione **Administração** > **Gestão de Dispositivos Móveis** e, em seguida, selecione **Definir Autoridade MDM** em **Tarefas**.  
 
 2. Escolha **Sim** na caixa de diálogo Autoridade de MDM.
 
@@ -52,7 +48,7 @@ A inscrição tem de estar ativada para dispositivos iOS, Mac e Android for Work
 Ative a gestão de dispositivos na plataforma de dispositivos que pretende gerir. Dependendo da sua plataforma, são necessários requisitos diferentes:
 
 - [iOS e macOS](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Window 10 e Windows Phone](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Windows 10 e Windows Phone](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 - [PC com Windows](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) (cliente de software do Intune)
 - [Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
 
@@ -60,7 +56,7 @@ Depois de a inscrição estar ativada, os utilizadores podem transferir a aplica
 
 ### <a name="enable-company-owned-device-enrollment"></a>Ativar a inscrição de dispositivos pertencentes à empresa
 Também pode ativar uma variedade de cenários de [inscrição de dispositivos pertencentes à empresa](/intune-classic/deploy-use/manage-corporate-owned-devices), incluindo:
-- [Programa de Registo de Aparelho da Apple](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Programa de Inscrição de Dispositivos da Apple](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Inscrição do Assistente de Configuração do Apple Configurator](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 - [Inscrição direta no Apple Configurator](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Gestor de Inscrição de Dispositivos](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
@@ -70,4 +66,3 @@ Parabéns! Acabou de concluir o último passo do *Guia de introdução do Intune
 
 >[!div class="step-by-step"]
 >[&larr;**Inscrever dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Tarefas de pós-configuração**&rarr;](.\post-configuration-tasks.md)  
-

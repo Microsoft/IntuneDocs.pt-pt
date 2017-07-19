@@ -1,7 +1,7 @@
 ---
 title: "Criar e atribuir a política de acesso condicional do Exchange no local"
-titleSuffix: Intune Azure preview
-description: "Pré-visualização do Azure no Intune: como pode configurar o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune"
+titleSuffix: Intune on Azure
+description: Como pode configurar o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: pt-pt
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Como criar e atribuir uma política de acesso condicional do Exchange no local e do Exchange Online Dedicado legado no Microsoft Intune
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Como criar e atribuir uma política de acesso condicional do Exchange no local e do Exchange Online Dedicado legado na pré-visualização do Azure no Microsoft Intune
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Este tópico explica-lhe o processo de configuração do acesso condicional para o Exchange no local com base na conformidade do dispositivo.
 
@@ -85,7 +82,7 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 4. Escolha **Intune**, será apresentado o **Dashboard do Intune**.
 
-5.  Escolha **Acesso Condicional**.
+5. Selecione **Acesso no Local** e, em seguida, selecione
 
 6. O painel **No local** mostra o estado da política de acesso condicional e os dispositivos que são afetados pelo mesmo.
 
@@ -93,14 +90,14 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 8. No painel **Acesso ao Exchange no local**, escolha **Sim** para ativar o controlo de acesso ao Exchange no local.
 
-      > [!NOTE]
-      > Se não tiver configurado o conector no local do Exchange Active Sync, esta opção estará desativada.  Primeiro tem de instalar e configurar este conector antes de ativar o acesso condicional do Exchange no local. Para obter mais detalhes, veja [Instalar o Exchange Connector no Local do Intune](exchange-connector-install.md)
+    > [!NOTE]
+    > Se não tiver configurado o conector no local do Exchange Active Sync, esta opção estará desativada.  Primeiro tem de instalar e configurar este conector antes de ativar o acesso condicional do Exchange no local. Para obter mais detalhes, veja [Instalar o Exchange Connector no Local do Intune](exchange-connector-install.md)
 
 9. Em **Atribuição**, selecione **Grupos Incluídos**.  Utilize o grupo de utilizadores de segurança ao qual deve ser aplicado o acesso condicional. Esta ação requer que os utilizadores inscrevam os dispositivos no Intune e que estejam em conformidade com os perfis de conformidade.
 
 10. Se quiser excluir um determinado grupo de utilizadores, poderá fazê-lo ao escolher **Grupos Excluídos** e selecionar um grupo de utilizadores que pretende que fique isento da obrigatoriedade de inscrição e conformidade dos dispositivos.
 
-11. Em **Definições**, escolha **Notificações do utilizador** para modificar a mensagem de e-mail predefinida. Esta mensagem será enviada aos utilizadores se eles quiserem aceder ao Exchange no local mas o dispositivo deles não estiver em conformidade. O modelo de mensagem utiliza Linguagem de markup.  Também verá a pré-visualização do aspeto da mensagem à medida que escreve.
+11. Em **Definições**, escolha **Notificações do utilizador** para modificar a mensagem de e-mail predefinida. Esta mensagem será enviada aos utilizadores se eles quiserem aceder ao Exchange no local, mas o dispositivo deles não estiver em conformidade. O modelo de mensagem utiliza Linguagem de markup.  Também verá a pré-visualização do aspeto da mensagem à medida que escreve.
     > [!TIP]
     > Para saber mais sobre a Linguagem de markup, veja este [artigo](https://en.wikipedia.org/wiki/Markup_language) da Wikipédia.
 
@@ -114,12 +111,12 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 15. No painel **No local**, clique em **Guardar** para guardar a política de acesso condicional.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Criar políticas de Acesso condicional do Azure AD na pré-visualização do Azure no Intune
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Criar políticas de Acesso condicional do Azure AD no Intune
 
-A partir da versão 1704 do Intune, os administradores podem criar políticas de acesso condicional do Azure AD a partir da pré-visualização do Azure no Intune, o que é útil, uma vez que não precisa de alternar entre as cargas de trabalho do Azure e o Intune.
+A partir da versão 1704 do Intune, os administradores podem criar políticas de acesso condicional do Azure AD a partir do Intune no portal do Azure, o que é útil, uma vez que não precisa de alternar entre as cargas de trabalho do Azure e o Intune.
 
 > [!IMPORTANT]
-> Tem de ter uma licença do Azure AD Premium para criar políticas de acesso condicional do Azure AD a partir do portal de pré-visualização do Azure no Intune.
+> Tem de ter uma licença do Azure AD Premium para criar políticas de acesso condicional do Azure AD a partir do Intune no portal do Azure.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Para criar uma política de acesso condicional do Azure AD
 
