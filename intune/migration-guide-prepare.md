@@ -1,6 +1,6 @@
 ---
 title: "Preparar o Intune para a gestão de dispositivos móveis"
-description: "O objetivo deste artigo é ajudar os leitores a avaliarem os seus requisitos técnicos e empresariais antes de migrarem para o Intune."
+description: "Avalie os requisitos técnicos e empresariais antes de migrar para o Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,28 +13,25 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 65e3bb4b6a4e6e8dcfa1dd16738ae47758f4fb9b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Intune para a gestão de dispositivos móveis (MDM)
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos e, em seguida, pode começar a tratar das questões da secção [Avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements).
+Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos. Em seguida, pode começar a abordar as questões na secção [Avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements).
 
 ## <a name="assess-mdm-requirements"></a>Avaliar requisitos de MDM
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>Que tipos de dispositivos precisa de gerir?
 
--   Que [plataformas](/intune-classic/get-started/supported-mobile-devices-and-computers) precisa de suportar?
+-   Que [plataformas](supported-devices-browsers.md) precisa de suportar?
 
--   Os dispositivos que precisa de suportar são empresariais ou BYOD?
+-   Os dispositivos que precisa suportar são dispositivos pessoais ou da empresa?
 
--   Que tipo de conetividade é utilizada? Wi-Fi, rede móvel, VPN?
+-   Que tipo de conectividade utiliza? Wi-Fi, rede móvel, VPN?
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>O que é que os seus utilizadores precisam de fazer em dispositivos geridos?
 
@@ -48,10 +45,9 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
 
 -   Quantos utilizadores irão utilizar um único dispositivo?
 
--   Que Termos de Utilização precisa?
+-   Que termos de utilização precisa?
 
     -   Envolva o departamento jurídico neste aspeto desde o início.
-
     -   Qual é a localização necessária?
 
 -   Os utilizadores estão familiarizados com a tecnologia e a TI em geral?
@@ -60,30 +56,23 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
 
 -   Precisa de encriptação ao nível do dispositivo?
 
--   Quais são os comprimentos de código de acsesso/PIN do dispositivo?
+-   Quais são os comprimentos do código de acesso/PIN do seu dispositivo atual?
 
--   Precisa de desativar funcionalidades do dispositivo ou restringir determinados comportamentos do dispositivo?
+-   Precisa de desativar funcionalidades do dispositivo ou restringir determinados comportamentos do dispositivo? Pode controlar várias definições específicas da plataforma com perfis de configuração de dispositivos, por exemplo:
+      - Desativar a câmara
+      - Bloquear no modo de aplicação única<br/>
 
-    -   Pode controlar uma variedade de definições específicas da plataforma com perfis de configuração de dispositivos, por exemplo: Desativar a câmara, Bloquear no modo de aplicação única.
-<br></br>
--   Que tipos de autenticação tem de suportar?
-
-    -   Se precisar de uma autenticação baseada em certificados, que tipos de certificados têm de ser aprovisionados?
-
-        -   O Intune pode aprovisionar certificados com perfis de acesso a recursos para os dispositivos inscritos.
-<br></br>
+-   Que tipos de autenticação tem de suportar? Se precisar de uma autenticação baseada em certificados, que tipos de certificados têm de ser aprovisionados?
+  - O Intune pode aprovisionar certificados com perfis de acesso a recursos para os dispositivos inscritos.
     -   Que tipo de Infraestrutura de Chaves Públicas (PKI) precisa de suportar?
 <br></br>
 -   Precisa de suportar a Rede Privada Virtual (VPN) ao nível do dispositivo ou da aplicação?
 
     -   O Intune pode aprovisionar configurações de VPN para fornecedores de VPN de terceiros.
-<br></br>
--   Podem ser feitas exceções temporárias para determinados requisitos para evitar o período de indisponibilidade? Ou os dispositivos com acesso cumprem sempre todos os requisitos de segurança?
+<br/><br/>
+-   Podem ser feitas exceções temporárias para determinados requisitos de forma a evitar períodos de inatividade? Ou os dispositivos com acesso cumprem sempre todos os requisitos de segurança?
 
-## <a name="additional-information"></a>Informações adicionais
+## <a name="next-steps"></a>Passos seguintes
+Leia estes [casos práticos](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores da indústria diferentes para ver como as organizações avaliaram os respetivos requisitos para a gestão de dispositivos móveis.
 
--   Para obter exemplos mais detalhados, reveja estes [casos práticos](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores da indústria diferentes para ver como as organizações avaliaram os respetivos requisitos para a gestão de dispositivos móveis.
-
-## <a name="next-steps"></a>Próximos passos
-
-[Configuração Básica](migration-guide-setup.md)
+Reveja a [configuração básica do Intune](migration-guide-setup.md).

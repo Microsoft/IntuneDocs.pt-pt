@@ -14,11 +14,11 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c503539679ec0b3e0326048743b9fd64eaa4a99b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 68b02a52dce49db470b11cbdf32308a74688ca45
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Como os utilizadores de dispositivos Windows obtêm as aplicações
 
@@ -35,5 +35,5 @@ Utilize estas informações para saber como e onde é que os seus utilizadores p
 **Aplicações não geridas** podem ser geridas através de políticas e não foram encapsuladas pelo Intune ou não incorporam o SDK de MAM do Intune. Não é possível aplicar políticas de aplicação a estas aplicações.
 
 ### <a name="see-also"></a>Consulte também
-[Como os utilizadores de dispositivos Android obtêm as aplicações](end-user-apps-android.md)</br>
+[Como os utilizadores de dispositivos Android obtêm as aplicações](end-user-apps-android.md)
 [Como os utilizadores de dispositivos iOS obtêm as aplicações](end-user-apps-android.md)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android for Work no Microsoft Intune
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>Palavra-passe do perfil de trabalho
 - **Exigir Palavra-passe do Perfil de Trabalho** – (Android 7.0 e superior com o perfil de trabalho ativado) Defina uma política de código de acesso que se aplique apenas às aplicações no perfil de trabalho. Por predefinição, o utilizador final tem a opção de utilizar os dois PINs definidos separadamente ou pode optar por combinar os dois PINs definidos no mais forte dos dois.
 - **Comprimento mínimo da palavra-passe:** introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter (**4**-**16**)
-- **Minutos máximos de inatividade até ao bloqueio do ecrã** – selecione a quantidade de tempo antes de um dispositivo inativo exigir a um utilizador a reintrodução da palavra-passe do perfil de trabalho para executar uma aplicação no perfil de trabalho.
+- **Máximo de minutos de inatividade até o ecrã ser bloqueado** – selecione a quantidade de tempo antes de o perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
 - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de o perfil de trabalho do dispositivo ser eliminado.
 - **Expiração da palavra-passe (dias)** – introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**).
 - **Tipo de palavra-passe obrigatório** –selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **Impedir a reutilização de palavras-passe anteriores** –introduza o número de novas palavras-passe que têm de ter sido utilizadas antes de poder ser reutilizada uma antiga (**1**-**24**).
 - **Desbloqueio por impressão digital** –impede um utilizador final de utilizar a deteção de impressão digital do dispositivo para o desbloquear.
 - **Smart Lock e outros agentes de fidedignidade** – permite-lhe controlar a funcionalidade Smart Lock em dispositivos compatíveis. Esta capacidade de telefone, por vezes conhecida como agente de fidedignidade, permitirá desativar ou ignorar a palavra-passe de ecrã de bloqueio do dispositivo se o dispositivo estiver numa localização fidedigna (por exemplo, quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC). Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.
+
+## <a name="next-steps"></a>Passos seguintes
+
+Utilize as informações no tópico [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para guardar e atribuir o perfil a utilizadores e dispositivos.
