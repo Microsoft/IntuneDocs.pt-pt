@@ -1,6 +1,6 @@
 ---
 title: "Promover a adoção por parte de utilizadores finais de unidades com acesso condicional"
-description: "O objetivo deste artigo é proporcionar informações sobre como tirar partido do acesso condicional para promover a inscrição no Intune."
+description: "Este artigo fornece informações sobre como utilizar o acesso condicional para promover a inscrição no Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7a9c3bef955239ad653a9ca45c55c533be36c5ce
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="drive-end-user-adoption-with-conditional-access"></a>Promover a adoção por parte de utilizadores finais de unidades com acesso condicional
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 A ativação de funcionalidades de acesso condicional com o Intune, tais como bloquear o e-mail para dispositivos cuja inscrição foi anulada, pode ajudar a promover a inscrição e a conformidade, mas não é obrigatória para que a migração seja concluída com êxito. Os requisitos de segurança e os objetivos de adoção da migração devem determinar a taxa de êxito.
 
@@ -48,16 +45,16 @@ Apresentamos a seguir uma abordagem típica para melhorar uma campanha de migra�
 
 -   Os utilizadores da solução anterior podem potencialmente aceder aos recursos através de dispositivos não geridos até que o acesso condicional seja ativado para esses utilizadores.
 
-> [!TIP]
-> Esta é uma abordagem entre muitas. Pode escolher um processo mais simples que difere todo o acesso condicional até todas as fases terem tido instrução para se inscreverem ou um processo mais rigoroso que impõe o acesso condicional desde o início e exige a conformidade total para todo o acesso.
 
--   Saiba mais sobre o [acesso condicional](/intune/conditional-access).
+Esta é uma abordagem entre muitas. Pode escolher um processo mais simples que difere todo o acesso condicional até todas as fases terem tido instrução para se inscreverem ou um processo mais rigoroso que impõe o acesso condicional desde o início e exige a conformidade total para todo o acesso.
+
+-   Saiba mais sobre o [acesso condicional](conditional-access.md).
 
 ## <a name="task-list-for-conditional-access"></a>Lista de tarefas do acesso condicional
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarefa 1: Decidir como irá implementar o acesso condicional
 
-[Formas comuns de utilizar o acesso condicional](/intune/conditional-access-intune-common-ways-use).
+[Formas comuns de utilizar o acesso condicional](conditional-access-intune-common-ways-use.md).
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>Tarefa 2: Configurar o acesso condicional do Intune
 
@@ -65,14 +62,14 @@ Escolha uma das seguintes opções:
 
 -   [Configurar o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Instalar o conector do Exchange no local com o Intune](/intune/exchange-connector-install)
+-   [Instalar o conector do Exchange no local com o Intune](exchange-connector-install.md)
 
--   [Definir políticas de acesso condicional com base nas aplicações para Exchange Online](/intune/app-based-conditional-access-intune-exchange-online-create)
+-   [Definir políticas de acesso condicional com base nas aplicações para Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Definir políticas de acesso condicional com base nas aplicações para o SharePoint Online](/intune/app-based-conditional-access-intune-sharepoint-online-create)
+-   [Definir políticas de acesso condicional com base nas aplicações para o SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Bloquear aplicações que não utilizam autenticação moderna (ADAL)](/intune/app-modern-authentication-block)
+-   [Bloquear aplicações que não utilizam autenticação moderna (ADAL)](app-modern-authentication-block.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
-[Ciclo de migração típico](migration-guide-cycle.md)
+Saiba mais sobre o [ciclo de migração típico](migration-guide-cycle.md).

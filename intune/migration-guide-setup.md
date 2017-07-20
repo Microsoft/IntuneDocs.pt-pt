@@ -1,6 +1,6 @@
 ---
 title: "Configuração básica do Intune"
-description: "O objetivo deste artigo é apresentar os passos necessários para configurar o Microsoft Intune."
+description: "Este artigo fornece os passos necessários para configurar o Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>Configuração básica
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Depois de avaliar o seu ambiente, está na altura de configurar o Intune.
 
@@ -30,32 +27,30 @@ Depois de avaliar o seu ambiente, está na altura de configurar o Intune.
 
 ### <a name="identity"></a>Identidade
 
-O Intune precisa do Azure Active Directory (AAD) como o fornecedor de identidades e de agrupamentos de utilizadores.
+O Intune precisa do Azure Active Directory (AAD) como o fornecedor de identidades e de agrupamentos de utilizadores. Saiba mais sobre:
 
--   Saiba mais sobre os [requisitos de identidade](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+-  [Requisitos de identidade](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   Saiba mais sobre os [requisitos da sincronização de diretórios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+-   [Requisitos da sincronização de diretórios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   Saiba mais sobre os [requisitos de autenticação multifator](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+-   [Requisitos da autenticação multifator (MFA)](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   Saiba mais sobre como [planear os seus grupos de utilizadores e de dispositivos](/intune/users-permissions-add).
+-   [Planear os grupos de utilizadores e de dispositivos](users-add.md)
 
--   Saiba [como criar grupos de utilizadores e dispositivos](/intune/groups-get-started).
+-   [Como criar grupos de utilizadores e dispositivos](groups-get-started.md)
 
-Se a sua organização já utiliza o Office 365, é importante que o Intune utilize o mesmo ambiente do Azure Active Directory.
+Se a sua organização já estiver a utilizar o Office 365, o Intune terá de utilizar o mesmo ambiente do Azure Active Directory.
 
 ### <a name="pki-optional"></a>PKI (opcional)
 
-Se estiver a planear utilizar a autenticação baseada em certificados para perfis de e-mail, VPN ou Wi-Fi com o Intune, terá de confirmar se tem uma [infraestrutura PKI suportada](/intune/certificates-configure), pronta para criar e implementar perfis de certificados.
+Se estiver a planear utilizar a autenticação baseada em certificados para perfis de e-mail, VPN ou Wi-Fi com o Intune, terá de confirmar se tem uma [infraestrutura PKI suportada](certificates-configure.md), pronta para criar e implementar perfis de certificados. Saiba mais sobre a configuração de certificados no Intune:
 
-Seguem-se mais informações sobre a configuração de certificados no Intune.
-
--   [Como configurar a infraestrutura de certificados para o SCEP](/intune/certificates-scep-configure).
+-   [Como configurar a infraestrutura de certificados para o SCEP](/intune/certificates-scep-configure)
 
 -   [Como configurar a infraestrutura de certificados para o PFX](/intune/certficates-pfx-configure).
 
 
-## <a name="task-list-for-an-intune-setup"></a>Lista de tarefas para uma Configuração do Intune
+## <a name="task-list-for-an-intune-setup"></a>Lista de tarefas para uma configuração do Intune
 
 ### <a name="task-1-intune-subscription"></a>Tarefa 1: Subscrição do Intune
 
@@ -75,15 +70,15 @@ Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir a autoridade MDM para o Intune
 
-O Intune pode ser gerido através do portal do Azure ou da consola do Configuration Manager Current Branch. A menos que precise de integrar o Intune com uma implementação do Configuration Manager Current Branch, recomenda-se a gestão do Intune a partir de [Portal do Azure](https://portal.azure.com).
+O Intune pode ser gerido através do portal do Azure ou da consola do Configuration Manager Current Branch. A menos que precise de integrar o Intune com uma implementação do Configuration Manager Current Branch, recomendamos que faça a gestão do Intune a partir do [Portal do Azure](https://portal.azure.com).
 
-Defina a autoridade MDM para o **Intune** para ativar o Portal do Azure no Intune. A utilização de uma autoridade MDM diferente permite ao Intune transferir a gestão de MDM para consolas de gestão da Microsoft alternativas. Estes casos são pouco comuns.
+Defina a autoridade MDM para o **Intune**, de modo a ativar o portal do Azure no Intune. A utilização de uma autoridade MDM diferente permite ao Intune transferir a gestão de MDM para consolas de gestão da Microsoft alternativas. Estes casos são pouco comuns.
 
 > [!IMPORTANT]
 > Se estiver a transferir a gestão de dispositivos móveis para o Intune pela primeira vez, deverá definir a autoridade MDM para o Intune.
 
--   Saiba [como definir a autoridade de gestão móvel](/intune/mdm-authority-set).
+Saiba [como definir a autoridade de gestão móvel](mdm-authority-set.md).
 
 ## <a name="next-step"></a>Passo seguinte
 
-[Configurar políticas de gestão de aplicações e dispositivos](migration-guide-configure-policies.md)
+Configurar [políticas de gestão de aplicações e dispositivos](migration-guide-configure-policies.md).
