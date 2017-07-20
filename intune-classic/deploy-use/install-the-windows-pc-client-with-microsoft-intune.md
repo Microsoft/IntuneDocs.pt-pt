@@ -4,7 +4,7 @@ description: "Utilize este guia para ajudá-lo a gerir os PCs Windows através d
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
 
@@ -32,6 +32,8 @@ Os PCs Windows podem ser inscritos instalando o software de cliente do Intune. O
 O software de cliente do Intune contém o software mínimo necessário para inscrever o PC na gestão do Intune. Após um PC ter sido inscrito, o software de cliente do Intune transfere todo o software de cliente necessário para efetuar a gestão de PCs.
 
 Esta série de transferências reduz o impacto sobre a largura de banda da rede e minimiza o tempo necessário para efetuar a inscrição inicial do PC no Intune. Também garante que, após a conclusão da segunda transferência, o cliente tem o software mais recente disponível.
+
+Uma licença do Intune permite a instalação do software de cliente do Intune em até cinco PCs.
 
 ## <a name="download-the-intune-client-software"></a>Transferir o software de cliente do Intune
 
@@ -257,6 +259,6 @@ O processo de anulação da inscrição não remove a pasta OnlineManagement. Ag
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
     ```
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 [Gerir PCs Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Resolver problemas da configuração do cliente](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

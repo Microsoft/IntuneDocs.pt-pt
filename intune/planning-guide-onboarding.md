@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,23 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ade7caf544d71c062c0fa251d7a113facb700a36
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="intune-implementation"></a>Implementação do Intune
+# <a name="implement-your-intune-plan"></a>Implementar o plano do Intune
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Durante a fase de integração, implementará o Intune no seu ambiente de produção. O processo de implementação consistirá na configuração do Intune e das dependências externas (caso seja necessário) com base nos seus [requisitos de casos de utilização](planning-guide-requirements.md) que foram revistos nas secções anteriores deste guia.
+Durante a fase de integração, implementará o Intune no seu ambiente de produção. O processo de implementação consiste na configuração do Intune e das dependências externas (se for necessário) com base nos seus [requisitos de casos de utilização](planning-guide-requirements.md).
 
 A secção seguinte fornece uma descrição geral do processo de implementação do Intune, que inclui requisitos e tarefas de alto nível.
 
->[!TIP]
-> Para mais informações sobre o processo de implementação do Intune, consulte [Recursos adicionais](planning-guide-resources.md).
-
 ## <a name="intune-requirements"></a>Requisitos do Intune
 
-Os principais requisitos do Intune autónomo encontram-se indicados abaixo:
+Os principais requisitos do Intune autónomo são:
 
--   Subscrição do Intune/EMS
+-   Subscrição do Intune/Enterprise Mobility + Security (EMS)
 
 -   Subscrição do Office 365 (para aplicações do Office e aplicações geridas pela política de MAM)
 
@@ -43,100 +38,103 @@ Os principais requisitos do Intune autónomo encontram-se indicados abaixo:
 
 -   Azure AD Connect (para a sincronização de diretórios)
 
--   Conector no Local do Intune para o Exchange (para a AC para o Exchange no Local caso seja necessário)
+-   Conector do Intune no Local para o Exchange (para o acesso condicional ao Exchange no Local, caso seja necessário)
 
 -   Intune Certificate Connector (para a implementação do certificado de SCEP, caso seja necessário)
 
 >[!TIP]
-> Encontrará mais informações sobre os requisitos da versão autónoma do Intune [aqui](/intune/supported-devices-browsers).
+> Veja a lista de [dispositivos suportados](supported-devices-browsers.md) para obter uma lista completa de dispositivos que pode gerir com o Intune.
 
 ## <a name="intune-implementation-process"></a>Processo de implementação do Intune
 
-### <a name="overview-of-implementation-tasks"></a>Descrição geral das tarefas de implementação
+Identificámos 13 tarefas distintas para o processo de implementação do Intune. Consoante os seus requisitos empresariais, infraestruturas existentes e estratégia de gestão de dispositivos, algumas destas tarefas já poderão estar concluídas. Outras tarefas podem não se aplicar ao seu plano.
 
-Eis uma descrição geral de cada tarefa inerente ao processo de implementação do Intune.
+### <a name="task-1-get-an-intune-subscription"></a>Tarefa 1: obter uma subscrição do Intune
 
-#### <a name="task-1-add-intune-subscription"></a>Tarefa 1: adicionar uma subscrição do Intune
-
-Conforme indicado na secção de requisitos acima, é necessária uma subscrição do Intune ou do EMS. Se a sua organização não tiver uma subscrição do Intune ou do EMS, contacte a Microsoft ou a sua equipa da conta Microsoft para a informar de que pretende comprar o Enterprise Mobility + Security (EMS) ou o Intune.
+Conforme indicado na secção de requisitos do Intune acima, precisa de uma subscrição do Intune ou do EMS. Se a sua organização não tiver uma, contacte a Microsoft ou a sua equipa da conta Microsoft para a informar de que pretende comprar o Enterprise Mobility + Security (EMS) ou o Intune.
 
 -   Saiba mais sobre [como pode comprar o Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
-#### <a name="task-2-add-office-365-subscription"></a>Tarefa 2: adicionar a subscrição do Office 365
+### <a name="task-2-add-office-365-subscription"></a>Tarefa 2: adicionar a subscrição do Office 365
 
-Este passo é opcional. Conforme indicado na secção de requisitos acima, se planeia utilizar o Exchange Online e gerir aplicações móveis do Office com a política de MAM, precisa de ter uma subscrição do Office 365. Se a sua organização não tiver uma subscrição do Office 365, contacte a Microsoft ou a sua equipa da conta Microsoft para a informar de que pretende comprar o Office 365.
+Este passo é opcional. Precisa de uma subscrição do Office 365 se planear utilizar o Exchange Online e gerir as aplicações do Office para dispositivos móveis com as políticas de proteção de aplicações. Se a sua organização não tiver uma subscrição do Office 365, contacte a Microsoft ou a sua equipa da conta Microsoft para a informar de que pretende comprar o Office 365.
 
 -   Saiba mais sobre [como pode comprar o Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
 
-#### <a name="task-3-add-users-groups-in-azure-ad"></a>Tarefa 3: adicionar grupos de utilizadores no Azure AD
+### <a name="task-3-add-users-groups-in-azure-ad"></a>Tarefa 3: adicionar grupos de utilizadores no Azure AD
 
-Poderá ter de adicionar grupos de segurança ou de utilizadores no AD ou no AAD com base nos seus cenários e requisitos de casos de utilização de implementação do Intune. Deve rever os seus grupos de segurança e de utilizadores atuais no Active Directory ou no Azure Active Directory e determinar se vão totalmente ao encontro das suas necessidades. Normalmente, os novos grupos de segurança e de utilizadores são adicionados no Active Directory e sincronizados para o Azure Active Directory através do Azure AD Directory Connect.
+Poderá ser necessário adicionar utilizadores ou grupos de segurança no Active Directory ou no Azure Active Directory com base nos seus cenários de casos de utilização e requisitos da implementação do Intune. Reveja os seus grupos de segurança e de utilizadores atuais no Active Directory ou no Azure Active Directory e determine se correspondem totalmente às suas necessidades. Quando adiciona novos grupos de segurança e de utilizadores, recomendamos que os adicione no Active Directory e sincronize com o Azure Active Directory através do Azure AD Connect.
+
 
 -   Saiba mais sobre [como pode adicionar utilizadores/grupos no Intune](users-permissions-add.md).
+<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
 
-#### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarefa 4: atribuir licenças de utilizador do Intune e do Office 365
 
-Todos os utilizadores que serão visados para a implementação do Office 365 e do EMS/Intune têm de ter uma licença que lhes foi atribuída. Pode realizar-se a atribuição de licenças do Office 365 e do EMS/Intune no portal do centro de administração do Office 365.
+
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarefa 4: atribuir licenças de utilizador do Intune e do Office 365
+
+Todos os utilizadores que visar para a implementação do Office 365 e do EMS/Intune têm de ter uma licença atribuída. Pode atribuir licenças do Office 365 e do EMS/Intune no Portal do Centro de Administração do Office 365.
 
 -   Saiba mais sobre [como atribuir licenças do Intune](licenses-assign.md).
 
-#### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tarefa 5: definir o Intune como a Autoridade de Gestão de Dispositivos Móveis
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tarefa 5: definir o Intune como a autoridade de gestão de dispositivos móveis
 
-Para poder configurar, gerir e inscrever dispositivos através do Intune, tem de definir o Intune como a Autoridade de Gestão de Dispositivos. A definição da Autoridade de Gestão de Dispositivos é concluída na área de trabalho Administração do Portal de Administração do Intune.
+Para poder configurar, gerir e inscrever dispositivos através do Intune, tem de definir o Intune como a autoridade de gestão de dispositivos.
 
--   Saiba mais sobre [como definir a Autoridade de Gestão de Dispositivos](/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
+-   Saiba mais sobre [como definir a autoridade de gestão de dispositivos](mdm-authority-set.md).
 
-#### <a name="task-6-enable-device-platforms"></a>Tarefa 6: ativar as plataformas de dispositivos
+### <a name="task-6-enable-device-platforms"></a>Tarefa 6: ativar as plataformas de dispositivos
 
-Por predefinição, na consola de administração do Intune, a maioria das plataformas de dispositivos está ativada, à exceção dos dispositivos da Apple (iOS e Mac). Antes de os dispositivos iOS poderem ser inscritos e geridos no Intune, a plataforma do dispositivo tem de ser ativada. A ativação das plataformas de dispositivos iOS é um processo constituído por três passos: criação e transferência do certificado do APNs e carregamento do certificado do APNs no Intune.
+Por predefinição, a maioria das plataformas de dispositivos está ativada, à exceção dos dispositivos Apple (iOS e Mac). Antes de os dispositivos iOS poderem ser inscritos e geridos no Intune, a plataforma do dispositivo tem de ser ativada. Para tal, tem de criar um certificado Push de MDM e de o adicionar ao Intune.
 
--   Saiba mais sobre [como funciona a configuração de gestão de dispositivos Mac e iOS.](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   Saiba mais sobre [como ativar dispositivos Apple para inscrição](apple-mdm-push-certificate-get.md).
 
-#### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Tarefa 7: adicionar e implementar políticas de termos e condições
+### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Tarefa 7: adicionar e implementar políticas de termos e condições
 
-O Microsoft Intune suporta a adição e a implementação de políticas de termos e condições. A adição e implementação das políticas de termos e condições são concluídas na área de trabalho Política do Portal de Administração do Intune. Adicione políticas de termos e condições conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta políticas de termos e condições. Adicione políticas de termos e condições conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [como adicionar e implementar políticas de termos e condições](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune).
+-   Saiba mais sobre [como adicionar e implementar políticas de termos e condições](terms-and-conditions-create.md).
 
-#### <a name="task-8-add-and-deploy-configuration-policies"></a>Tarefa 8: adicionar e implementar políticas de configuração
+### <a name="task-8-add-and-deploy-configuration-policies"></a>Tarefa 8: adicionar e implementar políticas de configuração
 
-O Microsoft Intune suporta a adição e a implementação de dois tipos de políticas de Configuração: as políticas de configuração gerais e as personalizadas. A adição e implementação das políticas de Configuração são concluídas na área de trabalho Política do Portal de Administração do Intune. Adicione políticas de Configuração conforme adequado e implemente-as em grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta dois tipos de políticas de configuração: gerais e personalizadas. Adicione políticas de configuração conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [como adicionar e implementar políticas de configuração](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+-   Saiba mais sobre [como adicionar e implementar políticas de configuração](device-profiles.md).
 
-#### <a name="task-9-add-and-deploy-resource-profiles"></a>Tarefa 9: adicionar e implementar perfis de recursos
+### <a name="task-9-add-and-deploy-resource-profiles"></a>Tarefa 9: adicionar e implementar perfis de recursos
 
-O Microsoft Intune suporta os perfis de E-mail, Wi-Fi e VPN. A adição e implementação de perfis são concluídas na área de trabalho Política do Portal de Administração do Intune. Adicione perfis de E-mail, Wi-Fi e VPN conforme adequado e implemente-os em grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta os perfis de e-mail, Wi-Fi e VPN. Adicione estes perfis conforme adequado e implemente-os nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [a ativação de acesso aos recursos da empresa com o Intune](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
+-   Saiba mais sobre [como ativar o acesso aos recursos da empresa com o Intune](device-profiles.md).
 
-#### <a name="task-10-add-and-deploy-apps"></a>Tarefa 10: adicionar e implementar aplicações
+### <a name="task-10-add-and-deploy-apps"></a>Tarefa 10: adicionar e implementar aplicações
 
-O Microsoft Intune suporta a implementação de aplicações Web, LOB e de lojas de aplicações públicas. Também suporta a gestão de aplicações que integraram o SDK do Intune através da sua associação a políticas de MAM. A adição e implementação de aplicações são concluídas na área de trabalho Aplicações do Portal de Administração do Intune. A adição e implementação de políticas de MAM são concluídas na área de trabalho Política do Portal de Administração do Intune. Adicione aplicações conforme adequado e implemente-as em grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta a implementação de aplicações Web, aplicações de linha de negócio e aplicações públicas da Loja. Também pode gerir aplicações que integraram o SDK do Intune ao associar as mesmas a políticas de MAM. Adicione aplicações conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [a adição e implementação de aplicações](/intune-classic/deploy-use/deploy-apps).
+-   Saiba mais sobre como [adicionar e implementar](app-management.md) aplicações.
 
-#### <a name="task-11-add-and-deploy-compliance-policies"></a>Tarefa 11: adicionar e implementar políticas de conformidade
+### <a name="task-11-add-and-deploy-compliance-policies"></a>Tarefa 11: adicionar e implementar políticas de conformidade
 
-O Microsoft Intune suporta políticas de Conformidade. A adição e implementação das políticas de Conformidade são concluídas na área de trabalho Política do Portal de Administração do Intune. Adicione políticas de Conformidade conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta políticas de conformidade. Adicione políticas de conformidade conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [políticas de conformidade](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune).
+-   Saiba mais sobre [políticas de conformidade](device-compliance.md).
 
-#### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: ativar políticas de Acesso Condicional
+### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: ativar políticas de acesso condicional
 
-O Microsoft Intune suporta o Acesso Condicional para Exchange Online e Exchange no Local, SharePoint Online, Skype para Empresas Online e Dynamics CRM Online. A ativação de políticas de Acesso Condicional é efetuada na área de trabalho Política do Portal de Administração do Intune. Ative e configure o Acesso Condicional conforme adequado com base nos seus [requisitos e casos de utilização de implementação do Intune](planning-guide-requirements.md).
+O Intune suporta o acesso condicional para o Exchange Online, Exchange no local, SharePoint Online, Skype para Empresas Online e Dynamics CRM Online. Ative e configure o acesso condicional conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre o [acesso condicional](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   Saiba mais sobre o [acesso condicional](conditional-access.md).
 
-#### <a name="task-13-enroll-devices"></a>Tarefa 13: inscrever dispositivos
+### <a name="task-13-enroll-devices"></a>Tarefa 13: inscrever dispositivos
 
-O Intune suporta plataformas de dispositivos iOS, Mac OS, Android, Windows Desktop e Windows Mobile. Ative plataformas de dispositivos móveis conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta plataformas de dispositivos iOS, Mac OS, Android, Ambiente de Trabalho do Windows e Windows Mobile. Inscreva plataformas de dispositivos móveis conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre [como inscrever dispositivos](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
+-   Saiba mais sobre [como inscrever dispositivos](device-enrollment.md).
 
->[!TIP]
-> Consulte este [módulo de sessão do Microsoft Virtual Academy Intune](https://mva.microsoft.com/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=PPWNoZxvD_1404778676) para obter mais informações sobre o processo de implementação do Intune.
 
-## <a name="next-section"></a>Secção Seguinte
+## <a name="next-steps"></a>Passos seguintes
 
-A secção seguinte fornece orientações para [testar e validar a sua implementação do Intune](planning-guide-test-validation.md).
+Consulte este [módulo de sessão do Microsoft Virtual Academy Intune](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) para obter mais informações sobre o processo de implementação do Intune.
+
+
+Veja as orientações para [testar e validar a sua implementação do Intune](planning-guide-test-validation.md).
