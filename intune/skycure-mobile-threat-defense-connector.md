@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Conector Skycure Mobile Threat Defense
 
@@ -111,18 +111,14 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 Para obter mais informações, veja o [site do Skycure](https://www.skycure.com/skycure-microsoft-integration/).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja a seguir os passos necessários para integrar o Intune com o Skycure:
 
-1.  [Configurar o Skycure para utilizar o Início de Sessão Único (SSO) do Azure Active Directory](skycure-azure-sso-configure.md)
+1.  [Adicionar e atribuir aplicações do Skycure, o Microsoft Authenticator e a política de configuração de aplicações iOS](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [Transferir a política de configuração de aplicações iOS do Skycure](skycure-ios-app-configuration-policy-download.md)
+2.  [Configurar a integração do Skycure com o Intune](skycure-mtd-connector-integration.md)
 
-3.  [Adicionar e atribuir aplicações do Skycure, o Microsoft Authenticator e a política de configuração de aplicações iOS](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [Ativar o conector do Skycure MTD no Intune](mtd-connector-enable.md)
 
-4.  [Configurar a integração do Skycure com o Intune](skycure-mtd-connector-integration.md)
-
-5.  [Ativar o Skycure Mobile Threat Defense no Intune](mtd-connector-enable.md)
-
-6.  [Criar a política de conformidade de dispositivos do Skycure Mobile Threat Defense no Intune](mtd-device-compliance-policy-create.md)
+4.  [Criar a política de conformidade de dispositivos do Skycure com o Intune](mtd-device-compliance-policy-create.md)

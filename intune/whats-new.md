@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -55,25 +55,25 @@ Agora, o Intune suporta o carregamento de números de série Android, Mac OS e i
 
 ### <a name="device-management"></a>Gestão de dispositivos
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>Novas ações remotas para dispositivos iOS <!-- 854689 -->
-Nesta versão, adicionámos duas novas ações de dispositivo remoto para dispositivos iOS:
+Nesta versão, adicionámos duas novas ações de dispositivo remoto para dispositivos iPad partilhados que fazem a gestão da aplicação Sala de Aula da Apple:
 
 -   [Terminar a sessão do utilizador atual](device-logout-user.md) – termina a sessão do utilizador atual do dispositivo iOS que selecionar.
 -   [Remover utilizador](device-remove-user.md) – elimina o utilizador que selecionar da cache local num dispositivo iOS.
 
 
-Através destas ações remotas, os administradores podem gerir as contas de utilizador em cache num iPad partilhado e terminar a sessão do utilizador com sessão atualmente iniciada no dispositivo.
-
-Durante a inscrição, o administrador determina o número máximo de contas de utilizador que podem ser colocadas em cache num dispositivo. A ação "Remover utilizador" permite aos administradores removerem utilizadores específicos que estão em cache.
-
-A ação "Terminar a sessão do utilizador atual" termina a sessão do utilizador atualmente com sessão iniciada no dispositivo. Esta ação pode ser encontrada na parte superior do painel de descrição geral do dispositivo onde são tradicionalmente apresentadas as ações do dispositivo.
-
-A ação "Remover utilizador" eliminará o utilizador especificado da cache local do dispositivo. Encontrará esta ação ao aceder a "Monitorizar" > "Utilizadores" > e clicar com o botão direito do rato num utilizador específico da lista. Serão perdidos todos os dados associados à conta de utilizador que não foram sincronizados. Além disso, poderá demorar até 24 horas até que a lista de utilizadores reflita a remoção do utilizador.
-
-#### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>Suporte para iPads partilhados com a aplicação Classroom para iOS<!-- 1044681 -->
+#### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>Suporte para iPads partilhados com a aplicação Sala de Aula para iOS<!-- 1044681 -->
 Nesta versão, expandimos o suporte da gestão da aplicação Sala de Aula para iOS para incluir alunos que iniciem sessão em iPads partilhados com o respetivo ID Apple gerido.
 
 
 ### <a name="app-management"></a>Gestão de aplicações  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Alterações às aplicações incorporadas do Intune <!-- 1332306 -->
+
+Anteriormente, o Intune continha várias aplicações incorporadas que podia atribuir rapidamente. Com base no seu feedback, removemos esta lista e já não verá as aplicações incorporadas.
+No entanto, se já tiver atribuído aplicações incorporadas, as mesmas continuarão visíveis na lista de aplicações. Pode continuar a atribuir estas aplicações conforme necessário.
+Numa versão posterior, planeamos adicionar um método mais simples de selecionar e atribuir aplicações incorporadas a partir do portal do Intune.
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>Suportar aplicações offline a partir da Loja Windows para Empresas <!--- 777044 --->
 As aplicações offline compradas a partir da Loja Windows para Empresas serão agora sincronizadas com o portal do Intune. Poderá então implementar essas aplicações para grupos de dispositivos ou grupos de utilizadores. As aplicações offline são instaladas pelo Intune e não pela loja.
 
@@ -163,7 +163,7 @@ Quando os utilizadores finais têm de definir um PIN de arranque em dispositivos
 O Intune suporta agora a utilização do Gestor de Escola da Apple (ASM) em vez do Programa de Inscrição de Dispositivos Apple para fornecer uma inscrição inicial de dispositivos iOS. A integração do ASM é necessária para utilizar a aplicação Sala de Aula para iPads Partilhados e para ativar a sincronização de dados do ASM no Azure Active Directory através da School Data Sync (SDS) da Microsoft. Para obter mais informações, veja [Ativar a inscrição do dispositivo iOS com o Gestor de Escola da Apple](apple-school-manager-set-up-ios.md).
 
 > [!NOTE]
-> A configuração de iPads Partilhados para trabalhar com a aplicação Classroom requer configurações do iOS Education no Azure que ainda não estão disponíveis.  Esta funcionalidade será adicionada em breve.
+> A configuração de iPads Partilhados para trabalhar com a aplicação Sala de Aula requer configurações do iOS Education no Azure que ainda não estão disponíveis.  Esta funcionalidade será adicionada em breve.
 
 ### <a name="device-management"></a>Gestão de dispositivos
 
@@ -266,12 +266,16 @@ As funções de administração de gestão de aplicações móveis (MAM) existen
 
 ## <a name="whats-coming"></a>Novidades futuras
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Fim do suporte para Android 4.3 e anterior <!---1171127, 1326920 --->
+As aplicações geridas e a aplicação Portal da Empresa para Android precisarão do Android 4.4 e superior para aceder a recursos empresariais. Os dispositivos que não forem atualizados antes do início de outubro deixarão de poder aceder ao Portal da Empresa ou a essas aplicações. Até dezembro, todos os dispositivos inscritos serão retirados à força, resultando na perda do acesso aos recursos empresariais. Se estiver a utilizar políticas de proteção de aplicações sem MDM, as aplicações não receberão atualizações e a qualidade da experiência irá diminuir ao longo do tempo.
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>Lembrete de Suporte da Plataforma: o suporte base do Windows Phone 8.1 irá terminar a 11 de julho de 2017
 <!-- 1327781 -->
 
 A 11 de julho de 2017, será o fim do suporte base da plataforma do Windows Phone 8.1. O suporte de PCs com Windows 8.1 não será afetado.
 
-Não existe impacto imediato nos dispositivos Windows Phone 8.1 que sejam geridos pelo serviço do Intune. Os dispositivos inscritos continuarão a funcionar e todas as políticas, configurações e aplicações continuarão a funcionar conforme esperado. Tenha em atenção que não existem melhorias para a plataforma do Windows Phone 8.1 no Serviço do Intune e para a aplicação Portal da Empresa do Windows Phone 8.1. 
+Não existe impacto imediato nos dispositivos Windows Phone 8.1 que sejam geridos pelo serviço do Intune. Os dispositivos inscritos continuarão a funcionar e todas as políticas, configurações e aplicações continuarão a funcionar conforme esperado. Tenha em atenção que não existem melhorias para a plataforma do Windows Phone 8.1 no Serviço do Intune e para a aplicação Portal da Empresa do Windows Phone 8.1.
 
 Recomendamos que atualize os dispositivos Windows Phone 8.1 elegíveis para o Windows 10 Mobile quando for possível. 
 
