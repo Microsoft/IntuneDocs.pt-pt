@@ -183,13 +183,12 @@
 ### [Monitorizar perfis](device-profile-monitor.md)
 ### [Resolver problemas de perfis](device-profile-troubleshoot.md)
 
-## [Definir a conformidade do dispositivo](device-compliance.md)
-### [Pré-requisitos](device-compliance-get-started.md)
-### [Criar a política do Android](compliance-policy-create-android.md)
-### [Criar a política do Android for Work](compliance-policy-create-android-for-work.md)
-### [Criar a política do iOS](compliance-policy-create-ios.md)
-### [Criar a política do Windows](compliance-policy-create-windows.md)
-### Criar Ações de não conformidade
+## [Definir a conformidade do dispositivo](device-compliance-get-started.md)
+### [Criar uma política para Android](compliance-policy-create-android.md)
+### [Criar uma política para Android for Work](compliance-policy-create-android-for-work.md)
+### [Criar uma política para iOS](compliance-policy-create-ios.md)
+### [Criar uma política para macOS](compliance-policy-create-mac-os.md)
+### [Criar uma política para Windows](compliance-policy-create-windows.md)
 ### [Monitorizar a compatibilidade do dispositivo](compliance-policy-monitor.md)
 
 ## [Configurar o acesso condicional](conditional-access.md)
