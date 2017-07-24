@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5eab3fb933b2999e23115091cf0ded3f140e114c
-ms.sourcegitcommit: f5c6e8b218431dc9a8d85464d7f58adebd048866
+ms.openlocfilehash: b8d281e3af2458bd5ab343dfa5123b31075d28ed
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2017"></a>Edição antecipada do Microsoft Intune – julho de 2017
 
@@ -40,11 +40,11 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 
 
 
-## <a name="whats-coming-to-intune-on-the-azure-portal"></a>Novidades futuras do Intune no portal do Azure
+## <a name="intune-on-the-azure-portal"></a>Intune no portal do Azure
 
 ### <a name="easier-installation-of-office-365-apps-----1121362----"></a>Instalação mais fácil das aplicações do Office 365 <!--- 1121362 --->
 O novo tipo de aplicação do **Office 365 ProPlus** faz com que seja mais fácil para si atribuir aplicações do Office 365 ProPlus a dispositivos que gere e que executam a versão mais recente do Windows 10. Além disso, poderá instalar o Microsoft Project e o Microsoft Visio, se tiver licenças dos mesmos. As aplicações que pretende serão agrupadas e aparecerão como uma aplicação na lista de aplicações na consola do Intune.
- 
+
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>Nova ação de dispositivo para forçar os dispositivos a sincronizar com o Intune <!-- 711369 -->    
 Estamos a adicionar uma nova ação de dispositivo que força o dispositivo selecionado a dar entrada imediatamente no Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo.  Esta ação pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
@@ -105,7 +105,7 @@ Em breve, poderá definir uma política de acesso condicional que exige que os d
 ### <a name="end-of-support-for-ios-80----1164477---"></a>Fim do suporte para iOS 8.0 <!---1164477--->
 As aplicações geridas e a aplicação Portal da Empresa para iOS precisarão do iOS 9.0 e superior para aceder aos recursos empresariais. Os dispositivos que não forem atualizados antes de setembro deixarão de poder aceder ao Portal da Empresa ou a essas aplicações. Em dezembro, o acesso a recursos empresariais, incluindo e-mail, será bloqueado. 
 
-### <a name="end-of-support-for-android-43-and-lower----1171127---"></a>Fim do suporte para Android 4.3 e anterior <!---1171127--->
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Fim do suporte para Android 4.3 e anterior <!---1171127, 1326920 --->
 As aplicações geridas e a aplicação Portal da Empresa para Android precisarão do Android 4.4 e superior para aceder a recursos empresariais. Os dispositivos que não forem atualizados antes do início de outubro deixarão de poder aceder ao Portal da Empresa ou a essas aplicações. Até dezembro, todos os dispositivos inscritos serão retirados à força, resultando na perda do acesso aos recursos empresariais. Se estiver a utilizar políticas de proteção de aplicações sem MDM, as aplicações não receberão atualizações e a qualidade da experiência irá diminuir ao longo do tempo.
 
 
@@ -122,7 +122,7 @@ Recomendamos que atualize os dispositivos Windows Phone 8.1 elegíveis para o Wi
 
 
 
-## <a name="whats-coming-to-intune-apps"></a>Novidades futuras das aplicações do Intune
+## <a name="intune-apps"></a>Aplicações do Intune
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Experiência de início de sessão melhorada nas aplicações Portal da Empresa para todas as plataformas<!--User Story 1132123-->    
 Anunciamos uma alteração que ficará disponível nos próximos meses e irá melhorar a experiência de início de sessão nas aplicações do Portal da Empresa do Intune para Android, iOS e Windows. A nova experiência de utilizador será apresentada automaticamente em todas as plataformas da aplicação Portal da Empresa quando o Azure AD fizer esta alteração. Além disso, os utilizadores podem agora iniciar sessão no Portal da Empresa a partir de outro dispositivo com um código gerado, de utilização única. Tal é especialmente útil nos casos em que os utilizadores precisam de iniciar sessão sem credenciais.
@@ -159,5 +159,5 @@ Poderá iniciar sessão nas contas de cliente que gere a partir do [Centro de Pa
 
 
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 Veja [Novidades do Microsoft Intune](whats-new.md) para obter detalhes sobre os desenvolvimentos recentes.

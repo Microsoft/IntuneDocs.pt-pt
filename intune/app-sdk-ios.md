@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -49,15 +49,25 @@ Este guia abrange a utilização dos seguintes componentes do SDK da Aplicação
 
 * **IntuneMAMResources.bundle**: um pacote de recursos que possui os recursos dos quais o SDK depende.
 
-* **Cabeçalhos**: expõe as APIs do SDK da Aplicação do Intune. Se utilizar uma API, terá de incluir o ficheiro de cabeçalho que contém a API. Os seguintes ficheiros de cabeçalho incluem as chamadas de função da API necessárias para ativar a funcionalidade do SDK da Aplicação do Intune:
+* **Cabeçalhos**: expõe as APIs do SDK da Aplicação do Intune. Se utilizar uma API, terá de incluir o ficheiro de cabeçalho que contém a API. Os seguintes ficheiros de cabeçalho incluem as APIs, tipos de dados e protocolos que o SDK da Aplicação Intune disponibiliza aos programadores:
 
-    * IntuneMAMAsyncResult.h
+    * IntuneMAMAppConfig.h
+    * IntuneMAMAppConfigManager.h
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
+    * IntuneMAMDefs.h
+    * IntuneMAMEnrollmentDelegate.h
+    * IntuneMAMEnrollmentManager.h
+    * IntuneMAMEnrollmentStatus.h
     * IntuneMAMFileProtectionInfo.h
     * IntuneMAMFileProtectionManager.h
-    * IntuneMAMPolicyDelegate.h
     * IntuneMAMLogger.h
+    * IntuneMAMPolicy.h
+    * IntuneMAMPolicyDelegate.h
+    * IntuneMAMPolicyManager.h
+    * IntuneMAMVersionInfo.h
+    
+Os programadores podem disponibilizar os conteúdos de todos os cabeçalhos acima ao importar o IntuneMAM.h
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Como funciona o SDK da Aplicação do Intune
@@ -144,11 +154,13 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
     > [!NOTE]
     > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS.
 
-7. Se a aplicação definir esquemas de URL no respetivo ficheiro Info.plist, adicione outro esquema, com um sufixo `-intunemam`, a cada esquema de URL.
+8. Se a aplicação definir esquemas de URL no respetivo ficheiro Info.plist, adicione outro esquema, com um sufixo `-intunemam`, a cada esquema de URL.
 
-8. Para as aplicações móveis desenvolvidas para iOS 9+, inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Além disso, para cada protocolo listado, adicione um novo protocolo e anexe-o com `-intunemam`. Também tem de incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
+9. Se a aplicação definir os tipos de Documentos no respetivo ficheiro Info.plist, para a matriz "UTIs do Tipo de Conteúdos do Documento" de cada item, adicione uma entrada duplicada para cada cadeia com um prefixo "com.microsoft.intune.mam." .
 
-9. Se a aplicação tiver grupos de aplicações definidos nas suas elegibilidades, adicione estes grupos ao dicionário **IntuneMAMSettings** na chave `AppGroupIdentifiers` como uma matriz de cadeias.
+10. Para as aplicações móveis desenvolvidas para iOS 9+, inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Além disso, para cada protocolo listado, adicione um novo protocolo e anexe-o com `-intunemam`. Também tem de incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
+
+11. Se a aplicação tiver grupos de aplicações definidos nas suas elegibilidades, adicione estes grupos ao dicionário **IntuneMAMSettings** na chave `AppGroupIdentifiers` como uma matriz de cadeias.
 
 
 

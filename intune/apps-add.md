@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar uma aplicação ao Microsoft Intune
 
@@ -79,36 +79,11 @@ Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a
 
 ## <a name="apps-added-automatically-by-intune"></a>Aplicações adicionadas automaticamente pelo Intune
 
-As seguintes aplicações publicadas pela Microsoft estão incorporadas no Intune e estão prontas a ser atribuídas:
+Anteriormente, o Intune continha várias aplicações incorporadas que podia atribuir rapidamente. Com base no seu feedback, removemos esta lista e já não verá as aplicações incorporadas.
+No entanto, se já tiver atribuído aplicações incorporadas, as mesmas continuarão visíveis na lista de aplicações. Pode continuar a atribuir estas aplicações conforme necessário.
+Numa versão posterior, planeamos adicionar um método mais simples de selecionar e atribuir aplicações incorporadas a partir do portal do Intune.
 
-|||
-|-|-|
-|Nome|Plataforma|Tipo de aplicação|
-|Azure Information Protection|Android|Aplicação da loja Android gerida|
-|Dynamics CRM para Telemóveis|Android|Aplicação da loja Android gerida|
-|Dynamics CRM para Tablets|Android|Aplicação da loja Android gerida|
-|Excel|iOS|Aplicação da loja iOS gerida|
-|Excel|Android|Aplicação da loja Android gerida|
-|Browser Gerido|Android|Aplicação da loja Android gerida|
-|Browser Gerido|iOS|Aplicação da loja iOS gerida|
-|Microsoft Dynamics CRM em Telemóveis|iOS|Aplicação da loja iOS gerida|
-|Microsoft Dynamics CRM em Tablets|iOS|Aplicação da loja iOS gerida|
-|Microsoft Power BI|iOS|Aplicação da loja iOS gerida|
-|Microsoft Power BI|Android|Aplicação da loja Android gerida|
-|Microsoft SharePoint|iOS|Aplicação da loja iOS gerida|
-|Microsoft SharePoint|Android|Aplicação da loja Android gerida|
-|Microsoft Teams|Android|Aplicação da loja Android gerida|
-|Microsoft Teams|iOS|Aplicação da loja iOS gerida|
-|OneDrive para Empresas|iOS|Aplicação da loja iOS gerida|
-|OneDrive para Empresas|Android|Aplicação da loja Android gerida|
-|OneNote|iOS|Aplicação da loja iOS gerida|
-|Outlook|Android|Aplicação da loja Android gerida|
-|Outlook|iOS|Aplicação da loja iOS gerida|
-|Grupos do Outlook|Android|Aplicação da loja Android gerida|
-|Grupos do Outlook|iOS|Aplicação da loja iOS gerida|
-|PowerPoint|iOS|Aplicação da loja iOS gerida|
-
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Escolha um dos seguintes tópicos para saber como adicionar aplicações para cada plataforma ao Intune:
 
