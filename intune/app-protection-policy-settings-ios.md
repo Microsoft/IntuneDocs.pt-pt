@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ Existem algumas aplicações e serviços de plataforma isentos aos quais a polí
 | **Verificar novamente os requisitos de acesso após (minutos)** | Configure as seguintes definições: <ul><li>**Tempo Limite**: este é o número de minutos que passam até os requisitos de acesso (definidos anteriormente na política) serem verificados novamente. Por exemplo, um administrador ativa o PIN na política, um utilizador abre uma aplicação de MAM e tem de introduzir um PIN. Quando utiliza esta definição, o utilizador não tem de introduzir um PIN numa aplicação de MAM durante **30 minutos** (valor predefinido).</li><li>**Período de tolerância offline**: este é o número de minutos em que as aplicações de MAM podem ser executadas offline, especifique o tempo (em minutos) antes de os requisitos de acesso da aplicação serem verificados novamente. Valor predefinido = **720** minutos (12 horas). Após este período expirar, a aplicação pedirá uma autenticação de utilizador para o AAD, para que a mesma possa continuar em execução.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá fazer uma eliminação seletiva. Esta eliminação seletiva é a mesma eliminação que aquela que pode ser iniciada pelo administrador no fluxo de trabalho de eliminação de MAM. <br><br> | 90 dias |
 | **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
-| **Exigir sistema operativo iOS mínimo** | Escolha **Sim** para exigir um sistema operativo iOS mínimo para utilizar esta aplicação. O acesso do utilizador será bloqueado se a versão do iOS no dispositivo não cumprir os requisitos. | Não |
-| **Exigir sistema operativo iOS mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo iOS mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão do iOS no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada. | Não |
+| **Exigir sistema operativo iOS mínimo** | Escolha **Sim** para exigir um sistema operativo iOS mínimo para utilizar esta aplicação. O acesso do utilizador será bloqueado se a versão do iOS no dispositivo não cumprir os requisitos. Esta política suporta um único ponto decimal, por exemplo iOS 10.3. | Não |
+| **Exigir sistema operativo iOS mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo iOS mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão do iOS no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada. Esta política suporta um único ponto decimal, por exemplo iOS 10.3. | Não |
 | **Exigir versão mínima da aplicação** | Escolha **Sim** para exigir uma versão mínima para utilizar a aplicação. O acesso do utilizador é bloqueado se a versão da aplicação no dispositivo não cumprir os requisitos.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> | Não | 
 | **Exigir versão mínima da aplicação (apenas aviso)** | Escolha **Sim** para recomendar uma versão mínima para utilizar esta aplicação. O utilizador vê uma notificação se a versão da aplicação no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> | Não | 
 | **Exigir versão mínima do SDK da política de proteção da aplicação Intune** | Escolha **Sim** para exigir a versão mínima do SDK da política de proteção da aplicação Intune na aplicação a utilizar. O acesso do utilizador será bloqueado se a versão do SDK da política de proteção da aplicação Intune da aplicação não cumprir os requisitos. <br> <br> Para saber mais sobre o SDK da política de proteção da aplicação Intune, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md) <br><br> | Não |

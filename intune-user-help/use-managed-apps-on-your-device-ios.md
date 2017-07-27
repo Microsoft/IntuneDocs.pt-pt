@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 
@@ -38,6 +38,8 @@ Obtém aplicações geridas de duas formas diferentes:
 -   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instala uma aplicação da App Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
+
+Por vezes, o seu administrador de TI poderá adquirir múltiplas licenças para uma aplicação que irá instalar. Se vir uma mensagem a pedir que aceite o contrato do Apple Volume Purchase Program, isto é normal e pode aceitá-lo. Se não o aceitar, não poderá instalar a aplicação.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>O que o meu administrador de TI pode gerir na minha aplicação?
 Aqui estão alguns exemplos das opções que o administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
