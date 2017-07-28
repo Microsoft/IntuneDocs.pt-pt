@@ -6,35 +6,32 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introdução ao Microsoft Intune no portal do Azure
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O Microsoft Intune está agora no portal do Azure, o que significa que as funcionalidades e os fluxos de trabalho a que está habituado estão agora diferentes.
+O Microsoft Intune está agora no portal do Azure, o que significa que as funcionalidades e os fluxos de trabalho a que está habituado estão diferentes.
 O novo portal oferece-lhe funcionalidades novas e atualizadas no portal do Azure, onde pode gerir os dispositivos móveis, os PCs e as aplicações da sua organização.
 
-> [!IMPORTANT]
-> **Ainda não vê o novo portal?**<br>
-> Os inquilinos existentes estão a ser migrados para a nova experiência. Uma notificação é apresentada no Centro de Mensagens do Office antes da migração do inquilino.
->
-> As contas do Intune criadas antes de janeiro de 2017 precisam de uma única migração para que os fluxos de trabalho da Inscrição da Apple fiquem disponíveis no Azure. A agenda da migração ainda não foi anunciada. Se não conseguir aceder ao portal do Azure com a sua conta existente, recomendamos a criação de uma conta de avaliação.
->
-> Consulte a lista de potenciais bloqueadores https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* O artigo [Onde estão as minhas funcionalidades no Azure?](ui-changes.md) é uma referência que lhe mostra as IUs e fluxos de trabalho específicos que foram alterados com a mudança para o Azure.
+* O artigo [Grupos clássicos do Intune no portal do Azure](groups-get-started.md) explica as implicações da transição para grupos de segurança do Azure Active Directory relativamente à gestão de grupos.
+
+
 
 
 Pode encontrar informações sobre o novo portal nesta biblioteca, a qual é continuamente atualizada. Se tiver sugestões que gostaria de ver, deixe a sua opinião nos comentários do tópico. Gostaríamos de saber a sua opinião.
@@ -47,7 +44,14 @@ Os destaques da nova experiência incluem:
 - Grupos do Azure Active Directory (AD) para proporcionar compatibilidade em todas as suas aplicações do Azure
 - Suporte para os browsers mais modernos
 
-Se estiver à procura de documentação da consola clássica do Intune, veja a [biblioteca de documentação do Intune](https://docs.microsoft.com/intune-classic/).
+> [!IMPORTANT]
+> **Ainda não vê o novo portal?**<br>
+> Os inquilinos existentes estão a ser migrados para a nova experiência. Uma notificação é apresentada no Centro de Mensagens do Office antes da migração do inquilino.
+>
+> As contas do Intune criadas antes de janeiro de 2017 precisam de uma única migração para que os fluxos de trabalho da Inscrição da Apple fiquem disponíveis no Azure. A agenda da migração ainda não foi anunciada. Se não conseguir aceder ao portal do Azure com a sua conta existente, recomendamos a criação de uma conta de avaliação.
+>
+> Consulte a lista de potenciais bloqueadores https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>Antes de começar
 
