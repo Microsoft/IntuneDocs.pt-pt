@@ -5,7 +5,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -83,7 +83,7 @@ Para ativar as políticas de proteção de aplicações do Intune, o SDK da Apli
 
 Por exemplo, quando `AppSpecificActivity` interage com o respetivo principal (por exemplo, ao chamar `super.onCreate()`), `MAMActivity` é a superclasse.
 
-Normalmente, as aplicações Android têm um modo único e podem aceder ao sistema através do objeto [**Context**](https://developer.android.com/reference/android/content/Context.html). Por sua vez, as aplicações que integraram o SDK da Aplicação do Intune têm nós duplos. Estas aplicações continuam a aceder ao sistema através do objeto `Context`. Dependendo da base de `Activity` utilizada, o objeto `Context` será proporcionado pelo Android ou será multiplexado inteligentemente entre uma vista restrita do sistema e o `Context` proporcionado pelo Android.
+Normalmente, as aplicações Android têm um modo único e podem aceder ao sistema através do objeto [**Context**](https://developer.android.com/reference/android/content/Context.html). Por sua vez, as aplicações que integraram o SDK da Aplicação do Intune têm nós duplos. Estas aplicações continuam a aceder ao sistema através do objeto `Context`. Dependendo da base de `Activity` utilizada, o objeto `Context` será proporcionado pelo Android ou será multiplexado inteligentemente entre uma vista restrita do sistema e o `Context` proporcionado pelo Android. Após derivar de um dos pontos de entrada MAM, é seguro utilizar `Context`, como faria normalmente, por exemplo, para iniciar as classes `Activity` e utilizar `PackageManager`.
 
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>Substituir as classes, os métodos e as atividades pelas MAM equivalentes
@@ -136,7 +136,7 @@ As classes base Android têm de ser substituídas pelos respetivos equivalentes 
 
 
 ### <a name="renamed-methods"></a>Métodos renomeados
-Após derivar de um dos pontos de entrada MAM, é seguro utilizar `Context`, como faria normalmente, por exemplo, para iniciar as classes `Activity` e utilizar `PackageManager`.
+
 
 Em muitos casos, um método disponível na classe Android foi marcado como final na classe de substituição da MAM. Neste caso, a classe de substituição de MAM proporciona um método com um nome semelhante (geralmente, com o sufixo `MAM`), que deve ser substituído. Por exemplo, quando executar a derivação de `MAMActivity`, em vez de substituir `onCreate()` e chamar `super.onCreate()`, `Activity` tem de substituir `onMAMCreate()` e chamar `super.onMAMCreate()`. O compilador de Java deve impor as restrições finais para impedir a substituição acidental do método original em vez do MAM equivalente.
 
@@ -146,7 +146,7 @@ Em vez de `PendingIntent.get*`, tem de utilizar o método `MAMPendingIntent.get*
 ### <a name="manifest-replacements"></a>Substituições do manifesto
 Tenha em atenção que poderá ser necessário realizar algumas das substituições de classe indicadas acima no manifesto, bem como no código Java. De destacar:
 * As referências do manifesto a `android.support.v4.content.FileProvider` devem ser substituídas por `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`.
-
+* Se a sua aplicação não precisar de ter a própria versão derivada da classe Aplicação, o `com.microsoft.intune.mam.client.app.MAMApplication` tem de ser definido com o nome da classe Aplicação utilizada no manifesto.
 
 ## <a name="sdk-permissions"></a>Permissões de SDK
 
@@ -198,7 +198,7 @@ public interface MAMLogHandlerWrapper {
 
 ## <a name="enable-features-that-require-app-participation"></a>Ativar funcionalidades que requerem a participação da aplicação
 
-Existem várias políticas de proteção de aplicações que o SDK não pode implementar por si só. A aplicação pode controlar o respetivo comportamento para cumprir estas funcionalidades através de várias APIs que pode encontrar na seguinte interface `AppPolicy`.
+Existem várias políticas de proteção de aplicações que o SDK não pode implementar por si só. A aplicação pode controlar o respetivo comportamento para cumprir estas funcionalidades através de várias APIs que pode encontrar na seguinte interface `AppPolicy`. Para obter uma instância `AppPolicy`, utilize o comando `MAMPolicyManager.getPolicy`.
 
 ```java
 /**
@@ -267,7 +267,7 @@ String toString();
 ```
 
 > [!NOTE]
-> `MAMComponents.get(AppPolicy.class)` devolverá sempre uma Política de Aplicação não nula, mesmo se o dispositivo ou aplicação não estiver sob uma política de gestão do Intune.
+> `MAMPolicyManager.getPolicy` devolverá sempre uma Política de Aplicação não nula, mesmo se o dispositivo ou aplicação não estiver sob uma política de gestão do Intune.
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>Exemplo: determinar se o PIN é necessário para a aplicação
 
@@ -305,9 +305,9 @@ public interface MAMUserInfo {
 
 ### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Exemplo: determinar se é permitido guardar no dispositivo ou armazenar na cloud
 
-Muitas aplicações implementam funcionalidades que permitem ao utilizador final guardar os ficheiros localmente ou num serviço de armazenamento na nuvem. O SDK da Aplicação do Intune permite aos administradores de TI aplicar restrições de políticas que considerem mais adequadas na organização, para proteger contra fugas de dados.  Uma das políticas que o administrador de TI pode controlar é se o utilizador final pode guardar num arquivo de dados "pessoal" não gerido. Isto inclui guardar numa localização local, num cartão SD ou em serviços de cópias de segurança de terceiros.
+Muitas aplicações implementam funcionalidades que permitem ao utilizador final guardar os ficheiros localmente ou num serviço de armazenamento na cloud. O SDK da Aplicação do Intune permite aos administradores de TI aplicar restrições de políticas que considerem mais adequadas na organização, para proteger contra fugas de dados.  Uma das políticas que o administrador de TI pode controlar é se o utilizador final pode guardar num arquivo de dados "pessoal" não gerido. Isto inclui guardar numa localização local, num cartão SD ou em serviços de cópias de segurança de terceiros.
 
-**A participação da aplicação é necessária para ativar a funcionalidade.** Se a aplicação permitir guardar em localizações pessoais ou na nuvem diretamente a partir da aplicação, tem de implementar esta funcionalidade para garantir que o administrador de TI pode controlar se a gravação numa localização é permitida. A API abaixo permite à aplicação saber se a gravação num arquivo pessoal é permitida pela política do administrador do Intune atual. Em seguida, a aplicação pode impor a política, uma vez que tem conhecimento do arquivo de dados pessoal disponível para o utilizador final através da aplicação.  
+**A participação da aplicação é necessária para ativar a funcionalidade.** Se a aplicação permitir guardar em localizações pessoais ou na cloud diretamente a partir da aplicação, tem de implementar esta funcionalidade para garantir que o administrador de TI pode controlar se a gravação numa localização é permitida. A API abaixo permite à aplicação saber se a gravação num arquivo pessoal é permitida pela política do administrador do Intune atual. Em seguida, a aplicação pode impor a política, uma vez que tem conhecimento do arquivo de dados pessoal disponível para o utilizador final através da aplicação.  
 
 Para determinar se a política é imposta, faça a seguinte chamada:
 
@@ -321,13 +321,13 @@ SaveLocation service, String username);
 
     * SaveLocation.ONEDRIVE_FOR_BUSINESS
     * SaveLocation.LOCAL
-    * SaveLocation.OTHER
+    * SaveLocation.SHAREPOINT
 
 O método anterior para determinar se uma política de utilizador permitia guardar dados em várias localizações era `getIsSaveToPersonalAllowed()`, dentro da mesma classe **AppPolicy**. Esta função é agora **preterida** e não deve ser utilizada, a invocação seguinte é equivalente a `getIsSaveToPersonalAllowed()`:
 
 ```java
 
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
 >[!NOTE]
@@ -583,7 +583,7 @@ Result getRegisteredAccountStatus(String upn);
 
 1. Para registar uma conta de gestão, a aplicação deve chamar `registerAccountForMAM()`. Uma conta de utilizador é identificada pelos seus UPN e ID de utilizador do AAD. O ID do inquilino também é necessário para associar os dados de inscrição com o inquilino do AAD do utilizador. O SDK pode tentar inscrever a aplicação para o utilizador especificado no serviço MAM. Se a inscrição falhar, esta tentará realizar periodicamente a inscrição até que a conta fique não registada. Por norma, o período de repetição é de 12 a 24 horas. O SDK fornece o estado das tentativas de inscrição de modo assíncrono através de notificações.
 
-2. Como é necessário autenticar o AAD, a melhor altura para registar a conta de utilizador é depois deste ter iniciado a sessão e realizado a autenticação com êxito através da ADAL.
+2. Como é necessário autenticar o AAD, a melhor altura para registar a conta de utilizador é depois de este ter iniciado a sessão e realizado a autenticação com êxito através da ADAL.
     * O ID do AAD do utilizador e o ID do inquilino são devolvidos na chamada de autenticação da ADAL como parte do objeto [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android). O ID do inquilino provém do método `AuthenticationResult.getTenantID()`.
     * Pode encontrar informações sobre o utilizador num subobjeto do tipo `UserInfo` proveniente de `AuthenticationResult.getUserInfo()` e o utilizador do AAD ID é obtido a partir desse objeto ao chamar `UserInfo.getUserId()`.
 
@@ -721,7 +721,7 @@ Um BackupAgent permite-lhe ser muito mais explícito sobre os dados que farão p
 
 **Integrar a MAM:**
 
-1. Leia atentamente [Key/Value Backup (Cópia de Segurança Chave/Valor)](https://developer.android.com/guide/topics/data/keyvaluebackup.html) no guia Android, mais concretamente, [xtending BackupAgent (Expandir o BackupAgent)](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) para garantir que a sua implementação do BackupAgent segue as diretrizes do Android.
+1. Leia atentamente [Key/Value Backup (Cópia de Segurança Chave/Valor)](https://developer.android.com/guide/topics/data/keyvaluebackup.html) no guia Android, mais concretamente, [Extending BackupAgent (Expandir o BackupAgent)](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) para garantir que a sua implementação do BackupAgent segue as diretrizes do Android.
 
 2. Recorra à sua classe para expandir o `MAMBackupAgent`.
 
@@ -745,16 +745,20 @@ O guia de Cópia de Segurança de Dados especifica um algoritmo geral para resta
 
 ## <a name="multi-identity-optional"></a>Várias identidades (opcional)
 
-### <a name="overview"></a>Descrição geral
+### <a name="overview"></a>Descrição Geral
 Por predefinição, o SDK da Aplicação do Intune aplica a política à aplicação como um todo. As várias identidades são uma funcionalidade de proteção opcional da aplicação do Intune que pode ser ativada para permitir que a política seja aplicada num nível por identidade. Esta opção requer uma participação da aplicação significativamente maior do que outras funcionalidades de proteção da aplicação.
 
-A aplicação _deve_ informar o SDK sobre quando tenciona alterar a identidade ativa. O SDK também notifica a aplicação quando for necessária uma alteração de identidade. Quando o utilizador inscrever o dispositivo ou a aplicação, o SDK regista esta identidade e considera-a a identidade gerida primária do Intune. Os outros utilizadores na aplicação serão tratados como não geridos, com definições de política não restrita.
+A aplicação *tem* de informar o SDK quando tenciona alterar a identidade ativa. Em alguns casos, o SDK também notifica a aplicação quando é necessária uma alteração de identidade. No entanto, na maioria dos casos, a MAM não consegue reconhecer os dados que são apresentados na IU ou que são utilizados a dada altura num thread e baseia-se na aplicação para definir a identidade correta, de forma a evitar a fuga de dados. Nas secções seguintes, serão destacados alguns cenários específicos que requerem uma ação por parte da aplicação.
+
+> [!NOTE]
+>  A falta de participação correta da aplicação pode resultar na perda de dados e noutros problemas de segurança.
+
+Quando o utilizador inscrever o dispositivo ou a aplicação, o SDK regista esta identidade e considera-a a identidade gerida primária do Intune. Os outros utilizadores na aplicação serão tratados como não geridos, com definições de política não restrita.
 
 > [!NOTE]
 > Atualmente, apenas é suportada uma identidade gerida do Intune por dispositivo.
 
 Note que uma identidade é simplesmente definida como uma cadeia. As identidades são **sensíveis às maiúsculas e minúsculas** e os pedidos de identidade ao SDK podem não devolver a mesma utilização de maiúsculas e minúsculas que tinha sido originalmente utilizada ao definir a identidade.
-
 
 ### <a name="enabling-multi-identity"></a>Ativar várias identidades
 
@@ -774,7 +778,9 @@ Os programadores podem definir a identidade do utilizador da aplicação nos seg
   2. Nível de contexto (geralmente Atividade)
   3. Nível de processo
 
-Uma identidade definida no nível de thread prevalece sobre uma identidade definida no nível de Contexto, que prevalece sobre uma identidade definida no nível de processo. Uma identidade definida num Contexto é utilizada apenas em operações de E/S de ficheiros de cenários associados adequados, por exemplo, não tem um Contexto associado. Os seguintes métodos no `MAMPolicyManager` podem ser utilizados para definir a identidade e obter os valores de identidade anteriormente definidos.
+Uma identidade definida no nível de thread prevalece sobre uma identidade definida no nível de Contexto, que prevalece sobre uma identidade definida no nível de processo. Uma identidade definida num Contexto é utilizada apenas nos cenários associados que forem adequados. Por exemplo, as operações de E/S de ficheiros não têm um Contexto associado. Normalmente, as aplicações irão definir a identidade do Contexto numa Atividade. Uma aplicação *não pode* apresentar os dados de uma identidade gerida, a menos que a identidade da Atividade esteja definida para essa mesma identidade. Em geral, a identidade ao nível do processo só é útil se a aplicação funcionar apenas com um utilizador de cada vez em todos os threads. É possível que muitas das aplicações não precisem de a utilizar.
+
+Os seguintes métodos no `MAMPolicyManager` podem ser utilizados para definir a identidade e obter os valores de identidade anteriormente definidos.
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -797,8 +803,8 @@ Uma identidade definida no nível de thread prevalece sobre uma identidade defin
   public static AppPolicy getPolicy();
 
   /**
-   * Get the currently applicable app policy, taking the context
-   * identity into account.
+  * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -820,9 +826,11 @@ Todos os métodos utilizados para definir a identidade comunicam os valores de r
 | Valor devolvido | Cenário |
 |--|--|
 | SUCCEEDED | A alteração de identidade foi concluída com êxito. |
-| NOT_ALLOWED | A alteração de identidade não é permitida. <br><br>Esta situação ocorre em caso de tentativa de mudar para um utilizador gerido diferente que pertença à mesma organização que o utilizador inscrito. Também ocorre em caso de tentativa de definir a identidade de IU (Contexto) quando uma identidade diferente for definida no thread atual. |
+| NOT_ALLOWED | A alteração de identidade não é permitida. A alteração de identidade não é permitida. Isto ocorre quando é feita uma tentativa de definir a identidade de IU (Contexto), se estiver definida uma identidade diferente no thread atual. |
 | CANCELLED | O utilizador cancelou a alteração de identidade, geralmente ao premir o botão de retrocesso num pedido de PIN ou autenticação. |
 | FAILED | A alteração de identidade falhou por um motivo não especificado.|
+
+A aplicação *tem* de garantir que a alteração de identidade é efetuada com êxito antes de apresentar ou utilizar dados da empresa. Atualmente, as alterações de identidade de processos e threads serão sempre concluídas com êxito numa aplicação com várias identidades. No entanto, reservamos o direito de adicionar condições de falha. A alteração de identidade da IU poderá falhar no caso de argumentos inválidos, se a mesma entrar em conflito com a identidade do thread ou se o utilizador cancelar os requisitos de início condicional (por exemplo, o utilizador prime o botão de retrocesso no ecrã de PIN).
 
 
 No caso de definir uma identidade de Contexto, o resultado é reportado de forma assíncrona. Se o Contexto for uma Atividade, o SDK saberá se a alteração de identidade foi efetuada com êxito após a execução da iniciação condicional, o que poderá exigir que o utilizador introduza um PIN ou as credenciais empresariais. É esperado que a aplicação implemente um `MAMSetUIIdentityCallback` para receber este resultado, pode passar nulo para este parâmetro.
@@ -839,7 +847,7 @@ Também pode definir a identidade de uma atividade diretamente através de um m�
      public final void switchMAMIdentity(final String newIdentity);
 ```
 
-Podeeá também substituir um método no `MAMActivity` se pretender que a aplicação seja notificada do resultado de tentativas para alterar a identidade dessa atividade.
+Poderá também substituir um método no `MAMActivity` se pretender que a aplicação seja notificada do resultado de tentativas para alterar a identidade dessa atividade.
 
 ``` java
     public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
@@ -927,10 +935,10 @@ O método `onMAMIdentitySwitchRequired` é chamado para todas as alterações de
 
   ```java
     public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+           file, and will tag the file for future protection changes.
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the file, and will tag the file for
-         * future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -940,23 +948,37 @@ O método `onMAMIdentitySwitchRequired` é chamado para todas as alterações de
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
+
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
         /**
          * Get the protection info on a file.
          *
          * @param file
          *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
-
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File to get information on.
          * @return File protection info, or null if there is no protection info.
          * @throws IOException
          *             If the file cannot be read or opened.
@@ -970,6 +992,19 @@ O método `onMAMIdentitySwitchRequired` é chamado para todas as alterações de
     }
 
   ```
+#### <a name="app-responsibility"></a>Responsabilidade da Aplicação
+A MAM não consegue inferir uma relação entre ficheiros que estão a ser lidos e dados a serem apresentados numa `Activity`. As aplicações *têm* de definir a identidade da IU corretamente antes de apresentarem dados da empresa. Isto inclui os dados lidos em ficheiros. Se um ficheiro vier de uma origem externa à aplicação (quer venha de um `ContentProvider` ou seja lido a partir de uma localização pública que permita a escrita), a aplicação *tem* de tentar determinar a identidade do ficheiro (através do comando `MAMFileProtectionManager.getProtectionInfo`) antes de apresentar as informações lidas a partir do ficheiro. Se o comando `getProtectionInfo` comunicar uma identidade que não seja nula nem vazia, a identidade da IU *tem* de ser definida de modo a corresponder a esta identidade (através do comando `MAMActivity.switchMAMIdentity` ou `MAMPolicyManager.setUIPolicyIdentity`). Se a alteração de identidade falhar, os dados do ficheiro *não podem* ser apresentados.
+
+Um fluxo de exemplo deverá ser semelhante ao seguinte:
+  * O utilizador seleciona um documento a abrir na aplicação
+  * Durante o fluxo de abertura e antes da leitura dos dados do disco, a aplicação confirma a identidade que deve ser utilizada para apresentar os conteúdos
+    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+    * A aplicação aguarda até que um resultado seja comunicado à chamada de retorno
+    * Se o resultado comunicado for uma falha, a aplicação não apresentará o documento.
+  * A aplicação abre e apresenta o ficheiro
+
+## <a name="offline-scenarios"></a>Cenários Offline
 
 A etiquetagem de identidade de ficheiros é sensível ao modo offline. Os seguintes pontos deverão ser levados em consideração:
 
@@ -1093,6 +1128,150 @@ Se uma aplicação se registar para a notificação `WIPE_USER_DATA`, não receb
 
 Se uma aplicação com conhecimento de várias identidades pretender que a eliminação seletiva predefinida da MAM seja realizada _**e**_ pretender realizar as suas próprias ações na eliminação, esta deverá registar-se para as notificações de `WIPE_USER_AUXILIARY_DATA`. Esta notificação será enviada imediatamente pelo SDK antes de executar a eliminação seletiva predefinida do SDK. Uma aplicação nunca deve ser registada para WIPE_USER_DATA e WIPE_USER_AUXILIARY_DATA em simultâneo.
 
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Ativar a configuração de MAM direcionada para aplicações Android (opcional)
+Os pares chave-valor específicos de aplicações podem ser configurados na consola do Intune. Estes pares chave-valor não são interpretados pelo Intune: são apenas enviados para a aplicação. As aplicações que pretendem receber esse tipo de configuração podem utilizar as classes `MAMAppConfigManager` e `MAMAppConfig` para o efeito. Se houver múltiplas políticas direcionadas para a mesma aplicação, poderão existir múltiplos valores em conflito disponíveis para a mesma chave.
+
+### <a name="example"></a>Exemplo
+```
+MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
+String identity = "user@contoso.com"
+MAMAppConfig appConfig = configManager.getAppConfig(identity);
+LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+String valueToUse = null;
+if (appConfig.hasConflict("foo")) {
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
+} else {
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+}
+LOGGER.info("Found value " + valueToUse);
+```
+
+### <a name="mamappconfig-reference"></a>Referência MAMAppConfig
+
+```
+public interface MAMAppConfig {
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
+
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
+
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
+
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
+
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
+
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
+
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
+
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
+
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
+
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
+}
+```
+
+### <a name="notification"></a>Notificação
+A configuração da aplicação adiciona um novo tipo de notificação:
+* **REFRESH_APP_CONFIG**: esta notificação é enviada numa `MAMUserNotification` e informa a aplicação de que os novos dados de configuração da aplicação estão disponíveis.
+
+Para obter mais informações sobre as capacidades da Graph API em relação aos valores de configuração de MAM direcionada, veja [Configuração de MAM Direcionada de Referência para Graph API](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no Android, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar as políticas de configuração de aplicações do Microsoft Intune para Android](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android).
 
 ## <a name="style-customization-optional"></a>Personalização de Estilo (opcional)
 
@@ -1141,18 +1320,22 @@ Para bases de códigos grandes executadas sem [ProGuard](http://proguard.sourcef
 1.  O limite de 65K nos campos.
 2.  O limite de 65K nos métodos.
 
-
-
 ### <a name="policy-enforcement-limitations"></a>Limitações de imposição de políticas
 
 * **Captura de Ecrã**: o SDK não consegue impor um novo valor de definição de captura de ecrã em Atividades já ocorridas em Activity.onCreate, o que pode resultar num período de tempo em que a aplicação foi configurada para desativar capturas de ecrã, mas em que estas ainda podem ser criadas.
 
 * **Utilizar Resoluções de Conteúdos**: a política do Intune de “transferência ou receção” pode bloquear ou bloquear parcialmente a utilização de uma resolução de conteúdos para aceder ao fornecedor de conteúdos noutra aplicação. Isto fará com que os métodos ContentResolver devolvam um valor nulo ou gerem um valor de falha (por exemplo, `openOutputStream` irá gerar `FileNotFoundException` em caso de bloqueio). A aplicação pode determinar se uma falha ao escrever dados através de uma resolução de conteúdos foi causada pela política (ou seria causada pela política) ao efetuar a chamada:
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    ou se não existir atividade associada
 
     ```java
-    MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
     ```
 
+    No segundo caso, as aplicações com várias identidades devem definir corretamente a identidade do thread (ou passar uma identidade explícita para a chamada `getPolicy`).
+    
 ### <a name="exported-services"></a>Serviços exportados
 
  o ficheiro AndroidManifest.xml incluído no SDK da Aplicação do Intune contém **MAMNotificationReceiverService**, o qual tem de ser um serviço exportado para permitir ao Portal da Empresa enviar notificações para uma aplicação otimizada. O serviço verifica o autor da chamada para assegurar que apenas o Portal da Empresa está autorizado a enviar notificações.
@@ -1173,7 +1356,7 @@ O SDK do Intune mantém o contrato fornecido pela API Android, embora possam ser
 
 ## <a name="recommended-android-best-practices"></a>Melhores práticas recomendadas para Android
 
-* Todos os projetos de biblioteca devem partilhar o mesmo android:package sempre que possível. Assim, não falhará esporadicamente no tempo de execução, uma vez que se trata puramente de um problema de tempo de compilação. As versões mais recentes do SDK da Aplicação do Intune irão remover algumas da redundâncias.
+* Todos os projetos de biblioteca devem partilhar o mesmo android:package sempre que possível. Assim, não falhará esporadicamente no tempo de execução, uma vez que se trata puramente de um problema de tempo de compilação. As versões mais recentes do SDK da Aplicação do Intune irão remover algumas das redundâncias.
 
 * Utilizar as ferramentas de compilação do SDK Android.
 

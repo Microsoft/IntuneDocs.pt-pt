@@ -1,49 +1,92 @@
 ---
-title: "Introdução à compatibilidade de dispositivos"
+title: "Políticas de conformidade de dispositivos do Intune"
 titleSuffix: Intune on Azure
-description: "Utilize este tópico para compreender os pré-requisitos obrigatórios para criar políticas de conformidade no Microsoft Intune\""
+description: "Utilize este tópico para saber mais sobre a conformidade de dispositivos no Microsoft Intune\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
+ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9723e5a8b001068e8b7c9994723e6c7111e7a80d
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
-# <a name="get-started-with-device-compliance-in-intune"></a>Introdução à conformidade de dispositivos no Intune
-
+# <a name="get-started-with-intune-device-compliance-policies"></a>Introdução às políticas de conformidade de dispositivos do Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Neste tópico, irá aprender o seguinte: 
+## <a name="what-is-device-compliance-in-intune"></a>O que é a conformidade de dispositivos no Intune?
 
-- O que precisa para começar a criar uma política de conformidade do dispositivo.
-- Uma vista rápida sobre o que pode ver e fazer no Intune no portal do Azure. 
+As políticas de conformidade de dispositivos do Intune definem as regras e as definições que um dispositivo tem de cumprir para ser considerado conforme pelo Intune.
 
-Se a conformidade do dispositivo for uma novidade para si, aconselhamos que leia [este tópico](device-compliance.md) para saber o que é a conformidade do dispositivo e como pode utilizá-la na sua organização.
+Estas regras incluem o seguinte:
+
+- Utilizar uma palavra-passe para aceder a dispositivos
+
+- Encriptação
+
+- Se o dispositivo está desbloqueado por jailbreak ou rooting
+
+- Versão mínima do SO obrigatória
+
+- Versão máxima de SO permitida
+
+- Exigir que o dispositivo esteja ao nível ou abaixo do nível da Defesa Contra Ameaças para Dispositivos Móveis
+
+Também pode utilizar as políticas de conformidade do dispositivo para monitorizar o estado de conformidade nos seus dispositivos.
+
+### <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
+
+Os requisitos de conformidade são essencialmente regras, como exigir um PIN ou encriptação do dispositivo, que pode especificar como obrigatórias ou não obrigatórias numa política de conformidade.
+
+<!---### Actions for noncompliance
+
+You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
+When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
+actions for a device that continues to be in the noncompliant status for
+a week:
+
+-   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+
+-   3 days after initial noncompliance state, a follow up reminder is sent to the user.
+
+-   5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
+
+-   7 days after initial noncompliance state, access to company resources is blocked. This requires that you have conditional access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
+
+### Grace Period
+
+This is the time between when a device is first determined as
+noncompliant to when access to company resources on that device is blocked. This time allows for time that the user has to resolve
+compliance issues on the device. You can also use this time to create your action sequences to send notifications to the user before their access is blocked.
+
+Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ##  <a name="pre-requisites"></a>Pré-requisitos
 
--   Uma subscrição do Intune
+Tem de ter as seguintes subscrições para utilizar as políticas de conformidade do dispositivo com o Intune:
 
--   Uma subscrição do Azure Active Directory
+- EMS do Intune
 
-##  <a name="supported-platforms"></a>Plataformas Suportadas:
+- Azure AD Premium
+
+###  <a name="supported-platforms"></a>Plataformas Suportadas:
 
 -   Android
 
 -   iOS
+
+-   macOS (pré-visualização)
 
 -   Windows 8.1
 
@@ -51,32 +94,48 @@ Se a conformidade do dispositivo for uma novidade para si, aconselhamos que leia
 
 -   Windows 10
 
-##  <a name="azure-portal-workflow"></a>Fluxo de trabalho do portal do Azure
+> [!IMPORTANT]
+> Os dispositivos têm de ser inscritos no Intune para comunicarem os respetivos estados de conformidade.
 
-Veja a seguir uma descrição geral de como pode criar e gerir a conformidade de dispositivos no Intune no portal do Azure.
+## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>De que forma as políticas de conformidade de dispositivos do Intune funcionam com o Azure AD
 
-<!---### Overview
+Quando um dispositivo é inscrito no Intune, é efetuado o processo de registo do Azure AD, o que atualiza os atributos do dispositivo com informações adicionais no Azure AD. Uma das principais informações do dispositivo é o estado de conformidade do dispositivo, que é utilizado pelas políticas de acesso condicional para bloquear ou permitir o acesso a e-mails e outros recursos da empresa.
 
-When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance policies that you have created and the status of the devices they have been applied to. If you
-don’t have any policies configured yet, the overview will just include the various reports but with no data.--->
+- Saiba mais sobre o [processo de registo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
 
-### <a name="manage"></a>Gerir o Endpoint Protection do
+##  <a name="ways-to-use-device-compliance-policies"></a>Formas de utilizar as políticas de conformidade de dispositivos
 
-Pode criar, editar e eliminar políticas de conformidade. Também poderá atribuir políticas aos utilizadores a partir daqui.
+### <a name="with-conditional-access"></a>Com acesso condicional
+Pode utilizar a política de conformidade com acesso condicional para permitir que apenas os dispositivos que estejam em conformidade com uma ou mais regras de política de conformidade do dispositivo acedam ao e-mail e a outros recursos empresariais.
 
-<!---### Monitor
+### <a name="without-conditional-access"></a>Sem acesso condicional
+Também pode utilizar as políticas de conformidade do dispositivo, independentemente do acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que têm jailbreak ou root. No entanto, quando utilizar políticas de conformidade de forma independente, não existem restrições de acesso aos recursos da empresa.
 
-This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.--->
+Pode implementar a política de conformidade em utilizadores. Quando uma política de conformidade é implementada num utilizador, os dispositivos do utilizador são verificados relativamente à conformidade. Para saber quanto tempo os dispositivos móveis demoram a obter uma política após a mesma ser implementada, veja Gerir definições e funcionalidades nos seus dispositivos.
 
-### <a name="setup"></a>Setup
+##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Utilizar as políticas de conformidade de dispositivos no portal clássico do Intune em comparação com o portal do Azure
 
-Período de validade do estado de conformidade
+Conheça as principais diferenças para o ajudar na transição para o novo fluxo de trabalho das políticas de conformidade de dispositivos no portal do Azure.
 
-##  <a name="next-steps"></a>Passos seguintes
-[Criar uma política de conformidade para Android](compliance-policy-create-android.md)
+- No portal do Azure, as políticas de conformidade são criadas em separado para cada plataforma suportada.
+- No portal clássico do Intune, uma política de conformidade de dispositivos era comum a todas as plataformas suportadas.
 
-[Criar uma política de conformidade para Android for Work](compliance-policy-create-android-for-work.md)
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
-[Criar uma política de conformidade para iOS](compliance-policy-create-ios.md)
+-   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-[Criar uma política de conformidade para Windows](compliance-policy-create-windows.md)
+##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Migrar políticas de conformidade de dispositivos do portal clássico do Intune para o portal do Azure
+
+As políticas de conformidade de dispositivos criadas no [portal clássico do Intune](https://manage.microsoft.com) não aparecem na nova [página do Intune no portal do Azure](https://portal.azure.com). No entanto, continuam a ser direcionadas para os utilizadores e geríveis através do portal clássico do Intune.
+
+Se quiser tirar partido das novas funcionalidades relacionadas com a conformidade de dispositivos no portal do Azure, terá de criar novas políticas de conformidade de dispositivos no próprio portal do Azure. Se atribuir uma nova política de conformidade de dispositivos no portal do Azure a um utilizador a quem também tenha sido atribuída uma política de conformidade de dispositivos do portal clássico do Intune, as políticas de conformidade de dispositivos do Intune no portal do Azure terão precedência sobre as criadas no portal clássico do Intune.
+
+##  <a name="next-steps"></a>Próximos passos
+
+Crie uma política de conformidade de dispositivos para as seguintes plataformas:
+
+- [Android](compliance-policy-create-android.md)
+- [Android for Work](compliance-policy-create-android-for-work.md)
+- [iOS](compliance-policy-create-ios.md)
+- [macOS](compliance-policy-create-mac-os.md)
+- [Windows](compliance-policy-create-windows.md)

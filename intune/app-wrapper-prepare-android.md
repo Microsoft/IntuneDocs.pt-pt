@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 299e2ed0a84c7158a582ee874f0711eb3c379532
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações Android para gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -121,6 +121,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 Ser-lhe-ão solicitadas a **KeyStorePassword** e a **KeyPassword**. Introduza as credenciais que utilizou para criar o ficheiro de keystore.
 
 A aplicação encapsulada e um ficheiro de registos são gerados e guardados no caminho de saída que tiver especificado.
+
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilizar certificados de assinatura e encapsular aplicações
+O Android exige que todas as aplicações sejam assinadas por um certificado válido para poderem ser instaladas em dispositivos Android.
+
+As aplicações encapsuladas podem ser assinadas como parte do processo de encapsulamento ou *após* o encapsulamento através das ferramentas de assinatura existentes (todas as informações sobre a assinatura na aplicação anteriores ao encapsulamento serão eliminadas).
+ 
+Se possível, as informações sobre a assinatura que já foram utilizadas durante o processo de criação devem ser utilizadas durante o encapsulamento. Em certas organizações, tal poderá exigir que trabalhe com o proprietário das informações de armazenamento de chaves (por exemplo, a equipa de desenvolvimento da aplicação). 
+
+Se o certificado de assinatura não puder ser utilizado ou a aplicação não tiver sido implementada antes, pode criar um novo certificado de assinatura ao seguir as instruções no [Guia para Programadores Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
+
+Se a aplicação já tiver sido implementada anteriormente com um certificado de assinatura diferente, não poderá ser carregada para a consola do Intune após a atualização. Os cenários de atualização da aplicação serão interrompidos se a aplicação for assinada com um certificado diferente daquele com que foi criada. Como tal, todos os novos certificados de assinatura devem ser mantidos para as atualizações de aplicações. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Considerações de segurança para executar a Ferramenta de Encapsulamento de Aplicações
 Para impedir potenciais ataques de spoofing, divulgação de informações e ataques de elevação de privilégios:

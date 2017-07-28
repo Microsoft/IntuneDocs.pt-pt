@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -107,7 +107,11 @@ Para obter mais informações, veja [O que é a conformidade do dispositivo](dev
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## <a name="data-protection"></a>Proteção de dados
+
+### <a name="ios-app-protection-policies"></a>Políticas de Proteção de Aplicações para iOS
+
+Pode definir [Políticas de Proteção de Aplicações para iOS](app-protection-policy-settings-ios.md) disponíveis para os utilizadores em dispositivos geridos através de MAM sem inscrição. Devido a um erro temporário, só pode definir estas políticas para versões do iOS com um único ponto decimal em vez de versões com múltiplos pontos decimais. Em vez de definir uma versão mínima do iOS 10.3.1, irá defini-la para o iOS 10.3. Este problema será resolvido numa futura atualização para o SDK do iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administração e contas

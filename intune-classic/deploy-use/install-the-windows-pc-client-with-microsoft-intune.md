@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
 
@@ -43,11 +43,11 @@ Todos os métodos mencionados, com exceção daqueles em que os utilizadores ins
 
   ![Transferir o cliente de PC do Intune](../media/pc-sa-client-download.png)
 
-2.  Na página **Client Software Download (Transferência de Software de Cliente)**, clique em **Client Software Download (Transferir Software de Cliente)**. Em seguida, guarde o pacote **Microsoft_Intune_Setup.zip** que contém o software numa localização segura na sua rede.
+2. Na página **Client Software Download (Transferência de Software de Cliente)**, clique em **Client Software Download (Transferir Software de Cliente)**. Em seguida, guarde o pacote **Microsoft_Intune_Setup.zip** que contém o software numa localização segura na sua rede.
 
-O pacote de instalação do software de cliente do Intune contém informações exclusivas e específicas sobre a sua conta, disponíveis num certificado incorporado. Se existirem utilizadores não autorizados que consigam obter acesso ao pacote de instalação, estes poderão inscrever PCs na conta representada pelo certificado incorporado e poderão obter acesso a recursos da empresa.
+  O pacote de instalação do software de cliente do Intune contém informações exclusivas e específicas sobre a sua conta, disponíveis num certificado incorporado. Se existirem utilizadores não autorizados que consigam obter acesso ao pacote de instalação, estes poderão inscrever PCs na conta representada pelo certificado incorporado e poderão obter acesso a recursos da empresa.
 
-3.  Extraia os conteúdos do pacote de instalação para uma localização segura na sua rede.
+3. Extraia os conteúdos do pacote de instalação para uma localização segura na sua rede.
 
     > [!IMPORTANT]
     > Não mude o nome ou remova o ficheiro **ACCOUNTCERT** que é extraído ou a instalação de software de cliente falhará.
@@ -108,7 +108,7 @@ Pode implementar o software de cliente do Intune em computadores como parte de u
 
 ## <a name="instruct-users-to-self-enroll"></a>Dar instruções aos utilizadores para se inscreverem
 
-Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](https://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web varia consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador.
+Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [site do Portal da Empresa](https://portal.manage.microsoft.com). As informações exatas que os utilizadores veem no portal Web variam consoante a Autoridade MDM e a plataforma/versão do SO do PC do utilizador.
 
 Se não tiver sido atribuída uma licença do Intune aos utilizadores ou se a Autoridade MDM da organização não tiver sido definida como o Intune, não serão apresentadas quaisquer opções de inscrição aos utilizadores.
 
@@ -198,13 +198,10 @@ Numa linha de comandos elevada, execute um dos seguintes comandos.
 
 **Método 1**:
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **Método 2**<br>Tenha em atenção que todos estes agentes se encontram instalados em todos os SKUs do Windows:
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Numa linha de comandos elevada, execute um dos seguintes comandos.
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > A anulação da inscrição do cliente irá gerar um registo obsoleto em separado para o cliente afetado. A anulação da inscrição é um processo assíncrono e existem nove agentes a desinstalar, pelo que poderá demorar até 30 minutos a ser concluída.
@@ -255,10 +251,8 @@ Verifique o caminho "%ProgramFiles%\Microsoft\OnlineManagement" e certifique-se 
 
 O processo de anulação da inscrição não remove a pasta OnlineManagement. Aguarde 30 minutos após a desinstalação e, em seguida, execute este comando. Se o executar demasiado cedo, a desinstalação poderá apresentar um estado desconhecido. Para remover a pasta, inicie uma linha de comandos elevada e execute:
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>Consulte também
+### <a name="next-steps"></a>Próximos passos
 [Gerir PCs Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Resolver problemas da configuração do cliente](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
