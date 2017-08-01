@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c102e93738ca2da3c247ad364db160c812b91118
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar uma aplicação ao Microsoft Intune
 
@@ -96,4 +96,5 @@ Escolha um dos seguintes tópicos para saber como adicionar aplicações para ca
 - [Aplicações LOB para Windows Phone](lob-apps-windows-phone.md)
 - [Aplicações da loja Windows](store-apps-windows.md)
 - [Aplicação LOB do Windows](lob-apps-windows.md)
+- [Aplicações do Office 365 para Windows 10](apps-add-office365.md)
 

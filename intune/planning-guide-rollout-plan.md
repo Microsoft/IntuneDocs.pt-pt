@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/11/2017
 ---
-# Desenvolver um plano de implementação
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Desenvolver um plano de implementação
 
 O seu plano de implementação identifica os grupos organizacionais que pretende direcionar para a implementação do Intune, o período de tempo de implementação para cada grupo e as abordagens de inscrição que utilizará.
 
-## Grupos de destino e períodos de tempo
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Grupos de destino e períodos de tempo
 
 Em primeiro lugar, analise os grupos de destino da sua implementação do Intune e identificados nos seus [cenários de casos de utilização](planning-guide-scenarios.md).
 
@@ -38,20 +36,17 @@ Em segundo lugar, determine o período de tempo para cada grupo de destino. Esta
 * Localização geográfica
 * Risco para os negócios
 
-## Fases de implementação
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Fases de implementação
 Geralmente, as organizações optam por começar a implementação do Intune com um piloto inicial que visa um pequeno grupo de utilizadores do departamento de TI. O piloto pode ser expandido para incluir um conjunto mais amplo de utilizadores de TI e poderá incluir a participação de outros grupos organizacionais.
 
-### Piloto
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Piloto
 A primeira fase da implementação deve visar utilizadores piloto. Os utilizadores piloto devem compreender que são os primeiros utilizadores numa nova solução. Aqueles devem estar dispostos a fornecer feedback para ajudar a melhorar a configuração, a documentação e as notificações, bem como para facilitar o processo para todos os outros utilizadores nas fases posteriores de implementação. Estes utilizadores não devem ser executivos ou VIPs.
 
 O piloto é uma boa oportunidade para testar os [desafios](planning-guide-deployment-goals.md) e refinar os [requisitos](planning-guide-requirements.md) recolhidos anteriormente.
 
 Inclua o plano de [comunicação](planning-guide-communication-plan.md), o plano de [suporte](planning-guide-support-plan.md) e o [teste e validação](planning-guide-test-validation.md) para resolver quaisquer problemas enquanto o impacto para os utilizadores ainda é reduzido.
 
-### Implementação de produção
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Implementação de produção
 Após um piloto bem-sucedido, está pronto para iniciar uma implementação de produção completa, direcionada para os restantes grupos da sua organização. Alguns exemplos dos diferentes grupos e fases de implementação são:
 
 -   **Departamentos** <br/>Cada departamento pode ser uma fase de implementação. Pode direcionar para um departamento inteiro de cada vez. Neste tipo de implementação, os utilizadores de cada departamento têm tendência para utilizar o dispositivo móvel da mesma forma e aceder às mesmas aplicações. Os utilizadores terão, provavelmente, os mesmos tipos de políticas.
@@ -71,26 +66,22 @@ Eis um exemplo de um plano de implementação do Intune que inclui os grupos vis
 | Terceira fase de implementação de produção |  |  |  | RH (50 utilizadores), Finanças (40 utilizadores), Executivos (30 utilizadores) |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para introduzir as fases de implementação da sua organização.
-## Corresponder os grupos de implementação aos métodos de inscrição
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Corresponder os grupos de implementação aos métodos de inscrição
 
 Agora que já determinou os grupos de destino e os intervalos de tempo para a sua implementação do Intune, tem de escolher a abordagem de inscrição no Intune mais adequada a cada grupo. Existem diferentes métodos de inscrição que pode utilizar, incluindo:
 * Inscrição self-service do utilizador
 * Inscrição do utilizador assistida
 * Feira técnica de TI
 
-### Inscrição self-service do utilizador
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Inscrição self-service do utilizador
 
 Neste caso, o utilizador é responsável pela inscrição do seu próprio dispositivo, normalmente através de instruções de inscrição fornecidas pela sua organização de TI. Esta abordagem é geralmente utilizada em organizações e é mais dimensionável do que a inscrição do utilizador assistida.
 
-### Inscrição assistida pelo utilizador
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Inscrição assistida pelo utilizador
 
 Esta abordagem é conhecido como uma abordagem “meticulosa”. Um membro da equipa de IT ajuda o utilizador ao longo do processo de inscrição, pessoalmente ou através do Skype. Geralmente, esta abordagem é utilizada com a equipa de executivos e com outros grupos que podem necessitar de assistência adicional durante o processo de inscrição.
 
-### Feira técnica de TI
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>Feira técnica de TI
 
 Em alternativa, pode organizar uma feira técnica de TI para inscrever utilizadores no Intune. Neste evento, o grupo de TI monta um stand de assistência à inscrição no Intune, onde os utilizadores poderiam receber informações sobre a inscrição no Intune, colocar questões e obter assistência relativa ao processo de inscrição. Esta opção pode ser vantajosa tanto para o grupo de TI como para os utilizadores, especialmente durante as fases iniciais da implementação do Intune.
 
@@ -111,7 +102,6 @@ Veja a seguir um exemplo atualizado do plano de implementação do Intune acima 
 | Self-service |  |  |  | RH, Finanças |
 | Abordagem meticulosa |  |  |  | Executivos |
 
-## Passos seguintes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Passos seguintes
 
 A secção seguinte fornece orientações relativas ao [desenvolvimento de um plano de comunicação de implementação do Intune](planning-guide-communication-plan.md).
