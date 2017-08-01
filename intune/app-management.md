@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2017
 ---
-# O que é a gestão de aplicações do Microsoft Intune?
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ Além disso, pode querer atribuir e gerir aplicações em dispositivos que não 
 
 O Intune oferece várias funcionalidades para o ajudar a obter as aplicações de que precisa, nos dispositivos à sua escolha.
 
-## Capacidades de gestão de aplicações por plataforma
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>Capacidades de gestão de aplicações por plataforma
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 
 <sup>2</sup>Aplica-se apenas a dispositivos geridos pelo Intune.
 
-## Como começar
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Como começar
 
 Pode encontrar a maior parte das informações relacionadas com aplicações na carga de trabalho **Aplicações Móveis**, à qual pode aceder da seguinte forma:
 
@@ -73,8 +70,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 
     ![A carga de trabalho Aplicações Móveis](./media/apps-workload.png)
 
-### Gerir o Endpoint Protection do
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>Gerir o Endpoint Protection do
 - **Aplicações** – Este nó é o local onde adiciona, atribui e monitoriza a maior parte das suas aplicações.
     - [Adicionar aplicações](apps-add.md)
     - [Atribuir aplicações](apps-deploy.md)
@@ -89,8 +85,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 - **Perfis de aprovisionamento do iOS** – as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir pró-ativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar.
     - [Perfis de aprovisionamento de aplicações iOS](app-provisioning-profile-ios.md)
 
-### Monitor
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Monitor
 - **Aplicações Licenciadas** – veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações.
     - [Aplicações compradas em volume na Loja Windows para Empresas](windows-store-for-business.md)
 - **Aplicações Detetadas** – Mostra todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo.
@@ -99,8 +94,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 
 Para obter mais detalhes, veja [Monitorizar aplicações](apps-monitor.md)
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Loja Windows para Empresas** – Configure a integração na Loja Windows para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças.
