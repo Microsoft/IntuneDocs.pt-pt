@@ -1,25 +1,16 @@
-# metadados necessários
-<a id="required-metadata" class="xliff"></a>
+# <a name="required-metadata"></a>metadados necessários
 
 title: [ARTICLE TITLE | SERVICE NAME] description: keywords: author: [GITHUB USERNAME] manager: [ALIAS] ms.date: 04/28/2016 ms.topic: article ms.prod: ms.service: ms.technology: ms.assetid: [GET ONE FROM guidgenerator.com]
 
-# metadados opcionais
-<a id="optional-metadata" class="xliff"></a>
+# <a name="optional-metadata"></a>metadados opcionais
 
-#ROBOTS:
-<a id="robots" class="xliff"></a>
-#audiência:
-<a id="audience" class="xliff"></a>
-#ms.devlang:
-<a id="msdevlang" class="xliff"></a>
-#ms.reviewer: [ALIAS]
-<a id="msreviewer-alias" class="xliff"></a>
-#ms.suite: ems
-<a id="mssuite-ems" class="xliff"></a>
-#ms.tgt_pltfrm:
-<a id="mstgtpltfrm" class="xliff"></a>
-#ms.custom:
-<a id="mscustom" class="xliff"></a>
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>audiência:
+#<a name="msdevlang"></a>ms.devlang:
+#<a name="msreviewer-alias"></a>ms.reviewer: [ALIAS]
+#<a name="mssuite-ems"></a>ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+#<a name="mscustom"></a>ms.custom:
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet volutpat aliquet. Suspendisse venenatis ex vitae fringilla suscipit. Maecenas eu nibh vitae lorem porta mollis. Nam in nisi eu nisi hendrerit pretium. Nullam vel gravida felis. Pellentesque luctus massa mi. Proin ultricies egestas erat. Morbi ut tincidunt nulla, eu ornare urna. Fusce sit amet aliquam est, at efficitur erat. Curabitur blandit mauris in dolor luctus feugiat. Proin sit amet dignissim arcu. Proin turpis lorem, congue ut bibendum non, posuere in eros. Nullam gravida leo ac nulla venenatis, sit amet imperdiet metus eleifend. Nullam id pharetra elit.

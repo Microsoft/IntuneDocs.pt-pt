@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 8.1 e posterior no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
--   **Aplicar todas as configurações ao Windows 10** – Permite que as definições nesta política possam ser aplicadas aos dispositivos Windows 10, além dos dispositivos Windows 8.1.
+
 -   **Submissão de dados de diagnóstico** – Permite ao dispositivo enviar informações de diagnóstico para a Microsoft.
 -   **Firewall** – Requer que a Firewall do Windows esteja ativada.
 -   **Controlo de Conta de Utilizador** – Requer a utilização do Controlo de Conta de Utilizador (UAC) nos dispositivos.
+
 ## <a name="password"></a>Palavra-passe
 -   **Tipo obrigatório de palavra-passe** – Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
 -   **Comprimento mínimo da palavra-passe** – Configura o comprimento mínimo obrigatório (em carateres) da palavra-passe.
@@ -62,8 +63,10 @@ Quando impõe a encriptação a um dispositivo, a chave de recuperação só é 
 -   **Acesso ao menu do modo de Empresa** – Permite aos utilizadores aceder às opções de menu do Modo de Empresa a partir do Internet Explorer.
 Se selecionar esta definição, também pode especificar uma **Localização do relatório de registo**, a qual contém um URL para um relatório que mostra os sites para os quais os utilizadores ativaram o acesso Modo de Empresa.
 -   **Localização da lista de sites do Modo de Empresa** – Especifica a localização da lista de sites que irão utilizar o Modo de Empresa quando estiver ativo.
+
 ## <a name="cellular"></a>Rede móvel
 -   **Roaming de dados** – Permite dados em roaming quando o dispositivo estiver numa rede celular.
+
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 -   **URL de pastas de trabalho** – Define o URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.
 -   **Acesso à aplicação Windows Mail sem uma conta Microsoft** – Ativa o acesso à aplicação Windows Mail sem uma conta Microsoft.    

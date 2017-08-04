@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36e658cebdfd23547e3c376124289046f81acc1f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-enrolling-devices"></a>Introdução à inscrição de dispositivos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![Dispositivo iOS a mostrar a aplicação do portal da empresa. o primeiro ecrã apresentado ao utilizador do processo de inscrição.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 O Microsoft Intune ajuda a sua força de trabalho a ser produtiva em dispositivos móveis, mantendo os seus dados empresariais protegidos. Uma vez que os seus utilizadores finais irão interagir com o Intune nos respetivos dispositivos ao invés de o fazerem na consola de administrador, deve certificar-se de que está familiarizado com a experiência de inscrição. Desta forma, pode aliar políticas de conformidade bem delineadas à sua experiência e mostrar empatia para com os seus utilizadores. Isto é especialmente importante porque os seus utilizadores saberão exatamente qual o tipo de informações que poderá ver enquanto administrador:
 
