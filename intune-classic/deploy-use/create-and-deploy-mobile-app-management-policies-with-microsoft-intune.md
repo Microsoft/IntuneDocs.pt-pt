@@ -128,14 +128,14 @@ A partir da versão 1703 do Intune, tem a opção de adicionar aplicações LOB 
 > [!IMPORTANT]
 > Tem de selecionar o Windows 10 na lista pendente de plataformas ao criar uma nova política de proteção de aplicações.
 
-1.  No painel Adicionar uma política, selecione **Aplicações permitidas** ou **Excluir aplicações** para abrir o painel Aplicações permitidas ou Excluir aplicações.
+1.  No painel Adicionar uma política, selecione **Aplicações permitidas** ou **Aplicações isentas** para abrir o painel Aplicações permitidas ou Excluir aplicações.
 
     > [!NOTE]
     >
     - **Aplicações permitidas**: estas são as aplicações que precisam de cumprir esta política.
-    - **Excluir aplicações**: estas aplicações estão isentas desta política e podem aceder a dados empresariais sem restrições.
+    - **Aplicações isentas**: estas aplicações estão isentas desta política e podem aceder a dados empresariais sem restrições.
 <br></br>
-2. No painel Aplicações permitidas ou Excluir aplicações, clique em **Adicionar aplicações**. Pode adicionar aplicações da Microsoft recomendadas, aplicações da loja ou aplicações do ambiente de trabalho.
+2. No painel Aplicações permitidas ou Aplicações isentas, clique em **Adicionar aplicações**. Pode adicionar aplicações da Microsoft recomendadas, aplicações da loja ou aplicações do ambiente de trabalho.
 
     a.  **Aplicações recomendadas:** uma lista preenchida previamente de aplicações do Office (a maioria) que os administradores podem facilmente importar para a política.
 
