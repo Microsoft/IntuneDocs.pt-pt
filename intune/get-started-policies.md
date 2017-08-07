@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 232ec25c34df5e71f70737ca5f0f8a2ef12a05f0
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-with-policies"></a>Introdução às políticas
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Um dos principais objetivos da introdução ao Intune é a inscrição de dispositivos para garantir que estão em conformidade com as políticas empresariais. As políticas de conformidade irão ajudá-lo a gerir tipos de dispositivos especializados, como quiosques pertencentes à empresa, mas também dispositivos pessoais (Bring Your Own Device), tablets e dispositivos sem utilizador.
 

@@ -20,15 +20,13 @@ ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/12/2017
 ---
-# Definições de política do iOS no Microsoft Intune
-<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-policy-settings-in-microsoft-intune"></a>Definições de política do iOS no Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 O Intune oferece uma variedade de definições gerais incorporadas que pode configurar nos dispositivos iOS. Além disso, pode utilizar a ferramenta Apple Configurator para criar definições personalizadas que não estão disponíveis no Intune.
 
-## Definições de política de configuração geral
-<a id="general-configuration-policy-settings" class="xliff"></a>
+## <a name="general-configuration-policy-settings"></a>Definições de política de configuração geral
 
 Utilize a **política de configuração geral do iOS** do Microsoft Intune para configurar definições para:
 
@@ -43,8 +41,7 @@ Utilize a **política de configuração geral do iOS** do Microsoft Intune para 
 
 Se a definição que procura não aparecer neste tópico, poderá conseguir criá-la utilizando uma política personalizada de iOS que permita importar as definições que criou utilizando a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para mais informações, consulte "Definições de política personalizada" mais adiante neste tópico.
 
-### Definições de segurança
-<a id="security-settings" class="xliff"></a>
+### <a name="security-settings"></a>Definições de segurança
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -63,8 +60,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir desbloqueio por impressão digital**|Permite a utilização de uma impressão digital para desbloquear o dispositivo.|
 <sup>1</sup>Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de a palavra-passe ser exigida**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
-### Definições do sistema
-<a id="system-settings" class="xliff"></a>
+### <a name="system-settings"></a>Definições do sistema
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -77,8 +73,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir submissão de dados de diagnóstico**|Permitir ou impedir o dispositivo de submeter dados de diagnóstico para a Apple.|
 |**Permitir passbook quando bloqueado**|Permitir que o utilizador aceda à aplicação Passbook quando o dispositivo está bloqueado.|
 
-### Definições da cloud para documentos e dados
-<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
+### <a name="cloud-settings-for-documents-and-data"></a>Definições da cloud para documentos e dados
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -92,8 +87,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir Partilha de Fotografias em iCloud**|Definido como **Não** para desativar a **Partilha de Fotografias do iCloud** no dispositivo.|
 |**Permitir Fototeca em iCloud**|Se estiver definido como **Não**, desativa a utilização da biblioteca de fotografias do iCloud que permite aos utilizadores armazenar fotografias e vídeos na cloud.   Se isto estiver definido como **Não**, todas as fotografias que não tiverem sido completamente transferidas da Biblioteca de Fotografias do iCloud para o dispositivo serão removidas do mesmo.|
 
-### Definições da aplicação para o browser
-<a id="application-settings-for-the-browser" class="xliff"></a>
+### <a name="application-settings-for-the-browser"></a>Definições da aplicação para o browser
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -105,8 +99,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir scripting de Java**|Permitir a execução de scripts de Java no browser.|
 |**Permitir aviso de fraude**|Permitir avisos de fraude no browser.|
 
-### Definições da aplicação para aplicações
-<a id="application-settings-for-apps" class="xliff"></a>
+### <a name="application-settings-for-apps"></a>Definições da aplicação para aplicações
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -120,8 +113,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir ao utilizador confiar em novos autores de aplicações empresariais**|Permite que o utilizador opte por confiar em aplicações que não foram transferidas a partir da loja de aplicações.|
 
 
-### Definições da aplicação para jogos
-<a id="application-settings-for-games" class="xliff"></a>
+### <a name="application-settings-for-games"></a>Definições da aplicação para jogos
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -129,8 +121,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir a adição de amigos do Centro de Jogos**|Permitir que o utilizador adicione amigos no Centro de jogos.|
 |**Permitir jogos multijogador**|Permitir que o utilizador jogue jogos multijogador no dispositivo.|
 
-### Definições da aplicação para conteúdo multimédia
-<a id="application-settings-for-media-content" class="xliff"></a>
+### <a name="application-settings-for-media-content"></a>Definições da aplicação para conteúdo multimédia
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -140,8 +131,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir que o utilizador transfira conteúdos da loja iBook sinalizados como “Erótico”**|Permitir ao utilizador transferir livros da categoria "Erótico".|
 
 
-### Definições das capacidades do dispositivo para hardware
-<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
+### <a name="device-capabilities-settings-for-hardware"></a>Definições das capacidades do dispositivo para hardware
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -150,8 +140,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Forçar os Relógios Apple emparelhados a utilizar deteção no pulso**|Quando ativada, o Apple Watch não apresenta notificações quando não estiver a ser utilizado.|
 |**Exigir palavra-passe emparelhada para os pedidos AirPlay enviados**|Exigir uma palavra-passe de emparelhamento quando o utilizador utiliza AirPlay para conteúdo de fluxo com outros dispositivos da Apple.|
 
-### Definições das capacidades do dispositivo para a rede móvel
-<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
+### <a name="device-capabilities-settings-for-cellular"></a>Definições das capacidades do dispositivo para a rede móvel
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -160,8 +149,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Permitir roaming de dados**|Permite o roaming de dados quando o dispositivo estiver numa rede celular.|
 |**Permitir obtenção global em segundo plano em roaming**|Permitir que o dispositivo obtenha dados, tais como e-mail, enquanto estiver em roaming numa rede celular.|
 
-### Definições das capacidades do dispositivo para funcionalidades
-<a id="device-capabilities-settings-for-features" class="xliff"></a>
+### <a name="device-capabilities-settings-for-features"></a>Definições das capacidades do dispositivo para funcionalidades
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
@@ -172,8 +160,7 @@ As definições aplicam-se ao iOS 8.0 e posterior.
 |**Não permitir Airdrop de aplicações geridas**|Faz com que as aplicações geridas não consigam enviar dados através de. Airdrop.|
 
 
-### Definições para aplicações conformes e não conformes
-<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Definições para aplicações conformes e não conformes
 Na lista **Aplicações Conformes &amp;Não Conformes**, especifique uma lista de aplicações conformes ou não conformes utilizando as informações seguintes.
 
 > [!NOTE]
@@ -190,8 +177,7 @@ Na lista **Aplicações Conformes &amp;Não Conformes**, especifique uma lista d
 
 As políticas que contêm as definições de aplicações conformes e não conformes têm de ser implementadas em grupos de utilizadores.
 
-### Definições do modo de local público
-<a id="kiosk-mode-settings" class="xliff"></a>
+### <a name="kiosk-mode-settings"></a>Definições do modo de local público
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
@@ -218,20 +204,17 @@ As políticas que contêm as definições de aplicações conformes e não confo
 > -   Antes de poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a [ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou o [Programa de Inscrição de Dispositivos Apple](ios-device-enrollment-program-in-microsoft-intune.md) para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 > -   Se a aplicação iOS que especificou for instalada após a implementação da política de configuração, o dispositivo só entrará em modo de local público após ser reiniciado.
 
-### Informações de referência para aplicações conformes e não conformes
-<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informações de referência para aplicações conformes e não conformes
 
 Utilize o **Relatório de Aplicações Não Conformes** para ver a conformidade das aplicações permitidas e bloqueadas.
 
-##### Para executar o Relatório de Aplicações Não Conformes
-<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
+##### <a name="to-run-the-noncompliant-apps-report"></a>Para executar o Relatório de Aplicações Não Conformes
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Relatórios** &gt; **Relatório de Aplicações Não Conformes**.
 
 2.  Selecione os grupos de dispositivos que pretende verificar, selecione se pretende verificar as aplicações compatíveis, as aplicações não compatíveis ou ambas e, em seguida, selecione **Ver Relatório**.
 
-#### Como especificar URLs para lojas de aplicações
-<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
+#### <a name="how-to-specify-urls-to-app-stores"></a>Como especificar URLs para lojas de aplicações
 Para especificar o URL de uma aplicação na lista de aplicações compatíveis e não compatíveis ou na opção **Selecionar uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público** (apenas em iOS), utilize o seguinte formato:
 
 1. Através de um motor de pesquisa, localize a aplicação que pretende utilizar na App Store do iTunes e abra a página da aplicação.
@@ -243,20 +226,17 @@ Para especificar o URL de uma aplicação na lista de aplicações compatíveis 
 > [!NOTE]
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
 
-### Definições de inscrição
-<a id="enrollment-settings" class="xliff"></a>
+### <a name="enrollment-settings"></a>Definições de inscrição
 As definições aplicam-se ao iOS 8.0 e posterior.
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
 |**Permitir Bloqueio de Ativação quando o dispositivo estiver no modo supervisionado**|Ativar o Bloqueio de Ativação em dispositivos iOS supervisionados.|
 
-### Definições do modo supervisionado
-<a id="supervised-mode-settings" class="xliff"></a>
+### <a name="supervised-mode-settings"></a>Definições do modo supervisionado
 Pode configurar as seguintes definições em dispositivos com iOS 8.0 e posterior que estejam no modo supervisionado.
 
-### Definições do modo supervisionado para restrições do dispositivo
-<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-device-restrictions"></a>Definições do modo supervisionado para restrições do dispositivo
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
@@ -272,8 +252,7 @@ Pode configurar as seguintes definições em dispositivos com iOS 8.0 e posterio
 |**Permitir a modificação das definições de notificação**|Permitir que o utilizador altere as definições de notificação do dispositivo.|
 |**Permitir a modificação da imagem de fundo**|Permitir que o utilizador altere a imagem de fundo do dispositivo.|
 
-### Definições do modo supervisionado para restrições de funcionalidade
-<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-feature-restrictions"></a>Definições do modo supervisionado para restrições de funcionalidade
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
@@ -287,8 +266,7 @@ Pode configurar as seguintes definições em dispositivos com iOS 8.0 e posterio
 |**Permitir a verificação ortográfica no teclado**|Permitir o corretor ortográfico do dispositivo.|
 |**Permitir atalhos de teclado**|Permitir a utilização de atalhos de teclado.|
 
-### Definições do modo supervisionado para restrições de aplicações
-<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-app-restrictions"></a>Definições do modo supervisionado para restrições de aplicações
 
 |Nome da definição|Detalhes|
 |----------------|--------------------|
@@ -305,8 +283,7 @@ Pode configurar as seguintes definições em dispositivos com iOS 8.0 e posterio
 |**Permitir Game Center**|Permitir utilização da aplicação Game Center.|
 
 
-### Mostrar ou Ocultar Aplicações
-<a id="show-or-hide-apps" class="xliff"></a>
+### <a name="show-or-hide-apps"></a>Mostrar ou Ocultar Aplicações
 
 Utilize a **Lista de aplicações ocultas e apresentadas** para controlar o seguinte nos dispositivos supervisionados com o iOS 9.3 ou posterior:
 
@@ -314,8 +291,7 @@ Utilize a **Lista de aplicações ocultas e apresentadas** para controlar o segu
 - Especificar uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
 
-#### Como criar uma lista de aplicações ocultas ou apresentadas
-<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
+#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Como criar uma lista de aplicações ocultas ou apresentadas
 
 Especifique as seguintes definições:
 
@@ -329,8 +305,7 @@ Especifique as seguintes definições:
 |**Editar**|Permite-lhe editar o nome, o fabricante e o URL da aplicação selecionada.|
 |**Eliminar**|Elimina a aplicação selecionada da lista.|
 
-#### Informações para aplicações iOS incorporadas
-<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
+#### <a name="app-information-for-built-in-ios-apps"></a>Informações para aplicações iOS incorporadas
 
 Utilize as informações nesta lista para identificar o nome, o publicador e o ID das aplicações iOS incorporadas que pretenda mostrar ou ocultar. Se pretender mostrar ou ocultar todas as aplicações na lista, pode copiar os dados abaixo para um ficheiro de texto com a extensão **.csv** e, em seguida, utilizar a opção **Importar Aplicações** para importar todas as aplicações em simultâneo.
 
@@ -380,30 +355,26 @@ Utilize as informações nesta lista para identificar o nome, o publicador e o I
 
 
 
-## Definições de política personalizada
-<a id="custom-policy-settings" class="xliff"></a>
+## <a name="custom-policy-settings"></a>Definições de política personalizada
 
 Utilizar a **política personalizada do iOS** do Microsoft Intune para implementar as definições que criou utilizando a [Ferramenta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) para dispositivos iOS. Esta ferramenta permite criar muitas definições que controlam o funcionamento destes dispositivos e exportá-las para um perfil de configuração. Em seguida, pode importar este perfil de configuração para uma política personalizada do iOS do Intune e implementar as definições em utilizadores e dispositivos da sua organização.
 
 Esta capacidade permite-lhe a implementação de definições do iOS que não são configuráveis com as políticas de configuração gerais do Intune.
 
-### Pré-requisitos
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Pré-requisitos
 Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro de configuração que contém as definições que pretende implementar nos utilizadores ou dispositivos. Pode transferir e obter informações sobre o Apple Configurator na [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
 > O Intune não comunica a conformidade de definições individuais em políticas personalizadas do iOS. No entanto, a conformidade geral das políticas é comunicada.
 
-### Definições gerais
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>Definições gerais
 
 |Nome da definição|Detalhes|
     |----------------|--------------------|
     |**Nome**|Introduza um nome exclusivo para a política personalizada do iOS para o ajudar a identificá-la na consola do Intune.|
     |**Descrição**|Indique uma descrição geral da política personalizada do iOS e outras informações relevantes que o ajudem a localizá-la.|
 
-### Definições personalizadas
-<a id="custom-settings" class="xliff"></a>
+### <a name="custom-settings"></a>Definições personalizadas
 
 |Nome da definição|Detalhes|
     |----------------|--------------------|
@@ -411,6 +382,5 @@ Antes de começar, tem de ter instalado o Apple Configurator e criar um ficheiro
 |**Ficheiro de perfil de configuração**|Escolha **Importar** e em seguida, navegue até ao perfil de configuração que criou ao utilizar o Apple Configurator. **Nota:** Certifique-se de que as definições exportadas a partir da ferramenta Apple Configurator são compatíveis com a versão do iOS nos dispositivos nos quais implementou a política personalizada do iOS. Para obter informações sobre como são resolvidas as definições incompatíveis, pesquise **Configuration Profile Reference** (Referência de Perfil de Configuração) e **Mobile Device Management Protocol Reference** (Referência do Protocolo de Gestão de Dispositivos Móveis) no site [Apple Developer](https://developer.apple.com/).|
     |**Detalhes do perfil de configuração**|Apresentar o código XML do perfil de configuração que importou.|
 
-### Consulte também
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

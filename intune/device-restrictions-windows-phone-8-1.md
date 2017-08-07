@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows Phone 8.1 no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
--   **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
+
 -   **Câmara** – Permite ou bloqueia a câmara do dispositivo.
 -   **Copiar e colar** – Permite ou bloqueia a funcionalidade de copiar e colar nos dispositivos.
 -   **Armazenamento amovível** – Permite ao dispositivo utilizar armazenamento amovível, como cartões SD.
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **Sincronização de contas de e-mail personalizadas** – Permite ao dispositivo ligar-se a contas de e-mail não Microsoft.
 
 ## <a name="password"></a>Palavra-passe
--   **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
--   **Palavra-passe obrigatória** – Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
+
+-   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
     -   **Tipo obrigatório de palavra-passe** – Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.
     -   **Comprimento mínimo da palavra-passe** – Especifica o número mínimo de carateres necessários na palavra-passe.
     -   **Palavras-passe simples** – Especifica que se pode utilizar palavras-passe simples, como “0000” e “1234”.
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **Encriptação** – Requer que os dados nos dispositivos móveis suportados sejam encriptados.
 
 ## <a name="app-store"></a>App Store
--   **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
+
 -   **Loja de aplicações** – Permite que os utilizadores se liguem à loja de aplicações a partir do dispositivo.
 
 ## <a name="restricted-apps"></a>Aplicações restritas
-
--   **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
@@ -81,11 +79,11 @@ Também pode clicar em **Importar** para preencher a lista a partir de um fichei
 
 
 ## <a name="browser"></a>Browser
--   **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
+
 -   **Browser** – Permite ou bloqueia o browser incorporado nos dispositivos.
 
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
--   **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só serão aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também serão aplicadas a dispositivos com o Windows 10 Mobile.
+
 -   **Wi-Fi** – Ativa ou desativa a funcionalidade Wi-Fi do dispositivo.
 -   **Tethering Wi-Fi** – Permite a utilização de tethering Wi-Fi no dispositivo.
 -   **Ligar automaticamente a hotspots Wi-Fi** – Permite ao dispositivo ligar-se automaticamente a hotspots Wi-Fi gratuitos e aceitar automaticamente quaisquer termos de utilização.
