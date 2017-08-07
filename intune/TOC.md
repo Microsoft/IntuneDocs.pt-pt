@@ -8,9 +8,7 @@
 ### [Novidades na IU da aplicação](whats-new-app-ui.md)
 ### [Novidades – Arquivo (portal do Azure)](whats-new-archive.md)
 ### [Novidades – Arquivo (portal clássico)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Arquitetura geral](high-level-architecture.md)
 ## [Ciclos de vida dos dispositivos e das aplicações](introduction-device-app-lifecycles.md)
 ### [Ciclo de vida dos dispositivos](device-lifecycle.md)
 ### [Ciclo de vida das aplicações](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Monitorizar e resolver problemas
 ## [Utilizar a função de operador do suporte técnico](help-desk-operators.md)
+## [Utilizar o Armazém de Dados do Intune](reports-nav-create-intune-reports.md)
+### [Estabelecer uma ligação ao Armazém de Dados com o Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Desenvolver e personalizar
 ## [Configurar as definições personalizadas dos dispositivos](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Componente Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md)
 ## [Como utilizar Graph APIs do Intune](intune-graph-apis.md)
 ## [Graph API do Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [API do Armazém de Dados do Intune](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Ponto final da API do Armazém de Dados](reports-api-url.md)
+### [Modelo de dados do Armazém de Dados](reports-ref-data-model.md)
+#### [Referência para a entidade Date](reports-ref-date.md)
+#### [Referência para a entidade de utilizador](reports-ref-user.md)
+#### [Referência para as entidades da gestão de aplicações móveis (MAM)](reports-ref-mobile-app-management.md)
+#### [Referência para as entidades de dispositivos](reports-ref-devices.md)
+#### [Referência para as entidades de aplicações](reports-ref-application.md)
+#### [Referência para as entidades de políticas](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossário](intune-glossary.md)
