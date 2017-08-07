@@ -15,14 +15,17 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 97a7a2d2727d823c24e720b61531dce78f6935d1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]Este tópico descreve a experiência do utilizador para aplicações com políticas de proteção de aplicações. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho, como aceder a aplicações com a conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este tópico descreve a experiência do utilizador em aplicações com políticas de proteção. As políticas de proteção de aplicações são aplicadas apenas quando as aplicações são utilizadas no contexto de trabalho, como aceder a aplicações com a conta profissional ou aceder a ficheiros armazenados na localização empresarial do OneDrive para Empresas.
 ##  <a name="accessing-apps"></a>Aceder a aplicações
 
 A aplicação Portal da Empresa é exigida para todas as aplicações associadas a políticas de proteção de aplicações em dispositivos Android.
