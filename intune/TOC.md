@@ -263,7 +263,7 @@
 ### [Como obter aplicações para Windows](end-user-apps-windows.md)
 
 # Monitorizar e resolver problemas
-## [Utilizar a função de operador do suporte técnico](help-desk-operators.md)
+## [Ajudar os utilizadores a resolver problemas](help-desk-operators.md)
 ## [Utilizar o Armazém de Dados do Intune](reports-nav-create-intune-reports.md)
 ### [Estabelecer uma ligação ao Armazém de Dados com o Power BI](reports-proc-get-a-link-powerbi.md)
 
