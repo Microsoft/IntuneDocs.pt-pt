@@ -3,8 +3,8 @@ title: "Definições de políticas de proteção de aplicações Android"
 titleSuffix: Intune on Azure
 description: "Este tópico descreve as definições de políticas de proteção de aplicações para dispositivos Android.\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 06/06/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aeb3742f9ea232b5e277b92be40f44c3d2becd96
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a0da2e96e6e80672f666b8bbca160a1fc1515d1c
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações Android
 As definições de políticas descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.

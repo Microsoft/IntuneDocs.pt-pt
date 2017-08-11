@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 183e60af4d6174c18fc3883f2cdd9827505d2aba
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
@@ -49,7 +49,6 @@ Para ativar a gestão de perfis de trabalho em dispositivos que [suportam Androi
 
 1. **Configurar o Intune MDM**<br>
 Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](mdm-authority-set.md) como **Microsoft Intune**.
-
 2. **Configurar o enlace do Android for Work**<br>
     Como administrador do Intune, no Portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
