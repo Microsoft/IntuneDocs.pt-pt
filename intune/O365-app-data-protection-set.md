@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores
 
@@ -48,15 +48,14 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 
 1. Inicie a aplicação OneDrive para Empresas para abrir a página de início de sessão.  <br/> ![Imagem do ecrã de início de sessão no OneDrive para iOS](./media/onedrive-ios-sign-in.png)
 2. Escreva o nome de utilizador da sua conta profissional. Será redirecionado para a página de autenticação do Office 365 para introduzir as suas credenciais de trabalho. <br/> ![Imagem da página de início de sessão no Office 365](./media/o365-sign-in-ios.png)
-3. Depois de as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, as políticas de gestão de aplicações móveis (MAM) são aplicadas e ser-lhe-á pedido que reinicie a aplicação OneDrive para Empresas.  <br/>![Imagem do pedido de reinício para iOS](./media/ios-restart-prompt.png)
->[!NOTE]
->A mensagem de reinício necessário é apresentada apenas nos dispositivos que não estão inscritos no Intune.
+3. Depois de as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, as políticas de proteção de aplicações serão aplicadas e ser-lhe-á pedido que reinicie a aplicação OneDrive para Empresas.  <br/>![Imagem do pedido de reinício para iOS](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > A mensagem de reinício necessário é apresentada apenas nos dispositivos que não estão inscritos no Intune.
 
 
-4. Reinicie a aplicação OneDrive para Empresas. A aplicação é iniciada com as políticas MAM ativadas e é-lhe pedido para definir um PIN para o dispositivo (se ainda não tiver um configurado para o dispositivo). <br/> ![Imagem do pedido para criar um PIN](./media/pin-prompt-ios.png)
-
->[!NOTE]
->A maior parte dos utilizadores não vê este pedido. Este pedido será apresentado apenas aos utilizadores que ainda não ativaram um PIN no dispositivo iOS.
+4. Reinicie a aplicação OneDrive para Empresas. A aplicação é iniciada com as políticas de proteção de aplicações ativadas e é-lhe pedido para definir um PIN para o dispositivo (se ainda não tiver um configurado para o dispositivo). <br/> ![Imagem do pedido para criar um PIN](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > A maior parte dos utilizadores não vê este pedido. Este pedido será apresentado apenas aos utilizadores que ainda não ativaram um PIN no dispositivo iOS.
 
 
 5. Depois de definir o PIN e o confirmar, volte à aplicação OneDrive para Empresas. Verá um aviso único a indicar que o administrador de TI está agora a proteger os dados de trabalho no OneDrive. <br/> ![Imagem do aviso único do administrador de TI](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 
 1. Inicie a aplicação OneDrive para Empresas para abrir a página de início de sessão.  <br/> ![Imagem do ecrã de boas-vindas da aplicação OneDrive](./media/onedrive-android-welcome.png)
 2. Escreva o nome de utilizador da sua conta profissional. Será redirecionado para a página de autenticação do Office 365 para introduzir as suas credenciais de trabalho. <br/> ![Imagem do início de sessão no O365 no Android](./media/o365-sign-in-android.png)
-3. Após as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, verá uma mensagem com instruções para instalar a aplicação Portal da Empresa, caso ainda não esteja instalada no dispositivo. Toque em **Ir para loja** para continuar. <br/> ![Imagem da mensagem para obter a aplicação Portal da Empresa](./media/get-company-portal-android.png) <br/>Se já tiver a aplicação Portal da Empresa instalada no telemóvel, a aplicação OneDrive para Empresas será automaticamente iniciada e poderá avançar para a nota final.
->[!IMPORTANT]
->No Android, depois de configurar as aplicações do Office para serem geridas por uma política MAM, o utilizador do dispositivo **tem** de instalar a aplicação Portal da Empresa para aceder aos e-mails e aos documentos do trabalho, embora o utilizador final não precise de abrir ou iniciar sessão na aplicação para de facto ler os e-mails ou os documentos.
+3. Após as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, verá uma mensagem com instruções para instalar a aplicação Portal da Empresa, caso ainda não esteja instalada no dispositivo. Toque em **Ir para loja** para continuar. <br/> ![Imagem da mensagem para obter a aplicação Portal da Empresa](./media/get-company-portal-android.png) <br/>Se já tiver a aplicação Portal da Empresa instalada no telemóvel, a aplicação OneDrive para Empresas será automaticamente iniciada e poderá avançar para a nota final.    
+  > [!IMPORTANT]
+  > No Android, depois de configurar as aplicações do Office para serem geridas por uma política de proteção de aplicações, o utilizador do dispositivo **tem** de instalar a aplicação Portal da Empresa para aceder aos e-mails e aos documentos do trabalho, embora o utilizador final não precise de abrir ou iniciar sessão na aplicação para ler os e-mails ou os documentos.
 
 4. Entrou na Google Play Store, onde pode transferir e instalar a aplicação Portal da Empresa. A aplicação ajuda a manter os dados em segurança. <br/> ![Imagem da aplicação na Google Play Store](./media/google-play-get-app-android.png)
 5. Depois de concluir a instalação da aplicação, selecione **Aceitar** para aceitar os termos. A aplicação OneDrive para Empresas é iniciada automaticamente.
@@ -118,9 +117,9 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Por que motivo a política de PIN da aplicação é apenas configurada para dispositivos Android?
 A encriptação funciona de forma diferente no iOS e no Android.
 
-No iOS, para aplicações associadas a uma política MAM do Intune, os dados são encriptados em descanso através da encriptação no nível do dispositivo fornecida pelo sistema operativo. Por isso, quando ativa a política de encriptação de aplicações, também está automaticamente a exigir que o utilizador tenha e introduza um PIN de dispositivo para aceder aos dados de trabalho. Os utilizadores que ainda não tenham um PIN de dispositivo configurado recebem um pedido para criar um PIN de dispositivo.
+No iOS, para aplicações associadas a uma política de proteção de aplicações do Intune, os dados são encriptados em descanso através da encriptação no nível do dispositivo fornecida pelo sistema operativo. Por isso, quando ativa a política de encriptação de aplicações, também está automaticamente a exigir que o utilizador tenha e introduza um PIN de dispositivo para aceder aos dados de trabalho. Os utilizadores que ainda não tenham um PIN de dispositivo configurado recebem um pedido para criar um PIN de dispositivo.
 
-No Android, para as aplicações que estão associadas a uma política MAM do Intune, os dados são encriptados de forma síncrona durante tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. Nos dispositivos que não são geridos por MDM, a política MAM não pode exigir um PIN de dispositivo. Para garantir que os utilizadores são obrigados a utilizar um PIN para acederem aos dados de trabalho, o assistente ativa a política de PIN da aplicação.
+No Android, para as aplicações que estão associadas a uma política de proteção de aplicações do Intune, os dados são encriptados de forma síncrona durante tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. Nos dispositivos que não são geridos por MDM, a política de proteção de aplicações não pode exigir um PIN de dispositivo. Para garantir que os utilizadores são obrigados a utilizar um PIN para acederem aos dados de trabalho, o assistente ativa a política de PIN da aplicação.
 
 Pode sempre editar estas definições da política para satisfazer os requisitos da sua organização.
 
@@ -128,5 +127,5 @@ Pode sempre editar estas definições da política para satisfazer os requisitos
 Para ver ou atualizar estas políticas, ou todas as políticas que criar no Intune no portal do Azure, no dashboard, selecione **Gerir aplicações** > **Políticas de Proteção de Aplicações**. A lista de políticas é apresentada do lado direito. Escolha a política que quer visualizar para ver e editar as definições. <br/>
 ![Imagem do caminho da interface de utilizador para ver as políticas](./media/image-for-faq.png)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Saiba mais sobre as [políticas de proteção de aplicações](https://docs.microsoft.comapp-protection-policy.md).

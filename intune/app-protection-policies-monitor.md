@@ -3,8 +3,8 @@ title: "Como monitorizar políticas de proteção de aplicações"
 titleSuffix: Intune on Azure
 description: "Veja quantos utilizadores têm a política e veja mais detalhes.\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 241ae7d2d615cd58babfc2d14b98e2bfb2f63f7d
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Existem três locais diferentes para monitorizar o estado de conformidade:
 
 ![Mosaico de resumo no painel de gestão de aplicações móveis do Intune](./media/app-protection-user-status-summary.png)
 
--   **Utilizadores:** o número total de utilizadores na sua empresa que estão a utilizar as aplicações associadas à política.
+-   **Utilizadores:** o número total de utilizadores na sua empresa que estão a utilizar uma aplicação associada a uma política num contexto de trabalho.
 
--   **GERIDO POR POLÍTICA:** o número de utilizadores que utilizaram, pelo menos, uma das aplicações no contexto profissional.
+-   **GERIDO POR POLÍTICA**: o número de utilizadores que utilizaram uma aplicação e a quem foi atribuída uma política num contexto de trabalho.
 
--   **NENHUMA POLÍTICA:** o número de utilizadores que estão a utilizar as aplicações associadas à política, mas não são visados pela política. Poderá considerar adicionar estes utilizadores à sua política.
+-   **NENHUMA POLÍTICA**: o número de utilizadores que estão a utilizar uma aplicação que não é abrangida por nenhuma política num contexto de trabalho. Poderá considerar adicionar estes utilizadores à sua política.
+    > [!NOTE]
+    > Se tiver múltiplas políticas por plataforma, um utilizador só será considerado gerido por políticas quando lhe tiver sido atribuída pelo menos uma política.
 
 - **Utilizadores sinalizados:** o número de utilizadores que estão com problemas. Atualmente, apenas os utilizadores com dispositivos com jailbreak são reportados como **Utilizadores sinalizados**.
 

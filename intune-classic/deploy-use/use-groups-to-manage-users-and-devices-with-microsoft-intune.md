@@ -14,11 +14,11 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c5acd617e9d69fa23455d382dfd78518e52515b
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Utilizar grupos para gerir utilizadores e dispositivos no Microsoft Intune
 
@@ -32,7 +32,7 @@ Este tópico descreve como criar grupos no Intune. Também fornece informações
 >
 >![Captura de ecrã da ligação para a gestão de grupos do Azure](../media/groups-link-azure.png) 
 >
->Se não vir a ligação para o portal do Azure AD, é porque está a utilizar a abordagem *atual* à gestão de grupos descrita na secção [Criar grupos para gerir utilizadores e dispositivos com o Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) deste tópico.
+>Se não vir a ligação para o portal do Azure AD, significa que ainda está a utilizar a abordagem *atual* à gestão de grupo, descrita na secção [Criar grupos](#create-groups) deste tópico.
 
 Este tópico descreve como criar grupos do Intune na consola de administração do Intune.
 
@@ -134,7 +134,7 @@ Pode editar o seu grupo para alterar o nome e a descrição ou quem pertence ao 
 
 Pode eliminar um grupo que já não serve as necessidades da sua organização. Eliminar um grupo não elimina os utilizadores que pertencem a esse grupo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Depois de configurar os grupos e as políticas, verifique as implicações práticas da estrutura em **Valor Pretendido** e **Estado**.
 
 ### <a name="to-check-your-design"></a>Para verificar a estrutura

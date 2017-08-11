@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Implementar o plano do Intune
 
@@ -32,7 +32,7 @@ Os principais requisitos do Intune autónomo são:
 
 -   Subscrição do Intune/Enterprise Mobility + Security (EMS)
 
--   Subscrição do Office 365 (para aplicações do Office e aplicações geridas pela política de MAM)
+-   Subscrição do Office 365 (para aplicações do Office e aplicações geridas por políticas de proteção de aplicações)
 
 -   Certificado do Apple APNs (para ativar a gestão da plataforma de dispositivos iOS)
 
@@ -109,7 +109,7 @@ O Intune suporta os perfis de e-mail, Wi-Fi e VPN. Adicione estes perfis conform
 
 ### <a name="task-10-add-and-deploy-apps"></a>Tarefa 10: adicionar e implementar aplicações
 
-O Intune suporta a implementação de aplicações Web, aplicações de linha de negócio e aplicações públicas da Loja. Também pode gerir aplicações que integraram o SDK do Intune ao associar as mesmas a políticas de MAM. Adicione aplicações conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta a implementação de aplicações Web, aplicações de linha de negócio e aplicações públicas da Loja. Também pode gerir aplicações que integraram o SDK do Intune ao associá-las a políticas de proteção de aplicações. Adicione aplicações conforme adequado e implemente-as nos grupos visados com base nos seus requisitos e casos de utilização de implementação do Intune.
 
 -   Saiba mais sobre como [adicionar e implementar](app-management.md) aplicações.
 
@@ -132,7 +132,7 @@ O Intune suporta plataformas de dispositivos iOS, Mac OS, Android, Ambiente de T
 -   Saiba mais sobre [como inscrever dispositivos](device-enrollment.md).
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Consulte este [módulo de sessão do Microsoft Virtual Academy Intune](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) para obter mais informações sobre o processo de implementação do Intune.
 

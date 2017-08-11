@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteger aplicações e dados de linha de negócio em dispositivos não inscritos no Microsoft Intune
 
@@ -31,7 +31,7 @@ Este tópico explica os passos necessários para aplicar políticas de MAM a apl
 
 ##  <a name="step-1-prepare-the-app"></a>Passo 1: preparar a aplicação
 
-Para poder aplicar políticas de MAM a uma aplicação, primeiro tem de encapsular a aplicação com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) ou utilizar o [SDK da Aplicação Intune](/intune/app-sdk) para integrar manualmente as funcionalidades de proteção da aplicação Intune.
+Para poder aplicar políticas de MAM a uma aplicação, primeiro tem de encapsular a aplicação com a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para [iOS](/intune/app-wrapper-prepare-ios) e [Android](/intune/app-wrapper-prepare-android) ou utilizar o [SDK da Aplicação Intune](/intune/app-sdk) para integrar manualmente as funcionalidades de proteção da aplicação Intune.
 
 Para obter mais informações sobre a utilização da Ferramenta de Encapsulamento de Aplicações vs. o SDK, veja [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 

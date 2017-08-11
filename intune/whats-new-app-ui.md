@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Isto pode ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
+
+## <a name="week-of-july-31-2017"></a>Semana de 31 de julho de 2017
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Experiência de início de sessão melhorada nas aplicações Portal da Empresa para todas as plataformas<!--User Story 1132123-->
+
+Anunciamos uma alteração que ficará disponível nos próximos meses e irá melhorar a experiência de início de sessão nas aplicações do Portal da Empresa do Intune para Android, iOS e Windows. A nova experiência de utilizador será apresentada automaticamente em todas as plataformas da aplicação Portal da Empresa quando o Azure AD fizer esta alteração. Além disso, os utilizadores podem agora iniciar sessão no Portal da Empresa a partir de outro dispositivo com um código gerado, de utilização única. Tal é especialmente útil nos casos em que os utilizadores precisam de iniciar sessão sem credenciais.  
+
+Abaixo, pode ver a experiência de início de sessão anterior, a nova experiência de início de sessão com credenciais e a nova experiência de início de sessão a partir de outro dispositivo.
+
+__Experiência de início de sessão anterior__
+
+![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo, está o botão “Iniciar sessão”. Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Depois de tocar em Iniciar sessão, o utilizador deverá introduzir as credenciais nesta página, que pede o e-mail e a palavra-passe do utilizador e proporciona formas de resolver falhas de palavras-passe.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Depois de indicar a palavra-passe, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Nova experiência de início de sessão__
+
+![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo, está o botão “Iniciar sessão”. Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![É pedido ao utilizador que indique apenas o endereço de e-mail, em vez do e-mail e palavra-passe no mesmo ecrã.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![É pedido ao utilizador que indique a palavra-passe depois de ter sido aceite o endereço de e-mail.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Nova experiência de início de sessão quando iniciar sessão a partir de outro dispositivo__
+
+![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo, está o botão “Iniciar sessão”. Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Toque na ligação __Iniciar sessão a partir de outro dispositivo__.
+
+![As instruções indicam para ir para a página aka.ms/devicelogin com um código de acesso exclusivo a partir do computador de trabalho e, em seguida, para utilizar o código para iniciar sessão.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Inicie um browser e aceda a [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Uma imagem do browser do utilizador no computador de trabalho em vez da aplicação Portal da Empresa. A página “Início de sessão do dispositivo” apresentada solicita ao utilizador o código que recebeu na aplicação Portal da Empresa.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Introduza o código que viu na aplicação Portal da Empresa. Ao selecionar __Continuar__, poderá autenticar através de qualquer método suportado pela sua empresa, tal como um smartcard.
+
+![O utilizador introduziu o seu código exclusivo no campo e o site “Início de sessão do dispositivo” pediu a confirmação de que o Portal da Empresa do Intune foi a aplicação correta para receber a autorização para iniciar sessão.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Uma página de confirmação que indica que o utilizador tem agora sessão iniciada na aplicação Portal da Empresa no seu dispositivo e que esta página pode ser fechada.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+A aplicação Portal da Empresa começará a iniciar sessão.
+
+![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>Semana de 12 de junho de 2017
 
@@ -180,52 +228,13 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 > [!Note]
 > Tenha em atenção que as imagens abaixo podem ser pré-visualizações e que o produto anunciado poderá ser diferente das versões apresentadas.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Experiência de início de sessão melhorada nas aplicações Portal da Empresa para todas as plataformas<!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Atualização da IU do site do Portal da Empresa <!--1313244 part 2-->
 
-Anunciamos uma alteração que ficará disponível nos próximos meses e irá melhorar a experiência de início de sessão nas aplicações do Portal da Empresa do Intune para Android, iOS e Windows. A nova experiência de utilizador será apresentada automaticamente em todas as plataformas da aplicação Portal da Empresa quando o Azure AD fizer esta alteração. Além disso, os utilizadores podem agora iniciar sessão no Portal da Empresa a partir de outro dispositivo com um código gerado, de utilização única. Tal é especialmente útil nos casos em que os utilizadores precisam de iniciar sessão sem credenciais.  
+__Atualização das Aplicações em Destaque__: adicionámos ao site uma página dedicada em que os utilizadores podem procurar aplicações que optaram por destacar e otimizámos a IU da secção Destaques na home page.
 
-Abaixo, pode ver a experiência de início de sessão anterior, a nova experiência de início de sessão com credenciais e a nova experiência de início de sessão a partir de outro dispositivo.
+![Os mosaicos coloridos que mostram as aplicações. São grandes quadrados coloridos abaixo de cada aplicação. As cores destes quadrados são extraídas da cor principal do logótipo da respetiva aplicação. A secção "Aplicações em Destaque" é apresentada na parte superior da aplicação Portal da Empresa.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Experiência de início de sessão anterior__
-
-![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo, está o botão “Iniciar sessão”. Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![Depois de tocar em Iniciar sessão, o utilizador deverá introduzir as credenciais nesta página, que pede o e-mail e a palavra-passe do utilizador e proporciona formas de resolver falhas de palavras-passe.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![Depois de indicar a palavra-passe, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Nova experiência de início de sessão__
-
-![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo, está o botão “Iniciar sessão”. Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![É pedido ao utilizador que indique apenas o endereço de e-mail, em vez do e-mail e palavra-passe no mesmo ecrã.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![É pedido ao utilizador que indique a palavra-passe depois de ter sido aceite o endereço de e-mail.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Nova experiência de início de sessão quando iniciar sessão a partir de outro dispositivo__
-
-![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo, está o botão “Iniciar sessão”. Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Toque na ligação __Iniciar sessão a partir de outro dispositivo__.
-
-![As instruções indicam para ir para a página aka.ms/devicelogin com um código de acesso exclusivo a partir do computador de trabalho e, em seguida, para utilizar o código para iniciar sessão.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Inicie um browser e aceda a [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
-
-![Uma imagem do browser do utilizador no computador de trabalho em vez da aplicação Portal da Empresa. A página “Início de sessão do dispositivo” apresentada solicita ao utilizador o código que recebeu na aplicação Portal da Empresa.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Introduza o código que viu na aplicação Portal da Empresa. Ao selecionar __Continuar__, poderá autenticar através de qualquer método suportado pela sua empresa, tal como um smartcard.
-
-![O utilizador introduziu o seu código exclusivo no campo e o site “Início de sessão do dispositivo” pediu a confirmação de que o Portal da Empresa do Intune foi a aplicação correta para receber a autorização para iniciar sessão.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Uma página de confirmação que indica que o utilizador tem agora sessão iniciada na aplicação Portal da Empresa no seu dispositivo e que esta página pode ser fechada.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-A aplicação Portal da Empresa começará a iniciar sessão.
-
-![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Novidades do Intune](https://docs.microsoft.com/intune/whats-new)

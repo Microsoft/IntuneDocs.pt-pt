@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>Criar uma política de conformidade para dispositivos macOS (pré-visualização) com o Intune
 
@@ -104,6 +104,9 @@ Ao criar uma nova conformidade do dispositivo com o Intune, terá várias catego
 
 - **Número de palavras-passe anteriores cuja reutilização está bloqueada**: especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
 
+    > [!IMPORTANT]
+    > As alterações ao requisito de palavra-passe num dispositivo macOS só têm efeito na próxima alteração de palavra-passe do utilizador. Por exemplo, se definir uma restrição de comprimento da palavra-passe para oito dígitos e o dispositivo macOS tiver atualmente uma palavra-passe de seis dígitos, o mesmo permanecerá em conformidade até à próxima vez que o utilizador atualizar a palavra-passe no dispositivo.
+
 ## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
 
 1. Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as credenciais do Intune.
@@ -128,7 +131,7 @@ Ao criar uma nova conformidade do dispositivo com o Intune, terá várias catego
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 
-Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade – políticas**.
+Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Políticas de conformidade**.
 
 1. Selecione a política de conformidade de dispositivos que pretende atribuir aos utilizadores e, em seguida, selecione **Tarefas**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
 

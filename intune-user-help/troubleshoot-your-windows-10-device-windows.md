@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
@@ -35,7 +35,7 @@ Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dis
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Passos de resolução de problemas a seguir se vir Acesso profissional ou escolar
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Passos de resolução de problemas a seguir se vir "Acesso profissional ou escolar"
 
 1.  Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail e aos ficheiros profissionais ou escolares, volte a **Acesso profissional ou escolar**.
 
@@ -47,12 +47,16 @@ Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dis
 
     - Se não vir as informações de ligação mostradas acima ou se de facto as vir, mas faltarem algumas das opções, toque em **Ligar** e, em seguida, inicie sessão com as suas credenciais profissionais ou escolares. Agora, já deverá estar ligado.
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passos de resolução de problemas a seguir se vir A sua conta
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passos de resolução de problemas a seguir se vir "A sua conta"
 
 Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos ficheiros e a outros dados profissionais ou escolares, volte a **Contas** e toque em **Acesso profissional**.
 
 - Se visualizar a sua conta profissional ou escolar, parabéns, está ligado. Está ligado.
 
 - Se não vir a sua conta profissional ou escolar, toque em **Ligar** e, em seguida, inicie sessão com as credenciais da sua conta profissional ou escolar.
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Passos de resolução de problemas a seguir se vir "Configurar uma conta escolar ou profissional"
+
+Se vir uma mensagem com a indicação __Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.__ e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o seu administrador de TI para saber qual o site que precisa de fornecer na caixa de texto **Ponto final de gestão**. É provável que este site se assemelhe a **www.asuaempresa.onmicrosoft.com**. 
 
 Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
