@@ -3,8 +3,8 @@ title: "Aplicações iOS com políticas de proteção de aplicações"
 titleSuffix: Intune on Azure
 description: "Este tópico descreve o que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações.\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 519a721b19e42c3fe2cc8120f7985b18cd57a1ce
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 4527e82ae9fa7226a0b7753111886882d85801e3
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
