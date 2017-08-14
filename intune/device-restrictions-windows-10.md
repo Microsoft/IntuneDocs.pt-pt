@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Reposição do telefone** – Controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
 -   **Ligação USB (apenas para dispositivos móveis)** – controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.
 -   **Modo antirroubo (apenas para dispositivos móveis)** – configure se o Modo antirroubo do Windows está ativado.
--   **Notificações do centro de ação (apenas para dispositivos móveis)** – ative ou desative as notificações do centro de ação no ecrã de bloqueio do dispositivo (apenas no Windows 10 Mobile).
 -   **Cortana** – Ative ou desative o assistente de voz Cortana.
 -   **Gravação de voz (apenas para dispositivos móveis)** – permite ou bloqueia a utilização do gravador de voz do dispositivo.
--   **Modificação das definições de energia e suspensão (apenas no ambiente de trabalho)** – impede o utilizador final de alterar as definições de energia e suspensão no dispositivo.
--   **Modificação de definições de região (apenas no ambiente de trabalho)** – impede o utilizador final de alterar as definições de região no dispositivo.
--   **Modificação das definições de idioma (apenas no ambiente de trabalho)** – impede o utilizador de alterar as definições de idioma no dispositivo.
--   **Modificação da Hora do Sistema** –impede o utilizador final de alterar a data e a hora do dispositivo.
--   **Modificação do nome do dispositivo** – impede o utilizador final de alterar o nome do dispositivo.
+-   **Modificação do nome do dispositivo** – impede o utilizador final de alterar o nome do dispositivo (apenas no Windows 10 Mobile)
 -   **Adicionar pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que instala os pacotes de aprovisionamento.
 -   **Remover pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que remove os pacotes de aprovisionamento.
 -   **Deteção de dispositivos** – bloqueie a deteção de um dispositivo por outros dispositivos.
@@ -67,7 +62,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
     -   **Máximo de minutos de inatividade até o ecrã bloquear** – Especifica o período de tempo durante o qual um dispositivo tem de estar inativo até o ecrã ser bloqueado.
     -   **Expiração de palavra-passe (dias)** – Especifica o período de tempo após o qual a palavra-passe do dispositivo tem de ser alterada.
     -   **Impedir a reutilização de palavras-passe anteriores** – Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.
-    -   **Exigir palavra-passe quando o dispositivo regressa do estado de inatividade** – Especifica que o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo (apenas no Windows 10 Mobile).
+    -   **Exigir palavra-passe quando o dispositivo regressa do estado de inatividade (apenas para dispositivos móveis)** – Especifica que o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo (apenas no Windows 10 Mobile).
     -   **Palavras-passe simples** – permite a utilização de palavras-passe simples, como 1111 e 1234. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
 -   **Encriptação** – Ative a encriptação em dispositivos visados (apenas no Windows 10 Mobile).
 
@@ -105,6 +100,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 -   **Instalar dados da aplicação no volume de sistema** – impede que as aplicações armazenem dados no volume do sistema do dispositivo.
 -   **Instalar dados da aplicação na unidade do sistema** – impede que as aplicações armazenem dados na unidade do sistema do dispositivo.
 -   **Gravador de Jogo (apenas no ambiente de trabalho)** – configura se a gravação e a difusão de jogos são permitidas.
+-   **Aplicações apenas a partir da loja** – configura se os utilizadores podem instalar aplicações de outros locais que não a loja de aplicações.
 
 
 
@@ -112,7 +108,6 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 -   **Browser Microsoft Edge (apenas dispositivos móveis)** – Permita a utilização do browser Edge no dispositivo.
 -   **Lista pendente da barra de endereço (apenas no ambiente de trabalho)** – utilize isto para impedir o Edge de apresentar uma lista de sugestões numa lista pendente à medida que escreve. Isto ajuda a minimizar a utilização da largura de banda de rede entre o Edge e os serviços Microsoft.
 -   **Sincronizar favoritos entre browsers da Microsoft (apenas no ambiente de trabalho)** – permite que o Windows sincronize os favoritos entre o Internet Explorer e o Edge.
--   **SmartScreen** – ativa ou desativa o SmartScreen, que bloqueia sites fraudulentos.
 -   **Enviar cabeçalhos Do Not Track** – Configura o browser Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
 -   **Cookies** – Permite que o browser guarde cookies de Internet no dispositivo.
 -   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no browser Edge.
@@ -130,13 +125,16 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 -   **Home Pages** – adicione uma lista de sites que pretende utilizar como home pages no browser Edge (apenas no ambiente de trabalho).
 -   **Alterações à página inicial** – permite que os utilizadores alterem as páginas iniciais apresentadas quando o Edge é aberto. Utilize a definição Home Pages para criar a página, ou lista de páginas, que é apresentada quando o Edge é iniciado.
 -   **Bloquear acesso a sinalizadores** – impeça que o utilizador final aceda à página about:flags no Edge, que contém as definições experimentais e de programação.
--   **Ignorar pedido do smart screen** – permita que o utilizador final ignore os avisos do filtro SmartScreen sobre sites potencialmente maliciosos.
--   **Ignorar pedido do smart screen para ficheiros** – permita que o utilizador final ignore os avisos do filtro SmartScreen sobre a transferência de ficheiros potencialmente maliciosos.
 -   **Endereço IP do anfitrião local WebRtc** – impeça que o endereço IP de localhost dos utilizadores seja apresentado quando realizar chamadas telefónicas através do protocolo RTC da Web.
 -   **Motor de busca predefinido** – especifique o motor de busca predefinido a ser utilizado. Os utilizadores finais podem alterar este valor em qualquer altura.
 -   **Limpar dados de navegação à saída** – limpa o histórico e os dados de navegação quando o utilizador sai do Edge.
 -   **Recolha de dados do Mosaico Dinâmico** – impede o Windows de recolher informações do Mosaico Dinâmico quando um utilizador afixa um site ao menu inicial do Edge.
 
+## <a name="edge-browser-smartscreen"></a>SmartScreen do Browser Edge
+
+-   **SmartScreen** – ativa ou desativa o SmartScreen, que bloqueia sites fraudulentos.
+-   **Ignorar pedido do smart screen** – permita que o utilizador final ignore os avisos do filtro SmartScreen sobre sites potencialmente maliciosos.
+-   **Ignorar pedido do smart screen para ficheiros** – permita que o utilizador final ignore os avisos do filtro SmartScreen sobre a transferência de ficheiros potencialmente maliciosos.
 
 ## <a name="search"></a>Procura
 - **Pesquisa Segura (apenas para dispositivos móveis)** – controle o modo como a Cortana filtra o conteúdo para adultos nos resultados da pesquisa. Pode selecionar **Rigoroso**, **Moderado** ou permitir que o utilizador final escolha as suas próprias definições.
@@ -156,7 +154,6 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 -   **Deteção de Bluetooth** – Permite que este dispositivo seja detetado por outros dispositivos com Bluetooth ativado.
 -   **Pré-emparelhamento de bluetooth** – permite-lhe configurar dispositivos Bluetooth específicos para que sejam emparelhados automaticamente com um dispositivo anfitrião.
 -   **Publicidade do Bluetooth** – Permite que o dispositivo receba anúncios através de Bluetooth.
--   **Nome do dispositivo com Bluetooth** – especifique o nome Bluetooth de um dispositivo. Se não especificar um nome, será utilizado o nome de rádio predefinido.
 -   **Serviço de dispositivos ligados** – permite-lhe escolher se quer permitir o serviço de dispositivos ligados, que ativa a deteção e ligação a outros dispositivos Bluetooth.
 -   **NFC** – Permite que o utilizador ative e configure funções de Comunicações de Proximidade no dispositivo.
 -   **Wi-Fi** – Permite que o utilizador ative e configure Wi-Fi no dispositivo (apenas no Windows 10 Mobile).
@@ -170,11 +167,16 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 -   **Aplicação de definições** – bloqueie o acesso à aplicação de definições do Windows.
     -   **Sistema** – bloqueia o acesso à área do sistema da aplicação de definições.
+        -   **Modificação das definições de energia e suspensão (apenas no ambiente de trabalho)** – impede o utilizador final de alterar as definições de energia e suspensão no dispositivo.
     -   **Dispositivos** – bloqueia o acesso à área de dispositivos da aplicação de definições.
     -   **Rede e Internet** – bloqueia o acesso à área da Internet e da rede da aplicação de definições.
     -   **Personalização** – bloqueia o acesso à área de personalização da aplicação de definições.
     -   **Contas** – bloqueia o acesso à área das contas da aplicação de definições.
     -   **Hora e Idioma** – bloqueia o acesso à área da hora e do idioma da aplicação de definições.
+        -   **Modificação da Hora do Sistema** –impede o utilizador final de alterar a data e a hora do dispositivo.
+        -   **Modificação de definições de região (apenas no ambiente de trabalho)** – impede o utilizador final de alterar as definições de região no dispositivo.
+        -   **Modificação das definições de idioma (apenas no ambiente de trabalho)** – impede o utilizador de alterar as definições de idioma no dispositivo.
+    -   **Jogos** – bloqueia o acesso à aplicação Jogos nas Definições.
     -   **Facilidade de Acesso** – bloqueia o acesso à área de facilidade de acesso da aplicação de definições.
     -   **Privacidade** – bloqueia o acesso à área de privacidade da aplicação de definições.
     -   **Atualização e Segurança** – bloqueia o acesso à área das atualizações e de segurança da aplicação de definições.
@@ -237,17 +239,17 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 ## <a name="windows-spotlight"></a>Destaque do Windows
 
 
-- Destaque do Windows – utilize esta definição para bloquear todas as funcionalidades do Destaque do Windows em dispositivos com o Windows 10. Se bloquear esta definição, as seguintes definições não estarão disponíveis.
+- **Destaque do Windows** – utilize esta definição para bloquear todas as funcionalidades do Destaque do Windows em dispositivos com o Windows 10. Se bloquear esta definição, as seguintes definições não estarão disponíveis.
     - **Destaque do Windows no ecrã de bloqueio** – impede o Destaque do Windows de apresentar informações no ecrã de bloqueio do dispositivo.
     - **Sugestões de terceiros no Destaque do Windows** – impede o Destaque do Windows de sugerir conteúdos que não tenham sido publicados pela Microsoft.
-    - **Sugestões do Windows** – permite-lhe bloquear a apresentação de sugestões pop-up no Windows.
     - **Funcionalidades do Consumidor** – permite-lhe bloquear funcionalidades do consumidor como sugestões do menu Iniciar e notificações de associação.
+    - **Sugestões do Windows** – permite-lhe bloquear a apresentação de sugestões pop-up no Windows.
     - **Destaque do Windows no centro de ação** – bloqueia a apresentação de sugestões do Destaque do Windows, como uma nova aplicação ou conteúdos de segurança, no Windows Action Center.
     - **Personalização do Destaque do Windows** – impede que o Destaque do Windows personalize os resultados com base na utilização de um dispositivo.
     - **Experiência de boas-vindas do Windows** – impede a apresentação da experiência de boas-vindas do Windows que mostra informações sobre funcionalidades novas e atualizadas.
 
 
-## <a name="display"></a>Apresentar
+## <a name="projection"></a>Projeção
 
 - **Intervenção do utilizador a partir dos recetores de ecrã sem fios** – bloqueia a intervenção do utilizador a partir dos recetores de ecrã sem fios.
 - **Projeção para este PC** – impede outros dispositivos de detetarem este PC para projeção.

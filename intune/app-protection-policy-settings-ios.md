@@ -3,8 +3,8 @@ title: "Definições de políticas de proteção de aplicações iOS"
 titleSuffix: Intune on Azure
 description: "Este tópico descreve as definições de políticas de proteção de aplicações para dispositivos iOS.\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 5261d3df82525a5b363b6c0ee89821770a4e9e35
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -69,7 +69,7 @@ Existem algumas aplicações e serviços de plataforma isentos aos quais a polí
 | **Exigir credenciais da empresa para obter acesso** | Selecione **Sim** para exigir que o utilizador inicie sessão com a respetiva conta escolar ou profissional em vez de introduzir um PIN de acesso à aplicação. Se definir esta opção como **Sim**, substitui os requisitos para PIN ou Touch ID.  | Não |
 | **Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root** |  Selecione **Sim** para bloquear a execução desta aplicação em dispositivos com jailbreak ou root. O utilizador continuará a poder utilizar esta aplicação para tarefas pessoais, mas terá de utilizar um dispositivo diferente para aceder aos dados escolares ou profissionais nesta aplicação. | Sim |
 | **Verificar novamente os requisitos de acesso após (minutos)** | Configure as seguintes definições: <ul><li>**Tempo Limite**: este é o número de minutos que passam até os requisitos de acesso (definidos anteriormente na política) serem verificados novamente. Por exemplo, um administrador ativa o PIN na política, um utilizador abre uma aplicação de MAM e tem de introduzir um PIN. Quando utiliza esta definição, o utilizador não tem de introduzir um PIN numa aplicação de MAM durante **30 minutos** (valor predefinido).</li><li>**Período de tolerância offline**: este é o número de minutos em que as aplicações de MAM podem ser executadas offline, especifique o tempo (em minutos) antes de os requisitos de acesso da aplicação serem verificados novamente. Valor predefinido = **720** minutos (12 horas). Após este período expirar, a aplicação pedirá uma autenticação de utilizador para o AAD, para que a mesma possa continuar em execução.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
-| **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá fazer uma eliminação seletiva. Esta eliminação seletiva é a mesma eliminação que aquela que pode ser iniciada pelo administrador no fluxo de trabalho de eliminação de MAM. <br><br> | 90 dias |
+| **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá pedir ao utilizador que estabeleça ligação à rede e volte a efetuar a autenticação. Se o utilizador for autenticado com êxito, este poderá continuar a aceder aos seus dados e o intervalo offline será reposto.  Se a autenticação do utilizador falhar, a aplicação irá efetuar uma eliminação seletiva da conta e dos dados dos utilizadores.  Veja [Como eliminar apenas dados empresariais de aplicações geridas pelo Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obter mais informações sobre o tipo de dados que são removidos numa eliminação seletiva. <br><br> | 90 dias |
 | **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
 | **Exigir sistema operativo iOS mínimo** | Escolha **Sim** para exigir um sistema operativo iOS mínimo para utilizar esta aplicação. O acesso do utilizador será bloqueado se a versão do iOS no dispositivo não cumprir os requisitos. Esta política suporta um único ponto decimal, por exemplo iOS 10.3. | Não |
 | **Exigir sistema operativo iOS mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo iOS mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão do iOS no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada. Esta política suporta um único ponto decimal, por exemplo iOS 10.3. | Não |

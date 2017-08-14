@@ -15,17 +15,17 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1c4f6d18fd78f455be8e333bb765080184c908
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="get-started-with-users"></a>Introdução aos utilizadores
 
-![Um utilizador genérico no Azure](/intune/media/generic-intune-user.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O Azure AD faz a gestão de grupos de objetos da sua organização, tais como dispositivos e aplicações, mas também de grupos de utilizadores. Pode agrupar utilizadores ou dispositivos em vez de gerir cada dispositivo individualmente. Isto permite-lhe atribuir facilmente aplicações e definições a grandes números de utilizadores e dispositivos.
+O Azure Active Directory gere os grupos de objetos da sua organização, tais como dispositivos e aplicações, e também os grupos de utilizadores. Pode agrupar utilizadores ou dispositivos em vez de gerir cada dispositivo individualmente. Isto permite-lhe atribuir facilmente aplicações e definições a grandes números de utilizadores e dispositivos.
 
 ## <a name="how-do-i-create-a-user"></a>Como posso criar um utilizador?
 
