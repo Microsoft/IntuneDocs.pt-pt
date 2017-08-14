@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce779e8dad2c9813d5faf1f03bca9b33690508fe
-ms.sourcegitcommit: b287025b1a0d09d41faf51cf98c34b676fa1d98e
+ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="add-groups-in-intune"></a>Adicionar grupos no Intune
 O Intune utiliza grupos do Azure Active Directory (AD) para gerir dispositivos e utilizadores. Como administrador do Intune, pode configurar grupos para se adaptarem às suas necessidades organizacionais. Crie grupos para organizar utilizadores ou dispositivos por localização geográfica, departamento ou características de hardware. Utilize grupos para gerir tarefas em escala. Por exemplo, pode definir políticas para vários utilizadores ou implementar aplicações num conjunto de dispositivos.
@@ -28,14 +28,14 @@ Este tópico explica como adicionar grupos para utilizar no Intune.
 
 Pode adicionar os seguintes tipos de grupos:
 - **Grupos atribuídos** – adicione manualmente utilizadores ou dispositivos num grupo estático
-- **Grupos dinâmicos** – (Azure Active Directory Premium) permite-lhe criar dinamicamente grupos de utilizadores ou dispositivos definidos com regras simples ou avançadas
+- **Grupos dinâmicos** – (através do Azure Active Directory Premium) permite-lhe criar dinamicamente grupos de utilizadores ou dispositivos definidos com regras simples ou avançadas
 
 ## <a name="add-a-new-group"></a>Adicionar um novo grupo
 
 Utilize os seguintes passos para criar um novo grupo.
 1. No portal do Intune, aceda a **Grupos** e, em seguida, selecione **Novo grupo** no painel **Todos os grupos**.
   ![Captura de ecrã a mostrar o portal do Intune, com a opção Novo grupo selecionada](./media/groups-add-new.png)
-2. Especifique o **Nome** e a **Descrição** do novo grupo. Estas propriedades só são apresentadas no portal do Intune e não são apresentadas aos utilizadores.
+2. Especifique o **Nome** e a **Descrição** do novo grupo. Estas propriedades só são apresentadas no portal de gestão e não são apresentadas aos utilizadores.
 
 3. Selecione o **Tipo de associação**:
   - **Atribuído** para criar um grupo com membros atribuídos manualmente. Saiba mais sobre os [grupos atribuídos do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
@@ -46,7 +46,7 @@ Utilize os seguintes passos para criar um novo grupo.
 
   O Azure AD permite-lhe criar grupos dinâmicos com base em regras que definem a associação. Saiba como [criar grupos dinâmicos baseados em atributos](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
-4. Pode selecionar **Ativar funcionalidades do Office** para conceder aos membros do grupo de utilizadores acesso a aplicações partilhadas do Office 365.
+4. Pode selecionar **Ativar funcionalidades do Office** para conceder aos membros do grupo de utilizadores acesso a aplicações partilhadas do Office 365. Saiba mais sobre os [Grupos do Office 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 5. Selecione **Criar** para adicionar o novo grupo.
 
 ## <a name="see-also"></a>Veja também

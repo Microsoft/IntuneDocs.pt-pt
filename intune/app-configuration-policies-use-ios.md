@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Como utilizar as políticas de configuração de aplicações do Microsoft Intune para iOS
 
@@ -37,7 +37,7 @@ Utilize políticas de configuração de aplicações no Microsoft Intune para di
 
 Se os utilizadores introduzirem estas definições incorretamente, isso pode aumentar a carga sobre o suporte técnico e tornar mais lenta a adoção de novas aplicações.
 
-As políticas de configuração de aplicação podem ajudar a eliminar estes problemas, permitindo-lhe atribuir estas definições aos utilizadores de uma política antes de executarem a aplicação. As definições são então fornecidas automaticamente e os utilizadores não têm de executar nenhuma ação.
+As políticas de configuração de aplicação podem ajudar a eliminar estes problemas, permitindo-lhe atribuir estas definições aos utilizadores de uma política antes de executarem a aplicação. As definições são então fornecidas automaticamente e os utilizadores não têm de executar nenhuma ação. É necessário que as aplicações tenham sido escritas de forma a suportar a utilização das configurações de aplicação. Consulte o seu fornecedor de aplicações para obter informações adicionais.
 
 Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas sempre que a aplicação as verificar (normalmente, a primeira vez que for executada).
 
@@ -57,8 +57,8 @@ Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em 
 5.  No painel da lista de políticas, escolha **Adicionar**.
 6.  No painel **Adicionar Política de Configuração**, indique um **Nome** e uma **Descrição** opcional para a política de configuração de aplicações.
 7.  Em **Tipo de inscrição de dispositivos**, selecione uma das seguintes opções:
-    - **Inscrito com o Intune** – para aplicações que integraram o SDK da Aplicação Intune e que são geridas pelo Intune.
-    - **Não inscrito com o Intune** – para aplicações que integraram o SDK da Aplicação Intune e que não são geridas pelo Intune ou que são geridas por outra solução.
+    - **Inscrito com o Intune** – para aplicações que são geridas pelo Intune.
+    - **Não inscrito com o Intune** – para aplicações que não são geridas pelo Intune ou que são geridas por outra solução.
 8.  Em **Plataforma**, selecione **iOS** (apenas para dispositivos inscritos com o Intune)
 9.  Escolha **Aplicação Associada** e, em seguida, no painel **Aplicação Associada**, escolha a aplicação gerida à qual quer aplicar a configuração.
 10. No painel **Adicionar Política de Configuração**, selecione **Definições de configuração**

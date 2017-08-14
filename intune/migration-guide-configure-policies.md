@@ -1,11 +1,11 @@
 ---
 title: "Configurar políticas de gestão de aplicações e de conformidade do dispositivo durante uma migração do Intune"
-description: "O objetivo deste artigo é proporcionar os passos necessários para configurar as políticas de gestão de aplicações e de conformidade do dispositivo durante uma migração do Intune."
+description: "Este artigo fornece os passos necessários para configurar as políticas de gestão de aplicações e de conformidade do dispositivo durante uma migração do Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,65 +13,58 @@ ms.technology:
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 5e848dda6643a28141a8f5f1d0bdc01f2bd9d390
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b75368bb8a1172444036b5bd695a4ec36cd9727c
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="configure-device-compliance-and-app-management-policies"></a>Configurar políticas de gestão de aplicações e de conformidade do dispositivo
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-O objetivo principal durante a migração para o Intune é ter todos os dispositivos inscritos e em conformidade com as políticas. As políticas de dispositivo não só o ajudam a gerir dispositivos de utilizador único pertencentes à empresa, como também dispositivos pessoais (BYOD) e partilhados, tais como quiosques, máquinas de pontos de venda, tablets partilhados por vários estudantes numa sala de aula ou dispositivos sem utilizador (apenas iOS).
+O objetivo principal durante a migração para o Intune é ter todos os dispositivos inscritos no Intune e em conformidade com as políticas. As políticas de dispositivo não só o ajudam a gerir dispositivos de utilizador único pertencentes à empresa, como também dispositivos pessoais (BYOD) e partilhados, tais como quiosques, máquinas de pontos de venda, tablets partilhados por múltiplos estudantes numa sala de aula ou dispositivos sem utilizador (apenas iOS).
 
 Cada plataforma do dispositivo poderá oferecer definições diferentes, mas as políticas de dispositivos do Intune trabalham com cada plataforma do dispositivo ao proporcionar as seguintes capacidades de gestão de dispositivos móveis:
 
 -   Regular o número de dispositivos que cada utilizador inscreve.
 
--   Gerir as definições de dispositivos (por exemplo, a encriptação ao nível do dispositivo, o comprimento da palavra-passe, a utilização da câmara).
+-   Gerir as definições dos dispositivos (por exemplo, a encriptação ao nível do dispositivo, o comprimento da palavra-passe, a utilização da câmara).
 
 -   Disponibilizar aplicações, perfis de e-mail, perfis da VPN, etc.
 
 -   Avaliar os critérios ao nível do dispositivo das políticas de conformidade de segurança.
 
 > [!IMPORTANT]
-> As políticas de gestão de dispositivos não são atribuídas diretamente aos dispositivos ou utilizadores individuais, mas, em vez disso, são atribuídas a grupos de utilizadores. As políticas podem ser aplicadas diretamente a um grupo de utilizadores (ou seja, ao dispositivo do utilizador) ou podem ser aplicadas a um grupo de dispositivos (ou seja, aos membros do grupo).
+> As políticas de gestão de dispositivos não são atribuídas diretamente aos dispositivos ou utilizadores individuais, mas, em vez disso, são atribuídas a grupos de utilizadores. As políticas podem ser aplicadas diretamente a um grupo de utilizadores (e, portanto, também ao dispositivo do utilizador) ou podem ser aplicadas a um grupo de dispositivos (e, portanto, também aos membros do grupo).
 
 ## <a name="task-list-for-device-compliance-policies"></a>Lista de tarefas das políticas de conformidade de dispositivo
 
 ### <a name="task-1-add-device-groups-optional"></a>Tarefa 1: Adicionar grupos de dispositivos (opcional)
 
-Pode criar grupos de dispositivos, quando tiver de realizar uma variedade de tarefas administrativas com base na identidade de dispositivo, em vez da identidade do utilizador.
+Pode criar grupos de dispositivos quando tiver de realizar tarefas administrativas com base na identidade do dispositivo em vez da identidade do utilizador.
 
-Os grupos de dispositivos são úteis para a gestão de dispositivos sem utilizadores dedicados, tais como dispositivos de local público ou dispositivos partilhados por trabalhadores de turnos ou atribuídos a uma localização específica.
+Os grupos de dispositivos são úteis para a gestão de dispositivos que não têm utilizadores dedicados, tais como dispositivos de local público, dispositivos partilhados por trabalhadores de turnos ou dispositivos atribuídos a uma localização específica.
 
-Ao configurar grupos de dispositivos antes da inscrição de dispositivos, pode tirar partido das categorias de dispositivos para os agrupar automaticamente após a inscrição e receber automaticamente as políticas de dispositivos do grupo. [Introdução aos grupos](/intune/groups-get-started).
+Ao configurar grupos de dispositivos antes da inscrição de dispositivos, pode utilizar as categorias de dispositivos para os associar automaticamente a grupos após a inscrição. Assim, as políticas de dispositivos do grupo serão recebidas automaticamente. [Introdução aos grupos](groups-get-started.md).
 
 ### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>Tarefa 2: Utilizar perfis de acesso a recursos (certificados de e-mail, Wi-Fi e VPN)
 
-Certificados de aprovisionamento dos perfis de acesso a recursos e configurações de acesso a dispositivos inscritos.
-
-Conforme abordado anteriormente na secção Avaliar requisitos de MDM, se estiver a utilizar a autenticação baseada em certificados, [configure os certificados](/intune/certificates-configure).
+Certificados de fornecimento dos perfis de acesso a recursos e configurações de acesso a dispositivos inscritos. Se estiver a utilizar a autenticação baseada em certificados, [configure os certificados](certificates-configure.md).
 
 ### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Tarefa 3: Criar e implementar perfis de configuração de dispositivos
 
-Tem de criar um perfil de configuração de dispositivos para impor definições ao nível do dispositivo, por exemplo: desativar a câmara, a loja de aplicações, configurar o modo de aplicação única, o ecrã principal, etc.
+Tem de criar um perfil de configuração de dispositivos para impor definições ao nível do dispositivo, por exemplo: desativar a câmara, a loja de aplicações, configurar o modo de aplicação única, o ecrã principal, etc. Saiba mais sobre os [perfis de dispositivo](device-profiles.md).
 
-- Saiba mais sobre os [perfis de dispositivo](/intune/device-profiles).
+####  <a name="directly-import-ios-configuration-profiles-optional"></a>Importar perfis de configuração do iOS diretamente (opcional)
 
-####  <a name="direct-import-of-ios-configuration-profiles-optional"></a>Importação direta de perfis de configuração do iOS (opcional)
-
--   **Perfis de iOS do Apple Configurator (iOS 7.1 e posterior):** se a sua solução de MDM existente utilizar perfis do Apple Configurator (ficheiros .mobileconfig), o Intune poderá importá-los diretamente como políticas de configuração personalizadas.
+-   **Perfis de iOS do Apple Configurator (iOS 7.1 e posterior):** se a sua solução de MDM existente utilizar perfis do Apple Configurator (ficheiros .mobileconfig), o Intune pode importá-los diretamente como políticas de configuração personalizadas.
 
 -   **Políticas de Configuração da Aplicação Móvel do iOS:** se a sua solução de MDM existente utilizar políticas de Configuração da Aplicação Móvel do iOS, o Intune poderá importá-las diretamente, desde que cumpram o formato XML especificado pela Apple para as listas de propriedades.
 
-- Saiba como adicionar uma política personalizada para [iOS](/intune/custom-settings-ios)
+- Saiba como adicionar uma política personalizada para [iOS](custom-settings-ios.md).
 
 ### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>Tarefa 4: Criar e implementar políticas de conformidade do dispositivo (opcional)
 
-As políticas de conformidade do dispositivo avaliam as definições dedicadas à segurança e disponibilizam relatórios que mostram se os dispositivos estão ou não em conformidade com os padrões empresariais. As políticas de conformidade do dispositivo avaliam fatores de segurança, tais como:
+As políticas de conformidade do dispositivo avaliam as definições dedicadas à segurança e disponibilizam relatórios que mostram se os dispositivos estão ou não em conformidade com os padrões empresariais. Tais definições incluem:
 
 -   Comprimento do PIN
 
@@ -81,22 +74,22 @@ As políticas de conformidade do dispositivo avaliam as definições dedicadas �
 
 Veja recursos adicionais para as definições de conformidade do dispositivo:
 
--   Saiba mais sobre as [políticas de conformidade do dispositivo](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune).
+-   Saiba mais sobre as [políticas de conformidade do dispositivo](device-compliance.md).
 
--   Saiba [como criar uma política de conformidade do dispositivo](/intune-classic/deploy-use/create-a-device-compliance-policy-in-microsoft-intune).
+-   Saiba [como criar uma política de conformidade do dispositivo](device-compliance-get-started.md).
 
-### <a name="task-5-publish-and-deploy-apps"></a>Tarefa 5: Publicar e implementar Aplicações
+### <a name="task-5-publish-and-deploy-apps"></a>Tarefa 5: Publicar e implementar aplicações
 
-Ao utilizar o Intune MDM, pode aprovisionar aplicações ao exigir a sua instalação automática ou ao disponibilizá-las no Portal da Empresa.
+Ao utilizar o Intune MDM, pode fornecer aplicações ao exigir a sua instalação automática ou ao disponibilizá-las no Portal da Empresa.
 
--   Saiba [como adicionar aplicações](/intune-classic/deploy-use/add-apps).
+-   [Como adicionar aplicações](apps-add.md).
 
--   Saiba [como implementar aplicações](/intune-classic/deploy-use/deploy-apps).
+-   [Como implementar aplicações](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>Tarefa 6: Ativar a inscrição de dispositivos
 
-A inscrição estabelece a gestão ao aprovisionar o controlo no dispositivo. Saiba [como se preparar para inscrever dispositivos pessoais do utilizador pertencentes à empresa](/intune/device-enrollment).
+A inscrição de dispositivos é necessária para gerir o dispositivo. Saiba [como se preparar para inscrever dispositivos pessoais do utilizador pertencentes à empresa](device-enrollment.md).
 
-## <a name="next-steps"></a>Próximos passos 
+## <a name="next-steps"></a>Próximos passos
 
-[Configurar Políticas de Proteção de Aplicações (opcional)](migration-guide-app-protection-policies.md)
+[Configurar políticas de proteção de aplicações (opcional)](migration-guide-app-protection-policies.md).

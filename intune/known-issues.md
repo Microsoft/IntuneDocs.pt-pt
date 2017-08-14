@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -37,7 +37,7 @@ Se quiser pedir uma nova funcionalidade para o Intune, considere o preenchimento
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Os grupos criados pelo Intune durante a migração podem afetar o funcionamento de outros produtos da Microsoft
 
-Quando migra do Intune clássico para o Azure, poderá ver um novo grupo com o nome **Todos os Utilizadores – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contém todos os utilizadores do Azure Active Directory, não apenas os utilizadores licenciados do Intune. Esta utilização pode provocar problemas com outros produtos Microsoft se estiver à espera que alguns dos utilizadores existentes ou novos não sejam membros de nenhum dos grupos.
+Quando migrar do Intune clássico para o portal do Azure, poderá ver um novo grupo com o nome **Todos os Utilizadores – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contém todos os utilizadores do Azure Active Directory, não apenas os utilizadores licenciados do Intune. Esta utilização pode provocar problemas com outros produtos Microsoft se estiver à espera que alguns dos utilizadores existentes ou novos não sejam membros de nenhum dos grupos.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Migração secundária necessária para capacidades selecionadas
 
@@ -51,12 +51,12 @@ As contas do Intune criadas antes de janeiro de 2017 devem ser migradas antes de
 
 Uma vez que estas capacidades não podem ser geridas no Silverlight clássico e nas consolas do Azure, a migração:
 - Desativa-as na consola clássica
-- Ativa-as na consola do Azure.  
+- Ativa-as na consola do Azure  
 
 Se agora pode gerir estas funcionalidades do Intune no portal do Azure, tenha em atenção os seguintes pontos:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Remove perfis predefinidos de Inscrição de Dispositivos Empresariais no DEP da Apple
-O Portal do Azure não suporta um perfil predefinido de Inscrição de Dispositivos Empresariais para dispositivos do Programa de Inscrição de Dispositivos (DEP) da Apple. Esta funcionalidade, disponível na consola clássica do Intune no Silverlight, é descontinuada para evitar a atribuição inadvertida de perfis. Quando os números de série de DEP são sincronizados no Portal do Azure, não é atribuído nenhum perfil de Inscrição de Dispositivos Empresariais. Um perfil de inscrição deve ser atribuído antes de utilizar o dispositivo.
+O portal do Azure não suporta o perfil predefinido de Inscrição de Dispositivos Empresariais para dispositivos do Programa de Inscrição de Dispositivos (DEP) da Apple. Esta funcionalidade, disponível na consola clássica do Intune no Silverlight, é descontinuada para evitar a atribuição inadvertida de perfis. Quando os números de série de DEP são sincronizados no portal do Azure, não é atribuído nenhum perfil de Inscrição de Dispositivos Empresariais. Um perfil de inscrição deve ser atribuído antes de utilizar o dispositivo.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Token do DEP da Apple restaurado com a migração
 
@@ -64,13 +64,12 @@ Se eliminar um token do Programa de Inscrição de Dispositivos da Apple no port
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Os painéis de estado de políticas migradas não funcionam
 
-Não pode ver as informações de estado de políticas que foram migradas do portal clássico no portal do Azure. No entanto, pode continuar a ver relatórios dessas políticas no Portal clássico.
-Para ver as informações de estado de políticas de configuração migradas, recrie as mesmas no portal do Azure.
+Não pode ver as informações de estado de políticas que foram migradas do portal clássico no portal do Azure. No entanto, pode continuar a ver relatórios dessas políticas no portal clássico. Para ver as informações de estado de políticas de configuração migradas, recrie as mesmas no portal do Azure.
 
 ## <a name="apps"></a>Aplicações
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>As aplicações para iOS compradas em volume só estão disponíveis no idioma predefinido do inquilino do Intune
-As aplicações para iOS compradas em volume são apresentadas e só podem ser atribuídas para os mesmos indicativos de país que a sua conta do Intune. O Intune só sincroniza aplicações da mesma região do iTunes que o indicativo de país da conta do inquilino do Intune. Por exemplo, se comprar uma aplicação que só está disponível na loja dos E.U.A., mas a sua conta estiver em alemão, o Intune não irá mostrar essa aplicação.
+As aplicações para iOS compradas em volume são apresentadas e só podem ser atribuídas para os mesmos indicativos de país que a sua conta do Intune. O Intune só sincroniza aplicações da mesma região do iTunes que o indicativo de país da conta do inquilino do Intune. Por exemplo, se comprar uma aplicação que só está disponível na loja dos E.U.A., mas a sua conta estiver em alemão, o Intune não mostrará essa aplicação.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>São carregadas múltiplas cópias do mesmo programa para iOS comprado em volume
 Não clique no botão **Carregar** múltiplas vezes para o mesmo token VPP. Isto irá resultar no carregamento de tokens VPP duplicados e as aplicações irão sincronizar múltiplas vezes para o mesmo token VPP. 
@@ -109,9 +108,9 @@ Para obter mais informações, veja [O que é a conformidade do dispositivo](dev
 
 ## <a name="data-protection"></a>Proteção de dados
 
-### <a name="ios-app-protection-policies"></a>Políticas de Proteção de Aplicações para iOS
+### <a name="ios-app-protection-policies"></a>Políticas de proteção de aplicações para iOS
 
-Pode definir [Políticas de Proteção de Aplicações para iOS](app-protection-policy-settings-ios.md) disponíveis para os utilizadores em dispositivos geridos através de MAM sem inscrição. Devido a um erro temporário, só pode definir estas políticas para versões do iOS com um único ponto decimal em vez de versões com múltiplos pontos decimais. Em vez de definir uma versão mínima do iOS 10.3.1, irá defini-la para o iOS 10.3. Este problema será resolvido numa futura atualização para o SDK do iOS.
+Pode definir [políticas de proteção de aplicações para iOS](app-protection-policy-settings-ios.md) disponíveis para os utilizadores em dispositivos geridos através de gestão de aplicações móveis (MAM) sem inscrição. Devido a um erro temporário, só pode definir estas políticas para versões do iOS com um único ponto decimal em vez de versões com múltiplos pontos decimais. Em vez de definir uma versão mínima do iOS 10.3.1, irá defini-la para o iOS 10.3. Este problema será resolvido numa futura atualização para o SDK do iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administração e contas

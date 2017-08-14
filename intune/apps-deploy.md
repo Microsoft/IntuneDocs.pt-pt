@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicações a grupos com o Microsoft Intune
 
@@ -59,9 +59,10 @@ As aplicações podem ser atribuídas a dispositivos, independentemente de estes
     - **Obrigatório** – A aplicação é instalada em dispositivos nos grupos selecionados.
     - **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.
     - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune.
+6. **Apenas para aplicações iOS** – se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, pode selecioná-lo em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
 6. Assim que tiver terminado, escolha **Guardar**.
 
-A aplicação está agora atribuída ao grupo que selecionou.
+A aplicação está agora atribuída aos grupos que selecionou.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Como são resolvidos conflitos entre objetivos de aplicações
 
@@ -100,11 +101,11 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com objeti
 |Utilizador – Disponível sem inscrição|Utilizador – Disponível|Disponível|
 |Utilizador – Disponível sem inscrição|Dispositivo – Necessário|Necessário e Disponível sem inscrição|
 |Utilizador – Disponível sem inscrição|Dispositivo – Não Disponível|Disponível sem inscrição|
-|Utilizador – Disponível sem inscrição|Dispositivo – Desinstalar|Desinstalar e Disponível sem inscrição.<br>Se o utilizador não tiver instalado a aplicação a partir do portal da empresa, o objetivo Desinstalação será cumprido.<br>Se o utilizador instalar a aplicação a partir do portal da empresa, a instalação será priorizada em relação à desinstalação.|
+|Utilizador – Disponível sem inscrição|Dispositivo – Desinstalar|Desinstalar e Disponível sem inscrição.<br>Se o utilizador não tiver instalado a aplicação a partir do portal da empresa, o objetivo Desinstalação é cumprido.<br>Se o utilizador instalar a aplicação a partir do portal da empresa, a instalação é priorizada em relação à desinstalação.|
 
 >[!NOTE]
 >Apenas para aplicações da loja iOS geridas: quando as adiciona ao Intune e as atribui como Necessário, estas aplicações são criadas automaticamente com os objetivos Necessário e Disponível.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.

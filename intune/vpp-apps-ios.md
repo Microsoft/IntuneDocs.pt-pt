@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -33,6 +33,19 @@ O Microsoft Intune ajuda-o a gerir aplicações adquiridas através desse progra
 - Importar as informações de licença a partir da loja de aplicações
 - Controlar o número de licenças que utilizou
 - Impedi-lo de instalar mais cópias da aplicação do que aquelas que tem
+
+Existem dois métodos que pode utilizar para atribuir as aplicações compradas em volume:
+
+### <a name="device-licensing"></a>Licenciamento de dispositivos
+
+Quando atribui uma aplicação a dispositivos, é utilizada uma licença de aplicação que permanece associada ao dispositivo ao qual foi atribuída.
+Quando atribui aplicações compradas em volume a um dispositivo, o utilizador final do dispositivo não tem de fornecer um ID Apple para aceder à loja. 
+
+### <a name="user-licensing"></a>Licenciamento de utilizadores
+
+Quando atribui uma aplicação a utilizadores, é utilizada uma licença de aplicação que é associada ao utilizador. A aplicação pode ser executada em múltiplos dispositivos do utilizador.
+Quando atribui uma aplicação comprada em volume a utilizadores, cada utilizador final tem de ter um ID Apple válido para aceder à loja de aplicações.
+
 
 Além disso, pode sincronizar, gerir e atribuir livros que tenha comprado na loja do Apple Volume Purchase Program com o Intune. Utilize a carga de trabalho **Livros** no portal do Intune para gerir os livros. Os procedimentos para gerir livros são os mesmos que utiliza para gerir aplicações.
 Para realizar este procedimento, antes de começar, é preciso carregar um token do Apple Volume Purchase Program. Atualmente, só pode atribuir livros como uma instalação **Obrigatória**.
@@ -81,24 +94,28 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir uma aplicação comprada em volume
 
-1. Na carga de trabalho **Aplicações Móveis**, escolha **Gerir** > **Aplicações Licenciadas**.
-2. No painel da lista de aplicações, escolha a aplicação que quer atribuir e, em seguida, escolha “**...**” > **Atribuir Grupos**.
-3. No painel <*nome da aplicação*> – **Grupos Atribuídos**, escolha **Gerir** > **Grupos Atribuídos**.
-4. Selecione **Atribuir Grupos** e, em seguida, no painel **Selecionar grupos**, selecione o utilizador ou grupos de dispositivos do Azure AD aos quais pretende atribuir a aplicação.
-Tem de escolher uma ação de atribuição **Obrigatória**. Além disso, as atribuições a grupos de dispositivos estão disponíveis para novos inquilinos criados após janeiro de 2017. Se o seu inquilino tiver sido criado antes desta data e não tiver a opção de atribuir aplicações do VPP a grupos de dispositivos, contacte o suporte do Intune.
-5. Assim que tiver terminado, escolha **Guardar**.
+1.  Na carga de trabalho **Aplicações Móveis**, selecione **Gerir** > **Licenças de Aplicação**.
+2.  No painel da lista de aplicações, escolha a aplicação que quer atribuir e, em seguida, escolha “**...**” > **Atribuir Grupos**.
+3.  No painel *<app name>* - **Atribuições**, selecione **Gerir** > **Atribuições**.
+4.  Clique em **Selecionar Grupos** e, em seguida, no painel **Selecionar grupos**, selecione o utilizador ou grupos de dispositivos do Azure AD aos quais pretende atribuir a aplicação.
+5.  Para cada grupo que escolheu, selecione as seguintes definições:
+    - **Tipo** – decida se a aplicação estará **Disponível** (os utilizadores finais podem instalar a aplicação a partir do Portal da Empresa) ou será **Obrigatória** (a aplicação será automaticamente instalada nos dispositivos dos utilizadores finais).
+Quando atribui uma aplicação VPP como **Disponível**, a licença e o conteúdo da aplicação são atribuídos diretamente a partir da loja de aplicações.
+    - **Tipo de licença** – escolha entre o **Licenciamento de utilizadores** e o **Licenciamento de dispositivos**.
+6.  Assim que tiver terminado, escolha **Guardar**.
+
 
 >[!NOTE]
 >A lista de aplicações apresentada está associada a um token. Se tiver uma aplicação que está associada a múltiplos tokens VPP, verá a mesma aplicação apresentada múltiplas vezes (uma para cada token).
 
-Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.
-
 ## <a name="further-information"></a>Informações adicionais
 
-Se atribuir a aplicação como uma instalação **Obrigatória**, é utilizada uma licença por cada utilizador que a instalar.
-
-Para recuperar uma licença, tem de alterar a ação de atribuição para **Desinstalar**. A licença será recuperada quando desinstalar a aplicação.
+Para recuperar uma licença, tem de alterar a ação de atribuição para Desinstalar. A licença será recuperada quando desinstalar a aplicação.
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação VPP pela primeira vez, é-lhe pedido para aderir ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação. O convite para aderir ao Apple Volume Purchase Program exige que o utilizador possa utilizar a aplicação iTunes no dispositivo iOS. Se tiver definido uma política para desativar a aplicação da Loja do iTunes, o licenciamento baseado no utilizador para aplicações VPP não funciona. A solução é permitir a aplicação iTunes ao remover a política ou utilizar o licenciamento baseado no dispositivo.
 
-Quando atribui uma aplicação VPP como Disponível, a licença e o conteúdo da aplicação são atribuídos diretamente a partir da loja de aplicações.
+
+
+## <a name="next-steps"></a>Próximos passos
+
+Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.
