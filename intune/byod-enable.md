@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Ativar o BYOD com o Intune
 
@@ -75,14 +75,14 @@ Com o Intune, é fácil:
 * [Fornecer aplicações da loja a dispositivos geridos](apps-deploy.md)
 * Direcionar aplicações para dispositivos não geridos através do site do portal da empresa
 
-O Intune também lhe permite gerir e implementar as aplicações que comprou em volume na iOS App Store e na Loja Windows para Empresas. Esta possibilidade ajuda-o a reduzir a sobrecarga administrativa de controlar aplicações compradas em volume.
+O Intune também lhe permite gerir e implementar as aplicações que comprou em volume na iOS App Store e na Loja Microsoft para Empresas. Esta possibilidade ajuda-o a reduzir a sobrecarga administrativa de controlar aplicações compradas em volume.
 
 > [!TIP]
 > Pode [configurar o Início de Sessão Único (SSO) com o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). O SSO permite aos utilizadores iniciar sessão em aplicações com o nome de utilizador e a palavra-passe do domínio que utilizam no local. Além disso, pode [fornecer acesso baseado na Internet a aplicações Web alojadas no local](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) com o Proxy de Aplicações do Azure Active Directory.
 
 -   [Gerir aplicações compradas em volume para dispositivos iOS](vpp-apps-ios.md). Compra múltiplas licenças para aplicações iOS através do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). Tem de configurar uma conta Apple VPP no site da Apple e carregar o token Apple VPP para o Intune. Em seguida, pode sincronizar as informações de compra em volume com o Intune e controlar a utilização da aplicação comprada em volume.
 
--   [Gerir aplicações compradas na Loja Windows para Empresas](windows-store-for-business.md). Na [Loja Windows para Empresas](https://www.microsoft.com/business-store), pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Intune, pode gerir as aplicações compradas em volume a partir do portal do Intune.
+-   [Gerir aplicações compradas na Loja Microsoft para Empresas](windows-store-for-business.md). Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store), pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Intune, pode gerir as aplicações compradas em volume a partir do portal do Intune.
 
 ## <a name="protect-company-data"></a>Proteger os dados da empresa
 
@@ -105,10 +105,10 @@ Pode utilizar as [políticas de proteção de aplicações do Intune](app-protec
 
 Utilize as [políticas do Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) para proceder da mesma forma nos dispositivos Windows 10 geridos. Estas políticas funcionam sem interferir com a experiência do funcionário. Não necessitam de alterações ao ambiente da sua rede ou outras aplicações.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Eliminar dados da empresa, deixando intactos os dados pessoais
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Remover dados da empresa, deixando intactos os dados pessoais
 
-Quando um dispositivo deixa de ser necessário para fins profissionais, vai ser redirecionado para outros objetivos ou desapareceu, pode remover as aplicações e os dados da empresa do mesmo. Para tal, pode utilizar as funcionalidades de eliminação completa e eliminação seletiva do Intune. Os utilizadores também podem fazer a eliminação remota dos respetivos dispositivos pessoais a partir do Portal da Empresa do Intune, caso estejam inscritos no Intune.
+Quando um dispositivo deixa de ser necessário para fins profissionais, vai ser redirecionado para outros objetivos ou desapareceu, pode remover as aplicações e os dados da empresa do mesmo. Para o fazer, pode utilizar as funcionalidades de reposição de fábrica e remoção de dados da empresa do Intune. Os utilizadores também podem fazer a reposição remota dos respetivos dispositivos pessoais a partir do Portal da Empresa do Intune, caso estejam inscritos no Intune.
 
-A [eliminação completa](devices-wipe.md) restaura as predefinições de fábrica do dispositivo e remove os dados e definições do utilizador. A [eliminação seletiva](devices-wipe.md#selective-wipe) só remove os dados da empresa do dispositivo, mas mantém os dados pessoais do utilizador intactos.
+Uma [reposição de fábrica](devices-wipe.md) restaura as predefinições de fábrica de um dispositivo, remove os dados e definições do utilizador e elimina o dispositivo da gestão do Intune. A opção [Remover dados da empresa](devices-wipe.md#remove-company-data) só remove os dados da empresa do dispositivo, mas mantém os dados pessoais do utilizador intactos.
 
-Uma vez iniciada, o dispositivo começa imediatamente o processo de eliminação seletiva para que seja removido da gestão. Quando o processo for concluído, todos os dados da empresa serão eliminados e o nome do dispositivo será removido do portal do Intune. Assim termina o ciclo de vida de gestão do dispositivo.
+Uma vez iniciada, o dispositivo começa imediatamente o processo de reposição. Quando o processo estiver concluído, todos os dados da empresa serão eliminados e o nome do dispositivo será removido do Intune. Assim termina o ciclo de vida de gestão do dispositivo.
