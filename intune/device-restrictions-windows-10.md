@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -72,7 +72,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 ## <a name="privacy"></a>Privacidade
 
--   **Personalização de entrada** – não permite a utilização de serviços de fala baseados na cloud para a Cortana, o ditado ou aplicações da Loja Windows. Se permitir estes serviços, a Microsoft recolherá os dados de voz para melhorar o serviço.
+-   **Personalização de entrada** – não permite a utilização de serviços de fala baseados na cloud para a Cortana, o ditado ou aplicações da Loja Microsoft. Se permitir estes serviços, a Microsoft recolherá os dados de voz para melhorar o serviço.
 -   **Aceitação automática de pedidos de consentimento do utilizador de emparelhamento e privacidade** – permite que o Windows aceite automaticamente as mensagens de consentimento de emparelhamento e privacidade ao executar as aplicações.
 
 
@@ -91,12 +91,12 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 ## <a name="app-store"></a>App Store
 
 -   **App Store (apenas dispositivos móveis)** – Permita ou bloqueie a utilização da loja de aplicações em dispositivos Windows 10 Mobile.
--   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Windows sejam atualizadas automaticamente.
+-   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Microsoft sejam atualizadas automaticamente.
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
 -   **Dados da aplicação do utilizador partilhados** – permite que as aplicações partilhem dados entre os diferentes utilizadores no mesmo dispositivo.
 -   **Utilizar apenas loja privada** – ative esta opção para permitir que apenas os utilizadores finais transfiram aplicações a partir da loja privada.
--   **Lançamento de aplicação originado pela loja** – utilizado para desativar todas as aplicações que foram previamente instaladas no dispositivo ou transferidas a partir da Loja Windows.
+-   **Lançamento de aplicação originado pela loja** – utilizado para desativar todas as aplicações que foram previamente instaladas no dispositivo ou transferidas a partir da Loja Microsoft.
 -   **Instalar dados da aplicação no volume de sistema** – impede que as aplicações armazenem dados no volume do sistema do dispositivo.
 -   **Instalar dados da aplicação na unidade do sistema** – impede que as aplicações armazenem dados na unidade do sistema do dispositivo.
 -   **Gravador de Jogo (apenas no ambiente de trabalho)** – configura se a gravação e a difusão de jogos são permitidas.

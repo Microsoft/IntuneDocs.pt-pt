@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Intune. O ficheiro do Power BI (pbix) do Armazém de Dados contém definições de ligação ao seu inquilino e os seguintes gráficos e relatórios de exemplo: 
+Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Intune. O ficheiro do Power BI (pbix) do Armazém de Dados contém definições de ligação ao seu inquilino e os seguintes gráficos e relatórios de exemplo:  
 
   -  Dispositivos
   -  Inscrição
@@ -45,6 +45,9 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Carregar os dados e relatórios com o ficheiro do Power BI (pbix)
 
 O ficheiro do Power BI (pbix) contém informações de ligação para o seu inquilino e um conjunto de relatórios criados previamente com base no modelo de dados do Armazém de Dados. Abra o ficheiro no Power BI Desktop e inicie sessão no Azure AD. O relatório carrega os dados do seu inquilino do Intune.
+
+> [!Important]  
+> Cada ficheiro do Power BI (pbix) poderá ser diferente consoante a localização do inquilino. Se estiver a gerir múltiplos inquilinos do Intune, certifique-se de que utiliza o ficheiro transferido a partir do portal do Azure enquanto tem sessão iniciada nesse inquilino.  
 
 1.  Inicie sessão no portal do Azure e selecione **Monitorização + Gestão** > **Intune**. Também pode procurar recursos para o **Intune**.  
 2.  Abra o painel **API do Armazém de Dados do Microsoft Intune (Pré-visualização)**.

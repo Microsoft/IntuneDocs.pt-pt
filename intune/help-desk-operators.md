@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7aad054f0861522174faa01b979083a818c106af
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Ajudar os utilizadores com o Portal de resolução de problemas no Microsoft Intune
+# <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilizar o portal de resolução de problemas
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,22 +35,21 @@ Por exemplo, quando um utilizador contacta o suporte acerca de um problema técn
 -   O dispositivo não consegue aceder às definições de VPN ou Wi-Fi
 -   Falha na instalação da aplicação
 
-
 ## <a name="add-help-desk-operators"></a>Adicionar operadores de suporte técnico
 Enquanto administrador do Intune, pode atribuir a função Operador de Suporte Técnico a um grupo de utilizadores. Os membros desse grupo podem utilizar o portal de administração para resolver problemas dos utilizadores. Cada operador de suporte técnico tem de ter uma licença do Intune para aceder ao portal do Intune. Saiba como [atribuir licenças do Intune](licenses-assign.md).
 
 Para adicionar operadores de suporte técnico:
-1. [Adicione um utilizador ao Intune](users-add.md), se necessário
-2. [Crie um grupo de suporte técnico](groups-add.md) e adicione utilizadores ao grupo
-3. [Atribua a função de Operador de Suporte Técnico de RBAC](role-based-access-control.md#built-in-roles) ou [crie uma função personalizada](role-based-access-control.md#custom-roles) com as seguintes permissões:
-  - Aplicações Móveis: ler
-  - Aplicações Geridas: ler
-  - Dispositivos Geridos: ler
-  - Organização: ler
-  - Políticas de Conformidade dos Dispositivos: ler
-  - Configurações dos Dispositivos: ler
+1. [Adicione utilizadores ao Intune](users-add.md) se necessário.
+2. [Crie um grupo de suporte técnico](groups-add.md) e adicione utilizadores ao grupo.
+3. [Atribua a função de Operador de Suporte Técnico de RBAC](role-based-access-control.md#built-in-roles)
 
-  ![Captura de ecrã a mostrar o portal do Intune, com as funções do Intune realçadas e uma lista das funções incorporadas, incluindo Operador de Suporte Técnico](./media/help-desk-user-add.png)
+  ![Captura de ecrã a mostrar o portal do Intune, com as funções do Intune realçadas e uma lista das funções incorporadas, incluindo Operador de Suporte Técnico](./media/help-desk-user-add.png) Também pode [criar uma função personalizada](role-based-access-control.md#custom-roles) que pode modificar para conceder acesso aos operadores de suporte técnico.  Os operadores de suporte técnico necessitam das seguintes permissões para ajudar a resolver os problemas do utilizador:
+    - Aplicações Móveis: ler
+    - Aplicações Geridas: ler
+    - Dispositivos Geridos: ler
+    - Organização: ler
+    - Políticas de Conformidade dos Dispositivos: ler
+    - Configurações dos Dispositivos: ler
 
 4. Para dar permissão aos operadores de suporte técnico para ver o estado de funcionamento do serviço e abrir pedidos de suporte do Intune, [conceda permissões de administrador aos utilizadores](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) como **Administrador de Serviços**. Não conceda a permissão **Administrador do Serviço Intune**, porque esta função de diretório contém mais direitos do que os necessários para operadores de suporte técnico.
 
