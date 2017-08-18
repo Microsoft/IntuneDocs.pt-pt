@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b2af07817b15c2afd2d2674aa0c6d8a403147421
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 1753545450d684f366ef4e323104d92ff0a55cbb
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>Anular a inscrição do seu dispositivo iOS no Intune
 
@@ -33,7 +33,7 @@ Para anular a inscrição do dispositivo no Intune, utilize estes passos ou veja
 
 1.  Na aplicação Portal da Empresa, em **Os Meus Dispositivos**,selecione o dispositivo cuja inscrição pretende anular.
 
-2.  Toque em **Remover** >; **Remover**.
+2.  Toque em **Remover** > **Remover**.
 
 Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 

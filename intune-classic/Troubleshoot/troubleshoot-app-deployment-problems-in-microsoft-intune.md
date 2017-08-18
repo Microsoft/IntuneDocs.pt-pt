@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Resolução de problemas de implementação de aplicações no Microsoft Intune
 
@@ -36,9 +36,9 @@ Se estiver a ter problemas de implementação e gestão de aplicações com o In
 |0x80073CFB|O pacote fornecido já está instalado e a reinstalação do pacote está bloqueada|Poderá receber este erro se estiver a instalar um pacote que não é idêntico ao pacote que já está instalado. Verifique se a assinatura digital também faz parte do pacote. Quando um pacote é reconstruído ou assinado novamente, esse pacote já não é totalmente idêntico ao pacote anteriormente instalado. Existem duas opções possíveis para corrigir este erro:<br /><br />–   Incrementar o número de versão da aplicação e, em seguida, reconstruir e voltar a assinar o pacote.<br />–   Remover o pacote antigo de todos os utilizadores do sistema antes de instalar o pacote novo.|
 |0x87D1041C|A aplicação foi instalada com êxito, mas a aplicação não foi detetada.|– A aplicação foi implementada com êxito pelo Intune e foi desinstalada posteriormente (possivelmente pelo utilizador final). Diga ao utilizador para reinstalar a aplicação a partir do portal da empresa. As aplicações necessárias serão reinstaladas automaticamente quando o dispositivo efetuar a verificação seguinte.|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>Resolução de problemas de aplicações da Loja Windows
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Resolução de problemas de aplicações da Loja Microsoft
 
-As informações presentes no tópico [Resolução de problemas de empacotamento, implementação e consulta de aplicações da Loja Windows](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) ajudam-no a resolver problemas comuns que poderá encontrar ao instalar aplicações da Loja Windows, quer seja através do Intune ou de outros meios.
+As informações presentes no tópico [Resolução de problemas de empacotamento, implementação e consulta de aplicações da Loja Microsoft](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) ajudam-no a resolver problemas comuns que poderá encontrar ao instalar aplicações da Loja Microsoft, quer seja através do Intune ou de outros meios.
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Resolução de problemas de implementação de aplicações em PCs geridos pelo cliente de software do Intune
 Para obter ajuda na resolução de problemas ao implementar aplicações em PCs geridos pelo cliente de software do Intune, pode consultar os dois ficheiros de registo seguintes:
@@ -48,5 +48,5 @@ Para obter ajuda na resolução de problemas ao implementar aplicações em PCs 
 Além disso, se precisar de abrir um caso de suporte para o Intune, também será útil enviar estes registos para a Microsoft.
 
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

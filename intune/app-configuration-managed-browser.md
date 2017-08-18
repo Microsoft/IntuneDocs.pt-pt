@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas do Managed Browser com o Microsoft Intune
 
@@ -50,7 +50,12 @@ Pode criar políticas de Managed Browser para os seguintes tipos de dispositivos
 
 -   Dispositivos com iOS 8.0 ou posterior
 
-O Managed Browser do Intune suporta a abertura de conteúdos da Web de [Parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
+>[!IMPORTANT]
+>A partir de outubro de 2017, a aplicação Intune Managed Browser na aplicação Android irá suportar apenas dispositivos a executar o Android 4.4 e posterior. A aplicação Intune Managed Browser no iOS irá suportar apenas dispositivos a executar o iOS 9.0 e posterior.
+>As versões anteriores do Android e iOS poderão continuar a utilizar o Managed Browser, mas não poderão instalar novas versões da aplicação e poderão não conseguir aceder a todas as funcionalidades da aplicação. Aconselhamos que atualize estes dispositivos para uma versão do sistema operativo suportada.
+
+
+O Intune Managed Browser suporta a abertura de conteúdos da Web de [Parceiros de aplicações do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Criar uma configuração da aplicação Managed Browser
 
@@ -84,19 +89,15 @@ Atribua as definições a grupos de utilizadores do Azure AD. Se esse utilizado
 
 O Intune Managed Browser e o [Proxy de Aplicações do Azure AD]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) podem ser utilizados em conjunto para suportar os seguintes cenários para utilizadores de dispositivos iOS e Android:
 
-- Um utilizador transfere e inicia sessão na aplicação Microsoft Outlook.  As políticas de proteção de aplicações do Intune são aplicadas automaticamente. Encriptam os dados guardados e impedem que o utilizador transfira ficheiros empresariais para aplicações ou localizações não geridas no dispositivo. Quando o utilizador clica numa ligação para um site da intranet no Outlook, pode especificar se a ligação é aberta na aplicação Managed Browser, em vez de noutro browser.
-O Managed Browser reconhece que este site da intranet foi exposto ao utilizador através do Proxy de Aplicações. O utilizador é encaminhado automaticamente através do Proxy de Aplicações para se autenticar com qualquer autenticação multifator e acesso condicional aplicáveis antes de chegar ao site da intranet. Este site, que anteriormente não podia ser encontrado por utilizadores remotos, está agora acessível e a ligação no Outlook funciona como esperado.  
-
-- Um utilizador remoto abre a aplicação Managed Browser e navega para um site da intranet através do URL interno. O Managed Browser reconhece que este site da intranet foi exposto ao utilizador através do Proxy de Aplicações. O utilizador é encaminhado automaticamente através do Proxy de Aplicações para se autenticar com qualquer autenticação multifator e acesso condicional aplicáveis antes de chegar ao site da intranet.
-Este site, que anteriormente os utilizadores remotos não podiam encontrar, está agora acessível.  
+- Um utilizador transfere e inicia sessão na aplicação Microsoft Outlook. As políticas de proteção de aplicações do Intune são aplicadas automaticamente. Encriptam os dados guardados e impedem que o utilizador transfira ficheiros empresariais para aplicações ou localizações não geridas no dispositivo. Quando o utilizador clica numa ligação para um site da intranet no Outlook, pode especificar se a ligação é aberta na aplicação Managed Browser, em vez de noutro browser. O Managed Browser reconhece que este site da intranet foi exposto ao utilizador através do Proxy de Aplicações. O utilizador é encaminhado automaticamente através do Proxy de Aplicações para se autenticar com qualquer autenticação multifator e acesso condicional aplicáveis antes de chegar ao site da intranet. Este site, que anteriormente não podia ser encontrado por utilizadores remotos, está agora acessível e a ligação no Outlook funciona como esperado.
+- Um utilizador remoto abre a aplicação Managed Browser e navega para um site da intranet através do URL interno. O Managed Browser reconhece que este site da intranet foi exposto ao utilizador através do Proxy de Aplicações. O utilizador é encaminhado automaticamente através do Proxy de Aplicações para se autenticar com qualquer autenticação multifator e acesso condicional aplicáveis antes de chegar ao site da intranet. Este site, que anteriormente os utilizadores remotos não podiam encontrar, está agora acessível.
 
 ### <a name="before-you-start"></a>Antes de começar
 
-- Certifique-se de que as suas aplicações internas foram publicadas através do Proxy de Aplicações do Azure AD.
-- Para configurar o Proxy de Aplicações e publicar aplicações, veja a [documentação de configuração]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-- Tem de utilizar a versão mínima da aplicação Managed Browser 1.2.0.
-- Os utilizadores da aplicação Managed Browser têm uma [política de proteção de aplicações do Intune]( app-protection-policy.md) atribuída à aplicação.
-- Os utilizadores só podem ver o redirecionamento automático das aplicações de proxy que lhes foram atribuídas.
+- Configure as suas aplicações internas através do Proxy de Aplicações do Azure AD.
+    - Para configurar o Proxy de Aplicações e publicar aplicações, veja a [documentação de configuração]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+    - Tem de utilizar a versão mínima da aplicação Managed Browser 1.2.0.
+    - Os utilizadores da aplicação Managed Browser têm uma [política de proteção de aplicações do Intune]( app-protection-policy.md) atribuída à aplicação.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Passo 1: ativar o redirecionamento automático para o Managed Browser a partir do Outlook
 O Outlook tem de estar configurado com uma política de proteção de aplicações que ative a definição **Restringir o conteúdo Web a apresentar no Managed Browser**.

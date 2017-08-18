@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o seu dispositivo Windows Phone 8.1 no Intune
 
@@ -29,11 +29,11 @@ Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus di
 
 Para inscrever o dispositivo Windows Phone 8.1 no Intune, siga as instruções que se aplicam à sua empresa ou escola:
 
--   [Caso a sua empresa permita a utilização do Portal da Empresa a partir da Loja Windows](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Caso a sua empresa permita a utilização do Portal da Empresa a partir da Loja Microsoft](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Caso não tenha permissão para aceder à Loja Windows a partir do seu Windows Phone ou não tenha uma Conta Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Caso não tenha permissão para aceder à Loja Microsoft a partir do seu Windows Phone ou não tenha uma Conta Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Se a sua empresa permitir a utilização do Portal da Empresa a partir da Loja Windows
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Caso a sua empresa permita a utilização do Portal da Empresa a partir da Loja Microsoft
 Instalar a aplicação Portal da Empresa no dispositivo:
 
 1.  Toque em **Iniciar** &gt; **Loja**.
@@ -72,7 +72,7 @@ Inscrever o dispositivo:
 
     ![Ecrã de conta adicionada](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Se não tiver permissão para aceder à Loja Windows a partir do seu Windows Phone ou se não tiver uma Conta Microsoft
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Caso não tenha permissão para aceder à Loja Microsoft a partir do seu Windows Phone ou não tenha uma Conta Microsoft
 
 1.  Toque em **Definições** &gt; **área de trabalho**.
 

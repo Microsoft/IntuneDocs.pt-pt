@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja Windows ao Microsoft Intune
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/01/2017
 5. Acima da lista de aplicações, escolha **Adicionar**.
 6. No painel **Adicionar Aplicação**, escolha **Informações da Aplicação**.
 7. No painel **Editar Aplicação**, configure as informações seguintes. Quando tiver terminado, clique em **Adicionar**. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
-    - **Nome da Aplicação** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se o mesmo nome de aplicação existir duas vezes, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
+    - **Nome da Aplicação** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição da Aplicação** – Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
     - **Publicador** - Introduza o nome do publicador da aplicação.
     - **URL da loja de aplicações** – Introduza o URL da loja de aplicações da aplicação que pretende criar.
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 A aplicação que criou será apresentada na lista de aplicações onde a pode atribuir aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Atribuir manualmente a aplicação Portal da Empresa do Windows 10
-Os utilizadores finais podem instalar a aplicação Portal da Empresa a partir da Loja Windows para gerir dispositivos e instalar aplicações. No entanto, se as suas necessidades empresariais incluírem a atribuição da aplicação Portal da Empresa, poderá atribuir manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune, mesmo que não tenha integrado o Intune com a Loja Windows para Empresas.
+Os utilizadores finais podem instalar a aplicação Portal da Empresa a partir da Loja Microsoft para gerir dispositivos e instalar aplicações. No entanto, se as suas necessidades empresariais incluírem a atribuição da aplicação Portal da Empresa, poderá atribuir manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune, mesmo que não tenha integrado o Intune com a Loja Microsoft para Empresas.
 
  > [!NOTE]
  > Esta opção precisará da atribuição das atualizações manuais sempre que uma atualização da aplicação for disponibilizada.
 
-1. Inicie sessão na sua conta na [Loja Windows para Empresas](https://www.microsoft.com/business-store) e compre a versão da **licença offline** da aplicação Portal da Empresa.  
+1. Inicie sessão na sua conta na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) e compre a versão da **licença offline** da aplicação Portal da Empresa.  
 2. Assim que a aplicação tiver sido comprada, selecione a aplicação na página **Inventário**.  
 3. Selecione **Todos os dispositivos Windows 10** como a **Plataforma** e, em seguida, a **Arquitetura** adequada e transfira. Não é preciso um ficheiro de licença de aplicação para esta aplicação.
 ![Imagem de Todos os dispositivos Windows 10 e detalhes do Pacote de Arquitetura X86 para Transferência](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Se a aplicação Portal da Empresa do Windows 10 estiver assinada e atribuída 
 Veja a seguir como pode assinar e atribuir a aplicação desta forma:
 
 1. Transfira o Script de Assinatura da Aplicação Portal da Empresa do Windows 10 do Microsoft Intune a partir de [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requer que o Windows SDK para o Windows 10 esteja instalado no computador anfitrião. Para transferir o Windows SDK para o Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Transfira a aplicação Portal da Empresa do Windows 10 na Loja Windows para Empresas, conforme detalhado acima.  
+2. Transfira a aplicação Portal da Empresa do Windows 10 na Loja Microsoft para Empresas, conforme detalhado acima.  
 3. Execute o script com os parâmetros de entrada detalhados no cabeçalho do script para assinar a aplicação Portal da Empresa do Windows 10 (extraída abaixo). As dependências não precisam de ser transmitidas para o script. Só são precisas quando a aplicação está a ser carregada para a Consola de Administração do Intune.
 
 |Parâmetro | Descrição|
