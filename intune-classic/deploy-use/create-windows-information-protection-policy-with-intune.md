@@ -2,8 +2,8 @@
 title: "Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune"
 description: "Criar e implementar a política de proteção de aplicações do WIP com o Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7aa879307ef3b72660d1ba7b3c3c2f99fc82dc97
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 78352c995311f5b097954ce86098165408d5d810
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -35,6 +35,13 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 -   **Aplicações permitidas:** são as aplicações que precisam de cumprir esta política.
 
 -   **Aplicações excluídas:** estas aplicações estão excluídas desta política e podem aceder aos dados empresariais sem restrições.
+
+> [!IMPORTANT]  
+> O Intune recomenda que adicione a aplicação Portal da Empresa à lista de aplicações excluídas para permitir que a mesma funcione corretamente. Para fazê-lo, adicione a seguinte **aplicação da Loja** à lista de **Aplicações excluídas**:  
+>   - Nome: Portal da Empresa  
+>   - Publicador: NE=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, E=Washington, P=E.U.A.  
+>   - Nome do Produto: Microsoft.CompanyPortal"  
+
 
 ### <a name="types-of-apps"></a>Tipos de aplicações
 

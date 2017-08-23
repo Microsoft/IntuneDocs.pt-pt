@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 1de2069b7b25ee5e5c21a8e4caa7512f13d4ca0e
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Terminar a sessão do utilizador atual em dispositivos iOS geridos pelo Intune
 
@@ -26,7 +26,17 @@ ms.lasthandoff: 07/14/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-A ação **Terminar a sessão do utilizador atual** termina a sessão do utilizador atual num dispositivo iPad partilhado que tenha sido configurado para gerir a aplicação Sala de Aula para iOS com um [perfil de educação do iOS](education-settings-configure-ios.md). 
+A ação **Terminar sessão do utilizador atual** termina a sessão do utilizador atual num dispositivo iPad partilhado configurado para gerir a aplicação Classroom para iOS com um [perfil de educação do iOS](education-settings-configure-ios.md). 
+
+## <a name="supported-platforms"></a>Plataformas suportadas
+
+- Windows – não suportado
+- Windows Phone – não suportado
+- iOS – suportado no iOS 9.3 e posterior (apenas dispositivos iPad partilhados)
+- macOS – não suportado
+- Android – não suportado
+
+## <a name="how-to-logout-the-current-user"></a>Como terminar a sessão do utilizador atual
 
 1.  Inicie sessão no portal do Azure.
 2.  Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.

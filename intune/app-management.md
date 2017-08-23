@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -87,7 +87,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 
 ### <a name="monitor"></a>Monitor
 - **Aplicações Licenciadas** – veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações.
-    - [Aplicações compradas em volume na Loja Windows para Empresas](windows-store-for-business.md)
+    - [Aplicações compradas em volume na Loja Microsoft para Empresas](windows-store-for-business.md)
 - **Aplicações Detetadas** – Mostra todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo.
 - **Estado da Instalação da Aplicação** – Mostra o estado da atribuição de uma aplicação que criou.
 - **Estado da proteção da aplicação** – mostra o estado da política de proteção de uma aplicação de um utilizador selecionado.
@@ -97,7 +97,7 @@ Para obter mais detalhes, veja [Monitorizar aplicações](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Loja Windows para Empresas** – Configure a integração na Loja Windows para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças.
-    - [Aplicações compradas em volume na Loja Windows para Empresas](windows-store-for-business.md)
+- **Loja Microsoft para Empresas** – configure a integração na Loja Microsoft para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças.
+    - [Aplicações compradas em volume na Loja Microsoft para Empresas](windows-store-for-business.md)
 - **Imagem corporativa do Portal da Empresa** – personalize o Portal da Empresa de modo a dar-lhe a imagem corporativa da sua empresa.
     - [Configuração do portal da empresa](company-portal-app.md)
