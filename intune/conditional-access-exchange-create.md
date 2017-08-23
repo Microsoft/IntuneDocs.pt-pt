@@ -1,7 +1,7 @@
 ---
 title: "Criar e atribuir a política de acesso condicional do Exchange no local"
 titleSuffix: Intune on Azure
-description: Como pode configurar o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune"
+description: Configure o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Como criar e atribuir uma política de acesso condicional do Exchange no local e do Exchange Online Dedicado legado no Microsoft Intune
 

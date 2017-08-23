@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Repor o código de acesso em dispositivos Windows integrados com o Serviço de Reposição do PIN da Microsoft através do Intune
 
 A funcionalidade de reposição de código de acesso para dispositivos Windows tem integração com o Serviço de Reposição do PIN da Microsoft para permitir gerar um novo código de acesso para dispositivos que executem o Windows 10 Mobile. Os dispositivos têm de ter a Atualização para Criativos do Windows 10 ou posterior.
+
+## <a name="supported-platforms"></a>Plataformas suportadas
+
+- Windows – suportado na Atualização para Criativos do Windows 10 e posterior (associada ao Azure AD)
+- Windows Phone – não suportado
+- iOS – não suportado
+- macOS – não suportado
+- Android – não suportado
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -40,13 +48,14 @@ Antes de poder repor o código de acesso remotamente em dispositivos Windows que
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar dispositivos Windows para utilizar a reposição do PIN
 
-Para configurar a reposição do PIN nos dispositivos Windows que gere, utilize uma [política de dispositivo personalizada do Windows 10 do Intune](custom-settings-windows-10.md) para ativar a funcionalidade. Configure a política através dos seguintes fornecedores de serviços de configuração de políticas do Windows (CSPs):
+Para configurar a reposição do PIN nos dispositivos Windows que gere, utilize uma [política de dispositivo personalizada do Windows 10 do Intune](custom-settings-windows-10.md) para ativar a funcionalidade. Configure a política através do seguinte fornecedor do serviço de configuração de política do Windows (CSP):
 
 
-- **Para utilizadores** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Para dispositivos** - **./Device/Vendor/MSFT/PassportForWork/*ID do inquilino*/Policies/EnablePinRecovery**
 
-Ambos os valores destes CSPs têm de ser definidos como **Verdadeiro**.
+*ID do inquilino* é relativo ao seu ID do Diretório do Azure Active Directory, que pode obter a partir da página **Propriedades** do Azure Active Directory.
+
+Defina o valor deste CSP para **Verdadeiro**.
 
 ## <a name="steps-to-reset-the-passcode"></a>Passos para repor o código de acesso
 

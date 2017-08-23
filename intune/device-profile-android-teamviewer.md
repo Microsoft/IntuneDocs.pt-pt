@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: bf25ec3fbdec76fb1defb5e4cb12be6dcdf03b0d
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Fornecer assistência remota em dispositivos Android geridos no Intune
 
-O Intune pode utilizar o software [TeamViewer](https://www.teamviewer.com), adquirido separadamente, para lhe permitir disponibilizar assistência remota aos seus utilizadores com dispositivos Android. Utilize as informações neste tópico para configurar as opções e começar a trabalhar.
+O Intune pode utilizar o software [TeamViewer](https://www.teamviewer.com) (adquirido separadamente) para lhe permitir disponibilizar assistência remota a utilizadores com dispositivos Android. Utilize as informações neste tópico para começar.
 
 ## <a name="before-you-start"></a>Antes de começar
 
@@ -31,14 +31,14 @@ O Intune pode utilizar o software [TeamViewer](https://www.teamviewer.com), adqu
 
 Confirme que o utilizador do portal do Azure tem as seguintes permissões atribuídas como uma [função do Intune](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control):
 - Para permitir que o administrador modifique as definições do conector do TeamViewer, conceda a permissão **Atualizar Assistência Remota**.
-- Para permitir que o administrador inicie as definições de uma nova assistência remota, conceda a permissão **Pedir Assistência Remota**. Os utilizadores com esta permissão podem pedir para iniciar uma sessão para qualquer utilizador. Tal não está limitado por qualquer âmbito de atribuição de funções do Intune. Os âmbitos de atribuição de funções do Intune não limitam os dispositivos ou os utilizadores para os quais os pedidos de Assistência Remota possam ser iniciados.
+- Para permitir que o administrador inicie um novo pedido de assistência remota, conceda a permissão **Pedir Assistência Remota**. Os utilizadores com a permissão **Pedir Assistência Remota** podem pedir para iniciar sessão para qualquer utilizador. Não estão limitadas por âmbitos de funções do Intune. Os âmbitos de atribuição de funções do Intune não limitam os dispositivos ou os utilizadores para os quais os pedidos de Assistência Remota possam ser iniciados.
 
 >[!NOTE]
 >Ao ativar o TeamViewer, está a permitir que o TeamViewer para o Conector do Intune crie sessões do TeamViewer, leia os dados do Active Directory e guarde o token de acesso da conta do TeamViewer.
 
 ### <a name="configure-the-intune-teamviewer-connector"></a>Configurar o conector do TeamViewer no Intune
 
-Antes de poder fornecer assistência remota a dispositivos Android, precisará de configurar o conector do TeamViewer no Intune utilizando os seguintes passos:
+Antes de poder fornecer assistência remota a dispositivos Android, tem de configurar o conector do TeamViewer no Intune através dos seguintes passos:
 
 
 1. Inicie sessão no portal do Azure.
@@ -63,9 +63,9 @@ Antes de poder fornecer assistência remota a dispositivos Android, precisará d
 
 Na janela do TeamViewer, pode executar uma variedade de ações remotas no dispositivo Android, incluindo o controlo remoto do dispositivo. Para obter detalhes completos das ações que pode executar, veja a [documentação do TeamViewer](https://www.teamviewer.com/support/documents/).
 
-Quando concluir, feche a janela do TeamViewer.
+Quando terminar, feche a janela do TeamViewer.
 
-## <a name="end-user-notifications"></a>Notificações do utilizador final
+## <a name="end-user-notifications"></a>Notificações de utilizador final
 
-Um utilizador final verá um sinalizador de notificação no ícone da aplicação Portal da Empresa no dispositivo e também uma notificação quando abrir a aplicação. Em seguida, pode aceitar o pedido de assistência remota.
+Um utilizador final verá um sinalizador de notificação no ícone da aplicação Portal da Empresa no respetivo dispositivo e uma notificação ao abrir a aplicação. Em seguida, pode aceitar o pedido de assistência remota.
 

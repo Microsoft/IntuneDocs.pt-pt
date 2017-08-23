@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -64,7 +64,7 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemplo: transferir, assinar e implementar a aplicação Portal da Empresa para dispositivos Windows
 
-Pode implementar a aplicação Portal da Empresa em dispositivos Windows, incluindo Windows Phone e Windows 10 Mobile, com o Intune em vez de instalá-la a partir da Loja Windows. Tem de transferir a aplicação Portal da Empresa e assiná-la com o seu certificado.  Isto apenas é necessário se os utilizadores não utilizarem a Loja da Empresa e pretender implementar o Portal da Empresa em dispositivos Windows Phone 8.1.
+Pode implementar a aplicação Portal da Empresa em dispositivos Windows, incluindo Windows Phone e Windows 10 Mobile, com o Intune em vez de instalá-la a partir da Loja Microsoft. Tem de transferir a aplicação Portal da Empresa e assiná-la com o seu certificado.  Isto apenas é necessário se os utilizadores não utilizarem a Loja da Empresa e pretender implementar o Portal da Empresa em dispositivos Windows Phone 8.1.
 
 
 1.  **Transferir o Portal da Empresa**
@@ -75,7 +75,7 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows, inclui
 
     -   WinPhoneCompanyPortal.ps1 – um script do PowerShell que pode utilizar para assinar o ficheiro de aplicação Portal da Empresa, para que possa ser implementado em dispositivos Windows Phone 8.1
 
-    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Windows para Empresas](http://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazer isso com o Intune, consulte [Manage apps you purchased from the Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) (Gerir aplicações compradas na Loja Windows para Empresas).
+    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Microsoft para Empresas](http://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazê-lo com o Intune, veja [Manage apps you purchased from the Microsoft Store for Business (Gerir aplicações compradas na Loja Microsoft para Empresas)](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Transferir o Windows Phone SDK** Transfira o Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) e instale o SDK no seu computador. Este SDK é necessário para gerar um token de inscrição de aplicações.
 
@@ -144,12 +144,12 @@ O certificado da Symantec utilizado para implementar aplicações para dispositi
 5.  Assine todas as aplicações empresariais de linha de negócio novas e atualizadas com o novo certificado. Não é necessário voltar a assinar e a implementar as aplicações existentes.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Implementar manualmente a aplicação Portal da Empresa do Windows 10
-Pode implementar manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune, mesmo se não tiver integrado o Intune na Loja Windows para Empresas.
+Pode implementar manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune, mesmo se não tiver integrado o Intune na Loja Microsoft para Empresas.
 
  > [!NOTE]
  > Esta opção precisará da implementação das atualizações manuais sempre que uma atualização da aplicação for disponibilizada.
 
-1. Inicie sessão na sua conta na [Loja Windows para Empresas](https://www.microsoft.com/business-store) e compre a versão da **licença offline** da aplicação Portal da Empresa.  
+1. Inicie sessão na sua conta na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) e compre a versão da **licença offline** da aplicação Portal da Empresa.  
 2. Assim que a aplicação tiver sido comprada, selecione a aplicação na página **Inventário**.  
 3. Selecione **Todos os dispositivos Windows 10** como a **Plataforma** e, em seguida, a **Arquitetura** adequada e transfira. Não é preciso um ficheiro de licença de aplicação para esta aplicação.
 ![Imagem de Todos os dispositivos Windows 10 e detalhes do Pacote de Arquitetura X86 para Transferência](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Se a aplicação Portal da Empresa do Windows 10 estiver assinada e implementad
 Veja a seguir como pode assinar e implementar a aplicação desta forma:
 
 1. Transfira o Script de Assinatura da Aplicação Portal da Empresa do Windows 10 do Microsoft Intune a partir de [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requer que o Windows SDK para o Windows 10 esteja instalado no computador anfitrião. Para transferir o Windows SDK para o Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Transfira a aplicação Portal da Empresa do Windows 10 na Loja Windows para Empresas, conforme detalhado acima.  
+2. Transfira a aplicação Portal da Empresa do Windows 10 na Loja Microsoft para Empresas, conforme detalhado acima.  
 3. Execute o script com os parâmetros de entrada detalhados no cabeçalho do script para assinar a aplicação Portal da Empresa do Windows 10 (extraída abaixo). As dependências não precisam de ser transmitidas para o script. Só são precisas quando a aplicação está a ser carregada para a Consola de Administração do Intune.
 
 |Parâmetro | Descrição|
