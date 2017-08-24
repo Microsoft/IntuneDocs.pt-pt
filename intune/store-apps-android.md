@@ -3,8 +3,8 @@ title: "Como adicionar aplicações da loja Android ao Intune"
 titleSuffix: Intune on Azure
 description: "Saiba mais sobre como adicionar aplicações da loja Android ao Intune.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbd1d32c5e863984c8044002365cd2012324e0ce
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a6e997c174acbb0c572dd3bb79432cfe6fae3068
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja Android ao Microsoft Intune
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/01/2017
 5. Acima da lista de aplicações, escolha **Adicionar**.
 6. No painel **Adicionar Aplicação**, escolha **Informações da Aplicação**.
 7. No painel **Editar Aplicação**, configure as informações seguintes. Quando tiver terminado, clique em **Adicionar**. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
-    - **Nome da Aplicação** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se o mesmo nome de aplicação existir duas vezes, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
+    - **Nome da Aplicação** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição da Aplicação** – Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
     - **Publicador** - Introduza o nome do publicador da aplicação.
     - **URL da loja de aplicações** – Introduza o URL da loja de aplicações da aplicação que pretende criar.

@@ -3,8 +3,8 @@ title: "Utilizar políticas de configuração da aplicação Intune para Android
 titleSuffix: Intune on Azure
 description: "Saiba como utilizar políticas de configuração de aplicação para disponibilizar dados de configuração a uma aplicação Android for Work quando é executada.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/12/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 7486a62ed11b83f00414a74b2d816f6048826f73
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Como utilizar as políticas de configuração de aplicações do Microsoft Intune para Android for Work
 
