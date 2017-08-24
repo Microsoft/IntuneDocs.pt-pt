@@ -3,8 +3,8 @@ title: "Como adicionar aplicações de linha de negócio Windows ao Intune"
 titleSuffix: Intune on Azure
 description: "Saiba como adicionar aplicações de linha de negócio Windows ao Intune.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c01099888ed4cfd04264ad902c73cf475385f1e3
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 94c8c2ac583cca88b051404999664bf93c02a9f5
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune
 
@@ -47,16 +47,16 @@ ms.lasthandoff: 07/13/2017
 1. No painel **Adicionar aplicação**, escolha o ficheiro **Pacote de aplicação**.
 2. No painel **Informações da aplicação**, configure as seguintes informações (alguns dos valores neste painel poderão ser preenchidos automaticamente):
     - **Nome** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
-    - **Descrição** – introduza uma descrição para a aplicação. A descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador** – introduza o nome do publicador da aplicação.
+    - **Descrição** - Introduza uma descrição para a aplicação. A descrição é apresentada aos utilizadores no portal da empresa.
+    - **Publicador** - Introduza o nome do publicador da aplicação.
     - **Categoria** – selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Categorizar aplicações facilita a localização da aplicação por parte dos utilizadores, à medida que procuram no portal da empresa.
     - **Apresentar esta aplicação em destaque no Portal da Empresa** – apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **URL de Informações** – opcionalmente, pode introduzir o URL para um site que contenha informações sobre a aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **URL de Privacidade** – opcionalmente, pode introduzir o URL para um site que contenha informações sobre a privacidade da aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Argumentos da linha de comandos** – opcionalmente, pode introduzir qualquer argumento da linha de comandos que pretenda aplicar ao ficheiro .msi quando este for executado, como **/q**.
     - **Programador** – opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário** – opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
-    - **Notas** – introduza quaisquer notas que pretenda associar esta aplicação.
+    - **Proprietário** – Opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
+    - **Notas** – Introduza quaisquer notas que pretenda associar esta aplicação.
     - **Logótipo** – carregue um ícone associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3. Quando terminar, escolha **OK**.
 
