@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -41,26 +41,28 @@ Quando migrar do Intune clássico para o portal do Azure, poderá ver um novo gr
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Migração secundária necessária para capacidades selecionadas
 
-As contas do Intune criadas antes de janeiro de 2017 devem ser migradas antes destas capacidades poderem ser utilizadas no portal do Azure:
+As contas do Intune criadas antes de janeiro de 2017 têm de ser migradas antes de as seguintes capacidades poderem ser utilizadas no portal do Azure:
 
 - Perfis de Inscrição de Dispositivos Empresariais
-- Programa de Inscrição de Dispositivos da Apple
-- Dispositivos empresariais pré-inscritos por grupo de número de série do iOS
-- Gestores de Inscrição de Dispositivos
+- Programa de Registo de Aparelho Apple
+- Pré-declarar dispositivos empresariais por número de série iOS
+- Contas de Gestor de Inscrições de Dispositivos
 - Apple Volume Purchase Program
 
-Uma vez que estas capacidades não podem ser geridas no Silverlight clássico e nas consolas do Azure, a migração:
+Uma vez que estas capacidades não podem ser geridas na consola do Intune clássica (Silverlight) nem no portal do Azure, a migração:
 - Desativa-as na consola clássica
-- Ativa-as na consola do Azure  
+- Ativa-as no portal do Azure  
+
+A partir de 11 de setembro de 2017, a migração destas funcionalidades será intercalada com a migração primária para o Azure. Se a sua conta já foi migrada para utilizar o portal do Azure, esta migração secundária ocorrerá entre 11 e 22 de setembro de 2017. Quando a migração da sua conta começar, será concluída no mesmo dia. A migração poderá demorar até seis horas a partir do momento em que estas funcionalidades forem desativadas na Consola Clássica do Intune.
 
 Se agora pode gerir estas funcionalidades do Intune no portal do Azure, tenha em atenção os seguintes pontos:
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Remove perfis predefinidos de Inscrição de Dispositivos Empresariais no DEP da Apple
-O portal do Azure não suporta o perfil predefinido de Inscrição de Dispositivos Empresariais para dispositivos do Programa de Inscrição de Dispositivos (DEP) da Apple. Esta funcionalidade, disponível na consola clássica do Intune no Silverlight, é descontinuada para evitar a atribuição inadvertida de perfis. Quando os números de série de DEP são sincronizados no portal do Azure, não é atribuído nenhum perfil de Inscrição de Dispositivos Empresariais. Um perfil de inscrição deve ser atribuído antes de utilizar o dispositivo.
+O portal do Azure não suporta o perfil predefinido de Inscrição de Dispositivos Empresariais para dispositivos do Programa de Inscrição de Dispositivos (DEP) da Apple. Esta funcionalidade, disponível na consola clássica do Intune (Silverlight), será descontinuada para evitar a atribuição inadvertida de perfis. Quando os números de série de DEP são sincronizados no portal do Azure, não é atribuído nenhum perfil de Inscrição de Dispositivos Empresariais. Um perfil de inscrição deve ser atribuído antes de utilizar o dispositivo.
 
 #### <a name="apple-dep-token-restored-with-migration"></a>Token do DEP da Apple restaurado com a migração
 
-Se eliminar um token do Programa de Inscrição de Dispositivos da Apple no portal clássico do Intune (Silverlight) e não carregar um novo token para o portal do Azure, o token original será restaurado no portal do Azure quando migrar. Para remover este token e impedir a inscrição do DEP, elimine o token no portal do Azure.
+Se eliminar um token do Programa de Registo de Aparelho da Apple no portal clássico do Intune (Silverlight) e não carregar um novo token para o portal do Azure, o token original será restaurado no portal do Azure quando migrar. Para remover este token e impedir a inscrição do DEP, elimine o token no portal do Azure.
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Os painéis de estado de políticas migradas não funcionam
 
@@ -72,7 +74,7 @@ Não pode ver as informações de estado de políticas que foram migradas do por
 As aplicações para iOS compradas em volume são apresentadas e só podem ser atribuídas para os mesmos indicativos de país que a sua conta do Intune. O Intune só sincroniza aplicações da mesma região do iTunes que o indicativo de país da conta do inquilino do Intune. Por exemplo, se comprar uma aplicação que só está disponível na loja dos E.U.A., mas a sua conta estiver em alemão, o Intune não mostrará essa aplicação.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>São carregadas múltiplas cópias do mesmo programa para iOS comprado em volume
-Não clique no botão **Carregar** múltiplas vezes para o mesmo token VPP. Isto irá resultar no carregamento de tokens VPP duplicados e as aplicações irão sincronizar múltiplas vezes para o mesmo token VPP. 
+Não clique no botão **Carregar** múltiplas vezes para o mesmo token VPP. Isto irá resultar no carregamento de tokens VPP duplicados e as aplicações irão sincronizar múltiplas vezes para o mesmo token VPP.
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Para dispositivos não inscritos com o Intune, apenas pode especificar um domín
 Se adicionar domínios adicionais (através de **Definições avançadas** > **Perímetro da rede** > **Adicionar um domínio protegido**), não poderá guardar a política. A mensagem de erro apresentada será alterada em breve para ser mais precisa.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Suporte do cliente VPN do Cisco AnyConnect
- 
-O lançamento mais recente do cliente VPN do Cisco AnyConnect (4.0.07072) não é atualmente compatível com o Intune. Uma atualização do Intune futura irá incluir compatibilidade com esta versão do cliente VPN. Até lá, recomendamos que não atualize o cliente VPN do Cisco AnyConnect e que continue a utilizar a versão existente.
+
+O lançamento mais recente do cliente VPN do Cisco AnyConnect (4.0.07072) não é atualmente compatível com o Intune.
+Uma atualização do Intune futura irá incluir compatibilidade com esta versão do cliente VPN. Até lá, recomendamos que não atualize o cliente VPN do Cisco AnyConnect e que continue a utilizar a versão existente.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Utilizar o tipo de palavra-passe numérica com dispositivos Mac OS Sierra
 
@@ -118,16 +121,3 @@ Pode definir [políticas de proteção de aplicações para iOS](app-protection-
 Os Administradores Globais (também designados por Administradores Inquilinos) podem continuar a realizar tarefas diárias de administração sem uma licença separada do Intune ou do Enterprise Mobility Suite (EMS). No entanto, para utilizar o serviço, como, por exemplo, para inscrever os seus próprios dispositivos, um dispositivo da empresa ou utilizar o Portal da Empresa do Intune, precisam de uma licença do Intune ou do EMS.
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

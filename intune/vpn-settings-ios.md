@@ -15,26 +15,26 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos iOS no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Consoante as definições que escolher, nem todos os valores na lista abaixo serão configuráveis.
+Consoante as definições que escolher, nem todos os valores na lista seguinte serão configuráveis.
 
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
 
-**Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
-- **Endereço IP ou FQDN** – Forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos serão ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
-- **Método de autenticação** – Escolha como os dispositivos serão autenticados no servidor VPN em:
-    - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais detalhes sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).
-    - **Nome de utilizador e palavra-passe** – Os utilizadores finais têm de indicar um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.
+**Nome da ligação** – introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
+- **Endereço IP ou FQDN** – forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
+- **Método de autenticação** – escolha como os dispositivos serão autenticados no servidor VPN em:
+    - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais informações sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).
+    - **Nome de utilizador e palavra-passe** – os utilizadores finais têm de indicar um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.
 - **Tipo de ligação** – Selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
@@ -44,7 +44,7 @@ Consoante as definições que escolher, nem todos os valores na lista abaixo ser
     - **Cisco (IPSec)**
     - **Citrix**
     - **VPN Personalizada**
-- **Divisão de túnel** - **Ative** ou **Desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utilizará a ligação VPN para aceder aos ficheiros de trabalho, mas utilizará a rede padrão do hotel para a navegação normal na Internet.
+- **Dividir túnel** - **Ative** ou **Desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
 
 
 ## <a name="custom-vpn-settings"></a>Definições de VPN Personalizada
@@ -56,17 +56,17 @@ Se tiver selecionado **VPN Personalizada** como o tipo de ligação, configure e
 
 ## <a name="apps-per-app-vpn-settings"></a>Definições de aplicações (VPN por aplicação)
 
-- **VPN por aplicação** – Ative esta opção se quiser URLs que ativem a ligação VPN quando são visitados a partir do browser Safari. Para configurar esta opção, tem de ter selecionado **Certificados** como método de autenticação nas definições de VPN Base.
-- **URLs que vão ativar a ligação VPN durante a utilização do browser Safari** – Clique em Adicionar para adicionar um ou mais URLs de sites. Quando estes URLs são visitados, a ligação VPN é ativada.
+- **VPN por aplicação** – ative esta opção se quiser URLs que ativem a ligação VPN quando são visitados a partir do browser Safari. Para configurar esta opção, tem de ter selecionado **Certificados** como método de autenticação nas definições de VPN Base.
+- **URLs que ativam a ligação VPN durante a utilização do browser Safari** – clique em Adicionar para adicionar um ou mais URLs de sites. Quando estes URLs são visitados, a ligação VPN é ativada.
 
 - **Regras a pedido** – Esta opção permite-lhe configurar regras condicionais que controlam quando a ligação VPN é iniciada. Por exemplo, pode criar uma condição na qual a ligação VPN só é utilizada quando um dispositivo não está ligado a uma das redes Wi-Fi da sua empresa. Em alternativa, pode criar uma condição na qual, se um dispositivo não puder aceder a um domínio de pesquisa DNS que especificar, a ligação VPN não é iniciada.
 
-    - **SSIDs ou domínios de pesquisa DNS** – Selecione se esta condição utilizará **SSIDs** de rede sem fios ou **Domínios de pesquisa DNS**. Escolha Adicionar para configurar um ou mais SSIDs ou domínios de pesquisa.
+    - **SSIDs ou domínios de pesquisa DNS** – selecione se esta condição utiliza **SSIDs** de rede sem fios ou **domínios de pesquisa DNS**. Escolha Adicionar para configurar um ou mais SSIDs ou domínios de pesquisa.
     - **Pesquisa de cadeia de URL** – Opcionalmente, indique um URL para a regra utilizar como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a ligação VPN será iniciada e o dispositivo será ligado ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
-    - **Ação de domínio** – Escolha uma das seguintes opções:
+    - **Ação de domínio** – escolha um dos seguintes itens:
         - Ligar caso seja preciso – 
         - Nunca ligar – 
-    - **Ação** – Escolha uma das seguintes opções:
+    - **Ação** – selecione um dos seguintes itens:
         - Ligar – 
         - Avaliar ligação – 
         - Ignorar – 

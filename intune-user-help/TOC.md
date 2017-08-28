@@ -1,16 +1,111 @@
 # Ajuda de utilizadores para o Intune
+
 ## [Utilizar dispositivos geridos para trabalhar](use-managed-devices-to-get-work-done.md)
+
 ## [Que informações a minha empresa pode ver com o Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+
 ## [O que acontece quando reponho o meu dispositivo?](what-happens-if-you-reset-your-device-cpwebsite.md)
+
 ## [Como iniciar sessão no Portal da Empresa](sign-in-to-the-company-portal.md)
+
 ## [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo Android?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+### [Inscrever o dispositivo](enroll-your-device-in-Intune-android.md)
+#### [Inscrever o dispositivo Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+### [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-android.md)
+### [Encriptar o dispositivo](encrypt-your-device-android.md)
+### [Definir o PIN ou palavra-passe](set-your-pin-or-password-android.md)
+### [O que acontece quando reponho o meu dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+### [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
+### [Definir o tempo de bloqueio](set-the-amount-of-time-before-your-device-is-locked-android.md)
+### [Instalar VPN](install-your-companys-virtual-private-network-VPN-android.md)
+### [Desativar a recolha de dados da Microsoft](turn-off-microsoft-usage-data-collection-android.md)
+### [O que acontece se anular a inscrição do dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+#### [Anular a inscrição do dispositivo](unenroll-your-device-from-intune-android.md)
+#### [Anular a inscrição do dispositivo se declinar os Termos de Utilização](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+
 ### [Corrigir problemas comuns com o Android](troubleshoot-your-device-android.md)
+#### [Verificar a conformidade do dispositivo](check-compliance-on-your-device-android.md)
+
+#### [Utilizar registos para corrigir problemas]
+##### [Ativar o registo verboso](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+##### [Enviar registos por e-mail](send-logs-to-your-it-admin-by-email-android.md)
+##### [Enviar registos através de um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
+##### [Submeter erros de inscrição](send-enrollment-errors-to-your-it-admin-android.md)
+
+### Perguntas sobre o sistema operativo
+#### [Atualizar o seu dispositivo](you-need-to-update-your-android-device.md)
+#### [Versão não suportada](your-android-version-isnt-yet-supported.md)
+#### [O dispositivo tem root e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Certificado necessário em falta](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Desativar origens desconhecidas](you-need-to-turn-off-unknown-sources-android.md)
+#### [Desativar a depuração de USB](you-need-to-turn-off-usb-debugging-android.md)
+#### [Ativar a análise de ameaças de segurança](you-need-to-turn-on-scanning-for-security-threats-android.md)
+#### [Patch de segurança não suportado](you-need-to-update-your-device-OS-security-patch-android.md)
+#### [Dispositivos com erros de encriptação](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
+
+### Defesa Contra Ameaças para Dispositivos Móveis
+#### [Instalar uma aplicação Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-android.md)
+#### [Resolver uma ameaça](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+
+
 ## [Utilizar o seu dispositivo iOS ou macOS com o Intune](using-your-iOS-or-macOS-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo iOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [Instalar e iniciar sessão no Portal da Empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
+### [Inscrever o seu dispositivo iOS](enroll-your-device-in-intune-ios.md)
+### [Inscrever o seu dispositivo macOS](enroll-your-device-in-intune-macos.md)
+### [Inscrever o seu dispositivo macOS com o Portal da Empresa](enroll-your-device-in-intune-macos-cp.md)
+
+### [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-ios.md)
+### [Definir ou alterar o código de acesso](set-or-change-your-passcode-ios.md)
+### [O que acontece ao repor o seu dispositivo utilizando o Portal da Empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+### [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
+### [Desativar a recolha de dados da Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
+### [Anular a inscrição do dispositivo](unenroll-your-device-from-intune-ios.md)
+#### [O que acontece se anular a inscrição do seu dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
+### [Sincronizar o seu dispositivo manualmente](sync-your-device-manually-ios.md)
+
 ### [Corrigir problemas comuns com o iOS](troubleshoot-your-device-iOS.md)
-## [Utilizar o dispositivo Windows com o Intune](using-your-windows-device-with-intune.md)
+#### [Ligar novamente um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device.md)
+#### [Enviar erros para a sua empresa](send-errors-to-your-it-admin-ios.md)
+#### [Enviar erros para a Microsoft](send-logs-to-microsoft-ios.md)
+#### [Apareceu um erro](you-get-an-error-while-using-the-company-portal-app-ios.md)
+#### [Identificar o seu dispositivo](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
+#### [Localizar o seu número de série](how-do-i-find-the-serial-number-on-my-device-ios.md)
+#### [Atualizar o seu dispositivo iOS](you-need-to-update-your-ios-device.md)
+#### [A minha versão do iOS ainda não é suportada](your-ios-version-isnt-yet-supported.md)
+
+### Defesa Contra Ameaças para Dispositivos Móveis
+#### [Instalar uma aplicação Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md)
+#### [Resolver uma ameaça](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
+
+
+## [Utilizar o dispositivo Windows](using-your-windows-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [O que acontece ao inscrever um dispositivo Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [O que acontece quando inscreve um dispositivo Windows com outra versão do Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+
+### [Inscrever o seu dispositivo Windows](enroll-your-device-in-intune-windows.md)
+### [O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo no Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
+
+### [Encriptar o dispositivo](encrypt-your-device-windows.md)
+### [Definir ou alterar a palavra-passe](set-or-change-your-password-windows.md)
+### [Anular a inscrição do dispositivo no Intune](unenroll-your-device-from-intune-windows.md)
+### [O que acontece se anular a inscrição do seu dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+### [O que acontece durante a reposição do dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+### [Desativar a recolha de dados da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
+### [Sincronizar o seu dispositivo manualmente](sync-your-device-manually-windows.md)
+
 ### [Corrigir problemas comuns com o Windows](troubleshoot-your-device-windows.md)
+#### [O meu dispositivo de Windows 10 não é inscrito](troubleshoot-your-windows-10-device-windows.md)
+#### [Atualizar o dispositivo Windows](you-need-to-update-your-windows-device.md)
+#### [Enviar registos a partir da aplicação Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md)
+#### [Enviar registos a partir da aplicação Definições](send-logs-to-your-it-admin-settings-windows.md)
+#### [A minha versão do Windows ainda não é suportada](your-windows-version-isnt-yet-supported.md)
+#### [Ativar a encriptação do Windows](you-need-to-enable-windows-encryption.md)
+#### [O meu dispositivo precisa de software de proteção contra software maligno](your-device-needs-antimalware-software.md)
+#### [Ativar o Arranque Seguro](you-need-to-enable-secure-boot-windows.md)
+#### [Ativar a Integridade de Código](you-need-to-enable-code-integrity.md)
+
+
 ## [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
