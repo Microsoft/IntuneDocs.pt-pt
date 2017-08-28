@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilizar o portal de resolução de problemas
+# <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,7 +41,7 @@ Enquanto administrador do Intune, pode atribuir a função Operador de Suporte T
 Para adicionar operadores de suporte técnico:
 1. [Adicione utilizadores ao Intune](users-add.md) se necessário.
 2. [Crie um grupo de suporte técnico](groups-add.md) e adicione utilizadores ao grupo.
-3. [Atribua a função de Operador de Suporte Técnico de RBAC](role-based-access-control.md#built-in-roles)
+3. [Atribua a função de Operador de Suporte Técnico de RBAC](role-based-access-control.md#built-in-roles).
 
   ![Captura de ecrã a mostrar o portal do Intune, com as funções do Intune realçadas e uma lista das funções incorporadas, incluindo Operador de Suporte Técnico](./media/help-desk-user-add.png) Também pode [criar uma função personalizada](role-based-access-control.md#custom-roles) que pode modificar para conceder acesso aos operadores de suporte técnico.  Os operadores de suporte técnico necessitam das seguintes permissões para ajudar a resolver os problemas do utilizador:
     - Aplicações Móveis: ler
@@ -61,8 +61,6 @@ O pessoal de suporte técnico e os administradores do Intune podem aceder ao por
 - Inicie sessão no portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune** e, em seguida, aceda a **Ajuda e Suporte** > **Resolução de problemas**.
 
 Clique em **Utilizador selecionado** para ver um utilizador e os detalhes do mesmo.
-
-![Captura de ecrã da carga de trabalho da Resolução de Problemas do Intune com a ligação Selecionar Utilizador](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Utilizar o portal de resolução de problemas
 
