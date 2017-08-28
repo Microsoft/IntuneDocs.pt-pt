@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Opções de inscrição do Intune
 
@@ -41,9 +41,12 @@ Saiba mais sobre as [restrições de inscrição](enrollment-restrictions-set.md
 ## <a name="corporate-identifiers"></a>Identificadores empresariais
 
 Pode listar os números de série e números do Identificador de Equipamento Móvel Internacional (IMEI) para identificar os dispositivos da empresa. Saiba mais sobre [identificadores empresariais](corporate-identifiers-add.md).
+## <a name="multi-factor-authentication"></a>Autenticação multifator
 
-## <a name="device-enrollment-manager"></a>Gestor de inscrição de dispositivos
-Pode transformar os utilizadores em gestores de inscrição de dispositivos.  Os utilizadores DEM podem inscrever um grande número de dispositivos móveis com uma única conta de utilizador. A conta do gestor de inscrição de dispositivos (DEM) pode inscrever até 1000 dispositivos. Saiba mais sobre os [gestores de inscrição de dispositivos](device-enrollment-manager-enroll.md).
+Pode exigir que os utilizadores utilizem um método de verificação adicional, como um telemóvel, PIN ou dados biométricos, quando estes inscrevem um dispositivo. Saiba mais sobre a [autenticação multifator](multi-factor-authentication.md).
+
+## <a name="device-enrollment-manager"></a>Gestor de inscrições de dispositivos
+Pode transformar os utilizadores em gestores de inscrições de dispositivos.  Os utilizadores DEM podem inscrever um grande número de dispositivos móveis com uma única conta de utilizador. A conta do gestor de inscrições de dispositivos (DEM) pode inscrever até 1000 dispositivos. Saiba mais sobre os [gestores de inscrições de dispositivos](device-enrollment-manager-enroll.md).
 
 ## <a name="device-categories"></a>Categorias de dispositivos
 

@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -52,9 +52,9 @@ A entidade **AppRevision** apresenta uma lista de todas as versões das aplicaç
 | IsCurrent |Indica se a versão desta Aplicação é atual ou não no armazém de dados |True/False |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC em que esta versão da aplicação foi modificada pela última vez no armazém de dados |11/23/2016 12:00:00 AM |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-A entidade **AppInstallerTypes** apresenta uma lista da origem da instalação de uma aplicação.
+A entidade **AppTypes** apresenta uma lista da origem da instalação de uma aplicação.
 
 | Propriedade  | Descrição |
 |---------|------------|
@@ -80,44 +80,6 @@ A entidade **AppInstallerTypes** apresenta uma lista da origem da instalação d
 | 11 |Windows Mobile MSI |Uma aplicação de linha de negócios MSI |
 | 12 |Aplicação LOB para Windows Phone |Uma aplicação de linha de negócio do Windows Phone |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-A entidade **ApplicationTypes** apresenta uma lista de tipos de aplicações possíveis.
-
-| Propriedade  | Descrição |
-|---------|------------|
-| ApplicationTypeID |ID do tipo |
-| ApplicationTypeKey |Chave de substituição da chave |
-| ApplicationTypeName |Tipo de aplicação |
-
-## <a name="example"></a>Exemplo
-
-| ApplicationTypeID  | Nome | Descrição |
-|---------|------------|--------|
-| 0 |InHouse |Uma aplicação desenvolvida internamente |
-| 1 |DeepLink |Uma ligação para uma aplicação numa loja de aplicações |
-| 2 |WebLink |Uma ligação para uma aplicação Web |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-A entidade **ManagedSoftwareTypes** apresenta uma lista dos tipos de software geridos possíveis para uma aplicação.
-
-| Propriedade  | Descrição |
-|---------|------------|
-| SoftwareTypeID |ID do tipo |
-| SoftwareTypeKey |Chave de substituição da chave |
-| SoftwareTypeName |Tipo de software |
-
-## <a name="example"></a>Exemplo
-
-| SoftwareTypeID  | Nome | Descrição |
-|---------|------------|--------|
-| 0 |Desktop |Uma aplicação de ambiente de trabalho |
-| 2 |Update |Uma atualização do Windows |
-| 5 |SideCarAgent | |
-| 1 |Mobile |Uma aplicação móvel |
-| 3 |WebLink |Uma ligação Web |
-| 4 |VppDeepLink |Uma ligação para uma aplicação numa loja de aplicações que faz parte de um VPP (Volume Purchase Program) |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

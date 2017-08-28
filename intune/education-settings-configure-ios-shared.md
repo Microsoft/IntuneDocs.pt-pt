@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2637f9d06fbfd3d2be01d515be9ae25ecb99dfae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b95133d402b40085a61dedfdbd4abbb4eae73855
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Como configurar definições de educação do Intune para dispositivos iPad partilhados
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 07/01/2017
 O Intune suporta a aplicação Sala de Aula do iOS, que ajuda os professores a orientar a aprendizagem e a controlar os dispositivos dos estudantes na sala de aula. Além da aplicação Sala de Aula, a Apple suporta a possibilidade de configurar os dispositivos iPad dos estudantes de forma a que múltiplos estudantes possam partilhar um único dispositivo. Este documento fornece-lhe orientações para alcançar este objetivo com o Intune.
 Para obter informações sobre como configurar dispositivos iPad (1:1) dedicados para utilizar a aplicação Sala de Aula, veja [Como configurar as definições do Intune para a aplicação Sala de Aula do iOS](education-settings-configure-ios.md).
 
-## <a name="before-you-start"></a>Antes de começar 
+## <a name="before-you-start"></a>Antes de começar
 
-Os pré-requisitos para utilizar as funcionalidades do iPad partilhado são: 
+Os pré-requisitos para utilizar as funcionalidades do iPad partilhado são:
 
-- Configurar o Apple School Manager e o School Data Sync (SDS).
-- Como parte da configuração do Apple School Manager, configure os [Apple IDs geridos](http://help.apple.com/schoolmanager/#/tes78b477c81) dos estudantes. [Saiba mais informações sobre os Apple IDs geridos](https://support.apple.com/en-us/HT205918). 
-- Crie um perfil de inscrição para os números de série do dispositivo sincronizadas a partir do Apple School Manager. 
+- Configurar o [Apple School Manager](apple-school-manager-set-up-ios.md) e o [School Data Sync (SDS)](https://support.office.com/article/Apple-School-Manager-integration-with-Intune-for-Education-and-School-Data-Sync-974bd1f9-2c7a-45cb-9447-b58166108617).
+- Como parte da configuração do Apple School Manager, configure os [Apple IDs geridos](http://help.apple.com/schoolmanager/#/tes78b477c81) dos estudantes. [Saiba mais informações sobre os Apple IDs geridos](https://support.apple.com/en-us/HT205918).
+- Crie um perfil de inscrição para os números de série do dispositivo sincronizadas a partir do Apple School Manager.
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Passo 1 – Importar os seus dados escolares para o Azure Active Directory
 
@@ -57,151 +57,151 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 - [Saiba mais sobre o licenciamento no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Passo 2 – Criar e atribuir um perfil de Educação do iOS no Intune 
+## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>Passo 2 – Criar e atribuir um perfil de Educação do iOS no Intune
 
-### <a name="configure-general-settings"></a>Configurar as definições gerais 
+### <a name="configure-general-settings"></a>Configurar as definições gerais
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
-3. No painel **Intune**, escolha **Configurar dispositivos**. 
-4. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**. 
-5. No painel de perfis, escolha **Criar Perfil**. 
-6. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de educação do iOS. 
-7. Na lista pendente **Plataforma**, selecione **iOS**. 
-8. Na lista pendente **Tipo de perfil**, escolha **Educação**. 
-9. Escolha **Definições** > **Configurar**. 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+3. No painel **Intune**, escolha **Configurar dispositivos**.
+4. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
+5. No painel de perfis, escolha **Criar Perfil**.
+6. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de educação do iOS.
+7. Na lista pendente **Plataforma**, selecione **iOS**.
+8. Na lista pendente **Tipo de perfil**, escolha **Educação**.
+9. Escolha **Definições** > **Configurar**.
 
-Em seguida, precisa de certificados para estabelecer uma relação de fidedignidade entre os iPads do professor e dos estudantes. Os certificados são utilizados para autenticar de forma silenciosa e sem problemas as ligações entre os dispositivos, sem ter de introduzir os nomes de utilizador nem palavras-passe. 
+Em seguida, precisa de certificados para estabelecer uma relação de fidedignidade entre os iPads do professor e dos estudantes. Os certificados são utilizados para autenticar de forma silenciosa e sem problemas as ligações entre os dispositivos, sem ter de introduzir os nomes de utilizador nem palavras-passe.
 
->[!Important] 
->Os certificados de professor e estudante que utiliza têm de ser emitidos por autoridades de certificação (ACs) diferentes. Tem de criar duas ACs subordinadas novas ligadas à sua infraestrutura de certificados existente; uma para os professores e outra para os estudantes. 
+>[!Important]
+>Os certificados de professor e estudante que utiliza têm de ser emitidos por autoridades de certificação (ACs) diferentes. Tem de criar duas ACs subordinadas novas ligadas à sua infraestrutura de certificados existente; uma para os professores e outra para os estudantes.
 
-Os perfis de educação do iOS só suportam certificados PFX. Os certificados SCEP não são suportados. 
+Os perfis de educação do iOS só suportam certificados PFX. Os certificados SCEP não são suportados.
 
-Os certificados que cria têm de suportar a autenticação de servidor, além da autenticação de utilizador. 
+Os certificados que cria têm de suportar a autenticação de servidor, além da autenticação de utilizador.
 
-### <a name="configure-teacher-certificates"></a>Configurar os certificados do professor 
+### <a name="configure-teacher-certificates"></a>Configurar os certificados do professor
 
-No painel **Educação**, escolha **Certificados do professor**. 
+No painel **Educação**, escolha **Certificados do professor**.
 
-#### <a name="configure-teacher-root-certificate"></a>Configurar o certificado de raiz do professor 
+#### <a name="configure-teacher-root-certificate"></a>Configurar o certificado de raiz do professor
 
-Em **Certificado de raiz do professor**, escolha o botão Procurar para selecionar o certificado de raiz do professor com a extensão .cer (DER ou codificado por Base64) ou .P7B (com ou sem cadeia completa). 
+Em **Certificado de raiz do professor**, escolha o botão Procurar para selecionar o certificado de raiz do professor com a extensão .cer (DER ou codificado por Base64) ou .P7B (com ou sem cadeia completa).
 
-#### <a name="configure-teacher-pkcs12-certificate"></a>Configurar o certificado do professor PKCS#12 
+#### <a name="configure-teacher-pkcs12-certificate"></a>Configurar o certificado do professor PKCS#12
 
-Em **Certificado do professor PKCS#12**, configure os seguintes valores: 
+Em **Certificado do professor PKCS#12**, configure os seguintes valores:
 
-- **Formato do nome do requerente** – o Intune atribui automaticamente um prefixo ao nome comum do certificado (**líder** para o certificado do professor e **membro** para o certificado de estudante). 
-- **Autoridade de certificação** – uma Autoridade de Certificação (AC) Empresarial que é executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. 
-- **Nome da autoridade de certificação** – introduza o nome da autoridade de certificação. 
-- **Nome do modelo de certificado** – introduza o nome de um modelo de certificado que tenha sido adicionado a uma AC emissora. 
-- **Limiar de renovação (%)** – Especifique a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado. 
-- **Período de validade do certificado** – especifique o tempo restante até o certificado expirar. Pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode especificar um valor de um ano, mas não um valor de cinco anos. O valor também tem de ser inferior ao período de validade restante do certificado da AC emissora. 
+- **Formato do nome do requerente** – o Intune atribui automaticamente um prefixo ao nome comum do certificado (**líder** para o certificado do professor e **membro** para o certificado de estudante).
+- **Autoridade de certificação** – uma Autoridade de Certificação (AC) Empresarial que é executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma.
+- **Nome da autoridade de certificação** – introduza o nome da autoridade de certificação.
+- **Nome do modelo de certificado** – introduza o nome de um modelo de certificado que tenha sido adicionado a uma AC emissora.
+- **Limiar de renovação (%)** – Especifique a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado.
+- **Período de validade do certificado** – especifique o tempo restante até o certificado expirar. Pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode especificar um valor de um ano, mas não um valor de cinco anos. O valor também tem de ser inferior ao período de validade restante do certificado da AC emissora.
 
-Quando concluir a configuração dos certificados do professor, selecione **OK**. 
+Quando concluir a configuração dos certificados do professor, selecione **OK**.
 
-### <a name="configure-student-certificates"></a>Configurar os certificados de estudante 
+### <a name="configure-student-certificates"></a>Configurar os certificados de estudante
 
-1. No painel **Educação**, selecione **Certificados de estudante**. 
-2. No painel **Certificados de estudante**, na lista de tipos de **Certificados de dispositivos de estudante**, selecione **iPad partilhado**. 
+1. No painel **Educação**, selecione **Certificados de estudante**.
+2. No painel **Certificados de estudante**, na lista de tipos de **Certificados de dispositivos de estudante**, selecione **iPad partilhado**.
 
-#### <a name="configure-student-root-certificate"></a>Configurar o certificado de raiz do estudante 
+#### <a name="configure-student-root-certificate"></a>Configurar o certificado de raiz do estudante
 
-Em **Certificado de raiz do dispositivo**, selecione o botão Procurar para selecionar o certificado de raiz do estudante com a extensão .cer (DER ou codificado por Base64) ou .P7B (com ou sem cadeia completa). 
+Em **Certificado de raiz do dispositivo**, selecione o botão Procurar para selecionar o certificado de raiz do estudante com a extensão .cer (DER ou codificado por Base64) ou .P7B (com ou sem cadeia completa).
 
-#### <a name="configure-device-pkcs12-certificate"></a>Configurar o certificado do dispositivo PKCS#12 
+#### <a name="configure-device-pkcs12-certificate"></a>Configurar o certificado do dispositivo PKCS#12
 
-Em **Certificado PKCS#12 do estudante**, configure os seguintes valores: 
+Em **Certificado PKCS#12 do estudante**, configure os seguintes valores:
 
-- **Formato do nome do requerente** – o Intune atribui automaticamente um prefixo ao nome comum do certificado (líder para o certificado do professor e membro para o certificado do dispositivo). 
-- **Autoridade de certificação** – uma Autoridade de Certificação (AC) Empresarial que é executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. 
-- **Nome da autoridade de certificação** – introduza o nome da autoridade de certificação. 
-- **Nome do modelo de certificado** – introduza o nome de um modelo de certificado que tenha sido adicionado a uma AC emissora. 
-- **Limiar de renovação (%)** – Especifique a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado. 
-- **Período de validade do certificado** – especifique o tempo restante até o certificado expirar. Pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode especificar um valor de um ano, mas não um valor de cinco anos. O valor também tem de ser inferior ao período de validade restante do certificado da AC emissora. 
+- **Formato do nome do requerente** – o Intune atribui automaticamente um prefixo ao nome comum do certificado (líder para o certificado do professor e membro para o certificado do dispositivo).
+- **Autoridade de certificação** – uma Autoridade de Certificação (AC) Empresarial que é executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma.
+- **Nome da autoridade de certificação** – introduza o nome da autoridade de certificação.
+- **Nome do modelo de certificado** – introduza o nome de um modelo de certificado que tenha sido adicionado a uma AC emissora.
+- **Limiar de renovação (%)** – Especifique a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado.
+- **Período de validade do certificado** – especifique o tempo restante até o certificado expirar. Pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode especificar um valor de um ano, mas não um valor de cinco anos. O valor também tem de ser inferior ao período de validade restante do certificado da AC emissora.
 
-Quando concluir a configuração dos certificados, selecione **OK**. 
+Quando concluir a configuração dos certificados, selecione **OK**.
 
-### <a name="complete-certificate-setup"></a>Concluir Configuração de Certificado 
+### <a name="complete-certificate-setup"></a>Concluir Configuração de Certificado
 
-1. No painel **Educação**, selecione **OK**. 
-2. No painel **Criar Perfil**, selecione **Criar**. 
+1. No painel **Educação**, selecione **OK**.
+2. No painel **Criar Perfil**, selecione **Criar**.
 
-O perfil é criado e apresentado no painel da lista de perfis. 
+O perfil é criado e apresentado no painel da lista de perfis.
 
-## <a name="step-3---create-a-device-category"></a>Passo 3 – criar uma categoria de dispositivo 
+## <a name="step-3---create-a-device-category"></a>Passo 3 – criar uma categoria de dispositivo
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
-3. No painel **Intune**, selecione **Inscrição de dispositivos**. 
-4. No painel **Inscrição – Descrição geral**, selecione **Categorias de Dispositivos**. 
-5. No painel **Inscrição – Categorias de Dispositivos**, selecione **Criar**. 
-6. No painel **Criar categoria de dispositivos**, introduza um **Nome** e uma **Descrição** para a categoria. 
-7. No painel **Criar categoria de dispositivos**, selecione **Criar**. 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+3. No painel **Intune**, selecione **Inscrição de dispositivos**.
+4. No painel **Inscrição – Descrição geral**, selecione **Categorias de Dispositivos**.
+5. No painel **Inscrição – Categorias de Dispositivos**, selecione **Criar**.
+6. No painel **Criar categoria de dispositivos**, introduza um **Nome** e uma **Descrição** para a categoria.
+7. No painel **Criar categoria de dispositivos**, selecione **Criar**.
 
-A categoria de dispositivos é criada no painel **Inscrição – Categorias de Dispositivos**. 
+A categoria de dispositivos é criada no painel **Inscrição – Categorias de Dispositivos**.
 
-## <a name="step-4--create-a-dynamic-group"></a>Passo 4 – criar um grupo dinâmico 
+## <a name="step-4--create-a-dynamic-group"></a>Passo 4 – criar um grupo dinâmico
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
-3. No painel **Intune**, selecione **Grupos**. 
-4. No painel **Utilizadores e Grupos – Todos os Grupos**, selecione **Novo Grupo**. 
-5. No painel **Grupo**, introduza um **Nome** e uma **Descrição** para o grupo. 
-6. Na lista pendente **Tipo de Associação**, selecione **Dispositivo Dinâmico**. 
-7. Selecione **Membros de dispositivo dinâmicos** para criar regras de associação de grupo. 
-8. No painel **Regras de associação de grupo dinâmica**: 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+3. No painel **Intune**, selecione **Grupos**.
+4. No painel **Utilizadores e Grupos – Todos os Grupos**, selecione **Novo Grupo**.
+5. No painel **Grupo**, introduza um **Nome** e uma **Descrição** para o grupo.
+6. Na lista pendente **Tipo de Associação**, selecione **Dispositivo Dinâmico**.
+7. Selecione **Membros de dispositivo dinâmicos** para criar regras de associação de grupo.
+8. No painel **Regras de associação de grupo dinâmica**:
 1. Selecione **deviceCategory** na lista pendente **Adicionar dispositivos onde**.
-2. Selecione **É igual a** 
-3. Introduza a categoria de dispositivos que criou na caixa de texto em branco 
-9. No painel **Regras de associação de grupo dinâmica**, selecione **Adicionar consulta**. 
-10. No painel **Grupo**, selecione **Criar**. 
+2. Selecione **É igual a**
+3. Introduza a categoria de dispositivos que criou na caixa de texto em branco
+9. No painel **Regras de associação de grupo dinâmica**, selecione **Adicionar consulta**.
+10. No painel **Grupo**, selecione **Criar**.
 
-O grupo dinâmico é criado no painel **Utilizadores e Grupos – Todos os Grupos**. 
+O grupo dinâmico é criado no painel **Utilizadores e Grupos – Todos os Grupos**.
 
-## <a name="step-5--assign-a-device-to-a-category-carts"></a>Passo 5 – atribuir um dispositivo a uma categoria (Carrinhos) 
+## <a name="step-5--assign-a-device-to-a-category-carts"></a>Passo 5 – atribuir um dispositivo a uma categoria (Carrinhos)
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
-3. No painel **Intune**, escolha **Dispositivos**. 
-4. No painel **Dispositivos**, selecione **Todos os dispositivos**. 
-5. No painel **Dispositivos – Todos os dispositivos**, selecione um dispositivo. 
-6. No painel do dispositivo, selecione **Propriedades**. 
-7. No painel de propriedades do dispositivo, introduza a categoria de dispositivos na caixa de texto **Categoria de dispositivos**. 
-8. No painel do dispositivo, selecione **Guardar**. 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+3. No painel **Intune**, escolha **Dispositivos**.
+4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
+5. No painel **Dispositivos – Todos os dispositivos**, selecione um dispositivo.
+6. No painel do dispositivo, selecione **Propriedades**.
+7. No painel de propriedades do dispositivo, introduza a categoria de dispositivos na caixa de texto **Categoria de dispositivos**.
+8. No painel do dispositivo, selecione **Guardar**.
 
-O dispositivo está agora associado à categoria de dispositivos. Repita este processo para todos os dispositivos que pretender associar à categoria de dispositivos que criou. 
+O dispositivo está agora associado à categoria de dispositivos. Repita este processo para todos os dispositivos que pretender associar à categoria de dispositivos que criou.
 
-## <a name="step-6--create-classroom-profiles"></a>Passo 6 – criar perfis de sala de aula 
+## <a name="step-6--create-classroom-profiles"></a>Passo 6 – criar perfis de sala de aula
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
-3. No painel **Intune**, escolha **Configurar dispositivos**. 
-4. No painel **Configuração do Dispositivo**, selecione **Gerir** > **Perfis do Carrinho**. 
-5. No painel de perfis, escolha **Criar Perfil**. 
-6. No painel **Criar Associação**, introduza um **Nome** e uma **Descrição**. 
-7. Selecione a opção **Selecionar Classes** > **Configurar** para associar grupos ao Perfil do Carrinho. 
-8. Selecione as turmas a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**.  
-9. Selecione a opção **Selecionar Carrinhos** > **Configurar** para associar grupos ao Perfil do Carrinho. 
-10. Selecione os grupos a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**. 
-11. No painel **Criar Associação**, selecione **Guardar** para guardar o Perfil do Carrinho. 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+3. No painel **Intune**, escolha **Configurar dispositivos**.
+4. No painel **Configuração do Dispositivo**, selecione **Gerir** > **Perfis do Carrinho**.
+5. No painel de perfis, escolha **Criar Perfil**.
+6. No painel **Criar Associação**, introduza um **Nome** e uma **Descrição**.
+7. Selecione a opção **Selecionar Classes** > **Configurar** para associar grupos ao Perfil do Carrinho.
+8. Selecione as turmas a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**. 
+9. Selecione a opção **Selecionar Carrinhos** > **Configurar** para associar grupos ao Perfil do Carrinho.
+10. Selecione os grupos a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**.
+11. No painel **Criar Associação**, selecione **Guardar** para guardar o Perfil do Carrinho.
 
-O perfil é criado e apresentado no painel da lista de perfis. 
+O perfil é criado e apresentado no painel da lista de perfis.
 
-## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passo 7 – atribuir o Perfil do Carrinho a turmas 
+## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passo 7 – atribuir o Perfil do Carrinho a turmas
 
-1. Inicie sessão no portal do Azure. 
-2. Escolha **Mais Serviços** > **Outros** > **Intune**. 
-3. No painel **Intune**, escolha **Configurar dispositivos**. 
-4. No painel **Configuração do Dispositivo**, selecione **Monitorizar** > **Estado da atribuição**. 
-5. No painel **Estado da atribuição**, selecione o **Perfil do Carrinho** que criou. 
-6. No painel **Perfil do Carrinho**, selecione **Atribuições** e, em **Incluir**, selecione **Selecionar grupos para incluir**. 
-7. Selecione as turmas para as quais será direcionado o perfil do carrinho (não selecione um grupo) e, em seguida, selecione **Selecionar**.  
-8. Quando terminar, selecione **Guardar**. 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Outros** > **Intune**.
+3. No painel **Intune**, escolha **Configurar dispositivos**.
+4. No painel **Configuração do Dispositivo**, selecione **Monitorizar** > **Estado da atribuição**.
+5. No painel **Estado da atribuição**, selecione o **Perfil do Carrinho** que criou.
+6. No painel **Perfil do Carrinho**, selecione **Atribuições** e, em **Incluir**, selecione **Selecionar grupos para incluir**.
+7. Selecione as turmas para as quais será direcionado o perfil do carrinho (não selecione um grupo) e, em seguida, selecione **Selecionar**. 
+8. Quando terminar, selecione **Guardar**.
 
-A atribuição fica concluída e o Intune implementa o perfil de Sala de Aula aos dispositivos visados com base na atribuição de sala de aula. 
+A atribuição fica concluída e o Intune implementa o perfil de Sala de Aula aos dispositivos visados com base na atribuição de sala de aula.
 
-## <a name="next-steps"></a>Passos Seguintes 
+## <a name="next-steps"></a>Passos Seguintes
 
-Agora, os estudantes podem partilhar dispositivos entre si e selecionar qualquer iPad numa sala de aula, iniciar sessão com um PIN e personalizá-lo com os seus conteúdos. Para obter mais informações sobre iPads Partilhados, veja o [site da Apple](https://www.apple.com/education/it/). 
+Agora, os estudantes podem partilhar dispositivos entre si e selecionar qualquer iPad numa sala de aula, iniciar sessão com um PIN e personalizá-lo com os seus conteúdos. Para obter mais informações sobre iPads Partilhados, veja o [site da Apple](https://www.apple.com/education/it/).

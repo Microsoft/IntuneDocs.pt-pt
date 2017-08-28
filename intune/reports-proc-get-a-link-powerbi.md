@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
@@ -60,18 +60,20 @@ O ficheiro do Power BI (pbix) contém informações de ligação para o seu inqu
 
 Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RESTful na API do Armazém de Dados que expõe o modelo de dados ao seu cliente de relatórios. Siga estas instruções para utilizar o Power BI Desktop para ligar e criar os seus próprios relatórios. Não está limitado ao Power BI Desktop, mas pode utilizar a sua ferramenta de análise favorita com o URL de OData fornecido. O cliente suporta autenticações OAUTH2.0 e OData v4.0 Standard.
 
-1.  Obtenha o **URL de OData** no painel de relatórios, por exemplo `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
-2.  Abra o **Power BI Desktop**.
-3.  Selecione **Base** > **Obter Dados**. Selecione **Feed OData**.
-4.  Selecione **Básico**.
-5.  Escreva ou cole o **URL de OData** na caixa URL.
-6.  Clique em **OK**.
-7.  Se não tiver sido autenticado no Azure AD para o seu inquilino do cliente de ambiente de trabalho do Power BI, escreva as suas credenciais.  
-    a.  Selecione **Conta organizacional**.  
-    b.  Escreva o nome de utilizador e a palavra-passe.  
-    c.  Clique em **Iniciar Sessão.**  
-    d.  Clique em **Ligar**.  
-8.  Clique em **Carregar**.
+1.  Inicie sessão no portal do Azure e selecione **Monitorização + Gestão** > **Intune**. Também pode procurar recursos para o **Intune**.  
+2.  Abra o painel **API do Armazém de Dados do Microsoft Intune (Pré-visualização)**.
+3. Obtenha o URL de feed personalizado no painel de relatórios, por exemplo `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+4. Abra o **Power BI Desktop**.
+5. Selecione **Base** > **Obter Dados**. Selecione **Feed OData**.
+6. Selecione **Básico**.
+7. Escreva ou cole o **URL de OData** na caixa URL.
+8. Clique em **OK**.
+9. Se não tiver sido autenticado no Azure AD para o seu inquilino do cliente de ambiente de trabalho do Power BI, escreva as suas credenciais.  
+    1.  Selecione **Conta organizacional**.  
+    2.  Escreva o nome de utilizador e a palavra-passe.  
+    3.  Clique em **Iniciar Sessão.**  
+    4.  Clique em **Ligar**.  
+10. Clique em **Carregar**.
 
 ## <a name="next-steps"></a>Próximos passos
 
@@ -79,4 +81,4 @@ Pode encontrar respostas a perguntas sobre o seu ambiente, como o número de dis
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Os dados do inquilino estão organizados para o ajudar a extrair informações dos seus dados. Para obter mais informações sobre a forma como os dados estão organizados, veja [Modelo de Dados do Armazém de Dados](reports-ref-data-model.md). 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  Também pode aceder a dados de uma interface RESTful e incorporar os dados na sua própria aplicação. Para obter mais informações, veja [Get data from the Data Warehouse API with a REST client (Obter dados a partir da API do Armazém de Dados com um cliente REST)](reports-proc-data-rest.md).

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97dede1ac393a434342f62d1f8488389dcb28d44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 
@@ -36,15 +36,31 @@ As configurações possíveis são:
 - **Gestão de Dispositivos Móveis para o Office 365** – integração do Office 365 com a solução cloud do Intune. Configura o Intune a partir do Centro de Administração do Office 365. Inclui um subconjunto das funcionalidades que estão disponíveis com o Intune Autónomo. Defina a autoridade de MDM no Centro de Administração do Office 365.
 
 >[!IMPORTANT]    
-No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, pode alterar a autoridade MDM sem ter de contactar o Suporte da Microsoft e sem ter de anular a inscrição e inscrever novamente os seus dispositivos geridos existentes. Para obter detalhes, veja [O que fazer se escolher a definição de autoridade MDM errada](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
+No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, pode alterar a autoridade de MDM sem ter de contactar o Suporte da Microsoft e sem ter de anular a inscrição e inscrever novamente os seus dispositivos geridos existentes. Para obter detalhes, veja [O que fazer se escolher a definição de autoridade de MDM errada](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 ## <a name="set-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
 
-1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-  ![Captura de ecrã da carga de trabalho da Resolução de Problemas do Intune com a ligação Selecionar Utilizador](media/set-mdm-auth.png)
+1. No [portal do Azure](https://portal.azure.com), selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Descrição Geral**.
+![Captura de ecrã do ecrã Definir a autoridade de gestão de dispositivos móveis do Intune](media/set-mdm-auth.png)
 
-3. No painel **Começar a gerir dispositivos**, escolha **Definir a Autoridade de MDM como o Intune**. Uma mensagem indica que definiu com êxito a autoridade de MDM como o Intune.
+3. Em **Autoridade de Gestão de Dispositivos Móveis**, selecione a sua autoridade de MDM a partir das seguintes opções:
+  - **Autoridade de MDM do Intune**
+  - **Autoridade MDM do Configuration Manager**
+  - **Nenhum**
+
+  Uma mensagem indica que definiu com êxito a autoridade de MDM como o Intune.
+
+## <a name="enable-device-enrollment"></a>Ativar a inscrição de dispositivos
+
+Com o Intune definido como a sua autoridade de MDM, os utilizadores podem inscrever dispositivos pessoais e obter acesso a recursos, como o e-mail, das seguintes formas ao instalar o Portal da Empresa (iOS e Windows), adicionar credenciais de trabalho (Windows) ou aceder ao site do Portal da Empresa (iOS, Android, macOS).
+
+As diferentes plataformas têm os seguintes requisitos para ativar ou simplificar a inscrição:
+- **iOS** – (obrigatório) [obter um certificado push de MDM da Apple](apple-mdm-push-certificate-get.md) e, em seguida, [ativar a inscrição dos dispositivos iOS pertencentes à empresa](ios-enroll.md) (opcional).
+- **Android** – (opcional) [ativar os perfis de trabalho do Android](android-enroll.md)
+- **Windows** – (opcional) ativar a [Inscrição automática](windows-enroll.md) ou a [inscrição em massa](windows-bulk-enroll.md)
+- **macOS** – sem requisitos
+
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpeza de dispositivos móveis após a expiração do certificado MDM
 
