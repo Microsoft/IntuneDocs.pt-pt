@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
-ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
+ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/12/2017
+ms.lasthandoff: 08/28/2017
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores
+# <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilizar o portal de resolução de problemas
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,7 +29,6 @@ O portal de resolução de problemas permite que os operadores de suporte técni
 Por exemplo, quando um utilizador contacta o suporte acerca de um problema técnico com o Intune, o operador de suporte técnico introduz o nome do utilizador. O Intune mostra dados úteis que podem ajudar a resolver vários problemas de nível 1, incluindo:
 - Estado de utilizador
 - Atribuições
-- Falha de instalação da aplicação
 - Resolver problemas de compatibilidade
 - O dispositivo não responde
 -   O dispositivo não consegue aceder às definições de VPN ou Wi-Fi

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: ba953f1f471cc8bdbfdadad75c8f4eeb8acc2279
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>A edição antecipada do Microsoft Intune – agosto de 2017
 
@@ -57,15 +57,12 @@ Estamos a adicionar novas [definições de restrição de dispositivos](device-r
 Pode especificar a aplicação pelo URL, nome do pacote ou da lista de aplicações que gere.
 
 ### <a name="new-settings-for-windows-10-device-restriction-profile"></a>Novas definições para o perfil de restrição de dispositivos Windows 10
-<!--- 978575, 1308849, 1308850 -->
+<!--- 978575, 1308849, -->
 Estamos a adicionar novas definições ao perfil de restrição de dispositivos com o Windows 10 na categoria Windows Defender SmartScreen.
 
 Para obter detalhes sobre o perfil de restrição de dispositivos com o Windows 10, veja [Windows 10 and later device restriction settings (Definições de restrição de dispositivos com o Windows 10 e posterior)]( device-restrictions-windows-10.md).
 
-### <a name="new-device-restriction-settings-for-windows-10------1063965---"></a>Novas definições de restrição de dispositivos para Windows 10 <!-- 1063965 -->
-Estamos a adicionar novas definições ao [perfil de restrição de dispositivos com o Windows 10](/intune/device-restrictions-windows-10) nas seguintes categorias:
-- Windows Defender SmartScreen
-- Loja de aplicações
+
 
 
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>Suporte do Android for Work para Lookout <!-- 1087312 -->   
@@ -120,8 +117,6 @@ Em breve, os utilizadores finais não terão de inscrever os dispositivos para a
 ### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>Mensagem de erro melhorada para quando um utilizador atinge o número máximo de dispositivos que é permitido inscrever <!-- 1270370 -->
 Em vez de uma mensagem de erro genérica, os utilizadores veem uma mensagem de erro acionável amigável: "Inscreveu o número máximo de dispositivos permitidos pela sua equipa de TI. Remova um dispositivo inscrito ou peça ajuda ao seu administrador de TI."
 
-### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Nova experiência de início de sessão para utilizadores do Portal da Empresa para Android e das Políticas de Proteção de Aplicações <!-- 621669 -->
-Os utilizadores finais poderão procurar aplicações, gerir dispositivos e ver informações de contacto de TI através da aplicação Portal da Empresa para Android sem inscrever os respetivos dispositivos Android. Além disso, se um utilizador final já utilizar uma aplicação protegida por Políticas de Proteção de Aplicações do Intune e iniciar o Portal da Empresa para Android, deixará de receber um pedido para inscrever o dispositivo. 
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Informe os utilizadores finais acerca das informações do dispositivo que podem ser vistas para iOS <!--739894-->
 Iremos adicionar o **Tipo de Propriedade** ao ecrã Detalhes do Dispositivo na aplicação Portal da Empresa para iOS. Isto permite que os utilizadores obtenham mais informações sobre privacidade diretamente a partir desta página, através da documentação de utilizador final do Intune. Também poderão localizar estas informações no ecrã Acerca de.
