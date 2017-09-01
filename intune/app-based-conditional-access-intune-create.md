@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Configurar políticas de acesso condicional com base nas aplicações
 
@@ -59,9 +59,30 @@ Este tópico fornece instruções sobre como configurar políticas de acesso con
 2. Clique na elipse para ver as opções de eliminação.
 3. Selecione **Eliminar** para remover o grupo de utilizadores da lista.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Criar políticas de acesso condicional com base nas aplicações na carga de trabalho do Azure AD
+
+A partir da versão 1708 do Intune, os administradores de TI podem criar políticas de acesso condicional com base nas aplicações a partir da carga de trabalho do Azure AD. Isto é útil, uma vez que assim não precisa de alternar entre as cargas de trabalho do Azure e o Intune.
+
+> [!IMPORTANT]
+> Tem de ter uma licença do Azure AD Premium para criar políticas de acesso condicional do Azure AD a partir do Intune no portal do Azure.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de acesso condicional com base na aplicação
+
+> [!IMPORTANT]
+> Tem de aplicar [políticas de proteção de aplicações do Intune](app-protection-policies.md) às suas aplicações antes de utilizar as políticas de acesso condicional com base nas aplicações.
+
+1. No **Dashboard do Intune**, escolha **Acesso condicional**.
+
+2. No painel **Políticas**, selecione **Nova política** para criar a sua nova política de acesso condicional com base na aplicação.
+
+4. Após introduzir um nome da política e configurar as definições disponíveis na secção **Atribuições**, selecione **Conceder** na secção **Controlos de acesso**.
+
+5. Selecione **Pedir aplicação aprovada do cliente** , selecione **Selecionar** e, em seguida, selecione **OK** para guardar a nova política.
+
+## <a name="next-steps"></a>Próximos passos
 [Bloquear aplicações que não tenham autenticação moderna](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Consulte também
 
 [Proteger os dados da aplicação com políticas de proteção de aplicações](app-protection-policies.md)
+[Acesso Condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

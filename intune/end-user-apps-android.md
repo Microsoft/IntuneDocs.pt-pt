@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Como os utilizadores de dispositivos Android obtêm as aplicações
 
@@ -50,9 +50,9 @@ Neste caso, a aplicação Portal da Empresa irá informar e orientar o utilizado
 
 As aplicações podem ser geridas ou não geridas, conforme descrito abaixo. O processo para tornar as aplicações geridas é igual para todos os tipos de dispositivos Android.
 
-**Aplicações geridas** – são as aplicações que podem ser geridas através das políticas. Aplicações que foram "encapsuladas" pelo Intune ou criadas no Software Development Kit (SDK) da Gestão de Aplicações Móveis (MAM) do Intune. Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
+**Aplicações geridas** – são as aplicações que podem ser geridas através das políticas. Foram "encapsuladas" pelo Intune ou compiladas com o SDK da Aplicação Intune. Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
 
-**Aplicações não geridas** – são as aplicações que não podem ser geridas através das políticas. Não foram encapsuladas pelo Intune ou não fazem parte do SDK de MAM do Intune. Não é possível aplicar políticas de aplicação a estas aplicações.
+**Aplicações não geridas** – são as aplicações que não podem ser geridas através das políticas. Não foram encapsuladas pelo Intune ou não fazem parte do SDK da Aplicação Intune. Não é possível aplicar políticas de aplicação a estas aplicações.
 
 ### <a name="see-also"></a>Consulte também
 [Adicionar aplicações com o Microsoft Intune](apps-add.md)

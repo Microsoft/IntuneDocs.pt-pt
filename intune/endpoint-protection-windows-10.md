@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O perfil de proteção de ponto final permite-lhe controlar as funcionalidades de segurança em dispositivos com o Windows 10, como o BitLocker.
+O perfil de proteção de ponto final permite-lhe controlar as funcionalidades de segurança em dispositivos com o Windows 10, como o BitLocker e o Windows Defender.
 
 Utilize as informações neste tópico para saber como criar perfis de proteção de ponto final.
 
@@ -38,13 +38,18 @@ Utilize as informações neste tópico para saber como criar perfis de proteçã
 3. No painel de perfis, escolha **Criar Perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de funcionalidades de dispositivos.
 5. Na lista pendente **Plataforma**, selecione **Windows 10 e posterior**.
-6. Na lista pendente **Tipo de perfil**, selecione **Proteção de ponto final**. 
+6. Na lista pendente **Tipo de perfil**, selecione **Proteção de ponto final**.
 7. No painel **Encriptação do Windows**, configure as definições que pretende. Utilize os detalhes neste tópico para o ajudar a compreender o que faz cada definição. Quando terminar, escolha **OK**.
 8. Regresse ao painel **Criar Perfil** e selecione **Criar**.
 
 O perfil é criado e apresentado no painel da lista de perfis.
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Referência das definições do perfil de proteção de ponto final
+## <a name="windows-defender-smartscreen-settings"></a>Definições do Windows Defender SmartScreen
+
+- **SmartScreen para aplicações e ficheiros** – ative o Windows SmartScreen para a execução de ficheiros e aplicações em execução.
+- **Execução de ficheiros não verificados** – não permita que o utilizador final execute ficheiros que não foram verificados pelo Windows SmartScreen.
+
+## <a name="windows-encryption-settings"></a>Definições de encriptação do Windows
 
 ### <a name="windows-settings"></a>Definições do Windows
 
@@ -62,16 +67,16 @@ O perfil é criado e apresentado no painel da lista de perfis.
 
 ### <a name="bitlocker-os-drive-settings"></a>Definições de unidades de SO do BitLocker
 
-- **Exigir a autenticação adicional no arranque** - 
-    - **Bloquear o BitLocker em dispositivos sem um chip de TPM compatível** - 
-    - **Arranque do TPM** – configure se o chip de TPM é permitido, não permitido ou exigido. 
-    - **PIN de arranque do TPM** – configure se utilizar um PIN de arranque do TPM é permitido, não permitido ou exigido. 
-    - **Chave de arranque do TPM** – configure se utilizar uma chave de arranque do TPM é permitido, não permitido ou exigido. 
+- **Exigir a autenticação adicional no arranque** -
+    - **BitLocker com chip do TPM não compatível** -
+    - **Arranque do TPM** – configure se o chip de TPM é permitido, não permitido ou exigido.
+    - **PIN de arranque do TPM** – configure se utilizar um PIN de arranque do TPM é permitido, não permitido ou exigido.
+    - **Chave de arranque do TPM** – configure se utilizar uma chave de arranque do TPM é permitido, não permitido ou exigido.
     - **Chave e PIN de arranque do TPM** – configure se utilizar uma chave e PIN de arranque do TPM é permitido, não permitido ou exigido.
 - **Comprimento Mínimo do PIN**  – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
     - **Carateres mínimos** – introduza o número de carateres necessários para o PIN de arranque de **4**-**20**.
 - **Ativar a recuperação da unidade de SO** – ative esta definição para controlar a forma como as unidades de sistema operativo protegidas pelo BitLocker são recuperadas quando as informações de arranque necessárias não estão disponíveis.
-    - **Permitir o agente de recuperação de dados baseado em certificados** – ative esta definição se quiser que os agentes de recuperação de dados possam ser utilizados com as unidades de sistema operativo protegidas pelo BitLocker.
+    - **Agente de recuperação de dados baseada em certificados** – ative esta definição se quiser que os agentes de recuperação de dados possam ser utilizados com as unidades de sistema operativo protegidas pelo BitLocker.
     - **Criação de palavra-passe de recuperação pelo utilizador** – configure se é permitido, não permitido ou exigido aos utilizadores gerarem uma palavra-passe de recuperação de 48 dígitos.
     - **Criação da chave de recuperação pelo utilizador** – configure se é permitido, não permitido ou exigido aos utilizadores gerarem uma chave de recuperação de 256 bits.
     - **Ocultar opções de recuperação no assistente de configuração do BitLocker** – ative esta definição para impedir que os utilizadores vejam ou alterem opções de recuperação quando ativam o BitLocker.
@@ -92,7 +97,7 @@ O perfil é criado e apresentado no painel da lista de perfis.
 
 - **Recusar o acesso de escrita para unidade de dados fixa não protegida pelo BitLocker** – se ativada, a proteção do BitLocker tem de ser ativada em todas as unidades de dados incorporadas ou fixas para que seja possível escrever nas mesmas.
 - **Ativar recuperação de unidade fixa**– ative esta definição para controlar a forma como as unidades fixas protegidas pelo BitLocker são recuperadas quando as informações de arranque necessárias não estão disponíveis.
-    - **Permitir o agente de recuperação de dados** – ative esta definição se quiser que os agentes de recuperação de dados sejam utilizados com as unidades fixas protegidas pelo BitLocker.
+    - **Agente de recuperação de dados** – ative esta definição se quiser que os agentes de recuperação de dados sejam utilizados com as unidades fixas protegidas pelo BitLocker.
     - **Criação de palavra-passe de recuperação pelo utilizador** – configure se é permitido, não permitido ou exigido aos utilizadores gerarem uma palavra-passe de recuperação de 48 dígitos.  
     - **Criação da chave de recuperação pelo utilizador** – configure se é permitido, não permitido ou exigido aos utilizadores gerarem uma chave de recuperação de 256 bits.
     - **Ocultar opções de recuperação no assistente de configuração do BitLocker** – ative esta definição para impedir que os utilizadores vejam ou alterem opções de recuperação quando ativam o BitLocker.
@@ -110,8 +115,6 @@ O perfil é criado e apresentado no painel da lista de perfis.
 
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
-
-
