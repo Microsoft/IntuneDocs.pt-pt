@@ -14,11 +14,11 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 68b02a52dce49db470b11cbdf32308a74688ca45
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 1a1c853aa16b771eff47d1d179f8870d7c1036a8
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Como os utilizadores de dispositivos Windows obtêm as aplicações
 
@@ -30,9 +30,9 @@ Utilize estas informações para saber como e onde é que os seus utilizadores p
 
 **Aplicações disponíveis** são proporcionadas na lista de aplicações do Portal da Empresa e os utilizadores podem optar por instalá-las.
 
-**Aplicações geridas** podem ser geridas através de políticas e foram "encapsuladas" pelo Intune ou incorporadas no Software Development Kit (SDK) da Gestão de Aplicações Móveis (MAM) do Intune. Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
+**Aplicações geridas** podem ser geridas através de políticas e foram "encapsuladas" pelo Intune ou incorporadas no Intune App Software Development Kit (SDK). Estas aplicações podem ser geridas pelo Intune e podem ser-lhes aplicadas políticas de proteção de aplicações.
 
-**Aplicações não geridas** podem ser geridas através de políticas e não foram encapsuladas pelo Intune ou não incorporam o SDK de MAM do Intune. Não é possível aplicar políticas de aplicação a estas aplicações.
+As **aplicações não geridas** podem ser geridas através de políticas e não foram encapsuladas pelo Intune ou não incorporam o SDK da Aplicação Intune. Não é possível aplicar políticas de proteção de aplicações a estas aplicações.
 
 ### <a name="see-also"></a>Consulte também
 [Como os utilizadores de dispositivos Android obtêm as aplicações](end-user-apps-android.md)

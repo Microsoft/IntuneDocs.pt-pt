@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de Ativação em dispositivos iOS supervisionados com o Intune
 
@@ -58,8 +58,8 @@ O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisi
 Antes de poder ignorar o Bloqueio de Ativação em dispositivos, tem de ativá-lo através destas instruções:
 
 1. Configure um perfil de restrição de dispositivos do Intune para iOS utilizando as informações em [Como configurar as definições de restrição de dispositivos](/intune-azure/configure-devices/how-to-configure-device-restrictions).
-2. Ative a definição do modo **Quiosque** em **Bloqueio de Ativação**.
-3. Guarde o perfil e, em seguida, atribua o mesmo aos dispositivos nos quais pretende ignorar o Bloqueio de Ativação.
+2. Nas [definições de restrição de dispositivos para iOS](device-restrictions-ios.md), nas definições **Gerais**, ative a opção **Bloqueio de Ativação**.
+3. Guarde o perfil e, em seguida, [atribua-o](device-profile-assign.md) aos dispositivos nos quais pretende ignorar o Bloqueio de Ativação.
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>Como ignorar o Bloqueio de Ativação

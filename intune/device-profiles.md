@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5288bfc3aebbd119b49ef5261944840fd863afa5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são os perfis de dispositivos do Microsoft Intune?
 
@@ -74,7 +74,7 @@ Este tipo de perfil permite-lhe atualizar automaticamente dispositivos que execu
 Para obter mais informações, veja [Como configurar atualizações de edição do Windows 10](edition-upgrade-configure-windows-10.md). Suporta: apenas o Windows 10.
 
 ## <a name="endpoint-protection"></a>Proteção de ponto final
-Este tipo de perfil permite-lhe configurar as definições do BitLocker para dispositivos com o Windows 10.
+Este tipo de perfil permite-lhe configurar as definições do BitLocker e do Windows Defender para dispositivos com o Windows 10.
 Para obter mais informações, veja [Definições de proteção de ponto final para o Windows 10](endpoint-protection-windows-10.md). Suporta: apenas o Windows 10.
 
 ## <a name="windows-information-protection"></a>Windows Information Protection
@@ -85,5 +85,5 @@ Para obter mais informações, veja [Como configurar o Windows Information Prote
 As definições personalizadas permitem-lhe atribuir definições de dispositivo que não estejam incorporadas no Intune. Por exemplo, em dispositivos Android, pode especificar valores OMA-URI para configurar o dispositivo. Para dispositivos iOS, pode importar um ficheiro de configuração que criou no Apple Configurator.
 Para obter mais informações, veja [Como configurar definições personalizadas](custom-settings-configure.md). Suporta: Android, iOS, macOS e Windows Phone 8.1.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Selecione um dos tipos de perfil na lista para começar a configurar os dispositivos.

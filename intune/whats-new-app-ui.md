@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Isto pode ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
 
+## <a name="week-of-august-21-2017"></a>Semana de 21 de agosto de 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>As caixas de diálogo da Gestão de Aplicações Móveis (MAM) do Intune terão agora uma interface moderna <!-- 1199015 -->
+
+As caixas de diálogo da Gestão de Aplicações Móveis (MAM) do Intune serão atualizadas para um aspeto e funcionalidade modernos. O estilo de funcionamento das caixas de diálogo permanecerá igual.
+
+**Experiência anterior**
+
+![interface antiga](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Experiência moderna**
+
+![interface moderna](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Semana de 14 de agosto de 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Atualizações à página "Detalhes do Dispositivo" na aplicação Portal da Empresa para Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Atualizações à página "Detalhes do Dispositivo" na aplicação Portal da Empresa para Windows 10 <!---1287448--->
 
 A aplicação Portal da Empresa para Windows 10 irá mudar a etiqueta __Categoria__ da parte de baixo do título para uma propriedade na página __Detalhes do Dispositivo__.
 
 ![A aplicação Portal da Empresa para o ecrã "Detalhes do Dispositivo" do Windows, que mostra o campo "Categorias" como uma propriedade e não diretamente abaixo do título desse ecrã.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Semana de 31 de julho de 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>As páginas de detalhes das aplicações apresentarão novas informações em dispositivos Android <!--1287476-->
+
+A página de detalhes das aplicações da aplicação Portal da Empresa para Android passará a apresentar as categorias da aplicação que o administrador de TI definir para a respetiva aplicação.
+
+![A página de detalhes da aplicação](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Experiência de início de sessão melhorada nas aplicações Portal da Empresa para todas as plataformas<!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Com base nos comentários dos utilizadores, a aplicação Portal da Empresa para
 
 ## <a name="week-of-june-5-2017"></a>Semana de 5 de junho de 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Melhorias dos mosaicos de aplicação na aplicação Portal da Empresa para iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Melhorias dos mosaicos de aplicação na aplicação Portal da Empresa para iOS <!--1230777-->
 Atualizamos a estrutura dos mosaicos de aplicação na home page para refletir a cor corporativa que definiu para o Portal da Empresa.
 
 **Antes**
@@ -242,7 +263,7 @@ __Atualização das Aplicações em Destaque__: adicionámos ao site uma página
 
 ![Os mosaicos coloridos que mostram as aplicações. São grandes quadrados coloridos abaixo de cada aplicação. As cores destes quadrados são extraídas da cor principal do logótipo da respetiva aplicação. A secção "Aplicações em Destaque" é apresentada na parte superior da aplicação Portal da Empresa.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Novidades do Intune](https://docs.microsoft.com/intune/whats-new)
