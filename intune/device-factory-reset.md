@@ -3,8 +3,8 @@ title: "Repor dispositivos para definições de fábrica com o Intune"
 titleSuffix: Intune on Azure
 description: "Saiba como repor os dispositivos que gere com o Intune para as definições de fábrica.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 8eff9b53-eef2-4c50-8aee-556bc49d69f2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44f69179f76c8d5eeca1594485ca3a9c1b036188
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: fd7273d6c5f75a675d7b01df4225a96fd3a5f821
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="reset-intune-managed-devices-to-factory-settings"></a>Repor dispositivos geridos com o Intune para definições de fábrica
 
@@ -46,4 +46,3 @@ A **Reposição de fábrica** repõe um dispositivo para as suas predefinições
 ## <a name="next-steps"></a>Próximos passos
 
 Para ver o estado da ação que acabou de realizar, no painel **Dispositivos e grupos**, escolha **Ações de Dispositivos**.
-

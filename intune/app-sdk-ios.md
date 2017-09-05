@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/27/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29911cf5a8fa3488640813efd8f33ee07c951c31
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -87,9 +87,6 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
 2. **Opção 2**: ligue à biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` para a lista **Estruturas e Bibliotecas Ligadas** do destino do projeto.
 
     ![SDK da Aplicação do Intune para iOS: estruturas e bibliotecas ligadas](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
-
-    > [!NOTE]
-    > Se planeia lançar a sua aplicação na App Store, utilize a versão do `libIntuneMAM.a` criada para lançamento e não a versão de depuração. A versão de lançamento estará na pasta **release**. A versão de depuração tem uma saída verbosa ideal que ajuda a resolver problemas com o SDK da Aplicação do Intune.
 
     Adicione `-force_load {PATH_TO_LIB}/libIntuneMAM.a` a qualquer um dos seguintes, substituindo `{PATH_TO_LIB}` pela localização do SDK da Aplicação do Intune:
       * A definição de configuração da compilação `OTHER_LDFLAGS` do projeto

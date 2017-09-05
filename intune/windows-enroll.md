@@ -5,7 +5,7 @@ description: "Ative a gestão de dispositivos móveis (MDM) do Intune para dispo
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 06/30/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b873e72e39c5c6f1d96ddac138f920be9dc673dd
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 3b5b5e2cdf2b31c33a02a90560e4abf955d398b0
+ms.sourcegitcommit: d5b5cb9b6dcb59094e436e07f8ed46924b37ac94
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="enroll-windows-devices"></a>Inscrever dispositivos Windows
 
@@ -56,9 +56,10 @@ Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo,
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-|Tipo|Nome do anfitrião|Aponta para|TTL|  
+|Tipo|Nome do anfitrião|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
+|CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 Hora|
 
 Se tiver mais do que um sufixo UPN, tem de criar um CNAME para cada nome de domínio e apontar cada um para EnterpriseEnrollment-s.manage.microsoft.com. Se os utilizadores na Contoso utilizarem name@contoso.com e também name@us.contoso.com e name@eu.constoso.com como e-mail/UPN, o administrador de DNS da Contoso deverá criar os seguintes CNAMEs:
 
