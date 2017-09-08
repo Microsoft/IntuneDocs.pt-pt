@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Isto pode ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
+
+## <a name="week-of-august-28-2017"></a>Semana de 28 de agosto de 2017
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>A aplicação Mail para o iOS 11 suportará o OAuth <!---1196951--->
+
+O acesso condicional do Intune suporta uma autenticação mais segura em dispositivos iOS com o OAuth. Para suportar esta funcionalidade, haverá agora um fluxo diferente na aplicação Portal da Empresa para iOS, para permitir uma autenticação mais segura. Quando os utilizadores finais tentarem iniciar sessão numa nova conta do Exchange na aplicação Mail, verão uma mensagem na vista Web. Após a inscrição no Intune, os utilizadores verão uma mensagem para permitir que a aplicação Mail nativa aceda a um certificado. A maioria dos utilizadores finais não verá mais e-mails em quarentena. As contas de e-mail existentes continuarão a utilizar o protocolo de autenticação básico, por isso estes utilizadores continuarão a receber e-mails em quarentena. A experiência de início de sessão dos utilizadores finais é semelhante à das aplicações do Office para dispositivos móveis.
+
+![Selecionar o tipo de conta na aplicação de e-mail nativa.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Após selecionar o Exchange, o dispositivo iOS pede-lhe o endereço de e-mail e o nome da conta.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Forneça o endereço de e-mail e o nome da conta.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Enviado para a página de início de sessão externa da Microsoft.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Fornecer a palavra-passe na página da Microsoft.](./media/ios-11-ca-email-after-1708-05.png)
+
+![A Microsoft pede ao utilizador que inscreva o dispositivo para gestão.](./media/ios-11-ca-email-after-1708-06.png)
+
+![É pedido ao utilizador que se inscreva a partir do site do Portal da Empresa.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>Semana de 21 de agosto de 2017
 
@@ -31,11 +52,11 @@ As caixas de diálogo da Gestão de Aplicações Móveis (MAM) do Intune serão 
 
 **Experiência anterior**
 
-![interface antiga](media\NewUI_Old_AttachFileHandler.jpg)
+![interface antiga](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Experiência moderna**
 
-![interface moderna](media\NewUI_Modern_AttachFileHandler.jpg)
+![interface moderna](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>Semana de 14 de agosto de 2017
@@ -263,7 +284,7 @@ __Atualização das Aplicações em Destaque__: adicionámos ao site uma página
 
 ![Os mosaicos coloridos que mostram as aplicações. São grandes quadrados coloridos abaixo de cada aplicação. As cores destes quadrados são extraídas da cor principal do logótipo da respetiva aplicação. A secção "Aplicações em Destaque" é apresentada na parte superior da aplicação Portal da Empresa.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Novidades do Intune](https://docs.microsoft.com/intune/whats-new)
