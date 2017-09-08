@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
@@ -29,10 +29,22 @@ Enquanto administrador do Intune, pode ativar a inscrição para dispositivos iO
 
 ## <a name="prerequisites-for-ios-enrollment"></a>Pré-requisitos para a inscrição de dispositivos iOS
 Antes de poder ativar dispositivos iOS, conclua os seguintes passos:
-- [Configurar o Intune](setup-steps.md) – estes passos irão configurar a sua infraestrutura do Intune, em particular as inscrições de dispositivos que exigem que [defina a autoridade MDM](mdm-authority-set.md).
+- [Configurar o Intune](setup-steps.md) – estes passos irão configurar a sua infraestrutura do Intune. Em particular, a inscrição de dispositivos requer que [defina a autoridade de MDM](mdm-authority-set.md).
 - [Obter um Certificado Push de MDM da Apple](apple-mdm-push-certificate-get.md) - a Apple exige um certificado para ativar a gestão de dispositivos iOS e macOS.
 
-Quando estes pré-requisitos forem cumpridos, os utilizadores podem instalar a aplicação Portal da Empresa para inscrever os respetivos dispositivos pessoais iOS ou o administrador pode configurar a gestão de dispositivos iOS pertencentes à empresa. Os administradores também podem atribuir [gestores de inscrição de dispositivos](device-enrollment-manager-enroll.md), os quais podem inscrever vários dispositivos com uma única conta de gestão. O Intune suporta os seguintes métodos de inscrição de dispositivos iOS pertencentes à empresa:
+## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS propriedade do utilizador (BYOD)
+
+Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "bring your own device (traga o seu próprio dispositivo)", ou BYOD. Após concluir os pré-requisitos e atribuir licenças aos utilizadores, estes podem transferir a aplicação Portal da Empresa para iOS a partir da App Store e seguir as instruções da inscrição na aplicação.
+
+## <a name="company-owned-ios-devices"></a>Dispositivos iOS pertencentes à empresa
+Para as organizações que compram dispositivos para os respetivos utilizadores, o Intune suporta os seguintes métodos de inscrição de dispositivos iOS pertencentes à empresa:
+
+- Programa de Registo de Aparelho (DEP) da Apple
+- Gestor Escolar da Apple
+- Inscrição do Assistente de Configuração do Apple Configurator
+- Inscrição direta no Apple Configurator
+
+Também pode inscrever os dispositivos iOS pertencentes à empresa com uma conta de [gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md).
 
 ## <a name="device-enrollment-program"></a>Programa de Inscrição de Dispositivos
 As organizações podem adquirir dispositivos iOS através do Programa de Inscrição de Dispositivos (DEP) da Apple. O DEP permite-lhe implementar um perfil de inscrição através de uma ligação sem fios para incluir os dispositivos na gestão. Saiba mais sobre o [Programa de Inscrição de Dispositivos](device-enrollment-program-enroll-ios.md).
