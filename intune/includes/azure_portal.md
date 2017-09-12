@@ -1,4 +1,4 @@
-|Aplica-se a: Intune no Azure |
+|Aplica-se a: Intune no portal do Azure |
 |--|
-|Está à procura de documentação sobre o Intune na consola clássica? Aceda [aqui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
+|Está à procura de documentação sobre o Intune no portal clássico? [Aceda aqui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
