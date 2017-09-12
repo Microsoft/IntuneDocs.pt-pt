@@ -1,6 +1,6 @@
 ---
 title: "O que são perfis de dispositivo no Microsoft Intune?"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Saiba mais sobre os perfis de dispositivo do Intune e de que forma podem ajudar a gerir e a proteger os dispositivos na sua empresa."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 1053ddf4195e8481cf383c441664e07c02dacdec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são os perfis de dispositivos do Microsoft Intune?
 
@@ -85,5 +85,5 @@ Para obter mais informações, veja [Como configurar o Windows Information Prote
 As definições personalizadas permitem-lhe atribuir definições de dispositivo que não estejam incorporadas no Intune. Por exemplo, em dispositivos Android, pode especificar valores OMA-URI para configurar o dispositivo. Para dispositivos iOS, pode importar um ficheiro de configuração que criou no Apple Configurator.
 Para obter mais informações, veja [Como configurar definições personalizadas](custom-settings-configure.md). Suporta: Android, iOS, macOS e Windows Phone 8.1.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 Selecione um dos tipos de perfil na lista para começar a configurar os dispositivos.

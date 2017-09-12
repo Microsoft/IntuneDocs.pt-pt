@@ -1,6 +1,6 @@
 ---
 title: "Definições de VPN no Intune para dispositivos iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos iOS.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d623f44b8765a29a998a9ddd3911d2d7da690caa
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos iOS no Microsoft Intune
 
@@ -30,7 +30,7 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
 
-**Nome da ligação** – introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
+**Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
 - **Endereço IP ou FQDN** – forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
 - **Método de autenticação** – escolha como os dispositivos serão autenticados no servidor VPN em:
     - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais informações sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).

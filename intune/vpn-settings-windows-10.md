@@ -1,6 +1,6 @@
 ---
 title: "Definições de VPN do Intune para dispositivos com o Windows 10"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos Windows 10.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
-ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
+ms.openlocfilehash: d4c2b865a7101a7486ecf9c9badbfb69d9efbeab
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos com o Windows 10 no Microsoft Intune
 
@@ -80,7 +80,7 @@ Consoante as definições que escolher, nem todos os valores na lista abaixo ser
 
 Consulte a documentação de cada fabricante relativa à VPN para obter mais informações sobre como escrever comandos XML personalizados.
 
-**Dividir túnel** - **Ative** ou **Desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utilizará a ligação VPN para aceder aos ficheiros de trabalho, mas utilizará a rede padrão do hotel para a navegação normal na Internet.
+**Divisão de túnel** - **Ative** ou **Desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utilizará a ligação VPN para aceder aos ficheiros de trabalho, mas utilizará a rede padrão do hotel para a navegação normal na Internet.
 - **Dividir rotas de túnel para esta ligação VPN** – Adicione rotas opcionais para fornecedores de VPN de terceiros. Especifique um prefixo de destino e um tamanho de prefixo para cada um.
 
 ## <a name="apps-and-traffic-rules"></a>Regras de Aplicações e Tráfego
@@ -106,7 +106,7 @@ Consulte a documentação de cada fabricante relativa à VPN para obter mais inf
 
 ## <a name="dns-settings"></a>Definições de DNS
 
-**Nomes e servidores DNS para esta ligação VPN** – selecione os servidores DNS que a ligação VPN utilizará depois de a ligação ser estabelecida.
+**Nomes e servidores DNS para esta ligação VPN** – Selecione os servidores DNS que a ligação VPN utilizará depois de a ligação ser estabelecida.
 Para cada servidor. especifique:
 - **Nome DNS**
 - **Servidor DNS**
@@ -114,9 +114,9 @@ Para cada servidor. especifique:
 
 ## <a name="proxy-settings"></a>Definições de proxy
 
-- **Detetar automaticamente as definições de proxy** – se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se quer que os dispositivos detetem automaticamente as definições de ligação. Para mais informações, consulte a documentação do Windows Server.
-- **Script de configuração automática** – utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
-- **Utilizar um servidor proxy** – ative esta opção se quiser introduzir manualmente as definições do servidor proxy.
+- **Detetar automaticamente as definições de proxy** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se quer que os dispositivos detetem automaticamente as definições de ligação. Para mais informações, consulte a documentação do Windows Server.
+- **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
+- **Utilizar um servidor proxy** – Ative esta opção se quiser introduzir manualmente as definições do servidor proxy.
     - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
     - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
-- **Ignorar o proxy para endereços locais** – se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, consulte a documentação do Windows Server.
+- **Ignorar o proxy para endereços locais** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, consulte a documentação do Windows Server.
