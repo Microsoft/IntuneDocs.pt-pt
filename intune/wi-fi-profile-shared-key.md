@@ -1,6 +1,6 @@
 ---
 title: "Criar um perfil Wi-Fi com uma chave pré-partilhada"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Utilize um perfil personalizado do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utilizar um perfil de dispositivo personalizado do Microsoft Intune para criar um perfil Wi-Fi com uma chave pré-partilhada
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

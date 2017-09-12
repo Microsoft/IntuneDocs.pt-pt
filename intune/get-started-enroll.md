@@ -1,10 +1,10 @@
 ---
 title: "Introdução à inscrição de dispositivos"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conheça a experiência de inscrição ao efetuar uma experiência de inscrição completa de um dispositivo iOS."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: cec3db189909238596b42c7a40f5303bb1f1f768
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="get-started-enrolling-devices"></a>Começar a inscrever dispositivos
 
@@ -59,7 +59,7 @@ A inscrição de um dispositivo é a primeira experiência que muitos utilizador
 
 ## <a name="next-steps"></a>Próximos passos
 
-[Começar a adicionar aplicações](get-started-apps.md) – localize e adicione aplicações a dispositivos para que os seus funcionários comecem a trabalhar.
+[Introdução à adição de aplicações](get-started-apps.md) – localize e adicione aplicações a dispositivos para que os seus funcionários comecem a trabalhar.
 
 ## <a name="learn-more"></a>Saiba mais
 

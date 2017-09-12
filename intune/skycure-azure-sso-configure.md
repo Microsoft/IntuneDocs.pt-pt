@@ -1,6 +1,6 @@
 ---
 title: "Configurar o Skycure para utilizar o início de sessão único do Azure AD com o Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Configurar o Skycure para utilizar o início de sessão único do Azure AD com o Intune"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: e0466ac4-4942-4c4c-b8af-996b597c701d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2d8a79baf65208e87dbe85d8cc934e167710144
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 93e7f1a21c9badb3cc3ccdf02432267b271e6e94
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>Configurar o Skycure para utilizar o Início de Sessão Único (SSO) do Azure Active Directory
 

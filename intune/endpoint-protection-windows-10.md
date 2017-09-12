@@ -1,6 +1,6 @@
 ---
 title: "Definições de proteção de ponto final do Intune para o Windows 10"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba que definições do Intune pode utilizar para controlar as definições de proteção de ponto final, como o BitLocker, em dispositivos com o Windows 10."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 6c8e9d6b63557a5c73ff027d9bf476a6980f8314
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
 
@@ -73,7 +73,7 @@ O perfil é criado e apresentado no painel da lista de perfis.
     - **PIN de arranque do TPM** – configure se utilizar um PIN de arranque do TPM é permitido, não permitido ou exigido.
     - **Chave de arranque do TPM** – configure se utilizar uma chave de arranque do TPM é permitido, não permitido ou exigido.
     - **Chave e PIN de arranque do TPM** – configure se utilizar uma chave e PIN de arranque do TPM é permitido, não permitido ou exigido.
-- **Comprimento Mínimo do PIN**  – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
+- **Comprimento Mínimo do PIN ** – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
     - **Carateres mínimos** – introduza o número de carateres necessários para o PIN de arranque de **4**-**20**.
 - **Ativar a recuperação da unidade de SO** – ative esta definição para controlar a forma como as unidades de sistema operativo protegidas pelo BitLocker são recuperadas quando as informações de arranque necessárias não estão disponíveis.
     - **Agente de recuperação de dados baseada em certificados** – ative esta definição se quiser que os agentes de recuperação de dados possam ser utilizados com as unidades de sistema operativo protegidas pelo BitLocker.
@@ -115,6 +115,6 @@ O perfil é criado e apresentado no painel da lista de perfis.
 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
