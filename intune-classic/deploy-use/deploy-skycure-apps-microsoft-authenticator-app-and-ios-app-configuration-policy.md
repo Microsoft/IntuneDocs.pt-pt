@@ -1,6 +1,6 @@
 ---
 title: "Implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS"
-description: "Implemente aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS na consola clássica do Intune."
+description: "Implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração para iOS no portal clássico do Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 45826fbc-6df5-41b2-8e80-d1353f904b43
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 60f4ab5a656a2e253d82971d7bea6b3a6c9eb25a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6334686f350c54e11ef4ef5cbacf39a81e6a1a7e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy"></a>Implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração de aplicações iOS
 
@@ -26,9 +26,9 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="before-you-begin"></a>Antes de começar
 
--   Os passos abaixo têm de ser realizados na [consola clássica do Intune](https://manage.microsoft.com/).
+-   Os passos abaixo têm de ser realizados no [portal clássico do Intune](https://manage.microsoft.com/).
 
--   Utilize a mesma conta do Azure AD anteriormente configurada na consola de Gestão do Skycure, que deve ser a mesma conta utilizada para iniciar sessão na consola clássica do Intune.
+-   Utilize a mesma conta do Azure AD anteriormente configurada na Consola de Gestão do Skycure, que deve ser a mesma conta utilizada para iniciar sessão no portal clássico do Intune.
 
 -   Verifique se está familiarizado com o processo de:
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-deploy-skycure-apps-microsoft-authenticator-app-and-the-ios-app-configuration-policy"></a>Para implementar aplicações do Skycure, a aplicação Microsoft Authenticator e a política de configuração de aplicações iOS
 
-1.  Na consola clássica do Intune, escolha **Aplicações** &gt; **Aplicações** para ver a lista de aplicações que pode gerir.
+1.  No portal clássico do Intune, escolha **Aplicações** &gt; **Aplicações** para ver a lista de aplicações que pode gerir.
 
 2.  Selecione as seguintes aplicações:
 
@@ -48,19 +48,19 @@ ms.lasthandoff: 07/01/2017
 
     c.  Aplicação Skycure para iOS
 
-       ![Todas as aplicações a implementar na consola clássica do Intune](../media/mtp/skycure-deploy-app-1.png)
+       ![Todas as aplicações a implementar no portal clássico do Intune](../media/mtp/skycure-deploy-app-1.png)
 
 3.  Escolha **Gerir Implementações**, selecione o grupo de segurança do Azure AD que tenha os utilizadores do Skycure e clique em **Seguinte**.
 
 4.  Na página **Ação de Implementação**, selecione a opção **Instalação Obrigatória** na lista pendente **Aprovação** e clique em **Seguinte**.
 
-    ![Ação de Implementação da consola clássica do Intune](../media/mtp/skycure-deploy-app-2.png)
+    ![Ação de Implementação do portal clássico do Intune](../media/mtp/skycure-deploy-app-2.png)
 
 5.  Na página **Perfil VPN**, selecione a opção **Nenhuma** na lista pendente **Política VPN** e clique em **Seguinte**.
 
 6.  Na página **Configuração da Aplicação Móvel**, selecione a Política de Configuração de Aplicações iOS que criou anteriormente na lista pendente **Política de Configuração de Aplicações** e clique em **Concluir**.
 
-    ![Configuração de aplicações móveis na consola clássica do Intune](../media/mtp/skycure-deploy-app-3.png)
+    ![Configuração de aplicações móveis no portal clássico do Intune](../media/mtp/skycure-deploy-app-3.png)
 
 ## <a name="next-steps"></a>Próximos passos
 

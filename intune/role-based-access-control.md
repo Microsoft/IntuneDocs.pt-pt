@@ -1,6 +1,6 @@
 ---
 title: RBAC com o Intune
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Pré-visualização do Azure no Intune: saiba como o RBAC lhe permite controlar quem pode realizar ações e fazer alterações."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controlo de administração baseada em funções (RBAC) com o Intune
 
@@ -32,7 +32,7 @@ O RBAC ajuda-o a controlar quem pode executar várias tarefas do Intune na sua o
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
 
-Com o novo portal do Intune, o **Azure Active Directory (Azure AD)** fornece duas Funções de Diretório que podem ser utilizadas com o Intune. A estas funções é concedida uma permissão total para realizar todas as atividades no Intune:
+Com o novo portal do Azure, o **Azure Active Directory (Azure AD)** fornece duas Funções de Diretório que podem ser utilizadas com o Intune. A estas funções é concedida uma permissão total para realizar todas as atividades no Intune:
 
 - **Administrador Global:** os utilizadores com esta função têm acesso a todas as funcionalidades administrativas no Azure AD, bem como a serviços que federam para o Azure AD como o Exchange Online, o SharePoint Online e o Skype para Empresas Online. A pessoa que se inscreve no inquilino do Azure AD torna-se um administrador global. Apenas os administradores globais podem atribuir outras funções de administradores do Azure AD. Pode existir mais de um administrador global na sua organização. Os administradores globais podem redefinir a palavra-passe para qualquer utilizador e todos os outros administradores.
 
@@ -46,12 +46,12 @@ Com o novo portal do Intune, o **Azure Active Directory (Azure AD)** fornece du
     > [!TIP]
     > O Intune também mostra três extensões do Azure AD: **Utilizadores**, **Grupos** e **Acesso condicional** que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais detalhes, veja [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Funções criadas na consola clássica do Intune
+## <a name="roles-created-in-the-intune-classic-portal"></a>Funções criadas no portal clássico do Intune
 
-Apenas os utilizadores **Administradores de Serviço** do Intune com permissões “Completas” são migrados da consola clássica do Intune para o Intune no Azure. Precisa de reatribuir os utilizadores **Administradores de Serviço** com acesso “Só de leitura” ou “Suporte técnico” nas funções de Intune do portal do Azure e removê-los do portal clássico.
+Apenas os utilizadores **Administradores de Serviços** do Intune com permissões “Completas” são migrados do portal clássico do Intune para o Intune no portal do Azure. Precisa de reatribuir os utilizadores **Administradores de Serviço** com acesso “Só de leitura” ou “Suporte técnico” nas funções de Intune do portal do Azure e removê-los do portal clássico.
 
 > [!IMPORTANT]
-> Talvez seja necessário manter o acesso de Administrador de Serviço do Intune na consola clássica se os seus administradores ainda precisarem de acesso para gerir PCs com o Intune.
+> Talvez seja necessário manter o acesso de Administrador de Serviços do Intune no portal clássico se os seus administradores ainda precisarem de acesso para gerir PCs com o Intune.
 
 ## <a name="built-in-roles"></a>Funções incorporadas
 

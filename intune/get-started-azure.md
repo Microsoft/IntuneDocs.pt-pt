@@ -1,10 +1,10 @@
 ---
 title: "Começar a utilizar o portal do Azure"
-titleSuffix: Intune on Azure
-description: Saiba como criar e partilhar dashboards no Intune no Azure.
+titlesuffix: Azure portal
+description: Saiba como criar e partilhar dashboards do Intune no portal do Azure.
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Começar a utilizar o Intune no portal do Azure
 
@@ -52,7 +52,7 @@ Esta funcionalidade será mais relevante após adicionar mais conteúdos, como g
 
 ## <a name="using-services"></a>Utilizar serviços
 
-Sempre que abrir o Intune ou outro serviço no Azure, o mesmo será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentados num painel em ecrã inteiro. Quando seleciona uma carga de trabalho, a mesma abre o painel na página inteira. Os outros painéis deslizam a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal. 
+Sempre que abrir o Intune ou outro serviço no Azure, o mesmo será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentados num painel em ecrã inteiro. Quando seleciona uma carga de trabalho, a mesma abre o painel na página inteira. Os outros painéis deslizam a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
 
 ## <a name="next-steps"></a>Próximos passos
 

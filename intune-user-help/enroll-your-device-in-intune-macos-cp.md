@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b177b05f065f66deb8c60be768c123fc7991937
-ms.sourcegitcommit: 091f7b34f1fbf73db2bed5b46d92a78ba0dad1e4
+ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -31,7 +31,7 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
   > [!NOTE]
   > Se quiser inscrever um dispositivo iOS, tal como um iPhone ou iPad, [experimente antes estas instruções](enroll-your-device-in-intune-ios.md).
 
-1. Na sua __Estação de Ancoragem__, procure o __Safari__ e abra a página [Centro de Transferências da Microsoft](https://www.microsoft.com/download/details.aspx?id=55770) da aplicação Portal da Empresa para macOS.
+1.  Na __Estação de ancoragem__, localize __Safari__ e aceda a [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal). 
 
 2. Transfira a aplicação. O seu Mac irá verificar se a transferência do **PortalDaEmpresa.dmg** pode ser aberta em segurança. Após abrir a sua pasta **Transferências**, arraste a aplicação **PortalDaEmpresa** para a pasta **Aplicações**.
 

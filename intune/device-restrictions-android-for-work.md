@@ -1,6 +1,6 @@
 ---
 title: "Definições de restrição de dispositivos no Intune para Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Android for Work.\""
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a8053e54dcad692380b6762b22411f271337f29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7e7f74f516a4b60b6a727d6c51ec54dab96aa88e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android for Work no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Definições de perfil de trabalho
-- **Partilha de dados entre perfis de trabalho e perfis pessoais** – utilize esta definição para controlar se as aplicações no perfil de trabalho podem partilhar dados com as aplicações no perfil pessoal. Esta definição controla ações de partilha nas aplicações (por exemplo, a opção **Partilha...** na aplicação do browser Chrome) e não se aplica ao comportamento copiar/colar na área de transferência. Ao contrário das [definições de política de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as definições de restrição de dispositivos são geridas no portal do Intune e utilizam a partição do perfil Android for Work para isolar as aplicações geridas. Escolha entre:
+- **Partilha de dados entre perfis de trabalho e perfis pessoais** – utilize esta definição para controlar se as aplicações no perfil de trabalho podem partilhar dados com as aplicações no perfil pessoal. Esta definição controla ações de partilha nas aplicações (por exemplo, a opção **Partilha...** na aplicação do browser Chrome) e não se aplica ao comportamento copiar/colar na área de transferência. Ao contrário das [definições de política de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as definições de restrição de dispositivos são geridas no portal do Azure e utilizam a partição do perfil Android for Work para isolar as aplicações geridas. Escolha entre:
     - **Restrições de partilha predefinidas** – esta definição é o comportamento de partilha predefinido do dispositivo, que varia consoante a versão do Android que está em execução. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. A Google não proporciona uma forma de bloquear a partilha do perfil pessoal para o perfil de trabalho em dispositivos com versões 6.0 e posteriores.   
     - **As aplicações no perfil de trabalho podem processar o pedido de partilha do perfil pessoal** – utilize esta opção para ativar a funcionalidade do Android incorporada que permite a partilha do perfil pessoal para o perfil de trabalho. Quando ativada, um pedido de partilha de uma aplicação no perfil pessoal pode partilhar com aplicações no perfil de trabalho. Esta definição é o comportamento predefinido para dispositivos Android com versões anteriores à 6.0.
     - **Permitir partilha entre limites** – ativa a partilha entre limites do perfil de trabalho em ambas as direções. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Utilize esta definição com cuidado, uma vez que permite que aplicações geridas no perfil de trabalho sejam partilhadas com aplicações no lado não gerido do dispositivo.

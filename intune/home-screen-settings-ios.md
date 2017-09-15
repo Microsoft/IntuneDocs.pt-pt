@@ -1,6 +1,6 @@
 ---
 title: "Definições de esquema do Ecrã principal do Intune para dispositivos iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba quais são as definições que pode utilizar para personalizar o ecrã principal e a estação de ancoragem em dispositivos iOS.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Definições de esquema do Ecrã principal do Intune para dispositivos iOS
 
@@ -60,7 +60,7 @@ Adicione as páginas que pretende que apareçam no ecrã principal e as aplicaç
 
 
 1. No painel **Páginas**, escolha **Adicionar**.
-2. No painel **Adicionar Linha**, introduza um **Nome da página**. Este nome é utilizado para sua referência no portal do Intune e *não é apresentado* no dispositivo iOS.
+2. No painel **Adicionar Linha**, introduza um **Nome da página**. Este nome é utilizado para sua referência no portal do Azure e *não é apresentado* no dispositivo iOS.
 3. Escolha **Adicionar** e, em seguida, escolha se pretende adicionar uma **Aplicação** ou uma **Pasta** à página.
 4. Configure as aplicações e pastas que pretende que sejam apresentadas na página com as informações contidas neste tópico.
 
@@ -76,7 +76,7 @@ Ao atribuir a política a um iPhone, criará uma página com um aspeto semelhant
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Como adicionar uma aplicação à lista
 
-1. Introduza o **Nome da Aplicação**. Este nome é utilizado para sua referência no portal do Intune e *não é apresentado* no dispositivo iOS.
+1. Introduza o **Nome da Aplicação**. Este nome é utilizado para sua referência no portal do Azure e *não é apresentado* no dispositivo iOS.
 2. Introduza o **ID do Pacote de Aplicações** da aplicação que pretende apresentar. Para obter ajuda, veja **Referência de ID do pacote para aplicações iOS incorporadas** mais adiante neste tópico.
 3. Clique em **OK** e continue a adicionar itens, até um máximo de **6** para a estação de ancoragem do dispositivo, e **60** para uma página do dispositivo.
 4. Quando concluir o procedimento, clique em **OK**.
@@ -87,8 +87,8 @@ As aplicações que adicionar a uma página numa pasta são dispostas da esquerd
 
 1. Introduza o **Nome da pasta**. Este nome é apresentado aos utilizadores no respetivo dispositivo.
 2. Escolha **Adicionar** para criar uma página na pasta. Pode adicionar até 20 páginas.
-3. No painel **Adicionar Linha**, introduza um nome para a página. Este nome é utilizado para sua referência no portal do Intune e *não é apresentado* no dispositivo iOS.
-3. Introduza o **Nome da Aplicação**. Este nome é utilizado para sua referência no portal do Intune e *não é apresentado* no dispositivo iOS.
+3. No painel **Adicionar Linha**, introduza um nome para a página. Este nome é utilizado para sua referência no portal do Azure e *não é apresentado* no dispositivo iOS.
+3. Introduza o **Nome da Aplicação**. Este nome é utilizado para sua referência no portal do Azure e *não é apresentado* no dispositivo iOS.
 2. Introduza o **ID do Pacote de Aplicações** da aplicação que pretende apresentar. Para obter ajuda , veja **Como adicionar uma aplicação à lista**.
 3. Selecione **Adicionar**. Pode adicionar até 60 itens.
 4. Quando concluir o procedimento, clique em **OK**.
