@@ -1,12 +1,12 @@
 ---
 title: "Utilizar o Intune para remover dados da empresa ou efetuar uma reposição de fábrica em dispositivos"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba como remover dados da empresa ou efetuar uma reposição de fábrica no dispositivo."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
@@ -106,7 +106,7 @@ Se o dispositivo estiver ativo e ligado, demora menos de 15 minutos até um coma
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminar dispositivos do portal do Azure Active Directory
 
-Devido a problemas de comunicação ou dispositivos em falta, poderá ter de eliminar dispositivos do Azure Active Directory (AAD). O comando eliminar não remove um dispositivo da gestão. No entanto, pode utilizar o comando **Eliminar** para remover registos de dispositivos da consola do Azure que saiba que são inacessíveis e pouco prováveis de voltar a comunicar com o Azure.
+Devido a problemas de comunicação ou dispositivos em falta, poderá ter de eliminar dispositivos do Azure Active Directory (AAD). O comando eliminar não remove um dispositivo da gestão. No entanto, pode utilizar o comando **Eliminar** para remover registos de dispositivos do portal do Azure que saiba que são inacessíveis e pouco prováveis de voltar a comunicar com o Azure.
 
 1.  Inicie sessão no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [portal do Office 365](https://portal.office.com) e, em seguida, selecionar **Administrador** &gt; **Azure AD** através da ligação no lado esquerdo da página.
 3.  Se não tiver uma, crie uma Subscrição do Azure. Se tiver uma conta paga (escolha a ligação de subscrição **Registar o Azure Active Directory gratuito**), não deverá ser preciso um cartão de crédito ou um pagamento para esta subscrição.

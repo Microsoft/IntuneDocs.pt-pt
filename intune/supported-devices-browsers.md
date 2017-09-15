@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Dispositivos e browsers suportados
 
@@ -31,7 +31,7 @@ Antes de começar a configurar o Microsoft Intune, reveja os seguintes requisito
 - [Dispositivos e computadores suportados](#intune-supported-devices)
 - [Lista de browsers suportados que utilizam o Intune](#intune-supported-web-browsers)
 
-Também deverá estar familiarizado com a [utilização de largura de banda de rede do Intune](network-bandwidth-use.md) ([Consola clássica](/intune-classic/get-started/network-bandwidth-use)).
+Também deverá estar familiarizado com a [utilização de largura de banda de rede do Intune](network-bandwidth-use.md) ([portal clássico](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-devices"></a>Dispositivos suportados pelo Intune
 
@@ -43,7 +43,7 @@ O Intune não pode servir para gerir os sistemas operativos Windows Server.
 
 ### <a name="windows-pc-software-client"></a>Software cliente em PC com Windows
 
-Um [software cliente do Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) pode ser implementado e instalado em PCs com Windows como um método alternativo de inscrição. Esta funcionalidade está apenas disponível utilizando a consola clássica do Intune. Pode utilizar o cliente do software Intune para gerir computadores com o Windows 7 e posterior, com a exceção da edição Windows 10 Home.
+Um [software cliente do Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) pode ser implementado e instalado em PCs com Windows como um método alternativo de inscrição. Esta funcionalidade está apenas disponível com o portal clássico do Intune. Pode utilizar o cliente do software Intune para gerir computadores com o Windows 7 e posterior, com a exceção da edição Windows 10 Home.
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 As diferentes tarefas administrativas necessitam que utilize um dos seguintes sites administrativos.
 
 - [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Portal do Intune](https://portal.azure.com/)
+- [Portal do Azure](https://portal.azure.com/)
 
 Os seguintes browsers são suportados para estes portais:
 - Microsoft Edge (versão mais recente)
@@ -67,12 +67,12 @@ Os seguintes browsers são suportados para estes portais:
 
 As funcionalidades só clássicas do Intune, tais como o cliente de software de PC do Intune e a integração com os parceiros de Defesa Contra Ameaças a Dispositivos Móveis, só estão disponíveis no portal clássico do Intune (https://manage.microsoft.com). O portal clássico do Intune necessita do suporte do browser Silverlight.
 
-Os seguintes browsers Silverlight suportam a consola clássica do Intune:
+Os seguintes browsers Silverlight suportam a consola do Intune:
 - Internet Explorer 10 ou posterior
 - Google Chrome (versões anteriores à versão 42)
 - Mozilla Firefox com o Silverlight ativado – [Saiba mais](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> O Microsoft Edge e os browsers para dispositivos móveis não são suportados na consola clássica do Intune porque não suportam o [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
+> O Microsoft Edge e os browsers para dispositivos móveis não são suportados no portal clássico do Intune porque não suportam o [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
 
 Apenas os utilizadores com permissões de administrador de serviços ou administradores inquilinos com a função de administrador global podem iniciar sessão neste portal. Para aceder à consola de administração, a sua conta tem de ter uma licença para utilizar o Intune e o estado de início de sessão definido como **Permitido**.

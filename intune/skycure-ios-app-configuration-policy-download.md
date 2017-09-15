@@ -1,6 +1,6 @@
 ---
 title: "Transferir a política de configuração de aplicações iOS do Skycure para utilizar com o Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Transfira a política de configuração de aplicações iOS do Skycure para utilizar com o Intune."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Transferir a política de configuração de aplicações iOS do Skycure
 
@@ -43,7 +43,7 @@ Tem de iniciar sessão na Consola de Gestão do Skycure para realizar os passos 
 
 3.  Aceda a **Definições** &gt; **Integrações da Gestão de Dispositivos** &gt; **Seleção da Integração de EMM**, escolha **Microsoft Intune** e, em seguida, guarde a sua seleção.
 
-4.  Clique na ligação **Ficheiros de configuração de integração** e guarde o ficheiro \*.zip gerado. O ficheiro .zip contém o ficheiro **skycure\_configuration.plist**, que servirá para criar a política de configuração de aplicações iOS na consola clássica do Intune.
+4.  Clique na ligação **Ficheiros de configuração de integração** e guarde o ficheiro \*.zip gerado. O ficheiro .zip contém o ficheiro **skycure\_configuration.plist**, que servirá para criar a política de configuração de aplicações iOS no portal clássico do Intune.
 
 ![Ficheiros de configuração de integração do Skycure](./media/skycure-ios-app-2.png)
 

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>Ativar o BYOD com o Intune
 
@@ -48,7 +48,7 @@ Após preparar o serviço do Intune, é necessário cumprir os diversos requisit
 
 -   **Dispositivos Android**: não precisa de preparar nada no serviço do Intune para inscrever dispositivos Android. Os utilizadores podem simplesmente [inscrever os respetivos dispositivos Android](/intune-user-help/enroll-your-device-in-intune-android) para gestão através da aplicação do Portal da Empresa disponível no Google Play.
 
--   **Dispositivos Windows Phone e PCs**: os dispositivos Windows podem ser inscritos com configuração adicional. Pode ativar a inscrição automática de PCs e dispositivos móveis com o Windows 10 no Azure Active Directory (AD) Premium para simplificar a experiência dos seus utilizadores. Se não tiver o Azure AD Premium ou precisar de suportar dispositivos com o Windows 8.1, pode criar [um alias de DNS para o endereço de servidor](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) para facilitar a inscrição.
+-   **Dispositivos Windows Phone e PCs**: os dispositivos Windows podem ser inscritos com configuração adicional. Pode ativar a inscrição automática de PCs e dispositivos móveis com o Windows 10 no Azure Active Directory (AD) Premium para simplificar a experiência dos seus utilizadores. Se não tiver o Azure AD Premium ou precisar de suportar dispositivos com o Windows 8.1, pode criar [um alias de DNS para o endereço de servidor](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) para facilitar a inscrição.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Confirmar que os dispositivos geridos cumprem os requisitos básicos de segurança
@@ -82,7 +82,7 @@ O Intune também lhe permite gerir e implementar as aplicações que comprou em 
 
 -   [Gerir aplicações compradas em volume para dispositivos iOS](vpp-apps-ios.md). Compra múltiplas licenças para aplicações iOS através do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). Tem de configurar uma conta Apple VPP no site da Apple e carregar o token Apple VPP para o Intune. Em seguida, pode sincronizar as informações de compra em volume com o Intune e controlar a utilização da aplicação comprada em volume.
 
--   [Gerir aplicações compradas na Loja Microsoft para Empresas](windows-store-for-business.md). Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store), pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Intune, pode gerir as aplicações compradas em volume a partir do portal do Intune.
+-   [Gerir aplicações compradas na Loja Microsoft para Empresas](windows-store-for-business.md). Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store), pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Intune, pode gerir as aplicações compradas em volume no portal do Azure.
 
 ## <a name="protect-company-data"></a>Proteger os dados da empresa
 
