@@ -1,12 +1,12 @@
 ---
 title: "Definições de restrição de dispositivos no Intune para dispositivos Android"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Android.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -67,8 +67,8 @@ Utilize estas configurações com uma política de restrição de dispositivos A
 <sup>1</sup> Antes de atribuir esta definição aos dispositivos, verifique se atualiza a aplicação Portal da Empresa para a versão mais recente nesses dispositivos.
 
 Se configurar a definição **Numérica complexa** e, em seguida, a atribuir a um dispositivo com uma versão anterior à versão 5.0 do Android, aplicar-se-á o seguinte comportamento.
-- Se a aplicação Portal da Empresa estiver a executar uma versão anterior à 1704, não é aplicada nenhuma política de PIN ao dispositivo e é apresentado um erro no portal do Intune.
-- Se a aplicação Portal da Empresa executar a versão 1704 ou posterior, apenas pode ser aplicado um PIN simples. As versões do Android anteriores à 5.0 não suportam esta definição. Nenhum erro é apresentado no portal do Intune.
+- Se a aplicação Portal da Empresa estiver a executar uma versão anterior à 1704, não será aplicada nenhuma política de PIN ao dispositivo e será apresentado um erro no portal do Azure.
+- Se a aplicação Portal da Empresa executar a versão 1704 ou posterior, apenas pode ser aplicado um PIN simples. As versões do Android anteriores à 5.0 não suportam esta definição. Nenhum erro é apresentado no portal do Azure.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ Se configurar a definição **Numérica complexa** e, em seguida, a atribuir a u
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas para ambos os dispositivos Android e Samsung KNOX Standard:
 
-Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar.
+Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que serão reportadas caso os utilizadores as instalem e executem.
 Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
@@ -107,6 +107,21 @@ Também pode clicar em **Importar** para obter a lista de um ficheiro csv. Utili
 - **Javascript (apenas Samsung KNOX)** – permite que o browser do dispositivo execute scripts em Java.
 - **Pop-ups (apenas Samsung KNOX)** – permite a utilização do bloqueador de janelas pop-up no browser.
 
+## <a name="allow-or-block-apps"></a>Permitir ou Bloquear aplicações
+
+Estas definições podem ser utilizadas para especificar aplicações que podem ser instaladas ou iniciadas apenas em dispositivos com o Samsung KNOX Standard.
+Além disso, também pode especificar aplicações instaladas que serão ocultadas do utilizador do dispositivo. Os utilizadores não podem executar estas aplicações.
+
+- **Aplicações com permissão para serem instaladas (apenas no Samsung KNOX Standard)**
+- **Aplicações com início bloqueado (apenas no Samsung KNOX Standard)**
+- **Aplicações ocultadas do utilizador (apenas no Samsung KNOX Standard)**
+
+Para cada definição, configure uma lista de aplicações através de um dos seguintes procedimentos:
+
+- **Adicionar aplicações pelo nome do pacote** – principalmente utilizado para aplicações de linha de negócio. Introduza o nome da aplicação e o nome do pacote de aplicação. 
+- **Adicionar aplicações pelo URL** – Introduza o nome da aplicação e o URL na loja do Google Play.
+- **Adicionar aplicações geridas** – Na lista de aplicações geridas com o Intune, selecione a aplicação de que necessita.
+
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
 - **Cópia de segurança do Google (apenas Samsung KNOX)** – permite a utilização da cópia de segurança do Google.
@@ -127,9 +142,9 @@ Também pode clicar em **Importar** para obter a lista de um ficheiro csv. Utili
 
 ## <a name="kiosk"></a>Modo de Local Público
 
-As definições do modo de local público aplicam-se apenas a dispositivos Samsung KNOX Standard.
+As definições de local público aplicam-se apenas a dispositivos Samsung KNOX Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – selecione uma das seguintes opções para adicionar uma ou mais aplicações que podem ser executadas quando o dispositivo estiver no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
+- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.

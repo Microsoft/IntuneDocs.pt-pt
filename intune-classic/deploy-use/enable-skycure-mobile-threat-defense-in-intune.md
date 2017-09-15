@@ -1,6 +1,6 @@
 ---
 title: "Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Skycure no Intune"
-description: "Ative a Defesa Contra Ameaças para Dispositivos Móveis do Skycure na consola clássica do Intune."
+description: "Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Skycure no portal clássico do Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Skycure no Intune
 
@@ -28,11 +28,11 @@ Para ativar a ligação da defesa contra ameaças para dispositivos móveis do S
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Para ativar a ligação da MTD do Skycure no Intune
 
-1.  Aceda à [consola clássica do Intune](https://manage.microsoft.com/) e introduza as suas credenciais.
+1.  Aceda ao [portal clássico do Intune](https://manage.microsoft.com/) e introduza as suas credenciais.
 
 2.  Escolha **Administrador** &gt; **Integração de Serviço de Terceiros**, em seguida, escolha **Estado do Skycure** e ative a **Sincronização com a MTD** através do botão de alternar.
 
-    ![Ativar o botão de alternar do Skycure na consola clássica do Intune](../media/mtp/enable-skycure-1.png)
+    ![Ativar o botão de alternar do Skycure no portal clássico do Intune](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > Tem de configurar as aplicações do Skycure antes de criar as regras de política de conformidade e configurar o acesso condicional. Isto garante que a aplicação está pronta e disponível para os utilizadores finais instalarem antes de poderem aceder ao e-mail ou a outros recursos da empresa.

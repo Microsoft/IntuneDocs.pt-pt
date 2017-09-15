@@ -1,6 +1,6 @@
 ---
 title: "Definições de perfil personalizado do Intune para Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba como criar definições de perfil personalizado do Intune para dispositivos Android for Work.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Criar definições de perfil personalizado do Intune para dispositivos Android for Work
 
@@ -32,7 +32,7 @@ Esta capacidade destina-se a permitir a atribuição de definições do Android 
 1. Utilize as instruções em [Como configurar as definições personalizadas dos dispositivos](custom-settings-configure.md) para começar.
 2. No painel **Definições de OMA-URI Personalizadas**, escolha **Adicionar** para adicionar uma nova definição.
 3. No painel **Adicionar Linha**, configure o seguinte:
-    - **Nome** – introduza um nome exclusivo para as definições personalizadas do Android for Work para o ajudar a identificá-lo no portal do Intune.
+    - **Nome** – introduza um nome exclusivo para as definições personalizadas do Android for Work para o ajudar a identificá-lo no portal do Azure.
     - **Descrição** – indique uma descrição geral da política personalizada do Android e outras informações relevantes que o ajudem a localizá-la.
     - **OMA-URI** – introduza o OMA-URI para o qual pretende indicar uma definição.
     - **Tipo de dados** – Selecione o tipo de dados em que especificará esta definição OMA-URI. Escolha entre **Cadeia**, **Cadeia (ficheiro XML)**, **Data e hora**, **Número inteiro**, **Vírgula flutuante**, **Booleano** ou **Base64 (ficheiro)**.

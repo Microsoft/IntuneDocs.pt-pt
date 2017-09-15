@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | Matriz de Cadeias | Especifica os esquemas de URL pro
 > Se a sua aplicação for disponibilizada na App Store, a `MAMPolicyRequired` tem de ser definida como "NO", segundo as normas da App Store.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Ativar a configuração de MAM direcionada para aplicações iOS
-A configuração de MAM direcionada permite que uma aplicação receba dados de configuração através do SDK da Aplicação Intune. O formato e as variantes destes dados têm de ser definidos e comunicados aos clientes do Intune pelo proprietário/programador da aplicação. Os administradores do Intune podem direcionar e implementar dados de configuração através da consola do Intune no Azure. A partir do SDK da Aplicação Intune para iOS (v 7.0.1), é possível fornecer dados de configuração de MAM direcionada às aplicações que participem na configuração de MAM direcionada através do serviço MAM. Os dados de configuração de aplicações são emitidos através do nosso Serviço de MAM diretamente para a aplicação em vez de através do canal de MDM. O SDK da Aplicação Intune fornece uma classe para aceder aos dados obtidos através destas consolas. Tenha em consideração os seguintes pré-requisitos: <br>
+A configuração de MAM direcionada permite que uma aplicação receba dados de configuração através do SDK da Aplicação Intune. O formato e as variantes destes dados têm de ser definidos e comunicados aos clientes do Intune pelo proprietário/programador da aplicação. Os administradores do Intune podem direcionar e implementar dados de configuração através do portal do Intune no Azure. A partir do SDK da Aplicação Intune para iOS (v 7.0.1), é possível fornecer dados de configuração de MAM direcionada às aplicações que participem na configuração de MAM direcionada através do serviço MAM. Os dados de configuração de aplicações são emitidos através do nosso Serviço de MAM diretamente para a aplicação em vez de através do canal de MDM. O SDK da Aplicação Intune fornece uma classe para aceder aos dados obtidos através destas consolas. Tenha em consideração os seguintes pré-requisitos: <br>
 * A aplicação tem de estar inscrita no MAM-WE antes de poder aceder à IU de configuração de MAM direcionada. Para obter mais informações sobre o MAM-WE, veja [Política de proteção de aplicações sem inscrição de dispositivos no guia do SDK da Aplicação Intune](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
 * Inclua ```IntuneMAMAppConfigManager.h``` no ficheiro de origem da sua aplicação.
 * Chame ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` para apresentar o Objeto Configuração da Aplicação.

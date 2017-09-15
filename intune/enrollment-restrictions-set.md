@@ -1,6 +1,6 @@
 ---
 title: "Definir restrições de inscrição no Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Restrinja a inscrição por plataforma e defina um limite de inscrição de dispositivos no Intune. \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Enquanto administrador do Intune, pode determinar que dispositivos podem ser inscritos para gestão no Intune. Utilize o portal do Intune para definir as seguintes restrições de inscrição de dispositivos:
+Enquanto administrador do Intune, pode determinar que dispositivos podem ser inscritos para gestão no Intune. Utilize o portal do Azure para definir as seguintes restrições de inscrição de dispositivos:
 
 - Número máximo de dispositivos inscritos
 - Plataformas de dispositivos que podem ser inscritas:
@@ -68,7 +68,7 @@ As restrições de inscrição predefinidas aplicam-se a todos os utilizadores.
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
-4. No portal do Intune, selecione **Inscrição de dispositivos** e **Restrições de inscrição**.
+4. No portal do Azure, escolha **Inscrição de dispositivos** e **Restrições de inscrição**.
 5. Selecione **Restrições de inscrição** > **Restrições de Limite de Dispositivos**.
 6. Em **Todos os Utilizadores**, selecione **Limite de Dispositivos**. Especifique o número máximo de dispositivos inscritos por utilizador.  
 ![Captura de ecrã a mostrar o painel de restrições de limites de dispositivos, com as restrições de limites de dispositivos.](./media/device-restrictions-limit.png)

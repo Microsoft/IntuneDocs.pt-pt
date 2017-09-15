@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -55,7 +55,7 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 6.  **Carregar a aplicação para o Intune**<br>
     Carregue o ficheiro assinado da aplicação e o seu certificado de assinatura com código para disponibilizar a aplicação aos seus utilizadores finais.
 
-    1.  No portal do Intune, clique em **Administração** &gt; **Windows Phone**.
+    1.  No portal do Azure, clique em **Administração** &gt; **Windows Phone**.
 
     2.  Clique em **Carregar o Ficheiro Assinado da Aplicação** e inicie sessão com o seu ID de Administrador do Intune.
 
@@ -118,7 +118,7 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows, inclui
 
     -   `-EnterpriseId` – O ID empresarial. O argumento ou o "AetxPath" têm de ser fornecidos. Se este argumento não for fornecido, o ID empresarial é lido a partir do ficheiro AETX. For example, 1000000001
 
-6.  Implemente a aplicação Portal da Empresa do Windows Phone 8.1 (SSP.appx). Para obter orientações, veja [Como adicionar aplicações de linha de negócio (LOB) Windows Phone](lob-apps-windows-phone.md) ([Consola clássica](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Implemente a aplicação Portal da Empresa do Windows Phone 8.1 (SSP.appx). Para obter orientações, veja [Como adicionar aplicações de linha de negócio (LOB) Windows Phone](lob-apps-windows-phone.md) ([portal clássico](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Como renovar o certificado empresarial de assinatura com código da Symantec
 
@@ -136,7 +136,7 @@ O certificado da Symantec utilizado para implementar aplicações para dispositi
 
 1.  Assine a versão mais recente da sua aplicação de linha de negócio.
 
-2.  Abra a consola do Intune e vá para **Admin** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar Aplicação Assinada**.
+2.  Abra o portal do Azure e vá para **Admin** &gt; **Gestão de Dispositivos Móveis** &gt; **Windows Phone** e clique em **Carregar Aplicação Assinada**.
 
 3.  Carregue o Portal da Empresa que acabou de assinar. Irá precisar do ficheiro SSP.xap recentemente assinado e do novo ficheiro .PFX que recebeu da Symantec ou do token de inscrição da aplicação que foi criado com este novo ficheiro .PFX.
 

@@ -1,6 +1,6 @@
 ---
-title: "Gerir atualizações de software"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "Configurar as definições do Windows Update para Empresas no Intune"
+titleSuffix: Azure portal
 description: "Saiba como configurar as definições do Windows Update para Empresas no Intune para controlar as atualizações para dispositivos Windows 10.\""
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
@@ -54,20 +54,20 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
     Pode configurar esta definição manualmente ou utilizar um perfil de restrição de dispositivos do Intune para o Windows 10 e posterior. Para o fazer, configure a definição **Geral** > **Submissão de dados de diagnóstico**, pelo menos, para **Básico**. Para obter mais informações sobre os perfis de dispositivo, veja [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md).
 
-- Na consola clássica de administração do Intune, existem quatro definições que controlam o comportamento das atualizações do software. Estas definições fazem parte da política de configuração geral dos dispositivos móveis e computadores com o Windows 10:
+- Na consola de administração do Intune, existem quatro definições que controlam o comportamento das atualizações do software. Estas definições fazem parte da política de configuração geral dos dispositivos móveis e computadores com o Windows 10:
     - **Permitir atualizações automáticas**
     - **Permitir funcionalidades de pré-lançamento**
     - **Agendar Dia da Instalação**
     - **Agendar Hora da Instalação**
 
-  A consola clássica também tem um número limitado de outras definições de atualizações do Windows 10 no perfil de configuração do dispositivo. Se tiver qualquer uma destas definições configuradas na consola clássica de administração do Intune quando migra para o portal do Azure, recomendamos vivamente que realize o seguinte procedimento:
+  O portal clássico também tem um número limitado de outras definições de atualizações do Windows 10 no perfil de configuração do dispositivo. Se tiver qualquer uma destas definições configuradas na consola de administração do Intune quando migra para o portal do Azure, recomendamos vivamente que realize o seguinte procedimento:
 
 1. No portal do Azure, crie anéis de atualização do Windows 10 com as definições de que precisa. A definição **Permitir funcionalidades de pré-lançamento** não é suportada no portal do Azure, porque já não é aplicável às compilações do Windows 10 mais recentes. Pode configurar as outras três definições, bem como outras definições de atualizações do Windows 10, quando cria os anéis de atualização.
 
   > [!NOTE]
-  > As definições das atualizações do Windows 10 criadas na consola clássica não são apresentadas no portal do Azure após a migração. No entanto, estas definições continuam a ser aplicadas. Se tiver migrado qualquer uma destas definições e editar a política migrada a partir do portal do Azure, estas definições serão removidas da política.
+  > As definições das atualizações do Windows 10 criadas no portal clássico não são apresentadas no portal do Azure após a migração. No entanto, estas definições continuam a ser aplicadas. Se tiver migrado qualquer uma destas definições e editar a política migrada a partir do portal do Azure, estas definições serão removidas da política.
 
-2. Elimine as definições de atualização na consola clássica. Depois de migrar para o portal do Azure e adicionar as mesmas definições a um anel de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma definição está configurada com valores diferentes, existirá um conflito e não haverá uma forma fácil de saber porque a definição configurada na consola clássica não é apresentada no portal do Azure.
+2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a um anel de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma definição está configurada com valores diferentes, existirá um conflito e não haverá uma forma fácil de saber por que motivo a definição configurada no portal clássico não é apresentada no portal do Azure.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Como criar e atribuir anéis de atualização
 
@@ -140,7 +140,7 @@ Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atuali
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Atualizações de Software**.
 4. No painel **Atualizações de Software**, escolha **Gerir** > **Anéis de Atualização do Windows 10**.
-5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **...**  > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
+5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **... ** > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
 
 > [!IMPORTANT]
 > Quando emitir um comando de pausa, os dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo.

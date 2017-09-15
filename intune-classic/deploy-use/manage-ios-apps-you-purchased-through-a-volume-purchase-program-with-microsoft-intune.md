@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5da29dceb5308eab72e5b24e220586aa739982ea
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune (Gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune)
 
@@ -30,7 +30,7 @@ O Microsoft Intune ajuda-o a gerir aplicações compradas através deste program
 
 > [!Important]
 > Atualmente, o Intune atribui licenças de aplicações VPP (Volume Purchase Program for Business) iOS a utilizadores e não a dispositivos. Por este motivo, os utilizadores têm de introduzir a respetiva palavra-passe do ID Apple para instalar a aplicação.
-> O Apple Volume Purchase Program for Education não é suportado nesta versão.
+> O Apple Volume Purchase Program for Education e as aplicações B2B não são suportados nesta versão.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerir aplicações compradas em volume para dispositivos iOS
 Compra várias licenças para aplicações iOS através do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). Isto envolve configurar uma conta VPP da Apple no site da Apple e carregar o token VPP da Apple para o Intune.  Depois disso, pode sincronizar as informações de compra em volume com o Intune e controlar a utilização da aplicação comprada em volume.

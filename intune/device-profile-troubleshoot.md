@@ -1,6 +1,6 @@
 ---
 title: Resolver problemas de perfis de dispositivos no Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Se estiver com dificuldades, utilize este tópico para o ajudar a resolver problemas com perfis de dispositivos do Intune.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Resolver problemas de perfis de dispositivos no Microsoft Intune
 
@@ -59,7 +59,7 @@ Quando são atribuídas duas ou mais políticas ao mesmo utilizador ou dispositi
 
 -   A definição de política de conformidade mais restritiva é aplicada se for avaliada em comparação com a mesma definição noutra política de conformidade.
 
--   Se uma definição de política de configuração entrar em conflito com uma definição de uma política de configuração diferente, este conflito será apresentado na consola do Intune. Tem de resolver manualmente esses conflitos.
+-   Se uma definição de política de configuração entrar em conflito com uma definição de uma política de configuração diferente, este conflito será apresentado no portal do Azure. Tem de resolver manualmente esses conflitos.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicações estão em conflito entre si? Qual delas é aplicada à aplicação?
 Os valores em conflito são as definições mais restritivas disponíveis numa política de proteção de aplicação, exceto no que respeita aos campos de entrada de números (como tentativas de PIN antes da reposição).  Os campos de entrada de números serão definidos para os valores que teria uma política de MAM que criasse na consola através da opção de definições recomendadas.

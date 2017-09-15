@@ -1,6 +1,6 @@
 ---
 title: "Definições de e-mail do Intune para o Windows Phone 8.1"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de e-mail em dispositivos Windows Phone 8.1.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4925ceb1be344a12270ee40519096a62b1f0c739
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 611ef17c72e27a31360c3c9d75bb282fdb8388a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Definições de perfis de e-mail para dispositivos Windows Phone 8.1 no Microsoft Intune
 

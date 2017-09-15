@@ -1,6 +1,6 @@
 ---
 title: "Utilizar políticas de configuração da aplicação Intune para Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Saiba como utilizar políticas de configuração de aplicação para disponibilizar dados de configuração a uma aplicação Android for Work quando é executada.\""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7486a62ed11b83f00414a74b2d816f6048826f73
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 4b73202a1a68bd2dd3dcbfa86c21cb09ae00056c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Como utilizar as políticas de configuração de aplicações do Microsoft Intune para Android for Work
 
@@ -27,16 +27,16 @@ ms.lasthandoff: 08/15/2017
 
 Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições que poderão estar disponíveis quando os utilizadores executarem uma aplicação do Android for Work. Nem todas as aplicações suportam a configuração de aplicação. Verifique junto do programador da aplicação para ver se este criou ou não a sua aplicação para suportar políticas de configuração de aplicações.
 
-As políticas de configuração de aplicações podem ajudá-lo a pré-configurar as definições da aplicação disponíveis para os utilizadores antes de estes executarem a aplicação. Algumas aplicações Android suportam opções de configurações geridas que pode configurar na consola do Intune com o [estruturador de configuração](#use-configuration-designer). Algumas definições de configuração em aplicações (tais como aquelas com tipos de Pacote) não podem ser configuradas com o estruturador de configuração.  Precisará de utilizar o [editor de JSON](#use-json-editor) para esses valores.   As definições são fornecidas para aplicações automaticamente quando a aplicação é instalada.
+As políticas de configuração de aplicações podem ajudá-lo a pré-configurar as definições da aplicação disponíveis para os utilizadores antes de estes executarem a aplicação. Algumas aplicações Android suportam opções de configurações geridas que pode configurar no portal do Azure com o [estruturador de configuração](#use-configuration-designer). Algumas definições de configuração em aplicações (tais como aquelas com tipos de Pacote) não podem ser configuradas com o estruturador de configuração.  Precisará de utilizar o [editor de JSON](#use-json-editor) para esses valores.   As definições são fornecidas para aplicações automaticamente quando a aplicação é instalada.
 
 Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas quando a aplicação as verificar (normalmente, a primeira vez for executada).
 
 ## <a name="use-configuration-designer"></a>Utilizar o estruturador de configuração
 
-1. No portal do Intune, escolha **Aplicações móveis**. Em **Gerir**, escolha **Políticas de configuração de aplicações** e, em seguida, clique em **Adicionar**.
+1. No portal do Azure, escolha **Aplicações móveis**. Em **Gerir**, escolha **Políticas de configuração de aplicações** e, em seguida, clique em **Adicionar**.
 2. Defina os seguintes detalhes:
-    - **Nome** – O nome do perfil que será apresentado na consola do Intune
-    - **Descrição** – A descrição do perfil que será apresentada na consola do Intune
+    - **Nome** – O nome do perfil que será apresentado na consola do Azure
+    - **Descrição** – A descrição do perfil que será apresentada no portal do Azure
     - **Plataforma** – Selecione **Android**
     - O **Tipo de inscrição do dispositivo** - **Inscrito com o Intune** encontra-se pré-selecionado.
 3. Selecione **Aplicação Associada** para escolher a aplicação para a qual pretende definir uma política de configuração.  Selecionar na lista de aplicações Android for Work que aprovou e sincronizou com o Intune
@@ -51,10 +51,10 @@ Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em 
 
 ## <a name="use-json-editor"></a>Utilizar o editor de JSON
 
-1. No portal do Intune, escolha **Aplicações móveis**. Em **Gerir**, escolha **Políticas de configuração de aplicações** e, em seguida, clique em **Adicionar**.
+1. No portal do Azure, escolha **Aplicações móveis**. Em **Gerir**, escolha **Políticas de configuração de aplicações** e, em seguida, clique em **Adicionar**.
 2. Defina os seguintes detalhes:
-    - **Nome** – O nome do perfil que será apresentado na consola do Intune
-    - **Descrição** – A descrição do perfil que será apresentada na consola do Intune
+    - **Nome** – O nome do perfil que será apresentado na consola do Azure
+    - **Descrição** – A descrição do perfil que será apresentada no portal do Azure
     - **Plataforma** – Selecione **Android**
     - O **Tipo de inscrição do dispositivo** - **Inscrito com o Intune** encontra-se pré-selecionado.
 3. Selecione **Aplicação Associada** para escolher a aplicação para a qual pretende definir uma política de configuração.  Selecione na lista de aplicações Android for Work que aprovou e sincronizou com o Intune.
@@ -73,10 +73,10 @@ Quando a aplicação atribuída for executada num dispositivo, será executada c
 
 Também pode pré-configurar uma permissão para que as aplicações acedam às funcionalidades do dispositivo Android. Por predefinição, as aplicações Android que requerem permissões de dispositivos, tal como o acesso à localização ou à câmara do dispositivo, solicitam aos utilizadores que aceitem ou recusem as permissões. Por exemplo, se uma aplicação utilizar o microfone do dispositivo, o utilizador final será solicitado a conceder permissão à aplicação para utilizar o microfone.
 
-1. No portal do Intune, escolha **Aplicações móveis**. Em **Gerir**, escolha **Políticas de configuração de aplicações** e, em seguida, clique em **Adicionar**.
+1. No portal do Azure, escolha **Aplicações móveis**. Em **Gerir**, escolha **Políticas de configuração de aplicações** e, em seguida, clique em **Adicionar**.
 2. Defina os seguintes detalhes:
-    - **Nome** – O nome do perfil que será apresentado na consola do Intune
-    - **Descrição** – A descrição do perfil que será apresentada na consola do Intune
+    - **Nome** – O nome do perfil que será apresentado na consola do Azure
+    - **Descrição** – A descrição do perfil que será apresentada no portal do Azure
     - **Plataforma** – Selecione **Android**
     - O **Tipo de inscrição do dispositivo** - **Inscrito com o Intune** encontra-se pré-selecionado.
 3. Selecione **Aplicação Associada** para escolher a aplicação para a qual pretende definir uma política de configuração.  Selecione na lista de aplicações Android for Work que aprovou e sincronizou com o Intune.
