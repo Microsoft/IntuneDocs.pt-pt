@@ -27,7 +27,7 @@
 ### [Corrigir problemas comuns com o Android](troubleshoot-your-device-android.md)
 #### [Verificar a conformidade do dispositivo](check-compliance-on-your-device-android.md)
 
-#### [Utilizar registos para corrigir problemas]
+#### Utilizar registos para corrigir problemas
 ##### [Ativar o registo verboso](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Enviar registos por e-mail](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Enviar registos através de um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
