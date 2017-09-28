@@ -1,19 +1,17 @@
 
 
 ### <a name="apple"></a>Apple
-  - Apple iOS 8.0 e posterior
+  - Apple iOS 9.0 e posterior
   - Mac OS X 10.9 e posterior
 
 ### <a name="windows"></a>Windows
   - Windows 10 (versões Home, S, Pro, Education e Enterprise)
   - Windows 10 Mobile
-  - Windows Phone 8.1
-  - Windows 8.1 RT
-  - PCs com o Windows 8.1
   - Dispositivos com o Windows 10 IoT Enterprise (x86, x64)
   - Dispositivos com o Windows 10 IoT Mobile Enterprise
   - Windows Holographic e Windows Holographic Enterprise
-
+  - Windows Phone 8.1, Windows 8.1 RT, PCs com o Windows 8.1 (Modo de suporte)
+  
   Os clientes com o Enterprise Management + Security (EMS) também podem [utilizar o Azure Active Directory (Azure AD) para registar dispositivos com o Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
 ### <a name="google"></a>Google

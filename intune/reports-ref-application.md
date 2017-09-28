@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: cd684feec1df6b20f9349052496a21895527710b
+ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -98,3 +98,17 @@ A entidade **VppProgramTypes** apresenta uma lista de programas VPP possíveis p
 | 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Programa VPP da Microsoft |
 | 00000000-0000-0000-0000-000000000000 |Ainda não está disponível |Valor predefinido, Sem VPP |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |Programa VPP da Apple |
+
+
+
+## <a name="applicationinventory"></a>ApplicationInventory
+
+A entidade **ApplicationInventory** lista as aplicações encontradas no dispositivo aquando da recolha do inventário.
+
+| Propriedade  | Descrição |
+|---------|------------|
+| DeviceKey |Esta é uma referência à tabela de Dispositivos que contém o ID de dispositivo do Intune |
+| DateKey |Referência à tabela de data que indica o dia do inventário |
+| ApplicationName |O Nome da aplicação |
+| ApplicationVersion |Versão da aplicação |
+| BundleSize |O tamanho da aplicação em bytes |
