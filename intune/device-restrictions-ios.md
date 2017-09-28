@@ -3,10 +3,10 @@ title: "Definições de restrição de dispositivos no Intune para dispositivos 
 titleSuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos iOS.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10b27d6fc806ab2565631353761ed1c31795610d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff2c9943a04ec02a83e821a65e1307e311a9d1c0
+ms.sourcegitcommit: 4ce095c0c3fa2e42cf76207b6ff8edf1fe397165
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 09/09/2017
     
 -   **Submissão de dados de diagnóstico** – Permita ou impeça que o dispositivo submeta dados de diagnóstico à Apple.
 -   **Captura de ecrã** – Permita ao utilizador capturar o conteúdo do ecrã como uma imagem.
-    - **Observação remota do ecrã através da aplicação Classroom (apenas supervisionado)** – permita ou bloqueie a visualização do ecrã de dispositivos iOS por parte da aplicação Classroom da Apple.
-    - **Observação não solicitada do ecrã através da aplicação Classroom (apenas supervisionado)** – se permitido, os professores podem observar o ecrã dos dispositivos iOS dos estudantes de forma silenciosa através da aplicação Classroom sem o conhecimento dos estudantes.
+    - **Observação remota do ecrã através da aplicação Sala de Aula (apenas supervisionado)** – permita ou bloqueie a visualização do ecrã de dispositivos iOS por parte da aplicação Sala de Aula da Apple.
+    - **Observação não solicitada do ecrã através da aplicação Sala de Aula (apenas supervisionado)** – se permitido, os professores podem observar o ecrã dos dispositivos iOS dos estudantes de forma silenciosa através da aplicação Sala de Aula sem o conhecimento dos estudantes.
 -   **Certificados TLS não fidedignos** – Permita certificados Transport Layer Security não fidedignos no dispositivo.
 -   **Fidedignidade da aplicação empresarial** – Permite que o utilizador opte por confiar em aplicações que não foram transferidas a partir da loja de aplicações.
 - **Modificação da conta (apenas supervisionado)** – quando está bloqueada, esta opção impede que o utilizador modifique as definições específicas do dispositivo a partir da aplicação de definições do iOS, como criar novas contas de dispositivo e alterar o nome de utilizador ou palavra-passe.
@@ -50,7 +50,7 @@ Também se aplica às definições acessíveis a partir da aplicação de defini
     -   **Tipo obrigatório de palavra-passe** – Especifique o tipo de palavra-passe que será obrigatório, como apenas numérica ou alfanumérica.
     -   **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres de símbolos (como **#** ou **@**) que tem de ser incluído na palavra-passe.
     -   **Comprimento mínimo da palavra-passe** – Especifique o número mínimo de carateres na palavra-passe.
-    -   **Número de falhas de início de sessão antes de limpar o dispositivo** – Especifique o número de tentativas de início de sessão falhadas antes desta definição eliminar os dados do dispositivo.
+    -   **Número de falhas de início de sessão antes de limpar o dispositivo** – Especifique o número de tentativas de início de sessão falhadas antes de esta definição eliminar os dados do dispositivo.
     -   **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup> – Especifique durante quanto tempo o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.
     -   **Máximo de minutos de inatividade até o ecrã ser bloqueado**<sup>1</sup> – Especifique o número de minutos antes de o ecrã do dispositivo se desligar.
     -   **Expiração de palavra-passe (dias)** – Especifique o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
@@ -109,7 +109,9 @@ Também se aplica às definições acessíveis a partir da aplicação de defini
 Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
 Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar.
-Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.
+Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.
+
+Os utilizadores não são impedidos de instalar uma aplicação proibida mas, se o fizerem, isso ser-lhe-á comunicado.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
 

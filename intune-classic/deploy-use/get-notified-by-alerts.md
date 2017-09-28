@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utilizar os alertas para receber notificações do Microsoft Intune
 
@@ -61,6 +61,8 @@ Na [consola de administração do Microsoft Intune](https://manage.microsoft.com
 
 ## <a name="working-with-alerts"></a>Trabalhar com alertas
 
+Para ver alertas na [consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Alertas** e, em seguida, o tipo de alerta que pretende ver.
+
 Utilize as opções seguintes para o ajudar a trabalhar com alertas a partir da consola de administração do Intune.
 
 |Opção|Descrição|
@@ -70,11 +72,12 @@ Utilize as opções seguintes para o ajudar a trabalhar com alertas a partir da 
 |**Fechar um alerta**|Na lista de alertas, selecione o alerta a fechar e, em seguida, escolha **Fechar Alerta**.<br /><br />Os alertas fechados são eliminados definitivamente após 90 dias.|
 |**Reativar um alerta fechado**|Na lista de alertas, defina o menu pendente **Filtros** como **Fechados**.<br /><br />Na lista de alertas fechados, selecione aquele que pretende reativar e escolha **Reativar Alerta**.|
 
-Os alertas do Intune permanecem ativos até que:
+Os alertas do Intune permanecem ativos durante 30 dias ou até:
 
-- O problema que originou o alerta seja resolvido
-- O alerta seja fechado manualmente
-- passem 45 dias desde que o alerta foi gerado
+- O problema que originou o alerta ser resolvido.
+- O alerta ser fechado manualmente.
+
+Os alertas fechados podem ser reativados durante 30 dias após o fecho. Após 30 dias, os alertas fechados e inativos são removidos do Intune.
 
 > [!TIP]
 > Se for gerado o mesmo alerta por dispositivos com sistemas operativos diferentes, poderá ver várias versões do mesmo alerta na lista de alertas.

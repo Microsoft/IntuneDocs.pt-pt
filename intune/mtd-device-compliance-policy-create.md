@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar a política de conformidade de dispositivos da Defesa Contra Ameaças para Dispositivos Móveis (MTD) com o Intune
 
@@ -35,8 +35,6 @@ Como parte da configuração da MTD, na consola do parceiro MTD, criou uma polí
 Pré-requisitos da política de conformidade de dispositivos com a MTD:
 
 -   Configurar a integração da MTD com o Intune
-
--   Ativar o conector de MTD no Intune
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>Para criar uma política de conformidade MTD do dispositivo
 
@@ -77,3 +75,7 @@ Para atribuir uma política de conformidade de dispositivos a utilizadores, sele
 
     > [!NOTE] 
     > Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
+
+## <a name="next-steps"></a>Próximos passos
+
+- [Ativar a Defesa Contra Ameaças para Dispositivos Móveis no Intune](mtd-connector-enable.md)
