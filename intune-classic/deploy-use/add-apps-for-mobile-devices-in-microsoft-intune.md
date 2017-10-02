@@ -2,8 +2,8 @@
 title: "Adicionar aplicações a dispositivos inscritos"
 description: "Antes de poder implementar uma aplicação, tem de adicioná-la ao Intune. Em seguida, fica disponível na consola do Intune, onde pode implementar e geri-la."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fbf9a25cf5b0c9e62d92b0ba9fa390de61ece468
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Adicionar aplicações a dispositivos inscritos ao Intune
 

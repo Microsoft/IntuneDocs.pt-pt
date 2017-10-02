@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Onde está a minha funcionalidade do Intune no Azure?
 Organizámos algumas tarefas por ordem mais lógica ao mover o Intune para o portal do Azure. Cada melhoria significa ter de conhecer a nova localização das funcionalidades. Criámos este guia de referência para os utilizadores que estão familiarizados com o Intune no portal clássico e que pretendem saber como realizar tarefas do Intune no portal do Azure. Se este artigo não abranger uma funcionalidade que procura, deixe um comentário no final do mesmo para o atualizarmos.
 ## <a name="quick-reference-guide"></a>Guia de referência rápida
 |Funcionalidade |Caminho no portal clássico|Caminho do Intune no portal do Azure|
 |------------|---------------|---------------|
-|Programa de Registo de Aparelho (DEP) |Administrador > Gestão de Dispositivos Móveis > iOS e Mac OS X > Programa de Registo de Aparelho|[Inscrição de dispositivos > Inscrição da Apple > Token do Programa de Inscrição](#where-did-apple-dep-go) |
-|Programa de Registo de Aparelho (DEP)| Administrador > Gestão de Dispositivos Móveis > iOS e Mac OS X > Programa de Registo de Aparelho |[Inscrição de dispositivos > Inscrição da Apple > Números de Série do Programa de Inscrição](#where-did-apple-dep-go) |
+|Programa de Registo de Aparelho (DEP) [apenas iOS]|Administrador > Gestão de Dispositivos Móveis > iOS > Programa de Registo de Aparelho|[Inscrição de dispositivos > Inscrição da Apple > Token do Programa de Inscrição](#where-did-apple-dep-go) |
+|Programa de Registo de Aparelho (DEP) [apenas iOS]| Administrador > Gestão de Dispositivos Móveis > iOS e Mac OS X > Programa de Registo de Aparelho |[Inscrição de dispositivos > Inscrição da Apple > Números de Série do Programa de Inscrição](#where-did-apple-dep-go) |
 |Regras de Inscrição |Administrador > Gestão de Dispositivos Móveis > Regras de Inscrição|[Inscrição de dispositivos > Restrições de Inscrição](#where-did-enrollment-rules-go) |
 |Grupos por Número de Série iOS |Grupos > Todos os Dispositivos > Dispositivos Empresariais Pré-inscritos > Por Número de Série iOS|[Inscrição de dispositivos > Inscrição da Apple > Números de Série do Programa de Inscrição](#where-did-corporate-pre-enrolled-devices-go) |
 |Grupos por Número de Série iOS |Grupos > Todos os Dispositivos > Dispositivos Empresariais Pré-inscritos > Por Número de Série iOS| [Inscrição de dispositivos > Inscrição da Apple > Números de Série do AC](#where-did-corporate-pre-enrolled-devices-go)|
