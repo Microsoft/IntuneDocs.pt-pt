@@ -3,8 +3,8 @@ title: "Definições de restrição de dispositivos no Intune para dispositivos 
 titlesuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Mac OS.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 978430ded8d2e6da36ce49cd9351c9d44789e2b0
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ee6a9428bd06a01676fd9ff92653bef26ca03ce4
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos macOS no Microsoft Intune
 

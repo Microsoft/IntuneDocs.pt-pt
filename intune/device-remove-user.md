@@ -3,8 +3,8 @@ title: Remover um utilizador de um dispositivo iOS com o Intune
 titlesuffix: Azure portal
 description: Saiba como remover um utilizador de um dispositivo iOS partilhado com o Intune.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2dd6f4fab1d21d3fd40c3ec6abd4be44cff5212e
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f16d42406fa7961cc165adcbd1e7c4c7ab5d78b4
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Remover um utilizador de um dispositivo iOS partilhado com o Intune
 

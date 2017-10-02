@@ -3,8 +3,8 @@ title: "Como configurar definições de dispositivos personalizadas no Intune"
 titleSuffix: Azure portal
 description: "Saiba como utilizar o Intune para configurar as definições personalizadas nos dispositivos que gere.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14c85b04c18edb2dfa9bdf3b73457448ad8ef8c8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 607b517ae65309c2d01fa0d173e513c029a6869d
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Como configurar as definições personalizadas dos dispositivos no Microsoft Intune
 

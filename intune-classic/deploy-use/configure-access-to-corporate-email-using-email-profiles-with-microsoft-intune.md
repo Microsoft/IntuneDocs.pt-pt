@@ -2,8 +2,8 @@
 title: Aceder ao e-mail empresarial com perfis de e-mail
 description: "As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 04/19/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 911cd480b10d5e44d63af9748412ebb365102f79
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune
 

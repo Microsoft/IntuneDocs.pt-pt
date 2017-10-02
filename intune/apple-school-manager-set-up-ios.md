@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Ativar inscrição do dispositivo iOS com o Apple School Manager
 
@@ -38,17 +38,8 @@ A inscrição do Apple School Manager não pode ser utilizada com o [Programa de
 - A afinidade do utilizador necessita do [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Dispositivos comprados a partir do programa [Apple School Manager](http://school.apple.com)
 
-**Passos de Inscrição no Apple School Manager**
-1. [Obter um token do Apple School Manager e atribuir dispositivos](#get-the-apple-token-and-assign-devices)
-2. [Criar um perfil de inscrição](#create-an-apple-enrollment-profile)
-3. [Ligar a Sincronização de Dados da Escola](#connect-school-data-sync) (Opcional)
-4. [Sincronizar dispositivos geridos pelo Apple School Manager](#sync-managed-devices)
-5. [Atribuir o perfil do Apple School Manager aos dispositivos](#assign-a-profile-to-devices)
-6. [Distribuir os dispositivos pelos utilizadores](#distribute-devices-to-users)
-
 >[!NOTE]
 >A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos associados ao Apple School Manager com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos. Depois da inscrição, a MFA funciona conforme esperado nos dispositivos. Os dispositivos não pedem aos utilizadores para alterar a palavra-passe ao iniciar sessão pela primeira vez. Além disso, não é pedido aos utilizadores com palavras-passes expiradas que reponham a palavra-passe durante a inscrição. Os utilizadores terão de repor a palavra-passe a partir de um dispositivo diferente.
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Obter o token da Apple e atribuir dispositivos
 
@@ -104,7 +95,8 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
     - **Supervisionado** – um modo de gestão que ativa mais opções de gestão e desativa o Bloqueio de Ativação por predefinição. Se deixar a caixa de verificação em branco, fica com capacidades de gestão limitadas.
 
      - **Inscrição bloqueada** – (requer Modo de Gestão = Supervisionado) Desativa as definições de iOS que poderiam permitir a remoção do perfil de gestão. Se deixar a caixa de verificação em branco, permitirá que o perfil de gestão seja removido do menu Definições.
-   - **iPad Partilhado** – (É necessário **Inscrever com Afinidade de Utilizador** e o modo **Supervisionado**.) Permite que múltiplos utilizadores iniciem sessão nos iPads inscritos com um ID Apple gerido. Os Apple IDs geridos são criados no portal do Apple School Manager. Saiba mais sobre [iPads partilhados](education-settings-configure-ios-shared.md).
+   - **iPad Partilhado** – (É necessário **Inscrever com Afinidade de Utilizador** e o modo **Supervisionado**.) Permite que múltiplos utilizadores iniciem sessão nos iPads inscritos com um ID Apple gerido. Os Apple IDs geridos são criados no portal do Apple School Manager. Saiba mais sobre [iPads partilhados](education-settings-configure-ios-shared.md). Também deverá rever os [requisitos dos iPad partilhados da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+
    >[!NOTE]
    >Se o modo **Afinidade de Utilizador** for definido para **Com afinidade de utilizador** ou o modo **Supervisionado** for definido para **Desativado**, o modo iPad Partilhado será desativado para o perfil da inscrição.
 

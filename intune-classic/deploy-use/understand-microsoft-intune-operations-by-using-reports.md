@@ -2,8 +2,8 @@
 title: "Compreender as operações através de relatórios"
 description: "Crie e faça a gestão de relatórios sobre software, hardware e licenças de software na sua organização."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 51140a1ef2739abbbc7eb7b8fd49b1cee7318362
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Compreender as operações do Microsoft Intune através de relatórios
 

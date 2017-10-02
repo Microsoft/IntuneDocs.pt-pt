@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
@@ -147,7 +147,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 **Problema:** quando adiciona um segundo domínio verificado ao seu AD FS, os utilizadores com o sufixo de nome principal de utilizador (UPN) do segundo domínio podem não conseguir iniciar sessão nos portais ou inscrever dispositivos.
 
 
-**Resolução:** os clientes do Microsoft Office 365 que utilizam o início de sessão único (SSO) através do AD FS 2.0 e têm vários domínios de nível superior para sufixos UPN dos utilizadores dentro da organização (por exemplo, @contoso.com ou @fabrikam.com) têm de implementar uma instância separada do Serviço de Federação AD FS 2.0 para cada sufixo. Agora, existe um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Consulte [este blogue](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
+**Resolução:** os clientes do Microsoft Office 365 que utilizam o início de sessão único (SSO) através do AD FS 2.0 e têm vários domínios de nível superior para sufixos UPN dos utilizadores dentro da organização (por exemplo, @contoso.com ou @fabrikam.com) têm de implementar uma instância separada do Serviço de Federação AD FS 2.0 para cada sufixo. Agora, existe um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona em conjunto com o comutador **SupportMultipleDomain** para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Veja [este blogue](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para obter mais informações.
 
 
 ## <a name="android-issues"></a>Problemas do Android
@@ -268,9 +268,9 @@ A tabela seguinte indica os erros que os utilizadores finais poderão ver ao ins
 |Mensagem de erro|Problema|Resolução|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Nenhuma política de inscrição encontrada|Verifique se todos os pré-requisitos de inscrição, como o certificado do Serviço Apple Push Notification (APNs), foram configurados e se a opção "iOS como plataforma" está ativada. Para obter instruções, veja [Configurar a gestão de dispositivos iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
-|DeviceCapReached|Já existem demasiados dispositivos móveis inscritos.|O utilizador tem de remover um dos seus dispositivos móveis atualmente inscritos do Portal da Empresa antes de inscrever outro. Consulte as instruções para o tipo de dispositivo que está a utilizar: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Existe um problema com o certificado que permite que o dispositivo móvel comunique com a rede da sua empresa.<br /><br />|O Serviço Apple Push Notification (APNs) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. Se os passos para obter um certificado APNs não forem efetuados ou o certificado APNs tiver expirado, as tentativas de inscrição falharão e será apresentada esta mensagem.<br /><br />Reveja as informações sobre como configurar utilizadores em [Sincronizar o Active Directory e adicionar utilizadores ao Intune](/intune/users-permissions-add) e em [Organizar utilizadores e dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
-|AccountNotOnboarded|Existe um problema com o certificado que permite que o dispositivo móvel comunique com a rede da sua empresa.<br /><br />|O Serviço Apple Push Notification (APNs) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. Se os passos para obter um certificado APNs não forem efetuados ou o certificado APNs tiver expirado, as tentativas de inscrição falharão e será apresentada esta mensagem.<br /><br />Para obter mais informações, reveja [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
+|DeviceCapReached|Já existem demasiados dispositivos móveis inscritos.|O utilizador tem de remover um dos seus dispositivos móveis atualmente inscritos do Portal da Empresa antes de inscrever outro. Veja as instruções para o tipo de dispositivo que está a utilizar: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|APNSCertificateNotValid|Existe um problema com o certificado que permite que o dispositivo móvel comunique com a rede da sua empresa.<br /><br />|O Serviço Apple Push Notification (APNs) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. Se os passos para obter um certificado do APNs não forem efetuados ou o certificado do APNs tiver expirado, as tentativas de inscrição falharão e será apresentada esta mensagem.<br /><br />Reveja as informações sobre como configurar utilizadores em [Sincronizar o Active Directory e adicionar utilizadores ao Intune](/intune/users-permissions-add) e em [Organizar utilizadores e dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|AccountNotOnboarded|Existe um problema com o certificado que permite que o dispositivo móvel comunique com a rede da sua empresa.<br /><br />|O Serviço Apple Push Notification (APNs) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. Se os passos para obter um certificado do APNs não forem efetuados ou o certificado do APNs tiver expirado, as tentativas de inscrição falharão e será apresentada esta mensagem.<br /><br />Para obter mais informações, reveja [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|O utilizador poderá ter tentado inscrever-se através de um dispositivo não iOS. O tipo de dispositivo móvel que está a tentar inscrever não é suportado.<br /><br />Confirme que o dispositivo está a executar a versão 8.0 do iOS ou posterior.<br /><br />|Certifique-se de que o dispositivo do utilizador está a executar a versão 8.0 do iOS ou posterior.|
 |UserLicenseTypeInvalid|O dispositivo não pode ser inscrito porque a sua conta de utilizador ainda não é um membro de um grupo de utilizadores necessário.<br /><br />|Para poderem inscrever os dispositivos, os utilizadores têm de ser membros do grupo de utilizadores correto. Esta mensagem indica que têm o tipo de licença errado para a autoridade de gestão de dispositivos móveis designada. Por exemplo, se o Intune foi designado como autoridade de gestão de dispositivos móveis e estiverem a utilizar uma licença do System Center 2012 R2 Configuration Manager, será obtido este erro.<br /><br />Reveja o seguinte para mais informações:<br /><br />Veja [Configurar a gestão de iOS e Mac com o Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) e as informações sobre como configurar utilizadores em [Sincronizar o Active Directory e adicionar utilizadores ao Intune](/intune/users-permissions-add) e [Organizar utilizadores e dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|A autoridade de gestão de dispositivos móveis não foi definida.<br /><br />|A autoridade de gestão de dispositivos móveis não foi designada no Intune.<br /><br />Reveja o primeiro item na secção "Passo 6: inscrever dispositivos móveis e instalar uma aplicação", em [Começar com uma versão de avaliação de 30 dias do Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
@@ -370,7 +370,14 @@ Em breve, serão adicionados alguns exemplos sobre o que deve procurar nestes fi
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de inscrição do iOS
 É disponibilizada uma lista de outros erros de inscrição do iOS na documentação do utilizador do dispositivo, em [You see errors while trying to enroll your device in Intune (Obtém erros quando tenta inscrever o dispositivo no Intune)](/intune-user-help/using-your-iOS-or-macOS-device-with-intune).
 
-## <a name="pc--issues"></a>Problemas do PC
+## <a name="pc-issues"></a>Problemas do PC
+
+
+|Mensagem de erro|Problema|Resolução|
+|---|---|---|
+|**O administrador de TI tem de lhe atribuir uma licença para obter acesso**<br>O seu administrador de TI ainda não lhe deu acesso para utilizar esta aplicação. Peça ajuda ao seu administrador de TI ou tente novamente mais tarde.|Não é possível inscrever o dispositivo porque a conta do utilizador não tem a licença necessária.|Antes de os utilizadores poderem inscrever os respetivos dispositivos, é preciso que lhes tenha sido atribuída a licença necessária. Esta mensagem indica que têm o tipo de licença errado para a autoridade de gestão de dispositivos móveis designada. Por exemplo, se o Intune foi designado como autoridade de gestão de dispositivos móveis e estiverem a utilizar uma licença do System Center 2012 R2 Configuration Manager, será obtido este erro.<br>Saiba mais sobre como [atribuir licenças do Intune às contas de utilizador](https://docs.microsoft.com/intune/licenses-assign).|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
 **Problema:** a inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.

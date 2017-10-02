@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Guias de implementação de cenários
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Proteger o Exchange Online
           href: exchange-online-protect.md
         - name: Reduzir os custos do suporte técnico
           href: password-reset.md
+        - name: Impedir o acesso não autorizado
+          href: data-outside-protect.md
+        - name: Impedir fugas de dados em dispositivos não geridos
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Guia de migração
       href: migration-guide.md
       items:
@@ -115,7 +119,7 @@
     - name: Configurar o Intune
       href: setup-steps.md
       items:
-        - name: Pré-requisitos
+        - name: Configurações suportadas
           href: supported-devices-browsers.md
           items:
             - name: Utilização da largura de banda de rede
@@ -434,12 +438,19 @@
               items:
                 - name: Integração do Check Point e do Intune
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: Adicionar aplicações MTD
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: Permitir a MTD no Intune
-              href: mtd-connector-enable.md
-            - name: Criar uma política de conformidade MTD do dispositivo
-              href: mtd-device-compliance-policy-create.md
+            - name: Configurar o Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Integração do Zimperium e do Intune
+                  href: zimperium-mtd-connector-integration.md
+            - name: Configurar o Intune para MTD
+              items:
+                - name: Adicionar aplicações MTD
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Criar uma política de conformidade MTD do dispositivo
+                  href: mtd-device-compliance-policy-create.md
+                - name: Permitir a MTD no Intune
+                  href: mtd-connector-enable.md
         - name: Controlo de acesso à rede
           href: network-access-control-integrate.md
         - name: Configurar o Windows Hello
