@@ -3,10 +3,10 @@ title: "Configurar as definições de educação do Intune para Windows 10"
 titleSuffix: Azure portal
 description: "Saiba como utilizar o Intune para configurar as definições de educação do Windows 10 nos dispositivos que gere.\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c18eaa0416a41e802f82bbe12b57a4d25118892c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Como configurar as definições de educação do Windows 10 no Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 Os perfis de educação permitem-lhe especificar os detalhes que configuram a aplicação Fazer um Teste do Windows, incluindo detalhes da conta e o URL de teste. Quando configurar esta opção, a aplicação Fazer um Teste abre-se com o teste que especificar e mais nenhuma aplicação pode ser executada no dispositivo até que o teste esteja concluído.
 
-Utilize as informações deste tópico para conhecer as noções básicas sobre como configurar perfis de restrição de dispositivos e, em seguida, leia os tópicos de cada plataforma para saber mais sobre as especificações dos dispositivos.
+Para obter detalhes sobre a aplicação Fazer um Teste, veja [Take tests in Windows 10 (Fazer testes no Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Criar um perfil de dispositivo com as definições de perfil de educação
 
@@ -47,6 +47,9 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
 O perfil será criado e é apresentado no painel da lista de perfis.
+
+## <a name="next-steps"></a>Próximos passos
+
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
 

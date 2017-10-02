@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
@@ -95,6 +95,17 @@ Na segunda vez que os utilizadores iniciam sessão na aplicação Portal da Empr
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar esta questão aos utilizadores
 Indique aos utilizadores para acederem a [Enviar registos para o administrador de TI por e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android). Também pode indicar para acederem a [Enviar registos para o administrador de TI por cabo](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) se pretender que comparem os dois métodos.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>O suporte da sua empresa tem de lhe conceder acesso aos recursos da empresa
+
+### <a name="where-it-appears"></a>Onde aparece
+Se não tiver adicionado a aplicação Portal da Empresa à lista de **Aplicações permitidas** ou **Aplicações excluídas** e um utilizador tentar iniciar sessão, não irá conseguir. Será apresentada a seguinte mensagem:
+
+> **O suporte da sua empresa tem de lhe conceder acesso aos recursos da empresa**  
+> A sua empresa está a utilizar políticas do Windows Information Protection para proteger o seu dispositivo. O suporte da sua empresa terá de certificar-se de que permite o acesso do Portal da Empresa a essas políticas.
+
+### <a name="what-it-means"></a>O que significa
+
+Adicione o Portal da Empresa à lista de **Aplicações permitidas** ou **Aplicações excluídas** na política de proteção de aplicações Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Consulte também
 [O que dizer aos utilizadores finais sobre a utilização do Intune](end-user-educate.md)

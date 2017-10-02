@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72adee13a7400421fe8db6a63d9bfdaf2db4858c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 43737ac3c2a8e84f1909c0f0cfcf450937301872
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações Android
 As definições de políticas descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -36,12 +36,12 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Restringir as operações de corte, cópia e colagem com outras aplicações** | Especifique quando as ações de corte, cópia e colagem podem ser utilizadas com esta aplicação. Escolha entre: <ul><li>**Bloqueado**: não permitir ações de corte, cópia e colagem entre esta aplicação e outras aplicações.</li><li>**Aplicações geridas por políticas**: permitir ações de corte, cópia e colagem entre esta aplicação e outras aplicações geridas por políticas.</li><li>**Aplicações geridas por políticas com colar em**: permitir ações de corte ou cópia entre esta aplicação e outras aplicações geridas por políticas. Permitir que os dados de qualquer aplicação sejam colados nesta aplicação.</li><li>**Qualquer aplicação**: sem restrições para ações de corte, cópia e colagem de e para esta aplicação. | Qualquer aplicação |
 |**Restringir o conteúdo Web a apresentar no Managed Browser** | Selecione **Sim** para impor que as ligações Web na aplicação sejam abertas na aplicação Managed Browser. <br><br> Para os dispositivos não inscritos no Intune, as ligações Web em aplicações geridas por políticas só podem ser abertas na aplicação Managed Browser. <br><br> Se utiliza o Intune para gerir os dispositivos, veja [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](app-configuration-managed-browser.md). | Não |
 | **Encriptar dados da aplicação** | Selecione **Sim** para ativar a encriptação de dados escolares ou profissionais nesta aplicação. O Intune utiliza um esquema de encriptação OpenSSL, AES de 128 bits juntamente com o sistema Android Keystore para encriptar dados da aplicação em segurança. Os dados são encriptados de modo síncrono durante as tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. <br><br> O método de encriptação **não** tem certificação FIPS 140-2.  | Sim |
+| **Desativar a encriptação de aplicações quando a encriptação de dispositivos está ativada** | Selecione **Sim** para desativar a encriptação de aplicações no armazenamento de aplicações interno quando a encriptação de dispositivos for detetada num dispositivo inscrito. <br><br>**Nota:** o Intune só pode detetar a inscrição de dispositivos com o Intune MDM. O armazenamento de aplicações externas será encriptado para garantir que os dados não podem ser acedidos por aplicações não geridas. | Sim |
 | **Desativar a sincronização de contactos** | Selecione **Sim** para impedir que a aplicação guarde os dados na aplicação nativa Contactos no dispositivo. Se selecionar **Não**, a aplicação pode guardar os dados na aplicação nativa Contactos no dispositivo. <br><br>Ao efetuar uma eliminação seletiva para remover dados escolares ou profissionais da aplicação, os contactos sincronizados diretamente a partir da aplicação para a aplicação nativa Contactos são removidos. Não é possível limpar contactos sincronizados do livro de endereços nativo para outra origem externa. Atualmente, só é aplicável à aplicação Microsoft Outlook. | Não |
 | **Desativar a impressão** | Selecione **Sim** para impedir que a aplicação imprima dados escolares ou profissionais. | Não |
 
   >[!NOTE]
   >O método de encriptação para a definição **Encriptar dados da aplicação** **não** tem certificação FIPS 140-2.
-
 
   ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 
@@ -83,6 +83,6 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Exigir credenciais da empresa para obter acesso** | Selecione **Sim** para exigir que o utilizador inicie sessão com a respetiva conta escolar ou profissional em vez de introduzir um PIN de acesso à aplicação. Se definir esta opção como **Sim**, substitui os requisitos para PIN ou Touch ID.  | Não |
 | **Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root** |Selecione **Sim** para bloquear a execução desta aplicação em dispositivos com jailbreak ou root. O utilizador continuará a poder utilizar esta aplicação para tarefas pessoais, mas terá de utilizar um dispositivo diferente para aceder aos dados escolares ou profissionais nesta aplicação. | Sim |
 | **Verificar novamente os requisitos de acesso após (minutos)** | Configure as seguintes definições: <ul><li>**Tempo Limite**: este é o número de minutos que passam até os requisitos de acesso (definidos anteriormente na política) serem verificados novamente. Por exemplo, um administrador ativa o PIN na política, um utilizador abre uma aplicação de MAM e tem de introduzir um PIN. Quando utiliza esta definição, o utilizador não tem de introduzir um PIN numa aplicação de MAM durante **30 minutos** (valor predefinido).</li><li>**Período de tolerância offline**: este é o número de minutos em que as aplicações de MAM podem ser executadas offline, especifique o tempo (em minutos) antes de os requisitos de acesso da aplicação serem verificados novamente. Valor predefinido = **720** minutos (12 horas). Após este período expirar, a aplicação pedirá uma autenticação de utilizador para o AAD, para que a mesma possa continuar em execução.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
-| **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após vários dias (definidos pelo administrador) de execução offline, a aplicação irá pedir ao utilizador que estabeleça ligação à rede e volte a efetuar a autenticação. Se o utilizador for autenticado com êxito, este poderá continuar a aceder aos seus dados e o intervalo offline será reposto.  Se a autenticação do utilizador falhar, a aplicação irá efetuar uma eliminação seletiva da conta e dos dados dos utilizadores.  Veja [Como eliminar apenas dados empresariais de aplicações geridas pelo Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obter mais informações sobre o tipo de dados que são removidos numa eliminação seletiva.<br><br> | 90 dias |
+| **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após alguns dias (definidos pelo administrador) de execução offline, a aplicação pedirá ao utilizador para estabelecer ligação à rede e voltar a efetuar a autenticação. Se o utilizador for autenticado com êxito, este poderá continuar a aceder aos seus dados e o intervalo offline será reposto.  Se a autenticação do utilizador falhar, a aplicação irá efetuar uma eliminação seletiva da conta e dos dados dos utilizadores.  Veja [Como eliminar apenas dados empresariais de aplicações geridas pelo Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obter mais informações sobre o tipo de dados que são removidos numa eliminação seletiva.<br><br> | 90 dias |
 | **Bloquear captura de ecrã e Android Assistant (Android 6.0+)** | Selecione **Sim** para bloquear a captura de ecrã e as capacidades do **Android Assistant** do dispositivo quando utilizar esta aplicação. Selecionar **Sim** também desfocará a imagem de pré-visualização do comutador da aplicação quando utilizar esta aplicação com uma conta escolar ou profissional. | Não |
 | **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |

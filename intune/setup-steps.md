@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 7fcdd4e7679bc969a7fa000e515b59882973a3da
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-intune"></a>Configurar o Intune
 
@@ -37,7 +37,7 @@ Se utilizar atualmente o Microsoft System Center Configuration Manager para geri
 
 | Passos | Estado  |
 | ------------- |-------------|
-| 1  | [Pré-requisitos](supported-devices-browsers.md) – o que precisa de saber antes de começar. Estão incluídos os requisitos de rede e as configurações suportadas.|
+| 1  | [Configurações suportadas](supported-devices-browsers.md) – o que precisa de saber antes de começar. Estão incluídos os requisitos de rede e as configurações suportadas.|
 | 2 |  [Iniciar sessão no Intune](account-sign-up.md) – inicie sessão na sua subscrição da avaliação gratuita ou crie uma nova subscrição do Intune. |  
 | 3 | [Configurar o nome de domínio](custom-domain-name-configure.md) – configure o registo de DNS para associar o nome da sua empresa ao Intune. Assim, os utilizadores verão um domínio familiar ao ligar ao Intune e ao utilizar os recursos.  |
 | 4 | [Adicionar utilizadores](users-add.md) – adicione utilizadores manualmente ou associe o Active Directory para sincronizar os utilizadores com o Intune. Obrigatório, a menos que o seus dispositivos sejam dispositivos quiosque "sem utilizador". |
