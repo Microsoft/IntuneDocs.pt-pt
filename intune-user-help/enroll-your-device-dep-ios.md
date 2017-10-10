@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e29819ec65325ad69c51fd155047afa19769ccfa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: c06146c2a8abe15f346be532cf02e1fe6d97cc99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Inscrever o dispositivo iOS no Intune com o Programa de Registo de Aparelho
 
@@ -33,4 +33,4 @@ O Programa de Registo de Aparelho é disponibilizado pela Apple a empresas e org
 5.  Concorde com os **Termos e Condições** e decida se quer enviar as informações de diagnóstico à Apple.
 6.  Após concluir a inscrição, o seu dispositivo poderá pedir-lhe para efetuar mais ações. Algumas ações poderão incluir introduzir a palavra-passe de acesso ao e-mail, configurar um código de acesso, concordar com as instalações da aplicação, dependendo das configurações efetuadas pelo administrador do Intune da sua empresa.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
