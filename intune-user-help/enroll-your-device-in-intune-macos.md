@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrever o dispositivo macOS no Intune
 
-O acesso às aplicações, aos dados e aos recursos da sua organização permite-lhe fazer o seu trabalho. Se estiver a utilizar um dispositivo macOS no trabalho, precisa de instalar um __Perfil de Gestão__. Este é apenas um ficheiro configurado pelo seu administrador de TI que carrega as definições e acede a informações no seu Mac. Quer saber mais? Saiba [o que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+O acesso às aplicações, aos dados e aos recursos da sua organização permite-lhe fazer o seu trabalho. Se estiver a utilizar um dispositivo macOS no trabalho, precisa de instalar um __Perfil de Gestão__. Este é apenas um ficheiro configurado pelo suporte da empresa que carrega as definições e acede a informações no seu Mac. Quer saber mais? Saiba [o que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo no Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > Se estiver realmente a tentar inscrever um dispositivo iOS, tal como um iPhone ou iPad, [experimente antes estas instruções](enroll-your-device-in-intune-ios.md).
 
-1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](https://portal.manage.microsoft.com).
 2. Inicie sessão no site do Portal da Empresa com a sua conta escolar ou profissional.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
 
  ![Perfil do macOS Instalado](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Ainda precisa de ajuda? Consulte o seu administrador de TI. Pode encontrar as informações de contacto no [Site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://portal.manage.microsoft.com).

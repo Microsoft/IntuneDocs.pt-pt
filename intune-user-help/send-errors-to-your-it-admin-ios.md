@@ -1,5 +1,5 @@
 ---
-title: Enviar erros ao administrador de TI | Documentos da Microsoft
+title: Enviar erros ao suporte da empresa | Documentos da Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Enviar erros ao administrador de TI relativos a problemas com o dispositivo iOS
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Enviar erros ao suporte da empresa relativos a problemas com o dispositivo iOS
 
-Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa, pode enviar informações para ajudar o seu administrador de TI a resolver o problema. Pode enviar informações de erro de formas diferentes:
+Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa, pode enviar informações para ajudar o suporte da empresa a resolver o problema. Pode enviar informações de erro de formas diferentes:
 
 -   Nas mensagens de alerta do erro, toque em **Relatório**.
 
@@ -32,4 +32,4 @@ Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa,
 
 -   Na aplicação Portal da Empresa, abane o dispositivo e, quando o alerta de diagnóstico for apresentado, toque em **Enviar Relatório de Diagnóstico**. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Edição antecipada do Microsoft Intune – setembro de 2017
 
@@ -184,6 +184,14 @@ Recomendamos que atualize os dispositivos Windows Phone 8.1 elegíveis para o Wi
 
 
 ## <a name="intune-apps"></a>Aplicações do Intune
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Melhorias na pesquisa no site do Portal da Empresa <!--1331697-->
+Estamos a melhorar as nossas capacidades de pesquisa da aplicação, a começar com o [site do Portal da Empresa](https://portal.manage.microsoft.com). As pesquisas serão agora efetuadas em categorias de aplicações para além dos campos Nome e Descrição. Os resultados serão ordenados, por predefinição, por ordem decrescente de relevância. 
+
+Os utilizadores do iOS também receberão esta alteração, uma vez que o site do Portal da Empresa também é utilizado como parte da aplicação Portal da Empresa para iOS. As aplicações do Portal da Empresa para Android e Windows irão receber atualizações semelhantes nos próximos meses. 
+
+Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação "Comentários" na parte inferior do site do Portal da Empresa.
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Ação de atualizar adicionada à aplicação Portal da Empresa para Windows 10 <!--1132468-->
 A aplicação Portal da Empresa para Windows 10 permitirá aos utilizadores atualizar os dados na aplicação, ao pedir para atualizar ou, em ambientes de trabalho, ao premir F5.
 

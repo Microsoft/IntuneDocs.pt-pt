@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Ativar inscrição do dispositivo iOS com o Apple School Manager
 
@@ -90,12 +90,12 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
 6. Selecione **Definições de Gestão de Dispositivos**. Estes itens são definidos durante a ativação e exigem uma reposição de fábrica para alteração. Configure as seguintes definições de perfil e, em seguida, selecione **Guardar**:
 
-  ![Captura de ecrã a mostrar a seleção do modo de gestão. O dispositivo tem as seguintes definições: supervisionado, inscrição bloqueada, permitir emparelhamento definidas para recusar tudo. Os Certificados do Apple Configurator estão desativados para um novo perfil do programa de inscrição.](./media/enrollment-program-profile-mode.png)
+  ![Captura de ecrã a mostrar a seleção do modo de gestão. O dispositivo tem as seguintes definições: supervisionado, inscrição bloqueada, permitir emparelhamento definido para recusar tudo. Os Certificados do Apple Configurator estão desativados para um novo perfil do programa de inscrição.](./media/enrollment-program-profile-mode.png)
 
     - **Supervisionado** – um modo de gestão que ativa mais opções de gestão e desativa o Bloqueio de Ativação por predefinição. Se deixar a caixa de verificação em branco, fica com capacidades de gestão limitadas.
 
-     - **Inscrição bloqueada** – (requer Modo de Gestão = Supervisionado) Desativa as definições de iOS que poderiam permitir a remoção do perfil de gestão. Se deixar a caixa de verificação em branco, permitirá que o perfil de gestão seja removido do menu Definições.
-   - **iPad Partilhado** – (É necessário **Inscrever com Afinidade de Utilizador** e o modo **Supervisionado**.) Permite que múltiplos utilizadores iniciem sessão nos iPads inscritos com um ID Apple gerido. Os Apple IDs geridos são criados no portal do Apple School Manager. Saiba mais sobre [iPads partilhados](education-settings-configure-ios-shared.md). Também deverá rever os [requisitos dos iPad partilhados da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+     - **Inscrição bloqueada** – (é necessário o Modo de Gestão = supervisionado) Desativa as definições de iOS que poderiam permitir a remoção do perfil de gestão. Se deixar a caixa de verificação em branco, permitirá que o perfil de gestão seja removido do menu Definições.
+   - **iPad Partilhado** – (é necessário **Inscrever com Afinidade de Utilizador** e o modo Supervisionado.) Permite que múltiplos utilizadores iniciem sessão nos iPads inscritos com um ID Apple gerido. Os Apple IDs geridos são criados no portal do Apple School Manager. Saiba mais sobre [iPads partilhados](education-settings-configure-ios-shared.md). Também deverá rever os [requisitos dos iPad partilhados da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
    >[!NOTE]
    >Se o modo **Afinidade de Utilizador** for definido para **Com afinidade de utilizador** ou o modo **Supervisionado** for definido para **Desativado**, o modo iPad Partilhado será desativado para o perfil da inscrição.

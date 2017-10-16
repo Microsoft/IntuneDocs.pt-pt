@@ -1,5 +1,5 @@
 ---
-title: Enviar registos para o administrador de TI por e-mail | Documentos da Microsoft
+title: Enviar registos para o suporte da empresa por e-mail | Documentos da Microsoft
 description: Enviar registos de dados por e-mail num dispositivo Android
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Enviar registos para o administrador de TI por e-mail
+# <a name="send-logs-to-your-company-support-using-email"></a>Enviar registos ao suporte da empresa por e-mail
 
-Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Android, pode ajudar o seu administrador de TI a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
+Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Android, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
 
 > [!Note]
-> Para o administrador de TI descobrir o problema mais facilmente, deve ativar o _registo verboso_. O registo verboso inclui todos os detalhes relevantes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para o suporte da empresa descobrir o problema mais facilmente, deve ativar o _registo verboso_. O registo verboso inclui todos os detalhes relevantes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Para enviar registos para o seu administrador de TI por e-mail:
+Para enviar registos ao suporte da empresa por e-mail:
 
 1.  Abra a aplicação Portal da Empresa.
 
@@ -40,4 +40,4 @@ Para enviar registos para o seu administrador de TI por e-mail:
 
 3.  Em **Ajuda**, toque em **Obter Ajuda**.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

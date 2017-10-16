@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: c7ac377cd3bc958440d191bd45ea5062acdb7647
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o seu dispositivo Windows Phone 8.1 no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your company support can and can't see on your device (O que o suporte da empresa pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 Para inscrever o dispositivo Windows Phone 8.1 no Intune, siga as instruções que se aplicam à sua empresa ou escola:
@@ -82,6 +82,6 @@ Inscrever o dispositivo:
 
 4.  Se lhe for pedido para instalar a aplicação da empresa ou o Hub, certifique-se de que a caixa relevante está selecionada e toque em **concluído**.
 
-Se o administrador de TI tiver configurado o Portal da Empresa para ser instalado durante a inscrição, o Portal da Empresa irá aparecer na sua lista de aplicações.
+Se o suporte da empresa tiver configurado o Portal da Empresa para ser instalado durante a inscrição, o Portal da Empresa irá aparecer na sua lista de aplicações.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

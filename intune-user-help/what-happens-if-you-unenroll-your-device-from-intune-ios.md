@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 32fef3aebacbc0144a7c387f3bfafbb20fd2c075
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dfcb60d16a4412c66c81db53ed5bbc9dd2b46bba
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo iOS ou macOS no Intune?
 
@@ -42,4 +42,4 @@ Quando anula a inscrição do seu dispositivo iOS ou macOS no Intune:
 
 Para instruções sobre como anular a inscrição, consulte [Anular a inscrição do seu dispositivo](unenroll-your-device-from-intune-ios.md).
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

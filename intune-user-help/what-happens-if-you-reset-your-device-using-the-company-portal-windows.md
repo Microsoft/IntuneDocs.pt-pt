@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa?
 
@@ -28,8 +28,8 @@ Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](
 
 |Gestão e configuração do dispositivo|Tipo de dispositivo|
 |---------------------------------------|---------------|
-|O seu administrador de TI gere o seu dispositivo móvel|**Windows 10 e Windows Phone 8.1**</br>O dispositivo deixa de aparecer no Portal da Empresa, que tenta repor as predefinições de fábrica do dispositivo. As suas definições, aplicações e dados pessoais serão removidos. <br /><br />**Windows 10 Mobile**</br>A única forma de anular a inscrição do dispositivo é repondo-o.|
+|O suporte da empresa gere o seu dispositivo móvel|**Windows 10 e Windows Phone 8.1**</br>O dispositivo deixa de aparecer no Portal da Empresa, que tenta repor as predefinições de fábrica do dispositivo. As suas definições, aplicações e dados pessoais serão removidos. <br /><br />**Windows 10 Mobile**</br>A única forma de anular a inscrição do dispositivo é repondo-o.|
 |O dispositivo pode aceder apenas ao e-mail da empresa|**Windows Phone 8.1**<br />O dispositivo deixará de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior que seja utilizado apenas para e-mails.<br /><br />**Windows 8.1 e Windows 8**<br />O dispositivo deixará de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.|
 |PCs e portáteis|**Windows 8.1 e Windows 8**<br />Só pode repor um computador com o Windows 8 ou Windows 8.1 se este for utilizado apenas para e-mails.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior.|
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

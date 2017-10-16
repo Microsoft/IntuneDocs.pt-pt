@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo iOS ou macOS no Intune?
 
@@ -34,9 +34,9 @@ Quando instalar a aplicação Portal da Empresa e inscrever o dispositivo iOS ou
 
 -   Configurar automaticamente a sua conta de e-mail profissional.
 
-Quando inscreve o seu dispositivo no Intune, está a dar permissão ao administrador de TI para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
+Quando inscreve o seu dispositivo no Intune, está a dar permissão ao suporte da empresa para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
 
-Quando o seu dispositivo está inscrito, o administrador de TI pode:
+Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 
 -   Repor o dispositivo para as predefinições do fabricante se este for roubado ou perdido.
 
@@ -62,4 +62,4 @@ Quando o seu dispositivo está inscrito, o administrador de TI pode:
 
 -   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

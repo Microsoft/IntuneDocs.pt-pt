@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4946404a4bdb4968c47904549a581c9c39f6e9e0
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="what-is-intune"></a>O que é o Intune?
 
@@ -28,7 +28,7 @@ O Intune é um serviço baseado na cloud no espaço de gestão de mobilidade ent
 * Gerir os dispositivos móveis que a sua força de trabalho utiliza para aceder aos dados da empresa.
 * Gerir as aplicações móveis que a sua força de trabalho utiliza.
 * Proteger as informações da sua empresa ao ajudar a controlar a forma como a sua força de trabalho acede às mesmas e as partilha.
-* Garantir que os dispositivos e as aplicações estão em conformidade com os requisitos de segurança da empresa.
+* Garantir que os dispositivos e as aplicações são compatíveis com os requisitos de segurança da empresa.
 
 ## <a name="common-business-problems-that-intune-helps-solve"></a>Problemas empresariais comuns que o Intune ajuda a resolver
 

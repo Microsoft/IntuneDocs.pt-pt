@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf3c9d121f2e2578219137161a972d5d58255058
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo iOS com o Portal da Empresa?
 
 Ao utilizar o Portal da Empresa para repor o seu iPhone ou iPad, algumas aplicações e definições podem ser eliminadas, incluindo alguns dos seus dados pessoais. O que acontece em cada dispositivo depende da forma como o utiliza, conforme descrito nas seguintes listas.
 
-**O seu administrador de TI gere o seu dispositivo móvel**
+**O suporte da empresa gere o seu dispositivo móvel**
 
 -   O seu dispositivo deixará de ser apresentado no Portal da Empresa.
 
@@ -38,4 +38,4 @@ Ao utilizar o Portal da Empresa para repor o seu iPhone ou iPad, algumas aplica�
 
 -   A conta de e-mail da sua empresa, bem como os e-mails não guardados, serão eliminados.
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

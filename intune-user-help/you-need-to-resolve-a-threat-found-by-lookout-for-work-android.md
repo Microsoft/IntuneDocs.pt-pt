@@ -1,6 +1,6 @@
 ---
 title: "Resolver ameaças encontradas pelo Lookout for Work em dispositivos Android | Documentos da Microsoft"
-description: 
+description: "Saiba como corrigir uma ameaça encontrada pelo Lookout for Work em Android."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f4f878f6cd46c4ded709d833c799bb2d310adeb9
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Tem de resolver uma ameaça encontrada pelo Lookout for Work
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver uma ameaça encontrada pelo Lookout for Work
 
 O Lookout for Work encontrou uma potencial ameaça no seu dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, aplicações e ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
 
@@ -34,7 +34,7 @@ Se existir um vírus ou outra ameaça de segurança no dispositivo inscrito e te
 
 ![Mensagem de erro da aplicação Lookout for Work com ligação ao site do Portal da Empresa](./media/mtd-go-to-device-management-portal-android.png)
 
-Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](http://portal.manage.microsoft.com), onde verá instruções sobre como resolver o problema.
+Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com), onde verá instruções sobre como resolver o problema.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Exemplo de uma aplicação que a Lookout for Work vê como uma ameaça
 
@@ -44,4 +44,4 @@ Se instalou uma aplicação que o Lookout for Work pensa ser uma ameaça, verá 
 
 Depois de desinstalar a aplicação, recupera de imediato o acesso ao e-mail e aos dados da empresa. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

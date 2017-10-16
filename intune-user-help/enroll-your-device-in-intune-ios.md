@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Inscrever o dispositivo iOS no Intune
 
@@ -54,7 +54,7 @@ Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever o seu disp
   > [!NOTE]
   > Os triângulos amarelos não significam que já tem um erro. Esses ícones indicam que ainda existem passos a concluir no processo de inscrição.
 
-4. Reveja uma lista do que o administrador de TI pode e não pode ver no seu dispositivo inscrito e, em seguida, toque em **Continuar**.
+4. Consulte uma lista do que o suporte da empresa pode e não pode ver no seu dispositivo inscrito e, em seguida, toque em **Continuar**.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ O dispositivo está agora inscrito no Intune e o utilizador é direcionado novam
 > [!Note]
 > Tem mais alguns passos para concluir antes de o seu dispositivo estar totalmente inscrito. Saiba mais sobre a [inscrição do seu dispositivo através da gestão de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se a sua organização estiver a utilizar o Programa de Registo de Aparelho da Apple, descubra mais informações [aqui](enroll-your-device-dep-ios.md).
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

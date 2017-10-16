@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 09ccff78188e81565b4ec464a37908ab6919a1a3
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-your-ios-or-macos-device-with-intune"></a>Utilizar o seu dispositivo iOS ou macOS com o Intune
 
@@ -28,7 +28,7 @@ O Intune pode facilitar a sua vida profissional de muitas formas. Eis uma lista 
 
 ## <a name="supported-versions"></a>Versões suportadas
 
-O Intune suporta atualmente o iOS 8.0 e posterior. Também suporta o macOS 10.9 Mavericks e posterior. 
+O Intune suporta atualmente o iOS 9.0 e posterior. Também suporta o macOS 10.9 Mavericks e posterior. 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inscrever-se no Intune e instalar o Portal da Empresa
 

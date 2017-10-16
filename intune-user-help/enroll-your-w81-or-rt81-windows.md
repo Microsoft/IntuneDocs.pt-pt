@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Como inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 no Intune
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your IT administrator can and can't see on your device (O que o administrador pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your company support can and can't see on your device (O que o suporte da empresa pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
@@ -45,7 +45,7 @@ Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  Na caixa de diálogo **Permitir aplicações e serviços do administrador de TI**, selecione a caixa de verificação **Aceito** e, em seguida, toque em **Ativar**.
+5.  Na caixa de diálogo **Permitir aplicações e serviços do suporte da empresa**, selecione a caixa de verificação **Aceito** e, em seguida, toque em **Ativar**.
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
 
@@ -63,4 +63,4 @@ Também recomendamos a instalação da aplicação Portal da Empresa, que lhe pe
 
 4.  Toque em **Instalar** ou em **Gratuito**. A opção apresentada depende da forma como a sua empresa configurou a aplicação.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

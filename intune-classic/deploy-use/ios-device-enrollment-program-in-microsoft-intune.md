@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
 
@@ -28,7 +28,7 @@ O Microsoft Intune pode implementar um perfil de inscrição que inscreve os dis
 
 >[!NOTE]
 >A inscrição DEP não pode ser utilizada com o método do [gestor de inscrição de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Além disso, se os utilizadores inscreverem dispositivos iOS (ou seja, se utilizarem a aplicação Portal da Empresa) e os números de série desses dispositivos forem importados e atribuídos a um perfil DEP, a inscrição do dispositivo no Intune será anulada.
+>Além disso, se os utilizadores inscreverem os dispositivos iOS (ou seja, através da aplicação Portal da Empresa) e os números de série dos mesmos forem posteriormente importados e lhes for atribuído um perfil de DEP, a inscrição do dispositivo no Intune será anulada.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Pré-requisitos para a inscrição de dispositivos iOS com a gestão do Apple DEP
 

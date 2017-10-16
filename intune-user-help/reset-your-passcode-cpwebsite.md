@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0103eb02cd169a224624d46d93645861f7bbbd47
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
-Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](http://portal.manage.microsoft.com) para efetuar a reposição. Pode utilizar o site do Portal da Empresa para gerir computadores e dispositivos que tenha inscrito no Intune e para realizar a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
+Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](https://portal.manage.microsoft.com) para efetuar a reposição. Pode utilizar o site do Portal da Empresa para gerir computadores e dispositivos que tenha inscrito no Intune e para realizar a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
 
 > [!NOTE]
-> É possível que não veja o botão Repor Código de Acesso no site do Portal da Empresa se utilizar um dispositivo da empresa inscrito. Se não vir o botão, terá de contactar o seu administrador de TI para que este reponha o código de acesso.
+> É possível que não veja o botão Repor Código de Acesso no site do Portal da Empresa se utilizar um dispositivo da empresa inscrito. Se não vir o botão, terá de contactar o suporte da empresa para que este reponha o código de acesso.
 
 Para repor o código de acesso:
 
-1.  No [site do Portal da Empresa](http://portal.manage.microsoft.com), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/intune/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
+1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/intune/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
 
 2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo cujo código de acesso quer repor.
 
@@ -68,4 +68,4 @@ Para repor o código de acesso:
 
 Para ver uma notificação a confirmar que a palavra-passe foi reposta com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

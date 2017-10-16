@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
@@ -57,6 +57,6 @@ Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos f
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Passos de resolução de problemas a seguir se vir "Configurar uma conta escolar ou profissional"
 
-Se vir uma mensagem com a indicação __Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.__ e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o seu administrador de TI para saber qual o site que precisa de fornecer na caixa de texto **Ponto final de gestão**. É provável que este site se assemelhe a **www.asuaempresa.onmicrosoft.com**. 
+Se vir uma mensagem com a indicação __Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.__ e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto **Ponto final de gestão**. É provável que este site se assemelhe a **www.asuaempresa.onmicrosoft.com**. 
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
