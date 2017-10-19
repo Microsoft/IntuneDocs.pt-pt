@@ -536,6 +536,8 @@
       items:
         - name: Estabelecer uma ligação ao Armazém de Dados com o Power BI
           href: reports-proc-get-a-link-powerbi.md
+        - name: Criar um relatório a partir do feed OData com o Power BI
+          href: reports-proc-create-with-odata.md
 - name: Automatizar e personalizar
   items:
     - name: Configurar as definições personalizadas dos dispositivos
