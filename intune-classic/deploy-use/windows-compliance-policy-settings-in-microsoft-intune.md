@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Windows no Microsoft Intune
 
@@ -83,7 +84,7 @@ As definições apresentadas nesta secção são suportadas no Windows Phone 8.1
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme.
     É apresentada uma ligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para, em seguida, poder aceder aos recursos da empresa.
 
-- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
+- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o respetivo administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
 
 ## <a name="compliance-policy-settings-for-windows-pcs"></a>Definições de política de conformidade para dispositivos PCs Windows

@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -155,16 +155,13 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
 ### <a name="use-wip-learning"></a>Utilizar a Aprendizagem de WIP
 
-1. Aceda ao Dashboard do Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Abra o portal do Azure. Selecione **Mais serviços**. Escreva **Intune** no filtro da caixa de texto.
 
-2. Selecione **Mais serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+3. Selecione **Intune** > **Aplicações Móveis**.
 
-3. Escolha **Intune**, quando o **Dashboard do Intune** for apresentado, escolha **Aplicações Móveis**.
-
-4. Selecione **Aprendizagem de WIP** em **Monitor**. Pode ver as aplicações desconhecidas registadas pela Aprendizagem de WIP.
-
-> [!IMPORTANT]
-> Depois de as aplicações aparecerem no relatório de registo da Aprendizagem de WIP, pode adicioná-las às políticas de proteção de aplicações.
+4. Selecione **Estado de proteção da aplicação** > **Relatórios** > **Aprendizagem de Windows Information Protection**.  
+ 
+    Depois de as aplicações aparecerem no relatório de registo da Aprendizagem de WIP, pode adicioná-las às políticas de proteção de aplicações.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Implementar a política de proteção de aplicações do WIP
 

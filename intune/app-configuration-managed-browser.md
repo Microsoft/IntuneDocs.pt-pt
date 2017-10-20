@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6bdb4e1288e91d78d95ba6e6640111d9af06ed7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas do Managed Browser com o Microsoft Intune
 
@@ -51,7 +51,7 @@ Pode criar políticas de Managed Browser para os seguintes tipos de dispositivos
 -   Dispositivos com iOS 8.0 ou posterior
 
 >[!IMPORTANT]
->A partir de outubro de 2017, a aplicação Intune Managed Browser na aplicação Android irá suportar apenas dispositivos a executar o Android 4.4 e posterior. A aplicação Intune Managed Browser no iOS irá suportar apenas dispositivos a executar o iOS 9.0 e posterior.
+>A partir de outubro de 2017, a aplicação Intune Managed Browser no Android irá suportar apenas dispositivos com o Android 4.4 e posterior. A aplicação Intune Managed Browser no iOS irá suportar apenas dispositivos a executar o iOS 9.0 e posterior.
 >As versões anteriores do Android e iOS poderão continuar a utilizar o Managed Browser, mas não poderão instalar novas versões da aplicação e poderão não conseguir aceder a todas as funcionalidades da aplicação. Aconselhamos que atualize estes dispositivos para uma versão do sistema operativo suportada.
 
 
@@ -64,10 +64,10 @@ O Intune Managed Browser suporta a abertura de conteúdos da Web de [Parceiros d
 3.  No painel **Aplicações móveis** da lista Gestão, selecione **Políticas de configuração de aplicações**.
 4.  No painel **Políticas de Configuração de aplicações**, selecione **Adicionar**.
 5.  No painel **Adicionar configuração de aplicações**, introduza um **Nome** e uma **Descrição** opcional para as definições de configuração de aplicações.
-6.  Em tipo de **Inscrição de dispositivos**, selecione **Não inscrito com o Intune**.
+6.  Para o tipo **Inscrição de dispositivos**, selecione **Dispositivos geridos** ou **Aplicações geridas**.
 7.  Selecione **Selecionar as aplicações necessárias** e, em seguida, no painel **Aplicações de destino**, selecione o **Managed Browser** para iOS, Android ou para ambos.
 8.  Escolha **OK** para regressar ao painel **Adicionar configuração de aplicações**.
-9.  Selecione **Definições de Configuração**. No painel **Configuração**, define os pares de chave e valor para fornecer as configurações para o Managed Browser. Utilize as secções mais adiante neste tópico para saber mais sobre os diferentes pares de chave e valor que pode definir.
+9.  Selecione **Definições de Configuração**. No painel **Configuração**, define os pares de chave e valor para fornecer as configurações para o Managed Browser. Utilize as secções mais adiante neste artigo para saber mais sobre os diferentes pares de chave e valor que pode definir.
 10. Quando tiver terminado, escolha **OK**.
 11. No painel **Adicionar configuração de aplicações**, escolha **Criar**.
 12. A nova configuração é criada e apresentada no painel **Configuração de aplicações**.
@@ -127,6 +127,7 @@ Esta definição permite-lhe configurar um conjunto de marcadores disponível pa
 
 - Estes marcadores não podem ser eliminados ou modificados pelos utilizadores
 - Estes marcadores são apresentados no início da lista. Todos os marcadores criados pelos utilizadores serão apresentados abaixo destes.
+- Se já ativou o redirecionamento do Proxy de Aplicações, pode adicionar aplicações Web do Proxy de Aplicações através do respetivo URL interno ou externo.
 
 Ao utilizar o procedimento para criar uma configuração da aplicação Managed Browser, forneça o seguinte par de chave e valor:
 
@@ -166,15 +167,15 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 -   Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
 
 |URL|Detalhes|Correspondências|Não corresponde|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Corresponde a uma única página|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Corresponde a uma única página|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Corresponde a todos os URLs que começam com www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Corresponde a todos os subdomínios em contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Corresponde a uma única pasta|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Corresponde a uma única página, ao utilizar um número de porta|http://www.contoso.com:80|
-    |https://www.contoso.com|Corresponde a uma única página segura|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Corresponde a uma única pasta e a todas as subpastas|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|Corresponde a uma única página|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|Corresponde a uma única página|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|Corresponde a todos os URLs que começam com www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|Corresponde a todos os subdomínios em contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|Corresponde a uma única pasta|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|Corresponde a uma única página, ao utilizar um número de porta|http://www.contoso.com:80|
+|https://www.contoso.com|Corresponde a uma única página segura|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|Corresponde a uma única pasta e a todas as subpastas|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   Seguem-se exemplos de algumas entradas que não pode especificar:
 
@@ -200,8 +201,6 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Segurança e privacidade do Managed Browser
 
--   Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
-
 -   O Managed Browser não utiliza as definições que os utilizadores criam para o browser incorporado nos seus dispositivos. O Managed Browser não consegue aceder a estas definições.
 
 -   Se configurar a opção **Exigir PIN simples para o acesso** ou **Exigir credenciais de empresa para o acesso** numa política de proteção de aplicações associada ao Managed Browser e um utilizador selecionar a ligação de ajuda na página de autenticação, este pode procurar sites na Internet independentemente de terem sido adicionados a uma lista de bloqueios na política.
@@ -214,3 +213,14 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados.
 
 
+-   Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
+-   O Managed Browser não utiliza as definições que os utilizadores criam para o browser incorporado nos seus dispositivos. O Managed Browser não consegue aceder a estas definições.
+
+-   Se configurar a opção **Exigir PIN simples para o acesso** ou **Exigir credenciais de empresa para o acesso** numa política de proteção de aplicações associada ao Managed Browser e um utilizador selecionar a ligação de ajuda na página de autenticação, este pode procurar sites na Internet independentemente de terem sido adicionados a uma lista de bloqueios na política.
+
+-   O Managed Browser só pode bloquear o acesso a sites quando estes são acedidos diretamente. Não bloqueia o acesso quando são utilizados serviços intermédios (como um serviço de tradução) para aceder ao site.
+
+-   Para permitir a autenticação e aceder à documentação do Intune, **&#42;.microsoft.com** está excluído das definições da lista de permissões ou de bloqueios. É sempre permitido.
+
+### <a name="turn-off-usage-data"></a>Desativar dados de utilização
+A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados.

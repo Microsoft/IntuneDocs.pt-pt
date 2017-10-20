@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
-ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
+ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/10/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utilizar os alertas para receber notificações do Microsoft Intune
 
@@ -75,7 +76,7 @@ Utilize as opções seguintes para o ajudar a trabalhar com alertas a partir da 
 Os alertas do Intune permanecem ativos durante 30 dias ou até:
 
 - O problema que originou o alerta ser resolvido.
-- O alerta ser fechado manualmente.
+- O alerta foi fechado manualmente.
 
 Os alertas fechados podem ser reativados durante 30 dias após o fecho. Após 30 dias, os alertas fechados e inativos são removidos do Intune.
 

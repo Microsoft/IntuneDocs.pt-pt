@@ -15,29 +15,29 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
+ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar os dispositivos como pertencentes à empresa
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Enquanto administrador do Intune, pode identificar um dispositivo como pertencente à empresa de várias formas. O Intune pode recolher informações adicionais de dispositivos pertencentes à empresa. Também pode definir restrições do dispositivo para evitar a inscrição de dispositivos que não pertencem à empresa.
+Como administrador do Intune, pode identificar os dispositivos como pertencentes à empresa para refinar a gestão e identificação. O Intune pode executar tarefas de gestão adicionais e recolher informações adicionais como o número de telemóvel completo e um inventário das aplicações de dispositivos pertencentes à empresa. Também pode definir restrições de dispositivos para bloquear a inscrição de dispositivos que não pertencem à empresa.
 
 Um dispositivo é identificado como pertencente à empresa se uma das seguintes condições for verdadeira:
 
 - Inscrito com uma conta de [gestor de inscrições de dispositivos](device-enrollment-manager-enroll.md) (todas as plataformas)
 - Inscrito com o [Programa de Registo de Aparelho](device-enrollment-program-enroll-ios.md) Apple, [Apple School Manager](apple-school-manager-set-up-ios.md) ou o [Apple Configurator](apple-configurator-enroll-ios.md) (apenas iOS)
 - [Identificado como pertencente à empresa antes da inscrição](#identify-corporate-owned-devices-with-imei-or-serial-number) com números (todas as plataformas com números IMEI) de um identificador de equipamento móvel internacional (IMEI) ou número de série (iOS e Android)
-- Registado no Azure Active Directory ou Enterprise Mobility + Security como um dispositivo Windows 10 Enterprise (apenas Windows 10)
+- Registado no Azure Active Directory ou Enterprise Mobility + Security como um dispositivo Windows 10 Enterprise
 - As propriedades do dispositivo listam a [propriedade do dispositivo como empresarial](#change-device-ownership)
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identificar dispositivos pertencentes à empresa com o número de série IMEI
 
-Enquanto administrador do Intune, pode criar e importar um ficheiro (.csv) de valor separado por vírgulas que indica os números IMEI ou números de série. O Intune utiliza estes identificadores para especificar a propriedade dos dispositivos como empresarial durante a inscrição do dispositivo. Pode declarar os números IMEI das plataformas suportadas. Só pode declarar números de série para dispositivos iOS e Android. Cada número IMEI ou número de série pode ter detalhes especificados na lista para fins administrativos.
+Enquanto administrador do Intune, pode criar e importar um ficheiro (.csv) de valor separado por vírgulas que indica os números IMEI ou números de série. O Intune utiliza estes identificadores para especificar a propriedade dos dispositivos como empresarial durante a inscrição do dispositivo. Pode declarar os números IMEI das plataformas suportadas. Só pode declarar números de série para dispositivos iOS, macOS e Android. Cada número IMEI ou número de série pode ter detalhes especificados na lista para fins administrativos.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 

@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1d1447887f63edf9671fc954dbc69bfd7766ca73
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Como ligar novamente um dispositivo Android comprometido
 
-O seu administrador de TI detetou que está a utilizar um dispositivo desbloqueado por rooting. "Rooted" refere-se ao dispositivo ter sido alterado para permitir acesso ao sistema operativo, o que pode pôr em risco a segurança e ser uma ameaça aos recursos da sua empresa. Se isto acontecer, o dispositivo deixa de poder aceder a recursos da empresa.
+O suporte da empresa detetou que está a usar um dispositivo desbloqueado por rooting. "Rooting" refere-se ao dispositivo ter sido alterado para permitir acesso ao sistema operativo, o que pode pôr em risco a segurança e ser uma ameaça aos recursos da sua empresa. Se isto acontecer, o dispositivo deixa de poder aceder a recursos da empresa.
 
-Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.
+Ainda precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.

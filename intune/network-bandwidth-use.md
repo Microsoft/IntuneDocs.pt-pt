@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
-ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
+ms.openlocfilehash: d68cbb05025e89e256a22dc88f5c4ee2afc3c536
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Utilização de largura de banda de rede do Intune
 
@@ -155,3 +155,16 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
+
+### <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple
+| Nome do anfitrião  | URL (endereço IP/sub-rede) | Protocolo | Porta | Dispositivo |
+| --- | --- | --- | --- | --- |
+|  Consola de Administração  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS e macOS |
+| Consola de Administração  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS e macOS |
+| Consola de Administração  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS e macOS  |
+| Servidor PI  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Para mensagens em nuvem em iOS e macOS da Apple. |
+| Serviços de dispositivos  | gateway.push.apple.com | TCP | 2195 | Apple  |
+| Serviços de dispositivos  | feedback.push.apple.com | TCP | 2196 | Apple  |
+| Serviços de dispositivos  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
+| Dispositivos (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 e 443 | Apenas Apple. &#39;#&#39; é um número aleatório de 0 a 200. |
+| Dispositivos (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 ou 443 | Apenas Apple |

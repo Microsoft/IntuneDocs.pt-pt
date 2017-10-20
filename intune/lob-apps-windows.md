@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8ae15dc7b192cbfe3f0759e568b92783f24e1fe
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 33959b941e39d8694387770e1f3264d74647de69
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/09/2017
 ## <a name="step-1---specify-the-software-setup-file"></a>Passo 1 – Especificar o ficheiro de configuração do software
 
 1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** + **Intune**.
 3. No painel **Intune**, escolha **Gerir aplicações**.
 4. Na carga de trabalho **Aplicações móveis**, escolha **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, escolha **Adicionar**.
@@ -65,6 +65,14 @@ ms.lasthandoff: 09/09/2017
 1. No painel **Adicionar aplicação**, verifique se configurou as informações da aplicação corretamente.
 2. Escolha **Adicionar** para carregar a aplicação para o Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="step-5---update-a-line-of-business-app"></a>Passo 5 – Atualizar uma aplicação de linha de negócio
+
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="next-steps"></a>Próximos passos
 
 A aplicação que criou é apresentada na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
+
+Saiba mais sobre as formas como pode monitorizar as propriedades e atribuições da sua aplicação. Para obter mais informações, consulte [Como monitorizar informações e atribuições da aplicação](apps-monitor.md).
+
+Saiba mais sobre o contexto da sua aplicação no Intune. Para obter mais informações, consulte [Descrição geral dos ciclos de vida de dispositivos e aplicações](introduction-device-app-lifecycles.md)

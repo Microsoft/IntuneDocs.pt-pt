@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 088012a1dd9ee1997e7d2b578e54774c4bd586fb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>Verificação de conformidade no seu dispositivo Android
 
@@ -30,4 +30,4 @@ Se o seu dispositivo não for verificado no Intune há algum tempo, poderá não
 
 2. Toque em **Verificar Compatibilidade**.
 
-Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao seu administrador de TI para o fazer por si. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao suporte da empresa para o fazer por si. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

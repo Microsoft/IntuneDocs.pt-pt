@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53bb84c3f2f9e8ee0c0bda419015ff35d1a51488
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>O dispositivo tem um certificado necessário em falta
 
@@ -30,12 +30,12 @@ A [criptografia](https://technet.microsoft.com/library/cc962030.aspx) é a ciên
 
 ## <a name="fixing-certificate-issues"></a>Corrigir problemas de certificados
 
-Se o seu dispositivo Android não estiver inscrito no Intune e não tiver um determinado certificado de que o administrador de TI necessita, não poderá iniciar sessão na aplicação Portal da Empresa. Ao tentar iniciar sessão, verá a seguinte mensagem:
+Se o seu dispositivo Android não estiver inscrito no Intune e não tiver um determinado certificado de que o suporte da empresa necessita, não poderá iniciar sessão na aplicação Portal da Empresa. Ao tentar iniciar sessão, verá a seguinte mensagem:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
 O primeiro passo que deve experimentar consiste em verificar se o seu dispositivo tem um [certificado em falta que geralmente vem pré-instalado](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Se esta opção não funcionar, o seu administrador de TI pode [pedir-lhe para instalar um segundo certificado para uma segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
+Se esta opção não funcionar, o suporte da empresa poderá [pedir-lhe para instalar um segundo certificado para uma segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

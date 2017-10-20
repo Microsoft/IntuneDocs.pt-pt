@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Se utilizar o Exchange ActiveSync, no local ou alojado na cloud, pode ativar a g
 ## <a name="overview-of-device-enrollment-methods"></a>Descrição geral dos métodos de inscrição para dispositivos
 
 A tabela a seguir oferece uma descrição geral dos métodos de inscrição do Intune com as respetivas capacidades e requisitos descritos abaixo.
+
 **Legenda**
 
 - **Reposição obrigatória** – O dispositivo é reposto para fábrica durante a inscrição.
@@ -79,18 +80,59 @@ A seguir são apresentados cenários de inscrição de dispositivos empresariais
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo **iOS Supervisionado** que, por sua vez, ativa a seguinte funcionalidade:
+A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo iOS supervisionado, que permite que um dispositivo seja configurado com a seguinte funcionalidade:
 
-  - Inscrição bloqueada
-  - Modo de Local Público e outras restrições e configurações avançadas
+- Bloqueio de Aplicação (Modo de Aplicação Única) 
+- Proxy HTTP Global 
+- Ignorar Bloqueio de Ativação 
+- Modo de Aplicação Única Autónomo 
+- Filtro de Conteúdo Web 
+- Definição de fundo e ecrã de bloqueio 
+- Push da Aplicação Silencioso 
+- VPN Sempre Ativada 
+- Permitir exclusivamente a instalação de aplicações geridas 
+- iBookstore 
+- iMessages 
+- Centro de Jogos 
+- AirDrop 
+- AirPlay 
+- Emparelhamento de anfitrião 
+- Sincronização de Nuvem 
+- Pesquisa Spotlight 
+- Handoff 
+- Apagar dispositivo 
+- Restrições da IU 
+- Instalação dos perfis de configuração pela IU 
+- Notícias 
+- Atalhos de teclado 
+- Modificações do código de acesso 
+- Alterações do nome do dispositivo 
+- Alterações da imagem de fundo 
+- Transferências automáticas de aplicações 
+- Alterações à confiança na aplicação de empresa 
+- Apple Music 
+- Mail Drop 
+- Emparelhar com o Apple Watch 
+
+> [!NOTE]
+> A Apple confirmou que determinadas definições irão mudar para apenas supervisionado em 2018. Recomendamos que tenha isto em consideração ao utilizar estas definições em vez de aguardar que a Apple efetue a migração para apenas supervisionado:
+> - Instalação de aplicações
+> - Remoção de aplicações
+> - FaceTime
+> - Safari
+> - iTunes
+> - Conteúdos explícitos
+> - Documentos e dados do iCloud
+> - Jogos de vários jogadores
+> - Adicionar amigos do Centro de Jogos
 
 Saiba mais sobre a inscrição do DEP para iOS:
 
-- [Escolher como inscrever dispositivos iOS](enrollment-method-choose-ios.md)
+- [Escolher como inscrever dispositivos iOS](ios-enroll.md)
 - [Inscrever dispositivos iOS com o Programa de Inscrição de Dispositivos](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
-Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os utilizadores recebem os seus dispositivos, é-lhes pedido que executem o Assistente de Configuração para inscreverem os seus dispositivos. Este método suporta o modo **iOS Supervisionado** que, por sua vez, ativa as seguintes funcionalidades:
+Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os utilizadores recebem os seus dispositivos, é-lhes pedido que executem o Assistente de Configuração para inscreverem os seus dispositivos. Este método suporta o modo **iOS supervisionado** que, por sua vez, ativa as seguintes funcionalidades:
   - Inscrição bloqueada
   - Modo de Local Público e outras restrições e configurações avançadas
 

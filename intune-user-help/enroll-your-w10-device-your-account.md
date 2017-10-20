@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Iniciar sessão](./media/W10-enroll-4-sign-in.png)
 
-Continua sem aceder ao seu e-mail, ficheiros ou outros dados do trabalho ou da escola? Tente corrigir o acesso através da [resolução de problemas com a sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se continuar sem funcionar, terá de contactar o seu administrador de TI para obter mais ajuda.
+Continua sem aceder ao seu e-mail, ficheiros ou outros dados do trabalho ou da escola? Tente corrigir o acesso através da [resolução de problemas com a sua conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se continuar sem funcionar, terá de contactar o suporte da empresa para obter mais ajuda.
 
-Uma forma fácil de obter a ajuda do seu administrador de TI é através das informações de contacto disponíveis na aplicação Portal da Empresa, que também permite localizar e transferir aplicações recomendadas e necessárias para o seu trabalho diário. É possível que já tenha a aplicação Portal da Empresa instalada no seu dispositivo. Uma forma rápida de o verificar é ao procurar o __Portal da Empresa__ na lista __Todas as aplicações__.
+Uma forma fácil de obter a ajuda do suporte da empresa é através das informações de contacto disponíveis na aplicação Portal da Empresa, que também permitem localizar e transferir aplicações recomendadas e necessárias para o seu trabalho diário. É possível que já tenha a aplicação Portal da Empresa instalada no seu dispositivo. Uma forma rápida de o verificar é ao procurar o __Portal da Empresa__ na lista __Todas as aplicações__.
 
 Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
 

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 56d1f2598c7489fdd09b1c27c6c76c5d80fb6e7e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 41f79bcccd4868f5d8a73926cd47d73c904c8df5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Como encriptar o seu dispositivo Windows
 
-Para proteger os dados empresariais ou escolares, o seu administrador de TI pode solicitar a encriptação do seu dispositivo Windows. Se tiver um Windows Phone inscrito, este será encriptado automaticamente, caso seja necessária encriptação.
+Para proteger os seus dados empresariais ou escolares, o suporte da empresa pode solicitar a encriptação do seu dispositivo Windows. Se tiver um Windows Phone inscrito, este será encriptado automaticamente, caso seja necessária encriptação.
 
 Se tiver um dispositivo de ambiente de trabalho, siga as instruções abaixo para o encriptar.
 
@@ -32,4 +32,4 @@ Se tiver um dispositivo de ambiente de trabalho, siga as instruções abaixo par
 
 2.  Clique em **Ativar o BitLocker**e, em seguida, siga as instruções apresentadas para encriptar cada uma das suas unidades.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
