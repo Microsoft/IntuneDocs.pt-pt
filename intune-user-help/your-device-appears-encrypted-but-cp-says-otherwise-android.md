@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>O seu dispositivo Android parece estar encriptado, mas o Portal da Empresa diz o contrário
 
@@ -40,9 +40,18 @@ Determinados dispositivos Android exigem que crie um PIN de arranque para garant
 
 Se o seu dispositivo permitir mudar para a versão anterior Android 6.0+, faça-o. Existe um risco de perda de dados se tentar mudar o seu dispositivo para uma versão anterior. Em alternativa, recomendamos que contacte o suporte da empresa para resolver este problema. Pode obter as informações de contacto do suporte da empresa no [site do Portal da Empresa](https://portal.manage.microsoft.com).
 
+### <a name="encrypt-the-entire-device"></a>Encriptar todo o dispositivo
+
+Alguns dispositivos permitem-lhe optar por encriptar todo o dispositivo ou apenas o espaço utilizado do mesmo. Selecione a opção para encriptar todo o dispositivo em vez de "apenas o espaço utilizado". Se já encriptou apenas o espaço utilizado:
+
+1. [Remova este dispositivo do Portal da Empresa](unenroll-your-device-from-intune-android.md)
+2. Desencripte o espaço utilizado
+3. Encriptar todo o dispositivo
+4. Volte a inscrever o dispositivo
+
 ## <a name="specific-manufacturer-issues"></a>Problemas de um fabricante específico
 
-Alguns dispositivos Android com a versão 7.0 e superior encriptam os dados de forma inconsistente com determinadas normas da plataforma Android. Estes dispositivos poderão parecer encriptados mesmo quando são novos. O Intune reconhece que os métodos de encriptação destes dispositivos colocam as informações do mesmo em risco. Este risco está principalmente associado a utilizadores mal intencionados que têm acesso físico ao dispositivo.
+Alguns dispositivos Android com a versão 7.0 e superior encriptam os dados de forma inconsistente com determinadas normas da plataforma Android. Estes dispositivos poderão parecer encriptados mesmo quando são novos. O Intune reconhece que os métodos de encriptação destes dispositivos colocam as informações do mesmo em risco. Este risco está principalmente associado a utilizadores mal-intencionados que têm acesso físico ao dispositivo.
 
 > [!Note]
 > A Microsoft trabalha com os fabricantes para abordar quaisquer problemas encontrados durante os testes ou comunicados pelos utilizadores. Atualizaremos este artigo sempre que estiverem disponíveis novas informações. 

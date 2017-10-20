@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7730a799176a74f1ddb8e4b5e49a110229255428
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
@@ -70,7 +70,7 @@ A entidade **DeviceTypes** representa o tipo de dispositivo referenciado por out
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
-A entidade **ClientRegistrationStateTypes** representa o tipo de dispositivo referenciado por outras tabelas do armazém de dados.
+A entidade **ClientRegistrationStateTypes** representa o tipo de registo referenciado por outras tabelas do armazém de dados.
 
 | Propriedade  | Descrição |
 |---------|------------|
@@ -240,8 +240,8 @@ A entidade **Devices** lista todos os dispositivos inscritos sob gestão e as pr
 | OSBuildNumber |Componente de versão de compilação da versão do SO (major.minor.build.revision) |
 | OSRevisionNumber |Componente de versão de revisão da versão do SO (major.minor.build.revision) |
 | EasID |O ID EAS do dispositivo, se o dispositivo for gerido pelo Exchange Active Sync. |
-| GraphDeviceIsManaged |O ultimo estado de gestão que o Intune definiu no AAD |
-| GraphDeviceIsCompliant |O ultimo estado de conformidade que o Intune definiu no AAD |
+| GraphDeviceIsManaged |O último estado de gestão que o Intune definiu no AAD |
+| GraphDeviceIsCompliant |O último estado de conformidade que o Intune definiu no AAD |
 | SerialNumber |Número de série do dispositivo, se disponível |
 | EnrolledByUser |O ID do utilizador que inscreveu este dispositivo e que referencia a coluna UserId na tabela User. |
 | RowLastModifiedDateTimeUTC |A última vez em que este registo foi modificado. |
@@ -285,8 +285,8 @@ A entidade **DevicePropertyHistory** tem as mesmas propriedades que a tabela de 
 | OSBuildNumber |Componente de versão de compilação da versão do SO (major.minor.build.revision) |
 | OSRevisionNumber |Componente de versão de revisão da versão do SO (major.minor.build.revision) |
 | EasID |O ID EAS do dispositivo, se o dispositivo for gerido pelo Exchange Active Sync. |
-| GraphDeviceIsManaged |O ultimo estado de gestão que o Intune definiu no AAD |
-| GraphDeviceIsCompliant |O ultimo estado de conformidade que o Intune definiu no AAD |
+| GraphDeviceIsManaged |O último estado de gestão que o Intune definiu no AAD |
+| GraphDeviceIsCompliant |O último estado de conformidade que o Intune definiu no AAD |
 | SerialNumber |Número de série do dispositivo, se disponível |
 | EnrolledByUser |O ID do utilizador que inscreveu este dispositivo e que referencia a coluna UserId na tabela User. |
 | RowLastModifiedDateTimeUTC |A última vez em que este registo foi modificado. |
