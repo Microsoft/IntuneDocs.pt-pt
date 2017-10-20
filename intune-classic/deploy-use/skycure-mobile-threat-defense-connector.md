@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Conector Skycure Mobile Threat Defense
 
@@ -94,7 +95,7 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 **Acesso concedido na remediação:**
 
-![Exemplo de acesso concedido na remediação para o Sharepoint](../media/mtp/skycure-arch-6.png)
+![Exemplo de acesso concedido na remediação para o SharePoint](../media/mtp/skycure-arch-6.png)
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -112,7 +113,7 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 Para obter mais informações, veja o [site do Skycure](https://www.skycure.com/skycure-microsoft-integration/).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja a seguir os passos necessários para integrar o Intune com o Skycure:
 

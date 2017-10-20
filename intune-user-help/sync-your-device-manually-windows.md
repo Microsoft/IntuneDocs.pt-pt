@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf43ed13b852cccbce44e2a31890e164e3519490
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
@@ -62,7 +62,7 @@ Existe mais do que uma versão do Windows 10, pelo que existem dois conjuntos de
 
     ![Selecionar Acesso profissional ou escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Selecione a sua conta escolar ou profissional. Dependendo da configuração que o administrador de TI efetuou, poderá ver duas contas com aspeto semelhante ao exemplo mostrado abaixo. Uma conta tem uma pasta junto à mesma, e a outra conta tem o logótipo da Microsoft.
+2. Selecione a sua conta escolar ou profissional. Dependendo da configuração que o suporte da empresa efetuou, poderá ver duas contas com aspeto semelhante ao exemplo mostrado abaixo. Uma conta tem uma pasta junto à mesma, e a outra conta tem o logótipo da Microsoft.
 
     - Se vir a conta com a pasta, selecione-a e procure o botão **Informações** sob a mesma.
     - Se vir apenas a conta com o logótipo da Microsoft, selecione a conta e procure o botão **Informações** sob a mesma.
@@ -129,4 +129,4 @@ Para sincronizar manualmente o seu dispositivo Windows Phone 8.1 para acelerar u
 
    É apresentada a mensagem "Estamos a sincronizar a sua conta" na parte superior do ecrã até que seja concluída a sincronização do dispositivo.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

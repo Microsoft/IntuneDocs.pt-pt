@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc242a36957ed897198f597ab7864aca21a7820d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fb082ad8830a5d8e9ab0514a981c9bb4b02592b0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Como desativar a recolha de dados da Microsoft
 
-A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazemo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. Os seus administradores de TI não têm controlo sobre a recolha destes dados e não podem alterar a sua seleção desta definição.
+A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazemo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. O suporte da empresa não tem controlo sobre a recolha destes dados e não pode alterar a sua seleção desta definição.
 
 Se quiser desativar a recolha de dados de utilização no seu dispositivo Windows, procure a definição **Dados de Utilização** na aplicação Portal da Empresa.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

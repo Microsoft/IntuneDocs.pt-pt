@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou palavra-passe
 
-O administrador de TI poderá exigir que defina um PIN ou palavra-passe no seu dispositivo Android, ao utilizar o Intune para aceder aos dados escolares ou profissionais. Também poderá ver mensagens que exigem que adote uma palavra-passe ou PIN mais longo ou mais complexo para que seja mais seguro. Estes códigos de acesso são utilizados, por exemplo, para aceder ao dispositivo a partir do ecrã de bloqueio.
+O suporte da empresa poderá exigir que defina um PIN ou palavra-passe no seu dispositivo Android, ao utilizar o Intune para aceder aos dados escolares ou profissionais. Também poderá ver mensagens que exigem que adote uma palavra-passe ou PIN mais longo ou mais complexo para que seja mais seguro. Estes códigos de acesso são utilizados, por exemplo, para aceder ao dispositivo a partir do ecrã de bloqueio.
 
 Pode utilizar os seguintes passos para definir um PIN ou uma palavra-passe.
 
@@ -33,4 +33,4 @@ Pode utilizar os seguintes passos para definir um PIN ou uma palavra-passe.
 2.  Escolha e confirme a palavra-passe nova.
 
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 778ba1445361a15c43edf0d09f154750beacd3ad
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Como anular a inscrição do seu dispositivo Android no Intune
 
@@ -36,6 +36,6 @@ Para anular a inscrição do dispositivo no Intune e remover a aplicação Porta
 
 3. Uma confirmação será apresentada, a perguntar se quer mesmo remover o Portal da Empresa. A mensagem fornecerá algumas informações sobre o que acontece quando anula a inscrição do dispositivo. Depois de ler esta mensagem, toque em **OK** para remover a aplicação. 
 
-  ![Uma imagem da caixa de diálogo de confirmação, que está disponível depois de selecionar a nova opção “Remover Portal da Empresa” no menu de ação. A caixa de diálogo informa o utilizador de que “ao remover o portal da empresa, o dispositivo já não será gerido pelo administrador de TI e que poderá remover o acesso aos dados da empresa, às aplicações da empresa e ao e-mail da empresa”. Em seguida, pede ao utilizador para confirmar se quer remover a aplicação Portal da Empresa ao selecionar “Sim”.](./media/android_remove_cp_menu_confirmation_after_1705.png)
+  ![Uma imagem da caixa de diálogo de confirmação, que está disponível depois de selecionar a nova opção “Remover Portal da Empresa” no menu de ação. A caixa de diálogo informa o utilizador que "ao remover o portal da empresa, o dispositivo já não será gerido pelo suporte da empresa e que poderá remover o acesso aos dados da empresa, às aplicações da empresa e ao e-mail da empresa". Em seguida, pede ao utilizador para confirmar se quer remover a aplicação Portal da Empresa ao selecionar “Sim”.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5c76ad3ea5a2fb7aafe7a40aa2e258a083c2d6c8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e7375e6670c15fe186f5e77876e7b46f9021ad9d
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a recolha de dados da Microsoft
 
-A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazemo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. Os seus administradores de TI não têm controlo sobre a recolha destes dados e não podem alterar a sua seleção desta definição.
+A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazemo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. O suporte da empresa não tem controlo sobre a recolha destes dados e não pode alterar a sua seleção desta definição.
 
 Se quiser desativar a recolha desses dados no seu dispositivo Android, abra a definição **Dados de Utilização** na aplicação Portal da Empresa.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

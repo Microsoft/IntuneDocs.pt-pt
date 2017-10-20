@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Inscrever o dispositivo Android na gestão de despesas de telecomunicações
 
@@ -30,7 +30,7 @@ A sua organização poderá estar a utilizar software de gestão de despesas de 
 
 Selecione a opção adequada para receber uma notificação e instalar a aplicação [ __Datalert__ ](https://play.google.com/store/apps/details?id=fr.memobox.databox) a partir da Google Play Store. A aplicação Datalert é o modo como a sua organização pode medir a utilização de dados. Se a sua organização tiver configurado a opção de inscrição escolar ou profissional, precisará de iniciar sessão com a conta escolar ou profissional. Se ainda não tiver ativado esta opção, terá de indicar informações como o número de telefone e verificar o dispositivo através de um código para se inscrever no serviço Datalert da aplicação.
 
-Toque na seta __seguinte__, no canto superior direito do ecrã, para continuar. O administrador de TI deverá indicar-lhe se vai iniciar sessão com a __conta escolar ou profissional da Microsoft__ ou utilizar o __número de telefone__.
+Toque na seta __seguinte__, no canto superior direito do ecrã, para continuar. O suporte da empresa deverá indicar-lhe se vai iniciar sessão com a __conta escolar ou profissional da Microsoft__ ou utilizar o __número de telefone__.
 
   ![Uma captura do ecrã de boas-vindas da aplicação Datalert, que lhe pede para se deslocar para o ecrã seguinte depois de apresentar uma breve explicação sobre como a aplicação Datalert pode tirar o máximo partido do seu plano de dados.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ Toque na seta __seguinte__, no canto superior direito do ecrã, para continuar. 
 
 Depois de se inscrever, começa a ver a utilização de dados na aplicação Datalert.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android com encriptação
 
 Quando tenta encriptar um dispositivo, está a encapsular as informações do mesmo numa camada de código de proteção que impede pessoas não autorizadas de acederem ao mesmo. Para se certificar de que a sua informação está segura, a sua organização requer que encripte o seu dispositivo Android antes de poder aceder a ficheiros, e-mail ou dados da empresa.
 
 > [!Note]
-> Poderá ser-lhe pedido para definir um PIN ou uma palavra-passe antes de encriptar, se o administrador de TI exigir um deles.
+> Poderá ser-lhe pedido para definir um PIN ou uma palavra-passe antes de encriptar, se o suporte da empresa exigir um deles.
 
 Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
@@ -52,7 +52,7 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
 - Certifique-se de que o seu dispositivo está carregado e ligado.
 - Confirme se definiu uma palavra-passe ou um PIN no dispositivo.
-- Se já tiver definido uma palavra-passe ou PIN no seu dispositivo, tente os seguintes passos, que o administrador de TI pode exigir para tornar o seu dispositivo mais seguro. Os nomes de menu que visualiza poderão ser ligeiramente diferentes nos passos, dependendo do tipo de dispositivo Android que tiver.
+- Se já tiver definido uma palavra-passe ou PIN no seu dispositivo, experimente os seguintes passos, que o suporte da empresa pode exigir para tornar o seu dispositivo mais seguro. Os nomes de menu que visualiza poderão ser ligeiramente diferentes nos passos, dependendo do tipo de dispositivo Android que tiver.
 
     1. Aceda a **Definições** > **Ecrã de Bloqueio e Segurança** > **Ecrã de bloqueio**. Confirme o seu PIN ou palavra-passe atual.
 
@@ -66,4 +66,4 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
     6. Abra a aplicação Portal da Empresa, selecione o seu dispositivo e toque em **Verificar Conformidade**.
 
-Ainda precisa de ajuda? Contacte o administrador de TI (verifique as informações de contacto no [site do Portal da Empresa](http://portal.manage.microsoft.com)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.
+Ainda precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.

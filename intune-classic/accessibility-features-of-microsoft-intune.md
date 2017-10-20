@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33d9fea9c0177722d6772e33b9a343a9c1edfe5c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a218a8b0135e587b7eff88490966ea0b2090b84a
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Funcionalidades de Acessibilidade do Microsoft Intune
 Para além das funcionalidades e ferramentas de acessibilidade do Microsoft Windows, as seguintes funcionalidades tornam o Microsoft Intune mais acessível para pessoas portadoras de deficiência: utilizar atalhos de teclado

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Android com o Portal da Empresa?
 
@@ -28,8 +28,8 @@ Quando utiliza o Portal da Empresa para repor o seu dispositivo Android, todas a
 
 Se tiver um dispositivo Samsung KNOX, pode fazer uma “eliminação seletiva” ao escolher a opção **remover dispositivo** no Portal da Empresa. A eliminação seletiva remove apenas:
 
-- Aplicações empresariais que o administrador de TI lhe disponibiliza.
+- Aplicações empresariais que o suporte da empresa lhe disponibiliza.
 - E-mail, VPN e Wi-Fi.
-- A capacidade do administrador de TI de impor determinadas definições.
+- A capacidade do suporte da empresa de impor determinadas definições.
 
-Se tiver dúvidas, contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

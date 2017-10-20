@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2208d25b4e27f3a896c431f301a46392a4b21f80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 407ef838fca1f47a191b5a99648dcc68433621f6
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtém um erro ao utilizar a aplicação Portal da Empresa
 
-Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo iOS, pode ajudar o seu administrador de TI a resolver o problema ao enviar-lhe informações. Pode enviar informações de erro de formas diferentes:
+Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo iOS, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações. Pode enviar informações de erro de formas diferentes:
 
 -   Toque em **Relatório** nas mensagens de alerta do erro.
 
@@ -32,4 +32,4 @@ Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa n
 
 -   Abane o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, toque em **E-mail** quando for apresentado o alerta de diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

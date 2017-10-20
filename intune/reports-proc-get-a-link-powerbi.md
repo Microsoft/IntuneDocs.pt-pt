@@ -5,7 +5,7 @@ keywords: "Armazém de Dados do Intune"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
@@ -34,13 +34,13 @@ Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permi
   -  Atualizações de software
   -  Relatórios do inventário de dispositivos
 
-Também existem tendências destacadas para a inscrição, conformidade, perfil de configuração do dispositivo e atualizações de software. Os relatórios e gráficos de exemplo aplicam filtros fáceis de utilizar à tela. Para utilizar filtros avançados, consulte o painel **Filtros** no Power BI Desktop. 
+Também existem tendências destacadas para a inscrição, conformidade, perfil de configuração do dispositivo e atualizações de software. Os relatórios e gráficos de exemplo aplicam filtros fáceis de utilizar à tela. Para utilizar filtros avançados, consulte o painel **Filtros** no Power BI Desktop.
 
 Os seguintes passos mostram como transferir o ficheiro do Power BI e como utilizar a ligação de OData com o Power BI.
 
 ## <a name="install-power-bi"></a>Instalar o Power BI
 
-Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI Desktop em: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) 
+Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI Desktop em: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Carregar os dados e relatórios com o ficheiro do Power BI (pbix)
 
@@ -54,7 +54,7 @@ O ficheiro do Power BI (pbix) contém informações de ligação para o seu inqu
 3.  Clique em **Transferir o ficheiro do Power BI**. O ficheiro com uma extensão (pbix) será transferido para a localização que especificar.
 4.  Abra o ficheiro com o Power BI. Os *Relatórios do Armazém de Dados do Intune* são carregados, mas poderão demorar um momento a obter os dados do seu inquilino.
 5.  Clique em **Atualizar** para carregar os dados do inquilino e rever os relatórios.
-6.  Se o Power BI não tiver sido autenticado com as suas credenciais do Azure Active Directory, o Power BI irá pedir-lhe que forneça as suas credenciais. Ao selecionar as suas credenciais, escolha **Conta organizacional** como o seu método de autenticação.
+6.  Se o Power BI não tiver sido autenticado com as suas credenciais do Azure Active Directory, o Power BI irá pedir-lhe que forneça as suas credenciais. Ao selecionar as suas credenciais, selecione **Conta profissional** como o seu método de autenticação.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Carregue os dados no Power BI com a ligação de OData
 
@@ -69,7 +69,7 @@ Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RE
 7. Escreva ou cole o **URL de OData** na caixa URL.
 8. Clique em **OK**.
 9. Se não tiver sido autenticado no Azure AD para o seu inquilino do cliente de ambiente de trabalho do Power BI, escreva as suas credenciais.  
-    1.  Selecione **Conta organizacional**.  
+    1.  Selecione **Conta profissional**.  
     2.  Escreva o nome de utilizador e a palavra-passe.  
     3.  Clique em **Iniciar Sessão.**  
     4.  Clique em **Ligar**.  
@@ -80,5 +80,5 @@ Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RE
 Pode encontrar respostas a perguntas sobre o seu ambiente, como o número de dispositivos inscritos por dia durante a última semana. Pode obter informações sobre o seu inquilino do Intune e população de clientes através dos relatórios que utilizaram o ficheiro do Power BI (pbix) do Armazém de Dados do Intune obtido no painel no Azure. No entanto, o Intune proporciona muitas outras formas de expandir ou reutilizar os dados. Pode fazer muito mais com o Power BI e a API do Armazém de Dados do Intune, por exemplo:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
- -  Os dados do inquilino estão organizados para o ajudar a extrair informações dos seus dados. Para obter mais informações sobre a forma como os dados estão organizados, veja [Modelo de Dados do Armazém de Dados](reports-ref-data-model.md). 
+ -  Os dados do inquilino estão organizados para o ajudar a extrair informações dos seus dados. Para obter mais informações sobre a forma como os dados estão organizados, veja [Modelo de Dados do Armazém de Dados](reports-ref-data-model.md).
  -  Também pode aceder a dados de uma interface RESTful e incorporar os dados na sua própria aplicação. Para obter mais informações, veja [Get data from the Data Warehouse API with a REST client (Obter dados a partir da API do Armazém de Dados com um cliente REST)](reports-proc-data-rest.md).

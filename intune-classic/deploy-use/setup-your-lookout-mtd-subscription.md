@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54fa53c8f31171c3719f8368ad07cd33da5f2235
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Configurar a subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout
 
@@ -53,7 +54,7 @@ Utilize os seguintes passos para reunir as informações que deve fornecer à eq
 
 1. Inicie sessão no [portal de gestão do Azure AD](https://manage.windowsazure.com) e selecione a sua subscrição. 
   ![captura de ecrã da página do Azure AD a mostrar o nome do inquilino](../media/mtp/aad_tenant_name.png)
-2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, consulte este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter sugestões para saber o seu ID de subscrição. 
+2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, veja este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter sugestões para saber o seu ID de subscrição. 
 3. Localize o ID de Grupo do Azure AD. A consola do Lookout suporta 2 níveis de acesso:  
   * **Acesso Total:** os administradores do Azure AD podem criar um grupo para utilizadores que terão Acesso Total e criar, opcionalmente, outro grupo para os utilizadores que terão Acesso Restrito.  Apenas os utilizadores nestes grupos poderão iniciar sessão na **consola do Lookout**.
   * **Acesso Restrito:** os utilizadores neste grupo não têm acesso a vários módulos de configuração e inscrição da consola do Lookout e têm acesso só de leitura ao módulo **Política de Segurança** da consola do Lookout.  
@@ -115,7 +116,7 @@ Na opção **Gestão de Erros**, introduza o endereço de e-mail que deve recebe
 ![Captura de ecrã da página de gestão de erros do conector do Intune](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>configurar definições de inscrição
-No módulo **System**, na página **Connectors**, especifique o número de dias decorridos antes de um dispositivo ser considerado como estando desligado.  Considera-se que os dispositivos desligados não se encontram em conformidade e o acesso à aplicações da empresa a partir dos mesmos será bloqueado com base nas políticas de acesso condicional do Intune. Pode especificar valores entre 1 e 90 dias.
+No módulo **System**, na página **Connectors**, especifique o número de dias decorridos antes de um dispositivo ser considerado como estando desligado.  Considera-se que os dispositivos desligados não se encontram em conformidade e o acesso às aplicações da empresa a partir dos mesmos será bloqueado com base nas políticas de acesso condicional do Intune. Pode especificar valores entre 1 e 90 dias.
 
 ![](../media/mtp/lookout-console-enrollment-settings.png)
 

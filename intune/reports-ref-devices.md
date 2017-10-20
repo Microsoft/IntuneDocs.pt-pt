@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 957f05e87f777f62b74c8849c5b494fa638e92f4
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
@@ -70,7 +70,7 @@ A entidade **DeviceTypes** representa o tipo de dispositivo referenciado por out
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
-A entidade **ClientRegistrationStateTypes** representa o tipo de dispositivo referenciado por outras tabelas do armazém de dados.
+A entidade **ClientRegistrationStateTypes** representa o tipo de registo referenciado por outras tabelas do armazém de dados.
 
 | Propriedade  | Descrição |
 |---------|------------|
@@ -106,7 +106,7 @@ A entidade **EnrollmentTypes** indica como um dispositivo foi inscrito. O tipo d
 
 | enrollmentTypeID  | Nome | Descrição |
 |---------|------------|--------|
-| 0 |Unknown |Tipo de inscrição desconhecido |
+| 0 |Unknown |Não foi recolhido o tipo de inscrição |
 | 1 |UserEnrollment |Inscrição iniciada pelo utilizador |
 | 2 |DeviceEnrollment |Inscrição de dispositivo com perfil sem utilizador |
 | 3 |DeviceEnrollmentWithUDA |Inscrição de dispositivo com perfil UDA. |
@@ -240,8 +240,8 @@ A entidade **Devices** lista todos os dispositivos inscritos sob gestão e as pr
 | OSBuildNumber |Componente de versão de compilação da versão do SO (major.minor.build.revision) |
 | OSRevisionNumber |Componente de versão de revisão da versão do SO (major.minor.build.revision) |
 | EasID |O ID EAS do dispositivo, se o dispositivo for gerido pelo Exchange Active Sync. |
-| GraphDeviceIsManaged |O ultimo estado de gestão que o Intune definiu no AAD |
-| GraphDeviceIsCompliant |O ultimo estado de conformidade que o Intune definiu no AAD |
+| GraphDeviceIsManaged |O último estado de gestão que o Intune definiu no AAD |
+| GraphDeviceIsCompliant |O último estado de conformidade que o Intune definiu no AAD |
 | SerialNumber |Número de série do dispositivo, se disponível |
 | EnrolledByUser |O ID do utilizador que inscreveu este dispositivo e que referencia a coluna UserId na tabela User. |
 | RowLastModifiedDateTimeUTC |A última vez em que este registo foi modificado. |
@@ -285,8 +285,8 @@ A entidade **DevicePropertyHistory** tem as mesmas propriedades que a tabela de 
 | OSBuildNumber |Componente de versão de compilação da versão do SO (major.minor.build.revision) |
 | OSRevisionNumber |Componente de versão de revisão da versão do SO (major.minor.build.revision) |
 | EasID |O ID EAS do dispositivo, se o dispositivo for gerido pelo Exchange Active Sync. |
-| GraphDeviceIsManaged |O ultimo estado de gestão que o Intune definiu no AAD |
-| GraphDeviceIsCompliant |O ultimo estado de conformidade que o Intune definiu no AAD |
+| GraphDeviceIsManaged |O último estado de gestão que o Intune definiu no AAD |
+| GraphDeviceIsCompliant |O último estado de conformidade que o Intune definiu no AAD |
 | SerialNumber |Número de série do dispositivo, se disponível |
 | EnrolledByUser |O ID do utilizador que inscreveu este dispositivo e que referencia a coluna UserId na tabela User. |
 | RowLastModifiedDateTimeUTC |A última vez em que este registo foi modificado. |
@@ -356,7 +356,7 @@ A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos da
 | JailBroken |True se o dispositivo estiver desbloqueado por Jailbreak ou Rooting. |
 | IsActivationLockEnabled |True se o Bloqueio de Ativação estiver Ativado |
 | DeviceType |Tipo de Dispositivo |
-| IsSupervised |É Supervisionado |
+| IsSupervised |É supervisionado |
 | DeviceDisplayNumberOfColors |Número de cores do ecrã do dispositivo |
 | HorizontalResolution |Resolução de ecrã horizontal do dispositivo |
 | VerticalResolution |Resolução de ecrã vertical do dispositivo |

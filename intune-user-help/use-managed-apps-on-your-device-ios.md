@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
-ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
+ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 
-As aplicações geridas são as aplicações que o administrador de TI pode configurar para ajudar a proteger os dados da empresa a que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo iOS, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
+As aplicações geridas são as aplicações que o suporte da empresa pode configurar para ajudar a proteger os dados da empresa a que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo iOS, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
 
 As diferentes aplicações geridas também podem trabalhar em conjunto no seu dispositivo para que possa efetuar as tarefas diárias, mantendo os dados empresariais protegidos. Por exemplo, se abrir um ficheiro da empresa numa aplicação gerida e for necessária outra aplicação gerida para ver esse ficheiro, a aplicação gerida que lhe permite ver o ficheiro abre-se automaticamente. Se não estiver disponível uma aplicação necessária, determinadas ações, como abrir um documento ou aceder a uma ligação Web a partir de um documento gerido, poderão não estar disponíveis.
 
@@ -35,14 +35,14 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 ### <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
 Obtém aplicações geridas de duas formas diferentes:
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o administrador de TI poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
+-   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o suporte da empresa poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instala uma aplicação da App Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
 
-Por vezes, o seu administrador de TI poderá adquirir múltiplas licenças para uma aplicação que irá instalar. Se vir uma mensagem a pedir que aceite o contrato do Apple Volume Purchase Program, isto é normal e pode aceitá-lo. Se não o aceitar, não poderá instalar a aplicação.
+Por vezes, o suporte da empresa poderá adquirir múltiplas licenças para uma aplicação que instalar. Se vir uma mensagem a pedir que aceite o contrato do Apple Volume Purchase Program, isto é normal e pode aceitá-lo. Se não o aceitar, não poderá instalar a aplicação.
 
-### <a name="what-can-my-it-admin-manage-in-an-app"></a>O que o meu administrador de TI pode gerir na minha aplicação?
-Aqui estão alguns exemplos das opções que o administrador de TI pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
+### <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?
+Eis alguns exemplos das opções que o suporte da empresa pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
 
 -   Acesso a sites específicos
 
@@ -62,4 +62,4 @@ Aqui estão alguns exemplos das opções que o administrador de TI pode gerir nu
 
 -   Requisitos de encriptação de dados
 
-Contacte o administrador de TI para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

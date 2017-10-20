@@ -15,24 +15,24 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Corrigir problemas comuns no seu dispositivo Android
 
-Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o administrador de TI através das informações de contacto dele no [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com).
 
 - [Verificação de conformidade no seu dispositivo Android](check-compliance-on-your-device-android.md)
-- [Utilizar o Registo Verboso para ajudar o administrador de TI a corrigir problemas de dispositivos](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Enviar registos para o administrador de TI por e-mail](send-logs-to-your-it-admin-by-email-android.md)
-- [Enviar registos para o seu administrador de TI por cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
-- [Enviar erros de inscrição ao administrador de TI](send-enrollment-errors-to-your-it-admin-android.md)
+- [Utilizar o Registo Verboso para ajudar o suporte da empresa a corrigir problemas de dispositivos](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Enviar registos ao suporte da empresa por e-mail](send-logs-to-your-it-admin-by-email-android.md)
+- [Enviar registos ao suporte da empresa por cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Enviar erros de inscrição ao suporte da empresa](send-enrollment-errors-to-your-it-admin-android.md)
 - [Necessita de atualizar o seu dispositivo Android](you-need-to-update-your-android-device.md)
 - [O dispositivo não é compatível com a versão máxima do sistema de operativo](your-android-version-isnt-yet-supported.md)
-- [O dispositivo tem root e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
+- [O dispositivo foi desbloqueado por rooting e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
 - [O dispositivo tem um certificado necessário em falta](your-device-is-missing-a-required-certificate-landing-android.md)
 - [Tem de desativar origens desconhecidas](you-need-to-turn-off-unknown-sources-android.md)
 - [Tem de desativar a depuração de USB](you-need-to-turn-off-usb-debugging-android.md)

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Criar um perfil de trabalho e inscrever o seu dispositivo no Intune
 
-Inscrever o seu dispositivo Android dá-lhe acesso a e-mails da empresa, aplicações e outros dados de trabalho. Como parte da inscrição, configura um perfil de trabalho, que separa os dados pessoais no seu dispositivo dos dados de trabalho. O administrador de TI apenas pode gerir o perfil de trabalho, que contém os seus dados de trabalho. O administrador de TI não pode gerir os dados pessoais no seu dispositivo. Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).
+Inscrever o seu dispositivo Android dá-lhe acesso a e-mails da empresa, aplicações e outros dados de trabalho. Como parte da inscrição, configura um perfil de trabalho, que separa os dados pessoais no seu dispositivo dos dados de trabalho.
+
+O suporte da empresa apenas pode gerir o perfil de trabalho, que contém os seus dados de trabalho. O suporte da empresa não pode gerir os dados pessoais no seu dispositivo. Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).
 
 Para criar um perfil de trabalho:
 
@@ -32,27 +34,27 @@ Para criar um perfil de trabalho:
 
     ![Ecrã de Boas-vindas da aplicação Portal da Empresa para Android](./media/and-enroll-0-welcome-screen.png)
 
-2. No ecrã **Configuração de Acesso à Empresa**, toque em **COMEÇAR**.
+2. No ecrã **Configuração de Acesso da Empresa**, toque em **CONTINUAR**.
 
-    ![Ecrã Configuração de Acesso à Empresa](./media/andr-afw-begin-company-access-setup.png)
+    ![Ecrã Configuração de Acesso à Empresa](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  No ecrã **Porquê criar um perfil de trabalho?**, leia acerca do que poderá fazer e, em seguida, clique em **CONTINUAR**.
 
     ![Porquê criar um perfil de trabalho](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Reveja uma lista do que o administrador de TI pode e não pode ver no seu dispositivo e toque em **CONTINUAR**.
+4.  Consulte uma lista do que o suporte da empresa pode e não pode ver no seu dispositivo e toque em **CONTINUAR**.
 
-    ![O que o administrador de TI consegue e não consegue ver no seu dispositivo](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![O que o suporte da empresa consegue e não consegue ver no seu dispositivo](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  No ecrã **O que vem a seguir**, leia sobre o que irá acontecer em seguida e, em seguida toque em **CONTINUAR**.
+5.  No ecrã **O que se segue?**, leia sobre o que acontece durante a inscrição e, em seguida, toque em **INSCREVER**.
 
-    ![Ecrã O que vem a seguir](./media/andr-afw-what-comes-next.png)
+    ![Ecrã "O que se segue?"](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. No ecrã **Configurar o perfil de trabalho**, toque em **SEGUINTE** para permitir que a aplicação Portal da Empresa aceda ao perfil de trabalho.
 
     ![Atribuir à aplicação Portal da Empresa acesso ao perfil de trabalho](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Observe o ecrã Google que descreve o que o administrador de TI pode fazer quando cria um perfil de trabalho e, em seguida, toque em **OK**.
+7. Observe o ecrã com a mensagem da Google que descreve o que o suporte da empresa pode fazer quando cria um perfil de trabalho e, em seguida, toque em **OK**.
 
     ![Rever as informações da Google acerca de perfis de trabalho](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ Para criar um perfil de trabalho:
 
     Durante breves momentos verá a mensagem "A inscrever o seu dispositivo".
 
-11. Quando o ecrã **Configuração de Acesso à Empresa** mostrar que foi tudo configurado corretamente, toque em **CONTINUAR**.
+11. Quando o ecrã **Está tudo pronto!** mostrar que está tudo configurado corretamente, toque em **CONCLUÍDO**.
 
-    ![A Configuração de Acesso à Empresa mostra que o perfil de trabalho e a inscrição estão concluídos](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. No ecrã **Configuração de Acesso à Empresa concluída**, toque em **CONCLUÍDO**. Poderá ter de concluir passos adicionais se o administrador de TI tiver adicionado outros requisitos.
-
-    ![A Configuração de Acesso à Empresa está concluída](./media/andr-afw-company-access-setup-complete.png)
+    ![A Configuração de Acesso à Empresa mostra que o perfil de trabalho e a inscrição estão concluídos](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     Agora, pode obter aplicações de empresa na Play Store for Work.
 
     ![Página de aplicações Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Ainda precisa de ajuda? Contacte o administrador de TI. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

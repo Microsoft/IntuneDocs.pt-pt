@@ -11,20 +11,21 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 57cdcb50920566c61ed43b5eada5bbde35c2438e
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f34697140a287d41203d1bad5df59250f07d08ce
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-classic-portal"></a>Ativar a ligação do Lookout MTD no portal clássico do Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Para ativar a ligação da Defesa Contra Ameaças para Dispositivos Móveis (MTD) do Lookout no Intune, já deve ter configurado o Conetor do Intune na consola do Lookout.  Se ainda não o fez, deve [Configurar a sua subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](setup-your-lookout-mtd-subscription.md).
+Para ativar a ligação da Defesa Contra Ameaças para Dispositivos Móveis (MTP) do Lookout no Intune, já deve ter configurado o Conetor do Intune na consola do Lookout.  Se ainda não o fez, deve [Configurar a sua subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout](setup-your-lookout-mtd-subscription.md).
 
 Para ativar a ligação Lookout MTP no Intune, na página **Administração**, na [Consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Integração de Serviço de Terceiros**. Selecione **Estado do Lookout** e ative a opção **Sincronização com MTP** utilizando o botão de alternar.
 

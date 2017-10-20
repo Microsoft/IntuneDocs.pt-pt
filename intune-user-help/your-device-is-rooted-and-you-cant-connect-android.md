@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a91b167911d203cd3bd1e7645e5cacbc2eb6534
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>O seu dispositivo Android tem root e, por isso, não liga
 
@@ -32,6 +32,6 @@ Existem algumas formas comuns pelas quais o dispositivo pode ter ficado com root
 
 - Poderá ter instalada uma aplicação no seu dispositivo que o software de deteção de root pensa ser um risco de segurança. Se vir esta mensagem imediatamente depois de instalar uma aplicação, tente desinstalar essa aplicação.
 
-- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Neste caso, precisa de contactar o administrador de TI para obter ajuda. Para encontrar as informações de contacto, veja o [site do Portal da Empresa](http://portal.manage.microsoft.com).
+- O fabricante do dispositivo instalou software no mesmo que leva o software de deteção de root a pensar ser um risco de segurança. Neste caso, precisa de contactar o suporte da empresa para obter ajuda. Para encontrar as informações de contacto, veja o [site do Portal da Empresa](https://portal.manage.microsoft.com).
 
 Se tiver colocado o seu próprio dispositivo em root, terá de reverter o processo e restaurar o dispositivo novamente para o seu estado normal.

@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -53,7 +53,7 @@ Uma vez que estas capacidades não podem ser geridas na consola do Intune (Silve
 - Desativa-as no portal clássico
 - Ativa-as no portal do Azure  
 
-A partir de 11 de setembro de 2017, a migração destas funcionalidades será intercalada com a migração primária para o Azure. Se a sua conta já foi migrada para utilizar o portal do Azure, esta migração secundária ocorrerá entre 11 e 22 de setembro de 2017. Quando a migração da sua conta começar, será concluída no mesmo dia. A migração poderá demorar até seis horas a partir do momento em que estas funcionalidades são desativadas no portal clássico do Intune.
+A partir de 22 de setembro de 2017, a migração destas funcionalidades será intercalada com a migração primária para o Azure. Se a sua conta já foi migrada para utilizar o portal do Azure, é possível que esta migração secundária já tenha sido concluída. Caso contrário, estas funcionalidades serão migradas para o Azure até novembro. Quando a migração da sua conta começar, será concluída no mesmo dia. A migração poderá demorar até seis horas a partir do momento em que estas funcionalidades são desativadas no portal clássico do Intune.
 
 Se agora pode gerir estas funcionalidades do Intune no portal do Azure, tenha em atenção os seguintes pontos:
 
