@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Criar a política para Windows
           href: compliance-policy-create-windows.md
+        - name: Ações de não conformidade
+          href: actions-for-noncompliance.md
         - name: Monitorizar a conformidade do dispositivo
           href: compliance-policy-monitor.md
     - name: Configurar o acesso condicional
@@ -461,6 +463,8 @@
           href: windows-hello.md
     - name: Gerir funções
       href: role-based-access-control.md
+    - name: Gerir versões de sistemas operativos
+      href: manage-os-versions.md
     - name: Gerir atualizações de software
       href: windows-update-for-business-configure.md
     - name: Gerir PCs com o agente de software
