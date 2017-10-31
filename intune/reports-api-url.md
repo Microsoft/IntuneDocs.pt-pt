@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
 
 Pode utilizar a API do Armazém de Dados do Intune com uma conta com controlos de acesso baseados em funções específicos e credenciais do Azure AD. Em seguida, irá autorizar o seu cliente REST com o Azure AD ao utilizar o OAuth 2.0. Por fim, irá formar um URL significativo para chamar um recurso do armazém de dados.
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Requisitos de credenciais do Azure AD e do Intune
-
-A autenticação e a autorização são baseadas nas credenciais do Azure AD e no controlo de acesso baseado em funções (RBAC) do Intune. Todos os administradores globais e administradores de serviço do Intune do seu inquilino têm acesso à API por predefinição. Utilize as funções do Intune para fornecer acesso a mais utilizadores ao oferecer-lhes acesso ao **Recurso de relatórios**.
-
-Os requisitos para aceder à API são:
-
-  -  A licença do Intune tem de estar atribuída ao utilizador
-  -  O utilizador tem de ser um dos seguintes:
-      -  Administrador global do Azure AD
-      -  Um administrador de serviços do Intune
-      -  Utilizador com acesso baseado em funções ao recurso de **Relatórios**
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Autorização
 
@@ -64,4 +54,4 @@ A versão atual da API é: `beta`.
 
 ## <a name="odata-query-options"></a>Opções de consulta de OData
 
-A versão atual suporta os seguintes parâmetros de consulta de OData: `$skip, $top, $filter, $orderby`.
+A versão atual suporta os seguintes parâmetros de consulta de OData: `$filter, $orderby, $select, $skip,` e `$top`.

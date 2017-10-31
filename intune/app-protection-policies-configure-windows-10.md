@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52b273532935184918e65d25a37ca3d03e76680c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10
 
@@ -54,6 +54,9 @@ Antes de criar uma política de proteção de aplicações do Windows 10, tem d
 
 5.  Depois de configurar estas definições, escolha **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+> [!NOTE]
+> Os dispositivos com um estado de inscrição MAM têm de estar associados ao Azure AD.
+
+## <a name="next-steps"></a>Passos seguintes
 
 [Criar uma política de proteção de aplicações WIP](windows-information-protection-policy-create.md)

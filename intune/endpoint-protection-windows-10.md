@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 19c20ac5dd73b45dc06d1df6a7d08cc6bac42982
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
+ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
 
@@ -28,6 +28,9 @@ ms.lasthandoff: 09/15/2017
 O perfil de proteção de ponto final permite-lhe controlar as funcionalidades de segurança em dispositivos com o Windows 10, como o BitLocker e o Windows Defender.
 
 Utilize as informações neste tópico para saber como criar perfis de proteção de ponto final.
+
+> [!Note]
+> Estas definições não são suportadas nas edições Home e Professional do Windows 10.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Criar um perfil de proteção de ponto final
 
@@ -73,7 +76,7 @@ O perfil é criado e apresentado no painel da lista de perfis.
     - **PIN de arranque do TPM** – configure se utilizar um PIN de arranque do TPM é permitido, não permitido ou exigido.
     - **Chave de arranque do TPM** – configure se utilizar uma chave de arranque do TPM é permitido, não permitido ou exigido.
     - **Chave e PIN de arranque do TPM** – configure se utilizar uma chave e PIN de arranque do TPM é permitido, não permitido ou exigido.
-- **Comprimento Mínimo do PIN ** – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
+- **Comprimento Mínimo do PIN**  – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
     - **Carateres mínimos** – introduza o número de carateres necessários para o PIN de arranque de **4**-**20**.
 - **Ativar a recuperação da unidade de SO** – ative esta definição para controlar a forma como as unidades de sistema operativo protegidas pelo BitLocker são recuperadas quando as informações de arranque necessárias não estão disponíveis.
     - **Agente de recuperação de dados baseada em certificados** – ative esta definição se quiser que os agentes de recuperação de dados possam ser utilizados com as unidades de sistema operativo protegidas pelo BitLocker.

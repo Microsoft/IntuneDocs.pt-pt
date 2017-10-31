@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalar a Defesa Contra Ameaças para Dispositivos Móveis no seu dispositivo iOS
 
@@ -31,6 +31,17 @@ Para poder aceder ao seu trabalho, o suporte da sua empresa precisa de instalar 
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**Se a instalação não funcionar**
+## <a name="additional-information-your-company-can-see"></a>Informações adicionais que a sua empresa pode ver
+
+A Defesa Contra Ameaças a Dispositivos Móveis é uma forma de as empresas se certificarem de que os seus dispositivos estão seguros contra aplicações que podem tentar roubar informações empresariais. Para adicionar esta proteção, é necessário comunicar informações adicionais sobre as aplicações nos seus dispositivos ao serviço de Defesa Contra Ameaças a Dispositivos Móveis que a sua empresa estiver a utilizar. A sua empresa não pode ver os dados nas suas aplicações pessoais. Todas as aplicações no seu dispositivo são adicionadas [ao que a sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) quando utilizam o serviço de Defesa Contra Ameaças a Dispositivos Móveis. Estas são as partes da aplicação que a sua empresa vê:
+
+*   Nome da aplicação
+* ID da aplicação: o nome exclusivo que identifica a aplicação na App Store
+*   A versão da aplicação e o número da versão abreviado: os números de lançamento específicos de uma aplicação
+* O tamanho dinâmico e a coleção de pacotes da aplicação: a quantidade de espaço que a aplicação utiliza no seu dispositivo
+* Validade da aplicação: se a aplicação foi aprovada para utilização
+*   Estado de gestão da aplicação: se a aplicação é gerida pela sua empresa ou se é uma aplicação pessoal
+
+## <a name="if-the-installation-doesnt-work"></a>Se a instalação não funcionar
 
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).

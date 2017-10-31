@@ -5,7 +5,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 502ee0f3107d197537f7f9ab3b2888246bbca1d3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 36ef93bb3894083e3db3732faddea6f926831ac6
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Definições da política para Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -38,7 +38,7 @@ Utilize a **política de configuração geral para Android** do Intune para conf
 -   **Aplicações conformes e não conformes** – especifique uma lista de aplicações que são conformes ou não conformes na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Conformes** pode ser utilizado para ver a conformidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores. Na verdade, o relatório não pode bloquear a instalação da aplicação.
 
 > [!TIP]
-> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que todas as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não conformes serão bloqueadas ou comunicadas como não conformes. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que todas as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não conformes serão bloqueadas ou comunicadas como não conformes. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, veja [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Se a definição que procura não for apresentada neste tópico, poderá conseguir criá-la através de uma política personalizada para Android que lhe permita utilizar definições OMA-URI para controlar o dispositivo. Para obter mais informações, consulte [Definições de política personalizada](#custom-policy-settings) mais adiante neste tópico.
 
@@ -181,7 +181,7 @@ Exemplo: procure Microsoft Office Mobile no Google Play. O URL a utilizar será 
 Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
 Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
-Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para saber quais as políticas que pode configurar.
+Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Veja os exemplos neste tópico para saber quais as políticas que pode configurar.
 
 ### <a name="general-settings"></a>Definições gerais
 
@@ -210,61 +210,7 @@ Atualmente, o Intune suporta um número limitado de políticas personalizadas do
 
 A aplicação Portal da Empresa tenta apenas a ativação do Samsung KNOX durante a inscrição MDM se o dispositivo for apresentado na [lista de dispositivos KNOX suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Isto ajuda a evitar erros de ativação de KNOX que impedem a inscrição MDM. Os dispositivos que não suportam a ativação do Samsung KNOX são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o KNOX, enquanto outros não. Verifique a compatibilidade com o KNOX junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
 
-A seguinte lista de modelos de dispositivos Samsung não suporta KNOX e são inscritos como dispositivos Android nativos pela aplicação Portal da Empresa para Android:
+Pode encontrar uma lista de dispositivos Samsung KNOX suportados, juntamente com a lista de [dispositivos suportados pelo Intune](/intune/supported-devices-browsers.md#intune-supported-devices).
 
-| **Nome do dispositivo** | **Números de modelo do dispositivo** |
-| --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
-| Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
-| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
-| Galaxy Core Lite | SM-G3588V |
-| Galaxy Core Prime | SM-G360H |
-| Galaxy Core LTE | SM-G386F<br>SM-G386W |
-| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
-| Galaxy Grand 3 | SM-G7200 |
-| Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
-| Galaxy Grand Prime Value Edition | SM-G531H |
-| Galaxy J Max | SM-T285YD |
-| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
-| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
-| Galaxy J1 Mini | SM-J105M |
-| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
-| Galaxy K Zoom | SM-C115 |
-| Galaxy Light | SGH-T399N |
-| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
-| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
-| Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
-| Galaxy S2 Plus | GT-I9105P |
-| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
-| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
-| Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
-| Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
-| Galaxy Tab 3 8.0&quot; | SM-T311 |
-| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
-| Galaxy Trend 2 Lite | SM-G318H |
-| Galaxy V Plus | SM-G318HZ |
-| Galaxy Young 2 Duos | SM-G130BU |
-
-
-
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

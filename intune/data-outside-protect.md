@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ae828adff5d159c24e436b35ed480033c54560f
-ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>Impedir o acesso não autorizado a dados da empresa 
 
@@ -25,7 +25,7 @@ Pode classificar, identificar e proteger os documentos e e-mails do Office 365 p
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-O plano de ação seguinte pode ser utilizado quando cumprir os seguintes requisitos:
+O seguinte plano de ação pode ser utilizado se cumprir estes requisitos:
 * A sua empresa está pronta para fazer a transição segura para a cloud.
 * A sua empresa utiliza o Office 365 Exchange Online, SharePoint Online, OneDrive para Empresas ou Yammer.
 * A sua empresa tem licenças do Microsoft 365, Enterprise Mobility + Security (EMS) ou Azure Information Protection.
@@ -40,9 +40,9 @@ Conclua o [tutorial de início rápido do Azure Information Protection](https://
 
 Pode partilhar detalhes [sobre como e quando proteger documentos e e-mails que contêm informações confidenciais](https://docs.microsoft.com/information-protection/deploy-use/help-users).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
 
 * Saiba como utilizar o Azure Information Protection para dispositivos iOS e Android (https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
-* Para Windows Phone e computadores Mac, saiba mais sobre a [Aplicação Microsoft Rights Management SharePoint](https://technet.microsoft.com/dn451248).
+* Para Windows Phone e computadores Mac, saiba mais sobre a [Aplicação de Partilha Microsoft Rights Management](https://technet.microsoft.com/dn451248).
