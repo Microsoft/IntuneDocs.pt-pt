@@ -1,5 +1,5 @@
 ---
-title: "Política | Documentos da Microsoft"
+title: "Política | Microsoft Docs"
 description: "Tópico de referência para a categoria Policy das coleções de entidades na API do Armazém de Dados do Intune."
 keywords: "Armazém de Dados do Intune"
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
@@ -35,14 +35,14 @@ A entidade **Policy** apresenta uma lista de perfis de configuração de disposi
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| PolicyKey |Chave exclusiva para representar a política no armazém de dados |123 |
-| PolicyId |Identificador exclusivo da Política no armazém de dados |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |Nome da Política |"Linha de Base do Windows 10" |
+| PolicyKey |Chave exclusiva para representar a política no armazém de dados. |123 |
+| PolicyId |Identificador exclusivo da Política no armazém de dados. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |Nome da Política. |"Linha de Base do Windows 10" |
 | PolicyVersion |Versão da Política. Quando a política é editada ou alterada, é criada uma versão mais recente. |1, 2, 3 |
-| IsDeleted |Indica se o registo da Política foi atualizado.  True – a política tem um novo registo com campos atualizados. False – o registo mais recente da política. |True/False |
-| StartDateInclusiveUTC |Data e hora em UTC em que a política foi criada no armazém de dados |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |Data e hora em UTC em que a propriedade IsDeleted foi alterada para True |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |Data e hora em UTC em que a política foi modificada pela última vez no armazém de dados |11/23/2016 12:00:00 AM |
+| IsDeleted |Indica se o registo da Política foi atualizado.  <br>True – a política tem um novo registo com campos atualizados. <br>False – o registo mais recente da política. |True/False |
+| StartDateInclusiveUTC |Data e hora em UTC em que a política foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |Data e hora em UTC em que a propriedade IsDeleted foi alterada para True. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |Data e hora em UTC em que a política foi modificada pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ A entidade **PolicyType** apresenta uma lista dos tipos de perfis de configuraç
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| PolicyTypeId |Identificador exclusivo da política no sistema de origem |123 |
-| PolicyTypeKey |Identificador exclusivo da política no armazém de dados |1 |
-| PolicyTypeName |Nome do tipo de política. |Política de Conformidade do Windows 10 |
+| PolicyTypeId |Identificador exclusivo da política no sistema de origem. |123 |
+| PolicyTypeKey |Identificador exclusivo da política no armazém de dados. |1 |
+| PolicyTypeName |Nome do tipo de política. |Política de Conformidade do Windows 10. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do n
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados |20160703 |
-| Pending |Número de Dispositivos exclusivos no estado pendente |123 |
-| Succeeded |Número de Dispositivos exclusivos no estado com êxito |12 |
-| Error |Número de Dispositivos exclusivos no estado com erros |10 |
-| Failed |Número de Dispositivos exclusivos no estado com falhas |2 |
+| DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. |20160703 |
+| Pending |Número de Dispositivos exclusivos no estado pendente. |123 |
+| Succeeded |Número de Dispositivos exclusivos no estado com êxito. |12 |
+| Error |Número de Dispositivos exclusivos no estado com erros. |10 |
+| Failed |Número de Dispositivos exclusivos no estado com falhas. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ A entidade **UserConfigurationProfileDeviceActivity** apresenta uma lista do nú
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados |20160703 |
-| Pending |Número de Utilizadores exclusivos no estado pendente |123 |
-| Succeeded |Número de Utilizadores exclusivos no estado com êxito |12 |
-| Error |Número de Utilizadores exclusivos no estado com erros |10 |
-| Failed |Número de Utilizadores exclusivos no estado com falhas |2 |
+| DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. |20160703 |
+| Pending |Número de Utilizadores exclusivos no estado pendente. |123 |
+| Succeeded |Número de Utilizadores exclusivos no estado com êxito. |12 |
+| Error |Número de Utilizadores exclusivos no estado com erros. |10 |
+| Failed |Número de Utilizadores exclusivos no estado com falhas. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ A entidade **PolicyTypeActivity** apresenta uma lista do número cumulativo de d
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados |20160703 |
-| PolicyKey |A chave de política pode ser acompanhada pela política para obter o policyName |Linha de base do Windows 10 |
-| PolicyTypeKey |O tipo de Chave de Política pode ser acompanhado do Tipo de Política para obter o nome do tipo de política |Política de Conformidade do Windows 10 |
-| Pending |Número de dispositivos exclusivos no estado pendente |123 |
-| Succeeded |Número de dispositivos exclusivos no estado com êxito |12 |
-| Error |Número de dispositivos exclusivos no estado com erros |10 |
-| Fail- |Número de dispositivos exclusivos no estado com falhas |2 |
+| DateKey |Data-chave de quando a entrada do Perfil de configuração do dispositivo foi registada no armazém de dados. |20160703 |
+| PolicyKey |A chave de política pode ser acompanhada pela Política para obter o policyName. |Linha de base do Windows 10 |
+| PolicyTypeKey |O tipo de Chave de Política pode ser acompanhado do Tipo de Política para obter o nome do tipo de política. |Política de Compatibilidade do Windows 10 |
+| Pending |Número de dispositivos exclusivos no estado pendente. |123 |
+| Succeeded |Número de dispositivos exclusivos no estado com êxito. |12 |
+| Error |Número de dispositivos exclusivos no estado com erros. |10 |
+| Fail- |Número de dispositivos exclusivos no estado com falhas. |2 |

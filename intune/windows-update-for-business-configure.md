@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
@@ -26,10 +26,10 @@ ms.lasthandoff: 09/09/2017
 
 O Windows como um Serviço é a maneira ideal de atualizar dispositivos com Windows 10. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Tal significa que, desde que instale a atualização mais recente, sabe que os dispositivos Windows 10 estão completamente atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
 
-Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações para não ter de aprovar atualizações individuais para grupos de dispositivos. Pode continuar a gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações e o Windows Update garante que as atualizações são instaladas no momento certo. O Microsoft Intune permite configurar definições de atualizações nos dispositivos e dá-lhe a capacidade de diferir a instalação de atualizações. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem ao Windows Update diretamente para obterem as atualizações. Utilize o Intune para configurar e gerir **anéis de atualização do Windows 10**. Um anel de atualização contém um grupo de definições que configuram quando e como as atualizações do Windows 10 são instaladas. Por exemplo, pode configurar o seguinte:
+Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações para não ter de aprovar atualizações individuais para grupos de dispositivos. Pode continuar a gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações e o Windows Update garante que as atualizações são instaladas no momento certo. O Microsoft Intune permite configurar definições de atualizações nos dispositivos e dá-lhe a capacidade de diferir a instalação de atualizações. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem diretamente ao Windows Update para obter as atualizações. Utilize o Intune para configurar e gerir **cadências de atualização do Windows 10**. Um anel de atualização contém um grupo de definições que configuram quando e como as atualizações do Windows 10 são instaladas. Por exemplo, pode configurar o seguinte:
 
 - **Servicing Branch do Windows 10**: escolha se pretende que grupos de dispositivos recebam atualizações a partir do Current Branch ou do Current Branch for Business.  
-- **Definições de Diferimento**: configure as definições de diferimento das atualizações para atrasar as instalações de atualizações para grupos de dispositivos. Em seguida, terá uma implementação de atualização faseada para que possa rever o progresso ao longo do processo.
+- **Definições de Diferimento**: configure as definições de diferimento das atualizações para atrasar as instalações de atualizações para grupos de dispositivos. Utilize estas definições para obter uma implementação de atualização faseada para que possa rever o progresso ao longo do processo.
 - **Colocar em pausa**: adie a instalação de atualizações se detetar um problema em qualquer momento durante a implementação das atualizações.
 - **Janela de manutenção**: configure as horas nas quais as atualizações possam ser instaladas.
 - **Tipo de atualização**: escolha os tipos de atualizações que são instaladas. Por exemplo, Atualizações de Qualidade, Atualizações de Funcionalidades ou controladores.
@@ -67,7 +67,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
   > [!NOTE]
   > As definições das atualizações do Windows 10 criadas no portal clássico não são apresentadas no portal do Azure após a migração. No entanto, estas definições continuam a ser aplicadas. Se tiver migrado qualquer uma destas definições e editar a política migrada a partir do portal do Azure, estas definições serão removidas da política.
 
-2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a um anel de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma definição está configurada com valores diferentes, existirá um conflito e não haverá uma forma fácil de saber por que motivo a definição configurada no portal clássico não é apresentada no portal do Azure.
+2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a um anel de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma definição está configurada com valores diferentes, existe um conflito e não haverá uma forma fácil de saber por que motivo a definição configurada no portal clássico não é apresentada no portal do Azure.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Como criar e atribuir anéis de atualização
 
@@ -78,7 +78,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 5. No painel que apresenta a lista de anéis de atualização, escolha **Criar**.
 6. No painel **Criar Anel de Atualização**, indique um nome e uma descrição opcional para o anel de atualização e, em seguida, escolha **Definições**.
 7. No painel **Definições**, configure as informações seguintes:
-    - **Servicing branch**: defina o ramo para o qual o dispositivo irá receber atualizações do Windows (Current Branch ou Current Branch for Business).
+    - **Servicing branch**: defina o ramo para o qual o dispositivo recebe atualizações do Windows (Current Branch ou Current Branch for Business).
     - **Atualizações da Microsoft**: escolha se pretende procurar atualizações da aplicação no Microsoft Update.
     - **Controladores do Windows**: escolha se pretende excluir controladores do Windows Update durante as atualizações.
     - **Comportamento da atualização automática**: escolha como pretende gerir o comportamento da atualização automática para procurar, transferir e instalar atualizações. Para obter mais detalhes, veja [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -103,14 +103,35 @@ O novo anel de atualização é apresentado na lista de anéis de atualização.
 2. No separador seguinte, escolha **Selecionar grupos** e, em seguida, selecione os grupos para os quais pretende atribuir este anel.
 3. Quando tiver terminado, selecione **Selecionar** para concluir a atribuição.
 
-
-
 ## <a name="update-compliance-reporting"></a>Relatórios de conformidade de atualização
+Pode ver a conformidade de atualizações no Intune ou através de uma solução gratuita no Operations Management Suite (OMS) denominada Conformidade de Atualizações.
+
+### <a name="review-update-compliance-in-intune"></a>Rever a conformidade de atualizações no Intune 
+<!-- 1352223 -->
+Reveja um relatório das políticas para ver o estado de implementação das cadências de atualização do Windows 10 que configurou. 
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+3. No painel **Intune**, escolha **Atualizações de Software**.
+4. No painel **Atualizações de Software**, selecione **Descrição Geral**. Aqui, poderá ver informações gerais sobre o estado de qualquer cadência de atualização que atribuiu.
+5. Abra um dos seguintes relatórios: 
+     
+   **Para todas as cadências de implementação:**
+   1. Em **Atualizações de software** > painel **Cadências de Atualização do Windows 10**. 
+   2. Na secção **Monitorizar**, selecione **Por estado de implementação da cadência de atualização**.
+                   
+   **Para cadências de implementação específicas:** 
+   1. Em **Atualizações de software** > painel **Cadências de Atualização do Windows 10**, selecione a cadência de implementação a analisar.
+   2. Na secção **Monitorizar**, selecione um dos seguintes relatórios para ver informações mais detalhadas sobre a cadência de atualização:
+      - **Implementação da cadência de atualização para dispositivos**
+      - **Implementação da cadência de atualização para utilizadores**
+      - **Estado da implementação por definição**
+
+### <a name="review-update-compliance-using-oms"></a>Rever a conformidade de atualizações com o OMS
 Pode monitorizar as implementações de atualizações do Windows 10 através de uma solução gratuita no Operations Management Suite (OMS) denominada Compatibilidade da Atualização. Para obter mais detalhes, veja [Monitor Windows Updates with Update Compliance (Monitorizar Atualizações do Windows com a Compatibilidade da Atualização)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando utiliza esta solução, pode implementar um ID comercial em qualquer um dos seus dispositivos com o Windows 10 geridos pelo Intune para os quais pretende gerar relatórios sobre a compatibilidade da atualização.
 
 Na consola do Intune, pode utilizar as definições de OMA-URI de uma política personalizada para configurar o ID comercial. Para obter mais detalhes, veja [Definições de política do Intune para dispositivos com o Windows 10 no Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-O caminho do OMA-URI (sensível às maiúsculas e minúsculas) para configurar o ID comercial é: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+O caminho do OMA-URI (sensível às maiúsculas e minúsculas) para configurar o ID comercial é: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou editar OMA-URI**:
 
@@ -122,25 +143,13 @@ Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou ed
 
 ![Definição do Windows para os dados de diagnóstico e utilização](./media/commID.png)
 
-<!--
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-4. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
--->
-
-
-
-
-
 ## <a name="how-to-pause-updates"></a>Como colocar atualizações em pausa
 Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atualizações de Qualidade num dispositivo durante um período máximo de 35 dias desde o momento em que colocou as atualizações em pausa. Após ter decorrido o número máximo de dias, a funcionalidade de pausa irá automaticamente expirar e o dispositivo irá procurar atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente.
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Atualizações de Software**.
 4. No painel **Atualizações de Software**, escolha **Gerir** > **Anéis de Atualização do Windows 10**.
-5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **... ** > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
+5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **...**  > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
 
 > [!IMPORTANT]
 > Quando emitir um comando de pausa, os dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo.

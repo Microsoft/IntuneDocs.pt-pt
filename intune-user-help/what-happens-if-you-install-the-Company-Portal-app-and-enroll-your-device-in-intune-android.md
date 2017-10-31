@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/30/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 053f6449ebe3a4ad375c51d7bbc4ccc9709fdcf7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Android no Intune?
 
@@ -44,7 +44,7 @@ Ao inscrever o seu dispositivo Android, dá permissão ao suporte da empresa par
 
 -   O administrador de TI pode exigir que aceite os termos e condições.
 
--   Desativar a câmara (apenas em dispositivos Samsung KNOX, não em dispositivos Nexus) para o impedir de tirar fotografias de material de trabalho confidencial que não deve ser partilhado.
+-   Desativar a câmara para o impedir de tirar fotografias de material de trabalho confidencial que não deve ser partilhado.
 
 -   Exigir que todos os dados no dispositivo sejam encriptados para ajudar a proteger os mesmos em caso de perda ou roubo do dispositivo.
 

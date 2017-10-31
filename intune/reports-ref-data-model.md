@@ -1,5 +1,5 @@
 ---
-title: "Modelo de dados do Armazém de Dados | Documentos da Microsoft"
+title: "Modelo de dados do Armazém de Dados | Microsoft Docs"
 description: "O Armazém de Dados do Intune copia dados diariamente para fornecer uma apresentação do histórico do seu ambiente móvel em contínua mudança."
 keywords: "Armazém de Dados do Intune"
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9257af29c65dbe27667738abc8ee06203177124f
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados
 
@@ -44,6 +44,7 @@ Os conjuntos de entidades chamam-se coleções de entidades no modelo de dados. 
   -  [Devices](reports-ref-devices.md)
   -  [Application](reports-ref-application.md)
   -  [Policy](reports-ref-policy.md)
+  -  [Associação de dispositivo do utilizador](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 
