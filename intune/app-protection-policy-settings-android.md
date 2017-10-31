@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações Android
 As definições de políticas descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -86,3 +86,8 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após alguns dias (definidos pelo administrador) de execução offline, a aplicação pedirá ao utilizador para estabelecer ligação à rede e voltar a efetuar a autenticação. Se o utilizador for autenticado com êxito, este poderá continuar a aceder aos seus dados e o intervalo offline será reposto.  Se a autenticação do utilizador falhar, a aplicação irá efetuar uma eliminação seletiva da conta e dos dados dos utilizadores.  Veja [Como eliminar apenas dados empresariais de aplicações geridas pelo Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obter mais informações sobre o tipo de dados que são removidos numa eliminação seletiva.<br><br> | 90 dias |
 | **Bloquear captura de ecrã e Android Assistant (Android 6.0+)** | Selecione **Sim** para bloquear a captura de ecrã e as capacidades do **Android Assistant** do dispositivo quando utilizar esta aplicação. Selecionar **Sim** também desfocará a imagem de pré-visualização do comutador da aplicação quando utilizar esta aplicação com uma conta escolar ou profissional. | Não |
 | **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
+| **Exigir sistema operativo Android mínimo** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O acesso do utilizador será bloqueado se a versão Android no dispositivo não cumprir os requisitos. | Não |
+| **Exigir sistema operativo Android mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão Android no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada. | Não |
+| **Exigir versão mínima da aplicação** | Escolha **Sim** para exigir uma versão mínima para utilizar a aplicação. O acesso do utilizador será bloqueado se a versão da aplicação no dispositivo não cumprir os requisitos.<br><br>Quando selecionar as aplicações de destino, tenha em atenção que as aplicações têm, muitas vezes, esquemas de controlo de versões distintos entre si.<br><br> | Não | 
+| **Exigir versão mínima da aplicação (apenas aviso)** | Escolha **Sim** para recomendar uma versão mínima para utilizar esta aplicação. O utilizador verá uma notificação se a versão da aplicação no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br>Quando selecionar as aplicações de destino, tenha em atenção que as aplicações têm, muitas vezes, esquemas de controlo de versões distintos entre si.<br><br> | Não | 
+
