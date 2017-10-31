@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android for Work no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Definições de perfil de trabalho
-- **Partilha de dados entre perfis de trabalho e perfis pessoais** – utilize esta definição para controlar se as aplicações no perfil de trabalho podem partilhar dados com as aplicações no perfil pessoal. Esta definição controla ações de partilha nas aplicações (por exemplo, a opção **Partilha...** na aplicação do browser Chrome) e não se aplica ao comportamento copiar/colar na área de transferência. Ao contrário das [definições de política de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as definições de restrição de dispositivos são geridas no portal do Azure e utilizam a partição do perfil Android for Work para isolar as aplicações geridas. Escolha entre:
+-   **Copiar e colar entre perfis pessoais e perfis de trabalho** – controla as ações de copiar e colar entre aplicações pessoais e aplicações de trabalho. Selecione **Bloquear** para ativar o bloqueio. Selecione **Não configurado** para desativar o bloqueio.
+- **Partilha de dados entre perfis de trabalho e perfis pessoais** – utilize esta definição para controlar se as aplicações no perfil de trabalho podem partilhar dados com as aplicações no perfil pessoal. Esta definição controla ações de partilha nas aplicações (por exemplo, a opção **Partilha...** na aplicação do browser Chrome) e não se aplica ao comportamento copiar/colar na área de transferência. Ao contrário das [definições de política de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as definições de restrição de dispositivos são geridas no portal do Intune e utilizam a partição do perfil Android for Work para isolar as aplicações geridas. Escolha entre:
     - **Restrições de partilha predefinidas** – esta definição é o comportamento de partilha predefinido do dispositivo, que varia consoante a versão do Android que está em execução. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. A Google não proporciona uma forma de bloquear a partilha do perfil pessoal para o perfil de trabalho em dispositivos com versões 6.0 e posteriores.   
     - **As aplicações no perfil de trabalho podem processar o pedido de partilha do perfil pessoal** – utilize esta opção para ativar a funcionalidade do Android incorporada que permite a partilha do perfil pessoal para o perfil de trabalho. Quando ativada, um pedido de partilha de uma aplicação no perfil pessoal pode partilhar com aplicações no perfil de trabalho. Esta definição é o comportamento predefinido para dispositivos Android com versões anteriores à 6.0.
     - **Permitir partilha entre limites** – ativa a partilha entre limites do perfil de trabalho em ambas as direções. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Utilize esta definição com cuidado, uma vez que permite que aplicações geridas no perfil de trabalho sejam partilhadas com aplicações no lado não gerido do dispositivo.
@@ -78,6 +79,6 @@ ms.lasthandoff: 09/15/2017
 - **Desbloqueio por impressão digital** –impede um utilizador final de utilizar a deteção de impressão digital do dispositivo para o desbloquear.
 - **Smart Lock e outros agentes de fidedignidade** – permite-lhe controlar a funcionalidade Smart Lock em dispositivos compatíveis. Esta funcionalidade de telefone, por vezes conhecida como agente de confiança, permite desativar ou ignorar a palavra-passe de bloqueio do ecrã do dispositivo se o dispositivo estiver numa localização fidedigna (por exemplo, quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC). Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Utilize as informações no tópico [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para guardar e atribuir o perfil a utilizadores e dispositivos.

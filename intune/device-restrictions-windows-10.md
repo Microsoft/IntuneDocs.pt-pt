@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -64,7 +64,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
     -   **Impedir a reutilização de palavras-passe anteriores** – Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.
     -   **Exigir palavra-passe quando o dispositivo regressa do estado de inatividade (apenas para dispositivos móveis)** – Especifica que o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo (apenas no Windows 10 Mobile).
     -   **Palavras-passe simples** – permite a utilização de palavras-passe simples, como 1111 e 1234. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
--   **Encriptação** – Ative a encriptação em dispositivos visados (apenas no Windows 10 Mobile).
+-   **Encriptação** – Ative a encriptação nos dispositivos visados.
 
 ## <a name="personalization"></a>Personalização
 
@@ -88,9 +88,9 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 
 
-## <a name="app-store"></a>App Store
+## <a name="app-store"></a>Loja de Aplicações
 
--   **App Store (apenas dispositivos móveis)** – Permita ou bloqueie a utilização da loja de aplicações em dispositivos Windows 10 Mobile.
+-   **Loja de aplicações (apenas dispositivos móveis)** – Permita ou bloqueie a utilização da loja de aplicações em dispositivos Windows 10 Mobile.
 -   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Microsoft sejam atualizadas automaticamente.
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
@@ -188,7 +188,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 -   **Network Inspection System (NIS)** – o NIS ajuda a proteger os dispositivos contra exploits baseados na rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
 -   **Analisar todas as transferências** – Controla se o Defender analisa todos os ficheiros transferidos da Internet.
 -   **Analisar scripts carregados em browsers da Microsoft** – Permite que o Defender analise scripts que são utilizados no Internet Explorer.
--   **Acesso do utilizador final ao Defender ** – Controla se a interface de utilizador do Windows Defender está ocultada dos utilizadores finais.
+-   **Acesso do utilizador final ao Defender**  – Controla se a interface de utilizador do Windows Defender está ocultada dos utilizadores finais.
 Quando esta definição for alterada, será aplicada da próxima vez que o PC do utilizador final for reiniciado.
 -   **Intervalo de atualização de assinatura (em horas)** – especifique o intervalo no qual o Defender verifica a existência de novos ficheiros de assinatura.
 -   **Monitorizar a atividade dos ficheiros e programas** – Permite que o Defender monitorize a atividade de ficheiros e programas nos dispositivos.

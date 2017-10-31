@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -58,7 +58,7 @@ Crie uma aplicação nativa no Azure. Esta aplicação nativa é a aplicação c
 
 Agora tem uma aplicação definida no Azure. Conceda acesso à API do Microsoft Intune a partir da aplicação nativa.
 
-1.  Clique na aplicação nativa. Atribuiu um nome à aplicação, como Cliente do Armazém de Dados do Intune.
+1.  Clique na aplicação nativa. Atribuiu um nome à aplicação, como **Cliente do Armazém de Dados do Intune**.
 2.  Clique em **Permissões obrigatórias** a partir do painel **Definições**
 3.  Clique em **Adicionar** no painel **Permissões obrigatórias**.
 4.  Clique em **Selecionar uma API**.
@@ -137,7 +137,7 @@ Para obter um novo token de acesso do Postman, tem de adicionar o URL de autoriz
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Enviar a chamada para o ponto final através do Postman
 
-1.  Clique em **Send (Enviar)**.
+1.  Clique em **Enviar**.
 2.  Os dados devolvidos são apresentados no corpo de resposta do Postman.
 
     ![Postman 200OK](media\reports-postman_200OK.png)
@@ -152,14 +152,14 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 1.  Abra o **Microsoft Visual Studio**.
 2.  Selecione **Ficheiro** > **Novo Projeto**. Expanda o **Visual C#** e selecione **Aplicação de Consola (.Net Framework)**. 
 3.  Atribua o nome ` IntuneDataWarehouseSamples` ao projeto, navegue até ao local onde pretende guardar o projeto e, em seguida, clique em **OK**.
-3.  Clique com o botão direito do rato no nome da solução no Explorador de Soluções e, em seguida, selecione **Manage NuGet Packages for Solution (Gerir Pacotes NuGet para Solução)**. Clique em **Procurar** e, em seguida, escreva "Microsoft.IdentityModel.Clients.ActiveDirectory" na caixa de pesquisa.
-4. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Manage Packages for Your Solution (Gerir Pacotes da Sua Solução) e, em seguida, clique em **Instalar**. 
-5. Clique em **Aceito** para aceitar a licença do pacote NuGet.
-6. Abra o `Program.cs` a partir do Explorador de Soluções.
+4.  Clique com o botão direito do rato no nome da solução no Explorador de Soluções e, em seguida, selecione **Manage NuGet Packages for Solution (Gerir Pacotes NuGet para Solução)**. Clique em **Procurar** e, em seguida, escreva `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
+5. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Manage Packages for Your Solution (Gerir Pacotes da Sua Solução) e, em seguida, clique em **Instalar**. 
+6. Clique em **Aceito** para aceitar a licença do pacote NuGet.
+7. Abra o `Program.cs` a partir do Explorador de Soluções.
 
     ![Projeto no Visual Studio](media\reports-get_rest_data_in.png)
 
-7.  Substitua o código no Program.cs pelo seguinte:  
+8.  Substitua o código no Program.cs pelo seguinte:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,14 +214,14 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Atualize o `TODO` no exemplo de código.
-9.  Prima **Ctrl+F5** para criar e executar o cliente Intune.DataWarehouseAPIClient em Modo de Depuração.
+9.  Atualize o `TODO` no exemplo de código.
+10.  Prima **Ctrl+F5** para criar e executar o cliente Intune.DataWarehouseAPIClient em Modo de Depuração.
 
     ![A entidade Data foi obtida no formato JSON.](media\reports-get_rest_data_output.png)
 
-10.  Reveja o resultado da consola. O resultado inclui dados num formato JSON retirados da entidade **Datas** no seu inquilino do Intune.
+11.  Reveja o resultado da consola. O resultado inclui dados num formato JSON retirados da entidade **Datas** no seu inquilino do Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Pode encontrar detalhes sobre a autorização, a estrutura do URL da API e os pontos finais OData em [Use the Intune Data Warehouse API (Utilizar a API do Armazém de Dados do Intune)](reports-api-url.md). 
 

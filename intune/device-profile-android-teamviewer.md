@@ -1,12 +1,12 @@
 ---
-title: Como administrar remotamente dispositivos Android com o TeamViewer
+title: Como administrar remotamente dispositivos com o TeamViewer
 titlesuffix: Azure portal
-description: Saiba como administrar remotamente dispositivos Android com o TeamViewer."
+description: Saiba como administrar remotamente dispositivos com o TeamViewer.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,29 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a6286760e1e49cdb090736e9444fe8ce18ddeb7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 8bb3061baf42b011c98cf7b196e939448f91cff4
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
-# <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Fornecer assistência remota em dispositivos Android geridos no Intune
+# <a name="provide-remote-assistance-for-intune-managed-devices"></a>Fornecer assistência remota em dispositivos geridos no Intune
 
-O Intune pode utilizar o software [TeamViewer](https://www.teamviewer.com) (adquirido separadamente) para lhe permitir disponibilizar assistência remota a utilizadores com dispositivos Android. Utilize as informações neste tópico para começar.
+O Intune pode utilizar o software [TeamViewer](https://www.teamviewer.com) (adquirido separadamente) para lhe permitir disponibilizar assistência remota a utilizadores de dispositivos que gere. Utilize as informações neste tópico para começar.
 
 ## <a name="before-you-start"></a>Antes de começar
+
+### <a name="supported-devices"></a>Dispositivos suportados
+
+Os seguintes dispositivos geridos no Intune suportam a administração remota:
+
+- Dispositivos Android geridos no Intune
+- Dispositivos com o Windows 10, Windows 10 Mobile e posterior geridos no Intune.
+
+>[!NOTE]
+>O Windows Holographic (HoloLens), o Windows Team (Surface Hub) e o Windows 10 S não são suportados pelo software TeamViewer
+
+
 
 ### <a name="required-permissions"></a>Permissões necessárias
 
@@ -38,7 +50,7 @@ Confirme que o utilizador do portal do Azure tem as seguintes permissões atribu
 
 ### <a name="configure-the-intune-teamviewer-connector"></a>Configurar o conector do TeamViewer no Intune
 
-Antes de poder fornecer assistência remota a dispositivos Android, tem de configurar o conector do TeamViewer no Intune através dos seguintes passos:
+Antes de poder fornecer assistência remota a dispositivos, tem de configurar o conector do TeamViewer no Intune através dos seguintes passos:
 
 
 1. Inicie sessão no portal do Azure.
@@ -50,22 +62,22 @@ Antes de poder fornecer assistência remota a dispositivos Android, tem de confi
 7. É aberta uma página da Web para o site do TeamViewer. Introduza as suas credenciais de licença do TeamViewer e, em seguida, clique em **Iniciar Sessão**.
 
 
-## <a name="how-to-remotely-administer-an-android-device"></a>Como administrar remotamente um dispositivo Android
+## <a name="how-to-remotely-administer-a-device"></a>Como administrar remotamente um dispositivo
 
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Dispositivos**.
 4. No painel **Dispositivos**, escolha **Gerir** > **Todos os dispositivos**.
 5. Selecione o dispositivo que deseja administrar remotamente e, em seguida, no painel de propriedades do dispositivo, escolha **Mais** > **Nova Sessão de Assistência Remota**.
-6. Quando o Intune estiver ligado ao serviço do TeamViewer, verá algumas informações sobre o dispositivo Android. Escolha **Ligar** para iniciar a sessão remota.
+6. Quando o Intune estiver ligado ao serviço do TeamViewer, verá algumas informações sobre o dispositivo. Escolha **Ligar** para iniciar a sessão remota.
 
-![Janelas do TeamViewer para Android](./media/android-teamviewer.png)
+![Exemplo do TeamViewer para Android](./media/android-teamviewer.png)
 
-Na janela do TeamViewer, pode executar uma variedade de ações remotas no dispositivo Android, incluindo o controlo remoto do dispositivo. Para obter detalhes completos das ações que pode executar, veja a [documentação do TeamViewer](https://www.teamviewer.com/support/documents/).
+Na janela do TeamViewer, pode executar uma variedade de ações remotas no dispositivo, incluindo o controlo remoto do dispositivo. Para obter detalhes completos das ações que pode executar, veja a [documentação do TeamViewer](https://www.teamviewer.com/support/documents/).
 
 Quando terminar, feche a janela do TeamViewer.
 
-## <a name="end-user-notifications"></a>Notificações de utilizador final
+## <a name="next-steps"></a>Passos seguintes
 
 Um utilizador final verá um sinalizador de notificação no ícone da aplicação Portal da Empresa no respetivo dispositivo e uma notificação ao abrir a aplicação. Em seguida, pode aceitar o pedido de assistência remota.
 
