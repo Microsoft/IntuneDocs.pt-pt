@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Monitorizar aplicações
           href: apps-monitor.md
-        - name: Perfis de configuração de aplicações iOS
-          href: app-configuration-policies-use-ios.md
-        - name: Perfis de configuração de aplicações Android
-          href: app-configuration-policies-use-android.md
+        - name: Políticas de configuração de aplicações
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS dispositivos geridos
+              href: app-configuration-policies-use-ios.md
+            - name: Android dispositivos geridos
+              href: app-configuration-policies-use-android.md
+            - name: Aplicações geridas
+              href: app-configuration-policies-managed-app.md
         - name: Utilizar perfis de aprovisionamento de aplicações iOS
           href: app-provisioning-profile-ios.md
         - name: Eliminação seletiva de aplicações
@@ -290,7 +295,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: Windows 8.1
+            - name: 'Windows 8,1'
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -322,7 +327,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: Windows 8.1
+            - name: 'Windows 8,1'
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
