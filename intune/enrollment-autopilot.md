@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Inscrever dispositivos Windows com o Programa Windows AutoPilot Deployment
 O Programa Windows AutoPilot Deployment simplifica o aprovisionamento de dispositivos. Hoje em dia, a criação e manutenção de imagens de sistema operativo personalizadas é algo que demora bastante tempo. Também poderá demorar bastante tempo a aplicar estas imagens de sistema operativo personalizadas a novos dispositivos para prepará-las para utilização antes de as fornecer aos seus utilizadores finais. Com o Microsoft Intune e o AutoPilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos AutoPilot, pode gerir políticas, perfis, aplicações, entre outros, nos dispositivos após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -47,13 +47,16 @@ Os perfis de implementação do AutoPilot são utilizados para configurar os dis
    - **Definições de privacidade**: selecione se pretende apresentar definições de privacidade aos utilizadores. 
    - **Contrato de licença do utilizador final (EULA)**: selecione se pretende apresentar o EULA aos utilizadores.
    - **Tipo de conta de utilizador**: selecione se o tipo de conta de utilizador é um **Administrador** ou utilizador **Padrão**.
+
+     > [!Note]    
+     > Esta definição não se aplica a contas de Administrador Global ou de Administrador da Empresa. Estas contas não podem ser de utilizadores padrão porque têm acesso a todas as funcionalidades administrativas no Azure AD.
 8. Clique em **Criar** para criar o perfil. O perfil de implementação do AutoPilot está agora disponível para atribuir a dispositivos.
      
-   > [!Note]    
-   > As seguintes definições estão configuradas com todos os perfis de implementação do AutoPilot:
-   > - Ignorar páginas de configuração de registo do OEM, Cortana e OneDrive
-   > - Configuração automática para trabalho ou escola
-   > - Experiência de início de sessão com marca escolar ou empresarial    
+> [!Note]    
+> As seguintes definições estão configuradas com todos os perfis de implementação do AutoPilot:
+> - Ignorar páginas de configuração de registo do OEM, Cortana e OneDrive
+> - Configuração automática para trabalho ou escola
+> - Experiência de início de sessão com marca escolar ou empresarial    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Atribuir um perfil de implementação do AutoPilot
 Após a criação de perfis de implementação do AutoPilot, poderá atribui-los a dispositivos selecionados.
@@ -92,5 +95,5 @@ Se não estiver interessado na gestão de dispositivos móveis, poderá utilizar
 - Apresentar alterações a atribuições de perfil efetuadas noutro portal
 - Sincronizar atribuições de perfil efetuadas noutro portal
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Após ter configurado o Windows AutoPilot para dispositivos Windows 10 registados, saiba como gerir esses dispositivos. Para obter mais detalhes, veja [O que é a gestão de dispositivos do Microsoft Intune?](https://docs.microsoft.com/intune/device-management)

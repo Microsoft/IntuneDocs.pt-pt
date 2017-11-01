@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 10/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b77323c30dccf4c8b9e5c692a40aec7389809891
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: b669268073e4484738e93fd2909b905242732664
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -41,6 +41,14 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Pode também
   ### Monitor and troubleshoot
 
 -->   
+
+## <a name="week-of-october-23-2017"></a>Semana de 23 de outubro de 2017
+
+### <a name="intune-apps"></a>Aplicações do Intune
+
+#### <a name="certificate-based-authentication-support-on-the-company-portal-for-ios---1029830--"></a>Suporte para a autenticação baseada em certificados no Portal da Empresa para iOS <!--1029830-->
+Adicionámos o suporte para a autenticação baseada em certificados (CBA) na aplicação Portal da Empresa para iOS. Os utilizadores com CBA devem introduzir o seu nome de utilizador e, em seguida, tocar na ligação "Iniciar sessão com um certificado". A CBA já é suportada na aplicação Portal da Empresa para Android e Windows. Pode obter mais informações na página [Iniciar sessão na aplicação Portal da Empresa](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal).
+
 ## <a name="week-of-october-16-2017"></a>Semana de 16 de outubro de 2017
 
 ### <a name="device-enrollment"></a>Inscrição de dispositivos
@@ -54,8 +62,6 @@ O guia de introdução está disponível em **Inscrição de dispositivos** e fo
 O gráfico da plataforma de dispositivos inscritos do painel **Dispositivos > Descrição Geral** organiza os dispositivos por plataforma, incluindo Android, iOS, macOS, Windows e Windows Mobile.  Os dispositivos com outros sistemas operativos são agrupados em "Outro".  Isto inclui dispositivos fabricados pela Blackberry, NOKIA, entre outros.  
 
 Para saber quais são os dispositivos afetados no seu inquilino, selecione **Gerir > Todos os dispositivos** e, em seguida, utilize o **Filtro** para limitar o campo **SO**.
-
-
 
 ### <a name="device-management"></a>Gestão de dispositivos
 #### <a name="zimperium---new-mobile-threat-defense-partner------954681---"></a>Zimperium – novo parceiro de Defesa Contra Ameaças para Dispositivos Móveis <!-- 954681 -->  
@@ -127,7 +133,7 @@ Pode configurar o Volume Purchase Program (VPP) ao carregar o token VPP. O Intun
 Com esta versão, pode configurar o perfil de trabalho do Android for Work para bloquear as ações de copiar e colar entre aplicações pessoais e de trabalho. Pode encontrar esta nova definição no perfil **Restrições do dispositivo** da Plataforma **Android for Work** em **Definições do perfil de trabalho**.
 
 #### <a name="create-ios-apps-limited-to-specific-regional-apple-app-stores----1281692---"></a>Criar aplicações iOS limitadas a Lojas de Aplicações da Apple regionais específicas <!-- 1281692 -->
-Poderá especificar a região do país durante a criação de uma aplicação gerida pela Apple App Store.
+Poderá especificar a região do país durante a criação de uma aplicação gerida pela Loja de Aplicações da Apple.
 
 > [!Note]  
 > Atualmente, só pode criar aplicações geridas pela Apple App Store que estejam presentes na loja dos E.U.A.
@@ -174,7 +180,7 @@ Os utilizadores finais receberão notificações adicionais a indicar quando a a
 
 Existem mais otimizações para novos elementos da IU que estão ativadas no Android Oreo.  Os utilizadores finais receberão notificações adicionais a indicar quando o Portal da Empresa está a efetuar tarefas em segundo plano, como a obtenção de políticas do serviço do Intune.  Isto aumenta a transparência para os utilizadores finais sobre quando o Portal da Empresa está a efetuar tarefas administrativas no dispositivo.
 
-#### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>Novos comportamentos para a aplicação Portal da Empresa para Android com perfis de trabalho <!---1485783--->
+#### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>Novo comportamentos para a aplicação Portal da Empresa para Android com perfis de trabalho <!---1485783--->
 
 Quando inscreve um dispositivo Android for Work num perfil de trabalho, é a aplicação Portal da Empresa no perfil de trabalho que executa as tarefas de gestão no dispositivo. 
 

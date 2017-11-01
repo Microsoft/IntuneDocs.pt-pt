@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,48 +15,45 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Antes de criar uma política de proteção de aplicações do Windows 10, tem de ativar a gestão de aplicações móveis (MAM) para o Windows 10 ao configurar o fornecedor de MAM no Azure AD. Esta configuração permite-lhe definir o estado de inscrição quando criar uma nova política do Windows Information Protection (WIP) com o Intune.
-
-> [!NOTE]
-> O estado de inscrição pode ser MAM ou gestão de dispositivos móveis (MDM).
-
-## <a name="to-configure-the-mam-provider"></a>Para configurar o fornecedor de MAM
-
-1.  Aceda ao [portal do Azure](https://portal.azure.com/) e inicie sessão com as credenciais do Intune.
-
-2.  No menu à esquerda, escolha **Azure Active Directory**.
-
-    ![Configuração do fornecedor de MAM](./media/mam-provider-sc-1.png)
-
-3.  É apresentado o painel **Azure AD**, escolha **Mobilidade (MDM e MAM)** e, em seguida, clique em **Microsoft Intune**.
-
-    ![Mobilidade de MDM e MAM](./media/mam-provider-sc-1.png)
-
-4.  É apresentado o painel de configuração, escolha primeiro **Restaurar URLs de MAM predefinidos** e, em seguida, configure o seguinte:
-
-    a.  Âmbito do utilizador de MAM: pode utilizar a MAM para proteger dados empresariais num grupo específico de utilizadores que utilizam dispositivos Windows 10 ou todos os utilizadores.
-
-    b.  URL dos termos de utilização da MAM: o URL do ponto final dos termos de licenciamento do serviço MAM. Serve para apresentar o termo do serviço MAM aos utilizadores finais.
-
-    c.  URL de deteção da MAM: este é o URL que os dispositivos procuram quando precisam de aplicar políticas de proteção de aplicações.
-
-    d.  URL de conformidade de MAM:
-
-5.  Depois de configurar estas definições, escolha **Guardar**.
+Ative a gestão de aplicações móveis (MAM) para o Windows 10 ao definir o fornecedor de MAM no Azure AD. Definir um fornecedor de MAM no Azure AD permite-lhe definir o estado de inscrição ao criar uma nova política do Windows Information Protection (WIP) com o Intune. O estado de inscrição pode ser MAM ou gestão de dispositivos móveis (MDM).
 
 > [!NOTE]
 > Os dispositivos com um estado de inscrição MAM têm de estar associados ao Azure AD.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="to-configure-the-mam-provider"></a>Para configurar o fornecedor de MAM
+
+1. Inicie sessão no portal do Azure e selecione **Azure Active Directory.**
+
+2. Selecione **Mobilidade (MDM e MAM)** no grupo **Gerir**.
+
+3. Clique em **Microsoft Intune**.
+
+4. Configure as definições no grupo **Restaurar URLs MAM predefinidos** no painel **Configurar**.
+
+    **Âmbito de utilizador MAM**  
+      Utilize a inscrição automática MAM para gerir dados empresariais nos dispositivos Windows dos seus funcionários. A inscrição automática MAM será configurada para cenários de Bring Your Own Device.<ul><li>**Nenhum**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li><li>**Alguns**<br>Selecione grupos do Azure AD que contenham utilizadores que serão inscritos na MAM.</li><li>**Todos**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li></ul>
+
+    **URL dos termos de utilização da MAM**  
+     O URL do ponto final dos termos de utilização da MAM. O ponto final dos termos de utilização é utilizado para apresentar os termos de serviço aos utilizadores finais antes de inscrever os respetivos dispositivos para gestão. O texto dos termos de utilização informa os utilizadores sobre as políticas impostas ao dispositivo móvel.
+
+    **URL de deteção da MAM**  
+    O URL do ponto final de inscrição da MAM. O ponto final de inscrição é utilizado para inscrever dispositivos para gestão com a MAM.
+
+    **URL de conformidade da MAM**  
+      O URL do ponto final de conformidade da MAM. Se um utilizador de um dispositivo não conforme for impedido de aceder a um recurso, é apresentada uma ligação para o URL de conformidade ao mesmo. Os utilizadores podem aceder a este URL alojado pela MAM para saberem o motivo do dispositivo ser considerado não conforme. Os utilizadores também podem iniciar a remediação de gestão personalizada para tornarem o dispositivo conforme e assim continuarem a aceder a recursos.
+
+5.  Clique em **Guardar**.
+
+## <a name="next-steps"></a>Próximos passos
 
 [Criar uma política de proteção de aplicações WIP](windows-information-protection-policy-create.md)
