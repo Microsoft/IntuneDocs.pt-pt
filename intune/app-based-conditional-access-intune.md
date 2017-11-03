@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
-ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
+ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional com base na aplicação com o Intune
 
@@ -43,17 +43,7 @@ Para obter mais informações, veja [Preços do Enterprise Mobility](https://www
 
 ## <a name="supported-apps"></a>Aplicações suportadas
 
-- **Exchange Online**:
-    - Microsoft Outlook para Android e iOS.
-<br></br>
-- **SharePoint Online**
-    - Microsoft Word para iOS e Android
-    - Microsoft Excel para iOS e Android
-    - Microsoft PowerPoint para iOS e Android
-    - Microsoft OneDrive para Empresas para iOS e Android
-    - Microsoft OneNote para iOS
-<br></br>
-- **Microsoft Teams**
+Pode encontrar uma lista das aplicações que suportam o acesso condicional com base nas aplicações na [Azure Active Directory conditional access technical reference documentation (Documentação de referência técnica do acesso condicional do Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
 O acesso condicional com base em aplicações [também suporta aplicações de linha de negócio (LOB)](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), mas estas aplicações precisam de utilizar a [autenticação moderna do Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
