@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
@@ -53,6 +53,8 @@ O Intune tem modelos adicionais que pode utilizar para promover a inscrição de
 
 -   O [modelo de inscrição de utilizadores finais do Intune para administradores de TI](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) é um documento do Word personalizável que explica como inscrever dispositivos Android, iOS e Mac no Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+-   Os [FastTrack for EMS how to guides & emails (guias de procedimentos e e-mails do FastTrack para EMS)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) podem ser personalizados com o logótipo da sua empresa para promover a adoção do Intune e do EMS dentro da organização.
+
+## <a name="next-steps"></a>Próximos passos
 
 [Promover a adoção por parte de utilizadores finais de unidades com acesso condicional](migration-guide-drive-adoption.md).

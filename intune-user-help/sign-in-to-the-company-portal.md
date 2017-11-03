@@ -1,11 +1,11 @@
 ---
 title: "Como iniciar sessão na aplicação Portal da Empresa | Documentos da Microsoft"
-description: 
+description: "Saiba como iniciar sessão na aplicação Portal da Empresa em várias plataformas."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Como posso iniciar sessão na aplicação Portal da Empresa? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Apesar de as seguintes imagens serem referentes ao iOS, o processo é praticamen
 4. Assim que o Portal da Empresa aceitar as suas credenciais, a sua sessão será iniciada e poderá começar a aceder aos recursos da empresa.   
 
   ![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando uma barra de carregamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Iniciar sessão com a autenticação baseada em certificados
+
+1.  Abra a aplicação Portal da Empresa no dispositivo.
+
+2.  Introduza a sua **Conta escolar ou profissional**.
+
+3.  Toque na ligação **Iniciar sessão com um certificado**.
+
+4.  Toque em **Continuar** para utilizar o certificado.
 
 ## <a name="signing-in-from-another-device"></a>Iniciar sessão a partir de outro dispositivo
 
