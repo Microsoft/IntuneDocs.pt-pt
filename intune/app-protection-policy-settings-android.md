@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações Android
 As definições de políticas descritas neste tópico podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -90,4 +90,3 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 | **Exigir sistema operativo Android mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão Android no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada. | Não |
 | **Exigir versão mínima da aplicação** | Escolha **Sim** para exigir uma versão mínima para utilizar a aplicação. O acesso do utilizador será bloqueado se a versão da aplicação no dispositivo não cumprir os requisitos.<br><br>Quando selecionar as aplicações de destino, tenha em atenção que as aplicações têm, muitas vezes, esquemas de controlo de versões distintos entre si.<br><br> | Não | 
 | **Exigir versão mínima da aplicação (apenas aviso)** | Escolha **Sim** para recomendar uma versão mínima para utilizar esta aplicação. O utilizador verá uma notificação se a versão da aplicação no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br>Quando selecionar as aplicações de destino, tenha em atenção que as aplicações têm, muitas vezes, esquemas de controlo de versões distintos entre si.<br><br> | Não | 
-
