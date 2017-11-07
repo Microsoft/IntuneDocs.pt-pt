@@ -2,10 +2,10 @@
 title: "Modelos e recursos para planear e estruturar a implementação do Intune"
 description: "Ligações para modelos de plano e informações adicionais do Intune que poderão ser úteis durante o seu processo de planeamento da implementação e implementação do Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 828dd9406d308d9bdb7af686b31689df79633940
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: 38830370d3bac63e1c32b12f481db5be39de971d
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionais para planear a sua implementação do Intune
 
