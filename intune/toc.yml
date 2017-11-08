@@ -295,7 +295,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: Windows 8.1
+            - name: 'Windows 8,1'
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -327,7 +327,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: Windows 8.1
+            - name: 'Windows 8,1'
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: Referência para as entidades de dispositivos
               href: reports-ref-devices.md
+            - name: Referência para a extensão de gestão do Intune
+              href: reports-ref-intunemanagementextension.md
             - name: Referência para as entidades de gestão de aplicações móveis (MAM)
               href: reports-ref-mobile-app-management.md
             - name: Referência para as entidades de políticas
