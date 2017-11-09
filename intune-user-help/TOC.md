@@ -8,7 +8,7 @@
 
 ## [Como iniciar sessão no Portal da Empresa](sign-in-to-the-company-portal.md)
 
-## [Utilizar o dispositivo Android com o Intune](using-your-android-device-with-intune.md)
+## [Utilizar o dispositivo Android](using-your-android-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo Android?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Inscrever o dispositivo](enroll-your-device-in-Intune-android.md)
 #### [Inscrever o dispositivo Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [Utilizar o SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Utilizar o Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [Utilizar o seu dispositivo iOS ou macOS com o Intune](using-your-iOS-or-macOS-device-with-intune.md)
+## [Utilizar o seu dispositivo iOS](using-your-iOS-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo iOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Instalar e iniciar sessão no Portal da Empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Inscrever o seu dispositivo iOS](enroll-your-device-in-intune-ios.md)
-### [Inscrever o seu dispositivo macOS](enroll-your-device-in-intune-macos.md)
-### [Inscrever o seu dispositivo macOS com o Portal da Empresa](enroll-your-device-in-intune-macos-cp.md)
-### [Este dispositivo é ligeiramente diferente](device-little-different-jamf.md)
 
 ### [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Definir ou alterar o código de acesso](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [Utilizar o SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Utilizar o Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [Utilizar o seu dispositivo macOS](using-your-macos-device-with-intune.md)
+### [O que acontece ao inscrever um dispositivo macOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [Inscrever o seu dispositivo macOS](enroll-your-device-in-intune-macos-cp.md)
+### [Inscrever o seu dispositivo legado macOS](enroll-your-device-in-intune-macos-legacy.md)
+### [Este dispositivo é ligeiramente diferente](device-little-different-jamf.md)
 
 ## [Utilizar o dispositivo Windows](using-your-windows-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [O meu dispositivo precisa de software de proteção contra software maligno](your-device-needs-antimalware-software.md)
 #### [Ativar o Arranque Seguro](you-need-to-enable-secure-boot-windows.md)
 #### [Ativar a Integridade de Código](you-need-to-enable-code-integrity.md)
-
+#### [Preciso de ativar a minha Firewall](you-need-to-enable-defender-firewall-windows.md)
+#### [Preciso de ativar o UAC](you-need-to-enable-uac-windows.md)
+#### [Preciso de atualizar o Windows](you-need-to-update-os-build-version-windows.md)
+#### [Preciso de ligar o Windows Defender](turn-on-defender-windows.md) 
 
 ## [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
