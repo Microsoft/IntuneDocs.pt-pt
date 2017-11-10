@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
+            - name: Ecrã do Estado da Inscrição
+              href: windows-enrollment-status.md
         - name: Configurar inscrição do Android
           href: android-enroll.md
         - name: Configurar a inscrição do iOS
@@ -295,7 +297,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: 'Windows 8,1'
+            - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -327,7 +329,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: 'Windows 8,1'
+            - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Configurar as definições do Windows Information Protection
           href: windows-information-protection-configure.md
+        - name: Gerir Scripts do PowerShell
+          href: intune-management-extension.md
         - name: Monitorizar as despesas de telecomunicações
           href: telecom-expenses-monitor.md
         - name: Atribuir perfis
