@@ -1,12 +1,12 @@
 ---
-title: "Como utilizar políticas de configuração de aplicações do Intune para iOS"
+title: "Adicionar políticas de configuração da aplicação para dispositivos iOS geridos | Documentos da Microsoft"
 titlesuffix: Azure portal
-description: "Saiba como utilizar políticas de configuração de aplicações para disponibilizar dados de configuração a uma aplicação iOS quando é executada.\""
+description: "Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Como utilizar as políticas de configuração de aplicações do Microsoft Intune para iOS
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições que serão utilizadas quando os utilizadores executarem uma aplicação iOS. Por exemplo, uma aplicação poderá exigir que os utilizadores especifiquem:
-
--   Um número de porta personalizado.
-
--   Definições de idioma.
-
--   Definições de segurança.
-
--   Definições de imagem corporativa, como um logótipo de empresa.
-
-Se os utilizadores introduzirem estas definições incorretamente, isso pode aumentar a carga sobre o suporte técnico e tornar mais lenta a adoção de novas aplicações.
-
-As políticas de configuração de aplicação podem ajudar a eliminar estes problemas, permitindo-lhe atribuir estas definições aos utilizadores de uma política antes de executarem a aplicação. As definições são então fornecidas automaticamente e os utilizadores não têm de executar nenhuma ação. É necessário que as aplicações tenham sido escritas de forma a suportar a utilização das configurações de aplicação. Consulte o seu fornecedor de aplicações para obter informações adicionais.
-
-Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas sempre que a aplicação as verificar (normalmente, a primeira vez que for executada).
+Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação iOS. Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
 
 > [!TIP]
 > Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 8.0 e posterior. Suporta os seguintes tipos de instalação de aplicações:
@@ -50,67 +36,55 @@ Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em 
 > Para obter mais informações sobre os tipos de instalação de aplicações, veja [How to add an app to Microsoft Intune (Como adicionar uma aplicação ao Microsoft Intune)](apps-add.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração de aplicação
-1.  Inicie sessão no portal do Azure.
-2.  Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3.  No painel **Intune**, escolha **Aplicações móveis**.
-4.  Na carga de trabalho **Aplicações móveis**, escolha **Gerir** > **Políticas de Configuração da Aplicação**.
-5.  No painel da lista de políticas, escolha **Adicionar**.
-6.  No painel **Adicionar Política de Configuração**, indique um **Nome** e uma **Descrição** opcional para a política de configuração de aplicações.
-7.  Em **Tipo de inscrição de dispositivos**, selecione uma das seguintes opções:
-    - **Inscrito com o Intune** – para aplicações que são geridas pelo Intune.
-    - **Não inscrito com o Intune** – para aplicações que não são geridas pelo Intune ou que são geridas por outra solução.
-8.  Em **Plataforma**, selecione **iOS** (apenas para dispositivos inscritos com o Intune)
-9.  Escolha **Aplicação Associada** e, em seguida, no painel **Aplicação Associada**, escolha a aplicação gerida à qual quer aplicar a configuração.
-10. No painel **Adicionar Política de Configuração**, selecione **Definições de configuração**
-11. No painel **Definições de Configuração**, escolha de que forma pretende especificar os valores XML que constituem o perfil de configuração em:
-    - **Introduzir dados XML** (apenas para dispositivos inscritos com o Intune) – introduza ou cole uma lista de propriedades XML que contenha as definições de configuração de aplicações que pretende. O formato da lista de propriedades XML varia em função da aplicação que está a configurar. Contacte o fornecedor da aplicação para obter detalhes sobre o formato exato a utilizar.
-O Intune verifica se o XML que introduziu está num formato válido. Não verifica se a lista de propriedades XML funciona com a aplicação à qual está associada.
-Para saber mais sobre listas de propriedades XML, veja [Compreender Listas de Propriedades XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) na iOS Developer Library.
-    - **Utilizar designer de configuração** (quer o dispositivo esteja inscrito ou não com o Intune) – permite-lhe especificar pares de valores e chaves XML diretamente no portal.
-11. Quando tiver terminado, volte ao painel **Adicionar Política de Configuração** e clique em **Criar**.
 
-A política é criada e apresentada no painel da lista de políticas.
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** + **Intune**.
+3. Selecione a carga de trabalho **Aplicações Móveis**.
+4. Clique em **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, clique em **Adicionar**.
+5. Defina os seguintes detalhes:
+    - **Nome**  
+      O nome do perfil que será apresentado no portal do Azure.
+    - **Descrição**  
+      A descrição do perfil que será apresentada no portal do Azure.
+    - **Tipo de inscrição do dispositivo**  
+      Selecione **Dispositivos geridos**.
+6. Selecione **iOS** para a **Plataforma**.
+7.  Escolha **Aplicação Associada** e, em seguida, no painel **Aplicação Associada**, escolha a aplicação gerida à qual quer aplicar a configuração.
+8.  No painel **Adicionar Política de Configuração**, selecione **Definições de configuração**
+9. Selecione **Formato das definições de configuração**. Selecione uma das opções:
+    - **[Utilizar estruturador de configuração](#Use-the-configuration-designer)**
+    - **[Introduzir Dados XML](#enter-xml-data)**
+10. Clique em **OK** e clique em **Adicionar**.
 
+## <a name="use-configuration-designer"></a>Utilizar o estruturador de configuração
 
+Pode utilizar o estruturador de configuração para as aplicações em dispositivos inscritos ou não inscritos no Intune. O estruturador permite-lhe configurar chaves e valores de configuração específicos. Também tem de especificar o tipo de dados para cada valor. As definições são fornecidas para aplicações automaticamente quando a aplicação é instalada.
 
->[!Note]
->Pode utilizar o [SDK da Aplicação Intune](https://docs.microsoft.com/intune/app-sdk-ios) para preparar aplicações de linha de negócios para serem geridas por políticas de proteção de aplicações do Intune e políticas de configuração de aplicações, quer o dispositivo esteja inscrito ou não com o Intune. Por exemplo, pode utilizar uma política de configuração de aplicações para configurar URLs permitidos e bloqueados para o [Intune Managed Browser](app-configuration-managed-browser.md). Assim que uma aplicação for compatível com estas políticas, pode configurá-las com uma política.
+### <a name="add-a-setting"></a>Adicionar uma definição
 
+1. Para cada chave e valor na configuração, defina: <ul><li>**Chave de configuração**<br>Utilizada para identificar exclusivamente a configuração de definição específica.</li><li>**Tipo de Valor**<br>O tipo de dados do valor de configuração. Os tipos incluem Número Inteiro, Real, Cadeia ou Booleano.</li><li>**Valor de configuração**<br>O valor da configuração.</li></ul>
+2. Clique em **OK** para definir as definições de configuração.
 
-Quando a aplicação atribuída é executada num dispositivo, a mesma é executada com as definições que configurou na política de configuração de aplicações.
-Veja a documentação relativa à aplicação que está a configurar para obter informações sobre o que acontece se uma ou mais políticas de configuração de aplicações entrarem em conflito.
+### <a name="delete-a-setting"></a>Eliminar uma definição
 
->[!Tip]
->Além disso, pode utilizar a Graph API para realizar estas tarefas. Para obter mais detalhes, veja [Graph API Reference MAM Targeted Config (Configuração de MAM Direcionada de Referência para Graph API)](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
-
-
-## <a name="information-about-the-xml-file-format"></a>Informações sobre o formato de ficheiro XML
-
-O Intune suporta os seguintes tipos de dados numa lista de propriedades:
-
-- &lt;número inteiro&gt;
-- &lt;real&gt;
-- &lt;cadeia&gt;
-- &lt;matriz&gt;
-- &lt;dict&gt;
-- &lt;verdadeiro /&gt; ou &lt;falso /&gt;
-
-Para obter mais informações sobre tipos de dados, veja [Sobre Listas de Propriedades](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) na iOS Developer Library.
-
-Além disso, o Intune suporta os seguintes tipos de tokens na lista de propriedades:
-- \{\{userprincipalname\}\} - (Exemplo: **John@contoso.com**)
-- \{\{mail\}\} - (Exemplo: **John@contoso.com**)
-- \{\{partialupn\}\} - (Exemplo: **João**)
-- \{\{accountid\}\} - (Exemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (Exemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (Exemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (Exemplo: **João Teixeira**)
-- \{\{serialnumber\}\} - (Exemplo: **F4KN99ZUG5V2**) para dispositivos iOS
-- \{\{serialnumberlast4digits\}\} - (Exemplo: **G5V2**) para dispositivos iOS
+1. Clique nas reticências (…) ao lado da definição.
+2. Selecione **Eliminar**.
 
 Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem ser utilizados para outros fins.
 
-## <a name="example-format-for-an-app-configuration-xml-file"></a>Formato de exemplo do ficheiro XML de configuração de aplicação
+## <a name="enter-xml-data"></a>Introduzir Dados XML
+
+Pode escrever ou colar uma lista de propriedades XML que contenha as definições de configuração da aplicação para dispositivos inscritos no Intune. O formato da lista de propriedades XML varia em função da aplicação que está a configurar. Contacte o fornecedor da aplicação para obter detalhes sobre o formato exato a utilizar.
+
+O Intune valida o formato XML. No entanto, não verifica se a lista de propriedades XML irá funcionar com a aplicação de destino.
+Para saber mais sobre listas de propriedades XML, veja [Compreender Listas de Propriedades XML].
+
+Para saber mais sobre listas de propriedades XML:
+
+  -  Leia [Configurar aplicações iOS com políticas de configuração de aplicações móveis no Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+  -  Consulte [Understand XML Plist (Compreender Listas de Propriedades XML)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) na Developer Library iOS.
+
+### <a name="example-format-for-an-app-configuration-xml-file"></a>Formato de exemplo do ficheiro XML de configuração de aplicação
 
 Quando criar um ficheiro de configuração de aplicação, pode especificar um ou mais dos seguintes valores com este formato:
 
@@ -137,8 +111,30 @@ Quando criar um ficheiro de configuração de aplicação, pode especificar um o
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
+### <a name="supported-xml-plist-data-types"></a>Tipos de dados de Listas de Propriedades XML suportados
+
+O Intune suporta os seguintes tipos de dados numa lista de propriedades:
+
+- &lt;número inteiro&gt;
+- &lt;real&gt;
+- &lt;cadeia&gt;
+- &lt;matriz&gt;
+- &lt;dict&gt;
+- &lt;verdadeiro /&gt; ou &lt;falso /&gt;
+
+### <a name="tokens-used-in-the-property-list"></a>Tokens utilizados na lista de propriedades
+
+Além disso, o Intune suporta os seguintes tipos de tokens na lista de propriedades:
+- \{\{userprincipalname\}\} - (Exemplo: **John@contoso.com**)
+- \{\{mail\}\} - (Exemplo: **John@contoso.com**)
+- \{\{partialupn\}\} - (Exemplo: **João**)
+- \{\{accountid\}\} - (Exemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} - (Exemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} - (Exemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} - (Exemplo: **João Teixeira**)
+- \{\{serialnumber\}\} - (Exemplo: **F4KN99ZUG5V2**) para dispositivos iOS
+- \{\{serialnumberlast4digits\}\} - (Exemplo: **G5V2**) para dispositivos iOS
 
 ## <a name="next-steps"></a>Próximos passos
 

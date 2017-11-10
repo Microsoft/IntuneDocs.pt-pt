@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -113,8 +113,50 @@ O Microsoft Intune recolhe dados sobre estatísticas de utilização da sua apli
 
     * Se optar por não enviar os dados telemétricos do SDK para o Microsoft Intune a partir da sua aplicação, terá de desativar a transmissão de telemetria ao definir a propriedade `MAMTelemetryDisabled` como "YES" no dicionário IntuneMAMSettings.
 
-
 * **SDK da Aplicação Intune para Android**: os dados telemétricos não são registados através do SDK.
+
+ O número da versão da aplicação de linha de negócio para iOS e Android está visível <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>Números de versões da aplicação de linha de negócio
+
+As aplicações de linha de negócio no Intune apresentam agora o número da versão de aplicações iOS e Android. O número é apresentado no portal do Azure na lista de aplicações e no painel de descrição geral da aplicação. Os utilizadores finais podem ver o número da aplicação na aplicação Portal da Empresa e no portal Web.
+
+### <a name="full-version-number"></a>Número da versão completo
+
+O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), por exemplo, 2.2(2.2.17560800).
+
+O número da versão completo tem dois componentes:
+
+ - **Versão**  
+   O número da versão é o número da versão legível por humanos da aplicação. Este número é utilizado pelos utilizadores finais para identificar diferentes versões da aplicação.
+
+ - **Número de Compilação**  
+    O número de compilação é um número interno que pode ser utilizado para detetar aplicações e gerir a aplicação de forma programática. O número de compilação refere-se a uma iteração da aplicação que faz referência a alterações no código.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Número da versão e de compilação em dispositivos Android e iOS
+
+Os dispositivos Android e iOS utilizam números de versão e de compilação no contexto das aplicações. No entanto, os dois sistemas operativos têm significados que são específicos de cada SO. A tabela seguinte explica como estes termos estão relacionados.
+
+Quando estiver a desenvolver uma aplicação de linha de negócio para utilizar no Intune, lembre-se de utilizar o número da versão e da compilação. As funcionalidades de gestão da Aplicação Intune dependem de um **CFBundleVersion** (para iOS) e de um **PackageVersionCode** (para Android) relevantes. Estes números estão incluídos no manifesto da aplicação. 
+
+Intune|iOS|Android|Descrição|
+|---|---|---|---|
+Número da versão|CFBundleShortVersionString|PackageVersionName |Este número indica uma versão específica da aplicação para os utilizadores finais.|
+Número de compilação|CFBundleVersion|PackageVersionCode |Este número é utilizado para indicar uma iteração no código da aplicação.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    Especifica o número da versão de lançamento do pacote. Este número identifica uma versão de lançamento da aplicação. O número é utilizado pelos utilizadores finais para referenciar a aplicação.
+ - **CFBundleVersion**  
+    A versão de compilação do pacote, que identifica uma iteração do pacote. O número pode identificar uma versão ou um pacote não lançado. O número é utilizado para detetar aplicações.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    O número da versão apresentado aos utilizadores. Este atributo pode ser definido como uma cadeia bruta ou como uma referência a um recurso de cadeia. A cadeia apenas se destina a ser apresentada aos utilizadores.
+ - **PackageVersionCode**  
+    Um número de versão interno. Este número é utilizado apenas para determinar se uma versão é mais recente do que outra (se o número for superior, a versão é mais recente). Esta não é a versão 
 
 ## <a name="next-steps-after-integration"></a>Passos seguintes após a integração
 

@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 O Intune fornece várias formas através das quais pode monitorizar as propriedades das aplicações que gere, assim como os respetivos estados das atribuições.
 
-1. Na carga de trabalho **Aplicações Móveis**, escolha **Gerir** > **Aplicações**.
-2. No painel da lista de aplicações, escolha a aplicação da qual pretende ver informações. Em seguida, verá o painel <*nome da aplicação*> **Estado da instalação do dispositivo**: ![painel do estado da instalação de aplicações.](./media/monitor-apps.png)
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** + **Intune**.
+3. Na carga de trabalho **Aplicações Móveis**, selecione **Aplicações** no grupo **Gerir**.
+     
+    ![Painel de estado de instalação de aplicações.](./media/monitor-apps.png)
+5. Na lista do painel de aplicações, escolha uma aplicação. Em seguida, verá o painel <*nome da aplicação*> **Estado de instalação do dispositivo**.
+
+O relatório de estado de instalação do dispositivo contém as seguintes colunas:
+
+1.  **Nome do Dispositivo** – o nome do tipo de dispositivo.
+2.  **Nome do Utilizador** – o nome do utilizador.
+3.   **Plataforma** – o sistema operativo instalado no dispositivo.
+4.  **Versão** – o número da versão da aplicação.
+5.   **Estado** – os estados possíveis para as aplicações são: **Instalado**, **Não Instalado**, **Instalação Pendente** e **Erro**.
+6. **Detalhes do Estado** – uma descrição legível do estado da aplicação no dispositivo.
+7. **Última Entrada** – a última vez que o dispositivo entrou no Intune.
 
 Depois, selecione uma das seguintes ações para saber mais sobre as suas aplicações e as respetivas atribuições.
 

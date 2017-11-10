@@ -1,5 +1,5 @@
 ---
-title: "Utilizar o Armazém de Dados do Intune | Microsoft Docs"
+title: "Utilizar o Armazém de Dados do Intune | Documentos da Microsoft"
 description: "Pode utilizar o Armazém de Dados do Intune para criar relatórios que fornecem informações sobre o ambiente móvel da sua empresa."
 keywords: "Armazém de Dados do Intune"
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e399c36d4c6a855766ee956b3ca24c503a1f974b
-ms.sourcegitcommit: e57512698a479df0d25ece6ece4492ec0e4f0f3e
+ms.openlocfilehash: d485f0d53ac57a2f159ebd56b6b3823a8a49d5ad
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="use-the-intune-data-warehouse"></a>Utilizar o Armazém de Dados do Intune
 
@@ -35,11 +35,15 @@ O Armazém de Dados dá-lhe acesso a mais informações sobre o seu ambiente mó
   -  Dados atualizados diariamente
   -  Um modelo de dados com utilização do padrão OData
 
+> [!Note]
+> Se estiver a utilizar a gestão de dispositivos móveis (MDM) híbrida com o System Center Configuration Manager (SCCM) e o Microsoft Intune significa que pretende obter os seus dados do SCCM. O Armazém de Dados do Intune contém apenas dados do Intune. Pode utilizar um dashboard do Power BI do SCCM para os seus relatórios personalizados. Para obter mais informações, veja "[Announcing the Power BI solution template for System Center Configuration Manager"]( https://powerbi.microsoft.com/blog/sccm-solution-template) (Anunciar o modelo de solução do Power BI para o System Center Configuration Manager) e "[Create a Power BI report and dashboard"](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard) (Criar um relatório e dashboard do Power BI).
+
+
 > [!Important]  
-> Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados com a versão beta. Para utilizar a versão beta, o seu URL tem de conter o parâmetro de consulta `api-version=beta`. A versão beta oferece funcionalidades antes de estas estarem disponíveis globalmente como um serviço suportado. À medida que o Intune adiciona novas funcionalidades, a versão beta poderá alterar o contrato de dados e comportamento. Todos os códigos personalizados ou ferramentas de relatórios dependentes da versão beta poderão interromper as atualizações contínuas. <!-- If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
+> Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados com a versão beta. Para utilizar a versão beta, o seu URL tem de conter o parâmetro de consulta `api-version=beta`. A versão beta oferece funcionalidades antes de estas estarem disponíveis globalmente como um serviço suportado. À medida que o Intune adiciona novas funcionalidades, a versão beta poderá alterar o contrato de dados e comportamento. Todos os códigos personalizados ou ferramentas de relatórios dependentes da versão beta poderão interromper as atualizações contínuas.
 
-**Passos seguintes**
+**Próximos passos**
 
-- Obtenha uma ligação e utilize o Power BI para obter informações. Para obter instruções, veja [Connect to the Data Warehouse with Power BI (Ligar ao Armazém de Dados do Intune com o Power BI – em inglês)](reports-proc-get-a-link-powerbi.md).
+- Obtenha uma ligação e utilize o Power BI para obter informações. Para obter instruções, consulte [Connect to the Data Warehouse with Power BI (Ligar ao Armazém de Dados do Intune com o Power BI – em inglês)](reports-proc-get-a-link-powerbi.md).
 - Com a sua ligação, crie um relatório personalizado com o Power BI. Para obter instruções, veja [Create a report from the OData feed with Power BI (Criar um relatório a partir do feed OData com o Power BI)](reports-proc-create-with-odata.md).
-- Para saber mais sobre a API do Armazém de Dados do Intune, o modelo de dados e as relações entre entidades<!-- , and an example of creating a custom client to retrieve data,-->, veja a [API do Armazém de Dados do Intune](reports-nav-intune-data-warehouse.md).
+- Para saber mais sobre a API do Armazém de Dados do Intune, o modelo de dados e as relações entre entidades<!-- , and an example of creating a custom client to retrieve data,-->, consulte a [API do Armazém de Dados do Intune](reports-nav-intune-data-warehouse.md).

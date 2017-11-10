@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Repor o código de acesso em dispositivos geridos pelo Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A ação **Repor código de acesso** gera um novo código de acesso para o dispositivo, que é apresentado no painel <*nome do dispositivo*> **Descrição Geral**.
+A ação **Remover código de acesso** gera um novo código de acesso para o dispositivo, que é apresentado no painel **Descrição Geral** do <*nome do dispositivo*> .
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -41,7 +41,7 @@ A ação **Repor código de acesso** gera um novo código de acesso para o dispo
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Dispositivos**.
 4. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
-5. Na lista de dispositivos que gere, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivos **Repor código de acesso**.
+5. Na lista de dispositivos que gere, selecione um dispositivo e, em seguida, selecione a ação remota de dispositivos **Remover código de acesso**.
 
 ## <a name="next-steps"></a>Próximos passos
 
