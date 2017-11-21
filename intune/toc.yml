@@ -608,19 +608,23 @@
         - name: Modelo de dados do Armazém de Dados
           href: reports-ref-data-model.md
           items:
+            - name: Representação da duração do utilizador no Armazém de Dados do Intune
+              href: reports-ref-user-timeline.md
             - name: Referência para as entidades de aplicações
               href: reports-ref-application.md
+            - name: Referência para a entidade do utilizador atual
+              href: reports-ref-current-user.md
             - name: Referência para a entidade Date
               href: reports-ref-date.md
             - name: Referência para as entidades de dispositivos
               href: reports-ref-devices.md
-            - name: Referência para a extensão de gestão do Intune
+            - name: Referência para a entidade da extensão de gestão do Intune
               href: reports-ref-intunemanagementextension.md
             - name: Referência para as entidades de gestão de aplicações móveis (MAM)
               href: reports-ref-mobile-app-management.md
             - name: Referência para as entidades de políticas
               href: reports-ref-policy.md
-            - name: Referência para a Associação de Dispositivo do Utilizador
+            - name: Referência para a entidade de associação de dispositivos do utilizador
               href: reports-ref-user-device.md
             - name: Referência para a entidade de utilizador
               href: reports-ref-user.md
