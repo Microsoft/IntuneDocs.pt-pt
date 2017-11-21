@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Como gerir a transferência de dados entre aplicações iOS
 ## <a name="manage-ios-apps"></a>Gerir aplicações iOS
@@ -30,6 +30,7 @@ A proteção dos dados da sua empresa inclui garantir que as transferências de 
 -   Também pode implementar e gerir aplicações através do **canal MDM**.  o requer que os dispositivos estejam inscritos na solução de MDM. Estas podem ser aplicações **geridas por políticas** ou outras aplicações geridas.
 
 A funcionalidade **Gestão Open in** dos dispositivos iOS pode limitar as transferências de ficheiros entre as aplicações que são implementadas através do **canal MDM**. As restrições da gestão Open in são estipuladas nas definições de configuração e implementadas utilizando a solução MDM.  Quando o utilizador instala a aplicação implementada, são aplicadas as restrições definidas.
+
 ##  <a name="using-app-protection-with-ios-apps"></a>Utilizar a proteção de aplicações com aplicações iOS
 As políticas proteção de aplicações podem ser utilizadas com a funcionalidade **Gestão Open In** do iOS para proteger os dados da empresa das seguintes formas:
 
@@ -40,30 +41,25 @@ As políticas proteção de aplicações podem ser utilizadas com a funcionalida
 -   **Dispositivos geridos por uma solução MDM de terceiros:** pode restringir a transferência de dados apenas às aplicações geridas utilizando a funcionalidade do iOS **Gestão Open in**.
 Para assegurar que as aplicações que implementa através da solução MDM de terceiros também estão associadas às políticas de proteção de aplicações configuradas no Intune, tem de configurar a definição de UPN do utilizador, tal como descrito nas instruções [Configurar definição de UPN do utilizador](#configure-user-upn-setting-for-third-party-emm).  Quando as aplicações são implementadas com a definição de UPN do utilizador, as políticas de proteção de aplicações são aplicadas à aplicação quando o utilizador final inicia sessão com a conta profissional dele.
 
-> [!IMPORTANT]
-> A definição de UPN do utilizador só é necessária para as aplicações implementadas em dispositivos geridos por uma solução MDM de terceiros.  Nos dispositivos geridos pelo Intune, esta definição não é necessária.
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>Configurar definição de UPN do utilizador para EMM de terceiros
-A configuração da definição de UPN do utilizador é **obrigatória** para dispositivos que são geridos por uma solução de EMM de terceiros. O procedimento descrito abaixo é um fluxo geral sobre como configurar a definição de UPN e a experiência de utilizador final resultante:
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurar a definição de UPN do utilizador para o Microsoft Intune ou EMM de terceiros
+A configuração da definição de UPN do utilizador é **obrigatória** para dispositivos geridos pelo Intune ou por uma solução de EMM de terceiros. O procedimento descrito abaixo é um fluxo geral sobre como configurar a definição de UPN e a experiência de utilizador final resultante:
 
 1.  No [portal do Azure](https://portal.azure.com), [crie e atribua uma política de proteção de aplicações](app-protection-policies.md) para dispositivos iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações iOS que devem ter esta política.
 
-2.  Implemente as aplicações e o perfil de e-mail que pretende que seja gerido **através da sua solução de MDM de terceiros** ao seguir os passos generalizados abaixo. Esta experiência também é abrangida pelo Exemplo 1.
+2.  Implemente as aplicações e o perfil de e-mail que quer que sejam geridos através do Intune ou da sua solução de MDM de terceiros ao seguir os passos generalizados abaixo. Esta experiência também é abrangida pelo Exemplo 1.
 
-  1.  Implemente a aplicação com as seguintes definições de configuração de aplicações:
+3.  Implemente a aplicação com as seguintes definições de configuração de aplicações:
 
       **chave** = IntuneMAMUPN, **valor** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Implemente a política de gestão Open In ao utilizar o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
+4.  Implemente a política **Gestão Open In** ao utilizar o Intune ou o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Exemplo 1: experiência de administrador na consola de MDM de terceiros
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Exemplo 1: experiência de administrador no Intune ou na consola de MDM de terceiros
 
-1. Aceda à consola de administração do seu fornecedor de MDM de terceiros. Aceda à secção da consola na qual implementa as definições de configuração de aplicações para dispositivos iOS inscritos.
+1. Aceda à consola de administração do Intune ou do seu fornecedor de MDM de terceiros. Aceda à secção da consola na qual implementa as definições de configuração de aplicações para dispositivos iOS inscritos.
 
 2. Na secção Configuração da Aplicação, introduza a definição seguinte:
 
@@ -73,6 +69,7 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 |Fornecedor de MDM de terceiros| Chave de Configuração | Tipo de Valor | Valor de Configuração|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | Cadeia | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Cadeia | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Cadeia | ${userUPN} **ou** ${userEmailAddress} |
 

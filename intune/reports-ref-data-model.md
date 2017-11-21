@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados
 
@@ -39,9 +39,10 @@ O armazém expõe os dados nas seguintes categorias de nível superior:
 Os conjuntos de entidades chamam-se coleções de entidades no modelo de dados. Estes conjuntos contêm entidades que definem os dados colecionados no modelo. Cada conjunto de entidades fornece um ponto de acesso no modelo de dados do Armazém de Dados. Encontrará detalhes sobre as seguintes categorias de entidades:
 
   -  [Aplicação](reports-ref-application.md)
-  -  [Date](reports-ref-date.md)
-  -  [Devices](reports-ref-devices.md)
-  -  [Policy](reports-ref-policy.md)
+  -  [Data](reports-ref-date.md)
+  -  [Dispositivos](reports-ref-devices.md)
+  -  [Extensão de Gestão do Intune](reports-ref-intunemanagementextension.md)
+  -  [Política](reports-ref-policy.md)
   -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
-  -  [User](reports-ref-user.md)
+  -  [Utilizador](reports-ref-user.md)
   -  [Associações de Dispositivos do Utilizador](reports-ref-user-device.md)

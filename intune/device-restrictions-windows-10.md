@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -31,19 +31,19 @@ ms.lasthandoff: 10/19/2017
 -   **Anular inscrições manualmente** – Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
 -   **Instalação do certificado de raiz manual (apenas dispositivos móveis)** – impede o utilizador de instalar manualmente os certificados de raiz e os certificados CAP intermédios.
 -   **Submissão de dados de diagnóstico** – Os valores possíveis são:
-    -       **Nenhum** – Não são enviados dados à Microsoft
-    -       **Básico** – São enviadas à Microsoft informações limitadas
-    -       **Melhorado** – São enviados à Microsoft dados de diagnóstico melhorados
-    -       **Completo** – Envia os mesmos dados que Melhorado, juntamente com dados adicionais sobre o estado do dispositivo
--   **Câmara** – Permita ou bloqueie a utilização da câmara no dispositivo.
+    - **Nenhum** – não são enviados dados à Microsoft
+    - **Básico** – são enviadas à Microsoft informações limitadas
+    - **Melhorado** – são enviados dados de diagnóstico melhorados à Microsoft
+    - **Completo** – envia os mesmos dados que Melhorado, juntamente com dados adicionais sobre o estado do dispositivo
+-   **Câmara** – permita ou bloqueie a utilização da câmara no dispositivo.
 -   **Sincronização de ficheiros do OneDrive** – impede o dispositivo de sincronizar ficheiros no OneDrive.
 -   **Armazenamento amovível** – especifica se os dispositivos de armazenamento externo, como os cartões SD, podem ser utilizados no dispositivo.
--   **Geolocalização** – Especifica se o dispositivo pode utilizar informações de serviços de localização.
--   **Partilha da Internet** – Permite a utilização da partilha de ligação à Internet no dispositivo.
--   **Reposição do telefone** – Controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
+-   **Geolocalização** – especifica se o dispositivo pode utilizar informações de serviços de localização.
+-   **Partilha da Internet** – permite a utilização da partilha de ligação à Internet no dispositivo.
+-   **Reposição do telefone** – controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
 -   **Ligação USB (apenas para dispositivos móveis)** – controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.
 -   **Modo antirroubo (apenas para dispositivos móveis)** – configure se o Modo antirroubo do Windows está ativado.
--   **Cortana** – Ative ou desative o assistente de voz Cortana.
+-   **Cortana** – ative ou desative o assistente de voz Cortana.
 -   **Gravação de voz (apenas para dispositivos móveis)** – permite ou bloqueia a utilização do gravador de voz do dispositivo.
 -   **Modificação do nome do dispositivo** – impede o utilizador final de alterar o nome do dispositivo (apenas no Windows 10 Mobile)
 -   **Adicionar pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que instala os pacotes de aprovisionamento.
@@ -88,9 +88,9 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 
 
-## <a name="app-store"></a>Loja de Aplicações
+## <a name="app-store"></a>App Store
 
--   **Loja de aplicações (apenas dispositivos móveis)** – Permita ou bloqueie a utilização da loja de aplicações em dispositivos Windows 10 Mobile.
+-   **App Store (apenas dispositivos móveis)** – Permita ou bloqueie a utilização da loja de aplicações em dispositivos Windows 10 Mobile.
 -   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Microsoft sejam atualizadas automaticamente.
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
@@ -105,6 +105,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 
 ## <a name="edge-browser"></a>Browser Edge
+
 -   **Browser Microsoft Edge (apenas dispositivos móveis)** – Permita a utilização do browser Edge no dispositivo.
 -   **Lista pendente da barra de endereço (apenas no ambiente de trabalho)** – utilize isto para impedir o Edge de apresentar uma lista de sugestões numa lista pendente à medida que escreve. Isto ajuda a minimizar a utilização da largura de banda de rede entre o Edge e os serviços Microsoft.
 -   **Sincronizar favoritos entre browsers da Microsoft (apenas no ambiente de trabalho)** – permite que o Windows sincronize os favoritos entre o Internet Explorer e o Edge.
@@ -180,6 +181,44 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
     -   **Facilidade de Acesso** – bloqueia o acesso à área de facilidade de acesso da aplicação de definições.
     -   **Privacidade** – bloqueia o acesso à área de privacidade da aplicação de definições.
     -   **Atualização e Segurança** – bloqueia o acesso à área das atualizações e de segurança da aplicação de definições.
+
+## <a name="kiosk"></a>Modo de Local Público
+
+-   **Modo de local público** – identifica o tipo de [modo de local público](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) suportado pela política.  As opções incluem:
+
+      - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
+      - **Local público de aplicação única** – o perfil ativa o dispositivo como um local público de uma única aplicação.
+      - **Local público de várias aplicações** – o perfil ativa o dispositivo como de local público de várias aplicações.
+
+    Os locais públicos de uma única aplicação exigem as seguintes definições:
+
+      - **Conta de utilizador** – especifica a conta de utilizador local (no dispositivo) ou o início de sessão de conta do Azure AD associado à aplicação de local público.  Para contas associadas a domínios do Azure AD, especifique a conta com o formato `domain\\username@tenant.org`.
+
+         Para dispositivos em ambientes públicos, utilize contas com privilégios mínimos para impedir a atividade autorizada.  
+
+      - **ID de modelo do utilizador da aplicação (AUMID)** – especifica o AUMID da aplicação de local público.  Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+    Os locais públicos de várias aplicações exigem uma configuração de local público.  Utilize o botão **Adicionar** para criar uma configuração de local público ou selecionar uma configuração existente.
+
+    As configurações de local público de várias aplicações incluem as seguintes definições:
+
+    - **Nome da configuração de local público** – um nome amigável utilizado para identificar uma determinada configuração.
+
+    - Uma ou mais **aplicações de local público** constituídas por:
+
+        - **Tipo de Aplicação**, que especifica o tipo da aplicação de local público.  Os valores suportados incluem:   
+
+            - **Aplicação Win32** – uma aplicação de ambiente de trabalho tradicional.  (Irá precisar do nome do caminho absoluto do ficheiro executável, relativamente ao dispositivo.)
+
+            - **Aplicação UWP** – uma Aplicação universal do Windows.  Irá precisar do [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **Identificador da Aplicação** – especifica o nome do caminho absoluto do ficheiro executável (aplicações Win32) ou o [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações UWP).
+
+    - **Barra de tarefas** – indica se a barra de tarefas é apresentada (**Ativado**) ou ocultada (**Não configurado**) no local público.
+
+    - **Esquema do menu Iniciar** – especifica um ficheiro XML que descreve como as aplicações [são apresentadas no menu Iniciar](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Utilizadores atribuídos** – especifica uma ou mais contas de utilizador associadas à configuração de local público.  A conta para o dispositivo pode ser local ou um início de sessão de conta do Azure AD associado à aplicação de local público.  Especifique contas associadas a domínios com o formato `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

@@ -1,7 +1,7 @@
 ---
 title: "Políticas de configuração de aplicações do Intune | Documentos da Microsoft"
 titlesuffix: Azure portal
-description: "Saiba mais sobre utilizar as políticas de configuração de aplicações do Intune."
+description: "Saiba como utilizar políticas de configuração de aplicações do Intune."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Políticas de configuração de aplicações do Intune
 
 Disponibilize definições quando os utilizadores executarem uma aplicação para iOS ou Android com políticas de configuração de aplicações no Microsoft Intune. Por exemplo, uma aplicação poderá exigir que os utilizadores especifiquem:
 
-- Um número de porta personalizado
-- Definições de idioma
-- Definições de segurança
-- Definições de imagem corporativa tal como um logótipo de empresa
+- Um número de porta personalizado.
+- Definições de idioma.
+- Definições de segurança.
+- Definições de imagem corporativa, como um logótipo de empresa.
 
 Se os utilizadores introduzirem estas definições incorretamente, isso pode aumentar a carga sobre o suporte técnico e tornar mais lenta a adoção de novas aplicações.
 
@@ -38,15 +38,15 @@ Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em 
 
 Tem duas opções sobre como utilizar configurações de aplicações com o Intune:
  - **Dispositivos geridos**  
-   O dispositivo é gerido pelo Intune como o fornecedor de MDM.
+   O dispositivo é gerido pelo Intune como o fornecedor de gestão de dispositivos móveis (MDM).
  - **Aplicações geridas**  
    Uma aplicação é gerida sem inscrição de dispositivos.
 
 ## <a name="apps-that-support-app-configuration"></a>Aplicações que suportam a configuração de aplicações
 
-Pode utilizar políticas de configuração de aplicações para aplicações que as suportam. Para suportar a configuração de aplicações no Intune, as aplicações têm de ter sido escritas de forma a suportarem a utilização das configurações de aplicações. Consulte o seu fornecedor de aplicações para obter detalhes.
+Pode utilizar políticas de configuração de aplicações para aplicações que as suportam. Para suportar a configuração de aplicações no Intune, as aplicações têm de ter sido escritas de forma a suportar a utilização das configurações de aplicações. Consulte o seu fornecedor de aplicações para obter detalhes.
 
-Pode preparar as suas aplicações de linha de negócios ao incorporar o SDK da Aplicação Intune na aplicação ou ao encapsular a aplicação após ter sido desenvolvida. O SDK da Aplicação Intune, disponível para iOS e Android, permite à sua aplicação ter políticas de proteção de aplicações do Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Para obter mais informações, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
+Pode preparar as suas aplicações de linha de negócio ao incorporar o SDK da Aplicação Intune na aplicação ou ao encapsular a aplicação após esta ter sido desenvolvida. O SDK da Aplicação Intune, disponível para iOS e Android, permite à sua aplicação ter políticas de proteção de aplicações do Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Para obter mais informações, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Suporte da Graph API para configuração de aplicações
 
