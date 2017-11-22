@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Serviço Web Symantec PKI Manager
+              href: certificates-symantec-configure.md
         - name: Configurar as definições do Windows Information Protection
           href: windows-information-protection-configure.md
         - name: Gerir Scripts do PowerShell
@@ -425,6 +427,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: Definições do iOS
                   href: app-protection-policy-settings-ios.md
+                - name: Analisar os registos de proteção de aplicações no Managed Browser
+                  href: app-protection-policy-settings-log.md
             - name: Validar as políticas de proteção de aplicações
               href: app-protection-policies-validate.md
             - name: Monitorizar o estado dos utilizadores da proteção de aplicações
