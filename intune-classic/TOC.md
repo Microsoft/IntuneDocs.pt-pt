@@ -95,6 +95,7 @@
 #### [Gerir contratos de licença](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [Resolver conflitos de políticas](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [Gerir alertas](deploy-use/get-notified-by-alerts.md)
+### [Intune no Azure](deploy-use/intune-on-azure.md)
 ## Configurar dispositivos
 ### [Gerir definições e funcionalidades nos seus dispositivos com políticas](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [Definições do iOS](deploy-use/ios-policy-settings-in-microsoft-intune.md)

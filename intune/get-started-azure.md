@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Começar a utilizar o Intune no portal do Azure
 
-Pode encontrar o serviço Intune no portal do Azure. Existem muitos serviços no Azure, mas poderá não utilizar todos no dia a dia. Personalizar o seu dashboard e barra lateral pode ajudá-lo a encontrar as informações adequadas rapidamente, sempre que iniciar sessão em dispositivos geridos com o Intune.
+Pode encontrar o serviço Intune no portal do Azure. Existem muitos serviços no Azure, mas poderá não utilizar todos regularmente. Personalizar o seu dashboard e barra lateral pode ajudá-lo a encontrar as informações adequadas rapidamente, sempre que iniciar sessão em dispositivos geridos com o Intune.
 
 ## <a name="changing-the-sidebar"></a>Alterar a barra lateral
 
-A __barra lateral__ no lado esquerdo do portal do Azure mostra-lhe uma lista de todos os serviços do Azure disponíveis. A vista predefinida desta lista abrangente pode ser modificada para que mantenha uma vista persistente dos serviços mais relevantes para si. Utilizaremos o Intune como exemplo de um serviço a adicionar ao topo da lista.
+A __barra lateral__ no lado esquerdo do portal do Azure mostra-lhe uma lista de todos os serviços do Azure disponíveis. A vista predefinida desta lista abrangente pode ser alterada para que mantenha uma vista persistente dos serviços mais relevantes para si. Utilizaremos o Intune como exemplo de um serviço a adicionar ao topo da lista.
 
 ![Um utilizador a procurar o Intune na lista "Mais serviços".](./media/azure-add-intune1.png)
 
@@ -52,7 +52,7 @@ Esta funcionalidade será mais relevante após adicionar mais conteúdos, como g
 
 ## <a name="using-services"></a>Utilizar serviços
 
-Sempre que abrir o Intune ou outro serviço no Azure, o mesmo será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentados num painel em ecrã inteiro. Quando seleciona uma carga de trabalho, a mesma abre o painel na página inteira. Os outros painéis deslizam a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
+Sempre que abrir o Intune ou outro serviço no Azure, o serviço será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentados num painel em ecrã inteiro. Quando seleciona uma carga de trabalho, a mesma abre o painel na página inteira. Os outros painéis surgem a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
 
 ## <a name="next-steps"></a>Próximos passos
 

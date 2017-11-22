@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector do Intune no local no Microsoft Intune no Azure
 
@@ -134,13 +134,18 @@ Quando o Exchange Connector configurar a ligação, os dispositivos móveis que 
 > [!NOTE]
 > Se instalou o Exchange Connector no Local e, a determinada altura, eliminou a ligação ao Exchange, terá de desinstalar o Exchange Connector no Local do computador em que foi instalado.
 
-## <a name="validate-the-exchange-connection"></a>Validar a ligação ao Exchange
+## <a name="monitor-the-exchange-connector-activity"></a>Monitorizar a atividade do conector do Exchange
 
 Após a configuração com êxito do Exchange Connector, pode ver o estado da ligação e a última tentativa de sincronização efetuada com êxito. Para validar a ligação ao Exchange Connector:
 
-- No Dashboard do Intune, escolha **Acesso no local**. Em **Gerir**, selecione **Acesso do Exchange no local** para verificar o estado da ligação.
+1. No Dashboard do Intune, escolha **Acesso no local**.
+2. Em **Gerir**, selecione **Acesso do Exchange no local** para verificar o estado da ligação.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
 
-## <a name="next-steps"></a>Passos seguintes
+### <a name="system-center-operations-manager-scom-management-pack"></a>Pacote de gestão do System Center Operations Manager (SCOM)
+
+A partir da versão 1710 do Intune, pode utilizar o [pacote de gestão do SCOM para o conector do Exchange e o Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Este pacote de gestão proporciona-lhe várias formas de monitorizar o conector do Exchange quando precisar de resolver problemas.
+
+## <a name="next-steps"></a>Próximos passos
 [Criar uma política de acesso condicional para o Exchange no Local](conditional-access-exchange-create.md)

@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
+            - name: Ecrã do Estado da Inscrição
+              href: windows-enrollment-status.md
         - name: Configurar inscrição do Android
           href: android-enroll.md
         - name: Configurar a inscrição do iOS
@@ -295,7 +297,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: 'Windows 8,1'
+            - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -327,7 +329,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: 'Windows 8,1'
+            - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
@@ -363,8 +365,12 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Serviço Web Symantec PKI Manager
+              href: certificates-symantec-configure.md
         - name: Configurar as definições do Windows Information Protection
           href: windows-information-protection-configure.md
+        - name: Gerir Scripts do PowerShell
+          href: intune-management-extension.md
         - name: Monitorizar as despesas de telecomunicações
           href: telecom-expenses-monitor.md
         - name: Atribuir perfis
@@ -421,6 +427,8 @@
                   href: app-protection-policy-settings-android.md
                 - name: Definições do iOS
                   href: app-protection-policy-settings-ios.md
+                - name: Analisar os registos de proteção de aplicações no Managed Browser
+                  href: app-protection-policy-settings-log.md
             - name: Validar as políticas de proteção de aplicações
               href: app-protection-policies-validate.md
             - name: Monitorizar o estado dos utilizadores da proteção de aplicações
@@ -556,11 +564,11 @@
     - name: Configurar as definições personalizadas dos dispositivos
       href: custom-settings-configure.md
       items:
+        - name: Perfil Wi-Fi com uma chave pré-partilhada
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Perfil Wi-Fi com uma chave pré-partilhada
-              href: wi-fi-profile-shared-key.md
             - name: Perfil VPN por aplicação
               href: android-pulse-secure-per-app-vpn.md
             - name: Permitir/bloquear aplicações no Samsung KNOX Standard
@@ -604,19 +612,23 @@
         - name: Modelo de dados do Armazém de Dados
           href: reports-ref-data-model.md
           items:
+            - name: Representação da duração do utilizador no Armazém de Dados do Intune
+              href: reports-ref-user-timeline.md
             - name: Referência para as entidades de aplicações
               href: reports-ref-application.md
+            - name: Referência para a entidade do utilizador atual
+              href: reports-ref-current-user.md
             - name: Referência para a entidade Date
               href: reports-ref-date.md
             - name: Referência para as entidades de dispositivos
               href: reports-ref-devices.md
-            - name: Referência para a extensão de gestão do Intune
+            - name: Referência para a entidade da extensão de gestão do Intune
               href: reports-ref-intunemanagementextension.md
             - name: Referência para as entidades de gestão de aplicações móveis (MAM)
               href: reports-ref-mobile-app-management.md
             - name: Referência para as entidades de políticas
               href: reports-ref-policy.md
-            - name: Referência para a Associação de Dispositivo do Utilizador
+            - name: Referência para a entidade de associação de dispositivos do utilizador
               href: reports-ref-user-device.md
             - name: Referência para a entidade de utilizador
               href: reports-ref-user.md
