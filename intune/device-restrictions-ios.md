@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
-    
+
 -   **Submissão de dados de diagnóstico** – Permita ou impeça que o dispositivo submeta dados de diagnóstico à Apple.
 -   **Captura de ecrã** – Permita ao utilizador capturar o conteúdo do ecrã como uma imagem.
     - **Observação remota do ecrã através da aplicação Classroom (apenas supervisionado)** – permita ou bloqueie a visualização do ecrã de dispositivos iOS por parte da aplicação Classroom da Apple.
@@ -44,6 +44,54 @@ Também se aplica às definições acessíveis a partir da aplicação de defini
 - **Alterações do perfil de configuração** – Permita que o utilizador instale perfis de configuração.
 - **Bloqueio de Ativação (apenas supervisionado)** – ative o Bloqueio de Ativação em dispositivos iOS supervisionados.
 
+## <a name="configurations-requiring-supervision"></a>Configurações que necessitam de supervisão
+
+O modo supervisionado do iOS só pode ser ativado durante a configuração inicial de dispositivos através do Programa de Registo de Aparelho da Apple ou com o Apple Configurator. Depois de ativar o modo supervisionado, o Intune pode configurar um dispositivo com a seguinte funcionalidade:
+
+- Bloqueio de Aplicação (Modo de Aplicação Única) 
+- Proxy HTTP Global 
+- Ignorar Bloqueio de Ativação 
+- Modo de Aplicação Única Autónomo 
+- Filtro de Conteúdo Web 
+- Definição de fundo e ecrã de bloqueio 
+- Push da Aplicação Silencioso 
+- VPN Sempre Ativada 
+- Permitir exclusivamente a instalação de aplicações geridas 
+- iBookstore 
+- iMessages 
+- Centro de Jogos 
+- AirDrop 
+- AirPlay 
+- Emparelhamento de anfitrião 
+- Sincronização de Nuvem 
+- Pesquisa Spotlight 
+- Handoff 
+- Apagar dispositivo 
+- Restrições da IU 
+- Instalação dos perfis de configuração pela IU 
+- Notícias 
+- Atalhos de teclado 
+- Modificações do código de acesso 
+- Alterações do nome do dispositivo 
+- Alterações da imagem de fundo 
+- Transferências automáticas de aplicações 
+- Alterações à confiança na aplicação de empresa 
+- Apple Music 
+- Mail Drop 
+- Emparelhar com o Apple Watch 
+
+> [!NOTE]
+> A Apple confirmou que determinadas definições irão mudar para apenas supervisionado em 2018. Recomendamos que tenha isto em consideração ao utilizar estas definições em vez de aguardar que a Apple efetue a migração para apenas supervisionado:
+> - Instalação da aplicação por utilizadores finais
+> - Remoção de aplicações
+> - FaceTime
+> - Safari
+> - iTunes
+> - Conteúdos explícitos
+> - Documentos e dados do iCloud
+> - Jogos de vários jogadores
+> - Adicionar amigos do Centro de Jogos
+
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
     -   **Palavras-passe simples** – Permita palavras-passe simples, como 0000 e 1234.
@@ -56,7 +104,7 @@ Também se aplica às definições acessíveis a partir da aplicação de defini
     -   **Expiração de palavra-passe (dias)** – Especifique o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
     -   **Impedir a reutilização de palavras-passe anteriores** – Especifique o número de palavras-passe utilizadas anteriormente que o dispositivo possa ter memorizado.
     -   **Desbloqueio por impressão digital** – Permita a utilização de uma impressão digital para desbloquear dispositivos compatíveis.
-- **Modificação do código de acesso (apenas supervisionado)** – impede que o código de acesso seja alterado, adicionado ou removido. 
+- **Modificação do código de acesso (apenas supervisionado)** – impede que o código de acesso seja alterado, adicionado ou removido.
     - **Modificação de impressão digital (apenas supervisionado)** – impede o utilizador de alterar, adicionar ou remover as definições do Touch ID.
 
 <sup>1</sup>Quando configura as definições **Máximo de minutos de inatividade até o ecrã ser bloqueado** e **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
@@ -89,7 +137,7 @@ Também se aplica às definições acessíveis a partir da aplicação de defini
 
 ## <a name="built-in-apps"></a>Aplicações Incorporadas
 
--   **Câmara** – Selecione se a câmara do dispositivo pode ser utilizada. 
+-   **Câmara** – Selecione se a câmara do dispositivo pode ser utilizada.
     -   **FaceTime** – Permita que a aplicação FaceTime seja utilizada no dispositivo.
 -   **Siri** – Permita a utilização do assistente de voz Siri no dispositivo.
     -   **Siri enquanto o dispositivo está bloqueado** – Permita a utilização do assistente de voz Siri no dispositivo enquanto está bloqueado.
@@ -124,9 +172,7 @@ Os perfis de dispositivo que contêm as definições de aplicações restritas t
 Exemplo: procure Microsoft Word para iPad. O URL que irá utilizar será https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
-
-
+> Também pode utilizar o iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
 
 ### <a name="additional-options"></a>Opções adicionais
 
@@ -247,7 +293,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quand
 No campo **URL de Domínio Web**, adicione um ou mais URLs à lista. Quando os documentos são transferidos a partir de domínios especificados, estes serão considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domínios de preenchimento automático de palavras-passe do Safari
+### <a name="safari-password-autofill-domains"></a>Domínios de preenchimento automático de palavras-passe do Safari
 
 No campo **URL de Domínio**, adicione um ou mais URLs à lista. Os utilizadores só podem guardar as palavras-passe Web de URLs nesta lista. Esta definição aplica-se apenas ao browser Safari e aos dispositivos iOS 9.3 e posterior no modo supervisionado. Se não especificar nenhum URL, as palavras-passe poderão ser guardadas a partir de todos os sites.

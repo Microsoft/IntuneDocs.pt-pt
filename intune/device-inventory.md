@@ -3,10 +3,10 @@ title: "Ver o inventário de dispositivos do Intune"
 titlesuffix: Azure portal
 description: "Saiba como ver os dispositivos que gere com o Intune e compreender o respetivo hardware e aplicações instaladas.\""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 09/05/2017
+author: arob98
+ms.author: angrobe
+nmanager: angrobe
+ms.date: 11/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e74651acf11ff0ea88531460d030e03749520a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 17916d513b338716a62f165545bdf44a3216bbe9
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Como ver o inventário de dispositivos do Intune
 
@@ -39,19 +39,11 @@ Agora, selecione uma das seguintes opções:
 - **Gerir** – Escolha **Todos os Dispositivos** para ver uma lista de todos os dispositivos que gere.
     Selecione um desses dispositivos na lista para abrir o painel <*nome do dispositivo*> **Descrição Geral**, onde pode selecionar uma das opções:
     - **Descrição Geral** – veja as informações gerais do dispositivo, incluindo o respetivo nome, o proprietário, se é um dispositivo BYOD, quando foi efetuado o registo e mais.
-    ![Descrição geral do dispositivo](./media/device-overview.png)
     - **Hardware** – veja informações mais detalhadas sobre o dispositivo, incluindo o espaço de armazenamento livre, o modelo e fabricante e mais.
-    ![Inventário do hardware do dispositivo gerido](./media/hardware-inventory.png)
     - **Aplicações detetadas** – apresenta uma lista de todas as aplicações que o Intune encontrou instaladas no dispositivo.
-    ![Nó das aplicações detetadas](./media/detected-applications.png)
-    
-
-
     - **Conformidade do dispositivo** – apresenta o estado de conformidade de todas as políticas de conformidade que foram atribuídas ao dispositivo.
     - **Configuração do dispositivo** – apresenta o estado de conformidade de todas as políticas de configuração do dispositivo que foram atribuídas ao mesmo.
 - **Monitorizar** – selecione **Ações do Dispositivo** para ver uma lista das ações do dispositivo que foram realizadas nos dispositivos que gere e o estado atual dos mesmos.
 - **Configuração** > **Conector do TeamViewer** – permite-lhe configurar a administração remota em dispositivos que utilizam o software TeamViewer. Para obter detalhes, veja [Fornecer assistência remota para dispositivos Android geridos pelo Intune](/intune/device-profile-android-teamviewer).
 
->[!NOTE]
-> O Intune recolhe o inventário de aplicações apenas nos dispositivos pertencentes à empresa. As aplicações não são inventariadas em dispositivos pessoais. Para PCs com o Windows 10, apenas é recolhido o inventário de aplicações modernas em dispositivos pertencentes à empresa. O Intune não recolhe informações de aplicações Win32 no dispositivo.
-> Consoante a operadora que utilizar nos dispositivos, alguns itens de inventário poderão não ser recolhidos.
+O Intune recolhe o inventário de aplicações apenas nos dispositivos pertencentes à empresa. As aplicações não são inventariadas em dispositivos pessoais. Para PCs com o Windows 10, apenas é recolhido o inventário de aplicações modernas em dispositivos pertencentes à empresa. O Intune não recolhe informações de aplicações Win32 no dispositivo. Consoante a operadora que utilizar nos dispositivos, alguns itens de inventário poderão não ser recolhidos.

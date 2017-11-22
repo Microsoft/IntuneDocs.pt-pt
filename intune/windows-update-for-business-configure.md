@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O Windows como um Serviço é a maneira ideal de atualizar dispositivos com Windows 10. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Tal significa que, desde que instale a atualização mais recente, sabe que os dispositivos Windows 10 estão completamente atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
+O Windows como um Serviço é a maneira ideal de atualizar dispositivos com Windows 10. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Ou seja, desde que instale a atualização mais recente, pode ter a certeza de que os seus dispositivos Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
 
 Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações para não ter de aprovar atualizações individuais para grupos de dispositivos. Pode continuar a gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações e o Windows Update garante que as atualizações são instaladas no momento certo. O Microsoft Intune permite configurar definições de atualizações nos dispositivos e dá-lhe a capacidade de diferir a instalação de atualizações. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem diretamente ao Windows Update para obter as atualizações. Utilize o Intune para configurar e gerir **cadências de atualização do Windows 10**. Um anel de atualização contém um grupo de definições que configuram quando e como as atualizações do Windows 10 são instaladas. Por exemplo, pode configurar o seguinte:
 
-- **Servicing Branch do Windows 10**: escolha se pretende que grupos de dispositivos recebam atualizações a partir do Current Branch ou do Current Branch for Business.  
+- **Canal de Manutenção do Windows 10**: escolha se pretende que os grupos de dispositivos recebam atualizações da Via de Atualizações Semianuais (Direcionada) ou da Via de Atualizações Semianuais.  
 - **Definições de Diferimento**: configure as definições de diferimento das atualizações para atrasar as instalações de atualizações para grupos de dispositivos. Utilize estas definições para obter uma implementação de atualização faseada para que possa rever o progresso ao longo do processo.
 - **Colocar em pausa**: adie a instalação de atualizações se detetar um problema em qualquer momento durante a implementação das atualizações.
 - **Janela de manutenção**: configure as horas nas quais as atualizações possam ser instaladas.
@@ -78,7 +78,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 5. No painel que apresenta a lista de anéis de atualização, escolha **Criar**.
 6. No painel **Criar Anel de Atualização**, indique um nome e uma descrição opcional para o anel de atualização e, em seguida, escolha **Definições**.
 7. No painel **Definições**, configure as informações seguintes:
-    - **Servicing branch**: defina o ramo para o qual o dispositivo recebe atualizações do Windows (Current Branch ou Current Branch for Business).
+    - **Canal de manutenção**: defina a via através da qual o dispositivo recebe atualizações do Windows (Via de Atualizações Semianuais (Direcionada) ou Via de Atualizações Semianuais).
     - **Atualizações da Microsoft**: escolha se pretende procurar atualizações da aplicação no Microsoft Update.
     - **Controladores do Windows**: escolha se pretende excluir controladores do Windows Update durante as atualizações.
     - **Comportamento da atualização automática**: escolha como pretende gerir o comportamento da atualização automática para procurar, transferir e instalar atualizações. Para obter mais detalhes, veja [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -87,12 +87,12 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
     Geralmente, as Atualizações de Qualidade são correções e melhorias às funcionalidades do Windows existentes e, normalmente, são publicadas na primeira terça-feira de cada mês, embora possam ser lançadas em qualquer altura pela Microsoft. Pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Qualidade, após a sua disponibilidade.
     - **Período de diferimento da atualização de funcionalidades (dias)** – especifique o número de dias de diferimento das Atualizações de Funcionalidades. Pode diferir a receção destas Atualizações de Funcionalidades durante um período máximo de 180 dias após o seu lançamento.
 
-    Geralmente, as Atualizações de Funcionalidades são novas funcionalidades do Windows. Depois de configurar a definição **Servicing branch** (**CB** ou **CBB**), pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Funcionalidades, após a sua disponibilidade da Microsoft no Windows Update.
+    Geralmente, as Atualizações de Funcionalidades são novas funcionalidades do Windows. Depois de configurar a definição **Canal de manutenção** (Via de Atualizações Semianuais (Direcionada) ou Via de Atualizações Semianuais), pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Funcionalidades após serem disponibilizadas pela Microsoft no Windows Update.
 
     Por exemplo:  
-    **Se o Servicing branch estiver definido como CB e o período de diferimento for de 30 dias**: vamos supor que a Atualização de Funcionalidades X está disponível publicamente pela primeira vez no Windows Update como um CB em janeiro. O dispositivo só irá receber a atualização em fevereiro – 30 dias mais tarde.
+    **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais (Direcionada) e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. O dispositivo só irá receber a atualização em fevereiro – 30 dias mais tarde.
 
-    **Se o Servicing branch estiver definido como CBB e o período de diferimento for de 30 dias**: vamos supor que a Atualização de Funcionalidades X está disponível publicamente pela primeira vez no Windows Update como um CB em janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada para o CBB. O dispositivo irá receber a Atualização de Funcionalidades 30 dias após o lançamento deste CBB e será atualizado na maio.
+    **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada na Via de Atualizações Semianuais. O dispositivo irá receber a Atualização de Funcionalidades 30 dias após o lançamento na Via de Atualizações Semianuais e será atualizado em maio.
 
     - **Otimização da entrega** – escolha o método para o qual os dispositivos irão transferir as atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Quando tiver terminado, clique em **OK** e, no painel **Criar Anel de Atualização**, clique em **Criar**.
@@ -112,7 +112,7 @@ Reveja um relatório das políticas para ver o estado de implementação das cad
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Atualizações de Software**.
-4. No painel **Atualizações de Software**, selecione **Descrição Geral**. Aqui, poderá ver informações gerais sobre o estado de qualquer cadência de atualização que atribuiu.
+4. No painel **Atualizações de Software**, selecione **Descrição Geral**. Aqui, poderá ver informações gerais sobre o estado de qualquer cadência de atualizações que tenha atribuído.
 5. Abra um dos seguintes relatórios: 
      
    **Para todas as cadências de implementação:**

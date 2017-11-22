@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -60,16 +60,16 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
     ![Feed OData](media/reports-create-01-odatafeed.png)
 
-9. Clique em **OK**.
+9. Selecione **OK**.
 10. Selecione **Conta escolar ou profissional** e, em seguida, inicie sessão com as suas credenciais do Intune. 
 
     ![Credenciais da conta escolar ou profissional](media/reports-create-02-org-account.png)
 
-11. Clique em **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune. 
+11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune. 
 
     ![O Navegador](media/reports-create-02-loadentities.png)
 
-12. Selecione as tabelas **Dispositivos** e **TiposdeProprietário**.  Clique em **Carregar**. O Power BI carrega os dados para o modelo.
+12. Selecione as tabelas **Dispositivos** e **TiposdeProprietário**.  Selecione **Carregar**. O Power BI carrega os dados para o modelo.
 
 ## <a name="create-a-relationship"></a>Criar uma relação 
 
@@ -77,8 +77,8 @@ Pode importar múltiplas tabelas para analisar não só os dados numa única tab
 
 ![Gerir relações](media/reports-create-03-managerelationships.png)
 
-1. Clique em **Gerir Relações**.
-2. Clique em **Deteção automática...**, caso o Power BI ainda não tenha detetado as relações.  
+1. Selecione **Gerir Relações**.
+2. Selecione **Deteção automática...** caso o Power BI não tenha ainda detetado as relações.  
 A relação é apresentada numa coluna De para uma coluna Para. Neste exemplo, o campo de dados **ChavedoTipodeProprietário** na tabela **Dispositivos** liga-se ao campo de dados **ChavedoTipodeProprietário** na tabela **TiposdeProprietário**. Utiliza as relações para procurar um nome simples do código do tipo de dispositivo na tabela **Dispositivos**.
 
 ## <a name="create-a-treemap-visualization"></a>Criar uma visualização de treemap
@@ -100,7 +100,7 @@ Agora tem um elemento visual que nos mostra a distribuição de fabricantes de d
 
 Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação. 
 
-1. Clique na tela do relatório e, em seguida, clique no **ícone Segmentação de Dados** (![Treemap com dados](media/reports-create-slicer.png)) em **Visualizações** para adicionar um filtro.
+1. Selecione a tela do relatório e, em seguida, selecione o **ícone Segmentação de Dados** (![Treemap com dados](media/reports-create-slicer.png)) em **Visualizações** para adicionar um filtro.
 2. Localize a tabela **TiposdeProprietário** e arraste o campo de dados **NomedoTipodeProprietário** na secção **Filtros** no painel **Visualizações**.  
    Na tabela Dispositivos, existe um campo de dados denominado **ChavedoTipodeProprietário** que contém um código que identifica se um dispositivo é pessoal ou pertencente à empresa. Uma vez que pretende mostrar nomes amigáveis neste filtro, procure a tabela **TiposdeProprietário** e arraste o **NomedoTipodeProprietário**. Este é um exemplo de como o modelo de dados suporta relações entre tabelas.
 
@@ -108,10 +108,10 @@ Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicion
 
 Agora tem um filtro interativo que pode ser utilizado para alternar entre dispositivos pessoais e dispositivos pertencentes à empresa para ver como a distribuição é alterada.
 
-1. Clique em **Empresa** para ver a distribuição de dispositivos pertencentes à empresa.
-2. Clique em **Pessoal** para ver os dispositivos pessoais.
+1. Selecione **Empresa** para ver a distribuição de dispositivos pertencentes à empresa.
+2. Selecione **Pessoal** para ver os dispositivos pessoais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
  - Saiba mais sobre como [criar e gerir relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
  - Consulte o [Modelo do Armazém de Dados do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).
