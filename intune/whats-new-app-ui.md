@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Isto pode ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
 
+## <a name="week-of-november-13-2017"></a>Semana de 13 de novembro de 2017
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa para iOS na versão 2.9.0 <!---1417174--->
+
+Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. Também tornámos o tipo de linguagem mais específico para a sua empresa ao utilizar o nome da mesma em todo o texto de configuração.
+
+> [!NOTE]
+> Utilizamos o nome da empresa definido no Portal do Azure em **Microsoft Intune** > **Aplicações Móveis** > **imagem corporativa do Portal da Empresa** > **Nome da empresa**. Se não tiver definido este valor, utilizaremos o nome do inquilino definido em **Azure Active Directory** > **Propriedades** > **Nome**. Se não tiver definido um nome de empresa na imagem corporativa do Portal da Empresa e não pretender que o nome do inquilino seja apresentado, recomendamos que defina o nome da empresa no separador Imagem corporativa do Portal da Empresa. Se não pretender que esta cadeia seja apresentada no cabeçalho do Portal da Empresa, poderá desmarcar a caixa de verificação “Mostrar o nome da empresa ao lado do logótipo”.
+
+|Antes|Depois|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Combinado com o passo anterior*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>Semana de 6 de novembro de 2017
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Atualizações à aplicação Portal da Empresa para Windows 10 <!--1299474-->
+A página Definições na aplicação Portal da Empresa para Windows 10 foi atualizada para tornar as definições e as ações do utilizador em causa mais consistentes em todas as definições. Também foi atualizada para corresponder ao esquema de outras aplicações do Windows.
+
+|Antes|Depois|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Melhorias na pesquisa no site e nas aplicações do Portal da Empresa <!--1418189-->
 Agora, as aplicações do Portal da Empresa utilizam pesquisas em categorias, nomes e descrições de aplicações. Os resultados são ordenados por ordem decrescente de relevância. Estas atualizações também estão disponíveis no [Site do Portal da Empresa](https://portal.manage.microsoft.com).
 
-Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação "Comentários" na parte inferior do site do Portal da Empresa.
-
-
+Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação “Comentários” na parte inferior do site do Portal da Empresa.
 
 ## <a name="week-of-october-16-2017"></a>Semana de 16 de outubro de 2017
 
@@ -40,15 +65,11 @@ Estamos a melhorar as nossas capacidades de pesquisa da aplicação, a começar 
 
 Os utilizadores do iOS também receberão esta alteração, uma vez que o site do Portal da Empresa também é utilizado como parte da aplicação Portal da Empresa para iOS. As aplicações do Portal da Empresa para Android e Windows irão receber atualizações semelhantes nos próximos meses.
 
-Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação "Comentários" na parte inferior do site do Portal da Empresa.
+Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação “Comentários” na parte inferior do site do Portal da Empresa.
 
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>O Portal da Empresa para iOS apresenta ícones grandes <!-- 1454593 -->
 Esta versão corrige um problema conhecido sobre a forma como o Portal da Empresa para iOS apresenta os ícones no mosaico da aplicação. Se carregar ícones da aplicação de 120x120 píxeis ou superior, serão agora apresentados no [site do Portal da Empresa](https://portal.manage.microsoft.com) e nas páginas das aplicações do Portal da Empresa para iOS com o tamanho máximo do mosaico da aplicação.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>Semana de 2 de outubro de 2017
@@ -130,11 +151,11 @@ As caixas de diálogo da Gestão de Aplicações Móveis (MAM) do Intune serão 
 ![interface moderna](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Atualizações à página "Detalhes do Dispositivo" na aplicação Portal da Empresa para Windows 10 <!---1287448--->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Atualizações à página “Detalhes do Dispositivo” na aplicação Portal da Empresa para Windows 10 <!---1287448--->
 
 A aplicação Portal da Empresa para Windows 10 irá mudar a etiqueta __Categoria__ da parte de baixo do título para uma propriedade na página __Detalhes do Dispositivo__.
 
-![A aplicação Portal da Empresa para o ecrã "Detalhes do Dispositivo" do Windows, que mostra o campo "Categorias" como uma propriedade e não diretamente abaixo do título desse ecrã.](./media/cp_win10_category_tag_move_after_1708.png)
+![A aplicação Portal da Empresa para o ecrã “Detalhes do Dispositivo” do Windows, que mostra o campo “Categorias” como uma propriedade e não diretamente abaixo do título desse ecrã.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="july-2017"></a>Julho de 2017
 
@@ -197,7 +218,7 @@ Com base no feedback dos clientes, modificámos a aplicação Portal da Empresa 
 
 O utilizador irá tocar no botão **Aceder a Conteúdos da Empresa** em vez de a começar a inscrever o dispositivo.
 
-![Uma imagem da aplicação Portal da Empresa para Android, que mostra o texto "Aceder a Conteúdos da Empresa" em tamanho grande, ao meio, em vez de apresentar de imediato as opções de inscrição, como acontece normalmente](./media/and_access_company_content_after_1706.png)
+![Uma imagem da aplicação Portal da Empresa para Android, que mostra o texto “Aceder a Conteúdos da Empresa” em tamanho grande, ao meio, em vez de apresentar de imediato as opções de inscrição, como acontece normalmente](./media/and_access_company_content_after_1706.png)
 
 O utilizador é direcionado para o site do Portal da Empresa para autorizar a aplicação para utilização no respetivo dispositivo, onde o site do Portal da Empresa verifica as credenciais.
 
@@ -220,13 +241,13 @@ A aplicação Portal da Empresa para Windows 10 vai incluir uma experiência de
 
 Esta atualização só é visível em dispositivos com a Atualização de Aniversário do Windows 10 (compilação 1607) ou superior.
 
-![Uma imagem da página de destino da aplicação Portal da Empresa no Windows 10, com uma mensagem de estado no meio da lista "dispositivos" a informar o utilizador que o dispositivo que está a utilizar ainda não foi configurado para utilização empresarial e que o utilizador deve selecionar a mensagem para iniciar a configuração.](./media/win10_guided_enroll_select_setup_after_1706.png)
+![Uma imagem da página de destino da aplicação Portal da Empresa no Windows 10, com uma mensagem de estado no meio da lista “dispositivos” a informar o utilizador que o dispositivo que está a utilizar ainda não foi configurado para utilização empresarial e que o utilizador deve selecionar a mensagem para iniciar a configuração.](./media/win10_guided_enroll_select_setup_after_1706.png)
 
 ![Uma imagem da página de configuração da aplicação Portal da Empresa no Windows 10, que apresenta um aviso a indicar que o utilizador precisa de adicionar uma conta empresarial a este dispositivo para poder inscrevê-lo para gestão.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Uma imagem da página "adicionar uma conta empresarial a este dispositivo" da aplicação Portal da Empresa no Windows 10 a informar o utilizador que terá de aceder à aplicação Definições e selecionar "Ligar" para concluir a inscrição. Depois disto, o ecrã indica que o utilizador tem de regressar à aplicação Portal da Empresa para concluir a inscrição.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Uma imagem da página “adicionar uma conta empresarial a este dispositivo” da aplicação Portal da Empresa no Windows 10 a informar o utilizador que terá de aceder à aplicação Definições e selecionar “Ligar” para concluir a inscrição. Depois disto, o ecrã indica que o utilizador tem de regressar à aplicação Portal da Empresa para concluir a inscrição.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
-![Uma imagem do ecrã de inscrição para gestão da aplicação Portal da Empresa no Windows 10, a mostrar uma mensagem com o estado concluído, a indicar que o dispositivo do utilizador já está inscrito e que deve tocar no botão "seguinte" para continuar.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
+![Uma imagem do ecrã de inscrição para gestão da aplicação Portal da Empresa no Windows 10, a mostrar uma mensagem com o estado concluído, a indicar que o dispositivo do utilizador já está inscrito e que deve tocar no botão “seguinte” para continuar.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
 ![Uma imagem do ecrã de conclusão da aplicação Portal da Empresa no Windows 10 a informar o utilizador de que tudo está pronto e que o dispositivo está devidamente inscrito numa conta empresarial adicionada ao mesmo.](./media/win10_guided_enroll_youre_all_set_after_1706.png)
 
@@ -301,7 +322,7 @@ Uma atualização à aplicação Portal da Empresa para Android mostra um indica
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Estado da instalação de aplicações melhorado para a aplicação Portal da Empresa do Windows 10 <!--676495-->
 A aplicação do Portal da Empresa do Windows 10 apresenta agora uma barra de progresso da instalação na página de detalhes da aplicação. A barra de progresso está presente nas aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores.
 
-__Antes__ ![Uma imagem da versão anterior do ecrã de carregamento em que o estado mostrava simplesmente "a instalar".](./media/cp_win10_install_status_before_1704.png)
+__Antes__ ![Uma imagem da versão anterior do ecrã de carregamento em que o estado mostrava simplesmente “a instalar”.](./media/cp_win10_install_status_before_1704.png)
 
 __Depois__ ![Uma imagem da versão atualizada do ecrã de carregamento que mostra agora uma barra de progresso da instalação.](./media/cp_win10_install_status_after_1704.png)
 
@@ -349,7 +370,7 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 
 __Atualização das Aplicações em Destaque__: adicionámos ao site uma página dedicada em que os utilizadores podem procurar aplicações que optaram por destacar e otimizámos a IU da secção Destaques na home page.
 
-![Os mosaicos coloridos que mostram as aplicações. São grandes quadrados coloridos abaixo de cada aplicação. As cores destes quadrados são extraídas da cor principal do logótipo da respetiva aplicação. A secção "Aplicações em Destaque" é apresentada na parte superior da aplicação Portal da Empresa.](./media/cp_win10_colorful_tiles_after_1708.png)
+![Os mosaicos coloridos que mostram as aplicações. São grandes quadrados coloridos abaixo de cada aplicação. As cores destes quadrados são extraídas da cor principal do logótipo da respetiva aplicação. A secção “Aplicações em Destaque” é apresentada na parte superior da aplicação Portal da Empresa.](./media/cp_win10_colorful_tiles_after_1708.png)
 
 ### <a name="see-also"></a>Veja também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
