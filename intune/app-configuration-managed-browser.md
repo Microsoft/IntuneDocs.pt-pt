@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas do Managed Browser com o Microsoft Intune
 
@@ -100,8 +100,9 @@ O Intune Managed Browser e o [Proxy de Aplicações do Azure AD]( https://docs.m
 
 - Configure as suas aplicações internas através do Proxy de Aplicações do Azure AD.
     - Para configurar o Proxy de Aplicações e publicar aplicações, veja a [documentação de configuração]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-    - Tem de utilizar a versão mínima da aplicação Managed Browser 1.2.0.
-    - Os utilizadores da aplicação Managed Browser têm uma [política de proteção de aplicações do Intune]( app-protection-policy.md) atribuída à aplicação.
+- Tem de utilizar a versão mínima da aplicação Managed Browser 1.2.0.
+- Os utilizadores da aplicação Managed Browser têm uma [política de proteção de aplicações do Intune]( app-protection-policy.md) atribuída à aplicação.
+Nota: os dados de redirecionamento do Proxy das Aplicações Atualizadas podem demorar até 24 horas a entrar em vigor no Managed Browser.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Passo 1: ativar o redirecionamento automático para o Managed Browser a partir do Outlook
 O Outlook tem de estar configurado com uma política de proteção de aplicações que ative a definição **Restringir o conteúdo Web a apresentar no Managed Browser**.
@@ -218,6 +219,8 @@ Também pode abrir o Browser no modo de resolução de problemas a partir da apl
 1. Abra o Managed Browser.
 2. Escreva `about:intunehelp` na caixa de endereço.
 O Browser inicia o modo de resolução de problemas.
+
+Para obter uma lista das definições armazenados nos registos das aplicações, veja [Review app protection logs in the Managed Browser (Rever os registos de proteção das aplicações no Managed Browser)](app-protection-policy-settings-log.md).
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Segurança e privacidade do Managed Browser
 
