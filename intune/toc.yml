@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Criar a política para Android for Work
           href: compliance-policy-create-android-for-work.md
+        - name: Criar uma política para ativar o Google Play Protect
+          href: compliance-policy-create-google-play-protect.md
         - name: Criar a política para iOS
           href: compliance-policy-create-ios.md
         - name: Criar a política para macOS
