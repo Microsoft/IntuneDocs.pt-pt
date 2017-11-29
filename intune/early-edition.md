@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f7cc595655950ef1bf2586e939b6f02e270e7afc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
+ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2017"></a>A edição antecipada do Microsoft Intune – novembro de 2017
+# <a name="the-early-edition-for-microsoft-intune---december-2017"></a>A edição antecipada do Microsoft Intune – dezembro de 2017
 
 A **edição antecipada** oferece uma lista de funcionalidades disponíveis em versões futuras do Microsoft Intune. Esta informação é fornecida numa base limitada e está sujeita a alterações. Não partilhe estas informações fora da sua empresa. Algumas funcionalidades aqui indicadas estão em risco de não serem incluídas dentro das datas limite e podem ser adiadas até uma versão futura. Outras funcionalidades estão a ser testadas numa implementação piloto (distribuição de pacotes piloto) para garantir que estão prontas para os clientes. Contacte o seu contacto do grupo de produtos da Microsoft se tiver dúvidas ou preocupações.
 
@@ -39,7 +39,102 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 
 ## <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
 
+### <a name="app-protection-policies-----679615---"></a>Políticas de Proteção de Aplicações <!-- 679615 -->
+As Políticas de Proteção de Aplicações do Intune permitirão criar políticas predefinidas globais para ativar rapidamente a proteção em todos os utilizadores em todo o inquilino.
 
+### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>Revogar aplicações Programa Comprado em Volume para iOS <!-- 820863 -->
+Para um determinado dispositivo que tenha uma ou mais aplicações Programa Comprado em Volume (VPP) para iOS, será capaz de revogar a licença de aplicação baseada em dispositivos associados do dispositivo. Revogar a licença de uma aplicação não desinstala a aplicação VPP relacionada do dispositivo. Para desinstalar uma aplicação VPP, tem de alterar a ação de atribuição para **Desinstalar**. Para obter mais informações, veja [Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune](vpp-apps-ios.md).
+
+### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Revogar licenças para um token de Programa Comprado em Volume para iOS<!-- 820870 -->
+Será capaz de revogar a licença de todas as aplicações Programa Comprado em Volume (VPP) para iOS para um determinado Token VPP.
+
+### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Eliminar um token de Programa Comprado em Volume para iOS <!-- 820879 -->
+Poderá eliminar o token de Programa Comprado em Volume (VPP) para iOS através da consola. Tal poderá ser preciso quando tiver ocorrências duplicadas de um token de VPP.
+
+### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Relatórios de registo de dispositivos de Controlo de Acesso à Rede (NAC) <!-- 1232250 -->
+Antes desta alteração, os administradores de TI não podiam determinar, do lado do Intune, se um dispositivo gerido pelo NAC estava a comunicar ou não com a solução de NAC. Quando um dispositivo gerido pelo NAC não está a comunicar com a solução de NAC, o dispositivo é considerado não conforme pela solução de NAC e, por conseguinte, é bloqueado pela mesma e subsequentemente bloqueado pelas políticas de acesso condicional que dependem do estado de conformidade do dispositivo.
+
+Com esta alteração, os administradores de TI podem ver os dispositivos geridos pelo NAC que comunicaram com êxito com a solução de NAC. Esta nova capacidade consiste em duas novas funções de monitorização localizadas na carga de trabalho Conformidade do dispositivo no Intune. As estatísticas são apresentadas abaixo:
+- **Média das chamadas do NAC na última hora**
+- **Último pedido recebido do NAC (data/hora)**
+
+### <a name="new-ios-device-action------1244701---"></a>Nova ação do dispositivo iOS <!-- 1244701 -->
+Pode encerrar os dispositivos iOS 10.3 supervisionados. Esta ação encerra o dispositivo imediatamente sem avisar o utilizador final. A ação **Encerrar (apenas os supervisionados)** encontra-se nas propriedades do dispositivo ao selecionar um dispositivo na carga de trabalho **Dispositivo**.
+
+### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>A VPN da Palo Alto é agora suportada <!-- 1333680 eeready -->
+A lista **Tipo de ligação** incluirá a VPN da Palo Alto quando configurar a VPN base.
+
+### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>Suporte para vários conectores para o processamento de certificados PFX e SCEP <!-- 1361755 eeready -->
+Os clientes que utilizam o conector do NDES no local para entregar certificados para os dispositivos poderão configurar vários conectores num único inquilino.
+
+Esta nova capacidade suporta o seguinte cenário:
+
+- **Elevada disponibilidade**
+
+    Cada conector do NDES obtém os pedidos de certificados do Intune.  Se um conector do NDES ficar offline, o outro conector poderá continuar a processar pedidos.
+
+### <a name="new-automatic-redeployment-setting----1469168---"></a>Nova definição de reimplementação automática <!-- 1469168 -->
+Esta definição permite aos utilizadores com direitos administrativos eliminarem todos os dados do utilizador e as definições através de **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo será automaticamente reconfigurado e reinscrito na gestão.
+
+Esta definição encontra-se em Windows 10 -> Restrições de dispositivos -> Geral -> Reimplementação automática.
+
+### <a name="install-office-apps-on-macos-devices----1494311---"></a>Instalar aplicações do Office em dispositivos macOS <!-- 1494311 -->
+Poderá instalar aplicações do Office em dispositivos macOS. Este novo tipo de aplicação permitirá a instalação do Word, Excel, PowerPoint, Outlook e OneNote. Estas aplicações também vêm com o Microsoft AutoUpdater (MAU) para ajudar a manter as suas aplicações protegidas e atualizadas.
+
+### <a name="surface-hub-resource-account-supported----1566442-eeready---"></a>Conta de recurso Surface Hub suportada <!-- 1566442 eeready -->
+Será adicionada uma nova ação do dispositivo para que os administradores possam definir e atualizar a conta de recurso associada a um Surface Hub.
+
+A conta de recurso é utilizada por um Surface Hub para se autenticar com o Skype/Exchange para que possa participar numa reunião. Pode criar uma conta de recurso exclusiva para que o Surface Hub apareça na reunião como a sala de conferência. Por exemplo, a conta de recursos pode aparecer como a *Sala de Conferência B41/6233*. Normalmente, a conta de recurso (conhecida como a conta do dispositivo) do Surface Hub tem de ser configurada para a localização da sala de conferência e sempre que outros parâmetros da conta de recurso precisarem ser alterados.
+
+Quando os administradores querem atualizar a conta de recurso num dispositivo, têm de indicar as credenciais do Active Directory/Azure Active Directory atuais associadas ao dispositivo. Se a rotação da palavra-passe estiver ativada no dispositivo, os administradores terão de aceder ao Azure Active Directory para localizar a palavra-passe.
+
+> [!NOTE]
+> Todos os campos são enviados para baixo num pacote e substituem todos os campos que foram anteriormente configurados. Os campos vazios também substituem os campos existentes.
+
+Seguem-se as definições que os administradores podem configurar:
+
+- **Conta de recurso**  
+
+   - **Utilizador do Active Directory**   
+   Nomedomínio\nomeutilizador ou Nome Principal de Utilizador (UPN): user@domainname.com
+   - **Palavra-passe**
+
+
+- **Parâmetros da conta de recurso opcionais** (têm de ser definidos com a conta de recurso especificada)
+   - **Período de rotação da palavra-passe**   
+     Garante que a palavra-passe da conta é atualizada automaticamente pelo Surface Hub todas as semanas por motivos de segurança. Para configurar quaisquer parâmetros depois de ativar esta opção, terá primeiro de repor a palavra-passe na conta no Azure Active Directory.
+
+   - **Endereço do protocolo SIP (Session Initiation Protocol)**    
+     Usado apenas quando a autodiscovery falhar.
+
+   - **E-mail**    
+     Endereço de e-mail da conta de recurso/dispositivo.
+
+   - **Exchange server**    
+     Só é preciso quando a autodiscovery falhar.
+
+   - **Sincronização do calendário**    
+     Especifica se a sincronização do calendário e outros serviços do Exchange Server estão ativados. Por exemplo: reunião de sincronização.
+
+### <a name="intune-now-provides-the-account-move-operation-----1573558-1579830---"></a>O Intune proporciona agora a operação Mover Conta <!-- 1573558, 1579830 -->
+A operação **Mover Conta** migra um inquilino de uma Unidade de Escala do Azure (ASU) para outra. A operação **Mover Conta** pode ser utilizada para os cenários iniciados pelo cliente, quando telefona para a equipa de suporte do Intune para a pedir, e também pode ser um cenário impulsionado pela Microsoft onde a Microsoft tem de fazer ajustes ao serviço no back-end. Durante a operação **Mover Conta**, o inquilino entra no modo só de leitura (ROM). As operações do serviço, como inscrever, mudar o nome de dispositivos e atualizar o estado de conformidade, falharão durante o período do ROM.
+
+### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>Novas definições do perfil de configuração do dispositivo do Centro de Segurança do Windows Defender (WDSC) <!-- 1335507 -->
+O Intune adiciona uma nova secção de definições do perfil de configuração do dispositivo na Endpoint Protection com o nome **Centro de Segurança do Windows Defender**. Os administradores de TI podem configurar os pilares aos quais os utilizadores finais da aplicação do Centro de Segurança do Windows Defender podem aceder. Se um administrador de TI ocultar um pilar na aplicação do Centro de Segurança do Windows Defender, nenhuma das notificações relacionadas com o pilar oculto serão apresentadas no dispositivo do utilizador.
+
+Estes são os pilares que os administradores podem ocultar das definições do perfil de configuração do dispositivo do Centro de Segurança do Windows Defender:
+- Proteção contra vírus e ameaças
+- Desempenho e funcionamento do dispositivo
+- Proteções de rede e de firewall
+- Controlo de aplicações e browsers
+- Opções de famílias
+
+Os administradores de TI também podem personalizar as notificações que os utilizadores recebem. Por exemplo, pode configurar se os utilizadores recebem todas as notificações geradas por pilares visíveis no WDSC ou apenas as notificações críticas. As notificações não críticas incluem resumos periódicos da atividade e das notificações do Antivírus do Windows Defender quando as análises estiverem concluídas. Todas as outras notificações são consideradas críticas. Além disso, também pode personalizar o próprio conteúdo da notificação, por exemplo, pode proporcionar as informações de contacto de TI para incorporar nas notificações que são apresentadas nos dispositivos dos utilizadores.
+
+
+
+
+<!-- the following are present prior to 1712 -->
 ### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>Atribuir aplicações móveis do Office 365 a dispositivos iOS e Android ao utilizar o tipo de aplicação incorporada <!-- 1332318 -->
 O tipo de aplicação **Incorporada** permite-lhe criar e atribuir aplicações do Office 365 mais facilmente aos dispositivos iOS e Android que está a gerir. Estas aplicações incluem aplicações do O365, tais como o Word, Excel, PowerPoint e OneDrive. Pode atribuir aplicações específicas ao tipo de aplicação e editar a configuração de informações da aplicação.
 

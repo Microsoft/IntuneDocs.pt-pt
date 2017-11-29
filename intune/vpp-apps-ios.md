@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,35 +15,37 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b2f2e174c459508dc30a63ab9de3bf1cc069173
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A iOS App Store permite-lhe comprar várias licenças para uma aplicação que pretende executar na sua empresa. Comprar múltiplas cópias de uma aplicação ajuda a reduzir a sobrecarga administrativa de controlar múltiplas cópias das aplicações adquiridas.
+A iOS App Store permite-lhe comprar várias licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente.
 
-O Microsoft Intune ajuda-o a gerir aplicações adquiridas através desse programa ao:
+O Microsoft Intune ajuda-o a gerir várias cópias de aplicações compradas através desse programa ao:
 
-- Comunicar informações de licenças a partir da App Store
-- Controlar o número de licenças que utilizou
-- Ajudá-lo a não instalar mais cópias de uma aplicação do que as que tem
+- Comunicar informações sobre a licença a partir da App Store.
+- Controlar o número de licenças que utilizou.
+- Ajudá-lo a não instalar mais cópias da aplicação do que as que tem.
 
 Existem dois métodos que pode utilizar para atribuir as aplicações compradas em volume:
 
 ### <a name="device-licensing"></a>Licenciamento de dispositivos
 
-Quando atribui uma aplicação a dispositivos, é utilizada uma licença de aplicação que permanece associada ao dispositivo ao qual foi atribuída.
+Quando atribui uma aplicação a dispositivos, é utilizada uma licença de aplicação que permanece associada ao dispositivo ao qual foi atribuída. 
+
 Quando atribui aplicações compradas em volume a um dispositivo, o utilizador final do dispositivo não tem de fornecer um ID Apple para aceder à loja. 
 
 ### <a name="user-licensing"></a>Licenciamento de utilizadores
 
 Quando atribui uma aplicação a um utilizador, é utilizada uma licença de aplicação que é associada ao utilizador. A aplicação pode ser executada em múltiplos dispositivos do utilizador (com um limite controlado pela Apple).
+
 Ao atribuir uma aplicação comprada em volume a utilizadores, cada utilizador final tem de ter um ID Apple exclusivo válido para aceder à App Store.
 
 Além disso, pode sincronizar, gerir e atribuir livros que tenha comprado na loja do Apple Volume Purchase Program (VPP) com o Intune. Para obter mais informações, veja [Como gerir eBooks do iOS comprados através de um programa de compra em volume](vpp-ebooks-ios.md).
@@ -67,7 +69,7 @@ Antes de começar, tem de obter um token VPP da Apple e carregá-lo para a sua c
 * Por predefinição, o Intune sincroniza-se com o serviço Apple VPP duas vezes por dia. Pode iniciar uma sincronização manual em qualquer altura.
 * Antes de começar a utilizar o Apple VPP com o Intune, remova as contas de utilizador do VPP existentes criadas com outros fornecedores de gestão de dispositivos móveis (MDM). O Intune não sincroniza essas contas de utilizador no serviço como medida de segurança. O Intune só sincroniza os dados do serviço Apple VPP que foram criados pelo Intune.
 * O Intune suporta a adição de até 256 tokens VPP.
-* O programa de Perfil de Inscrição de Dispositivos (DEP) da Apple automatiza a inscrição da gestão de dispositivos móveis (MDM). Com o DEP, pode configurar dispositivos de empresa sem lhes tocar. Pode inscrever-se no programa de DEP com a mesma conta de agente de programa que utilizou com o VPP da Apple. O ID do Programa de Implementação da Apple é exclusivo para os programas listados no site de [Programas de Implementação da Apple](https://deploy.apple.com) e não pode ser utilizado para iniciar sessão nos serviços da Apple, tais como a iTunes Store.
+* O programa de Perfil de Inscrição de Dispositivos (DEP) da Apple automatiza a inscrição da gestão de dispositivos móveis (MDM). Com o DEP, pode configurar dispositivos de empresa sem lhes tocar. Pode inscrever-se no programa de DEP com a mesma conta de agente de programa que utilizou com o VPP da Apple. O ID do Programa de Implementação da Apple é exclusivo para os programas listados no site de [Programas de Implementação da Apple](https://deploy.apple.com) e não pode ser utilizado para iniciar sessão nos serviços da Apple, tais como a Loja do iTunes.
 * Ao atribuir aplicações VPP com o modelo de licenciamento de utilizadores a utilizadores ou dispositivos (com a afinidade de utilizador), cada utilizador do Intune tem de estar associado a um endereço de e-mail ou ID Apple exclusivo quando aceitar os termos e condições da Apple no respetivo dispositivo. Certifique-se de que, ao configurar um dispositivo para um novo utilizador do Intune, o configura com o endereço de e-mail ou ID Apple exclusivo desse utilizador. O endereço de e-mail ou ID Apple e o utilizador do Intune formam um par exclusivo e podem ser utilizados em até cinco dispositivos.
 * Um token VPP só é suportado para utilização numa conta do Intune de cada vez. Não reutilize um token VPP em múltiplos inquilinos do Intune.
 * Ao atribuir aplicações VPP com o modelo de licenciamento de utilizadores a utilizadores ou dispositivos (com a afinidade de utilizador), cada utilizador do Intune tem de estar associado a um endereço de e-mail ou ID Apple exclusivo quando aceitar os termos e condições da Apple no respetivo dispositivo.
@@ -81,7 +83,7 @@ Certifique-se de que, ao configurar um dispositivo para um novo utilizador do In
 1. Inicie sessão no portal do Azure.
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 1.  No painel **Intune**, selecione **Aplicações móveis** > **Tokens iOS VPP** em **Configurar**.
-2.  No painel da lista de tokens VPP, clique em **Criar**.
+2.  No painel da lista de tokens VPP, selecione **Criar**.
 4. No painel **Criar token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – se ainda não o fez, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Após a inscrição, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
     - **ID Apple** – Introduza o ID Apple da conta associada ao programa de compra em volume.
@@ -91,14 +93,11 @@ Certifique-se de que, ao configurar um dispositivo para um novo utilizador do In
 
     - **Tipo de conta VPP** – Escolha entre **Empresas** ou **Educação**.
     - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativadas, o Intune atualiza todas as aplicações que comprou para o token especificado através do serviço Intune quando o dispositivo dá entrada. Deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este dá entrada.
-4. Quando tiver terminado, clique em **Carregar**.
+4. Quando tiver terminado, selecione **Carregar**.
 
 O token é apresentado no painel da lista de tokens.
 
 Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, selecionando **Sincronizar agora**.
-
-> [!NOTE]
-> O Microsoft Intune só sincroniza informações de aplicações que estejam publicamente disponíveis através da iTunes Store. As **Aplicações B2B Personalizadas para iOS** ainda não são suportadas. Se o seu cenário incluir tais aplicações, as informações da aplicação não serão sincronizadas.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir uma aplicação comprada em volume
 
@@ -134,10 +133,10 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 
 ## <a name="further-information"></a>Informações adicionais
 
-Para recuperar uma licença, tem de alterar a ação de atribuição para Desinstalar. A licença será recuperada quando desinstalar a aplicação. Se remover uma aplicação associada a um utilizador, o Intune tenta recuperar todas as licenças das aplicações associadas ao mesmo.
+Para recuperar uma licença, tem de alterar a ação de atribuição para **Desinstalar**. A licença será recuperada quando desinstalar a aplicação. Se remover uma aplicação associada a um utilizador, o Intune tenta recuperar todas as licenças das aplicações associadas ao mesmo.
 
-Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação do VPP num dispositivo pela primeira vez, é-lhe pedido para aderir ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação. O convite para aderir ao Apple Volume Purchase Program exige que o utilizador possa utilizar a aplicação iTunes no dispositivo iOS. Se tiver definido uma política para desativar a aplicação da iTunes Store, o licenciamento baseado no utilizador para aplicações VPP não funciona. A solução é permitir a aplicação iTunes ao remover a política ou utilizar o licenciamento baseado no dispositivo.
+Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação do VPP num dispositivo pela primeira vez, é-lhe pedido para aderir ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação. O convite para aderir ao Apple Volume Purchase Program exige que o utilizador possa utilizar a aplicação iTunes no dispositivo iOS. Se tiver definido uma política para desativar a aplicação da Loja do iTunes, o licenciamento baseado no utilizador para aplicações VPP não funciona. A solução é permitir a aplicação iTunes ao remover a política ou utilizar o licenciamento baseado no dispositivo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.
