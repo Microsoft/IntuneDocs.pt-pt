@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional com base na aplicação com o Intune
 
@@ -54,7 +54,7 @@ Neste exemplo, o administrador tem políticas de proteção de aplicações apli
 > [!NOTE]
 > A estrutura de fluxograma a seguir pode ser utilizada para outras aplicações geridas.
 
-![Fluxograma do acesso condicional com base em aplicações com o Intune](./media/ca-intune-common-ways-3.png)
+![fluxograma do acesso condicional com base em aplicações com o Intune](./media/ca-intune-common-ways-3.png)
 
 1.  O utilizador tenta autenticar-se no Azure AD a partir da aplicação Outlook.
 

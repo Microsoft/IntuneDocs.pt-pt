@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -95,6 +95,10 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
         > [!NOTE]
         > Para localizar `PATH_TO_LIB`, selecione o ficheiro `libIntuneMAM.a` e escolha **Informações** a partir do menu **Ficheiro**. Copie e cole as informações **Onde** (o caminho) na secção **Geral** da janela **Informações**.
 
+    Adicione o pacote de recursos `IntuneMAMResources.bundle` ao projeto arrastando o pacote de recursos em **Copiar Recursos do Pacote** em **Fases de Criação**.
+
+    ![SDK da Aplicação do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. Adicione estas estruturas de iOS ao projeto:
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. Adicione o pacote de recursos `IntuneMAMResources.bundle` ao projeto arrastando o pacote de recursos em **Copiar Recursos do Pacote** em **Fases de Criação**.
-
-    ![SDK da Aplicação do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. Se a sua aplicação móvel definir um ficheiro nib ou de guião gráfico principal no respetivo ficheiro Info.plist, remova os campos **Guião Gráfico Principal** ou **Nib Principal**. No Info.plist, cole esses campos e os valores correspondentes num novo dicionário com o nome **IntuneMAMSettings** com os seguintes nomes de chaves, conforme aplicável:
+4. Se a sua aplicação móvel definir um ficheiro nib ou de guião gráfico principal no respetivo ficheiro Info.plist, remova os campos **Guião Gráfico Principal** ou **Nib Principal**. No Info.plist, cole esses campos e os valores correspondentes num novo dicionário com o nome **IntuneMAMSettings** com os seguintes nomes de chaves, conforme aplicável:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
     Pode ver o ficheiro Info.plist em formato não processado (para ver os nomes de chaves) clicando com o botão direito do rato em qualquer parte do corpo do documento e alterando o tipo de vista para **Mostrar Chaves/Valores Não Processados**.
 
-6. Ative a partilha de keychain (se não estiver já ativada) ao selecionar **Capacidades** no destino de cada projeto e ao ativar o comutador **Partilha de Keychain**. A partilha de keychain é necessária para avançar para o passo seguinte.
+5. Ative a partilha de keychain (se não estiver já ativada) ao selecionar **Capacidades** no destino de cada projeto e ao ativar o comutador **Partilha de Keychain**. A partilha de keychain é necessária para avançar para o passo seguinte.
 
   > [!NOTE]
     > O perfil de aprovisionamento tem de suportar os novos valores de partilha de keychain. Os grupos de acesso de keychain devem suportar um caráter universal. Pode verificar isto ao abrir o ficheiro .mobileprovision num editor de texto, procurando **keychain-access-groups** e assegurando que tem um caráter universal. Por exemplo:
@@ -132,7 +131,7 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
     </array>
     ```
 
-7. Depois de ativar a partilha de keychain, siga estes passos para criar um grupo de acesso separado no qual serão armazenados os dados do SDK da Aplicação do Intune. Pode criar um grupo de acesso de keychain com a IU ou o ficheiro de elegibilidade. Se estiver a utilizar a IU para criar o grupo de acesso de keychain, siga os passos abaixo:
+6. Depois de ativar a partilha de keychain, siga estes passos para criar um grupo de acesso separado no qual serão armazenados os dados do SDK da Aplicação do Intune. Pode criar um grupo de acesso de keychain com a IU ou o ficheiro de elegibilidade. Se estiver a utilizar a IU para criar o grupo de acesso de keychain, siga os passos abaixo:
 
     1. Se a sua aplicação móvel não tiver nenhum grupo de acesso de keychain definido, adicione o ID do pacote da aplicação como primeiro grupo.
 
@@ -140,24 +139,23 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
     3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
 
-        4. Adicione `com.microsoft.workplacejoin` aos grupos de acesso existentes.
-            ![SDK da Aplicação do Intune para iOS: partilha de keychain](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![SDK da Aplicação do Intune para iOS: partilha de keychain](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. Se estiver a utilizar o ficheiro de elegibilidade para criar o grupo de acesso de keychain, preceda o grupo de acesso de keychain de `$(AppIdentifierPrefix)` no ficheiro de elegibilidade. Por exemplo:
+    4. Se estiver a editar diretamente o ficheiro de elegibilidade, em vez de utilizar a IU do Xcode mostrada acima para criar grupos de acesso de keychain, inclua o acesso de keychain no início com `$(AppIdentifierPrefix)` (o Xcode processa o ficheiro automaticamente). Por exemplo:
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS.
+    > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS. Se a aplicação não tinha anteriormente nenhum ficheiro de elegibilidade, a ativação da partilha de keychain (passo 6) deverá levar à geração de um ficheiro de elegibilidade pelo Xcode para a aplicação.
 
-8. Se a aplicação definir esquemas de URL no respetivo ficheiro Info.plist, adicione outro esquema, com um sufixo `-intunemam`, a cada esquema de URL.
+7. Se a aplicação definir esquemas de URL no respetivo ficheiro Info.plist, adicione outro esquema, com um sufixo `-intunemam`, a cada esquema de URL.
 
-9. Se a aplicação definir os tipos de Documentos no respetivo ficheiro Info.plist, para a matriz "UTIs do Tipo de Conteúdos do Documento" de cada item, adicione uma entrada duplicada para cada cadeia com um prefixo "com.microsoft.intune.mam." .
+8. Se a aplicação definir os tipos de Documentos no respetivo ficheiro Info.plist, para a matriz "UTIs do Tipo de Conteúdos do Documento" de cada item, adicione uma entrada duplicada para cada cadeia com um prefixo "com.microsoft.intune.mam." .
 
-10. Para as aplicações móveis desenvolvidas para iOS 9+, inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Além disso, para cada protocolo listado, adicione um novo protocolo e anexe-o com `-intunemam`. Também tem de incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
+9. Para as aplicações móveis desenvolvidas para iOS 9+, inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Além disso, para cada protocolo listado, adicione um novo protocolo e anexe-o com `-intunemam`. Também tem de incluir `http-intunemam`, `https-intunemam`e `ms-outlook-intunemam` na matriz.
 
-11. Se a aplicação tiver grupos de aplicações definidos nas suas elegibilidades, adicione estes grupos ao dicionário **IntuneMAMSettings** na chave `AppGroupIdentifiers` como uma matriz de cadeias.
+10. Se a aplicação tiver grupos de aplicações definidos nas suas elegibilidades, adicione estes grupos ao dicionário **IntuneMAMSettings** na chave `AppGroupIdentifiers` como uma matriz de cadeias.
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Utilizar a Ferramenta de Configuração de MAM do Intune
 

@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Formas comuns de utilizar o acesso condicional com o Intune
 
@@ -62,11 +62,11 @@ Se o registo EAS for novo e o Intune não tiver conhecimento dele, o Intune emit
 
 ![Fluxograma do Exchange no local com CA](./media/ca-intune-common-ways-1.png)
 
-1.  O utilizador tenta aceder ao e-mail da empresa, que está alojado no Exchange 2010 SP1 ou posterior no local.
+1.  O utilizador tenta aceder ao e-mail empresarial, que está alojado no Exchange 2010 SP1 ou posterior no local.
 
-2.  Se o dispositivo não for gerido pelo Intune, será bloqueado o acesso ao e-mail. O Intune envia uma notificação de bloqueio ao cliente EAS.
+2.  Se o dispositivo não for gerido pelo Intune, o acesso ao e-mail será bloqueado. O Intune envia uma notificação de bloqueio ao cliente EAS.
 
-3.  O EAS recebe a notificação de bloqueio, move o dispositivo para a quarentena e envia o e-mail de quarentena com os passos de correção que incluem ligações para que os utilizadores possam inscrever os seus dispositivos.
+3.  O EAS recebe a notificação de bloqueio, move o dispositivo para a quarentena e envia o e-mail de quarentena com os passos de correção que incluem ligações para que os utilizadores possam inscrever os dispositivos.
 
 4.  Ocorre o processo de Associação à área de trabalho, que é o primeiro passo para que o dispositivo seja gerido pelo Intune.
 
@@ -90,7 +90,7 @@ O Intune avalia e gere o estado do dispositivo.
 
 O servidor do Exchange fornece a API e a infraestrutura para mover os dispositivos para a quarentena.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Tenha em atenção que o utilizador que está a utilizar o dispositivo tem de ter um perfil de conformidade atribuído para que o dispositivo seja avaliado em termos de conformidade. Se não estiver implementada nenhuma política de conformidade para o utilizador, o dispositivo será tratado como compatível e não serão aplicadas restrições de acesso.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Acesso condicional com base no controlo de acesso de rede
@@ -105,9 +105,9 @@ Os utilizadores podem ter o acesso permitido ou recusado quando tentam aceder ao
 
 O Intune em parceria com fornecedores de Defesa Contra Ameaças para Dispositivos Móveis fornece uma solução de segurança para detetar malwares, trojans e outras ameaças em dispositivos móveis.
 
-#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Como funciona a integração da defesa contra ameaças para dispositivos móveis com o Intune
+#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Como funciona a integração da Defesa Contra Ameaças para Dispositivos Móveis com o Intune
 
-Quando os dispositivos móveis têm o agente de defesa contra ameaças para dispositivos móveis instalado, o agente pode enviar mensagens de estado de conformidade para o Intune a comunicar se foi encontrada uma ameaça no próprio dispositivo móvel.
+Quando os dispositivos móveis têm o agente de Defesa Contra Ameaças para Dispositivos Móveis instalado, o agente pode enviar mensagens de estado de conformidade para o Intune a comunicar se foi encontrada uma ameaça no próprio dispositivo móvel.
 
 A integração da defesa contra ameaças para dispositivos móveis com o Intune constitui um fator importante nas decisões de acesso condicional com base no risco do dispositivo.
 

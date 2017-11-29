@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 280de651037abcfa68e76f886adc07a749f7da7c
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) iOS ao Microsoft Intune
 
@@ -49,7 +49,7 @@ Utilize as informações neste tópico para ajudá-lo a adicionar aplicações d
 ## <a name="step-3---configure-app-information"></a>Passo 3 – Configurar as informações da aplicação
 
 1. No painel **Adicionar aplicação**, escolha o ficheiro **Pacote de aplicação**.
-2. No painel **Informações da aplicação**, adicione os detalhes para a sua aplicação. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
+2. No painel **Informações da aplicação**, adicione os detalhes da sua aplicação. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome** – introduza o nome da aplicação a apresentar no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** – introduza uma descrição da aplicação a apresentar aos utilizadores no portal da empresa.
     - **Publicador** - Introduza o nome do publicador da aplicação.
@@ -73,7 +73,7 @@ A aplicação que criou é apresentada na lista de aplicações, onde pode atrib
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Passo 5 – Atualizar uma aplicação de linha de negócio
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]Nota: para o serviço do Intune implementar com êxito um novo ficheiro IPA no dispositivo, tem de incrementar a cadeia CFBundleVersion no ficheiro Info.plis no pacote IPA.
 
 ## <a name="next-steps"></a>Próximos passos
 

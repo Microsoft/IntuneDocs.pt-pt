@@ -1,11 +1,11 @@
 ---
-title: O dispositivo Android parece estar encriptado
+title: O dispositivo Android parece estar encriptado | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
-ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
+ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>O seu dispositivo Android parece estar encriptado, mas o Portal da Empresa diz o contrário
 
@@ -51,7 +51,7 @@ Alguns dispositivos permitem-lhe optar por encriptar todo o dispositivo ou apena
 
 ## <a name="specific-manufacturer-issues"></a>Problemas de um fabricante específico
 
-Alguns dispositivos Android com a versão 7.0 e superior encriptam os dados de forma inconsistente com determinadas normas da plataforma Android. Estes dispositivos poderão parecer encriptados mesmo quando são novos. O Intune reconhece que os métodos de encriptação destes dispositivos colocam as informações do mesmo em risco. Este risco está principalmente associado a utilizadores mal-intencionados que têm acesso físico ao dispositivo.
+Alguns dispositivos Android com a versão 7.0 e superior encriptam os dados de forma inconsistente com determinadas normas da plataforma Android. Estes dispositivos poderão parecer encriptados mesmo quando são novos. O Intune reconhece que os métodos de encriptação destes dispositivos colocam as informações do mesmo em risco. Este risco está principalmente associado a utilizadores mal intencionados que têm acesso físico ao dispositivo.
 
 > [!Note]
 > A Microsoft trabalha com os fabricantes para abordar quaisquer problemas encontrados durante os testes ou comunicados pelos utilizadores. Atualizaremos este artigo sempre que estiverem disponíveis novas informações. 
@@ -69,5 +69,7 @@ Caso tenha um dos seguintes dispositivos, pode ter este problema se não tiver a
 
 Pode resolver este problema para os dispositivos abaixo. Poderá ter de usar um dispositivo diferente para aceder aos recursos da empresa. 
 
-- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Dispositivos OPPO](http://www.oppo.com/en/smartphones)
+- [Dispositivos Vivo](https://www.vivo.co.in)
 - [Smartphones Xiaomi Mi](https://xiaomi-mi.com/mi-smartphones/)

@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -125,13 +125,13 @@ Depois de adicionar as aplicações que pretende proteger com o WIP, tem de apli
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-A Aprendizagem de WIP é um relatório que lhe permite monitorizar as suas aplicações desconhecidas de WIP. As aplicações desconhecidas são as aplicações que não foram implementadas pelo departamento de TI da sua organização. Pode exportar estas aplicações a partir do relatório e adicioná-las às suas políticas do WIP para evitar a interrupção da produtividade antes de impor o WIP no modo "Ocultar Substituição".
+A Aprendizagem de WIP é um relatório que lhe permite monitorizar as suas aplicações desconhecidas de WIP. As aplicações desconhecidas são as aplicações que não foram implementadas pelo departamento de TI da sua organização. Pode exportar estas aplicações a partir do relatório e adicioná-las às políticas do WIP para evitar a interrupção da produtividade antes de impor o WIP no modo “Bloquear”.
 
-Recomendamos que comece com **Silencioso** ou **Permitir Substituições** enquanto verifica com um pequeno grupo que tem as aplicações corretas na lista de aplicações permitidas. Depois de terminar, pode alterar a política de imposição final, **Ocultar Substituições**.
+Recomendamos que comece com **Silencioso** ou **Permitir Substituições** enquanto verifica com um pequeno grupo que tem as aplicações corretas na lista de aplicações permitidas. Depois de terminar, pode alterar a política de imposição final, **Bloquear**.
 
 ### <a name="what-are-the-protection-modes"></a>O que são os modos de proteção?
 
-#### <a name="hide-overrides"></a>Ocultar Substituições
+#### <a name="block"></a>Bloqueio
 O WIP procura práticas de partilha de dados inadequadas e impede o utilizador de concluir a ação. Estas práticas podem incluir a partilha de informações em aplicações não protegidas pela empresa e a partilha de dados empresariais entre outras pessoas e dispositivos fora da sua organização.
 
 #### <a name="allow-overrides"></a>Permitir Substituições

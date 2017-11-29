@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android for Work no Microsoft Intune
 
@@ -79,6 +79,13 @@ ms.lasthandoff: 10/20/2017
 - **Desbloqueio por impressão digital** –impede um utilizador final de utilizar a deteção de impressão digital do dispositivo para o desbloquear.
 - **Smart Lock e outros agentes de fidedignidade** – permite-lhe controlar a funcionalidade Smart Lock em dispositivos compatíveis. Esta funcionalidade de telefone, por vezes conhecida como agente de confiança, permite desativar ou ignorar a palavra-passe de bloqueio do ecrã do dispositivo se o dispositivo estiver numa localização fidedigna (por exemplo, quando está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC). Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="system-security"></a>Segurança do sistema
+
+ - **Análise de ameaças nas aplicações** – exija que a definição **Verificar Aplicações** esteja ativada para os perfis pessoais e de trabalho.
+
+   > [!Note]  
+   > Esta definição funcionará apenas em dispositivos que tenham o Android O e superior. 
+
+## <a name="next-steps"></a>Próximos passos
 
 Utilize as informações no tópico [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para guardar e atribuir o perfil a utilizadores e dispositivos.
