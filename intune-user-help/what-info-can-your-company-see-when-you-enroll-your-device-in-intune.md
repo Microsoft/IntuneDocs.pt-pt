@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Que informações pode a minha empresa ver quando inscrevo o meu dispositivo?
 
@@ -36,7 +36,7 @@ Quando inscreve um dispositivo para gestão, está a conceder permissão à empr
 
 **O que a empresa pode sempre ver**
 
-- Modelo de dispositivo, como iPhone 7
+- Modelo do dispositivo, como o Google Pixel
 - Fabricante, como Microsoft
 - Sistema operativo, como iOS
 - Nomes de aplicações, como Microsoft Word
@@ -48,4 +48,5 @@ Quando inscreve um dispositivo para gestão, está a conceder permissão à empr
 
 -  Número de telefone: nos dispositivos pertencentes à **empresa**, estará visível o seu número de telefone completo. Nos dispositivos **pessoais**, apenas os últimos quatro dígitos do número de telefone estarão visíveis. Pode ver o **Tipo de Propriedade** de cada dispositivo individual. Para tal, abra a página **Detalhes do Dispositivo** do dispositivo.
 -  Localização: a empresa nunca pode ver a localização do dispositivo, exceto se tiver um dispositivo iOS supervisionado e se tiver sido perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventário de aplicações: se a sua empresa utilizar a Defesa Contra Ameaças para Dispositivos Móveis, poderá ver mais detalhes sobre as aplicações que estão no seu dispositivo. Saiba mais sobre a [Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md).
+- Inventário de aplicações: se a sua empresa utilizar a Defesa Contra Ameaças para Dispositivos Móveis, poderá ver mais detalhes sobre as aplicações que estão no seu dispositivo iOS. Saiba mais sobre a [Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md).
+- Informações de rede: algumas informações sobre ligações de rede para dispositivos Android podem estar disponíveis para o suporte da sua empresa. Por exemplo, se a sua empresa precisar que os dispositivos permaneçam num determinado edifício, o dispositivo identificará a rede à qual está ligado. 

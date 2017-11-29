@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android com encriptação
 
 Quando tenta encriptar um dispositivo, está a encapsular as informações do mesmo numa camada de código de proteção que impede pessoas não autorizadas de acederem ao mesmo. Para se certificar de que a sua informação está segura, a sua organização requer que encripte o seu dispositivo Android antes de poder aceder a ficheiros, e-mail ou dados da empresa.
 
 > [!Note]
-> Poderá ser-lhe pedido para definir um PIN ou uma palavra-passe antes de encriptar, se o suporte da empresa exigir um deles.
+> Determinados dispositivos Android, incluindo alguns fabricados pela Huawei e os da Vivo e OPPO, não podem ser encriptados. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
 
@@ -37,9 +37,6 @@ Se anular a inscrição do seu telemóvel, este permanecerá encriptado.
     (Em alguns telemóveis, terá de selecionar **Armazenamento** > **Encriptação de armazenamento** ou **Armazenamento** > **Ecrã de bloqueio e segurança** > **Outras definições de segurança** para localizar a opção "Encriptação").
 
 3.  Siga as instruções no ecrã. Durante a encriptação, o seu dispositivo poderá reiniciar várias vezes.
-
-> [!Note]
-> Determinados dispositivos Android não podem ser encriptados. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>O que fazer se tiver problemas
 **Problema**: já encriptou o seu dispositivo e vê um dos seguintes:
