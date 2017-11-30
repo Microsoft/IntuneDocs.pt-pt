@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Ativar o acesso aos recursos da empresa
 
@@ -48,7 +48,7 @@ A empresa tem muitas informações de propriedade, desde e-mail a ficheiros, red
 |![Pedido de palavra-passe do Azure AD.](./media/ios-0b-cp-enroll-1711.png)|Introduza a palavra-passe e toque em **Iniciar sessão**.|
 |![A carregar o ecrã de recursos da empresa.](./media/ios-1-cp-enroll-1711.png)|Aguarde pelo carregamento.|
 |![Termos e condições.](./media/ios-2-cp-enroll-1711.png)|Leia e **Aceite Todos** os Termos e Condições.|
-|![Ecrã Configuração de acesso à empresa. Atualmente, a gestão e as definições precisam de resolução.](./media/ios-3-cp-enroll-1711.png)|Toque em **Fazer com que o dispositivo seja gerido** para iniciar o processo para que o seu dispositivo consiga aceder aos recursos da empresa. Se não conseguir fazê-lo agora, poderá **Adiar** o processo, mas não conseguirá obter o e-mail, documentos e etc.|
+|![Ecrã Configuração de acesso à empresa. Atualmente, a gestão e as definições precisam de resolução.](./media/ios-3-cp-enroll-1711.png)|Toque em **Começar** para iniciar o processo de fazer com que o seu dispositivo consiga aceder aos recursos da empresa. Se não conseguir fazê-lo agora, poderá **Adiar** o processo, mas não conseguirá obter o e-mail, documentos e etc.|
 |![Ecrã O que a minha empresa pode ver.](./media/ios-4-cp-enroll-1711.png)|**Saiba mais** sobre o que a sua empresa pode ver ao tocar na ligação na parte inferior. Caso contrário, toque em **Continuar**.|
 |![Ecrã O que se segue.](./media/ios-5-cp-enroll-1711.png)|Este ecrã explica o que está a acontecer na configuração. Vai passar algum tempo no Safari, na aplicação Definições e na aplicação Portal da Empresa para concluir este processo. Toque em **Seguinte**.|
 |![A carregar o ecrã após tocar em Seguinte no ecrã O que se segue.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ A empresa tem muitas informações de propriedade, desde e-mail a ficheiros, red
 |![Ecrã A carregar recursos da empresa.](./media/ios-18-cp-enroll-1711.png)|Aguarde pelo carregamento.|
 |![Selecione a categoria de dispositivo na aplicação do portal da empresa.](./media/ios-19-cp-enroll-1711.png)|Selecione a melhor categoria para o seu dispositivo. Normalmente, está relacionada com quem é o proprietário do dispositivo ou onde este se encontra na maior parte do tempo.|
 |![Categoria selecionada.](./media/ios-20-cp-enroll-1711.png)||
-|![Gestão de dispositivos com êxito. Agora tem de atualizar as definições.](./media/ios-21-cp-enroll-1711.png)|Conseguiu fazer com o que o seu dispositivo passe a ser gerido. Provavelmente, ainda existem definições, como o comprimento da palavra-passe, que a sua empresa lhe poderá pedir para atualizar. Toque em **Atualizar definições do dispositivo** para continuar.|
+|![Gestão de dispositivos com êxito. Agora tem de atualizar as definições.](./media/ios-21-cp-enroll-1711.png)|Conseguiu fazer com o que o seu dispositivo passe a ser gerido. Provavelmente, ainda existem definições, como o comprimento da palavra-passe, que a sua empresa lhe poderá pedir para atualizar. Toque em **Continuar** para continuar.|
 |![A confirmar definições do dispositivo.](./media/ios-22-cp-enroll-1711.png)|O Portal da Empresa verificará se as definições precisam de ser atualizadas.|
 |![Verificação de definições concluída, com uma versão incorreta do SO](./media/ios-23-cp-enroll-1711.png)|O Portal da Empresa apresentará as instruções sobre como pode corrigir os eventuais problemas com as definições. Depois de corrigir os problemas, toque em **Verificar Definições**.|
 |![Ecrã de carregamento A confirmar definições do dispositivo](./media/ios-24-cp-enroll-1711.png)|O dispositivo verificará se as definições são suficientemente seguras para aceder aos recursos da empresa.|
