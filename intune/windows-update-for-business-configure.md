@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
@@ -94,8 +94,8 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
     **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada na Via de Atualizações Semianuais. O dispositivo irá receber a Atualização de Funcionalidades 30 dias após o lançamento na Via de Atualizações Semianuais e será atualizado em maio.
 
-    - **Otimização da entrega** – escolha o método para o qual os dispositivos irão transferir as atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
-8. Quando tiver terminado, clique em **OK** e, no painel **Criar Anel de Atualização**, clique em **Criar**.
+    - **Otimização da entrega** – escolha o método para o qual os dispositivos irão transferir as atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Quando tiver terminado, clique em **OK** e, no painel **Criar Anel de Atualização**, clique em **Criar**.
 
 O novo anel de atualização é apresentado na lista de anéis de atualização.
 

@@ -3,8 +3,8 @@ title: "Definições de esquema do Ecrã principal do Intune para dispositivos i
 titlesuffix: Azure portal
 description: "Saiba quais são as definições que pode utilizar para personalizar o ecrã principal e a estação de ancoragem em dispositivos iOS.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1fceed3027e0d8bb746692c1eb39e17829aa3891
-ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
+ms.openlocfilehash: 0dcc8f5509afa5308f8ae91a3d60ee081d5daa0b
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Definições de esquema do Ecrã principal do Intune para dispositivos iOS
 
@@ -34,11 +34,11 @@ Os dispositivos iOS aos quais atribuir o perfil têm de estar no modo supervisio
 
 ## <a name="add-items-to-the-dock"></a>Adicionar itens à estação de ancoragem
 
-No painel **Dock**, pode adicionar até seis itens ou pastas à estação de ancoragem do ecrã iOS. No entanto, existem vários dispositivos que suportam menos itens. Por exemplo, os dispositivos iPhone suportam até quatro itens. Neste caso, apenas os primeiros quatro itens que configurou serão apresentados no dispositivo.
+No painel **Dock**, pode adicionar até seis itens ou pastas à dock do ecrã iOS. No entanto, existem vários dispositivos que suportam menos itens. Por exemplo, os dispositivos iPhone suportam até quatro itens. Neste caso, apenas os primeiros quatro itens que configurou serão apresentados no dispositivo.
 
 1. Escolha **Adicionar** para adicionar um item à estação de ancoragem.
 2. No painel **Adicionar Linha**, escolha se pretende adicionar uma **Aplicação** ou uma **Pasta**.
-3. Utilize as informações contidas neste tópico para configurar as aplicações e pastas que pretende que sejam apresentadas na estação de ancoragem.
+3. Utilize as informações contidas neste tópico para configurar as aplicações e pastas que pretende que sejam apresentadas na dock.
 4. Continue a adicionar itens. Quando tiver terminado, clique em **OK**, em cada painel, até regressar ao painel **Criar Perfil**. Selecione **Criar**.
 
 >[!TIP]
@@ -50,7 +50,7 @@ Neste exemplo, configurou o ecrã da estação de ancoragem para mostrar apenas 
 
 ![Exemplo de definições da estação de ancoragem do iOS](http://i.imgur.com/FfFiUcP.png)
 
-Ao atribuir uma política a um iPhone, criará uma estação de ancoragem com aspeto semelhante à seguinte captura de ecrã:
+Ao atribuir uma política a um iPhone, criará uma dock com aspeto semelhante à seguinte captura de ecrã:
 
 ![Exemplo de esquema da estação de ancoragem do iOS no iPhone](http://i.imgur.com/bAgCe8F.png)
 

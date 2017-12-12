@@ -3,8 +3,8 @@ title: "Adicionar políticas de configuração da aplicação para dispositivos 
 titlesuffix: Azure portal
 description: "Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a39b2d120a804d32b93b7a240af246327514b1b7
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -52,7 +52,7 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 7.  Selecione **Aplicação Associada**. Em seguida, no painel **Aplicação Associada**, selecione a aplicação gerida à qual pretende aplicar a configuração.
 8.  No painel **Adicionar Política de Configuração**, selecione **Definições de configuração**.
 9. Selecione **Formato das definições de configuração**. Selecione um dos seguintes procedimentos:
-    - **[Utilizar o estruturador de configuração](#Use-the-configuration-designer)**
+    - **[Utilizar estruturador de configuração](#Use-the-configuration-designer)**
     - **[Introduzir dados XML](#enter-xml-data)**
 10. Selecione **OK** e, em seguida, **Adicionar**.
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4034e3848f49b13fc675f44c44ca1e80cf1e3568
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa?
 
@@ -32,4 +32,4 @@ Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](
 |O dispositivo pode aceder apenas ao e-mail da empresa|**Windows Phone 8.1**<br />O dispositivo deixará de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior que seja utilizado apenas para e-mails.<br /><br />**Windows 8.1 e Windows 8**<br />O dispositivo deixará de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.|
 |PCs e portáteis|**Windows 8.1 e Windows 8**<br />Só pode repor um computador com o Windows 8 ou Windows 8.1 se este for utilizado apenas para e-mails.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior.|
 
-Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -3,8 +3,8 @@ title: "Definições de restrição de dispositivos no Intune para dispositivos 
 titlesuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Windows 10.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -34,16 +34,16 @@ ms.lasthandoff: 11/09/2017
     - **Nenhum** – não são enviados dados à Microsoft
     - **Básico** – são enviadas à Microsoft informações limitadas
     - **Melhorado** – são enviados dados de diagnóstico melhorados à Microsoft
-    - **Completo** – envia os mesmos dados que Melhorado, juntamente com dados adicionais sobre o estado do dispositivo
--   **Câmara** – permita ou bloqueie a utilização da câmara no dispositivo.
+    - **Completo** – Envia os mesmos dados que Melhorado, juntamente com dados adicionais sobre o estado do dispositivo
+-   **Câmara** – Permita ou bloqueie a utilização da câmara no dispositivo.
 -   **Sincronização de ficheiros do OneDrive** – impede o dispositivo de sincronizar ficheiros no OneDrive.
 -   **Armazenamento amovível** – especifica se os dispositivos de armazenamento externo, como os cartões SD, podem ser utilizados no dispositivo.
--   **Geolocalização** – especifica se o dispositivo pode utilizar informações de serviços de localização.
--   **Partilha da Internet** – permite a utilização da partilha de ligação à Internet no dispositivo.
--   **Reposição do telefone** – controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
+-   **Geolocalização** – Especifica se o dispositivo pode utilizar informações de serviços de localização.
+-   **Partilha da Internet** – Permite a utilização da partilha de ligação à Internet no dispositivo.
+-   **Reposição do telefone** – Controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
 -   **Ligação USB (apenas para dispositivos móveis)** – controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.
 -   **Modo antirroubo (apenas para dispositivos móveis)** – configure se o Modo antirroubo do Windows está ativado.
--   **Cortana** – ative ou desative o assistente de voz Cortana.
+-   **Cortana** – Ative ou desative o assistente de voz Cortana.
 -   **Gravação de voz (apenas para dispositivos móveis)** – permite ou bloqueia a utilização do gravador de voz do dispositivo.
 -   **Modificação do nome do dispositivo** – impede o utilizador final de alterar o nome do dispositivo (apenas no Windows 10 Mobile)
 -   **Adicionar pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que instala os pacotes de aprovisionamento.

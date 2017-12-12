@@ -3,8 +3,8 @@ title: "Preparar-se para configurar políticas de proteção de aplicações par
 titlesuffix: Azure portal
 description: "Configurar o fornecedor de gestão de aplicações móveis (MAM) no Azure AD"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/25/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
-ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
+ms.openlocfilehash: 91e26256d220ba70e5ad6daa3910d34eea8bb5ed
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10
 
