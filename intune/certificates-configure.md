@@ -3,8 +3,8 @@ title: Como configurar certificados com o Intune
 titlesuffix: Azure portal
 description: "Saiba como utilizar o Intune para criar e atribuir certificados que o ajudam a proteger ligações Wi-Fi, VPN, entre outras.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9e511cef22fdfc8e2975bd14f7b969067317a44
-ms.sourcegitcommit: 2ad0d88d3ef5b81563c6a54eaf52f09e126abeaf
+ms.openlocfilehash: 9c74ee1daf6602a4958d9955c3955b465495e013
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Como configurar certificados no Microsoft Intune
 
@@ -103,9 +103,9 @@ Tem de criar um perfil de certificado fidedigno para poder criar um perfil de ce
 6. Na lista pendente **Tipo de perfil**, selecione **Certificado fidedigno**.
 7. Navegue para o certificado guardado na tarefa 1 e, em seguida, clique em **OK**.
 8. Apenas para os dispositivos Windows 8.1 e Windows 10, selecione o **Arquivo de Destino** do certificado fidedigno em:
-    - **Arquivo de certificados no computador – raiz**
-    - **Arquivo de certificados no computador – intermédio**
-    - **Armazenamento de certificados de utilizador – intermédio**
+    - **Arquivo de certificados no computador – Raiz**
+    - **Arquivo de certificados no computador – Intermédio**
+    - **Armazenamento de certificados de utilizador – Intermédio**
 8. Quando tiver terminado, escolha **OK**, volte ao painel **Criar Perfil** e clique em **Criar**.
 
 O perfil é criado e apresentado no painel da lista de perfis.

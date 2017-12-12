@@ -3,8 +3,8 @@ title: "Definições de restrição de dispositivos no Intune para dispositivos 
 titlesuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Android.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 09/07/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
-ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
+ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -79,8 +79,8 @@ Se configurar a definição **Numérica complexa** e, em seguida, a atribuir a u
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas para ambos os dispositivos Android e Samsung KNOX Standard:
 
-Uma lista de **Aplicações proibidas** – indique as aplicações (não geridas pelo Intune) que serão reportadas caso os utilizadores as instalem e executem.
-Uma lista de **Aplicações aprovadas** – indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
+Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que serão reportadas caso os utilizadores as instalem e executem.
+Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
@@ -119,8 +119,8 @@ Além disso, também pode especificar aplicações instaladas que serão ocultad
 Para cada definição, configure uma lista de aplicações através de um dos seguintes procedimentos:
 
 - **Adicionar aplicações pelo nome do pacote** – principalmente utilizado para aplicações de linha de negócio. Introduza o nome da aplicação e o nome do pacote de aplicação. 
-- **Adicionar aplicações pelo URL** – introduza o nome da aplicação e o URL na loja do Google Play.
-- **Adicionar aplicações geridas** – na lista de aplicações geridas com o Intune, selecione a aplicação de que necessita.
+- **Adicionar aplicações pelo URL** – Introduza o nome da aplicação e o URL na loja do Google Play.
+- **Adicionar aplicações geridas** – Na lista de aplicações geridas com o Intune, selecione a aplicação de que necessita.
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
@@ -144,12 +144,12 @@ Para cada definição, configure uma lista de aplicações através de um dos se
 
 As definições de local público aplicam-se apenas a dispositivos Samsung KNOX Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
+- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.
-- **Botão de suspensão do ecrã** – ativa ou desativa o botão suspender/reativar ecrã do dispositivo.
-- **Botões de volume** - ativa ou desativa a utilização dos botões de volume no dispositivo.
+- **Botão de suspensão do ecrã** – Ativa ou desativa o botão suspender/reativar ecrã do dispositivo.
+- **Botões de volume** - Ativa ou desativa a utilização dos botões de volume no dispositivo.
 
 
 ## <a name="next-steps"></a>Próximos passos
