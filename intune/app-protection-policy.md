@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 12/01/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48294a922e191fa570c39d3e0de815b695506709
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f642df3cfd3910522e226d864c72cc148c3b7a4c
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -61,9 +61,8 @@ A utilização da MDM com políticas de proteção de aplicações tem outras va
 
 
 ### <a name="supported-platforms-for-app-protection-polices"></a>Plataformas suportadas das políticas de proteção de aplicações
--   iOS 8.1 ou posterior
-
--   Android 4 ou posterior
+-   iOS 9 ou posterior
+-   Android 4.4 ou posterior
 
 Os dispositivos Windows não são atualmente suportados. No entanto, quando inscrever dispositivos com o Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações

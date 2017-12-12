@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f928b214642c5954561f2c56b30b71b36ecd57eb
-ms.sourcegitcommit: 012f262660fa9fb321ac3470f5dba165b8e5256a
+ms.openlocfilehash: 16402b30895e61d9a4ff8393fd4d4c6efa061e9e
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integração da Defesa Contra Ameaças a Dispositivos Móveis com o Intune
 
@@ -37,6 +37,22 @@ No passado, as empresas sempre foram proativas ao proteger os PCs contra ataques
 Os conectores protegem os recursos da empresa ao criar um canal de comunicação entre o Intune e o seu fornecedor de Defesa Contra Ameaças para Dispositivos Móveis escolhido. Os parceiros de Defesa Contra Ameaças Para Dispositivos Móveis do Intune oferecem aplicações intuitivas e fáceis de implementar para dispositivos móveis, que detetam e analisam ativamente as informações sobre ameaças a serem partilhadas com o Intune, quer para efeitos de imposição ou para enviar relatórios. 
 
 Por exemplo, se uma aplicação ligada à Defesa Contra Ameaças para Dispositivos Móveis comunicar ao fornecedor de Defesa Contra Ameaças para Dispositivos Móveis que um certo telemóvel na sua rede está atualmente ligado a uma rede vulnerável a ataques man-in-the-middle, estas informações são partilhadas e categorizadas com o nível de risco adequado (baixo/médio/alto), as quais poderá comparar com as permissões de níveis de risco que configurou no Intune para determinar se o acesso aos recursos que escolher deve ser revogado enquanto o dispositivo estiver comprometido.
+
+## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Que dados são recolhidos pelo Intune para a Defesa Contra Ameaças para Dispositivos Móveis?
+
+O Intune recolhe informações do inventário de aplicações de dispositivos pessoais e empresariais e disponibiliza-as aos fornecedores de Defesa Contra Ameaças para Dispositivos Móveis (MTD), como o Lookout for Work. Pode recolher o inventário de aplicações dos utilizadores de dispositivos com o iOS 11 ou uma versão superior.
+
+**Inventário de aplicações**  
+Os inventários de dispositivos iOS pessoais ou empresariais com o iOS 11 ou uma versão superior são enviados para o seu fornecedor de serviços de MTD. Os dados no inventário de aplicações incluem:
+
+ - ID da Aplicação
+ - Versão da Aplicação
+ - Versão Abreviada da Aplicação
+ - Nome da Aplicação
+ - Tamanho da Coleção de Pacotes de Aplicação
+ - Tamanho Dinâmico da Aplicação
+ - A aplicação é ou não validada
+ - A aplicação é ou não gerida
 
 ## <a name="sample-scenarios"></a>Cenários de exemplo
 

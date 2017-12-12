@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Ativar o acesso aos recursos da empresa
 
@@ -36,7 +36,7 @@ A empresa tem muitas informações de propriedade, desde e-mail a ficheiros, red
 - Garanta que conclui o processo completo depois de iniciar. Normalmente, se colocar em pausa durante mais do que alguns minutos, interromperá o processo e terá de começar do início.
 - Se este processo falhar, terá de voltar à aplicação Portal da Empresa para tentar novamente.
 - Garanta que o Wi-Fi está a funcionar e que o Safari funciona no dispositivo.
-- Transfira [Instalar e iniciar sessão na aplicação Portal da Empresa do Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Transfira e instale a [aplicação Portal da Empresa do Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Utilizar a aplicação Portal da Empresa para configurar o acesso aos recursos da empresa

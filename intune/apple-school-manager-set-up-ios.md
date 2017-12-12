@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: 5aaefd6bfbff3394b4c0f79948ac23e32536f1e3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Ativar inscrição do dispositivo iOS com o Apple School Manager
 
@@ -104,24 +104,24 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
     - **Permitir Emparelhamento** – especifica se os dispositivos iOS se podem sincronizar com computadores. Se escolher **Permitir o Apple Configurator por certificado**, terá de escolher um certificado em **Certificados do Apple Configurator**.
 
-      - **Certificados do Apple Configurator** – Se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
+      - **Certificados do Apple Configurator** – se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
 
 7. Selecione **Definições do Assistente de Configuração**, configure as seguintes definições de perfil e, em seguida, selecione **Guardar**:
 
-    - **Nome do Departamento** – Aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
+    - **Nome do Departamento** – aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
 
-    - **Telefone do Departamento** – Aparece quando o utilizador clica no botão Preciso de ajuda durante a ativação.
-    - **Opções do Assistente de Configuração** – Se excluídas das opções do Assistente de Configuração, estas definições podem ser configuradas mais tarde no menu **Definições** de iOS.
+    - **N.º de Telefone do Departamento** – aparece quando o utilizador clica no botão Preciso de ajuda durante a ativação.
+    - **Opções do Assistente de Configuração** – se excluídas das opções do Assistente de Configuração, estas definições podem ser configuradas mais tarde no menu **Definições** de iOS.
         - **Código de Acesso** – pedido de código de acesso durante a ativação. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação).
         - **Serviços de Localização** – se ativado, o Assistente de Configuração solicita o serviço durante a ativação
         - **Restaurar** – se estiver ativado, o Assistente de Configuração solicita a cópia de segurança de iCloud durante a ativação
-        - **Apple ID** – Se estiver ativado, o iOS pede aos utilizadores um Apple ID quando o Intune tenta instalar uma aplicação sem um ID. É necessário um Apple ID para transferir aplicações iOS da App Store, incluindo as aplicações instaladas pelo Intune.
+        - **Apple ID** – se estiver ativado, o iOS pede aos utilizadores um Apple ID quando o Intune tenta instalar uma aplicação sem um ID. É necessário um Apple ID para transferir aplicações iOS da App Store, incluindo as aplicações instaladas pelo Intune.
         - **Termos e Condições** – se ativado, o Assistente de Configuração solicita aos utilizadores que aceitem os termos e condições da Apple durante a ativação
         - **Touch ID** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
         - **Apple Pay** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
         - **Zoom** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
         - **Siri** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-        - **Dados de Diagnóstico** – Se ativado, o Assistente de Configuração solicita este serviço durante a ativação
+        - **Dados de Diagnóstico** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
 
 8. Para guardar as definições de perfil, selecione **Criar**, no painel **Criar Perfil de Inscrição**.
 
@@ -136,9 +136,10 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos geridos
 Agora que foi atribuída a permissão ao Intune para gerir os dispositivos associados ao Apple School Manager, pode sincronizar o Intune com o serviço Apple para ver os dispositivos geridos no Intune.
 
-1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** e, em seguida, **Inscrição da Apple**.
-2. Em **Dispositivos do Programa de Inscrição**, selecione **Sincronizar**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
-3. No painel **Sincronizar**, selecione **Pedido de Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
+1. No Intune, no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição da Apple** > **Dispositivos do Programa de Inscrição** > **Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
+
+  ![Captura de ecrã a mostrar o nó Dispositivos do Programa de Inscrição selecionado e a ligação Sincronizar a ser selecionada.](./media/enrollment-program-device-sync.png)
+2. No painel **Sincronizar**, selecione **Pedido de Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
 
   ![Captura de ecrã a mostrar o painel Sincronizar, com a ligação Pedido de sincronização a ser selecionada.](./media/enrollment-program-device-request-sync.png)
 

@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -42,7 +42,7 @@ Utilize estas configurações com uma política de restrição de dispositivos A
 - **Captura de ecrã (apenas Samsung KNOX)** – permite ao utilizador capturar os conteúdos do ecrã como uma imagem.
 - **Assistente de voz (apenas Samsung KNOX)** – permite a utilização de software de assistente de voz no dispositivo.
 - **YouTube (apenas Samsung KNOX)** – permite a utilização da aplicação YouTube no dispositivo.
-- **Dispositivos partilhados** – configure um dispositivo Samsung KNOX Standard gerido como partilhado. Neste modo, os utilizadores finais podem iniciar ou terminar sessão do dispositivo com as suas credenciais do Azure AD. O dispositivo continua a ser gerido quer esteja quer não esteja a ser utilizado.<br>Quando os utilizadores finais iniciam sessão, têm acesso às aplicações e obtêm as políticas aplicadas às mesmas. Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.
+- **Dispositivos partilhados (apenas Samsung KNOX)** – configure um dispositivo Samsung KNOX Standard gerido como partilhado. Neste modo, os utilizadores finais podem iniciar ou terminar sessão do dispositivo com as suas credenciais do Azure AD. O dispositivo continua a ser gerido quer esteja quer não esteja a ser utilizado.<br>Quando utilizado conjuntamente com um perfil de certificado SCEP, esta funcionalidade permite que os utilizadores finais partilhem um dispositivo com o mesmo conjunto de aplicações para todos os utilizadores, mas com os respetivos certificados de utilizador SCEP.  Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.  Esta funcionalidade é limitada a aplicações LOB.
 
 ## <a name="password"></a>Palavra-passe
 
@@ -79,8 +79,8 @@ Se configurar a definição **Numérica complexa** e, em seguida, a atribuir a u
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas para ambos os dispositivos Android e Samsung KNOX Standard:
 
-Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que serão reportadas caso os utilizadores as instalem e executem.
-Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
+Uma lista de **Aplicações proibidas** – indique as aplicações (não geridas pelo Intune) que serão reportadas caso os utilizadores as instalem e executem.
+Uma lista de **Aplicações aprovadas** – indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
@@ -119,8 +119,8 @@ Além disso, também pode especificar aplicações instaladas que serão ocultad
 Para cada definição, configure uma lista de aplicações através de um dos seguintes procedimentos:
 
 - **Adicionar aplicações pelo nome do pacote** – principalmente utilizado para aplicações de linha de negócio. Introduza o nome da aplicação e o nome do pacote de aplicação. 
-- **Adicionar aplicações pelo URL** – Introduza o nome da aplicação e o URL na loja do Google Play.
-- **Adicionar aplicações geridas** – Na lista de aplicações geridas com o Intune, selecione a aplicação de que necessita.
+- **Adicionar aplicações pelo URL** – introduza o nome da aplicação e o URL na loja do Google Play.
+- **Adicionar aplicações geridas** – na lista de aplicações geridas com o Intune, selecione a aplicação de que necessita.
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
@@ -144,12 +144,12 @@ Para cada definição, configure uma lista de aplicações através de um dos se
 
 As definições de local público aplicam-se apenas a dispositivos Samsung KNOX Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
+- **Selecionar uma aplicação gerida** – escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.
-- **Botão de suspensão do ecrã** – Ativa ou desativa o botão suspender/reativar ecrã do dispositivo.
-- **Botões de volume** - Ativa ou desativa a utilização dos botões de volume no dispositivo.
+- **Botão de suspensão do ecrã** – ativa ou desativa o botão suspender/reativar ecrã do dispositivo.
+- **Botões de volume** - ativa ou desativa a utilização dos botões de volume no dispositivo.
 
 
 ## <a name="next-steps"></a>Próximos passos
