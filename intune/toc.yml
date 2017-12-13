@@ -552,6 +552,8 @@
   items:
     - name: Ajudar os utilizadores a resolver problemas
       href: help-desk-operators.md
+    - name: Registos de auditoria para atividades do Intune
+      href: monitor-audit-logs.md
     - name: Utilizar o Armazém de Dados do Intune
       href: reports-nav-create-intune-reports.md
       items:
