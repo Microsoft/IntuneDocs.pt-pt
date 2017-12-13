@@ -3,8 +3,8 @@ title: "Definições de VPN no Intune para dispositivos macOS"
 titlesuffix: Azure portal
 description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos Mac OS.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cb9d3eb3e1a52b8b68ddd1f12f7dad78e0a6329
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4633d3935aa97b31b8fc5331f1ab50911f8bcbe2
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos macOS no Microsoft Intune
 

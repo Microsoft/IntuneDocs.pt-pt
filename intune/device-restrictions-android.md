@@ -3,8 +3,8 @@ title: "Definições de restrição de dispositivos no Intune para dispositivos 
 titlesuffix: Azure portal
 description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Android.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 09/07/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -42,7 +42,7 @@ Utilize estas configurações com uma política de restrição de dispositivos A
 - **Captura de ecrã (apenas Samsung KNOX)** – permite ao utilizador capturar os conteúdos do ecrã como uma imagem.
 - **Assistente de voz (apenas Samsung KNOX)** – permite a utilização de software de assistente de voz no dispositivo.
 - **YouTube (apenas Samsung KNOX)** – permite a utilização da aplicação YouTube no dispositivo.
-- **Dispositivos partilhados** – configure um dispositivo Samsung KNOX Standard gerido como partilhado. Neste modo, os utilizadores finais podem iniciar ou terminar sessão do dispositivo com as suas credenciais do Azure AD. O dispositivo continua a ser gerido quer esteja quer não esteja a ser utilizado.<br>Quando os utilizadores finais iniciam sessão, têm acesso às aplicações e obtêm as políticas aplicadas às mesmas. Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.
+- **Dispositivos partilhados (apenas Samsung KNOX)** – configure um dispositivo Samsung KNOX Standard gerido como partilhado. Neste modo, os utilizadores finais podem iniciar ou terminar sessão do dispositivo com as suas credenciais do Azure AD. O dispositivo continua a ser gerido quer esteja quer não esteja a ser utilizado.<br>Quando utilizado conjuntamente com um perfil de certificado SCEP, esta funcionalidade permite que os utilizadores finais partilhem um dispositivo com o mesmo conjunto de aplicações para todos os utilizadores, mas com os respetivos certificados de utilizador SCEP.  Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.  Esta funcionalidade é limitada a aplicações LOB.
 
 ## <a name="password"></a>Palavra-passe
 

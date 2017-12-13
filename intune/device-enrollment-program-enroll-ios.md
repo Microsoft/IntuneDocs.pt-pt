@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -128,14 +128,14 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     - **Permitir Emparelhamento** – especifica se os dispositivos iOS se podem sincronizar com computadores. Se escolher **Permitir o Apple Configurator por certificado**, terá de selecionar um certificado em **Certificados do Apple Configurator**.
 
-    - **Certificados do Apple Configurator** – Se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
+    - **Certificados do Apple Configurator** – se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
 
   Escolha **Guardar**.
 
 5. Selecione **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil:
 
   ![Captura de ecrã a mostrar a seleção das definições de configuração com as definições disponíveis para um novo perfil do programa de inscrição.](./media/enrollment-program-profile-settings.png)
-    - **Nome do Departamento** – Aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
+    - **Nome do Departamento** – aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
 
     - **N.º de Telefone do Departamento** – aparece quando o utilizador clica no botão **Preciso de Ajuda** durante a ativação.
     - **Opções do Assistente de Configuração** – estas definições opcionais podem ser configuradas mais tarde no menu **Definições** de iOS.
@@ -157,11 +157,11 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos geridos
 Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincronizar o Intune com a Apple para ver os seus dispositivos geridos no Intune no portal do Azure.
 
-1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** >  **Inscrição da Apple** > **Dispositivos do Programa de Inscrição**.
-2. Em **Dispositivos do Programa de Inscrição**, selecione **Sincronizar**.
+1. No Intune, no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição da Apple** > **Dispositivos do Programa de Inscrição** > **Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
 
   ![Captura de ecrã a mostrar o nó Dispositivos do Programa de Inscrição selecionado e a ligação Sincronizar a ser selecionada.](./media/enrollment-program-device-sync.png)
-3. No painel **Sincronizar**, selecione **Pedido de Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
+  
+2. No painel **Sincronizar**, selecione **Pedido de Sincronização**. A barra de progresso mostra a quantidade de tempo que tem de aguardar até pedir novamente a Sincronização.
 
   ![Captura de ecrã a mostrar o painel Sincronizar, com a ligação Pedido de sincronização a ser selecionada.](./media/enrollment-program-device-request-sync.png)
 
@@ -170,7 +170,7 @@ Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincroni
      -  São atribuídos 15 minutos a qualquer pedido de sincronização para ser concluído. Durante este tempo ou até o pedido ser concluído com êxito, o botão **Sync (Sincronizar)** está desativado.
      - O Intune sincroniza os dispositivos novos e removidos com a Apple a cada 24 horas.
 
-4. Na área de trabalho Dispositivos do Programa de Inscrição, selecione **Atualizar** para ver os seus dispositivos.
+3. Na área de trabalho Dispositivos do Programa de Inscrição, selecione **Atualizar** para ver os seus dispositivos.
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Atribuir um perfil de inscrição a dispositivos
 Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder inscrevê-los.
@@ -178,7 +178,7 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 >[!NOTE]
 >Também pode atribuir números de série a perfis a partir do painel **Números de Série da Apple**.
 
-1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição Apple** e, em seguida, selecione **Perfis do Programa de Inscrição**.
+1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição da Apple** e, em seguida, selecione **Perfis do Programa de Inscrição**.
 2. Na lista **Perfis do Programa de Inscrição**, selecione o perfil que pretende atribuir aos dispositivos e, em seguida, selecione **Atribuir dispositivos**.
 
  ![Captura de ecrã a mostrar o ecrã Atribuições de Dispositivo com a opção Atribuir a ser selecionada.](./media/enrollment-program-device-assign.png)

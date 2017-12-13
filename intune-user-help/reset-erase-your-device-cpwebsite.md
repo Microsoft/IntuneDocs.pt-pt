@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Repor o dispositivo a partir do site do Portal da Empresa
 
-Se perdeu o seu dispositivo ou foi roubado, pode querer repô-lo com as predefinições de fábrica para evitar o acesso não autorizado aos seus dados. Pode repor o seu dispositivo remotamente através do [site do Portal da Empresa](https://portal.manage.microsoft.com). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune. Pode utilizar este site para fazer grande parte das mesmas tarefas que faria ao utilizar a aplicação Portal da Empresa.
+Se perdeu o seu dispositivo ou foi roubado, pode querer repô-lo com as predefinições de fábrica para evitar o acesso não autorizado aos seus dados. Pode repor o seu dispositivo remotamente através do [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito no Intune. Pode utilizar este site para fazer grande parte das mesmas tarefas que faria ao utilizar a aplicação Portal da Empresa.
 
 Se redefinir o seu dispositivo, este não será mais listado no Portal da Empresa e o dispositivo será reposto com as predefinições de fábrica.
 
@@ -33,7 +33,7 @@ Se redefinir o seu dispositivo, este não será mais listado no Portal da Empres
 
 Repor o dispositivo:
 
-1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com), toque no botão __menu__ e, em seguida, selecione __Os Meus Dispositivos__.
+1.  No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __menu__ e, em seguida, selecione __Os Meus Dispositivos__.
 
 2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo que pretende mudar.
 
@@ -47,4 +47,4 @@ Repor o dispositivo:
 
 O seu dispositivo foi reposto.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

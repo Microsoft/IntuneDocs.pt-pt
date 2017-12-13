@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Corrigir problemas comuns no seu dispositivo Android
 
-Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [Verificação de conformidade no seu dispositivo Android](check-compliance-on-your-device-android.md)
 - [Utilizar o Registo Verboso para ajudar o suporte da empresa a corrigir problemas de dispositivos](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -32,7 +32,7 @@ Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigid
 - [Enviar erros de inscrição ao suporte da empresa](send-enrollment-errors-to-your-it-admin-android.md)
 - [Necessita de atualizar o seu dispositivo Android](you-need-to-update-your-android-device.md)
 - [O dispositivo não é compatível com a versão máxima do sistema de operativo](your-android-version-isnt-yet-supported.md)
-- [O dispositivo foi desbloqueado por rooting e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
+- [O dispositivo tem root e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
 - [O dispositivo tem um certificado necessário em falta](your-device-is-missing-a-required-certificate-landing-android.md)
 - [Tem de desativar origens desconhecidas](you-need-to-turn-off-unknown-sources-android.md)
 - [Tem de desativar a depuração de USB](you-need-to-turn-off-usb-debugging-android.md)

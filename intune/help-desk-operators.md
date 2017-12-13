@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilizar o portal de resolução de problemas
 
@@ -26,11 +26,13 @@ ms.lasthandoff: 10/20/2017
 
 O portal de resolução de problemas permite que os operadores de suporte técnico e os administradores do Intune vejam as informações de utilizador para resolverem pedidos de ajuda dos utilizadores. As organizações que incluem um suporte técnico podem atribuir o **Operador de suporte técnico** a um grupo de utilizadores. A função de operador de suporte técnico pode utilizar o painel **Resolução de problemas**.
 
+O painel **Resolução de Problemas** também apresenta problemas de inscrição de utilizadores. Os detalhes acerca do problema e os passos de remediação sugeridos podem ajudar os administradores e os operadores de suporte técnico a resolver problemas. Existem determinados problemas de inscrição que não são detetados e é possível que não existam sugestões de remediação para alguns erros. 
+
 Para obter passos sobre como adicionar uma função de operador de suporte técnico, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control)
 
 Quando um utilizador contacta o suporte acerca de um problema técnico com o Intune, o operador de suporte técnico introduz o nome do utilizador. O Intune mostra dados úteis que podem ajudar a resolver vários problemas de nível 1, incluindo:
 
-- Estado de utilizador
+- Estado do utilizador
 - Atribuições
 - Resolver problemas de compatibilidade
 - O dispositivo não responde
@@ -60,7 +62,7 @@ Pode utilizar o painel **Resolução de problemas** para analisar as informaçõ
 | ---  | ---  | ---         |
 | 1.   | Estado da conta  | Mostra o estado do inquilino do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção do utilizador  | O nome do utilizador atualmente selecionado. Clique em **Alterar utilizador** para selecionar um novo utilizador.       |
-| 3.   | Estado de utilizador  | Apresenta o estado da licença do Intune do utilizador, número de dispositivos, conformidade de cada dispositivo, número de aplicações e conformidade das aplicações.       |
+| 3.   | Estado do utilizador  | Apresenta o estado da licença do Intune do utilizador, número de dispositivos, conformidade de cada dispositivo, número de aplicações e conformidade das aplicações.       |
 | 4.   | Informações do utilizador  | Utilize a lista para selecionar os detalhes a consultar no painel. <br>Pode selecionar: <ul><li>Aplicações móveis<li>Políticas de proteção de aplicações<li>Políticas de conformidade<li> Políticas de configuração</ul>      |
 | 5.   | Associação a grupos  | Yadda       |
 
@@ -232,7 +234,7 @@ Encontra-se disponível uma política de proteção de aplicações para aplica�
 | Políticas    | O tipo de propriedade dos dispositivos. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
 | Última sincronização   | O carimbo de data/hora da última vez que o dispositivo sincronizou com o Intune.                   |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode saber mais sobre o Controlo de administração baseada em funções (RBAC) para definir funções no seu dispositivo organizacional, gestão de aplicações móveis e tarefas de proteção de dados. Para obter mais informações, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control).
 

@@ -3,8 +3,8 @@ title: "Aplicações Android com políticas de proteção de aplicações"
 titlesuffix: Azure portal
 description: "Este tópico descreve o que esperar quando a sua aplicação Android é gerida por políticas de proteção de aplicações.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac70c8ce3bbc8338339e7becb8b28d594bb2fbf6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0d6fce4a48245bc8ba7533380fa5a365d44705ee
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações 
 

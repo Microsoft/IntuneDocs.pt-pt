@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: Impedir fugas de dados em dispositivos não geridos
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: Comparar MDM e MAM
+          href: byod-technology-decisions.md
     - name: Guia de migração
       href: migration-guide.md
       items:
@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
-            - name: Ecrã do Estado da Inscrição
-              href: windows-enrollment-status.md
         - name: Configurar inscrição do Android
           href: android-enroll.md
         - name: Configurar a inscrição do iOS
@@ -286,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: Dispositivos partilhados para iOS
               href: shared-device-settings-ios.md
+            - name: Configurar o Intune para o início de sessão único em dispositivos iOS
+              href: sso-ios.md
             - name: Definições de filtros Web para iOS
               href: web-content-filter-settings-ios.md
         - name: Configurar restrições de dispositivos

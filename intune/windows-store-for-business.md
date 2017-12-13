@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf0fc665ef70950b292241751d56122ebc9b0912
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ecb5a310e8b869deb493bc5554029d641ba419c3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
 
@@ -31,6 +31,7 @@ Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) pode
 * As aplicações que são sincronizadas aparecem na consola de administração do Intune. Pode atribuí-las como todas as outras aplicações.
 * Pode controlar quantas licenças estão disponíveis e quantas estão a ser utilizadas na consola de administração do Intune.
 * O Intune bloqueará a atribuição e instalação de aplicações se tiver um número insuficiente de licenças disponíveis.
+* As aplicações geridas pela Microsoft Store para Empresas revogam as licenças automaticamente quando um utilizador sai da empresa ou quando o administrador remove o utilizador e os dispositivos do mesmo.
 
 ## <a name="before-you-start"></a>Antes de começar
 

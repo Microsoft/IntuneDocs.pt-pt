@@ -2,8 +2,8 @@
 title: "Definições da política para Android e Samsung KNOX"
 description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android que gere com o Intune."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 36ef93bb3894083e3db3732faddea6f926831ac6
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Definições da política para Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -38,7 +38,7 @@ Utilize a **política de configuração geral para Android** do Intune para conf
 -   **Aplicações conformes e não conformes** – especifique uma lista de aplicações que são conformes ou não conformes na sua empresa. Em dispositivos Android e iOS, o **Relatório de Aplicações Não Conformes** pode ser utilizado para ver a conformidade de aplicações especificadas na lista comparativamente às aplicações instaladas pelos utilizadores. Na verdade, o relatório não pode bloquear a instalação da aplicação.
 
 > [!TIP]
-> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que todas as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não conformes serão bloqueadas ou comunicadas como não conformes. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, veja [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Pode configurar termos e condições para os utilizadores, para garantir que estes têm conhecimento de que todas as aplicações nos respetivos dispositivos, incluindo aplicações pessoais, serão avaliadas e que as aplicações não conformes serão bloqueadas ou comunicadas como não conformes. Os utilizadores têm de aceitar estes termos e condições antes de poderem inscrever os respetivos dispositivos e utilizar o portal da empresa para obter aplicações. Para obter mais informações sobre como utilizar os termos e condições, consulte [Definições de políticas de termos e condições no Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Se a definição que procura não for apresentada neste tópico, poderá conseguir criá-la através de uma política personalizada para Android que lhe permita utilizar definições OMA-URI para controlar o dispositivo. Para obter mais informações, consulte [Definições de política personalizada](#custom-policy-settings) mais adiante neste tópico.
 
@@ -181,7 +181,7 @@ Exemplo: procure Microsoft Office Mobile no Google Play. O URL a utilizar será 
 Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
 Esta capacidade destina-se a permitir a implementação de definições do Android que não são configuráveis com políticas do Intune.
-Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Veja os exemplos neste tópico para saber quais as políticas que pode configurar.
+Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para saber quais as políticas que pode configurar.
 
 ### <a name="general-settings"></a>Definições gerais
 
@@ -212,5 +212,5 @@ A aplicação Portal da Empresa tenta apenas a ativação do Samsung KNOX durant
 
 Pode encontrar uma lista de dispositivos Samsung KNOX suportados, juntamente com a lista de [dispositivos suportados pelo Intune](/intune/supported-devices-browsers.md#intune-supported-devices).
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
