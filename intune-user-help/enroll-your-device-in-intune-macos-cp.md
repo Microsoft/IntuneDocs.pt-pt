@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -29,7 +29,7 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
 > [!NOTE]
 > Pode encontrar instruções de inscrição de dispositivos macOS em versões anteriores do macOS [aqui](enroll-your-device-in-intune-macos-legacy.md).
 
-1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 2. Inicie sessão no site do Portal da Empresa com a sua conta escolar ou profissional.
 
@@ -62,4 +62,4 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
 
 11. O seu Mac iniciará a inscrição para gestão. Poderá ser-lhe pedido que forneça as informações de início de sessão do seu computador durante este tempo. A inscrição poderá demorar alguns minutos. Durante este tempo, poderá fazer outras coisas no seu computador. É apresentada uma mensagem assim que terminar a Configuração de Acesso da Empresa para o informar que está pronto.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

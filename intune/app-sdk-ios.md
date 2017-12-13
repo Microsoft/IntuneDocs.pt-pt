@@ -2,9 +2,9 @@
 title: "Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS"
 description: "O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune – na forma da gestão de aplicações móveis (MAM) – na sua aplicação iOS."
 keywords: 
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikre
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 6ff0e98c710676c257822c14661e6908849ae053
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -172,9 +172,9 @@ Pode utilizar a Ferramenta de Configuração de MAM do Intune para atualizar:
 * Qualquer um dos esquemas de URL definidos da sua aplicação no respetivo ficheiro Info.plist com o sufixo -intunemam para cada esquema de URL.
 * Qualquer um dos tipos de Documento definidos da sua aplicação no respetivo ficheiro Info.plist. Para a matriz "UTIs do Tipo de Conteúdos do Documento" de cada item, adicione uma entrada duplicada para cada cadeia com um prefixo "com.microsoft.intune.mam." .
 * Qualquer um dos grupos de aplicações da sua aplicação definidos nas respetivas elegibilidades. Adicione estes grupos ao dicionário IntuneMAMSettings na chave AppGroupIdentifiers como uma matriz de cadeias.
-
     
->[!NOTE] Se optar por utilizar esta ferramenta em vez da manipulação de info.plist manual, recomendamos que volte a executar a mesma sempre que fizer alterações ao info.plist ou às elegibilidades da sua aplicação.
+> [!Note]
+> Se optar por utilizar esta ferramenta em vez da manipulação de info.plist manual, recomendamos que volte a executar a mesma sempre que fizer alterações ao info.plist ou às elegibilidades da sua aplicação.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar a Azure Active Directory Authentication Library (ADAL)
 

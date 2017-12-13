@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f4a6ed7d399806b2b8ac8fb24d9a29675ffe00b3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>O Outlook não sincroniza e-mails geridos quando a otimização da bateria em dispositivos Android está ativada
 
 > [!IMPORTANT]
-> Este problema foi documentado aqui porque temos sido contactados pelos clientes diversas vezes em relação ao mesmo. Se continuar a deparar-se com este problema após seguir estes passos, contacte [o suporte da empresa](https://portal.manage.microsoft.com) para obter ajuda adicional.
+> Este problema foi documentado aqui porque temos sido contactados pelos clientes diversas vezes em relação ao mesmo. Se continuar a deparar-se com este problema após seguir estes passos, contacte [o suporte da empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obter ajuda adicional.
 
 Inscrever o seu dispositivo no Intune permite-lhe obter acesso a recursos da empresa. Um dos recursos mais comuns é o acesso ao e-mail. Um problema que temos registado ao aceder ao e-mail através do Outlook para dispositivos Android ocorre quando a otimização da bateria está ativada. A otimização da bateria poderá ser ativada automaticamente de forma a ajudar o seu dispositivo a permanecer ligado durante mais tempo. A otimização da bateria poderá contribuir para este fim porque tenta parar as transferências de e-mail automáticas.
 
@@ -73,4 +73,4 @@ Outra forma de localizar estas definições é através da pesquisa nas definiç
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

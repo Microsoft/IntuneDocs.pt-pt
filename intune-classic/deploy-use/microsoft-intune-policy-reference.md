@@ -2,8 +2,8 @@
 title: "Referência de políticas de configuração"
 description: "Utilize as informações neste tópico para ajudá-lo a decidir qual a política do Microsoft Intune a utilizar para gerir os seus dispositivos."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c2f926d9c1efdd4b8b99ab915767b19744dc8b90
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referência de políticas de configuração do Microsoft Intune
 

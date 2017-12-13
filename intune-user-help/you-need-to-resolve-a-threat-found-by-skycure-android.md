@@ -14,15 +14,15 @@ ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 341226bcc5ba3ca0b7f12aedeb137580a49b9f18
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1fa368ad494ae60a9db5cbe32ce678ce6fd56c0d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça encontrada pelo Symantec Endpoint Protection Mobile
 
-O Symantec Endpoint Protection Mobile encontrou uma potencial ameaça no dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, às aplicações e aos ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
+O Symantec Endpoint Protection Mobile detetou uma potencial ameaça no dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, às aplicações e aos ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
 
 ![O Skycure encontrou uma ameaça no dispositivo](./media/lookout-threat-found-android.png)
 
@@ -34,9 +34,9 @@ Se existir um vírus ou outra ameaça de segurança no dispositivo inscrito e te
 
 ![Mensagem de erro do Skycure com ligação ao site do Portal da Empresa](./media/skycure-list-of-potential-issues-android.png)
 
-Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com), onde verá instruções sobre como resolver o problema.
+Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), onde verá instruções sobre como resolver o problema.
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Exemplo de uma aplicação que o Symantec Endpoint Protection Mobile vê como uma ameaça
+## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Exemplo de uma aplicação que o Symantec Endpoint Protection Mobile considera uma ameaça
 
 Se instalou uma aplicação que o Symantec Endpoint Protection Mobile pensa ser uma ameaça, verá um ecrã semelhante a este:
 
@@ -44,5 +44,5 @@ Se instalou uma aplicação que o Symantec Endpoint Protection Mobile pensa ser 
 
 Depois de desinstalar a aplicação, recupera de imediato o acesso ao e-mail e aos dados da empresa. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 

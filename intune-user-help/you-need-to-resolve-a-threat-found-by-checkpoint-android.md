@@ -14,11 +14,11 @@ ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Resolver uma ameaça encontrada pelo SandBlast Mobile Protect
 
@@ -30,7 +30,7 @@ Para resolver o problema, abra a aplicação SandBlast Mobile Protect e siga as 
 
 Se existir um vírus ou outra ameaça de segurança no dispositivo inscrito e tentar aceder aos ficheiros ou ao e-mail da sua empresa, obterá uma mensagem do SandBlast Mobile Protect a alertá-lo para tomar medidas.
 
-Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com), onde poderá seguir instruções sobre como resolver o problema.
+Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), onde poderá seguir instruções sobre como resolver o problema.
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Exemplo de uma aplicação que o SandBlast Mobile Protect vê como uma ameaça
 
@@ -38,4 +38,4 @@ Se tiver instalado uma aplicação que o SandBlast Mobile Protect considera uma 
 
 Quando isto acontecer, desinstale a aplicação para recuperar de imediato o acesso ao e-mail e aos dados da empresa. Se não desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

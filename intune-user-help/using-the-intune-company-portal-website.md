@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>Utilizar o Site do Portal da Empresa do Intune
-O [site do Portal da Empresa](https://portal.manage.microsoft.com) é uma página Web que os utilizadores podem utilizar para gerir computadores e dispositivos que tenham inscrito no Intune.
+O [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) é uma página Web que os utilizadores podem utilizar para gerir computadores e dispositivos que tenham inscrito no Intune.
 
 Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da Empresa:
 
@@ -45,4 +45,4 @@ Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da
 
 -   Gerir remotamente o respetivo PC (funciona apenas para PCs)
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

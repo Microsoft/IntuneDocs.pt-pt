@@ -1,5 +1,5 @@
 ---
-title: "Instalar as aplicações do Office 365 ProPlus para dispositivos Windows 10 através do Intune"
+title: "Instalar aplicações do Office 365 em dispositivos móveis com o Intune"
 titlesuffix: Azure portal
 description: "Saiba como pode utilizar o Intune para facilitar a instalação das aplicações do Office 365 em dispositivos Windows 10."
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicações do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
-Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 ProPlus 2016 aos dispositivos que gere que executem o Windows 10. Também pode instalar as aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365, se tiver licenças para os mesmos. As aplicações que pretende são apresentadas como uma aplicação na lista de aplicações na consola do Intune.
+Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 ProPlus 2016 aos dispositivos que gere que executem o Windows 10. Também pode instalar as aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365, se tiver licenças para os mesmos. As aplicações que pretende são apresentadas como uma única entrada na lista de aplicações na consola do Intune.
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -35,7 +35,7 @@ Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do O
 - O Intune só suporta a adição de aplicações do Office que pertençam ao conjunto de aplicações Office 365 ProPlus 2016.
 - Se estiverem abertas aplicações do Office quando o Intune instalar o conjunto de aplicações, os utilizadores finais poderão perder os dados dos ficheiros não guardados.
 - Este método de instalação não é suportado em dispositivos com o Windows 10.
-- O Intune não suporta a instalação de aplicações de ambiente de trabalho do Office 365 da Loja Windows (denominadas aplicações Office Centennial) num dispositivo em que já implementou aplicações do Office 365 com o Intune. Se instalar esta configuração, poderá causar perda ou danos em dados.
+- O Intune não suporta a instalação de aplicações de ambiente de trabalho do Office 365 da Microsoft Store (denominadas aplicações Office Centennial) num dispositivo em que já implementou aplicações do Office 365 com o Intune. Se instalar esta configuração, poderá causar perda ou danos em dados.
 
 
 ## <a name="get-started"></a>Introdução
@@ -66,14 +66,14 @@ Neste passo, forneça informações acerca do conjunto de aplicações. Estas in
 2.  No painel **Informações do Conjunto de Aplicações**, especifique as seguintes informações: 
     - **Nome do Conjunto** – introduza o nome do conjunto de aplicações tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de conjuntos de aplicações que utiliza são exclusivos. Se o nome de um conjunto de aplicações existir em duplicado, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
     - **Descrição do Conjunto** – introduza uma descrição para o conjunto de aplicações. Por exemplo, pode listar as aplicações que selecionou para inclusão.
-    - **Publicador** – Introduza o nome do publicador da aplicação.
+    - **Publicador** – introduza o nome do publicador da aplicação.
     - **Categoria** – em alternativa, selecione uma ou mais categorias de aplicações incorporadas ou uma categoria criada por si. Isto irá permitir que os utilizadores encontrem o conjunto de aplicações mais facilmente quando procurarem no portal da empresa.
     - **Apresentar como aplicação em destaque no Portal da Empresa** – apresente o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de Informações** – Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de Privacidade** – Opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **Programador** – Opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário** – Opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
-    - **Notas** – Introduza quaisquer notas que pretenda associar esta aplicação.
+    - **URL de Informações** – opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade** – opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **Programador** – opcionalmente, introduza o nome do programador da aplicação.
+    - **Proprietário** – opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
+    - **Notas** – introduza quaisquer notas que pretenda associar esta aplicação.
     - **Carregar Ícone** – carregue um ícone que será apresentado para a aplicação quando os utilizadores procurarem no portal da empresa.
 3.  Quando tiver terminado, clique em **OK**.
 
@@ -137,7 +137,3 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o respet
 ## <a name="next-steps"></a>Próximos passos
 
 Agora pode atribuir as aplicações aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](/intune-azure/manage-apps/deploy-apps).
-
-             
-
-

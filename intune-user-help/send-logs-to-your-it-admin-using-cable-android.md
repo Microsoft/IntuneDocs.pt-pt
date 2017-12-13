@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6444c129869db467b582593677b20cd4de8f319d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar registos ao suporte da empresa por cabo USB
 
 Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Android, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
 
 > [!Note]
-> Antes de começar, certifique-se de que tem o endereço de e-mail do suporte da empresa à mão. Pode encontrar estas informações no [site do Portal da Empresa](https://portal.manage.microsoft.com) ou na aplicação Portal da Empresa.
+> Antes de começar, certifique-se de que tem o endereço de e-mail do suporte da empresa à mão. Pode encontrar estas informações no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) ou na aplicação Portal da Empresa.
 
 1.  No ecrã de erro, toque em **Enviar Informações**. Quando vir uma mensagem a perguntar qual o método que pretende utilizar para enviar os registos, escolha a opção que irá guardar os ficheiros no seu dispositivo.
 
@@ -37,4 +37,4 @@ Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa n
 
 4.  Selecione os ficheiros e anexe-os a um e-mail. Envie este e-mail ao suporte da empresa.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

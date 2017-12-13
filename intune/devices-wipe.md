@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
@@ -39,7 +39,21 @@ A **Reposição de fábrica** restaura as predefinições do dispositivo, remove
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
 4. Selecione o nome do dispositivo em que pretende efetuar a reposição de fábrica.
-5. No painel que apresenta o nome do dispositivo, selecione **Reposição de fábrica** e, em seguida, selecione **Sim** para confirmar.
+5. No painel que apresenta o nome do dispositivo, selecione **Reposição de fábrica**
+6. Para a versão 1709 ou superior do Windows 10, existe a opção adicional para "Reter estado de inscrição e conta de utilizador". 
+    
+    |Retido através de uma reposição de fábrica|Não retido|
+    | -------------|------------|
+    |Contas de utilizador associadas ao dispositivo|Ficheiros do utilizador|
+    |Estado da máquina \((associação a um domínio, Azure Active Directory)| Aplicações instaladas pelo utilizador \(aplicações Win32 e da loja)|
+    |Inscrição na MDM|Definições do dispositivo não predefinidas|
+    |Aplicações OEM instaladas \(aplicações Win32 e da loja)||
+    |Perfil de utilizador||
+    |Dados de utilizador fora do perfil de utilizador||
+    |Início de sessão automático de utilizador|| 
+    
+         
+7. Selecione **Sim** para confirmar a reposição de fábrica.
 
 Se o dispositivo estiver ativo e ligado, demora menos de 15 minutos até um comando de reposição de fábrica ser propagado em todos os tipos de dispositivo.
 

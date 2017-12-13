@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 494222330e06a1efc5a9ac6cb303b5d2c63d421e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Necessita de ativar o Arranque Seguro
 
@@ -30,4 +30,4 @@ A ativação do Arranque Seguro é uma tarefa avançada. Se estiver a utilizar u
 
 Se estiver a utilizar um PC, pode contactar o suporte da empresa ou ver a secção "To re-enable Secure Boot" (Para reativar o Arranque Seguro), na página [Disabling Secure Boot (Desativar o Arranque Seguro)](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx), para tentar ativar o Arranque Seguro por si próprio.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

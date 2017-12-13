@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>O seu dispositivo Android parece estar encriptado, mas o Portal da Empresa diz o contrário
 
@@ -38,7 +38,7 @@ Determinados dispositivos Android exigem que crie um PIN de arranque para garant
 
 ### <a name="downgrade-your-version-of-android"></a>Mudar a versão do Android para uma versão anterior
 
-Se o seu dispositivo permitir mudar para a versão anterior Android 6.0+, faça-o. Existe um risco de perda de dados se tentar mudar o seu dispositivo para uma versão anterior. Em alternativa, recomendamos que contacte o suporte da empresa para resolver este problema. Pode obter as informações de contacto do suporte da empresa no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Se o seu dispositivo permitir mudar para a versão anterior Android 6.0+, faça-o. Existe um risco de perda de dados se tentar mudar o seu dispositivo para uma versão anterior. Em alternativa, recomendamos que contacte o suporte da empresa para resolver este problema. Pode obter as informações de contacto do suporte da empresa no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ### <a name="encrypt-the-entire-device"></a>Encriptar todo o dispositivo
 
