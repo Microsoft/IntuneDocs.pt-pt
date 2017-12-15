@@ -3,10 +3,10 @@ title: Configurar e gerir certificados SCEP com o Intune
 titlesuffix: Azure portal
 description: Saiba como configurar a sua infraestrutura e, em seguida, criar e atribuir perfis de certificado SCEP no Intune."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurar e gerir certificados SCEP com o Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -83,11 +83,11 @@ Antes de poder configurar perfis de certificado, tem de concluir as seguintes ta
 
 **Passo 5**: Ativar, instalar e configurar o Intune Certificate Connector
 
-#### <a name="step-1---create-an-ndes-service-account"></a>Passo 1 – criar uma conta do serviço do NDES
+#### <a name="step-1---create-an-ndes-service-account"></a>Passo 1 – Criar uma conta do serviço do NDES
 
 Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Especifica esta conta quando configura os modelos na AC emissora antes de instalar e configurar o NDES. Verifique se o utilizador tem os direitos predefinidos para **Iniciar Sessão Localmente**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2 – configurar modelos de certificado na autoridade de certificação
+#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2 – Configurar modelos de certificado na autoridade de certificação
 Nesta tarefa irá:
 
 -   Configurar um modelo de certificados para o NDES
@@ -152,7 +152,7 @@ Para configurar a AC para permitir ao autor do pedido especificar o período de 
 3. Valide o modelo publicado ao visualizá-lo na pasta **Modelos de Certificado**.
 
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Passo 3 – configurar pré-requisitos no servidor do NDES
+#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Passo 3 – Configurar pré-requisitos no servidor do NDES
 Nesta tarefa irá:
 
 -   Adicionar o NDES a um Windows Server e configurar ISS para suportar o NDES
@@ -164,7 +164,7 @@ Nesta tarefa irá:
 
 
 
-   1.  No servidor que irá alojar o NDES, tem de iniciar sessão como **Administrador de Empresa**e, em seguida, utilizar o [Assistente para Adicionar Funções e Funcionalidades](https://technet.microsoft.com/library/hh831809.aspx) para instalar o NDES:
+   1.  No servidor que aloja o NDES, inicie sessão como **Administrador de Empresa** e, em seguida, utilize o [Assistente para Adicionar Funções e Funcionalidades](https://technet.microsoft.com/library/hh831809.aspx) para instalar o NDES:
 
     1.  No Assistente, selecione **Serviços de Certificados do Active Directory** para obter acesso aos Serviços de Função AD CS. Selecione o **Serviço de Inscrição de Dispositivos de Rede**, desmarque **Autoridade de Certificação**e, em seguida, conclua o assistente.
 
@@ -193,7 +193,7 @@ Nesta tarefa irá:
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Passo 4 – configurar o NDES para ser utilizado com o Intune
+#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Passo 4 – Configurar o NDES para ser utilizado com o Intune
 Nesta tarefa irá:
 
 -   Configurar o NDES para ser utilizado com a AC emissora
@@ -239,7 +239,7 @@ Nesta tarefa irá:
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (decimal)|
 
 
-4. No Gestor do IIS, escolha **Site Predefinido** -> **Filtragem de Pedidos** -> **Editar Definição de Funcionalidade** e altere o **Comprimento Máximo do URL** e a **Cadeia máxima de consulta** para *65534*, conforme mostrado.
+4. No Gestor do IIS, selecione **Site Predefinido** -> **Filtragem de Pedidos** -> **Editar Definição de Funcionalidade** e altere o **Comprimento Máximo do URL** e a **Cadeia máxima de consulta** para *65534*, conforme mostrado.
 
     ![Comprimento máximo de URL e de consulta no IIS](.\media\SCEP_IIS_max_URL.png)
 
@@ -255,7 +255,7 @@ Nesta tarefa irá:
 1.  No seu Servidor do NDES, peça e instale um certificado de **autenticação de servidor** à sua AC interna ou pública. Em seguida, deve vincular este certificado SSL no IIS.
 
     > [!TIP]
-    > Após vincular o certificado SSL no IIS, irá também instalar um certificado de autenticação de cliente. Este certificado pode ser emitido por qualquer AC que seja considerada fidedigna pelo Servidor do NDES. Embora não seja a melhor prática, pode utilizar o mesmo certificado para autenticação de servidores e de clientes desde que o certificado tenha ambas as Utilizações de Chave Avançadas (EKUs). Reveja os seguintes passos para obter informações sobre estes certificados de autenticação.
+    > Após vincular o certificado SSL no IIS, instale um certificado de autenticação de cliente. Este certificado pode ser emitido por qualquer AC que seja considerada fidedigna pelo Servidor do NDES. Embora não seja a melhor prática, pode utilizar o mesmo certificado para autenticação de servidores e de clientes desde que o certificado tenha ambas as Utilizações de Chave Avançadas (EKUs). Reveja os seguintes passos para obter informações sobre estes certificados de autenticação.
 
     1.  Após obter o certificado de autenticação de servidor, abra o **Gestor de IIS**, selecione o **Site Predefinido** no painel **Ligações** e, em seguida, clique em **Vínculos** no painel **Ações** .
 
@@ -296,33 +296,20 @@ Nesta tarefa irá:
 
 4. Reinicie o servidor do NDES. O servidor está agora pronto para suportar o Certificate Connector.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Passo 5 – ativar, instalar e configurar o Intune Certificate Connector
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Passo 5 – Ativar, instalar e configurar o Intune Certificate Connector
 Nesta tarefa irá:
 
 - Ativar o suporte para o NDES no Intune.
-
-- Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
-
-   > [!NOTE]
-   > Para suportar uma elevada disponibilidade, pode instalar múltiplas instâncias do Certificate Connector.
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>Para ativar o suporte do Certificate Connector
-
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Configurar dispositivos**.
-4. No painel **Configuração do Dispositivo**, escolha **Autoridade de Certificação**.
-5.  Selecione **Ativar Certificate Connector**.
+- Transferir, instalar e configurar o Certificate Connector num servidor no seu ambiente. Para suportar a elevada disponibilidade, pode instalar múltiplos Certificate Connectors em diferentes servidores.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Para transferir, instalar e configurar o Certificate Connector
-
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Configurar dispositivos**.
-4. No painel **Configuração do Dispositivo**, escolha **Autoridade de Certificação**.
-5. Selecione **Transferir o Certificate Connector**.
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. Inicie sessão no portal do Azure. 
+2. Selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+3. No painel do **Intune**, selecione **Configuração do Dispositivo**.
+4. No painel **Configuração do Dispositivo**, selecione **Autoridade de Certificação**.
+5. Clique em **Adicionar** e selecione **Transferir o ficheiro de Conector**. Guarde a transferência numa localização a que possa aceder a partir do servidor onde irá instalá-la. 
 6.  Após a conclusão da transferência, execute o instalador transferido (**ndesconnectorssetup.exe**) num servidor do Windows Server 2012 R2. Este instalador também instala o módulo de políticas para NDES e o Serviço Web CRP. (O Serviço Web CRP, CertificateRegistrationSvc, é executado como uma aplicação no IIS.)
 
     > [!NOTE]
@@ -358,43 +345,43 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 ## <a name="how-to-create-a-scep-certificate-profile"></a>Como criar um perfil de certificado SCEP
 
 1. No Portal do Azure, selecione a carga de trabalho **Configurar dispositivos**.
-2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
-3. No painel de perfis, escolha **Criar Perfil**.
+2. No painel **Configuração do Dispositivo**, selecione **Gerir** > **Perfis**.
+3. No painel de perfis, selecione **Criar Perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
-5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado SCEP. Atualmente, pode escolher uma das seguintes plataformas para definições de restrição de dispositivos:
+5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado SCEP. Atualmente, pode selecionar uma das seguintes plataformas para definições de restrição de dispositivos:
     - **Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
-6. Na lista pendente **Tipo de perfil**, escolha **Certificado SCEP**.
+6. Na lista pendente **Tipo de perfil**, selecione **Certificado SCEP**.
 7. No painel **Certificado SCEP**, configure as seguintes definições:
-    - **Período de validade do certificado** – se tiver executado o comando **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** na AC emissora, que permite um período de validade personalizado, poderá especificar o tempo restante até o certificado expirar.<br>Pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode especificar um valor de um ano, mas não um valor de cinco anos. O valor deve também ser inferior ao período de validade restante do certificado da AC emissora. 
+    - **Período de validade do certificado** – Se tiver executado o comando **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** na AC emissora, que permite um período de validade personalizado, poderá especificar o tempo restante até o certificado expirar.<br>Pode especificar um valor inferior ao período de validade do modelo de certificado especificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode especificar um valor de um ano, mas não um valor de cinco anos. O valor deve também ser inferior ao período de validade restante do certificado da AC emissora. 
     - **Fornecedor de armazenamento de chaves (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10) – especifique onde é armazenada a chave do certificado. Escolha um dos seguintes valores:
         - **Inscrever em KSP de Trusted Platform Module (TPM) se estiver presente, caso contrário, KSP de Software**
         - **Inscrever em KSP de Trusted Platform Module (TPM), caso contrário, ocorre uma falha**
         - **Inscrever em Passport, caso contrário, ocorre uma falha (Windows 10 e posterior)**
         - **Inscrever em KSP de Software**
-    - **Formato do nome do requerente** – na lista, selecione de que forma o Intune cria automaticamente o nome do requerente no pedido de certificado. Se o certificado se destinar a um utilizador, pode também incluir o endereço de e-mail do utilizador no nome do requerente. Escolha entre:
+    - **Formato do nome do requerente** – Na lista, selecione de que forma o Intune cria automaticamente o nome do requerente no pedido de certificado. Se o certificado se destinar a um utilizador, pode também incluir o endereço de e-mail do utilizador no nome do requerente. Escolha entre:
         - **Não configurado**
         - **Nome comum**
         - **Nome comum, incluindo o e-mail**
         - **Nome comum como e-mail**
         - **Identidade Internacional do Equipamento Móvel (IMEI)**
         - **Número de série**
-        - **Personalizado** – quando seleciona esta opção, é apresentado outro campo pendente. Pode utilizar esse campo para inserir um formato de nome de requerente personalizado. As duas variáveis suportadas pelo formato personalizado são **Nome Comum (CN)** e **E-mail (E)**. Através de uma combinação de uma ou muitas destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como este: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. Neste exemplo, criou um formato de nome de requerente que, além das variáveis CN e E, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. [Este tópico](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) mostra a função **CertStrToName** e as cadeias suportadas dela.
+        - **Personalizado** – Quando seleciona esta opção, é apresentado outro campo pendente. Pode utilizar esse campo para inserir um formato de nome de requerente personalizado. As duas variáveis suportadas pelo formato personalizado são **Nome Comum (CN)** e **E-mail (E)**. Através de uma combinação de uma ou muitas destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como este: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. Neste exemplo, criou um formato de nome de requerente que, além das variáveis CN e E, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. [Este tópico](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) mostra a função **CertStrToName** e as cadeias suportadas dela.
         
-    - **Nome alternativo do requerente** – especifique o modo como o Intune cria automaticamente os valores para o nome alternativo do requerente (SAN) no pedido de certificado. Por exemplo, se tiver selecionado um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se o certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, terá de definir o nome alternativo do requerente com o UPN. 
-    - **Utilização de chave** – especifique as opções de utilização de chave para este certificado. Pode selecionar de entre as seguintes opções: 
+    - **Nome alternativo do requerente** – Especifique o modo como o Intune cria automaticamente os valores para o nome alternativo do requerente (SAN) no pedido de certificado. Por exemplo, se tiver selecionado um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se o certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, terá de definir o nome alternativo do requerente com o UPN. 
+    - **Utilização de chave** – Especifique as opções de utilização de chave para este certificado. Pode selecionar de entre as seguintes opções: 
         - **Cifragem de chaves:** permita a troca de chaves apenas quando a chave for encriptada. 
         - **Assinatura digital:** permita a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave. 
     - **Tamanho da chave (bits)** – selecione o número de bits que está contido na chave. 
-    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10) – selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam. 
-    - **Certificado de Raiz** – escolha um perfil de certificado da AC de raiz que tenha configurado anteriormente e atribuído ao utilizador ou dispositivo. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. 
-    - **Utilização da chave expandida** – escolha **Adicionar** para adicionar valores ao objetivo do certificado. Na maioria dos casos, o certificado exige a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário. 
+    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10) – Selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam. 
+    - **Certificado de Raiz** – Escolha um perfil de certificado da AC de raiz que tenha configurado anteriormente e atribuído ao utilizador ou dispositivo. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. 
+    - **Utilização da chave expandida** – selecione **Adicionar** para adicionar valores ao objetivo do certificado. Na maioria dos casos, o certificado exige a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário. 
     - **Definições de Inscrição**
-        - **Limiar de renovação (%)** – especifique a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado.
+        - **Limiar de renovação (%)** – Especifique a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado.
         - **URLs do Servidor SCEP** – especifique um ou mais URLs para os servidores do NDES que emitem os certificados através de SCEP. 
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
