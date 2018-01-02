@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>Ações automáticas de não conformidade
 
@@ -27,7 +27,7 @@ As **ações de não conformidade** permitem-lhe configurar uma sequência crono
 
 Existem dois tipos de ações:
 
--   **Notificar os utilizadores finais por e-mail**: pode personalizar a sua notificação por e-mail antes de enviar para o utilizador final. O Intune permite personalizar o assunto, o corpo de mensagem, incluindo o logótipo da empresa, as informações de contacto e os destinatários adicionais.
+-   **Notificar os utilizadores finais por e-mail**: pode personalizar a sua notificação por e-mail antes de enviar para o utilizador final. O Intune permite personalizar o assunto, o corpo de mensagem, incluindo o logótipo da empresa, e as informações de contacto.
 
 -   **Marcar dispositivos como não conformes**: pode determinar um número de dias após os quais o dispositivo deve ser marcado como não conforme. Pode fazê-lo imediatamente, mas também pode dar ao utilizador um período de tolerância para este ficar em conformidade com as políticas de conformidade do seu dispositivo.
 
@@ -101,7 +101,7 @@ Pode adicionar uma ação quando estiver a criar uma nova política de conformid
 
 5.  Quando terminar de adicionar as suas informações, selecione **Adicionar** e, em seguida, **OK**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode monitorizar a atividade de conformidade do dispositivo ao executar os relatórios disponíveis no painel Conformidade do dispositivo. Saiba [como monitorizar a conformidade do dispositivo com o Intune](device-compliance-monitor.md)
 

@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controlo de administração baseada em funções (RBAC) com o Intune
 
@@ -36,7 +36,7 @@ Com o novo portal do Azure, o **Azure Active Directory (Azure AD)** fornece dua
 
 - **Administrador Global:** os utilizadores com esta função têm acesso a todas as funcionalidades administrativas no Azure AD, bem como a serviços que federam para o Azure AD como o Exchange Online, o SharePoint Online e o Skype para Empresas Online. A pessoa que se inscreve no inquilino do Azure AD torna-se um administrador global. Apenas os administradores globais podem atribuir outras funções de administradores do Azure AD. Pode existir mais de um administrador global na sua organização. Os administradores globais podem redefinir a palavra-passe para qualquer utilizador e todos os outros administradores.
 
-- **Administrador de Serviço do Intune:** os utilizadores com esta função têm permissões globais no Intune quando o serviço está presente. Além disso, esta função fornece a capacidade de gerir utilizadores, dispositivos e de criar e gerir grupos.
+- **Administrador de Serviço do Intune:** os utilizadores com esta função têm permissões globais no Intune quando o serviço está presente. Adicionalmente, além das restrições de substituição do Azure, esta função permite gerir utilizadores e dispositivos, assim como criar e gerir grupos do Intune.
 
 - **Administrador de Acesso Condicional:** os utilizadores com esta função só têm permissões para ver, criar, modificar e eliminar políticas de acesso condicional.
 
