@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e34b9cd030244db4bdde78eedbb0f874f49fa1e1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="map-device-groups"></a>Mapear grupos de dispositivos
-
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -54,7 +53,7 @@ Irá utilizar o nome de categoria de dispositivo quando criar grupos de seguran�
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Passo 2 – crie grupos de segurança do Azure Active Directory
 Neste passo irá criar grupos dinâmicos no portal do Azure com base na categoria de dispositivo e no nome da categoria de dispositivo.
 
-Para continuar, consulte o artigo [Using attributes to create advanced rules (Utilizar atributos para criar regras avançadas – em inglês)](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) na documentação do Azure Active Directory. 
+Para continuar, consulte o artigo [Using attributes to create advanced rules (Utilizar atributos para criar regras avançadas – em inglês)](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) na documentação do Azure Active Directory.
 
 Utilize as informações nesta secção para criar um grupo de dispositivos com uma regra avançada através do atributo **deviceCategory**. Por exemplo (**device.deviceCategory -eq** “*<the device category name you got from the Azure portal>*”)
 
@@ -84,7 +83,7 @@ Se a coluna **Categoria** não for apresentada, clique em **Colunas**, escolha *
 
 Quando os utilizadores finais de dispositivos iOS e Android inscreverem os dispositivos, têm de escolher uma categoria na lista de categorias que configurou. Após escolherem uma categoria e terminarem a inscrição, o respetivo dispositivo é adicionado ao grupo de dispositivos do Intune ou ao grupo de segurança do Active Directory que corresponde à categoria que escolheram.
 
-Para atribuir uma categoria a um dispositivo Windows, os utilizadores finais devem utilizar o site do Portal da Empresa (portal.manage.microsoft.com) após a inscrição do dispositivo. Num dispositivo Windows, aceda ao site e vá para **Menu** > **Os Meus Dispositivos**. Escolha um dispositivo inscrito listado na página e, em seguida, selecione uma categoria. 
+Independentemente da plataforma, os seus utilizadores podem sempre aceder a portal.manage.microsoft.com após inscreverem o dispositivo. Peça ao utilizador que aceda ao site do Portal da Empresa e aceda a **Os Meus Dispositivos**. Podem escolher um dispositivo inscrito listado na página e, em seguida, selecionar uma categoria.
 
 Após escolher uma categoria, o dispositivo é automaticamente adicionado ao grupo criado correspondente. Se um dispositivo já estiver inscrito antes de configurar as categorias, o utilizador final verá uma notificação sobre o dispositivo no site do Portal da Empresa e ser-lhe-á pedido para selecionar uma categoria na próxima vez que aceder à aplicação Portal da Empresa num dispositivo iOS ou Android.
 
@@ -92,5 +91,3 @@ Após escolher uma categoria, o dispositivo é automaticamente adicionado ao gru
 - Pode editar uma categoria de dispositivo no Portal do Azure, mas se o fizer, tem de atualizar manualmente todos os grupos de segurança do Azure Active Directory que mencionam esta categoria.
 
 - Se eliminar uma categoria, quaisquer dispositivos que lhe tenham sido atribuídos apresentarão subsequentemente o nome da categoria **Não atribuído**.
-
-

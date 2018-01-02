@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utilizar dispositivos geridos para trabalhar
 O Microsoft Intune é um software que permite às organizações gerir dispositivos (como smartphones, tablets e PCs), aplicações e outros recursos empresariais, como o e-mail. Esta funcionalidade permite que os empregados acedam às informações de trabalho deles a partir de praticamente qualquer lugar em quase todos os dispositivos e, ao mesmo tempo, ajuda a proteger as informações da empresa.
@@ -34,7 +34,7 @@ A equipa de suporte da sua empresa pode ver as informações que são relevantes
 Pode obter o Portal da Empresa de duas formas:
 
 - Ao instalar a aplicação Portal da Empresa no dispositivo. Normalmente, pode obter a aplicação Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o suporte da empresa também pode instalar automaticamente a aplicação Portal da Empresa.
-- Ao aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com) que o suporte da empresa configurou.
+- Ao aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) que o suporte da empresa configurou.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre a aplicação e o site?
 Existem algumas pequenas diferenças entre a aplicação Portal da Empresa e o site do Portal da Empresa, mas pode efetuar a maioria das mesmas tarefas nos dois. Algumas tarefas que pode fazer:
@@ -60,8 +60,9 @@ Quando adiciona um computador ou dispositivo ao Portal da Empresa, é possível 
 Para saber mais sobre o que o suporte da empresa pode e não pode ver no seu dispositivo, utilize a ligação que corresponde ao tipo de dispositivo que está a utilizar:
 
 - [Instalar a aplicação Portal da Empresa para Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Instalar a aplicação Portal da Empresa para iOS e macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Instalar a aplicação Portal da Empresa para Windows](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Instalar a aplicação Portal da Empresa para iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Instalar a aplicação Portal da Empresa para macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Instalar a aplicação Portal da Empresa para Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Que tipos de computadores ou dispositivos pode adicionar ao Portal da Empresa?
 -   Dispositivos Apple com iOS (como iPhone e iPad) e macOS (como MacBook e iMac)
@@ -78,7 +79,8 @@ Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Em
 Quando *remove* um computador ou dispositivo do Portal da Empresa, está a anular a inscrição do seu dispositivo no Intune. Ao anular a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo, e alguns dados da empresa poderão ser removidos do mesmo. Para saber como pode remover o dispositivo do Portal da Empresa, escolha uma das ligações seguintes:
 
 - [Anular a inscrição do dispositivo Android](unenroll-your-device-from-intune-android.md)
-- [Anular a inscrição do dispositivo iOS ou macOS](unenroll-your-device-from-intune-ios.md)
+- [Anular a inscrição do seu dispositivo iOS](unenroll-your-device-from-intune-ios.md)
+- [Anular a inscrição do seu dispositivo macOS](unenroll-your-device-from-intune-macos.md)
 - [Anular a inscrição do dispositivo Windows](unenroll-your-device-from-intune-windows.md)
 
 Ao *Repor* um computador ou dispositivo, o Portal da Empresa tenta repô-lo novamente para as predefinições do fabricante. Repor o dispositivo remove todos os dados empresariais e pessoais do dispositivo! Se perder o dispositivo, pode também repô-lo de forma remota a partir do site do Portal da Empresa.
@@ -95,6 +97,7 @@ A Microsoft recomenda que experimente corrigir o problema por si próprio primei
 
 - [Corrigir problemas comuns no seu dispositivo Android](troubleshoot-your-device-android.md)
 - [Corrigir problemas comuns no seu dispositivo iOS](troubleshoot-your-device-ios.md)
+- [Corrigir problemas comuns no seu dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Corrigir problemas comuns no seu dispositivo Windows](troubleshoot-your-device-windows.md)
 
-Pode publicar um comentário abaixo para pedir ajuda, mas cada organização tem requisitos diferentes, pelo que poderemos não conseguir responder sempre às suas perguntas. A forma mais rápida de obter uma resposta relevante é provavelmente ao contactar o suporte da empresa. As informações de contacto do seu administrador de TI devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com).
+Pode publicar um comentário abaixo para pedir ajuda, mas cada organização tem requisitos diferentes, pelo que poderemos não conseguir responder sempre às suas perguntas. A forma mais rápida de obter uma resposta relevante é provavelmente ao contactar o suporte da empresa. As informações de contacto do seu administrador de TI devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
