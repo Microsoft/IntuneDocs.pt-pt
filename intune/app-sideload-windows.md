@@ -1,9 +1,9 @@
 ---
-title: "Aplicações em sideload para Windows e Windows Phone"
+title: "Sideload para Windows e aplicações para Windows Phone do Intune"
 description: "Saiba como assinar aplicações de linha empresarial de forma a poder utilizar o Intune para as implementar."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
