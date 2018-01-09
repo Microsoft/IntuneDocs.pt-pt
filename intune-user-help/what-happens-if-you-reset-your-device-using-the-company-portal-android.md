@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Android com o Portal da Empresa?
 
 Quando utiliza o Portal da Empresa para repor o seu dispositivo Android, todas as aplicações, definições e dados pessoais no dispositivo são eliminados. Esta reposição coloca o dispositivo novamente nas predefinições de fábrica.
 
-Se tiver um dispositivo Samsung KNOX, pode fazer uma “eliminação seletiva” ao escolher a opção **remover dispositivo** no Portal da Empresa. A eliminação seletiva remove apenas:
+Se tiver um dispositivo Samsung Knox, pode fazer uma "eliminação seletiva", escolhendo a opção **remover dispositivo** no Portal da Empresa. A eliminação seletiva remove apenas:
 
 - Aplicações empresariais que o suporte da empresa lhe disponibiliza.
 - E-mail, VPN e Wi-Fi.
