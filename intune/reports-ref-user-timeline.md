@@ -2,8 +2,8 @@
 title: "Linha Cronológica da Entidade do Utilizador do Armazém de Dados | Microsoft Docs"
 description: "O Armazém de Dados do Intune representa os Utilizadores numa linha cronológica."
 keywords: "Armazém de Dados do Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43234003da859b81dd499f22f7280db5bda41b
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 3f8f3d835369900eb4d1e0bf1287d0354cc1151c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Representação da duração do utilizador no Armazém de Dados do Intune
 
@@ -32,13 +32,13 @@ Esta observação poderá ser mais clara se percorrermos a duração de uma enti
 
 Vamos assumir que é atribuída uma licença a um utilizador chamado **João Silva** a 01/06/2017. Neste caso, a tabela **Utilizador** teria a entrada seguinte: 
  
-| Nome a Apresentar | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | João Silva | FALSO | 01/06/2017 | 31/12/9999 | VERDADEIRO
  
 João Silva desiste da licença a 25/07/2017. A tabela **Utilizador** tem as seguintes entradas. As alterações nos registos existentes estão `marked`. 
 
-| Nome a Apresentar | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | João Silva | FALSO | 01/06/2017 | `07/26/2017` | `FALSE` 
 | João Silva | VERDADEIRO | 26/07/2017 | 31/12/9999 | VERDADEIRO 
@@ -47,7 +47,7 @@ A primeira linha indica que João Silva existiu no Intune de 01/06/2017 a 25/07/
 
 Vamos assumir que é atribuída uma nova licença a João Silva a 31/08/2017. Neste caso, a tabela Utilizador teria as entradas seguintes:
  
-| Nome a Apresentar | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | João Silva | FALSO | 01/06/2017 | 26/07/2017 | FALSO 
 | João Silva | VERDADEIRO | 26/07/2017 | `08/31/2017` | `FALSE` 

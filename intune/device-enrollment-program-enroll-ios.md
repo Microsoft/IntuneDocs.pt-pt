@@ -3,8 +3,8 @@ title: "Inscrever dispositivos iOS – Programa de Registo de Aparelho"
 titlesuffix: Azure portal
 description: "Saiba como inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos.\""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 25e5922de658ca2137a32e43802072367587747c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -78,7 +78,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
    ![Captura de ecrã a mostrar a ação de adicionar um nome de servidor MDM para DEP e, em seguida, clicar em Seguinte.](./media/enrollment-program-token-add-server.png)
 
-5. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
+5. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.  
 
 
 7. Aceda a **Programas de Implementação** &gt; **Programa de Inscrição de Dispositivos** &gt; **Gerir Dispositivos**.
@@ -128,14 +128,14 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     - **Permitir Emparelhamento** – especifica se os dispositivos iOS se podem sincronizar com computadores. Se escolher **Permitir o Apple Configurator por certificado**, terá de selecionar um certificado em **Certificados do Apple Configurator**.
 
-    - **Certificados do Apple Configurator** – se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
+    - **Certificados do Apple Configurator** – Se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
 
   Escolha **Guardar**.
 
 5. Selecione **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil:
 
   ![Captura de ecrã a mostrar a seleção das definições de configuração com as definições disponíveis para um novo perfil do programa de inscrição.](./media/enrollment-program-profile-settings.png)
-    - **Nome do Departamento** – aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
+    - **Nome do Departamento** – Aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
 
     - **N.º de Telefone do Departamento** – aparece quando o utilizador clica no botão **Preciso de Ajuda** durante a ativação.
     - **Opções do Assistente de Configuração** – estas definições opcionais podem ser configuradas mais tarde no menu **Definições** de iOS.
@@ -178,7 +178,7 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 >[!NOTE]
 >Também pode atribuir números de série a perfis a partir do painel **Números de Série da Apple**.
 
-1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição da Apple** e, em seguida, selecione **Perfis do Programa de Inscrição**.
+1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição Apple** e, em seguida, selecione **Perfis do Programa de Inscrição**.
 2. Na lista **Perfis do Programa de Inscrição**, selecione o perfil que pretende atribuir aos dispositivos e, em seguida, selecione **Atribuir dispositivos**.
 
  ![Captura de ecrã a mostrar o ecrã Atribuições de Dispositivo com a opção Atribuir a ser selecionada.](./media/enrollment-program-device-assign.png)
@@ -194,4 +194,4 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 ## <a name="distribute-devices"></a>Distribuir dispositivos
 Ativou a gestão e sincronização entre a Apple e o Intune e atribuiu um perfil para permitir a inscrição dos seus dispositivos DEP. Agora pode distribuir os dispositivos aos utilizadores. Os dispositivos com afinidade do utilizador necessitam que seja atribuída uma licença do Intune a cada utilizador. Os dispositivos sem afinidade do utilizador necessitam de uma licença de dispositivo. Um dispositivo ativado não poderá aplicar um perfil de inscrição até que seja realizada uma reposição de fábrica do dispositivo.
 
-Veja [Inscrever o dispositivo iOS no Intune com o Programa de Registo de Aparelho](/intune-user-help/enroll-your-device-dep-ios).
+Veja [Inscrever o dispositivo iOS no Intune com o Programa de Registo de Aparelho](/intune-user-help/enroll-your-device-dep-ios). 

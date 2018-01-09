@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |Está à procura de documentação sobre o Intune no portal clássico? [Aceda aqui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Atualmente, em Pré-visualização Privada|
-|--|
-|As funcionalidades descritas neste tópico só estão disponíveis para clientes que estão atualmente em pré-visualização privada. Esta mensagem será removida quando as mesmas forem lançadas para todos os clientes.|
-| |
-
 Se a sua organização utilizar o [Jamf Pro](https://www.jamf.com) para gerir os Macs dos utilizadores finais, poderá utilizar as políticas de conformidade do Microsoft Intune com o acesso condicional do Azure Active Directory para garantir que os dispositivos na sua organização estão em conformidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 É preciso o seguinte para configurar o acesso condicional com o Jamf Pro:
 
-- Acesso à Pré-visualização Privada do Intune para acesso condicional
 - Jamf Pro 10.1.0 ou posterior
 - [Aplicação Portal da Empresa para macOS](https://aka.ms/macoscompanyportal)
 - Dispositivos macOS com OS X 10.11 Yosemite ou posterior
@@ -60,7 +54,7 @@ Pode ligar o Intune através do Jamf Pro ao:
 4. Selecione **Aplicação Web/API**.
 5. Especifique o **URL de Início de Sessão** com o seu URL de instância do Jamf Pro.
 6. Clique em **Criar aplicação**.
-7. Guarde o **ID da Aplicação** recentemente criado e, em seguida, abra **Definições** e navegue até **Acesso à API** > **Chaves** para criar uma nova Chave da Aplicação. Introduza uma **Descrição**, o prazo até a mesma **Expirar** e, em seguida, guarde a Chave da Aplicação. 
+7. Guarde o **ID da Aplicação** recentemente criado e, em seguida, abra **Definições** e navegue até **Acesso à API** > **Chaves** para criar uma nova Chave da Aplicação. Introduza uma **Descrição**, o prazo até a mesma **Expirar** e, em seguida, guarde a Chave da Aplicação.
 
   > [!IMPORTANT]
   > A Chave da Aplicação só é apresentada uma vez durante este processo. Lembre-se de a guardar num local de fácil acesso.
@@ -87,8 +81,8 @@ Pode ligar o Intune através do Jamf Pro ao:
 
 1. No Jamf Pro, navegue para **Gestão Global** > **Acesso Condicional**. Clique no botão **Edit** (Editar) no separador **Microsoft Intune Integration** (Integração do Microsoft Intune).
 2. Selecione a caixa de verificação **Enable Microsoft Intune Integration** (Ativar a Integração do Microsoft Intune).
-3. Indique as informações necessárias sobre o seu inquilino do Azure, incluindo a **Location** (Localização), o **Domain name** (Nome de domínio), bem como o **Application ID** (ID da Aplicação) e a **Application Key** (Chave da Aplicação) que guardou dos passos anteriores.
-4. Clique em **Save** (Guardar). O Jamf Pro testará as definições e verificará se obteve êxito.
+3. Indique as informações necessárias sobre o seu inquilino do Azure, incluindo a **Localização**, o **Nome de domínio**, bem como o **ID da Aplicação** e a **Chave da Aplicação** que guardou dos passos anteriores.
+4. Clique em **Guardar**. O Jamf Pro testará as definições e verificará se obteve êxito.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Definir as políticas de conformidade e registar dispositivos
 
@@ -105,7 +99,7 @@ O Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos
 * Dados encriptados (FileVault 2)
 * Estado do Controlador de Chamadas
 * Palavra-passe: número mínimo de conjuntos de carateres
-* Expiração da palavra-passe (dias)
+* Expiração da Palavra-passe (dias)
 * Tipo de Palavra-passe – simples, alfanumérico ou desconhecido
 * Impedir o Início de Sessão Automático
 * Comprimento do Código de Acesso Necessário

@@ -14,27 +14,27 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b25e1c40473ac3c37c9122386611a1a23fb62cb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 703150417e1bec5923f46259f53194b33223add5
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Tem de atualizar o sistema operativo do seu dispositivo Android
 
 Se vir uma mensagem que diz "O nível mínimo de patch de segurança do Android não está configurado", precisa de instalar uma atualização para se certificar de que o seu dispositivo se mantém protegido. É lançado um _patch_ para salvaguardar o bom funcionamento do software e garantir que o mesmo está atualizado. O suporte da empresa precisa que instale esta atualização para se certificar de que os dados empresariais têm a máxima proteção no seu dispositivo. A localização da atualização de segurança de que precisa varia consoante o tipo específico de dispositivo Samsung que possui.
 
-Se tiver um dispositivo Samsung, aceda a **Definições** > **Acerca do telemóvel** e verifique se a palavra “KNOX” é apresentada no ecrã. Se assim for, siga as instruções do Samsung KNOX abaixo.
+Se tem um dispositivo Samsung, aceda a **Definições** > **Acerca do dispositivo** e verifique se a palavra "Knox" é apresentada no ecrã. Se assim for, siga as instruções para o Samsung Knox abaixo.
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-## <a name="for-most-android-devices-non-samsung-knox"></a>Para a maioria dos dispositivos Android (não Samsung KNOX)
+## <a name="for-most-android-devices-non-samsung-knox"></a>Para a maioria dos dispositivos Android (não Samsung Knox)
 
 Aceda a **Definições** > **Acerca de** > **Actualizações do software**. Instale a atualização e o seu dispositivo deverá ficar com a atualização de segurança correta instalada.
 
-## <a name="for-samsung-knox-android-devices"></a>Para dispositivos Android Samsung KNOX
+## <a name="for-samsung-knox-android-devices"></a>Para dispositivos Android Samsung Knox
 
-Aceda a **Definições** > **Actualizações do sistema** > **Verificar novas actualizações do sistema**. Instale a atualização. O seu dispositivo Samsung KNOX deverá ficar com a atualização de segurança correta instalada.
+Aceda a **Definições** > **Actualizações do sistema** > **Verificar novas actualizações do sistema**. Instale a atualização e o seu dispositivo Samsung Knox deverá ficar com a atualização de segurança correta instalada.
 
 
 

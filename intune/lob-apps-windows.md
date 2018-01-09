@@ -3,8 +3,8 @@ title: "Como adicionar aplicações de linha de negócio Windows ao Intune"
 titlesuffix: Azure portal
 description: "Saiba como adicionar aplicações de linha de negócio Windows ao Intune.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33959b941e39d8694387770e1f3264d74647de69
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 256cf22c0a1d061b76c9f7d93a8472e3579d496a
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/04/2017
 2. No painel **Informações da aplicação**, configure as seguintes informações (alguns dos valores neste painel poderão ser preenchidos automaticamente):
     - **Nome** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** - Introduza uma descrição para a aplicação. A descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador** - Introduza o nome do publicador da aplicação.
+    - **Publicador** – Introduza o nome do publicador da aplicação.
     - **Categoria** – selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Categorizar aplicações facilita a localização da aplicação por parte dos utilizadores, à medida que procuram no portal da empresa.
     - **Apresentar esta aplicação em destaque no Portal da Empresa** – apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **URL de Informações** – opcionalmente, pode introduzir o URL para um site que contenha informações sobre a aplicação. O URL é apresentado aos utilizadores no portal da empresa.

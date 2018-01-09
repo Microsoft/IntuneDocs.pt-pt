@@ -3,8 +3,8 @@ title: "Configurar a inscrição do Programa do Apple School Manager para dispos
 titlesuffix: Azure portal
 description: "Saiba como configurar a inscrição do programa do Apple School Manager para dispositivos iOS da empresa com o Intune\""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 09/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aaefd6bfbff3394b4c0f79948ac23e32536f1e3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: f93453bf88c9f70043fe9d0cf548e1dba99100ac
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Ativar inscrição do dispositivo iOS com o Apple School Manager
 
@@ -76,7 +76,7 @@ Aceda ao ficheiro de certificado (.p7m), escolha **Abrir** e, em seguida, escolh
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
 Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
 
-1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** e, em seguida, **Inscrição da Apple**.
+1. No Intune, no portal do Azure, selecione **Inscrição de dispositivos** e, em seguida, **Inscrição da Apple**.
 2. Em **Programa de Inscrição**, selecione **Perfis do Programa de Inscrição**.
 3. No painel **Perfis do Programa de Inscrição**, selecione **Criar**.
 4. No painel **Criar Perfil de Inscrição**, introduza um **Nome** e uma **Descrição** para o perfil apresentado no Intune.
@@ -104,24 +104,24 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
     - **Permitir Emparelhamento** – especifica se os dispositivos iOS se podem sincronizar com computadores. Se escolher **Permitir o Apple Configurator por certificado**, terá de escolher um certificado em **Certificados do Apple Configurator**.
 
-      - **Certificados do Apple Configurator** – se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
+      - **Certificados do Apple Configurator** – Se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
 
 7. Selecione **Definições do Assistente de Configuração**, configure as seguintes definições de perfil e, em seguida, selecione **Guardar**:
 
-    - **Nome do Departamento** – aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
+    - **Nome do Departamento** – Aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
 
-    - **N.º de Telefone do Departamento** – aparece quando o utilizador clica no botão Preciso de ajuda durante a ativação.
-    - **Opções do Assistente de Configuração** – se excluídas das opções do Assistente de Configuração, estas definições podem ser configuradas mais tarde no menu **Definições** de iOS.
+    - **Telefone do Departamento** – Aparece quando o utilizador clica no botão Preciso de ajuda durante a ativação.
+    - **Opções do Assistente de Configuração** – Se excluídas das opções do Assistente de Configuração, estas definições podem ser configuradas mais tarde no menu **Definições** de iOS.
         - **Código de Acesso** – pedido de código de acesso durante a ativação. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação).
         - **Serviços de Localização** – se ativado, o Assistente de Configuração solicita o serviço durante a ativação
         - **Restaurar** – se estiver ativado, o Assistente de Configuração solicita a cópia de segurança de iCloud durante a ativação
-        - **Apple ID** – se estiver ativado, o iOS pede aos utilizadores um Apple ID quando o Intune tenta instalar uma aplicação sem um ID. É necessário um Apple ID para transferir aplicações iOS da App Store, incluindo as aplicações instaladas pelo Intune.
+        - **Apple ID** – Se estiver ativado, o iOS pede aos utilizadores um Apple ID quando o Intune tenta instalar uma aplicação sem um ID. É necessário um Apple ID para transferir aplicações iOS da App Store, incluindo as aplicações instaladas pelo Intune.
         - **Termos e Condições** – se ativado, o Assistente de Configuração solicita aos utilizadores que aceitem os termos e condições da Apple durante a ativação
         - **Touch ID** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
         - **Apple Pay** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
         - **Zoom** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
         - **Siri** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-        - **Dados de Diagnóstico** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
+        - **Dados de Diagnóstico** – Se ativado, o Assistente de Configuração solicita este serviço durante a ativação
 
 8. Para guardar as definições de perfil, selecione **Criar**, no painel **Criar Perfil de Inscrição**.
 
