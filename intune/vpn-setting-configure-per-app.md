@@ -3,8 +3,8 @@ title: "Configurar a VPN por Aplicação no Microsoft Intune para dispositivos i
 titleSuffix: Intune on Azure
 description: "Especifique que aplicações geridas podem utilizar a VPN em dispositivos iOS geridos pelo Intune."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/5/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c883ab2b96618502be20583908a4caa52ac5432b
-ms.sourcegitcommit: 6004fe51e3cee6fb34514ed0d56e20587ecafeb4
+ms.openlocfilehash: 1a37fcc372db6fec9f460fdc242cd6d2294f96e1
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Configurar a VPN por Aplicação no Microsoft Intune para dispositivos iOS
 

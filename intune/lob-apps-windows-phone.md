@@ -3,8 +3,8 @@ title: "Como adicionar aplicações de linha de negócio Windows Phone ao Intune
 titlesuffix: Azure portal
 description: "Saiba como adicionar aplicações de linha de negócio Windows Phone ao Intune.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 60776df3774d4f9ca7404ef04b1cc94536bcd164
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 93bb2f6b0515febf4b85cb5d11dee379cad46bf5
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Windows Phone ao Microsoft Intune
 
@@ -48,12 +48,12 @@ ms.lasthandoff: 10/04/2017
 2. No painel **Informações da aplicação**, configure as informações da aplicação. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** - Introduza uma descrição para a aplicação. A descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador** - Introduza o nome do publicador da aplicação.
+    - **Publicador** – Introduza o nome do publicador da aplicação.
     - **Categoria** – selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Utilizar categorias irá permitir que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
     - **Apresentar esta aplicação em destaque no Portal da Empresa** – Apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **URL de Informações** – Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **URL de Privacidade** – Opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **Programador** – Opcionalmente, introduza o nome do programador da aplicação.
+    - **Programador** – opcionalmente, introduza o nome do programador da aplicação.
     - **Proprietário** – Opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
     - **Notas** – Introduza quaisquer notas que pretenda associar esta aplicação.
     - **Logótipo** – carregue um ícone associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/04/2017
 1. No painel **Adicionar aplicação**, verifique se configurou as informações corretamente.
 2. Escolha **Adicionar** para carregar a aplicação para o Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A aplicação que criou é apresentada na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

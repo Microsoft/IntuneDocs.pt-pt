@@ -3,8 +3,8 @@ title: "Como adicionar aplicações da loja iOS ao Intune | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Saiba mais sobre como adicionar aplicações da loja iOS ao Intune.\""
 keywords: Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c5d18f217659c9be59c116670fbf92a6d1b2ab4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -33,7 +33,7 @@ Utilize as informações neste tópico para ajudá-lo a adicionar aplicações d
 
 ## <a name="before-you-start"></a>Antes de começar
 
-Só poderá atribuir aplicações com este método se forem gratuitas na App Store. Se pretender atribuir aplicações pagas com o Intune, considere utilizar o [programa de compra em volume do iOS](vpp-apps-ios.md).
+Só poderá atribuir aplicações com este método se forem gratuitas na app store. Se pretender atribuir aplicações pagas com o Intune, considere utilizar o [programa de compra em volume do iOS](vpp-apps-ios.md).
 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Passo 1 – Procurar a aplicação na loja

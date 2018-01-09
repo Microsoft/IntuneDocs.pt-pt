@@ -2,8 +2,8 @@
 title: "Dispositivos – Armazém de Dados do Intune | Documentos da Microsoft"
 description: "Tópico de referência para a categoria Devices das coleções de entidades na API do Armazém de Dados do Intune."
 keywords: "Armazém de Dados do Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
@@ -47,7 +47,7 @@ A entidade **DeviceTypes** representa o tipo de dispositivo referenciado por out
 
 | deviceTypeID  | Nome | Descrição |
 |---------|------------|--------|
-| 0 |Ambiente de Trabalho |Dispositivo de Ambiente de Trabalho do Windows |
+| 0 |Desktop |Dispositivo de Ambiente de Trabalho do Windows |
 | 1 |WindowsRT |Dispositivo WindowsRT |
 | 2 |WinMO6 |Dispositivo Windows Mobile 6.0 |
 | 3 |Nokia |Dispositivo Nokia |
@@ -358,7 +358,7 @@ A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos da
 | PlatformType |Tipo de Plataforma. |
 | ProcessorLevel |Nível do Processador. |
 | ProcessorRevision |Revisão do Processador. |
-| Produto |Produto. |
+| Product |Produto. |
 | ProductVersion |Versão do Produto. |
 | OEM |Fabricante de Equipamento Original. |
 | DeviceBuildVersion |Versão da Compilação do Dispositivo. |

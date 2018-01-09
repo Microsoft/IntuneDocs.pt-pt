@@ -3,8 +3,8 @@ title: Gerir eBooks do iOS comprados em volume
 titlesuffix: Azure portal
 description: "Saiba como pode sincronizar os livros que comprou em volume na loja iOS para o Intune e, em seguida, gerir e controlar a utilização deles.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 08/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16f1e720e94ac8c6b35158477b41bfaeac9dc0a8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 78f4ce4b8b37e519e8cb377030a7b119b6a64d92
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir eBooks do iOS comprados através de um programa de compra em grandes volumes com o Microsoft Intune
 
