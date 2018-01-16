@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: a83d938abbaefe35d028e50ed13c422b97bc3987
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Corrigir problemas comuns no seu dispositivo Android
 
@@ -30,6 +30,7 @@ Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigid
 - [Enviar registos ao suporte da empresa por e-mail](send-logs-to-your-it-admin-by-email-android.md)
 - [Enviar registos ao suporte da empresa por cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
 - [Enviar erros de inscrição ao suporte da empresa](send-enrollment-errors-to-your-it-admin-android.md)
+- [Enviar erros para a Microsoft](send-logs-to-microsoft-android.md)
 - [Necessita de atualizar o seu dispositivo Android](you-need-to-update-your-android-device.md)
 - [O dispositivo não é compatível com a versão máxima do sistema de operativo](your-android-version-isnt-yet-supported.md)
 - [O dispositivo tem root e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
@@ -41,3 +42,4 @@ Por vezes, podem ocorrer problemas no dispositivo Android que podem ser corrigid
 - [O dispositivo aparece encriptado, mas a aplicação Portal da Empresa diz o contrário](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [É-lhe pedido para instalar a aplicação Device Threat Protection no seu dispositivo Android](you-are-prompted-to-install-mtd-android.md)
 - [Precisa de resolver uma ameaça que a aplicação Device Threat Protection encontrou no seu dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+- [Corrigir erros em dispositivos Samsung Knox](samsung-knox-errors-android.md)

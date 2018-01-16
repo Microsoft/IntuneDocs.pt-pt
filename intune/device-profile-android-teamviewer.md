@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Fornecer assistência remota em dispositivos geridos no Intune
 
@@ -32,7 +32,7 @@ O Intune pode utilizar o software [TeamViewer](https://www.teamviewer.com) (adqu
 Os dispositivos Android e Windows geridos pelo Intune suportam a administração remota.
 
 >[!NOTE]
->O Windows Holographic (HoloLens), o Windows Team (Surface Hub) e o Windows 10 S não são suportados pelo software TeamViewer. 
+>O Windows Holographic (HoloLens), o Windows Team (Surface Hub) e o Windows 10 S não são suportados pelo software TeamViewer. Ainda precisa de gerir dispositivos através do [cliente de PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) no portal clássico do Intune.
 
 
 
@@ -77,4 +77,3 @@ Quando terminar, feche a janela do TeamViewer.
 ## <a name="next-steps"></a>Próximos passos
 
 Um utilizador final verá um sinalizador de notificação no ícone da aplicação Portal da Empresa no respetivo dispositivo e uma notificação ao abrir a aplicação. Em seguida, pode aceitar o pedido de assistência remota.
-

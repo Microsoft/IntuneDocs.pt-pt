@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de utilização da gestão de dispositivos móveis
 
@@ -43,7 +43,7 @@ Determine se cada cenário de casos de utilização também inclui casos de subu
 
 -   Executivo
 
--   Kiosk
+-   Modo de Local Público
 
 Veja a seguir alguns exemplos de cenários de casos de utilização e casos de subutilização:
 
@@ -51,7 +51,7 @@ Veja a seguir alguns exemplos de cenários de casos de utilização e casos de s
 |:---:|:---:|
 | Empresarial | Técnico de informação |              
 | Empresarial | Executivos |           
-| Empresarial | Kiosk |
+| Empresarial | Modo de Local Público |
 | BYOD | Técnico de informação |           
 | BYOD | Executivos |
 
@@ -65,7 +65,7 @@ Agora precisa de identificar os grupos organizacionais associados a cada cenári
 |:---:|:---:|:---:|
 | Empresarial | Técnico de informação | RH, Finanças |               
 | Empresarial | Executivo | RH, Finanças |            
-| Empresarial | Kiosk | Revenda |
+| Empresarial | Modo de Local Público | Revenda |
 | BYOD | Técnico de informação | Marketing, Vendas |            
 | BYOD | Executivo | Marketing, Vendas |
 
@@ -74,13 +74,13 @@ Agora precisa de identificar os grupos organizacionais associados a cada cenári
 
 O próximo passo consiste em identificar as plataformas de dispositivos móveis associados a cada cenário de caso de utilização. Poderá existir mais de uma plataforma.
 
-Por exemplo, o seu cenário de casos de utilização empresarial poderá suportar plataformas de dispositivos Samsung KNOX Android e iOS. A sua política de BYOD poderá incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung KNOX) e Windows 10 Mobile. Com base nos exemplos anteriores, associámos plataformas de dispositivos móveis a cada cenário de casos de utilização.
+Por exemplo, o seu cenário de casos de utilização empresarial poderá suportar plataformas de dispositivos Samsung Knox Android e iOS. A política de BYOD poderá incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung Knox) e Windows 10 Mobile. Com base nos exemplos anteriores, associámos plataformas de dispositivos móveis a cada cenário de casos de utilização.
 
 | **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** |   
 |:---:|:---:|:---:|:---:|
 | Empresarial | Técnico de informação | RH, Finanças | iOS |                                                           
 | Empresarial | Executivos | RH, Finanças | iOS |                                                           
-| Empresarial | Kiosk | Revenda | Android |
+| Empresarial | Modo de Local Público | Revenda | Android |
 | BYOD | Técnico de informação | Marketing, Vendas | iOS |                                                           
 | BYOD | Executivos | Marketing, Vendas | iOS |
 

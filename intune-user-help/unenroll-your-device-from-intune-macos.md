@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84a430da9484bc32e6dd20799059d72efaef09d8
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 504d732e00e296ad370d364e553989cacbd124d0
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Anular a inscrição do seu dispositivo macOS no Intune
 
-Quando termina a inscrição do seu dispositivo iOS no Intune, este não poderá continuar a aceder a recursos de empresa e deixará de ser gerido pelo Intune.
+Ao anular a inscrição do dispositivo macOS no Intune, o dispositivo deixará de poder aceder aos recursos da empresa.
 
 Siga estes passos para anular a inscrição do seu dispositivo macOS na gestão:
 
@@ -34,11 +34,11 @@ Siga estes passos para anular a inscrição do seu dispositivo macOS na gestão:
 
 Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
--   O seu dispositivo deixará de ser apresentado no Portal da Empresa.
+-   O dispositivo não é apresentado no Portal da Empresa.
 
--   Deixará de poder instalar aplicações a partir do Portal da Empresa.
+-   Não pode instalar aplicações a partir do Portal da Empresa.
 
--   As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
+-   Todas as definições alteradas no dispositivo quando o adicionou (por exemplo, o comprimento da palavra-passe) deixam de ser aplicáveis.
 
 -   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
 
@@ -46,8 +46,6 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 -   É possível que deixe de conseguir ligar-se à rede da sua empresa através de Wi-Fi ou de uma rede privada virtual (VPN).
 
--   Os perfis de e-mail da empresa são removidos do dispositivo.
-
--   Os dispositivos configurados apenas para e-mail não serão apresentados na aplicação Portal da Empresa ou no site.
+-   O acesso ao e-mail da empresa pode ser removido do dispositivo.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

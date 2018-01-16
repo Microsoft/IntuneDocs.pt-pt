@@ -1,7 +1,7 @@
 ---
-title: "Política do Intune para permitir/bloquear aplicações do Samsung KNOX"
+title: "Política do Intune para permitir/bloquear aplicações do Samsung Knox"
 titlesuffix: Azure portal
-description: "Crie um perfil personalizado para permitir e bloquear aplicações para dispositivos Samsung KNOX Standard.\""
+description: "Crie um perfil personalizado para permitir e bloquear aplicações para dispositivos Samsung Knox Standard.\""
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,13 +15,13 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung KNOX Standard no Microsoft Intune
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung Knox Standard no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ Utilize os procedimentos deste tópico para criar uma política personalizada do
 - Uma lista de aplicações que estão bloqueadas de executar no dispositivo. A execução das aplicações nesta lista está bloqueada, mesmo se já tiverem sido instaladas quando a política foi aplicada.
 - Uma lista de aplicações que os utilizadores do dispositivo estão autorizados a instalar a partir da loja Google Play. Apenas as aplicações na lista podem ser instaladas. Mais nenhuma outra aplicação pode ser instalada a partir da loja.
 
-Estas definições só podem ser utilizadas por dispositivos que executem Samsung KNOX Standard.
+Estas definições só podem ser utilizadas por dispositivos com o Samsung Knox Standard.
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Criar uma lista de aplicações permitidas ou bloqueadas
 

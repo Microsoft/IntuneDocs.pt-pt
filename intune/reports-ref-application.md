@@ -1,11 +1,11 @@
 ---
-title: "Aplicação | Documentos da Microsoft"
+title: "Aplicação | Microsoft Docs"
 description: "Tópico de referência para a categoria Application das coleções de entidades na API do Armazém de Dados do Intune."
 keywords: "Armazém de Dados do Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -62,7 +62,7 @@ A entidade **AppTypes** apresenta uma lista da origem da instalação de uma apl
 | AppTypeKey |Chave de substituição da chave |
 | AppTypeName |Tipo de aplicação |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | AppTypeID  | Nome | Descrição |
 |---------|------------|--------|
@@ -89,9 +89,9 @@ A entidade **VppProgramTypes** apresenta uma lista de programas VPP possíveis p
 |---------|------------|
 | VppProgramTypeID | ID do tipo. |
 | VppProgramTypeKey | Chave de substituição da chave. |
-| VppProgramTypeName | Tipo de Programa de VPP. |
+| VppProgramTypeName | Tipo de Programa VPP. |
 
-## <a name="example"></a>Exemplo
+### <a name="example"></a>Exemplo
 
 | VppProgramID  | Nome | Descrição |
 |---------|------------|--------|
@@ -112,3 +112,26 @@ A entidade **ApplicationInventory** lista as aplicações encontradas no disposi
 | ApplicationName | O nome da aplicação. |
 | ApplicationVersion | Versão da aplicação. |
 | BundleSize | O tamanho da aplicação em bytes. |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+A entidade **MobileAppInstallState** representa o estado de instalação de uma aplicação móvel depois de ser atribuída a um grupo que contém dispositivos, utilizadores ou ambos.
+
+| Propriedade | Descrição |
+|---|---|
+| AppInstallStateKey | O ID exclusivo do estado de instalação da aplicação da sua conta. |
+| AppInstallState | Valor Enum do estado de instalação da aplicação. |
+| AppInstallStateName | Nome do estado de instalação da aplicação. |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+A entidade **MobileAppDeviceUserInstallStatus** representa um estado de instalação da aplicação móvel de um determinado dispositivo e utilizador.
+
+| Propriedade | Descrição |
+|---|---|
+| DateKey | A chave da data quando o estado de instalação da aplicação foi registado. |
+| AppKey | A chave da aplicação móvel que serve para identificar uma instância de AppRevision. |
+| DeviceKey | A chave de um dispositivo de destino que serve para identificar uma instância de Dispositivo. |
+| UserKey | A chave de um dispositivo de destino que serve para identificar uma instância de Utilizador. |
+|AppInstallStateKey | A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState. |
+| CódigoDoErro | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 082acce8d82d50be28e0328c76e63c4440608983
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 28c83baeea59f1722744ea63ac19c21599fccebf
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Enviar registos para os programadores do Portal da Empresa para dispositivos iOS
 
@@ -29,7 +29,7 @@ Por vezes, a aplicação Portal da Empresa poderá fechar inesperadamente. Este 
 Se esta situação lhe estiver a acontecer, o Portal da Empresa precisará de algumas informações para tentar diagnosticar a causa principal. Terá de fazer o seguinte:
 
 1.  Tente fazer com que o problema ocorra novamente. Se não conseguir, não há problema, mas pode facilitar o passo seguinte caso consiga.
-2.  Aceda a __Definições__ > __Privacidade__ > __Diagnóstico e Utilização__ > __Dados de Diagnóstico e Utilização__. Esta é uma lista das atividades de aplicações que ocorreram, desde falhas a padrões de utilização geral, e não contém quaisquer informações pessoais. Esta lista está organizada da mais recente à mais antiga. Se conseguiu reproduzir o problema, este deve ser o primeiro item que aparece na lista de atividades de aplicações nesta página. Se não conseguiu reproduzir o problema, desloque-se para baixo até encontrar o primeiro item que começa com “Portal da Empresa” e, em seguida, toque nele para o abrir.
+2.  Aceda a __Definições__ > __Privacidade__ > __Análise__ > __Dados de Análise__. Esta é uma lista das atividades de aplicações que ocorreram, desde falhas a padrões de utilização geral, e não contém quaisquer informações pessoais. Esta lista está organizada da mais recente à mais antiga. Se conseguiu reproduzir o problema, este deve ser o primeiro item que aparece na lista de atividades de aplicações nesta página. Se não conseguiu reproduzir o problema, desloque-se para baixo até encontrar o primeiro item que começa com “Portal da Empresa” e, em seguida, toque nele para o abrir.
 3.  Mantenha premido o item e, em seguida, arraste os pequenos pontos azuis para cima e para baixo até que todo o texto no relatório tenha sido selecionado. Toque em __Copiar__ no menu de pop-up.
 4.  Abra a sua aplicação de e-mail e cole esse conteúdo no corpo do e-mail. Envie esse e-mail para <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here."> IntuneCPiOSfeedback@microsoft.com </a>.
 

@@ -3,8 +3,8 @@ title: "Atribuir aplicações a dispositivos Android for Work"
 titlesuffix: Azure portal
 description: "Utilize este tópico para sincronizar e, em seguida, atribuir aplicações a dispositivos Android for Work a partir da Google Play for Work Store.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Como atribuir aplicações em dispositivos Android for Work com o Intune
 
@@ -41,9 +41,9 @@ Verifique se configurou o Intune e o Android for Work para trabalharem em conjun
 1. Aceda à [Google Play for Work Store](https://play.google.com/work). Inicie sessão com a mesma conta que utilizou para configurar a ligação entre o Intune e o Android for Work.
 2. Procure na loja a aplicação que pretende atribuir através do Intune.
 3. Na página da aplicação que escolheu, selecione **Aprovar**. Neste exemplo, escolheu a aplicação Microsoft Excel.<br>
-  ![Exemplo de aprovação de aplicação](media/approve.png)
+  ![Exemplo de aprovação da aplicação](media/approve.png)
 4. É aberta uma janela da aplicação a pedir-lhe para dar permissões para a aplicação efetuar diversas operações. Selecione **Aprovar** para continuar.<br>
-  ![Exemplo de permissões de aprovação de aplicações](media/approve-app-permissions.png)
+  ![Exemplo de permissões de aprovação da aplicação](media/approve-app-permissions.png)
 5. A aplicação foi aprovada e é apresentada na consola de administração de TI.
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Publicar e sincronizar uma aplicação de linha de negócio a partir da Google Play for Work Store
