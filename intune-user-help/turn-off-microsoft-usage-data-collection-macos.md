@@ -16,13 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bb39ff625034c00f70d5e7f28a7982fc1f40d0f2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 726c3d052b62dbcab82f75cc82ce39b72bcbef94
+ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
-## <a name="how-to-turn-off-microsoft-data-collection"></a>Como desativar a recolha de dados da Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Como desativar a recolha de dados da Microsoft
 
 A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e serviços. Fazemo-lo para melhorar a fiabilidade e o desempenho dos nossos produtos, incluindo a aplicação Portal da Empresa. Apesar de estes dados serem anónimos, alguns utilizadores poderão não se sentir à vontade com esta recolha. O suporte da empresa não tem controlo sobre a recolha destes dados e não pode alterar a sua seleção desta definição.
 

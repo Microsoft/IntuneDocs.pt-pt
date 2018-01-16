@@ -1,12 +1,12 @@
 ---
 title: "O que é a inscrição de dispositivos do Microsoft Intune"
 titlesuffix: Azure portal
-description: "Saiba mais sobre a inscrição de dispositivos iOS, Android e Windows.\""
+description: "Saiba mais sobre a inscrição de dispositivos iOS, Android e Windows."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,9 +27,9 @@ Este tópico descreve a inscrição e indica as formas diferentes de inscrever d
 
 Os dispositivos são inscritos no Intune para que os possa gerir. Esta capacidade é mencionada na documentação do Intune como gestão de dispositivos móveis (MDM). Quando os dispositivos são inscritos no Intune, é-lhes emitido um certificado MDM, que utilizam para comunicar com o serviço do Intune.
 
-A forma como inscreve dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão de que precisa. A inscrição "Bring your own device" (BYOD) permite que os utilizadores inscrevam os seus telemóveis, tablets ou PCs pessoais. A inscrição de dispositivos pertencentes à empresa (COD) permite cenários de gestão, como a inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados.
+A forma como inscreve os dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão de que precisa. A inscrição "Bring your own device" (BYOD) permite que os utilizadores inscrevam os seus telemóveis, tablets ou PCs pessoais. A inscrição de dispositivos pertencentes à empresa (COD) permite cenários de gestão, como a inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados.
 
-Se utilizar o Exchange ActiveSync, no local ou alojado na cloud, pode ativar a gestão simples do Intune sem inscrição (mais informações disponíveis em breve). Pode gerir PCs Windows como dispositivos móveis, que é o método recomendado descrito abaixo.
+Se utilizar o Exchange ActiveSync, no local ou alojado na cloud, pode ativar a gestão simples do Intune sem inscrição. Pode gerir PCs Windows como dispositivos móveis, que é o método recomendado descrito abaixo.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Descrição geral dos métodos de inscrição para dispositivos
@@ -66,7 +66,7 @@ A tabela a seguir oferece uma descrição geral dos métodos de inscrição do I
 | **Método** |  **Reposição obrigatória** |    **Afinidade de Utilizador**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](./android-enroll.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Não | Sim | Não| [Mais informações](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 

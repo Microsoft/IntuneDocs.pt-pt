@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 18e0608c28a6a292da7fc766fb50edfd27e5a138
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 644f7be61a8d26470a54b0eff46f20e3fbaef1d5
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="using-your-android-device-with-intune"></a>Utilizar o dispositivo Android com o Intune
 
@@ -28,7 +28,7 @@ O Intune pode facilitar a sua vida profissional de muitas formas. Eis uma lista 
 
 ## <a name="supported-versions"></a>Versões suportadas
 
-O Intune suporta atualmente o Android 4.4 e posterior, o que inclui dispositivos Samsung KNOX 4.4 e posteriores.
+O Intune suporta atualmente o Android 4.4 e posterior, o que inclui dispositivos Samsung Knox 4.4 e posteriores.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inscrever-se no Intune e instalar o Portal da Empresa
 

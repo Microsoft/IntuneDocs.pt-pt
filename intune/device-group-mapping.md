@@ -3,8 +3,8 @@ title: Como utilizar as categorias de dispositivos no Intune
 titleSuffix: Azure portal
 description: Saiba como utilizar categorias de dispositivos que os utilizadores podem escolher quando inscrevem os dispositivos deles no Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c100193c7db2be1a5655a1b77e1eec452a189d64
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="map-device-groups"></a>Mapear grupos de dispositivos
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 12/12/2017
 Utilize categorias de dispositivos do Microsoft Intune para adicionar automaticamente dispositivos a grupos com base nas categorias que definir, para facilitar a gestão desses dispositivos.
 
 As categorias de dispositivos utilizam o fluxo de trabalho seguinte:
-1. Criar categorias que os utilizadores escolhem quando inscrevem o respetivo dispositivo
-3. Quando os utilizadores finais de dispositivos iOS e Android inscreverem os dispositivos, têm de escolher uma categoria na lista de categorias que configurou. Para atribuir uma categoria a um dispositivo Windows, os utilizadores finais devem utilizar o site do Portal da Empresa (veja **Após configurar grupos de dispositivos** neste tópico para obter mais detalhes).
-4. Nessa altura, pode implementar políticas e aplicações a estes grupos.
+1. Crie categorias para os utilizadores escolherem quando inscrevem o dispositivo.
+2. Quando os utilizadores finais de dispositivos iOS e Android inscreverem os dispositivos, têm de escolher uma categoria na lista de categorias que configurou. Para atribuir uma categoria a um dispositivo Windows, os utilizadores finais têm de utilizar o site do Portal da Empresa (para obter mais informações, veja **Após configurar grupos de dispositivos** neste artigo).
+3. Nessa altura, pode implementar políticas e aplicações a estes grupos.
 
 Pode criar as categorias de dispositivo que pretender, por exemplo:
 - Dispositivo de ponto de venda
@@ -46,16 +46,16 @@ Pode criar as categorias de dispositivo que pretender, por exemplo:
 3. No painel **Inscrição de Dispositivos**, selecione **Categorias de Dispositivos**.
 4. Na página **Categorias de Dispositivos**, escolha **Criar** para adicionar uma nova categoria.
 5. No painel seguinte, introduza um **Nome** para a nova categoria e uma **Descrição** opcional.
-6. Quando terminar, clique em **Criar**. Verá a categoria que acabou de criar na lista de categorias.
+6. Quando terminar, clique em **Criar**. Agora, pode ver a nova categoria na lista de categorias.
 
 Irá utilizar o nome de categoria de dispositivo quando criar grupos de segurança do Azure Active Directory no Passo 2.
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Passo 2 – crie grupos de segurança do Azure Active Directory
 Neste passo irá criar grupos dinâmicos no portal do Azure com base na categoria de dispositivo e no nome da categoria de dispositivo.
 
-Para continuar, consulte o artigo [Using attributes to create advanced rules (Utilizar atributos para criar regras avançadas – em inglês)](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) na documentação do Azure Active Directory.
+Para continuar, veja o artigo [Utilizar atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) na documentação do Azure Active Directory.
 
-Utilize as informações nesta secção para criar um grupo de dispositivos com uma regra avançada através do atributo **deviceCategory**. Por exemplo (**device.deviceCategory -eq** “*<the device category name you got from the Azure portal>*”)
+Utilize as informações nesta secção para criar um grupo de dispositivos com uma regra avançada através do atributo **deviceCategory**. Por exemplo, (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
 Depois de configurar os grupos de dispositivos e os utilizadores inscreverem o dispositivo deles, é-lhes apresentada uma lista das categorias que configurou. Após escolherem uma categoria e terminarem a inscrição, o dispositivo deles é adicionado ao grupo de segurança do Active Directory que corresponde à categoria que escolheram.
 
@@ -88,6 +88,6 @@ Independentemente da plataforma, os seus utilizadores podem sempre aceder a port
 Após escolher uma categoria, o dispositivo é automaticamente adicionado ao grupo criado correspondente. Se um dispositivo já estiver inscrito antes de configurar as categorias, o utilizador final verá uma notificação sobre o dispositivo no site do Portal da Empresa e ser-lhe-á pedido para selecionar uma categoria na próxima vez que aceder à aplicação Portal da Empresa num dispositivo iOS ou Android.
 
 ## <a name="further-information"></a>Informações adicionais
-- Pode editar uma categoria de dispositivo no Portal do Azure, mas se o fizer, tem de atualizar manualmente todos os grupos de segurança do Azure Active Directory que mencionam esta categoria.
+- Pode editar uma categoria de dispositivos no portal do Azure, mas tem de atualizar manualmente todos os Grupos de segurança do Azure Active Directory que mencionam esta categoria.
 
-- Se eliminar uma categoria, quaisquer dispositivos que lhe tenham sido atribuídos apresentarão subsequentemente o nome da categoria **Não atribuído**.
+- Se eliminar uma categoria, os dispositivos que lhe tenham sido atribuídos apresentarão o nome da categoria **Não atribuído**.

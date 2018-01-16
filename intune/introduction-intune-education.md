@@ -5,22 +5,22 @@ keywords: "o que é o Intune"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 12/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
-ms.reviewer: lindavr
+ms.reviewer: travisj
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.custom: intune-azure
+ms.openlocfilehash: 78286293dc57bfded09eb29c5809c09e5acff49b
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="what-is-intune-for-education"></a>O que é o Intune for Education?
+# <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Qual é a diferença entre o Intune for Education e a experiência completa de gestão de dispositivos no Intune?
 
 O Intune for Education foi concebido para permitir que os professores e alunos sejam produtivos enquanto mantêm os dados escolares protegidos. O Intune é um serviço de gestão de mobilidade empresarial (EMM) baseado na cloud e é a base do Intune for Education.
 
@@ -33,12 +33,12 @@ O Intune for Education pode ser utilizado autonomamente ou em conjunto com a [ex
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 Com o Intune e o Intune for Education, pode:
-* Gerir os dispositivos móveis que a sua força de trabalho utiliza para aceder aos dados.
+* Gerir os dispositivos móveis que o seu pessoal e os estudantes utilizam para aceder aos dados.
 * Gerir as aplicações móveis a que os seus utilizadores acedem todos os dias.
 * Proteger as informações da sua organização ao ajudar a controlar a forma como os utilizadores acedem às mesmas e as partilham.
 * Garantir que os dispositivos e as aplicações estão em conformidade com os requisitos de segurança.
 
 ### <a name="next-steps"></a>Próximos passos
-* Familiarizar-se com o produto [com uma avaliação de 30 dias do Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
+* Familiarizar-se com o produto [com uma avaliação gratuita do Intune de 90 dias](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Se já tiver acesso, aceda a (https://intuneeducation.portal.azure.com) para começar.
 * Saiba qual a forma mais rápida de [começar a utilizar o Intune for Education](/intune-education/what-is-express-configuration).
 * Aprofundar conhecimentos sobre os [requisitos técnicos e as capacidades](/intune/supported-devices-browsers) do Intune

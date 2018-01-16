@@ -3,8 +3,8 @@ title: "Inscrição em massa para o Windows 10"
 titlesuffix: Azure portal
 description: "Criar um pacote de inscrição em massa para o Microsoft Intune"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -29,8 +29,6 @@ Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure 
 Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. De momento, os cenários self-service e Portal da Empresa não são suportados.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para a inscrição em massa de dispositivos Windows
-
-A inscrição em massa de dispositivos Windows precisa do seguinte:
 
 - Dispositivos que executem a atualização de Criativos do Windows 10 ou posterior
 - [Inscrição automática no Windows](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ A inscrição em massa de dispositivos Windows precisa do seguinte:
 2. Abra a aplicação **Windows Configuration Designer** e selecione **Aprovisionar computadores**.
 ![Captura de ecrã após selecionar Aprovisionar computadores na aplicação Windows Configuration Designer](media/bulk-enroll-select.png)
 
-3. É apresentada a janela **Novo projeto**, onde pode especificar o seguinte:
+3. É apresentada a janela **Novo projeto**, onde pode especificar as seguintes informações:
   - **Nome** – um nome para o projeto
-  - **Pasta do projeto** – onde o projeto será guardado
+  - **Pasta do projeto** – guardar a localização do projeto
   - **Descrição** – uma descrição opcional do projeto ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4.  Introduza um nome exclusivo para os seus dispositivos. Os nomes podem incluir um número de série (%%SERIAL%%) ou um conjunto de carateres aleatório. Opcionalmente, também poderá introduzir uma chave de produto se estiver a atualizar a edição do Windows, a configurar o dispositivo para a utilização partilhada e a remover software pré-instalado.
 ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](media/bulk-enroll-device.png)
 
-5.  Opcionalmente, pode configurar a rede Wi-Fi à qual os dispositivos se ligam quando são iniciados pela primeira vez.  Se esta rede não estiver configurada, precisará de uma ligação de rede com fios quando o dispositivo for iniciado pela primeira vez.
+5.  Opcionalmente, pode configurar a rede Wi-Fi à qual os dispositivos se ligam quando são iniciados pela primeira vez.  Se os dispositivos de rede não estiverem configurados, precisará de uma ligação de rede com fios quando o dispositivo for iniciado pela primeira vez.
 ![Captura de ecrã após ativar a rede Wi-Fi, incluindo as opções de Tipo de rede e SSID de rede, na aplicação Windows Configuration Designer](media/bulk-enroll-network.png)
 
 6.  Selecione **Inscrever no Azure AD**, introduza uma data de **Expiração do Token em Massa** e, em seguida, selecione **Obter Token em Massa**.
@@ -88,7 +86,7 @@ A inscrição em massa de dispositivos Windows precisa do seguinte:
 O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As falhas de aprovisionamento podem precisar de uma reposição de fábrica no dispositivo ou da recuperação do dispositivo a partir de uma imagem de arranque. Estes exemplos descrevem alguns motivos para o aprovisionamento de falhas:
 
 - Um pacote de aprovisionamento que tenta associar um domínio do Active Directory ou um inquilino do Azure Active Directory que não crie uma conta local pode tornar o dispositivo inacessível se o processo de associação ao domínio falhar devido à falta de conetividade de rede.
-- Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema e conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou através de uma reposição de fábrica do dispositivo.
+- Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema. Os scripts conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou através de uma reposição de fábrica do dispositivo.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com a inscrição em massa e o Portal da Empresa
 Se um utilizador tentar inscrever um dispositivo anteriormente inscrito em massa com o Portal da Empresa, receberá um aviso de que o respetivo dispositivo precisa de mais ações de configuração ou inscrição. O dispositivo está inscrito, mas a inscrição não é reconhecida pelo site ou aplicação Portal da Empresa.

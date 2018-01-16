@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Como definir o tempo antes de o seu dispositivo Android bloquear o ecrã
 
 Para voltar a ter acesso ao seu trabalho, terá de definir o tempo limite para a palavra-passe no seu dispositivo ao seguir os passos relativos ao seu tipo de dispositivo.
 
-## <a name="native-non-samsung-knox-device"></a>Dispositivos nativos (não Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Dispositivos nativos (não Samsung Knox)
 
 1.  Em **Definições**, no seu dispositivo, toque em **Segurança** &gt; **Bloquear Automaticamente** (esta opção aparece como **Bloquear telemóvel após** em alguns dispositivos).
 
@@ -34,7 +34,7 @@ Para voltar a ter acesso ao seu trabalho, terá de definir o tempo limite para a
 
 2.  Selecione o valor do tempo limite da palavra-passe.
 
-## <a name="samsung-knox-device"></a>Dispositivos Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivos Samsung Knox
 
 1.  Em **Definições**, no seu dispositivo, toque em **Bloqueio de ecrã e segurança** &gt; **Bloquear automaticamente**.
 

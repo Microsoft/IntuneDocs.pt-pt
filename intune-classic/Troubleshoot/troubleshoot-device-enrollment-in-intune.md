@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Este tópico fornece sugestões para resolver problemas de inscrição de dispositivos. Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
+Este tópico fornece sugestões para resolver problemas de inscrição de dispositivos. Se estas informações não resolverem o problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Passos iniciais de resolução de problemas
@@ -37,6 +37,12 @@ Antes de iniciar a resolução de problemas, certifique-se de que configurou o I
 -   [Configurar a gestão de dispositivos Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Configurar a gestão de dispositivos Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) –não são precisos passos adicionais
 -   [Configurar a gestão de dispositivos Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
+
+Também pode confirmar que a hora e a data no dispositivo do utilizador estão definidas corretamente:
+
+1. Reinicie o dispositivo.
+2. Confirme que a data e a hora estão definidas para próximo da hora padrão de GMT (+ ou - 12 horas) em relação ao fuso horário do utilizador final.
+3. Desinstale e reinstale o portal da empresa do Intune (se aplicável).
 
 Os utilizadores de dispositivos geridos podem recolher registos de inscrição e de diagnóstico para que possa analisá-los. Pode encontrar instruções de utilizador para recolher os registos em:
 
@@ -229,27 +235,29 @@ Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam
 
 **Resolução 1**:
 
-Peça aos seus utilizadores para seguir as instruções em [O dispositivo tem um certificado obrigatório em falta](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro continuar a aparecer depois de os utilizadores seguirem as instruções, experimente a Resolução 2.
+O utilizador poderá conseguir obter o certificado em falta ao seguir as instruções em [O dispositivo tem um certificado necessário em falta](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro persistir, tente a Resolução 2.
 
 **Resolução 2**:
 
-Se os utilizadores ainda veem o erro de certificado em falta após introduzir as respetivas credenciais empresariais e forem redirecionados para a experiência de início de sessão federado, um certificado intermédio pode estar em falta no seu servidor de Serviços de Federação do Active Directory (AD FS).
+Se os utilizadores continuarem a ver o erro de certificado em falta após introduzirem as credenciais da empresa e forem redirecionados para o início de sessão federado, um certificado intermédio poderá estar em falta no servidor de Serviços de Federação do Active Directory (AD FS).
 
-O erro de certificado ocorre porque os dispositivos Android necessitam de certificados intermédios a serem incluídos num [hello do Servidor SSL](https://technet.microsoft.com/library/cc783349.aspx), mas atualmente um servidor predefinido do AD FS ou a instalação do servidor Proxy do AD FS envia apenas o certificado SSL de serviço do AD FS na resposta hello do servidor de SSL ao hello do Cliente de SSL.
+O erro de certificado ocorre porque os dispositivos Android exigem que os certificados intermédios sejam incluídos num [hello do Servidor SSL](https://technet.microsoft.com/library/cc783349.aspx). Atualmente, um servidor predefinido do AD FS ou a instalação do servidor Proxy do AD FS envia apenas o certificado SSL de serviço do AD FS na resposta hello do servidor SSL ao hello do Cliente SSL.
 
 Para corrigir o problema, importe os certificados para os Certificados dos Computadores Pessoais no servidor do AD FS ou nos proxies da seguinte forma:
 
-1.  Nos servidores ADFS e do proxy, inicie a consola de Gestão de Certificados para o computador local, ao clicar com o botão direito do rato no botão **Iniciar**, escolha **Executar** e escreva **certlm.msc**.
-2.  Expanda **Pessoal** e selecione **Certificados**.
+1.  Nos servidores ADFS e proxy, clique com botão direito do rato em **Iniciar** > **Executar** > **certlm.msc**. Deste modo, inicia a Consola de Gestão de Certificados do Computador Local.
+2.  Expanda **Pessoal** e escolha **Certificados**.
 3.  Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
-4.  Selecione o separador **Caminho de Certificação** para ver o certificado(s) principal para o certificado.
-5.  Em cada certificado principal, selecione **Ver Certificado**.
-6.  Selecione o separador **Detalhes** e escolha **Copiar para o ficheiro...**.
-7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado para a localização de ficheiro pretendido.
-8.  Importe os certificados principais que foram exportados no Passo 3 para Computador Local\Pessoal\Certificados ao clicar com o botão direito do rato em **Certificados**, selecionar **Todas as Tarefas** > **Importar** e, em seguida, seguir as instruções do assistente para importar o(s) certificado(s).
-9.  Reinicie os servidores do AD FS.
-10. Repita os passos acima em todos os servidores do AD FS e do proxy.
-O utilizador deverá conseguir agora iniciar sessão no Portal da Empresa no dispositivo Android.
+4.  Escolha o separador **Caminho de Certificação** para ver os certificados principais do certificado.
+5.  Em cada certificado principal, escolha **Ver Certificado**.
+6.  Escolha o separador **Detalhes** > **Copiar para ficheiro…**
+7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado principal na localização do ficheiro que quer.
+8.  Clique com botão direito do rato em **Certificados** > **Todas as Tarefas** > **Importar**.
+9.  Siga as instruções do assistente para importar os certificados principais para **Computador Local\Pessoal\Certificados**.
+10. Reinicie os servidores do AD FS.
+11. Repita os passos acima em todos os servidores do AD FS e do proxy.
+
+Para verificar se a instalação do certificado foi feita corretamente, pode utilizar a ferramenta de diagnóstico disponível em [https://www.digicert.com/help/](https://www.digicert.com/help/). Na caixa **Endereço do Servidor**, introduza o FQDN do servidor do ADFS (IE: sts.contso.com) e clique em **Verificar Servidor**.
 
 **Para validar que o certificado foi instalado corretamente**:
 
