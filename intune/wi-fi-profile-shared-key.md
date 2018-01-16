@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utilizar um perfil de dispositivo personalizado para criar um perfil de Wi-Fi com uma chave pré-partilhada
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Veja como utilizar os **Perfis de dispositivos personalizados** do Intune para c
 
 > [!NOTE]
 -   Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
-- Para Android, tem também a opção de utilizar este [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornecido por Johnathon Biersack.
+- Para Android, tem também a opção de utilizar este [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) fornecido por Johnathon Biersack.
 -   Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
--  Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize este [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornecido por Johnathon Biersack.
+-  Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize este [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) fornecido por Johnathon Biersack.
 
 
 1.  Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar um perfil de dispositivo, escolha **Personalizado** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.

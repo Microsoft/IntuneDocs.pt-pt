@@ -6,7 +6,7 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/27/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,11 +14,11 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: c83833f0e45038146e6785d27b32f6e61ef8803d
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 489936efebe4a69b834c96a4f878a905b8e4ec6f
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Escolher como inscrever dispositivos móveis
 
@@ -37,7 +37,7 @@ As respostas a esta série de questões irão ajudá-lo a determinar o melhor m�
 
   - **Programa de registo de dispositivos da Apple (DEP)** – os dispositivos iOS adquiridos ou geridos com o DEP podem ser segmentados com um perfil de inscrição. Da primeira vez que os utilizadores inscrevem os dispositivos, estes transferem o perfil do DEP e são inscritos com o mesmo.
 
-  - **Apple Configurator num Mac** – o Apple Configurator é uma aplicação da Apple que é executada em PCs Mac. Pode ligar os seus dispositivos iOS ao Mac com um cabo USB para instalar um perfil de inscrição nos mesmos. Se puder repor os dispositivos para as definições de fábrica para os inscrever, utilize a inscrição através do Assistente de Configuração. Se não quiser repor os dispositivos para as definições de fábrica, utilize a inscrição direta.
+  - **Apple Configurator num Mac** - o Apple Configurator é uma aplicação da Apple que é executada em PCs Mac. Pode ligar os seus dispositivos iOS ao Mac com um cabo USB para instalar um perfil de inscrição nos mesmos. Se puder repor os dispositivos para as definições de fábrica para os inscrever, utilize a inscrição através do Assistente de Configuração. Se não quiser repor os dispositivos para as definições de fábrica, utilize a inscrição direta.
 
   - **Gestor de Inscrição de Dispositivos** – o gestor de inscrição de dispositivos (DEM) do Intune permite a um gestor ou administrador inscrever vários dispositivos móveis com uma única conta de utilizador. Estes dispositivos não podem ter afinidade do utilizador (ou seja, utilizadores dedicados) e têm de estar inscritos através da instalação e início de sessão na aplicação Portal da Empresa.
 

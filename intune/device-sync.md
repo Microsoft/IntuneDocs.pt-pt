@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 8a8bb4729314819b23d69f0ccf6f6c093f29801f
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
 
@@ -64,6 +64,6 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação.                                                                                   | Sim       |
 | 2016330888 | A avaliação da fidedignidade do servidor falhou.                                                                                                | Não        |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Selecione **Ações do Dispositivo** para ver o estado da ação de sincronização. 

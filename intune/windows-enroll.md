@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 308522e0a54d47595294b8f1c31e92a965a09ef4
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: de3f36a7d04e06d27f1ed942366502ca92d08c59
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="enroll-windows-devices"></a>Inscrever dispositivos Windows
 
@@ -60,7 +60,7 @@ Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME faci
 |Tipo|Nome do anfitrião|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
-|CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 Hora|
+|CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 hora|
 
 Se tiver mais do que um sufixo UPN, tem de criar um CNAME para cada nome de domínio e apontar cada um para EnterpriseEnrollment-s.manage.microsoft.com. Se os utilizadores na Contoso utilizarem name@contoso.com e também name@us.contoso.com e name@eu.constoso.com como e-mail/UPN, o administrador de DNS da Contoso deverá criar os seguintes CNAMEs:
 

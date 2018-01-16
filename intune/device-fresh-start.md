@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff6198cb42d5c96ed4e4c4e0009a8bbd6f6a0dec
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 181818bf40e569d0354ee5bd661169c529cb3d07
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Utilizar a funcionalidade Começar do Zero para repor dispositivos Windows 10 com o Intune
 
