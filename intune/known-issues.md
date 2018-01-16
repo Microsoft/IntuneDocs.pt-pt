@@ -7,7 +7,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: c4210d77e52abba07454d8606ba7715c03078ca6
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -43,31 +43,6 @@ A capacidade para gerir o Windows 10 no Intune no portal do Azure está disponí
 
 Quando migrar do Intune para o portal do Azure, poderá ver um novo grupo com o nome **Todos os Utilizadores – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contém todos os utilizadores do Azure Active Directory, não apenas os utilizadores licenciados do Intune. Esta utilização pode provocar problemas com outros produtos Microsoft se estiver à espera que alguns dos utilizadores existentes ou novos não sejam membros de nenhum dos grupos.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Migração secundária necessária para capacidades selecionadas
-
-As contas do Intune criadas antes de janeiro de 2017 têm de ser migradas antes de as seguintes capacidades poderem ser utilizadas no portal do Azure:
-
-- Perfis de Inscrição de Dispositivos Empresariais
-- Programa de Inscrição de Dispositivos da Apple
-- Pré-declarar dispositivos empresariais por número de série iOS
-- Contas de Gestor de Inscrições de Dispositivos
-- Apple Volume Purchase Program
-
-Uma vez que estas capacidades não podem ser geridas na consola do Intune (Silverlight) nem no portal do Azure, a migração:
-- Desativa-as no portal clássico
-- Ativa-as no portal do Azure  
-
-A partir de 22 de setembro de 2017, a migração destas funcionalidades será intercalada com a migração primária para o Azure. Se a sua conta já foi migrada para utilizar o portal do Azure, é possível que esta migração secundária já tenha sido concluída. Caso contrário, estas funcionalidades serão migradas para o Azure até novembro. Quando a migração da sua conta começar, será concluída no mesmo dia. A migração poderá demorar até seis horas a partir do momento em que estas funcionalidades são desativadas no portal clássico do Intune.
-
-Se agora pode gerir estas funcionalidades do Intune no portal do Azure, tenha em atenção os seguintes pontos:
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Remove perfis predefinidos de Inscrição de Dispositivos Empresariais no DEP da Apple
-O portal do Azure não suporta o perfil predefinido de Inscrição de Dispositivos Empresariais para dispositivos do Programa de Inscrição de Dispositivos (DEP) da Apple. Esta funcionalidade, disponível na consola do Intune (Silverlight), será descontinuada para evitar a atribuição acidental de perfis. Quando os números de série de DEP são sincronizados no portal do Azure, não é atribuído nenhum perfil de Inscrição de Dispositivos Empresariais. Um perfil de inscrição deve ser atribuído antes de utilizar o dispositivo.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Token do DEP da Apple restaurado com a migração
-
-Se eliminar um token do Programa de Registo de Aparelho da Apple no portal do Intune (Silverlight) e não carregar um novo token para o portal do Azure, o token original será restaurado no portal do Azure quando migrar. Para remover este token e impedir a inscrição do DEP, elimine o token no portal do Azure.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Os painéis de estado de políticas migradas não funcionam
 
 Não pode ver as informações de estado de políticas que foram migradas do portal clássico no portal do Azure. No entanto, pode continuar a ver relatórios dessas políticas no portal clássico. Para ver as informações de estado de políticas de configuração migradas, recrie as mesmas no portal do Azure.
@@ -79,6 +54,7 @@ As aplicações para iOS compradas em volume são apresentadas e só podem ser a
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>São carregadas múltiplas cópias do mesmo programa para iOS comprado em volume
 Não clique no botão **Carregar** múltiplas vezes para o mesmo token VPP. Isto irá resultar no carregamento de tokens VPP duplicados e as aplicações irão sincronizar múltiplas vezes para o mesmo token VPP.
+
 
 <!-- ## Groups -->
 

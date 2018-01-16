@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef0f754980a9bc2823129c62f7100edbcdc7524
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: ae53ced489542ba7e675e547740f1858d761c7ab
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Componente Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -75,37 +75,22 @@ As aplicações Xamarin compiladas com o Componente Xamarin do SDK da Aplicaçã
 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Ativar as políticas de proteção de aplicações do Intune na sua aplicação móvel iOS
-1.  Para inicializar o SDK da Aplicação Intune, tem de efetuar uma chamada para qualquer API na classe `AppDelegate.cs`. Por exemplo:
-
+1.  Siga os passos gerais necessários para integrar o SDK da Aplicação Intune numa aplicação móvel iOS. Pode começar com o passo 3 das instruções de integração do [Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md#build-the-sdk-into-your-mobile-app).
+    **Importante**: a ativação da partilha de keychain para uma aplicação é ligeiramente diferente no Visual Studio a partir do Xcode. Abra a plist de Elegibilidade da aplicação e garanta que a opção “Ativar Keychain” está ativada e que são adicionados os grupos de partilha de keychain adequados nessa secção. Em seguida, garanta que a plist de Elegibilidade está especificada no campo “Elegibilidades Personalizadas” das opções “Assinatura de Pacotes iOS” do projeto para todas as combinações de Configuração/Plataforma adequadas.
+2.  Depois de o componente ser adicionado e a aplicação estar configurada corretamente, a aplicação pode começar a utilizar as APIs do SDK do Intune. Para tal, tem de incluir o seguinte espaço de nomes:
       ```csharp
-      public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
-      {
-            Console.WriteLine ("Is Managed: {0}", IntuneMAMPolicyManager.Instance.PrimaryUser != null);
-            return true;
-      }
-
+      using Microsoft.Intune.MAM;
       ```
-
-2.  Agora que o componente foi adicionado e inicializado, pode seguir os passos gerais necessários para incorporar o SDK da Aplicação numa aplicação móvel para iOS. Pode encontrar a documentação completa para ativar as aplicações iOS nativas no [Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md).
-3. **Importante**: existem vários modificações específicas de aplicações para iOS baseadas no Xamarin. Por exemplo, ao ativar os grupos de keychain, tem de adicionar o seguinte para incluir o exemplo de aplicação Xamarin que incluímos no componente. Segue-se um exemplo dos grupos que teria de ter nos seus grupos de Acesso Keychain:
-
-      ```xml
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-            <dict>
-                  <key>keychain-access-groups</key>
-                  <array>
-                        <string>$(AppIdentifierPrefix)com.xamarin.microsoftintunesample</string>
-                        <string>$(AppIdentifierPrefix)com.xamarin.microsoftintunesample.intunemam</string>
-                        <string>$(AppIdentifierPrefix)com.microsoft.intune.mam</string>
-                        <string>$(AppIdentifierPrefix)com.microsoft.adalcache</string>
-                  </array>
-            </dict>
-      </plist>
+3.    Para começar a receber políticas de proteção de aplicações, tem de inscrever a aplicação no serviço do Intune MAM. Se a sua aplicação já utilizar a Azure Active Directory Authentication Library (ADAL) para autenticar os utilizadores, a aplicação deverá disponibilizar o UPN do utilizador ao método registerAndEnrollAccount do IntuneMAMEnrollmentManager depois de ter realizado a autenticação com êxito:
+      ```csharp
+      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
-
-Concluiu os passos necessários para incorporar o componente na aplicação para iOS baseada no Xamarin. Se estiver a utilizar o Xcode para compilar o projeto, pode utilizar o `Intune App SDK Settings.bundle`. Isto permite ativar e desativar as definições de política do Intune enquanto compila o projeto para testar e depurar. Para tirar partido deste pacote, siga os passos indicados no [Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md) e consulte a secção sobre [depuração no Xcode](app-sdk-ios.md#status-result-and-debug-notifications).
+      **Importante**: não se esqueça de substituir as predefinições da ADAL do SDK da Aplicação Intune pelas predefinições da sua aplicação. Pode fazê-lo através do dicionário IntuneMAMSettings no ficheiro Info.plist da aplicação, tal como mencionado no [Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), ou pode utilizar as propriedades de substituição do AAD da instância IntuneMAMPolicyManager. A abordagem do ficheiro Info.plist é recomendada para aplicações cujas definições da ADAL sejam estáticas, enquanto as propriedades de substituição são recomendadas para aplicações que determinem esses valores no runtime. 
+      
+      Se a aplicação não utilizar a ADAL e quiser que o SDK do Intune processe a autenticação, a aplicação deverá chamar o método loginAndEnrollAccount do IntuneMAMEnrollmentManager:
+      ```csharp
+       IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
+      ```
 
 ## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Ativar as políticas de proteção de aplicações na sua aplicação móvel Android
 Para aplicações para Android baseadas no Xamarin que não utilizam uma estrutura de IU, tem de consultar e seguir o [Guia para Programadores do SDK da Aplicação Intune para Android](app-sdk-android.md). Para a sua aplicação para Android baseada no Xamarin, tem de substituir a classe, os métodos e as atividades na respetiva MAM equivalente com base na [tabela](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) incluída no guia. Se a aplicação não definir uma classe `android.app.Application`, tem de criar uma e garantir que é herdada de `MAMApplication`.

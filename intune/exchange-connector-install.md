@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector do Intune no local no Microsoft Intune no Azure
 
@@ -133,6 +133,13 @@ Quando o Exchange Connector configurar a ligação, os dispositivos móveis que 
 
 > [!NOTE]
 > Se instalou o Exchange Connector no Local e, a determinada altura, eliminou a ligação ao Exchange, terá de desinstalar o Exchange Connector no Local do computador em que foi instalado.
+
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Suporte de elevada disponibilidade do Exchange Connector no local 
+Depois de o Exchange Connector criar uma ligação ao Exchange através da CAS especificada, o conector tem a capacidade de detetar outras CASs. Se a CAS principal ficar indisponível, o conector realizará a ativação pós-falha para outra CAS, se disponível, até a CAS principal ficar disponível. Por predefinição, esta funcionalidade está ativada. Pode desativar esta funcionalidade através do seguinte procedimento:
+1. No servidor onde está instalado o Exchange Connector, aceda a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
+2. Através de um editor de texto, abra **OnPremisesExchangeConnectorServiceConfiguration.xml**.
+3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desativar a funcionalidade.    
+
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Monitorizar a atividade do conector do Exchange
 

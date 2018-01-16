@@ -3,10 +3,10 @@ title: "Inscrever dispositivos – gestor de inscrição de dispositivos"
 titlesuffix: Azure portal
 description: "Utilize a conta do gestor de inscrição de dispositivos para inscrever dispositivos no Intune. \""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrever dispositivos com o gestor de inscrição de dispositivos
 
@@ -30,7 +30,7 @@ As organizações podem utilizar o Intune para gerir um grande número de dispos
 Têm de existir utilizadores no portal do Azure para serem adicionados como gestores de inscrição de dispositivos. Para garantir a segurança, o utilizador DEM não deve ser também um administrador do Intune.
 
 >[!NOTE]
->O método de inscrição DEM não pode ser utilizado com estes métodos de inscrição: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com inscrição direta](apple-configurator-direct-enroll-ios.md), [Gestor de Escola da Apple (ASM)](apple-school-manager-set-up-ios.md) ou [Programa de Inscrição de Dispositivos (DEP)](device-enrollment-program-enroll-ios.md).
+>O método de inscrição DEM não pode ser utilizado com estes métodos de inscrição: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com inscrição direta](apple-configurator-direct-enroll-ios.md), [Gestor de Escola da Apple (ASM)](apple-school-manager-set-up-ios.md) ou [Programa de Inscrição de Dispositivos (DEP)](device-enrollment-program-enroll-ios.md). Também não pode servir para inscrever dispositivos macOS. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gestor de inscrição de dispositivos
 

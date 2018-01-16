@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Como criar e atribuir uma política de acesso condicional do Exchange no local e do Exchange Online Dedicado legado no Microsoft Intune
 
@@ -105,7 +105,7 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 13. Em dispositivos que não são afetados pelo acesso condicional ou outras regras, pode optar por permitir que acedam ao Exchange ou bloqueá-lo.
   - Quando definir esta opção como permitir o acesso, todos os dispositivos serão capazes de aceder ao Exchange no local imediatamente.  Os dispositivos que pertencem aos utilizadores nos **Grupos Incluídos** serão bloqueados se forem subsequentemente avaliados como não conformes com as políticas de conformidade ou não estiverem inscritos no Intune.
-  - Quando definir esta opção como bloquear o acesso, todos os dispositivos serão imediatamente impedidos de aceder ao Exchange no local inicialmente.  Os dispositivos que pertencem aos utilizadores nos **Grupos Incluídos** obterão acesso assim que o dispositivo for inscrito no Intune e avaliado como estando em conformidade. Os dispositivos Android que não executem o Samsung KNOX standard estarão sempre bloqueados porque não suportam esta definição.
+  - Quando definir esta opção como bloquear o acesso, todos os dispositivos serão imediatamente impedidos de aceder ao Exchange no local inicialmente.  Os dispositivos que pertencem aos utilizadores nos **Grupos Incluídos** obterão acesso assim que o dispositivo for inscrito no Intune e avaliado como estando em conformidade. Os dispositivos Android que não executem o Samsung Knox Standard estarão sempre bloqueados, porque não suportam esta definição.
 <br></br>
 14. Em **Exceções da plataforma do dispositivo**, selecione **Adicionar** para especificar as plataformas. Se a definição **acesso de dispositivo não gerido** estiver definida como **bloqueado**, os dispositivos que estão inscritos e em conformidade terão permissão, mesmo que exista uma exceção de plataforma para bloquear. Selecione **OK** para guardar as definições.
 

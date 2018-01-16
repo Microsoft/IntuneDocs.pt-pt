@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Como configurar definições de e-mail no Microsoft Intune
 
@@ -31,7 +31,7 @@ O cliente de correio incorporado é suportado na maioria das plataformas. Atualm
 
 Pode utilizar os perfis de e-mail para configurar o cliente de e-mail nativo nos seguintes tipos de dispositivos:
 
-- Android Samsung KNOX Standard 4.0 e posterior
+- Android Samsung Knox Standard 4.0 e posterior
 - Android for Work
 - iOS 8.0 e posterior
 - Windows Phone 8.1 e posterior
@@ -48,14 +48,14 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
 3. No painel de perfis, escolha **Criar Perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e **Descrição** para o perfil de e-mail.
 5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições de e-mail. Atualmente, pode escolher uma das seguintes plataformas para definições de dispositivos de e-mail:
-    - **Android** (apenas Samsung Android KNOX Standard)
+    - **Android** (apenas Samsung Android Knox Standard)
     - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 e posterior**
 6. Na lista pendente **Tipo de perfil**, escolha **E-mail**.
 7. As definições que pode configurar diferem consoante a plataforma que escolheu. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
-    - [Definições do Android for Work e Samsung KNOX Standard](email-settings-android.md)
+    - [Definições do Android for Work e Samsung Knox Standard](email-settings-android.md)
     - [Definições do iOS](email-settings-ios.md)
     - [Definições do Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Definições do Windows 10](email-settings-windows-10.md)
@@ -86,7 +86,7 @@ Se o utilizador já tiver configurado uma conta de e-mail, o resultado da atribu
 
 - **iOS**: um perfil de e-mail duplicado existente é detetado com base no nome de anfitrião e no endereço de e-mail. O perfil de e-mail duplicado vai bloquear a atribuição de um perfil do Intune. Neste caso, o Portal da Empresa informa o utilizador que não está em conformidade e pede-lhe para remover o perfil manualmente configurado. Para ajudar a evitar este problema, indique aos seus utilizadores para realizarem a inscrição antes da instalação de um perfil de e-mail, o que permite que o Intune configure o perfil.
 - **Windows**: um perfil de e-mail duplicado existente é detetado com base no nome de anfitrião e no endereço de e-mail. O Intune substitui o perfil de e-mail existente criado pelo utilizador.
-- **Android Samsung KNOX Standard**: um perfil de e-mail duplicado existente é detetado com base no endereço de e-mail e é substituído pelo perfil do Intune.
+- **Android Samsung Knox Standard**: é detetado um perfil de e-mail duplicado existente com base no endereço de e-mail e é substituído pelo perfil do Intune.
 Dado que o Android não utiliza o nome de anfitrião para identificar o perfil, recomendamos que não crie múltiplos perfis de e-mail a utilizar no mesmo endereço de e-mail em diferentes anfitriões, uma vez que estes substituem-se uns aos outros.
 - O Intune para **Android for Work** fornece dois perfis de e-mail do Android for Work, um para cada uma das aplicações de e-mail, Gmail e Nine Work. Estas aplicações estão disponíveis na Google Play Store e são instaladas no perfil de trabalho dos dispositivos, pelo que não podem resultar em perfis duplicados. Ambas as aplicações suportam ligações ao Exchange. Para ativar a conetividade de e-mail, implemente uma destas aplicações de e-mail nos dispositivos dos utilizadores e, em seguida, crie e implemente o perfil de e-mail adequado. As aplicações de e-mail como o Nine Work poderão não ser gratuitas. Reveja os detalhes de licenciamento da aplicação ou contacte a empresa da aplicação para colocar as suas questões.
 

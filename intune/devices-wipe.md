@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
@@ -77,7 +77,7 @@ O comando **remover dados da empresa** remove os dados de aplicações geridas (
 
 ### <a name="android"></a>Android
 
-|Tipo de dados|Android|Android Samsung KNOX Standard|
+|Tipo de dados|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Ligações Web|Removidos.|Removidos.|
 |Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados.|As aplicações e os dados permanecem instalados.|
@@ -89,7 +89,7 @@ O comando **remover dados da empresa** remove os dados de aplicações geridas (
 |Definições de perfil de certificado|Certificados revogados mas não removidos.|Certificados removidos e revogados.|
 |Agente de Gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
 |E-mail|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos e o e-mail em cache no dispositivo é eliminado.|
-|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos.|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos.|
+|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é eliminado durante a anulação da inscrição.|Os e-mails recebidos pela aplicação Microsoft Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é eliminado durante a anulação da inscrição.|
 |Anulação da associação ao Azure Active Directory (AAD)|O Registo do Azure AD é removido.|O Registo do Azure AD é removido.|
 |Contactos | Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível remover contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.|Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos.  Não é possível remover contactos sincronizados do livro de endereços nativo para outra origem externa. <br /> <br />Atualmente, apenas o Outlook é suportado.
 

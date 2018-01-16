@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a1cbd6fc3244686c1f5a1db3e4365e615662f0e
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 12/08/2017
 
 Como administrador de TI, é responsável por garantir que os utilizadores finais têm acesso às aplicações de que precisam para trabalhar. Esta tarefa pode ser um desafio porque:
 - Existe uma grande variedade de plataformas de dispositivos e de tipos de aplicações.
-- Poderá ter de gerir as aplicações em dispositivos da empresa e nos dispositivos próprios dos utilizadores.
-- Deve verificar se a sua rede e os seus dados permanecem seguros.
+- Poderá ter de gerir as aplicações nos dispositivos da empresa e nos próprios dispositivos dos utilizadores.
+- Tem de verificar se a sua rede e os seus dados permanecem seguros.
 
 Além disso, pode querer atribuir e gerir aplicações em dispositivos que não estão inscritos no Intune.
 
@@ -85,19 +85,33 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 - **Perfis de aprovisionamento do iOS** – as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir pró-ativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar.
     - [Perfis de aprovisionamento de aplicações iOS](app-provisioning-profile-ios.md)
 
+Para obter mais detalhes, veja [Gerir aplicações](app-management.md).
+
 ### <a name="monitor"></a>Monitor
-- **Aplicações Licenciadas** – veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações.
+- **Licenças de aplicações** – veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações.
     - [Aplicações compradas em volume na Loja Microsoft para Empresas](windows-store-for-business.md)
-- **Aplicações Detetadas** – Mostra todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo.
+- **Aplicações Detetadas** – mostra todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo.
 - **Estado da Instalação da Aplicação** – Mostra o estado da atribuição de uma aplicação que criou.
 - **Estado da proteção da aplicação** – mostra o estado da política de proteção de uma aplicação de um utilizador selecionado.
+- **Registos de auditoria** – mostra a atividade relacionada com a aplicação do Intune realizada por todos os administradores de TI.
 
-Para obter mais detalhes, veja [Monitorizar aplicações](apps-monitor.md)
+Para obter mais detalhes, veja [Monitorizar aplicações](apps-monitor.md).
 
 ### <a name="setup"></a>Setup
-<!--- **iOS VPP Tokens**
-    - [iOS volume-purchased apps](vpp-apps-ios.md) --->
+- **Tokens VPP do iOS** – aplique e veja as suas licenças de Volume Purchase Program (VPP) iOS.
+    - [Aplicações iOS compradas em volume](vpp-apps-ios.md)
+- **Certificado empresarial do Windows** – aplique ou veja o estado de um certificado de assinatura de código que serve para distribuir aplicações de linha de negócio nos dispositivos Windows geridos. 
+- **Certificado da Symantec do Windows** – aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx de XAP e WP8.x aos dispositivos Windows 10 Mobile. 
 - **Loja Microsoft para Empresas** – configure a integração na Loja Microsoft para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças.
     - [Aplicações compradas em volume na Loja Microsoft para Empresas](windows-store-for-business.md)
+- **Chaves de sideloading do Windows** – pode adicionar uma chave de sideloading do Windows que pode utilizar para instalar uma aplicação diretamente nos dispositivos, em vez de publicar e transferir a aplicação da Loja Windows.
+    - [Fazer sideload de uma aplicação Windows](app-sideload-windows.md) 
 - **Imagem corporativa do Portal da Empresa** – personalize o Portal da Empresa de modo a dar-lhe a imagem corporativa da sua empresa.
     - [Configuração do portal da empresa](company-portal-app.md)
+- **Categorias de aplicações** – adicione, afixe e elimine nomes de categorias de aplicações.
+- **Android for Work** – aprove e sincronize as aplicações aprovou para a sua empresa.
+    - [Aplicações Android for Work](apps-add-android-for-work.md) 
+
+### <a name="help-and-support"></a>Ajuda e Suporte
+- **Ajuda e suporte** – resolva problemas, peça suporte ou veja o estado do Intune.
+    - [Resolver problemas](help-desk-operators.md)
