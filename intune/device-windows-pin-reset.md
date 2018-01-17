@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: faf3e9b81f76755135f73f8753305d96d227ec14
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 144313b63c1a6349a59220c901072dbf9d4c6f43
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Repor o código de acesso em dispositivos Windows integrados com o Serviço de Reposição do PIN da Microsoft através do Intune
 
@@ -66,7 +66,7 @@ Defina o valor deste CSP para **Verdadeiro**.
 5. Selecione o dispositivo para o qual pretende repor o código de acesso e, em seguida, no painel de propriedades do dispositivo, selecione **Novo código de acesso**.
 6. Na página de confirmação que for apresentada, selecione **Sim**. O código de acesso é gerado e apresentado no portal durante os sete dias seguintes.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Se a reposição do código de acesso falhar, será fornecida uma ligação no portal para obter mais informações.
 
