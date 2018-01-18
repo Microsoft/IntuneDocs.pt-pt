@@ -1,4 +1,4 @@
-- name: Descrição Geral
+- name: Descrição geral
   href: introduction-intune.md
   expanded: true
   items:
@@ -307,7 +307,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: 'Windows 8,1'
+            - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -339,7 +339,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: 'Windows 8,1'
+            - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: Referência para a entidade de utilizador
               href: reports-ref-user.md
-    - name: Graph API do Intune
+    - name: Utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
       href: intune-graph-apis.md
       items:
-        - name: Referência das Graph APIs do Intune
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Referência da API do Intune
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Recursos
   items:
     - name: Glossário
