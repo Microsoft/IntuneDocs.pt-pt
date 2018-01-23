@@ -1,5 +1,5 @@
 ---
-title: "Registo de Alterações do Armazém de Dados do Intune | Microsoft Docs"
+title: "Registo de Alterações do Armazém de Dados do Intune | Documentos da Microsoft"
 description: "Uma lista de alterações na API do Armazém de Dados do Intune."
 keywords: "Armazém de Dados do Intune"
 author: erikre
@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1078dfeebae22f0754502935c983db13de60a60
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 1e17ca34897a707360d802e37ffe3fa91fad0860
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
