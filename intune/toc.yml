@@ -124,7 +124,7 @@
         - name: Configurações suportadas
           href: supported-devices-browsers.md
           items:
-            - name: Utilização da largura de banda de rede
+            - name: Configuração de rede
               href: network-bandwidth-use.md
         - name: Iniciar sessão no Intune
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
+            - name: Ecrã do Estado da Inscrição
+              href: windows-enrollment-status.md
         - name: Configurar inscrição do Android
           href: android-enroll.md
         - name: Configurar a inscrição do iOS
