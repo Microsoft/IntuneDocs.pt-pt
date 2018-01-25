@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controlo de administração baseada em funções (RBAC) com o Intune
 
@@ -61,6 +61,18 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 - **Gestor de Políticas e Perfis**: gere a política de conformidade, perfis de configuração, inscrição da Apple e identificadores de dispositivos empresariais.
 - **Operador Só de Leitura**: vê as informações do utilizador, do dispositivo, da inscrição, da configuração e da aplicação. Não pode fazer alterações ao Intune.
 - **Gestor de Aplicações**: gere aplicações móveis e geridas e pode ler as informações do dispositivo.
+- **Administrador de Escola**: gere os dispositivos Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
+
+|Permissão|Operação|
+|---|---|
+|Dados da Auditoria|Ler|
+|Configurações dos Dispositivos|Atribuir, Criar, Eliminar, Ler, Atualizar|
+|Gestores de Inscrição de Dispositivos|Ler, Atualizar|
+|Dispositivos Geridos|Ler, Atualizar<!--, Delete [To be added in 1803]-->|
+|Aplicações móveis|Atribuir, Criar, Eliminar, Ler, Atualizar|
+|Relatórios|Ler|
+|Ações Remotas|Limpar o PC, Reiniciar, Bloqueio Remoto, Extinguir, Sincronizar Dispositivos, Eliminação|
+|Organização|Ler|
 
 ### <a name="to-assign-a-built-in-role"></a>Para atribuir uma função incorporada
 
@@ -128,6 +140,6 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 
 [Utilizar a função de operador do Suporte Técnico do Intune com o portal de resolução de problemas](help-desk-operators.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Assign roles using Azure AD (Atribuir funções através do Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

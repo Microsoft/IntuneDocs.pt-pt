@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
@@ -41,7 +41,7 @@ Para dispositivos que estejam **inscritos para gestão no Intune**, o utilizador
 
 As políticas de proteção de aplicações são apenas aplicadas no contexto de trabalho ao utilizar a aplicação, pelo que poderá experimentar diferentes comportamentos da aplicação consoante o contexto: profissional ou pessoal.  
 
-Para aplicações que suportam várias identidades, o Intune apenas aplicará as políticas de proteção de aplicações se o utilizador final utilizar a aplicação no contexto de trabalho.  Por exemplo, o utilizador final irá obter um pedido de PIN ao aceder a dados de trabalho.  Para a **aplicação Outlook**, é pedido ao utilizador final um PIN ao iniciar a aplicação. Para a **aplicação OneDrive**, isto acontece quando o utilizador final introduz a conta profissional.  Para o Microsoft **Word**, **PowerPoint* e **Excel**, isto acontece quando o utilizador final acede a documentos armazenados na localização empresarial do OneDrive para Empresas.
+Para aplicações que suportam várias identidades, o Intune apenas aplicará as políticas de proteção de aplicações se o utilizador final utilizar a aplicação no contexto de trabalho.  Por exemplo, o utilizador final irá obter um pedido de PIN ao aceder a dados de trabalho.  Para a **aplicação Outlook**, é pedido ao utilizador final um PIN ao iniciar a aplicação. Para a **aplicação OneDrive**, isto acontece quando o utilizador final introduz a conta profissional.  Para o Microsoft **Word**, **PowerPoint** e **Excel**, isto acontece quando o utilizador final acede a documentos armazenados na localização empresarial do OneDrive para Empresas.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gerir contas de utilizador no dispositivo
 
 O Intune só suporta a implementação de políticas de proteção de aplicações apenas numa conta de utilizador por dispositivo.
@@ -65,5 +65,5 @@ Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda co
 
 ## <a name="next-steps"></a>Próximos passos
 [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md)
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
