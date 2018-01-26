@@ -14,73 +14,59 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Este tópico descreve a inscrição e indica as formas diferentes de inscrever dispositivos móveis na gestão do Intune.
+O Intune permite-lhe gerir os dispositivos e as aplicações da sua força de trabalho e a forma como acedem aos dados da empresa. Para utilizar esta gestão de dispositivos móveis (MDM), deve primeiro inscrever os dispositivos no serviço Intune. Quando um dispositivo é inscrito, é emitido um certificado MDM. Este certificado é utilizado para comunicar com o serviço Intune.
 
-Os dispositivos são inscritos no Intune para que os possa gerir. Esta capacidade é mencionada na documentação do Intune como gestão de dispositivos móveis (MDM). Quando os dispositivos são inscritos no Intune, é-lhes emitido um certificado MDM, que utilizam para comunicar com o serviço do Intune.
+Como pode constatar nas tabelas seguintes, existem vários métodos para inscrever os dispositivos da força de trabalho. Cada método depende da propriedade do dispositivo (pessoal ou empresarial), do tipo de dispositivo (iOS, Windows, Android) e dos requisitos de gestão (reposições, afinidade, bloqueio).
 
-A forma como inscreve os dispositivos depende do tipo de dispositivo, da propriedade e do nível de gestão de que precisa. A inscrição "Bring your own device" (BYOD) permite que os utilizadores inscrevam os seus telemóveis, tablets ou PCs pessoais. A inscrição de dispositivos pertencentes à empresa (COD) permite cenários de gestão, como a inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados.
+## <a name="ios-enrollment-methods"></a>Métodos de inscrição do iOS
 
-Se utilizar o Exchange ActiveSync, no local ou alojado na cloud, pode ativar a gestão simples do Intune sem inscrição. Pode gerir PCs Windows como dispositivos móveis, que é o método recomendado descrito abaixo.
-
-
-## <a name="overview-of-device-enrollment-methods"></a>Descrição geral dos métodos de inscrição para dispositivos
-
-A tabela a seguir oferece uma descrição geral dos métodos de inscrição do Intune com as respetivas capacidades e requisitos descritos abaixo.
-
-**Legenda**
-
-- **Reposição obrigatória** – O dispositivo é reposto para fábrica durante a inscrição.
-- **Afinidade de Utilizador** – Associa os dispositivos aos utilizadores. Para obter mais informações, veja [Afinidade do utilizador](device-enrollment-program-enroll-ios.md).
-- **Bloqueado** – Impede os utilizadores de anular a inscrição de dispositivos.
-
-**Métodos de inscrição do iOS**
-
-| **Método** |  **Reposição obrigatória** |    **Afinidade de Utilizador**   |   **Bloqueado** | **Detalhes** |
+| **Método** |  **Reposição obrigatória** |    [**Afinidade do Utilizador**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Bloqueado** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   Não |Não |Não  | [Mais informações](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Sim |   Opcional |  Opcional|[Mais informações](./device-enrollment-program-enroll-ios.md)|
+| | Durante a inscrição, é feita a reposição de fábrica dos dispositivos. |  Associa cada dispositivo a um utilizador.| Os utilizadores não conseguem anular a inscrição dos dispositivos.  | |
+|**[BYOD](#bring-your-own-device)** | Não|   Sim |   Não | [Mais informações](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| Não |Não |Não  | [Mais informações](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Sim |   Opcional |  Opcional|[Mais informações](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| Sim |   Opcional |  Não| [Mais informações](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Não |    Não  | Não|[Mais informações](./apple-configurator-direct-enroll-ios.md)|
 
-**Métodos de inscrição do Windows**
+## <a name="windows-enrollment-methods"></a>Métodos de inscrição do Windows
 
 | **Método** |  **Reposição obrigatória** |    **Afinidade de Utilizador**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não |   Sim |   Não | [Mais informações](windows-enroll.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Não |  Sim |   Não | [Mais informações](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Não |Não |Não  |[Mais informações](device-enrollment-manager-enroll.md)|
 |**Inscrição automática** | Não |Sim |Não | [Mais informações](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Inscrição em massa** |Não |Não |Não | [Mais informações](./windows-bulk-enroll.md) |
 
-**Métodos de inscrição do Android**
+## <a name="android-enrollment-methods"></a>Métodos de inscrição do Android
 
 | **Método** |  **Reposição obrigatória** |    **Afinidade de Utilizador**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Não|    Sim |   Não | [Mais informações](./android-enroll.md)|
-|**[DEM](#dem)**|   Não |Não |Não  |[Mais informações](./device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Não|   Sim |   Não | [Mais informações](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| Não |Não |Não  |[Mais informações](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| Não | Sim | Não| [Mais informações](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## <a name="byod"></a>BYOD
-Os utilizadores da inscrição "Bring your own device" instalam e executam a aplicação Portal da Empresa para inscrever os respetivos dispositivos. Este programa permite aos utilizadores aceder aos recursos da empresa tais como o e-mail.
+## <a name="bring-your-own-device"></a>Traga o seu próprio dispositivo
+Traga os seus próprios dispositivos (BYOD) inclui os telemóveis, os tablets e os PCs pessoais. Os utilizadores instalam e executam a aplicação Portal da Empresa para inscrever BYODs. Este programa permite aos utilizadores aceder aos recursos da empresa tais como o e-mail.
 
-## <a name="corporate-owned-devices"></a>Dispositivos pertencentes à empresa
-A seguir são apresentados cenários de inscrição de dispositivos empresariais (COD). Os dispositivos iOS podem ser inscritos diretamente através das ferramentas fornecidas pela Apple. Todos os tipos de dispositivos podem ser inscritos por um administrador ou gestor utilizando o gestor de inscrição de dispositivos. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à empresa para ativar cenários COD.
+## <a name="corporate-owned-device"></a>Dispositivo pertencentes à empresa
+Os dispositivos pertencentes à empresa (COD) incluem telemóveis, tablets e PCs pertencentes à organização e distribuídos pela força de trabalho. A inscrição COD suporta cenários de gestão, como inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados. Uma forma habitual de inscrever CODs passa pela utilização do gestor de inscrição de dispositivos (DEM) por parte do administrador ou do gestor. Os dispositivos iOS podem ser inscritos diretamente através das ferramentas do Programa de Registo de Aparelho (DEP) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à empresa.
 
-### <a name="dem"></a>DEM
+### <a name="device-enrollment-manager"></a>Gestor de inscrição de dispositivos
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
-### <a name="dep"></a>DEP
-A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
+### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos da Apple
+A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política “over the air” em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
 
 Saiba mais sobre a inscrição do DEP para iOS:
 

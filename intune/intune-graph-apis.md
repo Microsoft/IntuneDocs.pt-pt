@@ -1,6 +1,6 @@
 ---
-title: "Como utilizar o Azure AD para aceder à Graph API do Intune"
-description: "Descreve os passos necessários para as aplicações utilizarem o Azure AD para aceder à Graph API do Intune"
+title: "Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph"
+description: "Descreve os passos necessários para as aplicações utilizarem o Azure AD para acederem às APIs do Intune no Microsoft Graph."
 keywords: "funções de permissão da graph api do intune para c# powershell"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Como utilizar o Azure AD para aceder à Graph API do Intune
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
 
-A [Microsoft Graph API](https://developer.microsoft.com/graph/) suporta agora o Microsoft Intune com APIs específicas e funções de permissão.  A Graph API utiliza o Azure Active Directory (Azure AD) para a autenticação e o controlo de acesso.  
-O acesso ao Graph API do Intune exige:
+A [API do Microsoft Graph](https://developer.microsoft.com/graph/) suporta agora o Microsoft Intune com APIs específicas e funções de permissão.  A API do Microsoft Graph utiliza o Azure Active Directory (Azure AD) para a autenticação e o controlo de acesso.  
+O acesso às APIs do Intune no Microsoft Graph exige:
 
 - Um ID de aplicação com:
 
-    - Permissão para chamar o Azure AD e as Graph APIs.
+    - Permissão para chamar o Azure AD e as APIs do Microsoft Graph.
     - Âmbitos de permissão relevantes para as tarefas da aplicação específica.
 
 - Credenciais de utilizador com:
@@ -38,11 +38,11 @@ O acesso ao Graph API do Intune exige:
 
 Este artigo:
 
-- Mostra como registar uma aplicação com acesso à Graph API e às funções de permissão relevantes.
+- Mostra como registar uma aplicação com acesso à API do Microsoft Graph e às funções de permissão relevantes.
 
-- Descreve as funções de permissão da Graph API do Intune.
+- Descreve as funções de permissão da API do Intune.
 
-- Fornece exemplos de autenticação da Graph API do Intune para C# e PowerShell.
+- Fornece exemplos de autenticação da API do Intune para o C# e o PowerShell.
 
 - Descreve como suportar vários inquilinos
 
@@ -53,9 +53,9 @@ Para saber mais, veja:
 - [Integrating applications with Azure Active Directory (Integrar aplicações com o Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Compreender o OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Registar aplicações para utilizar a Graph API
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Registar aplicações para utilizar a API do Microsoft Graph
 
-Para registar uma aplicação para utilizar a Graph API:
+Para registar uma aplicação para utilizar a API do Microsoft Graph:
 
 1.  Inicie sessão no [portal do Azure](https://portal.azure.com) com credenciais administrativas.
 
@@ -79,7 +79,7 @@ Para registar uma aplicação para utilizar a Graph API:
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
-        Para saber mais, consulte [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+        Para saber mais, veja [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
 5.  No painel da aplicação:
 
@@ -127,15 +127,15 @@ Neste ponto, também poderá:
 
 ## <a name="intune-permission-scopes"></a>Âmbitos de permissão do Intune
 
-O Azure AD e a Graph API utilizam âmbitos de permissão para controlar o acesso aos recursos empresariais.  
+O Azure AD e o Microsoft Graph utilizam âmbitos de permissão para controlarem o acesso aos recursos empresariais.  
 
-Os âmbitos de permissão (também chamados _âmbitos do OAuth_) controlam o acesso a entidades específicas do Intune e às respetivas propriedades. Esta secção resume os âmbitos de permissão das funcionalidades da Graph API do Intune.
+Os âmbitos de permissão (também chamados _âmbitos do OAuth_) controlam o acesso a entidades específicas do Intune e às respetivas propriedades. Esta secção resume os âmbitos de permissão das funcionalidades da API do Intune.
 
 Para saber mais:
 - [Azure AD authentication (Autenticação do Azure AD)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Âmbitos de permissão de aplicações](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Quando concede permissão à Graph API, pode especificar os seguintes âmbitos para controlar o acesso às funcionalidades do Intune: a tabela a seguir resume os âmbitos de permissão da Graph API do Intune.  A primeira coluna mostra o nome da funcionalidade, conforme apresentado no portal do Azure, e a segunda coluna fornece o nome do âmbito de permissão.
+Quando concede permissão ao Microsoft Graph, pode especificar os seguintes âmbitos para controlar o acesso às funcionalidades do Intune: a tabela seguinte resume os âmbitos de permissão da API do Intune.  A primeira coluna mostra o nome da funcionalidade, conforme apresentado no portal do Azure, e a segunda coluna fornece o nome do âmbito de permissão.
 
 Definição _Ativar Acesso_ | Nome do âmbito
 :--|:--
@@ -153,7 +153,7 @@ __Leitura da configuração do Microsoft Intune__ | [DeviceManagementServiceConf
 
 A tabela lista as definições tal como são apresentadas no portal do Azure. As secções a seguir descrevem os âmbitos por ordem alfabética.
 
-Neste momento, todos os âmbitos de permissão do Intune exigem acesso de administrador.  Tal significa que precisa de ter credenciais correspondentes ao executar aplicações ou scripts que acedam aos recursos da Graph API do Intune.
+Neste momento, todos os âmbitos de permissão do Intune exigem acesso de administrador.  Isto significa que precisa de ter credenciais correspondentes ao executar aplicações ou scripts que acedam aos recursos da API do Intune.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Ao testar o exemplo, poderá receber erros de estado HTTP 403 (Proibido) semelha
 
 Caso tal aconteça, verifique se:
 
-- Atualizou o ID da aplicação para um autorizado para utilizar a Graph API e o `DeviceManagementManagedDevices.Read.All` âmbito de permissão.
+- Atualizou o ID da aplicação para um autorizado para utilizar a API do Microsoft Graph e o âmbito de permissão `DeviceManagementManagedDevices.Read.All`.
 
 - As suas credenciais de inquilino suportam funções administrativas.
 
@@ -551,7 +551,7 @@ Para tal:
 
 1.  Verifique se a conta de cliente existe no inquilino do Azure AD de destino.
 
-2.  Verifique se a sua conta de inquilino permite que os utilizadores registem aplicações (consulte **Configurações do utilizador**).
+2.  Verifique se a sua conta de inquilino permite que os utilizadores registem aplicações (veja **Configurações do utilizador**).
 
 3.  Estabeleça uma relação entre cada inquilino.  
 

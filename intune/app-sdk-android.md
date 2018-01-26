@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
 > [!NOTE]
 > Pode ser útil ler primeiro a [Descrição geral do SDK da Aplicação do Intune](app-sdk.md), que abrange as funcionalidades atuais do SDK e descreve como preparar a integração em cada plataforma suportada.
 
-O SDK da Aplicação do Microsoft Intune para Android permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou MAM) na aplicação Android nativa. Uma aplicação otimizada pelo Intune é uma aplicação que está integrada com o SDK da Aplicação do Intune. Os administradores do Intune podem facilmente implementar políticas de proteção de aplicações na aplicação otimizada pelo Intune quando este está a gerir a aplicação de forma ativa.
+O SDK da Aplicação do Microsoft Intune para Android permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou MAM) na aplicação Android nativa. Uma aplicação gerida pelo Intune é uma aplicação que está integrada com o SDK da Aplicação Intune. Os administradores do Intune podem facilmente implementar políticas de proteção de aplicações na sua aplicação gerida pelo Intune quando este está a gerir a aplicação de forma ativa.
 
 
 ## <a name="whats-in-the-sdk"></a>O que está no SDK
@@ -55,7 +55,7 @@ O SDK da Aplicação do Intune é um projeto Android compilado. Como resultado, 
 O SDK da Aplicação do Intune para Android baseia-se na presença da aplicação [Portal da Empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) no dispositivo para ativar as políticas de proteção. O Portal da Empresa obtém as políticas de proteção de aplicações do serviço Intune. Quando a aplicação é inicializada, é carregada a política e o código para impor essa política a partir do Portal da Empresa.
 
 > [!NOTE]
-> Quando a aplicação Portal da Empresa não está no dispositivo, uma aplicação otimizada pelo Intune tem o mesmo comportamento que uma aplicação normal que não suporta as políticas de proteção de aplicações do Intune.
+> Quando a aplicação Portal da Empresa não está no dispositivo, uma aplicação gerida pelo Intune tem o mesmo comportamento que uma aplicação normal que não suporta as políticas de proteção de aplicações do Intune.
 
 Para a proteção de aplicações sem inscrição de dispositivos, o utilizador _**não**_ é obrigado a inscrever o dispositivo através da aplicação Portal da Empresa.
 
@@ -762,7 +762,7 @@ O guia de Cópia de Segurança de Dados especifica um algoritmo geral para resta
 
 ## <a name="multi-identity-optional"></a>Várias identidades (opcional)
 
-### <a name="overview"></a>Descrição Geral
+### <a name="overview"></a>Descrição geral
 Por predefinição, o SDK da Aplicação do Intune aplica a política à aplicação como um todo. As várias identidades são uma funcionalidade de proteção opcional da aplicação do Intune que pode ser ativada para permitir que a política seja aplicada num nível por identidade. Esta opção requer uma participação da aplicação significativamente maior do que outras funcionalidades de proteção da aplicação.
 
 A aplicação *tem* de informar o SDK quando tenciona alterar a identidade ativa. Em alguns casos, o SDK também notifica a aplicação quando é necessária uma alteração de identidade. No entanto, na maioria dos casos, a MAM não consegue reconhecer os dados que são apresentados na IU ou que são utilizados a dada altura num thread e baseia-se na aplicação para definir a identidade correta, de forma a evitar a fuga de dados. Nas secções seguintes, serão destacados alguns cenários específicos que requerem uma ação por parte da aplicação.
@@ -875,7 +875,7 @@ Poderá também substituir um método no `MAMActivity` se pretender que a aplica
 
 ### <a name="implicit-identity-changes"></a>Alterações de Identidade Implícitas
 
-Além da capacidade da aplicação de definir a identidade, a identidade de um contexto ou thread pode mudar com base na entrada de dados de outra aplicação otimizada pelo Intune com uma política de proteção de aplicações.
+Além da capacidade da aplicação de definir a identidade, a identidade de um contexto ou thread poderá mudar com base na entrada de dados de outra aplicação gerida pelo Intune com uma política de proteção de aplicações.
 
 #### <a name="examples"></a>Exemplos
 
@@ -1353,6 +1353,32 @@ Abaixo pode ver uma lista completa de atributos de estilo permitidos, os element
 | Cor do ambiente | Limite da caixa do PIN quando realçado <br> Hiperligações |accent_color | Cor |
 | Logótipo da aplicação | Ícone grande que aparece no ecrã de PIN da aplicação Intune | logo_image | Desenhável |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Exigir um pedido de início de sessão ao utilizador para uma inscrição automática no serviço APP-WE, exigir políticas de proteção de aplicações do Intune de forma a utilizar a sua aplicação LOB para Android integrada com SDK e ativar o SSO da ADAL (opcional)
+
+Seguem-se orientações para exigir pedidos de início de sessão ao utilizador ao iniciar aplicações para uma inscrição automática no serviço APP-WE (isto é denominado **inscrição predefinida** nesta secção), exigir políticas de proteção de aplicações do Intune para permitir que apenas os utilizadores protegidos pelo Intune utilizem a sua aplicação LOB para Android integrada com SDK. Também abrangem a ativação do SSO para a sua aplicação LOB para Android integrada com SDK. Isto **não** é suportado pelas aplicações da loja que podem ser utilizadas por utilizadores sem Intune.
+
+> [!NOTE] 
+> As vantagens da **inscrição predefinida** incluem um método simplificado de obtenção de políticas do serviço APP-WE para uma aplicação no dispositivo.
+
+### <a name="general-requirements"></a>Requisitos Gerais
+* A equipa do SDK do Intune irá exigir o ID da Aplicação da sua aplicação. Uma forma de o fazer é através do [Portal do Azure](https://portal.azure.com/), em **Todas as Aplicações**, na coluna **ID da Aplicação**. Uma excelente forma de contactar a equipa do SDK do Intune é através do envio de um e-mail para msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Trabalhar com o SDK do Intune
+Estas instruções são específicas para todas as aplicações Android e Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
+
+1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> O termo "ID de cliente" ligado à sua aplicação é o mesmo que o termo "ID de aplicação" do Portal do Azure. 
+* Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.
+
+2. Ative a inscrição predefinida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Esta tem de ser a única integração da MAM-WE na aplicação. Poderão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
+
+3. Ative a política de MAM exigida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Esta ação força o utilizador a transferir o Portal da Empresa para o dispositivo e a concluir o fluxo da inscrição predefinida antes da utilização.
+
 ## <a name="limitations"></a>Limitações
 
 ### <a name="file-size-limitations"></a>Limitações do tamanho do ficheiro
@@ -1380,7 +1406,7 @@ Para bases de códigos grandes executadas sem [ProGuard](http://proguard.sourcef
     
 ### <a name="exported-services"></a>Serviços exportados
 
- o ficheiro AndroidManifest.xml incluído no SDK da Aplicação do Intune contém **MAMNotificationReceiverService**, o qual tem de ser um serviço exportado para permitir ao Portal da Empresa enviar notificações para uma aplicação otimizada. O serviço verifica o autor da chamada para assegurar que apenas o Portal da Empresa está autorizado a enviar notificações.
+ O ficheiro AndroidManifest.xml incluído no SDK da Aplicação Intune contém **MAMNotificationReceiverService**, que tem de ser um serviço exportado para permitir ao Portal da Empresa enviar notificações para uma aplicação gerida. O serviço verifica o autor da chamada para assegurar que apenas o Portal da Empresa está autorizado a enviar notificações.
 
 ### <a name="reflection-limitations"></a>Limitações da reflexão
 Algumas das classes base de MAM (por exemplo, MAMActivity, MAMDocumentsProvider) contêm métodos (baseados nas classes base originais de Android) que utilizam parâmetros ou tipos de retorno apenas presentes em alguns níveis de API. Por este motivo, poderá nem sempre ser possível utilizar reflexões para enumerar todos os métodos de componentes de aplicações. Esta restrição não está limitada a MAM. É a mesma restrição que seria aplicada caso a própria aplicação implementasse estes métodos a partir de classes base de Android.

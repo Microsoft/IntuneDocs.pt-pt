@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 8edfc4f55e9265ef6bd2dfbcb5871496d5679a9f
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 77b3b8f3fff39df94d535b28c060334b3e0a63ce
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Corrigir problemas comuns no dispositivo Samsung Knox
 
-Por vezes, podem ocorrer problemas no dispositivo Samsung Knox que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Por vezes, podem ocorrer problemas no dispositivo Samsung Knox que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que [contacte a equipa do Portal da Empresa para Android](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
 
 ## <a name="network-activation-error"></a>Erro de ativação de rede
 
@@ -31,7 +31,7 @@ A mensagem apresentada poderá ter o seguinte aspeto:
 
 |Mensagem de erro|O que deve tentar fazer|
 |---|---|
-|**Erro de ativação do Samsung Knox** – não foi possível ativar a licença do Samsung Knox. Mude para uma rede móvel ou sem fios diferente e tente novamente.|O dispositivo não pode ser ativado na rede atual. Se estiver a utilizar dados via rede móvel, mude para uma rede Wi-Fi e tente novamente.|
+|**Erro de ativação do Samsung Knox** – não foi possível ativar a licença do Samsung Knox. Mude para uma rede móvel ou sem fios diferente e tente novamente.|O dispositivo não pode ser ativado na rede atual. Se estiver a utilizar dados via rede móvel, mude para uma rede Wi-Fi e tente novamente ou vice-versa.|
 
 ## <a name="license-activation-error"></a>Erro de ativação de licença
 
