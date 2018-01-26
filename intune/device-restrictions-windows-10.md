@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Geral
--   **Captura de ecrã (apenas dispositivos móveis)** – permite que o utilizador faça uma captura do ecrã do dispositivo como uma imagem.
--   **Copiar e colar (apenas dispositivos móveis)** – Permita ações de copiar e colar entre aplicações no dispositivo.
--   **Anular inscrições manualmente** – Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
--   **Instalação do certificado de raiz manual (apenas dispositivos móveis)** – impede o utilizador de instalar manualmente os certificados de raiz e os certificados CAP intermédios.
--   **Submissão de dados de diagnóstico** – Os valores possíveis são:
+- **Captura de ecrã (apenas dispositivos móveis)** – permite que o utilizador faça uma captura do ecrã do dispositivo como uma imagem.
+- **Copiar e colar (apenas dispositivos móveis)** – Permita ações de copiar e colar entre aplicações no dispositivo.
+- **Anular inscrições manualmente** – Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
+- **Instalação do certificado de raiz manual (apenas dispositivos móveis)** – impede o utilizador de instalar manualmente os certificados de raiz e os certificados CAP intermédios.
+- **Submissão de dados de diagnóstico** – Os valores possíveis são:
     - **Nenhum** – não são enviados dados à Microsoft
     - **Básico** – são enviadas à Microsoft informações limitadas
     - **Melhorado** – são enviados dados de diagnóstico melhorados à Microsoft
     - **Completo** – Envia os mesmos dados que Melhorado, juntamente com dados adicionais sobre o estado do dispositivo
--   **Câmara** – Permita ou bloqueie a utilização da câmara no dispositivo.
--   **Sincronização de ficheiros do OneDrive** – impede o dispositivo de sincronizar ficheiros no OneDrive.
--   **Armazenamento amovível** – especifica se os dispositivos de armazenamento externo, como os cartões SD, podem ser utilizados no dispositivo.
--   **Geolocalização** – Especifica se o dispositivo pode utilizar informações de serviços de localização.
--   **Partilha da Internet** – Permite a utilização da partilha de ligação à Internet no dispositivo.
--   **Reposição do telefone** – Controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
--   **Ligação USB (apenas para dispositivos móveis)** – controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.
--   **Modo antirroubo (apenas para dispositivos móveis)** – configure se o Modo antirroubo do Windows está ativado.
--   **Cortana** – Ative ou desative o assistente de voz Cortana.
--   **Gravação de voz (apenas para dispositivos móveis)** – permite ou bloqueia a utilização do gravador de voz do dispositivo.
--   **Modificação do nome do dispositivo** – impede o utilizador final de alterar o nome do dispositivo (apenas no Windows 10 Mobile)
--   **Adicionar pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que instala os pacotes de aprovisionamento.
--   **Remover pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que remove os pacotes de aprovisionamento.
--   **Deteção de dispositivos** – bloqueie a deteção de um dispositivo por outros dispositivos.
--   **Comutador de Tarefa (apenas para dispositivos móveis)** – bloqueia o comutador de tarefa no dispositivo.
--   **Caixa de diálogo de erro de cartão SIM (apenas para dispositivos móveis)** – impedirá que uma mensagem de erro seja apresentada no dispositivo se nenhum cartão SIM for detetado.
+- **Câmara** – Permita ou bloqueie a utilização da câmara no dispositivo.
+- **Sincronização de ficheiros do OneDrive** – impede o dispositivo de sincronizar ficheiros no OneDrive.
+- **Armazenamento amovível** – especifica se os dispositivos de armazenamento externo, como os cartões SD, podem ser utilizados no dispositivo.
+- **Geolocalização** – Especifica se o dispositivo pode utilizar informações de serviços de localização.
+- **Partilha da Internet** – Permite a utilização da partilha de ligação à Internet no dispositivo.
+- **Reposição do telefone** – Controla se o utilizador pode fazer uma reposição de fábrica do dispositivo.
+- **Ligação USB (apenas para dispositivos móveis)** – controla se os dispositivos podem aceder a dispositivos de armazenamento externo através de uma ligação USB.
+- **Modo antirroubo (apenas para dispositivos móveis)** – configure se o Modo antirroubo do Windows está ativado.
+- **Cortana** – Ative ou desative o assistente de voz Cortana.
+- **Gravação de voz (apenas para dispositivos móveis)** – permite ou bloqueia a utilização do gravador de voz do dispositivo.
+- **Modificação do nome do dispositivo** – impede o utilizador final de alterar o nome do dispositivo (apenas no Windows 10 Mobile)
+- **Adicionar pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que instala os pacotes de aprovisionamento.
+- **Remover pacotes de aprovisionamento** – bloqueia o agente de configuração do tempo de execução que remove os pacotes de aprovisionamento.
+- **Deteção de dispositivos** – bloqueie a deteção de um dispositivo por outros dispositivos.
+- **Comutador de Tarefa (apenas para dispositivos móveis)** – bloqueia o comutador de tarefa no dispositivo.
+- **Caixa de diálogo de erro de cartão SIM (apenas para dispositivos móveis)** – impedirá que uma mensagem de erro seja apresentada no dispositivo se nenhum cartão SIM for detetado.
+- **Reimplementação automática** – permite aos utilizadores com direitos administrativos eliminar todos os dados do utilizador e as definições através de **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão.
 
 
 ## <a name="password"></a>Palavra-passe
@@ -68,19 +68,68 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 ## <a name="personalization"></a>Personalização
 
--   **URL da imagem de fundo do ambiente de trabalho (apenas no ambiente de trabalho)** – especifique o URL para uma imagem em formato PNG, JPG ou JPEG que pretenda utilizar como a imagem de fundo do ambiente de trabalho do Windows. Os utilizadores não poderão alterá-la.
+- **URL da imagem de fundo do ambiente de trabalho (apenas no ambiente de trabalho)** – especifique o URL para uma imagem em formato PNG, JPG ou JPEG que pretenda utilizar como a imagem de fundo do ambiente de trabalho do Windows. Os utilizadores não o podem alterar.
 
 ## <a name="privacy"></a>Privacidade
 
 -   **Personalização de entrada** – não permite a utilização de serviços de fala baseados na cloud para a Cortana, o ditado ou aplicações da Loja Microsoft. Se permitir estes serviços, a Microsoft recolherá os dados de voz para melhorar o serviço.
 -   **Aceitação automática de pedidos de consentimento do utilizador de emparelhamento e privacidade** – permite que o Windows aceite automaticamente as mensagens de consentimento de emparelhamento e privacidade ao executar as aplicações.
 
+Pode definir as informações às quais todas as aplicações no dispositivo podem aceder. Pode definir exceções numa base por aplicação através de **Exceções de privacidade por aplicação**.
+
+### <a name="exceptions"></a>Exceções
+
+- **Informações da conta** – defina se esta aplicação pode aceder ao nome de utilizador, imagem e outras informações de contacto.
+- **Aplicações em segundo plano** – defina se esta aplicação pode ser executada em segundo plano.
+- **Calendário** – defina se esta aplicação pode aceder ao calendário.
+- **Histórico de chamadas** – defina se esta aplicação pode aceder ao histórico de chamadas.
+- **Câmara** – defina se esta aplicação pode aceder à câmara.
+- **Contactos** – defina se esta aplicação pode aceder aos contactos.
+- **E-mail** – defina se esta aplicação pode aceder e enviar e-mails.
+- **Localização** – defina se esta aplicação pode aceder a informações de localização.
+- **Mensagens** – defina se esta aplicação pode ler ou enviar SMS ou MMS.
+- **Microfone** – defina se esta aplicação pode utilizar o microfone.
+- **Movimento** – defina se esta aplicação pode aceder a informações de movimento.
+- **Notificações** – defina se esta aplicação pode aceder a notificações.
+- **Telefone** – defina se esta aplicação pode aceder ao telefone.
+- **Rádios** – algumas aplicações utilizam rádios (por exemplo, Bluetooth) no seu dispositivo para enviar e receber dados e precisam de ativar ou desativar estes rádios. Defina se esta aplicação pode controlar estes rádios.
+- **Tarefas** – defina se esta aplicação pode aceder às suas tarefas.
+- **Dispositivos fidedignos** – defina se esta aplicação pode utilizar dispositivos fidedignos (hardware que já ligou ou que vem com este PC, tablet ou telefone). Por exemplo: TVs, projetores, etc.
+- **Comentários e diagnóstico** – defina se esta aplicação pode aceder a informações de diagnóstico.
+- **Sincronização com dispositivos** – defina se esta aplicação pode partilhar e sincronizar automaticamente informações com dispositivos sem fios que não sejam emparelhados especificamente com o PC, tablet ou telefone.
+
+## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicação
+
+Pode adicionar aplicações que devem ter um comportamento de privacidade diferente do que definiu em “Privacidade predefinida”.
+
+- **Nome do Pacote** – o nome da família de pacotes da aplicação.
+- **Nome da aplicação** – o nome da aplicação.
+
+### <a name="exceptions"></a>Exceções
+
+- **Informações da conta** – defina se esta aplicação pode aceder ao nome de utilizador, imagem e outras informações de contacto.
+- **Aplicações em segundo plano** – defina se esta aplicação pode ser executada em segundo plano.
+- **Calendário** – defina se esta aplicação pode aceder ao calendário.
+- **Histórico de chamadas** – defina se esta aplicação pode aceder ao histórico de chamadas.
+- **Câmara** – defina se esta aplicação pode aceder à câmara.
+- **Contactos** – defina se esta aplicação pode aceder aos contactos.
+- **E-mail** – defina se esta aplicação pode aceder e enviar e-mails.
+- **Localização** – defina se esta aplicação pode aceder a informações de localização.
+- **Mensagens** – defina se esta aplicação pode ler ou enviar SMS ou MMS.
+- **Microfone** – defina se esta aplicação pode utilizar o microfone.
+- **Movimento** – defina se esta aplicação pode aceder a informações de movimento.
+- **Notificações** – defina se esta aplicação pode aceder a notificações.
+- **Telefone** – defina se esta aplicação pode aceder ao telefone.
+- **Rádios** – algumas aplicações utilizam rádios (por exemplo, Bluetooth) no seu dispositivo para enviar e receber dados e precisam de ativar ou desativar estes rádios. Defina se esta aplicação pode controlar estes rádios.
+- **Tarefas** – defina se esta aplicação pode aceder às suas tarefas.
+- **Dispositivos fidedignos** – defina se esta aplicação pode utilizar dispositivos fidedignos (hardware que já ligou ou que vem com este PC, tablet ou telefone). Por exemplo: TVs, projetores, etc.
+- **Comentários e diagnóstico** – defina se esta aplicação pode aceder a informações de diagnóstico.
+- **Sincronização com dispositivos** – defina se esta aplicação pode partilhar e sincronizar automaticamente informações com dispositivos sem fios que não sejam emparelhados especificamente com o PC, tablet ou telefone.
 
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
-
--   **Notificações do centro de ações (apenas para dispositivos móveis)** – permite a apresentação de notificações do Centro de Ações no ecrã de bloqueio do dispositivo (apenas no Windows 10 Mobile).
--   **URL da imagem do ecrã bloqueado (Apenas para ambiente de trabalho)** – especifique o URL para uma imagem em formato PNG, JPG ou JPEG que será utilizada como a imagem de fundo do ecrã bloqueado do Windows. Os utilizadores não poderão alterá-la.
+- **Notificações do centro de ações (apenas para dispositivos móveis)** – permite a apresentação de notificações do Centro de Ações no ecrã de bloqueio do dispositivo (apenas no Windows 10 Mobile).
+- **URL da imagem do ecrã bloqueado (Apenas para ambiente de trabalho)** – especifique o URL para uma imagem em formato PNG, JPG ou JPEG que será utilizada como a imagem de fundo do ecrã bloqueado do Windows. Os utilizadores não o podem alterar.
 -   **Tempo limite do ecrã configurável pelo utilizador (apenas para dispositivos móveis)** – permite que os utilizadores configurem a quantidade de tempo 
 -   **Cortana no ecrã bloqueado (apenas no ambiente de trabalho)** – não permite que o utilizador interaja com a Cortana quando o dispositivo tiver o ecrã bloqueado (apenas para computadores com o Windows 10).
 -   **Notificações de alerta no ecrã bloqueado** – bloqueia a apresentação de mensagens de alerta no ecrã de bloqueio do dispositivo.
@@ -125,17 +174,17 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
     -   **Primeiro URL executado** – especifica o URL que é apresentado na primeira vez que um utilizador executa o Edge (apenas no Windows 10 Mobile).
 -   **Home Pages** – adicione uma lista de sites que pretende utilizar como home pages no browser Edge (apenas no ambiente de trabalho).
 -   **Alterações à página inicial** – permite que os utilizadores alterem as páginas iniciais apresentadas quando o Edge é aberto. Utilize a definição Home Pages para criar a página, ou lista de páginas, que é apresentada quando o Edge é iniciado.
--   **Bloquear acesso a sinalizadores** – impeça que o utilizador final aceda à página about:flags no Edge, que contém as definições experimentais e de programação.
+-   **Bloquear acesso a Sinalizadores** – impeça que o utilizador final aceda à página about:flags no Edge, que contém as definições experimentais e de programação.
 -   **Endereço IP do anfitrião local WebRtc** – impeça que o endereço IP de localhost dos utilizadores seja apresentado quando realizar chamadas telefónicas através do protocolo RTC da Web.
 -   **Motor de busca predefinido** – especifique o motor de busca predefinido a ser utilizado. Os utilizadores finais podem alterar este valor em qualquer altura.
 -   **Limpar dados de navegação à saída** – limpa o histórico e os dados de navegação quando o utilizador sai do Edge.
 -   **Recolha de dados do Mosaico Dinâmico** – impede o Windows de recolher informações do Mosaico Dinâmico quando um utilizador afixa um site ao menu inicial do Edge.
 
-## <a name="edge-browser-smartscreen"></a>SmartScreen do Browser Edge
+## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
--   **SmartScreen** – ativa ou desativa o SmartScreen, que bloqueia sites fraudulentos.
--   **Ignorar pedido do smart screen** – permita que o utilizador final ignore os avisos do filtro SmartScreen sobre sites potencialmente maliciosos.
--   **Ignorar pedido do smart screen para ficheiros** – permita que o utilizador final ignore os avisos do filtro SmartScreen sobre a transferência de ficheiros potencialmente maliciosos.
+- **SmartScreen para Microsoft Edge** – ative o Edge SmartScreen para aceder ao site e às transferências de ficheiros.
+- **Acesso a site malicioso** – impeça que os utilizadores ignorem os avisos do Filtro do Windows Defender SmartScreen e impeça-os de aceder ao site.
+- **Transferência de ficheiros não verificados** – impeça que os utilizadores ignorem os avisos do Filtro do Windows Defender SmartScreen e impeça-os de transferir ficheiros não verificados.
 
 ## <a name="search"></a>Procura
 - **Pesquisa Segura (apenas para dispositivos móveis)** – controle o modo como a Cortana filtra o conteúdo para adultos nos resultados da pesquisa. Pode selecionar **Rigoroso**, **Moderado** ou permitir que o utilizador final escolha as suas próprias definições.
@@ -182,9 +231,30 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
     -   **Privacidade** – bloqueia o acesso à área de privacidade da aplicação de definições.
     -   **Atualização e Segurança** – bloqueia o acesso à área das atualizações e de segurança da aplicação de definições.
 
-## <a name="kiosk"></a>Modo de Local Público
+## <a name="start"></a>Iniciar,
 
--   **Modo de local público** – identifica o tipo de [modo de local público](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) suportado pela política.  As opções incluem:
+- **Remover aplicações da barra de tarefas** – impeça que o utilizador remova aplicações do menu Iniciar.
+- **Documentos em Iniciar** – oculte ou mostre a pasta Documentos no menu Iniciar do Windows.
+- **Transferências em Iniciar** – oculte ou mostre a pasta Transferências no menu Iniciar do Windows.
+- **Explorador de Ficheiros em Iniciar** – oculte ou mostre a aplicação Explorador de Ficheiros no menu Iniciar do Windows.
+- **Grupo Doméstico em Iniciar** – oculte ou mostre a pasta Grupo Doméstico no menu Iniciar do Windows.
+- **Música em Iniciar** – oculte ou mostre a pasta Música no menu Iniciar do Windows.
+- **Rede em Iniciar** – oculte ou mostre a pasta Rede no menu Iniciar do Windows.
+- **Pasta Pessoal em Iniciar** – oculte ou mostre a pasta Pessoal no menu Iniciar do Windows.
+- **Imagens em Iniciar** – oculte ou mostre a pasta das imagens no menu Iniciar do Windows.
+- **Definições em Iniciar** – oculte ou mostre a aplicação Definições no menu Iniciar do Windows.
+- **Vídeos em Iniciar** – oculte ou mostre a pasta dos vídeos no menu Iniciar do Windows.
+
+## <a name="display"></a>Apresentar
+
+- **Ativar o dimensionamento da GDI para aplicações**
+- **Desativar o dimensionamento da GDI para aplicações**
+
+  O Dimensionamento PPP da GDI permite que as aplicações sem deteção de PPP passem a ter deteção de PPP. Especifique as aplicações legadas que têm o Dimensionamento PPP da GDI ativado. Com Dimensionamento PPP da GDI configurado para ser ativado e desativado numa aplicação, o dimensionamento é desativado para a aplicação.
+
+## <a name="kiosk-preview"></a>Modo de local público (Pré-visualização)
+
+-   **Modo de local público** – identifica o tipo de [modo de local público](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) suportado pela política. As opções incluem:
 
       - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
       - **Local público de aplicação única** – o perfil ativa o dispositivo como um local público de uma única aplicação.
@@ -192,15 +262,15 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
     Os locais públicos de uma única aplicação exigem as seguintes definições:
 
-      - **Conta de utilizador** – especifica a conta de utilizador local (no dispositivo) ou o início de sessão de conta do Azure AD associado à aplicação de local público.  Para contas associadas a domínios do Azure AD, especifique a conta com o formato `domain\\username@tenant.org`.
+      - **Conta de utilizador** – especifica a conta de utilizador local (no dispositivo) ou o início de sessão de conta do Azure AD associado à aplicação de local público. Para contas associadas a domínios do Azure AD, especifique a conta com o formato `domain\\username@tenant.org`.
 
          Para dispositivos em ambientes públicos, utilize contas com privilégios mínimos para impedir a atividade autorizada.  
 
-      - **ID de modelo do utilizador da aplicação (AUMID)** – especifica o AUMID da aplicação de local público.  Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **ID de modelo do utilizador da aplicação (AUMID)** – especifica o AUMID da aplicação de local público. Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Os locais públicos de várias aplicações exigem uma configuração de local público.  Utilize o botão **Adicionar** para criar uma configuração de local público ou selecionar uma configuração existente.
+    Os locais públicos de várias aplicações exigem uma configuração de modo de local público. Utilize o botão **Adicionar** para criar uma configuração de local público ou selecionar uma configuração existente.
 
-    As configurações de local público de várias aplicações incluem as seguintes definições:
+    As configurações de modo de local público de várias aplicações incluem as seguintes definições:
 
     - **Nome da configuração de local público** – um nome amigável utilizado para identificar uma determinada configuração.
 
@@ -208,9 +278,9 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
         - **Tipo de Aplicação**, que especifica o tipo da aplicação de local público.  Os valores suportados incluem:   
 
-            - **Aplicação Win32** – uma aplicação de ambiente de trabalho tradicional.  (Irá precisar do nome do caminho absoluto do ficheiro executável, relativamente ao dispositivo.)
+            - **Aplicação Win32** – uma aplicação de ambiente de trabalho tradicional. (Precisará do nome do caminho completamente qualificado do ficheiro executável, relativamente ao dispositivo.)
 
-            - **Aplicação UWP** – uma Aplicação universal do Windows.  Irá precisar do [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Aplicação UWP** – uma Aplicação universal do Windows. Precisará do [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
         - **Identificador da Aplicação** – especifica o nome do caminho absoluto do ficheiro executável (aplicações Win32) ou o [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações UWP).
 
@@ -218,9 +288,9 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
     - **Esquema do menu Iniciar** – especifica um ficheiro XML que descreve como as aplicações [são apresentadas no menu Iniciar](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Utilizadores atribuídos** – especifica uma ou mais contas de utilizador associadas à configuração de local público.  A conta para o dispositivo pode ser local ou um início de sessão de conta do Azure AD associado à aplicação de local público.  Especifique contas associadas a domínios com o formato `domain\\username@tenant.org`.
+    - **Utilizadores atribuídos** – especifica uma ou mais contas de utilizador associadas à configuração de local público. A conta para o dispositivo pode ser local ou um início de sessão de conta do Azure AD associado à aplicação de local público. Especifique contas associadas a domínios com o formato `domain\\username@tenant.org`.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Antivírus do Windows Defender
 
 -   **Monitorização em tempo real** – Permite a análise em tempo real de software maligno, spyware e outro software indesejável.
 -   **Monitorização de comportamento** – Permite que o Defender verifique a existência de determinados padrões conhecidos de atividade suspeita nos dispositivos.
@@ -243,7 +313,7 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 -   **Avisar os utilizadores antes da submissão de exemplo** – controla se ficheiros potencialmente maliciosos que possam necessitar de análise adicional são automaticamente enviados à Microsoft.
 -   **Hora a realizar uma análise rápida diária** – Permite agendar uma análise rápida que ocorre diariamente à hora que selecionar.
 -   **Tipo de análise do sistema a realizar** – permite-lhe especificar o nível de análise a realizar quando agendar uma análise do sistema.
--   **Detetar aplicações potencialmente indesejadas**  – selecione o nível de proteção quando o Windows detetar aplicações potencialmente indesejadas de entre as opções:
+-   **Detetar aplicações potencialmente indesejadas** – selecione o nível de proteção quando o Windows detetar aplicações potencialmente indesejadas de entre as opções:
         - **Bloquear**
         - **Auditar** Para obter mais informações sobre aplicações potencialmente indesejadas, veja [este tópico](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 -   **Ações sobre ameaças de software maligno detetadas** – ative esta opção para especificar as ações que o Defender deve executar para cada nível de ameaça que detetar (Baixo, Moderado, Alto e Grave). As ações que pode realizar são:
@@ -256,7 +326,7 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 
 
 
-## <a name="defender-exclusions"></a>Exclusões do Defender
+### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Antivírus do Windows Defender
 
 -   **Ficheiros e pastas a excluir de análises e da proteção em tempo real** – Adiciona um ou mais ficheiros e pastas, como **C:\Path** ou **%ProgramFiles%\Path\filename.exe**, à lista de exclusões. Estes ficheiros e pastas não são incluídos em análises em tempo real ou agendadas.
 -   **Extensões de ficheiros a excluir de análises e da proteção em tempo real** – Adicione uma ou mais extensões de ficheiro, como **jpg** ou **txt**, à lista de exclusões. Os ficheiros com estas extensões não são incluídos em análises em tempo real ou agendadas.
@@ -272,7 +342,7 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
     -   **Endereço** – introduza o nome ou o endereço IP do servidor proxy.
     -   **Número de porta** – introduza o número de porta do servidor proxy.
     -   **Exceções de proxy** – introduza os URLs que não podem utilizar o servidor proxy. Utilize um ponto e vírgula para separar cada item.
-    -   **Ignorar servidor proxy para endereço local** – se não quiser utilizar o servidor proxy para endereços locais na sua intranet, ative esta opção.
+    -   **Ignorar servidor proxy para endereço local** – se não quiser utilizar o servidor proxy para endereços locais na intranet, ative esta opção.
 
 
 ## <a name="windows-spotlight"></a>Destaque do Windows
@@ -294,16 +364,41 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 - **Projeção para este PC** – impede outros dispositivos de detetarem este PC para projeção.
 - **Exigir PIN para emparelhamento** – exija um PIN ao estabelecer ligação a um dispositivo de projeção.
 
-## <a name="start"></a>Iniciar,
+## <a name="cloud-printer"></a>Impressora em Cloud
 
-- **Remover aplicações da barra de tarefas** – impeça que o utilizador remova aplicações do menu Iniciar.
-- **Documentos em Iniciar** – oculte ou mostre a pasta Documentos no menu Iniciar do Windows.
-- **Transferências em Iniciar** – oculte ou mostre a pasta Transferências no menu Iniciar do Windows.
-- **Explorador de Ficheiros em Iniciar** – oculte ou mostre a aplicação Explorador de Ficheiros no menu Iniciar do Windows.
-- **Grupo Doméstico em Iniciar** – oculte ou mostre a pasta Grupo Doméstico no menu Iniciar do Windows.
-- **Música em Iniciar** – oculte ou mostre a pasta Música no menu Iniciar do Windows.
-- **Rede em Iniciar** – oculte ou mostre a pasta Rede no menu Iniciar do Windows.
-- **Pasta Pessoal em Iniciar** – oculte ou mostre a pasta Pessoal no menu Iniciar do Windows.
-- **Imagens em Iniciar** – oculte ou mostre a pasta das imagens no menu Iniciar do Windows.
-- **Definições em Iniciar** – oculte ou mostre a aplicação Definições no menu Iniciar do Windows.
-- **Vídeos em Iniciar** – oculte ou mostre a pasta dos vídeos no menu Iniciar do Windows.
+- **URL de deteção da impressora** – o ponto final para detetar impressoras em cloud.
+- **URL da autoridade de acesso da impressora** – ponto final de autenticação para aquisição de tokens OAuth.
+- **GUID da aplicação do cliente nativo do Azure** – um GUID de uma aplicação de cliente autorizou a obtenção de tokens OAuth a partir de OAuthAuthority.
+- **URI do recurso do serviço de impressão** – o URI do recurso OAuth para o serviço de impressão como configurado no portal do Azure.
+- **Impressoras máximas a consultar (apenas Dispositivos móveis)** – número máximo de impressoras que devem ser consultadas a partir de um ponto final de deteção.
+- **URI do recurso do serviço de deteção de impressão** – o URI do recurso OAuth para o serviço de deteção de impressão como configurado no portal do Azure.
+
+## <a name="reporting-and-telemetry"></a>Relatórios e Telemetria
+
+- **Partilhar dados de utilização** – selecione o nível da submissão dos dados de diagnóstico.
+- **Servidor proxy da telemetria**
+
+  Especifique o nome de domínio completamente qualificado (FQDN) ou o endereço IP de um servidor proxy para reencaminhar pedidos de Experiências de Utilizador e Telemetria Interligadas, através de uma ligação SSL (Secure Sockets Layer). O formato para esta definição é *servidor*:*porta*. Se o proxy com nome falhar, ou se não existir nenhum proxy especificado quando esta política estiver ativada, os dados das Experiências de Utilizador e Telemetria Interligadas não serão transmitidos e permanecerão no dispositivo local.
+
+   Formatos de exemplo:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>Serviço de Mensagens
+
+- **Sincronização de mensagens (apenas dispositivos móveis)** – desative as Mensagens em Qualquer Lugar e as cópias de segurança e o restauro das mensagens de texto.
+- **MMS (apenas dispositivos móveis)** – desative a funcionalidade de envio/receção de MMS no dispositivo.
+- **RCS (apenas dispositivos móveis)** – desative a funcionalidade de envio/receção de RCS (Rich Communication Services) no dispositivo.
+
+
+
+
+
+
+
+
+
+
+
+

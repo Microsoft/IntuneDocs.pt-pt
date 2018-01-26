@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: 
+ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 64073cb53478b1bf2373426426e0a5d414ca40c4
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Utilizar o Windows Hello para Empresas
 
@@ -52,7 +52,7 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
 1.  No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2.  No painel Intune, selecione **Inscrever dispositivos** e, em seguida, selecione **Gerir** > **Windows Hello para Empresas**.
+2.  No painel Intune, selecione **Proteção de Ponto Final** e, em seguida, selecione **Gerir** > **Windows Hello para Empresas**.
 
 3.  No painel que se abre, selecione as definições **Predefinição**.
 
@@ -76,7 +76,7 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
  - **Pedir letras minúsculas no PIN**/**Pedir letras maiúsculas no PIN**/**Pedir carateres especiais no PIN**. Pode impor um PIN mais forte ao exigir a utilização de letras maiúsculas, letras minúsculas e carateres especiais no PIN. Escolha entre:
 
      - **Permitido**. Os utilizadores podem utilizar o tipo de caráter no PIN, mas não é obrigatório.
-    
+
      - **Necessário**. Os utilizadores têm de incluir, pelo menos, um dos tipos de caráter no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
 
      - **Não permitido** (predefinição). Os utilizadores não devem utilizar estes tipos de carateres no seu PIN. (Este também será o comportamento se a definição não estiver configurada.)<br>Os carateres especiais incluem: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**

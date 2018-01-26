@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurar e gerir certificados SCEP com o Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +87,7 @@ Antes de poder configurar perfis de certificado, tem de concluir as seguintes ta
 Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Especifica esta conta quando configura os modelos na AC emissora antes de instalar e configurar o NDES. Verifique se o utilizador tem os direitos predefinidos para **Iniciar Sessão Localmente**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2 – Configurar modelos de certificado na autoridade de certificação
-Nesta tarefa irá:
+Nesta tarefa, irá:
 
 -   Configurar um modelo de certificados para o NDES
 
@@ -194,7 +193,7 @@ Nesta tarefa irá:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Passo 4 – Configurar o NDES para ser utilizado com o Intune
-Nesta tarefa irá:
+Nesta tarefa, irá:
 
 -   Configurar o NDES para ser utilizado com a AC emissora
 
@@ -297,7 +296,7 @@ Nesta tarefa irá:
 4. Reinicie o servidor do NDES. O servidor está agora pronto para suportar o Certificate Connector.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Passo 5 – Ativar, instalar e configurar o Intune Certificate Connector
-Nesta tarefa irá:
+Nesta tarefa, irá:
 
 - Ativar o suporte para o NDES no Intune.
 - Transferir, instalar e configurar o Certificate Connector num servidor no seu ambiente. Para suportar a elevada disponibilidade, pode instalar múltiplos Certificate Connectors em diferentes servidores.
@@ -329,6 +328,9 @@ Nesta tarefa irá:
 5.  Na IU do **Certificate Connector** :
 
     Clique em **Iniciar Sessão** e introduza as suas credenciais de administrador do serviço Intune ou as credenciais de administrador inquilino com a permissão de administração global.
+
+    > [!IMPORTANT]
+    > A conta de utilizador tem de ser atribuída a uma licença válida do Intune. Se a conta de utilizador não tiver uma licença válida do Intune, o ficheiro NDESConnectorUI.exe irá falhar.
 
     Se a sua organização utilizar um servidor proxy e o proxy for necessário para o servidor do NDES aceder à Internet, clique em **Utilizar servidor proxy** e, em seguida, forneça o nome do servidor proxy, porta e credenciais de conta para ligar.
 

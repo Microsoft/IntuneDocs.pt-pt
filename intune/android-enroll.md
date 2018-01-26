@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 632a5b2a5f6f5188ef034bdcff927af6a7fe1a59
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
@@ -58,7 +58,7 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
    ![Captura de ecrã que mostra uma ligação para configurar o enlace do Android for Work](./media/android-work-bind.png)
 
    b. **Iniciar sessão no Google**<br>
-   Na página de início de sessão da Google, introduza a conta Google que será associada a todas as tarefas de gestão do Android for Work deste inquilino. Esta é a conta Google que os administradores de TI da sua empresa partilham para gerir e publicar aplicações na consola Play for Work.
+   Na página de início de sessão da Google, introduza a conta Google que será associada a todas as tarefas de gestão do Android for Work deste inquilino. Esta é a conta Google que os administradores de TI da sua empresa partilham para gerir e publicar aplicações na consola Play for Work. Pode utilizar uma conta Google existente ou criar uma nova.  A conta que escolher não pode estar associada a um domínio do G Suite.
 
    c. **Fornecer detalhes da organização**<br>
    Na opção **Nome da organização**, forneça o nome da sua empresa. A opção **Fornecedor de Gestão de mobilidade de empresas (EMM)** deverá apresentar o valor **Microsoft Intune**. Concorde com o contrato Android for Work e, em seguida, selecione **Confirmar**. O seu pedido será processado.
@@ -75,7 +75,7 @@ Tem de aprovar a aplicação Portal da Empresa para Android na Google Play Store
 
 Siga estes passos para aprovar o Portal da Empresa do Intune:
 
-1.  Transfira a aplicação Portal da Empresa na [Google Play Store gerida](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Navegue até à aplicação Portal da Empresa na [Google Play Store gerida](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Inicie sessão na Google Play Store gerida com a mesma conta Google que utilizou para configurar o enlace do Android for Work.
 3.  Clique em **Aprovar**.  Esta ação abrirá uma nova caixa de diálogo.
 4.  Reveja as permissões nesta caixa de diálogo e, em seguida, clique em **Aprovar**. Terá de dar estas permissões para permitir que a aplicação Portal da Empresa faça a gestão do perfil de trabalho no dispositivo.

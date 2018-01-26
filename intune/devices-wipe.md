@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
@@ -40,7 +40,7 @@ A **Reposição de fábrica** restaura as predefinições do dispositivo, remove
 3. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
 4. Selecione o nome do dispositivo em que pretende efetuar a reposição de fábrica.
 5. No painel que apresenta o nome do dispositivo, selecione **Reposição de fábrica**
-6. Para a versão 1709 ou superior do Windows 10, existe a opção adicional para "Reter estado de inscrição e conta de utilizador". 
+6. Para a versão 1709 ou superior do Windows 10, existe a opção adicional para “Reter estado de inscrição e conta de utilizador”. 
     
     |Retido através de uma reposição de fábrica|Não retido|
     | -------------|------------|
@@ -96,6 +96,18 @@ O comando **remover dados da empresa** remove os dados de aplicações geridas (
 ### <a name="android-for-work"></a>Android for Work
 
 Uma remoção dos dados da empresa num dispositivo Android for Work remove todos os dados, aplicações e definições no perfil de trabalho nesse dispositivo. Esta ação extingue o dispositivo da gestão com o Intune. A reposição de fábrica não é suportada para Android for Work.
+
+
+### <a name="macos"></a>macOS
+
+|Tipo de dados|macOS|
+|-------------|-------|
+|Definições|As configurações que foram definidas pela política do Intune já não são aplicadas e os utilizadores podem alterar as definições.|
+|Definições de perfis de Wi-Fi e da VPN|Removidos.|
+|Definições de perfil de certificado|Os certificados que foram implementados através da MDM são removidos e revogados.|
+|Agente de Gestão|O perfil de gestão é removido.|
+|Outlook|Se o acesso condicional estiver ativado, o dispositivo não receberá correio novo.|
+|Anulação da associação ao Azure Active Directory (AAD)|O registo do Azure AD é removido.|
 
 ### <a name="windows"></a>Windows
 

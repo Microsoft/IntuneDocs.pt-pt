@@ -1,5 +1,5 @@
 ---
-title: "Utilizador – Armazém de Dados do Intune | Microsoft Docs"
+title: "Utilizador – Armazém de Dados do Intune | Documentos da Microsoft"
 description: "Tópico de referência para a categoria User das coleções de entidades na API do Armazém de Dados do Intune."
 keywords: "Armazém de Dados do Intune"
 author: erikre
@@ -11,22 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 917c9585ffe17f9d090c519f716d284aa1b932b8
-ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
+ms.openlocfilehash: 1f213cb735ab4dcad20c97b5924fef98774192ce
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de utilizador
 
 A categoria **Utilizador** contém a entidade **Utilizador** que define as propriedades do utilizador no modelo de dados.
 
-## <a name="user"></a>Utilizador
+## <a name="user"></a>Função do
 
-A entidade **Utilizador** lista todos os utilizadores do Azure Active Directory (Azure AD) com licenças atribuídas na sua empresa.
+A entidade **User** lista todos os utilizadores do Azure Active Directory (Azure AD) com licenças atribuídas na sua empresa.
 
 A coleção de entidades **Utilizador** contém dados do utilizador. Estes registos incluem estados do utilizador durante o período de recolha dos dados, mesmo que o utilizador tenha sido removido. Por exemplo, um utilizador pode ser adicionado ao Intune e, em seguida, removido no decorrer do mês anterior. Apesar de este utilizador não estar presente no momento do relatório, o utilizador e o estado estão presentes nos dados do mês anterior. Pode criar um relatório que mostrará a duração da presença no histórico do utilizador nos seus dados.
 
@@ -46,4 +46,4 @@ A coleção de entidades **Utilizador** contém dados do utilizador. Estes regis
 
 ## <a name="next-steps"></a>Próximos passos
  - Pode utilizar a coleção de entidades **Utilizador Atual** para limitar os dados do utilizador aos utilizadores que estão atualmente ativos. Para obter mais informações, veja [Referência para a entidade do utilizador atual](reports-ref-current-user.md).
- - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).
+ - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [User lifetime representation in the Intune Data Warehouse (Representação da duração do utilizador no Armazém de Dados do Intune)](reports-ref-user-timeline.md).

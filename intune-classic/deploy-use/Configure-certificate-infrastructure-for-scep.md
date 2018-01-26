@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar a infraestrutura de certificados para SCEP
 
@@ -276,7 +276,7 @@ Nesta tarefa irá:
 
     **Utilização de Chave Avançada** – tem de incluir **Autenticação de Cliente**.
 
-    **Nome do Requerente** – tem de ser igual ao nome DNS do servidor no qual está a instalar o certificado (o Servidor do NDES).
+    **Nome do Requerente** - tem de ser igual ao nome DNS do servidor no qual está a instalar o certificado (o Servidor do NDES).
 
 ##### <a name="to-configure-iis-request-filtering"></a>Para configurar a Filtragem de Pedidos no IIS
 
@@ -339,6 +339,9 @@ Transferir, instalar e configurar o Certificate Connector no Servidor do NDES.
 
     Clique em **Iniciar Sessão** e introduza as suas credenciais de administrador do serviço Intune ou as credenciais de administrador inquilino com a permissão de administração global.
 
+    > [!NOTE]
+    > Se for apresentado o erro **O nome de utilizador não é reconhecido** ao iniciar sessão no NDESConnectorUI.exe, normalmente, isto significa que utilizou uma conta que não tem uma licença do Intune válida. Atribua à conta uma licença do Intune ou do EMS e repita a operação.
+
     Se a sua organização utilizar um servidor proxy e o proxy for necessário para o servidor do NDES aceder à Internet, clique em **Utilizar servidor proxy** e, em seguida, forneça o nome do servidor proxy, porta e credenciais de conta para ligar.
 
     Selecione o separador **Avançadas** e, em seguida, forneça credenciais para uma conta que tenha permissão para **Emitir e Gerir Certificados** na sua Autoridade de Certificados e, em seguida, clique em **Aplicar**.
@@ -351,5 +354,5 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
 **https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Está agora pronto para configurar perfis de certificado, conforme descrito em [Configure certificate profiles (Configurar perfis de certificado)](Configure-Intune-certificate-profiles.md).
