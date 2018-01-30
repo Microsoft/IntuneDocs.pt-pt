@@ -4,21 +4,22 @@ description: Saiba como instalar o Zimperium zIPS no seu dispositivo iOS.
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3fcbd09f-9b96-40fb-96fe-9e5173dc6179
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 60c0c4b05899669a535e868992d15dcd36280333
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 060a50adaf9d79df1191dbe7f704c8d4a6590966
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>Instalar o Zimperium zIPS no seu dispositivo iOS
 

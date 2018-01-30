@@ -4,7 +4,7 @@ description: "Este artigo ajuda-o a determinar os requisitos de cenários de cas
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de casos de utilização
 
@@ -30,11 +30,11 @@ Também poderá ter grupos organizacionais para o cenário de caso de utilizaç�
 
 Veja alguns exemplos de requisitos de casos de utilização de uma organização que apresentam diferentes conjuntos de requisitos para cada cenário de casos de utilização e casos de subutilização, grupo organizacional e plataforma de dispositivo móvel. Também pode utilizar a tabela seguinte para introduzir os requisitos de caso de utilização da sua organização:
 
-| **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** | **Requirements** |
+| **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
 |:---:|:---:|:---:|:---:|:---:|
 | Empresarial | Técnico de informação | RH, Finanças | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                          
 | Empresarial | Executivos | RH, Finanças | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
-| Empresarial | Kiosk | Revenda | Android | Definições do dispositivo, perfis e aplicações |
+| Empresarial | Modo de Local Público | Revenda | Android | Definições do dispositivo, perfis e aplicações |
 | BYOD | Técnico de informação | Marketing, Vendas | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
 | BYOD | Executivos | Marketing, Vendas | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |
 
@@ -62,6 +62,6 @@ Veja mais alguns exemplos que podem ser utilizados na coluna “Requisitos”:
     - Office 365 com políticas de proteção de aplicações
     - Linha de negócio (LOB) com políticas de proteção de aplicações
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A secção seguinte fornece orientações relativas a [como pode desenvolver um plano de implementação do Intune](planning-guide-rollout-plan.md).

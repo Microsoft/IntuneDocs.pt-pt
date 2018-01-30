@@ -5,7 +5,7 @@ description: "Saiba que definições do Intune pode utilizar para controlar as d
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8393699a06def8f01c9f70561bb1894bb7cba04e
-ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
+ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
 
@@ -128,7 +128,7 @@ Estas definições aplicam-se especificamente a unidades de dados do sistema ope
     - **PIN de arranque do TPM compatível** – configure se utilizar um PIN de arranque com o chip do TPM é permitido, não permitido ou exigido.
     - **Chave de arranque do TPM compatível** – configure se utilizar uma chave de arranque com o chip do TPM é permitido, não permitido ou exigido.
     - **Chave e PIN de arranque do TPM compatível** – configure se utilizar uma chave e PIN de arranque com o chip do TPM é permitido, não permitido ou exigido.
-- **Comprimento Mínimo do PIN** – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
+- **Comprimento Mínimo do PIN**  – ative esta definição para configurar um comprimento mínimo para o PIN de arranque do TPM.
     - **Carateres mínimos** – introduza o número de carateres necessários para o PIN de arranque de **4**-**20**.
 - **Recuperação da unidade de SO** – ative esta definição para controlar a forma como as unidades de sistema operativo protegidas pelo BitLocker são recuperadas quando as informações de arranque necessárias não estão disponíveis.
     - **Agente de recuperação de dados baseada em certificados** – ative esta definição se quiser que os agentes de recuperação de dados possam ser utilizados com as unidades de sistema operativo protegidas pelo BitLocker.
@@ -162,7 +162,7 @@ Estas definições aplicam-se especificamente a unidades de dados do sistema ope
         - **Apenas palavras-passe de recuperação de cópia de segurança**
     - **Armazenar as informações de recuperação no AD DS antes de ativar o BitLocker** – ative esta definição para impedir os utilizadores de ativarem o BitLocker, a menos que o dispositivo esteja associado a um domínio e as informações de recuperação do BitLocker tenham sido armazenadas com êxito no Active Directory.
 
-### <a name="bitlocker-removable-data-drive-settings"></a>Definições de unidades de dados amovíveis do BitLocker
+### <a name="bitlocker-removable-data-drive-settings"></a>Definições de unidades de dados removíveis do BitLocker
 
 - **Acesso de escrita para a unidade de dados amovível não protegida pelo BitLocker** – especifique se a encriptação do BitLocker é necessária para as unidades de armazenamento amovíveis.
   - **Acesso de escrita para dispositivos configurados noutra organização** – especifique se é possível escrever nas unidades de dados amovíveis que pertencem a outra organização.

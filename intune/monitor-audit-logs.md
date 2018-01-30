@@ -3,18 +3,18 @@ title: Registos de auditoria para atividades do Intune
 description: Saiba como rever os registos de auditoria que registam atividades do Intune
 keywords: 
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 30067f60163a644f4347c51c249c25fb3428f8ba
-ms.sourcegitcommit: ef8610aa2ea0acdc40bad948ed7ba3a3a4464453
+ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Registos de auditoria para atividades do Intune
 Os registos de auditoria proporcionam um registo das atividades que geram uma alteração no Microsoft Intune. As tarefas remotas ou as ações Criar, Atualizar (editar), Eliminar e Atribuir geram eventos de auditoria que poderá rever. Pode rever os registos de auditoria da maioria das cargas de trabalho do Intune. 

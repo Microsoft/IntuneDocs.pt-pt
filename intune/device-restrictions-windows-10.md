@@ -5,7 +5,7 @@ description: "Saiba quais são as definições do Intune que pode utilizar para 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -313,7 +313,7 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 -   **Avisar os utilizadores antes da submissão de exemplo** – controla se ficheiros potencialmente maliciosos que possam necessitar de análise adicional são automaticamente enviados à Microsoft.
 -   **Hora a realizar uma análise rápida diária** – Permite agendar uma análise rápida que ocorre diariamente à hora que selecionar.
 -   **Tipo de análise do sistema a realizar** – permite-lhe especificar o nível de análise a realizar quando agendar uma análise do sistema.
--   **Detetar aplicações potencialmente indesejadas** – selecione o nível de proteção quando o Windows detetar aplicações potencialmente indesejadas de entre as opções:
+-   **Detetar aplicações potencialmente indesejadas**  – selecione o nível de proteção quando o Windows detetar aplicações potencialmente indesejadas de entre as opções:
         - **Bloquear**
         - **Auditar** Para obter mais informações sobre aplicações potencialmente indesejadas, veja [este tópico](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 -   **Ações sobre ameaças de software maligno detetadas** – ative esta opção para especificar as ações que o Defender deve executar para cada nível de ameaça que detetar (Baixo, Moderado, Alto e Grave). As ações que pode realizar são:

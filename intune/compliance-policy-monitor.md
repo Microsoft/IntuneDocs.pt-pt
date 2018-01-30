@@ -5,7 +5,7 @@ description: "Saiba como monitorizar as políticas de conformidade do dispositiv
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4b293ff41af58d4ab41a8477219939b13ffe361c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -91,11 +91,11 @@ Também pode clicar nos diferentes estados de conformidade no gráfico de Confor
 
 Se clicar no botão **Filtrar**, é apresentada a lista de filtros com as seguintes opções:
 
--   Modelo
+-   Model
 
     -   Cadeia da caixa de texto a aceitar a pesquisa gratuita
 <br></br>
--   Plataforma
+-   Platform
 
     -   Android
 
@@ -117,7 +117,7 @@ Se clicar no botão **Filtrar**, é apresentada a lista de filtros com as seguin
 
     -   Desconhecido
 
-    -   Erro
+    -   Error
 
 Se clicar no botão **Atualizar**, a lista de opções deve fechar-se e os resultados devem ser atualizados de acordo com os critérios do filtro selecionado.
 

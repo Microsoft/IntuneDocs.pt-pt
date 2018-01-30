@@ -4,23 +4,24 @@ description: "Descreve o site do Portal da Empresa e fornece ligações para pas
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 824c8d97195459289bf5944c8490f1363ece3c93
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-intune-company-portal-website"></a>Utilizar o Site do Portal da Empresa do Intune
 O [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) é uma página Web que os utilizadores podem utilizar para gerir computadores e dispositivos que tenham inscrito no Intune.

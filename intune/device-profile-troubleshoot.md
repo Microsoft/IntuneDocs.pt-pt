@@ -5,7 +5,7 @@ description: "Se estiver com dificuldades, utilize este tópico para o ajudar a 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bc5ad6e0467fe8a8c98c1ad2d71b967c18b8233
-ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
+ms.openlocfilehash: 6424be562401c672966c0f7f3fbe145c19182299
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Resolver problemas de perfis de dispositivos no Microsoft Intune
 
@@ -43,7 +43,7 @@ Existem algumas melhores práticas adicionais que pode seguir:
 - Implemente em grupos maiores e, por fim, em todos os utilizadores esperados na sua organização. 
 
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>Quanto tempo é necessário para que os dispositivos móveis obtenham a política ou as aplicações após a atribuição?
-Quando uma política ou aplicação é atribuída, o Intune começa imediatamente a tentar notificar o dispositivo que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de cinco minutos.
+Quando uma política ou aplicação é atribuída, o Intune começa imediatamente a tentar notificar o dispositivo de que deverá dar entrada no serviço do Intune. Geralmente, o processo demora menos de cinco minutos.
 
 Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, o Intune faz mais três tentativas. Se o dispositivo estiver offline (por exemplo, se estiver desligado ou se não estiver ligado a uma rede), pode não receber as notificações. Neste caso, o dispositivo obtém a política na próxima entrada agendada com o serviço do Intune, da seguinte forma:
 
@@ -64,7 +64,7 @@ Os utilizadores também podem abrir a aplicação Portal da Empresa e sincroniza
 Para os dispositivos sem afinidade do utilizador, a frequência de sincronização imediatamente a seguir à inscrição pode variar de horas para um dia ou mais. O Intune envia pedidos em vários intervalos para um dispositivo dar entrada no serviço. No entanto, é o dispositivo que tem de dar entrada. Após a inscrição inicial, consoante o tipo de inscrição do dispositivo e as políticas e perfis atribuídos a um dispositivo, não é possível prever o tempo que um dispositivo demora a concluir a entrada. Contudo, assim que o dispositivo estiver inscrito e todas as políticas iniciais tiverem sido aplicadas, o dispositivo deve procurar novas políticas a cada seis horas, aproximadamente.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
-Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que o façam ou durante as entradas agendadas regulares. Quando direciona uma ação para um dispositivo ou utilizador, tal como uma eliminação, um bloqueio, uma reposição de código de acesso, uma atribuição de aplicações, uma atribuição de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma atribuição de políticas, o Intune começa imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço do Intune para receber estas atualizações.
+Os dispositivos dão entrada no Intune quando recebem uma notificação a solicitar-lhes que deem entrada ou durante as entradas agendada regulares. Quando direciona uma ação para um dispositivo ou utilizador, tal como uma eliminação, um bloqueio, uma reposição de código de acesso, uma atribuição de aplicações, uma atribuição de perfil (Wi-Fi, VPN, e-mail, etc.) ou uma atribuição de políticas, o Intune começa imediatamente a tentar notificar o dispositivo de que deve dar entrada no serviço do Intune para receber estas atualizações.
 
 Outras alterações, como a revisão das informações de contacto no portal da empresa, não dão origem a uma notificação imediata para os dispositivos.
 
