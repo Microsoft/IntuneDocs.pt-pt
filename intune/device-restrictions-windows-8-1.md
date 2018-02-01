@@ -5,7 +5,7 @@ description: "Saiba quais são as definições do Intune que pode utilizar para 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9b31f9d4e784358d5672b0b8de68d34532b72c8
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 8.1 e posterior no Microsoft Intune
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/12/2017
 -   **Comprimento mínimo da palavra-passe** – Configura o comprimento mínimo obrigatório (em carateres) da palavra-passe.
 -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Elimina os dados do dispositivo se as tentativas de início de sessão falharem este número de vezes.
 -   **Máximo de minutos de inatividade até o ecrã bloquear** – Especifica o número de minutos durante o qual um dispositivo tem de estar inativo antes de ser obrigatória uma palavra-passe para o desbloquear.
--   **Expiração de palavra-passe (dias)** – Especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
+-   **Expiração de palavra-passe (dias)** – especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
 -   **Impedir a reutilização de palavras-passe anteriores** – Especifica se o utilizador pode utilizar as palavras-passe utilizadas anteriormente.
 -   **PIN e palavra-passe por imagem** – Permite a utilização de um PIN e de uma palavra-passe por imagem. Uma palavra-passe por imagem permite ao utilizador iniciar sessão com gestos numa imagem. Um PIN permite aos utilizadores iniciar sessão rapidamente com um código de quatro dígitos.
 -   **Encriptação** – Requer que os ficheiros no dispositivo estejam encriptados.<br>Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](https://support.microsoft.com/kb/3013816) em cada dispositivo.

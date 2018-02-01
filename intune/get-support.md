@@ -5,7 +5,7 @@ description: "O suporte está disponível tanto online como por telefone para su
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc45e57a3ef9e5c043073ee67a961832294eef48
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -65,7 +65,7 @@ Enquanto administrador de TI, pode enviar um pedido de suporte a partir do porta
     - **Hora**
     - Dados complementares
 
-    Selecione **Seguinte**.
+    Selecione **Next**.
 5. Forneça **Informações de contacto** para este pedido de suporte. O suporte da Microsoft utiliza estas informações para entrar em contacto consigo.
 6. Selecione **Criar** para enviar o seu pedido de suporte.
 

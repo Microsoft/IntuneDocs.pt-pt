@@ -5,7 +5,7 @@ description: "Assim que tiver criado um perfil de dispositivo do Intune, utilize
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ba1438fe9227e0c7933fda7e9a2b60c8d4a5dca4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>Como atribuir perfis de dispositivo do Microsoft Intune
 
@@ -55,5 +55,5 @@ Se incluir o grupo **Todos os Dispositivos** e excluir **Todos os Utilizadores**
 >As exclusões não estão atualmente disponíveis para políticas de conformidade ou atribuições da aplicação. Para excluir membros de uma atribuição, pode utilizar os objetivos de atribuição Disponível e Não aplicável. Por exemplo, pode atribuir uma aplicação ao grupo **Todos os utilizadores da empresa** com o objetivo **Disponível** e ao grupo **Equipa de Direção** com o objetivo **Não aplicável**. A aplicação é atribuída a todos os utilizadores, *exceto* aos utilizadores no grupo **Equipa de Direção**. Se atribuir a aplicação ao grupo **Todos os utilizadores da empresa** com o objetivo **Necessário**, os utilizadores no grupo **Equipa de Direção** não serão excluídos.
  
     
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Veja [Como monitorizar perfis de dispositivos](device-profile-monitor.md) para obter informações sobre como controlar as atribuições de perfis de dispositivos.

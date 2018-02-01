@@ -3,7 +3,7 @@ title: "Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Gra
 description: "Descreve os passos necessários para as aplicações utilizarem o Azure AD para acederem às APIs do Intune no Microsoft Graph."
 keywords: "funções de permissão da graph api do intune para c# powershell"
 author: vhorne
-manager: angrobe
+manager: dougeby
 ms.author: victorh
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
-ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
+ms.openlocfilehash: 2bef90d3f5c317a0191f31901834c96829eea7e3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
 
-A [API do Microsoft Graph](https://developer.microsoft.com/graph/) suporta agora o Microsoft Intune com APIs específicas e funções de permissão.  A API do Microsoft Graph utiliza o Azure Active Directory (Azure AD) para a autenticação e o controlo de acesso.  
+A [Microsoft Graph API](https://developer.microsoft.com/graph/) suporta agora o Microsoft Intune com APIs específicas e funções de permissão.  A API do Microsoft Graph utiliza o Azure Active Directory (Azure AD) para a autenticação e o controlo de acesso.  
 O acesso às APIs do Intune no Microsoft Graph exige:
 
 - Um ID de aplicação com:
@@ -79,7 +79,7 @@ Para registar uma aplicação para utilizar a API do Microsoft Graph:
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
-        Para saber mais, veja [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+        Para saber mais, consulte [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
 5.  No painel da aplicação:
 
@@ -551,7 +551,7 @@ Para tal:
 
 1.  Verifique se a conta de cliente existe no inquilino do Azure AD de destino.
 
-2.  Verifique se a sua conta de inquilino permite que os utilizadores registem aplicações (veja **Configurações do utilizador**).
+2.  Verifique se a sua conta de inquilino permite que os utilizadores registem aplicações (consulte **Configurações do utilizador**).
 
 3.  Estabeleça uma relação entre cada inquilino.  
 
