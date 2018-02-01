@@ -5,7 +5,7 @@ description: "Saiba como remover dados da empresa ou efetuar uma reposição de 
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: f8f004389c8bde2367045019fb04865e1a606914
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
@@ -40,7 +40,7 @@ A **Reposição de fábrica** restaura as predefinições do dispositivo, remove
 3. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
 4. Selecione o nome do dispositivo em que pretende efetuar a reposição de fábrica.
 5. No painel que apresenta o nome do dispositivo, selecione **Reposição de fábrica**
-6. Para a versão 1709 ou superior do Windows 10, existe a opção adicional para “Reter estado de inscrição e conta de utilizador”. 
+6. Para a versão 1709 ou superior do Windows 10, existe a opção adicional para "Reter estado de inscrição e conta de utilizador". 
     
     |Retido através de uma reposição de fábrica|Não retido|
     | -------------|------------|

@@ -4,7 +4,7 @@ description: "Avalie os requisitos técnicos e empresariais antes de migrar para
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 93c17ff0343c4475bbc665ff2418e1e7860894d5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Intune para a gestão de dispositivos móveis (MDM)
 
@@ -72,7 +72,7 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
 <br/><br/>
 -   Podem ser feitas exceções temporárias para determinados requisitos de forma a evitar períodos de inatividade? Ou os dispositivos com acesso cumprem sempre todos os requisitos de segurança?
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Leia estes [casos práticos](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores da indústria diferentes para ver como as organizações avaliaram os respetivos requisitos para a gestão de dispositivos móveis.
 
 Reveja a [configuração básica do Intune](migration-guide-setup.md).

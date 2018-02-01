@@ -5,7 +5,7 @@ description: "Saiba mais sobre a inscrição de dispositivos iOS, Android e Wind
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
-ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
+ms.openlocfilehash: a94703ecc1d7fd464f565855bb9b8dd9ee3c3bfb
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -66,7 +66,7 @@ Os dispositivos pertencentes à empresa (COD) incluem telemóveis, tablets e PCs
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos da Apple
-A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política “over the air” em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
+A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
 
 Saiba mais sobre a inscrição do DEP para iOS:
 

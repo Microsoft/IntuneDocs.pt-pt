@@ -3,7 +3,7 @@ title: "Impedir o acesso não autorizado a dados da empresa"
 description: "Impeça o acesso não autorizado aos dados da sua empresa quando partilhados fora da rede da empresa."
 keywords: Os dados do Azure Information Protection do Office 365 protegem os dados de empresa de rede externa
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>Impedir o acesso não autorizado a dados da empresa 
 
@@ -40,7 +40,7 @@ Conclua o [tutorial de início rápido do Azure Information Protection](https://
 
 Pode partilhar detalhes [sobre como e quando proteger documentos e e-mails que contêm informações confidenciais](https://docs.microsoft.com/information-protection/deploy-use/help-users).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
 

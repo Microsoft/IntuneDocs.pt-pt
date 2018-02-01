@@ -5,7 +5,7 @@ description: "Este tópico descreve o que esperar quando a sua aplicação iOS �
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: 44edf1efd070c0f82c8edf3727992039e0ee4d69
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
@@ -65,5 +65,5 @@ Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda co
 
 ## <a name="next-steps"></a>Próximos passos
 [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md)
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
