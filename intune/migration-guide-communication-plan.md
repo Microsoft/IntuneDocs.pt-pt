@@ -4,7 +4,7 @@ description: "Este artigo fornece um plano e uma estratégia de comunicação de
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
@@ -30,13 +30,13 @@ Recomendamos o seguinte plano de comunicação de e-mails. Fornecemos modelos qu
 -   **E-mail \#1:** explique as vantagens, expetativas e agenda. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.<br/><br/>
 
 
-    -   [Transferir o \#modelo de e-mail 1 ](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [Transferir o \#modelo de e-mail 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **E-mail \#2:** anuncie que os serviços estão agora prontos para o acesso através do Intune. Informe os utilizadores para se inscreverem agora. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.<br/><br/>
 
 
-    -   [Transferir o \#modelo de e-mail 2 ](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [Transferir o \#modelo de e-mail 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **E-mail \#3:** forneça aos utilizadores uma linha cronológica antes de o acesso dos mesmos ser afetado. Mais uma vez, lembre os utilizadores dos benefícios e dos motivos estratégicos da migração. A temporização de e-mails deve ter uma janela deslizante para corresponder às suas fases. Por exemplo, em junho, envie o e-mail \#1 aos utilizadores da fase 1, o e-mail \#2 aos utilizadores da fase 2 e o e-mail \#3 aos utilizadores da fase 3.<br/><br/>

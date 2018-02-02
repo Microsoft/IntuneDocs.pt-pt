@@ -5,7 +5,7 @@ description: "Saiba mais sobre como adicionar aplicações da loja iOS ao Intune
 keywords: Intune
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -35,6 +35,8 @@ Utilize as informações neste tópico para ajudá-lo a adicionar aplicações d
 
 Só poderá atribuir aplicações com este método se forem gratuitas na app store. Se pretender atribuir aplicações pagas com o Intune, considere utilizar o [programa de compra em volume do iOS](vpp-apps-ios.md).
 
+>[!NOTE]
+>O Chrome e o Edge são os browsers recomendados ao trabalhar com o Microsoft Intune.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Passo 1 – Procurar a aplicação na loja
 
@@ -63,9 +65,9 @@ Só poderá atribuir aplicações com este método se forem gratuitas na app sto
 - **Apresentar esta aplicação em destaque no Portal da Empresa** – apresentar a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
 - **URL de informações** – opcionalmente, escreva o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
 - **URL de Privacidade** – opcionalmente, escreva um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-- **Programador** – opcionalmente, escreva o nome do programador da aplicação. Este campo só é visível para o administrador e não estará visível aos utilizadores finais.
-- **Proprietário** – opcionalmente, escreva um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.  Este campo só é visível para o administrador e não estará visível aos utilizadores finais.
-- **Notas** – escreva as notas que pretende associar esta aplicação. Este campo só é visível para o administrador e não estará visível aos utilizadores finais.
+- **Programador** – opcionalmente, escreva o nome do programador da aplicação. Este campo só é visível para o administrador e não estará visível para os utilizadores finais.
+- **Proprietário** – opcionalmente, escreva um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.  Este campo só é visível para o administrador e não estará visível para os utilizadores finais.
+- **Notas** – escreva as notas que pretende associar esta aplicação. Este campo só é visível para o administrador e não estará visível para os utilizadores finais.
 - **Logótipo** – carregue um ícone associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3. Quando terminar, no painel **Adicionar Aplicação**, selecione **OK**.
 

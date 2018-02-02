@@ -5,21 +5,20 @@ description: "Saiba quais são as definições do Intune que pode utilizar para 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
+manager: dougeby
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android for Work no Microsoft Intune
 
@@ -44,7 +43,7 @@ ms.lasthandoff: 12/12/2017
 ### <a name="work-profile-password"></a>Palavra-passe do perfil de trabalho
 - **Exigir Palavra-passe do Perfil de Trabalho** – (Android 7.0 e superior com o perfil de trabalho ativado) Defina uma política de código de acesso que se aplique apenas às aplicações no perfil de trabalho. Por predefinição, o utilizador final tem a opção de utilizar os dois PINs definidos separadamente ou pode optar por os combinar segundo o mais forte.
 - **Comprimento mínimo da palavra-passe:** introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter (**4**-**16**)
-- **Máximo de minutos de inatividade até o ecrã ser bloqueado** – selecione a quantidade de tempo antes de o perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
+- **Máximo de minutos de inatividade até o perfil de trabalho ser bloqueado** – selecione a quantidade de tempo antes de o perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
 - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de o perfil de trabalho do dispositivo ser eliminado.
 - **Expiração da palavra-passe (dias)** – introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**).
 - **Tipo de palavra-passe obrigatório** –selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:

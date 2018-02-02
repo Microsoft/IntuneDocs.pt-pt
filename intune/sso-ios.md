@@ -5,7 +5,7 @@ description: "Saiba como configurar o Intune para o início de sessão único em
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>Configurar o Intune para o início de sessão único em dispositivos iOS
 
@@ -89,7 +89,7 @@ Os padrões `http://.com` e `https://.com` correspondem a todos os URLs HTTP e H
 
 Indique que aplicações num dispositivo de utilizador final podem utilizar o payload de Início de Sessão Única.
 
-A matriz `AppIdentifierMatches` tem de conter cadeias que correspondam aos IDs da coleção de pacotes de aplicação. Estas cadeias devem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou especificar uma correspondência de prefixo no ID da coleção de pacotes com o caráter universal *. O caráter universal tem de aparecer após um caráter de ponto final (.) e só pode aparecer uma vez, no final da cadeia (por exemplo: `com.contoso.*`). Quando um caráter universal é incluído, todas as aplicações cujo ID da coleção de pacotes começa com o prefixo têm acesso à conta.
+A matriz `AppIdentifierMatches` tem de conter cadeias que correspondam aos IDs da coleção de pacotes de aplicação. Estas cadeias devem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou especificar uma correspondência de prefixo no ID da coleção de pacotes com o caráter universal *\. O caráter universal tem de aparecer após um caráter de ponto final (.) e só pode aparecer uma vez, no final da cadeia (por exemplo: `com.contoso.*`). Quando um caráter universal é incluído, todas as aplicações cujo ID da coleção de pacotes começa com o prefixo têm acesso à conta.
 
 O campo **Nome da Aplicação** é utilizado para adicionar um nome simples para o ajudar a identificar o ID da coleção de pacotes.
 

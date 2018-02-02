@@ -5,7 +5,7 @@ description: "Saiba como pode utilizar o Intune para facilitar a instalação da
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicações do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -63,17 +63,17 @@ Neste passo, selecione as aplicações do Office que pretende atribuir aos dispo
 Neste passo, forneça informações acerca do conjunto de aplicações. Estas informações ajudam-no a identificar o conjunto no Intune e também ajudam os utilizadores a encontrá-lo na aplicação Portal da Empresa.
 
 1.  No painel **Adicionar Aplicação**, selecione **Informações do Conjunto de Aplicações**.
-2.  No painel **Informações do Conjunto de Aplicações**, especifique as seguintes informações: 
+2.  No painel **Informações do Conjunto de Aplicações**, especifique as seguintes informações:
     - **Nome do Conjunto** – introduza o nome do conjunto de aplicações tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de conjuntos de aplicações que utiliza são exclusivos. Se o nome de um conjunto de aplicações existir em duplicado, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
     - **Descrição do Conjunto** – introduza uma descrição para o conjunto de aplicações. Por exemplo, pode listar as aplicações que selecionou para inclusão.
-    - **Publicador** – introduza o nome do publicador da aplicação.
+    - **Publicador** – Introduza o nome do publicador da aplicação.
     - **Categoria** – em alternativa, selecione uma ou mais categorias de aplicações incorporadas ou uma categoria criada por si. Isto irá permitir que os utilizadores encontrem o conjunto de aplicações mais facilmente quando procurarem no portal da empresa.
     - **Apresentar como aplicação em destaque no Portal da Empresa** – apresente o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de Informações** – opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de Privacidade** – opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Informações** – Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade** – Opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador** – opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário** – opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
-    - **Notas** – introduza quaisquer notas que pretenda associar esta aplicação.
+    - **Proprietário** – Opcionalmente, introduza um nome para o proprietário desta aplicação, por exemplo, **Departamento de RH**.
+    - **Notas** – Introduza quaisquer notas que pretenda associar esta aplicação.
     - **Carregar Ícone** – carregue um ícone que será apresentado para a aplicação quando os utilizadores procurarem no portal da empresa.
 3.  Quando tiver terminado, clique em **OK**.
 
@@ -82,9 +82,9 @@ Neste passo, forneça informações acerca do conjunto de aplicações. Estas in
 Neste passo, configure as opções de instalação do conjunto de aplicações. As definições aplicam-se a todas as aplicações que adicionou ao conjunto.
 
 1.  No painel **Adicionar Aplicação**, selecione **Definições do Conjunto de Aplicações**.
-2.  No painel **Definições do Conjunto de Aplicações**, especifique as seguintes informações: 
+2.  No painel **Definições do Conjunto de Aplicações**, especifique as seguintes informações:
     - **Versão do Office** – selecione se quer atribuir a versão de 32 bits ou de 64 bits do Office. Pode instalar a versão de 32 bits em dispositivos de 32 e de 64s bits, mas só pode instalar a versão de 64 bits em dispositivos de 64 bits.
-    - **Atualizar Canal** – selecione a forma como o Office é atualizado nos dispositivos. Para obter informações sobre os diferentes canais de atualização, veja a Descrição geral dos canais de atualização do Office 365 ProPlus. Escolha entre: 
+    - **Atualizar Canal** – selecione a forma como o Office é atualizado nos dispositivos. Para obter informações sobre os diferentes canais de atualização, veja a Descrição geral dos canais de atualização do Office 365 ProPlus. Escolha entre:
         - **Atual**
         - **Diferido**
         - **Canal Atual de Lançamento Inicial**
@@ -104,19 +104,19 @@ Quando terminar, no painel **Adicionar Aplicação**, escolha **Guardar**. A apl
 
 A seguinte tabela lista códigos de erro comuns que poderá encontrar e o respetivo significado.
 
-### <a name="status-for-office-csp"></a>Estado do CSP do Office: 
+### <a name="status-for-office-csp"></a>Estado do CSP do Office:
 
 ||||
 |-|-|-|
 |Estado|Fase|Descrição|
 |1460 (ERROR_TIMEOUT)|Transferência|Falha ao transferir a Ferramenta de Implementação do Office|    
-|13 (ERROR_INVALID_DATA)|-|Não foi possível verificar a assinatura da Ferramenta de Implementação do Office transferida| 
+|13 (ERROR_INVALID_DATA)|-|Não foi possível verificar a assinatura da Ferramenta de Implementação do Office transferida|
 |Código de erro de CertVerifyCertificateChainPolicy|-|Falha na verificação de certificação da Ferramenta de Implementação do Office transferida|    
-|997|WIP|A instalar| 
+|997|WIP|A instalar|
 |0|Após a instalação|Instalação concluída com êxito|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Falha numa verificação de pré-requisitos, como:<br>- SxS (tentativa de instalação quando o MSI do Office 2016 se encontra instalado)<br>- Erro de correspondência de versão<br>- Etc.|     
 |0x8000ffff (E_UNEXPECTED)|-|Tentativa de desinstalação quando a tecnologia Clique-e-Use do Office não existe no computador.|    
-|17002|-|Falha ao concluir o cenário (instalação). Motivos possíveis:<br>- A instalação foi cancelada pelo utilizador<br>- A instalação foi cancelada por outra instalação<br>- Falta de espaço em disco durante a instalação<br>- ID de idioma desconhecido| 
+|17002|-|Falha ao concluir o cenário (instalação). Motivos possíveis:<br>- A instalação foi cancelada pelo utilizador<br>- A instalação foi cancelada por outra instalação<br>- Falta de espaço em disco durante a instalação<br>- ID de idioma desconhecido|
 |17004|-|SKUs desconhecidos|   
 
 
@@ -124,15 +124,15 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o respet
 
 |||||
 |-|-|-|-|
-|Cenário|Código de retorno|IU|Nota| 
-|Tentativa de desinstalação quando não existe nenhuma instalação Clique-e-Use ativa|-2147418113, 0x8000ffff ou 2147549183|Código de Erro: 30088-1008<br>Código de Erro: 30125-1011 (404)|Ferramenta de Implementação do Office| 
-|Instalação quando já existe uma versão MSI instalada|1603|-|Ferramenta de Implementação do Office| 
-|Instalação cancelada pelo utilizador ou por outra instalação|17002|-|Clique-e-Use| 
-|Tentativa de instalação da versão de 64 bits num dispositivo com a versão de 32 bits instalada.|1603|-|Código de retorno da Ferramenta de Implementação do Office| 
-|Tentativa de instalação de um SKU desconhecido (trata-se de um caso de utilização ilegítima do CSP do Office, visto que devemos passar apenas SKUs válidos)|17004|-|Clique-e-Use| 
-|Falta de espaço|17002|-|Clique-e-Use| 
-|O cliente da tecnologia clique-e-use falhou ao iniciar (inesperado)|17000|-|Clique-e-Use| 
-|O cliente da tecnologia clique-e-use falhou ao colocar o cenário em fila (inesperado)|17001|-|Clique-e-Use| 
+|Cenário|Código de retorno|IU|Nota|
+|Tentativa de desinstalação quando não existe nenhuma instalação Clique-e-Use ativa|-2147418113, 0x8000ffff ou 2147549183|Código de Erro: 30088-1008<br>Código de Erro: 30125-1011 (404)|Ferramenta de Implementação do Office|
+|Instalação quando já existe uma versão MSI instalada|1603|-|Ferramenta de Implementação do Office|
+|Instalação cancelada pelo utilizador ou por outra instalação|17002|-|Clique-e-Use|
+|Tentativa de instalação da versão de 64 bits num dispositivo com a versão de 32 bits instalada.|1603|-|Código de retorno da Ferramenta de Implementação do Office|
+|Tentativa de instalação de um SKU desconhecido (trata-se de um caso de utilização ilegítima do CSP do Office, visto que devemos passar apenas SKUs válidos)|17004|-|Clique-e-Use|
+|Falta de espaço|17002|-|Clique-e-Use|
+|O cliente da tecnologia clique-e-use falhou ao iniciar (inesperado)|17000|-|Clique-e-Use|
+|O cliente da tecnologia clique-e-use falhou ao colocar o cenário em fila (inesperado)|17001|-|Clique-e-Use|
 
 ## <a name="next-steps"></a>Próximos passos
 

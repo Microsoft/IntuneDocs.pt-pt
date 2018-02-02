@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 
@@ -48,7 +48,7 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 
   ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 
-  Existem algumas aplicações e serviços de plataforma isentos aos quais a política de proteção de aplicações do Intune poderá permitir a transferência de dados. Por exemplo, todas as aplicações otimizadas pelo Intune no Android têm de conseguir transferir dados de e para a Síntese de Voz Google, para que o texto do ecrã do seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete as aplicações e serviços considerados úteis para produtividade segura.
+  Existem algumas aplicações e serviços de plataforma isentos aos quais a política de proteção de aplicações do Intune poderá permitir a transferência de dados. Por exemplo, todas as aplicações geridas pelo Intune no Android têm de conseguir transferir dados de e para a Síntese de Voz Google, para que o texto do ecrã do seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete as aplicações e serviços considerados úteis para produtividade segura.
 
   ### <a name="full-exemptions"></a>Isenções completas
 
