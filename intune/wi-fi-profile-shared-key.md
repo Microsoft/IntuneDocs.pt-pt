@@ -5,7 +5,7 @@ description: "Utilize um perfil personalizado do Intune para criar um perfil Wi-
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utilizar um perfil de dispositivo personalizado para criar um perfil de Wi-Fi com uma chave pré-partilhada
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente:
 Antes de implementar um perfil de Wi-Fi com PSK, certifique-se de que o dispositivo consegue ligar ao ponto final diretamente.
 
 Quando alternar chaves (palavras-passe ou frases de acesso), espere a ocorrência de um período de indisponibilidade e planeie as implementações em conformidade. Considere emitir novos perfis de Wi-Fi durante as horas de descanso. Além disso, avise os utilizadores de que a conectividade poderá ser afetada.
- 
-Para garantir uma experiência de transição tranquila e o fornecimento atempado de atualizações de política, os dispositivos têm de manter pelo menos um canal de comunicação aberto com o Intune. Para tal, utilize a conectividade de rede móvel ou forneça acesso Wi-Fi de convidado que liga os utilizadores apenas a pontos finais do Intune.
 
-
+Para garantir uma experiência de transição tranquila, certifique-se de que o dispositivo do utilizador final tem uma ligação alternativa à Internet. Por exemplo, o utilizador final tem de conseguir mudar para a rede Guest Wi-Fi (ou outra rede Wi-Fi ) ou ter dados móveis para comunicar com o Intune. Isto permite que o utilizador continue a receber atualizações da política quando o Perfil de Wi-Fi empresarial for atualizado no dispositivo.

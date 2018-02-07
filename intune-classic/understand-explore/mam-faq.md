@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas mais frequentes sobre a MAM e a proteção de aplicações
 
@@ -32,7 +32,7 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 
 **O que é a MAM?** A [gestão de aplicações móveis do Intune](/intune/app-lifecycle) refere-se ao conjunto de funcionalidades de gestão do Intune que lhe permite publicar, emitir via push, configurar, proteger, monitorizar e atualizar aplicações móveis para os seus utilizadores.
 
-**Quais são as vantagens da proteção de aplicações da MAM?** A MAM protege os dados de uma empresa dentro da aplicação. Com a MAM-WE, pode gerir uma aplicação relacionada com o trabalho ou com a escola que contenha informações confidenciais na maioria dos dispositivos, incluindo os dispositivos pessoais, em cenários BYOD (Bring Your Own Device). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Veja a lista oficial das [aplicações otimizadas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
+**Quais são as vantagens da proteção de aplicações da MAM?** A MAM protege os dados de uma empresa dentro da aplicação. Com a MAM-WE, pode gerir uma aplicação relacionada com o trabalho ou com a escola que contenha informações confidenciais na maioria dos dispositivos, incluindo os dispositivos pessoais, em cenários BYOD (Bring Your Own Device). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Veja a lista oficial das [aplicações geridas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
 
 **Que configurações de dispositivos suporta a MAM?** A MAM do Intune suporta dois tipos de configurações:
   1. **MDM + MAM do Intune**: esta foi a primeira configuração suportada pela MAM quando esta foi lançada. Os administradores de TI só podem gerir as aplicações através da MAM e das políticas de proteção de aplicações em dispositivos que estejam inscritos na gestão de dispositivos móveis do Intune (MDM). Para gerir aplicações com a MDM + MAM, os clientes devem utilizar a consola autónoma do Intune em https://manage.microsoft.com.
@@ -42,15 +42,15 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 
 ## <a name="app-protection-policies"></a>Políticas de proteção de aplicações
 
-**O que são as políticas de proteção de aplicações?** As políticas de proteção de aplicações são regras que asseguram que os dados de uma organização continuam seguros ou protegidos numa aplicação gerida. Uma política pode ser uma regra que é aplicada quando o utilizador tenta aceder ou mover dados “empresariais” ou um conjunto de ações que são proibidas ou monitorizadas quando um utilizador utiliza a aplicação.
+**O que são as políticas de proteção de aplicações?** As políticas de proteção de aplicações são regras que asseguram que os dados de uma organização continuam seguros ou protegidos numa aplicação gerida. Uma política pode ser uma regra que é aplicada quando o utilizador tenta aceder ou mover dados "empresariais" ou um conjunto de ações que são proibidas ou monitorizadas quando um utilizador utiliza a aplicação.
 
 **Quais são os exemplos das políticas de proteção de aplicações?** Veja as [definições da política de proteção de aplicações para Android](../deploy-use/android-mam-policy-settings.md) e as [definições da política de proteção de aplicações para iOS](../deploy-use/ios-mam-policy-settings.md) para obter informações detalhadas acerca de cada definição da política de proteção de aplicações.
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Aplicações que pode gerir com as políticas de proteção de aplicações
 
-**Que aplicações podem ser geridas pelas políticas de proteção de aplicações?** Qualquer aplicação que tenha sido otimizada pelo [SDK da Aplicação Intune](/intune/app-sdk) ou encapsulada pela [Ferramenta de Encapsulamento de Aplicações do Intune](/intune/apps-prepare-mobile-application-management) pode ser gerida com as políticas de proteção de aplicações do Intune. Veja a lista oficial das [aplicações otimizadas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
+**Que aplicações podem ser geridas pelas políticas de proteção de aplicações?** Qualquer aplicação que tenha sido otimizada pelo [SDK da Aplicação Intune](/intune/app-sdk) ou encapsulada pela [Ferramenta de Encapsulamento de Aplicações do Intune](/intune/apps-prepare-mobile-application-management) pode ser gerida com as políticas de proteção de aplicações do Intune. Veja a lista oficial das [aplicações geridas pelo Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponíveis para utilização pública.
 
-**Quais são os requisitos base para utilizar as políticas de proteção de aplicações numa aplicação otimizada pelo Intune?**
+**Quais são os requisitos base para utilizar as políticas de proteção de aplicações numa aplicação gerida pelo Intune?**
   1. O utilizador final tem de ter uma conta no Azure Active Directory (AAD). Veja [Adicionar utilizadores e conceder permissões administrativas no Intune](/intune/users-permissions-add) para saber como criar utilizadores do Intune no Azure Active Directory.
 
   2. O utilizador final tem de ter uma licença para o Microsoft Intune atribuída à conta do Azure Active Directory dele. Veja [Gerir licenças do Intune](/intune/licenses-assign) para saber como atribuir licenças do Intune aos utilizadores finais.
@@ -79,7 +79,7 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
   >[!NOTE]
   > Atualmente, as aplicações do Office para dispositivos móveis só suportam o SharePoint Online e não o SharePoint no local.
 
-**Por que motivo é preciso uma localização gerida (como o OneDrive) para o Office?** O Intune marca todos os dados na aplicação como “empresariais” ou “pessoais”. Os dados são considerados “empresariais” quando provêm de uma localização empresarial. Para as aplicações do Office, o Intune considera as seguintes localizações como localizações empresariais: e-mail (Exchange) ou armazenamento da cloud (aplicação OneDrive com uma conta do OneDrive para Empresas).
+**Por que motivo é preciso uma localização gerida (como o OneDrive) para o Office?** O Intune marca todos os dados na aplicação como "empresariais" ou "pessoais". Os dados são considerados "empresariais" quando provêm de uma localização empresarial. Para as aplicações do Office, o Intune considera as seguintes localizações como localizações empresariais: e-mail (Exchange) ou armazenamento da cloud (aplicação OneDrive com uma conta do OneDrive para Empresas).
 
 **Quais são os requisitos adicionais para utilizar o Skype para Empresas?** Veja os requisitos de licença do [Skype para Empresas](https://products.office.com/skype-for-business/it-pros).
   >[!NOTE]
@@ -89,13 +89,13 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 
 **O que é o suporte de identidades múltiplas?** O suporte de identidades múltiplas é a capacidade do SDK da Aplicação Intune de só aplicar as políticas de proteção de aplicações à conta profissional ou escolar que tenha sessão iniciada na aplicação. Se uma conta pessoal tiver sessão iniciada na aplicação, os dados permanecem inalterados.
 
-**Qual é o objetivo do suporte de identidades múltiplas?** O suporte de identidades múltiplas permite que as aplicações com públicos “empresariais” e consumidores (por exemplo, as aplicações do Office) sejam lançadas publicamente com as funcionalidades de proteção de aplicações do Intune para as contas “empresariais”.
+**Qual é o objetivo do suporte de identidades múltiplas?** O suporte de identidades múltiplas permite que as aplicações com públicos "empresariais" e consumidores (por exemplo, as aplicações do Office) sejam lançadas publicamente com as funcionalidades de proteção de aplicações do Intune para as contas "empresariais".
 
-**E o Outlook e as identidades múltiplas?** Uma vez que o Outlook tem uma vista combinada dos e-mails pessoais e “empresariais”, a aplicação Outlook pede o PIN do Intune quando é iniciada.
+**E o Outlook e as identidades múltiplas?** Uma vez que o Outlook tem uma vista combinada dos e-mails pessoais e "empresariais", a aplicação Outlook pede o PIN do Intune quando é iniciada.
 
 **O que é o PIN da aplicação Intune?** O Número de Identificação Pessoal (PIN) é um código de acesso utilizado para verificar que o utilizador certo está a aceder aos dados da organização numa aplicação.
 
-  1. **Quando é pedido ao utilizador para introduzir o PIN?** O Intune só pede ao utilizador para introduzir o PIN da aplicação quando o mesmo quiser aceder aos dados “empresariais”. Em aplicações de identidades múltiplas como o Word/Excel/PowerPoint, é pedido ao utilizador que introduza o PIN ao tentar abrir um documento ou ficheiro “empresarial”. Em aplicações de identidade única, como as aplicações de linha de negócio otimizadas com a Ferramenta de Encapsulamento de Aplicações do Intune, o PIN é pedido no início, uma vez que o SDK da Aplicação Intune reconhece que a experiência do utilizador na aplicação é sempre “empresarial”.
+  1. **Quando é pedido ao utilizador para introduzir o PIN?** O Intune só pede ao utilizador para introduzir o PIN da aplicação quando o mesmo quiser aceder aos dados "empresariais". Em aplicações de identidades múltiplas como o Word/Excel/PowerPoint, é pedido ao utilizador que introduza o PIN ao tentar abrir um documento ou ficheiro "empresarial". Em aplicações de identidade única, como as aplicações de linha de negócio otimizadas com a Ferramenta de Encapsulamento de Aplicações do Intune, o PIN é pedido no início, uma vez que o SDK da Aplicação Intune reconhece que a experiência do utilizador na aplicação é sempre "empresarial".
 
 2. **Com que frequência será pedido ao utilizador para introduzir o PIN do Intune?**
 O administrador de TI pode configurar a definição“Reverificar os requisitos de acesso após (minutos)” da política de proteção de aplicações do Intune na consola de administração do Intune. Esta definição especifica o período de tempo antes da verificação dos requisitos de acesso no dispositivo e de uma nova apresentação do ecrã de PIN da aplicação. Contudo, os detalhes importantes sobre o PIN que afetam a frequência de solicitação do utilizador incluem: 
@@ -108,7 +108,7 @@ O administrador de TI pode configurar a definição“Reverificar os requisitos 
 
   3. **O PIN é seguro?** O PIN serve para garantir que só o utilizador correto consegue aceder aos dados da respetiva organização na aplicação. Por conseguinte, o utilizador final tem de iniciar sessão com a conta profissional ou escolar para poder definir ou repor o PIN da aplicação Intune. Esta autenticação é processada pelo Azure Active Directory através de uma troca de tokens segura e não é revelada ao SDK da Aplicação Intune. No que diz respeito à segurança, a melhor forma de proteger os seus dados profissionais ou escolares é encriptá-los. A encriptação não está relacionada com o PIN da aplicação, mas é a sua própria política de proteção da aplicação.
 
-  4. **Como é que o Intune protege o PIN contra ataques de força bruta?** Como parte da política de PIN da aplicação, o administrador de TI pode definir o número máximo de vezes que um utilizador pode tentar autenticar o respetivo PIN antes de bloquear a aplicação. Após esgotar o número de tentativas, o SDK da Aplicação Intune pode eliminar os dados “empresariais” na aplicação.
+  4. **Como é que o Intune protege o PIN contra ataques de força bruta?** Como parte da política de PIN da aplicação, o administrador de TI pode definir o número máximo de vezes que um utilizador pode tentar autenticar o respetivo PIN antes de bloquear a aplicação. Após esgotar o número de tentativas, o SDK da Aplicação Intune pode eliminar os dados "empresariais" na aplicação.
   
   5. **Por que motivo tenho de definir um PIN duas vezes em aplicações do mesmo publicador?**
 Atualmente, a MAM (no iOS) permite PINs ao nível da aplicação com carateres alfanuméricos e especiais (denominados “código de acesso”), que precisam da participação de aplicações (como WXP, Outlook, Managed Browser, Yammer) para integrar o SDK da Aplicação Intune para iOS. Caso contrário, as definições do código de acesso não são impostas corretamente nas aplicações visadas. Esta funcionalidade foi lançada com o SDK do Intune para iOS v. 7.1.12. <br> Para suportar esta funcionalidade e garantir a retrocompatibilidade com versões anteriores do SDK do Intune para iOS, todos os PINs (numéricos ou códigos de acesso) na versão 7.1.12 ou superior são processados em separado do PIN numérico em versões anteriores do SDK. Como tal, se um dispositivo tiver aplicações com o SDK do Intune para versões do iOS anteriores à 7.1.12 E posteriores à 7.1.12 do mesmo publicador, terá de configurar dois PINs. <br><br> Porém, os dois PINs (para cada aplicação) não estão relacionados de forma alguma, ou seja, têm de respeitar a política de proteção de aplicações que é aplicada à aplicação. Como tal, *só* se as aplicações A e B tiverem as mesmas políticas aplicadas (no que respeita ao PIN) é que o utilizador poderá configurar o mesmo PIN duas vezes. <br><br> Este comportamento é específico para o PIN em aplicações iOS com a Gestão de Aplicações Móveis do Intune ativada. Ao longo do tempo, como as aplicações adotam versões posteriores do SDK do Intune para iOS, ter de definir um PIN duas vezes em aplicações do mesmo publicador deixa de ser um problema. Veja a nota abaixo para obter um exemplo.
@@ -120,7 +120,7 @@ Atualmente, a MAM (no iOS) permite PINs ao nível da aplicação com carateres a
 
   1. **Como é que o Intune encripta os dados?** Veja as [definições da política de proteção de aplicações para Android](../deploy-use/android-mam-policy-settings.md) e as [definições da política de proteção de aplicações para iOS](../deploy-use/ios-mam-policy-settings.md) para obter informações detalhadas sobre a definição de encriptação da política de proteção de aplicações.
 
-  2. **O que é encriptado?** Só os dados marcados como “empresariais” são encriptados de acordo com a política de proteção de aplicações do administrador de TI. Os dados são considerados “empresariais” quando provêm de uma localização empresarial. Para as aplicações do Office, o Intune considera as seguintes localizações como localizações empresariais: e-mail (Exchange) ou armazenamento da cloud (aplicação OneDrive com uma conta do OneDrive para Empresas). Para aplicações de linha de negócio otimizadas com a Ferramenta de Encapsulamento de Aplicações do Intune, todos os dados da aplicação são considerados “empresariais”.
+  2. **O que é encriptado?** Só os dados marcados como "empresariais" são encriptados de acordo com a política de proteção de aplicações do administrador de TI. Os dados são considerados "empresariais" quando provêm de uma localização empresarial. Para as aplicações do Office, o Intune considera as seguintes localizações como localizações empresariais: e-mail (Exchange) ou armazenamento da cloud (aplicação OneDrive com uma conta do OneDrive para Empresas). Para aplicações de linha de negócio otimizadas com a Ferramenta de Encapsulamento de Aplicações do Intune, todos os dados da aplicação são considerados "empresariais".
 
 **Como é que o Intune elimina os dados remotamente?** O Intune pode eliminar os dados da aplicação de três formas diferentes: eliminação total do dispositivo, eliminação seletiva para MDM e eliminação seletiva MAM. Para obter mais informações sobre a eliminação remota para MDM, veja [Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Para obter mais informações sobre a eliminação seletiva através do MAM, veja [Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
@@ -136,7 +136,7 @@ Atualmente, a MAM (no iOS) permite PINs ao nível da aplicação com carateres a
 
 **Por que razão os serviços no local não funcionam com as aplicações protegidas pelo Intune?** A proteção de aplicações do Intune depende da identidade do utilizador para ser consistente entre a aplicação e o SDK da Aplicação Intune. A única forma de o garantir é através da autenticação moderna. Existem cenários onde aplicações podem funcionar com uma configuração no local, mas não é garantido e nem consistente.
 
-**Existe uma forma segura de abrir ligações Web a partir de aplicações geridas?** Sim! O administrador de TI pode implementar e definir a política de proteção de aplicações para a [aplicação Intune Managed Browser](../deploy-use/manage-internet-access-using-managed-browser-policies.md), um browser desenvolvido pelo Microsoft Intune que pode ser gerido facilmente com o Intune. O administrador de TI pode exigir que todas ligações Web nas aplicações otimizadas pelo Intune sejam abertas através da aplicação Managed Browser.
+**Existe uma forma segura de abrir ligações Web a partir de aplicações geridas?** Sim! O administrador de TI pode implementar e definir a política de proteção de aplicações para a [aplicação Intune Managed Browser](../deploy-use/manage-internet-access-using-managed-browser-policies.md), um browser desenvolvido pelo Microsoft Intune que pode ser gerido facilmente com o Intune. O administrador de TI pode exigir que todas as ligações Web nas aplicações geridas pelo Intune sejam abertas através da aplicação Managed Browser.
 
 
 ## <a name="app-experience-on-android"></a>Experiência de aplicação em Android
@@ -145,7 +145,7 @@ Atualmente, a MAM (no iOS) permite PINs ao nível da aplicação com carateres a
 
 ## <a name="app-experience-on-ios"></a>Experiência de aplicação em iOS
 
-**Posso utilizar a extensão de partilha do iOS para abrir dados escolares ou profissionais em aplicações não geridas, mesmo com a política de transferência de dados definida para “apenas aplicações geridas” ou “nenhuma aplicação”. Isto não resulta numa fuga de dados?** A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados “empresariais” antes de estes serem partilhados fora da aplicação**_. Para comprovar, pode tentar abrir o ficheiro “empresarial” fora da aplicação gerida. O ficheiro deve estar encriptado e não deve ser possível abri-lo fora da aplicação gerida.
+**Posso utilizar a extensão de partilha do iOS para abrir dados escolares ou profissionais em aplicações não geridas, mesmo com a política de transferência de dados definida para "apenas aplicações geridas" ou "nenhuma aplicação". Isto não resulta numa fuga de dados?** A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados "empresariais" antes de estes serem partilhados fora da aplicação**_. Para comprovar, pode tentar abrir o ficheiro "empresarial" fora da aplicação gerida. O ficheiro deve estar encriptado e não deve ser possível abri-lo fora da aplicação gerida.
 
 ### <a name="see-also"></a>Consulte também
 - [Definições de políticas de gestão de aplicações móveis para Android no Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
