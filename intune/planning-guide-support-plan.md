@@ -14,11 +14,11 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46172f4b47a5ffeb623cdb068b7e1c6f6c7f1795
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e557fe23b5fcee11957904b2dfd5eb99ec344f3f
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="develop-a-support-plan"></a>Desenvolver um plano de suporte
 
@@ -80,7 +80,7 @@ Abaixo encontra-se um exemplo de conteúdos programáticos de uma formação sob
 
 -   Perguntas e Respostas
 
-A [documentação do Intune](https://docs.microsoft.com/intune/) fornece uma descrição geral do Intune, descrições das funcionalidades detalhadas e algumas informações sobre a resolução de problemas. O [fórum do Intune](https://social.technet.microsoft.com/Forums/en-US/home) é um recurso baseado na comunidade de perguntas e tópicos não abrangidos na documentação do Intune.
+A [documentação do Intune](https://docs.microsoft.com/intune/) fornece uma descrição geral do Intune, descrições das funcionalidades detalhadas e algumas informações sobre a resolução de problemas. O [fórum do Intune](https://social.technet.microsoft.com/Forums/home) é um recurso baseado na comunidade de perguntas e tópicos não abrangidos na documentação do Intune.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Que oportunidades existem para envolver a equipa de suporte numa fase inicial?
 

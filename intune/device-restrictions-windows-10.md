@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -254,7 +254,7 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 
 ## <a name="kiosk-preview"></a>Modo de local público (Pré-visualização)
 
--   **Modo de local público** – identifica o tipo de [modo de local público](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) suportado pela política. As opções incluem:
+-   **Modo de local público** – identifica o tipo de [modo de local público](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) suportado pela política. As opções incluem:
 
       - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
       - **Local público de aplicação única** – o perfil ativa o dispositivo como um local público de uma única aplicação.
@@ -266,7 +266,7 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 
          Para dispositivos em ambientes públicos, utilize contas com privilégios mínimos para impedir a atividade autorizada.  
 
-      - **ID de modelo do utilizador da aplicação (AUMID)** – especifica o AUMID da aplicação de local público. Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **ID de modelo do utilizador da aplicação (AUMID)** – especifica o AUMID da aplicação de local público. Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
     Os locais públicos de várias aplicações exigem uma configuração de modo de local público. Utilize o botão **Adicionar** para criar uma configuração de local público ou selecionar uma configuração existente.
 
@@ -280,13 +280,13 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 
             - **Aplicação Win32** – uma aplicação de ambiente de trabalho tradicional. (Precisará do nome do caminho completamente qualificado do ficheiro executável, relativamente ao dispositivo.)
 
-            - **Aplicação UWP** – uma Aplicação universal do Windows. Precisará do [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Aplicação UWP** – uma Aplicação universal do Windows. Precisará do [AUMID da aplicação](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-        - **Identificador da Aplicação** – especifica o nome do caminho absoluto do ficheiro executável (aplicações Win32) ou o [AUMID da aplicação](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações UWP).
+        - **Identificador da Aplicação** – especifica o nome do caminho absoluto do ficheiro executável (aplicações Win32) ou o [AUMID da aplicação](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações UWP).
 
     - **Barra de tarefas** – indica se a barra de tarefas é apresentada (**Ativado**) ou ocultada (**Não configurado**) no local público.
 
-    - **Esquema do menu Iniciar** – especifica um ficheiro XML que descreve como as aplicações [são apresentadas no menu Iniciar](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Esquema do menu Iniciar** – especifica um ficheiro XML que descreve como as aplicações [são apresentadas no menu Iniciar](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Utilizadores atribuídos** – especifica uma ou mais contas de utilizador associadas à configuração de local público. A conta para o dispositivo pode ser local ou um início de sessão de conta do Azure AD associado à aplicação de local público. Especifique contas associadas a domínios com o formato `domain\\username@tenant.org`.
 

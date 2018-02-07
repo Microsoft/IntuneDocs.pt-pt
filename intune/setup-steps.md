@@ -4,8 +4,8 @@ description: "Requisitos e pré-requisitos para começar a utilizar a sua subscr
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>Configurar o Intune
 
@@ -47,3 +47,4 @@ Se utilizar atualmente o Microsoft System Center Configuration Manager para geri
 | 8 | [Configurar dispositivos](device-profiles.md) – configure os perfis que gerem as definições dos dispositivos. Os perfis dos dispositivos podem pré-configurar as definições de e-mail, VPN, Wi-Fi e funcionalidades dos dispositivos. Também podem restringir os dispositivos para ajudar a protegê-los, assim como aos dados.  |
 | 9 | [Personalizar o Portal da Empresa](company-portal-app.md) – personalize o Portal da Empresa do Intune que os utilizadores utilizam para inscrever dispositivos e instalar aplicações. Estas definições são apresentadas na aplicação Portal da Empresa e no site Portal da Empresa do Intune. |
 | 10 | [Ativar a inscrição de dispositivos](mdm-authority-set.md) – ative a gestão do Intune em dispositivos iOS, Windows, Android e Mac ao definir a autoridade de MDM e ao ativar plataformas específicas. |
+| 11 | [Configurar políticas de aplicações](app-protection-policy.md) – forneça definições específicas com base nas políticas de proteção de aplicações no Microsoft Intune. |
