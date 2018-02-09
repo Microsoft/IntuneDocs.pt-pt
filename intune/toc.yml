@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Cenários comuns
       href: common-scenarios.md
+    - name: FAQ DE MAM
+      href: mam-faq.md
 - name: Implementação de planos
   items:
     - name: Planning guide (Guia de planeamento)
