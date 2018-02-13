@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -52,7 +52,7 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 |Instalação obrigatória de aplicações em dispositivos (obrigatório)<sup>2</sup>|Sim|Sim|Sim|Sim|
 |Instalação opcional em dispositivos a partir do Portal da Empresa (instalação disponível)|Sim|Sim|Sim|Sim|
 |Instalar atalho para uma aplicação na Web (clip da Web)|Sim|Sim|Sim|Sim|
-|Aplicações internas (linha de negócios)|Sim|Sim|Não|Não|
+|Aplicações internas (linha de negócios)|Sim|Sim|Não|Sim|
 |Aplicações de uma loja|Sim|Sim|Sim|Sim|
 |Atualizar aplicações|Sim|Sim|Sim|Sim|
 

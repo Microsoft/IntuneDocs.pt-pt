@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service
 
@@ -35,7 +35,7 @@ Pode permitir que os funcionários reponham as palavras-passe das contas escolar
 ## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre os seguintes tópicos:
-* [Melhores práticas de palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [Melhores práticas de palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licenciamento de reposição de palavra-passe self-service](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 Precisa de ajuda a ativar este ou outros cenários do Office 365 ou EMS? Se tiver pelo menos 150 licenças do Microsoft 365, Enterprise Mobility + Security ou Azure Active Directory Premium, utilize os seus [benefícios do FastTrack](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program).
