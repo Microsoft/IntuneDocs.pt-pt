@@ -287,6 +287,26 @@
           items:
             - name: Eliminação seletiva de aplicações
               href: apps-selective-wipe.md
+            - name: Utilizar políticas de proteção de aplicações
+              href: app-protection-policy.md
+              items:
+                - name: Criar políticas de proteção de aplicações
+                  href: app-protection-policies.md
+                  items:
+                    - name: Definições do Android
+                      href: app-protection-policy-settings-android.md
+                    - name: Definições do iOS
+                      href: app-protection-policy-settings-ios.md
+                - name: Validar as políticas de proteção de aplicações
+                  href: app-protection-policies-validate.md
+                - name: Monitorizar o estado dos utilizadores da proteção de aplicações
+                  href: app-protection-policies-monitor.md
+                - name: Preparar-se para as políticas de proteção de aplicações WIP
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Criar e atribuir políticas de proteção de aplicações WIP
+                  href: windows-information-protection-policy-create.md
+                - name: Gerir a transferência de dados entre aplicações iOS
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Configurar dispositivos
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Impor a conformidade em Macs geridos com o Jamf Pro
           href: conditional-access-assign-jamf.md
-    - name: Proteger os dados de aplicações e de dispositivos
+    - name: Proteger os dados do dispositivo
       items:
-        - name: Utilizar políticas de proteção de aplicações
-          href: app-protection-policy.md
-          items:
-            - name: Criar políticas de proteção de aplicações
-              href: app-protection-policies.md
-              items:
-                - name: Definições do Android
-                  href: app-protection-policy-settings-android.md
-                - name: Definições do iOS
-                  href: app-protection-policy-settings-ios.md
-            - name: Validar as políticas de proteção de aplicações
-              href: app-protection-policies-validate.md
-            - name: Monitorizar o estado dos utilizadores da proteção de aplicações
-              href: app-protection-policies-monitor.md
-            - name: Preparar-se para as políticas de proteção de aplicações WIP
-              href: app-protection-policies-configure-windows-10.md
-            - name: Criar e atribuir políticas de proteção de aplicações WIP
-              href: windows-information-protection-policy-create.md
-            - name: Gerir a transferência de dados entre aplicações iOS
-              href: data-transfer-between-apps-manage-ios.md
         - name: Defesa Contra Ameaças para Dispositivos Móveis
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: Ponto final da API do Armazém de Dados
           href: reports-api-url.md
+        - name: Autenticação apenas com a aplicação do Armazém de Dados
+          href: data-warehouse-app-only-auth.md
         - name: Modelo de dados do Armazém de Dados
           href: reports-ref-data-model.md
           items:
