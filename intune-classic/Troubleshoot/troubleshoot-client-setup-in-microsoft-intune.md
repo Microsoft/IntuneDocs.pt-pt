@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27f9d3172750d4db5b96d0477ecaeeafa1e59ed2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Resolver problemas de configuração do cliente no Microsoft Intune
 
@@ -71,7 +71,7 @@ Utilize as seguintes informações para o ajudar a resolver problemas comuns de 
 
 Isto pode ser causado pela ausência de atualizações de software críticas no PC.
 
-**Resolution (Resolução)**: certifique-se de que a política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Manter os PCs Windows atualizados com as atualizações de software no Microsoft Intune](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+**Resolution (Resolução)**: certifique-se de que a política de atualização de software permite a instalação de atualizações críticas, conforme descrito em [Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
 ## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Erros relacionados com políticas do Microsoft Intune no policyplatform.log
@@ -136,5 +136,5 @@ Por vezes, o agente de Proteção do Anfitrião (Endpoint Protection) pode conti
     ```
 
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

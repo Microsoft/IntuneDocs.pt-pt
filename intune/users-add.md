@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune
 
@@ -102,7 +102,7 @@ Atribua uma ou mais permissões de administrador aos utilizadores. Estas permiss
 - **Administrador de utilizadores** (Office 365 e Intune) – repõe palavras-passe, monitoriza o estado de funcionamento do serviço, adiciona e elimina contas de utilizador e faz a gestão de pedidos de serviço. O administrador da gestão de utilizadores não pode eliminar um administrador global, criar outras funções de administrador ou repor palavras-passe para outros administradores.
 - **Administrador do Serviço Intune** – todas as permissões de Administrador Global do Intune, exceto a permissão para criar utilizadores com opções de **Função de Diretório**.
 
-A conta que utilizar para criar a sua subscrição do Microsoft Intune é um administrador global. Como melhor prática, não utilize um administrador global para tarefas de gestão diárias. Um administrador não necessita de uma licença do Intune para aceder ao portal do Azure. 
+A conta que utilizar para criar a sua subscrição do Microsoft Intune é um administrador global. Como melhor prática, não utilize um administrador global para tarefas de gestão diárias. Embora um administrador não necessite de uma licença do Intune para aceder ao mesmo no portal do Azure, é necessária uma licença do Intune para desempenhar determinadas tarefas de gestão, como configurar o Conector do serviço Exchange. 
 
 Para aceder ao portal do Office 365, a sua conta tem de ter a opção **Início de sessão permitido** definida. No portal do Azure, em **Perfil**, defina **Bloquear início de sessão** como **Não** para permitir o acesso. Este estado é diferente de ter uma licença para a subscrição. Por predefinição, todas as contas de utilizador têm o estado **Permitido**. Os utilizadores sem permissões de administrador podem utilizar o portal do Office 365 para repor palavras-passe do Intune.
 

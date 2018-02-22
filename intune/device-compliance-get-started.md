@@ -15,11 +15,11 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6d758d10a3527e0dc350115f2f8f10e2c62322
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Introdução às políticas de conformidade de dispositivos do Intune
 
@@ -56,7 +56,7 @@ When you specify these actions, Intune will automatically initiate them in the s
 actions for a device that continues to be in the noncompliant status for
 a week:
 
--   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+-   When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
 
 -   3 days after initial noncompliance state, a follow up reminder is sent to the user.
 
@@ -111,7 +111,7 @@ Pode utilizar a política de conformidade com acesso condicional para permitir q
 ### <a name="without-conditional-access"></a>Sem acesso condicional
 Também pode utilizar as políticas de conformidade do dispositivo, independentemente do acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que têm jailbreak ou root. No entanto, quando utilizar políticas de conformidade de forma independente, não existem restrições de acesso aos recursos da empresa.
 
-Pode implementar a política de conformidade em utilizadores. Quando uma política de conformidade é implementada num utilizador, os dispositivos do utilizador são verificados relativamente à conformidade. Para saber quanto tempo os dispositivos móveis demoram a obter uma política após a mesma ser implementada, veja Gerir definições e funcionalidades nos seus dispositivos.
+Pode implementar a política de conformidade em utilizadores. Quando uma política de conformidade é implementada num utilizador, os dispositivos do utilizador são verificados relativamente à conformidade. Para saber quanto tempo é que os dispositivos móveis demoram a obter uma política após esta ser implementada, veja [Resolver problemas de perfis de dispositivos no Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Utilizar as políticas de conformidade de dispositivos no portal clássico do Intune em comparação com o portal do Azure
 

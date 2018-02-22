@@ -150,3 +150,4 @@
 #### [Preciso de ligar o Windows Defender](turn-on-defender-windows.md)
 
 ## [Utilizar o Site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
+### [Bloquear o seu dispositivo remotamente](remote-lock-your-device-cpwebsite.md)

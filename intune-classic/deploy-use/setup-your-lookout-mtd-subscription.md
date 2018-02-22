@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54fa53c8f31171c3719f8368ad07cd33da5f2235
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 0e8a6e52b5bdb9df03af88988f2e4ac49ecf2ab8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Configurar a subscrição da Defesa Contra Ameaças para Dispositivos Móveis do Lookout
 
@@ -116,7 +116,7 @@ Na opção **Gestão de Erros**, introduza o endereço de e-mail que deve recebe
 ![Captura de ecrã da página de gestão de erros do conector do Intune](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>configurar definições de inscrição
-No módulo **System**, na página **Connectors**, especifique o número de dias decorridos antes de um dispositivo ser considerado como estando desligado.  Considera-se que os dispositivos desligados não se encontram em conformidade e o acesso às aplicações da empresa a partir dos mesmos será bloqueado com base nas políticas de acesso condicional do Intune. Pode especificar valores entre 1 e 90 dias.
+No módulo **System**, na página **Connectors**, especifique o número de dias decorridos antes de um dispositivo ser considerado como estando desligado.  Considera-se que os dispositivos desligados são não conformes e o acesso às aplicações da empresa a partir dos mesmos será bloqueado com base nas políticas de acesso condicional do Intune. Pode especificar valores entre 1 e 90 dias.
 
 ![](../media/mtp/lookout-console-enrollment-settings.png)
 
@@ -131,9 +131,9 @@ A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaça
 ![captura de ecrã da página de políticas a apresentar ameaças e as respetivas classificações](../media/mtp/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> Os níveis de risco são um aspeto importante da Defesa Contra Ameaças para Dispositivos Móveis, uma vez que a integração do Intune calcula a conformidade dos dispositivos de acordo com estes níveis de risco durante a sua execução. O administrador do Intune define uma regra na política para identificar se um dispositivo não está conforme, caso o mesmo apresente uma ameaça ativa com um nível mínimo de risco **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na Defesa Contra Ameaças para Dispositivos Móveis do Lookout afeta diretamente o cálculo da conformidade do dispositivo no Intune.
+> Os níveis de risco são um aspeto importante da Defesa Contra Ameaças para Dispositivos Móveis, uma vez que a integração do Intune calcula a conformidade dos dispositivos de acordo com estes níveis de risco durante a sua execução. O administrador do Intune define uma regra na política para identificar se um dispositivo for não conforme, caso o mesmo apresente uma ameaça ativa com um nível mínimo de risco **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na Defesa Contra Ameaças para Dispositivos Móveis do Lookout afeta diretamente o cálculo da conformidade do dispositivo no Intune.
 
 ## <a name="watching-enrollment"></a>Monitorizar as inscrições
 Quando a configuração estiver concluída, a Defesa Contra Ameaças para Dispositivos Móveis do Lookout inicia uma consulta no Azure AD para detetar dispositivos que correspondam aos grupos de inscrição especificados.  Poderá encontrar informações sobre os dispositivos inscritos no módulo Dispositivos.  O estado inicial dos dispositivos é apresentado como Pendente.  O estado dos dispositivos é alterado assim que a aplicação Lookout for Work for instalada, aberta e ativada nos mesmos.  Para obter detalhes sobre como instalar a aplicação Lookout for Work no dispositivo pretendido, consulte o tópico [Configurar e implementar as aplicações Lookout for Work](configure-deploy-lookout-for-work-app.md).
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Ativar a ligação do Lookout MTP ao Intune](/intune-classic/deploy-use/enable-lookout-mtd-connection)

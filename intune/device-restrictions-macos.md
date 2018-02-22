@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69fc2959c7694a0120efff8653ce8d619f33a9d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos macOS no Microsoft Intune
 
@@ -30,7 +28,7 @@ Utilize estas definições para gerir dispositivos macOS num perfil de restriç�
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
     -   **Tipo obrigatório de palavra-passe** – Especifique se a palavra-passe pode ser só Numérica ou se tem de ser Alfanumérica (conter letras e números). Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.
-    -   **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres complexos obrigatórios na palavra-passe (**0** a **4**).<br>Um caráter complexo é um símbolo, como **?**
+    -   **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres complexos obrigatórios na palavra-passe (**0** a **4**).<br>Um caráter complexo é um símbolo, por exemplo "**?**".
     -   **Comprimento mínimo da palavra-passe** –Introduza o comprimento mínimo da palavra-passe que um utilizador tem de configurar (entre **4** e **16** carateres).
     -   **Palavras-passes simples** – Permita a utilização de palavras-passe simples, como **0000** ou **1234**.
     -   **Máximo de minutos após o bloqueio de ecrã até ao pedido de palavra-passe** – Especifique durante quanto tempo o computador tem de estar inativo até uma palavra-passe ser pedida para o desbloquear.
@@ -42,8 +40,8 @@ Utilize estas definições para gerir dispositivos macOS num perfil de restriç�
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
-Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar.
-Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.
+- Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar. Os utilizadores não são impedidos de instalar uma aplicação proibida, mas se o fizerem, esta ação ser-lhe-á comunicada.
+- Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar aplicações que não se encontrem na lista de aprovações, mas se o fizerem, esta ação ser-lhe-á comunicada.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, opcionalmente, o publicador da aplicação e o ID do grupo da aplicação (por exemplo, *com.apple.calculator*).
 

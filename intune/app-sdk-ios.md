@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c601845274e5c15ce46da80a065b586e64a53a9a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f74b996b3b96dfa808771f3dd4fc70f9c29324c2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação Microsoft Intune para iOS
 
@@ -99,7 +99,18 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
 
     ![SDK da Aplicação do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    Adicione estas estruturas de iOS ao projeto:          * MessageUI.framework          * Security.framework          * MobileCoreServices.framework          * SystemConfiguration.framework          * libsqlite3.tbd          * libc++.tbd          * ImageIO.framework          * LocalAuthentication.framework          * AudioToolbox.framework          * QuartzCore.framework          * WebKit.framework
+    Adicione estas estruturas de iOS ao projeto:  
+            * MessageUI.framework  
+            * Security.framework  
+            * MobileCoreServices.framework  
+            * SystemConfiguration.framework  
+            * libsqlite3.tbd  
+            * libc++.tbd  
+            * ImageIO.framework  
+            * LocalAuthentication.framework  
+            * AudioToolbox.framework  
+            * QuartzCore.framework  
+            * WebKit.framework  
 
 3. Ative a partilha de keychain (se não estiver já ativada) ao selecionar **Capacidades** no destino de cada projeto e ao ativar o comutador **Partilha de Keychain**. A partilha de keychain é necessária para avançar para o passo seguinte.
 
@@ -139,7 +150,7 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
 |- e | `<Path to the entitlements file>` |
 |- o |  (Opcional) `<Path to the output plist>` |
 
-Se o parâmetro “-o” não for especificado, o ficheiro de entrada será modificado no local. A ferramenta é idempotent e deve ser executada novamente sempre que forem feitas alterações ao ficheiro Info.plist da aplicações ou tenham sido criadas elegibilidades. Deverá também transferir e executar a versão mais recente da ferramenta ao atualizar o SDK do Intune, caso os requisitos de configuração do ficheiro Info.plist tenham sido alterados na versão mais recente.
+Se o parâmetro “-o” não for especificado, o ficheiro de entrada será modificado no local. A ferramenta é idempotent e deve ser executada novamente sempre que forem feitas alterações ao ficheiro Info.plist da aplicação ou tenham sido criadas elegibilidades. Deverá também transferir e executar a versão mais recente da ferramenta ao atualizar o SDK do Intune, caso os requisitos de configuração do ficheiro Info.plist tenham sido alterados na versão mais recente.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar a Azure Active Directory Authentication Library (ADAL)
 
@@ -459,9 +470,9 @@ A configuração de MAM direcionada permite que uma aplicação receba dados de 
 * Chame ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` para apresentar o Objeto Configuração da Aplicação.
 * Chame o seletor adequado no objeto ```IntuneMAMAppConfig```. Por exemplo, se a chave da aplicação for uma cadeia, é aconselhável utilizar ```stringValueForKey``` ou ```allStringsForKey```. O ficheiro ```IntuneMAMAppConfig.h header``` fala sobre devolver valores/condições de erro.
 
-Para obter mais informações sobre as capacidades da Graph API em relação aos valores de configuração de MAM direcionada, veja [Configuração de MAM Direcionada de Referência para Graph API](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Para obter mais informações sobre as capacidades da Graph API em relação aos valores de configuração de MAM direcionada, veja [Configuração de MAM Direcionada de Referência para Graph API](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
-Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no iOS, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar políticas de configuração da aplicação Microsoft Intune para iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no iOS, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar políticas de configuração da aplicação Microsoft Intune para iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
 
 ## <a name="telemetry"></a>Telemetria
 

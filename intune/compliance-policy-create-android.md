@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos Android no Intune
 
@@ -103,9 +103,9 @@ Para obter mais detalhes, consulte [Ativar a regra de proteção contra ameaças
 - **SO mínimo obrigatório**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 - **Versão máxima de SO permitida**: quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até as regras serem alteradas para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Como é que as definições não compatíveis funcionam com as políticas de acesso condicional?
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>Como funcionam as definições de não conformidade com as políticas de acesso condicional?
 
-A tabela seguinte descreve como as definições não compatíveis são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
+A tabela que se segue descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
 --------------------
 

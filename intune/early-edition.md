@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d4bcabc4d1af4554a3e3bea875be45f9376b4ef7
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Edição antecipada do Microsoft Intune – fevereiro de 2018
 
@@ -28,7 +28,7 @@ A **edição antecipada** oferece uma lista de funcionalidades disponíveis em v
 Esta página é atualizada periodicamente. Volte a consultar posteriormente para obter mais atualizações.
 
 > [!Note]
->As seguintes alterações estão em desenvolvimento para o Intune. Para mais informações sobre as novas funcionalidades híbridas, consulte a [página Hybrid What’s New (Novidades nas Implementações Híbridas)](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+>As seguintes alterações estão em desenvolvimento para o Intune. Para obter mais informações sobre as novas funcionalidades híbridas, consulte a [página Hybrid What’s New (Novidades nas Implementações Híbridas)](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 <!--
 ## What's coming to Intune in the Azure portal  
@@ -41,6 +41,8 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 
 <!-- 1802 start -->
 
+### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedir os utilizadores finais de adicionarem ou removerem contas no perfil profissional <!-- 1728700 -->    
+Quando implementar a aplicação Gmail num perfil do Android for Work, pode impedir que os utilizadores finais adicionem ou removam contas no perfil profissional ao utilizar a definição **Adicionar e remover contas** no perfil de restrições do Dispositivo Android for Work.
 
 ### <a name="app-protection-policies-----679615---"></a>Políticas de Proteção de Aplicações <!-- 679615 -->
 As Políticas de Proteção de Aplicações do Intune permitirão criar políticas predefinidas globais para ativar rapidamente a proteção em todos os utilizadores em todo o inquilino.
@@ -76,7 +78,7 @@ Por exemplo, pode adicionar o pacote WebEx como uma exceção à política de tr
 Poderá personalizar a cor do tema nas aplicações do Portal da Empresa com códigos hexadecimais. Ao introduzir o seu código hexadecimal, o Intune irá determinar a cor do texto que fornece o maior nível de contraste entre a cor do texto e a cor de fundo segundo os [padrões do WCAG 2.0](http://www.w3.org/TR/WCAG20). Pode pré-visualizar a cor do texto e o logótipo da empresa relativamente à cor em **Aplicações móveis** > **Portal da Empresa**. 
 
 ### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selecionar as categorias de dispositivos através das definições de Acesso Profissional ou Escolar<!-- 1058963 --> 
-Se tiver ativado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/en-us/intune/device-group-mapping), será pedido aos utilizadores no Windows 10 que selecionem uma categoria de dispositivos após a inscrição através do botão **Ligar** em **Definições** > **Contas** > **Acesso profissional ou escolar** ou durante a configuração inicial.
+Se tiver ativado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/intune/device-group-mapping), será pedido aos utilizadores no Windows 10 que selecionem uma categoria de dispositivos após a inscrição através do botão **Ligar** em **Definições** > **Contas** > **Acesso profissional ou escolar** ou durante a configuração inicial.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Novas definições do Windows Defender Credential Guard foram adicionadas às definições de proteção de ponto final <!--1102252 --> 
 
@@ -214,50 +216,20 @@ O Intune suportará a inscrição de dispositivos de um máximo de 100 contas di
 Após a migração, as Graph APIs beta e os scripts publicados para gerir o DEP da Apple ou o ASM através do Graph deixarão de funcionar. Estão em desenvolvimento novas Graph APIs beta e serão lançadas após a migração.
 
 ### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selecionar as categorias de dispositivos através das definições de Acesso Profissional ou Escolar<!-- 1058963 -->
-Se tiver ativado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/en-us/intune/device-group-mapping), será pedido aos utilizadores no Windows 10 que selecionem uma categoria de dispositivos após a inscrição através do botão **Ligar** em **Definições** > **Contas** > **Acesso profissional ou escolar** ou durante a configuração inicial.
+Se tiver ativado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/intune/device-group-mapping), será pedido aos utilizadores no Windows 10 que selecionem uma categoria de dispositivos após a inscrição através do botão **Ligar** em **Definições** > **Contas** > **Acesso profissional ou escolar** ou durante a configuração inicial.
 
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Filtrar políticas de conformidade em dispositivos nos grupos de dispositivos <!--1307012 -->
 
 Será capaz de filtrar políticas de conformidade de destino para os utilizadores nos grupos de utilizadores. Será capaz de filtrar políticas de conformidade para os dispositivos nos grupos de dispositivos.
 
-### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>Incluir e excluir a atribuição de aplicações com base nos grupos <!-- 1406920 -->
-
-Durante a atribuição de aplicações e, depois de selecionar um tipo de atribuição, poderá selecionar os grupos a incluir, bem como os grupos a excluir.
-
-### <a name="remote-erase-command-support----1438084---"></a>Suporte do comando “Apagar” remoto <!-- 1438084 -->
-
-Os administradores poderão emitir um comando Apagar remotamente.
-
-> [!IMPORTANT]
-> O comando apagar não pode ser invertido e deve ser utilizado com cuidado.
-
-O comando apagar remove todos os dados, incluindo o sistema operativo, de um dispositivo. Esta operação também remove o dispositivo da gestão do Intune. Nenhum aviso é apresentado ao utilizador e a eliminação ocorre imediatamente após a emissão do comando.
-
-Poderá configurar um PIN de recuperação de 6 dígitos. Este PIN pode servir para desbloquear o dispositivo apagado, altura em que irá iniciar a reinstalação do sistema operativo. Depois de a eliminação começar, o PIN é apresentado numa barra de estado no painel de descrição geral do dispositivo no Intune. O PIN será mantido enquanto a eliminação estiver em curso. Depois de concluída a eliminação, o dispositivo desaparece totalmente da gestão do Intune. Não se esqueça de registar o PIN de recuperação para que quem estiver a restaurar o dispositivo o possa utilizar.
-
 ### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Dados encriptados da Windows Information Protection (WIP) nos resultados da pesquisa do Windows<!-- 1469193 -->
 
 Uma nova definição na política da Windows Information Protection (WIP) vai permitir-lhe controlar se os dados encriptados da WIP estão incluídos nos resultados da pesquisa do Windows.
 
-### <a name="website-learning-mode----1631908---"></a>Modo de Aprendizagem do Site<!-- 1631908 -->
-
-O Intune vai introduzir uma extensão do Modo de aprendizagem da Windows Information Protection (WIP). Além de ver informações sobre as aplicações com a WIP, poderá ver um resumo dos dispositivos que partilharam dados de trabalho com os sites. Com estas informações, pode determinar os sites que devem ser adicionados às políticas WIP dos grupos e dos utilizadores.
-
-### <a name="updates-to-compliance-emails---1637547---"></a>Atualizações em e-mails de conformidade <!--1637547 -->
-
-Quando um e-mail é enviado para comunicar um dispositivo não conforme, serão incluídos detalhes sobre o dispositivo não conforme. O seguinte artigo será atualizado para indicar este facto: [ações automáticas de não conformidade](#actions-for-noncompliance).
-
-###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>Alertas para tokens expirados e tokens que irão expirar em breve <!-- 1639263 -->
-A página de descrição geral mostrará alertas para tokens expirados e tokens que irão expirar em breve. Ao clicar num alerta com um único token, acederá à página de detalhes do token.  Se clicar num alerta com vários tokens, acederá a uma lista de todos os tokens com o estado deles. Os administradores devem renovar os tokens antes da data de expiração.
-
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>Impressão remota através de uma rede segura <!-- 1709994  -->
 As soluções de impressão móveis sem fios da PrinterOn irão permitir aos utilizadores imprimir remotamente a partir de qualquer lugar e em qualquer altura através de uma rede segura. A PrinterOn será integrada com o SDK da Aplicação Intune para iOS e Android. Conseguirá filtrar políticas de proteção de aplicações para esta aplicação através do painel **Políticas de proteção de aplicações** do Intune na consola de administração. Os utilizadores finais conseguirão transferir a aplicação “PrinterOn para Microsoft” através da Play Store ou do iTunes para utilizar no seu ecossistema do Intune.
 
-### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>Aprovar a aplicação do Portal da Empresa para o Android for Work <!--1797090 -->
-Se a sua organização utilizar o Android for Work, terá de aprovar manualmente a aplicação Portal da Empresa para Android para continuar a receber atualizações automáticas da Google Play Store gerida.
 
-### <a name="faceid-on-ios-devices----1807377---"></a>Face ID nos dispositivos iOS <!-- 1807377 -->
-As políticas de proteção de aplicações do Intune suportam agora uma definição que controla o Face ID nos dispositivos iOS. Esta definição destina-se a dispositivos que suportam a funcionalidade Face ID (atualmente apenas no iPhone X). Esta definição está separada dos controlos do Touch ID atualmente suportados. As organizações têm a capacidade de escolher se vão confiar no Face ID como um pedido de PIN válido e como uma alternativa aos controlos do Touch ID.
 
 ### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>Microsoft Graph API para o Intune – Disponibilidade Geral <!-- 1833289 -->
 As APIs do Intune no Microsoft Graph irão conceder acesso programático aos dados e aos métodos para automatizar as ações administrativas do serviço do Intune.  Com a **Disponibilidade Geral** destas APIs, os clientes, os parceiros e os programadores conseguirão tirar partido das APIs para as integrar em soluções internas ou comerciais que exijam ou estejam relacionadas com o suporte do Intune ou outros serviços Microsoft disponíveis através do Microsoft Graph.
@@ -267,26 +239,11 @@ As APIs do Intune no Microsoft Graph irão conceder acesso programático aos dad
 ### <a name="app-protection-policies-----679615---"></a>Políticas de Proteção de Aplicações <!-- 679615 -->
 As Políticas de Proteção de Aplicações do Intune permitirão criar políticas predefinidas globais para ativar rapidamente a proteção em todos os utilizadores em todo o inquilino.
 
-### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>Revogar aplicações Programa Comprado em Volume para iOS <!-- 820863 -->
-Para um determinado dispositivo que tenha uma ou mais aplicações Programa Comprado em Volume (VPP) para iOS, será capaz de revogar a licença de aplicação baseada em dispositivos associados do dispositivo. Revogar a licença de uma aplicação não desinstala a aplicação VPP relacionada do dispositivo. Para desinstalar uma aplicação VPP, tem de alterar a ação de atribuição para **Desinstalar**. Para obter mais informações, veja [Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune](vpp-apps-ios.md).
-
-### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Revogar licenças para um token de Programa Comprado em Volume para iOS<!-- 820870 -->
-Será capaz de revogar a licença de todas as aplicações Programa Comprado em Volume (VPP) para iOS para um determinado Token VPP.
-
 ### <a name="new-ios-device-action------1244701---"></a>Nova ação do dispositivo iOS <!-- 1244701 -->
 Pode encerrar os dispositivos iOS 10.3 supervisionados. Esta ação encerra o dispositivo imediatamente sem avisar o utilizador final. A ação **Encerrar (apenas os supervisionados)** encontra-se nas propriedades do dispositivo ao selecionar um dispositivo na carga de trabalho **Dispositivo**.
 
 ### <a name="intune-provides-the-account-move-operation-----1573558-1579830---"></a>O Intune disponibiliza a operação Mover Conta <!-- 1573558, 1579830 -->
 A operação **Mover Conta** migra um inquilino de uma Unidade de Escala do Azure (ASU) para outra. A operação **Mover Conta** pode ser utilizada para os cenários iniciados pelo cliente, quando telefona para a equipa de suporte do Intune para a pedir, e também pode ser um cenário impulsionado pela Microsoft onde a Microsoft tem de fazer ajustes ao serviço no back-end. Durante a operação **Mover Conta**, o inquilino entra no modo só de leitura (ROM). As operações do serviço, como inscrever, mudar o nome de dispositivos e atualizar o estado de conformidade, falharão durante o período do ROM.
-
-
-
-<!-- the following are present prior to 1712 -->
-### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>Atribuir aplicações móveis do Office 365 a dispositivos iOS e Android ao utilizar o tipo de aplicação incorporada <!-- 1332318 -->
-O tipo de aplicação **Incorporada** permite-lhe criar e atribuir aplicações do Office 365 mais facilmente aos dispositivos iOS e Android que está a gerir. Estas aplicações incluem aplicações do O365, tais como o Word, Excel, PowerPoint e OneDrive. Pode atribuir aplicações específicas ao tipo de aplicação e editar a configuração de informações da aplicação.
-
-### <a name="assignment-conflict-resolution-has-changed-for-ios-store-apps----1480316---"></a>A resolução de conflitos de atribuição mudou para as aplicações da loja iOS <!-- 1480316 -->
-Os utilizadores finais poderão reparar numa alteração quanto à disponibilidade das aplicações da loja iOS. Atualmente, uma aplicação que tenha sido atribuída a dois grupos com um conflito entre **Necessário e Disponível** e **Não Aplicável** é resolvida para **Necessário e Disponível**. Com a alteração, uma aplicação com este conflito é resolvida para **Não Aplicável**.
 
 A alteração diz respeito à confusão gerada quando uma aplicação é atribuída a múltiplos grupos com intenções diferentes no que diz respeito às aplicações.
 
@@ -316,11 +273,16 @@ Estamos a oferecer uma versão de pré-lançamento da aplicação Portal da Empr
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Os sites do Azure Active Directory podem exigir a aplicação Intune Managed Browser e o suporte do Início de Sessão Único do Managed Browser (Pré-visualização Pública) <!-- 710595 -->   
 Com o Azure Active Directory (Azure AD), poderá restringir o acesso a sites em dispositivos móveis na aplicação Intune Managed Browser. No Managed Browser, os dados dos sites permanecerão protegidos e separados dos dados pessoais dos utilizadores finais. Além disso, o Managed Browser suporta as funcionalidades de Início de Sessão Único para sites protegidos pelo Azure AD. Iniciar sessão no Managed Browser ou utilizá-lo num dispositivo com outra aplicação gerida pelo Intune permite que o Managed Browser aceda a sites empresariais protegidos pelo Azure AD sem que o utilizador tenha de introduzir as suas credenciais. Esta funcionalidade aplica-se a sites como o Outlook Web Access (OWA) e o SharePoint Online, bem como a outros sites empresariais como recursos de intranet acedidos através do Proxy de Aplicações do Azure.
 
+<!-- the following are present prior to 1709 -->
+### <a name="intune-app-protection-and-citrix-mdx-development-tools----709185---"></a>Proteção de Aplicações Intune e Citrix MDX Development Tools <!-- 709185 -->
+Pode gerir dispositivos e aplicações ao combinar o Citrix XenMobile MDX e o Microsoft Intune. Isto permite-lhe gerir aplicações com a política de proteção da aplicação Intune ao utilizar a tecnologia mVPN da Citrix.
+
+Pode encontrar um repositório de códigos que contém a Ferramenta de Encapsulamento de Aplicações do Intune para iOS e Android, integrada com a tecnologia Citrix MDX mVPN.
+
 <!-- the following are present prior to 1711 -->
 
-### <a name="redirecting-macos-users-to-our-new-company-portal-app---1380728--"></a>Redirecionar utilizadores do macOS para a nova aplicação Portal da Empresa <!--1380728-->   
+### <a name="redirecting-macos-users-to-the-new-company-portal-app---1380728--"></a>Redirecionar utilizadores do macOS para a nova aplicação Portal da Empresa <!--1380728-->   
 Quando um utilizador final inicia sessão no site do Portal da Empresa para inscrever o seu dispositivo macOS, este será direcionado para transferir a nova aplicação Portal da Empresa para macOS para concluir o processo. Isto ocorre nos dispositivos macOS que utilizam o OS X El Capitan 10.11 ou posterior. 
-
 
 <!-- the following are present prior to 1709 -->
 

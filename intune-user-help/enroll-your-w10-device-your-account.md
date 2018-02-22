@@ -1,5 +1,5 @@
 ---
-title: Inscrever o seu dispositivo com o Windows 10 no Intune | Documentos da Microsoft
+title: Inscrever o seu dispositivo com o Windows 10 no Intune | Microsoft Docs
 description: Inscrever um dispositivo com o Windows 10 1511 no Intune
 keywords: 
 author: barlanmsft
@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f658784ae2dc462594c4ad99bc82b200b3544cb4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 
@@ -90,7 +90,7 @@ Um dispositivo pode ser bloqueado no Acesso Condicional sem receber um e-mail de
 - Verifique os registos do Exchange Connector para a atividade de sendemail e procure a existência de erros. Um exemplo do comando a procurar é SendEmail da conta de notificação para useremail.
 - Antes do Exchange Connector bloquear o dispositivo, envia o e-mail de ativação. Se o dispositivo estiver offline, poderá não receber o e-mail de ativação. Verifique se o cliente de e-mail do dispositivo tem a obtenção de e-mail através de Push em vez de Poll, uma vez que isto também pode fazer com que o utilizador não receba o e-mail. Mude para Poll e verifique se o dispositivo recebe o e-mail.
 
-## <a name="non-compliant-device-not-blocked"></a>Dispositivo não conforme não bloqueado
+## <a name="noncompliant-device-not-blocked"></a>Dispositivo não conforme não bloqueado
 
 Se tiver um dispositivo que não esteja em conformidade mas continue a ter acesso, siga os passos seguintes.
 
@@ -151,5 +151,5 @@ Para ativar o registo verboso:
 
 
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Como configurar as definições personalizadas dos dispositivos no Microsoft Intune
 
@@ -47,14 +45,15 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
     - **Windows Phone 8.1**
     - **Windows 10 e posterior**
 6. Na lista pendente **Tipo de perfil**, escolha **Personalizado**.
-7. As definições que pode configurar diferem consoante a plataforma que escolheu. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
+7. As definições que pode configurar diferem consoante a plataforma que escolher. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
     - [Definições do Android](custom-settings-android.md)
     - [Definições do iOS](custom-settings-ios.md)
     - [Definições do macOS](custom-settings-macos.md)
     - [Definições do Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Definições do Windows 10](custom-settings-windows-10.md)
+    - [Definições do Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Definições do Android for Work](custom-settings-android-for-work.md)
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
-O perfil será criado e é apresentado no painel da lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

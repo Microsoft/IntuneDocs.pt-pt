@@ -6,29 +6,27 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos Windows no Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As políticas de conformidade são criadas para cada plataforma.  Pode criar uma política de conformidade no portal do Azure. Para obter mais informações sobre o que é a política de compatibilidade, veja o tópico [O que é a conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+As políticas de conformidade são criadas para cada plataforma. Pode criar uma política de conformidade no portal do Azure. Para obter mais informações sobre o que é a política de compatibilidade, veja o tópico [O que é a conformidade do dispositivo](device-compliance.md). Para saber mais sobre os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
-A tabela que se segue descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
+A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
 ---------------------------
 
@@ -46,7 +44,7 @@ A tabela que se segue descreve como as definições não conformes são geridas 
 
 **Remediado** = O sistema operativo do dispositivo impõe a conformidade. (Por exemplo, forçar o utilizador a definir um PIN.)+
 
-**Em Quarentena** = O sistema operativo do dispositivo não impõe a conformidade. (Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo.) Quando os dispositivos não são conformes, são realizadas as seguintes ações:+
+**Em Quarentena** = O sistema operativo do dispositivo não impõe a conformidade. (Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo.) Quando o dispositivo não é conforme, são efetuadas as seguintes ações:
 
 - O dispositivo é bloqueado se uma política de acesso condicional se aplicar ao utilizador.
 - O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
@@ -55,7 +53,7 @@ A tabela que se segue descreve como as definições não conformes são geridas 
 
 1. No painel **Intune**, escolha **Definir Conformidade do dispositivo**. Em **Gerir**, escolha **Todas as políticas de conformidade do dispositivo** e **Criar**.
 2. Escreva um nome, uma descrição e escolha a plataforma à qual quer que esta política se aplique.
-3. Escolha **Requisitos de conformidade** para abrir o painel de requisitos de conformidade.  Pode especificar as definições de **Segurança**, de **Estado de funcionamento do dispositivo** e de **Propriedade do dispositivo** aqui. Quando tiver terminado, selecione **OK**.
+3. Escolha **Requisitos de conformidade** para abrir o painel de requisitos de conformidade.  Pode especificar as definições de **Segurança**, de **Estado de funcionamento do dispositivo** e de **Propriedade do dispositivo** aqui. Quando terminar, selecione **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -71,7 +69,7 @@ Para atribuir uma política de conformidade a utilizadores, escolha uma polític
 1. Escolha a política que quer atribuir aos utilizadores e, em seguida, **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
 2. Escolha **Selecionar grupos** para abrir o painel que apresenta os grupos de segurança do Azure AD.  Escolher **Selecionar** implementa a política para os utilizadores.
 
-Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
+Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
 
 <!---## Compliance policy settings--->
 
@@ -82,9 +80,9 @@ Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizad
 - **Palavra-passe obrigatória para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que os utilizadores introduzam uma palavra-passe para que possam aceder ao respetivo dispositivo.
 - **Permitir palavras-passe simples:** defina esta opção como **Sim** para permitir que os utilizadores criem palavras-passe simples, tais como “**1234**” ou “**1111**”.
 - **Comprimento mínimo da palavra-passe:** especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
-- **Tipo obrigatório de palavra-passe:** especifique se os utilizadores têm de criar uma palavra-passe **Alfanumérica** ou **Numérica**.
+- **Solicitar tipo de palavra-passe:** especifique se os utilizadores têm de criar uma palavra-passe **Alfanumérica**, ou **Numérica**.
 
-Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não conseguirá avaliar corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é mais de dois.
+Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não avalia corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é superior a dois.
 
 - **Número mínimo de conjuntos de carateres:** se o **Tipo obrigatório de palavra-passe** estiver definido como **Alfanumérico**, esta definição especificará o número mínimo de conjuntos de carateres que a palavra-passe tem de conter. Os quatro conjuntos de carateres são:
   - Letras minúsculas
@@ -92,7 +90,7 @@ Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a
   - Símbolos
   - Números
 
-A definição de um número mais alto nesta definição obrigará os utilizadores a criarem palavras-passe mais complexas. Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não conseguirá avaliar corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é mais de dois.
+A definição de um número mais alto nesta definição obrigará os utilizadores a criarem palavras-passe mais complexas. Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não avalia corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é superior a dois.
 
 - **Minutos de inatividade antes de a palavra-passe ser exigida:** especifica o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
 - **Expiração da palavra-passe (dias):** selecione o número de dias antes de a palavra-passe do utilizador expirar e ser preciso criar uma nova.
@@ -132,7 +130,7 @@ Para obter informações sobre como funciona o serviço HAS, veja [Health Attest
 
 Especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 
-Nos dispositivos acedidos com uma conta Microsoft, a política de conformidade não conseguirá avaliar corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** corresponde a mais de dois carateres.
+Nos dispositivos acedidos com uma Conta Microsoft, a política de conformidade não avalia corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** é superior a dois carateres.
 
 - **Tipo obrigatório de palavra-passe:** suportado no Windows RT, Windows RT 8.1 e Windows 8.1
 
@@ -142,13 +140,13 @@ Especifique se os utilizadores têm de criar uma palavra-passe **Alfanumérica**
   - Letras minúsculas
   - Letras maiúsculas
   - Símbolos
-  - Números: definir um número mais alto nesta definição obrigará os utilizadores a criarem palavras-passe mais complexas.
+  - Números: definir um número maior nesta definição obriga os utilizadores a criarem palavras-passe mais complexas.
 
-Nos dispositivos acedidos com uma conta Microsoft, a política de conformidade não conseguirá avaliar corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** corresponde a mais de dois carateres.
+Nos dispositivos acedidos com uma Conta Microsoft, a política de conformidade não avalia corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** é superior a dois carateres.
 
 - **Minutos de inatividade antes de a palavra-passe ser exigida:** - suportada no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Especifica o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
+Especifique o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
 
 - **Expiração da palavra-passe (dias):** suportado no Windows RT, Windows RT 8.1 e Windows 8.1.
 
@@ -160,7 +158,7 @@ Utilize esta definição juntamente com **Impedir a reutilização de palavras-p
 
 - **Impedir a reutilização de palavras-passe anteriores:** - suportada no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Se a opção **Memorizar histórico de palavras-passe** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
+Se a opção **Memorizar histórico de palavras-passe:** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
 
 
 ## <a name="device-health-settings"></a>Definições de estado de funcionamento do dispositivo
@@ -179,16 +177,24 @@ Para obter informações sobre como funciona o serviço HAS, veja [Health Attest
 
 Especifique o número major.minor.build aqui. O número de versão tem de corresponder à versão devolvida pelo comando ```winver```.
 
-Quando um dispositivo tem uma versão anterior à versão de SO especificada, é reportado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
+Quando um dispositivo tem uma versão anterior à versão de SO especificada, é comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
 - **Versão máxima de SO permitida:** - suportada no Windows 8.1 e Windows 10.
 
 Quando um dispositivo está a utilizar uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
-Para localizar a versão de SO a utilizar nas definições **SO mínimo obrigatório** e **Versão máxima de SO permitida**, execute o comando **winver** na linha de comandos. O comando winver devolve a versão comunicada do SO.+
+Para localizar a versão de SO a utilizar para as definições **SO mínimo obrigatório** e **Versão máxima de SO permitida**, execute o comando **winver** a partir da linha de comandos. O comando winver devolve a versão comunicada do SO.+
 
 - Os PCs Windows 8.1 devolvem a versão **3**. Se a regra de versão de SO estiver definida como Windows 8.1 para o Windows, o dispositivo é comunicado como não conforme, mesmo que tenha o sistema operativo Windows 8.1.
 - Nos PCs com o Windows 10, a versão deve ser definida como &quot;10.0&quot; + o número de Compilação do SO devolvido pelo comando winver.
+
+## <a name="windows-holographic-for-business-support"></a>Suporte do Windows Holographic for Business
+
+O Windows Holographic for Business suporta a seguinte definição:
+
+- Segurança do Sistema/Encriptação
+
+  **Encriptação do armazenamento de dados no dispositivo**.
 
 <!--- ## Next steps
 

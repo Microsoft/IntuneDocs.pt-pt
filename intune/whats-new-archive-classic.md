@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: af181ce63900257699e88343b2de2ac4a28685de
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4386f38fc1311bcb01e03de8b889a82056795ce3
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
@@ -286,7 +286,7 @@ Foram atualizados os seguintes artigos:
 
 Os seguintes artigos são novas adições à biblioteca de documentos:
 
-* [Plugin Cordova do SDK da Aplicação Intune](app-sdk-cordova.md)
+* [Plug-in Cordova do SDK da Aplicação Intune](app-sdk-cordova.md)
 * [Componente Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md)
 
 #### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>Barra de progresso ao iniciar o Portal da Empresa no iOS <!--665978-->
@@ -351,7 +351,7 @@ A nova aplicação também irá permitir aos utilizadores tirarem partido de fun
 > [!IMPORTANT]
 > __Uma Atualização no Intune e no Android for Work__ – Embora possa implementar aplicações Android for Work com uma ação de __Obrigatório__, só poderá implementar aplicações como __Disponível__ se os seus grupos do Intune tiverem sido migrados para a nova experiência de grupos do Azure AD.
 
-__O plug-in Cordova para o SDK da Aplicação Intune agora suporta MAM sem inscrição__ Os programadores de aplicações agora podem utilizar o SDK da Aplicação do Intune para o plug-in Cordova para ativar a funcionalidade MAM sem inscrição de dispositivos nas respetivas aplicações baseadas em Cordova para Android e iOS. Pode encontrar o SDK da Aplicação do Intune para o plug-in Cordova [aqui](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
+__O plug-in Cordova do SDK da Aplicação Microsoft Intune agora suporta MAM sem inscrição__ Os programadores de aplicações agora podem utilizar o plug-in Cordova do SDK da Aplicação Intune para ativar a funcionalidade MAM sem inscrição de dispositivos nas respetivas aplicações baseadas em Cordova para Android e iOS. Pode encontrar o plug-in Cordova do SDK da Aplicação Intune [aqui](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
 __O componente Xamarin para o SDK da Aplicação Intune agora suporta MAM sem inscrição__ Os programadores de aplicações agora podem utilizar o componente Xamarin do SDK da Aplicação do Intune para ativar a funcionalidade MAM sem inscrição de dispositivos nas respetivas aplicações baseadas em Xamarin para Android e iOS. Pode encontrar o componente Xamarin do SDK da Aplicação do Intune [aqui](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
 

@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2647875ed6753cf437d4487faf0137e28bd40f43
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -61,7 +61,7 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![diagrama a mostrar a política de acesso condicional a bloquear o acesso quando o dispositivo é identificado como não conforme devido a aplicações maliciosas no dispositivo](./media/malicious-apps-blocked.png)
+![diagrama a mostrar a política de acesso condicional a bloquear o acesso quando o dispositivo é identificado como não conforme devido a aplicações maliciosas no mesmo](./media/malicious-apps-blocked.png)
 
 **Acesso concedido na remediação:**
 

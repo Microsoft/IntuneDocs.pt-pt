@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações Android para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -50,7 +50,7 @@ Antes de executar a ferramenta, consulte as [Considerações de segurança para 
     > [!NOTE]
     > Nalguns casos, a versão de 32 bits do Java pode originar problemas de memória. É boa ideia instalar a versão de 64 bits.
 
-- O Android exige que todos os pacotes de aplicação (.apk) sejam assinados. Para **reutilizar** certificados existentes e obter orientações gerais sobre certificados de assinatura, veja a secção [Reutilizar certificados de assinatura e encapsular aplicações](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A ferramenta de chave executável Java keytool.exe serve para gerar as **novas** credenciais necessárias para assinar a aplicação de saída encapsulada. Todas as palavras-passe que definir têm de ser seguras, mas anote-as, uma vez que irá precisar delas mais tarde para executar a Ferramenta de Encapsulamento de Aplicações.
+- O Android exige que todos os pacotes de aplicação (.apk) sejam assinados. Para **reutilizar** certificados existentes e obter orientações gerais sobre certificados de assinatura, veja a secção [Reutilizar certificados de assinatura e encapsular aplicações](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A ferramenta de chave executável Java keytool.exe serve para gerar as **novas** credenciais necessárias para assinar a aplicação de saída encapsulada. Todas as palavras-passe que definir têm de ser seguras, mas anote-as, uma vez que irá precisar delas mais tarde para executar a Ferramenta de Encapsulamento de Aplicações.
 
 ## <a name="install-the-app-wrapping-tool"></a>instalar a Ferramenta de Encapsulamento de Aplicações
 
@@ -119,7 +119,7 @@ Os principais cenários nos quais teria de encapsular novamente as suas aplicaç
 * A Ferramenta de Encapsulamento de Aplicações do Intune para Android lançou uma nova versão com correções de erros importantes ou funcionalidades específicas e novas da política de proteção de aplicações do Intune. Isto ocorre a cada 6 a 8 semanas através do repositório do GitHub para a [Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 As melhores práticas para encapsular novamente incluem: 
-* Manter certificados de assinatura utilizados durante o processo de compilação, veja [Reutilizar certificados de assinatura e encapsular aplicações](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* Manter certificados de assinatura utilizados durante o processo de compilação, veja [Reutilizar certificados de assinatura e encapsular aplicações](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilizar certificados de assinatura e encapsular aplicações
 O Android exige que todas as aplicações sejam assinadas por um certificado válido para poderem ser instaladas em dispositivos Android.
@@ -158,7 +158,7 @@ Seguem-se orientações para exigir pedidos de início de sessão ao utilizador 
 ### <a name="working-with-the-intune-sdk"></a>Trabalhar com o SDK do Intune
 Estas instruções são específicas para todas as aplicações Android e Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
 
-1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > O termo "ID de cliente" ligado à sua aplicação é o mesmo que o termo "ID de aplicação" do Portal do Azure ligado à sua aplicação. 
 * Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.
@@ -174,4 +174,4 @@ Estas instruções são específicas para todas as aplicações Android e Xamari
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)
 
-- [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Guia para programadores do SDK da Aplicação do Microsoft Intune para Android](app-sdk-android.md)

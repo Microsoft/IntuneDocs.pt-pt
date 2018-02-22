@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ee11809349999a795aca0a373724ce18eedbe65
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Criar Política de conformidade do dispositivo do Lookout no Intune
 
@@ -39,9 +39,9 @@ Como parte da configuração da Defesa Contra Ameaças para Dispositivos Móveis
   ![captura de ecrã que apresenta as definições da regra de proteção contra ameaças de dispositivos](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Selecione o **Nível de Ameaça Máximo permitido**:
-  * **Nenhum (Seguro)**: este é o nível mais seguro.  O dispositivo não pode aceder aos recursos da empresa se contiver ameaças.  Se forem encontradas ameaças, o dispositivo será avaliado como não conforme.  
+  * **Nenhum (Seguro)**: este é o nível mais seguro.  O dispositivo não pode aceder aos recursos da empresa se contiver ameaças.  Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.  
   * **Baixo**: o dispositivo está em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
-  * **Médio**: o dispositivo está em conformidade se as ameaças encontradas forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o dispositivo será determinado como não conforme.
+  * **Médio**: o dispositivo está em conformidade se as ameaças encontradas forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
   * **Alto**: este é o nível menos seguro. Este nível permite que todos os níveis de ameaça estejam presentes e utiliza a proteção contra ameaças móveis do Lookout apenas para a criação de relatórios.
 
 ![captura de ecrã que apresenta a opção do nível de ameaça nas definições da regra de proteção contra ameaças de dispositivos](../media/mtp/mtp-compliance-policy-setting.png)
@@ -53,7 +53,7 @@ Para ver o estado de conformidade de um dispositivo, aceda à [consola do admini
 
 ![captura de ecrã da página do dispositivo na consola de administração do Intune que apresenta o estado de conformidade de um dispositivo](../media/mtp/mtp-device-status-intune-console.png)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 * Criar uma política de acesso condicional
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange no local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)

@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
@@ -45,8 +44,9 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 - O Windows Update suporta as seguintes versões do Windows 10:
     - Windows 10
     - Windows 10 Team (para dispositivos Surface Hub)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Os dispositivos que executam o Windows 10 Mobile e Windows 10 Holographic não são suportados.
+ Os dispositivos com o Windows 10 Mobile não são suportados.
 
 - Nos dispositivos Windows, a definição **Comentários e diagnósticos** > **Dados de diagnóstico e utilização** tem de ser definida, pelo menos, para **Básico**.
 
@@ -89,8 +89,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
     Geralmente, as Atualizações de Funcionalidades são novas funcionalidades do Windows. Depois de configurar a definição **Canal de manutenção** (Via de Atualizações Semianuais (Direcionada) ou Via de Atualizações Semianuais), pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Funcionalidades após serem disponibilizadas pela Microsoft no Windows Update.
 
-    Por exemplo:  
-    **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais (Direcionada) e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. O dispositivo só irá receber a atualização em fevereiro – 30 dias mais tarde.
+    Por exemplo, **se o canal de Manutenção estiver definido para Via de Atualizações Semianuais (Direcionada) e o período de diferimento for de 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. O dispositivo só irá receber a atualização em fevereiro – 30 dias mais tarde.
 
     **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada na Via de Atualizações Semianuais. O dispositivo irá receber a Atualização de Funcionalidades 30 dias após o lançamento na Via de Atualizações Semianuais e será atualizado em maio.
 
@@ -154,3 +153,11 @@ Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atuali
 > [!IMPORTANT]
 > Quando emitir um comando de pausa, os dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo.
 > Além disso, se um dispositivo de destino for desativado quando emitir o comando de pausa, ao desativá-lo, este poderá transferir e instalar atualizações agendadas antes do registo no Intune.
+
+## <a name="windows-holographic-for-business-support"></a>Suporte do Windows Holographic for Business
+
+O Windows Holographic for Business suporta as seguintes definições:
+
+- **Comportamento de atualização automática**
+- **Atualizações de produtos da Microsoft**
+- **Canal de serviço**

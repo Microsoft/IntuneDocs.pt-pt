@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -62,7 +62,7 @@ Também pode ver as definições e políticas de conformidade específicas que s
 
 -   **Período de tolerância:** o dispositivo foi visado pelo administrador com uma ou mais definições de política de conformidade do dispositivo, mas o utilizador ainda não aplicou as políticas, o que significa que o dispositivo não está conforme, mas está no período de tolerância definido pelo administrador.
 
-    -   Saiba mais sobre as Ações para os dispositivos não conformes.
+    -   Saiba mais sobre as Ações para dispositivos não conformes.
 
 -   **Dispositivos não sincronizados:** o dispositivo não comunicou o seu estado de política de conformidade do dispositivo devido a um dos motivos seguintes:
 
@@ -133,7 +133,7 @@ Quando clica na definição da política do dispositivo, pode ver que o nome da 
 
 ### <a name="per-policy-device-compliance-report"></a>Relatório de conformidade do dispositivo por política
 
-Este relatório apresenta a vista da política por conformidade e o número total de dispositivos em cada estado de conformidade. O mosaico **Conformidade de política** está disponível no **Dashboard de conformidade do dispositivo** e mostra todas as políticas criadas anteriormente pelo administrador, as plataformas em que a política é aplicada, o número de dispositivos conformes e o número de dispositivos não conformes.
+Este relatório apresenta a vista da política por conformidade e o número total de dispositivos em cada estado de conformidade. O mosaico **Conformidade com a política** está disponível no **Dashboard Conformidade do dispositivo** e mostra todas as políticas criadas anteriormente pelo administrador, as plataformas em que a política está aplicada, o número de dispositivos conformes e o número de dispositivos não conformes.
 
 ![Relatório de conformidade do dispositivo por política](./media/idc-8.png)
 
@@ -143,7 +143,7 @@ Depois de clicar no mosaico Conformidade de política, clique numa das política
 
 ### <a name="per-setting-device-compliance-report"></a>Relatório de conformidade do dispositivo por definição
 
-Este relatório permite-lhe ver o número total de dispositivos em cada estado de conformidade por definição de conformidade. O mosaico **Conformidade das definições** está disponível no **Dashboard de conformidade do dispositivo** e mostra todas as definições da política de conformidade do dispositivo de todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as definições de política foram aplicadas e o número de dispositivos não conformes.
+Este relatório permite-lhe ver o número total de dispositivos em cada estado de conformidade por definição de conformidade. O mosaico **Conformidade das definições** está disponível no **Dashboard Conformidade do dispositivo** e mostra todas as definições da política de conformidade do dispositivo de todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as definições de política foram aplicadas e o número de dispositivos não conformes.
 
 ![Relatório de conformidade do dispositivo por definição](./media/idc-10.png)
 

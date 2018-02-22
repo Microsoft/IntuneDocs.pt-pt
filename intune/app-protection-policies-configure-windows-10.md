@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10
 
@@ -50,7 +50,7 @@ Ative a gestão de aplicações móveis (MAM) para o Windows 10 ao definir o for
     O URL do ponto final de inscrição da MAM. O ponto final de inscrição é utilizado para inscrever dispositivos para gestão com a MAM.
 
     **URL de conformidade da MAM**  
-      O URL do ponto final de conformidade da MAM. Se um utilizador de um dispositivo não conforme for impedido de aceder a um recurso, é apresentada uma ligação para o URL de conformidade ao mesmo. Os utilizadores podem aceder a este URL alojado pela MAM para saberem o motivo do dispositivo ser considerado não conforme. Os utilizadores também podem iniciar a remediação de gestão personalizada para tornarem o dispositivo conforme e assim continuarem a aceder a recursos.
+      O URL do ponto final de conformidade da MAM. Se um utilizador de um dispositivo não conforme for impedido de aceder a um recurso, será apresentada uma ligação para o URL de conformidade ao mesmo. Os utilizadores podem aceder a este URL alojado pela MAM para saberem o motivo de o dispositivo ser considerado não conforme. Os utilizadores também podem iniciar a remediação de gestão personalizada para tornarem o dispositivo conforme e assim continuarem a aceder a recursos.
 
 5.  Clique em **Guardar**.
 

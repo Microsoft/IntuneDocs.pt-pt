@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Utilizar o Windows Hello para Empresas
 
@@ -71,7 +69,7 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
      - **Obrigatório** (predefinição). Apenas os dispositivos com um TPM acessível podem aprovisionar o Windows Hello para Empresas.
      - **Preferencial**. Os dispositivos tentam utilizar primeiro um TPM. Se não estiver disponível, podem utilizar a encriptação de software.
 
- - **Pedir comprimento mínimo do PIN**/**Pedir comprimento máximo do PIN**. Configura os dispositivos para utilizar os comprimentos mínimo e máximo do PIN que especificar para ajudar a garantir o início de sessão seguro. O comprimento predefinido do PIN é de 6 carateres, mas pode impor um comprimento mínimo de 4 carateres. O comprimento máximo do PIN é de 127 carateres.
+ - **Pedir comprimento mínimo do PIN**/**Pedir comprimento máximo do PIN**. Configura os dispositivos para utilizar os comprimentos mínimo e máximo do PIN que especificar para ajudar a garantir o início de sessão seguro. O comprimento predefinido do PIN é de seis carateres, mas pode impor um comprimento mínimo de quatro carateres. O comprimento máximo do PIN é de 127 carateres.
 
  - **Pedir letras minúsculas no PIN**/**Pedir letras maiúsculas no PIN**/**Pedir carateres especiais no PIN**. Pode impor um PIN mais forte ao exigir a utilização de letras maiúsculas, letras minúsculas e carateres especiais no PIN. Escolha entre:
 
@@ -94,6 +92,18 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
  - **Utilizar o início de sessão no telefone**. Se esta opção estiver definida como **Sim**, os utilizadores podem utilizar um passaporte remoto para servir de dispositivo complementar portátil para autenticação de computadores de secretária. O computador de secretária tem de estar associado ao Azure Active Directory e o dispositivo complementar tem de ser configurado com um PIN do Windows Hello para Empresas.
 
+## <a name="windows-holographic-for-business-support"></a>Suporte do Windows Holographic for Business
+
+O Windows Holographic for Business suporta as seguintes definições do Windows Hello para Empresas:
+
+- Utilizar um Trusted Platform Module (TPM)
+- Comprimento mínimo do PIN
+- Comprimento máximo do PIN
+- Letras em minúsculas no PIN
+- Letras em maiúsculas no PIN
+- Carateres especiais no PIN
+- Expiração do PIN (dias)
+- Memorizar histórico de PIN
 
 ## <a name="further-information"></a>Informações adicionais
 Para obter mais informações sobre o Microsoft Passport, veja [o guia](https://technet.microsoft.com/library/mt589441.aspx) na documentação do Windows 10.
