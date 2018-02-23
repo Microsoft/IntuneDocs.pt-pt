@@ -2,8 +2,8 @@
 title: "Atribuir licenças do Intune"
 description: "Atribuir licenças a utilizadores na sua subscrição do Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd407b8b933c7edce449cd25a9fbd53f4299fcc3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>Atribuir licenças do Intune às contas de utilizador
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Quer adicione utilizadores manualmente ou sincronize a partir do Active Directory no local, tem primeiro de atribuir a cada utilizador uma licença do Intune antes de os utilizadores poderem inscrever os respetivos dispositivos no Intune.
+Quer adicione utilizadores manualmente ou sincronize a partir do Active Directory no local, tem primeiro de atribuir a cada utilizador uma licença do Intune antes de os utilizadores poderem inscrever os respetivos dispositivos no Intune. Para obter uma lista das licenças, veja [Licenses that include Intune (Licenças que incluem o Intune)](licenses.md).
 
 ## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Atribuir uma licença do Intune no Centro de administração do Office 365
 

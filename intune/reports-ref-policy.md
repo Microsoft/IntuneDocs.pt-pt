@@ -5,20 +5,19 @@ keywords: "Armazém de Dados do Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
@@ -66,9 +65,9 @@ A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do n
 | Error |Número de Dispositivos exclusivos no estado com erros. |10 |
 | Failed |Número de Dispositivos exclusivos no estado com falhas. |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-A entidade **UserConfigurationProfileDeviceActivity** apresenta uma lista do número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um utilizador estiver no estado com êxito em todas as políticas atribuídas, sobe o contador com êxito em um para esse dia. Se um utilizador tem dois perfis atribuídos, um no estado com êxito e outro no estado com erros, contamos o utilizador no estado com erros.  A entidade **UserConfigurationProfileDeviceActivity** apresenta uma lista de quantos utilizadores estão em que estado num determinado dia nos últimos 30 dias.
+
+A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista do número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um utilizador estiver no estado com êxito em todas as políticas atribuídas, sobe o contador com êxito em um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros.  A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista de quantos utilizadores estão em que estado num determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
@@ -90,4 +89,77 @@ A entidade **PolicyTypeActivity** apresenta uma lista do número cumulativo de d
 | Pending |Número de dispositivos exclusivos no estado pendente. |123 |
 | Succeeded |Número de dispositivos exclusivos no estado com êxito. |12 |
 | Error |Número de dispositivos exclusivos no estado com erros. |10 |
-| Fail- |Número de dispositivos exclusivos no estado com falhas. |2 |
+| Failed |Número de dispositivos exclusivos no estado com falhas. |2 |
+
+## <a name="compliance-policy"></a>Política de Conformidade
+
+A Referência da API de Políticas de Conformidade contém entidades que fornecem informações de estado sobre as políticas de conformidade atribuídas a dispositivos.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+A tabela seguinte apresenta um resumo dos estados de atribuição de políticas de conformidade a dispositivos. Esta tabela indica a contagem de dispositivos detetados em cada estado de conformidade.
+
+
+|Propriedade     |Descrição  |Exemplo  |
+|---------|---------|---------|
+|DateKey  |Chave da data em que o resumo da política de conformidade foi criado.|20161204 |
+|Unknown  |Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos. |5|
+|NotApplicable      |Número de dispositivos em que as políticas de conformidade visadas pelo administrador não são aplicáveis.|201 |
+|Compliant      |Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador. |4083 |
+|InGracePeriod      |Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador. |57|
+|NonCompliant      |Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador.|43 |
+|Error      |Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro. |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+A tabela seguinte apresenta um resumo dos estados de atribuição de políticas de conformidade a dispositivos por política e por tipo de política. Esta tabela indica a contagem de dispositivos detetados em cada estado de conformidade para todas as políticas de conformidade atribuídas.
+
+
+
+|Propriedade  |Descrição  |Exemplo  |
+|---------|---------|---------|
+|DateKey  |Chave da data em que o resumo da política de conformidade foi criado.|20161219|
+|PolicyKey     |Chave da política de conformidade para a qual o resumo foi criado. |10178 |
+|PolicyPlatformKey      |Chave do tipo de plataforma da política de conformidade para a qual o resumo foi criado.|5|
+|Unknown     |Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.|13|
+|NotApplicable     |Número de dispositivos em que as políticas de conformidade visadas pelo administrador não são aplicáveis.|3|
+|Compliant      |Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador. |45|
+|InGracePeriod      |Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador. |3|
+|NonCompliant      |Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador.|7|
+|Error      |Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro. |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+A tabela seguinte contém os tipos de plataforma de todas as políticas atribuídas. Os tipos de plataforma das políticas que nunca foram atribuídos a um dispositivo não são apresentados nesta tabela.
+
+
+|Propriedade  |Descrição  |Exemplo  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |A chave exclusiva do tipo de plataforma da política. |20170519 |
+|PolicyPlatformTypeId      |O identificador exclusivo do tipo de plataforma da política.|1|
+|PolicyPlatformTypeName      |O nome do tipo de plataforma da política.|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+A tabela seguinte mostra o número de dispositivos no estado com êxito, pendente, com falhas ou com erros por dia. O número apresentado reflete os perfis de dados por Tipo de Política. Por exemplo, se um dispositivo estiver no estado com êxito em todas as políticas atribuídas, o contador de casos com êxito tem um incremento de um para esse dia. Se um dispositivo tiver dois perfis atribuídos, um no estado com êxito e outro num estado com erros, a entidade incrementa o contador do estado com êxito (Succeeded) e coloca o dispositivo no estado com erros. A entidade PolicyDeviceActivity apresenta uma lista de quantos dispositivos estão em cada um dos estados num determinado dia nos últimos 30 dias.
+
+|Propriedade  |Descrição  |Exemplo  |
+|---------|---------|---------|
+|DateKey|Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.|20160703|
+|Pending|Número de Dispositivos exclusivos no estado pendente.|123|
+|Succeeded|Número de Dispositivos exclusivos no estado com êxito.|12|
+PolicyKey|A chave de política pode ser acompanhada pela Política para obter o policyName.|Linha de base do Windows 10|
+|Error|Número de Dispositivos exclusivos no estado com erros.|10|
+|Failed|Número de Dispositivos exclusivos no estado com falhas.|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+A tabela seguinte mostra o número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia. O número apresentado reflete os perfis de dados por Tipo de Política. Por exemplo, se um utilizador estiver no estado com êxito em todas as políticas atribuídas, sobe o contador com êxito em um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros. A entidade PolicyUserActivity apresenta uma lista de quantos utilizadores estão em cada um dos estados num determinado dia nos últimos 30 dias.
+
+|Propriedade  |Descrição  |Exemplo  |
+|---------|---------|---------|
+|DateKey|Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.|20160703|
+|Pending|Número de Dispositivos exclusivos no estado pendente.|123|
+|Succeeded|Número de Dispositivos exclusivos no estado com êxito.|12|
+PolicyKey|A chave de política pode ser acompanhada pela Política para obter o policyName.|Linha de base do Windows 10|
+|Error|Número de Dispositivos exclusivos no estado com erros.|10|
