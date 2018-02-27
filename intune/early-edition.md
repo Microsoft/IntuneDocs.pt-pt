@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Edição antecipada do Microsoft Intune – fevereiro de 2018
 
@@ -40,6 +40,10 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Novo gráfico de tendências de falhas e tabela de motivos de falhas em novas inscrições <!-- 1471783 -->
+
+Na página Descrição Geral de Inscrições, poderá ver as tendências de falhas de inscrições e as cinco principais causas de falhas. Ao clicar no gráfico ou na tabela, poderá pormenorizar os detalhes para encontrar conselhos de resolução de problemas e sugestões de remediação.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedir os utilizadores finais de adicionarem ou removerem contas no perfil profissional <!-- 1728700 -->    
 Quando implementar a aplicação Gmail num perfil do Android for Work, pode impedir que os utilizadores finais adicionem ou removam contas no perfil profissional ao utilizar a definição **Adicionar e remover contas** no perfil de restrições do Dispositivo Android for Work.
@@ -77,9 +81,6 @@ Por exemplo, pode adicionar o pacote WebEx como uma exceção à política de tr
 
 Poderá personalizar a cor do tema nas aplicações do Portal da Empresa com códigos hexadecimais. Ao introduzir o seu código hexadecimal, o Intune irá determinar a cor do texto que fornece o maior nível de contraste entre a cor do texto e a cor de fundo segundo os [padrões do WCAG 2.0](http://www.w3.org/TR/WCAG20). Pode pré-visualizar a cor do texto e o logótipo da empresa relativamente à cor em **Aplicações móveis** > **Portal da Empresa**. 
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selecionar as categorias de dispositivos através das definições de Acesso Profissional ou Escolar<!-- 1058963 --> 
-Se tiver ativado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/intune/device-group-mapping), será pedido aos utilizadores no Windows 10 que selecionem uma categoria de dispositivos após a inscrição através do botão **Ligar** em **Definições** > **Contas** > **Acesso profissional ou escolar** ou durante a configuração inicial.
-
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Novas definições do Windows Defender Credential Guard foram adicionadas às definições de proteção de ponto final <!--1102252 --> 
 
 As novas definições do [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) serão adicionadas a **Configuração de dispositivos** > **Perfis** > **Proteção de ponto final**. Serão adicionadas as seguintes definições: 
@@ -91,7 +92,7 @@ As novas definições do [Windows Defender Credential Guard](https://docs.micros
 
   - A opção "Ativada com bloqueio UEFI" garante que o Credential Guard não pode ser desativado com a chave de registo ou através da utilização da Política de Grupo. Para desativar o Credential Guard após a utilização desta definição, terá de definir a Política de Grupo para "Desativada" e remover a funcionalidade de segurança de cada computador, com um utilizador fisicamente presente, para limpar a configuração persistente na UEFI. Enquanto a configuração da UEFI persistir, o Credential Guard estará ativado.
 
-  - A opção "Ativada sem bloqueio" permite que o Credential Guard seja desativado remotamente através da utilização da Política de Grupo. Os dispositivos que utilizam esta definição têm de ter, pelo menos, o Windows 10 (Versão 1511).
+  - A opção "Ativada sem bloqueio" permite que o Credential Guard seja desativado remotamente através da utilização da Política de Grupo. Os dispositivos que utilizam esta definição têm de ter pelo menos o Windows 10 (Versão 1511).
 
   - A opção "Não Configurado" deixa a definição de política indefinida. A Política de Grupo não escreve a definição de política no registo, pelo que não tem qualquer impacto nos computadores ou utilizadores. Se existir uma definição atual no registo, não será modificada.
 
@@ -300,7 +301,7 @@ Neste momento, não existem avisos ativos.
 
 
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 Veja [Novidades do Microsoft Intune](whats-new.md) para obter detalhes sobre os desenvolvimentos recentes.
 
 

@@ -3,10 +3,10 @@ title: "Preparar-se para configurar políticas de proteção de aplicações par
 titlesuffix: Azure portal
 description: "Configurar o fornecedor de gestão de aplicações móveis (MAM) no Azure AD"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10
 
@@ -40,20 +40,20 @@ Ative a gestão de aplicações móveis (MAM) para o Windows 10 ao definir o for
 
 4. Configure as definições no grupo **Restaurar URLs MAM predefinidos** no painel **Configurar**.
 
-    **Âmbito de utilizador MAM**  
-      Utilize a inscrição automática MAM para gerir dados empresariais nos dispositivos Windows dos seus funcionários. A inscrição automática MAM será configurada para cenários de Bring Your Own Device.<ul><li>**Nenhum**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li><li>**Alguns**<br>Selecione grupos do Azure AD que contenham utilizadores que serão inscritos na MAM.</li><li>**Todos**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li></ul>
+   **Âmbito de utilizador MAM**  
+   Utilize a inscrição automática MAM para gerir dados empresariais nos dispositivos Windows dos seus funcionários. A inscrição automática MAM será configurada para cenários de Bring Your Own Device.<ul><li>**Nenhum**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li><li>**Alguns**<br>Selecione grupos do Azure AD que contenham utilizadores que serão inscritos na MAM.</li><li>**Todos**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li></ul>
 
-    **URL dos termos de utilização da MAM**  
-     O URL do ponto final dos termos de utilização da MAM. O ponto final dos termos de utilização é utilizado para apresentar os termos de serviço aos utilizadores finais antes de inscrever os respetivos dispositivos para gestão. O texto dos termos de utilização informa os utilizadores sobre as políticas impostas ao dispositivo móvel.
+   **URL dos termos de utilização da MAM**  
+   O URL dos termos de utilização da MAM não é suportado no Microsoft Intune. Esta caixa de introdução tem de ser deixada em branco para aplicar políticas de proteção.
 
-    **URL de deteção da MAM**  
-    O URL do ponto final de inscrição da MAM. O ponto final de inscrição é utilizado para inscrever dispositivos para gestão com a MAM.
+   **URL de deteção da MAM**  
+   O URL do ponto final de inscrição da MAM. O ponto final de inscrição é utilizado para inscrever dispositivos para gestão com a MAM.
 
-    **URL de conformidade da MAM**  
-      O URL do ponto final de conformidade da MAM. Se um utilizador de um dispositivo não conforme for impedido de aceder a um recurso, será apresentada uma ligação para o URL de conformidade ao mesmo. Os utilizadores podem aceder a este URL alojado pela MAM para saberem o motivo de o dispositivo ser considerado não conforme. Os utilizadores também podem iniciar a remediação de gestão personalizada para tornarem o dispositivo conforme e assim continuarem a aceder a recursos.
+   **URL de conformidade da MAM**  
+   O URL de conformidade da MAM não é suportado no Microsoft Intune. Esta caixa de introdução tem de ser deixada em branco para aplicar políticas de proteção. 
 
 5.  Clique em **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 [Criar uma política de proteção de aplicações WIP](windows-information-protection-policy-create.md)

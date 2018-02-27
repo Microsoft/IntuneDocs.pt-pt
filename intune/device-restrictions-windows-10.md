@@ -1,24 +1,23 @@
 ---
 title: "Definições de restrição de dispositivos no Intune para dispositivos Windows 10"
 titlesuffix: Azure portal
-description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Windows 10.\""
+description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições e a funcionalidade em dispositivos Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **Captura de ecrã (apenas dispositivos móveis)** – permite que o utilizador faça uma captura do ecrã do dispositivo como uma imagem.
 - **Copiar e colar (apenas dispositivos móveis)** – Permita ações de copiar e colar entre aplicações no dispositivo.
 - **Anular inscrições manualmente** – Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
+   - Esta definição de política não é aplicada se o computador estiver associado ao Azure Active Directory e a inscrição automática estiver ativada. 
+   - Esta definição de política não se aplica a computadores a executar o Windows 10 Home.
 - **Instalação do certificado de raiz manual (apenas dispositivos móveis)** – impede o utilizador de instalar manualmente os certificados de raiz e os certificados CAP intermédios.
 - **Submissão de dados de diagnóstico** – Os valores possíveis são:
     - **Nenhum** – não são enviados dados à Microsoft
@@ -68,7 +69,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 ## <a name="personalization"></a>Personalização
 
-- **URL da imagem de fundo do ambiente de trabalho (apenas no ambiente de trabalho)** – especifique o URL para uma imagem em formato PNG, JPG ou JPEG que pretenda utilizar como a imagem de fundo do ambiente de trabalho do Windows. Os utilizadores não o podem alterar.
+- **URL da imagem de fundo do ambiente de trabalho (apenas no ambiente de trabalho)** – especifique o URL para uma imagem em formato JPEG que pretenda utilizar como a imagem de fundo do ambiente de trabalho do Windows. Os utilizadores não o podem alterar.
 
 ## <a name="privacy"></a>Privacidade
 
