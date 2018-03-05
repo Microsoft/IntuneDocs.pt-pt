@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gerir aplicações da Loja Microsoft para Empresas"
 description: "Ligue o Microsoft Intune à Loja Microsoft para Empresas se quiser gerir e implementar aplicações compradas em volume a partir da consola do Intune"
 keywords: 

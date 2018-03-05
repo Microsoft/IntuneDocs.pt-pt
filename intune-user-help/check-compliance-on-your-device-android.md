@@ -1,4 +1,4 @@
----
+﻿---
 title: "Verificação de conformidade no seu dispositivo Android | Documentos da Microsoft"
 description: 
 keywords: 

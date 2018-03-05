@@ -1,4 +1,4 @@
----
+﻿---
 title: "Especificar números IMEI"
 description: "O Microsoft Intune permite aos administradores importar números IMEI para plataformas de dispositivos móveis para ajudar a identificar os dispositivos móveis pertencentes à empresa"
 keywords: 

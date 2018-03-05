@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurar perfis de certificado
 description: Saiba como criar um perfil de certificado do Intune.
 keywords: 

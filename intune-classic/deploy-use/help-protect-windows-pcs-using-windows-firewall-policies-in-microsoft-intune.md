@@ -1,4 +1,4 @@
----
+﻿---
 title: "Políticas de firewall para PCs Windows"
 description: "O Intune pode ajudá-lo a proteger os PCs que gere com o cliente Intune de várias formas, incluindo ajudá-lo a configurar as definições da Firewall do Windows."
 keywords: 

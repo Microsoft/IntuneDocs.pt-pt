@@ -1,4 +1,4 @@
----
+﻿---
 title: "Compreender os seus dispositivos com o inventário"
 description: "Utilize o Intune para ver informações sobre o hardware dos dispositivos que gere."
 keywords: 

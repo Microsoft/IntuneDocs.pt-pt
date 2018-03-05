@@ -1,4 +1,4 @@
----
+﻿---
 title: "Definições de política do Exchange ActiveSync"
 description: "Utilize a política do Exchange ActiveSync do Intune para configurar definições que lhe permitam controlar funcionalidades em dispositivos geridos pelo Exchange ActiveSync."
 keywords: 

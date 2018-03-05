@@ -1,4 +1,4 @@
----
+﻿---
 title: Extinguir dispositivos
 description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Aplicações permitidas e bloqueadas para KNOX"
 description: "Perfil personalizado para criar uma lista de aplicações permitidas e bloqueadas para KNOX."
 keywords: 

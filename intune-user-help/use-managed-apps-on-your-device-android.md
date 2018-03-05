@@ -1,4 +1,4 @@
----
+﻿---
 title: "Utilizar aplicações geridas no seu dispositivo Android | Documentos da Microsoft"
 description: 
 keywords: 

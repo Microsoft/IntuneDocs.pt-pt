@@ -1,4 +1,4 @@
----
+﻿---
 title: "O que acontece durante a reposição do dispositivo? | Documentos da Microsoft"
 description: "Saiba mais sobre o que acontece quando repõe o dispositivo em cada uma das plataformas suportadas do Intune."
 keywords: 

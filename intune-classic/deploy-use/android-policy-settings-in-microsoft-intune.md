@@ -1,4 +1,4 @@
----
+﻿---
 title: "Definições da política para Android e Samsung KNOX"
 description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android que gere com o Intune."
 keywords: 

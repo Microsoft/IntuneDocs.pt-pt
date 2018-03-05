@@ -1,4 +1,4 @@
----
+﻿---
 title: "Bloqueio remoto e reposição do código de acesso"
 description: "O Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso."
 keywords: 

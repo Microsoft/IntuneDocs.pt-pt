@@ -1,4 +1,4 @@
----
+﻿---
 title: "Utilizar políticas de configuração de aplicações móveis iOS"
 description: "Utilize políticas de configuração de aplicações móveis no Intune para disponibilizar definições que poderão ser necessárias quando os utilizadores executarem uma aplicação iOS."
 keywords: 

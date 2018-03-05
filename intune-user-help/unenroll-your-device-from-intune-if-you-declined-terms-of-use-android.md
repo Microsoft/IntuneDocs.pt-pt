@@ -1,4 +1,4 @@
----
+﻿---
 title: "Anular a inscrição do dispositivo caso tenha recusado os Termos de Utilização | Documentos da Microsoft"
 description: 
 keywords: 

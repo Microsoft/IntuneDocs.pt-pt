@@ -1,4 +1,4 @@
----
+﻿---
 title: "Anular a inscrição do seu dispositivo iOS no Intune | Documentos da Microsoft"
 description: "Descreve como anular a inscrição de dispositivos iOS no Intune"
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Regras de acesso ao Exchange para dispositivos móveis"
 description: "As regras de acesso do Exchange ActiveSync para permitir ou bloquear as ligações do dispositivo com o EAS"
 keywords: 

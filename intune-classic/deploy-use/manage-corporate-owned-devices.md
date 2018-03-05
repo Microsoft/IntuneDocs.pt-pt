@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gerir dispositivos pertencentes à empresa"
 description: "Inscreva dispositivos da empresa de várias formas com base no tipo de dispositivo, na forma como foi comprado e nas necessidades da organização."
 keywords: 

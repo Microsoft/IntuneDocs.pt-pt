@@ -1,4 +1,4 @@
----
+﻿---
 title: "Inscrição direta para dispositivos iOS"
 description: "Utilize a ferramenta Apple Configurator para inscrever diretamente dispositivos iOS pertencentes à empresa com uma política predefinida ao ligá-los por USB a um computador Mac."
 keywords: 

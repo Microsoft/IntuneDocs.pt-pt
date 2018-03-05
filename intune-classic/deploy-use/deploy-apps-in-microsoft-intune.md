@@ -1,4 +1,4 @@
----
+﻿---
 title: "Como implementar aplicações"
 description: "Utilize as informações neste tópico para obter ajuda para implementar aplicações com o Microsoft Intune."
 keywords: 

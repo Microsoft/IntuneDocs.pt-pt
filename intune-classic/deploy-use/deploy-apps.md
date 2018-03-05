@@ -1,4 +1,4 @@
----
+﻿---
 title: "Implementar aplicações"
 description: "Este tópico explica os conceitos que tem de compreender antes de iniciar a implementação de aplicações com o Intune."
 keywords: 

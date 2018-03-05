@@ -1,1 +1,1 @@
-[Site do Learning Ally](http://go.microsoft.com/fwlink/?LinkID=239)
+﻿[Site do Learning Ally](http://go.microsoft.com/fwlink/?LinkID=239)

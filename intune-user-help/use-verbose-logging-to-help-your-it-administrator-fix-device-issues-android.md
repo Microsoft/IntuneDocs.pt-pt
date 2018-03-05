@@ -1,4 +1,4 @@
----
+﻿---
 title: Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso | Documentos da Microsoft
 description: Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso
 keywords: 

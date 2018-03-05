@@ -1,4 +1,4 @@
----
+﻿---
 title: "Extinguir aplicações"
 description: "Saiba como extinguir ou desinstalar aplicações com o Intune."
 keywords: 

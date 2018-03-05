@@ -1,4 +1,4 @@
----
+﻿---
 title: "Políticas para proteger PCs Windows"
 description: "Utilize estas políticas para ajudar a garantir a segurança dos PCs Windows quando são geridos pelo software de cliente do Intune."
 keywords: 

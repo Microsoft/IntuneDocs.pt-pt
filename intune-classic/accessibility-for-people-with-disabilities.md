@@ -1,4 +1,4 @@
----
+﻿---
 title: "Acessibilidade para Pessoas Portadoras de Deficiência"
 description: "Leia informações sobre a acessibilidade dos produtos Microsoft."
 keywords: 

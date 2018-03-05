@@ -1,4 +1,4 @@
----
+﻿---
 title: "Personalizar vistas da consola para funções de administrador"
 description: "Utilize este tópico para obter ajuda para filtrar a vista da consola de administração do Intune de modo a permitir aos administradores verem apenas os itens de que precisam no âmbito das funções deles."
 keywords: 

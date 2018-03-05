@@ -1,4 +1,4 @@
----
+﻿---
 title: "Resolução de problemas de implementação de aplicações"
 description: "Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune"
 keywords: 

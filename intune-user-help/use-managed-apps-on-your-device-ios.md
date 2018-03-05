@@ -1,4 +1,4 @@
----
+﻿---
 title: "Utilizar aplicações geridas no seu dispositivo iOS | Documentos da Microsoft"
 description: 
 keywords: 

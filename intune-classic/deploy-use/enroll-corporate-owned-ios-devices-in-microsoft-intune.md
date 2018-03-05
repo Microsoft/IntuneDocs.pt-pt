@@ -1,4 +1,4 @@
----
+﻿---
 title: "Inscrever dispositivos iOS pertencentes à empresa"
 description: "Inscrição de dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos (DEP) da Apple ou do Apple Configurator"
 keywords: 

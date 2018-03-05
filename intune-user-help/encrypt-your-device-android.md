@@ -1,4 +1,4 @@
----
+﻿---
 title: "Como proteger o seu dispositivo Android com encriptação | Documentos da Microsoft"
 description: Proteger o seu dispositivo Android
 keywords: 

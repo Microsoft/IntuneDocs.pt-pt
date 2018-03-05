@@ -1,4 +1,4 @@
----
+﻿---
 title: "Definir ou alterar o código de acesso | Documentos da Microsoft"
 description: "Definir ou alterar o código de acesso"
 keywords: 

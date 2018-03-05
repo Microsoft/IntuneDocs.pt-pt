@@ -1,4 +1,4 @@
----
+﻿---
 title: Wi-Fi com PSK
 description: "Utilize a Configuração Personalizada para criar um perfil Wi-Fi com uma chave pré-partilhada."
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Planear os grupos de utilizadores e de dispositivos
 description: "Planeie grupos para corresponder às suas necessidades organizacionais."
 keywords: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: O que acontece se repuser o seu dispositivo Windows? | Documentos da Microsoft
 description: 
 keywords: 

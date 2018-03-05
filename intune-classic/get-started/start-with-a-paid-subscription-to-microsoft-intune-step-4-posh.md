@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gerir licenças do Intune através do PowerShell"
 description: "Gerir licenças do Intune através do PowerShell"
 keywords: 

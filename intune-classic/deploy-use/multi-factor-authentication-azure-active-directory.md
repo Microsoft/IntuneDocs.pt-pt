@@ -1,4 +1,4 @@
----
+﻿---
 title: "Autenticação multifator para inscrição de dispositivos no Intune"
 description: "Como solicitar a autenticação multifator no Azure AD para inscrição de dispositivos."
 keywords: 

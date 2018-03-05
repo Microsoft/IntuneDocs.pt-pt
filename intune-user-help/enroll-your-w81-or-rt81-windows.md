@@ -1,4 +1,4 @@
----
+﻿---
 title: Como inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 | Documentos da Microsoft
 description: 
 keywords: 

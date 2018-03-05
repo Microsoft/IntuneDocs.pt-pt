@@ -1,4 +1,4 @@
----
+﻿---
 title: "Controlar as definições do Windows Hello para Empresas em dispositivos"
 description: "Saiba de que forma é que o Intune se integra com o Windows Hello para Empresas, que é um método de início de sessão alternativo que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual."
 keywords: 

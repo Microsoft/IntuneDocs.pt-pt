@@ -1,4 +1,4 @@
----
+﻿---
 title: "Criar uma política de conformidade de dispositivo"
 description: "Crie uma política de conformidade para ajudar a proteger dispositivos móveis e PCs utilizados para aceder aos dados da sua empresa."
 keywords: 

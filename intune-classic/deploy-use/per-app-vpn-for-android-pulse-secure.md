@@ -1,4 +1,4 @@
----
+﻿---
 title: "VPN por aplicação para Android com Pulse Secure"
 description: "Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune."
 keywords: 
