@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b5d9a5fafdec0750e943dcfb3542d4dfd69f6ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a sua integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -113,7 +113,7 @@ Na opção **Gestão de Erros**, introduza o endereço de e-mail que deve recebe
 ![Captura de ecrã da página de gestão de erros do conector do Intune](./media/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>configurar definições de inscrição
-No módulo **System**, na página **Connectors**, especifique o número de dias decorridos antes de um dispositivo ser considerado como estando desligado.  Considera-se que os dispositivos desligados não se encontram em conformidade e o acesso às aplicações da empresa a partir dos mesmos será bloqueado com base nas políticas de acesso condicional do Intune. Pode especificar valores entre 1 e 90 dias.
+No módulo **System**, na página **Connectors**, especifique o número de dias decorridos antes de um dispositivo ser considerado como estando desligado.  Considera-se que os dispositivos desligados não estão em conformidade e o acesso às aplicações da empresa a partir dos mesmos será bloqueado com base nas políticas de acesso condicional do Intune. Pode especificar valores entre 1 e 90 dias.
 
 ![Definições de inscrição do Lookout](./media/lookout-console-enrollment-settings.png)
 
@@ -128,7 +128,7 @@ A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaça
 ![captura de ecrã da página de políticas a apresentar ameaças e as respetivas classificações](./media/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> Os níveis de risco são um aspeto importante da Defesa Contra Ameaças para Dispositivos Móveis, uma vez que a integração do Intune calcula a conformidade dos dispositivos de acordo com estes níveis de risco durante a sua execução. O administrador do Intune define uma regra na política para identificar se um dispositivo não está conforme, caso o mesmo apresente uma ameaça ativa com um nível mínimo de risco **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na Defesa Contra Ameaças para Dispositivos Móveis do Lookout afeta diretamente o cálculo da conformidade do dispositivo no Intune.
+> Os níveis de risco são um aspeto importante da Defesa Contra Ameaças para Dispositivos Móveis, uma vez que a integração do Intune calcula a conformidade dos dispositivos de acordo com estes níveis de risco durante a sua execução. O administrador do Intune define uma regra na política para identificar se um dispositivo não estiver em conformidade, caso o mesmo apresente uma ameaça ativa com um nível mínimo de risco **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na Defesa Contra Ameaças para Dispositivos Móveis do Lookout afeta diretamente o cálculo da conformidade do dispositivo no Intune.
 
 ## <a name="watching-enrollment"></a>Monitorizar as inscrições
 Quando a configuração estiver concluída, a Defesa Contra Ameaças para Dispositivos Móveis do Lookout inicia uma consulta no Azure AD para detetar dispositivos que correspondam aos grupos de inscrição especificados.  Poderá encontrar informações sobre os dispositivos inscritos no módulo Dispositivos.  O estado inicial dos dispositivos é apresentado como Pendente.  O estado dos dispositivos é alterado assim que a aplicação Lookout for Work for instalada, aberta e ativada nos mesmos.  Para obter detalhes sobre como instalar a aplicação Lookout for Work no dispositivo pretendido, veja o tópico [Add Lookout for work apps with Intune (Adicionar as aplicações Lookout for Work)](mtd-apps-ios-app-configuration-policy-add-assign.md).

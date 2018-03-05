@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46a25f60e43b2106446904c36ee6aa10fceff579
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 48c7c0a2da845416bdf6280a0ba9ac29c8fb37ba
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
 
@@ -364,7 +364,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016345904|0x87D100D0|Conflito resolvido com o comando "prevalecente" do cliente. A resposta indica ter havido um conflito de atualização, resolvido pelo comando prevalecente do cliente.|
 |-2016345905|0x87D100CF|Conflito resolvido com a intercalação. A resposta indica que o pedido criou um conflito, resolvido com uma intercalação das instâncias de dados do cliente e do servidor. A resposta inclui os URLs de Destino e de Origem no Item do Estado. Além disso, é devolvido um comando Substituir com os dados intercalados.|
 |-2016345906|0x87D100CE|A resposta indica que apenas uma parte do comando foi concluída. Se for possível concluir a restante parte do comando mais tarde, quando tal acontecer DEVERÁ ser criado outro código de estado de pedido de conclusão adequado.|
-|-2016345907|0x87D100CD|O conteúdo de origem DEVE ser atualizado. O originador do pedido está a receber a indicação de que o seu conteúdo DEVE ser sincronizado a fim de obter uma versão atualizada.|
+|-2016345907|0x87D100CD|O conteúdo de origem DEVE ser atualizado. O originador do pedido está a receber a indicação de que os respetivos conteúdos DEVEM ser sincronizados a fim de obter uma versão atualizada.|
 |-2016345908|0x87D100CC|O pedido foi concluído com êxito, mas não estão a ser devolvidos dados. O código de resposta também é devolvido em resposta a uma ação Obter quando não existe conteúdo no destino.|
 |-2016345909|0x87D100CB|Resposta não autoritativa. A resposta ao pedido está a ser emitida por outra entidade sem ser a visada. A resposta só deve ser devolvida quando o pedido resultar num código de resposta 200 proveniente do destino autoritativo.|
 |-2016345910|0x87D100CA|Aceite para processamento. O pedido para executar uma execução remota de uma aplicação ou para alertar um utilizador ou aplicação foi efetuado com êxito.|
@@ -372,5 +372,5 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016345912|0x87D100C8|O comando SyncML foi concluído com êxito.|
 |-2016346011|0x87D10065|O comando SyncML especificado está a ser executado, mas ainda não foi concluído.|
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md).

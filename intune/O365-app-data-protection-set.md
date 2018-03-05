@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores
 
@@ -128,4 +128,4 @@ Para ver ou atualizar estas políticas, ou todas as políticas que criar no Intu
 ![Imagem do caminho da interface de utilizador para ver as políticas](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Próximos passos
-Saiba mais sobre as [políticas de proteção de aplicações](https://docs.microsoft.comapp-protection-policy.md).
+Saiba mais sobre as [políticas de proteção de aplicações](app-protection-policy.md).

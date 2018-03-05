@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e45f5d3836fc33851c650703f713c03204df792
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="automate-actions-for-noncompliance"></a>Ações automáticas de não conformidade
 
@@ -27,12 +25,17 @@ As **ações de não conformidade** permitem-lhe configurar uma sequência crono
 
 Existem dois tipos de ações:
 
--   **Notificar os utilizadores finais por e-mail**: pode personalizar a sua notificação por e-mail antes de enviar para o utilizador final. O Intune permite personalizar os destinatários, o assunto e o corpo da mensagem, incluindo o logótipo da empresa, e as informações de contacto.
+-   **Notificar os utilizadores finais por e-mail**: pode personalizar a sua notificação por e-mail antes de a enviar para o utilizador final. O Intune permite-lhe personalizar os destinatários, o assunto e o corpo da mensagem, incluindo o logótipo da empresa e as informações de contacto.
+
+    Além disso, o Intune inclui detalhes sobre o dispositivo não conforme na notificação por e-mail.
+
 -   **Marcar dispositivos como não conformes**: pode determinar um agendamento ao nível do número de dias após os quais o dispositivo é marcado como não conforme. Pode configurar a ação para entrar em vigor imediatamente ou dar ao utilizador um período de tolerância para este ficar em conformidade com as políticas de conformidade do dispositivo.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Tem de ter, pelo menos, uma política de conformidade do dispositivo criada para configurar as ações de não conformidade. Saiba como criar uma política de conformidade de dispositivos para as seguintes plataformas:
+Tem de ter, pelo menos, uma política de conformidade do dispositivo criada para configurar as ações de não conformidade. 
+
+- Saiba como criar uma política de conformidade de dispositivos para as seguintes plataformas:
 
     -   [Android](compliance-policy-create-android.md)
     -   [Android for Work](compliance-policy-create-android-for-work.md)
@@ -40,11 +43,11 @@ Existem dois tipos de ações:
     -   [macOS](compliance-policy-create-mac-os.md)
     -   [Windows](compliance-policy-create-windows.md)
 
-- Tem de ter a configuração do acesso condicional do Azure AD pronta quando estiver a planear utilizar políticas de conformidade do dispositivo para bloquear a utilização dos recursos empresariais pelos dispositivos. Aprenda a [configurar o acesso condicional de EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+Tem de ter a configuração do acesso condicional do Azure AD pronta quando estiver a planear utilizar políticas de conformidade do dispositivo para bloquear a utilização dos recursos empresariais pelos dispositivos. 
 
-- Tem de ter um modelo de mensagem de notificação criado. O modelo de mensagem de notificação é utilizado mais tarde no processo de criação de ações de não conformidade para enviar e-mails aos seus utilizadores.
+- Saiba [como configurar o acesso condicional do EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
-- Terá de configurar o Exchange Online para aceitar e-mails de *IntuneNotificationService@microsoft.com*, para permitir que o Intune envie a notificação de e-mail. Para obter mais informações, veja [Configure message delivery restrictions for a mailbox (Configurar restrições de entrega da mensagem para uma caixa de correio)](https://technet.microsoft.com/library/bb397214(v=exchg.160).aspx).
+Além disso, tem de ter um modelo de mensagem de notificação criado. O modelo de mensagem de notificação é utilizado mais tarde no processo de criação de ações de não conformidade para enviar e-mails aos seus utilizadores.
 
 ### <a name="to-create-a-notification-message-template"></a>Para criar um modelo de mensagem de notificação
 
@@ -60,14 +63,28 @@ Existem dois tipos de ações:
     - Rodapé do e-mail – incluir o nome da empresa
     - Rodapé do e-mail – incluir informações de contacto
 
-   ![exemplo de modelo de mensagem de notificação](./media/actionsfornoncompliance-1.PNG)
+5. Escolha **Criar notificação** e introduza as seguintes informações:
+
+    a. Nome
+
+    b. Assunto
+
+    c.  Mensagem
+
+    d. Cabeçalho do e-mail – incluir o logótipo da empresa
+
+    e. Rodapé do e-mail – incluir o nome da empresa
+
+    f. Rodapé do e-mail – incluir informações de contacto
+
+![exemplo de modelo de mensagem de notificação](./media/actionsfornoncompliance-1.PNG)
 
 Quando terminar de adicionar as informações, selecione **Criar**. O Modelo de mensagem de notificação está disponível para ser utilizado.
 
-> [!NOTE] 
+> [!NOTE]
 > Também pode editar um Modelo de notificação criado anteriormente.
 
-## <a name="to-create-actions-for-non-compliance"></a>Para criar ações de não conformidade
+## <a name="to-create-actions-for-noncompliance"></a>Para criar ações de não conformidade
 
 > [!TIP]
 > Por predefinição, o Intune fornece uma ação predefinida na secção de ações de não conformidade. Esta ação marca o dispositivo como não conforme após ser detetado que não cumpre os critérios da política de conformidade do dispositivo. Pode personalizar quando é que o dispositivo é marcado como não conforme após a deteção. Esta ação não pode ser removida.
@@ -75,11 +92,14 @@ Quando terminar de adicionar as informações, selecione **Criar**. O Modelo de 
 Pode adicionar uma ação quando estiver a criar uma nova política de conformidade do dispositivo ou ao editar uma política de conformidade do dispositivo existente.
 
 1.  Na carga de trabalho do Intune, no painel **Políticas de conformidade do dispositivo**, selecione **Políticas** na secção **Gerir**.
+
 2.  Selecione uma política de conformidade do dispositivo ao clicar na mesma e, em seguida, selecione **Propriedades** na secção **Gerir**.
-3.  No painel **propriedades da política de conformidade do dispositivo**, escolha **Ações de não conformidade**.
-4.  No painel **Ações de não conformidade**, escolha **Adicionar** para especificar os parâmetros da ação. Pode escolher o modelo de mensagem criado anteriormente, os destinatários adicionais e o período de tolerância. Pode especificar o número de dias (0 a 365) na agenda e, em seguida, pode impor as políticas de acesso condicional. Se especificar **0** dias, o acesso condicional bloqueia **imediatamente** o acesso aos recursos empresariais quando os dispositivos não estivem conformes com as políticas de conformidade do dispositivo.
+
+3.  É apresentado o painel **propriedades da política de conformidade do dispositivo**, escolha **Ações de não conformidade**.
+
+4.  É apresentado o painel **Ações de não conformidade**. Selecione **Adicionar** para especificar os parâmetros de ação. Pode escolher o modelo de mensagem criado anteriormente, os destinatários adicionais e o período de tolerância. Pode especificar o número de dias (0 a 365) na agenda e, em seguida, pode impor as políticas de acesso condicional. Se especificar **0** dias, significa que o acesso condicional terá de bloquear **imediatamente** o acesso aos recursos empresariais quando os dispositivos não estivem conformes com as políticas de conformidade do dispositivo.
+
 5.  Quando terminar de adicionar as suas informações, selecione **Adicionar** e, em seguida, **OK**.
 
 ## <a name="next-steps"></a>Próximos passos
 Pode monitorizar a atividade de conformidade do dispositivo ao executar os relatórios disponíveis no painel Conformidade do dispositivo. Para obter mais informações, veja [Como monitorizar a conformidade do dispositivo com o Intune](device-compliance-monitor.md).
-

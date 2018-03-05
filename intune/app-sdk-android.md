@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3efc522b8b788a0cb6cd1bbc6d04ce7545890de3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -1311,9 +1311,9 @@ public interface MAMAppConfig {
 A configuração da aplicação adiciona um novo tipo de notificação:
 * **REFRESH_APP_CONFIG**: esta notificação é enviada numa `MAMUserNotification` e informa a aplicação de que os novos dados de configuração da aplicação estão disponíveis.
 
-Para obter mais informações sobre as capacidades da Graph API em relação aos valores de configuração de MAM direcionada, veja [Configuração de MAM Direcionada de Referência para Graph API](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Para obter mais informações sobre as capacidades da Graph API no que diz respeito aos valores de configuração de MAM direcionada, veja [Graph API Reference MAM Targeted Config (Configuração de MAM direcionada da Graph API)](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
-Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no Android, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar as políticas de configuração de aplicações do Microsoft Intune para Android](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android).
+Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no Android, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar as políticas de configuração de aplicações do Microsoft Intune para Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 
 ## <a name="style-customization-optional"></a>Personalização de Estilo (opcional)
 
@@ -1366,7 +1366,7 @@ Seguem-se orientações para exigir pedidos de início de sessão ao utilizador 
 ### <a name="working-with-the-intune-sdk"></a>Trabalhar com o SDK do Intune
 Estas instruções são específicas para todas as aplicações Android e Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
 
-1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > O termo "ID de cliente" ligado à sua aplicação é o mesmo que o termo "ID de aplicação" do Portal do Azure. 
 * Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.
@@ -1427,7 +1427,7 @@ O SDK do Intune mantém o contrato fornecido pela API Android, embora possam ser
 O SDK da Aplicação Intune para Android não controla a coleção de dados da sua aplicação. Por predefinição, a aplicação Portal da Empresa regista os dados telemétricos. Estes dados são enviados para o Microsoft Intune. De acordo com a Política da Microsoft, não recolhemos informações pessoais (PII).
 
 > [!NOTE]
-> Se os utilizadores finais não enviarem estes dados, têm de desativar a telemetria em Definições na aplicação Portal da Empresa. Para saber mais, veja [Desativar a recolha de dados da Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+> Se os utilizadores finais não enviarem estes dados, têm de desativar a telemetria em Definições na aplicação Portal da Empresa. Para saber mais, veja [Desativar a recolha de dados da Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## <a name="recommended-android-best-practices"></a>Melhores práticas recomendadas para Android
 

@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs geridos com o Jamf Pro
 
@@ -66,6 +66,12 @@ Os utilizadores finais têm de iniciar a aplicação Portal da Empresa através 
 2. Configure o payload **Integração do Microsoft Intune**, incluindo o acionamento e a frequência de execução.
 3. Clique no separador **Âmbito** e defina o âmbito da política para todos os dispositivos visados.
 4. Clique no separador **Self-Service** para disponibilizar a política no Jamf Self-Service. Inclua a política na categoria **Conformidade do Dispositivo**. Clique em **Guardar**.
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Remover um dispositivo gerido por Jamf do Intune
+
+Não pode remover um dispositivo gerido por Jamf do Intune. Tem de remover os dispositivos geridos por Jamf a partir do Jamf Pro que, por sua vez, os irá remover do Intune. 
+
+Saiba como [remover um dispositivo gerido por Jamf na documentação do Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Também pode enviar um pedido de suporte para o [suporte do Jamf](https://www.jamf.com/support/) para obter ajuda adicional. 
 
 ## <a name="next-steps"></a>Próximos passos
 

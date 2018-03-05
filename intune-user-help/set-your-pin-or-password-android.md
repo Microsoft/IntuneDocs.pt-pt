@@ -1,11 +1,11 @@
-﻿---
+---
 title: Definir o PIN ou palavra-passe | Documentos da Microsoft
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d4ce8d7878845b880e958b8869471b6393a59ba7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b4cf329806b49f427eaa2d1c888c40102e6564ab
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou palavra-passe
 
@@ -33,6 +33,6 @@ Pode utilizar os seguintes passos para definir um PIN ou uma palavra-passe.
 
 2.  Escolha e confirme a palavra-passe nova.
 
-Para determinados dispositivos, além da palavra-passe de ecrã, pode ter de definir um PIN de arranque. Pode tentar corrigir este problema ao encontrar um local na aplicação de definições para ativar esta opção. Por exemplo, no Galaxy S7 da Samsung, ativa o Arranque Seguro ao aceder a **Definições** > **Ecrã de Bloqueio e Segurança** > **Início Seguro**. Saiba mais [aqui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise). 
+Para determinados dispositivos, além da palavra-passe de ecrã, pode ter de definir um PIN de arranque. Pode tentar corrigir este problema ao encontrar um local na aplicação de definições para ativar esta opção. Por exemplo, no Galaxy S7 da Samsung, ativa o Arranque Seguro ao aceder a **Definições** > **Ecrã de Bloqueio e Segurança** > **Início Seguro**. Saiba mais [aqui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

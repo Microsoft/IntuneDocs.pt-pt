@@ -3,10 +3,10 @@ title: "Como adicionar aplicações ao Microsoft Intune"
 titlesuffix: Azure portal
 description: "Estes procedimentos ajudam-no a preparar as suas aplicações no Intune para serem atribuídas a utilizadores e dispositivos. \""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar uma aplicação ao Microsoft Intune
 
@@ -28,11 +28,12 @@ ms.lasthandoff: 01/25/2018
 Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem de adicioná-las ao Intune. O Intune suporta uma grande variedade de tipos de aplicações diferentes. As opções disponíveis diferem para cada tipo de aplicação.
 
 O Intune permite-lhe adicionar e atribuir estes tipos de aplicação:
-| Tipo de Aplicação                                  | Instalação                                                                  | Updates                       |
+| Tipo de Aplicação                                  | Instalação                                                                  | Atualizações                       |
 |------------------------------------------ |----------------------------------------------------------------------------   |---------------------------    |
 | Aplicações na Web                           | O Intune cria um atalho para a aplicação Web no ecrã principal do dispositivo          | As atualizações das aplicações são automáticas     |
 | Aplicações escritas internamente (linha de negócio)  | O Intune instala a aplicação no dispositivo (o ficheiro de instalação é fornecido por si)    | Tem de atualizar a aplicação       |
 | Aplicações da loja                       | O Intune instala a aplicação no dispositivo                                       | As atualizações das aplicações são automáticas     |
+| Aplicações que estão incorporadas                        | O Intune instala a aplicação no dispositivo                                       | As atualizações das aplicações são automáticas     |
 
 
 Para além de aplicações Web, o Intune suporta as seguintes plataformas específicas para aplicações LOB e aplicações da loja:
@@ -49,6 +50,7 @@ Para além de aplicações Web, o Intune suporta as seguintes plataformas espec�
     - Aplicações de linha de negócio (LOB) iOS
     - Aplicações de linha de negócio (LOB) do Windows Phone (ficheiros .xap)
     - Aplicações de linha de negócio (LOB) do Windows (apenas ficheiros .msi)
+- Aplicações incorporadas    
 
 >[!TIP]
 > Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a partir de um ficheiro de instalação da aplicação. Por exemplo, para instalar uma aplicação LOB iOS, tem de adicionar a aplicação ao selecionar **Aplicação de linha de negócio** como o **Tipo de aplicação** a partir do painel **Adicionar aplicação**. Em seguida, selecione o ficheiro de pacote de aplicação (extensão .ipa). Normalmente, estes tipos de aplicações são escritos internamente.
@@ -133,7 +135,7 @@ Anteriormente, o Intune continha várias aplicações incorporadas que podia atr
 No entanto, se já tiver atribuído aplicações incorporadas, as mesmas continuarão visíveis na lista de aplicações. Pode continuar a atribuir estas aplicações conforme necessário.
 Numa versão posterior, planeamos adicionar um método mais simples para selecionar e atribuir aplicações incorporadas a partir do portal do Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Escolha um dos seguintes tópicos para saber como adicionar aplicações para cada plataforma ao Intune:
 
@@ -147,4 +149,5 @@ Escolha um dos seguintes tópicos para saber como adicionar aplicações para ca
 - [Aplicações da loja Windows](store-apps-windows.md)
 - [Aplicação LOB do Windows](lob-apps-windows.md)
 - [Aplicações do Office 365 para Windows 10](apps-add-office365.md)
+- [Aplicações incorporadas](apps-add-built-in.md)
 

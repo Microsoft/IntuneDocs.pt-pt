@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Referência de políticas de configuração"
 description: "Utilize as informações neste tópico para ajudá-lo a decidir qual a política do Microsoft Intune a utilizar para gerir os seus dispositivos."
 keywords: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referência de políticas de configuração do Microsoft Intune
 
@@ -113,7 +113,7 @@ Agora, o Microsoft Intune inclui **políticas de configuração** separadas para
 
 |Nome da política|Utilize-a quando pretende|
 |---------------|------------------------|
-|**Definições do Agente do Microsoft Intune**|Configurar o cliente PC do Intune em computadores, incluindo as definições para:<br /><br />–   Endpoint Protection<br />–   Atualizações de software<br />–   Agendamento de verificação de política<br /><br />Este tipo de política só pode ser implementado em grupos de dispositivos.<br /><br />Os clientes do Intune transferem políticas novas e atualizadas de acordo com a definição **Frequência de deteção de atualizações e aplicações**, a qual está predefinida para oito horas. No entanto, pode forçar a atualização da política em computadores em qualquer altura.<br /><br />Para obter detalhes, consulte [Manter os PCs com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Definições do Agente do Microsoft Intune**|Configurar o cliente PC do Intune em computadores, incluindo as definições para:<br /><br />–   Endpoint Protection<br />–   Atualizações de software<br />–   Agendamento de verificação de política<br /><br />Este tipo de política só pode ser implementado em grupos de dispositivos.<br /><br />Os clientes do Intune transferem políticas novas e atualizadas de acordo com a definição **Frequência de deteção de atualizações e aplicações**, a qual está predefinida para oito horas. No entanto, pode forçar a atualização da política em computadores em qualquer altura.<br /><br />Para obter detalhes, veja [Manter os PCs com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Definições do Centro do Microsoft Intune**|Configurar detalhes que são apresentados no Centro do Microsoft Intune em computadores geridos.<br /><br />Este tipo de política só pode ser implementado em grupos de dispositivos.<br /><br />Para obter mais informações, consulte [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Definições da Firewall do Windows**|Configura as definições e exceções da Firewall do Windows para comunicações de rede comuns em computadores, incluindo:<br /><br />–   BranchCache<br />–   Assistência remota<br />–   Partilha de Multimédia<br /><br />Este tipo de política só pode ser implementado em grupos de dispositivos.<br /><br />Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 

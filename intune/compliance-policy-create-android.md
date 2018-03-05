@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6da4e6ffb473cee73f3946e5af3d97ddd5bb6b7b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos Android no Intune
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 01/25/2018
 
 As políticas de conformidade do dispositivo são criadas para cada formulário de plataforma do Intune no portal do Azure. 
 
-- Para obter mais informações sobre o que é a política de compatibilidade, veja o tópico [O que é a conformidade do dispositivo](device-compliance.md).
-- Para saber mais sobre os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+- Para saber mais sobre políticas de conformidade, veja [O que é a conformidade do dispositivo](device-compliance.md).
+- Para saber mais sobre os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
 
 ## <a name="to-create-a-device-compliance-policy"></a>Para criar uma política de conformidade do dispositivo
 
 1. No painel **Intune**, escolha **Definir Conformidade do dispositivo**. Em **Gerir**, escolha **Todas as políticas de conformidade do dispositivo** e **Criar**.
-2. Escreva um nome, uma descrição e escolha a plataforma à qual quer que esta política se aplique.
+2. Escreva um nome e uma descrição, e selecione a plataforma à qual pretende aplicar esta política.
 3. Escolha **Requisitos de conformidade** para especificar as definições de **Segurança**, de **Estado de funcionamento do dispositivo** e de **Propriedade do dispositivo**. Quando tiver terminado, escolha **OK**.
 
 <!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
@@ -48,7 +48,7 @@ As políticas de conformidade do dispositivo são criadas para cada formulário 
 
 Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade – políticas**.
 
-1. Escolha a política e, em seguida, **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+1. Escolha a política e, em seguida, **Atribuições**. Em seguida, pode selecionar **grupos de segurança do Azure Active Directory** e atribuir os grupos à política.
 2. Escolha **Selecionar grupos** para abrir o painel que apresenta os grupos de segurança do Azure AD. Aqui pode encontrar todos os grupos de segurança do Azure Active Directory.  Pode selecionar os grupos de utilizadores aos quais pretende aplicar esta política e escolher **Selecionar**. Escolher **Selecionar** implementa a política para os utilizadores.
 
 Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
@@ -66,20 +66,18 @@ As aplicações de sideload requerem a ativação da definição **Origens desco
 
 - **Exigir que a depuração USB esteja desativada (Android 4.2 ou posterior)**: esta definição especifica se a opção de deteção de depuração USB no dispositivo está ativada.
 - **Exigir que os dispositivos tenham ativado o dispositivo de Análise para ameaças de segurança (Android 4.2 a 4.4)**: esta definição especifica que a funcionalidade **Verificar aplicações** está ativada no dispositivo.
-- **Nível mínimo de correção de segurança Android (Android 6.0 ou posterior)**: utilize esta definição para especificar o nível mínimo de correção Android. Os dispositivos que não tenham, pelo menos, este nível de correção não serão conformes. A data tem de ser especificada no formato AAAA-MM-DD.
+- **Nível mínimo de correção de segurança Android (Android 6.0 ou posterior)**: utilize esta definição para especificar o nível mínimo de correção Android. Os dispositivos que não tenham pelo menos este nível de correção não serão conformes. A data tem de ser especificada no formato AAAA-MM-DD.
 - **Exigir que a proteção contra ameaças de dispositivos seja ativada**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição para conformidade. Selecione o nível de ameaça máximo permitido, que será um dos seguintes:
-  - **Nenhum (seguro)**: este é o nível mais seguro. Isto significa que o dispositivo não pode ter nenhuma ameaça. Se o dispositivo detetar qualquer nível de ameaças, será avaliado como não conforme.
+  - **Nenhum (protegido)**: este nível de ameaça é o mais seguro. Isto significa que o dispositivo não pode ter nenhuma ameaça. Se o dispositivo detetar qualquer nível de ameaças, será avaliado como não conforme.
   - **Baixo**: o dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: o dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
-  - **Alto**: este é o nível menos seguro. Essencialmente, isto permite todos os níveis de ameaça. Provavelmente, será útil se utilizar esta solução apenas para fins de relatórios.
-
-Para obter mais detalhes, consulte [Ativar a regra de proteção contra ameaças de dispositivo na política de conformidade](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+  - **Elevado**: este nível de ameaça é o menos seguro. Essencialmente, isto permite todos os níveis de ameaça. Provavelmente, será útil se utilizar esta solução apenas para fins de relatórios.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 
 ### <a name="password"></a>Palavra-passe
 
-- **Palavra-passe obrigatória para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos deles.
+- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: selecione **Sim** para exigir que os utilizadores introduzam uma palavra-passe para poderem aceder aos respetivos dispositivos.
 - **Comprimento mínimo da palavra-passe**: especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 - **Qualidade da palavra-passe**: esta definição deteta se os requisitos de palavra-passe que especificou estão configurados no dispositivo. Ative esta definição para exigir que os utilizadores cumpram determinados requisitos de palavra-passe para dispositivos Android. Escolha entre:
   - **Biométrica de segurança baixa**
@@ -96,16 +94,16 @@ Para obter mais detalhes, consulte [Ativar a regra de proteção contra ameaças
 
 ### <a name="encryption"></a>Encriptação
 
-- **Exigir encriptação no dispositivo móvel**: defina esta opção como **Sim** para exigir que os dispositivos sejam encriptados para ligar aos recursos. Os dispositivos são encriptados quando seleciona a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.
+- **Exigir encriptação no dispositivo móvel**: selecione **Sim** para exigir que os dispositivos sejam encriptados para ligar aos recursos. Os dispositivos são encriptados quando seleciona a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.
 
 ## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
-- **SO mínimo obrigatório**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
-- **Versão máxima de SO permitida**: quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até as regras serem alteradas para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
+- **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
+- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até as regras serem alteradas para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Como é que as definições não compatíveis funcionam com as políticas de acesso condicional?
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>Como funcionam as definições de não conformidade com as políticas de acesso condicional?
 
-A tabela seguinte descreve como as definições não compatíveis são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
+A tabela que se segue descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
 --------------------
 
@@ -113,7 +111,7 @@ A tabela seguinte descreve como as definições não compatíveis são geridas q
 | --- | ----|
 | **Configuração do PIN ou da palavra-passe** |  Em quarentena |
 | **Encriptação do dispositivo** | Em quarentena |
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Em quarentena (não é uma definição) |
+| **Dispositivo desbloqueado por jailbreak ou rooting** | Em quarentena (não é uma definição) |
 | **perfil de e-mail** | Não aplicável |
 | **Versão mínima do SO** | Em quarentena |
 | **Versão máxima do SO** |   Em quarentena |

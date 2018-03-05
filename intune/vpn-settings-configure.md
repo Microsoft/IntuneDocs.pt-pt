@@ -1,25 +1,23 @@
 ---
 title: "Como configurar as definições de VPN do Intune"
 titleSuffix: Azure portal
-description: "Saiba como utilizar o Intune para configurar ligações VPN nos dispositivos que gere.\""
+description: "Saiba como utilizar o Intune para configurar ligações VPN nos dispositivos que gere."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Como configurar as definições de VPN no Microsoft Intune
 
@@ -27,7 +25,7 @@ ms.lasthandoff: 01/25/2018
 
 As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores acesso remoto protegido à rede da sua empresa. Os dispositivos utilizam um perfil de ligação VPN para iniciar uma ligação com o servidor VPN. Utilize os **Perfis VPN** no Microsoft Intune para atribuir definições de VPN a utilizadores e dispositivos na sua organização, para que possam ligar-se de forma fácil e segura à rede.
 
-Por exemplo, suponha que pretende aprovisionar todos os dispositivos iOS com as definições necessárias para estabelecer uma ligação a uma partilha de ficheiros na rede da empresa. Pode criar um perfil de VPN com as definições obrigatórias para se ligar à rede da empresa e, em seguida, atribuir este perfil em todos os utilizadores com dispositivos iOS. Os utilizadores verão a ligação VPN na lista de redes disponíveis e poderão ligar-se sem qualquer esforço.
+Por exemplo, suponha que pretende aprovisionar todos os dispositivos iOS com as definições necessárias para estabelecer uma ligação a uma partilha de ficheiros na rede da empresa. Pode criar um perfil de VPN com as definições obrigatórias para se ligar à rede da empresa e, em seguida, atribuir este perfil em todos os utilizadores com dispositivos iOS. Os utilizadores veem a ligação VPN na lista de redes disponíveis e podem ligar-se sem esforço.
 
 ## <a name="vpn-connection-types"></a>Tipos de ligação VPN
 
@@ -71,16 +69,16 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar perfis
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
 6. Na lista pendente **Tipo de perfil**, escolha **VPN**.
-7. As definições que pode configurar diferem consoante a plataforma que escolheu. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
+7. As definições que pode configurar diferem consoante a plataforma que escolher. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
     - [Definições do Android e Android for Work](vpn-settings-android.md)
     - [Definições do iOS](vpn-settings-ios.md)
     - [Definições do macOS](vpn-settings-macos.md)
     - [Definições do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
     - [Definições do Windows 8.1](vpn-settings-windows-8-1.md)
-    - [Definições do Windows 10](vpn-settings-windows-10.md)
+    - [Definições do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
-O perfil será criado e é apresentado no painel da lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
 

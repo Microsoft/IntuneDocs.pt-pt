@@ -111,7 +111,7 @@ Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis
 - Defesa da aplicação
 - Defesa contra vulnerabilidades
 
-Pode configurar políticas de acesso condicional de EMS com base na avaliação de riscos do Skycure ativada através de políticas de conformidade de dispositivos do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais com base em ameaças detetadas. Para obter mais informações, veja[Conector de Defesa Contra Ameaças para Dispositivos Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+Pode configurar políticas de acesso condicional de EMS com base na avaliação de riscos do Skycure ativada através de políticas de conformidade de dispositivos do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, veja[Conector de Defesa Contra Ameaças para Dispositivos Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência de utilizador da aplicação Portal da Empresa para Android<!--621622-->
 

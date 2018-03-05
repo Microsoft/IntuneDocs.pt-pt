@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune
 
@@ -198,7 +198,7 @@ Quando elimina uma política ou remove um dispositivo de um grupo no qual a pol�
 #### <a name="windows-pcs-running-the-intune-client-software"></a>PCs Windows com o software de cliente Intune
 
 - **Definições do Endpoint Protection**: as definições são restauradas para os valores recomendados. A única exceção é a definição **Aderir ao Serviço de Proteção Ativa Microsoft**, na qual o valor predefinido é **Não**. Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
-- **Definições de atualizações de software**: as definições são repostas para o estado predefinido do sistema operativo. Para obter detalhes, consulte [Manter os PCs com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Definições de atualizações de software**: as definições são repostas para o estado predefinido do sistema operativo. Para obter detalhes, veja [Manter os PCs com Windows atualizados com atualizações de software no Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Definições do Microsoft Intune Center**: todas as informações de contacto para suporte que foram configuradas pela política são eliminadas dos computadores.
 - **Definições da Firewall do Windows**: as definições são repostas para o estado predefinido do sistema operativo do computador. Para obter detalhes, consulte [Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 

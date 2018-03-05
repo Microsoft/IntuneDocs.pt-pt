@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dc50fe1018bae0c13ddba51e5351f463d0ec1c8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Android e Samsung Knox Standard no Microsoft Intune
 
@@ -94,7 +94,7 @@ Na [secção Aplicações do Google Play](https://play.google.com/store/apps), p
 
 Abra a página de instalação da aplicação e copie o URL para a área de transferência. Agora pode utilizar este URL na lista de aplicações conformes ou na lista de aplicações não conformes.
 
-Exemplo: procure Microsoft Office Mobile no Google Play. Utilize o URL: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub&hl=pt**.
+Exemplo: procure o **Microsoft Planner** na [secção Aplicações da Google Play Store](https://play.google.com/store/apps). Utilize o URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>Opções adicionais
 
@@ -119,7 +119,7 @@ Além disso, também pode especificar aplicações instaladas que serão ocultad
 
 Para cada definição, configure uma lista de aplicações através de um dos seguintes procedimentos:
 
-- **Adicionar aplicações pelo nome do pacote** – principalmente utilizado para aplicações de linha de negócio. Introduza o nome da aplicação e o nome do pacote de aplicação.
+- **Adicionar aplicações pelo nome do pacote** – utilizado principalmente para aplicações de linha de negócio. Introduza o nome da aplicação e o nome do pacote de aplicação.
 - **Adicionar aplicações pelo URL** – Introduza o nome da aplicação e o URL na loja do Google Play.
 - **Adicionar aplicações geridas** – Na lista de aplicações geridas com o Intune, selecione a aplicação de que necessita.
 
@@ -153,6 +153,6 @@ As definições de modo de local público aplicam-se apenas a dispositivos Samsu
 - **Botões de volume** - Ativa ou desativa a utilização dos botões de volume no dispositivo.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Continue a seguir as instruções em [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para criar e atribuir o perfil de restrição de dispositivos.

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Contactar o suporte assistido por telefone '
 description: "Números de telefone para ajuda do Microsoft Intune."
 keywords: "horário comercial"
@@ -16,10 +16,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 821234397df511e054e98bc11cd6da21ce8370d7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contactar o suporte assistido por telefone do Microsoft Intune
 

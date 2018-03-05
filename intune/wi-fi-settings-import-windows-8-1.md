@@ -6,26 +6,24 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a587ef87afd9a8629ac6a274fe87406fb24f79f7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Como importar as definições de Wi-Fi do Windows 8.1 e de dispositivos posteriores para o Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Para dispositivos com Windows 8.1 ou Windows 10 Desktop ou Mobile, pode importar um perfil de configuração de Wi-Fi que tenha sido exportado anteriormente para um ficheiro.
+Para dispositivos a executar o Windows 8.1, o Windows 10 ou Windows 10 Mobile ou o Windows Holographic for Business, pode importar um perfil de configuração Wi-Fi anteriormente exportado para um ficheiro.
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Exportar definições de Wi-Fi a partir de um dispositivo Windows
 
@@ -33,7 +31,7 @@ No Windows, utilize o utilitário **netsh wlan** para exportar um perfil de Wi-F
 1. Crie uma pasta local para os perfis Wi-Fi exportados, como **c:\WiFi**.
 1. Abra uma Linha de Comandos como administrador.
 1. Execute o comando **netsh wlan show profiles** e tome nota do nome do perfil que pretende exportar. Neste exemplo, o nome do perfil é **WiFiName**.
-1. Execute o comando **netsh wlan export profile name="ProfileName" folder=c:\Wifi**. Esta ação criará um ficheiro do perfil Wi-Fi com o nome **Wi-Fi-WiFiName.xml** na pasta de destino.
+1. Execute o comando **netsh wlan export profile name="ProfileName" folder=c:\Wifi**. Esta ação cria um ficheiro do perfil Wi-Fi com o nome **Wi-Fi-WiFiName.xml** na pasta de destino.
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importar as definições de Wi-Fi para o Intune
 
@@ -43,12 +41,16 @@ No Windows, utilize o utilitário **netsh wlan** para exportar um perfil de Wi-F
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
 3. No painel de perfis, clique em **Criar Perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de restrição de dispositivos.
+
+   > [!WARNING]
+   > O nome **tem** de ser igual ao atributo no perfil Wi-Fi xml, caso contrário ocorrerá uma falha.
+
 5. Na lista pendente **Plataforma**, escolha **Windows 8.1 e posterior**.
-6. Na lista pendente **erfil**, escolha **Importação de Wi-Fi**.
-7. No painel **Wi-Fi Básico**, configure as seguintes opções:
-    - **Nome da ligação** – Introduza o nome da ligação Wi-Fi. Este nome será apresentado aos utilizadores finais quando procurarem redes Wi-Fi disponíveis.
+6. Na lista pendente **Perfil**, escolha **Importação de Wi-Fi**.
+7. No painel **Wi-Fi Básico**, configure as seguintes definições:
+    - **Nome da ligação** – Introduza o nome da ligação Wi-Fi. Este nome é apresentado aos utilizadores finais ao procurarem redes Wi-Fi disponíveis.
     - **XML do perfil** – Clique no botão Procurar para selecionar o ficheiro XML que contém as definições de perfil de Wi-Fi a importar para o Intune.
     - **Conteúdo do ficheiro** – Apresenta o código XML do perfil de configuração que selecionou.
 8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
-O perfil será criado e é apresentado no painel da lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.

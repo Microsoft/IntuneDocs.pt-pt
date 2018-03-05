@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9859e13d8d1b39975d53bab159b204ef27560365
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0490f32629fb4ecbb6d66589c71cecce5172536
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Submeter os erros do seu dispositivo macOS gerido às pessoas certas
 
@@ -41,6 +41,6 @@ Se obtiver erros no dispositivo macOS ao utilizar a aplicação Portal da Empres
 
 Por vezes, a aplicação Portal da Empresa poderá agir de forma inesperada. Estes problemas são aqueles sobre os quais os programadores da aplicação querem ser informados, uma vez que nos pode ajudar a melhorar o seu funcionamento e a impedir que este tipo de comportamento invulgar aconteça no futuro. Estas informações encontram-se no dispositivo, num documento especial denominado _relatório de diagnóstico_.
 
-Se precisar de enviar relatórios de diagnóstico para a equipa da Microsoft que desenvolve a aplicação Portal da Empresa, terá de fornecer algumas informações para tentar diagnosticar a causa principal. Em vez de as enviar para a equipa de suporte da sua empresa, utilize <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">este modelo de e-mail</a> para enviar para a Microsoft.
+Se precisar de enviar relatórios de diagnóstico para a equipa da Microsoft que desenvolve a aplicação Portal da Empresa, tem de fornecer algumas informações para tentar diagnosticar a causa principal. Em vez de as enviar para a equipa de suporte da sua empresa, utilize <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">este modelo de e-mail</a> para enviar para a Microsoft.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

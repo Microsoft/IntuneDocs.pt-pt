@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9faaacb321dfd13c053768ea27f0cca38b30d077
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear o seu dispositivo remotamente a partir do site do Portal da Empresa
 
@@ -61,7 +61,7 @@ Por segurança, pode bloqueá-lo ao utilizar a opção de Bloqueio Remoto no [si
     * No mosaico que mostra o nome do dispositivo na secção **Os Meus Dispositivos** da página.
 
 > [!Note]
-> Se vir a notificação "Bloqueio Remoto falhou", aguarde alguns minutos e tente bloquear o dispositivo novamente. Depois de começar a nova tentativa, o estado volta a mudar para "Bloqueio remoto pendente". Se a nova tentativa não resultar, tem de contactar o suporte da empresa.
+> Se vir a notificação "Bloqueio Remoto falhou", aguarde alguns minutos e tente bloquear o dispositivo novamente. Depois de começar a nova tentativa, o estado volta a mudar para "Bloqueio remoto pendente". Se a nova tentativa não resultar, precisa de contactar o suporte da sua empresa.
 
 Se encontrar o seu dispositivo e quiser desbloqueá-lo depois de utilizar o Bloqueio Remoto, basta introduzir o código de acesso.
 

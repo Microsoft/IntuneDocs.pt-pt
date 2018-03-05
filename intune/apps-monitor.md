@@ -34,7 +34,7 @@ O Intune fornece várias formas através das quais pode monitorizar as proprieda
 
 ## <a name="app-overview-blade"></a>Painel Descrição geral da aplicação
 
-Pode utilizar o painel **Estado de instalação do dispositivo** da aplicação *<nome da aplicação> * para rever os detalhes acerca do estado de uma aplicação no seu computador.
+Pode utilizar o painel **Estado de instalação do dispositivo** da aplicação <*nome da aplicação*>  para rever os detalhes acerca do estado de uma aplicação no seu computador.
 
 ### <a name="essentials"></a>Essentials
 

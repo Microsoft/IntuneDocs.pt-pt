@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 
@@ -61,14 +61,14 @@ Os problemas comuns do utilizador final encontram-se divididos nas seguintes cat
 
 ### <a name="normal-usage-scenarios"></a>Cenários de utilização normal
 
-Plataforma | Cenário | Explicação |
+Platform | Cenário | Explicação |
 ---| --- | --- |
 iOS | O utilizador final pode utilizar a extensão de partilha do iOS para abrir dados escolares ou profissionais em aplicações não geridas, mesmo com a política de transferência de dados definida para **Apenas aplicações geridas** ou **Nenhuma aplicação.** Isto não resulta numa fuga de dados? | A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por esse motivo, **o Intune encripta os dados "empresariais" antes de os partilhar fora da aplicação**. Para o confirmar, pode tentar abrir o ficheiro "empresarial" fora da aplicação gerida. O ficheiro deverá estar encriptado, e não deverá ser possível abri-lo fora da aplicação gerida.
 Android | Porque é que o utilizador final **tem de instalar a aplicação Portal da Empresa** mesmo que eu esteja a utilizar a proteção de aplicações de MAM sem inscrição de dispositivos?  | No Android, uma grande parte da funcionalidade de proteção de aplicações está incorporada na aplicação Portal da Empresa. **Embora a aplicação Portal da Empresa seja sempre obrigatória, a inscrição dos dispositivos não é necessária**. Para proteger aplicações sem inscrição, o utilizador final só precisa de ter a aplicação Portal da Empresa instalada no dispositivo.
 
 ### <a name="normal-usage-dialogs"></a>Caixas de diálogo de utilização normal
 
-Plataforma | Mensagem ou caixa de diálogo | Explicação |
+Platform | Mensagem ou caixa de diálogo | Explicação |
 --- | --- | --- |
 iOS, Android | **Início de Sessão**: para proteger os respetivos dados, a sua organização tem de gerir esta aplicação. Para concluir esta ação, inicie sessão com a sua conta escolar ou profissional. | O utilizador final tem de iniciar sessão com a respetiva conta escolar ou profissional para poder utilizar esta aplicação, sendo necessária uma política de proteção de aplicações. Para esta política ser aplicável, o utilizador tem de ser autenticado relativamente ao Azure Active Directory.
 iOS, Android |**Reinício Necessário**: a sua organização está agora a proteger os respetivos dados nesta aplicação. Tem de reiniciar a aplicação para continuar. | A aplicação acabou de receber a política de proteção de aplicações do Intune e tem de ser reiniciada para que a política seja aplicada.
@@ -105,7 +105,7 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 **Não foram encontradas aplicações**: não existem aplicações neste dispositivo que a sua organização permita abrir este conteúdo. Contacte o seu administrador de TI para obter ajuda. | O utilizador tentou abrir dados de trabalho ou de escola com outra aplicação, mas o Intune não localizou quaisquer outras aplicações geridas que estão autorizadas a abrir os dados. | Confirme que uma política de proteção de aplicações Android é implementada na segurança do utilizador e destina-se, pelo menos, a uma outra aplicação preparada para MAM que pode abrir os dados em questão.
 **Início de sessão falhou**: tente iniciar sessão novamente. Se este problema persistir, entre em contacto com seu administrador de TI. | Falha ao autenticar a conta com a qual o utilizador tentou iniciar sessão. | Confirme que o utilizador iniciou sessão com a conta profissional ou escolar que já está inscrita no serviço MAM do Intune (a primeira conta escolar ou profissional com que iniciou sessão com êxito para esta aplicação). <br><br> Limpe os dados da aplicação. <br><br> Confirme que a versão da aplicação está atualizada. <br><br> Confirme que a versão do Portal da Empresa está atualizada.
 **Ligação de Internet obrigatória**: tem de estar ligado à Internet para verificar que pode utilizar esta aplicação. | O dispositivo não está ligado à Internet. | Ligue o dispositivo a uma rede Wi-Fi ou de Dados.
-**Dispositivo não compatível**: não pode utilizar esta aplicação porque está a utilizar um dispositivo com root. Contacte o seu administrador de TI para obter ajuda. | O Intune detetou que o utilizador está num dispositivo com root. | Repor as predefinições de fábrica do dispositivo.
+**Dispositivo não conforme**: não pode utilizar esta aplicação porque está a utilizar um dispositivo desbloqueado por rooting. Contacte o seu administrador de TI para obter ajuda. | O Intune detetou que o utilizador está num dispositivo com root. | Repor as predefinições de fábrica do dispositivo.
 **Conta não configurada**: esta aplicação tem de ser gerida pelo Microsoft Intune, mas a sua conta não foi configurada. Contacte o seu administrador de TI para obter ajuda. | A conta de utilizador não tem uma licença Direta A do Intune. | Confirme que a conta de utilizador tem uma licença do Intune atribuída ao [portal do Office](http://portal.office.com).
 **Não é possível registar a aplicação**: esta aplicação tem de ser gerida pelo Microsoft Intune, mas não foi possível registar esta aplicação neste momento. Contacte o seu administrador de TI para obter ajuda. | Falha ao inscrever automaticamente a aplicação com o serviço MAM quando é precisa a política de proteção de aplicações. | Limpe os dados da aplicação. <br><br> Envie os registos ao Intune através da aplicação Portal da Empresa ou de um pedido de suporte de ficheiro [aqui](how-to-get-support-for-microsoft-intune.md).
 

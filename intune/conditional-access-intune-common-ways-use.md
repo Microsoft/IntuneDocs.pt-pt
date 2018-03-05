@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff3c5c077c9d67c667c7f3a53326e555a1cce92
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Formas comuns de utilizar o acesso condicional com o Intune
 
@@ -52,7 +52,7 @@ Pode configurar definições avançadas no acesso condicional para um controlo m
 
 Qualquer dispositivo utilizado para aceder ao Exchange no local é verificado quanto à conformidade quando a conformidade do dispositivo e as políticas de acesso condicional são aplicadas.
 
-Quando os dispositivos não cumprem as condições definidas, o utilizador final é orientado através do processo de inscrição do dispositivo para a correção do problema que está a fazer com que o dispositivo não seja compatível.
+Quando os dispositivos não cumprem as condições definidas, o utilizador final é orientado ao longo do processo de inscrição do dispositivo para corrigir o problema que está a fazer com que o dispositivo não esteja em conformidade.
 
 #### <a name="how-conditional-access-for-exchange-on-premises-works"></a>Como o acesso condicional funciona para o Exchange no local
 

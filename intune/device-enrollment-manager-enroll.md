@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eda4ad57f1365a7fe27d58ad8f40399b1582b4b6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrever dispositivos com o gestor de inscrição de dispositivos
 
@@ -30,7 +30,7 @@ As organizações podem utilizar o Intune para gerir um grande número de dispos
 Têm de existir utilizadores no portal do Azure para serem adicionados como gestores de inscrição de dispositivos. Para garantir a segurança, o utilizador DEM não deve ser também um administrador do Intune.
 
 >[!NOTE]
->O método de inscrição DEM não pode ser utilizado com estes métodos de inscrição: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com inscrição direta](apple-configurator-direct-enroll-ios.md), [Gestor de Escola da Apple (ASM)](apple-school-manager-set-up-ios.md) ou [Programa de Inscrição de Dispositivos (DEP)](device-enrollment-program-enroll-ios.md). Também não pode servir para inscrever dispositivos macOS. 
+>O método de inscrição DEM não pode ser utilizado com estes métodos de inscrição: [Apple Configurator com o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator com inscrição direta](apple-configurator-direct-enroll-ios.md), [Gestor de Escola da Apple (ASM)](apple-school-manager-set-up-ios.md) ou [Programa de Inscrição de Dispositivos (DEP)](device-enrollment-program-enroll-ios.md). Também não pode servir para inscrever dispositivos macOS.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gestor de inscrição de dispositivos
 
@@ -65,13 +65,11 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gestor de inscrição de dispositivos
 
-1.  No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1.  No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Gestores de inscrições de dispositivos**.
 
-2.  No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
+2.  Selecione **Adicionar**.
 
-3.  Selecione **Adicionar**.
-
-4.  No painel **Adicionar Utilizador**, introduza um nome principal para o utilizador DEM e selecione **Adicionar**. O utilizador DEM é adicionado à lista de utilizadores DEM.
+3.  No painel **Adicionar Utilizador**, introduza um nome principal para o utilizador DEM e selecione **Adicionar**. O utilizador DEM é adicionado à lista de utilizadores DEM.
 
 ## <a name="permissions-for-dem"></a>Permissões para DEM
 
@@ -90,7 +88,7 @@ A remoção de um gestor de inscrição de dispositivos não afeta os dispositiv
 
 **Para remover um gestor de inscrição de dispositivos**
 
-1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. No portal do Azure, escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 2. No painel Intune, escolha **Inscrever dispositivos** e, em seguida, escolha **Gestores de Inscrição de Dispositivos**.
 3. No painel **Gestores de Inscrição de Dispositivos**, clique com o botão direito do rato no utilizador DEM e selecione **Remover**.
 

@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,24 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação iOS. Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
+
+Pode atribuir uma política de configuração da aplicação a um grupo de utilizadores e dispositivos ao utilizar uma combinação de inclusão e exclusão de atribuições. Depois de adicionar uma política de configuração da aplicação, pode definir as atribuições dessa política. Quando definir as atribuições da política, poderá optar por incluir e excluir os grupos de utilizadores aos quais a políticas será aplicada. Quando escolher incluir um ou mais grupos, poderá optar por selecionar grupos específicos para incluir ou selecionar grupos incorporados. Os grupos incorporados incluem **Todos os Utilizadores**, **Todos os Dispositivos** e **Todos os Utilizadores e Todos os Dispositivos**. 
+
+>[!NOTE]
+>O Intune fornece os grupos **Todos os Utilizadores** e **Todos os Dispositivos** pré-criados na consola com otimizações incorporadas para sua comodidade. Recomendamos fortemente que utilize estes grupos para abranger todos os utilizadores e todos os dispositivos em vez dos grupos "Todos os utilizadores" ou "Todos os dispositivos" que possa ter criado.
+
+Depois de selecionar os grupos a incluir na sua política de configuração da aplicação, também poderá escolher os grupos específicos a excluir.
 
 > [!TIP]
 > Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 8.0 e posterior. Suporta os seguintes tipos de instalação de aplicações:
@@ -52,9 +59,24 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 7.  Selecione **Aplicação Associada**. Em seguida, no painel **Aplicação Associada**, selecione a aplicação gerida à qual pretende aplicar a configuração.
 8.  No painel **Adicionar Política de Configuração**, selecione **Definições de configuração**.
 9. Selecione **Formato das definições de configuração**. Selecione um dos seguintes procedimentos:
-    - **[Utilizar estruturador de configuração](#Use-the-configuration-designer)**
+    - **[Utilizar estruturador de configuração](#use-configuration-designer)**
     - **[Introduzir dados XML](#enter-xml-data)**
-10. Selecione **OK** e, em seguida, **Adicionar**.
+10. Depois de adicionar as suas informações XML, selecione **OK** e, em seguida, selecione **Adicionar** para adicionar a política de configuração. O painel descrição geral da política de configuração será apresentado.
+11. Selecione **Atribuições** para apresentar as opções de inclusão e exclusão. 
+
+    ![Atribuições de política](./media/app-config-policy01.png)
+12. Selecione **Todos os Utilizadores** no separador **Incluir**.
+
+    ![Atribuições de política – Todos os Utilizadores](./media/app-config-policy02.png)
+13. Selecione o separador **Excluir**. 
+14. Clique em **Selecionar grupos para excluir** para apresentar o painel relacionado.
+
+    ![Atribuições de política – selecionar grupos para excluir](./media/app-config-policy03.png)
+15. Escolha os grupos que pretende excluir e, em seguida, clique em **Selecionar**.
+
+    >[!NOTE]
+    >Ao adicionar um grupo, se outro grupo já tiver sido incluído num determinado tipo de atribuição, o mesmo estará pré-selecionado e inalterável para outras atribuições de inclusão. Por conseguinte, esse grupo que foi utilizado não poderá ser utilizado como um grupo excluído.
+16. Clique em **Guardar**.
 
 ## <a name="use-configuration-designer"></a>Utilizar o estruturador de configuração
 

@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: Atribuir licenças
           href: licenses-assign.md
+        - name: Licenças do Intune
+          href: licenses.md
         - name: Definir a autoridade de MDM
           href: mdm-authority-set.md
     - name: Inscrever dispositivos
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: Ativar o modo perdido do iOS
           href: device-lost-mode.md
+        - name: Ativar o modo supervisionado do iOS
+          href: device-supervised-mode.md
         - name: Bloquear o dispositivo
           href: device-remote-lock.md
         - name: Repor código de acesso
@@ -251,7 +255,7 @@
             - name: Aplicações Web
               href: web-app.md
             - name: Aplicações incorporadas
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: Implementar aplicações
           href: apps-deploy.md
           items:
@@ -287,6 +291,26 @@
           items:
             - name: Eliminação seletiva de aplicações
               href: apps-selective-wipe.md
+            - name: Utilizar políticas de proteção de aplicações
+              href: app-protection-policy.md
+              items:
+                - name: Criar políticas de proteção de aplicações
+                  href: app-protection-policies.md
+                  items:
+                    - name: Definições do Android
+                      href: app-protection-policy-settings-android.md
+                    - name: Definições do iOS
+                      href: app-protection-policy-settings-ios.md
+                - name: Validar as políticas de proteção de aplicações
+                  href: app-protection-policies-validate.md
+                - name: Monitorizar o estado dos utilizadores da proteção de aplicações
+                  href: app-protection-policies-monitor.md
+                - name: Preparar-se para as políticas de proteção de aplicações WIP
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Criar e atribuir políticas de proteção de aplicações WIP
+                  href: windows-information-protection-policy-create.md
+                - name: Gerir a transferência de dados entre aplicações iOS
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Configurar dispositivos
       href: device-profiles.md
       items:
@@ -444,7 +468,7 @@
           href: conditional-access-integrate-jamf.md
         - name: Impor a conformidade em Macs geridos com o Jamf Pro
           href: conditional-access-assign-jamf.md
-    - name: Proteger os dados de aplicações e de dispositivos
+    - name: Proteger os dados do dispositivo
       items:
         - name: Utilizar políticas de proteção de aplicações
           href: app-protection-policy.md
@@ -456,6 +480,10 @@
                   href: app-protection-policy-settings-android.md
                 - name: Definições do iOS
                   href: app-protection-policy-settings-ios.md
+                - name: Exceções da política de transferência de dados
+                  href: app-protection-policies-exception.md
+                - name: Analisar os registos de proteção de aplicações no Managed Browser
+                  href: app-protection-policy-settings-log.md
             - name: Validar as políticas de proteção de aplicações
               href: app-protection-policies-validate.md
             - name: Monitorizar o estado dos utilizadores da proteção de aplicações
@@ -578,6 +606,10 @@
           href: end-user-apps-ios.md
         - name: Como obter aplicações para Windows
           href: end-user-apps-windows.md
+        - name: Dados que o Intune envia para a Apple
+          href: data-intune-sends-to-apple.md
+        - name: Dados que o Intune envia para a Google
+          href: data-intune-sends-to-google.md
     - name: Monitorizar e resolver problemas
       items:
         - name: Ajudar os utilizadores a resolver problemas
@@ -651,6 +683,8 @@
           href: reports-proc-data-rest.md
         - name: Ponto final da API do Armazém de Dados
           href: reports-api-url.md
+        - name: Autenticação apenas com a aplicação do Armazém de Dados
+          href: data-warehouse-app-only-auth.md
         - name: Modelo de dados do Armazém de Dados
           href: reports-ref-data-model.md
           items:

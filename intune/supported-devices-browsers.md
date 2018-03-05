@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
-ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
+ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Browsers e sistemas operativos suportados
 
@@ -106,7 +106,10 @@ Os seguintes browsers são suportados para estes portais:
 - Microsoft Internet Explorer 11
 - Safari (versão mais recente, apenas Mac)
 - Chrome (versão mais recente)
-- Firefox (versão mais recente)
+- Mozilla Firefox com o Silverlight ativado [Saiba mais (versões anteriores à versão 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+
+
+
 
 ### <a name="intune-classic-portal"></a>Portal clássico do Intune
 

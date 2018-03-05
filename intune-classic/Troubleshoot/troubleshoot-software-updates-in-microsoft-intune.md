@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Resolver problemas de atualizações de software"
 description: "Resolva problemas de atualizações de software no Microsoft Intune."
 keywords: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a3f5d94d5b9b902c4b07939e822076215c01d7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 66cca236d2779fb9a7a01ad6aa10a57edf8ab657
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Resolver problemas de atualizações de software no Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/10/2017
 
 Utilize as informações nesta secção para obter ajuda para resolver problemas de atualizações de software no Microsoft Intune.
 
-Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de obter ajuda.
+Se estas informações não resolverem o seu problema, consulte [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md) para ver mais formas de ajuda.
 
 ## <a name="update-agent-error-codes"></a>Códigos de erro do agente de atualização
 
@@ -251,7 +251,7 @@ A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se n
 - Registam uma elevada utilização da CPU.
 - As aplicações são instaladas lentamente quando são instaladas através do portal do Intune.
 - O Microsoft Intune Center aciona o seguinte erro: *Ocorreu um erro ao atualizar o seu computador. Erro encontrado: código 0x800705b4*.
-- O campo de estado na Consola de Administração do Intune > Grupos > Todos os Dispositivos apresenta: *Um ou mais agentes instalados neste computador têm erros. As informações para este computador podem não ser exatas ou atualizadas*.
+- O campo de estado na Consola de Administração do Intune > Grupos > Todos os Dispositivos apresenta: *Um ou mais agentes instalados neste computador têm erros. As informações sobre este computador podem não ser exatas ou atualizadas*.
 
 Este problema pode ocorrer se as atualizações substituídas (atualizações que foram substituídas por outra atualização) não foram recusadas durante um período prolongado. Durante determinados processos, como a instalação de uma aplicação, o Windows verifica todas as atualizações substituídas em sequência, para que as atualizações e as respetivas sucessoras possam ser mapeadas corretamente. Se a lista de atualizações substituídas ficar demasiado grande, esta tarefa de verificação pode causar uma elevada utilização da CPU devido à carga de processamento e ao tempo necessário. Este problema afeta principalmente os clientes com o Windows 7 devido ao elevado número de atualizações substituídas que estão disponíveis para o Windows 7. O Windows 8 e os sistemas operativos posteriores não têm tantas atualizações substituídas disponíveis e, por conseguinte, não estão tão suscetíveis a este problema.
 
@@ -264,5 +264,5 @@ Este problema pode ocorrer se as atualizações substituídas (atualizações qu
 
 Além disso, se estiver a executar o Windows 7, certifique-se de que tem a seguinte atualização instalada:[3050265 Cliente do Windows Update para o Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

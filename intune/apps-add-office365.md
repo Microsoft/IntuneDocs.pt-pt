@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicações do Office 365 ProPlus 2016 a dispositivos Windows 10 com o Microsoft Intune
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Como atribuir aplicações do Office 365 ProPlus a dispositivos Windows 10 com o Microsoft Intune
 
-Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 ProPlus 2016 aos dispositivos que gere que executem o Windows 10. Também pode instalar as aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365, se tiver licenças para os mesmos. As aplicações que pretende são apresentadas como uma única entrada na lista de aplicações na consola do Intune.
+Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 ProPlus aos dispositivos que gere que executem o Windows 10. Também pode instalar as aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365, se tiver licenças para os mesmos. As aplicações que pretende são apresentadas como uma única entrada na lista de aplicações na consola do Intune.
 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -32,10 +32,11 @@ Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do O
 >Este método de instalação do Office só é suportado se não existirem outras versões do Microsoft Office instaladas no dispositivo.
 
 - Os dispositivos em que pretende implementar estas aplicações têm de ter a Atualização para Criativos do Windows 10 ou posterior.
-- O Intune só suporta a adição de aplicações do Office que pertençam ao conjunto de aplicações Office 365 ProPlus 2016.
-- Se estiverem abertas aplicações do Office quando o Intune instalar o conjunto de aplicações, os utilizadores finais poderão perder os dados dos ficheiros não guardados.
-- Este método de instalação não é suportado em dispositivos com o Windows 10.
+- O Intune só suporta a adição de aplicações do Office a partir do conjunto de aplicações do Office 365 ProPlus.
+- Se estiverem abertas aplicações do Office quando o Intune instalar o conjunto de aplicações, a instalação poderá falhar e os utilizadores finais poderão perder os dados dos ficheiros não guardados.
+- Este método de instalação não é suportado em dispositivos com o Windows 10, Windows Home, Equipa do Windows, Windows Holographic e Windows Holographic for Business.
 - O Intune não suporta a instalação de aplicações de ambiente de trabalho do Office 365 da Microsoft Store (denominadas aplicações Office Centennial) num dispositivo em que já implementou aplicações do Office 365 com o Intune. Se instalar esta configuração, poderá causar perda ou danos em dados.
+- As múltiplas atribuições de aplicações necessárias ou disponíveis não são acumulativas. Uma atribuição de aplicação posterior irá substituir as atribuições de aplicações instaladas pré-existentes. Por exemplo, se o primeiro conjunto de aplicações do Office incluir o Word, mas o conjunto posterior não o incluir, o Word será desinstalado. Tal não se aplica às aplicações Visio ou Project.
 
 
 ## <a name="get-started"></a>Introdução
@@ -134,6 +135,6 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o respet
 |O cliente da tecnologia clique-e-use falhou ao iniciar (inesperado)|17000|-|Clique-e-Use|
 |O cliente da tecnologia clique-e-use falhou ao colocar o cenário em fila (inesperado)|17001|-|Clique-e-Use|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Agora pode atribuir as aplicações aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](/intune-azure/manage-apps/deploy-apps).

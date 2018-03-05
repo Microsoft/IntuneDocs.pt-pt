@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -89,7 +89,7 @@ Detete ameaças à sua rede, tal como ataques Man-in-the-middle e impeça a sinc
 
 ![Diagrama a mostrar o acesso condicional a permitir o acesso após a ameaça da rede ser corrigida](../media/mtp/network-spo-unblocked.png)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Seguem-se os principais passos que tem de efetuar para implementar esta solução:
 1.  [Configurar a sua subscrição do Lookout](setup-your-lookout-mtd-subscription.md)
 2.  [Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Lookout no Intune](enable-lookout-mtd-connection.md)

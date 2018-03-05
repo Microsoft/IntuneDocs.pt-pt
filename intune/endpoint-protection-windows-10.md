@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
 
@@ -225,7 +225,9 @@ Para ativar o Exploit Protection, crie um ficheiro XML que represente as defini�
 
 Utilize as **Políticas de integridade do código de controlo de aplicações** para escolher as aplicações adicionais que precisam de ser auditadas ou que podem ser consideradas de confiança para serem executadas pelo Controlo de Aplicações do Windows Defender. Os componentes do Windows e todas as aplicações da Microsoft Store são automaticamente considerados de confiança para serem executados.
 
-As aplicações não serão bloqueadas quando são executadas no modo "apenas auditoria". O modo "apenas auditoria" regista todos os eventos nos registos do cliente local.
+As aplicações não serão bloqueadas quando são executadas no modo **Apenas auditoria**. O modo **Apenas auditoria** regista todos os eventos nos registos do cliente local.
+
+Uma vez ativado, o Controlo de Aplicações só poderá ser desativado ao alterar o modo de **Impor** para **Apenas auditoria**. Se alterar do modo de **Impor** para **Não Configurado** o Controlo de Aplicações continuará a ser imposto nos dispositivos atribuídos.
 
 ## <a name="windows-defender-security-center"></a>Centro de Segurança do Windows Defender
 

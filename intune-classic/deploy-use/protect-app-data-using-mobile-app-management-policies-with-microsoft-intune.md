@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger os dados da aplicação através de políticas de proteção de aplicações com o Microsoft Intune
 
@@ -57,12 +57,10 @@ A utilização de MDM com políticas de proteção de aplicações tem outras va
 - **As políticas de proteção de aplicações asseguram que as proteções de camada de aplicação estão implementadas.** Por exemplo, pode ter uma política que exige um PIN para abrir uma aplicação num contexto profissional, impedir que os dados sejam partilhados entre aplicações e impedir que os dados de aplicações da empresa sejam guardados numa localização de armazenamento pessoal.
 
 ## <a name="devices-that-support-mam"></a>Dispositivos que suportam MAM
-Atualmente, as políticas de proteção de aplicações são suportadas em:
--   iOS 8.1 ou posterior
--   Android 4 ou posterior
+O suporte para plataformas de políticas de proteção de aplicações do Intune está alinhado com o suporte para plataformas de aplicações do Office. Para obter mais detalhes, veja [Requisitos de Sistema do Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
->Os dispositivos Windows não são suportados pelo MAM sem um cenário de inscrição. No entanto, quando inscrever dispositivos Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Os dispositivos Windows não são suportados pelo MAM sem um cenário de inscrição. No entanto, quando inscrever dispositivos com o Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, veja [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP])](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações

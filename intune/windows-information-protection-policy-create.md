@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -47,7 +47,7 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 
 ## <a name="pre-requisites"></a>Pré-requisitos
 
-Para poder criar uma política de proteção de aplicações do WIP, tem de configurar o fornecedor de MAM. Saiba mais sobre [como configurar o fornecedor de MAM com o Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Para poder criar uma política de proteção de aplicações do WIP, tem de configurar o fornecedor de MAM. Saiba mais sobre [como configurar o fornecedor de MAM com o Intune](app-protection-policies-configure-windows-10.md).
 
 Além disso, tem de ter o seguinte:
 
@@ -125,9 +125,11 @@ Depois de adicionar as aplicações que pretende proteger com o WIP, tem de apli
 
 ### <a name="before-you-begin"></a>Antes de começar
 
-A Aprendizagem de WIP é um relatório que lhe permite monitorizar as suas aplicações desconhecidas de WIP. As aplicações desconhecidas são as aplicações que não foram implementadas pelo departamento de TI da sua organização. Pode exportar estas aplicações a partir do relatório e adicioná-las às políticas do WIP para evitar a interrupção da produtividade antes de impor o WIP no modo “Bloquear”.
+A Aprendizagem de WIP é um relatório que lhe permite monitorizar as suas aplicações com o WIP e as aplicações desconhecidas de WIP. As aplicações desconhecidas são as aplicações que não foram implementadas pelo departamento de TI da sua organização. Pode exportar estas aplicações a partir do relatório e adicioná-las às políticas do WIP para evitar a interrupção da produtividade antes de impor o WIP no modo “Bloquear”.
 
-Recomendamos que comece com **Silencioso** ou **Permitir Substituições** enquanto verifica com um pequeno grupo que tem as aplicações corretas na lista de aplicações permitidas. Depois de terminar, pode alterar a política de imposição final, **Bloquear**.
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+Quando estiver a trabalhar com aplicações com o WIP e aplicações desconhecidas de WIP, recomendamos que comece com **Silencioso** ou **Permitir Substituições** enquanto verifica com um pequeno grupo que tem as aplicações corretas na sua lista de aplicações permitidas. Depois de terminar, pode alterar a política de imposição final, **Bloquear**.
 
 ### <a name="what-are-the-protection-modes"></a>O que são os modos de proteção?
 
