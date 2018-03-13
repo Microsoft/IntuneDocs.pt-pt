@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: d7c2ec47a163c16de91d3004a6204c1c00feb801
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Edição antecipada do Microsoft Intune – fevereiro de 2018
 
@@ -92,7 +92,7 @@ As novas definições do [Windows Defender Credential Guard](https://docs.micros
 
   - A opção "Ativada com bloqueio UEFI" garante que o Credential Guard não pode ser desativado com a chave de registo ou através da utilização da Política de Grupo. Para desativar o Credential Guard após a utilização desta definição, terá de definir a Política de Grupo para "Desativada" e remover a funcionalidade de segurança de cada computador, com um utilizador fisicamente presente, para limpar a configuração persistente na UEFI. Enquanto a configuração da UEFI persistir, o Credential Guard estará ativado.
 
-  - A opção "Ativada sem bloqueio" permite que o Credential Guard seja desativado remotamente através da utilização da Política de Grupo. Os dispositivos que utilizam esta definição têm de ter pelo menos o Windows 10 (Versão 1511).
+  - A opção "Ativada sem bloqueio" permite que o Credential Guard seja desativado remotamente através da utilização da Política de Grupo. Os dispositivos que utilizam esta definição têm de ter, pelo menos, o Windows 10 (Versão 1511).
 
   - A opção "Não Configurado" deixa a definição de política indefinida. A Política de Grupo não escreve a definição de política no registo, pelo que não tem qualquer impacto nos computadores ou utilizadores. Se existir uma definição atual no registo, não será modificada.
 
@@ -216,9 +216,6 @@ O Intune suportará a inscrição de dispositivos de um máximo de 100 contas di
 
 Após a migração, as Graph APIs beta e os scripts publicados para gerir o DEP da Apple ou o ASM através do Graph deixarão de funcionar. Estão em desenvolvimento novas Graph APIs beta e serão lançadas após a migração.
 
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selecionar as categorias de dispositivos através das definições de Acesso Profissional ou Escolar<!-- 1058963 -->
-Se tiver ativado o [mapeamento do grupo de dispositivos](https://docs.microsoft.com/intune/device-group-mapping), será pedido aos utilizadores no Windows 10 que selecionem uma categoria de dispositivos após a inscrição através do botão **Ligar** em **Definições** > **Contas** > **Acesso profissional ou escolar** ou durante a configuração inicial.
-
 ### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Filtrar políticas de conformidade em dispositivos nos grupos de dispositivos <!--1307012 -->
 
 Será capaz de filtrar políticas de conformidade de destino para os utilizadores nos grupos de utilizadores. Será capaz de filtrar políticas de conformidade para os dispositivos nos grupos de dispositivos.
@@ -301,7 +298,7 @@ Neste momento, não existem avisos ativos.
 
 
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 Veja [Novidades do Microsoft Intune](whats-new.md) para obter detalhes sobre os desenvolvimentos recentes.
 
 

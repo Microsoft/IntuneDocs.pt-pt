@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ca8eaede9df070baf1f39023942a8b07c54b814
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
 
@@ -80,7 +80,7 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
    - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações). A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos DEP com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos. Durante a inscrição em dispositivos DEP, não pode ser pedida a alteração da palavra-passe aos novos utilizadores que tenham de alterar a palavra-passe no primeiro início de sessão. Além disso, não será pedido aos utilizadores cujas palavras-passe expiraram que reponham a palavra-passe durante a inscrição DEP e os mesmos terão de repor a palavra-passe a partir de um dispositivo diferente.
 
     >[!NOTE]
-    >O DEP com afinidade de utilizador requer a ativação de um [ponto final de Nome de Utilizador/Misto WS-Trust 1.3](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) para pedir o token de utilizador. [Saiba mais sobre o WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >O DEP com afinidade de utilizador requer a ativação de um [ponto final de Nome de Utilizador/Misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints) para pedir o token de utilizador. [Saiba mais sobre o WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Sem afinidade de utilizador**: o dispositivo não está afiliado a um utilizador. Utilize esta afiliação em dispositivos que efetuem tarefas sem aceder aos dados de utilizador locais. As aplicações que requerem afiliação de utilizadores, incluindo a aplicação Portal da Empresa utilizada para instalar aplicações de linha de negócio, não irão funcionar.
 
