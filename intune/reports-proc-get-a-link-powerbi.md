@@ -1,11 +1,12 @@
 ---
-title: "Estabelecer uma ligação ao Armazém de Dados com o Power BI | Documentos da Microsoft"
-description: "Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Intune."
+title: "Estabelecer uma ligação ao Armazém de Dados com o Power BI"
+titlesuffix: Microsoft Intune
+description: "Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Microsoft Intune."
 keywords: "Armazém de Dados do Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa7c578cd8dba84910bae9b9f204c8057c76bf6b
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 1266fa4cc5ef958e369e58b0a6619e2bab3dd3eb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
@@ -77,7 +78,7 @@ Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RE
     4.  Selecione **Ligar**.  
 10. Selecione **Carregar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Pode encontrar respostas a perguntas sobre o seu ambiente, como o número de dispositivos inscritos por dia durante a última semana. Pode obter informações sobre o seu inquilino do Intune e população de clientes através dos relatórios que utilizaram o ficheiro do Power BI (pbix) do Armazém de Dados do Intune obtido no painel no Azure. No entanto, o Intune proporciona muitas outras formas de expandir ou reutilizar os dados. Pode fazer muito mais com o Power BI e a API do Armazém de Dados do Intune, por exemplo:
 

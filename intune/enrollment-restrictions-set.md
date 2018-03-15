@@ -1,7 +1,7 @@
 ---
-title: "Definir restrições de inscrição no Intune"
-titlesuffix: Azure portal
-description: "Restrinja a inscrição por plataforma e defina um limite de inscrição de dispositivos no Intune. \""
+title: "Definir restrições de inscrição no Microsoft Intune"
+titlesuffix: 
+description: "Restrinja a inscrição por plataforma e defina um limite de inscrição de dispositivos no Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Como administrador do Intune, pode criar e gerir as restrições de inscrição que definem o número e o tipo de dispositivos que podem ser inscritos para serem geridos com o Intune. Pode criar múltiplas restrições e aplicá-las a diferentes grupos de utilizadores. Pode definir uma [ordem de prioridade](#change-enrollment-restriction-priority) para as diferentes restrições.
+Como administrador do Intune, pode criar e gerir restrições de inscrição. Estas restrições definem o número e o tipo de dispositivos que podem ser inscritos para serem geridos com o Intune. Pode criar múltiplas restrições e aplicá-las a diferentes grupos de utilizadores. Pode definir uma [ordem de prioridade](#change-enrollment-restriction-priority) para as diferentes restrições.
 
 >[!NOTE]
 >As restrições de inscrição não são funcionalidades de segurança. A identidade dos dispositivos pode ser falsificada de forma a contornar estas restrições. Estas restrições são uma forma de dissuadir utilizadores sem fins maliciosos.
@@ -83,7 +83,7 @@ Pode alterar as definições de uma restrição de tipos de dispositivo ao segui
   As versões do sistema operativo não se aplicam aos dispositivos Apple inscritos com o Programa de Registo de Aparelho, o Apple School Manager ou a aplicação Apple Configurator.
 8. Especifique se quer **Permitir** ou **Bloquear** dispositivos **pessoais** para cada plataforma listada.
 
-    ![Captura de ecrã a mostrar a área de trabalho de restrições de dispositivos, com as configurações de plataformas de dispositivos predefinidas a mostrar as definições de dispositivos pessoais que foram configuradas.](media/device-restrictions-platform-configurations.png)
+    ![Captura de ecrã da área de trabalho de restrições de dispositivos com a plataforma de dispositivos predefinida configurada para dispositivos pessoais](media/device-restrictions-platform-configurations.png)
 9. Clique em **Guardar**.
 
 >[!NOTE]
@@ -100,7 +100,7 @@ Pode alterar as definições de uma restrição de limite de dispositivos ao seg
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Em **Restrições de Limite de Dispositivos**, selecione a restrição que pretende definir.
 5. Selecione **Limite de Dispositivos** e, em seguida, na lista pendente, selecione o número máximo de dispositivos que um utilizador pode inscrever.
-    ![Captura de ecrã a mostrar o painel de restrições de limites de dispositivos, com as restrições de limites de dispositivos.](./media/device-restrictions-limit.png)
+    ![Captura de ecrã do painel Restrições de limite de dispositivos](./media/device-restrictions-limit.png)
 6. Clique em **Guardar**.
 
 O seu utilizador final verá uma notificação que o irá informar quando atingir o limite de dispositivos inscritos. Por exemplo, no iOS, teria o seguinte aspeto:

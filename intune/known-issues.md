@@ -1,12 +1,12 @@
 ---
-title: Problemas conhecidos do Microsoft Intune no portal do Azure
-titlesuffix: Azure portal
-description: Leia sobre os problemas conhecidos no Intune"
+title: Problemas conhecidos no Microsoft Intune
+titlesuffix: Microsoft Intune
+description: Saiba mais sobre os problemas conhecidos no Microsoft Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 255bd839bda8e8d85794a88fc76899bbd5870bc0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 

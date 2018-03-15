@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
 
@@ -37,11 +37,11 @@ A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar
 
 ## <a name="how-to-sync-a-device"></a>Como sincronizar um dispositivo
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, escolha **Dispositivos**.
-4. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
-5. Na lista de dispositivos que gere, escolha um dispositivo e, em seguida, escolha a ação remota **Sincronizar**.
+4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
+5. Na lista de dispositivos que gere, selecione um dispositivo, selecione **...Mais** e, em seguida, selecione a ação remota **Sincronizar**.
 7. Selecione **Sim** para confirmar a ação.
 
 
@@ -64,6 +64,6 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação.                                                                                   | Sim       |
 | 2016330888 | A avaliação da fidedignidade do servidor falhou.                                                                                                | Não        |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
-Selecione **Ações do Dispositivo** para ver o estado da ação de sincronização. 
+Selecione **Ações do dispositivo** para ver o estado da ação de sincronização. 

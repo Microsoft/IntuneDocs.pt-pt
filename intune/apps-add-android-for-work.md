@@ -1,12 +1,12 @@
 ---
 title: "Atribuir aplicações a dispositivos Android for Work"
-titlesuffix: Azure portal
-description: "Utilize este tópico para sincronizar e, em seguida, atribuir aplicações a dispositivos Android for Work a partir da Google Play for Work Store.\""
+titlesuffix: Microsoft Intune
+description: "Compreenda como sincronizar e atribuir aplicações em dispositivos Android for Work a partir da Google Play for Work Store."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Como atribuir aplicações em dispositivos Android for Work com o Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As aplicações em dispositivos Android for Work são atribuídas de forma diferente da atribuição em dispositivos Android padrão. Todas as aplicações que instala para o Android for Work provêm da Google Play for Work Store. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las.
-Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure. A partir daqui, pode gerir a atribuição da aplicação da mesma forma que atribuiria qualquer outra aplicação.
+O Android for Work é um programa para dispositivos Android. Todas as aplicações que instala em dispositivos Android for Work são provenientes da Google Play for Work Store. As aplicações em dispositivos Android for Work são atribuídas de forma diferente da atribuição em dispositivos Android padrão. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure. A partir daqui, pode gerir a atribuição da aplicação da mesma forma que atribuiria qualquer outra aplicação.
 
 Além disso, se tiver criado as suas próprias aplicações de linha de negócio (LOB), pode atribuí-las do seguinte modo:
 - Inscreva-se numa conta Google Developer que lhe permita publicar aplicações numa área privada na Google Play Store.

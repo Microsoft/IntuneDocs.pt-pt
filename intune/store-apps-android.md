@@ -1,7 +1,7 @@
 ---
-title: "Como adicionar aplicações da loja Android ao Intune"
-titleSuffix: Azure portal
-description: "Saiba mais sobre como adicionar aplicações da loja Android ao Intune.\""
+title: "Como adicionar aplicações da loja Android ao Microsoft Intune"
+titleSuffix: 
+description: "Saiba mais sobre como adicionar aplicações da loja Android ao Microsoft Intune."
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdf00d8adc5a854f90b59c6066d6f0ab7c6ae94a
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja Android ao Microsoft Intune
 
@@ -34,13 +34,13 @@ Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem
 5. Acima da lista de aplicações, escolha **Adicionar**.
 6. No painel **Adicionar Aplicação**, selecione **Android** nos tipos de **Aplicação da loja** disponíveis.
 7. Selecione **Configurar** para configurar as seguintes informações da aplicação (consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente):
-    - **Nome** – introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
-    - **Descrição** – introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
-    - **Publicador** – introduza o nome do publicador da aplicação.
+    - **Nome** - Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
+    - **Descrição** - Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
+    - **Publicador** – Introduza o nome do publicador da aplicação.
     - **URL da loja de aplicações** – introduza o URL da loja de aplicações da aplicação que pretende criar.
     - **Sistema operativo mínimo** – na lista, selecione a versão mínima do sistema operativo no qual a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
-    - **Categoria** (opcional) – selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Isto irá permitir que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar esta aplicação em destaque no Portal da Empresa** – apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **Categoria** (opcional) – Selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Isto irá permitir que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar esta aplicação em destaque no Portal da Empresa** – Apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **URL de informações** (opcional) – introduza o URL de um site que contenha informações sobre esta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
     - **URL de privacidade** (opcional) – introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
     - **Programador** (opcional) – introduza o nome do programador da aplicação.
@@ -52,6 +52,6 @@ Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem
 
 A aplicação que criou será apresentada na lista de aplicações, onde a pode atribuir aos grupos que escolher. 
 
-##<a name="next-steps"></a>Próximos passos
+##<a name="next-steps"></a>Passos seguintes
 
 - [Como atribuir aplicações a grupos](apps-deploy.md)

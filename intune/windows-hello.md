@@ -1,32 +1,32 @@
 ---
-title: Como utilizar o Windows Hello para Empresas
-titleSuffix: Azure portal
+title: Como integrar o Windows Hello para Empresas com o Microsoft Intune
+titleSuffix: 
 description: "Saiba como criar uma política para controlar a utilização do Windows Hello para Empresas em dispositivos geridos.\""
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>Utilizar o Windows Hello para Empresas
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrar o Windows Hello para Empresas com o Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O Microsoft Intune integra-se com o Windows Hello para Empresas (anteriormente, Microsoft Passport for Work), que é um método de início de sessão alternativo que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual.
+Pode integrar o Microsoft Hello para Empresas (anteriormente conhecido como Microsoft Passport for Work) com o Microsoft Intune.
 
-Com o Hello para Empresas, pode utilizar um *gesto de utilizador* para iniciar sessão, em vez de uma palavra-passe. Um gesto de utilizador pode ser um PIN simples, uma autenticação biométrica, como o Windows Hello, ou um dispositivo externo, como um leitor de impressões digitais.
+ O Hello para Empresas é um método de início de sessão alternativo que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual. Pode utilizar um *gesto de utilizador* para iniciar sessão, em vez de uma palavra-passe. Um gesto de utilizador pode ser um PIN simples, uma autenticação biométrica, como o Windows Hello, ou um dispositivo externo, como um leitor de impressões digitais.
 
 O Intune integra o Hello para Empresas de duas formas:
 
@@ -50,19 +50,19 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
 1.  No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2.  No painel do Intune, selecione **Inscrição de dispositivos** e, em seguida, selecione **Inscrição no Windows** > **Windows Hello para Empresas**.
+2.  Na página Intune, selecione **Inscrição de dispositivos** e, em seguida, selecione **Inscrição no Windows** > **Windows Hello para Empresas**.
 
-3.  No painel que se abre, selecione as definições **Predefinição**.
+3.  Na página que é aberta, selecione **Predefinição**.
 
-4.  No painel **Todos os Utilizadores**, clique em **Propriedades** e, em seguida, introduza um **Nome** e uma **Descrição** opcional para as definições do Windows Hello para Empresas.
+4.  Na página **Todos os Utilizadores**, clique em **Propriedades** e, em seguida, introduza um **Nome** e uma **Descrição** opcional para as definições do Windows Hello para Empresas.
 
-5. No painel **Todos os Utilizadores**, clique em **Definições** e, em seguida, escolha entre as seguintes opções para **Configurar o Windows Hello para Empresas**:
+5. Na página **Todos os Utilizadores**, clique em **Definições** e, em seguida, escolha entre as seguintes opções para **Configurar o Windows Hello para Empresas**:
 
     - **Desativado**. Se não pretender utilizar o Windows Hello para Empresas, selecione esta definição. Todas as outras definições no ecrã não estão disponíveis.
     - **Ativado**. Selecione esta definição se pretender configurar as definições do Windows Hello para Empresas.
-    - **Não configurado**. Selecione esta definição se não pretender utilizar o Intune para controlar as definições do Windows Hello para Empresas. Nenhuma das definições do Windows Hello para Empresas existentes em dispositivos Windows 10 será alterada. Todas as outras definições no painel não estão disponíveis.
+    - **Não configurado**. Selecione esta definição se não pretender utilizar o Intune para controlar as definições do Windows Hello para Empresas. Nenhuma das definições do Windows Hello para Empresas existentes em dispositivos Windows 10 será alterada. Todas as outras definições na página não estão disponíveis.
 
-6.  Se tiver selecionado **Ativado** no passo anterior, configure as definições obrigatórias que serão aplicadas a todos os dispositivos Windows 10 e Windows 10 Mobile inscritos.
+6.  Se tiver selecionado **Ativado** no passo anterior, configure as definições obrigatórias que são aplicadas a todos os dispositivos Windows 10 e Windows 10 Mobile inscritos.
 
  - **Utilizar um Trusted Platform Module (TPM)**. Um chip TPM fornece uma camada adicional de segurança de dados.<br>Escolha um dos seguintes valores:
 

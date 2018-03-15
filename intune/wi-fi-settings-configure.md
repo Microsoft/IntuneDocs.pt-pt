@@ -1,7 +1,7 @@
 ---
 title: "Como configurar as definições de Wi-Fi do Intune"
-titleSuffix: Azure portal
-description: "Saiba como utilizar o Intune para configurar ligações Wi-Fi nos dispositivos que gere.\""
+titleSuffix: Microsoft Intune
+description: "Saiba como utilizar o Microsoft Intune para configurar ligações Wi-Fi em dispositivos que gere."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Como configurar definições de Wi-Fi no Microsoft Intune
 
@@ -46,7 +46,7 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Criar um perfil de dispositivo com as definições de Wi-Fi
 
-1. Inicie sessão no portal do Azure.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
@@ -60,9 +60,9 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
     - **Windows 8.1 e posterior (importar um perfil)**
 
    > [!IMPORTANT]
-   > Se estiver a criar um perfil para dispositivos com o Windows 10, incluindo o Windows Holographic for Business, tem de selecionar a plataforma **Windows 8.1 e versões posteriores**. A plataforma **Windows 10 e versões posteriores** não inclui um tipo de perfil de Wi-Fi. 
+   > Se estiver a criar um perfil para dispositivos com o Windows 10, incluindo o Windows Holographic for Business, tem de selecionar a plataforma **Windows 8.1 e versões posteriores**. A plataforma **Windows 10 e posterior** não incluo um tipo de perfil Wi-Fi. 
 
-6. Para dispositivos Apple ou Android, na lista pendente **Tipo de Wi-Fi**, selecione **Básica** ou **Enterprise**. Pode utilizar a opção **Básica** para disponibilizar funcionalidades básicas, como o nome da rede e o SSID. A opção **Enterprise** permite-lhe disponibilizar informações mais avançadas, como o Protocolo de Autenticação Extensível (EAP), se a sua rede Wi-Fi o utilizar. 
+6. Para dispositivos Apple ou Android, na lista pendente **Tipo de Wi-Fi**, selecione **Básica** ou **Enterprise**. Pode utilizar a opção **Básica** para disponibilizar funcionalidades básicas, como o nome da rede e o SSID. A opção **Empresarial** permite disponibilizar informações mais avançadas, como o Protocolo de Autenticação Extensível (EAP), se a sua rede Wi-Fi o utilizar. 
 
    O perfil **Wi-Fi importado** (para Windows 8.1 e versões posteriores) permite-lhe importar definições de Wi-Fi como um ficheiro XML que exportou anteriormente a partir de um dispositivo diferente.
 1. As definições que pode configurar diferem consoante a plataforma que escolher. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
@@ -74,6 +74,6 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
 
 O perfil é criado e apresentado no painel da lista de perfis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

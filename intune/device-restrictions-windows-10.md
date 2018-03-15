@@ -1,25 +1,26 @@
 ---
-title: "Definições de restrição de dispositivos no Intune para dispositivos Windows 10"
-titlesuffix: Azure portal
-description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições e a funcionalidade em dispositivos Windows 10."
+title: "Definições de restrição de dispositivos no Microsoft Intune para dispositivos com Windows 10"
+titlesuffix: 
+description: "Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos a executar o Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows 10 e posterior no Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Definições de restrição de dispositivos no Microsoft Intune para dispositivos com Windows 10 e posterior
+Este artigo mostra-lhe todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Esta definição de política não é aplicada se o computador estiver associado ao Azure Active Directory e a inscrição automática estiver ativada. 
    - Esta definição de política não se aplica a computadores a executar o Windows 10 Home.
 - **Instalação do certificado de raiz manual (apenas dispositivos móveis)** – impede o utilizador de instalar manualmente os certificados de raiz e os certificados CAP intermédios.
-- **Submissão de dados de diagnóstico** – Os valores possíveis são:
-    - **Nenhum** – não são enviados dados à Microsoft
-    - **Básico** – são enviadas à Microsoft informações limitadas
-    - **Melhorado** – são enviados dados de diagnóstico melhorados à Microsoft
-    - **Completo** – Envia os mesmos dados que Melhorado, juntamente com dados adicionais sobre o estado do dispositivo
+
 - **Câmara** – Permita ou bloqueie a utilização da câmara no dispositivo.
 - **Sincronização de ficheiros do OneDrive** – impede o dispositivo de sincronizar ficheiros no OneDrive.
 - **Armazenamento amovível** – especifica se os dispositivos de armazenamento externo, como os cartões SD, podem ser utilizados no dispositivo.
@@ -51,12 +48,13 @@ ms.lasthandoff: 02/19/2018
 - **Deteção de dispositivos** – bloqueie a deteção de um dispositivo por outros dispositivos.
 - **Comutador de Tarefa (apenas para dispositivos móveis)** – bloqueia o comutador de tarefa no dispositivo.
 - **Caixa de diálogo de erro de cartão SIM (apenas para dispositivos móveis)** – impedirá que uma mensagem de erro seja apresentada no dispositivo se nenhum cartão SIM for detetado.
+- **Área de Trabalho do Ink** – impede os utilizadores de acederem à área de trabalho do Ink. Quando esta definição não está configurada, a área de trabalho do Ink está ativada e pode ser acedida por cima do ecrã de bloqueio.
 - **Reimplementação automática** – permite aos utilizadores com direitos administrativos eliminar todos os dados do utilizador e as definições através de **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão.
 
 
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
-    -   **Tipo obrigatório de palavra-passe** – Especifica se a palavra-passe tem de ser apenas numérica ou alfanumérica.
+    -   **Tipo de palavra-passe necessária** – especifica se a palavra-passe tem de ser apenas numérica ou alfanumérica.
     -   **Comprimento mínimo da palavra-passe** – Aplica-se apenas ao Windows 10 Mobile.
     -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Para dispositivos com o Windows 10: se o dispositivo tiver o BitLocker ativado, será colocado no modo de recuperação do BitLocker após o início de sessão falhar o número de vezes que especificar. Se o dispositivo não tiver o BitLocker ativado, esta definição não se aplica.
 Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o número de vezes que especificar, o dispositivo será apagado.
@@ -75,6 +73,9 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 -   **Personalização de entrada** – não permite a utilização de serviços de fala baseados na cloud para a Cortana, o ditado ou aplicações da Loja Microsoft. Se permitir estes serviços, a Microsoft recolherá os dados de voz para melhorar o serviço.
 -   **Aceitação automática de pedidos de consentimento do utilizador de emparelhamento e privacidade** – permite que o Windows aceite automaticamente as mensagens de consentimento de emparelhamento e privacidade ao executar as aplicações.
+- **Publicar as atividades do utilizador**: defina esta opção para **Bloquear** para impedir que as experiências e a deteção de recursos utilizados recentemente sejam partilhadas no comutador de tarefas.
+- **Apenas atividades locais**: defina esta opção para **Bloquear** para impedir que as experiências e a deteção de recursos utilizados recentemente sejam partilhadas no comutador de tarefas com base na atividade local.
+
 
 Pode definir as informações às quais todas as aplicações no dispositivo podem aceder. Pode definir exceções numa base por aplicação através de **Exceções de privacidade por aplicação**.
 
@@ -130,7 +131,7 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
 - **Notificações do centro de ações (apenas para dispositivos móveis)** – permite a apresentação de notificações do Centro de Ações no ecrã de bloqueio do dispositivo (apenas no Windows 10 Mobile).
-- **URL da imagem do ecrã bloqueado (Apenas para ambiente de trabalho)** – especifique o URL para uma imagem em formato PNG, JPG ou JPEG que será utilizada como a imagem de fundo do ecrã bloqueado do Windows. Os utilizadores não o podem alterar.
+- **URL da imagem do ecrã bloqueado (apenas computadores)** – especifica o URL de uma imagem no formato JPEG que será utilizada como o fundo do ecrã de bloqueio no Windows. Os utilizadores não o podem alterar.
 -   **Tempo limite do ecrã configurável pelo utilizador (apenas para dispositivos móveis)** – permite que os utilizadores configurem a quantidade de tempo 
 -   **Cortana no ecrã bloqueado (apenas no ambiente de trabalho)** – não permite que o utilizador interaja com a Cortana quando o dispositivo tiver o ecrã bloqueado (apenas para computadores com o Windows 10).
 -   **Notificações de alerta no ecrã bloqueado** – bloqueia a apresentação de mensagens de alerta no ecrã de bloqueio do dispositivo.
@@ -180,6 +181,8 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 -   **Motor de busca predefinido** – especifique o motor de busca predefinido a ser utilizado. Os utilizadores finais podem alterar este valor em qualquer altura.
 -   **Limpar dados de navegação à saída** – limpa o histórico e os dados de navegação quando o utilizador sai do Edge.
 -   **Recolha de dados do Mosaico Dinâmico** – impede o Windows de recolher informações do Mosaico Dinâmico quando um utilizador afixa um site ao menu inicial do Edge.
+-  **Lista de Favoritos** – define o caminho para o ficheiro de favoritos. Por exemplo, http://contoso.com/favorites.html.
+-  **Restringir alterações aos Favoritos** – defina esta opção para **Bloquear** para impedir os utilizadores de adicionarem, importarem, ordenarem ou editarem a lista Favoritos. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 

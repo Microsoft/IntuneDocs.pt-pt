@@ -1,29 +1,28 @@
 ---
-title: "Políticas de conformidade de dispositivos do Intune"
-titleSuffix: Azure portal
-description: "Utilize este tópico para saber mais sobre a conformidade de dispositivos no Microsoft Intune\""
+title: "Políticas de conformidade de dispositivos do Microsoft Intune"
+titleSuffix: 
+description: Saiba mais sobre a conformidade de dispositivos do Microsoft Intune
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Introdução às políticas de conformidade de dispositivos do Intune
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Começar a utilizar políticas de conformidade de dispositivos do Microsoft Intune
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-## <a name="what-is-device-compliance-in-intune"></a>O que é a conformidade de dispositivos no Intune?
 
 As políticas de conformidade de dispositivos do Intune definem as regras e as definições que um dispositivo tem de cumprir para ser considerado conforme pelo Intune.
 
@@ -43,7 +42,7 @@ Estas regras incluem o seguinte:
 
 Também pode utilizar as políticas de conformidade do dispositivo para monitorizar o estado de conformidade nos seus dispositivos.
 
-### <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
+## <a name="device-compliance-requirements"></a>Requisitos de conformidade do dispositivo
 
 Os requisitos de conformidade são essencialmente regras, como exigir um PIN ou encriptação do dispositivo, que pode especificar como obrigatórias ou não obrigatórias numa política de conformidade.
 

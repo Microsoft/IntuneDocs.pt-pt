@@ -1,12 +1,12 @@
 ---
 title: "Criar e implementar políticas de proteção de aplicações"
-titleSuffix: Azure portal
-description: "Saiba como as políticas de proteção de aplicações do Intune podem ajudar a proteger os dados da empresa utilizados por aplicações geridas.\""
+titleSuffix: Microsoft Intune
+description: "Saiba como criar e atribuir políticas de proteção de aplicações do Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,18 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+Saiba como criar e atribuir políticas de proteção de aplicações do Microsoft Intune aos seus utilizadores. Este tópico também descreve como fazer alterações a políticas existentes.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -34,49 +37,52 @@ As políticas de proteção de aplicações podem ser aplicadas às aplicações
 Se estiver a procurar uma lista de MAM com aplicações suportadas, veja as [Listas de aplicações de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicações
-1.  Na carga de trabalho **Aplicações móveis**, escolha **Gerir** > **Políticas de proteção de aplicações**.
+1.  Na carga de trabalho **Aplicações móveis**, selecione **Políticas de proteção de aplicações** na secção **Gerir**. Esta seleção abre o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes.
+2. Selecione **Adicionar uma política**.
 
-2.  É apresentado o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes. Selecione **Adicionar uma política**.
+  ![Captura de ecrã do painel "Adicionar uma política"](./media/app-protection-add-policy.png)
 
-  ![Captura de ecrã do painel Adicionar uma política](./media/app-protection-add-policy.png)
+3.  Escreva um nome para a política, adicione uma pequena descrição e selecione o tipo de plataforma para a sua política. Se for necessário, pode criar mais de uma política para cada plataforma.
 
-3.  Escreva um nome para a política, adicione uma breve descrição e selecione o tipo de plataforma para criar uma política para iOS ou Android. Pode criar mais de uma política para cada plataforma.
-
-4.  Escolha **Aplicações** para abrir o painel **Aplicações** onde é apresentada uma lista de aplicações disponíveis. Selecione uma ou mais aplicações na lista que pretende associar à política que está a criar. Depois de selecionar as aplicações, selecione **Selecionar** na parte inferior do painel **Aplicações** para guardar a sua seleção.
+4.  Selecione **Aplicações** para abrir o painel **Aplicações**, onde é apresentada uma lista de aplicações disponíveis. Selecione uma ou mais aplicações na lista que pretende associar à política que está a criar.
+5. Após escolher as aplicações, selecione a opção **Selecionar** para guardar a sua seleção.
 
     > [!IMPORTANT]
     > Tem de selecionar pelo menos uma aplicação para criar uma política.
 
-5.  No painel **Adicionar uma política**, escolha **Configurar definições necessárias** para abrir o painel de definições de política.
+6.  Selecione **Configurar definições obrigatórias** no painel **Adicionar uma política** para abrir as **Definições**.
 
-    Existem duas categorias de definições de política: **Reposicionamento de Dados** e **Acesso**.  As políticas de reposicionamento de dados são aplicáveis ao movimento de dados de e para as aplicações, enquanto que as políticas de acesso determinam a forma como o utilizador final acede às aplicações num contexto profissional.
-    Para começar, as definições de política têm valores predefinidos. Não é necessário efetuar quaisquer alterações se os valores predefinidos cumprirem os requisitos.
+    Existem duas categorias de definições de política: **Reposicionamento de Dados** e **Acesso**.  As políticas de reposicionamento de dados são aplicáveis à entrada e saída de dados das aplicações. As políticas de acesso determinam a forma como o utilizador final acede às aplicações num contexto de trabalho.
+    Para começar, as definições de política têm valores predefinidos. Se os valores predefinidos cumprirem os seus requisitos, não precisa de fazer alterações.
 
     > [!TIP]
-    > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional.  Quando o utilizador final utiliza a aplicação para realizar uma tarefa pessoal, este não será afetado por estas políticas.
+    > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional. Quando os utilizadores finais utilizam a aplicação para realizar uma tarefa pessoal, estes não são afetados por estas políticas.
 
+7.  Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**. Escolha **Criar** para criar a política e guardar as suas definições.
+8. Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**.
+9. Escolha **Criar** para criar a política e guardar as suas definições.
 
-
-6.  Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política** . Escolha **Criar** para criar a política e guardar as suas definições.
-
-
-Quando acabar de criar uma política, conforme descrito no procedimento anterior, esta não é implementada para nenhum utilizador. Para implementar uma política, consulte a secção seguinte, "Implementar uma política para utilizadores".
+Quando acabar de criar uma política, conforme descrito no procedimento anterior, esta não é implementada para nenhum utilizador. Para implementar uma política, veja a secção [Implementar uma política para utilizadores](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar uma política para utilizadores
 
-1.  No painel **Política**, escolha **Grupos de utilizadores**, que abre o painel **Grupos de utilizadores**. Escolha **Adicionar um grupo de utilizadores** no painel **Grupos de utilizadores** para abrir o painel **Adicionar um grupo de utilizadores**.
 
-  ![Captura de ecrã do painel Grupos de utilizadores com a opção de menu Adicionar um grupo de utilizadores realçada](./media/app-protection-policy-add-users.png)
+1. No painel **Políticas de proteção de aplicações**, selecione uma política.
 
-2.  É apresentada uma lista dos grupos de utilizadores no painel **Adicionar grupo de utilizadores** . Esta é uma lista de todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, selecione **Selecionar**. Escolher **Selecionar** implementa a política para os utilizadores.
-  ![Captura de ecrã do painel Adicionar um grupo de utilizadores, que mostra a lista de utilizadores do Azure Active Directory](./media/azure-ad-user-group-list.png)
+1. No painel **Política**, selecione a opção **Atribuições**, que irá abrir o painel **Proteção de Aplicações do Intune – Atribuições**. Selecione **Selecionar grupos para incluir** no painel **Atribuições** para abrir o painel **Selecionar grupos para incluir**.
 
-Criou agora uma política e implementou-a a utilizadores.
+   ![Captura de ecrã do painel Atribuições, com a opção do menu Selecionar grupos para incluir realçada](./media/app-protection-policy-add-users.png)
 
-Apenas os utilizadores com licenças do Microsoft Intune atribuídas são afetados pela política. Os utilizadores que estão no grupo de segurança que selecionou que não têm uma licença do Microsoft Intune atribuída não são afetados.
+2.  É apresentada uma lista dos grupos de utilizadores no painel **Adicionar grupo de utilizadores**. Esta lista mostra todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, selecione **Selecionar**. Escolher **Selecionar** implementa a política para os utilizadores.
+
+    ![Captura de ecrã do painel Adicionar um grupo de utilizadores a mostrar a lista de utilizadores do Azure Active Directory](./media/azure-ad-user-group-list.png)
+
+Acabou de criar uma política e de a implementar para os utilizadores.
+
+Apenas os utilizadores a que foram atribuídas licenças do Microsoft Intune são afetados pela política. Os utilizadores no grupo de segurança selecionado a quem não foi atribuída uma licença do Intune não são afetados.
 
 >[!IMPORTANT]
-> Se estiver a utilizar o Intune com o Configuration Manager para gerir os seus dispositivos iOS e Android, a política só é aplicada aos utilizadores diretamente no grupo que selecionou. Os membros dos grupos subordinados aninhados dentro do grupo que selecionou não são afetados.
+> Se estiver a utilizar o Intune com o Configuration Manager para gerir os seus dispositivos, a política só é aplicada aos utilizadores diretamente no grupo que selecionou. Os membros dos grupos subordinados aninhados dentro do grupo que selecionou não são afetados.
 
 Os utilizadores finais podem transferir as aplicações a partir da Apple Store ou do Google Play. Para obter mais informações, consulte:
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md)
@@ -85,38 +91,37 @@ Os utilizadores finais podem transferir as aplicações a partir da Apple Store 
 ##  <a name="change-existing-policies"></a>Alterar políticas existentes
 Pode editar uma política existente e aplicá-la aos utilizadores visados. No entanto, quando altera as políticas existentes, os utilizadores que já têm sessão iniciada nas aplicações não verão as alterações durante um período de 8 horas.
 
-Para ver o efeito das alterações imediatamente, o utilizador final terá de terminar sessão na aplicação e voltar a iniciar sessão.
+Para ver o efeito das alterações imediatamente, o utilizador final tem de terminar sessão na aplicação e voltar a iniciar sessão.
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>Para alterar a lista de aplicações associadas à política
 
-1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre um painel  específico da política que acabou de selecionar.
+1.  No painel **Políticas de proteção de aplicações**, selecione a política que pretende alterar para abrir um painel específico à política que acabou de selecionar.
 
-2.  No painel da política, escolha **Aplicações alvo** para abrir a lista de aplicações.
+2.  No painel da política, selecione **Aplicações alvo** para abrir a lista de aplicações.
 
 3.  Remova ou adicione aplicações a partir da lista e selecione o ícone **Guardar** para guardar as alterações.
 
 ### <a name="to-change-the-list-of-user-groups"></a>Para alterar a lista de grupos de utilizadores
 
-1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre o painel específico da política que selecionou.
 
-2.  No painel da política, escolha **Grupos de utilizadores** para abrir o painel **Grupo de utilizadores** que mostra a lista dos grupos de utilizadores atuais que têm esta política.
+1.  No painel **Políticas de proteção de aplicações**, selecione a política que pretende alterar para abrir o painel específico à política que selecionou.
 
-3.  Para adicionar um novo grupo de utilizadores à política, selecione **Adicionar grupo de utilizadores** e selecione o grupo de utilizadores. Escolha **Selecionar** para implementar a política no grupo que selecionou.
+2.  No painel de políticas, selecione **Atribuições** para abrir o painel **Proteção de Aplicações do Intune – Atribuições**, que mostra a lista dos grupos de utilizadores que atualmente têm esta política.
 
-4.  Para eliminar um grupo de utilizadores, realce o grupo de utilizadores que pretende remover. Em seguida, selecione as reticências (…) e **Eliminar** para remover o grupo de utilizadores.
-  ![Captura de ecrã que mostra a opção Eliminar ](./media/app-protection-policy-delete-user.png)
+3.  Para adicionar um novo grupo de utilizadores à política, no separador **Incluir**, selecione **Selecionar grupos para incluir** e selecione o grupo de utilizadores. Escolha **Selecionar** para implementar a política no grupo que selecionou.
+
+4.  Para eliminar um grupo de utilizadores, no separador **Excluir**, selecione **Selecionar grupos para excluir** e selecione o grupo de utilizadores. Selecione a opção **Selecionar** para remover o grupo de utilizadores.
 
 ### <a name="to-change-policy-settings"></a>Para alterar definições de política
 
-1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre um painel  específico da política que acabou de selecionar.
+1.  No painel **Políticas de proteção de aplicações**, selecione a política que pretende alterar para abrir um painel específico à política que acabou de selecionar.
 
-
-2.  Escolha **Definições de política** para abrir o painel **Definições de política**.
+2.  Selecione **Definições da política** para abrir o painel **Definições da política**.
 
 3.  Altere as definições e selecione o ícone **Guardar** para guardar as alterações.
 
 ## <a name="policy-settings"></a>Definições de política
-Para ver uma lista completa das definições de política para iOS e Android, selecione uma das seguintes opções:
+Para ver uma lista completa das definições de política para iOS e Android, selecione uma das seguintes ligações:
 
 - [Políticas para iOS](app-protection-policy-settings-ios.md)
 - [Políticas para Android](app-protection-policy-settings-android.md)

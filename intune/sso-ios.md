@@ -1,25 +1,25 @@
 ---
-title: "Configurar o Intune para o início de sessão único em dispositivos iOS"
-titlesuffix: Azure portal
-description: "Saiba como configurar o Intune para o início de sessão único em dispositivos iOS.\""
+title: "Configurar o Microsoft Intune para início de sessão único num dispositivo iOS"
+titlesuffix: 
+description: "Saiba como configurar o Microsoft Intune para início de sessão único num dispositivo iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Configurar o Intune para o início de sessão único em dispositivos iOS
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Para tirar partido do Início de Sessão Único em dispositivos iOS, precisa de 
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo**, selecione **Perfis**.
-3. No painel de perfis, selecione **Criar Perfil**, forneça um nome e descrição e configure as seguintes definições:
+3. Na página **Intune**, selecione **Configuração do dispositivo**.
+2. Na página **Configuração do dispositivo**, selecione **Perfis**.
+3. Na página de perfis, selecione **Criar Perfil**, forneça um nome e descrição e configure as seguintes definições:
    - **Plataforma**: selecione **iOS**. 
    - **Tipo de perfil**: selecione **Funcionalidades do dispositivo**.
-4. No painel **Funcionalidades do dispositivo**, selecione **Início de Sessão Único**.
+4. Na página **Funcionalidades de dispositivos**, selecione **Início de Sessão Único**.
 
-   ![Painel Início de Sessão Único](./media/sso-blade.png)
+   ![Página Início de Sessão Único](./media/sso-blade.png)
 
-2. Utilize a seguinte tabela de resumo para obter ajuda no preenchimento dos campos no painel **Início de Sessão Único**. Para obter detalhes, veja as secções a seguir à tabela.
+2. Utilize a seguinte tabela de resumo para obter ajuda no preenchimento dos campos na página **Início de Sessão Único**. Para obter detalhes, veja as secções a seguir à tabela.
    
    |Campo  |Notas|
    |---------|---------|
@@ -82,7 +82,7 @@ Por exemplo, quando um utilizador se ligar a um destes sites, o dispositivo iOS 
 > [!NOTE]
 > Estes URLs têm de ter um FQDN formatado adequadamente. A Apple exige que estes estejam no formato `http://<yourURL.domain>`
 
-Os padrões de correspondências do URL têm de começar com `http://` ou `https://`. É feita uma correspondência de cadeia simples, para que o prefixo de URL `http://www.contoso.com/` não corresponda a `http://www.contoso.com:80/`. No entanto, com o iOS 9.0 ou posterior, pode ser utilizado um simples caráter universal * para especificar todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde a `http://store.contoso.com/` e a `http://www.contoso.com`.
+Os padrões de correspondências do URL têm de começar com `http://` ou `https://`. É feita uma correspondência de cadeia simples, para que o prefixo de URL `http://www.contoso.com/` não corresponda a `http://www.contoso.com:80/`. No entanto, com o iOS 9.0 ou posterior, pode ser utilizado um único caráter universal \* para especificar todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde a `http://store.contoso.com/` e a `http://www.contoso.com`.
 Os padrões `http://.com` e `https://.com` correspondem a todos os URLs HTTP e HTTPS, respetivamente.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Aplicações que utilizarão o Início de Sessão Único
@@ -97,6 +97,6 @@ O campo **Nome da Aplicação** é utilizado para adicionar um nome simples para
 
 Se autenticar os seus utilizadores finais com certificados (não palavras-passe), utilize este campo para selecionar o certificado SCEP ou PFX implementado para o utilizador como certificado de autenticação. Normalmente, este é o mesmo certificado que é implementado para o utilizador para outros perfis, como VPN, Wi-Fi ou E-mail.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Para obter mais informações sobre a configuração de funcionalidades dos dispositivos, veja [Como configurar as definições das funcionalidades dos dispositivos no Microsoft Intune](device-features-configure.md).

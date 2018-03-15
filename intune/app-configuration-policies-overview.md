@@ -1,7 +1,7 @@
 ---
-title: "Políticas de configuração de aplicações do Intune | Documentos da Microsoft"
-titlesuffix: Azure portal
-description: "Saiba como utilizar políticas de configuração de aplicações do Intune."
+title: "Políticas de configuração de aplicações do Intune"
+titlesuffix: Microsoft Intune
+description: "Saiba como utilizar políticas de configuração de aplicações num dispositivo iOS ou Android no Intune."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7267de95d36ed0e27c8a720599cc78004cd71d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52e0906b58680fa0b5628b2b5fc7445f8135658a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-configuration-policies-for-intune"></a>Políticas de configuração de aplicações do Intune
 
@@ -52,7 +52,7 @@ Pode preparar as suas aplicações de linha de negócio ao incorporar o SDK da A
 
 Além disso, pode utilizar a Graph API para realizar tarefas de configuração de aplicações. Para obter mais detalhes, veja [Graph API Reference MAM Targeted Config (Configuração de MAM Direcionada de Referência para Graph API)](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 ### <a name="managed-devices"></a>Dispositivos geridos
 

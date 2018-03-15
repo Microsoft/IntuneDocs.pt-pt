@@ -1,6 +1,6 @@
 ---
-title: Inscrever dispositivos Android no Intune | Documentos da Microsoft
-titlesuffix: Azure portal
+title: Inscrever dispositivos Android no Intune
+titlesuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android no Intune.
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
@@ -43,7 +43,7 @@ Para ativar a gestão de dispositivos, os seus utilizadores têm de inscrever os
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>Ativar a inscrição de dispositivos Android for Work
 
-Para ativar a gestão de perfis de trabalho em dispositivos que [suportam Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), tem de adicionar um enlace do Android for Work para Intune. Para inscrever dispositivos que suportam o Android for Work, mas que foram anteriormente inscritos como dispositivos Android normais, tem de cancelar a inscrição dos dispositivos e inscrevê-los novamente.
+Para ativar a gestão de perfis de trabalho em dispositivos que [suportam Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), tem de adicionar um enlace do Android for Work para Intune. Se quiser inscrever dispositivos no Android for Work, mas os mesmos já tiverem sido inscritos como dispositivos Android normais, tem de anular a inscrição e voltar a inscrevê-los.
 
 Se estiver a inscrever dispositivos Android dor Work através de uma conta de [Gestor de Inscrições de Dispositivos](device-enrollment-manager-enroll.md), existe um limite de 10 dispositivos que pode inscrever por conta.
 
@@ -58,7 +58,7 @@ Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a aut
     Como administrador do Intune, no Portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 
    a. No painel **Intune**, selecione **Inscrição de dispositivos** > **Inscrição de Android for Work** e selecione **Configurar** para abrir o site do Android for Work do Google Play. O site abre num novo separador do seu browser.
-   ![Captura de ecrã que mostra uma ligação para configurar o enlace do Android for Work](./media/android-work-bind.png)
+   ![Ecrã de inscrição do Android for Work](./media/android-work-bind.png)
 
    b. **Iniciar sessão no Google**<br>
    Na página de início de sessão da Google, introduza a conta Google que será associada a todas as tarefas de gestão do Android for Work deste inquilino. Esta é a conta Google que os administradores de TI da sua empresa partilham para gerir e publicar aplicações na consola Play for Work. Pode utilizar uma conta Google existente ou criar uma nova.  A conta que escolher não pode estar associada a um domínio do G Suite.
@@ -79,7 +79,7 @@ Siga estes passos para aprovar o Portal da Empresa do Intune:
 
 1.  Navegue até à aplicação Portal da Empresa na [Google Play Store gerida](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Inicie sessão na Google Play Store gerida com a mesma conta Google que utilizou para configurar o enlace do Android for Work.
-3.  Clique em **Aprovar**.  Esta ação abrirá uma nova caixa de diálogo.
+3.  Clique em **Aprovar** e será aberta uma nova caixa de diálogo.
 4.  Reveja as permissões nesta caixa de diálogo e, em seguida, clique em **Aprovar**. Terá de dar estas permissões para permitir que a aplicação Portal da Empresa faça a gestão do perfil de trabalho no dispositivo.
 5.  Selecione **Manter aprovado quando as aplicações pedirem novas permissões** e, em seguida, clique em **Guardar**.
 

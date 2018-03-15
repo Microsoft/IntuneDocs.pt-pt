@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>Ativar o modo perdido em dispositivos iOS
 
@@ -37,11 +37,11 @@ A ação de dispositivos **Modo perdido** ajuda-o a ativar o modo perdido em dis
 
 ## <a name="how-to-activate-lost-mode"></a>Como ativar o modo perdido
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, escolha **Dispositivos**.
-4. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
-5. Na lista de dispositivos que gere, escolha um dispositivo iOS e, em seguida, escolha a ação remota de dispositivos **Modo perdido**.
+4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
+5. Na lista de dispositivos que gere, selecione um dispositivo iOS, selecione **...Mais** e, em seguida, selecione a ação remota de dispositivos **Modo perdido**.
 6. No painel **Modo perdido**, ative o modo perdido. Em seguida, introduza a mensagem a ser apresentada. Opcionalmente, introduza um número de telefone de contacto.
 7. Clique em **OK**.
 
@@ -55,7 +55,7 @@ Para utilizar o modo perdido, o dispositivo tem de ser um dispositivo iOS perten
 - Os dados de localização são encriptados quando são armazenados e, igualmente, quando estão a ser transmitidos.
 - Recomendamos que a mensagem que introduzir para ser apresentada no ecrã de bloqueio inclua informações que indiquem a quem encontrar o dispositivo para devolvê-lo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
-Para ver o estado da ação que acabou de realizar, no painel **Dispositivos e grupos**, escolha **Ações de Dispositivos**.
+Para ver o estado da ação que acabou de realizar, no painel **Dispositivos**, selecione **Ações do dispositivo**.
 

@@ -1,10 +1,10 @@
 ---
-title: Como monitorizar a compatibilidade do dispositivo
-titlesuffix: Azure portal
+title: Monitorizar a conformidade do dispositivo
+titlesuffix: Microsoft Intune
 description: Saiba como monitorizar a conformidade do dispositivo."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,32 +15,32 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd8bb0486164dd9dfe020261da9079ea5a68633
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-monitor-device-compliance-in-intune"></a>Como monitorizar a conformidade do dispositivo no Intune
+# <a name="monitor-device-compliance-in-intune"></a>Monitorizar a conformidade do dispositivo no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Pode ver o resumo do estado dos seus **perfis de conformidade** no painel **Descrição geral**.
-Pode clicar interativamente nas tabelas para desagregar os detalhes. Se tiver vários perfis de conformidade configurados, também pode ver o estado de cada política ao aceder ao painel de política e escolher **Relatórios** na secção **Gerir**.  Os detalhes dos relatórios disponíveis estão listados abaixo.
+Pode clicar interativamente nas tabelas para desagregar os detalhes. Se tiver múltiplos perfis de conformidade configurados, pode ver o estado da política no painel de políticas em **Gerir** > **Relatórios**.
 
 ##  <a name="device-compliance"></a>Conformidade do dispositivo
 
-A vista resumida do relatório de conformidade do dispositivo começa com a apresentação das informações agregadas sobre o número de dispositivos que estão a enviar relatórios como um dos seguintes:
+A vista resumida do relatório de conformidade do dispositivo lista as informações agregadas sobre o número de dispositivos que estão a enviar relatórios num dos seguintes estados:
 
-- **Conformidade**: o dispositivo foi avaliado quanto à compatibilidade recentemente e foi determinado como estando em conformidade com as definições do perfil de conformidade que especificou.
+- **Conforme**: o dispositivo foi avaliado recentemente e está em conformidade com as definições de conformidade do perfil que especificou.
 - **Não conforme**: o dispositivo foi avaliado e determinado como não conforme.  Se existia um período de tolerância especificado no perfil, o período de tolerância expirou, o que coloca o dispositivo num estado de não conforme.
-- **Período de tolerância**: o dispositivo foi avaliado e determinado como não conforme. No entanto, o período de tolerância ainda se aplica antes de o dispositivo ser de facto assinalado como não conforme.
+- **Período de tolerância**: o dispositivo foi avaliado e determinado como não conforme. No entanto, o período de tolerância ainda se aplica antes de o dispositivo ser assinalado como não conforme.
 
 Pode desagregar cada secção para ver mais detalhes sobre os utilizadores e dispositivos individuais.
 
 ## <a name="setting-compliance"></a>Conformidade com definições
 
-O relatório de conformidade com definições disponibiliza os detalhes para cada uma das definições de conformidade, tais como:
+O relatório de conformidade com as definições disponibiliza os detalhes para cada uma das definições de conformidade, tais como:
 
 - Número de dispositivos não conformes com a definição.
 - A plataforma à qual se aplica a definição.

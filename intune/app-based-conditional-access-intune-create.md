@@ -1,11 +1,11 @@
 ---
-title: "Política de acesso condicional com base na aplicação com o Intune"
-description: "Este tópico descreve como pode configurar uma política de acesso condicional com base na aplicação com o Intune."
+title: "Configurar a política de acesso condicional com base na aplicação com o Intune"
+description: "Saiba como criar uma política de acesso condicional com base na aplicação com o Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,42 +14,40 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d938a21e041055c61e6638e94841a056e20b38
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ab442f49e0eabc4162bd2f56865ed42d96ae5db
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="set-up-app-based-conditional-access-policies"></a>Configurar políticas de acesso condicional com base nas aplicações
+# <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar políticas de acesso condicional com base na aplicação com o Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Este tópico fornece instruções sobre como configurar políticas de acesso condicional baseado na aplicação, para aplicações que fazem parte da lista de aplicações aprovadas. A lista de aplicações aprovadas consiste em aplicações que foram testadas pela Microsoft.
+Este artigo descreve como configurar políticas de acesso condicional com base na aplicação, para aplicações que fazem parte da lista de aplicações aprovadas. A lista de aplicações aprovadas consiste em aplicações que foram testadas pela Microsoft.
 
 > [!IMPORTANT]
-> Este tópico explica os passos para adicionar uma política de acesso condicional baseado na aplicação com o Exchange Online, mas pode utilizar os mesmos passos ao adicionar outras aplicações, como o SharePoint Online, Microsoft Teams, entre outras da lista de aplicações aprovadas.
+> Este artigo explica os passos para adicionar uma política de acesso condicional com base na aplicação com o Exchange Online, mas pode utilizar os mesmos passos ao adicionar outras aplicações, como o SharePoint Online, Microsoft Teams, entre outras, a partir da lista de aplicações aprovadas.
 
 ## <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de acesso condicional com base na aplicação
 1.  Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as suas credenciais.
 
-2.  Selecione **Mais Serviços** e escreva "Intune".
+2.  Selecione **Todos os serviços** e escreva "Intune".
 
 3.  Selecione **Intune App Protection**.
 
-4.  No painel **Gestão de aplicações móveis do Intune**, selecione **Todas as Definições**.
+4.  Em **Intune App Protection**, na secção **Acesso condicional**, selecione **Exchange Online**.
 
-5.  Na secção **Acesso condicional**, selecione **Exchange Online**.
-
-    ![Captura de ecrã do painel de definições a mostrar a secção de acesso condicional com a opção Exchange Online realçada](./media/MAM-conditional-access-1.png)
+    ![Captura de ecrã do painel Definições a mostrar a secção Acesso condicional com a opção Exchange Online realçada](./media/MAM-conditional-access-1.png)
 
 6. No painel **Aplicações permitidas**, selecione a opção **Permitir aplicações que suportem políticas de aplicação do Intune** para permitir que apenas as aplicações que são suportadas pelas políticas de proteção de aplicações do Intune consigam aceder ao Exchange Online. Quando selecionar esta opção, é apresentada a lista de aplicações suportadas.
 
     > [!NOTE]
-    > Todos os clientes de correio do Exchange Active Sync, incluindo os clientes de correio incorporado em iOS e Android que se ligam ao Exchange Online ficarão impedidos de enviar ou receber e-mail. Em alternativa, os utilizadores irão receber um único e-mail a informar que têm de utilizar a aplicação de correio do Outlook.
+    > Todos os clientes de correio do Exchange Active Sync, incluindo os clientes de correio incorporado em iOS e Android que se ligam ao Exchange Online ficam impedidos de enviar ou receber e-mail. Em alternativa, os utilizadores irão receber um único e-mail a informar que têm de utilizar a aplicação de correio do Outlook.
 
 7. Para aplicar esta política aos utilizadores, abra o painel **Grupos de utilizadores restritos** e selecione **Adicionar grupo de utilizadores**. Selecione um ou mais grupos de utilizadores que devem receber esta política.
 
-    ![Captura de ecrã do painel de grupos de utilizadores restritos com a opção adicionar grupo de utilizadores realçada](./media/mam-ca-add-user-group.png)
+    ![Captura de ecrã do painel Grupos de utilizadores restritos com a opção Adicionar grupo de utilizadores realçada](./media/mam-ca-add-user-group.png)
 
 8. Poderá querer que alguns utilizadores do grupo que selecionou no passo anterior não sejam afetados por esta política. Nesses casos, adicione o grupo de utilizadores à lista de grupos de utilizadores excluídos. No painel **Exchange Online**, selecione **Grupos de utilizadores excluídos**. Selecione **Adicionar grupo de utilizadores** para abrir a lista de grupos de utilizadores. Selecione os grupos que pretende excluir desta política.
 
@@ -77,7 +75,7 @@ A partir da versão 1708 do Intune, os administradores de TI podem criar políti
 
 4. Após introduzir um nome da política e configurar as definições disponíveis na secção **Atribuições**, selecione **Conceder** na secção **Controlos de acesso**.
 
-5. Selecione **Pedir aplicação aprovada do cliente** , selecione **Selecionar** e, em seguida, selecione **OK** para guardar a nova política.
+5. Selecione **Pedir aplicação aprovada do cliente** , **Selecionar** e, em seguida, **Guardar** para guardar a nova política.
 
 ## <a name="next-steps"></a>Próximos passos
 [Bloquear aplicações que não tenham autenticação moderna](app-modern-authentication-block.md)

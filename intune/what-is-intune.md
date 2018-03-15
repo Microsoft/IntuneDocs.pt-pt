@@ -1,12 +1,12 @@
 ---
 title: "Introdução ao Intune no portal do Azure"
-titlesuffix: Azure portal
-description: "Conheça os princípios básicos do Intune no portal do Azure e como o pode ajudar a gerir os seus dispositivos.\""
+titlesuffix: 
+description: "O Microsoft Intune está disponível no portal do Azure. Conheça os princípios básicos do Intune no portal do Azure."
 keywords: 
-author: arob98
-ms.author: angrobe
-nmanager: dougeby
-ms.date: 02/14/2018
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 02/28/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 6e2528c243938e81a6f730a950ee3949ca44047c
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introdução ao Microsoft Intune no portal do Azure
 
@@ -80,7 +80,7 @@ Utilize a tabela seguinte para localizar e compreender rapidamente as áreas pri
 | [Inscrição de dispositivos](device-enrollment.md)                    | Compreenda como o Microsoft Intune o ajuda a gerir os dispositivos da sua força de trabalho ao inscrever os dispositivos no serviço Intune. Existem vários métodos para inscrever os dispositivos da força de trabalho.                                                                                                         |
 | [Conformidade do dispositivo](device-compliance.md)                    | As políticas de conformidade de dispositivos do Intune definem as regras e as definições que um dispositivo tem de cumprir para ser considerado conforme pelo Microsoft Intune. Por exemplo, exigir uma palavra-passe para o acesso ao dispositivo, a encriptação de dispositivos e exigir uma versão mínima de SO. |
 | [Configuração do dispositivo](device-profiles.md)                   | Configure as definições e as funcionalidades em todos os dispositivos que gere com o Microsoft Intune ao criar perfis de dispositivos. Por exemplo, pode configurar funcionalidades como notificações, partilha de dados, suporte por e-mail, ligação Wi-Fi, certificados e proteção de pontos finais.              |
-| [Devices](device-management.md)                              | Certifique-se de que os dispositivos que gere estão a disponibilizar os recursos de que os seus utilizadores finais necessitam para trabalhar ao proteger os dados da sua empresa contra riscos. Faça a gestão de dispositivos ao rever o inventário de dispositivos da força de trabalho e efetuar ações remotas nos dispositivos.                                                      |
+| [Dispositivos](device-management.md)                              | Certifique-se de que os dispositivos que gere estão a disponibilizar os recursos de que os seus utilizadores finais necessitam para trabalhar ao proteger os dados da sua empresa contra riscos. Faça a gestão de dispositivos ao rever o inventário de dispositivos da força de trabalho e efetuar ações remotas nos dispositivos.                                                      |
 | [Aplicações móveis](app-management.md)                             | Saiba como adicionar, implementar, monitorizar, configurar e proteger aplicações.                                                                                                                                                                                                                             |
 | [Acesso condicional](conditional-access.md)                  | Defina condições com base em aplicações e dispositivos que impeçam o acesso aos dados da sua empresa.                                                                                                                                                                                                            |
 | [Utilizadores](users-add.md)                                        | Saiba como adicionar utilizadores aos dispositivos e aplicações que gere.                                                                                                                                                                                                                                           |

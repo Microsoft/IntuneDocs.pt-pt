@@ -1,7 +1,7 @@
 ---
-title: "Registos da política de proteção de aplicações"
-titlesuffix: Azure portal
-description: "Este tópico descreve o registo das definições da política de proteção de aplicações armazenadas nos registos das aplicações."
+title: "Rever os registos da política de proteção de aplicações"
+titlesuffix: Microsoft Intune
+description: "Saiba mais sobre as definições que pode rever nos registos de proteção de aplicações."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
-Pode aceder aos registos ao ativar o Modo de Diagnóstico do Intune para uma aplicação num cliente móvel. A tabela seguinte mostra o nome e uma explicação das definições registadas no registo.
+Saiba mais sobre as definições que pode rever nos registos de proteção de aplicações. Aceda a registos ao ativar o Modo de Diagnóstico do Intune para uma aplicação num cliente móvel. A tabela seguinte mostra o nome e uma explicação das definições registadas no registo.
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 
@@ -58,7 +58,7 @@ Pode aceder aos registos ao ativar o Modo de Diagnóstico do Intune para uma apl
 | SimplePINAllowed            | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Permitir PIN Simples.                                                                                                                                                               |
 | TouchIDEnabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Permitir impressões digitais em vez do PIN (iOS 8+).                                                                                                                                      |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
  - Para saber mais sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md)
  - O Intune oferece um conjunto de ferramentas para o ajudar a resolver problemas no seu ambiente. Para obter mais informações, veja [Utilizar o portal de resolução de problemas](help-desk-operators.md).

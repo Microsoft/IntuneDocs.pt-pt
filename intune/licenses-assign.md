@@ -1,6 +1,6 @@
 ---
-title: "Atribuir licenças do Intune"
-description: "Atribuir licenças a utilizadores na sua subscrição do Intune"
+title: "Atribuir licenças do Microsoft Intune"
+description: "Atribuir licenças aos utilizadores para que estes possam inscrever-se no Intune"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>Atribuir licenças do Intune às contas de utilizador
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos utilizadores para que estes possam inscrever dispositivos no Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças �
 
 3.  Alterne o **Intune** ou o **Enterprise Mobility + Security** para **Ativado** e escolha **Guardar**.
 
-  ![Imagem da página de atribuição de licenças de Produtos no portal do Office 365.](./media/office-assign-license.png)
+  ![Captura de ecrã da secção Licenças de produtos do portal do Office 365.](./media/office-assign-license.png)
 
 4. A conta de utilizador tem agora as permissões que são precisas para utilizar o serviço e inscrever os dispositivos para gestão.
 
@@ -46,11 +46,11 @@ Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças �
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Utilizar o School Data Sync para atribuir licenças aos utilizadores do Intune for Education
 Se for uma organização de ensino, poderá utilizar o School Data Sync (SDS) para atribuir licenças do Intune for Education aos utilizadores sincronizados. Basta selecionar a caixa de verificação do Intune for Education quando estiver a configurar o perfil SDS.  
 
-![Imagem da definição do perfil SDS](./media/i4e-sds-profile-setup-setting.png)
+![Captura de ecrã da definição do perfil SDS](./media/i4e-sds-profile-setup-setting.png)
 
 Quando atribuir uma licença do Intune for Education, confirme se a licença do Intune A Direct também foi atribuída.
 
-![Imagem da configuração da licença do produto](./media/i4e-set-licenses.png)
+![Captura de ecrã da configuração da licença do produto](./media/i4e-set-licenses.png)
 
 Veja esta [descrição geral do School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) para saber mais sobre o SDS.
 
