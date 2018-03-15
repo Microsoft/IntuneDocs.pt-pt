@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0a8f3c93507cde4363570a9a39f8b3b1f69c07df
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>Bloquear remotamente dispositivos geridos com o Intune
 
@@ -31,26 +31,26 @@ O **Bloqueio remoto** bloqueia o dispositivo selecionado. O proprietário do dis
 
 O bloqueio remoto é suportado pelas seguintes plataformas:
 
-|Platform|Estado do suporte|
+|Plataforma|Estado do suporte|
 |---|---|
 |Android|Sim|
 |iOS|Sim|
 |macOS|Sim|
-|Windows 10|Sim|
+|Computadores com o Windows 10|Não|
 |Windows 10 Mobile|Sim|
 |Windows Phone|Sim, para Windows Phone 8.1 e posterior|
 
 > [!NOTE]  
-> Para dispositivos macOS, defina um PIN de recuperação de 6 dígitos. Se estiver bloqueado, o painel **Descrição geral do dispositivos** apresenta o PIN até que seja enviada outra ação de dispositivo.
+> Para dispositivos macOS, defina um PIN de recuperação de 6 dígitos. Se estiver bloqueado, o painel **Descrição geral do dispositivo** apresenta o PIN até que seja enviada outra ação de dispositivo.
 
 ## <a name="how-to-remote-lock-a-device"></a>Como bloquear remotamente um dispositivo
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, escolha **Dispositivos**.
-4. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
+4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos que gere, escolha um dispositivo e, em seguida, escolha a ação remota de dispositivos **Bloqueio remoto**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
-Para ver o estado da ação que acabou de realizar, no painel **Dispositivos e grupos**, escolha **Ações de Dispositivos**.
+Para ver o estado da ação que acabou de realizar, no painel **Dispositivos**, selecione **Ações do dispositivo**.

@@ -3,8 +3,8 @@ title: Conector de MTD Zimperium com o Intune
 titleSuffix: Intune on Azure
 description: "Integração do conector Zimperium com o Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f26cf20b4e1168fbced1df88886343f41824158
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ec93d2821150a67faa3c8b3c34e040e62ee43a3e
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Zimperium Mobile Threat Defense com o Intune
 
@@ -93,9 +93,9 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 -   Subscrição do Zimperium Mobile Threat Defense
 
-    -   Veja o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips) para obter mais informações.
+    -   Para obter mais informações, veja o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips) para obter mais informações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Integrar o Zimperium com o Intune](zimperium-mtd-connector-integration.md)
 

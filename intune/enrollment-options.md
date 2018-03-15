@@ -1,6 +1,7 @@
 ---
-title: "Opções de inscrição do Intune"
-description: 
+title: "Opções de inscrição para dispositivos geridos pelo Microsoft Intune"
+titleSuffix: 
+description: "Uma lista de opções de inscrição que os administradores podem definir para dispositivos geridos pelo Microsoft Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Opções de inscrição do Intune
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Opções de inscrição para dispositivos geridos pelo Intune
 
 Enquanto administrador do Intune, pode configurar a inscrição de dispositivos para ajudar os utilizadores e ativar as funcionalidades do Intune.  O Intune inclui as seguintes opções de inscrição:
 
@@ -41,7 +42,7 @@ Saiba mais sobre as [restrições de inscrição](enrollment-restrictions-set.md
 ## <a name="corporate-identifiers"></a>Identificadores empresariais
 
 Pode listar os números de série e números do Identificador de Equipamento Móvel Internacional (IMEI) para identificar os dispositivos da empresa. Saiba mais sobre [identificadores empresariais](corporate-identifiers-add.md).
-## <a name="multi-factor-authentication"></a>Multi-factor authentication
+## <a name="multi-factor-authentication"></a>Autenticação multifator
 
 Pode exigir que os utilizadores utilizem um método de verificação adicional, como um telemóvel, PIN ou dados biométricos, quando estes inscrevem um dispositivo. Saiba mais sobre a [autenticação multifator](multi-factor-authentication.md).
 

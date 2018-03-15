@@ -1,31 +1,29 @@
 ---
-title: "Definições de e-mail do Intune para dispositivos Android e Android for Work"
-titleSuffix: Azure portal
-description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de e-mail em dispositivos Android.\""
+title: "Definições de e-mail do Microsoft Intune para dispositivos Android e Android for Work"
+titleSuffix: 
+description: "Saiba mais sobre as definições do Microsoft Intune que pode utilizar para configurar as definições de e-mail em dispositivos Android e Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Definições de perfis de e-mail para dispositivos Android no Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Definições de perfis de e-mail no Microsoft Intune para dispositivos Android e Android for Work
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Como um administrador do Intune, pode criar e atribuir definições de e-mail aos seguintes dispositivos Android:
+Enquanto administrador do Intune, pode criar e atribuir definições de e-mail aos seguintes dispositivos Android:
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
@@ -59,7 +57,7 @@ Como um administrador do Intune, pode criar e atribuir definições de e-mail ao
 
 - **Aplicação de e-mail** – Selecione **Gmail** ou **Nine Work**
 - **Servidor de e-mail** – O nome de anfitrião do servidor Exchange.
-- **Atributo de nome de utilizador do AAD** – Este nome é o atributo no Active Directory (AD) ou Azure AD que servirá para gerar o nome de utilizador para este perfil de e-mail. Selecione o **Endereço SMTP Principal**, como user1@contoso.com, ou o **Nome Principal de Utilizador**, como user1 ou user1@contoso.com.
+- **Atributo de nome de utilizador do AAD** – Este nome é o atributo no Active Directory (AD) ou Azure AD que serve para gerar o nome de utilizador para este perfil de e-mail. Selecione o **Endereço SMTP Principal**, como user1@contoso.com, ou o **Nome Principal de Utilizador**, como user1 ou user1@contoso.com.
 - **Atributo de endereço de e-mail do AAD** – Como é gerado o endereço de e-mail do utilizador em cada dispositivo. Selecione o **Nome Principal de Utilizador** para utilizar o nome principal completo como o endereço de e-mail ou o **Nome de utilizador**.
 - **Método de autenticação** – Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.
     - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente para autenticar a ligação ao Exchange.

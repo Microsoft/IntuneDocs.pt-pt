@@ -1,10 +1,10 @@
 ---
-title: "Introdução aos grupos"
-titleSuffix: Azure portal
+title: Criar um grupo no Microsoft Intune
+titleSuffix: 
 description: "Organize os utilizadores em grupos para ser mais fácil gerir as políticas e aplicações a que podem aceder."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>Introdução aos grupos
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>Criar um grupo para gerir o acesso aos seus utilizadores e dados
 
 Os grupos são utilizados para gerir os utilizadores e controlar o acesso dos seus funcionários aos recursos da sua empresa. Estes recursos podem fazer parte do seu diretório ou podem ser externos, como as aplicações SaaS ou os sites do SharePoint.
 
@@ -39,7 +39,7 @@ O Microsoft Intune utiliza o Azure Active Directory (Azure AD) para gerir o aces
 
 Se tiver criado um grupo com êxito, o mesmo deverá ser apresentado na lista de **Todos os grupos**. Se o grupo não aparecer na lista, experimente criar outro grupo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 [Introdução às políticas](get-started-policies.md) – crie políticas para impedir que os utilizadores realizem ações não autorizadas com os dispositivos.
 

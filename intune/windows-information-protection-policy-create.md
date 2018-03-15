@@ -3,10 +3,10 @@ title: "Criar e implementar a política de proteção de aplicações do Windows
 titlesuffix: Azure portal
 description: "Criar e implementar a política de proteção de aplicações do WIP com o Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -33,7 +33,7 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lista de aplicações permitidas e excluídas
 
--   **Aplicações permitidas:** são as aplicações que precisam de cumprir esta política.
+-   **Aplicações permitidas:** estas são as aplicações que precisam de cumprir esta política.
 
 -   **Aplicações excluídas:** estas aplicações estão excluídas desta política e podem aceder aos dados empresariais sem restrições.
 
@@ -49,7 +49,7 @@ Vamos falar sobre alguns conceitos ao adicionar uma política WIP.
 
 Para poder criar uma política de proteção de aplicações do WIP, tem de configurar o fornecedor de MAM. Saiba mais sobre [como configurar o fornecedor de MAM com o Intune](app-protection-policies-configure-windows-10.md).
 
-Além disso, tem de ter o seguinte:
+Além disso, tem de ter a seguinte licença e atualização:
 
 -   Licença do [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 -   [Atualização para Criativos do Windows](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ Além disso, tem de ter o seguinte:
 
 ## <a name="to-add-a-wip-policy"></a>Para adicionar uma política WIP
 
-Depois de configurar o Intune na sua organização, pode criar uma política específica do WIP através do [portal do Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+Depois de configurar o Intune na sua organização, pode criar uma política específica do WIP através do [portal do Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  Aceda ao **dashboard de gestão de aplicações móveis do Intune** e selecione **Todas as definições** > **Política da aplicação**.
 
@@ -80,7 +80,7 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 
 1.  No painel **Política da aplicação**, escolha o nome da política e, em seguida, escolha **Aplicações permitidas** no painel **Adicionar uma política**. É apresentado o painel **Aplicações permitidas**, onde poderá ver todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
 
-2.  No painel **Aplicações permitidas**, escolha **Adicionar aplicações**. É apresentado o painel **Adicionar aplicações**, onde pode ver todas as aplicações que fazem parte desta lista.
+2.  No painel **Aplicações permitidas**, escolha **Adicionar aplicações**. É apresentada a informação **Adicionar aplicações**, onde pode ver todas as aplicações que fazem parte desta lista.
 
 3.  Selecione todas as aplicações que pretende que acedam aos dados da sua empresa e, em seguida, escolha **OK**. O painel **Aplicações permitidas** é atualizado mostrando-lhe todas as aplicações selecionadas.
 
@@ -92,7 +92,7 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 
 2.  No painel **Aplicações permitidas**, escolha **Adicionar aplicações**.
 
-3.  No painel **Adicionar aplicações**, escolha **Aplicações da Loja** na lista pendente. O painel muda para mostrar as caixas para adicionar o nome de um **publicador** e de uma **aplicação**.
+3.  No painel **Adicionar aplicações**, escolha **Aplicações da Loja** na lista pendente. A informação muda para mostrar as caixas para adicionar o nome de um **publicador** e de uma **aplicação**.
 
 4.  Escreva o nome da aplicação e o nome do publicador e, em seguida, escolha **OK**.
 
@@ -133,11 +133,11 @@ Quando estiver a trabalhar com aplicações com o WIP e aplicações desconhecid
 
 ### <a name="what-are-the-protection-modes"></a>O que são os modos de proteção?
 
-#### <a name="block"></a>Bloqueio
+#### <a name="block"></a>Bloquear
 O WIP procura práticas de partilha de dados inadequadas e impede o utilizador de concluir a ação. Estas práticas podem incluir a partilha de informações em aplicações não protegidas pela empresa e a partilha de dados empresariais entre outras pessoas e dispositivos fora da sua organização.
 
 #### <a name="allow-overrides"></a>Permitir Substituições
-O WIP procura partilhas de dados inadequadas e avisará os utilizadores se estes realizarem alguma ação considerada potencialmente insegura. No entanto, este modo permite ao utilizador substituir a política e partilhar os dados, registando a ação no registo de auditorias.
+O WIP procura partilhas de dados inadequadas e avisará os utilizadores quando estes realizarem alguma ação considerada potencialmente não segura. No entanto, este modo permite ao utilizador substituir a política e partilhar os dados, registando a ação no registo de auditorias.
 
 #### <a name="silent"></a>Automática
 O WIP é executado no modo silencioso e regista as partilhas de dados inadequadas sem bloquear nada que pedisse a interação do funcionário durante o modo Permitir Substituição. As ações não permitidas, tais como aplicações que estejam a tentar aceder inadequadamente a um recurso de rede ou a dados protegidos pelo WIP, continuam a ser interrompidas.
@@ -153,7 +153,7 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
     ![Captura de ecrã do Modo de Aprendizagem](./media/learning-mode-sc1.png)
 
-1.  Escolha **Guardar**.
+2.  Escolha **Guardar**.
 
 ### <a name="use-wip-learning"></a>Utilizar a Aprendizagem de WIP
 
@@ -165,10 +165,23 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
  
     Depois de as aplicações aparecerem no relatório de registo da Aprendizagem de WIP, pode adicioná-las às políticas de proteção de aplicações.
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Permitir que o Indexador do Windows Search procure itens encriptados
+Permite ou proíbe a indexação de itens. Este parâmetro é para o Indexador do Windows Search, que controla a indexação de itens que são encriptados, tais como os ficheiros protegidos do Windows Information Protection (WIP).
+
+Esta opção de política de proteção de aplicações está nas **Definições avançadas** da política do Windows Information Protection. A política de proteção de aplicações tem de ser definida para a plataforma do *Windows 10* e a política de aplicação **Estado da inscrição** tem de ser definida para **Com inscrição**. 
+
+Quando a política está ativada, os itens protegidos pelo WIP são indexados e os respetivos metadados são armazenados numa localização não encriptada. Os metadados incluem conteúdos como o caminho do ficheiro e a data de modificação.
+
+Quando a política está desativada, os itens protegidos pelo WIP não são indexados e não são apresentados nos resultados na Cortana ou no explorador de ficheiros. O desempenho das aplicações de fotografias e do Groove também poderá ser afetado se existirem muitos ficheiros multimédia protegidos pelo WIP no dispositivo.
+
+## <a name="add-encrypted-file-extensions"></a>Adicionar extensões do ficheiro encriptado
+
+Além de definir a opção **Permitir que o Indexador do Windows Search procure itens encriptados**, pode especificar uma lista de extensões de ficheiros. Os ficheiros com estas extensões são encriptados ao copiar de uma partilha do protocolo SMB (Server Message Block) dentro do limite empresarial como definido na lista de localizações de rede. Quando esta política não é especificada, é aplicado o comportamento de encriptação automática existente. Quando esta política é configurada, apenas os ficheiros com extensões na lista são encriptados.
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>Implementar a política de proteção de aplicações do WIP
 
 > [!IMPORTANT]
-> Isto aplica-se ao WIP sem inscrição de dispositivos.
+> Estas informações aplicam-se ao WIP sem inscrição de dispositivos.
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ Depois de criar a política de proteção de aplicações do WIP, tem de a imple
 
     É apresentada uma lista de grupos de utilizadores, composta por todos os grupos de segurança no Azure Active Directory, no painel **Adicionar grupo de utilizadores**.
 
-1.  Selecione o grupo ao qual pretende aplicar a sua política e, em seguida, escolha **Selecionar** para implementá-la.
+2.  Selecione o grupo ao qual pretende aplicar a sua política e, em seguida, escolha **Selecionar** para implementá-la.
+
+## <a name="next-steps"></a>Passos seguintes
+
+- Para saber mais sobre o Windows Information Protection, veja [Proteger os dados empresariais com o Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 

@@ -2,10 +2,10 @@
 title: "Registo de Alterações do Armazém de Dados do Intune | Documentos da Microsoft"
 description: "Uma lista de alterações na API do Armazém de Dados do Intune."
 keywords: "Armazém de Dados do Intune"
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Mantenha-se a par das atualizações do Armazém de Dados do Intune.
+
+## <a name="1801"></a>1801
+_Lançada em janeiro de 2018_
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Autenticação apenas com a aplicação do Armazém de Dados do Intune <!-- 1867540 -->
+
+Pode configurar uma aplicação com o Azure Active Directory (Azure AD) e autenticar para o Armazém de Dados do Intune. Para obter mais informações, veja [Autenticação apenas com a aplicação do Armazém de Dados do Intune](data-warehouse-app-only-auth.md).
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Requisitos de credenciais do Azure AD e do Intune <!-- 2077525 -->
+
+- Já não é necessário atribuir uma licença do Intune ao utilizador ao aceder ao Armazém de Dados do Intune (incluindo a API).
+- O nome da função do Intune foi alterado de **Relatórios** para **Armazém de dados do Intune**. 
+
+    Para obter mais informações, veja [Requisitos de credenciais do Azure AD e do Intune](reports-api-url.md#azure-ad-and-intune-credential-requirements).
+
+### <a name="odata-query-options----2077711---"></a>Opções de consulta de OData <!-- 2077711 -->
+
+Pode utilizar <code>$select</code> como um parâmetro de consulta de OData. A versão atual suporta os seguintes parâmetros de consulta de OData: <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code> e <code>$top</code>. Para obter mais informações, veja [Opções de consulta de OData](reports-api-url.md#odata-query-options).
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Novas entidades no modelo de dados do Armazém de Dados <!-- 2077804 -->
+
+ - A entidade [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) foi adicionada. A entidade **MobileAppDeviceUserInstallStatus** representa um estado de instalação da aplicação móvel de um determinado dispositivo e utilizador.
+ - A entidade [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) foi adicionada. A entidade **MobileAppInstallState** representa o estado de instalação de uma aplicação móvel depois de ser atribuída a um grupo que contém dispositivos, utilizadores ou ambos. 
 
 ## <a name="1710"></a>1710
 _Lançado em novembro de 2017_
@@ -47,6 +70,6 @@ Agora pode criar relatórios e visualizações de dados com as informações de 
  - A entidade [**UserDeviceAssociation**](reports-ref-user-device.md) foi adicionada. A entidade **UserDeviceAssociation** contém associações de dispositivos do utilizador na sua organização. Agora pode criar relatórios e visualizações de dados com as informações de associação de dispositivos do utilizador que associam o utilizador às coleções de dispositivos de entidades.  
  - A entidade [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md) foi adicionada. **IntuneManagementExtension** contém entidades para dispositivos móveis que controlam informações como o estado da versão e da instalação.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
  - Saiba mais sobre [as novidades todas as semanas no Intune](whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
  - Leia o [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).

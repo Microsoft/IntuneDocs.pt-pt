@@ -1,12 +1,12 @@
 ---
 title: "Como monitorizar informações e atribuições da aplicação"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Depois de atribuir uma aplicação aos utilizadores ou dispositivos, utilize estas informações para o ajudar a monitorizar o estado da mesma."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b88530ef790dd181e81e420c158867d29d1d0d58
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 O Intune fornece várias formas através das quais pode monitorizar as propriedades das aplicações que gere, assim como os respetivos estados das atribuições.
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** + **Intune**.
-3. Na carga de trabalho **Aplicações Móveis**, selecione **Aplicações** no grupo **Gerir**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. Selecione **Aplicações Móveis** e, em seguida, selecione **Aplicações** no grupo **Gerir**.
 5. Na lista do painel de aplicações, selecione uma aplicação. Em seguida, verá o painel <*nome da aplicação*> **Estado de instalação do dispositivo**.
 
 ## <a name="app-overview-blade"></a>Painel Descrição geral da aplicação

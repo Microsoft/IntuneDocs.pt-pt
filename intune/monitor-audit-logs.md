@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Registos de auditoria para atividades do Intune
-Os registos de auditoria proporcionam um registo das atividades que geram uma alteração no Microsoft Intune. As tarefas remotas ou as ações Criar, Atualizar (editar), Eliminar e Atribuir geram eventos de auditoria que poderá rever. Pode rever os registos de auditoria da maioria das cargas de trabalho do Intune. 
+Os registos de auditoria proporcionam um registo das atividades que geram uma alteração no Microsoft Intune. As tarefas remotas ou as ações Criar, Atualizar (editar), Eliminar e Atribuir geram eventos de auditoria que poderá rever. Pode rever os registos de auditoria da maioria das cargas de trabalho do Intune. A auditoria é ativada por predefinição para todos os clientes e não pode ser desativada. Os eventos de auditoria começaram a ser registados na data de lançamento de funcionalidades de dezembro de 2017. Os eventos anteriores a essa data não estão disponíveis.
 
 ## <a name="who-can-access-the-data"></a>Quem pode aceder aos dados?
 Os utilizadores com as seguintes permissões podem rever os registos de auditoria:

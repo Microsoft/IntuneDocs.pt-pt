@@ -1,9 +1,9 @@
 ---
 title: "Acesso condicional com base na aplicação com o Intune"
-description: "Compreenda os conceitos de como o acesso condicional baseado em aplicações funciona com o Intune."
+description: "Saiba como funciona o acesso condicional com base na aplicação com o Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional com base na aplicação com o Intune
 
@@ -54,7 +54,7 @@ Neste exemplo, o administrador tem políticas de proteção de aplicações apli
 > [!NOTE]
 > A estrutura de fluxograma a seguir pode ser utilizada para outras aplicações geridas.
 
-![fluxograma do acesso condicional com base em aplicações com o Intune](./media/ca-intune-common-ways-3.png)
+![Processo de acesso condicional com base na aplicação ilustrado num fluxograma](./media/ca-intune-common-ways-3.png)
 
 1.  O utilizador tenta autenticar-se no Azure AD a partir da aplicação Outlook.
 
@@ -80,7 +80,7 @@ Neste exemplo, o administrador tem políticas de proteção de aplicações apli
 
 11.  O e-mail empresarial é entregue na caixa de correio do utilizador.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Criar uma política de acesso condicional com base na aplicação](app-based-conditional-access-intune-create.md)
 
 [Bloquear aplicações que não tenham autenticação moderna](app-modern-authentication-block.md)

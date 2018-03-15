@@ -1,10 +1,10 @@
 ---
-title: "Integração de controlo de acesso à rede com o Intune"
-titlesuffix: Azure portal
+title: "Integração de controlo de acesso à rede com o Microsoft Intune"
+titlesuffix: 
 description: "Integração de controlo de acesso à rede (NAC) com o Intune"
 keywords: 
-author: bruceperlerMS
-ms.author: bruceper
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4673a6c6d0b83c7f31eecc919bcaa0e952f373a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de controlo de acesso à rede (NAC) com o Intune
 
@@ -59,7 +59,7 @@ Veja a seguir uma descrição geral sobre como a integração do NAC funciona qu
 8. Uma vez que o dispositivo esteja inscrito e em conformidade, a solução de parceiro de NAC obtém o estado do Intune.
 9. A ligação é estabelecida com êxito, o que permite que o dispositivo aceda aos recursos empresariais.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Integrar o Cisco ISE com o Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrar o Citrix NetScaler com o Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)

@@ -1,27 +1,26 @@
 ---
-title: "Definições de restrição de dispositivos no Intune para dispositivos iOS"
-titleSuffix: Azure portal
-description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos iOS.\""
+title: "Definições de restrição de dispositivos no Microsoft Intune para dispositivos iOS"
+titleSuffix: 
+description: "Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos a executar o iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
+Este artigo mostra-lhe todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -95,11 +94,11 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
     -   **Palavras-passe simples** – Permita palavras-passe simples, como 0000 e 1234.
-    -   **Tipo obrigatório de palavra-passe** – Especifique o tipo de palavra-passe que será obrigatório, como apenas numérica ou alfanumérica.
+    -   **Tipo de palavra-passe necessária** – especifique o tipo de palavra-passe obrigatório, por exemplo apenas numérico ou alfanumérico.
     -   **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres de símbolos (como **#** ou **@**) que tem de ser incluído na palavra-passe.
     -   **Comprimento mínimo da palavra-passe** – Especifique o número mínimo de carateres na palavra-passe.
     -   **Número de falhas de início de sessão antes de limpar o dispositivo** – Especifique o número de tentativas de início de sessão falhadas antes desta definição eliminar os dados do dispositivo.
-    -   **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup> – Especifique durante quanto tempo o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.
+    -   **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup> – especifique durante quanto tempo o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.
     -   **Máximo de minutos de inatividade até o ecrã ser bloqueado**<sup>1</sup> – Especifique o número de minutos antes de o ecrã do dispositivo se desligar.
     -   **Expiração de palavra-passe (dias)** – Especifique o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
     -   **Impedir a reutilização de palavras-passe anteriores** – Especifique o número de palavras-passe utilizadas anteriormente que o dispositivo possa ter memorizado.
@@ -107,7 +106,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - **Modificação do código de acesso (apenas supervisionado)** – impede que o código de acesso seja alterado, adicionado ou removido.
     - **Modificação de impressão digital (apenas supervisionado)** – impede o utilizador de alterar, adicionar ou remover as definições do Touch ID.
 
-<sup>1</sup>Quando configura as definições **Máximo de minutos de inatividade até o ecrã ser bloqueado** e **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
+<sup>1</sup>Quando configura as definições **Máximo de minutos de inatividade até o ecrã ser bloqueado** e **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor de ambas as definições para **5** minutos, o ecrã será desativado automaticamente passados cinco minutos e o dispositivo será bloqueado após mais cinco minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, após o utilizador desativar o ecrã, o dispositivo será bloqueado passados cinco minutos.
 
 ## <a name="locked-screen-experience"></a>Experiência de Ecrã Bloqueado
 
@@ -133,7 +132,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 -   **Centro de Jogos (apenas supervisionado)** – Bloqueie ou ative a utilização da aplicação do Centro de Jogos.
 -   **Jogos de multijogadores (apenas supervisionado)** – Permita que o utilizador jogue jogos de multijogadores no dispositivo.
 -   **Região das classificações** – Selecione a região das classificações para a qual quer configurar transferências permitidas e, em seguida, escolha as classificações permitidas para **Filmes** e **Programas de TV**.
--   **Aplicações** – Selecione a classificação etária permitida das aplicações que os utilizadores poderão transferir ou pode escolher **Permitir Todas as Aplicações**.
+-   **Aplicações** – selecione a classificação etária permitida para as aplicações que os utilizadores podem transferir ou pode optar por **Permitir Todas as Aplicações**.
 
 ## <a name="built-in-apps"></a>Aplicações Incorporadas
 
@@ -156,8 +155,8 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
-- Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar. Os utilizadores não são impedidos de instalar uma aplicação proibida mas, se o fizerem, isso ser-lhe-á comunicado.
-- Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar aplicações que não se encontrem na lista aprovada, mas se o fizerem, esta ação ser-lhe-á comunicada.
+- Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar. Os utilizadores não são impedidos de instalar uma aplicação proibida, mas se o fizerem, esta ação ser-lhe-á comunicada.
+- Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar aplicações que não se encontrem na lista de aprovações, mas se o fizerem, esta ação ser-lhe-á comunicada.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
 
@@ -169,7 +168,7 @@ Através de um motor de pesquisa, localize a aplicação que pretende utilizar n
 Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de local público.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
-Exemplo: procure Microsoft Word para iPad. O URL que irá utilizar será https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: procure Microsoft Word para iPad. O URL que utiliza é: https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Também pode utilizar o iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
@@ -182,8 +181,8 @@ Também pode clicar em **Importar** para preencher a lista a partir de um fichei
 
 Na lista mostrar ou ocultar aplicações, pode configurar uma das seguintes listas (requer dispositivos supervisionados com iOS 9.3 ou posterior).
 
-Uma lista de **Aplicações ocultas** – Especifique uma lista de aplicações que serão ocultas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
-Uma lista de **Aplicações visíveis** – Especifique uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
+Uma lista de **Aplicações ocultas** – especifique uma lista de aplicações ocultadas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
+Uma lista de **Aplicações visíveis** – especifique uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
 
@@ -194,7 +193,7 @@ Para especificar um URL de aplicação na lista de aplicações, utilize o segui
 Através de um motor de pesquisa, localize a aplicação que pretende utilizar na App Store do iTunes e abra a página da aplicação.
 Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de local público.
 
-Exemplo: procure Microsoft Word para iPad. O URL que irá utilizar será https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: procure Microsoft Word para iPad. O URL que utiliza é: https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
@@ -228,7 +227,7 @@ Também pode clicar em **Importar** para preencher a lista a partir de um fichei
 
 ## <a name="keyboard-and-dictionary"></a>Teclado e Dicionário
 
--   **Pesquisa de definição de palavras (apenas supervisionado)** – Permita a funcionalidade do iOS que permite realçar uma palavra e procurar a definição dela.
+-   **Pesquisa de definição de palavras (apenas supervisionado)** – permita a funcionalidade do iOS que permite realçar uma palavra e procurar a definição dela.
 -   **Teclados preditivos (apenas supervisionado)** – Permita a utilização de teclados preditivos que sugerem palavras que o utilizador poderá querer utilizar.
 -   **Correção automática (apenas supervisionado)** – Permite que o dispositivo corrija automaticamente palavras com erros ortográficos.
 -   **Verificação ortográfica do teclado (apenas supervisionado)** – Permite o corretor ortográfico do dispositivo.
@@ -238,9 +237,9 @@ Também pode clicar em **Importar** para preencher a lista a partir de um fichei
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 -   **Criar cópias de segurança na iCloud** – Permita ao utilizador criar uma cópia de segurança do dispositivo para iCloud.
 -   **Sincronização de documentos com a iCloud (apenas supervisionado)** – Permita a sincronização de documentos e pares chave-valor para o seu espaço de armazenamento do iCloud.
--   **Sincronização de transmissão em fluxo de fotografias com a iCloud** – Permite aos utilizadores ativar **O Meu Fluxo de Fotografias** no dispositivo deles, o que permite que as fotografias sejam sincronizadas com o iCloud e disponibilizadas em todos os dispositivos dos utilizadores.
+-   **Sincronização de transmissão em fluxo de fotografias com a iCloud** – permite aos utilizadores ativar **O Meu Fluxo de Fotografias** no dispositivo deles, o que permite que as fotografias sejam sincronizadas com o iCloud e disponibilizadas em todos os dispositivos dos utilizadores.
 -   **Cópia de segurança encriptada** – Exija que qualquer cópia de segurança de um dispositivo seja encriptada.
--   **Fototeca em iCloud** – Se estiver definido como **Não**, desativará a utilização da biblioteca de fotografias do iCloud que permite aos utilizadores armazenar fotografias e vídeos na cloud.    Se isto estiver definido como **Não**, todas as fotografias que não tiverem sido completamente transferidas da Biblioteca de Fotografias do iCloud para o dispositivo serão removidas do mesmo.
+-   **Fototeca em iCloud** – se estiver definido como **Não**, desativará a utilização da biblioteca de fotografias do iCloud que permite aos utilizadores armazenar fotografias e vídeos na cloud.   Se isto estiver definido como **Não**, todas as fotografias que não tiverem sido completamente transferidas da Fototeca em iCloud para o dispositivo serão removidas do mesmo.
 -   **Sincronização das aplicações geridas com a cloud** – Permita que as aplicações que gere com o Intune sincronizem dados para a conta do iCloud dos utilizadores.
 -   **Transmissão partilhada de fotografias** – Definido como **Não** para desativar a **Partilha de Fotografias do iCloud** no dispositivo.
 -   **Continuação da atividade** – permita ao utilizador continuar o trabalho que iniciou num dispositivo iOS noutro dispositivo iOS ou macOS (Handoff).
@@ -251,7 +250,7 @@ Utilize estas definições para configurar os dispositivos iOS para executar apl
 
 ### <a name="settings"></a>Definições
 
-- **Nome da aplicação** –introduza o nome da aplicação conforme irá aparecer na lista de aplicações neste painel.
+- **Nome da aplicação** – introduza o nome da aplicação como é apresentado na lista de aplicações neste painel.
 - **ID do Pacote de Aplicações** -introduza o ID do pacote da aplicação. Para obter ajuda, veja **Referência de ID do pacote para aplicações iOS incorporadas** deste tópico.
 
 Depois de especificar cada nome da aplicação e ID do pacote, escolha **Adicionar** para o acrescentar à lista.
@@ -308,7 +307,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 
 
 ## <a name="kiosk-supervised-only"></a>Quiosque (apenas supervisionado)
--   **Aplicação que é executada no modo de local público** – Selecione **Aplicação Gerida** para selecionar uma aplicação que tenha adicionado ao Intune ou **Aplicação da Loja** para especificar o URL de uma aplicação na loja. Não será permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte "Como especificar URLs para lojas de aplicações" mais adiante neste tópico.
+-   **Aplicação que é executada no modo de local público** – Selecione **Aplicação Gerida** para selecionar uma aplicação que tenha adicionado ao Intune ou **Aplicação da Loja** para especificar o URL de uma aplicação na loja. Não é permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte "Como especificar URLs para lojas de aplicações" mais adiante neste tópico.
     -   **AssistiveTouch** – Ative ou desative a definição de acessibilidade **AssistiveTouch**, que ajuda o utilizador a executar gestos no ecrã que lhes poderão ser difíceis de realizar.
     -   **Inverter cores** – Ative ou desative a definição de acessibilidade Inverter Cores, que ajusta o ecrã para ajudar utilizadores com deficiências visuais.
     -   **Áudio mono** – Ative ou desative a definição de acessibilidade Áudio mono.
@@ -327,7 +326,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
     -   **Controlo de zoom** – Ative ou desative os ajustes do zoom, o que permite ao utilizador ajustar a função zoom.
 
 >[!NOTE]
-> Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
+> Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Registo de Aparelho da Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 >Se a aplicação iOS que especificou for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
 
 ## <a name="safari"></a>Safari
@@ -343,12 +342,12 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 
 ### <a name="unmarked-email-domains"></a>Domínios de e-mail não marcados
 
-No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quando os utilizadores finais recebem um e-mail de um domínio não configurado, o e-mail será marcado como não fidedigno na aplicação Correio do iOS.
+No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quando os utilizadores finais recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do iOS.
 
 
 ### <a name="managed-web-domains"></a>Domínios Web geridos
 
-No campo **URL de Domínio Web**, adicione um ou mais URLs à lista. Quando os documentos são transferidos a partir de domínios especificados, estes serão considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
+No campo **URL de Domínio Web**, adicione um ou mais URLs à lista. Quando forem transferidos documentos dos domínios que especificar, estes serão considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
 
 
 ### <a name="safari-password-autofill-domains"></a>Domínios de preenchimento automático de palavras-passe do Safari

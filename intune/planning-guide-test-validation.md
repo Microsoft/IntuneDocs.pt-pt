@@ -1,9 +1,10 @@
 ---
 title: "Teste e validação do Intune"
-description: "Os detalhes que precisa de ter em conta quando estiver a testar e validar uma solução do Intune apenas na cloud no seu ambiente."
+titlesuffix: Microsoft Intune
+description: "Como testar e validar a sua solução na cloud do Intune no seu ambiente."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
-A fase de teste ocorre durante e após a fase de implementação. Precisa de contas de teste, grupos e dispositivos para testar todos os cenários de TI (administrador) e de utilizador final (casos de utilização) necessários que identificou anteriormente.
+Ao testar a implementação do Microsoft Intune, pondere a validação funcional e a validação de casos de utilização. A validação funcional consiste no teste de cada componente e configuração para determinar se está a funcionar corretamente. A validação de casos de utilização envolve testes para verificar se os cenários relacionados com diversas tarefas funcionam conforme esperado. 
 
 Recomendamos que incorpore a sua equipa de suporte de TI e de suporte técnico na fase de teste para que seja criada a documentação de suporte e para que a equipa de suporte de TI e de suporte técnico se familiarize com a prestação de suporte do produto. Se um componente ou cenário não funcionar com base nos casos de utilização, certifique-se de que documenta as alterações necessárias e inclui o motivo de uma determinada alteração.
 
@@ -73,7 +74,7 @@ Efetue testes de validação do utilizador final para verificar se a experiênci
 
 ![Tabela 3, secção 9](./media/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Agora que testou e validou os cenários funcionais e de casos de utilização do Intune, está pronto para a [implementação de produção do Intune](planning-guide-rollout-plan.md).
 

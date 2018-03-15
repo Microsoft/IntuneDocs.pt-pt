@@ -1,10 +1,11 @@
 ---
-title: "Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune"
-description: "As informações neste tópico ajudam-no a decidir quando deve utilizar a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócio personalizadas utilizem políticas de gestão de aplicações móveis."
+title: "Preparar aplicações de linha de negócios para as políticas de proteção de aplicações"
+titlesuffix: Microsoft Intune
+description: "Utilize a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócios personalizadas utilizem políticas de proteção de aplicações no Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -102,7 +103,8 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Configuração da Aplicação de Destino |X||
 |Suporte para Identidades Múltiplas|X||
 |Estilo Personalizável |X|||
-## <a name="next-steps"></a>Próximos passos
+
+## <a name="next-steps"></a>Passos seguintes
 
 Para saber mais sobre as políticas de proteção de aplicações e o Intune, veja os seguintes tópicos:
 

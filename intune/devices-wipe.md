@@ -1,6 +1,6 @@
 ---
-title: "Utilizar o Intune para remover dados da empresa ou efetuar uma reposição de fábrica em dispositivos"
-titlesuffix: Azure portal
+title: "Utilizar a reposição de fábrica ou remover os dados empresariais em dispositivos com o Microsoft Intune"
+titlesuffix: 
 description: "Saiba como remover dados da empresa ou efetuar uma reposição de fábrica no dispositivo."
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
@@ -36,10 +36,10 @@ A **Reposição de fábrica** restaura as predefinições do dispositivo, remove
 ### <a name="to-factory-reset-a-device"></a>Para efetuar uma reposição de fábrica num dispositivo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 4. Selecione o nome do dispositivo em que pretende efetuar a reposição de fábrica.
-5. No painel que apresenta o nome do dispositivo, selecione **Reposição de fábrica**
+5. No painel que apresenta o nome do dispositivo, selecione **Reposição de fábrica**.
 6. Para a versão 1709 ou superior do Windows 10, existe a opção adicional para "Reter estado de inscrição e conta de utilizador". 
     
     |Retido através de uma reposição de fábrica|Não retido|
@@ -123,8 +123,8 @@ Uma remoção dos dados da empresa num dispositivo Android for Work remove todos
 ### <a name="to-remove-company-data"></a>Para remover dados da empresa
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 4. Selecione o nome do dispositivo do qual pretende remover os dados da empresa.
 5. No painel que apresenta o nome do dispositivo, selecione **Remover dados da empresa** e, em seguida, selecione **Sim** para confirmar.
 
@@ -134,9 +134,9 @@ Se o dispositivo estiver ativo e ligado, demora menos de 15 minutos até um coma
 
 Devido a problemas de comunicação ou dispositivos em falta, poderá ter de eliminar dispositivos do Azure Active Directory (AAD). O comando eliminar não remove um dispositivo da gestão. No entanto, pode utilizar o comando **Eliminar** para remover registos de dispositivos do portal do Azure que saiba que são inacessíveis e pouco prováveis de voltar a comunicar com o Azure.
 
-1.  Inicie sessão no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [portal do Office 365](https://portal.office.com) e, em seguida, selecionar **Administrador** &gt; **Azure AD** através da ligação no lado esquerdo da página.
+1.  Inicie sessão no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [portal do Office 365](https://portal.office.com) e, em seguida, selecionar **Centros de administração** &gt; **Azure AD** através da ligação no lado esquerdo da página.
 3.  Se não tiver uma, crie uma Subscrição do Azure. Se tiver uma conta paga (escolha a ligação de subscrição **Registar o Azure Active Directory gratuito**), não deverá ser preciso um cartão de crédito ou um pagamento para esta subscrição.
-4.  Selecione **Active Directory** e, em seguida, selecione a sua organização.
+4.  Selecione **Azure Active Directory** e, em seguida, selecione a sua organização.
 5.  Selecione o separador **Utilizadores** .
 6.  Selecione o utilizador cujos dispositivos pretende eliminar.
 7.  Escolha **Dispositivos**.

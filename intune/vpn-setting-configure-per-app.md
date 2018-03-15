@@ -1,7 +1,7 @@
 ---
-title: "Configurar a VPN por Aplicação no Microsoft Intune para dispositivos iOS"
-titleSuffix: Intune on Azure
-description: "Especifique que aplicações geridas podem utilizar a VPN em dispositivos iOS geridos pelo Intune."
+title: "Configurar a VPN por aplicação no Microsoft Intune para dispositivos iOS"
+titleSuffix: 
+description: "Especifique que aplicações geridas podem utilizar a sua Rede Privada Virtual (VPN) em dispositivos iOS geridos pelo Intune."
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Configurar a VPN por Aplicação no Microsoft Intune para dispositivos iOS
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
-Pode especificar que aplicações geridas podem utilizar a Rede Privada Virtual (VPN) em dispositivos iOS geridos pelo Intune. Quando especifica a VPN por Aplicação no Intune, um utilizador final estabelece ligação automaticamente através da VPN ao aceder a documentos empresariais.
+Pode especificar que aplicações geridas podem utilizar a sua Rede Privada Virtual (VPN) em dispositivos iOS geridos pelo Intune. Quando cria uma VPN por aplicação no Intune, um utilizador final estabelece ligação automaticamente através da VPN ao aceder a documentos empresariais.
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Pré-requisitos para a VPN por Aplicação
 
@@ -182,7 +182,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para rever as definições do iOS, veja [VPN settings for iOS devices in Microsoft Intune (Definições de VPN para dispositivos iOS no Microsoft Intune)](vpn-settings-ios.md).
 -  Para saber mais sobre a definição de VPN e o Intune, veja [How to configure VPN settings in Microsoft Intune (Como configurar as definições de VPN no Microsoft Intune)](vpn-settings-configure.md).
