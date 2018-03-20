@@ -1,12 +1,12 @@
 ---
-title: "Introdução às políticas"
-titlesuffix: Azure portal
-description: "Crie políticas para impedir que os utilizadores executem ações não autorizadas com os seus dispositivos."
+title: "Introdução às políticas no Microsoft Intune"
+titlesuffix: 
+description: "Crie políticas para ajudar a proteger dados empresariais e gerir os dispositivos que os utilizadores finais utilizam para aceder aos recursos da empresa."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="get-started-with-policies"></a>Introdução às políticas
+# <a name="get-started-with-creating-policies"></a>Introdução à criação de políticas
 
 Um dos principais objetivos da introdução ao Intune é a inscrição de dispositivos para garantir que estão em conformidade com as políticas empresariais. As políticas de conformidade irão ajudá-lo a gerir tipos de dispositivos especializados, como quiosques pertencentes à empresa, mas também dispositivos pessoais (Bring Your Own Device), tablets e dispositivos sem utilizador.
 
 ![Dashboard de conformidade com poucos dados](/intune/media/generic-compliance-dashboard.png)
 
-As políticas de conformidade fornecem as seguintes funcionalidades de gestão para dispositivos móveis:
+Faça a gestão de dispositivos móveis nas seguintes áreas através de políticas de conformidade:
 
 * Regular o número de dispositivos que cada utilizador inscreve
 * Gerir as definições dos dispositivos (por exemplo, a encriptação ao nível do dispositivo, o comprimento da palavra-passe, a utilização da câmara)
@@ -46,10 +46,11 @@ Cria políticas de conformidade para cada plataforma separadamente. Neste exerc�
 __Como posso criar uma política?__
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Em **Procurar recursos**, procure o **Intune**.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **Conformidade do dispositivo**.
 4. No painel **Conformidade do dispositivo**, selecione **Políticas**.
-5. Selecione **Criar Política** e, em seguida, preencha os detalhes, como **Nome** e **Descrição**. Selecione **iOS** como a **Plataforma**.
+5. Selecione **Criar Política** e, em seguida, preencha os detalhes, como **Nome** e **Descrição**. 
+6. Selecione **iOS** como a **Plataforma**.
 6. Em **Definições**, selecione **Segurança do Sistema** e, em seguida, mude o botão de alternar **Exigir uma palavra-passe para desbloquear os dispositivos móveis** para **Exigir**. Também pode definir outras regras, tal como **Comprimento mínimo da palavra-passe**, **Tipo obrigatório de palavra-passe** e **Número de carateres não alfanuméricos na palavra-passe**. Quando terminar de configurar a sua política, selecione **OK**.
 7. Regresse ao painel **Criar política** e, em seguida, selecione **Criar**.
 8. Assim que a política for criada, selecione **Atribuições** para atribuí-la ao seu grupo de teste. Selecione o seu grupo de teste (que deve conter o seu utilizador de teste) e, em seguida, atribua a política a esse grupo ao clicar em **Guardar**.

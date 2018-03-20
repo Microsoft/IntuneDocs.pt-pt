@@ -1,12 +1,12 @@
 ---
-title: "Criar uma política de conformidade para Android for Work"
-titleSuffix: Azure portal
-description: "Saiba como criar uma política de conformidade para dispositivos Android for Work.\""
+title: "Criar uma política de conformidade do Android for Work"
+titleSuffix: Microsoft Intune
+description: "Crie uma política de conformidade de dispositivos do Intune para dispositivos Android for Work, para que possa especificar os requisitos que um dispositivo tem de cumprir para estar em conformidade."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos Android for Work no Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As políticas de conformidade são criadas para cada plataforma.  Pode criar uma política de conformidade no portal do Azure. Para saber mais sobre as políticas de conformidade, veja [O que é a conformidade de dispositivos?](device-compliance.md). Para saber mais sobre os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos do Intune para Android for Work especifica as regras e definições que os dispositivos Android for Work têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, tal como pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre políticas de conformidade e os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
@@ -36,7 +36,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 | --- | --- |
 | **Configuração do PIN ou da palavra-passe** |  Em quarentena |
 | **Encriptação do dispositivo** |  Em quarentena |
-| **Dispositivo desbloqueado por jailbreak ou rooting** | Em quarentena (não é uma definição) |
+| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Em quarentena (não é uma definição) |
 | **perfil de e-mail** | Não aplicável |
 | **Versão mínima do SO** | Em quarentena |
 | **Versão máxima do SO** | Em quarentena |
@@ -51,12 +51,14 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Criar uma política de conformidade no portal do Azure
 
-1. No painel **Intune**, escolha **Definir Conformidade do dispositivo**. Em **Gerir**, escolha **Todas as políticas de conformidade do dispositivo** e **Criar**.
-2. Escreva um nome e uma descrição, e selecione a plataforma à qual pretende aplicar esta política.
-3. Escolha **Requisitos de conformidade** para especificar as definições de **Segurança**, de **Estado de funcionamento do dispositivo** e de **Propriedade do dispositivo**. Quando tiver terminado, clique em **OK**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. No painel **Intune**, selecione **Conformidade do dispositivo**. Em **Gerir**, selecione **Políticas** e, em seguida, **Criar política**.
+2. Escreva um nome, uma descrição e escolha a plataforma à qual quer que esta política se aplique.
+3. Selecione **Configurar as Definições** para especificar aqui as definições de **Segurança do Sistema**, **Estado de Funcionamento do Dispositivo** e **Propriedades do Dispositivo**. Quando tiver terminado, escolha **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 
-Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade – política**.
+Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade do dispositivo – Políticas**.
 
 1. Escolha a política que quer atribuir aos utilizadores e, em seguida, **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
-2. Escolha **Selecionar grupos** para abrir o painel que apresenta os grupos de segurança do Azure AD.  Escolher **Selecionar** implementa a política para os utilizadores.
+2. Selecione **Grupos selecionados** para abrir o painel que apresenta os grupos de segurança do Azure AD.  Selecionar **Guardar** implementa a política para os utilizadores.
 
 Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
 
@@ -88,7 +90,7 @@ Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizad
   - **Alfanumérica com símbolos**
 - **Minutos de inatividade antes de ser exigida a palavra-passe**: especifica o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
 - **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe do utilizador expirar e ser preciso criar uma nova.
-- **Memorizar histórico de palavras-passe**: utilize esta definição juntamente com **Impedir a reutilização de palavras-passe anteriores** para impedir o utilizador de criar palavras-passe utilizadas anteriormente.
+- **Memorizar histórico de palavras-passe:** utilize esta definição juntamente com **Impedir a reutilização de palavras-passe anteriores** para impedir o utilizador de criar palavras-passe utilizadas anteriormente.
 - **Impedir a reutilização de palavras-passe anteriores**: se a opção **Memorizar histórico de palavras-passe** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
 - **Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**: esta definição deve ser utilizada em conjunto com a definição **Minutos de inatividade antes de ser exigida a palavra-passe**. Será pedido aos utilizadores finais que introduzam uma palavra-passe para aceder a dispositivos que tenham estado inativos durante o período de tempo especificado na definição **Minutos de inatividade antes de ser exigida a palavra-passe**.
 
@@ -103,7 +105,7 @@ Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizad
 - **O dispositivo não pode estar desbloqueado por jailbreak ou rooting**: se ativar esta definição, os dispositivos com jailbreak serão avaliados como não conformes.
 - **Exigir que os dispositivos impeçam a instalação de aplicações de origens desconhecidas**: uma vez que os dispositivos Android for Work restringem sempre a instalação de origens desconhecidas, não necessita de configurar esta definição.
 - **Exigir que a depuração USB esteja desativada**: uma vez que a depuração USB já se encontra desativada em dispositivos Android for Work, não necessita de configurar esta definição.
-- **Nível do patch de segurança mínimo Android**: utilize esta definição para especificar o nível de patch de segurança mínimo de Android. Os dispositivos que não tenham pelo menos este nível de correção não serão conformes. A data tem de ser especificada no formato: AAAA-MM-DD.
+- **Nível do patch de segurança mínimo Android**: utilize esta definição para especificar o nível de patch de segurança mínimo de Android. Os dispositivos que não tenham, pelo menos, este nível de correção não serão conformes. A data tem de ser especificada no formato: AAAA-MM-DD.
 - **Exigir que a proteção contra ameaças de dispositivos seja ativada**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição para conformidade. Selecione o nível de ameaça máximo permitido, que será um dos seguintes:
   - **Nenhum (seguro):** é o nível mais seguro. Isto significa que o dispositivo não pode ter nenhuma ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
   - **Baixo**: o dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.

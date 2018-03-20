@@ -1,12 +1,12 @@
 ---
-title: "Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis com o Intune"
-titlesuffix: Azure portal
-description: "Ative o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune."
+title: "Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Microsoft Intune"
+titleSuffix: 
+description: "Ative o conector entre o seu parceiro de Defesa Contra Ameaças para Dispositivos Móveis (MTD) e o Microsoft Intune."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,24 +15,24 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3ca0b8082e0fccc5ee4c97e281d546ba4a75d813
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>Ativar a Defesa Contra Ameaças para Dispositivos Móveis no Intune
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
 > [!NOTE] 
 > Este tópico aplica-se a todos os parceiros de Defesa Contra Ameaças para Dispositivos Móveis.
 
-Para ativar a ligação da Defesa contra Ameaças para Dispositivos Móveis (MTD) no Intune, já deverá ter configurado o Conector do Intune na consola do parceiro MTD.
+Durante a configuração da Defesa Contra Ameaças para Dispositivos Móveis (MTD), configurou uma política para classificar ameaças na sua consola do parceiro MTD e criou a política de conformidade de dispositivos no Intune. Se já tiver configurado o conector do Intune na consola do parceiro MTD, pode agora ativar a ligação da MTD no Intune.
 
 ## <a name="to-enable-the-mtd-connector"></a>Para ativar o conector da MTD
 
 1. Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as credenciais do Intune. Depois de iniciar sessão com êxito, verá o **Dashboard do Azure**.
 
-2. No **Dashboard do Azure**, escolha **Mais serviços**, no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+2. No **Dashboard do Azure**, selecione **Todos os serviços**, no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
 3. Selecione **Intune** e o **Dashboard do Intune** será aberto.
 
@@ -48,7 +48,7 @@ Para ativar a ligação da Defesa contra Ameaças para Dispositivos Móveis (MTD
 
 ## <a name="mtd-toggle-options"></a>Opções de alternância da MTD
 
-Pode decidir quais as opções de alternância da MTD que necessita de ativar de acordo com os requisitos da sua organização. Seguem-se mais detalhes:
+Pode decidir quais as opções de alternância da MTD que necessita de ativar de acordo com os requisitos da sua organização. Veja a seguir mais detalhes:
 
 - **Ligar dispositivos Android 4.1 ou posterior à MTD do [nome do parceiro MTD] for Work**: quando ativa esta opção, pode ter dispositivos Android 4.1 ou posterior a comunicar riscos de segurança para o Intune.
     - **Marcar como não conforme se não forem recebidos dados**: se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo como não conforme.

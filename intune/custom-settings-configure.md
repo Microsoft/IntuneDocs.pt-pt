@@ -1,51 +1,53 @@
 ---
-title: "Como configurar definições de dispositivos personalizadas no Intune"
-titleSuffix: Azure portal
-description: "Saiba como utilizar o Intune para configurar as definições personalizadas nos dispositivos que gere.\""
+title: "Utilizar definições personalizadas do dispositivo no Microsoft Intune – Azure | Microsoft Docs"
+description: "Adicionar ou criar um perfil para utilizar definições personalizadas para dispositivos Windows, Android e iOS com o Microsoft Intune"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Como configurar as definições personalizadas dos dispositivos no Microsoft Intune
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>Criar um perfil com definições personalizadas no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="when-to-use-custom-settings"></a>Quando utilizar as definições personalizadas
+O Intune poderá não ter todas as definições incorporadas que pretende ou de que precisa. Em alternativa, é recomendável utilizar uma definição disponível noutros perfis de dispositivo. Para adicionar estas definições, crie um perfil de dispositivo e configure o perfil com definições personalizadas do dispositivo.
 
-As definições personalizadas dos dispositivos podem ser úteis quando o Intune não tem as definições que pretende configurar incorporadas e estão disponíveis a partir de outros perfis de dispositivo.
-As definições personalizadas são configuradas de forma diferente para cada plataforma. Por exemplo, com dispositivos Android e Windows, pode especificar valores Open Mobile Alliance Uniform Resource Identifier (OMA-URI) para controlar as funcionalidades nos dispositivos. Para dispositivos Apple, pode importar um ficheiro que criou no [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
+Este artigo apresenta os passos básicos para criar um perfil com definições personalizadas. Também inclui ligações para saber mais sobre como criar definições personalizadas com plataformas diferentes.
 
-Utilize as informações deste tópico para conhecer as noções básicas sobre como configurar perfis com definições personalizadas e, em seguida, leia os tópicos de cada plataforma para saber mais sobre as especificações dos dispositivos.
+## <a name="custom-settings-on-different-platforms"></a>Definições personalizadas em plataformas diferentes
+As definições personalizadas são configuradas de forma diferente para cada plataforma. Por exemplo, para controlar as funcionalidades em dispositivos Android e Windows, pode introduzir valores Open Mobile Alliance Uniform Resource Identifier (OMA-URI). Para dispositivos Apple, pode importar um ficheiro que criou no [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>Criar um perfil de dispositivo com as definições personalizadas
+## <a name="create-the-profile"></a>Criar o perfil
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Configuração do dispositivo**.
-2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
-3. No painel de perfis, escolha **Criar Perfil**.
-4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil personalizado.
-5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições personalizadas. Atualmente, pode escolher uma das seguintes plataformas para as definições personalizadas dos dispositivos:
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Configuração do dispositivo**, selecione **Perfis** e, em seguida, selecione **Criar perfil**.
+4. Introduza um **Nome** e uma **Descrição** para o perfil personalizado.
+5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições personalizadas. Pode escolher qualquer uma das seguintes plataformas:
+
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
+
 6. Na lista pendente **Tipo de perfil**, escolha **Personalizado**.
-7. As definições que pode configurar diferem consoante a plataforma que escolher. Aceda a um dos seguintes tópicos para definições detalhadas para cada plataforma:
+7. Consoante a plataforma que escolheu, as definições que pode configurar variam. As seguintes ligações fornecem mais detalhes sobre as definições personalizadas para cada plataforma:
+
     - [Definições do Android](custom-settings-android.md)
     - [Definições do iOS](custom-settings-ios.md)
     - [Definições do macOS](custom-settings-macos.md)
@@ -53,7 +55,7 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
     - [Definições do Windows 10](custom-settings-windows-10.md)
     - [Definições do Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Definições do Android for Work](custom-settings-android-for-work.md)
-8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
 
-O perfil é criado e apresentado no painel da lista de perfis.
-Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
+8. Quando tiver terminado, selecione **Criar**.
+
+O perfil será criado e apresentado na lista de perfis. Para atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

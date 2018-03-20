@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Como criar uma política de conformidade de dispositivos para ativar o Google Play Protect
 
@@ -29,14 +29,15 @@ A política de conformidade que exige estas definições pode então ser destina
 
 ## <a name="create-a-compliance-policy"></a>Criar uma política de conformidade
 
-1. Inicie sessão no portal do Azure. Escolha **Mais Serviços** > **Monitorização + Gestão** + **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 2. Escolha **Conformidade do dispositivo** no grupo **Gerir**. 
-3. Escolha **Políticas** e, em seguida, **Criar Política**.
+3. Selecione **Políticas** e, em seguida, **Criar política**.
 4. Escreva o **Nome** e a **Descrição** da política.
 5. Selecione **Android** para a Plataforma.
 6. Escolha **Definições** > **Estado de Funcionamento do Dispositivo**.
 7. Configure as definições do **Google Play Protect**.
-8. Quando tiver configurado as definições do Google Play Protect, especifique as definições **Segurança** e **Propriedade do dispositivo**. Quando tiver terminado, escolha **OK**.
+8. Quando tiver configurado as definições do Google Play Protect, especifique as definições **Segurança do Sistema** e **Propriedades do Dispositivo**. Quando tiver terminado, escolha **OK**.
 
 ## <a name="configure-the-google-play-protect-settings"></a>Configurar as definições do Google Play Protect
 

@@ -1,29 +1,29 @@
 ---
-title: "Definições de VPN no Intune para dispositivos iOS"
-titlesuffix: Azure portal
-description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações de VPN em dispositivos iOS.\""
+title: "Definições de VPN do Microsoft Intune para dispositivos com iOS"
+titlesuffix: 
+description: "Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos com iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Definições de VPN para dispositivos iOS no Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos com iOS.
 
 Consoante as definições que escolher, nem todos os valores na lista seguinte serão configuráveis.
 
@@ -38,7 +38,7 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 - **Tipo de ligação** – selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
@@ -62,7 +62,7 @@ Se tiver selecionado **VPN Personalizada** como o tipo de ligação, configure e
 - **Regras a pedido** – Esta opção permite-lhe configurar regras condicionais que controlam quando a ligação VPN é iniciada. Por exemplo, pode criar uma condição na qual a ligação VPN só é utilizada quando um dispositivo não está ligado a uma das redes Wi-Fi da sua empresa. Em alternativa, pode criar uma condição na qual, se um dispositivo não puder aceder a um domínio de pesquisa DNS que especificar, a ligação VPN não é iniciada.
 
     - **SSIDs ou domínios de pesquisa DNS** – selecione se esta condição utiliza **SSIDs** de rede sem fios ou **domínios de pesquisa DNS**. Escolha Adicionar para configurar um ou mais SSIDs ou domínios de pesquisa.
-    - **Pesquisa de cadeia de URL** – Opcionalmente, indique um URL para a regra utilizar como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a ligação VPN será iniciada e o dispositivo será ligado ao URL de destino. O utilizador não verá o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
+    - **Pesquisa de cadeia de URL** – Opcionalmente, indique um URL para a regra utilizar como um teste. Se o dispositivo no qual está instalado este perfil for capaz de aceder a este URL sem redirecionamento, a ligação VPN será iniciada e o dispositivo será ligado ao URL de destino. O utilizador não vê o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
     - **Ação de domínio** – escolha um dos seguintes itens:
         - Ligar caso seja preciso – 
         - Nunca ligar – 

@@ -1,11 +1,12 @@
 ---
-title: "Criar um relatório a partir do feed OData com o Power BI | Documentos da Microsoft"
+title: "Criar um relatório a partir do feed OData com o Power BI"
+titlesuffix: Microsoft Intune
 description: "Crie uma visualização de treemap com o Power BI Desktop com um filtro interativo da API do Armazém de Dados do Microsoft Intune."
 keywords: "Armazém de Dados do Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a81a3b0648c77e3adb7a57bdcecddea1e0412eb2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
-Neste tutorial, irá criar uma visualização de treemap com o Power BI Desktop com um filtro interativo. Por exemplo, o seu Diretor Financeiro poderá gostar da forma como a distribuição geral de dispositivos compara dispositivos pertencentes à empresa e dispositivos pessoais. O treemap fornece informações sobre o número total de tipos de dispositivos. Pode analisar o número de dispositivos iOS, Android e Windows pessoais ou pertencentes à empresa.
+Este artigo explica como criar uma visualização de treemap com o Power BI Desktop com um filtro interativo. Por exemplo, o seu Diretor Financeiro poderá gostar da forma como a distribuição geral de dispositivos compara dispositivos pertencentes à empresa e dispositivos pessoais. O treemap fornece informações sobre o número total de tipos de dispositivos. Pode analisar o número de dispositivos iOS, Android e Windows pessoais ou pertencentes à empresa.
 
 ### <a name="overview-of-creating-the-chart"></a>Descrição geral da criação do gráfico
 
-Para criar este gráfico, irá:
+Para criar este gráfico, tem de:
 1. Instalar o Power BI Desktop, caso ainda não o tenha feito.
 2. Ligar-se ao modelo de dados do Armazém de Dados do Intune e obter dados atuais para o modelo.
 3. Criar ou gerir as relações do modelo de dados.
@@ -49,8 +50,8 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 > [!Note]  
 > Precisa de permissão para aceder a **Relatórios** no Intune. Para obter mais informações, veja [Autorização](reports-api-url.md).
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** + **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Abra o painel **Armazém de Dados do Intune**.
 4. Copie o URL do feed personalizado. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Abra o Power BI Desktop.
@@ -61,24 +62,25 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
     ![Feed OData](media/reports-create-01-odatafeed.png)
 
 9. Selecione **OK**.
-10. Selecione **Conta escolar ou profissional** e, em seguida, inicie sessão com as suas credenciais do Intune. 
+10. Selecione **Conta escolar ou profissional** e, em seguida, inicie sessão com as suas credenciais do Intune.
 
     ![Credenciais da conta escolar ou profissional](media/reports-create-02-org-account.png)
 
-11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune. 
+11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
     ![O Navegador](media/reports-create-02-loadentities.png)
 
 12. Selecione as tabelas **Dispositivos** e **TiposdeProprietário**.  Selecione **Carregar**. O Power BI carrega os dados para o modelo.
 
-## <a name="create-a-relationship"></a>Criar uma relação 
+## <a name="create-a-relationship"></a>Criar uma relação
 
 Pode importar múltiplas tabelas para analisar não só os dados numa única tabela, mas também os dados relacionados nas tabelas.  O Power BI tem uma funcionalidade denominada **Deteção automática** que tenta localizar e criar relações automaticamente. As tabelas no Armazém de Dados foram criadas para trabalharem com a funcionalidade Deteção automática do Power BI. No entanto, mesmo se o Power BI não localizar automaticamente as relações, ainda pode gerir as mesmas.
 
 ![Gerir relações](media/reports-create-03-managerelationships.png)
 
 1. Selecione **Gerir Relações**.
-2. Selecione **Deteção automática...** caso o Power BI não tenha ainda detetado as relações.  
+2. Selecione **Deteção automática...** caso o Power BI não tenha ainda detetado as relações.
+
 A relação é apresentada numa coluna De para uma coluna Para. Neste exemplo, o campo de dados **ChavedoTipodeProprietário** na tabela **Dispositivos** liga-se ao campo de dados **ChavedoTipodeProprietário** na tabela **TiposdeProprietário**. Utiliza as relações para procurar um nome simples do código do tipo de dispositivo na tabela **Dispositivos**.
 
 ## <a name="create-a-treemap-visualization"></a>Criar uma visualização de treemap
@@ -92,21 +94,24 @@ Um gráfico treemap mostra dados hierárquicos como caixas em caixas. Cada ramo 
 3. Expanda a **tabela Dispositivos** e selecione o campo de dados **Fabricante** no painel **Campos**.
 4. Arraste o campo de dados **Fabricante** para o gráfico Treemap na tela do relatório.
 5. Arraste o campo de dados **ChavedeDispositivo** da tabela **Dispositivos** para a secção **Valores** no painel **Visualizações** e largue na caixa etiquetada **Arrastar o campo de dados para aqui**.  
-Agora tem um elemento visual que nos mostra a distribuição de fabricantes de dispositivos na sua organização.
+
+Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dispositivos na sua organização.
 
 ![Treemap com dados](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Adicionar um filtro
 
-Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação. 
+Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação.
 
-1. Selecione a tela do relatório e, em seguida, selecione o **ícone Segmentação de Dados** (![Treemap com dados](media/reports-create-slicer.png)) em **Visualizações** para adicionar um filtro.
+
+1. Para adicionar um filtro, selecione a tela do relatório e, em seguida, selecione o **Ícone de segmentação de dados** (![Treemap com dados](media/reports-create-slicer.png)) em **Visualizações**.
 2. Localize a tabela **TiposdeProprietário** e arraste o campo de dados **NomedoTipodeProprietário** na secção **Filtros** no painel **Visualizações**.  
-   Na tabela Dispositivos, existe um campo de dados denominado **ChavedoTipodeProprietário** que contém um código que identifica se um dispositivo é pessoal ou pertencente à empresa. Uma vez que pretende mostrar nomes amigáveis neste filtro, procure a tabela **TiposdeProprietário** e arraste o **NomedoTipodeProprietário**. Este é um exemplo de como o modelo de dados suporta relações entre tabelas.
+
+   Na tabela Dispositivos, existe um campo de dados denominado **ChavedoTipodeProprietário** que contém um código que identifica se um dispositivo é pessoal ou pertencente à empresa. Uma vez que pretende mostrar nomes amigáveis neste filtro, procure a tabela **TiposdeProprietário** e arraste o **NomedoTipodeProprietário**. Este exemplo mostra de que forma o modelo de dados suporta relações entre tabelas.
 
 ![Treemap com filtro](media/reports-create-08_ownertype.png)
 
-Agora tem um filtro interativo que pode ser utilizado para alternar entre dispositivos pessoais e dispositivos pertencentes à empresa para ver como a distribuição é alterada.
+Agora tem um filtro interativo que pode utilizar para alternar entre dispositivos pessoais e dispositivos pertencentes à empresa. Utilize este filtro para ver como a distribuição é alterada.
 
 1. Selecione **Empresa** para ver a distribuição de dispositivos pertencentes à empresa.
 2. Selecione **Pessoal** para ver os dispositivos pessoais.

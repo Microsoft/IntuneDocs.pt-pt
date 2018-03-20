@@ -1,29 +1,29 @@
 ---
-title: "Definições de restrição de dispositivos no Intune para dispositivos macOS"
-titlesuffix: Azure portal
-description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Mac OS.\""
+title: "Definições de restrição de dispositivos no Microsoft Intune para dispositivos macOS"
+titlesuffix: 
+description: "Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos macOS no Microsoft Intune
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Definições de restrição de dispositivos macOS no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilize estas definições para gerir dispositivos macOS num perfil de restrição de dispositivos.
+Este artigo mostra-lhe as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos macOS.
 
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
@@ -49,5 +49,5 @@ Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um n
 
 ### <a name="unmarked-email-domains"></a>Domínios de e-mail não marcados
 
-No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quando os utilizadores finais recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do iOS.
+No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quando os utilizadores recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do iOS.
 

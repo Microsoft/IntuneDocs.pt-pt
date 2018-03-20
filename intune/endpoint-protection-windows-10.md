@@ -1,12 +1,12 @@
 ---
-title: "Definições de proteção de ponto final do Intune para o Windows 10"
-titlesuffix: Azure portal
-description: "Saiba que definições do Intune pode utilizar para controlar as definições de proteção de ponto final, como o BitLocker, em dispositivos com o Windows 10."
+title: "Definições de proteção de ponto final do Microsoft Intune para Windows 10"
+titlesuffix: 
+description: "Saiba que definições do Intune pode utilizar para controlar as definições de proteção de ponto final, como o BitLocker, em dispositivos com Windows 10."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Criar definições de proteção de ponto final para o Windows 10 e versões posteriores no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O perfil de proteção de ponto final permite-lhe controlar as funcionalidades de segurança em dispositivos com o Windows 10, como o BitLocker e o Windows Defender.
+O perfil de proteção de ponto final permite-lhe controlar as funcionalidades de segurança em dispositivos com Windows 10, como o BitLocker e o Windows Defender.
 
-Utilize as informações neste tópico para saber como criar perfis de proteção de ponto final.
+Utilize as informações neste artigo para saber como criar perfis de proteção de ponto final.
 
 > [!Note]
 > Estas definições não são suportadas nas edições Home e Professional do Windows 10.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Criar um perfil de proteção de ponto final
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
-2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
+2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
 3. No painel de perfis, selecione **Criar perfil**.
 4. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de funcionalidades de dispositivos.
 5. Na lista pendente **Plataforma**, selecione **Windows 10 e posterior**.
 6. Na lista pendente **Tipo de perfil**, selecione **Proteção de ponto final**.
-7. Configure as definições que pretende. Utilize os detalhes neste tópico para o ajudar a compreender o que faz cada definição. Quando terminar, escolha **OK**.
+7. Configure as definições que pretende. Utilize os detalhes neste artigo para o ajudar a compreender o que faz cada definição. Quando terminar, escolha **OK**.
 8. Regresse ao painel **Criar perfil** e selecione **Criar**.
 
 O perfil é criado e apresentado no painel da lista de perfis.
@@ -57,6 +57,7 @@ O Application Guard só está disponível para dispositivos com o Windows 10 (64
 - **Imprimir a partir do browser virtual** – permita que impressoras de rede, locais, XPS e/ou PDF imprimam conteúdos a partir do browser virtual.
 - **Recolher registos** – recolha registos de eventos que ocorrem numa sessão de navegação do Application Guard.
 - **Reter dados do browser gerados pelo utilizador** – permita que os dados do utilizador (por exemplo palavras-passe, favoritos e cookies) que são criados durante uma sessão de navegação virtual do Application Guard sejam guardados.
+- **Aceleração de gráficos** – ative o acesso a uma unidade de processamento de gráficos virtual para carregar sites com grande intensidade de gráficos mais rapidamente, quando trabalhar dentro da sessão de navegação virtual do Application Guard.
 
 
 ## <a name="windows-defender-firewall"></a>Firewall do Windows Defender

@@ -1,10 +1,10 @@
 ---
-title: "Impor políticas de conformidade a dispositivos geridos pelo Jamf"
-titlesuffix: Azure portal
-description: Utilize a conformidade para ajudar a proteger os dispositivos geridos pelo Jamf.
+title: "Política de conformidade do dispositivo para dispositivos Jamf"
+titlesuffix: Microsoft Intune
+description: "Utilize as políticas de conformidade do Microsoft Intune com o acesso condicional do Azure Active Directory para ajudar a proteger os dispositivos geridos pelo Jamf."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs geridos com o Jamf Pro
 

@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
@@ -71,20 +71,21 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Como criar e atribuir anéis de atualização
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Atualizações de Software**.
-4. No painel **Atualizações de Software**, escolha **Gerir** > **Anéis de Atualização do Windows 10**.
-5. No painel que apresenta a lista de anéis de atualização, escolha **Criar**.
-6. No painel **Criar Anel de Atualização**, indique um nome e uma descrição opcional para o anel de atualização e, em seguida, escolha **Definições**.
-7. No painel **Definições**, configure as informações seguintes:
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Atualizações de software**.
+4. No painel **Atualizações de software**, selecione **Gerir** > **Cadências de Atualização do Windows 10**.
+5. No painel que apresenta a lista de cadências de atualização, selecione **Criar**.
+6. No painel **Criar Anel de Atualização**, indique um nome e uma descrição opcional para o anel de atualização e, em seguida, selecione **Definições – Configurar**.
+7. No painel **Definições**, configure as seguintes informações:
     - **Canal de manutenção**: defina a via através da qual o dispositivo recebe atualizações do Windows (Via de Atualizações Semianuais (Direcionada) ou Via de Atualizações Semianuais).
-    - **Atualizações da Microsoft**: escolha se pretende procurar atualizações da aplicação no Microsoft Update.
+    - **Atualizações de produtos da Microsoft**: escolha se pretende procurar atualizações da aplicação no Microsoft Update.
     - **Controladores do Windows**: escolha se pretende excluir controladores do Windows Update durante as atualizações.
     - **Comportamento da atualização automática**: escolha como pretende gerir o comportamento da atualização automática para procurar, transferir e instalar atualizações. Para obter mais detalhes, veja [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Período de diferimento da atualização de qualidade (dias)** – especifique o número de dias de diferimento das atualizações de qualidade. Pode diferir a receção destas Atualizações de Qualidade durante um período máximo de 30 dias a partir do seu lançamento.  
 
     Geralmente, as Atualizações de Qualidade são correções e melhorias às funcionalidades do Windows existentes e, normalmente, são publicadas na primeira terça-feira de cada mês, embora possam ser lançadas em qualquer altura pela Microsoft. Pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Qualidade, após a sua disponibilidade.
+
     - **Período de diferimento da atualização de funcionalidades (dias)** – especifique o número de dias de diferimento das Atualizações de Funcionalidades. Pode diferir a receção destas Atualizações de Funcionalidades durante um período máximo de 180 dias após o seu lançamento.
 
     Geralmente, as Atualizações de Funcionalidades são novas funcionalidades do Windows. Depois de configurar a definição **Canal de manutenção** (Via de Atualizações Semianuais (Direcionada) ou Via de Atualizações Semianuais), pode definir se, e durante quanto tempo, gostaria de diferir a receção das Atualizações de Funcionalidades após serem disponibilizadas pela Microsoft no Windows Update.
@@ -93,13 +94,13 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
     **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada na Via de Atualizações Semianuais. O dispositivo irá receber a Atualização de Funcionalidades 30 dias após o lançamento na Via de Atualizações Semianuais e será atualizado em maio.
 
-    - **Otimização da entrega** – escolha o método para o qual os dispositivos irão transferir as atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+    - **Modo de transferência da otimização da entrega** – selecione o método para o qual os dispositivos irão transferir as atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 1. Quando tiver terminado, clique em **OK** e, no painel **Criar Anel de Atualização**, clique em **Criar**.
 
 O novo anel de atualização é apresentado na lista de anéis de atualização.
 
 1. Para atribuir o anel, na lista de anéis de atualização, selecione um anel e, em seguida, no separador <*nome do anel*>, escolha **Atribuições**.
-2. No separador seguinte, escolha **Selecionar grupos** e, em seguida, selecione os grupos para os quais pretende atribuir este anel.
+2. No separador seguinte, selecione **Selecionar grupos a incluir** e, em seguida, selecione os grupos para os quais pretende atribuir este anel.
 3. Quando tiver terminado, selecione **Selecionar** para concluir a atribuição.
 
 ## <a name="update-compliance-reporting"></a>Relatórios de conformidade de atualização
@@ -108,22 +109,21 @@ Pode ver a conformidade de atualizações no Intune ou através de uma solução
 ### <a name="review-update-compliance-in-intune"></a>Rever a conformidade de atualizações no Intune 
 <!-- 1352223 -->
 Reveja um relatório das políticas para ver o estado de implementação das cadências de atualização do Windows 10 que configurou. 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Atualizações de Software**.
-4. No painel **Atualizações de Software**, selecione **Descrição Geral**. Aqui, poderá ver informações gerais sobre o estado de qualquer cadência de atualizações que tenha atribuído.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Atualizações de software**.
+4. No painel **Atualizações de software**, selecione **Descrição Geral**. Aqui, poderá ver informações gerais sobre o estado de qualquer cadência de atualizações que tenha atribuído.
 5. Abra um dos seguintes relatórios: 
      
    **Para todas as cadências de implementação:**
-   1. Em **Atualizações de software** > painel **Cadências de Atualização do Windows 10**. 
+   1. No painel **Atualizações de software** > **Cadências de Atualização do Windows 10**. 
    2. Na secção **Monitorizar**, selecione **Por estado de implementação da cadência de atualização**.
                    
    **Para cadências de implementação específicas:** 
-   1. Em **Atualizações de software** > painel **Cadências de Atualização do Windows 10**, selecione a cadência de implementação a analisar.
+   1. No painel **Atualizações de software** > **Cadências de Atualização do Windows 10**, selecione a cadência de implementação a analisar.
    2. Na secção **Monitorizar**, selecione um dos seguintes relatórios para ver informações mais detalhadas sobre a cadência de atualização:
-      - **Implementação da cadência de atualização para dispositivos**
-      - **Implementação da cadência de atualização para utilizadores**
-      - **Estado da implementação por definição**
+      - **Estado do dispositivo**
+      - **Estado de utilizador**
 
 ### <a name="review-update-compliance-using-oms"></a>Rever a conformidade de atualizações com o OMS
 Pode monitorizar as implementações de atualizações do Windows 10 através de uma solução gratuita no Operations Management Suite (OMS) denominada Compatibilidade da Atualização. Para obter mais detalhes, veja [Monitor Windows Updates with Update Compliance (Monitorizar Atualizações do Windows com a Compatibilidade da Atualização)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando utiliza esta solução, pode implementar um ID comercial em qualquer um dos seus dispositivos com o Windows 10 geridos pelo Intune para os quais pretende gerar relatórios sobre a compatibilidade da atualização.
@@ -136,19 +136,19 @@ Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou ed
 
 - **Nome da Definição**: ID Comercial do Windows Analytics
 - **Descrição da Definição**: configurar o ID comercial para soluções do Windows Analytics
-- **Tipo de Dados:** cadeia
 - **OMA-URI** (sensível às maiúsculas e minúsculas): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Tipo de Dados:** cadeia
 - **Valor**: <*utilizar o GUID apresentado no separador Telemetria do Windows na sua área de trabalho OMS*>
 
 ![Definição do Windows para os dados de diagnóstico e utilização](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Como colocar atualizações em pausa
 Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atualizações de Qualidade num dispositivo durante um período máximo de 35 dias desde o momento em que colocou as atualizações em pausa. Após ter decorrido o número máximo de dias, a funcionalidade de pausa irá automaticamente expirar e o dispositivo irá procurar atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente.
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Atualizações de Software**.
-4. No painel **Atualizações de Software**, escolha **Gerir** > **Anéis de Atualização do Windows 10**.
-5. No painel que mostra a lista de anéis de atualização, escolha o anel que quer colocar em pausa e, em seguida, escolha **...**  > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Atualizações de software**.
+4. No painel **Atualizações de software**, selecione **Gerir** > **Cadências de Atualização do Windows 10**.
+5. No painel que mostra a lista de cadências de atualização, selecione a cadência que quer colocar em pausa e, em seguida, selecione **...**  > **Colocar em Pausa Atualizações de Qualidade** > ou **Colocar em Pausa Atualizações de Funcionalidades**, dependendo do tipo de atualizações que quer colocar em pausa.
 
 > [!IMPORTANT]
 > Quando emitir um comando de pausa, os dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo.

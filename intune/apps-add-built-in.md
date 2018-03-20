@@ -1,12 +1,12 @@
 ---
-title: "Adicionar aplicações incorporadas a dispositivos móveis com o Intune"
-titlesuffix: Azure portal
+title: "Adicionar aplicações incorporadas a dispositivos móveis com o Microsoft Intune"
+titlesuffix: 
 description: "Saiba como pode utilizar o Intune para facilitar a instalação de aplicações incorporadas em dispositivos móveis."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d622f2cb8c6b3e8c9aace4e805108ccfa71eb4d2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 7d90f86babc2f73acd5ccd1b454c636c6d4f79b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-built-in-apps-to-microsoft-intune"></a>Como adicionar aplicações incorporadas ao Microsoft Intune
 
@@ -52,7 +52,7 @@ Pode modificar as informações da aplicação incorporada. Estas informações 
 3.  Selecione a opção **Configurar** para modificar as informações da aplicação incorporada.
 4.  No painel **Informações da aplicação**, pode modificar as seguintes informações:
     -   **Nome** – introduza o nome da aplicação incorporada tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
-    -   **Descrição** – Introduza uma descrição para a aplicação. 
+    -   **Descrição** - Introduza uma descrição para a aplicação. 
     -   **Publicador** – Introduza o nome do publicador da aplicação.
     -   **Categoria** – opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas. Esta opção permite que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
     -   **Apresentar esta aplicação em destaque no Portal da Empresa** – Apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
@@ -67,4 +67,4 @@ Pode modificar as informações da aplicação incorporada. Estas informações 
 
 ## <a name="next-steps"></a>Próximos passos
 
-Agora pode atribuir as aplicações aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
+- Agora pode atribuir as aplicações aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
