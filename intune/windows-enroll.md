@@ -1,7 +1,7 @@
 ---
-title: Inscrever dispositivos Windows
-titlesuffix: Azure portal
-description: "Ative a gestão de dispositivos móveis (MDM) do Intune para dispositivos Windows."
+title: "Configurar a inscrição para dispositivos Windows com o Microsoft Intune"
+titlesuffix: 
+description: "Configure a inscrição para dispositivos Windows."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +15,13 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fea5a61da77a3f96e006ee9ceb4ec3d8de645072
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 21849cd4bb1c77334fdc3e9e347365a25ab4df2d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enroll-windows-devices"></a>Inscrever dispositivos Windows
+# <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

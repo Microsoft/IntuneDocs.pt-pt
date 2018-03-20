@@ -1,12 +1,12 @@
 ---
 title: "Como adicionar aplicações Web ao Intune"
-titleSuffix: Azure portal
-description: "Saiba mais sobre adicionar aplicações Web ao Intune.\""
+titleSuffix: 
+description: "Saiba como adicionar aplicações Web ao Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,29 +15,31 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cfa70879a460826d22eb6fab2e0d08603e567d6e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ecb44f8b98501f6c82f91994cd8a06b8177208d7
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-web-apps-to-microsoft-intune"></a>Como adicionar aplicações Web ao Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Antes de poder gerir e atribuir uma aplicação aos utilizadores, adicione-a ao Intune. O Intune suporta uma variedade de tipos de aplicações, incluindo aplicações Web.
+O Intune suporta uma variedade de tipos de aplicações, incluindo aplicações Web. Uma aplicação Web é uma aplicação de servidor de cliente. O servidor proporciona a aplicação Web, que inclui a IU, conteúdos e funcionalidades. Além disso, normalmente as plataformas de alojamento na Web modernas oferecem segurança, balanceamento de carga e outras vantagens. A manutenção de uma aplicação Web é feita separadamente na Web. Tem de utilizar o Microsoft Intune para apontar para este tipo de aplicação. Também tem de designar que grupos de utilizadores podem aceder a esta aplicação. 
+
+Antes de poder gerir e atribuir uma aplicação aos utilizadores, adicione-a ao Intune. O Intune cria um atalho para a aplicação Web no ecrã principal do dispositivo do utilizador.
 
 > [!Note]
-> As aplicações Web não são suportadas nos dispositivos Android for Work.
+> As aplicações Web não são suportadas nos dispositivos Android for Work e macOS.
 
 Conclua os seguintes passos para adicionar uma aplicação ao Intune como um atalho para uma aplicação na Web:
 
-1. Inicie sessão no portal do Azure.
-2. Através de **Mais recursos**, procure e selecione **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Microsoft Intune**, selecione **Aplicações móveis**.
 4. No painel **Aplicações móveis**, selecione **Aplicações**.
 5. Acima da lista de aplicações, selecione **Adicionar**. O painel **Adicionar aplicação** é apresentado.
-6. No painel **Adicionar aplicação**, selecione **Aplicação Web** na lista pendente **Tipo de aplicação**.
+6. No painel **Adicionar aplicação**, selecione **Hiperligação da Web** na lista pendente **Tipo de aplicação**.
 7. Selecione a opção **Configurar** para apresentar o painel **Informações da aplicação**.
 8. No painel **Informações da aplicação**, adicione as informações seguintes:
     - **Nome** – introduza o nome da aplicação tal como deve ser apresentado no portal da empresa.
@@ -51,4 +53,9 @@ Conclua os seguintes passos para adicionar uma aplicação ao Intune como um ata
 9. Quando tiver terminado, no painel **Adicionar informações**, selecione **OK**.
 10. Em seguida, no painel **Adicionar aplicação**, selecione **Adicionar**.
 
-A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
+> [!Note]
+> Os utilizadores têm de adicionar o widget do Intune ao ecrã principal para apresentar aplicações Web que tenham sido atribuídas a dispositivos Android.
+
+## <a name="next-steps"></a>Próximos passos
+
+- A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).

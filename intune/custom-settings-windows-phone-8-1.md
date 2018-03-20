@@ -1,27 +1,25 @@
 ---
-title: "Definições personalizadas do Intune para dispositivos Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Saiba quais são as definições que pode utilizar num perfil personalizado do Windows Phone 8.1.\""
+title: "Definições personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1"
+titleSuffix: 
+description: "Saiba quais são as definições que pode utilizar num perfil personalizado do Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbe76f454575d9f09617b12e3811b0c7d5a75ca1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Definições personalizadas para dispositivos Windows Phone 8.1 no Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Definições do dispositivo personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,12 +30,12 @@ Esta capacidade destina-se a permitir a atribuição de definições que não s�
 ## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Definições de políticas personalizadas para dispositivos Windows Phone 8.1
 
 1. Utilize as instruções em [Como configurar definições personalizadas dos dispositivos no Microsoft Intune](custom-settings-configure.md) para começar.
-2. No painel **Criar Perfil**, escolha **Definições** para adicionar uma ou mais definições OMA-URI.
+2. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar** para adicionar uma ou mais definições OMA-URI.
 3. No painel **Adicionar Linha**, configure os seguintes valores para cada definição:
     - **Nome** – Introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
     - **Descrição** – Introduza uma descrição geral da definição e outras informações relevantes para o ajudar a localizá-la.
     - **OMA-URI** – Especifique o OMA-URI para o qual pretende fornecer uma definição.
-    - **Tipo de dados** – Selecione o tipo de dados em que especificará esta definição OMA-URI. Escolha entre **Cadeia**, **Data e hora**, **Número inteiro**, **Vírgula flutuante** ou **Booleano**.
-    - **Valor** – Introduza o valor que quer associar ao OMA-URI que introduziu.
+    - **Tipo de dados** – selecione o tipo de dados nos quais especificar esta definição OMA-URI. Selecione entre **Cadeia**, **Cadeia (XML)**, **Data e hora**, **Número inteiro**, **Vírgula flutuante**, **Booleano** ou **Base64**.
+    - **Valor** – introduza o valor ou ficheiro que pretende associar ao OMA-URI que introduziu.
 
 4. Clique em **OK** quando tiver terminado e, em seguida, continue a adicionar mais definições, conforme necessário.

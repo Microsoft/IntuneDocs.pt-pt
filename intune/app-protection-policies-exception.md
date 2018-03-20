@@ -1,6 +1,6 @@
 ---
 title: "Exceções da política de transferência de dados para aplicações"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "Crie exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune."
 keywords: 
 author: Erikre
@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b24060d1b042322f1c7607aba7266421a0effc52
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: e1e37e78f7272b0f53f974eccb20c7e02574a9a9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune
 
@@ -47,7 +47,7 @@ Adicionar o pacote **WebEx** como uma exceção à politica de transferência de
 
 - Exemplo de **WebEx** em Android: para isentar a aplicação **WebEx** de forma a que esta tenha permissão para ser invocada pelas aplicações geridas do Intune, tem de adicionar uma exceção de transferência de dados para a seguinte cadeia: <code>com.cisco.webex.meetings</code>. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Criar e implementar políticas de proteção de aplicações](app-protection-policies.md)
 - [Definições de políticas de proteção de aplicações iOS – isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions)

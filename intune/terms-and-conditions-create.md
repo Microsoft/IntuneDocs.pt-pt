@@ -1,12 +1,12 @@
 ---
 title: "Definir termos e condições no Microsoft Intune"
-titlesuffix: Azure portal
-description: "Defina os termos e condições que os utilizadores veem no Portal da Empresa do Intune. "
+titlesuffix: 
+description: "Defina os termos e condições que os utilizadores veem no Portal da Empresa do Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df7f91cbdcbafb785d0c4cfb1612d6c2f9e5581e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="ensure-users-accept-company-terms-for-access"></a>Certifique-se de que os utilizadores aceitam os termos da empresa para o acesso
+# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Gerir os termos e condições da sua empresa para o acesso dos utilizadores
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,7 +32,9 @@ Pode criar vários conjuntos de termos e atribuí-los a diferentes grupos, tal c
 ## <a name="create-terms-and-conditions"></a>Criar termos e condições
 Conclua estes passos para criar os termos e condições. O nome a apresentar e a descrição são para utilização administrativa enquanto as propriedades dos termos são apresentadas aos utilizadores no Portal da Empresa.
 
-1. No portal do Azure, escolha **Inscrição de dispositivos** e, em seguida, **Termos e Condições**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Inscrição de dispositivos** e, em seguida, selecione **Termos e Condições**.
 2. Selecione **Criar**.
 ![Captura de ecrã do portal do Azure a mostrar o botão Criar dos termos e condições](media/terms-create-terms.png)
 3. No painel expandido, especifique as seguintes informações:
@@ -41,7 +43,7 @@ Conclua estes passos para criar os termos e condições. O nome a apresentar e a
 
    - **Descrição**: detalhes opcionais que ajudam a identificar este conjunto de termos no Portal do Azure.
 
-4. Selecione a seta junto a Definir termos de utilização para a abrir o painel Termos e Condições e, em seguida, introduza as seguintes informações:
+4. Selecione a seta junto a **Definir termos de utilização** para abrir o painel Termos e Condições e, em seguida, introduza as seguintes informações:
 
    ![Captura de ecrã do ecrã de aceitação dos termos e condições do utilizador final com um resumo dos termos](./media/terms-summary-create.png)
 
@@ -65,23 +67,24 @@ O exemplo a seguir mostra os termos e as condições na consola de administraç�
 Pode atribuir termos e condições a grupos de utilizadores que devem aceitá-los antes de utilizar o Portal da Empresa.
 
 1. No portal do Azure, escolha **Inscrição de dispositivos** e, em seguida, **Termos e Condições**.
-2. Na lista de termos e condições, selecione os termos que pretende atribuir e, em seguida, selecione **Grupos Atribuídos**.
+2. Na lista de termos e condições, selecione os termos que pretende atribuir e, em seguida, selecione **Gerir** > **Atribuições**.
 ![Captura de ecrã do painel Atribuir Grupo do portal do Azure a mostrar os botões Selecionar Grupo e Selecionar para a atribuição dos termos e condições](media/terms-assign-groups.png)
-3. Clique no botão **Selecionar Grupo** e, no painel **Selecionar Grupos**, selecione os grupos aos quais pretende atribuir os termos e, em seguida, clique em **Selecionar**. Não pode atribuir Termos e Condições aos grupos dinâmicos.
+3. Clique em **Selecionar grupos para incluir** e selecione os grupos aos quais pretende atribuir os termos e, em seguida, clique em **Selecionar**. Não pode atribuir Termos e Condições aos grupos dinâmicos.
 4. No painel **Grupos Atribuídos**, clique em **Guardar**.  Os termos e condições estão agora atribuídos aos utilizadores nos grupos selecionados. Será pedido aos utilizadores que aceitem os termos da próxima vez que acederem ao portal da empresa. Os termos e condições só precisam de ser aceites uma vez. Os utilizadores com vários dispositivos não precisam de aceitar em cada dispositivo.
 
 
 ## <a name="monitor-terms-and-conditions"></a>Monitorizar os termos e as condições
 
-1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**. No painel Intune, escolha **Inscrição de dispositivos** e, em seguida, escolha **Termos e Condições**.
-2. Na lista de termos e condições, selecione os termos nos quais pretende ver a aceitação e, em seguida, selecione **Estados de Aceitação**.
+1. No portal do Azure, selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**. 
+1. No painel Intune, selecione **Inscrição de dispositivos** e, em seguida, selecione **Termos e Condições**.
+2. Na lista de termos e condições, selecione os termos nos quais pretende ver a aceitação e, em seguida, selecione **Relatórios de Aceitação**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Trabalhar com múltiplas versões de termos e condições
 Pode editar os seus termos e condições e gerir as respetivas versões. Recomendamos que aumente o número da versão e solicite a aceitação sempre que efetua alterações significativas nos seus termos e condições. Mantenha o número da versão atual se, por exemplo, estiver a corrigir erros de digitação ou a alterar a formatação.
 
-1. No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. No portal do Azure, selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2. No painel Intune, escolha **Inscrição de dispositivos**, depois, **Termos e Condições**, selecione os termos e condições que pretende modificar e, em seguida, selecione **Propriedades**.
+2. No painel Intune, selecione **Inscrição de dispositivos**, selecione **Termos e Condições**, selecione os termos e condições que pretende modificar e, em seguida, selecione **Propriedades**.
 
 4. No painel **Propriedades**, selecione **Termos e Condições** e, em seguida, modifique o **Título**, **Resumo dos Termos** e **Termos e Condições**, conforme necessário. Se as alterações que efetuou tornam necessário aos utilizadores aceitar novamente os novos termos, clique em **Exigir que os utilizadores voltem a aceitar e incrementar o número de versão**
 

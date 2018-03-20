@@ -1,11 +1,12 @@
 ---
-title: "Modelo de dados do Armazém de Dados | Documentos da Microsoft"
-description: "O Armazém de Dados do Intune copia dados diariamente para fornecer uma apresentação do histórico do seu ambiente móvel em contínua mudança."
+title: "Modelo de dados do Armazém de Dados"
+titlesuffix: Microsoft Intune
+description: "O Armazém de Dados do Microsoft Intune copia dados diariamente para fornecer uma apresentação do histórico do seu ambiente móvel em contínua mudança."
 keywords: "Armazém de Dados do Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados
 
-O Armazém de Dados do Intune copia dados diariamente para fornecer uma apresentação do histórico do ambiente de dispositivos móveis em contínua mudança. A apresentação é composta por coisas relacionados no tempo.
+O Armazém de Dados do Intune copia dados diariamente para fornecer uma apresentação do histórico do ambiente de dispositivos móveis em contínua mudança. A apresentação é composta por entidades relacionadas no tempo.
 
-## <a name="things-entity-sets"></a>Coisas: conjuntos de entidades
+## <a name="entities-entity-sets"></a>Entidades: conjuntos de entidades
 
 O armazém expõe dados nas seguintes áreas de nível superior:
 
@@ -33,7 +34,7 @@ O armazém expõe dados nas seguintes áreas de nível superior:
   -  Inventário de aplicações e software
   -  Políticas de conformidade e de configuração de dispositivos
 
-Estas áreas contêm as entidades, ou coisas, com significado para o ambiente do Intune. Encontrará detalhes sobre os conjuntos de entidades nos seguintes tópicos:
+Estas áreas contêm as entidades com significado para o ambiente do Intune. Encontrará detalhes sobre os conjuntos de entidades nos seguintes tópicos:
 
   -  [Aplicação](reports-ref-application.md)
   -  [Data](reports-ref-date.md)

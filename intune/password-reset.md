@@ -1,22 +1,22 @@
 ---
 title: "Reduzir os custos do suporte técnico"
+titlesuffix: Microsoft Intune
 description: "Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service"
 keywords: "Reposição de palavra-passe SSPR do Azure Active Directory"
-author: arob98
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 08/27/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
-ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e2bd79e33080a0cc402d38f45b72ddbe9fd7816b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service
 
@@ -34,7 +34,7 @@ Pode permitir que os funcionários reponham as palavras-passe das contas escolar
 
 ## <a name="next-steps"></a>Próximos passos
 
-Saiba mais sobre os seguintes tópicos:
+Saiba mais sobre os seguintes artigos:
 * [Melhores práticas de palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licenciamento de reposição de palavra-passe self-service](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

@@ -1,29 +1,30 @@
 ---
-title: "Restrição de dispositivos no Intune para dispositivos Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Saiba quais são as definições do Intune que pode utilizar para controlar as definições dos dispositivos e a funcionalidade em dispositivos Windows Phone 8.1.\""
+title: "Definições de restrição de dispositivos no Microsoft Intune para dispositivos Windows Phone 8.1"
+titleSuffix: 
+description: "Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Definições de restrição de dispositivos Windows Phone 8.1 no Microsoft Intune
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Definições de restrição de dispositivos Windows Phone 8.1 no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Este artigo mostra-lhe as definições de restrição de dispositivos do Microsoft Intune que pode configurar para dispositivos Windows Phone 8.1.
+
 
 ## <a name="general"></a>Geral
 
@@ -38,8 +39,8 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="password"></a>Palavra-passe
 
--   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
-    -   **Tipo obrigatório de palavra-passe** – Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.
+-   **Palavra-passe** – Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
+    -   **Tipo de palavra-passe necessária** – Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.
     -   **Comprimento mínimo da palavra-passe** – Especifica o número mínimo de carateres necessários na palavra-passe.
     -   **Palavras-passe simples** – Especifica que se pode utilizar palavras-passe simples, como “0000” e “1234”.
     -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Especifica o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de os dados do dispositivo serem eliminados.
@@ -69,13 +70,13 @@ Na página [Loja Windows Phone](https://www.microsoft.com/store/apps/windows-pho
 
 Abra a página da aplicação e copie o URL para a área de transferência. Agora, pode utilizar este URL na lista de aplicações permitidas ou bloqueadas.
 
-Exemplo: procure a aplicação Skype na loja. O URL a utilizar será **http://www.windowsphone.com/pt-pt/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Exemplo: procure a aplicação Skype na loja. O URL a utilizar será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 
 ### <a name="additional-options"></a>Opções adicionais
 
-Também pode clicar em **Importar** para preencher a lista a partir de um ficheiro csv, no formato <*url da aplicação*>, <*nome da aplicação*>, <*publicador da aplicação*> ou clicar em **Exportar** para criar um ficheiro csv que contenha o conteúdo da lista de aplicações restritas no mesmo formato.
+Também pode clicar em **Importar** para preencher a lista a partir de um ficheiro csv, no formato <*url da aplicação*>, <*nome da aplicação*>, <app publisher> ou clicar em **Exportar** para criar um ficheiro csv que inclua o conteúdo da lista de aplicações restritas no mesmo formato.
 
 
 ## <a name="browser"></a>Browser

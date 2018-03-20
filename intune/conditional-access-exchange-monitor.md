@@ -1,12 +1,12 @@
 ---
-title: Monitorizar a compatibilidade de acesso condicional no Exchange Online e no Exchange no local
-titlesuffix: Azure portal
-description: "Monitorizar a compatibilidade de acesso condicional no Exchange Online e no Exchange no local através do portal do Azure no Intune"
+title: Monitorizar o acesso condicional do Exchange no Microsoft Intune
+titlesuffix: 
+description: "Monitorize a conformidade do acesso condicional do Exchange Online e no Exchange no local através do portal do Azure no Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorizar a conformidade de acesso condicional no Exchange Online e no Exchange no local no Intune
 
@@ -36,23 +36,23 @@ A partir da versão 1704 do Intune, os administradores podem ver informações d
 
 2.  Depois de iniciar sessão com êxito, verá o **Dashboard do Azure**.
 
-3.  Selecione **Mais serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+3.  Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
 4.  Escolha **Intune**, será apresentado o **Dashboard do Intune**.
 
-5.  Escolha **Acesso Condicional** e, em seguida, escolha **Descrição Geral**.
+5.  Selecione **Acesso condicional** e, em seguida, selecione **Descrição Geral**.
 
-6.  Escolha uma das três áreas (**Bloqueado**, **Quarentena** ou **Permitido**) no gráfico para ver os relatórios de conformidade de acesso condicional.
+6.  Selecione uma das três áreas (**Permitido**, **Bloqueado** ou **Quarentena**) no gráfico para ver os relatórios de conformidade de acesso condicional.
 
-    ![Dashboard de Acesso Condicional](./media/CA-reporting-intune-1.png)
+    ![Imagem do Dashboard de Acesso Condicional](./media/CA-reporting-intune-1.png)
 
-Assim que escolher uma das três áreas, pode ver mais detalhes sobre os dispositivos que estão a ser permitidos, bloqueados ou colocados em quarentena.
+Assim que escolher uma das três áreas, poderá ver mais detalhes sobre os dispositivos que estão a ser permitidos, bloqueados ou colocados em quarentena.
 
-Também pode consultar mais detalhes nos dispositivos específicos. Por exemplo, o dispositivo selecionado na imagem abaixo está bloqueado. O Intune dá-lhe a opção de remoção dos dados da empresa a partir do painel do relatório de compatibilidade de acesso condicional.
+Também pode consultar mais detalhes nos dispositivos específicos. Por exemplo, o dispositivo selecionado na imagem seguinte está bloqueado. O Intune dá-lhe a opção de remover os dados da empresa a partir do painel do relatório de compatibilidade de acesso condicional.
 
-![Relatórios de detalhes de dispositivos de acesso condicional](./media/CA-reporting-intune-3.png)
+![Imagem de relatórios de detalhes de dispositivos de Acesso condicional](./media/CA-reporting-intune-3.png)
 
-No painel de detalhes do dispositivo, pode ver mais informações:
+No painel Detalhes do dispositivo, pode ver mais informações:
 
 -   **Descrição geral:** pode ver as propriedades dos dispositivos como: versão do SO, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e a última vez que o dispositivo deu entrada.
 
