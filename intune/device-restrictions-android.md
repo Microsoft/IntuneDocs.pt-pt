@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Definições de restrição de dispositivos do Microsoft Intune para Android e Samsung Knox Standard 
 
@@ -144,7 +144,7 @@ Para cada definição, configure uma lista de aplicações através de um dos se
 
 As definições de modo de local público aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo.
+- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de local público, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.
@@ -152,6 +152,6 @@ As definições de modo de local público aplicam-se apenas a dispositivos Samsu
 - **Botões de volume** - Ativa ou desativa a utilização dos botões de volume no dispositivo.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a seguir as instruções em [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para criar e atribuir o perfil de restrição de dispositivos.

@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
-Este artigo mostra-lhe todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Este artigo mostra-lhe as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos iOS.
+
 ## <a name="general"></a>Geral
 
+-   **Partilhar dados de utilização** – permitir ou bloquear o dispositivo de enviar dados telemétricos de diagnóstico e utilização para a Apple.
 -   **Submissão de dados de diagnóstico** – Permita ou impeça que o dispositivo submeta dados de diagnóstico à Apple.
 -   **Captura de ecrã** – Permita ao utilizador capturar o conteúdo do ecrã como uma imagem.
     - **Observação remota do ecrã através da aplicação Classroom (apenas supervisionado)** – permita ou bloqueie a visualização do ecrã de dispositivos iOS por parte da aplicação Classroom da Apple.
@@ -213,8 +215,8 @@ Também pode clicar em **Importar** para preencher a lista a partir de um fichei
 -   **Adira a redes Wi-Fi apenas com perfis de configuração (apenas supervisionado)** – permita que o dispositivo se ligue apenas a redes Wi-Fi configuradas com um perfil Wi-Fi do Intune.
 
 - **Regras de utilização de rede móvel (apenas aplicações geridas)** – permite-lhe definir os tipos de dados que as aplicações geridas podem utilizar em redes móveis. Escolha entre:
-    - **Bloquear a utilização de dados via rede móvel**
-    - **Bloquear a utilização de dados via rede móvel ao efetuar o roaming**
+    - **Bloquear a utilização de dados via rede móvel** – pode bloquear a utilização de dados via rede móvel para ** Todas as aplicações geridas* * ou **Escolher aplicações específicas**.
+    - **Bloquear a utilização de dados via rede móvel ao efetuar o roaming** – pode bloquear a utilização de dados via rede móvel ao efetuar o roaming para ** Todas as aplicações geridas* * ou **Escolher aplicações específicas**.
 
 ## <a name="connected-devices"></a>Dispositivos Ligados
 
@@ -326,7 +328,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
     -   **Controlo de zoom** – Ative ou desative os ajustes do zoom, o que permite ao utilizador ajustar a função zoom.
 
 >[!NOTE]
-> Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Registo de Aparelho da Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
+> Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 >Se a aplicação iOS que especificou for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
 
 ## <a name="safari"></a>Safari

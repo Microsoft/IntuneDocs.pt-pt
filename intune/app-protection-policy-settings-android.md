@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações Android
 Este tópico descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -73,7 +73,7 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
   | com.android.providers.media | Fornecedor de conteúdos multimédia do Android | O fornecedor de conteúdos multimédia só tem permissão para a ação de seleção de toque. |
   | com.google.android.gms; com.google.android.gsf | Pacotes dos Serviços do Google Play | Estes pacotes têm permissão para ações do Google Cloud Messaging, tal como notificações push. |
 
-Para obter mais informações, veja [Data transfer policy exceptions for apps](app-protection-policies-exception.md) (Exceções da política de transferência de dados). 
+Para obter mais informações, veja [Data transfer policy exceptions for apps](app-protection-policies-exception.md) (Exceções da política de transferência de dados).
 
 ##  <a name="access-settings"></a>Definições de acesso
 
@@ -88,7 +88,10 @@ Para obter mais informações, veja [Data transfer policy exceptions for apps](a
 | **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
 | **Exigir sistema operativo Android mínimo** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O acesso do utilizador será bloqueado se a versão Android no dispositivo não cumprir os requisitos.<br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não |
 | **Exigir sistema operativo Android mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão Android no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision. | Não |
-| **Exigir versão mínima da aplicação** | Escolha **Sim** para exigir uma versão mínima para utilizar a aplicação. O acesso do utilizador será bloqueado se a versão da aplicação no dispositivo não cumprir os requisitos.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não | 
-| **Exigir versão mínima da aplicação (apenas aviso)** | Escolha **Sim** para recomendar uma versão mínima para utilizar esta aplicação. O utilizador verá uma notificação se a versão da aplicação no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não | 
+| **Exigir versão mínima da aplicação** | Escolha **Sim** para exigir uma versão mínima para utilizar a aplicação. O acesso do utilizador será bloqueado se a versão da aplicação no dispositivo não cumprir os requisitos.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não |
+| **Exigir versão mínima da aplicação (apenas aviso)** | Escolha **Sim** para recomendar uma versão mínima para utilizar esta aplicação. O utilizador verá uma notificação se a versão da aplicação no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não |
 | **É Necessária a Versão de Patch Android Mínima** | Selecione **Sim** para pedir uma correção de segurança do Android mínima lançada pela Google. O acesso do utilizador será bloqueado se a correção de segurança do Android no dispositivo não cumprir os requisitos.<br><br> Este formato de definição de políticas suporta o formato de data AAAA-MM-DD. | Não |
 | **É Necessária a Versão de Patch Android Mínima (Apenas aviso)** | Selecione **Sim** para pedir uma correção de segurança do Android mínima lançada pela Google. O utilizador verá uma notificação se a correção de segurança do Android no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br> Este formato de definição de políticas suporta o formato de data AAAA-MM-DD. | Não |
+
+> [!NOTE]
+> Para saber mais sobre como as definições de proteção de aplicações do Intune, configuradas na secção de Acesso para o mesmo conjunto de aplicações e utilizadores, funcionam no Android, veja [Perguntas mais frequentes sobre a MAM do Intune](mam-faq.md).

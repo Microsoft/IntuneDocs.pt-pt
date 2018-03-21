@@ -1,10 +1,10 @@
 ---
-title: Acesso condicional com o Intune
-titlesuffix: Azure portal
-description: Formas comuns de utilizar o acesso condicional com o Intune
+title: Acesso condicional com o Microsoft Intune
+titlesuffix: 
+description: "Saiba como o acesso condicional do Intune é geralmente utilizado para acesso condicional baseado no dispositivo e baseado na aplicação."
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>Formas comuns de utilizar o acesso condicional com o Intune
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Existem dois tipos principais de acesso condicional com o Intune. O acesso condicional baseado no dispositivo é o primeiro tipo. O acesso condicional baseado na aplicação é o segundo tipo. Precisa de configurar as políticas de conformidade relacionadas para promover a conformidade de acesso condicional na sua organização.
+Existem dois tipos de acesso condicional com o Intune: acesso condicional baseado no dispositivo e acesso condicional baseado na aplicação. Precisa de configurar as políticas de conformidade relacionadas para promover a conformidade de acesso condicional na sua organização. O acesso condicional é normalmente utilizado para fazer coisas como permitir ou bloquear o acesso ao Exchange no local, controlar o acesso à rede ou integrar com uma solução de Defesa Contra Ameaças para Dispositivos Móveis.
 
 As informações abaixo ajudam-no a compreender como utilizar as funcionalidades de conformidade de *dispositivos móveis* do Intune e as funcionalidades de gestão (MAM) de *aplicações móveis* do Intune. 
 
@@ -143,7 +143,7 @@ O Intune e o Azure Active Directory funcionam em conjunto para garantir que apen
 
 -   Saiba mais sobre o [acesso condicional com base na aplicação com o Intune](app-based-conditional-access-intune.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Como configurar o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 

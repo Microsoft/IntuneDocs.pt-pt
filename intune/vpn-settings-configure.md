@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Como configurar as definições de VPN no Microsoft Intune
 
@@ -37,7 +37,7 @@ Pode criar perfis VPN com os seguintes tipos de ligação:
 |Cisco (IPSec)|Não|Sim|Não|Não|Não|Não|
 |Citrix|Sim|Sim|Não|Não|Não|Sim|
 |F5 Edge Client|Sim|Sim|Sim|Sim|Sim|Sim|
-|Dell SonicWALL Mobile Connect|Sim|Sim|Sim|Sim|Sim|Sim|
+|SonicWall Mobile Connect|Sim|Sim|Sim|Sim|Sim|Sim|
 |Check Point Capsule VPN|Sim|Sim|Sim|Sim|Sim|Sim|
 |Cisco AnyConnect|Sim|Sim|Sim|Não|Não|Não|
 |Automático|Não|Não|Não|Não|Não|Sim|
@@ -54,12 +54,12 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar perfis
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Criar um perfil de dispositivo com as definições de VPN
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Configuração do dispositivo**.
-2. No painel **Configuração do Dispositivo**, escolha **Gerir** > **Perfis**.
-3. No painel de perfis, escolha **Criar Perfil**.
-4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de VPN.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, selecione **Gerir** > **Perfis**.
+3. No painel de perfis, selecione **Criar perfil**.
+4. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de VPN.
 5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições de VPN. Atualmente, pode escolher uma das seguintes plataformas para as definições de dispositivos VPN:
     - **Android**
     - **Android for Work**
@@ -76,7 +76,7 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar perfis
     - [Definições do Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
     - [Definições do Windows 8.1](vpn-settings-windows-8-1.md)
     - [Definições do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
-8. Quando tiver terminado, volte ao painel **Criar Perfil** e clique em **Criar**.
+8. Quando tiver terminado, volte ao painel **Criar perfil** e selecione **Criar**.
 
 O perfil é criado e apresentado no painel da lista de perfis.
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

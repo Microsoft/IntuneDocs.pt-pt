@@ -1,7 +1,7 @@
 ---
-title: "Defesa Contra Ameaças a Dispositivos Móveis com o Intune"
-titleSuffix: Azure portal
-description: Proteger o acesso aos recursos da empresa com base no risco do dispositivo
+title: "Defesa Contra Ameaças para Dispositivos Móveis com o Microsoft Intune"
+titleSuffix: 
+description: "Utilize a Defesa Contra Ameaças para Dispositivos Móveis (MTD) do Intune em conjunto com o seu parceiro de Defesa Contra Ameaças para Dispositivos Móveis para proteger o acesso aos recursos empresariais com base no risco dos dispositivos."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>Integração da Defesa Contra Ameaças a Dispositivos Móveis com o Intune
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa Contra Ameaças para Dispositivos Móveis com o Intune?
 
 
 Os conectores de Defesa Contra Ameaças para Dispositivos Móveis do Intune permitem-lhe recorrer ao seu fornecedor de Defesa Contra Ameaças para Dispositivos Móveis escolhido como uma fonte de informações sobre as suas políticas de conformidade e regras de acesso condicional. Isto permite aos administradores de TI adicionar uma camada de segurança aos recursos da sua empresa, como o Exchange e o SharePoint, em particular a partir de dispositivos móveis comprometidos.
@@ -32,7 +32,7 @@ As empresas precisam de proteger os dados confidenciais de ameaças emergentes q
 
 Historicamente, as empresas sempre foram proativas ao proteger os PCs contra ataques, enquanto os dispositivos móveis permanecem não monitorizados e desprotegidos. As plataformas móveis têm proteção incorporada, como o isolamento de aplicações e lojas de aplicações de clientes avaliadas, mas estas plataformas permanecem vulneráveis a ataques sofisticados. Hoje em dia, os funcionários utilizam cada vez mais os dispositivos para trabalhar e precisam de aceder a informações confidenciais. Os dispositivos têm de ser protegidos contra ataques cada vez mais sofisticados.
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Como funcionam os conectores de Defesa Contra Ameaças para Dispositivos Móveis do Intune?
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Como é que os conectores da Defesa Contra Ameaças para Dispositivos Móveis do Intune funcionam?
 
 Os conectores protegem os recursos da empresa ao criar um canal de comunicação entre o Intune e o seu fornecedor de Defesa Contra Ameaças para Dispositivos Móveis escolhido. Os parceiros de Defesa Contra Ameaças Para Dispositivos Móveis do Intune oferecem aplicações intuitivas e fáceis de implementar para dispositivos móveis, que detetam e analisam ativamente as informações sobre ameaças a serem partilhadas com o Intune, quer para efeitos de imposição ou para enviar relatórios. 
 
@@ -58,11 +58,11 @@ Os inventários de dispositivos iOS pessoais ou empresariais com o iOS 11 ou uma
 
 Quando um dispositivo é considerado infetado pela solução de Defesa Contra Ameaças para Dispositivos Móveis:
 
-![Dispositivo considerado infetado pela Defesa Contra Ameaças para Dispositivos Móveis](./media/MTD-image-1.png)
+![Imagem a mostrar um dispositivo infetado com a Defesa Contra Ameaças para Dispositivos Móveis](./media/MTD-image-1.png)
 
 O acesso será concedido quando o dispositivo for remediado:
 
-![Acesso à Defesa Contra Ameaças para Dispositivos Móveis concedido](./media/MTD-image-2.png)
+![Imagem a mostrar o acesso concedido pela Defesa Contra Ameaças para Dispositivos Móveis](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > Não é suportada a utilização de múltiplos fornecedores de Defesa Contra Ameaças para Dispositivos Móveis com o Intune. Ter múltiplas ferramentas MTD ativadas irá forçar a instalação de todas as aplicações MTD, bem como a análise de ameaças entre dispositivos.

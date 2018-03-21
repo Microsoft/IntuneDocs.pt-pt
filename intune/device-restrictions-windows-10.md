@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Definições de restrição de dispositivos no Microsoft Intune para dispositivos com Windows 10 e posterior
 Este artigo mostra-lhe todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o Windows 10.
@@ -54,7 +54,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
-    -   **Tipo de palavra-passe necessária** – especifica se a palavra-passe tem de ser apenas numérica ou alfanumérica.
+    -   **Tipo obrigatório de palavra-passe** – Especifica se a palavra-passe tem de ser apenas numérica ou alfanumérica.
     -   **Comprimento mínimo da palavra-passe** – Aplica-se apenas ao Windows 10 Mobile.
     -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Para dispositivos com o Windows 10: se o dispositivo tiver o BitLocker ativado, será colocado no modo de recuperação do BitLocker após o início de sessão falhar o número de vezes que especificar. Se o dispositivo não tiver o BitLocker ativado, esta definição não se aplica.
 Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o número de vezes que especificar, o dispositivo será apagado.
@@ -268,7 +268,7 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 
       - **Conta de utilizador** – especifica a conta de utilizador local (no dispositivo) ou o início de sessão de conta do Azure AD associado à aplicação de local público. Para contas associadas a domínios do Azure AD, especifique a conta com o formato `domain\\username@tenant.org`.
 
-         Para dispositivos em ambientes públicos, utilize contas com privilégios mínimos para impedir a atividade autorizada.  
+         Para dispositivos em ambientes públicos, utilize contas com privilégios mínimos para impedir a atividade não autorizada.  
 
       - **ID de modelo do utilizador da aplicação (AUMID)** – especifica o AUMID da aplicação de local público. Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 

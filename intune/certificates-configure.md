@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para os seus dispositivos no Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Quando conceder aos utilizadores acesso aos recursos da empresa através de VPN, Wi-Fi ou perfis de e-mail, pode autenticar estas ligações ao utilizar certificados. Ao utilizar certificados, não precisa de introduzir nomes de utilizador e palavras-passe para autenticar as ligações 
+Quando conceder aos utilizadores acesso aos recursos da empresa através de VPN, Wi-Fi ou perfis de e-mail, pode autenticar estas ligações ao utilizar certificados. Ao utilizar certificados, não precisa de introduzir nomes de utilizador e palavras-passe para autenticar as ligações
 
 Pode utilizar o Intune para atribuir estes certificados aos dispositivos que gere. O Intune suporta a atribuição e a gestão dos seguintes tipos de certificado:
 
@@ -85,10 +85,13 @@ Importará este certificado quando configurar um perfil de certificado fidedigno
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Passo 3 – Criar perfis de certificado fidedigno
 Crie um perfil de certificado fidedigno para poder criar um perfil de certificado SCEP ou PKCS. Precisa de um perfil de certificado fidedigno e de um perfil SCEP ou PKCS para cada plataforma de dispositivo. Os passos para criar certificados fidedignos são semelhantes para cada plataforma de dispositivo.
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** e procure **Microsoft Intune**.
-2. No **Microsoft Intune**, selecione **Configuração do dispositivo**, selecione **Perfis**. Selecione **Criar Perfil**.
-3. Introduza um **Nome** e uma **Descrição** para o perfil de certificado fidedigno.
-4. Para a **Plataforma**, selecione a plataforma do dispositivo para este certificado fidedigno: 
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Configuração do dispositivo**.
+2. No painel **Configuração do dispositivo**, selecione **Gerir** > **Perfis**.
+3. No painel de perfis, selecione **Criar perfil**.
+4. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de certificado fidedigno.
+5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado fidedigno. Atualmente, pode escolher uma das seguintes plataformas para as definições de certificados:
 
     - **Android**
     - **Android for Work**
@@ -98,15 +101,13 @@ Crie um perfil de certificado fidedigno para poder criar um perfil de certificad
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
 
-5. Para o **Tipo de perfil**, selecione **Certificado fidedigno**. Navegue até ao certificado (*NomeDoCertificado*.cer) que guardou anteriormente (passo 2).
-
-    Apenas para os dispositivos Windows 8.1 e Windows 10, selecione o **Arquivo de Destino** do certificado fidedigno em:  
-
+6. Na lista pendente **Tipo de perfil**, selecione **Certificado fidedigno**.
+7. Navegue para o certificado guardado na tarefa 1 e, em seguida, clique em **OK**.
+8. Apenas para os dispositivos Windows 8.1 e Windows 10, selecione o **Arquivo de Destino** do certificado fidedigno em:
     - **Arquivo de certificados no computador – Raiz**
     - **Arquivo de certificados no computador – Intermédio**
     - **Armazenamento de certificados de utilizador – Intermédio**
-
-6. Selecione **OK** para guardar as suas alterações e selecione **Criar** para guardar o seu novo perfil.
+8. Quando tiver terminado, selecione **OK**, volte ao painel **Criar perfil** e selecione **Criar**.
 
 O perfil é criado e apresentado na lista. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
 
@@ -121,5 +122,5 @@ Veja um dos seguintes tópicos para ajudar a configurar e a atribuir cada tipo d
 
 Após criar um perfil de certificado fidedigno, crie perfis de certificado SCEP ou PKCS para cada plataforma que queira utilizar. Ao criar um perfil de certificado SCEP, introduza um perfil de certificado fidedigno para a mesma plataforma. Este passo liga os dois perfis de certificado, mas mesmo assim tem de atribuir cada perfil separadamente.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Veja [Como atribuir perfis de dispositivo](device-profile-assign.md) para obter informações gerais sobre como atribuir perfis de dispositivo.

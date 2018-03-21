@@ -1,12 +1,11 @@
 ---
-title: Sincronizar dispositivos com o Intune
-titlesuffix: Azure portal
-description: "Saiba como sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes."
+title: "Sincronizar dispositivos com o Microsoft Intune – Azure | Microsoft Docs"
+description: "Sincronize dispositivos registados ou geridos com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui os passos para sincronizar através do portal do Azure e lista os códigos de erro que podem ser repetidos."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +13,18 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
+# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes - Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar-se imediatamente com o Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo.  Esta ação pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
+A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar-se imediatamente com o Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo. Esta funcionalidade pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -35,35 +34,34 @@ A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar
 - macOS
 - Android
 
-## <a name="how-to-sync-a-device"></a>Como sincronizar um dispositivo
+## <a name="sync-a-device"></a>Sincronizar um dispositivo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, escolha **Dispositivos**.
-4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
-5. Na lista de dispositivos que gere, selecione um dispositivo, selecione **...Mais** e, em seguida, selecione a ação remota **Sincronizar**.
-7. Selecione **Sim** para confirmar a ação.
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**. 
+3. No **Intune** selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
+4. Na lista de dispositivos que gere, selecione um dispositivo, selecione **...Mais** e, em seguida, selecione a ação **Sincronizar**.
+5. Selecione **Sim** para confirmar.
 
 
-## <a name="retriable-error-codes"></a>Códigos de erro repetível
+## <a name="retryable-error-codes"></a>Códigos de erro repetíveis
 
-Quando um administrador executa a ação de dispositivo **Sincronizar**, as aplicações iOS e Android com falhas que geraram um código de erro repetível estarão disponíveis no dispositivo. No entanto, as aplicações que geraram um código de erro não repetível têm de esperar sete dias antes de poderem estar disponíveis no dispositivo.
+Quando um administrador executa a ação de dispositivo **Sincronizar**, as aplicações iOS e Android com falhas e que geraram um código de erro repetível continuam disponíveis no dispositivo. No entanto, as aplicações que geraram um código de erro não repetível têm de esperar sete dias antes de estarem disponíveis no dispositivo.
 
 
-| Código de Erro  | Descrição Sugerida                                                                                                                  | Repetível |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| 2016330898 | Ocorreu um erro desconhecido.                                                                                                             | Não        |
-| 2016330897 | A sua ligação ao Intune excedeu o limite de tempo. Reinicie a sua ligação                                                                             | Sim       |
-| 2016330896 | Perdeu a ligação à Internet. Reinicie a sua ligação.                                                                            | Sim       |
-| 2016330895 | Perdeu a ligação à Internet. Reinicie a sua ligação.                                                                            | Sim       |
-| 2016330894 | Perdeu a ligação à Internet. Reinicie a sua ligação.                                                                            | Sim       |
-| 2016330893 | Perdeu a ligação à Internet. Reinicie a sua ligação.                                                                            | Sim       |
-| 2016330892 | O roaming internacional está desativado.                                                                                                     | Não        |
-| 2016330891 | A ligação de dados via rede móvel para este dispositivo não pode ser acedida durante uma chamada. Aguarde a conclusão da chamada. | Sim       |
-| 2016330890 | A rede móvel deste dispositivo. Neste momento, estes dispositivos não podem ser utilizados.                                                   | Não        |
-| 2016330889 | A ligação segura falhou. Reinicie a sua ligação.                                                                                   | Sim       |
-| 2016330888 | A avaliação da fidedignidade do servidor falhou.                                                                                                | Não        |
+| Código de Erro  | Descrição Sugerida | Repetível |
+|---|---|---|
+| 2016330898 | Ocorreu um erro desconhecido. | Não |
+| 2016330897 | A sua ligação ao Intune excedeu o limite de tempo. Reinicie a sua ligação. | Sim |
+| 2016330896 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
+| 2016330895 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
+| 2016330894 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
+| 2016330893 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim|
+| 2016330892 | O roaming internacional está desativado. | Não|
+| 2016330891 | A ligação de dados via rede móvel para este dispositivo não pode ser acedida durante uma chamada. Aguarde a conclusão da chamada. | Sim|
+| 2016330890 | A rede móvel deste dispositivo. Neste momento, estes dispositivos não podem ser utilizados. | Não|
+| 2016330889 | A ligação segura falhou. Reinicie a sua ligação. | Sim|
+| 2016330888 | A avaliação da fidedignidade do servidor falhou. | Não|
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-step"></a>Passo seguinte
 
 Selecione **Ações do dispositivo** para ver o estado da ação de sincronização. 

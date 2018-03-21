@@ -1,12 +1,11 @@
 ---
-title: "Repor dispositivos Windows 10 com o Intune"
-titlesuffix: Azure portal
-description: "Saiba como utilizar a funcionalidade Começar do Zero para repor PCs Windows 10 que executam o Intune.\""
+title: "Repor dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs"
+description: "Utilize a funcionalidade Começar do Zero para remover ou desinstalar aplicações em PCs com Windows 10 com o Microsoft Intune, incluindo aplicações pré-instaladas de OEMs. Também é possível manter os conteúdos da pasta raiz do utilizador através da definição \"se os dados de utilizador forem retidos\"."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +13,31 @@ ms.technology:
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c45d3e47c90ca7739b3aa6eee1bf31d787a82264
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Utilizar a funcionalidade Começar do Zero para repor dispositivos Windows 10 com o Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A ação de dispositivos **Começar do Zero** remove todas as aplicações que foram instaladas nos PCs a executar a Atualização para Criativos do Windows 10 e, em seguida, atualiza automaticamente os PCs para a versão mais recente do Windows.
-Esta ação pode ajudar a remover aplicações (OEM) que vêm frequentemente pré-instaladas num PC novo. Pode configurar se os dados de utilizador são retidos ao efetuar esta ação. Neste caso, as aplicações e as definições são removidas, mas o conteúdo da pasta Raiz dos utilizadores é mantido.
+A ação de dispositivo **Começar do Zero** remove as aplicações instaladas em PCs com a versão Atualização para Criativos do Windows 10. Em seguida, atualiza automaticamente o PC para a versão mais recente do Windows.
 
-## <a name="how-to-use-fresh-start"></a>Como utilizar a funcionalidade Começar do Zero
+Esta ação ajuda a remover aplicações que vêm geralmente pré-instaladas (OEM) num PC novo. Para manter os conteúdos da pasta raiz de um utilizador e apenas remover as aplicações e definições, utilize a definição `if user data is retained`.
+
+> [!IMPORTANT]
+> A funcionalidade Começar do Zero anula a inscrição do dispositivo no Intune, mas o mesmo continua associado ao Azure Active Directory.
+
+## <a name="use-fresh-start"></a>Utilizar a funcionalidade Começar do Zero
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Dispositivos**.
-4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
-5. Na lista de dispositivos que gere, escolha um dispositivo com o ambiente de trabalho Windows 10 e, em seguida, escolha a ação remota de dispositivos **Começar do Zero**.
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
+4. A partir da lista de dispositivos que gere, selecione um computador com Windows 10 e, em seguida, selecione **Começar do Zero**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
-Para ver o estado da ação que acabou de realizar, no painel **Dispositivos**, selecione **Ações do dispositivo**.
-
+Para ver o estado desta ação, selecione **Ações do dispositivo** (**Microsoft Intune** > **Dispositivos**).

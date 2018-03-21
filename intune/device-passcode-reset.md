@@ -1,12 +1,11 @@
 ---
-title: "Repor e remover códigos de acesso de dispositivo com o Intune"
-titlesuffix: Azure portal
-description: "Saiba como repor e remover o código de acesso nos dispositivos que gere com o Intune."
+title: "Repor códigos de acesso de dispositivos com o Microsoft Intune – Azure | Microsoft Docs"
+description: "Remova ou reponha o código de acesso com a ação Remover código de acesso nos dispositivos dos quais faça a gestão ou monitorização com o Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,37 +13,37 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e1496d24fd9d3bb636a4eab00c254b753210f63
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 8f23a79bbe72d12750ef642226aefd1e11dcac24
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Repor e remover o código de acesso nos dispositivos geridos pelo Intune
-
+# <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Os termos *remover* e *repor* são utilizados alternadamente neste artigo.
-
-A ação **Remover código de acesso** gera um novo código de acesso para o dispositivo, que é apresentado no painel **Descrição Geral** do <*nome do dispositivo*> .
+Para criar um novo código de acesso para um dispositivo, utilize a ação **Remover código de acesso**.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
-- Windows – não suportado
-- Windows Phone – suportado no Windows Phone 8.1 para a Atualização para Criativos do Windows 10 não associada ao Azure AD. Atualização para Criativos do Windows 10 e posterior
-- iOS – suportado
-- macOS – não suportado
-- Android – suportado em versões do Android anteriores ao Android 7. O Android for Work não é suportado.
+- Windows Phone 8.1 à Atualização para Criativos do Windows 10 não associada ao Azure AD e Atualização para Criativos do Windows 10 e posterior
+- iOS
+- Versões do Android anteriores ao Android 7
 
-## <a name="how-to-reset-a-passcode"></a>Como repor um código de acesso
+Esta funcionalidade **não** é suportada para os seguintes sistemas:
+
+- Windows
+- macOS
+- Android for Work
+
+## <a name="reset-a-passcode"></a>Repor um código de acesso
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, escolha **Dispositivos**.
-4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
-5. Na lista de dispositivos que gere, selecione um dispositivo, selecione **...Mais** e, em seguida, selecione a ação remota de dispositivos **Remover código de acesso**.
+2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
+3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
+4. Na lista de dispositivos que gere, selecione um dispositivo, selecione **...Mais** e, em seguida, selecione a ação remota de dispositivos **Remover código de acesso**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
-Para ver o estado da ação que acabou de realizar, no painel **Dispositivos**, selecione **Ações do dispositivo**.
+Para ver o estado da ação que acabou de realizar, em **Dispositivos**, selecione **Ações do dispositivo**.

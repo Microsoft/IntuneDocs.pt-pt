@@ -1,12 +1,11 @@
 ---
-title: "Configurar definições das funcionalidades dos dispositivos no Microsoft Intune"
-titleSuffix: 
-description: Saiba como utilizar o Microsoft Intune para configurar funcionalidades nos dispositivos que gere.
+title: "Criar um perfil de dispositivo iOS ou macOS com o Microsoft Intune – Azure | Microsoft Docs"
+description: "Adicione ou crie um perfil de dispositivo iOS ou macOS e, em seguida, configure as definições do AirPrint, AirPlay, esquema do ecrã principal, notificação das aplicações, dispositivos partilhados, início de sessão único e definições de filtros de conteúdo Web no Microsoft Intune"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,33 +13,42 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6cd646976deb1599c4cbc9154b6f2a487029dd79
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e3de7d1bccd57da1290987a714416373cbdd2b0d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
-#<a name="configure-device-feature-settings-in-microsoft-intune"></a>Configurar as definições das funcionalidades dos dispositivos no Microsoft Intune
+# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar definições de funcionalidades de dispositivos iOS ou macOS no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As funcionalidades do dispositivo permitem-lhe controlar as funcionalidades nos dispositivos iOS e macOS como configurações de dispositivos partilhados, notificações e AirPrint.
+As funcionalidades de dispositivos permitem-lhe controlar uma variedade de definições e funcionalidades em dispositivos iOS e macOS, tais como:
 
-Utilize as informações deste artigo para conhecer as noções básicas sobre como configurar perfis de funcionalidades de dispositivos e, em seguida, leia os artigos adicionais de cada plataforma para saber mais sobre as especificações dos dispositivos.
+- Definições do AirPrint e do AirPlay
+- Esquema do ecrã principal
+- Notificação das aplicações
+- Configuração de dispositivos partilhados
+- Configuração do início de sessão único
+- Filtragem de conteúdos Web
 
-## <a name="create-a-device-profile-containing-device-feature-settings"></a>Criar um perfil de dispositivo com as definições das funcionalidades de dispositivos
+Este artigo mostra-lhe os princípios básicos sobre como configurar perfis de funcionalidades de dispositivos iOS. Em seguida, pode consultar artigos adicionais para configurar definições específicas da plataforma para os seus dispositivos.
+
+## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. Na página **Intune**, selecione **Configuração do dispositivo**.
-2. Na página **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
-3. Na página de perfis, selecione **Criar perfil**.
-4. Na página **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de funcionalidades de dispositivos.
-5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições. Atualmente, pode escolher uma das seguintes plataformas para as funcionalidades de dispositivos:
+2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
+3. Selecione **Configuração do dispositivo**, selecione **Perfis** e, em seguida, selecione **Criar perfil**.
+4. Introduza as seguintes propriedades:
+
+  - **Nome**: introduza um nome descritivo para o novo perfil.
+  - **Descrição**: introduza uma descrição para o perfil (opcional, mas recomendado)
+  - **Plataforma**: selecione o seu tipo de plataforma:
     - **iOS**
     - **macOS**
-6. Na lista pendente **Tipo de perfil**,selecione **Funcionalidades de dispositivos**. 
-7. As definições que pode configurar diferem consoante a plataforma que escolher. Aceda a um dos seguintes artigos para obter definições detalhadas para cada plataforma:
+  - **Tipo de perfil**: selecione **Funcionalidades do dispositivo**
+  - **Definições**: as definições variam consoante a plataforma selecionada. Os seguintes artigos descrevem as definições para cada tipo de perfil:
+
     - [Definições do AirPrint para iOS e MacOS](air-print-settings-ios-macos.md)
     - [Definições do AirPlay para iOS](airplay-settings-ios.md)
     - [Definições de esquema do ecrã principal para iOS](home-screen-settings-ios.md)
@@ -49,12 +57,10 @@ Utilize as informações deste artigo para conhecer as noções básicas sobre c
     - [Configurar o Intune para o Início de Sessão Único em dispositivos iOS](sso-ios.md)
     - [Definições de filtros de conteúdo Web para iOS](web-content-filter-settings-ios.md)
 
-8. Quando tiver terminado, selecione **OK**, regresse à página **Criar perfil** e selecione **Criar**.
+5. Assim que terminar, selecione **OK** e **Criar** para guardar as suas alterações.
 
-O perfil é criado e apresentado na página da lista de perfis.
-## <a name="next-steps"></a>Passos seguintes
+O perfil é criado e apresentado na lista.
 
-Se quiser atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
+## <a name="next-step"></a>Passo seguinte
 
-
-
+Para atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

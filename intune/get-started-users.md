@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>Introdução à gestão de utilizadores
 
@@ -28,7 +28,7 @@ Considere todas as pessoas diferentes na sua organização. Cada pessoa que util
 ## <a name="how-do-i-create-a-user"></a>Como posso criar um utilizador?
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Utilize a opção **Procurar recursos**, procure o **Intune**.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Após abrir o painel **Microsoft Intune**, selecione **Utilizadores**. Na página **Todos os utilizadores**, selecione **+ Novo utilizador**.
 4. Introduza os detalhes do utilizador, como o **Nome** e o **Nome de utilizador**. A parte do nome de domínio do nome de utilizador tem de ser o nome de domínio inicial predefinido "contoso.onmicrosoft.com" ou um nome de domínio não federado verificado, tal como "contoso.com".
 5. Em **Grupos**, selecione o grupo de teste ao qual pretende adicionar o utilizador.
@@ -49,6 +49,6 @@ Depois de criar um utilizador, tem de utilizar o [portal do Office 365](http://g
 
 5. Selecione **Guardar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Introdução aos grupos](get-started-groups.md) – organize os utilizadores em grupos para ser mais fácil gerir as políticas e aplicações a que podem aceder.

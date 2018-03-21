@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Criar um grupo para gerir o acesso aos seus utilizadores e dados
 
@@ -30,16 +30,18 @@ O Microsoft Intune utiliza o Azure Active Directory (Azure AD) para gerir o aces
 ## <a name="how-do-i-create-a-group"></a>Como posso criar um grupo?
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Utilize a opção **Procurar recursos**, procure o **Intune**.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Após abrir o painel **Microsoft Intune**, selecione **Grupos**.
 4. No painel **Utilizadores e grupos – Todos os grupos**, selecione o comando **Novo grupo**.
-5. No painel **Grupo**, adicione um **Nome** e **Descrição** ao grupo.
+5. No painel **Grupo**, selecione um **Tipo de grupo**.
+5. Adicione um **Nome** e **Descrição** para o grupo.
 6. Defina o **Tipo de associação** como **Atribuído**. Não selecione a opção **Ativar funcionalidades do Office** para o grupo de teste.
+7. Selecione os **Membros** do grupo.
 7. Clique em **Criar**.
 
 Se tiver criado um grupo com êxito, o mesmo deverá ser apresentado na lista de **Todos os grupos**. Se o grupo não aparecer na lista, experimente criar outro grupo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Introdução às políticas](get-started-policies.md) – crie políticas para impedir que os utilizadores realizem ações não autorizadas com os dispositivos.
 
