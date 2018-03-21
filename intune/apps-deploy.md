@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicações a grupos com o Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Depois de adicionar uma aplicação ao Intune, pode atribui-la a utilizadores e dispositivos.
+Depois de adicionar uma aplicação ao Microsoft Intune, pode atribuí-la a utilizadores e dispositivos.
 
 As aplicações podem ser atribuídas a dispositivos, independentemente de estes serem geridos pelo Intune. Utilize a tabela seguinte para compreender melhor as várias opções para atribuir as aplicações a utilizadores e a dispositivos:
 
@@ -51,19 +51,28 @@ As aplicações podem ser atribuídas a dispositivos, independentemente de estes
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, escolha **Aplicações móveis**.
-1. Na carga de trabalho **Aplicações Móveis**, escolha **Gerir** > **Aplicações**.
+1. Na carga de trabalho **Aplicações móveis**, selecione **Aplicações** na secção **Gerir**.
 2. No painel da lista de aplicações, clique na aplicação que quer atribuir.
-3. No painel **Descrição Geral**, selecione **Gerir** > **Atribuições**.
-4. Selecione **Adicionar Grupo** e, em seguida, no painel **Adicionar grupo**, selecione grupos do Azure AD a incluir ou excluir da atribuição da aplicação.
-5. Para cada aplicação que escolher, selecione um **tipo de atribuição** para a aplicação em:
+3. No painel **Descrição geral** específico da aplicação, selecione **Atribuições** a partir da secção **Gerir**.
+4. Selecione **Adicionar grupo** para apresentar o painel **Adicionar grupo** relacionado com a aplicação.
+5. Para a aplicação específica, selecione um **tipo de atribuição** para a aplicação em:
     - **Disponível para dispositivos inscritos** – os utilizadores instalam a aplicação a partir da aplicação ou site Portal da Empresa.
-    - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune.
+    - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. Tenha em atenção que o tipo **Aplicação Android for Work** não suporta esta opção. 
     - **Obrigatório** – A aplicação é instalada em dispositivos nos grupos selecionados.
     - **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.
-6. **Apenas para aplicações iOS** – se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, pode selecioná-lo em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
-6. Quando terminar, selecione **OK** e, em seguida, selecione **Guardar**.
 
-A aplicação está agora atribuída aos grupos que selecionou.
+    > [!NOTE]
+    > **Apenas para aplicações iOS** – se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, pode selecioná-lo em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
+
+6. Selecione **Grupos Incluídos** para escolher os grupos de utilizadores que serão afetados por esta atribuição de aplicações.
+7. Clique em **Selecionar** assim que tiver selecionado um ou mais grupos para incluir.
+8. Clique em **OK** no painel **Atribuir** para concluir a seleção de grupos incluídos.
+9. Clique em **Excluir Grupos** se quiser excluir grupos de utilizadores de serem afetados por esta atribuição de aplicações.
+10. Se tiver optado por excluir grupos, clique em **Selecionar** no painel **Selecionar grupos**.
+11. Clique em **OK** no painel **Adicionar grupo**.
+12. Clique em **Guardar** no painel **Atribuições** da aplicação para guardar as suas atribuições.
+
+A aplicação está agora atribuída aos grupos que selecionou. Para obter mais informações sobre como incluir e excluir atribuições de aplicações, veja [Incluir e excluir atribuições de aplicações](apps-inc-exl-assignments.md).
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Como são resolvidos conflitos entre objetivos de aplicações
 
@@ -78,8 +87,8 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com objeti
 |Utilizador – Disponível|Utilizador – Não Disponível|Não disponível|
 |Utilizador – Disponível|Utilizador – Desinstalar|Desinstalar|
 |Utilizador – Não Disponível|Utilizador – Desinstalar|Desinstalar
-|Utilizador – Necessário|Dispositivo – Necessário|Ambos existem, o Gateway trata do objetivo Necessário 
-|Utilizador – Necessário|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Necessário 
+|Utilizador – Necessário|Dispositivo – Necessário|Ambos existem, o Gateway trata do objetivo Necessário
+|Utilizador – Necessário|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Necessário
 |Utilizador – Disponível|Dispositivo – Necessário|Ambos existem, o Gateway resolve o objetivo Necessário (Necessário e Disponível)
 |Utilizador – Disponível|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Disponível.<br>A aplicação é apresentada no Portal da Empresa.<br>Se a aplicação já estiver instalada (como aplicação necessária com o objetivo anterior), será desinstalada.<br>No entanto, se o utilizador clicar em Instalar a partir do portal da empresa e, em seguida, a aplicação for instalada e desinstalada, o objetivo não será cumprido.|
 |Utilizador – Não Disponível|Dispositivo – Necessário|Necessário|
@@ -105,8 +114,8 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com objeti
 |Utilizador – Disponível sem inscrição|Dispositivo – Desinstalar|Desinstalar e Disponível sem inscrição.<br>Se o utilizador não tiver instalado a aplicação a partir do portal da empresa, o objetivo Desinstalação é cumprido.<br>Se o utilizador instalar a aplicação a partir do portal da empresa, a instalação é priorizada em relação à desinstalação.|
 
 >[!NOTE]
->Apenas para aplicações da loja iOS geridas: quando as adiciona ao Intune e as atribui como Necessário, estas aplicações são criadas automaticamente com os objetivos Necessário e Disponível.
+>Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com os objetivos **Necessário** e **Disponível**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.

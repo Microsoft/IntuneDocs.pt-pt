@@ -1,6 +1,6 @@
 ---
 title: Novidades do Microsoft Intune
-titlesuffix: Azure portal
+titlesuffix: 
 description: Descobrir as novidades do Intune no portal do Azure
 keywords: 
 author: ErikjeMS
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 513164a1f734fddb6ac66fcaffdc2fb885a4659a
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode descobrir quais são as [alterações futuras](#whats-coming), os [avisos importantes](#notices) sobre o serviço e as informações sobre [versões anteriores](whats-new-archive.md).
+Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Pode também descobrir quais são as [alterações futuras](#whats-coming), os [avisos importantes](#notices) sobre o serviço e as informações sobre [versões anteriores](whats-new-archive.md).
 
 > [!Note]
 > Para obter informações sobre novas funcionalidades na gestão de dispositivos móveis (MDM) híbrida, veja a nossa [página Hybrid What’s New (Novidades nas Implementações Híbridas)](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -48,7 +48,7 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 #### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Suporte do Intune para várias contas do DEP da Apple/Apple School Manager <!-- 747685 -->
  
-O Intune agora suporta a inscrição de dispositivos com até 100 contas diferentes do Programa de Registo de Aparelho (DEP) da Apple ou do Apple School Manager. Cada token carregado pode ser gerido separadamente para dispositivos e perfis de inscrição. Um perfil de inscrição diferente pode ser automaticamente atribuído por token do DEP/School Manager carregado. Se forem carregados vários tokens do School Manager, só um poderá ser partilhado com a School Data Sync da Microsoft de cada vez.
+O Intune agora suporta a inscrição de dispositivos com até 100 contas diferentes do Programa de Inscrição de Dispositivos (DEP) da Apple ou do Apple School Manager. Cada token carregado pode ser gerido separadamente para dispositivos e perfis de inscrição. Um perfil de inscrição diferente pode ser automaticamente atribuído por token do DEP/School Manager carregado. Se forem carregados vários tokens do School Manager, só um poderá ser partilhado com a School Data Sync da Microsoft de cada vez.
 
 Após a migração, as Graph APIs beta e os scripts publicados para gerir o DEP da Apple ou o ASM através do Graph deixarão de funcionar. Estão em desenvolvimento novas Graph APIs beta e serão lançadas após a migração.
 
@@ -154,7 +154,7 @@ Ao implementar a aplicação Gmail num perfil do Android for Work, agora pode im
 
 O Intune agora dá-lhe a opção de autenticar dispositivos através da aplicação Portal da Empresa para os seguintes métodos de inscrição:
 
-- Programa de Registo de Aparelho da Apple
+- Programa de Inscrição de Dispositivos da Apple
 - Gestor Escolar da Apple
 - Inscrição no Apple Configurator
 
@@ -164,7 +164,7 @@ Quando utilizar a opção do Portal da empresa, o Intune ignora a autenticação
 
 #### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685-eeready---"></a>Suporte do Intune para várias contas do DEP da Apple/Apple School Manager <!-- 747685 eeready -->
 
-O Intune agora suporta a inscrição de dispositivos com até 100 contas diferentes do Programa de Registo de Aparelho (DEP) da Apple ou do Apple School Manager. Cada token carregado pode ser gerido separadamente para dispositivos e perfis de inscrição. Um perfil de inscrição diferente pode ser automaticamente atribuído por token do DEP/School Manager carregado. Se forem carregados vários tokens do School Manager, só um poderá ser partilhado com a School Data Sync da Microsoft de cada vez.
+O Intune agora suporta a inscrição de dispositivos com até 100 contas diferentes do Programa de Inscrição de Dispositivos (DEP) da Apple ou do Apple School Manager. Cada token carregado pode ser gerido separadamente para dispositivos e perfis de inscrição. Um perfil de inscrição diferente pode ser automaticamente atribuído por token do DEP/School Manager carregado. Se forem carregados vários tokens do School Manager, só um poderá ser partilhado com a School Data Sync da Microsoft de cada vez.
 
 Após a migração, as Graph APIs beta e os scripts publicados para gerir o DEP da Apple ou o ASM através do Graph deixarão de funcionar. Estão em desenvolvimento novas Graph APIs beta e serão lançadas após a migração.
 
@@ -195,8 +195,8 @@ O comando apagar remove todos os dados, incluindo o sistema operativo, de um dis
 
 Tem de configurar um PIN de recuperação de seis dígitos. Este PIN pode servir para desbloquear o dispositivo apagado, altura em que irá iniciar a reinstalação do sistema operativo. Depois de a eliminação começar, o PIN é apresentado numa barra de estado no painel de descrição geral do dispositivo no Intune. O PIN será mantido enquanto a eliminação estiver em curso. Depois de concluída a eliminação, o dispositivo desaparece totalmente da gestão do Intune. Não se esqueça de registar o PIN de recuperação para que quem estiver a restaurar o dispositivo o possa utilizar.
 
-#### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Revogar licenças para um token do Programa de Compras em Volume para iOS<!-- 820870 --> 
-Pode revogar a licença de todas as aplicações VPP (Volume Purchase Program – Programa de Compras em Volume) para iOS para um Token VPP específico.
+#### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Revogar licenças para um token de Programa Comprado em Volume para iOS<!-- 820870 --> 
+Pode revogar a licença de todas as aplicações VPP (Volume Purchase Program) para iOS para um Token VPP específico.
 
 ### <a name="app-management"></a>Gestão de aplicações
 
@@ -340,8 +340,8 @@ A partir de agora, vai poder instalar aplicações do Office em dispositivos mac
 
 ### <a name="app-management"></a>Gestão de aplicações
 
-#### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Eliminar um token do Programa de Compras em Volume para iOS <!-- 820879 -->
-Poderá eliminar o token VPP (Volume Purchasing Program – Programa de Compras em Volume) para iOS através da consola. Tal poderá ser preciso quando tiver ocorrências duplicadas de um token de VPP.
+#### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Eliminar um token de Programa Comprado em Volume para iOS <!-- 820879 -->
+Poderá eliminar o token VPP (Volume Purchasing Program) para iOS através da consola. Tal poderá ser preciso quando tiver ocorrências duplicadas de um token de VPP.
 
 ### <a name="intune-apps"></a>Aplicações do Intune
 
@@ -476,7 +476,7 @@ Agora pode ver se os dispositivos iOS têm o Bloqueio de Ativação ativado. Est
 
 #### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>Bloquear remotamente dispositivos macOS geridos com o Intune <!-- 1437691 -->
 
-Pode bloquear um dispositivo macOS perdido e definir um PIN de recuperação de 6 dígitos. Se estiver bloqueado, o painel **Descrição geral do dispositivo** apresenta o PIN até que seja enviada outra ação de dispositivo.
+Pode bloquear um dispositivo macOS perdido e definir um PIN de recuperação de 6 dígitos. Se estiver bloqueado, o painel **Descrição geral do dispositivos** apresenta o PIN até que seja enviada outra ação de dispositivo.
 
 Para obter mais informações, veja [Bloquear remotamente dispositivos geridos com o Intune](device-remote-lock.md).
 
@@ -762,11 +762,8 @@ O Intune irá descontinuar o suporte do [plug-in Cordova do SDK da Aplicação M
 Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicações, veja [Ferramenta de Encapsulamento de Aplicações para iOS](app-wrapper-prepare-ios.md) e [Ferramenta de Encapsulamento de Aplicações para Android](app-wrapper-prepare-android.md). Caso tenha perguntas ou se depare com problemas, contacte [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com). 
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Planear a Alteração: Utilizar agora o Intune no Azure para a sua gestão da MDM <!-- 1227338 -->
-Há mais de um ano, anunciámos a [pré-visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, há seis meses, lançámos a [disponibilidade geral da nova experiência de administrador](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. A partir de 2 de abril de 2018, vamos desativar a gestão de dispositivos móveis (MDM) na consola Silverlight clássica para os clientes que utilizam o Intune autónomo. No seu lugar, pode utilizar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para as suas necessidades de MDM. Se continua a utilizar a consola clássica para a MDM, pare e familiarize-se com o Intune no Azure. Não esperamos nenhum impacto no utilizador final com esta alteração. A gestão clássica do PC irá permanecer no Silverlight. Pode saber mais sobre esta alteração e como ela o afeta [aqui](https://aka.ms/Intune_on_Azure_mdm).
+Há mais de um ano, anunciámos a [pré-visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, há seis meses, lançámos a [disponibilidade geral da nova experiência de administrador](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. A partir de 31 de agosto de 2018, vamos desativar a gestão de dispositivos móveis (MDM) na consola Silverlight clássica para os clientes que utilizam o Intune autónomo. No seu lugar, pode utilizar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para as suas necessidades de MDM. Se continua a utilizar a consola clássica para a MDM, pare e familiarize-se com o Intune no Azure. Não esperamos nenhum impacto no utilizador final com esta alteração. A gestão clássica do PC irá permanecer no Silverlight. Pode saber mais sobre esta alteração e como ela o afeta [aqui](https://aka.ms/Intune_on_Azure_mdm).
 
-
-### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Planear a Alteração: Fim de Vida do Easy Assist <!-- 1556480 -->
-O Intune utiliza o Microsoft Easy Assist para a assistência remota da gestão de PCs. No entanto, poderá não saber que o Microsoft Easy Assist é um componente do Office Live Meeting, um serviço que será preterido a 31 de dezembro de 2017. Por conseguinte, a oferta do Easy Assist do Intune também chegará ao fim de vida a 31 de dezembro de 2017.
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Gerir dispositivos Android for Work de forma independente dos dispositivos Android <!-- 1490731 EEready-->    
 **Nota**: as seguintes alterações começarão a ser implementadas com a atualização de novembro, mas a execução na sua conta poderá demorar algum tempo. Receberá uma notificação de confirmação no portal do Office 365 quando estas alterações entrarem em vigor na sua conta. Após a implementação, terá opções de capacidade de gestão adicionais. Não existirão alterações à experiência do utilizador final durante a implementação.
@@ -795,25 +792,8 @@ Se já a tiver integrado, a sua situação depende da definição que escolher:
 
 Em todos os casos, mantém-se o seu regulamento pretendido. Não é necessária nenhuma ação da sua parte para manter a permissão global ou por grupo do Android for Work no seu ambiente.
 
-### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>O suporte para OS X Mavericks 10.10 e versões anteriores do macOS está a ser descontinuado <!--1489263, plan for change for 1802-->
-A inscrição de dispositivos com o OS X Yosemite 10.10 e versões anteriores do macOS começará a ser descontinuada em fevereiro de 2018. O Intune suporta totalmente o OS X El Capitan 10.11 e as versões mais recentes.
-
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Novo caminho para dispositivos geridos na Graph API <!-- 1586728 -->
-O caminho utilizado para aceder a dispositivos geridos na versão beta da Graph API foi alterado. 
-
-| | |
-|--|--|
-| Caminho atual |  https://graph.microsoft.com/beta/managedDevices |
-| Novo caminho | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-Ambos os caminhos estarão a funcionar ao longo do mês de outubro. Após a versão de serviço de outubro, apenas o novo caminho estará funcional.  Se estiver a utilizar a Graph API para aceder a dispositivos geridos, atualize e verifique os seus scripts e aplicações através do novo caminho. Para ver alterações adicionais, veja o [registo de alterações da Graph API](https://developer.microsoft.com/graph/docs/concepts/changelog) mensal.
-
-
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acesso direto aos cenários de inscrição da Apple <!--951869-->
 Para as contas do Intune criadas depois de janeiro de 2017, o Intune ativou o acesso direto aos cenários de inscrição da Apple através da carga de trabalho Inscrever Dispositivos no portal do Azure. Anteriormente, a pré-visualização da inscrição da Apple apenas estava acessível a partir de ligações no portal do Intune clássico. As contas do Intune criadas antes de janeiro de 2017 precisam de uma única migração antes de estas funcionalidades ficarem disponíveis no Azure. A agenda para a migração ainda não foi anunciada, mas os detalhes serão disponibilizados logo que possível. Recomendamos vivamente a criação de uma conta de avaliação para testar a nova experiência se a conta existente não conseguir aceder ao portal do Azure.
-
-### <a name="administration-roles-being-replaced-in-azure-portal"></a>Substituição das funções de administração no portal do Azure
-As funções de administração de gestão de aplicações móveis (MAM) existentes (Contribuidor, Proprietário e Só de leitura) utilizadas no portal clássico do Intune (Silverlight) estão a ser substituídas por um conjunto completo de novos controlos de administração baseados em funções (RBAC) no portal do Azure no Intune. Após concluir a migração para o portal do Azure, terá de atribuir novamente os administradores a estas novas funções de administração. Para obter mais informações sobre as RBAC e as novas funções, veja [Controlo de acesso baseado em funções do Microsoft Intune](/intune/role-based-access-control).
 
 ## <a name="whats-coming"></a>Novidades futuras
 
@@ -822,24 +802,6 @@ As funções de administração de gestão de aplicações móveis (MAM) existen
 Vamos lançar uma atualização importante da experiência de utilizador para a aplicação Portal da Empresa para iOS. A atualização consiste numa reestruturação visual completa, que inclui aspeto e funcionalidade mais modernos com usabilidade e acessibilidade melhoradas. Todas as funcionalidades atuais do Portal da Empresa para iOS serão mantidas.
 
 Estamos a oferecer uma versão de pré-lançamento da aplicação Portal da Empresa para iOS atualizada através do programa TestFlight da Apple para que a utilize e forneça feedback. Inscreva-se em https://aka.ms/intune_ios_cp_testflight para obter acesso ao TestFlight.
-
-### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>As políticas de Acesso Condicional para o Intune só estarão disponíveis no portal do Azure <!-- 1737088 -->
-Iremos simplificar o local onde configura e gere o acesso condicional. Atualmente, pode gerir o acesso condicional no painel Proteção de Aplicações do Intune (MAM) e através da experiência clássica do Azure AD no [Portal do Windows Azure](https://manage.windowsazure.com). A partir de janeiro, só poderá configurar e gerir as suas políticas no [portal do Azure](https://portal.azure.com), em **Azure Active Directory** > **Acesso Condicional**. Para a sua comodidade, também pode aceder a este painel a partir do Intune no portal do Azure em **Intune** > **Acesso Condicional**.
-
-### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine---1592747--"></a>Gerir dispositivos macOS inscritos com Jamf através do motor de conformidade de dispositivo do Intune <!--1592747-->
-No início de 2018, o Jamf enviará informações sobre o estado do dispositivo macOS ao Intune que, em seguida, avaliará a conformidade com as políticas definidas na consola do Intune. Com base no estado de conformidade do dispositivo, bem como outras condições (como a localização, risco do utilizador, etc.), o acesso condicional estabelecerá a conformidade dos dispositivos macOS que tentem aceder a aplicações na nuvem e no local ligadas com o Azure Active Directory, incluindo o Office 365.
-
-### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Alterações ao suporte para a aplicação Portal da Empresa do Intune para iOS <!-- 1164474  -->
-Em breve, será apresentada uma nova versão da aplicação Portal da Empresa do Microsoft Intune para iOS que suportará apenas dispositivos com o iOS 9.0 ou posterior. A versão do Portal da Empresa que suporta o iOS 8 continuará disponível durante um curto período de tempo. No entanto, caso também utilize aplicações iOS com MAM ativada, suportamos o iOS 9.0 e posterior, pelo que deverá garantir que os seus utilizadores finais atualizam para a versão mais recente do SO. 
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Informamo-lo desta situação antecipadamente, mesmo sem termos datas específicas, para que tenha tempo para planear. Certifique-se de que os seus utilizadores atualizaram para o iOS 9 e posterior e, quando a aplicação Portal da Empresa for lançada, peça aos seus utilizadores que atualizem a mesma.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Incentive os utilizadores a atualizarem para o iOS 9.0 ou posterior, de modo a tirarem o máximo partido das novas funcionalidades do Intune.  Incentive os utilizadores a instalarem a nova versão do Portal da Empresa para tirarem partido das novas funcionalidades que oferece.
-
-Aceda ao Intune no portal do Azure, vá para Dispositivos > Todos os Dispositivos e filtre pela versão do iOS para ver os dispositivos atuais com sistemas operativos anteriores ao iOS 9.
-
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
 A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS.

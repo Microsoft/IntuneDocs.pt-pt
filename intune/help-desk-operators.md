@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 O portal de resolução de problemas permite que os operadores de suporte técnico e os administradores do Intune vejam as informações de utilizador para resolverem pedidos de ajuda dos utilizadores. As organizações que incluem um suporte técnico podem atribuir o **Operador de suporte técnico** a um grupo de utilizadores. A função de operador de suporte técnico pode utilizar o painel **Resolução de problemas**.
 
-O painel **Resolução de Problemas** também apresenta problemas de inscrição de utilizadores. Os detalhes acerca do problema e os passos de remediação sugeridos podem ajudar os administradores e os operadores de suporte técnico a resolver problemas. Existem determinados problemas de inscrição que não são detetados e é possível que não existam sugestões de remediação para alguns erros. 
+O painel **Resolução de Problemas** também apresenta problemas de inscrição de utilizadores. Os detalhes acerca do problema e os passos de remediação sugeridos podem ajudar os administradores e os operadores de suporte técnico a resolver problemas. Existem determinados problemas de inscrição que não são detetados e é possível que não existam sugestões de remediação para alguns erros.
 
 Para obter passos sobre como adicionar uma função de operador de suporte técnico, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control)
 
@@ -43,10 +43,10 @@ Quando um utilizador contacta o suporte acerca de um problema técnico com o Int
 
 No painel Resolução de Problemas, selecione **Utilizador selecionado** para ver as informações do utilizador. As informações dos utilizadores podem ajudá-lo a compreender o estado atual dos utilizadores e dos dispositivos deles.  
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Resolução de problemas**.
-4. Clique em **Utilizador selecionado**.
+4. Clique em **Selecionar** para selecionar um utilizador para o qual pretende executar a resolução de problemas.
 5. Selecione um utilizador ao escrever o nome ou endereço de e-mail. Clique em **Selecionar**. As informações de resolução de problemas do utilizador são apresentadas no painel Resolução de problemas. As seguintes tabelas explicam as informações.
 
 > [!Note]  
@@ -54,7 +54,7 @@ No painel Resolução de Problemas, selecione **Utilizador selecionado** para ve
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>Áreas do dashboard de resolução de problemas
 
-Pode utilizar o painel **Resolução de problemas** para analisar as informações de utilizador. 
+Pode utilizar o painel **Resolução de problemas** para analisar as informações de utilizador.
 
 ![](/intune/media/troubleshooting-dash.png)
 
@@ -63,7 +63,7 @@ Pode utilizar o painel **Resolução de problemas** para analisar as informaçõ
 | 1.   | Estado da conta  | Mostra o estado do inquilino do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção do utilizador  | O nome do utilizador atualmente selecionado. Clique em **Alterar utilizador** para selecionar um novo utilizador.       |
 | 3.   | Estado de utilizador  | Apresenta o estado da licença do Intune do utilizador, número de dispositivos, conformidade de cada dispositivo, número de aplicações e conformidade das aplicações.       |
-| 4.   | Informações do utilizador  | Utilize a lista para selecionar os detalhes a consultar no painel. <br>Pode selecionar: <ul><li>Aplicações móveis<li>Políticas de proteção de aplicações<li>Políticas de conformidade<li> Políticas de configuração<li> Restrições de inscrição</ul>      |
+| 4.   | Informações do utilizador  | Utilize a lista para selecionar os detalhes a consultar no painel. <br>Pode selecionar: <ul><li>Aplicações móveis<li>Políticas de proteção de aplicações<li>Políticas de conformidade<li> Políticas de configuração</ul>      |
 | 5.   | Associação a grupos  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Referência de aplicações móveis
@@ -122,7 +122,7 @@ A tabela resume o estado das políticas de proteção de aplicações para dispo
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nome        | O nome da aplicação.                                                                                                        |
 | Implementado    | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
-| Plataforma    | O tipo de propriedade dos dispositivos. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
+| Platform    | O tipo de propriedade dos dispositivos. Pode ser **Empresa**, **Pessoal** e **Desconhecido**.                                               |
 | Inscrição  | O nome do tipo de dispositivo.                                                                                                     |
 | Última Atualização | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 
@@ -234,7 +234,7 @@ Encontra-se disponível uma política de proteção de aplicações para aplica�
 | Políticas    | O tipo de propriedade dos dispositivos. Pode ser **Empresa**, **Pessoal** e **Desconhecido**. |
 | Última sincronização   | O carimbo de data/hora da última vez que o dispositivo sincronizou com o Intune.                   |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode saber mais sobre o Controlo de administração baseada em funções (RBAC) para definir funções no seu dispositivo organizacional, gestão de aplicações móveis e tarefas de proteção de dados. Para obter mais informações, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control).
 

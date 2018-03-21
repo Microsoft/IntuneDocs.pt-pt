@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja Android ao Microsoft Intune
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem de primeiro adicionar a aplicação ao Microsoft Intune. Os passos seguintes permitem-lhe adicionar uma aplicação da loja Android ao Intune a partir do portal do Azure.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Microsoft Intune**, selecione **Aplicações móveis**.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Aplicações móveis**.
 4. Na carga de trabalho **Aplicações móveis**, selecione **Aplicações** na secção **Gerir**.
 5. Acima da lista de aplicações, escolha **Adicionar**.
-6. No painel **Adicionar Aplicação**, selecione **Android** nos tipos de **Aplicação da loja** disponíveis.
-7. Selecione **Configurar** para configurar as seguintes informações da aplicação (consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente):
+6. No painel **Adicionar Aplicação**, selecione **Android** nos tipos de **Aplicações da loja** disponíveis.
+7. Selecione **Configurar** para configurar as seguintes informações da aplicação (consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente):
     - **Nome** - Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** - Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
     - **Publicador** – Introduza o nome do publicador da aplicação.
@@ -52,6 +52,6 @@ Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem
 
 A aplicação que criou será apresentada na lista de aplicações, onde a pode atribuir aos grupos que escolher. 
 
-##<a name="next-steps"></a>Passos seguintes
+##<a name="next-steps"></a>Próximos passos
 
 - [Como atribuir aplicações a grupos](apps-deploy.md)

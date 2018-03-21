@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Começar a utilizar o Microsoft Intune no portal do Azure
 
@@ -31,7 +31,7 @@ A __barra lateral__ no lado esquerdo do portal do Azure mostra-lhe uma lista de 
 
 ![Um utilizador a procurar o Microsoft Intune na lista "Mais serviços".](./media/azure-add-intune1.png)
 
-1. Selecione **Mais serviços** na parte inferior da barra lateral no lado esquerdo da página.
+1. Selecione **Todos os serviços** na barra lateral no lado esquerdo da página.
 2. Procure **Intune** na caixa de filtragem.
 3. Selecione a **estrela** para adicionar o Intune à parte inferior da lista dos seus serviços preferidos.
 4. Paire o cursor sobre o serviço Intune. Selecione e arraste o Intune através dos **três pontos verticais** à direita do nome do serviço.
@@ -52,8 +52,8 @@ Esta funcionalidade ser-lhe-á mais relevante após adicionar mais conteúdos, t
 
 ## <a name="using-services"></a>Utilizar serviços
 
-Ao abrir o Microsoft Intune ou qualquer outro serviço no Azure, o serviço é apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentados num painel em ecrã inteiro. Quando seleciona uma carga de trabalho, a mesma abre o painel na página inteira. Os outros painéis surgem a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
+Sempre que abrir o Intune ou outro serviço no Azure, o serviço será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentadas num painel em ecrã inteiro. Quando seleciona a carga de trabalho, a mesma abre esse painel na página inteira. Os outros painéis surgem a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 * [Começar a gerir utilizadores](get-started-users.md) – adicione um utilizador ao Intune para lhe permitir acesso aos recursos da empresa em dispositivos móveis.

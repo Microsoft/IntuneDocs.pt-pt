@@ -1,7 +1,7 @@
 ---
-title: Integrar o Zimperium com o Intune
-titleSuffix: Intune on Azure
-description: Integrar o Intune com o Zimperium
+title: Integrar o Zimperium MTD com o Microsoft Intune
+titleSuffix: 
+description: "Como configurar a solução de Defesa Contra Ameaças (MTD) do Zimperium com o Microsoft Intune para controlar o acesso aos seus recursos empresariais a partir de dispositivos móveis."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 062a2f0d573bd711dff75c7ab0eb3bef8ac23161
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: fada315aad9bce47a3a04286d84e1c7dbdd2ce61
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar o Zimperium com o Intune
 
-Tem de realizar os passos seguintes para integrar a solução de Defesa Contra Ameaças para Dispositivos Móveis do Zimperium com o Intune.
+Tem de realizar os passos seguintes para integrar a solução Zimperium Mobile Threat Defense com o Intune.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -79,6 +79,6 @@ O processo de autorização da aplicação Zimperium consiste no seguinte:
 
 8.  Selecione **Concluir** para guardar a configuração e iniciar a primeira sincronização do grupo de segurança do Azure AD.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 -   [Configurar aplicações do Zimperium](mtd-apps-ios-app-configuration-policy-add-assign.md)

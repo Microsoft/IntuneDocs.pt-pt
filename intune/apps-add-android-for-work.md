@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Como atribuir aplicações em dispositivos Android for Work com o Intune
 
@@ -38,36 +38,35 @@ Verifique se configurou o Intune e o Android for Work para trabalharem em conjun
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Sincronizar uma aplicação a partir da Google Play for Work Store
 
 1. Aceda à [Google Play for Work Store](https://play.google.com/work). Inicie sessão com a mesma conta que utilizou para configurar a ligação entre o Intune e o Android for Work.
-2. Procure na loja a aplicação que pretende atribuir através do Intune.
-3. Na página da aplicação que escolheu, selecione **Aprovar**. Neste exemplo, escolheu a aplicação Microsoft Excel.<br>
-  ![Exemplo de aprovação da aplicação](media/approve.png)
-4. É aberta uma janela da aplicação a pedir-lhe para dar permissões para a aplicação efetuar diversas operações. Selecione **Aprovar** para continuar.<br>
-  ![Exemplo de permissões de aprovação da aplicação](media/approve-app-permissions.png)
-5. A aplicação foi aprovada e é apresentada na consola de administração de TI.
+2. Procure na loja e selecione a aplicação que pretende atribuir através do Intune.
+3. Selecione **Aprovar** na página que mostra a aplicação. Os seguintes exemplos mostram a aplicação Microsoft Excel que foi escolhida.</br>
 
-## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Publicar e sincronizar uma aplicação de linha de negócio a partir da Google Play for Work Store
+    ![Exemplo: aprovar a aplicação na loja do Google Play for Work](media/approve.png)</br>
+    
+  É aberta uma janela da aplicação a pedir-lhe para dar permissões para a aplicação efetuar diversas operações. 
 
-1. Aceda ao Google Play Developer Console, [play.google.com/apps/publish](https://play.google.com/apps/publish).
-2. Inicie sessão com a mesma conta que utilizou para configurar a ligação entre o Intune e o Android for Work. Se estiver a iniciar sessão pela primeira vez, tem de se registar e pagar uma taxa para se tornar um membro do programa Google Developer.
-3. Na consola, selecione **Adicionar nova aplicação**.
-4. Deve carregar e fornecer informações sobre a sua aplicação da mesma forma que publica qualquer aplicação na Google Play Store. No entanto, tem de selecionar a definição **Apenas disponibilizar esta aplicação para a minha organização (<*nome da organização*>)**:<br>
-  ![Opção para apenas disponibilizar a aplicação para a sua organização](media/restrict.png)<br>
-Esta operação garante que a aplicação só está disponível para a sua organização e não está disponível na Google Play Store pública.
-Para mais informações sobre como carregar e publicar aplicações Android, consulte a [Ajuda do Google Developer Console](https://support.google.com/googleplay/android-developer/answer/113469).
-5. Assim que publicar a sua aplicação, aceda à [Google Play for Work Store](https://play.google.com/work). Inicie sessão com a mesma conta que utilizou para configurar a ligação entre o Intune e o Android for Work.
-6. No nó **Aplicações** da loja, verifique se consegue ver a aplicação que publicou. A aplicação é automaticamente aprovada para ser sincronizada com o Intune.
+4. Selecione **Aprovar** para aceitar as permissões da aplicação e continuar.</br>
 
-## <a name="assign-an-android-for-work-app"></a>Atribuir uma aplicação do Android for Work
+    ![Exemplo: aprovar permissões da aplicação](media/approve-app-permissions.png)
+
+5. Escolha como processar novos pedidos de permissão da aplicação. Em seguida, selecione **Guardar** para guardar a forma como os novos pedidos de permissão da aplicação serão processados.</br>
+
+    ![Exemplo: guardar novos pedidos de permissão da aplicação](media/approve-app-settings.png)</br>
+
+    A aplicação foi aprovada e é apresentada na consola de administração de TI. Agora, pode [sincronizar a aplicação Android for Work com o Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+
+## <a name="sync-an-android-for-work-app-with-intune"></a>Sincronizar uma aplicação Android for Work com o Intune
 
 Se tiver aprovado uma aplicação a partir da loja e não a vir no nó **Aplicações licenciadas** da carga de trabalho **Aplicações móveis**, force uma sincronização imediata da seguinte forma:
 
-1. Inicie sessão no portal do Azure.
-2. No painel **Intune**, escolha **Aplicações móveis**.
-3. Na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Android for Work**.
-4. No painel Android for Work, escolha **Sincronizar agora**.
-5. A página também apresenta a hora e o estado da última sincronização.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Aplicações móveis**.
+4. Na carga de trabalho **Aplicações móveis**, selecione **Android for Work** na secção **Configuração**.
+5. No painel Android for Work, selecione **Sincronizar**. A página irá atualizar a hora e o estado da última sincronização.
+6. Na carga de trabalho **Aplicações móveis**, selecione **Aplicações** para apresentar a recentemente disponível aplicação Android for Work.
 
-Quando a aplicação é apresentada no nó **Aplicações licenciadas** da carga de trabalho **Aplicações móveis**, pode [atribuí-la tal como atribuiria outra aplicação](/intune-azure/manage-apps/deploy-apps). Só pode atribuir a aplicação em grupos de utilizadores.
+Quando a aplicação for apresentada no nó **Licenças da aplicação** da carga de trabalho **Aplicações móveis**, pode [atribuí-la tal como atribuiria outra aplicação](/intune-azure/manage-apps/deploy-apps). Só pode atribuir a aplicação em grupos de utilizadores.
 
 Após atribuir a aplicação, esta será instalada nos dispositivos direcionados. Não é pedida aprovação da instalação ao utilizador do dispositivo.
 
@@ -86,5 +85,21 @@ Visite periodicamente a consola do managed Google Play para verificar a existên
 
 Em alternativa, pode configurar o Google Play para reaprovar automaticamente as permissões de aplicações por aplicação. 
 
+## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>Trabalhar com uma aplicação de linha de negócio a partir da Google Play for Work Store
 
+1. Aceda ao Google Play Developer Console, [play.google.com/apps/publish](https://play.google.com/apps/publish).
+2. Inicie sessão com a mesma conta que utilizou para configurar a ligação entre o Intune e o Android for Work. Se estiver a iniciar sessão pela primeira vez, tem de se registar e pagar uma taxa para se tornar um membro do programa Google Developer.
+3. Na consola, selecione **Adicionar nova aplicação**.
+4. Deve carregar e fornecer informações sobre a sua aplicação da mesma forma que publica qualquer aplicação na Google Play Store. No entanto, tem de selecionar a definição **Apenas disponibilizar esta aplicação para a minha organização (<*nome da organização*>)**:</br>
+
+    ![Opção para apenas disponibilizar a aplicação para a sua organização](media/restrict.png)</br>
+
+Esta operação garante que a aplicação só está disponível para a sua organização e não está disponível na Google Play Store pública.
+Para mais informações sobre como carregar e publicar aplicações Android, consulte a [Ajuda do Google Developer Console](https://support.google.com/googleplay/android-developer/answer/113469).
+5. Assim que publicar a sua aplicação, aceda à [Google Play for Work Store](https://play.google.com/work). Inicie sessão com a mesma conta que utilizou para configurar a ligação entre o Intune e o Android for Work.
+6. No nó **Aplicações** da loja, verifique se consegue ver a aplicação que publicou. A aplicação é automaticamente aprovada para ser sincronizada com o Intune.
+
+## <a name="next-steps"></a>Próximos passos
+
+- [Como atribuir aplicações a grupos](apps-deploy.md)
 

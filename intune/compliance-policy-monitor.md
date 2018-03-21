@@ -1,10 +1,10 @@
 ---
-title: "Monitorizar as políticas de conformidade do dispositivo do Intune"
-titlesuffix: Azure portal
-description: "Saiba como monitorizar as políticas de conformidade do dispositivo"
+title: "Monitorizar políticas de conformidade de dispositivos do Microsoft Intune"
+titlesuffix: 
+description: "Utilize o dashboard de conformidade do dispositivo para monitorizar a conformidade global de dispositivos, ver relatórios e ver a conformidade do dispositivo por política e por definição."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
-ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
+ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -25,15 +25,15 @@ Os relatórios de conformidade ajudam os administradores a analisarem a postura 
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Utilize os seguintes passos para encontrar o **Dashboard de conformidade do Dispositivo do Intune** no portal do Azure:
+Siga estes passos para encontrar o **Dashboard de conformidade do Dispositivo do Intune** no portal do Azure:
 
 1.  Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as credenciais do Intune.
 
-2.  Selecione **Mais serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+2.  Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
 3.  Escolha **Intune** &gt; **Conformidade do dispositivo** &gt; **Descrição geral** e, em seguida, o **Dashboard de conformidade do dispositivo** é aberto.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Os dispositivos têm de ser inscritos no Intune para receberem políticas de conformidade do dispositivo.
 
 ## <a name="device-compliance-dashboard"></a>Dashboard de conformidade do dispositivo
@@ -46,7 +46,7 @@ No **Dashboard de conformidade do dispositivo**, pode monitorizar os estados da 
 
 -   Conformidade do dispositivo por definição
 
-![Dashboard de conformidade do dispositivo](./media/idc-1.png)
+![Imagem que mostra o Dashboard de conformidade do dispositivo](./media/idc-1.png)
 
 Também pode ver as definições e políticas de conformidade específicas que se aplicam a um dispositivo individual e o estado de conformidade final para cada uma dessas definições no dispositivo.
 
@@ -62,44 +62,44 @@ Também pode ver as definições e políticas de conformidade específicas que s
 
     -   Saiba mais sobre as Ações para dispositivos não conformes.
 
--   **Dispositivos não sincronizados:** o dispositivo não comunicou o seu estado de política de conformidade do dispositivo devido a um dos seguintes motivos:
+-   **Dispositivo não sincronizado:** o dispositivo não comunicou o seu estado de política de conformidade do dispositivo devido a um dos motivos seguintes:
 
     -   **Desconhecido**: o dispositivo está offline ou não conseguiu comunicar com o Intune ou o Azure AD por outros motivos.
 
     -   **Erro**: o dispositivo não conseguiu comunicar com o Intune e o Azure AD e recebeu uma mensagem de erro com o motivo.
 
-> [!IMPORTANT] 
-> Os dispositivos que estão inscritos no Intune, mas não visados pelas políticas de conformidade do dispositivo, são incluídos neste relatório sob o bucket **Conforme**.
+> [!IMPORTANT]
+> Os dispositivos que estão inscritos no Intune, mas não visados pelas políticas de conformidade do dispositivo, são incluídos neste relatório sob o registo **Conforme**.
 
 #### <a name="drill-down-option"></a>Opção de desagregação
 
 No **Dashboard de conformidade do dispositivo**, se clicar no mosaico Conformidade do dispositivo, pode desagregar o **estado de conformidade**, o **alias de e-mail do utilizador**, o **modelo do dispositivo** e a **localização** específicos para cada dispositivo que foi visado pelas políticas de conformidade do dispositivo.
 
-![Desagregação do dashboard de conformidade do dispositivo](./media/idc-2.png)
+![Imagem que mostra a desagregação do Dashboard de conformidade do dispositivo](./media/idc-2.png)
 
 Se precisar de mais detalhes sobre um utilizador específico, pode filtrar o relatório de gráfico de Conformidade do dispositivo ao escrever o alias de e-mail do utilizador.
 
-![Utilizador específico do dashboard de conformidade do dispositivo](./media/idc-3.png)
+![Imagem que mostra o utilizador específico do Dashboard de conformidade do dispositivo](./media/idc-3.png)
 
 Também pode clicar nos diferentes estados de conformidade no gráfico de Conformidade do dispositivo para ver mais detalhes sobre os estados da política de conformidade dos dispositivos do utilizador.
 
-![Estados diferentes do dashboard de conformidade do dispositivo](./media/idc-4.png)
+![Imagem que mostra estados diferentes do Dashboard de conformidade do dispositivo](./media/idc-4.png)
 
 #### <a name="filter"></a>Filtro
 
 Se clicar no botão **Filtrar**, é apresentada a lista de filtros com as seguintes opções:
 
--   Modelo
+-   Model
 
     -   Cadeia da caixa de texto a aceitar a pesquisa gratuita
 <br></br>
--   Plataforma
+-   Platform
 
     -   Android
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -115,47 +115,28 @@ Se clicar no botão **Filtrar**, é apresentada a lista de filtros com as seguin
 
     -   Desconhecido
 
-    -   Erro
+    -   Error
 
 Se clicar no botão **Atualizar**, a lista de opções deve fechar-se e os resultados devem ser atualizados de acordo com os critérios do filtro selecionado.
 
 ##### <a name="device-details"></a>Detalhes do dispositivo
 
-Ao clicar num dispositivo, abre o **Painel Dispositivos** com o dispositivo selecionado. Este painel apresenta mais detalhes sobre a definição da política de conformidade aplicada a esse dispositivo.
-
-![Dashboard de conformidade do dispositivo](./media/idc-6.png)
+Clicar num dispositivo abre o **Painel de Dispositivos** com o dispositivo selecionado, o que fornece mais detalhes sobre a definição de política de conformidade do dispositivo aplicada para esse dispositivo.
 
 Quando clica na definição da política do dispositivo, pode ver que o nome da política de conformidade do dispositivo originou essa definição de conformidade do dispositivo visada pelo administrador.
 
-![Nome da definição de conformidade do dispositivo](./media/idc-7.png)
-
-## <a name="policy-compliance-report"></a>Relatório de conformidade de políticas
+### <a name="per-policy-device-compliance-report"></a>Relatório de conformidade do dispositivo por política
 
 Este relatório apresenta a vista da política por conformidade e o número total de dispositivos em cada estado de conformidade. O mosaico **Conformidade com a política** está disponível no **Dashboard Conformidade do dispositivo** e mostra todas as políticas criadas anteriormente pelo administrador, as plataformas em que a política está aplicada, o número de dispositivos conformes e o número de dispositivos não conformes.
 
-![Relatório de conformidade do dispositivo por política](./media/idc-8.png)
+![Imagem que mostra o Relatório de conformidade do dispositivo por política](./media/idc-8.png)
 
 Depois de clicar no mosaico Conformidade de política, clique numa das políticas de conformidade do dispositivo e pode ver o **estado de conformidade**, o **alias de e-mail do utilizador**, o **modelo do dispositivo** e a **localização** para cada dispositivo que foi visado por essa política de conformidade do dispositivo.
 
-![Mosaico Conformidade de política](./media/idc-9.png)
-
 ## <a name="setting-compliance-report"></a>Relatório de conformidade com as definições
 
-Este relatório permite-lhe ver o número total de dispositivos em cada estado de conformidade por definição de conformidade. O mosaico **Conformidade das definições** está disponível no **Dashboard Conformidade do dispositivo** e mostra todas as definições da política de conformidade do dispositivo de todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as definições de política foram aplicadas e o número de dispositivos não conformes.
+Este relatório permite-lhe ver o número total de dispositivos em cada estado de conformidade por definição de conformidade. O título **Conformidade das definições** está disponível no **Dashboard de conformidade do dispositivo** e mostra todas as definições da política de conformidade do dispositivo de todas as políticas de conformidade do dispositivo criadas pelo administrador, as plataformas nas quais as definições de política foram aplicadas e o número de dispositivos não conformes.
 
-![Relatório de conformidade do dispositivo por definição](./media/idc-10.png)
+![Imagem que mostra o Relatório de conformidade do dispositivo por definição](./media/idc-10.png)
 
 Depois de clicar no mosaico Conformidade das definições, clique numa das definições da política de conformidade do dispositivo para poder ver o **estado de conformidade**, o **alias de e-mail do utilizador**, o **modelo do dispositivo** e a **localização** de cada dispositivo que foi visado por essa definição de política de conformidade do dispositivo.
-
-![Mosaico Conformidade das definições](./media/idc-11.png)
-
-## <a name="threat-agent-status-report"></a>Relatório de estado do agente de ameaça
-
-Este relatório permite-lhe ver o estado de funcionamento do agente do Windows Defender. Através de um relatório de rollup do estado em **Conformidade do Dispositivo**, pode ver os dispositivos que necessitam das seguintes ações:
-- Atualização de assinatura
-- Reiniciar
-- Intervenção manual
-- Análise completa
-- Outros estados de agente a precisar de intervenção
-
-Um relatório de agregação para cada categoria de estado indica os PCs individuais que precisam de atenção e os PCs que estão registados como **Limpar**.

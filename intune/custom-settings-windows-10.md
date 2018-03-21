@@ -13,13 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 156d37874529b4ae5a8176d7e9a8873cf440c32c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Definições personalizadas do Microsoft Intune para dispositivos com o Windows 10 
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Definições personalizadas do Microsoft Intune para dispositivos com o Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,11 +29,11 @@ Se estiver à procura de uma determinada definição, lembre-se de que o [perfil
 ## <a name="configure-custom-settings"></a>Configurar definições personalizadas
 
 1. Utilize as instruções em [Como configurar definições personalizadas dos dispositivos no Microsoft Intune](custom-settings-configure.md) para começar.
-2. Na página **Criar Perfil**, selecione **Definições** para adicionar uma ou mais definições OMA-URI.
-3. No painel **Definições OMA-URI Personalizadas**, clique em **Adicionar** para adicionar um novo valor. Também pode clicar em **Exportar** para criar uma lista de todos os valores que configurou num ficheiro de valores separados por vírgulas (.csv).
-4. Para cada definição OMA-URI que pretende adicionar, introduza as informações seguintes. Utilize a lista neste artigo para saber mais sobre as definições que pode utilizar:
-    - **Nome da definição** – introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
-    - **Descrição da definição** – opcionalmente, introduza uma descrição para a definição.
+1. No painel **Definições OMA-URI Personalizadas**, clique em **Adicionar** para adicionar um novo valor. Também pode clicar em **Exportar** para criar uma lista de todos os valores que configurou num ficheiro de valores separados por vírgulas (.csv).
+1. Para cada definição OMA-URI que pretende adicionar, introduza as informações seguintes. Utilize a lista neste artigo para saber mais sobre as definições que pode utilizar:
+    - **Nome** – Introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
+    - **Descrição** – opcionalmente, introduza uma descrição para a definição.
+    - **OMA-URI (sensível às maiúsculas e minúsculas)** – especifique o OMA-URI para o qual pretende fornecer uma definição.
     - **Tipo de dados** – escolha entre:
         - **Cadeia**
         - **Cadeia (XML)**
@@ -41,13 +41,13 @@ Se estiver à procura de uma determinada definição, lembre-se de que o [perfil
         - **Número inteiro**
         - **Vírgula flutuante**
         - **Booleano**
-    - **OMA-URI (sensível às maiúsculas e minúsculas)** – especifique o OMA-URI para o qual pretende fornecer uma definição.
-    - **Valor** - indique o valor a associar ao OMA-URI que introduziu.
-5. Quando tiver terminado, volte à página **Criar Perfil** e clique em **Criar**.
-O perfil é criado e apresentado na página da lista de perfis.
+        - **Base64**
+    - **Valor** – indique o valor ou ficheiro a associar ao OMA-URI que introduziu.
+1. Quando tiver terminado, selecione **OK**, volte ao painel **Criar perfil** e selecione **Criar**.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="example"></a>Exemplo
-Na captura de ecrã abaixo, a definição **Connectivity/AllowVPNOverCellular** foi ativada. Isto permite que um dispositivo Windows 10 abra uma ligação VPN quando estiver numa rede celular.
+Na captura de ecrã seguinte, a definição **Connectivity/AllowVPNOverCellular** foi ativada. Isto permite que um dispositivo Windows 10 abra uma ligação VPN quando estiver numa rede celular.
 
 > ![Exemplo de uma política personalizada que contém as definições de VPN](./media/custom-policy-example.png)
 
@@ -59,5 +59,3 @@ Encontrará uma lista completa de todos os fornecedores de serviços de configur
 Nem todas as definições são compatíveis com todas as versões do Windows 10. A tabela no artigo Windows indica quais as versões suportadas para cada CSP.
 
 Além disso, o Intune não suporta todas as definições listadas no artigo. Para saber se o Intune suporta a definição que pretende, abra o artigo referente a essa definição. Cada página de definição mostra a sua operação suportada. Para trabalhar com o Intune, a definição tem de suportar as operações **Adicionar** ou **Substituir**.
-
-

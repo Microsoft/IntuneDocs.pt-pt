@@ -4,17 +4,17 @@ description: Saiba como rever os registos de auditoria que registam atividades d
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Registos de auditoria para atividades do Intune
 Os registos de auditoria proporcionam um registo das atividades que geram uma alteração no Microsoft Intune. As tarefas remotas ou as ações Criar, Atualizar (editar), Eliminar e Atribuir geram eventos de auditoria que poderá rever. Pode rever os registos de auditoria da maioria das cargas de trabalho do Intune. A auditoria é ativada por predefinição para todos os clientes e não pode ser desativada. Os eventos de auditoria começaram a ser registados na data de lançamento de funcionalidades de dezembro de 2017. Os eventos anteriores a essa data não estão disponíveis.
@@ -28,8 +28,8 @@ Os utilizadores com as seguintes permissões podem rever os registos de auditori
 ## <a name="audit-logs-for-intune-workloads"></a>Registos de auditoria das cargas de trabalho do Intune
 Pode rever os registos de auditoria no grupo Monitorização de cada carga de trabalho do Intune.  
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha a carga de trabalho para a qual quer rever os registos de auditoria.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione a carga de trabalho para a qual pretende rever os relatórios de auditoria, por exemplo, **Dispositivos**.
 4. No grupo **Monitorização** da carga de trabalho, escolha **Registos de auditoria**.
 
 ## <a name="review-audit-events"></a>Rever eventos de auditoria
@@ -39,6 +39,7 @@ Um registo de auditoria tem uma vista de lista predefinida que mostra os seguint
 
 - data e hora da ocorrência
 - Iniciado por (Ator)
+- Nome da Aplicação
 - Atividade
 - Destino(s)
 - Categoria

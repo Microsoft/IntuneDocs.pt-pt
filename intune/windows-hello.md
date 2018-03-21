@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrar o Windows Hello para Empresas com o Microsoft Intune
 
@@ -48,19 +48,19 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Criar uma política do Windows Hello para Empresas
 
-1.  No portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+1.  No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
 
-2.  Na página Intune, selecione **Inscrição de dispositivos** e, em seguida, selecione **Inscrição no Windows** > **Windows Hello para Empresas**.
+2.  No painel Intune, selecione **Inscrição de dispositivos** e, em seguida, selecione **Inscrição no Windows** > **Windows Hello para Empresas**.
 
-3.  Na página que é aberta, selecione **Predefinição**.
+3.  No painel que é aberto, selecione **Predefinição**.
 
-4.  Na página **Todos os Utilizadores**, clique em **Propriedades** e, em seguida, introduza um **Nome** e uma **Descrição** opcional para as definições do Windows Hello para Empresas.
+4.  No painel **Todos os Utilizadores**, clique em **Propriedades** e, em seguida, introduza um **Nome** e uma **Descrição** opcional para as definições do Windows Hello para Empresas.
 
-5. Na página **Todos os Utilizadores**, clique em **Definições** e, em seguida, escolha entre as seguintes opções para **Configurar o Windows Hello para Empresas**:
+5. No painel **Todos os Utilizadores**, clique em **Definições** e, em seguida, selecione entre as seguintes opções para **Configurar o Windows Hello para Empresas**:
 
     - **Desativado**. Se não pretender utilizar o Windows Hello para Empresas, selecione esta definição. Todas as outras definições no ecrã não estão disponíveis.
     - **Ativado**. Selecione esta definição se pretender configurar as definições do Windows Hello para Empresas.
-    - **Não configurado**. Selecione esta definição se não pretender utilizar o Intune para controlar as definições do Windows Hello para Empresas. Nenhuma das definições do Windows Hello para Empresas existentes em dispositivos Windows 10 será alterada. Todas as outras definições na página não estão disponíveis.
+    - **Não configurado**. Selecione esta definição se não pretender utilizar o Intune para controlar as definições do Windows Hello para Empresas. Nenhuma das definições do Windows Hello para Empresas existentes em dispositivos Windows 10 será alterada. Todas as outras definições no painel não estão disponíveis.
 
 6.  Se tiver selecionado **Ativado** no passo anterior, configure as definições obrigatórias que são aplicadas a todos os dispositivos Windows 10 e Windows 10 Mobile inscritos.
 
@@ -69,9 +69,9 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
      - **Obrigatório** (predefinição). Apenas os dispositivos com um TPM acessível podem aprovisionar o Windows Hello para Empresas.
      - **Preferencial**. Os dispositivos tentam utilizar primeiro um TPM. Se não estiver disponível, podem utilizar a encriptação de software.
 
- - **Pedir comprimento mínimo do PIN**/**Pedir comprimento máximo do PIN**. Configura os dispositivos para utilizar os comprimentos mínimo e máximo do PIN que especificar para ajudar a garantir o início de sessão seguro. O comprimento predefinido do PIN é de seis carateres, mas pode impor um comprimento mínimo de quatro carateres. O comprimento máximo do PIN é de 127 carateres.
+ - **Comprimento mínimo do PIN**/**Comprimento máximo do PIN**. Configura os dispositivos para utilizar os comprimentos mínimo e máximo do PIN que especificar para ajudar a garantir o início de sessão seguro. O comprimento predefinido do PIN é de seis carateres, mas pode impor um comprimento mínimo de quatro carateres. O comprimento máximo do PIN é de 127 carateres.
 
- - **Pedir letras minúsculas no PIN**/**Pedir letras maiúsculas no PIN**/**Pedir carateres especiais no PIN**. Pode impor um PIN mais forte ao exigir a utilização de letras maiúsculas, letras minúsculas e carateres especiais no PIN. Escolha entre:
+ - **Letras minúsculas no PIN**/**Letras maiúsculas no PIN**/**Carateres especiais no PIN**. Pode impor um PIN mais forte ao exigir a utilização de letras maiúsculas, letras minúsculas e carateres especiais no PIN. Escolha entre:
 
      - **Permitido**. Os utilizadores podem utilizar o tipo de caráter no PIN, mas não é obrigatório.
 
@@ -90,7 +90,7 @@ Para garantir que os conflitos de políticas são resolvidos e que a política d
 
  - **Utilizar anti-spoofing avançado, quando disponível**. Configura se as funcionalidades de anti-spoofing do Windows Hello são utilizadas nos dispositivos que o suportam (por exemplo, detetar uma fotografia de um rosto em vez de um rosto real).<br>Se isto estiver definido como **Sim**, o Windows requer que todos os utilizadores utilizem anti-spoofing para funcionalidades faciais, quando suportado.
 
- - **Utilizar o início de sessão no telefone**. Se esta opção estiver definida como **Sim**, os utilizadores podem utilizar um passaporte remoto para servir de dispositivo complementar portátil para autenticação de computadores de secretária. O computador de secretária tem de estar associado ao Azure Active Directory e o dispositivo complementar tem de ser configurado com um PIN do Windows Hello para Empresas.
+ - **Permitir o início de sessão no telefone**. Se esta opção estiver definida como **Sim**, os utilizadores podem utilizar um passaporte remoto para servir de dispositivo complementar portátil para autenticação de computadores de secretária. O computador de secretária tem de estar associado ao Azure Active Directory e o dispositivo complementar tem de ser configurado com um PIN do Windows Hello para Empresas.
 
 ## <a name="windows-holographic-for-business-support"></a>Suporte do Windows Holographic for Business
 

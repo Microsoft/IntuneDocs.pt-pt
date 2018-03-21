@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
 
@@ -34,18 +34,19 @@ Para tirar partido do Início de Sessão Único em dispositivos iOS, precisa de 
 
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. Na página **Intune**, selecione **Configuração do dispositivo**.
-2. Na página **Configuração do dispositivo**, selecione **Perfis**.
-3. Na página de perfis, selecione **Criar Perfil**, forneça um nome e descrição e configure as seguintes definições:
-   - **Plataforma**: selecione **iOS**. 
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No painel **Intune**, selecione **Configuração do dispositivo**.
+4. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
+5. No painel de perfis, selecione **Criar perfil**.
+6. Forneça um nome e descrição e configure as seguintes definições:
+   - **Plataforma**: selecione **iOS**.
    - **Tipo de perfil**: selecione **Funcionalidades do dispositivo**.
-4. Na página **Funcionalidades de dispositivos**, selecione **Início de Sessão Único**.
+7. No painel **Funcionalidades de dispositivos**, selecione **Início de Sessão Único**.
 
-   ![Página Início de Sessão Único](./media/sso-blade.png)
+   ![Painel Início de Sessão Único](./media/sso-blade.png)
 
-2. Utilize a seguinte tabela de resumo para obter ajuda no preenchimento dos campos na página **Início de Sessão Único**. Para obter detalhes, veja as secções a seguir à tabela.
-   
+8. Utilize a seguinte tabela de resumo para obter ajuda no preenchimento dos campos no painel **Início de Sessão Único**. Para obter detalhes, veja as secções a seguir à tabela.
+
    |Campo  |Notas|
    |---------|---------|
    |**Atributo de nome de utilizador do AAD**|O atributo que o Intune procura para cada utilizador no AAD e cujo campo (como o UPN) povoa antes de gerar o payload XML que é instalado no dispositivo.|
@@ -95,8 +96,8 @@ O campo **Nome da Aplicação** é utilizado para adicionar um nome simples para
 
 ### <a name="credential-renewal-certificate"></a>Certificado de renovação de credenciais
 
-Se autenticar os seus utilizadores finais com certificados (não palavras-passe), utilize este campo para selecionar o certificado SCEP ou PFX implementado para o utilizador como certificado de autenticação. Normalmente, este é o mesmo certificado que é implementado para o utilizador para outros perfis, como VPN, Wi-Fi ou E-mail.
+Se autenticar os seus utilizadores finais com certificados (não palavras-passe), utilize este campo para selecionar o certificado SCEP ou PFX implementado para o utilizador como certificado de autenticação. Normalmente, este é o mesmo certificado que é implementado para o utilizador para outros perfis, como VPN, Wi-Fi ou e-mail.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para obter mais informações sobre a configuração de funcionalidades dos dispositivos, veja [Como configurar as definições das funcionalidades dos dispositivos no Microsoft Intune](device-features-configure.md).

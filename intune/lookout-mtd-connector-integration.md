@@ -1,7 +1,7 @@
 ---
-title: "Configurar a sua integração do Lookout com o Intune"
-titlesuffix: Azure portal
-description: "Configurar a sua subscrição do Lookout com o Intune"
+title: "Configurar a sua integração do Lookout com o Microsoft Intune"
+titlesuffix: 
+description: "Saiba mais sobre como integrar o Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Lookout para controlar o acesso de dispositivos móveis aos seus recursos empresariais."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a sua integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -133,6 +133,6 @@ A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaça
 ## <a name="watching-enrollment"></a>Monitorizar as inscrições
 Quando a configuração estiver concluída, a Defesa Contra Ameaças para Dispositivos Móveis do Lookout inicia uma consulta no Azure AD para detetar dispositivos que correspondam aos grupos de inscrição especificados.  Poderá encontrar informações sobre os dispositivos inscritos no módulo Dispositivos.  O estado inicial dos dispositivos é apresentado como Pendente.  O estado dos dispositivos é alterado assim que a aplicação Lookout for Work for instalada, aberta e ativada nos mesmos.  Para obter detalhes sobre como instalar a aplicação Lookout for Work no dispositivo pretendido, veja [Adicionar aplicações Lookout for Work com o Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Set up Lookout apps (Configurar aplicações do Lookout)](mtd-apps-ios-app-configuration-policy-add-assign.md)

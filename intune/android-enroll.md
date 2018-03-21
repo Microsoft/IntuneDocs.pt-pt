@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
@@ -55,9 +55,9 @@ Se estiver a inscrever dispositivos Android dor Work através de uma conta de [G
 1. **Configurar o Intune MDM**<br>
 Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](mdm-authority-set.md) como **Microsoft Intune**.
 2. **Configurar o enlace do Android for Work**<br>
-    Como administrador do Intune, no Portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+    Como administrador do Intune, no [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
 
-   a. No painel **Intune**, selecione **Inscrição de dispositivos** > **Inscrição de Android for Work** e selecione **Configurar** para abrir o site do Android for Work do Google Play. O site abre num novo separador do seu browser.
+   a. No painel **Intune**, selecione **Inscrição de dispositivos** > **Inscrição de Android for Work** e selecione **Google Play gerido – Configurar** para abrir o Web site do Android for Work do Google Play. O site abre num novo separador do seu browser.
    ![Ecrã de inscrição do Android for Work](./media/android-work-bind.png)
 
    b. **Iniciar sessão no Google**<br>
@@ -106,7 +106,7 @@ Pode desativar a gestão e inscrição do Android for Work. Selecionar **Anular 
 ### <a name="to-unbind-an-android-for-work-account"></a>Para anular o enlace de uma conta Android for Work
 
 1. **Anular o enlace do Android for Work**<br>
-    Como administrador do Intune, no Portal do Azure, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.  No painel **Intune**, selecione **Inscrição de dispositivos**, > **Inscrição do Android for Work** e, em seguida, selecione **Anular o enlace**.
+    Como administrador do Intune, no [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.  No painel **Intune**, selecione **Inscrição de dispositivos**, > **Inscrição do Android for Work** e, em seguida, selecione **Anular o enlace**.
 
 2. **Concorde com a eliminação do enlace do Android for Work**<br>
   Selecione **Sim** para eliminar o enlace e anular a inscrição de todos os dispositivos Android for Work do Intune.
