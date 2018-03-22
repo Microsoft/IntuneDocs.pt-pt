@@ -1,25 +1,25 @@
 ---
-title: "Configurar a sua integração do Lookout com o Microsoft Intune"
-titlesuffix: 
-description: "Saiba mais sobre como integrar o Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Lookout para controlar o acesso de dispositivos móveis aos seus recursos empresariais."
-keywords: 
+title: Configurar a sua integração do Lookout com o Microsoft Intune
+titlesuffix: ''
+description: Saiba mais sobre como integrar o Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Lookout para controlar o acesso de dispositivos móveis aos seus recursos empresariais.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a sua integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -72,8 +72,6 @@ Utilize os seguintes passos para reunir as informações que deve fornecer à eq
 2.  O primeiro início de sessão na consola do Lookout tem de ser efetuado por uma conta de utilizador com a função de Administrador Global do Azure AD para registar o seu inquilino do Azure AD. Posteriormente, não será necessário este nível de privilégio do Azure AD para iniciar sessão. É apresentada uma página de consentimento. Selecione **Aceitar** para concluir o registo. Depois de aceitar e consentir, será redirecionado para a Consola do Lookout.
 
     ![captura de ecrã da página de primeiro início de sessão da consola do Lookout](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Consulte a [resolução de problemas de integração do Lookout](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) para obter ajuda com problemas de início de sessão.
 
 3.  Na [Consola do Lookout](https://aad.lookout.com), no módulo **Sistema**, selecione o separador **Conectores** e selecione **Intune**.
 

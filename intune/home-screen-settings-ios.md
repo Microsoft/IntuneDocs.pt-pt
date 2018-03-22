@@ -1,23 +1,23 @@
 ---
-title: "Definições de esquema do ecrã principal do Microsoft Intune para dispositivos iOS"
-titlesuffix: Azure portal
-description: "Saiba quais são as definições que pode utilizar para personalizar o ecrã principal e a dock em dispositivos iOS."
-keywords: 
+title: Definições de esquema do ecrã principal do Microsoft Intune para dispositivos iOS
+titleSuffix: ''
+description: Saiba mais sobre as definições do Microsoft Intune que pode utilizar para personalizar o ecrã principal e a dock em dispositivos com iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Definições de esquema do ecrã principal do Microsoft Intune para dispositivos iOS
 
@@ -31,11 +31,11 @@ Os dispositivos iOS com um perfil atribuído têm de estar no modo supervisionad
 2. No painel **Funcionalidades do dispositivo**, selecione **Esquema de Ecrã Principal (apenas supervisionado)**.
 3. No painel **Esquema de Ecrã Principal (apenas supervisionado)**, selecione se quer configurar os esquemas da **Dock** ou das **Páginas**.
 
-## <a name="add-items-to-the-dock"></a>Adicionar itens à dock
+## <a name="add-items-to-the-dock"></a>Adicionar itens à estação de ancoragem
 
 No painel **Dock**, pode adicionar até seis itens ou pastas à dock do ecrã iOS. No entanto, existem vários dispositivos que suportam menos itens. Por exemplo, os dispositivos iPhone suportam até quatro itens. Neste caso, apenas os primeiros quatro itens que configurou serão apresentados no dispositivo.
 
-1. Escolha **Adicionar** para adicionar um item à dock.
+1. Escolha **Adicionar** para adicionar um item à estação de ancoragem.
 2. No painel **Adicionar Linha**, selecione se quer adicionar uma **Aplicação** ou **Pasta**.
 3. Utilize as informações contidas neste tópico para configurar as aplicações e pastas que pretende que sejam apresentadas na dock.
 4. Continue a adicionar itens. Quando tiver terminado, clique em **OK** em cada painel até regressar ao painel **Criar Perfil**. Selecione **Criar**.
@@ -45,13 +45,13 @@ No painel **Dock**, pode adicionar até seis itens ou pastas à dock do ecrã iO
 
 ### <a name="example"></a>Exemplo
 
-Neste exemplo, configurou o ecrã da dock para mostrar apenas as aplicações Safari, Correio e Bolsa. Na imagem seguinte, a aplicação Correio está selecionada para mostrar as suas propriedades:
+Neste exemplo, configurou o ecrã da estação de ancoragem para mostrar apenas as aplicações Safari, Correio e Bolsa. Na imagem seguinte, a aplicação Correio está selecionada para mostrar as suas propriedades:
 
-![Exemplo de definições da dock do iOS](./media/FfFiUcP.png)
+![Exemplo de definições da estação de ancoragem do iOS](./media/FfFiUcP.png)
 
 Ao atribuir uma política a um iPhone, criará uma dock com aspeto semelhante à seguinte captura de ecrã:
 
-![Exemplo de esquema da dock do iOS no iPhone](./media/bAgCe8F.png)
+![Exemplo de esquema da estação de ancoragem do iOS no iPhone](./media/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>Adicionar páginas ao Ecrã principal
 
@@ -76,7 +76,7 @@ Ao atribuir a política a um iPhone, criará uma página com um aspeto semelhant
 
 1. Introduza o **Nome da Aplicação**. Este nome é utilizado para sua referência no portal do Azure e *não é apresentado* no dispositivo iOS.
 2. Introduza o **ID do Pacote de Aplicações** da aplicação que pretende apresentar. Para obter ajuda, veja **Referência de ID do pacote para aplicações iOS incorporadas** mais adiante neste tópico.
-3. Clique em **OK** e continue a adicionar itens, até um máximo de **6** para a dock do dispositivo, e **60** para uma página do dispositivo.
+3. Clique em **OK** e continue a adicionar itens, até um máximo de **6** para a estação de ancoragem do dispositivo, e **60** para uma página do dispositivo.
 4. Quando concluir o procedimento, clique em **OK**.
 
 ## <a name="how-to-add-a-folder-to-the-list"></a>Como adicionar uma pasta à lista
