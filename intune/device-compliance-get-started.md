@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Começar a utilizar políticas de conformidade de dispositivos do Microsoft Intune
 
@@ -73,7 +73,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 Tem de ter as seguintes subscrições para utilizar as políticas de conformidade do dispositivo com o Intune:
 
-- EMS do Intune
+- Intune
 
 - Azure AD Premium
 
@@ -145,7 +145,7 @@ Se um dispositivo tiver múltiplas políticas de conformidade atribuídas e esta
 |---------|---------|
 |Unknown     |1|
 |NotApplicable     |2|
-|Compliant|3|
+|Compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
 |Error|6|
@@ -185,7 +185,7 @@ As políticas de conformidade de dispositivos criadas no [portal clássico do In
 
 Se quiser tirar partido das novas funcionalidades relacionadas com a conformidade de dispositivos no portal do Azure, terá de criar novas políticas de conformidade de dispositivos no próprio portal do Azure. Se atribuir uma nova política de conformidade de dispositivos no portal do Azure a um utilizador a quem também tenha sido atribuída uma política de conformidade de dispositivos do portal clássico do Intune, as políticas de conformidade de dispositivos do Intune no portal do Azure terão precedência sobre as criadas no portal clássico do Intune.
 
-##  <a name="next-steps"></a>Passos seguintes
+##  <a name="next-steps"></a>Próximos passos
 
 - Crie uma política de conformidade de dispositivos para as seguintes plataformas:
 
