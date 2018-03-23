@@ -1,24 +1,24 @@
 ---
-title: "Inscrever-se para uma avaliação gratuita de 30 dias do Microsoft Intune"
-titleSuffix: Azure portal
-description: "Como inscrever-se numa avaliação gratuita de 30 dias do Intune.\""
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Inscrever-se para uma avaliação gratuita de 30 dias do Microsoft Intune
+titleSuffix: Microsoft Intune
+description: Saiba como inscrever-se numa avaliação gratuita de 30 dias do Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Inscreva-se numa avaliação gratuita do Microsoft Intune
 
@@ -30,11 +30,15 @@ Este artigo explica-lhe como se inscrever numa versão de avaliação do Intune 
 
 * Se a maioria das suas operações de TI e dos seus utilizadores estiverem numa região diferente da sua, pode querer selecionar essa região em **Onde está situada a sua empresa?**.
 
-2. No final do processo de inscrição, recebe uma mensagem com as informações da sua conta nova. <br/> ![Imagem das informações da conta](./media/2-end-of-sign-up-process.png) <br/>Nesta fase, se clicar em **Está pronto para começar**, é direcionado para o Centro de Administração do Office 365, onde pode adicionar utilizadores ao seu ambiente de teste. <br/><br/>No entanto, se desejar ir diretamente para o Intune no portal do Azure, abra uma nova janela do browser e introduza **https://portal.azure.com** na barra de endereço. É direcionado para a página de início de sessão do Azure, onde poderá utilizar as credenciais que lhe foram dadas para iniciar sessão. Utilize este endereço sempre que quiser iniciar sessão na versão de avaliação do Intune. <br/> ![Imagem da página de início de sessão do portal do Azure](./media/azure-portal-signin.png)
+2. No final do processo de inscrição, recebe uma mensagem com as informações da sua conta nova. <br/> 
+
+![Imagem das informações da conta](./media/2-end-of-sign-up-process.png) <br/>
+
+Nesta fase, se clicar em **Está pronto para começar**, é direcionado para o Centro de Administração do Office 365, onde pode adicionar utilizadores ao seu ambiente de teste. <br/><br/>No entanto, se pretender ir diretamente para o Intune no portal do Azure, abra uma nova janela do browser e introduza **https://portal.azure.com** na barra de endereço. É direcionado para a página de início de sessão do Azure, onde poderá utilizar as credenciais que lhe foram dadas para iniciar sessão. Utilize este endereço sempre que quiser iniciar sessão na versão de avaliação do Intune. <br/> ![Imagem da página de início de sessão do portal do Azure](./media/azure-portal-signin.png)
 
 Na primeira vez que iniciar sessão no Intune no [portal do Azure](https://portal.azure.com), poderá não ver o Intune no dashboard do Azure. Para adicionar o serviço do Intune ao seu dashboard do Azure:
 1. Selecione **Todos os serviços >** na lista de serviços do Azure que se encontra à esquerda do dashboard e escreva **Intune** na caixa de pesquisa.
-2. Selecione **Intune** na lista e, em seguida, selecione a estrela para adicionar o serviço à lista de serviços.<br/> ![Imagem a apresentar a seleção do Intune a partir da lista de serviços](./media/azure-add-intune1.png)
+2. Selecione **Intune** na lista e, em seguida, selecione a estrela para adicionar o serviço à lista de serviços.<br/> ![Imagem de seleção do Microsoft Intune no portal do Azure](./media/azure-add-intune1.png)
 3. Em seguida, selecione **Intune** na lista de serviços para abrir o dashboard do Intune.
 
 Quando se inscreve para uma versão avaliação, também receberá uma mensagem de e-mail com as informações da sua conta para o endereço de e-mail que indicou durante o processo de inscrição. Este e-mail confirma que a sua versão de avaliação está ativa.

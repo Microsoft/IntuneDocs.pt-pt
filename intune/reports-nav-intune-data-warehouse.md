@@ -1,24 +1,25 @@
 ---
-title: "API do Armazém de Dados do Intune | Documentos da Microsoft"
-description: "Pode utilizar a API para criar relatórios que fornecem informações sobre o ambiente móvel da sua empresa."
-keywords: "Armazém de Dados do Intune"
+title: API do Armazém de Dados do Intune
+titlesuffix: Microsoft Intune
+description: Pode utilizar a API do Armazém de Dados do Intune para criar relatórios que forneçam informações sobre o ambiente móvel da sua empresa.
+keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5c12ea4212bf7276b2cb0a4b09ecff648d67583
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7291e6f0d6094801383ba7fd606c0238e85ba01f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>API do Armazém de Dados do Intune
 
@@ -65,4 +66,4 @@ Saiba mais sobre como trabalhar com o Azure AD ao ler [Cenários de Autenticaç�
 
 Encontre recursos de OData em [odata.org](http://www.odata.org).
   
-Consulte a versão 4.0 padrão de OData em [Versão 4.0 de OData] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Consultar a norma da Verão 4.0 de OData em OData Version 4.0 (Versão 4.0 de OData) (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

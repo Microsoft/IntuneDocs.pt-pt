@@ -1,27 +1,30 @@
 ---
-title: "Definições de políticas de MAM para iOS"
-description: "Este tópico descreve as definições da política de gestão de aplicações móveis para dispositivos iOS."
-keywords: 
+title: Definições de políticas de MAM para iOS
+description: Este tópico descreve as definições da política de gestão de aplicações móveis para dispositivos iOS.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>Definições das políticas de proteção de aplicações móveis para iOS
+
+> [!IMPORTANT]
+> Os conteúdos nesta página estão, em grande parte, desatualizados. As políticas de proteção de aplicações do Intune foram migradas completamente para o Portal do Azure. Saiba mais sobre as [políticas de proteção de aplicações do Intune para iOS no portal do Azure](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

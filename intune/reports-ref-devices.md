@@ -1,24 +1,25 @@
 ---
-title: "Dispositivos – Armazém de Dados do Intune | Microsoft Docs"
-description: "Tópico de referência para a categoria Devices das coleções de entidades na API do Armazém de Dados do Intune."
-keywords: "Armazém de Dados do Intune"
+title: Dispositivos – Armazém de Dados do Intune
+titlesuffix: Microsoft Intune
+description: Tópico de referência para a categoria Devices das coleções de entidades na API do Armazém de Dados do Intune.
+keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f304e07de7ceefb09152aeb30d113c378e716d38
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d8a7aeba4170bf6640083b95562d644299693f31
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
@@ -142,8 +143,8 @@ A entidade **MdmStatuses** indica o estado de conformidade do dispositivo.
 | MdmStatusID  | ComplianceStatus | Descrição |
 |---------|------------|--------|
 | 0 |Unknown |O estado de conformidade do dispositivo é desconhecido. |
-| 1 |Conforme |O dispositivo está em conformidade. |
-| 2 |Não conforme |O dispositivo não está em conformidade. |
+| 1 |Compatível |O dispositivo está em conformidade. |
+| 2 |Não compatível |O dispositivo não está em conformidade. |
 | 3 |Conflito |A conformidade do dispositivo resultou num conflito. |
 | 4 |Error |Ocorreu um erro ao ler o estado de conformidade do dispositivo. |
 

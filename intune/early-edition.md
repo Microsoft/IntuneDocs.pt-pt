@@ -1,25 +1,25 @@
 ---
-title: "Edição antecipada"
-description: 
-keywords: 
+title: Edição antecipada
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>A edição antecipada do Microsoft Intune – março de 2018
 
@@ -147,6 +147,33 @@ Poderá criar categorias de eBook personalizadas e depois atribuir eBooks do VPP
 
 Iremos atualizar a aplicação Portal da Empresa para Android para seguir as diretrizes de [Conceção do Material](https://material.io/) do Android. Iremos publicar imagens dos ícones novos no artigo [Novidades na IU da aplicação](whats-new-app-ui.md) aquando do lançamento da aplicação. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Suporte móvel para o Microsoft Edge para políticas de proteção de aplicações do Intune <!-- 1817882 -->
+
+O browser Microsoft Edge para dispositivos móveis suportará as políticas de proteção de aplicações definidas no Intune.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Utilize um nome único completo como nome do requerente num certificado SCEP <!--2221763 eeready-->
+Quando cria um perfil de certificado SCEP, tem de introduzir um Nome do Requerente. Poderá utilizar um nome único completo como nome do requerente. Para **Nome do Requerente**, selecione **Personalizado** e, em seguida, escreva `CN={{OnPrem_Distinguished_Name}}`. Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, certifique-se de que sincroniza o atributo de utilizador `onpremisesdistingishedname` com o [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Os dispositivos iOS recebem um pedido de PIN a cada 15 minutos <!--1550837 eeready-->
+Após ser aplicada uma política de conformidade ou de configuração para um dispositivo iOS, os utilizadores receberão um pedido de PIN a cada 15 minutos. Os utilizadores continuarão a receber o pedido até que seja definido um PIN.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Permitir a partilha de contactos através do Bluetooth – Android for Work <!--1098983 eeready-->
+Por predefinição, o Android impede que os contactos do perfil de trabalho sincronizem com dispositivos Bluetooth. Como resultado, os contactos do perfil de trabalho não são apresentados no ID do autor da chamada em dispositivos Bluetooth.
+
+Existirá uma nova definição em **Android for Work** > **Restrições do dispositivo** > **Definições do perfil de trabalho**:
+- Partilha de contactos através de Bluetooth
+
+O administrador do Intune pode configurar estas definições para permitir a partilha. É um procedimento útil para emparelhar um dispositivo com outro dispositivo Bluetooth utilizado em automóveis que apresente o ID do autor da chamada e permita uma utilização mãos-livres. Quando ativada, os contactos do perfil de trabalho são apresentados. Quando desativada, os contactos do perfil de trabalho não são apresentados.
+
+Aplica-se a: dispositivos de perfil de trabalho Android em Android OS v6.0 e mais recentes.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Agendar as suas atualizações automáticas <!--1805514 -->
+
+O Intune dá-lhe controlo sobre quando instalar as atualizações automáticas com as [definições da Cadência de Atualizações do Windows](windows-update-for-business-configure.md). Poderá agendar atualizações recorrentes, incluindo a semana, o dia e a hora das mesmas. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Desativar as verificações no reinício do dispositivo <!--1805490 -->
+
+O Intune dá-lhe o controlo para [gerir as atualizações de software](windows-update-for-business-configure.md). A propriedade **Verificações de reinício** será adicionada e ativada por predefinição. Para ignorar as verificações habituais que ocorrem ao reiniciar um dispositivo (como as verificações de utilizadores ativos, níveis de bateria, entre outras), selecione **Ignorar**. 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Poderá personalizar a cor do tema nas aplicações do Portal da Empresa com có
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Novas definições do Windows Defender Credential Guard foram adicionadas às definições de proteção de ponto final <!--1102252 --> 
 
-As novas definições do [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) serão adicionadas a **Configuração de dispositivos** > **Perfis** > **Proteção de ponto final**. Serão adicionadas as seguintes definições: 
+Serão adicionadas novas definições do Windows Defender Credential Guard (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) a **Configuração do dispositivo** > **Perfis** > **Proteção de ponto final**. Serão adicionadas as seguintes definições: 
 
 - Nível de Segurança da Plataforma: especifique se o Nível de Segurança da Plataforma está ativado no próximo reinício. A segurança baseada em virtualização necessita do Arranque Seguro. Opcionalmente, a segurança baseada em virtualização pode ser ativada com a utilização de proteções de acesso direto à memória (DMA). As proteções de DMA necessitam de suporte de hardware e serão ativadas apenas em dispositivos configurados corretamente.
 - Segurança Baseada em Virtualização: especifique se a segurança baseada em virtualização está ativada no próximo reinício. 
@@ -185,29 +212,6 @@ Para os perfis de educação, as novas definições estarão disponíveis na cat
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Configuração do aprovisionamento de aplicações iOS <!-- 1581650 -->
 Poderá atribuir perfis de aprovisionamento de aplicações iOS para impedir que as suas aplicações expirem ao incluir ou excluir grupos de segurança.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Novas definições do Windows Defender Exploit Guard <!-- 631893 -->
-
-Estarão disponíveis seis novas definições de **Redução da Superfície de Ataque** e funcionalidades expandidas de **Acesso a pastas controladas: proteção de pastas**. Estas definições encontram-se em: Configuração do dispositivo\Perfis\
-Criar perfil\Proteção de ponto final\Windows Defender Exploit Guard.
-
-#### <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque
-
-|Nome da definição  |Opções da definição  |Descrição  |
-|---------|---------|---------|
-|Proteção de ransomware avançada|Ativado, Auditar, Não configurado|Utilize proteção contra ransomware intensiva.|
-|Sinalizar o roubo de credenciais do subsistema de autoridade de segurança local do Windows|Ativado, Auditar, Não configurado|Sinalize o roubo de credenciais do subsistema de autoridade de segurança local do Windows (Lsass.exe).|
-|Criação de processos com os comandos PsExec e WMI|Bloquear, Auditar, Não configurado|Bloqueie a criação de processos provenientes de comandos PsExec e WMI.|
-|Processos não fidedignos e não assinados executados a partir de USB|Bloquear, Auditar, Não configurado|Bloqueie processos não fidedignos e não assinados executados a partir de USB.|
-|Ficheiros executáveis que não cumprem uma lista de critérios de prevalência, idade ou fidedignidade|Bloquear, Auditar, Não configurado|Impeça ficheiros executáveis de serem executados a menos que cumpram uma lista de critérios de prevalência, idade ou fidedignidade.|
-
-#### <a name="controlled-folder-access"></a>Acesso a pastas controladas
-
-|Nome da definição  |Opções da definição  |Descrição  |
-|---------|---------|---------|
-|Proteção de pastas (já implementada)|Não configurado, Ativar, Apenas auditoria (já implementada)<br><br> **Novidade**<br>Bloquear modificação do disco, Auditar modificação do disco|
-Proteja ficheiros e pastas contra alterações não autorizadas por aplicações não fidedignas.<br><br>**Ativar**: impede que aplicações não fidedignas modifiquem ou eliminem ficheiros em pastas protegidas e escrevam em setores do disco.<br><br>
-**Bloquear apenas a modificação do disco**:<br>Impeça que aplicações não fidedignas escrevam em setores do disco. As aplicações não fidedignas continuam a poder modificar ou eliminar ficheiros em pastas protegidas.|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Novas definições do Windows Defender Application Guard <!-- 1631890 -->
 

@@ -1,25 +1,25 @@
 ---
-title: "Autenticação apenas com a aplicação do Armazém de Dados do Intune"
-titlesuffix: Azure portal
-description: "Este tópico descreve a autenticação apenas com a aplicação do Armazém de Dados\""
-keywords: 
+title: Autenticação apenas com a aplicação do Armazém de Dados do Intune
+titleSuffix: Microsoft Intune
+description: Este artigo descreve a autenticação apenas com a aplicação do Armazém de Dados.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a4964293b062f42becc34b14fe44cb827c44360
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: e926d3d9e9dfbf6025fb36fd54e64f28b662fc89
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticação apenas com a aplicação do Armazém de Dados do Intune
 
@@ -158,6 +158,6 @@ Com o Visual Studio, crie um projeto de Aplicação de Consola (.NET Framework) 
     >[!NOTE] 
     > Para ver código de implementação adicional, veja [Exemplo de código do Armazém de Dados do Intune](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos Passos
 Saiba mais sobre o Azure Key Vault ao rever [O que é o Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
 

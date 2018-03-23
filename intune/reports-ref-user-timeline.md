@@ -1,34 +1,35 @@
 ---
-title: "Linha Cronológica da Entidade do Utilizador do Armazém de Dados | Microsoft Docs"
-description: "O Armazém de Dados do Intune representa os Utilizadores numa linha cronológica."
-keywords: "Armazém de Dados do Intune"
+title: Linha Cronológica da Entidade do Utilizador do Armazém de Dados
+titlesuffix: Microsoft Intune
+description: Saiba como o Armazém de Dados do Intune representa os Utilizadores numa linha cronológica.
+keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Representação da duração do utilizador no Armazém de Dados do Intune
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representação da duração do utilizador no Armazém de Dados do Microsoft Intune
 
 Pode utilizar o mês dos instantâneos de dados armazenados no Armazém de Dados do Intune para responder a perguntas sobre tendências baseadas no tempo. Por exemplo, pode ver o número de utilizadores que são adicionados ao longo de um mês. Também poderá perguntar qual é o número de utilizadores que foram removidos do sistema.
 
-Para obter esta informação, o armazém de dados armazena informação histórica, o que significa que pode controlar a duração de uma entidade. O armazém regista quando uma entidade foi criada, quando o estado da entidade é alterado e quando uma entidade é eliminada. Com o histórico capturado com instantâneos de valores quantitativos diários, pode comparar um dia com o dia anterior e assim sucessivamente.
+Para obter este tipo de informações, o armazém de dados armazena informações históricas. O armazém de dados consegue registar a duração de uma entidade. O armazém regista quando uma entidade foi criada, quando o estado da entidade é alterado e quando uma entidade é eliminada. Com o histórico capturado com instantâneos de valores quantitativos diários, pode comparar um dia com o dia anterior e assim sucessivamente.
 
 Trabalhar com durações de entidades pode ser confuso, uma vez que as entidades mudam de estado. Isto significa que se observar um instantâneo no dia 30, pode não existir qualquer registo de utilizador no estado ativo nos dados. No dia 29 e 28, o registo da entidade pode existir como ativo. Antes do dia 28, o utilizador não existia.
 
-Esta observação poderá ser mais clara se percorrermos a duração de uma entidade.
+Este cenário poderá ser mais claro se percorrer a duração de uma entidade.
 
 Vamos assumir que é atribuída uma licença a um utilizador chamado **João Silva** a 01/06/2017. Neste caso, a tabela **Utilizador** teria a entrada seguinte: 
  
@@ -75,5 +76,5 @@ Qualquer pessoa que pretenda ver apenas as entidades dessa dimensão que atualme
 
 ## <a name="next-steps"></a>Próximos passos
 
- - Para obter mais informações sobre a entidade **Utilizador Atual**, veja [Referência para a entidade do utilizador atual](reports-ref-current-user.md).
- - Para obter mais informações sobre a entidade **Utilizador**, veja [Referência para a entidade do utilizador](reports-ref-user.md).
+ - Para obter informações sobre a entidade **Utilizador Atual**, veja [Referência para a entidade Utilizador Atual](reports-ref-current-user.md).
+ - Para obter informações sobre a entidade **Utilizador**, veja [Referência para a entidade Utilizador](reports-ref-user.md).

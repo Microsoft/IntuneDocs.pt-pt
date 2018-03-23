@@ -1,26 +1,27 @@
 ---
-title: "Processo de integração do Intune"
-description: "Este artigo fornece todos os detalhes que precisa de ter em consideração quando integrar a solução do Intune apenas na cloud no seu ambiente."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Processo de integração do Intune
+titlesuffix: Microsoft Intune
+description: Este artigo fornece todos os detalhes que precisa de ter em consideração quando integrar a solução do Microsoft Intune apenas na cloud no seu ambiente.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="implement-your-intune-plan"></a>Implementar o plano do Intune
+# <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 
 Durante a fase de integração, implementará o Intune no seu ambiente de produção. O processo de implementação consiste na configuração do Intune e das dependências externas (se for necessário) com base nos seus [requisitos de casos de utilização](planning-guide-requirements.md).
 

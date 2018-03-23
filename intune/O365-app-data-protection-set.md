@@ -1,28 +1,28 @@
 ---
-title: "Configurar a gestão de dados básicos em aplicações do Office 365 no Intune"
-titlesuffix: Azure portal
-description: "Documentação de suporte do assistente Gerir aplicações do Office 365.\""
-keywords: 
+title: Gestão de dados das aplicações do Office 365 no Microsoft Intune
+titlesuffix: ''
+description: Saiba mais sobre a gestão de dados das aplicações do Office 365 no Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores no Microsoft Intune
 
 O assistente **Gerir aplicações do Office 365** cria uma política de proteção de aplicações para cada plataforma de dispositivo.
 
@@ -46,30 +46,30 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 
 ## <a name="user-experience-on-an-ios-device"></a>Experiência do utilizador num dispositivo iOS
 
-1. Inicie a aplicação OneDrive para Empresas para abrir a página de início de sessão.  <br/> ![Imagem do ecrã de início de sessão no OneDrive para iOS](./media/onedrive-ios-sign-in.png)
-2. Escreva o nome de utilizador da sua conta profissional. Será redirecionado para a página de autenticação do Office 365 para introduzir as suas credenciais de trabalho. <br/> ![Imagem da página de início de sessão no Office 365](./media/o365-sign-in-ios.png)
-3. Depois de as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, as políticas de proteção de aplicações serão aplicadas e ser-lhe-á pedido que reinicie a aplicação OneDrive para Empresas.  <br/>![Imagem do pedido de reinício para iOS](./media/ios-restart-prompt.png)    
+1. Inicie a aplicação OneDrive para Empresas para abrir a página de início de sessão.  
+2. Escreva o nome de utilizador da sua conta profissional. Será redirecionado para a página de autenticação do Office 365 para introduzir as suas credenciais de trabalho. 
+3. Depois de as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, as políticas de proteção de aplicações serão aplicadas e ser-lhe-á pedido que reinicie a aplicação OneDrive para Empresas. 
+
   > [!NOTE]
   > A mensagem de reinício necessário é apresentada apenas nos dispositivos que não estão inscritos no Intune.
 
+4. Reinicie a aplicação OneDrive para Empresas. A aplicação é iniciada com as políticas de proteção de aplicações ativadas e é-lhe pedido para definir um PIN para o dispositivo (se ainda não tiver um configurado para o dispositivo).  
 
-4. Reinicie a aplicação OneDrive para Empresas. A aplicação é iniciada com as políticas de proteção de aplicações ativadas e é-lhe pedido para definir um PIN para o dispositivo (se ainda não tiver um configurado para o dispositivo). <br/> ![Imagem do pedido para criar um PIN](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > A maior parte dos utilizadores não vê este pedido. Este pedido será apresentado apenas aos utilizadores que ainda não ativaram um PIN no dispositivo iOS.
 
-
-5. Depois de definir o PIN e o confirmar, volte à aplicação OneDrive para Empresas. Verá um aviso único a indicar que o administrador de TI está agora a proteger os dados de trabalho no OneDrive. <br/> ![Imagem do aviso único do administrador de TI](./media/one-time-notice.png)
-6. Clique para dispensar este aviso de modo a aceder aos ficheiros no OneDrive para Empresas. <br/> ![Imagem dos ficheiros do OneDrive em dispositivo iOS](./media/onedrive-files-ios.png) <br/>
+5. Depois de definir o PIN e o confirmar, volte à aplicação OneDrive para Empresas. Verá um aviso único a indicar que o administrador de TI está agora a proteger os dados de trabalho no OneDrive. 
+6. Clique para dispensar este aviso de modo a aceder aos ficheiros no OneDrive para Empresas. 
 
 >[!NOTE]
 >Quando altera uma política implementada, as alterações serão aplicadas na próxima vez que abrir a aplicação.
-
 
 ## <a name="user-experience-on-an-android-device"></a>Experiência do utilizador num dispositivo Android
 
 1. Inicie a aplicação OneDrive para Empresas para abrir a página de início de sessão.  <br/> ![Imagem do ecrã de boas-vindas da aplicação OneDrive](./media/onedrive-android-welcome.png)
 2. Escreva o nome de utilizador da sua conta profissional. Será redirecionado para a página de autenticação do Office 365 para introduzir as suas credenciais de trabalho. <br/> ![Imagem do início de sessão no O365 no Android](./media/o365-sign-in-android.png)
-3. Após as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, verá uma mensagem com instruções para instalar a aplicação Portal da Empresa, caso ainda não esteja instalada no dispositivo. Toque em **Ir para loja** para continuar. <br/> ![Imagem da mensagem para obter a aplicação Portal da Empresa](./media/get-company-portal-android.png) <br/>Se já tiver a aplicação Portal da Empresa instalada no telemóvel, a aplicação OneDrive para Empresas será automaticamente iniciada e poderá avançar para a nota final.    
+3. Após as suas credenciais serem autenticadas com êxito pelo Azure Active Directory, verá uma mensagem com instruções para instalar a aplicação Portal da Empresa, caso ainda não esteja instalada no dispositivo. Toque em **Ir para loja** para continuar. <br/> ![Imagem da mensagem para obter a aplicação Portal da Empresa](./media/get-company-portal-android.png) <br/>Se já tiver a aplicação Portal da Empresa instalada no telemóvel, a aplicação OneDrive para Empresas será automaticamente iniciada e poderá avançar para a nota final.   
+
   > [!IMPORTANT]
   > No Android, depois de configurar as aplicações do Office para serem geridas por uma política de proteção de aplicações, o utilizador do dispositivo **tem** de instalar a aplicação Portal da Empresa para aceder aos e-mails e aos documentos do trabalho, embora o utilizador final não precise de abrir ou iniciar sessão na aplicação para ler os e-mails ou os documentos.
 
@@ -128,4 +128,4 @@ Para ver ou atualizar estas políticas, ou todas as políticas que criar no Intu
 ![Imagem do caminho da interface de utilizador para ver as políticas](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Próximos passos
-Saiba mais sobre as [políticas de proteção de aplicações](app-protection-policy.md).
+- Saiba mais sobre as [políticas de proteção de aplicações](app-protection-policy.md).
