@@ -1,23 +1,23 @@
 ---
-title: "Configurar as definições do Windows Update para Empresas no Intune"
-titleSuffix: Azure portal
-description: "Saiba como configurar as definições do Windows Update para Empresas no Intune para controlar as atualizações para dispositivos Windows 10.\""
-keywords: 
+title: Configurar as definições do Windows Update para Empresas no Microsoft Intune
+titleSuffix: ''
+description: Saiba como configurar as definições do Windows Update para Empresas no Microsoft Intune para controlar as atualizações para dispositivos Windows 10.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Gerir atualizações de software
 
@@ -140,7 +140,7 @@ Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou ed
 - **Tipo de Dados:** cadeia
 - **Valor**: <*utilizar o GUID apresentado no separador Telemetria do Windows na sua área de trabalho OMS*>
 
-![Definição do Windows para os dados de diagnóstico e utilização](./media/commID.png)
+![Definição de OMA-URI – Adicionar Linha](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Como colocar atualizações em pausa
 Pode colocar em pausa a receção de Atualizações de Funcionalidades ou Atualizações de Qualidade num dispositivo durante um período máximo de 35 dias desde o momento em que colocou as atualizações em pausa. Após ter decorrido o número máximo de dias, a funcionalidade de pausa irá automaticamente expirar e o dispositivo irá procurar atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente.

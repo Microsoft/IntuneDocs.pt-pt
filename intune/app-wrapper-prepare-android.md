@@ -1,24 +1,24 @@
 ---
-title: "Encapsular aplicações Android com a Ferramenta de Encapsulamento de Aplicações do Intune"
-description: "Saiba como pode encapsular as suas aplicações Android sem alterar o código das mesmas. Prepare as aplicações para que possa aplicar políticas de gestão de aplicações móveis."
-keywords: 
+title: Encapsular aplicações Android com a Ferramenta de Encapsulamento de Aplicações do Intune
+description: Saiba como pode encapsular as suas aplicações Android sem alterar o código das mesmas. Prepare as aplicações para que possa aplicar políticas de gestão de aplicações móveis.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações Android para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -30,8 +30,6 @@ A ferramenta é uma aplicação de linha de comandos do Windows executada no Pow
 
 
 Antes de executar a ferramenta, consulte as [Considerações de segurança para executar a ferramenta de encapsulamento de aplicações](#security-considerations-for-running-the-app-wrapping-tool). Para transferir a ferramenta, aceda à [Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) no GitHub.
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Cumprir os pré-requisitos de utilização da Ferramenta de Encapsulamento de Aplicações
 
@@ -51,6 +49,8 @@ Antes de executar a ferramenta, consulte as [Considerações de segurança para 
     > Nalguns casos, a versão de 32 bits do Java pode originar problemas de memória. É boa ideia instalar a versão de 64 bits.
 
 - O Android exige que todos os pacotes de aplicação (.apk) sejam assinados. Para **reutilizar** certificados existentes e obter orientações gerais sobre certificados de assinatura, veja a secção [Reutilizar certificados de assinatura e encapsular aplicações](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). A ferramenta de chave executável Java keytool.exe serve para gerar as **novas** credenciais necessárias para assinar a aplicação de saída encapsulada. Todas as palavras-passe que definir têm de ser seguras, mas anote-as, uma vez que irá precisar delas mais tarde para executar a Ferramenta de Encapsulamento de Aplicações.
+
+- (Opcional) Ativar o MultiDex na aplicação de entrada. Por vezes, uma aplicação poderá atingir o tamanho limite do DEX (Executável Dalvik) devido às classes SDK de MAM do Intune que são adicionadas durante o encapsulamento. Os ficheiros do DEX fazem parte da compilação de uma aplicação Android. Neste cenário, as melhores práticas seriam ativar o MultiDex na própria aplicação. Em certas organizações, tal poderá exigir que trabalhe com quem compila a aplicação (por exemplo, a equipa de desenvolvimento da aplicação). 
 
 ## <a name="install-the-app-wrapping-tool"></a>instalar a Ferramenta de Encapsulamento de Aplicações
 
@@ -159,6 +159,7 @@ Seguem-se orientações para exigir pedidos de início de sessão ao utilizador 
 Estas instruções são específicas para todas as aplicações Android e Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
 
 1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+
 > [!NOTE] 
 > O termo "ID de cliente" ligado à sua aplicação é o mesmo que o termo "ID de aplicação" do Portal do Azure ligado à sua aplicação. 
 * Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.

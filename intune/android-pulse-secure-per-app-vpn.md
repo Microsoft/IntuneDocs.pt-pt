@@ -1,25 +1,25 @@
 ---
-title: "Perfil VPN por aplicação para dispositivos Android – Pulse Secure"
-titlesuffix: Azure portal
-description: "Saiba como criar um perfil VPN por aplicação para dispositivos Android geridos pelo Intune.\""
-keywords: 
+title: Perfil VPN por aplicação para dispositivos Android – Pulse Secure
+titlesuffix: Microsoft Intune
+description: Saiba como criar um perfil VPN por aplicação para dispositivos Android geridos pelo Microsoft Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a207f15e7c5b678368eeb54e8452638ff5a01ef
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: fc87363169cd2d967b2fea9683926970c18c5e97
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicação para dispositivos Android
 
@@ -60,7 +60,7 @@ Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VP
 5. Na lista pendente **Plataforma**, escolha **Android**.
 6. Na lista pendente **Tipo de perfil**, escolha **Personalizado**.
 7. Escolha **Definições** > **Configurar**.
-3. No painel **Definições OMA-URI personalizadas**, selecione **Adicionar**.
+3. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
     - Introduza um nome para a definição.
     - Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Nome*/PackageList**, em que *Nome* é o nome do perfil VPN que anotou no Passo 1. Neste exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
     - Para **Tipo de dados**, especifique **Cadeia**.
@@ -71,7 +71,7 @@ Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VP
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Definir a lista de aplicações como lista de bloqueados ou lista de permitidos (opcional)
   Pode especificar uma lista de aplicações que *não* utilize a ligação VPN com o valor **BLACKLIST**. Todas as outras aplicações são ligadas através da VPN.
 Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista de aplicações que *possa* utilizar a ligação VPN. As aplicações que não estejam na lista não são ligadas através da VPN.
-  1.    No painel **Definições OMA-URI personalizadas**, selecione **Adicionar**.
+  1.    No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
   2.    Introduza um nome para a definição.
   3.    Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   4.    Para **Tipo de dados**, especifique **Cadeia**.

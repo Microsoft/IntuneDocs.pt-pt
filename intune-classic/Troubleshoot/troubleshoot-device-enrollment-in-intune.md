@@ -1,25 +1,25 @@
 ---
-title: "Resolver problemas de inscrição de dispositivos"
-description: "Sugestões para resolver problemas de inscrição de dispositivos."
-keywords: 
+title: Resolver problemas de inscrição de dispositivos
+description: Sugestões para resolver problemas de inscrição de dispositivos.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
@@ -70,7 +70,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para eliminar dispositivos no portal do Azure Active Directory
 
-1.  Navegue para [http://aka.ms/accessaad](http://aka.ms/accessaad) ou escolha **Administração** &gt; **Azure AD** a partir de [https://portal.office.com](https://portal.office.com).
+1.  Navegue para [http://aka.ms/accessaad](http://aka.ms/accessaad) ou selecione **Administrador** &gt; **Azure AD** em [https://portal.office.com](https://portal.office.com).
 
 2.  Inicie sessão com o seu ID de Organização através da ligação no lado esquerdo da página.
 
@@ -99,7 +99,7 @@ Os administradores podem eliminar dispositivos no portal do Azure Active Directo
 
 1.  Remova a aplicação Portal da Empresa do Intune do dispositivo.
 
-2.  No dispositivo, abra o browser, navegue para [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)e tente um início de sessão do utilizador.
+2.  No dispositivo, abra o browser, navegue para [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e tente um início de sessão do utilizador.
 
 3.  Se o utilizador não conseguir iniciar sessão, peça-lhe que experimente outra rede.
 
@@ -165,8 +165,8 @@ A seguinte tabela indica os erros que os utilizadores finais poderão ver ao ins
 
 |Mensagem de erro|Problema|Resolução|
 |---|---|---|
-|**O administrador de TI tem de lhe atribuir uma licença para obter acesso**<br>O seu administrador de TI ainda não lhe deu acesso para utilizar esta aplicação. Peça ajuda ao seu administrador de TI ou tente novamente mais tarde.|Não é possível inscrever o dispositivo porque a conta do utilizador não tem a licença necessária.|Antes de os utilizadores poderem inscrever os respetivos dispositivos, é preciso que lhes tenha sido atribuída a licença necessária. Esta mensagem indica que têm o tipo de licença errado para a autoridade de gestão de dispositivos móveis designada. Por exemplo, se o Intune foi designado como autoridade de gestão de dispositivos móveis e estiverem a utilizar uma licença do System Center 2012 R2 Configuration Manager, será obtido este erro.<br><br>Saiba mais sobre como [atribuir licenças do Intune às contas de utilizador](/intune/licenses-assign.md).
-|**O administrador de TI tem de definir a autoridade MDM**<br>Reparámos que o seu administrador de TI não definiu uma autoridade MDM. Peça ajuda ao seu administrador de TI ou tente novamente mais tarde.|A autoridade de gestão de dispositivos móveis não foi definida.|A autoridade de gestão de dispositivos móveis não foi designada no Intune. Saiba mais sobre como [definir a autoridade de gestão de dispositivos móveis](/intune/mdm-authority-set.md).|
+|**O administrador de TI tem de lhe atribuir uma licença para obter acesso**<br>O seu administrador de TI ainda não lhe deu acesso para utilizar esta aplicação. Peça ajuda ao seu administrador de TI ou tente novamente mais tarde.|Não é possível inscrever o dispositivo porque a conta do utilizador não tem a licença necessária.|Antes de os utilizadores poderem inscrever os respetivos dispositivos, é preciso que lhes tenha sido atribuída a licença necessária. Esta mensagem indica que têm o tipo de licença errado para a autoridade de gestão de dispositivos móveis designada. Por exemplo, se o Intune foi designado como autoridade de gestão de dispositivos móveis e estiverem a utilizar uma licença do System Center 2012 R2 Configuration Manager, será obtido este erro.<br><br>Saiba mais sobre como [atribuir licenças do Intune às contas de utilizador](/intune/licenses-assign).
+|**O administrador de TI tem de definir a autoridade MDM**<br>Reparámos que o seu administrador de TI não definiu uma autoridade MDM. Peça ajuda ao seu administrador de TI ou tente novamente mais tarde.|A autoridade de gestão de dispositivos móveis não foi definida.|A autoridade de gestão de dispositivos móveis não foi designada no Intune. Saiba mais sobre como [definir a autoridade de gestão de dispositivos móveis](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Os dispositivos não conseguem registar com o serviço Intune e são apresentados como em "Mau estado de funcionamento" na consola de administração do Intune
@@ -377,7 +377,7 @@ Em breve, serão adicionados alguns exemplos sobre o que deve procurar nestes fi
 
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de inscrição do iOS
-É disponibilizada uma lista de outros erros de inscrição do iOS na documentação do utilizador do dispositivo, em [You see errors while trying to enroll your device in Intune (Obtém erros quando tenta inscrever o dispositivo no Intune)](/intune-user-help/using-your-iOS-or-macOS-device-with-intune).
+É fornecida uma lista dos erros de inscrição de dispositivos iOS na nossa documentação, em [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Resolução de problemas de inscrição de dispositivos iOS no Microsoft Intune).
 
 ## <a name="pc-issues"></a>Problemas do PC
 

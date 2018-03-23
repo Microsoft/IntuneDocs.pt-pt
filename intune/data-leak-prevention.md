@@ -1,25 +1,27 @@
 ---
-title: "Impedir fugas de dados em dispositivos não geridos"
-description: Permita o acesso a dados da empresa em dispositivos e proteja os dados contra fugas.
-keywords: "proteção de dados para impedir fugas em dispositivos com o Office 365"
-author: arob98
+title: Impedir fugas de dados em dispositivos não geridos
+titlesuffix: Microsoft Intune
+description: Permita o acesso a dados da empresa em dispositivos e proteja os dados contra fugas com o Microsoft Intune.
+keywords: proteção de dados para impedir fugas em dispositivos com o Office 365
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b917b3718a7630c4a556a41c551aa5d76f4b4aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 964422f113e6a722c1134cf49b1b28b494632872
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-data-leaks-on-non-managed-devices"></a>Impedir fugas de dados em dispositivos não geridos
+# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Impedir fugas de dados em dispositivos não geridos com o Microsoft Intune
 
 Se permitir o acesso a dados da empresa alojados pelo Office 365, pode controlar a forma como os utilizadores partilham e guardam dados sem correr o risco de fugas de dados intencionais ou acidentais. O Microsoft Intune fornece políticas de proteção de aplicações que pode definir para proteger os dados da sua empresa em dispositivos pertencentes ao utilizador. Os dispositivos não precisam de estar inscritos no serviço do Intune. 
 

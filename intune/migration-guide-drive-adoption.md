@@ -1,25 +1,26 @@
 ---
-title: "Promover a adoção por parte de utilizadores finais de unidades com acesso condicional"
-description: "Este artigo fornece informações sobre como utilizar o acesso condicional para promover a inscrição no Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Promover a adoção por parte de utilizadores finais de unidades com acesso condicional
+titlesuffix: Microsoft Intune
+description: Saiba como utilizar o acesso condicional para promover a inscrição no Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 180cecde31627192363bb00f58fb13f7ec123744
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>Promover a adoção por parte de utilizadores finais de unidades com acesso condicional
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promover a adoção por parte de utilizadores finais de unidades com acesso condicional no Microsoft Intune
 
 A ativação de funcionalidades de acesso condicional com o Intune, tais como bloquear o e-mail para dispositivos cuja inscrição foi anulada, pode ajudar a promover a inscrição e a conformidade, mas não é obrigatória para que a migração seja concluída com êxito. Os requisitos de segurança e os objetivos de adoção da migração devem determinar a taxa de êxito.
 

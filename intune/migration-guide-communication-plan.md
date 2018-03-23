@@ -1,23 +1,24 @@
 ---
-title: "Planear as comunicações"
-description: "Este artigo fornece um plano e uma estratégia de comunicação de migração."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Planear as comunicações de migração
+titlesuffix: Microsoft Intune
+description: Este artigo fornece um plano e uma estratégia de comunicação de migração quando estiver a migrar para o Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08b7f24192ca4d94ad97299c416f233f43a93fb0
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
