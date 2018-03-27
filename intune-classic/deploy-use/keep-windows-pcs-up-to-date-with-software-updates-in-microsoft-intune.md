@@ -1,24 +1,24 @@
 ---
-title: "Atualizações de software para PCs Windows"
-description: "O Intune ajuda-o a manter os seus computadores atualizados ao garantir que as correções de erros e atualizações de software mais recentes são rapidamente instaladas."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Atualizações de software para PCs Windows
+description: O Intune ajuda-o a manter os seus computadores atualizados ao garantir que as correções de erros e atualizações de software mais recentes são rapidamente instaladas.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 39037298fdec43051bd9486154f82979ed57af4a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune
 

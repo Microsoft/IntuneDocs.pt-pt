@@ -1,23 +1,23 @@
 ---
-title: "Políticas de conformidade de dispositivos do Microsoft Intune"
-titleSuffix: 
+title: Políticas de conformidade de dispositivos do Microsoft Intune
+titleSuffix: ''
 description: Saiba mais sobre a conformidade de dispositivos do Microsoft Intune
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Começar a utilizar políticas de conformidade de dispositivos do Microsoft Intune
 

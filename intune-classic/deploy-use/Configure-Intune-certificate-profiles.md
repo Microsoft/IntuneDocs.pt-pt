@@ -1,25 +1,25 @@
 ---
 title: Configurar perfis de certificado
 description: Saiba como criar um perfil de certificado do Intune.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 785958d0d6c907edb1ae16ffeab94ccdce140c60
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfis de certificado do Intune
 
@@ -149,7 +149,7 @@ Implemente perfis de certificado da mesma forma que implementa outras políticas
 
 Ao selecionar uma política implementada, pode ver mais informações sobre a implementação na parte inferior da lista de políticas.
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 
 Em seguida, pode utilizar certificados para ajudar a proteger os perfis de e-mail, Wi-Fi e VPN.
 

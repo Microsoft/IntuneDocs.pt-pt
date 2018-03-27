@@ -1,25 +1,25 @@
 ---
-title: "Resolver políticas"
-description: "Resolva problemas de configuração de políticas."
-keywords: 
+title: Resolver políticas
+description: Resolva problemas de configuração de políticas.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e97c47dc2d1744f539f569de4c20ee994d05ffd
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7f9632a8b769fae5c3ae0fdf7041b968a9707d24
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Resolver problemas de políticas no Microsoft Intune
 
@@ -97,5 +97,5 @@ Para resolver este problema, defina a hora do sistema local para o mais próximo
 
 
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

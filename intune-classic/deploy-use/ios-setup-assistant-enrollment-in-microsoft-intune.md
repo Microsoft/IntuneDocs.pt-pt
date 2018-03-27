@@ -1,25 +1,25 @@
 ---
-title: "Inscrever dispositivos iOS com o Assistente de Configuração"
-description: "Inscreva dispositivos iOS pertencentes à empresa com a ferramenta Apple Configurator para repor as predefinições de fábrica do dispositivo e prepará-lo para executar o Assistente de Configuração."
-keywords: 
+title: Inscrever dispositivos iOS com o Assistente de Configuração
+description: Inscreva dispositivos iOS pertencentes à empresa com a ferramenta Apple Configurator para repor as predefinições de fábrica do dispositivo e prepará-lo para executar o Assistente de Configuração.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a97ccdb8f557c4c2bfd542fb1c96d84d768eae5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscrever dispositivos iOS com o Apple Configurator ao utilizar o Assistente de Configuração
 
@@ -80,7 +80,7 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
    -  **Device Enrollment Program**&mdash;O Device Enrollment Program (DEP) da Apple não pode ser utilizado com a inscrição do Assistente de Configuração. Certifique-se de que a alternância de modo está definida como **off**.
 
-3.  Clique em **Guardar Perfil** para adicionar o perfil.
+3.  Clique em **Save Profile** para adicionar o perfil.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Adicionar dispositivos iOS para inscrição com o Assistente de Configuração
 
@@ -142,9 +142,9 @@ Os dispositivos iOS são ligados ao computador Mac e inscritos na gestão de dis
    > [!WARNING]
    > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando liga o dispositivo.
 
-2. No painel de preferências, selecione **Servidores** e selecione o símbolo de adição (+) para iniciar o assistente do Servidor MDM. Selecione **Seguinte**.
+2. No painel de preferências, selecione **Servidores** e selecione o símbolo de adição (+) para iniciar o assistente do Servidor MDM. Selecione **Next**.
 
-3. Introduza o **Nome do anfitrião ou URL** e o **URL de inscrição** do servidor MDM em Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Seguinte**.  
+3. Introduza o **Nome do anfitrião ou URL** e o **URL de inscrição** do servidor MDM em Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Next**.  
 
    Pode ignorar o aviso "URL do servidor não verificado" em segurança. Para continuar, selecione **Seguinte** até que o assistente esteja concluído.
 
@@ -171,5 +171,5 @@ Os dispositivos estão agora prontos para a inscrição na empresa. Desligue os 
 
 
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 [Pré-requisitos para inscrever dispositivos](prerequisites-for-enrollment.md)

@@ -1,25 +1,25 @@
 ---
 title: Aceder ao e-mail empresarial com perfis de e-mail
-description: "As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis."
-keywords: 
+description: As definições de perfil de e-mail podem ser utilizadas para configurar as definições de acesso de e-mail para clientes de e-mail específicos em dispositivos móveis.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 844e4a3c0006381eae156c74a680a5ec5a392c99
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune
 
@@ -119,13 +119,13 @@ A nova política é apresentada no nó **Políticas de Configuração** da área
 
 1.  Na área de trabalho **Política**, selecione a política que pretende implementar e, em seguida, escolha **Gerir a Implementação**.
 
-2.  Na caixa de diálogo **Gerir a Implementação**, para:
+2.  Na caixa de diálogo **Manage Deployment**, para:
 
     -   **Para implementar a política** – selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** &gt; **OK**.
 
     -   **Para fechar a caixa de diálogo sem implementar a política** – escolha **Cancelar**.
 
-Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
+Um resumo do estado e alertas na página **Overview** da área de trabalho **Policy** identificam problemas com a política que necessitam da sua atenção. Para além disso, é apresentado um resumo de estado na área de trabalho Dashboard.
 
 > [!NOTE]
 > - No Android for Work, certifique-se de que também implementa as aplicações Gmail ou Nine Work para além do perfil de e-mail adequado.

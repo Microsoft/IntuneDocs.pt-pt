@@ -1,22 +1,22 @@
 ---
-title: "Decisões tecnológicas para BYOD com o EMS"
-description: "As decisões tecnológicas chave para ativar o BYOD e proteger dados empresariais com o Microsoft Enterprise Mobility + Security."
-keywords: 
+title: Decisões tecnológicas para BYOD com o EMS
+description: As decisões tecnológicas chave para ativar o BYOD e proteger dados empresariais com o Microsoft Enterprise Mobility + Security.
+keywords: ''
 author: dougeby
 ms.author: pfetty
-manager: angrobe
+manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 3ee642f5c2e30023043cec4bf5286999d4397e2d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisões tecnológicas para ativar o BYOD com o Microsoft Enterprise Mobility + Security
 

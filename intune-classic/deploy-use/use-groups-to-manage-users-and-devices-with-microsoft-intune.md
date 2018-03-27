@@ -1,25 +1,25 @@
 ---
 title: Utilizar grupos para gerir utilizadores e dispositivos
-description: "Criar e gerir grupos através da área de trabalho Grupos."
-keywords: 
-author: arob98
+description: Criar e gerir grupos através da área de trabalho Grupos.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ca73c6d84c6f4b63c4d7b0cb544dc7998224821
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 5f84469f0514d2e644db2ec9b0700644af143d81
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Utilizar grupos para gerir utilizadores e dispositivos no Microsoft Intune
 
@@ -42,7 +42,7 @@ Pode criar e gerir grupos na área de trabalho **Grupos** na consola de administ
 -   Alertas
 -   Atualizações de software
 -   Endpoint Protection
--   Política
+-   Policy
 -   Gestão de software
 
 Além disso, a hierarquia de grupo é apresentada com resumos de estado para ajudar a identificar e resolver problemas de membros de um grupo selecionado.
