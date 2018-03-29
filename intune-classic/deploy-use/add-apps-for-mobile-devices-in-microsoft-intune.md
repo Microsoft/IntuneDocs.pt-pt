@@ -1,25 +1,25 @@
 ---
-title: "Adicionar aplicações a dispositivos inscritos"
-description: "Antes de poder implementar uma aplicação, tem de adicioná-la ao Intune. Em seguida, fica disponível na consola do Intune, onde pode implementar e geri-la."
-keywords: 
+title: Adicionar aplicações a dispositivos inscritos
+description: Antes de poder implementar uma aplicação, tem de adicioná-la ao Intune. Em seguida, fica disponível na consola do Intune, onde pode implementar e geri-la.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Adicionar aplicações a dispositivos inscritos ao Intune
 
@@ -34,7 +34,7 @@ Antes de poder implementar ou gerir uma aplicação, tem de adicioná-la ao Micr
 ## <a name="add-the-app"></a>Adicionar a aplicação
 O Intune Software Publisher é utilizado para configurar as propriedades da aplicação e, quando aplicável, carregá-la para o seu espaço de armazenamento na cloud. Utilize o seguinte procedimento:
 
-1.  Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Intune Software Publisher.
+1.  Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Publicador de Software do Intune.
 
     > [!TIP]
     > Poderá ter de introduzir o seu nome de utilizador e palavra-passe do Intune para que o publicador seja iniciado.
@@ -48,14 +48,14 @@ O Intune Software Publisher é utilizado para configurar as propriedades da apli
   -   **Ligação externa**, para as aplicações que pretende criar, especificando uma ligação para uma loja de aplicações:
 
         - **Especifique o URL**. Especifique o URL de um dos seguintes:
-            - O URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se quiser implementar a aplicação Ambiente de Trabalho Remoto da Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar o URL da aplicação, utilize um motor de busca para procurar a página da loja que contém a aplicação. Por exemplo, para localizar a aplicação Ambiente de Trabalho Remoto, pode pesquisar por **Ambiente de Trabalho Remoto da Microsoft para Android**.
+            - O URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Ambiente de Trabalho Remoto para Android da Microsoft, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar o URL da aplicação, utilize um motor de busca para procurar a página da loja que contém a aplicação. Por exemplo, para localizar a aplicação Ambiente de Trabalho Remoto, pode pesquisar por **Ambiente de Trabalho Remoto da Microsoft para Android**.
             - Um site. O Intune irá implementar um ícone de atalho para o site no dispositivo (conhecido como clip da Web).
             - Uma aplicação na Web. O Intune irá implementar um ícone de atalho para a aplicação no dispositivo.
         - **Solicitar um browser gerido para abrir esta ligação (apenas no Android e no iOS)**. Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.<br>Para mais detalhes sobre o Managed Browser, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
 
   -   **Aplicação iOS gerida da loja de aplicações**, para aplicações gratuitas da iTunes Store que pretende gerir com políticas de gestão de aplicações móveis (MAM):
 
-        - **Especifique o URL**. Introduza o URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Pastas de Trabalho da Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
+        - **Especifique o URL**. Introduza o URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Work Folders da Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
 
         Por exemplo, se pretender implementar a aplicação Microsoft Word a partir da iTunes Store em dispositivos, a página teria o seguinte aspeto:
 
@@ -70,7 +70,7 @@ O Intune Software Publisher é utilizado para configurar as propriedades da apli
     > Dependendo do tipo de instalador que está a utilizar, alguns destes valores podem ter sido introduzidos automaticamente.
 
     - **Publicador**. Introduza o nome do publicador da aplicação.
-    - **Nome**. Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br>Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se o mesmo nome de aplicação existir duas vezes, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
+    - **Nome**. Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br>Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição**. Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
     - **URL para informações de software**. Isto apenas se encontra disponível apenas se tiver selecionado **Instalador de software**. Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
     - **URL de privacidade**. Isto apenas se encontra disponível apenas se tiver selecionado **Instalador de software**. Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
@@ -100,6 +100,6 @@ Neste vídeo de quatro minutos, irá saber mais sobre como implementar aplicaç�
 
 <iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Depois de criar uma aplicação, o passo seguinte é implementá-la. Para obter mais informações, veja [Implementar aplicações no Microsoft Intune](deploy-apps.md).

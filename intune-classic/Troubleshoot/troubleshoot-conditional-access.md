@@ -1,25 +1,25 @@
 ---
 title: Resolver problemas de acesso condicional
-description: "O que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune."
-keywords: 
+description: O que fazer quando os utilizadores não conseguem obter acesso aos recursos através de acesso condicional do Intune.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 
@@ -118,7 +118,7 @@ Se estes procedimentos não resolverem o problema, o Suporte da Microsoft pode p
 ### <a name="exchange-connector-logs"></a>Registos do Exchange Connector
 
 #### <a name="general-log-information"></a>Informações gerais de registo
-Para ver que registos do Exchange Connector utilizam a [Ferramenta Visualizador de Rastreio do Servidor](ferramenta visualizador de rastreio do servidor (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta ferramenta requer que transfira o SDK do Windows Server.
+Para ver os registos do Exchange Connector utilize a ferramenta Server Trace Viewer (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Esta ferramenta requer que transfira o SDK do Windows Server.
 
 >[!NOTE]
 >Os registos estão localizados em C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Os registos estão contidos numa série de 30 ficheiros de registo com início em *Connector0.log* e fim em *Connector29.log*. Os registos passam de um para outro após terem sido acumulados 10 MB de dados num registo. Depois de os registos chegarem a Connector29, vão recomeçar novamente em Connector0, substituindo os ficheiros de registo anteriores.

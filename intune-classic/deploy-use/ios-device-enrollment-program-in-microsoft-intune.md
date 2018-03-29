@@ -1,25 +1,25 @@
 ---
-title: "Gestão do Apple DEP para dispositivos iOS"
-description: "Implemente um perfil de inscrição que inscreva dispositivos iOS comprados através do Programa de Inscrição de Dispositivos iOS (DEP) por ondas eletromagnéticas em dispositivos Apple geridos."
-keywords: 
+title: Gestão do Apple DEP para dispositivos iOS
+description: Implemente um perfil de inscrição que inscreva dispositivos iOS comprados através do Programa de Inscrição de Dispositivos iOS (DEP) por ondas eletromagnéticas em dispositivos Apple geridos.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
 
@@ -29,13 +29,14 @@ O Microsoft Intune pode implementar um perfil de inscrição que inscreve os dis
 
 >[!NOTE]
 >A inscrição DEP não pode ser utilizada com o método do [gestor de inscrição de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Além disso, se os utilizadores inscreverem os dispositivos iOS (ou seja, através da aplicação Portal da Empresa) e os números de série dos mesmos forem posteriormente importados e lhes for atribuído um perfil de DEP, a inscrição do dispositivo no Intune será anulada.
+>Além disso, se os utilizadores inscreverem os dispositivos iOS (por exemplo, através da aplicação Portal da Empresa) e os números de série dos mesmos forem posteriormente importados e lhes for atribuído um perfil de DEP, a inscrição do dispositivo no Intune será anulada.
+> Também deve ter em atenção que o macOS atualmente não suporta DEP.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Pré-requisitos para a inscrição de dispositivos iOS com a gestão do Apple DEP
 
 - [Instalar um certificado do APNs](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- A sua organização tem de aderir ao Apple DEP e obter dispositivos através desse programa. Os detalhes desse processo estão disponíveis em: [https://deploy.apple.com](https://deploy.apple.com) Entre as vantagens do programa incluem-se a configuração automatizada de dispositivos sem utilizar um cabo USB para ligar cada dispositivo a um computador.
+- A sua organização tem de aderir ao Apple DEP e obter dispositivos através desse programa. Os detalhes do processo encontram-se disponíveis em: [https://deploy.apple.com](https://deploy.apple.com). Entre as vantagens do programa incluem-se a configuração automatizada de dispositivos sem utilizar um cabo USB para ligar cada dispositivo a um computador.
 
 - Antes de poder inscrever dispositivos iOS pertencentes à empresa no DEP, precisa de um token do DEP da Apple. Este token permite ao Intune sincronizar informações sobre os dispositivos propriedade da empresa participantes no DEP. Também permite ao Intune efetuar carregamentos do Perfil de Inscrição para a Apple e atribuir dispositivos a esses perfis.
 
@@ -53,7 +54,7 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 ### <a name="get-a-device-enrollment-program-token"></a>Obter um token do Programa de Inscrição de Dispositivos
 
-1. Aceda ao [Portal do Programa de Inscrição de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sessão com o ID Apple da sua empresa. Este ID Apple tem de ser utilizado posteriormente para renovar o seu token do DEP.
+1. Aceda ao [Portal do Programa de Registo de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sessão com o ID Apple da sua empresa. Este ID Apple tem de ser utilizado posteriormente para renovar o seu token do DEP.
 
 2.  No Portal do Programa de Inscrição de Dispositivos, aceda a **Programa de Inscrição de Dispositivos** &gt; **Gerir Servidores** e, em seguida, selecione **Adicionar Servidor MDM**.
 
@@ -97,10 +98,10 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
    - **Departamento** – é apresentado quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação
    - **Número de telefone de suporte** – aparece quando o utilizador clica no botão **Preciso de ajuda** durante a ativação
-   - **Modo de preparação** – definido durante a ativação e não pode ser alterado sem a reposição de fábrica do dispositivo:
+   - **Modo de preparação** – definido durante a ativação e não pode ser alterado sem a reposição de dados de fábrica do dispositivo:
        - **Não supervisionado** – capacidades de gestão limitadas
        - **Supervisionado** – ativa mais opções de gestão e desativa o Bloqueio de Ativação por predefinição
-   - **Bloquear perfil de inscrição para o dispositivo** – definido durante a ativação e não pode ser alterado sem uma reposição de fábrica
+   - **Bloquear perfil de inscrição para o dispositivo** – definido durante a ativação e não pode ser alterado sem uma reposição de dados de fábrica
        - **Desativar** – permite que o perfil de gestão seja removido do menu **Definições**
        - **Ativar** – (é necessário o **Modo de Preparação** = **Supervisionado**) desativa a opção de menu nas Definições do iOS para remover o perfil de gestão
    - **Opções do Assistente de Configuração** – estas definições opcionais podem ser configuradas mais tarde no menu **Definições** de iOS.
@@ -130,7 +131,7 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 ### <a name="assign-dep-devices-for-management"></a>Atribuir Dispositivos DEP para Gestão
 
-1. Aceda ao [Portal do Programa de Inscrição de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sessão com o ID Apple da sua empresa.
+1. Aceda ao [Portal do Programa de Registo de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sessão com o ID Apple da sua empresa.
 
 2. Aceda a **Programa de Implementação** &gt; **Programa de Inscrição de Dispositivos** &gt; **Gerir Dispositivos**.
 

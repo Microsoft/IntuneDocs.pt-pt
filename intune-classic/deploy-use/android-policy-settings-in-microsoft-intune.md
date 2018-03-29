@@ -1,25 +1,25 @@
 ---
-title: "Definições da política para Android e Samsung KNOX"
-description: "Crie políticas que controlem as definições e funcionalidades em dispositivos Android que gere com o Intune."
-keywords: 
+title: Definições da política para Android e Samsung KNOX
+description: Crie políticas que controlem as definições e funcionalidades em dispositivos Android que gere com o Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Definições da política para Android e Samsung KNOX Standard no Microsoft Intune
 
@@ -70,7 +70,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |----------------|---|-------------|----------------|
 |**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como uma imagem.|Não|Sim|
 |**Permitir submissão de dados de diagnóstico**|Permite ao dispositivo enviar informações de diagnóstico para a Google.|Não|Sim|
-|**Permitir a reposição de fábrica**|Permite ao utilizador efetuar uma reposição de fábrica no dispositivo.|Não|Sim|
+|**Permitir a reposição de dados de fábrica**|Permite ao utilizador efetuar uma reposição de dados de fábrica no dispositivo.|Não|Sim|
 
 ### <a name="cloud-settings---documents-and-data"></a>Definições da cloud – documentos e dados
 
@@ -113,7 +113,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |**Permitir Bluetooth**|Permite a utilização de Bluetooth no dispositivo.|Não|Sim|
 |**Permitir desligar**|Permite ao utilizador desligar o dispositivo.<br /><br />Se esta definição estiver desativada, a definição **Número de falhas de início de sessão repetidas permitidas antes da eliminação de dados no dispositivo** para dispositivos Samsung KNOX Standard não funcionará.|Não|Sim|
 
-### <a name="device-capabilities-settings---cellular"></a>Definições das capacidades do dispositivo – rede móvel
+### <a name="device-capabilities-settings---cellular"></a>Definições das capacidades do dispositivo - rede móvel
 
 |Nome da definição|Detalhes|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
@@ -140,7 +140,7 @@ Na lista **Aplicações Conformes e &amp;Não Conformes**, especifique uma lista
 |Nome da definição|Detalhes|
 |----------------|--------------------|
 |**Comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que não são geridas pelo Intune e que não pretende que sejam instaladas e executadas pelos utilizadores. Se os utilizadores instalarem uma destas aplicações, estas serão listadas no relatório de aplicações não conformes.|
-|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que pretende permitir. Para permanecerem conformes, os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
+|**Não comunicar não conformidade quando os utilizadores instalam as aplicações listadas**|Indica as aplicações que pretende permitir. Para permanecerem em conformidade, os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas.|
 |**Adicionar**|Adiciona uma aplicação à lista selecionada. Especifique um nome da aplicação, o fabricante da aplicação (opcional) e o URL da aplicação na loja de aplicações.<br /><br />Para obter mais informações, veja [Especificar URLs para lojas de aplicações](#specify-urls-to-app-stores) mais adiante neste tópico.|
 |**Importar Aplicações**|Importa uma lista de aplicações especificadas num ficheiro de valores separados por vírgulas. Utilize o formato, o nome da aplicação, o fabricante e o URL da aplicação no ficheiro.|
 |**Editar**|Permite editar o nome, o fabricante e o URL da aplicação selecionada.|
@@ -175,7 +175,7 @@ Na [secção Aplicações do Google Play](https://play.google.com/store/apps), p
 
 Abra a página de instalação da aplicação e copie o URL para a área de transferência. Agora pode utilizar este URL na lista de aplicações conformes ou na lista de aplicações não conformes.
 
-Exemplo: procure Microsoft Office Mobile no Google Play. O URL a utilizar será **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub&hl=pt**.
+Exemplo: procure Microsoft Office Mobile no Google Play. O URL que irá utilizar será **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## <a name="custom-policy-settings"></a>Definições de política personalizada
 Utilize a **política de configuração personalizada para Android** do Microsoft Intune para implementar as definições OMA-URI que podem ser utilizadas para controlar funcionalidades nos dispositivos Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
@@ -208,7 +208,7 @@ Atualmente, o Intune suporta um número limitado de políticas personalizadas do
 
 ## <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung KNOX Standard suportados
 
-A aplicação Portal da Empresa tenta apenas a ativação do Samsung KNOX durante a inscrição MDM se o dispositivo for apresentado na [lista de dispositivos KNOX suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Isto ajuda a evitar erros de ativação de KNOX que impedem a inscrição MDM. Os dispositivos que não suportam a ativação do Samsung KNOX são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o KNOX, enquanto outros não. Verifique a compatibilidade com o KNOX junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
+A aplicação Portal da Empresa só tenta a ativação do Samsung KNOX durante a inscrição MDM se o dispositivo for apresentado na [lista de dispositivos KNOX suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Isto ajuda a evitar erros de ativação de KNOX que impedem a inscrição MDM. Os dispositivos que não suportam a ativação do Samsung KNOX são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o KNOX, enquanto outros não. Verifique a compatibilidade com o KNOX junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
 
 Pode encontrar uma lista de dispositivos Samsung KNOX suportados, juntamente com a lista de [dispositivos suportados pelo Intune](/intune/supported-devices-browsers.md#intune-supported-devices).
 

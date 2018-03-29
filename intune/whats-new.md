@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f171779a2606790dd1e59caf5e261e6d22faaf7f
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: be4d02419879a765c3d84a99b65a1184f7e8353e
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -47,6 +47,10 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Pode também
 
 
 ## <a name="week-of-march-12-2018"></a>Semana de 12 de março de 2018
+
+#### <a name="company-portal-app-for-android-visual-updates---976944---"></a>Atualizações visuais da aplicação Portal da Empresa para Android <!--976944 -->
+
+Atualizámos a aplicação Portal da Empresa para Android para seguir as diretrizes de [Conceção do Material](https://material.io/) do Android. Pode ver as imagens dos novos ícones no artigo [Novidades na IU da aplicação](whats-new-app-ui.md).
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>Novas definições do Windows Defender Exploit Guard <!-- 1631893 -->
 
@@ -88,11 +92,11 @@ No painel **Resolução de problemas**, pode agora ver as [restrições de inscr
 #### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Relatórios de estado da ameaça e estado de funcionamento do Windows Defender <!--854704 -->
 
 Compreender o funcionamento e o estado do Windows Defender é fundamental para gerir PCs Windows.  Com esta atualização, o Intune adiciona novos relatórios e ações ao estado e estado de funcionamento do agente Windows Defender. Através de um relatório geral do estado na [carga de trabalho de Conformidade do Dispositivo](compliance-policy-monitor.md), pode ver os dispositivos que necessitam de:
-- Atualização de assinatura
+- atualização de assinatura
 - Reiniciar
-- Intervenção manual
-- Análise completa
-- Outros estados de agente a precisar de intervenção
+- intervenção manual
+- análise completa
+- outros estados de agente a precisar de intervenção
 
 Um relatório de agregação para cada categoria de estado indica os PCs individuais que precisam de atenção ou os que estão registados como **Limpar**.
 
@@ -314,7 +318,7 @@ Quando cria um perfil de certificado SCEP no Intune, agora, pode utilizar a vari
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>Gerir dispositivos macOS inscritos com Jamf através do motor de conformidade de dispositivo do Intune <!-- 1592747 -->
-Agora, pode utilizar o Jamf para enviar informações sobre o estado do dispositivo macOS ao Intune que, em seguida, avaliará a conformidade com as políticas definidas na consola do Intune. Com base no estado de conformidade do dispositivo, bem como outras condições (como a localização, risco do utilizador, etc.), o acesso condicional estabelecerá a conformidade dos dispositivos macOS que tentem aceder a aplicações na nuvem e no local ligadas com o Azure Active Directory, incluindo o Office 365. Saiba mais sobre como [configurar a integração do Jamf](conditional-access-integrate-jamf.md) e [impor a conformidade para dispositivos geridos pelo Jamf](conditional-access-assign-jamf.md).
+Agora, pode utilizar o Jamf para enviar informações sobre o estado do dispositivo macOS ao Intune que, em seguida, avaliará a conformidade com as políticas definidas na consola do Intune. Com base no estado de conformidade do dispositivo, bem como outras condições (como a localização, risco do utilizador, etc.), o acesso condicional estabelecerá a conformidade dos dispositivos macOS que tentem aceder a aplicações na cloud e no local ligadas com o Azure Active Directory, incluindo o Office 365. Saiba mais sobre como [configurar a integração do Jamf](conditional-access-integrate-jamf.md) e [impor a conformidade para dispositivos geridos pelo Jamf](conditional-access-assign-jamf.md).
 
 #### <a name="new-ios-device-action------1424701---"></a>Nova ação do dispositivo iOS <!-- 1424701 -->
 
@@ -502,7 +506,7 @@ Agora pode ver se os dispositivos iOS têm o Bloqueio de Ativação ativado. Est
 
 #### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>Bloquear remotamente dispositivos macOS geridos com o Intune <!-- 1437691 -->
 
-Pode bloquear um dispositivo macOS perdido e definir um PIN de recuperação de 6 dígitos. Se estiver bloqueado, o painel **Descrição geral do dispositivo** apresenta o PIN até que seja enviada outra ação de dispositivo.
+Pode bloquear um dispositivo macOS perdido e definir um PIN de recuperação de 6 dígitos. Se estiver bloqueado, o painel **Descrição geral do dispositivos** apresenta o PIN até que seja enviada outra ação de dispositivo.
 
 Para obter mais informações, veja [Bloquear remotamente dispositivos geridos com o Intune](device-remote-lock.md).
 
@@ -513,10 +517,10 @@ Agora, os administradores podem configurar definições adicionais ao criar um p
 <!-- #### Update to what device details your company may see -1616825
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. -->
 
-#### <a name="retain-data-during-a-factory-reset----1588489---"></a>Reter dados durante uma reposição de fábrica <!--1588489 -->
-Quando repõe uma versão 1709 ou posterior do Windows 10 para as definições de fábrica, fica disponível uma nova capacidade. Os administradores podem especificar se a inscrição de dispositivos e outros dados aprovisionados são retidos num dispositivo através de uma reposição de fábrica.
+#### <a name="retain-data-during-a-factory-reset----1588489---"></a>Reter dados durante uma reposição de dados de fábrica <!--1588489 -->
+Quando repõe uma versão 1709 ou posterior do Windows 10 para as definições de fábrica, fica disponível uma nova capacidade. Os administradores podem especificar se a inscrição de dispositivos e outros dados aprovisionados são retidos num dispositivo através de uma reposição de dados de fábrica.
 
-Os seguintes dados são retidos através de uma reposição de fábrica:
+Os seguintes dados são retidos através de uma reposição de dados de fábrica:
 - Contas de utilizador associadas ao dispositivo
 - Estado da máquina (associação a um domínio, associado ao Azure Active Directory)
 - Inscrição na MDM
@@ -617,7 +621,7 @@ Um administrador pode definir a atualização de segurança mínima para Android
 > Esta funcionalidade apenas restringe atualizações de segurança lançadas pela Google em dispositivos Android 6.0+.
 
 #### <a name="app-conditional-launch-support----1193313---"></a>Suporte para execução condicional de aplicações <!-- 1193313 -->
-Os administradores de TI já podem definir um requisito através do portal de administração do Azure para impor um código de acesso em vez de um PIN numérico através da gestão de aplicações móveis (MAM) quando a aplicações é executada. Caso esteja configurado, é pedido ao utilizador que defina e utilize um código de acesso antes de poder aceder a aplicações otimizadas para a MAM. Os códigos de acesso são definidos como um PIN numérico com, pelo menos, um caráter especial ou letras em maiúsculas/minúsculas. Esta versão do Intune irá ativar esta funcionalidade **apenas no iOS**. O Intune suporta um código de acesso de forma semelhante a um PIN numérico: a aplicação define um comprimento mínimo e permite sequências e carateres repetidos. Esta funcionalidade requer que a participação de aplicações (por exemplo, WXP, Outlook, Managed Browser, Yammer) integre o SDK da Aplicação Intune com o código desta funcionalidade para que as definições do código de acesso sejam impostas nas aplicações visadas.
+Os administradores de TI já podem definir um requisito através do portal de administração do Azure para impor um código de acesso em vez de um PIN numérico através da gestão de aplicações móveis (MAM) quando a aplicações é executada. Caso esteja configurado, é pedido ao utilizador que defina e utilize um código de acesso antes de poder aceder a aplicações otimizadas para a MAM. Os código de acesso são definidos como um PIN numérico com, pelo menos, um caráter especial ou letras em maiúsculas/minúsculas. Esta versão do Intune irá ativar esta funcionalidade **apenas no iOS**. O Intune suporta um código de acesso de forma semelhante a um PIN numérico: a aplicação define um comprimento mínimo e permite sequências e carateres repetidos. Esta funcionalidade requer que a participação de aplicações (por exemplo, WXP, Outlook, Managed Browser, Yammer) integre o SDK da Aplicação Intune com o código desta funcionalidade para que as definições do código de acesso sejam impostas nas aplicações visadas.
 
 #### <a name="app-version-number-for-line-of-business-in-device-install-status-report----1233999---"></a>Número da Versão de Aplicação para aplicações de linha de negócio no relatório de estado de instalação do dispositivo <!-- 1233999 -->
 Com esta versão, o relatório de estado de instalação do Dispositivo apresenta o número da versão de aplicação das aplicações de linha de negócio para iOS e Android. Pode utilizar estas informações para resolver problemas nas suas aplicações ou localizar dispositivos que estão a ser executados com versões desatualizadas da aplicação.
@@ -643,7 +647,7 @@ O Windows Defender Exploit Guard inclui regras personalizadas para reduzir a exp
 - A **Redução da Superfície de Ataque (ASR)** fornece regras que lhe permitem impedir ameaças de macros, scripts e e-mail.
 - O **Acesso a Pastas Controladas** bloqueia automaticamente o acesso a conteúdos de pastas protegidas.
 - O **Filtro de Rede** bloqueia a ligação de saída de qualquer aplicação para um IP/domínio com baixa reputação
-- A **Exploit Protection** fornece restrições de memória, fluxo de controlos e de políticas que podem ser utilizadas para proteger uma aplicação de exploits.
+- A **Exploit Protection** fornece restrições de memória, fluxo de controlos e de políticas que podem ser utilizadas para proteger um aplicação de exploits.
 
 
 #### <a name="manage-powershell-scripts-in-intune-for-windows-10-devices----790537---"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10 <!-- 790537 -->
@@ -708,9 +712,9 @@ Agora, os utilizadores finais com o Managed Browser instalado podem ver o estado
 
 Para saber como ativar o modo de resolução de problemas num Managed Browser num dispositivo iOS, veja [How to access to managed app logs using the Managed Browser on iOS (Como aceder a registos de aplicações geridas com o Managed Browser no iOS)](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
 
-#### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa para iOS na versão 2.9.0 <!-- 1417174 -->
+#### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa para iOS na versão 2.9.0 <!-- 1417174 -->
 
-O fluxo de trabalho da configuração de dispositivos foi melhorado na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. A linguagem é agora mais adaptada à sua empresa, ao utilizar o nome da sua empresa no texto de configuração. Pode ver este fluxo de trabalho atualizado em  [novidades na página da IU para aplicações](whats-new-app-ui.md).
+O fluxo de trabalho da configuração de dispositivos foi melhorado na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. A linguagem é agora mais adaptada à sua empresa, ao utilizar o nome da sua empresa no texto de configuração. Pode ver este fluxo de trabalho atualizado na página  [Novidades na IU da aplicação](whats-new-app-ui.md).
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
 
@@ -824,7 +828,7 @@ Para as contas do Intune criadas depois de janeiro de 2017, o Intune ativou o ac
 
 ## <a name="whats-coming"></a>Novidades futuras
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>Nova atualização da experiência de utilizador do site do Portal da Empresa <!--2000968-->
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>Atualização com a nova experiência de utilizador para o site do Portal da Empresa <!--2000968-->
 
 Em abril, apresentamos uma nova experiência do site do Portal da Empresa, com atualizações à IU, fluxos de trabalho simplificados e melhorias de acessibilidade. Isto inclui melhorias orientadas para o cliente, como a partilha de aplicações e o desempenho global melhorado, para lhe oferecer uma experiência mais simples.
 Adicionámos algumas funcionalidades novas com base no seu feedback, que irão melhorar significativamente a facilidade de utilização e as funcionalidades existentes:
@@ -833,7 +837,7 @@ Adicionámos algumas funcionalidades novas com base no seu feedback, que irão m
 -   Capacidade de partilhar ligações diretas para as aplicações
 - Desempenho melhorado para grandes catálogos de aplicações
 
-Não precisa de tomar medidas para se preparar para esta alteração. Iremos informá-lo quando o site do Portal da empresa atualizado estiver disponível para si. No entanto, poderá ter de atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa no iOS, uma vez que o site ativa a secção **Aplicações** da aplicação para iOS. Pode ver uma imagem de exemplo na página [Novidades na IU da aplicação](whats-new-app-ui.md).
+Não precisa de tomar medidas para se preparar para esta alteração. Vamos informá-lo quando o site Portal da Empresa atualizado estiver disponível para si. No entanto, poderá ter de atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS. Pode ver uma imagem de exemplo na página [Novidades na IU da aplicação](whats-new-app-ui.md).
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!--1412866-->
 

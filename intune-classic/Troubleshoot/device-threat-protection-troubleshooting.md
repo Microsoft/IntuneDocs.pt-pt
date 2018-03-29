@@ -1,25 +1,25 @@
 ---
-title: "Resolução de problemas da Integração do Lookout"
-description: "Este tópico descreve resoluções de problemas que ocorrem frequentemente com a Integração do Lookout"
-keywords: 
+title: Resolução de problemas da Integração do Lookout
+description: Este tópico descreve resoluções de problemas que ocorrem frequentemente com a Integração do Lookout
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Resolução de Problemas da Integração do Lookout com o Intune
 
@@ -36,7 +36,7 @@ O Lookout MTP só concede autorização para aceder ao serviço aos utilizadores
 
 * E-mail: enterprisesupport@lookout.com
 * Inicie sessão na [Consola do MTP](http://aad.lookout.com) e navegue até ao módulo **Suporte**.
-* Aceda a: https://enterprise.support.lookout.com/hc/requests e solicite um pedido de suporte.
+* Aceda a https://enterprise.support.lookout.com/hc/requests e efetue um pedido de suporte.
 
 ## <a name="unable-to-sign-in"></a>Não é possível iniciar sessão
 Verá o seguinte erro se o utilizador de administração global do Azure AD não aceitar a configuração inicial do Lookout.

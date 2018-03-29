@@ -1,49 +1,42 @@
 ---
-title: "Criar uma política de conformidade de dispositivos iOS no Microsoft Intune"
-titleSuffix: 
-description: "Crie uma política de conformidade de dispositivos do Microsoft Intune para dispositivos iOS, para que possa especificar os requisitos que um dispositivo tem de cumprir para estar em conformidade."
-keywords: 
-author: msmimart
-ms.author: mimart
+title: Criar política de conformidade de dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
+description: Crie uma política de conformidade de dispositivos no Microsoft Intune para dispositivos iOS para introduzir uma conta de e-mail, verificar dispositivos alvo de jailbreak, verificar a versão mínima e máxima do sistema operativo e definir restrições de palavra-passe, incluindo comprimento da palavra-passe e inatividade de dispositivos.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos iOS no Intune
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos para dispositivos iOS no Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Uma política de conformidade de dispositivos do Intune para iOS especifica as regras e definições que os dispositivos iOS têm de cumprir para serem considerados como estando em conformidade. Quando utiliza políticas de conformidade de dispositivos com acesso condicional, pode permitir ou bloquear o acesso aos recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar as políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre políticas de conformidade e os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja o tópico [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos iOS no Intune determina as regras e definições que os dispositivos iOS têm de cumprir para estarem em conformidade. Quando utiliza políticas de conformidade de dispositivos com acesso condicional, pode permitir ou bloquear o acesso aos recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar as políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre políticas de conformidade e os pré-requisitos de que precisa antes de criar uma política de conformidade, veja [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
--------------------------------
-
-
 | **Definição de política** | **iOS 8.0 e posterior** |
 | --- | --- |
-| **Configuração do PIN ou da palavra-passe** | Corrigido |   
+| **Configuração do PIN ou da palavra-passe** | Corrigido |
 | **Encriptação do dispositivo** | Corrigido (ao definir um PIN) |
 | **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Em quarentena (não é uma definição)
 | **Perfil de e-mail** | Em quarentena |
 |**Versão mínima do SO** | Em quarentena |
-| **Versão máxima do SO** | Em quarentena |  
-| **Atestado do estado de funcionamento do Windows** | Não aplicável |  
-----------------------------
-
+| **Versão máxima do SO** | Em quarentena |
+| **Atestado do estado de funcionamento do Windows** | Não aplicável |
 
 **Remediado** = O sistema operativo do dispositivo impõe a conformidade. (Por exemplo, forçar o utilizador a definir um PIN.)
 
@@ -55,10 +48,10 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Criar uma política de conformidade no portal do Azure
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-1. No painel **Intune**, selecione **Conformidade do dispositivo**. Em **Gerir**, selecione **Políticas** e, em seguida, **Criar Política**.
-2. Escreva um nome, uma descrição e escolha a plataforma à qual pretende que esta política se aplique.
-3. Selecione **Requisitos de conformidade** para especificar aqui as definições de **Segurança do Sistema**, de **Estado de Funcionamento do Dispositivo** e de **Propriedades do Dispositivo**. Quando tiver terminado, selecione **OK**.
+2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+3. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar Política**.
+4. Introduza um nome, uma descrição e escolha a plataforma à qual pretende que esta política se aplique.
+5. Selecione **Definições** para introduzir as definições de **E-mail**, **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando tiver terminado, selecione **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizad
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Definições de segurança do sistema
-
-### <a name="password"></a>Palavra-passe
-
-- **Pedir uma palavra-passe para desbloquear dispositivos móveis**: defina esta opção como **Sim** para pedir ao utilizador que introduza uma palavra-passe para poder aceder ao respetivo dispositivo. Os dispositivos iOS que utilizam uma palavra-passe são encriptados.
-- **Permitir palavras-passe simples**: defina esta opção como **Sim** para permitir que o utilizador crie uma palavra-passe como **1234** ou **1111**.
-- **Comprimento mínimo da palavra-passe**: especifique o número mínimo de dígitos ou carateres que a palavra-passe tem de ter.
-- **Solicitar tipo de palavra-passe:** especifique se o utilizador tem de criar uma palavra-passe **Alfanumérica** ou **Numérica**.
-- **Número mínimo de conjuntos de carateres:** se definir **Tipo de palavra-passe necessária** como **Alfanumérico**, utilize esta definição para especificar o número mínimo de conjuntos de carateres que a palavra-passe deve ter. Os quatro conjuntos de carateres são:
-  - Letras minúsculas
-  - Letras maiúsculas
-  - Símbolos
-  - Números
-
-Definir um número mais relevado exige que o utilizador crie uma palavra-passe mais complexa.
-
-Para dispositivos iOS, esta definição refere-se ao número de carateres especiais (por exemplo, **!** , **#**, **&amp;**) que têm de ser incluídos na palavra-passe.
-
-- **Minutos de inatividade antes de a palavra-passe ser exigida**: especifique o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
-- **Memorizar histórico de palavras-passe:** utilize esta definição juntamente com **Impedir a reutilização de palavras-passe anteriores** para impedir o utilizador de criar palavras-passe utilizadas anteriormente.
-- **Impedir a reutilização de palavras-passe anteriores**: se tiver selecionado **Memorizar histórico de palavras-passe**, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
-- **Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**: utilize esta definição em conjunto com a definição **Minutos de inatividade antes de a palavra-passe ser exigida**. Será pedido ao utilizador que introduza uma palavra-passe para aceder a dispositivos que tenham estado inativos durante o período de tempo especificado na definição **Minutos de inatividade antes de a palavra-passe ser exigida**.
-
-### <a name="email-profile"></a>Perfil de e-mail
+## <a name="email"></a>E-mail
 
 - **A conta de e-mail tem de ser gerida pelo Intune:** quando esta opção está definida como **Sim**, o dispositivo tem de utilizar o perfil de e-mail implementado no dispositivo. O dispositivo é considerado não conforme nas seguintes situações:
   - O perfil de e-mail é implementado para um grupo de utilizadores que não o grupo de utilizadores visado pela política de conformidade.
@@ -111,14 +80,34 @@ Para dispositivos iOS, esta definição refere-se ao número de carateres especi
 
 Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health-settings"></a>Definições de estado de funcionamento do dispositivo
+## <a name="device-health"></a>Estado de Funcionamento do Dispositivo
 
-- **O dispositivo não pode ter jailbreak ou root:** se ativar esta definição, os dispositivos com jailbreak não serão conformes.
+- **Dispositivos alvo de jailbreak**: se ativar esta definição, os dispositivos alvo de jailbreak não são conformes.
+- **Exigir que o dispositivo esteja ao Nível de Ameaças do Dispositivo ou abaixo do mesmo**: selecione o nível de ameaça máximo para marcar dispositivos como não conformes. Por exemplo, se definir o nível de ameaça para **Médio**, então os dispositivos nos níveis médio, baixo ou protegido são conformes. Os dispositivos com um nível de ameaça elevado não são conformes.
 
 ## <a name="device-properties"></a>Propriedades do dispositivo
 
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo. Depois, pode aceder aos recursos da empresa.
-- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
+- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. Em seguida, é pedido ao utilizador para contactar o seu administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode aceder aos recursos da empresa.
+
+## <a name="system-security"></a>Segurança do sistema
+
+### <a name="password"></a>Palavra-passe
+
+> [!NOTE]
+> Após ser aplicada uma política de conformidade ou de configuração para um dispositivo iOS, será pedido aos utilizadores que definam um código de acesso a cada 15 minutos. Os utilizadores continuam a receber o pedido até que seja definido um código de acesso.
+
+- **Pedir uma palavra-passe para desbloquear dispositivos móveis**: defina esta opção como **Sim** para pedir ao utilizador que introduza uma palavra-passe para poder aceder ao respetivo dispositivo. Os dispositivos iOS que utilizam uma palavra-passe são encriptados.
+- **Palavras-passe simples**: defina esta opção como **Sim** para permitir que o utilizador crie uma palavra-passe como **1234** ou **1111**.
+- **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe tem de ter.
+- **Tipo de palavra-passe necessária**: especifique se o utilizador tem de criar uma palavra-passe **Alfanumérica** ou **Numérica**.
+- **Número de carateres não alfanuméricos na palavra-passe**: introduza o número mínimo de carateres especiais (&, #, %, !, etc.) que têm de ser incluídos na palavra-passe.
+
+    Definir um número mais relevado exige que o utilizador crie uma palavra-passe mais complexa.
+
+- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
+- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
+- **Número de palavras-passe anteriores cuja reutilização está bloqueada**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas.
 
 <!--- ## Next steps
 

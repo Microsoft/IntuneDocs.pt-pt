@@ -1,25 +1,25 @@
 ---
-title: "Definições de política para iOS"
-description: "Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune."
-keywords: 
+title: Definições de política para iOS
+description: Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Definições de política do iOS no Microsoft Intune
 
@@ -222,7 +222,7 @@ Para especificar o URL de uma aplicação na lista de aplicações compatíveis 
 
 2. Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações compatíveis ou não compatíveis que pretende executar no modo de local público.
 
-**Exemplo:** Procure por **Microsoft Word para iPad**. O URL que irá utilizar será **https://itunes.apple.com/pt/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Exemplo:** procure o **Microsoft Word para iPad**. O URL que irá utilizar será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
