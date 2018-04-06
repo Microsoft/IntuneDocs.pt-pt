@@ -105,7 +105,7 @@ Estão agora disponíveis [duas novas definições de privacidade](device-restri
 - **Publicar as atividades do utilizador**: defina esta opção para **Bloquear** para impedir que as experiências e a deteção de recursos utilizados recentemente sejam partilhadas no comutador de tarefas.
 - **Apenas atividades locais**: defina esta opção para **Bloquear** para impedir que as experiências e a deteção de recursos utilizados recentemente sejam partilhadas no comutador de tarefas com base na atividade local.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Novas definições no browser Edge <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Novas definições no browser Microsoft Edge <!--1469166 -->
 Estão agora disponíveis [duas novas definições](device-restrictions-windows-10.md#edge-browser) de privacidade para os dispositivos com o browser Microsoft Edge: **Caminho para o ficheiro de favoritos** e **Alterações aos Favoritos**.
 
 ### <a name="app-management"></a>Gestão de aplicações
