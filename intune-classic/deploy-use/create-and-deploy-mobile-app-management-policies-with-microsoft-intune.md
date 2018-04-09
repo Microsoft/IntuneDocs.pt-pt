@@ -1,25 +1,25 @@
 ---
-title: "Criar e implementar políticas de MAM"
-description: "Utilize as instruções passo a passo neste tópico para criar e implementar políticas de gestão de aplicações móveis."
-keywords: 
+title: Criar e implementar políticas de MAM
+description: Utilize as instruções passo a passo neste tópico para criar e implementar políticas de gestão de aplicações móveis.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Criar e implementar políticas de proteção de aplicações com o Microsoft Intune
 
@@ -172,7 +172,7 @@ Para ver o efeito das alterações imediatamente, o utilizador final terá de te
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>Para alterar a lista de aplicações associadas à política
 
-1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre um painel específico da política que acabou de selecionar.
+1.  No painel **Política de aplicação**, escolha a política que pretende alterar. Esta ação abre um painel  específico da política que acabou de selecionar.
 
     ![Captura de ecrã de uma política existente aberta num painel separado](../media/AppManagement/AzurePortal_MAM_OpenPolicy.png)
 
@@ -213,7 +213,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 - [Políticas para iOS](ios-mam-policy-settings.md)
 - [Políticas para Android](android-mam-policy-settings.md)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Monitorizar o estado do utilizador e de conformidade](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Consulte também

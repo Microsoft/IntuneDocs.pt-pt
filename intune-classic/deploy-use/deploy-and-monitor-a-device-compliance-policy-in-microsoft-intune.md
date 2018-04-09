@@ -1,25 +1,25 @@
 ---
-title: "Implementar e monitorizar políticas de conformidade"
-description: "Utilize as instruções passo a passo neste tópico para implementar e monitorizar uma política de conformidade de dispositivos."
-keywords: 
+title: Implementar e monitorizar políticas de conformidade
+description: Utilize as instruções passo a passo neste tópico para implementar e monitorizar uma política de conformidade de dispositivos.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae914e755b809eda55abc5dc069c9ee2897d9ff4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e24c969206d3e1f34bfee0af46c4398c9d2739a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Implementar e monitorizar políticas de conformidade de dispositivos no Microsoft Intune
 
@@ -65,7 +65,7 @@ Se forem aplicadas múltiplas políticas do Intune a um dispositivo, podem ocorr
 
 -   Se tiver implementado múltiplas políticas de conformidade, o Intune utilizará a mais segura destas políticas.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Para saber como utilizar a política de conformidade com políticas de acesso condicional para controlar o acesso aos serviços da sua organização, consulte [Restringir o acesso ao e-mail e a serviços do O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 

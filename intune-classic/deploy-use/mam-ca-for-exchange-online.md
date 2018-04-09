@@ -1,25 +1,25 @@
 ---
-title: "Acesso da aplicação para o Exchange Online"
-description: "Este tópico descreve como pode configurar uma política de acesso condicional para aplicações MAM."
-keywords: 
+title: Acesso da aplicação para o Exchange Online
+description: Este tópico descreve como pode configurar uma política de acesso condicional para aplicações MAM.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a687af9396236af9685fd2bb423226a7e83797
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d582421ed842f1e5b87419e25c5d03ad7a138e99
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Criar um acesso condicional do Exchange Online para permitir apenas aplicações suportadas por MAM
 
@@ -58,7 +58,7 @@ Este tópico fornece-lhe instruções passo a passo sobre como configurar o aces
 Para **eliminar um grupo de utilizadores**, na lista de **grupos de utilizadores restritos**, abra o painel **Grupos de utilizadores restritos**, selecione o grupo que quer eliminar e clique nas **reticências (...)** para ver a opção **Eliminar**. Selecione **Eliminar** para remover o grupo de utilizadores da lista. Pode seguir o mesmo procedimento para remover um grupo de utilizadores da lista de **grupos de utilizadores excluídos**.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Bloquear aplicações que não tenham autenticação moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Consulte também
 [Proteger os dados da aplicação com políticas de proteção de aplicações](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

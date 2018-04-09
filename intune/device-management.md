@@ -1,24 +1,24 @@
 ---
 title: Gerir dispositivos com o Microsoft Intune
-titleSuffix: 
-description: "Reveja os dispositivos que gere com o Intune e realize várias operações neles."
-keywords: 
+titleSuffix: ''
+description: Reveja os dispositivos que gere com o Intune e realize várias operações neles.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -63,6 +63,6 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
     - [Sincronizar o dispositivo](device-sync.md)
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

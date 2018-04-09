@@ -1,25 +1,25 @@
 ---
-title: "Sincronizar dispositivos com o Microsoft Intune – Azure | Microsoft Docs"
-description: "Sincronize dispositivos registados ou geridos com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui os passos para sincronizar através do portal do Azure e lista os códigos de erro que podem ser repetidos."
-keywords: 
+title: Sincronizar dispositivos com o Microsoft Intune – Azure | Microsoft Docs
+description: Sincronize dispositivos registados ou geridos com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui os passos para sincronizar através do portal do Azure e lista os códigos de erro que podem ser repetidos.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes com o Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,18 +37,18 @@ A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar
 ## <a name="sync-a-device"></a>Sincronizar um dispositivo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**. 
-3. No **Intune** selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-4. Na lista de dispositivos que gere, selecione um dispositivo, selecione **...Mais** e, em seguida, selecione a ação **Sincronizar**.
-5. Selecione **Sim** para confirmar.
+2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**. 
+3. No **Intune**, selecione **Dispositivos** > **Todos os dispositivos**.
+4. Na lista de dispositivos que gere, selecione um dispositivo, selecione **Mais** e, em seguida, selecione **Sincronizar**.
+5. Para confirmar, selecione **Sim**.
 
 
 ## <a name="retryable-error-codes"></a>Códigos de erro repetíveis
 
-Quando um administrador executa a ação de dispositivo **Sincronizar**, as aplicações iOS e Android com falhas e que geraram um código de erro repetível continuam disponíveis no dispositivo. No entanto, as aplicações que geraram um código de erro não repetível têm de esperar sete dias antes de estarem disponíveis no dispositivo.
+Quando um administrador executa a ação de dispositivo **Sincronizar**, as aplicações iOS e Android com falhas e que geraram um código de erro repetível continuam disponíveis no dispositivo. No entanto, as aplicações que geraram um código de erro não repetível têm de aguardar sete dias antes de estarem disponíveis no dispositivo.
 
 
-| Código de Erro  | Descrição Sugerida | Repetível |
+| Código de erro  | Descrição sugerida | Repetível |
 |---|---|---|
 | 2016330898 | Ocorreu um erro desconhecido. | Não |
 | 2016330897 | A sua ligação ao Intune excedeu o limite de tempo. Reinicie a sua ligação. | Sim |
@@ -62,6 +62,6 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação. | Sim|
 | 2016330888 | A avaliação da fidedignidade do servidor falhou. | Não|
 
-## <a name="next-step"></a>Passo seguinte
+## <a name="next-steps"></a>Próximos passos
 
-Selecione **Ações do dispositivo** para ver o estado da ação de sincronização. 
+- Para ver o estado da ação de sincronização, selecione **Ações do dispositivo**. 

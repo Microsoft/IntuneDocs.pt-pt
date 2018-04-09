@@ -1,25 +1,25 @@
 ---
-title: "Como adicionar aplicações de linha de negócio Android ao Microsoft Intune"
-titlesuffix: 
-description: "Saiba como adicionar aplicações de linha de negócio (LOB) Android ao Microsoft Intune."
-keywords: 
+title: Como adicionar aplicações de linha de negócio Android ao Microsoft Intune
+titlesuffix: ''
+description: Saiba como adicionar aplicações de linha de negócio (LOB) Android ao Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f336fb295dba396dad3a399aafc17435edb70b3
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a5b09f855b6da65edf3c560725b339528f2bcfaa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Android ao Microsoft Intune
 
@@ -49,7 +49,7 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona ao In
 ## <a name="step-3---configure-app-information"></a>Passo 3 – Configurar as informações da aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação**.
-2. No painel **Informações da aplicação**, adicione os detalhes da sua aplicação. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
+2. No painel **Informações da aplicação**, adicione os detalhes da sua aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome** – introduza o nome da aplicação a apresentar no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** – introduza a descrição da aplicação a apresentar aos utilizadores no portal da empresa.
     - **Publicador** – Introduza o nome do publicador da aplicação.

@@ -1,33 +1,33 @@
 ---
-title: "Bloquear dispositivos com o Microsoft Intune – Azure | Microsoft Docs"
-description: "Utilize a ação Bloqueio Remoto no Microsoft Intune para bloquear um dispositivo protegido por um PIN ou palavra-passe."
-keywords: 
+title: Bloquear dispositivos com o Microsoft Intune – Azure | Microsoft Docs
+description: Utilize a ação Bloqueio remoto no Microsoft Intune para bloquear um dispositivo protegido por um PIN ou palavra-passe.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a55de54a5a18f5fd1080fefa15c0e4801a1456
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 6e32140070cf6d3c2d34ae9f28a9694ffc9c3eb8
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Bloquear remotamente dispositivos com o Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O **Bloqueio remoto** bloqueia o dispositivo. Para desbloqueá-lo, o proprietário do dispositivo introduz o código de acesso. Pode bloquear remotamente dispositivos que tenham um PIN ou uma palavra-passe definida. Os dispositivos que não tenham um PIN ou código de acesso não podem ser bloqueados remotamente.
+A ação **Bloqueio remoto** bloqueia o dispositivo. Para desbloquear o dispositivo, o proprietário do dispositivo introduz o código de acesso. Pode bloquear remotamente dispositivos que tenham um PIN ou uma palavra-passe definida. Os dispositivos que não tenham um PIN ou palavra-passe não podem ser bloqueados remotamente.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
-O bloqueio remoto é suportado pelas seguintes plataformas:
+O **Bloqueio remoto** é suportado pelas seguintes plataformas:
 
 - Android
 - iOS
@@ -35,19 +35,20 @@ O bloqueio remoto é suportado pelas seguintes plataformas:
 - Windows 10 Mobile
 - Windows Phone 8.1 e posterior
 
-O bloqueio remoto **não** é suportado em:
+O **Bloqueio remoto** *não* é suportado em:
 - Computadores com o Windows 10
 
 > [!NOTE]
-> Para dispositivos macOS, defina um PIN de recuperação de 6 dígitos. Se estiver bloqueado, a **Descrição geral do dispositivo** apresenta o PIN até que seja enviada outra ação de dispositivo.
+> Para dispositivos macOS, defina um PIN de recuperação de 6 dígitos. Se o dispositivo estiver bloqueado, a **Descrição geral do dispositivo** apresenta o PIN até que seja enviada outra ação de dispositivo.
 
 ## <a name="remote-lock-a-device"></a>Bloquear remotamente um dispositivo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
+2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
+3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Na lista de dispositivos, selecione um dispositivo e, em seguida, selecione a ação **Bloqueio remoto**.
 
 ## <a name="next-steps"></a>Próximos passos
 
-Para ver o estado desta ação, abra as **Ações do dispositivo** (Microsoft Intune > Dispositivos). Veja [Ações disponíveis](device-management.md) para obter mais ações que o irão ajudar a gerir os seus dispositivos.
+- Para ver o estado desta ação, selecione **Microsoft Intune** > **Dispositivos** > **Ações do dispositivo**. 
+- Para obter mais ações que podem ajudá-lo a gerir os seus dispositivos, veja [Ações disponíveis](device-management.md).

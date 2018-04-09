@@ -1,25 +1,25 @@
 ---
-title: "Como adicionar aplicações de linha de negócios Windows ao Microsoft Intune"
-titlesuffix: 
-description: "Saiba como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune."
-keywords: 
+title: Como adicionar aplicações de linha de negócios Windows ao Microsoft Intune
+titlesuffix: ''
+description: Saiba como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f975f2018d2ce1d7affded3c3386c479e6877388
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) Windows ao Microsoft Intune
 
@@ -38,14 +38,14 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 
 ## <a name="step-2---configure-the-app-package-file"></a>Passo 2 – Configurar o ficheiro de pacote de aplicação
 
-1. No painel **Adicionar aplicação**, selecione o ficheiro **Pacote de aplicação**.
+1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação**.
 2. No painel de ficheiros **Pacote de aplicação**, selecione o botão Procurar e selecione um ficheiro de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**.
 3. Quando terminar, escolha **OK**.
 
 
 ## <a name="step-3---configure-app-information"></a>Passo 3 – Configurar as informações da aplicação
 
-1. No painel **Adicionar aplicação**, selecione o ficheiro **Pacote de aplicação**.
+1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação**.
 2. No painel **Informações da aplicação**, configure as seguintes informações (alguns dos valores neste painel poderão ser preenchidos automaticamente):
     - **Nome** – Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** - Introduza uma descrição para a aplicação. A descrição é apresentada aos utilizadores no portal da empresa.

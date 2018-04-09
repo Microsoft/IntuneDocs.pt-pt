@@ -1,25 +1,25 @@
 ﻿---
-title: "Adicionar aplicações"
-description: "Antes de começar a implementar aplicações com o Intune, familiarize-se com os conceitos apresentados neste tópico."
-keywords: 
+title: Adicionar aplicações
+description: Antes de começar a implementar aplicações com o Intune, familiarize-se com os conceitos apresentados neste tópico.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 788e8a7f15566c4b15fec09f3e861d9380278e3f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 69c3f671fdf1ac0d281e484f9090356a3ce246a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Adicionar aplicações com o Microsoft Intune
 
@@ -91,6 +91,6 @@ Dessa forma, ao carregar a aplicação para o Intune, todos os ficheiros na past
 ![como selecionar dependências do appxbundle UWP Windows 10](./media/w10-dependencies.png)
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Tem de adicionar as aplicações na consola do Intune antes de poder implementá-las. Pode adicionar aplicações a [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) ou [PCs com Windows que gere através do software de cliente do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).

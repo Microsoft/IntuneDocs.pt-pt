@@ -6,7 +6,7 @@ keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações poderá ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-march-12-2018"></a>Semana de 12 de março de 2018
+
+#### <a name="company-portal-for-android-visual-updates---976944---"></a>Atualizações visuais do Portal da Empresa para Android <!--976944 -->
+
+Atualizámos a aplicação Portal da Empresa para Android para seguir as diretrizes de [Conceção do Material](https://material.io/) do Android.
+
+|Antes|Depois|
+|---|---|
+|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
+|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
+|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
+|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+
 
 ## <a name="week-of-november-27-2017"></a>Semana de 27 de novembro de 2017
 
@@ -379,12 +395,12 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 
 ### <a name="ui-iwp"></a>Atualização com a nova experiência de utilizador para o site do Portal da Empresa <!--2000968-->
 
-Apresentamos uma nova experiência do site Portal da Empresa em abril, com atualizações à IU, fluxos de trabalho simplificados e melhorias de acessibilidade. Isto inclui melhorias orientadas para o cliente, como a partilha de aplicações e o desempenho global melhorado, para lhe oferecer uma experiência mais simples.
+Em abril, apresentamos uma nova experiência do site do Portal da Empresa, com atualizações à IU, fluxos de trabalho simplificados e melhorias de acessibilidade. Isto inclui melhorias orientadas para o cliente, como a partilha de aplicações e o desempenho global melhorado, para lhe oferecer uma experiência mais simples.
 
-Adicionámos algumas funcionalidades novas com base no feedback dos nossos clientes, que irão melhorar significativamente a capacidade de utilização e as funcionalidades existentes:
+Adicionámos algumas funcionalidades novas com base no seu feedback, que irão melhorar significativamente a facilidade de utilização e as funcionalidades existentes:
 
 -   Melhorias na IU do site
--   Capacidade para partilhar ligações diretas para aplicações
+-   Capacidade de partilhar ligações diretas para as aplicações
 - Desempenho melhorado para grandes catálogos de aplicações
 
 Não precisa de tomar medidas para se preparar para esta alteração. Vamos informá-lo quando o site Portal da Empresa atualizado estiver disponível para si. No entanto, poderá ter que atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS.

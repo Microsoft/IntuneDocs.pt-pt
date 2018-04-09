@@ -4,7 +4,7 @@ description: Este tópico descreve as definições da política de gestão de ap
 keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2017
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 3cfaab3a4fa204fb5cc3ef1e117b2a5bd2ea6e3b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>Definições das políticas de proteção de aplicações móveis para iOS
 

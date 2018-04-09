@@ -1,23 +1,23 @@
 ---
-title: "Configurar o Microsoft Intune para início de sessão único num dispositivo iOS"
-titlesuffix: 
-description: "Saiba como configurar o Microsoft Intune para início de sessão único num dispositivo iOS."
-keywords: 
+title: Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
+titlesuffix: ''
+description: Saiba como configurar o Microsoft Intune para início de sessão único num dispositivo iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
 
@@ -36,7 +36,7 @@ Para tirar partido do Início de Sessão Único em dispositivos iOS, precisa de 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
-4. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
+4. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
 5. No painel de perfis, selecione **Criar perfil**.
 6. Forneça um nome e descrição e configure as seguintes definições:
    - **Plataforma**: selecione **iOS**.
@@ -90,7 +90,7 @@ Os padrões `http://.com` e `https://.com` correspondem a todos os URLs HTTP e H
 
 Indique que aplicações num dispositivo de utilizador final podem utilizar o payload de Início de Sessão Única.
 
-A matriz `AppIdentifierMatches` tem de conter cadeias que correspondam aos IDs da coleção de pacotes de aplicação. Estas cadeias devem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou especificar uma correspondência de prefixo no ID da coleção de pacotes com o caráter universal *\. O caráter universal tem de aparecer após um caráter de ponto final (.) e só pode aparecer uma vez, no final da cadeia (por exemplo: `com.contoso.*`). Quando um caráter universal é incluído, todas as aplicações cujo ID da coleção de pacotes começa com o prefixo têm acesso à conta.
+A matriz `AppIdentifierMatches` tem de conter cadeias que correspondam aos IDs da coleção de pacotes de aplicação. Estas cadeias devem ser correspondências exatas (por exemplo: `com.contoso.myapp`) ou especificar uma correspondência de prefixo no ID da coleção de pacotes com o caráter universal \*. O caráter universal tem de aparecer após um caráter de ponto final (.) e só pode aparecer uma vez, no final da cadeia (por exemplo: `com.contoso.*`). Quando um caráter universal é incluído, todas as aplicações cujo ID da coleção de pacotes começa com o prefixo têm acesso à conta.
 
 O campo **Nome da Aplicação** é utilizado para adicionar um nome simples para o ajudar a identificar o ID da coleção de pacotes.
 
