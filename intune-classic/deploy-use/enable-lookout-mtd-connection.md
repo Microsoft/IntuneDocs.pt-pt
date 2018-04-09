@@ -1,25 +1,25 @@
 ---
 title: Ativar o Lookout MTP no Intune
-description: "Ative o Lookout Mobile Threat Protection na consola de administração do Intune."
-keywords: 
+description: Ative o Lookout Mobile Threat Protection na consola de administração do Intune.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f34697140a287d41203d1bad5df59250f07d08ce
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99c9952b8df3e9b4b1992cbc45366a5ceed458aa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-classic-portal"></a>Ativar a ligação do Lookout MTD no portal clássico do Intune
 
@@ -37,5 +37,5 @@ Para ativar a ligação Lookout MTP no Intune, na página **Administração**, n
 Este passo conclui a configuração da integração do Lookout e do Intune na consola do administrador do Intune.  Os próximos passos para implementar esta solução envolvem implementar a política das [aplicações Lookout for Work](/intune-classic/deploy-use/device-threat-protection-policy).
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Configurar a aplicação Lookout for Work ](/intune-classic/deploy-use/device-threat-protection-apps)

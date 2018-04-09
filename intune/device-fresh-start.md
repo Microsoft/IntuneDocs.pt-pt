@@ -1,23 +1,23 @@
 ---
-title: "Repor dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs"
-description: "Utilize a funcionalidade Começar do Zero para remover ou desinstalar aplicações em PCs com Windows 10 com o Microsoft Intune, incluindo aplicações pré-instaladas de OEMs. Também é possível manter os conteúdos da pasta raiz do utilizador através da definição \"se os dados de utilizador forem retidos\"."
-keywords: 
+title: Repor dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs
+description: Utilize a funcionalidade Começar do Zero para remover ou desinstalar aplicações de PCs com Windows 10 com o Microsoft Intune.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 902ffbcd8f12ba6deb215a54ce378fae94d20426
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Utilizar a funcionalidade Começar do Zero para repor dispositivos Windows 10 com o Intune
 

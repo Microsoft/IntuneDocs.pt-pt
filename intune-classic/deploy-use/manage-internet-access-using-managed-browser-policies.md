@@ -1,25 +1,25 @@
 ---
-title: "Gerir o acesso à Web com o browser gerido"
-description: "Implemente a aplicação de browser gerido para restringir a navegação na Web e a transferência de dados da Web para outras aplicações."
-keywords: 
+title: Gerir o acesso à Web com o browser gerido
+description: Implemente a aplicação de browser gerido para restringir a navegação na Web e a transferência de dados da Web para outras aplicações.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8b928de0bc9dddc35da188ad619b35541027364
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune
 
@@ -109,7 +109,7 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
     -   Porta 443 para https
 
-    Não é suportado utilizar carateres universais para o número de porta. Por exemplo, **http&colon;//www&period;contoso&period;com:*;** e **http&colon;//www&period;contoso&period;com: /*;** não são suportados.
+    Não é suportado utilizar carateres universais para o número de porta. Por exemplo, **http&colon;//www&period;contoso&period;com:*** e **http&colon;//www&period;contoso&period;com: /*;** não são suportados.
 
 -   Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
 

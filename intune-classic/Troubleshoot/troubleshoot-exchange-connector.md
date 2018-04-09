@@ -1,25 +1,25 @@
 ﻿---
-title: "Resolução de Problemas do Conector do Exchange"
-description: "Resolução de problemas relacionados com o Intune Exchange Connector."
-keywords: 
+title: Resolução de Problemas do Conector do Exchange
+description: Resolução de problemas relacionados com o Intune Exchange Connector.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08a21197fd7c67aff037396e86a1555a8033daac
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Instalar o Exchange Conector
 
@@ -50,5 +50,5 @@ Verifique se o Exchange Connector está a sincronizar com o servidor Exchange . 
 - Para obter uma lista de endereços SMTP para uma caixa de correio utilize Obter caixa de correio -Utilizador de identidade | selecione emailaddresses | fl.
 - Para obter informações detalhadas acerca do estado de acesso a um dispositivo utilize Get-CASMailbox <upn> | fl
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

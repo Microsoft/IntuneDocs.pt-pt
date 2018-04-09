@@ -1,25 +1,25 @@
 ---
-title: "Pré-requisitos para políticas de MAM"
-description: "Este tópico descreve os pré-requisitos para a configuração de utilizadores antes de criar políticas de gestão de aplicações móveis."
-keywords: 
+title: Pré-requisitos para políticas de MAM
+description: Este tópico descreve os pré-requisitos para a configuração de utilizadores antes de criar políticas de gestão de aplicações móveis.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9dbaaf5b540d79a51cef3b7f98a16a5a1f200648
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Preparar-se para configurar políticas de proteção de aplicações no portal do Azure
 
@@ -105,5 +105,5 @@ Já terá uma subscrição do Intune se estiver a utilizar atualmente o Intune p
 
 Os Administradores globais têm acesso ao [portal do Azure](https://portal.azure.com).  Se quiser que os utilizadores que não são administradores globais possam configurar políticas e realizar outras tarefas de gestão de aplicações móveis, veja o artigo [Utilizar atribuições de funções para gerir o acesso aos recursos de subscrição do Azure](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

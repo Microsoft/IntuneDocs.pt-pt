@@ -1,25 +1,25 @@
 ﻿---
-title: "Implementar aplicações"
-description: "Este tópico explica os conceitos que tem de compreender antes de iniciar a implementação de aplicações com o Intune."
-keywords: 
+title: Implementar aplicações
+description: Este tópico explica os conceitos que tem de compreender antes de iniciar a implementação de aplicações com o Intune.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6e3761ad892ff17abdfb8b61516ef56b1fb8318d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Implementar aplicações com o Microsoft Intune
 
@@ -71,6 +71,6 @@ Quando duas implementações com a mesma ação de implementação são recebida
 -   Se uma instalação obrigatória e uma instalação disponível forem recebidas por um dispositivo, as ações são combinadas. Por outras palavras, o utilizador pode instalar a aplicação disponível a partir do portal da empresa antes de começar a instalação obrigatória.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como [implementar aplicações no Microsoft Intune](deploy-apps-in-microsoft-intune.md).
