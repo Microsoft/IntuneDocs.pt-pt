@@ -1,29 +1,29 @@
 ---
 title: Proteger o e-mail no Exchange no local
 description: Proteja e controle o acesso ao e-mail da empresa no Exchange no local com o acesso condicional.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bdb5fbf7bb382c9ad503f584b499f5275885ef1
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73535e35605bbc9ca7123935e1816e90b5e60e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Proteger o acesso ao e-mail no Exchange no local e no Exchange Online Dedicado legado com o Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Com o Microsoft Intune, pode configurar o acesso condicional para controlar o acesso ao e-mail no Exchange no local ou no Exchange Online Dedicado legado.
 Para saber mais sobre como funciona o acesso condicional, leia o artigo [Proteger o acesso ao e-mail e aos serviços do Office 365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -53,13 +53,13 @@ Certifique-se de que verifica o seguinte:
 
 Quando configurar políticas de acesso condicional e direcioná-las para um utilizador, antes de um utilizador poder ligar ao respetivo e-mail, o **dispositivo** que utiliza tem de ser:
 
--  Um PC associado a um domínio ou **inscrito** no Intune.
+- Um PC associado a um domínio ou **inscrito** no Intune.
 
--  **Registado no Azure Active Directory**. Além disso, o ID do Exchange ActiveSync do cliente tem de ser registado no Azure Active Directory.
+- **Registado no Azure Active Directory**. Além disso, o ID do Exchange ActiveSync do cliente tem de ser registado no Azure Active Directory.
 
   O serviço de Registos de Dispositivos do Azure Active Directory é ativado automaticamente para os clientes do Intune e do Office 365. Os clientes que já implementaram o serviço de Registos de Dispositivos do ADFS não verão dispositivos registados no Active Directory no local. **Isto não é aplicável a PC com Windows ou a dispositivos Windows Phone**.
 
--   **Conforme** com todas as políticas de conformidade do Intune implementadas nesse dispositivo.
+- **Conforme** com todas as políticas de conformidade do Intune implementadas nesse dispositivo.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Como o acesso condicional funciona com o Exchange no local
 
@@ -91,35 +91,35 @@ As seguintes versões são suportadas:
 
 ##  <a name="configure-a-conditional-access-policy"></a>Configurar uma política de acesso condicional
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Policy** > **Conditional Access** > **Exchange on-premises policy**.
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Policy** > **Conditional Access** > **Exchange on-premises policy**.
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Configure a política com as definições necessárias: ![Captura de ecrã da página da política do Exchange no local](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. Configure a política com as definições necessárias: ![Captura de ecrã da página da política do Exchange no local](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Impedir que as aplicações de e-mail acedam ao Exchange no local se o dispositivo não estiver em conformidade ou não estiver inscrito no Microsoft Intune**: quando seleciona esta opção, os dispositivos que não são geridos pelo Intune ou que não estão em conformidade com uma política de conformidade, são impedidos de aceder aos serviços do Exchange.
+   - **Impedir que as aplicações de e-mail acedam ao Exchange no local se o dispositivo não estiver em conformidade ou não estiver inscrito no Microsoft Intune**: quando seleciona esta opção, os dispositivos que não são geridos pelo Intune ou que não estão em conformidade com uma política de conformidade, são impedidos de aceder aos serviços do Exchange.
 
-  - **Substituição da regra predefinida - Permitir sempre aos dispositivos inscritos e em conformidade aceder ao Exchange**: quando seleciona esta opção, os dispositivos inscritos no Intune e em conformidade com as políticas de conformidade estão autorizados a aceder ao Exchange.
-  Esta regra substitui a **Regra Predefinida**, o que significa que mesmo que defina a **Regra Predefinida** para colocar em quarentena ou bloquear o acesso, os dispositivos inscritos e em conformidade continuarão a poder aceder ao Exchange.
+   - **Substituição da regra predefinida - Permitir sempre aos dispositivos inscritos e em conformidade aceder ao Exchange**: quando seleciona esta opção, os dispositivos inscritos no Intune e em conformidade com as políticas de conformidade estão autorizados a aceder ao Exchange.
+     Esta regra substitui a **Regra Predefinida**, o que significa que mesmo que defina a **Regra Predefinida** para colocar em quarentena ou bloquear o acesso, os dispositivos inscritos e em conformidade continuarão a poder aceder ao Exchange.
 
-  - **Grupos Visados**: selecione os grupos de utilizadores do Intune que têm de inscrever o dispositivo no Intune para poderem aceder ao Exchange.
+   - **Grupos Visados**: selecione os grupos de utilizadores do Intune que têm de inscrever o dispositivo no Intune para poderem aceder ao Exchange.
 
-  - **Grupos Excluídos**: selecione os grupos de utilizadores do Intune excluídos da política de acesso condicional. Os utilizadores nesta lista estão excluídos, mesmo que também estejam na lista **Grupos Visados**.
+   - **Grupos Excluídos**: selecione os grupos de utilizadores do Intune excluídos da política de acesso condicional. Os utilizadores nesta lista estão excluídos, mesmo que também estejam na lista **Grupos Visados**.
 
-  - **Exceções de Plataforma**: selecione **Adicionar Regra** para configurar uma regra que defina os níveis de acesso para famílias e modelos de dispositivos móveis especificados. Como estes dispositivos podem ser de qualquer tipo, também pode configurar os tipos de dispositivos não suportados pelo Intune.
+   - **Exceções de Plataforma**: selecione **Adicionar Regra** para configurar uma regra que defina os níveis de acesso para famílias e modelos de dispositivos móveis especificados. Como estes dispositivos podem ser de qualquer tipo, também pode configurar os tipos de dispositivos não suportados pelo Intune.
 
-  - **Regra Predefinida**: em dispositivos que não são abrangidos por qualquer uma das outras regras, pode optar por permitir que acedam ao Exchange, que o bloqueiem ou o coloquem em quarentena. Quando define a regra para permitir o acesso, para os dispositivos inscritos e em conformidade, o acesso ao e-mail é concedido automaticamente para dispositivos iOS, Windows e Samsung KNOX. O utilizador não tem de passar por nenhum processo para obter acesso ao respetivo e-mail.
-      - Em dispositivos Android sem o Samsung KNOX, os utilizadores finais recebem um e-mail de quarentena que inclui instruções orientadas para verificar a inscrição e a conformidade antes de poderem aceder ao e-mail. Se definir a regra para bloquear o acesso ou colocar dispositivos em quarentena, todos os dispositivos ficam bloqueados de aceder ao Exchange, independentemente de já estarem inscritos ou não no Intune. Para impedir que os dispositivos inscritos e em conformidade sejam afetados por esta regra, selecione a caixa **Substituição da Regra Predefinida**.
->[!TIP]
->Se a sua intenção for bloquear primeiro todos os dispositivos antes de conceder acesso ao e-mail, selecione a regra Bloquear acesso ou Quarentena. A regra predefinida é aplicada a todos os tipos de dispositivos, pelo que os tipos de dispositivos configurados como exceções de plataforma não suportados pelo Intune também são afetados.
+   - **Regra Predefinida**: em dispositivos que não são abrangidos por qualquer uma das outras regras, pode optar por permitir que acedam ao Exchange, que o bloqueiem ou o coloquem em quarentena. Quando define a regra para permitir o acesso, para os dispositivos inscritos e em conformidade, o acesso ao e-mail é concedido automaticamente para dispositivos iOS, Windows e Samsung KNOX. O utilizador não tem de passar por nenhum processo para obter acesso ao respetivo e-mail.
+     - Em dispositivos Android sem o Samsung KNOX, os utilizadores finais recebem um e-mail de quarentena que inclui instruções orientadas para verificar a inscrição e a conformidade antes de poderem aceder ao e-mail. Se definir a regra para bloquear o acesso ou colocar dispositivos em quarentena, todos os dispositivos ficam bloqueados de aceder ao Exchange, independentemente de já estarem inscritos ou não no Intune. Para impedir que os dispositivos inscritos e em conformidade sejam afetados por esta regra, selecione a caixa **Substituição da Regra Predefinida**.
+       >[!TIP]
+       >Se a sua intenção for bloquear primeiro todos os dispositivos antes de conceder acesso ao e-mail, selecione a regra Bloquear acesso ou Quarentena. A regra predefinida é aplicada a todos os tipos de dispositivos, pelo que os tipos de dispositivos configurados como exceções de plataforma não suportados pelo Intune também são afetados.
 
-  - **Notificação do Utilizador**: além do e-mail de notificação enviado pelo Exchange, o Intune envia um e-mail que contém passos para desbloquear o dispositivo. Pode editar a mensagem predefinida para personalizá-la de acordo com as suas necessidades. No caso de o dispositivo do utilizador ser bloqueado antes de receber o e-mail de notificação do Intune com as instruções de correção (este e-mail é enviado para a caixa de correio do Exchange do utilizador), o utilizador pode utilizar um dispositivo desbloqueado ou outro método para aceder ao Exchange e ver a mensagem.
-      - Isto é particularmente verdadeiro quando a **Regra Predefinida** estiver definida como bloqueio ou quarentena. Neste caso, o utilizador tem de aceder à loja de aplicações, transferir a aplicação Portal da Empresa da Microsoft e inscrever o dispositivo. Isto é aplicável a dispositivos iOS, Windows e Samsung KNOX. Para os dispositivos sem o Samsung KNOX, tem de enviar o e-mail de quarentena para uma conta de e-mail alternativa. O utilizador tem de copiar o e-mail para o dispositivo bloqueado para concluir o processo de inscrição e de conformidade.
-  > [!NOTE]
-  > Para o Exchange poder enviar o e-mail de notificação, tem de especificar a conta utilizada para enviá-lo.
-  >
-  > Para obter detalhes, veja [Configurar o conector do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
+   - **Notificação do Utilizador**: além do e-mail de notificação enviado pelo Exchange, o Intune envia um e-mail que contém passos para desbloquear o dispositivo. Pode editar a mensagem predefinida para personalizá-la de acordo com as suas necessidades. No caso de o dispositivo do utilizador ser bloqueado antes de receber o e-mail de notificação do Intune com as instruções de correção (este e-mail é enviado para a caixa de correio do Exchange do utilizador), o utilizador pode utilizar um dispositivo desbloqueado ou outro método para aceder ao Exchange e ver a mensagem.
+     - Isto é particularmente verdadeiro quando a **Regra Predefinida** estiver definida como bloqueio ou quarentena. Neste caso, o utilizador tem de aceder à loja de aplicações, transferir a aplicação Portal da Empresa da Microsoft e inscrever o dispositivo. Isto é aplicável a dispositivos iOS, Windows e Samsung KNOX. Para os dispositivos sem o Samsung KNOX, tem de enviar o e-mail de quarentena para uma conta de e-mail alternativa. O utilizador tem de copiar o e-mail para o dispositivo bloqueado para concluir o processo de inscrição e de conformidade.
+       > [!NOTE]
+       > Para o Exchange poder enviar o e-mail de notificação, tem de especificar a conta utilizada para enviá-lo.
+       >
+       > Para obter detalhes, veja [Configurar o conector do Exchange no local no Exchange alojado ou no local](intune-on-premises-exchange-connector.md).
 
-3.  Quando tiver terminado, escolha **Guardar**.
+3. Quando tiver terminado, escolha **Guardar**.
 
 -   Não tem de implementar a política de acesso condicional, pois esta entra em vigor imediatamente.
 
@@ -131,7 +131,7 @@ As seguintes versões são suportadas:
 
 **Para ver alguns cenários de exemplo de como poderia configurar a política de acesso condicional para proteger o acesso ao dispositivo[, veja ](restrict-email-access-example-scenarios.md)Cenários de exemplo da proteção de acesso ao e-mail**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 -   [Proteger o acesso ao SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Proteger o acesso ao Skype para Empresas Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)

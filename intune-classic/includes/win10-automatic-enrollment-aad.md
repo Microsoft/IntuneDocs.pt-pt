@@ -9,30 +9,30 @@ A inscrição automática permite aos utilizadores inscreverem os dispositivos W
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurar a inscrição MDM automática
 
-1. Inicie sessão no [portal de gestão do Azure](https://portal.azure.com) (https://manage.windowsazure.com) e selecione **Azure Active Directory**.
+1. Inicie sessão no [portal de gestão do Azure](https://portal.azure.com) (https://manage.windowsazure.com)) e selecione **Azure Active Directory**.
 
-  ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
 
 2. Selecione **Mobilidade (MDM e MAM)**.
 
-  ![Captura de ecrã do portal do Azure](../media/auto-enroll-mdm.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-mdm.png)
 
 3. Selecione **Microsoft Intune**.
 
-  ![Captura de ecrã do portal do Azure](../media/auto-enroll-intune.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-intune.png)
 
 4. Configure **Âmbito do Utilizador de MDM**. Especifique os dispositivos de utilizadores que devem ser geridos pelo Microsoft Intune. Os dispositivos Windows 10 dos utilizadores serão automaticamente inscritos na gestão com o Microsoft Intune.
 
-  - **Nenhum**
-  - **Alguns**
-  - **Todos**
+   - **Nenhum**
+   - **Alguns**
+   - **Todos**
 
- ![Captura de ecrã do portal do Azure](../media/auto-enroll-scope.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-scope.png)
 
 5. Utilize os valores predefinidos para os seguintes URLs:
-  - **URL dos Termos de utilização de MDM**
-  - **URL de Deteção de MDM**
-  - **URL de Conformidade de MDM**
+   - **URL dos Termos de utilização de MDM**
+   - **URL de Deteção de MDM**
+   - **URL de Conformidade de MDM**
 
 6. Selecione **Guardar**.
 

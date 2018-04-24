@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Preparar-se para configurar políticas de proteção de aplicações no portal do Azure
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico descreve os pré-requisitos e os passos que tem de concluir **antes** de poder criar políticas de proteção de aplicações no portal do Azure.
 
@@ -74,18 +74,18 @@ Para ver a lista completa de aplicações da Microsoft suportadas, aceda à [gal
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   **Uma subscrição do Microsoft Intune**. Os utilizadores precisam de licenças do Intune para obter aplicações com as políticas de proteção de aplicações.
-Já terá uma subscrição do Intune se estiver a utilizar atualmente o Intune para gerir os dispositivos. Também terá uma subscrição do Intune se tiver comprado uma licença do Enterprise Mobility Suite (EMS). Se estiver a experimentar o Intune para verificar as capacidades do MAM, pode obter uma conta de avaliação na [página do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+- **Uma subscrição do Microsoft Intune**. Os utilizadores precisam de licenças do Intune para obter aplicações com as políticas de proteção de aplicações.
+  Já terá uma subscrição do Intune se estiver a utilizar atualmente o Intune para gerir os dispositivos. Também terá uma subscrição do Intune se tiver comprado uma licença do Enterprise Mobility Suite (EMS). Se estiver a experimentar o Intune para verificar as capacidades do MAM, pode obter uma conta de avaliação na [página do Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Para verificar se tem uma subscrição do Intune, no portal do Office, aceda à página de **Faturação**.  Se tiver uma subscrição, deverá ver o Intune como **Ativo** nas subscrições.
+  Para verificar se tem uma subscrição do Intune, no portal do Office, aceda à página de **Faturação**.  Se tiver uma subscrição, deverá ver o Intune como **Ativo** nas subscrições.
 
--   **Uma subscrição do Office 365**, que é precisa para o seguinte:
+- **Uma subscrição do Office 365**, que é precisa para o seguinte:
 
   - Para aplicar políticas de proteção de aplicações a aplicações com suporte de várias identidades.
 
   - Criar contas profissionais do SharePoint Online e do Exchange Online. O Exchange no local e o SharePoint no local não são suportados.
 
--   **Configuração do Skype para Empresas Online para autenticação moderna**. Para mais informações, veja [Enable modern authentication (Ativar autenticação moderna)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Configuração do Skype para Empresas Online para autenticação moderna**. Para mais informações, veja [Enable modern authentication (Ativar autenticação moderna)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) para criar utilizadores. O Azure AD autentica os utilizadores quando abrem a aplicação e introduzem as respetivas credenciais de trabalho.

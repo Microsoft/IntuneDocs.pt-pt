@@ -1,29 +1,29 @@
 ---
-title: "Como atribuir aplicações a grupos no Microsoft Intune"
-titlesuffix: 
-description: "Após adicionar uma aplicação ao Microsoft Intune, irá atribuí-la a grupos de utilizadores ou dispositivos."
-keywords: 
+title: Como atribuir aplicações a grupos no Microsoft Intune
+titlesuffix: ''
+description: Após adicionar uma aplicação ao Microsoft Intune, irá atribuí-la a grupos de utilizadores ou dispositivos.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Como atribuir aplicações a grupos com o Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Depois de adicionar uma aplicação ao Microsoft Intune, pode atribuí-la a utilizadores e dispositivos.
 
@@ -51,26 +51,26 @@ As aplicações podem ser atribuídas a dispositivos, independentemente de estes
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, escolha **Aplicações móveis**.
-1. Na carga de trabalho **Aplicações móveis**, selecione **Aplicações** na secção **Gerir**.
-2. No painel da lista de aplicações, clique na aplicação que quer atribuir.
-3. No painel **Descrição geral** específico da aplicação, selecione **Atribuições** a partir da secção **Gerir**.
-4. Selecione **Adicionar grupo** para apresentar o painel **Adicionar grupo** relacionado com a aplicação.
-5. Para a aplicação específica, selecione um **tipo de atribuição** para a aplicação em:
-    - **Disponível para dispositivos inscritos** – os utilizadores instalam a aplicação a partir da aplicação ou site Portal da Empresa.
-    - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. Tenha em atenção que o tipo **Aplicação Android for Work** não suporta esta opção. 
-    - **Obrigatório** – A aplicação é instalada em dispositivos nos grupos selecionados.
-    - **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.
+4. Na carga de trabalho **Aplicações móveis**, selecione **Aplicações** na secção **Gerir**.
+5. No painel da lista de aplicações, clique na aplicação que quer atribuir.
+6. No painel **Descrição geral** específico da aplicação, selecione **Atribuições** a partir da secção **Gerir**.
+7. Selecione **Adicionar grupo** para apresentar o painel **Adicionar grupo** relacionado com a aplicação.
+8. Para a aplicação específica, selecione um **tipo de atribuição** para a aplicação em:
+   - **Disponível para dispositivos inscritos** – os utilizadores instalam a aplicação a partir da aplicação ou site Portal da Empresa.
+   - **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. Tenha em atenção que o tipo **Aplicação Android for Work** não suporta esta opção. 
+   - **Obrigatório** – A aplicação é instalada em dispositivos nos grupos selecionados.
+   - **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.
 
-    > [!NOTE]
-    > **Apenas para aplicações iOS** – se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, pode selecioná-lo em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
+     > [!NOTE]
+     > **Apenas para aplicações iOS** – se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, pode selecioná-lo em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
 
-6. Selecione **Grupos Incluídos** para escolher os grupos de utilizadores que serão afetados por esta atribuição de aplicações.
-7. Clique em **Selecionar** assim que tiver selecionado um ou mais grupos para incluir.
-8. Clique em **OK** no painel **Atribuir** para concluir a seleção de grupos incluídos.
-9. Clique em **Excluir Grupos** se quiser excluir grupos de utilizadores de serem afetados por esta atribuição de aplicações.
-10. Se tiver optado por excluir grupos, clique em **Selecionar** no painel **Selecionar grupos**.
-11. Clique em **OK** no painel **Adicionar grupo**.
-12. Clique em **Guardar** no painel **Atribuições** da aplicação para guardar as suas atribuições.
+9. Selecione **Grupos Incluídos** para escolher os grupos de utilizadores que serão afetados por esta atribuição de aplicações.
+10. Clique em **Selecionar** assim que tiver selecionado um ou mais grupos para incluir.
+11. Clique em **OK** no painel **Atribuir** para concluir a seleção de grupos incluídos.
+12. Clique em **Excluir Grupos** se quiser excluir grupos de utilizadores de serem afetados por esta atribuição de aplicações.
+13. Se tiver optado por excluir grupos, clique em **Selecionar** no painel **Selecionar grupos**.
+14. Clique em **OK** no painel **Adicionar grupo**.
+15. Clique em **Guardar** no painel **Atribuições** da aplicação para guardar as suas atribuições.
 
 A aplicação está agora atribuída aos grupos que selecionou. Para obter mais informações sobre como incluir e excluir atribuições de aplicações, veja [Incluir e excluir atribuições de aplicações](apps-inc-exl-assignments.md).
 

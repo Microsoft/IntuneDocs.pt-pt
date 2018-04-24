@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Utilizar políticas personalizadas para permitir e bloquear aplicações para dispositivos Samsung KNOX Standard
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilize os procedimentos deste tópico para criar uma política personalizada do Microsoft Intune que cria um dos seguintes casos:
 
@@ -39,21 +39,21 @@ Estas definições só podem ser utilizadas por dispositivos que executem Samsun
 3. Forneça um nome e uma descrição opcional para a política e, em seguida, na secção **Definições OMA-URI**, escolha **Adicionar**.
 4. Na caixa de diálogo **Adicionar ou Editar Definição OMA-URI**, especifique o seguinte: para uma lista de aplicações cuja execução está bloqueada no dispositivo:
     
-    - **Nome da definição.** Introduza **PreventStartPackages**.
-    - **Descrição da definição.** Introduza uma descrição opcional, como ''Lista de aplicações cuja execução está bloqueada''.
-    -   **Tipo de dados.** Na lista pendente, escolha **Cadeia**.
-    -   **OMA-URI.** Introduza **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **Valor.** Introduza uma lista de nomes de pacotes de aplicações que pretende bloquear. Pode utilizar **; : ,** ou **|** como delimitador. (Exemplo: pacote1;pacote2;)
+   - **Nome da definição.** Introduza **PreventStartPackages**.
+   - **Descrição da definição.** Introduza uma descrição opcional, como ''Lista de aplicações cuja execução está bloqueada''.
+   - **Tipo de dados.** Na lista pendente, escolha **Cadeia**.
+   - **OMA-URI.** Introduza **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **Valor.** Introduza uma lista de nomes de pacotes de aplicações que pretende bloquear. Pode utilizar **; : ,** ou **|** como delimitador. (Exemplo: pacote1;pacote2;)
 
-    Para uma lista de aplicações que os utilizadores têm permissão para instalar a partir da Google Play Store, excluindo todas as outras aplicações:
+     Para uma lista de aplicações que os utilizadores têm permissão para instalar a partir da Google Play Store, excluindo todas as outras aplicações:
 
-    - **Nome da definição.** Introduza **AllowInstallPackages**.
-    - **Descrição da definição.** Introduza uma descrição opcional, como ''Lista de aplicações que os utilizadores podem instalar a partir do Google Play''.
-    - **Tipo de dados.** Na lista pendente, escolha **Cadeia**.
-    - **OMA-URI.** Introduza **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-    - **Valor.** Introduza uma lista de nomes de pacotes de aplicações que pretende permitir. Pode utilizar **; : ,** ou **|** como delimitador. (Exemplo: pacote1;pacote2;)
+   - **Nome da definição.** Introduza **AllowInstallPackages**.
+   - **Descrição da definição.** Introduza uma descrição opcional, como ''Lista de aplicações que os utilizadores podem instalar a partir do Google Play''.
+   - **Tipo de dados.** Na lista pendente, escolha **Cadeia**.
+   - **OMA-URI.** Introduza **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Valor.** Introduza uma lista de nomes de pacotes de aplicações que pretende permitir. Pode utilizar **; : ,** ou **|** como delimitador. (Exemplo: pacote1;pacote2;)
 
-4. Clique em **OK** e, em seguida, clique em **Guardar Política**. 
+5. Clique em **OK** e, em seguida, clique em **Guardar Política**. 
 
 >[!TIP]
 > Pode localizar o ID do pacote de uma aplicação ao navegar para a aplicação na Google Play Store. O ID do pacote está contido no URL da página da aplicação. Por exemplo, o ID do pacote da aplicação Microsoft Word é **com.microsoft.office.word**.

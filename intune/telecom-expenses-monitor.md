@@ -1,28 +1,28 @@
 ---
-title: "Configurar um serviço de gestão de despesas de telecomunicações"
+title: Configurar um serviço de gestão de despesas de telecomunicações
 titleSuffix: Microsoft Intune
-description: "Integre o Intune com o serviço de gestão de despesas de telecomunicações Saaswedo."
+description: Integre o Intune com o serviço de gestão de despesas de telecomunicações Saaswedo.
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gestão de despesas de telecomunicações no Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Intune permite-lhe gerir as despesas de telecomunicações decorrentes da utilização de dados em dispositivos móveis da empresa. Para ativar esta funcionalidade, o Intune integrou-se com a solução de gestão de despesas de telecomunicações Datalert, do programador de software de terceiros Saaswedo. O Datalert é um software de gestão de despesas de telecomunicações que lhe permite gerir a utilização de dados de telecomunicações. Ajuda a evitar utilizações excedidas de roaming e dados dispendiosas e imprevistas dos seus dispositivos geridos pelo Intune.
 
@@ -72,7 +72,7 @@ Antes de começar, certifique-se de que já possui uma subscrição do serviço 
 
     A seguinte captura de ecrã mostra as marcas de verificação verdes que deverão ser apresentadas assim que a ligação for estabelecida com êxito.
 
-  ![Página do Datalert a mostrar uma ligação estabelecida com êxito](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Página do Datalert a mostrar uma ligação estabelecida com êxito](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Passo 2: verificar se a funcionalidade de gestão de despesas de telecomunicação está ativa no Intune
 
@@ -88,7 +88,7 @@ Após concluir o Passo 1 descrito anteriormente, a sua ligação deverá ser ati
 
    Procure o estado de ligação **Ativo** na parte superior da página.
 
-  ![Página do Intune a mostrar o estado de ligação Ativo do Datalert](./media/tem-azure-portal-enable-service.png)
+   ![Página do Intune a mostrar o estado de ligação Ativo do Datalert](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Passo 3: implementar a aplicação Datalert em dispositivos da empresa inscritos
 
@@ -136,13 +136,13 @@ Siga estes passos para criar a aplicação Datalert no Intune para cada platafor
 
 4. Opte por tornar a instalação da aplicação para o grupo obrigatória ou opcional. O seguinte exemplo mostra a instalação como sendo obrigatória, o que significa que os utilizadores têm de instalar a aplicação Datalert depois de instalarem o dispositivo.
 
-  ![Captura de ecrã do painel Adicionar uma política](./media/tem-assign-datalert-app-to-device-group.png)
+   ![Captura de ecrã do painel Adicionar uma política](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Passo 4: adicionar linhas telefónicas pagas da empresa à consola do Datalert
 
 Acabou de configurar os serviços do Intune e do Datalert para que estes comuniquem entre si. Agora terá de adicionar as linhas telefónicas pagas da sua empresa à consola do Datalert e definir limites e ações a tomar relativamente a violações de utilização da rede móvel ou de roaming. Pode adicionar linhas telefónicas pagas pela empresa à consola Datalert manualmente ou adicioná-las automaticamente depois de o dispositivo ser inscrito no Intune.
 
-Para ver estes itens, aceda à [página de configuração do Datalert para o Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) e siga os passos do assistente de configuração descritos no separador **Settings (Definições)**.
+Para definir estes itens, aceda à [página de configuração do Datalert para o Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)) e siga os passos do assistente de configuração descritos no separador **Settings** (Definições).
 
   ![Captura de ecrã do painel Adicionar uma política](./media/tem-add-phone-lines-to-datalert-console.png)
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas mais frequentes sobre a MAM e a proteção de aplicações
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca da gestão de aplicações móveis do Intune (MAM) e da proteção de aplicações do Intune.
 
@@ -61,23 +61,23 @@ Este artigo apresenta respostas a algumas das perguntas mais frequentes acerca d
 
 **Quais são os requisitos adicionais para utilizar a [aplicação Outlook para dispositivos móveis](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. O utilizador final tem de ter a aplicação Outlook para dispositivos móveis instalada no dispositivo dele.
+1. O utilizador final tem de ter a aplicação Outlook para dispositivos móveis instalada no dispositivo dele.
 
-  2. O utilizador final tem de ter uma licença e uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) associadas à conta do Azure Active Directory dele.
+2. O utilizador final tem de ter uma licença e uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) associadas à conta do Azure Active Directory dele.
 
-  >[!NOTE]
-  > Atualmente, a aplicação Outlook para dispositivos móveis só suporta o Microsoft Exchange Online e não suporta o Exchange no local ou o Exchange no Office 365 Dedicated.
+   >[!NOTE]
+   > Atualmente, a aplicação Outlook para dispositivos móveis só suporta o Microsoft Exchange Online e não suporta o Exchange no local ou o Exchange no Office 365 Dedicated.
 
 **Quais são os requisitos adicionais para utilizar as [aplicações Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-  1. O utilizador final tem de ter uma licença do [Office 365 Empresas ou do Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associada à conta do Azure Active Directory. A subscrição tem de incluir as aplicações do Office para dispositivos móveis e pode incluir uma conta de armazenamento na cloud com o [OneDrive para Empresas](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) ao seguir estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+1. O utilizador final tem de ter uma licença do [Office 365 Empresas ou do Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associada à conta do Azure Active Directory. A subscrição tem de incluir as aplicações do Office para dispositivos móveis e pode incluir uma conta de armazenamento na cloud com o [OneDrive para Empresas](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](http://portal.office.com) ao seguir estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. O utilizador final tem de ter uma localização gerida, configurada através da funcionalidade granular Guardar como, na definição da política de proteção de aplicações “Impedir Guardar Como”. Por exemplo, se a localização gerida for o OneDrive, a aplicação [OneDrive](https://onedrive.live.com/about/) deverá ser configurada na aplicação Word, Excel ou PowerPoint do utilizador final.
+2. O utilizador final tem de ter uma localização gerida, configurada através da funcionalidade granular Guardar como, na definição da política de proteção de aplicações “Impedir Guardar Como”. Por exemplo, se a localização gerida for o OneDrive, a aplicação [OneDrive](https://onedrive.live.com/about/) deverá ser configurada na aplicação Word, Excel ou PowerPoint do utilizador final.
 
-  3. Se a localização gerida for o OneDrive, a aplicação terá de ser visada pela política de proteção de aplicações implementada para o utilizador final.
+3. Se a localização gerida for o OneDrive, a aplicação terá de ser visada pela política de proteção de aplicações implementada para o utilizador final.
 
-  >[!NOTE]
-  > Atualmente, as aplicações do Office para dispositivos móveis só suportam o SharePoint Online e não o SharePoint no local.
+   >[!NOTE]
+   > Atualmente, as aplicações do Office para dispositivos móveis só suportam o SharePoint Online e não o SharePoint no local.
 
 **Por que motivo é preciso uma localização gerida (como o OneDrive) para o Office?** O Intune marca todos os dados na aplicação como "empresariais" ou "pessoais". Os dados são considerados "empresariais" quando provêm de uma localização empresarial. Para as aplicações do Office, o Intune considera as seguintes localizações como localizações empresariais: e-mail (Exchange) ou armazenamento da cloud (aplicação OneDrive com uma conta do OneDrive para Empresas).
 
@@ -124,15 +124,15 @@ Atualmente, a MAM (no iOS) permite PINs ao nível da aplicação com carateres a
 
 **Como é que o Intune elimina os dados remotamente?** O Intune pode eliminar os dados da aplicação de três formas diferentes: eliminação total do dispositivo, eliminação seletiva para MDM e eliminação seletiva MAM. Para obter mais informações sobre a eliminação remota para MDM, veja [Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Para obter mais informações sobre a eliminação seletiva através do MAM, veja [Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **O que é uma eliminação completa?** A [eliminação completa](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) elimina todos os dados e definições do utilizador do respetivo**dispositivo**, ao restaurar o dispositivo com as predefinições de fábrica. O dispositivo é removido do Intune.
-  >[!NOTE]
-  > A eliminação completa só pode ser realizada em dispositivos inscritos na gestão de dispositivos móveis do Intune (MDM).
+1. **O que é uma eliminação completa?** A [eliminação completa](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) elimina todos os dados e definições do utilizador do respetivo**dispositivo**, ao restaurar o dispositivo com as predefinições de fábrica. O dispositivo é removido do Intune.
+   >[!NOTE]
+   > A eliminação completa só pode ser realizada em dispositivos inscritos na gestão de dispositivos móveis do Intune (MDM).
 
-  2. **O que é uma eliminação seletiva para MDM?** Veja [Ajudar a proteger os dados com a eliminação completa ou seletiva no Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para saber mais sobre a eliminação seletiva.
+2. **O que é uma eliminação seletiva para MDM?** Veja [Ajudar a proteger os dados com a eliminação completa ou seletiva no Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para saber mais sobre a eliminação seletiva.
 
-  3. **O que é uma eliminação seletiva para MAM?** A eliminação seletiva para MAM simplesmente remove os dados da aplicação da empresa de uma aplicação. O pedido é iniciado através do portal do Intune Azure. Para obter mais informações sobre como iniciar um pedido de eliminação, veja [Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+3. **O que é uma eliminação seletiva para MAM?** A eliminação seletiva para MAM simplesmente remove os dados da aplicação da empresa de uma aplicação. O pedido é iniciado através do portal do Intune Azure. Para obter mais informações sobre como iniciar um pedido de eliminação, veja [Eliminar dados de aplicações geridas pela empresa com o Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  4. **Qual é a velocidade da eliminação seletiva para MAM?** Se o utilizador estiver a utilizar a aplicação quando a eliminação seletiva for iniciada, o SDK da Aplicação Intune verifica a existência de pedidos de eliminação seletiva a cada 30 minutos a partir do serviço MAM do Intune. Também verifica a existência de pedidos de eliminação seletiva quando o utilizador inicia a aplicação pela primeira vez e inicia sessão com a conta profissional ou escolar.
+4. **Qual é a velocidade da eliminação seletiva para MAM?** Se o utilizador estiver a utilizar a aplicação quando a eliminação seletiva for iniciada, o SDK da Aplicação Intune verifica a existência de pedidos de eliminação seletiva a cada 30 minutos a partir do serviço MAM do Intune. Também verifica a existência de pedidos de eliminação seletiva quando o utilizador inicia a aplicação pela primeira vez e inicia sessão com a conta profissional ou escolar.
 
 **Por que razão os serviços no local não funcionam com as aplicações protegidas pelo Intune?** A proteção de aplicações do Intune depende da identidade do utilizador para ser consistente entre a aplicação e o SDK da Aplicação Intune. A única forma de o garantir é através da autenticação moderna. Existem cenários onde aplicações podem funcionar com uma configuração no local, mas não é garantido e nem consistente.
 

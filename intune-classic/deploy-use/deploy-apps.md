@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Implementar aplicações com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico explica alguns dos conceitos que tem de compreender antes de iniciar a implementação de aplicações com o Microsoft Intune.
 
@@ -46,18 +46,19 @@ Ao implementar aplicações, pode escolher uma das seguintes ações de implemen
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Compreender as ações de implementação que estão disponíveis para cada tipo de instalador
 
-|Tipo de instalador|Instalação necessária|Instalação disponível|Desinstalar|Não aplicável|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Pacote de aplicações do Windows (implementado num grupo de utilizadores)|Sim|Sim|Sim|Sim|
-|Pacote de aplicações do Windows (implementado num grupo de dispositivos)|Sim|Não|Sim|Sim|
-|Pacote de aplicações para dispositivos móveis (implementado num grupo de utilizadores)|Sim|Sim|Sim|Sim|
-|Pacote de aplicações para dispositivos móveis (implementado num grupo de dispositivos)|Sim|Não|Sim|Sim|
-|Windows Installer (implementado num grupo de utilizadores)|Não|Sim|Não|Sim|
-|Windows Installer (implementado num grupo de dispositivos)|Sim|Não|Sim|Sim|
-|Ligação externa (implementada num grupo de utilizadores)|Não|Sim|Não|Sim|
-|Ligação externa (implementada num grupo de dispositivos)|Não|Não|Não|Não|
-|Aplicação iOS gerida da loja de aplicações (implementada num grupo de utilizadores)|Sim|Sim|Sim|Sim|
-|Aplicação iOS gerida da loja de aplicações (implementada num grupo de dispositivos)|Sim|Não|Sim|Sim|
+|                         Tipo de instalador                          | Instalação necessária | Instalação disponível | Desinstalar | Não aplicável |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Pacote de aplicações do Windows (implementado num grupo de utilizadores)          |       Sim        |        Sim        |    Sim    |      Sim       |
+|        Pacote de aplicações do Windows (implementado num grupo de dispositivos)         |       Sim        |        Não         |    Sim    |      Sim       |
+|    Pacote de aplicações para dispositivos móveis (implementado num grupo de utilizadores)    |       Sim        |        Sim        |    Sim    |      Sim       |
+|   Pacote de aplicações para dispositivos móveis (implementado num grupo de dispositivos)   |       Sim        |        Não         |    Sim    |      Sim       |
+|          Windows Installer (implementado num grupo de utilizadores)           |        Não        |        Sim        |    Não     |      Sim       |
+|         Windows Installer (implementado num grupo de dispositivos)          |       Sim        |        Não         |    Sim    |      Sim       |
+|            Ligação externa (implementada num grupo de utilizadores)             |        Não        |        Sim        |    Não     |      Sim       |
+|           Ligação externa (implementada num grupo de dispositivos)            |        Não        |        Não         |    Não     |       Não       |
+|  Aplicação iOS gerida da loja de aplicações (implementada num grupo de utilizadores)  |       Sim        |        Sim        |    Sim    |      Sim       |
+| Aplicação iOS gerida da loja de aplicações (implementada num grupo de dispositivos) |       Sim        |        Não         |    Sim    |      Sim       |
+
 > [!TIP]
 > Quando implementa aplicações, se selecionar grupos de utilizadores e de dispositivos, só pode implementar a aplicação como **Instalação disponível**.
 

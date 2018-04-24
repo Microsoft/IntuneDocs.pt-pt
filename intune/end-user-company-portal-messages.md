@@ -1,28 +1,28 @@
 ---
-title: "Mensagens do Portal da Empresa que os utilizadores poderão ver nos dispositivos"
+title: Mensagens do Portal da Empresa que os utilizadores poderão ver nos dispositivos
 titlesuffix: Microsoft Intune
-description: "Compreenda as diferentes mensagens que os utilizadores finais poderão ver no Portal da Empresa."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Compreenda as diferentes mensagens que os utilizadores finais poderão ver no Portal da Empresa.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 3ed729e437fcdbc4352bf5fa8ceada4ddf336708
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > As seguintes informações aplicam-se apenas a dispositivos com o Android 6.0 e posterior.
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/02/2018
 Compreenda as diferentes mensagens de aplicações que os utilizadores finais poderão ver no Portal da Empresa. Estas mensagens de aplicações são normalmente apresentadas em diferentes fases do processo de inscrição. Saiba onde as mensagens são apresentadas, o que significam e o que acontece se os utilizadores negarem o acesso. Para além disso, saiba como melhor explicar estas mensagens aos utilizadores.
 
 - __Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?__
-- __Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no seu dispositivo?__
+- __Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no dispositivo?__
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?
 

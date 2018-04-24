@@ -1,23 +1,23 @@
 ---
 title: Como criar perfis VPN personalizados com o Microsoft Intune
-titleSuffix: 
-description: "Utilize configurações personalizadas para criar perfis de VPN no Intune."
-keywords: 
+titleSuffix: ''
+description: Utilize configurações personalizadas para criar perfis de VPN no Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ec9b959d086051985287a62f7d10fe8d4cbad7e9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.sourcegitcommit: 28ed8902a11500b195fff839d59b90c16af6e743
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Como criar perfis VPN no Microsoft Intune
 

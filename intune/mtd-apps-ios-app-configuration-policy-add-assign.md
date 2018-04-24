@@ -1,25 +1,25 @@
 ---
-title: "Adicionar e atribuir aplicações de MTD ao Microsoft Intune"
-titleSuffix: 
-description: "Utilize o Intune para adicionar aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis), a aplicação Microsoft Authenticator e a política de configuração para iOS no portal do Azure."
-keywords: 
+title: Adicionar e atribuir aplicações de MTD ao Microsoft Intune
+titleSuffix: ''
+description: Utilize o Intune para adicionar aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis), a aplicação Microsoft Authenticator e a política de configuração para iOS no portal do Azure.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis) com o Intune
 
@@ -75,7 +75,7 @@ Para obter instruções detalhadas sobre como voltar a assinar a aplicação Loo
 Ative a autenticação do Azure Active Directory para utilizadores iOS do seguinte modo:
 
 1. Aceda ao [portal do Azure](https://portal.azure.com), inicie sessão com as suas credenciais e, em seguida, navegue para a página da aplicação.
-  
+
 2. Adicione a **aplicação Lookout for Work para iOS** como uma **aplicação de cliente nativo**.
 
 3. Substitua o valor **com.lookout.enterprise.onomedasuaempresa** pelo ID de pacote de cliente que selecionou quando assinou o IPA.
@@ -133,13 +133,13 @@ Ative a autenticação do Azure Active Directory para utilizadores iOS do seguin
 
 -   Tem de **transferir** o ficheiro de política de configuração de aplicações iOS: 
     -   Aceda à [consola de Gestão do Skycure](https://aad.skycure.com) e inicie sessão com as suas credenciais de administrador.
-    
+
     -   Aceda a **Definições** &gt; **Integrações da Gestão de Dispositivos** &gt; **Seleção da Integração de EMM**, escolha **Microsoft Intune** e, em seguida, guarde a sua seleção.
-    
+
     -   Clique na ligação **Ficheiros de configuração de integração** e guarde o ficheiro \*.zip gerado. O ficheiro .zip contém o ficheiro **skycure\_configuration.plist**, que servirá para criar a política de configuração de aplicações iOS no Intune.
-    
+
     -   Veja as instruções sobre como [utilizar políticas de configuração de aplicações do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para adicionar a política de configuração de aplicações do Skycure para iOS.
-    
+
     - No **passo 8**, utilize a opção **Introduzir dados XML**, copie os conteúdos do ficheiro **skycure_configuration.plist** e cole-os no corpo da política de configuração.
 
 Também pode copiar os conteúdos do ficheiro **skycure_configuration.plist** a partir daqui:
@@ -151,7 +151,6 @@ Também pode copiar os conteúdos do ficheiro **skycure_configuration.plist** a 
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Para o Check Point SandBlast Mobile
 
@@ -160,7 +159,6 @@ Também pode copiar os conteúdos do ficheiro **skycure_configuration.plist** a 
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Para o Zimperium
@@ -179,7 +177,6 @@ Também pode copiar os conteúdos do ficheiro **skycure_configuration.plist** a 
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>Para atribuir aplicações (todos os parceiros MTD)

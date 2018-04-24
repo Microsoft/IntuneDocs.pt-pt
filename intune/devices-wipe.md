@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de dados de fábrica ou da remoção de dados da empresa
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Pode fazê-lo ao utilizar as ações **Remover dados da empresa** ou **Reposição de dados de fábrica**. Os utilizadores também podem emitir um comando remoto a partir do Portal da Empresa do Intune para dispositivos pessoais inscritos no Intune.
 
 > [!NOTE]
 > Antes de remover um utilizador do Azure Active Directory (Azure AD), utilize as ações **Reposição de dados de fábrica** ou **Remover dados da empresa** para todos os dispositivos associados a esse utilizador. Se remover utilizadores que têm dispositivos geridos a partir do Azure AD, o Intune deixará de conseguir efetuar uma reposição de dados fábrica ou remoções de dados da empresa nesses dispositivos.
 
-## <a name="factory-reset"></a>Reposição de dados de fábrica
+## <a name="factory-reset"></a>Reposição de fábrica
 
 A ação **Reposição de dados de fábrica** restaura um dispositivo para as predefinições de fábrica. Uma reposição de dados de fábrica restaura todos os dados e definições da empresa e do utilizador. O dispositivo é removido da gestão do Intune. Uma reposição de dados de fábrica é útil para repor um dispositivo antes de o atribuir a um novo utilizador ou em caso de perda ou roubo do dispositivo. Tenha atenção ao selecionar a **Reposição de dados de fábrica**. Não é possível recuperar os dados no dispositivo.
 
@@ -72,7 +72,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
 |E-mail|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
-|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos.|
+|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos. Isto exige que a aplicação móvel do Outlook seja implementada primeiro como uma aplicação Necessária para os utilizadores de iOS.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
 |Contactos |Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.
 
@@ -96,7 +96,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 
 ### <a name="android-for-work"></a>Android for Work
 
-Uma remoção dos dados da empresa num dispositivo Android for Work remove todos os dados, aplicações e definições no perfil de trabalho nesse dispositivo. A gestão do dispositivo através do Intune é desativada. A reposição de dados de fábrica não é suportada para Android for Work.
+Uma remoção dos dados da empresa num dispositivo Android for Work remove todos os dados, aplicações e definições no perfil de trabalho nesse dispositivo. A gestão do dispositivo através do Intune é desativada. A reposição de fábrica não é suportada para Android for Work.
 
 
 ### <a name="macos"></a>macOS

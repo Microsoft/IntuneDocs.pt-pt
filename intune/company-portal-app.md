@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: aed2bec6e6fea40fdbd78bc487896d167d036f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O portal da empresa do Microsoft Intune é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.        
 
@@ -36,14 +36,14 @@ Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar 
 O nome da empresa é apresentado como o título do Portal da Empresa. Os detalhes e as informações de contacto são apresentados aos utilizadores no ecrã **Contactar TI** do Portal da Empresa. A declaração de privacidade é apresentada quando um utilizador clica na ligação de privacidade.        
 
 
-|Nome do campo|Comprimento máximo|Mais informações|        
-|-|-|-|     
-|**Nome da empresa**|40|Este nome é apresentado como o título do Portal da Empresa.|        
-|**Nome do contacto do departamento de TI**|40|Este nome é apresentado na página **Contactar TI**.|      
-|**Número de telefone do departamento de TI**|20|Este número de contacto é apresentado na página **Contactar TI**.|        
-|**Endereço de e-mail do departamento de TI**|40|Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato **alias@domainname.com**.|     
-|**Informações adicionais**|120|Apresentado na página **Contactar TI**.|      
-|**URL da declaração de privacidade da empresa**|79|Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato **https://www.contoso.com**.|        
+|                   Nome do campo                   | Comprimento máximo |                                                                                                 Mais informações                                                                                                 |
+|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>Nome da empresa</strong>          |     40     |                                                                            Este nome é apresentado como o título do Portal da Empresa.                                                                            |
+|  <strong>Nome do contacto do departamento de TI</strong>   |     40     |                                                                         Este nome é apresentado na página <strong>Contactar TI</strong>.                                                                          |
+|  <strong>Número de telefone do departamento de TI</strong>   |     20     |                                                                    Este número de contacto é apresentado na página <strong>Contactar TI</strong>.                                                                     |
+|  <strong>Endereço de e-mail do departamento de TI</strong>  |     40     |                       Este endereço de contacto é apresentado na página <strong>Contactar TI</strong>. Tem de inserir um endereço de e-mail válido no formato <strong>alias@domainname.com</strong>.                       |
+|    <strong>Informações adicionais</strong>     |    120     |                                                                                Apresentado na página <strong>Contactar TI</strong>.                                                                                |
+| <strong>URL da declaração de privacidade da empresa</strong> |     79     | Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato <strong><https://www.contoso.com></strong>. |
 
 ## <a name="support-contacts"></a>Contactos de suporte     
 O site de suporte é apresentado para os utilizadores no Portal da Empresa para que possam aceder ao suporte online.        
@@ -62,7 +62,7 @@ Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor
 
 |Nome do campo|Mais informações|       
 |-|-|       
-|**Cor do tema**|Selecione a cor do tema que pretende aplicar ao Portal da Empresa.|      
+|**Cor do tema**|Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher a partir do seletor de cores ou introduzir um código hexadecimal específico.|      
 |**Mostrar o logótipo da empresa**|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. Cada logótipo tem de ser um tipo de ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 100 pixéis e ter um tamanho até 750 KB.<br>Também pode mostrar o nome da empresa que introduziu junto do logótipo carregado.|      
 
 Depois de guardar as alterações, pode escolher **Pré-visualizar as definições no Portal Web do Intune** para ver qual será o aspeto das configurações.

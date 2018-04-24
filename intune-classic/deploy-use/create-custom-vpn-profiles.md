@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configurações personalizadas para perfis VPN do Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>Criar uma configuração personalizada
 Pode utilizar políticas de configuração personalizada do Intune para criar perfis VPN para:
@@ -39,13 +39,13 @@ Este tipo de política pode ser útil quando as políticas de VPN do Intune padr
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Para criar uma política de configuração personalizada:
 
-   1. Na [consola de administração do Intune](https://manage.microsoft.com), selecione **Política** > **Adicionar Política** > *Expandir plataforma* > **Configuração personalizada** > **Criar Política**.
-   2. Introduza um nome para a política.
-   3. Para cada definição de URI que pretende especificar, selecione **Adicionar** e forneça as informações pedidas. Segue-se um exemplo:
+1. Na [consola de administração do Intune](https://manage.microsoft.com), selecione **Política** > **Adicionar Política** > *Expandir plataforma* > **Configuração personalizada** > **Criar Política**.
+2. Introduza um nome para a política.
+3. Para cada definição de URI que pretende especificar, selecione **Adicionar** e forneça as informações pedidas. Segue-se um exemplo:
 
    ![Caixa de diálogo de configuração personalizada de perfil VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Após introduzir todas as definições de URI, escolha **Save policy** e, em seguida, implemente a política.
+4. Após introduzir todas as definições de URI, escolha **Save policy** e, em seguida, implemente a política.
 
 Em seguida, [implemente a política](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) como habitualmente.
 

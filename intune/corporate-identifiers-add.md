@@ -1,29 +1,29 @@
 ---
 title: Adicionar identificadores empresariais ao Intune
 titlesuffix: Microsoft Intune
-description: "Saiba como adicionar identificadores empresariais (método de inscrição, IMEI e números de série) ao Microsoft Intune."
-keywords: 
+description: Saiba como adicionar identificadores empresariais (método de inscrição, IMEI e números de série) ao Microsoft Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar os dispositivos como pertencentes à empresa
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador do Intune, pode identificar os dispositivos como pertencentes à empresa para refinar a gestão e identificação. O Intune pode executar tarefas de gestão adicionais e recolher informações adicionais como o número de telemóvel completo e um inventário das aplicações de dispositivos pertencentes à empresa. Também pode definir restrições de dispositivos para bloquear a inscrição de dispositivos que não pertencem à empresa.
 
@@ -72,7 +72,7 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 1. No [Intune, no portal do Azure](https://portal.azure.com), selecione **Inscrição de Dispositivos** > **Identificadores de dispositivo da empresa** e, em seguida, clique em **Adicionar**.
 
- ![Área de trabalho de identificador do dispositivo empresarial com o botão Adicionar realçado](./media/add-corp-id.png)
+   ![Área de trabalho de identificador do dispositivo empresarial com o botão Adicionar realçado](./media/add-corp-id.png)
 
 2. No painel **Adicionar Identificadores**, especifique o tipo de identificador, **IMEI** ou **Número de Série**. Pode especificar se os números importados anteriormente devem **Substituir os detalhes por identificadores existentes**.
 
@@ -97,7 +97,7 @@ As propriedades dos dispositivos apresentam a **Propriedade** para os registos d
 
 **Para alterar a propriedade dos dispositivos:**
 1. No [Intune, no portal do Azure](https://portal.azure.com), aceda a **Dispositivos** e selecione o dispositivo.
-3. Selecione **Propriedades**.
-4. Especifique a **Propriedade do dispositivo** como **Pessoal** ou **Empresarial**.
+2. Selecione **Propriedades**.
+3. Especifique a **Propriedade do dispositivo** como **Pessoal** ou **Empresarial**.
 
-  ![Propriedades do dispositivo a mostrar as opções Categoria de dispositivo e Propriedade do dispositivo](./media/device-properties.png)
+   ![Propriedades do dispositivo a mostrar as opções Categoria de dispositivo e Propriedade do dispositivo](./media/device-properties.png)

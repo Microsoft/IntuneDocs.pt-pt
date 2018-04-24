@@ -1,25 +1,25 @@
 ---
-title: "Incluir e excluir atribuições de aplicações no Microsoft Intune"
-titlesuffix: 
-description: "Saiba como pode utilizar o Microsoft Intune para incluir e excluir atribuições de aplicações."
-keywords: 
+title: Incluir e excluir atribuições de aplicações no Microsoft Intune
+titlesuffix: ''
+description: Saiba como pode utilizar o Microsoft Intune para incluir e excluir atribuições de aplicações.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbe8669dc2bf448e0738147758d90ba6d2d69b06
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicações no Microsoft Intune
 
@@ -33,6 +33,8 @@ Ao excluir grupos de uma aplicação, tem de excluir apenas grupos de utilizador
 >Ao definir uma atribuição de grupo para uma aplicação, o tipo **Não Aplicável** é preterido e substituído pela exclusão de funcionalidades de grupo. 
 >
 >O Intune fornece os grupos **Todos os Utilizadores** e **Todos os Dispositivos** pré-criados na consola com otimizações incorporadas para sua comodidade. Recomendamos fortemente que utilize estes grupos para abranger todos os utilizadores e todos os dispositivos em vez dos grupos "Todos os utilizadores" ou "Todos os dispositivos" que possa ter criado.  
+>
+>O Android Enterprise (anteriormente conhecido como Android for Work) suporta incluir e excluir grupos, mas não suporta os grupos incorporados **Todos os Utilizadores** e **Todos os Dispositivos** pré-criados.
 
 ## <a name="including-and-excluding-groups-when-assigning-apps"></a>Incluir e excluir grupos ao atribuir aplicações 
 Para atribuir uma aplicação a grupos ao utilizar a atribuição de inclusão e exclusão:

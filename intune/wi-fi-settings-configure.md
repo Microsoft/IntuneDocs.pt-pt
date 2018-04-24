@@ -1,27 +1,27 @@
 ---
-title: "Como configurar as definições de Wi-Fi do Intune"
+title: Como configurar as definições de Wi-Fi do Intune
 titleSuffix: Microsoft Intune
-description: "Saiba como utilizar o Microsoft Intune para configurar ligações Wi-Fi em dispositivos que gere."
-keywords: 
+description: Saiba como utilizar o Microsoft Intune para configurar ligações Wi-Fi em dispositivos que gere.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Como configurar definições de Wi-Fi no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Utilize os perfis Wi-Fi do Microsoft Intune para atribuir definições de rede sem fios a utilizadores e dispositivos na sua organização. Quando atribuir um perfil Wi-Fi, os utilizadores terão acesso à sua rede Wi-Fi empresarial sem terem de o configurar.
 
@@ -49,7 +49,7 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
+2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
 3. No painel de perfis, selecione **Criar perfil**.
 4. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de Wi-Fi.
 5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições de Wi-Fi. Atualmente, pode escolher uma das seguintes plataformas para definições de Wi-Fi:
@@ -74,7 +74,7 @@ Utilize as informações deste tópico para conhecer as noções básicas sobre 
     - [Windows 8.1 e definições posteriores](wi-fi-settings-import-windows-8-1.md) (incluindo o Windows Holographic for Business)
 1. Quando tiver terminado, volte ao painel **Criar perfil** e clique em **Criar**.
 
-O perfil é criado e apresentado no painel da lista de perfis.
+O perfil será criado e apresentado no painel Lista de perfis.
 
 ## <a name="next-steps"></a>Próximos passos
 

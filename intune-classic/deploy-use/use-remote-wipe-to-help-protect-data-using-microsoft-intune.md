@@ -1,29 +1,29 @@
 ---
-title: "Utilizar a eliminação remota para ajudar a proteger dados"
-description: "O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa."
-keywords: 
+title: Utilizar a eliminação remota para ajudar a proteger dados
+description: O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ajudar a proteger os dados com a eliminação completa ou seletiva através do Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Pode eliminar aplicações e dados a partir dos dispositivos geridos pelo Intune que já não são precisos, que estão a ser reobjetivados ou que desapareceram. Para tal, o Intune fornece as funcionalidades de eliminação completa e eliminação seletiva. Os utilizadores também podem emitir um comando de eliminação remota de dados no dispositivo a partir da aplicação Portal da Empresa do Intune em dispositivos de propriedade privada inscritos no Intune.
 
@@ -40,37 +40,37 @@ A **Eliminação completa** restaura as predefinições do dispositivo, removend
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Apagar remotamente um dispositivo a partir da consola do administrador do Intune
 
-1.  Selecione dispositivos a serem apagados. Pode encontrá-los através do utilizador ou do dispositivo.
+1. Selecione dispositivos a serem apagados. Pode encontrá-los através do utilizador ou do dispositivo.
 
-    -   **Por utilizador:**
+   - **Por utilizador:**
 
-        1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Utilizadores**.
+     1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Utilizadores**.
 
-        2.  Escolha o nome do utilizador cujo dispositivo móvel pretende apagar. Escolha **Ver Propriedades**.
+     2.  Escolha o nome do utilizador cujo dispositivo móvel pretende apagar. Escolha **Ver Propriedades**.
 
-        3.  Na página **Propriedades** do utilizador, escolha **Dispositivos** e, em seguida, escolha o nome do dispositivo móvel que pretende apagar. Para selecionar múltiplos dispositivos, utilize Ctrl+clique.
+     3.  Na página **Propriedades** do utilizador, escolha **Dispositivos** e, em seguida, escolha o nome do dispositivo móvel que pretende apagar. Para selecionar múltiplos dispositivos, utilize Ctrl+clique.
 
-    -   **Por dispositivo:**
+   - **Por dispositivo:**
 
-        1.  Na [consola de administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos Móveis**.
+     1. Na [consola de administrador do Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos Móveis**.
 
-         ![Iniciar uma operação de extinção ou eliminação de dados](../media/dev-sa-wipe.png)
+        ![Iniciar uma operação de extinção ou eliminação de dados](../media/dev-sa-wipe.png)
 
-        2.  Escolha **Dispositivos** e, em seguida, escolha o nome do dispositivo móvel que pretende apagar. Para selecionar múltiplos dispositivos, utilize Ctrl+clique.
+     2. Escolha **Dispositivos** e, em seguida, escolha o nome do dispositivo móvel que pretende apagar. Para selecionar múltiplos dispositivos, utilize Ctrl+clique.
 
-2.  Escolha **Extinguir/Apagar**.
+2. Escolha **Extinguir/Apagar**.
 
-3.  É apresentada uma mensagem de confirmação que lhe pergunta se pretende extinguir o dispositivo.
+3. É apresentada uma mensagem de confirmação que lhe pergunta se pretende extinguir o dispositivo.
 
-    -   Para executar uma **Eliminação seletiva** que remova apenas as aplicações e dados da empresa, selecione **Sim**.
+   -   Para executar uma **Eliminação seletiva** que remova apenas as aplicações e dados da empresa, selecione **Sim**.
 
-    -   Para efetuar uma **Eliminação completa** que apague todas as aplicações e dados e devolva o dispositivo às predefinições de fábrica, selecione **Apagar o dispositivo antes de o extinguir**. Esta ação aplica-se a todas as plataformas exceto ao Windows 8.1. **Não é possível recuperar os dados removidos por uma eliminação completa**.
+   -   Para efetuar uma **Eliminação completa** que apague todas as aplicações e dados e devolva o dispositivo às predefinições de fábrica, selecione **Apagar o dispositivo antes de o extinguir**. Esta ação aplica-se a todas as plataformas exceto ao Windows 8.1. **Não é possível recuperar os dados removidos por uma eliminação completa**.
 
 Se o dispositivo estiver ativo e ligado, demora menos de 15 minutos até um comando de eliminação ser propagado em todos os tipos de dispositivo.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para eliminar dispositivos no portal do Azure Active Directory
 
-1.  Navegue para [http://aka.ms/accessaad](http://aka.ms/accessaad) ou escolha **Administração** &gt; **Azure AD** a partir de [https://portal.office.com](https://portal.office.com).
+1.  Navegue para [http://aka.ms/accessaad](http://aka.ms/accessaad) ou selecione **Administrador** &gt; **Azure AD** em [https://portal.office.com](https://portal.office.com).
 
 2.  Inicie sessão com o seu ID de Organização através da ligação no lado esquerdo da página.
 

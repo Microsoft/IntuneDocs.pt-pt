@@ -1,27 +1,27 @@
 ---
-title: Inscrever o seu dispositivo macOS no Intune com o Portal da Empresa | Microsoft Docs
-description: "Descreve como inscrever um dispositivo macOS no Intune com a aplicação Portal da Empresa"
+title: Inscrever o seu dispositivo macOS no Intune com o Portal da Empresa | Documentos da Microsoft
+description: Descreve como inscrever um dispositivo macOS no Intune com a aplicação Portal da Empresa
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -30,11 +30,12 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
 > [!NOTE]
 > Pode encontrar instruções de inscrição de dispositivos macOS em versões anteriores do macOS [aqui](enroll-your-device-in-intune-macos-legacy.md).
 
-1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+1. Na sua __Dock__, procure o __Safari__, abra uma nova janela e, em seguida, abra o [site do Portal da Empresa](https://portal.manage.microsoft.com).
 
 2. Inicie sessão no site do Portal da Empresa com a sua conta escolar ou profissional.
 
-  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+
 
 3. Após iniciar sessão, clique no **Menu** no canto superior esquerdo da página e selecione **Os Meus Dispositivos**.
 
@@ -54,8 +55,8 @@ O acesso às aplicações, aos dados e aos recursos da sua organização permite
 
 8. O seu Mac apresentará a mensagem **"PortalDaEmpresa" é uma aplicação transferida da Internet. Tem a certeza de que pretende abri-la?** Clique em **Abrir**.
 
-  > [!NOTE]
-  > O Intune precisa de aceder ao seu computador para confirmar que o dispositivo é suficientemente seguro para aceder aos recursos da sua organização. Se o seu computador se recusar a abrir a aplicação Portal da Empresa, experimente [desativar o controlador de chamadas](https://support.apple.com/HT202491) e, em seguida, abrir a aplicação.
+   > [!NOTE]
+   > O Intune precisa de aceder ao seu computador para confirmar que o dispositivo é suficientemente seguro para aceder aos recursos da sua organização. Se o seu computador se recusar a abrir a aplicação Portal da Empresa, experimente [desativar o controlador de chamadas](https://support.apple.com/HT202491) e, em seguida, abrir a aplicação.
 
 9. O primeiro ecrã que verá na aplicação Portal da Empresa pedir-lhe-á que **Inicie Sessão** com a mesma conta escolar ou profissional que utilizou para iniciar sessão no site do Portal da Empresa.
 

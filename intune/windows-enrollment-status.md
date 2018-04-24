@@ -1,28 +1,28 @@
 ---
-title: "Adicionar Ecrãs do Estado da Inscrição"
+title: Adicionar Ecrãs do Estado da Inscrição
 titleSuffix: Microsoft Intune
-description: "Dê as boas-vindas aos utilizadores que estão a inscrever dispositivos Windows 10."
-keywords: 
+description: Dê as boas-vindas aos utilizadores que estão a inscrever dispositivos Windows 10.
+keywords: ''
 author: ErikjeMS
 manager: erikje
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a8691572a25dbb94ff5d165298d48a3c68b33bab
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: e38adf62c13551f00c7e0356e5d8af1b1c729324
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-an-enrollment-status-screen"></a>Configurar um Ecrã do Estado da Inscrição
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Quando os utilizadores finais inscrevem um dispositivo Windows, estes esperam poder aceder a tudo o que precisam para serem produtivos imediatamente após a inscrição. O que os utilizadores finais não percebem é que os conteúdos, aplicações, políticas e definições continuam a ser fornecidos aos seus dispositivos após a conclusão da inscrição.
 

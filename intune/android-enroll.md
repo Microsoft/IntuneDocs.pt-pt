@@ -2,28 +2,28 @@
 title: Inscrever dispositivos Android no Intune
 titlesuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android no Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Enquanto administrador do Intune, pode gerir dispositivos Android, incluindo dispositivos Samsung Knox Standard. Também pode gerir o perfil de trabalho nos [dispositivos Android for Work](#enable-enrollment-of-android-for-work-devices).
 
@@ -47,6 +47,8 @@ Para ativar a gestão de perfis de trabalho em dispositivos que [suportam Androi
 
 Se estiver a inscrever dispositivos Android dor Work através de uma conta de [Gestor de Inscrições de Dispositivos](device-enrollment-manager-enroll.md), existe um limite de 10 dispositivos que pode inscrever por conta.
 
+Para obter mais informações, veja [Dados que o Intune envia para a Google](data-intune-sends-to-google.md).
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Adicionar o enlace do Android for Work para o Intune
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Se estiver a inscrever dispositivos Android dor Work através de uma conta de [G
 1. **Configurar o Intune MDM**<br>
 Se ainda não o fez, prepare a gestão de dispositivos móveis ao [definir a autoridade de gestão de dispositivos móveis](mdm-authority-set.md) como **Microsoft Intune**.
 2. **Configurar o enlace do Android for Work**<br>
-    Como administrador do Intune, no [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
-
-   a. No painel **Intune**, selecione **Inscrição de dispositivos** > **Inscrição de Android for Work** e selecione **Google Play gerido – Configurar** para abrir o Web site do Android for Work do Google Play. O site abre num novo separador do seu browser.
+    
+   a. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição Android** > **Google Play Gerido**.
    ![Ecrã de inscrição do Android for Work](./media/android-work-bind.png)
 
-   b. **Iniciar sessão no Google**<br>
+   b. Selecione **Concordo** para conceder permissão à Microsoft para [enviar informações sobre o utilizador e o dispositivo à Google](data-intune-sends-to-google.md). 
+   
+   c. Selecione **Inicie o Google para ligar agora** para abrir o site do Android for Work do Google Play. O site abre num novo separador do seu browser.
+  
+   d. **Iniciar sessão no Google**<br>
    Na página de início de sessão da Google, introduza a conta Google que será associada a todas as tarefas de gestão do Android for Work deste inquilino. Esta é a conta Google que os administradores de TI da sua empresa partilham para gerir e publicar aplicações na consola Play for Work. Pode utilizar uma conta Google existente ou criar uma nova.  A conta que escolher não pode estar associada a um domínio do G Suite.
 
-   c. **Fornecer detalhes da organização**<br>
+   e. **Fornecer detalhes da organização**<br>
    Na opção **Nome da organização**, forneça o nome da sua empresa. A opção **Fornecedor de Gestão de mobilidade de empresas (EMM)** deverá apresentar o valor **Microsoft Intune**. Concorde com o contrato Android for Work e, em seguida, selecione **Confirmar**. O seu pedido será processado.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Especificar as definições de inscrição do Android for Work
@@ -110,3 +115,14 @@ Pode desativar a gestão e inscrição do Android for Work. Selecionar **Anular 
 
 2. **Concorde com a eliminação do enlace do Android for Work**<br>
   Selecione **Sim** para eliminar o enlace e anular a inscrição de todos os dispositivos Android for Work do Intune.
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Experiência de utilizador final ao inscrever um dispositivo Samsung Knox
+Existem várias considerações a ter em conta ao inscrever dispositivos Samsung Knox:
+-   Mesmo que nenhuma política exija um PIN, o dispositivo tem de ter um PIN de, pelo menos, quatro dígitos para se inscrever. Se o dispositivo não tiver um PIN, será pedido ao utilizador para criar um.
+-   Não é necessária nenhuma interação do utilizador para os Certificados de Associação à Área de Trabalho (WPJ).
+-   É pedido ao utilizador que indique as informações de Inscrição do Serviço e o que a aplicação pode fazer.
+-   É pedido ao utilizador que indique as informações de Inscrição do Knox e o que o Knox pode fazer.
+-   Se uma Política de Encriptação for imposta, os utilizadores terão de definir uma palavra-passe Complexa de Seis Carateres para o código de acesso do dispositivo.
+-   Não existem pedidos de utilizador adicionais para instalar certificados enviados por um serviço de Acesso aos Recursos da Empresa.
+- Alguns dispositivos Knox mais antigos irão pedir ao utilizador para fornecer certificados adicionais utilizados para o Acesso aos Recursos da Empresa.
+- Se um dispositivo Samsung Mini não conseguir instalar a WPJ e apresentar o erro **Certificado Não Encontrado** ou **Não é Possível Registar o Dispositivo**, instale as Atualizações de Firmware do Samsung mais recentes.

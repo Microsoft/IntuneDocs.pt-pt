@@ -1,28 +1,28 @@
 ---
-title: "Portal de resolução de problemas de suporte técnico"
+title: Portal de resolução de problemas de suporte técnico
 titlesuffix: Microsoft Intune
-description: "O pessoal de suporte técnico utiliza o portal de resolução de problemas para resolver problemas técnicos dos utilizadores."
-keywords: 
+description: O pessoal de suporte técnico utiliza o portal de resolução de problemas para resolver problemas técnicos dos utilizadores.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9ff0d6f662fca4cb223496d342de5d6378c05ceb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O portal de resolução de problemas permite que os operadores de suporte técnico e os administradores do Intune vejam as informações de utilizador para resolverem pedidos de ajuda dos utilizadores. As organizações que incluem um suporte técnico podem atribuir o **Operador de suporte técnico** a um grupo de utilizadores. A função de operador de suporte técnico pode utilizar o painel **Resolução de problemas**.
 
@@ -78,7 +78,7 @@ As propriedades das aplicações móveis.
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nome          | O nome da aplicação.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Tipo          | Pode escolher um tipo de atribuição para cada aplicação.  <br> **Disponível** – Os utilizadores instalam a aplicação a partir do site ou da aplicação Portal da Empresa.  <br> **Não Aplicável** – A aplicação não é instalada nem apresentada no Portal da Empresa. <br> **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.  <br> **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. |
+| Tipo          | Pode escolher um tipo de atribuição para cada aplicação.  <br> **Disponível** – os utilizadores instalam a aplicação a partir do site ou da aplicação Portal da Empresa.  <br> **Não Aplicável** – a aplicação não é instalada nem apresentada no Portal da Empresa. <br> **Desinstalar** – a aplicação é desinstalada dos dispositivos nos grupos selecionados.  <br> **Disponível com ou sem inscrição** – atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. |
 | Última Modificação | O nome do tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### <a name="devices"></a>Dispositivos

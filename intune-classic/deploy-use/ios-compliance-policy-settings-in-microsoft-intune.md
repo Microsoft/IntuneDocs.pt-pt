@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7973dd757c69bc0a63f1ff5d24973acb6086d8a4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58af24f4c3ed7a650323dab0072d4e5a85f5554c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos iOS no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As definições de política descritas neste tópico aplicam-se a dispositivos com o iOS 8.0 e posterior.
 
 Se estiver à procura de informações sobre outras plataformas, selecione uma das seguintes opções:
 > [!div class="op_single_selector"]
-- [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 ### <a name="password"></a>Palavra-passe

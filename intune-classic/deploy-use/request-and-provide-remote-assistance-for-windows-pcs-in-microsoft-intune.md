@@ -1,29 +1,28 @@
 ---
-title: "Pedir e fornecer assistência remota para PCs Windows"
-description: "Descreve os passos do utilizador final e do administrador de TI para fornecer assistência remota para computadores com Windows geridos como PCs e para iniciar um PC remotamente."
-keywords: 
+title: Pedir e fornecer assistência remota para PCs Windows
+description: Descreve os passos do utilizador final e do administrador de TI para fornecer assistência remota para computadores com Windows geridos como PCs e para iniciar um PC remotamente.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Pedir e fornecer assistência remota para PCs Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune.
 
@@ -60,7 +59,7 @@ Antes de começar a estabelecer e responder aos pedidos de assistência remota, 
 ## <a name="respond-to-a-remote-assistance-request"></a>Responder a um pedido de assistência remota
 
 1. Quando um utilizador submete um pedido de assistência remota, pode vê-la na área de trabalho **Alertas**, em **Monitorização** > **Assistência Remota**. Por exemplo:
-> ![Captura de ecrã de um pedido de assistência remota](./media/team-viewer.png)
+   > ![Captura de ecrã de um pedido de assistência remota](./media/team-viewer.png)
 
 <br>Se um pedido não tiver resposta durante mais de 4 horas, é removido.
 2. Para aceitar o pedido, selecione **Aprovar o pedido e iniciar a Assistência Remota**.

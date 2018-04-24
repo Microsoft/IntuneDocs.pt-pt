@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Definições de política do iOS no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune oferece uma variedade de definições gerais incorporadas que pode configurar nos dispositivos iOS. Além disso, pode utilizar a ferramenta Apple Configurator para criar definições personalizadas que não estão disponíveis no Intune.
 
@@ -45,20 +45,22 @@ Se a definição que procura não aparecer neste tópico, poderá conseguir cri�
 ### <a name="security-settings"></a>Definições de segurança
 As definições aplicam-se ao iOS 8.0 e posterior.
 
-|Nome da definição|Detalhes|
-|----------------|-------|
-|**Exigir uma palavra-passe para desbloquear os dispositivos móveis**|Especifique se o utilizador é obrigado a introduzir uma palavra-passe para aceder ao respetivo dispositivo.|
-|**Tipo obrigatório de palavra-passe**|Especifique o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|
-|**Número de carateres complexos obrigatórios na palavra-passe**|Especifique o número de caracteres de símbolos (como **#** ou **@**) que têm de ser incluídos na palavra-passe.|
-|**Comprimento mínimo da palavra-passe**|Especifique o número mínimo de carateres na palavra-passe.|
-|**Permitir palavras-passe simples**|Permite palavras-passe simples, como **0000** e **1234**.|
-|**Número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado**|Especifique o número de tentativas de início de sessão falhadas antes desta definição apaga o dispositivo.|
-|**Minutos de inatividade antes de a palavra-passe ser exigida**<sup>1</sup>|Especifique o período de tempo durante o qual o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.|
-|**Expiração da Palavra-passe (dias)**|Especifique o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.|
-|**Memorizar histórico de palavras-passe**|Especifique se o utilizador pode utilizar palavras-passe que utilizou anteriormente.|
-|**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Especifique o número de palavras-passe utilizadas anteriormente que o dispositivo memorizou.|
-|**Minutos de inatividade antes de o ecrã se desligar**<sup>1</sup>|Especifique o número de minutos antes de o ecrã do dispositivo se desligar.|
-|**Permitir desbloqueio por impressão digital**|Permite a utilização de uma impressão digital para desbloquear o dispositivo.|
+
+|                                           Nome da definição                                            |                                                            Detalhes                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Exigir uma palavra-passe para desbloquear os dispositivos móveis</strong>                    |                        Especifique se o utilizador é obrigado a introduzir uma palavra-passe para aceder ao respetivo dispositivo.                        |
+|                              <strong>Tipo obrigatório de palavra-passe</strong>                              |                   Especifique o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.                    |
+|                <strong>Número de carateres complexos obrigatórios na palavra-passe</strong>                 | Especifique o número de caracteres de símbolos (como <strong>#</strong> ou <strong>@</strong>) que têm de ser incluídos na palavra-passe. |
+|                             <strong>Comprimento mínimo da palavra-passe</strong>                              |                                   Especifique o número mínimo de carateres na palavra-passe.                                    |
+|                              <strong>Permitir palavras-passe simples</strong>                              |                          Permite palavras-passe simples, como <strong>0000</strong> e <strong>1234</strong>.                          |
+|     <strong>Número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado</strong>      |                       Especifique o número de tentativas de início de sessão falhadas antes desta definição apaga o dispositivo.                        |
+|          <strong>Minutos de inatividade antes de a palavra-passe ser exigida</strong><sup>1</sup>           |                   Especifique o período de tempo durante o qual o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.                    |
+|                            <strong>Expiração da Palavra-passe (dias)</strong>                            |                             Especifique o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.                             |
+|                            <strong>Memorizar histórico de palavras-passe</strong>                             |                           Especifique se o utilizador pode utilizar palavras-passe que utilizou anteriormente.                           |
+| <strong>Memorizar histórico de palavras-passe</strong> – <strong>Evita a reutilização de palavras-passe anteriores</strong> |                           Especifique o número de palavras-passe utilizadas anteriormente que o dispositivo memorizou.                           |
+|            <strong>Minutos de inatividade antes de o ecrã se desligar</strong><sup>1</sup>             |                             Especifique o número de minutos antes de o ecrã do dispositivo se desligar.                             |
+|                             <strong>Permitir desbloqueio por impressão digital</strong>                             |                                        Permite a utilização de uma impressão digital para desbloquear o dispositivo.                                         |
+
 <sup>1</sup>Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de a palavra-passe ser exigida**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
 ### <a name="system-settings"></a>Definições do sistema
@@ -180,25 +182,26 @@ As políticas que contêm as definições de aplicações conformes e não confo
 
 ### <a name="kiosk-mode-settings"></a>Definições do modo de local público
 
-|Nome da definição|Detalhes|
-|----------------|--------------------|
-|**Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público**|Escolher **Procurar**e, em seguida, especifique a aplicação gerida ou a aplicação de uma loja que terá permissão para ser executada quando o dispositivo estiver em modo de local público. Não será permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte "Como especificar URLs para lojas de aplicações" mais adiante neste tópico.|
-|**Permitir toque**|Ativar ou desativar o ecrã tátil do dispositivo.|
-|**Permitir a rotação do ecrã**|Ativar ou desativar a mudança da orientação do ecrã quando o utilizador rodar o dispositivo.|
-|**Permitir os botões de volume**|Ativar ou desativar a utilização dos botões de volume no dispositivo.|
-|**Permitir a alteração do toque**|Ativar ou desativar a alteração do toque (sem som) no dispositivo.|
-|**Permitir o botão suspender/reativar ecrã**|Ativar ou desativar o botão de reativação de suspensão do ecrã no dispositivo.|
-|**Permitir o bloqueio automático**|Ativar ou desativar o bloqueio automático do dispositivo.|
-|**Ativar o áudio mono**|Ativar ou desativar a definição de acessibilidade **Áudio Mono**.|
-|**Ativar o VoiceOver**|Ativar ou desativar a definição de acessibilidade **VoiceOver**, que lê em voz alta o texto no ecrã do dispositivo.|
-|**Ativar ajustes do VoiceOver**|Ativar ou desativar os ajustes do VoiceOver, o que permite ao utilizador ajustar a função VoiceOver (por exemplo, a rapidez de leitura em voz alta do texto no ecrã).|
-|**Ativar o zoom**|Ativar ou desativar a definição de acessibilidade **Zoom**, o que permite ao utilizador tocar para aplicar zoom no ecrã do dispositivo.|
-|**Ativar os ajustes do zoom**|Ativar ou desativar os ajustes do Zoom, o que permite ao utilizador ajustar a função Zoom.|
-|**Ativar a funcionalidade inverter cores**|Ativar ou desativar a definição de acessibilidade **Inverter cores**, que ajusta o ecrã para ajudar os utilizadores com deficiências visuais.|
-|**Ativar os ajustes da funcionalidade inverter cores**|Ativar ou desativar a funcionalidade de inverter ajustes de cores, o que permite ao utilizador ajustar a função Inverter Cores.|
-|**Ativar o AssistiveTouch**|Ativar ou desativar a definição de acessibilidade **AssistiveTouch**, que ajuda o utilizador a executar gestos no ecrã que lhes poderão ser difíceis de efetuar.|
-|**Ativar os ajustes do AssistiveTouch**|Ativar ou desativar os ajustes do AssistiveTouch, o que permite ao utilizador ajustar a função AssistiveTouch.|
-|**Ativar a funcionalidade Seleção de voz**|Ativar ou desativar a definição de acessibilidade **Enunciar Seleção**, que lê em voz alta o texto que o utilizador seleciona.|
+|                                            Nome da definição                                            |                                                                                                                                      Detalhes                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Selecione uma aplicação gerida que terá permissão para ser executada quando o dispositivo estiver em modo de local público</strong> | Escolher <strong>Procurar</strong>e, em seguida, especifique a aplicação gerida ou a aplicação de uma loja que terá permissão para ser executada quando o dispositivo estiver em modo de local público. Não será permitida a execução de outras aplicações no dispositivo. Para obter mais ajuda, consulte "Como especificar URLs para lojas de aplicações" mais adiante neste tópico. |
+|                                    <strong>Permitir toque</strong>                                    |                                                                                                                  Ativar ou desativar o ecrã tátil do dispositivo.                                                                                                                  |
+|                               <strong>Permitir a rotação do ecrã</strong>                               |                                                                                                Ativar ou desativar a mudança da orientação do ecrã quando o utilizador rodar o dispositivo.                                                                                                 |
+|                               <strong>Permitir os botões de volume</strong>                                |                                                                                                           Ativar ou desativar a utilização dos botões de volume no dispositivo.                                                                                                           |
+|                                <strong>Permitir a alteração do toque</strong>                                |                                                                                                             Ativar ou desativar a alteração do toque (sem som) no dispositivo.                                                                                                              |
+|                          <strong>Permitir o botão suspender/reativar ecrã</strong>                           |                                                                                                           Ativar ou desativar o botão de reativação de suspensão do ecrã no dispositivo.                                                                                                            |
+|                                  <strong>Permitir o bloqueio automático</strong>                                  |                                                                                                                 Ativar ou desativar o bloqueio automático do dispositivo.                                                                                                                 |
+|                                 <strong>Ativar o áudio mono</strong>                                 |                                                                                                      Ativar ou desativar a definição de acessibilidade <strong>Áudio Mono</strong>.                                                                                                      |
+|                                 <strong>Ativar o VoiceOver</strong>                                 |                                                                               Ativar ou desativar a definição de acessibilidade <strong>VoiceOver</strong>, que lê em voz alta o texto no ecrã do dispositivo.                                                                                |
+|                           <strong>Ativar ajustes do VoiceOver</strong>                           |                                                                  Ativar ou desativar os ajustes do VoiceOver, o que permite ao utilizador ajustar a função VoiceOver (por exemplo, a rapidez de leitura em voz alta do texto no ecrã).                                                                   |
+|                                    <strong>Ativar o zoom</strong>                                    |                                                                         Ativar ou desativar a definição de acessibilidade <strong>Zoom</strong>, o que permite ao utilizador tocar para aplicar zoom no ecrã do dispositivo.                                                                         |
+|                              <strong>Ativar os ajustes do zoom</strong>                              |                                                                                                  Ativar ou desativar os ajustes do Zoom, o que permite ao utilizador ajustar a função Zoom.                                                                                                  |
+|                               <strong>Ativar a funcionalidade inverter cores</strong>                                |                                                                    Ativar ou desativar a definição de acessibilidade <strong>Inverter cores</strong>, que ajusta o ecrã para ajudar os utilizadores com deficiências visuais.                                                                    |
+|                         <strong>Ativar os ajustes da funcionalidade inverter cores</strong>                          |                                                                                         Ativar ou desativar a funcionalidade de inverter ajustes de cores, o que permite ao utilizador ajustar a função Inverter Cores.                                                                                         |
+|                              <strong>Ativar o AssistiveTouch</strong>                               |                                                     Ativar ou desativar a definição de acessibilidade <strong>AssistiveTouch</strong>, que ajuda o utilizador a executar gestos no ecrã que lhes poderão ser difíceis de efetuar.                                                     |
+|                        <strong>Ativar os ajustes do AssistiveTouch</strong>                         |                                                                                       Ativar ou desativar os ajustes do AssistiveTouch, o que permite ao utilizador ajustar a função AssistiveTouch.                                                                                       |
+|                              <strong>Ativar a funcionalidade Seleção de voz</strong>                              |                                                                        Ativar ou desativar a definição de acessibilidade <strong>Enunciar Seleção</strong>, que lê em voz alta o texto que o utilizador seleciona.                                                                         |
+
 > [!NOTE]
 > As seguintes notas aplicam-se às definições do modo de local público para dispositivos iOS:
 >
@@ -222,7 +225,7 @@ Para especificar o URL de uma aplicação na lista de aplicações compatíveis 
 
 2. Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações compatíveis ou não compatíveis que pretende executar no modo de local público.
 
-**Exemplo:** procure o **Microsoft Word para iPad**. O URL que irá utilizar será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Exemplo:** Procure por **Microsoft Word para iPad**. O URL que irá utilizar será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
@@ -349,8 +352,6 @@ Utilize as informações nesta lista para identificar o nome, o publicador e o I
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

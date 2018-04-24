@@ -15,11 +15,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 121e782b2044063fe05f99f7c8daded9fef9ca4c
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 48acddf8db9907277889c9c2800febacf58d42f0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-date-entity"></a>Referência para a entidade de data
 
@@ -29,23 +29,25 @@ A categoria **Date** contém a entidade **Date** utilizada para definir as refer
 
 A entidade **Date** representa as datas que são referenciadas em múltiplas entidades do armazém de dados.
 
-| Propriedade  | Descrição | Exemplo |
-|---------|------------|--------|
-| DateKey | Identificador exclusivo para esta data no armazém de dados. | 20160703 |
-| FullDate | A data atual representada em formato Data/Hora completo. | 7/3/2016 12:00:00 AM |
-| DayOfWeek | Dia da semana | 1 |
-| DayOfMonth | Dia do mês | 3 |
-| DayOfYear | Dia do ano | 185 |
-| WeekOfYear | Semana do ano | 28 |
-| MonthOfYear | Mês do ano | 7 |
-| CalendarQuarter | Trimestre civil | 3 |
-| CalendarYear | Ano civil | 2016 |
-| DateKey | Identificador exclusivo para esta data no armazém de dados. | 20160703 |
-| FullDate | A data atual representada em formato Data/Hora completo. | 7/3/2016 12:00:00 AM |
-| DayOfWeek | Dia da semana | 1 |
-| DayOfMonth | Dia do mês | 3 |
-| DayOfYear | Dia do ano | 185 |
-| WeekOfYear | Semana do ano | 28 |
-| MonthOfYear | Mês do ano | 7 |
-| CalendarQuarter | Trimestre civil | 3 |
-| CalendarYear | Ano civil | 2016 |
+
+|    Propriedade     |                      Descrição                       |       Exemplo        |
+|-----------------|--------------------------------------------------------|----------------------|
+|     DateKey     | Identificador exclusivo para esta data no armazém de dados. |       20160703       |
+|    FullDate     |    A data atual representada em formato Data/Hora completo.     | 7/3/2016 12:00:00 AM |
+|    DayOfWeek    |                      Dia da semana                       |          1           |
+|   DayOfMonth    |                      Dia do mês                      |          3           |
+|    DayOfYear    |                      Dia do ano                       |         185          |
+|   WeekOfYear    |                      Semana do ano                      |          28          |
+|   MonthOfYear   |                   Mês do ano                    |          7           |
+| CalendarQuarter |                    Trimestre civil                    |          3           |
+|  CalendarYear   |                     Ano civil                      |         2016         |
+|     DateKey     | Identificador exclusivo para esta data no armazém de dados. |       20160703       |
+|    FullDate     |    A data atual representada em formato Data/Hora completo.     | 7/3/2016 12:00:00 AM |
+|    DayOfWeek    |                      Dia da semana                       |          1           |
+|   DayOfMonth    |                      Dia do mês                      |          3           |
+|    DayOfYear    |                      Dia do ano                       |         185          |
+|   WeekOfYear    |                      Semana do ano                      |          28          |
+|   MonthOfYear   |                   Mês do ano                    |          7           |
+| CalendarQuarter |                    Trimestre civil                    |          3           |
+|  CalendarYear   |                     Ano civil                      |         2016         |
+

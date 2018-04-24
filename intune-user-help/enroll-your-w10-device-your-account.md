@@ -1,37 +1,37 @@
 ---
-title: Inscrever o seu dispositivo com o Windows 10 no Intune | Microsoft Docs
+title: Inscrever o seu dispositivo com o Windows 10 no Intune | Documentos da Microsoft
 description: Inscrever um dispositivo com o Windows 10 1511 no Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrever o seu dispositivo com o Windows 10 no Intune
 
   > [!NOTE]
   > O Windows 10 funciona em todos os tipos de dispositivos. Quer esteja a utilizar um computador, telemóvel ou tablet, os passos que segue são os mesmos, ainda que tenham um aspeto ligeiramente diferente daquele nas imagens nesta página.
 
-1.  Aceda a **Iniciar**.
+1. Aceda a **Iniciar**.
 
-  - Se estiver a utilizar um dispositivo com **Windows 10 Desktop**, aceda ao **menu Iniciar**.
-  - Se estiver a utilizar um dispositivo **Windows 10 Mobile**, aceda ao **ecrã Início** e, em seguida, percorra até à lista **Todas as Aplicações**.
+   - Se estiver a utilizar um dispositivo com **Windows 10 Desktop**, aceda ao **menu Iniciar**.
+   - Se estiver a utilizar um dispositivo **Windows 10 Mobile**, aceda ao **ecrã Início** e, em seguida, percorra até à lista **Todas as Aplicações**.
 
 2. Abra as **Definições** da aplicação Windows ao procurar "definições" na barra de pesquisa.
 

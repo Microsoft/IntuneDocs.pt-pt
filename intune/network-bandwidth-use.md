@@ -1,29 +1,29 @@
 ---
 title: Detalhes de largura de banda e requisitos de rede do Microsoft Intune
-titlesuffix: 
-description: "Reveja os detalhes de largura de banda e requisitos de configuração de rede do Intune."
-keywords: 
+titlesuffix: ''
+description: Reveja os detalhes de largura de banda e requisitos de configuração de rede do Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Esta orientação ajuda os administradores do Intune a compreenderem os requisitos de rede do serviço Intune. Pode utilizar estas informações para compreender os requisitos de largura de banda e as definições de portas e endereços IP necessárias para as definições de proxy.
 
@@ -58,11 +58,13 @@ Um servidor proxy de colocação em cache que recebe pedidos de conteúdo de cli
 
 Seguem-se as definições típicas para utilizar um servidor proxy que coloca conteúdos em cache para os clientes do Intune.
 
-|Definição|Valor recomendado|Detalhes|
-|-----------|---------------------|-----------|
-|Tamanho da cache|De 5 GB até 30 GB|O valor varia com base no número de computadores clientes na sua rede e nas configurações que utiliza. Para impedir que os ficheiros sejam eliminados demasiado cedo, ajuste o tamanho da cache do seu ambiente.|
-|Tamanho do ficheiro de cache individual|950 MB|Esta definição pode não estar disponível em todos os servidores proxy com colocação em cache.|
-|Tipos de objeto a colocar em cache|HTTP<br /><br />HTTPS<br /><br />BITS|Os pacotes Intune são ficheiros CAB obtidos através de uma transferência do Serviço de Transferência Inteligente em Segundo Plano (BITS) através de HTTP.|
+
+|          Definição           |           Valor recomendado           |                                                                                                  Detalhes                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Tamanho da cache         |             De 5 GB até 30 GB             | O valor varia com base no número de computadores clientes na sua rede e nas configurações que utiliza. Para impedir que os ficheiros sejam eliminados demasiado cedo, ajuste o tamanho da cache do seu ambiente. |
+| Tamanho do ficheiro de cache individual |                950 MB                 |                                                                     Esta definição pode não estar disponível em todos os servidores proxy com colocação em cache.                                                                     |
+|   Tipos de objeto a colocar em cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Os pacotes Intune são ficheiros CAB obtidos através de uma transferência do Serviço de Transferência Inteligente em Segundo Plano (BITS) através de HTTP.                                               |
+
 Para obter informações sobre como utilizar um servidor proxy para colocar conteúdos em cache, consulte a documentação da sua solução de servidor proxy.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Utilizar o Serviço de Transferência Inteligente em Segundo Plano em computadores
@@ -159,14 +161,16 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple
-| Nome do anfitrião  | URL (endereço IP/sub-rede) | Protocolo | Porta | Dispositivo |
-| --- | --- | --- | --- | --- |
-|  Consola de Administração  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS e macOS |
-| Consola de Administração  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS e macOS |
-| Consola de Administração  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS e macOS  |
-| Servidor PI  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Para mensagens em nuvem em iOS e macOS da Apple. |
-| Serviços de dispositivos  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Serviços de dispositivos  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Serviços de dispositivos  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Dispositivos (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 e 443 | Apenas Apple. &#39;#&#39; é um número aleatório de 0 a 200. |
-| Dispositivos (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 ou 443 | Apenas Apple |
+
+|         Nome do anfitrião         |                                        URL (endereço IP/sub-rede)                                        |  Protocolo  |     Porta     |                          Dispositivo                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Consola de Administração       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS e macOS                    |
+|      Consola de Administração       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS e macOS                    |
+|      Consola de Administração       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS e macOS                    |
+|        Servidor PI         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Para mensagens em nuvem em iOS e macOS da Apple.          |
+|     Serviços de dispositivos      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Serviços de dispositivos      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Serviços de dispositivos      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Dispositivos (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 e 443 | Apenas Apple. &#39;#&#39; é um número aleatório de 0 a 200. |
+| Dispositivos (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 ou 443   |                        Apenas Apple                         |
+

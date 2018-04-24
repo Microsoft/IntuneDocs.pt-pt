@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: aac152f26ac3d91536c294dd1f62480fcc8f7db6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ef0b540b6b70ca67a0da8b00997bb761722eb76a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Uma nova forma de utilizar os grupos no Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Recebemos o seu feedback e estamos a fazer algumas alterações à forma como trabalha com os grupos no Microsoft Intune.
 Estamos no processo de migração de todos os nossos clientes dos grupos do Intune para os grupos de segurança do Azure Active Directory.

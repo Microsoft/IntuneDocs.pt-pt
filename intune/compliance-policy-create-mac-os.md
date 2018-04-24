@@ -1,29 +1,29 @@
 ---
-title: "Criar uma política de conformidade de dispositivos macOS no Microsoft Intune"
-titleSuffix: 
-description: "Crie uma política de conformidade de dispositivos do Microsoft Intune para dispositivos macOS, para que possa especificar os requisitos que um dispositivo tem de cumprir para estar em conformidade."
-keywords: 
+title: Criar uma política de conformidade de dispositivos macOS no Microsoft Intune
+titleSuffix: ''
+description: Crie uma política de conformidade de dispositivos do Microsoft Intune para dispositivos macOS, para que possa especificar os requisitos que um dispositivo tem de cumprir para estar em conformidade.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Criar uma política de conformidade para dispositivos macOS com o Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos do Intune para macOS especifica as regras e definições que os dispositivos macOS têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, tal como pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune.
 
@@ -130,7 +130,7 @@ Ao criar uma nova conformidade do dispositivo com o Intune, terá várias catego
 
 Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade do dispositivo – Políticas**.
 
-1. Selecione a política de conformidade de dispositivos que pretende atribuir aos utilizadores e, em seguida, selecione **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
+1. Selecione a política de conformidade de dispositivos que pretende atribuir aos utilizadores e, em seguida, selecione **Tarefas**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
 
 2. Selecione **Grupos selecionados** para abrir o painel que apresenta os grupos de segurança do Azure AD.
 

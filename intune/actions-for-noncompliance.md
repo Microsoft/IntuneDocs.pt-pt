@@ -1,22 +1,22 @@
 ---
-title: "Mensagem de não conformidade e ações com o Microsoft Intune – Azure | Microsoft Docs"
-description: "Crie um e-mail de notificação para enviar para os dispositivos não conformes. Adicione ações depois de um dispositivo ser marcado como não conforme, tais como adicionar um período de tolerância para obter conformidade, ou crie um agendamento para bloquear o acesso até o dispositivo ficar em conformidade. Faça isto com o Microsoft Intune no Azure."
-keywords: 
+title: Mensagem de não conformidade e ações com o Microsoft Intune – Azure | Microsoft Docs
+description: Crie um e-mail de notificação para enviar para os dispositivos não conformes. Adicione ações depois de um dispositivo ser marcado como não conforme, tais como adicionar um período de tolerância para obter conformidade, ou crie um agendamento para bloquear o acesso até o dispositivo ficar em conformidade. Faça isto com o Microsoft Intune no Azure.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes – Intune
 
@@ -54,14 +54,14 @@ Existem dois tipos de ações:
 3. Selecione **Conformidade do dispositivo** e, em seguida, selecione **Notificações**. 
 4. Selecione **Criar notificação** e introduza as seguintes informações:
 
-  - Nome
-  - Assunto
-  - Mensagem
-  - Cabeçalho do e-mail – incluir o logótipo da empresa
-  - Rodapé do e-mail – incluir o nome da empresa
-  - Rodapé do e-mail – incluir informações de contacto
+   - Nome
+   - Assunto
+   - Mensagem
+   - Cabeçalho do e-mail – incluir o logótipo da empresa
+   - Rodapé do e-mail – incluir o nome da empresa
+   - Rodapé do e-mail – incluir informações de contacto
 
-  ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/actionsfornoncompliance-1.PNG)
+   ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/actionsfornoncompliance-1.PNG)
 
 Quando terminar de adicionar as informações, selecione **Criar**. O Modelo de mensagem de notificação está pronto para ser utilizado.
 
@@ -77,7 +77,7 @@ Pode adicionar uma ação quando criar uma nova política de conformidade ou atu
 1. No [portal do Azure](https://portal.azure.com), abra **Microsoft Intune** e selecione **Conformidade do dispositivo**.
 2. Selecione **Políticas**, selecione uma das suas políticas e, em seguida, selecione **Propriedades**. 
 
-  Ainda não tem uma política? Crie uma política para [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou para outra plataforma.
+   Ainda não tem uma política? Crie uma política para [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou para outra plataforma.
 
 3. Selecione **Ações de não conformidade** e, em seguida, selecione **Adicionar** para introduzir os parâmetros de ação. Pode escolher o modelo de mensagem criado anteriormente, adicionar outros destinatários e atualizar o agendamento do período de tolerância. Pode introduzir o número de dias (0 a 365) na agenda e, em seguida, pode impor as políticas de acesso condicional. Se introduzir **0** número de dias, o acesso condicional bloqueia **imediatamente** o acesso aos recursos empresariais.
 

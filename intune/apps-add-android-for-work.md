@@ -1,29 +1,29 @@
 ---
-title: "Atribuir aplicações a dispositivos Android for Work"
+title: Atribuir aplicações a dispositivos Android for Work
 titlesuffix: Microsoft Intune
-description: "Compreenda como sincronizar e atribuir aplicações em dispositivos Android for Work a partir da Google Play for Work Store."
-keywords: 
+description: Compreenda como sincronizar e atribuir aplicações em dispositivos Android for Work a partir da Google Play for Work Store.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Como atribuir aplicações em dispositivos Android for Work com o Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Android for Work é um programa para dispositivos Android. Todas as aplicações que instala em dispositivos Android for Work são provenientes da Google Play for Work Store. As aplicações em dispositivos Android for Work são atribuídas de forma diferente da atribuição em dispositivos Android padrão. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure. A partir daqui, pode gerir a atribuição da aplicação da mesma forma que atribuiria qualquer outra aplicação.
 
@@ -43,7 +43,7 @@ Verifique se configurou o Intune e o Android for Work para trabalharem em conjun
 
     ![Exemplo: aprovar a aplicação na loja do Google Play for Work](media/approve.png)</br>
     
-  É aberta uma janela da aplicação a pedir-lhe para dar permissões para a aplicação efetuar diversas operações. 
+   É aberta uma janela da aplicação a pedir-lhe para dar permissões para a aplicação efetuar diversas operações. 
 
 4. Selecione **Aprovar** para aceitar as permissões da aplicação e continuar.</br>
 

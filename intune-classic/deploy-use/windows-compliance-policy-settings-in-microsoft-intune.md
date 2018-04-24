@@ -1,37 +1,37 @@
 ---
-title: "Definições de política de conformidade para dispositivos Windows"
-description: "Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos Windows."
-keywords: 
+title: Definições de política de conformidade para dispositivos Windows
+description: Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos Windows.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Definições de política de conformidade para dispositivos Windows no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As definições de política descritas neste tópico aplicam-se a dispositivos com o sistema operativo Windows. As secções seguintes descrevem as versões do Windows suportadas.
 
 Se estiver à procura de informações sobre outras plataformas, selecione uma das seguintes opções:
 > [!div class="op_single_selector"]
-- [Definições de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Definições de política de conformidade para dispositivos Windows Phone
 As definições apresentadas nesta secção são suportadas no Windows Phone 8.1 e posterior.
@@ -80,7 +80,7 @@ As definições apresentadas nesta secção são suportadas no Windows Phone 8.1
   > Os dispositivos Windows não suportam software **Antimalware de Arranque de Início Antecipado** (ELAM) de terceiros instalado como parte do atestado de estado de funcionamento do dispositivo.
 
   Para obter informações sobre como funciona o serviço HAS, veja [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Definições de propriedade do dispositivo
+  ###  <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme.
     É apresentada uma ligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo para, em seguida, poder aceder aos recursos da empresa.
 
@@ -153,4 +153,4 @@ Para localizar a versão de SO a utilizar nas definições **SO mínimo obrigat�
 - Os PCs Windows 8.1 devolvem a versão **6.3**. Se a regra de versão de SO estiver definida como Windows 8.1 para o Windows, o dispositivo é comunicado como não conforme, mesmo que tenha o sistema operativo Windows 8.1.
 
 - Nos PCs com o Windows 10, a versão deve ser definida como **10.0** mais o número de compilação do SO devolvido pelo comando **winver**. Por exemplo, pode ser semelhante a 10.0.10586.
-> ![Versão de compilação do SO realçada na caixa de diálogo "Acerca do Windows"](./media/ca_win10-os-version.png)
+  > ![Versão de compilação do SO realçada na caixa de diálogo "Acerca do Windows"](./media/ca_win10-os-version.png)

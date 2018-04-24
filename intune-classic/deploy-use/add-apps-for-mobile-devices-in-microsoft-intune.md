@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Adicionar aplicações a dispositivos inscritos ao Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Antes de poder implementar ou gerir uma aplicação, tem de adicioná-la ao Microsoft Intune. Este tópico mostra-lhe como adicionar aplicações a dispositivos inscritos.
 
@@ -34,32 +34,32 @@ Antes de poder implementar ou gerir uma aplicação, tem de adicioná-la ao Micr
 ## <a name="add-the-app"></a>Adicionar a aplicação
 O Intune Software Publisher é utilizado para configurar as propriedades da aplicação e, quando aplicável, carregá-la para o seu espaço de armazenamento na cloud. Utilize o seguinte procedimento:
 
-1.  Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Publicador de Software do Intune.
+1. Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Publicador de Software do Intune.
 
-    > [!TIP]
-    > Poderá ter de introduzir o seu nome de utilizador e palavra-passe do Intune para que o publicador seja iniciado.
+   > [!TIP]
+   > Poderá ter de introduzir o seu nome de utilizador e palavra-passe do Intune para que o publicador seja iniciado.
 
-2.  Na página **Configuração de software** do publicador, selecione uma das seguintes opções para **Selecionar como este software é disponibilizado nos dispositivos**:
-    - **Instalador de software**, para aplicações com a extensão **.msi**:
-        - **Selecionar o tipo de ficheiro de instalador de software**. Esta definição indica o tipo de software que pretende implementar. Por exemplo, se pretender instalar uma aplicação iOS, escolha **Pacote de Aplicação para iOS (ficheiro &#42;.ipa)**.
-        - **Especificar a localização dos ficheiros de configuração do software**. Introduza a localização dos ficheiros de instalação ou escolha **Procurar** para selecionar a localização numa lista.
-        - **Incluir ficheiros e subpastas adicionais da mesma pasta**. Esta opção é apenas para o tipo de ficheiro do **Windows Installer**.<br>Alguns softwares que utilizam o Windows Installer necessitam de ficheiros de suporte que, normalmente, se encontram na mesma pasta que os ficheiros de instalação. Selecione esta opção se pretender também implementar estes ficheiros.<br>Este tipo de instalação utiliza algum do seu espaço de armazenamento na cloud.
+2. Na página **Configuração de software** do publicador, selecione uma das seguintes opções para **Selecionar como este software é disponibilizado nos dispositivos**:
+   - **Instalador de software**, para aplicações com a extensão **.msi**:
+       - **Selecionar o tipo de ficheiro de instalador de software**. Esta definição indica o tipo de software que pretende implementar. Por exemplo, se pretender instalar uma aplicação iOS, escolha **Pacote de Aplicação para iOS (ficheiro &#42;.ipa)**.
+       - **Especificar a localização dos ficheiros de configuração do software**. Introduza a localização dos ficheiros de instalação ou escolha **Procurar** para selecionar a localização numa lista.
+       - **Incluir ficheiros e subpastas adicionais da mesma pasta**. Esta opção é apenas para o tipo de ficheiro do **Windows Installer**.<br>Alguns softwares que utilizam o Windows Installer necessitam de ficheiros de suporte que, normalmente, se encontram na mesma pasta que os ficheiros de instalação. Selecione esta opção se pretender também implementar estes ficheiros.<br>Este tipo de instalação utiliza algum do seu espaço de armazenamento na cloud.
 
-  -   **Ligação externa**, para as aplicações que pretende criar, especificando uma ligação para uma loja de aplicações:
+   -   **Ligação externa**, para as aplicações que pretende criar, especificando uma ligação para uma loja de aplicações:
 
-        - **Especifique o URL**. Especifique o URL de um dos seguintes:
-            - O URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Ambiente de Trabalho Remoto para Android da Microsoft, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar o URL da aplicação, utilize um motor de busca para procurar a página da loja que contém a aplicação. Por exemplo, para localizar a aplicação Ambiente de Trabalho Remoto, pode pesquisar por **Ambiente de Trabalho Remoto da Microsoft para Android**.
-            - Um site. O Intune irá implementar um ícone de atalho para o site no dispositivo (conhecido como clip da Web).
-            - Uma aplicação na Web. O Intune irá implementar um ícone de atalho para a aplicação no dispositivo.
-        - **Solicitar um browser gerido para abrir esta ligação (apenas no Android e no iOS)**. Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.<br>Para mais detalhes sobre o Managed Browser, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
+       - **Especifique o URL**. Especifique o URL de um dos seguintes:
+           - O URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Ambiente de Trabalho Remoto para Android da Microsoft, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para localizar o URL da aplicação, utilize um motor de busca para procurar a página da loja que contém a aplicação. Por exemplo, para localizar a aplicação Ambiente de Trabalho Remoto, pode pesquisar por **Ambiente de Trabalho Remoto da Microsoft para Android**.
+           - Um site. O Intune irá implementar um ícone de atalho para o site no dispositivo (conhecido como clip da Web).
+           - Uma aplicação na Web. O Intune irá implementar um ícone de atalho para a aplicação no dispositivo.
+       - **Solicitar um browser gerido para abrir esta ligação (apenas no Android e no iOS)**. Quando implementa uma ligação para um site ou uma aplicação Web nos utilizadores, estes só poderão abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.<br>Para mais detalhes sobre o Managed Browser, consulte [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
 
-  -   **Aplicação iOS gerida da loja de aplicações**, para aplicações gratuitas da iTunes Store que pretende gerir com políticas de gestão de aplicações móveis (MAM):
+   -   **Aplicação iOS gerida da loja de aplicações**, para aplicações gratuitas da iTunes Store que pretende gerir com políticas de gestão de aplicações móveis (MAM):
 
-        - **Especifique o URL**. Introduza o URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Work Folders da Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
+       - **Especifique o URL**. Introduza o URL da loja de aplicações da aplicação que pretende implementar. Por exemplo, se pretender implementar a aplicação Work Folders da Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Este tipo de instalação não utiliza o seu espaço de armazenamento na cloud.
 
-        Por exemplo, se pretender implementar a aplicação Microsoft Word a partir da iTunes Store em dispositivos, a página teria o seguinte aspeto:
+       Por exemplo, se pretender implementar a aplicação Microsoft Word a partir da iTunes Store em dispositivos, a página teria o seguinte aspeto:
 
-        ![Intune Software Publisher](./media/publisher-for-mobile.png)
+       ![Intune Software Publisher](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Quando adicionar e implementar uma aplicação a partir de uma loja, os utilizadores finais têm de ter uma conta nessa loja para conseguir instalar a aplicação.

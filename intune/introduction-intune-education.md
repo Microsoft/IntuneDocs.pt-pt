@@ -1,24 +1,24 @@
 ---
-title: "O que é o Intune for Education?"
-description: "Saiba como o Intune for Education difere da experiência de gestão completa do Intune."
-keywords: "o que é o Intune"
-author: barlanmsft
-ms.author: barlan
+title: O que é o Intune for Education?
+description: Saiba como o Intune for Education difere da experiência de gestão completa do Intune.
+keywords: o que é o Intune
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Qual é a diferença entre o Intune for Education e a experiência completa de gestão de dispositivos no Intune?
 
@@ -39,6 +39,6 @@ Com o Intune e o Intune for Education, pode:
 * Garantir que os dispositivos e as aplicações estão em conformidade com os requisitos de segurança.
 
 ### <a name="next-steps"></a>Próximos passos
-* Familiarizar-se com o produto [com uma avaliação gratuita do Intune de 90 dias](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Se já tiver acesso, aceda a (https://intuneeducation.portal.azure.com) para começar.
+* Familiarizar-se com o produto [com uma avaliação gratuita do Intune de 90 dias](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Se já tiver acesso, aceda a https://intuneeducation.portal.azure.com) para começar.
 * Saiba qual a forma mais rápida de [começar a utilizar o Intune for Education](/intune-education/what-is-express-configuration).
 * Aprofundar conhecimentos sobre os [requisitos técnicos e as capacidades](/intune/supported-devices-browsers) do Intune

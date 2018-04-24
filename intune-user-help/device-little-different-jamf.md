@@ -1,27 +1,27 @@
 ---
-title: "Erros que poderá ver se utilizar o Jamf Self Service | Microsoft Docs"
+title: Erros que poderá ver se utilizar o Jamf Self Service | Microsoft Docs
 description: Saiba mais sobre o seu dispositivo macOS ativado para o Intune gerido pelo Jamf.
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 56771f9f-0583-4df8-b3e9-3f0d8edee172
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c8aa6ec1ad0e9ee9889307c6224c01f8661048b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Realizar ações num dispositivo macOS gerido pelo Jamf
 

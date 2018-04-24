@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Criar e implementar políticas de proteção de aplicações com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico descreve o processo de criação de uma política de proteção de aplicações no **portal do Azure**. O portal do Azure é a nova consola de administração para criar políticas de proteção de aplicações e recomendamos que utilize este portal para esse mesmo fim. O portal do Azure suporta os seguintes cenários MAM:
 
@@ -31,23 +31,23 @@ Este tópico descreve o processo de criação de uma política de proteção de 
 - Dispositivos geridos por uma solução de MDM de terceiros.
 - Dispositivos que não são geridos por qualquer solução MDM (BYOD).
 
->[!IMPORTANT]
-Eis algumas considerações se estiver a utilizar a **consola de administração do Intune** para gerir os seus dispositivos:
-
+> [!IMPORTANT]
+> Eis algumas considerações se estiver a utilizar a **consola de administração do Intune** para gerir os seus dispositivos:
+> 
 > * Pode criar uma política de proteção de aplicações que suporte aplicações para dispositivos inscritos no Intune ao utilizar a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 > * As políticas de proteção de aplicações criadas na consola de administração do Intune não podem ser importadas para o portal do Azure.  Têm de ser recriadas no portal do Azure.
-
+> 
 > * Poderá não ver todas as definições de política de proteção de aplicações na consola de administração do Intune. O portal do Azure é a nova consola de administração para criar políticas de proteção de aplicações.
-
+> 
 > * Para implementar aplicações geridas, tem de criar uma política de proteção de aplicações na consola de administração do Intune. Neste caso, é aconselhável criar políticas de proteção de aplicações na consola de administração do Intune e no portal do Azure: na consola de administração do Intune para se certificar de que tem a capacidade de implementar aplicações geridas e no portal do Azure porque é a nova consola de administração que tem todas as definições de política de proteção de aplicações.
-
+> 
 > * Se criar políticas de proteção de aplicações na consola de administração do Intune e no portal do Azure, a política criada no portal do Azure é aplicada às aplicações.
 
 Para ver uma lista de definições de política suportadas para plataformas Android e iOS, selecione uma das seguintes opções:
 
 > [!div class="op_single_selector"]
-- [Políticas para iOS](ios-mam-policy-settings.md)
-- [Políticas para Android](android-mam-policy-settings.md)
+> - [Políticas para iOS](ios-mam-policy-settings.md)
+> - [Políticas para Android](android-mam-policy-settings.md)
 
 - Para obter uma descrição mais detalhada sobre como funcionam as políticas de proteção de aplicações e os cenários suportados pelas políticas de proteção de aplicações do Intune, veja [Proteger os dados da aplicação através de políticas de proteção de aplicações](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -129,13 +129,13 @@ A partir da versão 1703 do Intune, tem a opção de adicionar aplicações LOB 
 > [!IMPORTANT]
 > Tem de selecionar o Windows 10 na lista pendente de plataformas ao criar uma nova política de proteção de aplicações.
 
-1.  No painel Adicionar uma política, selecione **Aplicações permitidas** ou **Aplicações isentas** para abrir o painel Aplicações permitidas ou Excluir aplicações.
+1. No painel Adicionar uma política, selecione **Aplicações permitidas** ou **Aplicações isentas** para abrir o painel Aplicações permitidas ou Excluir aplicações.
 
-    > [!NOTE]
-    >
-    - **Aplicações permitidas**: estas são as aplicações que precisam de cumprir esta política.
-    - **Aplicações isentas**: estas aplicações estão isentas desta política e podem aceder a dados empresariais sem restrições.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Aplicações permitidas**: estas são as aplicações que precisam de cumprir esta política.
+   > - **Aplicações isentas**: estas aplicações estão isentas desta política e podem aceder a dados empresariais sem restrições.
+   > <br></br>
 2. No painel Aplicações permitidas ou Aplicações isentas, clique em **Adicionar aplicações**. Pode adicionar aplicações da Microsoft recomendadas, aplicações da loja ou aplicações do ambiente de trabalho.
 
     a.  **Aplicações recomendadas:** uma lista preenchida previamente de aplicações do Office (a maioria) que os administradores podem facilmente importar para a política.
@@ -210,8 +210,8 @@ Para ver o efeito das alterações imediatamente, o utilizador final terá de te
 Para ver uma lista completa das definições de política para iOS e Android, selecione uma das seguintes opções:
 
 > [!div class="op_single_selector"]
-- [Políticas para iOS](ios-mam-policy-settings.md)
-- [Políticas para Android](android-mam-policy-settings.md)
+> - [Políticas para iOS](ios-mam-policy-settings.md)
+> - [Políticas para Android](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Próximos passos
 [Monitorizar o estado do utilizador e de conformidade](monitor-mobile-app-management-policies-with-microsoft-intune.md)

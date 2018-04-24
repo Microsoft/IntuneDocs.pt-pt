@@ -1,42 +1,43 @@
 ---
 title: Sincronizar o seu dispositivo iOS manualmente | Documentos da Microsoft
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9c9144fbb20842a9ac8148827b85ac49d23a3d6d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sync-your-ios-device-manually"></a>Sincronizar o seu dispositivo iOS manualmente
 
-Por vezes, uma aplicação pode demorar demasiado tempo a ser transferida do Portal da Empresa. Se isto lhe acontecer, pode tentar sincronizar manualmente o seu dispositivo. Significa que está a comandar o seu dispositivo para tentar obter novamente as informações que este não consegue transferir.
+Por vezes, uma aplicação pode demorar demasiado tempo a ser transferida do Portal da Empresa. Quando isto ocorrer, tente sincronizar manualmente o seu dispositivo. Esta ação irá tentar obter as informações que o seu dispositivo não conseguiu transferir.
 
 1. Abra a aplicação Portal da Empresa.
 
-2. Na secção **Os Meus Dispositivos**, selecione o dispositivo que está a utilizar. Este é o mosaico de dispositivo mais à esquerda e inclui uma marca de verificação.
+2. Toque em **Dispositivos**. Se tiver múltiplos dispositivos, verá uma lista de dispositivos. Selecione o dispositivo que está a utilizar atualmente. Se só tiver um dispositivo, irá diretamente para o ecrã de detalhes do dispositivo.
 
-    ![Ecrã do dispositivo com a secção Os Meus Dispositivos](./media/ios-sync-1-comp-portal-apps.png)
+    ![Captura do ecrã Dispositivos, a mostrar dois dispositivos. O dispositivo superior tem o texto que indica "Este é o iPhone 6 Plus que está a utilizar atualmente".](/intune-user-help/media/ios_sync_1_CP_after_1804.png)
 
-3. Toque no botão **Sincronizar** no canto inferior direito do ecrã.
+3. Toque em **Verificar Definições** para sincronizar o seu dispositivo. Será apresentada uma barra de carregamento no ecrã até que a sincronização seja concluída.
 
-    ![Detalhes do dispositivo com o botão Sincronizar](./media/ios-sync-2-sync-button.png)
+    ![Captura de ecrã de Detalhes do dispositivo a mostrar a hora do último registo do dispositivo e a ligação Verificar Definições.](/intune-user-help/media/ios_sync_2_CP_after_1804.png)  
 
-Uma barra de carregamento será apresentada no ecrã e carregada até que a sincronização seja concluída.
+   ![Captura de ecrã de Detalhes do dispositivo a mostrar a barra de carregamento após o utilizador clicar em Verificar Definições.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+

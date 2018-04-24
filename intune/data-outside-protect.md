@@ -1,7 +1,7 @@
 ---
 title: Impedir o acesso não autorizado a dados da empresa
 titlesuffix: Microsoft Intune
-description: Impeça o acesso não autorizado aos dados da sua empresa quando partilhados fora da rede da empresa com o Microsoft Intune.
+description: Impeça o acesso não autorizado aos dados da sua empresa quando forem partilhados fora da rede da empresa com o Microsoft Intune.
 keywords: Os dados do Azure Information Protection do Office 365 protegem os dados de empresa de rede externa
 ms.author: dougeby
 author: dougeby
@@ -15,11 +15,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 1fa717147d8c5fcc33f350cc16bd4af53a31efc7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Impedir o acesso não autorizado a dados da empresa com o Microsoft Intune
 

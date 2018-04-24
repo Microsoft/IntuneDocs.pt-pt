@@ -1,29 +1,29 @@
 ---
-title: "Aplicações Android com políticas de proteção de aplicações"
+title: Aplicações Android com políticas de proteção de aplicações
 titlesuffix: Microsoft Intune
-description: "Saiba o que esperar de uma aplicação Android com políticas de proteção."
-keywords: 
+description: Saiba o que esperar de uma aplicação Android com políticas de proteção.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Saiba o que esperar de aplicações Android com políticas de proteção de aplicações. As políticas de proteção de aplicações só são aplicadas quando as aplicações são utilizadas no contexto de trabalho. Por exemplo, quando acede a uma aplicação com uma conta profissional ou quando acede a ficheiros armazenados na localização do OneDrive da sua empresa.
 ##  <a name="accessing-apps"></a>Aceder a aplicações
@@ -55,7 +55,7 @@ O Intune suporta a implementação de políticas de proteção de aplicações n
 
 Leia o seguinte cenário de exemplo para saber como o Intune lida com múltiplas contas de utilizador.
 
-O Utilizador A trabalha para duas empresas: a **Empresa X** e a **Empresa Y**. O Utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção de aplicações, mas a conta associada à Empresa Y não. Para que a conta de utilizador da Empresa Y seja gerida pelas políticas de proteção de aplicações, o Utilizador A tem de remover a conta de utilizador da Empresa X.
+O Utilizador A trabalha para duas empresas: a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção de aplicações, mas a conta associada à Empresa Y não. Para que a conta de utilizador da Empresa Y seja gerida pelas políticas de proteção de aplicações, o Utilizador A tem de remover a conta de utilizador da Empresa X.
 ### <a name="adding-a-second-account"></a>Adicionar uma segunda conta
 ####  <a name="android"></a>Android
 Poderá ser-lhe pedido que remova a conta existente e adicione uma nova.  Para remover a conta existente, aceda a **Definições &gt;Geral &gt;Gestor de Aplicações &gt;Portal da Empresa. Em seguida, selecione "Limpar Dados"**.
@@ -75,9 +75,11 @@ São suportados os seguintes tipos de ficheiro:
 * **:** PDF, PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|O formato Pfile é um formato de "wrapper" genérico para ficheiros protegidos. Reúne os conteúdos encriptados e as licenças do Azure Information Protection. Pode servir para proteger qualquer tipo de ficheiro.|Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| O formato Pfile é um formato de "wrapper" genérico para ficheiros protegidos. Reúne os conteúdos encriptados e as licenças do Azure Information Protection. Pode servir para proteger qualquer tipo de ficheiro. | Os ficheiros de texto, incluindo XML, CSV, etc. podem ser abertos para visualização na aplicação, mesmo que estejam protegidos. Tipos de ficheiro: txt, ptxt, csv, pcsv, log, plog, xml, pxml. |
+
 ---------------
 ## <a name="next-steps"></a>Passos seguintes
 [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-ios.md)

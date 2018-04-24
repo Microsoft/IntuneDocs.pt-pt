@@ -1,29 +1,29 @@
 ---
-title: "Pré-requisitos para a inscrição de dispositivos móveis"
-description: "Configurar os pré-requisitos da gestão de dispositivos móveis (MDM) e preparar-se para inscrever sistemas operativos diferentes."
-keywords: 
+title: Pré-requisitos para a inscrição de dispositivos móveis
+description: Configurar os pré-requisitos da gestão de dispositivos móveis (MDM) e preparar-se para inscrever sistemas operativos diferentes.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Pré-requisitos para a gestão de dispositivos móveis no Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Para permitir que os seus funcionários inscrevam os respetivos dispositivos móveis no Intune, é necessário aplicar os passos que se seguem. Estes passos também são necessários para gerir dispositivos pertencentes à empresa.
 
@@ -39,7 +39,7 @@ Para permitir que os seus funcionários inscrevam os respetivos dispositivos mó
 
 Está à procura do Intune com o Configuration Manager?
 > [!div class="button"]
-[Ver documentos do SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [Ver documentos do SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Passo 1: ativar as ligações
 
@@ -53,7 +53,7 @@ A autoridade de MDM define o serviço de gestão que tem permissão para gerir u
 >[!IMPORTANT]
 > No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, pode alterar a autoridade MDM sem ter de contactar o Suporte da Microsoft e sem ter de anular a inscrição e inscrever novamente os seus dispositivos geridos existentes. Para obter detalhes, veja [O que fazer se escolher a definição de autoridade MDM errada](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
-1.  Na [Consola do administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**.
+1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**.
 
 2.  Na lista **Tarefas**, clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
 
@@ -80,14 +80,15 @@ Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar 
 
 O nome da empresa é apresentado como o título do Portal da Empresa. Os detalhes e as informações de contacto são apresentados aos utilizadores no ecrã Contactar TI do Portal da Empresa. A declaração de privacidade é apresentada quando um utilizador clica na ligação de privacidade.
 
-|Nome do campo|Comprimento máximo|Mais informações|
-    |----------|------------------------|----------------|
-    |Nome da empresa|40|Este nome é apresentado como o título do Portal da Empresa. **Nota**: apenas carateres alfanuméricos. Este campo não suporta carateres especiais.|
-    |Nome do contacto do departamento de TI|40|Este nome é apresentado na página **Contactar TI**.|
-    |Número de telefone do departamento de TI|20|Este número de contacto é apresentado na página **Contactar TI**.|
-    |Endereço de e-mail do departamento de TI|40|Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato **alias@domainname.com**.|
-    |Informações adicionais|120|Estas informações são apresentadas na página **Contactar TI**.|
-    |URL da declaração de privacidade da empresa|79|Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato https://www.contoso.com.|
+
+|          Nome do campo           | Comprimento máximo |                                                                                       Mais informações                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Nome da empresa          |     40     |                Este nome é apresentado como o título do Portal da Empresa. <strong>Nota</strong>: apenas carateres alfanuméricos. Este campo não suporta carateres especiais.                |
+|  Nome do contacto do departamento de TI   |     40     |                                                                Este nome é apresentado na página <strong>Contactar TI</strong>.                                                                |
+|  Número de telefone do departamento de TI   |     20     |                                                           Este número de contacto é apresentado na página <strong>Contactar TI</strong>.                                                           |
+|  Endereço de e-mail do departamento de TI  |     40     |             Este endereço de contacto é apresentado na página <strong>Contactar TI</strong>. Tem de inserir um endereço de e-mail válido no formato <strong>alias@domainname.com</strong>.              |
+|    Informações adicionais     |    120     |                                                            Estas informações são apresentadas na página <strong>Contactar TI</strong>.                                                             |
+| URL da declaração de privacidade da empresa |     79     | Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contactos de suporte
 O site de suporte é apresentado para os utilizadores no Portal da Empresa para que possam aceder ao suporte online.
@@ -199,14 +200,14 @@ Remova a subscrição do Intune ao clicar com o botão direito do rato na subscr
 
 #### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Repor a autoridade MDM do Office 365 para o Configuration Manager
 
-1. Aceda a [https://protection.office.com](https://protection.office.com).
+1. Navegue para [https://protection.office.com](https://protection.office.com).
 2. Selecione o separador **Políticas de Segurança** e selecione **Gestão de Dispositivos**.
 3. Extinga todos os dispositivos ao selecionar **Eliminação Seletiva**. Não tente extinguir um dispositivo a partir do próprio dispositivo. Se a eliminação seletiva estiver desativada, não são necessárias mais ações.
 4. Selecione o separador **Políticas de Segurança** e selecione **Políticas de Segurança de Dispositivos**.
 5. Selecione **Eliminar** para todas as políticas existentes. Se as políticas estiverem com um estado pendente, não são necessárias mais ações.
 
 >[!NOTE]
->O certificado do APsN do iOS não pode ser eliminado e permanece associado à conta.
+>O certificado do APNs do iOS não pode ser eliminado e permanece associado à conta.
 
 #### <a name="next-steps-for-mdm-authority-resets"></a>Passos seguintes para as reposições da autoridade MDM
 

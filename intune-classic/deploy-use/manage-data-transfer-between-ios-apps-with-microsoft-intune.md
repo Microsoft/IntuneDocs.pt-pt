@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gerir a transferência de dados entre aplicações iOS com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>Gerir aplicações iOS
 A proteção dos dados da sua empresa inclui garantir que as transferências de ficheiros estão limitadas a aplicações que são geridas por si.  Pode gerir aplicações iOS das seguintes formas:
@@ -51,17 +51,17 @@ Para assegurar que as aplicações que implementa através da solução MDM de t
 A configuração da definição de UPN do utilizador é **obrigatória** para dispositivos que são geridos por uma solução de EMM de terceiros. O procedimento descrito abaixo é um fluxo geral sobre como configurar a definição de UPN e a experiência de utilizador final resultante:
 
 
-1.  No portal do Azure, [configure uma política de proteção de aplicações](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para a plataforma iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações que devem ter esta política.
+1. No portal do Azure, [configure uma política de proteção de aplicações](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para a plataforma iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações que devem ter esta política.
 
-2.  Implemente as aplicações e o perfil de e-mail que pretende que seja gerido **através da sua solução de MDM de terceiros** ao seguir os passos generalizados abaixo. Esta experiência também é abrangida pelo Exemplo 1.
+2. Implemente as aplicações e o perfil de e-mail que pretende que seja gerido **através da sua solução de MDM de terceiros** ao seguir os passos generalizados abaixo. Esta experiência também é abrangida pelo Exemplo 1.
 
-  1.  Implemente a aplicação com as seguintes definições de configuração de aplicações:
+   1. Implemente a aplicação com as seguintes definições de configuração de aplicações:
 
       **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Implemente a política de gestão Open In ao utilizar o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
+   2. Implemente a política de gestão Open In ao utilizar o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Exemplo 1: experiência de administrador na consola de MDM de terceiros
@@ -70,9 +70,9 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 2. Na secção Configuração da Aplicação, introduza a definição seguinte:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  A sintaxe exata do par chave/valor pode diferir com base no seu fornecedor de MDM de terceiros. A tabela abaixo mostra exemplos de fornecedores de MDM de terceiros e os valores exatos que deve introduzir para o par chave/valor.
+   A sintaxe exata do par chave/valor pode diferir com base no seu fornecedor de MDM de terceiros. A tabela abaixo mostra exemplos de fornecedores de MDM de terceiros e os valores exatos que deve introduzir para o par chave/valor.
 
 |Fornecedor de MDM de terceiros| Chave de Configuração | Tipo de Valor | Valor de Configuração|
 | ------- | ---- | ---- | ---- |

@@ -1,25 +1,25 @@
 ---
-title: "Monitorizar políticas de MAM com o Microsoft Intune"
-description: "Veja quantos utilizadores têm a política e consulte mais detalhes."
-keywords: 
+title: Monitorizar políticas de MAM com o Microsoft Intune
+description: Veja quantos utilizadores têm a política e consulte mais detalhes.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b25c2ebe6fa8edf7ce954f68c22d4086fcaf7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: de26b7614578b275802ca048ed17bfa5969f0387
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorizar políticas de proteção de aplicações com o Microsoft Intune
 Pode monitorizar o estado de conformidade das políticas de proteção de aplicações que aplicou aos utilizadores. Irá encontrar informações sobre os utilizadores afetados pelas políticas de proteção de aplicações, o estado de conformidade e quaisquer problemas que os utilizadores possam estar a ter.
@@ -131,7 +131,7 @@ Siga estes passos para gerar o Relatório de proteção de aplicações:
 
     ![Captura de ecrã 7](../media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 [Gerir a transferência de dados entre aplicações iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](/intune/end-user-mam-apps-android)

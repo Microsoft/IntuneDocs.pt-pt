@@ -1,28 +1,28 @@
 ---
 title: Acesso condicional com o Microsoft Intune
-titlesuffix: 
-description: "Saiba como o acesso condicional do Intune é geralmente utilizado para acesso condicional baseado no dispositivo e baseado na aplicação."
-keywords: 
+titlesuffix: ''
+description: Saiba como o acesso condicional do Intune é geralmente utilizado para acesso condicional baseado no dispositivo e baseado na aplicação.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Existem dois tipos de acesso condicional com o Intune: acesso condicional baseado no dispositivo e acesso condicional baseado na aplicação. Precisa de configurar as políticas de conformidade relacionadas para promover a conformidade de acesso condicional na sua organização. O acesso condicional é normalmente utilizado para fazer coisas como permitir ou bloquear o acesso ao Exchange no local, controlar o acesso à rede ou integrar com uma solução de Defesa Contra Ameaças para Dispositivos Móveis.
 

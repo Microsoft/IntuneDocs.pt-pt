@@ -1,27 +1,27 @@
 ---
 title: Corrigir problemas comuns no seu dispositivo iOS | Documentos da Microsoft
 description: Descubra como pode resolver problemas comuns no seu dispositivo iOS.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9ce6d87e-aa8d-4b22-99ba-866e57aeba91
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfaf35e516e77f60d0e7fc785cd835db939227d5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 38804de876a4856d4e4b6e39d16233608cf9857f
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Corrigir problemas comuns no seu dispositivo macOS
 

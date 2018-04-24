@@ -14,15 +14,15 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8858768586398d3dbb341c9963727df5faf9da15
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 14a295828a332b45e1cb0bc6d9b3b97bef5a3a59
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Inscrever-se ou iniciar sessão no Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Este tópico informa os administradores de sistema acerca da inscrição numa conta do Intune.
 
@@ -35,11 +35,11 @@ Se já tiver uma conta escolar ou profissional, **inicie sessão** com a mesma e
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Como se inscrever ou iniciar sessão no Intune
 
-1.  Visite a página [Inscrição no Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Visite a página [Inscrição no Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Captura de ecrã da página Web de inscrição numa conta de Avaliação do Microsoft Intune](./media/account-sign-up-site.png)
+   ![Captura de ecrã da página Web de inscrição numa conta de Avaliação do Microsoft Intune](./media/account-sign-up-site.png)
 
-2.  Na página Inscrição, inicie sessão ou inscreva-se para gerir uma nova subscrição do Intune.
+2. Na página Inscrição, inicie sessão ou inscreva-se para gerir uma nova subscrição do Intune.
 
 ## <a name="post-sign-up-considerations"></a>Considerações de pós-inscrição
 Depois de se inscrever numa nova subscrição, recebe uma mensagem de e-mail com as informações da sua conta para o endereço de e-mail que indicou durante o processo de inscrição. Este e-mail confirma que a sua subscrição está ativa.

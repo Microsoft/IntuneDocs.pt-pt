@@ -1,28 +1,28 @@
 ---
-title: "Bloqueio remoto e reposição do código de acesso"
-description: "O Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso."
-keywords: 
+title: Bloqueio remoto e reposição do código de acesso
+description: O Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso.
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb7014392655eef44f94cf095717616732ebfd0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fc1cad418904de335b434a3726e2772d0558b303
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ajudar a proteger os seus dispositivos através do bloqueio remoto e da reposição do código de acesso
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune fornece funcionalidades de bloqueio remoto e de reposição do código de acesso.
 
@@ -31,7 +31,7 @@ Se um utilizador perder um dispositivo, pode bloquear o mesmo remotamente. É ne
 
 A tabela seguinte indica como o bloqueio remoto funciona em diferentes plataformas móveis.
 
-|Plataforma|Bloqueio remoto|
+|Platform|Bloqueio remoto|
 |------------|---------------|
 |macOS|Não suportado|
 |iOS|Suportado|
@@ -59,7 +59,7 @@ O bloqueio remoto não é suportado para PCs Windows inscritos com o cliente de 
 ## <a name="reset-the-passcode-on-a-device"></a>Repor o código de acesso num dispositivo
 Se um utilizador se esquecer de um código de acesso, pode ajudá-lo ao remover o código de acesso de um dispositivo ou ao aplicar um novo código de acesso temporário num dispositivo. A seguinte tabela indica como a reposição de códigos de acesso funciona em diferentes plataformas móveis.
 
-|Plataforma|Repor código de acesso|
+|Platform|Repor código de acesso|
 |------------|------------------|
 |macOS|Não suportado|
 |iOS|Suportado para a eliminação do código de acesso de um dispositivo. Não cria um novo código de acesso temporário.|

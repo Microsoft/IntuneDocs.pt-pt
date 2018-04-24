@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfis de certificado do Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Após ter configurado a infraestrutura e os certificados, conforme descrito em [Configurar a infraestrutura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) ou em [Configurar a infraestrutura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md), pode criar perfis de certificados. Eis o processo:
 
@@ -92,39 +92,39 @@ Após criar um perfil de certificado da AC Fidedigna, crie perfis de certificado
 
 -  Windows Phone 8.1 e posterior
 
-2.  Adicionar uma política **Perfil de Certificado de SCEP**
+2. Adicionar uma política **Perfil de Certificado de SCEP**
 
-    Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Siga as instruções na página de configuração do perfil para configurar as definições do perfil de certificado de SCEP.
-    > [!NOTE]
-    >
-    > Em **Formato de nome do requerente**, selecione **Personalizado** para introduzir um formato de nome do requerente (apenas nos perfis iOS).
-    >
-    > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como o seguinte:
+3. Siga as instruções na página de configuração do perfil para configurar as definições do perfil de certificado de SCEP.
+   > [!NOTE]
+   > 
+   > Em **Formato de nome do requerente**, selecione **Personalizado** para introduzir um formato de nome do requerente (apenas nos perfis iOS).
+   > 
+   > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como o seguinte:
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > Neste exemplo, o administrador criou um formato de nome de requerente que, além das variáveis `CN` e `E`, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. A [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) lista as cadeias suportadas.
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > Neste exemplo, o administrador criou um formato de nome de requerente que, além das variáveis `CN` e `E`, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. A [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) lista as cadeias suportadas.
-
-4.  Escolha **Guardar Política**.
+4. Escolha **Guardar Política**.
 
 A nova política é mostrada na área de trabalho **Política**. Pode agora implementá-la.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>Para criar um perfil de certificado .PFX
 
-1.  Na [consola de administração do Intune](https://manage.microsoft.com), selecione **Política** &gt; **Adicionar Política** e selecione uma plataforma de dispositivo. Os certificados .PFX são suportados para:
-  - Android 4 e posterior
-  - Android for Work
-  - Windows 10 e posterior
-  - Windows Phone 10 e posterior
-  - iOS 8.0 e posterior)    
+1. Na [consola de administração do Intune](https://manage.microsoft.com), selecione **Política** &gt; **Adicionar Política** e selecione uma plataforma de dispositivo. Os certificados .PFX são suportados para:
+   - Android 4 e posterior
+   - Android for Work
+   - Windows 10 e posterior
+   - Windows Phone 10 e posterior
+   - iOS 8.0 e posterior)    
 
 
-2.  Adicione uma política **Perfil de Certificado .PFX**.
-      Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Introduza as informações pedidas no formulário da política.
-4.  Escolha **Guardar Política**.
+2. Adicione uma política **Perfil de Certificado .PFX**.
+     Saiba mais: [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Introduza as informações pedidas no formulário da política.
+4. Escolha **Guardar Política**.
 
 A nova política é mostrada na área de trabalho **Política**. Pode agora implementá-la.
 

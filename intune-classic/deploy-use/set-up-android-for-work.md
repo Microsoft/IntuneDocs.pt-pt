@@ -1,27 +1,27 @@
 ---
 title: Configurar o Android for Work
-description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Android for Work com o Microsoft Intune."
-keywords: 
+description: Ative a gestão de dispositivos móveis (MDM) para dispositivos Android for Work com o Microsoft Intune.
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b3a961bdf754100f1a48258290a635add8e03053
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 366e2b281c05e1233c61f7f35a50700677ad4b79
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Ativar a inscrição de dispositivos Android for Work
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Para ativar a gestão de dispositivos Android for Work, tem de adicionar um enlace do Android for Work para Intune. Para inscrever dispositivos que suportam o Android for Work mas que foram anteriormente inscritos como dispositivos Android normais, a inscrição dos dispositivos tem de ser anulada e, em seguida efetuada novamente.
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume a partir da consola do Intune. Por exemplo:
 * Pode sincronizar a lista de aplicações adquiridas na loja com o Intune.
@@ -57,8 +57,8 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Admin**.
 2. Na área de trabalho **Admin**, expanda **Mobile Device Management** > **Windows** e selecione **Store for Business**.
 3. Na página **Loja Microsoft para Empresas**, faça o seguinte:
- * Se ainda não o fez, clique na ligação para se inscrever na Loja Microsoft para Empresas.
- * Assim que concluir a inscrição, escolha em **Configurar Sincronização**.
+   * Se ainda não o fez, clique na ligação para se inscrever na Loja Microsoft para Empresas.
+   * Assim que concluir a inscrição, escolha em **Configurar Sincronização**.
 4. Na caixa de diálogo **Configurar sincronização de aplicações da Loja Microsoft para Empresas**, selecione **Ativar sincronização da Loja Microsoft para Empresas**.
 5. Na lista pendente **Idioma**, escolha o idioma em que as aplicações da Loja Microsoft para Empresas serão apresentadas na consola do Intune. Independentemente do idioma em que são apresentadas, serão instaladas no idioma do utilizador final, se estiver disponível.
 6. Clique em **OK**.

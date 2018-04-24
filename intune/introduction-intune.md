@@ -1,28 +1,28 @@
 ---
-title: "O que é o Microsoft Intune"
-description: "Saiba como o Intune é o componente de gestão de dispositivos móveis (MDM) e gestão de aplicações móveis (MAM) da solução Microsoft Enterprise Mobility + Security e como o ajuda a proteger dados empresariais."
-keywords: "o que é o Intune"
+title: O que é o Microsoft Intune
+description: Saiba como o Intune é o componente de gestão de dispositivos móveis (MDM) e gestão de aplicações móveis (MAM) da solução Microsoft Enterprise Mobility + Security e como o ajuda a proteger dados empresariais.
+keywords: o que é o Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 25bb5ec1610eb3d3cac02244a43ead6e63d441e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-intune"></a>O que é o Intune?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 O Intune é um serviço baseado na cloud no espaço de gestão de mobilidade enterprise (EMM) que ajuda a fomentar a produtividade da sua força de trabalho e a manter os seus dados empresariais protegidos ao mesmo tempo. Com o Intune, pode:
 * Gerir os dispositivos móveis que a sua força de trabalho utiliza para aceder aos dados da empresa.
@@ -111,7 +111,7 @@ Qualquer que seja a posição da sua organização relativamente às aplicaçõe
 
 
 
-### <a name="next-steps"></a>Passos seguintes
+### <a name="next-steps"></a>Próximos passos
 * Ler sobre algumas das [formas comuns de utilizar o Intune](common-scenarios.md).
 * Familiarizar-se com o produto [com uma avaliação de 30 dias do Intune](free-trial-sign-up.md).
 * Aprofundar conhecimentos sobre os [requisitos técnicos e as capacidades](supported-devices-browsers.md) do Intune

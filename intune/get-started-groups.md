@@ -1,25 +1,25 @@
 ---
 title: Criar um grupo no Microsoft Intune
-titleSuffix: 
-description: "Organize os utilizadores em grupos para ser mais fácil gerir as políticas e aplicações a que podem aceder."
-keywords: 
+titleSuffix: ''
+description: Organize os utilizadores em grupos para ser mais fácil gerir as políticas e aplicações a que podem aceder.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d039cfe5509990ff15fe8a1cb476ad44037d60df
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Criar um grupo para gerir o acesso aos seus utilizadores e dados
 

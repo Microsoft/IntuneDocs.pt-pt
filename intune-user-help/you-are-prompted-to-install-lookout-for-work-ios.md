@@ -1,45 +1,45 @@
 ---
 title: Tem de instalar o Lookout for Work no seu dispositivo iOS | Documentos da Microsoft
 description: Saiba como instalar o Lookout for Work para iOS.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae05df1478baa8b965cdcd11a47ffc0d694734ab
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Instalar o Lookout for Work no seu dispositivo iOS
 
 
-Antes de poder aceder ao seu trabalho, o suporte da sua empresa precisa que instale a aplicação Lookout for Work, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança. Poderá ver pedidos diferentes no seu dispositivo, consoante a forma como o administrador de TI configurar o Lookout for Work.
+Antes de poder aceder ao seu trabalho, o suporte da sua empresa precisa que instale a aplicação Lookout for Work, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança. Poderá ver pedidos diferentes no seu dispositivo, consoante a forma como o seu administrador de TI configurar o Lookout for Work.
 
 
 ## <a name="what-you-need-to-do"></a>O que tem de fazer
 
 1.  Se vir o seguinte pedido, toque em **Instalar** para permitir a instalação do Lookout for Work no seu dispositivo.
 
-  ![Toque em Instalar para instalar o Lookout for Work](./media/ios-mtd-install-app-request.png)
+      ![Captura de ecrã da opção Instalação de aplicações com os botões Cancelar e Instalar.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
 2. Quando vir a seguinte mensagem, toque em **Definições**, ative a opção **Serviços de Localização** e, em seguida, toque em **Continuar**.
 
-  ![Toque em Definições e, em seguida, em Serviços de Localização](./media/ios-lfw-allow-location-services.png)
+      ![Toque em Definições e, em seguida, em Serviços de Localização](./media/ios-lfw-allow-location-services.png)
 
 3. Reveja as permissões de que o Lookout for Work precisa e toque em **Continuar**.
 
-  ![está agora ligado ao Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+      ![está agora ligado ao Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Quando lhe for pedido para permitir que o Lookout for Work lhe envie notificações, toque em **Permitir**.
 

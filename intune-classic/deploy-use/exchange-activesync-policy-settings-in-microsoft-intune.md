@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Definições de política do Exchange ActiveSync no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configurar definições que controlam um leque de funcionalidades em dispositivos geridos pelo Exchange ActiveSync.
 
@@ -44,10 +44,11 @@ Utilize a política do **Exchange ActiveSync** do Microsoft Intune para configur
 
 ## <a name="encryption-settings"></a>Definições de encriptação
 
-|Nome da definição|Detalhes|
-|----------------|---|
-|**Encriptação obrigatória no dispositivo móvel**<sup>1</sup>|Requer que os dados num dispositivo sejam encriptados quando suportado.<br><br>Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.|
-|**Encriptação obrigatória nos cartões de armazenamento**|Requer que os dados que estejam num armazenamento externo, como um cartão SD, sejam encriptados (nos dispositivos suportados).
+|                           Nome da definição                           |                                                                                                                                    Detalhes                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Encriptação obrigatória no dispositivo móvel</strong><sup>1</sup> | Requer que os dados num dispositivo sejam encriptados quando suportado.<br><br>Para dispositivos Windows Phone 8, tem de definir esta opção como <strong>Sim</strong>.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição <strong>Palavra-passe obrigatória para desbloquear os dispositivos móveis</strong>. |
+|       <strong>Encriptação obrigatória nos cartões de armazenamento</strong>       |                                                                                  Requer que os dados que estejam num armazenamento externo, como um cartão SD, sejam encriptados (nos dispositivos suportados).                                                                                  |
+
 <sup>1</sup> Informações adicionais para dispositivos com o Windows 8.1
 
 -   Se quiser impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](https://support.microsoft.com/kb/3013816) em cada dispositivo.
