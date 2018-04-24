@@ -1,4 +1,4 @@
----
+﻿---
 title: Ativar o acesso aos recursos da empresa
 description: Os perfis de e-mail, de VPN e de Wi-FI funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam.
 keywords: ''

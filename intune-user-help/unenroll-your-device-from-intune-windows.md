@@ -1,4 +1,4 @@
----
+﻿---
 title: Remover o seu dispositivo Windows do Intune | Microsoft Docs
 description: Descreve como remover um dispositivo Windows do Intune
 keywords: ''

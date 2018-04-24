@@ -1,4 +1,4 @@
----
+﻿---
 title: Definições de política de conformidade para dispositivos Windows
 description: Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos Windows.
 keywords: ''

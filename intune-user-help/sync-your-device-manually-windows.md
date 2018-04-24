@@ -1,4 +1,4 @@
----
+﻿---
 title: Sincronizar o seu dispositivo Windows manualmente | Documentos da Microsoft
 description: ''
 keywords: ''

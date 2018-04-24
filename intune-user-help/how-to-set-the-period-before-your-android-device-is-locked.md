@@ -1,4 +1,4 @@
----
+﻿---
 title: Definir o tempo antes de o ecrã bloquear | Documentos da Microsoft
 description: ''
 keywords: ''

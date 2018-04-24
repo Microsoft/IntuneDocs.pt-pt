@@ -1,4 +1,4 @@
----
+﻿---
 title: O que acontece se anular a inscrição do seu dispositivo iOS ou macOS? | Documentos da Microsoft
 description: ''
 keywords: ''

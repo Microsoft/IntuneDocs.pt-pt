@@ -1,4 +1,4 @@
----
+﻿---
 title: Definir o PIN ou palavra-passe | Documentos da Microsoft
 description: ''
 keywords: ''

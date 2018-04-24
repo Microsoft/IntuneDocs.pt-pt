@@ -1,4 +1,4 @@
----
+﻿---
 title: Instalar a aplicação Portal da Empresa para Android
 description: ''
 keywords: ''

@@ -1,1 +1,1 @@
-Documentação em Formatos Alternativos
+﻿Documentação em Formatos Alternativos

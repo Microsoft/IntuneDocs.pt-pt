@@ -1,4 +1,4 @@
----
+﻿---
 title: Definições de política de configuração do Windows Team
 description: Utilize a **Política de configuração geral do Windows 10 Team** do Microsoft Intune para configurar definições para dispositivos Windows 10 Team inscritos, como o Microsoft Surface Hub.
 keywords: ''

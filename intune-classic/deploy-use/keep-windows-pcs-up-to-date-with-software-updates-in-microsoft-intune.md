@@ -1,4 +1,4 @@
----
+﻿---
 title: Atualizações de software para PCs Windows
 description: O Intune ajuda-o a manter os seus computadores atualizados ao garantir que as correções de erros e atualizações de software mais recentes são rapidamente instaladas.
 keywords: ''

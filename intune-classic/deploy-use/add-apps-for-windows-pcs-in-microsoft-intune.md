@@ -1,4 +1,4 @@
----
+﻿---
 title: Adicionar aplicações para PCs Windows que executam o cliente de software do Intune
 description: Utilize as informações deste tópico para saber como adicionar aplicações para PCs Windows ao Intune antes de implementá-las.
 keywords: ''

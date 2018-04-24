@@ -1,4 +1,4 @@
----
+﻿---
 title: Definições de políticas dos termos e condições
 description: Pode implementar termos e condições do Intune para grupos de utilizadores para explicar como a inscrição, o acesso a recursos de trabalho e a utilização da aplicação Portal da Empresa afetam os dispositivos e os utilizadores.
 keywords: ''

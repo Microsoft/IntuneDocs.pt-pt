@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurar a infraestrutura de certificados para PFX
 description: Criar e implementar perfis de certificado .PFX.
 keywords: ''

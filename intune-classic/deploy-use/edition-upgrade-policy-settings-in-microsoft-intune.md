@@ -1,4 +1,4 @@
----
+﻿---
 title: Definições da política de atualização de edição do Windows
 description: Saiba como atualizar automaticamente os dispositivos Windows 10 para uma versão diferente com o Intune.
 keywords: ''

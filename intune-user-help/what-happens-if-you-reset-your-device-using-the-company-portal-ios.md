@@ -1,4 +1,4 @@
----
+﻿---
 title: O que acontece se repuser o seu dispositivo iOS? | Documentos da Microsoft
 description: ''
 keywords: ''

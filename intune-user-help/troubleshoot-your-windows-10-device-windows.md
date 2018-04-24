@@ -1,4 +1,4 @@
----
+﻿---
 title: Resolver problemas de inscrição no dispositivo Windows 10 | Documentos da Microsoft
 description: ''
 keywords: ''

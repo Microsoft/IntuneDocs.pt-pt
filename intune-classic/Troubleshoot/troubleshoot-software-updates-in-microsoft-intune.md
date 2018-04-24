@@ -1,4 +1,4 @@
----
+﻿---
 title: Resolver problemas de atualizações de software
 description: Resolva problemas de atualizações de software no Microsoft Intune.
 keywords: ''

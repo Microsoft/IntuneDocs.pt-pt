@@ -1,1 +1,1 @@
-Funções de Acessibilidade do Windows
+﻿Funções de Acessibilidade do Windows

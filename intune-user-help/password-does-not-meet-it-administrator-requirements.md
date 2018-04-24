@@ -1,4 +1,4 @@
----
+﻿---
 title: A sua palavra-passe não cumpre os requisitos do suporte da empresa | Documentos da Microsoft
 description: ''
 keywords: ''

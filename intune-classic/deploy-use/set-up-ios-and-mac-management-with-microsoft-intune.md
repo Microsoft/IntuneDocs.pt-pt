@@ -1,4 +1,4 @@
----
+﻿---
 title: Set up iOS and Mac management
 description: Ative a gestão de dispositivos móveis (MDM) para dispositivos iOS, incluindo iPads e iPhones, bem como dispositivos Mac OS X com o Microsoft Intune.
 keywords: ''

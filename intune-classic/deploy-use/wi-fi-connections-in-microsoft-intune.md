@@ -1,4 +1,4 @@
----
+﻿---
 title: Ligações Wi-Fi
 description: Utilize perfis Wi-Fi para ajudar os utilizadores a ligar às suas redes Wi-Fi.
 keywords: ''
