@@ -1,29 +1,29 @@
 ---
-title: "Como adicionar aplicações da loja Windows Phone 8.1 ao Microsoft Intune"
-titleSuffix: 
-description: "Saiba como adicionar aplicações da loja Windows Phone 8.1 ao Microsoft Intune."
-keywords: 
+title: Como adicionar aplicações da loja Windows Phone 8.1 ao Microsoft Intune
+titleSuffix: ''
+description: Saiba como adicionar aplicações da loja Windows Phone 8.1 ao Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4c3935c8dc263ceef9981a9fc9c47ace6f77d86
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 772257369368783a02a826cddc323960fea436b9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Como adicionar aplicações da loja Windows Phone 8.1 ao Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem de primeiro adicionar a aplicação ao Microsoft Intune. Os seguintes passos permitem-lhe adicionar uma aplicação da loja Windows Phone 8.1 ao Intune a partir do portal do Azure.
 
@@ -33,7 +33,7 @@ Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem
 4. Na carga de trabalho **Aplicações móveis**, escolha **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, escolha **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione um **Tipo de aplicação** do **Windows Phone 8.1** e selecione **Informações da aplicação**.
-7. No painel **Informações da aplicação**, configure as seguintes informações. Quando tiver terminado, clique em **OK**. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
+7. No painel **Informações da aplicação**, configure as seguintes informações. Quando tiver terminado, clique em **OK**. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome** - Introduza o nome da aplicação tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição** - Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
     - **Publicador** – Introduza o nome do publicador da aplicação.

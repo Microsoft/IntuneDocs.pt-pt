@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6f49bf8ef934dc4b697e5d4392bde44aeb8baee
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 48b9650a8f0d6a79b3abab542148acf0a57c0e41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funcionalidades de gestão de dispositivos inscritos do Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune permite gerir uma vasta gama de dispositivos ao *inscrevê-los* no serviço. Pode inscrever você mesmo alguns tipos de dispositivo ou podem fazê-lo os utilizadores através da aplicação *portal da empresa*. Isto também permite efetuar operações como procurar e instalar aplicações, garantindo que os dispositivos estão em conformidade com as políticas da empresa, bem como contactar o suporte de TI.
 
@@ -66,6 +66,7 @@ A gestão, o inventário, a implementação de aplicações, o aprovisionamento 
 
 ## <a name="inventory-and-reporting"></a>Inventário e criar relatórios
 
-|Funcionalidade|Detalhes|Mais informações|
-|--------------|-----------|--------------------|
-|Inventário e criar relatórios|Encontra informações sobre os dispositivos que gere e o software que os dispositivos estão a utilizar.|[Compreender os seus dispositivos com o inventário no Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       Funcionalidade        |                                             Detalhes                                              |                                                                  Mais informações                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Inventário e criar relatórios | Encontra informações sobre os dispositivos que gere e o software que os dispositivos estão a utilizar. | [Compreender os seus dispositivos com o inventário no Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

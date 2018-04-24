@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 21ff7b173bb466ee25dd82c82d3668de110b823d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos Windows no Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos do Intune para Windows especifica as regras e definições que os dispositivos Windows têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, tal como pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre políticas de conformidade e os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -29,7 +29,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 ---------------------------
 
-| **Definição de política** | **Windows 8.1 e posterior** | **Windows Phone 8.1 e posterior** |
+| **Definição de política** | **Windows 8.1 e posterior** | **Windows Phone 8.1 e posterior** |
 |----| ----| --- |
 | **Configuração do PIN ou da palavra-passe** | Corrigido | Corrigido |   
 | **Encriptação do dispositivo** | Não aplicável | Corrigido |   
@@ -74,24 +74,27 @@ Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizado
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Definições de segurança do sistema
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Definições de política de conformidade para dispositivos Windows Phone
 
-### <a name="password"></a>Palavra-passe
+As definições apresentadas nesta secção são suportadas no Windows Phone 8.1 e posterior.
+### <a name="system-security-settings"></a>Definições de segurança do sistema
+
+#### <a name="password"></a>Palavra-passe
 
 - **Palavra-passe obrigatória para desbloquear dispositivos móveis:** defina esta opção como **Sim** para exigir que os utilizadores introduzam uma palavra-passe para que possam aceder ao respetivo dispositivo.
 - **Permitir palavras-passe simples:** defina esta opção como **Sim** para permitir que os utilizadores criem palavras-passe simples, tais como "**1234**" ou "**1111**".
 - **Comprimento mínimo da palavra-passe:** especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
+
+  Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não avalia corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é superior a dois.
 - **Solicitar tipo de palavra-passe:** especifique se os utilizadores têm de criar uma palavra-passe **Alfanumérica**, ou **Numérica**.
-
-Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não avalia corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é superior a dois.
-
+  
 - **Número mínimo de conjuntos de carateres:** se o **Tipo obrigatório de palavra-passe** estiver definido como **Alfanumérico**, esta definição especificará o número mínimo de conjuntos de carateres que a palavra-passe tem de conter. Os quatro conjuntos de carateres são:
   - Letras minúsculas
   - Letras maiúsculas
   - Símbolos
   - Números
 
-A definição de um número mais alto nesta definição obrigará os utilizadores a criarem palavras-passe mais complexas. Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não avalia corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é superior a dois.
+  A definição de um número mais alto nesta definição obrigará os utilizadores a criarem palavras-passe mais complexas. Nos dispositivos com o Windows e cujo acesso é feito com uma conta Microsoft, a política de conformidade não avalia corretamente se o comprimento mínimo da palavra-passe é superior a oito carateres ou se o número mínimo de conjuntos de carateres é superior a dois.
 
 - **Minutos de inatividade antes de a palavra-passe ser exigida:** especifica o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
 - **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe do utilizador expirar e ser necessário criar uma nova.
@@ -99,15 +102,16 @@ A definição de um número mais alto nesta definição obrigará os utilizadore
 - **Impedir a reutilização de palavras-passe anteriores:** se a opção **Memorizar histórico de palavras-passe** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
 - **Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo:** esta definição deve ser utilizada em conjunto com a definição **Minutos de inatividade antes de a palavra-passe ser exigida**. Será pedido aos utilizadores finais que introduzam uma palavra-passe para aceder a dispositivos que tenham estado inativos durante o período de tempo especificado na definição **Minutos de inatividade antes de a palavra-passe ser exigida**.
 
-**Esta definição só se aplica a dispositivos Windows 10 Mobile.**
+> [!NOTE]
+> Esta definição só se aplica a dispositivos Windows 10 Mobile.
 
-### <a name="encryption"></a>Encriptação
+#### <a name="encryption"></a>Encriptação
 
 - **Exigir encriptação no dispositivo móvel:** defina esta opção como **Sim** para exigir que os dispositivos sejam encriptados para ligar aos recursos.
 
 
 
-## <a name="device-health-settings"></a>Definições de estado de funcionamento do dispositivo
+### <a name="device-health-settings"></a>Definições de estado de funcionamento do dispositivo
 
 - **Exigir que os dispositivos sejam comunicados como estando em bom estado de funcionamento:** pode definir uma regra para exigir que os dispositivos **Windows 10 Mobile** sejam comunicados como estando em bom estado de funcionamento nas Políticas de Conformidade novas ou existentes. Se esta definição estiver ativada, os dispositivos com o Windows 10 serão avaliados através do Serviço de Atestado de Estado de Funcionamento (HAS) quanto aos seguintes pontos de dados:
   - **BitLocker está ativado:** se o BitLocker estiver ativado, o dispositivo é capaz de proteger os dados que são armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra em hibernação. A Encriptação de Unidade BitLocker do Windows encripta todos os dados armazenados no volume do sistema operativo Windows. O BitLocker utiliza o TPM para ajudar a proteger o sistema operativo Windows e os dados de utilizador e ajuda a garantir que os computadores não são adulterados, mesmo que não estejam a ser vigiados, sejam roubados ou se percam. Se os computadores estiverem equipados com um TPM compatível, o BitLocker utiliza o TPM para bloquear as chaves de encriptação que protegem os dados. Como resultado, as chaves não podem ser acedidas até o TPM ter verificado o estado do computador
@@ -116,53 +120,56 @@ A definição de um número mais alto nesta definição obrigará os utilizadore
 
 Para obter informações sobre como funciona o serviço HAS, veja [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
+### <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 - **Versão do SO máxima permitida:** quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
 <!---## Compliance policy settings for Windows PCs--->
 
-## <a name="system-security-settings"></a>Definições de segurança do sistema
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Definições de política de conformidade para dispositivos PCs Windows
 
-### <a name="password"></a>Palavra-passe
+As definições apresentadas nesta secção são suportadas em PCs Windows.
+### <a name="system-security-settings"></a>Definições de segurança do sistema
+
+#### <a name="password"></a>Palavra-passe
 
 - **Comprimento mínimo da palavra-passe:** - suportada no Windows 8.1.
 
-Especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
+  Especifique o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 
-Nos dispositivos acedidos com uma Conta Microsoft, a política de conformidade não avalia corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** é superior a dois carateres.
+  Nos dispositivos acedidos com uma Conta Microsoft, a política de conformidade não avalia corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** é superior a dois carateres.
 
 - **Tipo obrigatório de palavra-passe:** suportado no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Especifique se os utilizadores têm de criar uma palavra-passe **Alfanumérica** ou **Numérica**.
+  Especifique se os utilizadores têm de criar uma palavra-passe **Alfanumérica** ou **Numérica**.
 
 - **Número mínimo de conjuntos de carateres:** suportado no Windows RT, Windows RT 8.1 e Windows 8.1. Se **Tipo obrigatório de palavra-passe** estiver definido como **Alfanumérico**, esta definição especifica o número mínimo de conjuntos de carateres que a palavra-passe tem de ter. Os quatro conjuntos de carateres são:
   - Letras minúsculas
   - Letras maiúsculas
   - Símbolos
-  - Números: definir um número maior nesta definição obriga os utilizadores a criarem palavras-passe mais complexas.
+  - Números 
 
-Nos dispositivos acedidos com uma Conta Microsoft, a política de conformidade não avalia corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** é superior a dois carateres.
+    Configurar um número maior nesta definição requer que os utilizadores criem palavras-passe mais complexas. Nos dispositivos acedidos com uma Conta Microsoft, a política de conformidade não avalia corretamente se o **Comprimento mínimo da palavra-passe** é superior a oito carateres ou se o **Número mínimo de conjuntos de carateres** é superior a dois carateres.
 
 - **Minutos de inatividade antes de a palavra-passe ser exigida:** - suportada no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Especifique o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
+  Especifique o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
 
 - **Expiração da palavra-passe (dias):** suportado no Windows RT, Windows RT 8.1 e Windows 8.1.
 
-Selecione o número de dias antes de a palavra-passe do utilizador expirar e ser necessário criar uma nova.
+  Selecione o número de dias antes de a palavra-passe do utilizador expirar e ser necessário criar uma nova.
 
 - **Memorizar histórico de palavras-passe:** - suportada no Windows RT, Windows RT e Windows 8.1.
 
-Utilize esta definição juntamente com **Impedir a reutilização de palavras-passe anteriores** para impedir o utilizador de criar palavras-passe utilizadas anteriormente.
+  Utilize esta definição juntamente com **Impedir a reutilização de palavras-passe anteriores** para impedir o utilizador de criar palavras-passe utilizadas anteriormente.
 
 - **Impedir a reutilização de palavras-passe anteriores:** - suportada no Windows RT, Windows RT 8.1 e Windows 8.1
 
-Se a opção **Memorizar histórico de palavras-passe:** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
+  Se a opção **Memorizar histórico de palavras-passe:** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
 
 
-## <a name="device-health-settings"></a>Definições de estado de funcionamento do dispositivo
+### <a name="device-health-settings"></a>Definições de estado de funcionamento do dispositivo
 
 - **Exigir que os dispositivos sejam comunicados como estando em bom estado de funcionamento:** - suportada nos dispositivos com o Windows 10. Pode definir uma regra para exigir que os dispositivos com o Windows 10 sejam comunicados como estando em bom estado de funcionamento nas Políticas de Conformidade novas ou existentes. Se esta definição estiver ativada, os dispositivos com o Windows 10 serão avaliados através do Serviço de Atestado de Estado de Funcionamento (HAS) quanto aos seguintes pontos de dados:
   - **BitLocker está ativado:** se o BitLocker estiver ativado, o dispositivo é capaz de proteger os dados que são armazenados na unidade contra acesso não autorizado, quando o sistema é desligado ou entra em hibernação. A Encriptação de Unidade BitLocker do Windows encripta todos os dados armazenados no volume do sistema operativo Windows. O BitLocker utiliza o TPM para ajudar a proteger o sistema operativo Windows e os dados de utilizador e ajuda a garantir que os computadores não são adulterados, mesmo que não estejam a ser vigiados, sejam roubados ou se percam. Se os computadores estiverem equipados com um TPM compatível, o BitLocker utiliza o TPM para bloquear as chaves de encriptação que protegem os dados. Como resultado, as chaves não podem ser acedidas até o TPM ter verificado o estado do computador
@@ -172,17 +179,17 @@ Se a opção **Memorizar histórico de palavras-passe:** estiver selecionada, es
 
 Para obter informações sobre como funciona o serviço HAS, veja [Health Attestation CSP (CSP de Atestado de Estado de Funcionamento)](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
+### <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
 - **SO mínimo obrigatório:** - suportada no Windows 8.1 e Windows 10.
 
-Especifique o número major.minor.build.CU aqui. O número de versão tem de corresponder à versão devolvida pelo comando ```winver```.
+  Especifique o número major.minor.build.CU aqui. O número build.CU tem de corresponder à versão devolvida pelo comando ```winver```.
 
-Quando um dispositivo tem uma versão anterior à versão de SO especificada, é comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
+  Quando um dispositivo tem uma versão anterior à versão de SO especificada, é comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
 - **Versão máxima de SO permitida:** - suportada no Windows 8.1 e Windows 10.
 
-Quando um dispositivo está a utilizar uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
+  Quando um dispositivo está a utilizar uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
 Para localizar a versão de SO a utilizar para as definições **SO mínimo obrigatório** e **Versão máxima de SO permitida**, execute o comando **winver** a partir da linha de comandos. O comando winver devolve a versão comunicada do sistema operativo.
 

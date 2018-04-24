@@ -1,28 +1,28 @@
 ---
-title: "Novidades no arquivo do portal clássico do Microsoft Intune"
-description: "Anúncios de Novidades do Microsoft Intune arquivados"
-keywords: 
+title: Novidades no arquivo do portal clássico do Microsoft Intune
+description: Anúncios de Novidades do Microsoft Intune arquivados
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Esta página apresenta as novas funcionalidades e avisos anunciados anteriormente na [página Novidades](whats-new.md) do portal clássico do Intune.
 
@@ -281,7 +281,7 @@ Foram atualizados os seguintes artigos:
 
 * [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)
 * [Preparar as aplicações iOS para gestão de aplicações móveis com a Ferramenta de Encapsulamento de Aplicações do Intune](app-wrapper-prepare-ios.md)
-* [Introdução ao SDK da Aplicação Microsoft Intune](/app-sdk-get-started.md)
+* [Introdução ao SDK da Aplicação Microsoft Intune](app-sdk-get-started.md)
 * [Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md)
 
 Os seguintes artigos são novas adições à biblioteca de documentos:
@@ -359,7 +359,7 @@ __O componente Xamarin para o SDK da Aplicação Intune agora suporta MAM sem in
 
 __O certificado de assinatura Symantec já não precisa do Portal da Empresa do Windows Phone 8 assinado para carregamento__ O carregamento do certificado de assinatura Symantec já não precisa de uma aplicação do Portal da Empresa do Windows Phone 8 assinado. O certificado pode ser carregado de forma independente.
 
-###<a name="deprecations"></a>Depreciação
+### <a name="deprecations"></a>Depreciação
 
 __Suporte para o Portal da Empresa do Windows Phone 8__ O suporte para o Portal da Empresa do Windows Phone 8 será preterido. O suporte para as plataformas do Windows Phone 8 e do WinRT foi preterido em outubro de 2016. O suporte para o Portal da Empresa do Windows 8 também foi preterido em outubro de 2016.
 

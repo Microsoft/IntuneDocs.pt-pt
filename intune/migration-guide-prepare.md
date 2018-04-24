@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: preparar o Microsoft Intune para a gestão de dispositivos móveis (MDM)
 
@@ -55,23 +55,23 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
 
 ### <a name="what-is-your-device-security-policy"></a>Qual é a sua política de segurança de dispositivos?
 
--   Precisa de encriptação ao nível do dispositivo?
+- Precisa de encriptação ao nível do dispositivo?
 
--   Quais são os comprimentos do código de acesso/PIN do seu dispositivo atual?
+- Quais são os comprimentos do código de acesso/PIN do seu dispositivo atual?
 
--   Precisa de desativar funcionalidades do dispositivo ou restringir determinados comportamentos do dispositivo? Pode controlar várias definições específicas da plataforma com perfis de configuração de dispositivos, por exemplo:
-      - Desativar a câmara
-      - Bloquear no modo de aplicação única<br/>
+- Precisa de desativar funcionalidades do dispositivo ou restringir determinados comportamentos do dispositivo? Pode controlar várias definições específicas da plataforma com perfis de configuração de dispositivos, por exemplo:
+    - Desativar a câmara
+    - Bloquear no modo de aplicação única<br/>
 
--   Que tipos de autenticação tem de suportar? Se precisar de uma autenticação baseada em certificados, que tipos de certificados têm de ser aprovisionados?
+- Que tipos de autenticação tem de suportar? Se precisar de uma autenticação baseada em certificados, que tipos de certificados têm de ser aprovisionados?
   - O Intune pode aprovisionar certificados com perfis de acesso a recursos para os dispositivos inscritos.
-    -   Que tipo de Infraestrutura de Chaves Públicas (PKI) precisa de suportar?
-<br></br>
--   Precisa de suportar a Rede Privada Virtual (VPN) ao nível do dispositivo ou da aplicação?
+  -   Que tipo de Infraestrutura de Chaves Públicas (PKI) precisa de suportar?
+  <br></br>
+- Precisa de suportar a Rede Privada Virtual (VPN) ao nível do dispositivo ou da aplicação?
 
-    -   O Intune pode aprovisionar configurações de VPN para fornecedores de VPN de terceiros.
-<br/><br/>
--   Podem ser feitas exceções temporárias para determinados requisitos de forma a evitar períodos de inatividade? Ou os dispositivos com acesso cumprem sempre todos os requisitos de segurança?
+  -   O Intune pode aprovisionar configurações de VPN para fornecedores de VPN de terceiros.
+  <br/><br/>
+- Podem ser feitas exceções temporárias para determinados requisitos de forma a evitar períodos de inatividade? Ou os dispositivos com acesso cumprem sempre todos os requisitos de segurança?
 
 ## <a name="next-steps"></a>Próximos passos
 Leia estes [casos práticos](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores da indústria diferentes para ver como as organizações avaliaram os respetivos requisitos para a gestão de dispositivos móveis.

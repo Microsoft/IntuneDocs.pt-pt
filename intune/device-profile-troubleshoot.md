@@ -1,28 +1,28 @@
 ---
-title: "Resolução de problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs"
-description: "Problemas comuns com perfis de dispositivos, incluindo alterações de perfis que não foram aplicadas a alguns utilizadores ou dispositivos, o tempo que uma política demora a ser imposta aos dispositivos, as definições que são aplicadas quando existem múltiplas políticas, o que acontece quando um perfil é eliminado ou removido e mais no Microsoft Intune no portal do Azure"
-keywords: 
+title: Resolução de problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
+description: Problemas comuns com perfis de dispositivos, incluindo alterações de perfis que não foram aplicadas a alguns utilizadores ou dispositivos, o tempo que uma política demora a ser imposta aos dispositivos, as definições que são aplicadas quando existem múltiplas políticas, o que acontece quando um perfil é eliminado ou removido e mais no Microsoft Intune no portal do Azure
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comuns com perfis de dispositivos e respetivas soluções no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Resolva problemas comuns ao utilizar perfis de dispositivos do Intune.
 
@@ -129,9 +129,9 @@ Quando elimina um perfil ou remove um dispositivo de um grupo que contém o perf
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivos, mas as alterações ainda não foram aplicadas
 Os dispositivos Windows Phone não permitem que as políticas de segurança definidas através de MDM ou EAS sejam reduzidas em termos de segurança depois de serem configuradas. Por exemplo, defina um **Número mínimo de carateres de palavra-passe** para 8 e, em seguida, tente reduzir para 4. O perfil mais restritivo já foi aplicado ao dispositivo.
 
-Consoante a plataforma de dispositivo, se quiser alterar o perfil para um valor menos seguro, reponha as políticas de segurança. Por exemplo, no ambiente de trabalho do Windows, percorra a partir da direita e selecione **Definições** > **Painel de Controlo**. Selecione a miniaplicação **Contas de Utilizador**.
+Consoante a plataforma de dispositivo, se quiser alterar o perfil para um valor menos seguro, reponha as políticas de segurança. Por exemplo, no ambiente de trabalho do Windows, percorra a partir da direita e selecione **Definições** > **Painel de Controlo**. Selecione a miniaplicação **Contas de Utilizador** .
 
 No menu de navegação esquerdo, existe uma ligação denominada **Repor Políticas de Segurança** (na parte inferior). Selecione-a e, em seguida, selecione **Repor Políticas**. Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior, e iOS, poderão ter de ser extintos e reinscritos no serviço para aplicar um perfil menos restritivo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](get-support.md).

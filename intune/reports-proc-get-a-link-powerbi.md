@@ -1,29 +1,29 @@
 ---
-title: "Estabelecer uma ligação ao Armazém de Dados com o Power BI"
+title: Estabelecer uma ligação ao Armazém de Dados com o Power BI
 titlesuffix: Microsoft Intune
-description: "Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Microsoft Intune."
-keywords: "Armazém de Dados do Intune"
+description: Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Microsoft Intune.
+keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1266fa4cc5ef958e369e58b0a6619e2bab3dd3eb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ef039f5182a379c319dd29f3ebfa3f7436261a0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Pode transferir um ficheiro para utilizar com o Microsoft Power BI que lhe permite carregar relatórios interativos gerados automaticamente para o seu inquilino do Intune. O ficheiro do Power BI (pbix) do Armazém de Dados contém definições de ligação ao seu inquilino e os seguintes gráficos e relatórios de exemplo:  
 
@@ -39,7 +39,7 @@ Também existem tendências destacadas para a inscrição, conformidade, perfil 
 
 Os seguintes passos mostram como transferir o ficheiro do Power BI e como utilizar a ligação de OData com o Power BI.
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="install-power-bi"></a>Instalar o Power BI
 
@@ -78,7 +78,7 @@ Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RE
     4.  Selecione **Ligar**.  
 10. Selecione **Carregar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode encontrar respostas a perguntas sobre o seu ambiente, como o número de dispositivos inscritos por dia durante a última semana. Pode obter informações sobre o seu inquilino do Intune e população de clientes através dos relatórios que utilizaram o ficheiro do Power BI (pbix) do Armazém de Dados do Intune obtido no painel no Azure. No entanto, o Intune proporciona muitas outras formas de expandir ou reutilizar os dados. Pode fazer muito mais com o Power BI e a API do Armazém de Dados do Intune, por exemplo:
 

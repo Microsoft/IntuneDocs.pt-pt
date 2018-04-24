@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 2af720248363b78dc9cfc3b17af7b11eb14fd893
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra-lhe as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos iOS.
 
@@ -30,8 +30,8 @@ Este artigo mostra-lhe as definições de restrições de dispositivos do Micros
 -   **Partilhar dados de utilização** – permitir ou bloquear o dispositivo de enviar dados telemétricos de diagnóstico e utilização para a Apple.
 -   **Submissão de dados de diagnóstico** – Permita ou impeça que o dispositivo submeta dados de diagnóstico à Apple.
 -   **Captura de ecrã** – Permita ao utilizador capturar o conteúdo do ecrã como uma imagem.
-    - **Observação remota do ecrã através da aplicação Sala de Aula (apenas supervisionado)** – permita ou bloqueie a visualização do ecrã de dispositivos iOS por parte da aplicação Sala de Aula da Apple.
-    - **Observação não solicitada do ecrã através da aplicação Sala de Aula (apenas supervisionado)** – se permitido, os professores podem observar o ecrã dos dispositivos iOS dos estudantes de forma silenciosa através da aplicação Sala de Aula sem o conhecimento dos estudantes.
+    - **Observação remota do ecrã através da aplicação Classroom (apenas supervisionado)** – permita ou bloqueie a visualização do ecrã de dispositivos iOS por parte da aplicação Classroom da Apple.
+    - **Observação não solicitada do ecrã através da aplicação Classroom (apenas supervisionado)** – se permitido, os professores podem observar o ecrã dos dispositivos iOS dos estudantes de forma silenciosa através da aplicação Classroom sem o conhecimento dos estudantes.
 -   **Certificados TLS não fidedignos** – Permita certificados Transport Layer Security não fidedignos no dispositivo.
 -   **Fidedignidade da aplicação empresarial** – Permite que o utilizador opte por confiar em aplicações que não foram transferidas a partir da loja de aplicações.
 - **Modificação da conta (apenas supervisionado)** – quando está bloqueada, esta opção impede que o utilizador modifique as definições específicas do dispositivo a partir da aplicação de definições do iOS, como criar novas contas de dispositivo e alterar o nome de utilizador ou palavra-passe.
@@ -63,7 +63,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - AirDrop 
 - AirPlay 
 - Emparelhamento de anfitrião 
-- Sincronização da Cloud 
+- Sincronização de Nuvem 
 - Pesquisa Spotlight 
 - Handoff 
 - Apagar dispositivo 
@@ -168,7 +168,7 @@ Através de um motor de pesquisa, localize a aplicação que pretende utilizar n
 Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de local público.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
-Exemplo: procure o Microsoft Word para iPad. O URL a utilizar é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: procure Microsoft Word para iPad. O URL a utilizar é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Também pode utilizar o iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
@@ -193,7 +193,7 @@ Para especificar um URL de aplicação na lista de aplicações, utilize o segui
 Através de um motor de pesquisa, localize a aplicação que pretende utilizar na App Store do iTunes e abra a página da aplicação.
 Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de local público.
 
-Exemplo: procure o Microsoft Word para iPad. O URL a utilizar é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemplo: procure Microsoft Word para iPad. O URL a utilizar é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Também pode utilizar o software iTunes para localizar a aplicação e, em seguida, utilizar o comando **Copiar Ligação** para obter o URL da aplicação.
@@ -301,8 +301,6 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 
@@ -326,7 +324,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
     -   **Controlo de zoom** – Ative ou desative os ajustes do zoom, o que permite ao utilizador ajustar a função zoom.
 
 >[!NOTE]
-> Antes de poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
+> Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 >Se a aplicação iOS que especificou for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
 
 ## <a name="safari"></a>Safari

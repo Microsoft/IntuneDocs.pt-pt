@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 971600d59a6afe019f5f3bd51459964c168afa82
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: da4197a41798f4e47ff35d2dfab36c5317f92e21
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Ativar a Defesa Contra Ameaças para Dispositivos Móveis do Skycure no Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-Para ativar a ligação da defesa contra ameaças para dispositivos móveis do Skycure, já deve ter configurado o [Conector do Intune na consola do Skycure] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).
+Para ativar a defesa contra ameaças para dispositivos móveis do Skycure, já deve ter configurado o [Conector do Intune na consola do Skycure](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Para ativar a ligação da MTD do Skycure no Intune
 

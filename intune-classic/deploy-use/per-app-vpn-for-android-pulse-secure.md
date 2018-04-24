@@ -1,29 +1,29 @@
 ﻿---
-title: "VPN por aplicação para Android com Pulse Secure"
-description: "Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune."
-keywords: 
+title: VPN por aplicação para Android com Pulse Secure
+description: Pode criar um perfil de VPN por aplicação para dispositivos Android geridos pelo Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65bd7e15a49d5b563b6a095593ca5d8d5316a1fa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: fb4b6ad21b83d6ed2844238091f2e24e0d15cea5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar uma política personalizada para criar um perfil de VPN por aplicação para dispositivos Android
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Pode criar um perfil VPN por aplicação para dispositivos Android 5.0 e posteriores geridos pelo Intune. Primeiro, crie um perfil de VPN que utilize o tipo de ligação Pulse Secure ou Citrix. Em seguida, crie uma política de configuração personalizada que associe o perfil de VPN a aplicações específicas. 
 
@@ -52,7 +52,7 @@ Depois de implementar a política no dispositivo Android ou nos grupos de utiliz
    3. Em **Definições OMA-URI**, escolha **Adicionar**.
    4. Introduza um nome para a definição.
    5. Para **Tipo de dados**, especifique **Cadeia**.
-   6. Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, em que *Name* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+   6. Para **OMA-URI**, especifique esta cadeia: **./Vendor/MSFT/VPN/Profile/*Nome*/PackageList**, em que *Nome* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
    7.   Para **Valor**, crie uma lista separada por ponto e vírgula dos pacotes a associar ao perfil. Por exemplo, se pretender que o Excel e o browser Google Chrome utilizem a ligação VPN, introduza **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemplo de política personalizada de VPN por aplicação Android](./media/android_per_app_vpn_oma_uri.png)
@@ -63,7 +63,7 @@ Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista d
   1.    Em **Definições OMA-URI**, escolha **Adicionar**.
   2.    Introduza um nome para a definição.
   3.    Para **Tipo de dados**, especifique **Cadeia**.
-  4.    Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, em que *Name* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    Para **Valor**, introduza **BLACKLIST** ou **WHITELIST**.
 
 
@@ -77,4 +77,4 @@ Tem de implementar as *duas* políticas nos *mesmos* grupos do Intune.
     -   **Para implementar a política**, selecione um ou mais grupos nos quais pretende implementar a política e, em seguida, escolha **Adicionar** > **OK**.
     -   **Para fechar a caixa de diálogo sem implementar a política**, escolha **Cancelar**.
 
-Um resumo do estado e alertas na página **Descrição Geral** da área de trabalho **Política** identificam problemas com a política que necessitam da sua atenção. Também é apresentado um resumo de estado na área de trabalho **Dashboard**.
+Um resumo do estado e alertas na página **Overview** da área de trabalho **Policy** identificam problemas com a política que necessitam da sua atenção. Também é apresentado um resumo de estado na área de trabalho **Dashboard**.

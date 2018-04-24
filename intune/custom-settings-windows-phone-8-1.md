@@ -1,27 +1,27 @@
 ---
-title: "Definições personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1"
-titleSuffix: 
-description: "Saiba quais são as definições que pode utilizar num perfil personalizado do Windows Phone 8.1."
-keywords: 
+title: Definições personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1
+titleSuffix: ''
+description: Saiba quais são as definições que pode utilizar num perfil personalizado do Windows Phone 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 83c123f3752680dbc7faca76aa525a0f035831d7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Definições do dispositivo personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Utilize o perfil **Personalizado** para Windows Phone 8.1 do Microsoft Intune para atribuir as definições OMA-URI que podem ser utilizadas para controlar as funcionalidades nos dispositivos Windows Phone 8.1. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 

@@ -1,25 +1,25 @@
 ---
-title: "Introdução às aplicações no Microsoft Intune"
-titlesuffix: 
-description: "Localize e adicione aplicações a dispositivos para que a sua força de trabalho comece a trabalhar."
-keywords: 
+title: Introdução às aplicações no Microsoft Intune
+titlesuffix: ''
+description: Localize e adicione aplicações a dispositivos para que a sua força de trabalho comece a trabalhar.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 3/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cf7b2cca28e16825c368cb3e5dc793d25daaa4d0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Introdução à adição de aplicações no Microsoft Intune
 

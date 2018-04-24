@@ -1,28 +1,28 @@
 ---
-title: "Licenças do Intune"
-description: "O Intune está disponível com estas licenças"
-keywords: 
+title: Licenças do Intune
+description: O Intune está disponível com estas licenças
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27d3d3b06cdf72201ff80f41140347e88a0b168f
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 0cfedebb3ca70bdff0cd66e41557046708d24a89
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="licenses-that-include-intune"></a>Licenças que incluem o Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 A tabela seguinte mostra que versão do Intune está disponível em cada licença:
 

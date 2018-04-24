@@ -1,27 +1,27 @@
 ---
-title: "O que é a inscrição de dispositivos do Microsoft Intune"
+title: O que é a inscrição de dispositivos do Microsoft Intune
 titlesuffix: Microsoft Intune
-description: "Saiba mais sobre a inscrição de dispositivos iOS, Android e Windows."
-keywords: 
+description: Saiba mais sobre a inscrição de dispositivos iOS, Android e Windows.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Intune permite-lhe gerir os dispositivos e as aplicações da sua força de trabalho e a forma como acedem aos dados da empresa. Para utilizar esta gestão de dispositivos móveis (MDM), deve primeiro inscrever os dispositivos no serviço Intune. Quando um dispositivo é inscrito, é emitido um certificado MDM. Este certificado é utilizado para comunicar com o serviço Intune.
 
@@ -40,7 +40,7 @@ Como pode constatar nas tabelas seguintes, existem vários métodos para inscrev
 
 ## <a name="macos-enrollment-methods"></a>Métodos de inscrição do macOS
 
-| **Método** |  **Reposição obrigatória** |  **Afinidade do Utilizador** | **Bloqueado** | **Detalhes**|
+| **Método** |  **Reposição obrigatória** |  **Afinidade de Utilizador** | **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Não| Sim | Não | [Mais informações](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não  | [Mais informações](./device-enrollment-manager-enroll.md)|
@@ -48,7 +48,7 @@ Como pode constatar nas tabelas seguintes, existem vários métodos para inscrev
 
 ## <a name="windows-enrollment-methods"></a>Métodos de inscrição do Windows
 
-| **Método** |  **Reposição obrigatória** |    **Afinidade do Utilizador**   |   **Bloqueado** | **Detalhes**|
+| **Método** |  **Reposição obrigatória** |    **Afinidade de Utilizador**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Não |  Sim |   Não | [Mais informações](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não  |[Mais informações](device-enrollment-manager-enroll.md)|
@@ -57,7 +57,7 @@ Como pode constatar nas tabelas seguintes, existem vários métodos para inscrev
 
 ## <a name="android-enrollment-methods"></a>Métodos de inscrição do Android
 
-| **Método** |  **Reposição obrigatória** |    **Afinidade do Utilizador**   |   **Bloqueado** | **Detalhes**|
+| **Método** |  **Reposição obrigatória** |    **Afinidade de Utilizador**   |   **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Não|   Sim |   Não | [Mais informações](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não  |[Mais informações](./device-enrollment-manager-enroll.md)|
@@ -73,13 +73,13 @@ Os dispositivos pertencentes à empresa (COD) incluem telemóveis, tablets e PCs
 ### <a name="device-enrollment-manager"></a>Gestor de inscrição de dispositivos
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md).
 
-### <a name="apple-device-enrollment-program"></a>Programa de Registo de Aparelho da Apple
-A gestão do Programa de Registo de Aparelho (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
+### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos da Apple
+A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
 
 Saiba mais sobre a inscrição do DEP para iOS:
 
 - [Escolher como inscrever dispositivos iOS](ios-enroll.md)
-- [Inscrever dispositivos iOS com o Programa de Registo de Aparelho](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
+- [Inscrever dispositivos iOS com o Programa de Inscrição de Dispositivos](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os utilizadores recebem os seus dispositivos, é-lhes pedido que executem o Assistente de Configuração para inscreverem os seus dispositivos. Este método suporta o modo **iOS supervisionado** que, por sua vez, ativa as seguintes funcionalidades:

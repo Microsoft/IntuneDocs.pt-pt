@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a sua integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -54,32 +54,32 @@ Utilize os seguintes passos para reunir as informações que deve fornecer à eq
 2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, veja este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter sugestões para saber o seu ID de subscrição.
 
 3. Localize o ID de Grupo do Azure AD. A consola do Lookout suporta 2 níveis de acesso:  
-  * **Acesso Total:** os administradores do Azure AD podem criar um grupo para utilizadores que terão Acesso Total e criar, opcionalmente, outro grupo para os utilizadores que terão Acesso Restrito.  Apenas os utilizadores nestes grupos poderão iniciar sessão na **consola do Lookout**.
-  * **Acesso Restrito:** os utilizadores neste grupo não têm acesso a vários módulos de configuração e inscrição da consola do Lookout e têm acesso só de leitura ao módulo **Política de Segurança** da consola do Lookout.  
+   * **Acesso Total:** os administradores do Azure AD podem criar um grupo para utilizadores que terão Acesso Total e criar, opcionalmente, outro grupo para os utilizadores que terão Acesso Restrito.  Apenas os utilizadores nestes grupos poderão iniciar sessão na **consola do Lookout**.
+   * **Acesso Restrito:** os utilizadores neste grupo não têm acesso a vários módulos de configuração e inscrição da consola do Lookout e têm acesso só de leitura ao módulo **Política de Segurança** da consola do Lookout.  
 
-    > [!TIP] 
-    > Para obter mais detalhes sobre as permissões, consulte [este artigo](https://personal.support.lookout.com/hc/articles/114094105653) no site do Lookout.
+     > [!TIP] 
+     > Para obter mais detalhes sobre as permissões, consulte [este artigo](https://personal.support.lookout.com/hc/articles/114094105653) no site do Lookout.
 
-    > [!NOTE] 
-    > O **ID de Objeto de Grupo** encontra-se na página **Propriedades** do grupo no **portal de gestão do Azure AD**.
+     > [!NOTE] 
+     > O **ID de Objeto de Grupo** encontra-se na página **Propriedades** do grupo no **portal de gestão do Azure AD**.
 
 4. Quando tiver recolhido estas informações, contacte o suporte do Lookout (e-mail: enterprisesupport@lookout.com). O Suporte do Lookout irá utilizar o seu contacto principal para integrar a sua subscrição e criar a sua conta do Lookout Enterprise com as informações que recolheu.
 
 ## <a name="configure-your-subscription"></a>Configurar a sua subscrição
 
-1. Após o suporte do Lookout criar a sua conta do Lookout Enterprise, será enviado um e-mail do Lookout para o contacto principal da sua empresa, com uma ligação para o URL de início de sessão: https://aad.lookout.com/les?action=consent.
+1. Após o suporte do Lookout criar a sua conta do Lookout Enterprise, será enviado um e-mail do Lookout para o contacto principal da sua empresa, com uma ligação para o URL de início de sessão: <https://aad.lookout.com/les?action=consent>.
 
-2.  O primeiro início de sessão na consola do Lookout tem de ser efetuado por uma conta de utilizador com a função de Administrador Global do Azure AD para registar o seu inquilino do Azure AD. Posteriormente, não será necessário este nível de privilégio do Azure AD para iniciar sessão. É apresentada uma página de consentimento. Selecione **Aceitar** para concluir o registo. Depois de aceitar e consentir, será redirecionado para a Consola do Lookout.
+2. O primeiro início de sessão na consola do Lookout tem de ser efetuado por uma conta de utilizador com a função de Administrador Global do Azure AD para registar o seu inquilino do Azure AD. Posteriormente, não será necessário este nível de privilégio do Azure AD para iniciar sessão. É apresentada uma página de consentimento. Selecione **Aceitar** para concluir o registo. Depois de aceitar e consentir, será redirecionado para a Consola do Lookout.
 
-    ![captura de ecrã da página de primeiro início de sessão da consola do Lookout](./media/lookout_mtp_initial_login.png)
+   ![captura de ecrã da página de primeiro início de sessão da consola do Lookout](./media/lookout_mtp_initial_login.png)
 
-3.  Na [Consola do Lookout](https://aad.lookout.com), no módulo **Sistema**, selecione o separador **Conectores** e selecione **Intune**.
+3. Na [Consola do Lookout](https://aad.lookout.com), no módulo **Sistema**, selecione o separador **Conectores** e selecione **Intune**.
 
-    ![captura de ecrã da consola do Lookout com o separador Conectores aberto e a opção Intune destacada](./media/lookout_mtp_setup-intune-connector.png)
+   ![captura de ecrã da consola do Lookout com o separador Conectores aberto e a opção Intune destacada](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  Aceda a **Conectores** > **Definições de Ligação** e especifique a **Frequência do Heartbeat**.
+4. Aceda a **Conectores** > **Definições de Ligação** e especifique a **Frequência do Heartbeat**.
 
-    ![captura de ecrã do separador Definições da Ligação com o campo de frequência do heartbeat configurado](./media/lookout-mtp-connection-settings.png)
+   ![captura de ecrã do separador Definições da Ligação com o campo de frequência do heartbeat configurado](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Configurar grupos de inscrição
 1. Como boa prática, crie um grupo de segurança do Azure AD no [portal de gestão do Azure AD](https://manage.windowsazure.com) com um número reduzido de utilizadores para testar a integração do Lookout.

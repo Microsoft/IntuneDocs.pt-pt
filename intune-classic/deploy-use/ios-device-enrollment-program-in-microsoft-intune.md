@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 383309944bd185ea2abc79b3bcc3488ad3377b50
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrever dispositivos iOS pertencentes à empresa através do Programa de Inscrição de Dispositivos
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune pode implementar um perfil de inscrição que inscreve os dispositivos iOS comprados através do Programa de Inscrição de Dispositivos (DEP) por ondas eletromagnéticas. O pacote de inscrição pode incluir opções do assistente de configuração do dispositivo.
 
@@ -56,13 +56,13 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
 1. Aceda ao [Portal do Programa de Registo de Dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sessão com o ID Apple da sua empresa. Este ID Apple tem de ser utilizado posteriormente para renovar o seu token do DEP.
 
-2.  No Portal do Programa de Inscrição de Dispositivos, aceda a **Programa de Inscrição de Dispositivos** &gt; **Gerir Servidores** e, em seguida, selecione **Adicionar Servidor MDM**.
+2. No Portal do Programa de Inscrição de Dispositivos, aceda a **Programa de Inscrição de Dispositivos** &gt; **Gerir Servidores** e, em seguida, selecione **Adicionar Servidor MDM**.
 
-3.  Introduza o **Nome do Servidor MDM** e, em seguida, selecione **Seguinte**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome nem o URL do Microsoft Intune.
+3. Introduza o **Nome do Servidor MDM** e, em seguida, selecione **Seguinte**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome nem o URL do Microsoft Intune.
 
-4.  É aberta a caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
+4. É aberta a caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
 
-5.  A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** mostra uma ligação para o **Token do Seu Servidor**. Transfira o ficheiro do token do servidor (.p7m) para o seu computador e, em seguida, selecione **Concluído**.
+5. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** mostra uma ligação para o **Token do Seu Servidor**. Transfira o ficheiro do token do servidor (.p7m) para o seu computador e, em seguida, selecione **Concluído**.
 
    Este ficheiro do certificado (.p7m) é utilizado para estabelecer uma relação de confiança entre os servidores do Intune e do Programa de Inscrição de Dispositivos da Apple.
 
@@ -80,8 +80,8 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
    - **Pedido de afinidade de utilizador**: o dispositivo tem de ser afiliado a um utilizador durante a configuração inicial para poder receber permissões para aceder ao e-mail e aos dados da empresa em nome do utilizador. A **Afinidade de utilizador** deve ser configurada para dispositivos geridos por DEP que pertencem aos utilizadores e que precisam de utilizar o portal da empresa (ou seja, para instalar aplicações). A autenticação multifator (MFA) não funciona durante a inscrição em dispositivos DEP com afinidade de utilizador. Depois da inscrição, a MFA funciona conforme esperado nestes dispositivos. Durante a inscrição em dispositivos DEP, não pode ser pedida a alteração da palavra-passe aos novos utilizadores que tenham de alterar a palavra-passe no primeiro início de sessão. Além disso, não será pedido aos utilizadores cujas palavras-passe expiraram que reponham a palavra-passe durante a inscrição DEP e os mesmos terão de repor a palavra-passe a partir de um dispositivo diferente.
 
-    >[!NOTE]
-    >O DEP com afinidade de utilizador requer a ativação de um [ponto final de Nome de Utilizador/Misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints) para pedir o token de utilizador. [Saiba mais sobre o WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+     >[!NOTE]
+     >O DEP com afinidade de utilizador requer a ativação de um [ponto final de Nome de Utilizador/Misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints) para pedir o token de utilizador. [Saiba mais sobre o WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Sem afinidade de utilizador**: o dispositivo não está afiliado a um utilizador. Utilize esta afiliação em dispositivos que efetuem tarefas sem aceder aos dados de utilizador locais. As aplicações que requerem afiliação de utilizadores, incluindo a aplicação Portal da Empresa utilizada para instalar aplicações de linha de negócio, não irão funcionar.
 
@@ -98,14 +98,14 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
 
    - **Departamento** – é apresentado quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação
    - **Número de telefone de suporte** – aparece quando o utilizador clica no botão **Preciso de ajuda** durante a ativação
-   - **Modo de preparação** – definido durante a ativação e não pode ser alterado sem a reposição de dados de fábrica do dispositivo:
+   - **Modo de preparação** – definido durante a ativação e não pode ser alterado sem a reposição de fábrica do dispositivo:
        - **Não supervisionado** – capacidades de gestão limitadas
        - **Supervisionado** – ativa mais opções de gestão e desativa o Bloqueio de Ativação por predefinição
-   - **Bloquear perfil de inscrição para o dispositivo** – definido durante a ativação e não pode ser alterado sem uma reposição de dados de fábrica
+   - **Bloquear perfil de inscrição para o dispositivo** – definido durante a ativação e não pode ser alterado sem uma reposição de fábrica
        - **Desativar** – permite que o perfil de gestão seja removido do menu **Definições**
        - **Ativar** – (é necessário o **Modo de Preparação** = **Supervisionado**) desativa a opção de menu nas Definições do iOS para remover o perfil de gestão
    - **Opções do Assistente de Configuração** – estas definições opcionais podem ser configuradas mais tarde no menu **Definições** de iOS.
-        - **Código de Acesso** – pedido de código de acesso durante a ativação. Peça sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação)
+     - **Código de Acesso** – pedido de código de acesso durante a ativação. Peça sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação)
        - **Serviços de Localização** – se ativado, o Assistente de Configuração solicita o serviço durante a ativação
        - **Restaurar** – se estiver ativado, o Assistente de Configuração solicita a cópia de segurança de iCloud durante a ativação
        - **ID Apple** – se estiver ativado, o iOS irá pedir aos utilizadores um ID Apple quando o Intune tenta instalar uma aplicação sem um ID. É necessário um ID Apple para transferir aplicações iOS da App Store, incluindo as instaladas pelo Intune.
@@ -115,10 +115,10 @@ Os seguintes passos explicam como inscrever dispositivos iOS no "dia 0" com a ge
        - **Zoom** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
        - **Siri** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
        - **Enviar dados de diagnóstico para a Apple** – se ativado, o Assistente de Configuração solicita este serviço durante a ativação
-   -  **Ativar a gestão adicional do Apple Configurator** – defina como **Não Permitir** para impedir a sincronização de ficheiros com o iTunes ou a gestão através do Apple Configurator. É recomendado selecionar **Não Permitir**, exportar qualquer configuração adicional do Apple Configurator e, em seguida, implementar como um perfil de configuração iOS Personalizada através do Intune, em vez de utilizar esta definição para permitir a implementação manual com ou sem um certificado.
-       - **Não Permitir** – impede o dispositivo de comunicar através de USB (desativa o emparelhamento)
-       - **Permitir** – permite a um dispositivo comunicar através de ligação USB para qualquer PC ou Mac
-       - **Requer certificado** – permite o emparelhamento com um Mac, com um certificado importado para o perfil de inscrição
+   - **Ativar a gestão adicional do Apple Configurator** – defina como **Não Permitir** para impedir a sincronização de ficheiros com o iTunes ou a gestão através do Apple Configurator. É recomendado selecionar **Não Permitir**, exportar qualquer configuração adicional do Apple Configurator e, em seguida, implementar como um perfil de configuração iOS Personalizada através do Intune, em vez de utilizar esta definição para permitir a implementação manual com ou sem um certificado.
+      - **Não Permitir** – impede o dispositivo de comunicar através de USB (desativa o emparelhamento)
+      - **Permitir** – permite a um dispositivo comunicar através de ligação USB para qualquer PC ou Mac
+      - **Requer certificado** – permite o emparelhamento com um Mac, com um certificado importado para o perfil de inscrição
 
 ### <a name="assign-the-profile-to-devices"></a>Atribuir o perfil a dispositivos
 

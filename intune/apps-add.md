@@ -1,29 +1,29 @@
 ---
-title: "Como adicionar aplicações ao Microsoft Intune"
-titlesuffix: 
-description: "Saiba como adicionar aplicações ao Microsoft Intune para poder atribuir aplicações a utilizadores e dispositivos. O Intune suporta uma grande variedade de tipos de aplicações diferentes."
-keywords: 
+title: Como adicionar aplicações ao Microsoft Intune
+titlesuffix: ''
+description: Saiba como adicionar aplicações ao Microsoft Intune para poder atribuir aplicações a utilizadores e dispositivos. O Intune suporta uma grande variedade de tipos de aplicações diferentes.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 407a332e170497dbb618a2915bba6b794c4a720f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 6b4e87c36c3aa0aaeae1e1bf265902100612db15
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Como adicionar uma aplicação ao Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem de adicioná-las ao Microsoft Intune.
 
@@ -103,7 +103,7 @@ Para obter mais informações sobre como determinar o tipo de aplicações que a
 O Intune permite-lhe modificar a funcionalidade das aplicações que implementa para ajudar a ajustá-las às políticas de conformidade e de segurança da sua empresa. Este controlo permite-lhe determinar como os dados da sua empresa são protegidos. As aplicações geridas pelo Intune têm um conjunto avançado de políticas de proteção de aplicações móveis, tal como:
 
 - Restringir funções Copiar e colar e Guardar como
-- Configurar ligações Web para serem abertas na aplicação Intune Managed Browser
+- Configurar ligações Web para serem abertas nas aplicação Intune Managed Browser
 - Ativar o acesso condicional ao nível da aplicação e a utilização de várias identidades
 
 As aplicações geridas pelo Intune também permitem a proteção de aplicações sem exigir a inscrição, dando-lhe a opção de aplicar políticas de prevenção de perda de dados sem gerir o dispositivo do utilizador. Além disso, pode incorporar a gestão de aplicações móveis nas suas aplicações móveis e de linha de negócio com o Intune App Software Development Kit e a ferramenta de encapsulamento de aplicações. Para obter mais informações sobre estas ferramentas, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).

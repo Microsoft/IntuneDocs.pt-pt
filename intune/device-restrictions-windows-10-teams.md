@@ -1,27 +1,27 @@
 ---
-title: "Restrições de dispositivos no Windows Intune para dispositivos Windows 10 Team"
-titlesuffix: 
-description: "Saiba mais sobre as restrições de dispositivos disponíveis para dispositivos Windows 10 Team."
-keywords: 
+title: Restrições de dispositivos no Windows Intune para dispositivos Windows 10 Team
+titlesuffix: ''
+description: Saiba mais sobre as restrições de dispositivos disponíveis para dispositivos Windows 10 Team.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5d1198e8332645297ab0739bb0346c573877f0c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Definições de restrição de dispositivos Windows 10 Team do Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra-lhe as definições de restrição de dispositivos do Microsoft Intune que pode configurar para dispositivos Windows 10 Team.
 

@@ -1,44 +1,47 @@
 ---
 title: Enviar registos para o suporte da empresa por e-mail | Documentos da Microsoft
 description: Enviar registos de dados por e-mail num dispositivo Android
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ddd0c1113b7cce6f461b627a3d346806df3bbc8c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>Enviar registos ao suporte da empresa por e-mail
+# <a name="email-logs-to-your-company-support"></a>Enviar registos ao suporte da empresa por e-mail
 
-Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Android, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
+Por vezes, pode ser apresentado um erro ao utilizar a aplicação Portal da Empresa no seu dispositivo Android. Se isto ocorrer, pode enviar por e-mail os detalhes sobre o erro para o responsável pelo suporte da sua empresa. Estes detalhes irão fornecer o contexto necessário para resolver o problema.  
+
+Os detalhes do erro encontram-se no seu dispositivo, num documento especial denominado _registo de diagnóstico_. Ao carregar os registos para a aplicação Portal da Empresa, estes são primeiro enviados para os programadores da Microsoft que trabalham na aplicação. Estes utilizam os registos para melhorar a funcionalidade da aplicação e impedir a ocorrência de erros futuros. É-lhe fornecido um ID de incidente para o seu erro específico para que o possa partilhar com o responsável pelo suporte da sua empresa.  
 
 > [!Note]
-> Para o suporte da empresa descobrir o problema mais facilmente, deve ativar o _registo verboso_. O registo verboso inclui todos os detalhes relevantes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para que o suporte da empresa descubra a causa do problema mais facilmente, ative o _registo verboso_. O registo verboso regista todos os detalhes de um erro e inclui estes detalhes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  
 
 Para enviar registos ao suporte da empresa por e-mail:
 
 1.  Abra a aplicação Portal da Empresa.
 
-2.  Toque em **Menu** >  **Ajuda e Comentários**.
+2.  Toque em **Menu** > **Ajuda** > **Enviar e-mail à Equipa de Suporte**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o dispositivo Android que tem.
 
-3.  Em **Ajuda**, toque em **Obter Ajuda**.
+3.  Toque em **Enviar E-mail e Carregar Registos**.
+4.  Depois de o carregamento estar concluído, toque na sua aplicação de e-mail. Uma mensagem de e-mail será aberta com o ID de incidente pré-preenchido no campo do requerente. No corpo do e-mail, descreva o problema que teve.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

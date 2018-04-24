@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5bfc02f5f10ce88b992d0ea250d7b36fdf3f66dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Ativar o acesso aos recursos da empresa com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Os perfis de e-mail, VPN e Wi-FI do Microsoft Intune funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam para trabalhar, estejam onde estiverem. Os perfis de certificado ajudam a proteger esse acesso.
 
@@ -46,15 +46,19 @@ Implemente as definições de rede privada virtual (VPN) nos seus utilizadores. 
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>[Perfis de e-mail](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) e plataformas suportadas
 Crie, implemente e monitorize as definições de cliente de e-mail nativo nos dispositivos da sua organização.
 
-|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
-|---------------------|---------------------------|---|-------|------------|
-|Não|Sim|Sim|Não|Sim|
+
+| Windows 8.1 e posterior | Windows Phone 8.1 e posterior | iOS | Android | Samsung KNOX Standard |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          Não           |             Sim             | Sim |   Não    |          Sim          |
+
 > [!NOTE]
 > [Esta mensagem do blogue da equipa do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) disponibiliza informações sobre como configurar perfis Wi-Fi do Windows Phone 8.1 com o OMA-URI.
 
 ## <a name="certificate-profilessecure-resource-access-with-certificate-profilesmd-and-supported-platforms"></a>[Perfis de certificado](secure-resource-access-with-certificate-profiles.md) e plataformas suportadas
 Ajuda a proteger o acesso aos recursos da empresa, incluindo redes sem fios e ligações VPN.
 
-|Windows 8.1 e posterior|Windows Phone 8.1 e posterior|iOS|Android|Samsung KNOX Standard|
-|---------------------|---------------------------|---|-------|------------|
-|Sim|Sim|Sim|Sim|Sim|
+
+| Windows 8.1 e posterior | Windows Phone 8.1 e posterior | iOS | Android | Samsung KNOX Standard |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          Sim          |             Sim             | Sim |   Sim   |          Sim          |
+

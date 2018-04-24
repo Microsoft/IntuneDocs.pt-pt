@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 8d1e20ecd5c6cc1f7bef4541d08a1571a99ac35e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Definições da política para Android e Samsung KNOX Standard no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune oferece um conjunto de definições gerais incorporadas que pode configurar em dispositivos Android. Além disso, pode especificar valores de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para criar definições personalizadas que não estão disponíveis no Intune.
 
@@ -70,7 +70,7 @@ Se a definição que procura não for apresentada neste tópico, poderá consegu
 |----------------|---|-------------|----------------|
 |**Permitir captura de ecrã**|Permite ao utilizador capturar o conteúdo do ecrã como uma imagem.|Não|Sim|
 |**Permitir submissão de dados de diagnóstico**|Permite ao dispositivo enviar informações de diagnóstico para a Google.|Não|Sim|
-|**Permitir a reposição de dados de fábrica**|Permite ao utilizador efetuar uma reposição de dados de fábrica no dispositivo.|Não|Sim|
+|**Permitir a reposição de fábrica**|Permite ao utilizador efetuar uma reposição de fábrica no dispositivo.|Não|Sim|
 
 ### <a name="cloud-settings---documents-and-data"></a>Definições da cloud – documentos e dados
 
@@ -208,7 +208,7 @@ Atualmente, o Intune suporta um número limitado de políticas personalizadas do
 
 ## <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung KNOX Standard suportados
 
-A aplicação Portal da Empresa só tenta a ativação do Samsung KNOX durante a inscrição MDM se o dispositivo for apresentado na [lista de dispositivos KNOX suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Isto ajuda a evitar erros de ativação de KNOX que impedem a inscrição MDM. Os dispositivos que não suportam a ativação do Samsung KNOX são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o KNOX, enquanto outros não. Verifique a compatibilidade com o KNOX junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
+A aplicação Portal da Empresa tenta apenas a ativação do Samsung KNOX durante a inscrição MDM se o dispositivo for apresentado na [lista de dispositivos KNOX suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Isto ajuda a evitar erros de ativação de KNOX que impedem a inscrição MDM. Os dispositivos que não suportam a ativação do Samsung KNOX são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o KNOX, enquanto outros não. Verifique a compatibilidade com o KNOX junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
 
 Pode encontrar uma lista de dispositivos Samsung KNOX suportados, juntamente com a lista de [dispositivos suportados pelo Intune](/intune/supported-devices-browsers.md#intune-supported-devices).
 

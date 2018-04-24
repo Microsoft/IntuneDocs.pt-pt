@@ -1,43 +1,43 @@
 ﻿---
 title: Wi-Fi com PSK
-description: "Utilize a Configuração Personalizada para criar um perfil Wi-Fi com uma chave pré-partilhada."
-keywords: 
+description: Utilize a Configuração Personalizada para criar um perfil Wi-Fi com uma chave pré-partilhada.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utilizar uma política personalizada para criar um perfil Wi-Fi com uma chave pré-partilhada
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Eis como utilizar a **Configuração Personalizada** do Intune para criar um perfil Wi-Fi com uma chave pré-partilhada. Este tópico também contém um exemplo de como criar um perfil Wi-Fi baseado em EAP.
 
 > [!NOTE]
--   Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
-- Para Android, tem também a opção de utilizar este [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornecido por Johnathon Biersack.
--   Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
--  Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize este [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornecido por Johnathon Biersack.
+> -   Poderá considerar mais fácil copiar o código de um computador com ligação à rede, conforme descrito abaixo.
+> - Para Android, tem também a opção de utilizar este [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornecido por Johnathon Biersack.
+> -   Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
+> -  Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize este [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornecido por Johnathon Biersack.
 
 
-1.  Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar uma política, escolha **Configuração Personalizada** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.
+1. Para criar um perfil Wi-Fi com uma chave pré-partilhada para Android ou Windows, ou um perfil Wi-Fi baseado em EAP, quando criar uma política, escolha **Configuração Personalizada** para essa plataforma de dispositivo, em vez de um perfil Wi-Fi.
 
-2.  Forneça um nome e uma descrição.
-3.  Adicione uma nova definição de OMA-URI:
+2. Forneça um nome e uma descrição.
+3. Adicione uma nova definição de OMA-URI:
 
    a.   Introduza um nome para esta definição de rede Wi-Fi.
 
@@ -47,15 +47,15 @@ Eis como utilizar a **Configuração Personalizada** do Intune para criar um per
 
    d.   **OMA-URI**:
 
-    - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-Certifique-se de que inclui o caráter de ponto no início.
+   > [!NOTE]
+   > Certifique-se de que inclui o caráter de ponto no início.
 
-    SSID é o SSID para o qual está a criar a política. Por exemplo, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+   SSID é o SSID para o qual está a criar a política. Por exemplo, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e. **Campo de Valor** é onde cola o código XML. Segue-se um exemplo. Cada valor deve ser adaptado às suas definições de rede. Consulte a secção de comentários do código para obter algumas indicações.
+   e. **Campo de Valor** é onde cola o código XML. Segue-se um exemplo. Cada valor deve ser adaptado às suas definições de rede. Consulte a secção de comentários do código para obter algumas indicações.
 4. Escolha **OK**, guarde e, em seguida, implemente a política.
 
     > [!NOTE]
@@ -202,8 +202,8 @@ Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente:
 1. Num computador ligado ou que tenha ligado recentemente à rede sem fios, abra a seguinte pasta: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
     É melhor utilizar um computador que não tenha ligado a muitas redes sem fios, uma vez que tem de procurar em cada perfil para encontrar a correta.
-3.     Procure nos ficheiros XML para localizar o ficheiro com o nome correto.
-4.     Depois de localizar o ficheiro XML correto, copie e cole o código XML no campo de Dados da página de definições de OMA-URI.
+2. Procure nos ficheiros XML para localizar o ficheiro com o nome correto.
+3. Depois de localizar o ficheiro XML correto, copie e cole o código XML no campo de Dados da página de definições de OMA-URI.
 
 ## <a name="deploy-the-policy"></a>Implementar a política
 

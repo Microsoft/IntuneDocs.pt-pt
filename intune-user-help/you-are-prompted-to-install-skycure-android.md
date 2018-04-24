@@ -1,25 +1,25 @@
 ---
 title: Precisa de instalar o Symantec Endpoint Protection Mobile no seu dispositivo Android | Documentos da Microsoft
 description: Saiba como instalar o SEP Mobile no seu dispositivo Android.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 040b7bad4b62acffa5dad1606d5beb81efc56b68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Instalar o Symantec Endpoint Protection Mobile no seu dispositivo Android
 
@@ -45,13 +45,13 @@ Se tiver problemas com a instalação, experimente os passos de resolução de p
 
 8. O SEP Mobile começa imediatamente a procurar ameaças de segurança no dispositivo.
 
-  * Se o SEP Mobile encontrar uma ameaça à segurança no dispositivo, verá instruções sobre como resolver o problema.
+   * Se o SEP Mobile encontrar uma ameaça à segurança no dispositivo, verá instruções sobre como resolver o problema.
 
-  * Se não forem encontradas ameaças, os três tipos de ameaças aparecem a verde.
+   * Se não forem encontradas ameaças, os três tipos de ameaças aparecem a verde.
 
-    * O ecrã **Detalhes do Dispositivo**, no Portal da Empresa, mostra que está agora em conformidade com os requisitos de segurança da empresa.
+     * O ecrã **Detalhes do Dispositivo**, no Portal da Empresa, mostra que está agora em conformidade com os requisitos de segurança da empresa.
 
-    ![O dispositivo está agora em conformidade com as políticas](./media/mtd-device-now-compliant-android.png)
+     ![O dispositivo está agora em conformidade com as políticas](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>Se a instalação não funcionar
 

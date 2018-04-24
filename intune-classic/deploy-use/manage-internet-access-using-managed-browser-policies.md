@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O browser gerido é uma aplicação de navegação na Web que pode implementar na sua organização ao utilizar o Microsoft Intune. Uma política de browser gerido configura uma lista de permissões ou uma lista de bloqueios que restringe os sites que os utilizadores do browser gerido podem visitar.
 
@@ -99,52 +99,52 @@ A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utili
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato do URL para URLs permitidos e bloqueados
 Utilize as informações seguinte para saber mais sobre os formatos permitidos e os carateres universais que pode utilizar ao especificar os URLs na lista de permissões e bloqueios:
 
--   Pode utilizar o símbolo de caráter universal (**&#42;**) de acordo com as regras na lista de padrões permitidos seguinte.
+- Pode utilizar o símbolo de caráter universal (**&#42;**) de acordo com as regras na lista de padrões permitidos seguinte.
 
--   Certifique-se de que adiciona o prefixo **http** ou **https** a todos os URLs quando os introduzir na lista.
+- Certifique-se de que adiciona o prefixo **http** ou **https** a todos os URLs quando os introduzir na lista.
 
--   Pode especificar os números da porta no endereço. Se não especificar um número da porta, os valores serão:
+- Pode especificar os números da porta no endereço. Se não especificar um número da porta, os valores serão:
 
-    -   Porta 80 para http
+  -   Porta 80 para http
 
-    -   Porta 443 para https
+  -   Porta 443 para https
 
-    Não é suportado utilizar carateres universais para o número de porta. Por exemplo, **http&colon;//www&period;contoso&period;com:*** e **http&colon;//www&period;contoso&period;com: /*;** não são suportados.
+  Não é suportado utilizar carateres universais para o número de porta. Por exemplo, <strong>http&colon;//www&period;contoso&period;com:*;</strong> e <strong>http&colon;//www&period;contoso&period;com: /*;</strong> não são suportados.
 
--   Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
+- Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
 
-|URL|Detalhes|Correspondências|Não corresponde|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Corresponde a uma única página|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Corresponde a uma única página|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Corresponde a todos os URLs que começam com www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Corresponde a todos os subdomínios em contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Corresponde a uma única pasta|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Corresponde a uma única página, ao utilizar um número de porta|http://www.contoso.com:80||
-    |https://www.contoso.com|Corresponde a uma única página segura|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Corresponde a uma única pasta e a todas as subpastas|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Detalhes                      |                                                Correspondências                                                |                                Não corresponde                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Corresponde a uma única página               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Corresponde a uma única página               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | Corresponde a todos os URLs que começam com www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     Corresponde a todos os subdomínios em contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Corresponde a uma única pasta              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Corresponde a uma única página, ao utilizar um número de porta   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Corresponde a uma única página segura           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Corresponde a uma única pasta e a todas as subpastas    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   Seguem-se exemplos de algumas entradas que não pode especificar:
+- Seguem-se exemplos de algumas entradas que não pode especificar:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   Endereços IP
+  - Endereços IP
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Como são resolvidos os conflitos entre a lista de permissões e de bloqueios
 Se forem implementadas várias políticas de browser gerido num dispositivo e as definições entrarem em conflito, o modo (permitido ou bloqueado) e as listas de URLs são avaliados em relação a conflitos. No caso de existir um conflito, aplica-se o seguinte comportamento:

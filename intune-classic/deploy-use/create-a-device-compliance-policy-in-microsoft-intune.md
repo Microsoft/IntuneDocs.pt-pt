@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ed6f66747364debd89661d78bcf3b002b1c8a9b6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade de dispositivos no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico descreve os passos que pode utilizar para criar uma política de conformidade que um dispositivo tem de seguir para ser considerado conforme.
 
@@ -56,6 +56,7 @@ Para especificar o tempo que o dispositivo tem para se registar antes de ser con
 A tabela seguinte lista as definições de política de conformidade e as plataformas em que são suportadas.
 
 -------------
+
 |Definição|iOS|Android|Windows|
 |-----|----|-----|-----|
 |Palavra-passe obrigatória para desbloquear os dispositivos móveis|iOS 6 e posterior|Android 4.0 e posterior <br>Samsung KNOX Standard 4.0 e posterior|Windows Phone 8.1 e posterior|
@@ -79,9 +80,9 @@ A tabela seguinte lista as definições de política de conformidade e as plataf
 
 Selecione um dos seguintes passos para obter mais informações sobre as definições de conformidade suportadas em cada plataforma:
 > [!div class="op_single_selector"]
-- [Definições de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Definições de política de conformidade para dispositivos Windows Phone ](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Definições de política de conformidade para dispositivos Windows Phone ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## <a name="next-steps"></a>Próximos passos

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Portal do Azure para políticas de proteção de aplicações do Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O portal do Azure é utilizado para criar e gerir políticas de proteção de aplicações para:
 
@@ -32,9 +32,9 @@ O portal do Azure é utilizado para criar e gerir políticas de proteção de ap
 - Aplicações em execução em dispositivos que **não estão inscritos** em nenhuma solução de MDM.
 - Aplicações em execução em dispositivos que estão **inscritos numa solução de MDM de terceiros**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > O portal do Azure é a nova consola de administração para criar políticas de proteção de aplicações, mas também pode criar uma política de proteção de aplicações que suporte aplicações para dispositivos inscritos no Intune ao utilizar a [consola de administração do Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) para cenários MDM.
-
+> 
 > Poderá não ver todas as definições de políticas de proteção de aplicações disponíveis na consola de administração do Intune. Além disso, se criar políticas de proteção de aplicações na consola de administração do Intune e no portal do Azure, as políticas criadas no portal do Azure irão substituir as que tiverem sido criadas na consola de administração do Intune. Neste cenário, as políticas de proteção de aplicações do portal do Azure serão aplicadas às aplicações e implementadas para os utilizadores.
 
 

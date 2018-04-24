@@ -1,25 +1,25 @@
 ---
 title: Migrar o acesso condicional para o portal do Azure
 titlesuffix: Microsoft Intune
-description: "Reatribua as políticas de acesso condicional que criou anteriormente no portal clássico do Intune ao portal do Azure."
-keywords: 
+description: Reatribua as políticas de acesso condicional que criou anteriormente no portal clássico do Intune ao portal do Azure.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional do portal clássico do Intune para o portal do Azure
 
@@ -183,8 +183,8 @@ Se tiver configurado as definições do Exchange Active Sync como parte de uma p
 
 Assim que reatribuir as suas políticas de acesso condicional no portal do Azure, é importante desativar gradualmente as políticas de acesso condicional criadas anteriormente no portal clássico do Intune. Além disso, poderá ter de utilizar o mesmo grupo de segurança para aplicar as políticas de acesso condicional criadas no portal do Azure.
 
-> [!NOTE] 
-    > Antes de desativar as suas políticas de acesso condicional no portal clássico do Intune, veja a secção [Antes de começar](#before-you-begin) no início deste tópico.
+> [!NOTE]
+> Antes de desativar as suas políticas de acesso condicional no portal clássico do Intune, veja a secção [Antes de começar](#before-you-begin) no início deste tópico.
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Para desativar as políticas de acesso condicional
 

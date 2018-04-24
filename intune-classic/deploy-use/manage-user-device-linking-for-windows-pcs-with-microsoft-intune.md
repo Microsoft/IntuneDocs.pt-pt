@@ -1,28 +1,28 @@
 ---
-title: "Gerir a associação utilizador-dispositivo para PCs Windows"
+title: Gerir a associação utilizador-dispositivo para PCs Windows
 description: Como associar um utilizador a um PC Windows gerido pelo Intune.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de995840eb33c165824d2fccd135377ea6c7ad56
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 751355c34fc18cd9a1ededd498724d4652fc1368
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerir a associação utilizador-dispositivo para PCs Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. 
 
@@ -30,23 +30,23 @@ Antes de poder implementar software para um utilizador, tem de associar o utiliz
 
 Para associar um utilizador a um PC:
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que pretende associar a um utilizador).
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que pretende associar a um utilizador).
 
-2.  Selecione o PC que pretende associar a um utilizador e, em seguida, selecione **Associar Utilizador**.
+2. Selecione o PC que pretende associar a um utilizador e, em seguida, selecione **Associar Utilizador**.
 
-    A caixa de diálogo **Associar Utilizador** apresenta uma lista de utilizadores disponíveis com os respetivos nomes a apresentar, IDs de utilizador e o número de PCs a que cada utilizador está atualmente associado. Se um utilizador já estiver associado ao PC selecionado, o ID de utilizador e o nome desse utilizador serão apresentados em **Utilizador atual**. Se o PC não estiver associado a nenhum utilizador, o texto **Sem Utilizador** aparecerá em **Utilizador Atual**.
+   A caixa de diálogo **Associar Utilizador** apresenta uma lista de utilizadores disponíveis com os respetivos nomes a apresentar, IDs de utilizador e o número de PCs a que cada utilizador está atualmente associado. Se um utilizador já estiver associado ao PC selecionado, o ID de utilizador e o nome desse utilizador serão apresentados em **Utilizador atual**. Se o PC não estiver associado a nenhum utilizador, o texto **Sem Utilizador** aparecerá em **Utilizador Atual**.
 
-3.  Efetue uma das seguintes ações:
+3. Efetue uma das seguintes ações:
 
-    -   Para deixar o PC associado ao utilizador atual, se existir um, selecione **Cancelar**.
+   - Para deixar o PC associado ao utilizador atual, se existir um, selecione **Cancelar**.
 
-    -   Para remover a associação ao utilizador atual, se existir um, selecione **Remover associação**&gt; **OK**.
+   - Para remover a associação ao utilizador atual, se existir uma, selecione <strong>Remover associação **&gt; **OK</strong>.
 
-    -   Para associar o PC a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores**. Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
+   - Para associar o PC a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores**. Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
 
 > [!TIP]
 > Se pretender restringir a capacidade dos próprios utilizadores finais se ligarem a PCs, ative a opção **Restringir a capacidade dos próprios utilizadores se ligarem a PCs** na política **Definições de Agente do Microsoft Intune**.
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 
 [Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

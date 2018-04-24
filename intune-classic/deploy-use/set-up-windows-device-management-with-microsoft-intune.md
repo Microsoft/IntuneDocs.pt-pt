@@ -1,28 +1,28 @@
 ---
-title: "Configurar a gestão de dispositivos Windows com o Microsoft Intune"
-description: "Ative a gestão de dispositivos móveis (MDM) para dispositivos Windows com o Microsoft Intune."
-keywords: 
+title: Configurar a gestão de dispositivos Windows com o Microsoft Intune
+description: Ative a gestão de dispositivos móveis (MDM) para dispositivos Windows com o Microsoft Intune.
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Configurar a gestão de dispositivos Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico ajuda os administradores de TI a simplificar a inscrição de dispositivos Windows para os seus utilizadores.  Os dispositivos Windows podem ser inscritos sem passos adicionais, mas pode tornar a inscrição mais fácil para os utilizadores.
 
@@ -35,7 +35,7 @@ Dois fatores determinam como pode simplificar a inscrição de dispositivos do W
 |**Windows 10**|[Inscrição automática](#enable-windows-10-automatic-enrollment) |[Inscrição de utilizadores](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Versões do Windows anteriores**|[Inscrição de utilizadores](#enable-windows-enrollment-without-automatic-enrollment)|[Inscrição de utilizadores](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Permitir a inscrição de dispositivos Windows sem a inscrição automática
 Pode permitir que os utilizadores inscrevam os dispositivos com a inscrição automática do Azure AD Premium. Após atribuir licenças, os utilizadores podem inscrever-se depois de adicionarem a conta profissional aos dispositivos pessoais ou de associarem os dispositivos pertencentes à empresa ao Azure AD. Criar um alias de DNS (tipo de registo CNAME) torna mais fácil para os utilizadores inscreverem os respetivos dispositivos. Se criar registos de recursos DNS CNAME, os utilizadores ligam-se e inscrevem-se no Intune sem ter de introduzir o nome do servidor do Intune.
@@ -67,7 +67,7 @@ Na [Consola de administração do Intune](https://manage.microsoft.com), selecio
 Informe os seus utilizadores sobre como inscrever os dispositivos Windows e o que esperar após começarem a ser geridos.
 Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Também pode encaminhar os utilizadores para [Que informações pode o administrador de TI ver no dispositivo](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-Para obter mais informações sobre as tarefas do utilizador final, consulte [Recursos sobre a experiência do utilizador final com o Microsoft Intune](/intune/end-user-educate).
+Para obter mais informações sobre as tarefas do utilizador final, veja [Recursos sobre a experiência do utilizador final com o Microsoft Intune](/intune/end-user-educate).
 
 ### <a name="see-also"></a>Consulte também
 [Pré-requisitos para a inscrição de dispositivos no Microsoft Intune](prerequisites-for-enrollment.md)

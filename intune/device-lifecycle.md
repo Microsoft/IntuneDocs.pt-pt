@@ -1,26 +1,26 @@
 ---
-title: "Descrição geral do ciclo de vida de MDM do Microsoft Intune"
-description: "Saiba como o Intune o ajuda a gerir dispositivos através do respetivo ciclo de vida, desde a inscrição até à configuração e à eventual extinção."
-keywords: 
+title: Descrição geral do ciclo de vida de MDM do Microsoft Intune
+description: Saiba como o Intune o ajuda a gerir dispositivos através do respetivo ciclo de vida, desde a inscrição até à configuração e à eventual extinção.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 1f1ac48340c09c57ed398b7fe6cb75fa68899c63
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Descrição geral do ciclo de vida da gestão de dispositivos móveis (MDM) do Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Todos os dispositivos que gere têm um *ciclo de vida*. O Intune pode ajudá-lo a gerir este ciclo de vida desde a inscrição até à configuração, proteção e extinção do dispositivo quando já não for necessário.
 

@@ -3,8 +3,8 @@ title: Configurar as definições de educação do Intune para Windows 10
 titleSuffix: Microsoft Intune
 description: Saiba como utilizar o Intune para configurar as definições de educação do Windows 10 nos dispositivos que gere.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa631cfb799fe02aee935f524a4012f381973d8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 413ad0bab32353fc6f5b401f9a7b910b6c5cb390
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Como configurar as definições de educação do Windows 10 no Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Os perfis de educação permitem-lhe especificar os detalhes que configuram a aplicação Fazer um Teste do Windows, incluindo detalhes da conta e o URL de teste. Quando configurar esta opção, a aplicação Fazer um Teste abre-se com o teste que especificar e mais nenhuma aplicação pode ser executada no dispositivo até que o teste esteja concluído.
 
@@ -35,7 +35,7 @@ Para obter detalhes sobre a aplicação Fazer um Teste, veja [Take tests in Wind
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
-3. No painel de perfis, selecione **Criar perfil**.
+3. No painel Perfis, selecione **Criar perfil**.
 4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de restrição de dispositivos.
 5. Na lista pendente **Plataforma**, selecione **Windows 10 e posterior**.
 6. Na lista pendente **Tipo de perfil**, escolha **Perfil de educação**. 

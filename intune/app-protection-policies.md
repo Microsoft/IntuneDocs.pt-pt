@@ -1,30 +1,29 @@
 ---
-title: "Criar e implementar políticas de proteção de aplicações"
+title: Criar e implementar políticas de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: "Saiba como criar e atribuir políticas de proteção de aplicações do Microsoft Intune."
-keywords: 
+description: Saiba como criar e atribuir políticas de proteção de aplicações do Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Saiba como criar e atribuir políticas de proteção de aplicações do Microsoft Intune aos seus utilizadores. Este tópico também descreve como fazer alterações a políticas existentes.
 
@@ -37,28 +36,28 @@ As políticas de proteção de aplicações podem ser aplicadas às aplicações
 Se estiver a procurar uma lista de MAM com aplicações suportadas, veja as [Listas de aplicações de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicações
-1.  Na carga de trabalho **Aplicações móveis**, selecione **Políticas de proteção de aplicações** na secção **Gerir**. Esta seleção abre o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes.
+1. Na carga de trabalho **Aplicações móveis**, selecione **Políticas de proteção de aplicações** na secção **Gerir**. Esta seleção abre o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes.
 2. Selecione **Adicionar uma política**.
 
-  ![Captura de ecrã do painel "Adicionar uma política"](./media/app-protection-add-policy.png)
+   ![Captura de ecrã do painel "Adicionar uma política"](./media/app-protection-add-policy.png)
 
-3.  Escreva um nome para a política, adicione uma pequena descrição e selecione o tipo de plataforma para a sua política. Se for necessário, pode criar mais de uma política para cada plataforma.
+3. Escreva um nome para a política, adicione uma pequena descrição e selecione o tipo de plataforma para a sua política. Se for necessário, pode criar mais de uma política para cada plataforma.
 
-4.  Selecione **Aplicações** para abrir o painel **Aplicações**, onde é apresentada uma lista de aplicações disponíveis. Selecione uma ou mais aplicações na lista que pretende associar à política que está a criar.
+4. Selecione **Aplicações** para abrir o painel **Aplicações**, onde é apresentada uma lista de aplicações disponíveis. Selecione uma ou mais aplicações na lista que pretende associar à política que está a criar.
 5. Após escolher as aplicações, selecione a opção **Selecionar** para guardar a sua seleção.
 
     > [!IMPORTANT]
     > Tem de selecionar pelo menos uma aplicação para criar uma política.
 
-6.  Selecione **Configurar definições obrigatórias** no painel **Adicionar uma política** para abrir as **Definições**.
+6. Selecione **Configurar definições obrigatórias** no painel **Adicionar uma política** para abrir as **Definições**.
 
-    Existem duas categorias de definições de política: **Reposicionamento de Dados** e **Acesso**.  As políticas de reposicionamento de dados são aplicáveis à entrada e saída de dados das aplicações. As políticas de acesso determinam a forma como o utilizador final acede às aplicações num contexto de trabalho.
-    Para começar, as definições de política têm valores predefinidos. Se os valores predefinidos cumprirem os seus requisitos, não precisa de fazer alterações.
+   Existem duas categorias de definições de política: **Reposicionamento de Dados** e **Acesso**.  As políticas de reposicionamento de dados são aplicáveis à entrada e saída de dados das aplicações. As políticas de acesso determinam a forma como o utilizador final acede às aplicações num contexto de trabalho.
+   Para começar, as definições de política têm valores predefinidos. Se os valores predefinidos cumprirem os seus requisitos, não precisa de fazer alterações.
 
-    > [!TIP]
-    > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional. Quando os utilizadores finais utilizam a aplicação para realizar uma tarefa pessoal, estes não são afetados por estas políticas.
+   > [!TIP]
+   > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional. Quando os utilizadores finais utilizam a aplicação para realizar uma tarefa pessoal, estes não são afetados por estas políticas.
 
-7.  Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**. Escolha **Criar** para criar a política e guardar as suas definições.
+7. Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**. Escolha **Criar** para criar a política e guardar as suas definições.
 8. Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**.
 9. Escolha **Criar** para criar a política e guardar as suas definições.
 
@@ -84,7 +83,7 @@ Apenas os utilizadores a que foram atribuídas licenças do Microsoft Intune sã
 >[!IMPORTANT]
 > Se estiver a utilizar o Intune com o Configuration Manager para gerir os seus dispositivos, a política só é aplicada aos utilizadores diretamente no grupo que selecionou. Os membros dos grupos subordinados aninhados dentro do grupo que selecionou não são afetados.
 
-Os utilizadores finais podem transferir as aplicações a partir da Apple Store ou do Google Play. Para obter mais informações, consulte:
+Os utilizadores finais podem transferir as aplicações a partir da Apple Store ou do Google Play. Para obter mais informações, veja:
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md)
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-ios.md)
 
@@ -119,6 +118,16 @@ Para ver o efeito das alterações imediatamente, o utilizador final tem de term
 2.  Selecione **Definições da política** para abrir o painel **Definições da política**.
 
 3.  Altere as definições e selecione o ícone **Guardar** para guardar as alterações.
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>Aplicar políticas de proteção de aplicações com base no estado de gestão do dispositivo
+Em muitas organizações, é comum permitir que os utilizadores finais utilizem os dispositivos geridos pela MDM (Mobile Device Management) no Intune, como os dispositivos que são propriedade da empresa, e os dispositivos não geridos protegidos apenas com as políticas de proteção de aplicações do Intune, como os dispositivos BYOD.
+
+Uma vez que as políticas de proteção de aplicações do Intune são direcionadas para a identidade do utilizador, as definições de proteção para um utilizador aplicam-se, normalmente, a dispositivos inscritos (geridos pela MDM) e a dispositivos não inscritos (sem gestão pela MDM). Portanto, pode direcionar uma política de proteção de aplicações do Intune para dispositivos iOS e Android inscritos ou não inscritos no Intune. Pode ter uma política de proteção para dispositivos não geridos em que são aplicados controlos de prevenção de perda de dados (DLP) rigorosos e uma política de proteção separada para dispositivos geridos pela MDM em que os controlos de DLP podem ser um pouco mais flexíveis. 
+
+Para criar estas políticas, navegue até **Aplicações móveis** > **Políticas de proteção de aplicações** na consola do Intune e clique em **Adicionar uma política**. Também pode editar uma política de proteção de aplicações existente. Se quiser aplicar a política de proteção de aplicações a dispositivos geridos e não geridos, confirme que a opção **Direcionar para todos os tipos de aplicações** está definida como **Sim**, o valor predefinido. Se quiser atribuir especificamente com base no estado de gestão, defina a opção **Direcionar para todos os tipos de aplicações** para **Não**. 
+
+> [!NOTE]
+> Para obter informações de suporte específicas do iOS sobre as políticas de proteção de aplicações com base no estado de gestão dos dispositivos, veja [Políticas de proteção de MAM direcionadas com base no estado de gestão](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
 
 ## <a name="policy-settings"></a>Definições de política
 Para ver uma lista completa das definições de política para iOS e Android, selecione uma das seguintes ligações:

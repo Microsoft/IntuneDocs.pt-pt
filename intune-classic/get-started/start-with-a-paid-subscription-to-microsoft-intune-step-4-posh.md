@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f6cd6f71b3f78a7b77435d1c7474c1bd672b8b95
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b6c0349d8e8c3b20d4674706d3cdf52234bab1c2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-intune-licenses-using-powershell"></a>Gerir licenças do Intune através do PowerShell
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico informa os administradores sobre como podem utilizar o PowerShell para gerir as licenças de utilizador do Intune.
 
@@ -68,5 +68,5 @@ Verificar com:
 
 ### <a name="next-steps"></a>Próximos passos
 Parabéns! Acabou de concluir o passo 4 do *Guia de introdução do Intune*.
->[!div class="step-by-step"]
-(/intune/custom-domain-name-configure) [&larr; **Sincronizar utilizadores com o Intune**](/intune/custom-domain-name-configure)[**Organizar utilizadores e dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+> [!div class="step-by-step"]
+> (/intune/custom-domain-name-configure) [&larr; **Sincronizar utilizadores com o Intune**](/intune/custom-domain-name-configure)[**Organizar utilizadores e dispositivos** &rarr;](./start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  

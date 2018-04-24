@@ -1,28 +1,28 @@
 ---
-title: "Validar a configuração de MAM"
-description: "Este tópico descreve como pode testar e confirmar se a sua política de MAM está corretamente definida e a funcionar conforme esperado."
-keywords: 
+title: Validar a configuração de MAM
+description: Este tópico descreve como pode testar e confirmar se a sua política de MAM está corretamente definida e a funcionar conforme esperado.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.openlocfilehash: e0cb44177f830236865dce0ab68bb1084fcebc2d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6f11c2f2af53813040417a8f40e983b5c88d5189
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-your-mobile-application-management-setup"></a>Validar a configuração de gestão de aplicações móveis
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico fornece informações sobre como verificar a existência de problemas depois de configurar a gestão de aplicações móveis (MAM). Esta orientação aplica-se às políticas de MAM no portal do Azure.
 
@@ -43,7 +43,7 @@ Se os testes mostrarem que o comportamento da política de MAM não funciona com
 
 2. Selecione um utilizador da lista ou procure e escolha um utilizador e, em seguida, escolha **Selecionar utilizador**. No topo da coluna **Relatórios de aplicação**, irá ver se o utilizador está licenciado para MAM. Abaixo, irá ver se o utilizador está licenciado para O365 e o estado da aplicação para todos os dispositivos do utilizador.
 
-![Estado da aplicação para MAM](..\media\ts-mam-user-apps.png)
+![Estado da aplicação para MAM](../media/ts-mam-user-apps.png)
 
 ### <a name="what-to-do"></a>O que fazer
 Eis as ações a efetuar com base no estado de utilizador:
@@ -54,6 +54,6 @@ Eis as ações a efetuar com base no estado de utilizador:
 - Certifique-se de que estas condições são aplicadas em todos os utilizadores aos quais pretende aplicar as políticas de MAM.
 
 ### <a name="see-also"></a>Consulte também
-[Configurar políticas de gestão de aplicações móveis com o Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Configurar políticas de gestão de aplicações móveis com o Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Proteger os dados da aplicação através de políticas de gestão de aplicações móveis com o Microsoft Intune](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A iOS App Store permite-lhe comprar várias licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente.
 
@@ -86,12 +86,12 @@ Certifique-se de que, ao configurar um dispositivo para um novo utilizador do In
 2.  No painel da lista de tokens VPP, selecione **Criar**.
 4. No painel **Criar token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – se ainda não o fez, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Após a inscrição, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
-    - **ID Apple** – Introduza o ID Apple da conta associada ao programa de compra em volume.
+    - **ID Apple** – introduza o ID Apple da conta associada ao programa de compra em volume.
     - **Pais/Região** – selecione a loja do país do VPP.  O Intune sincroniza as aplicações VPP para todas as regiões a partir da loja do país do VPP especificada.
         > [!WARNING]  
         > Alterar o país irá atualizar o URL da loja e os metadados das aplicações na próxima sincronização com o serviço da Apple para aplicações criadas com este token. A aplicação não será atualizada se não existir na loja do novo país.
 
-    - **Tipo de conta VPP** – Escolha entre **Empresas** ou **Educação**.
+    - **Tipo de conta VPP** – escolha entre **Empresas** ou **Educação**.
     - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativadas, o Intune atualiza todas as aplicações que comprou para o token especificado através do serviço Intune quando o dispositivo dá entrada.
 Deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este dá entrada.
 4. Quando tiver terminado, selecione **Criar**.
@@ -152,6 +152,17 @@ Para revogar a licença de todas as aplicações VPP de um determinado token VPP
 ## <a name="further-information"></a>Informações adicionais
 
 Quando um utilizador com um dispositivo elegível tenta instalar uma aplicação do VPP num dispositivo pela primeira vez, é-lhe pedido para aderir ao Apple Volume Purchase Program. O utilizador tem de o fazer antes de continuar a instalação da aplicação. O convite para aderir ao Apple Volume Purchase Program exige que o utilizador possa utilizar a aplicação iTunes no dispositivo iOS. Se tiver definido uma política para desativar a aplicação da Loja do iTunes, o licenciamento baseado no utilizador para aplicações VPP não funciona. A solução é permitir a aplicação iTunes ao remover a política ou utilizar o licenciamento baseado no dispositivo.
+
+## <a name="frequently-asked-questions"></a>Perguntas mais frequentes
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Quanto tempo demora o portal a atualizar a contagem de licenças depois de uma aplicação ser instalada ou removida do dispositivo?
+A licença deverá ser atualizada dentro de algumas horas após a instalação ou desinstalação de uma aplicação. Tenha em atenção que mesmo se o utilizador final remover a aplicação do dispositivo, a licença continuará atribuída a esse utilizador ou dispositivo.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>É possível exceder as capacidades de subscrição de uma aplicação e em que circunstâncias poderia isso acontecer?
+Sim. O administrador do Intune pode exceder as capacidades de subscrição de uma aplicação. Por exemplo, se o administrador adquirir 100 licenças para a aplicação XYZ e, em seguida, direcionar a aplicação para um grupo com 500 membros. Os primeiros 100 membros (utilizadores ou dispositivos) irão ter uma licença atribuída, mas a atribuição de licenças aos restantes membros falhará.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>É verdade que o Intune sincroniza automaticamente as licenças de aplicação com a Apple todos os dias?
+O Intune sincroniza as licenças de aplicação com a Apple a cada 15 horas.
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -1,22 +1,22 @@
 ---
-title: "Reduzir os custos do suporte técnico"
+title: Reduzir os custos do suporte técnico
 titlesuffix: Microsoft Intune
-description: "Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service"
-keywords: "Reposição de palavra-passe SSPR do Azure Active Directory"
+description: Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service
+keywords: Reposição de palavra-passe SSPR do Azure Active Directory
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: e2bd79e33080a0cc402d38f45b72ddbe9fd7816b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce9cdfa2f1f9414bd0517ff9fe12a5cca64c63cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service
 

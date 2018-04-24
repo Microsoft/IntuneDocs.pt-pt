@@ -1,27 +1,27 @@
 ---
-title: "Atualizar dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs"
-description: "Crie um perfil de dispositivo no Microsoft Intune para atualizar dispositivos Windows 10 para versões mais recentes. Consulte também os caminhos de atualização suportados para o Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic e Mobile."
-keywords: 
+title: Atualizar dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs
+description: Crie um perfil de dispositivo no Microsoft Intune para atualizar dispositivos Windows 10 para versões mais recentes. Consulte também os caminhos de atualização suportados para o Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic e Mobile.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Configurar o perfil de atualização de edição do Windows 10 no Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configure um perfil de atualização no Intune para atualizar automaticamente os dispositivos que executam a edição Windows 10 para uma edição diferente. Consulte também os caminhos de atualização suportados.
 
@@ -126,12 +126,12 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 3. Selecione **Configuração do dispositivo**, selecione **Perfis** e, em seguida, selecione **Criar Perfil**.
 4. Introduza um **Nome** e uma **Descrição** para o perfil de atualização da edição.
 5. Na lista pendente **Plataforma**, escolha **Windows 10 e posterior**.
-6. Na lista pendente **Tipo de perfil**, escolha **Atualização da Edição**.
+6. Na lista pendente **Tipo de perfil**, escolha **Atualização de Edição**.
 7. Nas propriedades **Atualização da Edição**, introduza as seguintes definições:
-  - **Edição para a qual atualizar** – na lista pendente, selecione a versão do Windows 10 Desktop, do Windows 10 Holographic ou do Windows 10 Mobile para a qual está a atualizar os dispositivos visados.
-  - **Chave de Produto** – introduza a chave de produto que recebeu da Microsoft, que pode servir para atualizar todos os dispositivos Windows 10 Desktop visados. 
+   - **Edição para a qual atualizar** – na lista pendente, selecione a versão do Windows 10 Desktop, do Windows 10 Holographic ou do Windows 10 Mobile para a qual está a atualizar os dispositivos visados.
+   - **Chave de Produto** – introduza a chave de produto que recebeu da Microsoft, que pode servir para atualizar todos os dispositivos Windows 10 Desktop visados. 
     Depois de criar uma política que contém uma chave de produto, a chave não pode ser atualizada e é ocultada por motivos de segurança. Para alterar a chave de produto, introduza novamente a chave completa.
-  - **Ficheiro de Licença** – selecione **Procurar** para selecionar o ficheiro de licença que recebeu da Microsoft. Este ficheiro de licença contém informações de licença da edição Windows Holographic ou Windows 10 Mobile para a qual está a atualizar os dispositivos visados.
+   - **Ficheiro de Licença** – selecione **Procurar** para selecionar o ficheiro de licença que recebeu da Microsoft. Este ficheiro de licença contém informações de licença da edição Windows Holographic ou Windows 10 Mobile para a qual está a atualizar os dispositivos visados.
 8. Quando terminar, selecione **Criar** para guardar as suas alterações.
 
 O perfil será criado e apresentado nos perfis.

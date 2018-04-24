@@ -1,24 +1,24 @@
 ---
 title: Policy
 titlesuffix: Microsoft Intune
-description: "Tópico de referência para a categoria Policy das coleções de entidades na API do Armazém de Dados do Intune."
-keywords: "Armazém de Dados do Intune"
+description: Tópico de referência para a categoria Policy das coleções de entidades na API do Armazém de Dados do Intune.
+keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
@@ -157,10 +157,12 @@ PolicyKey|A chave de política pode ser acompanhada pela Política para obter o 
 
 A tabela seguinte mostra o número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia. O número apresentado reflete os perfis de dados por Tipo de Política. Por exemplo, se um utilizador estiver no estado com êxito em todas as políticas atribuídas, sobe o contador com êxito em um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros. A entidade PolicyUserActivity apresenta uma lista de quantos utilizadores estão em cada um dos estados num determinado dia nos últimos 30 dias.
 
-|Propriedade  |Descrição  |Exemplo  |
-|---------|---------|---------|
-|DateKey|Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.|20160703|
-|Pending|Número de Dispositivos exclusivos no estado pendente.|123|
-|Succeeded|Número de Dispositivos exclusivos no estado com êxito.|12|
-PolicyKey|A chave de política pode ser acompanhada pela Política para obter o policyName.|Linha de base do Windows 10|
-|Error|Número de Dispositivos exclusivos no estado com erros.|10|
+
+| Propriedade  |                                         Descrição                                         |       Exemplo       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. |      20160703       |
+|  Pending  |                         Número de Dispositivos exclusivos no estado pendente.                          |         123         |
+| Succeeded |                         Número de Dispositivos exclusivos no estado com êxito.                          |         12          |
+| PolicyKey |                A chave de política pode ser acompanhada pela Política para obter o policyName.                 | Linha de base do Windows 10 |
+|   Error   |                          Número de Dispositivos exclusivos no estado com erros.                           |         10          |
+

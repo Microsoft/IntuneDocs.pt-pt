@@ -1,25 +1,25 @@
 ---
-title: "Compreender a experiência de inscrições de dispositivos iOS"
+title: Compreender a experiência de inscrições de dispositivos iOS
 titlesuffix: Microsoft Intune
-description: "Conheça a experiência de inscrição ao efetuar uma experiência de inscrição completa de um dispositivo iOS."
-keywords: 
+description: Conheça a experiência de inscrição ao efetuar uma experiência de inscrição completa de um dispositivo iOS.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a31722bbaf43b099c42673e4a807a8e896bf1fd2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Compreender a experiência do utilizador que está a inscrever um dispositivo iOS
 
@@ -27,7 +27,7 @@ O Microsoft Intune ajuda a sua força de trabalho a ser produtiva em dispositivo
 
 | O que o administrador de TI não pode ver | O que o administrador de TI pode ver |
 |---|---|
-| Histórico de chamadas e navegação na Web | Modelo |
+| Histórico de chamadas e navegação na Web | Model |
 | Localização | Número de série |
 | E-mail pessoal | Versão do sistema operativo |
 | Mensagens de texto | Nomes das aplicações |
@@ -57,7 +57,7 @@ A inscrição de um dispositivo é a primeira experiência que muitos utilizador
 15. A mensagem "A inscrever o dispositivo" é apresentada no ecrã, seguida de outra mensagem a indicar que o dispositivo foi inscrito com êxito. Será apresentado um pop-up a pedir para abrir a página no Portal da Empresa. Toque em **Abrir**.
 16. Irá regressar ao ecrã **Configuração do Acesso à Empresa**. Se não tiver configurado políticas de teste, o dispositivo deverá aparecer como estando em conformidade. Se tiver políticas de teste, ao tocar em **Conformidade do Dispositivo** será apresentada uma lista de tarefas a fazer que terá de concluir para tornar o dispositivo seguro.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Introdução à adição de aplicações](get-started-apps.md) – localize e adicione aplicações a dispositivos para que os seus funcionários comecem a trabalhar.
 
@@ -65,4 +65,4 @@ A inscrição de um dispositivo é a primeira experiência que muitos utilizador
 
 * [Opções de inscrição do Intune](enrollment-options.md)
 * [Ativar a funcionalidade Bring Your Own Device (Traga o Seu Próprio Dispositivo) com o Intune](byod-enable.md)
-* [Informar os seus utilizadores finais sobre a inscrição e gestão de dispositivos](end-user-educate.md)
+* [Informar os seus utilizador finais sobre a inscrição e gestão de dispositivos](end-user-educate.md)

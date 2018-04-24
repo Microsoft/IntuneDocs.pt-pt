@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -26,7 +26,7 @@ O RBAC ajuda-o a controlar quem pode executar várias tarefas do Intune na sua o
 
 - **Definição de função**: o nome de uma função, os recursos que gere e as permissões concedidas a cada recurso.
 - **Membros**: os grupos de utilizadores aos quais são concedidas as permissões.
-- **Âmbito**: os grupos de utilizadores ou dispositivos que os membros podem gerir.
+- **Âmbito**: os grupos de utilizadores ou dispositivos que os membros podem direcionar para a implementação de políticas ou aplicações ou para efetuar tarefas remotas.
 - **Atribuição**: após a configuração da definição, dos membros e do âmbito, a função é atribuída.
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
@@ -60,7 +60,7 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 - **Gestor de Políticas e Perfis**: gere a política de conformidade, perfis de configuração, inscrição da Apple e identificadores de dispositivos empresariais.
 - **Operador Só de Leitura**: vê as informações do utilizador, do dispositivo, da inscrição, da configuração e da aplicação. Não pode fazer alterações ao Intune.
 - **Gestor de Aplicações**: gere aplicações móveis e geridas e pode ler as informações do dispositivo.
-- **Administrador de Escola**: gere os dispositivos Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
+- **Administrador de Escola**: gere os dispositivos com o Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
 
 |Permissão|Operação|
 |---|---|
@@ -88,8 +88,8 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 3. No painel Função personalizada, selecione **Atribuir**.
 
 4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
-    - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+    - **Membros** – selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
+    - **Âmbito** – selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 
@@ -133,8 +133,8 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 3. No painel Função personalizada, selecione **Atribuir**.
 
 4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
-    - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+    - **Membros** – selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
+    - **Âmbito** – selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 

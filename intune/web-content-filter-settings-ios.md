@@ -1,28 +1,28 @@
 ---
-title: "Definições de filtros de conteúdo Web do Microsoft Intune para dispositivos iOS"
-titlesuffix: 
-description: "Saiba quais são as definições do Microsoft Intune que pode utilizar para permitir e bloquear o acesso a sites a partir de dispositivos iOS."
-keywords: 
+title: Definições de filtros de conteúdo Web do Microsoft Intune para dispositivos iOS
+titlesuffix: ''
+description: Saiba quais são as definições do Microsoft Intune que pode utilizar para permitir e bloquear o acesso a sites a partir de dispositivos iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Definições de filtros de conteúdo Web para dispositivos iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra-lhe as definições do Microsoft Intune que pode utilizar para controlar o acesso do URL do browser a partir de dispositivos iOS.
 
@@ -58,12 +58,12 @@ Se não especificar nenhum URL, os utilizadores finais não poderão aceder a si
 
 1. No painel **Filtro de Conteúdo da Web**, configure as seguintes definições para todos os sites que pretende permitir:
     - **URL** – introduza o URL do site que pretende permitir, por exemplo, **http://www.contoso.com**.
-    - **Caminho do Marcador** –introduza o caminho onde pretende armazenar o marcador, por exemplo **/Contoso/Business Apps**. Se não incluir um caminho, o marcador será adicionado à pasta de marcadores predefinida no dispositivo.
+    - **Caminho do Marcador** – introduza o caminho onde pretende armazenar o marcador, por exemplo **/Contoso/Business Apps**. Se não incluir um caminho, o marcador será adicionado à pasta de marcadores predefinida no dispositivo.
     - **Título** – introduza um título descritivo para o marcador.
 2. Clique em **Adicionar** depois de introduzir as informações de cada site.
 3. Quando concluir o procedimento, clique em **OK**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Os seguintes URLs são automaticamente permitidos pelo Intune.
 > - www.microsoft.com
 > - www.microsoft.net

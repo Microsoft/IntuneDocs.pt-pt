@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: daa936b43c53d14d57f2c48f80dff7e908354054
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 35b47dbc789e7f2ea2b200b8c22ff3bae6152f40
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utilizar os alertas para receber notificações do Microsoft Intune
 
-[!INCLUDE[classic portal](../includes/classic-portal.md)]
+[!INCLUDE [classic portal](../includes/classic-portal.md)]
 
 Os alertas mantêm-no a par do que está a acontecer no Microsoft Intune. Por exemplo, os alertas podem notificá-lo sobre os seguintes eventos:
 - Um problema com o Exchange Connector que afeta a gestão de dispositivos móveis

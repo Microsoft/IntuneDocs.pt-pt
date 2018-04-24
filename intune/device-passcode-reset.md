@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,30 +13,30 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cca5922f036711093469e71489e267af53f05a9
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 19b30315fa26dd53b5e383bc9e4bef5c65b89962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Para criar um novo código de acesso para um dispositivo, utilize a ação **Remover código de acesso**.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
-- Windows Phone 8.1 (não associados ao Azure Active Directory), incluindo as versões até à Atualização para Criativos do Windows 10
-- Atualização para Criativos do Windows 10 e posterior
-- iOS
-- Versões do Android anteriores ao Android 7
+- Dispositivos Android inscritos com um Perfil de Trabalho com a versão 7.0 e posterior
+- Dispositivos Android com a versão 6.0 ou anterior
+- iOS 
+     
+## <a name="unsupported-platforms"></a>Plataformas não suportadas
 
-Esta funcionalidade não é suportada para os seguintes sistemas:
-
-- Windows
+- Dispositivos Android inscritos com um Perfil de Trabalho com a versão 6.0 e anterior
+- Dispositivos Android com a versão 7.0 ou posterior
 - macOS
-- Android for Work
+- Windows
 
 ## <a name="reset-a-passcode"></a>Repor um código de acesso
 
@@ -44,6 +44,14 @@ Esta funcionalidade não é suportada para os seguintes sistemas:
 2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.
+
+## <a name="resetting-android-for-work-passcodes"></a>Repor códigos de acesso do Android for Work
+
+Os dispositivos Android for Work suportados recebem uma nova palavra-passe de desbloqueio do dispositivo ou um desafio de perfil gerido para o utilizador final. Para dispositivos Android 7.0 ou posterior com Perfis de Trabalho, os utilizadores finais receberão notificações para ativar o respetivo token de reposição de código de acesso imediatamente após a inscrição estar concluída. A notificação é apresentada se for necessário definir uma palavra-passe de Perfil de Trabalho. Depois de introduzir o respetivo código de acesso, a notificação é dispensada.
+
+## <a name="resetting-ios-passcodes"></a>Repor códigos de acesso em iOS
+
+Os códigos de acesso são removidos dos dispositivos iOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições. 
 
 ## <a name="next-steps"></a>Próximos passos
 

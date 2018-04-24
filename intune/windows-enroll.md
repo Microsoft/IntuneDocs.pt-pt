@@ -15,15 +15,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este tópico ajuda os administradores de TI a simplificar a inscrição de dispositivos Windows para os seus utilizadores. Assim que tiver [configurado o Intune](setup-steps.md), os utilizadores inscrevem os dispositivos do Windows ao [iniciar sessão](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) na respetiva conta escolar ou profissional.  
 
@@ -48,7 +48,7 @@ As organizações que podem utilizar a inscrição automática também podem con
 **Suporte para múltiplos utilizadores**<br>
 Os dispositivos a executar a Atualização para Criativos do Windows 10 e que estejam associados ao domínio do Azure Active Directory são agora suportados para a gestão de vários utilizadores pelo Intune. Quando os utilizadores padrão iniciam sessão com as suas credenciais do Azure AD, recebem aplicações e políticas atribuídas ao respetivo nome de utilizador. Atualmente, os utilizadores não podem utilizar o Portal da Empresa para cenários de self-service, tais como instalar aplicações.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplificar a inscrição do Windows sem o Azure AD Premium
 Pode simplificar a inscrição dos utilizadores através da criação de um alias (tipo de registo CNAME) de servidor de nomes de domínio (DNS), que redireciona automaticamente os pedidos de inscrição para os servidores do Intune. Se não criar um registo de recurso DNS CNAME, os utilizadores que tentarem ligar ao Intune terão de introduzir o nome do servidor Intune durante a inscrição.

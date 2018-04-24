@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscrever dispositivos iOS com o Apple Configurator ao utilizar o Assistente de Configuração
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune suporta a inscrição de dispositivos iOS pertencentes à empresa com o [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) em execução num computador Mac. Este processo efetua a reposição de fábrica do dispositivo e prepara-o para executar o Assistente de Configuração, ao instalar as políticas da empresa para o novo utilizador do dispositivo.
 
@@ -59,7 +59,7 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com) aceda a **Policy** &gt; **Corporate Device Enrollment** e, em seguida, selecione **Add**.
 
-  ![Criar perfil de inscrição de dispositivos](../media/pol-sa-corp-enroll.png)
+   ![Criar perfil de inscrição de dispositivos](../media/pol-sa-corp-enroll.png)
 
 2. Introduza os detalhes dos perfis de dispositivo:
 
@@ -80,7 +80,7 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
    -  **Device Enrollment Program**&mdash;O Device Enrollment Program (DEP) da Apple não pode ser utilizado com a inscrição do Assistente de Configuração. Certifique-se de que a alternância de modo está definida como **off**.
 
-3.  Clique em **Save Profile** para adicionar o perfil.
+3. Clique em **Save Profile** para adicionar o perfil.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Adicionar dispositivos iOS para inscrição com o Assistente de Configuração
 
@@ -90,29 +90,29 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas a 
 
    ![Caixa de diálogo Adicionar dispositivos](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Upload a CSV file containing serial numbers**&mdash;crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
+   - **Upload a CSV file containing serial numbers**&mdash;crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
 
-    |||
-    |-|-|
-    |&lt;Série n.º 1&gt;|&lt;Detalhes do Dispositivo n.º 1&gt;|
-    |&lt;Série n.º2&gt;|&lt;Detalhes do Dispositivo n.º 2&gt;|
+     |||
+     |-|-|
+     |&lt;Série n.º 1&gt;|&lt;Detalhes do Dispositivo n.º 1&gt;|
+     |&lt;Série n.º2&gt;|&lt;Detalhes do Dispositivo n.º 2&gt;|
 
-  Se abrir este ficheiro .csv num editor de texto, este será apresentado como:
+   Se abrir este ficheiro .csv num editor de texto, este será apresentado como:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Adicionar manualmente os detalhes dos dispositivos**&mdash;Introduza os números de série e todas as notas ou detalhes de até 15 dispositivos.
+   -  **Adicionar manualmente os detalhes dos dispositivos**&mdash;Introduza os números de série e todas as notas ou detalhes de até 15 dispositivos.
 
-  Pode confirmar os números de série no painel **Review Devices**. Também pode decidir se quer substituir os **Details** dos números de série que serão importados novamente ou pode desmarcar a caixa **Overwrite** para manter os Detalhes atuais.
+   Pode confirmar os números de série no painel **Review Devices**. Também pode decidir se quer substituir os **Details** dos números de série que serão importados novamente ou pode desmarcar a caixa **Overwrite** para manter os Detalhes atuais.
 
-  > [!NOTE]
-  > Na consola de administrador existente do Intune, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes por números de série individuais. No novo portal do Azure, apenas poderá substituir os detalhes de todos os números de série ou ignorar os novos detalhes de todos os números de série.
+   > [!NOTE]
+   > Na consola de administrador existente do Intune, os administradores podem aceitar detalhes associados de um CSV carregado e substituir os detalhes existentes por números de série individuais. No novo portal do Azure, apenas poderá substituir os detalhes de todos os números de série ou ignorar os novos detalhes de todos os números de série.
 
-  > [!NOTE]
-  > Posteriormente, se quiser remover dispositivos pertencentes à empresa da gestão do Intune, poderá ter de aceder ao grupo de dispositivos **Por Números de Série iOS** em **Dispositivos Pré-inscritos empresariais** e remova o número de série do dispositivo do Intune para desativar a inscrição de dispositivos. Se o Intune efetuar um procedimento de recuperação após desastre na altura em que remover os números de série, terá de verificar que apenas os números de série dos dispositivos ativos estão presentes nesse grupo.
+   > [!NOTE]
+   > Posteriormente, se quiser remover dispositivos pertencentes à empresa da gestão do Intune, poderá ter de aceder ao grupo de dispositivos **Por Números de Série iOS** em **Dispositivos Pré-inscritos empresariais** e remova o número de série do dispositivo do Intune para desativar a inscrição de dispositivos. Se o Intune efetuar um procedimento de recuperação após desastre na altura em que remover os números de série, terá de verificar que apenas os números de série dos dispositivos ativos estão presentes nesse grupo.
 
 2. Selecione **Next**.
 
@@ -137,7 +137,7 @@ Especifique o perfil a atribuir aos dispositivos adicionados a partir da lista d
 
 Os dispositivos iOS são ligados ao computador Mac e inscritos na gestão de dispositivos móveis.
 
-1.  Num computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e selecione **Preferências**.
+1. Num computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e selecione **Preferências**.
 
    > [!WARNING]
    > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando liga o dispositivo.
@@ -148,12 +148,12 @@ Os dispositivos iOS são ligados ao computador Mac e inscritos na gestão de dis
 
    Pode ignorar o aviso "URL do servidor não verificado" em segurança. Para continuar, selecione **Seguinte** até que o assistente esteja concluído.
 
-4.  Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
+4. Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
 
-    > [!WARNING]
-    > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando inicia o Assistente de Configuração.
+   > [!WARNING]
+   > Os dispositivos serão repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando inicia o Assistente de Configuração.
 
-5.  Selecione **Preparar**. No painel Preparar o Dispositivo iOS, selecione **Manual** e, em seguida, selecione **Seguinte**.
+5. Selecione **Preparar**. No painel Preparar o Dispositivo iOS, selecione **Manual** e, em seguida, selecione **Seguinte**.
 
 6. No painel Inscrever no Servidor MDM, selecione o nome do servidor que criou e selecione **Seguinte**.
 

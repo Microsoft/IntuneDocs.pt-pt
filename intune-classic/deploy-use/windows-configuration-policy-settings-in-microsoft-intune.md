@@ -1,29 +1,29 @@
 ﻿---
-title: "Definições de políticas do Windows"
-description: "Utilize a política de configuração geral do Windows (Windows 8.1 e posterior) do Intune para configurar as definições para dispositivos Windows 8 e Windows 8.1 inscritos."
-keywords: 
+title: Definições de políticas do Windows
+description: Utilize a política de configuração geral do Windows (Windows 8.1 e posterior) do Intune para configurar as definições para dispositivos Windows 8 e Windows 8.1 inscritos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Definições de política do Windows no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilize a **política de configuração geral do Windows (Windows 8.1 e posterior)** do Microsoft Intune para configurar as definições seguintes para dispositivos Windows 8, Windows 8.1 e Windows RT 8.1 inscritos:
 
@@ -49,9 +49,10 @@ Utilize a **política de configuração geral do Windows (Windows 8.1 e posterio
 
 ## <a name="encryption-settings"></a>Definições de encriptação
 
-|Nome da definição|Detalhes|
-|----------------|-----|
-|**Encriptação obrigatória no dispositivo móvel**<sup>1</sup>|Requer que os ficheiros no dispositivo estejam encriptados.|
+|                           Nome da definição                           |                     Detalhes                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>Encriptação obrigatória no dispositivo móvel</strong><sup>1</sup> | Requer que os ficheiros no dispositivo estejam encriptados. |
+
 <sup>1</sup> Informações adicionais para dispositivos com o Windows 8.1
 
 -   Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](http://support.microsoft.com/kb/3013816) em cada dispositivo.

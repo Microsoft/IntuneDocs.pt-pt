@@ -1,30 +1,30 @@
 ---
-title: "O que são as políticas de proteção de aplicações"
+title: O que são as políticas de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: "Saiba como as políticas de proteção de aplicações do Microsoft Intune ajudam a proteger os dados da sua empresa e evitar perdas de dados."
-keywords: 
+description: Saiba como as políticas de proteção de aplicações do Microsoft Intune ajudam a proteger os dados da sua empresa e evitar perdas de dados.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4483baa68267b7a7218a4e78fe5275d1ea8d330
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As políticas de proteção de aplicações do Microsoft Intune ajudam a proteger os dados da sua empresa e evitar perdas de dados.
 
@@ -37,12 +37,12 @@ As políticas de proteção de aplicações podem ser configuradas para aplicaç
 
 - **Inscritos no Microsoft Intune:** os dispositivos desta categoria pertencem, normalmente, à empresa.
 
--   **Inscritos numa solução de gestão de dispositivos móveis (MDM) de terceiros:** os dispositivos desta categoria pertencem, normalmente, à empresa.
+- **Inscritos numa solução de gestão de dispositivos móveis (MDM) de terceiros:** os dispositivos desta categoria pertencem, normalmente, à empresa.
 
   > [!NOTE]
   > As políticas de gestão de aplicações móveis não devem ser utilizadas com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
 
--   **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** os dispositivos desta categoria pertencem, normalmente, aos funcionários e não são geridos ou não estão inscritos no Intune ou noutras soluções de MDM de terceiros.
+- **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** os dispositivos desta categoria pertencem, normalmente, aos funcionários e não são geridos ou não estão inscritos no Intune ou noutras soluções de MDM de terceiros.
 
 > [!IMPORTANT]
 > Pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. As políticas de proteção de aplicações não são suportadas para aplicações que se ligam aos serviços do SharePoint ou do Exchange no local.
@@ -131,7 +131,7 @@ Por exemplo, quando um utilizador inicia a aplicação OneDrive com a sua conta 
 
 - Saiba mais sobre as aplicações que suportam [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
-##  <a name="next-steps"></a>Passos seguintes
+##  <a name="next-steps"></a>Próximos passos
 
 [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
 

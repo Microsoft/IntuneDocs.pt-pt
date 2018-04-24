@@ -1,28 +1,28 @@
 ---
-title: "Criar uma política de acesso condicional do Exchange"
+title: Criar uma política de acesso condicional do Exchange
 titlesuffix: Microsoft Intune
 description: Configure o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo mostra-lhe como configurar o acesso condicional do Exchange no local com base na conformidade do dispositivo.
 
@@ -84,7 +84,7 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 1. Selecione **Acesso no local**. O painel **Acesso no local** mostra o estado da política de acesso condicional e os dispositivos que são afetados pelo mesma.
 
-1. Em **Gerir**, escolha **Acesso no local ao Exchange**.
+1. Em **Gerir**, escolha **Acesso ao Exchange no local**.
 
 1. No painel **Acesso no local ao Exchange**, selecione **Sim** para ativar o controlo de acesso no local ao Exchange.
 

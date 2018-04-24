@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b39f7cac8c09813eb9db94e761ec6fa6ab53c7a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Criar Política de conformidade do dispositivo do Lookout no Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Lookout permite detetar ameaças em dispositivos móveis e avaliar o risco nesses dispositivos. Pode criar uma regra de política de conformidade que avalie o risco para determinar se o dispositivo está em conformidade. Em seguida, pode utilizar a política de acesso condicional para bloquear o acesso aos serviços com base na conformidade do dispositivo.
 
@@ -36,13 +36,13 @@ Pré-requisitos da política de conformidade com a Defesa Contra Ameaças para D
 Como parte da configuração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout, na [Consola do Lookout](https://aad.lookout.com), criou uma política que classifica as várias ameaças como sendo de nível alto, médio e baixo. Na política de conformidade do Intune, configurará o nível de ameaça máximo permitido.
 
 1. Na [consola do administrador do Intune](https://manage.microsoft.com), aceda à página **Políticas de Conformidade**. Pode utilizar uma política de conformidade existente ou criar uma política nova. Aceda a **Estado de Funcionamento do Dispositivo** e ative a opção **Proteção contra Ameaças de Dispositivos**.
-  ![captura de ecrã que apresenta as definições da regra de proteção contra ameaças de dispositivos](../media/mtp/mtp-compliance-policy-rule.png)
+   ![captura de ecrã que apresenta as definições da regra de proteção contra ameaças de dispositivos](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Selecione o **Nível de Ameaça Máximo permitido**:
-  * **Nenhum (Seguro)**: este é o nível mais seguro.  O dispositivo não pode aceder aos recursos da empresa se contiver ameaças.  Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.  
-  * **Baixo**: o dispositivo está em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
-  * **Médio**: o dispositivo está em conformidade se as ameaças encontradas forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
-  * **Alto**: este é o nível menos seguro. Este nível permite que todos os níveis de ameaça estejam presentes e utiliza a proteção contra ameaças móveis do Lookout apenas para a criação de relatórios.
+   * **Nenhum (Seguro)**: este é o nível mais seguro.  O dispositivo não pode aceder aos recursos da empresa se contiver ameaças.  Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.  
+   * **Baixo**: o dispositivo está em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
+   * **Médio**: o dispositivo está em conformidade se as ameaças encontradas forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
+   * **Alto**: este é o nível menos seguro. Este nível permite que todos os níveis de ameaça estejam presentes e utiliza a proteção contra ameaças móveis do Lookout apenas para a criação de relatórios.
 
 ![captura de ecrã que apresenta a opção do nível de ameaça nas definições da regra de proteção contra ameaças de dispositivos](../media/mtp/mtp-compliance-policy-setting.png)
 

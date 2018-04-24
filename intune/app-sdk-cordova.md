@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova do SDK da Aplicação Microsoft Intune
 
@@ -72,20 +72,20 @@ As aplicações Cordova compiladas com o plug-in Cordova do SDK da Aplicação I
 
 1. Atualize a versão do ADAL:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. Adicione o SDK da Aplicação Intune para o plug-in Cordova:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>Incorporar o plug-in na aplicação iOS
 
-Terá de concluir alguns passos para que a aplicação fique ativada para a política de proteção de aplicações do Intune. Para sua comodidade, os seguintes passos são efetuados automaticamente no processo de compilação do Cordova como hook de pré-compilação. Por conseguinte, os passos automáticos modificarão os ficheiros `*.pbxproj`, `*-Info.plist` e `*.entitlements` associados a uma configuração de projeto. Se o projeto não contiver um ficheiro de elegibilidades, o plug-in irá criar um automaticamente.
+Terá de concluir alguns passos para que a aplicação fique ativada para a política de proteção de aplicações do Intune. Para sua comodidade, os seguintes passos são efetuados automaticamente no processo de compilação do Cordova como hook de pré-compilação. Por conseguinte, os passos automáticos modificarão os ficheiros `*.pbxproj`, `*-Info.plist` e `*.entitlements` associados uma configuração de projeto. Se o projeto não contiver um ficheiro de elegibilidades, o plug-in irá criar um automaticamente.
 
 Esta configuração suporta apenas um único destino e será efetuada no primeiro destino encontrado se existirem múltiplos destinos. Se o processo falhar, verifique se:
 
@@ -131,7 +131,7 @@ Depois de iniciar a aplicação pela primeira vez, deverá ver uma caixa de diá
 * O suporte para MultiDex é incompleto.
 * A aplicação tem de ter `minSdkVersion` de 14 e `targetSdkVersion` de 24 ou abaixo. Atualmente, o Intune não suporta aplicações orientadas para a API 25
 * O Intune não pode voltar a assinar aplicações que tenham sido assinadas com o Esquema de Assinatura V2. Quando as aplicações assinadas com o V2 são encapsuladas pelo plug-in, a assinatura do .apk de saída encapsulada será cancelada.
-*
+  *
   * Pode desativar a Assinatura V2 predefinida do Cordova ao adicionar o seguinte ao ficheiro `build-extras.gradle`:
 
   ```gradle

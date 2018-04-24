@@ -11,21 +11,21 @@ A inscrição automática permite que os utilizadores inscrevam os respetivos di
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com) e selecione **Azure Active Directory**.
 
-  ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
 
 2. Selecione **Mobilidade (MDM e MAM)**.
 
-  ![Captura de ecrã do portal do Azure](../media/auto-enroll-mdm.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-mdm.png)
 
 3. Selecione **Microsoft Intune**.
 
-  ![Captura de ecrã do portal do Azure](../media/auto-enroll-intune.png)
+   ![Captura de ecrã do portal do Azure](../media/auto-enroll-intune.png)
 
 4. Configure **Âmbito do Utilizador de MDM**. Especifique os dispositivos de utilizadores que devem ser geridos pelo Microsoft Intune. Os dispositivos com Windows 10 podem ser automaticamente inscritos na gestão com o Microsoft Intune.
 
-  - **Nenhum** – Inscrição automática de MDM desativada
-  - **Alguns** – Selecione os **Grupos** que podem inscrever automaticamente os dispositivos Windows 10
-  - **Todos** – Todos os utilizadores podem inscrever automaticamente os dispositivos Windows 10
+   - **Nenhum** – Inscrição automática de MDM desativada
+   - **Alguns** – Selecione os **Grupos** que podem inscrever automaticamente os dispositivos Windows 10
+   - **Todos** – Todos os utilizadores podem inscrever automaticamente os dispositivos Windows 10
 
       > [!IMPORTANT]
       > Se o **âmbito do utilizador MAM** e a inscrição na MDM automática (**âmbito do utilizador MDM**) estiverem ativados num grupo, apenas a MAM será ativada. Apenas a MAM será adicionada para os utilizadores nesse grupo quando estes associarem o respetivo dispositivo pessoal à área de trabalho. Os dispositivos não são automaticamente inscritos na MDM.

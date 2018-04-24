@@ -1,27 +1,27 @@
 ﻿---
-title: "Resolver problemas de inscrição no dispositivo Windows 10 | Documentos da Microsoft"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Resolver problemas de inscrição no dispositivo Windows 10 | Documentos da Microsoft
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 936a336019c37fb5ae5f7ef8f5b1201faee553fc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
@@ -38,15 +38,15 @@ Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dis
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Passos de resolução de problemas a seguir se vir "Acesso profissional ou escolar"
 
-1.  Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail e aos ficheiros profissionais ou escolares, volte a **Acesso profissional ou escolar**.
+1. Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail e aos ficheiros profissionais ou escolares, volte a **Acesso profissional ou escolar**.
 
 2. Efetue uma das seguintes ações:
 
-    - Se vir uma ligação que tem um aspeto semelhante à imagem abaixo, toque na mesma e, em seguida, confira se vê as opções Gerir, Informações e Desligar. Se vir estas opções, significa que já está inscrito e ligado.
+   - Se vir uma ligação que tem um aspeto semelhante à imagem abaixo, toque na mesma e, em seguida, confira se vê as opções Gerir, Informações e Desligar. Se vir estas opções, significa que já está inscrito e ligado.
 
-    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-    - Se não vir as informações de ligação mostradas acima ou se de facto as vir, mas faltarem algumas das opções, toque em **Ligar** e, em seguida, inicie sessão com as suas credenciais profissionais ou escolares. Agora, já deverá estar ligado.
+   - Se não vir as informações de ligação mostradas acima ou se de facto as vir, mas faltarem algumas das opções, toque em **Ligar** e, em seguida, inicie sessão com as suas credenciais profissionais ou escolares. Agora, já deverá estar ligado.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passos de resolução de problemas a seguir se vir "A sua conta"
 
@@ -58,6 +58,6 @@ Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos f
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Passos de resolução de problemas a seguir se vir "Configurar uma conta escolar ou profissional"
 
-Se vir uma mensagem com a indicação __Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.__ e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto **Ponto final de gestão**. É provável que este site se assemelhe a **www.asuaempresa.onmicrosoft.com**.
+Se vir uma mensagem com a indicação <strong>Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.</strong> e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto <strong>Ponto final de gestão</strong>. É provável que este site se assemelhe a <strong>www.asuaempresa.onmicrosoft.com</strong>.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

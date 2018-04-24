@@ -14,15 +14,15 @@ ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6ae04abda7f026bcbc02e325274712a386147b8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: d99bef78d635f98f9c888d8096247f314ade6a52
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Apagar todos os dados de um dispositivo macOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Pode apagar todos os dados de um dispositivo macOS, incluindo o sistema operativo. O dispositivo também será removido da gestão do Intune. O utilizador final não receberá qualquer aviso.
 

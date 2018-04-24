@@ -1,29 +1,29 @@
 ---
-title: "Cenários de proteção de e-mail"
-description: "Alguns cenários de exemplo e como podem ser implementados com o acesso condicional."
-keywords: 
+title: Cenários de proteção de e-mail
+description: Alguns cenários de exemplo e como podem ser implementados com o acesso condicional.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ca486ca9eab1ebb8a446b560ff5e265eb4d2712
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3116cfdb6b1ea153d914630a23e0db82a8c31d85
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Proteger o acesso ao e-mail com o Microsoft Intune: cenários de exemplo
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Cenário 1: impedir os utilizadores de utilizarem dispositivos não conformes para aceder ao Exchange Online
 ### <a name="scenario-requirements"></a>Requisitos do cenário
@@ -53,9 +53,9 @@ No cenário é utilizado o seguinte fluxo para decidir quais os dispositivos que
 
 Para tal, configure a política de acesso condicional seguinte para o Exchange no local com as seguintes definições:
 
--   Escolha a opção **Impedir que as aplicações de e-mail acedam ao Exchange no local se o dispositivo não estiver em conformidade ou não estiver inscrito no Microsoft Intune**. Ao escolher esta opção, ativa a política de acesso condicional, o que requer que todos os dispositivos estejam inscritos no Microsoft Intune e cumpram as regras de política de conformidade antes de poderem aceder ao Exchange.
+- Escolha a opção **Impedir que as aplicações de e-mail acedam ao Exchange no local se o dispositivo não estiver em conformidade ou não estiver inscrito no Microsoft Intune**. Ao escolher esta opção, ativa a política de acesso condicional, o que requer que todos os dispositivos estejam inscritos no Microsoft Intune e cumpram as regras de política de conformidade antes de poderem aceder ao Exchange.
 
--   Para definições avançadas do Exchange Active Sync, crie:
+- Para definições avançadas do Exchange Active Sync, crie:
 
   -   Uma exceção de plataforma que permite aos dispositivos que executam o iOS aceder ao Exchange.   
 

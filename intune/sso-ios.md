@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: b9afd14fd3ba4e464f0bf09c228290ef2f19eac3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A maioria das aplicações de Linha de Negócio (LOB) exige algum nível de autenticação do utilizador para suportar a segurança. Na maioria dos casos, isto exige que o utilizador escreva as mesmas credenciais múltiplas vezes, o que pode ser frustrante para os utilizadores. Para melhorar a experiência do utilizador, os programadores podem criar aplicações com o início de sessão único e, assim, reduzir o número de vezes que um utilizador tem de fornecer credenciais.
 

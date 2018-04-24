@@ -1,29 +1,29 @@
 ---
-title: "Resolução de problemas de acesso aos recursos da empresa"
-description: "Códigos de erros e de estado neste tópico para o ajudar a resolver problemas de acesso a recursos."
-keywords: 
+title: Resolução de problemas de acesso aos recursos da empresa
+description: Códigos de erros e de estado neste tópico para o ajudar a resolver problemas de acesso a recursos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 48c7c0a2da845416bdf6280a0ba9ac29c8fb37ba
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: a01124eb531de0b1303541d3b5d0717983106ef5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilize os códigos de estado e de erro deste tópico para obter ajuda para resolver problemas se uma ação do Microsoft Intune devolver um código de erro.
 

@@ -1,29 +1,29 @@
 ---
-title: "Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos"
+title: Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos
 titlesuffix: Microsoft Intune
-description: "Utilize a conta do gestor de inscrição de dispositivos para inscrever dispositivos no Intune. \""
-keywords: 
+description: Utilize a conta do gestor de inscrição de dispositivos para inscrever dispositivos no Intune. "
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As organizações podem utilizar o Intune para gerir um grande número de dispositivos móveis com uma única conta de utilizador. A conta do *gestor de inscrição de dispositivos* (DEM) é uma conta de utilizador especial que pode inscrever até 1000 dispositivos. Pode adicionar utilizadores existentes à conta DEM de forma a conceder-lhes capacidades especiais de DEM. Cada dispositivo inscrito utiliza uma única licença. Recomendamos que utilize os dispositivos inscritos através desta conta como dispositivos partilhados em vez de dispositivos pessoais (“BYOD”).  
 
@@ -49,12 +49,12 @@ O utilizador DEM pode:
 Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos têm as seguintes limitações:
 
   - Nenhum acesso por utilizador. Uma vez que os dispositivos não têm um utilizador atribuído, o dispositivo não tem nenhum acesso a dados ou e-mails da empresa. As configurações VPN, por exemplo, poderão continuar a ser utilizadas para fornecer aplicações de dispositivos com acesso a dados.
-  - Sem acesso condicional porque estes cenários são por utilizador.
   - O utilizador DEM não pode utilizar o Portal da Empresa para anular a inscrição de dispositivos inscritos para DEM no próprio dispositivo. O administrador do Intune pode anular a inscrição.
   - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
-  - Os utilizadores não podem utilizar aplicações Apple Volume Purchase Program (VPP) devido aos requisitos do Apple ID por utilizador para a gestão de aplicações.
+  - Os utilizadores não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
   - (Apenas para iOS) Se utilizar o DEM para inscrever dispositivos iOS, não poderá utilizar o Apple Configurator, o Programa de Inscrição de Dispositivos Apple (DEP) ou o Gestor de Escola da Apple (ASM) para inscrever dispositivos.
   - (Apenas Android) Existe um limite para o número de dispositivos Android for Work que pode inscrever com uma única conta DEM. Pode inscrever um máximo de 10 dispositivos de perfil de trabalho Android por conta DEM. Esta limitação não se aplica à inscrição Android legada.
+  - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo.
   - Cada dispositivo requer uma licença de dispositivo. Saiba mais sobre [licenças de utilizador e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurar as políticas de atualização de iOS no Microsoft Intune
 
@@ -54,4 +54,5 @@ Aplicou a política aos seus utilizadores ou dispositivos. Os dispositivos utili
 
 ## <a name="monitor-ios-device-installation-failures"></a>Monitorizar as falhas de instalação em dispositivos iOS
 <!-- 1352223 -->
-O relatório **Falhas de instalação para dispositivos iOS** está disponível no painel **Atualizações de software**. No relatório, poderá ver uma lista dos dispositivos iOS supervisionados que foram abrangidos por uma política de atualização de iOS e não tiveram êxito ao tentar atualizar. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não serão apresentados na lista. Consideramos atualizado um dispositivo com a atualização mais recente suportada pelo mesmo.
+O relatório **Falhas de Instalação para Dispositivos iOS** está disponível no painel **Atualizações de software**. No relatório, poderá ver uma lista dos dispositivos iOS supervisionados que foram abrangidos por uma política de atualização de iOS e não tiveram êxito ao tentar atualizar. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não serão apresentados na lista. Consideramos atualizado um dispositivo com a atualização mais recente suportada pelo mesmo.
+

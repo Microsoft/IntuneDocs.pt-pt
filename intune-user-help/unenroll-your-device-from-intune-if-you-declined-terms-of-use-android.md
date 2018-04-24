@@ -1,37 +1,39 @@
 ﻿---
-title: "Anular a inscrição do dispositivo caso tenha recusado os Termos de Utilização | Documentos da Microsoft"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Remover o seu dispositivo da gestão caso tenha recusado os Termos de Utilização | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5207bab5994cc7fc5c23bee92cbe675644d27e97
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcf71015d292ea22be1c818e526bc723b1af7165
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Anular a inscrição do dispositivo caso tenha recusado os "Termos de Utilização"
+# <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Remover o seu dispositivo da gestão caso tenha recusado os "Termos de Utilização"
 
-A melhor forma de anular a inscrição do dispositivo Android é aceitar os termos de utilização, iniciar sessão na aplicação do Portal da Empresa e, em seguida, utilizar [estas instruções](unenroll-your-device-from-intune-android.md) para anular a inscrição. No entanto, se recusou os termos de utilização ao tentar iniciar sessão na aplicação Portal da Empresa, será impedido de iniciar sessão na mesma em tentativas futuras, por isso terá de utilizar estas instruções de "solução" para anular a inscrição do seu dispositivo.
+Se recusou os termos de utilização ao tentar iniciar sessão na aplicação Portal da Empresa, será impedido de iniciar sessão na mesma em tentativas futuras, por isso terá de utilizar estas instruções de "solução" para remover o seu dispositivo do Intune.
 
-Se desinstalar a aplicação Portal da Empresa, também vai anular a inscrição do seu dispositivo do Intune. O seu dispositivo já não poderá aceder aos recursos da empresa. Para obter mais informações sobre o que acontece quando anula a inscrição, veja [What happens if you unenroll your device from Intune? (O que acontece se anular a inscrição do seu dispositivo no Intune?)](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+Ao desinstalar a aplicação Portal da Empresa, também removerá o seu dispositivo do Intune. O seu dispositivo já não poderá aceder aos recursos da empresa. Para obter mais informações sobre o que acontece quando remove o seu dispositivo da gestão, veja [O que acontece se anular a inscrição do seu dispositivo no Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Antes de poder desinstalar a aplicação do Portal da Empresa, terá de aceder à definição **Administradores de dispositivos** e desativar o **Portal da Empresa**. Os passos poderão variar um pouco, consoante o seu dispositivo Android.
 
-Para terminar a inscrição do seu dispositivo no Intune e desinstalar a aplicação do Portal da Empresa:
+## <a name="removing-the-device-from-the-company-portal-app"></a>Remover o dispositivo da aplicação Portal da Empresa
+
+Para remover o seu dispositivo do Intune e desinstalar a aplicação Portal da Empresa:
 
 1.  Aceda a **Definições** &gt; **Segurança &amp; Bloqueio de Ecrã** &gt; **Administradores de dispositivos**.
 
@@ -40,5 +42,13 @@ Para terminar a inscrição do seu dispositivo no Intune e desinstalar a aplica�
 2.  Desmarque a caixa de junto a **Portal da Empresa** ou desative-a.
 
     Já pode desinstalar a aplicação do portal da Empresa.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Remover dados recolhidos pela aplicação Portal da Empresa
+
+Para remover todos os dados que a aplicação Portal da Empresa para Android armazena no seu dispositivo:
+
+  - Limpe os dados da aplicação em Aplicações, clique na aplicação e, em seguida, no botão "Limpar dados"
+  - Elimine a pasta "\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal"
+
 
 Ainda precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.

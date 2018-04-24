@@ -1,29 +1,29 @@
 ---
-title: "Definições de políticas do Windows 10"
-description: "Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o Windows 10 e o Windows 10 Mobile inscritos."
-keywords: 
+title: Definições de políticas do Windows 10
+description: Utilize as definições de política indicadas neste tópico para obter ajuda para configurar definições incorporadas e personalizadas para dispositivos com o Windows 10 e o Windows 10 Mobile inscritos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Definições de política do Intune para dispositivos com o Windows 10 no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tópico contém informações para ajudá-lo a compreender as definições de política do Intune que pode utilizar para gerir dispositivos com o Windows 10. Leia este tópico juntamente com os procedimentos em [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -210,5 +210,5 @@ Todas as definições são apenas para computadores com o Windows 10.
 |**Permitir atualizações automáticas**|Permite atualizações automáticas. Configure uma das seguintes definições para controlar o comportamento da atualização:<br />**Notificar carregamento**<br />**Instalação automática ao tempo de manutenção**<br />**Instalação automática e reinicio ao tempo de manutenção**<br />**Instalação automática e reinício à hora agendada**: Tenha em atenção que quando esta opção está selecionada, também pode configurar as seguintes definições: **Suprimir a notificação para o utilizador final** e **Definir o dia da instalação de atualizações agendadas**.<br>(apenas para computadores com o Windows 10)|
 |**Permitir funcionalidades de pré-lançamento**|Permite à Microsoft implementar funcionalidades e definições de pré-lançamento em dispositivos com o Windows 10. Pode selecionar para permitir as definições apenas, ou todas as definições de versão de pré-lançamento e funcionalidades para a instalação.|
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

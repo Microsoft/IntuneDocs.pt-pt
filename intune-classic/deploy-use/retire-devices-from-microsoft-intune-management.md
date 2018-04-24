@@ -1,29 +1,29 @@
 ﻿---
 title: Extinguir dispositivos
-description: "O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa."
-keywords: 
+description: O Intune suporta uma eliminação seletiva e uma eliminação completa para remover o dispositivo da gestão do Intune, removendo as respetivas políticas e o portal da empresa.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Extinguir dispositivos da gestão do Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Independentemente de os dispositivos serem da empresa ou pessoais, chega uma altura em que os dispositivos geridos têm de ser removidos da gestão do Intune.
 
@@ -50,7 +50,7 @@ Quando remove uma licença de utilizador, os dispositivos inscritos desse utiliz
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Para eliminar dispositivos no portal do Azure Active Directory
 
-1.  Inicie sessão com as credenciais da sua organização em [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com) e, em seguida, escolha **Centros de administração** &gt; **Azure AD**.
+1.  Inicie sessão com as credenciais da sua organização em [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com) e, em seguida, selecione **Centros de administração** &gt; **Azure AD**.
 
 2.  Se não tiver uma, crie uma Subscrição do Azure. Não deverá ser necessário um cartão de crédito nem efetuar o pagamento se tiver uma conta paga. Clique na ligação de subscrição **Registar o Azure Active Directory gratuitamente**.
 

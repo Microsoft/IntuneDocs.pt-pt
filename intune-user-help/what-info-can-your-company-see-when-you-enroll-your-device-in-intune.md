@@ -1,26 +1,26 @@
 ---
-title: "Que informações é que a sua empresa pode ver quando inscreve o seu dispositivo? | Documentos da Microsoft"
-description: "Uma lista daquilo que o departamento de TI pode e não pode ver no seu dispositivo gerido."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Que informações é que a sua empresa pode ver quando inscreve o seu dispositivo? | Documentos da Microsoft
+description: Uma lista daquilo que o departamento de TI pode e não pode ver no seu dispositivo gerido.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 58fd9c985700e65ad5f97376382d348f009e2c29
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fefc9c5a74afca1dad662e6d5ccde6afce6e2113
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Que informações pode a minha empresa ver quando inscrevo o meu dispositivo?
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Categorizar os dispositivos com o mapeamento de grupo de dispositivos no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilize o **mapeamento de grupo de dispositivo** do Microsoft Intune para adicionar automaticamente dispositivos a grupos com base nas categorias que definir, para facilitar a gestão desses dispositivos. 
 
@@ -67,10 +67,10 @@ Devido à implementação faseada dos grupos de segurança baseados no Azure Act
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>Passo 1–- crie categorias de dispositivo na consola de administração do Intune
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com), escolha **Admin**.
-3. Na área de trabalho **Admin**, expanda **Mobile Device Management** e, em seguida selecione **Device Categories**.
-4. Na página **Device Categories**, verá uma lista onde pode configurar categorias de dispositivos: 
-- Pode introduzir um nome e, em seguida, clicar em **Add**, para o adicionar a uma nova categoria de dispositivo.
-- Pode ainda selecionar uma categoria e, em seguida, **Delete** a mesma.
+2. Na área de trabalho **Admin**, expanda **Mobile Device Management** e, em seguida selecione **Device Categories**.
+3. Na página **Device Categories**, verá uma lista onde pode configurar categorias de dispositivos: 
+4. Pode introduzir um nome e, em seguida, clicar em **Add**, para o adicionar a uma nova categoria de dispositivo.
+5. Pode ainda selecionar uma categoria e, em seguida, **Delete** a mesma.
 
 Irá utilizar o nome de categoria de dispositivo quando criar grupos de segurança do Azure Active Directory no Passo 2.
 

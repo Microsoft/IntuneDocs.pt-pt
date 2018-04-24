@@ -1,31 +1,31 @@
 ---
-title: "Adicionar políticas de configuração da aplicação para dispositivos Android geridos"
+title: Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 titlesuffix: Microsoft Intune
-description: "Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação do Android for Work."
-keywords: 
+description: Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação do Android for Work.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação do Android for Work. Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
+Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições para aplicações do Android for Work. O programador da aplicação tem de apresentar as definições de configuração de aplicações Android geridas para poder especificar as definições de configuração para a aplicação. Atribua a política de configuração de aplicações ao grupo de utilizadores para o qual pretende que as definições se apliquem.  As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
 
 > [!Note]  
 > Nem todas as aplicações suportam a configuração de aplicações. Verifique junto do programador da aplicação para saber se este criou a aplicação de forma a suportar políticas de configuração da aplicação.
@@ -50,16 +50,27 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 
 ## <a name="use-the-configuration-designer"></a>Utilizar o estruturador de configuração
 
-Pode utilizar o estruturador de configuração para as aplicações em dispositivos inscritos ou não inscritos no Intune. O estruturador permite-lhe configurar chaves e valores de configuração específicos. Também tem de especificar o tipo de dados para cada valor.
+Pode utilizar o estruturador de configuração para aplicações Android que suportem a configuração. A configuração será aplicada aos dispositivos inscritos no Intune. O estruturador permite-lhe configurar valores de configuração específicos para as definições que uma aplicação apresenta.
 
+Selecione **Adicionar** para selecionar a lista de definições de configuração que pretende especificar para a aplicação.  
 Para cada chave e valor na configuração, defina:
 
-  - **Chave de configuração**  
-     A chave que identifica exclusivamente a configuração de definição específica.
   - **Tipo de valor**  
-    O tipo de dados do valor de configuração. Os tipos incluem Número Inteiro, Real, Cadeia ou Booleano.
+    O tipo de dados do valor de configuração. Para os tipos de valor Cadeia, pode optar por selecionar um perfil de certificado ou variável como o tipo de valor.
   - **Valor de configuração**  
-    O valor da configuração. 
+    O valor da configuração. Se selecionar variável ou certificado como o tipo de valor, pode escolher a partir de uma lista de perfis de certificado ou variáveis na lista pendente do valor de configuração.  Se selecionar um certificado, o alias de certificado do certificado implementado no dispositivo será preenchido durante a execução.
+    
+### <a name="supported-variables-for-configuration-values"></a>Variáveis suportadas para valores de configuração
+
+Pode escolher as seguintes opções, se selecionar a variável como o tipo de valor:
+- Nome Principal de Utilizador – por exemplo, **John@contoso.com**
+- Correio – por exemplo, **John@contoso.com**
+- UPN Parcial – por exemplo, **John**
+- ID da Conta – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- ID do Dispositivo – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- ID de Utilizador – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Nome de Utilizador – por exemplo, **John Doe**
+
 
 ## <a name="enter-the-json-editor"></a>Entrar no editor de JSON
 
@@ -97,7 +108,7 @@ Também pode pré-configurar uma permissão para que as aplicações acedam às 
 10. Selecione os grupos de utilizadores a atribuir e, em seguida, escolha **Selecionar**.
 11. Escolha **Guardar** para atribuir a política.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.
 

@@ -1,29 +1,29 @@
 ---
-title: "Aplicações iOS com políticas de proteção de aplicações"
+title: Aplicações iOS com políticas de proteção de aplicações
 titlesuffix: Microsoft Intune
-description: "Saiba o que esperar de uma aplicação iOS com políticas de proteção."
-keywords: 
+description: Saiba o que esperar de uma aplicação iOS com políticas de proteção.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Saiba mais sobre a experiência do utilizador em aplicações iOS com políticas de proteção. As políticas de proteção de aplicações só são aplicadas quando as aplicações são utilizadas no contexto de trabalho. Por exemplo, quando acede a uma aplicação com uma conta profissional ou quando acede a ficheiros armazenados na localização do OneDrive da sua empresa.
 ##  <a name="accessing-apps"></a>Aceder a aplicações
@@ -56,14 +56,14 @@ O Intune só suporta a implementação de políticas de proteção de aplicaçõ
 
 Leia o seguinte cenário de exemplo para saber como o Intune lida com múltiplas contas de utilizador.
 
-O Utilizador A trabalha para duas empresas: a **Empresa X** e a **Empresa Y**. O Utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção de aplicações, mas a conta associada à Empresa Y não. Para que a conta de utilizador da Empresa Y seja gerida pelas políticas de proteção de aplicações, o Utilizador A tem de remover a conta de utilizador da Empresa X.
+O Utilizador A trabalha para duas empresas: a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção de aplicações, mas a conta associada à Empresa Y não. Para que a conta de utilizador da Empresa Y seja gerida pelas políticas de proteção de aplicações, o Utilizador A tem de remover a conta de utilizador da Empresa X.
 ### <a name="adding-a-second-account"></a>Adicionar uma segunda conta
 
 Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional no mesmo dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida.  As contas serão apresentadas e pode escolher a conta que pretende remover.
 
 ![Captura de ecrã da caixa de diálogo com a mensagem a informar que a ação não é permitida e com as opções Sim e Não](./media/ios-switch-user.PNG)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>Consulte também
 [Criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)

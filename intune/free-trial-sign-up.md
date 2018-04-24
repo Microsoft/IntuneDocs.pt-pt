@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: b68c2d93071d545bf25f7810a6908099988fb902
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Inscreva-se numa avaliação gratuita do Microsoft Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/17/2018
 Este artigo explica-lhe como se inscrever numa versão de avaliação do Intune autónomo para o portal do Azure.
 
 1. Visite a página [Inscrição no Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) e preencha o formulário para se inscrever para uma subscrição de avaliação.
-* Se tiver uma conta profissional ou escolar e pretende utilizá-la para a sua versão de avaliação do Intune, siga antes [estas instruções de início de sessão](/intune/account-sign-up).
+2. Se tiver uma conta profissional ou escolar e pretende utilizá-la para a sua versão de avaliação do Intune, siga antes [estas instruções de início de sessão](/intune/account-sign-up).
 
 * Se a maioria das suas operações de TI e dos seus utilizadores estiverem numa região diferente da sua, pode querer selecionar essa região em **Onde está situada a sua empresa?**.
 

@@ -1,29 +1,29 @@
 ﻿---
-title: "Definições de política de segurança de dispositivos móveis"
-description: "Utilize o Intune para configurar uma grande variedade de definições que pode implementar em dispositivos geridos na sua organização."
-keywords: 
+title: Definições de política de segurança de dispositivos móveis
+description: Utilize o Intune para configurar uma grande variedade de definições que pode implementar em dispositivos geridos na sua organização.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Definições de política de segurança de dispositivos móveis no Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > O Microsoft Intune apresenta agora políticas de configuração separadas para cada plataforma de dispositivos. Estas políticas contêm as definições mais atualizadas que pode utilizar. Pode continuar a utilizar a política de segurança do dispositivo móvel e todas as implementações existentes continuarão a funcionar. No entanto, deve planear a migração para as novas políticas de configuração logo que possível, pois a política de segurança do dispositivo móvel será removida no futuro.
@@ -48,32 +48,34 @@ Pode criar e implementar políticas de segurança de dispositivos móveis para o
 
 ## <a name="security-settings"></a>Definições de segurança
 
-|Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exigir uma palavra-passe para desbloquear os dispositivos móveis**|Não|Não|Sim|Sim|Sim|
-|**Tipo obrigatório de palavra-passe**<br /><br />Esta definição especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.|Sim|Sim|Sim|Sim|Não|
-|**Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres**<br /><br />Existem quatro conjuntos de carateres: letras minúsculas, letras maiúsculas, números e símbolos. Esta definição especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe. No entanto, para dispositivos iOS, isto especifica o número de carateres de símbolos que têm de ser incluídos na palavra-passe.|Sim|Sim|Sim|Sim|Não|
-|**Comprimento mínimo da palavra-passe**|Sim|Sim|Sim|Sim|Sim|
-|**Permitir palavras-passe simples**<br /><br />As palavras-passes simples incluem "0000" e "1234".|Não|Não|Sim|Sim|Não|
-|**Número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado**|Sim|Sim|Sim|Sim|Sim|
-|**Minutos de inatividade antes de o ecrã se desligar**<sup>1</sup>|Sim|Sim|Sim|Sim|Sim|
-|**Expiração da Palavra-passe (dias)**|Sim|Sim|Sim|Sim|Sim|
-|**Memorizar histórico de palavras-passe**|Sim|Sim|Sim|Sim|Sim|
-|**Memorizar histórico de palavras-passe** – **Evita a reutilização de palavras-passe anteriores**|Sim|Sim|Sim|Sim|Sim|
-|**Qualidade da palavra-passe**|Não|Não|Não|Não|Sim|
-|**Permitir palavra-passe por imagem e PIN**|Sim|Sim|Não|Não|Não|
-|**Minutos de inatividade antes de a palavra-passe ser exigida**|Não|Não|Não|Sim|Não|
-|**Permitir desbloqueio por impressão digital**|Não|Não|Não|iOS 7 e posterior|Não|
+|                                                                                                                                                                                        Nome da definição                                                                                                                                                                                         | Windows 8.1 e Windows RT 8.1 | Windows RT | Windows Phone 8 e Windows Phone 8.1 |       iOS       | Android e Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Exigir uma palavra-passe para desbloquear os dispositivos móveis</strong>                                                                                                                                                                 |               Não               |     Não     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                 <strong>Tipo obrigatório de palavra-passe</strong><br /><br />Esta definição especifica o tipo de palavra-passe que será necessária, como apenas numérica ou alfanumérica.                                                                                                                 |              Sim               |    Sim     |                  Sim                  |       Sim       |                Não                 |
+| <strong>Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres</strong><br /><br />Existem quatro conjuntos de carateres: letras minúsculas, letras maiúsculas, números e símbolos. Esta definição especifica quantos conjuntos de carateres diferentes têm de ser incluídos na palavra-passe. No entanto, para dispositivos iOS, isto especifica o número de carateres de símbolos que têm de ser incluídos na palavra-passe. |              Sim               |    Sim     |                  Sim                  |       Sim       |                Não                 |
+|                                                                                                                                                                          <strong>Comprimento mínimo da palavra-passe</strong>                                                                                                                                                                           |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                               <strong>Permitir palavras-passe simples</strong><br /><br />As palavras-passes simples incluem "0000" e "1234".                                                                                                                                                |               Não               |     Não     |                  Sim                  |       Sim       |                Não                 |
+|                                                                                                                                                  <strong>Número de falhas de início de sessão consecutivas a permitir antes de o dispositivo ser apagado</strong>                                                                                                                                                   |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                         <strong>Minutos de inatividade antes de o ecrã se desligar</strong><sup>1</sup>                                                                                                                                                          |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                                         <strong>Expiração da Palavra-passe (dias)</strong>                                                                                                                                                                         |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                                         <strong>Memorizar histórico de palavras-passe</strong>                                                                                                                                                                          |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                              <strong>Memorizar histórico de palavras-passe</strong> – <strong>Evita a reutilização de palavras-passe anteriores</strong>                                                                                                                                              |              Sim               |    Sim     |                  Sim                  |       Sim       |                Sim                |
+|                                                                                                                                                                              <strong>Qualidade da palavra-passe</strong>                                                                                                                                                                              |               Não               |     Não     |                  Não                   |       Não        |                Sim                |
+|                                                                                                                                                                       <strong>Permitir palavra-passe por imagem e PIN</strong>                                                                                                                                                                       |              Sim               |    Sim     |                  Não                   |       Não        |                Não                 |
+|                                                                                                                                                             <strong>Minutos de inatividade antes de a palavra-passe ser exigida</strong>                                                                                                                                                              |               Não               |     Não     |                  Não                   |       Sim       |                Não                 |
+|                                                                                                                                                                          <strong>Permitir desbloqueio por impressão digital</strong>                                                                                                                                                                          |               Não               |     Não     |                  Não                   | iOS 7 e posterior |                Não                 |
+
 <sup>1</sup>Para dispositivos iOS, quando configura as definições **Minutos de inatividade antes de o ecrã se desligar** e **Minutos de inatividade antes de a palavra-passe ser exigida**, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, o ecrã desliga-se automaticamente após 5 minutos e o dispositivo fica bloqueado após mais 5 minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois de o utilizador desligar o ecrã, o dispositivo bloqueia 5 minutos depois.
 
 Quando implementa uma política de comprimento de palavra-passe em dispositivos com o Windows RT, os utilizadores serão forçados a repor as respetivas palavras-passe, ainda que estas estejam em conformidade com os requisitos da política.
 
 ## <a name="encryption-settings"></a>Definições de encriptação
 
-|Nome da definição|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Encriptação obrigatória no dispositivo móvel**<sup>1</sup><br /><br />Para dispositivos Windows Phone 8, tem de definir esta opção como **Sim**.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.|Sim|Não|Sim|Não|Sim|
-|**Encriptação obrigatória nos cartões de armazenamento**<br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.|n/d|n/d|n/d <br />As aplicações e os dados associados são encriptados automaticamente.|n/d|Sim|
+|                                                                                                                                     Nome da definição                                                                                                                                     | Windows 8.1 e Windows RT 8.1 | Windows RT |              Windows Phone 8 e Windows Phone 8.1              | iOS | Android e Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Encriptação obrigatória no dispositivo móvel</strong><sup>1</sup><br /><br />Para dispositivos Windows Phone 8, tem de definir esta opção como <strong>Sim</strong>.<br /><br />Para ativar a encriptação em dispositivos iOS, ative a definição <strong>Palavra-passe obrigatória para desbloquear os dispositivos móveis</strong>. |              Sim               |     Não     |                               Sim                               | Não  |                Sim                |
+|                                                                    <strong>Encriptação obrigatória nos cartões de armazenamento</strong><br /><br />Esta definição aplica-se aos dispositivos que também são geridos pelo Exchange ActiveSync.                                                                     |              n/d               |    n/d     | n/d <br />As aplicações e os dados associados são encriptados automaticamente. | n/d |                Sim                |
+
 <sup>1</sup>Seguem-se informações adicionais para dispositivos com o Windows 8.1:
 
 -   Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](http://support.microsoft.com/kb/3013816) em cada dispositivo.

@@ -15,11 +15,11 @@ ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c6868caace323699e4c84ddc90278dadb56b6a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: bd4ddf9712746cb97886e94e728b5a31a26f8786
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-intune-management-extension"></a>Referência para a Extensão de Gestão do Intune
 
@@ -51,10 +51,12 @@ O **IntuneManagementExtensionHealthState** apresenta todos os estados de funcion
 A **IntuneManagementExtension** apresenta o estado de funcionamento da IntuneManagementExtension em cada dispositivo Windows 10 por dia.
 Os dados são mantidos relativamente aos últimos 60 dias. 
 
-| Propriedade  | Descrição | Exemplo |
-|---------|------------|--------|
-| DateKey |Identificador exclusivo da Data. | 123 |
-| TenantKey |Identificador exclusivo do Inquilino. | 456 |
-| DeviceKey |Identificador exclusivo do Dispositivo. | 789 |
-| ExtensionVersionKey |Identificador exclusivo da versão da IntuneManagementExtension. | 1 |
-| ExtensionStateKey|Identificador exclusivo do estado de funcionamento. | 2 |
+
+|      Propriedade       |                         Descrição                         | Exemplo |
+|---------------------|-------------------------------------------------------------|---------|
+|       DateKey       |               Identificador exclusivo da Data.                |   123   |
+|      TenantKey      |              Identificador exclusivo do Inquilino.               |   456   |
+|      DeviceKey      |              Identificador exclusivo do Dispositivo.               |   789   |
+| ExtensionVersionKey | Identificador exclusivo da versão da IntuneManagementExtension. |    1    |
+|  ExtensionStateKey  |             Identificador exclusivo do estado de funcionamento.              |    2    |
+

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Sugestões de resolução de problemas genéricos do Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Depois de implementar o Microsoft Intune, poderá deparar-se com problemas relacionados com a sua configuração ou com os dispositivos clientes. Utilize os seguintes recursos para ajudar a detetar o que está a causar o problema para que possa resolvê-lo.
 
@@ -50,13 +50,13 @@ Depois de implementar o Microsoft Intune, poderá deparar-se com problemas relac
 
 ## <a name="collect-available-data"></a>Recolher dados disponíveis
 
--   Os seguintes recursos podem ajudá-lo a aprender a recolher registos de dispositivo:
+- Os seguintes recursos podem ajudá-lo a aprender a recolher registos de dispositivo:
   - [Enviar registos de dados de diagnóstico de dispositivos Android para o seu administrador de TI através de um cabo USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Enviar registos de dados de diagnóstico para o seu administrador de TI através de e-mail](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Enviar erros de inscrição de dispositivos Android para o seu administrador de TI](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Enviar erros de inscrição de dispositivos iOS para o seu administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   No que respeita aos dados da consola de administração (por exemplo, problemas de implementação de políticas) examine a política em causa e o estado da mesma, conforme descrito em [Utilizar grupos para gerir utilizadores e dispositivos no Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+- No que respeita aos dados da consola de administração (por exemplo, problemas de implementação de políticas) examine a política em causa e o estado da mesma, conforme descrito em [Utilizar grupos para gerir utilizadores e dispositivos no Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## <a name="research-the-solution"></a>Pesquisar soluções
 

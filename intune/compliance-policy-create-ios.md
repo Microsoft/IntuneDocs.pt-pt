@@ -14,15 +14,15 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 887f45cdc79aa5e45de3e8a1df5d12665d2ed8ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos para dispositivos iOS no Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Uma política de conformidade de dispositivos iOS no Intune determina as regras e definições que os dispositivos iOS têm de cumprir para estarem em conformidade. Quando utiliza políticas de conformidade de dispositivos com acesso condicional, pode permitir ou bloquear o acesso aos recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar as políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre políticas de conformidade e os pré-requisitos de que precisa antes de criar uma política de conformidade, veja [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -80,7 +80,7 @@ Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizad
 
 Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health"></a>Estado de Funcionamento do Dispositivo
+## <a name="device-health"></a>Device health
 
 - **Dispositivos alvo de jailbreak**: se ativar esta definição, os dispositivos alvo de jailbreak não são conformes.
 - **Exigir que o dispositivo esteja ao Nível de Ameaças do Dispositivo ou abaixo do mesmo**: selecione o nível de ameaça máximo para marcar dispositivos como não conformes. Por exemplo, se definir o nível de ameaça para **Médio**, então os dispositivos nos níveis médio, baixo ou protegido são conformes. Os dispositivos com um nível de ameaça elevado não são conformes.

@@ -1,48 +1,48 @@
 ---
 title: Enviar registos do Android para programadores da Microsoft | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 06767d1c-a012-4288-9921-f9dd2eb4eb8d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b03ac31cc51d69e1872954fa4afbce55add8479f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Enviar registos dos dispositivos Android para os programadores do Portal da Empresa
 
-Por vezes, a aplicação Portal da Empresa poderá fechar inesperadamente. Este é um problema sobre o qual os programadores da aplicação querem ser informados, uma vez que nos pode ajudar a melhorar o seu funcionamento e a impedir que este tipo de situação aconteça no futuro. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
+Por vezes, a aplicação Portal da Empresa poderá fechar inesperadamente. Os programadores de aplicações pretendem que os informe quando se deparar com um comportamento inesperado, para que possam determinar a causa principal e impedir futuras ocorrências. Os detalhes desses erros encontram-se no seu dispositivo, num documento especial denominado _registo de diagnóstico_. A equipa do Portal da Empresa precisa dos registos específicos do Portal da Empresa para diagnosticar o problema.
 
 > [!Note]
-> Para o suporte da empresa descobrir o problema mais facilmente, deve ativar o _registo verboso_. O registo verboso inclui todos os detalhes relevantes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para que o suporte da empresa descubra a causa do problema mais facilmente, ative o _registo verboso_. O registo verboso regista todos os detalhes de um erro e inclui estes detalhes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md). 
 
-Se esta situação lhe estiver a acontecer, a equipa do Portal da Empresa precisará dos registos do Portal da Empresa para tentar diagnosticar a causa principal. Para enviar registos para a Microsoft:
+Para enviar registos para a Microsoft:
 
 1.  Abra a aplicação Portal da Empresa.
 
-2.  Toque em **Menu** >  **Ajuda e Comentários**.
+2.  Toque em **Menu** > **Ajuda** > **Enviar e-mail à Equipa de Suporte**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o dispositivo Android que tem.
 
-3.  Em **Comentários**, toque em **Enviar Comentários**.
+3.  Toque em **Carregar Apenas Registos**.
 
-4.  Descreva resumidamente o problema no e-mail e toque em **Enviar**.
+4.  Depois de o carregamento estar concluído, irá receber um ID do incidente. Guarde o ID dos seus registos.
 
-Pode enviar também um e-mail diretamente à equipa do Portal da Empresa para Android através do endereço <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
+Para contactar diretamente a equipa do Portal da Empresa para Android, envie um e-mail através do endereço <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

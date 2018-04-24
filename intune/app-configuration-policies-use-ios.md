@@ -1,29 +1,29 @@
 ---
-title: "Adicionar políticas de configuração da aplicação para dispositivos iOS geridos"
+title: Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 titlesuffix: Microsoft Intune
-description: "Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada."
-keywords: 
+description: Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdaec3150062dce5da5566fa9534425e11f3cdec
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação iOS. Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
 
@@ -59,7 +59,7 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 7.  Selecione **Aplicação associada**. Em seguida, no painel **Aplicação associada**, selecione a aplicação gerida à qual pretende aplicar a configuração e selecione **OK**.
 8.  No painel **Adicionar política de configuração**, selecione **Definições de configuração**.
 9. Selecione **Formato das definições de configuração**. Selecione um dos seguintes procedimentos:
-    - **[Utilizar o estruturador de configuração](#use-configuration-designer)**
+    - **[Utilizar estruturador de configuração](#use-configuration-designer)**
     - **[Introduzir dados XML](#enter-xml-data)**
 10. Depois de adicionar as suas informações XML, selecione **OK** e, em seguida, selecione **Adicionar** para adicionar a política de configuração. O painel de descrição geral da política de configuração é apresentado.
 11. Selecione **Atribuições** para apresentar as opções de inclusão e exclusão. 
@@ -163,6 +163,6 @@ Além disso, o Intune suporta os seguintes tipos de tokens na lista de proprieda
 - \{\{serialnumber\}\} – por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS)
 - \{\{serialnumberlast4digits\}\} – por exemplo, **G5V2** (para dispositivos iOS)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação como é habitual.
