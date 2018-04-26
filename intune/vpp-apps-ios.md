@@ -126,11 +126,11 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 | 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
 | 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
 | 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
-| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
-| 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
+| 7 | Modo de quiosque (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
+| 8 | Modo de quiosque (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
 
 > [!Note]  
-> Não é recomendável atribuir aplicações VPP a dispositivos no modo de local público com licenciamento de utilizadores do VPP.
+> Não é recomendável atribuir aplicações VPP a dispositivos no modo de quiosque com licenciamento de utilizadores do VPP.
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Revogar licenças de aplicações e eliminar tokens 
 
