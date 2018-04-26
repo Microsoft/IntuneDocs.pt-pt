@@ -249,13 +249,13 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 
   O Dimensionamento PPP da GDI permite que as aplicações sem deteção de PPP passem a ter deteção de PPP. Especifique as aplicações legadas que têm o Dimensionamento PPP da GDI ativado. Com Dimensionamento PPP da GDI configurado para ser ativado e desativado numa aplicação, o dimensionamento é desativado para a aplicação.
 
-## <a name="kiosk-preview"></a>Modo de local público (Pré-visualização)
+## <a name="kiosk-preview"></a>Modo de Quiosque (Pré-visualização)
 
 Normalmente, um dispositivo de quiosque executa uma aplicação ou um conjunto específico de aplicações. Os utilizadores são impedidos de aceder a funcionalidades ou funções no dispositivo fora das aplicações do quiosque.
 
 - **Modo de quiosque** – identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
 
-  - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
+  - **Não Configurado** (predefinição) – a política não ativa um modo de quiosque. 
   - **Quiosque de uma aplicação** – o perfil permite que o dispositivo execute apenas uma aplicação. Quando um utilizador inicia sessão, uma aplicação específica é iniciada. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
   - **Quiosque de várias aplicações** – o perfil permite que o dispositivo execute múltiplas aplicações. Apenas as aplicações que adicionar estão disponíveis para o utilizador. A vantagem de um quiosque de várias aplicações ou dispositivos de objetivo fixo, é o facto de proporcionar uma experiência fácil de compreender pelos utilizadores através do acesso às aplicações de que precisam e de remover as aplicações de que não precisam da respetiva vista.
 
@@ -290,7 +290,7 @@ Utilize o botão **Adicionar** para criar uma configuração de quiosque ou sele
 
   O artigo [Create a Windows 10 kiosk that runs multiple apps (Criar um quiosque do Windows 10 que execute várias aplicações)](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) fornece mais detalhes sobre como utilizar e criar ficheiros XML.
 
-- **Utilizadores atribuídos** – adicione uma ou mais contas de utilizador que poderão utilizar as aplicações que adicionar. Quando a conta iniciar sessão, apenas as aplicações definidas na configuração estarão disponíveis. A conta para o dispositivo pode ser local ou um início de sessão de conta do Azure AD associado à aplicação de local público.
+- **Utilizadores atribuídos** – adicione uma ou mais contas de utilizador que poderão utilizar as aplicações que adicionar. Quando a conta iniciar sessão, apenas as aplicações definidas na configuração estarão disponíveis. A conta para o dispositivo pode ser local ou um início de sessão de conta do Azure AD associado à aplicação de quiosque.
 
     Para ambientes de quiosque com início de sessão automático ativado, deve ser utilizado um tipo de utilizador com o menor privilégio (tal como a conta de utilizador padrão local). Para configurar uma conta do Azure Active Directory (AD) para o modo de quiosque, utilize o formato `domain\user@tenant.com`.
 

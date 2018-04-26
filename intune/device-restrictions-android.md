@@ -140,11 +140,11 @@ Para cada definição, configure uma lista de aplicações através de um dos se
 - **Wi-Fi (apenas Samsung Knox)** – permite a utilização das funcionalidades de Wi-Fi do dispositivo.
 - **Tethering Wi-Fi (apenas Samsung Knox)** – permite a utilização de tethering Wi-Fi no dispositivo.
 
-## <a name="kiosk"></a>Modo de Local Público
+## <a name="kiosk"></a>Modo de Quiosque
 
-As definições de modo de local público aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
+As definições de modo de quiosque aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de local público, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
+- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de quiosque. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de quiosque, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.

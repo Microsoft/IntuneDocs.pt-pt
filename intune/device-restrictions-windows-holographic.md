@@ -68,13 +68,13 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 
 - **Modificação da Hora do Sistema** –impede o utilizador final de alterar a data e a hora do dispositivo.
 
-## <a name="kiosk-preview"></a>Modo de local público (Pré-visualização)
+## <a name="kiosk-preview"></a>Modo de Quiosque (Pré-visualização)
 
 Normalmente, um dispositivo de quiosque executa uma aplicação específica. Os utilizadores são impedidos de aceder a funcionalidades ou funções no dispositivo fora da aplicação de quiosque.
 
 - **Modo de quiosque** – identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
 
-  - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
+  - **Não Configurado** (predefinição) – a política não ativa um modo de quiosque. 
   - **Quiosque de uma aplicação** – o perfil permite que o dispositivo execute apenas uma aplicação. Quando um utilizador inicia sessão, uma aplicação específica é iniciada. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
 
 #### <a name="single-app-kiosks"></a>Quiosques de uma aplicação
