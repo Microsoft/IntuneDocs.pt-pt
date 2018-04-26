@@ -1,4 +1,4 @@
----
+﻿---
 title: Instalar a aplicação Portal da Empresa para Windows | Documentos da Microsoft
 description: ''
 keywords: ''

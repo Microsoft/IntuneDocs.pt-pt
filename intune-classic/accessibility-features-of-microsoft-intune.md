@@ -1,4 +1,4 @@
----
+﻿---
 title: Funcionalidades de Acessibilidade
 description: Saiba mais sobre as funcionalidades do Intune que melhoram a acessibilidade para pessoas portadoras de deficiência.
 keywords: ''

@@ -1,4 +1,4 @@
----
+﻿---
 title: Escolher como inscrever dispositivos móveis
 description: Decidir como inscrever dispositivos móveis no Intune respondendo a algumas perguntas simples
 keywords: ''

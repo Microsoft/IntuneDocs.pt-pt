@@ -1,4 +1,4 @@
----
+﻿---
 title: Como encriptar o seu dispositivo Windows | Documentos da Microsoft
 description: ''
 keywords: ''

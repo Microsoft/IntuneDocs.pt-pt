@@ -1,4 +1,4 @@
----
+﻿---
 title: Definições de política para iOS
 description: Crie políticas que controlam as definições e funcionalidades em dispositivos iOS que gere com o Intune.
 keywords: ''

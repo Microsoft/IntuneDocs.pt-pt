@@ -1,4 +1,4 @@
----
+﻿---
 title: O que acontece se anular a inscrição do seu dispositivo Android? | Documentos da Microsoft
 description: ''
 keywords: ''

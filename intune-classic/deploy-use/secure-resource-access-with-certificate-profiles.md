@@ -1,4 +1,4 @@
----
+﻿---
 title: Perfis de certificado para acesso a recursos
 description: Proteja o acesos a VPN, Wi-Fi e e-mail com um certificado instalado no dispositivo de cada utilizador.
 keywords: ''

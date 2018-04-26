@@ -1,4 +1,4 @@
----
+﻿---
 title: Referência de políticas de configuração
 description: Utilize as informações neste tópico para ajudá-lo a decidir qual a política do Microsoft Intune a utilizar para gerir os seus dispositivos.
 keywords: ''

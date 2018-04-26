@@ -1,4 +1,4 @@
----
+﻿---
 title: Definições de políticas do Windows
 description: Utilize a política de configuração geral do Windows (Windows 8.1 e posterior) do Intune para configurar as definições para dispositivos Windows 8 e Windows 8.1 inscritos.
 keywords: ''

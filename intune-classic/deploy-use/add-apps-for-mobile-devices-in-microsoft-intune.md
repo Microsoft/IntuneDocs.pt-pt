@@ -1,4 +1,4 @@
----
+﻿---
 title: Adicionar aplicações a dispositivos inscritos
 description: Antes de poder implementar uma aplicação, tem de adicioná-la ao Intune. Em seguida, fica disponível na consola do Intune, onde pode implementar e geri-la.
 keywords: ''

@@ -1,4 +1,4 @@
----
+﻿---
 title: Resolver conflitos de políticas de GPO e do Intune
 description: Saiba como resolver conflitos entre as Políticas de Grupos e as políticas de configuração do Intune.
 keywords: ''

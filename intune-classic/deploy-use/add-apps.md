@@ -1,4 +1,4 @@
----
+﻿---
 title: Adicionar aplicações
 description: Antes de começar a implementar aplicações com o Intune, familiarize-se com os conceitos apresentados neste tópico.
 keywords: ''

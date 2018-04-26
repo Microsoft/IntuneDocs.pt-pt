@@ -1,4 +1,4 @@
----
+﻿---
 title: Definição de políticas de conformidade para dispositivos iOS
 description: Este tópico descreve as regras e definições que pode configurar numa política de conformidade para dispositivos iOS.
 keywords: ''

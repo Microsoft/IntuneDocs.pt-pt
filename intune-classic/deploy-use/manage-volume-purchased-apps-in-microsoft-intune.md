@@ -1,4 +1,4 @@
----
+﻿---
 title: Gerir aplicações compradas em grandes volumes
 description: Saiba como utilizar o Intune para gerir aplicações compradas em volume numa loja de aplicações.
 keywords: ''

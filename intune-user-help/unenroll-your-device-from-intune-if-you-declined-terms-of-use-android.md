@@ -1,4 +1,4 @@
----
+﻿---
 title: Remover o seu dispositivo da gestão caso tenha recusado os Termos de Utilização | Microsoft Docs
 description: ''
 keywords: ''

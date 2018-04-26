@@ -1,4 +1,4 @@
----
+﻿---
 title: Utilizar a eliminação remota para ajudar a proteger dados
 description: O Intune fornece capacidades de eliminação seletiva e completa para remover dados confidenciais da empresa e remover o acesso a vários recursos da empresa.
 keywords: ''

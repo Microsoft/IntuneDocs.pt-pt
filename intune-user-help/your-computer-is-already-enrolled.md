@@ -1,4 +1,4 @@
----
+﻿---
 title: O seu computador já está inscrito | Documentos da Microsoft
 description: ''
 keywords: ''

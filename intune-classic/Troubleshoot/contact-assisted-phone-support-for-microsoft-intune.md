@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Contactar o suporte assistido por telefone '
 description: Números de telefone para ajuda do Microsoft Intune.
 keywords: horário comercial

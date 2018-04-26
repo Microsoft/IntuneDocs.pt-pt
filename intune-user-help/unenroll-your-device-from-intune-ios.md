@@ -1,4 +1,4 @@
----
+﻿---
 title: Remover o seu dispositivo iOS do Intune | Microsoft Docs
 description: Descreve como remover um dispositivo iOS do Intune
 keywords: ''

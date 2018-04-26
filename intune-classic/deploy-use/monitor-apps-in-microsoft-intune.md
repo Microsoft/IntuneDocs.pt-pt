@@ -1,4 +1,4 @@
----
+﻿---
 title: Monitorizar implementações de aplicações
 description: Saiba como monitorizar aplicações implementadas com o Intune.
 keywords: ''

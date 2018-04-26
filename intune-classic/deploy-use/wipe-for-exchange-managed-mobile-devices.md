@@ -1,4 +1,4 @@
----
+﻿---
 title: Eliminação de dispositivos móveis geridos pelo Exchange
 description: O Microsoft Intune permite-lhe apagar ou repor dispositivos móveis que são geridos através do Exchange ActiveSync (EAS) com o Intune Exchange Connector
 keywords: ''

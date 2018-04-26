@@ -1,4 +1,4 @@
----
+﻿---
 title: Atualizar aplicações
 description: Utilize as informações contidas neste tópico para compreender como pode atualizar aplicações quando é necessária uma nova versão.
 keywords: ''
