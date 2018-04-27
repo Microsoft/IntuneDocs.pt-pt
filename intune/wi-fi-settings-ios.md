@@ -3,8 +3,8 @@ title: Configurar as definições de Wi-Fi do Microsoft Intune para dispositivos
 titleSuffix: ''
 description: Saiba quais são as definições de configuração de Wi-Fi do Intune nos dispositivos com iOS
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9abba211216e13f303a82c7bf3fe028672040d94
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 65bfb5bcd756d59a75aec947356ad9fe5fcb5d05
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Definições de Wi-Fi para dispositivos iOS no Microsoft Intune
 
@@ -27,26 +27,26 @@ Este artigo mostra-lhe as definições de Wi-Fi que pode configurar no Microsoft
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Definições de Wi-Fi para perfis básicos e empresariais
 
-- **Nome da rede** – introduza um nome para esta ligação Wi-Fi. Este é o nome que os utilizadores veem quando navegam na lista de ligações disponíveis nos respetivos dispositivos.
-- **SSID** – sigla de Service Set Identifier (identificador do conjunto de serviço). Este é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores apenas veem o nome da rede configurada por si quando selecionam a ligação.
-- **Ligar automaticamente** – faz com que o dispositivo se ligue sempre que estiver ao alcance desta rede.
-- **Rede oculta** – impede que esta rede seja apresentada na lista de redes disponíveis no dispositivo.
+- **Nome da rede** – Introduza um nome para esta ligação Wi-Fi. Este é o nome que os utilizadores veem quando navegam na lista de ligações disponíveis nos respetivos dispositivos.
+- **SSID** – Sigla de Service Set Identifier (identificador do conjunto de serviço). Este é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores apenas veem o nome da rede configurada por si quando selecionam a ligação.
+- **Ligar automaticamente** – Faz com que o dispositivo se ligue sempre que estiver ao alcance desta rede.
+- **Rede oculta** – Impede que esta rede seja apresentada na lista de redes disponíveis no dispositivo.
 - **Chave pré-partilhada** - 
-- **Definições de proxy** – escolha entre:
-    - **Nenhuma** – não são configuradas definições de proxy.
-    - **Manual** – introduza o **Endereço de servidor proxy** (como um endereço IP) e o **Número de porta** associado.
-    - **Automática** – utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
+- **Definições de proxy** – Escolha entre:
+    - **Nenhuma** – Não são configuradas definições de proxy.
+    - **Manual** – Introduza o **Endereço de servidor proxy** (como um endereço IP) e o **Número de porta** associado.
+    - **Automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
 
 ## <a name="wi-fi-settings-for-basic-profiles-only"></a>Definições de Wi-Fi apenas para perfis básicos
 
-- **Tipo de segurança** – selecione o protocolo de segurança que vai servir para autenticar a rede Wi-Fi entre:
-    - **Aberto (sem autenticação)** – utilize esta opção apenas se a rede não for protegida.
-    - **WPA/WPA2 – pessoal**
+- **Tipo de segurança** – Selecione o protocolo de segurança que vai servir para autenticar a rede Wi-Fi entre:
+    - **Aberto (sem autenticação)** – Utilize esta opção apenas se a rede não for protegida.
+    - **WPA/WPA2 – Pessoal**
     - **WEP**
 
 ## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Definições de Wi-Fi apenas para perfis empresariais
 
-- **Tipo de EAP** – selecione o tipo Protocolo EAP (Extensible Authentication Protocol) que serve para autenticar as ligações sem fios protegidas entre:
+- **Tipo de EAP** – Selecione o tipo Protocolo EAP (Extensible Authentication Protocol) que serve para autenticar as ligações sem fios protegidas entre:
     - **EAP-FAST**
     - **EAP-SIM**
     - **EAP-TLS**
@@ -59,7 +59,7 @@ Este artigo mostra-lhe as definições de Wi-Fi que pode configurar no Microsoft
 
 |Nome da definição|Mais informações|Utilizar quando|
 |--------------|-------------|----------|
-|**Definições de PAC (Credencial de Acesso Protegido)**|Selecione para utilizar credenciais de acesso protegido para estabelecer um túnel autenticado entre o cliente e o servidor de autenticação. Selecione uma das opções:<br>- **Utilizar PAC** – se já existir um ficheiro PAC, este será utilizado.<br>- **Utilizar e Aprovisionar PAC** – aprovisione o ficheiro PAC para os seus dispositivos.<br>- **Aprovisionar PAC Anonimamente** – aprovisione o ficheiro PAC para os seus dispositivos e confirme que o ficheiro PAC é aprovisionado sem autenticar o servidor.|O tipo de EAP é **EAP-FAST**|
+|**Definições de PAC (Credencial de Acesso Protegido)**|Selecione para utilizar credenciais de acesso protegido para estabelecer um túnel autenticado entre o cliente e o servidor de autenticação. Selecione uma das opções:<br>- **Utilizar PAC** – Se já existir um ficheiro PAC, este será utilizado.<br>- **Utilizar e Aprovisionar PAC** – Aprovisione o ficheiro PAC para os seus dispositivos.<br>- **Aprovisionar PAC Anonimamente** – Aprovisione o ficheiro PAC para os seus dispositivos e confirme que o ficheiro PAC é aprovisionado sem autenticar o servidor.|O tipo de EAP é **EAP-FAST**|
 
 #### <a name="server-trust"></a>Fidedignidade do Servidor
 
@@ -77,5 +77,5 @@ Este artigo mostra-lhe as definições de Wi-Fi que pode configurar no Microsoft
 |                                     Nome da definição                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Mais informações                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                  Utilizar quando                  |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | <strong>Certificado de cliente para autenticação de cliente (Certificado de identidade)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Escolha o perfil de certificado SCEP ou PKCS que serve para autenticar a ligação.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |    O tipo de EAP é <strong>EAP-TLS</strong>    |
-|                        <strong>Método de autenticação</strong>                        | Selecione o método de autenticação da ligação:<br>- <strong>Certificados</strong> para selecionar a SCEP ou PKCS do certificado de cliente que é o certificado de identidade apresentado para o servidor.<br><br>- <strong>Nome de utilizador e Palavra-passe</strong> para especificar um método de autenticação diferente. <br><br>Se tiver selecionado <strong>Nome de utilizador e Palavra-passe</strong>, configure:<br><br>-  <strong>Método não EAP (identidade interna)</strong> e, em seguida, selecione a forma como autentica a ligação entre:<br>- <strong>Nenhum</strong><br>- <strong>Palavra-passe não encriptada (PAP)</strong><br>- <strong>Protocolo CHAP (Challenge Handshake Authentication Protocol)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP Versão 2 (MS-CHAP v2)</strong><br>As opções disponíveis dependerão do tipo EAP que selecionou.<br><br><strong>e</strong><br><br>- <strong>Privacidade de identidade (identidade externa)</strong> – especifique o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro. | O tipo de EAP é <strong>EAP-TTLS</strong> ou * |
+|                        <strong>Método de autenticação</strong>                        | Selecione o método de autenticação da ligação:<br>- <strong>Certificados</strong> para selecionar a SCEP ou PKCS do certificado de cliente que é o certificado de identidade apresentado para o servidor.<br><br>- <strong>Nome de utilizador e Palavra-passe</strong> para especificar um método de autenticação diferente. <br><br>Se tiver selecionado <strong>Nome de utilizador e Palavra-passe</strong>, configure:<br><br>-  <strong>Método não EAP (identidade interna)</strong> e, em seguida, selecione a forma como autentica a ligação entre:<br>- <strong>Nenhum</strong><br>- <strong>Palavra-passe não encriptada (PAP)</strong><br>- <strong>Protocolo CHAP (Challenge Handshake Authentication Protocol)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP Versão 2 (MS-CHAP v2)</strong><br>As opções disponíveis dependerão do tipo EAP que selecionou.<br><br><strong>e</strong><br><br>- <strong>Privacidade de identidade (identidade externa)</strong> – Especifique o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro. | O tipo de EAP é <strong>EAP-TTLS</strong> ou * |
 

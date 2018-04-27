@@ -3,8 +3,8 @@ title: Definições de e-mail do Microsoft Intune para dispositivos Android e An
 titleSuffix: ''
 description: Saiba mais sobre as definições do Microsoft Intune que pode utilizar para configurar as definições de e-mail em dispositivos Android e Android for Work.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10bea7ace3fe03db66fa6f8a83a94679dfdc071c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d492e107fffe730d36c662b9187fc9c6faced907
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Definições de perfis de e-mail no Microsoft Intune para dispositivos Android e Android for Work
 

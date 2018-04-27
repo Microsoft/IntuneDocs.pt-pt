@@ -3,8 +3,8 @@ title: Definições de restrição de dispositivos no Microsoft Intune para disp
 titlesuffix: ''
 description: Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos a executar o Android.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Definições de restrição de dispositivos do Microsoft Intune para Android e Samsung Knox Standard 
 
@@ -140,11 +140,11 @@ Para cada definição, configure uma lista de aplicações através de um dos se
 - **Wi-Fi (apenas Samsung Knox)** – permite a utilização das funcionalidades de Wi-Fi do dispositivo.
 - **Tethering Wi-Fi (apenas Samsung Knox)** – permite a utilização de tethering Wi-Fi no dispositivo.
 
-## <a name="kiosk"></a>Modo de Quiosque
+## <a name="kiosk"></a>Modo de Local Público
 
-As definições de modo de quiosque aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
+As definições de modo de local público aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de quiosque. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de quiosque, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
+- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de local público, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.

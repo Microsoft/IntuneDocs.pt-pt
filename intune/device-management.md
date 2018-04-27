@@ -2,8 +2,8 @@
 title: Gerir dispositivos com o Microsoft Intune – Azure | Microsoft Docs
 description: Reveja os dispositivos que gere com o Microsoft Intune, incluindo uma lista de dispositivos exportada para um ficheiro no formato csv, veja os seus dispositivos associados ao Azure Active Directory, consulte um registo de alterações de ações no dispositivo, utilize o TeamViewer Connector para permitir que os administradores de TI resolvam remotamente problemas em dispositivos Android e veja todas as ações que consegue executar nos seus dispositivos.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: get-started-article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 

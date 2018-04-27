@@ -3,8 +3,8 @@ title: Definições personalizadas do Microsoft Intune para dispositivos macOS
 titleSuffix: ''
 description: Saiba quais são as definições que pode utilizar num perfil personalizado do macOS no Microsoft Intune.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66a935b96b802a05831118cd9dc0adbc62bb4bae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 849bf23429ed689ee995784c3a47a802ba7dbf71
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Definições do dispositivo personalizadas do Microsoft Intune para dispositivos macOS
 

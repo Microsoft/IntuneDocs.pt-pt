@@ -3,8 +3,8 @@ title: Definições de filtros de conteúdo Web do Microsoft Intune para disposi
 titlesuffix: ''
 description: Saiba quais são as definições do Microsoft Intune que pode utilizar para permitir e bloquear o acesso a sites a partir de dispositivos iOS.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9ea7a9219c69326dcefc71a35339ebb10a3c5ed1
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Definições de filtros de conteúdo Web para dispositivos iOS
 
@@ -58,7 +58,7 @@ Se não especificar nenhum URL, os utilizadores finais não poderão aceder a si
 
 1. No painel **Filtro de Conteúdo da Web**, configure as seguintes definições para todos os sites que pretende permitir:
     - **URL** – introduza o URL do site que pretende permitir, por exemplo, **http://www.contoso.com**.
-    - **Caminho do Marcador** – introduza o caminho onde pretende armazenar o marcador, por exemplo **/Contoso/Business Apps**. Se não incluir um caminho, o marcador será adicionado à pasta de marcadores predefinida no dispositivo.
+    - **Caminho do Marcador** –introduza o caminho onde pretende armazenar o marcador, por exemplo **/Contoso/Business Apps**. Se não incluir um caminho, o marcador será adicionado à pasta de marcadores predefinida no dispositivo.
     - **Título** – introduza um título descritivo para o marcador.
 2. Clique em **Adicionar** depois de introduzir as informações de cada site.
 3. Quando concluir o procedimento, clique em **OK**.

@@ -2,8 +2,8 @@
 title: RBAC com o Microsoft Intune
 description: Saiba como o Controlo de Acesso Baseado em Funções (RBAC) lhe permite controlar quem efetua ações e alterações no Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -60,7 +60,7 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 - **Gestor de Políticas e Perfis**: gere a política de conformidade, perfis de configuração, inscrição da Apple e identificadores de dispositivos empresariais.
 - **Operador Só de Leitura**: vê as informações do utilizador, do dispositivo, da inscrição, da configuração e da aplicação. Não pode fazer alterações ao Intune.
 - **Gestor de Aplicações**: gere aplicações móveis e geridas e pode ler as informações do dispositivo.
-- **Administrador de Escola**: gere os dispositivos com o Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
+- **Administrador de Escola**: gere os dispositivos Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
 
 |Permissão|Operação|
 |---|---|
@@ -88,8 +88,8 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 3. No painel Função personalizada, selecione **Atribuir**.
 
 4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
-    - **Membros** – selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+    - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
+    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 
@@ -133,8 +133,8 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 3. No painel Função personalizada, selecione **Atribuir**.
 
 4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
-    - **Membros** – selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+    - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
+    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 

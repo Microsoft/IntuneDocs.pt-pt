@@ -3,8 +3,8 @@ title: Definições de VPN para dispositivos macOS no Microsoft Intune
 titlesuffix: ''
 description: Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos macOS.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a59d17c9497d5f7d0fbc3bcdf5f1e232115f643a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d1224c00a1f7e8cf303304b3a0f038ade79b9633
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com macOS
 
@@ -29,11 +29,11 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
-**Nome da ligação** – introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
+**Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
 - **Endereço IP ou FQDN** – forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
 - **Método de autenticação** – escolha como os dispositivos serão autenticados no servidor VPN em:
-    - **Certificados** – em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais detalhes sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).
-    - **Nome de utilizador e palavra-passe** – os utilizadores finais têm de indicar um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.
+    - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais detalhes sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).
+    - **Nome de utilizador e palavra-passe** – Os utilizadores finais têm de indicar um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.
 - **Tipo de ligação** – selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
@@ -49,12 +49,12 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 Se tiver selecionado **VPN Personalizada**, configure estas definições adicionais:
 
-- **Identificador VPN** – é o identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor de VPN.
-- **Introduzir pares de chave e valor para os atributos de VPN personalizados** – adicione ou importe **Chaves** e **Valores** para personalizar a ligação VPN. Mais uma vez, estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
+- **Identificador VPN** – É o identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor de VPN.
+- **Introduzir pares de chave e valor para os atributos de VPN personalizados** – Adicione ou importe **Chaves** e **Valores** para personalizar a ligação VPN. Mais uma vez, estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
 
 
 ## <a name="proxy-settings"></a>Definições de proxy
 
-- **Script de configuração automática** – utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
-- **Endereço** – introduza o endereço do servidor proxy (como um endereço IP).
-- **Número de porta** – introduza o número de porta associado ao servidor proxy.
+- **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
+- **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
+- **Número de porta** – Introduza o número de porta associado ao servidor proxy.

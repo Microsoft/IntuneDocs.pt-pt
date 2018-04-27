@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas do Managed Browser com o Microsoft Intune
 
@@ -155,10 +155,9 @@ O Outlook tem de estar configurado com uma política de proteção de aplicaçõ
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Passo 2: atribuir uma política de configuração de aplicações que atribuiu ao Managed Browser.
 Este procedimento configura a aplicação Managed Browser para utilizar o redirecionamento do proxy de aplicações. Ao utilizar o procedimento para criar uma configuração da aplicação Managed Browser, forneça o seguinte par de chave e valor:
 
-|||
-|-|-|
-|Chave|Valor|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**verdadeiro**|
+| Chave                                                             | Valor    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **verdadeiro** |
 
 Para obter mais informações sobre como o Managed Browser e o Proxy de Aplicações do Azure AD podem ser utilizados em conjunto para um acesso fácil (e seguro) a aplicações Web no local, veja a mensagem de blogue do Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Melhor em conjunto: o Intune e o Azure Active Directory juntam-se para melhorar o acesso do utilizador).
 
@@ -166,10 +165,8 @@ Para obter mais informações sobre como o Managed Browser e o Proxy de Aplicaç
 
 Esta definição permite-lhe configurar a home page que os utilizadores veem ao iniciar o Managed Browser ou ao criar um novo separador. Ao utilizar o procedimento para criar uma configuração da aplicação Managed Browser, forneça o seguinte par de chave e valor:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Chave                                |                                                           Valor                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>Exemplo: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Como configurar os marcadores do Managed Browser
@@ -182,21 +179,17 @@ Esta definição permite-lhe configurar um conjunto de marcadores disponível pa
 
 Ao utilizar o procedimento para criar uma configuração da aplicação Managed Browser, forneça o seguinte par de chave e valor:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Chave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | O valor desta configuração é uma lista de marcadores. Cada marcador é constituído pelo título e URL do marcador. Separe o título e o URL com o caráter <strong>&#124;</strong>.<br><br>Exemplo: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Para configurar múltiplos marcadores, separe cada par com o caráter duplo <strong>&#124;&#124;</strong><br><br>Exemplo: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Como especificar URLs permitidos e bloqueados para o Managed Browser
 
 Ao utilizar o procedimento para criar uma configuração da aplicação Managed Browser, forneça o seguinte par de chave e valor:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Chave                                                                                                                                                                |                                                                                                                                                                                    Valor                                                                                                                                                                                    |
-| Escolha entre:<br><br>– Especificar URLs permitidos (apenas esses URLs são permitidos; nenhum outro site pode ser acedido): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>– Especificar URLs bloqueados (é possível aceder a todos os outros sites): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um caráter de pipe <strong>&#124;</strong>.<br><br>Exemplos:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Chave|Valor|
+|-|-|
+|Escolha entre:<br><br>– Especificar URLs permitidos (apenas esses URLs são permitidos; nenhum outro site pode ser acedido): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>– Especificar URLs bloqueados (é possível aceder a todos os outros sites): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um caráter de pipe **&#124;**.<br><br>Exemplos:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Não especifique ambas as chaves. Se as duas chaves forem direcionadas para o mesmo utilizador, a chave de permissão é utilizada, uma vez que é a opção mais restritiva.
