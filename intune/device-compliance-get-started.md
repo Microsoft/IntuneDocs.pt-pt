@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -81,6 +81,8 @@ Para utilizar políticas de conformidade de dispositivos, é necessário que:
 
 - Os dispositivos tenham de estar inscritos no Intune para comunicarem os respetivos estados de conformidade
 
+- Os dispositivos inscritos a um utilizador ou com nenhum utilizador primário são suportados. Não são suportados vários contextos de utilizador.
+
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>De que forma as políticas de conformidade de dispositivos do Intune funcionam com o Azure AD
 
 Quando um dispositivo é inscrito no Intune, é iniciado o processo de registo do Azure AD, o que atualiza os atributos do dispositivo no Azure AD. Uma das principais informações do dispositivo é o estado de conformidade do dispositivo. Este estado de conformidade do dispositivo é utilizado pelas políticas de acesso condicional para bloquear ou permitir o acesso a e-mails e outros recursos da empresa.
@@ -130,7 +132,7 @@ Se um dispositivo tiver múltiplas políticas de conformidade e estados de confo
 |---------|---------|
 |Unknown     |1|
 |NotApplicable     |2|
-|Compliant|3|
+|Compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
 |Error|6|
@@ -148,9 +150,9 @@ Para dispositivos que estejam em conformidade com as regras da política, poder�
 Também pode utilizar as políticas de conformidade de dispositivos sem acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que têm jailbreak ou root. Quando utilizar políticas de conformidade sem acesso condicional, não existem restrições de acesso aos recursos da empresa.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar as políticas de conformidade de dispositivos
-Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, os dispositivos do utilizador são verificados relativamente à conformidade.
+Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, todos os dispositivos do utilizador são verificados relativamente à conformidade.
 
-Para os dispositivos que se encontrem em grupos de dispositivos, as **Definições de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incluem
+As **Definições de política de conformidade** (Portal do Azure > Conformidade de dispositivo) incluem:
 
 - **Marcar os dispositivos sem política de conformidade atribuída como**: esta propriedade tem dois valores:
 
@@ -177,7 +179,7 @@ Os relatórios de conformidade são uma excelente forma de verificar o estado do
 ### <a name="actions-for-noncompliance"></a>Ações de não conformidade
 Pode configurar uma sequência cronológica de ações que são aplicadas aos dispositivos que não cumprem os critérios da política de conformidade. Estas ações de não conformidade podem ser automatizadas, conforme descrito em [Automatizar as ações de não conformidade](actions-for-noncompliance.md).
 
-## <a name="azure-classic-portal-vs-azure-portal"></a>Portal clássico do Azure vs.  portal do Azure
+## <a name="azure-classic-portal-vs-azure-portal"></a>Portal clássico do Azure vs.  Portal do Azure
 
 A principal diferença ao utilizar políticas de conformidade de dispositivos no portal do Azure:
 

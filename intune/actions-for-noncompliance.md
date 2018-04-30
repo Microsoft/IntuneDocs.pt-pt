@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes – Intune
 
@@ -77,7 +77,10 @@ Pode adicionar uma ação quando criar uma nova política de conformidade ou atu
 1. No [portal do Azure](https://portal.azure.com), abra **Microsoft Intune** e selecione **Conformidade do dispositivo**.
 2. Selecione **Políticas**, selecione uma das suas políticas e, em seguida, selecione **Propriedades**. 
 
-   Ainda não tem uma política? Crie uma política para [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou para outra plataforma.
+  Ainda não tem uma política? Crie uma política para [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou para outra plataforma.
+  
+  > [!NOTE]
+  > Os dispositivos JAMF e dispositivos visados com grupos de dispositivos não conseguem receber ações de conformidade neste momento.
 
 3. Selecione **Ações de não conformidade** e, em seguida, selecione **Adicionar** para introduzir os parâmetros de ação. Pode escolher o modelo de mensagem criado anteriormente, adicionar outros destinatários e atualizar o agendamento do período de tolerância. Pode introduzir o número de dias (0 a 365) na agenda e, em seguida, pode impor as políticas de acesso condicional. Se introduzir **0** número de dias, o acesso condicional bloqueia **imediatamente** o acesso aos recursos empresariais.
 
