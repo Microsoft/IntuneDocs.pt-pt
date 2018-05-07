@@ -253,7 +253,7 @@
                   href: lob-apps-ios.md
                 - name: Aplicações LOB Windows Phone
                   href: lob-apps-windows-phone.md
-                - name: Aplicação LOB Windows
+                - name: Aplicação LOB do Windows
                   href: lob-apps-windows.md
                 - name: Aplicações LOB macOS
                   href: lob-apps-macos.md
@@ -511,7 +511,7 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: Permitir a MTD no Intune
                   href: mtd-connector-enable.md
-        - name: Proteção avançada contra ameaças
+        - name: Windows Defender ATP
           href: advanced-threat-protection.md
         - name: Controlo de acesso à rede
           href: network-access-control-integrate.md
