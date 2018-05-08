@@ -3,8 +3,8 @@ title: Configurar a VPN por aplicação no Microsoft Intune para dispositivos iO
 titleSuffix: ''
 description: Especifique que aplicações geridas podem utilizar a sua Rede Privada Virtual (VPN) em dispositivos iOS geridos pelo Intune.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
 Pode especificar que aplicações geridas podem utilizar a sua Rede Privada Virtual (VPN) em dispositivos iOS geridos pelo Intune. Quando cria uma VPN por aplicação no Intune, um utilizador final estabelece ligação automaticamente através da VPN ao aceder a documentos empresariais.
+
+Atualmente, a VPN por Aplicação está disponível para os seguintes fornecedores: 
+
+ - Pulse Connect Secure
+ - VPN de Acesso Remoto para o Ponto de Verificação
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Pré-requisitos para a VPN por Aplicação
 
@@ -37,7 +45,7 @@ Exporte o certificado e adicione a AC.
 4. Adicione o nome da AC que emitiu o certificado para autenticação ao servidor VPN.
     Se a AC apresentada pelo dispositivo corresponder a uma das ACs na lista de ACs Fidedignas no servidor VPN, o servidor VPN efetua a autenticação do dispositivo com êxito.
 
-## <a name="create-a--group-for-your-vpn-users"></a>Criar um grupo para os utilizadores de VPN
+## <a name="create-a-group-for-your-vpn-users"></a>Criar um grupo para os utilizadores de VPN
 
 Crie ou selecione um grupo existente no Azure Active Directory (Azure AD) para conter os membros que têm acesso à VPN por Aplicação.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
 > [!NOTE]
 > Recomendamos que leia primeiro o artigo [Guia de Introdução ao SDK da Aplicação Intune](app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.
 
-O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou **MAM**) na sua aplicação iOS nativa. Uma aplicação preparada para MAM é uma aplicação que está integrada com o SDK da Aplicação do Intune. Os administradores de TI podem implementar políticas de proteção de aplicações na aplicação móvel quando o Intune está a gerir a aplicação de forma ativa.
+O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou **MAM**) na sua aplicação iOS nativa. Uma aplicação preparada para MAM é uma integrada com o SDK da Aplicação Intune. Os administradores de TI podem implementar políticas de proteção de aplicações na aplicação móvel quando o Intune está a gerir a aplicação de forma ativa.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -458,6 +458,73 @@ WebViewHandledURLSchemes | Matriz de Cadeias | Especifica os esquemas de URL pro
 
 > [!NOTE]
 > Se a sua aplicação for disponibilizada na App Store, a `MAMPolicyRequired` tem de ser definida como "NO", segundo as normas da App Store.
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>Partilhar dados através de UIActivityViewController 
+A partir da v. 8.0.2+, o SDK da APLICAÇÃO Intune poderá filtrar as ações de UIActivityViewController para que não existam localizações de partilha do fora do Intune disponíveis para seleção. Este comportamento será controlado pela política de transferência de dados de aplicações e por uma futura funcionalidade de APLICAÇÃO. A futura funcionalidade será ativada após a maioria das aplicações da Microsoft (como o Word, Excel, Powerpoint) tiver realizado as alterações necessárias para suportar a Partilha de Dados através de UIActivityViewController. 
+ 
+### <a name="copy-to-actions"></a>Ações “Copiar Para” 
+Ao partilhar documentos através de UIActivityViewController e UIDocumentInteractionController, o iOS apresenta as ações “Copiar para” para cada aplicação que suporte abrir o documento que está a ser partilhado. As aplicações declaram os tipos de documentos que suportam através da definição CFBundleDocumentTypes no ficheiro Info.plist. Este tipo de partilha já não estará disponível se a política não permitir partilhar com aplicações não geridas. Como uma substituição, as aplicações terão de adicionar uma extensão de Ação não IU à aplicação e ligá-la ao SDK da APLICAÇÃO Intune para iOS. A extensão de Ação funciona como um stub. O SDK implementará a totalidade do comportamento de partilha de ficheiros. Siga os passos de integração do SDK acima, juntamente com os seguintes: 
+ 
+1. A aplicação tem de ter, pelo menos, um schemeURL definido nos CFBundleURLTypes de Info.plist. 
+2. A extensão da ação e a aplicação têm de partilhar, pelo menos, um Grupo de Aplicações e este último deve estar listado na matriz de AppGroupIdentifiers no dicionário IntuneMAMSettings da extensão e da aplicação. 
+3. Atribua um nome à extensão da ação “Abrir em” seguido do nome da aplicação. Localize o ficheiro Info.plist conforme necessário. 
+4. Crie um ícone de modelo para a extensão, conforme descrito na [Documentação do programador da Apple](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/). Em alternativa, a ferramenta IntuneMAMConfigurator pode servir para gerar estas imagens do diretório .app da aplicação. Execute “IntuneMAMConfigurator - generateOpenInIcons /path/to/app.app -o /path/to/output/directory”. 
+5. Em IntuneMAMSettings, no ficheiro Info.plist da extensão, adicione uma definição Booleana denominada OpenInActionExtension com o valor YES. 
+6. Configure o NSExtensionActivationRule para suportar um único ficheiro e todos os tipos de CFBundleDocumentTypes da aplicação, com o prefixo “com.microsoft.intune.mam”. Por exemplo, se a aplicação suportar public.text e public.image, a regra de ativação será: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>Atualizar extensões Partilhar e Ação existentes 
+Se a aplicação já tiver as extensões Partilhar ou Ação, a NSExtensionActivationRule terá de ser modificada para permitir os tipos do Intune. Para cada tipo suportado pela extensão, um tipo adicional deverá ter o prefixo “com.microsoft.intune.mam”. Por exemplo, se a regra de ativação existente for:  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+Deverá ser alterada para: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] A ferramenta IntuneMAMConfigurator pode servir para adicionar os tipos do Intune à regra de ativação. Se a regra de ativação existente utilizar as constantes de cadeia predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount NSExtensionActivationSupportsText, etc.), a sintaxe de predicado poderá ficar bastante complexa. A ferramenta IntuneMAMConfigurator também pode servir para converter a regra de ativação das constantes de cadeia para uma cadeia de predicado ao adicionar os tipos de Intune. O IntuneMAMConfigurator encontra-se no nosso repositório do GitHub. 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Ativar a configuração de MAM direcionada para aplicações iOS
 A configuração de MAM direcionada permite que uma aplicação receba dados de configuração através do SDK da Aplicação Intune. O formato e as variantes destes dados têm de ser definidos e comunicados aos clientes do Intune pelo proprietário/programador da aplicação. Os administradores do Intune podem direcionar e implementar dados de configuração através do portal do Intune no Azure. A partir da versão 7.0.1 do SDK da Aplicação Intune para iOS, pode proporcionar dados de configuração de MAM direcionada às aplicações que participem na configuração de MAM direcionada através do Serviço MAM. Os dados de configuração de aplicações são emitidos através do nosso Serviço de MAM diretamente para a aplicação em vez de através do canal de MDM. O SDK da Aplicação Intune fornece uma classe para aceder aos dados obtidos através destas consolas. Tenha em consideração os seguintes pré-requisitos: <br>

@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Personalizar dispositivos que executam o Windows Holographic com o Intune
 
@@ -38,7 +38,7 @@ As políticas de conformidade são regras e definições que os dispositivos tê
 
 Veja também **[Introdução às políticas de conformidade](device-compliance-get-started.md)**.
 
-## <a name="deploy-apps"></a>Implementar aplicações
+## <a name="deploy-and-manage-apps"></a>Implementar e gerir aplicações
 **[Adicionar aplicações ao Intune](apps-add.md)**
 
 Com o Intune, pode adicionar aplicações aos seus dispositivos com o Windows Holographic for Business. Existem várias formas de implementar aplicações, incluindo:
@@ -46,6 +46,16 @@ Com o Intune, pode adicionar aplicações aos seus dispositivos com o Windows Ho
 - [Adicionar aplicações da Microsoft Store](store-apps-windows.md)
 - [Adicionar aplicações que cria](lob-apps-windows.md)
 - [Atribuir aplicações a grupos](apps-deploy.md)
+
+O Microsoft Intune pode implementar Aplicações Universais do Windows para dispositivos Microsoft HoloLens com o Windows Holographic for Business. Pode carregar diretamente os pacotes de aplicações no portal do Azure do Intune ou implementá-los a partir do Microsoft Store for Business. Para obter mais informações sobre as áreas relacionadas, veja o seguinte:
+- Para implementar aplicações de Linha de Negócio (LOB) através do portal do Azure do Intune, veja [Como adicionar aplicações de linha de negócios (LOB) Windows ao Microsoft Intune](lob-apps-windows.md).
+- Para implementar aplicações com o Microsoft Store for Business, veja [Como gerir aplicações compradas na Microsoft Store para Empresas com o Microsoft Intune](windows-store-for-business.md). 
+- Para saber mais sobre a gestão de aplicações com o Microsoft Intune, veja [O que é a gestão de aplicações no Microsoft Intune?](app-management.md).
+- Para saber mais sobre como desenvolver aplicações do Microsoft HoloLens, veja [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (Aplicações de realidade mista do Microsoft HoloLens). 
+
+> [!NOTE]
+> Os dispositivos HoloLens com o Windows 10 Holographic for Business 1607 não suportam aplicações licenciadas online da Microsoft Store para Empresas. Para saber mais, veja [Install apps on HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps) (Instalar aplicações no HoloLens).
+
 
 ## <a name="device-categories-and-groups"></a>Grupos e categorias de dispositivos
 **[Categorizar dispositivos em grupos](device-group-mapping.md)**

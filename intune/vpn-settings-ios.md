@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 4/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce970f942d8ea20eb9ea593c23160757122926e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com iOS
 
@@ -36,12 +36,17 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 - **Tipo de ligação**: selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
+  - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**
   - **VPN Personalizada**
+
+    > [!NOTE]
+    > - Os perfis de **VPN Cisco Legacy AnyConnect** destinam-se à versão da aplicação 4.0.5x e versões mais antigas do [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924)
+    > - Os perfis de **VPN Cisco Legacy AnyConnect** destinam-se à versão da aplicação 4.0.7x e versões mais antigas do [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690)
 
 - **Dividir túnel**: **ative** ou **desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
 
@@ -75,3 +80,6 @@ Se tiver selecionado **VPN Personalizada** como o tipo de ligação, configure t
 - **Script de configuração automática**: utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, **http://proxy.contoso.com**) que contém o ficheiro de configuração.
 - **Endereço**: introduza o endereço IP do nome do anfitrião totalmente qualificado do servidor proxy.
 - **Número de porta**: introduza o número de porta associado ao servidor proxy.
+
+## <a name="next-step"></a>Passo seguinte
+[Criar perfis VPN no Intune](vpn-settings-configure.md)

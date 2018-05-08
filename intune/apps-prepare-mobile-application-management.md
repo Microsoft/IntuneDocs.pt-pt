@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -30,9 +30,9 @@ Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune ou o SDK 
 ## <a name="intune-app-wrapping-tool"></a>Ferramenta de Encapsulamento de Aplicações do Intune
 A Ferramenta de Encapsulamento de Aplicações é utilizada, principalmente, para aplicações internas de linha de negócio (LOB). A ferramenta é uma aplicação de linha de comandos que cria um wrapper em torno da aplicação, que permite que a aplicação seja, então, gerida por uma política de proteção de aplicações do Intune.
 
-Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, veja o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para ver a documentação da Ferramenta de Encapsulamento de Aplicações, veja [Ferramenta de encapsulamento de aplicações Android](app-wrapper-prepare-android.md) e [Ferramenta de Encapsulamento de Aplicações iOS](app-wrapper-prepare-ios.md).
+Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para ver a documentação da Ferramenta de Encapsulamento de Aplicações, consulte [Ferramenta de encapsulamento de aplicações Android](app-wrapper-prepare-android.md) e [Ferramenta de Encapsulamento de Aplicações iOS](app-wrapper-prepare-ios.md).
 
-A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (veja a tabela de comparação de funcionalidades seguinte).
+A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (consulte a tabela de comparação de funcionalidades seguinte).
 
 
 Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicações para as políticas de proteção de aplicações de dispositivos que não estão inscritos no Intune, veja [Proteger aplicações de linha de negócio e dados em dispositivos não inscritos no Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
@@ -56,7 +56,7 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicaçõ
 ## <a name="intune-app-sdk"></a>SDK da Aplicação Intune
 O SDK da Aplicação Intune foi concebido principalmente para clientes com aplicações na App Store da Apple ou na Google Play Store e que pretendem conseguir gerir essas aplicações no Intune. No entanto, qualquer aplicação pode tirar partido da integração com o SDK, inclusive as aplicações de linha de negócio.
 
-Para mais informações sobre o SDK, veja [Descrição Geral](app-sdk.md). Para começar a utilizar o SDK, veja [Introdução ao Microsoft Intune App SDK](app-sdk-get-started.md).
+Para mais informações sobre o SDK, consulte [Descrição Geral](app-sdk.md). Para começar a utilizar o SDK, consulte [Introdução ao Microsoft Intune App SDK](app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>Motivos para utilizar o SDK
 * A aplicação não possui funcionalidades de proteção de dados incorporadas
@@ -70,8 +70,8 @@ Para mais informações sobre o SDK, veja [Descrição Geral](app-sdk.md). Para 
 
 |**SDK da Aplicação Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Sim – utilizar o [Plug-in do Cordova do SDK da Aplicação Intune](app-sdk-cordova.md).|
-|**Android**| Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Sim – utilizar o [Plug-in do Cordova do SDK da Aplicação Intune](app-sdk-cordova.md).|
+|**iOS**|Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Não|
+|**Android**| Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Não|
 
 ## <a name="feature-comparison"></a>Comparação de funcionalidades
 Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na Ferramenta de Encapsulamento de Aplicações.

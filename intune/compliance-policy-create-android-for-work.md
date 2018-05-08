@@ -1,12 +1,11 @@
 ---
-title: Criar uma política de conformidade do Android for Work
-titleSuffix: Microsoft Intune
-description: Crie uma política de conformidade de dispositivos do Intune para dispositivos Android for Work, para que possa especificar os requisitos que um dispositivo tem de cumprir para estar em conformidade.
+title: Criar uma política de conformidade do Android for Work no Microsoft Intune – Azure | Microsoft Docs
+description: Crie ou configure uma política de conformidade de dispositivos do Microsoft Intune para dispositivos Android for Work. Opte por permitir dispositivos com jailbreak, defina o nível de ameaça aceitável, verifique o Google Play, introduza a versão do sistema operativo mínima e máxima, escolha os seus requisitos de palavra-passe e permita aplicações de sideload.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +14,17 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Como criar uma política de conformidade para dispositivos Android for Work no Intune
-
+# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android for Work no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Uma política de conformidade de dispositivos do Intune para Android for Work especifica as regras e definições que os dispositivos Android for Work têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa, tal como pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre políticas de conformidade e os pré-requisitos que tem de cumprir antes de criar uma política de conformidade, veja [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos do Intune para Android for Work especifica as regras e as definições que estes têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso a recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para plataformas diferentes no portal do Azure no Intune. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
 
 A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
@@ -49,13 +47,10 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 - Se uma política de acesso condicional se aplicar ao utilizador, o dispositivo é bloqueado.
 - O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Criar uma política de conformidade no portal do Azure
+## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade de dispositivo
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-1. No painel **Intune**, selecione **Conformidade do dispositivo**. Em **Gerir**, selecione **Políticas** e, em seguida, **Criar política**.
-2. Escreva um nome, uma descrição e escolha a plataforma à qual quer que esta política se aplique.
-3. Selecione **Configurar as Definições** para especificar aqui as definições de **Segurança do Sistema**, **Estado de Funcionamento do Dispositivo** e **Propriedades do Dispositivo**. Quando tiver terminado, escolha **OK**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Em **Plataforma**, selecione **Android for Work**. Escolha **Configurar Definições**, aceda às definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando terminar, selecione **OK** e **Criar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -64,59 +59,69 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
+## <a name="device-health"></a>Device health
 
-Para atribuir uma política de conformidade a utilizadores, escolha uma política que tenha configurado. As políticas existentes encontram-se no painel **Conformidade do dispositivo – Políticas**.
+- **Dispositivos com jailbreak**: se ativar esta definição, os dispositivos com jailbreak serão avaliados como não conformes.
+- **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição de conformidade. Selecione o nível de ameaça máximo permitido:
+  - **Protegido**: esta opção é a mais segura e significa que o dispositivo não pode ter qualquer ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
+  - **Baixo**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
+  - **Médio**: o dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
+  - **Elevado**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
+- **Os Serviços Google Play estão configurados**: solicite que a aplicação de Serviços do Google Play esteja instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados.
+- **Fornecedor de segurança atualizado**: solicite que um fornecedor de segurança atualizado proteja um dispositivo contra vulnerabilidades conhecidas.
+- **Atestado de dispositivo SafetyNet**: introduza o nível de [Atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que tem de ser cumprido. As opções são:
+  - **Não configurado**
+  - **Verificação de integridade básica**
+  - **Verificação de integridade básica e de dispositivos certificados**
 
-1. Escolha a política que quer atribuir aos utilizadores e, em seguida, **Atribuições**. Esta ação abre o painel onde pode selecionar **Grupos de segurança do Azure Active Directory** e atribuí-los à política.
-2. Selecione **Grupos selecionados** para abrir o painel que apresenta os grupos de segurança do Azure AD.  Selecionar **Guardar** implementa a política para os utilizadores.
+#### <a name="threat-scan-on-apps"></a>Análise de ameaças nas aplicações
 
-Aplicou a política aos utilizadores.  Os dispositivos utilizados pelos utilizadores visados pela política serão avaliados quanto à conformidade.
+Em dispositivos com perfis de trabalho (Android for Work), a definição **Análise de ameaças nas aplicações** pode ser encontrada como uma definição de política de configuração. Os administradores podem ativar a definição para um dispositivo.
 
-<!--- ##  Compliance policy settings--->
+Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Análise de ameaças nas aplicações** para os dispositivos inscritos. Estabeleça um perfil de dispositivo e solicite a definição de segurança do sistema. Para obter mais informações, veja [Definições de restrição de dispositivos Android for Work no Intune](device-restrictions-android-for-work.md).
+
+## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
+
+- **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para, em seguida, poder aceder aos recursos da empresa.
+- **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. Além disso, é pedido ao utilizador para contactar o administrador de TI. Até a regra ser alterada para permitir a versão do SO, o dispositivo não poderá aceder aos recursos da empresa.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 
 ### <a name="password"></a>Palavra-passe
 
-- **Palavra-passe obrigatória para desbloquear dispositivos móveis**: defina esta opção como **Sim** para exigir que os utilizadores introduzam uma palavra-passe para que possam aceder ao respetivo dispositivo.
-- **Comprimento mínimo da palavra-passe**: especifique o número mínimo de dígitos ou carateres que a palavra-passe tem de ter.
-- **Qualidade da palavra-passe**: esta definição deteta se os requisitos de palavra-passe que especificou estão configurados no dispositivo. Ative esta definição para exigir que os utilizadores configurem determinados requisitos de palavra-passe para dispositivos Android. Escolha entre:
+- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
+- **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
+- **Tipo obrigatório de palavra-passe**: escolha se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
+  - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
-  - **Necessário**
   - **Pelo menos numérica**
+  - **Complexo numérico**
   - **Pelo menos alfabética**
   - **Pelo menos alfanumérica**
-  - **Alfanumérica com símbolos**
-- **Minutos de inatividade antes de ser exigida a palavra-passe**: especifica o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe do utilizador expirar e ser preciso criar uma nova.
-- **Memorizar histórico de palavras-passe:** utilize esta definição juntamente com **Impedir a reutilização de palavras-passe anteriores** para impedir o utilizador de criar palavras-passe utilizadas anteriormente.
-- **Impedir a reutilização de palavras-passe anteriores**: se a opção **Memorizar histórico de palavras-passe** estiver selecionada, especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas.
-- **Exigir uma palavra-passe quando o dispositivo regressa de um estado inativo**: esta definição deve ser utilizada em conjunto com a definição **Minutos de inatividade antes de ser exigida a palavra-passe**. Será pedido aos utilizadores finais que introduzam uma palavra-passe para aceder a dispositivos que tenham estado inativos durante o período de tempo especificado na definição **Minutos de inatividade antes de ser exigida a palavra-passe**.
-
+  - **Pelo menos alfanumérica com símbolos**
+- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
+- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
+- **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe recentes que não podem ser utilizadas. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
 
 ### <a name="encryption"></a>Encriptação
 
 - **Exigir encriptação em dispositivos móveis**: uma vez que os dispositivos Android for Work impõem a encriptação, não necessita de configurar esta definição.
 
+### <a name="device-security"></a>Segurança do Dispositivo
 
-## <a name="device-health-and-security-settings"></a>Definições de estado de funcionamento e segurança do dispositivo
+- **Bloquear aplicações de origens desconhecidas**: uma vez que os dispositivos Android for Work restringem sempre a instalação de origens desconhecidas, não necessita de configurar esta definição.
+- **Integridade de tempo de execução de aplicações do portal da empresa**: verifica se a aplicação do Portal da Empresa tem o ambiente do tempo de execução predefinido instalado, se está assinada corretamente, se não se encontra no modo de depuração e se foi instalada a partir de uma origem conhecida.
+- **Bloquear a depuração de USB no dispositivo**: uma vez que a depuração USB já se encontra desativada em dispositivos Android for Work, não tem de configurar esta definição.
+- **Nível de correção de segurança mínimo**: selecione o nível de correção de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tenham, pelo menos, este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato `YYYY-MM-DD`.
 
-- **O dispositivo não pode estar desbloqueado por jailbreak ou rooting**: se ativar esta definição, os dispositivos com jailbreak serão avaliados como não conformes.
-- **Exigir que os dispositivos impeçam a instalação de aplicações de origens desconhecidas**: uma vez que os dispositivos Android for Work restringem sempre a instalação de origens desconhecidas, não necessita de configurar esta definição.
-- **Exigir que a depuração USB esteja desativada**: uma vez que a depuração USB já se encontra desativada em dispositivos Android for Work, não necessita de configurar esta definição.
-- **Nível do patch de segurança mínimo Android**: utilize esta definição para especificar o nível de patch de segurança mínimo de Android. Os dispositivos que não tenham, pelo menos, este nível de correção não serão conformes. A data tem de ser especificada no formato: AAAA-MM-DD.
-- **Exigir que a proteção contra ameaças de dispositivos seja ativada**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição para conformidade. Selecione o nível de ameaça máximo permitido, que será um dos seguintes:
-  - **Nenhum (seguro):** é o nível mais seguro. Isto significa que o dispositivo não pode ter nenhuma ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
-  - **Baixo**: o dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
-  - **Médio**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
-  - **Alto**: este é o nível menos seguro. Essencialmente, este nível permite todos os níveis de ameaças e possivelmente só será útil se estiver a utilizar esta solução apenas para a criação de relatórios.
+## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 
-## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
+1. Escolha uma política configurada por si. As políticas existentes encontram-se em **Conformidade do dispositivo** > **Políticas**.
+2. Escolha a política e, em seguida, **Atribuições**. Pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e escolha **Guardar** para implementar a política aos utilizadores.
 
-- **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
-- **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
+Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores visados pela política são avaliados quanto à conformidade.
 
-<!--- ## Next steps
-
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>Próximos passos
+[Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
+[Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)
