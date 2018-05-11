@@ -173,7 +173,11 @@
             - name: Ecrã do Estado da Inscrição
               href: windows-enrollment-status.md
         - name: Configurar inscrição do Android
-          href: android-enroll.md
+          items:
+            - name: Configurar inscrição do Android
+              href: android-enroll.md
+            - name: Samsung Knox Mobile Enrollment
+              href: android-samsung-knox-mobile-enroll.md
         - name: Configurar a inscrição do iOS
           href: ios-enroll.md
           items:
@@ -462,6 +466,8 @@
           href: conditional-access-intune-common-ways-use.md
         - name: Instalar o conector do Exchange no local
           href: exchange-connector-install.md
+        - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
+          href: exchange-service-connector-configure.md
         - name: Criar e atribuir a política de acesso condicional
           href: conditional-access-exchange-create.md
         - name: Reatribuir políticas de acesso condicional a partir do portal clássico do Intune
