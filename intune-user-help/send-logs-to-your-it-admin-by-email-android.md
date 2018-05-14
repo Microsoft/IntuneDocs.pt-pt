@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-logs-to-your-company-support"></a>Enviar registos ao suporte da empresa por e-mail
 
 Por vezes, pode ser apresentado um erro ao utilizar a aplicação Portal da Empresa no seu dispositivo Android. Se isto ocorrer, pode enviar por e-mail os detalhes sobre o erro para o responsável pelo suporte da sua empresa. Estes detalhes irão fornecer o contexto necessário para resolver o problema.  
 
-Os detalhes do erro encontram-se no seu dispositivo, num documento especial denominado _registo de diagnóstico_. Ao carregar os registos para a aplicação Portal da Empresa, estes são primeiro enviados para os programadores da Microsoft que trabalham na aplicação. Estes utilizam os registos para melhorar a funcionalidade da aplicação e impedir a ocorrência de erros futuros. É-lhe fornecido um ID de incidente para o seu erro específico para que o possa partilhar com o responsável pelo suporte da sua empresa.  
+Os detalhes do erro encontram-se no seu dispositivo, num documento especial denominado _registo de diagnóstico_. Ao carregar os registos para a aplicação Portal da Empresa, estes são primeiro enviados para os programadores da Microsoft que trabalham na aplicação. Estes utilizam os registos para melhorar a funcionalidade da aplicação e impedir a ocorrência de erros futuros. É-lhe fornecido um ID de incidente para o seu erro específico para que o possa partilhar com o responsável pelo suporte da sua empresa para a utilização em casos do Suporte da Microsoft.
 
 > [!Note]
 > Para que o suporte da empresa descubra a causa do problema mais facilmente, ative o _registo verboso_. O registo verboso regista todos os detalhes de um erro e inclui estes detalhes no relatório. Saiba como pode [ativar o registo verboso aqui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  

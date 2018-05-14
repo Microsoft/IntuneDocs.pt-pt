@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/19/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Definições de restrições de dispositivos profissionais no Intune
 
@@ -50,6 +50,12 @@ Este artigo lista todas as definições de restrições de dispositivos do Micro
    Por exemplo, ao implementar a aplicação Gmail num perfil do Android For Work, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho.
 
 - **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos de perfil de trabalho do Android em Android OS v6.0 e mais recentes. Deste modo, pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
+
+- **Captura de ecrã**: bloqueia a captura de ecrã no dispositivo quando está no perfil de trabalho. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura.
+
+- **Apresentar o ID de autor de chamada do contacto de trabalho no perfil pessoal**: quando esta opção está ativada (não configurada), os detalhes de autor de chamada do contacto de trabalho são apresentados no perfil pessoal. Quando a opção está bloqueada, o número do autor da chamada do contacto de trabalho não é apresentado no perfil pessoal. Aplica-se ao Android OS v6.0 e a versões mais recentes.
+
+- **Câmara**: bloqueia a câmara no dispositivo quando está no perfil de trabalho. A câmara na parte pessoal não é afetada por esta definição.
 
 ### <a name="work-profile-password"></a>Palavra-passe do perfil de trabalho
 

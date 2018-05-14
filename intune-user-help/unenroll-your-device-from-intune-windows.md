@@ -1,4 +1,4 @@
-﻿---
+---
 title: Remover o seu dispositivo Windows do Intune | Microsoft Docs
 description: Descreve como remover um dispositivo Windows do Intune
 keywords: ''
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-your-windows-device-from-intune"></a>Remover o seu dispositivo Windows do Intune
 
@@ -61,7 +61,7 @@ Se o seu dispositivo estiver registado no Intune, mas já não quiser utilizar o
 
 Existem dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
--   **Registos de diagnóstico**: os dados de atividade de aplicações padrão que a Microsoft recolhe, tal como durante quanto tempo a aplicação esteve aberta ou se falhou, são apagados automaticamente quando remove o dispositivo do Portal da Empresa.
+-   **Registos de diagnóstico**: os dados de atividade de aplicações padrão que a Microsoft recolhe, tal como durante quanto tempo a aplicação esteve aberta ou se falhou, são apagados automaticamente quando o Portal da Empresa é desinstalado.
 -   **Cache da aplicação**: é necessário o armazenamento de determinados ficheiros de suporte para a aplicação funcionar, tal como ícones e definições.
 
 Existem alguns passos que precisa de seguir para eliminar completamente estas informações.

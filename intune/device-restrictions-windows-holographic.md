@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Definições de restrição de dispositivos para o Windows Holographic for Business no Intune
 
@@ -36,7 +36,7 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 
 ## <a name="app-store"></a>App Store
 
--   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Microsoft sejam atualizadas automaticamente.
+-   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Microsoft Store sejam atualizadas automaticamente.
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
 
@@ -68,14 +68,17 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 
 - **Modificação da Hora do Sistema** –impede o utilizador final de alterar a data e a hora do dispositivo.
 
-## <a name="kiosk-preview"></a>Modo de Quiosque (Pré-visualização)
+## <a name="kiosk"></a>Modo de Local Público
 
 Normalmente, um dispositivo de quiosque executa uma aplicação específica. Os utilizadores são impedidos de aceder a funcionalidades ou funções no dispositivo fora da aplicação de quiosque.
 
 - **Modo de quiosque** – identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
 
-  - **Não Configurado** (predefinição) – a política não ativa um modo de quiosque. 
+  - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
   - **Quiosque de uma aplicação** – o perfil permite que o dispositivo execute apenas uma aplicação. Quando um utilizador inicia sessão, uma aplicação específica é iniciada. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
+  - **Quiosque de várias aplicações** – o perfil permite que o dispositivo execute múltiplas aplicações. Apenas as aplicações que adicionar estão disponíveis para o utilizador. A vantagem de um quiosque de várias aplicações ou dispositivos de objetivo fixo é o facto de proporcionar uma experiência fácil de compreender pelos utilizadores através do acesso às aplicações de que precisam. Além disso, permite que os utilizadores ocultem as aplicações de que não precisam. 
+  
+    Ao adicionar aplicações a uma experiência de quiosque de várias aplicações, também adiciona um ficheiro de esquema do menu Iniciar. O [ficheiro de esquema do menu Iniciar](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) inclui um XML de exemplo que pode ser utilizado no Intune. 
 
 #### <a name="single-app-kiosks"></a>Quiosques de uma aplicação
 Introduza as seguintes definições:

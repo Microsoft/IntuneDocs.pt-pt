@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -67,10 +67,9 @@ Os SDKs da Aplicação Intune para iOS e Android nativos estão alojados numa co
 * [SDK da Aplicação Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK da Aplicação Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Se a sua aplicação for uma aplicação Xamarin ou Cordova, utilize estas variantes do SDK:
+Se a sua aplicação for uma aplicação Xamarin, utilize esta variante do SDK:
 
 * [Enlaces Xamarin do SDK da Aplicação Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Plugin Cordova do SDK da Aplicação Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Recomendamos que se inscreva numa conta do GitHub que pode utilizar para bifurcar e obter dados dos nossos repositórios. O GitHub permite que os programadores comuniquem com a nossa equipa do produto, coloquem questões e recebam respostas rápidas, vejam notas de versão e enviem feedback à Microsoft. Se tiver perguntas sobre o GitHub do SDK da Aplicação Intune, contacte msintuneappsdk@microsoft.com.
 
@@ -81,8 +80,6 @@ Irá precisar de um dos seguintes guias para programadores para o ajudar a integ
 * **[Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md)**: este documento descreve os passos para ativar a aplicação iOS nativa com o SDK da Aplicação Intune.
 
 * **[Guia para Programadores do SDK da Aplicação Intune para Android](app-sdk-android.md)**: este documento descreve os passos para a ativação da aplicação Android nativa com o SDK da Aplicação Intune.
-
-* **[Guia do Plug-in Cordova do SDK da Aplicação Intune](app-sdk-cordova.md)**: este documento ajuda-o a criar aplicações para iOS e Android com políticas de proteção de aplicações do Cordova para Intune.
 
 * **[Guia de Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md)**: este documento ajuda-o a criar aplicações iOS e Android com políticas de proteção de aplicações do Xamarin para Intune.
 
@@ -163,7 +160,7 @@ Após ter concluído os passos necessários para integrar a aplicação iOS ou A
 
     * Se estiver a desenvolver uma aplicação de linha de negócio que não será enviada para a loja, é esperado que tenha acesso ao Microsoft Intune através da sua organização. Também pode inscrever-se para obter uma versão de avaliação gratuita de um mês com o [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-* **Políticas de proteção de aplicações do Intune**: para testar a aplicação com todas as políticas de proteção de aplicações do Intune, deve saber qual é o comportamento esperado em cada definição de política. Veja as descrições para [políticas de proteção de aplicações para iOS](/intune-classic/deploy-use/ios-mam-policy-settings) e [políticas de proteção de aplicações para Android](/intune-classic/deploy-use/android-mam-policy-settings).
+* **Políticas de proteção de aplicações do Intune**: para testar a aplicação com todas as políticas de proteção de aplicações do Intune, deve saber qual é o comportamento esperado em cada definição de política. Consulte as descrições para [políticas de proteção de aplicações para iOS](/intune-classic/deploy-use/ios-mam-policy-settings) e [políticas de proteção de aplicações para Android](/intune-classic/deploy-use/android-mam-policy-settings).
 
 * **Resolução de problemas**: se tiver problemas enquanto testa manualmente a experiência de utilizador da sua aplicação, consulte a [Resolução de problemas do MAM](/intune-classic/troubleshoot/troubleshoot-mam). Este artigo disponibiliza ajuda para problemas, caixas de diálogo e mensagens de erro frequentes que possa encontrar em aplicações geridas pelo Intune. 
 

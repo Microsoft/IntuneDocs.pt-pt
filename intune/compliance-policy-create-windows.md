@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Windows no Intune
 
@@ -121,23 +121,23 @@ Para obter mais informações sobre como funciona o serviço HAS, veja [Health A
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
-- **SO mínimo obrigatório**: introduza o número major.minor.build.CU. O número build.CU tem de corresponder à versão devolvida pelo comando `ver` ou `winver`.
+- **Versão mínima do SO**: introduza a versão mínima permitida com o formato de número major.minor.build.revision. O número build.revision tem de corresponder à versão devolvida pelo comando `ver` ou `winver`.
 
   Quando um dispositivo tem uma versão anterior à versão de SO especificada, é comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
-- **SO máximo obrigatório**: introduza o número major.minor.build.CU. O número build.CU tem de corresponder à versão devolvida pelo comando `ver` ou `winver`.
+- **Versão máxima do SO**: introduza a versão máxima permitida com o formato de número major.minor.build.revision. O número build.revision tem de corresponder à versão devolvida pelo comando `ver` ou `winver`.
 
   Quando um dispositivo está a utilizar uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
-- **SO mínimo obrigatório para dispositivos móveis**: introduza o número major.minor.build.
+- **SO mínimo obrigatório para dispositivos móveis**: introduza a versão mínima permitida com o formato de número major.minor.build.
 
   Quando um dispositivo tem uma versão anterior à versão de SO especificada, é comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
-- **SO máximo obrigatório para dispositivos móveis**: introduza o número major.minor.build.
+- **SO máximo obrigatório para dispositivos móveis**: introduza a versão máxima permitida com o formato de número major.minor.build.
 
   Quando um dispositivo está a utilizar uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
-- **Compilações válidas do sistema operativo**: introduza um intervalo para as versões de sistemas operativos aceitáveis, incluindo um mínimo e máximo.
+- **Compilações válidas do sistema operativo**: introduza um intervalo para as versões de sistemas operativos aceitáveis, incluindo um mínimo e máximo. Também pode **Exportar** uma lista de ficheiros de valores separados por vírgulas (CSV) destes números de compilação de SO aceitáveis.
 
 ### <a name="system-security-settings"></a>Definições de segurança do sistema
 

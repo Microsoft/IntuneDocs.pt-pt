@@ -5,24 +5,24 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 58a55c9162076af1e2e763a9799c7c1f756d80ce
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c8751572ec2c072504b2442cb7e76496e969e0a2
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Windows como um Serviço é a maneira ideal de atualizar dispositivos com o Windows 10. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Desde que instale a atualização mais recente, pode ter a certeza de que os seus dispositivos com o Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
+O Windows como um Serviço é a maneira ideal de atualizar dispositivos com Windows 10. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Desde que instale a atualização mais recente, pode ter a certeza de que os seus dispositivos com o Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
 
 Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações. Não precisa de aprovar atualizações individuais de grupos de dispositivos. Pode gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações. Já o Windows Update certifica-se de que as atualizações são instaladas no momento adequado. O Microsoft Intune permite configurar definições de atualizações nos dispositivos e dá-lhe a capacidade de diferir a instalação de atualizações. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem diretamente ao Windows Update para obter as atualizações. Utilize o Intune para configurar e gerir **cadências de atualização do Windows 10**. Uma cadência de atualização inclui um grupo de definições que configuram quando e como as atualizações do Windows 10 são instaladas. Por exemplo, pode configurar as seguintes definições:
 
@@ -41,7 +41,7 @@ Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de g
 - **Comportamento da instalação**: esta opção configura a forma como a atualização é instalada. Por exemplo, o dispositivo reinicia automaticamente após a instalação?
 - **Transferência ponto a ponto**: pode optar por configurar a transferência ponto a ponto. Se estiver configurada, quando um dispositivo concluir a transferência de uma atualização, os outros dispositivos poderão transferir a atualização a partir desse dispositivo. Esta definição acelera o processo de transferência.
 
-Depois de criar cadências de atualização, atribua-os a grupos de dispositivos. Ao utilizar cadências de atualização, pode criar uma estratégia de atualização que reflete as necessidades da sua empresa. Para obter mais informações, veja [Manage updates using Windows Update for Business (Gerir atualizações através do Windows Update para Empresas)](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
+Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao utilizar anéis de atualização, pode criar uma estratégia de atualização que reflete as necessidades da sua empresa. Para obter mais informações, veja [Manage updates using Windows Update for Business (Gerir atualizações através do Windows Update para Empresas)](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
 ## <a name="before-you-start"></a>Antes de começar
 
@@ -68,7 +68,7 @@ Depois de criar cadências de atualização, atribua-os a grupos de dispositivos
 
   O portal clássico do Azure também tem um número limitado de outras definições de atualizações do Windows 10 no perfil de configuração do dispositivo. Se tiver qualquer uma destas definições configuradas quando migrar para o portal do Azure, recomendamos vivamente que siga o seguinte procedimento:
 
-1. No portal do Azure, crie cadências de atualização do Windows 10 com as definições de que precisa. A definição **Permitir funcionalidades de pré-lançamento** não é suportada no portal do Azure, porque já não é aplicável às compilações do Windows 10 mais recentes. Pode configurar as outras três definições, bem como outras definições de atualizações do Windows 10, quando cria as cadências de atualização.
+1. No portal do Azure, crie anéis de atualização do Windows 10 com as definições de que precisa. A definição **Permitir funcionalidades de pré-lançamento** não é suportada no portal do Azure, porque já não é aplicável às compilações do Windows 10 mais recentes. Pode configurar as outras três definições, bem como outras definições de atualizações do Windows 10, quando cria os anéis de atualização.
 
    > [!NOTE]
    > As definições das atualizações do Windows 10 criadas no portal clássico não são apresentadas no portal do Azure após a migração. No entanto, estas definições são aplicadas. Se migrar qualquer uma destas definições e editar a política migrada a partir do portal do Azure, estas definições serão removidas da política.
@@ -107,10 +107,10 @@ Depois de criar cadências de atualização, atribua-os a grupos de dispositivos
 
 6. Quando terminar, selecione **OK**. Em **Criar Cadência de Atualização**, selecione **Criar**.
 
-A nova cadência de atualização é apresentada na lista de cadências de atualização.
+O novo anel de atualização é apresentado na lista de anéis de atualização.
 
-1. Para atribuir a cadência, na lista de cadências de atualização, selecione uma cadência e, em seguida, no separador <*nome da cadência*>, escolha **Atribuições**.
-2. No separador seguinte, selecione **Selecionar grupos a incluir** e, em seguida, selecione os grupos para os quais pretende atribuir esta cadência.
+1. Para atribuir o anel, na lista de anéis de atualização, selecione um anel e, em seguida, no separador <*nome do anel*>, escolha **Atribuições**.
+2. No separador seguinte, selecione **Selecionar grupos a incluir** e, em seguida, selecione os grupos para os quais pretende atribuir este anel.
 3. Quando tiver terminado, selecione **Selecionar** para concluir a atribuição.
 
 ## <a name="update-compliance-reporting"></a>Relatórios de conformidade de atualização
@@ -173,4 +173,4 @@ O Windows Holographic for Business suporta as seguintes definições:
 
 - **Comportamento de atualização automática**
 - **Atualizações de produtos da Microsoft**
-- **Canal de serviço**
+- **Canal de serviço**: suporta as opções **Canal semianual** e **Canal semianual (Direcionado)**

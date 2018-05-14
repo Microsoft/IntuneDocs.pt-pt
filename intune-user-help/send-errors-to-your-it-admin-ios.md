@@ -17,19 +17,22 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b9bbd44fcace579803fc4e5c24324d70b8831645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Enviar erros ao suporte da empresa relativos a problemas com o dispositivo iOS
+Por vezes, pode ser apresentado um erro ao utilizar a aplicação Portal da Empresa no seu dispositivo iOS. Se isto ocorrer, pode enviar por e-mail os detalhes sobre o erro para o responsável pelo suporte da sua empresa. Estes detalhes irão fornecer o contexto necessário para resolver o problema.
+
+Ao carregar os registos na aplicação Portal da Empresa, estes são primeiro enviados para os programadores da Microsoft que trabalham na aplicação. Estes utilizam os registos para melhorar a funcionalidade da aplicação e impedir a ocorrência de erros futuros. É-lhe fornecido um ID de incidente para o seu erro específico para que o possa partilhar com o responsável pelo suporte da sua empresa para a utilização em casos do Suporte da Microsoft.
 
 Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa, pode enviar informações para ajudar o suporte da empresa a resolver o problema. Pode enviar informações de erro de formas diferentes:
 
 -   Nas mensagens de alerta do erro, toque em **Relatório**.
 
--   No ecrã **Acerca de** da aplicação Portal da Empresa, toque em **Enviar Relatório de Diagnóstico**.
+-   No separador **Mais** da aplicação Portal da Empresa, toque em **Obter Ajuda**.
 
 -   Na aplicação Portal da Empresa, abane o dispositivo e, quando o alerta de diagnóstico for apresentado, toque em **Enviar Relatório de Diagnóstico**. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 

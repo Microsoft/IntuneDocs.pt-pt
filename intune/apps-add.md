@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune
 
@@ -55,7 +55,7 @@ A tabela seguinte apresenta uma lista dos tipos de aplicações específicos e c
 | Aplicações do Office 365 para macOS | Aplicação da loja (Office 365) | Selecione **macOS** em **Office 365 Suite** como o **tipo de aplicação** e, em seguida, selecione o conjunto de aplicações do Office 365. |
 | Aplicações de linha de negócio (LOB) Android | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Android com a extensão **.apk**.  |
 | Aplicações LOB iOS | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação iOS com a extensão **.ipa**.  |
-| Aplicações LOB Windows Phone | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação iOS com a extensão **.xap**.  |
+| Aplicações LOB para Windows Phone | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação iOS com a extensão **.xap**.  |
 | Aplicação LOB do Windows | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o tipo de aplicação, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação iOS com a extensão **.msi**, **.appx** ou **.appxbundle**. |
 | Aplicação iOS incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
 | Aplicação Android incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
@@ -156,6 +156,16 @@ Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a
 
 Anteriormente, o Intune continha várias aplicações incorporadas que podia atribuir rapidamente. Com base nos comentários de clientes do Intune, removemos esta lista e as aplicações incorporadas já não são apresentadas. No entanto, se já tiver atribuído aplicações incorporadas, as mesmas continuarão visíveis na lista de aplicações. Pode continuar a atribuir as aplicações conforme necessário.
 
+## <a name="installing-updating-or-removing-required-apps"></a>Instalar, atualizar ou remover aplicações necessárias
+
+O Intune irá reinstalar, atualizar ou remover automaticamente uma aplicação necessária no prazo de 24 horas em vez de aguardar o ciclo de reavaliação de 7 dias.
+
+O Intune irá reinstalar, atualizar ou remover automaticamente uma aplicação necessária com base nas seguintes condições:
+- Se um utilizador final desinstalar uma aplicação de instalação necessária no respetivo dispositivo, o Intune irá reinstalar automaticamente a aplicação quando este agendamento terminar.
+- Se a instalação de uma aplicação necessária falhar ou a aplicação não estiver presente no dispositivo, o Intune irá avaliar a conformidade e reinstalar a aplicação quando este agendamento terminar.  
+- Um administrador define uma aplicação como disponível para um grupo de utilizadores e um utilizador final instala a aplicação a partir do portal da empresa no dispositivo. Posteriormente, o administrador atualiza a aplicação da v1 para a v2. O Intune irá atualizar a aplicação quando este agendamento terminar, desde que uma versão anterior da aplicação ainda esteja presente no dispositivo.
+- Se o administrador implementar a intenção de desinstalação e a aplicação estiver presente no dispositivo e a desinstalação falhar, o Intune irá avaliar a conformidade e desinstalar a aplicação quando este agendamento terminar.   
+
 ## <a name="next-steps"></a>Próximos passos
 
 Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
@@ -167,7 +177,7 @@ Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
 - [Aplicações Web (para todas as plataformas)](web-app.md)
 - [Aplicações da loja Windows Phone 8.1](store-apps-windows-phone-8-1.md)
 - [Aplicações LOB para Windows Phone](lob-apps-windows-phone.md)
-- [Aplicações da loja Microsoft](store-apps-windows.md)
+- [Aplicações da Microsoft Store](store-apps-windows.md)
 - [Aplicação LOB do Windows](lob-apps-windows.md)
 - [Aplicações do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicações do Office 365 para macOS](apps-add-office365-macos.md)
