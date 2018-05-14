@@ -1,29 +1,29 @@
 ---
-title: Conector do Skycure com o Microsoft Intune
-titlesuffix: 
-description: "Saiba mais sobre como integrar o Intune com a Defesa Contra Ameaças para Dispositivos Móveis do Skycure para controlar o acesso de dispositivos móveis aos seus recursos empresariais."
-keywords: 
+title: Conector da Symantec com o Microsoft Intune
+titlesuffix: ''
+description: Saiba mais sobre como integrar o Symantec Endpoint Protection Mobile para controlar o acesso de dispositivos móveis aos seus recursos empresariais.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 577eff3a5f3965065a4066973ea8c61160ab4563
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="skycure-mobile-threat-defense-connector"></a>Conector Skycure Mobile Threat Defense
+# <a name="symantec-endpoint-protection-mobile-connector"></a>Conector do Symantec Endpoint Protection Mobile
 
-Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Skycure, uma solução de defesa contra ameaças para dispositivos móveis que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do Skycure, incluindo:
+Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Symantec Endpoint Protection Mobile (SEP Mobile), uma solução de defesa contra ameaças para dispositivos móveis que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos com o SEP Mobile, incluindo:
 
 -   Defesa física
 
@@ -33,21 +33,21 @@ Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis
 
 -   Defesa contra vulnerabilidades
 
-Pode configurar políticas de acesso condicional baseadas na avaliação de riscos do Skycure, que é ativada através das políticas de conformidade de dispositivos do Intune, as quais pode utilizar para permitir ou impedir que os dispositivos não conformes acedam aos recursos da empresa com base nas ameaças detetadas.
+Pode ativar a avaliação de riscos do SEP Mobile através de políticas de conformidade de dispositivos do Intune e, em seguida, utilizar políticas de acesso condicional para permitir ou bloquear o acesso de dispositivos não conformes aos recursos da empresa com base nas ameaças detetadas.
 
-## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Como é que o Intune e o Skycure ajudam a proteger os recursos da empresa?
+## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Como é que o Intune e o SEP Mobile ajudam a proteger os recursos da empresa?
 
-A aplicação Skycure para dispositivos móveis Android ou iOS captura o sistema de ficheiros, a pilha de rede e a telemetria dos dispositivos e das aplicações sempre que estiverem disponíveis e, em seguida, envia-os para o serviço cloud do Skycure para avaliar o risco do dispositivo relativamente a ameaças móveis.
+A aplicação SEP Mobile para Android ou iOS captura o sistema de ficheiros, a pilha de rede e a telemetria dos dispositivos e das aplicações sempre que estiverem disponíveis e, em seguida, envia-os para o serviço cloud da Symantec para avaliar o risco do dispositivo relativamente a ameaças móveis.
 
-A política de conformidade de dispositivos do Intune inclui uma regra para o Skycure Mobile Threat Defense, que se baseia na avaliação de riscos do Skycure. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
+A política de conformidade de dispositivos do Intune inclui uma regra para o SEP Mobile, que se baseia na avaliação de riscos do SEP Mobile. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
 
-Se o dispositivo for considerado não conforme, o acesso a recursos como o Exchange Online e o SharePoint Online será bloqueado. Os utilizadores com os dispositivos bloqueados recebem orientações da aplicação móvel Skycure para resolver o problema e recuperar o acesso aos recursos empresariais.
+Se o dispositivo for considerado não conforme, o acesso a recursos como o Exchange Online e o SharePoint Online será bloqueado. Os utilizadores com os dispositivos bloqueados recebem orientações da aplicação SEP Mobile para resolver o problema e recuperar o acesso aos recursos empresariais.
 
-O Intune suporta dois modos de integração com o Skycure:
+O Intune suporta dois modos de integração com o SEP Mobile:
 
--   A **Configuração básica**, que é um modo só de leitura que permite a visibilidade do Skycure para dispositivos no Intune.
+-   A **Configuração básica**, que é um modo só de leitura que permite a visibilidade do SEP Mobile para dispositivos no Intune.
 
--   A **Integração total**, que permite ao Skycure reportar detalhes de incidentes de segurança e riscos do dispositivo do Skycure para o Intune.
+-   A **Integração total**, que permite ao SEP Mobile comunicar detalhes de incidentes de segurança e riscos do dispositivo ao Intune.
 
 ## <a name="sample-scenarios"></a>Cenários de exemplo
 
@@ -65,11 +65,11 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Aplicações maliciosas detetadas](./media/skycure-arch-1.png)
+![Aplicações maliciosas detetadas](./media/symantec-arch-1.png)
 
 **Acesso concedido na remediação:**
 
-![Acesso concedido na remediação após a deteção de aplicações maliciosas](./media/skycure-arch-2.png)
+![Acesso concedido na remediação após a deteção de aplicações maliciosas](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
@@ -77,11 +77,11 @@ Detete ameaças como **Man-in-the-middle** na rede e proteja o acesso às redes 
 
 **Bloquear o acesso à rede através de Wi-Fi:**
 
-![Bloquear o acesso à rede através de Wi-Fi](./media/skycure-arch-3.png)
+![Bloquear o acesso à rede através de Wi-Fi](./media/symantec-arch-3.png)
 
 **Acesso concedido na remediação:**
 
-![Acesso concedido na remediação](./media/skycure-arch-4.png)
+![Acesso concedido na remediação](./media/symantec-arch-4.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
@@ -89,11 +89,11 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 **Bloquear o SharePoint Online quando forem detetadas ameaças à rede:**
 
-![Bloquear o SharePoint Online quando forem detetadas ameaças à rede](./media/skycure-arch-5.png)
+![Bloquear o SharePoint Online quando forem detetadas ameaças à rede](./media/symantec-arch-5.png)
 
 **Acesso concedido na remediação:**
 
-![Exemplo de acesso concedido na remediação para o SharePoint](./media/skycure-arch-6.png)
+![Exemplo de acesso concedido na remediação para o SharePoint](./media/symantec-arch-6.png)
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -107,18 +107,18 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 -   Subscrição do Microsoft Intune
 
--   Subscrição do Skycure Mobile Threat Defense
+-   Subscrição do Symantec Endpoint Protection Mobile
 
-Para obter mais informações, veja o [site do Skycure](https://www.skycure.com/skycure-microsoft-integration/).
+Para obter mais informações, veja o [site da Symantec](https://www.skycure.com/skycure-microsoft-integration/).
 
 ## <a name="next-steps"></a>Próximos passos
 
-Veja a seguir os passos necessários para integrar o Intune com o Skycure:
+Veja a seguir os passos necessários para integrar o Intune com o SEP Mobile:
 
-- [Configurar a integração do Skycure com o Intune](skycure-mtd-connector-integration.md)
+- [Configurar a integração do SEP Mobile com o Intune](skycure-mtd-connector-integration.md)
 
-- [Adicionar e atribuir aplicações do Skycure, o Microsoft Authenticator e a política de configuração de aplicações iOS](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Adicionar e atribuir aplicações do SEP Mobile, o Microsoft Authenticator e a política de configuração de aplicações iOS](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Criar a política de conformidade de dispositivos do Skycure com o Intune](mtd-device-compliance-policy-create.md)
+- [Criar a política de conformidade de dispositivos do SEP Mobile com o Intune](mtd-device-compliance-policy-create.md)
 
-- [Ativar o conector do Skycure MTD no Intune](mtd-connector-enable.md)
+- [Ativar o conector do SEP Mobile MTD no Intune](mtd-connector-enable.md)

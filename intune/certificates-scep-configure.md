@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dabf8d67b4d0bd7252f306d6b21949cf501eca8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -40,13 +40,11 @@ O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode
   -  Permite aos dispositivos receberem certificados através de uma ligação à Internet.
   -  É uma recomendação de segurança quando os dispositivos se ligam através da Internet para receber e renovar certificados.
 
-> [!NOTE]
-> - O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
-> - O servidor WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos e de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
-> 
->   Para obter informações sobre certificados para WAP, veja [Plan certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) (Planear certificados).
-> 
->   Para obter informações gerais sobre os servidores WAP, veja [Working with Web Application Proxy](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)) (Trabalhar com o Proxy da Aplicação Web).
+#### <a name="additional"></a>Adicionais
+- O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
+- O servidor WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos e de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
+
+Para obter mais informações, veja [Plan certificates for WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) (Planear certificados para o WAP) e as [informações gerais sobre os servidores WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
 
 ### <a name="network-requirements"></a>Requisitos de rede
 
@@ -74,21 +72,21 @@ Recomendamos a publicação do servidor NDES através de um proxy, tal como o [p
 ## <a name="configure-your-infrastructure"></a>Configurar a sua infraestrutura
 Antes de poder configurar perfis de certificados, conclua as tarefas seguintes. Estas tarefas requerem conhecimento do Windows Server 2012 R2 e dos Serviços de Certificados do Active Directory (ADCS):
 
-**Passo 1**: criar uma conta do serviço do NDES
+**Passo 1**: Criar uma conta do serviço do NDES
 
-**Passo 2**: configurar modelos de certificado na autoridade de certificação
+**Passo 2**: Configurar modelos de certificado na autoridade de certificação
 
-**Passo 3**: configurar pré-requisitos no servidor do NDES
+**Passo 3**: Configurar pré-requisitos no servidor do NDES
 
-**Passo 4**: configurar o NDES para ser utilizado com o Intune
+**Passo 4**: Configurar o NDES para ser utilizado com o Intune
 
-**Passo 5**: ativar, instalar e configurar o Intune Certificate Connector
+**Passo 5**: Ativar, instalar e configurar o Intune Certificate Connector
 
-#### <a name="step-1---create-an-ndes-service-account"></a>Passo 1: criar uma conta do serviço do NDES
+#### <a name="step-1---create-an-ndes-service-account"></a>Passo 1 – Criar uma conta do serviço do NDES
 
 Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Introduza esta conta quando configurar os modelos na AC emissora antes de instalar e configurar o NDES. Verifique se o utilizador tem os direitos predefinidos para **Iniciar Sessão Localmente**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2: configurar modelos de certificado na autoridade de certificação
+#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2 – Configurar modelos de certificado na autoridade de certificação
 Nesta tarefa irá:
 
 - Configurar um modelo de certificados para o NDES
@@ -151,7 +149,7 @@ Configure a AC para permitir que o autor do pedido introduza o período de valid
 
 3. Valide o modelo publicado ao visualizá-lo na pasta **Modelos de Certificado**.
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Passo 3: configurar pré-requisitos no servidor do NDES
+#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Passo 3 – Configurar pré-requisitos no servidor do NDES
 Nesta tarefa irá:
 
 - Adicionar o NDES a um Windows Server e configurar ISS para suportar o NDES
@@ -187,7 +185,7 @@ Nesta tarefa irá:
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Passo 4: configurar o NDES para ser utilizado com o Intune
+#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Passo 4 – Configurar o NDES para ser utilizado com o Intune
 Nesta tarefa irá:
 
 - Configurar o NDES para ser utilizado com a AC emissora
@@ -285,7 +283,7 @@ Nesta tarefa irá:
 
 4. Reinicie o servidor do NDES. O servidor está agora pronto para suportar o Certificate Connector.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Passo 5: ativar, instalar e configurar o Intune Certificate Connector
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Passo 5 – Ativar, instalar e configurar o Intune Certificate Connector
 Nesta tarefa irá:
 
 - Ativar o suporte para o NDES no Intune.
@@ -369,13 +367,13 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
        - **CN={{IMEINumber}}**: o número exclusivo IMEI (Identidade Internacional do Equipamento Móvel) utilizado para identificar um telemóvel
        - **CN={{OnPrem_Distinguished_Name}}**: uma sequência de nomes únicos relativos separados por vírgulas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
-       > [!TIP]
-       > Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, certifique-se de que sincroniza o atributo de utilizador `onpremisesdistingishedname` com o [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
+          Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, não se esqueça de sincronizar o atributo de utilizador `onpremisesdistingishedname` através do [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o Azure AD.
+
+       - **CN={{onPremisesSamAccountName}}**: os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD através do Azure AD Connect para um atributo denominado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
+
+          Para utilizar a variável `{{onPremisesSamAccountName}}`, não se esqueça de sincronizar o atributo de utilizador `onPremisesSamAccountName` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
 
        Ao utilizar uma combinação de uma ou várias destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, tal como: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> Neste exemplo, criou um formato de nome de requerente que, além das variáveis CN e E, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. O artigo [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) descreve esta função e as cadeias suportadas da mesma.
-
-
-
 
 - **Nome alternativo do requerente**: introduza o modo como o Intune cria automaticamente os valores para o nome alternativo do requerente (SAN) no pedido de certificado. Por exemplo, se selecionar um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se o certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, terá de definir o nome alternativo do requerente com o UPN.
 - **Utilização de chave**: introduza as opções de utilização de chave para este certificado. As opções são:

@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1dd9fff04ff479844910328d274d6cc4cbe2c14a
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Inscrever dispositivos iOS automaticamente através do Programa de Registo de Aparelho da Apple
 
@@ -72,9 +72,9 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 > [!NOTE]
 > Se eliminar o token do portal clássico do Intune antes da migração para o Azure, o Intune poderá restaurar um token DEP da Apple eliminado. Pode eliminar novamente o token DEP do portal do Azure. Pode eliminar novamente o token DEP do portal do Azure.
 
-**Passo 1: Transfira um certificado de chave pública do Intune obrigatório para criar um token DEP da Apple.**<br>
+**Passo 1. Transfira um certificado de chave pública do Intune obrigatório para criar um token DEP da Apple.**<br>
 
-1. No [Intune, no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição da Apple** > **Token do Programa de Inscrição**.
+1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Token do Programa de Inscrição**.
 
    ![Painel Token do Programa de Inscrição na área de trabalho Certificados da Apple](./media/enrollment-program-token-add.png)
 
@@ -140,14 +140,14 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
    - **Permitir Emparelhamento** – especifica se os dispositivos iOS se podem sincronizar com computadores. Se escolher **Permitir o Apple Configurator por certificado**, terá de selecionar um certificado em **Certificados do Apple Configurator**.
 
-   - **Certificados do Apple Configurator** – se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
+   - **Certificados do Apple Configurator** – Se escolheu **Permitir o Apple Configurator por certificado** em **Permitir Emparelhamento**, selecione um Certificado do Apple Configurator a importar.
 
    Escolha **Guardar**.
 
 5. Selecione **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil:
 
    ![Seleção das definições de configuração com as definições disponíveis para um novo perfil do programa de registo](./media/enrollment-program-profile-settings.png)
-   - **Nome do Departamento** – aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
+   - **Nome do Departamento** – Aparece quando os utilizadores tocam em **Sobre a Configuração de** durante a ativação.
 
    - **N.º de Telefone do Departamento** – aparece quando o utilizador clica no botão **Preciso de Ajuda** durante a ativação.
      - **Opções do Assistente de Configuração** – estas definições opcionais podem ser configuradas mais tarde no menu **Definições** de iOS.

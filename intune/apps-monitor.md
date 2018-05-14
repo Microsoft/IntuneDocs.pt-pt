@@ -1,7 +1,7 @@
 ---
-title: Como monitorizar informações e atribuições da aplicação
+title: Monitorizar informações e atribuições da aplicação
 titlesuffix: Microsoft Intune
-description: Depois de atribuir uma aplicação aos utilizadores ou dispositivos, utilize estas informações para o ajudar a monitorizar o estado da mesma.
+description: Depois de atribuir uma aplicação aos utilizadores ou dispositivos, utilize estas informações para o ajudar a monitorizar o estado da aplicação.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,41 +15,42 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01b7972a6a4dbb641f4c656190324d8572f9010c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Como monitorizar informações e atribuições da aplicação com o Microsoft Intune
+# <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Intune fornece várias formas através das quais pode monitorizar as propriedades das aplicações que gere, assim como os respetivos estados das atribuições.
+O Intune disponibiliza várias formas para monitorizar as propriedades das aplicações que gere e gerir o estado da atribuição das aplicações.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se no grupo **Monitorização + Gestão**.
-3. Selecione **Aplicações Móveis** e, em seguida, selecione **Aplicações** no grupo **Gerir**.
-5. Na lista de aplicações, selecione uma aplicação que pretenda monitorizar. Em seguida, verá o painel da aplicação com uma descrição geral do estado do dispositivo e do estado do utilizador.
+2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+3. No menu **Intune**, selecione **Aplicações móveis**.
+4. Na secção **Gerir** do menu, selecione **Aplicações**.
+5. Na lista de aplicações, selecione uma aplicação a monitorizar. Em seguida, verá o painel da aplicação com uma descrição geral do estado do dispositivo e do estado do utilizador.
 
-## <a name="app-overview-blade"></a>Painel Descrição geral da aplicação
+## <a name="app-overview-pane"></a>Painel Descrição geral da aplicação
 
-Pode utilizar o painel específico da aplicação para rever os detalhes acerca do estado de uma aplicação no seu ambiente.
+No painel da aplicação, pode rever os detalhes acerca do estado de uma aplicação no seu ambiente.
 
 ### <a name="essentials"></a>Essentials
 A secção **Essentials** contém as seguintes informações sobre a aplicação:
 
- | **Detalhes da Aplicação**            | **Descrição**                                                      |
+ | **Detalhes da aplicação**            | **Descrição**                                                      |
 |------------------------|------------------------------------------------------------------|
-| **Publicador**          | Publicador da aplicação.                                            |
-| **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.) |
+| **Publicador**          | O publicador da aplicação.                                            |
+| **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
 | **Criado**             | A data e hora em que esta revisão foi criada.                         |
-| **Atribuído**           | **Sim** ou **Não**, consoante a aplicação tenha ou não sido atribuída.                  |
+| **Atribuído**           | Se a aplicação foi atribuída (**Sim** ou **Não**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Gráficos de estado do utilizador e do dispositivo
-Os gráficos mostram o número para os seguintes estados:
+Os gráficos mostram o número de aplicações para os seguintes estados:
 
-| **Estado do Dispositivo**       | **Descrição**                                       |
+| **Estado do dispositivo**       | **Descrição**                                       |
 |-----------------------|-------------------------------------------------------|
 | **Instalada**         | O número de aplicações instaladas.                         |
 | **Não Instalado**     | O número de aplicações não instaladas.                     |
@@ -59,14 +60,14 @@ Os gráficos mostram o número para os seguintes estados:
 
 ### <a name="device-install-status"></a>Estado de instalação do dispositivo
 
-Uma lista de estado do dispositivo é apresentada ao selecionar **Estado de instalação do dispositivo** na secção **Monitorizar**. A tabela de detalhes inclui as seguintes colunas:
+Uma lista de estados do dispositivo é apresentada ao selecionar **Estado de instalação do dispositivo** na secção **Monitorizar** do menu. A tabela de detalhes inclui as seguintes colunas:
 
-| **Coluna do Dispositivo**      | **Descrição**                                                                                                                                                                                                                                            |
+| **Coluna do dispositivo**      | **Descrição**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome do dispositivo**      | Nome do dispositivo nas plataformas que permitem atribuir um nome aos dispositivos. Noutras plataformas, o Intune cria um nome a partir de outras propriedades. O atributo não pode estar disponível para todos os dispositivos.                                                                       |
+| **Nome do dispositivo**      | O nome do dispositivo nas plataformas que permitem atribuir um nome aos dispositivos. Noutras plataformas, o Intune cria um nome a partir de outras propriedades. Este atributo não está disponível em mais nenhum dispositivo.                                                                       |
 | **Nome de utilizador**        | O nome do utilizador.                                                                                                                                                                                                                                      |
 | **Plataforma**         | O sistema operativo do dispositivo (Windows, iOS, Android, entre outros).                                                                                                                                                                                           |
-| **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócios, será apresentado o número da versão completo da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800) |
+| **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócios, será apresentado o número completo da versão da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800). |
 | **Estado**           | O estado da aplicação.                                                                                                                                                                                                                                     |
 | **Detalhes do estado**   | Os detalhes do estado.                                                                                                                                                                                                                                     |
 | **Último registo**    | A data da última sincronização do dispositivo com o Intune.                                                                                                                                                                                                                  |
@@ -74,14 +75,14 @@ Uma lista de estado do dispositivo é apresentada ao selecionar **Estado de inst
 
 ### <a name="user-install-status"></a>Estado de instalação do utilizador
 
-Uma lista de estado do utilizador é apresentada ao selecionar **Estado de instalação do utilizador** na secção **Monitorizar**. A tabela de detalhes inclui as seguintes colunas:
+Uma lista de estados do utilizador é apresentada ao selecionar **Estado de instalação do utilizador** na secção **Monitorizar** do menu. A tabela de detalhes inclui as seguintes colunas:
 
-| **Coluna do Utilizador**     | **Descrição**                           |
+| **Coluna do utilizador**     | **Descrição**                           |
 |---------------------|-------------------------------------------|
-| **Nome**            | O nome do utilizador no Azure AD.         |
+| **Nome**            | O nome do utilizador no Azure Active Directory.         |
 | **Nome de utilizador**       | O nome exclusivo do utilizador.              |
-| **Instalações**   | O número de instalações de aplicações usadas pelo utilizador. |
-| **Falhas**        | O número de instalações falhadas pelo utilizador.     |
+| **Instalações**   | O número de aplicações instaladas pelo utilizador. |
+| **Falhas**        | O número de falhas nas instalações das aplicações para o utilizador.     |
 | **Não instalado**   | O número de aplicações não instaladas pelo utilizador. |
 
 
