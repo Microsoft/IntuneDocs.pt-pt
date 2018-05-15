@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configurar perfis de certificado
 description: Saiba como criar um perfil de certificado do Intune.
 keywords: ''
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfis de certificado do Intune
 
@@ -101,9 +101,9 @@ Após criar um perfil de certificado da AC Fidedigna, crie perfis de certificado
    > 
    > Em **Formato de nome do requerente**, selecione **Personalizado** para introduzir um formato de nome do requerente (apenas nos perfis iOS).
    > 
-   > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como o seguinte:
+   > As duas variáveis atualmente suportadas pelo formato personalizado são `Common Name (CN)` e `Email (E)`. Através de uma combinação destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado,como o seguinte:
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > Neste exemplo, o administrador criou um formato de nome de requerente que, além das variáveis `CN` e `E`, utiliza cadeias para os valores Unidade Organizacional, Organização, Localização, Estado e País. A [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) lista as cadeias suportadas.
 
