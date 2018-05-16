@@ -35,7 +35,7 @@ Utilize as informações neste artigo para ajudá-lo a adicionar aplicações da
 Só poderá atribuir aplicações com este método se forem gratuitas na app store. Se pretender atribuir aplicações pagas com o Intune, considere utilizar o [programa de compra em volume do iOS](vpp-apps-ios.md).
 
 >[!NOTE]
->O Chrome e o Edge são os browsers recomendados ao trabalhar com o Microsoft Intune.
+>O Chrome e o Microsoft Edge são os browsers recomendados ao trabalhar com o Microsoft Intune.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
