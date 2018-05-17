@@ -119,9 +119,9 @@ Utilize a **política de configuração geral** do Microsoft Intune para o Windo
 |**Permitir browser**|Permite a utilização do browser Microsoft Edge no dispositivo<br>(Apenas Windows 10 Mobile)|
 |**Permitir sugestões de pesquisa na barra de endereço**|Permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa|
 |**Permitir o envio de tráfego da intranet para o Internet Explorer**|Permite que os utilizadores abram sites da intranet no Internet Explorer<br>(apenas para computadores com o Windows 10)|
-|**Permitir Do Not Track**|Configura o browser Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam|
+|**Permitir Do Not Track**|Configura o browser Microsoft Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam|
 |**Ativar SmartScreen**||
-|**Permitir scripting ativo**|Permite que scripts, como JavaScript, sejam executados no browser Edge|
+|**Permitir scripting ativo**|Permite que scripts, como JavaScript, sejam executados no browser Microsoft Edge|
 |**Permitir pop-ups**|Aplica-se apenas ao ambiente de trabalho Windows 10|
 |**Permitir cookies**||
 |**Permitir Preenchimento Automático**|Permite que os utilizadores alterem as definições de conclusão automática no browser<br>(apenas para computadores com o Windows 10)|

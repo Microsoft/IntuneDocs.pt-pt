@@ -1,6 +1,6 @@
 ---
 title: Restrições de dispositivos para o Windows Holographic for Business no Microsoft Intune – Azure | Microsoft Docs
-description: Saiba mais sobre como configurar definições de restrição de dispositivos no Microsoft Intune para Windows Holographic for Business, incluindo anular a inscrição, geolocalização, palavras-passe, instalar aplicações a partir da App Store, cookies e pop-ups no Edge, Windows Defender, pesquisa, cloud e armazenamento, conectividade bluetooth, hora do sistema e dados de utilização no Azure.
+description: Saiba mais sobre como configurar definições de restrição de dispositivos no Microsoft Intune para Windows Holographic for Business, incluindo anular a inscrição, geolocalização, palavras-passe, instalar aplicações a partir da App Store, cookies e pop-ups no Microsoft Edge, Windows Defender, pesquisa, cloud e armazenamento, conectividade bluetooth, hora do sistema e dados de utilização no Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -40,13 +40,13 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
 
-## <a name="edge-browser"></a>Browser Edge
+## <a name="edge-browser"></a>Browser Microsoft Edge
 
 -   **Cookies** – Permite que o browser guarde cookies de Internet no dispositivo.
 -   **Pop-ups** – bloqueia as janelas pop-up no browser (aplica-se apenas ao ambiente de trabalho do Windows 10).
 -   **Sugestões de pesquisa** – Permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.
 -   **Gestor de Palavras-passe** – Ative ou desative a funcionalidade Gestor de Palavras-passe do Microsoft Edge.
-- **Enviar cabeçalhos Do Not Track** – Configura o browser Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
+- **Enviar cabeçalhos Do Not Track** – Configura o browser Microsoft Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 

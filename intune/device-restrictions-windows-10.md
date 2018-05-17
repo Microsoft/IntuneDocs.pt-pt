@@ -148,32 +148,32 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 -   **Gravador de Jogo (apenas no ambiente de trabalho)** – configura se a gravação e a difusão de jogos são permitidas.
 -   **Aplicações apenas a partir da loja** – configura se os utilizadores podem instalar aplicações de outros locais que não a loja de aplicações.
 
-## <a name="edge-browser"></a>Browser Edge
+## <a name="edge-browser"></a>Browser Microsoft Edge
 
 -   **Browser Microsoft Edge (apenas dispositivos móveis)** – Permita a utilização do browser Edge no dispositivo.
--   **Lista pendente da barra de endereço (apenas no ambiente de trabalho)** – utilize isto para impedir o Edge de apresentar uma lista de sugestões numa lista pendente à medida que escreve. Isto ajuda a minimizar a utilização da largura de banda de rede entre o Edge e os serviços Microsoft.
--   **Sincronizar favoritos entre browsers da Microsoft (apenas no ambiente de trabalho)** – permite que o Windows sincronize os favoritos entre o Internet Explorer e o Edge.
--   **Enviar cabeçalhos Do Not Track** – Configura o browser Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
+-   **Lista pendente da barra de endereço (apenas no ambiente de trabalho)** – utilize isto para impedir o Microsoft Edge de apresentar uma lista de sugestões numa lista pendente à medida que escreve. Isto ajuda a minimizar a utilização da largura de banda de rede entre o Microsoft Edge e os serviços Microsoft.
+-   **Sincronizar favoritos entre browsers da Microsoft (apenas no ambiente de trabalho)** – permite que o Windows sincronize os favoritos entre o Internet Explorer e o Microsoft Edge.
+-   **Enviar cabeçalhos Do Not Track** – Configura o browser Microsoft Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
 -   **Cookies** – Permite que o browser guarde cookies de Internet no dispositivo.
--   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no browser Edge.
+-   **JavaScript** – Permite que scripts, como JavaScript, sejam executados no browser Microsoft Edge.
 -   **Pop-ups** – bloqueia as janelas pop-up no browser (Aplica-se apenas ao ambiente de trabalho do Windows 10).
 -   **Sugestões de pesquisa** – Permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.
 -   **Enviar tráfego da intranet para o Internet Explorer** – permite que os utilizadores abram sites da intranet no Internet Explorer (apenas no ambiente de trabalho do Windows 10).
 -   **Preenchimento automático** – permite que os utilizadores alterem as definições da conclusão automática no browser (apenas no ambiente de trabalho do Windows 10).
 -   **Gestor de Palavras-passe** – Ative ou desative a funcionalidade Gestor de Palavras-passe do Microsoft Edge.
 -   **Localização da lista de sites do Modo Empresarial** – Especifica onde encontrar a lista de sites que abrem no modo Empresarial. Os utilizadores não podem editar esta lista.<br>(apenas para computadores com o Windows 10).
--   **Ferramentas de programação** – impeça que o utilizador final abra as ferramentas de programação do Edge.
--   **Extensões** – permita que o utilizador final instale as extensões do Edge no dispositivo.
+-   **Ferramentas de programação** – impeça que o utilizador final abra as ferramentas de programação do Microsoft Edge.
+-   **Extensões** – permita que o utilizador final instale as extensões do Microsoft Edge no dispositivo.
 -   **Navegação InPrivate** – impeça que o utilizador final abra sessões de navegação InPrivate.
--   **Mostrar a página de primeira execução** – impede a apresentação da página de introdução na primeira vez que executa o Edge.
-    -   **Primeiro URL executado** – especifica o URL que é apresentado na primeira vez que um utilizador executa o Edge (apenas no Windows 10 Mobile).
--   **Home Pages** – adicione uma lista de sites que pretende utilizar como home pages no browser Edge (apenas no ambiente de trabalho).
--   **Alterações à página inicial** – permite que os utilizadores alterem as páginas iniciais apresentadas quando o Edge é aberto. Utilize a definição Home Pages para criar a página, ou lista de páginas, que é apresentada quando o Edge é iniciado.
--   **Bloquear acesso a Sinalizadores** – impeça que o utilizador final aceda à página about:flags no Edge, que contém as definições experimentais e de programação.
+-   **Mostrar a página de primeira execução** – impede a apresentação da página de introdução na primeira vez que executa o Microsoft Edge.
+    -   **Primeiro URL executado** – especifica o URL que é apresentado na primeira vez que um utilizador executa o Microsoft Edge (apenas no Windows 10 Mobile).
+-   **Home Pages** – adicione uma lista de sites que pretende utilizar como home pages no browser Microsoft Edge (apenas no ambiente de trabalho).
+-   **Alterações à página inicial** – permite que os utilizadores alterem as páginas iniciais apresentadas quando o Microsoft Edge é aberto. Utilize a definição Home Pages para criar a página, ou lista de páginas, que é apresentada quando o Microsoft Edge é iniciado.
+-   **Bloquear acesso a Sinalizadores** – impeça que o utilizador final aceda à página about:flags no Microsoft Edge, que contém as definições experimentais e de programação.
 -   **Endereço IP do anfitrião local WebRtc** – impeça que o endereço IP de localhost dos utilizadores seja apresentado quando realizar chamadas telefónicas através do protocolo RTC da Web.
 -   **Motor de busca predefinido** – especifique o motor de busca predefinido a ser utilizado. Os utilizadores finais podem alterar este valor em qualquer altura.
--   **Limpar dados de navegação à saída** – limpa o histórico e os dados de navegação quando o utilizador sai do Edge.
--   **Recolha de dados do Mosaico Dinâmico** – impede o Windows de recolher informações do Mosaico Dinâmico quando um utilizador afixa um site ao menu inicial do Edge.
+-   **Limpar dados de navegação à saída** – limpa o histórico e os dados de navegação quando o utilizador sai do Microsoft Edge.
+-   **Recolha de dados do Mosaico Dinâmico** – impede o Windows de recolher informações do Mosaico Dinâmico quando um utilizador afixa um site ao menu inicial do Microsoft Edge.
 -  **Lista de Favoritos** – define o caminho para o ficheiro de favoritos. Por exemplo, http://contoso.com/favorites.html.
 -  **Restringir alterações aos Favoritos** – defina esta opção para **Bloquear** para impedir os utilizadores de adicionarem, importarem, ordenarem ou editarem a lista Favoritos. 
 

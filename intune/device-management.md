@@ -36,7 +36,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
    - **Descrição geral:** mostra um instantâneo visual dos dispositivos inscritos e também mostra quantos dispositivos estão a utilizar as diferentes plataformas, incluindo Android, iOS e mais.
    - **Todos os dispositivos:** mostra uma lista dos dispositivos inscritos que está a gerir.
 
-     Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Edge, Chrome).
+     Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Microsoft Edge, Chrome).
 
      Selecione um dispositivo para [ver os detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, as aplicações instaladas, o estado de política de conformidade e mais.
 
