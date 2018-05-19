@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Pode também
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>Semana de 7 de maio de 2018
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Suporte do Knox Mobile Enrollment da Samsung<!--1112863-->
+
+Ao utilizar o Intune com o Knox Mobile Enrollment (KME) da Samsung, pode inscrever um grande número de dispositivos Android da empresa. Os utilizadores em redes Wi-Fi ou redes móveis podem inscrever com apenas alguns toques os respetivos dispositivos quando os ligarem pela primeira vez. Ao utilizarem a Aplicação Knox Deployment, os dispositivos podem ser inscritos através de Bluetooth ou NFC. Para obter mais informações, consulte [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md) (Inscrever automaticamente dispositivos Android através do Knox Mobile Enrollment da Samsung).
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Pedir ajuda no Portal da Empresa para Windows 10 <!-- 1874137 -->
+
+O Portal da Empresa para Windows 10 irá agora enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o fluxo de trabalho para obter ajuda com um problema. Isto facilitará a resolução dos problemas colocados à Microsoft.
 
 ## <a name="week-of-april-23-2018"></a>Semana de 23 de abril de 2018
 
@@ -369,12 +381,21 @@ Para obter mais informações sobre a criação de canais de implementação no 
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>Registo no Portal da Empresa melhorado <!-- 1874230 eeready-->
 Os utilizadores que inscreverem um dispositivo através do Portal da Empresa com a compilação 1703 e posteriores do Windows 10 poderão concluir o primeiro passo de inscrição sem sair da aplicação.
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>O HoloLens e o SurfaceHub são agora apresentados em listas de dispositivos <!--1725868 -->
 Incluímos suporte adicional para mostrar dispositivos HoloLens e SurfaceHub inscritos no Intune na aplicação Portal da Empresa para Android.
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>Personalizar categorias de livros para eBooks do programa comprado em volume (VPP) <!-- 1488911 -->
-Pode criar categorias de eBook personalizadas e depois atribuir eBooks do VPP a essas categorias. Os utilizadores finais podem depois ver as categorias de eBook recentemente criadas e os livros atribuídos às categorias. Para obter mais informações, veja [Gerir aplicações e livros comprados em grandes volumes com o Microsoft Intune](vpp-apps.md).
+Pode criar categorias de eBook personalizadas e depois atribuir eBooks do VPP a essas categorias. Os utilizadores finais podem depois ver as categorias de eBook recentemente criadas e os livros atribuídos às categorias. Para obter mais informações, veja [Gerir aplicações e livros comprados em grandes volumes com o Microsoft Intune](vpp-apps.md).  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Alterações de suporte da opção Enviar Feedback na aplicação Portal da Empresa para Windows <!-- 2070166 -->
+A partir de 30 de abril de 2018, a opção **Enviar Feedback** na aplicação Portal da Empresa para Windows funcionará apenas em dispositivos com a Atualização de Aniversário do Windows 10 (1607) e versões posteriores. A opção para enviar feedback já não é suportada ao utilizar a aplicação Portal da Empresa para Windows com a:  
+- Versão 1507 do Windows 10  
+- Versão 1511 do Windows 10  
+- Windows Phone 8.1 
+
+Se o seu dispositivo estiver a executar o Windows 10 RS1 ou posterior, transfira a versão mais recente da aplicação Portal da Empresa para Windows a partir da Store. Se estiver a executar uma versão não suportada, continue a enviar feedback através dos seguintes canais: 
+- Aplicação Hub de Comentários no Windows 10
+- E-mail (WinCPfeedback@microsoft.com)  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Novas definições do Windows Defender Application Guard <!-- 1631890 -->
 
@@ -1110,23 +1131,6 @@ Esta alteração afetará os clientes autónomos e os clientes híbridos (Intune
 Adicione o Intune como um favorito em vez do painel do serviço Proteção de Aplicações do Intune e certifique-se de que está familiarizado com o fluxo de trabalho da Política de proteção de aplicações no painel Aplicação móvel no Intune. Iremos redirecionar os utilizadores durante um breve período de tempo e, em seguida, remover o painel Proteção de Aplicações. Tenha em conta que todas as políticas da Proteção de Aplicações já se encontram no Intune e pode modificar as suas políticas de acesso condicional ao seguir esta documentação: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
 
 **Informações Adicionais**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>Plano de Alteração: a opção Enviar Feedback do Portal da Empresa do Windows pode deixar de funcionar  
-A aplicação Portal da Empresa do Windows tem uma opção para **Enviar Feedback** que permite que os utilizadores enviem feedback sobre a aplicação para a Microsoft. A partir de 30 de abril de 2018, esta opção continuará a ser suportada apenas na aplicação Portal da Empresa do Windows 10 em execução no Windows 10 1607 (Atualização de Aniversário) e posterior.  
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?  
-Se não tiver a aplicação Portal da Empresa do Windows instalada para utilizadores finais, ignore esta mensagem. Se algum dos seus utilizadores finais tiver a aplicação Portal da Empresa, tenha em atenção que, a partir de 30 de abril, o botão **Enviar Feedback** deixará de funcionar para a aplicação nos seguintes cenários:  
-- Aplicação Portal da Empresa do Windows 10, quando utilizada nas versões 1507 e 1511 do Windows 10  
-- Aplicação Portal da Empresa do Windows Phone 8.1  
-
-Para os dispositivos afetados, a opção **Enviar Feedback** deixará de funcionar, mesmo ao repetir a operação. Para enviar feedback para a Microsoft sobre experiências nestas plataformas, consulte os canais de feedback alternativos indicados mais abaixo.  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?  
-Informe os seus utilizadores sobre esta alteração e atualize as orientações para os mesmos, se necessário. Informe os utilizadores finais no Windows Phone 8.1, no Windows 10 1507 e no Windows 10 1511 que utilizam o Portal da Empresa de que têm à disposição dois canais de feedback alternativos. Nestes canais, os utilizadores podem:  
-- Utilizar a aplicação Hub de Comentários no Windows 10
-- Enviar um e-mail para WinCPfeedback@microsoft.com  
-
-Peça aos utilizadores no Windows 10 RS1 ou posterior para atualizarem para a versão mais recente do Portal da Empresa do Windows disponível na Microsoft Store.
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Planear a Alteração: alteração no suporte do plug-in Cordova do SDK da Aplicação Microsoft Intune
 O Intune irá descontinuar o suporte do [plug-in Cordova do SDK da Aplicação Microsoft Intune](app-sdk-cordova.md) no dia 1 de maio de 2018. Recomendamos que utilize a Ferramenta de Encapsulamento de Aplicações do Intune como alternativa para preparar as suas aplicações baseadas em Cordova para gestão e disponibilidade no Intune. Quando esta alteração entrar em vigor, o plug-in Cordova do SDK da Aplicação Microsoft Intune já não será gerido nem receberá atualizações. Os programadores de aplicações não poderão utilizar este plug-in. O Intune planeia continuar a suportar as aplicações criadas com Cordova. Contudo, as aplicações criadas com o plug-in Cordova do SDK da Aplicação Microsoft Intune terão as funcionalidades reduzidas no Intune. Após serem encapsuladas com a Ferramenta de Encapsulamento de Aplicações do Intune, as aplicações podem ser implementadas para os utilizadores finais como aconteceria normalmente. Para as aplicações Android baseadas em Cordova lançadas na Google Play Store:
