@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a40b855d1dbaeece1dc91648866285c0a01fb338
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -46,6 +46,16 @@ Este artigo mostra como ver todos os seus dispositivos e as respetivas proprieda
    - **Configuração do dispositivo**: mostra todas as políticas de configuração de dispositivos atribuídas ao dispositivo e indica se a política foi concluída com êxito ou falhou.
 
 O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes à empresa. As aplicações não são verificadas nos dispositivos pessoais. Para PCs com o Windows 10, apenas é apresentada a lista de aplicações modernas em dispositivos pertencentes à empresa. O Intune não recolhe informações de aplicações Win32 no dispositivo. Consoante a utilização da operadora pelos dispositivos, nem todas as aplicações devem ser recolhidas.
+
+|Platform|Em Dispositivos Pessoais|Para Dispositivos Pertencentes à Empresa|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|
+|Windows 8.1 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|  
+|Windows Phone 8|Apenas aplicações geridas|Apenas aplicações geridas|  
+|Windows RT|Apenas aplicações geridas|Apenas aplicações geridas|  
+|iOS|Apenas aplicações geridas|Todas as aplicações instaladas no dispositivo|
+|macOS|Todas as aplicações instaladas no dispositivo|Todas as aplicações instaladas no dispositivo|  
+|Android|Apenas aplicações geridas|Todas as aplicações instaladas no dispositivo|  
 
 ## <a name="next-steps"></a>Próximos passos
 Veja o que mais pode fazer para [gerir os seus dispositivos](device-management.md) com o Intune.

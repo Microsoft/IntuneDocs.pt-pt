@@ -14,11 +14,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android for Work no Intune
 
@@ -91,7 +91,7 @@ Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Aná
 
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
-- **Tipo obrigatório de palavra-passe**: escolha se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
+- **Tipo de palavra-passe necessária**: escolha se uma palavra-passe deve conter apenas carateres numéricos ou uma combinação de números e de outros carateres. Escolha entre:
   - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
   - **Pelo menos numérica**

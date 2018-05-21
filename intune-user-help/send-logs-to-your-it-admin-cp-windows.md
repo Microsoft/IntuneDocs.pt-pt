@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Enviar registos ao suporte da empresa a partir da aplicação Portal da Empresa para Windows 10
 
 Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Windows 10, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
+
+> [!Note]       
+> O Portal da Empresa para Windows 10 irá enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o fluxo de trabalho para obter ajuda com um problema. Isto facilitará a resolução dos problemas colocados à Microsoft.
 
 1. Abra a aplicação **Portal da Empresa**.
 2. Selecione a engrenagem **Definições** e, em seguida, **Enviar registos**.

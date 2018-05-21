@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/24/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6a06326fbb60d910aef0411fc666b82a5f22078
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f3cbfad85e4a7a97d9bbf98e2ad239fda7cc29e4
+ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="the-early-edition-for-microsoft-intune---april-2018"></a>A edição antecipada do Microsoft Intune – abril de 2018
+# <a name="the-early-edition-for-microsoft-intune---may-2018"></a>Edição antecipada do Microsoft Intune – maio de 2018
 
 A **edição antecipada** oferece uma lista de funcionalidades disponíveis em versões futuras do Microsoft Intune. Esta informação é fornecida numa base limitada e está sujeita a alterações. Não partilhe estas informações fora da sua empresa. Algumas funcionalidades aqui indicadas estão em risco de não serem incluídas dentro das datas limite e podem ser adiadas até uma versão futura. Outras funcionalidades estão a ser testadas numa implementação piloto (distribuição de pacotes piloto) para garantir que estão prontas para os clientes. Contacte o seu contacto do grupo de produtos da Microsoft se tiver dúvidas ou preocupações.
 
@@ -38,9 +38,80 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
  
 ## <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
 
+<!-- 1805 start -->
+
+### <a name="set-compliance-by-device-location----851881----"></a>Definir a conformidade pela localização do dispositivo <!-- 851881 ! -->
+Em algumas situações, pode ser útil restringir o acesso a recursos empresariais para uma localização específica, definida por uma ligação de rede. Poderá criar uma política de conformidade (**Conformidade do dispositivo** > **Localizações**) baseada no endereço IP do dispositivo. Se o dispositivo estiver fora do intervalo de IP, não conseguirá aceder a recursos empresariais.
+
+### <a name="improved-troubleshooting-for-app-installation----928990---"></a>Melhorias na resolução de problemas de instalação de aplicações <!-- 928990 -->
+Por vezes, a instalação de aplicações em dispositivos geridos por MDM do Microsoft Intune pode falhar. Quando uma instalação de aplicações falha, pode ser difícil compreender o motivo da falha ou resolver o problema. Vamos lançar uma Pré-visualização Pública das nossas funcionalidades de Resolução de Problemas de Aplicações. Verá um novo nó em cada dispositivo denominado **Aplicações Geridas**. Este nó apresenta as aplicações que foram enviadas através do Intune MDM. Dentro do nó, verá uma lista de estados de instalação das aplicações. Se selecionar uma única aplicação, ser-lhe-á apresentada a vista de resolução de problemas dessa aplicação específica. Na vista de resolução de problemas, verá o ciclo de vida ponto a ponto da aplicação, por exemplo quando é que a aplicação foi criada, modificada, visada e enviada para um dispositivo. Além disso, se a instalação da aplicação não tiver sido concluída com êxito, ser-lhe-á apresentado o código de erro e uma mensagem útil sobre a causa do erro. 
+
+### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>Bloquear o acesso a aplicações baseado em fornecedores e modelos de dispositivos não aprovados <!-- 1425689 ! -->
+O administrador de TI do Intune poderá impor uma lista específica de fabricantes Android e/ou de modelos iOS nas Políticas de Proteção de Aplicações do Intune. O administrador de TI pode fornecer uma lista separada por ponto e vírgula de fabricantes para políticas para Android e de modelos de dispositivos para políticas iOS. As Políticas de Proteção de Aplicações do Intune destinam-se apenas a Android e iOS. Existirão duas ações separadas que podem ser realizadas na lista especificada:
+- O bloqueio do acesso a aplicações em dispositivos não especificados.
+- Uma eliminação seletiva de dados empresariais em dispositivos não especificados. 
+
+O utilizador não conseguirá aceder à aplicação visada se os requisitos da política não forem cumpridos. Com base nas definições escolhidas, os dados empresariais do utilizador podem ser bloqueados ou eliminados seletivamente da aplicação. Em dispositivos iOS, esta funcionalidade requer que a participação das aplicações (por exemplo, o WXP, Outlook, Managed Browser, Yammer) integre o SDK da Aplicação Intune para que as definições de versão mínima sejam impostas nas aplicações visadas. Esta integração decorre de forma gradual e está dependente das equipas específicas da aplicação. No Android, esta funcionalidade necessita da versão mais recente do Portal da Empresa.
+
+Nos dispositivos dos utilizadores finais, o cliente do Intune toma medidas com base numa única correspondência das cadeias especificadas no painel Intune das Políticas de Proteção de Aplicações. Isto depende inteiramente do valor comunicado pelo dispositivo. Como tal, recomendamos que o administrador de TI se certifique de que o comportamento pretendido é preciso. Pode fazê-lo ao testar esta definição com base em vários fabricantes e modelos de dispositivos direcionados para um grupo de utilizadores pequeno. No Microsoft Intune, selecione **Aplicações móveis** > **Políticas de proteção de aplicações** para ver e adicionar políticas de proteção de aplicações. Para obter mais informações sobre políticas de proteção de aplicações, veja [What are app protection policies](app-protection-policy.md) (O que são as políticas de proteção de aplicações?).
+
+### <a name="enable-kiosk-mode-on-windows-10-devices----1560072----"></a>Ativar o modo de quiosque em dispositivos com o Windows 10 <!-- 1560072 ! -->
+Nos dispositivos com o Windows 10, pode criar um perfil de configuração e ativar o modo de quiosque (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Windows 10** > **Restrições do Dispositivo** > **Quiosque**). Nesta atualização, o nome da definição **Quiosque (pré-visualização)** irá mudar para **Quiosque (obsoleto)**. A utilização da definição **Quiosque (obsoleto)** deixará de ser recomendada, embora continue a estar funcional até à atualização de julho. A definição **Quiosque (obsoleto)** será substituída pelo novo tipo de perfil de **Quiosque** (**Criar perfil** > **Windows 10** > **Quiosque (pré-visualização)**), que incluirá as definições para configurar Quiosques no Windows 10 RS4 e posterior.
+
+Aplica-se ao Windows 10 e posterior.
+
+### <a name="retrieve-the-associated-app-user-model-id-aumid-for-microsoft-store-for-business-apps-in-kiosk-mode----1560077----"></a>Obter o ID do modelo do utilizador da aplicação (AUMID) associada para aplicações da Microsoft Store para Empresas no modo de quiosque <!-- 1560077 ! -->
+O Intune poderá obter o IDs do modelo do utilizador da aplicação (AUMIDs) para aplicações da Microsoft Store para Empresas (WSfB) para proporcionar uma configuração melhorada do perfil de quiosque.
+
+Para obter mais informações sobre aplicações da Microsoft Store para Empresas, veja [Gerir aplicações a partir da Microsoft Store para Empresas](windows-store-for-business.md).
+
+### <a name="access-actions-for-app-protection-policies----1483510-eeready---"></a>Ações de acesso das políticas de proteção de aplicações <!-- 1483510 EEready -->
+Brevemente, poderá configurar políticas de proteção de aplicações para avisar, apagar ou bloquear explicitamente dispositivos que não estiverem em conformidade. A ação mais recente, denominada *Apagar*, remove os seus dados empresariais de um dispositivo. Se ocorrer uma eliminação, o utilizador do dispositivo será notificado sobre os motivos da eliminação e os passos de remediação. Para algumas definições, como a versão mínima do SO, poderá realizar múltiplas ações, tais como bloquear e apagar.
+
+### <a name="new-inventory-information-for-windows-devices----1333569-eeready---"></a>Novas informações de inventário para dispositivos Windows <!-- 1333569 eeready -->
+
+Para dispositivos Windows, as seguintes informações de inventário serão disponibilizadas em cada dispositivo no separador **Hardware** (**Grupos** > **Todos os dispositivos móveis** > **Dispositivos** > selecione o dispositivo do utilizador > **Ver Propriedades** > **Hardware**):
+- TPM
+- Antivírus
+- Antisspyware
+- Firewall
+- UAC
+- Bateria
+- Nome de domínio
+
+Para obter mais informações sobre como estes dados são obtidos pelo CSP, veja as entradas de DeviceGuard no artigo [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) (CSP do DeviceStatus).
+
+### <a name="intune-and-the-microsoft-edge-browser----1818969---"></a>O Intune e o browser Microsoft Edge <!-- 1818969 -->
+Agora o browser Microsoft Edge para dispositivos móveis (iOS e Android) suporta as políticas de proteção de aplicações do Intune. Os utilizadores que iniciarem sessão com as suas contas empresariais do Azure AD no browser Edge passarão a ser protegidos pelo Intune. 
+
+### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Nova definição de idioma/região ao configurar o OOBE para o AutoPilot <!-- 1821766 -->
+Será disponibilizada uma nova configuração para definir o idioma e a região de perfis AutoPilot durante a experiência OOBE (Out of Box Experience).
+
+### <a name="new-setting-for-configuring-device-keyboard----1821768---"></a>Nova definição para configurar o teclado do dispositivo <!-- 1821768 -->
+Será disponibilizada uma nova definição para configurar o teclado de perfis AutoPilot durante a experiência OOBE (Out of Box Experience).
+
+### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>Utilizar o TeamViewer para partilhar ecrãs de dispositivos iOS e MacOS <!-- 1985547 -->
+Atualmente, pode utilizar o TeamViewer para administrar remotamente [dispositivos Android e Windows geridos pelo Intune](device-profile-android-teamviewer.md).
+
+Os administradores poderão estabelecer ligação ao TeamViewer e iniciar uma sessão de partilha de ecrã com dispositivos iOS e macOS. Os utilizadores de dispositivos iPhone, iPad e macOS podem partilhar os seus ecrãs em direto com qualquer outro computador ou dispositivo. 
+
+### <a name="device-profile-graphical-user-chart-is-back----2160133---"></a>O gráfico de utilizadores de perfis de dispositivos está de volta <!-- 2160133 -->
+Durante a melhoria das contagens apresentadas no gráfico de utilizadores do perfil do dispositivo (**Configuração do dispositivo** > **Perfis** > selecione um perfil existente > **Descrição geral**), este gráfico foi removido temporariamente.
+
+Com esta atualização, o gráfico de utilizadores está de volta e é apresentado no portal do Azure.
+
+### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Atribuir todos os utilizadores e dispositivos como grupos de âmbito <!-- 2196803 -->
+Poderá atribuir todos os utilizadores, todos os dispositivos ou todos os utilizadores e dispositivos em grupos de âmbito.
+
+### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>Mudança dos perfis do Autopilot para a filtragem de grupo <!-- 1877935 -->
+Atualmente, os perfis de implementação do AutoPilot podem ser atribuídos aos dispositivos selecionados. Depois do lançamento desta funcionalidade, eis o que deverá fazer para atribuir estes perfis:
+- Criar grupos (Azure AD) que contenham dispositivos AutoPilot
+- Atribuir os perfis pretendidos a um grupo do Azure AD. O perfil do AutoPilot será atribuído aos dispositivos AutoPilot nesse grupo.
+
+### <a name="management-name-field-will-be-editable----1875989---"></a>O campo Nome de gestão passará a ser editável <!-- 1875989 -->
+Poderá editar o campo Nome de gestão no painel **Propriedades** de um dispositivo. Para editar este campo, selecione **Dispositivos** > **Todos os dispositivos** > selecione o dispositivo > **Propriedades**. Pode utilizar o campo Nome de gestão para identificar um dispositivo de forma exclusiva.
+
 <!-- 1804 start -->
-
-
 
 
 ### <a name="additions-to-local-device-security-options-settings----1403702---"></a>Adições às definições de Opções de Segurança do Dispositivo Local <!-- 1403702 -->
@@ -54,7 +125,6 @@ Estarão disponíveis novas regras que lhe permitem remover automaticamente disp
 
 ### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Impedir as experiências e aplicações de consumidor em dispositivos AutoPilot com o Windows 10 Enterprise RS4<!-- 1621980 -->
 Poderá impedir a instalação de experiências e aplicações de consumidor nos seus dispositivos AutoPilot com o Windows 10 Enterprise RS4. Para ver esta funcionalidade, aceda a **Intune** > **Inscrição de dispositivos** > **Inscrição no Windows** > **Perfis do Windows AutoPilot** > **Criar Novo** > **Definições de inscrição**. 
-
 
 <!-- 1803 start -->
 
@@ -87,7 +157,6 @@ Os utilizadores que inscrevam um dispositivo ao utilizar o Portal da Empresa com
 
 Iremos atualizar a experiência de Ajuda e Feedback na aplicação Portal da Empresa para Android para estarmos alinhados com as melhores práticas para aplicações Android. Iremos atualizar a aplicação Portal da Empresa para Android nos próximos meses para dividir o item de menu **Ajuda e Feedback** em itens de menu **Ajuda** e **Enviar Feedback** separados. A página **Ajuda** terá uma secção de **Perguntas Frequentes** e o botão **Suporte por E-mail** para que os utilizadores finais carreguem registos para a Microsoft e enviem e-mails para a empresa de suporte com a descrição do problema. O menu **Enviar Feedback** orientará o utilizador ao longo do processo padrão de submissão de feedback da Microsoft, que lhe pedirá para escolher entre "Gosto de algumas coisas", "Não de gosto de algumas coisas" ou "Tenho uma ideia".
 
-
 <!-- the following are present prior to 1801 -->
 
 ### <a name="app-protection-policies-----679615---"></a>Políticas de Proteção de Aplicações <!-- 679615 -->
@@ -99,14 +168,9 @@ As Políticas de Proteção de Aplicações do Intune permitirão criar polític
 Com o Azure Active Directory (Azure AD), poderá restringir o acesso a sites em dispositivos móveis na aplicação Intune Managed Browser. No Managed Browser, os dados dos sites permanecerão protegidos e separados dos dados pessoais dos utilizadores finais. Além disso, o Managed Browser suporta as funcionalidades de Início de Sessão Único para sites protegidos pelo Azure AD. Iniciar sessão no Managed Browser ou utilizá-lo num dispositivo com outra aplicação gerida pelo Intune permite que o Managed Browser aceda a sites empresariais protegidos pelo Azure AD sem que o utilizador tenha de introduzir as suas credenciais. Esta funcionalidade aplica-se a sites como o Outlook Web Access (OWA) e o SharePoint Online, bem como a outros sites empresariais como recursos de intranet acedidos através do Proxy de Aplicações do Azure.
 
 
-
-
 ## <a name="notices"></a>Avisos
 
 Neste momento, não existem avisos ativos.
 
-
 ### <a name="see-also"></a>Consulte também
 Veja [Novidades do Microsoft Intune](whats-new.md) para obter detalhes sobre os desenvolvimentos recentes.
-
-

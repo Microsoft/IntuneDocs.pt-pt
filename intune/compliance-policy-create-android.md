@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
@@ -87,7 +87,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 ## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
-- **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
+- **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
 - **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
@@ -96,16 +96,16 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
-- **Tipo obrigatório de palavra-passe**: escolha se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
+- **Tipo de palavra-passe necessária**: selecione se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
   - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
   - **Pelo menos numérica**
-  - **Complexo numérico**
+  - **Complexo numérico**: os números repetidos ou consecutivos (como "1111" ou "1234") não são permitidos.
   - **Pelo menos alfabética**
   - **Pelo menos alfanumérica**
   - **Pelo menos alfanumérica com símbolos**
 - **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
+- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e de o utilizador ter de criar uma nova.
 - **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe recentes que não podem ser utilizadas. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
 
 ### <a name="encryption"></a>Encriptação

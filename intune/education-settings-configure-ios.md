@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 05/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,17 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7ff30ef609cf2ad742b55d80f418919bf4ab144a
+ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como configurar as definições do Intune para a aplicação Sala de Aula do iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+>[!NOTE]
+>As definições do Intune para a aplicação Sala de Aula tornaram-se obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
 
 ## <a name="introduction"></a>Introdução
 A [Sala de Aula](https://itunes.apple.com/app/id1085319084) é uma aplicação que ajuda os professores a orientar a aprendizagem e a controlar os dispositivos dos estudantes numa sala de aula. Por exemplo, através da aplicação os professores podem:
@@ -34,7 +36,7 @@ A [Sala de Aula](https://itunes.apple.com/app/id1085319084) é uma aplicação q
 - Navegar nos iPads dos estudantes para abrir um marcador ou um capítulo de um livro
 - Apresentar o ecrã do iPad de um estudante numa Apple TV
 
-Para configurar o Classroom no dispositivo, terá de criar e configurar um perfil do dispositivo de educação do iOS no Intune.
+Para configurar a aplicação Sala de Aula no dispositivo, terá de criar e configurar um perfil do dispositivo de educação do iOS no Intune.
 
 ## <a name="before-you-start"></a>Antes de começar
 
@@ -44,7 +46,7 @@ Antes de começar a configurar estas definições, tenha em atenção o seguinte
 - Confirme que a aplicação [Sala de Aula da Apple](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) está instalada no dispositivo do professor. Pode instalar a aplicação manualmente ou com a [gestão de aplicações do Intune](app-management.md).
 - Tem de configurar certificados para autenticar as ligações entre os dispositivos do professor e dos estudantes (veja o Passo 2 – Criar e atribuir um perfil de Educação do iOS no Intune).
 - Os iPads do professor e dos estudantes têm de estar na mesma rede Wi-Fi e ter o Bluetooth ativado.
-- A aplicação Classroom é executada em iPads supervisionados com o iOS 9.3 ou posterior.
+- A aplicação Sala de Aula é executada em iPads supervisionados com o iOS 9.3 ou posterior.
 - Nesta versão, o Intune suporta a gestão de um cenário 1:1, em que cada estudante tem o seu próprio iPad dedicado.
 
 
@@ -151,7 +153,7 @@ Atribua o perfil aos dispositivos dos estudantes nos grupos de sala de aula que 
 
 ## <a name="next-steps"></a>Próximos passos
 
-Agora, quando os professores utilizarem a aplicação Classroom, terão controlo total sobre os dispositivos dos estudantes.
+Agora, quando os professores utilizarem a aplicação Sala de Aula, terão controlo total sobre os dispositivos dos estudantes.
 
 Para obter mais informações sobre a aplicação Sala de Aula, veja [Ajuda de Sala de Aula](https://help.apple.com/classroom/ipad/2.0/) no site da Apple.
 

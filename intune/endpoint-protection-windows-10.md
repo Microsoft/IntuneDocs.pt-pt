@@ -14,11 +14,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22eceb7792aee714fb728d64d8bec2ae8db4167c
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Definições de proteção de ponto final para o Windows 10 (e versões posteriores) no Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/28/2018
 
 O perfil de proteção de ponto final permite-lhe controlar as funcionalidades de segurança em dispositivos com Windows 10, como o BitLocker e o Windows Defender.
 
-Utilize as informações neste artigo para saber como criar perfis de proteção de ponto final.
+Utilize as informações neste artigo para criar perfis de proteção de ponto final. Para configurar o Antivírus do Windows Defender, veja [Restrições de Dispositivos com o Windows 10](device-restrictions-windows-10.md#windows-defender-antivirus). 
 
 > [!NOTE]
 > Estas definições não são suportadas nas edições Home e Professional do Windows 10.
@@ -364,7 +364,7 @@ As [opções LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-ma
 
 ### <a name="microsoft-network-server"></a>Servidor de Rede da Microsoft
 
-- **Assinar digitalmente comunicações (se o cliente concordar)**: determina se o servidor SMB negoceia a assinatura de pacotes SMB com clientes que a peçam. Quando ativada, o servidor de rede da Microsoft negoceia a assinatura de pacotes SMB conforme pedido pelo cliente. Ou seja, se a assinatura de pacotes estiver ativada no cliente, a assinatura de pacotes será negociada. Se estiver desativada (predefinição), o cliente SMB nunca negoceirá a assinatura de pacotes SMB.
+- **Assinar digitalmente comunicações (se o cliente concordar)**: determina se o servidor SMB negoceia a assinatura de pacotes SMB com clientes que a peçam. Quando ativada, o servidor de rede da Microsoft negoceia a assinatura de pacotes SMB conforme pedido pelo cliente. Ou seja, se a assinatura de pacotes estiver ativada no cliente, a assinatura de pacotes será negociada. Se estiver desativada (predefinição), o cliente SMB nunca negociará a assinatura de pacotes SMB.
 - **Assinar digitalmente comunicações (sempre)**: determina se o componente do servidor SMB necessita da assinatura de pacotes. Quando ativada, o servidor de rede da Microsoft não comunica com um cliente de rede da Microsoft, a menos que o cliente aceite executar a assinatura de pacotes SMB. Quando desativada (predefinição), a assinatura de pacotes SMB é negociada entre o cliente e o servidor.
 
 ## <a name="next-steps"></a>Próximos passos

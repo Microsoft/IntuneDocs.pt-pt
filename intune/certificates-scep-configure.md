@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -304,6 +304,9 @@ Nesta tarefa irá:
 6. Quando lhe for pedido o certificado de cliente do Certificate Connector, escolha **Selecionar**e selecione o certificado de **autenticação de cliente** que instalou no Servidor NDES na Tarefa 3.
 
     Após selecionar o certificado de autenticação de cliente, é encaminhado para a superfície do **Certificado de Cliente do Microsoft Intune Certificate Connector** . Embora o certificado que selecionou não seja apresentado, selecione **Seguinte** para ver as propriedades do certificado. Selecione **Seguinte** e, em seguida, **Instalar**.
+    
+    > [!IMPORTANT]
+    > O Intune Certificate Connector não pode ser inscrito num dispositivo com a Configuração de Segurança Avançada do Internet Explorer ativada. Para utilizar o Intune Certificate Connector, [desative a Configuração de segurança avançada do IE](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
 7. Após o assistente ser concluído, mas antes de o fechar, selecione a opção para **Iniciar a IU do Certificate Connector**.
 
@@ -312,7 +315,7 @@ Nesta tarefa irá:
     >
     > <caminho_de_Instalação>\NDESConnectorUI\NDESConnectorUI.exe
 
-8. Na IU do **Certificate Connector** :
+8. Na IU do **Certificate Connector**:
 
     Selecione **Iniciar Sessão** e introduza as suas credenciais de administrador do serviço Intune ou as credenciais de administrador inquilino com a permissão de administração global.
 
@@ -367,7 +370,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
        - **CN={{IMEINumber}}**: o número exclusivo IMEI (Identidade Internacional do Equipamento Móvel) utilizado para identificar um telemóvel
        - **CN={{OnPrem_Distinguished_Name}}**: uma sequência de nomes únicos relativos separados por vírgulas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
-          Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, não se esqueça de sincronizar o atributo de utilizador `onpremisesdistingishedname` através do [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o Azure AD.
+          Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, não se esqueça de sincronizar o atributo de utilizador `onpremisesdistingishedname` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
 
        - **CN={{onPremisesSamAccountName}}**: os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD através do Azure AD Connect para um atributo denominado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
 

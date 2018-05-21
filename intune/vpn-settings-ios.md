@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com iOS
 
@@ -33,6 +33,10 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 - **Método de autenticação**: escolha como os dispositivos serão autenticados no servidor VPN em:
   - **Certificados**: em **Certificado de autenticação**, selecione um perfil de certificado SCEP ou PKCS existente para autenticar a ligação. O tópico [Configurar certificados](certificates-configure.md) fornece algumas orientações sobre perfis de certificado.
   - **Nome de utilizador e palavra-passe**: os utilizadores finais têm de introduzir um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.
+
+    > [!NOTE]
+    > Se o nome de utilizador e a palavra-passe forem utilizados como o método de autenticação do Cisco IPsec VPN, os primeiros têm de enviar o parâmetro SharedSecret através de um perfil personalizado do Apple Configurator.
+  
 - **Tipo de ligação**: selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

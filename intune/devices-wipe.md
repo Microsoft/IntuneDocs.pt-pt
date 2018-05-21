@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Remover dispositivos através da reposição de fábrica ou da remoção de dados da empresa
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Pode fazê-lo ao utilizar as ações **Remover dados da empresa** ou **Reposição de dados de fábrica**. Os utilizadores também podem emitir um comando remoto a partir do Portal da Empresa do Intune para dispositivos pessoais inscritos no Intune.
+Ao realizar as ações **Remover dados da empresa** ou **Reposição de fábrica**, pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Os utilizadores também podem emitir um comando remoto a partir do Portal da Empresa do Intune para dispositivos pessoais inscritos no Intune.
 
 > [!NOTE]
-> Antes de remover um utilizador do Azure Active Directory (Azure AD), utilize as ações **Reposição de dados de fábrica** ou **Remover dados da empresa** para todos os dispositivos associados a esse utilizador. Se remover utilizadores que têm dispositivos geridos a partir do Azure AD, o Intune deixará de conseguir efetuar uma reposição de dados fábrica ou remoções de dados da empresa nesses dispositivos.
+> Antes de remover um utilizador do Azure Active Directory (Azure AD), utilize as ações **Reposição de fábrica** ou **Remover dados da empresa** para todos os dispositivos associados a esse utilizador. Se remover utilizadores que têm dispositivos geridos a partir do Azure AD, o Intune deixará de conseguir efetuar uma reposição de dados fábrica ou remoções de dados da empresa nesses dispositivos.
 
 ## <a name="factory-reset"></a>Reposição de fábrica
 
-A ação **Reposição de dados de fábrica** restaura um dispositivo para as predefinições de fábrica. Uma reposição de dados de fábrica restaura todos os dados e definições da empresa e do utilizador. O dispositivo é removido da gestão do Intune. Uma reposição de dados de fábrica é útil para repor um dispositivo antes de o atribuir a um novo utilizador ou em caso de perda ou roubo do dispositivo. Tenha atenção ao selecionar a **Reposição de dados de fábrica**. Não é possível recuperar os dados no dispositivo.
+A ação **Reposição de fábrica** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos ou apagados, consoante opte ou não por selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**.
+
+|Ação de reposição fábrica|**Reter estado de inscrição e conta de utilizador**|Removido da gestão do Intune|Descrição|
+|:-------------:|:------------:|:------------:|------------|
+|**Reposição de Fábrica**| Opção não selecionada | Sim | Apaga todas as contas, dados, políticas de MDM e definições do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
+|**Reposição de Fábrica**| Opção selecionada | Não | Apaga todas as políticas de MDM. Mantém os dados e as contas do utilizador. Repõe as definições predefinidas do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
+
+A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
+
+As políticas de MDM voltarão a ser aplicadas da próxima vez que o dispositivo estabelecer ligação ao Intune.
+
+Uma reposição de dados de fábrica é útil para repor um dispositivo antes de o atribuir a um novo utilizador ou em caso de perda ou roubo do dispositivo. Tenha atenção ao selecionar a **Reposição de fábrica**. Não é possível recuperar os dados no dispositivo.
 
 ### <a name="factory-reset-a-device"></a>Efetuar uma reposição de dados de fábrica num dispositivo
 
@@ -38,7 +49,7 @@ A ação **Reposição de dados de fábrica** restaura um dispositivo para as pr
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo em que pretende efetuar a reposição de dados de fábrica.
-5. No painel que mostra o nome do dispositivo, selecione **Reposição de dados de fábrica**.
+5. No painel que mostra o nome do dispositivo, selecione **Reposição de fábrica**.
 6. Para a versão 1709 ou posterior do Windows 10, também tem a opção **Reter estado de inscrição e conta de utilizador**. 
     
     |Dados retidos durante uma reposição de dados de fábrica|Não retido|
@@ -54,7 +65,7 @@ A ação **Reposição de dados de fábrica** restaura um dispositivo para as pr
          
 7. Selecione **Sim** para confirmar a reposição de dados de fábrica.
 
-Se o dispositivo estiver ativado e ligado, a ação **Reposição de dados de fábrica** propaga a todos os tipos de dispositivo em menos de 15 minutos.
+Se o dispositivo estiver ativado e ligado, a ação **Reposição de fábrica** propaga a todos os tipos de dispositivo em menos de 15 minutos.
 
 ## <a name="remove-company-data"></a>Remover dados da empresa
 

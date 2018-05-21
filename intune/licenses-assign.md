@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: decb2dee8d2029c70f7f08df507f42211e0f21bb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos utilizadores para que estes possam inscrever dispositivos no Intune
 
@@ -42,6 +42,10 @@ Para adicionar manualmente utilizadores baseados na cloud e atribuir licenças �
 
 > [!NOTE]
 > Os utilizadores apenas serão apresentados na Consola de administração após terem inscrito um dispositivo. Além disso, pode selecionar um grupo de utilizadores para editar ao mesmo tempo, ao selecionar para adicionar ou substituir uma licença para todos os utilizadores selecionados.
+
+## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Atribuir uma licença do Intune com o Azure Active Directory
+
+Também pode atribuir licenças do Intune aos utilizadores com o Azure Active Directory. Para obter mais informações, veja o artigo [Atribuir licenças aos utilizadores no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Utilizar o School Data Sync para atribuir licenças aos utilizadores do Intune for Education
 Se for uma organização de ensino, poderá utilizar o School Data Sync (SDS) para atribuir licenças do Intune for Education aos utilizadores sincronizados. Basta selecionar a caixa de verificação do Intune for Education quando estiver a configurar o perfil SDS.  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a7213608a8147178633ccd8129ab40eef5d4a15
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f5d7a825f70694e9888cf80d96eff12b9169e9ae
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -30,7 +30,10 @@ O portal da empresa do Microsoft Intune é onde os utilizadores acedem aos dados
 > [!Tip]        
 > Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa.       
 
-Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para o fazer, na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Imagem Corporativa do Portal da Empresa** e, em seguida, configure as definições necessárias.      
+Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para o fazer, na carga de trabalho **Aplicações móveis**, escolha **Configuração** > **Imagem Corporativa do Portal da Empresa** e, em seguida, configure as definições necessárias.  
+
+> [!Note]       
+> O Portal da Empresa para Windows 10 irá agora enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o fluxo de trabalho para obter ajuda com um problema. Isto facilitará a resolução dos problemas colocados à Microsoft.  
 
 ## <a name="company-contact-information-and-privacy-statement"></a>Informações de contacto e declaração de privacidade da empresa        
 O nome da empresa é apresentado como o título do Portal da Empresa. Os detalhes e as informações de contacto são apresentados aos utilizadores no ecrã **Contactar TI** do Portal da Empresa. A declaração de privacidade é apresentada quando um utilizador clica na ligação de privacidade.

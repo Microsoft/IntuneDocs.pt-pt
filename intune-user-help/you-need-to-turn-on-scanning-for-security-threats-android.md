@@ -1,6 +1,6 @@
 ---
-title: Tem de ativar a análise de ameaças de segurança | Documentos da Microsoft
-description: ''
+title: Tem de ativar a análise de ameaças de segurança
+description: Saiba como ativar a análise de ameaças de segurança no seu dispositivo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Tem de fazer com o dispositivo seja capaz de verificar a existência de ameaças de segurança
+# <a name="enable-security-threat-scans-on-your-device"></a>Ativar a análise de ameaças de segurança no seu dispositivo 
+Se instalar uma aplicação não segura inadvertidamente, os dados do seu dispositivo poderão ficar em risco. Para proteger os dados no seu dispositivo, recomendamos que: 
 
-O dispositivo Android é capaz de transferir e instalar aplicações que podem realizar uma ampla variedade de tarefas. No entanto, nem todas as aplicações são iguais, e algumas aplicações podem causar problemas. Em termos gerais, recomenda-se que transfira as aplicações apenas a partir de origens verificadas, tais como a Google Play Store. Uma forma adicional através da qual o suporte da empresa decidiu proteger os dados no seu dispositivo é pedir ao Google para analisar as aplicações que está a instalar para garantir que estão seguras.
+* Transfira aplicações apenas a partir de origens verificadas, tais como a Google Play Store.  
+* Ative as análises de ameaças de segurança no seu dispositivo. Estas análises são realizadas pela Google e verificam se é seguro instalar as aplicações.  
 
-Pode ativar esta análise ao aceder a **Definições** > **Google** > **Segurança** e ativar **Analisar se o dispositivo apresenta ameaças de segurança**.
+Para ativar as análises no seu dispositivo, aceda a **Definições** > **Google** > **Segurança**. Ative a opção **Procurar ameaças à segurança no dispositivo**.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Em alguns dispositivos Samsung, poderá encontrar a definição em **Definições** > **Google** > **Segurança** > **Google Play Protect**.
+
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). 
