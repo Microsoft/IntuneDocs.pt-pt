@@ -16,10 +16,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Pré-requisitos para a gestão de dispositivos móveis no Intune
 
@@ -53,7 +53,7 @@ A autoridade de MDM define o serviço de gestão que tem permissão para gerir u
 >[!IMPORTANT]
 > No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, pode alterar a autoridade MDM sem ter de contactar o Suporte da Microsoft e sem ter de anular a inscrição e inscrever novamente os seus dispositivos geridos existentes. Para obter detalhes, veja [O que fazer se escolher a definição de autoridade MDM errada](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
-1.  Na [Consola de administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**.
+1.  Na [Consola do administração do Microsoft Intune](https://manage.microsoft.com), selecione **Administração** &gt; **Gestão de Dispositivos Móveis**.
 
 2.  Na lista **Tarefas**, clique em **Definir Autoridade de Gestão de Dispositivos Móveis**. A caixa de diálogo **Definir Autoridade de Gestão de Dispositivos Móveis** é aberta.
 
@@ -207,7 +207,7 @@ Remova a subscrição do Intune ao clicar com o botão direito do rato na subscr
 5. Selecione **Eliminar** para todas as políticas existentes. Se as políticas estiverem com um estado pendente, não são necessárias mais ações.
 
 >[!NOTE]
->O certificado do APNs do iOS não pode ser eliminado e permanece associado à conta.
+>O certificado do APsN do iOS não pode ser eliminado e permanece associado à conta.
 
 #### <a name="next-steps-for-mdm-authority-resets"></a>Passos seguintes para as reposições da autoridade MDM
 

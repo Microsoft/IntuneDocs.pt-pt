@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 122f0b70392df65076622354722b6d546f4fe7b7
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -86,12 +86,12 @@ Certifique-se de que, ao configurar um dispositivo para um novo utilizador do In
 2.  No painel da lista de tokens VPP, selecione **Criar**.
 4. No painel **Criar token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – se ainda não o fez, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Após a inscrição, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
-    - **ID Apple** – introduza o ID Apple da conta associada ao programa de compra em volume.
+    - **ID Apple** – Introduza o ID Apple da conta associada ao programa de compra em volume.
     - **Pais/Região** – selecione a loja do país do VPP.  O Intune sincroniza as aplicações VPP para todas as regiões a partir da loja do país do VPP especificada.
         > [!WARNING]  
         > Alterar o país irá atualizar o URL da loja e os metadados das aplicações na próxima sincronização com o serviço da Apple para aplicações criadas com este token. A aplicação não será atualizada se não existir na loja do novo país.
 
-    - **Tipo de conta VPP** – escolha entre **Empresas** ou **Educação**.
+    - **Tipo de conta VPP** – Escolha entre **Empresas** ou **Educação**.
     - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativadas, o Intune atualiza todas as aplicações que comprou para o token especificado através do serviço Intune quando o dispositivo dá entrada.
 Deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este dá entrada.
 4. Quando tiver terminado, selecione **Criar**.
@@ -126,11 +126,11 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 | 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
 | 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
 | 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
-| 7 | Modo de quiosque (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
-| 8 | Modo de quiosque (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
+| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
+| 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
 
 > [!Note]  
-> Não é recomendável atribuir aplicações VPP a dispositivos no modo de quiosque com licenciamento de utilizadores do VPP.
+> Não é recomendável atribuir aplicações VPP a dispositivos no modo de local público com licenciamento de utilizadores do VPP.
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Revogar licenças de aplicações e eliminar tokens 
 
