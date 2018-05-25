@@ -488,6 +488,30 @@
           href: conditional-access-assign-jamf.md
     - name: Proteger os dados do dispositivo
       items:
+        - name: Dados pessoais e privacidade
+          href: privacy-personal-data.md
+          items:
+            - name: Recolha de dados
+              href: privacy-data-collect.md
+            - name: Data storage and processing (Processamento e armazenamento de dados)
+              href: privacy-data-store-process.md
+            - name: Partilha e segurança de dados
+              href: privacy-data-secure-share.md
+              items:
+                - name: Dados que a Apple envia para o Intune
+                  href: data-apple-sends-to-intune.md
+                - name: Dados que a Google envia para o Intune
+                  href: data-google-sends-to-intune.md
+                - name: Dados que o Intune envia para a Apple
+                  href: data-intune-sends-to-apple.md
+                - name: Dados que o Intune envia para a Google
+                  href: data-intune-sends-to-google.md
+                - name: Informações partilhadas do Jamf Pro com o Intune
+                  href: conditional-access-integrate-jamf.md
+            - name: View and correct personal data (Ver e corrigir dados pessoais)
+              href: privacy-data-view-correct.md
+            - name: 'Audit, export, delete (Auditar, exportar ou eliminar)'
+              href: privacy-data-audit-export-delete.md
         - name: Defesa Contra Ameaças para Dispositivos Móveis
           href: mobile-threat-defense.md
           items:
