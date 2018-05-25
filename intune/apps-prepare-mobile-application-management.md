@@ -1,12 +1,11 @@
 ---
-title: Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
-titlesuffix: Microsoft Intune
-description: Utilize a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócios personalizadas utilizem políticas de proteção de aplicações no Microsoft Intune.
+title: Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune
+description: As informações neste tópico ajudam-no a decidir quando deve utilizar a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócio personalizadas utilizem políticas de gestão de aplicações móveis.
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune ou o SDK da Aplicação do Intune para ativar as suas aplicações para que utilizem políticas de proteção de aplicações. Utilize estas informações para saber mais sobre estes dois métodos e como os utilizar.
 
@@ -34,7 +33,6 @@ Não precisa do código de origem para utilizar a ferramenta, mas precisa das cr
 
 A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (consulte a tabela de comparação de funcionalidades seguinte).
 
-
 Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicações para as políticas de proteção de aplicações de dispositivos que não estão inscritos no Intune, veja [Proteger aplicações de linha de negócio e dados em dispositivos não inscritos no Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para utilizar a Ferramenta de Encapsulamento de Aplicações
@@ -44,7 +42,6 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicaçõ
 * Não tem acesso ao código de origem da aplicação
 * Não desenvolveu a aplicação
 * A aplicação tem uma experiência mínima de autenticação de utilizador
-
 
 ### <a name="supported-app-development-platforms"></a>Plataformas de desenvolvimento de aplicações suportadas
 
@@ -79,35 +76,43 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 > [!NOTE]
 > A Ferramenta de Encapsulamento de Aplicações pode ser utilizada com o Intune autónomo ou o Intune com o Configuration Manager.
 
-|                                                         Funcionalidade                                                          | SDK da Aplicação | Ferramenta de Encapsulamento de Aplicações |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              Restringir o conteúdo Web a apresentar num browser gerido pela empresa                              |    X    |         X         |
-|                                        Impedir cópias de segurança do Android, do iTunes ou do iCloud                                        |    X    |         X         |
-|                                         Permitir que a aplicação transfira dados para outras aplicações                                         |    X    |         X         |
-|                                        Permitir que a aplicação receba dados de outras aplicações                                         |    X    |         X         |
-|                                      Restringir cortar, copiar e colar com outras aplicações                                       |    X    |         X         |
-|                                              Exigir PIN simples para acesso                                               |    X    |         X         |
-|                                         Substituir o PIN da aplicação incorporado pelo PIN do Intune                                         |    X    |                   |
-|                                     Especificar o número de tentativas antes da redefinição do PIN                                      |    X    |         X         |
-|                                             Permitir impressões digitais em vez do PIN                                             |    X    |         X         |
-|                                         Exigir credenciais da empresa para obter acesso                                         |    X    |         X         |
-|                             Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root                              |    X    |         X         |
-|                                                     Encriptar dados da aplicação                                                     |    X    |         X         |
-|                           Verificar novamente os requisitos de acesso após um número de minutos especificado                            |    X    |         X         |
-|                                             Especificar o período de tolerância offline                                             |    X    |         X         |
-|                                           Bloquear captura de ecrã (apenas Android)                                            |    X    |         X         |
-|                                        Suporte para MAM sem a inscrição de dispositivos                                         |    X    |         X         |
-|                                                        Eliminação Completa                                                         |    X    |         X         |
-| Eliminação Seletiva <br></br><strong>Nota:</strong> no iOS, se o perfil de gestão for removido, a aplicação também é removida. |    X    |                   |
-|                                                    Impedir "Guardar como"                                                     |    X    |                   |
-|                                            Configuração da Aplicação de Destino                                            |    X    |                   |
-|                                                Suporte para Identidades Múltiplas                                                |    X    |                   |
-|                                                    Estilo Personalizável                                                    |    X    |                   |
+|Funcionalidade|SDK da Aplicação|Ferramenta de Encapsulamento de Aplicações|
+|-----------|---------------------|-----------|
+|Restringir o conteúdo Web a apresentar num browser gerido pela empresa|X|X|
+|Impedir cópias de segurança do Android, do iTunes ou do iCloud|X|X|
+|Permitir que a aplicação transfira dados para outras aplicações|X|X|
+|Permitir que a aplicação receba dados de outras aplicações|X|X|
+|Restringir cortar, copiar e colar com outras aplicações|X|X|
+|Exigir PIN simples para acesso|X|X|
+|Substituir o PIN da aplicação incorporado pelo PIN do Intune|X||
+|Especificar o número de tentativas antes da redefinição do PIN|X|X|
+|Permitir impressões digitais em vez do PIN|X|X|
+|Permitir o reconhecimento facial em vez de PIN (apenas iOS)|X|X|
+|Exigir credenciais da empresa para obter acesso|X|X|
+|Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root|X|X|
+|Encriptar dados da aplicação|X|X|
+|Verificar novamente os requisitos de acesso após um número de minutos especificado|X|X|
+|Especificar o período de tolerância offline|X|X|
+|Bloquear captura de ecrã (apenas Android)|X|X|
+|Suporte para MAM sem a inscrição de dispositivos|X|X|
+|Eliminação Completa|X|X|
+|Eliminação Seletiva <br></br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
+|Impedir "Guardar como"|X||
+|Configuração da Aplicação de Destino|X||
+|Suporte para Identidades Múltiplas|X||
+|Estilo Personalizável |X|||
+|Ligações de VPN de aplicação a pedido com o mVPN da Citrix|X|X| 
+|Desativar a sincronização de contactos|X|X|
+|Desativar a impressão|X|X|
+|Exigir versão mínima da aplicação|X|X|
+|Exigir sistema operativo mínimo (iOS e Android)|X|X|
+|Exigir versão de patch de segurança mínima para Android (apenas Android)|X|X|
+|Exigir SDK do Intune mínimo para iOS (apenas iOS)|X|X|
 
 ## <a name="next-steps"></a>Próximos passos
 
 Para saber mais sobre as políticas de proteção de aplicações e o Intune, veja os seguintes tópicos:
 
-  -  [Ferramenta de encapsulamento de aplicações para Android](app-wrapper-prepare-android.md)</br>
+  - [Ferramenta de encapsulamento de aplicações para Android](app-wrapper-prepare-android.md)</br>
   - [Ferramenta de encapsulamento de aplicações para iOS](app-wrapper-prepare-ios.md)</br>
   - [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

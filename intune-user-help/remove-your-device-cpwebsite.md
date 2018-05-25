@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Remover o seu dispositivo do Portal da Empresa
 
-Se decidir que já não quer que o seu dispositivo seja gerido pela sua empresa ou organização, pode removê-lo do Portal da Empresa através do [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). O site do Portal da Empresa é uma página Web que pode utilizar para gerir computadores e dispositivos que tenha inscrito na gestão no seu departamento de TI. Se remover o seu dispositivo, este deixa de aparecer no Portal da Empresa e poderá também perder acesso aos dados, às aplicações e ao e-mail da empresa ou da escola.
+Se decidir que já não quer que o seu dispositivo seja gerido pela sua empresa ou organização, pode removê-lo do Portal da Empresa através do [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog). Se remover o seu dispositivo, o mesmo deixará de estar listado no Portal da Empresa. Também poderá perder o acesso aos dados, aplicações e e-mails da sua organização.
 
 Para remover o dispositivo:
 
