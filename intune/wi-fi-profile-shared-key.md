@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utilizar um perfil de dispositivo personalizado para criar um perfil Wi-Fi com uma chave pré-partilhada – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ As chaves pré-partilhadas (PSK) são normalmente utilizadas para autenticar uti
 - Para Android, também pode utilizar o [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
 - Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
 - Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil. Em alternativa, utilize o [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- O PSK necessita de uma cadeia de 64 dígitos hexadecimais ou uma frase de acesso de 8 a 63 carateres ASCII imprimíveis. Alguns carateres, tal como o asterisco (*), não são suportados.
 
 ## <a name="create-a-custom-profile"></a>Criar um perfil personalizado
 Pode criar um perfil personalizado com uma chave pré-partilhada para perfis Android, Windows e perfis Wi-Fi baseados em EAP. Para criar o perfil através do portal do Azure, veja [Criar definições personalizadas de dispositivos](custom-settings-configure.md). Ao criar o perfil de dispositivo, selecione **Personalizado** na plataforma de dispositivos. Não selecione o perfil Wi-Fi. Ao selecionar Personalizado, certifique-se de que: 
@@ -42,16 +43,16 @@ Pode criar um perfil personalizado com uma chave pré-partilhada para perfis And
 1. Introduz um nome e descrição para o perfil.
 2. Adiciona uma nova definição de OMA-URI com as seguintes propriedades: 
 
-   a. Introduza um nome para esta definição de rede Wi-Fi
+   a. Introduza um nome para esta definição de rede Wi-Fi.
 
-   b. Opcionalmente, introduza uma descrição para a definição de OMA-URI ou deixe-a em branco
+   b. (Opcional) Introduza uma descrição da definição de OMA-URI ou deixe em branco.
 
-   c. Defina o **Tipo de Dados** para **Cadeia**
+   c. Defina o **Tipo de Dados** para **Cadeia**.
 
    d. **OMA-URI**:
 
-   - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Para Android**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Certifique-se de que inclui o caráter de ponto no início.

@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
 
@@ -65,7 +65,7 @@ As seguintes secções fornecem mais detalhes sobre cada um dos campos do iníci
 
    Também pode substituir o realm pelo texto que escrever na caixa de texto **Realm**.
 
-   Por exemplo, a Contoso poderá ter várias subregiões, como a Europa, Ásia e América do Norte. Poderão querer que os seus utilizadores na Ásia utilizem o payload de SSO e a aplicação exige o UPN na forma *username@asia.contoso.com*. Neste caso, se selecionar o **Nome Principal de Utilizador**, o realm para cada utilizador é retirado do AAD por predefinição e poderá ser apenas *contoso.com*. Assim, especificamente para os utilizadores na Ásia, pode criar este payload e substituir o realm pelo valor *asia.contoso.com*. Agora, o UPN do utilizador final será *username@asia.contoso.com* e não *username@contoso.com*.
+   Por exemplo, a Contoso poderá ter várias subregiões, como a Europa, Ásia e América do Norte. Poderão querer que os seus utilizadores na Ásia utilizem o payload de SSO e a aplicação exige o UPN na forma *username@asia.contoso.com*. Neste caso, se selecionar **Nome Principal de Utilizador**, por predefinição, o âmbito de cada utilizador será retirado do AAD e poderá ser simplesmente *contoso.com*. Assim, especificamente para os utilizadores na Ásia, pode criar este payload e substituir o realm pelo valor *asia.contoso.com*. Agora, o UPN do utilizador final será *username@asia.contoso.com* e não *username@contoso.com*.
 
 - Se selecionar **ID do Dispositivo**, o Intune selecionará automaticamente o ID de Dispositivo do Intune.
 

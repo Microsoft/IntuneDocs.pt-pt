@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Definições de restrição de dispositivos do Microsoft Intune para Android e Samsung Knox Standard 
 
@@ -47,6 +47,10 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 ## <a name="password"></a>Palavra-passe
 
 - **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.|Sim|Sim|
+
+    > [!NOTE]
+    > Os dispositivos Samsung Knox exigem automaticamente um PIN de 4 dígitos durante a inscrição na MDM. Os dispositivos Android nativos podem exigir automaticamente um PIN para ficarem em conformidade com o acesso condicional.
+
 - **Comprimento mínimo da palavra-passe** – introduza o comprimento mínimo da palavra-passe que um utilizador tem de configurar (entre 4 e 16 carateres).
 - **Máximo de minutos de inatividade até o ecrã bloquear** – especifica o número de minutos de inatividade antes de o dispositivo bloquear automaticamente.
 - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – especifica o número de falhas de início de sessão consecutivas a permitir antes de os dados do dispositivo serem apagados.
@@ -55,7 +59,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
     - **Predefinição do dispositivo**
     - **Biométrica de segurança baixa**
     - **Pelo menos numérica**
-    - **Numérica complexa** – números repetidos ou consecutivos, tais como "1111" ou "1234", não são permitidos<sup>1</sup>
+    - **Complexo numérico** – não são permitidos números repetidos ou consecutivos (como "1111" ou "1234").<sup>1</sup>
     - **Pelo menos alfabética**
     - **Pelo menos alfanumérica**
     - **Pelo menos alfanumérica com símbolos**
@@ -63,6 +67,9 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 - **Desbloqueio por impressão digital (apenas Samsung Knox)** – permite a utilização de uma impressão digital para desbloquear os dispositivos suportados.
 - **Smart Lock e outros agentes de fidedignidade** – permite-lhe controlar a funcionalidade Smart Lock em dispositivos Android compatíveis (Samsung Knox Standard 5.0 e posterior). Esta capacidade de telefone, por vezes conhecida como agente de confiança, permite desativar ou ignorar a palavra-passe de bloqueio do ecrã do dispositivo se o dispositivo estiver numa localização fidedigna. Por exemplo, isto pode ser utilizado quando o dispositivo está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.
 - **Encriptação** – requer que os ficheiros no dispositivo estejam encriptados.
+
+    > [!NOTE]
+    > Se for imposta uma política de encriptação, os dispositivos Samsung Knox exigem que os utilizadores definam uma palavra-passe complexa de 6 carateres como o código de acesso do dispositivo.
 
 <sup>1</sup> Antes de atribuir esta definição aos dispositivos, verifique se atualiza a aplicação Portal da Empresa para a versão mais recente nesses dispositivos.
 

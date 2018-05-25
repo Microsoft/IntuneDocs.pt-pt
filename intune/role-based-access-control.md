@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -78,20 +78,18 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Funções do Intune** e, em seguida, **Todas as funções**.
-1. No painel **Funções do Intune – Todas as funções**, selecione a função incorporada que pretende atribuir.
+4. No painel **Funções do Intune – Todas as funções**, selecione a função incorporada que pretende atribuir.
 
-2. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**.
+5. No painel <*nome da função*> – **Descrição geral**, selecione **Atribuições** > **Atribuir**.
 
     > [!NOTE]
     > Não pode eliminar ou editar funções incorporadas
 
-3. No painel Função personalizada, selecione **Atribuir**.
-
-4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
+6. No painel **Atribuições de Função**, introduza um **Nome da atribuição** e uma **Descrição da atribuição** opcional e, em seguida, selecione o seguinte:
     - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir. Também pode optar por definir o âmbito para **Todos os Utilizadores**, **Todos os Dispositivos** ou **Todos os Utilizadores e Dispositivos**.
 <br></br>
-5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
+7. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 
 ### <a name="intune-rbac-table"></a>Tabela de RBAC do Intune
 
@@ -128,13 +126,13 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 
 1. No painel **Funções do Intune – Todas as funções**, selecione a função personalizada que pretende atribuir.
 
-2. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**. Neste painel, também pode editar ou eliminar funções existentes.
+2. No painel <*nome da função*> – **Descrição geral**, selecione **Atribuições**. Neste painel, também pode editar ou eliminar funções existentes.
 
 3. No painel Função personalizada, selecione **Atribuir**.
 
 4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
     - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir. Também pode optar por definir o âmbito para **Todos os Utilizadores**, **Todos os Dispositivos** ou **Todos os Utilizadores e Dispositivos**.
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 
@@ -145,3 +143,5 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 ## <a name="see-also"></a>Consulte também
 
 [Assign roles using Azure AD (Atribuir funções através do Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+
+

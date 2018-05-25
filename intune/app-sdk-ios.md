@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
 > [!NOTE]
-> Recomendamos que leia primeiro o artigo [Guia de Introdução ao SDK da Aplicação Intune](app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.
+> Considere ler o artigo [Guia de Introdução ao SDK da Aplicação do Intune](app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.
 
 O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou **MAM**) na sua aplicação iOS nativa. Uma aplicação preparada para MAM é uma integrada com o SDK da Aplicação Intune. Os administradores de TI podem implementar políticas de proteção de aplicações na aplicação móvel quando o Intune está a gerir a aplicação de forma ativa.
 
@@ -81,8 +81,8 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
 
 1. **Opção 1 (recomendada)**: ligue o `IntuneMAM.framework` ao seu projeto. Arraste `IntuneMAM.framework` para a lista **Binários Incorporados** do destino do projeto.
 
-    > [!NOTE]
-    > Se utilizar a estrutura, terá de retirar manualmente as arquiteturas do simulador da estrutura universal antes de submeter a sua aplicação à App Store. Veja [Enviar a aplicação à App Store](#Submit-your-app-to-the-App-Store) para obter mais detalhes.
+   > [!NOTE]
+   > Se utilizar a estrutura, terá de retirar manualmente as arquiteturas do simulador da estrutura universal antes de submeter a sua aplicação à App Store. Veja [Enviar a aplicação à App Store](#Submit-your-app-to-the-App-Store) para obter mais detalhes.
 
 2. **Opção 2**: ligue à biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` para a lista **Estruturas e Bibliotecas Ligadas** do destino do projeto.
 
@@ -151,7 +151,7 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
    |- e | `<Path to the entitlements file>` |
    |- o |  (Opcional) `<Path to the output plist>` |
 
-Se o parâmetro “-o” não for especificado, o ficheiro de entrada será modificado no local. A ferramenta é idempotent e deve ser executada novamente sempre que forem feitas alterações ao ficheiro Info.plist da aplicações ou tenham sido criadas elegibilidades. Deverá também transferir e executar a versão mais recente da ferramenta ao atualizar o SDK do Intune, caso os requisitos de configuração do ficheiro Info.plist tenham sido alterados na versão mais recente.
+Se o parâmetro “-o” não for especificado, o ficheiro de entrada será modificado no local. A ferramenta é idempotente e deve ser executada novamente sempre que forem feitas alterações ao ficheiro Info.plist da aplicações ou tenham sido criadas elegibilidades. Deverá também transferir e executar a versão mais recente da ferramenta ao atualizar o SDK do Intune, caso os requisitos de configuração do ficheiro Info.plist tenham sido alterados na versão mais recente.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar a Azure Active Directory Authentication Library (ADAL)
 
@@ -179,7 +179,7 @@ Siga os passos abaixo para ligar a aplicação aos binários da ADAL:
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Partilhar a cache de token da ADAL com outras aplicações assinadas com o mesmo perfil de aprovisionamento?**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Partilhar a cache de token da ADAL com outras aplicações assinadas com o mesmo perfil de aprovisionamento?
 
 Se quiser partilhar tokens da ADAL entre aplicações assinadas com o mesmo perfil de aprovisionamento, siga as instruções abaixo:
 
@@ -460,7 +460,7 @@ WebViewHandledURLSchemes | Matriz de Cadeias | Especifica os esquemas de URL pro
 > Se a sua aplicação for disponibilizada na App Store, a `MAMPolicyRequired` tem de ser definida como "NO", segundo as normas da App Store.
 
 ## <a name="sharing-data-via-uiactivityviewcontroller"></a>Partilhar dados através de UIActivityViewController 
-A partir da v. 8.0.2+, o SDK da APLICAÇÃO Intune poderá filtrar as ações de UIActivityViewController para que não existam localizações de partilha do fora do Intune disponíveis para seleção. Este comportamento será controlado pela política de transferência de dados de aplicações e por uma futura funcionalidade de APLICAÇÃO. A futura funcionalidade será ativada após a maioria das aplicações da Microsoft (como o Word, Excel, Powerpoint) tiver realizado as alterações necessárias para suportar a Partilha de Dados através de UIActivityViewController. 
+A partir da v. 8.0.2+, o SDK da APLICAÇÃO Intune poderá filtrar as ações de UIActivityViewController para que não existam localizações de partilha do fora do Intune disponíveis para seleção. Este comportamento será controlado pela política de transferência de dados de aplicações e por uma futura funcionalidade de APLICAÇÃO. A futura funcionalidade será ativada após a maioria das aplicações da Microsoft (como o Word, Excel, PowerPoint) tiver realizado as alterações necessárias para suportar a Partilha de Dados através de UIActivityViewController. 
  
 ### <a name="copy-to-actions"></a>Ações “Copiar Para” 
 Ao partilhar documentos através de UIActivityViewController e UIDocumentInteractionController, o iOS apresenta as ações “Copiar para” para cada aplicação que suporte abrir o documento que está a ser partilhado. As aplicações declaram os tipos de documentos que suportam através da definição CFBundleDocumentTypes no ficheiro Info.plist. Este tipo de partilha já não estará disponível se a política não permitir partilhar com aplicações não geridas. Como uma substituição, as aplicações terão de adicionar uma extensão de Ação não IU à aplicação e ligá-la ao SDK da APLICAÇÃO Intune para iOS. A extensão de Ação funciona como um stub. O SDK implementará a totalidade do comportamento de partilha de ficheiros. Siga os passos de integração do SDK acima, juntamente com os seguintes: 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] A ferramenta IntuneMAMConfigurator pode servir para adicionar os tipos do Intune à regra de ativação. Se a regra de ativação existente utilizar as constantes de cadeia predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount NSExtensionActivationSupportsText, etc.), a sintaxe de predicado poderá ficar bastante complexa. A ferramenta IntuneMAMConfigurator também pode servir para converter a regra de ativação das constantes de cadeia para uma cadeia de predicado ao adicionar os tipos de Intune. O IntuneMAMConfigurator encontra-se no nosso repositório do GitHub. 
+> [!NOTE]
+> A ferramenta IntuneMAMConfigurator pode servir para adicionar os tipos do Intune à regra de ativação. Se a regra de ativação existente utilizar as constantes de cadeia predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount NSExtensionActivationSupportsText, etc.), a sintaxe de predicado poderá ficar bastante complexa. A ferramenta IntuneMAMConfigurator também pode servir para converter a regra de ativação das constantes de cadeia para uma cadeia de predicado ao adicionar os tipos de Intune. O IntuneMAMConfigurator encontra-se no nosso repositório do GitHub. 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Ativar a configuração de MAM direcionada para aplicações iOS

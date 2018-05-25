@@ -6,18 +6,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0912ec4fdc77b51903b4febd54f9d16972b867a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>Definições de perfis de e-mail no Microsoft Intune para dispositivos iOS 
 
@@ -35,8 +35,7 @@ Este artigo mostra-lhe as definições de perfis de e-mail que pode configurar p
     - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente que servirá para autenticar a ligação ao Exchange.
 - **SSL** – Utilize a comunicação SSL (Secure Sockets Layer) ao enviar e-mails, ao receber e-mails e ao comunicar com o Exchange Server.
 - **S/MIME** – Envie e-mails com uma assinatura S/MIME.
-    - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente que servirá para autenticar a ligação ao Exchange.
-    - Se escolher um certificado SCEP, garanta que é instalado um certificado PFX (Personal Information Exchange) válido no dispositivo.
+    - Se tiver selecionado **Certificado**, selecione um perfil de certificado PKCS criado anteriormente para autenticar a ligação ao Exchange.
 - **Quantidade de e-mails a sincronizar** – Selecione o número de dias de e-mail que pretende sincronizar ou selecione **Sem Limite** para sincronizar todos os e-mails disponíveis.
 - **Permitir que as mensagens sejam movidas para outras contas de e-mail** – Esta opção permite que os utilizadores movam mensagens de e-mail entre contas diferentes configuradas nos dispositivos.
 - **Permitir o envio de e-mail a partir de aplicações de terceiros** – permita que o utilizador selecione este perfil como conta predefinida para o envio de e-mail e permita que as aplicações de terceiros abram o e-mail na aplicação de e-mail nativa, por exemplo, para anexar ficheiros ao e-mail.

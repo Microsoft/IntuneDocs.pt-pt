@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -159,7 +159,7 @@ As **Definições de política de conformidade** (Portal do Azure > Conformidade
   - **Compatível**: a funcionalidade de segurança está desativada
   - **Não compatível** (predefinição): a funcionalidade de segurança está ativada
 
-  Se um dispositivo não tiver uma política de conformidade atribuída, este dispositivo é considerado não conforme. Por predefinição, os dispositivos são marcados como **Não compatíveis**. Se utilizar o acesso condicional, recomendamos que mantenha a predefinição **Não compatível**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, então o Portal da Empresa indica `No compliance policies have been assigned`.
+  Se um dispositivo não tiver uma política de conformidade atribuída, este dispositivo é considerado não conforme. Por predefinição, os dispositivos são marcados como **Compatíveis**. Se utilizar o acesso condicional, recomendamos que altere a definição para **Não compatível**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, então o Portal da Empresa indica `No compliance policies have been assigned`.
 
 - **Deteção avançada de jailbreak**: quando ativada, esta definição faz com que os dispositivos iOS se registem no Intune com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
 

@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Remover o seu dispositivo Windows da gestão do Intune
 
@@ -50,7 +50,7 @@ Conclua os seguintes passos para remover um dispositivo com o Windows 10 do Intu
 
 ### <a name="via-device-settings-app"></a>Através da aplicação Definições do dispositivo
 1. Abra a aplicação Definições. 
-2. Aceda a **Contas** > **Acesso profissional ou escolar**.
+2. Vá para **Contas** > **Acesso profissional ou escolar**.
 3. Selecione a conta ligada que pretende remover e, em seguida, selecione **Desligar**.
 4. Para confirmar a remoção do dispositivo, selecione **Sim**.
 
@@ -72,13 +72,13 @@ Conclua os seguintes passos para remover um dispositivo móvel com o Windows 8.1
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Remover as suas informações pessoais depois de remover o Portal da Empresa
 Existem dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
--   **Registos de diagnóstico**: os dados de atividade de aplicações padrão que a Microsoft recolhe são apagados automaticamente ao remover o dispositivo do Portal da Empresa. Os dados de atividade de aplicações são, por exemplo, dados sobre o tempo durante o qual a aplicação esteve aberta ou se a aplicação falhou.
+-   **Registos de diagnóstico**: dados de atividade de aplicações padrão que a Microsoft recolhe. Isto é eliminado automaticamente quando desinstala a aplicação Portal da Empresa. Os dados de atividade de aplicações são, por exemplo, dados sobre o tempo durante o qual a aplicação esteve aberta ou se a aplicação falhou.
 -   **Cache da aplicação**: os ficheiros de suporte que são necessários para o funcionamento da aplicação, como os ícones e as definições.
 
-Existem alguns passos que precisa de seguir para eliminar completamente estas informações.
+Para eliminar a cache e os registos armazenados, siga um dos seguintes passos:
 
-1. Desinstalar o Portal da Empresa. [Desinstalar a aplicação Portal da Empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) irá remover alguns dos dados de aplicações armazenados no seu dispositivo.  
+* [Desinstalar a aplicação Portal da Empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Reponha o Portal da Empresa para repor os dados de aplicações armazenados. Abra a aplicação **Definições** e selecione **Aplicações** > **Portal da Empresa** > **Opções avançadas** > **Repor**. 
+* Repor a aplicação Portal da Empresa. Abra a aplicação **Definições** e selecione **Aplicações** > **Portal da Empresa** > **Opções avançadas** > **Repor**. 
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

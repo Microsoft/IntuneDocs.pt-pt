@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos
 
@@ -73,9 +73,9 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
 
 ## <a name="permissions-for-dem"></a>Permissões para DEM
 
-As funções de Administrador global ou Administrador de Serviço do Intune no Azure AD são necessárias para executar tarefas de inscrição do DEM. Essas funções são também necessárias para ver todos os utilizadores DEM apesar das permissões RBAC indicadas e disponíveis na função de Utilizador personalizada. Um utilizador sem uma função de Administrador global ou Administrador de serviço do Intune atribuída, mas com permissões de leitura para a função de Gestores de Inscrição de Dispositivos, pode ver apenas os utilizadores DEM que criaram. O suporte da função RBAC para estas funcionalidades será comunicado no futuro.
+As funções de Administrador global ou Administrador de Serviço do Intune no Azure AD são necessárias para executar tarefas que estão relacionadas com a inscrição do DEM no Portal de Administração. Essas funções são também necessárias para ver todos os utilizadores DEM apesar das permissões RBAC indicadas e disponíveis na função de Utilizador personalizada. Um utilizador sem a função de Administrador Global ou Administrador de Serviço do Intune atribuída, mas com permissões de leitura para a função de Gestores de Inscrição de Dispositivos, pode ver apenas os utilizadores DEM que criou. O suporte da função RBAC para estas funcionalidades será comunicado no futuro.
 
-Se um utilizador não tiver uma função de Administrador global ou Administrador de serviço do Intune atribuída, mas tiver permissões de leitura ativadas para a função de Gestores de Inscrição de Dispositivos atribuída ao mesmo, poderá ver apenas os utilizadores DEM que criaram.
+Se um utilizador não tiver uma função de Administrador Global ou Administrador de Serviço do Intune atribuída, mas tiver permissões de leitura ativadas para a função de Gestores de Inscrição de Dispositivos atribuída ao mesmo, poderá ver apenas os utilizadores DEM que criou.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Remover um gestor de inscrição de dispositivos
 
