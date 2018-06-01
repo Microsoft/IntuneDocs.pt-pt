@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456372"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune
 
@@ -53,7 +54,7 @@ O browser gerido do Intune suporta a abertura de conteúdos da Web de [Parceiros
 
     -   **Browser Gerido (iOS 8.0 e posterior)**
 
-    Para obter mais informações sobre como criar e implementar políticas, veja o tópico [Manage settings and features on your devices with Microsoft Intune Policies (Gerir definições e funcionalidades nos seus dispositivos com as Políticas do Microsoft Intune)](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+    Para obter mais informações sobre como criar e implementar políticas, veja o tópico [Manage settings and features on your devices with Microsoft Intune Policies (Gerir definições e funcionalidades nos seus dispositivos com as Políticas do Microsoft Intune)](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Utilize o seguinte para o ajudar a configurar as definições de política de browser gerido:
 
@@ -115,14 +116,14 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
 |                  URL                  |                     Detalhes                      |                                                Correspondências                                                |                                Não corresponde                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Corresponde a uma única página               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Corresponde a uma única página               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | Corresponde a todos os URLs que começam com www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              Corresponde a uma única página               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              Corresponde a uma única página               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | Corresponde a todos os URLs que começam com www.contoso.com  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     Corresponde a todos os subdomínios em contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Corresponde a uma única pasta              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             Corresponde a uma única pasta              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  Corresponde a uma única página, ao utilizar um número de porta   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          Corresponde a uma única página segura           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Corresponde a uma única pasta e a todas as subpastas    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    Corresponde a uma única pasta e a todas as subpastas    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - Seguem-se exemplos de algumas entradas que não pode especificar:
 
@@ -130,11 +131,11 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - < www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - Endereços IP
 
