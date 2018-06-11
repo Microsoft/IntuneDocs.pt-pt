@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744674"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Ativar o Windows Defender ATP com acesso condicional no Intune
 
@@ -51,19 +52,19 @@ Para utilizar o ATP com o Intune, confirme se tem o seguinte configurado e pront
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Conformidade do dispositivo** > **Windows Defender ATP** > **Abra a consola de administração da Proteção Avançada Contra Ameaças do Windows Defender**.
+3. Selecione **Conformidade do dispositivo** > **Windows Defender ATP** > **Abrir o Centro de Segurança do Windows Defender**.
 
-    ![Texto alternativo](./media/atp-device-compliance-open-windows-defender.png)
+    ![Selecione para abrir o Centro de Segurança do Windows Defender](./media/atp-device-compliance-open-windows-defender.png)
 
 4. No **Centro de Segurança do Windows Defender**:
     1. Selecione **Definições** > **Funcionalidades avançadas**.
     2. Em **Ligação do Microsoft Intune**, escolha **Ligado**:
 
-        ![Texto alternativo](./media/atp-security-center-intune-toggle.png)
+        ![Ativar a ligação ao Intune](./media/atp-security-center-intune-toggle.png)
 
     3. Selecione **Guardar preferências**.
 
-5. Volte ao Intune, **Conformidade do dispositivo** > **Windows Defender ATP**. Defina **Ligar os dispositivos Windows 10.0.15063+ à Proteção Avançada Contra Ameaças do Windows Defender** como **Ligado**.
+5. Volte ao Intune, **Conformidade do dispositivo** > **Windows Defender ATP**. Defina a opção **Ligar dispositivos Windows com versão 10.0.15063 e posterior a Windows Defender ATP** para **Ativado**.
 6. Selecione **Guardar**.
 
 Normalmente, executa esta tarefa uma vez. Por isso, se o ATP já estiver ativado no seu recurso do Intune, não terá de o fazer novamente.
@@ -115,7 +116,7 @@ A política de conformidade determina um nível de risco aceitável num disposit
 2. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
 3. Introduza um **Nome** e uma **Descrição**.
 4. Em **Plataforma**, selecione **Windows 10 e posterior**.
-5. Nas definições do **Estado de Funcionamento do Dispositivo**, defina **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo** para o seu nível favorito:
+5. Nas definições do **Windows Defender ATP**, defina a opção **Exigir que o dispositivo esteja na classificação de risco de máquina ou inferior** para o seu nível favorito:
 
   - **Seguro**: este é o nível mais seguro. O dispositivo não poderá aceder aos recursos da empresa se contiver ameaças. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
   - **Baixo**: o dispositivo estará em conformidade se só existirem ameaças de nível baixo. Os dispositivos com níveis de ameaça média ou alta não estão conformes.

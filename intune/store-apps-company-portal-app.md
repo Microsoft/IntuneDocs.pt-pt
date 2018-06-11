@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703320"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune
 
@@ -73,7 +74,7 @@ O nosso caminho de migração recomendado consiste em eliminar a atribuição da
 
 Se precisar de carregar a aplicação em sideload e tiver atribuído o Portal da Empresa do Windows 8.1 sem o assinar com o Certificado da Symantec, conclua a atualização ao seguir os passos nas secções anteriores deste artigo.
 
-Se precisar de carregar a aplicação em sideload e tiver assinado e atribuído o Portal da Empresa do Windows 8.1 com o certificado de assinatura de código da Symantec, siga os passos da secção seguinte.  
+Se precisar de carregar a aplicação em sideload e tiver assinado e atribuído a aplicação Portal da Empresa do Windows 8.1 com o certificado de assinatura de código da Symantec, siga os passos da secção seguinte.
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Como atualizo a minha aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 de sideload e assinada para a aplicação Portal da Empresa do Windows 10?
 O nosso caminho de migração recomendado consiste em eliminar a atribuição existente da aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 através da definição da ação de atribuição como **Desinstalar**. Depois de selecionar esta definição, pode atribuir a aplicação Portal da Empresa do Windows 10 normalmente.  
