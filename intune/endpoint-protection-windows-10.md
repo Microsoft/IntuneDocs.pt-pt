@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744946"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Definições de proteção de ponto final para o Windows 10 (e versões posteriores) no Intune
 
@@ -159,7 +160,7 @@ Utilize o [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/th
 
 ### <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque
 
-- **Marcar o roubo de credenciais do sistema de autoridade de segurança local do Windows**
+- **Sinalizar o roubo de credenciais do subsistema de autoridade de segurança local do Windows**
 
 Ajude a [impedir as ações e aplicações](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) que são normalmente utilizadas por software maligno para explorar falhas de segurança e infetar computadores.
 
@@ -178,9 +179,9 @@ Bloqueie os itens seguintes para impedir ameaças de script:
 
 - **Código macro js/vbs/ps/ oculto**
 - **js/vbs a executar payload transferido da Internet (sem exceções)**
-- **Processo de criação de comandos PSExec e WMI**
-- **Processos não fidedignos e não assinados que executam a partir de USB**
-- **Ficheiros executáveis que não correspondam a uma prevalência, idade ou lista de critérios de confiança**
+- **Criação de processos com os comandos PsExec e WMI**
+- **Processos não fidedignos e não assinados executados a partir de USB**
+- **Ficheiros executáveis que não cumprem uma lista de critérios de prevalência, idade ou fidedignidade**
 
 #### <a name="rules-to-prevent-email-threats"></a>Regras para impedir ameaças de e-mail
 
@@ -256,7 +257,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
 - **Desempenho e estado de funcionamento do dispositivo**
 - **Firewall e proteção da rede**
 - **Controlo de aplicações e browsers**
-- **Opções de família**
+- **Opções de famílias**
 - **Notificações das áreas apresentadas da aplicação**: escolha quais as notificações a apresentar aos utilizadores finais. As notificações não críticas incluem resumos de atividade do Antivírus do Windows Defender, incluindo notificações quando as análises forem concluídas. Todas as outras notificações são consideradas críticas.
 
 #### <a name="it-contact-information"></a>Informação de contacto de TI
@@ -300,15 +301,21 @@ Utilize estas opções para configurar as definições da segurança local em di
 
 - **Minutos de inatividade do ecrã bloqueado até que a proteção de ecrã seja ativada**: defina o máximo de minutos de inatividade no ecrã de início de sessão do ambiente de trabalho interativo até que a proteção de ecrã seja executada.
 - **Exigir CTRL + ALT + DEL para iniciar sessão**: exija que sejam premidas as teclas CTRL + ALT + DEL para um utilizador poder iniciar sessão.
-- **Comportamento de remoção do smart card**: determina o que acontece quando o smart card de um utilizador com sessão iniciada é removido do leitor de Smart Card.
-As [opções LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) proporcionam mais detalhes.
+- **Comportamento de remoção do smart card**: determina o que acontece quando o smart card de um utilizador com sessão iniciada é removido do leitor de Smart Card. As opções são:
+
+  - **Bloquear Estação de Trabalho**: a estação de trabalho é bloqueada quando o smart card é removido. Esta opção permite que os utilizadores saiam da área, levem os seus smart cards e permaneçam numa sessão protegida.
+  - **Forçar Fim da Sessão**: a sessão do utilizador é terminada automaticamente quando o smart card é removido.
+  - **Desligar se existir uma sessão dos Serviços de Ambiente de Trabalho Remoto**: a remoção do smart card desliga a sessão sem terminar a sessão do utilizador. Esta opção permite que o utilizador insira o smart card e retome a sessão mais tarde, ou noutro computador com um leitor de smart cards, sem ter de iniciar sessão novamente. Se a sessão for local, esta política funciona da mesma forma que Bloquear Estação de Trabalho.
+
+    As [opções LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) proporcionam mais detalhes.
 
 #### <a name="display"></a>Apresentar
 
 - **Informações do utilizador no ecrã de bloqueio**: configure as informações de utilizador que são apresentadas quando a sessão está bloqueada. Se não estiverem configuradas, serão apresentados o nome a apresentar do utilizador, o domínio e o nome de utilizador.
+  - **Não configuradas**: o nome a apresentar do utilizador, o domínio e o nome de utilizador
+  - **O nome a apresentar do utilizador, o domínio e o nome de utilizador**
   - **Apenas o nome a apresentar do utilizador**
   - **Não apresentar informações do utilizador**
-  - **Não configuradas**: o nome a apresentar do utilizador, o domínio e o nome de utilizador
 - **Ocultar último utilizador com sessão iniciada**: não apresente o nome de utilizador da última pessoa que iniciou sessão neste dispositivo.
 - **Ocultar o nome de utilizador no início de sessão**: não apresentar o nome de utilizador da pessoa a iniciar sessão neste dispositivo depois de as credenciais serem introduzidas e antes de o ambiente de trabalho do dispositivo ser apresentado.
 - **Título da mensagem do início de sessão**: defina o título da mensagem para os utilizadores que tentam iniciar sessão.
@@ -316,13 +323,13 @@ As [opções LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-ma
 
 ### <a name="network-access-and-security"></a>Acesso à rede e segurança
 
-- **Acesso anónimo a Pipes Nomeados e Partilhas**: restringe o acesso anónimo às definições Pipe Nomeado e Partilha. Aplica-se as definições que podem ser acedidas anonimamente.
-- **Enumeração anónima de contas SAM**: permite que os utilizadores anónimos enumerem as contas SAM. O Windows permite que os utilizadores anónimos enumerem os nomes das contas de domínio e das partilhas de rede.
-- **Enumeração anónima de contas e partilhas SAM**: pode bloquear a enumeração anónima de contas e partilhas SAM. O Windows permite que os utilizadores anónimos enumerem os nomes das contas de domínio e das partilhas de rede.
-- **Valor hash do LAN Manager armazenado na alteração de palavra-passe**: na próxima alteração de palavra-passe, escolha se o valor hash do LAN Manager (LM) da nova palavra-passe é armazenado. Não é armazenado por predefinição.
-- **Pedidos de autenticação PKU2U**: bloqueie os pedidos de autenticação PKU2U neste dispositivo para utilizar identidades online.
-- **Restringir ligações remotas de RPC a SAM**: edite a cadeia de Linguagem de Definição de Descritor de Segurança predefinida para permitir ou negar a utilizadores e grupos a realização de chamadas remotas para SAM.
-- **Descritor de segurança**
+- **Acesso anónimo a Pipes Nomeados e Partilhas**: **Não configurado** (predefinição) restringe o acesso anónimo às definições Pipe Nomeado e Partilha. Aplica-se as definições que podem ser acedidas anonimamente.
+- **Enumeração anónima de contas SAM**: **permite** que os utilizadores anónimos enumerem as contas SAM. O Windows permite que os utilizadores anónimos enumerem os nomes das contas de domínio e das partilhas de rede.
+- **Enumeração anónima de contas e partilhas SAM**: **Não configurado** (predefinição) significa que os utilizadores anónimos podem enumerar os nomes de contas de domínio e partilhas de rede. Para impedir a enumeração anónima de contas e partilhas SAM, defina como **Bloquear**.
+- **Valor hash do Gestor de LAN armazenado aquando da alteração da palavra-passe**: na próxima alteração de palavra-passe, opte por **Permitir** que o Gestor de LAN (LM) armazene o valor hash da nova palavra-passe. Quando estiver definido como **Não configurado** (predefinição), o valor hash não é armazenado.
+- **Pedidos de autenticação PKU2U**: **bloquear** pedidos de autenticação PKU2U ao dispositivo para utilizar identidades online. **Não configurado** (predefinição) permite estes pedidos.
+- **Restringir ligações remotas de RPC a SAM**: **permitir** que a cadeia de Linguagem de Definição de Descritor de Segurança predefinida negue a utilizadores e a grupos a realização de chamadas remotas para SAM. **Não configurado** (predefinição): a cadeia de Linguagem de Definição de Descritor de Segurança predefinida permite que os utilizadores e grupos realizem chamadas remotas para SAM.
+  - **Descritor de segurança**
 
 ### <a name="recovery-console-and-shutdown"></a>Consola de recuperação e encerramento
 
@@ -359,13 +366,13 @@ As [opções LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-ma
 
 ### <a name="microsoft-network-client"></a>Cliente de Rede da Microsoft
 
-- **Assinar digitalmente comunicações (se o servidor concordar)**: determina se o cliente SMB tenta negociar a assinatura de pacotes SMB. Quando ativada (predefinição), o cliente de rede da Microsoft pede ao servidor para executar a assinatura de pacotes SMB após a configuração da sessão. Se a assinatura de pacotes tiver sido ativada no servidor, a assinatura de pacotes será negociada. Se esta política estiver desativada, o cliente SMB nunca negociará a assinatura de pacotes SMB.
+- **Assinar digitalmente comunicações (se o servidor concordar)**: determina se o cliente SMB tenta negociar a assinatura de pacotes SMB. Quando ativada (Não configurado), o cliente de rede da Microsoft pede ao servidor para executar a assinatura de pacotes SMB após a configuração da sessão. Se a assinatura de pacotes estiver ativada no servidor, a assinatura de pacotes será negociada. Se esta política estiver desativada, o cliente SMB nunca negociará a assinatura de pacotes SMB.
 - **Enviar palavra-passe não encriptada para servidores SMB de terceiros**: quando ativada, o redirecionador do protocolo SMB (Server Message Block) tem permissão para enviar palavras-passe de texto simples para servidores SMB que não sejam da Microsoft e que não suportam a encriptação da palavras-passe durante a autenticação.
 
 ### <a name="microsoft-network-server"></a>Servidor de Rede da Microsoft
 
-- **Assinar digitalmente comunicações (se o cliente concordar)**: determina se o servidor SMB negoceia a assinatura de pacotes SMB com clientes que a peçam. Quando ativada, o servidor de rede da Microsoft negoceia a assinatura de pacotes SMB conforme pedido pelo cliente. Ou seja, se a assinatura de pacotes estiver ativada no cliente, a assinatura de pacotes será negociada. Se estiver desativada (predefinição), o cliente SMB nunca negociará a assinatura de pacotes SMB.
-- **Assinar digitalmente comunicações (sempre)**: determina se o componente do servidor SMB necessita da assinatura de pacotes. Quando ativada, o servidor de rede da Microsoft não comunica com um cliente de rede da Microsoft, a menos que o cliente aceite executar a assinatura de pacotes SMB. Quando desativada (predefinição), a assinatura de pacotes SMB é negociada entre o cliente e o servidor.
+- **Assinar digitalmente comunicações (se o cliente concordar)**: determina se o servidor SMB negoceia a assinatura de pacotes SMB com clientes que a peçam. Quando ativada, o servidor de rede da Microsoft negoceia a assinatura de pacotes SMB conforme pedido pelo cliente. Ou seja, se a assinatura de pacotes estiver ativada no cliente, a assinatura de pacotes será negociada. Quando **Não configurado** ou desativado (predefinição), o cliente SMB nunca negociará a assinatura de pacotes SMB.
+- **Assinar digitalmente comunicações (sempre)**: determina se o componente do servidor SMB necessita da assinatura de pacotes. Quando ativada, o servidor de rede da Microsoft não comunica com um cliente de rede da Microsoft, a menos que o cliente aceite executar a assinatura de pacotes SMB. Quando **Não configurado** ou desativado (predefinição), a assinatura de pacotes SMB é negociada entre o cliente e o servidor.
 
 ## <a name="next-steps"></a>Próximos passos
 

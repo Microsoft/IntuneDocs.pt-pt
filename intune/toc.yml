@@ -238,7 +238,7 @@
                   href: store-apps-ios.md
                 - name: Aplicações da loja Windows Phone 8.1
                   href: store-apps-windows-phone-8-1.md
-                - name: Aplicações da Loja Microsoft
+                - name: Aplicações da Microsoft Store
                   href: store-apps-windows.md
                   items:
                     - name: Adicionar manualmente a aplicação Portal da Empresa
@@ -255,7 +255,7 @@
                   href: lob-apps-android.md
                 - name: Aplicações LOB iOS
                   href: lob-apps-ios.md
-                - name: Aplicações LOB Windows Phone
+                - name: Aplicações LOB para Windows Phone
                   href: lob-apps-windows-phone.md
                 - name: Aplicação LOB do Windows
                   href: lob-apps-windows.md
@@ -288,7 +288,7 @@
               items:
                 - name: Aplicações VPP para iOS
                   href: vpp-apps-ios.md
-                - name: Aplicações da Loja Microsoft para Empresas
+                - name: Aplicações da Microsoft Store para Empresas
                   href: windows-store-for-business.md
                 - name: eBooks do iOS
                   href: vpp-ebooks-ios.md
@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: Configurar as definições de quiosque
+          href: kiosk-settings.md
         - name: Configurar as definições de e-mail
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: "Windows\_8.1 e Windows\_10"
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Educação
+          items:
+            - name: Dispositivos iOS partilhados
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: "Configurar as definições de atualização de edição do Windows\_10"
           href: edition-upgrade-configure-windows-10.md
-        - name: "Configurar as definições do Windows\_10 Education"
-          href: education-settings-configure.md
-        - name: Configurar os dispositivos iOS para educação partilhados
-          href: education-settings-configure-ios-shared.md
         - name: Configurar as políticas de atualização de iOS
           href: software-updates-ios.md
         - name: Configurar certificados
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Criar a política para Windows
           href: compliance-policy-create-windows.md
+        - name: Política baseada na localização
+          href: use-network-locations.md
         - name: Avaliar uma política
           href: policy-evaluate.md
         - name: Ações de não conformidade
@@ -466,7 +472,7 @@
       items:
         - name: Formas comuns de utilizar o acesso condicional
           href: conditional-access-intune-common-ways-use.md
-        - name: Instalar o conector do Exchange no local
+        - name: Instalar o Exchange Connector no local
           href: exchange-connector-install.md
         - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
           href: exchange-service-connector-configure.md
@@ -594,7 +600,7 @@
             - name: Firewall do Windows
               href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
               maintainContext: true
-            - name: Endpoint Protection
+            - name: Proteção de ponto final
               href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
               maintainContext: true
         - name: Adicionar aplicações a PCs do cliente Intune

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61d58c794015b0b87f4c9949d9c53e7166925022
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744589"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -35,35 +36,49 @@ Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar 
 > [!Note]       
 > O Portal da Empresa para Windows 10 irá agora enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o fluxo de trabalho para obter ajuda com um problema. Isto facilitará a resolução dos problemas colocados à Microsoft.  
 
-## <a name="company-contact-information-and-privacy-statement"></a>Informações de contacto e declaração de privacidade da empresa        
-O nome da empresa é apresentado como o título do Portal da Empresa. Os detalhes e as informações de contacto são apresentados aos utilizadores no ecrã **Contactar TI** do Portal da Empresa. A declaração de privacidade é apresentada quando um utilizador clica na ligação de privacidade.
+## <a name="company-information-and-privacy-statement"></a>Informações e declaração de privacidade da empresa        
+O nome da empresa é apresentado como o título do Portal da Empresa. A declaração de privacidade é apresentada quando um utilizador clica na ligação de privacidade.
 
 Os campos marcados com um asterisco (*) são obrigatórios.       
 
 
 | Nome do campo | Comprimento máximo | Mais informações |
 |---|---|---|
-|**Nome da empresa**| 40 | Este nome é apresentado como o título do Portal da Empresa. |
-|**Nome do contacto do departamento de TI** | 40 | Este nome é apresentado na página **Contactar TI**. |
-|**Número de telefone do departamento de TI** | 20 | Este número de contacto é apresentado na página **Contactar TI**. |
-|**Endereço de e-mail do departamento de TI**| 40 | Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
-| **Informações adicionais**|    120     | Apresentado na página **Contactar TI**. |
-| **URL da declaração de privacidade da empresa** |     79     | Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato `<https://www.contoso.com>`. |
+|**Nome da empresa**| 40 | Este nome é apresentado como o título do Portal da Empresa e é apresentado como texto em toda a experiência de utilizador do Intune. |
+| **URL de declaração de privacidade** |     79     | Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato `<https://www.contoso.com>`. |
 
-## <a name="support-contacts"></a>Contactos de suporte     
-O site de suporte é apresentado para os utilizadores no Portal da Empresa para que possam aceder ao suporte online.        
+## <a name="support-information"></a>Informações de suporte      
+Introduza as informações de suporte da sua empresa para fornecer ao seu colaborador um contacto para perguntas relacionadas com o Intune.       
 
 |Nome do campo|Comprimento máximo|Mais informações|
 |---|---|---|
-|**URL do site de suporte**|150|Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato **https://www.contoso.com**. Se não especificar um URL, não será apresentado nada no site de suporte da página **Contactar TI** no Portal da Empresa.|
-|**Nome do site de suporte**|40|Este é o nome amigável apresentado no URL do site de suporte. Se especificar um URL do site de suporte, mas não especificar um nome amigável, a ligação Aceder ao site de TI será apresentada na página **Contactar TI** no Portal da Empresa.
+|**Nome do contacto** | 40 | Este nome é apresentado na página **Contactar TI**. |
+|**Número de telefone** | 20 | Este número de contacto é apresentado na página **Contactar TI** para permitir que os colaboradores o contactem para obter suporte. |
+|**Endereço de e-mail**| 40 | Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
+|**Nome do site**| 40 | Este é o nome amigável apresentado no URL do site de suporte. Se especificar um URL do site de suporte, mas não especificar um nome amigável, a ligação Aceder ao site de TI será apresentada na página **Contactar TI** no Portal da Empresa. |
+|**URL do Site**| 150 | Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato **https://www.contoso.com**. Se não especificar um URL, não será apresentado nada no site de suporte da página **Contactar TI** no Portal da Empresa. |
+| **Informações adicionais**| 120 | Apresentado na página **Contactar TI**. |
+
 
 ## <a name="company-branding-customization"></a>Personalização da imagem corporativa da empresa       
 Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor do tema e o fundo.     
 
+### <a name="theme-color"></a>Cor do tema
+Aplique a cor do tema ao Portal da Empresa. Selecione uma cor padrão ou introduza um código hexadecimal de seis dígitos para obter uma cor personalizada.
+
 |Nome do campo|Mais informações|
 |---|---|
-|**Cor do tema**|Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher a partir do seletor de cores ou introduzir um código hexadecimal específico.|
-|**Mostrar o logótipo da empresa**|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. Cada logótipo tem de ser um tipo de ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 100 pixéis e ter um tamanho até 750 KB.<br>Também pode mostrar o nome da empresa que introduziu junto do logótipo carregado.|
+|**Tipo de cor**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. |
+|**Escolher código** ou **Código de cor hexadecimal**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. Estas opções são fornecidas com base no **Tipo de cor** que seleciona.  |
 
-Depois de guardar as alterações, pode escolher **Pré-visualizar as definições no Portal Web do Intune** para ver qual será o aspeto das configurações.
+### <a name="company-logo"></a>Logótipo da empresa
+Carregue o logótipo da empresa para o tornar visível em toda a experiência de utilizador do Intune.
+
+|Nome do campo|Mais informações|
+|---|---|
+|**Mostrar o logótipo da empresa**|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. |
+|**Carregar um logótipo para utilizar em fundos de temas com cor**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. O logótipo tem de ser um ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 400 pixéis e ter um tamanho igual ou inferior a 750 KB. |
+|**Carregar logótipo para utilizar em fundos claros**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. O logótipo tem de ser um ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 400 pixéis e ter um tamanho igual ou inferior a 750 KB. |
+|**Mostrar o nome da empresa ao lado do logótipo**| Selecione esta opção para mostrar o nome da empresa que introduziu junto ao logótipo carregado. |
+
+Depois de guardar as alterações, pode escolher **Pré-visualizar as suas definições no Portal Web do Intune** na parte superior do painel para ver qual será o aspeto das configurações.

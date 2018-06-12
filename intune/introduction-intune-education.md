@@ -5,7 +5,7 @@ keywords: o que é o Intune
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/21/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,15 +14,16 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718017"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Qual é a diferença entre o Intune for Education e a experiência completa de gestão de dispositivos no Intune?
 
-O Intune for Education foi concebido para permitir que os professores e alunos sejam produtivos enquanto mantêm os dados escolares protegidos. O Intune é um serviço de gestão de mobilidade empresarial (EMM) baseado na cloud e é a base do Intune for Education.
+O Intune for Education permite que os professores e estudantes sejam produtivos enquanto protegem os seus dados escolares. O Intune é um serviço de gestão de mobilidade empresarial (EMM) baseado na cloud e é a base do Intune for Education.
 
 ![Consola do Intune for Education em comparação com a consola do Intune.](./media/intune-azure-vs-intuneEDU.png)
 

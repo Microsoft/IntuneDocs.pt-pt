@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744606"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Criar perfis VPN no Intune
 
@@ -41,18 +42,19 @@ Pode criar perfis VPN com os seguintes tipos de ligação:
 
 |Tipo de ligação|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Sim|Sim|Sim|Sim|Sim|Sim|
-|Cisco (IPSec)|Não|Sim|Não|Não|Não|Não|
-|Citrix|Sim|Sim|Não|Não|Não|Sim|
-|F5 Edge Client|Sim|Sim|Sim|Sim|Sim|Sim|
-|SonicWall Mobile Connect|Sim|Sim|Sim|Sim|Sim|Sim|
+|Automático|Não|Não|Não|Não|Não|Sim|
 |Check Point Capsule VPN|Sim|Sim|Sim|Sim|Sim|Sim|
 |Cisco AnyConnect|Sim|Sim|Sim|Não|Não|Não|
-|Automático|Não|Não|Não|Não|Não|Sim|
+|SonicWall Mobile Connect|Sim|Sim|Sim|Sim|Sim|Sim|
+|F5 Edge Client|Sim|Sim|Sim|Sim|Sim|Sim|
+|Palo Alto Networks GlobalProtect|Não|Sim|Não|Não|Não|Sim|
+|Pulse Secure|Sim|Sim|Sim|Sim|Sim|Sim|
+|Cisco (IPSec)|Não|Sim|Não|Não|Não|Não|
+|Citrix|Sim (apenas Android)|Sim|Não|Não|Não|Sim|
 |IKEv2|Não|Não|Não|Não|Não|Sim|
 |L2TP|Não|Não|Não|Não|Não|Sim|
 |PPTP|Não|Não|Não|Não|Não|Sim|
-|Personalizar|Não|Sim|Sim|Não|Não|Não|
+|VPN Personalizada|Não|Sim|Sim|Não|Não|Não|
 
 > [!IMPORTANT]
 > Para poder utilizar os perfis VPN atribuídos a um dispositivo, tem de instalar a aplicação VPN aplicável ao perfil. Pode utilizar as informações do artigo [O que é a gestão de aplicações do Microsoft Intune?](app-management.md) para ajudá-lo a atribuir a aplicação através do Intune.  
@@ -83,7 +85,7 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar um per
   - [Definições do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
 8. Quando tiver concluído, selecione **Criar** para criar o seu perfil
 
-O perfil é criado e apresentado na lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
+O perfil será criado e apresentado na lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger perfis de VPN
 

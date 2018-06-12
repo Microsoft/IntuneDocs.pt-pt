@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 356997859942443ace0749ece8954bf609f9d91e
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703303"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Repor o código de acesso nos dispositivos Windows com o Intune
 
@@ -25,10 +26,10 @@ Pode repor o código de acesso dos dispositivos Windows. A funcionalidade de rep
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
-- Atualização para Criadores do Windows 10 e posterior (associada ao Azure AD)
+- Atualização para Criadores do Windows 10 Mobile e posterior (associada ao Azure AD).
 
 As seguintes plataformas **não** são suportadas:
-- Windows Phone
+- Windows
 - iOS
 - macOS
 - Android

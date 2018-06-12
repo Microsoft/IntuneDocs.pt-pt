@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744708"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
@@ -122,6 +123,17 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 - **Integridade de tempo de execução de aplicações do portal da empresa**: verifica se a aplicação do Portal da Empresa tem o ambiente do tempo de execução predefinido instalado, se está assinada corretamente, se não se encontra no modo de depuração e se foi instalada a partir de uma origem conhecida.
 - **Bloquear a depuração de USB no dispositivo** (Android 4.2 ou posterior): escolha impedir que os dispositivos utilizem a funcionalidade de depuração USB.
 - **Nível de correção de segurança mínimo** (Android 6.0 ou posterior): selecione o nível de correção de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tenham, pelo menos, este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato `YYYY-MM-DD`.
+
+## <a name="locations"></a>Localizações
+
+Na sua política, escolha uma das localizações existentes. Ainda não tem uma localização? [Utilizar Localizações (barreira de rede) no Intune](use-network-locations.md) fornece algumas orientações.
+
+1. Selecione a opção **Selecionar localizações**.
+2. Na lista, verifique a sua localização e escolha **Selecionar**.
+3. **Guarde** a política.
+4. Selecione **Ações para não conformidade**. A ação predefinida marca imediatamente o dispositivo como não conforme. Esta ação aplica-se quando seleciona pelo menos uma localização e se o dispositivo não estiver ligado às localizações selecionadas.
+
+  Pode alterar esta ação para atualizar a agenda quando o dispositivo for marcado como não conforme, tal como após um dia. Também pode configurar uma segunda ação que envia um e-mail para o utilizador quando o dispositivo deixa de estar em conformidade com as suas localizações.
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 

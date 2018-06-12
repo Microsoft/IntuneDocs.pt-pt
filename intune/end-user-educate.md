@@ -1,11 +1,11 @@
 ---
 title: Como dar formação aos seus utilizadores finais sobre o Microsoft Intune | Microsoft Intune
-description: Partilhe informações com os seus utilizadores finais para garantir o sucesso da sua implementação do Intune.
+description: Partilhe informações com os utilizadores dos dispositivos para garantir o sucesso da sua implementação do Intune.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/10/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,46 +13,51 @@ ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: a8b5f44482a55a6bb9e9da9e2aa9a8fb67f0a713
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718000"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como dar formação aos seus utilizadores finais sobre o Microsoft Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-O Microsoft Intune ajuda a sua força de trabalho a ser produtiva em dispositivos móveis, mantendo os seus dados empresariais protegidos. Existem vários passos para garantir uma implementação bem-sucedida, incluindo a avaliação do Intune através de uma [versão de avaliação gratuita](app-sdk.md).
+O Microsoft Intune ajuda a sua força de trabalho a ser produtiva em dispositivos móveis, mantendo os seus dados empresariais protegidos. Para testar a implementação do Intune na sua organização, pode experimentar uma [avaliação gratuita](app-sdk.md).
 
-Nenhuma destas tecnologias garante que os utilizadores finais compreendam a importância da gestão dos seus dispositivos. De facto, muitos dos seus utilizadores finais poderão sentir que está a invadir a sua privacidade, particularmente se estiver a implementar o Intune como uma [solução BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
+Ao implementar o Microsoft Intune, é importante que os colaboradores compreendam a necessidade de mobilidade empresarial e gestão dos dispositivos. Sem uma explicação da sua parte, alguns utilizadores poderão sentir que está a desrespeitar a privacidade deles. A preocupação do utilizador relativamente à privacidade aumenta ao implementar o Intune como uma [solução BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
 
 > [!Important]
-> Para uma implementação bem sucedida, é fundamental compreender e abordar proativamente as preocupações dos utilizadores finais sobre os motivos pelos quais a sua empresa precisa de gerir os dispositivos.
+> Para uma implementação bem sucedida, é fundamental compreender e abordar proativamente as preocupações dos utilizadores sobre os motivos pelos quais a sua empresa precisa de gerir os dispositivos.
 
-A adoção não implica apenas pôr a tecnologia a trabalhar e distribuí-la por toda a força de trabalho, mas também fazer com que a população de utilizadores finais adira ao acesso seguro que o Intune lhes fornece. Os utilizadores poderão sentir-se intimidados pela mobilidade empresarial porque, muitas vezes, não lhes explicamos o que precisam de saber sobre a mesma, nem sobre o que esta consegue (ou não) fazer.
+A adoção eficaz não tem a ver unicamente com a distribuição de tecnologia nova e funcional em toda a sua equipa de trabalho. Trata-se também de fazer com que os utilizadores compreendam e adotem a nova tecnologia. É por esse motivo que é importante que os utilizadores compreendam e adotem a segurança dos dados que o Intune fornece. 
 
-## <a name="things-to-consider-about-your-end-users"></a>Aspetos a considerar sobre os utilizadores finais
+## <a name="things-to-consider-about-your-users"></a>Aspetos a considerar sobre os utilizadores
 
-__Qual é o nível de experiência dos seus utilizadores finais?__ Os seus utilizadores finais poderão ter uma experiência variada com vários tipos de tecnologia. Estas experiências podem ser positivas e negativas – desde fotografias que tiraram aos filhos, à ocasião em que deixaram cair o dispositivo no lavatório e perderam os dados não guardados em cópia de segurança. Estas experiências afetam a forma como abordam a tecnologia e as suas perceções dos usos pessoais e empresariais dos dispositivos.
+__Qual é o nível de experiência em tecnologia dos utilizadores?__ O conhecimento e a experiência com a tecnologia dos utilizadores podem variar. Estas experiências podem ser positivas, tais como fotografar férias em família; ou podem ser negativas, tais como deixar cair inesperadamente um dispositivo no lava-loiça. As experiências influenciam a forma como os utilizadores abordam a tecnologia para utilização pessoal e profissional.
 
-__O que é que significa para mim a gestão da mobilidade?__ Os utilizadores podem não compreender totalmente o acesso que você tem (e não tem) aos dispositivos e informações. É provável que os utilizadores se preocupem com o potencial das TI e da liderança de controlarem todos os seus movimentos. Isto pode ser especialmente preocupante para utilizadores com pouca experiência, que podem acreditar que todas as atividades nos respetivos dispositivos é privada. Um utilizador com mais experiência poderá ter receios específicos sobre o "Grande Irmão" a espiar os seus dispositivos e pode transmitir essas preocupações aos colegas.
+__O que é que significa para os utilizadores a gestão da mobilidade?__ Os utilizadores poderão não compreender totalmente o acesso que tem (ou que não tem) aos dispositivos e informações deles. Os utilizadores têm provavelmente alguma preocupação com a possibilidade de as suas ações serem controladas pelo departamento de TI e pela liderança. Os utilizadores de dispositivos menos experientes poderão acreditar que todas as atividades nos seus dispositivos são privadas. 
 
-__Como é que isto pode incomodar os meus utilizadores finais?__ O processo de instalar aplicações, inscrever dispositivos e manter a conformidade exige tempo. Garantir a segurança dos dados empresariais é a prioridade principal de qualquer implementação do Intune, mas exigir um código de acesso injustificado num dispositivo pessoal fará com que os utilizadores se oponham à gestão dos respetivos dispositivos. Enviar atualizações de aplicações necessárias durante chamadas de conferências empresariais cruciais pode tornar os utilizadores menos produtivos, contrariando a finalidade de aumentar as suas capacidades com os dispositivos móveis.
+__De que forma pode o Intune incomodar os utilizadores?__  Reconheça e respeite o tempo que os utilizadores demoram a instalar aplicações, inscrever dispositivos e manter a conformidade. A principal prioridade de todas as implementações do Intune é a proteção dos dados empresariais. No entanto, a atitude do utilizador relativamente à gestão de dispositivos pode ser afetada negativamente se emitir políticas que, por exemplo:  
+* Exijam códigos de acesso injustificados nos dispositivos pessoais
+* Enviem atualizações de aplicações necessárias a meio de chamadas de negócio importantes  
+
+Estas políticas podem também afetar negativamente a produtividade dos colaboradores. 
 
 ## <a name="things-you-should-do"></a>Coisas que deve fazer
 
-Atenuar estas preocupações do utilizador facilitará a sua implementação. Temos uma lista de algumas formas como pode facilitar a adoção da gestão de dispositivos por parte dos utilizadores finais.
+Leia a seguinte lista de sugestões para facilitar a implementação do Intune na sua organização para os utilizadores de dispositivos.
 
-* __Utilize os recursos.__ A documentação do Intune tem uma variedade de conteúdos para o ajudar a si e aos seus utilizadores finais a realizarem determinadas tarefas, tais como inscrever os dispositivos e resolver problemas com os mesmos. Estes conteúdos incluem artigos que os utilizadores enviaram para o Portal da Empresa, que estão divididos em secções sobre a instalação da aplicação Portal da Empresa e a inscrição no Intune, tarefas gerais que os utilizadores podem realizar nos respetivos dispositivos e resolução de problemas. Esta documentação pode ser encontrada nas nossas explicações sobre como [utilizar dispositivos geridos para trabalhar](/intune-user-help/use-managed-devices-to-get-work-done).
+* __Utilize os recursos.__ A documentação do Intune ajuda os utilizadores a concluírem tarefas específicas do Intune, tais como a inscrição e a resolução de problemas de dispositivos. Os utilizadores podem clicar e aceder a alguns artigos diretamente a partir do Portal da Empresa. Estes artigos específicos ajudam a explicar a instalação da aplicação do Portal da Empresa, a inscrição do Intune, as tarefas gerais que os utilizadores podem efetuar nos seus dispositivos e a resolução de problemas. Existe também uma lista desta documentação no artigo [Utilizar dispositivos geridos para efetuar o trabalho](/intune-user-help/use-managed-devices-to-get-work-done).
 
-* __Seja acessível.__ Os utilizadores finais precisam de saber onde podem obter ajuda com os respetivos dispositivos. Confirme que inclui as informações de contacto do administrador de TI quando [personalizar a aplicação Portal da Empresa](company-portal-customize.md), para que os utilizadores possam obter ajuda se precisarem.
+* __Seja acessível.__ Informe os utilizadores sobre onde podem procurar ajuda para os problemas dos seus dispositivos. Ao [personalizar o Portal da Empresa](company-portal-customize.md), não se esqueça de incluir as informações de contacto do seu administrador de TI.
 
-* __Seja específico.__ Se não fornecer instruções específicas da sua implementação, poderá fazer com que os utilizadores finais sintam que não se preocupou com a experiência deles. Pode utilizar este [modelo personalizável de inscrição do Intune de utilizador final para os administradores de TI](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) criarem as suas próprias instruções de inscrição para os seus utilizadores finais.
+* __Seja específico.__ Forneça instruções específicas para a implementação da sua organização. Esta ação demonstra aos utilizadores que se preocupa com a experiência deles. Utilize este [modelo personalizável de inscrição de utilizadores do Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) para criar as suas próprias instruções de inscrição para os seus utilizadores.
 
-* __Encontre formas diferentes de comunicar.__ Tal como acontece com [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), os utilizadores têm maneiras preferenciais de consumir informações. Para utilizadores que preferem vídeos em vez de documentação, oferecemos [versões de vídeo sobre como inscrever diversos tipos de dispositivos](https://channel9.msdn.com/Series/IntuneEnrollment) e mais no Canal 9. Estes vídeos estão disponíveis para serem incorporados diretamente no seu [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) ou para transferir cópias locais do vídeo ou apenas da faixa de áudio.
+* __Encontre formas diferentes de comunicar.__ Os utilizadores têm [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) e maneiras preferenciais de consumir informações. Para pessoas que aprendem melhor visualmente, o Intune fornece [versões de vídeo sobre como inscrever vários tipos de dispositivos](https://channel9.msdn.com/Series/IntuneEnrollment) no Canal 9. Os vídeos podem ser incorporados diretamente no seu próprio [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Também pode transferir cópias locais do vídeo e da faixa de áudio.
 
-* __Esteja atento.__ A experiência dos seus utilizadores finais terá impacto na sua produtividade e compreendê-la fará com que seja mais fácil para si resolver os problemas quando ocorrerem. Compreender como os utilizadores finais obtêm as aplicações poderá ajudá-lo a diagnosticar e resolver eventuais problemas com muito mais facilidade e rapidez.
+* __Esteja atento.__ A experiência de utilizador do Intune também afeta a sua produtividade. Compreender a experiência dos utilizadores faz com que seja mais fácil para si resolver problemas relacionados com dispositivos e utilizadores. Por exemplo, pode saber mais e compreender a forma como os utilizadores adquirem as suas aplicações. Conhecer estas informações com antecedência fará com que seja mais fácil e rápido diagnosticar e corrigir problemas.
 
 * **Android**
   * [Utilizar um dispositivo Android com o Intune](/intune-user-help/using-your-android-device-with-intune)
@@ -66,9 +71,9 @@ Atenuar estas preocupações do utilizador facilitará a sua implementação. Te
   * [Utilizar um dispositivo Windows com o Intune](/intune-user-help/using-your-windows-device-with-intune)
   * [Como os utilizadores de dispositivos Windows obtêm as aplicações](end-user-apps-windows.md)
 
-* __Seja comunicativo.__ Transmita claramente aos utilizadores o que irá gerir nos respetivos dispositivos. Diga-lhes que tipo de dados está a recolher e por que motivo o está a fazer. Informe-os sobre como planeia utilizar todos os dados de ativos. [Na Microsoft, consideramos que tem o direito de obter o máximo de informações possíveis sobre como lidamos com os dados dos seus clientes na cloud](https://www.microsoft.com/trustcenter/about/transparency) e consideramos que esta filosofia pode aumentar significativamente a satisfação do utilizador final com o Intune.
+* __Seja comunicativo.__ Seja claro sobre aquilo que irá gerir nos dispositivos dos utilizadores. Diga aos utilizadores que tipo de dados está a recolher e por que motivo o está a fazer. Informe-os sobre como planeia utilizar todos os dados. [Na Microsoft, consideramos que tem o direito de obter o máximo de informações possíveis sobre como lidamos com os dados dos seus clientes na cloud](https://www.microsoft.com/trustcenter/about/transparency) e consideramos que esta filosofia pode aumentar significativamente a satisfação do utilizador com o Intune.
 
 >[!Note]
 > A transparência é, na medida do possível, fundamental para o sucesso da sua implementação.
 
-O objetivo é tentar combinar a confiança com políticas de conformidade bem elaboradas, para garantir que os utilizadores finais saibam que mesmo que *pudesse* ver determinados tipos de dados pessoais, não é isso que *pretende* e que pode ser responsabilizado por invadir a privacidade deles. Redigir uma declaração com o seu departamento jurídico e de RH poderá ajudá-lo com funcionários particularmente problemáticos.
+É importante combinar a confiança com políticas de conformidade bem delineadas. Os utilizadores devem saber que, mesmo que *possa* observar determinados tipos de dados pessoais, não *quer* fazê-lo. Ajude-os a perceber que podemos ser responsabilizados por invadir a privacidade deles. Criar uma declaração com as suas informações legais e de RH pode atenuar ainda mais as preocupações dos colaboradores sobre a privacidade.

@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703286"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
@@ -39,7 +40,7 @@ Para dispositivos que estejam **inscritos para gestão no Intune**, o utilizador
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Utilizar aplicações com suporte de várias identidades
 
-As políticas de proteção de aplicações entram em vigor quando um utilizador tenta aceder a dados relacionados com o trabalho.  Poderá observar diferentes comportamentos se o utilizador aceder à aplicação para fins pessoais. 
+As políticas de proteção de aplicações só entram em vigor quando um utilizador tenta aceder a dados relacionados com o trabalho. Poderá observar diferentes comportamentos se o utilizador tentar aceder à aplicação para fins pessoais. As políticas também não se aplicam a novos conteúdos que ainda não foram guardados. Os novos conteúdos só são considerados informações da empresa depois de serem guardados numa localização da empresa, como o SharePoint ou o OneDrive para Empresas.
 
 Em aplicações que suportam várias identidades, o Intune apenas aplica políticas de proteção se um utilizador aceder a dados profissionais.  Por exemplo, pode ser pedido ao utilizador que introduza um PIN.  Na **aplicação Outlook**, é apresentada uma mensagem quando um utilizador inicia a aplicação. Na **aplicação OneDrive**, é apresentada uma mensagem quando um utilizador introduz a sua conta profissional.  No Microsoft **Word**, **PowerPoint** e **Excel**, é apresentada uma mensagem quando um utilizador acede a documentos do OneDrive da empresa.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gerir contas de utilizador no dispositivo

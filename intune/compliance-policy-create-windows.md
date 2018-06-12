@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744912"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Windows no Intune
 
@@ -111,21 +112,20 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra de versão de SO estive
 - **Exigir o BitLocker**: se o Bitlocker estiver ativado, o dispositivo será capaz de proteger os dados que são armazenados na unidade contra acessos não autorizados, quando o sistema é desligado ou entra em hibernação. A Encriptação de Unidade BitLocker do Windows encripta todos os dados armazenados no volume do sistema operativo Windows. O BitLocker utiliza o TPM para ajudar a proteger o sistema operativo Windows e os dados de utilizador. Também ajuda a garantir que os computadores não são adulterados, mesmo que não estejam a ser vigiados, sejam roubados ou se percam. Se os computadores estiverem equipados com um TPM compatível, o BitLocker utiliza o TPM para bloquear as chaves de encriptação que protegem os dados. Como resultado, as chaves não podem ser acedidas até o TPM ter verificado o estado dos computadores.
 - **Exigir que o Arranque Seguro seja ativado no dispositivo:** se o Arranque Seguro estiver ativado, o sistema será forçado a fazer o arranque para um estado de fábrica fidedigno. Além disso, com o Arranque Seguro ativado, os componentes do núcleo utilizados para arrancar o computador têm de ter assinaturas criptográficas corretas e que sejam consideradas fidedignas pela organização que fabricou o dispositivo. O firmware UEFI verifica a assinatura antes de permitir que o computador seja iniciado. Se um ficheiro tiver sido adulterado, danificando a respetiva assinatura, o sistema não arrancará.
 - **Exigir a integridade do código:** a integridade do código é uma funcionalidade que valida a integridade de um ficheiro de controlador ou de sistema sempre que é carregado para a memória. A integridade do código deteta se um ficheiro de controlador ou de sistema não assinado está a ser carregado para o kernel. Também deteta se um ficheiro de sistema foi modificado por software malicioso que está a ser executado por uma conta de utilizador com privilégios administrativos.
-- **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos dos serviços de defesa contra ameaças como uma condição para conformidade. Selecione o nível de ameaça máximo permitido:
-  - **Protegido**: esta opção é a mais segura, uma vez que o dispositivo não pode ter qualquer ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
-  - **Baixo**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
-  - **Médio**: o dispositivo será avaliado como estando em conformidade se as ameaças existentes forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
-  - **Elevado**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
 
 Para obter mais informações sobre como funciona o serviço HAS, veja [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP de Atestado de Estado de Funcionamento).
 
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Versão mínima do SO**: introduza a versão mínima permitida com o formato de número major.minor.build.revision. O número build.revision tem de corresponder à versão devolvida pelo comando `ver` ou `winver`.
+- **Versão mínima do SO**: introduza a versão mínima permitida com o formato de **número major.minor.build.CU**. Para obter o valor correto, abra uma linha de comandos e escreva `ver`. O comando `ver` devolve a versão no seguinte formato:
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Quando um dispositivo tem uma versão anterior à versão de SO especificada, é comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para poder aceder aos recursos da empresa.
 
-- **Versão máxima do SO**: introduza a versão máxima permitida com o formato de número major.minor.build.revision. O número build.revision tem de corresponder à versão devolvida pelo comando `ver` ou `winver`.
+- **Versão máxima do SO**: introduza a versão máxima permitida com o formato de **número major.minor.build.revision**. Para obter o valor correto, abra uma linha de comandos e escreva `ver`. O comando `ver` devolve a versão no seguinte formato:
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Quando um dispositivo está a utilizar uma versão do SO posterior à especificada na regra, o acesso aos recursos da empresa é bloqueado e é pedido ao utilizador que contacte o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode ser utilizado no acesso aos recursos da empresa.
 
@@ -161,9 +161,17 @@ Para obter mais informações sobre como funciona o serviço HAS, veja [Health A
 - **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas.
 - **Exigir palavra-passe quando o dispositivo regressa do estado de inatividade (Móvel e Holographic)**: force os utilizadores a introduzir a palavra-passe sempre que o dispositivo regressar de um estado inativo.
 
-### <a name="encryption"></a>Encriptação
+#### <a name="encryption"></a>Encriptação
 
 - **Encriptação do armazenamento de dados num dispositivo**: escolha **Exigir** a encriptação do armazenamento de dados nos dispositivos.
+
+### <a name="windows-defender-atp"></a>Windows Defender ATP
+
+- **Exigir que o dispositivo esteja na classificação de risco de máquina ou inferior:**: utilize esta definição para assumir a avaliação de riscos dos serviços de defesa contra ameaças como uma condição para conformidade. Selecione o nível de ameaça máximo permitido:
+  - **Nenhum**: esta opção é a mais segura, uma vez que o dispositivo não pode ter qualquer ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
+  - **Baixo**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
+  - **Médio**: o dispositivo será avaliado como estando em conformidade se as ameaças existentes forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
+  - **Elevado**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
