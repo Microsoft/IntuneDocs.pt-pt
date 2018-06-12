@@ -160,7 +160,7 @@ Utilize o [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/th
 
 ### <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque
 
-- **Sinalizar o roubo de credenciais do subsistema de autoridade de segurança local do Windows**
+- **Marcar o roubo de credenciais do sistema de autoridade de segurança local do Windows**
 
 Ajude a [impedir as ações e aplicações](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) que são normalmente utilizadas por software maligno para explorar falhas de segurança e infetar computadores.
 
@@ -179,9 +179,9 @@ Bloqueie os itens seguintes para impedir ameaças de script:
 
 - **Código macro js/vbs/ps/ oculto**
 - **js/vbs a executar payload transferido da Internet (sem exceções)**
-- **Criação de processos com os comandos PsExec e WMI**
-- **Processos não fidedignos e não assinados executados a partir de USB**
-- **Ficheiros executáveis que não cumprem uma lista de critérios de prevalência, idade ou fidedignidade**
+- **Processo de criação de comandos PSExec e WMI**
+- **Processos não fidedignos e não assinados que executam a partir de USB**
+- **Ficheiros executáveis que não correspondam a uma prevalência, idade ou lista de critérios de confiança**
 
 #### <a name="rules-to-prevent-email-threats"></a>Regras para impedir ameaças de e-mail
 
@@ -257,7 +257,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
 - **Desempenho e estado de funcionamento do dispositivo**
 - **Firewall e proteção da rede**
 - **Controlo de aplicações e browsers**
-- **Opções de famílias**
+- **Opções de família**
 - **Notificações das áreas apresentadas da aplicação**: escolha quais as notificações a apresentar aos utilizadores finais. As notificações não críticas incluem resumos de atividade do Antivírus do Windows Defender, incluindo notificações quando as análises forem concluídas. Todas as outras notificações são consideradas críticas.
 
 #### <a name="it-contact-information"></a>Informação de contacto de TI

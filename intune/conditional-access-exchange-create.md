@@ -38,7 +38,7 @@ Para poder configurar o acesso condicional, verifique o seguinte:
 - Tem de utilizar o [Exchange Connector do Exchange Active Sync no local](exchange-connector-install.md), que liga o Intune ao Exchange no local.
 
     >[!IMPORTANT]
-    >O Exchange Connector no local é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. O Intune suporta múltiplos Exchange Connectors no local por subscrição. Se tiver mais do que uma organização do Exchange no local, pode configurar um conector separado para cada organização do Exchange.
+    >O conector do Exchange no local é específico do seu inquilino do Intune e não pode ser utilizado com nenhum outro inquilino. O Intune suporta múltiplos Exchange Connectors no local por subscrição. Se tiver mais do que uma organização do Exchange no local, pode configurar um conector separado para cada organização do Exchange.
 
 - O conector de uma organização do Exchange no local pode ser instalado em qualquer computador, desde que este possa comunicar com o Exchange Server.
 

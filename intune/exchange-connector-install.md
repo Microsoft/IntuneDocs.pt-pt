@@ -148,18 +148,18 @@ Depois de o Exchange Connector criar uma ligação ao Exchange através da CAS e
 3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desativar a funcionalidade.    
 
 
-## <a name="monitor-the-exchange-connector-activity"></a>Monitorizar a atividade do Exchange Connector
+## <a name="monitor-the-exchange-connector-activity"></a>Monitorizar a atividade do conector do Exchange
 
 Após a configuração com êxito dos Exchange Connectors, pode ver o estado das ligações e a última tentativa de sincronização efetuada com êxito. Para validar as ligações ao Exchange Connector:
 
-1. No dashboard do Intune, selecione **Acesso no local**.
+1. No Dashboard do Intune, escolha **Acesso no local**.
 2. Em **Configuração**, selecione **Conectores do Exchange ActiveSync** para verificar o estado da ligação para cada Exchange Connector.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
 
 ### <a name="system-center-operations-manager-scom-management-pack"></a>Pacote de gestão do System Center Operations Manager (SCOM)
 
-A partir da versão 1710 do Intune, pode utilizar o [pacote de gestão do SCOM para o Exchange Connector e o Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Este pacote de gestão proporciona-lhe várias formas de monitorizar o Exchange Connector quando precisar de resolver problemas.
+A partir da versão 1710 do Intune, pode utilizar o [pacote de gestão do SCOM para o conector do Exchange e o Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Este pacote de gestão proporciona-lhe várias formas de monitorizar o conector do Exchange quando precisar de resolver problemas.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forçar manualmente uma sincronização rápida ou uma sincronização completa
 Um Exchange Connector no local sincroniza automaticamente o EAS e os registos de dispositivos do Intune, de forma regular. Se o estado de conformidade de um dispositivo for alterado, o processo de sincronização automática atualiza regularmente os registos para que o acesso do dispositivo possa ser bloqueado ou permitido em conformidade.

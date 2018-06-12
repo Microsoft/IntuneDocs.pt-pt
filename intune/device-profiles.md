@@ -73,7 +73,7 @@ Para carregar a Proteção Avançada Contra Ameaças do Windows Defender (WDATP)
 Esta funcionalidade suporta:
 - Windows 10 e posterior
 
-## <a name="kiosk"></a>Modo de Quiosque
+## <a name="kiosk"></a>Modo de Local Público
 
 O perfil de [definições do modo de quiosque](kiosk-settings.md) configura um dispositivo para que execute uma aplicação ou execute múltiplas aplicações. Também pode personalizar outras funcionalidades no modo de quiosque, incluindo o menu Iniciar e um browser.
 
