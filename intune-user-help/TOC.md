@@ -129,7 +129,7 @@
 ### [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
 ### [Encriptar o dispositivo](encrypt-your-device-windows.md)
 ### [Definir ou alterar a palavra-passe](set-or-change-your-password-windows.md)
-### [Rename your device from Company Portal app (Mudar o nome do seu dispositivo a partir da aplicação Portal da Empresa)](rename-your-device-cpapp.md)
+### [Rename your device from Company Portal app ( Mudar o nome do seu dispositivo a partir da aplicação Portal da Empresa)](rename-your-device-cpapp.md)
 ### [Remover o dispositivo do Intune](unenroll-your-device-from-intune-windows.md)
 ### [O que acontece se anular a inscrição do seu dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [O que acontece durante a reposição do dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
@@ -137,6 +137,7 @@
 ### [Sincronizar o seu dispositivo manualmente](sync-your-device-manually-windows.md)
 
 ### [Corrigir problemas comuns com o Windows](troubleshoot-your-device-windows.md)
+### [Resolver restrições de ponto de acesso](resolve-access-point-restrictions.md)
 #### [O meu dispositivo de Windows 10 não é inscrito](troubleshoot-your-windows-10-device-windows.md)
 #### [Atualizar o dispositivo Windows](you-need-to-update-your-windows-device.md)
 #### [Enviar registos a partir da aplicação Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Remover o seu dispositivo](remove-your-device-cpwebsite.md)
 ### [Repor o código de acesso do seu dispositivo](reset-your-passcode-cpwebsite.md)
 ### [Repor e apagar o seu dispositivo](reset-erase-your-device-cpwebsite.md)
-### [Sincronizar o seu dispositivo manualmente](sync-your-device-manually-cpwebsite.md)

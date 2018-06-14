@@ -238,7 +238,7 @@
                   href: store-apps-ios.md
                 - name: Aplicações da loja Windows Phone 8.1
                   href: store-apps-windows-phone-8-1.md
-                - name: Aplicações da Microsoft Store
+                - name: Aplicações da Loja Microsoft
                   href: store-apps-windows.md
                   items:
                     - name: Adicionar manualmente a aplicação Portal da Empresa
@@ -255,7 +255,7 @@
                   href: lob-apps-android.md
                 - name: Aplicações LOB iOS
                   href: lob-apps-ios.md
-                - name: Aplicações LOB para Windows Phone
+                - name: Aplicações LOB Windows Phone
                   href: lob-apps-windows-phone.md
                 - name: Aplicação LOB do Windows
                   href: lob-apps-windows.md
@@ -270,6 +270,8 @@
           items:
             - name: Incluir e excluir aplicações
               href: apps-inc-exl-assignments.md
+            - name: Implementar aplicações para Windows 10
+              href: apps-windows-10-app-deploy.md
         - name: Monitorizar aplicações
           href: apps-monitor.md
         - name: Configurar aplicações
@@ -288,7 +290,7 @@
               items:
                 - name: Aplicações VPP para iOS
                   href: vpp-apps-ios.md
-                - name: Aplicações da Microsoft Store para Empresas
+                - name: Aplicações da Loja Microsoft para Empresas
                   href: windows-store-for-business.md
                 - name: eBooks do iOS
                   href: vpp-ebooks-ios.md
@@ -472,7 +474,7 @@
       items:
         - name: Formas comuns de utilizar o acesso condicional
           href: conditional-access-intune-common-ways-use.md
-        - name: Instalar o Exchange Connector no local
+        - name: Instalar o conector do Exchange no local
           href: exchange-connector-install.md
         - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
           href: exchange-service-connector-configure.md
@@ -600,7 +602,7 @@
             - name: Firewall do Windows
               href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
               maintainContext: true
-            - name: Proteção de ponto final
+            - name: Endpoint Protection
               href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
               maintainContext: true
         - name: Adicionar aplicações a PCs do cliente Intune
@@ -644,6 +646,8 @@
       items:
         - name: Ajudar os utilizadores a resolver problemas
           href: help-desk-operators.md
+        - name: Resolução de problemas de acesso aos recursos da empresa
+          href: troubleshoot-company-resource-access-problems.md
         - name: Registos de auditoria para atividades do Intune
           href: monitor-audit-logs.md
         - name: Rever registos de proteção de aplicações
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: SDK da Aplicação do Intune para Android
           href: app-sdk-android.md
-        - name: Componente Xamarin do SDK da Aplicação Intune
+        - name: Plug-in Cordova do SDK da Aplicação Intune
+          href: app-sdk-cordova.md
+        - name: Enlaces Xamarin do SDK da Aplicação Intune
           href: app-sdk-xamarin.md
     - name: Utilizar o Armazém de Dados do Intune
       href: reports-nav-create-intune-reports.md
