@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ativar o acesso aos recursos da empresa | Microsoft Docs
 description: Descreve como fazer com que o dispositivo iOS seja gerido pelo Intune
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755254"
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Ativar o acesso aos recursos da empresa
 

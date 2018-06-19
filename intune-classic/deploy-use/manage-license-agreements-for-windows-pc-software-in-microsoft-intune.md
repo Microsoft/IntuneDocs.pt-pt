@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gerir contratos de licença de software para PCs a executar o cliente de software do Intune
 description: O Intune permite-lhe gerir contratos de licença para software comprado através de contratos de Licenciamento em Volume da Microsoft e para software comprado através de outros meios.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030093"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerir contratos de licença para software para computadores com Windows no Microsoft Intune
 

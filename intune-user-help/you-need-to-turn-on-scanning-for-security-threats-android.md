@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073823"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Ativar a análise de ameaças de segurança no seu dispositivo 
 Se instalar uma aplicação não segura inadvertidamente, os dados do seu dispositivo poderão ficar em risco. Para proteger os dados no seu dispositivo, recomendamos que: 

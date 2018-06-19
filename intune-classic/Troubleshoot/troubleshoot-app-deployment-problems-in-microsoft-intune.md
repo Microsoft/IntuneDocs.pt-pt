@@ -1,4 +1,4 @@
-﻿---
+---
 title: Resolução de problemas de implementação de aplicações
 description: Este tópico ajuda a resolver problemas de implementação de aplicações com o Microsoft Intune
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014032"
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Resolução de problemas de implementação de aplicações no Microsoft Intune
 

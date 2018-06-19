@@ -1,4 +1,4 @@
-﻿---
+---
 title: Compreender os seus dispositivos com o inventário
 description: Utilize o Intune para ver informações sobre o hardware dos dispositivos que gere.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023398"
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Compreender os seus dispositivos com o inventário no Microsoft Intune
 

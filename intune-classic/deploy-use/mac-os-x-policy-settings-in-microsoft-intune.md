@@ -1,4 +1,4 @@
-﻿---
+---
 title: Definições de política para Mac OS X
 description: O Intune oferece um conjunto de definições gerais incorporadas que pode configurar em dispositivos Mac OS X. Além disso, pode utilizar a ferramenta Apple Configurator para criar definições personalizadas que não estão disponíveis no Intune.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026300"
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Definições de política de configuração do Mac OS X no Microsoft Intune
 

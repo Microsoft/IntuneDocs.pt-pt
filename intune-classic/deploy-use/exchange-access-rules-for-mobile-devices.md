@@ -1,4 +1,4 @@
-﻿---
+---
 title: Regras de acesso ao Exchange para dispositivos móveis
 description: As regras de acesso do Exchange ActiveSync para permitir ou bloquear as ligações do dispositivo com o EAS
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018741"
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Regras de acesso ao Exchange para dispositivos móveis
 

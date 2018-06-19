@@ -1,4 +1,4 @@
-﻿---
+---
 title: Como proteger o seu dispositivo Android com encriptação | Documentos da Microsoft
 description: Proteger o seu dispositivo Android
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754999"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Como proteger o seu dispositivo Android com encriptação
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327692"
 ---
 # <a name="email-logs-to-your-company-support"></a>Enviar registos ao suporte da empresa por e-mail
 

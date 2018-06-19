@@ -1,4 +1,4 @@
-﻿---
+---
 title: Definir o PIN ou palavra-passe | Documentos da Microsoft
 description: ''
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015103"
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou palavra-passe
 

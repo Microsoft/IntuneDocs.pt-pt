@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018452"
 ---
 # <a name="evaluate-how-many-users-are-targeted-by-a-policy"></a>Avaliar a quantidade de utilizadores sujeitos a uma política
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

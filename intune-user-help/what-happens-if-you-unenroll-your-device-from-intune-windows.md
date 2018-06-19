@@ -1,4 +1,4 @@
-﻿---
+---
 title: O que acontece se anular a inscrição do seu dispositivo Windows? | Documentos da Microsoft
 description: ''
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021120"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo Windows no Intune?
 

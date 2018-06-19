@@ -1,4 +1,4 @@
-﻿---
+---
 title: Autenticação multifator para inscrição de dispositivos no Intune
 description: Como solicitar a autenticação multifator no Azure AD para inscrição de dispositivos.
 keywords: ''
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014134"
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Autenticação multifator para inscrições de dispositivos no Intune
 

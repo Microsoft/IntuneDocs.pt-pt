@@ -1,21 +1,22 @@
 ---
-title: "Gerir versões de sistemas operativos com o Microsoft Intune"
-description: "Saiba como gerir versões de sistemas operativos em diversas plataformas com o Microsoft Intune."
-keywords: 
+title: Gerir versões de sistemas operativos com o Microsoft Intune
+description: Saiba como gerir versões de sistemas operativos em diversas plataformas com o Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 ms.openlocfilehash: 1e5b902053290c314aa53b8f17f11ff92247d37e
 ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29720311"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerir versões de sistemas operativos com o Intune
 Nas plataformas modernas de ambiente de trabalho e dispositivos móveis, são constantemente publicadas atualizações importantes, patches e novas versões. Tem controlos para gerir atualizações e patches totalmente no Windows, mas outras plataformas como Android e iOS precisam que os seus utilizadores finais participem no processo.  O Microsoft Intune tem as ferramentas para o ajudar a estruturar a gestão das versões do seu sistema operativo em diferentes plataformas.

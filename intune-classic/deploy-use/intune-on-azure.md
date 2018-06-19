@@ -19,6 +19,7 @@ ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30015264"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune na consola do Azure e Cliente de PC do Intune legado
 

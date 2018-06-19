@@ -1,4 +1,4 @@
-﻿---
+---
 title: Resolver conflitos de políticas de GPO e do Intune
 description: Saiba como resolver conflitos entre as Políticas de Grupos e as políticas de configuração do Intune.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031826"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflitos de políticas de Objetos de Política de Grupo (GPO) e do Microsoft Intune
 

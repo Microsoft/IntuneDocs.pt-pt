@@ -1,4 +1,4 @@
-﻿---
+---
 title: Personalizar vistas da consola para funções de administrador
 description: Utilize este tópico para obter ajuda para filtrar a vista da consola de administração do Intune de modo a permitir aos administradores verem apenas os itens de que precisam no âmbito das funções deles.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013641"
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Personalizar vistas da consola do Intune de acordo com funções de administrador
 

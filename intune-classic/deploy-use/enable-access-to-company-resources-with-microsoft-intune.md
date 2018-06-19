@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ativar o acesso aos recursos da empresa
 description: Os perfis de e-mail, de VPN e de Wi-FI funcionam em conjunto para ajudar os seus utilizadores a obter acesso aos ficheiros e recursos de que precisam.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017313"
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Ativar o acesso aos recursos da empresa com o Microsoft Intune
 

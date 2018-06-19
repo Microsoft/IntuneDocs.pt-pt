@@ -1,4 +1,4 @@
-﻿---
+---
 title: O que acontece durante a reposição do dispositivo? | Documentos da Microsoft
 description: Saiba mais sobre o que acontece quando repõe o dispositivo em cada uma das plataformas suportadas do Intune.
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015868"
 ---
 # <a name="what-happens-if-you-reset-your-device"></a>O que acontece se repuser o dispositivo
 

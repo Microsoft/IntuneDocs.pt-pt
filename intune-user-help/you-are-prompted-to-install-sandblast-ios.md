@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30753997"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>Tem de instalar o SandBlast Mobile Protect no seu dispositivo iOS
 

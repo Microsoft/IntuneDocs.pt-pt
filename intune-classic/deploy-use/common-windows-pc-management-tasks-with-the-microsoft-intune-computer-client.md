@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014831"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso | Documentos da Microsoft
 description: Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016769"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso
 

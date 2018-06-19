@@ -21,6 +21,7 @@ ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33676635"
 ---
 # <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Bloquear o dispositivo a partir da aplicação Portal da Empresa para Windows 10
 

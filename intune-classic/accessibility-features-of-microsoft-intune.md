@@ -1,4 +1,4 @@
-﻿---
+---
 title: Funcionalidades de Acessibilidade
 description: Saiba mais sobre as funcionalidades do Intune que melhoram a acessibilidade para pessoas portadoras de deficiência.
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013063"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Funcionalidades de Acessibilidade do Microsoft Intune
 Para além das funcionalidades e ferramentas de acessibilidade do Microsoft Windows, as seguintes funcionalidades tornam o Microsoft Intune mais acessível para pessoas portadoras de deficiência: utilizar atalhos de teclado

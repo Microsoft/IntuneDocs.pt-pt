@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gestão de Dispositivos com o Exchange ActiveSync
 description: Gerir dispositivos móveis com a gestão do Exchange ActiveSync (EAS) com o conector do Exchange
 keywords: ''
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016752"
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Gestão de dispositivos móveis do Exchange ActiveSync com Microsoft Intune
 

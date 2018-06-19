@@ -18,6 +18,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190490"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>Definições de perfis de e-mail no Microsoft Intune para dispositivos iOS 
 

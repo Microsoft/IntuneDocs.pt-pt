@@ -1,4 +1,4 @@
-﻿---
+---
 title: Inscrever o seu dispositivo Windows Phone 8.1 no Intune | Documentos da Microsoft
 description: Descreve como inscrever dispositivos Windows Phone 8.1 no Intune
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31031724"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o seu dispositivo Windows Phone 8.1 no Intune
 

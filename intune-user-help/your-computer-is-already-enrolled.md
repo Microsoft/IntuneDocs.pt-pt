@@ -1,4 +1,4 @@
-﻿---
+---
 title: O seu computador já está inscrito | Documentos da Microsoft
 description: ''
 keywords: ''
@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019505"
 ---
 # <a name="your-computer-is-already-enrolled"></a>O seu computador já está inscrito
 

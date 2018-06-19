@@ -1,4 +1,4 @@
-﻿---
+---
 title: Políticas de firewall para PCs Windows
 description: O Intune pode ajudá-lo a proteger os PCs que gere com o cliente Intune de várias formas, incluindo ajudá-lo a configurar as definições da Firewall do Windows.
 keywords: ''
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025977"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows no Microsoft Intune
 
