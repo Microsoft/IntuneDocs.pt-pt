@@ -1,1 +1,1 @@
-﻿**Learning Ally (anteriormente denominado Recording for the Blind &amp; Dyslexic, Inc.)** 
+**Learning Ally (anteriormente denominado Recording for the Blind &amp; Dyslexic, Inc.)** 

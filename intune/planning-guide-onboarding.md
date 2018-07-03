@@ -15,11 +15,12 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 871e091af1f2046206dbc94fdc7d199435645190
-ms.sourcegitcommit: e04e1652e121b4b9dbed05d0bbaa569e6d5d09bd
+ms.openlocfilehash: 8f95726cbad86544ebf717380708c8295f737530
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475647"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 
@@ -68,7 +69,7 @@ Poderá ser necessário adicionar utilizadores ou grupos de segurança no Active
 
 
 -   Saiba mais sobre [como pode adicionar utilizadores/grupos no Intune](users-permissions-add.md).
-<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
+<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
 
 
 
