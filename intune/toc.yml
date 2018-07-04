@@ -557,6 +557,11 @@
               items:
                 - name: Integração do Zimperium e do Intune
                   href: zimperium-mtd-connector-integration.md
+            - name: Configurar o Pradeo
+              href: pradeo-mobile-threat-defense-connector.md
+              items:
+                - name: Integração do Pradeo e do Intune
+                  href: pradeo-mtd-connector-integration.md
             - name: Configurar o Intune para MTD
               items:
                 - name: Adicionar aplicações MTD
