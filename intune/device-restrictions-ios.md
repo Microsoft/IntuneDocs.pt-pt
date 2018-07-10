@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803827"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
@@ -97,7 +98,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
     -   **Tipo de palavra-passe necessária** – especifique o tipo de palavra-passe obrigatório, por exemplo apenas numérico ou alfanumérico.
     -   **Número de carateres não-alfanuméricos na palavra-passe** – Especifique o número de carateres de símbolos (como **#** ou **@**) que tem de ser incluído na palavra-passe.
     -   **Comprimento mínimo da palavra-passe** – Especifique o número mínimo de carateres na palavra-passe.
-    -   **Número de falhas de início de sessão antes de limpar o dispositivo** – Especifique o número de tentativas de início de sessão falhadas antes desta definição eliminar os dados do dispositivo.
+    -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – especifica o número de vezes exclusivas que uma palavra-passe incorreta pode ser introduzida antes de a definição eliminar os dados do dispositivo.
     -   **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup> – especifique durante quanto tempo o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.
     -   **Máximo de minutos de inatividade até o ecrã ser bloqueado**<sup>1</sup> – Especifique o número de minutos antes de o ecrã do dispositivo se desligar.
     -   **Expiração de palavra-passe (dias)** – Especifique o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
@@ -325,7 +326,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 
 >[!NOTE]
 > Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
->Se a aplicação iOS que especificou for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
+>Se a aplicação iOS que especificou for instalada após a atribuição do perfil, o dispositivo só entrará em modo de local público após ser reiniciado.
 
 ## <a name="safari"></a>Safari
 -   **Safari (apenas supervisionado)** – Especifique se o browser Safari pode ser utilizado no dispositivo.

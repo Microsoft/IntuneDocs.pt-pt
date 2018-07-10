@@ -3,10 +3,10 @@ title: Adicionar políticas de configuração da aplicação para dispositivos i
 titlesuffix: Microsoft Intune
 description: Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232238"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições quando os utilizadores executarem uma aplicação iOS. Não atribua estas políticas diretamente a utilizadores nem a dispositivos. Em alternativa, associe uma política à aplicação e, em seguida, atribua a aplicação. As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
+Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições de configuração personalizadas para uma aplicação para iOS. Estas definições de configuração permitem a personalização de uma aplicação com base nas instruções do fornecedor. Pode obter estas definições de configuração (chaves e valores) junto do fornecedor da aplicação. Para configurar a aplicação, terá de especificar as definições como chaves e valores, ou como XML com chaves e valores. Contudo, não atribui estas políticas de configuração diretamente a utilizadores e dispositivos. Em vez disso, deve associar uma política de configuração a uma aplicação e, em seguida, atribuir a aplicação. As definições de políticas de configuração são utilizadas quando a aplicação as procura, normalmente quando é executada pela primeira vez.
 
-Pode atribuir uma política de configuração da aplicação a um grupo de utilizadores e dispositivos ao utilizar uma combinação de inclusão e exclusão de atribuições. Depois de adicionar uma política de configuração da aplicação, pode definir as atribuições dessa política. Quando definir as atribuições da política, poderá optar por incluir e excluir os grupos de utilizadores aos quais a política será aplicada. Quando escolher incluir um ou mais grupos, poderá optar por selecionar grupos específicos para incluir ou selecionar grupos incorporados. Os grupos incorporados incluem **Todos os Utilizadores**, **Todos os Dispositivos** e **Todos os Utilizadores e Todos os Dispositivos**. 
+Depois de adicionar uma política de configuração da aplicação, pode definir as atribuições dessa política. Quando definir as atribuições da política, poderá optar por incluir e excluir os grupos de utilizadores aos quais a política será aplicada. Quando escolher incluir um ou mais grupos, poderá optar por selecionar grupos específicos para incluir ou selecionar grupos incorporados. Os grupos incorporados incluem **Todos os Utilizadores**, **Todos os Dispositivos** e **Todos os Utilizadores e Todos os Dispositivos**. 
 
 >[!NOTE]
 >O Intune fornece os grupos **Todos os Utilizadores** e **Todos os Dispositivos** pré-criados na consola com otimizações incorporadas para sua comodidade. Recomendamos fortemente que utilize estes grupos para abranger todos os utilizadores e todos os dispositivos em vez dos grupos "Todos os utilizadores" ou "Todos os dispositivos" que possa ter criado.
 
-Depois de selecionar os grupos a incluir na sua política de configuração da aplicação, também poderá escolher os grupos específicos a excluir.
+Depois de selecionar os grupos a incluir na sua política de configuração da aplicação, também poderá escolher os grupos específicos a excluir. Para obter mais informações, veja [Incluir e excluir atribuições de aplicações no Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 8.0 e posterior. Suporta os seguintes tipos de instalação de aplicações:
@@ -49,18 +50,16 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 3. Selecione a carga de trabalho **Aplicações Móveis**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
 5. Defina os seguintes detalhes:
-    - **Nome**<br>
-      O nome do perfil que é apresentado no portal do Azure.
-    - **Descrição**<br>
-      A descrição do perfil que é apresentada no portal do Azure.
-    - **Tipo de inscrição do dispositivo**<br>
-      Selecione **Dispositivos geridos**.
+    - **Nome** – o nome do perfil que é apresentado no portal do Azure.
+    - **Descrição** – a descrição do perfil que é apresentada no portal do Azure.
+    - **Tipo de inscrição do dispositivo** – selecione **Dispositivos geridos**.
 6. Selecione **iOS** em **Plataforma**.
 7.  Selecione **Aplicação associada**. Em seguida, no painel **Aplicação associada**, selecione a aplicação gerida à qual pretende aplicar a configuração e selecione **OK**.
 8.  No painel **Adicionar política de configuração**, selecione **Definições de configuração**.
-9. Selecione **Formato das definições de configuração**. Selecione um dos seguintes procedimentos:
-    - **[Utilizar estruturador de configuração](#use-configuration-designer)**
-    - **[Introduzir dados XML](#enter-xml-data)**
+9. Selecione **Formato das definições de configuração**. Selecione uma das opções seguintes para adicionar informação XML:
+    - **Utilizar estruturador de configuração**
+    - **Introduzir dados XML**<br></br>
+    Para obter detalhes sobre a utilização do estruturador de configuração, veja [Utilizar estruturador de configuração](#use-configuration-designer). Para obter detalhes sobre a introdução de dados XML, veja [Introduzir dados XML](#enter-xml-data). 
 10. Depois de adicionar as suas informações XML, selecione **OK** e, em seguida, selecione **Adicionar** para adicionar a política de configuração. O painel de descrição geral da política de configuração é apresentado.
 11. Selecione **Atribuições** para apresentar as opções de inclusão e exclusão. 
 
@@ -80,17 +79,14 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 
 ## <a name="use-configuration-designer"></a>Utilizar o estruturador de configuração
 
-Pode utilizar o estruturador de configuração para as aplicações em dispositivos inscritos ou não inscritos no Intune. O estruturador permite-lhe configurar chaves e valores de configuração específicos. Também tem de especificar o tipo de dados para cada valor. As definições são fornecidas às aplicações automaticamente no momento da instalação.
+O Microsoft Intune disponibiliza definições de configuração exclusivas para uma aplicação. Pode utilizar o estruturador de configuração para as aplicações em dispositivos inscritos ou não inscritos no Microsoft Intune. O estruturador permite-lhe configurar chaves e valores de configuração específicos que o ajudam a criar o XLM subjacente. Também tem de especificar o tipo de dados para cada valor. Estas definições são fornecidas para aplicações automaticamente quando estas são instaladas.
 
 ### <a name="add-a-setting"></a>Adicionar uma definição
 
 1. Para cada chave e valor na configuração, defina:
-   - **Chave de configuração**<br>
-     A chave que identifica exclusivamente a configuração de definição específica.
-   - **Tipo de valor**<br>
-     O tipo de dados do valor de configuração. Os tipos incluem Número Inteiro, Real, Cadeia ou Booleano.
-   - **Valor de configuração**<br>
-     O valor da configuração.
+   - **Chave de configuração** – a chave que identifica exclusivamente a configuração de definição específica.
+   - **Tipo de valor** – o tipo de dados do valor de configuração. Os tipos incluem Número Inteiro, Real, Cadeia ou Booleano.
+   - **Valor de configuração** – o valor da configuração.
 2. Selecione **OK** para definir as definições de configuração.
 
 ### <a name="delete-a-setting"></a>Eliminar uma definição
@@ -165,4 +161,4 @@ Além disso, o Intune suporta os seguintes tipos de tokens na lista de proprieda
 
 ## <a name="next-steps"></a>Próximos passos
 
-Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação como é habitual.
+Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.

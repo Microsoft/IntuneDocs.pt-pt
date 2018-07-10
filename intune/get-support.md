@@ -15,11 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843145"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -33,7 +34,8 @@ A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de
 ## <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online
 
 Enquanto administrador de TI, pode enviar um pedido de suporte a partir do portal do Azure através dos seguintes passos:
-
+>[!NOTE]
+>Tem de ser um Administrador de Serviços do Intune ou um Administrador Global para criar um pedido de suporte online. Para obter detalhes, veja [Atribuir funções de administrador](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone <strong>?</strong> no canto superior direito do portal e, em seguida, selecione <strong>Ajuda + suporte</strong> para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
     ![Captura de ecrã a mostrar a ligação do ponto de interrogação Ajuda e suporte do portal do Azure, com a ligação Ajuda + suporte realçada](./media/azure-get-support.png)

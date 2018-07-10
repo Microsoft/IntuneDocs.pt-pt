@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97ddb881e497c5b9e5bb5b36d19c13ab2722b538
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 75d3f9312a6f3a88706070ab29e674cb6d53bf4f
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744827"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305421"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -69,8 +69,7 @@ Existem duas categorias de definições de políticas: reposicionamento de dados
 
   |Nome da aplicação/serviço | Descrição | Condição de isenção|
   | ------ | ---- | --- |
-  | com.android.chrome | Browser Google Chrome | O Chrome é utilizado para alguns componentes WebView no Android 7.0+ e nunca é ocultado da vista. No entanto, o fluxo de dados de e para a aplicação será sempre restringido.
-  | com.skype.raider | Skype | A aplicação Skype é permitida apenas em determinadas ações que resultam numa chamada telefónica. |
+  | com.android.chrome | Browser Google Chrome | O Chrome é utilizado para alguns componentes WebView no Android 7.0+ e nunca é ocultado da vista. No entanto, o fluxo de dados de e para a aplicação será sempre restringido.  | com.skype.raider | Skype | A aplicação Skype é permitida apenas em determinadas ações que resultam numa chamada telefónica. |
   | com.android.providers.media | Fornecedor de conteúdos multimédia do Android | O fornecedor de conteúdos multimédia só tem permissão para a ação de seleção de toque. |
   | com.google.android.gms; com.google.android.gsf | Pacotes dos Serviços do Google Play | Estes pacotes têm permissão para ações do Google Cloud Messaging, tal como notificações push. |
 
@@ -86,7 +85,7 @@ Para obter mais informações, veja [Data transfer policy exceptions for apps](a
 | **Verificar novamente os requisitos de acesso após (minutos)** | Configure as seguintes definições: <ul><li>**Tempo Limite**: este é o número de minutos que passam até os requisitos de acesso (definidos anteriormente na política) serem verificados novamente. Por exemplo, um administrador ativa o PIN e bloqueia os dispositivos com rooting na política. Desta forma, ao abrir uma aplicação gerida pelo Intune, o utilizador tem de introduzir um PIN e utilizar a aplicação num dispositivo sem rooting. Com esta definição, o utilizador não tem de introduzir um PIN ou submeter-se a outra verificação de deteção de rooting nas aplicações geridas pelo Intune durante **30 minutos** (valor predefinido). <br><br> **Nota:** no Android, o PIN é partilhado entre todas as aplicações geridas pelo Intune. O temporizador do PIN é reiniciado assim que a aplicação sai de primeiro plano no dispositivo. O utilizador não terá de introduzir um PIN nas aplicações geridas pelo Intune que partilham o PIN durante o tempo limite definido nesta definição. <br><br> Este formato de definição de políticas suporta um número inteiro positivo.<br></li><li>**Período de tolerância offline**: este é o número de minutos em que as aplicações de MAM podem ser executadas offline, especifique o tempo (em minutos) antes de os requisitos de acesso da aplicação serem verificados novamente. Valor predefinido = **720** minutos (12 horas). Após este período expirar, a aplicação necessita da autenticação do utilizador no Azure Active Directory (Azure AD) para que a aplicação continue a ser executada.<br><br> Este formato de definição de políticas suporta um número inteiro positivo.</li></ul>| Tempo limite: 30 <br><br> Offline: 720 |
 | **Intervalo offline antes de os dados da aplicação serem eliminados (dias)** | Após alguns dias (definidos pelo administrador) de execução offline, a aplicação pedirá ao utilizador para estabelecer ligação à rede e voltar a efetuar a autenticação. Se o utilizador for autenticado com êxito, este poderá continuar a aceder aos seus dados e o intervalo offline será reposto.  Se a autenticação do utilizador falhar, a aplicação irá efetuar uma eliminação seletiva da conta e dos dados dos utilizadores.  Veja [Como eliminar apenas dados empresariais de aplicações geridas pelo Intune](https://docs.microsoft.com/intune/apps-selective-wipe) para obter mais informações sobre o tipo de dados que são removidos numa eliminação seletiva.<br><br> Este formato de definição de políticas suporta um número inteiro positivo. | 90 dias |
 | **Bloquear captura de ecrã e Android Assistant (Android 6.0+)** | Selecione **Sim** para bloquear a captura de ecrã e as capacidades do **Android Assistant** do dispositivo quando utilizar esta aplicação. Selecionar **Sim** também desfocará a imagem de pré-visualização do comutador da aplicação quando utilizar esta aplicação com uma conta escolar ou profissional. | Não |
-| **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito. | Não |
+| **Desativar o PIN da aplicação quando o PIN do dispositivo for gerido** | Escolha **Sim** para desativar o PIN da aplicação quando for detetado um bloqueio do dispositivo num dispositivo inscrito.<br><br>**Nota**: o Intune não consegue detetar a inscrição de dispositivos com uma solução EMM de terceiros no iOS.  | Não |
 | **Exigir sistema operativo Android mínimo** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O acesso do utilizador será bloqueado se a versão Android no dispositivo não cumprir os requisitos.<br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não |
 | **Exigir sistema operativo Android mínimo (apenas aviso)** | Escolha **Sim** para exigir um sistema operativo Android mínimo para utilizar esta aplicação. O utilizador verá uma notificação se a versão Android no dispositivo não cumprir os requisitos. Esta notificação pode ser dispensada.<br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision. | Não |
 | **Exigir versão mínima da aplicação** | Escolha **Sim** para exigir uma versão mínima para utilizar a aplicação. O acesso do utilizador será bloqueado se a versão da aplicação no dispositivo não cumprir os requisitos.<br><br>Uma vez que as aplicações têm, frequentemente, esquemas diferentes de controlo de versão entre si, crie uma política com uma versão da aplicação mínima direcionada para uma aplicação (por exemplo, “política da versão do Outlook”). <br><br> Este formato de definição de políticas suporta major.minor, major.minor.build, major.minor.build.revision.| Não |

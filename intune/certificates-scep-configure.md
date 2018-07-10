@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745031"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297910"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -36,12 +36,16 @@ Este artigo mostra como configurar a sua infraestrutura e, em seguida, criar e a
 - **Servidor do NDES**: num servidor com o Windows Server 2012 R2 ou posterior, tem de configurar o Serviço de Inscrição de Dispositivos de Rede (NDES). O Intune não suporta a utilização do NDES quando este é executado num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o Serviço de Inscrição de Dispositivos de Rede.
 O servidor do NDES tem de estar associado ao domínio que aloja a AC e não pode estar no mesmo servidor da AC. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: utilize o portal do Azure para transferir o instalador do **Certificate Connector** (**ndesconnectorssetup.exe**). Em seguida, pode executar o **ndesconnectorssetup.exe** no servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES), onde quer instalar o Certificate Connector. 
+- **Microsoft Intune Certificate Connector**: utilize o portal do Azure para transferir o instalador do **Certificate Connector** (**NDESConnectorSetup.exe**). Em seguida, pode executar o instalador **NDESConnectorSetup.exe** no servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES) onde quer instalar o Certificate Connector.
+
+  - O Certificate Connector do NDES também suporta o modo Federal Information Processing Standard (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
+
 - **Servidor Proxy de Aplicações Web** (opcional): utilize um servidor com o Windows Server 2012 R2 ou posterior como um servidor Proxy de Aplicações Web (WAP). Esta configuração:
-  -  Permite aos dispositivos receberem certificados através de uma ligação à Internet.
-  -  É uma recomendação de segurança quando os dispositivos se ligam através da Internet para receber e renovar certificados.
+  - Permite aos dispositivos receberem certificados através de uma ligação à Internet.
+  - É uma recomendação de segurança quando os dispositivos se ligam através da Internet para receber e renovar certificados.
 
 #### <a name="additional"></a>Adicionais
+
 - O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
 - O servidor WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos e de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
 
@@ -71,17 +75,7 @@ Recomendamos a publicação do servidor NDES através de um proxy, tal como o [p
 |**Conta do serviço do NDES**|Introduza uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES.|
 
 ## <a name="configure-your-infrastructure"></a>Configurar a sua infraestrutura
-Antes de poder configurar perfis de certificados, conclua as tarefas seguintes. Estas tarefas requerem conhecimento do Windows Server 2012 R2 e dos Serviços de Certificados do Active Directory (ADCS):
-
-**Passo 1**: Criar uma conta do serviço do NDES
-
-**Passo 2**: Configurar modelos de certificado na autoridade de certificação
-
-**Passo 3**: Configurar pré-requisitos no servidor do NDES
-
-**Passo 4**: Configurar o NDES para ser utilizado com o Intune
-
-**Passo 5**: Ativar, instalar e configurar o Intune Certificate Connector
+Para poder configurar perfis de certificados, conclua os passos seguintes. Estes passos exigem o conhecimento do Windows Server 2012 R2 e posterior e dos Serviços de Certificados do Active Directory (ADCS):
 
 #### <a name="step-1---create-an-ndes-service-account"></a>Passo 1 – Criar uma conta do serviço do NDES
 
@@ -226,7 +220,6 @@ Nesta tarefa irá:
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
 
-
 4. No Gestor de IIS, selecione **Site Predefinido** > **Filtragem de Pedidos** > **Editar Definição de Funcionalidade**. Altere o **Comprimento máximo do URL** e **Cadeia máxima de consulta** para *65534*, conforme apresentado:
 
     ![Comprimento máximo de URL e de consulta no IIS](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ Nesta tarefa irá:
 - Transferir, instalar e configurar o Certificate Connector no servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES), um servidor no seu ambiente. Para aumentar a dimensão da implementação do NDES na sua organização, pode instalar múltiplos servidores do NDES com um Microsoft Intune Certificate Connector em cada servidor do NDES.
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>Transferir, instalar e configurar o Certificate Connector
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Configuração do dispositivo** e, em seguida, selecione **Autoridade de Certificação**.
 4. Selecione **Adicionar** e **Transferir o ficheiro de conector**. Guarde a transferência numa localização a que possa aceder a partir do servidor onde irá instalá-la.
-5. Quando a transferência for concluída, execute o instalador que transferiu (**ndesconnectorssetup.exe**) no servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES). Este instalador também instala o módulo de políticas para NDES e o Serviço Web CRP. (O Serviço Web CRP, CertificateRegistrationSvc, é executado como uma aplicação no IIS.)
+5. Quando a transferência for concluída, aceda ao servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES). Em seguida:
+
+    1. Certifique-se de que o .NET 4.5 Framework está instalado, pois o Certificate Connector do NDES precisa dele. O .NET 4.5 Framework vem incluído automaticamente com o Windows Server 2012 R2 e versões mais recentes.
+    2. Execute o instalador **NDESConnectorSetup.exe**. Este instalador também instala o módulo de políticas para NDES e o Serviço Web CRP. O Serviço Web CRP, CertificateRegistrationSvc, é executado como uma aplicação no IIS.
 
     > [!NOTE]
     > Ao instalar o NDES para o Intune autónomo, o serviço CRP é instalado automaticamente com o Certificate Connector. Quando utiliza o Intune com o Configuration Manager, instala o Ponto de Registo de Certificados como uma função do sistema de sites à parte.
@@ -305,7 +302,7 @@ Nesta tarefa irá:
 6. Quando lhe for pedido o certificado de cliente do Certificate Connector, escolha **Selecionar**e selecione o certificado de **autenticação de cliente** que instalou no Servidor NDES na Tarefa 3.
 
     Após selecionar o certificado de autenticação de cliente, é encaminhado para a superfície do **Certificado de Cliente do Microsoft Intune Certificate Connector** . Embora o certificado que selecionou não seja apresentado, selecione **Seguinte** para ver as propriedades do certificado. Selecione **Seguinte** e, em seguida, **Instalar**.
-    
+
     > [!IMPORTANT]
     > O Intune Certificate Connector não pode ser inscrito num dispositivo com a Configuração de Segurança Avançada do Internet Explorer ativada. Para utilizar o Intune Certificate Connector, [desative a Configuração de segurança avançada do IE](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
@@ -335,10 +332,13 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> É incluído suporte para o TLS 1.2 com o Certificate Connector do NDES. Assim, se o servidor com o Certificate Connector do NDES instalado suportar o TLS 1.2, será utilizado o TLS 1.2. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.
+
 ## <a name="create-a-scep-certificate-profile"></a>Criar um perfil de certificado SCEP
 
 1. No portal do Azure, abra o Microsoft Intune.
-2. Selecione **Configuração do dispositivo** e selecione **Perfis** e **Criar perfil**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
 4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado SCEP. Atualmente, pode selecionar uma das seguintes plataformas para definições de restrição de dispositivos:
    - **Android**
@@ -406,12 +406,16 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 
     > [!NOTE]
     > Para dispositivos iOS, deverá ver múltiplas cópias do certificado no perfil de gestão, se implementar múltiplos perfis de recursos que utilizem o mesmo perfil de certificado.
-    
-Para obter informações sobre como atribuir perfis, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
+
+Para obter informações sobre como atribuir perfis, veja [Atribuir perfis de dispositivos](device-profile-assign.md).
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Verificação e resolução de problemas de configuração do Intune Connector
+
+Para resolver problemas e verificar a configuração do Intune Connector, veja [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript) (Exemplos de script da Autoridade de Certificação)
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Códigos de diagnóstico e eventos do Intune Connector
 
-A partir da versão 6.1803.X.X, o Serviço do Intune Connector regista eventos no **Visualizador de Eventos** (**Registos de Aplicações e Serviços** > **Microsoft Intune Connector**). Utilize estes eventos para o ajudar a resolver potenciais problemas na configuração do Intune Connector. Estes eventos registam sucessos e falhas de uma operação e também contêm códigos de diagnóstico com mensagens que ajudam o administrador de TI a resolver problemas.
+A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos no **Visualizador de Eventos** (**Registos de Aplicações e Serviços** > **Microsoft Intune Connector**). Utilize estes eventos para o ajudar a resolver potenciais problemas na configuração do Intune Connector. Estes eventos registam sucessos e falhas de uma operação e também contêm códigos de diagnóstico com mensagens que ajudam o administrador de TI a resolver problemas.
 
 ### <a name="event-ids-and-descriptions"></a>IDs e descrições do evento
 
@@ -430,10 +434,10 @@ A partir da versão 6.1803.X.X, o Serviço do Intune Connector regista eventos n
 | 20102 | PkcsCertIssue_Failure  | Falha ao emitir um certificado PKCS. Reveja os detalhes do evento para obter o ID do dispositivo, o ID do utilizador, o nome CA, o nome do modelo de certificado e o thumbprint do certificado relacionados com este evento. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | Certificado revogado com êxito. Reveja os detalhes do evento para o ID do dispositivo, o ID do utilizador, o nome CA e o número de série do certificado relacionados com este evento. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | Falha ao revogar o certificado. Reveja os detalhes do evento para o ID do dispositivo, o ID do utilizador, o nome CA e o número de série do certificado relacionados com este evento. Para obter mais informações, veja os Registos NDES SVC.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | Foi transferido com êxito o pedido para assinar um certificado, transferir um certificado de cliente ou revogar um certificado. Reveja os detalhes do evento para obter os detalhes da transferência.  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | Falha ao transferir o pedido para assinar um certificado, transferir um certificado de cliente ou revogar um certificado. Reveja os detalhes do evento para obter os detalhes da transferência. | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | Os dados de pedido ou revogação do certificado foram carregados com êxito. Reveja os detalhes do evento para obter os detalhes do carregamento. | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | Falha ao carregar os dados de pedido ou revogação do certificado. Reveja os detalhes do evento > Estado de Carregamento para determinar o ponto de falha.| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | Os dados de pedido ou revogação do certificado foram carregados com êxito. Reveja os detalhes do evento para obter os detalhes do carregamento. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | Falha ao carregar os dados de pedido ou revogação do certificado. Reveja os detalhes do evento > Estado de Carregamento para determinar o ponto de falha.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Foi transferido com êxito o pedido para assinar um certificado, transferir um certificado de cliente ou revogar um certificado. Reveja os detalhes do evento para obter os detalhes da transferência.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Falha ao transferir o pedido para assinar um certificado, transferir um certificado de cliente ou revogar um certificado. Reveja os detalhes do evento para obter os detalhes da transferência. | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | Ponto de Registo de Certificados verificou com êxito um desafio de cliente | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | O Ponto de Registo de Certificados foi concluído, mas rejeitou o pedido. Consulte o código de diagnóstico e a mensagem para obter mais detalhes. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | Falha do Ponto de Registo de Certificados ao verificar um desafio de cliente. Consulte o código de diagnóstico e a mensagem para obter mais detalhes. Veja os detalhes da mensagem do evento para obter o ID de Dispositivo que corresponde ao desafio. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |

@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178167"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305438"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -126,6 +126,8 @@ Em muitas organizações, é comum permitir que os utilizadores finais utilizem 
 Uma vez que as políticas de proteção de aplicações do Intune são direcionadas para a identidade do utilizador, as definições de proteção para um utilizador aplicam-se, normalmente, a dispositivos inscritos (geridos pela MDM) e a dispositivos não inscritos (sem gestão pela MDM). Portanto, pode direcionar uma política de proteção de aplicações do Intune para dispositivos iOS e Android inscritos ou não inscritos no Intune. Pode ter uma política de proteção para dispositivos não geridos em que são aplicados controlos de prevenção de perda de dados (DLP) rigorosos e uma política de proteção separada para dispositivos geridos pela MDM em que os controlos de DLP podem ser um pouco mais flexíveis. 
 
 Para criar estas políticas, navegue até **Aplicações móveis** > **Políticas de proteção de aplicações** na consola do Intune e clique em **Adicionar uma política**. Também pode editar uma política de proteção de aplicações existente. Se quiser aplicar a política de proteção de aplicações a dispositivos geridos e não geridos, confirme que a opção **Direcionar para todos os tipos de aplicações** está definida como **Sim**, o valor predefinido. Se quiser atribuir especificamente com base no estado de gestão, defina a opção **Direcionar para todos os tipos de aplicações** para **Não**. 
+
+Para que as aplicações iOS sejam consideradas com o estado "Gerido", a definição da política de configuração **IntuneMAMUPN** tem de ser implementada em cada aplicação. Para obter mais informações, veja [Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
 > Para obter informações de suporte específicas do iOS sobre as políticas de proteção de aplicações com base no estado de gestão dos dispositivos, veja [Políticas de proteção de MAM direcionadas com base no estado de gestão](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).

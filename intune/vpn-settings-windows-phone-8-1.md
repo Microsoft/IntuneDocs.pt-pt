@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291449"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com o Windows Phone 8.1
 
@@ -56,7 +57,7 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 - **Função** (apenas no Pulse Secure) – Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas.
 - **Realm** (apenas no Pulse Secure) – Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure.
 
-- **Lista de pesquisa de sufixos DNS** - **Adicionar** um ou mais sufixos DNS. Cada sufixo DNS especificado é procurado ao ligar-se a um site com um nome abreviado. Por exemplo, especifique os sufixos DNS **domain1.contoso.com** e **domain2.contoso.com**, visite o URL **http://mywebsite** e os URLs **http://mywebsite.domain1.contoso.com** e **http://mywebsite.domain2.contoso.com serão procurados**.
+- **Lista de pesquisa de sufixos DNS** - **Adicionar** um ou mais sufixos DNS. Cada sufixo DNS especificado é procurado ao ligar-se a um site com um nome abreviado. Por exemplo, especifique os sufixos DNS **domain1.contoso.com** e **domain2.contoso.com**, visite o URL `http://mywebsite` e os URLs `http://mywebsite.domain1.contoso.com` e `http://mywebsite.domain2.contoso.com` são pesquisados.
 
 - **XML personalizado** – Especifique todos os comandos XML personalizados que configuram a ligação VPN.
 
