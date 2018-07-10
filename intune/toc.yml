@@ -180,7 +180,13 @@
           items:
             - name: Configurar inscrição do Android
               href: android-enroll.md
-            - name: Gerir dispositivos Android for Work
+            - name: Ligar o Intune ao Android enterprise
+              href: connect-intune-android-enterprise.md
+            - name: Configurar a inscrição do perfil de trabalho do Android
+              href: android-work-profile-enroll.md
+            - name: Configurar a inscrição do quiosque do Android
+              href: android-kiosk-enroll.md
+            - name: Gerir dispositivos de perfil de trabalho do Android
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
               href: android-samsung-knox-mobile-enroll.md
@@ -255,7 +261,7 @@
                   items:
                     - name: Adicionar manualmente a aplicação Portal da Empresa
                       href: store-apps-company-portal-app.md
-                - name: Aplicações Android for Work
+                - name: Aplicações do perfil de trabalho do Android
                   href: apps-add-android-for-work.md
                 - name: "Aplicações do Office\_365 para Windows\_10"
                   href: apps-add-office365.md
@@ -326,6 +332,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: Definições do iOS
                       href: app-protection-policy-settings-ios.md
+                    - name: Ações de Acesso
+                      href: app-protection-policies-access-actions.md
                     - name: Exceções de transferência de dados
                       href: app-protection-policies-exception.md
                 - name: Validar as políticas de proteção de aplicações
@@ -379,7 +387,7 @@
               href: device-restrictions-windows-10-teams.md
             - name: Windows Holographic for Business
               href: device-restrictions-windows-holographic.md
-            - name: Android for Work
+            - name: Perfil de trabalho do Android
               href: device-restrictions-android-for-work.md
         - name: Configurar a proteção de ponto final
           href: endpoint-protection-configure.md
@@ -390,6 +398,10 @@
               href: endpoint-protection-windows-10.md
         - name: Configurar as definições de quiosque
           href: kiosk-settings.md
+        - name: Configurar as definições de quiosque do Android
+          href: android-kiosk-settings.md
+        - name: Definições de quiosque do Android enterprise
+          href: android-enterprise-settings.md
         - name: Configurar as definições de e-mail
           href: email-settings-configure.md
           items:
@@ -465,7 +477,7 @@
       items:
         - name: Criar a política para Android
           href: compliance-policy-create-android.md
-        - name: Criar a política para Android for Work
+        - name: Criar política de perfil de trabalho do Android
           href: compliance-policy-create-android-for-work.md
         - name: Criar uma política para ativar o Google Play Protect
           href: compliance-policy-create-google-play-protect.md
@@ -691,7 +703,7 @@
               href: custom-settings-windows-10.md
             - name: Windows Holographic for Business
               href: custom-settings-windows-holographic.md
-            - name: Android for Work
+            - name: Perfil de trabalho do Android
               href: custom-settings-android-for-work.md
 - name: Orientação para programadores
   items:

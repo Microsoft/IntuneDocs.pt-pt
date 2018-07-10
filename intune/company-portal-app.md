@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744589"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844985"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -56,7 +56,7 @@ Introduza as informações de suporte da sua empresa para fornecer ao seu colabo
 |**Número de telefone** | 20 | Este número de contacto é apresentado na página **Contactar TI** para permitir que os colaboradores o contactem para obter suporte. |
 |**Endereço de e-mail**| 40 | Este endereço de contacto é apresentado na página **Contactar TI**. Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
 |**Nome do site**| 40 | Este é o nome amigável apresentado no URL do site de suporte. Se especificar um URL do site de suporte, mas não especificar um nome amigável, a ligação Aceder ao site de TI será apresentada na página **Contactar TI** no Portal da Empresa. |
-|**URL do Site**| 150 | Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato **https://www.contoso.com**. Se não especificar um URL, não será apresentado nada no site de suporte da página **Contactar TI** no Portal da Empresa. |
+|**URL do Site**| 150 | Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato `https://www.contoso.com`. Se não especificar um URL, não será apresentado nada no site de suporte da página **Contactar TI** no Portal da Empresa. |
 | **Informações adicionais**| 120 | Apresentado na página **Contactar TI**. |
 
 
