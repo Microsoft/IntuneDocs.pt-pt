@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8f5e397c314088c7b26edba486f9cbaf9718096
-ms.sourcegitcommit: 1eddded65ae9e442dd3bebd16b9428af76a67f34
+ms.openlocfilehash: 421dede4b0da71fe04649e21bfcf7c15d2270507
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250949"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869360"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -34,14 +34,12 @@ Os Enlaces Xamarin do SDK da Aplicação Microsoft Intune permitem-lhe incorpora
 ## <a name="whats-supported"></a>O que é suportado?
 
 ### <a name="developer-machines"></a>Máquinas do programador
-* Windows
+* Windows (versão Visual Studio 15.7+)
 * macOS
-
 
 ### <a name="mobile-app-platforms"></a>Plataformas de aplicações móveis
 * Android
 * iOS
-
 
 ### <a name="intune-mobile-application-management-scenarios"></a>Cenários de Gestão de Aplicações Móveis do Intune
 
@@ -53,7 +51,21 @@ As aplicações Xamarin criadas com os Enlaces Xamarin do SDK da Aplicação Int
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Reveja os [termos de licenciamento](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Imprima e guarde uma cópia dos termos de licenciamento nos seus registos. Ao transferir e utilizar os Enlaces Xamarin do SDK da Aplicação Intune, aceita esses termos de licenciamento. Caso não aceite os termos, não utilize o software.
+* **[Apenas Android]** A mais recente aplicação do Portal da Empresa do Microsoft Intune tem de ser instalada no dispositivo.
+
+## <a name="get-started"></a>Introdução
+
+1. Leia os [termos de licenciamento](https://components.xamarin.com/license/microsoft.intune.mam) do Componente Xamarin da MAM do Microsoft Intune.
+
+2.  Transfira a pasta do Componente Xamarin do SDK da Aplicação Intune a partir do [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ou do [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) e extraia-a. Ambos os ficheiros transferidos nos passos 1 e 3 devem estar no mesmo nível de diretório.
+
+3.  Na linha de comandos como administrador, execute o ficheiro `Xamarin.Component.exe install <.xam> file`.
+
+4.  No Visual Studio, clique com o botão direito do rato em **componentes** no projeto Xamarin criado anteriormente.
+
+5.  Selecione **Editar Componentes** e adicione o componente do SDK da Aplicação Intune transferido localmente para o seu computador.
+
+Reveja os [termos de licenciamento](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Imprimir e guardar uma cópia dos termos de licenciamento nos seus registos. Ao transferir e utilizar os Enlaces Xamarin do SDK da Aplicação Intune, aceita esses termos de licenciamento. Caso não aceite os termos, não deverá utilizar o software.
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Ativar as políticas de proteção de aplicações do Intune na sua aplicação móvel iOS
 1. Adicione o [pacote NuGet Microsoft.Intune.MAM.Xamarin.iOS](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) ao seu projeto Xamarin.iOS.
@@ -79,6 +91,8 @@ Reveja os [termos de licenciamento](https://github.com/msintuneappsdk/intune-app
 > Não há nenhum remapeamento para iOS. A integração numa aplicação Xamarin.Forms deve ser igual à de um projeto normal Xamarin.iOS. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Ativar as políticas de proteção de aplicações do Intune na sua aplicação móvel para Android
+
+Para aplicações para Android baseadas no Xamarin que não utilizam uma estrutura de IU, tem de consultar e seguir o [Guia para Programadores do SDK da Aplicação Intune para Android](app-sdk-android.md). Para a sua aplicação para Android baseada no Xamarin, tem de substituir a classe, os métodos e as atividades na respetiva MAM equivalente com base na [tabela](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) incluída no guia. Se a aplicação não definir uma classe `android.app.Application`, tem de criar uma e garantir que é herdada de `MAMApplication`.
 
 ### <a name="xamarinandroid-integration"></a>Integração do projeto Xamarin.Android
 
@@ -110,4 +124,37 @@ Reveja os [termos de licenciamento](https://github.com/msintuneappsdk/intune-app
 
 ## <a name="support"></a>Support
 
-Se a sua organização for um cliente do Intune existente, trabalhe com o seu representante de suporte da Microsoft para abrir um pedido de suporte e criar um problema [na página de problemas do Github](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) e iremos ajudar assim que possível. 
+Concluiu os passos básicos de incorporação do componente na aplicação. Agora, pode seguir os passos incluídos no exemplo de aplicação Xamarin para Android. Fornecemos dois exemplos, um para Xamarin.Forms e outro para Android.
+
+## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Exigir políticas de proteção de aplicações do Intune de forma a utilizar a sua aplicação LOB para Android baseada no Xamarin (opcional) 
+
+Seguem-se orientações para garantir que as aplicações LOB para Android baseadas no Xamarin só podem ser utilizadas por utilizadores protegidos pelo Intune nos respetivos dispositivos. 
+
+### <a name="general-requirements"></a>Requisitos Gerais
+* A equipa do SDK do Intune irá exigir o ID da Aplicação da sua aplicação. Essa informação encontra-se no [Portal do Azure](https://portal.azure.com/), em **Todas as Aplicações**, na coluna do **ID da Aplicação**. Uma excelente forma de contactar a equipa do SDK do Intune é através do envio de um e-mail para msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Trabalhar com o SDK do Intune
+Estas instruções são específicas para todas as aplicações Android e Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
+
+1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> O termo "ID de cliente" é o mesmo que o termo "ID de aplicação" do Portal do Azure associado à sua aplicação. 
+* Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.
+
+2. Ative a inscrição predefinida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Esta tem de ser a única integração da MAM-WE na aplicação. Poderão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
+
+3. Ative a política de MAM exigida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Esta ação força as aplicações a transferir o Portal da Empresa para o dispositivo e a concluir o fluxo da inscrição predefinida antes da utilização.
+
+### <a name="working-with-adal"></a>Trabalhar com a ADAL
+Estas instruções são um requisito para as aplicações .NET/Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
+
+1. Siga todos os passos definidos na documentação ADAL em [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android) (Autenticação Mediada para Android).
+> [!NOTE] 
+> A próxima versão que a ADAL .NET lançará (3.17.4) deverá ter a correção necessária para que isto funcione.
+
+Se a sua organização for um cliente do Intune existente, trabalhe com o seu representante de suporte da Microsoft para abrir um pedido de suporte e criar um problema [na página de problemas do GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) e iremos ajudar assim que possível. 
+

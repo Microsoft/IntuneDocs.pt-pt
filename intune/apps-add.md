@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263409"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905993"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune
 
@@ -51,12 +51,12 @@ A tabela seguinte apresenta uma lista dos tipos de aplicações específicos e c
 | Aplicações da loja iOS  | Aplicação da loja  | Selecione **iOS** como o **tipo de aplicação**, procure a aplicação e selecione a aplicação no Intune. |
 | Aplicações da loja Windows Phone 8.1  | Aplicação da loja  | Selecione **Windows Phone 8.1** como o **tipo de aplicação** e introduza o URL da Microsoft Store para a aplicação. |
 | Aplicações da Microsoft Store  | Aplicação da loja  | Selecione **Windows** como o **tipo de aplicação** e introduza o URL da Microsoft Store para a aplicação. |
-| Aplicações Android for Work | Aplicação da loja  | Localize e aprove a aplicação Android for Work da Google Play for Work Store.  |
+| Aplicações de trabalho do Android | Aplicação da loja  | Localize e aprove a aplicação com perfil de trabalho do Android a partir da Google Play Store gerida.  |
 | Aplicações do Office 365 para Windows 10  | Aplicação da loja (Office 365) | Selecione **Windows 10** em **Office 365 Suite** como o **tipo de aplicação** e, em seguida, selecione a aplicação do Office 365 que pretende instalar.  |
 | Aplicações do Office 365 para macOS | Aplicação da loja (Office 365) | Selecione **macOS** em **Office 365 Suite** como o **tipo de aplicação** e, em seguida, selecione o conjunto de aplicações do Office 365. |
 | Aplicações de linha de negócio (LOB) Android | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Android com a extensão **.apk**.  |
 | Aplicações LOB iOS | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação iOS com a extensão **.ipa**.  |
-| Aplicações LOB Windows Phone | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Windows Phone com a extensão **.xap**.  |
+| Aplicações LOB para Windows Phone | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Windows Phone com a extensão **.xap**.  |
 | Aplicação LOB do Windows | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o tipo de aplicação, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Windows com a extensão **.msi**, **.appx** ou **.appxbundle**. |
 | Aplicação iOS incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
 | Aplicação Android incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
@@ -109,7 +109,7 @@ Para obter mais informações sobre os tipos de aplicações que a sua organiza�
 O Intune permite-lhe modificar a funcionalidade das aplicações que implementa para ajudar a ajustá-las às políticas de conformidade e de segurança da sua empresa. Este controlo permite-lhe determinar como os dados da sua empresa são protegidos. As aplicações geridas pelo Intune têm um conjunto avançado de políticas de proteção de aplicações móveis, tal como:
 
 - Restringir funções Copiar e colar e Guardar como.
-- Configurar ligações Web para serem abertas na aplicação Intune Managed Browser.
+- Configurar ligações Web para serem abertas nas aplicação Intune Managed Browser.
 - Ativar o acesso condicional ao nível da aplicação e a utilização de várias identidades.
 
 As aplicações geridas pelo Intune também permitem a proteção de aplicações sem exigir a inscrição, dando-lhe a opção de aplicar políticas de prevenção de perda de dados sem gerir o dispositivo do utilizador. Além disso, pode incorporar a gestão de aplicações móveis nas suas aplicações móveis e de linha de negócio com o SDK da Aplicação Intune e a Ferramenta de Encapsulamento de Aplicações. Para obter mais informações sobre estas ferramentas, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
@@ -117,7 +117,7 @@ As aplicações geridas pelo Intune também permitem a proteção de aplicaçõe
 ### <a name="understanding-licensed-apps"></a>Compreender as aplicações licenciadas
 Para além de compreender as aplicações Web, aplicações da loja e aplicações LOB, também deve ter em atenção o destino das aplicações licenciadas e aplicações de programa de compras em volume, tais como: 
 - **Apple Volume Purchasing Program for Business para Empresas (iOS e MacOS)**: a iOS App Store permite-lhe comprar múltiplas licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente. Para obter mais informações, veja [Gerir aplicações iOS compradas em volume](vpp-apps-ios.md).
-- **Android for Work (Android)**: as aplicações em dispositivos Android for Work são atribuídas de forma diferente da atribuição em dispositivos Android padrão. Todas as aplicações que instala para o Android for Work provêm da Google Play for Work Store. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
+- **Perfil de trabalho do Android**: a forma como atribui aplicações em dispositivos com perfil de trabalho do Android é diferente em dispositivos Android padrão. Todas as aplicações que instala em dispositivos com perfil de trabalho do Android são provenientes da Google Play Store gerida. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
 - **Microsoft Store para Empresas (Windows 10)**: a Microsoft Store para Empresas dá-lhe um local para encontrar e comprar aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume no portal do Azure. Para obter mais informações, veja [Gerir aplicações a partir da Microsoft Store para Empresas](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Antes de adicionar aplicações
@@ -179,7 +179,7 @@ Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
 - [Aplicações Web (para todas as plataformas)](web-app.md)
 - [Aplicações da loja Windows Phone 8.1](store-apps-windows-phone-8-1.md)
 - [Aplicações LOB para Windows Phone](lob-apps-windows-phone.md)
-- [Aplicações da loja Microsoft](store-apps-windows.md)
+- [Aplicações da Microsoft Store](store-apps-windows.md)
 - [Aplicação LOB do Windows](lob-apps-windows.md)
 - [Aplicações do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicações do Office 365 para macOS](apps-add-office365-macos.md)

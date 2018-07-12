@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232975"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905364"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -158,9 +158,27 @@ Este relatório permite-lhe ver o número total de dispositivos em cada estado d
 
 Depois de clicar no mosaico Conformidade das definições, clique numa das definições da política de conformidade do dispositivo para poder ver o **estado de conformidade**, o **alias de e-mail do utilizador**, o **modelo do dispositivo** e a **localização** de cada dispositivo que foi visado por essa definição de política de conformidade do dispositivo.
 
+## <a name="view-status-of-device-policies"></a>Ver o estado das políticas de dispositivos
+
+Pode verificar os diferentes estados das suas políticas por plataforma. Por exemplo, imaginemos que tem uma política de conformidade do macOS. Quer ver os dispositivos afetados por esta política e saber se existem conflitos ou falhas.
+
+Esta funcionalidade está incluída no relatório de estado do dispositivo:
+
+1. Selecione **Conformidade do dispositivo** > **Políticas**. É apresentada uma lista de políticas, incluindo a plataforma, se a política estiver atribuída, e mais detalhes.
+2. Selecione uma política > **Descrição Geral**. Nesta vista, a atribuição de política inclui os seguintes estados:
+
+  - Com êxito
+  - Error
+  - Conflito
+  - Pending
+  - Não aplicável
+
+3. Para ver detalhes sobre os dispositivos que utilizam esta política, selecione um dos estados. Por exemplo, selecione **Com êxito**. Na janela seguinte, são indicados detalhes dos dispositivos específicos, incluindo o nome do dispositivo e o estado de implementação.
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Como o Intune resolve conflitos de políticas
 Se forem aplicadas múltiplas políticas do Intune a um dispositivo, podem ocorrer conflitos de políticas. Se as definições de políticas se sobrepuserem, o Intune utiliza as seguintes regras para resolver eventuais conflitos:
 
 - Se as definições em conflito pertencerem a uma política de configuração do Intune e a uma política de conformidade, as definições da política de conformidade têm prioridade sobre as definições da política de configuração. Isto acontece mesmo que as definições na política de conformidade sejam mais seguras.
 
-- Se tiver implementado múltiplas políticas de conformidade, o Intune utilizará a mais segura destas políticas.
+- Se tiver implementado múltiplas políticas de conformidade, o Intune utiliza a mais segura destas políticas.
+

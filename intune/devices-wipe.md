@@ -1,6 +1,6 @@
 ---
 title: Remover dados empresariais em dispositivos com o Microsoft Intune – Azure | Microsoft Docs
-description: Remova dados empresariais num dispositivo ou faça uma reposição de dados de fábrica num dispositivo Android, Android for Work, iOS, macOS ou Windows com o Microsoft Intune. Além disso, elimine um dispositivo do Azure Active Directory.
+description: Remova dados empresariais num dispositivo ou faça uma reposição de dados de fábrica num dispositivo Android, com perfil de trabalho do Android, iOS, macOS ou Windows com o Microsoft Intune. Além disso, elimine um dispositivo do Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091732"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906061"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Remover dispositivos ao utilizar a reposição de fábrica, remover dados da empresa ou anular a inscrição do dispositivo manualmente
 
@@ -31,7 +31,7 @@ Ao realizar as ações **Remover dados da empresa** ou **Reposição de fábrica
 
 ## <a name="factory-reset"></a>Reposição de fábrica
 
-A ação **Reposição de dados de fábrica** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos ou apagados, consoante opte ou não por selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**.
+A ação **Reposição de dados de fábrica** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos se selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**. Caso contrário, a unidade será apagada em segurança.
 
 |Ação de reposição fábrica|**Reter estado de inscrição e conta de utilizador**|Removido da gestão do Intune|Descrição|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
 |Contactos |Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.|Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Perfil de trabalho do Android
 
-Uma remoção dos dados da empresa num dispositivo Android for Work remove todos os dados, aplicações e definições no perfil de trabalho nesse dispositivo. A gestão do dispositivo através do Intune é desativada. A reposição de fábrica não é suportada para Android for Work.
+Uma remoção dos dados da empresa num dispositivo com perfil de trabalho do Android remove todos os dados, aplicações e definições no perfil de trabalho nesse dispositivo. A gestão do dispositivo através do Intune é desativada. A reposição de dados de fábrica não é suportada para perfis de trabalho do Android.
+
+### <a name="android-enterprise-kiosk-devices"></a>Dispositivos de quiosque Android Enterprise
+
+Só pode repor os dados de fábrica de dispositivos de quiosque Android. Não pode remover dados da empresa de dispositivos de quiosque Android.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Se pretender remover dispositivos do portal do Intune, poderá eliminá-los no p
 
 1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha os dispositivos que quer eliminar > **Eliminar**.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Eliminar automaticamente dispositivos com regras de limpeza
+Pode configurar o Intune de forma a eliminar automaticamente dispositivos que parecem estar inativos, obsoletos ou sem resposta. Estas regras de limpeza monitorizam o inventário do seu dispositivo de forma contínua para que os registos do mesmo se mantenham atualizados. Os dispositivos eliminados desta forma são removidos da gestão do Intune.
+1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
+2. Selecione **Dispositivos** > **Regras de limpeza do dispositivo** > **Sim**.
+3. Na caixa **Eliminar dispositivos que não tenham dado entrada por este número de dias**, introduza um número entre 90 e 270.
+4. Escolha **Guardar**.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminar dispositivos do portal do Azure Active Directory
 

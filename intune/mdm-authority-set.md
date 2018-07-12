@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232923"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906044"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 
@@ -41,9 +41,11 @@ As configurações possíveis são:
 
 ## <a name="set-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
 
+Se ainda não configurou a autoridade de MDM, siga os passos abaixo. Para mudar de uma autoridade de MDM para outra, veja a secção [Alterar a autoridade de MDM](#prepare-to-change-the-mdm-authority-to-configuration-manager) abaixo.
+
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. Selecione a faixa cor de laranja para abrir a definição **Autoridade de Gestão de Dispositivos Móveis**.
+3. Selecione a faixa cor de laranja para abrir a definição **Autoridade de Gestão de Dispositivos Móveis**. A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM.
 4. Em **Autoridade de Gestão de Dispositivos Móveis**, selecione a sua autoridade de MDM a partir das seguintes opções:
    - **Autoridade de MDM do Intune**
    - **Autoridade MDM do Configuration Manager**
@@ -54,10 +56,10 @@ As configurações possíveis são:
    Uma mensagem indica que definiu com êxito a autoridade de MDM como o Intune.
 
 ### <a name="workflow-of-intune-administration-ui"></a>Fluxo de trabalho da IU de Administração do Intune
-Quando a gestão de dispositivos Android ou iOS está ativada, o Intune envia informações sobre o dispositivo e o utilizador para se integrar com estes serviços de terceiros e gerir os respetivos dispositivos.
+Quando a gestão de dispositivos Android ou Apple está ativada, o Intune envia informações sobre o dispositivo e o utilizador para se integrar com estes serviços de terceiros e gerir os respetivos dispositivos.
 
 Os cenários que acrescentam uma janela de consentimento para partilhar dados são incluídos quando:
-- Ativar o Android for Work.
+- Ativa os perfis de trabalho do Android.
 - Ativar e carregar certificados Push de MDM da Apple.
 - Ativar qualquer um dos serviços da Apple, tal como o Programa de Registo de Aparelho, o School Manager e o Programa de Compras em Volume.
 
@@ -123,7 +125,7 @@ A autoridade de MDM não pode ser novamente alterada para Desconhecida. A autori
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>O que esperar depois de alterar a autoridade de MDM
 
-- Quando o serviço do Intune deteta a alteração da autoridade de MDM de um inquilino, envia uma mensagem de notificação para todos os dispositivos inscritos se registarem e sincronizarem com o serviço (isto não está incluído no registo agendado com regularidade). Portanto, depois de a autoridade de MDM do inquilino ser alterada do Intune autónomo para híbrido, todos os dispositivos ligados e online serão ligados ao serviço, receberão a nova autoridade de MDM e serão geridos de forma híbrida. A gestão e proteção destes dispositivos é contínua.
+- Quando o serviço do Intune deteta a alteração da autoridade de MDM de um inquilino, envia uma mensagem de notificação para todos os dispositivos inscritos se registarem e sincronizarem com o serviço (isto não está incluído no registo agendado com regularidade). Portanto, depois de a autoridade de MDM do inquilino ser alterada do Intune autónomo para híbrido, todos os dispositivos ligados e online serão ligados ao serviço, receberão a nova autoridade de MDM e serão geridos de forma híbrida. A gestão e a proteção destes dispositivos são contínuas.
 - Mesmo nos dispositivos ligados e online durante (ou pouco depois) a alteração da autoridade de MDM, irá ocorrer um atraso de até oito horas (consoante a hora do próximo registo regular agendado) até que os dispositivos sejam registados com o serviço da nova autoridade de MDM.    
 
   > [!IMPORTANT]    

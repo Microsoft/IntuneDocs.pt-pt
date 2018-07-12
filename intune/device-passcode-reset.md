@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964730"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905160"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
@@ -30,6 +30,7 @@ Para criar um novo código de acesso para um dispositivo, utilize a ação **Rem
 
 - Dispositivos Android inscritos com um Perfil de Trabalho com a versão 8.0 e posterior
 - Dispositivos Android com a versão 6.0 ou anterior
+- Dispositivos de quiosque Android Enterprise
 - iOS 
      
 ## <a name="unsupported-platforms"></a>Plataformas não suportadas
@@ -46,9 +47,9 @@ Para criar um novo código de acesso para um dispositivo, utilize a ação **Rem
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.
 
-## <a name="resetting-android-for-work-passcodes"></a>Repor códigos de acesso do Android for Work
+## <a name="resetting-android-work-profile-passcodes"></a>Repor códigos de acesso do perfil de trabalho do Android
 
-Os dispositivos Android for Work suportados recebem uma nova palavra-passe de desbloqueio do perfil gerido ou um desafio de perfil gerido para o utilizador final. Para dispositivos Android 8.0 ou posterior com Perfis de Trabalho, os utilizadores finais receberão notificações para ativar o respetivo token de reposição de código de acesso imediatamente após a inscrição estar concluída. A notificação é apresentada se for necessário definir uma palavra-passe de Perfil de Trabalho. Depois de introduzir o respetivo código de acesso, a notificação é dispensada.
+Os dispositivos com perfil de trabalho do Android suportados recebem uma nova palavra-passe de desbloqueio do perfil gerido ou um desafio de perfil gerido para o utilizador final. Para os dispositivos com perfil de trabalho do Android 8.0, os utilizadores finais são notificados para ativar o respetivo código de acesso após a conclusão da inscrição. A notificação é apresentada se for necessário definir uma palavra-passe de Perfil de Trabalho. Depois de introduzir o respetivo código de acesso, a notificação é dispensada.
 
 ## <a name="resetting-ios-passcodes"></a>Repor códigos de acesso em iOS
 
