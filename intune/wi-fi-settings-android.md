@@ -1,42 +1,47 @@
 ---
 title: Configurar as definições de Wi-Fi do Microsoft Intune para dispositivos Android
 titleSuffix: ''
-description: Saiba como configurar no Intune as definições da ligação Wi-Fi em dispositivos Android e Android for Work.
+description: Saiba quais são as definições de configuração de Wi-Fi do Intune nos dispositivos com Android.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831066"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905670"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configurar definições de Wi-Fi no Microsoft Intune para dispositivos Android e Android for Work  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Configurar as definições de Wi-Fi no Microsoft Intune para os dispositivos de quiosque Android, dispositivos Android e dispositivos com perfil de trabalho do Android
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artigo mostra-lhe as definições de Wi-Fi que pode configurar no Microsoft Intune para os dispositivos Android e Android for Work.
+Este artigo mostra-lhe as definições de Wi-Fi que pode configurar no Microsoft Intune para os dispositivos Android e dispositivos com perfil de trabalho do Android.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Definições de Wi-Fi para perfis básicos e empresariais
 
-As seguintes definições de Wi-Fi estão disponíveis para dispositivos Android e Android para Work:
+As seguintes definições de Wi-Fi estão disponíveis para dispositivos Android e dispositivos com perfil de trabalho do Android:
 
 - **Nome da rede** – Introduza um nome para esta ligação Wi-Fi. Este é o nome que os utilizadores veem quando navegam na lista de ligações disponíveis nos respetivos dispositivos.
 - **SSID** – Sigla de Service Set Identifier (identificador do conjunto de serviço). Este é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores apenas veem o nome da rede configurada por si quando selecionam a ligação.
 - **Ligar automaticamente** – Faz com que o dispositivo se ligue sempre que estiver ao alcance desta rede.
 - **Rede oculta** – Impede que esta rede seja apresentada na lista de redes disponíveis no dispositivo.
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>Definições de Wi-Fi disponíveis para perfis de quiosque empresariais
+- **Tipo de Wi-Fi**: estas definições de tipo de Wi-Fi só estão disponíveis ao selecionar **Tipo de perfil** > **Proprietário do Dispositivo Apenas** > **Wi-Fi**.
+    - **Abrir (sem autenticação)**.
+    - **Chave WEP Pré-partilhada**: tem de fornecer a palavra-passe na caixa **Chave pré-partilhada**.
+    - **Chave WPA Pré-partilhada**: tem de fornecer a palavra-passe na caixa **Chave pré-partilhada**.
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Definições de Wi-Fi apenas para perfis empresariais
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Definições de Wi-Fi apenas para perfis de trabalho do Android e Android legado
 
 - **Tipo de EAP** – Selecione o tipo Protocolo EAP (Extensible authentication protocol) que serve para autenticar as ligações sem fios protegidas entre:
     - **EAP-TLS**

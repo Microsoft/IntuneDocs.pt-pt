@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033379"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434271"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Browsers e sistemas operativos suportados
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033379"
 
 Antes de configurar o Microsoft Intune, reveja os sistemas operativos e browsers suportados.
 
-Para obter ajuda na instalação do Intune no seu dispositivo, veja [Utilizar dispositivos geridos para trabalhar](/intune-user-help/company-portal-frequently-asked-questions). Também deverá familiarizar-se com a [Utilização de largura de banda de rede do Intune](network-bandwidth-use.md) ([portal clássico](/intune-classic/get-started/network-bandwidth-use)).
+Para obter ajuda com a instalação do Intune no seu dispositivo, veja [Utilizar dispositivos geridos para trabalhar](/intune-user-help/company-portal-frequently-asked-questions) e [Utilização de largura de banda de rede do Intune](network-bandwidth-use.md) ([portal clássico](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operativos suportados pelo Intune
 
@@ -38,12 +38,12 @@ Pode gerir dispositivos com os seguintes sistemas operativos:
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung Knox Standard suportados
 
-A aplicação Portal da Empresa tentará apenas a ativação do Samsung Knox durante a inscrição MDM se o dispositivo for apresentado na [lista de dispositivos Knox suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Este procedimento ajuda a evitar erros de ativação do Knox que impedem a inscrição MDM. Os dispositivos que não suportam a ativação do Samsung Knox são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o Knox, enquanto outros não. Verifique a compatibilidade com o KNOX junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
+Para evitar erros de ativação do Knox que impedem a inscrição MDM, a aplicação Portal da Empresa só tentará ativar o Samsung Knox durante a inscrição MDM se o dispositivo estiver na [lista de dispositivos Knox suportados](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Os dispositivos que não suportam a ativação do Samsung Knox são inscritos como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que suportem o Knox, enquanto outros não. Verifique a compatibilidade com o Knox junto do revendedor do seu dispositivo antes da compra e implementação de dispositivos Samsung.
 
 > [!NOTE]
 > A inscrição de dispositivos Samsung Knox poderá exigir a [ativação do acesso aos servidores Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-A seguinte lista de modelos de dispositivos Samsung não suporta o Knox e são inscritos como dispositivos Android nativos pela aplicação Portal da Empresa para Android:
+Segue-se uma lista de modelos de dispositivos Samsung que não suportam o Knox. São inscritos como dispositivos Android nativos pela aplicação Portal da Empresa para Android:
 
 | **Nome do Dispositivo** | **Números de Modelo do Dispositivo** |
 | --- | --- |
@@ -103,7 +103,7 @@ Os seguintes browsers são suportados para estes portais:
 - Microsoft Internet Explorer 11
 - Safari (versão mais recente, apenas Mac)
 - Chrome (versão mais recente)
-- Mozilla Firefox com o Silverlight ativado [Saiba mais (versões anteriores à versão 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (versão mais recente)
 
 
 

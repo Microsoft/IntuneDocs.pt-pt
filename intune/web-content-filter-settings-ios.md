@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456355"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921353"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Definições de filtros de conteúdo Web para dispositivos iOS
 
@@ -58,7 +58,7 @@ Se não especificar nenhum URL, os utilizadores finais não poderão aceder a si
 ## <a name="specific-websites-only"></a>Apenas sites específicos
 
 1. No painel **Filtro de Conteúdo da Web**, configure as seguintes definições para todos os sites que pretende permitir:
-    - **URL** – introduza o URL do site que pretende permitir, por exemplo, **http://www.contoso.com**.
+    - **URL** – introduza o URL do site que pretende permitir, por exemplo, `https://www.contoso.com`.
     - **Caminho do Marcador** –introduza o caminho onde pretende armazenar o marcador, por exemplo **/Contoso/Business Apps**. Se não incluir um caminho, o marcador será adicionado à pasta de marcadores predefinida no dispositivo.
     - **Título** – introduza um título descritivo para o marcador.
 2. Clique em **Adicionar** depois de introduzir as informações de cada site.

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831950"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905126"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Configurar definições de VPN no Microsoft Intune para dispositivos Android 
 
@@ -30,7 +30,7 @@ Este artigo mostra as definições do Intune que pode utilizar para configurar l
 Pode configurar as definições de VPN para as seguintes plataformas:
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Dispositivos com perfil de trabalho do Android](#android-for-work-vpn-settings)
 
 Consoante as definições que escolher, nem todos os seguintes valores serão configuráveis.
 
@@ -51,7 +51,7 @@ Consoante as definições que escolher, nem todos os seguintes valores serão co
 - **Identificação Digital** (apenas no Check Point Capsule VPN) – especifique uma cadeia de carateres (por exemplo, "Código de Identificação Digital da Contoso") que servirá para verificar a fidedignidade do servidor VPN. A identificação digital pode ser enviada para o cliente para que confie em qualquer servidor que apresente essa mesma identificação digital ao ligar. Se o dispositivo ainda não incluir a identificação digital, pedirá ao utilizador para confiar no servidor VPN ao qual se está a ligar e mostra a identificação digital (o utilizador verifica-a manualmente e escolhe Confiar para ligar).
 - **Introduzir pares de chave e valor para os atributos de VPN do Citrix** (apenas no Citrix) – Introduza pares de chave e valor, disponibilizados pelo Citrix, para configurar as propriedades da ligação VPN.
 
-## <a name="android-for-work-vpn-settings"></a>Definições VPN do Android for Work
+## <a name="android-work-profile-device-vpn-settings"></a>Definições de VPN dos dispositivos com perfil de trabalho do Android
 
 **Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
 - **Endereço IP ou FQDN** – forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.

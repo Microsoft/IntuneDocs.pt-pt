@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223803"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869343"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Introdução à adição de aplicações no Microsoft Intune
 
@@ -31,6 +31,9 @@ O Intune permite-lhe adicionar e atribuir estes tipos de aplicação aos disposi
 - **Aplicações desenvolvidas internamente (linha de negócio)** – opção para a qual carrega um ficheiro que é transferido para os dispositivos dos seus utilizadores.
 - **Aplicações incorporadas** – opção na qual atribui aplicações geridas organizadas, tais como aplicações do Office 365, a dispositivos iOS e Android.
 - **Aplicações na Web** – opção em que o Intune cria um atalho para a aplicação Web no ecrã principal do dispositivo.
+
+> [!NOTE]
+> As novas políticas aplicadas a um grupo de dispositivos dinâmico poderão demorar até oito horas a serem propagadas a todos os dispositivos no grupo.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Como atribuo uma aplicação de loja pública?
 

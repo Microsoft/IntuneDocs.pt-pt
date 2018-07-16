@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216331"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905228"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos
 
@@ -35,7 +35,7 @@ Têm de existir utilizadores no [portal do Azure](https://portal.azure.com) para
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemplo de um cenário do gestor de inscrição de dispositivos
 
-Um restaurante quer fornecer 50 tablets de ponto de venda aos seus empregados de mesa e monitores de apresentação de pedidos para os empregados da cozinha. Os funcionários não precisam nunca de aceder aos dados da empresa nem de iniciar sessão como utilizadores. O administrador do Intune cria uma conta de gestor de inscrição de dispositivos e adiciona um supervisor de restaurante à conta DEM. O supervisor tem agora capacidades DEM. Agora, o supervisor pode inscrever os 50 tablets com as credenciais de DEM.
+Um restaurante quer fornecer 50 tablets de ponto de venda aos seus empregados de mesa e monitores de apresentação de pedidos para os empregados da cozinha. Os funcionários não precisam nunca de aceder aos dados da empresa nem de iniciar sessão como utilizadores. O administrador do Intune cria uma nova conta de gestor de inscrição de dispositivos para o supervisor de restaurante.  Esta conta está separada da conta principal do supervisor e só é utilizada para inscrever dispositivos partilhados com o Intune. Agora, o supervisor pode inscrever os 50 tablets com as credenciais de DEM.
 
 Apenas os utilizadores do [portal do Azure](https://portal.azure.com) podem ser gestores de inscrição de dispositivos. O utilizador do gestor de inscrição de dispositivos não pode ser um administrador do Intune.
 
@@ -54,7 +54,7 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
   - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
   - Os utilizadores não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
   - (Apenas para iOS) Se utilizar o DEM para inscrever dispositivos iOS, não poderá utilizar o Apple Configurator, o Programa de Inscrição de Dispositivos Apple (DEP) ou o Gestor de Escola da Apple (ASM) para inscrever dispositivos.
-  - (Apenas Android) Existe um limite para o número de dispositivos Android for Work que pode inscrever com uma única conta DEM. Pode inscrever um máximo de 10 dispositivos de perfil de trabalho Android por conta DEM. Esta limitação não se aplica à inscrição Android legada.
+  - (Apenas Android) Existe um limite para o número de dispositivos com perfil de trabalho do Android que pode inscrever com uma única conta DEM. Pode inscrever um máximo de 10 dispositivos de perfil de trabalho do Android por conta DEM. Esta limitação não se aplica à inscrição Android legada.
   - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo.
   - Cada dispositivo requer uma licença de dispositivo. Saiba mais sobre [licenças de utilizador e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
