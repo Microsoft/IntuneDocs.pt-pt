@@ -1,6 +1,6 @@
 ---
-title: Criar uma política de conformidade do Android for Work no Microsoft Intune – Azure | Microsoft Docs
-description: Crie ou configure uma política de conformidade de dispositivos do Microsoft Intune para dispositivos Android for Work. Opte por permitir dispositivos com jailbreak, defina o nível de ameaça aceitável, verifique o Google Play, introduza a versão do sistema operativo mínima e máxima, escolha os seus requisitos de palavra-passe e permita aplicações de sideload.
+title: Criar uma política de conformidade de perfil de trabalho do Android no Microsoft Intune – Azure | Microsoft Docs
+description: Crie ou configure uma política de conformidade de dispositivos do Microsoft Intune para dispositivos com perfil de trabalho do Android. Opte por permitir dispositivos com jailbreak, defina o nível de ameaça aceitável, verifique o Google Play, introduza a versão do sistema operativo mínima e máxima, escolha os seus requisitos de palavra-passe e permita aplicações de sideload.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047990"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905092"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android for Work no Intune
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos com perfil de trabalho do Android no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Uma política de conformidade de dispositivos do Intune para Android for Work especifica as regras e as definições que estes têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso a recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para plataformas diferentes no portal do Azure no Intune. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+Uma política de conformidade de dispositivos do Intune para dispositivos com perfil de trabalho do Android especifica as regras e as definições que estes têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso a recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para plataformas diferentes no portal do Azure no Intune. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
 
 A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
 --------------------------
 
-|**definição de política**| **Android for Work** |
+|**definição de política**| **Perfil de trabalho do Android** |
 | --- | --- |
 | **Configuração do PIN ou da palavra-passe** |  Em quarentena |
 | **Encriptação do dispositivo** |  Em quarentena |
@@ -51,7 +51,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 ## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade de dispositivo
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Em **Plataforma**, selecione **Android for Work**. Escolha **Configurar Definições**, aceda às definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando terminar, selecione **OK** e **Criar**.
+5. Em **Plataforma**, selecione **Android Enterprise**. Escolha **Configurar Definições**, aceda às definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando terminar, selecione **OK** e **Criar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 #### <a name="threat-scan-on-apps"></a>Análise de ameaças nas aplicações
 
-Em dispositivos com perfis de trabalho (Android for Work), a definição **Análise de ameaças nas aplicações** pode ser encontrada como uma definição de política de configuração. Os administradores podem ativar a definição para um dispositivo.
+Em dispositivos com perfis de trabalho do Android, a definição **Análise de ameaças nas aplicações** pode ser encontrada como uma definição de política de configuração. Os administradores podem ativar a definição para um dispositivo.
 
-Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Análise de ameaças nas aplicações** para os dispositivos inscritos. Estabeleça um perfil de dispositivo e solicite a definição de segurança do sistema. Para obter mais informações, veja [Definições de restrição de dispositivos Android for Work no Intune](device-restrictions-android-for-work.md).
+Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Análise de ameaças nas aplicações** para os dispositivos inscritos. Estabeleça um perfil de dispositivo e solicite a definição de segurança do sistema. Para obter mais informações, veja [Definições de restrição de dispositivos de trabalho no Intune](device-restrictions-android-for-work.md).
 
 ## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
@@ -93,7 +93,7 @@ Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Aná
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 - **Tipo de palavra-passe necessária**: escolha se uma palavra-passe deve conter apenas carateres numéricos ou uma combinação de números e de outros carateres. Escolha entre:
-  - **Dispositivo Predefinido**
+  - **Predefinição do Dispositivo**
   - **Biométrica de segurança baixa**
   - **Pelo menos numérica**
   - **Complexo numérico**
@@ -106,13 +106,13 @@ Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Aná
 
 ### <a name="encryption"></a>Encriptação
 
-- **Exigir encriptação em dispositivos móveis**: uma vez que os dispositivos Android for Work impõem a encriptação, não necessita de configurar esta definição.
+- **Exigir encriptação em dispositivos móveis**: uma vez que os dispositivos com perfil de trabalho do Android impõem a encriptação, não tem de configurar esta definição.
 
 ### <a name="device-security"></a>Segurança do Dispositivo
 
-- **Bloquear aplicações de origens desconhecidas**: uma vez que os dispositivos Android for Work restringem sempre a instalação de origens desconhecidas, não necessita de configurar esta definição.
+- **Bloquear aplicações de origens desconhecidas**: uma vez que os dispositivos com perfil de trabalho do Android restringem sempre a instalação de origens desconhecidas, não tem de configurar esta definição.
 - **Integridade de tempo de execução de aplicações do portal da empresa**: verifica se a aplicação do Portal da Empresa tem o ambiente do tempo de execução predefinido instalado, se está assinada corretamente, se não se encontra no modo de depuração e se foi instalada a partir de uma origem conhecida.
-- **Bloquear a depuração de USB no dispositivo**: uma vez que a depuração USB já se encontra desativada em dispositivos Android for Work, não tem de configurar esta definição.
+- **Bloquear a depuração de USB no dispositivo**: uma vez que a depuração USB já se encontra desativada em dispositivos com perfil de trabalho do Android, não tem de configurar esta definição.
 - **Nível de correção de segurança mínimo**: selecione o nível de correção de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tenham, pelo menos, este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato `YYYY-MM-DD`.
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores

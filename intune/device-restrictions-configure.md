@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56ddf28bb9e81417b4b91bb18baaba14f07fbdd9
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024622"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905058"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar definições de restrição de dispositivos no Microsoft Intune
 
@@ -56,8 +56,8 @@ Obtenha mais noções básicas sobre perfis de restrição de dispositivos e lei
     - [Definições do Windows 10](device-restrictions-windows-10.md)
     - [Definições do Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Definições do Windows Holographic for Business](device-restrictions-windows-holographic.md)
-    - [Definições do Android for Work](device-restrictions-android-for-work.md)
-8. Quando terminar, regresse à página **Criar perfil** e clique em **Criar**.
+    - [Definições de perfil de trabalho do Android](device-restrictions-android-for-work.md)
+8. Quando tiver terminado, regresse à página **Criar perfil** e clique em **Criar**.
 
 O perfil é criado e apresentado na página da lista de perfis.
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

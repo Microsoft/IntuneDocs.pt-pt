@@ -1,6 +1,6 @@
 ---
-title: Restrições de dispositivos do Android for Work no Microsoft Intune – Azure | Microsoft Docs
-description: Em dispositivos a executar o Android for Work, pode restringir algumas definições no dispositivo, incluindo as ações de copiar e colar, mostrar notificações, permissões de aplicações, partilha de dados, comprimento da palavra-passe, falhas de início de sessão, utilização de impressões digitais para desbloquear, reutilização de palavras-passe e permitir a partilha de contactos profissionais por bluetooth.
+title: Restrições de dispositivos com perfil de trabalho do Android no Microsoft Intune – Azure | Microsoft Docs
+description: Em dispositivos com perfil de trabalho do Android, pode restringir algumas definições no dispositivo, incluindo as ações de copiar e colar, mostrar notificações, permissões de aplicações, partilha de dados, comprimento da palavra-passe, falhas de início de sessão, utilização de impressões digitais para desbloquear, reutilização de palavras-passe e permitir a partilha de contactos profissionais por bluetooth.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,16 +12,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1db0e98318c05c7a1a854ed1af77d9d9654cc38
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046320"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905942"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Definições de restrições de dispositivos profissionais no Intune
 
-Este artigo lista todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o Android for Work.
+Este artigo lista todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos com perfil de trabalho do Android.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ Este artigo lista todas as definições de restrições de dispositivos do Micro
 ### <a name="general-settings"></a>Definições Gerais
 
 - **Copiar e colar entre perfis pessoais e perfis de trabalho**: controla as ações de copiar e colar entre aplicações pessoais e aplicações de trabalho. Selecione **Bloquear** para ativar o bloqueio. Selecione **Não configurado** para desativar o bloqueio.
-- **Partilha de dados entre perfis de trabalho e perfis pessoais**: controla se as aplicações no perfil de trabalho podem partilhar dados com as aplicações no perfil pessoal. Esta definição controla ações de partilha nas aplicações (por exemplo, a opção **Partilha...** na aplicação do browser Chrome) e não se aplica ao comportamento copiar/colar na área de transferência. Ao contrário das [definições de política de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as definições de restrição de dispositivos são geridas no portal do Intune e utilizam a partição do perfil Android for Work para isolar as aplicações geridas. Escolha entre:
+- **Partilha de dados entre perfis de trabalho e perfis pessoais**: controla se as aplicações no perfil de trabalho podem partilhar dados com as aplicações no perfil pessoal. Esta definição controla ações de partilha nas aplicações (por exemplo, a opção **Partilha...** na aplicação do browser Chrome) e não se aplica ao comportamento copiar/colar na área de transferência. Ao contrário das [definições de política de proteção de aplicações](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), as definições de restrição de dispositivos são geridas no portal do Intune e utilizam a partição do perfil de trabalho do Android para isolar as aplicações geridas. Escolha entre:
   - **Restrições de partilha predefinidas**: o comportamento de partilha predefinido do dispositivo, que varia consoante a versão do Android. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. A Google não proporciona uma forma de bloquear a partilha do perfil pessoal para o perfil de trabalho em dispositivos com versões 6.0 e posteriores.
   - **As aplicações no perfil de trabalho podem processar o pedido de partilha do perfil pessoal**: ativa a funcionalidade do Android incorporada que permite a partilha do perfil pessoal para o perfil de trabalho. Quando ativada, um pedido de partilha de uma aplicação no perfil pessoal pode partilhar com aplicações no perfil de trabalho. Esta definição é o comportamento predefinido para dispositivos Android com versões anteriores à 6.0.
   - **Permitir partilha entre limites**: ativa a partilha entre limites do perfil de trabalho em ambas as direções. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Utilize esta definição com cuidado, uma vez que permite que aplicações geridas no perfil de trabalho sejam partilhadas com aplicações no lado não gerido do dispositivo.
@@ -48,9 +48,9 @@ Este artigo lista todas as definições de restrições de dispositivos do Micro
 
    Impede os utilizadores de adicionarem ou removerem contas manualmente no perfil de trabalho.
 
-   Por exemplo, ao implementar a aplicação Gmail num perfil do Android For Work, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho.
+   Por exemplo, ao implementar a aplicação Gmail num perfil de trabalho do Android, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho.
 
-- **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos de perfil de trabalho do Android em Android OS v6.0 e mais recentes. Deste modo, pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
+- **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos com perfil de trabalho do Android em Android OS v6.0 e mais recentes. Deste modo, pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
 
 - **Captura de ecrã**: bloqueia a captura de ecrã no dispositivo quando está no perfil de trabalho. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura.
 

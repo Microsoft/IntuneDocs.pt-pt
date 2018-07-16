@@ -1,7 +1,7 @@
 ---
-title: Definições de perfil personalizado do Intune para Android for Work
+title: Definições de perfil personalizado do Intune para perfis de trabalho do Android
 titlesuffix: Microsoft Intune
-description: Saiba como criar definições de perfil personalizado do Microsoft Intune para dispositivos Android for Work.
+description: Saiba como criar definições de perfil personalizado do Microsoft Intune para dispositivos com perfil de trabalho do Android.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,25 +15,25 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1d7d1512514465b618435b8e699c581534384d2c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832954"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905296"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Criar definições de perfil personalizado do Intune para dispositivos Android for Work
+# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Criar definições de perfil personalizado do Intune para dispositivos com perfil de trabalho do Android
 
-Utilize a política de configuração personalizada para Android for Work do Intune para atribuir as definições OMA-URI que podem ser utilizadas para controlar as funcionalidades nos dispositivos Android for Work. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
+Utilize a política de configuração personalizada de perfis de trabalho do Android do Intune para atribuir as definições OMA-URI que podem ser utilizadas para controlar as funcionalidades nos dispositivos com perfil de trabalho do Android. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
 
-Esta capacidade destina-se a permitir a atribuição de definições do Android que não são configuráveis com as políticas do Intune. Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Consulte os exemplos neste tópico para saber quais as políticas que pode configurar.
+Esta capacidade destina-se a permitir a atribuição de definições do Android que não são configuráveis com as políticas do Intune. Atualmente, o Intune suporta um número limitado de políticas personalizadas do Android. Veja os exemplos neste artigo para saber quais as políticas que pode configurar.
 
 ## <a name="create-a-custom-profile"></a>Criar um perfil personalizado
 
-1. Utilize as instruções em [Como configurar as definições personalizadas dos dispositivos](custom-settings-configure.md) para começar.
+1. Utilize as instruções em [Como configurar as definições personalizadas dos dispositivos](custom-settings-configure.md) para começar. Em **Plataforma**, selecione **Android Enterprise** e, em **Tipo de perfil**, selecione **Personalizado**.
 2. No painel **Definições de OMA-URI Personalizadas**, escolha **Adicionar** para adicionar uma nova definição.
 3. No painel **Adicionar Linha**, configure o seguinte:
-    - **Nome** – introduza um nome exclusivo para as definições personalizadas do Android for Work para o ajudar a identificá-lo no portal do Azure.
+    - **Nome** – introduza um nome exclusivo para as definições personalizadas do perfil de trabalho do Android para o ajudar a identificá-lo no portal do Azure.
     - **Descrição** – indique uma descrição geral da política personalizada do Android e outras informações relevantes que o ajudem a localizá-la.
     - **OMA-URI** – introduza o OMA-URI para o qual pretende indicar uma definição.
     - **Tipo de dados** – Selecione o tipo de dados em que especificará esta definição OMA-URI. Escolha entre **Cadeia**, **Cadeia (ficheiro XML)**, **Data e hora**, **Número inteiro**, **Vírgula flutuante**, **Booleano** ou **Base64 (ficheiro)**.
@@ -43,14 +43,14 @@ Esta capacidade destina-se a permitir a atribuição de definições do Android 
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, vai criar um perfil personalizado que pode servir para restringir se são permitidas ações de copiar e colar entre as aplicações de trabalho e pessoais em dispositivos Android for Work geridos.
+Neste exemplo, irá criar um perfil personalizado que pode ser utilizado para restringir se são permitidas ações de copiar e colar entre as aplicações de trabalho e pessoais em dispositivos com perfil de trabalho do Android.
 
-1. Utilize o procedimento neste tópico para criar um perfil personalizado para dispositivos Android for Work com os seguintes valores:
+1. Utilize o procedimento neste artigo para criar um perfil personalizado para dispositivos com perfil de trabalho do Android com os seguintes valores:
     - **Nome** – introduza “Bloquear copiar e colar” ou texto à sua escolha.
     - **Descrição** – introduza “Bloqueia copiar/colar entre as aplicações de trabalho e pessoais” ou texto à sua escolha.
     - **OMA-URI** – introduza **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste**.
     - **Tipo de dados** – selecione **Booleano** para indicar que o valor deste OMA-URI é **Verdadeiro** ou **Falso**.
     - **Valor** – selecione **Verdadeiro**.
 2. Deverá resultar numa definição com um aspeto semelhante a esta imagem.
-![Bloquear copiar e colar para o Android for Work.](./media/custom-policy-afw-copy-paste.png)
-3. Agora, quando atribuir este perfil personalizado aos dispositivos Android for Work que gerir, as ações de copiar e colar serão bloqueadas entre as aplicações nos perfis de trabalho e pessoais.
+![Bloquear ações de copiar e colar para perfis de trabalho do Android.](./media/custom-policy-afw-copy-paste.png)
+3. Agora, quando atribuir este perfil personalizado aos dispositivos com perfil de trabalho do Android que gerir, as ações de copiar e colar serão bloqueadas entre as aplicações nos perfis de trabalho e pessoais.

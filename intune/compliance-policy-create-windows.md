@@ -1,23 +1,23 @@
 ---
 title: Criar uma política de conformidade de dispositivos Windows no Microsoft Intune – Azure | Microsoft Docs
-description: Crie ou configure uma política de conformidade de dispositivos do Microsoft Intune para o Windows Phone 8.1, Windows 8.1 e posterior e Windows 10 e dispositivos posteriores. Verifique a conformidade do sistema operativo mínimo e máximo, defina as restrições e o comprimento de palavras-passe, exija o bitlocker, defina o nível de ameaça aceitável e ative a encriptação no armazenamento de dados, incluindo o Surface Hub e o Windows Holographic para Empresas.
+description: Crie ou configure uma política de conformidade de dispositivos do Microsoft Intune para o Windows Phone 8.1, Windows 8.1 e posterior e Windows 10 e dispositivos posteriores. Verifique a conformidade do sistema operativo mínimo e máximo, defina as restrições e o comprimento de palavras-passe, exija o bitlocker, verifique a existência de soluções AV de terceiros, defina o nível de ameaça aceitável e ative a encriptação no armazenamento de dados, incluindo o Surface Hub e o Windows Holographic para Empresas.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744912"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909342"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Windows no Intune
 
@@ -115,6 +115,8 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra de versão de SO estive
 
 Para obter mais informações sobre como funciona o serviço HAS, veja [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP de Atestado de Estado de Funcionamento).
 
+Para configurar o Windows Defender ATP (Proteção Avançada Contra Ameaças) como o seu serviço de defesa contra ameaças, veja [Ativar o Windows Defender ATP com acesso condicional](advanced-threat-protection.md).
+
 ### <a name="device-properties"></a>Propriedades do dispositivo
 
 - **Versão mínima do SO**: introduza a versão mínima permitida com o formato de **número major.minor.build.CU**. Para obter o valor correto, abra uma linha de comandos e escreva `ver`. O comando `ver` devolve a versão no seguinte formato:
@@ -164,6 +166,11 @@ Para obter mais informações sobre como funciona o serviço HAS, veja [Health A
 #### <a name="encryption"></a>Encriptação
 
 - **Encriptação do armazenamento de dados num dispositivo**: escolha **Exigir** a encriptação do armazenamento de dados nos dispositivos.
+
+#### <a name="device-security"></a>Segurança do Dispositivo
+
+- **Antivírus**: quando estiver definido como **Exigir**, pode verificar a conformidade com soluções de antivírus registadas com o Centro de Segurança do Windows, tal como Symantec e o Windows Defender. Quando estiver definido como **Não configurado**, o Intune não verifica a existência de soluções AV instaladas no dispositivo.
+- **AntiSpyware**: quando estiver definido como **Exigir**, pode verificar a conformidade com soluções de antispyware registadas com o Centro de Segurança do Windows, tal como Symantec e o Windows Defender. Quando estiver definido como **Não configurado**, o Intune não verifica a existência de soluções de AntiSpyware instaladas no dispositivo.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

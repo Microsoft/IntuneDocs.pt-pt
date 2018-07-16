@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744708"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906197"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
@@ -77,9 +77,9 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 - **Análise de ameaças nas aplicações**: exija que a funcionalidade **Verificar Aplicações** do Android esteja ativada.
 
   > [!NOTE]
-  > Na plataforma Android legada, esta funcionalidade é uma definição de conformidade. O Intune só consegue verificar se esta definição está ativada ao nível do dispositivo. Em dispositivos com perfis de trabalho (Android for Work), esta definição pode ser encontrada como uma definição de política de configuração. permitindo que os administradores ativem a definição para um dispositivo.
+  > Na plataforma Android legada, esta funcionalidade é uma definição de conformidade. O Intune só consegue verificar se esta definição está ativada ao nível do dispositivo. Em dispositivos com perfis de trabalho do Android, esta definição encontra-se como uma definição de política de configuração. permitindo que os administradores ativem a definição para um dispositivo.
 
-  Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Análise de ameaças nas aplicações** para os dispositivos inscritos. Estabeleça um perfil de dispositivo e solicite a definição de segurança do sistema. Para obter mais informações, veja [Definições de restrição de dispositivos Android for Work no Intune](device-restrictions-android-for-work.md).
+  Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Análise de ameaças nas aplicações** para os dispositivos inscritos. Estabeleça um perfil de dispositivo e solicite a definição de segurança do sistema. Para obter mais informações, veja [Definições de restrição de dispositivos de perfil de trabalho Android no Intune](device-restrictions-android-for-work.md).
 
 - **Atestado de dispositivo SafetyNet**: introduza o nível de [Atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que tem de ser cumprido. As opções são:
   - **Não configurado**
@@ -98,7 +98,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 - **Tipo de palavra-passe necessária**: selecione se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
-  - **Dispositivo Predefinido**
+  - **Predefinição do Dispositivo**
   - **Biométrica de segurança baixa**
   - **Pelo menos numérica**
   - **Complexo numérico**: os números repetidos ou consecutivos (como "1111" ou "1234") não são permitidos.
