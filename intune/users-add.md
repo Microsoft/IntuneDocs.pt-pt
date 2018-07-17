@@ -16,11 +16,11 @@ ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032460"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38219928"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune
 
