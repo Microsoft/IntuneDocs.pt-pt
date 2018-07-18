@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906027"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949497"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>A edição antecipada do Microsoft Intune – julho de 2018
 
@@ -40,6 +40,9 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 ## <a name="intune-in-the-azure-portal"></a>Intune no portal do Azure
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Mais oportunidades de sincronização na aplicação Portal da Empresa para Windows <!-- 2683177 -->
+A aplicação Portal da Empresa para Windows irá adicionar uma ação de sincronização de dispositivos à barra de tarefas do Windows e às listas de atalhos do menu Iniciar. Clique em qualquer uma das localizações para sincronizar rapidamente os seus dispositivos e obter acesso a recursos empresariais.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Repor códigos de acesso de dispositivos a partir da aplicação Portal da Empresa para Windows 10 <!-- 2101282 --> 
 Em breve, os seus colaboradores poderão repor o PIN ou o código de acesso dos respetivos dispositivos diretamente a partir da aplicação Portal da Empresa para Windows 10. Esta funcionalidade estará disponível em dispositivos remotos e locais geridos pelo Intune que suportem a reposição de códigos de acesso. Consoante o tipo de dispositivo, um pedido feito para um dispositivo remoto irá remover o código de acesso atual do dispositivo ou criar um código de acesso temporário. Os utilizadores que efetuarem um pedido de reposição para um dispositivo local serão redirecionados para a aplicação Definições do dispositivo.  
@@ -199,5 +202,5 @@ As Políticas de Proteção de Aplicações do Intune permitirão criar polític
 
 Neste momento, não existem avisos ativos.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 Veja [Novidades do Microsoft Intune](whats-new.md) para obter detalhes sobre os desenvolvimentos recentes.

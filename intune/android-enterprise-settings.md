@@ -2,8 +2,8 @@
 title: Definições de quiosque do Android no Microsoft Intune – Azure | Microsoft Docs
 description: Configure dispositivos de quiosque do Android Enterprise.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28eca6fa3738519602ee5b2a778bc75bde487156
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909104"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039340"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Definições de quiosque do Android Enterprise no Intune
 
@@ -51,7 +51,7 @@ Os perfis de quiosque do Android suportam as seguintes definições de configura
 
 ## <a name="kiosk-settings"></a>Definições de quiosque
 
-- **Modo de quiosque**: define se o dispositivo só pode executar uma aplicação ou múltiplas aplicações. Para obter mais informações, veja [Kiosk settings for Android devices](android-kiosk-settings.md) (Definições de quiosque para dispositivos Android).
+- **Modo de quiosque**: define se o dispositivo só pode executar uma aplicação ou múltiplas aplicações. Para obter mais informações, veja [Definições de quiosque para dispositivos Android](android-kiosk-settings.md).
     - **Quiosque de uma aplicação**: os utilizadores só podem aceder a uma aplicação.
     - **Quiosque de várias aplicações**: os utilizadores podem aceder a um conjunto limitado de aplicações.
 
