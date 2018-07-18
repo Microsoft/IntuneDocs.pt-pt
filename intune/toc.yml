@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Resolução de problemas de acesso aos recursos da empresa
           href: troubleshoot-company-resource-access-problems.md
+        - name: Troubleshoot app installation problems (Resolução de problemas com a instalação de aplicações)
+          href: troubleshoot-app-install.md
         - name: Registos de auditoria para atividades do Intune
           href: monitor-audit-logs.md
         - name: Rever registos de proteção de aplicações
