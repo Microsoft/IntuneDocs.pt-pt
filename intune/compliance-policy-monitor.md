@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905364"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132464"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -167,11 +167,11 @@ Esta funcionalidade está incluída no relatório de estado do dispositivo:
 1. Selecione **Conformidade do dispositivo** > **Políticas**. É apresentada uma lista de políticas, incluindo a plataforma, se a política estiver atribuída, e mais detalhes.
 2. Selecione uma política > **Descrição Geral**. Nesta vista, a atribuição de política inclui os seguintes estados:
 
-  - Com êxito
-  - Error
-  - Conflito
-  - Pending
-  - Não aplicável
+  - Êxito: a política é aplicada
+  - Erro: falha ao aplicar a política. Normalmente, esta mensagem é apresentada com um código de erro que direciona para uma explicação. 
+  - Conflito: duas definições são aplicadas ao mesmo dispositivo e o Intune não consegue resolver o conflito. Um administrador deve rever a situação.
+  - Pendente: o dispositivo ainda não foi registado no Intune para receber a política. 
+  - Não aplicável: o dispositivo não pode receber a política. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10. 
 
 3. Para ver detalhes sobre os dispositivos que utilizam esta política, selecione um dos estados. Por exemplo, selecione **Com êxito**. Na janela seguinte, são indicados detalhes dos dispositivos específicos, incluindo o nome do dispositivo e o estado de implementação.
 
@@ -181,4 +181,3 @@ Se forem aplicadas múltiplas políticas do Intune a um dispositivo, podem ocorr
 - Se as definições em conflito pertencerem a uma política de configuração do Intune e a uma política de conformidade, as definições da política de conformidade têm prioridade sobre as definições da política de configuração. Isto acontece mesmo que as definições na política de conformidade sejam mais seguras.
 
 - Se tiver implementado múltiplas políticas de conformidade, o Intune utiliza a mais segura destas políticas.
-
