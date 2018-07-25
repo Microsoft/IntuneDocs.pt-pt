@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993756"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164574"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -89,21 +89,21 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com inten�
 |Utilizador – Disponível|Utilizador – Não Disponível|Não disponível|
 |Utilizador – Disponível|Utilizador – Desinstalar|Desinstalar|
 |Utilizador – Não Disponível|Utilizador – Desinstalar|Desinstalar
-|Utilizador – Necessário|Dispositivo – Necessário|Ambas existem, o Gateway trata da intenção Necessário
-|Utilizador – Necessário|Dispositivo – Desinstalar|Ambas existem, o Gateway resolve a intenção Necessário
-|Utilizador – Disponível|Dispositivo – Necessário|Ambas existem, o Gateway resolve a intenção Necessário (Necessário e Disponível)
-|Utilizador – Disponível|Dispositivo – Desinstalar|Ambas existem, o Gateway resolve a intenção Disponível.<br><br>A aplicação é apresentada no Portal da Empresa.<br><br>Se a aplicação já estiver instalada (como aplicação necessária com a intenção anterior), será desinstalada.<br><br>Se o utilizador selecionar **Instalar a partir do Portal da Empresa**, a aplicação será instalada e a intenção de desinstalação não será cumprida.|
+|Utilizador – Necessário|Dispositivo – Necessário|Ambas existem, o Intune trata da intenção Necessário
+|Utilizador – Necessário|Dispositivo – Desinstalar|Ambas existem, o Intune resolve a intenção Necessário
+|Utilizador – Disponível|Dispositivo – Necessário|Ambas existem, o Intune resolve a intenção Necessário (Necessário e Disponível)
+|Utilizador – Disponível|Dispositivo – Desinstalar|Ambas existem, o Intune resolve a intenção Disponível.<br><br>A aplicação é apresentada no Portal da Empresa.<br><br>Se a aplicação já estiver instalada (como aplicação necessária com a intenção anterior), será desinstalada.<br><br>Se o utilizador selecionar **Instalar a partir do Portal da Empresa**, a aplicação será instalada e a intenção de desinstalação não será cumprida.|
 |Utilizador – Não Disponível|Dispositivo – Necessário|Necessário|
 |Utilizador – Não Disponível|Dispositivo – Desinstalar|Desinstalar|
-|Utilizador – Desinstalar|Dispositivo – Necessário|Ambas existem, o Gateway resolve a intenção Necessário|
-|Utilizador – Desinstalar|Dispositivo – Desinstalar|Ambos existem, o Gateway resolve o objetivo Desinstalar|
+|Utilizador – Desinstalar|Dispositivo – Necessário|Ambas existem, o Intune resolve a intenção Necessário|
+|Utilizador – Desinstalar|Dispositivo – Desinstalar|Ambas existem, o Intune resolve a intenção Desinstalar|
 |Dispositivo – Necessário|Dispositivo – Desinstalar|Necessário|
 |Utilizador – Necessário e Disponível|Utilizador – Disponível|Necessário e Disponível|
 |Utilizador – Necessário e Disponível|Utilizador – Desinstalar|Necessário e Disponível|
 |Utilizador – Necessário e Disponível|Utilizador – Não Disponível|Necessário e Disponível|
 |Utilizador – Necessário e Disponível|Dispositivo – Necessário|Ambas existem, Necessário e Disponível
 |Utilizador – Necessário e Disponível|Dispositivo – Não Disponível|Necessário e Disponível|
-|Utilizador – Necessário e Disponível|Dispositivo – Desinstalar|Ambas existem, o Gateway resolve a intenção Necessário (Necessário e Disponível)
+|Utilizador – Necessário e Disponível|Dispositivo – Desinstalar|Ambas existem, o Intune resolve a intenção Necessário (Necessário e Disponível)
 |Utilizador – Não Disponível|Dispositivo – Não Disponível|Não disponível|
 |Utilizador – Disponível|Dispositivo – Não Disponível|Disponível|
 |Utilizador – Necessário|Dispositivo – Não Disponível|Necessário|
