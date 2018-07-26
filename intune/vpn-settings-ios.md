@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744572"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146633"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com iOS
 
@@ -63,10 +63,10 @@ Se tiver selecionado **VPN Personalizada** como o tipo de ligação, configure t
 - **Identificador VPN**: um identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor de VPN.
 - **Introduzir pares de chave e valor para os atributos de VPN personalizados**: adicione ou importe **Chaves** e **Valores** para personalizar a sua ligação VPN. Mais uma vez, estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
 
-## <a name="apps-per-app-vpn-settings"></a>Definições de aplicações (VPN por aplicação)
+## <a name="automatic-vpn-settings"></a>Definições Automáticas de VPN
 
-- **VPN por aplicação**: ative esta opção para utilizar URLs que ativem a ligação VPN quando são visitados a partir do browser Safari. Para configurar a VPN por aplicação, tem de selecionar **Certificados** como método de autenticação nas definições de VPN Base.
-  - **URLs do Safari que irão acionar esta VPN**: selecione esta opção para adicionar um ou mais URLs de sites. Quando estes URLs são visitados, a ligação VPN é ativada.
+- **VPN por aplicação**: selecionar esta opção ativa a VPN por aplicação, que permite que a ligação VPN seja acionada automaticamente quando determinadas aplicações são abertas. Além de selecionar esta opção, também precisa de associar as aplicações a este perfil VPN. Veja as [instruções para configurar a VPN por aplicação para iOS](vpn-setting-configure-per-app.md) para obter mais detalhes. 
+  - **URLs do Safari que irão acionar esta VPN**: selecione esta opção para adicionar um ou mais URLs de sites. Quando estes URLs são visitados através do browser Safari no dispositivo, a ligação VPN é estabelecida automaticamente.
 
 - **VPN a pedido**: configure regras condicionais que controlam quando a ligação VPN é iniciada. Por exemplo, crie uma condição na qual a ligação VPN só é utilizada quando um dispositivo não estiver ligado a uma rede Wi-Fi da sua empresa. Em alternativa, crie uma condição na qual, se um dispositivo não puder aceder a um domínio de pesquisa DNS que especificar, a ligação VPN não é iniciada.
 

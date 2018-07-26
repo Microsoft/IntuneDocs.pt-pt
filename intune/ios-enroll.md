@@ -15,18 +15,18 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027123"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146701"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
 O Intune ativa a gestão de dispositivos móveis (MDM) de iPads e iPhones para conceder aos utilizadores acesso a aplicações e ao e-mail da empresa.
 
-Enquanto administrador do Intune, pode ativar a inscrição para dispositivos iOS. Pode permitir que os utilizadores inscrevam dispositivos pessoais. Este processo é conhecido como inscrição BYOD (Bring Your Own Device). Também pode ativar a inscrição de dispositivos pertencentes à empresa.
+Enquanto administrador do Intune, pode ativar a inscrição para dispositivos iOS. Pode permitir que os utilizadores inscrevam dispositivos pessoais, também conhecido como inscrição BYOD ("Bring Your Own Device"). Também pode ativar a inscrição de dispositivos pertencentes à empresa.
 
 ## <a name="prerequisites-for-ios-enrollment"></a>Pré-requisitos para a inscrição de dispositivos iOS
 Antes de poder ativar dispositivos iOS, conclua os seguintes passos:
@@ -62,7 +62,7 @@ Saiba mais sobre a [inscrição no Apple Configurator](apple-configurator-setup-
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Utilizar o Portal da Empresa em dispositivos inscritos pelo Apple Configurator ou pelo DEP
 
-Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação Portal da Empresa.
+Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação Portal da Empresa.
 
 A afinidade de utilizador é necessária para suportar o seguinte:
   - Aplicações de gestão de aplicações móveis (MAM)
@@ -70,25 +70,11 @@ A afinidade de utilizador é necessária para suportar o seguinte:
   - Aplicação Portal da Empresa
 
 **Como os utilizadores inscrevem dispositivos iOS pertencentes à empresa com afinidade de utilizador**
-1. Quando os utilizadores ligam os dispositivos, é-lhes pedido que concluam o Assistente de Configuração. Durante a configuração, os utilizadores recebem um pedido de credenciais. Terão de utilizar as credenciais (ou seja, o nome pessoal exclusivo ou UPN) associadas à respetiva subscrição no Intune.
-
-2. Durante a configuração, os utilizadores recebem um pedido do Apple ID. Terão de fornecer um Apple ID para permitir que o dispositivo instale o Portal da Empresa. Também podem fornecer o ID no menu de definições do iOS após a conclusão da configuração.
-
-3. Depois de concluir a configuração, o dispositivo iOS tem de instalar a aplicação Portal da Empresa a partir da App Store.
-
-4. O utilizador poderá então iniciar sessão no Portal da Empresa através do UPN utilizado quando configurou o dispositivo.
-
-5. Após iniciar sessão, é pedido ao utilizador que inscreva o dispositivo. O primeiro passo consiste em identificar o dispositivo. A aplicação apresenta uma lista de dispositivos iOS que já foram inscritos pela empresa e atribuídos à conta do Intune do utilizador. Deve escolher o dispositivo correspondente.
-
-   Se este dispositivo ainda não tiver sido inscrito pela empresa, escolha **novo dispositivo** para continuar o fluxo de inscrição padrão.
-
-6. No ecrã seguinte, o utilizador tem de confirmar o número de série do novo dispositivo. O utilizador pode tocar na ligação **Confirmar o Número de Série** para abrir as instruções de utilização da aplicação Definições e verificar o número de série. Em seguida, o utilizador tem de introduzir os últimos quatro carateres do número de série na aplicação Portal da Empresa.
-
-   Este passo verifica se o dispositivo é o dispositivo da empresa inscrito no Intune. Se o número de série do dispositivo não coincidir, significa que foi selecionado o dispositivo errado. O utilizador deve voltar ao ecrã anterior e selecionar um dispositivo diferente.
-
-7. Depois de verificar o número de série, a aplicação Portal da Empresa redireciona o utilizador para o site do Portal da Empresa para finalizar a inscrição. Em seguida, o site solicita ao utilizador que volte para a aplicação.
-
-8. A inscrição está agora concluída. Agora, o utilizador pode utilizar este dispositivo com o conjunto completo de capacidades.
+1. Quando os utilizadores ligam os dispositivos, é-lhes pedido que concluam o Assistente de Configuração. 
+2. Após concluir a configuração, é pedido o ID Apple aos utilizadores. Terão de fornecer um ID Apple para permitir que o dispositivo instale o Portal da Empresa. 
+3. O dispositivo iOS instala automaticamente a aplicação Portal da Empresa a partir da App Store.
+4. Os utilizadores devem iniciar a aplicação Portal da Empresa e iniciar sessão com as credenciais (por exemplo, o nome pessoal exclusivo ou UPN) associadas à respetiva subscrição no Intune. 
+5. Depois de iniciar sessão, o processo de inscrição é concluído. Os utilizadores podem agora utilizar este dispositivo com o conjunto completo de funcionalidades.
 
 ### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>Sobre dispositivos pertencentes à empresa geridos sem afinidade de utilizador
 
