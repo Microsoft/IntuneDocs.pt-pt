@@ -15,12 +15,12 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c3184ff01252d2f53b5bfcce286df3424da23c2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909172"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279411"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerir dispositivos com perfil de trabalho do Android com o Intune
 
@@ -66,7 +66,7 @@ As políticas de proteção de aplicações aplicadas são totalmente suportadas
 
 O suporte de VPN é semelhante aos perfis de VPN em Android. Os mesmos fornecedores de VPN e as mesmas opções básicas de configuração estão disponíveis para a gestão do Android Enterprise com duas diferenças:
 
--  **VPN com âmbito de perfil de trabalho** – as ligações VPN estão limitadas às aplicações implementadas para o perfil de trabalho. Apenas as aplicações geridas do Android Enterprise podem utilizar a ligação VPN. As aplicações pessoais no dispositivo não podem utilizar uma ligação VPN gerida. Para obter mais informações, veja [Android enterprise VPN settings](vpn-settings-android.md#android-work-profile-device-vpn-settings) (Definições de VPN do Android Enterprise).
+-  **VPN com âmbito de perfil de trabalho** – as ligações VPN estão limitadas às aplicações implementadas para o perfil de trabalho. Apenas as aplicações geridas do Android Enterprise podem utilizar a ligação VPN. As aplicações pessoais no dispositivo não podem utilizar uma ligação VPN gerida. Para obter mais informações, veja [Android enterprise VPN settings](vpn-settings-android.md#android-for-work-vpn-settings) (Definições de VPN do Android Enterprise).
 
 -  **VPN específica da aplicação** – a VPN específica da aplicação pode ser configurada no Intune se o fornecedor de VPN suportar:
     - a configuração da VPN específica da aplicação
