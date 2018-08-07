@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
+ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022514"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39356578"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de Ativação em dispositivos iOS Supervisionados com o Intune
 
@@ -66,15 +66,23 @@ Antes de poder ignorar o Bloqueio de Ativação em dispositivos, tem de ativá-l
 ## <a name="how-to-use-activation-lock-bypass"></a>Como ignorar o Bloqueio de Ativação
 
 >[!IMPORTANT]
->Depois de ignorar o Bloqueio de Ativação num dispositivo, se a aplicação Encontrar o meu iPhone for aberta, é automaticamente aplicado um novo Bloqueio de Ativação. Por este motivo, **deverá estar na posse física do dispositivo antes de seguir este procedimento**.
+>Depois de ignorar o Bloqueio de Ativação num dispositivo, se a aplicação Encontrar o Meu iPhone for iniciada, será automaticamente aplicado um novo Bloqueio de Ativação. Por este motivo, **deverá estar na posse física do dispositivo antes de seguir este procedimento**.
 
-A ação remota de dispositivos **Ignorar Bloqueio de Ativação** do Intune remove o bloqueio de ativação de um dispositivo iOS sem o Apple ID e a palavra-passe do utilizador. Depois de ignorar o bloqueio de ativação, o dispositivo ativa novamente o bloqueio de ativação quando a aplicação Encontrar o Meu iPhone é iniciada. Ignore o bloqueio de ativação apenas se tiver acesso físico ao dispositivo.
+A ação remota de dispositivos **Ignorar Bloqueio de Ativação** do Intune remove o Bloqueio de Ativação de um dispositivo iOS sem exigir o Apple ID e a palavra-passe do utilizador. Depois de ignorar o Bloqueio de Ativação, o dispositivo ativa novamente o Bloqueio de Ativação quando a aplicação Encontrar o Meu iPhone é iniciada. Ignore o Bloqueio de Ativação apenas se tiver acesso físico ao dispositivo.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, escolha **Dispositivos**.
+2. Selecione **Todos os serviços** > **Intune**.
+3. No painel do **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
-5. A partir da lista de dispositivos que gere, selecione um dispositivo iOS supervisionado, selecione **...Mais** e, em seguida, selecione a ação remota de dispositivos **Ignorar o Bloqueio de Ativação**.
+5. Na lista de dispositivos que gere, selecione a ação remota de dispositivos **Ignorar Bloqueio de Ativação**.
+6. Aceda à secção "Hardware" do dispositivo e, em seguida, copie o **Código para ignorar o bloqueio de ativação** em **Acesso condicional**.
+
+    >[!NOTE]
+    >Copie o código para ignorar antes de fazer uma reposição de fábrica no dispositivo. Se repuser as definições do dispositivo antes de copiar o código, este será removido do Azure.
+
+7.  Aceda ao painel **Descrição geral** do dispositivo e, em seguida, selecione **Reposição de fábrica**.
+8.  Depois de repor o dispositivo, é-lhe pedido o *ID Apple* e a *Palavra-passe*. Deixe o campo *ID* em branco e, em seguida, introduza o **código para ignorar** no campo *palavra-passe*. Esta ação remove a conta do dispositivo. 
+
 
 ## <a name="next-steps"></a>Próximos passos
 

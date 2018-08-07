@@ -1,22 +1,23 @@
 ---
 title: Restrições de dispositivos para o Windows Holographic for Business no Microsoft Intune – Azure | Microsoft Docs
-description: Saiba mais sobre como configurar definições de restrição de dispositivos no Microsoft Intune para Windows Holographic for Business, incluindo anular a inscrição, geolocalização, palavras-passe, instalar aplicações a partir da App Store, cookies e pop-ups no Microsoft Edge, Windows Defender, pesquisa, cloud e armazenamento, conectividade bluetooth, hora do sistema e dados de utilização no Azure.
+description: Saiba mais sobre como configurar definições de restrição de dispositivos no Microsoft Intune para Windows Holographic for Business, incluindo anular a inscrição, geolocalização, palavras-passe, instalar aplicações a partir da App Store, cookies e pop-ups no Edge, Windows Defender, pesquisa, cloud e armazenamento, conectividade bluetooth, hora do sistema e dados de utilização no Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321759"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Definições de restrição de dispositivos para o Windows Holographic for Business no Intune
 
@@ -26,9 +27,9 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 
 ## <a name="general"></a>Geral
 
-- **Anular inscrições manualmente** – Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
-- **Cortana** – Ative ou desative o assistente de voz Cortana.
-- **Geolocalização** – Especifica se o dispositivo pode utilizar informações de serviços de localização.
+- **Anular inscrições manualmente** – permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
+- **Cortana** – ative ou desative o assistente de voz Cortana.
+- **Geolocalização** – especifica se o dispositivo pode utilizar informações de serviços de localização.
 
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
@@ -36,17 +37,17 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 
 ## <a name="app-store"></a>App Store
 
--   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Microsoft Store sejam atualizadas automaticamente.
+-   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Microsoft sejam atualizadas automaticamente.
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
 
 ## <a name="edge-browser"></a>Browser Microsoft Edge
 
--   **Cookies** – Permite que o browser guarde cookies de Internet no dispositivo.
+-   **Cookies** – permite que o browser guarde cookies de Internet no dispositivo.
 -   **Pop-ups** – bloqueia as janelas pop-up no browser (aplica-se apenas ao ambiente de trabalho do Windows 10).
--   **Sugestões de pesquisa** – Permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.
--   **Gestor de Palavras-passe** – Ative ou desative a funcionalidade Gestor de Palavras-passe do Microsoft Edge.
-- **Enviar cabeçalhos Do Not Track** – Configura o browser Microsoft Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
+-   **Sugestões de pesquisa** – permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.
+-   **Gestor de Palavras-passe** – ative ou desative a funcionalidade Gestor de Palavras-passe do Microsoft Edge.
+- **Enviar cabeçalhos Do Not Track** – configura o browser Microsoft Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
@@ -56,19 +57,21 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 - **Procurar localização** – especifica se a pesquisa pode utilizar informações de localização. informações
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
--   **Conta Microsoft** – Permite que o utilizador associe uma conta Microsoft ao dispositivo.
+-   **Conta Microsoft** – permite que o utilizador associe uma conta Microsoft ao dispositivo.
 
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
--   **Bluetooth** – Controla se o utilizador pode ativar e configurar Bluetooth do dispositivo.
--   **Deteção de Bluetooth** – Permite que este dispositivo seja detetado por outros dispositivos com Bluetooth ativado.
--   **Publicidade do Bluetooth** – Permite que o dispositivo receba anúncios através de Bluetooth.
+-   **Bluetooth** – controla se o utilizador pode ativar e configurar Bluetooth do dispositivo.
+-   **Deteção de Bluetooth** – permite que este dispositivo seja detetado por outros dispositivos com Bluetooth ativado.
+-   **Publicidade do Bluetooth** – permite que o dispositivo receba anúncios através de Bluetooth.
 
 ## <a name="control-panel-and-settings"></a>Painel de Controlo e Definições
 
 - **Modificação da Hora do Sistema** –impede o utilizador final de alterar a data e a hora do dispositivo.
 
-## <a name="kiosk"></a>Modo de Local Público
+## <a name="kiosk---obsolete"></a>Quiosque – Obsoleto
+
+Estas definições são só de leitura e não podem ser alteradas. Para configurar o modo de quiosque, veja [Definições de quiosque](kiosk-settings.md#windows-holographic-for-business).
 
 Normalmente, um dispositivo de quiosque executa uma aplicação específica. Os utilizadores são impedidos de aceder a funcionalidades ou funções no dispositivo fora da aplicação de quiosque.
 

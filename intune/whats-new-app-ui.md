@@ -15,20 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039391"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279496"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações poderá ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-july-16-2018"></a>Semana de 16 de julho de 2018  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Mais oportunidades de sincronização na aplicação Portal da Empresa para Windows   
+Agora a aplicação Portal da Empresa para Windows permite-lhe iniciar uma sincronização a partir do menu Iniciar e da barra de tarefas do Windows. Esta funcionalidade é especialmente útil se a sua tarefa for sincronizar dispositivos e obter acesso a recursos da empresa. Para aceder à nova funcionalidade, clique com o botão direito do rato no ícone do Portal da Empresa que está afixado à barra de tarefas ou menu Iniciar. Nas opções do menu (também conhecido como lista de atalhos), selecione **Sincronizar este dispositivo**. O Portal da Empresa será aberto na página **Definições** e irá iniciar a sincronização.  
+
+![Captura de ecrã a mostrar a barra de tarefas do Windows no ambiente de trabalho de um dispositivo. Alguém clicou no ícone de programa da aplicação Portal da Empresa para mostrar um menu com as opções "Afixar na barra de tarefas", "Fechar janela" e "Sincronizar este dispositivo".](./media/sync-device-from-start-menu-1807.png)  
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Novas experiências de navegação na aplicação Portal da Empresa para Windows  
+
+Ao navegar ou procurar aplicações na aplicação Portal da Empresa para Windows, pode alternar entre a vista **Mosaicos** existente e a vista **Detalhes** recentemente adicionada. A nova vista apresenta os detalhes das aplicações, como o nome, o publicador, a data de publicação e o estado da instalação.  
+
+A vista **Instalado** da página **Aplicações** permite-lhe ver detalhes sobre as instalações de aplicações concluídas e em curso.  
+
+Captura de ecrã de exemplo a mostrar a vista Mosaicos:  
+ 
+![Captura de ecrã da aplicação Portal da Empresa do Intune para Windows a mostrar as aplicações instaladas na vista Mosaicos.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+
+Captura de ecrã de exemplo a mostrar a vista Detalhes:  
+
+![Captura de ecrã da aplicação Portal da Empresa do Intune para Windows a mostrar as aplicações instaladas na vista Detalhes.](/intune/media/details-installed-view-cpapp-1807.png) 
+
 ## <a name="week-of-april-23-2018"></a>Semana de 23 de abril de 2018
-#### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Vista de navegação atualizada na aplicação Portal da Empresa para Windows 10 <!-- 1195010 -->
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Vista de navegação atualizada na aplicação Portal da Empresa para Windows 10 <!-- 1195010 -->
 A aplicação Portal da Empresa do Intune para Windows 10 foi atualizada com a [vista de navegação do Fluent Design System](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Na parte lateral da aplicação, verá uma lista vertical estática de todas as páginas de nível superior. Clique em qualquer ligação para ver e alternar entre páginas rapidamente. Esta é a primeira de várias atualizações que verá como parte do nosso esforço contínuo para criar uma experiência mais adaptável, agradável e familiar no Intune. 
 
 ![Captura de ecrã do dashboard da aplicação Portal da Empresa que mostra a vista de navegação do Fluent Design](./media/1804_WindowsCP_Fluent_01.png)
@@ -36,7 +57,7 @@ A aplicação Portal da Empresa do Intune para Windows 10 foi atualizada com a 
 
 ## <a name="week-of-april-2-2018"></a>Semana de 2 de abril de 2018
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!-- 1412866 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!-- 1412866 -->
 Lançámos uma atualização importante da experiência de utilizador para a aplicação Portal da Empresa para iOS. A atualização consiste numa reestruturação visual completa que inclui um aspeto e funcionalidade mais modernos. Mantivemos a funcionalidade da aplicação, mas aumentámos a facilidade de utilização e acessibilidade da mesma.  
 
 A atualização inclui ainda:
@@ -51,7 +72,7 @@ A atualização inclui ainda:
 |*Combinado com o passo anterior*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Melhorias à linguagem na aplicação Portal da Empresa para Windows <!---1683758--->
+### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Melhorias à linguagem na aplicação Portal da Empresa para Windows <!-- 1683758 -->
 Melhorámos a linguagem no Portal da Empresa para Windows 10 de forma a torná-lo mais fácil de utilizar e adequado à sua empresa.
 
 |Antes|Depois|
@@ -61,7 +82,7 @@ Melhorámos a linguagem no Portal da Empresa para Windows 10 de forma a torná-l
 
 ## <a name="week-of-march-12-2018"></a>Semana de 12 de março de 2018
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Atualizações visuais do Portal da Empresa para Android <!--976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Atualizações visuais do Portal da Empresa para Android <!-- 976944 -->
 
 Atualizámos a aplicação Portal da Empresa para Android para seguir as diretrizes de [Conceção do Material](https://material.io/) do Android.
 
@@ -78,7 +99,7 @@ Atualizámos a aplicação Portal da Empresa para Android para seguir as diretri
 
 ## <a name="week-of-november-27-2017"></a>Semana de 27 de novembro de 2017
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Novo passo "Categorias de Dispositivos" na configuração assistida da aplicação Portal da Empresa para Windows 10 <!---1335292--->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Novo passo "Categorias de Dispositivos" na configuração assistida da aplicação Portal da Empresa para Windows 10 <!-- 1335292 -->
 
 Se ativou o [mapeamento do grupo de dispositivos](device-group-mapping.md), a aplicação Portal da Empresa para Windows 10 redirecionará os seus utilizadores para a seleção de uma categoria de dispositivo após inscreverem os respetivos dispositivos.
 
@@ -114,14 +135,14 @@ A página Definições na aplicação Portal da Empresa para Windows 10 foi atu
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Melhorias na pesquisa no site e nas aplicações do Portal da Empresa <!--1418189-->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>Melhorias na pesquisa no site e nas aplicações do Portal da Empresa <!-- 1418189 -->
 Agora, as aplicações do Portal da Empresa utilizam pesquisas em categorias, nomes e descrições de aplicações. Os resultados são ordenados por ordem decrescente de relevância. Estas atualizações também estão disponíveis no [Site do Portal da Empresa](https://portal.manage.microsoft.com).
 
 Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação "Comentários" na parte inferior do site do Portal da Empresa.
 
 ## <a name="week-of-october-16-2017"></a>Semana de 16 de outubro de 2017
 
-### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Melhorias na pesquisa no site do Portal da Empresa <!--1331697-->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Melhorias na pesquisa no site do Portal da Empresa <!-- 1331697 -->
 Estamos a melhorar as nossas capacidades de pesquisa da aplicação, a começar com o [site do Portal da Empresa](https://portal.manage.microsoft.com). As pesquisas serão agora efetuadas em categorias de aplicações para além dos campos Nome e Descrição. Os resultados serão ordenados, por predefinição, por ordem decrescente de relevância. 
 
 Os utilizadores do iOS também receberão esta alteração, uma vez que o site do Portal da Empresa também é utilizado como parte da aplicação Portal da Empresa para iOS. As aplicações do Portal da Empresa para Android e Windows irão receber atualizações semelhantes nos próximos meses.
@@ -135,7 +156,7 @@ Esta versão corrige um problema conhecido sobre a forma como o Portal da Empres
 
 ## <a name="week-of-october-2-2017"></a>Semana de 2 de outubro de 2017
 
-#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa <!--1490692-->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa <!-- 1490692 -->
 Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para Android. O tipo de linguagem é mais simples e específico para a sua empresa. Além disso, combinámos os ecrãs sempre que possível. 
 
 |Antes|Depois|
@@ -164,7 +185,7 @@ Também atualizámos o ecrã de ativação de e-mail do acesso condicional.
 
 ## <a name="week-of-september-11-2017"></a>Semana de 11 de setembro de 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Linguagem de compreensão mais fácil na aplicação Portal da Empresa para Android <!---1396349--->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Linguagem de compreensão mais fácil na aplicação Portal da Empresa para Android <!-- 1396349 -->  
 
 O texto do processo de inscrição da aplicação Portal da Empresa para Android foi simplificado para facilitar a inscrição dos utilizadores finais. Se tiver documentação de inscrição personalizada, deve atualizá-la para refletir os novos ecrãs. Encontrará imagens de exemplo abaixo:
 
@@ -179,7 +200,7 @@ O texto do processo de inscrição da aplicação Portal da Empresa para Android
 
 ## <a name="august-2017"></a>Agosto de 2017
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>A aplicação Mail para o iOS 11 suportará o OAuth <!---1196951--->
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>A aplicação Mail para o iOS 11 suportará o OAuth <!-- 1196951 -->
 
 O acesso condicional do Intune suporta uma autenticação mais segura em dispositivos iOS com o OAuth. Para suportar esta funcionalidade, haverá agora um fluxo diferente na aplicação Portal da Empresa para iOS, para permitir uma autenticação mais segura. Quando os utilizadores finais tentarem iniciar sessão numa nova conta do Exchange na aplicação Mail, verão uma mensagem na vista Web. Após a inscrição no Intune, os utilizadores verão uma mensagem para permitir que a aplicação Mail nativa aceda a um certificado. A maioria dos utilizadores finais não verá mais e-mails em quarentena. As contas de e-mail existentes continuarão a utilizar o protocolo de autenticação básico, por isso estes utilizadores continuarão a receber e-mails em quarentena. A experiência de início de sessão dos utilizadores finais é semelhante à das aplicações do Office para dispositivos móveis.
 
@@ -212,7 +233,7 @@ As caixas de diálogo da Gestão de Aplicações Móveis (MAM) do Intune serão 
 ![interface moderna](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Atualizações à página "Detalhes do Dispositivo" na aplicação Portal da Empresa para Windows 10 <!---1287448--->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Atualizações à página "Detalhes do Dispositivo" na aplicação Portal da Empresa para Windows 10 <!-- 1287448 -->
 
 A aplicação Portal da Empresa para Windows 10 irá mudar a etiqueta __Categoria__ da parte de baixo do título para uma propriedade na página __Detalhes do Dispositivo__.
 
@@ -427,7 +448,7 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 > [!Note]
 > Tenha em atenção que as imagens abaixo podem ser pré-visualizações e que o produto anunciado poderá ser diferente das versões apresentadas.
 
-### <a name="ui-iwp"></a>Atualização com a nova experiência de utilizador para o site do Portal da Empresa <!--2000968-->
+### <a name="ui-iwp"></a>Nova atualização da experiência de utilizador do site do Portal da Empresa <!--2000968-->
 
 A partir de agosto, vamos apresentar uma nova experiência do site do Portal da Empresa, com atualizações à UI, fluxos de trabalho simplificados e melhorias de acessibilidade. Isto inclui melhorias orientadas para o cliente, como a partilha de aplicações e o desempenho global melhorado, para lhe oferecer uma experiência mais simples.
 
@@ -437,7 +458,7 @@ Adicionámos algumas funcionalidades novas com base no seu feedback, que irão m
 -   Capacidade de partilhar ligações diretas para as aplicações
 - Desempenho melhorado para grandes catálogos de aplicações
 
-Não precisa de tomar medidas para se preparar para esta alteração. Iremos informá-lo quando o site do Portal da Empresa atualizado estiver disponível para si. No entanto, poderá ter que atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa no iOS, uma vez que o site ativa a secção **Aplicações** da aplicação para iOS.
+Não precisa de tomar medidas para se preparar para esta alteração. Iremos informá-lo quando o site do Portal da empresa atualizado estiver disponível para si. No entanto, poderá ter que atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS.
 
 |Atualizado|Anterior|
 |---|---|
@@ -452,7 +473,7 @@ __Atualização das Aplicações em Destaque__: adicionámos ao site uma página
 
 
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Novidades do Intune](https://docs.microsoft.com/intune/whats-new)

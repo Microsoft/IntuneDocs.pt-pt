@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869377"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321480"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -60,9 +60,6 @@ Selecione as aplicações do Office que quer atribuir aos dispositivos.
     Além disso, poderá instalar aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365 se tiver as devidas licenças.
 3. Selecione **OK**.
 
->[!IMPORTANT]
-> Depois de ter criado o conjunto de aplicações, não poderá editar as propriedades. Para configurar propriedades diferentes, elimine o conjunto de aplicações e crie um novo.
-
 ## <a name="configure-app-information"></a>Configurar as informações da aplicação
 
 Neste passo, vai fornecer as informações acerca do conjunto de aplicações. Estas informações ajudam-no a identificar o conjunto de aplicações no Intune e também ajudam os utilizadores a encontrá-lo no portal da empresa.
@@ -95,11 +92,8 @@ Neste passo, configure as opções de instalação do conjunto de aplicações. 
         - **Via de Atualizações Mensais Semianuais**
         - **Via de Atualizações Mensais Semianuais (Direcionada)**
     - **Aceitar automaticamente o contrato de licença do utilizador final**: selecione esta opção se não precisar que os utilizadores finais aceitem o contrato de licença. O Intune irá aceitar automaticamente o contrato.
-    - **Utilizar a ativação de computadores partilhados**:selecione esta opção quando existirem múltiplos utilizadores a partilhar um computador. Para obter mais informações, veja a Descrição geral da ativação de computadores partilhados para o Office 365.
+    - **Utilizar a ativação de computadores partilhados**:selecione esta opção quando existirem múltiplos utilizadores a partilhar um computador. Para obter mais informações, veja [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)(Descrição geral da ativação de computadores partilhados para o Office 365).
     - **Idiomas**: o Office é instalado automaticamente nos idiomas suportados que vierem instalados com o Windows no dispositivo dos utilizadores finais. Selecione esta opção se quiser instalar idiomas adicionais no conjunto de aplicações.
-
->[!IMPORTANT]
-> Depois de ter criado o conjunto de aplicações, não poderá editar as propriedades. Para configurar propriedades diferentes, elimine o conjunto de aplicações e crie um novo.
 
 ## <a name="finish-up"></a>Concluir
 
@@ -136,8 +130,8 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 |Tentativa de instalação da versão de 64 bits num dispositivo com a versão de 32 bits instalada.|1603|-|Código de retorno da Ferramenta de Implementação do Office|
 |Tentativa de instalação de um SKU desconhecido (trata-se de um caso de utilização ilegítima do CSP do Office, visto que devemos passar apenas SKUs válidos)|17004|-|Clique-e-Use|
 |Falta de espaço|17002|-|Clique-e-Use|
-|O cliente da tecnologia clique-e-use falhou ao iniciar (inesperado)|17000|-|Clique-e-Use|
-|O cliente da tecnologia clique-e-use falhou ao colocar o cenário em fila (inesperado)|17001|-|Clique-e-Use|
+|O cliente da versão Clique-e-Use falhou ao iniciar (inesperado)|17000|-|Clique-e-Use|
+|O cliente da versão Clique-e-Use falhou ao colocar o cenário em fila (inesperado)|17001|-|Clique-e-Use|
 
 ## <a name="next-steps"></a>Próximos passos
 

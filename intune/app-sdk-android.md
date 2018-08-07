@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449875"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254404"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -463,7 +463,20 @@ Não é necessário configurar outros valores de manifesto.
 
 Autoridade e NonBrokerRedirectURI podem ser especificados se for necessário.
 
-A equipa do SDK do Intune irá precisar do ID da Aplicação (ID de Cliente). Essa informação encontra-se no [portal do Azure](https://portal.azure.com/), em **Todas as Aplicações**, na coluna do **ID da Aplicação**. Veja [esta página](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) para obter informações sobre como registar uma aplicação com o Azure AD. Pode contactar a equipa do SDK do Intune através do e-mail msintuneappsdk@microsoft.com.
+Registe a sua aplicação com o Azure Active Directory através dos seguintes passos.
+
+No portal do Azure:
+1.  Aceda ao painel **Azure Active Directory**.
+2.  Selecione a configuração **Registo de aplicações** para a aplicação.
+3.  Em **Definições** abaixo do cabeçalho **Acesso à API**, selecione **Permissão obrigatória**. 
+4.  Clique em **+ Adicionar**.
+5.  Clique em **Selecionar uma API**. 
+6.  Na caixa de pesquisa, introduza **Gestão de Aplicações Móveis da Microsoft**.
+7.  Selecione **Gestão de Aplicações Móveis da Microsoft** na lista de APIs e clique em Selecionar.
+8.  Selecione **Read and Write the User's App Management Data** (Ler e Escrever os Dados de Gestão de Aplicação do Utilizador).
+9.  Clique em **Concluído**.
+
+Veja [esta página](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) para obter informações sobre como registar uma aplicação com o Azure AD. 
 
 Veja também os requisitos para [Acesso Condicional](#conditional-access) abaixo.
 
@@ -676,7 +689,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 ### <a name="result-and-status-codes"></a>Códigos de estados e de resultados
 
-Quando uma conta é registada pela primeira vez, esta começa no estado `PENDING`, o qual indica que a tentativa inicial de inscrição do serviço MAM está incompleta. Depois de concluída a tentativa de inscrição, será enviada uma notificação com um dos Códigos de resultados da tabela abaixo. Além disso, o método `getRegisteredAccountStatus()` devolverá o estado da conta para que a aplicação possa determinar sempre se o acesso ao conteúdo empresarial está bloqueado para esse utilizador. Se a tentativa de inscrição falhar, o estado da conta poderá mudar ao longo do tempo, uma vez que o SDK volta a tentar a inscrição em segundo plano.
+Quando uma conta é registada pela primeira vez, esta começa no estado `PENDING`, o qual indica que a tentativa inicial de inscrição do serviço MAM está incompleta. Depois de concluída a tentativa de inscrição, será enviada uma notificação com um dos Códigos de resultados da tabela abaixo. Além disso, o método `getRegisteredAccountStatus()` devolverá o estado da conta para que a aplicação possa determinar sempre se o acesso ao conteúdo empresarial está bloqueado para esse utilizador. Se a tentativa de inscrição falhar, o estado da conta poderá mudar ao longo do tempo, uma vez que o SDL volta a tentar a inscrição em segundo plano.
 
 |Código do resultado | Explicação |
 | -- | -- |
@@ -1418,7 +1431,7 @@ Seguem-se orientações para exigir pedidos de início de sessão ao utilizador 
 > As vantagens da **inscrição predefinida** incluem um método simplificado de obtenção de políticas do serviço APP-WE para uma aplicação no dispositivo.
 
 ### <a name="general-requirements"></a>Requisitos Gerais
-* A equipa do SDK do Intune irá exigir o ID da Aplicação da sua aplicação. Uma forma de o fazer é através do [Portal do Azure](https://portal.azure.com/), em **Todas as Aplicações**, na coluna **ID da Aplicação**. Uma excelente forma de contactar a equipa do SDK do Intune é através do envio de um e-mail para msintuneappsdk@microsoft.com.
+* Certifique-se de que a sua aplicação está registada com o serviço Gestão de Aplicações Móveis do Intune ao seguir os passos em [Configurações comuns da ADAL n.º 2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations).
 
 ### <a name="working-with-the-intune-sdk"></a>Trabalhar com o SDK do Intune
 Estas instruções são específicas para todos os programadores de aplicações Android e Xamarin que queiram exigir políticas de proteção de aplicações do Intune para utilização de aplicações num dispositivo de utilizador final.

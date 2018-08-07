@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905534"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323247"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 
@@ -63,14 +63,14 @@ Para poder configurar o acesso condicional, verifique o seguinte:
 - Windows Phone 8.1 e posterior
 - Aplicação de e-mail nativa no iOS.
 - Clientes de correio EAS, como o Gmail para Android 4 ou posterior.
-- Clientes de correio EAS em **dispositivos com perfil de trabalho do Android:** apenas as aplicações **Gmail** e **Nine Work** são suportadas no **perfil de trabalho** em dispositivos com perfil de trabalho do Android. Para obter acesso condicional ao seu trabalho com perfis de trabalho do Android, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work, bem como implementar essas aplicações como uma instalação obrigatória.
+- Clientes de correio EAS em **dispositivos com perfil de trabalho do Android:** apenas as aplicações **Gmail** e **Nine Work para Android Enterprise** são suportadas no **perfil de trabalho** em dispositivos com perfil de trabalho do Android. Para obter acesso condicional ao seu trabalho com perfis de trabalho do Android, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work para Android Enterprise, bem como implementar essas aplicações como uma instalação obrigatória.
 
 > [!NOTE]
 > A aplicação Microsoft Outlook não é suportada no Android e iOS. 
 
 ### <a name="support-for-pcs"></a>Suporte de PCs
 
-A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita através do Intune)
+A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita através do Intune)
 
 
 ## <a name="configure-exchange-on-premises-access"></a>Configurar o acesso ao Exchange no local

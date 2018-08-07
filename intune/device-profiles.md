@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905194"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335831"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são os perfis de dispositivos do Microsoft Intune?
 
@@ -73,7 +73,7 @@ Para carregar a Proteção Avançada Contra Ameaças do Windows Defender (WDATP)
 Esta funcionalidade suporta:
 - Windows 10 e posterior
 
-## <a name="kiosk"></a>Modo de Quiosque
+## <a name="kiosk"></a>Modo de Local Público
 
 O perfil de [definições do modo de quiosque](kiosk-settings.md) configura um dispositivo para que execute uma aplicação ou execute múltiplas aplicações. Também pode personalizar outras funcionalidades no modo de quiosque, incluindo o menu Iniciar e um browser.
 
@@ -113,6 +113,13 @@ Esta funcionalidade suporta:
 - iOS
 - macOS
 - Windows 8.1 (importar apenas)
+
+## <a name="esim-cellular---public-preview"></a>Rede celular eSIM – pré-visualização pública
+
+[Os perfis celulares eSIM](esim-device-configuration.md) permitem configurar planos de dados celulares nos seus dispositivos geridos para acesso à Internet e a dados.  Após obter códigos de ativação do seu operador móvel, poderá utilizar o Intune para importar estes códigos de ativação e, em seguida, atribuí-los aos seus dispositivos compatíveis com eSIM.
+
+Esta funcionalidade suporta:
+- O Windows 10 Fall Creators Update e posterior
 
 ## <a name="education"></a>Educação
 As [definições de educação para Windows 10](education-settings-configure.md) configuram as opções da [aplicação Fazer um Teste do Windows](https://education.microsoft.com/gettrained/win10takeatest). Quando configurar estas opções, não pode executar qualquer outra aplicação no dispositivo até o teste estar concluído.

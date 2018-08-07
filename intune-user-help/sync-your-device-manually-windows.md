@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048024"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236060"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
@@ -40,7 +40,7 @@ Todos os dispositivos Windows podem ser sincronizados a partir da aplicação De
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Sincronizar a partir da aplicação Portal da Empresa para Windows
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Sincronizar diretamente a partir da aplicação Portal da Empresa para Windows
 Conclua estes passos para sincronizar manualmente qualquer dispositivo com o Windows 10 e executar a Atualização para Criativos (versão 1703) ou superior.
 
 1.  Abra a aplicação Portal da Empresa no dispositivo.
@@ -49,7 +49,7 @@ Conclua estes passos para sincronizar manualmente qualquer dispositivo com o Win
 
     ![Captura de ecrã da home page da aplicação Portal da Empresa, com a opção Definições realçada](./media/RS1_homePage_settings_04.png)  
     
-    ![Captura de ecrã da página de definições da aplicação Portal da Empresa, com o botão Sincronizar realçado](./media/RS1_settingspage_sync05.png)    
+    ![Captura de ecrã da página de definições da aplicação Portal da Empresa, com o botão Sincronizar realçado](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>Sincronizar a partir da Aplicação Definições 
 Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft HoloLens, Windows 10, Windows 10 Mobile ou Windows Phone 8.1 a partir da aplicação Definições.

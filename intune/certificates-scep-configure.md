@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
-ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
+ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36297910"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321242"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -345,8 +345,8 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
    - **iOS**
    - **macOS**
    - **Windows Phone 8.1**
-   - **Windows 8.1 e posterior**
-   - **Windows 10 e posterior**
+   - **Windows 8.1 e posterior**
+   - **Windows 10 e posterior**
 5. Na lista pendente **Tipo de perfil**, selecione **Certificado SCEP**.
 6. No painel **Certificado SCEP**, configure as seguintes definições:
 
@@ -398,7 +398,7 @@ O perfil será criado e apresentado no painel Lista de perfis.
 
 Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 
-- Ao atribuir perfis de certificado a grupos, o ficheiro de certificado do perfil de certificado da AC fidedigna é instalado no dispositivo. O dispositivo utiliza o perfil de certificado de SCEP para criar um pedido de certificado por parte do dispositivo.
+- Ao atribuir perfis de certificado a grupos, o ficheiro de certificado do perfil de certificado da AC fidedigna é instalado no dispositivo. O dispositivo utiliza o perfil de certificado SCEP para criar um pedido de certificado por parte do dispositivo.
 - Os perfis de certificado são instalados apenas em dispositivos que executam a plataforma que utiliza quando criou o perfil.
 - Pode atribuir perfis de certificado a coleções de utilizadores ou de dispositivos.
 - Para publicar um certificado num dispositivo rapidamente após a inscrição do mesmo, atribua o perfil de certificado a um grupo de utilizadores, em vez de atribuir a um grupo de dispositivos. Se atribuir a um grupo de dispositivos, será preciso um registo do dispositivo completo antes de o dispositivo receber políticas.
@@ -462,4 +462,6 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 | 0x0FFFFFFFF | Unknown_Error  | Não conseguimos concluir o pedido porque ocorreu um erro do lado do servidor. Tente novamente. |
 
 ## <a name="next-steps"></a>Próximos passos
-[Utilizar certificados PKCS](certficates-pfx-configure.md) ou [emitir certificados PKCS de um serviço Web de gestão de PKI da Symantec](certificates-symantec-configure.md).
+
+- [Utilizar certificados PKCS](certficates-pfx-configure.md) ou [emitir certificados PKCS de um serviço Web de gestão de PKI da Symantec](certificates-symantec-configure.md)
+- [Adicionar um CA de terceiros para utilizar o SCEP com o Intune](certificate-authority-add-scep-overview.md)
