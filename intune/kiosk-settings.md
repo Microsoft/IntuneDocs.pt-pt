@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321806"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481126"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Definições de quiosque para Windows 10 (e posterior) no Intune
 
@@ -25,9 +25,18 @@ Os perfis de quiosque são utilizados para configurar dispositivos com o Windows
 
 ## <a name="kiosk-settings"></a>Definições de quiosque
 
-1. Selecione **Adicionar** para criar um ambiente de quiosque.
-2. Introduza o **Nome da configuração do quiosque** para o seu quiosque. Este nome identifica um grupo de aplicações, o esquema destas aplicações no menu Iniciar e os utilizadores que estão atribuídos a esta configuração de quiosque.
-3. Selecione o **Modo de quiosque**. **Modo de quiosque**: identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+3. Introduza as seguintes propriedades:
+
+   - **Nome**: introduza um nome descritivo para o novo perfil.
+   - **Descrição:** introduza uma descrição para o perfil. A descrição é opcional, mas recomendada.
+   - **Plataforma**: selecione **Windows 10 e posterior**
+   - **Tipo de perfil**: selecione **Quiosque (Pré-visualização)**
+   
+4. Selecione **Quiosque** > **Adicionar**.
+5. Introduza o **Nome da configuração do quiosque** para o seu quiosque. Este nome identifica um grupo de aplicações, o esquema destas aplicações no menu Iniciar e os utilizadores que estão atribuídos a esta configuração de quiosque.
+6. Selecione o **Modo de quiosque**. O **modo de quiosque** identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
 
     - **Não configurado** (predefinição): a política não ativa o modo de quiosque.
     - **Quiosque de uma aplicação em ecrã inteiro**: o perfil permite que o dispositivo seja executado como uma única conta de utilizador e só permite a execução de uma única aplicação da Plataforma Universal do Windows (UWP). Quando o utilizador inicia sessão, é iniciada uma aplicação específica. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.

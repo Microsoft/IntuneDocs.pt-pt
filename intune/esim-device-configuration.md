@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336082"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400288"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis celulares eSIM no Intune – pré-visualização pública
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336082"
 
 ## <a name="introduction"></a>Introdução
 
-O eSIM é um chip SIM incorporado e permite-lhe ligar-se à Internet através de uma ligação de dados celular num dispositivo compatível com eSIM, como o [Surface Pro LTE](https://www.microsoft.com/surface/business/surface-pro). Com um eSIM, não precisa de obter um cartão SIM da sua operadora de rede móvel e pode alternar rapidamente entre planos de dados e operadoras de redes móveis.
+O eSIM é um chip SIM incorporado e permite-lhe ligar-se à Internet através de uma ligação de dados celular num dispositivo compatível com eSIM, como o [Surface Pro LTE](https://www.microsoft.com/surface/business/surface-pro). Com um eSIM, não precisa de obter um cartão SIM junto do seu operador de rede móvel. Enquanto viajante global, pode também alternar entre operadores de redes móveis e planos de dados para estar sempre ligado.
 
 Por exemplo, poderá ter um plano de dados celular para o trabalho e outro plano de dados com uma operadora de rede móvel diferente para utilização pessoal. Quando viaja, pode aceder à Internet ao localizar operadoras de redes móveis com planos de dados numa determinada área.
 

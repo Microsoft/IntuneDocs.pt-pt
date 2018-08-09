@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321745"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575054"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utilizar APIs para adicionar outras ACs para o SCEP ao Intune
 
@@ -41,11 +41,18 @@ Com o Intune, os administradores criam perfis do SCEP e atribuem-nos aos disposi
 - O Certificado de Raiz Fidedigna da Autoridade de Certificação
 - Atributos de certificado e mais
 
-Os dispositivos que dão entrada no Intune têm um perfil do SCEP atribuído e são configurados com estes parâmetros. Uma palavra-passe do SCEP gerada dinamicamente é criada pelo Intune atribuída ao dispositivo.
+Os dispositivos que dão entrada no Intune têm um perfil do SCEP atribuído e são configurados com estes parâmetros. Uma palavra-passe de desafio do SCEP gerada dinamicamente é criada pelo Intune e atribuída ao dispositivo.
 
-Esta palavra-passe contém detalhes sobre os parâmetros esperados no CSR (pedido de assinatura do certificado) que o dispositivo emite para o servidor do SCEP. A palavra-passe também inclui o prazo de expiração do desafio. O Intune encripta as informações, assina o blob encriptado e empacota estes detalhes na palavra-passe do SCEP.
+Esse desafio contém:
 
-Os dispositivos que contactam o servidor do SCEP para pedir um certificado dão esta palavra-passe do SCEP. Esta palavra-passe tem de passar a validação para que o servidor do SCEP emita um certificado para o dispositivo. Quando uma palavra-passe do SCEP é validada, ocorrem as seguintes verificações:
+- A palavra-passe de desafio gerada dinamicamente
+- Os detalhes sobre os parâmetros esperados no CSR (pedido de assinatura do certificado) que o dispositivo emite para o servidor do SCEP
+- O prazo de expiração do desafio
+
+O Intune encripta estas informações, assina o blob encriptado e empacota estes detalhes na palavra-passe de desafio do SCEP.
+
+Os dispositivos que contactam o servidor do SCEP para pedir um certificado dão esta palavra-passe de desafio do SCEP. O servidor do SCEP envia o CSR e a palavra-passe de desafio SCEP encriptada para o Intune para validação.  Esta palavra-passe de desafio e o CRS têm de passar a validação para que o servidor do SCEP emita um certificado para o dispositivo. Quando um desafio do SCEP é validado, ocorrem as seguintes verificações:
+
 
 - Valida a assinatura do blob encriptado
 - Valida que o desafio não expirou

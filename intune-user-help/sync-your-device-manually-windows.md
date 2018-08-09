@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236060"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362029"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
 Quando a velocidade de instalação da aplicação estiver abaixo do ideal, inicie a sincronização manual do dispositivo. A sincronização manual força o seu dispositivo a ligar-se ao Intune para obter as comunicações e atualizações mais recentes. A velocidade de instalação pode aumentar após a sincronização do dispositivo estar concluída.
 
-O Intune suporta a sincronização manual a partir da aplicação Portal da Empresa e a partir da aplicação Definições do dispositivo. 
+O Intune suporta a sincronização manual a partir da aplicação Portal da Empresa, da barra de tarefas do ambiente de trabalho ou do Menu Iniciar e da aplicação Definições do dispositivo. 
 
 A funcionalidade da aplicação Portal da Empresa é suportada em dispositivos com o Windows 10 a executar a Atualização para Criativos (1703) ou superior. 
 * [Sincronizar a partir da aplicação Portal da Empresa](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Conclua estes passos para sincronizar manualmente qualquer dispositivo com o Win
     
     ![Captura de ecrã da página de definições da aplicação Portal da Empresa, com o botão Sincronizar realçado](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>Sincronizar a partir da barra de tarefas do dispositivo ou do menu Iniciar   
+
+Também pode aceder ao controlo de sincronização fora da aplicação, a partir do ambiente de trabalho do dispositivo. Este procedimento será útil se tiver a aplicação afixada diretamente na barra de tarefas ou no menu Iniciar e quiser sincronizar rapidamente.  
+
+1. Localize o ícone da aplicação Portal da Empresa na barra de tarefas ou no menu Iniciar.  
+2. Clique com o botão direito do rato no ícone da aplicação para que seja apresentado o menu (também denominado lista de atalhos).  
+
+    ![Captura de ecrã a mostrar a barra de tarefas do Windows no ambiente de trabalho de um dispositivo. Clicou-se no ícone da aplicação Portal da Empresa para mostrar um menu com as opções “Afixar na barra de tarefas”, “Fechar janela” e “Sincronizar este dispositivo”.](./media/sync-device-from-start-menu-1807.png)  
+
+3. Selecione **Sincronizar este dispositivo**. A aplicação Portal da Empresa é aberta na página **Definições** e inicia a sincronização.  
+
 ## <a name="sync-from-settings-app"></a>Sincronizar a partir da Aplicação Definições 
-Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft HoloLens, Windows 10, Windows 10 Mobile ou Windows Phone 8.1 a partir da aplicação Definições.
+Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft HoloLens, Windows 10, Windows 10 Mobile ou Windows Phone 8.1 a partir da aplicação Definições.  
 
 ### <a name="windows-10-desktop"></a>Computadores com o Windows 10
 1. No seu dispositivo, selecione **Iniciar** > **Definições**.
