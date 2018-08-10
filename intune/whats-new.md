@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321565"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362063"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -103,7 +103,7 @@ Atualmente, o Intune suporta [pedidos de SCEP que utilizam os Serviços de Certi
 #### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>Alternar entre mostrar ou não mostrar o botão Terminar Sessão num browser do Quiosque <!-- 2455253 -->
 Agora pode configurar as opções para determinar se os browsers do Quiosque devem ou não mostrar o botão Terminar Sessão. Pode ver o controlo em **Configuração do dispositivo** > **Quiosque (pré-visualização)** > **Browser da Web do Quiosque**. Se o botão estiver ativado e quando o utilizador clicar no mesmo, a aplicação pede confirmação para terminar a sessão. Ao confirmar, o browser limpa todos os dados de navegação e regressa ao URL predefinido.
 
-#### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>Criar um perfil de configuração celular eSIM <!-- 2564077 -->
+#### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>Criar um perfil de configuração de rede móvel eSIM <!-- 2564077 -->
 Em **Configuração do dispositivo**, pode criar um perfil celular eSIM. Pode importar um ficheiro com códigos de ativação de rede móvel fornecidos pela sua operadora móvel. Em seguida, poderá implementar estes perfis nos seus dispositivos Windows 10 compatíveis com eSIM LTE, como o Surface Pro LTE e outros dispositivos compatíveis com eSIM.
 
 Verifique se os seus [dispositivos suportam perfis eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
@@ -1124,6 +1124,16 @@ Pode especificar aplicações negadas no Intune. Se uma aplicação for negada, 
 
 ## <a name="notices"></a>Avisos
 
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Planear a Alteração: Alterar a Palavra-passe na Próxima Autenticação adicionada ao Intune<!-- 1873216 -->
+Na versão de serviço de setembro, o Intune planeia integrar a recém-lançada definição **Alterar a Palavra-passe na Próxima Autenticação** da Apple para dispositivos macOS com a versão 10.13 e superior. Antes desta definição, os fornecedores da MDM não podiam verificar se o código de acesso do dispositivo tinha sido alterado para estar em conformidade. As políticas de configuração e conformidade do Intune apenas confirmam que, numa próxima alteração de uma palavra-passe do dispositivo, esta é identificada como em conformidade. Quando esta nova funcionalidade da Apple é adicionada, os utilizadores do macOS receberão um pedido para atualizarem a palavra-passe, mesmo que esta esteja em conformidade.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Este problema afeta os ambientes com uma política de dispositivos macOS com o Intune ou uma MDM híbrida. Agora que a Apple possui esta definição **Alterar a Palavra-passe na Nova Autorização**, o Intune pode compelir os utilizadores a atualizar a palavra-passe quando é lançada uma política de palavra-passe. Se bloquear os recursos da empresa até que o dispositivo seja identificado como em conformidade, os utilizadores finais poderão perder o acesso aos recursos da empresa, como o e-mail ou sites do SharePoint, até que seja realizada a reposição da palavra-passe. No futuro, todas as atualizações das políticas de palavra-passe de conformidade e de configuração vão compelir os utilizadores visados a atualizar as palavras-passe.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Informe o suporte técnico. Se não pretender aplicar esta política de dispositivo macOS, será recomendável anular a atribuição ou eliminar a política macOS existente. A pesquisa de clientes sugere que a maioria dos clientes não são afetados por esta alteração. A maioria dos utilizadores finais atualizam a palavra-passe depois de receberem um pedido para se inscreverem com uma palavra-passe ou reporem a palavra-passe para permanecerem em conformidade.
+
+
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Plano de Alteração: em setembro, o Intune irá suportar o iOS 10 e posterior <!-- 2454656 -->
 Em setembro, a Apple planeia lançar o iOS 12. Brevemente após o lançamento, iremos mudar a inscrição do Intune, o Portal da Empresa e o browser gerido para suportar o iOS 10 e posterior.  
 
@@ -1200,7 +1210,7 @@ Adicionámos algumas funcionalidades novas com base no seu feedback, que irão m
 * Capacidade de partilhar ligações diretas para as aplicações
 * Desempenho melhorado para grandes catálogos de aplicações
 
-Não precisa de tomar medidas para se preparar para esta alteração. Iremos informá-lo quando o site do Portal da empresa atualizado estiver disponível para si. No entanto, poderá ter de atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS. Pode ver uma imagem de exemplo na página [Novidades na IU da aplicação](whats-new-app-ui.md).
+Não precisa de tomar medidas para se preparar para esta alteração. Iremos informá-lo quando o site do Portal da empresa atualizado estiver disponível para si. No entanto, poderá ter de atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa no iOS, uma vez que o site ativa a secção **Aplicações** da aplicação para iOS. Pode ver uma imagem de exemplo na página [Novidades na IU da aplicação](whats-new-app-ui.md).
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
 A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS. Continuaremos a fornecer mais detalhes no nosso [blogue de suporte do Intune](https://aka.ms/compportalats).
