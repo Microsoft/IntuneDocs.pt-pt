@@ -98,7 +98,7 @@ Estas definições são aplicáveis a tipos de rede específicos, incluindo **Re
 
 ## <a name="windows-defender-smartscreen-settings"></a>Definições do Windows Defender SmartScreen
 
-Suportado nas seguintes edições do Windows 10 com o Edge instalado:
+Suportado nas seguintes edições do Windows 10 com o Microsoft Edge instalado:
 - Casa
 - Profissional
 - Empresa
