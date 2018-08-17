@@ -1,12 +1,11 @@
 ---
-title: Definições de restrição de dispositivos no Microsoft Intune para dispositivos Android
-titlesuffix: ''
-description: Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos a executar o Android.
+title: Definições de restrição de dispositivos para Android no Microsoft Intune – Azure | Microsoft Docs
+description: Veja uma lista de todas as definições de dispositivos Android que pode controlar e restringir no Microsoft Intune. Utilize estas definições para controlar a palavra-passe, aceder ao Google Play, permitir ou proibir aplicações, controlar as definições do browser, bloquear aplicações, criar cópias de segurança na cloud do Google e controlar as opções de mensagens, voz, roaming de dados, Wi-Fi e ligação Bluetooth.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190661"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587028"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Definições de restrição de dispositivos do Microsoft Intune para Android e Samsung Knox Standard 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Definições de restrição de dispositivos Android e Samsung Knox Standard – Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
     > Os dispositivos Samsung Knox exigem automaticamente um PIN de 4 dígitos durante a inscrição na MDM. Os dispositivos Android nativos podem exigir automaticamente um PIN para ficarem em conformidade com o acesso condicional.
 
 - **Comprimento mínimo da palavra-passe** – introduza o comprimento mínimo da palavra-passe que um utilizador tem de configurar (entre 4 e 16 carateres).
-- **Máximo de minutos de inatividade até o ecrã bloquear** – especifica o número de minutos de inatividade antes de o dispositivo bloquear automaticamente.
+- **Máximo de minutos de inatividade até o ecrã bloquear** – introduza o número máximo de minutos de inatividade permitidos no dispositivo até o ecrã bloquear. Num dispositivo, um utilizador final não pode definir um valor de tempo superior ao tempo configurado no perfil. Um utilizador final pode definir um valor de tempo inferior. Por exemplo, se o perfil estiver definido para 15 minutos, um utilizador final poderá definir o valor para 5 minutos. Um utilizador final não pode definir o valor para 30 minutos. 
 - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – especifica o número de falhas de início de sessão consecutivas a permitir antes de os dados do dispositivo serem apagados.
 - **Expiração de palavra-passe (dias)** – especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
 -  **Tipo obrigatório de palavra-passe** – especifica o nível de complexidade da palavra-passe exigido e se podem ser utilizados dispositivos biométricos. Escolha entre:

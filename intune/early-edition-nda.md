@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575088"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001915"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>A edição antecipada do Microsoft Intune – agosto de 2018
 
@@ -44,7 +44,7 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 ### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>O Windows Hello destina-se a utilizadores e dispositivos <!-- 1106609 -->
 Quando cria uma política [Windows Hello para Empresas](windows-hello.md), esta aplica-se a todos os utilizadores numa organização (ao nível dos inquilinos). Com esta atualização, a política também pode ser aplicada a utilizadores ou dispositivos específicos através de uma política de configuração de dispositivos (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Identity Protection** > **Windows Hello para Empresas**).
 
-No Intune no portal do Azure, a configuração e as definições do Windows Hello vão estar presentes tanto na **Inscrição de dispositivos** como na **Configuração do dispositivo**. A **Inscrição de dispositivos** destina-se a toda a organização (ao nível dos inquilinos) e suporta o Windows AutoPilot (OOBE). A **Configuração do dispositivo** destina-se a dispositivos e utilizadores através de uma política aplicada durante o registo.
+No Intune no portal do Azure, a configuração e as definições do Windows Hello vão estar presentes tanto na **Inscrição de dispositivos** como na **Configuração do dispositivo**. A **Inscrição de dispositivos** destina-se a toda a organização (ao nível dos inquilinos) e suporta o Windows Autopilot (OOBE). A **Configuração do dispositivo** destina-se a dispositivos e utilizadores através de uma política aplicada durante o registo.
 
 Aplica-se a:  
 - Windows 10 e posterior
@@ -75,7 +75,7 @@ Para criar uma etiqueta de âmbito, escolha **Funções do Intune** > **Âmbito 
 Para adicionar uma etiqueta de âmbito a uma atribuição de função, escolha **Funções do Intune** > **Todas as funções** > **Gestor de Políticas e Perfis** > **Atribuições** > **Âmbito (Etiquetas)**.
 Para adicionar uma etiqueta de âmbito a um perfil de configuração, escolha **Configuração do dispositivo** > **Perfis** > escolha um perfil > **Propriedades** > **Âmbito (Etiquetas)**.
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Atribuir um utilizador e um nome amigável a um dispositivo do AutoPilot <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Atribuir um utilizador e um nome amigável a um dispositivo do Autopilot <!--1346521 -->
 Uma pré-visualização pública futura permitirá aos administradores atribuir um utilizador a um único dispositivo do Autopilot.  Os administradores também serão capazes de atribuir nomes amigáveis para dar as boas-vindas ao utilizador quando estão a configurar o dispositivo com o Autopilot.
 
 Aplica-se a: Windows Insider 1809 ou uma versão posterior (durante a pré-visualização).
@@ -99,30 +99,29 @@ Para ver esta funcionalidade, escolha **Inscrição de dispositivos** > **Restri
 A ativação desta restrição não tem qualquer efeito nos dispositivos já inscritos.
 Após a ativação da restrição, o Intune irá verificar se cada novo pedido de inscrição do Windows foi autorizado como uma inscrição empresarial. Os seguintes métodos estão qualificados como autorizados como uma inscrição empresarial:
 - A inscrição de utilizadores está a utilizar uma [conta do gestor de inscrição de dispositivos]( device-enrollment-manager-enroll.md).
-
-- O dispositivo é inscrito através do [Windows AutoPilot](enrollment-autopilot.md).
+- O dispositivo é inscrito através do [Windows Autopilot](enrollment-autopilot.md).
 - O número IMEI do dispositivo é listado na **Inscrição de dispositivos** > **[Identificadores de dispositivos da empresa]( corporate-identifiers-add.md)**).
 - O dispositivo é inscrito através de um [pacote de aprovisionamento em massa](windows-bulk-enroll.md).
 - O dispositivo é inscrito através da [inscrição automática do SCCM para cogestão](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
-As inscrições não autorizadas serão bloqueadas.
-As inscrições seguintes estão marcadas como empresariais pelo Intune, mas uma vez que não oferecem ao administrador do Intune controlo por dispositivo, serão bloqueadas:
+
+As inscrições não autorizadas serão bloqueadas. As inscrições seguintes estão marcadas como empresariais pelo Intune, mas uma vez que não oferecem ao administrador do Intune controlo por dispositivo, serão bloqueadas:
 - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory durante a configuração do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory a partir da configuração do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 Os seguintes métodos de inscrição pessoal também serão bloqueados:
 - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [Adicionar Conta Profissional a partir das Definições do Windows](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - Opção [Apenas inscrição na MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) a partir das Definições do Windows.
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Especifique os padrões de nome de computador num perfil AutoPIlot <!--1849855-->
-Poderá especificar um modelo de nome do computador para gerar e definir o [nome do computador](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) durante a inscrição do AutoPilot. Terá de especificar isso no perfil do AutoPilot localizado em **Inscrição de dispositivos** > **Inscrição Windows** > **Serviço do Windows Autopilot Deployment** > **Perfis**. Apenas podem ser utilizados carateres alfanuméricos e o hífen.
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Especificar os padrões de nome de computador num perfil do Autopilot <!--1849855-->
+Poderá especificar um modelo de nome do computador para gerar e definir o [nome do computador](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) durante a inscrição do Autopilot. Terá de especificar isso no perfil do Autopilot localizado em **Inscrição de dispositivos** > **Inscrição Windows** > **Serviço do Windows Autopilot Deployment** > **Perfis**. Apenas podem ser utilizados carateres alfanuméricos e o hífen.
 Aplica-se a: Windows Insider 1809 ou uma versão posterior (durante a pré-visualização).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>O número da versão do iOS e o número de compilação são apresentados <!-- 1892471 -->
 Em **Conformidade do dispositivo** > **Conformidade do dispositivo**, é apresentada a versão do sistema operativo iOS. Numa atualização futura, também será apresentado o número de compilação.
 Quando as atualizações de segurança são lançadas, normalmente, a Apple não altera o número da versão, mas atualiza o número de compilação. Ao apresentar o número de compilação, pode verificar facilmente se foi instalada uma atualização da vulnerabilidade.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Para os perfis do Windows AutoPilot, oculte as opções de alteração de conta na página de início de sessão da empresa e na página de erro do domínio <!--1901669 -->
-Uma pré-visualização pública incluirá novas opções de perfil do Windows AutoPilot para os administradores ocultarem as opções de alteração de conta nas páginas de início de sessão da empresa e de erro do domínio. Para ocultar essas opções, é preciso configurar a Imagem Corporativa da Empresa no Azure Active Directory. Aplica-se a: Windows Insider 1809 ou uma versão posterior (durante a pré-visualização).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Para os perfis do Windows Autopilot, oculte as opções de alteração de conta na página de início de sessão da empresa e na página de erro do domínio <!--1901669 -->
+Uma pré-visualização pública incluirá novas opções de perfil do Windows Autopilot para os administradores ocultarem as opções de alteração de conta nas páginas de início de sessão da empresa e de erro do domínio. Para ocultar essas opções, é preciso configurar a Imagem Corporativa da Empresa no Azure Active Directory. Aplica-se a: Windows Insider 1809 ou uma versão posterior (durante a pré-visualização).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>Atrasar quando as atualizações de software iOS são apresentadas no dispositivo <!-- 1949583 -->
 Em Intune > **Atualizações de Software** > **Atualizar políticas para iOS**, pode configurar os dias e as horas em que não pretende que os dispositivos instalem as atualizações. Numa atualização futura, poderá atrasar a apresentação de uma atualização de software no dispositivo, entre 1 a 90 dias. 
@@ -167,6 +166,13 @@ Aplica-se a:
 As políticas de conformidade que criou no portal clássico do Azure serão preteridas.  Quando isto acontecer, pode rever e eliminar as políticas existentes, mas não pode atualizá-las. Pode exportar as políticas como um ficheiro separado por vírgulas (ficheiro .csv). Em seguida, utilize os detalhes no ficheiro para recriar estas políticas no portal do Azure no Intune.
 > [!IMPORTANT]
 > Quando o portal clássico do Azure for extinguido, não poderá aceder às suas políticas nem as poderá ver. Desta forma, confirme que as exporta e recria no portal do Azure antes do portal clássico do Azure ser extinguido.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Alteração da terminologia para "extinguir" e "eliminar" <!-- 2175759 -->
+Para ser consistente com o Graph API, os seguintes termos serão alterados na documentação e na interface de utilizador do Intune:
+- **Remover dados da empresa** será alterado para **extinguir**
+- **Reposição de fábrica** será alterado para **eliminar**
+
+
 
 <!-- 1807 start -->
 
