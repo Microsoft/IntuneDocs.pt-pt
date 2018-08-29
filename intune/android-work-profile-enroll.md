@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909070"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255064"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configurar a inscrição de dispositivos com perfil de trabalho do Android
 
@@ -34,7 +34,7 @@ Para configurar a gestão de perfis de trabalho do Android, siga estes passos:
 2. Especificar as definições de inscrição de perfis de trabalho do Android. Os perfis de trabalho do Android [só são suportados em determinados dispositivos Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Qualquer dispositivo que suporte os perfis de trabalho do Android também suporta a gestão Android convencional. O Intune permite-lhe especificar a forma como os dispositivos que suportam os perfis de trabalho do Android devem ser geridos a partir das [Restrições de Inscrição](enrollment-restrictions-set.md).
     - **Bloquear (especificado por predefinição)**: todos os dispositivos Android, incluindo os dispositivos que suportem os perfis de trabalho do Android, serão inscritos como dispositivos Android convencionais.
     - **Permitir**: todos os dispositivos que suportem os perfis de trabalho do Android são inscritos como dispositivos com perfil de trabalho do Android. Qualquer dispositivo Android que não suporte os perfis de trabalho do Android é inscrito como um dispositivo Android convencional.
-3. [Indique aos seus utilizadores como devem inscrever os dispositivos](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Indique aos seus utilizadores como devem inscrever os dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Se quiser inscrever dispositivos nos perfis de trabalho do Android, mas os mesmos já tiverem sido inscritos como dispositivos Android normais, terá de anular a inscrição dos mesmos e voltar a inscrevê-los.
@@ -43,13 +43,13 @@ Se estiver a inscrever dispositivos com perfil de trabalho do Android através d
 
 Para obter mais informações, veja [Dados que o Intune envia para a Google](data-intune-sends-to-google.md).
 
-## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Aprovar a aplicação Portal da Empresa na loja Google Play gerida
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Aprovar a aplicação Portal da Empresa na Google Play Store gerida
 
 Para garantir que os utilizadores têm sempre acesso à versão mais recente da aplicação Portal da Empresa, terá de aprovar a aplicação Portal da Empresa para Android na Google Play Store Gerida. Ao aprová-la, garante que todos os utilizadores recebem atualizações automáticas. Se não a aprovar, a aplicação Portal da Empresa irá eventualmente ficar desatualizada e poderá não receber correções importantes ou novas funcionalidades quando forem lançadas pela Microsoft.
 
 Siga estes passos para aprovar o Portal da Empresa do Intune:
 
-1.  Navegue até à aplicação Portal da Empresa na [loja Google Play gerida](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Navegue até à aplicação Portal da Empresa na [Google Play Store gerida](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Inicie sessão na Google Play Store Gerida com a mesma conta Google que utilizou para configurar o enlace do Android Enterprise.
 3.  Clique em **Aprovar** e será aberta uma nova caixa de diálogo.
 4.  Reveja as permissões nesta caixa de diálogo e, em seguida, clique em **Aprovar**. Terá de dar estas permissões para permitir que a aplicação Portal da Empresa faça a gestão do perfil de trabalho no dispositivo.

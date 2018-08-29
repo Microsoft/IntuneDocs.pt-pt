@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
+ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927000"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251667"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gerir aplicações iOS
@@ -70,7 +70,7 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 |Fornecedor de MDM de terceiros| Chave de Configuração | Tipo de Valor | Valor de Configuração|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Cadeia | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | Cadeia | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | Cadeia | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Cadeia | ${userUPN} **ou** ${userEmailAddress} |
 |Gestor de Dispositivos Móveis ManageEngine | IntuneMAMUPN | Cadeia | %upn% |

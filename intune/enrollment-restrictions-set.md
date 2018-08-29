@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501154"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251533"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -30,9 +30,6 @@ Como administrador do Intune, pode criar e gerir as restrições de inscrição 
 
 >[!NOTE]
 >As restrições de inscrição não são funcionalidades de segurança. A identidade dos dispositivos pode ser falsificada de forma a contornar estas restrições. Estas restrições são uma forma de dissuadir utilizadores sem fins maliciosos.
-
->[!NOTE]
->As funcionalidades de prioridade e restrições de inscrição atribuídas a grupos mencionadas neste artigo estão a ser implementadas na base de clientes do Intune. Até esta implementação ser concluída, poderá não ter acesso às funcionalidades de prioridade e grupo.
 
 As restrições de inscrição específicas que pode criar incluem:
 
