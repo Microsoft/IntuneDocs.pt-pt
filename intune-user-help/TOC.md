@@ -64,7 +64,7 @@
 ### [O que acontece ao inscrever um dispositivo iOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Instalar e iniciar sessão no Portal da Empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Inscrever o seu dispositivo iOS](enroll-your-device-in-intune-ios.md)
-### [Inscrever o seu dispositivo iOS do Programa de registo de aparelho](enroll-your-device-dep-ios.md)
+### [Inscrever o seu dispositivo iOS fornecido pela organização](enroll-your-device-dep-ios.md)
 
 ### [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Definir ou alterar o código de acesso](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [Utilizar o seu dispositivo macOS](using-your-macos-device-with-intune.md)
 ### [O que acontece ao inscrever um dispositivo macOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Inscrever o seu dispositivo macOS](enroll-your-device-in-intune-macos-cp.md)
-### [Enroll a company-provided macOS device](enroll-company-device-macos.md) (Inscrever um dispositivo macOS disponibilizado pela empresa)  
+### [Enroll your organization-provided macOS device](enroll-company-device-macos.md) (Inscrever o seu dispositivo macOS fornecido pela organização)  
 ### [Anular a inscrição do seu dispositivo macOS](unenroll-your-device-from-intune-macos.md)  
 ### [Corrigir problemas comuns com o macOS](troubleshoot-your-device-macos.md)
 #### [A minha versão do macOS ainda não é suportada](your-macos-version-isnt-yet-supported.md)
