@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905245"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251693"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicações Web ao Microsoft Intune
 
@@ -45,7 +45,11 @@ Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na 
 6. No painel **Adicionar aplicação**, na lista pendente **Tipo de aplicação** selecione **Ligação Web**.
 7. Selecione **Configurar**.
 8. No painel **Informações da aplicação**, adicione as informações seguintes:
-    - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa.
+    - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. 
+    
+        > [!NOTE]
+        > Se alterar o nome da aplicação através do portal do Azure no Intune após ter implementado e instalado a aplicação, a mesma deixará de poder ser visada através de comandos.
+    
     - **Descrição**: introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
     - **Publicador**: introduza o nome do publicador desta aplicação.
     - **URL da Aplicação**: introduza o URL do site que aloja a aplicação que pretende atribuir.

@@ -1,11 +1,11 @@
 ---
-title: Utilizar certificados PKCS com o Microsoft Intune – Azure | Microsoft Docs
+title: Utilizar certificados PKCS com o Microsoft Intune – Azure | Micrososft Docs
 description: Adicionar ou criar certificados Public Key Cryptography Standard com o Microsoft Intune, incluindo os passos para exportar um certificado de raiz, configurar o modelo de certificado, transferir e instalar o Microsoft Intune Certificate Connector (NDES), criar um perfil de configuração de dispositivo, criar um perfil de Certificado PKCS no Azure e Autoridade de Certificação.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,17 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c795acb5ca6590b165b89c3a974038069b1c56ef
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a86b53e34cc4fa24ec683657a646f8545396166e
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321514"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910841"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+> [!IMPORTANT]
+> Estamos a fazer algumas melhorias à funcionalidade S/MIME descrita neste artigo. Por esse motivo, a funcionalidade S/MIME será removida temporariamente do Intune. Quando esta funcionalidade for lançada, iremos remover esta nota.
 
 Os certificados autenticam e protegem o acesso aos seus recursos empresariais, tal como um VPN ou a sua rede Wi-Fi. Este artigo mostra-lhe como exportar um certificado PKCS e, em seguida, adicioná-lo a um perfil do Intune.
 
@@ -81,7 +82,7 @@ Para autenticar com VPN, Wi-Fi ou outros recursos, é necessário um certificado
 3. Localize o modelo de certificado de **Utilizador**, clique com o botão direito do rato no mesmo e selecione **Duplicar Modelo**. As **Propriedades de Novo Modelo** são abertas.
 
     > [!NOTE]
-    > Para cenários de encriptação e assinaturas de e-mail com S/MIME, muitos administradores utilizam certificados separados para assinar e encriptar. Se estiver a utilizar os Serviços de Certificados do Microsoft Active Directory, pode utilizar o modelo **Apenas Assinatura do Exchange** para certificados de assinaturas de e-mail S/MIME e o modelo **Utilizador do Exchange** para certificados de encriptação S/MIME.  Se estiver a utilizar outra autoridade de certificação, sugerimos que consulte as respetivas orientações para configurar modelos de assinaturas e encriptação.
+    > Para cenários de encriptação e assinaturas de e-mail com S/MIME, muitos administradores utilizam certificados separados para assinar e encriptar. Se estiver a utilizar os Serviços de Certificados do Microsoft Active Directory, pode utilizar o modelo **Apenas Assinatura do Exchange** para certificados de assinaturas de e-mail S/MIME e o modelo **Utilizador do Exchange** para certificados de encriptação S/MIME.  Se estiver a utilizar outra autoridade de certificação, sugerimos que veja as respetivas orientações para configurar modelos de assinaturas e encriptação.
 
 4. No separador **Compatibilidade**:
 
@@ -114,7 +115,7 @@ Para autenticar com VPN, Wi-Fi ou outros recursos, é necessário um certificado
 
 ## <a name="download-install-and-configure-the-certificate-connectors"></a>Transferir, instalar e configurar os conectores de certificados
 
-### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connector
+### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connecparar
 
 ![ConnectorDownload][ConnectorDownload]
 

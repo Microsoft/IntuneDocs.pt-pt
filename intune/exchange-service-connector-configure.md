@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 640d1a5cbd785248cb309bc250c95631295955b3
-ms.sourcegitcommit: 71497f0215fc8bed454ac318b0548b1281a8fe0f
+ms.openlocfilehash: 141fcc4550b69d01d67e8d4aa9f0e6e05717353a
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33914160"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251845"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 
@@ -50,7 +50,7 @@ Tem de criar uma conta de utilizador do Exchange Online utilizada pelo conector 
 
 ## <a name="set-up-the-service-to-service-connector"></a>Configurar o Conector de Serviços
 
-1. Inicie sessão no [portal do Azure](http://portal.azure.com) com uma conta de utilizador com direitos de administração do Exchange e permissões para os cmdlets [descritos anteriormente](#exchange-cmdlet-requirements). O Microsoft Intune utiliza o endereço de e-mail do utilizador que tem atualmente sessão iniciada para configurar a ligação.
+1. Inicie sessão no [portal do Azure](http://portal.azure.com) com uma conta de utilizador com direitos de administração do Exchange, permissões para os cmdlets [descritos anteriormente](#exchange-cmdlet-requirements), uma licença do Intune válida e a função Administrador Global. O Microsoft Intune utiliza o endereço de e-mail do utilizador que tem atualmente sessão iniciada para configurar a ligação.
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 

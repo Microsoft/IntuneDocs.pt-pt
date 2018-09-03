@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225413"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751655"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos utilizadores para que estes possam inscrever dispositivos no Intune
 
@@ -61,7 +61,7 @@ Veja esta [descrição geral do School Data Sync](https://support.office.com/art
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Como as licenças de utilizadores e dispositivos afetam o acesso aos serviços
 * Cada **utilizador** ao qual atribua uma licença de software de utilizador poderá aceder e utilizar os serviços online e o software relacionado (incluindo o software do System Center) para gerir aplicações e até 15 dispositivos.
-* Cada **dispositivo** ao qual atribua uma licença de software de dispositivo poderá aceder e utilizar os serviços online e o software relacionado (incluindo o software do System Center) para utilização por qualquer número de utilizadores.
+* Pode adquirir licenças para qualquer dispositivo separadamente das licenças de utilizador. As licenças de dispositivo não têm de ser atribuídas aos dispositivos. Cada dispositivo que aceder a e utilizar os serviços online e outro software relacionado (incluindo software do System Center) tem de ter uma licença de dispositivo.
 * Caso um dispositivo seja utilizado por mais de um utilizador, cada um requer uma licença de software de dispositivo ou todos os utilizadores requerem uma licença de software de utilizador.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Compreender o tipo de licenças que adquiriu

@@ -14,18 +14,18 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753897"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40252592"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
 Pode especificar que aplicações geridas podem utilizar a sua Rede Privada Virtual (VPN) em dispositivos iOS geridos pelo Intune. Quando cria uma VPN por aplicação no Intune, um utilizador final estabelece ligação automaticamente através da VPN ao aceder a documentos empresariais.
 
-Atualmente, a VPN por Aplicação está disponível para os seguintes fornecedores:
+Atualmente, a VPN por aplicação está disponível para os seguintes fornecedores:
 
  - Check Point Remote Access VPN
  - Cisco AnyConnect
@@ -35,7 +35,7 @@ Atualmente, a VPN por Aplicação está disponível para os seguintes fornecedor
  - SonicWall
  - Palo Alto Networks GlobalProtect
 
-## <a name="prerequisites-for-per-app-vpn"></a>Pré-requisitos para a VPN por Aplicação
+## <a name="prerequisites-for-per-app-vpn"></a>Pré-requisitos para a VPN por aplicação
 
 > [!IMPORTANT]
 > O seu fornecedor de VPN pode ter outros requisitos específicos para a VPN por aplicação, tais como licenciamento ou hardware específico. Certifique-se de que consulta a documentação do fornecedor e de que cumpre os pré-requisitos antes de configurar a VPN por aplicação no Intune.
@@ -109,9 +109,9 @@ O perfil do certificado de raiz fidedigno permite que o iOS confie automaticamen
 
     ![Criar um perfil de certificado SCEP](./media/vpn-per-app-create-scep-cert.png)
 
-## <a name="create-a-per-app-vpn-profile"></a>Criar um perfil VPN por Aplicação
+## <a name="create-a-per-app-vpn-profile"></a>Criar um perfil de VPN por aplicação
 
-O perfil VPN contém o certificado SCEP com as credenciais de cliente, as informações de ligação à VPN e o sinalizador de VPN por Aplicação para ativar a funcionalidade VPN por Aplicação para utilização pela aplicação iOS.
+O perfil VPN contém o certificado SCEP com as credenciais de cliente, as informações de ligação à VPN e o sinalizador de VPN por aplicação para ativar a funcionalidade VPN por aplicação para utilização pela aplicação iOS.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
@@ -136,7 +136,7 @@ O perfil VPN contém o certificado SCEP com as credenciais de cliente, as inform
 6. Clique em **OK**.
 7. Clique em **Criar**.
 
-    ![Criar um perfil VPN por Aplicação](./media/vpn-per-app-create-vpn-profile.png)
+    ![Criar um perfil de VPN por aplicação](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Associar uma aplicação ao perfil VPN
@@ -145,30 +145,41 @@ Depois de adicionar o perfil VPN, associe a aplicação e o grupo do Azure AD ao
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-2. Selecione **Aplicações Móveis**.
-3. Clique em **Aplicações**.
-4. Selecione a aplicação a partir da lista de aplicações.
-5. Clique em **Tarefas.**
-6. Clique em **Adicionar grupo**.
-7. Selecione **Necessário** para o **Tipo de atribuição** no painel **Adicionar grupo**.
-6. Selecione o grupo definido anteriormente e selecione para **Tornar esta aplicação necessária**.
-8. Selecione a definição de VPN para a **VPN**.
+3. Selecione **Aplicações Móveis**.
+4. Clique em **Aplicações**.
+5. Selecione a aplicação a partir da lista de aplicações.
+6. Clique em **Tarefas.**
+7. Clique em **Adicionar grupo**.
+8. Selecione **Necessário** para o **Tipo de atribuição** no painel **Adicionar grupo**.
+9. Selecione o grupo definido anteriormente e selecione para **Tornar esta aplicação necessária**.
+10. Selecione a definição de VPN para a **VPN**.
  
     > [!NOTE]  
     > Por vezes a definição de VPN demora um minuto para obter o valor. Aguarde 3 a 5 minutos antes de clicar em **Guardar**.
 
-9. Clique em **OK** e clique em **Guardar**.
+11. Clique em **OK** e clique em **Guardar**.
 
     ![Associar uma aplicação à VPN](./media/vpn-per-app-app-to-vpn.png)
 
+A associação entre uma aplicação e um perfil será removida durante o próximo registo do dispositivo, quando se verificarem as seguintes condições:
+- A aplicação foi direcionada com a intenção "Instalação obrigatória".
+- O perfil e a aplicação foram direcionados para o mesmo grupo.
+- Removeu a configuração da VPN por aplicação da atribuição de aplicações.
+
+A associação entre uma aplicação e um perfil continuará a existir até que o utilizador final peça a reinstalação a partir do portal da empresa, quando se verificarem as seguintes condições:
+- A aplicação foi direcionada com a intenção "Instalação disponível".
+- O perfil e a aplicação foram direcionados para o mesmo grupo.
+- O utilizador final pediu a instalação da aplicação a partir do portal da empresa, o que faz com que a aplicação e o perfil sejam instalados no dispositivo.
+- Removeu a configuração da VPN por aplicação da atribuição de aplicações.
+
 ## <a name="verify-the-connection-on-the-ios-device"></a>Verificar a ligação no dispositivo iOS
 
-Com a configuração de VPN por Aplicação associada à sua aplicação, verifique se a ligação funciona a partir de um dispositivo.
+Com a configuração de VPN por aplicação associada à sua aplicação, verifique se a ligação funciona a partir de um dispositivo.
 
 ### <a name="before-you-attempt-to-connect"></a>Antes de tentar estabelecer ligação
 
  - Certifique-se de que está a executar o iOS 9 ou posterior.
- - Certifique-se de que implementa *todas* as políticas mencionadas acima para o mesmo grupo de utilizadores. Se não o fizer, irá interromper a experiência de VPN por Aplicação.  
+ - Certifique-se de que implementa *todas* as políticas mencionadas acima para o mesmo grupo de utilizadores. Se não o fizer, irá interromper a experiência de VPN por aplicação.  
  - Certifique-se de que tem a aplicação VPN de terceiros suportada instalada. As seguintes aplicações VPN são suportadas:
     - Check Point Capsule Connect
     - Cisco AnyConnect
@@ -177,7 +188,7 @@ Com a configuração de VPN por Aplicação associada à sua aplicação, verifi
     - Pulse Secure
     - SonicWall Mobile Connect
 
-### <a name="connect-using-the-per-app-vpn"></a>Estabelecer ligação com a VPN por Aplicação
+### <a name="connect-using-the-per-app-vpn"></a>Estabelecer ligação com a VPN por aplicação
 
 Verifique a experiência sem contacto ao estabelecer ligação sem ter de selecionar a VPN ou escrever as suas credenciais. A experiência sem contacto significa que:
 
@@ -191,7 +202,7 @@ Verifique a ligação num dispositivo iOS.
 2. Toque em **Ligar**.  
 A VPN estabelece ligação com êxito sem pedidos adicionais.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

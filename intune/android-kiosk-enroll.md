@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212040"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903148"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição de dispositivos de quiosque do Android Enterprise
 
@@ -56,7 +56,7 @@ Tem de criar um perfil de inscrição para poder inscrever os seus dispositivos 
 1. Aceda ao [Portal do Intune](https://portal.azure.com) e selecione **Inscrição de dispositivos** > **Inscrição Android** > **Inscrição de quiosque e dispositivos de tarefas**.
 2. Selecione **Criar** e preencha os campos obrigatórios.
     - **Nome**: escreva o nome que irá utilizar quando atribuir o perfil ao grupo de dispositivos dinâmico.
-    - **Data de expiração do token**: a data em que o token expira. A Google impõe um máximo de 30 dias.
+    - **Data de expiração do token**: a data em que o token expira. A Google impõe um máximo de 90 dias.
 3. Escolha **Criar** para guardar o perfil.
 
 ### <a name="create-a-device-group"></a>Criar um grupo de dispositivos
@@ -110,7 +110,7 @@ Em dispositivos Android 5.1 e posteriores que suportem NFC, pode aprovisionar os
 
 ### <a name="enroll-by-using-a-token"></a>Inscrever com um token
 
-Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo.
+Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. O Android 6.1 e versões posteriores também podem tirar partido da leitura de códigos QR ao utilizar o método de inscrição **aft#setup**.
 
 1. Ative o seu dispositivo com reposição de fábrica.
 2. No ecrã **Bem-vindo**, selecione o seu idioma.
@@ -125,6 +125,9 @@ Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o 
 ### <a name="enroll-by-using-a-qr-code"></a>Inscrever com um código QR
 
 Em dispositivos Android 7 e posteriores, pode ler o código QR do perfil de inscrição para inscrever o dispositivo.
+
+> [!Note]
+> O zoom do browser pode fazer com que os dispositivos não consigam ler códigos QR. Aumentar o zoom do browser resolve o problema.
 
 1. Para iniciar a leitura do código QR no dispositivo Android, toque múltiplas vezes no primeiro ecrã que vir após uma reposição de fábrica.
 2. Em dispositivos Android 7 e 8, ser-lhe-á pedido para instalar um leitor de QR. Os dispositivos Android 9 e posteriores já têm um leitor de QR instalado.

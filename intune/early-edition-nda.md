@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001915"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43093202"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>A edição antecipada do Microsoft Intune – agosto de 2018
 
@@ -44,7 +44,7 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 ### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>O Windows Hello destina-se a utilizadores e dispositivos <!-- 1106609 -->
 Quando cria uma política [Windows Hello para Empresas](windows-hello.md), esta aplica-se a todos os utilizadores numa organização (ao nível dos inquilinos). Com esta atualização, a política também pode ser aplicada a utilizadores ou dispositivos específicos através de uma política de configuração de dispositivos (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Identity Protection** > **Windows Hello para Empresas**).
 
-No Intune no portal do Azure, a configuração e as definições do Windows Hello vão estar presentes tanto na **Inscrição de dispositivos** como na **Configuração do dispositivo**. A **Inscrição de dispositivos** destina-se a toda a organização (ao nível dos inquilinos) e suporta o Windows Autopilot (OOBE). A **Configuração do dispositivo** destina-se a dispositivos e utilizadores através de uma política aplicada durante o registo.
+No Intune no portal do Azure, a configuração e as definições do Windows Hello vão estar presentes tanto na **Inscrição de dispositivos** como na **Configuração do dispositivo**. A **Inscrição de dispositivos** destina-se a toda a organização (ao nível dos inquilinos) e suporta o Windows AutoPilot (OOBE). A **Configuração do dispositivo** destina-se a dispositivos e utilizadores através de uma política aplicada durante o registo.
 
 Aplica-se a:  
 - Windows 10 e posterior
@@ -86,7 +86,7 @@ O Intune irá detetar e mostrar detalhes se um token de programa de compras em v
 ### <a name="packet-tunnel-support-for-ios-per-app-vpn-profiles-for-custom-and-pulse-secure-connection-types----1520957---"></a>Suporte de túnel de pacotes para perfis VPN por aplicação iOS para tipos de ligações personalizadas e Pulse Secure <!-- 1520957 -->
 Ao utilizar perfis VPN por aplicação iOS, poderá utilizar o túnel de camada de aplicação (proxy de aplicação) ou o túnel de nível do pacote (túnel do pacote). Estas opções estarão disponíveis com os seguintes tipos de ligação:
 - VPN Personalizada
-- Pulse Secure, se não tiver a certeza sobre o valor a utilizar, consulte a documentação do seu fornecedor de VPN.
+- Pulse Secure, se não tiver a certeza sobre o valor a utilizar, veja a documentação do seu fornecedor de VPN.
 Aplica-se a: iOS
 
 ### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>Zscaler é uma ligação disponível para perfis VPN em dispositivos iOS <!-- 1769858 eeready -->
@@ -172,7 +172,8 @@ Para ser consistente com o Graph API, os seguintes termos serão alterados na do
 - **Remover dados da empresa** será alterado para **extinguir**
 - **Reposição de fábrica** será alterado para **eliminar**
 
-
+### <a name="delete-jamf-devices----2653306---"></a>Eliminar dispositivos Jamf <!-- 2653306 -->
+Poderá eliminar dispositivos geridos pelo JAMF ao aceder a **Dispositivos** > selecionar o dispositivo Jamf > **Eliminar**.
 
 <!-- 1807 start -->
 
@@ -189,12 +190,6 @@ A página **Aplicações** irá apresentar uma vista **Instalado** que lhe permi
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Experiência da aplicação Portal da Empresa melhorada para gestores de inscrições de dispositivos <!-- 675800 -->
 Quando um gestor de inscrições de dispositivos (DEM) inicia sessão na aplicação Portal da Empresa para Windows, a aplicação só apresentará o dispositivo atual do DEM. Esta melhoria irá reduzir os erros de tempo limite que ocorriam quando a aplicação tentava carregar todos os dispositivos inscritos pelo DEM.  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Utilizar licenças de dispositivos VPP para aprovisionar previamente o Portal da Empresa durante a inscrição do DEP <!-- 1608345 -->
-Poderá utilizar licenças de dispositivos do Programa de Compras em Volume (VPP) para aprovisionar previamente o Portal da Empresa durante as inscrições do Programa de Registo de Aparelho (DEP). Para tal, ao criar ou editar um perfil de inscrição, especifique o token VPP que pretende utilizar para instalar o Portal da Empresa. Certifique-se de que o token não expira e que tem licenças suficientes para a aplicação Portal da Empresa. Nos casos em que o token expirar ou esgotar as licenças, o Intune irá iniciar o Portal da Empresa a partir da App Store (esta ação irá exigir um ID Apple).
-
-###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Extensões de ficheiros de aplicações de linha de negócio (LOB) do Windows <!-- 1884873 -->
-As extensões de ficheiros de aplicações de linha de negócio do Windows agora incluirão *.msi*, *.appx*, *.appxbundle*, *.msix* e *.msixbundle*. Pode adicionar uma aplicação no Microsoft Intune ao selecionar **Aplicações móveis** > **Aplicações** > **Adicionar**. O painel **Adicionar aplicação** é apresentado, o qual lhe permite selecionar o **Tipo de aplicação**. Para aplicações LOB do Windows, selecione o tipo de aplicação **Linha de negócio**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação com a extensão adequada.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Pacote de configuração do Windows Defender ATP adicionado automaticamente ao perfil de configuração <!-- 2144658 -->
 Agora, ao utilizar dispositivos de [Proteção Avançada Contra Ameaças e inclusão](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) no Intune, irá transferir um pacote de configuração e adicioná-lo ao seu perfil de configuração. Numa atualização futura, o Intune passará a obter automaticamente o pacote a partir do Centro de Segurança do Windows Defender e a adicioná-lo ao seu perfil.
@@ -268,7 +263,7 @@ As Políticas de Proteção de Aplicações do Intune permitirão criar polític
 
 Neste momento, não existem avisos ativos.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Veja também
 Veja [Novidades do Microsoft Intune](whats-new.md) para obter detalhes sobre os desenvolvimentos recentes.
 
 

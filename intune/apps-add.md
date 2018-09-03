@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321293"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251589"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune
 
@@ -109,7 +109,7 @@ Para obter mais informações sobre os tipos de aplicações que a sua organiza�
 O Intune permite-lhe modificar a funcionalidade das aplicações que implementa para ajudar a ajustá-las às políticas de conformidade e de segurança da sua empresa. Este controlo permite-lhe determinar como os dados da sua empresa são protegidos. As aplicações geridas pelo Intune têm um conjunto avançado de políticas de proteção de aplicações móveis, tal como:
 
 - Restringir funções Copiar e colar e Guardar como.
-- Configurar ligações Web para serem abertas nas aplicação Intune Managed Browser.
+- Configurar ligações Web para serem abertas na aplicação Intune Managed Browser.
 - Ativar o acesso condicional ao nível da aplicação e a utilização de várias identidades.
 
 As aplicações geridas pelo Intune também permitem a proteção de aplicações sem exigir a inscrição, dando-lhe a opção de aplicar políticas de prevenção de perda de dados sem gerir o dispositivo do utilizador. Além disso, pode incorporar a gestão de aplicações móveis nas suas aplicações móveis e de linha de negócio com o SDK da Aplicação Intune e a Ferramenta de Encapsulamento de Aplicações. Para obter mais informações sobre estas ferramentas, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
@@ -128,6 +128,9 @@ Considere os seguintes pontos antes de começar a adicionar e a atribuir as apli
 
 - Quando adicionar e atribuir uma aplicação a partir de uma loja, os seus utilizadores têm de ter uma conta nessa loja para conseguir instalar a aplicação.
 - Algumas aplicações ou itens que atribuir poderão estar dependentes de aplicações iOS incorporadas. Por exemplo, se atribuir um livro na loja iOS, a aplicação iBooks terá de estar presente no dispositivo. Se tiver removido a aplicação iBooks incorporada, não poderá utilizar o Intune para a restabelecer.
+
+> [!IMPORTANT]
+> Se alterar o nome da aplicação através do portal do Azure no Intune após ter implementado e instalado a aplicação, a mesma deixará de poder ser visada através de comandos.
 
 ## <a name="cloud-storage-space"></a>Espaço de armazenamento na cloud
 Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na cloud do Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na cloud, o qual é utilizado para armazenar aplicações e atualizações geridas. Uma subscrição completa não limita a quantidade de armazenamento total.
@@ -170,6 +173,10 @@ O Intune irá reinstalar, atualizar ou remover automaticamente uma aplicação n
 - Se a instalação de uma aplicação necessária falhar ou a aplicação não estiver presente no dispositivo, o Intune irá avaliar a conformidade e reinstalar a aplicação quando este agendamento terminar.  
 - Um administrador define uma aplicação como disponível para um grupo de utilizadores e um utilizador final instala a aplicação a partir do portal da empresa no dispositivo. Posteriormente, o administrador atualiza a aplicação da v1 para a v2. O Intune irá atualizar a aplicação quando este agendamento terminar, desde que uma versão anterior da aplicação ainda esteja presente no dispositivo.
 - Se o administrador implementar a intenção de desinstalação e a aplicação estiver presente no dispositivo e a desinstalação falhar, o Intune irá avaliar a conformidade e desinstalar a aplicação quando este agendamento terminar.   
+
+## <a name="app-installation-errors"></a>Erros de instalação da aplicação
+
+Para obter detalhes sobre os erros de instalação da aplicação Intune, veja [Erros de instalação da aplicação](troubleshoot-app-install.md#app-installation-errors).
 
 ## <a name="next-steps"></a>Próximos passos
 
