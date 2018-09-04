@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755237"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150671"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utilizar dispositivos geridos para trabalhar
 O Microsoft Intune é um software que permite às organizações gerir dispositivos (como smartphones, tablets e PCs), aplicações e outros recursos empresariais, como o e-mail. Esta funcionalidade permite que os empregados acedam às informações de trabalho deles a partir de praticamente qualquer lugar em quase todos os dispositivos e, ao mesmo tempo, ajuda a proteger as informações da empresa.
@@ -36,7 +36,7 @@ A equipa de suporte da sua empresa pode ver as informações que são relevantes
 Pode obter o Portal da Empresa de duas formas:
 
 - Ao instalar a aplicação Portal da Empresa no dispositivo. Normalmente, pode obter a aplicação Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o suporte da empresa também pode instalar automaticamente a aplicação Portal da Empresa.
-- Ao aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) que o suporte da empresa configurou.
+- Ao aceder ao [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) que o suporte da empresa configurou.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre a aplicação e o site?
 Existem algumas pequenas diferenças entre a aplicação Portal da Empresa e o site do Portal da Empresa, mas pode efetuar a maioria das mesmas tarefas nos dois. Algumas tarefas que pode fazer:
@@ -71,9 +71,9 @@ Para saber mais sobre o que o suporte da empresa pode e não pode ver no seu dis
 -   Dispositivos Android
 -   Dispositivos Windows
     -   Windows 10 Mobile
-    -   Computadores com o Windows 10
+    -   Windows 10 Desktop
     -   Windows Phone 8.1
-    -   Windows 8.1
+    -   Windows 8,1
 
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Pode remover um computador ou dispositivo do Portal da Empresa?
 Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Empresa. Existe uma diferença entre **remover** e **repor**.
@@ -102,4 +102,4 @@ A Microsoft recomenda que experimente corrigir o problema por si próprio primei
 - [Corrigir problemas comuns no seu dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Corrigir problemas comuns no seu dispositivo Windows](troubleshoot-your-device-windows.md)
 
-Pode publicar um comentário abaixo para pedir ajuda, mas cada organização tem requisitos diferentes, pelo que poderemos não conseguir responder sempre às suas perguntas. A forma mais rápida de obter uma resposta relevante é provavelmente ao contactar o suporte da empresa. As informações de contacto do seu administrador de TI devem estar disponíveis no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Pode publicar um comentário abaixo para pedir ajuda, mas cada organização tem requisitos diferentes, pelo que poderemos não conseguir responder sempre às suas perguntas. A forma mais rápida de obter uma resposta relevante é provavelmente ao contactar o suporte da empresa. As informações de contacto do seu administrador de TI devem estar disponíveis no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

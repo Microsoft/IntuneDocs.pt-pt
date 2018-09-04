@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: b939cd175f7a548b37ebec985a189d7e3119aac7
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903128"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147048"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Como atualizar a aplicação Portal da Empresa
 
@@ -52,4 +52,4 @@ Quando estiver disponível uma nova versão, verá a opção "atualizar" ao cons
     > Se não conseguir aceder à Loja Microsoft, contacte o suporte da empresa.
 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

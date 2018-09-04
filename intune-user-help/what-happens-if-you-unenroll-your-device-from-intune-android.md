@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f7a599ad67d645bb5b84785d42deb40d0fda8cd5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 50f2304ba5fc174707a007b4c4d791cf2db1c656
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017585"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147923"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo Android no Intune?
 
@@ -42,4 +42,4 @@ Se o dispositivo está configurado apenas para receber os e-mails da empresa e a
 
 Para instruções sobre como anular a inscrição, consulte [Anular a inscrição do seu dispositivo ao utilizar o Intune a partir da aplicação do Portal da Empresa](unenroll-your-device-from-intune-android.md).
 
-Precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.
+Precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.

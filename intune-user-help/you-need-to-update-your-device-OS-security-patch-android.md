@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 7d67d5cc34dfb701f68763bd6265de009055f815
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073797"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147543"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Tem de atualizar o sistema operativo do seu dispositivo Android
 
@@ -40,4 +40,4 @@ Aceda a **Definições** > **Actualizações do sistema** > **Verificar novas ac
 
 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38804de876a4856d4e4b6e39d16233608cf9857f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755407"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146783"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Corrigir problemas comuns no seu dispositivo macOS
 
-Por vezes, podem ocorrer problemas no dispositivo macOS que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Por vezes, podem ocorrer problemas no dispositivo macOS que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [A minha versão do macOS ainda não é suportada](your-macos-version-isnt-yet-supported.md)
 - [Atualizar o seu dispositivo macOS](you-need-to-update-your-macos-device.md)

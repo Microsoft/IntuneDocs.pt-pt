@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30750868"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148836"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Foi atingido o limite de dispositivos que pode registar
 
@@ -33,4 +33,4 @@ Cada empresa define um limite para o número de dispositivos que cada pessoa pod
 2. Remova um dos seus dispositivos do [Portal MyApps](https://myapps.microsoft.com) e selecione **Perfil** no canto superior direito da página. 
 3. Contacte o suporte da sua empresa para ver se podem aumentar o número de dispositivos que está autorizado a registar. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

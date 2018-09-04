@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5494d945c31ea0d99e5f6ef74258c73dae8bdf9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 543cdc84356c0019653c042bc63f5017b9d4c0f0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031707"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148012"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo macOS no Intune?
 
@@ -46,7 +46,7 @@ Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 
 -   Exigir que tenha uma palavra-passe ou PIN no dispositivo.
 
--   O administrador de TI pode exigir que aceite os termos e condições.
+-   O seu administrador de TI pode exigir que aceite os termos e condições.
 
 -   Desativar a câmara no seu dispositivo para o impedir de tirar fotografias a dados confidenciais da empresa.
 
@@ -64,4 +64,4 @@ Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 
 -   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
 
-Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

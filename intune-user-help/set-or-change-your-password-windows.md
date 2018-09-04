@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fb2f225d47d1589e7bccbafc4a23f3cecec12897
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018775"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149068"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Torne o seu dispositivo mais seguro com a palavra-passe correta
 
@@ -46,4 +46,4 @@ Se o dispositivo Windows não estiver em conformidade com a política de palavra
 3. Introduza a nova palavra-passe na caixa **Nova palavra-passe** e, em seguida, reintroduza-a na caixa **Confirmar palavra-passe**.
 4. Selecione **concluído**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

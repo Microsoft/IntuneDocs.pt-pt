@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836932"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313263"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -37,7 +37,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
    - **Descrição geral:** mostra um instantâneo visual dos dispositivos inscritos e também mostra quantos dispositivos estão a utilizar as diferentes plataformas, incluindo Android, iOS e mais.
    - **Todos os dispositivos:** mostra uma lista dos dispositivos inscritos que está a gerir.
 
-     Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Microsoft Edge, Chrome).
+     Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Edge, Chrome).
 
      Selecione um dispositivo para [ver os detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, as aplicações instaladas, o estado de política de conformidade e mais.
 
@@ -55,8 +55,8 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
 
 - [Ver o inventário de dispositivos](device-inventory.md)
 - Realize as ações remotas de dispositivos:
-    - [Remover dados da empresa](devices-wipe.md#remove-company-data)
-    - [Reposição de fábrica](devices-wipe.md#factory-reset)
+    - [Extinguir](devices-wipe.md#retire)
+    - [Eliminação](devices-wipe.md#wipe)
     - [Bloqueio remoto](device-remote-lock.md)
     - [Repor código de acesso](device-passcode-reset.md)
     - [Ignorar Bloqueio de Ativação](device-activation-lock-bypass.md) (apenas em iOS)
@@ -68,7 +68,7 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
     - [Controlo remoto do Android](device-profile-android-teamviewer.md)
     - [Sincronizar o dispositivo](device-sync.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Em **Todos os dispositivos**, selecione um dispositivo para ver mais detalhes sobre esse dispositivo específico.
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

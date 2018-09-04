@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 30aefc190aed3b8ef280fd0f652e02e401e68fae
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: c6be5c12bc5dbb711bd8d980ec16d06d7dd2482b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754030"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148401"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Instalar o Symantec Endpoint Protection Mobile no seu dispositivo iOS
 
@@ -46,5 +46,5 @@ Se o SEP Mobile encontrar uma ameaça de segurança no dispositivo, verá instru
 
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se tal acontecer, experimente instalar o SEP Mobile [manualmente a partir da App Store](https://itunes.apple.com/app/sep-mobile/id695620821).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

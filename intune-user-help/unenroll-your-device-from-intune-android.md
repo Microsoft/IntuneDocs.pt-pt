@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec3c0a1c8ce4e04f4d23fb01e7c2525d8f2eed5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 683b5ec7b07d7c270ea30ac438e7fc839b13d5fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018367"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150349"
 ---
 # <a name="how-to-remove-your-android-device-from-intune"></a>Como remover o seu dispositivo Android do Intune
 
@@ -49,4 +49,4 @@ Para remover todos os dados que a aplicação Portal da Empresa para Android arm
 -   Limpe os dados da aplicação em Aplicações, clique na aplicação e, em seguida, no botão "Limpar dados"
 -   Elimine a pasta "\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal"
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

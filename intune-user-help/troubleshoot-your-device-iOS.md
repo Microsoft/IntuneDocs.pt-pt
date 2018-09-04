@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0edd35aa1b202b9494c31d91a0ca5584f1cc251
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755271"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146404"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Corrigir problemas comuns no dispositivo iOS
 
-Por vezes, podem ocorrer problemas no dispositivo iOS que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Por vezes, podem ocorrer problemas no dispositivo iOS que podem ser corrigidos através da resolução de problemas. Apresentamos abaixo alguns problemas comuns que vimos que pode começar por tentar corrigir sozinho. Para problemas mais complexos, recomendamos que contacte o suporte da empresa através das informações de contacto no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Preciso de ligar novamente um dispositivo iOS comprometido](how-to-reconnect-a-compromised-ios-device.md)
 - [Preciso de enviar erros ao suporte da empresa](send-errors-to-your-it-admin-ios.md)

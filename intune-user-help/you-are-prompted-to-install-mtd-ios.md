@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 061a372c38090d74adddbfbce34505be987448e9
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755339"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148766"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalar a Defesa Contra Ameaças para Dispositivos Móveis no seu dispositivo iOS
 
@@ -46,4 +46,4 @@ A Defesa Contra Ameaças a Dispositivos Móveis é uma forma de as empresas se c
 
 ## <a name="if-the-installation-doesnt-work"></a>Se a instalação não funcionar
 
-Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

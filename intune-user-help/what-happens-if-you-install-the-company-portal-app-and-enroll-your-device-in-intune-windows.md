@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 152519d9aa58688538d25f0fb43c0411d4aa6e38
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bfd2b742d9f954f2e644ca03e398687d9f731b78
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018095"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146980"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo Windows no Intune?
 
@@ -75,4 +75,4 @@ A cada oito horas, os dispositivos inscritos irão:
 
 -   Enviar atualizações de inventário de aplicações da empresa.
 
-Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

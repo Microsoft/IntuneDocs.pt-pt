@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6004be5fd38efcc3ec6d325a562fc2a23267ee30
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1c0600dd17b28506e118cdaef0421c8db3b9c86e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031724"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147526"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o seu dispositivo Windows Phone 8.1 no Intune
 
@@ -86,4 +86,4 @@ Inscrever o dispositivo:
 
 Se o suporte da empresa tiver configurado o Portal da Empresa para ser instalado durante a inscrição, o Portal da Empresa irá aparecer na sua lista de aplicações.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

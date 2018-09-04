@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 085d6c9e21cff3ef79097ac0cc2e3a2151c5b391
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 5d77a4c2b5d55a3cd6086af61de0804afc3e5245
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33927326"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149623"
 ---
 # <a name="install-apps-on-your-device"></a>Instalar aplicações no seu dispositivo
 Instale aplicações no seu dispositivo a partir da aplicação Portal da Empresa para Windows.
@@ -41,4 +41,4 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
 
  Consoante o tamanho da sua empresa, poderão estar disponíveis para transferência múltiplas versões do Office no Portal da Empresa. Para obter informações específicas sobre o conjunto de aplicações do Office para dispositivos Windows, veja [Instalar o Office 365 no seu dispositivo com o Windows 10](./install-office-windows.md).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

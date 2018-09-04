@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018180"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150701"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
@@ -61,4 +61,4 @@ Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos f
 
 Se vir uma mensagem com a indicação <strong>Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.</strong> e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto <strong>Ponto final de gestão</strong>. É provável que este site se assemelhe a <strong>www.asuaempresa.onmicrosoft.com</strong>.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

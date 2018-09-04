@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016310"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146744"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Enviar registos ao suporte da empresa a partir da aplicação Definições para Windows 10
 
@@ -38,4 +38,4 @@ Se obtiver um erro enquanto estiver a utilizar o dispositivo Windows 10 gerido 
 
 Também poderá ser necessário enviar [registos da aplicação Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md) para fornecer ao suporte da empresa mais ajuda para tentar resolver quaisquer problemas que possa encontrar. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

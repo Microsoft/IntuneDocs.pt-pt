@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327692"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149605"
 ---
 # <a name="email-logs-to-your-company-support"></a>Enviar registos ao suporte da empresa por e-mail
 
@@ -45,4 +45,4 @@ Para enviar registos ao suporte da empresa por e-mail:
 3.  Toque em **Enviar E-mail e Carregar Registos**.
 4.  Depois de o carregamento estar concluído, toque na sua aplicação de e-mail. Uma mensagem de e-mail será aberta com o ID de incidente pré-preenchido no campo do requerente. No corpo do e-mail, descreva o problema que teve.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

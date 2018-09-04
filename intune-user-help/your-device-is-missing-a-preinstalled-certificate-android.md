@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50864d3af4383a95c037868a9f9b9a61e1eb8172
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d51b141b09090119f7c9711ffd56d6b382f6e3dc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019318"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147956"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Está em falta um certificado no seu dispositivo Android que, geralmente, vem instalado no telemóvel
 
@@ -44,9 +44,9 @@ Pode corrigir este problema ao obter o certificado necessário a partir da [pág
 
 5. Feche o seu browser e a aplicação Portal da Empresa.
 
-6. Reabra a aplicação Portal da Empresa. Agora deverá conseguir iniciar sessão na aplicação Portal da Empresa. Se ainda assim não conseguir utilizar a aplicação Portal da Empresa, contacte o suporte da empresa através das informações fornecidas no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obter mais instruções.
+6. Reabra a aplicação Portal da Empresa. Agora deverá conseguir iniciar sessão na aplicação Portal da Empresa. Se ainda assim não conseguir utilizar a aplicação Portal da Empresa, contacte o suporte da empresa através das informações fornecidas no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obter mais instruções.
 
 >[!NOTE]
 > Se instalar esse certificado não resolver o problema e vir uma mensagem a indicar que tem um "certificado em falta", precisará de executar passos adicionais para [instalar o certificado em falta](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

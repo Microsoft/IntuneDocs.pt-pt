@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea3c05092df16ca840eccbbe64fba1e5e2829e4d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: de7815ac56a34ab81d61b7db69fdedbb7fd44177
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014848"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148269"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Como definir o tempo antes de o seu dispositivo Android bloquear o ecrã
 
@@ -44,4 +44,4 @@ Para voltar a ter acesso ao seu trabalho, terá de definir o tempo limite para a
 
 2.  Selecione um valor para o tempo limite da palavra-passe.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

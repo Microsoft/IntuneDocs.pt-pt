@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: daf25bab90ccc73f782ca93d84f67e06e12f043a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7ea0adbf6c64a6ec32469368c89c462d6b4ab13b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015103"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146813"
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou palavra-passe
 
@@ -36,4 +36,4 @@ Pode utilizar os seguintes passos para definir um PIN ou uma palavra-passe.
 
 Para determinados dispositivos, além da palavra-passe de ecrã, pode ter de definir um PIN de arranque. Pode tentar corrigir este problema ao encontrar um local na aplicação de definições para ativar esta opção. Por exemplo, no Galaxy S7 da Samsung, ativa o Arranque Seguro ao aceder a **Definições** > **Ecrã de Bloqueio e Segurança** > **Início Seguro**. Saiba mais [aqui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

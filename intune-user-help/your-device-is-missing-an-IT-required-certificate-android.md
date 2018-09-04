@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019862"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149786"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Está em falta um certificado no seu dispositivo Android de que o suporte da empresa necessita
 
@@ -37,9 +37,9 @@ Para resolver este problema e obter o certificado necessário, tem de efetuar do
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identificar o certificado em falta ao procurar num PC da escola ou empresa
 
-1. Num PC, abra o Internet Explorer. Se não tiver um PC para utilizar para esta finalidade, contacte o suporte da empresa. Para encontrar as informações de contacto do suporte da empresa, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+1. Num PC, abra o Internet Explorer. Se não tiver um PC para utilizar para esta finalidade, contacte o suporte da empresa. Para encontrar as informações de contacto do suporte da empresa, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
-2. Aceda ao [Web site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) e inicie sessão com as credenciais profissionais ou escolares.
+2. Aceda ao [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) e inicie sessão com as credenciais profissionais ou escolares.
 
 3. Na extremidade mais à direita da barra de endereço do browser, selecione o símbolo semelhante a um cadeado, conforme mostrado na captura de ecrã seguinte.
 
@@ -71,4 +71,4 @@ Para resolver este problema e obter o certificado necessário, tem de efetuar do
 
 7. Reabra a aplicação Portal da Empresa. Agora deverá conseguir iniciar sessão na aplicação Portal da Empresa. Se precisar de ajuda, contacte o suporte da empresa.
 
-Se vir a mesma mensagem que diz "certificado em falta", como mostrado anteriormente, e já tiver seguido os passos, significa que, provavelmente, ainda há outro certificado que o suporte da empresa o vai ter de ajudar a instalar. Contacte o suporte da empresa para obter ajuda, ao utilizar as informações de contacto disponibilizadas no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se vir a mesma mensagem que diz "certificado em falta", como mostrado anteriormente, e já tiver seguido os passos, significa que, provavelmente, ainda há outro certificado que o suporte da empresa o vai ter de ajudar a instalar. Contacte o suporte da empresa para obter ajuda, ao utilizar as informações de contacto disponibilizadas no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

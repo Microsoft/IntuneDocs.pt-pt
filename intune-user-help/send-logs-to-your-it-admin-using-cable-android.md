@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117859"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150312"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar registos ao suporte da empresa por cabo USB
 
 Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Android, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
 
 > [!Note]
-> Antes de começar, certifique-se de que tem o endereço de e-mail do suporte da empresa à mão. Pode encontrar estas informações no [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) ou na aplicação Portal da Empresa.
+> Antes de começar, certifique-se de que tem o endereço de e-mail do suporte da empresa à mão. Pode encontrar estas informações no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) ou na aplicação Portal da Empresa.
 
 1. No ecrã de erro, toque em **Enviar Informações**. Quando vir uma mensagem a perguntar qual o método que pretende utilizar para enviar os registos, escolha a opção que irá guardar os ficheiros no seu dispositivo.
 
@@ -39,4 +39,4 @@ Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa n
 
 4. Selecione os ficheiros e anexe-os a um e-mail. Envie este e-mail ao suporte da empresa.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

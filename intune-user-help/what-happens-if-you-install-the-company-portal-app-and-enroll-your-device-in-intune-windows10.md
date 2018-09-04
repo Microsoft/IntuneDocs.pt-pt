@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a268602833d9164d33a8d86c1b4c6d4485e2abe8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d649a05527f8c273c71b9e2b791d5959a937e43b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021358"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148900"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Windows 10 no Intune?
 
@@ -54,4 +54,4 @@ Ao adicionar um computador:
 
 -   O suporte da empresa poderá impor políticas no computador. Por exemplo, poderá ser necessário definir uma palavra-passe ou PIN no computador. O suporte da empresa também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do computador ou eliminar todos os dados do disco rígido do computador se tentar demasiadas vezes.
 
-Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ebb79bc3405e9ea0dd38c24b86a4c9020760c895
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1c57c8bfa9f2727ec201acb506f5a41327fddc75
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442480"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146658"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
 
@@ -70,4 +70,4 @@ Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
 
 -   Microsoft Word, Excel e PowerPoint
 
-Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

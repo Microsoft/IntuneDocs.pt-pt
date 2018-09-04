@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020576"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148228"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>O Outlook não sincroniza e-mails geridos quando a otimização da bateria em dispositivos Android está ativada
 
 > [!IMPORTANT]
-> Este problema foi documentado aqui porque temos sido contactados pelos clientes diversas vezes em relação ao mesmo. Se continuar a deparar-se com este problema após seguir estes passos, contacte [o suporte da empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obter ajuda adicional.
+> Este problema foi documentado aqui porque temos sido contactados pelos clientes diversas vezes em relação ao mesmo. Se continuar a deparar-se com este problema após seguir estes passos, contacte [o suporte da empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obter ajuda adicional.
 
 Inscrever o seu dispositivo no Intune permite-lhe obter acesso a recursos da empresa. Um dos recursos mais comuns é o acesso ao e-mail. Um problema que temos registado ao aceder ao e-mail através do Outlook para dispositivos Android ocorre quando a otimização da bateria está ativada. A otimização da bateria poderá ser ativada automaticamente de forma a ajudar o seu dispositivo a permanecer ligado durante mais tempo. A otimização da bateria poderá contribuir para este fim porque tenta parar as transferências de e-mail automáticas.
 
@@ -75,4 +75,4 @@ Outra forma de localizar estas definições é através da pesquisa nas definiç
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

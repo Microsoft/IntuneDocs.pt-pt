@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b433a20aaa2ca25f54d051e3bed58989ef9dec7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c9532cc58b392aecb821ae38e8e4d284d971b7d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017041"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146304"
 ---
 # <a name="how-to-enable-user-access-control"></a>Como ativar o Controlo de Acesso de Utilizadores
 
@@ -34,4 +34,4 @@ Eis como pode alterar as definições do Controlo de Acesso de Utilizadores:
 2. Abra **Segurança e Manutenção** > **Alterar definições do Controlo de Conta de Utilizador**.
 3. Na página **Escolha quando pretende ser notificado de alterações ao seu computador**, mova o controlo de deslize para um dos dois entalhes superiores mais juntos a **Notificar-me sempre**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto, consulte o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

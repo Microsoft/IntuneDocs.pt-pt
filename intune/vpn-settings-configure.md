@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 97bddc1a183e3a546e76b346f53f80aba6a81c50
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905109"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312878"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Criar perfis VPN no Intune
 
@@ -40,7 +40,7 @@ Pode utilizar políticas de configuração personalizadas do Intune para criar p
 
 Pode criar perfis VPN com os seguintes tipos de ligação:
 
-|Tipo de ligação|Android<br>Perfis de trabalho do Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Tipo de ligação|Android<br>Perfis de trabalho do Android|iOS|macOS|Windows Phone 8.1|Windows 8,1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automático|Não|Não|Não|Não|Não|Sim|
 |Check Point Capsule VPN|Sim|Sim|Sim|Sim|Sim|Sim|
@@ -54,6 +54,7 @@ Pode criar perfis VPN com os seguintes tipos de ligação:
 |IKEv2|Não|Não|Não|Não|Não|Sim|
 |L2TP|Não|Não|Não|Não|Não|Sim|
 |PPTP|Não|Não|Não|Não|Não|Sim|
+|Zscaler|Não|Sim|Não|Não|Não|Não|
 |VPN Personalizada|Não|Sim|Sim|Não|Não|Não|
 
 > [!IMPORTANT]

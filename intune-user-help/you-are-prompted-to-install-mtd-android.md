@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e1671c919c530108f8ff4e951f7e13c5d75a623b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 06442f7ab943ed5f96990496b00060e67c122675
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017891"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146468"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Instalar a Defesa Contra Ameaças para Dispositivos Móveis no seu dispositivo Android
 
@@ -33,4 +33,4 @@ Para poder aceder ao seu trabalho, a sua empresa precisa de instalar uma aplica�
 
 **Se a instalação não funcionar**
 
-Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

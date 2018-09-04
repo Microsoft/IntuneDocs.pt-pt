@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 390a236cf8eebae209c81b53d629cbd3f83899f8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8c1806d8d35dd2a6e16f1041e2c9f844f637a046
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016769"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149876"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso
 
@@ -30,4 +30,4 @@ Quando o dispositivo Android está inscrito no Intune, pode utilizar o *registo 
 
 Para ativar ou desativar o registo verboso, inicie sessão na aplicação Portal da Empresa com as suas credenciais escolares ou profissionais, toque em **Definições** e toque no botão ativar/desativar junto à definição **Registo Verboso**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

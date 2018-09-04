@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751446"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150890"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Corrigir problemas comuns no dispositivo Samsung Knox
 
@@ -51,4 +51,4 @@ A mensagem apresentada poderá ter o seguinte aspeto:
 |---|---|
 |**Erro de ativação do Samsung Knox** – Não foi possível ativar a licença do Samsung Knox. O motivo poderá ser porque a poupança de energia está ativada. Desative o modo de poupança de energia nas definições do dispositivo e tente novamente. |O dispositivo poderá não ter as definições de energia corretas para funcionar com os recursos da empresa. Saiba mais sobre como [configurar o modo de poupança de energia](power-saving-mode-android.md).|
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

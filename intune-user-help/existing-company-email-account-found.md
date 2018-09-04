@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e5e44f563e0ebfc3685c07fc7792df72dcf32a5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7d7c6b4f0634fdb2d4c28b897dc5782111ebdec9
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015426"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148245"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Uma conta de e-mail da empresa existente foi encontrada
 
@@ -36,4 +36,4 @@ Já tem uma conta de e-mail da sua organização ou empresa e agora quer aceder 
 
 3.  Aguarde algum tempo para que as novas definições de e-mail sejam aplicadas automaticamente no seu dispositivo.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

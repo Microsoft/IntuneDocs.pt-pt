@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3e0ffd583d1709a9127dc346d0271578820a10e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 874007e161f4271fc4faed9d939046c17e52ac7b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014865"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147306"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtém um erro ao utilizar a aplicação Portal da Empresa
 
@@ -34,4 +34,4 @@ Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa n
 
 -   Abane o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, toque em **E-mail** quando for apresentado o alerta de diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

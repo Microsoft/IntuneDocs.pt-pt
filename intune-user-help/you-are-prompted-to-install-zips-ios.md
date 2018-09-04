@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 47cb816f0a032d8e01fcdd7ff025d36ba1354f3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: cab09c0a127c8d3bab2a135e1bf46f6beb478d22
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754982"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150774"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>Instalar o Zimperium zIPS no seu dispositivo iOS
 
@@ -46,4 +46,4 @@ Se o Zimperium zIPS encontrar uma ameaça de segurança no dispositivo, verá in
 
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se isto acontecer, experimente instalar o Zimperium zIPS [manualmente a partir da App Store](https://itunes.apple.com/app/zimperium-zips/id1030924459).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

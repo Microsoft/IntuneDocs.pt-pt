@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481194"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148783"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Remover o seu dispositivo Windows da gestão do Intune
 
@@ -82,4 +82,4 @@ Para eliminar a cache e os registos armazenados, siga um dos seguintes passos:
 
 * Repor a aplicação Portal da Empresa. Abra a aplicação **Definições** e selecione **Aplicações** > **Portal da Empresa** > **Opções avançadas** > **Repor**. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

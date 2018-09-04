@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a93c53a061e41d288846f8b5a16ea4a9b4679607
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bf6610b3f72913bc496c1e24a136543314d42937
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013896"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149174"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Como encriptar o seu dispositivo Windows
 
@@ -34,4 +34,4 @@ Se tiver um dispositivo de ambiente de trabalho, siga as instruções abaixo par
 
 2.  Clique em **Ativar o BitLocker**e, em seguida, siga as instruções apresentadas para encriptar cada uma das suas unidades.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

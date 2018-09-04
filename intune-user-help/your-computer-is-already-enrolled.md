@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fac158e7c0df5753574b092be24d9f8ee74eedea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c23d035b37cec47d187c65b518c5a7ff18d16caa
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019505"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146349"
 ---
 # <a name="your-computer-is-already-enrolled"></a>O seu computador já está inscrito
 
@@ -38,4 +38,4 @@ Para ligar o seu computador:
 
 Se preferir anular a inscrição do dispositivo, utilize as instruções para o seu tipo de dispositivo: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

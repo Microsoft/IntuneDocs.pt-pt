@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ddf075828ca9b9a7d8030a88a2d7f58efbc0e980
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327709"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150127"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Enviar erros ao suporte da empresa relativos a problemas com o dispositivo iOS
 Por vezes, pode ser apresentado um erro ao utilizar a aplicação Portal da Empresa no seu dispositivo iOS. Se isto ocorrer, pode enviar por e-mail os detalhes sobre o erro para o responsável pelo suporte da sua empresa. Estes detalhes irão fornecer o contexto necessário para resolver o problema.
@@ -37,4 +37,4 @@ Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa,
 
 -   Na aplicação Portal da Empresa, abane o dispositivo e, quando o alerta de diagnóstico for apresentado, toque em **Enviar Relatório de Diagnóstico**. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
