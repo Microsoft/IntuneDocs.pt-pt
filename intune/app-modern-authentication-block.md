@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 354109cc4d84e34eebd5df6df86919f386e143f6
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: a4e4fbc4239941c662166f625de73858f1ef948a
+ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251650"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44058783"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Bloquear aplicações que não utilizam autenticação moderna (ADAL)
 
@@ -37,5 +37,5 @@ Para bloquear o acesso a estas aplicações, recomendamos que faça o seguinte:
 >[!IMPORTANT]
 >O acesso condicional com base na aplicação não pode ser utilizado com a autenticação baseada no certificado do Azure Active Directory (Azure AD). Só pode ter um destes configurado de cada vez.
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Consulte também
 [Acesso condicional com base na aplicação com o Intune](app-based-conditional-access-intune.md)

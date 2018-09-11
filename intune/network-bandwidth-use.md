@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 381915bd1780da743aafe1cdbb96ff76d4ee5d50
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: 6eb6e07b3bb9da2723e57d9203288bebd8c7ab70
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903216"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253634"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 
@@ -66,7 +66,7 @@ Seguem-se as definições típicas para utilizar um servidor proxy que coloca co
 | Tamanho do ficheiro de cache individual |                950 MB                 |                                                                     Esta definição pode não estar disponível em todos os servidores proxy com colocação em cache.                                                                     |
 |   Tipos de objeto a colocar em cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Os pacotes Intune são ficheiros CAB obtidos através de uma transferência do Serviço de Transferência Inteligente em Segundo Plano (BITS) através de HTTP.                                               |
 
-Para obter informações sobre como utilizar um servidor proxy para colocar conteúdos em cache, veja a documentação da sua solução de servidor proxy.
+Para obter informações sobre como utilizar um servidor proxy para colocar conteúdos em cache, consulte a documentação da sua solução de servidor proxy.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Utilizar o Serviço de Transferência Inteligente em Segundo Plano em computadores
 O Intune suporta a utilização do Serviço de Transferência Inteligente em Segundo Plano (BITS) num computador Windows para reduzir a largura de banda de rede utilizada durante as horas que configurar. Pode configurar uma política para o BITS na página **Largura de banda de rede** da política do Agente do Intune.
@@ -85,7 +85,7 @@ Para utilizar o BranchCache, o computador cliente tem de ter o BranchCache ativa
 
 Por predefinição, o BranchCache e o modo de cache distribuída são ativados nos computadores quando o cliente do Intune é instalado. No entanto, se a Política de Grupo tiver desativado o BranchCache, o Intune não substitui essa política e o BranchCache permanece desativado.
 
-Se utiliza o BranchCache, trabalhe em conjunto com outros administradores na sua organização para gerir a Política de Grupo e a política de Firewall do Intune. Certifique-se de que não implementam políticas que desativem o BranchCache ou exceções da Firewall. Para obter mais informações sobre o BranchCache, veja [Descrição Geral do BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
+Se utiliza o BranchCache, trabalhe em conjunto com outros administradores na sua organização para gerir a Política de Grupo e a política de Firewall do Intune. Certifique-se de que não implementam políticas que desativem o BranchCache ou exceções da Firewall. Para obter mais informações sobre o BranchCache, consulte [Descrição Geral do BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## <a name="network-communication-requirements"></a>Requisitos da comunicação de rede
 
@@ -169,7 +169,7 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 |      Consola de Administração       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS e macOS                    |
 |      Consola de Administração       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS e macOS                    |
 |      Consola de Administração       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS e macOS                    |
-|        Servidor PI         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Para mensagens na cloud em iOS e macOS da Apple.          |
+|        Servidor PI         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Para mensagens em nuvem em iOS e macOS da Apple.          |
 |     Serviços de dispositivos      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
 |     Serviços de dispositivos      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
 |     Serviços de dispositivos      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
