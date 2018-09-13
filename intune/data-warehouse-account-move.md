@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b34bb7c3f3db9ebb3cdd89b429aaeb530d7ad796
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330301"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141636"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover os dados da conta do Armazém de Dados do Intune 
 
@@ -63,8 +63,6 @@ Alguns gráficos de tendências na vista do portal do Azure vão ser repostos. P
 ## <a name="device-enrollment-charts"></a>Gráficos de Inscrição de Dispositivos
 1. No portal do Azure, navegue para **Microsoft Intune** -> **DeviceEnrollment**.
 2. Com a ferramenta [Testes de API do Graph ](https://developer.microsoft.com/graph/graph-explorer) da Microsoft, transfira os dados por trás dos gráficos.
-    - Para obter o estado da inscrição, veja 
-    - Para ver as principais falhas de inscrição desta semana, 
     - Para obter o estado de inscrição, copie esta [consulta do estado de inscrição](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) e cole-a na ferramenta [Testes de API do Graph](https://developer.microsoft.com/graph/graph-explorer).
     - Para obter as principais falhas de inscrição desta semana, copie esta [consulta do estado de inscrição](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) e cole-a na ferramenta [Testes de API do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -79,7 +77,7 @@ Após mover a conta do Armazém de Dados, verá no Intune que o Armazém de Dado
 
 O cliente X pede que uma conta seja movida a 01/06/2018. Em resposta ao pedido, o cliente receberá uma ligação para ver documentação com detalhes sobre os passos a realizar se quiser fazer uma cópia de segurança do Armazém de Dados anterior. A 01/06/2018, o Armazém de Dados e os gráficos que suporta serão repostos e começarão a armazenar dados no novo datacenter. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
  - Saiba mais sobre [as novidades todas as semanas no Intune](whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
  - Leia o [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).

@@ -7,20 +7,20 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 08/20/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330148"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253770"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -72,7 +72,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
 
 As próximas quatro secções descrevem as opções disponíveis no painel **Aplicações do cliente**.
 
-### <a name="manage"></a>Gerir
+### <a name="manage"></a>Gerir o Endpoint Protection do
 - **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:
     - [Adicionar aplicações](apps-add.md).
     - [Atribuir aplicações](apps-deploy.md).
@@ -120,6 +120,6 @@ Para obter mais informações sobre esta secção, veja [Monitorizar aplicaçõe
 - **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para obter mais informações, consulte:
     - [Resolver problemas](help-desk-operators.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar uma aplicação ao Microsoft Intune](apps-add.md)

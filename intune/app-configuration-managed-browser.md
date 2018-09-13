@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329757"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675020"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas de browser protegido com o Microsoft Intune
 
@@ -185,7 +185,7 @@ Ao utilizar o procedimento para criar uma configuração da aplicação Managed 
 
 |                                Chave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | O valor desta configuração é uma lista de marcadores. Cada marcador é constituído pelo título e URL do marcador. Separe o título e o URL com o caráter <strong>&#124;</strong>.<br><br>Exemplo:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | O valor desta configuração é uma lista de marcadores. Cada marcador é constituído pelo título e URL do marcador. Separe o título e o URL com o caráter <strong>&#124;</strong>.<br><br>Exemplo:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Para configurar múltiplos marcadores, separe cada par com o caráter duplo <strong>&#124;&#124;</strong><br><br>Exemplo:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Como especificar URLs permitidos e bloqueados para um browser protegido
 
@@ -193,7 +193,7 @@ Ao utilizar o procedimento para criar uma configuração da aplicação Managed 
 
 |Chave|Valor|
 |-|-|
-|Escolha entre:<br><ul><li>Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um caráter de pipe **&#124;**.<br><br>Exemplos:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|Escolha entre:<br><ul><li>Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um caráter de pipe **&#124;**.<br><br>Exemplos:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >Não especifique ambas as chaves. Se as duas chaves forem direcionadas para o mesmo utilizador, a chave de permissão é utilizada, uma vez que é a opção mais restritiva.
@@ -293,6 +293,6 @@ A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utili
 ### <a name="turn-off-usage-data"></a>Desativar dados de utilização
 A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 

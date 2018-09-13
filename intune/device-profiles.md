@@ -6,20 +6,20 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 08/28/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 590ce850b97502b357dec86932e1445718860af2
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313977"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253549"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são os perfis de dispositivos do Microsoft Intune?
 
@@ -81,7 +81,7 @@ Esta funcionalidade suporta:
 - Windows 10 e posterior
 - Windows Holographic for Business  
 
-## <a name="kiosk"></a>Modo de Quiosque
+## <a name="kiosk"></a>Modo de Local Público
 
 O perfil de [definições do modo de quiosque](kiosk-settings.md) configura um dispositivo para que execute uma aplicação ou execute múltiplas aplicações. Também pode personalizar outras funcionalidades no modo de quiosque, incluindo o menu Iniciar e um browser.
 
@@ -109,7 +109,7 @@ Esta funcionalidade suporta:
 - iOS
 - macOS
 - Windows Phone 8.1
-- Windows 8,1
+- Windows 8.1
 - Windows 10
 
 ## <a name="wi-fi"></a>Wi-Fi
@@ -154,7 +154,7 @@ Esta funcionalidade suporta:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 8,1
+- Windows 8.1
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Perfil do Windows Information Protection

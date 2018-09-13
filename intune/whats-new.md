@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 08/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
-ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
+ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43092180"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347292"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,148 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Pode também
 
 -->   
 
-
 ## <a name="week-of-august-27-2018"></a>Semana de 27 de agosto de 2018
 
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Utilizar licenças de dispositivos VPP para aprovisionar previamente o Portal da Empresa durante a inscrição do DEP <!-- 1608345 -->
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="packet-tunnel-support-for-ios-per-app-vpn-profiles-for-custom-and-pulse-secure-connection-types----1520957---"></a>Suporte de túnel de pacotes para perfis VPN por aplicação iOS para tipos de ligações personalizadas e Pulse Secure <!-- 1520957 -->
+Ao utilizar perfis VPN por aplicação iOS, pode optar por utilizar o túnel de camada de aplicação (proxy-de-aplicação) ou o túnel de nível do pacote (pacote-túnel). Estas opções estão disponíveis com os seguintes tipos de ligação:
+- VPN Personalizada
+- Pulse Secure, se não tiver a certeza sobre o valor a utilizar, consulte a documentação do seu fornecedor de VPN.
+
+#### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>Atrasar quando as atualizações de software iOS são apresentadas no dispositivo <!-- 1949583 -->
+Em Intune > **Atualizações de Software** > **Atualizar políticas para iOS**, pode configurar os dias e as horas em que não pretende que os dispositivos instalem as atualizações. Numa atualização futura, poderá atrasar a apresentação de uma atualização de software no dispositivo, entre 1 a 90 dias. 
+[Configurar as políticas de atualização de iOS no Microsoft Intune](software-updates-ios.md) lista as definições atuais.
+
+#### <a name="office-365-proplus-version----2213968---"></a>Office 365 versão ProPlus <!-- 2213968 -->
+Ao atribuir as aplicações do Office 365 ProPlus a dispositivos com o Windows 10 com o Intune, poderá selecionar a versão do Office. No portal do Azure, selecione **Microsoft Intune** > **Aplicações** > **Adicionar Aplicações**. Em seguida, selecione **Conjunto de Aplicações Office 365 ProPlus (Windows 10)** na lista suspensa **Tipo**. Selecione **Definições do conjunto de aplicações** para apresentar o painel associado. Defina **Atualizar Canal** para um valor, como **Mensal**. Opcionalmente, remova a outra versão do Office (msi) dos dispositivos de utilizador final ao selecionar **Sim**. Selecione **Específico** para instalar uma versão específica do Office no canal selecionado em dispositivos de utilizador final. Agora, pode selecionar a **Versão específica** do Office a utilizar. As versões disponíveis serão alteradas ao longo do tempo. Por conseguinte, ao criar uma nova implementação, as versões disponíveis podem ser mais recentes e não ter determinadas versões mais antigas disponíveis. As implementações atuais continuarão a implementar a versão mais antiga, mas a lista de versões será constantemente atualizada por canal. Para obter mais informações, veja [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) (Descrição geral dos canais de atualização do Office 365 ProPlus).
+
+#### <a name="support-for-register-dns-setting-for-windows-10-vpn----2282852---"></a>Suporte para a definição do Registo de DNS para VPN do Windows 10 <!-- 2282852 -->
+Com esta atualização, pode configurar perfis VPN do Windows 10 para registar dinamicamente os endereços IP atribuídos à interface de VPN com o DNS interno, sem a necessidade de utilizar perfis personalizados.
+Para obter informações sobre as definições de perfis VPN atualmente disponíveis, veja [Windows 10 VPN settings](vpn-settings-windows-10.md) (Definições de VPN do Windows 10). 
+
+#### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>O instalador do Portal da Empresa para macOS inclui agora o número da versão no nome do ficheiro do instalador <!--2652728-->
+
+#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>Atualizações automáticas da aplicação do iOS <!-- 2729759 wnready -->
+As atualizações automáticas da aplicação funcionam em aplicações licenciadas para o dispositivo e o utilizador para o iOS Versão 11.0 e versões superiores.
+
+
+
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>O Windows Hello destina-se a utilizadores e dispositivos <!-- 1106609 -->
+Quando cria uma política [Windows Hello para Empresas](windows-hello.md), esta aplica-se a todos os utilizadores numa organização (ao nível dos inquilinos). Com esta atualização, a política também pode ser aplicada a utilizadores ou dispositivos específicos através de uma política de configuração de dispositivos (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Identity Protection** > **Windows Hello para Empresas**).
+No Intune no portal do Azure, a configuração e as definições do Windows Hello estão agora presentes tanto na **Inscrição de dispositivos** como na **Configuração do dispositivo**. A **Inscrição de dispositivos** destina-se a toda a organização (ao nível dos inquilinos) e suporta o Windows AutoPilot (OOBE). A **Configuração do dispositivo** destina-se a dispositivos e utilizadores através de uma política aplicada durante o registo.
+Esta funcionalidade aplica-se a:  
+- Windows 10 e versões posteriores
+- Windows Holographic for Business
+
+#### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>Zscaler é uma ligação disponível para perfis VPN em dispositivos iOS <!-- 1769858 eeready -->
+Quando cria um perfil de configuração de dispositivo VPN de iOS (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS** plataforma > **VPN** tipo de perfil), existem vários tipos de ligação, incluindo Cisco, Citrix e muito mais. Esta atualização adiciona o Zscaler como um tipo de ligação. 
+A página [Definições de VPN para dispositivos com iOS](vpn-settings-ios.md) lista os tipos de ligação disponíveis.
+
+#### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077-eeready---"></a>Modo FIPS para perfis de Wi-Fi de Empresas para o Windows 10 <!-- 1879077 eeready -->
+Agora pode ativar o modo FIPS (Federal Information Processing Standards) para perfis de Wi-Fi de Empresas para o Windows 10 no Intune no portal do Azure. Certifique-se de que o modo FIPS está ativado na sua infraestrutura de Wi-Fi se o ativar nos seus perfis de Wi-Fi.
+O artigo [Definições de Wi-Fi para dispositivos com o Windows 10 ou posterior no Intune](wi-fi-settings-windows.md) mostra-lhe como pode criar um perfil de Wi-Fi.
+
+#### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Controle o modo S nos dispositivos Windows 10 e posteriores – pré-visualização pública <!-- 1958649 -->
+Com a atualização desta funcionalidade, poderá criar um perfil de configuração de dispositivos que retire um dispositivo com o Windows 10 do modo S ou que impeça os utilizadores de retirarem o dispositivo do modo S. Esta funcionalidade está em Intune > **Configuração do dispositivo** > **Perfis** >  **Windows 10 e versões posteriores** > **Atualização da edição e alteração de modo**.
+[Introdução ao Windows 10 no modo S](https://www.microsoft.com/windows/s-mode) fornece mais informações sobre o modo S.
+Aplica-se a: Windows 10 e posterior (1809 e posterior)
+
+#### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Pacote de configuração do Windows Defender ATP adicionado automaticamente ao perfil de configuração <!-- 2144658 -->
+Ao utilizar dispositivos de [Proteção Avançada Contra Ameaças e integração](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) no Intune, tinha de transferir um pacote de configuração e adicioná-lo ao seu perfil de configuração. Com esta atualização, o Intune obtém automaticamente o pacote a partir do Centro de Segurança do Windows Defender e adiciona-o ao seu perfil.
+Aplica-se ao Windows 10 e posterior.
+
+#### <a name="require-users-to-connect-during-device-setup---2311457--"></a>Exigir que os utilizadores estabeleçam ligação durante a configuração do dispositivo <!--2311457-->
+Agora pode definir perfis de dispositivos de modo a exigir que o dispositivo esteja ligado a uma rede antes de avançar para além da página Rede durante a configuração do Windows 10. Enquanto esta funcionalidade estiver em pré-visualização, é necessário que tenha a versão 1809 ou versões posteriores do Windows Insider para utilizar esta definição.
+
+#### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>Restringir aplicações e bloquear o acesso aos recursos da empresa em dispositivos iOS e Android Enterprise <!-- 2451462 -->
+Em **Conformidade do dispositivo** > **Políticas** > **Criar política** > **iOS** > **Segurança do Sistema**, há uma nova definição de **Aplicações restritas**. Esta nova definição utiliza uma política de conformidade para bloquear o acesso aos recursos da empresa, caso determinadas aplicações estejam instaladas no dispositivo. O dispositivo é considerado não compatíveis até que as aplicações restritas sejam removidas do dispositivo.
+Aplica-se a: iOS
+
+#### <a name="modern-vpn-support-updates-for-ios----2459928-1819876-and-2650856---"></a>A VPN moderna suporta atualizações para iOS <!-- 2459928, 1819876, and 2650856 -->
+Esta atualização adiciona suporte para os seguintes clientes VPN do iOS: 
+- F5 Access (versão 3.0.1 e superior)
+- Citrix SSO
+- Palo Alto Networks GlobalProtect (versão 5.0 e superior). Também nesta atualização:
+- O nome do tipo de ligação **F5 Access** foi alterado para **F5 Access Legacy** para o iOS.
+- O nome do tipo de ligação **Palo Alto Networks GlobalProtect** foi alterado para **Palo Alto Networks GlobalProtect (legacy)** para o iOS.
+Os perfis existentes com estes tipos de ligação continuam a funcionar com o respetivo cliente VPN legado. Se estiver a utilizar o Cisco Legacy AnyConnect, F5 Access Legacy, VPN do Citrix ou Palo Alto Networks GlobalProtect (versão 4.1 ou anterior) com o iOS, deve mudar para as novas aplicações. Faça-o assim que possível para garantir que o acesso VPN está disponível para dispositivos iOS, conforme os mesmos são atualizados para iOS 12.
+Para obter mais informações sobre o iOS 12 e os perfis VPN, veja o [Blogue da Equipa de Suporte do Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2013806).
+
+#### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal----2469637---"></a>Exportar políticas de conformidade do portal clássico do Azure para recriar estas políticas no Intune no portal do Azure <!-- 2469637 -->
+As políticas de conformidade que criou no portal clássico do Azure serão preteridas. Pode rever e eliminar quaisquer políticas de conformidade existentes, mas não pode atualizá-las. Se precisar de migrar políticas de conformidade para o Intune no portal do Azure atual, pode exportar as políticas sob a forma de um ficheiro separado por vírgulas (ficheiro *.csv*). Em seguida, utilize os detalhes no ficheiro para recriar estas políticas no Intune no portal do Azure.
+
+> [!IMPORTANT]
+> Quando o portal clássico do Azure for descontinuado, deixará de conseguir aceder ou ver as suas políticas de conformidade. Por isso, não se esqueça de as exportar e recriar no portal do Azure antes de o portal clássico do Azure ser descontinuado.
+
+#### <a name="better-mobile---new-mobile-threat-defense-partner----22662717---"></a>Better Mobile – novo parceiro de Defesa Contra Ameaças para Dispositivos Móveis <!-- 22662717 -->
+Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Better Mobile, uma solução de Defesa Contra Ameaças para Dispositivos Móveis que está integrada com o Microsoft Intune.
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="lock-the-company-portal-in-single-app-mode-until-user-sign-in---1067692---"></a>Bloquear o Portal da Empresa no modo de aplicação única até o utilizador iniciar sessão <!--1067692 --> 
+Agora pode optar por executar o Portal da Empresa no modo de Aplicação Única se autenticar um utilizador através do Portal da Empresa em vez do Assistente de Configuração durante a inscrição de DEP. Esta opção bloqueia o dispositivo imediatamente após a conclusão do Assistente de Configuração, para que um utilizador tenha de iniciar sessão para aceder ao dispositivo. Este processo assegura que o dispositivo conclui a inclusão e não fica órfão num estado sem qualquer utilizador ligado.
+
+#### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Atribuir um utilizador e um nome amigável a um dispositivo do Autopilot <!--1346521 -->
+Agora pode [atribuir um utilizador a um único dispositivo do Autopilot](enrollment-autopilot.md). Os administradores também serão capazes de atribuir nomes amigáveis para dar as boas-vindas ao utilizador quando estão a configurar o dispositivo com o Autopilot.
+Aplica-se a: Windows Insider 1809 ou uma versão posterior (durante a pré-visualização).
+
+#### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Utilizar licenças de dispositivos VPP para aprovisionar previamente o Portal da Empresa durante a inscrição do DEP <!-- 1608345 -->
 Agora pode utilizar licenças de dispositivos do Programa de Compras em Volume (VPP) para aprovisionar previamente o Portal da Empresa durante as inscrições do Programa de Registo de Aparelho (DEP). Para tal, ao [criar ou editar um perfil de inscrição](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), especifique o token VPP que pretende utilizar para instalar o Portal da Empresa. Certifique-se de que o token não expira e que tem licenças suficientes para a aplicação Portal da Empresa. Nos casos em que o token expirar ou esgotar as licenças, o Intune irá iniciar o Portal da Empresa a partir da App Store (esta ação irá exigir um ID Apple).
 
+#### <a name="block-windows-personal-device-enrollments----1849498---"></a>Bloquear inscrições de dispositivos pessoais do Windows <!-- 1849498 -->
+Pode [impedir que os dispositivos pessoais do Windows](enrollment-restrictions-set.md#set-device-type-restrictions) se inscrevam com a [gestão de dispositivos móveis](windows-enroll.md) no Intune. A inscrição de dispositivos com o [agente de PC do Intune](manage-windows-pcs-with-microsoft-intune.md) não pode ser bloqueada com esta funcionalidade.
+
+#### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Especificar os padrões de nome de computador num perfil do Autopilot <!--1849855-->
+Pode [especificar um modelo de nome do computador](enrollment-autopilot.md#create-an-autopilot-deployment-profile) para gerar e definir o [nome do computador](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) durante a inscrição do Autopilot.
+
+#### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Para os perfis do Windows Autopilot, oculte as opções de alteração de conta na página de início de sessão da empresa e na página de erro do domínio <!--1901669 -->
+Existem [novas opções de perfil do Windows Autopilot](enrollment-autopilot.md#create-an-autopilot-deployment-profile) para os administradores ocultarem as opções de alteração de conta nas páginas de início de sessão da empresa e de erro no domínio. Para ocultar essas opções, é preciso configurar a Imagem Corporativa da Empresa no Azure Active Directory. Aplica-se a: Windows Insider 1809 ou uma versão posterior (durante a pré-visualização).
+
+#### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Utilizar licenças de dispositivos VPP para aprovisionar previamente o Portal da Empresa durante a inscrição do DEP <!-- 1608345 -->
+Agora pode utilizar licenças de dispositivos do Programa de Compras em Volume (VPP) para aprovisionar previamente o Portal da Empresa durante as inscrições do Programa de Registo de Aparelho (DEP). Para tal, ao [criar ou editar um perfil de inscrição](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), especifique o token VPP que pretende utilizar para instalar o Portal da Empresa. Certifique-se de que o token não expira e que tem licenças suficientes para a aplicação Portal da Empresa. Nos casos em que o token expirar ou esgotar as licenças, o Intune irá iniciar o Portal da Empresa a partir da App Store (esta ação irá exigir um ID Apple).
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="delete-jamf-devices----2653306--"></a>Eliminar dispositivos Jamf <!-- 2653306-->
+Pode eliminar dispositivos geridos pelo JAMF ao aceder a **Dispositivos** > selecionar o dispositivo Jamf > **Eliminar**.
+
+#### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Alteração da terminologia para "extinguir" e "eliminar" <!-- 2175759 -->
+Para ser consistente com o Graph API, os seguintes termos foram alterados na documentação e na interface de utilizador do Intune:
+- **Remover dados da empresa** será alterado para "extinguir"
+- **Reposição de fábrica** será alterado para **eliminar**
+
+#### <a name="confirmation-dialog-if-admin-tries-to-delete-mdm-push-certificate----297909500--"></a>A caixa de diálogo de confirmação apresentada se o administrador tentar eliminar o Certificado Push de MDM <!-- 297909500-->
+Se alguém tentar eliminar um certificado Push de MDM da Apple, é apresentada uma caixa de diálogo de confirmação com o número de dispositivos iOS e macOS associados. Se o certificado for eliminado, será necessário inscrever novamente estes dispositivos.
+
+### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Definições de segurança adicionais para o Windows Installer <!-- 2282430 -->
+Pode permitir que os utilizadores controlem a instalação de aplicações. Se estiver ativada, esta definição permite continuar as instalações que, caso contrário, seriam interrompidas devido a uma violação de segurança. Pode configurar o Windows Installer para utilizar permissões elevadas ao instalar programas num sistema. Além disso, pode ativar os itens do Windows Information Protection (WIP) para serem indexados e os metadados acerca dos mesmos para serem armazenados numa localização não encriptada. Quando a política está desativada, os itens protegidos pelo WIP não são indexados e não são apresentados nos resultados na Cortana ou no explorador de ficheiros. A funcionalidade destas opções está desativada por predefinição. 
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nova atualização da experiência de utilizador do site do Portal da Empresa <!--2000968 -->
+Adicionámos novas funcionalidades ao site do Portal da Empresa com base no feedback dos clientes. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Algumas áreas do site &ndash; tais como detalhes do dispositivo, feedback e suporte e descrição geral do dispositivo &ndash; receberam uma nova estrutura moderna e reativa. A atualização inclui ainda:
+
+- Fluxos de trabalho simplificados em todas as plataformas de dispositivos
+- Fluxos de inscrição e identificação de dispositivos melhorados
+- Mensagens de erro mais úteis
+- Linguagem mais simples, menos termos técnicos
+- Capacidade de partilhar ligações diretas para as aplicações
+- Desempenho melhorado para grandes catálogos de aplicações
+- Acessibilidade melhorada para todos os utilizadores  
+
+A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações. Para ver um exemplo das melhorias ao nível das aplicações, veja [Atualização da IU para aplicações de utilizadores finais do Intune](whats-new-app-ui.md).  
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+#### <a name="enhanced-jailbreak-detection-in-compliance-reporting---2198738---"></a>Deteção de jailbreak avançada no relatório de conformidade<!-- 2198738 -->
+Os estados da definição de deteção de jailbreak avançada são agora apresentados em todos os relatórios de conformidade na consola de administração.
+
+### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
+
+#### <a name="scope-tags-for-policies---1081974-eeready--"></a>Etiquetas de âmbito para políticas <!--1081974 eeready-->
+Pode [criar etiquetas de âmbito](scope-tags.md) para restringir o acesso aos recursos do Intune. Adicione uma etiqueta de âmbito a uma atribuição de função e, em seguida, adicione a etiqueta de âmbito a um perfil de configuração. A função apenas terá acesso aos recursos com perfis de configuração com etiquetas de âmbito correspondentes (ou nenhuma etiqueta de âmbito).
 
 ## <a name="week-of-august-14-2018"></a>Semana de 14 de agosto de 2018
 
@@ -65,7 +201,7 @@ O Microsoft Intune permite que as aplicações LOB para macOS sejam implementada
 Para além das Aplicações da Loja e das Aplicações Geridas, pode selecionar uma Aplicação Integrada (como o Safari) que executa em modo de quiosque num dispositivo iOS.
 
 #### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Editar as implementações de aplicações do Office 365 Pro Plus <!-- 2150145 -->
-Enquanto administrador do Microsoft Intune, tem maior capacidade de editar as suas implementações de aplicações do Office 365 Pro Plus. Adicionalmente, já não precisa de eliminar as suas implementações para alterar qualquer uma das propriedades do conjunto. No portal do Azure, selecione **Microsoft Intune** > **Aplicações móveis** > **Aplicações**. A partir da lista de aplicações, selecione o Office 365 Pro Plus Suite.  
+Enquanto administrador do Microsoft Intune, tem maior capacidade de editar as suas implementações de aplicações do Office 365 Pro Plus. Adicionalmente, já não precisa de eliminar as suas implementações para alterar qualquer uma das propriedades do conjunto. No portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Aplicações**. A partir da lista de aplicações, selecione o Office 365 Pro Plus Suite.  
 
 
 #### <a name="updated-intune-app-sdk-for-android-is-now-available----2744271--"></a>O SDK da Aplicação do Intune para Android atualizado já está disponível <!-- 2744271-->
@@ -163,7 +299,7 @@ O administrador de TI do Intune pode impor uma lista específica de fabricantes 
 
 O utilizador não conseguirá aceder à aplicação visada se os requisitos da política não forem cumpridos. Com base nas definições escolhidas, os dados empresariais do utilizador podem ser bloqueados ou eliminados seletivamente da aplicação. Nos dispositivos iOS, esta funcionalidade requer que a participação de aplicações (tais como o WXP, Outlook, Managed Browser, Yammer) integre o SDK da Aplicação Intune para que a funcionalidade seja imposta nas aplicações visadas. Esta integração decorre de forma gradual e está dependente das equipas específicas da aplicação. No Android, esta funcionalidade necessita da versão mais recente do Portal da Empresa. 
 
-Nos dispositivos dos utilizadores finais, o cliente do Intune tomará medidas com base numa única correspondência das cadeias especificadas no painel Intune das Políticas de Proteção de Aplicações. Isto depende inteiramente do valor comunicado pelo dispositivo. Como tal, recomendamos que o administrador de TI se certifique de que o comportamento pretendido é preciso. Pode fazê-lo ao testar esta definição com base em vários fabricantes e modelos de dispositivos direcionados para um grupo de utilizadores pequeno. No Microsoft Intune, selecione **Aplicações móveis** > **Políticas de proteção de aplicações** para ver e adicionar políticas de proteção de aplicações. Para obter mais informações sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md) e [Eliminação seletiva de dados através de ações de acesso das políticas de proteção de aplicações no Intune](app-protection-policies-access-actions.md).
+Nos dispositivos dos utilizadores finais, o cliente do Intune tomará medidas com base numa única correspondência das cadeias especificadas no painel Intune das Políticas de Proteção de Aplicações. Isto depende inteiramente do valor comunicado pelo dispositivo. Como tal, recomendamos que o administrador de TI se certifique de que o comportamento pretendido é preciso. Pode fazê-lo ao testar esta definição com base em vários fabricantes e modelos de dispositivos direcionados para um grupo de utilizadores pequeno. No Microsoft Intune, selecione **Aplicações do cliente** > **Políticas de proteção de aplicações** para ver e adicionar políticas de proteção de aplicações. Para obter mais informações sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md) e [Eliminação seletiva de dados através de ações de acesso das políticas de proteção de aplicações no Intune](app-protection-policies-access-actions.md).
 
 ### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>Acesso à compilação de pré-lançamento do Portal da Empresa do macOS <!-- 1734766 -->
 Com o Microsoft AutoUpdate, pode inscrever-se para receber compilações antecipadamente ao aderir ao programa Insider. A inscrição permitir-lhe-á utilizar o Portal da Empresa atualizado antes de este ser disponibilizado aos seus utilizadores finais. Para obter mais informações, veja o [blogue do Microsoft Intune](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
@@ -388,7 +524,7 @@ Agora, no portal do Azure, em vez de aceder ao painel do serviço de Proteção 
 
 #### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Suporte do Knox Mobile Enrollment da Samsung<!--1112863-->
 
-Ao utilizar o Intune com o Knox Mobile Enrollment (KME) da Samsung, pode inscrever um grande número de dispositivos Android da empresa. Os utilizadores em redes Wi-Fi ou redes móveis podem inscrever com apenas alguns toques os respetivos dispositivos quando os ligarem pela primeira vez. Ao utilizarem a Aplicação Knox Deployment, os dispositivos podem ser inscritos através de Bluetooth ou NFC. Para obter mais informações, veja [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md) (Inscrever automaticamente dispositivos Android através do Knox Mobile Enrollment da Samsung).
+Ao utilizar o Intune com o Knox Mobile Enrollment (KME) da Samsung, pode inscrever um grande número de dispositivos Android da empresa. Os utilizadores em redes Wi-Fi ou redes móveis podem inscrever com apenas alguns toques os respetivos dispositivos quando os ligarem pela primeira vez. Ao utilizarem a Aplicação Knox Deployment, os dispositivos podem ser inscritos através de Bluetooth ou NFC. Para obter mais informações, consulte [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md) (Inscrever automaticamente dispositivos Android através do Knox Mobile Enrollment da Samsung).
 
 #### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Pedir ajuda no Portal da Empresa para Windows 10 <!-- 1874137 -->
 
@@ -400,10 +536,10 @@ O Portal da Empresa para Windows 10 irá agora enviar registos de aplicações d
 
 #### <a name="passcode-support-for-mam-pin-on-android---1438086---"></a>Suporte de código de acesso para o PIN de MAM no Android<!-- 1438086 -->
 
-Os administradores do Intune podem definir um requisito de execução da aplicação para impor um código de acesso em vez de um PIN numérico de MAM. Caso esteja configurado, é pedido ao utilizador que defina e utilize um código de acesso antes de poder aceder a aplicações otimizadas para a MAM. Os códigos de acesso são definidos como um PIN numérico com, pelo menos, um caráter especial ou letras em maiúsculas/minúsculas. O Intune suporta um código de acesso de forma semelhante ao PIN numérico existente, sendo capaz de definir um comprimento mínimo e de permitir sequências e carateres repetidos através da consola de administrador. Esta funcionalidade necessita da versão mais recente do Portal da Empresa no Android. Esta funcionalidade já se encontra disponível para iOS.
+Os administradores do Intune podem definir um requisito de execução da aplicação para impor um código de acesso em vez de um PIN numérico de MAM. Caso esteja configurado, é pedido ao utilizador que defina e utilize um código de acesso antes de poder aceder a aplicações otimizadas para a MAM. Os código de acesso são definidos como um PIN numérico com, pelo menos, um caráter especial ou letras em maiúsculas/minúsculas. O Intune suporta um código de acesso de forma semelhante ao PIN numérico existente, sendo capaz de definir um comprimento mínimo e de permitir sequências e carateres repetidos através da consola de administrador. Esta funcionalidade necessita da versão mais recente do Portal da Empresa no Android. Esta funcionalidade já se encontra disponível para iOS.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>Suporte de aplicações de linha de negócio (LOB) para macOS <!-- 1473977 -->
-O Microsoft Intune irá oferecer a capacidade de instalar aplicações LOB para macOS a partir do portal do Azure. Poderá adicionar uma aplicação LOB para macOS ao Intune depois de a mesma ter sido previamente processada pela ferramenta disponível no GitHub. No portal do Azure, selecione **Aplicações móveis** no painel **Intune**. No painel **Aplicações móveis**, selecione **Aplicações** > **Adicionar**. No painel **Adicionar Aplicação**, selecione **Aplicação de linha de negócio**. 
+O Microsoft Intune irá oferecer a capacidade de instalar aplicações LOB para macOS a partir do portal do Azure. Poderá adicionar uma aplicação LOB para macOS ao Intune depois de a mesma ter sido previamente processada pela ferramenta disponível no GitHub. No portal do Azure, selecione **Aplicações do cliente** no painel **Intune**. No painel **Aplicações do cliente**, selecione **Aplicações** > **Adicionar**. No painel **Adicionar Aplicação**, selecione **Aplicação de linha de negócio**. 
 
 #### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>Grupos Todos os Utilizadores e Todos os Dispositivos incorporados para a atribuição de aplicações Android for Work (AFW) <!-- 1813073 -->
 Pode tirar partido dos grupos incorporados **Todos os Utilizadores** e **Todos os Dispositivos** para a atribuição de aplicações AFW. Para obter mais informações, veja [Incluir e excluir atribuições de aplicações no Microsoft Intune](apps-inc-exl-assignments.md).
@@ -591,7 +727,7 @@ A atualização inclui ainda:
 Para ver a versão atualizada, aceda a [Novidades na IU da aplicação](whats-new-app-ui.md).
 
 #### <a name="protect-on-premises-exchange-data-using-intune-app-and-ca----1056954---"></a>Proteger dados do Exchange no local com a Política de Proteção de Aplicações e o Acesso Condicional do Intune <!-- 1056954 -->
-Agora pode utilizar a Política de Proteção de Aplicações (APP) e o Acesso Condicional (AC) do Intune para proteger o acesso a dados do Exchange no local com o Outlook Mobile. Para adicionar ou modificar uma política de proteção de aplicações no portal do Azure, selecione **Microsoft Intune** > **Aplicações móveis** > **Políticas de proteção de aplicações**. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
+Agora pode utilizar a Política de Proteção de Aplicações (APP) e o Acesso Condicional (AC) do Intune para proteger o acesso a dados do Exchange no local com o Outlook Mobile. Para adicionar ou modificar uma política de proteção de aplicações no portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Políticas de proteção de aplicações**. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="week-of-march-26-2018"></a>Semana de 26 de março de 2018
 
@@ -603,7 +739,7 @@ No portal do Azure, o Intune irá alertá-lo para as aplicações de linha de ne
 
 #### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>Personalizar os seus temas do Portal da Empresa com códigos hexadecimais <!--1049561 -->
 
-Pode personalizar a cor do tema nas aplicações do Portal da Empresa com códigos hexadecimais. Ao introduzir o seu código hexadecimal, o Intune determina a cor do texto que fornece o maior nível de contraste entre a cor do texto e a cor de fundo. Pode pré-visualizar a cor do texto e o logótipo da empresa relativamente à cor em **Aplicações móveis** > **Portal da Empresa**.
+Pode personalizar a cor do tema nas aplicações do Portal da Empresa com códigos hexadecimais. Ao introduzir o seu código hexadecimal, o Intune determina a cor do texto que fornece o maior nível de contraste entre a cor do texto e a cor de fundo. Pode pré-visualizar a cor do texto e o logótipo da empresa relativamente à cor em **Aplicações do cliente** > **Portal da Empresa**.
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>Incluir e excluir a atribuição de aplicações com base nos grupos do Android Enterprise <!-- 1813081 -->
 
@@ -854,7 +990,7 @@ Uma definição na política do Windows Information Protection (WIP) agora permi
 Pode configurar uma aplicação MSI móvel de atualização automática conhecida para ignorar o processo de verificação da versão. Esta funcionalidade é útil para evitar que ocorra uma condição race. Por exemplo, este tipo de condição race poderia ocorrer quando a aplicação de atualização automática por parte do programador também é atualizada pelo Intune. Ambos podem tentar impor uma versão da aplicação no cliente Windows, o que pode criar um conflito. Para estas aplicações MSI atualizadas automaticamente, pode configurar a definição **Ignorar versão da aplicação** no painel **Informações da aplicação**. Quando esta opção está definida para **Sim**, o Microsoft Intune irá ignorar a versão da aplicação instalada no cliente Windows.
 
 #### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Conjuntos relacionados de licenças de aplicações suportadas no Intune <!-- 1864117 -->
-O Intune no portal do Azure agora suporta conjuntos relacionados de licenças de aplicações como um único item de aplicação na IU. Além disso, todas as aplicações com Licença Offline sincronizadas a partir da Microsoft Store para Empresas serão consolidadas numa única entrada de aplicação e todos os detalhes de implementação dos pacotes individuais serão migrados para uma única entrada. Para ver conjuntos relacionados de licenças de aplicações no portal do Azure, selecione **Licenças de aplicações** no painel **Aplicações móveis**.
+O Intune no portal do Azure agora suporta conjuntos relacionados de licenças de aplicações como um único item de aplicação na IU. Além disso, todas as aplicações com Licença Offline sincronizadas a partir da Microsoft Store para Empresas serão consolidadas numa única entrada de aplicação e todos os detalhes de implementação dos pacotes individuais serão migrados para uma única entrada. Para ver conjuntos relacionados de licenças de aplicações no portal do Azure, selecione **Licenças de aplicação** no painel **Aplicações do cliente**.
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 #### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>Extensões de ficheiro do Windows Information Protection (WIP) para encriptação automática <!-- 1463582 -->
@@ -904,7 +1040,7 @@ Estão agora disponíveis adições às definições de conformidade do Windows 
 
 ### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
 ### <a name="intune-apps"></a>Aplicações do Intune
-#### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>Suporte para aplicações offline na Loja Microsoft para Empresas <!--1222672-->
+#### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>Suporte para aplicações offline na Microsoft Store para Empresas <!--1222672-->
 As aplicações offline que comprou na Microsoft Store para Empresas são agora sincronizadas com o portal do Azure. Pode implementar estas aplicações em grupos de dispositivos ou de utilizadores. As aplicações offline são instaladas pelo Intune, não pela loja.
 
 #### <a name="prevent-end-users-from-manually-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedir os utilizadores de adicionarem ou removerem contas manualmente no perfil de trabalho <!-- 1728700 -->
@@ -928,7 +1064,7 @@ O Intune agora dá-lhe a opção de autenticar dispositivos através da aplicaç
 
 Ao utilizar a opção do Portal da Empresa, a autenticação multifator do Azure Active Directory pode ser imposta sem bloquear estes métodos de inscrição.
 
-Quando utilizar a opção do Portal da empresa, o Intune ignora a autenticação do utilizador no Assistente de Configuração iOS para a inscrição de afinidade do utilizador. Tal significa que o dispositivo está inscrito inicialmente como um dispositivo sem utilizador e, como tal, não receberá configurações ou políticas de grupos de utilizadores. Só recebe configurações e políticas de grupos de dispositivos. No entanto, o Intune instalará automaticamente a aplicação Portal da Empresa no Dispositivo. O primeiro utilizador a abrir e a iniciar sessão na aplicação Portal da Empresa será associado ao dispositivo no Intune. Neste momento, o utilizador receberá configurações e políticas dos grupos de utilizadores. A associação do utilizador não pode ser alterada sem a reinscrição.
+Quando utilizar a opção do Portal da empresa, o Intune ignora a autenticação do utilizador no Assistente de Configuração iOS para a inscrição de afinidade de utilizador. Tal significa que o dispositivo está inscrito inicialmente como um dispositivo sem utilizador e, como tal, não receberá configurações ou políticas de grupos de utilizadores. Só recebe configurações e políticas de grupos de dispositivos. No entanto, o Intune instalará automaticamente a aplicação Portal da Empresa no Dispositivo. O primeiro utilizador a abrir e a iniciar sessão na aplicação Portal da Empresa será associado ao dispositivo no Intune. Neste momento, o utilizador receberá configurações e políticas dos grupos de utilizadores. A associação do utilizador não pode ser alterada sem a reinscrição.
 
 #### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685-eeready---"></a>Suporte do Intune para várias contas do DEP da Apple/Apple School Manager <!-- 747685 eeready -->
 
@@ -1051,7 +1187,7 @@ Quando cria um perfil de certificado SCEP no Intune, agora, pode utilizar a vari
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>Gerir dispositivos macOS inscritos com Jamf através do motor de conformidade de dispositivo do Intune <!-- 1592747 -->
-Agora, pode utilizar o Jamf para enviar informações sobre o estado do dispositivo macOS ao Intune que, em seguida, avaliará a conformidade com as políticas definidas na consola do Intune. Com base no estado de conformidade do dispositivo, bem como outras condições (como a localização, risco do utilizador, etc.), o acesso condicional estabelecerá a conformidade dos dispositivos macOS que tentem aceder a aplicações na cloud e no local ligadas com o Azure Active Directory, incluindo o Office 365. Saiba mais sobre como [configurar a integração do Jamf](conditional-access-integrate-jamf.md) e [impor a conformidade para dispositivos geridos pelo Jamf](conditional-access-assign-jamf.md).
+Agora, pode utilizar o Jamf para enviar informações sobre o estado do dispositivo macOS ao Intune que, em seguida, avaliará a conformidade com as políticas definidas na consola do Intune. Com base no estado de conformidade do dispositivo, bem como outras condições (como a localização, risco do utilizador, etc.), o acesso condicional estabelecerá a conformidade dos dispositivos macOS que tentem aceder a aplicações na nuvem e no local ligadas com o Azure Active Directory, incluindo o Office 365. Saiba mais sobre como [configurar a integração do Jamf](conditional-access-integrate-jamf.md) e [impor a conformidade para dispositivos geridos pelo Jamf](conditional-access-assign-jamf.md).
 
 #### <a name="new-ios-device-action------1424701---"></a>Nova ação do dispositivo iOS <!-- 1424701 -->
 
@@ -1225,7 +1361,7 @@ A Apple anunciou que irá impor requisitos específicos para a Segurança de Tra
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Novidades na IU do Portal da Empresa](whats-new-app-ui.md)
