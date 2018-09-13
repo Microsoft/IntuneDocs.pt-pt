@@ -15,12 +15,12 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8b3e34e72775061dcc3b40f60e75243972cedd2
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ae7723e29d23575314fc632c75af01eb9e59f72
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223599"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347665"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja do Windows Phone 8.1 ao Microsoft Intune
 
@@ -34,8 +34,8 @@ Pode adicionar uma aplicação da loja do Windows Phone 8.1 ao Intune a partir d
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**.  
     O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. No painel de carga de trabalho de **Aplicações móveis**, em **Gerir**, selecione **Aplicações**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. No painel da carga de trabalho **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
 5. No painel **Aplicações**, selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione um **Tipo de aplicação** do **Windows Phone 8.1** e, em seguida, selecione **Informações da aplicação**.
 7. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
@@ -56,6 +56,6 @@ Pode adicionar uma aplicação da loja do Windows Phone 8.1 ao Intune a partir d
 
 A aplicação que criou será apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Atribuir aplicações a grupos](apps-deploy.md)

@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909291"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329875"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicações a dispositivos com perfil de trabalho do Android com o Intune
 
@@ -59,18 +59,18 @@ Verifique se configurou o Intune e os perfis de trabalho do Android para trabalh
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizar uma aplicação da Google Play Store Gerida com o Intune
 
-Se tiver aprovado uma aplicação a partir da loja e não a vir no nó **Aplicações licenciadas** da carga de trabalho **Aplicações móveis**, force uma sincronização imediata da seguinte forma:
+Se tiver aprovado uma aplicação a partir da loja e não a vir no nó **Aplicações licenciadas** da carga de trabalho **Aplicações do cliente**, force uma sincronização imediata da seguinte forma:
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. No painel de carga de trabalho **Aplicações móveis**, em **Configuração**, selecione **Google Play Gerido**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. No painel de carga de trabalho **Aplicações do cliente**, em **Configuração**, selecione **Google Play Gerido**.
 5. No painel **Google Play Gerido**, selecione **Atualizar**.  
     A página atualizará a hora e o estado da última sincronização.
-6. No painel de carga de trabalho **Aplicações móveis**, selecione **Aplicações**.  
+6. No painel de carga de trabalho **Aplicações do cliente**, selecione **Aplicações**.  
     É apresentada a aplicação Google Play Store Gerida que ficou recentemente disponível.
 
-Quando a aplicação for apresentada no nó **Licenças de aplicações** do painel de carga de trabalho **Aplicações móveis**, pode [atribuí-la tal como atribuiria qualquer outra aplicação](/intune-azure/manage-apps/deploy-apps). Só pode atribuir a aplicação em grupos de utilizadores.
+Quando a aplicação for apresentada no nó **Licenças de aplicações** do painel de carga de trabalho **Aplicações do cliente**, pode [atribuí-la tal como atribuiria qualquer outra aplicação](/intune-azure/manage-apps/deploy-apps). Só pode atribuir a aplicação em grupos de utilizadores.
 
 Após atribuir a aplicação, esta será instalada nos dispositivos direcionados. Não é pedida aprovação da instalação ao utilizador do dispositivo.
 
@@ -106,7 +106,7 @@ Em alternativa, pode configurar o Google Play para reaprovar automaticamente as 
 5. No nó **Aplicações** da loja, verifique se a aplicação que publicou é apresentada.  
     A aplicação é automaticamente aprovada para ser sincronizada com o Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Atribuir aplicações a grupos](apps-deploy.md) 
 

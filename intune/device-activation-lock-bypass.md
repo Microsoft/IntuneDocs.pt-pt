@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356578"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312626"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de Ativação em dispositivos iOS Supervisionados com o Intune
 
@@ -78,12 +78,12 @@ A ação remota de dispositivos **Ignorar Bloqueio de Ativação** do Intune rem
 6. Aceda à secção "Hardware" do dispositivo e, em seguida, copie o **Código para ignorar o bloqueio de ativação** em **Acesso condicional**.
 
     >[!NOTE]
-    >Copie o código para ignorar antes de fazer uma reposição de fábrica no dispositivo. Se repuser as definições do dispositivo antes de copiar o código, este será removido do Azure.
+    >Copie o código para ignorar antes de limpar o dispositivo. Se repuser as definições do dispositivo antes de copiar o código, este será removido do Azure.
 
-7.  Aceda ao painel **Descrição geral** do dispositivo e, em seguida, selecione **Reposição de fábrica**.
+7.  Aceda ao painel **Descrição geral** do dispositivo e, em seguida, selecione **Limpar**.
 8.  Depois de repor o dispositivo, é-lhe pedido o *ID Apple* e a *Palavra-passe*. Deixe o campo *ID* em branco e, em seguida, introduza o **código para ignorar** no campo *palavra-passe*. Esta ação remove a conta do dispositivo. 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Pode determinar o estado do pedido de desbloqueio na página de detalhes do dispositivo na carga de trabalho **Gerir dispositivos**.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762234"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149500"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Utilizar o Site do Portal da Empresa do Intune
-O [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) é uma página Web que os utilizadores podem utilizar para gerir computadores e dispositivos que tenham inscrito no Intune.
+Utilize o [site do Portal da Empresa](https://portal.manage.microsoft.com) para ver, editar, adicionar e remover os seus dispositivos geridos.
 
-Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da Empresa:
+No site do Portal da Empresa, pode efetuar qualquer uma das seguintes ações:
 
 -   [Mudar o nome do seu dispositivo](rename-your-device-cpwebsite.md)
 
 -   [Remover o seu dispositivo](remove-your-device-cpwebsite.md)
 
--   [Repor (apagar) o dispositivo](reset-erase-your-device-cpwebsite.md)
+-   [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
 
 -   [Repor o código de acesso do seu dispositivo](reset-your-passcode-cpwebsite.md)
 
@@ -41,8 +41,8 @@ Os utilizadores podem efetuar as seguintes tarefas a partir do site do Portal da
 
 -   Localizar as informações de contacto do suporte da empresa, se as tiver configurado
 
--   Ver detalhes acerca do respetivo dispositivo, incluindo se está em conformidade com as políticas da empresa ou escola
+-   Verificar o estado de conformidade
 
--   Gerir remotamente o respetivo PC (funciona apenas para PCs)
+-   Gerir remotamente um PC
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

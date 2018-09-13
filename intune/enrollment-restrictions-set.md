@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251533"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313722"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -35,15 +35,15 @@ As restrições de inscrição específicas que pode criar incluem:
 
 - Número máximo de dispositivos inscritos.
 - Plataformas de dispositivos que podem ser inscritas:
-  - Android.
-  - Perfil de trabalho do Android.
-  - iOS.
-  - macOS.
-  - Windows.
+  - Android
+  - Perfil de trabalho do Android
+  - iOS
+  - macOS
+  - Windows
 - Versão do sistema operativo da plataforma para iOS, Android, perfil de trabalho do Android e Windows. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
   - Versão mínima.
   - Versão máxima.
-- Restringir dispositivos pessoais (apenas para iOS, Android, perfil de trabalho do Android ou macOS).
+- Restringir dispositivos pessoais (apenas para iOS, Android, perfil de trabalho do Android, macOS ou Windows).
 
 ## <a name="default-restrictions"></a>Restrições predefinidas
 
@@ -66,28 +66,46 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
 
 ## <a name="set-device-type-restrictions"></a>Definir restrições de tipos de dispositivos
 
-Pode alterar as definições de uma restrição de tipos de dispositivo ao seguir estes passos:
+Pode alterar as definições de uma restrição de tipos de dispositivo ao seguir os passos abaixo. Estas restrições não afetam os dispositivos que já tenham sido inscritos. A inscrição de dispositivos com o [agente de PC do Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) não pode ser bloqueada com esta funcionalidade.
 
 1. Inicie sessão no portal do Azure.
 2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
-4. Em **Restrições de Tipos de Dispositivos**, selecione a restrição que pretende definir.
-5. No nome da restrição (**Todos os Utilizadores** para a restrição predefinida), selecione **Plataformas**. Selecione **Permitir** ou **Bloquear** para cada plataforma listada.
-6. Selecione **Guardar**.
-7. No nome da restrição (**Todos os Utilizadores** para a restrição predefinida), selecione **Configurações de Plataformas**. Em seguida, selecione as **Versões** mínimas e máximas para as plataformas listadas. Os formatos suportados pelas versões são os seguintes:
+4. Em **Restrições de Tipos de Dispositivos** > selecione a restrição que pretende definir > **Propriedades** > **Selecionar plataformas**. Selecione **Permitir** ou **Bloquear** para cada plataforma listada.
+    ![Captura de ecrã para permitir ou bloquear uma plataforma](media/enrollment-restrictions-set/platform-allow-block.png)
+5. Escolha **OK**.
+6. Selecione **Configurar plataformas**.
+    ![Captura de ecrã para configurar plataformas](media/enrollment-restrictions-set/configure-platforms.png)
+7. Selecione as **Versões** mínimas e máximas para as plataformas apresentadas. Os formatos suportados pelas versões são os seguintes:
     - O perfil de trabalho do Android suporta major.minor.rev.build.
-    - O iOS suporta major.minor.rev.
+    - O iOS suporta major.minor.rev. As versões do sistema operativo não se aplicam aos dispositivos Apple inscritos com o Programa de Registo de Aparelho, o Apple School Manager ou a aplicação Apple Configurator.
     - O Windows suporta major.minor.rev.build apenas para Windows 10.
-  As versões do sistema operativo não se aplicam aos dispositivos Apple inscritos com o Programa de Registo de Aparelho, o Apple School Manager ou a aplicação Apple Configurator.
-8. Especifique se quer **Permitir** ou **Bloquear** dispositivos **pessoais** para cada plataforma listada.
-    ![Área de trabalho de restrições de dispositivos, com as configurações de plataformas de dispositivos predefinidas a mostrar as definições de dispositivos pessoais que foram configuradas](media/device-restrictions-platform-configurations.png)
-9. Selecione **Guardar**.
+8. Selecione se pretende **Permitir** ou **Bloquear** dispositivos de **Propriedade pessoal** para cada plataforma apresentada.
+9. Escolha **OK**.
 
+### <a name="android-device-type-restrictions"></a>Restrições de tipos de dispositivos Android
+- Se bloquear a inscrição de dispositivos pessoais Android, os dispositivos pessoais com perfil de trabalho do Android continuarão a poder ser inscritos.
+- Por predefinição, as definições dos dispositivos com perfil de trabalho do Android são as mesmas que as definições dos seus dispositivos Android. Depois de alterar as definições do perfil de trabalho do Android, este já não será o caso.
+- Se bloquear a inscrição pessoal do perfil de trabalho do Android, só será possível inscrever dispositivos Android empresariais como perfil de trabalho do Android.
 
->[!NOTE]
->- Se bloquear a inscrição de dispositivos pessoais Android, os dispositivos pessoais com perfil de trabalho do Android continuarão a poder ser inscritos.
->- Por predefinição, as definições dos dispositivos com perfil de trabalho do Android são as mesmas que as definições dos seus dispositivos Android. Depois de alterar as definições do perfil de trabalho do Android, este já não será o caso.
->- Se bloquear a inscrição pessoal do perfil de trabalho do Android, só será possível inscrever dispositivos Android empresariais como perfil de trabalho do Android.
+### <a name="windows-device-type-restrictions"></a>Restrições de tipos de dispositivos Windows
+Após definir a opção **Bloquear** na restrição de tipos de dispositivos da plataforma Windows, o Intune verifica se cada novo pedido de inscrição do Windows foi autorizado como uma inscrição empresarial. As inscrições não autorizadas serão bloqueadas.
+
+Os seguintes métodos estão qualificados como autorizados como uma inscrição empresarial Windows:
+ - A inscrição de utilizadores está a utilizar uma [conta do gestor de inscrição de dispositivos]( device-enrollment-manager-enroll.md).
+- O dispositivo é inscrito através do [Windows AutoPilot](enrollment-autopilot.md).
+- O número IMEI do dispositivo é apresentado em **Inscrição de dispositivos** > **[Identificadores de dispositivos da empresa](corporate-identifiers-add.md)**. (Não suportado para o Windows Phone 8.1.)
+- O dispositivo é inscrito através de um [pacote de aprovisionamento em massa](windows-bulk-enroll.md).
+- O dispositivo é inscrito através da [inscrição automática do SCCM para cogestão](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+ 
+As inscrições seguintes estão marcadas como empresariais pelo Intune, mas uma vez que não oferecem ao administrador do Intune controlo por dispositivo, serão bloqueadas:
+ - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory durante a configuração do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+- [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory a partir das definições do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ 
+Os seguintes métodos de inscrição pessoal também serão bloqueados:
+- [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [Adicionar Conta Profissional a partir das Definições do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- Opção [Apenas inscrição na MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) a partir das Definições do Windows.
+
 
 ## <a name="set-device-limit-restrictions"></a>Definir restrições de limite de dispositivos
 

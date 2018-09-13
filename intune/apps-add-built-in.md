@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224165"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329500"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicações incorporadas ao Microsoft Intune
 
@@ -36,8 +36,8 @@ Nas versões anteriores da consola do Intune, o Intune disponibilizava várias a
 Para adicionar uma aplicação incorporada às suas aplicações disponíveis no Microsoft Intune, faça o seguinte:
 1. Inicie sessão no portal do Azure.
 2. Para apresentar o painel do Microsoft Intune, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. No painel **Aplicações móveis**, em **Gerir**, selecione **Aplicações**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. No painel **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
 5. Selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, na lista **Tipo de aplicação**, selecione **Aplicação incorporada**.
 7. Selecione **Selecionar aplicação**.
@@ -67,6 +67,6 @@ Pode modificar as informações da aplicação incorporada. Estas informações 
 4. Selecione **OK**.
 5. No painel **Propriedades**, selecione **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Agora pode atribuir as aplicações aos grupos que escolher. Para obter mais informações, veja [Atribuir aplicações a grupos](apps-deploy.md).

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321123"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347903"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 
@@ -32,19 +32,15 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. Na carga de trabalho **Aplicações móveis**, selecione **Gerir** > **Aplicações**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione **Aplicação de linha de negócio**.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Passo 2: configurar o ficheiro de pacote de aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação**.
-2. No painel **Ficheiro de pacote de aplicação**, selecione o botão Procurar. Em seguida, selecione um ficheiro de instalação do Windows com a extensão **.msi**, **.appx**, **.appxbundle**, **.msix** ou **.msixbundle**.
-
-    > [!NOTE]
-    > As extensões de ficheiros de aplicações do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  
-
+2. No painel **Ficheiro de pacote de aplicação**, selecione o botão Procurar. Em seguida, selecione um ficheiro de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**.
 3. Quando tiver terminado, selecione **OK**.
 
 
@@ -84,7 +80,7 @@ Algumas aplicações baseadas no programa de instalação MSI são automaticamen
 
 Esta funcionalidade é útil para evitar que ocorra uma condição race. Por exemplo, pode ocorrer uma condição race quando a aplicação é atualizada automaticamente pelo programador e pelo Intune. Ambos podem tentar impor uma versão da aplicação num cliente Windows, o que cria um conflito.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

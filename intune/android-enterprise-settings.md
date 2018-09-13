@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039340"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312901"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Definições de quiosque do Android Enterprise no Intune
 
@@ -33,14 +33,14 @@ Os perfis de quiosque do Android suportam as seguintes definições de configura
     - **Conceder automaticamente**: as permissões são concedidas automaticamente.
     - **Negar automaticamente**: as permissões são negadas automaticamente.
 - **Alterações de volume**: selecione **Bloquear** para impedir que os utilizadores alterem o volume do dispositivo.
-- **Reposição de dados de fábrica**: selecione **Bloquear** para impedir que os utilizadores efetuem uma reposição de fábrica do dispositivo.
+- **Limpar**: selecione **Bloquear** para impedir que os utilizadores apaguem o dispositivo.
 - **Arranque seguro**: selecione **Bloquear** para impedir que os utilizadores reiniciem o dispositivo em modo de segurança.
 - **Barra de estado**: selecione **Bloquear** para impedir que os utilizadores acedam à barra de estado, incluindo definições rápidas e notificações.
 - **Alterações à definição de Wi-Fi**: selecione **Bloquear** para impedir que os utilizadores alterem as configurações de Wi-Fi criadas pelo proprietário do dispositivo. Os utilizadores podem criar as suas próprias configurações de Wi-Fi.
 - **Configuração do ponto de acesso Wi-Fi**: selecione **Bloquear** para impedir que os utilizadores criem ou editem configurações de Wi-Fi.
 - **Funcionalidades de depuração**: selecione **Permitir** para permitir que os utilizadores utilizem funcionalidades de depuração.
 - **Ajuste do microfone**: selecione **Bloquear** para impedir que os utilizadores ajustem o volume ou desativem o som do microfone.
-- **E-mails da proteção da reposição de fábrica**: selecione **Endereços de e-mail da conta Google** para definir endereços de e-mail (separados por ponto e vírgula) que podem desbloquear o dispositivo após uma reposição de fábrica. Se não for especificado um e-mail, qualquer pessoa pode desbloquear o dispositivo após uma reposição de fábrica.
+- **E-mails da proteção da limpeza**: selecione **Endereços de e-mail de conta Google** para definir endereços de e-mail (separados por ponto e vírgula) que podem desbloquear o dispositivo após uma limpeza. Se não for especificado um e-mail, qualquer pessoa pode desbloquear o dispositivo após uma limpeza.
 - **Saída de emergência da rede**: selecione **Ativar** para permitir a ativação da funcionalidade de saída de emergência da rede. Se não conseguir estabelecer uma ligação de rede no momento do arranque, a saída de emergência pedirá ao utilizador que se ligue temporariamente a uma rede para poder atualizar a política do dispositivo. Depois da aplicação da política, a rede temporária é esquecida e o dispositivo continua o arranque. Isto evita que não seja possível ligar a uma rede caso não exista uma rede adequada na última política e o dispositivo arranque para uma aplicação no modo de bloqueio de tarefa, ou que o utilizador não consiga aceder às definições do dispositivo.
 - **Permitir a instalação a partir de origens desconhecidas**: selecione **Permitir** para permitir que os utilizadores instalem a partir de origens desconhecidas.
 - **Atualização do sistema**: selecione uma opção para definir a forma como o dispositivo processa atualizações por ondas eletromagnéticas:
@@ -73,7 +73,7 @@ Os perfis de quiosque do Android suportam as seguintes definições de configura
 - **Remoção do utilizador**: selecione **Bloquear** para impedir que os utilizadores removam utilizadores.
 - **Alterações à conta**: selecione **Bloquear** para impedir que os utilizadores modifiquem as contas.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
 

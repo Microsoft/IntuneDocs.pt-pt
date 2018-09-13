@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40252592"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347479"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
@@ -34,6 +34,7 @@ Atualmente, a VPN por aplicação está disponível para os seguintes fornecedor
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Pré-requisitos para a VPN por aplicação
 
@@ -145,7 +146,7 @@ Depois de adicionar o perfil VPN, associe a aplicação e o grupo do Azure AD ao
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Aplicações Móveis**.
+3. Selecione **Aplicações do cliente**.
 4. Clique em **Aplicações**.
 5. Selecione a aplicação a partir da lista de aplicações.
 6. Clique em **Tarefas.**
@@ -183,10 +184,14 @@ Com a configuração de VPN por aplicação associada à sua aplicação, verifi
  - Certifique-se de que tem a aplicação VPN de terceiros suportada instalada. As seguintes aplicações VPN são suportadas:
     - Check Point Capsule Connect
     - Cisco AnyConnect
-    - Citrix VPN
+    - VPN do Citrix
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Aplicação Zscaler
+
+    > [!NOTE]
+    > Se estiver a utilizar a aplicação VPN Pulse Secure, pode optar por utilizar o túnel de camada de aplicação ou de camada de pacote. Defina o valor **ProviderType** para **proxy-da-aplicação**, para o túnel de camada de aplicação ou para **pacote-túnel**, para o túnel de camada de pacote.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Estabelecer ligação com a VPN por aplicação
 
@@ -214,7 +219,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para rever as definições do iOS, veja [VPN settings for iOS devices in Microsoft Intune (Definições de VPN para dispositivos iOS no Microsoft Intune)](vpn-settings-ios.md).
 -  Para saber mais sobre a definição de VPN e o Intune, veja [How to configure VPN settings in Microsoft Intune (Como configurar as definições de VPN no Microsoft Intune)](vpn-settings-configure.md).

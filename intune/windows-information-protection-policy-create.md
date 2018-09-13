@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762251"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347312"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -62,8 +62,8 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os Serviços** > **Intune**.
-3. Selecione **Aplicações móveis** no painel **Microsoft Intune**.
-4. Selecione **Políticas de proteção de aplicações** no painel **Aplicações móveis**.
+3. Selecione **Aplicações do cliente** no painel **Microsoft Intune**.
+4. Selecione **Políticas de proteção de aplicações** no painel **Aplicações do cliente**.
 5. Selecione **Adicionar uma política** para apresentar o painel **Adicionar uma política**.
 6. Adicione os seguintes valores:
     - **Nome:** introduza um nome (obrigatório) para a nova política.
@@ -74,8 +74,8 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Para adicionar aplicações recomendadas à lista de aplicações protegidas
 
-1. Selecione **Aplicações móveis** no painel **Microsoft Intune**.
-2. Selecione **Políticas de proteção de aplicações** no painel **Aplicações móveis**.
+1. Selecione **Aplicações do cliente** no painel **Microsoft Intune**.
+2. Selecione **Políticas de proteção de aplicações** no painel **Aplicações do cliente**.
 3. No painel **Políticas de proteção de aplicações**, selecione a política que pretende modificar. O painel **Proteção de Aplicações do Intune** é apresentado.
 4. Selecione **Aplicações protegidas** a partir do painel **Proteção de Aplicações do Intune**. É apresentado o painel **Aplicações protegidas**, onde pode ver todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
 5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite-lhe alterar o filtro de lista.
@@ -86,8 +86,8 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Adicionar uma aplicação da loja à lista de aplicações protegidas
 
 **Para adicionar uma aplicação da Loja**
-1. Selecione **Aplicações móveis** no painel **Microsoft Intune**.
-2. Selecione **Políticas de proteção de aplicações** no painel **Aplicações móveis**.
+1. Selecione **Aplicações do cliente** no painel **Microsoft Intune**.
+2. Selecione **Políticas de proteção de aplicações** no painel **Aplicações do cliente**.
 3. No painel **Políticas de proteção de aplicações**, selecione a política que pretende modificar. O painel **Proteção de Aplicações do Intune** é apresentado.
 4. Selecione **Aplicações protegidas** a partir do painel **Proteção de Aplicações do Intune**. É apresentado o painel **Aplicações protegidas**, onde pode ver todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
 5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite-lhe alterar o filtro de lista.
@@ -99,8 +99,8 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Adicionar uma aplicação de ambiente de trabalho à lista de aplicações protegidas
 
 **Para adicionar uma aplicação de ambiente de trabalho**
-1. Selecione **Aplicações móveis** no painel **Microsoft Intune**.
-2. Selecione **Políticas de proteção de aplicações** no painel **Aplicações móveis**.
+1. Selecione **Aplicações do cliente** no painel **Microsoft Intune**.
+2. Selecione **Políticas de proteção de aplicações** no painel **Aplicações do cliente**.
 3. No painel **Políticas de proteção de aplicações**, selecione a política que pretende modificar. O painel **Proteção de Aplicações do Intune** é apresentado.
 4. Selecione **Aplicações protegidas** a partir do painel **Proteção de Aplicações do Intune**. É apresentado o painel **Aplicações protegidas**, onde pode ver todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
 5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite-lhe alterar o filtro de lista.
@@ -116,8 +116,7 @@ Depois de adicionar as aplicações que pretende proteger com o WIP, tem de apli
 
 A Aprendizagem de WIP é um relatório que lhe permite monitorizar as suas aplicações com o WIP e as aplicações desconhecidas de WIP. As aplicações desconhecidas são as aplicações que não foram implementadas pelo departamento de TI da sua organização. Pode exportar estas aplicações a partir do relatório e adicioná-las às políticas do WIP para evitar a interrupção da produtividade antes de impor o WIP no modo “Bloquear”.
 
-<!-- 1631908 -->
-Para além de ver informações sobre aplicações com o WIP, agora pode ver um resumo dos dispositivos que partilharam dados profissionais com sites. Com estas informações, pode determinar os sites que devem ser adicionados às políticas WIP dos grupos e dos utilizadores. O resumo mostra que URLs de sites são acedidos por aplicações com o WIP.
+<!-- 1631908 --> Além de ver informações sobre aplicações com o WIP, agora pode ver um resumo dos dispositivos que partilharam dados profissionais com sites. Com estas informações, pode determinar os sites que devem ser adicionados às políticas WIP dos grupos e dos utilizadores. O resumo mostra que URLs de sites são acedidos por aplicações com o WIP.
 
 Quando estiver a trabalhar com aplicações com o WIP e aplicações desconhecidas de WIP, recomendamos que comece com **Silencioso** ou **Permitir Substituições** enquanto verifica com um pequeno grupo que tenha as aplicações corretas na sua lista de aplicações protegidas. Depois de terminar, pode alterar a política de imposição final, **Bloquear**.
 
@@ -149,7 +148,7 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
 1. Abra o [portal do Azure](https://portal.azure.com). Selecione **Todos os serviços**. Escreva **Intune** no filtro da caixa de texto.
 
-3. Selecione **Intune** > **Aplicações Móveis**.
+3. Selecione **Intune** > **Aplicações do Cliente**.
 
 4. Selecione **Estado de proteção da aplicação** > **Relatórios** > **Aprendizagem de Windows Information Protection**.  
 
@@ -183,6 +182,6 @@ Depois de criar a política de proteção de aplicações do WIP, tem de a imple
 
 2.  Selecione o grupo ao qual pretende aplicar a sua política e, em seguida, escolha **Selecionar** para implementá-la.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Para saber mais sobre o Windows Information Protection, veja [Proteger os dados empresariais com o Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).

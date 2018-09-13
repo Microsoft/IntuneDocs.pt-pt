@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146701"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313297"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
@@ -55,8 +55,8 @@ O Gestor Escolar da Apple é um programa de compra e inscrição de dispositivos
 
 ## <a name="apple-configurator"></a>Apple Configurator
 Pode inscrever dispositivos iOS com o Apple Configurator num computador Mac. Para preparar os dispositivos, deve ligá-los via USB e instalar um perfil de inscrição. Pode inscrever dispositivos com o Apple Configurator de duas formas:
-- Inscrição com o Assistente de Configuração – realiza a reposição de fábrica do dispositivo, prepara-o para executar o Assistente de Configuração e instala as políticas da empresa para o novo utilizador do dispositivo.
-- Inscrição direta – não efetua a reposição de fábrica do dispositivo e inscreve o dispositivo com uma política predefinida. Este método destina-se a dispositivos sem afinidade de utilizador.
+- Inscrição com o Assistente de Configuração – apaga os dados do dispositivo, prepara-o para executar o Assistente de Configuração e instala as políticas da empresa para o novo utilizador do dispositivo.
+- Inscrição direta – não apaga os dados do dispositivo e inscreve-o com uma política predefinida. Este método destina-se a dispositivos sem afinidade de utilizador.
 
 Saiba mais sobre a [inscrição no Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md).
 
@@ -80,5 +80,5 @@ A afinidade de utilizador é necessária para suportar o seguinte:
 
 Os dispositivos configurados sem afinidade de utilizador não suportam o Portal da Empresa e não devem ter a aplicação instalada. O Portal da Empresa foi concebido para utilizadores com credenciais da empresa e que necessitam de acesso a recursos empresariais personalizados (por exemplo, e-mail). Os dispositivos inscritos sem afinidade de utilizador não se destinam a ter um início de sessão de utilizador dedicado. Os dispositivos de quiosque, ponto de venda (POS) ou utilitário partilhado são casos de utilização típicos para dispositivos inscritos sem afinidade de utilizador.
 
-Se for necessária afinidade de utilizador, confirme que o perfil de inscrição do dispositivo tem a opção **Afinidade do Utilizador** selecionada antes de o inscrever. Para alterar o estado de afinidade num dispositivo, tem de extinguir e voltar a inscrever o dispositivo.
+Se for necessária afinidade de utilizador, confirme que o perfil de inscrição do dispositivo tem a opção **Afinidade de Utilizador** selecionada antes de o inscrever. Para alterar o estado de afinidade num dispositivo, tem de extinguir e voltar a inscrever o dispositivo.
 

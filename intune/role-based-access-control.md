@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 2a0c230e89944b4330582fe4c6933ca1fe717aec
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474569"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329995"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -79,7 +79,7 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Funções do Intune** e, em seguida, **Todas as funções**.
+3. No painel **Intune**, selecione **Funções** > **Todas as funções**.
 1. No painel **Funções do Intune – Todas as funções**, selecione a função incorporada que pretende atribuir.
 
 2. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**.
@@ -114,17 +114,15 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-3. Escolha **Intune** e, quando o Dashboard do Intune for apresentado, escolha **Funções do Intune**.
+3. Selecione **Intune** > **Funções** > **Todas as funções** > **Adicionar personalização**.
 
-4. No painel **Funções do Intune**, selecione **Todas as funções** e, em seguida, **Adicionar personalização**.
+4. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
 
-5. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
+5. No painel **Permissões**, selecione as permissões que quer utilizar com esta função. Utilize a [Tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais as permissões que quer aplicar.
 
-3. No painel **Permissões**, selecione as permissões que quer utilizar com esta função. Utilize a [Tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais as permissões que quer aplicar.
+6. Quando tiver terminado, escolha **OK**.
 
-4. Quando tiver terminado, escolha **OK**.
-
-5. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é apresentada na lista no painel **Funções do Intune – Todas as funções**.
+7. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é apresentada na lista no painel **Funções do Intune – Todas as funções**.
 
 ### <a name="to-assign-a-custom-role"></a>Para atribuir uma função personalizada
 
@@ -140,7 +138,7 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 [Utilizar a função de operador do Suporte Técnico do Intune com o portal de resolução de problemas](help-desk-operators.md)
 

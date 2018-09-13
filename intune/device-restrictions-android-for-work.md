@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905942"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329774"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Definições de restrições de dispositivos profissionais no Intune
 
@@ -42,7 +42,7 @@ Este artigo lista todas as definições de restrições de dispositivos do Micro
   - **Conceder automaticamente**
   - **Negar automaticamente**
 
-    O estado de concessão de permissões pode ser definido posteriormente para aplicações específicas, ao utilizar uma política de Configuração de Aplicações para uma aplicação individual (em **Aplicações móveis** > **Políticas de configuração de aplicações**).
+    O estado de concessão de permissões pode ser definido posteriormente para aplicações específicas, ao utilizar uma política de Configuração de Aplicações para uma aplicação individual (em **Aplicações do cliente** > **Políticas de configuração de aplicações**).
 
 - **Adicionar e remover contas**
 
@@ -50,7 +50,7 @@ Este artigo lista todas as definições de restrições de dispositivos do Micro
 
    Por exemplo, ao implementar a aplicação Gmail num perfil de trabalho do Android, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho.
 
-- **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos com perfil de trabalho do Android em Android OS v6.0 e mais recentes. Deste modo, pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
+- **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos de perfil de trabalho do Android em Android OS v6.0 e mais recentes. Deste modo, pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
 
 - **Captura de ecrã**: bloqueia a captura de ecrã no dispositivo quando está no perfil de trabalho. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura.
 

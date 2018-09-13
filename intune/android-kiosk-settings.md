@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949548"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329388"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Definições de quiosque para dispositivos Android no Intune
 
@@ -55,7 +55,7 @@ Para definir um dispositivo de quiosque do Android para múltiplas aplicações,
 
 1. Navegue até à [página Ecrã Inicial Gerido no Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) e inicie sessão com a mesma conta que utiliza para outras aplicações geridas do Google Play.
 2. Selecione **Aprovar**.
-3. Aceda ao [portal do Intune](https://portal.azure.com) e selecione **Aplicações móveis** > **Google Play Gerido** > **Sincronizar**.
+3. Aceda ao [portal do Intune](https://portal.azure.com) e selecione **Aplicações do cliente** > **Google Play Gerida** > **Sincronizar**.
 4. Selecione **Aplicações**  > **Ecrã Inicial Gerido** > **Atribuições** > **Adicionar grupo**.
 5. Em **Tipo de atribuição**, selecione **Necessário**.
 6. Selecione **Grupos incluídos** > **Selecionar grupos para incluir** > selecione o grupo de dispositivos que criou para os seus dispositivos de quiosque > **Selecionar** > **OK** > **OK** > **Guardar**.
@@ -65,13 +65,13 @@ Para definir um dispositivo de quiosque do Android para múltiplas aplicações,
 Para cada aplicação que pretende disponibilizar nos dispositivos de quiosque, siga estes passos:
 
 1. [Adicione a aplicação ao Intune](store-apps-android.md).
-2. Selecione **Aplicações móveis** > **Aplicações** > selecione a aplicação > **Atribuições** > **Adicionar grupo**.
+2. Selecione **Aplicações do cliente** > **Aplicações** > selecione a aplicação > **Atribuições** > **Adicionar grupo**.
 3. Em **Tipo de atribuição**, selecione **Necessário**.
 4. Selecione **Grupos incluídos** > **Selecionar grupos para incluir** > selecione o grupo de dispositivos que criou para os seus dispositivos de quiosque > **Selecionar** > **OK** > **OK** > **Guardar**.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>Adicionar ligações Web que podem ser utilizadas no modo de quiosque
 
-1. Aceda ao [portal do Intune](https://portal.azure.com) e selecione **Aplicações móveis** > **Aplicações** > **Adicionar**.
+1. Aceda ao [portal do Intune](https://portal.azure.com) e selecione **Aplicações do cliente** > **Aplicações** > **Adicionar**.
 2. Em **Tipo de aplicação**, selecione **Ligação Web**.
 3. Selecione **Configurar** e forneça as informações necessárias. Não precisa de adicionar uma imagem de logótipo porque será obtida automaticamente do favicon.ico do site.
 4. Selecione **OK** > **Adicionar**.
@@ -93,5 +93,5 @@ Certifique-se de que implementou uma aplicação de browser para os dispositivos
 9. Em **Atribuir a**, selecione **Grupos selecionados**.
 10. Escolha **Selecionar grupos para incluir** > selecione o grupo de dispositivos que criou para os seus dispositivos de quiosque > **Selecionar** > **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

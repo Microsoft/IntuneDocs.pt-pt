@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 3596d539319a5a91a1647555a89004683874aa06
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268877"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329466"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -33,7 +33,7 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. Selecione a carga de trabalho **Aplicações Móveis**.
+3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
 5. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil que será apresentado no portal do Azure.
@@ -88,7 +88,7 @@ Também pode pré-configurar uma permissão para que as aplicações acedam às 
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. Selecione **Aplicações Móveis**.
+3. Selecione **Aplicações do cliente**.
 3. Em **Gerir**, selecione **Políticas de configuração da aplicação** e, em seguida, selecione **Adicionar**.
 4. Defina os seguintes detalhes:
     - **Nome**. O nome do perfil que será apresentado no portal do Azure.
@@ -106,7 +106,7 @@ Também pode pré-configurar uma permissão para que as aplicações acedam às 
 10. Selecione os grupos de utilizadores a atribuir e, em seguida, escolha **Selecionar**.
 11. Escolha **Guardar** para atribuir a política.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.
 

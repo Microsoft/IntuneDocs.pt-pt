@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442649"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313090"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos para dispositivos iOS no Intune
 
@@ -74,7 +74,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e-mail empresarial através de perfis de e-mail com o Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Estado de funcionamento do dispositivo
 
 - **Dispositivos alvo de jailbreak**: se ativar esta definição, os dispositivos alvo de jailbreak não são conformes.
 - **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo** (iOS 8.0 e mais recente): escolha o nível de ameaça máximo para marcar dispositivos como não conformes. Os dispositivos que excederem este nível de ameaça serão marcados como não conformes:
@@ -107,6 +107,11 @@ Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e
 - **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
 - **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas.
 
+### <a name="restricted-applications"></a>Aplicações restritas 
+Pode restringir aplicações ao adicionar os respetivos IDs do pacote à política. Em seguida, se um dispositivo tiver a aplicação instalada, o dispositivo será marcado como não conforme. 
+- **Nome da aplicação**: introduza um nome simples para o ajudar a identificar o ID do pacote. 
+- **ID do pacote de aplicação**: introduza o identificador exclusivo do pacote atribuído pelo fornecedor da aplicação. Para localizar o ID do pacote, veja [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (Como localizar o ID do pacote de uma aplicação iOS).  
+
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 
 1. Escolha uma política configurada por si. As políticas existentes encontram-se em **Conformidade do dispositivo** > **Políticas**.
@@ -115,6 +120,6 @@ Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e
 
 Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores visados pela política são avaliados quanto à conformidade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
 [Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)

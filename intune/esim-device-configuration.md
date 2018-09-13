@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400288"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314028"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis celulares eSIM no Intune – pré-visualização pública
 
@@ -179,7 +179,7 @@ Ao remover o dispositivo do grupo do Azure AD, o perfil eSIM também será remov
 2. Acede ao grupo do Azure AD e remove o dispositivo do grupo.
 3. Quando o dispositivo removido contactar o Intune, a política atualizada é avaliada e o perfil eSIM removido.
 
-O perfil eSIM também será removido quando a inscrição do dispositivo for anulada pelo utilizador ou quando a ação [remoção dos dados da empresa](devices-wipe.md#remove-company-data) ou [reposição remota de dispositivos](devices-wipe.md#factory-reset) for executada no dispositivo.
+O perfil eSIM também será removido quando o dispositivo for [extinto](devices-wipe.md#retire) ou a inscrição do dispositivo for anulada pelo utilizador ou quando a [ação de reposição remota de dispositivos](devices-wipe.md#wipe) for executada no dispositivo.
 
 > [!NOTE]
 > Remover o perfil poderá não interromper o processo de faturação. Contacte a sua operadora de rede móvel para verificar o estado da faturação do seu dispositivo.
@@ -192,5 +192,5 @@ O perfil eSIM também será removido quando a inscrição do dispositivo for anu
   - **File format not proper (Formato de ficheiro não adequado)**: veja o **Passo 1: adicionar códigos de ativação celulares** (neste artigo) para saber como pode formatar corretamente o seu ficheiro.
   - **Cellular activation failure, contact mobile operator (Falha na ativação celular, contacte a operadora de rede móvel)**: o código de ativação poderá não estar ativado na rede. Também é possível que a ativação celular e a transferência do perfil tenham falhado.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Configurar perfis de dispositivo](device-profiles.md)

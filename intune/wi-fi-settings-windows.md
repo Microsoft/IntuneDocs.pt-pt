@@ -5,26 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321736"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329652"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Definições de Wi-Fi para dispositivos com o Windows 10 ou posterior no Intune
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Definições de Wi-Fi para dispositivos com o Windows 10 ou posterior no Intune
 
 As definições de Wi-Fi são utilizadas num perfil de configuração que se aplica a dispositivos com o Windows 10 ou posterior. As suas opções são:
 
 - Básico
-- Empresarial
+- Enterprise
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -77,29 +78,40 @@ As definições de Wi-Fi são utilizadas num perfil de configuração que se apl
   - **EAP-TTLS**
   - **PEAP Protegido** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>Mais opções ao selecionar o tipo de EAP
+    **Definições adicionais de EAP-TLS, EAP-TTLS e PEAP**:
+    
+    > [!NOTE]
+    > Atualmente, apenas os perfis de certificado SCEP são suportados quando utiliza um tipo de EAP. Os perfis de certificado PKCS não são suportados. Sempre que for pedido a um utilizador para introduzir um certificado, certifique-se de que seleciona um certificado SCEP.
 
-> [!NOTE]
-> Atualmente, apenas os perfis de certificado SCEP são suportados quando utiliza um tipo de EAP. Os perfis de certificado PKCS não são suportados. Sempre que for pedido a um utilizador para introduzir um certificado, certifique-se de que seleciona um certificado SCEP.
+      - **Fidedignidade do Servidor**  
 
-#### <a name="server-trust"></a>Fidedignidade do Servidor
+        **Nomes de servidores de certificados**: utilize com os tipos EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Introduza um ou mais nomes comuns utilizados em certificados emitidos pela sua autoridade de certificação (AC) confiável. Se introduzir estas informações, pode ignorar a caixa de diálogo de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.  
 
-|Nome da definição|Mais informações|Utilizar quando|
-|--------------|-------------|----------|
-|**Nomes de servidores de certificados**|Introduza um ou mais nomes comuns utilizados em certificados emitidos pela sua autoridade de certificação (AC) confiável. Se introduzir estas informações, pode ignorar a caixa de diálogo de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.|O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
-|**Certificado de raiz para a validação do servidor**|Escolha o perfil de certificado de raiz fidedigna que serve para autenticar a ligação. |O tipo de EAP é **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
-|**Privacidade de identidade (identidade externa)**|Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.|O tipo de EAP é **PEAP**|
+        **Certificado de raiz para validação do servidor**: utilize com os tipos EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Escolha o perfil de certificado de raiz fidedigna que serve para autenticar a ligação.  
 
-#### <a name="client-authentication"></a>Autenticação de Cliente
+        **Privacidade de identidade (identidade externa)**: utilize com o tipo EAP **PEAP**. Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.  
 
-| Nome da definição | Mais informações | Utilizar quando |
-|---|---|---|
-| **Certificado de cliente para autenticação de cliente (Certificado de identidade)** |  Selecione o perfil de certificado SCEP utilizado para autenticar a ligação. | O tipo de EAP é **EAP-TLS** |
-| **Método de autenticação** | Selecione o método de autenticação da ligação:<br><br>- **Certificados**: selecione o certificado de cliente de SCEP que é o certificado de identidade apresentado ao servidor.<br><br>- **Nome de Utilizador e Palavra-passe**: introduza o método de autenticação **Método não EAP (Identidade Interna)**. As opções são:<br><br>- **Palavra-passe não encriptada (PAP)**<br>- **Protocolo CHAP (Challenge Handshake)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Versão 2 (MS-CHAP v2)**<br><br>- **Privacidade de identidade (identidade externa)**: introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro. | O tipo de EAP é **EAP-TTLS** |
+      - **Autenticação de Cliente**
+
+        **Certificado de cliente para autenticação de cliente (Certificado de identidade)**: utilize com o tipo EAP **EAP-TLS**. Selecione o perfil de certificado utilizado para autenticar a ligação.
+
+        **Método de autenticação**: utilize com o tipo EAP **EAP-TTLS**. Selecione o método de autenticação da ligação:  
+
+          - **Certificados**: selecione o certificado de cliente, ou seja, o certificado de identidade apresentado ao servidor.
+          - **Nome de Utilizador e Palavra-passe**: introduza o método de autenticação **Método não EAP (Identidade Interna)**. As opções são:
+
+            - **Palavra-passe não encriptada (PAP)**
+            - **Protocolo CHAP (Challenge Handshake)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP Versão 2 (MS-CHAP v2)**
+
+        **Privacidade de identidade (identidade externa)**: utilize com o tipo EAP **EAP-TTLS**. Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
+
+- **Forçar o perfil Wi-Fi para que esteja em conformidade com a norma FIPS (Federal Information Processing Standard)**: selecione **Sim** ao validar relativamente à norma FIPS 140-2. Esta norma é necessária para todas as agências governamentais federais dos EUA que utilizem sistemas de segurança baseados em criptografia para proteger informações confidenciais, mas não classificadas, armazenadas digitalmente. Selecione **Não** se não pretender a conformidade com a norma FIPS.
 
 ## <a name="use-an-imported-settings-file"></a>Utilizar um ficheiro de definições importadas
 
 Para as definições não disponíveis no Intune, pode exportar definições de Wi-Fi de outro dispositivo com Windows. Esta exportação cria um ficheiro XML com todas as definições. Em seguida, importe este ficheiro para o Intune e utilize-o como o perfil de Wi-Fi. Veja [Exportar e importar definições de Wi-Fi para dispositivos com Windows](wi-fi-settings-import-windows-8-1.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Configurar definições de Wi-Fi no Intune](wi-fi-settings-configure.md)

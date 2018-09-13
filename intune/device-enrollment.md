@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909206"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313166"
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Por predefinição, os dispositivos para todas as plataformas têm permissão pa
 
 | **Método** |  **Reposição obrigatória** |    [**Afinidade de Utilizador**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Bloqueado** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Durante a inscrição, é feita a reposição de fábrica dos dispositivos. |  Associa cada dispositivo a um utilizador.| Os utilizadores não conseguem anular a inscrição dos dispositivos.  | |
+| | Os dispositivos são apagados durante a inscrição. |  Associa cada dispositivo a um utilizador.| Os utilizadores não conseguem anular a inscrição dos dispositivos.  | |
 |**[BYOD](#bring-your-own-device)** | Não|   Sim |   Não | [Mais informações](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não  | [Mais informações](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   Sim |   Opcional |  Opcional|[Mais informações](./device-enrollment-program-enroll-ios.md)|
@@ -76,7 +76,7 @@ Os [dispositivos pertencentes à empresa (COD)](corporate-identifiers-add.md) in
 ### <a name="device-enrollment-manager"></a>Gestor de inscrição de dispositivos
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Estes tipos de dispositivo são ideais, por exemplo, para aplicações de utilitários ou ponto de venda, mas não para utilizadores que necessitem de aceder a recursos de e-mail ou da empresa. Saiba mais sobre o [DEM](./device-enrollment-manager-enroll.md). 
 
-### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos da Apple
+### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos Apple
 A gestão do Programa de Inscrição de Dispositivos (DEP) da Apple permite-lhe criar e implementar a política "over the air" em dispositivos iOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração do iOS. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
 
 Saiba mais sobre a inscrição do DEP para iOS:
@@ -87,7 +87,7 @@ Saiba mais sobre a inscrição do DEP para iOS:
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os utilizadores recebem os seus dispositivos, é-lhes pedido que executem o Assistente de Configuração para inscreverem os seus dispositivos. Este método suporta o modo **iOS supervisionado** que, por sua vez, ativa as seguintes funcionalidades:
   - Inscrição bloqueada
-  - Modo de quiosque e outras restrições e configurações avançadas
+  - Modo de Quiosque e outras restrições e configurações avançadas
 
 Saiba mais sobre a inscrição do iOS Apple Configurator com o Assistente de Configuração:
 
@@ -95,7 +95,7 @@ Saiba mais sobre a inscrição do iOS Apple Configurator com o Assistente de Con
 - [Inscrever dispositivos iOS com o Configurator e o Assistente de Configuração](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Para a inscrição direta, o administrador tem de inscrever cada dispositivo manualmente através da criação de uma política de inscrição e exportá-lo para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente e não necessitam de uma reposição de fábrica. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados e não suportam acesso condicional, deteção de jailbreak ou gestão de aplicações móveis.
+Para a inscrição direta, o administrador tem de inscrever cada dispositivo manualmente através da criação de uma política de inscrição e exportá-lo para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente e não necessitam de ser apagados. Os dispositivos são geridos como dispositivos sem utilizador. Estes não estão bloqueados nem são supervisionados e não suportam acesso condicional, deteção de jailbreak ou gestão de aplicações móveis.
 
 Para obter mais informações sobre a inscrição do iOS, veja:
 

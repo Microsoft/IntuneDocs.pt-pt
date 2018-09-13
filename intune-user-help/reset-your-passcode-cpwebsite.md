@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/23/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,57 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 45b087b9617b783517f8296f1726891392764d5f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8ce71a14f9bb7e877fb31e78afdf64d5e492f4a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019335"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146694"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
-Se perder o PIN ou a palavra-passe de um dispositivo que tenha inscrito no Intune, pode utilizar o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para efetuar a reposição. Pode utilizar o site do Portal da Empresa para gerir computadores e dispositivos que tenha inscrito no Intune e para realizar a maioria das tarefas que pode fazer com a aplicação Portal da Empresa.
+Se perder o PIN ou a palavra-passe do seu dispositivo, pode utilizar o [site do Portal da Empresa](https://portal.manage.microsoft.com) para efetuar a reposição.  
 
-> [!NOTE]
-> É possível que não veja o botão Repor Código de Acesso no site do Portal da Empresa se utilizar um dispositivo da empresa inscrito. Se não vir o botão, terá de contactar o suporte da empresa para que este reponha o código de acesso.
+Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser apresentada a opção para repor o código de acesso do dispositivo. Contacte o suporte da empresa para que este reponha o código de acesso.
 
-Para repor o código de acesso:
-
-1. No [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/intune/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
-
-2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo cujo código de acesso quer repor.
-
-   ![Captura de ecrã a mostrar a página Os Meus Dispositivos, com alguns dispositivos não identificados, acima da faixa de aviso para inscrever dispositivos não listados ou identificar os dispositivos não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
-
-3. O dispositivo será aberto numa janela de pop-up. Selecione o botão **Repor Código de Acesso**.
-
-   ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
-
-4. Será apresentada uma faixa a pedir-lhe para confirmar que pretende repor o código de acesso e que a sua sessão irá terminar no dispositivo depois de esta ação ser efetuada. Em seguida, terá de aguardar 5 minutos antes de iniciar sessão novamente.
-
-   ![A faixa de reposição do código de acesso com o aviso sobre a reposição do código de acesso do dispositivo e como a sessão do utilizador irá terminar. Os botões de intervenção do utilizador são Terminar Sessão e Cancelar.](./media/iwp-reset-passcode-popup.png)
-
-5. Selecione **Terminar sessão** e receberá uma mensagem final a informá-lo sobre a remoção do código de acesso do dispositivo. Se não tiver o dispositivo consigo, não remova o código de acesso, pois quem tiver acesso físico ao dispositivo poderá aceder à maioria das informações pessoais ou empresariais no mesmo. 
-
-   ![A segunda faixa de reposição do código de acesso com o aviso sobre a reposição do código de acesso do dispositivo e como o código de acesso será removido do dispositivo. Também informa sobre como definir um novo código de acesso ao aceder às definições do dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
-
-   Diferentes dispositivos têm diferentes tipos de códigos de acesso.
-
-   **Android**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário 
-  
    > [!NOTE]
-   > Não pode repor o código de acesso para dispositivos com o Android 7.0 e versões posteriores. Caso se esqueça do código de acesso, terá de repor as definições de fábrica destes dispositivos.
+   > Não pode repor o código de acesso para dispositivos com o Android 7.0 e versões posteriores. Caso se esqueça do código de acesso, terá de repor as definições de fábrica do dispositivo. 
 
-   **iOS**: remove o código de acesso existente e não cria um código de acesso temporário. Se estiver a utilizar a deteção de impressão digital do Touch ID para abrir o dispositivo ou para fazer compras, terá de voltar a configurá-la.
+## <a name="reset-your-passcode"></a>Repor o código de acesso
 
-   **Windows 10 Mobile**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário. Se estiver a utilizar o reconhecimento facial do Windows Hello para iniciar sessão, este continuará a ser suportado.
+1.  Abra o [site do Portal da Empresa](https://portal.manage.microsoft.com) e selecione o botão __Menu__ > __Dispositivos__.  
+
+2. Selecione o dispositivo que necessita de uma reposição do código de acesso.  
+
+    ![Uma captura de ecrã da página Dispositivos, com dois mosaicos que mostram dispositivos não identificados com um nome genérico. Uma faixa cinzenta está diretamente abaixo dos dispositivos e pede ao utilizador que identifique o dispositivo que está a utilizar ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
+
+3. Selecione **Repor Código de Acesso**. Se a opção de código de acesso não estiver visível na parte superior da sua página, selecione **Mais (…)** > **Repor Código de Acesso**.   
+
+   ![A página de detalhes do dispositivo para um dispositivo selecionado no site do Portal da Empresa, com uma lista de ligações na parte superior que apresenta Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)   
+
+    ![Vista ampliada do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
+
+4. Quando lhe for pedido, clique em **Terminar Sessão**. Quando lhe for pedido novamente, volte a iniciar sessão. Tem de iniciar sessão novamente no site do Portal da Empresa dentro de cinco minutos, caso contrário o Portal da Empresa não irá repor o código de acesso do dispositivo.  
+
+   > [!NOTE]
+   > Tem de iniciar sessão novamente para confirmar a sua identidade. Este procedimento serve para impedir que o código de acesso do seu dispositivo seja reposto através de tentativas maliciosas.
+
+   ![Capturas de ecrã de exemplo que mostram um pedido para terminar sessão no Portal da Empresa. Os botões de intervenção do utilizador são Terminar Sessão e Cancelar.](./media/iwp-reset-passcode-popup-1808.png)
+
+5. É apresentada uma mensagem a avisá-lo de que o código de acesso do dispositivo existente está prestes a ser removido. Clique em **Repor Código de Acesso** para confirmar.  
+    > [!WARNING]
+    > Depois de repor o código de acesso, qualquer pessoa que tenha acesso físico ao dispositivo poderá aceder às informações mais pessoais e empresariais no mesmo. Se não tiver atualmente o dispositivo na sua posse, não reponha o código de acesso.  
+
+   ![Captura de ecrã de exemplo que mostra a segunda mensagem de reposição do código de acesso. Inclui uma ligação para saber mais sobre como definir um novo código de acesso na documentação e botões individuais para repor o código de acesso e cancelar.](./media/iwp-reset-passcode-popup2-1808.png) 
+
+6. Se estiver a repor o código de acesso de um dispositivo iOS, o respetivo código de acesso existente será removido. Para dispositivos Windows ou Android, será emitido um código de acesso temporário para desbloquear o dispositivo e definir um novo código de acesso. 
+
+   > [!NOTE]
+   > Pode encontrar a palavra-passe temporária para dispositivos Windows e Android no Portal da Empresa, na página de detalhes do dispositivo. Veja a secção [Configurar um novo código de acesso](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) para obter descrições de códigos de acesso mais específicas do sistema operativo.  
+   
+7. No seu dispositivo, aceda a **Definições** e altere o código de acesso temporário. 
+
+8. É apresentado um sinalizador no canto superior direito do site do Portal da Empresa. Clique para ler a notificação e confirme se a palavra-passe foi reposta com êxito.  
+
+## <a name="set-up-a-new-passcode"></a>Configurar um novo código de acesso  
+
+Esta secção descreve a reposição do código de acesso e o comportamento da palavra-passe temporária para a plataforma de cada dispositivo.  
+
+**Android**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário.
+
+**iOS**: remove o código de acesso existente e não cria um código de acesso temporário. Se utilizar o scanner de impressões digitais Touch ID para abrir o seu dispositivo ou fazer compras, terá de configurá-lo novamente.  
+
+**Windows 10 Mobile**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
     
-   **Windows Phone 8.1**: remove o código de acesso existente e cria um código de acesso numérico temporário
+**Windows Phone 8.1**: remove o código de acesso existente e cria um código de acesso numérico temporário.  
 
-   Para dispositivos Android e Windows, a palavra-passe temporária aparecerá nos **Detalhes do Dispositivo**. 
-
-6. Desbloqueie o dispositivo e defina um novo código de acesso ou altere o código de acesso temporário ao aceder a **Definições** no seu dispositivo.
-
-Para ver uma notificação a confirmar que a palavra-passe foi reposta com êxito, clique no sinalizador de notificação na parte superior direita do site do Portal da Empresa.
-
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

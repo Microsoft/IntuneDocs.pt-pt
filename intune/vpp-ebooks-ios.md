@@ -15,12 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c00904097986d1cf70031f1b17171221da64abc0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1b43e7df72e709cfdd929085b1d6718f1afcdf9f
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224805"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347357"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir eBooks do iOS comprados através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -55,8 +55,8 @@ Antes de começar, obtenha um token VPP da Apple e carregue o mesmo para a sua c
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-1.  Na carga de trabalho **Aplicações móveis**, selecione **Configurar** > **Tokens VPP para iOS**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+1.  Na carga de trabalho **Aplicações do cliente**, selecione **Configurar** > **Tokens VPP para iOS**.
 2.  No painel da lista de tokens VPP, clique em **Criar**.
 3.  No painel **Novo Token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – verifique se se inscreveu no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Em seguida, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
@@ -79,7 +79,7 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 Selecione a ação de atribuição **Disponível** ou **Obrigatório**. 
 5. Assim que tiver terminado, escolha **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de livros.
 

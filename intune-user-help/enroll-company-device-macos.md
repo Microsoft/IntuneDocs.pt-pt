@@ -1,11 +1,11 @@
 ---
-title: Inscrever um dispositivo macOS fornecido ou pertencente à empresa para gestão | Microsoft Docs
+title: Inscrever um dispositivo macOS fornecido pela organização para gestão | Microsoft Docs
 description: Descreve como pode inscrever um dispositivo macOS no Intune que foi adquirido e fornecido pela sua organização.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016232"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241835"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>Gerir um dispositivo macOS pertencente à empresa
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>Inscrever um dispositivo macOS fornecido pela organização para gestão
 
-Saiba como gerir automaticamente um dispositivo macOS no Intune.
+Saiba como gerir o seu novo dispositivo macOS no Intune.  
 
-Normalmente, os dispositivos escolares e de trabalho são pré-configurados antes os receber. A sua organização envia definições pré-configuradas para o seu dispositivo assim que o liga e inicia sessão no mesmo pela primeira vez. Assim que a configuração do seu dispositivo terminar, terá acesso aos recursos da escola ou do trabalho. 
+Os dispositivos que são fornecidos pela sua empresa ou escola são, muitas vezes, pré-configurados antes de os receber. A sua organização enviará estas definições pré-configuradas para o seu dispositivo depois de o ligar e iniciar sessão no mesmo pela primeira vez. Assim que a configuração do seu dispositivo terminar, terá acesso aos recursos da escola ou do trabalho. 
 
 Para iniciar a configuração da gestão, ligue o seu dispositivo e inicie sessão com as credenciais da sua conta escolar ou profissional. O resto deste artigo descreve os passos e ecrãs que irá ver à medida que avançar no Assistente de Configuração.   
 
 ## <a name="what-is-apple-dep"></a>O que é o DEP da Apple?
-Se tem um dispositivo pertencente à empresa, é possível que tenha sido comprado a partir do Programa de Registo de Aparelho da Apple (DEP). Algumas organizações compram grandes quantidades de dispositivos iOS ou macOS através do DEP da Apple. Posteriormente, podem configurar e gerir dispositivos no respetivo fornecedor de gestão de dispositivos móveis preferido, como o Intune. Se for um administrador e quiser obter mais informações sobre o DEP da Apple, veja [Inscrever automaticamente dispositivos macOS com o Programa de Registo de Aparelho da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
+A sua organização poderá ter comprado os respetivos dispositivos através de algo designado por *Programa de Registo de Aparelho da Apple* (DEP). O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. Posteriormente, podem configurar e gerir esses dispositivos no respetivo fornecedor de gestão de dispositivos móveis preferido, como o Intune. Se for administrador e quiser obter mais informações sobre o DEP da Apple, veja [Inscrever automaticamente dispositivos iOS com o Programa de Registo de Aparelho da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
 ## <a name="set-up-your-macos-device"></a>Configurar o dispositivo macOS  
-Conclua os seguintes passos para inscrever o seu dispositivo macOS para gestão. Se estiver a utilizar o seu próprio dispositivo em vez de um dispositivo pertencente à empresa, siga os passos para [dispositivos pessoais e BYOD](enroll-your-device-in-intune-macos-cp.md).  
+Conclua os seguintes passos para inscrever o seu dispositivo macOS para gestão. Se estiver a utilizar o seu próprio dispositivo em vez de um dispositivo fornecido pela organização, siga os passos para [dispositivos pessoais e BYOD](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Ligue o seu dispositivo macOS. 
 2. Selecione o seu **Language** (Idioma) e clique em **Continue** (Continuar).  
@@ -64,4 +64,4 @@ Conclua os seguintes passos para inscrever o seu dispositivo macOS para gestão.
 ## <a name="get-the-company-portal-app"></a>Obtenha a aplicação Portal da Empresa      
 Aceda à App Store para obter a aplicação Portal da Empresa do Intune no seu dispositivo. A aplicação permite-lhe monitorizar, sincronizar, adicionar e remover o seu dispositivo da gestão, bem como instalar aplicações.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 ms.custom: intune-azure
-ms.openlocfilehash: 396766d33126cebf4a583ec4324badc96e627602
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: 80b6828f4768ff79f86532ef0d39ff2100b0ef25
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251630"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241716"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
@@ -43,7 +43,7 @@ O Intune proporciona detalhes da resolução de problemas com a aplicação com 
 
     > [!Note]  
     > A mesma aplicação pode ser atribuída a vários grupos, mas com diferentes ações pretendidas (intenções) para a aplicação. Por exemplo, uma intenção resolvida para uma aplicação apresentará a indicação **excluída** se a aplicação estiver excluída para um utilizador durante a atribuição de aplicações. Para obter mais informações, veja [Como são resolvidos conflitos entre intenções de aplicações](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
-    > Atualmente, o Intune não filtra as aplicações com base na plataforma do SO.
+    > Se ocorrer uma falha na instalação de uma aplicação necessária, o utilizador ou o suporte técnico poderá sincronizar o dispositivo e repetir a instalação da aplicação.
 
 Os detalhes do erro da instalação da aplicação irão indicar o problema. Pode usar estes detalhes para determinar a melhor ação a tomar para resolver o problema. Para obter mais informações sobre como resolver problemas de instalação da aplicação, veja [Códigos de Erro para Resolver Problemas de Instalação da Aplicação](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues).
 
@@ -51,6 +51,8 @@ Os detalhes do erro da instalação da aplicação irão indicar o problema. Pod
 > Também pode aceder ao painel **Resolução de problemas** ao apontar o seu browser para: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## <a name="app-installation-errors"></a>Erros de instalação da aplicação
+
+As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de instalação no Android e no iOS. 
 
 ### <a name="android-errors"></a>Erros do Android
 
@@ -82,7 +84,7 @@ Os detalhes do erro da instalação da aplicação irão indicar o problema. Pod
 |    Erro desconhecido (0x87D103E8)    |    Ocorreu um erro de instalação da aplicação desconhecido. Este é o erro resultante se não ocorrer nenhum dos outros erros.    |
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para obter informações adicionais de resolução de problemas, veja [Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa](help-desk-operators.md). 
 - Saiba mais sobre os problemas conhecidos no Microsoft Intune. Para obter mais informações, veja [Problemas conhecidos no Microsoft Intune](known-issues.md).

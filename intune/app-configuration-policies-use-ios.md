@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905840"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330267"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -47,7 +47,7 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. Selecione a carga de trabalho **Aplicações Móveis**.
+3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
 5. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil que é apresentado no portal do Azure.
@@ -57,7 +57,7 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 7.  Selecione **Aplicação associada**. Em seguida, no painel **Aplicação associada**, selecione a aplicação gerida à qual pretende aplicar a configuração e selecione **OK**.
 8.  No painel **Adicionar política de configuração**, selecione **Definições de configuração**.
 9. Selecione **Formato das definições de configuração**. Selecione uma das opções seguintes para adicionar informação XML:
-    - **Utilizar estruturador de configuração**
+    - **Utilizar o estruturador de configuração**
     - **Introduzir dados XML**<br></br>
     Para obter detalhes sobre a utilização do estruturador de configuração, veja [Utilizar o estruturador de configuração](#use-configuration-designer). Para obter detalhes sobre a introdução de dados XML, veja [Introduzir dados XML](#enter-xml-data). 
 10. Depois de adicionar as suas informações XML, selecione **OK** e, em seguida, selecione **Adicionar** para adicionar a política de configuração. O painel de descrição geral da política de configuração é apresentado.
@@ -133,6 +133,8 @@ Quando criar um ficheiro de configuração de aplicação, pode especificar um o
   <string>{{serialnumberlast4digits}}</string>
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
 </dict>
 ```
 ### <a name="supported-xml-plist-data-types"></a>Tipos de dados de Listas de Propriedades XML suportados
@@ -158,10 +160,11 @@ Além disso, o Intune suporta os seguintes tipos de tokens na lista de proprieda
 - \{\{username\}\} – por exemplo, **John Doe**
 - \{\{serialnumber\}\} – por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS)
 - \{\{serialnumberlast4digits\}\} – por exemplo, **G5V2** (para dispositivos iOS)
+- \{\{aaddeviceid\}\} – por exemplo, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorizar o estado de configuração da aplicação iOS por dispositivo 
 Assim que a política de configuração for atribuída, pode monitorizar o estado da configuração da aplicação iOS para cada dispositivo gerido. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos geridos, selecione um dispositivo específico para apresentar um painel do dispositivo. No painel do dispositivo, selecione **Configuração da aplicação**.  
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.

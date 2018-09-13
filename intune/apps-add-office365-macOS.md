@@ -15,12 +15,12 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: f8b76de6e9b3a584be7ad324391c1c071140488e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869508"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329449"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 a dispositivos macOS com o Microsoft Intune
 
@@ -40,8 +40,8 @@ Antes de começar a adicionar o Office 365 a dispositivos macOS, compreenda os s
 Adicionar o Office 365 a partir do painel **Aplicações**.
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. No painel de carga de trabalho de **Aplicações móveis**, em **Gerir**, selecione **Aplicações**. 
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. No painel da carga de trabalho **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**. 
 5. Selecione **Adicionar**.
 6. Na lista **Tipo de aplicação**, no grupo **Conjunto de Aplicações do Office 365**, selecione **macOS**.
 7. Para obter informações sobre o conjunto de aplicações, selecione **Informações do Conjunto de Aplicações**.  
@@ -80,7 +80,7 @@ Neste passo, configure as atribuições do conjunto de aplicações.
 6. No painel **Adicionar grupo**, selecione **OK**.
 7. Para consolidar as suas atribuições, selecione **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para saber mais sobre a adição de aplicações do Office 365 a dispositivos Windows 10, veja [Atribuir aplicações do Office 365 ProPlus 2016 para dispositivos Windows 10 com o Microsoft Intune](apps-add-office365.md).
 - Para saber mais sobre como incluir e excluir atribuições de aplicações a partir de grupos de utilizadores, veja [Incluir e excluir atribuições de aplicações](apps-inc-exl-assignments.md).

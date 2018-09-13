@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,36 +15,41 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: caac4b62c141145ac976d1515e6fdc92da90e962
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753095"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149812"
 ---
-# <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça encontrada pelo Symantec Endpoint Protection Mobile
+# <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça detetada pelo Symantec Endpoint Protection Mobile
 
-O Symantec Endpoint Protection Mobile detetou uma potencial ameaça no dispositivo. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, às aplicações e aos ficheiros. A mensagem que vê poderá ter o seguinte aspeto:
+O Symantec Endpoint Protection (SEP) Mobile é um serviço do Mobile Threat Defender que identifica potenciais ameaças nos seus dispositivos Android. Estas ameaças são comunicadas à aplicação Portal da Empresa e são apresentadas como problemas de não conformidade por resolver. Se o seu dispositivo for identificado como não conforme, poderá não ser possível:
 
-![O Skycure encontrou uma ameaça no dispositivo](./media/lookout-threat-found-android.png)
+* Ligar ao e-mail empresarial
+* Ligar ao Wi-Fi empresarial
+* Ligar ao SharePoint Online
+* Sincronizar ficheiros empresariais com o OneDrive
+* Aceder a aplicações da empresa
 
-Para corrigir o problema, abra a aplicação Symantec Endpoint Protection Mobile e siga as instruções apresentadas na aplicação.
+Este artigo descreve como reconhecer os alertas de ameaças do SEP Mobile e o que fazer para os resolver. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>O que poderá ver se o dispositivo inscrito estiver impedido de aceder ao e-mail ou aos ficheiros
+## <a name="resolve-virus-or-security-threat"></a>Resolver ameaças de vírus ou segurança  
 
-Se existir um vírus ou outra ameaça de segurança no dispositivo inscrito e tentar aceder aos ficheiros ou ao e-mail da sua empresa, poderá ver uma mensagem como esta:
+1. Quando tentar aceder ao e-mail ou sites da empresa, receberá uma mensagem semelhante à mostrada na captura de ecrã abaixo. Toque na ligação do **portal de gestão de dispositivos** para abrir o [site do Portal da Empresa](https://portal.manage.microsoft.com/devices).
 
-![Mensagem de erro do Skycure com ligação ao site do Portal da Empresa](./media/skycure-list-of-potential-issues-android.png)
+    ![Captura de ecrã de exemplo de uma mensagem de erro do Lookout for Work com uma ligação para o site do Portal da Empresa e um botão azul OK.](./media/mtd-go-to-device-management-portal-android.png)  
 
-Toque na ligação **portal de gestão de dispositivos** para aceder ao [Site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog), onde verá instruções sobre como resolver o problema.
+2. Selecione o seu dispositivo.  
+3. Leia o aviso que aparece abaixo do seu dispositivo. O aviso indicará que deve abrir o SEP Mobile para resolver a ameaça de vírus ou segurança.     
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Exemplo de uma aplicação que o Symantec Endpoint Protection Mobile considera uma ameaça
+    ![Captura de ecrã de exemplo da página do dispositivo no Portal da Empresa que apresenta o aviso do SEP Mobile.](./media/CP-lookout-virus-banner-1808.png)
 
-Se instalou uma aplicação que o Symantec Endpoint Protection Mobile pensa ser uma ameaça, verá um ecrã semelhante a este:
+## <a name="resolve-an-app-threat"></a>Resolver uma ameaça de aplicação  
 
-![exemplo de mensagem de alerta de vírus do Skycure](./media/skycure-virus-alert-android.png)
+Se instalar uma aplicação que seja detetada como uma ameaça para o seu dispositivo, irá receber uma notificação na aplicação SEP Mobile. Se a aplicação afetada permanecer no seu dispositivo, não poderá aceder aos recursos da empresa.  
 
-Depois de desinstalar a aplicação, recupera de imediato o acesso ao e-mail e aos dados da empresa. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados até desinstalar a aplicação.
+Para resolver o problema, selecione a aplicação na lista de ameaças no SEP Mobile. Em seguida, siga as instruções que aparecem no ecrã para remover e desinstalar a aplicação.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

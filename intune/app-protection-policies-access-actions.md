@@ -15,25 +15,25 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254489"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329415"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Eliminação seletiva de dados através de ações de acesso das políticas de proteção de aplicações no Intune
 
 Ao utilizar as políticas de proteção de aplicações do Intune, pode configurar definições para impedir que os utilizadores finais acedam a uma conta ou aplicação empresarial. Estas definições destinam-se aos requisitos de acesso e relocalização de dados definidos pela sua organização em casos de, por exemplo, dispositivos desbloqueados por jailbreak e versões de SO mínimas.
  
-Com estas definições, pode eliminar dados da empresa explicitamente do dispositivo do utilizador final como uma ação a ser realizada em caso de não conformidade. Em algumas definições, será possível configurar múltiplas ações, como impedir o acesso e eliminar os dados com base em diferentes valores especificados.
+Com estas definições, pode apagar dados da empresa explicitamente do dispositivo do utilizador final como uma ação a ser realizada em caso de não conformidade. Em algumas definições, será possível configurar múltiplas ações, como impedir o acesso e apagar os dados com base em diferentes valores especificados.
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Criar uma política de proteção de aplicações com ações de acesso
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**.  
     O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis** > **Políticas de proteção de aplicações**.
+3. No painel **Intune**, selecione **Aplicações do cliente** > **Políticas de proteção de aplicações**.
 4. Clique em **Adicionar uma política** (também pode editar uma política existente). 
 5. Clique em **Configurar definições obrigatórias** para ver a lista de definições disponíveis a configurar para a política. 
 6. Ao deslocar-se para baixo no painel Definições, verá uma secção denominada **Ações de Acesso** com uma tabela editável.
@@ -109,11 +109,11 @@ A seguinte lista apresenta as ações comuns:
 
 Em alguns casos, como a definição **Versão mínima do SO**, pode configurar a definição para realizar todas as ações aplicáveis com base em números de versão diferentes. 
 
-![Captura de ecrã a mostrar as ações de acesso de proteção de aplicações do Intune – versão mínima do SO](./media/apps-selective-wipe-access-actions05.png)
+![Captura de ecrã a mostrar as ações de acesso de proteção de aplicações do Intune – Versão mínima do SO](./media/apps-selective-wipe-access-actions05.png)
 
 Depois de ter configurado totalmente uma definição, a linha será apresentada numa vista só de leitura e estará disponível para editar em qualquer altura. A linha também parecerá ter uma lista pendente disponível para seleção na coluna **Definição**. As definições que já tenham sido configuradas e que não permitam múltiplas ações não estarão disponíveis para seleção na lista pendente.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Para obter mais informações sobre as políticas de proteção de aplicações do Intune, veja:
 - [Como criar e atribuir políticas de proteção de aplicações](app-protection-policies.md)

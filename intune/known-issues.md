@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073840"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347802"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -33,6 +33,13 @@ Se quiser comunicar um erro que não se encontra listado aqui, [abra um pedido d
 Se quiser pedir uma nova funcionalidade para o Intune, considere o preenchimento de um relatório no site do [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migração
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Exportar políticas de conformidade do portal clássico do Azure para recriar estas políticas no Intune no portal do Azure
+
+As políticas de conformidade que criou no portal clássico do Azure serão preteridas. Pode rever e eliminar quaisquer políticas de conformidade existentes, mas não pode atualizá-las. Se precisar de migrar políticas de conformidade para o Intune no portal do Azure atual, pode exportar as políticas sob a forma de um ficheiro separado por vírgulas (ficheiro .csv). Em seguida, utilize os detalhes no ficheiro para recriar estas políticas no Intune no portal do Azure.
+
+> [!IMPORTANT]
+> Quando o portal clássico do Azure for descontinuado, deixará de conseguir aceder ou ver as suas políticas de conformidade. Por isso, não se esqueça de as exportar e recriar no portal do Azure antes de o portal clássico do Azure ser descontinuado.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>As funcionalidades do Cliente de PC legadas do Intune só estão disponíveis na consola do Silverlight
 
@@ -52,7 +59,7 @@ Não pode ver as informações de estado de políticas que foram migradas a part
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Múltiplos pedidos de instalação de aplicações para determinadas aplicações VPP
 Poderá ver múltiplos pedidos de instalação para determinadas aplicações VPP que já estão instaladas nos dispositivos dos utilizadores finais. Este problema ocorre se tiver a opção **Atualizações automáticas da aplicação** definida como **Ativado** para o token VPP que carregou para o Intune no portal do Azure.    
 
-Para resolver este problema, pode desativar a opção **Atualizações automáticas da aplicação** para o token VPP. Para tal, abra o Microsoft Intune no portal do Azure. No Intune, selecione **Aplicações móveis** > **Tokens iOS VPP**. Em seguida, selecione o Token VPP que implementou a aplicação afetada e selecione **Editar** > **Atualizações automáticas da aplicação** > **Desativado** > **Guardar**. Em alternativa, pode parar a implementação da aplicação afetada como uma aplicação VPP, o que irá parar a apresentação dos pedidos.    
+Para resolver este problema, pode desativar a opção **Atualizações automáticas da aplicação** para o token VPP. Para tal, abra o Microsoft Intune no portal do Azure. No Intune, selecione **Aplicações do cliente** > **Tokens iOS VPP**. Em seguida, selecione o Token VPP que implementou a aplicação afetada e selecione **Editar** > **Atualizações automáticas da aplicação** > **Desativado** > **Guardar**. Em alternativa, pode parar a implementação da aplicação afetada como uma aplicação VPP, o que irá parar a apresentação dos pedidos.    
 
 Este é um problema conhecido na versão atual. Iremos disponibilizar futuramente uma correção para resolver este problema. Quando a correção for implementada, os seus utilizadores deixarão de ver múltiplos pedidos de instalação de aplicações.
 

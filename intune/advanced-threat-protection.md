@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251850"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313796"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Ativar o Windows Defender ATP com acesso condicional no Intune
 
@@ -71,27 +71,15 @@ Normalmente, executa esta tarefa uma vez. Por isso, se o ATP já estiver ativado
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>Carregar dispositivos através de um perfil de configuração
 
-O Windows Defender inclui um pacote de configuração carregado instalado nos dispositivos. Quando instalado, o pacote comunica com os [serviços do Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para analisar ficheiros, detetar ameaças e comunicar o risco ao Windows Defender ATP. Com o Intune, pode criar um perfil de configuração que utiliza este pacote de configuração. Em seguida, atribua este perfil aos dispositivos que carregar pela primeira vez.
+Quando um utilizador final se inscreve no Intune, pode emitir definições diferentes para o dispositivo através de um perfil de configuração. Isto também se aplica ao Windows Defender ATP.
 
-Depois de carregar um dispositivo através do pacote de configuração, não precisará de o fazer novamente. Normalmente, é uma tarefa de execução única.
+O Windows Defender inclui um pacote de configuração carregado que comunica com os [serviços do Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para analisar ficheiros, detetar ameaças e comunicar o risco ao Windows Defender ATP.
 
-Também pode carregar dispositivos através de uma [política de grupo ou o System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
+Quando carregar, o Intune obtém um pacote de configuração gerado automaticamente a partir do Windows Defender ATP. Quando o perfil é emitido ou implementado no dispositivo, este pacote de configuração também é emitido para o dispositivo. Isto permite que o Windows Defender ATP monitorize o dispositivo para detetar ameaças.
 
-Os passos seguintes mostram como carregar com o Intune.
+Depois de carregar um dispositivo através do pacote de configuração, não precisará de o fazer novamente. Também pode carregar dispositivos através de uma [política de grupo ou o System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
 
-#### <a name="download-configuration-package"></a>Transferir pacote de configuração
-
-1. No [Centro de Segurança do Windows Defender](https://securitycenter.windows.com), selecione **Definições** > **Inclusão**.
-2. Introduza as seguintes definições:
-  - **Sistema operativo**: Windows 10
-  - **Carregar um computador** > **Método de implementação**: Gestão de Dispositivos Móveis/Microsoft Intune
-3. Selecione **Transferir pacote** e guarde o ficheiro **WindowsDefenderATPOnboardingPackage.zip**. Extraia o ficheiro.
-
-Este ficheiro zip inclui **WindowsDefenderATP.onboarding**, que será necessário nos passos seguintes.
-
-#### <a name="create-the-atp-configuration-profile"></a>Criar um perfil de configuração do ATP
-
-Este perfil utiliza o pacote de inclusão que transferiu nos passos anteriores.
+### <a name="create-the-configuration-profile"></a>Criar um perfil de configuração
 
 1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
 2. Selecione **Configuração do Dispositivo** > **Perfis** > **Criar perfil**.
@@ -100,10 +88,9 @@ Este perfil utiliza o pacote de inclusão que transferiu nos passos anteriores.
 5. Em **Tipo de perfil**, selecione **Windows Defender ATP (Windows 10 Desktop)**.
 6. Configure as definições:
 
-  - **Carregar o Pacote de Configuração**: procure e selecione o ficheiro **WindowsDefenderATP.onboarding** que transferiu. Este ficheiro ativa uma definição para que os dispositivos possam comunicar com o serviço Windows Defender ATP.
-  - **Partilha de amostras para todos os ficheiros**: permite que as amostras sejam recolhidas e partilhadas com o Windows Defender ATP. Por exemplo, se vir um ficheiro suspeito, poderá submetê-lo para o Windows Defender ATP para uma análise detalhada.
-  - **Acelerar a frequência do relatório de telemetria**: para dispositivos que estão em risco elevado, ative esta definição para que estes comuniquem a telemetria para o serviço do Windows Defender ATP com mais frequência.
-  - **Pacote de Configuração de Exclusão**: se quiser remover ou proceder à “descarga” da monitorização do Windows Defender ATP, poderá transferir um Pacote de descarga no [Centro de Segurança do Windows Defender](https://securitycenter.windows.com) e adicioná-lo. Caso contrário, ignore esta propriedade.
+  - **Tipo de pacote de configuração do cliente do Windows Defender ATP**: selecione **Carregar** para adicionar o pacote de configuração ao perfil. Selecione **Descarregar** para remover o pacote de configuração do perfil.
+  - **Partilha de amostras para todos os ficheiros**: **Ativar** permite que as amostras sejam recolhidas e partilhadas com o Windows Defender ATP. Por exemplo, se vir um ficheiro suspeito, poderá submetê-lo para o Windows Defender ATP para uma análise detalhada. **Não configurado** não partilha nenhuma amostra com o Windows Defender ATP.
+  - **Acelerar a frequência do relatório de telemetria**: para dispositivos que estão em risco elevado, **ative** esta definição para que estes comuniquem a telemetria para o serviço do Windows Defender ATP com mais frequência.
 
     O artigo [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) (Carregar computadores com o Windows 10 através do System Center Configuration Manager) inclui mais detalhes sobre estas definições do Windows Defender ATP.
 

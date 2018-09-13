@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335831"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313977"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são os perfis de dispositivos do Microsoft Intune?
 
@@ -54,6 +54,7 @@ Esta funcionalidade suporta:
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>Restrições de dispositivos
 As [restrições de dispositivos](device-restrictions-configure.md) controlam a segurança, hardware, partilha de dados e mais definições nos dispositivos. Por exemplo, pode criar um perfil de restrição do dispositivo para impedir que os utilizadores dos dispositivos iOS utilizem a câmara do dispositivo. 
 
@@ -73,7 +74,14 @@ Para carregar a Proteção Avançada Contra Ameaças do Windows Defender (WDATP)
 Esta funcionalidade suporta:
 - Windows 10 e posterior
 
-## <a name="kiosk"></a>Modo de Local Público
+## <a name="identity-protection"></a>Proteção de identidade
+A [proteção de identidade](identity-protection-configure.md) controla a experiência do Windows Hello para Empresas em dispositivos com o Windows 10 e Windows 10 Mobile. Configure estas definições para fazer com que o Windows Hello para Empresas fique disponível para utilizadores e dispositivos, bem como para especificar os requisitos de PIN e gestos de dispositivos.  
+
+Esta funcionalidade suporta:  
+- Windows 10 e posterior
+- Windows Holographic for Business  
+
+## <a name="kiosk"></a>Modo de Quiosque
 
 O perfil de [definições do modo de quiosque](kiosk-settings.md) configura um dispositivo para que execute uma aplicação ou execute múltiplas aplicações. Também pode personalizar outras funcionalidades no modo de quiosque, incluindo o menu Iniciar e um browser.
 
@@ -101,7 +109,7 @@ Esta funcionalidade suporta:
 - iOS
 - macOS
 - Windows Phone 8.1
-- Windows 8.1
+- Windows 8,1
 - Windows 10
 
 ## <a name="wi-fi"></a>Wi-Fi
@@ -146,7 +154,7 @@ Esta funcionalidade suporta:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 8.1
+- Windows 8,1
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Perfil do Windows Information Protection

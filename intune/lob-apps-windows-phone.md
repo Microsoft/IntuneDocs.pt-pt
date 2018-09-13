@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ccc1f25d137675ba8e5f984a16324f4b0771dc9c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: a7d7554cad04dcca0d7f56986aef4c4b30193c18
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224992"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347612"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows Phone ao Microsoft Intune
 
@@ -32,8 +32,8 @@ Utilize as informações neste artigo para adicionar aplicações de linha de ne
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. Na carga de trabalho **Aplicações móveis**, selecione **Gerir** > **Aplicações**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione **Aplicação de linha de negócio**.
 
@@ -67,7 +67,7 @@ Utilize as informações neste artigo para adicionar aplicações de linha de ne
 1. No painel **Adicionar aplicação**, verifique se configurou as informações corretamente.
 2. Selecione **Adicionar** para carregar a aplicação para o Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

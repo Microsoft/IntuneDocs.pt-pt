@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,37 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279496"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347699"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações poderá ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-august-27-2018"></a>Semana de 27 de agosto de 2018  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nova atualização da experiência de utilizador do site do Portal da Empresa <!--2000968 -->  
+Adicionámos novas funcionalidades ao site do Portal da Empresa com base no feedback dos clientes. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Algumas áreas do site &ndash; tais como detalhes do dispositivo, feedback e suporte e descrição geral do dispositivo &ndash; receberam uma nova estrutura moderna e reativa. A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações.   
+
+Verá algumas das atualizações que se seguem:  
+
+- Fluxos de trabalho simplificados em todas as plataformas de dispositivos
+- Fluxos de inscrição e identificação de dispositivos melhorados
+- Mensagens de erro mais úteis
+- Linguagem mais simples, menos termos técnicos
+- Capacidade de partilhar ligações diretas para as aplicações
+- Desempenho melhorado para grandes catálogos de aplicações
+- Acessibilidade melhorada para todos os utilizadores  
+
+|Atualizada|Anterior|
+|---|---|
+|![A página do dispositivo atualizada mostra o dispositivo corretamente alinhado acima das informações do dispositivo, deixando de aparecer acima da lista completa.](./media/iwp-device-after-1803.png)|![A versão anterior da página do dispositivo.](./media/iwp-device-before-1803.png)|
+|![A página de instalação da aplicação atualizada mostra a aplicação por cima de uma descrição e várias informações sobre a instalação, incluindo a data de publicação, a versão e o tipo de aplicação.](./media/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação da aplicação.](./media/iwp-app-install-before-1803.png)|  
 
 ## <a name="week-of-july-16-2018"></a>Semana de 16 de julho de 2018  
 
@@ -42,7 +62,7 @@ A vista **Instalado** da página **Aplicações** permite-lhe ver detalhes sobre
 
 Captura de ecrã de exemplo a mostrar a vista Mosaicos:  
  
-![Captura de ecrã da aplicação Portal da Empresa do Intune para Windows a mostrar as aplicações instaladas na vista Mosaicos.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+![Captura de ecrã da aplicação Portal da Empresa do Intune para Windows a mostrar as aplicações instaladas na vista de mosaicos.](/intune/media/tiles-installed-view-cpapp-1807.png)  
 
 Captura de ecrã de exemplo a mostrar a vista Detalhes:  
 
@@ -112,7 +132,7 @@ Se ativou o [mapeamento do grupo de dispositivos](device-group-mapping.md), a ap
 Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. Também tornámos o tipo de linguagem mais específico para a sua empresa ao utilizar o nome da mesma em todo o texto de configuração.
 
 > [!NOTE]
-> Utilizamos o nome da empresa definido no Portal do Azure em **Microsoft Intune** > **Aplicações Móveis** > **imagem corporativa do Portal da Empresa** > **Nome da empresa**. Se não tiver definido este valor, utilizaremos o nome do inquilino definido em **Azure Active Directory** > **Propriedades** > **Nome**. Se não tiver definido um nome de empresa na imagem corporativa do Portal da Empresa e não pretender que o nome do inquilino seja apresentado, recomendamos que defina o nome da empresa no separador Imagem corporativa do Portal da Empresa. Se não pretender que esta cadeia seja apresentada no cabeçalho do Portal da Empresa, poderá desmarcar a caixa de verificação “Mostrar o nome da empresa ao lado do logótipo”.
+> Utilizamos o nome da empresa definido no Portal do Azure em **Microsoft Intune** > **Aplicações do Cliente** > **Imagem corporativa do Portal da Empresa** > **Nome da empresa**. Se não tiver definido este valor, utilizaremos o nome do inquilino definido em **Azure Active Directory** > **Propriedades** > **Nome**. Se não tiver definido um nome de empresa na imagem corporativa do Portal da Empresa e não pretender que o nome do inquilino seja apresentado, recomendamos que defina o nome da empresa no separador Imagem corporativa do Portal da Empresa. Se não pretender que esta cadeia seja apresentada no cabeçalho do Portal da Empresa, poderá desmarcar a caixa de verificação “Mostrar o nome da empresa ao lado do logótipo”.
 
 |Antes|Depois|
 |---|---|
@@ -448,7 +468,7 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 > [!Note]
 > Tenha em atenção que as imagens abaixo podem ser pré-visualizações e que o produto anunciado poderá ser diferente das versões apresentadas.
 
-### <a name="ui-iwp"></a>Nova atualização da experiência de utilizador do site do Portal da Empresa <!--2000968-->
+### <a name="ui-iwp"></a>Atualização com a nova experiência de utilizador para o site do Portal da Empresa <!--2000968-->
 
 A partir de agosto, vamos apresentar uma nova experiência do site do Portal da Empresa, com atualizações à UI, fluxos de trabalho simplificados e melhorias de acessibilidade. Isto inclui melhorias orientadas para o cliente, como a partilha de aplicações e o desempenho global melhorado, para lhe oferecer uma experiência mais simples.
 
@@ -458,12 +478,7 @@ Adicionámos algumas funcionalidades novas com base no seu feedback, que irão m
 -   Capacidade de partilhar ligações diretas para as aplicações
 - Desempenho melhorado para grandes catálogos de aplicações
 
-Não precisa de tomar medidas para se preparar para esta alteração. Iremos informá-lo quando o site do Portal da empresa atualizado estiver disponível para si. No entanto, poderá ter que atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS.
-
-|Atualizado|Anterior|
-|---|---|
-|![A página do dispositivo atualizada mostra o dispositivo corretamente alinhado acima das informações do dispositivo, deixando de aparecer acima da lista completa.](./media/iwp-device-after-1803.png)|![A versão anterior da página do dispositivo.](./media/iwp-device-before-1803.png)|
-|![A página de instalação da aplicação atualizada mostra a aplicação por cima de uma descrição e várias informações sobre a instalação, incluindo a data de publicação, a versão e o tipo de aplicação.](./media/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação da aplicação.](./media/iwp-app-install-before-1803.png)|
+Não precisa de tomar medidas para se preparar para esta alteração. Vamos informá-lo quando o site Portal da Empresa atualizado estiver disponível para si. No entanto, poderá ter que atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS.  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Atualização da IU do site do Portal da Empresa <!--1313244 part 2-->
 

@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f1b2af2723ddb4c89f7f3d6409ced12f7a16883a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223667"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330301"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover os dados da conta do Armazém de Dados do Intune 
 
@@ -45,7 +45,7 @@ Alguns gráficos de tendências na vista do portal do Azure vão ser repostos. P
 3. Guarde o relatório localmente.
  
 ### <a name="app-protection-reports"></a>Relatórios de Proteção de Aplicações  
-1. No portal do Azure, navegue para **Microsoft Intune** -> **Aplicações Móveis** -> **Estado da proteção de aplicações**.
+1. No portal do Azure, navegue para **Microsoft Intune** -> **Aplicações do Cliente** -> **Estado da proteção de aplicações**.
 2. Clique no ícone de transferência (⤓) para guardar cada relatório.
 
 ### <a name="device-configuration-charts"></a>Gráficos da Configuração do Dispositivo 
@@ -79,7 +79,7 @@ Após mover a conta do Armazém de Dados, verá no Intune que o Armazém de Dado
 
 O cliente X pede que uma conta seja movida a 01/06/2018. Em resposta ao pedido, o cliente receberá uma ligação para ver documentação com detalhes sobre os passos a realizar se quiser fazer uma cópia de segurança do Armazém de Dados anterior. A 01/06/2018, o Armazém de Dados e os gráficos que suporta serão repostos e começarão a armazenar dados no novo datacenter. 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
  - Saiba mais sobre [as novidades todas as semanas no Intune](whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
  - Leia o [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).

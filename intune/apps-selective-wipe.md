@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905279"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329550"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 
@@ -40,7 +40,7 @@ Para remover seletivamente os dados de aplicações da empresa, utilize os passo
 
 1.  Inicie sessão no [portal do Azure](https://portal.azure.com).
 
-2.  Selecione **Todos os serviços**, introduza **Intune** na caixa de texto de filtro e selecione **Intune**. Quando o painel Intune for aberto, selecione o painel **Aplicações móveis**.
+2.  Selecione **Todos os serviços**, introduza **Intune** na caixa de texto de filtro e selecione **Intune**. Quando o painel Intune for aberto, selecione o painel **Aplicações do cliente**.
 
     ![Captura de ecrã a mostrar o painel Microsoft Intune](./media/apps-selective-wipe01.png)
 

@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255376"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330148"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -61,37 +61,37 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 
 ## <a name="get-started"></a>Introdução
 
-Pode encontrar a maior parte das informações relacionadas com aplicações na carga de trabalho **Aplicações Móveis**, à qual pode aceder da seguinte forma:
+Pode encontrar a maior parte das informações relacionadas com aplicações na carga de trabalho **Aplicações do Cliente**, à qual pode aceder da seguinte forma:
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**.  
     O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Microsoft Intune**, selecione **Aplicações móveis**.
+3. No painel **Microsoft Intune**, selecione **Aplicações do cliente**.
 
     ![O painel de carga de trabalho “Aplicações móveis”](./media/apps-workload.png)
 
-As próximas quatro secções descrevem as opções disponíveis no painel **Aplicações móveis**.
+As próximas quatro secções descrevem as opções disponíveis no painel **Aplicações do cliente**.
 
-### <a name="manage"></a>Gerir o Endpoint Protection do
-- **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, veja:
+### <a name="manage"></a>Gerir
+- **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:
     - [Adicionar aplicações](apps-add.md).
     - [Atribuir aplicações](apps-deploy.md).
     - [Monitorizar aplicações](apps-monitor.md).
-- **Políticas de configuração de aplicações**: selecione esta opção para disponibilizar definições que poderão ser necessárias quando o utilizador executar uma aplicação. Para obter mais informações, veja:
+- **Políticas de configuração de aplicações**: selecione esta opção para disponibilizar definições que poderão ser necessárias quando o utilizador executar uma aplicação. Para obter mais informações, consulte:
     - [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).
         - [Políticas de configuração de aplicações iOS](app-configuration-policies-use-ios.md).
         - [Políticas de configuração de aplicações Android](app-configuration-policies-use-android.md).
-- **Políticas de proteção de aplicações**: selecione esta opção para associar definições a uma aplicação e ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa. Para obter mais informações, veja:
+- **Políticas de proteção de aplicações**: selecione esta opção para associar definições a uma aplicação e ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa. Para obter mais informações, consulte:
     - [Políticas de proteção de aplicações ](app-protection-policies.md).
-- **Eliminação seletiva de aplicações**: selecione esta opção para remover apenas os dados empresariais do dispositivo de um utilizador selecionado. Para obter mais informações, veja:
+- **Eliminação seletiva de aplicações**: selecione esta opção para remover apenas os dados empresariais do dispositivo de um utilizador selecionado. Para obter mais informações, consulte:
     - [Eliminação seletiva de aplicações](apps-selective-wipe.md).
-- **Perfis de aprovisionamento de aplicações iOS**: as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir proativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar. Para obter mais informações, veja:
+- **Perfis de aprovisionamento de aplicações iOS**: as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir proativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar. Para obter mais informações, consulte:
     - [Perfis de aprovisionamento de aplicações iOS](app-provisioning-profile-ios.md).
 
 Para obter mais informações sobre esta secção, veja [Gerir aplicações](app-management.md).
 
 ### <a name="monitor"></a>Monitor
-- **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para obter mais informações, veja:
+- **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para obter mais informações, consulte:
     - [Aplicações iOS do programa de compras em volume (VPP)](vpp-apps-ios.md).
     - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
 - **Aplicações Detetadas**: veja todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
@@ -102,24 +102,24 @@ Para obter mais informações sobre esta secção, veja [Gerir aplicações](app
 Para obter mais informações sobre esta secção, veja [Monitorizar aplicações](apps-monitor.md).
 
 ### <a name="set-up"></a>Configurar
-- **Tokens VPP do iOS**: aplique e veja as suas licenças iOS do Programa de Compras em Volume (VPP). Para obter mais informações, veja:
+- **Tokens VPP do iOS**: aplique e veja as suas licenças iOS do Programa de Compras em Volume (VPP). Para obter mais informações, consulte:
     - [Aplicações iOS compradas em volume](vpp-apps-ios.md)
 - **Certificado empresarial do Windows**: aplique ou veja o estado de um certificado de assinatura de código que serve para distribuir aplicações de linha de negócio nos dispositivos Windows geridos.
 - **Certificado da Symantec do Windows**: aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx de XAP e WP8.x aos dispositivos Windows 10 Mobile.
-- **Microsoft Store para Empresas**: configure a integração na Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para obter mais informações, veja:
+- **Microsoft Store para Empresas**: configure a integração na Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para obter mais informações, consulte:
     - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Chaves de sideloading do Windows**: adicione uma chave de sideloading do Windows que pode utilizar para instalar uma aplicação diretamente nos dispositivos, em vez de publicar e transferir a aplicação da Loja Windows. Para obter mais informações, veja:
+- **Chaves de sideloading do Windows**: adicione uma chave de sideloading do Windows que pode utilizar para instalar uma aplicação diretamente nos dispositivos, em vez de publicar e transferir a aplicação da Loja Windows. Para obter mais informações, consulte:
     - [Fazer sideload de uma aplicação Windows](app-sideload-windows.md).
-- **Imagem corporativa do Portal da Empresa**: personalize o Portal da Empresa para lhe dar a imagem corporativa da sua empresa. Para obter mais informações, veja:
+- **Imagem corporativa do Portal da Empresa**: personalize o Portal da Empresa para lhe dar a imagem corporativa da sua empresa. Para obter mais informações, consulte:
     - [Configuração do Portal da Empresa](company-portal-app.md).
 - **Categorias de aplicações**: adicione, afixe e elimine nomes de categorias de aplicações.
-- **Perfil de trabalho do Android**: aprove e sincronize as aplicações que aprovou para a sua empresa. Para obter mais informações, veja:
+- **Perfil de trabalho do Android**: aprove e sincronize as aplicações que aprovou para a sua empresa. Para obter mais informações, consulte:
     - [Aplicações do perfil de trabalho do Android](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Ajuda e suporte
-- **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para obter mais informações, veja:
+- **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para obter mais informações, consulte:
     - [Resolver problemas](help-desk-operators.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Adicionar uma aplicação ao Microsoft Intune](apps-add.md)

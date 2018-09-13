@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251671"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329757"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gerir o acesso à Internet através de políticas de browser protegido com o Microsoft Intune
 
@@ -108,7 +108,7 @@ O SSO no Intune Managed Browser requer que o seu dispositivo esteja registado pe
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3.  No painel **Aplicações móveis** da lista Gestão, selecione **Políticas de configuração de aplicações**.
+3.  No painel **Aplicações do cliente** da lista Gestão, selecione **Políticas de configuração de aplicações**.
 4.  No painel **Políticas de configuração de aplicações**, escolha **Adicionar**.
 5.  No painel **Adicionar política de configuração**, introduza um **Nome** e uma **Descrição** opcional para as definições de configuração da aplicação.
 6.  Para o tipo de **Inscrição de dispositivos**, selecione **Aplicações geridas**.
@@ -126,7 +126,7 @@ O SSO no Intune Managed Browser requer que o seu dispositivo esteja registado pe
 
 Atribua as definições a grupos de utilizadores do Azure AD. Se esse utilizador tiver a aplicação de browser protegido de destino instalada, a aplicação será gerida pelas definições que especificou.
 
-1. No painel **Aplicações móveis** do dashboard de gestão de aplicações móveis do Intune, selecione **Políticas de configuração de aplicações**.
+1. No painel **Aplicações do cliente** do dashboard de gestão de aplicações móveis do Intune, selecione **Políticas de configuração de aplicações**.
 2. Na lista de configurações de aplicações, selecione aquela que pretende atribuir.
 3. No painel seguinte, selecione **Atribuições**.
 4. No painel **Atribuições**, selecione o grupo do Azure AD ao qual pretende atribuir a configuração da aplicação e, em seguida, selecione **OK**.
@@ -265,7 +265,7 @@ Também pode abrir o Browser no modo de resolução de problemas a partir da apl
 2. Escreva `about:intunehelp` na caixa de endereço.
 O Browser inicia o modo de resolução de problemas.
 
-Para obter uma lista das definições armazenadas nos registos das aplicações, veja [Review app protection logs in the Managed Browser (Rever os registos de proteção das aplicações no Managed Browser)](app-protection-policy-settings-log.md).
+Para obter uma lista das definições armazenados nos registos das aplicações, veja [Review app protection logs in the Managed Browser (Rever os registos de proteção das aplicações no Managed Browser)](app-protection-policy-settings-log.md).
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Segurança e privacidade do Managed Browser
 
@@ -293,6 +293,6 @@ A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utili
 ### <a name="turn-off-usage-data"></a>Desativar dados de utilização
 A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 

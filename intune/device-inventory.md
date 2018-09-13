@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117927"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313183"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -34,11 +34,14 @@ Este artigo mostra como ver todos os seus dispositivos e as respetivas proprieda
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** > **Todos os dispositivos** e selecione um dos seus dispositivos apresentados para abrir os respetivos detalhes:
 
-   - **Descrição Geral**: mostra o nome do dispositivo e apresenta uma lista de algumas propriedades chave do dispositivo, incluindo se é um dispositivo BYOD (Bring Your Own Device), quando foi registado e mais. Selecione **Mais** para:
-     - Remover dados da empresa
-     - Eliminar o dispositivo
-     - Bloquear o dispositivo remotamente
-     - Apagar
+   - **Descrição Geral**: mostra o nome do dispositivo e apresenta uma lista de algumas propriedades chave do dispositivo, incluindo se é um dispositivo BYOD (Bring Your Own Device), quando foi registado e mais. Pode realizar as seguintes ações no dispositivo:
+      - [Extinguir](devices-wipe.md#retire)
+        - [Limpar](devices-wipe.md#wipe)
+        - [Bloqueio remoto](device-remote-lock.md)
+        - [Sincronizar o dispositivo](device-sync.md)
+        - [Repor código de acesso](device-passcode-reset.md)
+        - [Reiniciar](device-restart.md) (apenas no Windows)
+        - [Começar do Zero](device-fresh-start.md) (apenas no Windows)
      - Iniciar uma sessão de assistência remota
    - Utilize as **Propriedades** para atribuir uma [categoria de dispositivo que tenha criado](device-group-mapping.md) e alterar a propriedade do dispositivo para um dispositivo pessoal ou um dispositivo da empresa.
    - **Hardware**: inclui muitos detalhes sobre o dispositivo, incluindo o ID do dispositivo, o sistema operativo e a versão, o espaço de armazenamento, o modelo e o fabricante, as definições de acesso condicional e mais detalhes.
@@ -53,7 +56,7 @@ O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes 
 |Windows 10 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|
 |Windows 8.1 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|  
 |Windows Phone 8|Apenas aplicações geridas|Apenas aplicações geridas|  
-|Windows RT|Apenas aplicações geridas|Apenas aplicações geridas|  
+|Windows RT|Apenas aplicações geridas|Apenas aplicações geridas|  
 |iOS|Apenas aplicações geridas|Todas as aplicações instaladas no dispositivo|
 |macOS|Todas as aplicações instaladas no dispositivo|Todas as aplicações instaladas no dispositivo|  
 |Android|Apenas aplicações geridas|Todas as aplicações instaladas no dispositivo|  
@@ -70,7 +73,7 @@ O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes 
 |Número de série|O número de série dado pelo fabricante do dispositivo.|
 |Dispositivo partilhado|Se definido como **Sim**, o dispositivo é partilhado por mais do que um utilizador.|
 |Inscrição de utilizador aprovado|Se definido como **Sim**, a inscrição do dispositivo foi aprovada pelo utilizador, o que permite aos administradores gerir determinadas definições de segurança no mesmo.|
-|Sistema operativo|O sistema operativo utilizado no dispositivo.|
+|Sistema Operativo|O sistema operativo utilizado no dispositivo.|
 |Versão do sistema operativo|A versão do sistema operativo do dispositivo.|
 |Idioma do sistema operativo|O idioma definido para o sistema operativo no dispositivo.|
 |Espaço de armazenamento total|O espaço de armazenamento total no dispositivo (em gigabytes).|
@@ -101,5 +104,5 @@ O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes 
 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 Veja o que mais pode fazer para [gerir os seus dispositivos](device-management.md) com o Intune.

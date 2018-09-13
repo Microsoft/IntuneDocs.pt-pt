@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164574"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329483"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -52,7 +52,7 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No menu **Intune**, selecione **Aplicações móveis**.
+3. No menu **Intune**, selecione **Aplicações do cliente**.
 4. Na secção **Gerir** do menu, selecione **Aplicações**.
 5. No painel **Aplicações**, selecione a aplicação que quer atribuir.
 6. Na secção **Gerir** do menu, selecione **Atribuições**.
@@ -119,6 +119,6 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com inten�
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
 > As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Para saber mais sobre a monitorização de atribuições de aplicações, veja [Como monitorizar aplicações](apps-monitor.md).

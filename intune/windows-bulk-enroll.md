@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444885"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313243"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -36,7 +36,7 @@ Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obt
 
 ## <a name="create-a-provisioning-package"></a>Criar um pacote de aprovisionamento
 
-1. Transfira o [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) na Loja Microsoft.
+1. Transfira o [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) na Microsoft Store.
    ![Captura de ecrã da aplicação Windows Configuration Designer na loja](media/bulk-enroll-store.png)
 
 2. Abra a aplicação **Windows Configuration Designer** e selecione **Aprovisionar computadores**.
@@ -85,10 +85,10 @@ Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obt
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Resolução de problemas de inscrição em massa no Windows
 
 ### <a name="provisioning-issues"></a>Problemas de aprovisionamento
-O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As falhas de aprovisionamento podem precisar de uma reposição de fábrica no dispositivo ou da recuperação do dispositivo a partir de uma imagem de arranque. Estes exemplos descrevem alguns motivos para o aprovisionamento de falhas:
+O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As falhas de aprovisionamento podem exigir que o dispositivo seja apagado ou recuperado a partir de uma imagem de arranque. Estes exemplos descrevem alguns motivos para o aprovisionamento de falhas:
 
 - Um pacote de aprovisionamento que tenta associar um domínio do Active Directory ou um inquilino do Azure Active Directory que não crie uma conta local pode tornar o dispositivo inacessível se o processo de associação ao domínio falhar devido à falta de conetividade de rede.
-- Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema. Os scripts conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou através de uma reposição de fábrica do dispositivo.
+- Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema. Os scripts conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou limpar o dispositivo.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com a inscrição em massa e o Portal da Empresa
 Se um utilizador tentar inscrever um dispositivo anteriormente inscrito em massa com o Portal da Empresa, receberá um aviso de que o respetivo dispositivo precisa de mais ações de configuração ou inscrição. O dispositivo está inscrito, mas a inscrição não é reconhecida pelo site ou aplicação Portal da Empresa.

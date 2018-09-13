@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: a1cf7fbdee6e6dc0cb280c8f9473c48608485737
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40252750"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329909"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -30,7 +30,7 @@ O Intune fornece várias formas de monitorizar as propriedades de aplicações q
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No menu **Intune**, selecione **Aplicações móveis**.
+3. No menu **Intune**, selecione **Aplicações do cliente**.
 4. Na secção **Gerir** do menu, selecione **Aplicações**.
 5. Na lista de aplicações, selecione uma aplicação a monitorizar. Em seguida, verá o painel de aplicações, que inclui uma descrição geral do estado dos dispositivos e dos utilizadores.
 
@@ -96,7 +96,7 @@ Uma lista de estados do utilizador é apresentada ao selecionar **Estado de inst
 | **Não instalado**   | O número de aplicações não instaladas pelo utilizador. |
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para obter mais informações sobre como trabalhar com os dados do seu Intune, veja [Utilizar o Armazém de Dados do Intune](reports-nav-create-intune-reports.md).
 - Para saber mais sobre as políticas de configuração de aplicações, veja [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).

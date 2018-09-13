@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a9fb84fd15eb68f007e820e473dd9edf55b37777
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 7195b9d2d64c2282f2380624a209ad45220d3a4f
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905024"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313943"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -50,6 +50,7 @@ ms.locfileid: "37905024"
        -  [Funcionalidades do dispositivo](device-features-configure.md)
        -  [Restrições de dispositivos](device-restrictions-configure.md)
        -  [Proteção de ponto final](endpoint-protection-configure.md)
+       -  [Proteção de identidade](identity-protection-configure.md)  
        -  [Modo de Quiosque](kiosk-settings.md)
        -  [E-mail](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)
@@ -67,5 +68,5 @@ ms.locfileid: "37905024"
 
 O perfil é criado e apresentado na lista.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

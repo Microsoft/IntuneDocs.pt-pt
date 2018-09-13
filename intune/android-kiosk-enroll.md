@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903148"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313466"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição de dispositivos de quiosque do Android Enterprise
 
@@ -112,7 +112,7 @@ Em dispositivos Android 5.1 e posteriores que suportem NFC, pode aprovisionar os
 
 Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. O Android 6.1 e versões posteriores também podem tirar partido da leitura de códigos QR ao utilizar o método de inscrição **aft#setup**.
 
-1. Ative o seu dispositivo com reposição de fábrica.
+1. Ligue o seu dispositivo apagado.
 2. No ecrã **Bem-vindo**, selecione o seu idioma.
 3. Ligue a sua rede **Wi-Fi** e, em seguida, selecione **SEGUINTE**.
 4. Aceite os termos e condições da Google e selecione **SEGUINTE**.
@@ -129,7 +129,7 @@ Em dispositivos Android 7 e posteriores, pode ler o código QR do perfil de insc
 > [!Note]
 > O zoom do browser pode fazer com que os dispositivos não consigam ler códigos QR. Aumentar o zoom do browser resolve o problema.
 
-1. Para iniciar a leitura do código QR no dispositivo Android, toque múltiplas vezes no primeiro ecrã que vir após uma reposição de fábrica.
+1. Para iniciar a leitura do código QR no dispositivo Android, toque múltiplas vezes no primeiro ecrã que vir após apagar.
 2. Em dispositivos Android 7 e 8, ser-lhe-á pedido para instalar um leitor de QR. Os dispositivos Android 9 e posteriores já têm um leitor de QR instalado.
 3. Utilize o leitor de QR para ler o código QR do perfil de inscrição e, em seguida, siga as instruções no ecrã para concluir a inscrição.
 
@@ -168,6 +168,6 @@ Para remover uma aplicação de dispositivos de quiosque Android, pode seguir um
 -   Crie uma implementação de desinstalação para a aplicação.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 - [Implementar aplicações de quiosque Android](apps-deploy.md)
 - [Adicionar políticas de configuração de quiosques Android](device-profiles.md)

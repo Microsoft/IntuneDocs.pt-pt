@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a49811200cd84882fe9f80708edefde7614e5cee
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905041"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347870"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Android ao Microsoft Intune
 
@@ -35,8 +35,8 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona ao In
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-4. Na carga de trabalho **Aplicações móveis**, selecione **Gerir** > **Aplicações**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+4. Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione **Aplicação de linha de negócio**.
 
@@ -80,7 +80,7 @@ A aplicação criada agora aparece na lista de aplicações. Na lista, pode atri
 > [!Note]
 > Para o serviço do Intune implementar com êxito um novo ficheiro APK no dispositivo, tem de incrementar a cadeia `android:versionCode` no ficheiro AndroidManifest.xml do pacote APK.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836341"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329959"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Começar a utilizar o Microsoft Intune no portal do Azure
 
@@ -53,8 +53,8 @@ Esta funcionalidade ser-lhe-á mais relevante após adicionar mais conteúdos, t
 
 ## <a name="using-services"></a>Utilizar serviços
 
-Sempre que abrir o Intune ou outro serviço no Azure, o serviço será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações móveis**, são apresentadas num painel em ecrã inteiro. Quando seleciona a carga de trabalho, a mesma abre esse painel na página inteira. Os outros painéis surgem a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
+Sempre que abrir o Intune ou outro serviço no Azure, o serviço será apresentado num **painel**. Algumas das primeiras cargas de trabalho que utiliza no Intune, como **Utilizadores**, **Grupos** e **Aplicações do cliente**, são apresentadas num painel em ecrã inteiro. Quando seleciona a carga de trabalho, a mesma abre esse painel na página inteira. Os outros painéis surgem a partir do lado direito do painel quando são abertos e, ao serem fechados, desaparecem por baixo do painel principal.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 * [Começar a gerir utilizadores](get-started-users.md) – adicione um utilizador ao Intune para lhe permitir acesso aos recursos da empresa em dispositivos móveis.

@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225043"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329569"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Utilizar perfis de aprovisionamento de aplicações iOS para impedir as aplicações de expirar
 
@@ -43,15 +43,15 @@ Enquanto administrador, pode incluir e excluir grupos de segurança para atribui
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Aplicações móveis**.
-1.  Na carga de trabalho **Aplicações móveis**, selecione **Gerir** > **Perfis de aprovisionamento da aplicação iOS**.
-2.  No painel da lista de perfis, selecione **Criar perfil**.
+3. No painel **Intune**, selecione **Aplicações do cliente**.
+1.  Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Perfis de aprovisionamento da aplicação iOS**.
+2.  No painel Lista de perfis, selecione **Criar perfil**.
 3. No painel **Criar perfil**, configure os seguintes valores:
     - **Nome** – indique um nome para este perfil de aprovisionamento móvel.
     - **Descrição** - opcionalmente, indique uma descrição para a política.
     - **Carregar ficheiro de perfil** – escolha **Importar** e, em seguida, escolha um ficheiro de Perfil de Configuração Móvel da Apple (com a extensão **.mobileprovision**) que transferiu do site Apple Developer.
 4. Quando tiver terminado, escolha **Criar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Atribua o perfil aos dispositivos iOS necessários. Para obter mais informações, siga os passos em [Como atribuir perfis de dispositivo](device-profile-assign.md).

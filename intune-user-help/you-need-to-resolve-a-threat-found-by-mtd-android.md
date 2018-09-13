@@ -1,11 +1,11 @@
 ---
-title: Resolver ameaças encontradas pelas aplicações de Defesa Contra Ameaças para Dispositivos Móveis no Android | Documentos da Microsoft
-description: Saiba como resolver ameaças com as aplicações Defesa Contra Ameaças para Dispositivos Móveis para Android.
+title: Resolver uma ameaça de segurança ou aplicação encontrada por aplicações de Defesa Contra Ameaças para Dispositivos Móveis para dispositivos Android
+description: Saiba como resolver ameaças com as aplicações de Defesa Contra Ameaças para Dispositivos Móveis para dispositivos Android.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,32 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 9636ff126618db62e682607afdb9e45b03a5cf91
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 68808e4a9e29ec8d965a733dae79a9b32f3c5ecd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753214"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149669"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Resolver uma ameaça detetada pela aplicação Defesa Contra Ameaças para Dispositivos Móveis
 
-A Defesa Contra Ameaças para Dispositivos Móveis encontrou uma potencial ameaça no seu dispositivo Android. Tem de corrigir o problema para recuperar o acesso ao seu e-mail profissional ou escolar, às aplicações e aos ficheiros. Dependendo de como a sua empresa configurou a Defesa Contra Ameaças para Dispositivos Móveis, deverá utilizar uma das seguintes aplicações para resolver estes tipos de problemas.
+As aplicações de Defesa Contra Ameaças para Dispositivos Móveis detetam e alertam para ameaças potenciais nos seus dispositivos. Algumas organizações integram um serviço de Defesa Contra Ameaças para Dispositivos Móveis com um fornecedor de MDM, como o Intune. Quando integrado, o serviço de Defesa Contra Ameaças para Dispositivos Móveis comunica as ameaças (por exemplo, aplicações suspeitas, redes e vulnerabilidades do SO) e notifica-o na aplicação Portal da Empresa. Em seguida, pode encontrar detalhes sobre a ameaça e passos de remediação na aplicação Defesa Contra Ameaças para Dispositivos Móveis.
+
+As ameaças são apresentadas no Portal da Empresa como problemas de não conformidade por resolver. Se as ameaças forem classificadas como de risco, a sua empresa irá revogar o acesso aos respetivos recursos empresariais. Enquanto estas ameaças estiverem presentes no seu dispositivo, poderá não ser possível:  
+
+* Ligar ao e-mail empresarial
+* Ligar ao Wi-Fi empresarial
+* Ligar ao SharePoint Online
+* Sincronizar ficheiros empresariais com o OneDrive
+* Aceder a aplicações da empresa
+
+Abaixo, encontram-se os serviços de Defesa Contra Ameaças para Dispositivos Móveis específicos do Android que a sua organização poderá ter configurado. Selecione uma aplicação para ler mais sobre o respetivo comportamento.  
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-android.md)
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
-* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
+* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)  
 
-Para resolver o problema, abra a aplicação Defesa Contra Ameaças para Dispositivos Móveis e siga as instruções apresentadas na aplicação.
+  Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
-**Exemplo de uma aplicação que a Defesa Contra Ameaças para Dispositivos Móveis considera uma ameaça**
-
-Se tiver instalado uma aplicação que a Defesa Contra Ameaças para Dispositivos Móveis considera ser uma ameaça, verá um ecrã a apresentar a aplicação ameaçadora. Se vir algo deste género, toque no nome da aplicação que aparece na parte superior do ecrã e siga as instruções para remover a ameaça.
-
-Depois de desinstalar a aplicação, recupera o acesso ao e-mail e a outros dados da empresa ou escola imediatamente. Se ignorar o pedido para desinstalar a aplicação, perderá o acesso ao e-mail e aos dados da empresa até desinstalar a aplicação.
-
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
