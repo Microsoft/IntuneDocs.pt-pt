@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255542"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141614"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos
 
@@ -53,7 +53,7 @@ Os dispositivos inscritos com uma conta de gestor de inscrição de dispositivos
   - O utilizador DEM não pode utilizar o Portal da Empresa para anular a inscrição de dispositivos inscritos para DEM no próprio dispositivo. O administrador do Intune pode anular a inscrição.
   - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
   - Os utilizadores não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
-  - (Apenas para iOS) Se utilizar o DEM para inscrever dispositivos iOS, não poderá utilizar o Apple Configurator, o Programa de Inscrição de Dispositivos Apple (DEP) ou o Gestor de Escola da Apple (ASM) para inscrever dispositivos.
+  - (Apenas para iOS) Se utilizar o DEM para inscrever dispositivos iOS, não poderá utilizar o Apple Configurator, o Programa de Inscrição de Dispositivos Apple (DEP) ou o Gestor de Escola da Apple (ASM) para inscrever dispositivos. Tal significa que não pode colocar o dispositivo no modo supervisionado e, portanto, não terá acesso a algumas opções de configuração.
   - (Apenas Android) Existe um limite para o número de dispositivos com perfil de trabalho do Android que pode inscrever com uma única conta DEM. Pode inscrever um máximo de 10 dispositivos de perfil de trabalho Android por conta DEM. Esta limitação não se aplica à inscrição Android legada.
   - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo.
   - Não é necessária uma licença de dispositivo do Intune para utilizar DEM. Saiba mais sobre [licenças de utilizador e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
