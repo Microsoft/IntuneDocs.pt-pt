@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313069"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028652"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente dispositivos Android através do Samsung Knox Mobile Enrollment
 
@@ -84,7 +84,7 @@ Para os dispositivos inscritos no Intune com o KME, pode configurar o início de
 
 - **Sem a associação do nome de utilizador:** no Portal do Knox, em **Device details** (Detalhes do dispositivo), deixe os campos **User ID** (ID do Utilizador) e **Password** (Palavra-passe) em branco para os dispositivos adicionados. Esta ação precisa que o utilizador final introduza o nome de utilizador e a palavra-passe na inscrição do Intune.
 
-- **Com a associação do nome de utilizador:** no Portal do Knox, em **Device details** (Detalhes do dispositivo), forneça um **User ID** (ID do Utilizador), como um nome de utilizador para o utilizador atribuído ou uma conta do [Gestor de Inscrição de Dispositivos](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll), para os dispositivos adicionados. Esta ação preenche previamente o nome de utilizador e exige que o utilizador final introduza uma palavra-passe na inscrição no Intune.
+- **Com a associação do nome de utilizador:** no Portal do Knox, em **Device details** (Detalhes do dispositivo), forneça um **User ID** (ID do Utilizador), como um nome de utilizador para o utilizador atribuído ou uma conta do [Gestor de Inscrição de Dispositivos](https://docs.microsoft.com/intune/device-enrollment-manager-enroll), para os dispositivos adicionados. Esta ação preenche previamente o nome de utilizador e exige que o utilizador final introduza uma palavra-passe na inscrição no Intune.
 
 > [!NOTE]
 >

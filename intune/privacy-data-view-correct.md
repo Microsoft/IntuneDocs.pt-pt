@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474637"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028584"
 ---
 # <a name="view-and-correct-personal-data"></a>View and correct personal data (Ver e corrigir dados pessoais)
 
@@ -33,7 +33,7 @@ Os administradores do Intune podem ver alguns dados pessoais com base nas respet
 Os administradores podem ver informações pessoais de utilizadores finais em vários painéis na IU do Intune. Os seguintes artigos descrevem o tipo de informações a que os administradores têm ou não acesso:
 - [See device details (Ver os detalhes do dispositivo)](device-inventory.md) no Intune, explica a forma como pode consultar os detalhes sobre o dispositivo de um utilizador final.
 - [Monitor app information and assignments (Monitorizar informações e atribuições da aplicação)](apps-monitor.md) explica a forma como pode ver os detalhes sobre as aplicações instaladas no dispositivo de um utilizador final.
-- O artigo [What information can my company see when I enroll my device? (Que informações é que a minha empresa pode ver quando inscrevo o meu dispositivo?)](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) disponibiliza aos utilizadores finais uma lista dos dados que as respetivas empresas podem e não podem ver. Recomenda-se que diga claramente aos utilizadores que tipo de dados está a recolher e por que motivo o está a fazer. Este artigo pode representar o primeiro passo para essa transparência.
+- O artigo [What information can my company see when I enroll my device? (Que informações é que a minha empresa pode ver quando inscrevo o meu dispositivo?)](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) disponibiliza aos utilizadores finais uma lista dos dados que as respetivas empresas podem e não podem ver. Recomenda-se que diga claramente aos utilizadores que tipo de dados está a recolher e por que motivo o está a fazer. Este artigo pode representar o primeiro passo para essa transparência.
 
 ### <a name="who-can-view-the-data"></a>Quem pode ver os dados?
 

@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cad4e1d6bcb47981dfb40a1146a3f5148724e08a
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 084b7bead6b294cfbfa94c9b18f539dd0e5db2a8
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330097"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028601"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -43,7 +43,7 @@ Pode utilizar políticas de configuração da aplicação com aplicações gerid
 7. Para cada definição de configuração que a aplicação suporta, escreva o **Nome** e o **Valor** e selecione as reticências (**...**).  
     Para eliminar uma configuração, selecione as reticências (**...**) e selecione **Eliminar**.  
     
-As aplicações ativadas pelo SDK da Aplicação do Intune suportam configurações em pares chave-valor. Para saber mais sobre que configurações de chave-valor são suportadas, consulte a documentação de cada aplicação. Tenha em atenção que pode utilizar os tokens que serão dinamicamente preenchidos com dados gerados pela aplicação. Para obter informações sobre as definições de política de configuração da aplicação Outlook para iOS, veja [Gerir a configuração da aplicação Outlook para iOS com o Microsoft Intune](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx).
+As aplicações ativadas pelo SDK da Aplicação do Intune suportam configurações em pares chave-valor. Para saber mais sobre que configurações de chave-valor são suportadas, consulte a documentação de cada aplicação. Tenha em atenção que pode utilizar os tokens que serão dinamicamente preenchidos com dados gerados pela aplicação. Para obter informações sobre as definições de política de configuração da aplicação Outlook para iOS, veja [Gerir a configuração da aplicação Outlook para iOS com o Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
 
 ## <a name="configuration-values-for-using-tokens"></a>Valores de configuração para utilizar tokens
 
@@ -63,6 +63,6 @@ O Intune suporta os seguintes tipos de tokens nas definições de configuração
 > [!Note]  
 > Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem ser utilizados para outros fins.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação como é habitual.
