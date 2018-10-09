@@ -2,8 +2,8 @@
 title: Gerir versões de sistemas operativos com o Microsoft Intune
 description: Saiba como gerir versões de sistemas operativos em diversas plataformas com o Microsoft Intune.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: 1e5b902053290c314aa53b8f17f11ff92247d37e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 763cc61aae50de893461d1ed137025fa1e6b00b9
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "29720311"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231676"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerir versões de sistemas operativos com o Intune
 Nas plataformas modernas de ambiente de trabalho e dispositivos móveis, são constantemente publicadas atualizações importantes, patches e novas versões. Tem controlos para gerir atualizações e patches totalmente no Windows, mas outras plataformas como Android e iOS precisam que os seus utilizadores finais participem no processo.  O Microsoft Intune tem as ferramentas para o ajudar a estruturar a gestão das versões do seu sistema operativo em diferentes plataformas.
@@ -81,7 +81,7 @@ Pode utilizar as funcionalidades do Intune descritas neste artigo para o ajudar 
 - **Passo 3b**: utilize as políticas de conformidade de dispositivos para exigir a versão 2 do sistema operativo como a versão mínima para o dispositivo estar em conformidade.
   - Estas políticas exigem que os dispositivos sejam atualizados para que os utilizadores continuem a ter acesso aos dados organizacionais. Os serviços protegidos são bloqueados quando forem utilizados com um dispositivo com acesso condicional. As aplicações com a política de proteção de aplicações ativada são bloqueadas quando abertas ou quando tentam aceder a dados organizacionais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Utilize os seguintes recursos para gerir as versões de sistemas operativos na sua organização: 
 
 - [Definir restrições de tipos de dispositivos](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)

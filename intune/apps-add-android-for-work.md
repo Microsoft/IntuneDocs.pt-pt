@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0cfb3dab58676b12b0227f381e9fd7c51e956895
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329875"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799562"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicações a dispositivos com perfil de trabalho do Android com o Intune
 
@@ -106,7 +106,7 @@ Em alternativa, pode configurar o Google Play para reaprovar automaticamente as 
 5. No nó **Aplicações** da loja, verifique se a aplicação que publicou é apresentada.  
     A aplicação é automaticamente aprovada para ser sincronizada com o Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Atribuir aplicações a grupos](apps-deploy.md) 
 

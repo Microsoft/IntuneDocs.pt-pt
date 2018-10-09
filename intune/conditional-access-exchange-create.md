@@ -3,8 +3,8 @@ title: Criar uma política de acesso condicional do Exchange
 titlesuffix: Microsoft Intune
 description: Configure o acesso condicional no Exchange no local e no Exchange Online Dedicado legado no Intune.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
-ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
+ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39323247"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232227"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 
@@ -70,7 +70,7 @@ Para poder configurar o acesso condicional, verifique o seguinte:
 
 ### <a name="support-for-pcs"></a>Suporte de PCs
 
-A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita através do Intune)
+A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita através do Intune)
 
 
 ## <a name="configure-exchange-on-premises-access"></a>Configurar o acesso ao Exchange no local

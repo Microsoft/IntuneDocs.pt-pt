@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 9cb87541e45591ae8c4d1e8151fdb781ebd0b364
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 8b77eeb57bb3887e28242ca845ec6e83d4e9a817
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148145"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863078"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Resolver uma ameaça encontrada pelo Zimperium zIPS
 
@@ -37,12 +37,16 @@ Este artigo descreve como reconhecer os alertas de ameaças do Zimperium zIPS e 
 ## <a name="troubleshoot-virus-or-security-threat"></a>Resolver problemas relacionados com ameaças de vírus ou segurança  
 Se for detetada uma ameaça de vírus ou segurança, o Zimperium zIPS irá impor restrições de acordo com as políticas de acesso da sua organização. As políticas de acesso da sua empresa poderão impedir que aceda à rede, às aplicações e ao e-mail do seu trabalho a partir do seu dispositivo.  
 
-O Zimperium zIPS irá pedir-lhe que realize ações para recuperar o acesso que perdeu. Selecione a ameaça e siga as instruções na aplicação para a resolver.  
+O Zimperium zIPS irá pedir-lhe que realize ações para recuperar o acesso que perdeu. Selecione a ameaça e siga as instruções na aplicação para a resolver.
 
-## <a name="resolve-an-app-threat"></a>Resolver uma ameaça de aplicação
+Uma vez que a aplicação está integrada no fornecedor de MDM da sua empresa, será também apresentado um aviso sobre o acesso restrito na aplicação Portal da Empresa. O aviso indica que deve abrir o Zimperium zIPS para resolver a ameaça de vírus ou segurança.  
+
+  ![Captura de ecrã de exemplo da página do dispositivo no Portal da Empresa que apresenta o aviso do Zimperium zIPS.](./media/CP-lookout-virus-banner-1808.png)  
+  
+## <a name="troubleshoot-an-app-threat"></a>Resolver problemas relacionados com uma ameaça de aplicação
 
 Se instalar uma aplicação que seja detetada como uma ameaça para o seu dispositivo, irá receber uma notificação na aplicação Zimperium zIPS. Se a aplicação afetada permanecer no seu dispositivo, não poderá aceder aos recursos da empresa.  
 
 Para resolver o problema, selecione a aplicação na lista de ameaças no Zimperium zIPS. Em seguida, siga as instruções que aparecem no ecrã para remover e desinstalar a aplicação.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 
+Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   

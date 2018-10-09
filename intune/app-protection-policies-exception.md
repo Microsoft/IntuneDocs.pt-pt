@@ -3,8 +3,8 @@ title: Exceções da política de transferência de dados para aplicações
 titleSuffix: Microsoft Intune
 description: Crie exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/28/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 5f50ad61634363ea1bc1ab8af139033a114f8b86
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039159"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231496"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune
 
@@ -50,7 +50,7 @@ Para uma política destinada a dispositivos Android, pode configurar as exceçõ
 > Pode localizar o ID do pacote de uma aplicação ao navegar para a aplicação na Google Play Store. O ID do pacote está contido no URL da página da aplicação. Por exemplo, o ID do pacote da aplicação Microsoft Word é **com.microsoft.office.word**.
 
 ### <a name="example"></a>Exemplo
-Adicionar o pacote **WebEx** como uma exceção à política de transferência de dados da MAM permite que as ligações WebEx numa mensagem de e-mail do Outlook gerido sejam abertas diretamente na aplicação WebEx. A transferência de dados é restrita noutras aplicações não geridas.
+Adicionar o pacote **WebEx** como uma exceção à politica de transferência de dados da MAM permite que as ligações WebEx numa mensagem de e-mail do Outlook gerido sejam abertas diretamente na aplicação WebEx. A transferência de dados é restrita noutras aplicações não geridas.
 
 - Exemplo de **WebEx** para iOS: para isentar a aplicação **WebEx** para ter permissão para ser invocada pelas aplicações geridas pelo Intune, tem de adicionar uma exceção de transferência de dados para a seguinte cadeia: <code>wbx</code>
     
