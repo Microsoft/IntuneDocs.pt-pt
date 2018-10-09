@@ -417,7 +417,7 @@ Utilize estas opções para configurar as definições da segurança local em di
 ### <a name="interactive-logon"></a>Início de sessão interativo
 
 - **Minutos de inatividade do ecrã bloqueado até que a proteção de ecrã seja ativada**: introduza o máximo de minutos de inatividade no ecrã de início de sessão do ambiente de trabalho interativo até que a proteção de ecrã seja executada.
-- **Exigir CTRL + ALT + DEL para iniciar sessão**: defina para **Ativar** para que os utilizadores tenham de premir Ctrl+Alt+Delete para iniciarem sessão. Defina para **Não configurado** (predefinição) para que os utilizadores não tenham de premir Ctrl+Alt+Delete para iniciarem sessão no Windows.
+- **Exigir Ctrl+Alt+Delete para iniciar sessão**: defina para **Ativar** para que os utilizadores não tenham de premir Ctrl+Alt+Delete para iniciarem sessão. Defina para **Não configurado** (predefinição) para que os utilizadores tenham de premir Ctrl+Alt+Delete para iniciarem sessão no Windows.
 - **Comportamento de remoção do smart card**: determina o que acontece quando o smart card de um utilizador com sessão iniciada é removido do leitor de Smart Card. As opções são:
 
   - **Bloquear Estação de Trabalho**: a estação de trabalho é bloqueada quando o smart card é removido. Esta opção permite que os utilizadores saiam da área, levem os seus smart cards e permaneçam numa sessão protegida.
