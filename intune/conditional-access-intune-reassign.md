@@ -3,8 +3,8 @@ title: Migrar o acesso condicional para o portal do Azure
 titlesuffix: Microsoft Intune
 description: Reatribua as políticas de acesso condicional que criou anteriormente no portal clássico do Intune ao portal do Azure.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 00c657700cd8c27e4758b9cc94292ba83b2db3cd
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187840"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231717"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional do portal clássico do Intune para o portal do Azure
 
