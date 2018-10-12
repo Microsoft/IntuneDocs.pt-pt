@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,45 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
+ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039306"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46300464"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para criar um novo código de acesso para um dispositivo, utilize a ação **Remover código de acesso**. Esta ação pede uma reposição do PIN apenas do perfil de trabalho. As reposições de PIN dos dispositivos não são suportadas para perfis de trabalho do Android.
+Este documento aborda a reposição de códigos de acesso ao nível do dispositivo e do perfil de trabalho em dispositivos Android Enterprise (anteriormente denominado Android for Work ou AfW). É importante observar esta distinção, uma vez que os requisitos de cada um podem variar. Uma reposição de código de acesso ao nível do dispositivo repõe o código de acesso de todo o dispositivo. Uma reposição de código de acesso do perfil de trabalho repõe apenas o código de acesso do perfil de trabalho do utilizador em dispositivos Android Enterprise.
 
-## <a name="work-profile-pin-reset-supported-platforms"></a>Plataformas que suportam a reposição de PIN do perfil de trabalho
+## <a name="supported-platforms-for-device-level-passcode-reset"></a>Plataformas suportadas para reposição de códigos de acesso ao nível do dispositivo
 
-- Dispositivos Android inscritos com um perfil de trabalho com a versão 8.0 e posterior 
-- Dispositivos Android com a versão 6.0 ou anterior
-- Dispositivos de quiosque Android Enterprise
-- iOS 
-     
-## <a name="unsupported-platforms"></a>Plataformas não suportadas
+| Platform | Suportado? |
+| ---- | ---- |
+| Dispositivos Android com a versão 6.X ou anterior | Sim |
+| Dispositivos Android Enterprise no modo de quiosque | Sim |
+| Dispositivos iOS | Sim |
+| Dispositivos Android inscritos com um perfil de trabalho com a versão 7.0 e anterior | Não |
+| Dispositivos Android com a versão 7.0 ou posterior | Não |
+| macOS | Não |
+| Windows | Não |
 
-- Dispositivos Android inscritos com um Perfil de Trabalho com a versão 7.0 e anterior
-- Dispositivos Android com a versão 7.0 ou posterior
-- macOS
-- Windows
+Para dispositivos Android, isto significa efetivamente que a reposição de códigos de acesso ao nível do dispositivo só é suportada em dispositivos com a versão 6.X ou anterior ou em dispositivos Android Enterprise com o modo de quiosque a ser executado. Isto acontece porque a Google removeu o suporte da reposição de códigos de acesso/palavras-passe para dispositivos Android 7 a partir de uma aplicação concedida ao Administrador de Dispositivos e aplica-se a todos os fornecedores MDM.
+
+## <a name="supported-platforms-for-android-enterprise-work-profile-passcode-reset"></a>Plataformas suportadas para reposição de códigos de acesso do perfil de trabalho do Android Enterprise
+
+| Platform | Suportado? |
+| ---- | ---- |
+| Dispositivos Android Enterprise inscritos com um perfil de trabalho e com a versão 8.0 e posterior | Sim |
+| Dispositivos Android Enterprise inscritos com um perfil de trabalho e com a versão 7.X e anterior | Não |
+| Dispositivos Android com a versão 7.X e anterior | Não |
+| iOS | Não |
+| macOS | Não |
+| iOS | Não |
+
+Para criar um novo código de acesso de perfil de trabalho, utilize a ação Repor Código de Acesso. Esta ação solicita uma reposição do código de acesso e cria um código de acesso novo e temporário apenas para o perfil de trabalho. 
 
 ## <a name="reset-a-passcode"></a>Repor um código de acesso
 
@@ -47,15 +60,16 @@ Para criar um novo código de acesso para um dispositivo, utilize a ação **Rem
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.
 
-## <a name="resetting-android-work-profile-passcodes"></a>Repor códigos de acesso do perfil de trabalho do Android
+## <a name="reset-android-work-profile-passcodes"></a>Repor códigos de acesso do perfil de trabalho do Android
 
-Os dispositivos com perfil de trabalho do Android suportados recebem uma nova palavra-passe de desbloqueio do perfil gerido ou um desafio de perfil gerido para o utilizador final. 
+Os dispositivos Android Enterprise inscritos suportados com um perfil de trabalho recebem uma nova palavra-passe de desbloqueio do perfil gerido ou um desafio de perfil gerido para o utilizador final.
 
-Para os dispositivos com perfil de trabalho do Android 8.0, os utilizadores finais são notificados para ativar o respetivo código de acesso após a conclusão da inscrição. A notificação é apresentada se for necessário definir uma palavra-passe de Perfil de Trabalho. Depois de introduzir o respetivo código de acesso, a notificação é dispensada.
+Para dispositivos Android Enterprise com a versão 8.X ou posterior e inscritos com um perfil de trabalho, os utilizadores finais são notificados para ativar o código de acesso de reposição logo após a inscrição estar concluída. A notificação é apresentada se for necessário definir uma palavra-passe de perfil de trabalho. Depois de introduzir o respetivo código de acesso, a notificação é dispensada.
 
-## <a name="resetting-ios-passcodes"></a>Repor códigos de acesso em iOS
 
-Os códigos de acesso são removidos dos dispositivos iOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições. 
+## <a name="remove-ios-passcodes"></a>Remover códigos de acesso do iOS
+
+Em vez de serem repostos, os códigos de acesso são removidos dos dispositivos iOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições.
 
 ## <a name="next-steps"></a>Próximos passos
 

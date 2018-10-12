@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569362"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168935"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -45,7 +45,7 @@ Durante a configuração da Defesa Contra Ameaças para Dispositivos Móveis (MT
 
     ![Configuração da MTD do Intune no portal do Azure](./media/enable-mtd-connector-1.png)
 
-7. Ative as opções de alternância de acordo com os requisitos da sua organização.
+7. Ative as opções de alternância de acordo com os requisitos da sua organização. As opções de alternância visíveis variam consoante o parceiro MTD.
 
 ## <a name="mtd-toggle-options"></a>Opções de alternância da MTD
 

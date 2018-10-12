@@ -1,36 +1,36 @@
 ---
-title: Atualizar dispositivos Windows 10 com o Microsoft Intune – Azure | Microsoft Docs
-description: Crie um perfil de dispositivo no Microsoft Intune para atualizar dispositivos Windows 10 para versões mais recentes. Consulte também os caminhos de atualização suportados para o Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic e Mobile.
+title: Atualizar ou utilizar o modo S em dispositivos com o Windows 10 no Microsoft Intune – Azure | Microsoft Docs
+description: Crie um perfil de dispositivo no Microsoft Intune para atualizar dispositivos com o Windows 10 para edições diferentes. Por exemplo, pode atualizar o Windows 10 Professional para o Windows 10 Enterprise. Também pode ativar ou sair do modo S num dispositivo através do perfil de configuração. Consulte também os caminhos de atualização suportados para o Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic e Mobile.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
+ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025438"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44389630"
 ---
-# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Configurar o perfil de atualização de edição do Windows 10 no Intune
+# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Utilizar um perfil de configuração para atualizar o Windows 10 ou sair do modo S no Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configure um perfil de atualização no Intune para atualizar automaticamente os dispositivos que executam a edição Windows 10 para uma edição diferente. Consulte também os caminhos de atualização suportados.
 
 ## <a name="before-you-begin"></a>Antes de começar
-Antes de atualizar os dispositivos para a versão mais recente, precisa de um dos seguintes:
+Antes de atualizar os dispositivos para a versão mais recente, precisa dos seguintes pré-requisitos:
 
-- Uma chave de produto válida para instalar a versão atualizada do Windows em todos os dispositivos visados pela política (para edições do Windows 10 Desktop). Pode utilizar Chaves de Ativação Múltipla (MAK), chaves KMS (Key Management Server) ou um ficheiro de licença da Microsoft que contém as informações de licenciamento para instalar a versão atualizada do Windows em todos os dispositivos visados pela política (para as edições Windows 10 Mobile e Windows 10 Holographic).
-- Os dispositivos Windows 10 aos quais atribuir a política estão inscritos no Microsoft Intune. Não é possível utilizar a política de atualização de edição com PCs que executam o software de cliente de PCs do Intune.
+- Uma chave de produto válida para instalar a versão atualizada do Windows em todos os dispositivos visados pela política (para edições do Windows 10 Desktop). Pode utilizar chaves MAK (Chaves de Ativação Múltipla) ou KMS (Servidor de Gestão de Chaves). Para as edições Windows 10 Mobile e Windows 10 Holographic, pode utilizar um ficheiro de licença da Microsoft que inclua as informações de licenciamento para instalar a versão atualizada do Windows em todos os dispositivos visados pela política.
+- Os dispositivos com o Windows 10 aos quais atribuir a política estão inscritos no Microsoft Intune. Não é possível utilizar a política de atualização de edição com PCs que executam o software de cliente de PCs do Intune.
 
 ## <a name="supported-upgrade-paths"></a>Caminhos de atualização suportados
 A seguinte tabela indica os caminhos de atualização suportados para o perfil de atualização de edição do Windows 10.
@@ -121,25 +121,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Criar um perfil de dispositivo com as definições de restrição de dispositivos
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Configuração do dispositivo**, selecione **Perfis** e, em seguida, selecione **Criar Perfil**.
-4. Introduza um **Nome** e uma **Descrição** para o perfil de atualização da edição.
-5. Na lista pendente **Plataforma**, escolha **Windows 10 e posterior**.
-6. Na lista pendente **Tipo de perfil**, escolha **Atualização de Edição**.
-7. Nas propriedades **Atualização da Edição**, introduza as seguintes definições:
-   - **Edição para a qual atualizar** – na lista pendente, selecione a versão do Windows 10 Desktop, do Windows 10 Holographic ou do Windows 10 Mobile para a qual está a atualizar os dispositivos visados.
-   - **Chave de Produto** – introduza a chave de produto que recebeu da Microsoft, que pode servir para atualizar todos os dispositivos Windows 10 Desktop visados. 
-    Depois de criar uma política que contém uma chave de produto, a chave não pode ser atualizada e é ocultada por motivos de segurança. Para alterar a chave de produto, introduza novamente a chave completa.
-   - **Ficheiro de Licença** – selecione **Procurar** para selecionar o ficheiro de licença que recebeu da Microsoft. Este ficheiro de licença contém informações de licença da edição Windows Holographic ou Windows 10 Mobile para a qual está a atualizar os dispositivos visados.
-8. Quando terminar, selecione **Criar** para guardar as suas alterações.
+## <a name="upgrade-the-edition"></a>Atualizar a edição
+
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+3. Introduza um **Nome** e uma **Descrição** para o perfil. Por exemplo, introduza algo como `Windows 10 edition upgrade`
+4. Em **Plataforma**, selecione **Windows 10 e versões posteriores**.
+5. Em **Tipo de perfil**, selecione **Atualização da edição**.
+6. Nas propriedades **Atualização da Edição**, introduza as seguintes definições:
+
+   - **Edição a atualizar**: selecione a edição Windows 10 para a qual está a atualizar. Os dispositivos visados por esta política são atualizados para a edição que escolher.
+   - **Chave de Produto**: introduza a chave de produto que recebeu da Microsoft. Depois de criar a política que contém a chave de produto, a chave não pode ser atualizada e é ocultada por motivos de segurança. Para alterar a chave de produto, introduza novamente a chave completa.
+   - **Ficheiro de Licença**: para **Windows 10 Holographic for Business** ou **Edição Windows 10 Mobile**, selecione **Procurar** para selecionar o ficheiro de licença que recebeu da Microsoft. Este ficheiro de licença inclui as informações de licença das edições para as quais está a atualizar os dispositivos visados.
+
+7. Selecione **OK** para guardar as alterações. Selecione **Criar** para criar o perfil.
+
+## <a name="switch-out-of-s-mode"></a>Sair do modo S
+
+O [modo S do Windows 10](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) foi concebido para segurança e desempenho. Se os seus dispositivos apenas executarem aplicações da Microsoft Store, pode utilizar o modo S para ajudar a mantê-los seguros. Se os seus dispositivos necessitarem de aplicações que não estão disponíveis na Microsoft Store, saia do modo S. Sair do modo S é definitivo. Depois de sair do modo S, não pode voltar para o modo Windows 10 S.
+
+Os passos seguintes mostram como criar um perfil que controla o modo S nos dispositivos Windows 10 (1809 ou posterior).
+
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+3. Introduza um **Nome** e uma **Descrição** para o perfil. Por exemplo, introduza algo como `Windows 10 switch off S mode`
+4. Em **Plataforma**, selecione **Windows 10 e versões posteriores**.
+5. Em **Tipo de perfil**, selecione **Atualização da edição**.
+6. Selecione **Alteração de modo (apenas no Windows Insider)** e defina a propriedade **Sair do modo S**. As opções são:
+
+    - **Nenhuma configuração**: um dispositivo no modo S permanece no modo S. Um utilizador final pode retirar o dispositivo do modo S.
+    - **Manter no modo S**: não permite ao utilizador final retirar o dispositivo do modo S.
+    - **Alterar**: retira o dispositivo do modo S.
+
+7. Selecione **OK** para guardar as alterações. Selecione **Criar** para criar o perfil.
 
 O perfil será criado e apresentado nos perfis.
 
 ## <a name="next-steps"></a>Próximos passos
 
-Para atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
+[Atribua este perfil](device-profile-assign.md) aos seus grupos.
 
 >[!NOTE]
->Se remover a atribuição de políticas, a versão do Windows no dispositivo não será revertida e continuará a funcionar normalmente.
+>Se remover a atribuição de políticas mais tarde, a versão do Windows no dispositivo não será revertida e continuará a funcionar normalmente.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575054"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700987"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utilizar APIs para adicionar outras ACs para o SCEP ao Intune
 
@@ -125,6 +125,13 @@ A configuração tem de incluir as seguintes propriedades:
     - AAD_APP_KEY= "a Chave da Aplicação Azure obtida durante o processo de integração"
     - TENANT= "o ID de inquilino obtido durante o processo de integração"
     - PROVIDER_NAME_AND_VERSION= "as informações utilizadas para identificar o seu produto e a respetiva versão"
+    
+Se a sua solução precisar de um proxy com ou sem autenticação, pode adicionar as seguintes propriedades:
+
+    - PROXY_HOST="O anfitrião onde está alojado o proxy."
+    - PROXY_PORT="A porta de escuta do proxy."
+    - PROXY_USER="O nome de utilizador a utilizar se o proxy usar autenticação básica."
+    - PROXY_PASS="A palavra-passe a utilizar se o proxy usar autenticação básica."
 
 Exceções geradas:
 

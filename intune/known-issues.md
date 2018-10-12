@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347802"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187857"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -106,6 +106,15 @@ Para obter mais informações, veja [O que é a conformidade do dispositivo](dev
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>Acesso condicional
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>As definições de acesso condicional do Intune não aparecem na consola nova
+
+Depois do seu inquilino ter sido migrado para o portal do Azure, as definições de acesso condicional vão continuar a ser aplicadas; no entanto, não são apresentadas no portal do Intune no Azure. 
+
+Se quiser ver e gerir essas definições no portal do Azure, terá de remover as definições antigas do portal clássico e recriá-las no portal do Azure. 
+
+Para obter mais informações, veja [Melhores práticas para o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
 
 ## <a name="data-protection"></a>Proteção de dados
 

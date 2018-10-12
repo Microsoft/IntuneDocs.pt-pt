@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312901"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119108"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Definições de quiosque do Android Enterprise no Intune
 
@@ -45,9 +45,9 @@ Os perfis de quiosque do Android suportam as seguintes definições de configura
 - **Permitir a instalação a partir de origens desconhecidas**: selecione **Permitir** para permitir que os utilizadores instalem a partir de origens desconhecidas.
 - **Atualização do sistema**: selecione uma opção para definir a forma como o dispositivo processa atualizações por ondas eletromagnéticas:
     - **Predefinição do Dispositivo**: utiliza a predefinição do dispositivo.
-    - **Automático**: as atualizações são instaladas automaticamente.
-    - **Adiado**: as atualizações são adiadas até uma data posterior.
-    - **Janela de manutenção**: é pedido aos utilizadores através de uma janela de manutenção que aprovem a atualização.
+    - **Automático**: as atualizações são instaladas automaticamente sem interação do utilizador. Definir esta política imediatamente instala todas as atualizações pendentes.
+    - **Adiado**: as atualizações são adiadas por 30 dias. No final dos 30 dias, o Android pede ao utilizador para instalar a atualização. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo. 
+    - **Janela de manutenção**: as atualizações são instaladas automaticamente durante uma janela de manutenção diária definida no Intune. A instalação é tentada diariamente durante 30 dias e pode falhar devido a espaço ou níveis de bateria insuficientes. Após 30 dias, o Android pede ao utilizador para instalar. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Esta opção é recomendada para dispositivos dedicados, como quiosques, uma vez que as aplicações de primeiro plano de quiosques de aplicação única podem ser atualizadas. 
 
 ## <a name="kiosk-settings"></a>Definições de quiosque
 
@@ -73,7 +73,7 @@ Os perfis de quiosque do Android suportam as seguintes definições de configura
 - **Remoção do utilizador**: selecione **Bloquear** para impedir que os utilizadores removam utilizadores.
 - **Alterações à conta**: selecione **Bloquear** para impedir que os utilizadores modifiquem as contas.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
 

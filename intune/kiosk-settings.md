@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481126"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562872"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Definições de quiosque para Windows 10 (e posterior) no Intune
 
@@ -45,7 +45,7 @@ Os perfis de quiosque são utilizados para configurar dispositivos com o Windows
 #### <a name="single-full-screen-app-kiosks"></a>Quiosques de uma aplicação em ecrã inteiro
 Introduza as seguintes definições:
 
-- **Identificador de aplicação de Plataforma Universal do Windows (UWP)**: introduza o **ID do modelo do utilizador (AUMID)** da aplicação de quiosque. Também pode selecionar uma aplicação gerida existente que tenha adicionado com das [Aplicações Móveis](apps-add.md).
+- **Identificador de aplicação de Plataforma Universal do Windows (UWP)**: introduza o **ID do modelo do utilizador (AUMID)** da aplicação de quiosque. Também pode selecionar uma aplicação gerida existente que tenha adicionado com as [Aplicações Cliente](apps-add.md).
 
     Veja [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada).
 
@@ -62,7 +62,7 @@ Os [quiosques de várias aplicações](https://docs.microsoft.com/windows/config
 Introduza as seguintes definições:
 
 - **Adicionar aplicação Win32**: uma aplicação Win32 é uma aplicação de ambiente de trabalho tradicional. Introduza o **Nome da aplicação**, e o **Identificador**. O **Identificador** é o nome do caminho absoluto do ficheiro executável, relativamente ao dispositivo.
-- **Adicionar aplicações geridas**: selecione uma aplicação gerida existente que tenha adicionado com as [Aplicações Móveis no Intune](apps-add.md).
+- **Adicionar aplicações geridas**: selecione uma aplicação gerida existente que tenha adicionado com as [Aplicações Cliente no Intune](apps-add.md).
 - **Adicionar aplicação por AUMID**: introduza o [AUMID da aplicação](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações da UWP).
 - **Barra de tarefas** – selecione a opção para **Ativar** (mostrar) a barra de tarefas ou mantenha-a definida como **Não configurado** (ocultar) no quiosque.
 - **Esquema do menu Iniciar**: introduza um ficheiro XML que descreva como as aplicações são apresentadas no menu Iniciar, incluindo a ordem das aplicações. O artigo [Customize and export Start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas orientações e um ficheiro XML de exemplo.
@@ -75,7 +75,7 @@ Introduza as seguintes definições:
 
 ## <a name="kiosk-web-browser-settings"></a>Definições do browser do quiosque
 
-Estas definições controlam uma aplicação de browser no quiosque. Certifique-se de que implementou uma aplicação de browser para os dispositivos de quiosque com as [Aplicações Móveis](apps-add.md).
+Estas definições controlam uma aplicação de browser no quiosque. Certifique-se de que implementou uma aplicação de browser para os dispositivos de quiosque com as [Aplicações Cliente](apps-add.md).
 
 1. Introduza as seguintes definições:
 
@@ -115,7 +115,7 @@ As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicaçõ
 
 Introduza as seguintes definições:
 
-- **Adicionar aplicações geridas**: selecione uma aplicação gerida existente que tenha adicionado com as [Aplicações Móveis no Intune](apps-add.md).
+- **Adicionar aplicações geridas**: selecione uma aplicação gerida existente que tenha adicionado com as [Aplicações Cliente no Intune](apps-add.md).
 - **Adicionar aplicação por AUMID**: introduza o [AUMID da aplicação](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações da UWP).
 - **Esquema do menu Iniciar**: introduza um ficheiro XML que descreva como as aplicações são apresentadas no menu Iniciar, incluindo a ordem das aplicações. O artigo [Customize and export start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) dá algumas orientações e inclui um ficheiro XML específico para dispositivos com o Windows Holographic for Business.
 - **Tipo de conta de utilizador**: adicione uma ou mais contas de utilizador que poderão utilizar as aplicações que adicionar. As opções suportadas são as seguintes: 

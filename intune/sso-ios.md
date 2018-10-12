@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216263"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864613"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar o Microsoft Intune para início de sessão único num dispositivo iOS
 
@@ -84,7 +84,7 @@ Por exemplo, quando um utilizador se ligar a um destes sites, o dispositivo iOS 
 > [!NOTE]
 > Estes URLs têm de ter um FQDN formatado adequadamente. A Apple exige que estes estejam no formato `http://<yourURL.domain>`
 
-Os padrões de correspondências do URL têm de começar com `http://` ou `https://`. É feita uma correspondência de cadeia simples, para que o prefixo de URL `http://www.contoso.com/` não corresponda a `http://www.contoso.com:80/`. No entanto, com o iOS 9.0 ou posterior, pode ser utilizado um único caráter universal \* para especificar todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde a `http://store.contoso.com/` e a `http://www.contoso.com`.
+Os padrões de correspondências do URL têm de começar com `http://` ou `https://`. É feita uma correspondência de cadeia simples, para que o prefixo de URL `http://www.contoso.com/` não corresponda a `http://www.contoso.com:80/`. No entanto, com o iOS 10.0 ou posterior, pode ser utilizado um único caráter universal \* para especificar todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde a `http://store.contoso.com/` e a `http://www.contoso.com`.
 Os padrões `http://.com` e `https://.com` correspondem a todos os URLs HTTP e HTTPS, respetivamente.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Aplicações que utilizarão o Início de Sessão Único

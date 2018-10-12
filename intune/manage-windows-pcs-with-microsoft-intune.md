@@ -1,12 +1,11 @@
 ---
-title: Gerir PCs com o software de cliente
-titlesuffix: Microsoft Intune
+title: Gerir PCs com software de cliente no Microsoft Intune - Azure | Microsoft Docs
 description: Efetue a gestão de PCs Windows instalando o software de cliente do Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910643"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978251"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
 
@@ -46,17 +45,20 @@ O Intune suporta a gestão de PCs Windows como computadores através do cliente 
 |Requisito|Mais informações|
 |---------------|--------------------|
 |Rede|O cliente requer o computador para ter ligação à Internet.|
-|Processador e Memória|Veja os requisitos de processador e RAM do sistema operativo do computador.|
+|Processador e Memória|Consulte os requisitos de processador e RAM do sistema operativo do computador.|
 |Espaço em disco|200 MB de espaço disponível no disco antes da instalação do software do cliente.|
 
 **Software**: seguem-se os requisitos de software para instalar o software de cliente:
 
 |Requisito|Mais informações|
 |---------------|--------------------|
-|Sistema operativo | Dispositivo Windows com Windows 7 SP1 e Windows 8.1 ou posterior. </br></br>**As versões Home Edition não são suportadas.**|
+|Sistema operativo | Dispositivo Windows com o Windows 7 SP1 e Windows 8.1 ou posterior. </br></br>**As versões Home Edition não são suportadas.**|
 |Permissões administrativas|A conta que instala o software de cliente tem de ter permissões de administrador local no dispositivo.|
 |Windows Installer 3.1|O computador tem de ter instalado, no mínimo, o Windows Installer 3.1.<br /><br />Para ver a versão existente do Windows Installer num computador:<br /><br />  No PC, clique com o botão direito do rato em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Pode transferir a versão mais recente do Windows Installer em [Redistribuíveis do Windows Installer](http://go.microsoft.com/fwlink/?LinkID=234258) no site da Microsoft Developer Network.|
 |Remover software de cliente incompatível|Antes de instalar o software de cliente do Intune, desinstale todo o software de cliente do Configuration Manager, Operations Manager e Service Manager desse PC.|
+
+> [!WARNING]
+> A Microsoft anunciou que [o suporte do Windows 7 termina a 14 de Janeiro de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Nesta data, o Intune também retira o suporte para dispositivos com o Windows 7. A Microsoft recomenda vivamente que passe para o Windows 10 para evitar interrupções de serviço ou suporte. 
 
 ## <a name="deploying-the-intune-software-client"></a>Implementar o cliente de software do Intune
 Como administrador do Intune, pode disponibilizar o cliente de software do Intune aos utilizadores de várias formas. Para obter orientações, veja [Instalar o cliente de software do Intune em PCs Windows](install-the-windows-pc-client-with-microsoft-intune.md).

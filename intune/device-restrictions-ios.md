@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329823"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46330002"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
@@ -114,7 +114,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 
 -   **Acesso ao Centro de Controlo enquanto o dispositivo está bloqueado** – Permita que o utilizador aceda ao centro de controlo quando o dispositivo está bloqueado.
 -   **Notificações enquanto o dispositivo está bloqueado** – Permita que o utilizador aceda à vista de notificações sem desbloquear o dispositivo.
--   **Passbook enquanto o dispositivo está bloqueado** – Permita que o utilizador aceda à aplicação Passbook enquanto o dispositivo está bloqueado.
+-   **Notificações de Carteira enquanto o dispositivo está bloqueado** – permita que o utilizador aceda à aplicação Carteira enquanto o dispositivo está bloqueado.
 -   **Vista Hoje enquanto o dispositivo está bloqueado** – Permita que o utilizador veja a vista Hoje enquanto o dispositivo está bloqueado.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, Visualização de Documentos, Jogos
@@ -160,14 +160,14 @@ Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 - Uma lista de **Aplicações proibidas** – Indique as aplicações (não geridas pelo Intune) que os utilizadores não têm permissão para instalar e executar. Os utilizadores não são impedidos de instalar uma aplicação proibida, mas se o fizerem, esta ação ser-lhe-á comunicada.
 - Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar aplicações que não se encontrem na lista de aprovações, mas se o fizerem, esta ação ser-lhe-á comunicada.
 
-Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o publicador da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
+Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
 
 ### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Como especificar o URL para uma aplicação na loja
 
 Para especificar um URL de aplicação na lista de aplicações, utilize o seguinte formato:
 
 Através de um motor de pesquisa, localize a aplicação que pretende utilizar na App Store do iTunes e abra a página da aplicação.
-Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de quiosque.
+Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de local público.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
 Exemplo: procure Microsoft Word para iPad. O URL a utilizar é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
@@ -186,14 +186,14 @@ Na lista mostrar ou ocultar aplicações, pode configurar uma das seguintes list
 - Uma lista de **Aplicações ocultas** – especifique uma lista de aplicações ocultadas dos utilizadores. Os utilizadores não poderão ver ou iniciar estas aplicações.
 - Uma lista de **Aplicações visíveis** – especifique uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
-Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o publicador da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
+Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
 
 ### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Como especificar o URL para uma aplicação na loja
 
 Para especificar um URL de aplicação na lista de aplicações, utilize o seguinte formato:
 
 Através de um motor de pesquisa, localize a aplicação que pretende utilizar na App Store do iTunes e abra a página da aplicação.
-Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de quiosque.
+Copie o URL da página e utilize-o como o URL para configurar a lista das aplicações permitidas ou proibidas ou uma aplicação que pretende executar no modo de local público.
 
 Exemplo: procure Microsoft Word para iPad. O URL a utilizar é https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -280,14 +280,14 @@ Depois de especificar cada nome da aplicação e ID do pacote, escolha **Adicion
     -   **Controlo de zoom** – Ative ou desative os ajustes do zoom, o que permite ao utilizador ajustar a função zoom.
 
 >[!NOTE]
-> Para poder configurar um dispositivo iOS para o modo de quiosque, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
+> Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Para obter mais informações sobre a Ferramenta Apple Configurator, consulte a sua documentação da Apple.
 >Se a aplicação iOS que especificou for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID do pacote para aplicações iOS incorporadas
 
 Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software.
 
-| ID do Pacote                   | Nome da Aplicação     | Publicador |
+| ID do Pacote                   | Nome da Aplicação     | Publisher |
 |-----------------------------|--------------|-----------|
 | com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |

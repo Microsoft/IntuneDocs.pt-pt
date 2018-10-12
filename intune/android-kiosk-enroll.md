@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313466"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187823"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição de dispositivos de quiosque do Android Enterprise
 
@@ -74,6 +74,7 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
     - **Adicionar dispositivos onde**: enrollmentProfileName
     - Na caixa do meio, selecione **Correspondência**.
     - No último campo, introduza o nome do perfil de inscrição que criou anteriormente.
+    Para obter mais informações sobre regras de associação dinâmica, veja [Regras de associação dinâmica para grupos no AAD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. Selecione **Adicionar consulta** > **Criar**.
 
 ### <a name="replace-or-remove-tokens"></a>Substituir ou remover tokens
@@ -168,6 +169,6 @@ Para remover uma aplicação de dispositivos de quiosque Android, pode seguir um
 -   Crie uma implementação de desinstalação para a aplicação.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Implementar aplicações de quiosque Android](apps-deploy.md)
 - [Adicionar políticas de configuração de quiosques Android](device-profiles.md)

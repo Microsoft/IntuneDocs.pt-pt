@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 45c394f3aadde63299b8397974f4547c4968c192
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329670"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169037"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -30,7 +30,7 @@ Saiba como criar e atribuir políticas de proteção de aplicações do Microsof
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-As políticas de proteção de aplicações podem ser aplicadas às aplicações em execução nos dispositivos que podem ou não ser geridos pelo Intune. Para obter uma descrição mais detalhada acerca do funcionamento das políticas de proteção de aplicações e dos cenários suportados pelas políticas de proteção de aplicações do Intune, veja [O que são políticas de proteção de aplicações do Microsoft Intune?](app-protection-policy.md).
+As políticas de proteção de aplicações podem ser aplicadas às aplicações em execução nos dispositivos que podem ou não ser geridos pelo Intune. Para obter uma descrição mais detalhada acerca do funcionamento das políticas de proteção de aplicações e dos cenários suportados pelas políticas de proteção de aplicações do Intune, veja [O que são políticas de proteção de aplicações do Microsoft Intune?](app-protection-policy.md)
 
 Se estiver a procurar uma lista de MAM com aplicações suportadas, veja as [Listas de aplicações de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
@@ -56,24 +56,22 @@ Para obter mais informações sobre como adicionar as aplicações de linha de n
    Para começar, as definições de política têm valores predefinidos. Se os valores predefinidos cumprirem os seus requisitos, não precisa de fazer alterações.
 
    > [!TIP]
-   > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional. Quando os utilizadores finais utilizam a aplicação para realizar uma tarefa pessoal, estes não são afetados por estas políticas.
+   > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional. Quando os utilizadores finais utilizam a aplicação para realizar uma tarefa pessoal, estes não são afetados por estas políticas. Tenha em atenção que, ao criar um novo ficheiro, este é considerado um ficheiro pessoal. 
 
-7. Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**. Escolha **Criar** para criar a política e guardar as suas definições.
-8. Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**.
-9. Escolha **Criar** para criar a política e guardar as suas definições.
+7. Escolha **OK** para guardar esta configuração. Está agora novamente no painel **Adicionar uma política**.
+8. Escolha **Criar** para criar a política e guardar as suas definições.
 
 Quando acabar de criar uma política, conforme descrito no procedimento anterior, esta não é implementada para nenhum utilizador. Para implementar uma política, veja a secção [Implementar uma política para utilizadores](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar uma política para utilizadores
 
-
 1. No painel **Políticas de proteção de aplicações**, selecione uma política.
 
-1. No painel **Política**, selecione a opção **Atribuições**, que irá abrir o painel **Proteção de Aplicações do Intune – Atribuições**. Selecione **Selecionar grupos para incluir** no painel **Atribuições** para abrir o painel **Selecionar grupos para incluir**.
+2. No painel **Política**, selecione a opção **Atribuições**, que irá abrir o painel **Proteção de Aplicações do Intune – Atribuições**. Selecione **Selecionar grupos para incluir** no painel **Atribuições** para abrir o painel **Selecionar grupos para incluir**.
 
    ![Captura de ecrã do painel Atribuições, com a opção do menu Selecionar grupos para incluir realçada](./media/app-protection-policy-add-users.png)
 
-2.  É apresentada uma lista dos grupos de utilizadores no painel **Adicionar grupo de utilizadores**. Esta lista mostra todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, selecione **Selecionar**. Escolher **Selecionar** implementa a política para os utilizadores.
+3.  É apresentada uma lista dos grupos de utilizadores no painel **Adicionar grupo de utilizadores**. Esta lista mostra todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, selecione **Selecionar**. Escolher **Selecionar** implementa a política para os utilizadores.
 
     ![Captura de ecrã do painel Adicionar um grupo de utilizadores a mostrar a lista de utilizadores do Azure Active Directory](./media/azure-ad-user-group-list.png)
 
@@ -127,10 +125,12 @@ Uma vez que as políticas de proteção de aplicações do Intune são direciona
 
 Para criar estas políticas, navegue até **Aplicações do cliente** > **Políticas de proteção de aplicações** na consola do Intune e clique em **Adicionar uma política**. Também pode editar uma política de proteção de aplicações existente. Se quiser aplicar a política de proteção de aplicações a dispositivos geridos e não geridos, confirme que a opção **Direcionar para todos os tipos de aplicações** está definida como **Sim**, o valor predefinido. Se quiser atribuir especificamente com base no estado de gestão, defina a opção **Direcionar para todos os tipos de aplicações** para **Não**. 
 
-Para que as aplicações iOS sejam consideradas com o estado "Gerido", a definição da política de configuração **IntuneMAMUPN** tem de ser implementada em cada aplicação. Para obter mais informações, veja [Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+![Captura de ecrã do painel Adicionar uma política com a opção Direcionar para todos os tipos de aplicações selecionada](./media/app-protection-policies-target-all.png)
+
+Para que as aplicações iOS sejam consideradas com o estado "Gerido", a definição da política de configuração **IntuneMAMUPN** tem de ser implementada em cada aplicação. Para obter mais informações, veja [Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
-> Para obter informações de suporte específicas do iOS sobre as políticas de proteção de aplicações com base no estado de gestão dos dispositivos, veja [Políticas de proteção de MAM direcionadas com base no estado de gestão](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
+> Para obter informações de suporte específicas do iOS sobre as políticas de proteção de aplicações com base no estado de gestão dos dispositivos, veja [Políticas de proteção de MAM direcionadas com base no estado de gestão](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>Definições de política
 Para ver uma lista completa das definições de política para iOS e Android, selecione uma das seguintes ligações:
@@ -138,7 +138,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 - [Políticas para iOS](app-protection-policy-settings-ios.md)
 - [Políticas para Android](app-protection-policy-settings-android.md)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Monitorizar o estado do utilizador e de conformidade](app-protection-policies-monitor.md)
 
 ### <a name="see-also"></a>Consulte também

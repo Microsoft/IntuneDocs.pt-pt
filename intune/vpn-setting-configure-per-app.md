@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347479"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505772"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
@@ -171,7 +171,7 @@ A associação entre uma aplicação e um perfil continuará a existir até que 
 - A aplicação foi direcionada com a intenção "Instalação disponível".
 - O perfil e a aplicação foram direcionados para o mesmo grupo.
 - O utilizador final pediu a instalação da aplicação a partir do portal da empresa, o que faz com que a aplicação e o perfil sejam instalados no dispositivo.
-- Removeu a configuração da VPN por aplicação da atribuição de aplicações.
+- Removeu ou alterou a configuração da VPN por aplicação da atribuição de aplicações.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>Verificar a ligação no dispositivo iOS
 
@@ -184,7 +184,7 @@ Com a configuração de VPN por aplicação associada à sua aplicação, verifi
  - Certifique-se de que tem a aplicação VPN de terceiros suportada instalada. As seguintes aplicações VPN são suportadas:
     - Check Point Capsule Connect
     - Cisco AnyConnect
-    - VPN do Citrix
+    - Citrix VPN
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
@@ -219,7 +219,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para rever as definições do iOS, veja [VPN settings for iOS devices in Microsoft Intune (Definições de VPN para dispositivos iOS no Microsoft Intune)](vpn-settings-ios.md).
 -  Para saber mais sobre a definição de VPN e o Intune, veja [How to configure VPN settings in Microsoft Intune (Como configurar as definições de VPN no Microsoft Intune)](vpn-settings-configure.md).

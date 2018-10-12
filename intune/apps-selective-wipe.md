@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329550"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562753"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 
@@ -44,7 +44,7 @@ Para remover seletivamente os dados de aplicações da empresa, utilize os passo
 
     ![Captura de ecrã a mostrar o painel Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  No **painel Aplicações móveis**, selecione **Eliminação seletiva da aplicação**.
+3.  No **painel Aplicações cliente**, selecione **Eliminação seletiva da aplicação**.
 
 4.  Selecione **Novo pedido de eliminação**. É aberta a página **Novo pedido de eliminação**.
 
@@ -62,7 +62,7 @@ O serviço cria e controla um pedido de eliminação separado para cada aplicaç
 
 Pode obter um relatório resumido que mostra o estado geral do pedido de eliminação e inclui o número de pedidos pendentes e de falhas. Para obter mais detalhes, siga estes passos:
 
-1.  No painel **Aplicações Móveis – Eliminação seletiva da aplicação**, pode ver a lista dos pedidos agrupados por utilizadores. Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver múltiplos pedidos para um utilizador. O estado indica se um pedido de eliminação está **pendente**, **falhou** ou se teve **êxito**.
+1.  No painel **Aplicações Cliente – Eliminação seletiva da aplicação**, pode ver a lista dos pedidos agrupados por utilizadores. Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver múltiplos pedidos para um utilizador. O estado indica se um pedido de eliminação está **pendente**, **falhou** ou se teve **êxito**.
 
     ![Captura de ecrã do estado do pedido de eliminação no painel Eliminação seletiva de aplicações](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ Além disso, pode ver o nome do dispositivo e o respetivo tipo de dispositivo, o
 
 As eliminações em estado pendente são apresentadas até que as elimine manualmente. Para eliminar manualmente um pedido de eliminação:
 
-1.  No painel **Aplicações Móveis – Eliminação seletiva da aplicação**.
+1.  No painel **Aplicações Cliente – Eliminação seletiva da aplicação**.
 
 2.  Na lista, clique com o botão direito do rato no pedido de eliminação que pretende eliminar e, em seguida, selecione **Eliminar pedido de eliminação**.
 

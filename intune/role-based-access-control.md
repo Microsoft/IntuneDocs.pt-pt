@@ -2,8 +2,8 @@
 title: RBAC com o Microsoft Intune
 description: Saiba como o Controlo de Acesso Baseado em Funções (RBAC) lhe permite controlar quem efetua ações e alterações no Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253702"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028703"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -42,6 +42,7 @@ Com o novo portal do Azure, o **Azure Active Directory (Azure AD)** fornece dua
 
     > [!IMPORTANT]
     > A função Administrador de Serviço do Intune não permite gerir configurações de acesso condicional do Azure AD.
+    > Os membros de funções do Intune necessitam de uma licença do Intune.
 
     > [!TIP]
     > O Intune também mostra três extensões do Azure AD: **Utilizadores**, **Grupos** e **Acesso condicional** que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais detalhes, veja [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -62,7 +63,7 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 - **Operador Só de Leitura**: vê as informações do utilizador, do dispositivo, da inscrição, da configuração e da aplicação. Não pode fazer alterações ao Intune.
 - **Gestor de Aplicações**: gere aplicações móveis e geridas, pode ler as informações do dispositivo e ver os perfis de configuração do dispositivo.
 - **Administrador das Funções do Intune**: gere as funções do Intune personalizadas e adiciona atribuições para funções do Intune incorporadas. É a única função do Intune que pode atribuir permissões aos Administradores.
-- **Administrador de Escola**: gere os dispositivos Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
+- **Administrador de Escola**: gere os dispositivos com o Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
 
 |Permissão|Operação|
 |---|---|
