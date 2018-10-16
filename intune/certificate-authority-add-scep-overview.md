@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772c800e75f52d9826992bf0adfbfdcf3faba107
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: e088dbf4080cb6092ff506519b81438a0d5ce64c
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329985"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102111"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -124,6 +124,7 @@ As seguintes autoridades de certificação de terceiros suportam o Intune:
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [Versão open source do GitHub do EJBCA](https://github.com/agerbergt/intune-ejbca-connector)
+- [EverTrust](https://evertrust.fr/en/products/)
 
 Se for uma autoridade de certificação de terceiros interessada em integrar o seu produto com o Intune, reveja a documentação de orientação da API:
 
