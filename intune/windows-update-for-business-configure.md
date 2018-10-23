@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255243"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425160"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 
@@ -34,7 +34,7 @@ Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de g
   - Windows Insider Slow
   - Versão do Windows Insider 
       
-  Para obter detalhes sobre os canais de serviço disponíveis, veja [Overview for Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels) (Descrição Geral do Windows como um Serviço).
+  Para obter detalhes sobre os canais de serviço disponíveis, veja [Overview for Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (Descrição Geral do Windows como um Serviço).
 - **Definições de Diferimento**: configure as definições de diferimento das atualizações para atrasar as instalações de atualizações para grupos de dispositivos. Utilize estas definições para testar a sua implementação de atualizações faseada para que possa consultar o progresso ao longo do processo.
 - **Colocar em pausa**: adie a instalação de atualizações se detetar um problema em qualquer momento durante a implementação das atualizações.
 - **Janela de manutenção**: configure as horas nas quais as atualizações possam ser instaladas.
@@ -136,7 +136,7 @@ Pode ver a conformidade de atualizações no Intune ou através de uma solução
       - **Estado de utilizador**
 
 ### <a name="review-update-compliance-using-oms"></a>Rever a conformidade de atualizações com o OMS
-Pode monitorizar as implementações de atualizações do Windows 10 através de uma solução gratuita denominada Conformidade de Atualizações. Para obter mais detalhes, veja [Monitor Windows Updates with Update Compliance (Monitorizar Atualizações do Windows com a Conformidade de Atualizações)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando utiliza esta solução, pode implementar um ID comercial em qualquer um dos seus dispositivos com o Windows 10 geridos pelo Intune para os quais pretende gerar relatórios sobre a conformidade de atualizações.
+Pode monitorizar as implementações de atualizações do Windows 10 através de uma solução gratuita denominada Conformidade de Atualizações. Para obter mais detalhes, veja [Monitor Windows Updates with Update Compliance (Monitorizar Atualizações do Windows com a Compatibilidade da Atualização)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Quando utiliza esta solução, pode implementar um ID comercial em qualquer um dos seus dispositivos com o Windows 10 geridos pelo Intune para os quais pretende gerar relatórios sobre a compatibilidade da atualização.
 
 Na consola do Intune, pode utilizar as definições de OMA-URI de uma política personalizada para configurar o ID comercial. Para obter mais detalhes, veja [Definições de política do Intune para dispositivos com o Windows 10 no Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
