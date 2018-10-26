@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253770"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075851"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Enquanto administrador de TI, pode utilizar o Microsoft Intune para gerir as aplicações móveis utilizadas pela força de trabalho da sua empresa. Esta funcionalidade complementa a gestão de dispositivos e proteção de dados. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. Este objetivo pode ser um desafio porque:
+Enquanto administrador de TI, pode utilizar o Microsoft Intune para gerir as aplicações cliente utilizadas pela força de trabalho da sua empresa. Esta funcionalidade complementa a gestão de dispositivos e proteção de dados. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. Este objetivo pode ser um desafio porque:
 - Existe uma grande variedade de plataformas de dispositivos e de tipos de aplicações.
 - Poderá ter de gerir as aplicações nos dispositivos da empresa e nos dispositivos pessoais dos utilizadores.
 - Tem de garantir que a sua rede e os seus dados permanecem seguros.
@@ -68,7 +68,7 @@ Pode encontrar a maior parte das informações relacionadas com aplicações na 
     O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Microsoft Intune**, selecione **Aplicações do cliente**.
 
-    ![O painel de carga de trabalho “Aplicações móveis”](./media/apps-workload.png)
+    ![O painel da carga de trabalho "Aplicações do cliente"](./media/apps-workload.png)
 
 As próximas quatro secções descrevem as opções disponíveis no painel **Aplicações do cliente**.
 

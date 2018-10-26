@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347523"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903510"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -51,7 +51,7 @@ Ao atribuir uma aplicação comprada em volume a utilizadores, cada utilizador f
 
 Além disso, pode sincronizar, gerir e atribuir livros que tenha comprado na loja do Apple Volume Purchase Program (VPP) com o Intune. Para obter mais informações, veja [Como gerir eBooks do iOS comprados através de um programa de compra em volume](vpp-ebooks-ios.md).
 
-## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerir aplicações compradas em grandes volumes para dispositivos iOS
+## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerir aplicações compradas em volume para dispositivos iOS
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Suporta as aplicações compradas em volume do Apple Volume Purchase Program para dispositivos iOS
 
@@ -93,7 +93,8 @@ Certifique-se de que, ao configurar um dispositivo para um novo utilizador do In
         > Alterar o país irá atualizar o URL da loja e os metadados das aplicações na próxima sincronização com o serviço da Apple para aplicações criadas com este token. A aplicação não será atualizada se não existir na loja do novo país.
 
     - **Tipo de conta VPP** – Escolha entre **Empresas** ou **Educação**.
-    - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativado, o Intune deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este entra.
+    - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativado, o Intune deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este entra. As atualizações automáticas da aplicação para aplicações VPP da Apple irão atualizar automaticamente apenas as aplicações implementadas com intenção de instalação **Necessária**. Para aplicações implementadas com intenção de instalação **Disponível**, a atualização automática gera uma notificação para o utilizador (o administrador) informando-o de que está disponível uma versão nova da aplicação. O utilizador tem de clicar em instalar para instalar a versão mais recente da aplicação. Além disso, o utilizador irá ver que a aplicação está como não instalada no Portal da Empresa, mesmo que esteja instalada uma versão anterior da aplicação. Neste caso, o utilizador pode reinstalar a aplicação.
+    
         > [!NOTE]
         > As atualizações automáticas da aplicação funcionam em aplicações licenciadas para o dispositivo e o utilizador para o iOS Versão 11.0 e versões superiores.
 6. Quando tiver terminado, selecione **Criar**.
@@ -128,11 +129,11 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 | 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
 | 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
 | 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
-| 7 | Modo de quiosque (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
-| 8 | Modo de quiosque (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
+| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
+| 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
 
 > [!Note]  
-> Não é recomendável atribuir aplicações VPP a dispositivos no modo de quiosque com licenciamento de utilizadores do VPP.
+> Não é recomendável atribuir aplicações VPP a dispositivos no modo de local público com licenciamento de utilizadores do VPP.
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Revogar licenças de aplicações e eliminar tokens 
 
@@ -177,6 +178,6 @@ Sim. O administrador do Intune pode exceder as capacidades de subscrição de um
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>É verdade que o Intune sincroniza automaticamente as licenças de aplicação com a Apple todos os dias?
 O Intune sincroniza as licenças de aplicação com a Apple duas vezes por dia.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.

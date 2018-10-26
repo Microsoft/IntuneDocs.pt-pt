@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313501"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101958"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configurar as políticas de atualização de iOS no Microsoft Intune
 
@@ -23,7 +23,7 @@ As políticas de atualização de software permitem-lhe forçar os dispositivos 
 
 O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atualização estiver disponível num período de tempo não restringido, o dispositivo irá transferir e instalar a atualização de SO mais recente. Não é necessária nenhuma interação do utilizador para atualizar o dispositivo. A política não impede um utilizador de atualizar manualmente o SO.
 
-Esta funcionalidade suporta dispositivos com o iOS 10.3 ou posterior.
+Esta funcionalidade suporta dispositivos que executam o iOS 10.3 ou versões posteriores. A definição de atraso está disponível no iOS 11.3 e versões posteriores.
 
 ## <a name="configure-the-policy"></a>Configurar a política
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).

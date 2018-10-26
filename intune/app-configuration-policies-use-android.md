@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799585"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102043"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799585"
 Utilize políticas de configuração da aplicação no Microsoft Intune para disponibilizar definições para aplicações com perfil de trabalho do Android. O programador da aplicação tem de apresentar as definições de configuração de aplicações Android geridas para poder especificar as definições de configuração para a aplicação. Atribua a política de configuração de aplicações ao grupo de utilizadores para o qual pretende que as definições se apliquem.  As definições de política são utilizadas quando a aplicação as verificar, normalmente a primeira vez em que for executada.
 
 > [!Note]  
-> Nem todas as aplicações suportam a configuração de aplicações. Verifique junto do programador da aplicação para saber se este criou a aplicação de forma a suportar políticas de configuração da aplicação.
+> Nem todas as aplicações suportam a configuração de aplicações. Verifique junto do programador da aplicação para saber se este criou a aplicação de forma a suportar políticas de configuração da aplicação.<p></p>
+> Enquanto administrador do Microsoft Intune, pode controlar as contas de utilizadores que são adicionadas a aplicações do Microsoft Office em dispositivos geridos. Pode limitar o acesso exclusivamente a contas de utilizadores autorizadas e bloquear contas pessoais em dispositivos inscritos. As aplicações de apoio processam a configuração da aplicação e removem e bloqueiam contas não aprovadas.<p></p>
+> Para o Microsoft Word, Microsoft Excel, Microsoft PowerPoint, tem de utilizar o Android 16.0.9327.1000 e posterior.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
@@ -69,6 +71,16 @@ Pode escolher as seguintes opções, se selecionar a variável como o tipo de va
 - ID de Utilizador – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
 - Nome de Utilizador – por exemplo, **John Doe**
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
+
+Para os dispositivos Android, utilize os seguintes pares chave/valor:
+
+| **Chave** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Valores** | <ul><li>Um ou mais UPNs delimitados por <code>;</code>.</li><li>Apenas conta(s) permitidas são as contas de utilizador geridas definidas por esta chave.</li><li> Para os dispositivos inscritos no Intune, o token <code>{{userprincipalname}}</code> pode ser utilizado para representar a conta de utilizador inscrito.</li></ul> |
+
+   > [!NOTE]
+   > Tem de utilizar o Outlook para Android 2.2.222 ou posterior ao permitir apenas contas de organização configuradas com multi-identidade. 
 
 ## <a name="enter-the-json-editor"></a>Entrar no editor de JSON
 

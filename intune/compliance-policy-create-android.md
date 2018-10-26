@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ed2dcda510c455be1ad532228bfbcbeb898d971a
+ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906197"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891034"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
@@ -98,7 +98,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 - **Tipo de palavra-passe necessária**: selecione se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
-  - **Predefinição do Dispositivo**
+  - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
   - **Pelo menos numérica**
   - **Complexo numérico**: os números repetidos ou consecutivos (como "1111" ou "1234") não são permitidos.
