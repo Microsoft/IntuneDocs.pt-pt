@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 85dd6d0bcc4acc7864998976955e46ff7c72c990
-ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
+ms.openlocfilehash: ce977e295df3b5fa48c38b3c2e0d23035cc2f2d1
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36943648"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863132"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
 
@@ -241,7 +241,7 @@ Numa linha de comandos elevada, execute um dos seguintes comandos.
     wmic product where name="Windows Intune" call uninstall
 
 > [!TIP]
-> A anulação da inscrição do cliente irá gerar um registo obsoleto em separado para o cliente afetado. A anulação da inscrição é um processo assíncrono e existem nove agentes a desinstalar, pelo que poderá demorar até 30 minutos a ser concluída.
+> A anulação da inscrição do cliente irá gerar um registo obsoleto no lado do servidor relativamente ao cliente afetado. A anulação da inscrição é um processo assíncrono e existem nove agentes a desinstalar, pelo que poderá demorar até 30 minutos a ser concluída.
 
 ### <a name="check-the-unenrollment-status"></a>Verificar o estado da anulação da inscrição
 
