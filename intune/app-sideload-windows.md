@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058902"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425228"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -77,7 +77,7 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows, inclui
 
     -   WinPhoneCompanyPortal.ps1 – um script do PowerShell que pode utilizar para assinar o ficheiro de aplicação Portal da Empresa, para que possa ser implementado em dispositivos Windows Phone 8.1
 
-    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Microsoft para Empresas](http://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazê-lo com o Intune, veja [Manage apps you purchased from the Microsoft Store for Business (Gerir aplicações compradas na Loja Microsoft para Empresas)](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Microsoft para Empresas](http://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazê-lo com o Intune, veja [Manage apps you purchased from the Microsoft Store for Business (Gerir aplicações compradas na Loja Microsoft para Empresas)](windows-store-for-business.md).
 
 2.  **Transferir o Windows Phone SDK** Transfira o Windows Phone SDK 8.0 http://go.microsoft.com/fwlink/?LinkId=615570)) e instale o SDK no seu computador. Este SDK é necessário para gerar um token de inscrição de aplicações.
 
@@ -119,7 +119,7 @@ Pode implementar a aplicação Portal da Empresa em dispositivos Windows, inclui
 
     -   `-EnterpriseId` – O ID empresarial. O argumento ou o "AetxPath" têm de ser fornecidos. Se este argumento não for fornecido, o ID empresarial é lido a partir do ficheiro AETX. For example, 1000000001
 
-6.  Implemente a aplicação Portal da Empresa do Windows Phone 8.1 (SSP.appx). Para obter orientações, veja [Como adicionar aplicações de linha de negócio (LOB) Windows Phone](lob-apps-windows-phone.md) ([portal clássico](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Implemente a aplicação Portal da Empresa do Windows Phone 8.1 (SSP.appx). Para obter orientações, veja [Como adicionar aplicações de linha de negócio (LOB) Windows Phone](lob-apps-windows-phone.md).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Como renovar o certificado empresarial de assinatura com código da Symantec
 

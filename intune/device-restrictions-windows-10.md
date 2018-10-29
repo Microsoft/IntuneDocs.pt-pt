@@ -12,17 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652160"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Definições de restrição de dispositivos com o Windows 10 (e mais recentes) no Intune
 Este artigo mostra-lhe todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o Windows 10.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!Note]
+> Nem todas as opções estão disponíveis em todas as edições do Windows
 
 ## <a name="general"></a>Geral
 - **Captura de ecrã (apenas dispositivos móveis)** – permite que o utilizador faça uma captura do ecrã do dispositivo como uma imagem.
@@ -71,7 +74,7 @@ Para dispositivos com o Windows 10 Mobile: após o início de sessão falhar o n
 
 ## <a name="privacy"></a>Privacidade
 
--   **Personalização de entrada** – não permite a utilização de serviços de fala baseados na cloud para a Cortana, o ditado ou aplicações da Microsoft Store. Se permitir estes serviços, a Microsoft recolherá os dados de voz para melhorar o serviço.
+-   **Personalização de entrada** – não permite a utilização de serviços de fala baseados na cloud para a Cortana, o ditado ou aplicações da Loja Microsoft. Se permitir estes serviços, a Microsoft recolherá os dados de voz para melhorar o serviço.
 -   **Aceitação automática de pedidos de consentimento do utilizador de emparelhamento e privacidade** – permite que o Windows aceite automaticamente as mensagens de consentimento de emparelhamento e privacidade ao executar as aplicações.
 - **Publicar as atividades do utilizador**: defina esta opção para **Bloquear** para impedir que as experiências e a deteção de recursos utilizados recentemente sejam partilhadas no comutador de tarefas.
 - **Apenas atividades locais**: defina esta opção para **Bloquear** para impedir que as experiências e a deteção de recursos utilizados recentemente sejam partilhadas no comutador de tarefas com base na atividade local.
@@ -139,12 +142,12 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 ## <a name="app-store"></a>App Store
 
 -   **App Store (apenas dispositivos móveis)** – Permita ou bloqueie a utilização da loja de aplicações em dispositivos Windows 10 Mobile.
--   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Microsoft Store sejam atualizadas automaticamente.
+-   **Atualização automática de aplicações a partir da loja** – permite que as aplicações instaladas a partir da Loja Microsoft sejam atualizadas automaticamente.
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
 -   **Dados da aplicação do utilizador partilhados** – permite que as aplicações partilhem dados entre os diferentes utilizadores no mesmo dispositivo.
 -   **Utilizar apenas loja privada** – ative esta opção para permitir que apenas os utilizadores finais transfiram aplicações a partir da loja privada.
--   **Lançamento de aplicação originado pela loja** – utilizado para desativar todas as aplicações que foram previamente instaladas no dispositivo ou transferidas a partir da Microsoft Store.
+-   **Lançamento de aplicação originado pela loja** – utilizado para desativar todas as aplicações que foram previamente instaladas no dispositivo ou transferidas a partir da Loja Microsoft.
 -   **Instalar dados da aplicação no volume de sistema** – impede que as aplicações armazenem dados no volume do sistema do dispositivo.
 -   **Instalar dados da aplicação na unidade do sistema** – impede que as aplicações armazenem dados na unidade do sistema do dispositivo.
 -   **Gravador de Jogo (apenas no ambiente de trabalho)** – configura se a gravação e a difusão de jogos são permitidas.
@@ -259,7 +262,7 @@ Normalmente, um dispositivo de quiosque executa uma aplicação ou um conjunto e
 
 - **Modo de quiosque** – identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
 
-  - **Não Configurado** (predefinição) – a política não ativa um modo de quiosque. 
+  - **Não Configurado** (predefinição) – a política não ativa um modo de local público. 
   - **Quiosque de uma aplicação** – o perfil permite que o dispositivo execute apenas uma aplicação. Quando um utilizador inicia sessão, uma aplicação específica é iniciada. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
   - **Quiosque de várias aplicações** – o perfil permite que o dispositivo execute múltiplas aplicações. Apenas as aplicações que adicionar estão disponíveis para o utilizador. A vantagem de um quiosque de várias aplicações ou dispositivos de objetivo fixo, é o facto de proporcionar uma experiência fácil de compreender pelos utilizadores através do acesso às aplicações de que precisam e de remover as aplicações de que não precisam da respetiva vista.
 
@@ -400,3 +403,6 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 - **Sincronização de mensagens (apenas dispositivos móveis)** – desative as Mensagens em Qualquer Lugar e as cópias de segurança e o restauro das mensagens de texto.
 - **MMS (apenas dispositivos móveis)** – desative a funcionalidade de envio/receção de MMS no dispositivo.
 - **RCS (apenas dispositivos móveis)** – desative a funcionalidade de envio/receção de RCS (Rich Communication Services) no dispositivo.
+
+## <a name="more-information"></a>Mais Informações
+Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja a [Referência de CSP de Políticas do Windows 10](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)

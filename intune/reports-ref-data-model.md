@@ -15,12 +15,12 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3ba8caa74b673127a17a431d5b821d52f9767c49
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 5680e0c53a9decfa5b172e08c04fbfe4025f2d7c
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727463"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642889"
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados
 
@@ -61,6 +61,6 @@ O armazém fica a jusante dos dados do Intune. O Intune cria um instantâneo di�
 
 ## <a name="next-steps"></a>Próximos passos
 
- - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [User lifetime representation in the Intune Data Warehouse (Representação da duração do utilizador no Armazém de Dados do Intune)](reports-ref-user-timeline.md).
- - Para saber mais sobre como trabalhar com armazéns de dados, veja [Create First Data WareHouse (Criar Primeiro Armazém de Dados)](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+ - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).
+ - Para saber mais sobre trabalhar com armazéns de dados, veja [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Criar Primeiro Armazém de Dados).
  - Para saber mais sobre como trabalhar com o Power BI e um armazém de dados, veja [Create a new Power BI report by importing a dataset (Criar um novo relatório do Power BI através da importação de um conjunto de dados)](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

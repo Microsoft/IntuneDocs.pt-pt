@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2a244337b152af7bcf8bf17cf7e643bdb3faa59
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 183518caed7276719204830a38b1b9d552a79428
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231462"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642892"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrar o Windows Hello para Empresas com o Microsoft Intune
 
@@ -52,7 +52,7 @@ Utilize este artigo para criar uma política do Windows Hello para Empresas pred
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Criar uma política do Windows Hello para Empresas
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
+1. No [portal do Azure](https://portal.azure.com), escolha **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
 
 2. No painel Intune, selecione **Inscrição de dispositivos** e, em seguida, selecione **Inscrição no Windows** > **Windows Hello para Empresas**.
 

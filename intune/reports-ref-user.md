@@ -15,12 +15,12 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6161540b4b05ebab35942a1657adc30bce6afdb
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 1ce1d429b830ac6f494346697bd7e44ac250d9b6
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727480"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642963"
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de utilizador
 
@@ -48,4 +48,4 @@ A coleção de entidades **Utilizador** contém dados do utilizador. Estes regis
 
 ## <a name="next-steps"></a>Próximos passos
  - Pode utilizar a coleção de entidades **Utilizador Atual** para limitar os dados do utilizador aos utilizadores que estão atualmente ativos. Para obter mais informações, veja [Referência para a entidade do utilizador atual](reports-ref-current-user.md).
- - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [User lifetime representation in the Intune Data Warehouse (Representação da duração do utilizador no Armazém de Dados do Intune)](reports-ref-user-timeline.md).
+ - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).

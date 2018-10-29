@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 654c9af4d72ca5d07a9852ba4a653d9404ea16d2
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43314028"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642928"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis celulares eSIM no Intune – pré-visualização pública
 
@@ -192,5 +192,5 @@ O perfil eSIM também será removido quando o dispositivo for [extinto](devices-
   - **File format not proper (Formato de ficheiro não adequado)**: veja o **Passo 1: adicionar códigos de ativação celulares** (neste artigo) para saber como pode formatar corretamente o seu ficheiro.
   - **Cellular activation failure, contact mobile operator (Falha na ativação celular, contacte a operadora de rede móvel)**: o código de ativação poderá não estar ativado na rede. Também é possível que a ativação celular e a transferência do perfil tenham falhado.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Configurar perfis de dispositivo](device-profiles.md)
