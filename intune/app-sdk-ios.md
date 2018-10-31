@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 4b7a759b574b44a07499597e89627f70b99e5496
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866427"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643098"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -144,7 +144,9 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
 
 5. Inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Não se esqueça de guardar as alterações antes de prosseguir para o passo seguinte.
 
-6. Utilize a ferramenta IntuneMAMConfigurator, incluída no [repositório do SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios), para concluir a configuração do ficheiro Info.plist da aplicação. A ferramenta tem três parâmetros:
+6. Se a sua aplicação ainda não utilizar o FaceID, garanta que a [chave Info.plist NSFaceIDUsageDescription](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) está configurada com uma mensagem predefinida. Isto é necessário para que o iOS possa informar o utilizador sobre como é que a aplicação pretende utilizar o FaceID. Uma definição de política de proteção de aplicações do Intune permite que o FaceID seja utilizado como um método para aceder a aplicações quando configurado pelo administrador de TI.
+
+7. Utilize a ferramenta IntuneMAMConfigurator, incluída no [repositório do SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios), para concluir a configuração do ficheiro Info.plist da aplicação. A ferramenta tem três parâmetros:
 
    |Propriedade|Como a utilizar|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
    |- o |  (Opcional) `<Path to the output plist>` |
 
 Se o parâmetro “-o” não for especificado, o ficheiro de entrada será modificado no local. A ferramenta é idempotent e deve ser executada novamente sempre que forem feitas alterações ao ficheiro Info.plist da aplicações ou tenham sido criadas elegibilidades. Deverá também transferir e executar a versão mais recente da ferramenta ao atualizar o SDK do Intune, caso os requisitos de configuração do ficheiro Info.plist tenham sido alterados na versão mais recente.
-
-> [!NOTE]
-> Se a sua aplicação ainda não utilizar o FaceID, certifique-se de que a chave info.plist `NSFaceIDUsageDescription` está configurada com uma mensagem predefinida. Isto é necessário para que o iOS possa informar o utilizador sobre como é que a aplicação pretende utilizar o FaceID. Uma definição de política de proteção de aplicações do Intune permite que o FaceID seja utilizado como um método para aceder a aplicações quando configurado pelo administrador de TI.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar a Azure Active Directory Authentication Library (ADAL)
 

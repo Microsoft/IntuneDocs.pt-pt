@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102060"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391574"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -151,7 +151,7 @@ Para dispositivos que estejam em conformidade com as regras da política, poder�
 Também pode utilizar as políticas de conformidade de dispositivos sem acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que têm jailbreak ou root. Quando utilizar políticas de conformidade sem acesso condicional, não existem restrições de acesso aos recursos da empresa.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar as políticas de conformidade de dispositivos
-Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, todos os dispositivos do utilizador são verificados relativamente à conformidade.
+Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, todos os dispositivos do utilizador são verificados relativamente à conformidade. No Windows 10 versão 1803 e dispositivos mais recentes, é recomendado implementar para grupos de dispositivos *se* o utilizador primário não tiver inscrito o dispositivo. Utilizar grupos de dispositivos neste cenário ajuda com os relatórios de conformidade.
 
 As **Definições de política de conformidade** pré-definidas (Portal do Azure > Conformidade de dispositivo) incluem:
 

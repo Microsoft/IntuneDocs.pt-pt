@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: f41c228e7b5dd4084e7ebb2fab1148913b76880f
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102043"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642955"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -31,7 +31,7 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 > [!Note]  
 > Nem todas as aplicações suportam a configuração de aplicações. Verifique junto do programador da aplicação para saber se este criou a aplicação de forma a suportar políticas de configuração da aplicação.<p></p>
 > Enquanto administrador do Microsoft Intune, pode controlar as contas de utilizadores que são adicionadas a aplicações do Microsoft Office em dispositivos geridos. Pode limitar o acesso exclusivamente a contas de utilizadores autorizadas e bloquear contas pessoais em dispositivos inscritos. As aplicações de apoio processam a configuração da aplicação e removem e bloqueiam contas não aprovadas.<p></p>
-> Para o Microsoft Word, Microsoft Excel, Microsoft PowerPoint, tem de utilizar o Android 16.0.9327.1000 e posterior.
+> Para o Microsoft Word, Microsoft Excel, Microsoft PowerPoint, tem de utilizar a versão da aplicação 16.0.9327.1000 e posterior.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
