@@ -31,12 +31,20 @@ items:
     href: quickstart-create-group.md
   - name: Criar uma política
     href: quickstart-create-policy.md
+  - name: Set device password length (Definir o comprimento da palavra-passe de dispositivos)
+    href: quickstart-set-password-length-android.md
   - name: Configurar a inscrição automática
     href: quickstart-setup-auto-enrollment.md
   - name: Criar e atribuir uma função personalizada
     href: quickstart-create-custom-role.md
   - name: Criar um perfil de dispositivo de e-mail
     href: quickstart-email-profile.md
+- name: Tutoriais
+  items:
+  - name: Protect email on managed devices (Proteger o e-mail em dispositivos geridos)
+    href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Use Autopilot to enroll Windows devices (Utilizar o Autopilot para inscrever dispositivos Windows)
+    href: tutorial-use-autopilot-enroll-devices.md
 - name: Guias de implementação de cenários
   items:
   - name: Proteger o Exchange Online
@@ -204,6 +212,8 @@ items:
         href: device-enrollment-program-enroll-macos.md
     - name: Instalar o software de cliente do Intune em PCs Windows
       href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Abandonment report (Relatório de abandono)
+      href: enrollment-report-company-portal-abandon.md
     - name: Resolver problemas de inscrição de dispositivos
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Efetue a gestão dos dispositivos
@@ -237,6 +247,8 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Reposição do PIN do Windows 10
       href: device-windows-pin-reset.md
+    - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
+      href: exchange-service-connector-configure.md
     - name: Sincronizar o dispositivo
       href: device-sync.md
     - name: Examinar o inventário de dispositivos
@@ -384,7 +396,7 @@ items:
         href: device-restrictions-ios.md
       - name: macOS
         href: device-restrictions-macos.md
-      - name: Windows 8.1
+      - name: Windows 8.1
         href: device-restrictions-windows-8-1.md
       - name: Windows Phone 8.1
         href: device-restrictions-windows-phone-8-1.md
@@ -431,7 +443,7 @@ items:
         href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
-      - name: Windows 8.1
+      - name: Windows 8.1
         href: vpn-settings-windows-8-1.md
       - name: Windows Phone 8.1
         href: vpn-settings-windows-phone-8-1.md
@@ -442,13 +454,15 @@ items:
       items:
       - name: Android
         href: wi-fi-settings-android.md
+      - name: Android Enterprise & kiosk (Android Enterprise e modo de local público do Android)
+        href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
       - name: macOS
         href: wi-fi-settings-macos.md
       - name: Windows 10
         href: wi-fi-settings-windows.md
-      - name: Windows 8.1
+      - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
     - name: Configure eSIM cellular profiles (Configurar perfis celulares eSIM)
       href: esim-device-configuration.md
@@ -475,6 +489,8 @@ items:
         href: certificate-authority-add-scep-overview.md
       - name: Serviço Web Symantec PKI Manager
         href: certificates-symantec-configure.md
+      - name: Remove SCEP or PKCS certificates (Remover certificados SCEP ou PKCS)
+        href: remove-certificates.md
     - name: Configurar as definições do Windows Information Protection
       href: windows-information-protection-configure.md
     - name: Gerir Scripts do PowerShell
@@ -517,8 +533,6 @@ items:
       href: conditional-access-intune-common-ways-use.md
     - name: Instalar o conector do Exchange no local
       href: exchange-connector-install.md
-    - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
-      href: exchange-service-connector-configure.md
     - name: Criar e atribuir a política de acesso condicional
       href: conditional-access-exchange-create.md
     - name: Reatribuir políticas de acesso condicional a partir do portal clássico do Intune
@@ -617,41 +631,6 @@ items:
     href: manage-os-versions.md
   - name: Gerir atualizações de software
     href: windows-update-for-business-configure.md
-  - name: Gerir PCs com o agente de software
-    href: manage-windows-pcs-with-microsoft-intune.md
-    items:
-    - name: Comparar a gestão de PCs
-      href: pc-management-comparison.md
-    - name: Instalar o cliente de PC
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Tarefas de gestão comuns do PC
-      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-      items:
-      - name: Políticas de PCs
-        href: use-policies-to-simplify-windows-pc-management.md
-      - name: Ver inventário
-        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-      - name: Extinguir PCs
-        href: retire-a-windows-pc-with-microsoft-intune.md
-      - name: Associar PCs a utilizadores
-        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-      - name: Assistência remota
-        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-    - name: Políticas para proteger PCs Windows
-      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-      items:
-      - name: Atualizações de software
-        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-      - name: Firewall do Windows
-        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-      - name: Endpoint Protection
-        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-    - name: Adicionar aplicações a PCs do cliente Intune
-      href: add-apps-for-windows-pcs-in-microsoft-intune.md
-    - name: Gerir contratos de licença
-      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-    - name: Resolver conflitos de políticas
-      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Gerir Windows Holographic
     href: windows-holographic-for-business.md
     items:
@@ -694,18 +673,18 @@ items:
           href: android-pulse-secure-per-app-vpn.md
         - name: Permitir/bloquear aplicações no Samsung Knox Standard
           href: samsung-knox-apps-allow-block.md
+      - name: Android Enterprise
+        href: custom-settings-android-for-work.md
       - name: iOS
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android Enterprise
-        href: custom-settings-android-for-work.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
 - name: Orientação para programadores
   items:
   - name: API para adicionar uma autoridade de certificação de terceiros
@@ -783,7 +762,7 @@ items:
   items:
   - name: Guia de documentação do Microsoft Intune
     href: intune-documentation.md
-  - name: Resolver Problemas
+  - name: Resolver problemas
     items:
     - name: Ajudar os utilizadores a resolver problemas
       href: help-desk-operators.md
@@ -821,11 +800,46 @@ items:
       href: groups-get-started.md
     - name: Cliente de PC legado do Intune
       href: intune-legacy-pc-client.md
+    - name: Gerir PCs com o agente de software
+      href: manage-windows-pcs-with-microsoft-intune.md
+      items:
+      - name: Comparar a gestão de PCs
+        href: pc-management-comparison.md
+      - name: Instalar o cliente de PC
+        href: install-the-windows-pc-client-with-microsoft-intune.md
+      - name: Tarefas de gestão comuns do PC
+        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+        items:
+        - name: Políticas de PCs
+          href: use-policies-to-simplify-windows-pc-management.md
+        - name: Ver inventário
+          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+        - name: Extinguir PCs
+          href: retire-a-windows-pc-with-microsoft-intune.md
+        - name: Associar PCs a utilizadores
+          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+        - name: Assistência remota
+          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+      - name: Políticas para proteger PCs Windows
+        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+        items:
+        - name: Atualizações de software
+          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+        - name: Firewall do Windows
+          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+        - name: Endpoint Protection
+          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: Adicionar aplicações a PCs do cliente Intune
+        href: add-apps-for-windows-pcs-in-microsoft-intune.md
+      - name: Gerir contratos de licença
+        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+      - name: Resolver conflitos de políticas
+        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossário
     href: intune-glossary.md
-ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: df67b7a497eac9e50a4f9e440a209857e210be09
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828062"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236701"
