@@ -182,6 +182,8 @@ items:
         href: windows-enrollment-status.md
       - name: Programa Windows AutoPilot Deployment
         href: enrollment-autopilot.md
+      - name: Hybrid Active Directory with Autopilot (Active Directory Híbrido com Autopilot)
+        href: windows-autopilot-hybrid.md
     - name: Configurar inscrição do Android
       items:
       - name: Configurar inscrição do Android
@@ -396,7 +398,7 @@ items:
         href: device-restrictions-ios.md
       - name: macOS
         href: device-restrictions-macos.md
-      - name: Windows 8.1
+      - name: Windows 8.1
         href: device-restrictions-windows-8-1.md
       - name: Windows Phone 8.1
         href: device-restrictions-windows-phone-8-1.md
@@ -443,7 +445,7 @@ items:
         href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
-      - name: Windows 8.1
+      - name: Windows 8.1
         href: vpn-settings-windows-8-1.md
       - name: Windows Phone 8.1
         href: vpn-settings-windows-phone-8-1.md
@@ -462,7 +464,7 @@ items:
         href: wi-fi-settings-macos.md
       - name: Windows 10
         href: wi-fi-settings-windows.md
-      - name: Windows 8.1
+      - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
     - name: Configure eSIM cellular profiles (Configurar perfis celulares eSIM)
       href: esim-device-configuration.md
@@ -762,7 +764,7 @@ items:
   items:
   - name: Guia de documentação do Microsoft Intune
     href: intune-documentation.md
-  - name: Resolver problemas
+  - name: Resolver Problemas
     items:
     - name: Ajudar os utilizadores a resolver problemas
       href: help-desk-operators.md
@@ -837,9 +839,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossário
     href: intune-glossary.md
-ms.openlocfilehash: df67b7a497eac9e50a4f9e440a209857e210be09
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 58768bc109a5c0e079779959a7d176565582a138
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236701"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971436"
