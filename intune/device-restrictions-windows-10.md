@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679394"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Definições de restrição de dispositivos com o Windows 10 (e mais recentes) no Intune
 Este artigo mostra-lhe todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos a executar o Windows 10.
@@ -405,4 +405,4 @@ Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá rem
 - **RCS (apenas dispositivos móveis)** – desative a funcionalidade de envio/receção de RCS (Rich Communication Services) no dispositivo.
 
 ## <a name="more-information"></a>Mais Informações
-Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja a [Referência de CSP de Políticas do Windows 10](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja a [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) (Referência de CSP de Políticas do Windows 10)

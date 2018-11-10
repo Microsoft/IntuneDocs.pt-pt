@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,22 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed2dcda510c455be1ad532228bfbcbeb898d971a
-ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
+ms.openlocfilehash: 1108a208a324b5ed4c46248dc986dcf08e6293fe
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48891034"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236548"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Uma política de conformidade de dispositivos do Intune para Android especifica as regras e definições que os dispositivos Android têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com [acesso condicional](conditional-access.md) para permitir ou bloquear o acesso a recursos da organização. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. 
 
-Uma política de conformidade de dispositivos do Intune para Android especifica as regras e definições que os dispositivos Android têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com acesso condicional para permitir ou bloquear o acesso a recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. Pode criar políticas de conformidade de dispositivos para cada plataforma no portal do Azure no Intune. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+
+Este tópico indica as definições que pode utilizar numa política de conformidade para dispositivos Android.
+
+## <a name="non-compliance-and-conditional-access"></a>Não conformidade e acesso condicional
 
 A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
@@ -35,7 +39,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 | --- | ----|
 | **Configuração do PIN ou da palavra-passe** |  Em quarentena |
 | **Encriptação do dispositivo** | Em quarentena |
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Em quarentena (não é uma definição) |
+| **Dispositivo com jailbreak ou rooting** | Em quarentena (não é uma definição) |
 | **perfil de e-mail** | Não aplicável |
 | **Versão mínima do SO** | Em quarentena |
 | **Versão máxima do SO** |   Em quarentena |
@@ -43,106 +47,124 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 --------------------------
 
-**Remediado** = O sistema operativo do dispositivo impõe a conformidade. (Por exemplo, forçar o utilizador a definir um PIN.)
+**Remediado** = O sistema operativo do dispositivo impõe a conformidade. Por exemplo, forçar o utilizador a definir um PIN.
 
-**Em Quarentena** = O sistema operativo do dispositivo não impõe a conformidade. (Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo.) Quando o dispositivo não é conforme, são efetuadas as seguintes ações:
+**Em Quarentena** = O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são efetuadas as seguintes ações:
 
-- O dispositivo é bloqueado se uma política de acesso condicional se aplicar ao utilizador.
-- O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
+  - O dispositivo é bloqueado se uma política de acesso condicional se aplicar ao utilizador.
+  - O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
 
 ## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade de dispositivo
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Em **Plataforma**, selecione **Android**. Escolha **Configurar Definições**, aceda às definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando terminar, selecione **OK** e **Criar**.
+4. Em **Plataforma**, selecione **Android**. 
+5. Selecione **Configurar Definições**. Introduza as definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**, conforme descrito neste artigo.
 
-<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
-5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
-7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
-8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.--->
+## <a name="device-health"></a>Estado de funcionamento do dispositivo
 
-<!---##  Compliance policy settings--->
-
-## <a name="device-health"></a>Device health
-
-- **Dispositivos com jailbreak**: se ativar esta definição, os dispositivos com jailbreak serão avaliados como não conformes.
-- **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição de conformidade. Selecione o nível de ameaça máximo permitido:
+- **Dispositivos com rooting**: selecione **Bloquear** para marcar dispositivos com rooting (com jailbreak) como não conformes. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição de conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
   - **Protegido**: esta opção é a mais segura, uma vez que o dispositivo não pode ter qualquer ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
   - **Baixo**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: o dispositivo será avaliado como estando em conformidade se as ameaças existentes forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
   - **Elevado**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
-- **Os Serviços Google Play estão configurados**: solicite que a aplicação de Serviços do Google Play esteja instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados.
-- **Fornecedor de segurança atualizado**: solicite que um fornecedor de segurança atualizado proteja um dispositivo contra vulnerabilidades conhecidas.
-- **Análise de ameaças nas aplicações**: exija que a funcionalidade **Verificar Aplicações** do Android esteja ativada.
+- **Os Serviços do Google Play estão configurados**: **exige** que a aplicação de Serviços do Google Play esteja instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Fornecedor de segurança atualizado**: **exige** que um fornecedor de segurança atualizado proteja um dispositivo contra vulnerabilidades conhecidas. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Análise de ameaça nas aplicações**: **exige** que a funcionalidade **Verificar Aplicações** do Android esteja ativada. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 
   > [!NOTE]
-  > Na plataforma Android legada, esta funcionalidade é uma definição de conformidade. O Intune só consegue verificar se esta definição está ativada ao nível do dispositivo. Em dispositivos com perfis de trabalho do Android, esta definição encontra-se como uma definição de política de configuração. permitindo que os administradores ativem a definição para um dispositivo.
-
-  Se a sua empresa utilizar perfis de trabalho do Android, poderá ativar a **Análise de ameaças nas aplicações** para os dispositivos inscritos. Estabeleça um perfil de dispositivo e solicite a definição de segurança do sistema. Para obter mais informações, veja [Definições de restrição de dispositivos de perfil de trabalho Android no Intune](device-restrictions-android-for-work.md).
+  > Na plataforma Android legada, esta funcionalidade é uma definição de conformidade. O Intune só consegue verificar se esta definição está ativada ao nível do dispositivo.
 
 - **Atestado de dispositivo SafetyNet**: introduza o nível de [Atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que tem de ser cumprido. As opções são:
-  - **Não configurado**
+  - **Não configurado** (predefinição): a definição não é avaliada quanto à conformidade ou não conformidade.
   - **Verificação de integridade básica**
   - **Verificação de integridade básica e de dispositivos certificados**
 
 ## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
 - **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
-- **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
+- **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. Até uma regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 
 ### <a name="password"></a>Palavra-passe
 
-- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
+- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
-- **Tipo de palavra-passe necessária**: selecione se uma palavra-passe deve ter apenas carateres numéricos ou se deve existir uma combinação de números e de outros carateres. Escolha entre:
+- **Tipo de palavra-passe necessária**: escolha se uma palavra-passe deve incluir apenas carateres numéricos ou uma combinação de números e de outros carateres. As opções são:
   - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
-  - **Pelo menos numérica**
-  - **Complexo numérico**: os números repetidos ou consecutivos (como "1111" ou "1234") não são permitidos.
-  - **Pelo menos alfabética**
+  - **Pelo menos, numérico** (predefinição)
+  - **Complexo numérico**: os números repetidos ou consecutivos, tal como `1111` ou `1234`, não são permitidos.
+  - **Pelo menos alfabética** 
   - **Pelo menos alfanumérica**
   - **Pelo menos alfanumérica com símbolos**
-- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
+
+- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e de o utilizador ter de criar uma nova.
 - **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe recentes que não podem ser utilizadas. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
 
 ### <a name="encryption"></a>Encriptação
 
-- **Encriptação do armazenamento de dados num dispositivo** (Android 4.0 e superior ou KNOX 4.0 e superior): escolha **Exigir** a encriptação do armazenamento de dados nos dispositivos. Os dispositivos são encriptados quando seleciona a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**.
+- **Encriptação do armazenamento de dados num dispositivo** (Android 4.0 e superior ou KNOX 4.0 e superior): escolha **Exigir** a encriptação do armazenamento de dados nos dispositivos. Os dispositivos são encriptados quando seleciona a definição **Palavra-passe obrigatória para desbloquear os dispositivos móveis**. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 
 ### <a name="device-security"></a>Segurança do Dispositivo
 
-- **Bloquear aplicações de origens desconhecidas**: opte por bloquear os dispositivos que tenham a opção “Segurança > Origens Desconhecidas” ativada (Android 4.0 – Android 7.x. Não suportada pelo Android 8.0 e posterior). Para aplicações de sideload, as origens desconhecidas têm de ser permitidas. Se não tiver aplicações Android de sideload, ative esta política de conformidade.
+- **Bloquear aplicações de origens desconhecidas**: opte por **bloquear** os dispositivos que tenham a opção "Segurança > Origens Desconhecidas" ativada (Suportado pelo Android 4.0 – Android 7.X. Não suportado pelo Android 8.0 e posterior). Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+
+  Para aplicações de sideload, as origens desconhecidas têm de ser permitidas. Se não tiver aplicações Android de sideload, defina esta funcionalidade como **Bloquear** para ativar esta política de conformidade. 
 
   > [!IMPORTANT]
   > As aplicações de sideload requerem a ativação da definição **Bloquear aplicações de origens desconhecidas**. Aplique esta política de conformidade apenas se não tiver aplicações Android de sideload nos dispositivos.
 
-- **Integridade de tempo de execução de aplicações do portal da empresa**: verifica se a aplicação do Portal da Empresa tem o ambiente do tempo de execução predefinido instalado, se está assinada corretamente, se não se encontra no modo de depuração e se foi instalada a partir de uma origem conhecida.
-- **Bloquear a depuração de USB no dispositivo** (Android 4.2 ou posterior): escolha impedir que os dispositivos utilizem a funcionalidade de depuração USB.
-- **Nível de correção de segurança mínimo** (Android 6.0 ou posterior): selecione o nível de correção de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tenham, pelo menos, este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato `YYYY-MM-DD`.
+- **Integridade de tempo de execução de aplicações do portal da empresa**: selecione **Exigir** para confirmar que a aplicação Portal da Empresa cumpre os seguintes requisitos:
+
+  - Tem o ambiente de tempo de execução predefinido instalado
+  - Está corretamente assinada
+  - Não está no modo de depuração
+  - Foi instalada a partir de uma origem conhecida
+
+  Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+
+- **Bloquear a depuração de USB no dispositivo** (Android 4.2 ou posterior): selecione **Bloquear** para impedir que os dispositivos utilizem a funcionalidade de depuração USB. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Nível de correção de segurança mínimo** (Android 6.0 ou posterior): selecione o nível de correção de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tiverem pelo menos este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato `YYYY-MM-DD`.
+- **Aplicações restritas**: introduza o **Nome da aplicação** e o **ID do pacote de aplicação** para aplicações que devem ser restringidas. Selecione **Adicionar**. Um dispositivo com pelo menos uma aplicação restrita instalada é marcado como não conforme.
+
+Quando terminar, selecione **OK** > **OK** para guardar as suas alterações.
 
 ## <a name="locations"></a>Localizações
 
 Na sua política, escolha uma das localizações existentes. Ainda não tem uma localização? [Utilizar Localizações (barreira de rede) no Intune](use-network-locations.md) fornece algumas orientações.
 
-1. Selecione a opção **Selecionar localizações**.
+1. Selecione **Localizações**.
 2. Na lista, verifique a sua localização e escolha **Selecionar**.
 3. **Guarde** a política.
-4. Selecione **Ações para não conformidade**. A ação predefinida marca imediatamente o dispositivo como não conforme. Esta ação aplica-se quando seleciona pelo menos uma localização e se o dispositivo não estiver ligado às localizações selecionadas.
 
-  Pode alterar esta ação para atualizar a agenda quando o dispositivo for marcado como não conforme, tal como após um dia. Também pode configurar uma segunda ação que envia um e-mail para o utilizador quando o dispositivo deixa de estar em conformidade com as suas localizações.
+## <a name="actions-for-noncompliance"></a>Ações de não conformidade
+
+Selecione **Ações para não conformidade**. A ação predefinida marca imediatamente o dispositivo como não conforme.
+
+Pode alterar a agenda quando o dispositivo for marcado como não conforme, tal como após um dia. Também pode configurar uma segunda ação que envia um e-mail para o utilizador quando o dispositivo não estiver em conformidade.
+
+O artigo [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) fornece mais informações, incluindo como criar um e-mail de notificação para os seus utilizadores.
+
+Por exemplo, está a utilizar a funcionalidade Localizações e adiciona uma localização numa política de conformidade. A ação predefinida de não conformidade aplica-se quando selecionar pelo menos uma localização. Se o dispositivo não estiver ligado às localizações selecionadas, será imediatamente considerado não conforme. Pode dar aos seus utilizadores um período de tolerância, por exemplo um dia.
+
+## <a name="scope-tags"></a>Etiquetas de âmbito
+
+As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito a políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
+
+Depois de criar uma política, esta não fará nada até ser atribuída. Para atribuir a política: 
 
 1. Escolha uma política configurada por si. As políticas existentes encontram-se em **Conformidade do dispositivo** > **Políticas**.
 2. Escolha a política e, em seguida, **Atribuições**. Pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
 3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e escolha **Guardar** para implementar a política aos utilizadores.
 
-Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores visados pela política são avaliados quanto à conformidade.
+Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade.
 
 ## <a name="next-steps"></a>Próximos passos
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
-[Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)
+[Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)  
+[Definições de política de conformidade para Android Enterprise](compliance-policy-create-android-for-work.md)

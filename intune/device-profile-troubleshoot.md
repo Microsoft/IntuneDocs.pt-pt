@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312954"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679309"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comuns com perfis de dispositivos e respetivas soluções no Microsoft Intune
 
@@ -61,7 +61,7 @@ Se o dispositivo foi inscrito recentemente, a frequência da entrada é maior, c
 
 Para verificarem imediatamente a política a qualquer altura, os utilizadores podem abrir a aplicação Portal da Empresa e sincronizar o dispositivo.
 
-Para os dispositivos sem afinidade de utilizador, a frequência de sincronização imediatamente a seguir à inscrição pode variar de horas para um dia ou mais. O Intune envia pedidos em vários intervalos para um dispositivo dar entrada no serviço. No entanto, é o dispositivo que tem de dar entrada. Após a inscrição inicial, consoante o tipo de inscrição do dispositivo e as políticas e perfis atribuídos a um dispositivo, não é possível prever o tempo que um dispositivo demora a concluir a entrada. Contudo, assim que o dispositivo estiver inscrito e todas as políticas iniciais forem aplicadas, o dispositivo geralmente procura novas políticas a cada seis horas.
+Para os dispositivos sem afinidade do utilizador, a frequência de sincronização imediatamente a seguir à inscrição pode variar de horas para um dia ou mais. O Intune envia pedidos em vários intervalos para um dispositivo dar entrada no serviço. No entanto, é o dispositivo que tem de dar entrada. Após a inscrição inicial, consoante o tipo de inscrição do dispositivo e as políticas e perfis atribuídos a um dispositivo, não é possível prever o tempo que um dispositivo demora a concluir a entrada. Contudo, assim que o dispositivo estiver inscrito e todas as políticas iniciais forem aplicadas, o dispositivo geralmente procura novas políticas a cada seis horas.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
 Os dispositivos dão entrada no Intune quando recebem uma notificação para darem entrada ou durante as entradas agendadas regulares. Quando direciona uma ação para um dispositivo ou utilizador, tal como uma eliminação, um bloqueio, uma reposição de código de acesso, uma atribuição de aplicações, uma atribuição de perfis ou uma atribuição de políticas, o Intune notifica imediatamente o dispositivo para dar entrada no serviço do Intune para receber estas atualizações.
@@ -104,7 +104,7 @@ Quando elimina um perfil ou remove um dispositivo de um grupo que contém o perf
         - Memorizar histórico de palavras-passe
         - Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado
         - Minutos de inatividade antes da palavra-passe ser exigida
-        - Tipo obrigatório de palavra-passe – número mínimo de conjuntos de carateres
+        - Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres
         - Permitir câmara
         - Encriptação obrigatória no dispositivo móvel
         - Permitir armazenamento amovível
@@ -130,9 +130,9 @@ Quando elimina um perfil ou remove um dispositivo de um grupo que contém o perf
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivos, mas as alterações ainda não foram aplicadas
 Os dispositivos Windows Phone não permitem que as políticas de segurança definidas através de MDM ou EAS sejam reduzidas em termos de segurança depois de serem configuradas. Por exemplo, defina um **Número mínimo de carateres de palavra-passe** para 8 e, em seguida, tente reduzir para 4. O perfil mais restritivo já foi aplicado ao dispositivo.
 
-Consoante a plataforma de dispositivo, se quiser alterar o perfil para um valor menos seguro, reponha as políticas de segurança. Por exemplo, no ambiente de trabalho do Windows, percorra a partir da direita e selecione **Definições** > **Painel de Controlo**. Selecione a miniaplicação **Contas de Utilizador** .
+Se quiser alterar o perfil para um valor menos seguro, reponha as políticas de segurança. Por exemplo, no ambiente de trabalho do Windows 8.1, percorra a partir da direita e selecione **Definições** > **Painel de Controlo**. Selecione a miniaplicação **Contas de Utilizador** . No menu de navegação esquerdo, existe uma ligação denominada **Repor Políticas de Segurança** (na parte inferior). Selecione-a e, em seguida, selecione **Repor Políticas**.
 
-No menu de navegação esquerdo, existe uma ligação denominada **Repor Políticas de Segurança** (na parte inferior). Selecione-a e, em seguida, selecione **Repor Políticas**. Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior, e iOS, poderão ter de ser extintos e reinscritos no serviço para aplicar um perfil menos restritivo.
+Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior, iOS e Windows 10, poderão ter de ser extintos e reinscritos no serviço para aplicar um perfil menos restritivo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](get-support.md).

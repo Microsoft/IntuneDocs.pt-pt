@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
-ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
+ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
+ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49380036"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751648"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Definições de quiosque para Windows 10 (e posterior) no Intune
 
@@ -105,7 +105,7 @@ Ao escolher o modo de quiosque de várias aplicações, introduza as seguintes d
 
     - **Nome da aplicação**: obrigatório. Introduza um nome para a aplicação.
     - **Caminho local**: obrigatório. Introduza o caminho para o executável, tal como `C:\Program Files (x86)\Microsoft VS Code\Code.exe` ou `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **ID do modelo de utilizador da aplicação (AUMID)**: opcional. Introduza o ID do modelo de utilizador da aplicação (AUMID) da aplicação Win32. Esta definição determina o esquema de início do mosaico na área de trabalho. Para obter este ID, veja [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Localizar o ID do Modelo de Utilizador da Aplicação de uma aplicação instalada).
+    - **ID do modelo de utilizador da aplicação (AUMID)**: introduza o ID do modelo de utilizador da aplicação (AUMID) da aplicação Win32. Esta definição determina o esquema de início do mosaico na área de trabalho. Para obter este ID, veja [Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) (Localizar o ID do Modelo de Utilizador da Aplicação de uma aplicação instalada).
     - **Tamanho do mosaico**: obrigatório. Escolha um tamanho de mosaico da aplicação: Pequeno, Médio, Largo ou Grande.
   
   - **Adicionar por AUMID**: utilize esta opção para adicionar aplicações do Windows de caixa de entrada, como o Bloco de notas ou a Calculadora. Introduza as seguintes propriedades: 

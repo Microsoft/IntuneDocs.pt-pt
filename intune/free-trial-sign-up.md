@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581398"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915687"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: experimentar gratuitamente o Microsoft Intune 
 
@@ -70,20 +70,27 @@ Pode experimentar o Intune de forma gratuita durante 30 dias. Se já tiver uma c
 
 Quando se inscrever numa versão de avaliação, também receberá uma mensagem de e-mail com as informações da sua conta no endereço de e-mail que indicou durante o processo de inscrição. Este e-mail confirma que a sua versão de avaliação está ativa.
 
+> [!TIP]
+> Ao trabalhar com o portal do Azure, poderá obter melhores resultados se utilizar um browser no modo normal, em vez de no modo privado.
+
 ## <a name="set-the-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
 
-A definição da autoridade de gestão de dispositivos móveis (MDM) determina como gere os seus dispositivos. Como administrador de TI, tem de definir uma autoridade de MDM antes de os utilizadores poderem inscrever dispositivos para gestão.
+Depois de iniciar sessão no portal do Azure e selecionar o Intune, poderá ver uma faixa cor de laranja a indicar que ainda não definiu a autoridade de MDM. A definição da autoridade de gestão de dispositivos móveis (MDM) determina como gere os seus dispositivos. Tem de definir uma autoridade de MDM para que os utilizadores possam inscrever dispositivos para gestão.
 
 Para definir a autoridade de MDM como o Intune, siga estes passos.
 
 1. Abra uma nova janela do browser e introduza **https://portal.azure.com** na barra de endereço. 
 2. Selecione **Todos os serviços** > **Microsoft Intune**.
-3. Selecione a faixa cor de laranja para abrir a definição **Autoridade de Gestão de Dispositivos Móveis**. 
+3. Selecione a faixa que indica que não ativou a gestão de dispositivos ou, se não vir imediatamente a faixa, selecione **Inscrição de dispositivos**. O painel **Escolher Autoridade de MDM** será apresentado, se ainda não tiver ativado a gestão de dispositivos.
 
     > [!NOTE]
     > A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM.
 
-4. Em **Autoridade de Gestão de Dispositivos Móveis**, defina a sua autoridade de MDM para **Autoridade MDM do Intune**.
+    ![Imagem do painel Escolher Autoridade de MDM](./media/choose-mdm-authority.png) 
+
+4. Em **Escolher Autoridade de MDM**, defina a sua autoridade de MDM como **Autoridade de MDM do Intune**.
+
+Para obter mais informações sobre a autoridade de MDM, veja [Definir a autoridade de gestão de dispositivos móveis](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Configurar o nome de domínio personalizado (opcional)
 
@@ -120,4 +127,4 @@ Existem dois portais que pode utilizar:
 Neste início rápido, criou uma subscrição gratuita para experimentar o Intune num ambiente de teste e configurou opcionalmente um nome de domínio personalizado. Para saber mais sobre o Microsoft Intune, avance para o próximo início rápido onde aprenderá a adicionar utilizadores e atribuir licenças.
 
 > [!div class="nextstepaction"]
-> [Criar um utilizador](get-started-users.md)
+> [Criar um utilizador](quickstart-create-user.md)

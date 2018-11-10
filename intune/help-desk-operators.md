@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229080"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236667"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -96,13 +96,14 @@ Dispositivos geridos pelo Intune ou por utilizadores geridos pelo Intune ou Azur
 | Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
 | Em conformidade com o Azure AD | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
+| Instalação da aplicação | Indica se a instalação da aplicação falhou ou teve êxito em cada dispositivo. |
 | SO                 | O sistema operativo instalado no dispositivo.                                                                                       |
 | Versão do SO         | O número da versão do Sistema Operativo do dispositivo.                                                                                  |
 | Último registo      | O nome do tipo de dispositivo.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Estado da proteção de aplicações
 
-Encontra-se disponível uma política de proteção de aplicações para aplicações móveis que integrem as tecnologias de Enterprise Mobility + Security (EMS). Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
+Encontra-se disponível uma política de proteção de aplicações para aplicações móveis que integrem as tecnologias de Enterprise Mobility + Security (EMS). Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Encontra-se disponível uma política de proteção de aplicações para aplica�
 
 ## <a name="app-protection-policies-reference"></a>Referência de políticas de proteção de aplicações
 
-As políticas de proteção de aplicações estão disponíveis para aplicações móveis que integram tecnologias de EMS. Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
+As políticas de proteção de aplicações estão disponíveis para aplicações móveis que integram tecnologias de EMS. Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
 
 ### <a name="properties"></a>Propriedades
 
@@ -180,7 +181,7 @@ Dispositivos geridos pelo Intune ou por utilizadores geridos pelo Intune ou Azur
 
 ### <a name="app-protection-policies"></a>Políticas de proteção de aplicações
 
-Encontra-se disponível uma política de proteção de aplicações para aplicações móveis que integrem tecnologias de EMS. Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
+Encontra-se disponível uma política de proteção de aplicações para aplicações móveis que integrem tecnologias de EMS. Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ Encontra-se disponível uma política de proteção de aplicações para aplica�
 
 ## <a name="configuration-policies-reference"></a>Referência de políticas de configuração
 
-Uma política de configuração de aplicações está disponível para aplicações móveis com configurações específicas do fornecedor. 
+Uma política de configuração de aplicações está disponível para aplicações móveis com configurações específicas do fornecedor. 
 
 ### <a name="properties"></a>Propriedades
 
@@ -226,7 +227,7 @@ Dispositivos geridos pelo Intune ou por utilizadores geridos pelo Intune ou Azur
 
 ### <a name="app-protection-policies"></a>Políticas de proteção de aplicações
 
-Encontra-se disponível uma política de proteção de aplicações para aplicações móveis que integrem tecnologias de EMS. Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
+Encontra-se disponível uma política de proteção de aplicações para aplicações móveis que integrem tecnologias de EMS. Estas políticas proporcionam uma linha base de proteção para os seus dados empresariais quando são transferidos para aplicações móveis, incluindo as aplicações móveis do Office. 
 
 | Propriedade    | Descrição                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

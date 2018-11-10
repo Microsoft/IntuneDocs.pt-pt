@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425296"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236395"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Gerir e utilizar dispositivos Windows Holographic e HoloLens com o Intune
 
@@ -68,6 +68,10 @@ Com o Intune, pode adicionar aplicações aos seus dispositivos com o Windows Ho
 
 O Microsoft Intune pode implementar Aplicações Universais do Windows para dispositivos Microsoft HoloLens com o Windows Holographic for Business. Pode carregar diretamente os pacotes de aplicações no Intune no portal do Azure ou implementá-los a partir da Microsoft Store para Empresas. Para obter mais informações sobre as áreas relacionadas, veja os seguintes artigos:
 - Para implementar aplicações de Linha de Negócio (LOB) através do portal do Azure do Intune, veja [Como adicionar aplicações de linha de negócios (LOB) Windows ao Microsoft Intune](lob-apps-windows.md).
+
+    > [!NOTE]
+    > O Intune permite um tamanho de pacote máximo de 8 GB. Este tamanho de pacote só está disponível para as aplicações LOB carregadas para o Intune.
+
 - Para implementar aplicações com o Microsoft Store for Business, veja [Como gerir aplicações compradas na Microsoft Store para Empresas com o Microsoft Intune](windows-store-for-business.md). 
 - Para saber mais sobre a gestão de aplicações com o Microsoft Intune, veja [O que é a gestão de aplicações no Microsoft Intune?](app-management.md).
 - Para saber mais sobre como desenvolver aplicações do Microsoft HoloLens, veja [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (Aplicações de realidade mista do Microsoft HoloLens). 

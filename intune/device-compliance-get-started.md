@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391574"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915704"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -153,7 +153,7 @@ Também pode utilizar as políticas de conformidade de dispositivos sem acesso c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar as políticas de conformidade de dispositivos
 Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, todos os dispositivos do utilizador são verificados relativamente à conformidade. No Windows 10 versão 1803 e dispositivos mais recentes, é recomendado implementar para grupos de dispositivos *se* o utilizador primário não tiver inscrito o dispositivo. Utilizar grupos de dispositivos neste cenário ajuda com os relatórios de conformidade.
 
-As **Definições de política de conformidade** pré-definidas (Portal do Azure > Conformidade de dispositivo) incluem:
+Um conjunto de **Definições de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incorporadas é avaliado em todos os dispositivos inscritos no Intune. Estes incluem:
 
 - **Marcar os dispositivos sem política de conformidade atribuída como**: esta propriedade tem dois valores:
 
@@ -171,7 +171,7 @@ As **Definições de política de conformidade** pré-definidas (Portal do Azure
 
 - **Período de validade do estado de conformidade (dias)**: introduza o período de tempo durante o qual os dispositivos devem comunicar o estado para todas as políticas de conformidade recebidas. Os dispositivos que não devolvam o estado dentro deste período de tempo são tratados como não conformes. O valor predefinido é 30 dias.
 
-Todos os dispositivos têm uma **Política Predefinida de Conformidade de Dispositivos** (Portal do Azure > Conformidade do dispositivo > Conformidade com a política). Utilize esta política predefinida para monitorizar estas definições.
+Todos os dispositivos têm uma **Política de Conformidade de Dispositivos Incorporada** (Portal do Azure > Conformidade do dispositivo > Conformidade com a política). Utilize esta política incorporada para monitorizar estas definições.
 
 Para saber quanto tempo é que os dispositivos móveis demoram a obter uma política após esta ser implementada, veja [Resolver problemas de perfis de dispositivos](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

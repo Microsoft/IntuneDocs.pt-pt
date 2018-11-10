@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075851"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025173"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -94,7 +94,7 @@ Para obter mais informações sobre esta secção, veja [Gerir aplicações](app
 - **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para obter mais informações, consulte:
     - [Aplicações iOS do programa de compras em volume (VPP)](vpp-apps-ios.md).
     - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicações Detetadas**: veja todas as aplicações que foram atribuídas pelo Intune e instaladas num dispositivo. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **Aplicações Detetadas**: veja as aplicações que foram atribuídas pelo Intune ou instaladas num dispositivo. Para obter mais informações, veja [Ver os detalhes do dispositivo com o Microsoft Intune](device-inventory.md).
 - **Estado da Instalação da Aplicação**: veja o estado da atribuição de uma aplicação que criou. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **Estado da proteção da aplicação**: veja o estado da política de proteção de uma aplicação de um utilizador selecionado.
 - **Registos de auditoria**: veja a atividade relacionada com a aplicação do Intune realizada por todos os administradores de TI.

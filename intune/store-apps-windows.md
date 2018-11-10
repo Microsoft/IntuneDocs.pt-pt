@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494052"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025156"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Adicionar aplicações da Microsoft Store ao Microsoft Intune
 
@@ -54,7 +54,7 @@ Pode adicionar uma aplicação da Microsoft Store ao Intune ao fazer o seguinte:
 8. Selecione **OK**.
 9. Selecione **Adicionar**.
 
-A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar. 
+A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar. As aplicações da Microsoft Store só podem ser atribuídas a grupos com o tipo de atribuição **Disponível para dispositivos inscritos** (os utilizadores instalam a aplicação a partir da aplicação ou site do Portal da Empresa).
 
 ## <a name="next-steps"></a>Próximos passos
 - [Atribuir aplicações a grupos](apps-deploy.md)

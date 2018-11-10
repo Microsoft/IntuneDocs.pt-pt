@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494018"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915755"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
 
@@ -89,4 +89,15 @@ Quando atribui uma aplicação da Loja Microsoft para Empresas, é utilizada uma
 * Reduza o âmbito da atribuição atual, segmentando apenas os utilizadores para os quais tem licenças suficientes.
 * Compre mais cópias da aplicação na Loja Microsoft para Empresas.
 
+## <a name="remove-apps"></a>Remover aplicações
 
+Para remover uma aplicação sincronizada a partir da Microsoft Store para Empresas, tem de iniciar sessão na Microsoft Store para Empresas e reembolsar a aplicação.
+
+![Captura de ecrã a mostrar os detalhes da remoção da aplicação](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> Remover a visibilidade de uma aplicação na loja privada não impedirá o Intune de a sincronizar. Tem de reembolsar a aplicação.
+
+## <a name="next-steps"></a>Próximos passos
+
+- [Gerir aplicações e livros comprados em grandes volumes com o Microsoft Intune](vpp-apps.md)

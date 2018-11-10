@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 359f423e7b1bd098136670db1d43b2ddec6031a3
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642914"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679326"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Windows no Intune
 
@@ -33,7 +33,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 |----| ----| --- |
 | **Configuração do PIN ou da palavra-passe** | Corrigido | Corrigido |   
 | **Encriptação do dispositivo** | Não aplicável | Corrigido |   
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Não aplicável | Não aplicável |  
+| **Dispositivo com jailbreak ou rooting** | Não aplicável | Não aplicável |  
 | **Perfil de e-mail** | Não aplicável | Não aplicável |   
 | **Versão mínima do SO** | Em quarentena | Em quarentena |   
 | **Versão máxima do SO** | Em quarentena | Em quarentena |   
@@ -107,7 +107,7 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra de versão de SO estive
 
 ## <a name="windows-10-and-later-policy-settings"></a>Definições de política do Windows 10 e posterior
 
-### <a name="device-health"></a>Device health
+### <a name="device-health"></a>Estado de funcionamento do dispositivo
 
 - **Exigir o BitLocker**: se o Bitlocker estiver ativado, o dispositivo será capaz de proteger os dados que são armazenados na unidade contra acessos não autorizados, quando o sistema é desligado ou entra em hibernação. A Encriptação de Unidade BitLocker do Windows encripta todos os dados armazenados no volume do sistema operativo Windows. O BitLocker utiliza o TPM para ajudar a proteger o sistema operativo Windows e os dados de utilizador. Também ajuda a garantir que os computadores não são adulterados, mesmo que não estejam a ser vigiados, sejam roubados ou se percam. Se os computadores estiverem equipados com um TPM compatível, o BitLocker utiliza o TPM para bloquear as chaves de encriptação que protegem os dados. Como resultado, as chaves não podem ser acedidas até o TPM ter verificado o estado dos computadores.
 - **Exigir que o Arranque Seguro seja ativado no dispositivo:** se o Arranque Seguro estiver ativado, o sistema será forçado a fazer o arranque para um estado de fábrica fidedigno. Além disso, com o Arranque Seguro ativado, os componentes do núcleo utilizados para arrancar o computador têm de ter assinaturas criptográficas corretas e que sejam consideradas fidedignas pela organização que fabricou o dispositivo. O firmware UEFI verifica a assinatura antes de permitir que o computador seja iniciado. Se um ficheiro tiver sido adulterado, danificando a respetiva assinatura, o sistema não arrancará.
@@ -168,6 +168,9 @@ Para obter mais informações sobre como funciona o serviço HAS, veja [Health A
 #### <a name="encryption"></a>Encriptação
 
 - **Encriptação do armazenamento de dados num dispositivo**: escolha **Exigir** a encriptação do armazenamento de dados nos dispositivos.
+
+  > [!NOTE]
+  > A definição **Encriptação do armazenamento de dados num dispositivo** verifica genericamente a presença de encriptação no dispositivo. Para uma definição de encriptação mais avançada, considere utilizar **Exigir o BitLocker**, que tira partido do Windows Device Health Attestation para validar o estado do Bitlocker ao nível do TPM.
 
 #### <a name="device-security"></a>Segurança do Dispositivo
 

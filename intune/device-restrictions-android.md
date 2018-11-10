@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313704"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915738"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Definições de restrição de dispositivos Android e Samsung Knox Standard – Intune
 
@@ -39,9 +39,9 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 - **Geolocalização (apenas Samsung Knox)** – permite que o dispositivo utilize informações de localização.
 - **Desligar (apenas Samsung Knox)** – permite ao utilizador desligar o dispositivo.<br>Se desativado, o **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** não pode ser definido.
 - **Captura de ecrã (apenas Samsung Knox)** – permite ao utilizador capturar os conteúdos do ecrã como uma imagem.
-- **Assistente de voz (apenas Samsung Knox)** – permite a utilização de software de assistente de voz no dispositivo.
+- **Assistente de voz (apenas Samsung Knox)** – permite a utilização da aplicação e serviço S Voice no dispositivo. Isto não se aplica à Bixby ou ao assistente de voz para acessibilidade que lê os conteúdos do ecrã em voz alta.
 - **YouTube (apenas Samsung Knox)** – permite a utilização da aplicação YouTube no dispositivo.
-- **Dispositivos partilhados (apenas Samsung Knox)** – configure um dispositivo Samsung Knox Standard gerido como partilhado. Neste modo, os utilizadores finais podem iniciar ou terminar sessão do dispositivo com as suas credenciais do Azure AD. O dispositivo continua a ser gerido quer esteja quer não esteja a ser utilizado.<br>Quando utilizado conjuntamente com um perfil de certificado SCEP, esta funcionalidade permite que os utilizadores finais partilhem um dispositivo com o mesmo conjunto de aplicações para todos os utilizadores, mas com os respetivos certificados de utilizador SCEP.  Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.  Esta funcionalidade é limitada a aplicações LOB.
+- **Dispositivos partilhados (apenas Samsung Knox)** – configure um dispositivo Samsung Knox Standard gerido como partilhado. Neste modo, os utilizadores finais podem iniciar ou terminar sessão do dispositivo com as suas credenciais do Azure AD. O dispositivo continua a ser gerido quer esteja quer não esteja a ser utilizado.<br>Quando utilizado conjuntamente com um perfil de certificado SCEP, esta funcionalidade permite que os utilizadores finais partilhem um dispositivo com o mesmo conjunto de aplicações para todos os utilizadores, mas com os respetivos certificados de utilizador SCEP.  Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.  Esta funcionalidade é limitada a aplicações LOB.
 - **Bloquear alterações de data e hora (Samsung Knox)** – impede que o utilizador altere as definições de data e hora do dispositivo. 
 
 ## <a name="password"></a>Palavra-passe
@@ -90,7 +90,7 @@ Uma lista de **Aplicações proibidas** – indique as aplicações (não gerida
 Uma lista de **Aplicações aprovadas** – Indique as aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não têm de instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
 Os perfis de dispositivo que contêm as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
-Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o publicador da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
+Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, o fabricante da aplicação (opcional) e o URL para a aplicação na loja de aplicações.
 
 ### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Como especificar o URL para uma aplicação na loja
 
@@ -147,11 +147,11 @@ Para cada definição, configure uma lista de aplicações através de um dos se
 - **Wi-Fi (apenas Samsung Knox)** – permite a utilização das funcionalidades de Wi-Fi do dispositivo.
 - **Tethering Wi-Fi (apenas Samsung Knox)** – permite a utilização de tethering Wi-Fi no dispositivo.
 
-## <a name="kiosk"></a>Modo de Quiosque
+## <a name="kiosk"></a>Modo de Local Público
 
-As definições de modo de quiosque aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
+As definições de modo de local público aplicam-se apenas a dispositivos Samsung Knox Standard e apenas a aplicações que gere com o Intune.
 
-- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de quiosque. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de quiosque, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
+- **Selecionar uma aplicação gerida** – Escolha uma das seguintes opções para adicionar uma ou mais aplicações geridas que podem ser executadas quando o dispositivo está no modo de local público. Não é permitida a execução de outras aplicações no dispositivo. Enquanto o dispositivo se encontrar no modo de local público, os browsers pré-instalados não podem ser definidos como uma aplicação com permissão para ser executada. Se for necessário utilizar um browser, considere a utilização do [Managed Browser](app-configuration-managed-browser.md).
     - **Adicionar aplicações pelo nome do pacote**
     - **Adicionar aplicações por URL**
     - **Adicionar aplicações geridas**.
@@ -159,6 +159,6 @@ As definições de modo de quiosque aplicam-se apenas a dispositivos Samsung Kno
 - **Botões de volume** - Ativa ou desativa a utilização dos botões de volume no dispositivo.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a seguir as instruções em [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para criar e atribuir o perfil de restrição de dispositivos.
