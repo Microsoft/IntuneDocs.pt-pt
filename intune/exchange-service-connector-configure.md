@@ -15,17 +15,17 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 6132e77c4f4a86a30a55d436219f0d7e2a49980c
+ms.sourcegitcommit: ff6db80cb3638e1eec0a4c8b185649363e9e552e
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806328"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 Este artigo mostra-lhe como ligar o serviço do Microsoft Intune ao Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta.
 
-Com o **Conector de Serviços** pode gerir o Exchange ActiveSync (EAS) e os dispositivos geridos do Intune a partir de uma única consola administrativa.  Não precisa do conector para ativar o Acesso Condicional para o Exchange Online.
+Com o **Conector de Serviços**, pode gerir o Exchange ActiveSync (EAS) e os dispositivos geridos do Intune a partir de uma única consola administrativa.  Não precisa do conector para ativar o Acesso Condicional para o Exchange Online.
 
 ## <a name="service-to-service-connector-requirements"></a>Requisitos do Conector de Serviços
 O **Conector de Serviços** suporta apenas o Exchange Online ou o Exchange Online Dedicado e não possui requisitos para uma infraestrutura no local. 

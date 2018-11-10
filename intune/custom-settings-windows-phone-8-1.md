@@ -1,42 +1,68 @@
 ---
-title: Definições personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1
+title: Adicionar definições personalizadas para dispositivos Windows Phone 8.1 no Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Saiba quais são as definições que pode utilizar num perfil personalizado do Windows Phone 8.1.
+description: Adicione ou crie um perfil personalizado para utilizar as definições OMA-URI para dispositivos com o Windows Phone 8.1 no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b21464016dff3396b25861af568fa90d8b7a260f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f2202d7abf80c6a78fd365a4629e970bc9ec36ce
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834758"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983096"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Definições do dispositivo personalizadas do Microsoft Intune para dispositivos com o Windows Phone 8.1
+# <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos Windows Phone 8.1 no Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Ao utilizar o Microsoft Intune, pode adicionar ou criar definições personalizadas para os seus dispositivos Windows Phone 8.1 com "perfis personalizados". Os perfis personalizados são uma funcionalidade do Intune. Foram concebidos para adicionar definições e funcionalidades de dispositivos que não estão incorporadas Intune.
 
-Utilize o perfil **Personalizado** para Windows Phone 8.1 do Microsoft Intune para atribuir as definições OMA-URI que podem ser utilizadas para controlar as funcionalidades nos dispositivos Windows Phone 8.1. Tratam-se de definições padrão utilizadas por inúmeros fabricantes de dispositivos móveis para controlar as funcionalidades dos dispositivos.
+Os perfis personalizados do Windows Phone 8.1 utilizam definições Open Mobile Alliance Uniform Resource Identifier (OMA-URI) para configurar diferentes funcionalidades. Estas definições são normalmente utilizadas por fabricantes de dispositivos móveis para controlar as funcionalidades no dispositivo.
 
-Esta capacidade destina-se a permitir a atribuição de definições que não são configuráveis com outras políticas do Intune.
+Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Windows Phone 8.1. 
 
-## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Definições de políticas personalizadas para dispositivos Windows Phone 8.1
+## <a name="create-the-profile"></a>Criar o perfil
 
-1. Utilize as instruções em [Como configurar definições personalizadas dos dispositivos no Microsoft Intune](custom-settings-configure.md) para começar.
-2. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar** para adicionar uma ou mais definições OMA-URI.
-3. No painel **Adicionar Linha**, configure os seguintes valores para cada definição:
-    - **Nome** – Introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
-    - **Descrição** – Introduza uma descrição geral da definição e outras informações relevantes para o ajudar a localizá-la.
-    - **OMA-URI** – Especifique o OMA-URI para o qual pretende fornecer uma definição.
-    - **Tipo de dados** – selecione o tipo de dados nos quais especificar esta definição OMA-URI. Selecione entre **Cadeia**, **Cadeia (XML)**, **Data e hora**, **Número inteiro**, **Vírgula flutuante**, **Booleano** ou **Base64**.
-    - **Valor** – introduza o valor ou ficheiro que pretende associar ao OMA-URI que introduziu.
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Introduza as seguintes definições:
 
-4. Clique em **OK** quando tiver terminado e, em seguida, continue a adicionar mais definições, conforme necessário.
+    - **Nome**: introduza um nome para o perfil, como `windows phone custom profile`.
+    - **Descrição:** introduza uma descrição para o perfil.
+    - **Plataforma**: selecione **Windows Phone 8.1**.
+    - **Tipo de perfil**: selecione **Personalizado**.
+
+4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
+
+    - **Nome** – introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
+    - **Descrição**: introduza uma descrição geral da definição e quaisquer outras informações relevantes para o ajudar a localizar o perfil.
+    - **OMA-URI** (sensível a maiúsculas e minúsculas): introduza a definição OMA-URI que pretende utilizar.
+    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
+
+        - Cadeia
+        - Cadeia (ficheiro XML)
+        - Data e Hora
+        - Número inteiro
+        - Vírgula flutuante
+        - Booleano
+        - Base64 (ficheiro)
+
+    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+
+    Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
+
+5. Selecione **OK** para guardar as alterações. Continue a adicionar mais definições conforme necessário.
+6. Quanto terminar, selecione **OK** > **Criar** para criar o perfil do Intune. Depois de criado, o perfil é apresentado na lista **Configuração do dispositivo – Perfis**.
+
+## <a name="next-steps"></a>Próximos passos
+
+O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
+
+Saiba como criar um perfil personalizado em [dispositivos Windows 10](custom-settings-windows-10.md).

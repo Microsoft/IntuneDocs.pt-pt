@@ -1,11 +1,11 @@
 ---
-title: Remover o seu dispositivo Windows do Intune
-description: Descreve como remover um dispositivo Windows do Intune
+title: Remover o seu dispositivo Windows da gestão do Intune
+description: Descreve como remover um dispositivo Windows da gestão do Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/01/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,39 +17,56 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5984ac8ebe825a187b33945699a5fadc27e0c0cc
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148783"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828419"
 ---
-# <a name="remove-your-windows-device-from-intune-management"></a>Remover o seu dispositivo Windows da gestão do Intune
+# <a name="remove-your-windows-device-from-management"></a>Remover o seu dispositivo Windows da gestão
 
-Remova um dispositivo Windows registado do Intune quando já não quiser ou não precisar de:  
+Remova um dispositivo Windows registado da gestão quando já não quiser ou não precisar de:  
 * Utilizar o seu dispositivo no trabalho ou na escola. 
 * Aceder ao e-mail, aplicações e outros recursos escolares ou profissionais.
 
-Após ser removido, não poderá aceder aos recursos escolares ou profissionais a partir do dispositivo. Os dispositivos Windows que podem ser removidos do Intune incluem:  
+Depois de anular o registo do dispositivo, vai perder o acesso do dispositivo aos recursos da escola ou do trabalho. Pode remover os seguintes dispositivos Windows da gestão.  
 * Dispositivos com o Windows 10 
 * Computadores com o Windows 8.1
-* Dispositivo móvel com o Windows 8.1
+* Telemóvel com o Windows 8.1
  
-Para obter mais informações sobre o que acontece após remover o seu dispositivo da gestão do Intune, veja [O que acontece se anular a inscrição do seu dispositivo Windows no Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Para obter mais informações sobre o que acontece após remover o seu dispositivo da gestão, veja [O que acontece se remover o dispositivo do Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).  
 
 ## <a name="remove-your-windows-10-device"></a>Remover o seu dispositivo com o Windows 10
-Conclua os seguintes passos para remover um dispositivo com o Windows 10 do Intune.
+Conclua os seguintes passos para remover um dispositivo com o Windows 10 da gestão.
 
-### <a name="via-the-company-portal-app"></a>Através da aplicação Portal da Empresa
+### <a name="remove-in-company-portal-app-home-page"></a>Remover na aplicação Portal da Empresa, **home page**  
 
 1. Abra a aplicação Portal da Empresa.
-2. Inicie sessão com as credenciais da sua conta escolar ou profissional.
-3. Em **Os Meus Dispositivos**, selecione o dispositivo que pretende remover.
-4. No canto superior direito da aplicação, selecione o ícone **Ver mais**.
-5. Selecione **Remover**. 
-6. Para confirmar a remoção do dispositivo, selecione **Remover dispositivo**.
+2. Na **Home page**, aceda à secção **My Devices** (Os Meus Dispositivos).
+3. Selecione o dispositivo que pretende remover.
+3. No canto superior direito da aplicação, selecione o ícone **Ver mais**.
+4. Selecione **Remover**. 
+5. Para confirmar a remoção do dispositivo, selecione **Remove** (Remover).  
 
-### <a name="via-device-settings-app"></a>Através da aplicação Definições do dispositivo
+### <a name="remove-in-company-portal-app-device-context-menu"></a>Remover na aplicação Portal da Empresa, menu de contexto do dispositivo  
+
+1. Abra a aplicação Portal da Empresa e aceda a **My Devices** (Os Meus Dispositivos).
+
+    ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page, com destaque da secção My Devices (Os Meus Dispositivos).](./media/1809_CheckAccess_Context_Select_Device.png)
+
+2. Clique com o botão direito do rato ou mantenha premido qualquer dispositivo para abrir o respetivo [menu de contexto](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
+
+3. Selecione **Remover**.  
+
+    ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page. O menu de contexto do dispositivo está visível na secção **My Devices** (Os Meus Dispositivos) da página e mostra as ações "Rename" (Mudar o nome), "Remove" (Remover) e "Check access" (Verificar acesso).](./media/1809_DeviceContextMenu_Windows_CP.png)  
+
+5. Na confirmação, clique em **Learn More** (Saber Mais) para saber como o acesso aos recursos da escola ou do trabalho pode ser alterado. Para confirmar a remoção do dispositivo, selecione **Remove** (Remover).   
+
+     ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page. O campo Rename (Mudar o nome) aparece sobre o dispositivo onde o utilizador pode escrever um novo nome e clicar em Rename (Mudar o nome) ou Cancel (Cancelar).](./media/1808_RemoveDevice_Popup.png)  
+
+
+### <a name="remove-in-device-settings-app"></a>Remover na aplicação Definições do dispositivo
 1. Abra a aplicação Definições. 
 2. Vá para **Contas** > **Acesso profissional ou escolar**.
 3. Selecione a conta ligada que pretende remover e, em seguida, selecione **Desligar**.
@@ -63,14 +80,15 @@ Conclua os seguintes passos para remover um computador com o Windows 8.1 do Intu
 3.  Em **Ativar gestão de dispositivos**, selecione **Desativar**.
 4.  Na janela de pop-up que é aberta, selecione **Desativar**.
 
-## <a name="remove-your-windows-81-mobile-device"></a>Remover o seu dispositivo móvel com o Windows 8.1
-Conclua os seguintes passos para remover um dispositivo móvel com o Windows 8.1 do Intune.
+## <a name="remove-your-windows-81-phone"></a>Remover o seu telemóvel com o Windows 8.1
+Conclua os seguintes passos para remover um telemóvel com o Windows 8.1 do Intune.
 
 1.  Aceda a **Definições** > **Área de Trabalho**.
 2.  Toque na conta da área de trabalho cuja inscrição quer anular.
 3.  Toque em **Eliminar**, na parte inferior do ecrã.
 4.  Na caixa de diálogo **Eliminar conta**, toque em **Eliminar**.  
-## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Remover as suas informações pessoais depois de remover o Portal da Empresa
+## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Remover as suas informações pessoais depois de remover o Portal da Empresa  
+
 Existem dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
 -   **Registos de diagnóstico**: dados de atividade de aplicações padrão que a Microsoft recolhe. Isto é eliminado automaticamente quando desinstala a aplicação Portal da Empresa. Os dados de atividade de aplicações são, por exemplo, dados sobre o tempo durante o qual a aplicação esteve aberta ou se a aplicação falhou.

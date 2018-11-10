@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/4/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,46 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9060c2e573003e480319dba6715cb14a2a13e906
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: ce673ab5206d5024da1cb6822beb523aa155325f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150011"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863030"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Mudar o nome do dispositivo a partir da aplicação Portal da Empresa para Windows
-Mude o nome de um dispositivo para ser mais fácil reconhecê-lo. A aplicação Portal da Empresa para Windows permite-lhe mudar o nome de dispositivos Windows, iOS e Android ligados. 
+Mude o nome de um dispositivo para ser mais fácil reconhecê-lo. A aplicação Portal da Empresa para Windows permite-lhe mudar o nome dos seguintes tipos de dispositivos ligados:  
+* Windows 10
+* iOS
+* Android  
 
-Para mudar o nome de um dispositivo:
-1. Abra a aplicação Portal da Empresa.
-2. Na secção **Os meus dispositivos**, selecione o dispositivo cujo nome pretende mudar.
-3. No canto superior direito da página, selecione o ícone **Mudar o nome**. 
-4. Escreva um novo nome e clique em **Mudar o nome**. O nome do dispositivo será atualizado imediatamente na aplicação. 
+## <a name="rename-device-from-device-details-page"></a>Mudar o nome do dispositivo a partir da página **Device details** (Detalhes do dispositivo)  
+Conclua o passo seguinte para remover um dispositivo da página **Device details** (Detalhes do dispositivo) do Portal da Empresa. 
+
+1. Abra a aplicação Portal da Empresa e aceda a **My Devices** (Os Meus Dispositivos).  
+
+    ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page, com destaque da secção My Devices (Os Meus Dispositivos).](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. Selecione o dispositivo cujo nome quer mudar.
+3. Na página **Device details** (Detalhes do dispositivo), aceda ao canto superior direito e selecione o ícone de lápis **Rename** (Mudar o nome).  
+
+     ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, página Device details (Detalhes do dispositivo), com destaque do ícone de lápis Rename (Mudar o nome).](./media/1809_Rename_CPapp_Windows_icon.png) 
+4. Escreva um novo nome e clique em **Mudar o nome**. O nome do dispositivo é atualizado imediatamente na aplicação.  
+
+     ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, página Device details (Detalhes do dispositivo), campo de pop-up Rename (Mudar o nome).](./media/1808_RenameApp_Popup.png)  
+
+## <a name="rename-device-from-device-context-menu"></a>Mudar o nome do dispositivo a partir do menu de contexto do dispositivo  
+Conclua o passo seguinte para remover um dispositivo através das ações do [menu de contexto](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
+
+1. Na **Home page** da aplicação Portal da Empresa, aceda a **My Devices** (Os Meus Dispositivos).
+
+    ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page, com destaque da secção My Devices (Os Meus Dispositivos).](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. Clique com o botão direito do rato ou mantenha premido qualquer dispositivo para abrir o respetivo menu de contexto.  
+
+    ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page. O menu de contexto do dispositivo está visível na secção **My Devices** (Os Meus Dispositivos) da página e mostra as ações "Rename" (Mudar o nome), "Remove" (Remover) e "Check access" (Verificar acesso).](./media/1809_DeviceContextMenu_Windows_CP.png)    
+3. Selecione **Mudar o nome**.  
+4. Escreva um novo nome e selecione **Rename** (Mudar o nome). O nome do dispositivo é atualizado imediatamente na aplicação.  
+
+     ![Captura de ecrã de exemplo da aplicação Portal da Empresa para Windows, home page. O campo de pop-up Rename (Mudar o nome) aparece sobre o dispositivo onde o utilizador pode escrever um novo nome e clicar em Rename (Mudar o nome) ou Cancel (Cancelar).](./media/1808_RenameApp_Popup.png)  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+

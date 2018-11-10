@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799528"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136969"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -39,7 +39,7 @@ Pode utilizar políticas de configuração da aplicação com aplicações gerid
       A descrição do perfil que será apresentada no portal do Azure.
     - **Tipo de inscrição do dispositivo**  
       Selecione **Gerir aplicações**.
-6. Selecione **Aplicação associada** para escolher a aplicação que vai configurar. Selecione a aplicação na lista de aplicações que aprovou e sincronizou com o Intune.
+6. Selecione  **Aplicação associada**  para escolher a aplicação que irá configurar. Selecione a aplicação na lista de aplicações que aprovou e sincronizou com o Intune.
 7. Para cada definição de configuração que a aplicação suporta, escreva o **Nome** e o **Valor** e selecione as reticências (**...**).  
     Para eliminar uma configuração, selecione as reticências (**...**) e selecione **Eliminar**.  
     
@@ -51,13 +51,13 @@ O Intune pode gerar determinados tokens e enviá-los para a aplicação gerida. 
 
 O Intune suporta os seguintes tipos de tokens nas definições de configuração. Não são suportados outros pares chave/valor personalizados.
 
-- \{\{userprincipalname\}\} – por exemplo, **John@contoso.com**
-- \{\{mail\}\} – por exemplo, **John@contoso.com**
-- \{\{partialupn\}\} – por exemplo, **João**
-- \{\{accountid\}\} – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\} – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\} – por exemplo, **John Doe**
-- \{\{PrimarySMTPAddress\}\} – por exemplo, **testuser@ad.domain.com** 
+- \{\{userprincipalname\}\} – por exemplo, John@contoso.com
+- \{\{mail\}\} – por exemplo, John@contoso.com
+- \{\{partialupn\}\} – por exemplo, João
+- \{\{accountid\}\} – por exemplo, fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\} – por exemplo, 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\} – por exemplo, João Teixeira
+- \{\{PrimarySMTPAddress\}\} – por exemplo, testuser@ad.domain.com
 
 
 > [!Note]  

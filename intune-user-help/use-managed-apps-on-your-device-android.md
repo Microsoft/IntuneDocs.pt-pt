@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/24/2016
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,60 +14,71 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: maxles
+ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c57c8bfa9f2727ec201acb506f5a41327fddc75
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146658"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959507"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
+As aplicações geridas são configuradas para cumprir os requisitos de segurança da sua organização e proteger os dados profissionais e escolares. Estas aplicações estão disponíveis para instalação ou utilização automaticamente no seu dispositivo. 
 
-As aplicações geridas são as aplicações que o suporte da empresa pode configurar para ajudar a proteger os dados da empresa a que pode aceder nessa aplicação. Ao aceder aos dados da empresa numa aplicação gerida no seu dispositivo Android, poderá reparar que a aplicação funciona de forma ligeiramente diferente do que o que esperava. Por exemplo, poderá não conseguir copiar e colar dados protegidos da empresa ou poderá não conseguir guardar os dados em determinadas localizações.
+Antes de receber e instalar uma aplicação gerida, a sua organização tem de configurar as respetivas permissões. Estas podem restringir a funcionalidade da aplicação ou as interações do utilizador para impedir que os dados da aplicação sejam partilhados ou visto por pessoas não autorizadas. Por exemplo, uma organização poderá bloquear a utilização da funcionalidade Copiar e Colar na aplicação. Também poderá impedi-lo de guardar dados no armazenamento local do seu dispositivo.
 
-As diferentes aplicações geridas também podem trabalhar em conjunto no seu dispositivo para que possa efetuar as tarefas diárias, mantendo os dados empresariais protegidos. Por exemplo, se abrir um ficheiro da empresa numa aplicação gerida e for necessária outra aplicação gerida para ver esse ficheiro, a aplicação gerida que lhe permite ver o ficheiro abre-se automaticamente. Se não estiver disponível uma aplicação necessária, determinadas ações, como abrir um documento ou aceder a uma ligação Web a partir de um documento gerido, poderão não estar disponíveis.
+Para maximizar a proteção de dados, a sua organização poderá configurar várias aplicações geridas para funcionarem em conjunto. Por exemplo:
+1. O utilizador liga à rede da sua organização numa aplicação de browser gerido, como o Microsoft Edge.
+2. O utilizador clica numa ligação para abrir o ficheiro de apresentação do elemento da rede.
+3. Uma aplicação gerida adequada, como o Microsoft PowerPoint, abre o ficheiro.
 
-Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a que se apresenta abaixo, que lhe permite saber que a aplicação que está a abrir é gerida.
+As organizações podem exigir-lhe que utilize uma aplicação gerida para efetuar uma ação, como abrir um ficheiro de trabalho ou aceder a uma ligação Web. Se não tiver a aplicação, poderá não ser possível continuar a tarefa. Algumas aplicações geridas são disponibilizadas para instalação, mas não são necessárias.
 
-![open-managed-apps-message](./media/managed-apps-message.png)
+## <a name="how-do-i-know-im-using-a-managed-app"></a>Como posso saber se estou a utilizar uma aplicação gerida?
+Ao aceder a dados profissionais ou escolares pela primeira vez numa aplicação gerida, será apresentada uma mensagem semelhante à captura de ecrã de exemplo abaixo. A mensagem pede-lhe que reinicie a aplicação para continuar.
 
-## <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
-Obtém aplicações geridas de duas formas diferentes:
+![Captura de ecrã da mensagem apresentada quando um utilizador abre uma aplicação gerida no seu dispositivo. A mensagem indica o seguinte: "A sua organização está agora a proteger os respetivos dados nesta aplicação. Tem de reiniciar a aplicação para continuar." É seguida do botão OK.](./media/managed-apps-message.png)
 
--   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o suporte da empresa poderá instalá-la no seu dispositivo. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
+## <a name="commonly-managed-apps"></a>Aplicações geridas mais comuns  
+Seguem-se exemplos das aplicações geridas necessárias ou disponíveis mais comuns em instituições de ensino e locais de trabalho:
 
--   Instala uma aplicação da Play Store e, em seguida, inicia sessão com a sua conta de utilizador empresarial gerida pelo Intune.
+-   Microsoft Edge
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?
-Eis alguns exemplos das opções que o suporte da empresa pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
-
--   Acesso a sites específicos
-
--   Transferências de dados entre aplicações
-
--   Guardar ficheiros
-
--   Operações de copiar e colar
-
--   Requisitos de acesso do PIN
-
--   O seu início de sessão com as credenciais da empresa
-
--   Capacidade de cópia de segurança para a cloud
-
--   Capacidade para tirar capturas de ecrã
-
--   Requisitos de encriptação de dados
-
-Algumas aplicações comuns que o seu departamento de TI poderá gerir são:
-
--   Browser Gerido do Intune
-
--   Visualizador do Microsoft Azure Information Protection
+-   Microsoft Outlook
 
 -   Microsoft Word, Excel e PowerPoint
+
+## <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
+Em primeiro lugar, terá de instalar o Portal da Empresa e, se necessário, gerir o seu dispositivo. Depois disso, existem três formas de obter aplicações geridas.
+* A sua organização instala aplicações automaticamente no seu dispositivo no momento da inscrição. Para saber mais sobre a inscrição, veja [Enroll your device in Intune (Inscrever o seu dispositivo no Intune)](enroll-your-device-in-Intune-android.md).
+* A sua organização disponibiliza aplicações geridas no Portal da Empresa. Aceda à aplicação ou ao site Portal da Empresa para procurar, ver e instalar essas aplicações. 
+* Irá instalar uma aplicação através da Google Play Store e, em seguida, iniciar sessão na aplicação com a sua conta escolar ou profissional.  
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?
+A lista seguinte descreve as definições que o suporte da sua empresa pode gerir numa aplicação. Estas definições afetam a forma como visualiza, acede a e utiliza dados escolares ou profissionais no seu dispositivo:
+
+* Acesso a sites específicos  
+
+* Acesso a sites internos da empresa com o Edge e o proxy do Azure Active Directory  
+
+* Versão mínima da aplicação, versão do SO
+
+* Capacidade de partilhar e transferir dados entre aplicações  
+
+* Como e onde guarda ficheiros  
+
+* Funcionalidade Copiar e Colar  
+
+* Requisitos de acesso do PIN  
+
+* Como iniciar sessão com as credenciais da empresa  
+
+* Capacidade de cópia de segurança de dados para a cloud  
+
+* Capacidade para tirar capturas de ecrã  
+
+* Requisitos de encriptação de dados  
 
 Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

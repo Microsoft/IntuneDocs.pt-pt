@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312855"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827858"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Definições de VPN do Windows 10 no Intune
 
@@ -40,10 +40,10 @@ Consoante as definições que escolher, nem todos os valores são configuráveis
   - **Descrição**: introduza um nome descritivo para o servidor, como **Servidor VPN Contoso**.
   - **Endereço IP ou FQDN**: introduza o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados, tal como **192.168.1.1** ou **vpn.contoso.com**.
   - **Servidor predefinido**: define este servidor como o servidor predefinido que os dispositivos utilizam para estabelecer a ligação. Defina apenas um servidor como o predefinido.
-  - **Importar**: navegue até um ficheiro separado por vírgulas que contenha uma lista de servidores no formato: descrição, endereço IP ou FQDN, Servidor predefinido. Escolha **OK** para importar estes servidores para a lista **Servidores**.
+  - **Importar**: navegue até um ficheiro separado por vírgulas que inclua uma lista de servidores no formato: descrição, endereço IP ou FQDN, Servidor predefinido. Escolha **OK** para importar estes servidores para a lista **Servidores**.
   - **Exportar**: exporta a lista de servidores para um ficheiro de valores separados por vírgulas (csv)
 
-- **Registar endereços IP com DNS interno**: selecione **Ativar** para configurar o perfil VPN do Windows 10 para registar dinamicamente os endereços IP atribuídos à interface de VPN com o DNS interno ou selecione **Desativar** para não registar IP endereços de forma dinâmica.
+- **Registar endereços IP com DNS interno**: selecione **Ativar** para configurar o perfil VPN do Windows 10 para registar de forma dinâmica os endereços IP atribuídos à interface de VPN com o DNS interno. Selecione **Desativar** para não registar endereços IP de forma dinâmica.
 
 - **Tipo de ligação**: selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
 
@@ -59,7 +59,7 @@ Consoante as definições que escolher, nem todos os valores são configuráveis
   - **PPTP**
 
   Ao escolher um tipo de ligação de VPN, também poderão ser pedidas as seguintes definições:  
-    - **AlwaysOn**: ative-a para ligar automaticamente à ligação VPN quando: 
+    - **AlwaysOn**: **ative** para ligar automaticamente à ligação VPN quando ocorrerem os seguintes eventos: 
       - Os utilizadores iniciarem sessão nos respetivos dispositivos
       - A rede no dispositivo for alterada
       - O ecrã do dispositivo se ligar novamente após o ter desligado 
@@ -114,7 +114,7 @@ Para obter mais informações sobre a criação de XML de EAP, veja [Configuraç
 
 ## <a name="conditional-access"></a>Acesso Condicional
 
-- **Acesso condicional nesta ligação VPN**: ativa o fluxo de conformidade do dispositivo do cliente. Quando estiver ativado, o cliente VPN tenta comunicar com o Azure Active Directory (AD) para obter um certificado para utilizar na autenticação. A VPN deve estar configurado para utilizar a autenticação de certificado e o servidor VPN tem de confiar no servidor devolvido pelo Azure AD.
+- **Acesso condicional nesta ligação VPN**: ativa o fluxo de conformidade do dispositivo do cliente. Quando estiver ativado, o cliente VPN comunica com o Azure Active Directory (AD) para obter um certificado para utilizar na autenticação. A VPN deve estar configurado para utilizar a autenticação de certificado e o servidor VPN tem de confiar no servidor devolvido pelo Azure AD.
 
 - **Início de sessão único (SSO) com certificado alternativo**: para a conformidade do dispositivo, utilize um certificado diferente do certificado de autenticação da VPN para a autenticação Kerberos. Introduza o certificado com as seguintes definições:
 
@@ -124,7 +124,17 @@ Para obter mais informações sobre a criação de XML de EAP, veja [Configuraç
 
 ## <a name="dns-settings"></a>Definições de DNS
 
-**Domínio e servidores desta ligação VPN**: adicione o domínio e o servidor DNS para a VPN a utilizar. Pode escolher os servidores DNS que a ligação VPN utilizará depois de a ligação ser estabelecida. Para cada servidor, introduza:
+- **Lista de pesquisa de sufixos DNS**: em **Sufixos DNS**, introduza um sufixo DNS e clique em **Adicionar**. Pode adicionar múltiplos sufixos.
+
+  Quando utilizar sufixos DNS, pode procurar um recurso de rede através do respetivo nome abreviado, em vez do nome de domínio completamente qualificado (FQDN). Quando pesquisar com o nome abreviado, o sufixo é determinado automaticamente pelo servidor DNS. Por exemplo, `utah.contoso.com` está na lista de sufixos DNS. Deve enviar o ping para `DEV-comp`. Neste cenário, é resolvido para `DEV-comp.utah.contoso.com`.
+
+  Os sufixos DNS são resolvidos pela ordem listada e a mesma pode ser alterada. Por exemplo, `colorado.contoso.com` e `utah.contoso.com` estão na lista de sufixos DNS e ambos têm um recurso denominado `DEV-comp`. Uma vez que `colorado.contoso.com` é o primeiro da lista, é resolvido como `DEV-comp.colorado.contoso.com`.
+  
+  Para alterar a ordem, clique nos pontos à esquerda do sufixo DNS e, em seguida, arraste o sufixo para a parte superior:
+
+  ![Selecione os três pontos e clique e arraste para mover o sufixo DNS](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **Domínio e servidores desta ligação VPN**: adicione o domínio e o servidor DNS para a VPN a utilizar. Pode escolher os servidores DNS que a ligação VPN utilizará depois de a ligação ser estabelecida. Para cada servidor, introduza:
 - **Domínio**
 - **Servidor DNS**
 - **Proxy**

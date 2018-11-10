@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828249"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236293"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -60,25 +60,72 @@ Introduza as informações de suporte da sua empresa para fornecer ao seu colabo
 | **Informações adicionais**| 120 | Apresentado na página **Contactar TI**. |
 
 
-## <a name="company-branding-customization"></a>Personalização da imagem corporativa da empresa       
+## <a name="company-identity-branding-customization"></a>Personalização da imagem corporativa da identidade da empresa      
 Pode personalizar o Portal da Empresa com o logótipo e o nome da empresa, a cor do tema e o fundo.     
 
-### <a name="theme-color"></a>Cor do tema
+### <a name="theme-color-and-logo-in-the-company-portal"></a>Logótipo e cor do tema no Portal da Empresa
 Aplique a cor do tema ao Portal da Empresa. Selecione uma cor padrão ou introduza um código hexadecimal de seis dígitos para obter uma cor personalizada.
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Tipo de cor**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. |
-|**Escolher código** ou **Código de cor hexadecimal**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. Estas opções são fornecidas com base no **Tipo de cor** que seleciona.  |
+|**Selecionar uma cor padrão ou introduzir um código hexadecimal de seis dígitos**| Escolha **Padrão** para selecionar visualmente uma cor. Escolha **Personalizada** para selecionar uma cor específica com base num valor de código hexadecimal.|
+|**Escolher a cor do tema**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. |
+|**Apresentar**| Selecione se pretende apresentar o **Logótipo e o nome da empresa**, **Apenas o logótipo da empresa** ou **Apenas o nome da empresa**. |
+|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
-### <a name="company-logo"></a>Logótipo da empresa
-Carregue o logótipo da empresa para o tornar visível em toda a experiência de utilizador do Intune.
+Depois de carregar o logótipo, a área de pré-visualização mostrará o logótipo com a cor do tema. Se optar por apresentar o nome da sua empresa, este será mostrado em preto ou branco no Portal da Empresa e será automaticamente escolhido para proporcionar o maior nível de contraste com base na cor do seu tema. A área de pré-visualização no ecrã não apresentará o nome da sua empresa. 
+
+### <a name="logo-to-use-on-white-or-light-backgrounds"></a>Logótipo para utilizar em fundos brancos ou claros
+Escolha o logótipo que ficará melhor em fundos brancos ou claros.
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Mostrar o logótipo da empresa**|Quando ativa esta opção, pode carregar o logótipo da sua empresa que pretende que seja apresentado no Portal da Empresa. Pode carregar dois logótipos: um que é apresentado quando o fundo do Portal da Empresa é branco e outro que é apresentado quando o fundo do Portal da Empresa utiliza a cor do tema que selecionou. |
-|**Carregar um logótipo para utilizar em fundos de temas com cor**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. O logótipo tem de ser um ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 400 pixéis e ter um tamanho igual ou inferior a 750 KB. |
-|**Carregar logótipo para utilizar em fundos claros**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. O logótipo tem de ser um ficheiro .png ou .jpg, ter uma resolução máxima de 400 x 400 pixéis e ter um tamanho igual ou inferior a 750 KB. |
-|**Mostrar o nome da empresa ao lado do logótipo**| Selecione esta opção para mostrar o nome da empresa que introduziu junto ao logótipo carregado. |
+|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
-Depois de guardar as alterações, pode escolher **Pré-visualizar as suas definições no Portal Web do Intune** na parte superior do painel para ver qual será o aspeto das configurações.
+### <a name="brand-image-for-company-portal"></a>Imagem de marca do Portal da Empresa
+
+Apresente uma imagem de marca que reflita a marca da sua empresa. O suporte para uma imagem de marca está a ser adicionado às aplicações do Portal da Empresa, mas poderá não estar visível em todas as plataformas.
+
+|Nome do campo|Mais informações|
+|---|---|
+|**Carregar a imagem de marca**| Esta opção está disponível para permitir que apresente uma imagem de fundo na página de perfil do utilizador na aplicação Portal da Empresa.<p><ul><li>Largura recomendada da imagem: superior a 1125 px, mas não inferior a 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+
+A imagem de marca correta pode melhorar a confiança do utilizador no Portal da Empresa ao apresentar uma imagem sólida da marca da sua empresa. Aqui estão algumas sugestões que poderá considerar para comprar, escolher e otimizar a imagem do Portal da Empresa. 
+
+- Entre em contacto com o Departamento de Marketing ou de Artes Gráficas. Estes departamentos podem já ter um conjunto aprovado de imagens de marca. Também poderão ajudá-lo a otimizar as imagens conforme necessário. 
+
+- Considere tanto a composição horizontal como a vertical. A imagem deve ter um fundo suficiente, de forma a envolver o ponto focal. A imagem pode ser recortada de forma diferente com base na orientação e no tamanho do dispositivo. 
+
+- Evite utilizar uma imagem de stock genérica. A imagem deve refletir a marca da sua empresa e ser familiar aos utilizadores. Se não tiver uma, é melhor não utilizar uma imagem genérica que não faça sentido para o seu utilizador. 
+
+- Remova os metadados desnecessários. O ficheiro de imagem pode vir com metadados, tais como o perfil da câmara, a geolocalização, o título, a legenda, etc. Utilize uma ferramenta de otimização de imagens para retirar estas informações para manter a qualidade e cumprir o limite de tamanho do ficheiro. 
+
+Depois de guardar as alterações, pode optar por **Pré-visualizar as definições** no Portal Web do Intune na parte superior do painel para ver qual será o aspeto das configurações. Tenha em atenção que só poderá pré-visualizar a imagem de marca num dispositivo iOS e não no Portal Web do Intune. 
+
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Atalhos de teclado do Portal da Empresa do Windows
+
+Os utilizadores finais podem ativar ações de navegação, de aplicação e de dispositivo no Portal da Empresa do Windows com atalhos de teclado.
+
+Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Empresa do Windows.
+
+| Área | Descrição | Atalho de teclado |
+|:------------------:|:--------------:|:-----------------:|
+| Menu de navegação | Navegação | Alt+M |
+|  | Casa | Alt+H |
+|  | Todas as aplicações | Alt+A |
+|  | Aplicações instaladas | Alt+I |
+|  | Enviar feedback | Alt+F |
+|  | O meu perfil | Alt+U |
+|  | Definições | Alt+T |
+| Base – Mosaico Dispositivo | Mudar o nome | F2 |
+|  | Remove | Ctrl+D ou Delete |
+|  | Verificar o acesso | Ctrl+M ou F9 |
+| Detalhes do dispositivo | Mudar o nome | F2 |
+|  | Remove | Ctrl+D ou Delete |
+|  | Verificar o acesso | Ctrl+M ou F9 |
+| Detalhes da aplicação | Instalar | Ctrl+I |
+
+## <a name="next-steps"></a>Próximos passos
+
+- [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](store-apps-company-portal-app.md)

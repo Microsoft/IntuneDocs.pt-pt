@@ -3,10 +3,10 @@ title: Criar e implementar a política de proteção de aplicações do Windows 
 titlesuffix: Microsoft Intune
 description: Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Microsoft Intune
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347312"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799630"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -46,19 +46,27 @@ Tem de compreender alguns conceitos ao adicionar uma política WIP:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para poder criar uma política de proteção de aplicações do WIP, tem de configurar o fornecedor de MAM. Saiba mais sobre [como configurar o fornecedor de MAM com o Intune](app-protection-policies-configure-windows-10.md).
+Para poder criar uma política de proteção de aplicações do WIP, tem de configurar o fornecedor de MAM. Saiba mais sobre [como configurar o fornecedor de MAM com o Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> O WIP não suporta várias identidades, apenas pode existir uma identidade gerida de cada vez.
 
 Além disso, tem de ter a seguinte licença e atualização:
 
 -   Licença do [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
 -   [Atualização para Criativos do Windows](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> O WIP não suporta várias identidades, apenas pode existir uma identidade gerida de cada vez.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>Para adicionar uma política de proteção de aplicações WIP
 
 Depois de configurar o Intune na sua organização, pode criar uma política específica do WIP.
+
+> [!TIP]  
+> Para obter informações relacionadas sobre a criação de políticas WIP do Intune, incluindo as definições disponíveis e como configurá-las, veja [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) (Criar uma política Windows Information Protection (WIP) com a MAM no portal do Azure para o Microsoft Intune) na biblioteca de documentação de Segurança do Windows. 
+
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os Serviços** > **Intune**.
@@ -123,7 +131,7 @@ Quando estiver a trabalhar com aplicações com o WIP e aplicações desconhecid
 ### <a name="what-are-the-protection-modes"></a>O que são os modos de proteção?
 
 #### <a name="block"></a>Bloqueio
-O WIP procura práticas de partilha de dados inadequadas e impede o utilizador de concluir a ação. Estas práticas podem incluir a partilha de informações em aplicações não protegidas pela empresa e a partilha de dados empresariais entre outras pessoas e dispositivos fora da sua organização.
+O WIP procura práticas de partilha de dados inadequadas e impede o utilizador de concluir a ação. As ações bloqueadas podem incluir a partilha de informações em aplicações não protegidas pela empresa e a partilha de dados empresariais entre outras pessoas e dispositivos fora da sua organização.
 
 #### <a name="allow-overrides"></a>Permitir Substituições
 O WIP procura partilhas de dados inadequadas e avisará os utilizadores quando estes realizarem alguma ação considerada potencialmente não segura. No entanto, este modo permite ao utilizador substituir a política e partilhar os dados, registando a ação no registo de auditorias.

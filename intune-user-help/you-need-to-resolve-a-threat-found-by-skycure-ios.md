@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a4bdb394407155be8716cf8039f997f3905f3998
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 86cd3f37215ec42cc89c865136e6ecd5dc3b9c11
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148437"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863013"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça detetada pelo Symantec Endpoint Protection Mobile
 
@@ -32,9 +32,9 @@ O Symantec Endpoint Protection (SEP) Mobile é um serviço do Mobile Threat Defe
 * Sincronizar ficheiros empresariais com o OneDrive
 * Aceder a aplicações da empresa
 
-Este artigo descreve como reconhecer os alertas de ameaças do SEP Mobile e o que fazer para os resolver. 
+Este artigo descreve como recuperar o acesso aos recursos da sua empresa quando o SEP Mobile deteta uma ameaça de segurança ou aplicação.  
 
-## <a name="resolve-virus-or-security-threat"></a>Resolver ameaças de vírus ou segurança  
+## <a name="troubleshoot-a-virus-or-security-threat"></a>Resolver problemas relacionados com ameaças de vírus ou segurança
 
 1. Quando tentar aceder ao e-mail ou sites da empresa, receberá uma mensagem semelhante à mostrada na captura de ecrã abaixo. Toque na ligação do **portal de gestão de dispositivos** para abrir o [site do Portal da Empresa](https://portal.manage.microsoft.com/devices).
 
@@ -43,11 +43,13 @@ Este artigo descreve como reconhecer os alertas de ameaças do SEP Mobile e o qu
 2. Selecione o seu dispositivo.  
 3. Leia o aviso que aparece abaixo do seu dispositivo. O aviso indicará que deve abrir o SEP Mobile para resolver a ameaça de vírus ou segurança.    
 
-## <a name="resolve-an-app-threat"></a>Resolver uma ameaça de aplicação  
+    ![Captura de ecrã de exemplo da página do dispositivo no Portal da Empresa que apresenta o aviso do SEP Mobile.](./media/CP-lookout-virus-banner-1808.png)
+
+## <a name="troubleshoot-an-app-threat"></a>Resolver problemas relacionados com uma ameaça de aplicação
 
 Se instalar uma aplicação que seja detetada como uma ameaça para o seu dispositivo, irá receber uma notificação na aplicação SEP Mobile. Se a aplicação afetada permanecer no seu dispositivo, não poderá aceder aos recursos da empresa.  
 
 Para resolver o problema, selecione a aplicação na lista de ameaças no SEP Mobile. Em seguida, siga as instruções que aparecem no ecrã para remover e desinstalar a aplicação.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 
+Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
 

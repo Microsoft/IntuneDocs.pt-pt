@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150329"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863115"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Remover o seu dispositivo do Portal da Empresa
 
@@ -30,18 +30,19 @@ Se decidir que já não quer que o seu dispositivo seja gerido pela sua empresa 
 
 Para remover o dispositivo:
 
-1. No [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980), toque no botão __menu__ ![Uma pequena imagem do botão menu, três barras horizontais paralelas empilhadas.](/Intune/whats-new/media/CP_hamburger_menu.png) e, em seguida, selecione __Os Meus Dispositivos__.
+1. No [site do Portal da Empresa](https://portal.manage.microsoft.com), selecione o botão __Menu__ > __Dispositivos__.  
 
-   ![Uma imagem do site do Portal da Empresa com um menu lateral expandido no lado esquerdo do ecrã, com os botões Base, Todas as Aplicações, Os Meus Dispositivos, Suporte Técnico e Terminar Sessão.](/media/iwp-expanded-sidebar.png)
+2. Selecione o dispositivo que pretende remover.  
 
-2. Na página __Os Meus Dispositivos__, selecione o nome do dispositivo que pretende remover.
+    ![Uma captura de ecrã da página Dispositivos, com dois mosaicos que mostram dispositivos não identificados com um nome genérico. Uma faixa cinzenta está diretamente abaixo dos dispositivos e pede ao utilizador que identifique o dispositivo que está a utilizar ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
-    ![Captura de ecrã a mostrar a página Os Meus Dispositivos, com alguns dispositivos não identificados, acima da faixa de aviso para inscrever dispositivos não listados ou identificar os dispositivos não identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Selecione **Remover**. Se a opção de remoção não estiver visível na parte superior da sua página, selecione **More (…)** (Mais)  > **Remove** (Remover).  
 
-3. O dispositivo será aberto numa janela de pop-up. Toque no botão **Remover**.
+   ![A página de detalhes do dispositivo para um dispositivo selecionado no site do Portal da Empresa, com uma lista de ligações na parte superior que apresenta Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)  
+  
 
-   ![Todas as opções para um dispositivo selecionado no site do Portal da Empresa, incluindo Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/iwp-screen-with-all-options.png)
+    ![Vista ampliada do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)   
 
-4. Leia a mensagem de aviso e, em seguida, toque em **Remover** para remover o dispositivo do Portal da Empresa.
+4. É apresentada uma mensagem a avisá-lo de que está prestes a remover o seu dispositivo. Selecione **Remove** (Remover) para confirmar.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

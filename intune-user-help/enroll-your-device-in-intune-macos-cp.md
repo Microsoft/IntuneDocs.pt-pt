@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147722"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260254"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -80,8 +80,17 @@ Utilize os passos seguintes para inscrever dispositivos macOS com o OS X El Capi
 
 9. O primeiro ecrã apresentado na aplicação Portal da Empresa pede-lhe para **Iniciar Sessão**. Utilize a mesma conta escolar ou profissional que utilizou para iniciar sessão no site do Portal da Empresa.
 
-10. O Portal da Empresa confirma as suas informações de conta e apresenta o estado da sua **Inscrição de Dispositivo** e da **Conformidade do Dispositivo**. Os triângulos amarelos realçam as ações que tem de efetuar para proteger o seu dispositivo macOS para a escola ou o trabalho. Clique em **Iniciar** para iniciar a inscrição. Saiba mais sobre [o que sua organização pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) quando inscreve um dispositivo.
+10. O Portal da Empresa confirma as suas informações de conta e apresenta o estado da sua **Inscrição de Dispositivo** e da **Conformidade do Dispositivo**. Os triângulos amarelos realçam as ações que tem de efetuar para proteger o seu dispositivo macOS para a escola ou o trabalho. Clique em **Iniciar** para iniciar a inscrição. 
 
-11. Poderá ser-lhe pedido que forneça as informações de início de sessão do seu computador. A inscrição do seu dispositivo na gestão poderá demorar alguns minutos. Durante este tempo, poderá fazer outras coisas no seu dispositivo. Irá receber uma mensagem após a conclusão da Configuração de Acesso da Empresa para o informar de que está pronto.  
+11. Se lhe for pedido, escreva as informações de início de sessão do seu computador.  
+
+A inscrição do seu dispositivo na gestão poderá demorar alguns minutos. Durante este tempo, poderá fazer outras coisas no seu dispositivo. Irá receber uma mensagem após a conclusão da Configuração de Acesso da Empresa para o informar de que está pronto.  
+
+## <a name="unverified-profiles"></a>Perfis não verificados
+Quando vir os perfis de gestão de dispositivos móveis (MDM) instalados do seu dispositivo macOS, alguns perfis poderão mostrar um estado **Não verificado**. Desde que o **Perfil de gestão** mostre um estado **Verificado**, não precisa de se preocupar.  
+
+O perfil de gestão é o que define a ligação de canal MDM. Desde que o perfil de gestão seja verificado, todos os outros perfis fornecidos para a máquina, através desse canal, herdam as caraterísticas de segurança do perfil de gestão.
+
+Além disso, uma vez que esses outros perfis não exigem verificações individuais, são gerados e fornecidos aos dispositivos mais rapidamente. 
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
