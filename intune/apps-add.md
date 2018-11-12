@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: e0039223176afb3bed3a9ac2d2ada76b82096c26
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141682"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236633"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune
 
@@ -61,6 +61,7 @@ A tabela seguinte apresenta uma lista dos tipos de aplicações específicos e c
 | Aplicação iOS incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
 | Aplicação Android incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
 | Aplicações Web  | Aplicação Web  | Selecione **Ligação Web** como o **tipo de aplicação** e, em seguida, introduza um URL válido que aponte para a aplicação Web.  |
+| Aplicação do Windows (Win32)  | Aplicação LOB  | Selecione **Aplicação do Windows (Win32)** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, selecione um ficheiro de instalação com a extensão **.intunewin**.  |
 
 Pode adicionar uma aplicação no Microsoft Intune ao selecionar **Aplicações do cliente** > **Aplicações** > **Adicionar**. O painel **Adicionar aplicação** é apresentado e permite-lhe selecionar o **Tipo de aplicação**. 
 
@@ -90,7 +91,7 @@ Como está a determinar quais as aplicações de que a sua força de trabalho pr
 
 Em primeiro lugar, tem de determinar o grupo adequado que deve ter acesso à aplicação com base na confidencialidade dos dados que a aplicação contém. Poderá ter de incluir ou excluir determinados tipos de funções na sua organização. Por exemplo, podem ser precisas apenas determinadas aplicações LOB para o seu grupo de vendas, enquanto as pessoas focadas em engenharia, finanças, RH ou aspetos jurídicos poderão não precisar de utilizar as aplicações LOB. Além disso, o seu grupo de vendas pode precisar de proteção de dados adicional e acesso a serviços empresariais internos nos respetivos dispositivos móveis. Tem de determinar a forma como este grupo se irá ligar aos recursos com a aplicação. Os dados aos quais a aplicação acede residem na cloud ou no local? Além disso, como é que os utilizadores se irão ligar aos recursos com a aplicação? 
 
-O Intune também suporta permitir o acesso a aplicações móveis que exijam o acesso seguro a dados no local, como servidores de aplicações de linha de negócio. Normalmente, tem de disponibilizar este tipo de acesso através de [certificados geridos pelo Intune](certificates-configure.md) para controlo de acesso combinado com um proxy ou gateway de VPN padrão no perímetro, como o Proxy de Aplicações do Azure Active Directory. A [Ferramenta de Encapsulamento de Aplicações e o SDK da Aplicação](apps-prepare-mobile-application-management.md) do Intune podem ajudar a conter os dados acedidos na sua aplicação de linha de negócio, para que não possa transmitir dados empresariais a aplicações ou serviços de consumidor.
+O Intune também suporta permitir o acesso a aplicações cliente que exijam o acesso seguro a dados no local, como servidores de aplicações de linha de negócio. Normalmente, tem de disponibilizar este tipo de acesso através de [certificados geridos pelo Intune](certificates-configure.md) para controlo de acesso combinado com um proxy ou gateway de VPN padrão no perímetro, como o Proxy de Aplicações do Azure Active Directory. A [Ferramenta de Encapsulamento de Aplicações e o SDK da Aplicação](apps-prepare-mobile-application-management.md) do Intune podem ajudar a conter os dados acedidos na sua aplicação de linha de negócio, para que não possa transmitir dados empresariais a aplicações ou serviços de consumidor.
 
 Utilize o [Guia de planeamento, estruturação e implementação do Intune](planning-guide.md) para determinar como identificar os grupos organizacionais associados a cada cenário de aplicação de caso de utilização e caso de subutilização. Para obter mais informações sobre a atribuição de aplicações a grupos, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md).
 
@@ -138,7 +139,7 @@ Todas as aplicações que criar com o tipo de instalação do instalador de soft
 Requisitos de espaço de armazenamento na cloud:
 
 - Todos os ficheiros de instalação da aplicação têm de estar na mesma pasta.
-- O tamanho máximo para qualquer ficheiro que carregar é de 2 GB.
+- O tamanho máximo para qualquer ficheiro que carregar é 8 GB.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Criar e editar categorias para as aplicações
 
@@ -194,3 +195,4 @@ Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
 - [Aplicações do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicações do Office 365 para macOS](apps-add-office365-macos.md)
 - [Aplicações incorporadas](apps-add-built-in.md)
+- [Aplicações Win32](apps-win32-app-management.md) 

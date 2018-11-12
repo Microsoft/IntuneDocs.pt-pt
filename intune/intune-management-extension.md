@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289028"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236344"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gestão do Intune permite-lhe carregar scripts do PowerShell no Intune para executar em dispositivos Windows 10. A extensão de gestão complementa as funcionalidades de gestão de dispositivos móveis (MDM) do Windows 10 e torna mais fácil mudar para a gestão moderna.
@@ -33,7 +33,7 @@ A extensão de gestão do Intune complementa as funcionalidades de MDM do Window
 
 ## <a name="prerequisites"></a>Pré-requisitos
 A extensão de gestão do Intune tem os seguintes pré-requisitos:
-- Os dispositivos têm de estar associados ao Azure AD. Não se incluem os dispositivos associados ao AD Híbrido.
+- Os dispositivos têm de estar associados ao Azure AD. A extensão de gestão do Intune suporta dispositivos Windows Geridos em Conjunto inscritos e associados ao Azure Active Directory e ao Domínio Híbrido.
 - Os dispositivos têm de executar o Windows 10, versão 1607 ou posterior.
 - A inscrição automática de MDM tem de estar [ativada no Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment) e os dispositivos têm de estar inscritos automaticamente no Intune.
 
@@ -56,7 +56,8 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos:
 
 > [!NOTE]
 > - Os scripts do PowerShell não podem ser aplicados a grupos de computadores.
-> - Os scripts do PowerShell são executados em dispositivos apenas quando um utilizador do Azure Active Directory (AD) tem sessão iniciada no dispositivo.
+> - Os utilizadores finais não necessitam de ter sessão iniciada no dispositivo para executarem scripts do PowerShell. 
+> - Os scripts do PowerShell no Intune podem ser direcionados a grupos de segurança de dispositivo do AAD.
 
 A extensão de gestão do Intune sincroniza o Intune uma vez por hora. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell será executado e os resultados de execução serão comunicados. 
  
