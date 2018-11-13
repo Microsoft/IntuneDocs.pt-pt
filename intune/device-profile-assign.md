@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024809"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298076"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -48,9 +48,6 @@ Por exemplo, suponha que pretende atribuir um perfil do dispositivo a todos os d
 A exclusão só contempla os membros diretos dos grupos e não inclui os dispositivos associados a um utilizador. No entanto, os dispositivos que não estiverem associados a um utilizador não receberão a política. Isto acontece porque esses dispositivos não têm qualquer relação com o grupo **Todos os Utilizadores**.
 
 Se incluir o grupo **Todos os Dispositivos** e excluir **Todos os Utilizadores**, todos os dispositivos irão receber a política. Neste cenário, o objetivo é excluir desta política os dispositivos que tiverem um utilizador associado. No entanto, isto não exclui os dispositivos porque a exclusão só compara membros diretos do grupo.
-
->[!TIP]
->As exclusões não estão disponíveis para políticas de conformidade ou atribuições da aplicação. Para excluir membros de uma atribuição, pode utilizar as atribuições **Disponível** e **Não aplicável**. Por exemplo, pode atribuir uma aplicação ao grupo **Todos os utilizadores da empresa** com o objetivo **Disponível** e atribuir a mesma ao grupo **Equipa de Direção** com o objetivo **Não aplicável**. A aplicação é atribuída a todos os utilizadores, *exceto* aos utilizadores no grupo **Equipa de Direção**. Se atribuir a aplicação ao grupo **Todos os utilizadores da empresa** com o objetivo **Necessário**, os utilizadores no grupo **Equipa de Direção** também serão incluídos.
 
 ## <a name="next-steps"></a>Próximos passos
 Veja [Como monitorizar perfis de dispositivos](device-profile-monitor.md) para obter orientações sobre como controlar as atribuições de perfis de dispositivos.
