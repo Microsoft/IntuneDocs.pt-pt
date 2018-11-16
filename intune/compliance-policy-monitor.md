@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
-ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
-ms.translationtype: HT
+ms.openlocfilehash: 8711b4c71c3581bde9ed1de8a5cc02f6b1a07ca7
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410368"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576907"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -88,9 +88,7 @@ Desta forma, apresenta mais detalhes sobre os dispositivos nesse estado, incluin
 
 ![Imagem do dashboard que mostra mais detalhes sobre o dispositivo nesse estado específico](./media/compliance-policy-monitor/drill-down-details.png)
 
-Se quiser ver todos os dispositivos pertencentes a um utilizador específico, pode filtrar o relatório de gráfico ao escrever o e-mail do utilizador:
-
-![Filtrar por endereço de e-mail para mostrar todos os dispositivos desse utilizador específico](./media/compliance-policy-monitor/idc-3.png)
+Se quiser ver todos os dispositivos pertencentes a um utilizador específico, também pode filtrar o relatório de gráfico ao escrever o e-mail do utilizador.
 
 #### <a name="filter-and-columns"></a>Filtro e colunas
 

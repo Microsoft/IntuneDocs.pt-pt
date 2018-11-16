@@ -7,14 +7,14 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
-ms.translationtype: HT
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410774"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561929"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: criar e atribuir uma função personalizada
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Guia de Início Rápido: criar e atribuir uma função personalizada
 
 Neste início rápido do Intune, vai criar e atribuir uma função personalizada com permissões específicas a um serviço de segurança operacional. Em seguida, vai atribuir a função a um grupo desses operadores. Há várias funções predefinidas que pode utilizar de imediato. Contudo, ao criar funções personalizadas como esta, tem controlo de acesso preciso em relação a todas as partes de seu sistema de gestão de dispositivos móveis.
 
@@ -64,7 +64,9 @@ Se não quiser continuar a utilizar a nova função personalizada, pode eliminá
 
 ## <a name="next-steps"></a>Próximos passos
 
-Neste início rápido, criou uma função de operações de segurança personalizada e atribui-a a um grupo. Pode saber mais sobre problemas de segurança no artigo que se segue.
+Neste início rápido, criou uma função de operações de segurança personalizada e atribui-a a um grupo. Para obter mais informações sobre funções no Intune, veja [Controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md).
+
+Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Introdução às políticas de conformidade de dispositivos](device-compliance-get-started.md)
+> [Guia de Início Rápido: criar um perfil de dispositivo de e-mail para iOS](quickstart-email-profile.md)

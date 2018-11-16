@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
-ms.translationtype: HT
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617214"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225678"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Exigir a autenticação multifator para inscrições de dispositivos no Intune
 
@@ -48,24 +48,18 @@ Para exigir MFA na inscrição de um dispositivo, siga estes passos:
 >Não configure **Regras de acesso com base no dispositivo** para a Inscrição no Microsoft Intune.
 
 1. Inicie sessão no [Portal do Microsoft Azure](https://portal.azure.com) com as suas credenciais.
-2. No portal, selecione **Azure Active Directory**.
-2. No **Azure Active Directory**, selecione **Gerir** > **Aplicações empresariais**.
-3. Em **Aplicações empresariais**, selecione **Gerir** > **Todas as aplicações**. É-lhe apresentada uma lista de todas as aplicações do Azure que gere.
-3. A partir da lista, selecione **Inscrição do Microsoft Intune**.
-4. Em **Inscrição do Microsoft Intune**, selecione **Segurança** > **Acesso condicional**.
-5. Selecione **Nova política**.
-6. Em **Nova política**, escreva um nome descritivo para a política.
-7. Na secção **Atribuições**, selecione **Utilizadores e grupos**.
-8. Em **Utilizadores e grupos**, selecione os utilizadores ou grupos que receberão esta política e, em seguida, selecione **Concluído**.
-9. Na secção **Atribuições**, selecione **Aplicações na cloud**.
-10. No separador **Incluir** das **Aplicações na cloud**, clique em **Selecionar aplicações** e, em seguida, **Selecionar** > **Inscrição do Microsoft Intune**. Em seguida, selecione **Concluído**.
-11. Na secção **Atribuições**, selecione **Condições**.
-12. Em **Condições**, não tem de configurar as definições para a MFA.
-13. Na secção **Controlos de acesso**, selecione **Conceder**.
-14. Em **Conceder**, selecione **Conceder acesso** e, em seguida, **Exigir autenticação multifator**.
-    Não selecione **Pedir que o dispositivo seja marcado como compatível** porque um dispositivo não pode ser avaliado pela conformidade até estar inscrito.
-15. Clique em **Selecionar**.
-16. Em **Nova política**, selecione **Ativar política** > **Ativada** e, em seguida, selecione **Criar**.
+2. No portal, aceda ao **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. No **Azure Active Directory**, em Segurança, selecione **[Acesso condicional](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+4. Selecione **Nova política**.
+5. Em **Nova política**, escreva um nome descritivo para a política.
+6. Na secção **Atribuições**, selecione **Utilizadores e grupos**.
+7. Em **Utilizadores e grupos**, selecione **Selecionar utilizadores ou grupos** e a opção **Utilizadores e grupos**. Em seguida, selecione os utilizadores e/ou grupos que receberão esta política e selecione **Concluído**.
+8. Na secção **Atribuições**, selecione **Aplicações na cloud**.
+9. No separador **Incluir** das **Aplicações na cloud**, clique em **Selecionar aplicações** e, em seguida, **Selecionar** > **Inscrição do Microsoft Intune**. Em seguida, selecione **Concluído**.
+10. Na secção **Atribuições**, para **Condições**, não tem de configurar definições para a MFA.
+11. Na secção **Controlos de acesso**, selecione **Conceder**.
+12. Em **Conceder**, selecione **Conceder acesso** e, em seguida, **Exigir autenticação multifator**. Não selecione **Pedir que o dispositivo seja marcado como compatível** porque um dispositivo não pode ser avaliado pela conformidade até estar inscrito. Em seguida, selecione **Selecionar**.
+13. Em **Nova política**, selecione **Ativar política** > **Ativada** e, em seguida, selecione **Criar**.
 
 
 

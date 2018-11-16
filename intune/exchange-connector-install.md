@@ -15,12 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12ab106b44d217d7e7b4b1a466fd5b12a9fb528
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231836"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298110"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector do Intune no local no Microsoft Intune no Azure
 
@@ -43,7 +43,7 @@ A seguinte tabela descreve os requisitos do computador onde irá instalar o Exch
 |            Requisito             |                                                                                                                                                                                                        Mais informações                                                                                                                                                                                                        |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Sistemas operativos          |                                                               O Intune suporta o Exchange Connector no local num computador com qualquer edição do Windows Server 2008 SP2 64 bits, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 ou Windows Server 2016.<br /><br />O conector não é suportado em nenhuma instalação Server Core.                                                                |
-|         Microsoft Exchange         |                                                                           Os conectores no local necessitam do Microsoft Exchange 2010 SP1 ou posterior, ou o Exchange Online Dedicado legado. Para determinar se o ambiente dedicado do Exchange Online está na configuração <strong>nova</strong> ou <strong>legada</strong>, contacte o seu gestor de conta.                                                                           |
+|         Microsoft Exchange         |                                                                           Os conectores no local necessitam do Microsoft Exchange 2010 SP3 ou posterior, ou o Exchange Online Dedicado legado. Para determinar se o ambiente dedicado do Exchange Online está na configuração <strong>nova</strong> ou <strong>legada</strong>, contacte o seu gestor de conta.                                                                           |
 | Autoridade de gestão de dispositivos móveis |                                                                                                                              [Definir o Intune como a autoridade de gestão de dispositivos móveis](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
 |              Hardware              |                                                                                                                                                     O computador onde irá instalar o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e, pelo menos, 10 GB de espaço livre no disco.                                                                                                                                                      |
 |  Sincronização do Active Directory  |                                                                                      Antes de poder utilizar o conector para ligar o Intune ao seu Exchange Server, tem de [configurar a sincronização do Active Directory](users-add.md), para que os seus utilizadores e grupos de segurança locais sejam sincronizados com a instância do Azure Active Directory.                                                                                      |
@@ -70,7 +70,7 @@ Tem de criar uma conta de utilizador do Active Directory que é utilizada pelo E
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Transferir o pacote de instalação de software do Exchange Connector no local
 
-1. Num sistema operativo Windows Server suportado para o Exchange Connector no local, abra o [portal do Azure](http://portal.azure.com) e inicie sessão com uma conta de utilizador que seja administrador no servidor do Exchange no local e tenha uma licença para utilizar o Exchange Server.
+1. Num sistema operativo Windows Server suportado pelo conector do Exchange no local, abra o [portal do Azure](http://portal.azure.com) e inicie sessão com uma conta de utilizador que seja administrador no servidor do Exchange no local e tenha uma licença para utilizar o Exchange Server.
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
@@ -152,7 +152,7 @@ Depois de o Exchange Connector criar uma ligação ao Exchange através da CAS e
 
 Após a configuração com êxito dos Exchange Connectors, pode ver o estado das ligações e a última tentativa de sincronização efetuada com êxito. Para validar as ligações ao Exchange Connector:
 
-1. No Dashboard do Intune, escolha **Acesso no local**.
+1. No dashboard do Intune, selecione **Acesso no local**.
 2. Em **Configuração**, selecione **Conectores do Exchange ActiveSync** para verificar o estado da ligação para cada Exchange Connector.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
-ms.translationtype: HT
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237668"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511044"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
@@ -391,6 +391,28 @@ Depois de ter resolvido os problemas com o token VPP, tem de apagar os dispositi
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Indique aos utilizadores que devem reiniciar o processo de inscrição
 Depois de apagar os dispositivos bloqueados, pode indicar aos utilizadores que devem reiniciar o processo de inscrição.
+
+## <a name="macos-issues"></a>Problemas do macOS
+
+### <a name="macos-enrollment-errors"></a>Erros de inscrição do macOS
+**Mensagem de erro 1:** *Parece que está a utilizar uma máquina virtual. Certifique-se de que configurou totalmente a sua máquina virtual, incluindo o número de série e o modelo de hardware. Se não se tratar de uma máquina virtual, contacte o suporte.*  
+
+**Mensagem de erro 2:** *Estamos a ter problemas ao gerir o seu dispositivo. Este problema pode ocorrer se estiver a utilizar uma máquina virtual, se tiver um número de série restrito ou se este dispositivo já estiver atribuído a outra pessoa. Saiba como resolver estes problemas ou contacte o suporte da sua empresa.*
+
+**Problema:** esta mensagem pode ser resultado de qualquer um dos seguintes motivos:  
+* Uma máquina virtual macOS (VM) não foi configurada corretamente  
+* Ativou as restrições de dispositivos que necessitam que o dispositivo seja propriedade da empresa ou que tenha um número de série do dispositivo registado no Intune  
+* O dispositivo já foi inscrito e continua atribuído a outra pessoa no Intune  
+
+**Resolução:** primeiro, entre em contacto com o utilizador para determinar os problemas que estão a afetar o dispositivo. Em seguida, conclua a mais relevante das seguintes soluções:
+* Se o utilizador estiver a inscrever uma VM para teste, certifique-se de que foi totalmente configurada para que o Intune possa reconhecer o respetivo número de série e modelo de hardware. Saiba mais sobre como [configurar VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) no Intune.  
+* Se a sua organização ativou as restrições de inscrição que bloqueiam dispositivos macOS pessoais, tem de [adicionar o número de série do dispositivo pessoal](corporate-identifiers-add.md#manually-enter-corporate-identifiers) manualmente ao Intune.  
+* Se o dispositivo continuar atribuído a outro utilizador no Intune, o proprietário anterior não utilizou a aplicação Portal da Empresa para o remover ou repor. Para limpar o registo de dispositivo obsoleto do Intune:  
+
+    1. Aceda ao [Intune no portal do Azure](https://portal.manage.microsoft.com) e inicie sessão com as suas credenciais administrativas.
+    2. Aceda a Intune > **Dispositivos** > **Todos os dispositivos**.  
+    3. Localize o dispositivo com o problema de inscrição. Procure pelo nome do dispositivo ou Endereço MAC/HW para restringir os seus resultados.
+    4. Selecione o dispositivo > **Eliminar**. Elimine todas as outras entradas associadas ao dispositivo.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas quando utiliza o System Center Configuration Manager com o Intune
 ### <a name="mobile-devices-disappear"></a>Os dispositivos móveis desaparecem

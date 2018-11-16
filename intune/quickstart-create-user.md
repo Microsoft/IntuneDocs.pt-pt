@@ -7,14 +7,14 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
-ms.translationtype: HT
+ms.openlocfilehash: ffc1f0140f98b17e060df3308af779ddcb77549e
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410757"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510929"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início Rápido: criar um utilizador e atribuir uma licença ao mesmo
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Guia de Início Rápido: criar um utilizador e atribuir uma licença ao mesmo
 
 Neste guia de início rápido, irá criar um utilizador e, em seguida, atribuir uma licença ao mesmo. Ao utilizar o Intune, é necessário que todas as pessoas que pretende que tenham acesso aos dados da empresa tenham uma conta de utilizador. Os administradores do Intune podem configurar posteriormente esses utilizadores para gerirem o controlo de acesso.
 
@@ -22,7 +22,7 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
-Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto [Administrador Global ou um Administrador de Serviços do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de Avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto [Administrador global ou um Administrador de Serviços do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="create-a-user"></a>Criar um utilizador
 
@@ -61,7 +61,9 @@ Se já não precisar deste utilizador, pode eliminá-lo ao navegar até ao [port
 
 ## <a name="next-steps"></a>Próximos passos
 
-Neste guia de início rápido, criou um utilizador e atribuiu uma licença ao mesmo. Agora pode atribuir esse utilizador a um grupo.
+Neste guia de início rápido, criou um utilizador e atribuiu uma licença ao mesmo. Para obter mais informações sobre como adicionar utilizadores ao Intune, veja [Adicionar utilizadores e conceder permissões administrativas no Intune](users-add.md).
+
+Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Criar um grupo](quickstart-create-group.md)
+> [Guia de Início Rápido: criar um grupo para gerir utilizadores](quickstart-create-group.md)

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
-ms.translationtype: HT
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321759"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576805"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Definições de restrição de dispositivos para o Windows Holographic for Business no Intune
 
@@ -27,9 +27,9 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 
 ## <a name="general"></a>Geral
 
-- **Anular inscrições manualmente** – permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
-- **Cortana** – ative ou desative o assistente de voz Cortana.
-- **Geolocalização** – especifica se o dispositivo pode utilizar informações de serviços de localização.
+- **Anular inscrições manualmente** – Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
+- **Cortana** – Ative ou desative o assistente de voz Cortana.
+- **Geolocalização** – Especifica se o dispositivo pode utilizar informações de serviços de localização.
 
 ## <a name="password"></a>Palavra-passe
 -   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
@@ -41,29 +41,29 @@ As seguintes definições de restrição de dispositivos são suportadas em disp
 -   **Instalação de aplicação fidedigna** – permite que as aplicações assinadas com um certificado fidedigno sejam sideloaded.
 -   **Desbloqueio de programador** – permita as definições de programador do Windows, tais como permitir que as aplicações de sideload sejam modificadas pelo utilizador final.
 
-## <a name="edge-browser"></a>Browser Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
--   **Cookies** – permite que o browser guarde cookies de Internet no dispositivo.
+-   **Cookies** – Permite que o browser guarde cookies de Internet no dispositivo.
 -   **Pop-ups** – bloqueia as janelas pop-up no browser (aplica-se apenas ao ambiente de trabalho do Windows 10).
--   **Sugestões de pesquisa** – permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.
--   **Gestor de Palavras-passe** – ative ou desative a funcionalidade Gestor de Palavras-passe do Microsoft Edge.
+-   **Sugestões de pesquisa** – Permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa.
+-   **Gestor de Palavras-Passe** – ativa ou desativa a funcionalidade Gestor de Palavras-Passe do Microsoft Edge.
 - **Enviar cabeçalhos Do Not Track** – configura o browser Microsoft Edge para enviar cabeçalhos Do Not Track para sites que os utilizadores visitam.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **SmartScreen para Microsoft Edge** – ative o Edge SmartScreen para aceder ao site e às transferências de ficheiros.
+- **SmartScreen para o Microsoft Edge** – ativa o Microsoft Edge SmartScreen para aceder ao site e às transferências de ficheiros.
 
 ## <a name="search"></a>Procura
 - **Procurar localização** – especifica se a pesquisa pode utilizar informações de localização. informações
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
--   **Conta Microsoft** – permite que o utilizador associe uma conta Microsoft ao dispositivo.
+-   **Conta Microsoft** – Permite que o utilizador associe uma conta Microsoft ao dispositivo.
 
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
--   **Bluetooth** – controla se o utilizador pode ativar e configurar Bluetooth do dispositivo.
--   **Deteção de Bluetooth** – permite que este dispositivo seja detetado por outros dispositivos com Bluetooth ativado.
--   **Publicidade do Bluetooth** – permite que o dispositivo receba anúncios através de Bluetooth.
+-   **Bluetooth** – Controla se o utilizador pode ativar e configurar Bluetooth do dispositivo.
+-   **Deteção de Bluetooth** – Permite que este dispositivo seja detetado por outros dispositivos com Bluetooth ativado.
+-   **Publicidade do Bluetooth** – Permite que o dispositivo receba anúncios através de Bluetooth.
 
 ## <a name="control-panel-and-settings"></a>Painel de Controlo e Definições
 

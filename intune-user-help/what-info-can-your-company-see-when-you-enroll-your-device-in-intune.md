@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679258"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276120"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Que informações pode a minha empresa ver quando inscrevo o meu dispositivo?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Que informações é que a minha organização pode ver quando inscrevo o meu dispositivo?
 
-Quando inscreve um dispositivo no Microsoft Intune, a sua empresa não pode ver as suas informações pessoais. Ao inscrever um dispositivo, dá permissão à sua empresa para ver partes de informações do seu dispositivo, tal como o modelo e o número de série. A sua empresa utiliza estas informações para ajudar a proteger os dados empresariais no dispositivo.
+Quando inscreve um dispositivo no Microsoft Intune, a sua organização não consegue ver as suas informações pessoais. Ao inscrever um dispositivo, dá permissão à sua organização para ver partes de informações do seu dispositivo, tal como o modelo e o número de série. A sua organização utiliza estas informações para ajudar a proteger os dados empresariais no dispositivo.
 
-**Informações que a sua empresa nunca pode ver:**
+**O que a sua organização nunca conseguirá ver:**
 
 - Histórico de chamadas e navegação na Web
 - Mensagens de e-mail e texto
@@ -35,20 +35,23 @@ Quando inscreve um dispositivo no Microsoft Intune, a sua empresa não pode ver 
 - Calendário
 -   Palavras-passe
 - Imagens, incluindo o que está na aplicação de fotografias ou câmara
+- Ficheiros
 
-**Informações que a sua empresa pode sempre ver:**
+**O que a sua organização conseguirá sempre ver:**
 
-- Modelo do dispositivo, como o Google Pixel
-- Fabricante, como Microsoft
-- Sistema operativo, como iOS
-- Nomes de aplicações, como Microsoft Word
+- Modelo do dispositivo, por exemplo Google Pixel
+- Fabricante do dispositivo, como Microsoft
+- Sistema operativo e versão, por exemplo iOS 12.0.1
+- Nomes de aplicações, como Microsoft Word: nos dispositivos pessoais, a sua organização só consegue ver o seu inventário de aplicações geridas. Nos dispositivos pertencentes à empresa, a sua organização consegue ver todo o seu inventário de aplicações.
 - Proprietário do dispositivo
 - Nome do dispositivo
-- Número de série
+- Número de série do dispositivo
+- IMEI
 
-**Informações que a sua empresa poderá ver:**
+**Informações que a sua organização poderá conseguir ver:**
 
 -  Número de telefone: nos dispositivos pertencentes à **empresa**, estará visível o seu número de telefone completo. Nos dispositivos **pessoais**, apenas os últimos quatro dígitos do número de telefone estarão visíveis. Pode ver o **Tipo de Propriedade** de cada dispositivo individual. Para tal, abra a página **Detalhes do Dispositivo** do dispositivo.
--  Localização: a empresa nunca pode ver a localização do dispositivo, exceto se tiver um dispositivo iOS supervisionado e se tiver sido perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventário de aplicações: se a sua empresa utilizar a Defesa Contra Ameaças para Dispositivos Móveis, esta poderá ver mais detalhes sobre as aplicações que estão no seu dispositivo iOS. Saiba mais sobre a [Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md).
-- Informações de rede: algumas informações sobre ligações de rede para dispositivos Android podem estar disponíveis para o suporte da sua empresa. Por exemplo, se a sua empresa precisar que os dispositivos permaneçam num determinado edifício, o dispositivo identificará a rede à qual está ligado. 
+- Espaço de armazenamento do dispositivo: se não conseguir instalar uma aplicação necessária, a sua organização poderá ver o espaço de armazenamento do seu dispositivo para verificar se o espaço é insuficiente.  
+-  Localização: a organização nunca consegue ver a localização do dispositivo, exceto se tiver um dispositivo iOS supervisionado e este tiver sido perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Inventário de aplicações: se a sua organização utilizar a Defesa Contra Ameaças para Dispositivos Móveis, conseguirá ver mais detalhes sobre as aplicações que estão no seu dispositivo iOS. Saiba mais sobre a [Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md).
+- Informações de rede: algumas informações sobre ligações de rede para dispositivos Android podem estar disponíveis para o suporte da sua organização. Por exemplo, se a sua organização precisar que os dispositivos permaneçam num determinado edifício, o dispositivo identificará a rede à qual está ligado. 
