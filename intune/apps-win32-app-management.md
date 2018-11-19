@@ -1,10 +1,27 @@
 ---
-title: Adicionar aplicações Win32 ao Microsoft Intune titlesuffix: description: Saiba como adicionar, enviar e gerir aplicações Win32 com o Microsoft Intune. Este tópico inclui uma descrição geral das funcionalidades de gestão e da entrega de aplicações Win32 do Intune, bem como informações de resolução de problemas com aplicações Win32. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Adicionar aplicações Win32 ao Microsoft Intune
+titlesuffix: ''
+description: Saiba como adicionar, fornecer e gerir aplicações de Win32 com o Microsoft Intune. Este tópico inclui uma descrição geral das funcionalidades de gestão e da entrega de aplicações Win32 do Intune, bem como informações de resolução de problemas com aplicações Win32.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830122"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Autónomo – gestão de aplicações Win32 (Pré-visualização Pública)
 
 O Intune autónomo permitirá aceder a melhores funcionalidades de gestão de aplicações Win32. Embora seja possível para clientes ligados à cloud utilizarem o Configuration Manager para a gestão de aplicações Win32, os clientes exclusivos do Intune terão melhores funcionalidades de gestão para as suas aplicações Win32 de linha de negócio (LOB). Este tópico fornece uma descrição geral da funcionalidade de gestão de aplicações Win32 do Intune e informações de resolução de problemas.
@@ -43,6 +60,13 @@ Pode transferir a [Microsoft Intune Win32 App Upload Prep Tool](https://github.c
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Este comando mostra informações de utilização da ferramenta.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Este comando irá gerar o ficheiro `.intunewin` a partir da pasta de origem especificada e do ficheiro de configuração. Para o ficheiro de configuração MSI, esta ferramenta irá obter as informações necessárias para o Intune. Se `-q` for especificado, o comando será executado no modo silencioso e, se o ficheiro de saída já existir, será substituído. Além disso, se a pasta de saída não existir, será criada automaticamente.    |
+
+Ao gerar uma *.intunewin* arquivo, colocar todos os ficheiros tem de referenciar numa subpasta da pasta de configuração. Em seguida, utilize um caminho relativo para referenciar o ficheiro específico, que precisa. Por exemplo:
+
+**Pasta de origem de configuração:** *c:\testapp\v1.0*<br>
+**Ficheiro de licença:** *c:\testapp\v1.0\licenses\license.txt*
+
+Consulte a *license.txt* ficheiro ao utilizar o caminho relativo *licenses\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Criar, atribuir e monitorizar uma aplicação Win32
 
@@ -223,6 +247,6 @@ Os registos de agente no computador cliente encontram-se normalmente em `C:\Prog
 - Verificar a versão do SO – Windows 10 1607 e posterior.  
 - Verificar a SKU do Windows 10 – o Windows 10 S ou versões do Windows em execução com o modo S ativado não suportam a instalação da MSI.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).

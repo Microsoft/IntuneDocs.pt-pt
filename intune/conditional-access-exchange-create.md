@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232227"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709143"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 
@@ -66,7 +66,7 @@ Para poder configurar o acesso condicional, verifique o seguinte:
 - Clientes de correio EAS em **dispositivos com perfil de trabalho do Android:** apenas as aplicações **Gmail** e **Nine Work para Android Enterprise** são suportadas no **perfil de trabalho** em dispositivos com perfil de trabalho do Android. Para obter acesso condicional ao seu trabalho com perfis de trabalho do Android, tem de implementar um perfil de e-mail para a aplicação Gmail ou Nine Work para Android Enterprise, bem como implementar essas aplicações como uma instalação obrigatória.
 
 > [!NOTE]
-> A aplicação Microsoft Outlook não é suportada no Android e iOS. 
+> O Microsoft Outlook para Android e iOS não é suportado através do conector do Exchange no local. Se pretender tirar partido das políticas do Azure Active Directory condicional acesso e políticas de proteção de aplicações do Intune com o Outlook para iOS e Android para suas caixas de correio no local, consulte [Using híbrida autenticação moderna com o Outlook para iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### <a name="support-for-pcs"></a>Suporte de PCs
 
@@ -77,11 +77,11 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 1. Aceda ao [portal do Azure](https://portal.azure.com/) e inicie sessão com as credenciais do Intune.
 
-1. Depois de iniciar sessão com êxito, verá o **Dashboard do Azure**.
+1. Depois de se com êxito, consulte a **Dashboard do Azure**.
 
-1. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+1. Escolher **todos os serviços** no menu à esquerda, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-1. Escolha **Intune**, será apresentado o **Dashboard do Intune**.
+1. Escolher **Intune**, verá o **Dashboard do Intune**.
 
 1. Selecione **Acesso no local**. O painel **Acesso no local** mostra o estado da política de acesso condicional e os dispositivos que são afetados pelo mesma.
 

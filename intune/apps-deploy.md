@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
-ms.translationtype: HT
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903425"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610112"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -58,7 +58,7 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 6. Na secção **Gerir** do menu, selecione **Atribuições**.
 7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 8. Para a aplicação específica, selecione um **tipo de atribuição**:
-   - **Disponível para dispositivos inscritos**: os utilizadores instalam a aplicação a partir da aplicação ou site Portal da Empresa.
+   - **Disponível para dispositivos inscritos**: atribuir a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação Portal da empresa.
    - **Disponível com ou sem inscrição**: atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. As aplicações da Google Play Store Gerida não suportam esta opção. 
    - **Obrigatório**: a aplicação é instalada em dispositivos nos grupos selecionados.
    - **Desinstalar**: a aplicação é desinstalada dos dispositivos nos grupos selecionados.
@@ -119,6 +119,6 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com inten�
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
 > As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para saber mais sobre a monitorização de atribuições de aplicações, veja [Como monitorizar aplicações](apps-monitor.md).

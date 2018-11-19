@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c929fd8c01eda062d54b818996bebe02807e2f55
+ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576975"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "51859567"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -120,9 +120,6 @@ Esta atualização inclui o controlador de chamadas para macOS para avaliar disp
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>Relatório de abandono de inscrições <!-- 1382924 -->
 Um novo relatório que fornece detalhes sobre inscrições abandonadas está disponível em **Inscrição de dispositivos** > **Monitorização**. Para obter mais informações, veja [Relatório de abandono do Portal da Empresa](enrollment-report-company-portal-abandon.md).
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos <!--2715522 -->
-Poderá atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos. Para o fazer, selecione **Inscrição de dispositivos** > **Inscrição do Windows** > **Perfis de Implementação** > selecione um perfil >  **Atribuições** > em **Atribuir a**, selecione **Todos os dispositivos**. Para obter mais informações sobre perfis do Autopilot, veja [Inscrever dispositivos Windows com o Windows AutoPilot](enrollment-autopilot.md).
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Nova funcionalidade de termos de utilização do Azure Active Directory <!-- 2870393 -->
 O Azure Active Directory tem uma funcionalidade de termos de utilização que pode utilizar em vez dos termos e condições do Intune existentes. A funcionalidade de termos de utilização do Azure AD proporciona mais flexibilidade relativamente aos termos a apresentar e a quando o fazer, melhor suporte para a localização, mais controlo sobre a forma como os termos são compostos e relatórios melhorados. A funcionalidade de termos de utilização do Azure AD necessita do Azure Active Directory Premium P1, que também faz parte do conjunto Enterprise Mobility + Security E3. Para saber mais, veja o artigo [Gerir os termos e condições da sua empresa para o acesso dos utilizadores](terms-and-conditions-create.md).
@@ -645,7 +642,7 @@ Em **Conformidade do dispositivo** > **Políticas** > selecione uma política > 
 - com êxito
 - erro
 - conflito
-- pendente
+- Pendente
 - não aplicável Também é apresentada uma imagem que mostra a contagem de dispositivos de uma plataforma diferente. Por exemplo, se observar um perfil iOS, o novo mosaico mostra a contagem de dispositivos não iOS atribuídos a este perfil. Veja [Políticas de conformidade do dispositivo](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>A conformidade do dispositivo suporta soluções de antivírus de terceiros <!-- 2325484 -->
@@ -1064,7 +1061,7 @@ Depois de dezembro, os utilizadores finais que tenham dispositivos que não se i
 - Verifique os relatórios do Intune na consola Intune no Azure para ver que utilizadores ou dispositivos podem ser afetados. Aceda a Dispositivos > Todos os dispositivos e filtre por SO. Pode adicionar mais colunas para ajudar a identificar quem na sua organização tem dispositivos com o macOS 10.11. 
 - Se estiver a utilizar uma gestão de dispositivos móveis (MDM) híbrida, aceda a Ativos e Conformidade > Dispositivos na consola do Configuration Manager, clique com o botão direito do rato nas colunas para adicionar as colunas de Sistema Operativo e de Versão do Cliente e ordene por SO. Tenha em atenção que a MDM híbrida foi preterida e que deve mudar para o Intune no Azure o mais rapidamente possível. 
  
-#### <a name="additional-information"></a>Informações Adicionais
+#### <a name="additional-information"></a>Informações adicionais
 Para obter mais informações, veja [Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
  
 
@@ -1084,7 +1081,7 @@ Tenha em atenção que apenas os utilizadores com as funções Administrador Glo
 - Se tiver utilizadores sem as funções Administrador Global ou Administrador do Serviço Intune a criar pedidos de suporte no MPO, atribua-lhes a função Administrador de Assistência Técnica no Azure Active Directory, para que possam continuar a criar pedidos de suporte no portal do Azure.
 - Clique em Informações Adicionais para obter mais informações e ligações úteis.
 
-#### <a name="additional-information"></a>Informações Adicionais
+#### <a name="additional-information"></a>Informações adicionais
 Para obter mais informações, veja a [mensagem de blogue da equipa de suporte do Microsoft Intune](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 

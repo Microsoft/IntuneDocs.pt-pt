@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
-ms.translationtype: HT
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187806"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610095"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -45,23 +45,25 @@ Este artigo mostra como ver todos os seus dispositivos e as respetivas proprieda
      - Iniciar uma sessão de assistência remota
    - Utilize as **Propriedades** para atribuir uma [categoria de dispositivo que tenha criado](device-group-mapping.md) e alterar a propriedade do dispositivo para um dispositivo pessoal ou um dispositivo da empresa.
    - **Hardware**: inclui muitos detalhes sobre o dispositivo, incluindo o ID do dispositivo, o sistema operativo e a versão, o espaço de armazenamento, o modelo e o fabricante, as definições de acesso condicional e mais detalhes.
-   - **Aplicações detetadas**: apresenta uma lista de todas as aplicações que o Intune encontrou instaladas no dispositivo e das versões das aplicações. Também pode **Exportar** a lista de aplicações para um ficheiro .csv.
+   - **Aplicações detetadas**: apresenta uma lista de todas as aplicações que o Intune encontrou instaladas no dispositivo e das versões das aplicações. Também pode **Exportar** a lista de aplicações para um ficheiro .csv. Esta lista é atualizada a cada 7 dias.
    - **Conformidade do dispositivo**: apresenta uma lista de todas as políticas de conformidade atribuídas e indica se o dispositivo está ou não em conformidade.
    - **Configuração do dispositivo**: mostra todas as políticas de configuração de dispositivos atribuídas ao dispositivo e indica se a política foi concluída com êxito ou falhou.
 
 O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes à empresa. As aplicações não são verificadas nos dispositivos pessoais. Para PCs com o Windows 10, apenas é apresentada a lista de aplicações modernas em dispositivos pertencentes à empresa. O Intune não recolhe informações de aplicações Win32 no dispositivo. Consoante a utilização da operadora pelos dispositivos, nem todas as aplicações devem ser recolhidas.
 
-|Platform|Em Dispositivos Pessoais|Para Dispositivos Pertencentes à Empresa|  
+|Platform|Para dispositivos pessoais|Para dispositivos pertencentes à empresa|  
 |--------------|---------------------------------|--------------------------------|  
 |Windows 10 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|
 |Windows 8.1 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|  
-|Windows Phone 8|Apenas aplicações geridas|Apenas aplicações geridas|  
+|Windows Phone 8|Apenas aplicações geridas|Apenas aplicações geridas|  
 |Windows RT|Apenas aplicações geridas|Apenas aplicações geridas|  
 |iOS|Apenas aplicações geridas|Todas as aplicações instaladas no dispositivo|
 |macOS|Todas as aplicações instaladas no dispositivo|Todas as aplicações instaladas no dispositivo|  
 |Android|Apenas aplicações geridas|Todas as aplicações instaladas no dispositivo|  
+|Android Enterprise|Apenas aplicações geridas|Apenas as aplicações instaladas no perfil de trabalho|  
 
 ## <a name="hardware-device-details"></a>Detalhes de dispositivos de hardware
+Consoante a operadora utilizada pelos dispositivos, nem todos os detalhes podem ser recolhidos
 
 |Detalhe|Descrição|Platform| 
 |--------------|----------------------|----|  
@@ -98,5 +100,5 @@ O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes 
 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Veja o que mais pode fazer para [gerir os seus dispositivos](device-management.md) com o Intune.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
-ms.translationtype: HT
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978251"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610027"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Pode utilizar o Microsoft Intune para gerir PCs com Windows [como dispositivos móveis com a gestão de dispositivos móveis (MDM)](windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes [utilizem a solução de gestão MDM](windows-enroll.md) sempre que possível.
+> Pode utilizar o Microsoft Intune para gerir PCs com Windows [como dispositivos móveis com a gestão de dispositivos móveis (MDM)](windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes [utilizem a solução de gestão MDM](windows-enroll.md) sempre que possível. Para obter mais informações, consulte [comparar a gestão de Windows PCs como computadores ou dispositivos móveis](pc-management-comparison.md) 
 
 O Intune oferece uma solução abrangente de gestão de dispositivos móveis para organizações. O Intune pode gerir PCs Windows como dispositivos móveis através das capacidades de gestão de dispositivos modernas incorporadas no sistema operativo do Windows 10. Para satisfazer as necessidades de gestão da sua organização, o Intune também pode gerir PCs Windows como computadores com o software de cliente do Intune. Este método de gestão utiliza capacidades de gestão de computadores tradicionais no sistema operativo Windows legado.
 
@@ -40,19 +40,21 @@ O Intune suporta a gestão de PCs Windows como computadores através do cliente 
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Requisitos para a gestão do cliente de PC do Intune
 
-**Hardware**: seguem-se os requisitos mínimos de hardware para instalar o software de cliente do Intune:
+**Hardware**:  
+Seguem-se os requisitos mínimos de hardware para instalar o software de cliente do Intune:
 
 |Requisito|Mais informações|
 |---------------|--------------------|
 |Rede|O cliente requer o computador para ter ligação à Internet.|
 |Processador e Memória|Consulte os requisitos de processador e RAM do sistema operativo do computador.|
-|Espaço em disco|200 MB de espaço disponível no disco antes da instalação do software do cliente.|
+|Espaço em disco|200 MB espaço em disco disponível antes do software de cliente é instalado.|
 
-**Software**: seguem-se os requisitos de software para instalar o software de cliente:
+**Software**:  
+Seguem-se os requisitos de software para instalar o software de cliente:
 
 |Requisito|Mais informações|
 |---------------|--------------------|
-|Sistema operativo | Dispositivo Windows com o Windows 7 SP1 e Windows 8.1 ou posterior. </br></br>**As versões Home Edition não são suportadas.**|
+|Sistema operativo | Dispositivo Windows com Windows 7 SP1 e Windows 8.1 ou posterior. </br></br>**As versões Home Edition não são suportadas.**|
 |Permissões administrativas|A conta que instala o software de cliente tem de ter permissões de administrador local no dispositivo.|
 |Windows Installer 3.1|O computador tem de ter instalado, no mínimo, o Windows Installer 3.1.<br /><br />Para ver a versão existente do Windows Installer num computador:<br /><br />  No PC, clique com o botão direito do rato em **%windir%\System32\msiexec.exe** e, em seguida, clique em **Propriedades**.<br /><br />Pode transferir a versão mais recente do Windows Installer em [Redistribuíveis do Windows Installer](http://go.microsoft.com/fwlink/?LinkID=234258) no site da Microsoft Developer Network.|
 |Remover software de cliente incompatível|Antes de instalar o software de cliente do Intune, desinstale todo o software de cliente do Configuration Manager, Operations Manager e Service Manager desse PC.|

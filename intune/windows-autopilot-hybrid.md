@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
-ms.translationtype: HT
+ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298093"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654913"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementar dispositivos híbridos associados ao Azure Active Directory com o Intune e o Windows Autopilot (Pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar dispositivos híbridos associados ao Azure Active Directory. Para o fazer, siga os passos abaixo.
@@ -110,12 +110,13 @@ A unidade organizacional com o direito de criar computadores tem de corresponder
 
 O Conector do Intune para o Azure Active Directory tem de ser instalado num computador com o Windows Server 2016 e acesso à Internet e ao Azure Active Directory. Para aumentar o dimensionamento e a disponibilidade ou suportar múltiplos domínios do Azure Active Directory, pode instalar múltiplos conectores no seu ambiente. Recomendamos a instalação do conector num servidor que não execute outros conectores do Intune.
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Conector do Intune para o Active Directory (Pré-visualização)** > **Adicionar conector**. 
-2. Siga as instruções para transferir o conector.
-3. Abra o ficheiro de configuração do conector transferido para instalar o conector (ODJConnectorBootstrapper.exe).
-4. No fim da configuração, selecione **Configurar**.
-5. Selecione **Iniciar Sessão**.
-6. Introduza credenciais de utilizador com a função Administrador Global ou Administrador do Intune.
+1. Certifique-se de que tem um pacote de idiomas instalado e configurado conforme descrito em [os requisitos de idioma do conector do Intune (pré-visualização)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
+2. No [Intune](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Conector do Intune para o Active Directory (Pré-visualização)** > **Adicionar conector**. 
+3. Siga as instruções para transferir o conector.
+4. Abra o ficheiro de configuração do conector transferido para instalar o conector (ODJConnectorBootstrapper.exe).
+5. No fim da configuração, selecione **Configurar**.
+6. Selecione **Iniciar Sessão**.
+7. Introduza credenciais de utilizador com a função Administrador Global ou Administrador do Intune.
 8. Aceda a **Inscrição de dispositivos** > **Inscrição no Windows** > **Conector do Intune para o Active Directory (Pré-visualização)** e confirme que o estado de ligação é **Ativo**.
 
 ### <a name="configure-web-proxy-settings"></a>Configurar definições de proxy Web
@@ -206,6 +207,6 @@ O estado do perfil dos dispositivos irá demorar cerca de 15 minutos a mudar de 
 4. Selecione **OK** > **Criar**. O perfil é criado e apresentado na lista.
 5. Para atribuir o perfil, siga os passos em [Atribuir um perfil do dispositivo](device-profile-assign.md#assign-a-device-profile). 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Após configurar o Windows Autopilot, saiba como gerir os seus dispositivos. Para obter mais informações, veja [O que é a gestão de dispositivos do Microsoft Intune?](device-management.md)

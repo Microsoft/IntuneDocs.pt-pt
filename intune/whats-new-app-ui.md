@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 924326de480073d7bca8e6bec2d6f7e9c11d0cc1
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 9749f9b623c418b51b5c3292e72b699ff5cdd75c
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236650"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654930"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações poderá ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-november-12-2018"></a>Semana de 12 de Novembro de 2018
+
+### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Atalhos de teclado do Portal da Empresa do Windows <!-- 2771518 -->
+Os utilizadores finais poderão agora ativar ações de aplicação e de dispositivo no Portal da Empresa do Windows com atalhos de teclado (aceleradores).
 
 ## <a name="week-of-october-22-2018"></a>Semana de 22 de outubro de 2018
 
@@ -49,7 +54,7 @@ Verá algumas das atualizações que se seguem:
 - Desempenho melhorado para grandes catálogos de aplicações
 - Acessibilidade melhorada para todos os utilizadores  
 
-|Atualizado|Anterior|
+|Atualizada|Anterior|
 |---|---|
 |![A página do dispositivo atualizada mostra o dispositivo corretamente alinhado acima das informações do dispositivo, deixando de aparecer acima da lista completa.](./media/iwp-device-after-1803.png)|![A versão anterior da página do dispositivo.](./media/iwp-device-before-1803.png)|
 |![A página de instalação da aplicação atualizada mostra a aplicação por cima de uma descrição e várias informações sobre a instalação, incluindo a data de publicação, a versão e o tipo de aplicação.](./media/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação da aplicação.](./media/iwp-app-install-before-1803.png)|  
