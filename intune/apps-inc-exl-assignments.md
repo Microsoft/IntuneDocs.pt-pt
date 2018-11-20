@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: db729bb0b2f22124665f7cd5e0cd0b21d9b11705
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
-ms.translationtype: HT
+ms.openlocfilehash: fd0a241d984327af88ff2741d450dd918dbce889
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058728"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167489"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicações no Microsoft Intune
 
@@ -78,7 +78,7 @@ Pode editar atribuições, na lista de **Atribuições** da aplicação, selecio
 
 ![Atribuições de aplicações do Intune – concluir](./media/apps-inc-exl-05.png)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para obter mais informações sobre como incluir e excluir atribuições de grupo para aplicações, veja o [Blogue do Microsoft Intune](https://aka.ms/new_app_assignment_process).
 - Saiba como [monitorizar informações e atribuições da aplicação](apps-monitor.md).

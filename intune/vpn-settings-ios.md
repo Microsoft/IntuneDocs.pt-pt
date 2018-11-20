@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236514"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947314"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Configurar definições de VPN em dispositivos iOS no Microsoft Intune
 
 O Microsoft Intune inclui várias definições de VPN que podem ser implementadas nos seus dispositivos iOS. Estas definições são utilizadas para criar e configurar ligações VPN à rede da sua organização. Este artigo descreve estas definições. Algumas definições só estão disponíveis para alguns clientes VPN, tais como o Citrix, Zscaler, entre outros.
+
+## <a name="connection-type"></a>Tipo de ligação
+
+Selecione o tipo de ligação de VPN da seguinte lista de fornecedores:
+
+- **Check Point Capsule VPN**
+- **Cisco Legacy AnyConnect**: aplicável à versão 4.0.5x e versões anteriores da aplicação [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924).
+- **Cisco AnyConnect**: aplicável à versão 4.0.7x e versões posteriores da aplicação [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690).
+- **SonicWall Mobile Connect**
+- **F5 Access Legacy**: aplicável a versão 2.1 e versões anteriores da aplicação F5 Access.
+- **F5 Access**: aplicável a versão 3.0 e versões posteriores da aplicação F5 Access.
+- **Palo Alto Networks GlobalProtect (Legacy)**: aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
+- **Palo Alto Networks GlobalProtect**: aplicável a versão 5.0 e versões posteriores da aplicação Palo Alto Networks GlobalProtect.
+- **Pulse Secure**
+- **Cisco (IPSec)**
+- **VPN do Citrix**
+- **Citrix SSO**
+- **Zscaler**: requer que integre o Zscaler Private Access (ZPA) na sua conta do Azure AD. Para obter passos detalhados, veja a [documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **VPN Personalizada**
+
+> [!NOTE]
+> A Cisco, Citrix, F5 e Palo Alto anunciaram que os seus clientes legados não funcionam no iOS 12. Deverá migrar para as novas aplicações logo que possível. Para obter mais informações, veja o [Blogue da Equipa de Suporte do Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
 
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
@@ -37,44 +59,28 @@ As definições apresentadas na seguinte lista são determinadas pelo tipo de li
 
     > [!NOTE]
     > Se o nome de utilizador e a palavra-passe forem utilizados como o método de autenticação do Cisco IPsec VPN, os primeiros têm de enviar o parâmetro SharedSecret através de um perfil personalizado do Apple Configurator.
-  
-- **Tipo de ligação**: selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
-  - **Check Point Capsule VPN**
-  - **Cisco Legacy AnyConnect**: aplicável à versão 4.0.5x e versões anteriores da aplicação [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924).
-  - **Cisco AnyConnect**: aplicável à versão 4.0.7x e versões posteriores da aplicação [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690).
-  - **SonicWall Mobile Connect**
-  - **F5 Access Legacy**: aplicável a versão 2.1 e versões anteriores da aplicação F5 Access.
-  - **F5 Access**: aplicável a versão 3.0 e versões posteriores da aplicação F5 Access.
-  - **Palo Alto Networks GlobalProtect (Legacy)**: aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
-  - **Palo Alto Networks GlobalProtect**: aplicável a versão 5.0 e versões posteriores da aplicação Palo Alto Networks GlobalProtect.
-  - **Pulse Secure**
-  - **Cisco (IPSec)**
-  - **VPN do Citrix**
-  - **Citrix SSO**
-  - **Zscaler**: requer que integre o Zscaler Private Access (ZPA) na sua conta do Azure AD. Para obter passos detalhados, veja a [documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
-  - **VPN Personalizada**    
 
-    > [!NOTE]
-    > A Cisco, Citrix, F5 e Palo Alto anunciaram que os seus clientes legados não funcionam no iOS 12. Deverá migrar para as novas aplicações logo que possível. Para obter mais informações, veja o [Blogue da Equipa de Suporte do Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
-
-* **URLs excluídos** (apenas Zscaler): quando estiver ligado à VPN do Zscaler, os URLs apresentados estarão acessíveis fora da cloud do Zscaler. 
+- **URLs excluídos** (apenas Zscaler): quando estiver ligado à VPN do Zscaler, os URLs apresentados estarão acessíveis fora da cloud do Zscaler. 
 
 - **Dividir túnel**: **ative** ou **desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
 
-- **Ativar o controlo de acesso à rede (NAC)**: esta definição é um marcador de posição para clientes VPN, como o Citrix, que permite que um ID de dispositivo esteja no perfil VPN para utilização com o controlo de acesso à rede (NAC). Ao selecionar **Concordo**, este ID de dispositivo é incluído no perfil VPN. Atualmente, não existem clientes VPN ou soluções de parceiros NAC que suportem este novo ID, pelo que os dispositivos terão permissão para ligar ao VPN, independentemente do estado de conformidade. Atualizaremos este documento quando os nossos parceiros adicionarem suporte para este ID.
+- **Identificador VPN** (VPN personalizada, Zscaler e Citrix): um identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor VPN.
+  - **Introduzir pares chave/valor para os atributos de VPN personalizados da sua organização**: adicione ou importe **Chaves** e **Valores** para personalizar a sua ligação VPN. Lembre-se de que estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
+
+- **Ativar o controlo de acesso de rede (NAC)** (apenas no Citrix SSO): ao escolher **concordo**, o dispositivo ID está incluído no perfil da VPN. Este ID pode ser utilizado para autenticação da VPN para permitir ou impedir o acesso à rede.
+
+  **Ao utilizar o Citrix SSO com Gateway**, não se esqueça de:
+
+  - Confirme que está a utilizar o Gateway da Citrix 12.0.59 ou superior.
+  - Certifique-se os utilizadores terem SSO de Citrix 1.1.6 ou posterior instalado nos respetivos dispositivos.
+  - Integrar o Citrix Gateway com o Intune para NAC, conforme descrito no [integrar o Microsoft Intune/Enterprise Mobility Suite com NetScaler (cenário LDAP + OTP)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) guia de implementação da Citrix.
+  - Ative o NAC no perfil da VPN.
 
   Detalhes importantes:  
 
-  - Quando esta definição está ativada, a VPN é desligada a cada 24 horas.
-  - O ID de dispositivo faz parte do perfil, mas não pode ser visto no Intune nem no perfil. Este ID não é armazenado nem partilhado pela Microsoft. Quando isto for suportado pelos parceiros de VPN, o cliente VPN, como o Citrix SSO, poderá obter o ID e consultar o Intune para confirmar que o dispositivo está inscrito e se o perfil VPN está ou não em conformidade.
+  - Quando o NAC estiver ativado, a VPN estiver desligada a cada 24 horas.
+  - O ID do dispositivo faz parte do perfil, mas não pode ser visto no Intune. Este ID não é armazenado nem partilhado pela Microsoft. Quando isto for suportado pelos parceiros de VPN, o cliente VPN, como o Citrix SSO, poderá obter o ID e consultar o Intune para confirmar que o dispositivo está inscrito e se o perfil VPN está ou não em conformidade.
   - Para remover esta definição, volte a criar o perfil e não selecione a opção **Concordo**. Em seguida, atribua novamente o perfil.
-
-## <a name="custom-vpn-settings"></a>Definições de VPN Personalizada
-
-Se tiver selecionado **VPN Personalizada** como o tipo de ligação, configure as definições seguintes. Estas definições também são apresentadas para ligações Zscaler e Citrix.
-
-- **Identificador VPN**: um identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor de VPN.
-- **Introduzir pares chave/valor para os atributos de VPN personalizados da sua organização**: adicione ou importe **Chaves** e **Valores** para personalizar a sua ligação VPN. Lembre-se de que estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
 
 ## <a name="automatic-vpn-settings"></a>Definições Automáticas de VPN
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212534"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167540"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -321,7 +321,7 @@ Neste passo, irá:
     > [!TIP]
     > Se fechar o assistente antes de iniciar a IU do Certificate Connector, pode abri-lo novamente ao executar o seguinte comando:
     >
-    > <caminho_de_Instalação>\NDESConnectorUI\NDESConnectorUI.exe
+    > \NDESConnectorUI\NDESConnectorUI.exe < install_Path >
 
 7. Na IU do **Certificate Connector** :
 
@@ -365,6 +365,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
      - iOS
      - Windows 8.1 e posterior
      - Windows 10 e posterior
+     - Android Enterprise
 
    - **Formato do nome do requerente**: selecione de que forma o Intune cria automaticamente o nome do requerente no pedido de certificado. As opções variam se selecionar o tipo de certificado **Utilizador** ou **Dispositivo**. 
 
@@ -517,7 +518,7 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 > [!NOTE]
 > Para obter detalhes sobre os Códigos de Diagnóstico Relacionados para cada evento, utilize a tabela **Códigos de diagnóstico** (neste artigo).
 
-| ID de Evento      | Nome do Evento    | Descrição do Evento | Códigos de Diagnóstico Relacionados |
+| ID do Evento      | Nome do Evento    | Descrição do Evento | Códigos de Diagnóstico Relacionados |
 | ------------- | ------------- | -------------     | -------------            |
 | 10010 | StartedConnectorService  | Serviço de conector iniciado | 0x00000000, 0x0FFFFFFF |
 | 10020 | StoppedConnectorService  | Serviço de conector parado | 0x00000000, 0x0FFFFFFF |
@@ -556,7 +557,7 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 | 0x00000411 | CRPSCEPChallenge_Expired  | Pedido recusado devido a um desafio de certificado expirado. O dispositivo cliente pode tentar novamente depois de obter um novo desafio do servidor de gestão. |
 | 0x0FFFFFFFF | Unknown_Error  | Não conseguimos concluir o pedido porque ocorreu um erro do lado do servidor. Tente novamente. |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Utilizar certificados PKCS](certficates-pfx-configure.md) ou [emitir certificados PKCS de um serviço Web de gestão de PKI da Symantec](certificates-symantec-configure.md)
 - [Adicionar um CA de terceiros para utilizar o SCEP com o Intune](certificate-authority-add-scep-overview.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
-ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
-ms.translationtype: HT
+ms.openlocfilehash: 89be4d6940910df4166ec9a485b78e066f94b755
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51225956"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167574"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -32,7 +32,7 @@ A entidade **appRevision** apresenta uma lista de todas as versões das aplicaç
 |          Propriedade          |                                      Descrição                                      |                Exemplo               |
 |:--------------------------:|:-------------------------------------------------------------------------------------:|:------------------------------------:|
 | AppKey                     | Identificador exclusivo da Aplicação.                                                         | 123                                  |
-| ApplicationID              | Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural.        | b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationId              | Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural.        | b66bc706-ffff-7437-0340-032819502773 |
 | Revision                   | A versão como mencionada pelo administrador durante o carregamento do binário.                   | 2                                    |
 | Title                      | Nome da aplicação.                                                                     | Excel                                |
 | Publisher                  | Publicador da aplicação.                                                                 | Microsoft                            |
@@ -113,9 +113,9 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 
 |  complianceStatus  |                       Descrição                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    Desconhecida.                                                                        |
+|    Unknown         |    Desconhecido.                                                                        |
 |    Compatível       |    Compatível.                                                                      |
-|    Não compatível    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
+|    Não conforme    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
 |    Error           |       Error.                                                                       |
 |    ConfigManager   |    Gerido pelo Config Manager.                                                      |
@@ -408,7 +408,7 @@ Representa um estado de instalação da aplicação móvel para um determinado t
 | AppKey             | A chave da aplicação móvel que serve para identificar uma instância de AppRevision.                                                          |
 | DeviceTypeKey      | A chave do Tipo de Dispositivo associado à Aplicação Móvel.                                                              |
 | AppInstallStateKey | A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState.                                         |
-| CódigoDoErro          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
+| Código de erro          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
 | Contagem              | Contagem total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
@@ -559,7 +559,7 @@ A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP poss
 | 00000000-0000-0000-0000-000000000000 | Ainda não está disponível | Valor predefinido, Sem VPP.   |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple               | Programa VPP da Apple.     |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para obter mais informações sobre o Armazém de Dados do Intune, veja [Modelo de dados do Armazém de Dados](https://docs.microsoft.com/intune/reports-ref-data-model).
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236157"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947331"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de controlo de acesso à rede (NAC) com o Intune
 
@@ -59,17 +59,26 @@ A lista seguinte é uma descrição geral sobre como a integração do NAC funci
 8. Uma vez que o dispositivo esteja inscrito e em conformidade, a solução de parceiro de NAC obtém o estado do Intune.
 9. A ligação é estabelecida com êxito, o que permite que o dispositivo aceda aos recursos empresariais.
 
-## <a name="use-nac-on-your-ios-devices"></a>Utilizar o NAC nos seus dispositivos iOS
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>Utilizar o NAC para VPN nos seus dispositivos iOS  
+NAC para Cisco Legacy AnyConnect, F5 acesso legado e VPN do Citrix é suportado sem a necessidade de ativar o NAC no perfil da VPN.
 
-De momento, o controlo de acesso à rede não é suportado para os seguintes clientes de VPN no iOS:
+Também é suportado o NAC para SSO da Citrix. Para ativar o NAC para Citrix SSO para iOS:
+- Utilizar o Gateway da Citrix 12.0.59 ou superior.  
+- Os utilizadores têm de ter Citrix SSO 1.1.6 ou posterior instalado.
+- [Integrar o NetScaler com o Intune para NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) conforme descrito na documentação do produto Citrix.
+- Na configuração de definições de Base VPN, para **ativar o controlo de acesso de rede (NAC)**, selecione a caixa de verificação para **concordo**.
+
+Quando utiliza o SSO da Citrix para iOS, a ligação VPN está desligada a cada 24 horas por motivos de segurança. A VPN imediatamente possam ser reconectada.
+
+
+**Controlo de acesso de rede não é atualmente suportado para os seguintes clientes VPN em dispositivos iOS**:
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
-Estamos a colaborar com os nossos parceiros para lançar uma solução de NAC para estes clientes mais recentes. Atualizaremos este artigo com mais detalhes assim que tivermos soluções. 
+Estamos a trabalhar com os nossos parceiros para liberar uma solução NAC destes clientes mais recentes. Atualizaremos este artigo com mais detalhes assim que tivermos soluções. 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Integrar o Cisco ISE com o Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrar o Citrix NetScaler com o Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
-ms.translationtype: HT
+ms.openlocfilehash: b12a1233daf2aeb673765342edc81fe32a28146a
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058755"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167421"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicações incorporadas ao Microsoft Intune
 
@@ -48,7 +48,7 @@ Para adicionar uma aplicação incorporada às suas aplicações disponíveis no
 ## <a name="configure-app-information"></a>Configurar as informações da aplicação
 
 Pode modificar as informações da aplicação incorporada. Estas informações ajudam-no a identificar a aplicação no Intune e também ajudam os utilizadores a encontrá-la no portal da empresa.
-1. No painel **Aplicações móveis – Aplicações**, selecione a aplicação incorporada que quer modificar.  
+1. Na **aplicações de cliente - aplicações** painel, selecione a aplicação incorporada que pretende modificar.  
     É apresentado um painel da aplicação incorporada.
 2. Em **Gerir**, selecione a opção **Propriedades**.
 3. Selecione a opção **Configurar** para modificar as informações da aplicação incorporada.
@@ -67,6 +67,6 @@ Pode modificar as informações da aplicação incorporada. Estas informações 
 4. Selecione **OK**.
 5. No painel **Propriedades**, selecione **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Agora pode atribuir as aplicações aos grupos que escolher. Para obter mais informações, veja [Atribuir aplicações a grupos](apps-deploy.md).
