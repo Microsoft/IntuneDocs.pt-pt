@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
-ms.translationtype: HT
+ms.openlocfilehash: 2cd71eabf3efeb6b3eaa897745ed0441c456cd60
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298076"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182300"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -49,5 +50,5 @@ A exclusão só contempla os membros diretos dos grupos e não inclui os disposi
 
 Se incluir o grupo **Todos os Dispositivos** e excluir **Todos os Utilizadores**, todos os dispositivos irão receber a política. Neste cenário, o objetivo é excluir desta política os dispositivos que tiverem um utilizador associado. No entanto, isto não exclui os dispositivos porque a exclusão só compara membros diretos do grupo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Veja [Como monitorizar perfis de dispositivos](device-profile-monitor.md) para obter orientações sobre como controlar as atribuições de perfis de dispositivos.

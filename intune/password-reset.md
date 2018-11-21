@@ -12,12 +12,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 9e067db84cd2491cf82bbdf7fc5cf3364446716e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 64dc02be20ecc15574959d50f1cfc89542c484fb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833222"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181433"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service
 
@@ -33,7 +34,7 @@ Pode permitir que os funcionários reponham as palavras-passe das contas escolar
 3. Para referência futura, forneça instruções sobre [como repor ou alterar a palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password) aos funcionários e estudantes.
 4. [Ative a reposição de palavra-passe self-service](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba mais sobre os seguintes artigos:
 * [Melhores práticas de palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 

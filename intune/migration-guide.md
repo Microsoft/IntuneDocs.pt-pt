@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29960972"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181416"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -67,6 +68,6 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
 -   Consulte as [formas comuns de utilizar o Intune](common-scenarios.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Fase 1: Preparar o Intune para a gestão de dispositivos móveis](migration-guide-prepare.md)

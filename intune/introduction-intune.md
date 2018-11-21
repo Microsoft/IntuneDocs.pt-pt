@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: efdbf141d42be11a6ba3fd750dcd80f494445862
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: d801d824cefb00ff197125588f840246b889844e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254042"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187094"
 ---
 # <a name="what-is-intune"></a>O que é o Intune?
 
@@ -112,7 +113,7 @@ Qualquer que seja a posição da sua organização relativamente às aplicaçõe
 
 
 
-### <a name="next-steps"></a>Próximos passos
+### <a name="next-steps"></a>Passos Seguintes
 * Ler sobre algumas das [formas comuns de utilizar o Intune](common-scenarios.md).
 * Familiarizar-se com o produto [com uma avaliação de 30 dias do Intune](free-trial-sign-up.md).
 * Aprofundar conhecimentos sobre os [requisitos técnicos e as capacidades](supported-devices-browsers.md) do Intune

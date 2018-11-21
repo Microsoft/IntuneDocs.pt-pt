@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
-ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
-ms.translationtype: HT
+ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50001614"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188709"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
@@ -90,7 +91,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 > - Conteúdos explícitos
 > - Documentos e dados do iCloud
 > - Jogos de vários jogadores
-> - Adicionar amigos do Centro de Jogos
+> - Adicionar amigos do Game Center
 > - Siri
 
 ## <a name="password"></a>Palavra-passe

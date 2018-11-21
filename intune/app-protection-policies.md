@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3a7285edfa2dcb50cc5fd28e4fefc1be4c3b9e10
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679278"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185976"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -145,7 +146,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 - [Políticas para iOS](app-protection-policy-settings-ios.md)
 - [Políticas para Android](app-protection-policy-settings-android.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Monitorizar o estado do utilizador e de conformidade](app-protection-policies-monitor.md)
 
 ### <a name="see-also"></a>Consulte também

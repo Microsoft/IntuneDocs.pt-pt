@@ -12,12 +12,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: bb9606a8586e0dbdbb566def344c9c551cb09e52
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
-ms.translationtype: HT
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-classic
+ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164826"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188267"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos com o Microsoft Intune
 
@@ -55,7 +59,7 @@ O Intune permite realizar a integração com o [Windows Hello para Empresas](win
 ## <a name="bypass-activation-lock-on-ios-devices"></a>Ignorar Bloqueio de Ativação em dispositivos iOS
 O Bloqueio de ativação é uma funcionalidade que ajuda a proteger os dispositivos dos utilizadores. A funcionalidade exige que os utilizadores introduzam o Apple ID e a palavra-passe antes de qualquer pessoa poder eliminar ou reativar o dispositivo. No entanto, esta funcionalidade pode originar problemas, por exemplo, se os utilizadores saírem da empresa sem remover o bloqueio. [Ignorar Bloqueio de Ativação de iOS]( device-activation-lock-bypass.md) pode ajudar ao remover o bloqueio de dispositivos iOS supervisionados, o que lhe permite realocá-los ou apagá-los.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba mais sobre a [defesa contra ameaças para dispositivos móveis](mobile-threat-defense.md)
 

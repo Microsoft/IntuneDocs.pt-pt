@@ -12,12 +12,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
-ms.translationtype: HT
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-classic
+ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025190"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180865"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows através do Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -69,7 +73,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 5. Selecione **Criar**.  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Criar um perfil de implementação do Autopilot
-Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos Autopilot.
+Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot.
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Dispositivos** > **Importar**.
 2. Escreva um **Nome** e uma **Descrição** opcional.
 3. Se pretender que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos visados para o Piloto Automático** para **Sim**. Todos os dispositivos fora do Autopilot em grupos atribuídos serão registados com o serviço de implementação do Autopilot. O processo de registo demora até 48 horas, pelo que deverá aguardar. Quando a inscrição do dispositivo for anulada e o dispositivo for reposto, o Autopilot irá inscrevê-lo. Após registar um dispositivo desta forma, desativar esta opção ou remover a atribuição de perfil não irá remover o dispositivo do serviço de implementação do Autopilot. Em alternativa, tem de [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
@@ -168,5 +172,5 @@ Pode agrupar dispositivos Windows por um ID de correlacionador ao inscrevê-los 
 > - Crie sempre regras de grupos dinâmico que correspondam a *todo* o valor enrollmentProfileName
 > - Nunca crie um nome para perfis de Autopilot ou DEP da Apple começado por "OfflineAutopilotprofile-".
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Após ter configurado o Windows Autopilot para dispositivos Windows 10 registados, saiba como gerir esses dispositivos. Para obter mais informações, veja [O que é a gestão de dispositivos do Microsoft Intune?](https://docs.microsoft.com/intune/device-management)

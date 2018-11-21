@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
-ms.translationtype: HT
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400356"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190120"
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
@@ -30,7 +31,7 @@ Como administrador do Intune, pode gerir os seguintes dispositivos Android:
 - Dispositivos Android, incluindo dispositivos Samsung Knox Standard.
 - Dispositivos do Android Enterprise, incluindo [dispositivos com perfil de trabalho do Android](#enable-enrollment-of-android-for-work-devices) e dispositivos de quiosque Android.
 
-Os dispositivos com o Samsung Knox Standard são suportados para gestão de vários utilizadores pelo Intune. Isto significa que os utilizadores podem iniciar e terminar sessão num dispositivo com as respetivas credenciais do Azure AD. O dispositivo é gerido centralmente independentemente de estar a ser utilizado. Quando os utilizadores iniciam sessão, têm acesso às aplicações e, além disso, obtêm as políticas aplicadas às mesmas. Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.
+Os dispositivos com o Samsung Knox Standard são suportados para gestão de vários utilizadores pelo Intune. Isto significa que os utilizadores podem iniciar e terminar sessão num dispositivo com as respetivas credenciais do Azure AD. O dispositivo é gerido centralmente independentemente de estar a ser utilizado. Quando os utilizadores iniciam sessão, têm acesso às aplicações e, além disso, obtêm as políticas aplicadas às mesmas. Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos.
 
 ## <a name="prerequisite"></a>Pré-requisito
 

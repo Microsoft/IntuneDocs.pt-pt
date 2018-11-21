@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: da149ea2870880a35352e9d37a91c5c39f7a7438
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602083"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189780"
 ---
 # <a name="reference-for-current-user-entity"></a>Referência para a entidade Utilizador Atual
 
@@ -42,6 +43,6 @@ A entidade **Utilizador Atual** enumera todos os utilizadores do Azure Active Di
 | StartDateInclusiveUTC |Data e hora em UTC em que este utilizador foi criado no armazém de dados. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC em que este utilizador foi modificado pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
  - Pode utilizar a coleção de entidades **Utilizadores** para expandir os dados do utilizador para os utilizadores que não estão atualmente ativos. Para obter mais informações, veja [Referência para a entidade de utilizador](reports-ref-user.md).
  - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).

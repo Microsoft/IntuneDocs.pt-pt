@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4a047ceb6baa15ad59a5792430b60f2adf18c98a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
-ms.translationtype: HT
+ms.openlocfilehash: 1a70e8a5e9ad973f5d2c94a146a9f263f461d0ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321276"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180566"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para os seus dispositivos no Microsoft Intune
 
@@ -95,8 +96,8 @@ Crie um perfil de certificado fidedigno para poder criar um perfil de certificad
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
-    - **Windows 8.1 e posterior**
-    - **Windows 10 e posterior**
+    - **Windows 8.1 e posterior**
+    - **Windows 10 e posterior**
 
 6. Na lista pendente **Tipo de perfil**, selecione **Certificado fidedigno**.
 7. Navegue para o certificado guardado na tarefa 1 e, em seguida, selecione **OK**.
@@ -121,7 +122,7 @@ Veja um dos seguintes tópicos para ajudar a configurar e a atribuir cada tipo d
 
 Após criar um perfil de certificado fidedigno, crie perfis de certificado SCEP ou PKCS para cada plataforma que queira utilizar. Ao criar um perfil de certificado SCEP, introduza um perfil de certificado fidedigno para a mesma plataforma. Este passo liga os dois perfis de certificado, mas mesmo assim tem de atribuir cada perfil separadamente.
 
-## <a name="next-steps"></a>Próximos passos
-[Assign device profiles (Atribuir perfis de dispositivo)](device-profile-assign.md)  
+## <a name="next-steps"></a>Passos Seguintes
+[Atribuir perfis de dispositivo](device-profile-assign.md)  
 [Use S/MIME to sign and encrypt emails (Utilizar S/MIME para assinar e encriptar e-mails)](certificates-s-mime-encryption-sign.md)  
 [Use third-party certificate authority (Utilizar uma autoridade de certificação de terceiros)](certificate-authority-add-scep-overview.md)

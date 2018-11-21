@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602185"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185241"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Definições de quiosque para dispositivos Android no Intune
 
@@ -47,7 +48,7 @@ Se o perfil de restrição de um dispositivo de quiosque estiver definido como *
 
 Para definir um dispositivo de quiosque do Android para múltiplas aplicações, siga estes passos principais:
 
-1. [Importar e implementar a aplicação Ecrã Inicial Gerido a partir do Google Play gerido](#import-and -deploy-the-managed-home-screen-app)
+1. [Importar e implementar a aplicação Ecrã Inicial Gerido a partir do Google Play gerido](#import-and-deploy-the-managed-home-screen-app)
 2. [Adicionar e atribuir aplicações que podem ser utilizadas no modo de quiosque](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Opcional) [Adicionar ligações Web que podem ser utilizadas no modo de quiosque](#add-web-links-that-can-be-used-in-kiosk-mode)
 
@@ -96,5 +97,5 @@ Certifique-se de que implementou uma aplicação Web nos dispositivos de quiosqu
 9. Em **Atribuir a**, selecione **Grupos selecionados**.
 10. Escolha **Selecionar grupos para incluir** > selecione o grupo de dispositivos que criou para os seus dispositivos de quiosque > **Selecionar** > **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

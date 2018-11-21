@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f4425f508164332295899a6132782833889aa830
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602270"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182997"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -67,7 +68,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
     ![Credenciais da conta escolar ou profissional](media/reports-create-02-org-account.png)
 
-11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
+11. Selecione **ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
     ![O Navegador](media/reports-create-02-loadentities.png)
 
@@ -117,7 +118,7 @@ Agora tem um filtro interativo que pode utilizar para alternar entre dispositivo
 1. Selecione **Empresa** para ver a distribuição de dispositivos pertencentes à empresa.
 2. Selecione **Pessoal** para ver os dispositivos pessoais.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
  - Saiba mais sobre como [criar e gerir relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
  - Consulte o [Modelo do Armazém de Dados do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).

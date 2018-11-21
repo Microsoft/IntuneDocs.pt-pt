@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e094ec72f7db6c25bcb306518df47dd5938681bf
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 6602a5507e4357899259722a7a8d095d540e2826
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425347"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181144"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Adicionar definições de Wi-Fi para dispositivos macOS no Microsoft Intune
 
@@ -42,7 +43,7 @@ Este artigo descreve estas definições.
 - **Tipo de segurança**: selecione o protocolo de segurança para autenticar a rede Wi-Fi. As opções são:
 
   - **Abrir (sem autenticação)**: utilize esta opção apenas se a rede não estiver protegida.
-  - **WPA/WPA2 – pessoal**: introduza a palavra-passe na **Chave pré-partilhada**. Quando a rede da sua organização é configurada, uma chave de rede ou palavra-passe também é configurada. Introduza esta chave de rede ou palavra-passe para o valor PSK.
+  - **WPA/WPA2 – Pessoal**: introduza a palavra-passe na **Chave pré-partilhada**. Quando a rede da sua organização é configurada, uma chave de rede ou palavra-passe também é configurada. Introduza esta chave de rede ou palavra-passe para o valor PSK.
   - **WEP**
 
 - **Definições de proxy**: as suas opções:
@@ -124,7 +125,7 @@ Este artigo descreve estas definições.
 
 Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e é apresentado na lista de perfis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md).
 

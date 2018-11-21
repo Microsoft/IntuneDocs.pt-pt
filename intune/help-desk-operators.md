@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236667"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190307"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -82,7 +83,7 @@ As propriedades das aplicações do cliente.
 | Nome          | O nome da aplicação.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Tipo          | Pode escolher um tipo de atribuição para cada aplicação.  <br> **Disponível** – Os utilizadores instalam a aplicação a partir do site ou da aplicação Portal da Empresa.  <br> **Não Aplicável** – A aplicação não é instalada nem apresentada no Portal da Empresa. <br> **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.  <br> **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. |
-| Última Modificação | O nome do tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Última modificação | O nome do tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### <a name="devices"></a>Dispositivos
 
@@ -136,8 +137,8 @@ Dispositivos geridos pelo Intune ou por utilizadores geridos pelo Intune ou Azur
 
 | Propriedade           | Texto                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nome do Dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
-| Gerido Por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
+| Nome do dispositivo        | O nome do tipo de dispositivo.                                                                                                     |
+| Gerido por         | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 | Tipo de associação Azure AD | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
 | Propriedade          | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Em conformidade com o Intune   | O nome do tipo de dispositivo.                                                                                                     |
@@ -161,7 +162,7 @@ As propriedades das políticas de conformidade.
 | Nome          | O nome da aplicação.                                                                                                        |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                       |
 | Tipo de Política   | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** e **Desconhecido**).                                               |
-| Última Modificação | O nome do tipo de dispositivo.                                                                                                     |
+| Última modificação | O nome do tipo de dispositivo.                                                                                                     |
 
 ### <a name="devices"></a>Dispositivos
 
@@ -206,7 +207,7 @@ As propriedades das políticas de configuração.
 | Nome          | O nome da aplicação.                                                                                                        |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                       |
 | Tipo de Política   | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
-| Última Modificação | O nome do tipo de dispositivo.                                                                                                     |
+| Última modificação | O nome do tipo de dispositivo.                                                                                                     |
 
 ### <a name="devices"></a>Dispositivos
 
@@ -284,7 +285,7 @@ Utilize os seguintes recursos para ajudar a recolher dados de dispositivos ao re
   - [Enviar registos de dados de diagnóstico para o seu administrador de TI através de e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
   - [Enviar erros de inscrição de dispositivos Android para o seu administrador de TI](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Pode saber mais sobre o Controlo de administração baseada em funções (RBAC) para definir funções no seu dispositivo organizacional, gestão de aplicações móveis e tarefas de proteção de dados. Para obter mais informações, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control).
 

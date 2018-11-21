@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
-ms.translationtype: HT
+ms.openlocfilehash: 07a1c0a0825faafa85b3fb2904dcb517268617bf
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028703"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180056"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -63,7 +64,7 @@ As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupo
 - **Operador Só de Leitura**: vê as informações do utilizador, do dispositivo, da inscrição, da configuração e da aplicação. Não pode fazer alterações ao Intune.
 - **Gestor de Aplicações**: gere aplicações móveis e geridas, pode ler as informações do dispositivo e ver os perfis de configuração do dispositivo.
 - **Administrador das Funções do Intune**: gere as funções do Intune personalizadas e adiciona atribuições para funções do Intune incorporadas. É a única função do Intune que pode atribuir permissões aos Administradores.
-- **Administrador de Escola**: gere os dispositivos com o Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
+- **Administrador de Escola**: gere os dispositivos Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
 
 |Permissão|Operação|
 |---|---|
@@ -139,7 +140,7 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 <br></br>
 5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Utilizar a função de operador do Suporte Técnico do Intune com o portal de resolução de problemas](help-desk-operators.md)
 

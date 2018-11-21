@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
-ms.locfileid: "29926359"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183805"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar políticas de gestão de aplicações e de conformidade do dispositivo durante uma migração para o Microsoft Intune
 
@@ -92,6 +93,6 @@ Ao utilizar o Intune MDM, pode fornecer aplicações ao exigir a sua instalaçã
 
 A inscrição de dispositivos é necessária para gerir o dispositivo. Saiba [como se preparar para inscrever dispositivos pessoais do utilizador pertencentes à empresa](device-enrollment.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Configurar políticas de proteção de aplicações (opcional)](migration-guide-app-protection-policies.md).

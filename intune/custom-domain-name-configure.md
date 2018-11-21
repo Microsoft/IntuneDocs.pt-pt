@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: cbefc5ae5ef159c3c58a475f01a1513abb46ee90
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254076"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181501"
 ---
 # <a name="configure-a-custom-domain-name"></a>Configurar um nome de domínio personalizado
 
@@ -32,7 +33,7 @@ Quando a sua organização se inscreve num serviço Microsoft baseado na cloud, 
 
 Antes de criar contas de utilizador ou sincronizar o seu Active Directory no local, recomendamos vivamente que decida se irá utilizar apenas o domínio .onmicrosoft.com ou se irá adicionar um ou mais nomes de domínio personalizados. Configure um domínio personalizado antes de adicionar utilizadores para simplificar a gestão de utilizadores. Esta ação permite que os utilizadores iniciem sessão com as credenciais que utilizam para aceder aos outros recursos do domínio.
 
-Ao subscrever um serviço baseado na cloud da Microsoft, a instância desse serviço torna-se num [inquilino do Microsoft Azure AD](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), que proporciona serviços de identidade e de diretório para o seu serviço baseado na cloud. E visto que as tarefas de configuração do Intune para utilizar o nome de domínio personalizado da sua organização são as mesmas que nos outros inquilinos do Azure AD, pode utilizar as informações e procedimentos descritos em [Adicionar o seu domínio](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
+Ao subscrever um serviço baseado na cloud da Microsoft, a instância desse serviço torna-se num [inquilino do Microsoft Azure AD](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), que proporciona serviços de identidade e de diretório para o seu serviço baseado na cloud. E visto que as tarefas para configurar o Intune para utilizar o seu nome de domínio personalizado de que as organizações são as mesmas que nos outros inquilinos do Azure AD, pode utilizar as informações e procedimentos indicados no [adicionar o seu domínio](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 > [!TIP]
 > Para saber mais sobre os domínios personalizados, veja [Conceptual overview of custom domain names in Azure Active Directory (Descrição geral conceptual de nomes de domínio personalizados no Azure Active Directory)](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).

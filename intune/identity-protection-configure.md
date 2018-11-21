@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7012479023ece83ef475431c5cefe150ab2ef342
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317996"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188650"
 ---
 # <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Configurar definições de proteção de identidade no Microsoft Intune
 
@@ -46,7 +47,7 @@ Esta funcionalidade aplica-se a dispositivos que executem:
 6. Na lista pendente **Tipo de perfil**, selecione **Identity protection**.
 7. No painel Windows Hello para Empresas, selecione uma das seguintes opções para Configurar o Windows Hello para Empresas:
     * Desativado. Se não pretender utilizar o Windows Hello para Empresas, selecione esta definição. Todas as outras definições no ecrã não estão disponíveis.
-    * Ativada. Selecione esta definição se pretender configurar as definições do Windows Hello para Empresas.  
+    * Ativado. Selecione esta definição se pretender configurar as definições do Windows Hello para Empresas.  
 
 8. Se tiver selecionado **Ativado** no passo anterior, configure as definições obrigatórias que são aplicadas aos utilizadores e dispositivos com Windows 10 e Windows 10 Mobile visados e inscritos.
 

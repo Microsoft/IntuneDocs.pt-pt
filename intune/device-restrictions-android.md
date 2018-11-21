@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
-ms.translationtype: HT
+ms.openlocfilehash: 459b35e61b122e1377c4fcef61cf6f4527c44ab9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915738"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181807"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Definições de restrição de dispositivos Android e Samsung Knox Standard – Intune
 
@@ -159,6 +160,6 @@ As definições de modo de local público aplicam-se apenas a dispositivos Samsu
 - **Botões de volume** - Ativa ou desativa a utilização dos botões de volume no dispositivo.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Continue a seguir as instruções em [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para criar e atribuir o perfil de restrição de dispositivos.

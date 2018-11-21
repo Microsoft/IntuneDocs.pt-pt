@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610112"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267259"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -65,6 +66,8 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 
      > [!NOTE]
      > **Apenas para aplicações iOS**: se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, poderá selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
+     >
+     > **Para aplicações Android apenas**: Se implementar uma aplicação Android como **disponível com ou sem inscrição**, relatórios de estado só estará disponível em dispositivos inscritos.
 
 9. Selecione **Grupos Incluídos** para selecionar os grupos de utilizadores que são afetados por esta atribuição de aplicações.
 10. Escolha **Selecionar** após selecionar um ou mais grupos para incluir.

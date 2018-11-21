@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 590ce850b97502b357dec86932e1445718860af2
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: ec3535004dccedb5b0310f4ecc10bb5c93f0ea43
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253549"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186890"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>O que são os perfis de dispositivos do Microsoft Intune?
 
@@ -64,7 +65,7 @@ Esta funcionalidade suporta:
 - iOS
 - macOS
 - Windows 10
-- Windows 10 Team
+- Equipe do Windows 10
 
 ## <a name="endpoint-protection"></a>Proteção de ponto final
 As [definições de proteção de ponto final para o Windows 10](endpoint-protection-windows-10.md) configuram as definições do BitLocker e Windows Defender para dispositivos com o Windows 10.

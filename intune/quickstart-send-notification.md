@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e76e173bef7a370f89f60f6c9eb4588bb63aefdc
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510912"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186261"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guia de Início Rápido: enviar notificações para dispositivos não conformes
 
@@ -104,7 +105,7 @@ Pode atribuir a política de conformidade a um grupo específico de utilizadores
 
 Quando tiver criado e guardado a política com êxito, será apresentada na lista de **Conformidade do dispositivo – Políticas**. Repare se a opção **Atribuído** na lista está definida como **Sim**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste guia de início rápido, utilizou o Intune para criar e atribuir uma política de conformidade aos dispositivos com o Windows 10 da sua força de trabalho para exigir uma palavra-passe de pelo menos seis carateres de comprimento. Para obter mais informações sobre como criar políticas de conformidade para dispositivos Windows, veja [Adicionar uma política de conformidade para dispositivos Windows no Intune](compliance-policy-create-windows.md).
 

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
-ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
-ms.translationtype: HT
+ms.openlocfilehash: eb44647e50e406b9ef5052c576660c9b7eebf6dd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44389630"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189763"
 ---
 # <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Utilizar um perfil de configuração para atualizar o Windows 10 ou sair do modo S no Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +31,7 @@ Configure um perfil de atualização no Intune para atualizar automaticamente os
 Antes de atualizar os dispositivos para a versão mais recente, precisa dos seguintes pré-requisitos:
 
 - Uma chave de produto válida para instalar a versão atualizada do Windows em todos os dispositivos visados pela política (para edições do Windows 10 Desktop). Pode utilizar chaves MAK (Chaves de Ativação Múltipla) ou KMS (Servidor de Gestão de Chaves). Para as edições Windows 10 Mobile e Windows 10 Holographic, pode utilizar um ficheiro de licença da Microsoft que inclua as informações de licenciamento para instalar a versão atualizada do Windows em todos os dispositivos visados pela política.
-- Os dispositivos com o Windows 10 aos quais atribuir a política estão inscritos no Microsoft Intune. Não é possível utilizar a política de atualização de edição com PCs que executam o software de cliente de PCs do Intune.
+- Os dispositivos Windows 10 aos quais atribuir a política estão inscritos no Microsoft Intune. Não é possível utilizar a política de atualização de edição com PCs que executam o software de cliente de PCs do Intune.
 
 ## <a name="supported-upgrade-paths"></a>Caminhos de atualização suportados
 A seguinte tabela indica os caminhos de atualização suportados para o perfil de atualização de edição do Windows 10.
@@ -48,7 +49,7 @@ A seguinte tabela indica os caminhos de atualização suportados para o perfil d
 | Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
 | Edição Windows 10 Core N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro Education N | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
-| Windows 10 Mobile | Windows 10 Mobile Enterprise |
+| Windows 10 Mobile | Do Windows 10 Mobile Enterprise |
 
 
 <!-- Testing a new table on 3/5/18 
@@ -157,7 +158,7 @@ Os passos seguintes mostram como criar um perfil que controla o modo S nos dispo
 
 O perfil será criado e apresentado nos perfis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Atribua este perfil](device-profile-assign.md) aos seus grupos.
 

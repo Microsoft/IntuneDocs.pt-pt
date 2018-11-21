@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 06d1fbc5a27e0e5187c6419b45f4a0380b895d6b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
-ms.translationtype: HT
+ms.openlocfilehash: efeb7895bcd83883e7fcaaca93c3d19d19a0bb5c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829752"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184136"
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Definições do AirPlay do Intune para dispositivos iOS
 
@@ -54,7 +55,7 @@ Com esta funcionalidade, pode:
 Também pode importar o dispositivo, as palavras-passe e os destinos permitidos a partir de um ficheiro de valores separados por vírgulas (csv).
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora pode atribuir o perfil do dispositivo aos grupos que selecionar. Para obter detalhes, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
 

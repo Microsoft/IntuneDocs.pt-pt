@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 34b219b48e5bc9e3ee688895c071b230886183eb
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+ms.openlocfilehash: 5a76a54de62ead26ec4b3c7a8e34db3cd639b6c1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225430"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181705"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
@@ -66,7 +67,7 @@ Pode ver a nova barra de progresso na [página Novidades na IU da aplicação In
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscrever dispositivos Windows 10 em volume <!-- 747607 -->
 
-Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](/intune-classic/deploy-use/bulk-enroll-windows) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
+Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](/intune-classic/deploy-use/bulk-enroll-windows) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Novidades na pré-visualização pública do Intune no portal do Azure<!--736542-->
 
@@ -102,7 +103,7 @@ Após a migração, terá de voltar a carregar a appx como uma appx para PC, se 
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Substituição das funções de administração no portal do Azure
 
-As funções de administração de gestão de aplicações móveis (MAM) existentes (Contribuidor, Proprietário e Só de leitura) utilizadas no portal clássico do Intune (Silverlight) estão a ser substituídas por um conjunto completo de novos controlos de administração baseados em funções (RBAC) no portal do Azure no Intune. Após concluir a migração para o portal do Azure, terá de atribuir novamente os seus administradores a estas novas funções de administração. Para obter mais informações sobre as RBAC e as novas funções, veja [Controlo de acesso baseado em funções do Microsoft Intune](role-based-access-control.md).
+As funções de administração de gestão (MAM) de aplicações móveis existentes (Contribuidor, proprietário e só de leitura) utilizadas no Intune do portal clássico (Silverlight) estão a ser substituídos com um conjunto completo de novos controlos de administração baseada em funções (RBAC) do Azure do Intune Portal. Após concluir a migração para o portal do Azure, terá de atribuir novamente os seus administradores a estas novas funções de administração. Para obter mais informações sobre as RBAC e as novas funções, veja [Controlo de acesso baseado em funções do Microsoft Intune](role-based-access-control.md).
 
 ### <a name="whats-coming"></a>Novidades futuras
 

@@ -12,12 +12,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: a677bab1f18fc0d0e0d159f2b40fae314b292e0f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231134"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184213"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integrar o Better Mobile com o Intune
 
@@ -71,6 +72,6 @@ O processo de autorização da aplicação Better Mobile consiste no seguinte:
 8. Selecione **Concluído**.
 9. A página **Add account** (Adicionar conta) voltará a ser apresentada. Feche a página. 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 -   [Configurar Melhores Aplicações Cliente](mtd-apps-ios-app-configuration-policy-add-assign.md)

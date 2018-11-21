@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4ce6292d11b6b33bd6355074cabb3eed77fa5826
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
-ms.translationtype: HT
+ms.openlocfilehash: 5f651ea03c727f569b2bf8a82fb3f259ecdc0766
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961687"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184374"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de implementação
 
@@ -104,6 +105,6 @@ Veja a seguir um exemplo atualizado do plano de implementação do Intune acima 
 | Self-service |  |  |  | RH, Finanças |
 | Abordagem meticulosa |  |  |  | Executivos |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 A secção seguinte fornece orientações relativas ao [desenvolvimento de um plano de comunicação de implementação do Intune](planning-guide-communication-plan.md).

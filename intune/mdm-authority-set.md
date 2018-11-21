@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425194"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183762"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 
@@ -103,7 +104,7 @@ Reveja as seguintes informações para preparar a alteração para a autoridade 
 2. Inicie sessão no inquilino do Intune que utilizou originalmente quando definiu a autoridade de MDM no Intune e clique em **Seguinte**.
 3. Selecione **Alterar a minha autoridade de MDM para o Configuration Manager** e clique em **Seguinte**.
 4. Selecione a coleção de utilizadores que contém todos os utilizadores que continuam a ser geridos pela nova autoridade de MDM híbrida.
-5. Clique em **Seguinte** e conclua o assistente. A autoridade de MDM é agora alterada para o **Configuration Manager**.
+5. Clique em **seguinte** e conclua o assistente. A autoridade de MDM é agora alterada para o **Configuration Manager**.
 6. Inicie sessão na [consola de administração do Microsoft Intune](http://manage.microsoft.com) com o mesmo inquilino do Intune e confirme que a autoridade de MDM foi alterada para **Definir para o Configuration Manager**.
 7. Após mudar a autoridade de MDM para o Configuration Manager, pode configurar a [inscrição de dispositivos iOS](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) e [inscrição de dispositivos Android](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
 8. Na consola do Configuration Manager, configure e implemente as novas definições e aplicações da nova autoridade de MDM (híbrida).
@@ -154,6 +155,6 @@ A autoridade de MDM não pode ser novamente alterada para Desconhecida. A autori
     - Execute uma ação para o dispositivo, como o Bloqueio Remoto, a partir da consola de administração. Se tiver êxito, significa que o dispositivo está a ser gerido pela nova autoridade de MDM.
 - Se tiver problemas com dispositivos específicos, pode anular a inscrição e inscrever novamente os dispositivos para ligá-los à nova autoridade e geri-los o mais rapidamente possível.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Com a autoridade de MDM definida, pode começar a [inscrever dispositivos](device-enrollment.md).

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
-ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
-ms.translationtype: HT
+ms.openlocfilehash: af2029fb42cf132ea8df01f1b4152653ed6e4a26
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37921353"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187893"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Definições de filtros de conteúdo Web para dispositivos iOS
 
@@ -74,6 +75,6 @@ Se não especificar nenhum URL, os utilizadores finais não poderão aceder a si
 
 Selecione **OK** para voltar ao painel **Criar Perfil** e, em seguida, selecione **Criar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora pode atribuir o perfil do dispositivo aos grupos que selecionar. Para obter detalhes, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

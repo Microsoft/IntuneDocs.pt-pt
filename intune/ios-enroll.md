@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: bc1ae3f545f840f9ebfa1b7b75b56862691d900e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313297"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182742"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
@@ -80,5 +81,5 @@ A afinidade de utilizador é necessária para suportar o seguinte:
 
 Os dispositivos configurados sem afinidade de utilizador não suportam o Portal da Empresa e não devem ter a aplicação instalada. O Portal da Empresa foi concebido para utilizadores com credenciais da empresa e que necessitam de acesso a recursos empresariais personalizados (por exemplo, e-mail). Os dispositivos inscritos sem afinidade de utilizador não se destinam a ter um início de sessão de utilizador dedicado. Os dispositivos de quiosque, ponto de venda (POS) ou utilitário partilhado são casos de utilização típicos para dispositivos inscritos sem afinidade de utilizador.
 
-Se for necessária afinidade de utilizador, confirme que o perfil de inscrição do dispositivo tem a opção **Afinidade de Utilizador** selecionada antes de o inscrever. Para alterar o estado de afinidade num dispositivo, tem de extinguir e voltar a inscrever o dispositivo.
+Se for necessária afinidade de utilizador, confirme que o perfil de inscrição do dispositivo tem a opção **Afinidade do Utilizador** selecionada antes de o inscrever. Para alterar o estado de afinidade num dispositivo, tem de extinguir e voltar a inscrever o dispositivo.
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5680e0c53a9decfa5b172e08c04fbfe4025f2d7c
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
-ms.translationtype: HT
+ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642889"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188114"
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados
 
@@ -59,7 +60,7 @@ Um modelo de esquema de estrela é otimizado para flexibilidade e análise de da
 
 O armazém fica a jusante dos dados do Intune. O Intune cria um instantâneo diário à meia-noite (UTC) e guarda-o no armazém. A duração da retenção dos instantâneos varia conforme as tabelas de factos. Algumas podem reter os dados durante sete dias, outras 30 dias e algumas durante períodos mais longos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
  - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).
  - Para saber mais sobre trabalhar com armazéns de dados, veja [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Criar Primeiro Armazém de Dados).

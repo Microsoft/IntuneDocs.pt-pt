@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c251a45f8c319bdebbc6904c10fbf423bb1c1128
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
-ms.translationtype: HT
+ms.openlocfilehash: be0d80828327550e248d1ed5417b373c273a7a56
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34562165"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184867"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Definições de restrição de dispositivos Windows 10 Team do Microsoft Intune
 
@@ -51,6 +52,6 @@ Para ligar às Informações Operacionais do Azure, tem de especificar um **ID d
 - **Canal de projeção sem fios Miracast** – selecione o canal Miracast que é utilizado para estabelecer a ligação.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Utilize as informações em [Como configurar definições de restrições de dispositivos](device-restrictions-configure.md) para guardar e atribuir o perfil a utilizadores e dispositivos.

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 8f9313b35e6cb9da5d517e8f06e04c5a567612f4
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
-ms.translationtype: HT
+ms.openlocfilehash: 845c0639e885833bc020aed4d55dc31d6a0f03f0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727539"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190137"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referência para as entidades de gestão de aplicações móveis (MAM)
 
@@ -42,7 +43,7 @@ A entidade **MamApplication** lista aplicações Linha de Negócio (LOB) que sã
 |---------|------------|--------|
 | ApplicationKey |Identificador exclusivo da aplicação MAM no armazém de dados. |123 |
 | ApplicationName |Nome da aplicação MAM. |"Word" |
-| ApplicationID |ID da Aplicação MAM. |b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationId |ID da Aplicação MAM. |b66bc706-ffff-7437-0340-032819502773 |
 | IsDeleted |Indica se este registo da aplicação MAM foi atualizado. <br>True: a aplicação MAM tem um novo registo com campos atualizados nesta tabela. <br>False: o registo mais recente desta aplicação MAM. |True/False |
 | StartDateInclusiveUTC |Data e hora em UTC em que esta aplicação MAM foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |Data e hora em UTC em que a propriedade IsDeleted foi alterada para True. |11/23/2016 12:00:00 AM |
@@ -58,7 +59,7 @@ A entidade **MamApplicationInstance** lista aplicações geridas da Gestão de A
 |   ApplicationInstanceKey   |                                                               Identificador exclusivo de instância da aplicação MAM no armazém de dados – chave de substituição.                                                                |                 123                  |
 |           UserId           |                                                                              ID do utilizador que tem esta aplicação MAM instalada.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              Identificador exclusivo de instância da aplicação MAM, semelhante à propriedade ApplicationInstanceKey, apesar de o identificador ser uma chave natural.                                              | b66bc706-ffff-7437-0340-032819502773 |
-|       ApplicationID        |                                                                                        ID desta aplicação MAM                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|       ApplicationId        |                                                                                        ID desta aplicação MAM                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
 |     ApplicationVersion     |                                                                                     Versão desta aplicação MAM.                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 Data em que este registo da instância da aplicação MAM foi criado. O valor pode ser nulo.                                                                 |        11/23/2016 12:00:00 AM        |
 |          Platform          |                                                                          Plataforma do dispositivo no qual esta aplicação MAM está instalada.                                                                           |                  2                   |
@@ -118,7 +119,7 @@ A entidade **MamGlobalApplication** lista aplicações de loja que são geridas 
 |          Propriedade          |                                               Descrição                                               |           Exemplo            |
 |----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
 |       ApplicationKey       |          Identificador exclusivo da aplicação de loja no armazém de dados, conhecido como chave de substituição.          |             123              |
-|       ApplicationID        | Identificador exclusivo da aplicação de loja. O identificador é semelhante a ApplicationKey, mas é uma chave natural.  | com.microsoft.skydrive.<ios> |
+|       ApplicationId        | Identificador exclusivo da aplicação de loja. O identificador é semelhante a ApplicationKey, mas é uma chave natural.  | com.microsoft.skydrive.<ios> |
 |      ApplicationName       |                                      Nome de Aplicação Global MAM.                                       |           Skydrive           |
 | RowLastModifiedDateTimeUtc | Data e hora em UTC em que esta Aplicação Global MAM específica foi modificada pela última vez no armazém de dados. |    11/23/2016 12:00:00 AM    |
 
@@ -131,6 +132,6 @@ A entidade **MamPlatform** lista os nomes e tipos de plataformas em que uma apli
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Identificador exclusivo da plataforma no armazém de dados – chave de substituição.      |                           123                           |
 |          Platform          | Identificador exclusivo da plataforma, semelhante a PlatformKey, mas é uma chave natural. |                           123                           |
-|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhum <br>Windows <br>iOS <br>Android. |
+|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhum <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Data e hora em UTC em que esta plataforma foi modificada pela última vez no armazém de dados.  |                 11/23/2016 12:00:00 AM                  |
 

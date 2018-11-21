@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
-ms.translationtype: HT
+ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37904953"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184308"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reiniciar remotamente dispositivos com o Intune
 
@@ -46,6 +47,6 @@ A ação de dispositivos **Reiniciar** provoca o reinício do dispositivo que es
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo, selecione **Mais** e, em seguida, selecione a ação remota **Reiniciar** do dispositivo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para ver o estado da ação **Reiniciar** do dispositivo, selecione **Dispositivos** > **Ações do dispositivo**.

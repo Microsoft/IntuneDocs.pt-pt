@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,26 @@ ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05502c901f01ba134475ec69df3c42aa6e0e7480
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231769"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189848"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
-Saiba mais sobre as definições que pode rever nos registos de proteção de aplicações. Aceda a registos ao ativar o Modo de Diagnóstico do Intune para uma aplicação num cliente móvel. A tabela seguinte mostra o nome e uma explicação das definições registadas no registo.
+Saiba mais sobre as definições que pode rever nos registos de proteção de aplicações. Acesso a registos ao ativar o diagnóstico do Intune num cliente móvel. 
+
+O processo para ativar e recolher registos varia consoante a plataforma:
+- **Dispositivos Android** -utilize o *Portal da empresa*. Ver [enviar registos ao suporte da empresa por E-Mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
+- **iOS deices** -utilize um Browser gerido, ou *Microsoft Edge* para recolher registos. Para obter detalhes, consulte o blogue da equipa de suporte do Intune [nova consola diagnóstico do Intune para envio de Log no Intune Managed Browser](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser). 
+- **Dispositivos Windows 10** -utilize *MDMDiag* e registos de eventos. Ver, [falhas de diagnosticar MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) o conteúdo de gestão de cliente do Windows e o blog [resolução de problemas do Windows 10 Intune falhas de política](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+
+
+A tabela seguinte lista o nome e uma explicação das definições registadas no registo.
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 
@@ -59,7 +68,7 @@ Saiba mais sobre as definições que pode rever nos registos de proteção de ap
 | SimplePINAllowed            | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Permitir PIN Simples.                                                                                                                                                               |
 | TouchIDEnabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Permitir impressões digitais em vez do PIN (iOS 8+).                                                                                                                                      |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
  - Para saber mais sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md)
  - O Intune oferece um conjunto de ferramentas para o ajudar a resolver problemas no seu ambiente. Para obter mais informações, veja [Utilizar o portal de resolução de problemas](help-desk-operators.md).

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9772e802be0fef75d60a6ae01835d18376b1eb22
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 68896a363cab37aabe9a597872da0fe75c44c473
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231378"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267242"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar o Zimperium com o Intune
 
@@ -29,7 +30,7 @@ Tem de realizar os passos seguintes para integrar a solução de Defesa Contra A
 ## <a name="before-you-begin"></a>Antes de começar
 
 > [!NOTE]
-> Os passos seguintes devem ser realizados na [consola do Zimperium MTD](https://staging2-console.zimperium.com).
+> Os seguintes passos são realizados na [consola do Zimperium MTD](https://sso.zimperium.com/signon/aad/).
 
 Antes de iniciar o processo de integração do Zimperium com o Intune, certifique-se de que tem a seguinte subscrição e credenciais:
 
@@ -61,25 +62,25 @@ O processo de autorização da aplicação Zimperium consiste no seguinte:
 
 ## <a name="to-set-up-zimperium-integration"></a>Para configurar a integração do Zimperium
 
-1.  Aceda à [Consola do Zimperium MTD](https://staging2-console.zimperium.com) e inicie sessão com as suas credenciais.
+1.  Aceda a [consola do Zimperium MTD](https://sso.zimperium.com/signon/aad/) e inicie sessão com as suas credenciais.
 
 2.  Selecione **Gestão** a partir do menu esquerdo.
 
-3.  Selecione o separador **definições de MDM**.
+3.  Escolha o **definições de MDM** separador.
 
 4.  Selecione **Adicionar MDM** e, em seguida, selecione **Microsoft Intune** a partir da lista **Fornecedor de MDM**.
 
-5.  Assim que definir o Microsoft Intune como serviço MDM, é apresentada a janela **Configuração do Microsoft Intune**, escolha **Adicionar Azure Active Directory** para cada opção: **Zimperium zConsole** e **Aplicações zIPS para iOS e Android** para autorizar o Zimperium a comunicar com o Intune e o Azure AD através do Início de Sessão Único do Azure AD.
+5.  Depois de definir o Microsoft Intune como serviço MDM, o **configuração do Microsoft Intune** janela aparece, escolha o **adicionar Azure Active Directory** para cada opção:  **Zimperium zConsole**, **zIPS para iOS e as aplicações Android** para autorizar o Zimperium a comunicar com o Intune e o Azure AD através do Azure AD início de sessão único.
 
     > [!IMPORTANT]
     > Tem de adicionar as aplicações Zimperium zConsole e zIPS para iOS e Android para concluir o processo de integração com o Intune.
 
-6.  Selecione **Aceitar** para autorizar a aplicação Zimperium a comunicar com o Intune e o Azure Active Directory.
+6.  Escolher **Accept** para autorizar a aplicação Zimperium a comunicar com o Intune e Azure Active Directory.
 
 7.  Assim que adicionar a **Zimperium zConsole** e as aplicações **zIPS para iOS e Android** ao Azure AD, adicione os grupos de segurança do Azure AD. Esta adição permite que o Zimperium sincronize o grupo de segurança do Azure AD com o seu serviço.
 
-8.  Selecione **Concluir** para guardar a configuração e iniciar a primeira sincronização do grupo de segurança do Azure AD.
+8.  Escolher **concluir** para guardar a configuração e iniciar a primeira sincronização do grupo de segurança do Azure AD.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 -   [Configurar aplicações do Zimperium](mtd-apps-ios-app-configuration-policy-add-assign.md)

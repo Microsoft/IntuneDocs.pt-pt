@@ -14,13 +14,14 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ROBOTS: ''
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e8a7a7405fe40d3568e736c244d9fcb308350709
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: 3b1115a91707c639caba6410ace3c2e255e40a39
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317912"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185003"
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-intune-policies"></a>Gerir definições e funcionalidades no seu dispositivo com as políticas do Intune
 
@@ -42,18 +43,18 @@ Quando uma política ou aplicação é implementada, o Intune começa imediatame
 
 Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, o Intune faz mais três tentativas.  Se o dispositivo estiver offline (por exemplo, se estiver desligado ou se não estiver ligado a uma rede), pode não receber as notificações. Neste caso, o dispositivo obtém a política na próxima entrada agendada com o serviço do Intune, da seguinte forma:
 
-| Plataforma | Frequência de entrada |
+| Platform | Frequência de entrada |
 | --- | --- |
 | iOS | A cada 6 horas | 
 | Mac OS X | A cada 6 horas |
 | Android | A cada 8 horas | 
 | Windows Phone | A cada 8 horas | 
-| Windows 8,1  | A cada 8 horas |  
+| Windows 8.1  | A cada 8 horas |  
 | PCs com o Windows 10 inscritos como dispositivos | A cada 8 horas | 
 
 Se o dispositivo foi inscrito recentemente, a frequência da entrada é maior, conforme se segue:
 
-| Plataforma | Frequência |
+| Platform | Frequência |
 | --- | --- |
 | iOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas |  
 | Mac OS X | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas | 
@@ -106,7 +107,7 @@ Quando eliminar uma política ou remover um dispositivo de um grupo que tenha um
     - Memorizar histórico de palavras-passe
     - Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado
     - Minutos de inatividade antes da palavra-passe ser exigida
-    - Tipo obrigatório de palavra-passe – número mínimo de conjuntos de carateres
+    - Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres
     - Permitir câmara
     - Encriptação obrigatória no dispositivo móvel
     - Permitir armazenamento amovível
@@ -116,7 +117,7 @@ Quando eliminar uma política ou remover um dispositivo de um grupo que tenha um
     - Permitir geolocalização
     - Permitir conta Microsoft
     - Permitir copiar e colar
-    - Permitir partilha de Wi-Fi
+    - Permitir tethering Wi-Fi
     - Permitir ligação automática a hotspots Wi-Fi
     - Permitir relatórios de hotspots Wi-Fi
     - Permitir a limpeza

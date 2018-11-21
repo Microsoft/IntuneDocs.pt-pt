@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc7aac337c01db3098be5f699db22c3a81c6eb75
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236617"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184561"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -51,7 +52,7 @@ Ao atribuir uma aplicação comprada em volume a utilizadores, cada utilizador f
 
 Além disso, pode sincronizar, gerir e atribuir livros que tenha comprado na loja do Apple Volume Purchase Program (VPP) com o Intune. Para obter mais informações, veja [Como gerir eBooks do iOS comprados através de um programa de compra em volume](vpp-ebooks-ios.md).
 
-## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerir aplicações compradas em grandes volumes para dispositivos iOS
+## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gerir aplicações compradas em volume para dispositivos iOS
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Suporta as aplicações compradas em volume do Apple Volume Purchase Program para dispositivos iOS
 
@@ -122,11 +123,11 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 
 | # | Cenário                                | Convite para Apple VPP                              | Pedido de instalação da aplicação | Pedido de ID Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – utilizador com licença                             | S                                                                                               | S                                           | S                                 |
-| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | S                                                                                               | S                                           | S                                 |
-| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | S                                                                                               | N                                           | S                                 |
-| 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
-| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
+| 1 | BYOD – utilizador com licença                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | Y                                                                                               | Y                                           | Y                                 |
+| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | Y                                                                                               | N                                           | Y                                 |
+| 4 | BYOD – dispositivo com licença                           | N                                                                                               | Y                                           | N                                 |
+| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | Y                                           | N                                 |
 | 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
 | 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
@@ -177,6 +178,6 @@ Sim. O administrador do Intune pode exceder as capacidades de subscrição de um
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>É verdade que o Intune sincroniza automaticamente as licenças de aplicação com a Apple todos os dias?
 O Intune sincroniza as licenças de aplicação com a Apple duas vezes por dia.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.

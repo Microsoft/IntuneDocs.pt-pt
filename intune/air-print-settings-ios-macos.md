@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e89b9114aca34181f76ea091f7060891b986029
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
-ms.translationtype: HT
+ms.openlocfilehash: 850c61868cc5404d1645482a6998856e465b4070
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831049"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186295"
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>Definições do AirPrint para dispositivos iOS e macOS
 
@@ -49,6 +50,6 @@ Utilize este procedimento para adicionar informações do AirPrint ao payload do
 Também pode importar uma lista de impressoras de um ficheiro de valores separados por vírgulas (.csv) ou exportar a lista.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora pode atribuir o perfil do dispositivo aos grupos que selecionar. Para obter detalhes, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

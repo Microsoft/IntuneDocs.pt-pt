@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 78ed923c7502744ccd7f23e341049ce8ee8a8d86
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983215"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184459"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos Windows 10 no Intune
 
@@ -43,7 +44,7 @@ Este artigo apresenta o seguinte:
 
     - **Nome**: introduza um nome para o perfil, como `windows 10 custom profile`.
     - **Descrição:** introduza uma descrição para o perfil.
-    - **Plataforma**: selecione **Windows 10 e posterior**.
+    - **Plataforma**: selecione **Windows 10 e posterior**.
     - **Tipo de perfil**: selecione **Personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
@@ -82,6 +83,6 @@ Nem todas as definições são compatíveis com todas as versões do Windows 10
 
 Além disso, o Intune não suporta todas as definições apresentadas na [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) (Referência de fornecedores de serviços de configuração). Para saber se o Intune suporta a definição que pretende, abra o artigo referente a essa definição. Cada página de definição mostra a respetiva operação suportada. Para trabalhar com o Intune, a definição tem de suportar as operações **Adicionar** ou **Substituir**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).

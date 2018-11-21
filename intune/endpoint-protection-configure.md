@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b960b837cef5941fac829eeb878eb520b0274fba
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 033021010698d46f7ecb33546164ee16ad7192c0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022021"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182929"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar definições de proteção de ponto final no Intune
 
@@ -44,5 +45,5 @@ Este artigo mostra-lhe como criar um perfil. Em seguida, selecione a sua platafo
 
 O perfil é criado e apresentado na página da lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Para atribuir um perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).

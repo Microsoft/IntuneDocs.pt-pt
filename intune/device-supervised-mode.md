@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
-ms.translationtype: HT
+ms.openlocfilehash: c69fa80fb1c1f539252b8e25eb839090b87c97f5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34475613"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190239"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Ativar o modo supervisionado do iOS
 
@@ -46,6 +47,6 @@ Para determinar se um dispositivo é supervisionado, consulte o ecrã de bloquei
 - No ecrã de bloqueio do dispositivo, estará escrito **Este iPhone é gerido pela "Nome da Empresa".**
 - Na página **Acerca de**, estará escrito **Este iPhone é supervisionado. A empresa consegue monitorizar o seu tráfego de Internet e localizar este dispositivo.**
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para saber mais sobre outras opções de gestão de dispositivos, veja [O que é a gestão de dispositivos do Microsoft Intune?](device-management.md)

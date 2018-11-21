@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 8f95726cbad86544ebf717380708c8295f737530
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
-ms.translationtype: HT
+ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34475647"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186397"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 
@@ -134,7 +135,7 @@ O Intune suporta plataformas de dispositivos iOS, Mac OS, Android, Ambiente de T
 -   Saiba mais sobre [como inscrever dispositivos](device-enrollment.md).
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Consulte este [módulo de sessão do Microsoft Virtual Academy Intune](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) para obter mais informações sobre o processo de implementação do Intune.
 

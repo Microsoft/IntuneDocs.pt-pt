@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
-ms.translationtype: HT
+ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149109"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179954"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -118,7 +119,7 @@ Também pode pré-configurar uma permissão para que as aplicações acedam às 
 10. Selecione os grupos de utilizadores a atribuir e, em seguida, escolha **Selecionar**.
 11. Escolha **Guardar** para atribuir a política.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.
 

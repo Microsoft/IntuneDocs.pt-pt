@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
-ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
-ms.translationtype: HT
+ms.openlocfilehash: ace65aab5ded1449b1e1fd092936e9e2a019f6c1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44340274"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187638"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicações Web ao Microsoft Intune
 
@@ -65,6 +66,6 @@ Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na 
 >
 > Atualmente, a implementação de aplicações Web do Intune em dispositivos iOS está associada ao perfil de gestão, pelo que não é possível removê-la manualmente. Pode alterar o tipo de implementação para **Desinstalar** no portal do Intune. Quando o fizer, poderá remover manualmente a implementação. No entanto, se remover a implementação antes de alterar a intenção de atribuição de aplicações para **Desinstalar**, a aplicação Web ficará permanentemente no dispositivo até que se proceda à anulação da inscrição do dispositivo no Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 A aplicação que criou será apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar. Para obter ajuda, veja [Atribuir aplicações a grupos](apps-deploy.md). 

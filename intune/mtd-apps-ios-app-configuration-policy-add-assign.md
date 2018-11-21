@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4ffd4008ec327660e72fa52c6407ee8067cabfbd
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231774"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181178"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis) com o Intune
 
@@ -211,6 +212,6 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
 
 - Este passo aplica-se a todos os parceiros de MTD. Veja as instruções para [atribuir aplicações a grupos com o Intune](apps-deploy.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Configurar a política de conformidade de dispositivos da MTD](mtd-device-compliance-policy-create.md)

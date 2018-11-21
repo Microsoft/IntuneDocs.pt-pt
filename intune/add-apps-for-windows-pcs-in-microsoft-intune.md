@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: df8b6effea08bcb03022511158cde2d4da4ca2e6
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
-ms.translationtype: HT
+ms.openlocfilehash: df6d3eddd2ee8c1c1859539cf0829add9d3ce424
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241917"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180464"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Adicionar aplicações para PCs Windows que executam o cliente de software do Intune
 
@@ -52,7 +53,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
    Por exemplo, se pretendesse publicar uma aplicação com o nome Application.msi no Intune, a página teria o seguinte aspeto: ![Página de configuração de software do publicador](media/publisher-for-pc.png)
 
-   Este tipo de instalação utiliza algum do seu espaço de armazenamento na nuvem.
+   Este tipo de instalação utiliza algum do seu espaço de armazenamento na cloud.
 
 3. Na página **Descrição do software**, configure o seguinte.
 
@@ -60,7 +61,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
    > Dependendo do ficheiro do instalador que está a utilizar, alguns destes valores podem ter sido introduzidos automaticamente ou podem não aparecer.
 
    - **Publicador**. Introduza o nome do publicador da aplicação.
-   - **Nome**. Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br />Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se o mesmo nome de aplicação existir duas vezes, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
+   - **Nome**. Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br />Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
    - **Descrição**. Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
    - **URL para informações de software** (opcional). Introduza o URL de um site que contenha informações sobre esta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
    - **URL de privacidade** (opcional). Introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
@@ -97,7 +98,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
 A aplicação é apresentada no nó **Aplicações** da área de trabalho **Aplicações**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Depois de criar uma aplicação, o passo seguinte é implementá-la. Para saber mais, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md).
 

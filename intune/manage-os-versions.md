@@ -11,12 +11,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: 763cc61aae50de893461d1ed137025fa1e6b00b9
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: c75956cd1e3e9bba0017a624b99dcc090d32978b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231676"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182232"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerir versões de sistemas operativos com o Intune
 Nas plataformas modernas de ambiente de trabalho e dispositivos móveis, são constantemente publicadas atualizações importantes, patches e novas versões. Tem controlos para gerir atualizações e patches totalmente no Windows, mas outras plataformas como Android e iOS precisam que os seus utilizadores finais participem no processo.  O Microsoft Intune tem as ferramentas para o ajudar a estruturar a gestão das versões do seu sistema operativo em diferentes plataformas.
@@ -81,7 +82,7 @@ Pode utilizar as funcionalidades do Intune descritas neste artigo para o ajudar 
 - **Passo 3b**: utilize as políticas de conformidade de dispositivos para exigir a versão 2 do sistema operativo como a versão mínima para o dispositivo estar em conformidade.
   - Estas políticas exigem que os dispositivos sejam atualizados para que os utilizadores continuem a ter acesso aos dados organizacionais. Os serviços protegidos são bloqueados quando forem utilizados com um dispositivo com acesso condicional. As aplicações com a política de proteção de aplicações ativada são bloqueadas quando abertas ou quando tentam aceder a dados organizacionais.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Utilize os seguintes recursos para gerir as versões de sistemas operativos na sua organização: 
 
 - [Definir restrições de tipos de dispositivos](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)

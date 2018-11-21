@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
-ms.translationtype: HT
+ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915704"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186006"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -153,7 +154,7 @@ Também pode utilizar as políticas de conformidade de dispositivos sem acesso c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar as políticas de conformidade de dispositivos
 Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, todos os dispositivos do utilizador são verificados relativamente à conformidade. No Windows 10 versão 1803 e dispositivos mais recentes, é recomendado implementar para grupos de dispositivos *se* o utilizador primário não tiver inscrito o dispositivo. Utilizar grupos de dispositivos neste cenário ajuda com os relatórios de conformidade.
 
-Um conjunto de **Definições de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incorporadas é avaliado em todos os dispositivos inscritos no Intune. Estes incluem:
+Um conjunto de **Definições de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incorporadas é avaliado em todos os dispositivos inscritos no Intune. Estas incluem:
 
 - **Marcar os dispositivos sem política de conformidade atribuída como**: esta propriedade tem dois valores:
 
@@ -197,7 +198,7 @@ As políticas de conformidade de dispositivos criadas no [portal clássico do Az
 
 Para utilizar as funcionalidades relacionadas com a conformidade de dispositivos no portal do Azure, terá de criar novas políticas de conformidade de dispositivos no portal do Azure. Se atribuir uma política de conformidade de dispositivos no portal do Azure a um utilizador a quem também tenha sido atribuída uma política de conformidade de dispositivos do portal clássico, as políticas de conformidade de dispositivos do portal do Azure terão precedência sobre as políticas criadas no portal clássico.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Crie uma política de conformidade de dispositivos para as seguintes plataformas:
 

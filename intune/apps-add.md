@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e0039223176afb3bed3a9ac2d2ada76b82096c26
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 2a0fb9aca406c1a49c979b59e5d879d66a730c1c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236633"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185894"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune
 
@@ -56,7 +57,7 @@ A tabela seguinte apresenta uma lista dos tipos de aplicações específicos e c
 | Aplicações do Office 365 para macOS | Aplicação da loja (Office 365) | Selecione **macOS** em **Office 365 Suite** como o **tipo de aplicação** e, em seguida, selecione o conjunto de aplicações do Office 365. |
 | Aplicações de linha de negócio (LOB) Android | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Android com a extensão **.apk**.  |
 | Aplicações LOB iOS | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação iOS com a extensão **.ipa**.  |
-| Aplicações LOB para Windows Phone | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Windows Phone com a extensão **.xap**.  |
+| Aplicações LOB Windows Phone | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o **tipo de aplicação**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação Windows Phone com a extensão **.xap**.  |
 | Aplicação LOB do Windows | Aplicação LOB | Selecione **Aplicação de linha de negócio** como o tipo de aplicação, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação do Windows com a extensão **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**. |
 | Aplicação iOS incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
 | Aplicação Android incorporada  | Aplicação incorporada | Selecione **Aplicação incorporada** como o **tipo de aplicação** e, em seguida, selecione a aplicação incorporada da lista de aplicações disponibilizadas.  |
@@ -110,7 +111,7 @@ Para obter mais informações sobre os tipos de aplicações que a sua organiza�
 O Intune permite-lhe modificar a funcionalidade das aplicações que implementa para ajudar a ajustá-las às políticas de conformidade e de segurança da sua empresa. Este controlo permite-lhe determinar como os dados da sua empresa são protegidos. As aplicações geridas pelo Intune têm um conjunto avançado de políticas de proteção de aplicações móveis, tal como:
 
 - Restringir funções Copiar e colar e Guardar como.
-- Configurar ligações Web para serem abertas na aplicação Intune Managed Browser.
+- Configurar ligações Web para serem abertas nas aplicação Intune Managed Browser.
 - Ativar o acesso condicional ao nível da aplicação e a utilização de várias identidades.
 
 As aplicações geridas pelo Intune também permitem a proteção de aplicações sem exigir a inscrição, dando-lhe a opção de aplicar políticas de prevenção de perda de dados sem gerir o dispositivo do utilizador. Além disso, pode incorporar a gestão de aplicações móveis nas suas aplicações móveis e de linha de negócio com o SDK da Aplicação Intune e a Ferramenta de Encapsulamento de Aplicações. Para obter mais informações sobre estas ferramentas, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
@@ -179,7 +180,7 @@ O Intune irá reinstalar, atualizar ou remover automaticamente uma aplicação n
 
 Para obter detalhes sobre os erros de instalação da aplicação Intune, veja [Erros de instalação da aplicação](troubleshoot-app-install.md#app-installation-errors).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
 
@@ -190,7 +191,7 @@ Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
 - [Aplicações Web (para todas as plataformas)](web-app.md)
 - [Aplicações da loja Windows Phone 8.1](store-apps-windows-phone-8-1.md)
 - [Aplicações LOB para Windows Phone](lob-apps-windows-phone.md)
-- [Aplicações da Microsoft Store](store-apps-windows.md)
+- [Aplicações da loja Microsoft](store-apps-windows.md)
 - [Aplicação LOB do Windows](lob-apps-windows.md)
 - [Aplicações do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicações do Office 365 para macOS](apps-add-office365-macos.md)

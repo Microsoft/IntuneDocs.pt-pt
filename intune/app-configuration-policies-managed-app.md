@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
-ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
-ms.translationtype: HT
+ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50136969"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182011"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -63,6 +64,6 @@ O Intune suporta os seguintes tipos de tokens nas definições de configuração
 > [!Note]  
 > Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem ser utilizados para outros fins.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação como é habitual.

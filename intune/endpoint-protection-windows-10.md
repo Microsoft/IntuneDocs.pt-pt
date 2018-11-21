@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a7c7ebca1c6472b58021a57b1b4a59fc42966b0
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: fdfe822c9633e22e611acfe7f915068a4a183ae2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576958"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190001"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Definições de proteção de ponto final para o Windows 10 (e versões posteriores) no Intune
 
@@ -491,6 +492,6 @@ Utilize estas opções para configurar as definições da segurança local em di
 - **Assinar digitalmente comunicações (se o cliente concordar)**: determina se o servidor SMB negoceia a assinatura de pacotes SMB com clientes que a peçam. Quando definida para **Ativar**, o servidor de rede da Microsoft negoceia a assinatura de pacotes SMB conforme pedido pelo cliente. Ou seja, se a assinatura de pacotes estiver ativada no cliente, a assinatura de pacotes será negociada. Quando **Não configurado** ou desativado (predefinição), o cliente SMB nunca negociará a assinatura de pacotes SMB.
 - **Assinar digitalmente comunicações (sempre)**: determina se o componente do servidor SMB necessita da assinatura de pacotes. Quando definida para **Ativar**, o servidor de rede da Microsoft não comunica com um cliente de rede da Microsoft, a menos que o cliente aceite assinar pacotes SMB. Quando definida para **Não configurado** ou desativado (predefinição), a assinatura de pacotes SMB é negociada entre o cliente e o servidor.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

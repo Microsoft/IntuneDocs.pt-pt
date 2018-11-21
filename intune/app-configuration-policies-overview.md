@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0d9a4ab46aa8f4086c30fc7d93d7d1335b3d9ba
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
-ms.translationtype: HT
+ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102077"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180001"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 
@@ -58,7 +59,7 @@ Pode preparar as suas aplicações de linha de negócio ao incorporar o SDK da A
 
 Além disso, pode utilizar a Graph API para realizar tarefas de configuração de aplicações. Para obter mais detalhes, veja [Graph API Reference MAM Targeted Config (Configuração de MAM Direcionada de Referência para Graph API)](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 ### <a name="managed-devices"></a>Dispositivos geridos
 

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 12d5d1f5-8452-4270-9975-f3a98e0eb746
 ms.suite: ems
+search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: 5bd37dbe6a24916bf3637999bd914c2e231c086e
-ms.sourcegitcommit: cd73ef164e0df79429b97c3090adbba49592c150
-ms.translationtype: HT
+ms.openlocfilehash: 9e16ec96e29ba10df6c0847de5051c2108e7af13
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448717"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179155"
 ---
 # <a name="microsoft-intune-documentation-guide"></a>Guia de documentação do Microsoft Intune
 
@@ -44,8 +45,8 @@ Utilize a tabela seguinte para localizar e compreender rapidamente as áreas pri
 | [Utilizadores](users-add.md)                                        | Saiba como adicionar utilizadores aos dispositivos e aplicações que gere.                                                                                                                                                                                                                                           |
 | [Grupos](groups-get-started.md)                              | Saiba como criar e gerir grupos com o Intune. Pode tirar partido dos grupos para atribuir rapidamente políticas de configuração e de proteção a dispositivos e aplicações.                                                                                                                                             |
 | [Funções do Intune](role-based-access-control.md)                 | Saiba como controlar quem pode realizar várias ações do Intune e como são aplicadas as mesmas. Pode utilizar as funções incorporadas que abrangem alguns cenários comuns do Intune ou pode criar as suas próprias funções.                                                                                 |
-| [Atualizações de software](windows-update-for-business-configure.md) | Saiba como configurar as atualizações de software para dispositivos com o Windows 10.                                                                                                                                                                                                                                  |
+| [Atualizações de software](windows-update-for-business-configure.md) | Saiba como configurar as atualizações de software para dispositivos Windows 10.                                                                                                                                                                                                                                  |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para compreender os conceitos básicos do Intune, veja [Introdução e começar a utilizar](introduction-intune.md).

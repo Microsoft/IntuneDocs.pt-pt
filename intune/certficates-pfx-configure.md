@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
-ms.translationtype: HT
+ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391608"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186738"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -226,7 +227,7 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 4. Selecione **OK** > **Criar** para guardar o perfil.
 5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](device-profile-assign.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Utilizar certificados SCEP](certificates-scep-configure.md) ou [emitir certificados PKCS de um serviço Web de gestão de PKI da Symantec](certificates-symantec-configure.md).
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navegar para o Intune no portal do Azure e criar um novo perfil para um certificado fidedigno"

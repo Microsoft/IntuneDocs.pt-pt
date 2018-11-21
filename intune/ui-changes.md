@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
-ms.translationtype: HT
+ms.openlocfilehash: 4a1c5f2b400e73566db88fea8e06383e45b363a3
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028635"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187757"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Onde está a minha funcionalidade do Intune no Azure?
 Organizámos algumas tarefas por ordem mais lógica ao mover o Intune para o portal do Azure. Cada melhoria significa ter de conhecer a nova localização das funcionalidades. Criámos este guia de referência para os utilizadores que estão familiarizados com o Intune no portal clássico e que pretendem saber como realizar tarefas do Intune no portal do Azure. Se este artigo não abranger uma funcionalidade que procura, deixe um comentário no final do artigo para o atualizarmos.

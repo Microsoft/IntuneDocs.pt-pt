@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
-ms.translationtype: HT
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744640"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186193"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Utilizar o TeamViewer para administrar remotamente dispositivos do Intune
 
@@ -58,7 +59,10 @@ Após o conector estar configurado, estará pronto para administrar remotamente 
 
 ![Utilizar o TeamViewer para administrar remotamente dispositivos Android – exemplo](./media/android-teamviewer.png)
 
-Quando você iniciar uma sessão remota, o utilizador final verá um sinalizador de notificação no ícone da aplicação Portal da Empresa no respetivo dispositivo. Também é apresentada uma notificação quando a aplicação é aberta. Em seguida, o utilizador pode aceitar o pedido de assistência remota.
+Quando inicia uma sessão remota, os utilizadores veem um sinalizador de notificação no ícone da aplicação Portal da empresa nos respetivos dispositivos. Também é apresentada uma notificação quando a aplicação abre. Os utilizadores, em seguida, podem aceitar o pedido de assistência remota.
+
+> [!NOTE]
+> Dispositivos Windows inscritos através de métodos "sem utilizador", como o DEM e WCD, não mostram a notificação do TeamViewer na aplicação Portal da empresa. Nestes cenários, é recomendado para utilizar o portal do TeamViewer para gerar a sessão.
 
 No TeamViewer, pode realizar diversas ações no dispositivo, incluindo assumir o controlo do mesmo. Para obter detalhes completos do que pode fazer, veja [Orientação do TeamViewer](https://www.teamviewer.com/support/documents/).
 

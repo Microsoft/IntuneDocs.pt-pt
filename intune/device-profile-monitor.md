@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
-ms.translationtype: HT
+ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905925"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186601"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorizar perfis de dispositivos no Microsoft Intune
 
@@ -79,6 +80,6 @@ Em **Dispositivos** > **Todos os dispositivos**, pode ver se existem definiçõe
 
 Agora que já sabe qual é a definição em conflito e as políticas que incluem essa definição, deverá ser mais fácil resolver o conflito. 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Atribuir perfis de utilizador e de dispositivo](device-profile-assign.md)  
 [Problemas comuns com os perfis de dispositivos e soluções](device-profile-troubleshoot.md)

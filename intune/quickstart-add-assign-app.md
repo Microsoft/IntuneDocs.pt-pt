@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 39efa1b85bd06b7c1b5e553d0ff6058f6eeeb64e
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576747"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184519"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guia de Início Rápido: adicionar e atribuir uma aplicação cliente
 
@@ -95,7 +96,7 @@ Tem de instalar e utilizar a aplicação Portal da Empresa para instalar a aplic
 
 Se as suas necessidades empresariais incluírem a atribuição da aplicação Portal da Empresa à sua força de trabalho, pode atribuir manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune. Para obter mais informações, veja [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](store-apps-company-portal-app.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste guia de início rápido, adicionou aplicações ao Intune, atribuiu as aplicações a um grupo e instalou as aplicações no dispositivo inscrito com o Windows 10 Desktop. Para obter mais informações sobre a gestão de aplicações no Intune, veja [O que é a gestão de aplicações do Microsoft Intune?](app-management.md)
 

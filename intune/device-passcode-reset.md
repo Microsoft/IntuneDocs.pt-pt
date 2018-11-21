@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424922"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182403"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
@@ -70,6 +71,6 @@ Para dispositivos Android Enterprise com a versão 8.X ou posterior e inscritos 
 
 Em vez de serem repostos, os códigos de acesso são removidos dos dispositivos iOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para ver o estado da ação que acabou de realizar, em **Dispositivos**, selecione **Ações do dispositivo**.

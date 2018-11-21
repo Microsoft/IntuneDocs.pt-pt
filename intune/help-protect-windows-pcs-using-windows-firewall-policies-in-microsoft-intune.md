@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
-ms.translationtype: HT
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310577"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181127"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows no Microsoft Intune
 
@@ -38,7 +39,7 @@ A política da Firewall do Windows permite-lhe criar e implementar definições 
 > [!NOTE]
 > Se a política do Microsoft Intune e a Política de Grupo estiverem configuradas para gerir a mesma definição no PC, a definição da Política de Grupo sobrepõe-se à política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre a política do Intune e a Política de Grupo, veja o artigo [Resolver conflitos de políticas de GPO e do Microsoft Intune](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> Se pretender implementar as definições da Firewall do Windows em computadores que executem o Windows Vista, primeiro tem de instalar a [Correção KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
+> Se pretender implementar as definições da Firewall do Windows em computadores que executam o Windows Vista, primeiro tem de instalar [correção KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
 
 > [!IMPORTANT]
 > Para gerir a Firewall do Windows com o Intune, certifique-se de que os dois serviços seguintes estão ativados nos computadores que está a gerir:
@@ -79,7 +80,7 @@ Estas definições de política configuram a Firewall do Windows para bloquear o
 O valor predefinido para cada uma destas definições é **Sim**, que é o valor mais seguro.
 
 > [!IMPORTANT]
-> Se o seu ambiente incluir computadores geridos a executar o Windows Vista sem service packs instalados, tem de instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) na Base de Dados de Conhecimento Microsoft ou desativar as definições de política **Bloquear todas as ligações recebidas** nas políticas implementadas nesses computadores.
+> Se o seu ambiente incluir computadores geridos que executam o Windows Vista sem service packs instalados, tem de instalar a atualização que está associada [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) na Base de dados de Conhecimento Microsoft ou desativar o **Bloquear todas as ligações recebidas** definições de política nas políticas implementadas nesses computadores.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notificar o utilizador quando a Firewall do Windows bloquear um programa novo
 

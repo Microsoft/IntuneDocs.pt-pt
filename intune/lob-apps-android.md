@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a57ae54787069f85798519a3a6bc051842db6c2b
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
-ms.translationtype: HT
+ms.openlocfilehash: 60ca4e81fbf2b081a27c633a13d808e88389bb1c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212330"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182946"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Android ao Microsoft Intune
 
@@ -79,7 +80,7 @@ A aplicação criada agora aparece na lista de aplicações. Na lista, pode atri
 > [!Note]
 > Para o serviço do Intune implementar com êxito um novo ficheiro APK no dispositivo, tem de incrementar a cadeia `android:versionCode` no ficheiro AndroidManifest.xml do pacote APK.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

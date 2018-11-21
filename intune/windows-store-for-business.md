@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
-ms.translationtype: HT
+ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915755"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187927"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
 
@@ -98,6 +99,6 @@ Para remover uma aplicação sincronizada a partir da Microsoft Store para Empre
 > [!NOTE]
 > Remover a visibilidade de uma aplicação na loja privada não impedirá o Intune de a sincronizar. Tem de reembolsar a aplicação.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Gerir aplicações e livros comprados em grandes volumes com o Microsoft Intune](vpp-apps.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b348d785d12cd044b12dca4cad9d2daaa1baedf4
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
-ms.translationtype: HT
+ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903445"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185411"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 a dispositivos macOS com o Microsoft Intune
 
@@ -80,7 +81,7 @@ Neste passo, configure as atribuições do conjunto de aplicações.
 6. No painel **Adicionar grupo**, selecione **OK**.
 7. Para consolidar as suas atribuições, selecione **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para saber mais sobre a adição de aplicações do Office 365 a dispositivos Windows 10, veja [Atribuir aplicações do Office 365 ProPlus 2016 para dispositivos Windows 10 com o Microsoft Intune](apps-add-office365.md).
 - Para saber mais sobre como incluir e excluir atribuições de aplicações a partir de grupos de utilizadores, veja [Incluir e excluir atribuições de aplicações](apps-inc-exl-assignments.md).

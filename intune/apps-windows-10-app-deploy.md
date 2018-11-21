@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
-ms.translationtype: HT
+ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075615"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184629"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementação de aplicações para Windows 10 através do Microsoft Intune 
 
@@ -71,7 +72,7 @@ Se existir um conflito nas políticas num único utilizador/dispositivo, seguem-
 
 Para obter mais informações sobre a atribuição de aplicações através do Microsoft Intune, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md) e [Incluir e excluir atribuições de aplicações no Microsoft Intune](apps-inc-exl-assignments.md). Para obter mais informações sobre tipos de aplicações no Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para saber mais sobre a atribuição de aplicações a grupos, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md).
 - Para saber mais sobre a monitorização de atribuições de aplicações, veja [Como monitorizar aplicações](apps-monitor.md).

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
-ms.translationtype: HT
+ms.openlocfilehash: 82d6ef4494ee85e86b42d0c500c6f5b26bb00d27
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028618"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179699"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou eliminar dados pessoais no Intune
 
@@ -78,6 +79,6 @@ Quando tiver um ambiente híbrido de MDM (Intune integrado com o Configuration M
 2. Elimine o utilizador da consola do Configuration Manager para remover o utilizador e os dados associados do Configuration Manager. Na consola, aceda a **Ativos e Conformidade** > **Utilizadores**, clique com o botão direito no utilizador a eliminar e clique em **Eliminar**.
 3. [Eliminar o utilizador do AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad) remove o utilizador e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o utilizador é eliminado do AAD (eliminado definitivamente), o Intune recebe o sinal de eliminação do AAD e, em seguida, inicia automaticamente a remoção de todos os dados pessoais desse utilizador do serviço do Intune. As informações do utilizador serão eliminadas do serviço do Intune no prazo de 30 dias após a ação de remoção.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba como [auditar, exportar ou eliminar](privacy-data-audit-export-delete.md) dados pessoais no Intune.

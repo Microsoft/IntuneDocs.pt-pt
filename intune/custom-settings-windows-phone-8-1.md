@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f2202d7abf80c6a78fd365a4629e970bc9ec36ce
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: a876cf430952aa99957af4bc9a66f4bc29d65df9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983096"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184680"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos Windows Phone 8.1 no Intune
 
@@ -61,7 +62,7 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Wind
 5. Selecione **OK** para guardar as alterações. Continue a adicionar mais definições conforme necessário.
 6. Quanto terminar, selecione **OK** > **Criar** para criar o perfil do Intune. Depois de criado, o perfil é apresentado na lista **Configuração do dispositivo – Perfis**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
 

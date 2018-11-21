@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b71e022ea99255d95aa4f06c32a98b560f903836
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: 32f41e4f299af4802dd270ec4a46c0cf4d467bc9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602253"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179138"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -39,7 +40,7 @@ A entidade **AppRevision** apresenta uma lista de todas as versões das aplicaç
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | AppKey |Identificador exclusivo da Aplicação. |123 |
-| ApplicationID |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationId |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | Revision |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
 | Title |Nome da aplicação. |Excel |
 | Publisher |Publicador da aplicação. |Microsoft |
@@ -137,5 +138,5 @@ A entidade **MobileAppDeviceUserInstallStatus** representa um estado de instala�
 |     DeviceKey      |                              A chave de um dispositivo de destino que serve para identificar uma instância de Dispositivo.                               |
 |      UserKey       |                                A chave de um dispositivo de destino que serve para identificar uma instância de Utilizador.                                 |
 | AppInstallStateKey |                     A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState.                     |
-|     CódigoDoErro      | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
+|     Código de erro      | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
 

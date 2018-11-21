@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313414"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190341"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Ativar inscrição do dispositivo iOS com o Apple School Manager
 
@@ -66,13 +67,13 @@ Para poder inscrever dispositivos iOS da empresa através do Apple School Manage
 8. Especifique como irá **Escolher Dispositivos** e, em seguida, forneça as informações e detalhes do dispositivo.
 9. Selecione **Atribuir ao Servidor**, selecione o &lt;NomeDoServidor&gt; especificado para o Microsoft Intune e, em seguida, selecione **OK**.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Passo 3. Guardar o Apple ID que serviu para criar este token
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Passo 3: Guardar o Apple ID que serviu para criar este token
 
 No Intune no portal do Azure, forneça o ID Apple para referência futura.
 
 ![Captura de ecrã a mostrar a especificação do ID Apple utilizado para criar o token do programa de inscrição e o acesso ao token do programa de inscrição.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Passo 4. Carregar o token
+### <a name="step-4-upload-your-token"></a>Passo 4: Carregar o token
 Na caixa **Token da Apple**, procure o ficheiro de certificado (.pem), escolha **Abrir** e, em seguida, escolha **Criar**. Com o certificado push, o Intune pode inscrever e gerir dispositivos iOS ao enviar políticas para dispositivos móveis inscritos. O Intune sincroniza automaticamente os seus dispositivos Apple School Manager da Apple.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
@@ -85,12 +86,12 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     ![Nome do perfil e descrição.](./media/device-enrollment-program-enroll-ios/image05.png)
 
-4. Na **Afinidade de Utilizador**, escolha se os dispositivos com este perfil têm de ser inscritos com ou sem um utilizador atribuído.
-    - **Inscrever com Afinidade de Utilizador** – escolha esta opção para os dispositivos que pertençam aos utilizadores e que queiram utilizar o portal da empresa para serviços como a instalação de aplicações. Esta opção também permite que os utilizadores autentiquem os respetivos dispositivos através do portal da empresa. Se estiver a utilizar o Sistema de Ficheiros Distribuído do Azure, a afinidade de utilizador precisa de um [Nome de utilizador/Ponto final misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   O modo iPad Partilhado do Apple School Manager exige que o utilizador se inscreva sem a afinidade de utilizador.
+4. Na **Afinidade do Utilizador**, escolha se os dispositivos com este perfil têm de ser inscritos com ou sem um utilizador atribuído.
+    - **Inscrever com Afinidade do Utilizador** – escolha esta opção para os dispositivos que pertençam aos utilizadores e que queiram utilizar o portal da empresa para serviços como a instalação de aplicações. Esta opção também permite que os utilizadores autentiquem os respetivos dispositivos através do portal da empresa. Se estiver a utilizar o Sistema de Ficheiros Distribuído do Azure, a afinidade de utilizador precisa de um [Nome de utilizador/Ponto final misto WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   O modo iPad Partilhado do Apple School Manager exige que o utilizador se inscreva sem a afinidade de utilizador.
 
-    - **Inscrever sem Afinidade de Utilizador** – escolha esta opção para dispositivos não afiliados a um único utilizador, como um dispositivo partilhado. Utilize esta opção para dispositivos que realizem tarefas sem aceder aos dados de utilizador locais. As aplicações, como o Portal da Empresa, não funcionam.
+    - **Inscrever sem Afinidade do Utilizador** – escolha esta opção para dispositivos não afiliados a um único utilizador, como um dispositivo partilhado. Utilize esta opção para dispositivos que realizem tarefas sem aceder aos dados de utilizador locais. As aplicações, como o Portal da Empresa, não funcionam.
 
-5. Se tiver escolhido **Inscrever com Afinidade de Utilizador**, tem a opção para permitir que os utilizadores se autentiquem com o Portal da Empresa em vez do Assistente de Configuração da Apple.
+5. Se tiver escolhido **Inscrever com Afinidade do Utilizador**, tem a opção para permitir que os utilizadores se autentiquem com o Portal da Empresa em vez do Assistente de Configuração da Apple.
 
     ![Autentique com o Portal da Empresa.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
@@ -123,7 +124,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
 11. Escolha **OK**.
 
-12. Selecione **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
+12. Escolha **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     |                 Definição                  |                                                                                               Descrição                                                                                               |
@@ -131,7 +132,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     |     <strong>Nome do Departamento</strong>     |                                                             É apresentado quando os utilizadores tocam em <strong>Acerca da Configuração</strong> durante a ativação.                                                              |
     |    <strong>Número de Telefone do Departamento</strong>     |                                                          Aparece quando o utilizador clica no botão <strong>Preciso de Ajuda</strong> durante a ativação.                                                          |
     | <strong>Opções do Assistente de Configuração</strong> |                                                     As seguintes definições opcionais podem ser configuradas posteriormente no menu <strong>Definições</strong> do iOS.                                                      |
-    |        <strong>Código de Acesso</strong>         | Pedido de código de acesso durante a ativação. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de quiosque que restringe o dispositivo a uma aplicação). |
+    |        <strong>Código de Acesso</strong>         | Pedido de código de acesso durante a ativação. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação). |
     |    <strong>Serviços de Localização</strong>    |                                                                 Se ativado, o Assistente de Configuração solicita este serviço durante a ativação.                                                                  |
     |         <strong>Restaurar</strong>         |                                                                Se estiver ativado, o Assistente de Configuração solicita a cópia de segurança de iCloud durante a ativação.                                                                 |
     |   <strong>iCloud e Apple ID</strong>   |                         Se estiver ativado, o Assistente de Configuração solicita ao utilizador que inicie sessão com um Apple ID e o ecrã de Aplicações e Dados irá permitir que o dispositivo seja restaurado a partir da cópia de segurança de iCloud.                         |

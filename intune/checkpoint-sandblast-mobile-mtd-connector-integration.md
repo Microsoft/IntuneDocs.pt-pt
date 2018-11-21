@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9fa64ff115e6f451cef06b9cf605f55829b0b01
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 6c0c9db9955c8fbf08e5a17d3a1f9fb3fdba2cd5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231161"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184527"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrar o Check Point SandBlast Mobile com o Intune
 
@@ -80,6 +81,6 @@ O processo de autorização da aplicação Check Point SandBlast consiste no seg
 
 8.  Selecione **Verificar**. Assim que o grupo de segurança do Azure AD for verificado com êxito, selecione **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Set up Check Point SandBlast Mobile apps (Configurar aplicações do Check Point SandBlast Mobile)](mtd-apps-ios-app-configuration-policy-add-assign.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fc49d7ba7cdc5b986c06f8a84ececc8339a812a2
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425109"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180685"
 ---
 # <a name="intune-app-sdk-overview"></a>Descrição geral do SDK da Aplicação Intune
 O SDK da Aplicação Intune, disponível para iOS e Android, permite à sua aplicação ter políticas de proteção de aplicações do Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma melhor experiência de utilizador final e administrador de TI, pode utilizar as APIs para personalizar o comportamento da sua aplicação para funcionalidades que requerem a participação da aplicação.

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 832105078572b3229334ccdcb2e3e89ace9e0408
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
-ms.translationtype: HT
+ms.openlocfilehash: 508ddd91a44b3cf0e210c22e48a2de5b0ddd7397
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494069"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181619"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -71,6 +72,6 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Atribuir aplicações a grupos](apps-deploy.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
-ms.translationtype: HT
+ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279428"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184291"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Ligar a sua conta do Intune à sua conta do Android Enterprise
 
@@ -57,6 +58,6 @@ Pode desativar a gestão e inscrição do Android Enterprise. Para tal, tem de r
 2. Selecione **Inscrição de dispositivos** > **Inscrição Android** > **Google Play Gerido** > **Desligar**.
 3. Selecione **Sim** para desligar e anular a inscrição dos dispositivos Android Enterprise do Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Depois de ligar à conta do Android Enterprise, pode [configurar dispositivos com perfil de trabalho do Android](android-work-profile-enroll.md) e [configurar dispositivos de quiosque Android](android-kiosk-enroll.md).

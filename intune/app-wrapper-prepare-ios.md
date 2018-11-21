@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
-ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
-ms.translationtype: HT
+ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169503"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182113"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 

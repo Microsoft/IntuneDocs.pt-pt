@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236412"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184187"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade para dispositivos macOS com o Intune
 
@@ -111,6 +112,6 @@ Para obter mais detalhes na documentação da Apple, veja [Controlador de Chamad
 
 Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores visados pela política são avaliados quanto à conformidade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
 [Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)

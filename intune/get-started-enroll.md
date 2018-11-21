@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 21d32cda464170aad737b51fdc405059a8320faf
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
-ms.translationtype: HT
+ms.openlocfilehash: bdd8267701b20600d67e6927c8b55d7f9c11a34f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617350"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186771"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Compreender a experiência do utilizador que está a inscrever um dispositivo iOS
 
@@ -58,7 +59,7 @@ A inscrição de um dispositivo é a primeira experiência que muitos utilizador
 15. A mensagem "A inscrever o dispositivo" é apresentada no ecrã, seguida de outra mensagem a indicar que o dispositivo foi inscrito com êxito. Será apresentado um pop-up a pedir para abrir a página no Portal da Empresa. Toque em **Abrir**.
 16. Irá regressar ao ecrã **Configuração do Acesso à Empresa**. Se não tiver configurado políticas de teste, o dispositivo deverá aparecer como estando em conformidade. Se tiver políticas de teste, ao tocar em **Conformidade do Dispositivo** será apresentada uma lista de tarefas a fazer que terá de concluir para tornar o dispositivo seguro.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Introdução à adição de aplicações](get-started-apps.md) – localize e adicione aplicações a dispositivos para que os seus funcionários comecem a trabalhar.
 

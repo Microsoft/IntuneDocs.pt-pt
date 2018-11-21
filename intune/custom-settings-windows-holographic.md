@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.topic: article
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983164"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185581"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos com o Windows Holographic for Business no Intune
 
@@ -40,7 +41,7 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos com 
 
     - **Nome**: introduza um nome para o perfil, como `hololens custom profile`.
     - **Descrição:** introduza uma descrição para o perfil.
-    - **Plataforma**: selecione **Windows 10 e posterior**.
+    - **Plataforma**: selecione **Windows 10 e posterior**.
     - **Tipo de perfil**: selecione **Personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
@@ -167,7 +168,7 @@ Pode consultar a lista completa de todos os fornecedores de serviços de configu
 
 Além disso, o Intune não suporta todas as definições apresentadas em [CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) (CSPs suportados no Windows Holographic). Para saber se o Intune suporta a definição que pretende, abra o artigo referente a essa definição. Cada página de definição mostra a respetiva operação suportada. Para trabalhar com o Intune, a definição tem de suportar as operações **Adicionar** ou **Substituir**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 04c9c6b184fac2082649e8be8e60e6ac3f5a5669
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: 15e5eb80008e7365479bfd3a63224818d0c19a73
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212432"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183201"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 
@@ -84,7 +85,7 @@ Algumas aplicações baseadas no programa de instalação MSI são automaticamen
 
 Esta funcionalidade é útil para evitar que ocorra uma condição race. Por exemplo, pode ocorrer uma condição race quando a aplicação é atualizada automaticamente pelo programador e pelo Intune. Ambos podem tentar impor uma versão da aplicação num cliente Windows, o que cria um conflito.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

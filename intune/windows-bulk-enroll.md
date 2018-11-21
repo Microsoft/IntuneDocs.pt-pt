@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313243"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184816"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -36,7 +37,7 @@ Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obt
 
 ## <a name="create-a-provisioning-package"></a>Criar um pacote de aprovisionamento
 
-1. Transfira o [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) na Microsoft Store.
+1. Transfira o [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) na Loja Microsoft.
    ![Captura de ecrã da aplicação Windows Configuration Designer na loja](media/bulk-enroll-store.png)
 
 2. Abra a aplicação **Windows Configuration Designer** e selecione **Aprovisionar computadores**.

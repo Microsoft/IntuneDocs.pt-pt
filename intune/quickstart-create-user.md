@@ -7,14 +7,18 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: ffc1f0140f98b17e060df3308af779ddcb77549e
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510929"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189500"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Guia de Início Rápido: criar um utilizador e atribuir uma licença ao mesmo
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início Rápido: criar um utilizador e atribuir uma licença ao mesmo
 
 Neste guia de início rápido, irá criar um utilizador e, em seguida, atribuir uma licença ao mesmo. Ao utilizar o Intune, é necessário que todas as pessoas que pretende que tenham acesso aos dados da empresa tenham uma conta de utilizador. Os administradores do Intune podem configurar posteriormente esses utilizadores para gerirem o controlo de acesso.
 
@@ -59,7 +63,7 @@ O novo utilizador ativo do Intune mostrará que está a utilizar uma licença do
 
 Se já não precisar deste utilizador, pode eliminá-lo ao navegar até ao [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e selecionar **Utilizadores** > **Utilizadores ativos** > *selecionar o utilizador na lista* > **Eliminar utilizador** > **Eliminar utilizador** > **Confirmar alterações** > **Fechar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste guia de início rápido, criou um utilizador e atribuiu uma licença ao mesmo. Para obter mais informações sobre como adicionar utilizadores ao Intune, veja [Adicionar utilizadores e conceder permissões administrativas no Intune](users-add.md).
 

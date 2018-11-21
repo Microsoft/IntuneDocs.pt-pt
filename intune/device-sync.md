@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
-ms.translationtype: HT
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117876"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179513"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes com o Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar-se imediatamente com o Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo. Esta funcionalidade pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
+A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar-se imediatamente com o Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo. Esta funcionalidade pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -64,7 +65,7 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação. | Sim|
 | 2016330888 | A avaliação da fidedignidade do servidor falhou. | Não|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Pode [verificar os detalhes](device-inventory.md) do dispositivo.
  

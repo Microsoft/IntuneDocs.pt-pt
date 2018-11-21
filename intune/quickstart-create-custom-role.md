@@ -7,14 +7,18 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
-ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561929"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189933"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Guia de Início Rápido: criar e atribuir uma função personalizada
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: criar e atribuir uma função personalizada
 
 Neste início rápido do Intune, vai criar e atribuir uma função personalizada com permissões específicas a um serviço de segurança operacional. Em seguida, vai atribuir a função a um grupo desses operadores. Há várias funções predefinidas que pode utilizar de imediato. Contudo, ao criar funções personalizadas como esta, tem controlo de acesso preciso em relação a todas as partes de seu sistema de gestão de dispositivos móveis.
 
@@ -62,7 +66,7 @@ Agora todos os elementos do grupo são membros da função *Operações de segur
 
 Se não quiser continuar a utilizar a nova função personalizada, pode eliminá-la. Selecione **Funções** > **Todas as funções** > selecione as reticências que se encontram junto à função > **Eliminar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste início rápido, criou uma função de operações de segurança personalizada e atribui-a a um grupo. Para obter mais informações sobre funções no Intune, veja [Controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md).
 

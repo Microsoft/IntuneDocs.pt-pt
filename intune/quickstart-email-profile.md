@@ -14,15 +14,16 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
-ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
+ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51225752"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189712"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Guia de Início Rápido: criar um perfil de dispositivo de e-mail para iOS
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início Rápido: criar um perfil de dispositivo de e-mail para iOS
 
 Neste início rápido, verá como pode criar um perfil de dispositivo de e-mail para dispositivos iOS. Este perfil especifica as definições que são necessárias para a aplicação de e-mail incorporada no dispositivo iOS estabelecer ligação ao e-mail da empresa. Os perfis de dispositivo de e-mail ajudam a padronizar as definições em vários dispositivos e permitem que os utilizadores finais acedam ao e-mail da empresa nos respetivos dispositivos pessoais sem precisarem de realizar qualquer configuração. Para salvaguardar ainda mais o seu e-mail, pode utilizar um perfil de e-mail para determinar se os dispositivos estão em conformidade e, em seguida, para configurar o acesso condicional de modo permitir que apenas os dispositivos conformes acedam ao e-mail. Para obter detalhes sobre perfis de e-mail, veja [Como configurar definições de e-mail no Microsoft Intune](email-settings-configure.md).
 
@@ -67,7 +68,7 @@ Se não tencionar utilizar o perfil que criou em tutoriais ou testes adicionais,
 2. Selecione o perfil de teste que criou (**O iOS necessita de um e-mail de trabalho**).
 3. Selecione as reticências (**...**) que se encontram junto ao perfil e, em seguida, selecione **Eliminar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste início rápido, criou um perfil de e-mail para dispositivos iOS. Agora pode utilizar este perfil para determinar se um dispositivo iOS está em conformidade ao criar uma política de conformidade que assinale como não conformes todos os dispositivos iOS que não correspondam ao perfil. Para obter uma maior proteção, pode criar uma política de acesso condicional que impeça o acesso dos dispositivos iOS não conformes ao e-mail. Para saber mais sobre as políticas de conformidade de dispositivos, veja [Introdução às políticas de conformidade de dispositivos no Intune](device-compliance-get-started.md).
 

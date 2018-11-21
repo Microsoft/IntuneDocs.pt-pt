@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ff1f4f6a728fc041241371a413ce9d2dfdf89605
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: a606f63bd22ce2ed543b6c5863ddc4f35d7ea212
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236463"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186210"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android Enterprise no Intune
 
@@ -58,14 +59,14 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 4. Em **Plataforma**, selecione **Android Enterprise**. 
 5. Selecione **Configurar Definições**. Introduza as definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**, conforme descrito neste artigo.
 
-## <a name="device-health"></a>Estado de funcionamento do dispositivo
+## <a name="device-health"></a>Device health
 
 - **Dispositivos com rooting**: selecione **Bloquear** para marcar dispositivos com rooting (com jailbreak) como não conformes. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição de conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
   - **Protegido**: esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
   - **Baixo**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
-  - **Alto**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
+  - **Elevado**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
 - **Os Serviços do Google Play estão configurados**: **exige** que a aplicação de Serviços do Google Play esteja instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Fornecedor de segurança atualizado**: **exige** que um fornecedor de segurança atualizado proteja um dispositivo contra vulnerabilidades conhecidas. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Atestado de dispositivo SafetyNet**: introduza o nível de [Atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que tem de ser cumprido. As opções são:
@@ -89,7 +90,7 @@ Em dispositivos Android Enterprise, a definição **Análise de ameaça em aplic
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
 - **Tipo de palavra-passe necessária**: escolha se uma palavra-passe deve incluir apenas carateres numéricos ou uma combinação de números e de outros carateres. As opções são:
-  - **Predefinição do Dispositivo**
+  - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
   - **Pelo menos, numérico** (predefinição)
   - **Complexo numérico**
@@ -143,7 +144,7 @@ Pode alterar a agenda quando o dispositivo for marcado como não conforme, tal c
 
 O artigo [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) fornece mais informações, incluindo como criar um e-mail de notificação para os seus utilizadores.
 
-## <a name="scope-tags"></a>Etiquetas de âmbito
+## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
 
 As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito a políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
 
@@ -157,7 +158,7 @@ Depois de criar uma política, esta não fará nada até ser atribuída. Para at
 
 Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
 [Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)  
 [Definições de políticas de conformidade para Android](compliance-policy-create-android.md)

@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425024"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179090"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o software de cliente do Intune em PCs Windows
 
@@ -117,9 +118,9 @@ Os utilizadores devem instalar o software de cliente do Intune ao aceder ao [sit
 
 Se não tiver sido atribuída uma licença do Intune aos utilizadores ou se a Autoridade MDM da organização não tiver sido definida como o Intune, não serão apresentadas quaisquer opções de inscrição aos utilizadores.
 
-Se tiver sido atribuída uma licença do Intune aos utilizadores e a Autoridade MDM da organização tiver sido definida como o Intune:
+Se os utilizadores têm foi atribuídos uma licença do Intune e autoridade da organização de MDM foi definida para o Intune:
 
-- Os utilizadores que tiverem PCs com o Windows 7 ou o Windows 8 verão APENAS a opção para se inscreverem no Intune ao transferir e instalar o software de cliente do PC que é exclusivo da sua organização.
+- Os utilizadores do Windows 7 ou PC do Windows 8 são mostrados apenas a opção para se inscreverem no Intune ao transferir e instalar o software de cliente de PC que seja exclusivo para a sua organização.
 
 - Os utilizadores que tiverem PCs com o Windows 10 ou o Windows 8.1 verão duas opções de inscrição:
 
@@ -256,7 +257,7 @@ Verifique o caminho "%ProgramFiles%\Microsoft\OnlineManagement" e certifique-se 
 
 O processo de anulação da inscrição não remove a pasta OnlineManagement. Aguarde 30 minutos após a desinstalação e, em seguida, execute este comando. Se o executar demasiado cedo, a desinstalação poderá apresentar um estado desconhecido. Para remover a pasta, inicie uma linha de comandos elevada e execute:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
-### <a name="next-steps"></a>Próximos passos
+### <a name="next-steps"></a>Passos Seguintes
 [Gerir dispositivos com o Microsoft Intune](device-management.md)

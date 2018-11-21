@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba5035dfcbab4b938b1ed31786ad0f70dceb2d8c
-ms.sourcegitcommit: b165a38b5d6de396f2edab6411742cb50a9b8816
-ms.translationtype: HT
+ms.openlocfilehash: 32044422943282d9cf813192405a335ee756e44e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50253475"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177937"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar políticas de acesso condicional com base na aplicação com o Intune
 
@@ -50,7 +51,7 @@ Os administradores de TI podem criar políticas de acesso condicional com base n
 
 5. Selecione **Pedir aplicação aprovada do cliente** , **Selecionar** e, em seguida, **Guardar** para guardar a nova política.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Bloquear aplicações que não tenham autenticação moderna](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Consulte também

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d1add113222c2aa7eaea10679c329e877b1a136f
-ms.sourcegitcommit: 437eaf364c3b8a38d294397310c770ea4d8a8015
-ms.translationtype: HT
+ms.openlocfilehash: c4d19807ecfcc33b957d5f6582f095427dbf978e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49992014"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190205"
 ---
 # <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Utilizar dispositivos iOS com o início de sessão único no Microsoft Intune
 
@@ -54,7 +55,7 @@ Certifique-se de que tem uma aplicação codificada para procurar o arquivo de c
 
             Também pode substituir o âmbito pelo texto que introduzir na caixa de texto **Âmbito**.
 
-            Por exemplo, a Contoso poderá ter várias subregiões, como a Europa, Ásia e América do Norte. Poderá querer que os seus utilizadores na Ásia utilizem o payload de SSO, e a aplicação exige o UPN no formato `username@asia.contoso.com`. Neste caso, se selecionar **Nome Principal de Utilizador**, por predefinição, o âmbito de cada utilizador será obtido do Azure AD e poderá ser simplesmente *contoso.com*. Assim, especificamente para os utilizadores na Ásia, pode criar este payload e substituir o âmbito pelo valor *asia.contoso.com*. Agora, o UPN do utilizador final será username@asia.contoso.com em vez de username@contoso.com.
+            Por exemplo, a Contoso poderá ter várias subregiões, como a Europa, Ásia e América do Norte. Poderá querer que os seus utilizadores na Ásia utilizem o payload de SSO, e a aplicação exige o UPN no formato `username@asia.contoso.com`. Neste caso, se selecionar **Nome Principal de Utilizador**, por predefinição, o âmbito de cada utilizador será obtido do Azure AD e poderá ser simplesmente *contoso.com*. Assim, especificamente para os utilizadores na Ásia, pode criar este payload e substituir o realm pelo valor *asia.contoso.com*. Agora, o UPN do utilizador final será username@asia.contoso.com em vez de username@contoso.com.
 
         - **ID de Dispositivo do Intune**: o Intune seleciona automaticamente o ID de Dispositivo do Intune. 
 
@@ -86,7 +87,7 @@ Certifique-se de que tem uma aplicação codificada para procurar o arquivo de c
 
 6. Selecione **OK** > **OK** > **Criar** para guardar as alterações e criar o perfil. Depois de criado, o perfil é apresentado na lista **Configuração do dispositivo – Perfis**. 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para obter mais informações sobre a configuração de funcionalidades dos dispositivos, veja [Como configurar as definições das funcionalidades dos dispositivos no Microsoft Intune](device-features-configure.md).
 

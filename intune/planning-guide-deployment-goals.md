@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
-ms.translationtype: HT
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961477"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189355"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar metas, objetivos e obstáculos da implementação
 
@@ -78,7 +79,7 @@ Os objetivos da implementação são as ações que a sua organização pode rea
 
 Os obstáculos à implementação são problemas prioritários para uma organização e podem ter um impacto negativo na implementação. Por vezes, estes obstáculos estão relacionados com problemas passados de projetos anteriores que gostaria de evitar ou são novos problemas relacionados com o esforço de implementação atual. Abaixo encontram-se alguns exemplos de obstáculos à implementação do Intune, bem como potenciais formas de os mitigar.
 
--   A preparação do suporte e a experiência de utilizador final não estão incluídas no âmbito inicial de um projeto. Tal resulta numa fraca adoção dos utilizadores finais e em desafios para a sua organização de suporte.
+-   A preparação do suporte e a experiência de utilizador final não estão incluídas no âmbito inicial de um projeto. Tal resulta numa fraca adoção dos utilizadores finais e em desafios para a sua organização de suporte.
 
     -   **Mitigação:** inclua formação em suporte. Valide a experiência do utilizador final com métricas de sucesso no seu plano de implementação.
 
@@ -90,6 +91,6 @@ Os obstáculos à implementação são problemas prioritários para uma organiza
 
     -   **Mitigação:** embora possa estar ansioso por se lançar no seu projeto, confirme que definiu claramente as suas metas e objetivos. Inclua estas metas e objetivos em todas as atividades de sensibilização e de formação para ajudar a garantir que os utilizadores compreendem por que razão a sua organização escolheu o Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora que já identificou as suas metas, objetivos e potenciais obstáculos à implementação, vamos avançar para a secção seguinte: [Identificar cenários de casos de utilização](planning-guide-scenarios.md).

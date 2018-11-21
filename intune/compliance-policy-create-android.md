@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1108a208a324b5ed4c46248dc986dcf08e6293fe
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: cb5fc7256e68b8ea10ba1b3ddd7cfe6ed44bd544
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236548"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180617"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
@@ -39,7 +40,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 | --- | ----|
 | **Configuração do PIN ou da palavra-passe** |  Em quarentena |
 | **Encriptação do dispositivo** | Em quarentena |
-| **Dispositivo com jailbreak ou rooting** | Em quarentena (não é uma definição) |
+| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Em quarentena (não é uma definição) |
 | **perfil de e-mail** | Não aplicável |
 | **Versão mínima do SO** | Em quarentena |
 | **Versão máxima do SO** |   Em quarentena |
@@ -49,7 +50,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 **Remediado** = O sistema operativo do dispositivo impõe a conformidade. Por exemplo, forçar o utilizador a definir um PIN.
 
-**Em Quarentena** = O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são efetuadas as seguintes ações:
+**Em quarentena** = O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são efetuadas as seguintes ações:
 
   - O dispositivo é bloqueado se uma política de acesso condicional se aplicar ao utilizador.
   - O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
@@ -60,7 +61,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 4. Em **Plataforma**, selecione **Android**. 
 5. Selecione **Configurar Definições**. Introduza as definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**, conforme descrito neste artigo.
 
-## <a name="device-health"></a>Estado de funcionamento do dispositivo
+## <a name="device-health"></a>Device health
 
 - **Dispositivos com rooting**: selecione **Bloquear** para marcar dispositivos com rooting (com jailbreak) como não conformes. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição de conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
@@ -132,7 +133,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 Quando terminar, selecione **OK** > **OK** para guardar as suas alterações.
 
-## <a name="locations"></a>Localizações
+## <a name="locations"></a>localizações
 
 Na sua política, escolha uma das localizações existentes. Ainda não tem uma localização? [Utilizar Localizações (barreira de rede) no Intune](use-network-locations.md) fornece algumas orientações.
 
@@ -150,7 +151,7 @@ O artigo [Adicionar ações para dispositivos não conformes](actions-for-noncom
 
 Por exemplo, está a utilizar a funcionalidade Localizações e adiciona uma localização numa política de conformidade. A ação predefinida de não conformidade aplica-se quando selecionar pelo menos uma localização. Se o dispositivo não estiver ligado às localizações selecionadas, será imediatamente considerado não conforme. Pode dar aos seus utilizadores um período de tolerância, por exemplo um dia.
 
-## <a name="scope-tags"></a>Etiquetas de âmbito
+## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
 
 As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito a políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
 
@@ -164,7 +165,7 @@ Depois de criar uma política, esta não fará nada até ser atribuída. Para at
 
 Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
 [Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)  
 [Definições de política de conformidade para Android Enterprise](compliance-policy-create-android-for-work.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1ce1d429b830ac6f494346697bd7e44ac250d9b6
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
-ms.translationtype: HT
+ms.openlocfilehash: 38a4383fe9fbeec4abc8ce37ad46ce55b2849090
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642963"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182589"
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de utilizador
 
@@ -46,6 +47,6 @@ A coleção de entidades **Utilizador** contém dados do utilizador. Estes regis
 | IsCurrent |Indica se este registo representa o estado mais recente do utilizador. Podem existir vários registos para um único utilizador, mas apenas um deles representa o estado atual.  |True/False |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC quando o registo foi modificado pela última vez no armazém de dados  |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
  - Pode utilizar a coleção de entidades **Utilizador Atual** para limitar os dados do utilizador aos utilizadores que estão atualmente ativos. Para obter mais informações, veja [Referência para a entidade do utilizador atual](reports-ref-current-user.md).
  - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).

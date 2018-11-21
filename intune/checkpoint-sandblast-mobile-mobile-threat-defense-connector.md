@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 3600cae373dceb88122852e3d260e91e2618d516
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231532"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180430"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças do Check Point SandBlast Mobile no Intune
 
@@ -59,7 +60,7 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
-Detete ameaças como **Man-in-the-middle** na rede e proteja o acesso às redes Wi-Fi com base no risco do dispositivo.
+Detete ameaças como **Man-in-the-middle** na rede e Proteja o acesso a redes Wi-Fi com base no risco do dispositivo.
 
 **Bloquear o acesso à rede através de Wi-Fi:**
 
@@ -71,7 +72,7 @@ Detete ameaças como **Man-in-the-middle** na rede e proteja o acesso às redes 
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
-Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a sincronização de ficheiros empresariais com base no risco do dispositivo.
+Detete ameaças como **Man-in-the-middle** na rede e impeça a sincronização de ficheiros empresariais com base no risco do dispositivo.
 
 **Bloquear o SharePoint Online quando forem detetadas ameaças à rede:**
 
@@ -96,7 +97,7 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 -   Subscrição do Check Point SandBlast Mobile – Defesa Contra Ameaças
     -   Veja o [site do Check Point SandBlast](https://www.checkpoint.com/) para obter mais informações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Integrar o Check Point SandBlast com o Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
 

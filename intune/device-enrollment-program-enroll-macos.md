@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
-ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
-ms.translationtype: HT
+ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45533664"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180770"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos macOS com o Programa de Registo de Aparelho da Apple
 
@@ -41,7 +42,7 @@ A inscrição DEP não funciona com o [gestor de inscrição de dispositivos](de
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>Pré-requisitos
-- Dispositivos adquiridos através do [Programa de Inscrição de Dispositivos Apple](http://deploy.apple.com)
+- Dispositivos adquiridos através do [Programa de Inscrição de Dispositivos da Apple](http://deploy.apple.com)
 - Uma lista de números de série ou um número de encomenda. 
 - [Autoridade MDM](mdm-authority-set.md)
 - [Certificado Push de MDM da Apple](apple-mdm-push-certificate-get.md)
@@ -65,7 +66,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
    ![Captura de ecrã a mostrar o painel Token do Programa de Inscrição, na área de trabalho Certificados da Apple, para transferir a chave pública.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos Apple.
+3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos da Apple.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2. Utilize a sua chave para transferir um token a partir da Apple.
@@ -162,7 +163,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos geridos
 Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincronizar o Intune com a Apple para ver os seus dispositivos geridos no Intune no portal do Azure.
 
-1. No Intune no portal do Azure, escolha **Inscrição de dispositivos**>**Inscrição da Apple**>**Tokens do programa de inscrição** > escolha um token na lista > **Dispositivos**>**Sincronizar**. ![Captura de ecrã a mostrar o nó Dispositivos do Programa de Inscrição selecionado e a opção Sincronizar ligação a ser selecionada.](./media/device-enrollment-program-enroll-ios/image06.png)
+1. No Intune no portal do Azure, escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição** > escolha um token na lista > **Dispositivos** > **Sincronizar**. ![Captura de ecrã a mostrar o nó Dispositivos do Programa de Inscrição selecionado e a opção Sincronizar ligação a ser selecionada.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    Para cumprir os termos da Apple para um tráfego aceitável do programa de inscrição, o Intune impõe as seguintes restrições:
    - As sincronizações completas não podem ser executadas mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune obtém a lista atualizada completa de números de série atribuídos ao servidor de MDM da Apple ligado ao Intune. Depois de um dispositivo do Programa de Registo ser eliminado do portal do Intune sem a inscrição no servidor de MDM da Apple ser anulada no portal de DEP, o mesmo não voltará a ser importado para o Intune até a sincronização completa ser executada.   
@@ -172,7 +173,7 @@ Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincroni
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Atribuir um perfil de inscrição a dispositivos
 Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder inscrevê-los.
 
-1. No Intune no portal do Azure, escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição** > escolha um token na lista.
+1. No Intune no portal do Azure, escolha **Inscrição de dispositivos**  >  **Inscrição da Apple**  >  **Tokens do programa de inscrição** > escolha um token na lista.
 2. Escolha **Dispositivos** > escolha dispositivos na lista > **Atribuir perfil**.
 3. Em **Atribuir perfil**, escolha um perfil para os dispositivos > **Atribuir**.
 
@@ -180,7 +181,7 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 
 Pode escolher um perfil macOS e iOS predefinido a aplicar a todos os dispositivos que inscrever com um token específico. 
 
-1. No Intune no portal do Azure, escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição** > escolha um token na lista.
+1. No Intune no portal do Azure, selecione **Inscrição de dispositivos** > **Inscrição da Apple**  >  **Tokens do programa de inscrição** > selecione um token na lista.
 2. Escolha **Definir o Perfil Predefinido**, escolha um perfil na lista pendente e, em seguida, escolha **Guardar**. Este perfil será aplicado a todos os dispositivos inscritos com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -198,12 +199,12 @@ Ativou a gestão e sincronização entre a Apple e o Intune e atribuiu um perfil
     ![Captura de ecrã a mostrar tokens de programas de inscrição.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. Selecione **Renovar token** e introduza o ID Apple utilizado para criar o token original.  
-    ![Captura de ecrã a mostrar a criação de um novo token.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+    ![Captura de ecrã a mostrar a criação do novo token.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
 
 8. Carregue o token transferido recentemente.  
 9. Selecione **Renovar token**. Verá a confirmação de que o token foi renovado.   
     ![Captura de ecrã a mostrar a confirmação.](./media/device-enrollment-program-enroll-ios/confirmation.png)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Depois de inscrever dispositivos macOS, pode começar a [geri-los](device-management.md).

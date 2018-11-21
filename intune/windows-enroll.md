@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
-ms.translationtype: HT
+ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403566"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188080"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -36,7 +37,7 @@ Enquanto administrador do Intune, pode simplificar a inscrição das seguintes f
 Dois fatores determinam como pode simplificar a inscrição de dispositivos do Windows:
 
 - **Utiliza o Azure Active Directory Premium?** <br>O [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído com o Enterprise Mobility + Security e outros planos de licenciamento.
-- **Que versões de clientes do Windows serão inscritas pelos utilizadores?** <br>Os dispositivos com o Windows 10 podem ser inscritos automaticamente ao adicionar uma conta escolar ou profissional. As versões anteriores têm de ser inscritas através da aplicação Portal da Empresa.
+- **Que versões de clientes do Windows serão inscritas pelos utilizadores?** <br>Os dispositivos Windows 10 podem ser inscritos automaticamente ao adicionar uma conta escolar ou profissional. As versões anteriores têm de ser inscritas através da aplicação Portal da Empresa.
 
 ||**Azure AD Premium**|**Outros AD**|
 |----------|---------------|---------------|  
@@ -76,7 +77,7 @@ Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
-|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
+|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – suporta o redirecionamento para o serviço Intune com reconhecimento de domínio a partir do nome de domínio do e-mail
 
@@ -95,10 +96,10 @@ Informe os seus utilizadores sobre como inscrever os dispositivos Windows e o qu
 Para obter instruções de inscrição do utilizador final, veja [Inscrever o seu dispositivo Windows no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Também pode dizer aos utilizadores para consultarem [Que informações pode o administrador de TI ver no meu dispositivo](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 >[!IMPORTANT]
-> Se não tiver a Inscrição automática de MDM ativada, mas tiver dispositivos com o Windows 10 que foram associados ao Azure AD, serão visíveis dois registos na consola do Intune após a inscrição. Pode parar este processo ao certificar-se de que os utilizadores com dispositivos associados ao Azure AD acedem a **Contas** > **Acesso profissional ou escolar** e **Ligar** com a mesma conta. 
+> Se não tiver a Inscrição automática de MDM ativada, mas tiver dispositivos Windows 10 que foram associados ao Azure AD, serão visíveis dois registos na consola do Intune após a inscrição. Pode parar este processo ao certificar-se de que os utilizadores com dispositivos associados ao Azure AD acedem a **Contas** > **Acesso profissional ou escolar** e **Ligar** com a mesma conta. 
 
 Para obter mais informações sobre as tarefas do utilizador final, veja [Recursos sobre a experiência do utilizador final com o Microsoft Intune](end-user-educate.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Considerações sobre quando gerir dispositivos Windows com o Intune no Azure](/intune-classic/deploy-use/intune-on-azure).

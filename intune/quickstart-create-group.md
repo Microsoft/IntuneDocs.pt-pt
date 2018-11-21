@@ -14,15 +14,16 @@ ms.technology: ''
 ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: d6c51a2823e95526b76e5e71e35420d1744b70f6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51511014"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52178391"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>Guia de Início Rápido: criar um grupo para gerir utilizadores
+# <a name="quickstart-create-a-group-to-manage-users"></a>Início Rápido: criar um grupo para gerir utilizadores
 
 Neste início rápido, utilizará o Intune para criar um grupo com base num utilizador existente. Os grupos são utilizados para gerir os utilizadores e controlar o acesso dos seus funcionários aos recursos da sua empresa. Estes recursos podem fazer parte da intranet da sua empresa ou podem ser recursos externos, tais como sites do SharePoint, aplicações SaaS ou aplicações Web.
 
@@ -55,7 +56,7 @@ Irá criar um grupo que será utilizado mais tarde nesta série de início rápi
 
 Assim que tiver criado o grupo com êxito, este será apresentado na lista **Todos os grupos**. 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste início rápido, utilizou o Intune para criar um grupo com base num utilizador existente. Para obter mais informações sobre como adicionar grupos ao Intune, veja [Adicionar grupos para organizar utilizadores e dispositivos](groups-add.md).
 

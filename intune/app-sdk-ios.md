@@ -13,20 +13,21 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: c9920e914a80ec3bb02f5066e6d6e34b2236c860
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
-ms.translationtype: HT
+ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212500"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181348"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
 > [!NOTE]
 > Considere ler o artigo [Guia de Introdução ao SDK da Aplicação do Intune](app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.
 
-O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou **MAM**) na sua aplicação iOS nativa. Uma aplicação preparada para MAM é uma integrada com o SDK da Aplicação Intune. Os administradores de TI podem implementar políticas de proteção de aplicações na aplicação móvel quando o Intune está a gerir a aplicação de forma ativa.
+O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de **APLICAÇÕES** ou **MAM**) na sua aplicação iOS nativa. Uma aplicação preparada para MAM é uma aplicação que está integrada com o SDK da Aplicação do Intune. Os administradores de TI podem implementar políticas de proteção de aplicações na aplicação móvel quando o Intune está a gerir a aplicação de forma ativa.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -34,7 +35,7 @@ O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as pol�
 
 * A aplicação tem de ser destinada ao iOS 10 ou superior.
 
-* Consulte os [Termos de Licenciamento do SDK da Aplicação do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf). Imprima e guarde uma cópia dos termos de licenciamento nos seus registos. Ao transferir e utilizar o SDK da Aplicação do Intune para iOS, aceita esses termos de licenciamento.  Caso não aceite os termos, não utilize o software.
+* Consulte os [Termos de Licenciamento do SDK da Aplicação do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf). Imprimir e guardar uma cópia dos termos de licenciamento nos seus registos. Ao transferir e utilizar o SDK da Aplicação do Intune para iOS, aceita esses termos de licenciamento.  Caso não aceite os termos, não deverá utilizar o software.
 
 * Transfira os ficheiros para o SDK da Aplicação do Intune para iOS no [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
@@ -78,7 +79,7 @@ O objetivo do SDK da Aplicação do Intune para iOS consiste em adicionar capaci
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>Criar o SDK na sua aplicação móvel
 
-Para ativar o SDK da Aplicação Intune, siga estes passos:
+Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
 1. **Opção 1 (recomendada)**: ligue o `IntuneMAM.framework` ao seu projeto. Arraste `IntuneMAM.framework` para a lista **Binários Incorporados** do destino do projeto.
 
@@ -126,9 +127,9 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
 
 4. Depois de ativar a partilha de keychain, siga estes passos para criar um grupo de acesso separado no qual serão armazenados os dados do SDK da Aplicação do Intune. Pode criar um grupo de acesso de keychain com a IU ou o ficheiro de elegibilidade. Se estiver a utilizar a IU para criar o grupo de acesso de keychain, siga os passos abaixo:
 
-   1. Se a sua aplicação móvel não tiver nenhum grupo de acesso de keychain definido, adicione o ID do pacote da aplicação como primeiro grupo.
+   1. Se a sua aplicação móvel não tiver qualquer keychain aceder grupos definidos, adicionar a aplicação do pacote ID como o **primeiro** grupo.
 
-   2. Adicione o grupo de keychain partilhado `com.microsoft.intune.mam` aos seus grupos de acesso existentes. O SDK da Aplicação Intune utiliza este grupo de acesso para armazenar dados.
+   2. Adicione o grupo de keychain partilhado `com.microsoft.intune.mam` aos seus grupos de acesso existentes. O SDK da Aplicação do Intune utiliza este grupo de acesso para armazenar dados.
 
    3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
 
@@ -140,7 +141,7 @@ Para ativar o SDK da Aplicação Intune, siga estes passos:
            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
       > [!NOTE]
-      > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS. Se a aplicação não tinha anteriormente nenhum ficheiro de elegibilidade, a ativação da partilha de keychain (passo 3) deverá levar à geração de um ficheiro de elegibilidade pelo Xcode para a aplicação.
+      > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS. Se a aplicação não tinha anteriormente nenhum ficheiro de elegibilidade, a ativação da partilha de keychain (passo 3) deverá levar à geração de um ficheiro de elegibilidade pelo Xcode para a aplicação. Certifique-se de que o ID do pacote da aplicação é a primeira entrada na lista.
 
 5. Inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Não se esqueça de guardar as alterações antes de prosseguir para o passo seguinte.
 
@@ -164,7 +165,7 @@ Normalmente, a ADAL requer que as aplicações sejam registadas no Azure Active 
 
 Se a sua aplicação já utilizar a ADAL para autenticar os utilizadores, esta deverá utilizar os seus valores de registo existentes e substituir os valores predefinidos do SDK da Aplicação do Intune. Isto garante que os utilizadores não recebem um pedido de autenticação duas vezes (uma vez pelo SDK da Aplicação do Intune e uma vez pela aplicação).
 
-Recomenda-se que a aplicação se ligue à [versão mais recente da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) no ramo principal. Atualmente, o SDK da Aplicação do Intune utiliza o ramo de mediação da ADAL para suportar as aplicações que exigem acesso condicional. (Por conseguinte, estas aplicações dependem da aplicação Microsoft Authenticator.) Porém, o SDK ainda é compatível com o ramo principal da ADAL. Utilize o ramo adequado à sua aplicação.
+Recomenda-se que a aplicação se ligue à [versão mais recente da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) no ramo principal. Atualmente, o SDK da Aplicação do Intune utiliza o ramo de mediação da ADAL para suportar as aplicações que exigem acesso condicional. (Estas aplicações, por conseguinte, dependem da aplicação Microsoft Authenticator.) Porém, o SDK ainda é compatível com o ramo principal da ADAL. Utilize o ramo que se destina à sua aplicação.
 
 ### <a name="link-to-adal-binaries"></a>Ligar aos binários da ADAL
 
@@ -178,7 +179,7 @@ Siga os passos abaixo para ligar a aplicação aos binários da ADAL:
 
 4. Ative o início de sessão único (SSO) da ADAL ao adicionar `com.microsoft.adalcache` e `com.microsoft.workplacejoin` aos grupos de acesso de keychain.
 
-5. Caso esteja explicitamente a definir o grupo de keychain da cache partilhada da ADAL, certifique-se de que está definido como `<appidprefix>.com.microsoft.adalcache`. A ADAL define isto automaticamente, a menos que efetue uma substituição. Se quiser especificar um grupo de keychain personalizado para substituir o `com.microsoft.adalcache`, especifique-o no ficheiro Info.plist, em IntuneMAMSettings, com a chave `ADALCacheKeychainGroupOverride`.
+5. Caso esteja explicitamente a definir o grupo de keychain da cache partilhada da ADAL, certifique-se de que está definido como `<appidprefix>.com.microsoft.adalcache`. A ADAL define isto automaticamente, a menos que efetue uma substituição. Se quiser especificar um grupo de keychain personalizado para substituir `com.microsoft.adalcache`, especifique-o no ficheiro Info.plist, em IntuneMAMSettings, com a chave `ADALCacheKeychainGroupOverride`.
 
 ### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>Configurar as definições da ADAL para o SDK da Aplicação do Intune
 
@@ -422,7 +423,7 @@ O valor deste método devolvido indica ao SDK se a aplicação terá de processa
 
 * Se o valor devolvido for verdadeiro, a aplicação terá de processar o reinício.
 
-* Se o valor devolvido for falso, o SDK reiniciará a aplicação após este método ser devolvido. O SDK irá mostrar imediatamente uma caixa de diálogo que indica ao utilizador para reiniciar a aplicação.
+* Se o valor devolvido for False, o SDK irá reiniciar a aplicação após este método ser devolvido. O SDK irá mostrar imediatamente uma caixa de diálogo que indica ao utilizador para reiniciar a aplicação.
 
 ## <a name="customize-your-apps-behavior-with-apis"></a>Personalizar o comportamento da sua aplicação com APIs
 
@@ -623,7 +624,7 @@ O método `protect` aceita uma identidade que pode ser um utilizador gerido ou n
 
 ### <a name="share-extensions"></a>Extensões de partilha
 
-Se a aplicação tem uma extensão de partilha, o proprietário do item partilhado pode ser obtido com recurso ao método `protectionInfoForItemProvider` no `IntuneMAMDataProtectionManager`. Se o item partilhado for um ficheiro, o SDK processará a definição do proprietário do ficheiro. Se o item partilhado consistir em dados, a aplicação é responsável por definir o proprietário do ficheiro se estes dados forem persistentes num ficheiro e chamar a API `setUIPolicyIdentity` antes de mostrar estes dados na IU.
+Se a aplicação tem uma extensão de partilha, o proprietário do item partilhado pode ser obtido com recurso ao método `protectionInfoForItemProvider` no `IntuneMAMDataProtectionManager`. Se o item partilhado for um ficheiro, o SDK irá processar a definição do proprietário do ficheiro. Se o item partilhado consistir em dados, a aplicação é responsável por definir o proprietário do ficheiro se estes dados forem persistentes num ficheiro e chamar a API `setUIPolicyIdentity` antes de mostrar estes dados na IU.
 
 ### <a name="turn-on-multi-identity"></a>Ativar múltiplas identidades
 
@@ -636,7 +637,7 @@ Por predefinição, as aplicações são consideradas de identidade única. O SD
 
 * **Mudança de identidade iniciada pela aplicação**:
 
-    Ao iniciar, considera-se que as aplicações de identidades múltiplas estão a ser executadas numa conta desconhecida e não gerida. A IU de iniciação condicional não será executada e não serão aplicadas políticas na aplicação. A aplicação é responsável por notificar o SDK sempre que a identidade deva ser alterada. Normalmente, este processo ocorre sempre que a aplicação estiver prestes a mostrar os dados de uma conta de utilizador específica.
+    Ao iniciar, considera-se que as aplicações de identidades múltiplas estão a ser executadas numa conta desconhecida e não gerida. A IU de inicialização condicional não será executada e não serão aplicadas políticas na aplicação. A aplicação é responsável por notificar o SDK sempre que a identidade deva ser alterada. Normalmente, este processo ocorre sempre que a aplicação estiver prestes a mostrar os dados de uma conta de utilizador específica.
 
     Um exemplo desta situação é quando o utilizador tenta abrir um documento, uma caixa de correio ou um separador num bloco de notas. A aplicação tem de notificar o SDK antes que o ficheiro, a caixa de correio ou o separador sejam efetivamente abertos. Este processo é realizado através da API `setUIPolicyIdentity` no `IntuneMAMPolicyManager`. Esta API deve ser chamada quer o utilizador seja gerido ou não. Se o utilizador for gerido, o SDK irá executar as verificações de inicialização condicional, como deteção de jailbreak, PIN e autenticação.
 
@@ -652,7 +653,7 @@ Por predefinição, as aplicações são consideradas de identidade única. O SD
 
 * **Eliminação seletiva**:
 
-    Quando for efetuada uma eliminação seletiva na aplicação, o SDK chamará o método `wipeDataForAccount` no `IntuneMAMPolicyDelegate`. A aplicação é responsável por remover a conta do utilizador especificado, bem como quaisquer dados associados à mesma. O SDK é capaz de remover todos os ficheiros do utilizador e realizará esta ação se a aplicação devolver FALSE da chamada do `wipeDataForAccount`.
+    Quando uma eliminação seletiva for efetuada na aplicação, o SDK irá ligar para o método `wipeDataForAccount` no `IntuneMAMPolicyDelegate`. A aplicação é responsável por remover a conta do utilizador especificado, bem como quaisquer dados associados à mesma. O SDK é capaz de remover todos os ficheiros do utilizador e realizará esta ação se a aplicação devolver FALSE da chamada do `wipeDataForAccount`.
 
     Tenha em atenção que este método é chamado a partir de um thread de segundo plano. A aplicação não deve devolver um valor até que todos os dados para o utilizador tenham sido removidos (com a exceção dos ficheiros, se a aplicação devolver FALSE).
 

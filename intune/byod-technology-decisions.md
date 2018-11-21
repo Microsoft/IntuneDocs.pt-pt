@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
-ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 21257169e069a139ac94dcdecbe6074ab0778aeb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37844968"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179563"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisões tecnológicas para ativar o BYOD com o Microsoft Enterprise Mobility + Security
 
@@ -78,7 +79,7 @@ Ainda assim, muitas organizações continuam frequentemente preocupadas com risc
 | Dados guardados em localizações não protegidas ou partilhados acidentalmente | Restringir a opção Guardar Como | Restringir a opção Guardar Como |
 |Dados guardados em localizações não protegidas ou partilhados acidentalmente | Desativar a impressão | n/d|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Está na altura de decidir se irá ativar o BYOD na sua organização com a gestão de dispositivos, a gestão de aplicações ou uma combinação de ambas. A escolha de implementação é sua, mas seja qual for a sua opção, pode ter sempre a certeza de que as funcionalidades de identidade e segurança do Azure AD estarão disponíveis.  
 
 Utilize o [Guia de Planeamento](planning-guide.md) do Intune para mapear o seu próximo nível de planeamento.

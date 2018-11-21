@@ -13,13 +13,14 @@ ms.technology: ''
 ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
-ms.translationtype: HT
+ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866325"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187113"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Documentação do Microsoft Intune &#40;Edição especial sobre a Microsoft Ignite&#41;
 Bem-vindo à Microsoft Ignite 2018! Estamos muito contentes pela sua participação. Aproveite para consultar alguns dos recursos do Intune que reunimos para si enquanto está na Microsoft Ignite 2018.
@@ -60,6 +61,6 @@ Atualizámos e criámos alguns novos guias de início rápido. Conclua os seguin
 - [Blogue de Suporte do Intune](https://blogs.technet.microsoft.com/intunesupport/)
 - [Fóruns da Comunidade do Intune](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/ct-p/EMS)
 
-## <a name="developer-resources"></a>Recursos para programadores
+## <a name="developer-resources"></a>Recursos para desenvolvedores
 - [Exemplos da Graph API do Intune](https://github.com/microsoftgraph/powershell-intune-samples)
 - [SDK da aplicação Intune](app-sdk-get-started.md)

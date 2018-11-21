@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43ca9d165bd44684a23f7e82eaed04f833b30449
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
-ms.translationtype: HT
+ms.openlocfilehash: 7e3f00f129b5b344fc357be83c4d66f220035bd0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212347"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180719"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio iOS ao Microsoft Intune
 
@@ -82,7 +83,7 @@ A aplicação criada agora aparece na lista de aplicações. Na lista, pode atri
 > [!NOTE]
 > Para o serviço do Intune implementar com êxito um novo ficheiro IPA no dispositivo, tem de incrementar a cadeia `CFBundleVersion` no ficheiro Info.plist do pacote IPA.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

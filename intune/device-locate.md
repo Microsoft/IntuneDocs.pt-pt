@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
-ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
-ms.translationtype: HT
+ms.openlocfilehash: e3f4d63a2e749e1070bd5969d6f8a3046f6bcc4e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42912156"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182181"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localizar dispositivos iOS perdidos ou roubados com o Intune
 
@@ -64,6 +65,6 @@ O som continuará a reproduzir até que o utilizador desative o som no dispositi
 - Os dados de localização são encriptados quando são armazenados e, igualmente, quando estão a ser transmitidos.
 - Ao configurar o modo perdido, pode personalizar uma mensagem que é apresentada no ecrã de bloqueio. Nesta mensagem, para ajudar a pessoa que encontrar o dispositivo, certifique-se de que inclui detalhes específicos sobre como devolver o dispositivo perdido.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Para ver o estado de ativação da ação Localizar Dispositivo, aceda a **Dispositivos** e selecione **Ações do dispositivo**.

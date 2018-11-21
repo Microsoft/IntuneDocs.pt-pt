@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00ae29b831bebb770b70c38b5e76d7f19bab10ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231402"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180158"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurar a integração do Symantec Endpoint Protection Mobile com o Intune
 
@@ -147,6 +148,6 @@ O SEP Mobile sincroniza os dispositivos que executam o serviço Defesa Contra Am
 11.  O SEP Mobile sincroniza os dispositivos nos grupos selecionados e começa a comunicar informações ao Intune. Pode ver estes dados na secção Integração Total. Aceda à secção **Definições** > **Integrações** > **Intune** > **Integração Total**.
 
      ![Imagem que mostra a integração total do SEP Mobile concluída](media/symantec-portal-basic-status.PNG)
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Configurar as aplicações do SEP Mobile](mtd-apps-ios-app-configuration-policy-add-assign.md)

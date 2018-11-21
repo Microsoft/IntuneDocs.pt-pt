@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2d9dda7381aa7d3033dec0618843522339335c0b
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602100"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179103"
 ---
 #  <a name="intune-data-warehouse-api"></a>API do Armazém de Dados do Intune
 
@@ -61,7 +62,7 @@ A API necessita de autorização com o Azure AD. O Azure AD utiliza o OAuth 2.0.
 
 O OData define um modelo de dados abstrato e um protocolo que permite a qualquer cliente aceder às informações expostas por qualquer origem de dados. O tópico de documentação do modelo de dados contém uma explicação sobre os espaços de nomes, entidades e objetos devolvidos no modelo de dados do Armazém de Dados do Intune. Para obter mais informações, veja [Modelo de Dados do Armazém de Dados](reports-ref-data-model.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba mais sobre como trabalhar com o Azure AD ao ler [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 

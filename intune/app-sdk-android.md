@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4a588af375ef690d45e067dfc4261fbeb551755c
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
-ms.translationtype: HT
+ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863217"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190409"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -1624,7 +1625,7 @@ Estas instruções são específicas para todos os programadores de aplicações
    > [!NOTE] 
    > Esta tem de ser a única integração da MAM-WE na aplicação. Poderão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
 
-4. Ative a política de MAM necessária ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. Ative a política de MAM exigida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > Esta ação força o utilizador a transferir o Portal da Empresa para o dispositivo e a concluir o fluxo da inscrição predefinida antes da utilização.
 

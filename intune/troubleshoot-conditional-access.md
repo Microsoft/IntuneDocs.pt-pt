@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7f8e9d4fb6c6ce551d30623db864eb1784b7a54
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 642a4da6a1ca3c368e90f2d3007c1fc6a068af78
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231632"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189236"
 ---
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 
@@ -75,5 +76,5 @@ Se tiver um dispositivo que não esteja em conformidade mas continue a ter acess
   - Utilize este cmdlet do PowerShell para obter uma lista de todos os dispositivos móveis para uma caixa de correio: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Se o dispositivo não estiver listado, significa que não está a aceder ao Exchange.
   - Se o dispositivo estiver listado, utilize o cmdlet Get-CASmailbox -identity:’upn’ | fl para obter informações detalhadas sobre o respetivo estado de acesso e fornecer essas informações ao Suporte da Microsoft.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Se estas informações não o ajudarem, também pode [obter suporte para o Microsoft Intune](get-support.md).

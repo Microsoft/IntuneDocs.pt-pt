@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
-ms.translationtype: HT
+ms.openlocfilehash: 650a358281f89c511bbd56f3807f2ef4a6ba582c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799664"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190358"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -160,7 +161,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
 11. Se tiver escolhido **Permitir o Apple Configurator por certificado** no passo anterior, escolha um Certificado do Apple Configurator a importar.
 
-12. Selecione **OK**.
+12. Escolha **OK**.
 
 13. Selecione **Personalização do Assistente de Configuração** para configurar as seguintes definições de perfil: ![Personalização do Assistente de Configuração](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
 
@@ -189,7 +190,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     | <strong>Dados de Diagnóstico</strong> | Apresentar o ecrã **Diagnósticos** ao utilizador. Este ecrã permite que o utilizador opte por enviar dados de diagnóstico para a Apple. |
 
 
-14. Selecione **OK**.
+14. Escolha **OK**.
 
 15. Para guardar o perfil, escolha **Criar**.
 
@@ -237,7 +238,7 @@ Veja [Inscrever o dispositivo iOS no Intune com o Programa de Registo de Aparelh
     ![Captura de ecrã a mostrar tokens de programas de inscrição.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. Selecione **Renovar token** e introduza o ID Apple utilizado para criar o token original.  
-    ![Captura de ecrã a mostrar a criação de um novo token.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+    ![Captura de ecrã a mostrar a criação do novo token.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
 
 8. Carregue o token transferido recentemente.  
 9. Selecione **Renovar token**. Verá a confirmação de que o token foi renovado.   

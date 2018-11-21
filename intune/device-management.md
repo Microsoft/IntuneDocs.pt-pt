@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 891b50b2280636c7a5df8ecc1a01bb10723122b5
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 3dbf299633239ae16553e9fbc8d411c4aa37cd8a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576745"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189311"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -68,7 +69,7 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
     - [Controlo remoto do Android](device-profile-android-teamviewer.md)
     - [Sincronizar o dispositivo](device-sync.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Em **Todos os dispositivos**, selecione um dispositivo para ver mais detalhes sobre esse dispositivo específico.
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

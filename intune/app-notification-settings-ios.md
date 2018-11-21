@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43068163c15c0588a8a6ef745d5b191f4547a94d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 2bf4919fecbba8ad4c0f3b8535adf8b97a35342e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025710"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182198"
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Configurar as definições de notificações das aplicações em dispositivos iOS no Intune
 
@@ -96,6 +97,6 @@ A seguinte lista mostra o ID da coleção de pacotes de algumas aplicações iOS
 |Watch|com.apple.Bridge|
 |Meteorologia|com.apple.weather|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Atribua o perfil do dispositivo aos grupos que selecionar. O tópico [Como atribuir perfis de dispositivo](device-profile-assign.md) apresenta a lista de passos.

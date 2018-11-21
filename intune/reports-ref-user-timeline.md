@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 222636c271140edb528da3ebfbbf7dbe9e44b727
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
-ms.translationtype: HT
+ms.openlocfilehash: 4493ea8442642c09ee7a94b9b73fe0412c015649
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727545"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189916"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representação da duração do utilizador no Armazém de Dados do Microsoft Intune
 
@@ -75,7 +76,7 @@ Qualquer coluna de metadados que comece com o prefixo **Linha**, como **RowLastM
  
 Qualquer pessoa que pretenda ver apenas as entidades dessa dimensão que atualmente existem deve aplicar um filtro em que **IsDeleted = FALSE**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
  - Para obter informações sobre a entidade **Utilizador Atual**, veja [Referência para a entidade Utilizador Atual](reports-ref-current-user.md).
  - Para obter informações sobre a entidade **Utilizador**, veja [Referência para a entidade Utilizador](reports-ref-user.md).

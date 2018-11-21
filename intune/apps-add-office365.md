@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 740eee3324a9dc2266b987e119694e2ff70fe2e9
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236378"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182278"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -147,6 +148,6 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 |O cliente da versão Clique-e-Use falhou ao iniciar (inesperado)|17000|-|Clique-e-Use|
 |O cliente da versão Clique-e-Use falhou ao colocar o cenário em fila (inesperado)|17001|-|Clique-e-Use|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para atribuir as aplicações aos grupos que escolher, veja [Atribuir aplicações a grupos](/intune-azure/manage-apps/deploy-apps).

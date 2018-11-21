@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
-ms.translationtype: HT
+ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025173"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179189"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -103,7 +104,7 @@ Para obter mais informações sobre esta secção, veja [Monitorizar aplicaçõe
 
 ### <a name="set-up"></a>Configurar
 - **Tokens VPP do iOS**: aplique e veja as suas licenças iOS do Programa de Compras em Volume (VPP). Para obter mais informações, consulte:
-    - [Aplicações iOS compradas em volume](vpp-apps-ios.md)
+    - [aplicações iOS compradas em volume](vpp-apps-ios.md)
 - **Certificado empresarial do Windows**: aplique ou veja o estado de um certificado de assinatura de código que serve para distribuir aplicações de linha de negócio nos dispositivos Windows geridos.
 - **Certificado da Symantec do Windows**: aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx de XAP e WP8.x aos dispositivos Windows 10 Mobile.
 - **Microsoft Store para Empresas**: configure a integração na Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para obter mais informações, consulte:
@@ -120,6 +121,6 @@ Para obter mais informações sobre esta secção, veja [Monitorizar aplicaçõe
 - **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para obter mais informações, consulte:
     - [Resolver problemas](help-desk-operators.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Adicionar uma aplicação ao Microsoft Intune](apps-add.md)

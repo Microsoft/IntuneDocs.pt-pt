@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 955120228289da3bac7cf013955effeee0cd7579
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
-ms.translationtype: HT
+ms.openlocfilehash: bc4ceb6fe8c96a80310ceb58e13850c65b676d0c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225311"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182386"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
@@ -64,5 +65,5 @@ O utilizador A trabalha para duas empresas — a **Empresa X** e a **Empresa Y**
 
 Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional nesse dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida. As contas são apresentadas e, em seguida, pode escolher a conta que pretende remover.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](end-user-mam-apps-android.md)

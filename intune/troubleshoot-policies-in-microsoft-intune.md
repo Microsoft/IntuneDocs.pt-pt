@@ -14,13 +14,14 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: ''
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1d656dcc8c3abcf3a4b0a9c6aacbc42eb896289f
-ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
-ms.translationtype: HT
+ms.openlocfilehash: bb55ddc283ce4633b5057d5b96ae2ed6973dcf8a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44096508"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181773"
 ---
 # <a name="troubleshoot-policies-in-intune"></a>Resolver políticas no Intune
 
@@ -83,5 +84,5 @@ Ocorre se a hora no sistema local estiver dessincronizada em cinco minutos ou ma
 
 Para resolver este problema, defina a hora do sistema local para o mais próximo possível da hora da Internet ou da hora definida nos controladores de domínio na rede.
 
-### <a name="next-steps"></a>Próximos passos
+### <a name="next-steps"></a>Passos Seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [obter suporte para o Microsoft Intune](get-support.md).

@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 238ea903353b75a69d1c2fe2a836f9e89992d2d7
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 7b082f2d160b78332bf6e0f389adb9a49ccb52a4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
-ms.locfileid: "29926546"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186720"
 ---
 # <a name="typical-migration-cycle"></a>Ciclo de migração típico
 

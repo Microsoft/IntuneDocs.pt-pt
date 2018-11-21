@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
-ms.translationtype: HT
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075632"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181892"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -56,7 +57,7 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 
 | **Estado do dispositivo**       | **Descrição**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Instalada**         | O número de aplicações instaladas.                         |
+| **Instalado**         | O número de aplicações instaladas.                         |
 | **Não Instalado**     | O número de aplicações não instaladas.                     |
 | **Falhou**            | O número de instalações falhadas.                   |
 | **Instalação Pendente**   | O número de aplicações no processo de serem instaladas. |
@@ -67,7 +68,9 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 >    - A alteração de direcionamento numa aplicação gerida instalada pode fazer com que a contagem de instalações no painel Estado diminua, embora continue a ser incluída nas aplicações detetadas.
 >    - Abranger múltiplas instâncias da mesma aplicação num inquilino irá resultar em contagens diferentes, devido à potencial sobreposição de utilizadores ou dispositivos. Cada instância da aplicação irá contabilizar os utilizadores sobrepostos, mas as aplicações detetadas apresentarão contagens duplicadas.
 >    - As aplicações detetadas e o estado da aplicação são recolhidos em intervalos de tempo diferentes, o que pode provocar uma discrepância nas contagens de aplicações.
- 
+> 
+> Além disso, lembre-se de que as aplicações Android implementadas como **disponível com ou sem inscrição** apenas comunicar o estado de instalação de aplicações para dispositivos inscritos. Estado de instalação de aplicações não está disponível para dispositivos que não estão inscritos no Intune.
+
 ### <a name="device-install-status"></a>Estado de instalação do dispositivo
 
 Uma lista de estados do dispositivo é apresentada ao selecionar **Estado de instalação do dispositivo** na secção **Monitorizar** do menu. A tabela de detalhes inclui as seguintes colunas:
@@ -96,7 +99,7 @@ Uma lista de estados do utilizador é apresentada ao selecionar **Estado de inst
 | **Não instalado**   | O número de aplicações não instaladas pelo utilizador. |
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para obter mais informações sobre como trabalhar com os dados do seu Intune, veja [Utilizar o Armazém de Dados do Intune](reports-nav-create-intune-reports.md).
 - Para saber mais sobre as políticas de configuração de aplicações, veja [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).

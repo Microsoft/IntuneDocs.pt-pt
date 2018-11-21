@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231479"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187468"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Zimperium Mobile Threat Defense com o Intune
 
@@ -58,7 +59,7 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
-Detete ameaças como **Man-in-the-middle** na rede e proteja o acesso às redes Wi-Fi com base no risco do dispositivo.
+Detete ameaças como **Man-in-the-middle** na rede e Proteja o acesso a redes Wi-Fi com base no risco do dispositivo.
 
 **Bloquear o acesso à rede através de Wi-Fi:**
 
@@ -70,7 +71,7 @@ Detete ameaças como **Man-in-the-middle** na rede e proteja o acesso às redes 
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
-Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a sincronização de ficheiros empresariais com base no risco do dispositivo.
+Detete ameaças como **Man-in-the-middle** na rede e impeça a sincronização de ficheiros empresariais com base no risco do dispositivo.
 
 **Bloquear o SharePoint Online quando forem detetadas ameaças à rede:**
 
@@ -94,9 +95,9 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 -   Subscrição do Zimperium Mobile Threat Defense
 
-    -   Para obter mais informações, veja o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips) para obter mais informações.
+    -   Para obter mais informações, consulte [site do Zimperium](https://www.zimperium.com/zips-mobile-ips) para obter mais informações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Integrar o Zimperium com o Intune](zimperium-mtd-connector-integration.md)
 

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
+ms.openlocfilehash: 5bd8bfe0230e4d49ce5ae4372e0f373a014c00ce
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236446"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187777"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes – Intune
 
@@ -104,5 +105,5 @@ Também pode adicionar outra ação quando criar uma política de conformidade o
 
 5. Quando terminar, selecione **Adicionar** > **OK** para guardar as alterações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Monitorizar a atividade de conformidade do dispositivo](device-compliance-monitor.md).

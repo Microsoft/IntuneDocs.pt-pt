@@ -13,19 +13,20 @@ ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: ca4b289f059cc4fc8bc77518e06e9cee0f8e7864
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
-ms.translationtype: HT
+ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291626"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190375"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
 
 Utilize os códigos de estado e de erro deste tópico para obter ajuda para resolver problemas se uma ação do Microsoft Intune devolver um código de erro.
 
-Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](get-support.md) para ver mais formas de obter ajuda.
+Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](get-support.md) para ver mais formas de ajuda.
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de estado para dispositivos Windows geridos por MDM
 
@@ -59,7 +60,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016281107|0x87D1FDED|Definição de origem de deteção não suportada|
 |-2016281108|0x87D1FDEC|Definição referenciada não localizada no CI|
 |-2016281109|0x87D1FDEB|Falha ao concluir a conversão do tipo de dados|
-|-2016281110|0x87D1FDEA| Parâmetro inválido na definição de CIM|
+|-2016281110|0x87D1FDEA|  Parâmetro inválido na definição de CIM|
 |-2016281111|0x87D1FDE9|Não aplicável a este dispositivo|
 |-2016281112|0x87D1FDE8|Falha na remediação|
 |-2016330905|0x87D13B67|O estado da aplicação é desconhecido|
@@ -382,5 +383,5 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 |-2016345912|0x87D100C8|O comando SyncML foi concluído com êxito.|
 |-2016346011|0x87D10065|O comando SyncML especificado está a ser executado, mas ainda não foi concluído.|
 
-### <a name="next-steps"></a>Próximos passos
+### <a name="next-steps"></a>Passos Seguintes
 Se estas informações de resolução de problemas não o ajudaram, contacte o Suporte da Microsoft, conforme descrito em [Como obter suporte para o Microsoft Intune](get-support.md).

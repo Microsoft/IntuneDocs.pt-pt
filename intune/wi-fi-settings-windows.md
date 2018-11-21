@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 76d9efc969f68188d9752996267ff7a88363f76f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298161"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180821"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar definições de Wi-Fi para dispositivos Windows 10 e posteriores no Intune
 
@@ -154,7 +155,7 @@ Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e 
 
 Para as definições não disponíveis no Intune, pode exportar definições de Wi-Fi de outro dispositivo com Windows. Esta exportação cria um ficheiro XML com todas as definições. Em seguida, importe este ficheiro para o Intune e utilize-o como o perfil de Wi-Fi. Veja [Exportar e importar definições de Wi-Fi para dispositivos com Windows](wi-fi-settings-import-windows-8-1.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md).
 

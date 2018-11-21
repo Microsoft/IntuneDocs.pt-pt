@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
-ms.translationtype: HT
+ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187823"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184833"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição de dispositivos de quiosque do Android Enterprise
 
@@ -32,7 +33,7 @@ O Intune ajuda-o a implementar aplicações e definições em dispositivos de qu
 
 Os dispositivos que gerir desta forma são inscritos no Intune sem uma conta de utilizador e não estão associados a nenhum utilizador final. Estes dispositivos não são para utilização pessoal nem para aplicações que tenham um requisito forte para dados de conta específicos do utilizador, como o Outlook ou o Gmail.
 
-## <a name="device-requirements"></a>Requisitos de dispositivo
+## <a name="device-requirements"></a>Requisitos de dispositivos
 
 Os dispositivos têm de cumprir estes requisitos para serem geridos como um dispositivo de quiosque do Android Enterprise:
 
@@ -169,6 +170,6 @@ Para remover uma aplicação de dispositivos de quiosque Android, pode seguir um
 -   Crie uma implementação de desinstalação para a aplicação.
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 - [Implementar aplicações de quiosque Android](apps-deploy.md)
 - [Adicionar políticas de configuração de quiosques Android](device-profiles.md)

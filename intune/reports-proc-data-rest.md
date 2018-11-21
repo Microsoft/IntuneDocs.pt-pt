@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2a79bac39e6d5529196d63394d86922a6d57bda5
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602219"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185998"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -224,7 +225,7 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 
 11. Reveja o resultado da consola. O resultado inclui dados num formato JSON retirados da entidade **Datas** no seu inquilino do Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Pode encontrar detalhes sobre a autorização, a estrutura do URL da API e os pontos finais OData em [Use the Intune Data Warehouse API (Utilizar a API do Armazém de Dados do Intune)](reports-api-url.md).
 

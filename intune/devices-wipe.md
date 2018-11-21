@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
-ms.translationtype: HT
+ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312822"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189202"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -29,14 +30,14 @@ Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os di
 > [!NOTE]
 > Antes de remover um utilizador do Azure Active Directory (Azure AD), utilize as ações **Limpar** ou **Extinguir** para todos os dispositivos associados a esse utilizador. Se remover utilizadores que têm dispositivos geridos a partir do Azure AD, o Intune deixará de conseguir apagar os dados ou extinguir esses dispositivos.
 
-## <a name="wipe"></a>Limpar
+## <a name="wipe"></a>Eliminação
 
 A ação **Limpar** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos se selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**. Caso contrário, a unidade será apagada em segurança.
 
 |Ação Limpar|**Reter estado de inscrição e conta de utilizador**|Removido da gestão do Intune|Descrição|
 |:-------------:|:------------:|:------------:|------------|
-|**Limpar**| Opção não selecionada | Sim | Apaga todas as contas, dados, políticas de MDM e definições do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
-|**Limpar**| Opção selecionada | Não | Apaga todas as políticas de MDM. Mantém os dados e as contas do utilizador. Repõe as definições predefinidas do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
+|**Eliminação**| Opção não selecionada | Sim | Apaga todas as contas, dados, políticas de MDM e definições do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
+|**Eliminação**| Opção selecionada | Não | Apaga todas as políticas de MDM. Mantém os dados e as contas do utilizador. Repõe as definições predefinidas do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
 
 A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
 
@@ -160,7 +161,7 @@ Pode configurar o Intune de forma a eliminar automaticamente dispositivos que pa
 1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. Selecione **Dispositivos** > **Regras de limpeza do dispositivo** > **Sim**.
 3. Na caixa **Eliminar dispositivos que não tenham dado entrada por este número de dias**, introduza um número entre 90 e 270.
-4. Selecione **Guardar**.
+4. Escolha **Guardar**.
 
 
 
@@ -192,7 +193,7 @@ Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo I
 
     ![Captura de ecrã da opção Reatribuir da Apple](./media/devices-wipe/apple-reassign.png)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Se pretender reinscrever um dispositivo eliminado, veja [Opções de inscrição](enrollment-options.md).
 

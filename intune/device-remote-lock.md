@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
-ms.translationtype: HT
+ms.openlocfilehash: 68ffaf8788a392fcf592b426fc04da1351685e05
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905143"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189337"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Bloquear remotamente dispositivos com o Intune
 
@@ -51,7 +52,7 @@ O **Bloqueio remoto** não é suportado para:
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Na lista de dispositivos, selecione um dispositivo e, em seguida, selecione a ação **Bloqueio remoto**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para ver o estado desta ação, selecione **Microsoft Intune** > **Dispositivos** > **Ações do dispositivo**. 
 - Para obter mais ações que podem ajudá-lo a gerir os seus dispositivos, veja [Ações disponíveis](device-management.md).

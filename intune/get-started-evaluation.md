@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 261d15a2731ef6b388eba0f0c6d5cd025e8c3509
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 8adb038fbd5fa1b4ad2400a215eb228b81433bde
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576743"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186907"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>O que pode o Intune fazer pela minha empresa?
 O Microsoft Intune é um serviço de gestão de mobilidade empresarial (EMM) baseado na cloud que ajuda a sua força de trabalho a ser produtiva, mantendo os seus dados empresariais protegidos.
@@ -41,7 +42,7 @@ Com o Intune, pode:
 * [Permitir que os seus funcionários acedam de forma segura ao Office 365 a partir de um quiosque público não gerido](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [Distribuir tablets partilhados de utilização limitada aos trabalhadores de tarefas](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
-## <a name="quickstarts"></a>Guias de Início Rápido
+## <a name="quickstarts"></a>Guias de Introdução
 
 Compreendemos que iniciar a gestão de dispositivos móveis pode ser difícil, uma vez que existem várias decisões diferentes que terá de tomar em nome da sua empresa. Os seguintes guias de início rápido vão ajudá-lo a começar a utilizar o Intune e a concluir tarefas comuns o mais rápido possível.
 
@@ -71,7 +72,7 @@ O Intune é o componente de Enterprise Mobility + Security (EMS) que gere aplica
 
 ![Diagrama da arquitetura geral do Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Introdução ao Azure ](get-started-azure.md) – compreenda a anatomia do portal do Azure e como fazer alterações à página que vê.
 

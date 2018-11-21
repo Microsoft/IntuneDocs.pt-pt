@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 54e014adbdea3330028be0455fdcf7bd1ade6586
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 85b4764ef5797ad592744e3c519f82f3f1cdd1bb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231343"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190071"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Resolução de problemas do conector do Exchange no local do Intune
 
@@ -48,5 +49,5 @@ Verifique a [configuração do conector do Exchange no local do Intune](exchange
 - Para obter uma lista de endereços SMTP para uma caixa de correio, utilize Get-Mailbox -Identity user | select emailaddresses | fl
 - Para obter informações detalhadas acerca do estado de acesso de um dispositivo, utilize Get-CASMailbox <upn> | fl
 
-### <a name="next-steps"></a>Próximos passos
+### <a name="next-steps"></a>Passos Seguintes
 Se estas informações não o ajudarem, também pode [obter suporte para o Microsoft Intune](get-support.md).

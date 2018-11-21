@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 019f09444f96d8bb3bca046ef5be20af373a3bff
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298110"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183712"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector do Intune no local no Microsoft Intune no Azure
 
@@ -152,7 +153,7 @@ Depois de o Exchange Connector criar uma ligação ao Exchange através da CAS e
 
 Após a configuração com êxito dos Exchange Connectors, pode ver o estado das ligações e a última tentativa de sincronização efetuada com êxito. Para validar as ligações ao Exchange Connector:
 
-1. No dashboard do Intune, selecione **Acesso no local**.
+1. No Dashboard do Intune, escolha **Acesso no local**.
 2. Em **Configuração**, selecione **Conectores do Exchange ActiveSync** para verificar o estado da ligação para cada Exchange Connector.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
@@ -174,5 +175,5 @@ Pode forçar a execução de uma sincronização por parte do conector ao utiliz
    2. Em **Configuração**, selecione **Conectores do Exchange Active Sync**.
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Criar uma política de acesso condicional para o Exchange no Local](conditional-access-exchange-create.md)

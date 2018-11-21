@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
-ms.translationtype: HT
+ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843128"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183677"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Utilizar Localizações (barreira de rede) no Intune
 
@@ -51,7 +52,7 @@ Para criar uma política de conformidade com base na localização:
 
 2. Introduza as seguintes propriedades:  
 
-   - Obrigatório. Dê um **Nome** à localização, como **Andar de fabrico** ou **Edifício 44-protegido**.
+   - É necessário. Dê um **Nome** à localização, como **Andar de fabrico** ou **Edifício 44-protegido**.
    - Opcional. Introduza um **Intervalo IPv4** com notação CIDR (Classless Interdomain Routing), como `aaa.bbb.ccc.ddd/n`.
    - Opcional. Introduza o endereço do **Gateway IPv4**, como `aaa.bbb.ccc.ddd`.
    - Opcional. Introduza o endereço do **Servidor DHCP IPv4**, como `aaa.bbb.ccc.ddd`.
@@ -80,6 +81,6 @@ Depois de criar a política de conformidade, a ação predefinida de não confor
 
 Quando o dispositivo estiver ligado às suas localizações, será apresentado como estando em conformidade na aplicação Portal da Empresa. Quando o dispositivo não estiver ligado a uma das suas localizações, será apresentado como não estando em conformidade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Monitorizar as políticas de conformidade de dispositivos](compliance-policy-monitor.md)  
 [Introdução às políticas de conformidade](device-compliance-get-started.md)

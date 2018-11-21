@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: fea87d72e8d8485c1cde3038d357b8d6bc7f1c71
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
-ms.translationtype: HT
+ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102008"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179172"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -149,7 +150,7 @@ Por exemplo, considere um utilizador que inicia a aplicação OneDrive com a sua
 
 - Saiba mais sobre as aplicações que suportam [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
 

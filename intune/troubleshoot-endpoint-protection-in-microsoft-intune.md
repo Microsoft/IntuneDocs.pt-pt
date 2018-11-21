@@ -14,13 +14,14 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ROBOTS: ''
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1d8794345f22b2c19cf89eca2d3603fe8ac68161
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
-ms.translationtype: HT
+ms.openlocfilehash: f828394c48b5b7d55d9180da875d9cb3062f23c6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643064"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181688"
 ---
 # <a name="troubleshoot-endpoint-protection-in-intune"></a>Resolver problemas com o Endpoint Protection no Intune
 
@@ -46,5 +47,5 @@ Esta secção descreve possíveis causas e soluções para os seguintes erros e 
 |**Análise rápida em atraso**|Não foi concluída nenhuma análise rápida nos últimos 14 dias. Esta situação pode ocorrer se o computador for reiniciado durante uma análise rápida.|Se uma análise rápida estiver em atraso, poderá executar uma análise rápida única ou agendar análises rápidas periódicas. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).|
 |**Outra aplicação de Endpoint Protection em execução**|Está a ser executada outra aplicação de Endpoint Protection e o computador está em bom estado de funcionamento.|Por predefinição, se estiver instalada outra aplicação de proteção de ponto final e o Intune detetar essa aplicação, o dispositivo poderá tornar-se instável.|
 
-### <a name="next-steps"></a>Próximos passos
+### <a name="next-steps"></a>Passos Seguintes
 Se estas informações não o ajudarem, também poderá [obter suporte para o Microsoft Intune](get-support.md).

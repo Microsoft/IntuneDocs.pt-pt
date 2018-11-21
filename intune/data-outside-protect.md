@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1fa717147d8c5fcc33f350cc16bd4af53a31efc7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: d8ae737ee11f176c036382fbe77122ecebb722d2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020525"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190018"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Impedir o acesso não autorizado a dados da empresa com o Microsoft Intune
 
@@ -43,7 +44,7 @@ Conclua o [tutorial de início rápido do Azure Information Protection](https://
 
 Pode partilhar detalhes [sobre como e quando proteger documentos e e-mails que contêm informações confidenciais](https://docs.microsoft.com/information-protection/deploy-use/help-users).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
 

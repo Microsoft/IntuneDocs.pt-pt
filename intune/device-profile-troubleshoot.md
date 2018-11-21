@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
-ms.translationtype: HT
+ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679309"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181484"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comuns com perfis de dispositivos e respetivas soluções no Microsoft Intune
 
@@ -114,7 +115,7 @@ Quando elimina um perfil ou remove um dispositivo de um grupo que contém o perf
         - Permitir geolocalização
         - Permitir conta Microsoft
         - Permitir copiar e colar
-        - Permitir partilha de Wi-Fi
+        - Permitir tethering Wi-Fi
         - Permitir ligação automática a hotspots Wi-Fi
         - Permitir relatórios de hotspots Wi-Fi
         - Permitir a limpeza
@@ -134,5 +135,5 @@ Se quiser alterar o perfil para um valor menos seguro, reponha as políticas de 
 
 Outros dispositivos MDM, como Android, Windows Phone 8.1 e posterior, iOS e Windows 10, poderão ter de ser extintos e reinscritos no serviço para aplicar um perfil menos restritivo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](get-support.md).

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5f50ad61634363ea1bc1ab8af139033a114f8b86
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 6a2507dc7b920d446b6f7fe78aa7b90f6c31322f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231496"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52178408"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune
 
@@ -65,7 +66,7 @@ Adicionar o pacote **WebEx** como uma exceção à politica de transferência de
     
     <code>com.samsung.android.messaging</code>
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Criar e implementar políticas de proteção de aplicações](app-protection-policies.md)
 - [Definições de políticas de proteção de aplicações iOS – isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions)

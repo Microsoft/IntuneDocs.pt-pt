@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a6fd10ab6a1e9dd7249e2ae1d4bf558d190276ed
-ms.sourcegitcommit: b0ee8626191961dc07f9f7f9d8e6a5fb09c63350
+ms.openlocfilehash: b3aa3e7a4cd79ab990afe7f02a1d6960bc66494a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51505883"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180192"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Definições de perfil de e-mail para dispositivos iOS – Intune
 
@@ -72,5 +73,5 @@ Utilize as definições do perfil de e-mail para configurar os seus dispositivos
 - **Permitir o envio de e-mails a partir de aplicações de terceiros**: **Ativar** permite que os utilizadores selecionem este perfil como a conta predefinida para o envio de e-mails e que as aplicações de terceiros abram o e-mail na aplicação de e-mail nativa, por exemplo, para anexar ficheiros ao e-mail.
 - **Sincronizar endereços de e-mail utilizados recentemente**: **Ativar** permite que os utilizadores sincronizem a lista de endereços de e-mail que foram recentemente utilizados no dispositivo com o servidor.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 [Configurar as definições de e-mail no Intune](email-settings-configure.md)

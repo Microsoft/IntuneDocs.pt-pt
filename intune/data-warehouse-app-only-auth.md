@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8e386e2d9b161debf65d3e639a90cb8de313ad2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
-ms.translationtype: HT
+ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602287"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185207"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticação apenas com a aplicação do Armazém de Dados do Intune
 
@@ -74,7 +75,7 @@ Nesta secção, o Azure AD gera um valor de chave para a sua aplicação.
 Nesta secção, pode conceder permissões às aplicações.
 
 1.  Selecione **Permissões obrigatórias** no painel **Definições**.
-2.  Clique em **Adicionar**.
+2.  Clique em **adicionar**.
 3.  Selecione **Adicionar uma API** para apresentar o painel **Selecionar uma API**.
 4.  Selecione **API do Microsoft Intune (MicrosoftIntuneAPI)** e, em seguida, clique em **Selecionar** no painel **Selecionar uma API**. O passo **Selecionar permissões** está selecionado e o painel **Ativar Acesso** é apresentado.
 5.  Escolha a opção **Obter informações do armazém de dados do Microsoft Intune** da secção **Permissões da Aplicação**.

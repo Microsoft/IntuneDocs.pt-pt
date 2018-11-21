@@ -11,12 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.openlocfilehash: 18e724d83514bf0df7fcc4f4085f6204669a468f
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510969"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183473"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Guia de Início Rápido: inscrever o seu dispositivo com o Windows 10
 
@@ -75,7 +79,7 @@ Antes de inscrever o seu dispositivo Windows 10 Desktop, tem de confirmar a vers
 
     Verá uma mensagem a indicar que a sua empresa ou escola está a registar o dispositivo.
 
-4. Quando vir o ecrã **Está pronto para começar!**, selecione **Concluído**. Terminou.
+4. Quando vir o ecrã **Está tudo pronto!** selecione **Concluído**. Terminou.
 
 5. Agora verá a conta adicionada como parte das definições **Aceder a profiss./escolar** no seu Ambiente de Trabalho do Windows.
 
@@ -95,7 +99,7 @@ Antes de inscrever o seu dispositivo Windows 10 Desktop, tem de confirmar a vers
 
 Para anular a inscrição do seu dispositivo Windows, veja [Remover o seu dispositivo Windows da gestão](/intune-user-help/unenroll-your-device-from-intune-windows.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste guia de início rápido, aprendeu como inscrever um dispositivo com o Windows 10 no Intune. Pode aprender outras formas de inscrição de dispositivos em todas as plataformas. Para obter mais informações sobre como utilizar dispositivos com o Intune, veja [Utilizar dispositivos geridos para trabalhar](/intune-user-help/use-managed-devices-to-get-work-done.md).
 

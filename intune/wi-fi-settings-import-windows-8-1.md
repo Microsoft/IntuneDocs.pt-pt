@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e32749225af3f19ab07decbcf1488595b7d946fd
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: a5042c3b1c125a1699091a8a313df3a0058ecd7d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424871"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188148"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importar definições de Wi-Fi para dispositivos Windows no Intune
 
@@ -38,7 +39,7 @@ Num computador Windows que já tenha o perfil Wi-Fi necessário instalado, siga 
 1. Crie uma pasta local para os perfis Wi-Fi exportados, como **c:\WiFi**.
 2. Abra uma Linha de Comandos como administrador.
 3. Execute o comando `netsh wlan show profiles` e tome nota do nome do perfil que pretende exportar. Neste exemplo, o nome do perfil é **WiFiName**.
-4. Execute o comando `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Este comando o cria um ficheiro do perfil Wi-Fi com o nome **Wi-Fi-WiFiName.xml** na sua pasta de destino.
+4. Execute o `netsh wlan export profile name="ProfileName" folder=c:\Wifi` comando. Este comando o cria um ficheiro do perfil Wi-Fi com o nome **Wi-Fi-WiFiName.xml** na sua pasta de destino.
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importar as definições de Wi-Fi para o Intune
 
@@ -60,7 +61,7 @@ Num computador Windows que já tenha o perfil Wi-Fi necessário instalado, siga 
     - **Conteúdos do ficheiro**: mostra o código XML do perfil de configuração que selecionou.
 7. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e é apresentado na lista de perfis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md).
 

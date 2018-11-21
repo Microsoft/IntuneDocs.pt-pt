@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
-ms.translationtype: HT
+search.appverid: MET150
+ms.openlocfilehash: 4fad67bcde44246e7673d6ebe12afcdcf14fc8cd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2018
-ms.locfileid: "29926393"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183813"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promover a adoção por parte de utilizadores finais de unidades com acesso condicional no Microsoft Intune
 
@@ -72,6 +73,6 @@ Escolha uma das seguintes opções:
 
 -   [Bloquear aplicações que não utilizam autenticação moderna (ADAL)](app-modern-authentication-block.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba mais sobre o [ciclo de migração típico](migration-guide-cycle.md).

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b4af0a638d86d32b244c3a34f8039e466394736
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
-ms.translationtype: HT
+ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424939"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185020"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
@@ -110,11 +111,11 @@ O Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos
 * ROM de Arranque
 * Velocidade do Barramento
 * Tamanho da Cache
-* Nome do Dispositivo
+* Nome do dispositivo
 * Associação a um Domínio
 * ID do Jamf
 * Endereço MAC
-* Fabrico
+* Tornar
 * Model
 * Identificador do Modelo
 * Velocidade da NIC
@@ -123,7 +124,7 @@ O Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos
 * SO
 * Platform
 * Velocidade do Processador
-* Tipo de Processador
+* Tipo de processador
 * Endereço MAC Secundário
 * Número de Série
 * Versão do SMC
@@ -131,6 +132,6 @@ O Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos
 * UDID
 * E-mail do Utilizador
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Aplicar políticas de conformidade a dispositivos geridos pelo Jamf](conditional-access-assign-jamf.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023942"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181535"
 ---
 # <a name="data-intune-sends-to-apple"></a>Dados que o Intune envia para a Apple
 
@@ -41,7 +42,7 @@ A seguinte tabela lista os dados que o Microsoft Intune envia de um dispositivo 
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Se o servidor aceitar o dispositivo, o dispositivo fornece o seu token de notificação push ao servidor. O servidor deve utilizar este token para enviar mensagens push para o dispositivo. Esta mensagem de registo também contém uma cadeia PushMagic. O servidor tem de memorizar esta cadeia e incluí-la em todas as mensagens push que enviar para o dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do servidor | Token de dispositivo de notificação push utilizado para autenticar no serviço da Apple. |
-| ASM/DEP | nome_do_servidor | Um nome identificável para o servidor MDM. |
+| ASM/DEP | SERVER_NAME | Um nome identificável para o servidor MDM. |
 | ASM/DEP | uuid_do_servidor | Um identificador de servidor gerado pelo sistema. |
 | ASM/DEP | id_do_administrador | Um ID Apple da pessoa que gerou os tokens atualmente em utilização. |
 | ASM/DEP | nome_da_organização | O nome da organização. |

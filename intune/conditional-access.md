@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 9ce2433213805b201a968740976b41de2970a62c
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: 1e9e8db76978f9547d10fd4709d74ea809f2c281
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231232"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184850"
 ---
 # <a name="whats-conditional-access"></a>O que é o acesso condicional?
 
@@ -60,6 +61,6 @@ Formas de utilizar o acesso condicional com o Intune:
 
 -   **Acesso condicional com base nas aplicações**
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md)

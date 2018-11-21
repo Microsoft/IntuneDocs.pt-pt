@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
-ms.translationtype: HT
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232190"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181076"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar a sua integração da Defesa Contra Ameaças para Dispositivos Móveis do Lookout com o Intune
 
@@ -50,11 +51,11 @@ O seu inquilino do Lookout Mobile Endpoint Security será associado à sua subsc
 
 Utilize os seguintes passos para reunir as informações que deve fornecer à equipa de suporte do Lookout.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com) e selecione a sua subscrição. 
+1. Inicie sessão no [portal do Azure](https://portal.azure.com) e selecione a sua subscrição. 
 
-2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, veja este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter sugestões para saber o seu ID de subscrição.
+2. Quando selecionar o nome da sua subscrição, o URL resultante irá incluir o ID de subscrição.  Se tiver dificuldades em localizar o seu ID de subscrição, veja este [artigo do suporte da Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) para obter sugestões para saber o seu ID de subscrição.
 
-3. Localize o ID de Grupo do Azure AD. A consola do Lookout suporta 2 níveis de acesso:  
+3. Localize o ID de Grupo do Azure AD. A consola do Lookout suporta 2 níveis de acesso:  
    * **Acesso Total:** os administradores do Azure AD podem criar um grupo para utilizadores que terão Acesso Total e criar, opcionalmente, outro grupo para os utilizadores que terão Acesso Restrito.  Apenas os utilizadores nestes grupos poderão iniciar sessão na **consola do Lookout**.
    * **Acesso Restrito:** os utilizadores neste grupo não têm acesso a vários módulos de configuração e inscrição da consola do Lookout e têm acesso só de leitura ao módulo **Política de Segurança** da consola do Lookout.  
 
@@ -132,6 +133,6 @@ A Defesa Contra Ameaças para Dispositivos Móveis do Lookout classifica ameaça
 ## <a name="watching-enrollment"></a>Monitorizar as inscrições
 Quando a configuração estiver concluída, a Defesa Contra Ameaças para Dispositivos Móveis do Lookout inicia uma consulta no Azure AD para detetar dispositivos que correspondam aos grupos de inscrição especificados.  Poderá encontrar informações sobre os dispositivos inscritos no módulo Dispositivos.  O estado inicial dos dispositivos é apresentado como Pendente.  O estado dos dispositivos é alterado assim que a aplicação Lookout for Work for instalada, aberta e ativada nos mesmos.  Para obter detalhes sobre como instalar a aplicação Lookout for Work no dispositivo pretendido, veja [Adicionar aplicações Lookout for Work com o Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Set up Lookout apps (Configurar aplicações do Lookout)](mtd-apps-ios-app-configuration-policy-add-assign.md)

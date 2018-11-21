@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510997"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189185"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: experimentar gratuitamente o Microsoft Intune 
 
@@ -122,7 +123,7 @@ Existem dois portais que pode utilizar:
 - O dashboard do Intune no Azure ([portal.azure.com](https://portal.azure.com)) é o local onde poderá explorar as [funcionalidades do Intune](what-is-intune.md). Normalmente, irá realizar o seu trabalho no dashboard do Intune.
 - O Centro de Administração do Office 365 ([portal.office.com](https://portal.office.com)) é o local onde poderá adicionar e gerir utilizadores se não estiver a utilizar o Azure Active Directory para o fazer. Também pode gerir outros aspetos da sua conta, incluindo faturação e suporte.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste guia de início rápido, criou uma subscrição gratuita para experimentar o Intune num ambiente de teste. Para obter mais informações sobre como configurar o Intune, veja [Configurar o Intune](setup-steps.md).
 

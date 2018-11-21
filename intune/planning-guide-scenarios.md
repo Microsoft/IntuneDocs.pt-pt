@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: ef2030ba36e7a2c5f1a9566a2fcb94ecca465149
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
-ms.translationtype: HT
+ms.openlocfilehash: 8058a6f4cda02a044e050f07bb6264e29b83f879
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961600"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179920"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de utilização da gestão de dispositivos móveis
 
@@ -86,6 +87,6 @@ Por exemplo, o seu cenário de casos de utilização empresarial poderá suporta
 | BYOD | Técnico de informação | Marketing, Vendas | iOS |                                                           
 | BYOD | Executivos | Marketing, Vendas | iOS |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 A secção seguinte fornece orientações sobre como [identificar os requisitos do Intune para cada cenário de caso de utilização](planning-guide-requirements.md).

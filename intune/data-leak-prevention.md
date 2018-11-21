@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b8f0f038a1f093ec93182fa0ee590d83e6ebea29
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 0720ff05c4bccc57e7c7ebc7f6438992f988bc8b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024962"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190154"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Impedir fugas de dados em dispositivos não geridos com o Microsoft Intune
 
@@ -61,6 +62,6 @@ Consoante aplicável, partilhe as seguintes ligações para fornecer informaçõ
 * [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-ios.md)
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](app-protection-enabled-apps-android.md) 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Precisa de ajuda a ativar este ou outros cenários do Office 365 ou EMS? Se tiver pelo menos 150 licenças do Microsoft 365, Enterprise Mobility + Security ou Azure Active Directory Premium, utilize os seus [benefícios do FastTrack](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program). 

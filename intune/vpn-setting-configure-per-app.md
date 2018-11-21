@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505772"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180736"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
@@ -103,7 +104,7 @@ O perfil do certificado de raiz fidedigno permite que o iOS confie automaticamen
 9. Clique em Certificado de Raiz e selecione um Certificado SCEP. Clique em **OK**.
 10. Escreva `Client Authentication` no **Nome** para a **Utilização de chave alargada**.
 11. Escreva `1.3.6.1.5.5.7.3.2` no **Identificador de Objeto**.
-12. Clique em **Adicionar**.
+12. Clique em **adicionar**.
 13. Escreva o ***URL do Servidor*** e clique em **Adicionar**.
 14. Clique em **OK**.
 15. Clique em **Criar**.
@@ -219,7 +220,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para rever as definições do iOS, veja [VPN settings for iOS devices in Microsoft Intune (Definições de VPN para dispositivos iOS no Microsoft Intune)](vpn-settings-ios.md).
 -  Para saber mais sobre a definição de VPN e o Intune, veja [How to configure VPN settings in Microsoft Intune (Como configurar as definições de VPN no Microsoft Intune)](vpn-settings-configure.md).

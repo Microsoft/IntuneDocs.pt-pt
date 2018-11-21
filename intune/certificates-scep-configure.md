@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: ca22bdb03bc726e17fef8a854bc9478c395f5234
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167540"
+ms.locfileid: "52188692"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 

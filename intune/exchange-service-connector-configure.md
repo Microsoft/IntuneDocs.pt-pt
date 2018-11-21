@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6132e77c4f4a86a30a55d436219f0d7e2a49980c
-ms.sourcegitcommit: ff6db80cb3638e1eec0a4c8b185649363e9e552e
-ms.translationtype: HT
+ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806328"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184221"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 Este artigo mostra-lhe como ligar o serviço do Microsoft Intune ao Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta.

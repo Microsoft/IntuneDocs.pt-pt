@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 643f118414862e1644e6bb15d56a8e903d958d0c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
-ms.translationtype: HT
+ms.openlocfilehash: 76721710f266ff5f25dca763d7b6cca561050610
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254178"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184578"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune
 

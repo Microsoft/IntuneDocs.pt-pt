@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
-ms.translationtype: HT
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864596"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186499"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -34,11 +35,11 @@ A sua estrutura do Intune baseia-se nas informações que recolhe e em decisões
 
 -   Considerações de plataformas de dispositivos
 
--   Requisitos a serem entregues  
+-   Requisitos a serem entregues  
 
 Apesar de os requisitos de infraestrutura no local serem extremamente reduzidos, um plano de estrutura é útil para garantir que tem a solução de gestão de dispositivos móveis correta e que cumpre os seus objetivos, requisitos e metas.
 
-Analisemos cada uma destas áreas mais detalhadamente. 
+Analisemos cada uma destas áreas mais detalhadamente. 
 
 ## <a name="record-your-current-environment"></a>Registar o seu ambiente atual
 Além disso, é comum haver mudanças de estrutura durante a fase de teste e implementação. Utilize o seu plano de estrutura para documentar estas alterações e os motivos das mesmas à medida que ocorrem.
@@ -414,6 +415,6 @@ Eis um exemplo de como documentar políticas de acesso condicional:
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de acesso condicional.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 A próxima secção fornece orientações sobre o [processo de implementação do Intune](planning-guide-onboarding.md).

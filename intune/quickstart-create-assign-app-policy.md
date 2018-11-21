@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e3057009eb758e37a4b42cddc4673bd721d1bce
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576637"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179094"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guia de Início Rápido: criar e atribuir uma política de proteção de aplicações
 
@@ -76,7 +77,7 @@ Agora já atribuiu a política de proteção de aplicações.
 > [!NOTE]
 > As políticas de proteção de aplicações só podem ser aplicadas a grupos que contenham utilizadores e não dispositivos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste guia de início rápido, criou e atribuiu uma política de proteção de aplicações. Os utilizadores da aplicação aos quais foi atribuída esta política não conseguirão cortar, copiar nem colar conteúdos entre a aplicação atribuída e outras aplicações não geridas no dispositivo. Este tipo de proteção irá ajudá-lo a proteger os dados da sua organização. Para obter mais informações sobre políticas de proteção de aplicações no Intune, veja [What are app protection policies?](app-protection-policy.md) (O que são as políticas de proteção de aplicações?).
 

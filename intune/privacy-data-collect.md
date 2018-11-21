@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4f02e7fc4dd414fc12135772bb3d3981e0fa49b7
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
-ms.translationtype: HT
+ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474773"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186125"
 ---
 # <a name="data-collection-in-intune"></a>Recolha de dados no Intune
 
@@ -44,7 +45,7 @@ Os dados identificados que o Intune recolhe podem incluir, entre outros:
     - Identidades de utilizador de terceiros (como o ID Apple)
 - Informações do inventário de hardware
     - Nome do dispositivo
-    - Fabricante
+    - Manufacturer
     - Sistema operativo
     - Número de série
     - Número IMEI
@@ -131,6 +132,6 @@ Os dados agregados que o Intune recolhe podem incluir, entre outros:
     - notInstalledDeviceCount: o número de dispositivos a que a aplicação é aplicável, mas em que não está instalada.
     - pendingInstallDeviceCount: o número de dispositivos a que a aplicação é aplicável e em que a instalação está pendente.
     
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba mais sobre como o Intune [armazena e processa](privacy-data-store-process.md) e [partilha](privacy-data-secure-share.md) dados pessoais. 

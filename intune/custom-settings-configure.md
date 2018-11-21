@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3106f71b59019a1cf71680c51be6dfcb4ce10b0d
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
-ms.translationtype: HT
+ms.openlocfilehash: 808d2036cb30c4d396da41f5fe33f4f196baa8c2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983079"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182895"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Criar um perfil com definições personalizadas no Intune
 
@@ -43,7 +44,7 @@ Os perfis personalizados são criados de forma semelhante à dos perfis incorpor
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
 - [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Selecione a sua plataforma para começar:
 

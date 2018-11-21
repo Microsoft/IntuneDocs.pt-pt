@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7c735486ad93bd76350435861482505a1ab0d30a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
-ms.translationtype: HT
+ms.openlocfilehash: 638b4b3ebc83917faae0d34ec407b8ad47b4a4fb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834232"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183388"
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Definições de configuração de dispositivos partilhados para apresentar mensagens no ecrã de bloqueio do dispositivo iOS
 
@@ -41,6 +42,6 @@ As definições de configuração de dispositivos partilhados permitem-lhe espec
 3. Quando tiver terminado, selecione **OK** até regressar ao painel **Criar perfil** e, em seguida, selecione **Criar**. 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora pode atribuir o perfil do dispositivo aos grupos que selecionar. Para obter detalhes, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 413ad0bab32353fc6f5b401f9a7b910b6c5cb390
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
-ms.translationtype: HT
+ms.openlocfilehash: 120aca8dae457748fea322ce164aa663ffa7e748
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023313"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187383"
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Como configurar as definições de educação do Windows 10 no Microsoft Intune
 
@@ -50,7 +51,7 @@ Para obter detalhes sobre a aplicação Fazer um Teste, veja [Take tests in Wind
 
 O perfil será criado e apresentado no painel Lista de perfis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
 
