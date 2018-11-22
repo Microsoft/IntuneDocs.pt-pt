@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a94e8e88244ed76962a8664ca457fbc07ca06d73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69f347b3e59ca9dfe3f05c9a60dd44c257d485fb
+ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183524"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281127"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com o Windows 8.1
 
@@ -87,7 +87,7 @@ Para obter mais informações, consulte a documentação de cada fabricante rela
 ## <a name="proxy-settings"></a>Definições de proxy
 
 - **Detetar automaticamente as definições de proxy** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se quer que os dispositivos detetem automaticamente as definições de ligação. Para mais informações, veja a documentação do Windows Server.
-- **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, `**http://proxy.contoso.com**`) que contém o ficheiro de configuração.
+- **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor Proxy** que contém o ficheiro de configuração. Por exemplo, introduza `http://proxy.contoso.com`.
 - **Utilizar um servidor proxy** – Ative esta opção se quiser introduzir manualmente as definições do servidor proxy.
     - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
     - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
