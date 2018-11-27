@@ -14,12 +14,12 @@ ms.reviewer: kmyrup
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ca22bdb03bc726e17fef8a854bc9478c395f5234
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188692"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303877"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -67,7 +67,7 @@ Recomendamos vivamente a publicação do servidor do NDES através de um proxy i
 |**Modelo de Certificado**|Configura este modelo na sua AC emissora.|
 |**Certificado de autenticação de cliente**|Pedido pela sua AC emissora ou AC pública; instala este certificado no Servidor do NDES.|
 |**Certificado de autenticação do servidor**|Pedido pela sua AC emissora ou a AC pública; instala e vincula este certificado SSL no IIS no servidor do NDES. Se o certificado tiver o conjunto de utilizações de chave de autenticação de cliente e servidor (**Utilizações de Chave Avançadas**), pode utilizar o mesmo certificado.|
-|**Certificado da AC de Raiz Fidedigna**|Irá exportar este certificado como um ficheiro **.cer** a partir da AC de raiz ou de qualquer dispositivo que confie na AC de raiz. Em seguida, atribuirá o certificado a dispositivos através do perfil de certificado de AC Fidedigna.<br /><br />Utiliza apenas um certificado da AC de Raiz Fidedigna por cada plataforma de sistema operativo e associa-o a cada perfil de Certificado de Raiz Fidedigna que criar.<br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
+|**Certificado da AC de Raiz Fidedigna**|Irá exportar este certificado como um ficheiro **.cer** a partir da AC de raiz ou de qualquer dispositivo que confie na AC de raiz. Em seguida, atribuí-la a utilizadores, dispositivos ou ambos os com o perfil de certificado de AC fidedigna.<br /><b>Nota:<b />quando é atribuído um perfil de certificado SCEP, certifique-se de que atribuir o perfil de certificado de raiz fidedigna referenciado no seu perfil de certificado SCEP no mesmo grupo de utilizadores ou dispositivos.<br /><br />Utiliza apenas um certificado da AC de Raiz Fidedigna por cada plataforma de sistema operativo e associa-o a cada perfil de Certificado de Raiz Fidedigna que criar.<br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
 
 ### <a name="accounts"></a>Contas
 
@@ -482,7 +482,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
      - **Assinatura digital**: permita a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave
    - **Tamanho da chave (bits)**: selecione o número de bits que está contido na chave
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam.
-   - **Certificado de Raiz**: selecione um perfil de certificado da AC de raiz que tenha configurado anteriormente e atribuído ao utilizador ou dispositivo. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado.
+   - **Certificado de raiz**: selecionar um perfil de certificado de AC configurado anteriormente e atribuído para o utilizador e/ou o dispositivo de raiz. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. Certifique-se de que atribuir este perfil de certificado de raiz fidedigna para o mesmo grupo atribuído no perfil de certificado SCEP.
    - **Utilização da chave expandida**: **adicione** valores ao objetivo do certificado. Na maioria dos casos, o certificado exige a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário.
    - **Definições de Inscrição**
      - **Limiar de renovação (%)**: introduza a percentagem da duração do certificado antes de o dispositivo pedir a renovação do certificado.
