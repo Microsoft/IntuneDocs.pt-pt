@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179172"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389874"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -66,9 +66,9 @@ A utilização da MDM com políticas de proteção de aplicações tem outras va
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas suportadas das políticas de proteção de aplicações
-O suporte para plataformas de políticas de proteção de aplicações do Intune está alinhado com o suporte para plataformas de aplicações do Office móvel. Para obter detalhes, veja a secção **Aplicações móveis** de [Requisitos de Sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+Suporte de plataformas de políticas do Intune app protection se alinha com suporte de plataformas de aplicações móveis do Office para dispositivos Android e iOS. Para obter detalhes, veja a secção **Aplicações móveis** de [Requisitos de Sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Os dispositivos Windows não são atualmente suportados. No entanto, quando inscrever dispositivos com o Windows 10 com o Intune, pode utilizar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Os dispositivos Windows não são atualmente suportados. No entanto, pode usar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações
@@ -146,7 +146,9 @@ Embora a política **Global** se aplique a todos os utilizadores no seu inquilin
 
 As aplicações que suportam várias identidades permitem-lhe utilizar contas diferentes (profissionais e pessoais) para aceder às mesmas aplicações, enquanto as políticas de proteção de aplicações aplicam-se apenas quando as aplicações são utilizadas no contexto de trabalho.
 
-Por exemplo, considere um utilizador que inicia a aplicação OneDrive com a sua conta profissional. No contexto de trabalho, não pode mover ficheiros para uma localização de armazenamento pessoal. Posteriormente, quando utiliza o OneDrive com a sua conta pessoal, pode copiar e mover dados dos seus OneDrive pessoais, sem restrições.
+Para um exemplo de contexto pessoa, considere um utilizador que inicia um novo documento do Word, esse é considerado um contexto pessoal para que não são aplicadas políticas de proteção de aplicações do Intune. Depois do documento é salvo na conta empresarial do OneDrive, em seguida, será consieered corporatte contexto e as políticas de proteção de aplicações do Intune serão aplicadas.
+
+Para obter um exemplo de contexto de trabalho, considere um utilizador que inicia a aplicação OneDrive com sua conta profissional. No contexto de trabalho, não pode mover ficheiros para uma localização de armazenamento pessoal. Posteriormente, quando utiliza o OneDrive com a sua conta pessoal, pode copiar e mover dados dos seus OneDrive pessoais, sem restrições.
 
 - Saiba mais sobre as aplicações que suportam [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
