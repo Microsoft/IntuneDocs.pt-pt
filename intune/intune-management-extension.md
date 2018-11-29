@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179410"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579188"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10
 A extensão de gestão do Intune permite-lhe carregar scripts do PowerShell no Intune para executar em dispositivos Windows 10. A extensão de gestão complementa as funcionalidades de gestão de dispositivos móveis (MDM) do Windows 10 e torna mais fácil mudar para a gestão moderna.
@@ -67,6 +67,12 @@ Pode monitorizar o estado de execução de scripts do PowerShell para utilizador
 Em **Scripts do PowerShell**, selecione o script que pretende monitorizar, selecione **Monitorizar** e, em seguida, selecione um dos seguintes relatórios:
    - **Estado do dispositivo**
    - **Estado de utilizador**
+
+## <a name="troubleshoot-powershell-scripts"></a>Resolver problemas relacionados com scripts do PowerShell
+
+Registos do agente no computador cliente são normalmente em `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode usar [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) para ver estes ficheiros de registo. 
+
+![Captura de ecrã dos registos de agente](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>Eliminar um script do PowerShell
 Em **Scripts do PowerShell**, clique com o botão direito no script e selecione **Eliminar**.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 209179f6ae5492e26d0d11b0b45711a096c65936
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188709"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579205"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Definições de restrição de dispositivos iOS no Microsoft Intune
 
@@ -102,7 +102,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
     -   **Comprimento mínimo da palavra-passe** – Especifique o número mínimo de carateres na palavra-passe.
     -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – especifica o número de vezes exclusivas que uma palavra-passe incorreta pode ser introduzida antes de a definição eliminar os dados do dispositivo.
     -   **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup> – especifique durante quanto tempo o dispositivo pode permanecer inativo antes de o utilizador ter de reintroduzir a palavra-passe.
-    -   **Máximo de minutos de inatividade até o ecrã ser bloqueado**<sup>1</sup> – Especifique o número de minutos antes de o ecrã do dispositivo se desligar.
+    -   **Máximo de minutos de inatividade até o ecrã bloquear**<sup>1</sup> -introduza o máximo de minutos de inatividade até o ecrã ser bloqueado. Se o tempo que introduzir superior ao atualmente definido no dispositivo, este valor é ignorado pelo dispositivo. Quando definido como **imediatamente**, dispositivos, utilizar o valor mínimo possível por dispositivo.
     -   **Expiração de palavra-passe (dias)** – Especifique o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
     -   **Impedir a reutilização de palavras-passe anteriores** – Especifique o número de palavras-passe utilizadas anteriormente que o dispositivo possa ter memorizado.
     -   **Desbloqueio por impressão digital** – Permita a utilização de uma impressão digital para desbloquear dispositivos compatíveis.
@@ -308,7 +308,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
-| com.apple.MapsMaps          |              | Apple     |
+| com.apple.Maps              | Mapas         | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Notícias         | Apple     |
