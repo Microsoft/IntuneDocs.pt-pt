@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b6b833794b6ed903ca2915bc95d1faa67648104f
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190426"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630090"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1016,6 +1016,27 @@ Para ver a versão atualizada, aceda a [Novidades na IU da aplicação](whats-ne
 Agora pode utilizar a Política de Proteção de Aplicações (APP) e o Acesso Condicional (AC) do Intune para proteger o acesso a dados do Exchange no local com o Outlook Mobile. Para adicionar ou modificar uma política de proteção de aplicações no portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Políticas de proteção de aplicações**. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Avisos
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Planear a alteração: Exchange Online para o conector do Intune não estarão disponível no Intune <!-- 3105122 -->
+Para simplificar sua experiência com o Exchange Online e o acesso condicional, vamos desativar o Exchange Online para Intune "conector de serviços". Esta alteração irá começar com a atualização do serviço de Dezembro e ser concluída com a atualização do serviço de Fevereiro de 2019.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Está recebendo esta mensagem, uma vez que os nossos registos indicam que pode utilizar a funcionalidade de conector "De serviços" no seu ambiente. O conector de 'De serviços' suporta a gestão do Exchange Active Sync apenas os dispositivos do Intune para o Exchange Online e não suporta a infraestrutura no local. Este conector, a forma como o que é apresentado no console, é apresentada como necessários para acesso condicional (AC), quando, na realidade, não é necessária para a AC. Com a atualização de Dezembro para o serviço do Intune, para esclarecer na consola, podemos irá desativar o botão configurar novos conectores. Em seguida, em Fevereiro de 2019, todos os existentes Exchange Online para conectores do Intune será desativada.
+
+Se utilizar estes conectores no seu ambiente, não será possível monitorizar ou eliminar os Exchange Active Sync apenas os dispositivos no Intune após conectores foram desativados em Fevereiro. Não há nenhum impacto previsto aos seus utilizadores finais durante esta alteração.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+
+Se tiver o conector de serviços, configurar e executar o Exchange Active Sync apenas os dispositivos, mude para outros métodos de gerir os seus dispositivos. Tem as seguintes opções:
+
+- Inscrever dispositivos na gestão de dispositivos móveis (MDM)
+- Utilizar políticas de proteção de aplicações do Intune para gerir os seus dispositivos
+- Utilize os controlos de Exchange, conforme descrito na documentação aqui. 
+
+#### <a name="additional-information"></a>Informações adicionais
+[Configurar o conector de serviço do Exchange para o Intune e Exchange Online](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Planear a alteração: atualizações de desempenho para o Intune for Education <!--1750215-->
 Estamos a adicionar algumas atualizações ao Intune for Education de forma a aumentar a velocidade e a fiabilidade quando atribui definições aos seus utilizadores ou dispositivos. No âmbito desta alteração, perto do fim do mês de novembro, moveremos as suas políticas ou atribuições de definições para novos grupos.
