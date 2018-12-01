@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186092"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729046"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de estado de inscrição
  
@@ -61,6 +61,16 @@ Um dispositivo ou utilizador poderá estar em múltiplos grupos e ter múltiplos
 2. Paire o cursor sobre o perfil na lista.
 3. Utilize os três pontos verticais para arrastar o perfil para a posição pretendida na lista.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Bloquear o acesso a um dispositivo até que uma aplicação específica está instalado
+
+Pode especificar que aplicações têm de ser instalados antes do usuário pode acessar a área de trabalho.
+
+1. No Intune, escolha **inscrição de dispositivos** > **inscrição Windows** > **página de estado de inscrição (pré-visualização)**.
+2. Escolha um perfil > **definições**.
+3. Escolher **Sim** para **Mostrar o progresso de instalação de aplicação e perfil**.
+4. Escolher **Sim** para **bloquear a utilização de dispositivos, até que todas as aplicações e perfis são instalados**.
+5. Escolher **Selected** para **bloquear a utilização de dispositivos, até que estes necessários aplicações são instaladas se estiverem atribuídos ao utilizador/dispositivo**.
+ 6. Escolher **selecionar aplicações** > Selecione as aplicações > **selecione** > **guardar**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informações de controlo da página de estado de inscrição
 

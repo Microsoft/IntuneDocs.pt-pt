@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182279"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728876"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos para dispositivos iOS no Intune
 
@@ -54,7 +54,8 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 ## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade de dispositivo
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Em **Plataforma**, selecione **iOS**. Escolha **Configurar Definições** e aceda às definições **E-mail**, **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Sistema de Segurança**. Quando tiver terminado, selecione **OK** e **Criar**.
+4. Em **Plataforma**, selecione **iOS**. 
+5. Escolher **configurar as definições**e introduza o **E-Mail**, **estado de funcionamento do dispositivo**, **propriedades do dispositivo**, e **sistema Segurança** definições descritas neste tópico. Quando tiver terminado, selecione **OK** e **Criar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Para obter informações sobre o perfil de e-mail, veja [Configurar o acesso a e
 
 - **SO mínimo necessário:** quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador pode optar por atualizar o dispositivo. Depois, pode aceder aos recursos da empresa.
 - **Versão do SO máxima permitida**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. Em seguida, é pedido ao utilizador para contactar o seu administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não pode aceder aos recursos da empresa.
+- **Versão de compilação de SO mínimo**: Apple quando publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido mínimo no dispositivo. Esta verificação de conformidade suporta dispositivos com iOS 8.0 e mais recente. 
+- **Versão de compilação do SO máximo**: Apple quando publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido máximo no dispositivo. Esta verificação de conformidade suporta dispositivos com iOS 8.0 e mais recente.
 
 ## <a name="system-security"></a>Segurança do sistema
 

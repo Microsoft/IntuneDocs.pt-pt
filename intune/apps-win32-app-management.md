@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 11/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ef26e42b2e500d841aa32fa6239e6970e0cfb577
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187299"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728995"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Autónomo – gestão de aplicações Win32 (Pré-visualização Pública)
 
@@ -186,7 +186,7 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
     - **Utilizar um script de deteção personalizado** – especifique o script do PowerShell que será utilizado para detetar esta aplicação. 
     
         1.  **Ficheiro de script** – selecione um script do PowerShell que irá detetar a presença da aplicação no cliente. A aplicação será detetada quando o script devolver um código de saída de valor 0 e escrever um valor de cadeia de carateres em STDOUT.
-        2.  **Executar script como processo de 32 bits em clientes de 64 bits** – selecione **Sim** para executar o script com as credenciais do utilizador final com sessão iniciada. Selecione **Não** (predefinição) para executar o script no contexto do sistema.
+        2.  **Execute o script como um processo de 32 bits em clientes de 64 bits** - selecione **Sim** para executar o script com as credenciais de logon do usuário final. Selecione **Não** (predefinição) para executar o script no contexto do sistema.
         3.  **Impor a verificação de assinatura do script** – selecione **Sim** para verificar se o script está assinado por um editor fidedigno, o que permitirá que o script seja executado sem avisos ou instruções apresentados. O script será executado desbloqueado. Selecione **Não** (predefinição) para executar o script com a confirmação do utilizador final sem verificação da assinatura.
     
         O sidecar do Intune verifica os resultados do script. Lê os valores escritos pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se a saída do script tiver um valor diferente de zero, o script falha e o estado de deteção de aplicação é Não instalada. Se o código de saída for zero e STDOUT tiver dados, o estado de deteção de aplicação é Instalada. 
@@ -200,7 +200,7 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 
 1.  No painel **Adicionar aplicação**, selecione **Códigos de retorno** para adicionar os códigos de retorno utilizados para especificar o comportamento de tentativa de instalação da aplicação ou o comportamento após a instalação. As entradas de código de retorno são adicionadas por predefinição durante a criação de aplicações. No entanto, pode adicionar códigos de retorno adicionais ou alterar os códigos de retorno existentes. 
 2.  No painel **Códigos de retorno**, adicione códigos de retorno adicionais ou altere os códigos de retorno existentes.
-    - **Com falhas** – o valor de retorno que indica uma falha de instalação da aplicação.
+    - **Falha ao** – o valor de retorno que indica uma falha de instalação da aplicação.
     - **Reinício total** – o código de retorno de reinício total não permite que as aplicações Win32 seguintes sejam instaladas no cliente sem reinício. 
     - **Reinício parcial** – o código de retorno de reinício parcial permite que a aplicação Win32 seguinte seja instalada sem a necessidade de um reinício de cliente. O reinício é necessário para concluir a instalação da aplicação atual.
     - **Tentar Novamente** – o agente de código de retorno de repetição irá tentar instalar a aplicação três vezes. Aguardará durante 5 minutos entre cada tentativa. 
@@ -228,15 +228,19 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 
 Neste ponto, concluiu os passos para adicionar uma aplicação Win32 ao Intune. Para obter informações sobre a atribuição e monitorização de aplicações, veja [Atribuir aplicações a grupos com o Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) e [Monitorizar informações e atribuições da aplicação com o Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 
+## <a name="delivery-optimization"></a>Otimização da entrega
+
+Windows 10 RS3 e aos clientes acima irá transferir o conteúdo da aplicação Intune Win32 usando um componente de otimização de entrega no cliente Windows 10. Otimização da entrega fornece uma funcionalidade de ponto-a-ponto que ele está ativado por predefinição. Otimização da entrega pode ser configurada pela política de grupo e no futuro através de MDM do Intune. Para obter mais informações, consulte [otimização de entrega para o Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Instalar aplicações necessárias e disponíveis em dispositivos
 
-O utilizador final verá Notificações de Alerta do Windows para as instalações de aplicações necessárias e disponíveis. A imagem seguinte mostra uma notificação de alerta de exemplo na qual a instalação da aplicação não é concluída até que o dispositivo seja reiniciado. 
+O utilizador final verá notificações de alerta do Windows para as instalações de aplicações necessário e disponível. A imagem seguinte mostra uma notificação de alerta de exemplo na qual a instalação da aplicação não é concluída até que o dispositivo seja reiniciado. 
 
 ![Exemplo de captura de ecrã das notificações de alerta do Windows para a instalação de uma aplicação](./media/apps-win32-app-08.png)    
 
-A imagem seguinte notifica o utilizador final de que estão a ser efetuadas alterações de aplicação ao dispositivo.
+A imagem seguinte notifica o utilizador final que as alterações da aplicação estão a ser efetuadas no dispositivo.
 
-![Exemplo de captura de ecrã da notificação ao utilizador final de que estão a ser efetuadas alterações de aplicação ao dispositivo](./media/apps-win32-app-09.png)    
+![Exemplo de captura de ecrã de notificar o utilizador final que estão a ser efetuadas alterações de aplicação no dispositivo](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Resolver problemas relacionados com aplicações Win32
 Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. O *CMTrace.exe* pode ser transferido a partir das [Ferramentas de Cliente SCCM](https://docs.microsoft.com/sccm/core/support/tools). 

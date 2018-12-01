@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d35ecbb830af7df2f81e2e9412eef8e7a252cbe
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 3d10962db06230341b0faf41431355e123b69e8f
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630039"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728859"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
-Existem duas categorias de definições de políticas: reposicionamento de dados e acesso. Neste artigo, o termo *aplicações geridas por políticas* menciona as aplicações configuradas com políticas de proteção de aplicações.
+Existem duas categorias de definições de política: definições de proteção de dados e as definições de acesso. Neste artigo, o termo *aplicações geridas por políticas* menciona as aplicações configuradas com políticas de proteção de aplicações.
 
-##  <a name="data-relocation-settings"></a>Definições de reposicionamento de dados
+##  <a name="data-protection-settings"></a>Definições de proteção de dados
 
 | Definição | Como utilizar | Valor(es) predefinido(s) |
 |------|------|------|

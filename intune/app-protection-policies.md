@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185976"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728825"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -74,10 +74,14 @@ As novas políticas que criar não serão implementadas para utilizadores até q
 
    ![Captura de ecrã do painel Atribuições, com a opção do menu Selecionar grupos para incluir realçada](./media/app-protection-policy-add-users.png)
 
-3.  É apresentada uma lista de todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, clique em **Selecionar**. Escolher **Selecionar** implementa a política para os utilizadores.
+3.  É apresentada uma lista de todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, clique em **Selecionar**. 
 
     ![Captura de ecrã do painel Adicionar um grupo de utilizadores a mostrar a lista de utilizadores do Azure Active Directory](./media/azure-ad-user-group-list.png)
 
+4.  Depois de incluir e excluir grupos, selecione **guardar** para guardar a configuração e implementar a política aos utilizadores. Se selecionou **descartar** antes de guardar a configuração, irá eliminar todas as alterações efetuadas a *inclusão* e *excluir* separadores.   
+ 
+     ![Captura de ecrã que mostra o salvamento e descartar opções](./media/save-assignment.png)
+  
 Acabou de criar uma política e de a implementar para os utilizadores.
 
 Apenas os utilizadores a que foram atribuídas licenças do Microsoft Intune são afetados pela política. Os utilizadores no grupo de segurança selecionado a quem não foi atribuída uma licença do Intune não são afetados.
@@ -109,9 +113,13 @@ Para ver o efeito das alterações imediatamente, o utilizador final tem de term
 
 2.  No painel *Proteção de Aplicações do Intune*, selecione **Atribuições** para abrir o painel **Proteção de Aplicações do Intune – Atribuições**, que mostra a lista dos grupos de utilizadores que atualmente têm esta política.
 
-3.  Para adicionar um novo grupo de utilizadores à política, no separador **Incluir**, selecione **Selecionar grupos para incluir** e selecione o grupo de utilizadores. Escolha **Selecionar** para implementar a política no grupo que selecionou.
+3.  Para adicionar um novo grupo de utilizadores à política, no separador *Incluir*, selecione **Selecionar grupos para incluir** e selecione o grupo de utilizadores. Escolher **selecione** para adicionar o grupo. 
 
-4.  Para eliminar um grupo de utilizadores, no separador **Excluir**, selecione **Selecionar grupos para excluir** e selecione o grupo de utilizadores. Selecione a opção **Selecionar** para remover o grupo de utilizadores.
+4.  Para excluir um grupo de utilizadores, no *excluir* escolha o separador **selecionar grupos para excluir**e selecione o grupo de utilizadores. Selecione a opção **Selecionar** para remover o grupo de utilizadores.  
+
+5.  Eliminar grupos que foram adicionados anteriormente, em qualquer uma de *inclusão* ou *excluir* guias, selecione as reticências (...) e selecione **eliminar**. 
+
+5.  Depois das suas alterações para as atribuições de estiverem prontas, selecione **guardar** para guardar a configuração e implementar a política para o novo conjunto de utilizadores. Se selecionou **descartar** antes de guardar a configuração, irá eliminar todas as alterações efetuadas a *inclusão* e *excluir* separadores.
 
 ### <a name="to-change-policy-settings"></a>Para alterar definições de política
 

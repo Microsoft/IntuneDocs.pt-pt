@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 469c0b7c3e67135c53de7c58583d820e1750ad7f
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184187"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728808"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade para dispositivos macOS com o Intune
 
@@ -49,7 +49,8 @@ A tabela seguinte descreve como as definições não conformes são geridas quan
 ## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade de dispositivo
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Em **Plataforma**, selecione **macOS**. Escolha **Configurar Definições**, aceda às definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**. Quando tiver terminado, selecione **OK** e **Criar**.
+4. Em **Plataforma**, selecione **macOS**. 
+5. Escolher **configurar as definições**e introduza o **estado de funcionamento do dispositivo**, **propriedades do dispositivo**, e **segurança do sistema** definições descritas na Este artigo. Quando tiver terminado, selecione **OK** e **Criar**.
 
 ## <a name="device-health"></a>Estado de Funcionamento do Dispositivo
 
@@ -59,6 +60,8 @@ A tabela seguinte descreve como as definições não conformes são geridas quan
 
 - **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
 - **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
+- **Versão de compilação de SO mínimo**: Apple quando publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido mínimo no dispositivo.
+- **Versão de compilação do SO máximo**: Apple quando publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido máximo no dispositivo.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 

@@ -16,12 +16,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fbe8cc0fc3e835ee5807dfbe56ea1aa3c728547e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 542efda11e6d1c6b61f8cbc08ea6c29e36e1f8fc
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184731"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728723"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>A edição antecipada do Microsoft Intune – novembro de 2018
 
@@ -45,30 +45,14 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Desinstalar aplicações em dispositivos iOS supervisionados pertencentes à empresa <!-- 1281677 -->
 Poderá remover qualquer aplicação em dispositivos iOS supervisionados pertencentes à empresa. Pode remover qualquer aplicação ao visar os grupos de utilizadores ou dispositivos com um tipo de atribuição **Desinstalar**. Para dispositivos iOS pessoais ou não supervisionados, continuará a poder remover apenas as aplicações que foram instaladas com o Intune.
 
-### <a name="track-installation-of-office-proplus---2620217--"></a>Monitorizar a instalação do Office ProPlus <!--2620217-->
-Poderá monitorizar o progresso da instalação do [Office ProPlus](apps-add-office365.md) através da [Página de Estado de Inscrição](windows-enrollment-status.md).
-
 ### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133--"></a>Suporte do Programa de Registo de Aparelho do macOS para as contas do Apple School Manager <!--3006133-->
 O Intune fornecerá suporte através do Programa de Registo de Aparelho em dispositivos macOS para contas do Apple School Manager.
-
-### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Interromper temporariamente o modo de quiosque em dispositivos Android para fazer alterações <!-- 3041935 -->
-Ao utilizar dispositivos Android no modo de quiosque de múltiplas aplicações, um administrador de TI poderá ter de fazer alterações ao dispositivo. Uma nova definição de quiosque de múltiplas aplicações que permitirá que um Administrador de TI interrompa temporariamente o modo de quiosque com um PIN e tenha acesso a todo o dispositivo.
-Para ver as definições de quiosque atuais, veja [Android kiosk settings](android-kiosk-settings.md) (Definições de quiosque do Android).
 
 ### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Configurar o fundo personalizado na aplicação Ecrã Inicial Gerido <!-- 3041945 -->
 Vamos adicionar uma definição que lhe permite personalizar o aspeto do fundo da aplicação Ecrã Inicial Gerido em dispositivos Android Enterprise, com modo de quiosque de múltiplas aplicações.  Para configurar o **Fundo do URL personalizado**, aceda ao Intune no portal do Azure > Configuração do dispositivo. Selecione um perfil de configuração de dispositivo atual ou crie um novo para editar as respetivas definições de quiosque.
 
-### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Ativar o botão Home virtual em dispositivos de quiosque Android Enterprise <!-- 3042021 -->
-Uma nova definição permitirá que os utilizadores toquem num botão de tecla de função no respetivo dispositivo para alternar entre a aplicação Ecrã Inicial Gerido e outras aplicações atribuídas no respetivo dispositivo de quiosque de múltiplas aplicações. Esta definição é particularmente útil em cenários onde a aplicação de quiosque do utilizador não responde adequadamente ao botão "retroceder". Poderá configurar esta definição para dispositivos Android de utilização única, pertencentes à empresa. Para ativar ou desativar o **botão Home virtual**, aceda ao Intune no portal do Azure > Configuração do dispositivo. Selecione um perfil de configuração de dispositivo atual ou crie um novo para editar as respetivas definições de quiosque.
-
-### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Guardar e aplicar a atribuição da política de proteção de aplicações <!-- 3104570 -->
-Terá melhor controlo sobre as atribuições da política de proteção de aplicações. Ao guardar e aplicar as suas atribuições da política de proteção de aplicações, apenas os utilizadores pretendidos são diretamente afetados por uma política de proteção de aplicações.
-
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Novas definições do browser Microsoft Edge para Windows 10 e posterior <!-- 3174639 -->
 Será adicionada uma nova definição para ajudar a controlar e gerir o browser Microsoft Edge nos seus dispositivos. Para consultar uma lista das definições atuais, veja [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#microsoft-edge-browser) (Restrição de dispositivos para Windows e posterior).
-
-### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Selecionar aplicações monitorizadas na Página de Estado de Inscrição<!-- 2531007 -->
-Poderá escolher quais serão as aplicações monitorizadas na Página de Estado de Inscrição.
 
 ### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427 -->
 
@@ -108,11 +92,6 @@ As definições da política APP para conteúdos da Web em dispositivos Android 
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Token Apple VPP utilizado por outra MDM <!-- 1488946 -->
 O Intune irá detetar e mostrar detalhes se um token de programa de compras em volume (VPP) da Apple estiver a ser utilizado pelo Intune e outra MDM.
-
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>Os números de compilação e da versão do iOS e macOS estão disponíveis nas políticas de conformidade <!-- 1892471 -->
-Em **Conformidade do dispositivo** > **Conformidade do dispositivo**, são apresentadas as versões dos sistemas operativos iOS e macOS. Estas versões estão disponíveis para serem utilizadas nas políticas de conformidade. Numa futura atualização, o número de compilação também será configurável para ambas as plataformas.
-
-Quando as atualizações de segurança são lançadas, normalmente, a Apple não altera o número da versão, mas atualiza o número de compilação. Ao utilizar o número de compilação numa política de conformidade, pode verificar facilmente se foi instalada uma atualização da vulnerabilidade.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivos extintos no dashboard de conformidade do dispositivo <!-- 1981119 -->
 Numa atualização futura, os dispositivos extintos serão removidos do dashboard de conformidade do dispositivo. Tal irá alterar os seus números de conformidade.

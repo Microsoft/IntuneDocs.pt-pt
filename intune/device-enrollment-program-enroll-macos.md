@@ -1,12 +1,12 @@
 ---
-title: Inscrever dispositivos macOS – Programa de Registo de Aparelho
+title: Inscrever dispositivos macOS - programa de inscrição de dispositivos ou do Apple School Manager
 titleSuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos macOS pertencentes à empresa através do Programa de Registo de Aparelho.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180770"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728757"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos macOS com o Programa de Registo de Aparelho da Apple
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscrever automaticamente dispositivos macOS com o programa de inscrição de dispositivos ou do Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artigo ajuda-o a configurar a inscrição de dispositivos macOS para dispositivos adquiridos através do [Programa de Registo de Aparelho (DEP)](https://deploy.apple.com) da Apple. Pode configurar a inscrição do DEP para um grande número de dispositivos de forma remota. Pode enviar dispositivos macOS diretamente para os utilizadores. Quando o utilizador ativar o dispositivo, o Assistente de Configuração será executado com as predefinições configuradas e o dispositivo será inscrito na gestão do Intune.
+Este artigo ajuda-o a configurar a inscrição de dispositivos macOS para dispositivos adquiridos através da Apple [programa de inscrição de dispositivos (DEP)](https://deploy.apple.com) ou [Apple School Manager](https://school.apple.com/). Pode utilizar qualquer um dessas inscrições para um grande número de dispositivos sem sequer tocar nos mesmos. Pode enviar dispositivos macOS diretamente para os utilizadores. Quando o utilizador ativar o dispositivo, o Assistente de Configuração será executado com as predefinições configuradas e o dispositivo será inscrito na gestão do Intune.
 
-Para configurar a inscrição do DEP, deve utilizar os portais do Intune e do Apple DEP. São criados os perfis de inscrição DEP com as definições aplicadas aos dispositivos durante a inscrição.
+Para configurar a inscrição, utilize os portais do Intune e do DEP da Apple. Criar perfis de inscrição com as definições aplicadas aos dispositivos durante a inscrição.
 
-A inscrição DEP não funciona com o [gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md) nem com o [Gestor Escolar da Apple](apple-school-manager-set-up-ios.md).
+Nem a inscrição de DEP ou Apple School Manager funcionam com o [Gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ A inscrição DEP não funciona com o [gestor de inscrição de dispositivos](de
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>Pré-requisitos
-- Dispositivos adquiridos através do [Programa de Inscrição de Dispositivos da Apple](http://deploy.apple.com)
+- Dispositivos adquiridos através do [Apple School Manager](https://school.apple.com/) ou [programa de inscrição de dispositivos da Apple](http://deploy.apple.com)
 - Uma lista de números de série ou um número de encomenda. 
 - [Autoridade MDM](mdm-authority-set.md)
 - [Certificado Push de MDM da Apple](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>Obter um token DEP da Apple
 
-Antes de poder inscrever dispositivos macOS no DEP, precisará de um ficheiro de token DEP (.p7m) da Apple. Este token permite ao Intune sincronizar informações sobre os dispositivos DEP que são propriedade da sua empresa. Também permite que o Intune carregue perfis de inscrição para a Apple e para estes perfis nos dispositivos.
+Antes de poder inscrever dispositivos macOS com o DEP ou Apple School Manager, precisa de um ficheiro de token (. p7m) do DEP da Apple. Este token permite ao Intune sincronizar informações sobre os dispositivos que sua organização é proprietária. Também permite que o Intune carregue perfis de inscrição para a Apple e para estes perfis nos dispositivos.
 
-Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode utilizar o portal de DEP para atribuir dispositivos ao Intune para gestão.
+Utilize o portal da Apple para criar um token. Também utilizar o portal da Apple para atribuir dispositivos ao Intune para gestão.
 
 > [!NOTE]
-> Se eliminar o token do portal clássico do Intune antes da migração para o Azure, o Intune poderá restaurar um token DEP da Apple eliminado. Pode eliminar novamente o token DEP do portal do Azure.
+> Se eliminar o token a partir do portal clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de Apple eliminado. Pode eliminar novamente o token do portal do Azure.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Passo 1. Transfira o certificado de chave pública do Intune, que é obrigatório para criar o token.
 
@@ -66,15 +66,14 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
    ![Captura de ecrã a mostrar o painel Token do Programa de Inscrição, na área de trabalho Certificados da Apple, para transferir a chave pública.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos da Apple.
+3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro. pem é utilizado para pedir um certificado de relação de confiança a partir do portal da Apple.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2. Utilize a sua chave para transferir um token a partir da Apple.
 
-1. Selecione **Criar um token para o Programa de Registo de Aparelho da Apple** para abrir o portal Programa de Implementação da Apple e inicie sessão com o Apple ID da sua empresa. Pode utilizar este Apple ID para renovar o seu token DEP.
-2.  No [portal dos Programas de Implementação](https://deploy.apple.com) da Apple, selecione **Começar** em **Programa de Registo de Aparelho**.
-
-3. Na página **Gerir Servidores**, selecione **Adicionar Servidor MDM**.
+1. Escolher **criar um token para o programa de inscrição de dispositivos da Apple** ou **criar um token através do Apple School Manager** para abrir o portal da Apple adequado e inicie sessão com a sua empresa ID Apple. Pode utilizar este ID Apple para renovar o token.
+2.  Para o DEP, no portal da Apple, escolha **começar** para **o programa de inscrição de dispositivos** > **Manage Servers** > **adicionar MDM Servidor**.
+3.  Para gerir de escola da Apple, no portal da Apple, escolha **servidores MDM** > **Adicionar servidor MDM**.
 4. Introduza o **Nome do Servidor MDM** e, em seguida, selecione **Seguinte**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome nem o URL do Microsoft Intune.
 
 5. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
@@ -89,9 +88,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
 8. Em **Selecionar Ação**, selecione **Atribuir ao Servidor**, selecione o &lt;NomeDoServidor&gt; especificado no Microsoft Intune e, em seguida, selecione **OK**. O portal da Apple atribui os dispositivos especificados para o servidor do Intune para gestão e, em seguida, apresenta a mensagem **Atribuição Concluída**.
 
-   No portal da Apple, aceda a **Programas de Implementação** &gt; **Programa de Inscrição de Dispositivos** &gt; **Ver Histórico de Atribuições** para ver uma lista de dispositivos e a respetiva atribuição de servidores MDM.
-
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Passo 3: Guarde o Apple ID que serviu para criar este token.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Passo 3: Guardar o Apple ID que serviu para criar este token
 
 No Intune no portal do Azure, forneça o ID Apple para referência futura.
 
@@ -102,7 +99,7 @@ Na caixa **Token da Apple**, procure o ficheiro de certificado (.pem), escolha *
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
 
-Agora que instalou o seu token, pode criar um perfil de inscrição para dispositivos DEP. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
+Agora que instalou o seu token, pode criar um perfil de inscrição para dispositivos. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
 
 1. No Intune no portal do Azure, escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição**.
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
@@ -138,7 +135,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
   - Se selecionar **Mostrar**, o ecrã será apresentado durante a configuração. Por vezes, o utilizador pode ignorar o ecrã sem realizar qualquer ação. No entanto, terá a possibilidade de aceder ao menu **Definições** do dispositivo para configurar a funcionalidade. 
 
 
-    | Definições do ecrã Assistente de Configuração | Se selecionar **Mostrar**, durante a configuração, o dispositivo irá… |
+    | Definições do ecrã Assistente de Configuração | Se selecionar **Mostrar** durante a configuração, o dispositivo irá… |
     |------------------------------------------|------------------------------------------|
     | <strong>Código de Acesso</strong> | Pedir um código de acesso ao utilizador. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação). |
     | <strong>Serviços de Localização</strong> | Pedir ao utilizador a respetiva localização. |
@@ -185,7 +182,7 @@ Pode escolher um perfil macOS e iOS predefinido a aplicar a todos os dispositivo
 2. Escolha **Definir o Perfil Predefinido**, escolha um perfil na lista pendente e, em seguida, escolha **Guardar**. Este perfil será aplicado a todos os dispositivos inscritos com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
-Ativou a gestão e sincronização entre a Apple e o Intune e atribuiu um perfil para permitir a inscrição dos seus dispositivos DEP. Agora pode distribuir os dispositivos aos utilizadores. Os dispositivos com afinidade do utilizador necessitam que seja atribuída uma licença do Intune a cada utilizador. Os dispositivos sem afinidade do utilizador necessitam de uma licença de dispositivo. Um dispositivo ativado não poderá aplicar um perfil de inscrição até que os dados do mesmo sejam apagados.
+Ativou a gestão e sincronização entre a Apple e o Intune e atribuiu um perfil para permitir que os dispositivos a inscrever. Agora pode distribuir os dispositivos aos utilizadores. Os dispositivos com afinidade do utilizador necessitam que seja atribuída uma licença do Intune a cada utilizador. Os dispositivos sem afinidade do utilizador necessitam de uma licença de dispositivo. Um dispositivo ativado não poderá aplicar um perfil de inscrição até que os dados do mesmo sejam apagados.
 
 ## <a name="renew-a-dep-token"></a>Renovar um token de DEP  
 1. Aceda a deploy.apple.com.  

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b6b833794b6ed903ca2915bc95d1faa67648104f
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 656c08fbc59b5656d4fc69c5e8e45d9d4903eab8
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630090"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729080"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,75 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>Semana de 26 de Novembro de 2018
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>Transferir o conteúdo da aplicação Intune Win32 <!-- 2617320 -->
+Windows 10 RS3 e aos clientes acima irá transferir o conteúdo da aplicação Intune Win32 usando um componente de Otimização da entrega no cliente Windows 10. Otimização da entrega fornece uma funcionalidade de ponto-a-ponto que ele está ativado por predefinição. Otimização da entrega pode ser configurada pela política de grupo e no futuro através de MDM do Intune. Para obter mais informações, consulte [otimização de entrega para o Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>Menu de contexto em aplicações e dispositivos de utilizadores finais <!-- 2771453 -->
+Os usuários finais agora pode utilizar o menu de contexto em aplicações e dispositivos para acionar ações comuns, como mudar o nome de um dispositivo ou a verificação de conformidade.
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Configurar o fundo personalizado na aplicação Ecrã Inicial Gerido <!-- 3041945 -->
+Estamos a adicionar uma definição que permite-lhe personalizar a aparência de plano de fundo da aplicação gerida tela home page no Android Enterprise, várias aplicações, dispositivos de modo de local público.  Para configurar o **Fundo do URL personalizado**, aceda ao Intune no portal do Azure > Configuração do dispositivo. Selecione um perfil de configuração de dispositivo atual ou crie um novo para editar as respetivas definições de quiosque.
+Para ver as definições de local público, consulte [restrições de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Guardar e aplicar a atribuição da política de proteção de aplicações <!-- 3104570 -->
+Agora tem um melhor controle sobre sua [atribuições de política de proteção de aplicações](app-protection-policies.md#deploy-a-policy-to-users). Quando seleciona *atribuições* para definir ou editar as atribuições de uma política, deve **guardar** sua configuração antes da alteração aplica-se. Uso **descartar** para limpar todas as alterações fizer sem guardar as alterações para a inclusão ou exclusão apresenta uma lista.  Ao exigir que guarde ou rejeição, apenas os utilizadores que pretende são atribuídos uma política de proteção de aplicações.
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Novas definições do browser Microsoft Edge para Windows 10 e posterior <!-- 3174639 -->
+Esta atualização inclui novas definições para ajudar a controlar e gerir o browser Microsoft Edge nos seus dispositivos. Para obter uma lista destas definições, consulte [restrição de dispositivos para Windows 10 (e versões posteriores)](device-restrictions-windows-10.md#microsoft-edge-browser).
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>Suportam a novas aplicações com políticas de proteção de aplicações <!-- 3330037 -->
+Agora pode gerir as seguintes aplicações com [políticas de proteção de aplicações do Intune](app-protection-policies.md):
+- Stream (iOS)
+- Para fazer (Android, iOS)
+- PowerApps (Android, iOS)
+- Fluxo (Android, iOS)
+
+Utilize políticas de proteção de aplicações para proteger a empresa transferência de dados e controle de dados para estas aplicações, como outra aplicações geridas por políticas do Intune. Nota: Se o fluxo ainda não estiver visível na consola, adicionar fluxo quando criar ou editar e políticas de proteção de aplicações. Para tal, utilize o **+ mais aplicações** opção e, em seguida, especifique a *ID de aplicação* do Flow no campo de entrada. Para Android utilizam *com.microsoft.flow*, e para iOS utilize *com.microsoft.procsimo*.
+
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Os números de compilação e da versão do iOS e macOS são apresentados <!-- 1892471 -->
+Em **Conformidade do dispositivo** > **Conformidade do dispositivo**, são apresentadas as versões dos sistemas operativos iOS e macOS. Estas versões estão disponíveis para serem utilizadas nas políticas de conformidade. Esta atualização inclui o número de compilação, o que é configurável para ambas as plataformas.
+Quando as atualizações de segurança são lançadas, normalmente, a Apple não altera o número da versão, mas atualiza o número de compilação. Ao utilizar o número de compilação numa política de conformidade, pode verificar facilmente se foi instalada uma atualização da vulnerabilidade.
+Para utilizar esta funcionalidade, consulte [iOS](compliance-policy-create-ios.md#device-health) e [macOS](compliance-policy-create-mac-os.md#device-properties) políticas de conformidade.
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>Cadências de atualização estão a ser substituídas com as definições de otimização de entrega para o Windows 10 e posterior <!-- 2753807 -->
+Otimização da entrega é um novo perfil de configuração para Windows 10 e posterior. Esta funcionalidade fornece uma experiência mais simplificada para fornecer atualizações de software para dispositivos na sua organização. Esta atualização também ajuda a fornecer as definições de cadências de atualização de novas e existentes com um perfil de configuração.
+Para configurar um perfil de configuração de otimização de entrega, consulte [as definições de otimização do Windows 10 (e mais recente) entrega](delivery-optimization-windows.md).
+
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Selecionar aplicações monitorizadas na Página de Estado de Inscrição<!-- 2531007 -->
+Pode escolher as aplicações que são controladas na página de estado de inscrição. Até que estas aplicações são instaladas, o utilizador não é possível utilizar o dispositivo. Para obter mais informações, consulte [configurar uma página de estado de inscrição](windows-enrollment-status.md).
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>Procurar dispositivos Autopilot por número de série <!--2595788 -->
+Agora pode procurar por dispositivos Autopilot por número de série. Para tal, escolha **inscrição de dispositivos** > **inscrição Windows** > **dispositivos** > Escreva um número de série no **pesquisar por número de série** caixa > prima Enter.
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>Monitorizar a instalação do Office ProPlus <!--2620217 -->
+Os usuários podem controlar o progresso da instalação [Office ProPlus](apps-add-office365.md) utilizando o [página de estado de inscrição](windows-enrollment-status.md). Para obter mais informações, consulte [configurar uma página de estado de inscrição](windows-enrollment-status.md).
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Alertas de token VPP prestes a expirar ou de licenças do Portal da Empresa que se estão a esgotar <!-- 2237572 -->
+Se estiver a utilizar o Volume Purchase Program (VPP) para pré-aprovisionar o Portal da empresa durante a inscrição de DEP, o Intune irá alertá-lo quando o token VPP está prestes a expirar e quando há pouca as licenças para o Portal da empresa. Para obter mais informações, consulte [inscrever automaticamente dispositivos macOS com o Apple School Manager ou o programa de inscrição de dispositivos](device-enrollment-program-enroll-macos.md).
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Nova subscrição de dispositivo do Intune SKU <!--3312071-->
+Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível no Canal Direto, no Contrato Enterprise (EA), no Microsoft Products and Services Program (MPSA) e no Fornecedor de Soluções Cloud (CSP) e de Programas Open.
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Interromper temporariamente o modo de quiosque em dispositivos Android para fazer alterações <!-- 3041935 -->
+Ao utilizar dispositivos Android no modo de quiosque de múltiplas aplicações, um administrador de TI poderá ter de fazer alterações ao dispositivo. Esta atualização inclui novas definições de local público de várias aplicações que permite que um administrador de TI temporariamente a colocar em pausa a utilização de um PIN de modo de local público e obtenha acesso a todo o dispositivo.
+Para ver as definições de local público, consulte [restrições de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Ativar o botão Home virtual em dispositivos de quiosque Android Enterprise <!-- 3042021 -->
+Uma nova definição permitirá que os utilizadores toquem num botão de tecla de função no respetivo dispositivo para alternar entre a aplicação Ecrã Inicial Gerido e outras aplicações atribuídas no respetivo dispositivo de quiosque de múltiplas aplicações. Esta definição é particularmente útil em cenários onde a aplicação de quiosque do utilizador não responde adequadamente ao botão "retroceder". Poderá configurar esta definição para dispositivos Android de utilização única, pertencentes à empresa. Para ativar ou desativar o **botão Home virtual**, aceda ao Intune no portal do Azure > Configuração do dispositivo. Selecione um perfil de configuração de dispositivo atual ou crie um novo para editar as respetivas definições de quiosque.
+Para ver as definições de local público, consulte [restrições de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="week-of-november-12-2018"></a>Semana de 12 de Novembro de 2018
 
@@ -84,7 +153,7 @@ Pode resolver problemas relativos ao sucesso da instalação de aplicações cli
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>Suporte de controlo de acesso à rede em clientes VPN do iOS <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>Suporte de controlo de acesso à rede em clientes VPN do iOS <!-- 1333693 -->
 Com esta atualização, há uma nova definição para ativar o Controlo de Acesso à Rede (NAC) quando criar um perfil de configuração de VPN para Cisco AnyConnect, F5 Access e Citrix SSO para iOS. Esta definição permite que o ID do NAC do dispositivo seja incluído no perfil de VPN. Atualmente, não existem clientes VPN nem soluções de parceiro de NAC que suportem este novo ID do NAC, mas iremos mantê-lo informado através da nossa [mensagem de blogue de suporte](ttps://aka.ms/iOS12_and_vpn) quando existirem.
 
 Para utilizar o NAC, precisará de:
@@ -173,7 +242,7 @@ Para os clientes que fazem parte da implementação, esta nova experiência subs
 
 Para obter mais informações, veja [New Help and Support experience](get-support.md#new-help-and-support-experience) (Nova experiência de Ajuda e Suporte) em Como obter suporte para o Microsoft Intune.  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>Módulo do PowerShell para o Intune – pré-visualização disponível <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>Módulo do PowerShell para o Intune – pré-visualização disponível <!-- 951068 -->
 Está agora disponível para pré-visualização no [GitHub]( https://aka.ms/intunepowershell) um novo módulo do PowerShell que fornece suporte para a API do Intune através do Microsoft Graph. Para obter mais informações sobre como utilizar este módulo, veja o ficheiro LEIA-ME nessa localização. 
 
 
@@ -355,7 +424,7 @@ Para obter informações sobre as definições de perfis VPN atualmente disponí
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>O instalador do Portal da Empresa para macOS inclui agora o número da versão no nome do ficheiro do instalador <!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>Atualizações automáticas da aplicação do iOS <!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>Atualizações automáticas da aplicação do iOS <!-- 2729759 -->
 As atualizações automáticas da aplicação funcionam em aplicações licenciadas para o dispositivo e o utilizador para o iOS Versão 11.0 e versões superiores.
 
 
@@ -733,7 +802,7 @@ Com esta atualização, o gráfico de utilizadores está de volta e é apresenta
 
 ### <a name="device-enrollment"></a>Inscrição de dispositivos
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Suporte para a inscrição do Windows Autopilot sem autenticação de utilizador <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>Suporte para a inscrição do Windows Autopilot sem autenticação de utilizador <!-- 1165118 -->
 O Intune suporta a inscrição do Windows Autopilot sem autenticação de utilizador. Esta é uma opção nova no perfil de implementação do Windows Autopilot "Modo de implementação do Autopilot" definido para "Implementação Automática".  O dispositivo tem de estar a executar a Versão 17672 do Windows 10 Insider Preview ou posterior e ter um chip do TPM 2.0 para concluir este tipo de inscrição com êxito. Uma vez que não é necessária a autenticação de utilizador, só deve atribuir esta opção a dispositivos sobre os quais tenha o controlo físico.
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Nova definição de idioma/região ao configurar o OOBE para o AutoPilot <!-- 1821766 -->
@@ -781,7 +850,7 @@ As informações de Dispositivo de Interface de Cartão de Circuito Integrado (C
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Atribuir todos os utilizadores e dispositivos como grupos de âmbito <!-- 2196803 -->
 Pode agora atribuir todos os utilizadores, todos os dispositivos e todos os utilizadores e dispositivos em grupos de âmbito. Para o fazer, selecione **Funções do Intune** > **Todas as funções** > **Gestor de políticas e perfis** > **Atribuições** > selecione uma atribuição > **Âmbito (grupos)**.
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>Informações de UDID incluídas para dispositivos iOS e macOS <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>Informações de UDID incluídas para dispositivos iOS e macOS <!-- 2219806 -->
 Para ver o Identificador Único do Dispositivo (UDID) para dispositivos iOS e macOS, aceda a **Dispositivos** > **Todos os dispositivos** > selecione um dispositivo > **Hardware**. O UDID só está disponível para dispositivos empresariais (como definido em **Dispositivos** > **Todos os dispositivos** > selecione um dispositivo > **Propriedades** > **Propriedade do dispositivo**).
 
 ### <a name="intune-apps"></a>Aplicações do Intune
@@ -955,7 +1024,7 @@ A aplicação do Portal da Empresa para dispositivos macOS foi atualizada para m
 
 Para obter mais informações, veja [Enviar erros do macOS](/intune-user-help/send-errors-macos).
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>O Intune adapta-se ao Fluent Design System na aplicação Portal da Empresa para Windows 10 <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>O Intune adapta-se ao Fluent Design System na aplicação Portal da Empresa para Windows 10 <!-- 1195010 -->
 A aplicação Portal da Empresa do Intune para Windows 10 foi atualizada com a [vista de navegação do Fluent Design System](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Na parte lateral da aplicação, verá uma lista vertical estática de todas as páginas de nível superior. Clique em qualquer ligação para ver e alternar entre páginas rapidamente. Esta é a primeira de várias atualizações que verá como parte do nosso esforço contínuo para criar uma experiência mais adaptável, agradável e familiar no Intune. Para ver a versão atualizada, aceda a [Novidades na IU da aplicação](whats-new-app-ui.md).
 
 ## <a name="week-of-april-16-2018"></a>Semana de 16 de abril de 2018
@@ -1111,14 +1180,8 @@ Reveja as definições de palavra-passe no seu Android e nas políticas de restr
 #### <a name="additional-information"></a>Informações adicionais
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Planear a Alteração: Alterar a Palavra-passe na Próxima Autenticação adicionada ao Intune<!-- 1873216 -->
-Na versão de serviço de setembro, o Intune planeia integrar a recém-lançada definição **Alterar a Palavra-passe na Próxima Autenticação** da Apple para dispositivos macOS com a versão 10.13 e superior. Antes desta definição, os fornecedores da MDM não podiam verificar se o código de acesso do dispositivo tinha sido alterado para estar em conformidade. As políticas de configuração e conformidade do Intune apenas confirmam que, numa próxima alteração de uma palavra-passe do dispositivo, esta é identificada como em conformidade. Quando esta nova funcionalidade da Apple é adicionada, os utilizadores do macOS receberão um pedido para atualizarem a palavra-passe, mesmo que esta esteja em conformidade.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Este problema afeta os ambientes com uma política de dispositivos macOS com o Intune ou uma MDM híbrida. Agora que a Apple possui esta definição **Alterar a Palavra-passe na Nova Autorização**, o Intune pode compelir os utilizadores a atualizar a palavra-passe quando é lançada uma política de palavra-passe. Se bloquear os recursos da empresa até que o dispositivo seja identificado como em conformidade, os utilizadores finais poderão perder o acesso aos recursos da empresa, como o e-mail ou sites do SharePoint, até que seja realizada a reposição da palavra-passe. No futuro, todas as atualizações das políticas de palavra-passe de conformidade e de configuração vão compelir os utilizadores visados a atualizar as palavras-passe.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Informe o suporte técnico. Se não pretender aplicar esta política de dispositivo macOS, será recomendável anular a atribuição ou eliminar a política macOS existente. A pesquisa de clientes sugere que a maioria dos clientes não são afetados por esta alteração. A maioria dos utilizadores finais atualizam a palavra-passe depois de receberem um pedido para se inscreverem com uma palavra-passe ou reporem a palavra-passe para permanecerem em conformidade.
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
+A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS. Continuaremos a fornecer mais detalhes no nosso [blogue de suporte do Intune](https://aka.ms/compportalats).
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Planear a Alteração: o Intune vai mudar para o TLS 1.2
 A partir de 31 de outubro de 2018, o Intune irá suportar a versão 1.2 do protocolo TLS (Transport Layer Security) para fornecer a melhor encriptação, garantir que o nosso serviço é mais seguro por predefinição e alinhá-lo com outros serviços da Microsoft, como o Microsoft Office 365. O Office comunicou esta alteração na mensagem MC128929.
@@ -1134,13 +1197,6 @@ A partir de 31 de outubro de 2018, se tiver um problema relacionado com a utiliz
 Recomendamos que remova de forma proativa as dependências do TLS 1.0 e 1.1 nos seus ambientes e que desative o TLS 1.0 e 1.1 ao nível do sistema operativo, se tal for possível. Comece já a planear a sua migração para o TLS 1.2. Veja a mensagem de blogue de suporte abaixo para consultar uma lista dos dispositivos que não são suportados atualmente pelo Intune, mas que poderão continuar a receber políticas e não poderão comunicar através da versão 1.2 do TLS. Poderá ter de notificar esses utilizadores finais de que irão perder o acesso aos recursos empresariais.
 
 **Informações Adicionais**: [o Intune irá mudar para o TLS 1.2 para encriptação](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Planear a Alteração: Utilizar agora o Intune no Azure para a sua gestão da MDM <!-- 1227338 -->
-Há mais de um ano, anunciámos a [pré-visualização pública do Intune no Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) e, há seis meses, lançámos a [disponibilidade geral da nova experiência de administrador](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para o Intune. A partir de 31 de agosto de 2018, vamos desativar a gestão de dispositivos móveis (MDM) na consola Silverlight clássica para os clientes que utilizam o Intune autónomo. No seu lugar, pode utilizar o [Intune no Azure](https://aka.ms/Intune_on_Azure) para as suas necessidades de MDM. Se continua a utilizar a consola clássica para a MDM, pare e familiarize-se com o Intune no Azure. Não esperamos nenhum impacto no utilizador final com esta alteração. A gestão clássica do PC irá permanecer no Silverlight. Pode saber mais sobre esta alteração e como ela o afeta [aqui](https://aka.ms/Intune_on_Azure_mdm).
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
-A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS. Continuaremos a fornecer mais detalhes no nosso [blogue de suporte do Intune](https://aka.ms/compportalats).
 
 
 
