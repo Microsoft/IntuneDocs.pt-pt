@@ -1,5 +1,5 @@
 items:
-- name: Descrição geral
+- name: Descrição Geral
   href: introduction-intune.md
   items:
   - name: O que é o portal do Azure?
@@ -216,7 +216,7 @@ items:
     - name: Configurar a inscrição de macOS
       href: macos-enroll.md
       items:
-      - name: Programa de Inscrição de Dispositivos
+      - name: Programa de Inscrição de Dispositivos ou Apple School Manager
         href: device-enrollment-program-enroll-macos.md
     - name: Instalar o software de cliente do Intune em PCs Windows
       href: install-the-windows-pc-client-with-microsoft-intune.md
@@ -404,7 +404,7 @@ items:
         href: device-restrictions-ios.md
       - name: macOS
         href: device-restrictions-macos.md
-      - name: Windows 8.1
+      - name: Windows 8,1
         href: device-restrictions-windows-8-1.md
       - name: Windows Phone 8.1
         href: device-restrictions-windows-phone-8-1.md
@@ -414,6 +414,8 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
+    - name: Otimização da entrega
+      href: delivery-optimization-windows.md
     - name: Configurar a proteção de ponto final
       href: endpoint-protection-configure.md
       items:
@@ -423,10 +425,6 @@ items:
         href: endpoint-protection-windows-10.md
     - name: Configure identity protection (Configurar a proteção de identidade)
       href: identity-protection-configure.md
-    - name: Definições de quiosque do Android
-      href: android-kiosk-settings.md
-    - name: Definições de quiosque do Android enterprise
-      href: android-enterprise-settings.md
     - name: Definições de quiosque do Windows 10
       href: kiosk-settings.md
     - name: Configurar as definições de e-mail
@@ -451,7 +449,7 @@ items:
         href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
-      - name: Windows 8.1
+      - name: Windows 8,1
         href: vpn-settings-windows-8-1.md
       - name: Windows Phone 8.1
         href: vpn-settings-windows-phone-8-1.md
@@ -470,7 +468,7 @@ items:
         href: wi-fi-settings-macos.md
       - name: Windows 10
         href: wi-fi-settings-windows.md
-      - name: Windows 8.1
+      - name: Windows 8,1
         href: wi-fi-settings-import-windows-8-1.md
     - name: Configure eSIM cellular profiles (Configurar perfis celulares eSIM)
       href: esim-device-configuration.md
@@ -845,9 +843,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossário
     href: intune-glossary.md
-ms.openlocfilehash: c7f77f5acb94a3e137313a136807c70bdb085136
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: a3712961f5980cb9aa40efd57fe324d2c349c377
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51511065"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728740"
