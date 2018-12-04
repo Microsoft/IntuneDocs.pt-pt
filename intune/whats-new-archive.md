@@ -19,7 +19,7 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: 09cd1177157897886631f804cd335ae78562a233
 ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52182147"
