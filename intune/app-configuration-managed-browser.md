@@ -122,7 +122,7 @@ O SSO exige que o seu dispositivo seja registado pela aplicação Microsoft Auth
 4.  No painel **Políticas de configuração de aplicações**, escolha **Adicionar**.
 5.  No painel **Adicionar política de configuração**, introduza um **Nome** e uma **Descrição** opcional para as definições de configuração da aplicação.
 6.  Para o tipo de **Inscrição de dispositivos**, selecione **Aplicações geridas**.
-7.  Selecione **Selecionar a aplicação necessária** e, em seguida, no painel **Aplicações de destino**, selecione o **Managed Browser** e/ou o **Edge** para iOS, Android ou para ambos.
+7.  Selecione **Selecionar a aplicação necessária** e, em seguida, no painel **Aplicações de destino**, selecione o **Managed Browser** e/ou o **Microsoft Edge** para iOS, Android ou para ambos.
 8.  Selecione **OK** para regressar ao painel **Política de configuração da aplicação**.
 9.  Selecione **Definições de configuração**. No painel **Configuração**, define os pares de chave e valor para fornecer as configurações para o Managed Browser. Utilize as secções mais adiante neste artigo para saber mais sobre os diferentes pares de chave e valor que pode definir.
 10. Quando tiver terminado, escolha **OK**.
@@ -176,7 +176,7 @@ Para obter mais informações sobre como o Managed Browser, o Microsoft Edge e o
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Como configurar a home page de um browser protegido
 
 Esta definição permite-lhe configurar a home page que os utilizadores veem ao iniciar um browser protegido ou ao criar um novo separador. 
-- Esta definição irá mostrar a página Web no Managed Browser.  O Edge irá apresentar um atalho para a home page.
+- Esta definição irá mostrar a página Web no Managed Browser.  O Microsoft Edge irá apresentar um atalho para a home page.
 - O ícone do atalho para a home page é apresentado por baixo do controlo de pesquisa.  Não pode ser editado nem eliminado.
 - O atalho para a home page irá apresentar o nome da sua organização para poder distingui-lo.  Será sempre apresentado como o primeiro ícone.
 
