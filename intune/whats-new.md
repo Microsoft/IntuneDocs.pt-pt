@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 656c08fbc59b5656d4fc69c5e8e45d9d4903eab8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 939ef9d164038f795ef9c591993751425ed6e89f
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729080"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861103"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +46,10 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ## <a name="week-of-november-26-2018"></a>Semana de 26 de Novembro de 2018
 
 ### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Desinstalar aplicações em dispositivos iOS supervisionados pertencentes à empresa <!-- 1281677 -->
+
+Pode remover todas as aplicações em dispositivos iOS supervisionados pertencente à empresa. Pode remover qualquer aplicação ao visar os grupos de utilizadores ou dispositivos com um tipo de atribuição **Desinstalar**. Para dispositivos iOS pessoais ou não supervisionados, continuará a poder remover apenas as aplicações que foram instaladas com o Intune.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Transferir o conteúdo da aplicação Intune Win32 <!-- 2617320 -->
 Windows 10 RS3 e aos clientes acima irá transferir o conteúdo da aplicação Intune Win32 usando um componente de Otimização da entrega no cliente Windows 10. Otimização da entrega fornece uma funcionalidade de ponto-a-ponto que ele está ativado por predefinição. Otimização da entrega pode ser configurada pela política de grupo e no futuro através de MDM do Intune. Para obter mais informações, consulte [otimização de entrega para o Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
@@ -72,6 +76,13 @@ Agora pode gerir as seguintes aplicações com [políticas de proteção de apli
 
 Utilize políticas de proteção de aplicações para proteger a empresa transferência de dados e controle de dados para estas aplicações, como outra aplicações geridas por políticas do Intune. Nota: Se o fluxo ainda não estiver visível na consola, adicionar fluxo quando criar ou editar e políticas de proteção de aplicações. Para tal, utilize o **+ mais aplicações** opção e, em seguida, especifique a *ID de aplicação* do Flow no campo de entrada. Para Android utilizam *com.microsoft.flow*, e para iOS utilize *com.microsoft.procsimo*.
 
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427 -->
+Alterámos as etiquetas para as definições e botões para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
+
+- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
+- As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
+
+As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada.
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
@@ -97,7 +108,10 @@ Agora pode procurar por dispositivos Autopilot por número de série. Para tal, 
 Os usuários podem controlar o progresso da instalação [Office ProPlus](apps-add-office365.md) utilizando o [página de estado de inscrição](windows-enrollment-status.md). Para obter mais informações, consulte [configurar uma página de estado de inscrição](windows-enrollment-status.md).
 
 #### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Alertas de token VPP prestes a expirar ou de licenças do Portal da Empresa que se estão a esgotar <!-- 2237572 -->
-Se estiver a utilizar o Volume Purchase Program (VPP) para pré-aprovisionar o Portal da empresa durante a inscrição de DEP, o Intune irá alertá-lo quando o token VPP está prestes a expirar e quando há pouca as licenças para o Portal da empresa. Para obter mais informações, consulte [inscrever automaticamente dispositivos macOS com o Apple School Manager ou o programa de inscrição de dispositivos](device-enrollment-program-enroll-macos.md).
+Se estiver a utilizar o Volume Purchase Program (VPP) para pré-aprovisionar o Portal da empresa durante a inscrição de DEP, o Intune irá alertá-lo quando o token VPP está prestes a expirar e quando há pouca as licenças para o Portal da empresa.
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>Suporte do Programa de Registo de Aparelho do macOS para as contas do Apple School Manager <!--3006133 -->
+Intune agora suporta através do programa de inscrição de dispositivos em dispositivos macOS para contas de Gestor de escola da Apple.  Para obter mais informações, consulte [inscrever automaticamente dispositivos macOS com o Apple School Manager ou o programa de inscrição de dispositivos](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Nova subscrição de dispositivo do Intune SKU <!--3312071-->
 Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível no Canal Direto, no Contrato Enterprise (EA), no Microsoft Products and Services Program (MPSA) e no Fornecedor de Soluções Cloud (CSP) e de Programas Open.
@@ -214,9 +228,6 @@ As políticas de proteção de aplicações do Intune permitem-lhe configurar v�
 - **Iniciação condicional**: este grupo guarda definições como as definições de SO mínimo, de deteção de dispositivos desbloqueados por jailbreak ou rooting e de períodos de tolerância offline.  
   
 A funcionalidade das definições não muda, mas será mais fácil encontrá-las quando trabalhar no fluxo de autoria de política.
-
-### <a name="new-intune-device-subscription-sku---3312071--"></a>Novo SKU de subscrição de dispositivos do Intune!--3312071-->
-Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível no Canal Direto, no Contrato Enterprise (EA), no Microsoft Products and Services Program (MPSA) e no Fornecedor de Soluções Cloud (CSP) e de Programas Open.
 
 ### <a name="intune-apps"></a>Aplicações do Intune
 
@@ -1151,6 +1162,8 @@ Para obter mais informações, veja [Inscrever o seu dispositivo macOS no Intune
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Planear a Alteração: nova experiência de suporte do Intune para clientes Premier 
+12/4/18 atualização: estamos tentando tornar esse processo melhor para si, para a criação do pedido de suporte no MPO será não desativada a 3 de Dezembro, mas numa data posterior em vez disso. Vamos informá-sei através do Centro de mensagens e atualizar esta publicação em breve para partilhar as linhas do tempo para que esta alteração.
+
 Como cliente Premier da Microsoft, atualmente, pode utilizar o portal do Microsoft Premier Online (MPO) (premier.microsoft.com) e o Intune no Azure (portal.azure.com) para criar pedidos de suporte do Intune. A partir de 3 de dezembro de 2018, no sentido de continuar a melhorar a experiência de suporte Premier, poderá criar pedidos de suporte apenas no Intune no Azure.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?

@@ -26,7 +26,7 @@
 - Windows Phone 8.1, Windows 8.1 RT, PCs com o Windows 8.1 (Modo de suporte)
 
 > [!NOTE]
-> O Intune não pode servir para gerir os sistemas operativos Windows Server.
+> O Intune não pode servir para gerir os sistemas operativos Windows Server. SKU de raiz não suporta todas as funcionalidades do Intune
 
 Os clientes com o Enterprise Management + Security (EMS) também podem [utilizar o Azure Active Directory (Azure AD) para registar dispositivos com o Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 

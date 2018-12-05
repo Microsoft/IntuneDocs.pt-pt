@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e813d64d3019748eed3c985dcefda744188ad850
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187842"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861035"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -123,7 +123,7 @@ Pode alterar as definições de uma restrição de limite de dispositivos ao seg
 6. Selecione **Guardar**.
 
 
-Os utilizadores verão uma notificação que os irá informar quando atingirem o limite de dispositivos inscritos. Por exemplo, no iOS, tem o seguinte aspeto:
+Durante a inscrição de BYOD, os utilizadores veem uma notificação que irá informar quando atingirem o respetivo limite de dispositivos inscritos. Por exemplo, no iOS, tem o seguinte aspeto:
 
 ![Notificação de limite do dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

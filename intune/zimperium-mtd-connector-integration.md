@@ -6,22 +6,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 68896a363cab37aabe9a597872da0fe75c44c473
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: 3f2ffb3f99ce0dc925c52f733b25292cdbddae3e
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267242"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861001"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar o Zimperium com o Intune
 
@@ -36,7 +36,7 @@ Antes de iniciar o processo de integração do Zimperium com o Intune, certifiqu
 
 -   Subscrição do Microsoft Intune
 
--   Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:
+-   Credenciais de administrador do Active Directory Administrador Global do diretório do Azure para conceder as permissões seguintes:
 
     -   Iniciar sessão e ler o perfil de utilizador
 
@@ -52,7 +52,7 @@ Antes de iniciar o processo de integração do Zimperium com o Intune, certifiqu
 
 O processo de autorização da aplicação Zimperium consiste no seguinte:
 
--   Permitir que o serviço do Zimperium transmita informações relacionadas com o estado de funcionamento do dispositivo ao Intune.
+-   Conceda as permissões de serviço do Zimperium transmita informações relacionadas com estado de funcionamento do dispositivo ao Intune. Para conceder estas permissões, tem de utilizar credenciais de Administrador Global. Concessão de permissões é uma operação única. Depois das permissões são concedidas, as credenciais de Administrador Global não são necessários para a operação do dia a dia.
 
 -   O Zimperium sincroniza com a associação do Grupo de Inscrição do Azure Active Directory (AD) para preencher a respetiva base de dados do dispositivo.
 
@@ -60,9 +60,12 @@ O processo de autorização da aplicação Zimperium consiste no seguinte:
 
 -   Permitir que a aplicação Zimperium inicie sessão através do SSO do Azure AD.
 
+Para obter mais informações sobre o consentimento e de aplicações do Azure Active Directory, consulte [solicitar as permissões de um administrador do](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#request-the-permissions-from-a-directory-admin) no artigo do Azure Active Directory *permissões e consentimento no Azure Active Ponto final de v2.0 do diretório*.
+
+
 ## <a name="to-set-up-zimperium-integration"></a>Para configurar a integração do Zimperium
 
-1.  Aceda a [consola do Zimperium MTD](https://sso.zimperium.com/signon/aad/) e inicie sessão com as suas credenciais.
+1.  Aceda a [consola do Zimperium MTD](https://sso.zimperium.com/signon/aad/) e inicie sessão com as suas credenciais. Para executar o processo de configuração de integração do Zimperium, tem de iniciar sessão com um utilizador do Azure Active Directory que tenha a função de Administrador Global. Esta operação de configuração de uso individual utiliza os direitos de Administrador Global para conceder permissão na sua organização para as aplicações Zimperium a comunicar com o Intune. 
 
 2.  Selecione **Gestão** a partir do menu esquerdo.
 
@@ -72,14 +75,16 @@ O processo de autorização da aplicação Zimperium consiste no seguinte:
 
 5.  Depois de definir o Microsoft Intune como serviço MDM, o **configuração do Microsoft Intune** janela aparece, escolha o **adicionar Azure Active Directory** para cada opção:  **Zimperium zConsole**, **zIPS para iOS e as aplicações Android** para autorizar o Zimperium a comunicar com o Intune e o Azure AD através do Azure AD início de sessão único.
 
-    > [!IMPORTANT]
-    > Tem de adicionar as aplicações Zimperium zConsole e zIPS para iOS e Android para concluir o processo de integração com o Intune.
+    > [!IMPORTANT]  
+    > Tem de adicionar o Zimperium zConsole, zIPS aplicações iOS e Android para concluir o processo de integração com o Intune.
 
 6.  Escolher **Accept** para autorizar a aplicação Zimperium a comunicar com o Intune e Azure Active Directory.
 
-7.  Assim que adicionar a **Zimperium zConsole** e as aplicações **zIPS para iOS e Android** ao Azure AD, adicione os grupos de segurança do Azure AD. Esta adição permite que o Zimperium sincronize o grupo de segurança do Azure AD com o seu serviço.
+7.  Depois de adicionar o **Zimperium zConsole** e o **zIPS para iOS e Android** aplicações para o Azure AD, adicione os grupos de segurança do Azure AD. Esta adição permite que o Zimperium sincronize o grupo de segurança do Azure AD com o seu serviço.
 
 8.  Escolher **concluir** para guardar a configuração e iniciar a primeira sincronização do grupo de segurança do Azure AD.
+
+9.  Terminar sessão da consola do Zimperium MTD.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

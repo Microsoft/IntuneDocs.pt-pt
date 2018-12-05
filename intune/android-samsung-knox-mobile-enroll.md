@@ -16,12 +16,12 @@ ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f9665c407e80fcfd7cc5d0af4c66d626d2e996e6
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189746"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861069"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente dispositivos Android através do Samsung Knox Mobile Enrollment
 
@@ -120,6 +120,8 @@ Ainda precisa de ajuda? Veja todo o [Knox Mobile Enrollment User Guide](https://
 ## <a name="frequently-asked-questions"></a>Perguntas mais frequentes
 
 - **Suporte de Proprietário do Dispositivo:** o Intune só suporta a inscrição de dispositivos no modo de quiosque com o Android Enterprise. Outros modos de proprietário de dispositivos Android Enterprise serão suportados à medida que forem disponibilizados no Intune.
+
+- **Não existe suporte de perfil de trabalho:** KME é um método de inscrição de dispositivos da empresa e dispositivos inscritos no perfil de trabalho Android Certifique-se de trabalho e dados pessoais são separados em dispositivos pessoais. Por isso, a inscrição de dispositivos ao utilizar KME de perfil de trabalho não é um cenário suportado no Intune.
 
 - **Reposição de fábrica para inscrição no Android Enterprise:** se reutilizar dispositivos que já foram configurados, tem de efetuar a reposição de fábrica dos mesmos ao inscrever-se no Android Enterprise.
 
