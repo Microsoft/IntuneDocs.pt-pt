@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a656a53062e8529541cd067fa32bfc83aee2ea0
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189967"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977325"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementar dispositivos híbridos associados ao Azure Active Directory com o Intune e o Windows Autopilot (Pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar dispositivos híbridos associados ao Azure Active Directory. Para o fazer, siga os passos abaixo.
@@ -68,7 +68,7 @@ Os dispositivos a ser inscritos também têm de:
 
 O Conector do Intune para o Active Directory cria computadores inscritos com o Autopilot no domínio do Active Directory no local. O computador que aloja o Conector do Intune tem de ter os direitos para criar os objetos de computador no domínio. 
 
-Em alguns domínios, não é concedido aos computadores o direito de criar computadores. Talvez os Administradores não queiram aumentar o limite de contas de computador a nível do domínio. Nestes casos, os direitos podem ser atribuídos à unidade organizacional em que os dispositivos híbridos associados ao Azure Active Directory são criados.
+Em alguns domínios, não é concedido aos computadores o direito de criar computadores. Além disso, a domínios que têm um concebidos no limite (predefinição de 10), que se aplica a todos os utilizadores e computadores que não são delegados direitos para criar objetos de computador. Por conseguinte, são criados a necessidade de direitos sejam delegadas a computadores que alojam o conector do Intune na unidade organizacional em que dispositivos associados ao Azure AD híbrido.
 
 A unidade organizacional com o direito de criar computadores tem de corresponder:
 - à unidade organizacional introduzida no perfil Associação a um Domínio

@@ -5,23 +5,25 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730108"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977274"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Definições de otimização de entrega de 10 (e versões posteriores) do Windows no Microsoft Intune
 
-Este artigo apresenta e descreve todas as definições de otimização de entrega que pode configurar para dispositivos Windows 10. Estas definições são adicionadas a um perfil de configuração do dispositivo e, em seguida, atribuídas ou implementadas nos seus dispositivos com o Microsoft Intune.
+Este artigo apresenta e descreve todas as definições de otimização de entrega que pode configurar para dispositivos Windows 10. Estas definições são adicionadas a um perfil de configuração do dispositivo e, em seguida, atribuídas ou implementadas nos seus dispositivos com o Microsoft Intune. 
+
+[Otimização da entrega de atualizações](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) é um ótimo recurso para obter mais informações sobre a otimização de entrega no Windows 10.
 
 ## <a name="settings"></a>Definições
 

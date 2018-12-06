@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 939ef9d164038f795ef9c591993751425ed6e89f
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 54aa1bef0e7877fea38c54c6b6bf02674c989eaf
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861103"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977444"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -114,7 +114,7 @@ Se estiver a utilizar o Volume Purchase Program (VPP) para pré-aprovisionar o P
 Intune agora suporta através do programa de inscrição de dispositivos em dispositivos macOS para contas de Gestor de escola da Apple.  Para obter mais informações, consulte [inscrever automaticamente dispositivos macOS com o Apple School Manager ou o programa de inscrição de dispositivos](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Nova subscrição de dispositivo do Intune SKU <!--3312071-->
-Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível no Canal Direto, no Contrato Enterprise (EA), no Microsoft Products and Services Program (MPSA) e no Fornecedor de Soluções Cloud (CSP) e de Programas Open.
+Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível diretamente por meio de portal de administração do Office e o [contrato Enterprise](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Products da Microsoft e o contrato de serviços](https://www.microsoft.com/licensing/mpsa/default) (MPSA), [contratos aberto da Microsoft ](https://partner.microsoft.com/licensing/licensing-agreements), e [fornecedor de solução de Cloud](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### <a name="device-management"></a>Gestão de dispositivos
 

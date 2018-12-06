@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184629"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977291"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementação de aplicações para Windows 10 através do Microsoft Intune 
 
@@ -49,7 +49,7 @@ Dependendo do tipo de aplicação, a aplicação pode ser instalada num disposit
     - As aplicações de linha de negócio e as aplicações empresariais (online e offline) podem ser implementadas no contexto de utilizador e suportarão as intenções Necessário e Disponível.
     - As aplicações Win32 criadas como aplicações de **Modo de Utilizador** ou de **Modo Duplo** podem ser implementadas em contexto de utilizador e irão suportar as intenções **Necessário** e **Disponível**. 
 - **Contexto do Dispositivo**: quando uma aplicação for implementada no contexto do dispositivo, a aplicação gerida será instalada diretamente no dispositivo pelo Intune.
-    - Apenas as aplicações de linha de negócio e as aplicações da Microsoft Store para Empresas licenciadas online podem ser implementadas no contexto do dispositivo e só suportarão a intenção Necessário.
+    - Apenas as aplicações de linha de negócio modernas e offline para aplicações de negócio a Microsoft Store licenciado podem ser implementado no contexto de dispositivo em só irão suportar a intenção necessária.
     - As aplicações Win32 criadas como aplicações de **Modo de Computador** ou de **Modo Duplo** podem ser implementadas em contexto de utilizador e irão suportar apenas a intenção **Necessário**.
 
 > [!NOTE]

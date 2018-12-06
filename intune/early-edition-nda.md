@@ -16,12 +16,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 24cc45f8f769d08c083bdddc27a12900613b98b0
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: 4110f1298ffa3e8497463d4751bc711a6c19baf1
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887156"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977376"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A edição antecipada do Microsoft Intune – Dezembro de 2018
 
@@ -70,9 +70,6 @@ Aplicação de Portal da empresa do Windows será adicionada uma nova página. A
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Utilizar a deteção de rede fidedigna para perfis VPN em dispositivos Windows 10 <!-- 1500165 -->
 Ao utilizar a deteção de rede fidedigna, poderá impedir que os perfis VPN crie automaticamente uma ligação VPN quando o utilizador já se encontra numa rede fidedigna. Será capaz de adicionar sufixos DNS para ativar a deteção de rede fidedigna em dispositivos com Windows 10 e posterior (**configuração do dispositivo** > **perfis**  >   **Criar perfil** > **Windows 10 e posterior** para a plataforma > **VPN** para tipo de perfil).
 [Definições de VPN do Windows 10](vpn-settings-windows-10.md) lista as definições de VPN atuais.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Suporte para dispositivos Android de empresa, totalmente geridos <!-- 574342 -->
-O Intune suportará dispositivos Android totalmente geridos, uma empresa cenário de "proprietário do dispositivo" em que dispositivos totalmente geridos pelo IT e são associados aos utilizadores individuais. Isto permite aos administradores gerir todo o dispositivo, aplicar um conjunto expandido de controlos de política indisponíveis para perfis de trabalho e restringe os utilizadores a instalar aplicações da Google Play gerido apenas. Para configurar o Android totalmente geridos os dispositivos, aceda a **inscrição de dispositivos** > **inscrição de dispositivos Android** > **dispositivos de utilizador de propriedade da empresa, totalmente gerido**.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>O SDK da aplicação Intune irá suportar as chaves de encriptação de 256 bits <!-- 1832174 -->
 Quando a encriptação está ativada por políticas de proteção de aplicações, o SDK da aplicação Intune para iOS utilizará as chaves de encriptação de 256 bits. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK.
