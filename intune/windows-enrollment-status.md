@@ -1,7 +1,7 @@
 ---
 title: Configurar uma página de estado de inscrição
 titleSuffix: Microsoft Intune
-description: Dê as boas-vindas aos utilizadores que estão a inscrever dispositivos Windows 10.
+description: Configure uma página de saudação para os utilizadores a inscrição de dispositivos Windows 10.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729046"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032100"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de estado de inscrição
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante a configuração do dispositivo, a Página de Estado de Inscrição apresenta informações de instalação no dispositivo. Algumas aplicações, perfis e certificados poderão não ser instalados antes de o utilizador concluir a inscrição inicial ou iniciar sessão no dispositivo. A página de estado de inscrição pode ajudar os utilizadores a compreender o estado do respetivo dispositivo durante a configuração do mesmo. Pode criar múltiplos perfis de página de estado de inscrição e aplicá-los a grupos diferentes. Os perfis podem ser definidos para:
+Durante a configuração de dispositivo com o Intune, a página de estado de inscrição apresenta informações de instalação no dispositivo. Algumas aplicações, perfis e certificados poderão não ser instalados antes de o utilizador concluir a inscrição inicial ou iniciar sessão no dispositivo. A página de estado de inscrição pode ajudar os utilizadores a compreender o estado do respetivo dispositivo durante a configuração do mesmo. Pode criar múltiplos perfis de página de estado de inscrição e aplicá-los a grupos diferentes. Os perfis podem ser definidos para:
 - Ver o progresso da instalação.
 - Bloquear a utilização até à conclusão da instalação.
 - Especificar o que um utilizador pode fazer se a configuração do dispositivo falhar.

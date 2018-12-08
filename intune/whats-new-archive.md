@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b06df0fea0a81757ab098ab84c17875c913eed2c
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 56bf46be841cb5acd5e6ec3a5d32eb4f7f525516
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977461"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032593"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -148,7 +148,7 @@ Na Configuração do Dispositivo, poderá ver mensagens e códigos de erro mais 
    Ative esta opção para impedir que o computador responda aos pedidos de pesquisa. O computador continua a responder a pedidos recebidos de aplicações autorizadas. São ignorados pedidos inesperados, tais como o protocolo ICMP (ping).
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>Desativar as verificações no reinício do dispositivo <!--1805490 -->
-O Intune dá-lhe controlo para [gerir atualizações de software]](windows-update-for-business-configure.md). Com esta atualização, a propriedade <strong>Verificações de reinício</strong> está disponível e ativada por predefinição. Para ignorar as verificações habituais que ocorrem ao reiniciar um dispositivo (como as verificações de utilizadores ativos, níveis de bateria, entre outras), selecione <strong>Ignorar</strong>.
+O Intune dá-lhe o controlo para [gerir as atualizações de software](windows-update-for-business-configure.md). Com esta atualização, a propriedade <strong>Verificações de reinício</strong> está disponível e ativada por predefinição. Para ignorar as verificações habituais que ocorrem ao reiniciar um dispositivo (como as verificações de utilizadores ativos, níveis de bateria, entre outras), selecione <strong>Ignorar</strong>.
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>Novos canais do Windows 10 Insider Preview disponíveis para cadências de implementação <!-- 1746293 -->
 Agora pode selecionar os seguintes canais de serviço do Windows 10 Insider Preview ao criar uma cadência de implementação do Windows 10:
@@ -807,7 +807,7 @@ Pode definir os recursos do Enterprise Cloud, intervalos de endereços IP e serv
 | | |
 |---|---|
 | Não Configurado | A definição **Não Configurado** utiliza o nível de bloqueio predefinido do Antivírus do Windows Defender e oferece um sistema de deteção avançado sem aumentar o risco de detetar ficheiros legítimos. |
-| Alto | A opção**Alto** aplica um nível de deteção elevado.
+| Alta | A opção**Alto** aplica um nível de deteção elevado.
 | Alto +  | A opção **Alto +** proporciona o nível de deteção Alto com medidas adicionais de proteção que podem afetar o desempenho do cliente.
 | Tolerância zero  | A opção **Tolerância zero** bloqueia todos os executáveis desconhecidos. |
 
@@ -1266,7 +1266,7 @@ Nesta versão, adicionámos novas definições ao perfil de restrição de dispo
 -  Rede móvel e conectividade
 -  Experiência de ecrã bloqueado
 -  Privacidade
--  Procura
+-  Pesquisa
 -  Destaque do Windows
 -  Browser Microsoft Edge
 

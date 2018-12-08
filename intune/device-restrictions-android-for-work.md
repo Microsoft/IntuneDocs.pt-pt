@@ -1,28 +1,32 @@
 ---
-title: Restrições de dispositivos com perfil de trabalho do Android no Microsoft Intune – Azure | Microsoft Docs
-description: Em dispositivos com perfil Android Enterprise, pode restringir algumas definições no dispositivo, incluindo as ações de copiar e colar, mostrar notificações, permissões de aplicações, partilha de dados, comprimento da palavra-passe, falhas de início de sessão, utilização de impressões digitais para desbloquear, reutilização de palavras-passe e permitir a partilha de contactos profissionais por bluetooth.
+title: Definições de dispositivos empresariais Android no Microsoft Intune – Azure | Documentos da Microsoft
+description: No Android Enterprise ou de dispositivos Android for Work, restringir as definições no dispositivo, incluindo copiar e colar, Mostrar notificações, permissões de aplicações, partilha de dados, comprimento de palavra-passe, falhas de início de sessão, utilize a impressão digital para desbloquear, reutilização de palavras-passe e ativar o bluetooth partilha de contactos profissionais. Configure dispositivos como um quiosque para executar uma aplicação ou várias aplicações.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5f153e738aff28cae6481c0502f0682d10b8f104
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729097"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032542"
 ---
-# <a name="work-device-restriction-settings-in-intune"></a>Definições de restrições de dispositivos profissionais no Intune
+# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
-Este artigo lista todas as definições de restrições de dispositivos do Microsoft Intune que pode configurar para dispositivos com perfil Android Enterprise.
+Este artigo apresenta e descreve as diferentes definições que pode controlar em dispositivos Android Enterprise. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para permitir ou desativar funcionalidades, execução de aplicações no modo de local público, controlo de segurança e muito mais.
+
+## <a name="before-you-begin"></a>Antes de começar
+
+[Criar um perfil de configuração do dispositivo](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Proprietário do dispositivo apenas
 
@@ -243,7 +247,7 @@ Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositi
   > [!IMPORTANT]
   >  - O cliente VPN que escolher tem de estar instalado no dispositivo e deve suportar a VPN por aplicação em perfis de trabalho. Caso contrário, será apresentado um erro. 
   >  - Tem de aprovar a aplicação cliente VPN na **Managed Google Play Store**, sincronizar a aplicação com o Intune e implementar a aplicação no dispositivo. Depois de o fazer, a aplicação é instalada no perfil de trabalho do utilizador.
-  >  - Existem problemas conhecidos ao utilizar a VPN por aplicação com o F5 Access para Android 3.0.3. Para obter mais informações, veja as [notas de versão do F5 para o F5 Access para Android 3.0.3](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android).
+  >  - Aqui pode ser problemas conhecidos ao utilizar a VPN por aplicação com acesso de F5 para Android 3.0.4. Ver [notas de versão da F5 para acesso de F5 para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) para obter mais informações.
 
 - **Modo de bloqueio**: **ativar** para forçar todo o tráfego de rede a utilizar o túnel VPN. Se não for estabelecida uma ligação à VPN, o dispositivo não terá acesso à rede.
 

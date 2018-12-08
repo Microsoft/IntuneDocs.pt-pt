@@ -1,11 +1,12 @@
 ---
 title: O dispositivo tem um certificado necessário em falta | Documentos da Microsoft
-description: ''
+titlesuffix: Microsoft Intune
+description: O dispositivo está em falta um certificado necessário pelo suporte da empresa.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +17,19 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150757"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032219"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>O dispositivo tem um certificado necessário em falta
 
 ## <a name="whats-a-certificate"></a>O que é um certificado?
 
-A [criptografia](https://technet.microsoft.com/library/cc962030.aspx) é a ciência de proteger as informações. A criptografia foi utilizada, tradicionalmente, para enviar mensagens em código para [assegurar que a comunicação é secreta](https://technet.microsoft.com/library/cc962019.aspx). Na sua forma mais simples, a criptografia substitui ou transpõe as letras para criar uma mensagem em código numa mensagem oculta, ilegível ou codificada. Só alguém com uma chave de descodificação ou um _certificado_ pode converter a mensagem novamente para a sua forma original e legível. Os seus dispositivos Android utilizam certificados no Intune para assegurar que as comunicações entre o seu dispositivo e os recursos da sua organização, como e-mails e documentos, são sempre mantidos em segurança desde o envio até à receção.
+A [criptografia](https://technet.microsoft.com/library/cc962030.aspx) é a ciência de proteger as informações. A criptografia foi utilizada, tradicionalmente, para enviar mensagens em código para [assegurar que a comunicação é secreta](https://technet.microsoft.com/library/cc962019.aspx). Em sua forma de simplist, a criptografia substitui ou transposes letras para criar uma mensagem em código numa mensagem oculta, ilegível ou ilegíveis. Só alguém com uma chave de descodificação ou um _certificado_ pode converter a mensagem novamente para a sua forma original e legível. Os seus dispositivos Android utilizam certificados no Intune para assegurar que as comunicações entre o seu dispositivo e os recursos da sua organização, como e-mails e documentos, são sempre mantidos em segurança desde o envio até à receção.
 
 ## <a name="fixing-certificate-issues"></a>Corrigir problemas de certificados
 
@@ -38,6 +39,6 @@ Se o seu dispositivo Android não estiver inscrito no Intune e não tiver um det
 
 O primeiro passo que deve experimentar consiste em verificar se o seu dispositivo tem um [certificado em falta que geralmente vem pré-instalado](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Se esta opção não funcionar, o suporte da empresa poderá [pedir-lhe para instalar um segundo certificado para uma segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
+Se a resolução de problemas de certificado não funcionar, o suporte da empresa poderia [exigem a instalação de um segundo certificado para segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

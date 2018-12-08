@@ -1,11 +1,12 @@
 ---
-title: Utilizar APIs para integrar outras autoridades de certificado – Microsoft Intune – Azure | Microsoft Docs
+title: Autoridades de certificado de APIs para carregar parte 3
+titlesuffix: Microsoft Intune
 description: Adicione ou integre a solução do GitHub do SCEP para outras autoridades de certificado (AC) para emitir certificados SCEP para dispositivos no Microsoft Intune. Esta solução inclui APIs de Java e C# que validam, enviam notificações de êxito e falhas para o Intune, e utilizam fábricas de sockets SSL ao comunicarem com o Intune. Veja uma descrição geral dos passos para testar a sua configuração da AC do SCEP.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 054342994a75965b3e1bcb13884af07131ab0122
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181926"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032338"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utilizar APIs para adicionar outras ACs para o SCEP ao Intune
 

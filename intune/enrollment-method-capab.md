@@ -1,7 +1,7 @@
 ---
-title: Funcionalidades do Intune por método de inscrição para dispositivos Windows
+title: Funcionalidades de método de inscrição do Intune para dispositivos Windows
 titlesuffix: Microsoft Intune
-description: Veja as funcionalidades suportadas por cada método de inscrição para dispositivos Windows.
+description: Recursos para cada método de inscrição para dispositivos Windows.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189814"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032134"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funcionalidades por método de inscrição para dispositivos Windows
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Funcionalidades de método de inscrição do Intune para dispositivos Windows
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-O Intune permite-lhe gerir os dispositivos e as aplicações da sua força de trabalho e a forma como acedem aos dados da empresa. Os dispositivos têm de ser inscritos primeiro no serviço do Intune. Existem vários métodos para inscrever os dispositivos da força de trabalho. Cada método possui diferentes funcionalidades e melhores práticas, conforme demonstrado nas tabelas abaixo.
+Existem vários métodos para inscrever dispositivos de sua força de trabalho no Intune. Cada método possui diferentes funcionalidades e melhores práticas, conforme demonstrado nas tabelas abaixo.
 
 ## <a name="best-practices-by-enrollment-method"></a>Melhores práticas por método de inscrição
 | **Melhores práticas** | **[Azure AD associado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD associado ao Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

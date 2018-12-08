@@ -1,33 +1,37 @@
 ---
-title: Definições de e-mail para dispositivos Android e com perfil de trabalho do Android no Microsoft Intune – Azure | Microsoft Docs
-description: Crie um perfil de e-mail de configuração de dispositivos que utilize os servidores Exchange e obtenha atributos do Azure Active Directory. Também pode ativar o SSL ou S/MIME, autenticar utilizadores com certificados ou nome de utilizador/palavra-passe e sincronizar e-mails e agendas em dispositivos Android e dispositivos com perfil de trabalho do Android com o Microsoft Intune.
+title: Android & definições de e-mail do Android Enterprise no Microsoft Intune – Azure | Documentos da Microsoft
+description: Criar um dispositivo de perfis de e-mail de configuração que utilizam servidores do Exchange e obter atributos do Azure Active Directory. Ativar SSL ou SMIME, autenticar utilizadores com certificados ou o nome de utilizador/palavra-passe e sincronizar o e-mail e agendas on Android e Android através do Microsoft Intune de dispositivos de perfil de trabalho.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b8ab8dfadb113d81922119a54aefcac43d15b5a1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187434"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032032"
 ---
-# <a name="email-profile-settings-for-devices-running-android-and-android-enterprise---intune"></a>Definições de perfis de e-mail para dispositivos Android e Android Enterprise – Intune
+# <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android e definições de dispositivos Android Enterprise para configurar o e-mail, autenticação e a sincronização no Intune
 
-Utilize as definições do perfil de e-mail para configurar os seus dispositivos Android.
+Este artigo apresenta uma lista e descreve as definições de correio eletrónico diferente que pode controlar em dispositivos Android e Android Enterprise. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para configurar um servidor de e-mail, utilize o SSL para encriptar mensagens de correio eletrónico e muito mais.
 
 Enquanto administrador do Intune, pode criar e atribuir definições de e-mail aos seguintes dispositivos Android:
 
 - Android Samsung Knox Standard
 - Android Enterprise
+
+## <a name="before-you-begin"></a>Antes de começar
+
+[Criar um perfil de configuração do dispositivo](email-settings-configure.md).
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 

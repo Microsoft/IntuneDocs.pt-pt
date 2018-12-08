@@ -1,5 +1,5 @@
 ---
-title: Criar uma estrutura
+title: Criar a sua estrutura do Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Este artigo ajuda-o a criar uma estrutura para uma estruturação e implementação apenas na cloud do Microsoft Intune.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1693c61b43b7470bc70dad3bc08ca040fce1d102
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186499"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032559"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -126,7 +126,7 @@ Se a sua organização tiver uma presença global, quando subscrever o serviço,
 
 As dependências externas são produtos e serviços que estão separados do Intune, mas são um requisito do Intune ou podem integrar-se com o Intune. É importante identificar os requisitos de dependências externas e como configurá-las. Alguns exemplos de dependências externas comuns são:
 
--   Identidade
+-   identidade
 
 -   Grupos de utilizadores e de dispositivos
 
@@ -134,7 +134,7 @@ As dependências externas são produtos e serviços que estão separados do Intu
 
 Vamos explorar mais detalhadamente as seguintes dependências externas comuns
 
-### <a name="identity"></a>Identidade
+### <a name="identity"></a>identidade
 
 A identidade é a forma como identificamos os utilizadores que pertencem à sua organização e estão a inscrever um dispositivo. O Intune necessita do Azure Active Directory (Azure AD) como fornecedor de identidade do utilizador. Se já estiver a utilizar este serviço, pode utilizar a sua identidade existente na cloud. Além disso, o Azure AD Connect é a ferramenta recomendada para sincronizar as suas identidades de utilizador no local com os serviços da Microsoft na cloud. Se a sua organização já utilizar o Office 365, é importante que o Intune utilize o mesmo ambiente do Azure AD.
 

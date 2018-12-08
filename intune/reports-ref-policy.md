@@ -1,12 +1,12 @@
 ---
-title: Policy
+title: Referência para as entidades de políticas
 titlesuffix: Microsoft Intune
 description: Tópico de referência para a categoria Policy das coleções de entidades na API do Armazém de Dados do Intune.
 keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 046dbe79dbaaee7de97fc83b80c40d5bf902c931
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 9fb05991b3e289d4a24cc2f3a5b2c398c12b1a15
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183507"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032440"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
@@ -63,10 +63,10 @@ A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do n
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. |20160703 |
-| Pending |Número de Dispositivos exclusivos no estado pendente. |123 |
+| Pendente |Número de Dispositivos exclusivos no estado pendente. |123 |
 | Succeeded |Número de Dispositivos exclusivos no estado com êxito. |12 |
-| Error |Número de Dispositivos exclusivos no estado com erros. |10 |
-| Failed |Número de Dispositivos exclusivos no estado com falhas. |2 |
+| Erro |Número de Dispositivos exclusivos no estado com erros. |10 |
+| Falhou |Número de Dispositivos exclusivos no estado com falhas. |2 |
 
 
 
@@ -75,10 +75,10 @@ A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista do nú
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | DateKey |Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. |20160703 |
-| Pending |Número de Utilizadores exclusivos no estado pendente. |123 |
+| Pendente |Número de Utilizadores exclusivos no estado pendente. |123 |
 | Succeeded |Número de Utilizadores exclusivos no estado com êxito. |12 |
-| Error |Número de Utilizadores exclusivos no estado com erros. |10 |
-| Failed |Número de Utilizadores exclusivos no estado com falhas. |2 |
+| Erro |Número de Utilizadores exclusivos no estado com erros. |10 |
+| Falhou |Número de Utilizadores exclusivos no estado com falhas. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -89,10 +89,10 @@ A entidade **PolicyTypeActivity** apresenta uma lista do número cumulativo de d
 | DateKey |Data-chave de quando a entrada do Perfil de configuração do dispositivo foi registada no armazém de dados. |20160703 |
 | PolicyKey |A chave de política pode ser acompanhada pela Política para obter o policyName. |Linha de base do Windows 10 |
 | PolicyTypeKey |O tipo de Chave de Política pode ser acompanhado do Tipo de Política para obter o nome do tipo de política. |Política de Compatibilidade do Windows 10 |
-| Pending |Número de dispositivos exclusivos no estado pendente. |123 |
+| Pendente |Número de dispositivos exclusivos no estado pendente. |123 |
 | Succeeded |Número de dispositivos exclusivos no estado com êxito. |12 |
-| Error |Número de dispositivos exclusivos no estado com erros. |10 |
-| Failed |Número de dispositivos exclusivos no estado com falhas. |2 |
+| Erro |Número de dispositivos exclusivos no estado com erros. |10 |
+| Falhou |Número de dispositivos exclusivos no estado com falhas. |2 |
 
 ## <a name="compliance-policy"></a>Política de Conformidade
 
@@ -111,7 +111,7 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 |Compatível      |Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador. |4083 |
 |InGracePeriod      |Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador. |57|
 |NonCompliant      |Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador.|43 |
-|Error      |Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro. |3|
+|Erro      |Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
 
@@ -129,7 +129,7 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 |Compatível      |Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador. |45|
 |InGracePeriod      |Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador. |3|
 |NonCompliant      |Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador.|7|
-|Error      |Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro. |3|
+|Erro      |Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro. |3|
 
 ### <a name="policyplatformtypes"></a>PolicyPlatformTypes
 
@@ -149,11 +149,11 @@ A tabela seguinte mostra o número de dispositivos no estado com êxito, pendent
 |Propriedade  |Descrição  |Exemplo  |
 |---------|---------|---------|
 |DateKey|Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.|20160703|
-|Pending|Número de Dispositivos exclusivos no estado pendente.|123|
+|Pendente|Número de Dispositivos exclusivos no estado pendente.|123|
 |Succeeded|Número de Dispositivos exclusivos no estado com êxito.|12|
 PolicyKey|A chave de política pode ser acompanhada pela Política para obter o policyName.|Linha de base do Windows 10|
-|Error|Número de Dispositivos exclusivos no estado com erros.|10|
-|Failed|Número de Dispositivos exclusivos no estado com falhas.|2|
+|Erro|Número de Dispositivos exclusivos no estado com erros.|10|
+|Falhou|Número de Dispositivos exclusivos no estado com falhas.|2|
 
 ### <a name="policyuseractivity"></a>PolicyUserActivity 
 
@@ -163,8 +163,8 @@ A tabela seguinte mostra o número de utilizadores no estado com êxito, pendent
 | Propriedade  |                                         Descrição                                         |       Exemplo       |
 |-----------|---------------------------------------------------------------------------------------------|---------------------|
 |  DateKey  | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. |      20160703       |
-|  Pending  |                         Número de Dispositivos exclusivos no estado pendente.                          |         123         |
+|  Pendente  |                         Número de Dispositivos exclusivos no estado pendente.                          |         123         |
 | Succeeded |                         Número de Dispositivos exclusivos no estado com êxito.                          |         12          |
 | PolicyKey |                A chave de política pode ser acompanhada pela Política para obter o policyName.                 | Linha de base do Windows 10 |
-|   Error   |                          Número de Dispositivos exclusivos no estado com erros.                           |         10          |
+|   Erro   |                          Número de Dispositivos exclusivos no estado com erros.                           |         10          |
 

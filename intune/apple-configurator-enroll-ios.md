@@ -1,5 +1,5 @@
 ---
-title: Inscrever dispositivos iOS – Assistente de Configuração do Apple Configurator
+title: Configurar a inscrição de dispositivos iOS – Assistente do Apple Configurator-Setup
 titleSuffix: Microsoft Intune
 description: Saiba como utilizar o Apple Configurator para inscrever dispositivos iOS pertencentes à empresa com o Assistente de Configuração.
 keywords: ''
@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: c36a87f6b0bd3e869275f5ac8089cc4fa4926698
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f3da65c010ed14300b7de014aa9b3c4c8c43024f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180388"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032406"
 ---
-# <a name="enroll-ios-devices-with-apple-configurator"></a>Inscrever dispositivos iOS com o Apple Configurator
+# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Configurar a inscrição de dispositivos iOS com o Apple Configurator
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

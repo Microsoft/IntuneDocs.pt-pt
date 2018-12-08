@@ -1,12 +1,12 @@
 ---
-title: Aplicação
+title: Referência para as entidades de aplicações
 titlesuffix: Microsoft Intune
 description: Tópico de referência para a categoria Application das coleções de entidades na API do Armazém de Dados do Intune.
 keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 32f41e4f299af4802dd270ec4a46c0cf4d467bc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179138"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032388"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -41,15 +41,15 @@ A entidade **AppRevision** apresenta uma lista de todas as versões das aplicaç
 |---------|------------|--------|
 | AppKey |Identificador exclusivo da Aplicação. |123 |
 | ApplicationId |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
-| Revision |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
-| Title |Nome da aplicação. |Excel |
-| Publisher |Publicador da aplicação. |Microsoft |
+| Revisão |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
+| Título |Nome da aplicação. |Excel |
+| Fabricante |Publicador da aplicação. |Microsoft |
 | UploadState |Estado de carregamento da aplicação. |1 |
 | AppTypeKey |Referência ao AppType descrito na secção seguinte. | |
 | VppProgramTypeKey |Referência ao VppProgramType descrito abaixo. | |
 | CreationTime |A hora em que esta revisão foi criada. |11/23/2016 12:00:00 AM |
 | ModifiedTime |A última vez em que algo relacionado com esta revisão foi alterado. |11/23/2016 12:00:00 AM |
-| Size |Tamanho do binário. | |
+| Tamanho |Tamanho do binário. | |
 | StartDateInclusiveUTC |Data e hora em UTC em que a revisão da Aplicação foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 | EndDateExclusiveUTC |Data e hora em UTC em que a revisão desta aplicação se tornou obsoleta. |11/23/2016 12:00:00 AM |
 | IsCurrent |Indica se a versão desta Aplicação é atual ou não no armazém de dados. |True/False |
