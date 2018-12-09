@@ -15,12 +15,12 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5a76a54de62ead26ec4b3c7a8e34db3cd639b6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181705"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112906"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
@@ -48,7 +48,7 @@ Uma atualização à aplicação Portal da Empresa para Android mostra um indica
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Impedir que as aplicações acedam ao SharePoint Online<!-- 679339 -->
 
-Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção aplicadas acedam ao [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). No cenário de acesso condicional baseado em aplicações, pode especificar as aplicações que pretende que tenham acesso ao SharePoint Online através do portal do Azure.
+Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção aplicadas acedam ao [SharePoint Online](app-based-conditional-access-intune-create.md). No cenário de acesso condicional baseado em aplicações, pode especificar as aplicações que pretende que tenham acesso ao SharePoint Online através do portal do Azure.
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Suporte de início de sessão único a partir do Portal da Empresa para iOS para o Outlook para iOS <!--834012-->
 Os utilizadores já não precisam de iniciar sessão na aplicação Outlook se já tiverem sessão iniciada no Portal da Empresa para iOS no mesmo dispositivo com a mesma conta. Quando os utilizadores iniciarem o Outlook, poderão selecionar a conta e iniciar sessão automaticamente. Também estamos a trabalhar no sentido de adicionar esta funcionalidade a outras aplicações da Microsoft.
@@ -58,7 +58,7 @@ Serão apresentadas novas mensagens mais específicas na aplicação Portal da E
 
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Estado da instalação de aplicações melhorado para a aplicação Portal da Empresa do Windows 10 <!--676495-->
 
-Os novos melhoramentos das instalações de aplicações iniciadas na aplicação do Portal da Empresa do Windows 10 incluem:
+Novas melhorias para a instalação da aplicação a utilizar na aplicação Portal da empresa do Windows 10 incluem:
 -   Relatórios mais rápidos do progresso da instalação para pacotes MSI
 -   Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
 -   Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
@@ -67,7 +67,7 @@ Pode ver a nova barra de progresso na [página Novidades na IU da aplicação In
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscrever dispositivos Windows 10 em volume <!-- 747607 -->
 
-Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](/intune-classic/deploy-use/bulk-enroll-windows) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
+Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](windows-bulk-enroll.md) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Novidades na pré-visualização pública do Intune no portal do Azure<!--736542-->
 
@@ -141,7 +141,7 @@ Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis
 - Defesa da aplicação
 - Defesa contra vulnerabilidades
 
-Pode configurar políticas de acesso condicional de EMS com base na avaliação de riscos do Skycure ativada através de políticas de conformidade de dispositivos do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, veja[Conector de Defesa Contra Ameaças para Dispositivos Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+Pode configurar políticas de acesso condicional de EMS com base na avaliação de riscos do Symantec Endpoint Protection Mobile (Skycure) ativada através de políticas de conformidade de dispositivos do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, consulte [conector do Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência de utilizador da aplicação Portal da Empresa para Android<!--621622-->
 
@@ -170,7 +170,7 @@ Se precisar de transferir e de carregar em sideload a aplicação Portal da Empr
 
 A versão do iOS 10.3 começou a ser implementada a 27 de março de 2017 para os utilizadores de iOS. Todos os cenários MDM e MAM existentes do Intune são compatíveis com a versão mais recente do SO da Apple. Prevemos que todas as funcionalidades existentes do Intune atualmente disponíveis para gerir dispositivos iOS continuem a funcionar quando os utilizadores atualizarem os seus dispositivos e aplicações para o iOS 10.3.
 
-Não existem atualmente problemas conhecidos para partilhar. Caso se depare com problemas com o iOS 10.3, contacte a [equipa de suporte do Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
+Não existem atualmente problemas conhecidos para partilhar. Caso se depare com problemas com o iOS 10.3, contacte a [equipa de suporte do Intune](get-support.md).
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Suporte melhorado para os utilizadores do Android sediados na China<!--720444-->
 
@@ -213,7 +213,7 @@ Quando um inquilino iniciar o processo de migração para agrupamento e direcion
 Do mesmo modo, se o Administrador de TI alterar o grupo do Intune visado por um perfil de Inscrição de Dispositivos da Empresa, o Intune irá criar um grupo dinâmico novo que reflita a nova atribuição de perfil, mas não irá eliminar o grupo dinâmico criado para a atribuição antiga.
 
 ### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Utilizar a predefinição para gerir computadores Windows através das definições do Windows<!--663050-->
-O comportamento predefinido de inscrição de computadores com Windows 10 irá mudar. As novas inscrições seguirão o fluxo de inscrição do agente MDM normal, em vez de através do agente de PC. O site do Portal da Empresa irá fornecer aos utilizadores de computadores com Windows 10 instruções para ajudá-los durante o processo de adicionar computadores com Windows 10 como dispositivos móveis. Isto não afetará os PCs atualmente inscritos e a sua organização pode continuar a gerir os computadores com Windows 10 através do agente de PC, [se preferir](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+O comportamento predefinido de inscrição de computadores com Windows 10 irá mudar. As novas inscrições seguirão o fluxo de inscrição do agente MDM normal, em vez de através do agente de PC. O site do Portal da Empresa irá fornecer aos utilizadores de computadores com Windows 10 instruções para ajudá-los durante o processo de adicionar computadores com Windows 10 como dispositivos móveis. Isto não afetará os PCs atualmente inscritos e a sua organização pode continuar a gerir os computadores com Windows 10 através do agente de PC, [se preferir](manage-windows-pcs-with-microsoft-intune.md).
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Melhorar o suporte de gestão de aplicações móveis para eliminação seletiva <!--581242-->
 Os utilizadores finais receberão orientações adicionais sobre como recuperar o acesso a dados escolares ou profissionais se esses dados forem automaticamente removidos devido à política "Intervalo offline antes de os dados da aplicação serem apagados".<!--, or the removal of the Intune Company Portal on Android.-->
@@ -235,7 +235,7 @@ A partir de março, a aplicação Portal da Empresa para Android seguirá as [di
 Poderá encontrar imagens de antes e depois na [página de atualizações de IU](whats-new-app-ui.md).
 
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>Associar várias ferramentas de gestão à Loja Microsoft para Empresas <!--926135-->
-Se estiver a utilizar mais do que uma ferramenta de gestão para implementar aplicações da Loja Microsoft para Empresas, antes só podia associar uma destas com a Loja Microsoft para Empresas. Agora, pode associar várias ferramentas de gestão com a loja, como o Intune e o Configuration Manager. Para obter mais detalhes, veja [Gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+Se estiver a utilizar mais do que uma ferramenta de gestão para implementar aplicações da Loja Microsoft para Empresas, antes só podia associar uma destas com a Loja Microsoft para Empresas. Agora, pode associar várias ferramentas de gestão com a loja, como o Intune e o Configuration Manager. Para obter mais detalhes, veja [Gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune](windows-store-for-business.md).
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Novidades na pré-visualização pública do Intune no portal do Azure <!--736542-->
 
@@ -252,20 +252,20 @@ Pode encontrar as novidades na pré-visualização do Intune no Azure [aqui](wha
 ### <a name="new-capabilities"></a>Novas Funcionalidades
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Relatórios na consola para MAM sem inscrição <!--677961-->
-Foram adicionados novos relatórios de proteção de aplicações para dispositivos inscritos e não inscritos. Saiba mais sobre como [monitorizar políticas de gestão de aplicações móveis com o Intune aqui](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
+Foram adicionados novos relatórios de proteção de aplicações para dispositivos inscritos e não inscritos. Obter mais informações sobre como pode [monitorizar políticas de gestão de aplicações móveis com o Intune](app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Suporte para Android 7.1.1 <!--694397-->
 Agora, o Intune suporta e gere totalmente o Android 7.1.1.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>Resolver o problema no qual os dispositivos iOS estão inativos ou a consola de administração não consegue comunicar com os mesmos <!--unknown-->
-Quando os dispositivos dos utilizadores perdem o contacto com o Intune, pode dar-lhes novos passos de resolução de problemas que os ajudem a recuperar o acesso aos recursos da empresa. Veja [Os dispositivos estão inativos ou a consola de administração não consegue comunicar com os mesmos](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+Quando os dispositivos dos utilizadores perdem o contacto com o Intune, pode dar-lhes novos passos de resolução de problemas que os ajudem a recuperar o acesso aos recursos da empresa. Veja [Os dispositivos estão inativos ou a consola de administração não consegue comunicar com os mesmos](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them).
 
 ### <a name="notices"></a>Avisos
 
 #### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Utilizar a predefinição para gerir computadores Windows através das definições do Windows<!--663050-->
 O comportamento predefinido de inscrição de computadores com Windows 10 irá mudar. As novas inscrições seguirão o fluxo de inscrição do agente MDM normal, em vez de através do agente de PC.
 
-O site do Portal da Empresa irá fornecer aos utilizadores de computadores com Windows 10 instruções para ajudá-los durante o processo de adicionar computadores com Windows 10 como dispositivos móveis. Isto não afetará os PCs atualmente inscritos e a sua organização pode continuar a gerir os computadores com Windows 10 através do agente de PC, [se preferir](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+O site do Portal da Empresa irá fornecer aos utilizadores de computadores com Windows 10 instruções para ajudá-los durante o processo de adicionar computadores com Windows 10 como dispositivos móveis. Isto não afetará os PCs atualmente inscritos e a sua organização pode continuar a gerir os computadores com Windows 10 através do agente de PC, [se preferir](manage-windows-pcs-with-microsoft-intune.md).
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Melhorar o suporte de gestão de aplicações móveis para eliminação seletiva <!--581242-->
 Os utilizadores finais receberão orientações adicionais sobre como recuperar o acesso a dados escolares ou profissionais se esses dados forem automaticamente removidos devido à política "Intervalo offline antes de os dados da aplicação serem apagados".<!--, or the removal of the Intune Company Portal on Android.-->
@@ -301,7 +301,7 @@ No início de 2017 iremos migrar toda a nossa experiência de administrador para
 
 A experiência de administração no portal do Azure irá utilizar a já anunciada nova funcionalidade de agrupamento e filtragem; quando o seu inquilino existente é migrado para a nova experiência de agrupamento, o utilizador também será migrado para pré-visualizar a nova experiência de administração do inquilino. Entretanto, pode obter mais informações sobre o que temos reservado para o Microsoft Intune no portal do Azure na nossa [nova documentação](/intune/what-is-intune).
 
-__Integração da gestão de despesas de telecomunicações na pré-visualização pública do portal do Azure__ <!--747605--> Estamos agora a começar a pré-visualizar a integração com os serviços de gestão de despesas de telecomunicações (TEM) de terceiros no portal do Azure. Pode utilizar o Intune para impor limites de utilização de dados nacionais e itinerantes. Estamos a começar essas integrações com [Saaswedo](http://www.saaswedo.com/). Para ativar esta funcionalidade no seu inquilino de avaliação, [contacte o suporte da Microsoft](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+__Integração da gestão de despesas de telecomunicações na pré-visualização pública do portal do Azure__ <!--747605--> Estamos agora a começar a pré-visualizar a integração com os serviços de gestão de despesas de telecomunicações (TEM) de terceiros no portal do Azure. Pode utilizar o Intune para impor limites de utilização de dados nacionais e itinerantes. Estamos a começar essas integrações com [Saaswedo](http://www.saaswedo.com/). Para ativar esta funcionalidade no seu inquilino de avaliação, [contacte o suporte da Microsoft](get-support.md).
 
 ### <a name="new-capabilities"></a>Novas Funcionalidades
 
@@ -311,7 +311,7 @@ __Capacidade de impedir a inscrição do dispositivo móvel__ <!--747596--> O In
 * A restrição da inscrição de dispositivos móveis não restringe a inscrição do cliente de PC.
 * Especificamente para iOS, existe uma opção adicional para bloquear a inscrição de dispositivos pessoais.
 
-O Intune marca todos os novos dispositivos como pessoais, a menos que o administrador de TI os marque como pertencentes à empresa, conforme explicado [neste artigo](/intune-classic/deploy-use/manage-corporate-owned-devices).
+O Intune marca todos os novos dispositivos como pessoais, a menos que o administrador de TI os marque como pertencentes à empresa, conforme explicado [neste artigo](device-enrollment.md).
 
 ### <a name="notices"></a>Avisos
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e813d64d3019748eed3c985dcefda744188ad850
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861035"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112957"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -52,7 +52,7 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
 
 ## <a name="create-a-restriction"></a>Criar uma restrição
 
-1. Inicie sessão no portal do Azure.
+1. Inicie sessão no Portal do Azure.
 2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Selecione **Criar restrição**.
@@ -67,9 +67,9 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
 
 ## <a name="set-device-type-restrictions"></a>Definir restrições de tipos de dispositivos
 
-Pode alterar as definições de uma restrição de tipos de dispositivo ao seguir os passos abaixo. Estas restrições não afetam os dispositivos que já tenham sido inscritos. A inscrição de dispositivos com o [agente de PC do Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) não pode ser bloqueada com esta funcionalidade.
+Pode alterar as definições de uma restrição de tipos de dispositivo ao seguir os passos abaixo. Estas restrições não afetam os dispositivos que já tenham sido inscritos. A inscrição de dispositivos com o [agente de PC do Intune](manage-windows-pcs-with-microsoft-intune.md) não pode ser bloqueada com esta funcionalidade.
 
-1. Inicie sessão no portal do Azure.
+1. Inicie sessão no Portal do Azure.
 2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Em **Restrições de Tipos de Dispositivos** > selecione a restrição que pretende definir > **Propriedades** > **Selecionar plataformas**. Selecione **Permitir** ou **Bloquear** para cada plataforma listada.
@@ -114,7 +114,7 @@ Os seguintes métodos de inscrição pessoal também serão bloqueados:
 
 Pode alterar as definições de uma restrição de limite de dispositivos ao seguir estes passos:
 
-1. Inicie sessão no portal do Azure.
+1. Inicie sessão no Portal do Azure.
 2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Em **Restrições de Limite de Dispositivos**, selecione a restrição que pretende definir.
@@ -137,7 +137,7 @@ A inscrição de dispositivos inclui restrições predefinidas para tipos e limi
 
 Pode alterar a prioridade de qualquer restrição que não seja predefinida.
 
-1. Inicie sessão no portal do Azure.
+1. Inicie sessão no Portal do Azure.
 2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Paire o cursor do rato sobre a lista de prioridades das restrições.

@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181456"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112940"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
@@ -69,7 +69,7 @@ A entidade **DeviceTypes** representa o tipo de dispositivo referenciado por out
 | 17 |AndroidForWork |Dispositivo Android gerido através do Proprietário do Perfil Android |
 | 100 |Blackberry |Dispositivo Blackberry |
 | 101 |Palm |Dispositivo Palm |
-| 255 |Unknown |Tipo de dispositivo desconhecido |
+| 255 |Desconhecido |Tipo de dispositivo desconhecido |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
@@ -93,7 +93,7 @@ A entidade **ClientRegistrationStateTypes** representa o tipo de registo referen
 | 5 |ApprovalPending |Aprovação pendente |
 | 6 |ResetCert |Repor Certificado |
 | 7 |NotRegisteredPendingEnrollment |Não registado, inscrição pendente |
-| 8 |Unknown |Estado desconhecido |
+| 8 |Desconhecido |Estado desconhecido |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
@@ -109,7 +109,7 @@ A entidade **EnrollmentTypes** indica como um dispositivo foi inscrito. O tipo d
 
 | enrollmentTypeID  | Nome | Descrição |
 |---------|------------|--------|
-| 0 |Unknown |Não foi recolhido o tipo de inscrição |
+| 0 |Desconhecido |Não foi recolhido o tipo de inscrição |
 | 1 |UserEnrollment |Inscrição iniciada pelo utilizador |
 | 2 |DeviceEnrollment |Inscrição de dispositivo com perfil sem utilizador |
 | 3 |DeviceEnrollmentWithUDA |Inscrição de dispositivo com perfil UDA. |
@@ -144,11 +144,11 @@ A entidade **MdmStatuses** indica o estado de conformidade do dispositivo.
 
 | MdmStatusID  | ComplianceStatus | Descrição |
 |---------|------------|--------|
-| 0 |Unknown |O estado de conformidade do dispositivo é desconhecido. |
+| 0 |Desconhecido |O estado de conformidade do dispositivo é desconhecido. |
 | 1 |Compatível |O dispositivo está em conformidade. |
 | 2 |Não conforme |O dispositivo não está em conformidade. |
 | 3 |Conflito |A conformidade do dispositivo resultou num conflito. |
-| 4 |Error |Ocorreu um erro ao ler o estado de conformidade do dispositivo. |
+| 4 |Erro |Ocorreu um erro ao ler o estado de conformidade do dispositivo. |
 
 
 ## <a name="managementstates"></a>ManagementStates
@@ -170,7 +170,7 @@ A entidade **ManagementStates** fornece detalhes sobre o estado do dispositivo. 
 | 2 |RetireFailed | O comando de extinção no dispositivo falhou. |
 | 3 |WipePending | Existe um comando para apagar pendente para o dispositivo. |
 | 4 |WipeFailed | O comando para apagar falhou no dispositivo. |
-| 5 |Unhealthy | Mau estado de funcionamento. |
+| 5 |Estado de funcionamento incorreto | Mau estado de funcionamento. |
 | 6 |DeletePending | Existe um comando de eliminação pendente para o dispositivo. |
 | 7 |RetireIssued | Foi emitido um comando de extinção para o dispositivo. |
 | 8 |WipeIssued | Foi emitido um comando para apagar. |
@@ -192,7 +192,7 @@ A entidade **WorkPlaceJoinStateTypes** representa o estado de Associação à Á
 
 | workPlaceJoinStateID  | Nome | Descrição |
 |---------|------------|--------|
-| 0 |Unknown |Se um dispositivo não estiver associado à área de trabalho, o estado será Unknown |
+| 0 |Desconhecido |Se um dispositivo não estiver associado à área de trabalho, o estado será Unknown |
 | 1 |Succeeded |Associado à área de trabalho com êxito |
 | 2 |FailureToGetScepMetadata |Falha ao obter os metadados SCEP |
 | 3 |FailureToGetScepChallenge |Falha ao obter o desafio SCEP |
@@ -258,13 +258,13 @@ A entidade **Devices** lista todos os dispositivos inscritos sob gestão e as pr
 | EasID | O ID EAS do dispositivo, se o dispositivo for gerido pelo Exchange Active Sync. |
 | GraphDeviceIsManaged | O último estado de gestão que o Intune definiu no Azure AD. |
 | GraphDeviceIsCompliant | O último estado de conformidade que o Intune definiu no Azure AD. |
-| SerialNumber | Número de série do dispositivo, se disponível. |
+| serialNumber | Número de série do dispositivo, se disponível. |
 | EnrolledByUser | O ID do utilizador que inscreveu este dispositivo e que referencia a coluna UserId na tabela User. |
 | RowLastModifiedDateTimeUTC | A última vez em que este registo foi modificado. |
 | ProcessorArchitecture | Arquitetura do processador. |
 | DeviceAction | A última ação de dispositivo emitida, Ignorar por enquanto. |
-| Manufacturer | Fabricante do dispositivo. |
-| Model | Modelo do dispositivo. |
+| Fabricante | Fabricante do dispositivo. |
+| Modelo | Modelo do dispositivo. |
 | LastPolicyUpdateUtc | Última vez que a política foi atualizada no dispositivo. |
 | LastExchangeStatusUtc | A última vez que o dispositivo foi sincronizado com o Exchange. |
 | IsDeleted | Definido como True se o dispositivo já não for gerido pelo Intune. Mantém o último estado conhecido. |
@@ -304,19 +304,19 @@ A entidade **DevicePropertyHistory** tem as mesmas propriedades que a tabela de 
 | EasID |O ID EAS do dispositivo, se o dispositivo for gerido pelo Exchange Active Sync. |
 | GraphDeviceIsManaged |O último estado de gestão que o Intune definiu no Azure AD. |
 | GraphDeviceIsCompliant |O último estado de conformidade que o Intune definiu no Azure AD. |
-| SerialNumber |Número de série do dispositivo, se disponível. |
+| serialNumber |Número de série do dispositivo, se disponível. |
 | EnrolledByUser |O ID do utilizador que inscreveu este dispositivo e que referencia a coluna UserId na tabela User. |
 | RowLastModifiedDateTimeUTC |A última vez em que este registo foi modificado. |
 | ProcessorArchitecture |Arquitetura do processador. |
 | DeviceAction |A última ação de dispositivo emitida, Ignorar por enquanto. |
-| Manufacturer |Fabricante do dispositivo. |
-| Model |Modelo do dispositivo. |
+| Fabricante |Fabricante do dispositivo. |
+| Modelo |Modelo do dispositivo. |
 | LastPolicyUpdateUtc |Última vez que a política foi atualizada no dispositivo. |
 | LastExchangeStatusUtc |A última vez que o dispositivo foi sincronizado com o Exchange. |
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos dados de inventário de dispositivos geridos por MDM nos últimos 90 dias. A coluna DateKey indica o dia da linha. Algumas propriedades poderão não ser aplicáveis ou estar preenchidas para todos os dispositivos, pelo que deverá consultar esta página para obter detalhes. Para mais informações, consulte [Compreender os dispositivos com inventário no Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos dados de inventário de dispositivos geridos por MDM nos últimos 90 dias. A coluna DateKey indica o dia da linha. Algumas propriedades poderão não ser aplicáveis ou estar preenchidas para todos os dispositivos, pelo que deverá consultar esta página para obter detalhes. Para mais informações, consulte [Compreender os dispositivos com inventário no Microsoft Intune](device-inventory.md).
 
 | Propriedade  | Descrição |
 |---------|------------|
@@ -342,7 +342,7 @@ A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos da
 | OSManufacturer |Fabricante de SO. |
 | OSProductSuite |Pacote de Produto de SO. |
 | OSProductType |Tipo de Produto de SO. |
-| Locale |Região de SO. |
+| Região |Região de SO. |
 | PhysicalMemoryCapacity |Capacidade de Memória Física (em bytes). |
 | PhysicalMemoryRemovable |Memória Amovível Física (em bytes). |
 | SystemEnclosureChassisTypesInnerText |Define o tipo de chassis de sistema para este dispositivo. Os números indicam os seguintes valores:  <br>0 ou vazio = Desconhecido   <br>1 = É um Computador   <br>2 = É um Portátil  <br>3 = É uma Estação de Trabalho  <br>4 = É um Servidor Empresarial  <br>100 = É um Telemóvel  <br>101 = É um Tablet  <br>102/103 = Outro tipo desconhecido de Dispositivo Móvel |
@@ -354,7 +354,7 @@ A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos da
 | CertExpiry |Data de expiração do certificado de gestão MDM. |
 | DeviceClientAgentVersion |Versão do Agente do Cliente. |
 | DeviceClientID |ID de Cliente do Dispositivo. |
-| SerialNumber |Número de Série. |
+| serialNumber |Número de Série. |
 | DeviceManufacturer |Fabricante do Dispositivo. |
 | DMVersion |Versão de DM. |
 | FirmwareVersion |Versão de Firmware. |
@@ -362,7 +362,7 @@ A entidade **MdmDeviceInventoryHistories** contém instantâneos diários dos da
 | PlatformType |Tipo de Plataforma. |
 | ProcessorLevel |Nível do Processador. |
 | ProcessorRevision |Revisão do Processador. |
-| Product |Produto. |
+| Produto |Produto. |
 | ProductVersion |Versão do Produto. |
 | OEM |Fabricante de Equipamento Original. |
 | DeviceBuildVersion |Versão da Compilação do Dispositivo. |

@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183048"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112379"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conhecidos no Microsoft Intune
 
@@ -29,9 +29,9 @@ ms.locfileid: "52183048"
 
 Utilize este artigo para saber mais sobre os problemas conhecidos no Microsoft Intune.
 
-Se quiser comunicar um erro que não se encontra listado aqui, [abra um pedido de suporte](get-support.md).
+Se quiser relatar um bug que não está listado aqui, [abra um pedido de suporte](get-support.md).
 
-Se quiser pedir uma nova funcionalidade para o Intune, considere o preenchimento de um relatório no site do [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Se quiser pedir uma nova funcionalidade do Intune, considere o arquivamento uma [Microsoft Intune Feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) relatório.
 
 ## <a name="migration"></a>Migração
 
@@ -44,13 +44,13 @@ As políticas de conformidade que criou no portal clássico do Azure serão pret
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>As funcionalidades do Cliente de PC legadas do Intune só estão disponíveis na consola do Silverlight
 
-A capacidade para gerir o Windows 10 no Intune no portal do Azure está disponível através da inscrição na MDM do Windows. Para obter mais informações, veja [Intune na consola do Azure e Cliente de PC do Intune legado](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+A capacidade para gerir o Windows 10 no Intune no portal do Azure está disponível através da inscrição na MDM do Windows. Para obter mais informações, veja [Intune na consola do Azure e Cliente de PC do Intune legado](intune-legacy-pc-client.md).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Os grupos criados pelo Intune durante a migração podem afetar o funcionamento de outros produtos da Microsoft
 
 Quando migrar do Intune para o portal do Azure, poderá ver um novo grupo com o nome **Todos os Utilizadores – b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contém todos os utilizadores do Azure Active Directory, não apenas os utilizadores licenciados do Intune. Esta utilização pode provocar problemas com outros produtos Microsoft se estiver à espera que alguns dos utilizadores existentes ou novos não sejam membros de nenhum dos grupos.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>Os painéis de estado de políticas migradas não funcionam
+### <a name="status-blades-for-migrated-policies-dont-work"></a>Os painéis de estado de políticas migradas não funcionam
 
 Não pode ver as informações de estado de políticas que foram migradas a partir do portal clássico do Azure no portal do Azure. No entanto, pode continuar a ver relatórios dessas políticas no portal clássico. Para ver as informações de estado de políticas de configuração migradas, recrie as mesmas no portal do Azure.
 
@@ -58,11 +58,11 @@ Não pode ver as informações de estado de políticas que foram migradas a part
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Múltiplos pedidos de instalação de aplicações para determinadas aplicações VPP
-Poderá ver múltiplos pedidos de instalação para determinadas aplicações VPP que já estão instaladas nos dispositivos dos utilizadores finais. Este problema ocorre se tiver a opção **Atualizações automáticas da aplicação** definida como **Ativado** para o token VPP que carregou para o Intune no portal do Azure.    
+Poderá ver várias instalação da aplicação pede-lhe para determinadas aplicações VPP que já são instaladas em dispositivos de utilizador final. Este problema ocorre se tiver a opção **Atualizações automáticas da aplicação** definida como **Ativado** para o token VPP que carregou para o Intune no portal do Azure.    
 
-Para resolver este problema, pode desativar a opção **Atualizações automáticas da aplicação** para o token VPP. Para tal, abra o Microsoft Intune no portal do Azure. No Intune, selecione **Aplicações do cliente** > **Tokens iOS VPP**. Em seguida, selecione o Token VPP que implementou a aplicação afetada e selecione **Editar** > **Atualizações automáticas da aplicação** > **Desativado** > **Guardar**. Em alternativa, pode parar a implementação da aplicação afetada como uma aplicação VPP, o que irá parar a apresentação dos pedidos.    
+Para contornar este problema, pode desativar a **atualizações automáticas da aplicação** opção para o token VPP. Para tal, abra o Microsoft Intune no portal do Azure. No Intune, selecione **Aplicações do cliente** > **Tokens iOS VPP**. Em seguida, selecione o Token VPP que implementou a aplicação afetada e selecione **Editar** > **Atualizações automáticas da aplicação** > **Desativado** > **Guardar**. Em alternativa, pode parar a implementação da aplicação afetada como uma aplicação VPP, o que irá parar a apresentação dos pedidos.    
 
-Este é um problema conhecido na versão atual. Iremos disponibilizar futuramente uma correção para resolver este problema. Quando a correção for implementada, os seus utilizadores deixarão de ver múltiplos pedidos de instalação de aplicações.
+Este é um problema conhecido na versão atual. Temos uma futura correção que irá resolver este problema. Quando a correção for implementada, os seus utilizadores deixarão de ver múltiplos pedidos de instalação de aplicações.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>As aplicações para iOS compradas em volume só estão disponíveis no idioma predefinido do inquilino do Intune
 As aplicações para iOS compradas em volume são apresentadas e só podem ser atribuídas para os mesmos indicativos de país que a sua conta do Intune. O Intune só sincroniza aplicações da mesma região do iTunes que o indicativo de país da conta do inquilino do Intune. Por exemplo, se comprar uma aplicação que só está disponível numa loja dos E.U.A., mas a sua conta estiver em alemão, o Intune não mostra essa aplicação.

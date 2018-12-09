@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187009"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112413"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar a inscrição para dispositivos macOS no Intune
 
@@ -37,7 +37,7 @@ Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os segui
 
 - [Configurar domínios](custom-domain-name-configure.md)
 - [Definir a Autoridade de MDM](mdm-authority-set.md)
-- [Criar grupos](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Criar grupos](groups-add.md)
 - [Configurar o Portal da Empresa](company-portal-app.md)
 - Atribuir licenças de utilizador no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obter um certificado push de MDM da Apple](apple-mdm-push-certificate-get.md)

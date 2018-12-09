@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1693c61b43b7470bc70dad3bc08ca040fce1d102
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032559"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112991"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -402,7 +402,7 @@ O acesso condicional é utilizado para permitir que apenas os dispositivos em co
 
 Para acesso online, decida que plataformas e grupos de utilizadores serão filtrados por políticas de acesso condicional. Além disso, determine se é necessário instalar ou configurar o conector de serviços do Intune para o Exchange Online ou Exchange no local. Saiba como instalar e configurar os conectores de serviços do Intune: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange no local](exchange-connector-install.md)
 

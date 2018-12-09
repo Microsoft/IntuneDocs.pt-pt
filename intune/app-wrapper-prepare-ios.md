@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182113"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112883"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182113"
 
 Utilize a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS para ativar as políticas de proteção da aplicação Intune para aplicações iOS internas sem alterar o código da aplicação em si.
 
-A ferramenta consiste numa aplicação da linha de comandos do macOS que cria um encapsulamento em torno de uma aplicação. Depois de uma aplicação ser processada, pode alterar a funcionalidade da aplicação ao implementar [políticas de proteção de aplicações](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) à mesma.
+A ferramenta consiste numa aplicação da linha de comandos do macOS que cria um encapsulamento em torno de uma aplicação. Depois de uma aplicação ser processada, pode alterar a funcionalidade da aplicação ao implementar [políticas de proteção de aplicações](app-protection-policies.md) à mesma.
 
 Para transferir a ferramenta, veja [Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) no GitHub.
 
@@ -127,7 +127,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
     ![Pedir um certificado a partir de uma Autoridade de Certificação no Acesso a Porta-chaves](./media/iOS-signing-cert-6.png)
 
-12. Regresse ao site de programador da Apple. Clique em **Continuar**. Em seguida, carregue o ficheiro CSR.
+12. Regresse ao site de programador da Apple. Clique em **Continue** (Continuar). Em seguida, carregue o ficheiro CSR.
 
 13. A Apple gera o certificado de assinatura. Transfira e guarde-o numa localização fácil de memorizar no seu computador macOS.
 
@@ -157,7 +157,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
    ![Selecionar o perfil de aprovisionamento interno](./media/iOS-provisioning-profile-1.png)
 
-5. Clique em **Continuar**. Certifique-se de que associa o certificado de assinatura gerado anteriormente ao perfil de aprovisionamento.
+5. Clique em **Continue** (Continuar). Certifique-se de que associa o certificado de assinatura gerado anteriormente ao perfil de aprovisionamento.
 
 6. Siga os passos para transferir o perfil (com a extensão .mobileprovision) para o seu computador macOS.
 
@@ -220,9 +220,9 @@ Na pasta IntuneMAMPackager/Contents/MacO, abra `Parameters.plist` (um modelo pli
 | Caminho de Pacote de Aplicação de Saída |vazio| Mesmo que -o|
 | Caminho de Perfil de Aprovisionamento |vazio| Mesmo que -p|
 | Hash de Certificado SHA-1 |vazio| Mesmo que -c|
-| Verbose Ativada |falso| Mesmo que -v|
-| Remover Elegibilidades em Falta | falso| Mesmo que -c|
-| Impedir Compilação Predefinida |falso | Equivalente a utilizar -b sem argumentos|
+| Verbose Ativada |false| Mesmo que -v|
+| Remover Elegibilidades em Falta | false| Mesmo que -c|
+| Impedir Compilação Predefinida |false | Equivalente a utilizar -b sem argumentos|
 |Substituição de Cadeia da Compilação | vazio| A CFBundleVersion personalizada da aplicação de saída encapsulada |
 |Caminhos de Perfil de Aprovisionamento de Extensão | vazio| Uma matriz dos perfis de aprovisionamento de extensão da aplicação.
 
@@ -439,5 +439,5 @@ Utilize os seguintes passos para obter registos para as aplicações encapsulada
 
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](app-sdk.md)

@@ -28,6 +28,6 @@
 > [!NOTE]
 > O Intune não pode servir para gerir os sistemas operativos Windows Server. SKU de raiz não suporta todas as funcionalidades do Intune
 
-Os clientes com o Enterprise Management + Security (EMS) também podem [utilizar o Azure Active Directory (Azure AD) para registar dispositivos com o Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
+Os clientes com Enterprise Management + Security (EMS) também podem utilizar [do Azure Active Directory (Azure AD) para registar dispositivos Windows 10](/intune/windows-enroll.md).
 
 

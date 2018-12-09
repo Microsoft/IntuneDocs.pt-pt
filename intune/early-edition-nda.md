@@ -1,6 +1,6 @@
 ---
-title: Edição antecipada
-titlesuffix: Microsoft Intune
+title: Edição antecipada – Microsoft Intune
+titlesuffix: ''
 description: Edição antecipada do Microsoft Intune
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ddd1af82c700b0398ca7250f577c712e4a428788
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032473"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112838"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A edição antecipada do Microsoft Intune – Dezembro de 2018
 

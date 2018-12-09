@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cf930b7625d474d66abef0d65efb009474bf79b0
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032185"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112430"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -35,7 +35,7 @@ Não precisa do código de origem para utilizar a ferramenta, mas precisa das cr
 
 A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (consulte a tabela de comparação de funcionalidades seguinte).
 
-Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicações para as políticas de proteção de aplicações de dispositivos que não estão inscritos no Intune, veja [Proteger aplicações de linha de negócio e dados em dispositivos não inscritos no Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
+Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicações para as políticas de proteção de aplicações de dispositivos que não estão inscritos no Intune, veja [Proteger aplicações de linha de negócio e dados em dispositivos não inscritos no Microsoft Intune](apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para utilizar a Ferramenta de Encapsulamento de Aplicações
 * A aplicação não possui funcionalidades de proteção de dados incorporadas
@@ -117,4 +117,4 @@ Para saber mais sobre as políticas de proteção de aplicações e o Intune, ve
 
   - [Ferramenta de encapsulamento de aplicações para Android](app-wrapper-prepare-android.md)</br>
   - [Ferramenta de encapsulamento de aplicações para iOS](app-wrapper-prepare-ios.md)</br>
-  - [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](app-sdk.md)

@@ -1,5 +1,5 @@
 ---
-title: Configurar definições de Wi-Fi para dispositivos Android Enterprise e de local público
+title: Definições de Wi-Fi para dispositivos Android Enterprise e de local público
 titleSuffix: Microsoft Intune
 description: Crie ou adicione um perfil de configuração de dispositivos Wi-Fi para o Quiosque do Android e o Android Enterprise. Veja as diferentes definições, incluindo a adição de certificados, a escolha de um tipo de EAP e a seleção de um método de autenticação no Microsoft Intune. Para dispositivos de quiosque, introduza também a Chave pré-partilhada da sua rede.
 keywords: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 89a89312bde2c69f4301e12416b9dc8ed57a492e
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032151"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112362"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Adicionar definições de Wi-Fi para dispositivos com o quiosque Android ou Android Enterprise no Microsoft Intune
 

@@ -1,7 +1,7 @@
 ---
-title: Inscrição para híbrida do Active Directory associados a um dispositivos com o Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Utilizar o Windows Autopilot para inscrever dispositivos híbridos associados ao Azure Active Directory no Intune.
+title: Inscrição para híbrida do Active Directory associados a um dispositivos - Windows Autopilot
+titleSuffix: ''
+description: Utilize Windows Autopilot híbrida do Active Directory de inscrever os dispositivos associados no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ed404d97b2fe0ccf38a5d3946819fd8225127581
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032321"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112447"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementar dispositivos híbridos associados ao Azure Active Directory com o Intune e o Windows Autopilot (Pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar dispositivos híbridos associados ao Azure Active Directory. Para o fazer, siga os passos abaixo.

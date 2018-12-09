@@ -1,6 +1,6 @@
 ---
-title: Acesso condicional com o Microsoft Intune
-titlesuffix: ''
+title: Cenários de acesso condicional
+titlesuffix: Microsoft Intune
 description: Saiba como o acesso condicional do Intune é geralmente utilizado para acesso condicional baseado no dispositivo e baseado na aplicação.
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187672"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112481"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
@@ -45,7 +45,7 @@ As políticas de acesso condicional com base no dispositivo para o Exchange Onli
 
 -   Saiba mais sobre [a conformidade de dispositivos do Intune](device-compliance.md).
 
--   Saiba mais sobre a [proteção de e-mail, do Office 365 e de outros serviços que utilizam o acesso condicional com o Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   Saiba mais sobre a [proteção de e-mail, do Office 365 e de outros serviços que utilizam o acesso condicional com o Intune](app-based-conditional-access-intune.md).
 
 > [!NOTE]
 > Nos dispositivos Android, ao ativar o Acesso Com Base no Dispositivo para o Sharepoint Online, os utilizadores têm de ativar a opção **Ativar o Acesso ao Browser** no dispositivo inscrito da seguinte forma:
@@ -125,7 +125,7 @@ Quando os dispositivos móveis têm o agente de Defesa Contra Ameaças para Disp
 
 A integração da defesa contra ameaças para dispositivos móveis com o Intune constitui um fator importante nas decisões de acesso condicional com base no risco do dispositivo.
 
--   Saiba mais sobre a [defesa contra ameaças para dispositivos móveis do Intune](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense).
+-   Saiba mais sobre a [defesa contra ameaças para dispositivos móveis do Intune](mobile-threat-defense.md).
 
 ### <a name="conditional-access-for-windows-pcs"></a>Acesso condicional para PCs Windows
 

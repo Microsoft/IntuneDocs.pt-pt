@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188080"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112549"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -60,7 +60,7 @@ Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo,
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-|Tipo|Nome do anfitrião|Aponta para|TTL|
+|Type|Nome do anfitrião|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 |CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 hora|
@@ -73,7 +73,7 @@ Se a empresa utilizar mais do que um sufixo UPN, tem de criar um CNAME para cada
 
 Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
-|Tipo|Nome do anfitrião|Aponta para|TTL|  
+|Type|Nome do anfitrião|Aponta para|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
@@ -102,4 +102,4 @@ Para obter mais informações sobre as tarefas do utilizador final, veja [Recurs
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-- [Considerações sobre quando gerir dispositivos Windows com o Intune no Azure](/intune-classic/deploy-use/intune-on-azure).
+- [Considerações sobre quando gerir dispositivos Windows com o Intune no Azure](intune-legacy-pc-client.md).
