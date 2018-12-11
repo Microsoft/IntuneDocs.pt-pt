@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180239"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167999"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Ativar o Windows Defender ATP com acesso condicional no Intune
 
 A Proteção Avançada Contra Ameaças (ATP) do Windows Defender e o Microsoft Intune funcionam em conjunto para ajudar a evitar falhas de segurança e ajudar a limitar o impacto de violações dentro de uma organização.
 
-Esta funcionalidade aplica-se a: dispositivos Windows 10
+Esta funcionalidade aplica-se a: Dispositivos com o Windows 10
 
 Por exemplo, alguém envia um anexo Word com código malicioso incorporado para um utilizador na sua organização. O utilizador abre o anexo e ativa o conteúdo. É iniciado um ataque de privilégios elevados e o atacante tem direitos de administrador no dispositivo da vítima a partir de um computador remoto. O atacante, em seguida, acede remotamente aos outros dispositivos do utilizador.
 
@@ -89,13 +89,13 @@ Depois de carregar um dispositivo através do pacote de configuração, não pre
 5. Em **Tipo de perfil**, selecione **Windows Defender ATP (Windows 10 Desktop)**.
 6. Configure as definições:
 
-  - **Tipo de pacote de configuração do cliente do Windows Defender ATP**: selecione **Carregar** para adicionar o pacote de configuração ao perfil. Selecione **Descarregar** para remover o pacote de configuração do perfil.
+  - **Tipo de pacote de configuração de cliente do Windows Defender ATP**: Selecione **carregar** para adicionar o pacote de configuração para o perfil. Selecione **Descarregar** para remover o pacote de configuração do perfil.
   
     > [!NOTE] 
-    > Se for criada adequadamente uma ligação com o Windows Defender ATP, o Intune irá **carregar** automaticamente o perfil de configuração para si.
+    > Se criada adequadamente uma ligação com o Windows Defender ATP, o Intune irá automaticamente **carregar** o perfil de configuração para e o **o tipo de pacote de configuração do Windows Defender ATP cliente** definição não está disponível.
   
-  - **Partilha de amostras para todos os ficheiros**: **Ativar** permite que as amostras sejam recolhidas e partilhadas com o Windows Defender ATP. Por exemplo, se vir um ficheiro suspeito, poderá submetê-lo para o Windows Defender ATP para uma análise detalhada. **Não configurado** não partilha nenhuma amostra com o Windows Defender ATP.
-  - **Acelerar a frequência do relatório de telemetria**: para dispositivos que estão em risco elevado, **ative** esta definição para que estes comuniquem a telemetria para o serviço do Windows Defender ATP com mais frequência.
+  - **Partilha de amostrar para todos os ficheiros**: **Ativar** permite que as amostras sejam recolhidas e partilhadas com o Windows Defender ATP. Por exemplo, se vir um ficheiro suspeito, poderá submetê-lo para o Windows Defender ATP para uma análise detalhada. **Não configurado** não partilha nenhuma amostra com o Windows Defender ATP.
+  - **Acelerar a frequência do relatório de telemetria**: Para dispositivos que estão em risco elevado, **ativar** esta definição para que ele comuniquem a telemetria para o serviço do Windows Defender ATP com mais frequência.
 
     O artigo [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) (Carregar computadores com o Windows 10 através do System Center Configuration Manager) inclui mais detalhes sobre estas definições do Windows Defender ATP.
 
@@ -110,10 +110,10 @@ A política de conformidade determina um nível de risco aceitável num disposit
 4. Em **Plataforma**, selecione **Windows 10 e posterior**.
 5. Nas definições do **Windows Defender ATP**, defina a opção **Exigir que o dispositivo esteja na classificação de risco de máquina ou inferior** para o seu nível favorito:
 
-  - **Seguro**: este é o nível mais seguro. O dispositivo não poderá aceder aos recursos da empresa se contiver ameaças. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
-  - **Baixo**: o dispositivo estará em conformidade se só existirem ameaças de nível baixo. Os dispositivos com níveis de ameaça média ou alta não estão conformes.
-  - **Médio**: o dispositivo estará conforme se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
-  - **Elevado**: este nível é o menos seguro e permite todos os níveis de ameaça. Como tal, os dispositivos com níveis de ameaça altos, médios ou baixos são considerados conformes.
+  - **Limpar**: Este é o nível mais seguro. O dispositivo não poderá aceder aos recursos da empresa se contiver ameaças. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
+  - **Baixa**: O dispositivo está em conformidade se só existirem ameaças de nível baixo. Os dispositivos com níveis de ameaça média ou alta não estão conformes.
+  - **Médio**: O dispositivo está em conformidade se as ameaças encontradas no dispositivo forem baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
+  - **Alta**: Este nível é o nível menos seguro e permite todos os níveis de ameaça. Como tal, os dispositivos com níveis de ameaça altos, médios ou baixos são considerados conformes.
 
 6. Selecione **OK** e **Criar** para guardar as alterações (e criar o perfil).
 

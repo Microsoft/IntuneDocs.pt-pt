@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190409"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168033"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -34,15 +34,15 @@ O SDK da Aplicação do Microsoft Intune para Android permite-lhe incorporar as 
 
 O SDK da Aplicação do Intune é constituído pelos seguintes ficheiros:
 
-* **Microsoft.Intune.MAM.SDK.aar**: os componentes do SDK, com exceção dos ficheiros JAR da Biblioteca de Suporte.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: as classes necessárias para ativar a MAM nas aplicações que utilizam a biblioteca de suporte v4 do Android.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: as classes necessárias para ativar a MAM nas aplicações que utilizam a biblioteca de suporte v7 do Android.
-* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: as classes necessárias para ativar a MAM nas aplicações que utilizam a biblioteca de suporte v17 do Android. 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: as classes necessárias para ativar a MAM nas aplicações que utilizam classes da biblioteca de suporte do Android no pacote `android.support.text`.
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: este jar contém stubs para classes de sistemas Android que só existem em novos dispositivos, mas que são referenciadas por métodos em MAMActivity. Os dispositivos mais recentes ignorarão estas classes de stub. Este jar só é necessário se a sua aplicação fizer reflexão de classes que derivam de MAMActivity. A maioria das aplicações não precisa de o incluir. Se utilizar este jar, tem de ter cuidado para excluir todas as respetivas classes do ProGuard. Estarão todas no pacote de raiz "android"
-* **com.microsoft.Intune.mam.Build.JAR**: um plug-in do Gradle que [ajuda a integrar o SDK](#build-tooling).
-* **CHANGELOG.txt**: fornece um registo das alterações feitas em cada versão do SDK.
-* **THIRDPARTYNOTICES.TXT**: aviso de atribuição que reconhece código de terceiros e/ou OSS que será compilado na sua aplicação.
+* **AAR**: Os componentes do SDK, à exceção dos ficheiros JAR da biblioteca de suporte.
+* **Microsoft.Intune.MAM.SDK.Suppout.v4.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam o v4 do Android da biblioteca de suporte.
+* **Microsoft.Intune.MAM.SDK.Suppout.v7.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam v7 do Android da biblioteca de suporte.
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam o v17 Android da biblioteca de suporte. 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam o Android suportam classes de bibliotecas no `android.support.text` pacote.
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: Este jar contém stubs para classes de sistemas Android que estão presente apenas nos dispositivos mais recentes, mas que é referenciado por métodos em MAMActivity. Os dispositivos mais recentes ignorarão estas classes de stub. Este jar só é necessário se a sua aplicação fizer reflexão de classes que derivam de MAMActivity. A maioria das aplicações não precisa de o incluir. Se utilizar este jar, tem de ter cuidado para excluir todas as respetivas classes do ProGuard. Estarão todas no pacote de raiz "android"
+* **com.microsoft.Intune.mam.Build.JAR**: Um plug-in do Gradle que [ajuda a integrar o SDK](#build-tooling).
+* **Changelog**: Fornece um registo das alterações feitas em cada versão do SDK.
+* **THIRDPARTYNOTICES. TXT**:  Aviso de atribuição que reconhece código de OSS que será compilado na sua aplicação e/ou de terceiros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -451,7 +451,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` devolverá sempre uma Política de Aplicação não nula, mesmo se o dispositivo ou aplicação não estiver sob uma política de gestão do Intune.
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Exemplo: determinar se o PIN é necessário para a aplicação
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>Exemplo: Determinar se o PIN é necessário para a aplicação
 
 Se a aplicação tiver a sua própria experiência de utilizador de PIN, poderá querer desativá-la caso o administrador de TI tenha configurado o SDK para solicitar um PIN da aplicação. Para determinar se o administrador de TI implementou a política de PIN da aplicação para esta aplicação, para o utilizador final atual, chame o método seguinte:
 
@@ -460,7 +460,7 @@ Se a aplicação tiver a sua própria experiência de utilizador de PIN, poderá
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>Exemplo: determinar o utilizador primário do Intune
+### <a name="example-determine-the-primary-intune-user"></a>Exemplo: Determinar o utilizador primário do Intune
 
 Além das APIs expostas na AppPolicy, o nome principal do utilizador (**UPN**) também é exposto pela API `getPrimaryUser()` definida na interface `MAMUserInfo`. Para obter o UPN, chame o seguinte:
 
@@ -486,7 +486,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Exemplo: determinar se é permitido guardar no dispositivo ou armazenar na cloud
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Exemplo: Determinar se a guardar no dispositivo ou armazenamento na cloud é permitido
 
 Muitas aplicações implementam funcionalidades que permitem ao utilizador final guardar os ficheiros localmente ou num serviço de armazenamento na cloud. O SDK da Aplicação do Intune permite aos administradores de TI aplicar restrições de políticas que considerem mais adequadas na organização, para proteger contra fugas de dados.  Uma das políticas que o administrador de TI pode controlar é se o utilizador final pode guardar num arquivo de dados "pessoal" não gerido. Isto inclui guardar numa localização local, num cartão SD ou em serviços de cópias de segurança de terceiros.
 
@@ -571,13 +571,13 @@ public interface MAMNotificationReceiver {
 
 As notificações que se seguem são enviadas para a aplicação e algumas delas podem requerer a participação da aplicação:
 
-* **WIPE_USER_DATA**: esta notificação é enviada numa classe `MAMUserNotification`. Quando esta notificação é recebida, a aplicação deve eliminar todos os dados associados à identidade “empresarial” transmitida com a `MAMUserNotification`. Atualmente, esta notificação é enviada durante a anulação da inscrição do serviço APP-WE. Geralmente, o nome principal do utilizador é especificado durante o processo de inscrição. Caso se tenha registado para obter esta notificação, a sua aplicação tem de garantir que todos os dados do utilizador foram eliminados. Se não se registar para obtê-la, será aplicado o comportamento de eliminação seletiva predefinido.
+* **WIPE_USER_DATA**: Esta notificação é enviada num `MAMUserNotification` classe. Quando esta notificação é recebida, a aplicação deve eliminar todos os dados associados à identidade “empresarial” transmitida com a `MAMUserNotification`. Atualmente, esta notificação é enviada durante a anulação da inscrição do serviço APP-WE. Geralmente, o nome principal do utilizador é especificado durante o processo de inscrição. Caso se tenha registado para obter esta notificação, a sua aplicação tem de garantir que todos os dados do utilizador foram eliminados. Se não se registar para obtê-la, será aplicado o comportamento de eliminação seletiva predefinido.
 
-* **WIPE_USER_AUXILIARY_DATA**: as aplicações poderão registar-se para obter esta notificação se quiserem utilizar o SDK da Aplicação do Intune para executar o comportamento predefinido de eliminação seletiva, mas ainda quiserem remover alguns dados auxiliares quando ocorrer a eliminação. Esta notificação não está disponível para aplicações de identidade única, só será enviada para aplicações de várias entidades.
+* **WIPE_USER_AUXILIARY_DATA**: Aplicações podem registar-se para obter esta notificação se gostaria de ter o SDK da aplicação Intune para executar o comportamento de eliminação seletiva predefinida, mas ainda quiserem remover alguns dados auxiliares quando ocorrer a eliminação. Esta notificação não está disponível para aplicações de identidade única, só será enviada para aplicações de várias entidades.
 
-* **REFRESH_POLICY**: esta notificação é enviada numa `MAMUserNotification`. Quando esta notificação for recebida, qualquer política do Intune em cache tem de ser invalidada e atualizada. Processa-se pelo SDK, mas deve processar-se pela aplicação se a política for utilizada de qualquer forma persistente.
+* **REFRESH_POLICY**: Esta notificação é enviada num `MAMUserNotification`. Quando esta notificação for recebida, qualquer política do Intune em cache tem de ser invalidada e atualizada. Processa-se pelo SDK, mas deve processar-se pela aplicação se a política for utilizada de qualquer forma persistente.
 
-* **MANAGEMENT_REMOVED**: esta notificação é enviada numa `MAMUserNotification` e informa a aplicação que está prestes a deixar de ser gerida. Quando já não for gerida, a aplicação deixará de conseguir ler ficheiros encriptados, ler dados encriptados com MAMDataProtectionManager, interagir com a área de transferência encriptada ou participar no ecossistema de aplicações geridas.
+* **MANAGEMENT_REMOVED**: Esta notificação é enviada num `MAMUserNotification` e informa a aplicação que está prestes a se tornar não gerido. Quando já não for gerida, a aplicação deixará de conseguir ler ficheiros encriptados, ler dados encriptados com MAMDataProtectionManager, interagir com a área de transferência encriptada ou participar no ecossistema de aplicações geridas.
 
 
 > [!NOTE]
@@ -639,21 +639,9 @@ Não é necessário configurar outros valores de manifesto.
 
 Autoridade e NonBrokerRedirectURI podem ser especificados se for necessário.
 
-Registe a sua aplicação com o Azure Active Directory através dos seguintes passos.
-
-No portal do Azure:
-1.  Aceda ao painel **Azure Active Directory**.
-2.  Selecione a configuração **Registo de aplicações** para a aplicação.
-3.  Em **Definições** abaixo do cabeçalho **Acesso à API**, selecione **Permissão obrigatória**. 
-4.  Clique em **+ Adicionar**.
-5.  Clique em **Selecionar uma API**. 
-6.  Na caixa de pesquisa, introduza **Gestão de Aplicações Móveis da Microsoft**.
-7.  Selecione **Gestão de Aplicações Móveis da Microsoft** na lista de APIs e clique em Selecionar.
-8.  Selecione **Read and Write the User's App Management Data** (Ler e Escrever os Dados de Gestão de Aplicação do Utilizador).
-9.  Clique em **Concluído**.
-10. Clique em **Conceder permissões** e, em seguida, clique em **Sim**. 
-
-Veja [esta página](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) para obter informações sobre como registar uma aplicação com o Azure AD. 
+Registe a sua aplicação com o Azure AD através dos seguintes passos:
+* Veja [esta página](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) para obter informações sobre como registar uma aplicação com o Azure AD. 
+* Certifique-se de que são seguidos os passos para conceder as permissões de aplicações Android para o serviço de política (aplicação) de proteção de aplicações. Utilize as instruções no [introdução ao Guia do SDK do Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) em "permitir o acesso a aplicações ao serviço de proteção de aplicações do Intune (opcional)". 
 
 Veja também os requisitos para [Acesso Condicional](#conditional-access) abaixo.
 
@@ -856,7 +844,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 * O suporte para cloud soberanas requer que forneça a autoridade.
 #### <a name="registration"></a>Registo
 
-* Para sua comodidade, os métodos de registo são idempotentes, por exemplo, `registerAccountForMAM()` registará apenas uma conta e uma tentativa de inscrição da aplicação se a conta ainda não estiver registada e `unregisterAccountForMAM()` apenas anulará o registo de uma conta se esta estiver atualmente registada. As chamadas subsequentes efetuadas são não operativas, por isso, não há qualquer problema em chamar esses métodos mais do que uma vez. Além disso, a correspondência entre as chamadas para esses métodos e as notificações dos resultados não são garantidas: ou seja, se `registerAccountForMAM` for chamado para uma identidade que já esteja registada, a notificação poderá não ser enviada novamente para essa identidade. É possível que sejam enviadas notificações que não correspondem a qualquer chamada para esses métodos, dado que o SDK pode tentar periodicamente realizar inscrições em segundo plano. Adicionalmente, podem ser acionadas anulações de inscrições com a eliminação dos pedidos recebidos do serviço Intune.
+* Para sua comodidade, os métodos de registo são idempotentes, por exemplo, `registerAccountForMAM()` registará apenas uma conta e uma tentativa de inscrição da aplicação se a conta ainda não estiver registada e `unregisterAccountForMAM()` apenas anulará o registo de uma conta se esta estiver atualmente registada. As chamadas subsequentes efetuadas são não operativas, por isso, não há qualquer problema em chamar esses métodos mais do que uma vez. Além disso, a correspondência entre as chamadas para esses métodos e notificações dos resultados não são garantidos: Ou seja, se `registerAccountForMAM` denomina-se para uma identidade que já está registrada, a notificação poderá não ser enviada novamente para essa identidade. É possível que sejam enviadas notificações que não correspondem a qualquer chamada para esses métodos, dado que o SDK pode tentar periodicamente realizar inscrições em segundo plano. Adicionalmente, podem ser acionadas anulações de inscrições com a eliminação dos pedidos recebidos do serviço Intune.
 
 * Os métodos de registo podem ser chamados para um qualquer número de identidades diferentes, mas, atualmente, apenas uma conta de utilizador pode ser inscrita com êxito. Se estiverem registadas várias contas de utilizador licenciadas para o Intune e estas forem visadas pela política de proteção de aplicações na mesma altura ou próxima desta, não haverá qualquer garantia sobre qual será a escolhida.
 
@@ -928,7 +916,7 @@ O Intune permite-lhe utilizar todas as [funcionalidades da Cópia de Segurança 
 
 4. Assim, _**deve**_ copiar o que colocar em `android:fullBackupContent` para uma etiqueta de metadados com o nome `com.microsoft.intune.mam.FullBackupContent` no manifesto.
 
-    **Exemplo 1**: se pretender que a aplicação possua cópias de segurança completas sem exclusões, defina o atributo `android:fullBackupContent` e a etiqueta de metadados `com.microsoft.intune.mam.FullBackupContent` como **verdadeiro**:
+    **Exemplo 1**: Se pretender que a sua aplicação tenha cópias de segurança completas sem exclusões, defina o `android:fullBackupContent` atributo e `com.microsoft.intune.mam.FullBackupContent` etiqueta de metadados **verdadeiro**:
 
     ```xml
     android:fullBackupContent="true"
@@ -936,7 +924,7 @@ O Intune permite-lhe utilizar todas as [funcionalidades da Cópia de Segurança 
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **Exemplo 2**: se pretender que a aplicação utilize o seu BackupAgent personalizado e recuse a utilização de cópias de segurança automáticas em total conformidade com a política do Intune, terá de definir o atributo e a etiqueta de metadados como **falso**:
+    **Exemplo 2**: Se pretender que a sua aplicação para utilizar o seu BackupAgent personalizado e optar por completas, Intune política automática, em conformidade com as cópias de segurança, tem de definir a etiqueta de atributo e metadados como **false**:
 
     ```xml
     android:fullBackupContent="false"
@@ -944,7 +932,7 @@ O Intune permite-lhe utilizar todas as [funcionalidades da Cópia de Segurança 
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **Exemplo 3**: se quiser que a sua aplicação tenha cópias de segurança completas de acordo com as suas regras personalizadas definidas num ficheiro XML, defina o atributo e a etiqueta de metadados para o mesmo recurso XML:
+    **Exemplo 3**: Se pretender que a sua aplicação tenha cópias de segurança completas, de acordo com suas regras personalizadas definidas num arquivo XML, defina a etiqueta de atributo e metadados para o mesmo recurso XML:
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1126,7 +1114,7 @@ Além da capacidade da aplicação de definir a identidade, a identidade de um c
 
   Além disso, interação do utilizador com uma atividade poderá causar uma mudança de identidade implícita.
 
-  **Exemplo:** um utilizador que desista de um pedido de autorização durante `Resume` resultará numa mudança implícita para uma identidade vazia.
+  **Example:** Um utilizador que desista de um pedido de autorização durante `Resume` resultará numa mudança implícita para uma identidade vazia.
 
   Esta aplicação tem uma oportunidade de ter conhecimento destas alterações e, se necessário, a aplicação pode proibi-las. `MAMService` e `MAMContentProvider` expõem o seguinte método, que as subclasses podem substituir:
 
@@ -1560,7 +1548,7 @@ public interface MAMAppConfig {
 
 ### <a name="notification"></a>Notificação
 A configuração da aplicação adiciona um novo tipo de notificação:
-* **REFRESH_APP_CONFIG**: esta notificação é enviada numa `MAMUserNotification` e informa a aplicação de que os novos dados de configuração da aplicação estão disponíveis.
+* **REFRESH_APP_CONFIG**: Esta notificação é enviada num `MAMUserNotification` e informa a aplicação que estão disponíveis novos dados de configuração de aplicação.
 
 Para obter mais informações sobre as funcionalidades da Graph API, veja [Referência da Graph API](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
@@ -1628,9 +1616,8 @@ Estas instruções são específicas para todos os programadores de aplicações
 4. Ative a política de MAM exigida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > Esta ação força o utilizador a transferir o Portal da Empresa para o dispositivo e a concluir o fluxo da inscrição predefinida antes da utilização.
-
-> [!NOTE]
-    > Esta tem de ser a única integração da MAM-WE na aplicação. Irão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
+   >
+   > Esta tem de ser a única integração da MAM-WE na aplicação. Irão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
 
 3. Ative a política de MAM necessária ao colocar o valor seguinte no manifesto:
 ```xml
@@ -1651,9 +1638,9 @@ Para bases de códigos grandes executadas sem [ProGuard](http://proguard.sourcef
 
 ### <a name="policy-enforcement-limitations"></a>Limitações de imposição de políticas
 
-* **Captura de Ecrã**: o SDK não consegue impor um novo valor de definição de captura de ecrã em Atividades já ocorridas em Activity.onCreate, o que pode resultar num período de tempo em que a aplicação foi configurada para desativar capturas de ecrã, mas em que estas ainda podem ser criadas.
+* **Captura de ecrã**: O SDK não consegue impor um novo captura de ecrã a definição do valor em atividades tem já oncreate. o que pode resultar num período de tempo em que a aplicação foi configurada para desativar capturas de ecrã, mas em que estas ainda podem ser criadas.
 
-* **Utilizar Resoluções de Conteúdos**: a política do Intune de “transferência ou receção” pode bloquear ou bloquear parcialmente a utilização de uma resolução de conteúdos para aceder ao fornecedor de conteúdos noutra aplicação. Tal fará com que os métodos ContentResolver devolvam um valor nulo ou gerem um valor de falha (por exemplo, `openOutputStream` irá gerar `FileNotFoundException` em caso de bloqueio). A aplicação pode determinar se uma falha ao escrever dados através de uma resolução de conteúdos foi causada pela política (ou seria causada pela política) ao efetuar a chamada:
+* **Utilizar resoluções de conteúdos**: A política do Intune "transferência ou receção" pode bloquear ou bloquear parcialmente a utilização de uma resolução de conteúdos para aceder ao fornecedor de conteúdos noutra aplicação. Tal fará com que os métodos ContentResolver devolvam um valor nulo ou gerem um valor de falha (por exemplo, `openOutputStream` irá gerar `FileNotFoundException` em caso de bloqueio). A aplicação pode determinar se uma falha ao escrever dados através de uma resolução de conteúdos foi causada pela política (ou seria causada pela política) ao efetuar a chamada:
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```

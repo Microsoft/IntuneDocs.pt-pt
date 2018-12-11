@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: f6cb413e4cdd4c465254786e3f6abe1cf52db78e
-ms.sourcegitcommit: ea4dac7c6106f060698266a78a6693c10cd84a0b
+ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
+ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "53003594"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53200611"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-december-10-2018"></a>Semana de 10 de Dezembro de 2018
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Versão de atualização automática de Microsoft 4,50 necessária para dispositivos macOS <!-- 3503442 -->
+Para continuar a receber atualizações para o Portal da empresa e outros aplicativos do Office, dispositivos macOS geridos pelo Intune tem de atualizar para a atualização automática do Microsoft 4.5.0. Os utilizadores poderão já ter esta versão para seus aplicativos do Office.
+
+### <a name="intune-requires-macos-1012-or-later----2827778---"></a>O Intune necessita de macOS 10.12 ou posterior <!-- 2827778 -->
+O Intune requer agora macOS versão 10.12 ou posterior. Dispositivos com versões anteriores do macOS não é possível utilizar o Portal da empresa para inscrição no Intune. Para receber suporte e os novos recursos, os utilizadores tem de atualizar o dispositivo para macOS 10.12 ou posterior e atualize o Portal da empresa para a versão mais recente.
 
 ## <a name="week-of-november-26-2018"></a>Semana de 26 de Novembro de 2018
 
@@ -187,9 +195,9 @@ Os scripts do PowerShell no Intune podem ser direcionados a grupos de segurança
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Nova predefinição para "Tipo de palavra-passe necessária" para o Android e o Android Enterprise<!-- 2649963 -->
 Ao criar uma nova política de conformidade (**Intune** > **Conformidade do dispositivo** > **Políticas** > **Criar política** > **Android** ou **Android Enterprise** para a Plataforma > Segurança do Sistema), o valor predefinido para **Tipo de palavra-passe necessária** muda:
 
-De: Predefinição do dispositivo; Para: Pelo menos, numérico
+De: Predefinição do dispositivo para: Pelo menos numérica
 
-Aplicável ao: Android, Android Enterprise
+Aplica-se a: Android, Android Enterprise
 
 Para ver estas definições, aceda a [Android](compliance-policy-create-android.md) e [Android Enterprise](compliance-policy-create-android-for-work.md).
 
@@ -304,7 +312,7 @@ Os utilizadores finais poderão agora ativar ações de aplicação e de disposi
 #### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>Criar sufixos DNS em perfis de configuração VPN em dispositivos com o Windows 10<!-- 1333668 -->
 Quando criar um perfil de configuração de um dispositivo VPN (**Configuração do dispositivo** > **Perfis** > **Criar perfil** >  plataforma **Windows 10 e versões posteriores** > tipo de perfil **VPN**), terá de introduzir algumas definições de DNS. Com esta atualização, também pode introduzir múltiplos **sufixos DNS** no Intune. Quando utilizar sufixos DNS, pode procurar um recurso de rede através do respetivo nome abreviado, em vez do nome de domínio completamente qualificado (FQDN). Esta atualização também permite alterar a ordem dos sufixos DNS no Intune.
 O artigo [Definições de VPN do Windows 10](vpn-settings-windows-10.md#dns-settings) indica as definições de DNS atuais.
-Aplica-se a: dispositivos com o Windows 10
+Aplica-se a: Dispositivos com o Windows 10
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Suporte para VPN Sempre Ativada para perfis de trabalho do Android Enterprise <!-- 1333705 -->
 Nesta atualização, pode utilizar ligações VPN Sempre Ativada em dispositivos Android Enterprise com perfis de trabalho geridos. As ligações VPN Sempre Ativada permanecem ativadas ou voltam a ativar-se quando o utilizador desbloqueia o dispositivo, quando o dispositivo é reiniciado ou quando a rede sem fios é alterada. Também pode colocar a ligação em modo de "bloqueio". Este modo permite bloquear todo o tráfego de rede até à ativação da ligação de VPN.
@@ -345,7 +353,7 @@ Variáveis de certificado de dispositivo novas:
 
 O artigo [Criar um perfil de certificado SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile) indica as variáveis atuais durante a criação de um perfil de configuração SCEP. 
 
-Aplica-se a: Windows 10 e versões posteriores e ao iOS, com suporte para Wi-Fi
+Aplica-se a: Windows 10 e posterior e iOS, suportado para Wi-Fi
 
 #### <a name="remotely-lock-uncompliant-devices----2064495---"></a>Bloquear remotamente dispositivos que não estejam em conformidade <!-- 2064495 -->
 Quando um dispositivo não estiver em conformidade, poderá criar uma ação na política de conformidade que bloqueie remotamente o dispositivo. No Intune > **Conformidade do dispositivo**, crie uma nova política ou selecione uma política existente > **Propriedades**. Selecione **Ações para não conformidade** > **Adicionar** e selecione a opção para bloquear remotamente o dispositivo.
@@ -594,9 +602,9 @@ Uma versão atualizada do SDK da Aplicação do Intune para Android está dispon
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>Criar política de conformidade de dispositivos com as definições de firewall em dispositivos macOS <!-- 1497640 -->
 Quando criar uma nova política de conformidade do macOS (**Conformidade do dispositivo** > **Políticas** > **Criar política** > **Plataforma: macOS** > **Segurança do sistema**), estarão disponíveis algumas definições de **Firewall** novas: 
 
-- **Firewall**: configure a forma como as ligações de entrada são processadas no seu ambiente.
-- **Ligações de entrada**: **bloqueia** todas as ligações de entrada, exceto as ligações necessárias para serviços básicos de Internet, tal como o DHCP, Bonjour e IPSec. Esta definição também bloqueia todos os serviços de partilha.
-- **Modo invisível**: **ative** o modo invisível para impedir que o dispositivo responda aos pedidos de pesquisa. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas.
+- **Firewall**: Configurar ligações de entrada como são processadas no seu ambiente.
+- **Ligações de entrada**: **Bloco** todas as ligações recebidas, exceto as necessárias para serviços básicos de internet, como DHCP, Bonjour e IPSec. Esta definição também bloqueia todos os serviços de partilha.
+- **O modo invisível**: **Ativar** Modo Furtivo para impedir que o dispositivo responda aos pedidos de pesquisa. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas.
 
 Aplica-se a: macOS 10.12 e posterior
 
@@ -692,8 +700,8 @@ Enquanto administrador do Microsoft Intune, pode revogar todas as licenças de u
 #### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>Atualizações às mensagens de não conformidade na aplicação Portal da Empresa <!-- 1832222 -->
 Revimos as mensagens que são apresentadas aos utilizadores dos dispositivos quando um dispositivo não está em conformidade. As mensagens mantêm o significado original, mas foram atualizadas de modo a incluírem uma linguagem mais simples e menos termos técnicos. Também atualizámos as ligações para documentação e os passos de remediação.
 O seguinte exemplo do texto anterior e do novo demonstra as melhorias que verá nas mensagens:
-- **Anterior**: *Este dispositivo não contactou o serviço do Intune no período de tempo especificado exigido pelo seu administrador de TI. Para resolver este problema, abra a aplicação Portal da Empresa no seu dispositivo e clique no botão Verificar Conformidade.*
-- **Novo**: *O seu dispositivo não é verificado pela sua organização há algum tempo. Para voltar a estabelecer ligação, abra a aplicação Portal da Empresa no seu dispositivo e toque em Verificar Definições no mesmo.*
+- **Antes de**: *Este dispositivo não contacte o serviço do Intune no período de tempo especificado exigido pelo administrador de TI. Para resolver este problema, abra a aplicação Portal da Empresa no seu dispositivo e clique no botão Verificar Conformidade.*
+- **Depois de**: *O dispositivo não verificou com a sua organização em algum tempo. Para voltar a estabelecer ligação, abra a aplicação Portal da Empresa no seu dispositivo e toque em Verificar Definições no mesmo.*
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>Revogar licença de aplicação iOS obtida pelo VPP <!-- 1863797 -->
 Enquanto administrador, pode recuperar uma licença de aplicação iOS obtida pelo VPP atribuída a um utilizador ou dispositivo. Desinstalar uma aplicação iOS obtida pelo VPP também permitirá recuperar a licença da aplicação. Antes de desinstalar a aplicação, o utilizador do dispositivo tem de ser removido do grupo a que se destina a aplicação. Remover o utilizador ou o dispositivo do grupo evita ter de reinstalar a aplicação. Quando estes passos forem concluídos, pode optar por atribuir a licença da aplicação a outro utilizador ou dispositivo. Para obter mais informações sobre licenças de aplicação iOS obtida pelo VPP, veja [Gerir aplicações iOS compradas em volume no Microsoft Intune](vpp-apps-ios.md).
@@ -724,9 +732,9 @@ Em **Conformidade do dispositivo** > **Políticas** > selecione uma política > 
 - não aplicável Também é apresentada uma imagem que mostra a contagem de dispositivos de uma plataforma diferente. Por exemplo, se observar um perfil iOS, o novo mosaico mostra a contagem de dispositivos não iOS atribuídos a este perfil. Veja [Políticas de conformidade do dispositivo](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>A conformidade do dispositivo suporta soluções de antivírus de terceiros <!-- 2325484 -->
-Ao criar uma política de conformidade do dispositivo (**Conformidade do dispositivo** > **Políticas** > **Criar política** > **Plataforma: Windows 10 e posterior** > **Definições** > **Segurança do sistema**), estão disponíveis novas opções de **[Segurança do Dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
-- **Antivírus**: quando estiver definido como **Exigir**, pode verificar a conformidade com soluções de antivírus registadas com o Centro de Segurança do Windows, tal como Symantec e o Windows Defender. 
-- **AntiSpyware**: quando estiver definido como **Exigir**, pode verificar a conformidade com soluções de antispyware registadas com o Centro de Segurança do Windows, tal como Symantec e o Windows Defender. 
+Quando cria uma política de conformidade do dispositivo (**conformidade do dispositivo** > **políticas** > **criar política**  >  **Plataforma: Windows 10 e posterior** > **definições** > **segurança do sistema**), existem novos **[segurança de dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** opções: 
+- **Antivírus**: Quando definido como **requerem**, pode verificar a conformidade com as soluções antivírus que estão registadas com o Centro de segurança do Windows, por exemplo, Symantec e o Windows Defender. 
+- **AntiSpyware**: Quando definido como **requerem**, pode verificar a conformidade com as soluções de antispyware registados no Centro de segurança do Windows, por exemplo, Symantec e o Windows Defender. 
 
 Aplica-se a: Windows 10 e posterior 
 
@@ -833,7 +841,7 @@ Os perfis de implementação AutoPilot podem ser atribuídos a grupos do Azure 
 #### <a name="set-compliance-by-device-location----851881----"></a>Definir a conformidade pela localização do dispositivo <!-- 851881 ! -->
 Em algumas situações, pode ser útil restringir o acesso a recursos empresariais para uma localização específica, definida por uma ligação de rede. Pode criar uma política de conformidade (**Conformidade do dispositivo** > **Localizações**) baseada no endereço IP do dispositivo. Se o dispositivo estiver fora do intervalo de IP, não conseguirá aceder a recursos empresariais.
 
-Aplica-se a: dispositivos com o Android 6.0 e superior, com a aplicação Portal da Empresa atualizada
+Aplica-se a: Dispositivos com o Android 6.0 e superior, com a aplicação Portal da Empresa atualizada
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Impedir as experiências e aplicações de consumidor em dispositivos AutoPilot com o Windows 10 Enterprise RS4<!-- 1621980 -->
 Poderá impedir a instalação de experiências e aplicações de consumidor nos seus dispositivos AutoPilot com o Windows 10 Enterprise RS4. Para ver esta funcionalidade, aceda a **Intune** > **Configuração de dispositivos** > **Perfis** > **Criar perfil** > **Plataforma** = **Windows 10 ou posterior** > **Tipo de perfil** = **Restrições de dispositivos** > **Configurar** > **Windows Spotlight** > **Funcionalidades do consumidor**. 
@@ -847,7 +855,7 @@ Pode procurar por IMEI e números de série no painel Todos os dispositivos (e-m
 #### <a name="management-name-field-will-be-editable----1875989---"></a>O campo Nome de gestão passará a ser editável <!-- 1875989 -->
 Pode editar o campo Nome de gestão no painel **Propriedades** de um dispositivo. Para editar este campo, selecione **Dispositivos** > **Todos os dispositivos** > selecione o dispositivo > **Propriedades**. Pode utilizar o campo Nome de gestão para identificar um dispositivo de forma exclusiva.
 
-#### <a name="new-all-devices-filter-device-category----1878520---"></a>Novo filtro Todos os dispositivos: categoria de dispositivos <!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>Novo filtro de dispositivos todas as: Categoria de dispositivo <!-- 1878520 -->
 Pode filtrar a lista **Todos os dispositivos** por categoria de dispositivo. Para tal, selecione **Dispositivos** > **Todos os dispositivos** > **Filtro** > **Categoria de dispositivo**.
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>Utilizar o TeamViewer para partilhar ecrãs de dispositivos iOS e MacOS <!-- 1985547 -->
@@ -937,7 +945,7 @@ Com esta atualização, os administradores podem ativar a funcionalidade AlwaysO
 
 #### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Novas definições de impressora para perfis de educação <!-- 1308900 -->
 
-Para os perfis de educação, as novas definições estão disponíveis na categoria **Impressoras**: **Impressoras**, **Impressora predefinida**, **Adicionar novas impressoras**.
+Para os perfis de educação, estão disponíveis em novas definições do **impressoras** categoria: **Impressoras**, **impressora predefinida**, **adicionar novas impressoras**.
 
 #### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>Mostrar o ID do chamador no perfil pessoal – perfil de trabalho do Android Enterprise <!--1098984 -->
 Quando utiliza um perfil pessoal num dispositivo, os utilizadores finais podem não ver os detalhes do ID do autor da chamada de um contacto de trabalho. 
@@ -947,31 +955,31 @@ Com esta atualização, existe uma nova definição em **Android Enterprise** > 
 
 Quando a opção está ativada (não configurada), os detalhes do autor da chamada do contacto de trabalho são apresentados no perfil pessoal. Quando a opção está bloqueada, o número do autor da chamada do contacto de trabalho não é apresentado no perfil pessoal. 
 
-Aplica-se a: dispositivos de perfil de trabalho Android no Android OS v6.0 e mais recentes
+Aplica-se a: Dispositivos de perfil de trabalho Android em Android OS v6.0 e mais recentes
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>Novas definições do Windows Defender Credential Guard foram adicionadas às definições de proteção de ponto final <!--1102252 --><!--from 1802 and 1804-->
 
 Com esta atualização, o [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) (**Configuração do dispositivo** > **Perfis** > **Proteção de ponto final**) inclui as seguintes definições: 
 
-- **Windows Defender Credential Guard**: ativa o Credential Guard com a segurança baseada em virtualização. Se ativar esta funcionalidade, ajudará a proteger as credenciais no próximo reinício quando o **Nível de Segurança da Plataforma com o Arranque Seguro** e a **Segurança Baseada em Virtualização** estiverem ativados. As opções incluem:
-  - **Desativado**: se o Credential Guard tiver sido ativado anteriormente com a opção “**Ativada sem bloqueio**”, desativa o Credential Guard remotamente.
+- **Windows Defender Credential Guard**: Ativa o Credential Guard com segurança baseada em virtualização. Se ativar esta funcionalidade, ajudará a proteger as credenciais no próximo reinício quando o **Nível de Segurança da Plataforma com o Arranque Seguro** e a **Segurança Baseada em Virtualização** estiverem ativados. As opções incluem:
+  - **Desativado**: Se o Credential Guard anteriormente foi ativado com o **ativada sem bloqueio**"opção, em seguida, ele se desligar Credential Guard remotamente.
 
-  - **Ativada com bloqueio UEFI**: garante que o Credential Guard não pode ser desativado com a chave de registo ou através da utilização da Política de Grupo. Para desativar o Credential Guard depois de utilizar esta definição, tem de definir a Política de Grupo como “Desativada”. Em seguida, remova a funcionalidade de segurança de cada computador, com um utilizador fisicamente presente. Estes passos limpam a configuração persistente na UEFI. Enquanto a configuração da UEFI persistir, o Credential Guard estará ativado.
+  - **Ativada com bloqueio UEFI**: Garante que o Credential Guard não pode ser desativado através de uma chave de registro ou usando a diretiva de grupo. Para desativar o Credential Guard depois de utilizar esta definição, tem de definir a Política de Grupo como “Desativada”. Em seguida, remova a funcionalidade de segurança de cada computador, com um utilizador fisicamente presente. Estes passos limpam a configuração persistente na UEFI. Enquanto a configuração da UEFI persistir, o Credential Guard estará ativado.
 
-  - **Ativada sem bloqueio**: permite que o Credential Guard seja desativado remotamente através da utilização da Política de Grupo. Os dispositivos que utilizam esta definição têm de ter, pelo menos, o Windows 10 (Versão 1511).
+  - **Ativada sem bloqueio**: Permite que o Credential Guard seja desativado remotamente através da política de grupo. Os dispositivos que utilizam esta definição têm de ter, pelo menos, o Windows 10 (Versão 1511).
 
 As seguintes tecnologias dependentes são ativadas automaticamente ao configurar o Credential Guard: 
 
-  - **Ativar a Segurança baseada na Virtualização (VBS)**: ativa a segurança baseada na virtualização (VBS) no próximo reinício. A segurança baseada na virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Arranque Seguro.
-  - **Reinício Seguro com o Acesso Direto à Memória (DMA)**: ativa a VBS com o Arranque Seguro e o acesso direto à memória. As proteções de DMA precisam de suporte de hardware e serão ativadas apenas em dispositivos configurados corretamente. 
+  - **Ativar a segurança baseada em Virtualização (VBS)**: Ativa a virtualização de segurança baseada em (VBS) na próxima reinicialização. A segurança baseada na virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Arranque Seguro.
+  - **Arranque com acesso direto à memória (DMA) seguro**: Ativa o VBS com Secure Boot e acesso direto à memória. As proteções de DMA precisam de suporte de hardware e serão ativadas apenas em dispositivos configurados corretamente. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Utilize um nome de requerente personalizado no certificado SCEP <!-- 2064190 -->
 Poderá utilizar o nome comum **OnPremisesSamAccountName** num requerente personalizado num perfil de certificado SCEP. Por exemplo, pode utilizar `CN={OnPremisesSamAccountName})`.
 
 ####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>Bloquear a câmara e as capturas de ecrã em perfis de trabalho do Android Enterprise <!-- 1098977 -->
 Estão disponíveis duas propriedades novas para o bloqueio ao configurar as restrições dos dispositivos Android: 
-- Câmara: bloqueia o acesso a todas as câmaras do dispositivo
-- Captura de ecrã: bloqueia a captura de ecrã e também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura
+- Câmara: Bloqueia o acesso a todas as câmaras no dispositivo
+- Captura de ecrã: Bloqueia a captura de ecrã e também impede que o conteúdo a ser mostrado em dispositivos de visualização que não tenham uma saída de vídeo segura
 
 Aplica-se a perfis de trabalho do Android Enterprise.
 
@@ -1121,12 +1129,12 @@ Se tiver o conector de serviços, configurar e executar o Exchange Active Sync a
 
 
 
-### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Planear a alteração: atualizações de desempenho para o Intune for Education <!--1750215-->
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Planear a alteração: Atualizações de desempenho para o Intune for Education <!--1750215-->
 Estamos a adicionar algumas atualizações ao Intune for Education de forma a aumentar a velocidade e a fiabilidade quando atribui definições aos seus utilizadores ou dispositivos. No âmbito desta alteração, perto do fim do mês de novembro, moveremos as suas políticas ou atribuições de definições para novos grupos.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
 
-Como cliente do Intune for Education, tem dois grupos dinâmicos do Azure Active Directory (Azure AD): "Todos os Utilizadores" e "Todos os Dispositivos". Com estas atualizações, estes grupos "Todos os Utilizadores" e "Todos os dispositivos" do Azure AD não serão visíveis na consola do Intune for Education. Contudo, permanecerão visíveis na consola do Intune no Azure e o nome deles mudará para "Todos os utilizadores (Obsoleto, não utilizar)" e "Todos os Dispositivos (Obsoleto, não utilizar)".
+Como do Intune para clientes de educação, tem dois grupos dinâmicos do Azure Active Directory (Azure AD): "Todos os utilizadores" e "Todos os dispositivos". Com estas atualizações, estes grupos "Todos os Utilizadores" e "Todos os dispositivos" do Azure AD não serão visíveis na consola do Intune for Education. Contudo, permanecerão visíveis na consola do Intune no Azure e o nome deles mudará para "Todos os utilizadores (Obsoleto, não utilizar)" e "Todos os Dispositivos (Obsoleto, não utilizar)".
 
 Quando as atualizações forem implementadas, já não terá de utilizar grupos do Azure AD para atribuir aplicações e definições no Intune. Em vez disso, moveremos as suas atribuições de Definições para novos grupos da consola do Intune for Education que vamos criar automaticamente e que continuarão a ser apresentados como "Todos os Utilizadores" e "Todos os Dispositivos" conforme acontecia anteriormente. Estas alterações ocorrem ao nível do back-end, pelo que não se aperceberá da existência de diferenças na consola do Intune for Education. Não se prevê que os seus utilizadores finais ou dispositivos inscritos sejam afetados. 
 
@@ -1136,7 +1144,7 @@ Não tem de fazer nada enquanto movemos as suas atribuições de políticas. Se 
 Se estiver a atribuir políticas aos grupos do Azure AD acima mencionados no Intune no Azure, comece, em vez disso, a atribuí-los ao grupo Todos os Utilizadores e Todos os Dispositivos na consola do Intune for Education. Quando vir que o nome dos grupos do Azure AD mudou e passou a incluir a palavra "obsoleto" na consola, pare de atribuir políticas no Azure AD. Se não estiver a utilizar os grupos cujo nome mudou para outro fim, deve eliminá-los.
 
 
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Planear a Alteração: o Intune passará a suportar o macOS 10.12 e versões superiores em dezembro <!--2970975--> 
+### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Planear a alteração: Intune será movido para suportar o macOS 10.12 e superior em Dezembro <!--2970975--> 
 
 A Apple acaba de lançar o macOS 10.14. Por conseguinte, o Intune passará a suportar o macOS 10.12 e versões superiores em dezembro de 2018. 
 
@@ -1164,8 +1172,8 @@ Depois de dezembro, os utilizadores finais que tenham dispositivos que não se i
 Para obter mais informações, veja [Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
  
 
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Planear a Alteração: nova experiência de suporte do Intune para clientes Premier 
-12/4/18 atualização: estamos tentando tornar esse processo melhor para si, para a criação do pedido de suporte no MPO será não desativada a 3 de Dezembro, mas numa data posterior em vez disso. Vamos informá-sei através do Centro de mensagens e atualizar esta publicação em breve para partilhar as linhas do tempo para que esta alteração.
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Planear a alteração: Experimente o novo suporte do Intune para Premier clientes 
+12/4/18 atualização: Estamos tentando tornar esse processo melhor para si, para a criação do pedido de suporte no MPO será não desativada a 3 de Dezembro, mas numa data posterior em vez disso. Vamos informá-sei através do Centro de mensagens e atualizar esta publicação em breve para partilhar as linhas do tempo para que esta alteração.
 
 Como cliente Premier da Microsoft, atualmente, pode utilizar o portal do Microsoft Premier Online (MPO) (premier.microsoft.com) e o Intune no Azure (portal.azure.com) para criar pedidos de suporte do Intune. A partir de 3 de dezembro de 2018, no sentido de continuar a melhorar a experiência de suporte Premier, poderá criar pedidos de suporte apenas no Intune no Azure.
 
@@ -1186,7 +1194,7 @@ Tenha em atenção que apenas os utilizadores com as funções Administrador Glo
 Para obter mais informações, veja a [mensagem de blogue da equipa de suporte do Microsoft Intune](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Efetuar uma ação: atualize as suas definições de palavra-passe para restrição de dispositivos Android ou políticas de conformidade no Intune
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Tome medidas: Atualize o seu dispositivo Android restrição ou a conformidade de palavra-passe definições de política no Intune
 O Intune irá remover o tipo de palavra-passe "predefinição do dispositivo" disponível para dispositivos com o Android 4.4 e superior. Devido às diferenças entre plataformas e predefinições de dispositivos Android, essa política é normalmente considerada opcional pelo dispositivo. Para tornar claro em que momento esta definição é aplicada no Android, vamos remover esta definição da IU numa próxima versão. 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
 - Se quiser exigir uma palavra-passe nos dispositivos, recomendamos que, em vez de utilizar a "predefinição do dispositivo", edite os perfis da sua plataforma Android de modo a indicar claramente o tipo de palavra-passe exigido.
@@ -1199,7 +1207,7 @@ https://aka.ms/PasswordSettings
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
 A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS. Continuaremos a fornecer mais detalhes no nosso [blogue de suporte do Intune](https://aka.ms/compportalats).
 
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>Planear a Alteração: o Intune vai mudar para o TLS 1.2
+### <a name="plan-for-change-intune-moving-to-tls-12"></a>Planear a alteração: Intune mudar para o TLS 1.2
 A partir de 31 de outubro de 2018, o Intune irá suportar a versão 1.2 do protocolo TLS (Transport Layer Security) para fornecer a melhor encriptação, garantir que o nosso serviço é mais seguro por predefinição e alinhá-lo com outros serviços da Microsoft, como o Microsoft Office 365. O Office comunicou esta alteração na mensagem MC128929.
 
 O Portal da Empresa também passará a suportar o TLS 1.2 a partir de 31 de outubro de 2018.
@@ -1212,7 +1220,7 @@ A partir de 31 de outubro de 2018, se tiver um problema relacionado com a utiliz
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Recomendamos que remova de forma proativa as dependências do TLS 1.0 e 1.1 nos seus ambientes e que desative o TLS 1.0 e 1.1 ao nível do sistema operativo, se tal for possível. Comece já a planear a sua migração para o TLS 1.2. Veja a mensagem de blogue de suporte abaixo para consultar uma lista dos dispositivos que não são suportados atualmente pelo Intune, mas que poderão continuar a receber políticas e não poderão comunicar através da versão 1.2 do TLS. Poderá ter de notificar esses utilizadores finais de que irão perder o acesso aos recursos empresariais.
 
-**Informações Adicionais**: [o Intune irá mudar para o TLS 1.2 para encriptação](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
+**Informações adicionais**: [Mover para o TLS 1.2 para a encriptação do Intune](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
 
 
