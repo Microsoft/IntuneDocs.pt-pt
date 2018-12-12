@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fc6b5aac1d75fc67c469f6ecd24e331d1cc35d30
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182997"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247242"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -52,11 +52,11 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 > [!Note]  
 > Precisa de permissão para aceder a **Relatórios** no Intune. Para obter mais informações, veja [Autorização](reports-api-url.md).
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Abra o painel **Armazém de Dados do Intune**.
 4. Copie o URL do feed personalizado. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Abra o Power BI Desktop.
+5. Abra o Power BI Desktop.
 6. Selecione **Obter Dados** > **Feed OData**.
 7. Cole o URL do feed personalizado na caixa URL na janela **Feed OData**.
 8. Selecione **Básico**.
@@ -68,7 +68,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
     ![Credenciais da conta escolar ou profissional](media/reports-create-02-org-account.png)
 
-11. Selecione **ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
+11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
     ![O Navegador](media/reports-create-02-loadentities.png)
 

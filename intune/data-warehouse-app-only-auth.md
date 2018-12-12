@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8da448ece30c1ae90c447f27056f19f74b16dd90
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185207"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247140"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticação apenas com a aplicação do Armazém de Dados do Intune
 
@@ -75,7 +75,7 @@ Nesta secção, o Azure AD gera um valor de chave para a sua aplicação.
 Nesta secção, pode conceder permissões às aplicações.
 
 1.  Selecione **Permissões obrigatórias** no painel **Definições**.
-2.  Clique em **adicionar**.
+2.  Clique em **Adicionar**.
 3.  Selecione **Adicionar uma API** para apresentar o painel **Selecionar uma API**.
 4.  Selecione **API do Microsoft Intune (MicrosoftIntuneAPI)** e, em seguida, clique em **Selecionar** no painel **Selecionar uma API**. O passo **Selecionar permissões** está selecionado e o painel **Ativar Acesso** é apresentado.
 5.  Escolha a opção **Obter informações do armazém de dados do Microsoft Intune** da secção **Permissões da Aplicação**.
@@ -160,6 +160,6 @@ Com o Visual Studio, crie um projeto de Aplicação de Consola (.NET Framework) 
     >[!NOTE] 
     > Para ver código de implementação adicional, veja [Exemplo de código do Armazém de Dados do Intune](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos Passos
 Saiba mais sobre o Azure Key Vault ao rever [O que é o Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
 

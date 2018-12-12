@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e5040626a27f50fae4df2ec2472d167269a282e4
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185998"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247276"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -67,7 +67,7 @@ Agora tem uma aplicação definida no Azure. Conceda acesso à API do Microsoft 
     ![Ativar o acesso – API do Microsoft Intune](./media/reports-get_rest_data_client_access.png)
 
 9.  Selecione **Selecionar**.
-10.  Selecione **Concluído**.
+10.  Selecione **Done** (Concluído).
 11.  Opcionalmente, selecione **Conceder Permissões** no painel Permissões obrigatórias. Esta ação irá conceder acesso a todas as contas no diretório atual. Esta ação irá impedir a apresentação da caixa de diálogo de consentimento para cada utilizador no inquilino. Para obter mais informações, veja [Integrating applications with Azure Active Directory (Integrar aplicações com o Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  Selecione **Sim**.
 
@@ -93,7 +93,7 @@ Precisa das seguintes informações para efetuar uma chamada REST através do Po
 
 Também precisa do ponto final. Para obter o ponto final do Armazém de Dados, precisará do URL de feed personalizado. Pode obter o ponto final de OData no painel do Armazém de Dados.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **Definir o Armazém de Dados do Intune** em **Outras tarefas**.
 4. Copie o URL de feed personalizado em **Utilize os serviços de relatórios de terceiros**. Deverá ter o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ace65aab5ded1449b1e1fd092936e9e2a019f6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69a08955144bea9b98f881219583e666d18dfd5b
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187638"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247055"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicações Web ao Microsoft Intune
 
@@ -46,18 +46,18 @@ Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na 
 6. No painel **Adicionar aplicação**, na lista pendente **Tipo de aplicação** selecione **Ligação Web**.
 7. Selecione **Configurar**.
 8. No painel **Informações da aplicação**, adicione as informações seguintes:
-    - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. 
+    - **Nome**:  Introduza o nome da aplicação porque está a ser apresentado no portal da empresa. 
     
         > [!NOTE]
         > Se alterar o nome da aplicação através do portal do Azure no Intune após ter implementado e instalado a aplicação, a mesma deixará de poder ser visada através de comandos.
     
-    - **Descrição**: introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: introduza o nome do publicador desta aplicação.
-    - **URL da Aplicação**: introduza o URL do site que aloja a aplicação que pretende atribuir.
-    - **Categoria**: opcionalmente, selecione uma ou mais categorias de aplicações incorporadas ou uma categoria criada por si. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **Exigir um browser gerido para abrir esta ligação**: selecione esta opção para atribuir uma ligação a um site ou uma aplicação Web aos utilizadores para que possam abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.
-    - **Logótipo**: carregue um ícone que será associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
+    - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
+    - **Publicador**: Introduza o nome do publicador desta aplicação.
+    - **URL da aplicação**: Introduza o URL do Web site que aloja a aplicação que pretende atribuir.
+    - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas ou uma categoria que criou. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da empresa**: Selecione esta opção para apresentar o conjunto de aplicações de forma destacada na página principal do portal da empresa, quando os utilizadores procurarem aplicações.
+    - **Exigir um browser gerido para abrir esta ligação**: Selecione esta opção para atribuir aos seus utilizadores uma ligação para uma Web site ou uma aplicação web que poderão abrir no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.
+    - **Logótipo**: Carregue um ícone que será associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 9. Selecione **OK**.
 10. No painel **Adicionar aplicação**, selecione **Adicionar**.
 

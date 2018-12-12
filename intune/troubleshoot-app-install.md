@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188131"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267016"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
@@ -30,7 +30,7 @@ Por vezes, a instalação de aplicações em dispositivos geridos por MDM do Mic
 
 O Intune proporciona detalhes da resolução de problemas com a aplicação com base nas aplicações instaladas no dispositivo de um utilizador específico.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Resolução de problemas**.
 4. Clique em **Selecionar utilizador** para selecionar um utilizador para o qual quer executar a resolução de problemas. O painel **Selecionar utilizadores** será apresentado.
@@ -84,6 +84,19 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de i
 |    O utilizador rejeitou a oferta para atualizar a aplicação. (0x87D13B63)    |    O utilizador final clicou em Cancelar durante o processo de atualização.     |
 |    Erro desconhecido (0x87D103E8)    |    Ocorreu um erro de instalação da aplicação desconhecido. Este é o erro resultante se não ocorrer nenhum dos outros erros.    |
 
+### <a name="other-installation-errors"></a>Outros erros de instalação
+
+|    Mensagem/código de erro    |    Descrição    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF, 0x80CF201C (erro do cliente)    |    Para instalar esta aplicação, precisa de ter um sistema preparado para sideloading. Certifique-se de que o pacote de aplicação é iniciado com uma assinatura fidedigna e instalado num dispositivo associado a um domínio que tenha as **AllowAllTrustedApps** política ativada ou um dispositivo que tenha uma licença Sideload do Windows com o  **AllowAllTrustedApps** política ativada. Para obter mais informações, consulte [resolução de problemas de empacotamento, implementação e consulta de aplicações da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).     |
+|    0x80073CF0    |    Não foi possível abrir o pacote. Causas possíveis:<ul><li> O pacote não está assinado.</li><li> O nome do publicador não corresponde ao assunto do certificado de assinatura.</li></ul> Verifique os **AppxPackagingOM** registo de eventos para obter informações. Para obter mais informações, consulte [resolução de problemas de empacotamento, implementação e consulta de aplicações da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CF3    |    O pacote de falha de atualização, dependência ou validação de conflito. Causas possíveis:<ul><li> O pacote recebido está em conflito com o pacote instalado.</li><li> Não foi encontrada uma dependência de pacote especificado.</li><li> O pacote não suporta a arquitetura de processador correta.</li></ul> Verifique os **AppXDeployment-Server** registo de eventos para obter informações. Para obter mais informações, consulte [resolução de problemas de empacotamento, implementação e consulta de aplicações da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CFB    |    O pacote fornecido já está instalado e a reinstalação do pacote está bloqueada. Poderá receber este erro se estiver a instalar um pacote que não é idêntico ao pacote que já está instalado. Verifique se a assinatura digital também faz parte do pacote. Quando um pacote é reconstruído ou assinado novamente, esse pacote já não é totalmente idêntico ao pacote anteriormente instalado. Existem duas opções possíveis para corrigir este erro:<ul><li> Incrementar o número de versão da aplicação e, em seguida, reconstruir e voltar a assinar o pacote.</li><li> Remova o pacote antigo de todos os utilizadores do sistema antes de instalar o novo pacote.</li></ul> Para obter mais informações, consulte [resolução de problemas de empacotamento, implementação e consulta de aplicações da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x87D1041C    |    A aplicação foi instalada com êxito, mas a aplicação não foi detetada. A aplicação foi implementada com êxito pelo Intune, e foi desinstalada posteriormente. As razões para a aplicação que está a ser desinstalado incluem:<ul><li> O utilizador final desinstalar a aplicação.</li><li> As informações de identidade do pacote não correspondem a dispositivos que os relatórios para aplicações ruins.</li><li>Para MSIs atualização automática, a versão do produto não corresponde às informações da aplicação depois de ser atualizado fora do Intune.</li></ul> Diga ao utilizador para reinstalar a aplicação a partir do portal da empresa. Tenha em atenção que as aplicações necessárias serão reinstaladas automaticamente quando o dispositivo verificação seguinte.    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Resolução de problemas de aplicações da Loja Microsoft
+
+As informações presentes no tópico [Resolução de problemas de empacotamento, implementação e consulta de aplicações da Loja Microsoft](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) ajudam-no a resolver problemas comuns que poderá encontrar ao instalar aplicações da Loja Microsoft, quer seja através do Intune ou de outros meios.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
-ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
+ms.openlocfilehash: d95bc665d271eac55682fa8f0aeee2bf267c48ef
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200611"
+ms.locfileid: "53267094"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,11 +45,20 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 ## <a name="week-of-december-10-2018"></a>Semana de 10 de Dezembro de 2018
 
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="updates-for-application-transport-security----748318---"></a>Atualizações de segurança de transporte de aplicações <!-- 748318 -->
+
+O Microsoft Intune suporta Transport Layer Security (TLS) 1.2 + para fornecer encriptação de melhor em classe, para garantir que o Intune é mais seguro por padrão e para se alinhar com outros serviços Microsoft como o Microsoft Office 365. Para cumprir este requisito, portais de empresa do iOS e macOS irão impor requisitos de segurança de transporte de aplicações (ATS) atualizados da Apple, que também necessitam de TLS 1.2 +. A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune a utilizar as aplicações de Portal da empresa iOS e macOS. Para obter mais informações, consulte a [blogue de suporte do Intune](https://aka.ms/compportalats).
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>O SDK da aplicação Intune irá suportar as chaves de encriptação de 256 bits <!-- 1832174 -->
+O SDK da aplicação Intune para Android utiliza agora as chaves de encriptação de 256 bits quando a encriptação está ativada por políticas de proteção de aplicações. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK.
+
 ### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Versão de atualização automática de Microsoft 4,50 necessária para dispositivos macOS <!-- 3503442 -->
 Para continuar a receber atualizações para o Portal da empresa e outros aplicativos do Office, dispositivos macOS geridos pelo Intune tem de atualizar para a atualização automática do Microsoft 4.5.0. Os utilizadores poderão já ter esta versão para seus aplicativos do Office.
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>O Intune necessita de macOS 10.12 ou posterior <!-- 2827778 -->
-O Intune requer agora macOS versão 10.12 ou posterior. Dispositivos com versões anteriores do macOS não é possível utilizar o Portal da empresa para inscrição no Intune. Para receber suporte e os novos recursos, os utilizadores tem de atualizar o dispositivo para macOS 10.12 ou posterior e atualize o Portal da empresa para a versão mais recente.
+O Intune requer agora macOS versão 10.12 ou posterior. Dispositivos com versões anteriores do macOS não é possível utilizar o Portal da empresa para inscrição no Intune. Para receber suporte e novos recursos, os utilizadores tem de atualizar o dispositivo para macOS 10.12 ou posterior e atualize o Portal da empresa para a versão mais recente.
 
 ## <a name="week-of-november-26-2018"></a>Semana de 26 de Novembro de 2018
 
@@ -103,6 +112,23 @@ Para utilizar esta funcionalidade, consulte [iOS](compliance-policy-create-ios.m
 Otimização da entrega é um novo perfil de configuração para Windows 10 e posterior. Esta funcionalidade fornece uma experiência mais simplificada para fornecer atualizações de software para dispositivos na sua organização. Esta atualização também ajuda a fornecer as definições de cadências de atualização de novas e existentes com um perfil de configuração.
 Para configurar um perfil de configuração de otimização de entrega, consulte [as definições de otimização do Windows 10 (e mais recente) entrega](delivery-optimization-windows.md).
 
+#### <a name="new-device-restriction-settings-added-to-ios-and-macos-devices----2827760---"></a>Novas definições de restrição de dispositivos adicionadas a dispositivos iOS e macOS <!-- 2827760 -->
+Esta atualização inclui novas definições para os seus dispositivos iOS e macOS que são lançadas com o iOS 12:
+
+**definições do iOS**: 
+- Gerais: Remoção de aplicações de bloco (apenas supervisionada)
+- Gerais: Modo de bloco USB restrito (apenas supervisionado)
+- Gerais: Forçar automática data e hora (apenas supervisionado)
+- Palavra-passe: Bloquear a palavra-passe de preenchimento automático (apenas supervisionado)
+- Palavra-passe: Bloquear pedidos de proximidade de palavra-passe (apenas supervisionados)
+- Palavra-passe: Bloquear a partilha de palavra-passe (apenas supervisionado)
+
+**definições do macOS**: 
+- Palavra-passe: Bloquear o preenchimento automático de palavra-passe
+- Palavra-passe: Bloquear pedidos de proximidade de palavra-passe
+- Palavra-passe: Bloquear a partilha de palavra-passe
+
+Para saber mais sobre estas definições, consulte [iOS](device-restrictions-ios.md) e [macOS](device-restrictions-macos.md) definições de restrição de dispositivos.
 
 ### <a name="device-enrollment"></a>Inscrição de dispositivos
 
@@ -1143,35 +1169,6 @@ Não tem de fazer nada enquanto movemos as suas atribuições de políticas. Se 
 
 Se estiver a atribuir políticas aos grupos do Azure AD acima mencionados no Intune no Azure, comece, em vez disso, a atribuí-los ao grupo Todos os Utilizadores e Todos os Dispositivos na consola do Intune for Education. Quando vir que o nome dos grupos do Azure AD mudou e passou a incluir a palavra "obsoleto" na consola, pare de atribuir políticas no Azure AD. Se não estiver a utilizar os grupos cujo nome mudou para outro fim, deve eliminá-los.
 
-
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Planear a alteração: Intune será movido para suportar o macOS 10.12 e superior em Dezembro <!--2970975--> 
-
-A Apple acaba de lançar o macOS 10.14. Por conseguinte, o Intune passará a suportar o macOS 10.12 e versões superiores em dezembro de 2018. 
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-
-A partir de dezembro, os utilizadores finais que tenham dispositivos com o macOS 10.11 e versões anteriores não poderão utilizar o Portal da Empresa para fazer inscrições no Intune. Terão de atualizar o dispositivo para o macOS 10.12 ou versão superior e atualizar a aplicação Portal da Empresa para a versão mais recente para continuarem a receber suporte e novas funcionalidades. 
-
-Atualmente, as versões 10.12 e superiores do macOS são suportadas em: 
-- MacBook (finais de 2009 ou mais recente). 
-- iMac (finais de 2009 ou mais recente)
-- MacBook Air (finais de 2010 ou mais recente).  
-- MacBook Pro (finais de 2010 ou mais recente). 
-- Mac Mini (finais de 2010 ou mais recente). 
-- Mac Pro (finais de 2010 ou mais recente). 
-
-Depois de dezembro, os utilizadores finais que tenham dispositivos que não se incluam nos listados acima não poderão aceder à versão mais recente da aplicação Portal da Empresa para o macOS. Os dispositivos já inscritos que tenham versões não suportadas anteriores ao macOS 10.12 continuarão a ser geridos e listados na Consola de Administração do Intune.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-
-- Peça aos seus utilizadores finais para atualizarem os respetivos dispositivos para uma versão suportada do SO antes de dezembro de 2018. 
-- Verifique os relatórios do Intune na consola Intune no Azure para ver que utilizadores ou dispositivos podem ser afetados. Aceda a Dispositivos > Todos os dispositivos e filtre por SO. Pode adicionar mais colunas para ajudar a identificar quem na sua organização tem dispositivos com o macOS 10.11. 
-- Se estiver a utilizar uma gestão de dispositivos móveis (MDM) híbrida, aceda a Ativos e Conformidade > Dispositivos na consola do Configuration Manager, clique com o botão direito do rato nas colunas para adicionar as colunas de Sistema Operativo e de Versão do Cliente e ordene por SO. Tenha em atenção que a MDM híbrida foi preterida e que deve mudar para o Intune no Azure o mais rapidamente possível. 
- 
-#### <a name="additional-information"></a>Informações adicionais
-Para obter mais informações, veja [Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
- 
-
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Planear a alteração: Experimente o novo suporte do Intune para Premier clientes 
 12/4/18 atualização: Estamos tentando tornar esse processo melhor para si, para a criação do pedido de suporte no MPO será não desativada a 3 de Dezembro, mas numa data posterior em vez disso. Vamos informá-sei através do Centro de mensagens e atualizar esta publicação em breve para partilhar as linhas do tempo para que esta alteração.
 
@@ -1204,28 +1201,3 @@ Reveja as definições de palavra-passe no seu Android e nas políticas de restr
 #### <a name="additional-information"></a>Informações adicionais
 https://aka.ms/PasswordSettings 
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>A Apple passará a exigir atualizações para a Segurança de Transporte de Aplicações <!--748318-->
-A Apple anunciou que irá impor requisitos específicos para a Segurança de Transporte de Aplicações (ATS). A ATS é utilizada para impor medidas de segurança mais rigorosas em todas as comunicações feitas por aplicações através de HTTPS. Esta alteração irá afetar os clientes do Intune que utilizam as aplicações do Portal da Empresa para iOS. Continuaremos a fornecer mais detalhes no nosso [blogue de suporte do Intune](https://aka.ms/compportalats).
-
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>Planear a alteração: Intune mudar para o TLS 1.2
-A partir de 31 de outubro de 2018, o Intune irá suportar a versão 1.2 do protocolo TLS (Transport Layer Security) para fornecer a melhor encriptação, garantir que o nosso serviço é mais seguro por predefinição e alinhá-lo com outros serviços da Microsoft, como o Microsoft Office 365. O Office comunicou esta alteração na mensagem MC128929.
-
-O Portal da Empresa também passará a suportar o TLS 1.2 a partir de 31 de outubro de 2018.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-A partir de 31 de outubro de 2018, o Intune deixará de suportar as versões 1.0 e 1.1 do protocolo TLS. Todas as combinações cliente-servidor e browser-servidor devem utilizar a versão 1.2 do TLS para garantir uma ligação sem problemas ao Intune. Tenha em atenção que esta alteração irá afetar os dispositivos dos utilizadores finais que já não são suportados pelo Intune, mas continuam a receber políticas através do Intune, e não podem utilizar a versão 1.2 do TLS. Isto inclui os dispositivos com o Android 4.3 ou anterior. Para consultar uma lista dos dispositivos e browsers afetados, veja as Informações Adicionais abaixo.
-
-A partir de 31 de outubro de 2018, se tiver um problema relacionado com a utilização de uma versão antiga do TLS, terá de atualizar para o TLS 1.2 ou mudar para um dispositivo que suporte o TLS 1.2 como parte da resolução.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Recomendamos que remova de forma proativa as dependências do TLS 1.0 e 1.1 nos seus ambientes e que desative o TLS 1.0 e 1.1 ao nível do sistema operativo, se tal for possível. Comece já a planear a sua migração para o TLS 1.2. Veja a mensagem de blogue de suporte abaixo para consultar uma lista dos dispositivos que não são suportados atualmente pelo Intune, mas que poderão continuar a receber políticas e não poderão comunicar através da versão 1.2 do TLS. Poderá ter de notificar esses utilizadores finais de que irão perder o acesso aos recursos empresariais.
-
-**Informações adicionais**: [Mover para o TLS 1.2 para a encriptação do Intune](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## <a name="see-also"></a>Consulte também
-* [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Roteiro da Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novidades na IU do Portal da Empresa](whats-new-app-ui.md)
-* [Novidades nos meses anteriores](whats-new-archive.md)

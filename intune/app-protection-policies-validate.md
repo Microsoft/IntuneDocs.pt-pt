@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
+ms.topic: article
 ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9f6d5bc8c124e3ba26b7e3fc110510c7d5e0e6a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183167"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247072"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Como validar a configuração das políticas de proteção de aplicações
 
@@ -41,7 +42,7 @@ Se os testes mostrarem que o comportamento de política de proteção de aplica�
 - O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**.
 
 #### <a name="user-app-protection-status"></a>Estado da proteção de aplicações do utilizador
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **aplicações de cliente** > **Monitor** >  **estado de proteção de aplicações**e, em seguida, selecione o **utilizadoresatribuídos**mosaico. 
 4. Sobre o **relatório da aplicação** página, selecione **selecionar utilizador** para abrir uma lista de utilizadores e grupos. 

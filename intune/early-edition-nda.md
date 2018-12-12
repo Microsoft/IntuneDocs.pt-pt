@@ -17,17 +17,17 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 77aa0d1544351adaa8d338bc7c4c7182d35941e8
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112838"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267026"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A edição antecipada do Microsoft Intune – Dezembro de 2018
 
 > [!Note]
-> Notificação de contrato de confidencialidade: as seguintes alterações estão em desenvolvimento para o Intune. Estas informações são partilhadas ao abrigo de um contrato de confidencialidade numa base muito limitada. Não publique estas informações em redes sociais ou em sites públicos como o Twitter, UserVoice, Reddit, entre outros. 
+> Notificação de contrato de confidencialidade: As seguintes alterações estão em desenvolvimento para o Intune. Estas informações são partilhadas ao abrigo de um contrato de confidencialidade numa base muito limitada. Não publique estas informações em redes sociais ou em sites públicos como o Twitter, UserVoice, Reddit, entre outros. 
 
 A **edição antecipada** oferece uma lista de funcionalidades, partilhadas ao abrigo de um contrato de confidencialidade, que estarão disponíveis em versões futuras do Microsoft Intune. Esta informação é fornecida numa base limitada e está sujeita a alterações. Não publique no Twitter nem no UserVoice, nem partilhe estas informações de nenhuma outra forma com pessoas fora da sua empresa. Algumas funcionalidades aqui indicadas estão em risco de não serem incluídas dentro das datas limite e podem ser adiadas até uma versão futura. Outras funcionalidades estão a ser testadas numa implementação piloto (distribuição de pacotes piloto) para garantir que estão prontas para os clientes. Contacte o seu contacto do grupo de produtos da Microsoft se tiver dúvidas ou preocupações.
 
@@ -49,12 +49,12 @@ Para dispositivos Android num não inscritos proteção política sem inscriçã
 ### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Novas opções para automaticamente se ligar e manter regras ao utilizar as definições de DNS no Windows 10 e dispositivos posteriores <!-- 1333665, 2999078 -->
 No Windows 10 e dispositivos posteriores, poderá criar um perfil de configuração de VPN que inclui uma lista de servidores DNS para resolver domínios, tal como contoso.com. Isto irá incluir as novas definições para resolução de nomes (**configuração do dispositivo** > **perfis** > **criar perfil** > Escolha  **Windows 10 e posterior** para a plataforma > Escolha **VPN** para o tipo de perfil > **definições de DNS** >**adicionar**): 
 
-- **Ligar automaticamente**: quando **ativado**, o dispositivo estabelece ligação automaticamente para a VPN quando um dispositivo entra em contacto com um domínio, introduza, por exemplo, contoso.com.
-- **Persistente**: por predefinição, todas as regras de tabela (NRPT) de política de resolução de nome estão ativas, desde que o dispositivo estiver conectado com este perfil VPN. Quando esta definição for **ativado** numa regra NRPT, a regra permanece ativa no dispositivo, mesmo quando desliga a VPN ou o perfil VPN é removido. A regra mantém-se até ser manualmente removido, que pode ser feito com o PowerShell.
+- **Ligar automaticamente**: Quando **ativado**, o dispositivo estabelece ligação automaticamente para a VPN quando um dispositivo entra em contacto com um domínio, introduza, por exemplo, contoso.com.
+- **Persistente**: Por predefinição, todas as regras de tabela (NRPT) de política de resolução de nome estão ativas, desde que o dispositivo estiver conectado com este perfil VPN. Quando esta definição for **ativado** numa regra NRPT, a regra permanece ativa no dispositivo, mesmo quando desliga a VPN ou o perfil VPN é removido. A regra mantém-se até ser manualmente removido, que pode ser feito com o PowerShell.
 
 [Definições de VPN do Windows 10](vpn-settings-windows-10.md) descreve a lista atual de definições. 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Utilizar S/MIME para encriptar e inscrever múltiplos dispositivos de um utilizador <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>Utilizar S/MIME para encriptar e assinar vários dispositivos para um utilizador <!-- 1333642 eeready -->
 Encriptação de correio eletrónico de S/MIME com um novo perfil de certificado importado será suportada (**configuração do dispositivo** > **perfis** > **criar perfil** > selecione a plataforma > **certificado importado PKCS** tipo de perfil). No Intune, pode importar certificados no formato PFX. O Intune pode enviar esses mesmos certificados para múltiplos dispositivos inscritos por um único utilizador. Isto também inclui:
 
 - O perfil de e-mail nativo do iOS suporta a ativação da encriptação S/MIME através de certificados importados no formato PFX.
@@ -63,7 +63,7 @@ Encriptação de correio eletrónico de S/MIME com um novo perfil de certificado
 - Noutras plataformas, talvez seja necessário configurar manualmente a aplicação de e-mail para permitir o S/MIME.  
 - As aplicações de e-mail que suportam a encriptação S/MIME conseguem obter certificados para a encriptação S/MIME de e-mails de uma forma que não é suportada por MDM, como a leitura a partir do arquivo de certificados do respetivo publicador.
 
-Suportado no: Windows, Windows Phone 10, macOS, iOS, Android
+Suportado no: Windows Phone 10, Windows, iOS, Android e macOS
 
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Página Ajuda e suporte na aplicação de Portal da empresa do Windows <!-- 1488939 -->
 Aplicação de Portal da empresa do Windows será adicionada uma nova página. A página de ajuda e suporte irá fornecer informações de contacto de suporte técnico. Além disso, os utilizadores finais será capazes de enviar que registos do Portal da empresa, se estiver a ter problemas. A página também fornece uma secção de FAQ para ajudar os utilizadores finais.
@@ -77,10 +77,10 @@ Quando a encriptação está ativada por políticas de proteção de aplicaçõe
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Definições do PC partilhadas ativadas no perfil do Intune <!-- 1907917 -->
 Atualmente, pode configurar definições do PC compartilhado em dispositivos de ambiente de trabalho Windows 10 com uma definição de OMA-URI personalizada. Será adicionado um novo perfil para configurar definições do PC compartilhado (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10 e posterior** > **dispositivos de vários utilizadores partilhado**).
-Aplica-se a: Windows 10 e posterior, o Windows Holographic for Business
+Aplica-se a: Windows 10 e posterior, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>As políticas do Intune atualizar o método de autenticação e a instalação da aplicação Portal da empresa  <!-- 1927359 -->
-O Intune já não irá suportar a aplicação Portal da empresa quando é instalado da loja de aplicações, em determinados dispositivos. Esta alteração é relevante apenas quando se autenticar com o Assistente de configuração da Apple durante a inscrição. Esta alteração afeta também apenas dispositivos iOS inscritos através de:  
+Nos dispositivos já inscritos através do Assistente de configuração através de um dos métodos de inscrição de dispositivos da empresa da Apple, o Intune suportará já não é o Portal da empresa quando é instalado manualmente pelos usuários finais da loja de aplicações. Esta alteração é relevante apenas quando se autenticar com o Assistente de configuração da Apple durante a inscrição. Esta alteração afeta também apenas dispositivos iOS inscritos através de:  
 * Do Apple configurator
 * Gerente de negócios da Apple
 * Gestor Escolar da Apple
@@ -108,7 +108,7 @@ Será capaz de criar um perfil de e-mail que inclui definições diferentes. Iss
 [definições de configuração de e-mail do iOS](email-settings-ios.md) lista as definições atuais.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Ignorar mais ecrãs do Assistente de configuração num dispositivo DEP iOS <!-- 2687509 -->
-Além dos ecrãs atualmente pode ignorar, poderá definir iOS dispositivos DEP para ignorar os ecrãs seguintes no Assistente de configuração, quando um utilizador inscreve o dispositivo: tom de exibição, privacidade, migração de Android, botão Home page, iMessage e FaceTime, integração, Assista a migração, aparência, ecrã, atualização de Software, SIM configuração.
+Além dos ecrãs que atualmente pode ignorar, poderá definir iOS dispositivos DEP para ignorar os ecrãs seguintes no Assistente de configuração, quando um utilizador inscreve o dispositivo: Apresenta tom, privacidade, migração Android, botão Home page, iMessage & FaceTime, integração, migração de Watch, aparência, tempo de tela, atualização de Software, a configuração SIM.
 Para escolher que telas para ignorar, aceda a **inscrição de dispositivos** > **inscrição da Apple** > **tokens do programa de inscrição** > Escolha um token > **Perfis** > Escolha um perfil > **propriedades** > **personalização do Assistente de configuração** > Escolha **ocultar**  para qualquer telas que pretende ignorar > **OK**.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Algumas definições de BitLocker suportam a edição Windows 10 Pro<!-- 2727036 -->
@@ -148,7 +148,7 @@ Para ver as definições atuais, aceda à [definições de restrição de dispos
 Aplica-se a: Windows 10 e posterior
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Modelos administrativos estão em pré-visualização pública e movido para o seu próprio perfil de configuração <!-- 3322847 -->
-Modelos administrativos no Intune (**configuração do dispositivo** > **modelos administrativos**) estão atualmente em pré-visualização privada. Com esta atualização: Modelos administrativos inclui aproximadamente 300 definições que podem ser geridas no Intune. Anteriormente, estas definições só existiam no editor de políticas de grupo.
+Modelos administrativos no Intune (**configuração do dispositivo** > **modelos administrativos**) estão atualmente em pré-visualização privada. Com esta atualização: Modelos administrativos inclui aproximadamente 300 configurações que podem ser geridas no Intune. Anteriormente, estas definições só existiam no editor de políticas de grupo.
 Modelos administrativos estão disponíveis em pré-visualização pública, administração estiver a mover de modelos **configuração do dispositivo** > **modelos administrativos** para **dispositivo configuração** > **perfis** >**criar perfil** > no **plataforma**, escolha  **Windows 10 e posterior**, na **tipo de perfil**, escolha **modelos administrativos**.
 O relatório está ativado aplica-se a: Windows 10 e posterior
 
@@ -166,10 +166,10 @@ Para adicionar uma etiqueta de âmbito a um perfil de configuração, escolha **
 
 ### <a name="tenant-health-dashboard----1124854---"></a>Dashboard de Estado de Funcionamento do Inquilino <!-- 1124854 -->
 A página Estado do Inquilino no Intune irá fornecer-lhe informações sobre o estado do inquilino num único local. A página está dividida em quatro secções:  
-- **Detalhes do Inquilino**: contém informações, como a sua Autoridade de MDM, o total de dispositivos inscritos no seu inquilino e as suas contagens de licenças. Esta secção também fornece a versão do serviço atual do seu inquilino.
-- **Estado do Conector**: contém informações sobre os conectores configurados, como o Apple VPP, a Windows Store para Empresas e os conectores de Certificados. Com base no respetivo estado atual, os conectores são sinalizados com *Bom estado de funcionamento*, *Aviso* ou *Mau estado de funcionamento*.
-- **Estado de Funcionamento do Serviço do Intune**: contém incidentes ativos ou falhas do seu inquilino. As informações nesta secção são obtidas diretamente a partir do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
-- **Notícias do Intune**: contém mensagens ativas para o seu inquilino, incluindo notificações de que o mesmo recebeu as funcionalidades do Intune mais recentes. As informações nesta secção são obtidas diretamente a partir do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
+- **Detalhes de inquilino**: Contém informações, tais como a autoridade de MDM, o total em dispositivos inscritos no seu inquilino e a conta de sua licença. Esta secção também fornece a versão do serviço atual do seu inquilino.
+- **Estado do conector**: Contém informações sobre conectores configurados, por exemplo, o Apple VPP, Windows Store para empresas e conectores de certificados. Com base no respetivo estado atual, os conectores são sinalizados com *Bom estado de funcionamento*, *Aviso* ou *Mau estado de funcionamento*.
+- **Estado de funcionamento do serviço Intune**: Contém incidentes activos ou falhas para o seu inquilino. As informações nesta secção são obtidas diretamente a partir do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
+- **Notícias do Intune**: Contém mensagens ativas para o seu inquilino, que incluem opções como notificações que o seu inquilino tiver recebido as mais recentes funcionalidades do Intune. As informações nesta secção são obtidas diretamente a partir do Centro de Mensagens do Office ([https://portal.office.com](https://portal.office.com)).
 
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Políticas WIP implementadas sem inscrição do utilizador <!-- 1434452 -->
