@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef26e42b2e500d841aa32fa6239e6970e0cfb577
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728995"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829152"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Autónomo – gestão de aplicações Win32 (Pré-visualização Pública)
 
@@ -29,15 +29,11 @@ O Intune autónomo permitirá aceder a melhores funcionalidades de gestão de ap
 
 ## <a name="prerequisites-for-public-preview"></a>Pré-requisitos para a pré-visualização pública
 
-- Windows 10 versão 1607 ou posterior (Enterprise)
+- Windows 10 versão 1607 ou posteriores (versões Enterprise, Pro e Education)
 - O cliente do Windows 10 tem de estar: 
     - associado ao Azure Active Directory (AAD) ou Azure Active Directory Híbrido e
     - inscrito no Intune (gerido pela MDM)
 - O tamanho da aplicação Windows está limitado a 8 GB por aplicação na pré-visualização pública 
-
-> [!NOTE]
-> Estamos atualmente a testar as edições Pro e Education do Windows 10 versão 1607 e teremos todo o gosto em receber o seu feedback.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar o conteúdo da aplicação Win32 para carregamento
 

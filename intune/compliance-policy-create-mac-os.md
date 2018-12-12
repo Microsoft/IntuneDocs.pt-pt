@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 469c0b7c3e67135c53de7c58583d820e1750ad7f
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728808"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828999"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade para dispositivos macOS com o Intune
 
@@ -97,7 +97,7 @@ A firewall protege os dispositivos contra o acesso não autorizado à rede. Pode
 
 **Permitir aplicações transferidas a partir destas localizações**: permite a instalação de aplicações suportadas nos seus dispositivos a partir de diferentes localizações. As suas opções de localização:
 
-- **Não configurado**: predefinição. A opção do controlador de chamadas não tem impacto na conformidade ou não conformidade. 
+- **Não configurado**: predefinição. A opção de controlador de chamadas não tem qualquer impacto na conformidade ou não conformidade. 
 - **Mac App Store**: instalar apenas aplicações da Mac App Store. Não é possível instalar aplicações de terceiros nem de programadores identificados. Se um utilizador selecionar o Controlador de Chamadas para instalar aplicações que não sejam da Mac App Store, o dispositivo será considerado não conforme.
 - **Mac App Store e programadores identificados**: instalar aplicações da Mac App Store e programadores identificados. O macOS verifica a identidade dos programadores e faz outras verificações para confirmar a integridade da aplicação. Se um utilizador selecionar o Controlador de Chamadas para instalar aplicações que não estejam abrangidas por estas opções, o dispositivo será considerado não conforme.
 - **Em qualquer lado**: as aplicações podem ser instaladas a partir de qualquer localização e por qualquer programador. Esta é a opção menos segura.
