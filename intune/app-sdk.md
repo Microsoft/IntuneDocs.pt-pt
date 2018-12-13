@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 890c0eeb104838640ddd1f4daa312c1cab1288c8
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180685"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305952"
 ---
 # <a name="intune-app-sdk-overview"></a>Descrição geral do SDK da Aplicação Intune
 O SDK da Aplicação Intune, disponível para iOS e Android, permite à sua aplicação ter políticas de proteção de aplicações do Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma melhor experiência de utilizador final e administrador de TI, pode utilizar as APIs para personalizar o comportamento da sua aplicação para funcionalidades que requerem a participação da aplicação.
@@ -75,4 +75,4 @@ A proteção de aplicações sem inscrição de dispositivos permite ao serviço
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Ligações de VPN de aplicação a pedido com o mVPN da Citrix 
 Pode gerir dispositivos e aplicações ao combinar o Citrix XenMobile MDX e o Microsoft Intune. Esta combinação significa que pode gerir aplicações com a política de proteção de aplicações do Intune ao utilizar a tecnologia mVPN da Citrix. A integração com a Citrix está disponível para o SDK da Aplicação Intune para iOS e Android com a Ferramenta de Encapsulamento de Aplicações do Intune para iOS e Android (com o sinalizador -citrix).
  
-Para saber mais sobre a Citrix MDX, veja [About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html) (Acerca do MDX Toolkit), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) (Encapsulamento de aplicações Citrix MDX para iOS) e [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) (Encapsulamento de aplicações Citrix MDX para Android).
+Para saber mais sobre a Citrix MDX, veja [About the MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html) (Acerca do MDX Toolkit), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) (Encapsulamento de aplicações Citrix MDX para iOS) e [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) (Encapsulamento de aplicações Citrix MDX para Android).

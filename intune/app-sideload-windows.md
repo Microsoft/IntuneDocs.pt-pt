@@ -5,7 +5,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c15c8915c1fefabf301525b3ef03f74038d31dc
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181247"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325053"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -34,10 +34,10 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 
 
 1. **Registar-se como um programador da Microsoft**<br>
-   [Registe-se como um programador da Microsoft](http://go.microsoft.com/fwlink/?LinkId=268442) com as informações da conta empresarial que utilizou durante o início de sessão para comprar a sua conta da empresa. Este pedido terá de ser autorizado por um responsável da empresa antes de poder receber um certificado de assinatura com código.
+   [Registe-se como um programador da Microsoft](https://go.microsoft.com/fwlink/?LinkId=268442) com as informações da conta empresarial que utilizou durante o início de sessão para comprar a sua conta da empresa. Este pedido terá de ser autorizado por um responsável da empresa antes de poder receber um certificado de assinatura com código.
 
 2. **Obter um certificado empresarial da Symantec**<br>
-  Compre um certificado no [site da Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado quando se registou como um programador da Microsoft receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
+  Compre um certificado no [site da Symantec](https://go.microsoft.com/fwlink/?LinkId=268441) com o seu ID da Symantec. Depois de comprar o certificado, o aprovador da empresa que tiver designado quando se registou como um programador da Microsoft receberá uma mensagem de e-mail a solicitar a aprovação do pedido de certificado. Para mais informações sobre o requisito do certificado da Symantec, consulte as FAQ sobre a inscrição de dispositivos Windows [Por que é que o Windows Phone precisa de um certificado da Symantec?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) FAQ de inscrição de dispositivos Windows.
 
 3.  **Importar certificados**<br>
     Quando o pedido for aprovado, receberá um e-mail com instruções para importar os certificados. Siga as instruções no e-mail para importar os certificados.
@@ -52,7 +52,7 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 
     ![Exportar o certificado de assinatura](./media/wit-walk-cert2.gif)
 
-    No **Assistente para Exportar Certificados**, selecione **Sim, exportar a chave privada** e, em seguida, clique em **Seguinte**. **Selecione Personal Information Exchange –PKCS #12 (.PFX)** e marque **Incluir todos os certificados no caminho de certificação, se possível**. Conclua o assistente. Para mais informações, consulte o artigo [Como Exportar um Certificado com a Chave Privada](http://go.microsoft.com/fwlink/?LinkID=203031).
+    No **Assistente para Exportar Certificados**, selecione **Sim, exportar a chave privada** e, em seguida, clique em **Seguinte**. **Selecione Personal Information Exchange –PKCS #12 (.PFX)** e marque **Incluir todos os certificados no caminho de certificação, se possível**. Conclua o assistente. Para mais informações, consulte o artigo [Como Exportar um Certificado com a Chave Privada](https://go.microsoft.com/fwlink/?LinkID=203031).
 
 6.  **Carregar a aplicação para o Intune**<br>
     Carregue o ficheiro assinado da aplicação e o seu certificado de assinatura com código para disponibilizar a aplicação aos seus utilizadores finais.
@@ -65,39 +65,39 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 
     4.  Conclua o assistente.
 
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemplo: transferir, assinar e implementar a aplicação Portal da Empresa para dispositivos Windows
+## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemplo: Transferir, assinar e implementar a aplicação Portal da empresa para dispositivos Windows
 
 Pode implementar a aplicação Portal da Empresa em dispositivos Windows, incluindo Windows Phone e Windows 10 Mobile, com o Intune em vez de instalá-la a partir da Loja Microsoft. Tem de transferir a aplicação Portal da Empresa e assiná-la com o seu certificado.  Isto apenas é necessário se os utilizadores não utilizarem a Loja da Empresa e pretender implementar o Portal da Empresa em dispositivos Windows Phone 8.1.
 
 
 1.  **Transferir o Portal da Empresa**
 
-    Para implementar a aplicação Portal da Empresa com o Intune, pode transferir a [Aplicação Portal da Empresa do Microsoft Intune para Windows Phone 8.1](http://go.microsoft.com/fwlink/?LinkId=615799) a partir do Centro de Transferências e execute o ficheiro de extração automática (.exe). Este ficheiro contém dois ficheiros:
+    Para implementar a aplicação Portal da Empresa com o Intune, pode transferir a [Aplicação Portal da Empresa do Microsoft Intune para Windows Phone 8.1](https://go.microsoft.com/fwlink/?LinkId=615799) a partir do Centro de Transferências e execute o ficheiro de extração automática (.exe). Este ficheiro contém dois ficheiros:
 
     -   CompanyPortal.appx – a aplicação de instalação do Portal da Empresa para Windows Phone 8.1
 
     -   WinPhoneCompanyPortal.ps1 – um script do PowerShell que pode utilizar para assinar o ficheiro de aplicação Portal da Empresa, para que possa ser implementado em dispositivos Windows Phone 8.1
 
-    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Microsoft para Empresas](http://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazê-lo com o Intune, veja [Manage apps you purchased from the Microsoft Store for Business (Gerir aplicações compradas na Loja Microsoft para Empresas)](windows-store-for-business.md).
+    Em alternativa, pode transferir o Portal da Empresa do Windows Phone 8.1 (pacote com licença offline) ou o Portal da Empresa do Windows 10 (pacote com licença offline) na [Loja Microsoft para Empresas](https://businessstore.microsoft.com/). A aplicação Portal da Empresa terá de ser adquirida com uma licença offline e o pacote apropriado transferido para utilização offline. As listagens das plataformas Windows 8 e Windows Phone 8 na seleção mencionam as respetivas plataformas 8.1 homólogas. Para obter mais detalhes sobre como fazê-lo com o Intune, veja [Manage apps you purchased from the Microsoft Store for Business (Gerir aplicações compradas na Loja Microsoft para Empresas)](windows-store-for-business.md).
 
-2.  **Transferir o Windows Phone SDK** Transfira o Windows Phone SDK 8.0 http://go.microsoft.com/fwlink/?LinkId=615570)) e instale o SDK no seu computador. Este SDK é necessário para gerar um token de inscrição de aplicações.
+2.  **Transferir o Windows Phone SDK** Transfira o Windows Phone SDK 8.0 https://go.microsoft.com/fwlink/?LinkId=615570)) e instale o SDK no seu computador. Este SDK é necessário para gerar um token de inscrição de aplicações.
 
 3.  **Gerar um ficheiro AETX** Faça a gestão de um ficheiro de token de inscrição de aplicações (.aetx) a partir do ficheiro PFX da Symantec com o AETGenerator.exe, que faz parte do Windows Phone SDK 8.0. Para obter instruções sobre como criar um ficheiro AETX, consulte [How to generate an application enrollment token for Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)(Como gerar um token de inscrição de aplicações para Windows Phone)
 
-4.  **Transferir o Windows SDK para Windows 8.1** Transfira e instale o [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Tenha em atenção que o script do PowerShell incluído com a aplicação Portal da Empresa utiliza a localização de instalação predefinida, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se instalar noutra localização, tem de incluí-la num parâmetro de cmdlet.
+4.  **Transferir o Windows SDK para Windows 8.1** Transfira e instale o [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525). Tenha em atenção que o script do PowerShell incluído com a aplicação Portal da Empresa utiliza a localização de instalação predefinida, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se instalar noutra localização, tem de incluí-la num parâmetro de cmdlet.
 
 5.  **Assinar a aplicação com código através do PowerShell** Na qualidade de administrador, abra o **Windows PowerShell** no computador anfitrião instalado com o Windows SDK, o Certificado de Assinatura de Código de Dispositivo Móvel Empresarial da Symantec, navegue para o ficheiro Sign-WinPhoneCompanyPortal.ps1 e execute o script.
 
     **Exemplo 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     Este exemplo assina o CompanyPortal.appx em C:\temp\ e produz o CompanyPortalEnterpriseSigned.appx. Seria utilizada a palavra-passe 1234 do PFX e seria lido o ID de publicador do ficheiro PFX. Também lê o ID empresarial do ficheiro cert.aetx.
 
     **Exemplo 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     Este exemplo assina o CompanyPortal.appx em C:\temp\ e produz o CompanyPortalEnterpriseSigned.appx. Seria utilizada a palavra-passe 1234 do PFX e seria utilizado o ID de publicador especificado.
@@ -128,7 +128,7 @@ O certificado da Symantec utilizado para implementar aplicações para dispositi
 
 1.  Procure um e-mail de renovação enviado pela Symantec cerca de 14 dias antes da expiração do certificado. Este e-mail contém instruções da Symantec sobre como renovar o seu certificado empresarial.
 
-    Para obter informações adicionais sobre os certificados da Symantec, aceda a [www.symantec.com](http://www.symantec.com) ou ligue para o 1-877-438-8776 ou 1-650-426-3400.
+    Para obter informações adicionais sobre os certificados da Symantec, aceda a [www.symantec.com](https://www.symantec.com) ou ligue para o 1-877-438-8776 ou 1-650-426-3400.
 
 2.  Aceda ao site (exemplo: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e inicie sessão com o ID de Fabricante da Symantec e o endereço de e-mail associado ao certificado. Lembre-se de utilizar o mesmo computador para iniciar a renovação e para transferir o certificado.
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032253"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324865"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar os dispositivos como pertencentes à empresa
 
@@ -43,7 +43,7 @@ Após a inscrição, pode [alterar a definição de propriedade](#change-device-
 
 Enquanto administrador do Intune, pode criar e importar um ficheiro (.csv) de valor separado por vírgulas que indica os números IMEI ou números de série. O Intune utiliza estes identificadores para especificar a propriedade dos dispositivos como empresarial durante a inscrição do dispositivo. Pode declarar os números IMEI das plataformas suportadas. Só pode declarar números de série para dispositivos iOS, macOS e Android. Cada número IMEI ou número de série pode ter detalhes especificados na lista para fins administrativos.
 
-<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [Saiba como localizar o número de série de um dispositivo Apple](https://support.apple.com/HT204308).<br>
 [Saiba como localizar o número de série do seu dispositivo Apple](https://support.google.com/store/answer/3333000).
@@ -67,7 +67,7 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 > [!IMPORTANT]
 > Alguns dispositivos Android têm múltiplos números IMEI. O Intune só lê um número IMEI por cada dispositivo inscrito. Se importar um número IMEI, mas não for um número inventariado pelo Intune, o dispositivo será classificado como um dispositivo pessoal em vez de um dispositivo da empresa. Se importar múltiplos números IMEI para um dispositivo, os números não inventariados apresentarão o estado de inscrição **Desconhecido**.<br>
->Tenha também em atenção que não se garante que os Números de série Android sejam exclusivos ou estejam presentes. Contacte o fornecedor do seu dispositivo para saber se o número de série é um ID de dispositivo fiável.
+>Tenha também em atenção: Não é garantido que os números de série Android sejam exclusivos ou presente. Contacte o fornecedor do seu dispositivo para saber se o número de série é um ID de dispositivo fiável.
 >Os números de série comunicados pelo dispositivo ao Intune poderão não corresponder ao ID apresentado nos menus Definições/Acerca do Android no dispositivo. Verifique o tipo de número de série comunicado pelo fabricante do dispositivo.
 >Tentar carregar um ficheiro com números de série que contenham pontos (.) irá fazer com que o carregamento falhe. Os números de série com pontos não são suportados.
 
@@ -77,7 +77,7 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
    ![Área de trabalho de identificador do dispositivo empresarial com o botão Adicionar realçado](./media/add-corp-id.png)
 
-2. No painel **Adicionar identificadores**, especifique o tipo de identificador, **IMEI** ou **Série**.
+2. Na **adicionar identificadores** painel, especifique o tipo de identificador: **IMEI** ou **Serial**.
 
 3. Clique no ícone de pasta e especifique o caminho para a lista que pretende importar. Navegue até ao ficheiro .csv e selecione **Adicionar**. 
 
@@ -87,7 +87,7 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 1. No [Intune, no portal do Azure](https://portal.azure.com), selecione **Inscrição de dispositivos** > **Identificadores de dispositivo da empresa** > **Adicionar** > **Introduzir manualmente**.
 
-2. No painel **Adicionar identificadores**, especifique o tipo de identificador, **IMEI** ou **Série**.
+2. Na **adicionar identificadores** painel, especifique o tipo de identificador: **IMEI** ou **Serial**.
 
 3. Introduza o **Identificador** e os **Detalhes** para cada identificador que pretende adicionar. Quando terminar de introduzir identificadores, selecione **Adicionar**.
 

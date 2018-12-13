@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184612"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324944"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -47,7 +47,7 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração de aplicação
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
@@ -100,14 +100,14 @@ Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem 
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
 
-Para os dispositivos Android, utilize os seguintes pares chave/valor:
+Para dispositivos iOS, utilize os seguintes pares de chave/valor:
 
 | **Chave** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Valores** | <ul><li>**Ativada**: a única conta autorizada é a conta de utilizador gerido definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desativado** (ou qualquer valor que não seja sensível a maiúsculas/minúsculas que corresponda a **ativado**): qualquer conta é permitida.</li></ul> |
+| **Valores** | <ul><li>**Ativado**: A única conta autorizada é a conta de usuário gerenciado definida pelos [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) chave.</li><li>**Desativado** (ou qualquer valor que não é uma correspondência não sensível a **ativado**): Qualquer conta é permitida.</li></ul> |.
 
    > [!NOTE]
-   > Tem de utilizar o OneDrive para iOS 10.34 ou e o Outlook para iOS 2.99.0 ou posterior ao permitir apenas contas de organização configuradas com multi-identidade.
+   > Tem de utilizar o OneDrive para iOS 10.34 ou posterior e o Outlook para iOS 2.99.0 ou posterior e a aplicação tem de ser direcionada pela [políticas de proteção de aplicações do Intune](app-protection-policy.md) quando permitir que apenas configurado contas de organização com várias identidades.
 
 ## <a name="enter-xml-data"></a>Introduzir dados XML
 
@@ -123,7 +123,7 @@ Para saber mais sobre listas de propriedades XML:
 
 Quando criar um ficheiro de configuração de aplicação, pode especificar um ou mais dos seguintes valores com este formato:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

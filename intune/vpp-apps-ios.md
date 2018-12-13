@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184561"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305969"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -56,7 +56,7 @@ Além disso, pode sincronizar, gerir e atribuir livros que tenha comprado na loj
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Suporta as aplicações compradas em volume do Apple Volume Purchase Program para dispositivos iOS
 
-Compre múltiplas licenças para aplicações iOS através do [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) ou do [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). Este processo envolve configurar uma conta VPP da Apple no site da Apple e carregar o token VPP da Apple para o Intune.  Depois disso, pode sincronizar as informações de compra em volume com o Intune e controlar a utilização da aplicação comprada em volume.
+Compre múltiplas licenças para aplicações iOS através do [Apple Volume Purchase Program for Business](https://www.apple.com/business/vpp/) ou do [Apple Volume Purchase Program for Education](https://volume.itunes.apple.com/us/store). Este processo envolve configurar uma conta VPP da Apple no site da Apple e carregar o token VPP da Apple para o Intune.  Depois disso, pode sincronizar as informações de compra em volume com o Intune e controlar a utilização da aplicação comprada em volume.
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>Suporta as aplicações compradas em volume de empresa-empresa para dispositivos iOS
 
@@ -81,7 +81,7 @@ Antes de começar, tem de obter um token VPP da Apple e carregá-lo para a sua c
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obter e carregar um token Apple VPP
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3.  No painel **Intune**, selecione **Aplicações do cliente** > **Tokens iOS VPP** em **Configurar**.
 4.  No painel da lista de tokens VPP, selecione **Criar**.
@@ -123,11 +123,11 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 
 | # | Cenário                                | Convite para Apple VPP                              | Pedido de instalação da aplicação | Pedido de ID Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – utilizador com licença                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | Y                                                                                               | N                                           | Y                                 |
-| 4 | BYOD – dispositivo com licença                           | N                                                                                               | Y                                           | N                                 |
-| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | Y                                           | N                                 |
+| 1 | BYOD – utilizador com licença                             | S                                                                                               | S                                           | S                                 |
+| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | S                                                                                               | S                                           | S                                 |
+| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | S                                                                                               | N                                           | S                                 |
+| 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
+| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
 | 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
 | 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |

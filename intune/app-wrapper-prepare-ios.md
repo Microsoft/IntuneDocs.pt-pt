@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: acf850c8981a68456c8be9bda54c21ad49aba5e9
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112883"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325080"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -179,16 +179,16 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 Abra o Terminal macOS e execute o seguinte comando:
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
 > Alguns parâmetros são opcionais, conforme apresentado na tabela seguinte.
 
-**Exemplo:** O comando de exemplo seguinte executa a Ferramenta de Encapsulamento de Aplicações numa aplicação denominada MyApp.ipa. Um perfil de aprovisionamento e um hash SHA-1 do certificado de assinatura são especificados e que servem para assinar a aplicação encapsulada. É criada a aplicação de saída (MyApp_Wrapped.ipa) e armazenada na sua pasta Ambiente de trabalho.
+**Example:** O comando de exemplo seguinte executa a ferramenta de encapsulamento de aplicações numa aplicação denominada MyApp. Um perfil de aprovisionamento e um hash SHA-1 do certificado de assinatura são especificados e que servem para assinar a aplicação encapsulada. É criada a aplicação de saída (MyApp_Wrapped.ipa) e armazenada na sua pasta Ambiente de trabalho.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -278,7 +278,7 @@ Se a ferramenta de encapsulamento de aplicações não conseguir concluir com ê
 |A aplicação de entrada que especificou não está assinada. Especifique uma aplicação assinada válida.|A ferramenta de encapsulamento de aplicações requer que as aplicações sejam assinadas. Consulte a sua documentação de programador para saber como assinar uma aplicação encapsulada.|
 |A aplicação de entrada que especificou tem de estar no formato .ipa ou .app.|A ferramenta de encapsulamento de aplicações só aceita as extensões .app e .ipa. Certifique-se de que o seu ficheiro de entrada tem uma extensão válida e de que foi compilado como ficheiro .app ou .ipa.|
 |A aplicação de entrada que especificou já foi encapsulada e encontra-se na versão mais recente do modelo de política.|A Ferramenta de Encapsulamento de Aplicações não volta a encapsular uma aplicação encapsulada existente com a versão mais recente do modelo de política.|
-|AVISO: não especificou um hash de certificado SHA1. Certifique-se de que a sua aplicação encapsulada está assinada antes de a implementar.|Certifique-se de que especifica um hash SHA1 válido que siga o sinalizador da linha de comandos –c. |
+|AVISO: Não especificou um hash de certificado SHA1. Certifique-se de que a sua aplicação encapsulada está assinada antes de a implementar.|Certifique-se de que especifica um hash SHA1 válido que siga o sinalizador da linha de comandos –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Ficheiros de registo da Ferramenta de Encapsulamento de Aplicações
 As aplicações encapsuladas com a Ferramenta de Encapsulamento de Aplicações geram registos que são escritos na consola de dispositivos de cliente iOS. Estas informações são úteis se tiver problemas com a aplicação e precisar de determinar se o problema está relacionado com a Ferramenta de Encapsulamento de Aplicações. Para obter estas informações, utilize os passos seguintes:
@@ -289,7 +289,7 @@ As aplicações encapsuladas com a Ferramenta de Encapsulamento de Aplicações 
 
 3.  Filtre os registos guardados do resultado das Restrições da Aplicação ao introduzir o seguinte script na consola:
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     Pode submeter os registos filtrados à Microsoft.
@@ -368,20 +368,20 @@ Para rever a elegibilidade existente de uma aplicação assinada e o perfil de a
 
 3.  Utilize a ferramenta de assinatura de código para verificar a elegibilidade no pacote .app, sendo que `YourApp.app` é o nome real do seu pacote .app.
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  Utilize a ferramenta de segurança para verificar a elegibilidade do perfil de aprovisionamento incorporado da aplicação, sendo que `YourApp.app` é o nome real do seu pacote .app.
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Remover a elegibilidade de uma aplicação ao utilizar o parâmetro –e
 Este comando remove quaisquer capacidades ativadas na aplicação que não estão no ficheiro de elegibilidade. Se remover capacidades que estão a ser utilizadas pela aplicação, pode causar uma falha na sua aplicação. Um exemplo de onde poderá remover capacidades em falta é se tiver uma aplicação produzida pelo fornecedor com todas as capacidades por predefinição.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ Para utilizar o sinalizador `-citrix`, terá de instalar o [encapsulamento de ap
 Execute o seu comando de encapsulamento de aplicações geral com o sinalizador `-citrix` anexado. Atualmente, o sinalizador `-citrix` não aceita argumentos.
 
 **Formato de utilização**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Comando de exemplo**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

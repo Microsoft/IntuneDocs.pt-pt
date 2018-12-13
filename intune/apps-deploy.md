@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: b6e9901bfea3ec129246494d6d8077a440c8a675
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267259"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324927"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -59,13 +59,13 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 6. Na secção **Gerir** do menu, selecione **Atribuições**.
 7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 8. Para a aplicação específica, selecione um **tipo de atribuição**:
-   - **Disponível para dispositivos inscritos**: atribuir a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação Portal da empresa.
-   - **Disponível com ou sem inscrição**: atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. As aplicações da Google Play Store Gerida não suportam esta opção. 
-   - **Obrigatório**: a aplicação é instalada em dispositivos nos grupos selecionados.
-   - **Desinstalar**: a aplicação é desinstalada dos dispositivos nos grupos selecionados.
+   - **Disponível para dispositivos inscritos**: Atribua a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação Portal da empresa.
+   - **Disponível com ou sem inscrição**: Atribua esta aplicação a grupos de utilizadores cujos dispositivos não inscritos no Intune. As aplicações da Google Play Store Gerida não suportam esta opção. Os utilizadores tem de ser atribuídos uma licença do Intune, consulte [licenças do Intune](licenses.md).
+   - **Necessário**: A aplicação está instalada nos dispositivos nos grupos selecionados. Algumas plataformas podem ter os pedidos adicionais para o utilizador final confirmar antes de inicia a instalação da aplicação.
+   - **Desinstalar**: A aplicação é desinstalada dos dispositivos nos grupos selecionados, se o Intune anteriormente instalou a aplicação no dispositivo por meio de um "disponível para dispositivos inscritos" ou "Required" atribuição usando a implantação do mesmo. Ligações da Web não podem ser removidas após a implementação.
 
      > [!NOTE]
-     > **Apenas para aplicações iOS**: se tiver criado um perfil VPN de iOS que contenha definições de VPN por aplicação, poderá selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
+     > **Apenas para aplicações iOS**: Se tiver criado um iOS perfil VPN que contém as definições de VPN por aplicação, pode selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
      >
      > **Para aplicações Android apenas**: Se implementar uma aplicação Android como **disponível com ou sem inscrição**, relatórios de estado só estará disponível em dispositivos inscritos.
 

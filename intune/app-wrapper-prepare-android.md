@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112884"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324910"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações Android para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -45,7 +45,7 @@ Antes de executar a ferramenta, consulte as [Considerações de segurança para 
 
 -   A aplicação tem de ter sido programada pela sua empresa ou para a mesma. Não pode utilizar esta ferramenta em aplicações transferidas a partir da Google Play Store.
 
--   Para executar a Ferramenta de Encapsulamento de Aplicações, tem de instalar a versão mais recente do [Ambiente de Tempo de Execução Java](http://java.com/download/) e, em seguida, certificar-se de que a variável de caminho Java foi definida como C:\ProgramData\Oracle\Java\javapath nas variáveis do seu ambiente do Windows. Para obter mais ajuda, consulte a [documentação do Java](http://java.com/download/help/).
+-   Para executar a Ferramenta de Encapsulamento de Aplicações, tem de instalar a versão mais recente do [Ambiente de Tempo de Execução Java](https://java.com/download/) e, em seguida, certificar-se de que a variável de caminho Java foi definida como C:\ProgramData\Oracle\Java\javapath nas variáveis do seu ambiente do Windows. Para obter mais ajuda, consulte a [documentação do Java](https://java.com/download/help/).
 
     > [!NOTE]
     > Nalguns casos, a versão de 32 bits do Java pode originar problemas de memória. É boa ideia instalar a versão de 64 bits.
@@ -63,7 +63,7 @@ Antes de executar a ferramenta, consulte as [Considerações de segurança para 
 
 2.  Aceite o contrato de licença e conclua a instalação.
 
-Não se esqueça da pasta na qual instalou a ferramenta. A localização predefinida é: C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
+Não se esqueça da pasta na qual instalou a ferramenta. A localização predefinida é: C:\Program ficheiros (x86) \Microsoft Intune aplicações móveis Management\Android\App ferramenta de encapsulamento.
 
 ## <a name="run-the-app-wrapping-tool"></a>executar a Ferramenta de Encapsulamento de Aplicações
 
@@ -71,12 +71,12 @@ Não se esqueça da pasta na qual instalou a ferramenta. A localização predefi
 
 2. Na pasta onde instalou a ferramenta, importe o módulo do PowerShell da Ferramenta de Encapsulamento de Aplicações:
 
-   ```
+   ```PowerShell
    Import-Module .\IntuneAppWrappingTool.psm1
    ```
 
 3. Execute a ferramenta utilizando o comando **invoke-AppWrappingTool** cuja sintaxe de utilização está indicada em seguida:
-   ```
+   ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
    ```
@@ -99,18 +99,18 @@ Não se esqueça da pasta na qual instalou a ferramenta. A localização predefi
 
 - Para ver informações de utilização detalhadas da ferramenta, introduza o comando:
 
-    ```
+    ```PowerShell
     Help Invoke-AppWrappingTool
     ```
 
 **Example:**
 
 Importe o módulo PowerShell.
-```
+```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
 Execute a Ferramenta de Encapsulamento de Aplicações na aplicação nativa HelloWorld.apk.
-```
+```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
 
@@ -142,7 +142,7 @@ Para impedir potenciais ataques de spoofing, divulgação de informações e ata
 
 -   Importe a aplicação de saída para o Intune no computador onde a ferramenta está a ser executada. Veja [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para obter mais informações sobre a ferramenta de chave Java.
 
--   Se a aplicação de saída e a ferramenta estiverem num caminho UNC (Universal Naming Convention), mas não estiver a executar a ferramenta e os ficheiros de entrada no mesmo computador, configure o ambiente de forma a torná-lo seguro com a [Segurança IPsec](http://wikipedia.org/wiki/IPsec) ou a [assinatura do protocolo SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
+-   Se a aplicação de saída e a ferramenta estiverem num caminho UNC (Universal Naming Convention), mas não estiver a executar a ferramenta e os ficheiros de entrada no mesmo computador, configure o ambiente de forma a torná-lo seguro com a [Segurança IPsec](https://wikipedia.org/wiki/IPsec) ou a [assinatura do protocolo SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
 
 -   Certifique-se de que a aplicação vem de uma origem fidedigna.
 
@@ -167,11 +167,17 @@ Estas instruções são específicas para todas as aplicações Android e Xamari
 > O termo "ID de cliente" ligado à sua aplicação é o mesmo que o termo "ID de aplicação" do Portal do Azure ligado à sua aplicação. 
 > * Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.
 
-2. Ative a inscrição predefinida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+2. Ative inscrição predefinida ao colocar o valor seguinte no manifesto:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > Esta tem de ser a única integração da MAM-WE na aplicação. Poderão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
 
-3. Ative a política de MAM exigida ao colocar o valor seguinte no manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+3. Ative a política de MAM necessária ao colocar o valor seguinte no manifesto:
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > Esta ação força o utilizador a transferir o Portal da Empresa para o dispositivo e a concluir o fluxo da inscrição predefinida antes da utilização.
 

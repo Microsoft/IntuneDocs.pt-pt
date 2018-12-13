@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df2701f3eb98201076487981eab9c4b2b6c1227b
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 941b99365326d9f97009b2d10c90cccbb17126e0
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247106"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305884"
 ---
 #  <a name="intune-data-warehouse-api"></a>API do Armazém de Dados do Intune
 
@@ -66,6 +66,6 @@ O OData define um modelo de dados abstrato e um protocolo que permite a qualquer
 
 Saiba mais sobre como trabalhar com o Azure AD ao ler [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-Encontre recursos de OData em [odata.org](http://www.odata.org).
+Encontre recursos de OData em [odata.org](https://www.odata.org).
   
-Consultar a norma da Verão 4.0 de OData em OData Version 4.0 (Versão 4.0 de OData) (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Consultar a norma da Verão 4.0 de OData em OData Version 4.0 (Versão 4.0 de OData) (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

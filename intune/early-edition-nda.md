@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 77aa0d1544351adaa8d338bc7c4c7182d35941e8
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 1e72160dd88c14f7160f75ea30b803551f49392a
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267026"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325029"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A edição antecipada do Microsoft Intune – Dezembro de 2018
 
@@ -73,7 +73,7 @@ Ao utilizar a deteção de rede fidedigna, poderá impedir que os perfis VPN cri
 [Definições de VPN do Windows 10](vpn-settings-windows-10.md) lista as definições de VPN atuais.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>O SDK da aplicação Intune irá suportar as chaves de encriptação de 256 bits <!-- 1832174 -->
-Quando a encriptação está ativada por políticas de proteção de aplicações, o SDK da aplicação Intune para iOS utilizará as chaves de encriptação de 256 bits. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK.
+O SDK da aplicação Intune para Android irá utilizar as chaves de encriptação de 256 bits, quando a encriptação está ativada por políticas de proteção de aplicações. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK.
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Definições do PC partilhadas ativadas no perfil do Intune <!-- 1907917 -->
 Atualmente, pode configurar definições do PC compartilhado em dispositivos de ambiente de trabalho Windows 10 com uma definição de OMA-URI personalizada. Será adicionado um novo perfil para configurar definições do PC compartilhado (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10 e posterior** > **dispositivos de vários utilizadores partilhado**).

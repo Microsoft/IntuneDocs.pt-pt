@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: b2b160417551274457924ad69f7a905bac427b89
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 2e4729ffbbf7a3b00a7b6d49d287266831375e47
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267060"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325097"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -484,7 +484,7 @@ Ao partilhar documentos através de `UIActivityViewController` e de `UIDocumentI
 
 6. Configure a `NSExtensionActivationRule` para que suporte um único ficheiro e todos os tipos de `CFBundleDocumentTypes` da aplicação com o prefixo `com.microsoft.intune.mam`. Por exemplo, se a aplicação suportar public.text e public.image, a regra de ativação será:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -500,7 +500,7 @@ Ao partilhar documentos através de `UIActivityViewController` e de `UIDocumentI
 
 Se a sua aplicação já tiver as extensões Partilhar ou Ação, a respetiva `NSExtensionActivationRule` terá de ser modificada para permitir os tipos do Intune. Para cada tipo suportado pela extensão, adicione um tipo com o prefixo `com.microsoft.intune.mam`. Por exemplo, se a regra de ativação existente for:  
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -517,7 +517,7 @@ Se a sua aplicação já tiver as extensões Partilhar ou Ação, a respetiva `N
 
 Deverá ser alterada para:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,

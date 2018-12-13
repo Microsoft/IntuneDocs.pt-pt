@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 67855a7c52a1fad16f64106230658a730d55afd6
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266941"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305935"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicações a dispositivos com perfil de trabalho do Android com o Intune
 
@@ -84,7 +84,7 @@ Quando o programador de uma aplicação atualiza as permissões com uma nova ver
 
 Visite periodicamente a consola do managed Google Play para verificar a existência de novas permissões. Pode configurar o Google Play para enviar para si ou para outras pessoas um e-mail sempre que sejam necessárias novas permissões para uma aplicação aprovada. Se atribuir uma aplicação e observar que esta não está instalada nos dispositivos, verifique se existem novas permissões ao seguir os seguintes passos:
 
-1. Aceda ao [Google Play](http://play.google.com/work).
+1. Aceda ao [Google Play](https://play.google.com/work).
 2. Inicie sessão com a conta Google que utilizou para publicar e aprovar as aplicações.
 3. Selecione o separador **Atualizações** e verifique se alguma aplicação requer uma atualização.  
     Todas as aplicações indicadas necessitam de novas permissões e só são atribuídas depois de aplicadas.
