@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40e189a3bb9e45851011ae1961ef89576dbcb5d0
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267043"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324978"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
 
@@ -261,6 +261,19 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Abrir ligações no Intune Managed Browser vs. Microsoft Edge 
+
+O Intune Managed Browser e o Microsoft Edge são agora considerados browsers protegidos/browsers geridos por políticas. Hoje em dia, as políticas de proteção de aplicações existentes fazem com que as ligações Web de aplicações geridas pelo Intune sejam abertas num browser específico, consoante o seu cenário e a plataforma. 
+
+No Android: 
+* Managed Browser se o MB e o Edge estiverem no dispositivo, a menos que a definição de configuração da aplicação "com.microsoft.intune.useEdge" esteja definida como "verdadeira" para todas as aplicações geridas pelo Intune com uma política de browsers geridos necessária.  
+* Microsoft Edge se só este estiver no dispositivo e for visado pela política.
+* Managed Browser se apenas este estiver no dispositivo e for visado pela política. 
+
+No iOS, para aplicações que integraram o SDK do Intune para iOS v. 9.0.9+: 
+* Managed Browser se o MB e o Edge estiverem no dispositivo, a menos que a definição de configuração da aplicação "com.microsoft.intune.useEdge" esteja definida como "verdadeira" para todas as aplicações geridas pelo Intune com uma política de browsers geridos necessária **ou** Microsoft Edge se este estiver instalado e tiver recebido a política. 
+* Microsoft Edge se apenas este estiver no dispositivo e se for visado e tiver recebido a política. 
+* Managed Browser se apenas este estiver no dispositivo e se for visado e tiver recebido a política.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Como aceder aos registos da aplicação gerida através do Managed Browser no iOS
 
