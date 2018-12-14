@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 24af17395cee1e84d72fdb066c0a4ffb949f3045
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325148"
+ms.locfileid: "53378288"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -499,12 +499,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... em que `service` é uma das seguintes SaveLocations:
+O `service` parâmetro tem de ser um dos seguintes `SaveLocation` valores:
 
 
-    * `SaveLocation.ONEDRIVE_FOR_BUSINESS`
-    * `SaveLocation.LOCAL`
-    * `SaveLocation.SHAREPOINT`
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 O método anterior para determinar se uma política de utilizador permitia guardar dados em várias localizações era `getIsSaveToPersonalAllowed()`, dentro da mesma classe **AppPolicy**. Esta função é agora **preterida** e não deve ser utilizada, a invocação seguinte é equivalente a `getIsSaveToPersonalAllowed()`:
 

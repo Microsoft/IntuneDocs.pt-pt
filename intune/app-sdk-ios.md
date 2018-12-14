@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 2e4729ffbbf7a3b00a7b6d49d287266831375e47
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 084294ca6b715f05957e973635a05abd8c0762a2
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325097"
+ms.locfileid: "53378271"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -127,21 +127,21 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
 4. Depois de ativar a partilha de keychain, siga estes passos para criar um grupo de acesso separado no qual serão armazenados os dados do SDK da Aplicação do Intune. Pode criar um grupo de acesso de keychain com a IU ou o ficheiro de elegibilidade. Se estiver a utilizar a IU para criar o grupo de acesso de keychain, siga os passos abaixo:
 
-   1. Se a sua aplicação móvel não tiver qualquer keychain aceder grupos definidos, adicionar a aplicação do pacote ID como o **primeiro** grupo.
-
-   2. Adicione o grupo de keychain partilhado `com.microsoft.intune.mam` aos seus grupos de acesso existentes. O SDK da Aplicação do Intune utiliza este grupo de acesso para armazenar dados.
-
-   3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
-
-       ![SDK da Aplicação do Intune para iOS: partilha de keychain](./media/intune-app-sdk-ios-keychain-sharing.png)
-
-   4. Se estiver a editar diretamente o ficheiro de elegibilidade, em vez de utilizar a IU do Xcode mostrada acima para criar grupos de acesso de keychain, inclua o acesso de keychain no início com `$(AppIdentifierPrefix)` (o Xcode processa o ficheiro automaticamente). Por exemplo:
-
-           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
-
-      > [!NOTE]
-      > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS. Se a aplicação não tinha anteriormente nenhum ficheiro de elegibilidade, a ativação da partilha de keychain (passo 3) deverá levar à geração de um ficheiro de elegibilidade pelo Xcode para a aplicação. Certifique-se de que o ID do pacote da aplicação é a primeira entrada na lista.
+    1. Se a sua aplicação móvel não tiver qualquer keychain aceder grupos definidos, adicionar a aplicação do pacote ID como o **primeiro** grupo.
+    
+    2. Adicione o grupo de keychain partilhado `com.microsoft.intune.mam` aos seus grupos de acesso existentes. O SDK da Aplicação do Intune utiliza este grupo de acesso para armazenar dados.
+    
+    3. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
+    
+        ![SDK da Aplicação do Intune para iOS: partilha de keychain](./media/intune-app-sdk-ios-keychain-sharing.png)
+    
+    4. Se estiver a editar diretamente o ficheiro de elegibilidade, em vez de utilizar a IU do Xcode mostrada acima para criar grupos de acesso de keychain, inclua o acesso de keychain no início com `$(AppIdentifierPrefix)` (o Xcode processa o ficheiro automaticamente). Por exemplo:
+    
+        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+    
+        > [!NOTE]
+        > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS. Se a aplicação não tinha anteriormente nenhum ficheiro de elegibilidade, a ativação da partilha de keychain (passo 3) deverá levar à geração de um ficheiro de elegibilidade pelo Xcode para a aplicação. Certifique-se de que o ID do pacote da aplicação é a primeira entrada na lista.
 
 5. Inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Não se esqueça de guardar as alterações antes de prosseguir para o passo seguinte.
 
@@ -500,41 +500,41 @@ Ao partilhar documentos através de `UIActivityViewController` e de `UIDocumentI
 
 Se a sua aplicação já tiver as extensões Partilhar ou Ação, a respetiva `NSExtensionActivationRule` terá de ser modificada para permitir os tipos do Intune. Para cada tipo suportado pela extensão, adicione um tipo com o prefixo `com.microsoft.intune.mam`. Por exemplo, se a regra de ativação existente for:  
 
-    ```objc
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
     ).@count > 0
-    ```
+).@count > 0
+```
 
 Deverá ser alterada para:
 
-    ```objc
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
     ).@count > 0
-    ```
+).@count > 0
+```
 
 > [!NOTE]
 > A ferramenta IntuneMAMConfigurator pode servir para adicionar os tipos do Intune à regra de ativação. Se a regra de ativação existente utilizar as constantes de cadeia predefinidas (por exemplo, NSExtensionActivationSupportsFileWithMaxCount NSExtensionActivationSupportsText, etc.), a sintaxe de predicado poderá ficar bastante complexa. A ferramenta IntuneMAMConfigurator também pode servir para converter a regra de ativação das constantes de cadeia para uma cadeia de predicado ao adicionar os tipos de Intune.

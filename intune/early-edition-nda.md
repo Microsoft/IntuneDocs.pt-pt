@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1e72160dd88c14f7160f75ea30b803551f49392a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 633ce26a98f9cc7895e9ac4706498bf8c8c773d6
+ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325029"
+ms.locfileid: "53378237"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A edição antecipada do Microsoft Intune – Dezembro de 2018
 
@@ -113,6 +113,9 @@ Para escolher que telas para ignorar, aceda a **inscrição de dispositivos** > 
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Algumas definições de BitLocker suportam a edição Windows 10 Pro<!-- 2727036 -->
 Será capaz de criar um perfil de configuração que define as definições do endpoint protection em dispositivos Windows 10, inclusive BitLocker. Esta ação adiciona suporte para a edição Windows 10 Professional para algumas configurações de disco BitLocker. Para ver as definições de edição atuais do Windows 10, consulte [definições do Endpoint protection para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Campos de relatórios de dispositivos do Intune <!-- 2748738 -->
 Intune irá oferecer relatórios campos, incluindo Android fabricante, modelo e versão de patch de segurança, bem como o modelo de iOS adicionais do dispositivo. No Intune, estes campos estarão disponíveis, selecionando **aplicações de cliente** > **estado de proteção de aplicações** e escolha **relatório de proteção de aplicações: iOS, Android**. Além disso, esses parâmetros irão ajudá-lo a configurar o **permitir** lista para o fabricante do dispositivo (Android), o **permitir** lista para o modelo do dispositivo (Android e iOS) e o patch de segurança mínima para Android definição de versão. 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Campos de relatórios de dispositivos do Intune <!-- 2748738 -->
