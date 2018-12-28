@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977359"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531333"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -100,10 +100,10 @@ Se um dispositivo tiver múltiplos perfis de configuração e estados de conform
 
 |Estado  |Gravidade  |
 |---------|---------|
-|Pending     |1|
-|Succeeded     |2|
-|Failed     |3|
-|Error     |4|
+|Pendente     |1|
+|Bem-sucedido     |2|
+|Com Falhas     |3|
+|Erro     |4|
 
 Quando um dispositivo tem múltiplos perfis de configuração, é atribuído o nível de gravidade mais elevado de todos os perfis a esse dispositivo.
 
@@ -135,12 +135,12 @@ Se um dispositivo tiver múltiplas políticas de conformidade e estados de confo
 
 |Estado  |Gravidade  |
 |---------|---------|
-|Unknown     |1|
+|Desconhecido     |1|
 |NotApplicable     |2|
 |Compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
-|Error|6|
+|Erro|6|
 
 Quando um dispositivo tem múltiplas políticas de conformidade, é atribuído o nível de gravidade mais elevado de todas as políticas a esse dispositivo.
 
@@ -159,21 +159,21 @@ Pode implementar a política de conformidade a utilizadores em grupos de utiliza
 
 Um conjunto de **Definições de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incorporadas é avaliado em todos os dispositivos inscritos no Intune. Estas incluem:
 
-- **Marcar os dispositivos sem política de conformidade atribuída como**: esta propriedade tem dois valores:
+- **Marcar os dispositivos sem política de conformidade atribuída como**: Esta propriedade tem dois valores:
 
   - **Compatível**: a funcionalidade de segurança está desativada
   - **Não compatível** (predefinição): a funcionalidade de segurança está ativada
 
   Se um dispositivo não tiver uma política de conformidade atribuída, este dispositivo é considerado não conforme. Por predefinição, os dispositivos são marcados como **Compatíveis**. Se utilizar o acesso condicional, recomendamos que altere a definição para **Não compatível**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, então o Portal da Empresa indica `No compliance policies have been assigned`.
 
-- **Deteção avançada de jailbreak**: quando ativada, esta definição faz com que os dispositivos iOS se registem no Intune com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
+- **Deteção avançada de jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS a entrada com o Intune com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
 
   Ativar esta definição exige que os dispositivos:
   - Ativem os serviços de localização ao nível do SO
   - Permitam que o Portal da Empresa utilize os serviços de localização
-  - Avaliem e comuniquem o estado de jailbreak do mesmo no Intune, pelo menos, uma vez a cada 72 horas. Caso contrário, o dispositivo será marcado como não conforme. A avaliação é acionada ao abrir a aplicação do Portal da Empresa ou ao mover fisicamente o dispositivo para uma distância de 500 metros ou mais.
+  - Avaliem e comuniquem o estado de jailbreak do mesmo no Intune, pelo menos, uma vez a cada 72 horas. Caso contrário, o dispositivo será marcado como não conforme. A avaliação é acionada ao abrir a aplicação do Portal da Empresa ou ao mover fisicamente o dispositivo para uma distância de 500 metros ou mais. Se o dispositivo não se Mexe medidores 500 em 72 horas, o utilizador precisa abrir a aplicação Portal da empresa para a avaliação de quebra de desbloqueado por aprimorada.
 
-- **Período de validade do estado de conformidade (dias)**: introduza o período de tempo durante o qual os dispositivos devem comunicar o estado para todas as políticas de conformidade recebidas. Os dispositivos que não devolvam o estado dentro deste período de tempo são tratados como não conformes. O valor predefinido é 30 dias.
+- **Período de validade do Estado de conformidade (dias)**: Introduza o período de tempo que os dispositivos comunicam o estado para todas as políticas de conformidade recebidas. Os dispositivos que não devolvam o estado dentro deste período de tempo são tratados como não conformes. O valor predefinido é 30 dias.
 
 Todos os dispositivos têm uma **Política de Conformidade de Dispositivos Incorporada** (Portal do Azure > Conformidade do dispositivo > Conformidade com a política). Utilize esta política incorporada para monitorizar estas definições.
 

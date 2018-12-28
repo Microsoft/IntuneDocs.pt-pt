@@ -1,7 +1,7 @@
 ---
 title: Como eliminar apenas os dados empresariais das aplicações
 titleSuffix: Microsoft Intune
-description: Saiba como eliminar seletivamente as aplicações com o Microsoft Intune.
+description: Saiba como eliminar seletivamente apenas dados empresariais de aplicações geridas do Intune com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 19d173cabda71b4e6a24008eb94f9665c54ba924
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184357"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642579"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 

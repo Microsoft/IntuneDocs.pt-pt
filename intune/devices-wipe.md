@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861018"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553661"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -81,12 +81,12 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** os dados pessoais são removidos. Dados empresariais da aplicação e as aplicações não são removidas.|
+|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Os dados da aplicação da empresa são removidos. Os dados pessoais e as aplicações não são removidas.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
-|E-mail|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
+|Email|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
 |Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos. Isto exige que a aplicação móvel do Outlook seja implementada primeiro como uma aplicação Necessária para os utilizadores de iOS.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
 |Contactos |Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.
@@ -104,7 +104,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|
 |Definições de perfil de certificado|Os certificados são revogados, mas não removidos.|Os certificados são removidos e revogados.|
 |Agente de gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
-|E-mail|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
+|Email|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
 |Outlook|Os e-mails recebidos pela aplicação Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é apagado se a inscrição do dispositivo for anulada.|Os e-mails recebidos pela aplicação Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é apagado se a inscrição do dispositivo for anulada.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
 |Contactos |Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.|Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.
@@ -135,9 +135,9 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportada.|Removidos.|
-|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportada.|Os certificados são removidos e revogados.|
-|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportada.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
+|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportado.|Removidos.|
+|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportado.|Os certificados são removidos e revogados.|
+|Email|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportado.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
 |Anulação da associação ao Azure AD|Não.|Não.|O registo do Azure AD é removido.|Não aplicável. No Windows 10, não pode extinguir dispositivos associados ao Azure AD.|
 
 ### <a name="retire"></a>Extinguir

@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d95bc665d271eac55682fa8f0aeee2bf267c48ef
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267094"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553695"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -54,7 +54,7 @@ O Microsoft Intune suporta Transport Layer Security (TLS) 1.2 + para fornecer en
 #### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>O SDK da aplicação Intune irá suportar as chaves de encriptação de 256 bits <!-- 1832174 -->
 O SDK da aplicação Intune para Android utiliza agora as chaves de encriptação de 256 bits quando a encriptação está ativada por políticas de proteção de aplicações. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK.
 
-### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Versão de atualização automática de Microsoft 4,50 necessária para dispositivos macOS <!-- 3503442 -->
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Versão de atualização automática de Microsoft 4.5.0 necessária para dispositivos macOS <!-- 3503442 -->
 Para continuar a receber atualizações para o Portal da empresa e outros aplicativos do Office, dispositivos macOS geridos pelo Intune tem de atualizar para a atualização automática do Microsoft 4.5.0. Os utilizadores poderão já ter esta versão para seus aplicativos do Office.
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>O Intune necessita de macOS 10.12 ou posterior <!-- 2827778 -->

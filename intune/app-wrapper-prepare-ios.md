@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: acf850c8981a68456c8be9bda54c21ad49aba5e9
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325080"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738057"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -100,7 +100,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 4. Clique em **Certificados, IDs e Perfis**.
 
-   ![Portal de Programador da Apple](./media/iOS-signing-cert-1.png)
+   ![Portal de programador da Apple - certificados, IDs e perfis](./media/iOS-signing-cert-1.png)
 
 5. Clique no ![sinal de adição do portal de Programador da Apple](./media/iOS-signing-cert-2.png) no canto superior direito para adicionar um certificado iOS.
 
@@ -125,7 +125,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 11. Siga as instruções do site de programador da Apple acima sobre como criar um ficheiro CSR. Guarde o ficheiro CSR no seu computador macOS.
 
-    ![Pedir um certificado a partir de uma Autoridade de Certificação no Acesso a Porta-chaves](./media/iOS-signing-cert-6.png)
+    ![Introduza as informações para o certificado que está a solicitar](./media/iOS-signing-cert-6.png)
 
 12. Regresse ao site de programador da Apple. Clique em **Continue** (Continuar). Em seguida, carregue o ficheiro CSR.
 
@@ -141,7 +141,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 16. É apresentada uma janela informativa. Desloque para baixo e procure a etiqueta **Impressões Digitais**. Copie a cadeia **SHA1** (desfocada) a utilizar como argumento "-c" para a Ferramenta de Encapsulamento de Aplicações.
 
-    ![Adicionar o certificado a um porta-chaves](./media/iOS-signing-cert-9.png)
+    ![informações do iPhone - cadeia de caracteres de SHA1 de impressões digitais](./media/iOS-signing-cert-9.png)
 
 
 

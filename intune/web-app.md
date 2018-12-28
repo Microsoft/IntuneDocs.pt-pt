@@ -1,12 +1,12 @@
 ---
 title: Adicionar aplicações Web ao Microsoft Intune
 titleSuffix: ''
-description: Saiba como adicionar aplicações Web ao Microsoft Intune.
+description: Saiba como adicionar aplicações web (aplicativos de cliente-servidor) para o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 69a08955144bea9b98f881219583e666d18dfd5b
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 4f0c5d79c17c3cc2ada275337d266c134eed7e91
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247055"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642545"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicações Web ao Microsoft Intune
 

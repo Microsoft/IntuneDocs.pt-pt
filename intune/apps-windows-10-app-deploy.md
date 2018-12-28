@@ -1,7 +1,7 @@
 ---
 title: Implementação de aplicações para Windows 10 através do Microsoft Intune
 titlesuffix: ''
-description: Saiba mais sobre os cenários de aplicações para Windows 10 disponíveis com o Microsoft Intune.
+description: Saiba mais sobre cenários de implementação de aplicação com o Windows 10 disponíveis com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977291"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642613"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementação de aplicações para Windows 10 através do Microsoft Intune 
 
@@ -45,10 +45,10 @@ As aplicações da Microsoft Store para Empresas são aplicações modernas comp
 ## <a name="installing-apps-on-windows-10-devices"></a>Instalar aplicações em dispositivos com o Windows 10
 Dependendo do tipo de aplicação, a aplicação pode ser instalada num dispositivo com o Windows 10 através de uma de duas formas:
 
-- **Contexto de Utilizador**: quando uma aplicação for implementada no contexto de utilizador, a aplicação gerida será instalada no dispositivo desse utilizador quando este iniciar sessão no mesmo. Tenha em atenção que a instalação da aplicação não será bem-sucedida até o utilizador iniciar sessão no dispositivo. 
+- **Contexto de usuário**: Quando uma aplicação é implementada no contexto de utilizador, a aplicação gerida será instalada para esse utilizador no dispositivo quando o utilizador inicia sessão no dispositivo. Tenha em atenção que a instalação da aplicação não será bem-sucedida até o utilizador iniciar sessão no dispositivo. 
     - As aplicações de linha de negócio e as aplicações empresariais (online e offline) podem ser implementadas no contexto de utilizador e suportarão as intenções Necessário e Disponível.
     - As aplicações Win32 criadas como aplicações de **Modo de Utilizador** ou de **Modo Duplo** podem ser implementadas em contexto de utilizador e irão suportar as intenções **Necessário** e **Disponível**. 
-- **Contexto do Dispositivo**: quando uma aplicação for implementada no contexto do dispositivo, a aplicação gerida será instalada diretamente no dispositivo pelo Intune.
+- **Contexto de dispositivo**: Quando uma aplicação é implementada no contexto de dispositivo, será instalada diretamente para o dispositivo a aplicação gerida pelo Intune.
     - Apenas as aplicações de linha de negócio modernas e offline para aplicações de negócio a Microsoft Store licenciado podem ser implementado no contexto de dispositivo em só irão suportar a intenção necessária.
     - As aplicações Win32 criadas como aplicações de **Modo de Computador** ou de **Modo Duplo** podem ser implementadas em contexto de utilizador e irão suportar apenas a intenção **Necessário**.
 
@@ -57,11 +57,11 @@ Dependendo do tipo de aplicação, a aplicação pode ser instalada num disposit
 
 Quando uma aplicação for implementada no contexto do dispositivo, a instalação só será bem-sucedida quando direcionada para um dispositivo que suporte o contexto do dispositivo. Além disso, implementar no contexto do dispositivo suporta as seguintes condições:
 - Se uma aplicação for implementada no contexto do dispositivo e direcionada para um utilizador, a instalação irá falhar com o seguinte estado e erro apresentados na consola de administração:
-    - Estado: falha.
-    - Erro: não é possível direcionar para um utilizador com uma instalação de contexto de Dispositivo.
+    - Estado: Não foi possível.
+    - Erro: Um utilizador não pode ser segmentado com um dispositivo de contexto instalar.
 - Se uma aplicação for implementada no contexto do dispositivo, mas direcionada para um dispositivo que não suporta o contexto do dispositivo, a instalação irá falhar com o seguinte estado e erro apresentados na consola de administração:
-    - Estado: falha.
-    - Erro: esta plataforma não suporta instalações de contexto do dispositivo. 
+    - Estado: Não foi possível.
+    - Erro: Esta plataforma não suporta instalações de contexto de dispositivo. 
 
 > [!Note]
 > Assim que uma atribuição de aplicações for guardada com uma implementação específica, o contexto não pode ser alterado para essa atribuição, exceto para aplicações modernas. No caso da aplicação moderna, o contexto pode ser alterado do contexto de utilizador para o contexto do dispositivo. 

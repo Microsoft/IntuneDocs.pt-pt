@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
-ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
+ms.openlocfilehash: 7ede43a78e762548608149b428d963150ed65e84
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51276120"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642443"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Que informações é que a minha organização pode ver quando inscrevo o meu dispositivo?
 
@@ -39,10 +39,10 @@ Quando inscreve um dispositivo no Microsoft Intune, a sua organização não con
 
 **O que a sua organização conseguirá sempre ver:**
 
-- Modelo do dispositivo, por exemplo Google Pixel
+- Modelo do dispositivo, como o Google Pixel
 - Fabricante do dispositivo, como Microsoft
 - Sistema operativo e versão, por exemplo iOS 12.0.1
-- Nomes de aplicações, como Microsoft Word: nos dispositivos pessoais, a sua organização só consegue ver o seu inventário de aplicações geridas. Nos dispositivos pertencentes à empresa, a sua organização consegue ver todo o seu inventário de aplicações.
+- Nomes de aplicações, como o Microsoft Word: Nos dispositivos pessoais, sua organização só pode ver o inventário da aplicação gerida. Nos dispositivos pertencentes à empresa, a sua organização consegue ver todo o seu inventário de aplicações.
 - Proprietário do dispositivo
 - Nome do dispositivo
 - Número de série do dispositivo
@@ -50,8 +50,8 @@ Quando inscreve um dispositivo no Microsoft Intune, a sua organização não con
 
 **Informações que a sua organização poderá conseguir ver:**
 
--  Número de telefone: nos dispositivos pertencentes à **empresa**, estará visível o seu número de telefone completo. Nos dispositivos **pessoais**, apenas os últimos quatro dígitos do número de telefone estarão visíveis. Pode ver o **Tipo de Propriedade** de cada dispositivo individual. Para tal, abra a página **Detalhes do Dispositivo** do dispositivo.
-- Espaço de armazenamento do dispositivo: se não conseguir instalar uma aplicação necessária, a sua organização poderá ver o espaço de armazenamento do seu dispositivo para verificar se o espaço é insuficiente.  
--  Localização: a organização nunca consegue ver a localização do dispositivo, exceto se tiver um dispositivo iOS supervisionado e este tiver sido perdido. [Como posso saber?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventário de aplicações: se a sua organização utilizar a Defesa Contra Ameaças para Dispositivos Móveis, conseguirá ver mais detalhes sobre as aplicações que estão no seu dispositivo iOS. Saiba mais sobre a [Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md).
-- Informações de rede: algumas informações sobre ligações de rede para dispositivos Android podem estar disponíveis para o suporte da sua organização. Por exemplo, se a sua organização precisar que os dispositivos permaneçam num determinado edifício, o dispositivo identificará a rede à qual está ligado. 
+-  Número de telefone: Para **empresariais**-dispositivos pertencentes à empresa, pode ser visto o número de telefone completo. Nos dispositivos **pessoais**, apenas os últimos quatro dígitos do número de telefone estarão visíveis. Pode ver o **Tipo de Propriedade** de cada dispositivo individual. Para tal, abra a página **Detalhes do Dispositivo** do dispositivo.
+- Espaço de armazenamento do dispositivo: Se não é possível instalar uma aplicação necessária, a sua organização poderá parecer no espaço de armazenamento do seu dispositivo para descobrir se o espaço está demasiado baixo.  
+-  Localização: Sua organização nunca pode ver a localização do dispositivo, a menos que precisa de recuperar um dispositivo iOS perdido, supervisionado. Visite o [documentação de iOS da Apple](https://go.microsoft.com/fwlink/?linkid=853816) para saber mais sobre dispositivos supervisionados.  
+- Inventário de aplicações: Se a sua organização utiliza Mobile Threat Defense, poderão ver os detalhes sobre as aplicações que estão no seu dispositivo iOS. Saiba mais sobre a [Defesa Contra Ameaças para Dispositivos Móveis](you-are-prompted-to-install-mtd-ios.md).
+- Informações de rede: Algumas informações sobre ligações de rede para dispositivos Android podem estar disponíveis para o suporte da sua organização. Por exemplo, se a sua organização precisar que os dispositivos permaneçam num determinado edifício, o dispositivo identificará a rede à qual está ligado. 

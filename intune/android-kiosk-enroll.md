@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031998"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626089"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição do Intune de dispositivos de local público do Android enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O sistema operativo Android suporta dispositivos estilo quiosque com o seu conjunto de soluções Corporate-Owned, Single-Use (Propriedade da Empresa, Utilização Exclusiva). Estes dispositivos são utilizados para um único objetivo, como sinalética digital, impressão de bilhetes, gestão de inventário, entre outros. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
+Android suporta dispositivos de local público-estilo com seus [dispositivos dedicados](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) conjunto de solução. Estes dispositivos são utilizados para um único objetivo, como sinalética digital, impressão de bilhetes, gestão de inventário, entre outros. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
 
 O Intune ajuda-o a implementar aplicações e definições em dispositivos de quiosque Android. Para obter detalhes específicos sobre o Android Enterprise, veja [Android enterprise requirements (Requisitos empresariais do Android)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
@@ -56,8 +56,8 @@ Tem de criar um perfil de inscrição para poder inscrever os seus dispositivos 
 
 1. Aceda ao [Portal do Intune](https://portal.azure.com) e selecione **Inscrição de dispositivos** > **Inscrição Android** > **Inscrição de quiosque e dispositivos de tarefas**.
 2. Selecione **Criar** e preencha os campos obrigatórios.
-    - **Nome**: escreva o nome que irá utilizar quando atribuir o perfil ao grupo de dispositivos dinâmico.
-    - **Data de expiração do token**: a data em que o token expira. A Google impõe um máximo de 90 dias.
+    - **Nome**: Escreva um nome que irá utilizar quando o perfil a atribuir ao grupo de dispositivos dinâmicos.
+    - **Data de expiração do token**: A data em que o token expira. A Google impõe um máximo de 90 dias.
 3. Escolha **Criar** para guardar o perfil.
 
 ### <a name="create-a-device-group"></a>Criar um grupo de dispositivos
@@ -66,12 +66,12 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
 
 1. Aceda ao [Portal do Intune](https://portal.azure.com) e selecione **Grupos** > **Todos os grupos** > **Novo grupo**.
 2. No painel **Grupo**, preencha os campos obrigatórios da seguinte forma:
-    - **Tipo de grupo**: segurança
-    - **Nome do grupo**: escreva um nome intuitivo (como Dispositivos da fábrica 1)
-    - **Tipo de associação**: dispositivo dinâmico
+    - **Tipo de grupo**: Segurança
+    - **Nome do grupo**: Escreva um nome intuitivo (como dispositivos de 1 de fábrica)
+    - **Tipo de associação**: Dispositivo dinâmico
 3. Selecione **Adicionar consulta dinâmica**.
 4. No painel **Regras de associação de grupo dinâmica**, preencha os campos da seguinte forma:
-    - **Adicionar regra de associação dinâmica**: regra simples
+    - **Adicionar regra de associação dinâmica**: Regra simples
     - **Adicionar dispositivos onde**: enrollmentProfileName
     - Na caixa do meio, selecione **Correspondência**.
     - No último campo, introduza o nome do perfil de inscrição que criou anteriormente.
@@ -82,8 +82,8 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
 
 Pode substituir ou remover tokens e códigos QR.
 
-- **Substituir token**: pode gerar um novo token/código QR quando o antigo estiver prestes a expirar.
-- **Revogar token**: pode expirar imediatamente o token/código QR. Quando o fizer, o token/código QR deixa de ser utilizável. Pode utilizar esta opção se:
+- **Substituir token**: Pode gerar um novo código token/QR quando um está prestes a expirar, utilizando substituir Token.
+- **Revogar token**: O código token/QR imediatamente pode expirar. Quando o fizer, o token/código QR deixa de ser utilizável. Pode utilizar esta opção se:
     - partilhar acidentalmente o token/código QR com um terceiro não autorizado
     - concluir todas as inscrições e deixar de precisar do token/código QR
 

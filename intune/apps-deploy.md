@@ -1,12 +1,12 @@
 ---
 title: Atribuir aplicações a grupos no Microsoft Intune
 titlesuffix: ''
-description: Saiba como atribuir uma aplicação do Intune para grupos de utilizadores ou dispositivos.
+description: Saiba como atribuir uma aplicação do Intune para grupos de utilizadores ou dispositivos com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6e9901bfea3ec129246494d6d8077a440c8a675
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324927"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734277"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -29,20 +29,22 @@ ms.locfileid: "53324927"
 
 Depois de [adicionar uma aplicação](apps-add.md) ao Microsoft Intune, pode atribuí-la a utilizadores e dispositivos. É importante que tenha em atenção que pode atribuir uma aplicação a um dispositivo quer este seja ou não gerido pelo Intune. 
 
+> [!NOTE]
+> O objetivo de implementação de disponibilidade não é suportado para grupos de dispositivos, grupos de utilizadores apenas são suportados.
+
 A seguinte tabela indica as várias opções para atribuir as aplicações a utilizadores e a dispositivos:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Dispositivos inscritos com o Intune**|**Dispositivos não inscritos com o Intune**|
-|Atribuir a utilizadores|Sim|Sim|
-|Atribuir a dispositivos|Sim|Não|
-|Atribuir aplicações encapsuladas ou aplicações que incorporem o SDK do Intune (para políticas de proteção de aplicações)|Sim|Sim|
-|Atribuir aplicações como Disponíveis|Sim|Sim|
-|Atribuir aplicações como Obrigatórias|Sim|Não|
-|Desinstalar aplicações|Sim|Não|
-|Receber atualizações de aplicações a partir do Intune|Sim|Não|
-|Os utilizadores finais instalam as aplicações disponíveis a partir da aplicação Portal da Empresa|Sim|Não|
-|Os utilizadores finais instalam as aplicações disponíveis a partir do Portal da Empresa baseado na Web|Sim|Sim|
+|   | Dispositivos inscritos com o Intune | Dispositivos não inscritos com o Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Atribuir a utilizadores | Sim | Sim |
+| Atribuir a dispositivos | Sim | Não |
+| Atribuir aplicações encapsuladas ou aplicações que incorporem o SDK do Intune (para políticas de proteção de aplicações) | Sim | Sim |
+| Atribuir aplicações como Disponíveis | Sim | Sim |
+| Atribuir aplicações como Obrigatórias | Sim | Não |
+| Desinstalar aplicações | Sim | Não |
+| Receber atualizações de aplicações a partir do Intune | Sim | Não |
+| Os utilizadores finais instalam as aplicações disponíveis a partir da aplicação Portal da Empresa | Sim | Não |
+| Os utilizadores finais instalam as aplicações disponíveis a partir do Portal da Empresa baseado na Web | Sim | Sim |
 
 > [!NOTE]
 > Atualmente, pode atribuir aplicações iOS e Android (tanto de linha de negócio como compradas na loja) a dispositivos que não estão inscritos no Intune.
@@ -83,9 +85,8 @@ A aplicação está agora atribuída aos grupos que selecionou. Para obter mais 
 
 Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com intenções diferentes. As informações na tabela seguinte podem ajudar a compreender a intenção resultante quando ocorre o seguinte:
 
-||||
-|-|-|-|
-|**Intenção do grupo 1**|**Intenção do grupo 2**|**Intenção resultante**|
+| Objetivo do grupo 1 | Objetivo do grupo 2 | Objetivo resultante |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Utilizador – Necessário|Utilizador – Disponível|Necessário e Disponível|
 |Utilizador – Necessário|Utilizador – Não Disponível|Necessário|
 |Utilizador – Necessário|Utilizador – Desinstalar|Necessário|

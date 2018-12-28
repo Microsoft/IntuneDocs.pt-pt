@@ -1,7 +1,7 @@
 ---
 title: Obter dados a partir da API do Armazém de Dados com um cliente REST
 titlesuffix: Microsoft Intune
-description: Obtenha dados a partir do Armazém de Dados do Intune através de uma API RESTful.
+description: Este tópico descreve como recuperar dados do Microsoft Intune armazém de dados com uma API RESTful.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e5040626a27f50fae4df2ec2472d167269a282e4
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247276"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642885"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 

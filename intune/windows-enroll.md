@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112549"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626047"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -55,7 +55,7 @@ O Intune suporta a gestão de vários utilizadores para dispositivos a executar 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplificar a inscrição do Windows sem o Azure AD Premium
 Para simplificar a inscrição, crie um alias (tipo de registo CNAME) de servidor de nomes de domínio (DNS) que redirecione os pedidos de inscrição para os servidores do Intune. Caso contrário, os utilizadores que tentem ligar ao Intune terão de introduzir o nome de servidor do Intune durante a inscrição.
 
-**Passo 1: criar o registo CNAME** (opcional)<br>
+**Passo 1: Criar CNAME** (opcional)<br>
 Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
@@ -69,7 +69,7 @@ Se a empresa utilizar mais do que um sufixo UPN, tem de criar um CNAME para cada
 
 - name@contoso.com
 - name@us.contoso.com
-- name@eu.constoso.com\
+- name@eu.contoso.com
 
 Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
@@ -83,7 +83,7 @@ Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
 As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
 
-**Passo 2: verificar o CNAME** (opcional)<br>
+**Passo 2: Verificar o CNAME** (opcional)<br>
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Validação de CNAME**.
 2. Na caixa **Domínio**, introduza o site da empresa e, em seguida, selecione **Testar**.
 

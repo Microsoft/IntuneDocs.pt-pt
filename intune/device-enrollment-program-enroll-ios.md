@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f27d8b2334ff38146949c28898040da6a714e0a
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032491"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642851"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -153,8 +153,8 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     Os utilizadores são notificados de que os seus dispositivos são supervisionados de duas formas:
 
-   - O ecrã de bloqueio indica: "Este iPhone é gerido pelo Contoso."
-   - O ecrã **Definições** > **Geral** > **Acerca de** indica: "Este iPhone é supervisionado. A Contoso consegue monitorizar o seu tráfego de Internet e localizar este dispositivo."
+   - O ecrã de bloqueio indica: "Este iPhone é gerido pela Contoso."
+   - O **configurações** > **geral** > **sobre** ecrã diz: "Este iPhone é supervisionado. A Contoso consegue monitorizar o seu tráfego de Internet e localizar este dispositivo."
 
      > [!NOTE]
      > Um dispositivo inscrito sem supervisão só pode ser reposto para supervisionado com o Apple Configurator. Repor o dispositivo desta forma requer ligar um dispositivo iOS a um Mac com um cabo USB. Saiba mais sobre este assunto nos [documentos do Apple Configurator](http://help.apple.com/configurator/mac/2.3).
@@ -167,7 +167,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
 12. Escolha **OK**.
 
-13. Selecione **Personalização do Assistente de Configuração** para configurar as seguintes definições de perfil: ![Personalização do Assistente de Configuração](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
+13. Escolher **personalização do Assistente de configuração** para configurar as seguintes definições de perfil: ![Personalização do Assistente de configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     | Definições do departamento | Descrição |

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
-ms.translationtype: HT
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903476"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570796"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Uma conta de e-mail da empresa existente foi encontrada
 
-Já tem uma conta de e-mail da sua organização ou empresa e agora quer aceder a essa conta no seu dispositivo móvel. O suporte da empresa precisa da sua ajuda para manter o seu endereço de e-mail seguro no percurso desde a pessoa que o enviou até ao seu dispositivo. O seu e-mail atual pode ter funcionado, mas estes passos ajudam a manter as suas informações mais seguras.
+Poderá que tenha tido acesso de dispositivos móveis ao seu trabalho ou a conta de e-mail da instituição de ensino *antes de* obteve o dispositivo seja gerido. Se o dispositivo é agora gerenciado, recomendamos que:
 
-1.  Procure as **Definições** do seu dispositivo e remova a ligação que configurou anteriormente para o e-mail da empresa.  Por exemplo, num dispositivo iOS, toque em **Definições** > **Correio** > **Contas**. Selecione a sua conta de e-mail profissional e toque em **Eliminar**.
+* Desligar a conta de e-mail de trabalho existente a partir do seu dispositivo.
+* Volte a sincronizar definições de dispositivo da aplicação Portal da empresa.  
 
-2.  Saia de **Definições** e abra a aplicação Portal da Empresa no seu dispositivo.  
+Estes passos irão garantir que o seu dispositivo cumpre os requisitos de segurança de sua empresa e que as suas mensagens de e-mail permanecem seguras.
 
-3. Vá para **Dispositivo** e selecione o dispositivo que pretende atualizar.
+1.  No seu dispositivo, aceda a **definições** e encontre as suas contas ligas. Num dispositivo iOS 11 +, por exemplo, seleccione **palavra-passe e contas de**.
+ 
+2. Selecione e remova a sua conta de e-mail de trabalho.
 
-4. Selecione **Verificar Definições**. Dentro de alguns instantes, o dispositivo é atualizado com as novas definições de e-mail.
+3. Abra a aplicação Portal da Empresa no dispositivo.  
+
+4. Em sua lista de dispositivos, selecione o dispositivo que pretende atualizar.
+
+5. Selecione **Verifique as definições**. Dentro de alguns instantes, o dispositivo sincroniza suas novas definições de e-mail.
+
+6. Conta de e-mail escolar ou iniciar sessão no seu trabalho.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

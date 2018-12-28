@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a606f63bd22ce2ed543b6c5863ddc4f35d7ea212
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: aab8208865fb072170a670d1da25e7f02448c38f
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186210"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642868"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android Enterprise no Intune
 
@@ -61,16 +61,16 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 ## <a name="device-health"></a>Device health
 
-- **Dispositivos com rooting**: selecione **Bloquear** para marcar dispositivos com rooting (com jailbreak) como não conformes. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Exigir que o dispositivo esteja ao Nível de Ameaça do Dispositivo ou abaixo do mesmo**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição de conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
-  - **Protegido**: esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
-  - **Baixo**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
-  - **Médio**: o dispositivo é avaliado como em conformidade se só estiverem presentes ameaças de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
-  - **Elevado**: esta opção é a menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
-- **Os Serviços do Google Play estão configurados**: **exige** que a aplicação de Serviços do Google Play esteja instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Fornecedor de segurança atualizado**: **exige** que um fornecedor de segurança atualizado proteja um dispositivo contra vulnerabilidades conhecidas. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Atestado de dispositivo SafetyNet**: introduza o nível de [Atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que tem de ser cumprido. As opções são:
-  - **Não configurado** (predefinição): a definição não é avaliada quanto à conformidade ou não conformidade.
+- **Dispositivos com jailbreak**: Escolher **bloco** para marcar os dispositivos com root (com jailbreak) como não conforme. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Exigir o dispositivo esteja ao nível ou abaixo do nível de ameaça do dispositivo**: Utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição para conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
+  - **Protegido**: Esta opção é a mais segura e significa que o dispositivo não pode ter qualquer ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
+  - **Baixa**: O dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
+  - **Médio**: O dispositivo é avaliado como conforme se as ameaças que estão presentes no dispositivo forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
+  - **Alta**: Esta opção é menos segura, já que permite a todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
+- **Serviços do Google Play está configurado**: **Exigir** que o Google Play dos serviços de aplicação é instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Fornecedor de segurança atualizado**: **Exigir** que um fornecedor de segurança atualizado Proteja um dispositivo contra vulnerabilidades conhecidas. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Dispositivo safetynet**: Introduza o nível de [atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que têm de ser cumpridos. As opções são:
+  - **Não configurado** (predefinição): Não é avaliada a definição de conformidade ou de não conformidade.
   - **Verificação de integridade básica**
   - **Verificação de integridade básica e de dispositivos certificados**
 
@@ -80,16 +80,16 @@ Em dispositivos Android Enterprise, a definição **Análise de ameaça em aplic
 
 ## <a name="device-properties-settings"></a>Definições de propriedades do dispositivo
 
-- **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para, em seguida, poder aceder aos recursos da empresa.
-- **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. Além disso, é pedido ao utilizador para contactar o administrador de TI. Até uma regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
+- **Versão mínima do SO**: Quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo para, em seguida, poder aceder aos recursos da empresa.
+- **Versão do SO máxima**: Quando um dispositivo utiliza uma versão do SO posterior à versão na regra, o acesso aos recursos da empresa é bloqueado. Além disso, é pedido ao utilizador para contactar o administrador de TI. Até uma regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 
 ### <a name="password"></a>Palavra-passe
 
-- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de ter.
-- **Tipo de palavra-passe necessária**: escolha se uma palavra-passe deve incluir apenas carateres numéricos ou uma combinação de números e de outros carateres. As opções são:
+- **Exigir uma palavra-passe para desbloquear dispositivos móveis**: **Exigir** que os utilizadores introduzam uma palavra-passe antes de poderem aceder ao respetivo dispositivo. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Esta definição é aplicada ao nível do dispositivo. Se só precisa de exigir uma palavra-passe no nível de perfil de trabalho, em seguida, utilize uma política de configuração. Ver [definições de configuração de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
+- **Comprimento mínimo da palavra-passe**: Introduza o número mínimo de dígitos ou carateres de que palavra-passe do utilizador tem de ter.
+- **Tipo de palavra-passe obrigatório**: Escolha se uma palavra-passe deve incluir apenas carateres numéricos ou uma combinação de números e outros caracteres. As opções são:
   - **Dispositivo Predefinido**
   - **Biométrica de segurança baixa**
   - **Pelo menos, numérico** (predefinição)
@@ -98,19 +98,19 @@ Em dispositivos Android Enterprise, a definição **Análise de ameaça em aplic
   - **Pelo menos alfanumérica**
   - **Pelo menos alfanumérica com símbolos**
 
-- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
-- **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe recentes que não podem ser utilizadas. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
+- **Máximo de minutos de inatividade antes da palavra-passe é necessária**: Introduza o tempo de inatividade antes do utilizador ter de reintroduzir a palavra-passe. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Expiração de palavra-passe (dias)**: Selecione o número de dias antes da palavra-passe expirar e ser necessário criar um novo.
+- **Número de palavras-passe anteriores cuja reutilização está**: Introduza o número de palavras-passe recentes que não podem ser reutilizadas. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
 
 ### <a name="encryption"></a>Encriptação
 
-- **Encriptação do armazenamento de dados nos dispositivo**: selecione **Exigir** para encriptar o armazenamento de dados nos dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. 
+- **Encriptação do armazenamento de dados no dispositivo de**: Escolher **requerem** para encriptar o armazenamento de dados nos seus dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. 
 
   Uma vez que os dispositivos com perfil de trabalho do Android impõem a encriptação, não tem de configurar esta definição.
 
 ### <a name="device-security"></a>Segurança do Dispositivo
 
-- **Bloquear aplicações de origens desconhecidas**: opte por **bloquear** os dispositivos que tenham a opção "Segurança > Origens Desconhecidas" ativada (Suportado pelo Android 4.0 – Android 7.X. Não suportado pelo Android 8.0 e posterior). Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Bloquear aplicações de origens desconhecidas**: Optar por **bloco** dispositivos com o "Segurança > origens desconhecidas" ativada origens (suportadas no Android 4.0 – Android 7.x; não suportadas pelo Android 8.0 e posteriores). Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 
   Para aplicações de sideload, as origens desconhecidas têm de ser permitidas. Se não tiver aplicações Android de sideload, defina esta funcionalidade como **Bloquear** para ativar esta política de conformidade. 
 
@@ -119,7 +119,7 @@ Em dispositivos Android Enterprise, a definição **Análise de ameaça em aplic
 
   Uma vez que os dispositivos com perfil de trabalho do Android restringem sempre a instalação de origens desconhecidas, não tem de configurar esta definição.
 
-- **Integridade de tempo de execução de aplicações do portal da empresa**: selecione **Exigir** para confirmar que a aplicação Portal da Empresa cumpre os seguintes requisitos:
+- **Integridade de tempo de execução da aplicação do portal da empresa**: Escolher **requerem** para confirmar o Portal da empresa a aplicação cumpre os seguintes requisitos:
 
   - Tem o ambiente de tempo de execução predefinido instalado
   - Está corretamente assinada
@@ -128,11 +128,11 @@ Em dispositivos Android Enterprise, a definição **Análise de ameaça em aplic
 
   Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 
-- **Bloquear a depuração de USB no dispositivo**: selecione **Bloquear** para impedir que os dispositivos utilizem a funcionalidade de depuração USB. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
+- **Depuração de USB de bloco no dispositivo**: Escolher **bloco** para impedir que os dispositivos a utilizar a funcionalidade de depuração de USB. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 
   Uma vez que a depuração USB já está desativada em dispositivos com perfil de trabalho do Android, não tem de configurar esta definição.
 
-- **Nível de correção de segurança mínimo**: selecione o nível de correção de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tiverem pelo menos este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato *AAAA-MM-DD*.
+- **Nível de patch de segurança mínimo**: Selecione o nível de patch de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tiverem pelo menos este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato *AAAA-MM-DD*.
 
 Quando terminar, selecione **OK** > **OK** para guardar as suas alterações.
 

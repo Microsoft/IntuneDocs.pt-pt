@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 633ce26a98f9cc7895e9ac4706498bf8c8c773d6
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378237"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642902"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>A edição antecipada do Microsoft Intune – Dezembro de 2018
 
@@ -50,7 +50,7 @@ Para dispositivos Android num não inscritos proteção política sem inscriçã
 No Windows 10 e dispositivos posteriores, poderá criar um perfil de configuração de VPN que inclui uma lista de servidores DNS para resolver domínios, tal como contoso.com. Isto irá incluir as novas definições para resolução de nomes (**configuração do dispositivo** > **perfis** > **criar perfil** > Escolha  **Windows 10 e posterior** para a plataforma > Escolha **VPN** para o tipo de perfil > **definições de DNS** >**adicionar**): 
 
 - **Ligar automaticamente**: Quando **ativado**, o dispositivo estabelece ligação automaticamente para a VPN quando um dispositivo entra em contacto com um domínio, introduza, por exemplo, contoso.com.
-- **Persistente**: Por predefinição, todas as regras de tabela (NRPT) de política de resolução de nome estão ativas, desde que o dispositivo estiver conectado com este perfil VPN. Quando esta definição for **ativado** numa regra NRPT, a regra permanece ativa no dispositivo, mesmo quando desliga a VPN ou o perfil VPN é removido. A regra mantém-se até ser manualmente removido, que pode ser feito com o PowerShell.
+- **Persistente**: Por predefinição, todas as regras de tabela (NRPT) de política de resolução de nome estão ativas, desde que o dispositivo estiver conectado com este perfil VPN. Quando esta definição for **ativado** numa regra NRPT, a regra permanece ativa no dispositivo, mesmo quando desliga a VPN. A regra permanece até que o perfil VPN é removido ou até que a regra é manualmente removida, que pode ser feito com o PowerShell.
 
 [Definições de VPN do Windows 10](vpn-settings-windows-10.md) descreve a lista atual de definições. 
 

@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 38a4383fe9fbeec4abc8ce37ad46ce55b2849090
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 52201b68e946ec59b7c70ea5ff735c26728e27ce
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182589"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429734"
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de utilizador
 
 A categoria **Utilizador** contém a entidade **Utilizador** que define as propriedades do utilizador no modelo de dados.
 
-## <a name="user"></a>Função do
+## <a name="user"></a>Utilizador
 
 A entidade **User** lista todos os utilizadores do Azure Active Directory (Azure AD) com licenças atribuídas na sua empresa.
 
@@ -39,12 +39,12 @@ A coleção de entidades **Utilizador** contém dados do utilizador. Estes regis
 | UserId |Identificador exclusivo do utilizador – semelhante a UserKey, mas é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Endereço de e-mail do utilizador. |John@constoso.com |
 | UPN | O nome principal do utilizador. | John@constoso.com |
-| DisplayName |Nome a apresentar do utilizador. |João |
+| displayName |Nome a apresentar do utilizador. |João |
 | IntuneLicensed |Especifica se este utilizador tem ou não licença do Intune. |True/False |
-| IsDeleted | Indica se todas as licenças do utilizador expiraram e se o utilizador foi, por conseguinte, removido do Intune. Para um único registo, este sinalizador não se altera. Em vez disso, é criado um novo registo para um novo estado do utilizador. |True/False |
+| IsDeleted | Indica se todas as licenças do utilizador expiraram e se o utilizador foi, por conseguinte, removido do Intune. Para um único registo, este sinalizador não se altera. Em vez disso, é criado um novo registo para um novo estado do utilizador. |Verdadeiro/Falso |
 | StartDateInclusiveUTC |Se IsDeleted = FALSE, DateTime em UTC quando foi atribuída uma licença ao utilizador e este começou a ter uma presença no Intune. Se IsDeleted = TRUE, DateTime em UTC quando as licenças do utilizador expiraram e quando este foi removido do Intune. |11/23/2016 12:00:00 AM |
 | EndDateExclusiveUTC |Se IsDeleted = FALSE, DateTime em UTC quando a licença do utilizador expirou e quando este foi removido do Intune. A licença expirou durante o dia anterior. Se IsDeleted = TRUE, DateTime em UTC quando o utilizador voltou a ter uma licença nova e quando foi recriado no Intune.  |11/23/2016 12:00:00 AM |
-| IsCurrent |Indica se este registo representa o estado mais recente do utilizador. Podem existir vários registos para um único utilizador, mas apenas um deles representa o estado atual.  |True/False |
+| IsCurrent |Indica se este registo representa o estado mais recente do utilizador. Podem existir vários registos para um único utilizador, mas apenas um deles representa o estado atual.  |Verdadeiro/Falso |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC quando o registo foi modificado pela última vez no armazém de dados  |11/23/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Passos Seguintes

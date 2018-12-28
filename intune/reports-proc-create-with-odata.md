@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: fc6b5aac1d75fc67c469f6ecd24e331d1cc35d30
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247242"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429717"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -106,7 +106,7 @@ Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dis
 Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação.
 
 
-1. Para adicionar um filtro, selecione a tela do relatório e, em seguida, selecione o **Ícone de segmentação de dados** (![Treemap com dados](media/reports-create-slicer.png)) em **Visualizações**.
+1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, selecione o **ícone de segmentação de dados** (![Treemap com o modelo de dados e relações suportadas](media/reports-create-slicer.png)) sob **visualizações**.
 2. Localize a tabela **TiposdeProprietário** e arraste o campo de dados **NomedoTipodeProprietário** na secção **Filtros** no painel **Visualizações**.  
 
    Na tabela Dispositivos, existe um campo de dados denominado **ChavedoTipodeProprietário** que contém um código que identifica se um dispositivo é pessoal ou pertencente à empresa. Uma vez que pretende mostrar nomes amigáveis neste filtro, procure a tabela **TiposdeProprietário** e arraste o **NomedoTipodeProprietário**. Este exemplo mostra de que forma o modelo de dados suporta relações entre tabelas.

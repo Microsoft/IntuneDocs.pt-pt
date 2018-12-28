@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 897eca8eab6a3b5d2f8f12d69aa5da3ae1988f13
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324893"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570813"
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,10 +57,10 @@ Por predefinição, os dispositivos para todas as plataformas têm permissão pa
 |**[BYOD](#bring-your-own-device)** | Não |  Sim |   Não | [Mais informações](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não  |[Mais informações](device-enrollment-manager-enroll.md)|
 |**Inscrição automática** | Não |Sim |Não | [Mais informações](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |Sim |Sim |Não | [Obter mais informações](enrollment-autopilot.md)]
+|**Autopilot** |Sim |Sim |Não | [Mais informações](enrollment-autopilot.md)
 |**Inscrição em massa** |Não |Não |Não | [Mais informações](./windows-bulk-enroll.md) |
-|**Cogestão** |Não |Sim |Não | [Obter mais informações](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**GPO** |Não |Sim |Não | [Obter mais informações](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**Cogestão** |Não |Sim |Não | [Mais informações](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |Não |Sim |Não | [Mais informações](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Métodos de inscrição do Android

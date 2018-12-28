@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 941b99365326d9f97009b2d10c90cccbb17126e0
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305884"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429649"
 ---
-#  <a name="intune-data-warehouse-api"></a>API do Armazém de Dados do Intune
+#  <a name="microsoft-intune-data-warehouse-api"></a>API do armazém de dados do Microsoft Intune
 
 A API do Armazém de Dados do Intune permite-lhe aceder aos seus dados do Intune num formato legível por máquina para utilizar na sua ferramenta de análise preferida. Pode utilizar a API para criar relatórios que fornecem informações sobre o ambiente móvel da sua empresa. A API utiliza o protocolo OData, que segue os padrões normais para:
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 456e3922b74bb8c8ebbbca4718b36b3fb0dcdc29
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324995"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734294"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Autónomo – gestão de aplicações Win32 (Pré-visualização Pública)
 
@@ -76,13 +76,13 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 3.  No painel **Intune**, selecione **Aplicações do cliente** > **Aplicações** > **Adicionar**.
 4.  No painel **Adicionar aplicação**, selecione **Aplicação do Windows (Win32) - pré-visualização** na lista pendente fornecida.
 
-    ![Captura de ecrã Adicionar aplicação – caixa de lista pendente Adicionar tipo](./media/apps-win32-app-01.png)
+    ![Captura de ecrã do painel adicionar um app - caixa de lista pendente de tipo de adicionar](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Passo 2: Carregue o ficheiro de pacote de aplicação
 
 1.  No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação** para selecionar um ficheiro. O painel Ficheiro de pacote de aplicação será apresentado.
 
-    ![Captura de ecrã do ficheiro de pacote de aplicação](./media/apps-win32-app-02.png)
+    ![Captura de ecrã do painel do ficheiro de pacote da aplicação](./media/apps-win32-app-02.png)
 
 2.  No painel **Ficheiro de pacote de aplicação**, selecione o botão Procurar. Em seguida, selecione um ficheiro de instalação do Windows com a extensão *.intunewin*.
 3.  Quando tiver terminado, selecione **OK**.
@@ -234,16 +234,16 @@ Windows 10 RS3 e aos clientes acima irá transferir o conteúdo da aplicação I
 
 O utilizador final verá notificações de alerta do Windows para as instalações de aplicações necessário e disponível. A imagem seguinte mostra uma notificação de alerta de exemplo na qual a instalação da aplicação não é concluída até que o dispositivo seja reiniciado. 
 
-![Exemplo de captura de ecrã das notificações de alerta do Windows para a instalação de uma aplicação](./media/apps-win32-app-08.png)    
+![Notificações de alerta de captura de ecrã do Windows para uma instalação de aplicações](./media/apps-win32-app-08.png)    
 
 A imagem seguinte notifica o utilizador final que as alterações da aplicação estão a ser efetuadas no dispositivo.
 
-![Exemplo de captura de ecrã de notificar o utilizador final que estão a ser efetuadas alterações de aplicação no dispositivo](./media/apps-win32-app-09.png)    
+![Captura de ecrã notificar o utilizador que estão sendo feitas alterações da aplicação](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Resolver problemas relacionados com aplicações Win32
 Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. O *CMTrace.exe* pode ser transferido a partir das [Ferramentas de Cliente SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Captura de ecrã dos registos de agente](./media/apps-win32-app-10.png)    
+![Registos de captura de ecrã do agente no computador cliente](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Áreas de resolução de problemas a considerar
 - Verificar o direcionamento para garantir que o agente está instalado no dispositivo – uma aplicação Win32 direcionada para um grupo ou um Script do PowerShell direcionado para um grupo irá criar a política de instalação de agente para o grupo de segurança.

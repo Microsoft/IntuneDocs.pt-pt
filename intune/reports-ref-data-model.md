@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188114"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738006"
 ---
-# <a name="data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de dados do armazém de dados do Microsoft Intune
 
 O Armazém de Dados do Intune copia dados diariamente para fornecer uma apresentação do histórico do ambiente de dispositivos móveis em contínua mudança. A apresentação é composta por entidades relacionadas no tempo.
 
-## <a name="entities-entity-sets"></a>Entidades: conjuntos de entidades
+## <a name="entities-entity-sets"></a>Entidades: Conjuntos de entidades
 
 O armazém expõe dados nas seguintes áreas de nível superior:
 
@@ -39,16 +39,16 @@ O armazém expõe dados nas seguintes áreas de nível superior:
 Estas áreas contêm as entidades com significado para o ambiente do Intune. Encontrará detalhes sobre os conjuntos de entidades nos seguintes tópicos:
 
   -  [Aplicação](reports-ref-application.md)
-  -  [Data](reports-ref-date.md)
+  -  [data](reports-ref-date.md)
   -  [Devices](reports-ref-devices.md)
   -  [Extensão de Gestão do Intune](reports-ref-intunemanagementextension.md)
-  -  [Policy](reports-ref-policy.md)
+  -  [Política](reports-ref-policy.md)
   -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
   -  [User](reports-ref-user.md)
   -  [Utilizador Atual](reports-ref-current-user.md)
   -  [Associações de Dispositivos do Utilizador](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>Relações: modelo de esquema de estrela
+## <a name="relationships-star-schema-model"></a>Relações: Modelo de esquema de estrela
 
 O armazém organiza as entidades em relações com significado para o tipo de questões que pretende esclarecer. Por exemplo, pode rever o número de instalações de uma aplicação Android desenvolvida internamente. A estrutura do armazém de dados permite-lhe obter informações sobre o seu ambiente móvel. Por sua vez, as ferramentas de análise, como o Microsoft Power BI, podem utilizar o modelo de dados do Armazém de Dados para criar visualizações e dashboards dinâmicos.
 
@@ -56,7 +56,7 @@ As entidades e as relações utilizam um modelo de esquema de estrela. Um esquem
 
 Um modelo de esquema de estrela é otimizado para flexibilidade e análise de dados para que possa criar os relatórios necessários para compreender o seu ambiente móvel em evolução.
 
-## <a name="time-daily-snapshots"></a>Hora: instantâneos diários
+## <a name="time-daily-snapshots"></a>Hora: Instantâneos diários
 
 O armazém fica a jusante dos dados do Intune. O Intune cria um instantâneo diário à meia-noite (UTC) e guarda-o no armazém. A duração da retenção dos instantâneos varia conforme as tabelas de factos. Algumas podem reter os dados durante sete dias, outras 30 dias e algumas durante períodos mais longos.
 

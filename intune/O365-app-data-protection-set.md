@@ -1,7 +1,7 @@
 ---
 title: Gestão de dados das aplicações do Office 365 no Microsoft Intune
 titlesuffix: ''
-description: Saiba mais sobre a gestão de dados das aplicações do Office 365 no Microsoft Intune.
+description: Saiba mais sobre a gestão de dados e proteção de aplicações do Office 365 no Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180076"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642478"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores no Microsoft Intune
 
@@ -95,8 +95,8 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 | **Descrição**|Criadas pelo assistente Gerir aplicações do Office 365| |
 | |  | |
 | **Nome da definição** |**Valor da política para iOS** | **Valor da política para Android** |
-|Impedir cópias de segurança do iTunes e do iCloud| Não | N/D |
-|Impedir cópias de segurança Android |N/D | Não|
+|Impedir cópias de segurança do iTunes e do iCloud| Não | N/A |
+|Impedir cópias de segurança Android |N/A | Não|
 |Permitir que a aplicação transfira dados para outras aplicações | Todas as aplicações | Todas as aplicações|
 |Permitir que a aplicação receba dados de outras aplicações| Todas as aplicações | Todas as aplicações|
 |Impedir "Guardar como" | Não | Não|
@@ -106,16 +106,16 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 |Desativar a sincronização de contactos | Não| Não|
 |Desativar a impressão | Não | Não|
 |Exigir PIN para acesso | Não | Sim|
-|Número de tentativas antes de redefinição do PIN | N/D |5|
-|Permitir PIN simples | N/D |Sim|
-|Comprimento do PIN | N/D | 4|
-|Permitir impressões digitais em vez do PIN | N/D | Sim |
+|Número de tentativas antes de redefinição do PIN | N/A |5|
+|Permitir PIN simples | N/A |Sim|
+|Comprimento do PIN | N/A | 4|
+|Permitir impressões digitais em vez do PIN | N/A | Sim |
 |Exigir credenciais da empresa para obter acesso | Não | Não|
 |Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root | Não | Não|
 |Verificar novamente os requisitos de acesso após (minutos) – Tempo limite | 30 | 30|
 |Verificar novamente os requisitos de acesso após (minutos) – Período de tolerância offline | 720 |720|
 |Intervalo offline (dias) antes de os dados da aplicação serem eliminados | 90 | 90|
-|Bloquear captura de ecrã (apenas dispositivos Android) | N/D | Não |
+|Bloquear captura de ecrã (apenas dispositivos Android) | N/A | Não |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Por que motivo a política de PIN da aplicação é apenas configurada para dispositivos Android?
 A encriptação funciona de forma diferente no iOS e no Android.

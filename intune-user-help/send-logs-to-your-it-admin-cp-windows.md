@@ -1,11 +1,11 @@
 ---
 title: Enviar registos ao suporte da empresa para dispositivos Windows 10 | Documentos da Microsoft
-description: Inscrever um dispositivo com o Windows 10 1511 e superior no Intune
+description: Enviar registos de diagnóstico para ajudar a corrigir problemas de aplicações de suporte da empresa
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +14,35 @@ ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146524"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626072"
 ---
-# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Enviar registos ao suporte da empresa a partir da aplicação Portal da Empresa para Windows 10
+# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Enviar registos de diagnóstico ao suporte da empresa a partir do Portal da empresa para Windows
 
-Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo Windows 10, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
+Resolução de problemas de aplicações na aplicação Portal da empresa para Windows 10. Caso se depare com um problema enquanto estiver a utilizar a aplicação no seu dispositivo Windows 10, pode enviar um e-mail a equipa de suporte para obter ajuda. Eventos e erros que ocorrem na aplicação Portal da empresa são guardados no dispositivo, num documento especial denominado um _registo de diagnóstico_. Quando pedir ajuda, a aplicação é aberto um e-mail pré-preenchida, com o ID de diagnóstico, para que pode obter rapidamente a ajuda de que precisa.
 
 > [!Note]       
-> O Portal da Empresa para Windows 10 irá enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o fluxo de trabalho para obter ajuda com um problema. Isto facilitará a resolução dos problemas colocados à Microsoft.
+> Depois de clicar em **obter ajuda**, o Portal da empresa enviará automaticamente os registos para a equipa de suporte da Microsoft. Este passo é proativa que torna mais fácil resolver problemas relacionados com a Microsoft.  
 
 1. Abra a aplicação **Portal da Empresa**.
-2. Selecione a engrenagem **Definições** e, em seguida, **Enviar registos**.
-3. A opção **Partilhar** será apresentada. Selecione **E-mail**. Este procedimento criará uma mensagem de e-mail com os registos do Portal da Empresa em anexo, que podem ser enviados ao suporte da empresa.
+2. Selecione **configurações** > **obter ajuda**.  
 
-   ![A caixa de diálogo Enviar Registos da página Definições da aplicação Portal da Empresa. A ligação a clicar diz "Enviar registos – Envie registos de diagnóstico ao suporte da empresa para ajudá-lo a resolver problemas no Portal da Empresa".](./media/w10-share-logs-after-1711.png)
+   ![Captura de ecrã da página de definições, destaque para as definições e obtenha ajuda seção e botão.](./media/1811_Get_Help_Windows_Cpapp.png)    
 
-Também poderá ser necessário enviar [registos da aplicação Definições](send-logs-to-your-it-admin-settings-windows.md) para fornecer ao suporte da empresa mais ajuda para tentar resolver quaisquer problemas que possa encontrar.
+3. Quando o **partilha** é apresentado o ecrã, selecione **correio**. O **correio** aplicação irá criar uma mensagem de e-mail para si. Escreva uma descrição do problema que ocorreu, para que a equipa de suporte tem uma ideia do que procurar nos registos.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+   ![Captura de ecrã do ecrã de partilha, realce o ícone de aplicação de correio.](./media/1811_Mail_Logs_Windows_CPapp.png)  
+
+
+   ![Captura de ecrã da mensagem de e-mail pré-preenchida que abre na aplicação Mail.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+
+Se a sua empresa precisa obter informações adicionais sobre a atividade da aplicação ou dispositivo, também poderá ter de enviar [registos da aplicação definições](send-logs-to-your-it-admin-settings-windows.md).  
+
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

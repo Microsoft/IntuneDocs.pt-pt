@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2c15c8915c1fefabf301525b3ef03f74038d31dc
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325053"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737972"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -45,7 +45,7 @@ Os passos abaixo irão ajudá-lo a obter o certificado obrigatório e a assinar 
 4.  **Verificar os certificados importados**<br>
     Para verificar se os certificados foram corretamente importados, aceda ao snap-in **Certificados**, clique com o botão direito do rato em **Certificados** e selecione **Localizar Certificados**. No campo **Contém**, escreva “Symantec” e clique em **Localizar Agora**. Os certificados que importou deverão ser apresentados nos resultados.
 
-    ![Localizar o certificado da Symantec](./media/wit.gif)
+    ![Os resultados do certificado estão listados na caixa de diálogo Localizar certificados](./media/wit.gif)
 
 5. **Exportar um certificado de assinatura**<br>
     Após verificar que os certificados estão presentes, pode exportar o ficheiro .pfx para assinar o portal da empresa. Selecione o certificado da Symantec com «assinatura com código» como o **Objetivo a que se destina** . Clique com o botão direito do rato no certificado de assinatura com código e selecione **Exportar**.
@@ -155,7 +155,7 @@ Pode implementar manualmente a aplicação Portal da Empresa do Windows 10 dire
 1. Inicie sessão na sua conta na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) e compre a versão da **licença offline** da aplicação Portal da Empresa.  
 2. Assim que a aplicação tiver sido comprada, selecione a aplicação na página **Inventário**.  
 3. Selecione **Todos os dispositivos Windows 10** como a **Plataforma** e, em seguida, a **Arquitetura** adequada e transfira. Não é preciso um ficheiro de licença de aplicação para esta aplicação.
-![Imagem de Todos os dispositivos Windows 10 e detalhes do Pacote de Arquitetura X86 para Transferência](./media/Win10CP-all-devices.png)
+![Imagem dos detalhes do pacote do Windows 10 X86 para transferência](./media/Win10CP-all-devices.png)
 4. Transfira todos os pacotes em “Arquiteturas necessárias”. Esta ação deve ser feita para as arquiteturas x86, x64 e ARM, resultando num total de nove pacotes, conforme mostrado abaixo.
 
 ![Imagem dos ficheiros de dependência para Transferência ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ Pode implementar manualmente a aplicação Portal da Empresa do Windows 10 dire
    ![Imagem da pasta Dependências guardada com o ficheiro APPXBUN](./media/Win10CP-Dependencies-save.png)
    2. Coloque os nove pacotes de dependências na pasta Dependências.  
    Se as dependências não forem colocadas neste formato, o Intune não poderá reconhecê-los e carregá-los durante o carregamento do pacote, o que fará com que o carregamento falhe com o seguinte erro.  
-   ![A dependência de aplicação do Windows para este instalador de software não foi encontrada na pasta da aplicação. Pode continuar a criar e a implementar esta aplicação, mas só será executada quando a dependência de aplicação do Windows em falta for disponibilizada.](./media/Win10CP-error-message.png)
+   ![Mensagem de erro - a dependência de aplicação do Windows deve ser fornecida.](./media/Win10CP-error-message.png)
 6. Volte ao Intune e, em seguida, carregue a aplicação Portal da Empresa como uma nova aplicação. Implemente-a como uma aplicação obrigatória para o conjunto de utilizadores de destino pretendido.  
 
 Para obter mais informações sobre como o Intune processa as dependências de aplicações Universais, veja [Deploying an appxbundle with dependencies via Microsoft Intune MDM (Implementar um appxbundle com dependências através da MDM do Microsoft Intune) ](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  

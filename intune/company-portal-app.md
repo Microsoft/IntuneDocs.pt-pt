@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185428"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738023"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -72,7 +72,7 @@ Aplique a cor do tema ao Portal da Empresa. Selecione uma cor padrão ou introdu
 |**Selecionar uma cor padrão ou introduzir um código hexadecimal de seis dígitos**| Escolher **padrão** visualmente selecionar uma cor. Escolha **Personalizada** para selecionar uma cor específica com base num valor de código hexadecimal.|
 |**Escolher a cor do tema**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. |
 |**Apresentar**| Selecione se pretende apresentar o **Logótipo e o nome da empresa**, **Apenas o logótipo da empresa** ou **Apenas o nome da empresa**. |
-|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máx. da imagem: 400px x 400px</li><li>Tamanho máximo do ficheiro: 750KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 Depois de carregar o logótipo, a área de pré-visualização mostrará o logótipo com a cor do tema. Se optar por apresentar o nome da sua empresa, este será mostrado em preto ou branco no Portal da Empresa e será automaticamente escolhido para proporcionar o maior nível de contraste com base na cor do seu tema. A área de pré-visualização no ecrã não apresentará o nome da sua empresa. 
 
@@ -81,7 +81,7 @@ Escolha o logótipo que ficará melhor em fundos brancos ou claros.
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máx. da imagem: 400px x 400px</li><li>Tamanho máximo do ficheiro: 750KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Imagem de marca do Portal da Empresa
 
@@ -89,7 +89,7 @@ Apresente uma imagem de marca que reflita a marca da sua empresa. Depois de guar
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar a imagem de marca**| Esta opção está disponível para permitir que apresente uma imagem de fundo na página de perfil do utilizador na aplicação Portal da Empresa.<p>*Tenha em atenção*: A imagem poderão ser apresentada de forma diferente para diferentes plataformas.<p><ul><li>Largura recomendada da imagem: superior a 1125 px, mas não inferior a 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar a imagem de marca**| Esta opção está disponível para permitir que apresente uma imagem de fundo na página de perfil do utilizador na aplicação Portal da Empresa.<p>*Nota*: A imagem poderão ser apresentada de forma diferente para diferentes plataformas.<p><ul><li>Largura da imagem recomendado: Maior que 1125px, mas não menos de 640px</li><li>Tamanho máx. da imagem: 1.3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca correta pode melhorar a confiança do utilizador no Portal da Empresa ao apresentar uma imagem sólida da marca da sua empresa. Aqui estão algumas sugestões que poderá considerar para comprar, escolher e otimizar a imagem do Portal da Empresa. 
 
@@ -128,17 +128,17 @@ Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Emp
 |  | Enviar feedback | Alt+F |
 |  | O meu perfil | Alt+U |
 |  | Definições | Alt+T |
-| Base – Mosaico Dispositivo | Mudar o nome | F2 |
+| Base – Mosaico Dispositivo | Mudar o Nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
-| Detalhes do dispositivo | Mudar o nome | F2 |
+| Detalhes do dispositivo | Mudar o Nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
 | Detalhes da aplicação | Instalar | Ctrl+I |
 
 Os utilizadores finais também poderão ver os atalhos disponíveis no Windows aplicação Portal da empresa.
 
-![Captura de ecrã dos atalhos disponíveis na aplicação Portal da empresa de Windows](media/company-portal-app/company-portal-app-01.png)
+![Captura de ecrã dos atalhos disponíveis no Portal da empresa do Windows](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Passos Seguintes
 

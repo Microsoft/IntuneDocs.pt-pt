@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 084294ca6b715f05957e973635a05abd8c0762a2
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378271"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657836"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -543,11 +543,11 @@ SUBQUERY (
 
 Antiga IU:
 
-![Antiga IU de partilha](./media/sharing-UI-old.png)
+![Partilha de dados - antigo da interface do Usuário de partilha do iOS](./media/sharing-UI-old.png)
 
 Nova IU:
 
-![Nova IU de partilha](./media/sharing-UI-new.png)
+![Partilha de dados - nova interface do Usuário de partilha do iOS](./media/sharing-UI-new.png)
 
 ## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>Permitir a configuração direcionada (configuração de aplicação APP/MAM) para as suas aplicações iOS
 
@@ -602,7 +602,7 @@ A aplicação é responsável por definir as identidades de forma adequada, inde
 
 A qualquer altura, todos os threads têm uma identidade eficaz para tarefas de IU e tarefas de ficheiros. Esta é a identidade que serve para verificar que políticas devem ser aplicadas (se forem aplicadas políticas). Se a identidade for "no identity" ou se o utilizador não for gerido, não serão aplicadas políticas. Os diagramas abaixo mostram como são determinadas as identidades em vigor.
 
-  ![SDK da Aplicação do Intune para iOS: estruturas e bibliotecas ligadas](./media/ios-thread-identities.png)
+  ![SDK da aplicação Intune para iOS: Processo de determinação de identidade](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Filas de threads
 

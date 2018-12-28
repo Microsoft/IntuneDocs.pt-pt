@@ -1,12 +1,12 @@
 ---
 title: Adicionar manualmente a aplicação Portal da Empresa do Windows 10
 titleSuffix: Microsoft Intune
-description: Saiba como adicionar manualmente a aplicação Portal da Empresa do Windows 10.
+description: Saiba como sua força de trabalho pode adicionar manualmente a aplicação Portal da empresa do Windows 10 a seus PCs da Microsoft Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190273"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642596"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune
 
@@ -51,7 +51,7 @@ Para gerir dispositivos e instalar aplicações, os seus utilizadores podem inst
 
 7. Transfira todos os pacotes em "Arquiteturas necessárias" ao selecionar **Transferir**.  
     Esta ação deve ser concluída para as arquiteturas x86, x64 e ARM, e perfazer um total de 12 pacotes.
-8. Antes de carregar a aplicação Portal da Empresa para o Intune, crie uma pasta (por exemplo, C:\Portal da Empresa) com os pacotes estruturados da seguinte forma:
+8. Antes de carregar a aplicação Portal da empresa ao Intune, crie uma pasta (por exemplo: Portal de C:\Company) com os pacotes estruturados da seguinte forma:
    - Coloque o pacote do Portal da Empresa na pasta C:\Portal da Empresa. Crie também uma subpasta *Dependências* nesta localização.  
 
      ![Pasta Dependências guardada com o ficheiro APPXBUN](./media/Win10CP-Dependencies-save.png)

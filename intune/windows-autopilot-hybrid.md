@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112447"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642562"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementar dispositivos híbridos associados ao Azure Active Directory com o Intune e o Windows Autopilot (Pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar dispositivos híbridos associados ao Azure Active Directory. Para o fazer, siga os passos abaixo.
@@ -122,7 +122,7 @@ O Conector do Intune para o Azure Active Directory tem de ser instalado num comp
 
 ### <a name="configure-web-proxy-settings"></a>Configurar definições de proxy Web
 
-Se tiver um proxy Web no seu ambiente de rede, siga as instruções aqui apresentadas, para que o Conector do Intune para o Active Directory funcione corretamente: [Trabalhar com servidores proxy no local existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Se tiver um proxy web no seu ambiente de rede, siga as instruções aqui para que o conector do Intune para o Active Directory funcione corretamente: [Trabalho com o existente no local servidores proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Criar um grupo de dispositivos
@@ -200,11 +200,11 @@ O estado do perfil dos dispositivos irá demorar cerca de 15 minutos a mudar de 
 
 1. No [Intune](https://aka.ms/intuneportal), selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
 2. Introduza as seguintes propriedades:
-   - **Nome**: introduza um nome descritivo para o novo perfil.
-   - **Descrição:** introduza uma descrição para o perfil.
-   - **Plataforma**: selecione **Windows 10 e posterior**.
-   - **Tipo de perfil**: selecione **Associação a um Domínio (Pré-visualização)**.
-3. Selecione **Definições** e forneça um **Prefixo de nome do computador**, um **Nome de domínio** e uma **Unidade organizacional** (opcional). 
+   - **Nome**: Introduza um nome descritivo para o novo perfil.
+   - **Descrição**: Introduza uma descrição para o perfil.
+   - **Plataforma**: Escolher **Windows 10 e posterior**.
+   - **Tipo de perfil**: Escolher **ingresso no domínio (pré-visualização)**.
+3. Escolher **configurações** e forneça uma **prefixo do nome do computador**, **nome de domínio**, e **unidade organizacional** no formato de DN (opcional). 
 4. Selecione **OK** > **Criar**. O perfil é criado e apresentado na lista.
 5. Para atribuir o perfil, siga os passos em [Atribuir um perfil do dispositivo](device-profile-assign.md#assign-a-device-profile). 
 

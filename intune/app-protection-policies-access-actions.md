@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032066"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734243"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Eliminação seletiva de dados através de ações de acesso das políticas de proteção de aplicações no Intune
 
@@ -84,10 +84,10 @@ Para Android, poderá configurar ações para as seguintes definições a partir
 -  Fabricantes de dispositivos
 
 Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
-Entrada de exemplo: *Fabricante A;Fabricante B* 
+Entrada de exemplo: *Fabricante A; Fabricante B* 
 
 >[!NOTE]
-> Estes são alguns fabricantes comuns, comunicados por dispositivos que utilizam o Intune, que podem ser utilizados como entrada: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
+> Estes são alguns fabricantes comuns reportados a partir de dispositivos com o Intune e podem ser utilizados como entrada: ASUS; BlackBerry; Bq; Gionee; Google; HMD global; HTC; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 Nos dispositivos dos utilizadores finais, o cliente do Intune toma medidas com base numa única correspondência de cadeias do modelo de dispositivo especificadas no Intune para as Políticas de Proteção de Aplicações. A correspondência depende inteiramente do que é comunicado pelo dispositivo. Recomendamos-lhe (ao administrador de TI) que se certifique de que o comportamento previsto está a ocorrer ao testar esta definição com base numa variedade de fabricantes e modelos de dispositivos e direcionado para um pequeno grupo de utilizadores. O valor predefinido é **Não configurado**.<br>
 Defina uma das seguintes ações: 
@@ -110,7 +110,7 @@ A seguinte lista apresenta as ações comuns:
 
 Em alguns casos, como a definição **Versão mínima do SO**, pode configurar a definição para realizar todas as ações aplicáveis com base em números de versão diferentes. 
 
-![Captura de ecrã a mostrar as ações de acesso de proteção de aplicações do Intune – Versão mínima do SO](./media/apps-selective-wipe-access-actions05.png)
+![Captura de ecrã das ações de acesso de proteção de aplicações - versão do SO mínima](./media/apps-selective-wipe-access-actions05.png)
 
 Depois de ter configurado totalmente uma definição, a linha será apresentada numa vista só de leitura e estará disponível para editar em qualquer altura. A linha também parecerá ter uma lista pendente disponível para seleção na coluna **Definição**. As definições que já tenham sido configuradas e que não permitam múltiplas ações não estarão disponíveis para seleção na lista pendente.
 

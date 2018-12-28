@@ -1,7 +1,7 @@
 ---
 title: Ponto final da API do Armazém de Dados do Intune
 titlesuffix: Microsoft Intune
-description: O tópico de referência descreve a estrutura do URL da API do Armazém de Dados do Intune.
+description: Este tópico de referência descreve a estrutura do URL de API do armazém de dados do Microsoft Intune. São fornecidos exemplos de filtro.
 keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180600"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642749"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
 
@@ -81,6 +81,6 @@ Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180220.                                     |
 |    `maxhistorydays=7&$filter=Id gt 1`                            |    O Id gt 1 parcial não será otimizado    |    Devolver dados com um `DateKey` entre 20180214 e 20180221 e um Id superior a 1.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    Nenhum                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho.                              |
-|    `$filter=DateKey ne 20180214`                                 |    Nenhum                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    Nenhum                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho. `maxhistorydays` é ignorado.    |
+|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    Nenhuma                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho.                              |
+|    `$filter=DateKey ne 20180214`                                 |    Nenhuma                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho.                              |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    Nenhuma                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho. `maxhistorydays` é ignorado.    |
