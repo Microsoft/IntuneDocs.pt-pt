@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553695"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996036"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -93,13 +93,6 @@ Agora pode gerir as seguintes aplicações com [políticas de proteção de apli
 
 Utilize políticas de proteção de aplicações para proteger a empresa transferência de dados e controle de dados para estas aplicações, como outra aplicações geridas por políticas do Intune. Nota: Se o fluxo ainda não estiver visível na consola, adicionar fluxo quando criar ou editar e políticas de proteção de aplicações. Para tal, utilize o **+ mais aplicações** opção e, em seguida, especifique a *ID de aplicação* do Flow no campo de entrada. Para Android utilizam *com.microsoft.flow*, e para iOS utilize *com.microsoft.procsimo*.
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427 -->
-Alterámos as etiquetas para as definições e botões para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
-
-- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
-- As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
-
-As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada.
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 

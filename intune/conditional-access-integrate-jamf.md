@@ -1,6 +1,5 @@
 ---
-title: Integrar o Jamf Pro com o Microsoft Intune para conformidade
-titlesuffix: ''
+title: Integrar o Jamf Pro com o Microsoft Intune para conformidade | Microsoft Intune
 description: Utilize as políticas de conformidade do Microsoft Intune com o acesso condicional do Azure Active Directory para ajudar a proteger os dispositivos geridos pelo Jamf.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816825"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
@@ -50,7 +49,7 @@ Pode ligar o Intune através do Jamf Pro ao:
 1. Abra o **Azure Active Directory** > **Registos das Aplicações**.
 2. Clique em **+Novo registo de aplicação**.
 3. Introduza um **nome a apresentar**, tal como **Acesso Condicional do Jamf**.
-4. Selecione **Aplicação Web/API**.
+4. Selecione **aplicação Web / API**.
 5. Especifique o **URL de Início de Sessão** com o seu URL de instância do Jamf Pro.
 6. Clique em **Criar aplicação**.
 7. Guarde o **ID da Aplicação** recentemente criado e, em seguida, abra **Definições** e navegue até **Acesso à API** > **Chaves** para criar uma nova Chave da Aplicação. Introduza uma **Descrição**, o prazo até a mesma **Expirar** e, em seguida, guarde a Chave da Aplicação.
@@ -115,14 +114,14 @@ O Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos
 * Associação a um Domínio
 * ID do Jamf
 * Endereço MAC
-* Tornar
-* Model
+* Criar
+* Modelo
 * Identificador do Modelo
 * Velocidade da NIC
 * Número de Núcleos
 * Número de Processadores
 * SO
-* Platform
+* Plataforma
 * Velocidade do Processador
 * Tipo de processador
 * Endereço MAC Secundário

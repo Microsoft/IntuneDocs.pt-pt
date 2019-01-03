@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 2a06855ce9f25a5e7ee79d5b0344650fcb42900c
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817182"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -37,14 +37,14 @@ Pode utilizar as políticas de proteção de aplicações do Intune **independen
 
 As políticas de proteção de aplicações podem ser configuradas para aplicações executadas em dispositivos que estão:
 
-- **Inscritos no Microsoft Intune:** estes dispositivos pertencem, normalmente, à empresa.
+- **Inscritos no Microsoft Intune:** Estes dispositivos são, normalmente, pertencentes à empresa.
 
-- **Inscritos numa solução de gestão de dispositivos móveis (MDM) de terceiros:** estes dispositivos pertencem, normalmente, à empresa.
+- **Inscritos numa solução de gestão (MDM) de terceiros de dispositivos móveis:** Estes dispositivos são, normalmente, pertencentes à empresa.
 
   > [!NOTE]
   > As políticas de gestão de aplicações móveis não devem ser utilizadas com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
 
-- **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** os dispositivos pertencem, normalmente, aos funcionários e não são geridos ou não estão inscritos no Intune ou noutras soluções de MDM de terceiros.
+- **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** Os dispositivos são, normalmente, os dispositivos que não são geridos ou inscritos no Intune ou noutras soluções MDM de funcionários.
 
 > [!IMPORTANT]
 > Pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. Também pode proteger o acesso a caixas de correio do Exchange no local ao criar políticas de proteção de aplicações do Intune para o Outlook para iOS e Android com Autenticação Moderna híbrida. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). As políticas de proteção de aplicações não são suportadas para outras aplicações que se ligam aos serviços do SharePoint ou do Exchange no local.
@@ -75,14 +75,14 @@ Os dispositivos Windows não são atualmente suportados. No entanto, pode usar o
 
 #### <a name="apps-without-app-protection-policies"></a>Aplicações sem políticas de proteção de aplicações
 
-![Imagem que mostra que os dados podem mover-se livremente entre aplicações quando não existem políticas de proteção de aplicações implementadas](./media/apps-without-protection-policies.png)
+![Imagem conceptual para o movimento de dados entre aplicações sem políticas no local](./media/apps-without-protection-policies.png)
 
 Quando as aplicações são utilizadas sem restrições, os dados pessoais e da empresa podem confundir-se. Os dados da empresa podem acabar em localizações como um armazenamento pessoal ou ser transferidos para aplicações fora da sua competência e que resulta em perda de dados. As setas no diagrama anterior mostram o movimento de dados sem restrições entre aplicações (empresariais e pessoais) e para localizações de armazenamento.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Proteção de dados com políticas de proteção de aplicações
 
-![Imagem que mostra como os dados da empresa são protegidos quando são aplicadas Políticas de proteção de aplicações ](./media/apps-with-protection-policies.png)
+![Imagem conceptual, que mostra os dados da empresa que está a ser protegidos por políticas](./media/apps-with-protection-policies.png)
 
 
 Pode utilizar Políticas de proteção de aplicações para impedir que os dados da empresa sejam guardados no armazenamento local do dispositivo. Também pode restringir o movimento de dados para outras aplicações que não estão protegidas pelas Políticas de proteção de aplicações. As definições de políticas de proteção de aplicações incluem:

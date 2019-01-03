@@ -1,6 +1,5 @@
 ---
-title: Cenários de acesso condicional
-titlesuffix: Microsoft Intune
+title: Cenários de acesso condicional | Microsoft Intune
 description: Saiba como o acesso condicional do Intune é geralmente utilizado para acesso condicional baseado no dispositivo e baseado na aplicação.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817165"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
@@ -133,11 +132,11 @@ O acesso condicional para PCs fornece funcionalidades semelhantes às que se enc
 
 #### <a name="corporate-owned"></a>Pertencentes à empresa
 
--   **Associação a um domínio do AD no local:** esta opção é utilizada habitualmente por organizações que se sentem razoavelmente confortáveis com a forma como já gerem os seus PCs através de políticas de grupo do AD e/ou do System Center Configuration Manager.
+-   **No local associados a um domínio do AD:** Esta opção é utilizada frequentemente por organizações que estão razoavelmente confortáveis com a forma como eles já estão gerenciando seus PCs através de políticas de grupo do AD e/ou o System Center Configuration Manager.
 
--   **Associação a um domínio do Azure AD e gestão do Intune:** este cenário está normalmente voltado para CYOD (Choose Your Own Device) e cenários de computador portátil móvel onde estes dispositivos são raramente ligados à rede da empresa. O dispositivo efetua a adesão ao Azure AD e é inscrito no Intune, que remove qualquer dependência no AD no local e controladores de domínio. Este procedimento pode ser utilizado como critério de acesso condicional ao aceder a recursos empresariais.
+-   **O Azure AD associado a um domínio e de gestão do Intune:** Este cenário está normalmente voltado para escolha seu próprio dispositivo (CYOD) e o roaming de laptop de cenários em que estes dispositivos são raramente ligados à rede empresarial. O dispositivo efetua a adesão ao Azure AD e é inscrito no Intune, que remove qualquer dependência no AD no local e controladores de domínio. Este procedimento pode ser utilizado como critério de acesso condicional ao aceder a recursos empresariais.
 
--   **Associação a um domínio do AD e System Center Configuration Manager:** a partir do ramo atual, o System Center Configuration Manager fornece capacidades de acesso condicional que podem avaliar a critérios específicos de conformidade, além de ser um PC associado a um domínio:
+-   **AD associados a um domínio e o System Center Configuration Manager:** A partir do ramo atual, o System Center Configuration Manager fornece capacidades de acesso condicional que podem avaliar a critérios específicos de conformidade, além de ser um PC associado a um domínio:
 
     -   O PC está encriptado?
 
@@ -147,7 +146,7 @@ O acesso condicional para PCs fornece funcionalidades semelhantes às que se enc
 
 #### <a name="bring-your-own-device-byod"></a>Bring your own device (BYOD)
 
--   **Associação à área de trabalho e gestão do Intune:** aqui, o utilizador pode associar os seus dispositivos pessoais para aceder a serviços e recursos da empresa. Pode utilizar a Associação à área de trabalho e inscrever dispositivos no Intune para receber políticas com base no nível do dispositivo, que também é outra opção para avaliar os critérios de acesso condicional.
+-   **Associação à área de trabalho e gestão do Intune:** Aqui, o utilizador pode associar seus dispositivos pessoais para aceder a recursos da empresa e serviços. Pode utilizar a Associação à área de trabalho e inscrever dispositivos no Intune para receber políticas com base no nível do dispositivo, que também é outra opção para avaliar os critérios de acesso condicional.
 
 ## <a name="app-based-conditional-access"></a>Acesso condicional com base nas aplicações
 

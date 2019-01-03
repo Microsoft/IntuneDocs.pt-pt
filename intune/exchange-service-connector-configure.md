@@ -1,12 +1,11 @@
 ---
-title: Intune Exchange Connector para o Exchange Online
-titleSuffix: ''
+title: Exchange connector do Intune para o Exchange Online | Microsoft Intune
 description: Ligue o Intune ao serviço do Exchange do Office 365 para suportar a gestão de dispositivos móveis (MDM) do Exchange Active Sync.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9845ed1b809b611975c07c6c8335acd237d845c0
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816706"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 Este artigo mostra-lhe como ligar o serviço do Microsoft Intune ao Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta.
@@ -52,7 +51,7 @@ Tem de criar uma conta de utilizador do Exchange Online utilizada pelo conector 
 
 ## <a name="set-up-the-service-to-service-connector"></a>Configurar o Conector de Serviços
 
-1. Inicie sessão no [portal do Azure](http://portal.azure.com) com uma conta de utilizador com direitos de administração do Exchange, permissões para os cmdlets [descritos anteriormente](#exchange-cmdlet-requirements), uma licença do Intune válida e a função Administrador Global. O Microsoft Intune utiliza o endereço de e-mail do utilizador que tem atualmente sessão iniciada para configurar a ligação.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com) com uma conta de utilizador com direitos de administração do Exchange, permissões para os cmdlets [descritos anteriormente](#exchange-cmdlet-requirements), uma licença do Intune válida e a função Administrador Global. O Microsoft Intune utiliza o endereço de e-mail do utilizador que tem atualmente sessão iniciada para configurar a ligação.
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 

@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817250"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Zimperium Mobile Threat Defense com o Intune
 
 Pode controlar o acesso aos recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Zimperium, uma solução de Defesa Contra Ameaças para Dispositivos Móveis (MTD) que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos a executar a aplicação Zimperium.
 
-Pode configurar políticas de acesso condicional baseadas na avaliação de riscos do Zimperium, que é ativada através de políticas de conformidade do dispositivo do Intune, as quais pode utilizar para permitir ou impedir que os dispositivos não conformes acedam aos recursos empresariais com base em ameaças detetadas.
+Pode configurar políticas de acesso condicional com base na avaliação de riscos do Zimperium ativada através de políticas de conformidade de dispositivos do Intune. Política de avaliação de risco pode permitir ou bloquear dispositivos não conformes acedam a recursos empresariais com base em ameaças detetadas.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Como é que o Intune e o Zimperium ajudam a proteger os recursos da empresa?
 
@@ -51,11 +51,11 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Aplicações maliciosas detetadas](./media/Maliciousapps_blocked_Zimperium.png)
+![Imagem conceptual de aplicações maliciosas detetadas](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Acesso concedido na remediação:**
 
-![Acesso concedido a aplicações maliciosas detetadas](./media/maliciousapps_unblocked_Zimperium.png)
+![Imagem conceptual de acesso concedido após a remediação](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
@@ -95,7 +95,7 @@ Detete ameaças como **Man-in-the-middle** na rede e impeça a sincronização
 
 -   Subscrição do Zimperium Mobile Threat Defense
 
-    -   Para obter mais informações, consulte [site do Zimperium](https://www.zimperium.com/zips-mobile-ips) para obter mais informações.
+    -   Para obter mais informações, consulte [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

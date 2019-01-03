@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: 8eeb55ca9e2c698d2d9e1814e9ea17f779326732
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 313c20699c30d20d1bbc9bb6aea9189a83b61f53
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816638"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector Better Mobile Threat Defense com o Intune
 
@@ -48,7 +48,7 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Aplicações maliciosas detetadas](./media/better_mobile_maliciousapps_blocked.png)
+![Imagem que mostra a aplicações maliciosas detetadas](./media/better_mobile_maliciousapps_blocked.png)
 
 **Acesso concedido na remediação:**
 
@@ -64,7 +64,7 @@ Detete ameaças à rede, tal como ataques **Man-in-the-middle**, e proteja o ace
 
 **Acesso concedido na remediação:**
 
-![Acesso concedido na remediação](./media/better_mobile_network_wifi_unblocked.png)
+![Imagem que mostra o acesso concedido na remediação](./media/better_mobile_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 

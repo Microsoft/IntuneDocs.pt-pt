@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817369"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -72,11 +72,11 @@ As novas políticas que criar não serão implementadas para utilizadores até q
 
 2. No painel ***Proteção de Aplicações do Intune**, selecione **Atribuições** para abrir o painel **Proteção de Aplicações do Intune – Atribuições**. No separador *Incluir*, clique em **Selecionar grupos para incluir**. 
 
-   ![Captura de ecrã do painel Atribuições, com a opção do menu Selecionar grupos para incluir realçada](./media/app-protection-policy-add-users.png)
+   ![Captura de ecrã do painel atribuições, com selecionar grupos para incluir o menu](./media/app-protection-policy-add-users.png)
 
 3.  É apresentada uma lista de todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, clique em **Selecionar**. 
 
-    ![Captura de ecrã do painel Adicionar um grupo de utilizadores a mostrar a lista de utilizadores do Azure Active Directory](./media/azure-ad-user-group-list.png)
+    ![Captura de ecrã do painel de grupo do utilizador adicionar com a lista de utilizadores do Azure AD](./media/azure-ad-user-group-list.png)
 
 4.  Depois de incluir e excluir grupos, selecione **guardar** para guardar a configuração e implementar a política aos utilizadores. Se selecionou **descartar** antes de guardar a configuração, irá eliminar todas as alterações efetuadas a *inclusão* e *excluir* separadores.   
  
@@ -138,7 +138,7 @@ Uma vez que as políticas de proteção de aplicações do Intune são direciona
 
 Para criar estas políticas, navegue até **Aplicações do cliente** > **Políticas de proteção de aplicações** na consola do Intune e selecione **Criar Política**. Também pode editar uma política de proteção de aplicações existente. Para que a política de proteção de aplicações se aplique a dispositivos geridos e não geridos, confirme que a opção **Direcionar para todos os tipos de aplicações** está definida como **Sim**, o valor predefinido. Se quiser atribuir especificamente com base no estado de gestão, defina **Direcionar para todos os tipos de aplicações** para **Não**. 
 
-![Captura de ecrã a mostrar o painel Adicionar uma política, com a opção Direcionar para todos os tipos de aplicações selecionada](./media/app-protection-policies-target-all.png)
+![Captura de ecrã do painel adicionar uma política com o destino para todos os tipos de aplicações](./media/app-protection-policies-target-all.png)
 
 Para o iOS, as definições de configuração da aplicação adicionais são necessárias para direcionar as definições de APP para as aplicações nos dispositivos inscritos no Intune:
 - **IntuneMAMUPN** tem de ser configurado para todas as aplicações geridas pela MDM. Para obter mais informações, veja [Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).

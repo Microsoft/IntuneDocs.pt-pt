@@ -1,6 +1,5 @@
 ---
-title: Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP)
-titlesuffix: Microsoft Intune
+title: Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) | Microsoft Intune
 description: Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Microsoft Intune
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817318"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -35,15 +34,15 @@ Tem de compreender alguns conceitos ao adicionar uma política WIP:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lista de aplicações permitidas e excluídas
 
--   **Aplicações protegidas:** estas são as aplicações que precisam de cumprir esta política.
+-   **Aplicações protegidas:** Estas aplicações são as aplicações que precisam de cumprir esta política.
 
--   **Aplicações excluídas:** estas aplicações estão excluídas desta política e podem aceder aos dados empresariais sem restrições.
+-   **Excluir aplicações:** Estas aplicações estão excluídas desta política e podem aceder a dados empresariais sem restrições.
 
 ### <a name="types-of-apps"></a>Tipos de aplicações
 
--   **Aplicações recomendadas:** uma lista de aplicações preenchida previamente (na sua maioria do Microsoft Office) que pode facilmente importar para a política.
--   **Aplicações da Loja:** pode adicionar qualquer aplicação da loja Windows à política.
--   **Aplicações de ambiente de trabalho do Windows:** pode adicionar qualquer aplicação de ambiente de trabalho à política (por exemplo, .exe, .dll)
+-   **Aplicações recomendadas:** Uma lista preenchida previamente de (em grande parte do Microsoft Office) que pode facilmente importar para a política.
+-   **Aplicações de Store:** Pode adicionar qualquer aplicação da loja Windows à política.
+-   **Aplicativos de desktop do Windows:** Pode adicionar qualquer aplicativos de desktop tradicionais do Windows à política (por exemplo, .exe,. dll)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -75,10 +74,10 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 4. Selecione **Políticas de proteção de aplicações** no painel **Aplicações do cliente**.
 5. Selecione **Adicionar uma política** para apresentar o painel **Adicionar uma política**.
 6. Adicione os seguintes valores:
-    - **Nome:** introduza um nome (obrigatório) para a nova política.
-    - **Descrição:** (opcional) escreva uma descrição.
-    - **Plataforma:** escolha o **Windows 10** como a plataforma suportada para a política de proteção de aplicações.
-    - **Estado de inscrição:** escolha **Sem inscrição** como o estado de inscrição da política.
+    - **Nome:** Escreva um nome (obrigatório) para a nova política.
+    - **Descrição:** (Opcional) Escreva uma descrição.
+    - **Plataforma:** Escolher **Windows 10** como a plataforma suportada para a política de proteção de aplicações.
+    - **Estado da inscrição:** Escolher **sem inscrição** como o estado de inscrição para a sua política.
 7.  Selecione **Criar**. A política é criada e apresentada na tabela no painel **Políticas de proteção de aplicações**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Para adicionar aplicações recomendadas à lista de aplicações protegidas
@@ -131,7 +130,7 @@ Quando estiver a trabalhar com aplicações com o WIP e aplicações desconhecid
 
 ### <a name="what-are-the-protection-modes"></a>O que são os modos de proteção?
 
-#### <a name="block"></a>Bloqueio
+#### <a name="block"></a>Bloquear
 O WIP procura práticas de partilha de dados inadequadas e impede o utilizador de concluir a ação. As ações bloqueadas podem incluir a partilha de informações em aplicações não protegidas pela empresa e a partilha de dados empresariais entre outras pessoas e dispositivos fora da sua organização.
 
 #### <a name="allow-overrides"></a>Permitir Substituições
@@ -149,13 +148,13 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
 1.  No painel **Adicionar política**, selecione o nome da sua política e, em seguida, selecione **Definições necessárias**.
 
-    ![Captura de ecrã do Modo de Aprendizagem](./media/learning-mode-sc1.png)
+    ![Captura de ecrã do painel de modo de aprendizagem](./media/learning-mode-sc1.png)
 
 1.  Selecione uma definição e, em seguida, selecione **Guardar**.
 
 ### <a name="use-wip-learning"></a>Utilizar a Aprendizagem de WIP
 
-1. Abra o [portal do Azure](https://portal.azure.com). Selecione **Todos os serviços**. Escreva **Intune** no filtro da caixa de texto.
+1. Abra o [Portal do Azure](https://portal.azure.com). Selecione **Todos os serviços**. Escreva **Intune** no filtro da caixa de texto.
 
 3. Selecione **Intune** > **Aplicações do Cliente**.
 

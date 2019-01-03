@@ -1,6 +1,5 @@
 ---
-title: Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Microsoft Intune
-titleSuffix: ''
+title: Ativar o conector de defesa contra ameaças móveis no Microsoft Intune | Microsoft Intune
 description: Ative o conector entre o seu parceiro de Defesa Contra Ameaças para Dispositivos Móveis (MTD) e o Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2937814ae5ceb6c7d8b3def4e954c8eec9337126
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cfd6f222533728c754f55a76b78698eac5e4031b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816689"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -52,17 +51,17 @@ Durante a configuração da Defesa Contra Ameaças para Dispositivos Móveis (MT
 
 Pode decidir quais as opções de alternância da MTD que necessita de ativar de acordo com os requisitos da sua organização. Veja a seguir mais detalhes:
 
-- **Ligar dispositivos Android 4.1 ou posterior à MTD do [nome do parceiro MTD] for Work**: quando ativa esta opção, pode ter dispositivos Android 4.1 ou posterior a comunicar riscos de segurança para o Intune.
-    - **Marcar como não conforme se não forem recebidos dados**: se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo como não conforme.
+- **Ligar Android 4.1 dispositivos para [nome do parceiro MTD] para o trabalho MTD**: Quando ativa esta opção, pode ter Android 4.1 dispositivos a comunicar riscos de segurança de volta para o Intune.
+    - **Marcar como não conforme se não forem recebidos dados**: Se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo não conforme.
 <br></br>
-- **Ligar dispositivos com o iOS 8.0 ou posterior à MTD do [nome do parceiro MTD] for Work**: quando ativa esta opção, pode ter dispositivos com o iOS 8.0 ou posterior a comunicar riscos de segurança para o Intune.
-    - **Marcar como não conforme se não forem recebidos dados**: se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo como não conforme.
+- **Ligar dispositivos iOS 8.0 + para [nome do parceiro MTD] para o trabalho MTD**: Quando ativa esta opção, pode ter dispositivos iOS 8.0 + comunicar riscos de segurança de volta para o Intune.
+    - **Marcar como não conforme se não forem recebidos dados**: Se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo não conforme.
 <br></br>
-- **Ativar Sincronização de Aplicações para Dispositivos iOS**: permite que o parceiro de Defesa Contra Ameaças para Dispositivos Móveis peça metadados de aplicações iOS a partir do Intune para utilizar para fins de análise de ameaças.
+- **Ativar a sincronização de aplicações para dispositivos iOS**: Permite que este parceiro de defesa contra ameaças móveis solicite os metadados das aplicações iOS do Intune a utilizar para fins de análise de ameaças.
 
-- **Bloquear versões do SO não suportadas**: bloquear se o dispositivo estiver a executar um sistema operativo inferior à versão mínima suportada.
+- **Bloquear versões de SO não suportadas**: Bloquear se o dispositivo está a executar um sistema operativo inferior à versão mínima suportada.
 
-- **Número de dias até o parceiro ficar não responsivo**: número de dias de inatividade antes de o Intune considerar o parceiro como não responsivo devido a perda da ligação. O Intune ignora o estado de conformidade para parceiros MTD não responsivos.
+- **Número de dias até o parceiro não está a responder**: Número de dias de inatividade antes do Intune considerar o parceiro como não responsivo devido a ligação for perdida. O Intune ignora o estado de conformidade para parceiros MTD não responsivos.
 
 > [!IMPORTANT] 
 > Tem de adicionar e atribuir aplicações de MTD antes de criar a conformidade do dispositivo e as regras da política de acesso condicional. Isto garante que a aplicação de MTD está pronta e disponível para os utilizadores finais instalarem antes de poderem aceder ao e-mail ou a outros recursos da empresa.

@@ -1,6 +1,5 @@
 ---
-title: Conector da Symantec com o Microsoft Intune
-titlesuffix: ''
+title: Conector da Symantec com o Microsoft Intune | Microsoft Intune
 description: Saiba mais sobre como integrar o Symantec Endpoint Protection Mobile para controlar o acesso de dispositivos móveis aos seus recursos empresariais.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817128"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Conector do Symantec Endpoint Protection Mobile
 
@@ -67,11 +66,11 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Aplicações maliciosas detetadas](./media/symantec-arch-1.png)
+![Imagem conceptual de aplicações maliciosas detetadas](./media/symantec-arch-1.png)
 
 **Acesso concedido na remediação:**
 
-![Acesso concedido na remediação após a deteção de aplicações maliciosas](./media/symantec-arch-2.png)
+![Imagem de acesso concedido na remediação após a deteção de aplicações maliciosas](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 

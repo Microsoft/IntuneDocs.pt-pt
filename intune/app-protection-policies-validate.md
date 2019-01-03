@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816961"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Como validar a configuração das políticas de proteção de aplicações
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247072"
 
 Verificar que a sua política de proteção de aplicações está configurada e a funcionar corretamente. Esta orientação aplica-se às políticas de proteção de aplicações no portal do Azure.
 
-### <a name="checking-for-symptoms"></a>Procurar sintomas
+## <a name="checking-for-symptoms"></a>Procurar sintomas
 É pouco provável que os utilizadores comuniquem problemas, uma vez que a proteção de aplicações é uma ferramenta de proteção de dados. Se houver um problema com a configuração de proteção de aplicações do utilizador tem acesso sem restrições, tal como teria sem a proteção de aplicações e não sabe que existe um problema. Por esse motivo, recomendamos que valide a configuração de proteção de aplicações ao controlar as políticas de proteção de aplicações com um pequeno grupo de utilizadores que pode testar deliberadamente as restrições da proteção de aplicações.
 
 
-### <a name="what-to-check"></a>O que verificar
+## <a name="what-to-check"></a>O que verificar
 
 Se os testes mostrarem que o comportamento de política de proteção de aplicações não está conforme esperado, verifique os seguintes itens:
 
@@ -41,7 +41,7 @@ Se os testes mostrarem que o comportamento de política de proteção de aplica�
 - Os utilizadores estão licenciados para O365?
 - O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**.
 
-#### <a name="user-app-protection-status"></a>Estado da proteção de aplicações do utilizador
+### <a name="user-app-protection-status"></a>Estado da proteção de aplicações do utilizador
 1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **aplicações de cliente** > **Monitor** >  **estado de proteção de aplicações**e, em seguida, selecione o **utilizadoresatribuídos**mosaico. 
@@ -50,7 +50,7 @@ Se os testes mostrarem que o comportamento de política de proteção de aplica�
 
 
 
-### <a name="what-to-do"></a>O que fazer
+## <a name="what-to-do"></a>O que fazer
 Eis as ações a efetuar com base no estado de utilizador:
 
 - Se o utilizador não está licenciado para proteção de aplicações, atribua uma licença do Intune ao utilizador.
@@ -58,6 +58,6 @@ Eis as ações a efetuar com base no estado de utilizador:
 - Se a aplicação de um utilizador estiver listada com o estado **Sem verificação**, verifique se configurou corretamente uma política de proteção de aplicações para a mesma.
 - Certifique-se de que estas condições aplicam-se em todos os utilizadores aos quais pretende que as políticas de proteção de aplicações a aplicar.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [O que é uma política de proteção de aplicações do Intune?](app-protection-policies.md)

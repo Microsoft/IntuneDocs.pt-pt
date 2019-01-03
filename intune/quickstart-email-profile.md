@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817046"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início Rápido: criar um perfil de dispositivo de e-mail para iOS
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início rápido: Criar um perfil de e-mail de dispositivos para iOS
 
 Neste início rápido, verá como pode criar um perfil de dispositivo de e-mail para dispositivos iOS. Este perfil especifica as definições que são necessárias para a aplicação de e-mail incorporada no dispositivo iOS estabelecer ligação ao e-mail da empresa. Os perfis de dispositivo de e-mail ajudam a padronizar as definições em vários dispositivos e permitem que os utilizadores finais acedam ao e-mail da empresa nos respetivos dispositivos pessoais sem precisarem de realizar qualquer configuração. Para salvaguardar ainda mais o seu e-mail, pode utilizar um perfil de e-mail para determinar se os dispositivos estão em conformidade e, em seguida, para configurar o acesso condicional de modo permitir que apenas os dispositivos conformes acedam ao e-mail. Para obter detalhes sobre perfis de e-mail, veja [Como configurar definições de e-mail no Microsoft Intune](email-settings-configure.md).
 
@@ -45,16 +45,16 @@ Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto Administrador G
    - Em **Plataforma**, selecione **iOS**.
    - Em **Tipo de perfil**, selecione **E-mail**.
     
-     ![Criar um perfil de e-mail para iOS](media/quickstart-email-profile/ios-email-profile-name.png)
+     ![Criar um perfil de e-mail para utilização com o iOS](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. Selecione **Definições** e introduza as definições que se seguem (nas outras definições, deixe as predefinições):
-   - **Servidor de e-mail**: neste início rápido, introduza **outlook.office365.com**. Esta definição especifica a localização do Exchange (URL) do servidor de e-mail que a aplicação de correio do iOS utilizará para estabelecer ligação ao e-mail.
-   - **Nome da conta**: introduza o **E-Mail da Empresa**.
-   - **Atributo de nome de utilizador do AAD**: este nome é o atributo que o Intune obtém do Azure Active Directory (Azure AD). O Intune gera dinamicamente o nome de utilizador para este perfil através deste nome. Neste início rápido, vamos pressupor que pretendemos que o **Nome Principal de Utilizador** seja utilizado como o nome de utilizador do perfil (por exemplo, user1@contoso.com).
-   - **Atributo de endereço de e-mail do AAD**: esta definição é o endereço de e-mail do Azure AD que será utilizado para iniciar sessão no Exchange. Neste início rápido, selecione **Nome Principal de Utilizador**.
-   - **Método de autenticação**: neste início rápido, selecione **Nome de utilizador e palavra-passe**. (Também pode selecionar **Certificado** se já tiver configurado um certificado para o Intune.)
+   - **Servidor de e-mail**: Neste início rápido, introduza **outlook.office365.com**. Esta definição especifica a localização do Exchange (URL) do servidor de e-mail que a aplicação de correio do iOS utilizará para estabelecer ligação ao e-mail.
+   - **Nome da conta**: Introduza **da empresa por E-Mail**.
+   - **Atributo de nome de utilizador do AAD**: Este nome é o atributo que Intune obtém do Azure Active Directory (Azure AD). O Intune gera dinamicamente o nome de utilizador para este perfil através deste nome. Neste início rápido, vamos pressupor que pretendemos que o **Nome Principal de Utilizador** seja utilizado como o nome de utilizador do perfil (por exemplo, user1@contoso.com).
+   - **Atributo de endereço de e-mail do AAD**: Esta definição é o endereço de e-mail do Azure AD que será utilizado para iniciar sessão no Exchange. Neste início rápido, selecione **Nome Principal de Utilizador**.
+   - **Método de autenticação**: Neste início rápido, selecione **nome de utilizador e palavra-passe**. (Também pode selecionar **Certificado** se já tiver configurado um certificado para o Intune.)
     
-     ![Criar um perfil de e-mail para iOS](media/quickstart-email-profile/ios-email-profile.png)
+     ![Criar um perfil de e-mail para utilização de iOS](media/quickstart-email-profile/ios-email-profile.png)
 
 6. Selecione **OK**.
 7. Selecione **Criar**. O novo perfil aparece na lista de perfis com o dashboard apresentado para que possa monitorizar a forma como o perfil foi atribuído a dispositivos iOS e a utilizadores do iOS.
