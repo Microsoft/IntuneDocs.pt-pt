@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 2a06855ce9f25a5e7ee79d5b0344650fcb42900c
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817182"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006289"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -146,7 +146,7 @@ Embora a política **Global** se aplique a todos os utilizadores no seu inquilin
 
 As aplicações que suportam várias identidades permitem-lhe utilizar contas diferentes (profissionais e pessoais) para aceder às mesmas aplicações, enquanto as políticas de proteção de aplicações aplicam-se apenas quando as aplicações são utilizadas no contexto de trabalho.
 
-Para um exemplo de contexto pessoa, considere um utilizador que inicia um novo documento do Word, esse é considerado um contexto pessoal para que não são aplicadas políticas de proteção de aplicações do Intune. Depois do documento é salvo na conta empresarial do OneDrive, em seguida, será consieered corporatte contexto e as políticas de proteção de aplicações do Intune serão aplicadas.
+Para um exemplo de contexto pessoa, considere um utilizador que inicia um novo documento do Word, esse é considerado um contexto pessoal para que não são aplicadas políticas de proteção de aplicações do Intune. Depois do documento é salvo na conta empresarial do OneDrive, em seguida, ele será considerado contexto empresarial e as políticas de proteção de aplicações do Intune serão aplicadas.
 
 Para obter um exemplo de contexto de trabalho, considere um utilizador que inicia a aplicação OneDrive com sua conta profissional. No contexto de trabalho, não pode mover ficheiros para uma localização de armazenamento pessoal. Posteriormente, quando utiliza o OneDrive com a sua conta pessoal, pode copiar e mover dados dos seus OneDrive pessoais, sem restrições.
 

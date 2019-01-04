@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e3d0b47bcb8ecbf3d8f76a83f0247f98c0c698f3
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180001"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006357"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 
@@ -53,7 +53,7 @@ Tem duas opções sobre como utilizar configurações de aplicações com o Intu
 
 Pode utilizar políticas de configuração de aplicações para aplicações que as suportam. Para suportar a configuração de aplicações no Intune, as aplicações têm de ter sido escritas de forma a suportar a utilização das configurações de aplicações. Consulte o seu fornecedor de aplicações para obter detalhes.
 
-Pode preparar as suas aplicações de linha de negócio ao incorporar o SDK da Aplicação Intune na aplicação ou ao encapsular a aplicação após esta ter sido desenvolvida. O SDK da Aplicação Intune, disponível para iOS e Android, ativa as suas políticas de configuração da aplicação Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Para obter mais informações, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
+Pode preparar as suas aplicações de linha de negócio ao incorporar o SDK da Aplicação Intune na aplicação ou ao encapsular a aplicação após esta ter sido desenvolvida. O SDK da aplicação Intune, disponível para iOS e Android, permite à sua aplicação para políticas de configuração de aplicações do Intune. Esforça-se para reduzir a quantidade de alterações de código necessárias do programador de aplicações. Para obter mais informações, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Suporte da Graph API para configuração de aplicações
 

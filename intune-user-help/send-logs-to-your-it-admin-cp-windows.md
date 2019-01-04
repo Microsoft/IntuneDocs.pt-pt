@@ -1,6 +1,6 @@
 ---
 title: Enviar registos ao suporte da empresa para dispositivos Windows 10 | Documentos da Microsoft
-description: Enviar registos de diagnóstico para ajudar a corrigir problemas de aplicações de suporte da empresa
+description: Detalhes do erro de envio para ajudar o suporte da empresa corrigir os problemas de aplicação
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626072"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006323"
 ---
 # <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Enviar registos de diagnóstico ao suporte da empresa a partir do Portal da empresa para Windows
 

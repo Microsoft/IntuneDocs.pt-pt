@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 889e298d3d04429c1b9be2ee70519d68063953ab
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112583"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006306"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 
@@ -36,7 +36,7 @@ As configurações possíveis são:
 - **Intune Híbrido** – integração da solução cloud do Intune com o System Center Configuration Manager. Configura o Intune com a consola do Configuration Manager. [Defina a autoridade de MDM no Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
 
     > [!Important]
-    >A inclusão de novos clientes de MDM híbrida será desativada numa versão futura. Para obter mais informações, veja o blogue [MC146431 – Plan for Change Planear a Alteração MC146431](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/) (MC146431 – Planear a Alteração).
+    >A inclusão de novos clientes de MDM híbrida será desativada numa versão futura. Para obter mais informações, consulte a [mover da gestão de dispositivos móveis híbrida para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) postagem de blog.
 
 - **Gestão de Dispositivos Móveis para o Office 365** – integração do Office 365 com a solução cloud do Intune. Configura o Intune a partir do Centro de Administração do Office 365. Inclui um subconjunto das funcionalidades que estão disponíveis com o Intune Autónomo. Defina a autoridade de MDM no Centro de Administração do Office 365.
 
