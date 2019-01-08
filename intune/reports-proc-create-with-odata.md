@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429717"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067453"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -61,7 +61,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 7. Cole o URL do feed personalizado na caixa URL na janela **Feed OData**.
 8. Selecione **Básico**.
 
-    ![Feed OData](media/reports-create-01-odatafeed.png)
+    ![Feed de OData para o armazém de dados do Intune para o seu inquilino](media/reports-create-01-odatafeed.png)
 
 9. Selecione **OK**.
 10. Selecione **Conta escolar ou profissional** e, em seguida, inicie sessão com as suas credenciais do Intune.
@@ -70,7 +70,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
 11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
-    ![O Navegador](media/reports-create-02-loadentities.png)
+    ![Captura de ecrã do navegador – a lista de tabelas do armazém de dados](media/reports-create-02-loadentities.png)
 
 12. Selecione as tabelas **Dispositivos** e **TiposdeProprietário**.  Selecione **Carregar**. O Power BI carrega os dados para o modelo.
 
@@ -78,7 +78,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
 Pode importar múltiplas tabelas para analisar não só os dados numa única tabela, mas também os dados relacionados nas tabelas.  O Power BI tem uma funcionalidade denominada **Deteção automática** que tenta localizar e criar relações automaticamente. As tabelas no Armazém de Dados foram criadas para trabalharem com a funcionalidade Deteção automática do Power BI. No entanto, mesmo se o Power BI não localizar automaticamente as relações, ainda pode gerir as mesmas.
 
-![Gerir relações](media/reports-create-03-managerelationships.png)
+![Gerir relações de dados relacionados em tabelas](media/reports-create-03-managerelationships.png)
 
 1. Selecione **Gerir Relações**.
 2. Selecione **Deteção automática...** caso o Power BI não tenha ainda detetado as relações.
@@ -99,7 +99,7 @@ Um gráfico treemap mostra dados hierárquicos como caixas em caixas. Cada ramo 
 
 Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dispositivos na sua organização.
 
-![Treemap com dados](media/reports-create-06-treemapwdata.png)
+![Treemap com dados - a distribuição dos fabricantes de dispositivos](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Adicionar um filtro
 
@@ -111,7 +111,7 @@ Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicion
 
    Na tabela Dispositivos, existe um campo de dados denominado **ChavedoTipodeProprietário** que contém um código que identifica se um dispositivo é pessoal ou pertencente à empresa. Uma vez que pretende mostrar nomes amigáveis neste filtro, procure a tabela **TiposdeProprietário** e arraste o **NomedoTipodeProprietário**. Este exemplo mostra de que forma o modelo de dados suporta relações entre tabelas.
 
-![Treemap com filtro](media/reports-create-08_ownertype.png)
+![Treemap com filtro - suporta as relações entre tabelas](media/reports-create-08_ownertype.png)
 
 Agora tem um filtro interativo que pode utilizar para alternar entre dispositivos pessoais e dispositivos pertencentes à empresa. Utilize este filtro para ver como a distribuição é alterada.
 

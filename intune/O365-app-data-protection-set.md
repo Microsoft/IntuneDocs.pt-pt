@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642478"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067470"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores no Microsoft Intune
 
@@ -82,7 +82,7 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 >[!NOTE]
 >Da próxima vez que abrir o OneDrive para Empresas, poderá ser-lhe pedido para definir um PIN se o departamento de TI o exigir. Depois de definir e confirmar o PIN, pode continuar no OneDrive para Empresas.
 
-![Imagem do pedido de PIN](./media/pin-prompt-android.png)
+![Imagem da linha de comandos para definir e confirmar o PIN](./media/pin-prompt-android.png)
 
 
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
