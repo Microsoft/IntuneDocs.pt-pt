@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
-ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
+ms.openlocfilehash: 18cb2c6f9d43ee58f1289c754c16d5b87bcb8139
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54069358"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122660"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>A edição antecipada do Microsoft Intune – Janeiro de 2019
 
@@ -52,7 +52,7 @@ O **managed Google Play** tipo de aplicação permite-lhe adicionar especificame
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Pré-visualização do suporte para dispositivos Android de empresa, totalmente geridos <!-- 1574342  -->
 O Intune suportará dispositivos Android totalmente geridos, uma empresa cenário de "proprietário do dispositivo" em que dispositivos totalmente geridos pelo IT e são associados aos utilizadores individuais. Isto permite aos administradores gerir todo o dispositivo, aplicar um conjunto expandido de controlos de política indisponíveis para perfis de trabalho e restringe os utilizadores a instalar aplicações da Google Play gerido apenas. Para configurar o Android dispositivos totalmente geridos, será remetido **inscrição de dispositivos** > **inscrição de dispositivos Android** > **dispositivos dos utilizadores da empresa, totalmente gerido** . Tenha em atenção que esta funcionalidade está em pré-visualização. Algumas funcionalidades do Intune, tais como certificados, conformidade e acesso condicional, não estão atualmente disponíveis com o Android totalmente geridos os dispositivos dos utilizadores.
 
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>Implementação de online licenciado Microsoft Store para aplicações de negócio <!-- 16726660  -->
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>Implementação de online licenciado Microsoft Store para aplicações de negócio <!-- 1672660  -->
 Será capaz de atribuir necessário online licenciada Microsoft Store para aplicações de negócio no contexto do dispositivo. Implementar um Microsoft Store para a aplicação de negócios desta forma permitirá que a aplicação ser instalada para todos os utilizadores no dispositivo. Isto só é aplicável no Windows 10 RS4 + dispositivos de ambiente de trabalho. A opção para instalar no contexto do dispositivo está disponível na página de atribuição de aplicações de cliente para aplicações licenciadas Online do MSFB.
 
 ### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>Configurar o perfil para ignorar alguns ecrãs durante o Assistente de Configuração <!-- 2276470  -->
@@ -93,7 +93,7 @@ No Windows 10 e dispositivos posteriores, poderá criar um perfil de configuraç
 
 [Definições de VPN do Windows 10](vpn-settings-windows-10.md) descreve a lista atual de definições. 
 
-### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>Utilizar S/MIME para encriptar e assinar vários dispositivos para um utilizador <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642---"></a>Utilizar S/MIME para encriptar e assinar vários dispositivos para um utilizador <!-- 1333642 -->
 Encriptação de correio eletrónico de S/MIME com um novo perfil de certificado importado será suportada (**configuração do dispositivo** > **perfis** > **criar perfil** > selecione a plataforma > **certificado importado PKCS** tipo de perfil). No Intune, pode importar certificados no formato PFX. O Intune pode enviar esses mesmos certificados para múltiplos dispositivos inscritos por um único utilizador. Isto também inclui:
 
 - O perfil de e-mail nativo do iOS suporta a ativação da encriptação S/MIME através de certificados importados no formato PFX.
@@ -140,8 +140,6 @@ Para sua Cadências de atualização do Windows 10, poderá:
 - restaurar as definições de atualização automática original numa máquina de Windows 10 em computadores que executam o *atualização de Outubro de 2018*
 - configurar um novo Software de atualizações de definição que permite-lhe bloquear ou permitir que os utilizadores para a instalação da atualização de colocar em pausa a *definições* das suas máquinas. 
 
-
-
 ### <a name="ios-email-profiles-can-use-smime-signing-and-encryption----2662949---"></a>perfis de e-mail do iOS podem utilizar a encriptação e assinatura S/MIME <!-- 2662949 -->
 Será capaz de criar um perfil de e-mail que inclui definições diferentes. Isso inclui configurações de S/MIME que podem ser utilizadas para assinar e criptografar as comunicações por e-mail em dispositivos iOS (**configuração do dispositivo** > **perfis**  >   **Criar perfil** > escolher **iOS** para a plataforma > **E-Mail** para tipo de perfil).
 
@@ -155,7 +153,7 @@ Para escolher que telas para ignorar, aceda a **inscrição de dispositivos** > 
 Será capaz de criar um perfil de configuração que define as definições do endpoint protection em dispositivos Windows 10, inclusive BitLocker. Esta ação adiciona suporte para a edição Windows 10 Professional para algumas configurações de disco BitLocker. Para ver as definições de edição atuais do Windows 10, consulte [definições do Endpoint protection para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Campos de relatórios de dispositivos do Intune <!-- 2748738 -->
-Intune irá oferecer relatórios campos, incluindo Android fabricante, modelo e versão de patch de segurança, bem como o modelo de iOS adicionais do dispositivo. No Intune, estes campos estarão disponíveis, selecionando **aplicações de cliente** > **estado de proteção de aplicações** e escolha **relatório de proteção de aplicações: iOS, Android**. Além disso, esses parâmetros irão ajudá-lo a configurar o **permitir** lista para o fabricante do dispositivo (Android), o **permitir** lista para o modelo do dispositivo (Android e iOS) e o patch de segurança mínima para Android definição de versão. 
+Intune irá oferecer relatórios campos, incluindo o Id de registo de aplicação, fabricante do Android, modelo e versão de patch de segurança, bem como o modelo de iOS adicionais do dispositivo. No Intune, estes campos estarão disponíveis, selecionando **aplicações de cliente** > **estado de proteção de aplicações** e escolha **relatório de proteção de aplicações: iOS, Android**. Além disso, esses parâmetros irão ajudá-lo a configurar o **permitir** lista para o fabricante do dispositivo (Android), o **permitir** lista para o modelo do dispositivo (Android e iOS) e o patch de segurança mínima para Android definição de versão. 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>Configuração de dispositivos partilhados foi mudada para mensagem de ecrã de bloqueio para dispositivos iOS no portal do Azure <!-- 2809362 -->
 Quando cria um perfil de configuração para dispositivos iOS, poderá adicionar **configuração de dispositivos partilhados** definições para mostrar o texto específico no ecrã de bloqueio. Isto inclui as seguintes alterações: 
@@ -185,6 +183,20 @@ Pode ativar a VPN sempre ativada no **configuração do dispositivo** > **perfis
 Esta atualização inclui uma nova definição para terminar a processos usando o Gerenciador de tarefas em dispositivos Windows 10. Utilizar um perfil de configuração do dispositivo (**configuração do dispositivo** > **perfis** > **criar perfil** > no **plataforma** , escolha **Windows 10** > no **tipo de perfil**, escolha **restrições de dispositivos** > **geral** definições), optar por permitir ou impedir que esta definição.
 Para ver as definições atuais, aceda à [definições de restrição de dispositivos Windows 10](device-restrictions-windows-10.md).
 Aplica-se a: Windows 10 e posterior
+
+### <a name="additional-settings-for-outlook----3301182---"></a>Definições adicionais para o Outlook <!-- 3301182 -->
+Agora, pode configurar definições adicionais para o Outlook para iOS e Android com o Intune.  As definições incluem o seguinte:
+- Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android
+- Implementar a autenticação moderna do Office 365 e a autenticação moderna híbrida contas no local
+- Utilize `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é seleccionada
+- Permitir que os contactos sejam guardados
+- Configurar destinatários externos dicas de email
+- Configurar **caixa de entrada destaques**
+- Exigir biometria para acessar o Outlook para iOS 
+- Bloquear a imagens externas
+
+> [!NOTE]
+> Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-settings) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-settings).
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Modelos administrativos estão em pré-visualização pública e movido para o seu próprio perfil de configuração <!-- 3322847 -->
 Modelos administrativos no Intune (**configuração do dispositivo** > **modelos administrativos**) estão atualmente em pré-visualização privada. Com esta atualização: Modelos administrativos inclui aproximadamente 300 configurações que podem ser geridas no Intune. Anteriormente, estas definições só existiam no editor de políticas de grupo.

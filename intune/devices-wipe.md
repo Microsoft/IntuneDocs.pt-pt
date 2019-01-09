@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553661"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122643"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -192,6 +192,10 @@ Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo I
 6. Selecione **Reatribuir**.
 
     ![Captura de ecrã da opção Reatribuir da Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="fresh-start"></a>Começar do zero
+
+Aplicável para dispositivos Windows 10. Leia mais sobre [começar do zero](https://docs.microsoft.com/intune/device-fresh-start).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

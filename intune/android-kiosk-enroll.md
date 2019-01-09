@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626089"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098322"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição do Intune de dispositivos de local público do Android enterprise
 
@@ -112,7 +112,7 @@ Em dispositivos Android 5.1 e posteriores que suportem NFC, pode aprovisionar os
 
 ### <a name="enroll-by-using-a-token"></a>Inscrever com um token
 
-Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. O Android 6.1 e versões posteriores também podem tirar partido da leitura de códigos QR ao utilizar o método de inscrição **aft#setup**.
+Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. Android versões 6.1 e versões posteriores, também podem aproveitar o código QR ao utilizar o **afw #setup** método de inscrição.
 
 1. Ligue o seu dispositivo apagado.
 2. No ecrã **Bem-vindo**, selecione o seu idioma.
