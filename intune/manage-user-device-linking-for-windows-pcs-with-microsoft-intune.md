@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186652"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149632"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerir a associação utilizador-dispositivo para PCs Windows
 
@@ -43,7 +43,7 @@ Para associar um utilizador a um PC:
 
    - Para deixar o PC associado ao utilizador atual, se existir um, selecione **Cancelar**.
 
-   - Para remover a associação ao utilizador atual, se existir uma, selecione <strong>Remover associação **&gt; **OK</strong>.
+   - Para remover a associação ao utilizador atual, se existir um, escolha <strong>remover associação **&gt;** OK</strong>.
 
    - Para associar o PC a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores**. Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
 
