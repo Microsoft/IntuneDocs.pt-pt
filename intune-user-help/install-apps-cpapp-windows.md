@@ -1,11 +1,11 @@
 ---
 title: Instalar aplicações a partir da aplicação Portal da Empresa do Intune para Windows
-description: Saiba como instalar e partilhar aplicações a partir da aplicação Portal da Empresa para Windows
+description: Instalar e partilhar aplicações a partir da aplicação Portal da empresa para Windows
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
-ms.translationtype: HT
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863098"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203234"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e partilhar aplicações no seu dispositivo
 Instale aplicações no seu dispositivo a partir da aplicação Portal da Empresa para Windows.
@@ -34,11 +34,11 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
     ![A home page da aplicação Portal da Empresa para Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Localize e instale aplicações a partir de qualquer uma das seguintes secções da aplicação Portal da Empresa:  
 
-    * **Home** (Home page): selecione a partir de uma lista das aplicações em destaque da sua organização.  
-    * **Show all** (Mostrar tudo): na secção **Home** (Home page)  > **Apps** (Aplicações), clique em **Show all** (Mostrar tudo) para ver todas as aplicações disponíveis.  
-    * **All apps** (Todas as aplicações): selecione esta página no painel de navegação para ver todas as aplicações disponíveis, incluindo as instaladas e em destaque.  
-    * **Search for apps** (Procurar aplicações): uma barra de pesquisa estática encontra-se no painel de navegação da aplicação.  Para encontrar as aplicações disponíveis, procure por nome da aplicação ou publicador.  
-    * **Todas as aplicações**: veja, ordene e filtre todas as aplicações disponíveis. Os resultados da pesquisa são ordenados automaticamente por relevância.  
+    * **Home page**: Selecione uma lista de aplicações em destaque da sua organização.  
+    * **Mostrar tudo**: Do **Home page** > **aplicações** secção, clique em **Mostrar tudo** para ver todas as aplicações disponíveis.  
+    * **Todas as aplicações**: Selecione esta página no painel de navegação para ver todas as aplicações disponíveis, incluindo instalado e em destaque.  
+    * **Procurar aplicações**: Uma barra de pesquisa estática encontra-se no painel de navegação da aplicação.  Para encontrar as aplicações disponíveis, procure por nome da aplicação ou publicador.  
+    * **Todas as aplicações**: Ver, ordenar e filtrar todas as aplicações disponíveis. Os resultados da pesquisa são ordenados automaticamente por relevância.  
 
 3. Selecione uma aplicação.   
 4. Na página de detalhes das aplicações, clique em **Install** (Instalar). Quando a instalação estiver concluída, será apresentado um estado **Installed** (Instalado).  
@@ -63,4 +63,16 @@ Partilhe e recomende aplicações aos seus contactos profissionais ou escolares.
 
 Depois de partilhar, o destinatário receberá uma ligação e uma mensagem para ver os detalhes da aplicação. A ligação abre a página **App details** (Detalhes da aplicação) do Portal da Empresa. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="available-apps"></a>Aplicações disponíveis  
+
+Sua organização seleciona as aplicações que são adequadas e útil para no trabalho ou escola. Estas aplicações são os únicos, encontrará no Portal da empresa.  
+
+Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para Windows, terá acesso a aplicações do Windows, mas não aplicações de iOS.  
+
+## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola  
+Se existir uma aplicação precisa, mas não a vir no Portal da empresa, solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** na aplicação Portal da empresa, na página de ajuda e suporte. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![A aplicação Portal da empresa para Windows 10, ajuda e suporte de página, realce os detalhes de suporte técnico. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

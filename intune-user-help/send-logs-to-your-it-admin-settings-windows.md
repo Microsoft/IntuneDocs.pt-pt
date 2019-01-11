@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146744"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203319"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Enviar registos ao suporte da empresa a partir da aplicação Definições para Windows 10
 
-Se obtiver um erro enquanto estiver a utilizar o dispositivo Windows 10 gerido pela empresa, poderá ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações por e-mail. Estas informações encontram-se no dispositivo, num documento especial denominado _registo de diagnóstico_.
+Utilize a aplicação de definições para resolver problemas relacionados com o Portal da empresa para Windows 10. Caso se depare com um problema ao utilizar a aplicação no seu dispositivo Windows 10, pode enviar um e-mail a equipa de suporte para obter ajuda. Eventos e erros que ocorrem na aplicação Portal da empresa são guardados no dispositivo, num documento especial denominado um _registo de diagnóstico_. Eles podem conter informações adicionais sobre o erro e quando exportado são úteis para dar suporte a equipes.
 
-1. Abra a aplicação **Definições** do Windows ao aceder ao **menu Iniciar** e selecione o botão **Definições**. Também pode procurar "definições" na barra de pesquisa.
+1. Para abrir o **definições** aplicação, vá para o **iniciar** menu > **definições**. Também pode procurar *definições* na barra de pesquisa.
 2. Vá para **Contas** > **Acesso profissional ou escolar**.
-3. Selecione “Exportar os ficheiros de registo de gestão”.
+3. Selecione **exportar os ficheiros de registo de gestão**.
 
    ![O “ecrã Acesso profissional ou escolar”, que apresenta a opção Exportar sob o cabeçalho “Definições relacionadas”.](./media/w10-export-logs.png)
 

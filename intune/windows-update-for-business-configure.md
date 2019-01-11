@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: c0ab63ab8832db69ecf27361dc4fe4c9a1196db3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112770"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203489"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 
@@ -28,7 +28,7 @@ O Windows como um Serviço é a maneira ideal de atualizar dispositivos com Wind
 
 Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações. Não precisa de aprovar atualizações individuais de grupos de dispositivos. Pode gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações. Já o Windows Update certifica-se de que as atualizações são instaladas no momento adequado. O Microsoft Intune permite configurar definições de atualizações nos dispositivos e dá-lhe a capacidade de diferir a instalação de atualizações. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem diretamente ao Windows Update para obter as atualizações. Utilize o Intune para configurar e gerir **cadências de atualização do Windows 10**. Uma cadência de atualização inclui um grupo de definições que configuram quando e como as atualizações do Windows 10 são instaladas. Por exemplo, pode configurar as seguintes definições:
 
-- **Canal de Serviço do Windows 10**: selecione o canal de serviço a partir do qual pretende que os grupos de dispositivos recebam as atualizações. Estão disponíveis os seguintes canais: 
+- **Canal de manutenção do Windows 10**: Escolha o canal de serviço a partir do qual pretende que os grupos de dispositivos recebam atualizações. Estão disponíveis os seguintes canais: 
   - Via de Atualizações Semianuais
   - Via de Atualizações Semianuais (Direcionada)
   - Windows Insider Fast
@@ -36,12 +36,12 @@ Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de g
   - Versão do Windows Insider 
       
   Para obter detalhes sobre os canais de serviço disponíveis, veja [Overview for Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (Descrição Geral do Windows como um Serviço).
-- **Definições de Diferimento**: configure as definições de diferimento das atualizações para atrasar as instalações de atualizações para grupos de dispositivos. Utilize estas definições para testar a sua implementação de atualizações faseada para que possa consultar o progresso ao longo do processo.
-- **Colocar em pausa**: se ocorrer um problema durante a implementação da atualização, pode adiar a instalação da atualização. 
-- **Janela de manutenção**: configure as horas nas quais as atualizações possam ser instaladas.
-- **Tipo de atualização**: escolha os tipos de atualizações que são instaladas. Por exemplo, Atualizações de Qualidade, Atualizações de Funcionalidades ou controladores.
-- **Comportamento da instalação**: esta opção configura a forma como a atualização é instalada. Por exemplo, o dispositivo reinicia automaticamente após a instalação?
-- **Transferência ponto a ponto**: pode optar por configurar a transferência ponto a ponto. Se estiver configurada, quando um dispositivo concluir a transferência de uma atualização, os outros dispositivos poderão transferir a atualização a partir desse dispositivo. Esta definição acelera o processo de transferência.
+- **Definições de suspensão**: Configure definições de diferimento da atualização para atrasar as instalações de atualização para grupos de dispositivos. Utilize estas definições para testar a sua implementação de atualizações faseada para que possa consultar o progresso ao longo do processo.
+- **Colocar em pausa**: Se houver um problema durante a implementação de atualização, é possível adiar a instalação da atualização. 
+- **Janela de manutenção**: Configure as horas em que as atualizações podem ser instaladas.
+- **Tipo de atualização**: Escolha os tipos de atualizações que são instaladas. Por exemplo, Atualizações de Qualidade, Atualizações de Funcionalidades ou controladores.
+- **Comportamento de instalação**: Configura a forma como a atualização é instalada. Por exemplo, o dispositivo reinicia automaticamente após a instalação?
+- **Transferência ponto a ponto**: Optar por configurar a transferência ponto a ponto. Se estiver configurada, quando um dispositivo concluir a transferência de uma atualização, os outros dispositivos poderão transferir a atualização a partir desse dispositivo. Esta definição acelera o processo de transferência.
 
 Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao utilizar anéis de atualização, pode criar uma estratégia de atualização que reflete as necessidades da sua empresa. Para obter mais informações, veja [Manage updates using Windows Update for Business (Gerir atualizações através do Windows Update para Empresas)](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -76,29 +76,37 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e, em seguida, selecione **Microsoft Intune**.
 2. Selecione **Atualizações de software** > **Cadências de Atualização do Windows 10** > **Criar**.
 3. Introduza um nome, uma descrição (opcional) e, em seguida, selecione **Configurar**.
-4. Em **Definições**, introduza as seguintes informações:
+4. Em **Definições**, introduza as seguintes informações:  
 
-   - **Canal de serviço**: defina o canal a partir do qual o dispositivo receberá as atualizações do Windows.
-   - **Atualizações de produtos da Microsoft**: selecione a opção para procurar atualizações da aplicação no Microsoft Update.
-   - **Controladores do Windows**: opte por excluir os controladores do Windows Update durante as atualizações.
-   - **Comportamento da atualização automática**: selecione a forma como são instaladas as atualizações automáticas e quando reiniciar. Para obter mais detalhes, veja [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Frequência de comportamento automático**: se selecionar a opção **Instalar automaticamente e reiniciar à hora agendada** para o comportamento da atualização, esta definição é apresentada. Utilize esta definição para agendar quando as atualizações são instaladas, incluindo a semana, o dia e a hora.
-
-   - **Verificações de reinício**: ativado por predefinição. Quando reinicia um dispositivo, existem algumas verificações que ocorrem, incluindo a verificação de utilizadores ativos, níveis de bateria, jogos em execução e mais. Para ignorar estas verificações ao reiniciar um dispositivo, selecione **Ignorar**.
-
-   - **Período de diferimento da atualização de qualidade (dias)**: introduza o número de dias de diferimento das atualizações de qualidade. Pode diferir a receção destas Atualizações de Qualidade durante um período de 30 dias a partir do seu lançamento.
+   **Definições de atualização**  
+   - **Canal de serviço**: Defina o canal a partir do qual o dispositivo recebe atualizações do Windows.
+   - **Atualizações de produtos Microsoft**: Opte por verificar a existência de atualizações de aplicações do Microsoft Update.
+   - **Controladores do Windows**: Opte por excluir controladores do Windows Update durante as atualizações.
+   - **Período de diferimento da atualização de qualidade (dias)**: Introduza o número de dias de diferimento das atualizações de qualidade. Pode diferir a receção destas Atualizações de Qualidade durante um período de 30 dias a partir do seu lançamento.
 
      Normalmente, as Atualizações de Qualidade são correções e melhorias às funcionalidades do Windows existentes e são publicadas na segunda terça-feira de cada mês. As Atualizações de Qualidade disponíveis através do Windows Update para Empresas só recebem estas atualizações (a versão "beta"), mas há outras atualizações que poderão ser lançadas pela Microsoft em qualquer altura. Pode definir se quer diferir e durante quanto tempo quer diferir a receção de Atualizações de Qualidade depois de estarem disponíveis no Windows Update. Para obter mais informações, veja [Deploy updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) (Implementar atualizações através do Windows Update para Empresas).
 
-   - **Período de diferimento da atualização de funcionalidades (dias)**: introduza o número de dias de diferimento das Atualizações de Funcionalidades. Pode diferir a receção destas Atualizações de Funcionalidades durante um período de 180 dias a partir do seu lançamento.
+   - **Período de diferimento da atualização de funcionalidades (dias)**: Introduza o número de dias de diferimento das atualizações de funcionalidades. Pode diferir a receção destas Atualizações de Funcionalidades durante um período de 180 dias a partir do seu lançamento.
 
      Normalmente, as Atualizações de Funcionalidades são novas funcionalidades do Windows. Depois de configurar a definição **Canal de serviço**, pode definir se quer diferir e durante quanto tempo quer diferir a receção de Atualizações de Funcionalidades depois de estarem disponíveis no Windows Update.
 
-     Por exemplo, **se o Canal de serviço estiver definido para Via de Atualizações Semianuais (Direcionada) e o período de diferimento for de 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. O dispositivo não recebe a atualização até fevereiro – 30 dias mais tarde.
+     Por exemplo: **Se o canal de manutenção estiver definido para via de atualizações Semianuais (direcionada) e o período de diferimento for 30 dias**: Digamos que atualização de funcionalidades X fica disponível pela primeira publicamente no Windows Update como um canal Semianual (direcionada) em Janeiro. O dispositivo não recebe a atualização até fevereiro – 30 dias mais tarde.
 
-     **Se o canal de Manutenção estiver definido para Via de Atualizações Semianuais e o período de diferimento for 30 dias**: digamos que a Atualização de Funcionalidades X fica disponível ao público pela primeira vez no Windows Update através da Via de Atualizações Semianuais (Direcionada) em janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada na Via de Atualizações Semianuais. O dispositivo recebe a Atualização de Funcionalidades 30 dias após o lançamento na Via de Atualizações Semianuais e é atualizado em maio.
+     **Se o canal de manutenção estiver definido para via de atualizações Semianuais e o período de diferimento for 30 dias**: Digamos que a atualização de funcionalidades X fica disponível pela primeira publicamente no Windows Update como um canal Semianual (direcionada) em Janeiro. Quatro meses mais tarde, em abril, a Atualização de Funcionalidades X é lançada na Via de Atualizações Semianuais. O dispositivo recebe a Atualização de Funcionalidades 30 dias após o lançamento na Via de Atualizações Semianuais e é atualizado em maio.  
 
-   - **Modo de transferência de otimização da entrega**: selecione o método para o qual os dispositivos transferem as atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   **Definições de experiência do utilizador**
+   
+   - **Comportamento de atualização automática**: Escolha como são instaladas as atualizações automáticas, quando a reiniciar. Para obter mais detalhes, veja [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+
+     Uma definição de *repor para predefinição* restaurará as definições de atualização automática original em máquinas do Windows 10 que executam o *atualização de Outubro de 2018* ou posterior.  
+
+     - **Frequência de comportamento automático**: Se selecionou **instalar automaticamente e reiniciar na hora agendada** para o comportamento de atualização, esta definição é apresentada. Utilize esta definição para agendar quando as atualizações são instaladas, incluindo a semana, o dia e a hora.
+
+   - **Verificações de reinício**: Ativado por predefinição. Quando reinicia um dispositivo, existem algumas verificações que ocorrem, incluindo a verificação de utilizadores ativos, níveis de bateria, jogos em execução e mais. Para ignorar estas verificações ao reiniciar um dispositivo, selecione **Ignorar**.
+
+   - **Impedir o utilizador da colocar em pausa atualizações de Windows**: Permitido por predefinição. Utilize esta definição para bloquear ou permitir que os utilizadores para a instalação da atualização de colocar em pausa a *definições* das suas máquinas. 
+      
+   - **Modo de transferência de otimização de entrega**: Escolha o método para que os dispositivos transferir atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. Quando terminar, selecione **OK**. Em **Criar Cadência de Atualização**, selecione **Criar**.
 
@@ -137,10 +145,10 @@ O caminho do OMA-URI (sensível às maiúsculas e minúsculas) para configurar o
 
 Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou editar OMA-URI**:
 
-- **Nome da Definição**: ID Comercial do Windows Analytics
-- **Descrição da Definição**: configurar o ID comercial para soluções do Windows Analytics
+- **Nome da definição**: ID comercial do Windows Analytics
+- **Descrição da definição**: Configurar soluções comerciais de ID para o Windows Analytics
 - **OMA-URI** (sensível às maiúsculas e minúsculas): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Tipo de Dados:** cadeia
+- **Tipo de dados**: Cadeia
 - **Valor**: <*utilizar o GUID apresentado no separador Telemetria do Windows na sua área de trabalho OMS*>
 
 ![Definição de OMA-URI – Editar Linha](./media/commID-edit.png)
@@ -174,4 +182,4 @@ O Windows Holographic for Business suporta as seguintes definições:
 
 - **Comportamento de atualização automática**
 - **Atualizações de produtos da Microsoft**
-- **Canal de serviço**: suporta as opções **Canal semianual** e **Canal semianual (Direcionado)**
+- **Canal de serviço**: Suporta **canal semianual** e **canal semianual (direcionada)** opções

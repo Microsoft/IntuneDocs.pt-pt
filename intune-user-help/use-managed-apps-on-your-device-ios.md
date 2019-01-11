@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147507"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203268"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 
@@ -34,7 +34,7 @@ Ao aceder a dados da empresa numa aplicação gerida, verá uma mensagem como a 
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
+## <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?  
 Obtém aplicações geridas de duas formas diferentes:
 
 -   Quando o dispositivo está inscrito no Microsoft Intune, pode instalar a aplicação a partir da sua aplicação Portal da Empresa ou do site do Portal da Empresa, ou o suporte da empresa poderá instalá-la no seu dispositivo. Para mais informações sobre a inscrição, veja [Inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Inscrever o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
@@ -43,7 +43,16 @@ Obtém aplicações geridas de duas formas diferentes:
 
 Por vezes, o suporte da empresa poderá adquirir múltiplas licenças para uma aplicação que instalar. Se vir uma mensagem a pedir que aceite o contrato do Apple Volume Purchase Program, isto é normal e pode aceitá-lo. Se não o aceitar, não poderá instalar a aplicação.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?
+## <a name="available-apps"></a>Aplicações disponíveis   
+ Sua organização seleciona as aplicações que são adequadas e útil para no trabalho ou escola. Estas aplicações são os únicos, encontrará no Portal da empresa.   
+
+ Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para iOS, terá acesso a aplicações iOS, mas as aplicações Android não.   
+
+## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola   
+ Se existir uma aplicação precisa, mas não a vir no Portal da empresa, pode solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** na aplicação do Portal da empresa **suporte** separador. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?  
 Eis alguns exemplos das opções que o suporte da empresa pode gerir numa aplicação e que podem afetar as suas interações com os dados da empresa no seu dispositivo:
 
 -   Acesso a sites específicos

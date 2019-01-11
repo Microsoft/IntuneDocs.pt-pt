@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112430"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210759"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -98,7 +98,7 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Bloquear captura de ecrã (apenas Android)|X|X|
 |Suporte para MAM sem a inscrição de dispositivos|X|X|
 |Eliminação Completa|X|X|
-|Eliminação Seletiva <br></br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
+|Eliminação Seletiva <br><br>**Nota:** Para iOS, quando o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
 |Configuração da Aplicação de Destino|X||
 |Suporte para Identidades Múltiplas|X||
@@ -115,6 +115,6 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 
 Para saber mais sobre as políticas de proteção de aplicações e o Intune, veja os seguintes tópicos:
 
-  - [Ferramenta de encapsulamento de aplicações para Android](app-wrapper-prepare-android.md)</br>
-  - [Ferramenta de encapsulamento de aplicações para iOS](app-wrapper-prepare-ios.md)</br>
+  - [Ferramenta de encapsulamento de aplicações para Android](app-wrapper-prepare-android.md)<br>
+  - [Ferramenta de encapsulamento de aplicações para iOS](app-wrapper-prepare-ios.md)<br>
   - [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](app-sdk.md)

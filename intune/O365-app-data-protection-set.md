@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210810"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores no Microsoft Intune
 
@@ -89,33 +89,32 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 
 ## <a name="what-policies-does-this-wizard-set"></a>Que políticas define este assistente?
 
-|     |       | |
-|----|--------|-|
-|**Nome**|Gerir aplicações do Office 365| |
-| **Descrição**|Criadas pelo assistente Gerir aplicações do Office 365| |
-| |  | |
-| **Nome da definição** |**Valor da política para iOS** | **Valor da política para Android** |
-|Impedir cópias de segurança do iTunes e do iCloud| Não | N/A |
-|Impedir cópias de segurança Android |N/A | Não|
-|Permitir que a aplicação transfira dados para outras aplicações | Todas as aplicações | Todas as aplicações|
-|Permitir que a aplicação receba dados de outras aplicações| Todas as aplicações | Todas as aplicações|
-|Impedir "Guardar como" | Não | Não|
-|Restringir cortar, copiar e colar com outras aplicações | Qualquer aplicação | Qualquer aplicação |
-|Restringir o conteúdo Web a apresentar num browser gerido pela empresa | Não| Não|
-|Encriptar dados da aplicação | Quando o dispositivo está bloqueado | Sim|
-|Desativar a sincronização de contactos | Não| Não|
-|Desativar a impressão | Não | Não|
-|Exigir PIN para acesso | Não | Sim|
-|Número de tentativas antes de redefinição do PIN | N/A |5|
-|Permitir PIN simples | N/A |Sim|
-|Comprimento do PIN | N/A | 4|
-|Permitir impressões digitais em vez do PIN | N/A | Sim |
-|Exigir credenciais da empresa para obter acesso | Não | Não|
-|Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root | Não | Não|
-|Verificar novamente os requisitos de acesso após (minutos) – Tempo limite | 30 | 30|
-|Verificar novamente os requisitos de acesso após (minutos) – Período de tolerância offline | 720 |720|
-|Intervalo offline (dias) antes de os dados da aplicação serem eliminados | 90 | 90|
-|Bloquear captura de ecrã (apenas dispositivos Android) | N/A | Não |
+**Nome**: Gerir aplicações do Office 365<br>
+**Descrição**: Criadas pelo assistente Gerir aplicações do Office 365
+
+| Nome da definição | valor de política de iOS | Valor de política para Android |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| Impedir cópias de segurança do iTunes e do iCloud | Não | N/A |
+| Impedir cópias de segurança Android | N/A | Não |
+| Permitir que a aplicação transfira dados para outras aplicações | Todas as aplicações | Todas as aplicações |
+| Permitir que a aplicação receba dados de outras aplicações | Todas as aplicações | Todas as aplicações |
+| Impedir "Guardar como" | Não | Não |
+| Restringir cortar, copiar e colar com outras aplicações | Qualquer aplicação | Qualquer aplicação |
+| Restringir o conteúdo Web a apresentar num browser gerido pela empresa | Não | Não |
+| Encriptar dados da aplicação | Quando o dispositivo está bloqueado | Sim |
+| Desativar a sincronização de contactos | Não | Não |
+| Desativar a impressão | Não | Não |
+| Exigir PIN para acesso | Não | Sim |
+| Número de tentativas antes de redefinição do PIN | N/A | 5 |
+| Permitir PIN simples | N/A | Sim |
+| Comprimento do PIN | N/A | 4 |
+| Permitir impressões digitais em vez do PIN | N/A | Sim |
+| Exigir credenciais da empresa para obter acesso | Não | Não |
+| Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root | Não | Não |
+| Verificar novamente os requisitos de acesso após (minutos) – Tempo limite | 30 | 30 |
+| Verificar novamente os requisitos de acesso após (minutos) – Período de tolerância offline | 720 | 720 |
+| Intervalo offline (dias) antes de os dados da aplicação serem eliminados | 90 | 90 |
+| Bloquear captura de ecrã (apenas dispositivos Android) | N/A | Não |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Por que motivo a política de PIN da aplicação é apenas configurada para dispositivos Android?
 A encriptação funciona de forma diferente no iOS e no Android.

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642851"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203421"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -192,7 +192,15 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     | <strong>Zoom</strong> | Apresentar ao utilizador a opção para aumentar o zoom quando este configurar o dispositivo. |
     | <strong>Siri</strong> | Apresentar ao utilizador a opção para configurar o Siri. |
     | <strong>Dados de Diagnóstico</strong> | Apresentar o ecrã **Diagnósticos** ao utilizador. Este ecrã permite que o utilizador opte por enviar dados de diagnóstico para a Apple. |
-
+    | <strong>Tom de apresentação</strong> | Dar ao usuário a opção para ativar o tom de exibição. |
+    | <strong>Privacidade</strong> | Exiba a tela de privacidade para o usuário. |
+    | <strong>Migração de Android</strong> | Dar ao usuário a opção para migrar data a partir de um dispositivo Android. |
+    | <strong>iMessage e FaceTime</strong> | Dar ao usuário a opção para configurar a iMessage e FaceTime. |
+    | <strong>Integração</strong> | Apresentar telas informativa de inclusão para formação do usuário, como abordar a folha de cálculo e multitarefa e Centro de controlo. |
+    | <strong>Assista a migração</strong> | Dar ao usuário a opção para migrar dados a partir de um dispositivo de observação. |
+    | <strong>Tempo de ecrã</strong> | Apresenta o ecrã de tempo de tela. |
+    | <strong>Atualização de software</strong> | Apresenta o ecrã de atualização de software obrigatórias. |
+    | <strong>Configuração do SIM</strong> | Dar ao usuário a opção para adicionar um plano de celular. |
 
 14. Escolha **OK**.
 

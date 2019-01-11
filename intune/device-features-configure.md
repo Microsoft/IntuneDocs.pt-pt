@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185683"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203098"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar definições de funcionalidades de dispositivos iOS ou macOS no Intune
 
@@ -30,7 +30,7 @@ As funcionalidades de dispositivos permitem-lhe controlar uma variedade de defin
 - Definições do AirPrint e do AirPlay
 - Esquema do ecrã principal
 - Notificação das aplicações
-- Configuração de dispositivos partilhados
+- Mensagem de ecrã de bloqueio
 - Configuração do início de sessão único
 - Filtragem de conteúdos Web
 
@@ -43,19 +43,19 @@ Este artigo mostra-lhe os princípios básicos sobre como configurar perfis de f
 3. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 4. Introduza as seguintes propriedades:
 
-   - **Nome**: introduza um nome descritivo para o novo perfil.
-   - **Descrição:** introduza uma descrição para o perfil. (Isto é opcional, mas recomendado.)
-   - **Plataforma**: selecione o seu tipo de plataforma:
+   - **Nome**: Introduza um nome descritivo para o novo perfil.
+   - **Descrição**: Introduza uma descrição para o perfil. (Esta definição é opcional mas recomendado.)
+   - **Plataforma**: Selecione o tipo de plataforma:
      - **iOS**
      - **macOS**
-   - **Tipo de perfil**: selecione **Funcionalidades do dispositivo**.
-   - **Definições**: as definições variam consoante a plataforma selecionada. Os seguintes artigos descrevem as definições para cada tipo de perfil:
+   - **Tipo de perfil**: Selecione **funcionalidades do dispositivo**.
+   - **Definições**: As definições dependem da plataforma que escolher. Os seguintes artigos descrevem as definições para cada tipo de perfil:
 
      - [Definições do AirPrint para iOS e MacOS](air-print-settings-ios-macos.md)
      - [Definições do AirPlay para iOS](airplay-settings-ios.md)
      - [Definições de esquema do ecrã principal para iOS](home-screen-settings-ios.md)
      - [Definições de notificação das aplicações para iOS](app-notification-settings-ios.md)
-     - [Definições de configuração de dispositivos partilhados para iOS](shared-device-settings-ios.md)
+     - [Definições de mensagem de ecrã de bloqueio para iOS](shared-device-settings-ios.md)
      - [Configurar o Intune para o início de sessão único em dispositivos iOS](sso-ios.md)
      - [Definições de filtros de conteúdo Web para iOS](web-content-filter-settings-ios.md)
 

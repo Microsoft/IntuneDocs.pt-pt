@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190307"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203557"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -45,7 +45,7 @@ Quando um utilizador contacta o suporte acerca de um problema técnico com o Int
 
 No painel Resolução de Problemas, selecione **Utilizador selecionado** para ver as informações do utilizador. As informações dos utilizadores podem ajudá-lo a compreender o estado atual dos utilizadores e dos dispositivos deles.  
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Resolução de problemas**.
 4. Clique em **Selecionar** para selecionar um utilizador para o qual pretende executar a resolução de problemas.
@@ -127,7 +127,7 @@ A tabela resume o estado das políticas de proteção de aplicações para dispo
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nome        | O nome da aplicação.                                                                                                        |
 | Implementado    | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
-| Platform    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
+| Plataforma    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Inscrição  | O nome do tipo de dispositivo.                                                                                                     |
 | Última Atualização | O carimbo de data/hora em que a política foi modificada.                                                                                              |
 
@@ -254,7 +254,7 @@ A tabela Falhas de Inscrição lista as tentativas de inscrição que falharam. 
 
 Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
-| Secção | Descrição |
+| Section | Descrição |
 |-------------|----------|
 | Detalhes da falha | Uma explicação em maior detalhe sobre a falha. |
 | Potenciais remediações | Passos sugeridos para resolver o erro. Poderão não existir remediações para determinadas falhas. |
@@ -262,7 +262,7 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
 ### <a name="enrollment-errors"></a>Erros de inscrição
 
-| Error | Detalhes |
+| Erro | Detalhes |
 |-------------|----------|
 | Tempo limite ou Falha de dispositivos iOS | Exceder do tempo limite entre o dispositivo e o Intune devido ao utilizador demorar demasiado tempo a concluir a inscrição. |
 | Utilizador não encontrado ou licenciado | O utilizador não possui uma licença ou foi removido do serviço. |
@@ -271,6 +271,15 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 | Falha na autorização da inscrição | Houve uma tentativa de inscrição através de uma versão antiga do portal da empresa. |
 | Dispositivo não suportado | O dispositivo não cumpre os requisitos mínimos de inscrição no Intune. |
 | As restrições de inscrição não correspondem | A inscrição foi bloqueada devido a uma restrição de inscrição configurada pelo administrador. |
+| Versão do dispositivo demasiado baixa | O administrador tiver configurado uma restrição de inscrição que requerem uma versão superior do dispositivo. |
+| Versão do dispositivo demasiado elevada | O administrador tiver configurado uma restrição de inscrição que requerem uma versão inferior do dispositivo. |
+| Dispositivo não pode ser inscritos como pessoais | O administrador tiver configurado uma restrição de inscrição para bloquear inscrições pessoas e o dispositivo com falha não era predefinido como empresariais. |
+| Plataforma de dispositivo bloqueada | O administrador tiver configurado uma restrição de inscrição que bloqueia a plataforma de neste dispositivo. |
+| O token em massa expirou | O token em massa no pacote de aprovisionamento expirou. |
+| Não foram encontrados detalhes ou de dispositivo do autopilot | O dispositivo do Autopilot não foi encontrado quando tentar inscrever-se. |
+| Perfil autopilot não foi encontrado ou não atribuídos | O dispositivo não tem um perfil de Autopilot Active Directory. |
+| Método de inscrição de autopilot inesperado | O dispositivo tentado inscrever-se utilizando um método não permitido. |
+| Dispositivo do autopilot removido | O dispositivo tentar inscrever-se foi removido do Autopilot para esta conta. |
 | Máximo de dispositivos atingido | A inscrição foi bloqueada devido a uma restrição de limite de dispositivos configurada pelo administrador. |
 | Inclusão da Apple | A inscrição de todos os dispositivos iOS foi bloqueada até ao momento devido a um certificado push de MDM da Apple expirado ou em falta no Intune. |
 | O dispositivo não foi pré-registado | O dispositivo não foi pré-registado como dispositivo empresarial e todas as inscrições pessoais foram bloqueadas por um administrador. |

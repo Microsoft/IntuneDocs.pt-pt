@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067453"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210725"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -89,7 +89,7 @@ A relação é apresentada numa coluna De para uma coluna Para. Neste exemplo, o
 
 Um gráfico treemap mostra dados hierárquicos como caixas em caixas. Cada ramo da hierarquia é uma caixa com caixas mais pequenas a mostrar sub-ramos. Pode utilizar o Power BI Desktop para criar um treemap dos seus dados do Intune.
 
-![Visualizações > treemap](media/reports-create-03-treemap.png)
+![Visualizações de mapa de árvore do Power BI](media/reports-create-03-treemap.png)
 
 1. Selecione um tipo de gráfico. Selecione **Treemap**.
 2. No modelo de dados, localize a tabela **Dispositivos**.

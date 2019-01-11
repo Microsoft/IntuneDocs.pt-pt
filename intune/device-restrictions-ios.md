@@ -1,56 +1,61 @@
 ---
-title: Adicionar definições de restrições de dispositivos iOS no Microsoft Intune – Azure | Documentos da Microsoft
+title: definições de dispositivos iOS no Microsoft Intune – Azure | Documentos da Microsoft
 titleSuffix: ''
-description: Adicionar, configurar, ou criar definições em dispositivos iOS para definir os requisitos de palavra-passe, controlar o ecrã bloqueado, utilize aplicações incorporadas, adicionar restrito ou aplicações aprovadas, lidar com dispositivos bluetooth, ligar para a cloud na cópia de segurança e armazenamento, ativar o modo de local público, adicionar domínios, e controle como os utilizadores interagem com o browser Safari no Microsoft Intune.
+description: Adicionar, configurar ou criar definições em dispositivos iOS para restringir funcionalidades, incluindo a definição de requisitos de palavra-passe, controlar o ecrã bloqueado, utilize aplicações incorporadas, adicionar restrito ou aplicações aprovadas, lidar com dispositivos bluetooth, ligar para a cloud na cópia de segurança e armazenamento, Ativar o modo de local público, adicionar domínios e controlo, como os utilizadores interagem com o browser Safari no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: microsoft-intune
+ms.service: microsoft-intune; seodec18
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a677742c5d2f876c0714f13c4f62d059ced98584
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728978"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203676"
 ---
-# <a name="ios-device-restrictions-settings-list-in-microsoft-intune"></a>lista as definições de restrições de dispositivos do iOS no Microsoft Intune
+# <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune
 
-Este artigo apresenta e descreve todas as definições de restrição de dispositivos que pode configurar para dispositivos iOS. Estas definições são adicionadas a um perfil de configuração do dispositivo e, em seguida, atribuídas ou implementadas nos seus dispositivos iOS com o Microsoft Intune.
+Este artigo apresenta e descreve as diferentes definições que pode controlar em dispositivos iOS. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
+
+Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos seus dispositivos iOS.
+
+## <a name="before-you-begin"></a>Antes de começar
+[Criar um perfil de configuração do dispositivo](device-restrictions-configure.md).
 
 ## <a name="general"></a>Geral
 
-- **Partilhar dados de utilização**: escolha **bloco** para impedir que o dispositivo de enviar dados de diagnóstico e utilização para a Apple. **Não configurado** permite que estes dados a serem enviados.
-  - **Submissão de dados de diagnóstico**: **bloco** impede que o utilizador alterar as definições de análise de submissão e aplicação de diagnóstico no **diagnóstico e utilização** (definições de dispositivo). Para utilizar esta definição, o dispositivo tem de estar no modo supervisionado (iOS 9.3.2 +). **Não configurado** permite ao utilizador alterar estas definições do dispositivo.
-- **Captura de ecrã**: escolha **bloco** para impedir capturas de ecrã ou ecrã capturas no dispositivo. **Não configurado** permite ao utilizador capturar o conteúdo do ecrã como uma imagem.
-  - **Observação remota do ecrã pela aplicação Classroom (apenas supervisionada)**: escolha **bloco** para impedir que a aplicação sala de aula remotamente, ver o ecrã no dispositivo. Para utilizar esta definição, o dispositivo tem de estar no modo supervisionado (iOS 9.3 +). **Não configurado** permite que a aplicação sala de aula da Apple ver o ecrã.
-  - **Observação não solicitada do ecrã através da aplicação Classroom (apenas supervisionado)**: se definido como **permitir**, professores podem observar silenciosamente o ecrã de dispositivos iOS de estudantes através da aplicação Classroom sem o conhecimento dos estudantes. Dispositivos de estudantes inscritos numa classe com a aplicação de sala de aula automaticamente conceder permissão ao professor do curso. **Não configurado** impede que esta funcionalidade.
-- **Certificados TLS não fidedignos**: escolha **bloco** para impedir que os certificados Transport Layer Security (TLS) não fidedignos no dispositivo. **Não configurado** permite que os certificados TLS.
-- **Fidedignidade da aplicação empresarial**: escolha **bloco** para remover o **Trust Enterprise Developer** botão em Definições > geral > perfis e gestão de dispositivos no dispositivo. **Não configurado** permite que o utilizador optar por confiar em aplicações que não são transferidas a partir da loja de aplicações.
+- **Partilhar dados de utilização**: Escolher **bloco** para impedir que o dispositivo de enviar dados de diagnóstico e utilização para a Apple. **Não configurado** permite que estes dados a serem enviados.
+  - **Submissão de dados de diagnóstico**: **Bloco** impede que o utilizador alterar as definições de análise de submissão e aplicação de diagnóstico no **diagnóstico e utilização** (definições de dispositivo). Para utilizar esta definição, o dispositivo tem de estar no modo supervisionado (iOS 9.3.2 +). **Não configurado** permite ao utilizador alterar estas definições do dispositivo.
+- **Captura de ecrã**: Escolher **bloco** impedir capturas de ecrã ou tela captura no dispositivo. **Não configurado** permite ao utilizador capturar o conteúdo do ecrã como uma imagem.
+  - **Observação remota do ecrã pela aplicação Classroom (apenas supervisionada)**: Escolher **bloco** para impedir que a aplicação sala de aula remotamente, ver o ecrã no dispositivo. Para utilizar esta definição, o dispositivo tem de estar no modo supervisionado (iOS 9.3 +). **Não configurado** permite que a aplicação sala de aula da Apple ver o ecrã.
+  - **Observação não solicitada do ecrã através da aplicação Classroom (apenas supervisionado)**: Se definido como **permitir**, professores podem observar silenciosamente o ecrã de dispositivos iOS de estudantes através da aplicação Classroom sem o conhecimento dos estudantes. Dispositivos de estudantes inscritos numa classe com a aplicação de sala de aula automaticamente conceder permissão ao professor do curso. **Não configurado** impede que esta funcionalidade.
+- **Certificados TLS não fidedignos**: Escolher **bloco** para impedir que os certificados Transport Layer Security (TLS) não fidedignos no dispositivo. **Não configurado** permite que os certificados TLS.
+- **Fidedignidade da aplicação empresarial**: Escolher **bloco** para remover o **Trust Enterprise Developer** botão em Definições > geral > perfis e gestão de dispositivos no dispositivo. **Não configurado** permite que o utilizador optar por confiar em aplicações que não são transferidas a partir da loja de aplicações.
 - **Modificação da conta (apenas supervisionado)**: Quando definido como **bloco**, o utilizador não é possível atualizar as definições específicas do dispositivo a partir da aplicação de definições do iOS. Por exemplo, o utilizador não é possível criar novas contas de dispositivo, ou alterar o nome de utilizador ou palavra-passe. **Não configurado** permite que os usuários alterar estas definições.
   Esta funcionalidade também aplica-se às definições acessíveis a partir da aplicação de definições de iOS, por exemplo, correio, contactos, calendário, Twitter e muito mais. Esta funcionalidade não se aplica a aplicações com as definições da conta que não são configuráveis a partir da aplicação de definições do iOS, por exemplo, a aplicação Microsoft Outlook.
-- **Ativar restrições nas definições do dispositivo (apenas supervisionadas)**: escolha **bloco** para impedir que os utilizadores ativar restrições nas definições do dispositivo. **Não configurado** permite que o usuário configurar restrições de dispositivos (por exemplo, restrições de acesso) no dispositivo.
-- **Utilização de apagar opção todos os conteúdos e definições no dispositivo (apenas supervisionado)**: escolha **bloco** para que os utilizadores não é possível utilizar a opção de definições no dispositivo (apenas supervisionado) e apagar todos os conteúdos. **Não configurado** dá aos utilizadores acesso a estas definições.
-- **Modificação do nome do dispositivo (apenas supervisionada)**: escolha **bloco** para que não é possível alterar o nome do dispositivo. **Não configurado** permite ao utilizador alterar o nome do dispositivo.
-- **Modificação de definições de notificação (apenas supervisionada)**: escolha **bloco** para que não não possível alterar as definições de notificação. **Não configurado** permite que o utilizador altere as definições de notificação do dispositivo.
-- **Imagem de fundo (apenas supervisionado)**: **bloco** impede que a imagem de fundo que está a ser alterado. **Não configurado** permite que o utilizador altere a imagem de fundo no dispositivo.
-- **(Apenas supervisionado) dos modificação de definições de confiança para aplicações empresariais**: **bloco** impede o utilizador alterar as definições de fidedignidade de aplicações empresariais em dispositivos supervisionados. **Não configurado** permite ao utilizador confiar em aplicações que não são transferidas a partir da loja de aplicações.
-- **Alterações do perfil de configuração (apenas supervisionadas)**: **bloco** impede alterações do perfil de configuração no dispositivo. **Não configurado** permite que o utilizador instale perfis de configuração.
-- **Bloqueio de ativação (apenas supervisionado)**: escolha **permitir** ativar o bloqueio de ativação de dispositivos iOS supervisionados. Bloqueio de ativação dificulta que um dispositivo perdido ou roubado ser reativado.
-- **Bloquear a remoção de aplicações (apenas supervisionada)**: escolha **bloco** para impedir que os utilizadores a remover aplicações. **Não configurado** permite aos utilizadores remover aplicações do dispositivo.
-- **Modo de USB restrito de blocos (apenas supervisionado)**: escolha **bloco** para desativar o modo restrito de USB em dispositivos supervisionados. Modo restrito de USB bloqueia acessórios USB de troca de dados com um dispositivo que está bloqueado para mais de uma hora. **Não configurado** permite que o modo restrito de USB.
-- **Forçar automática data e hora (apenas supervisionado)**: **requerem** forças supervisionado dispositivos para definir a data e hora automaticamente. Fuso horário do dispositivo é atualizado quando o dispositivo tem ligações via rede móveis ou ativou Wi-Fi com os serviços de localização.
-- **Exigir aos alunos para solicitar permissão para deixar o curso em sala de aula (apenas supervisionado)**: **requerem** força os estudantes inscritos num curso não gerido com a aplicação de sala de aula solicitar permissão do professor sair o curso. Disponível apenas no iOS 11.3 +. **Não configurado** não força o aluno para pedir permissão.
-- **Permitir atualizações por ondas eletromagnéticas do PKI**: **permitir** permite aos usuários receber atualizações de software sem precisar se conectar seus dispositivos a um computador.
-- **Ad de limite de controlo**: escolha **limite** para desativar o identificador de publicidade do dispositivo. **Não configurado** mantém-a ativada.
-- **Criação de VPN de bloco (apenas supervisionada)**: **bloco** impede os utilizadores de criação de definições de configuração de VPN. **Não configurado** permite aos usuários criar VPNs no dispositivo.
+- **Ativar restrições nas definições do dispositivo (apenas supervisionadas)**: Escolher **bloco** para impedir que os utilizadores ativar restrições nas definições do dispositivo. **Não configurado** permite que o usuário configurar restrições de dispositivos (por exemplo, restrições de acesso) no dispositivo.
+- **Utilização da opção de definições no dispositivo (apenas supervisionado) e apagar todos os conteúdos**: Escolher **bloco** para que os utilizadores não é possível utilizar a opção de definições no dispositivo (apenas supervisionado) e apagar todos os conteúdos. **Não configurado** dá aos utilizadores acesso a estas definições.
+- **Modificação do nome do dispositivo (apenas supervisionada)**: Escolher **bloco** para que não é possível alterar o nome do dispositivo. **Não configurado** permite ao utilizador alterar o nome do dispositivo.
+- **Modificação de definições de notificação (apenas supervisionada)**: Escolher **bloco** para que não não possível alterar as definições de notificação. **Não configurado** permite que o utilizador altere as definições de notificação do dispositivo.
+- **Imagem de fundo (apenas supervisionado)**: **Bloco** impede que a imagem de fundo que está a ser alterado. **Não configurado** permite que o utilizador altere a imagem de fundo no dispositivo.
+- **(Apenas supervisionado) dos modificação de definições de confiança para aplicações empresariais**: **Bloco** impede o utilizador alterar as definições de fidedignidade de aplicações empresariais em dispositivos supervisionados. **Não configurado** permite ao utilizador confiar em aplicações que não são transferidas a partir da loja de aplicações.
+- **Alterações do perfil de configuração (apenas supervisionadas)**: **Bloco** impede alterações do perfil de configuração no dispositivo. **Não configurado** permite que o utilizador instale perfis de configuração.
+- **Bloqueio de ativação (apenas supervisionado)**: Escolher **permitir** ativar o bloqueio de ativação de dispositivos iOS supervisionados. Bloqueio de ativação dificulta que um dispositivo perdido ou roubado ser reativado.
+- **Bloquear a remoção de aplicações (apenas supervisionada)**: Escolher **bloco** para impedir que os utilizadores a remover aplicações. **Não configurado** permite aos utilizadores remover aplicações do dispositivo.
+- **Modo de USB restrito de blocos (apenas supervisionado)**: Escolher **bloco** para desativar o modo restrito de USB em dispositivos supervisionados. Modo restrito de USB bloqueia acessórios USB de troca de dados com um dispositivo que está bloqueado para mais de uma hora. **Não configurado** permite que o modo restrito de USB.
+- **Forçar automática data e hora (apenas supervisionado)**: **Exigir** forças supervisionado dispositivos para definir a data e hora automaticamente. Fuso horário do dispositivo é atualizado quando o dispositivo tem ligações via rede móveis ou ativou Wi-Fi com os serviços de localização.
+- **Exigir aos alunos para solicitar permissão para deixar o curso em sala de aula (apenas supervisionado)**: **Exigir** força os estudantes inscritos num curso não gerido com a aplicação de sala de aula solicitar permissão do professor deixar o curso. Disponível apenas no iOS 11.3 +. **Não configurado** não força o aluno para pedir permissão.
+- **Permitir atualizações por ondas eletromagnéticas do PKI**: **Permitir** permite aos usuários receber atualizações de software sem precisar se conectar seus dispositivos a um computador.
+- **Ad de limite de controlo**: Escolher **limite** para desativar o identificador de publicidade do dispositivo. **Não configurado** mantém-a ativada.
+- **Criação de VPN de bloco (apenas supervisionada)**: **Bloco** impede os utilizadores de criação de definições de configuração de VPN. **Não configurado** permite aos usuários criar VPNs no dispositivo.
 
 ## <a name="configurations-requiring-supervision"></a>Configurações que necessitam de supervisão
 
@@ -102,82 +107,90 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 
 ## <a name="password"></a>Palavra-passe
 
-- **Palavra-passe**: exigir que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. Não configurado permite aos utilizadores aceder ao dispositivo sem introduzir uma palavra-passe.
-  - **Palavras-passe simples**: escolha **bloco** solicitar palavras-passe mais complexas. **Não configurado** permite que as palavras-passe simples, como `0000` e `1234`.
+- **palavra-passe**: Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. Não configurado permite aos utilizadores aceder ao dispositivo sem introduzir uma palavra-passe.
+  - **Palavras-passe simples**: Escolher **bloco** solicitar palavras-passe mais complexas. **Não configurado** permite que as palavras-passe simples, como `0000` e `1234`.
   - **Tipo de palavra-passe obrigatório**: Escolha o tipo de palavra-passe necessitam da sua organização. As opções são:
     - **Predefinição do dispositivo**
     - **numérico**
     - **Alfanumérico**
-  - **Número de carateres não alfanuméricos na palavra-passe**: introduza o número de carateres de símbolo, tal como `#` ou `@`, que têm de ser incluídos na palavra-passe.
-  - **Comprimento mínimo da palavra-passe**: introduza o comprimento mínimo de um utilizador tem de introduzir (entre 4 e 14 caracteres).
-  - **Número de falhas de início de sessão antes de limpar o dispositivo**: introduza o número de inícios de sessão falhados a permitir antes do dispositivo ser apagado (entre 1 a 11).
-  - **Máximo de minutos após o bloqueio de ecrã antes de palavra-passe é exigida**<sup>1</sup>: introduza o tempo que o dispositivo permanece inativo antes do utilizador ter de reintroduzir a palavra-passe. Se o tempo que introduzir superior ao atualmente definido no dispositivo, em seguida, o dispositivo ignora o tempo que introduzir. Suportado no iOS 8.0 e dispositivos mais recentes.
-  - **Máximo de minutos de inatividade até o ecrã bloquear**<sup>1</sup>: introduza o número máximo de minutos de inatividade permitido no dispositivo até o ecrã ser bloqueado. Se o tempo que introduzir superior ao atualmente definido no dispositivo, em seguida, o dispositivo ignora o tempo que introduzir.
-  - **Expiração de palavra-passe (dias)**: introduza o número de dias antes da palavra-passe do dispositivo tem de ser alterada.
-  - **Impedir a reutilização de palavras-passe anteriores**: introduza o número de novas palavras-passe que deve ser usado até que pode ser reutilizada uma antiga.
-  - **Desbloqueio por impressão digital**: escolha **bloco** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
-- **Modificação do código de acesso (apenas supervisionada)**: escolha **bloco** para parar o código de acesso do que está a ser alterado, adicionado ou removido. Alterações às restrições de código de acesso são ignoradas em dispositivos supervisionados depois de bloqueada a esta funcionalidade. **Não configurado** permite que os códigos de acesso ser adicionado, alteradas ou removidas.
-  - **(Apenas supervisionada) de modificação de impressão digital**: **bloco** impede o utilizador alterar, adicionar ou remover impressões digitais TouchID. **Não configurado** permite a atualização do utilizador de impressões digitais TouchID no dispositivo.
-- **Palavra-passe de bloco preenchimento automático (apenas supervisionado)**: escolha **bloco** para impedir a utilização da funcionalidade de palavras-passe de preenchimento automático no iOS. Escolher **bloco** também faz o seguinte:
+  - **Número de carateres não alfanuméricos na palavra-passe**: Introduza o número de carateres de símbolo, tal como `#` ou `@`, que têm de ser incluídos na palavra-passe.
+  - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo de que um utilizador tem de introduzir (entre 4 e 14 caracteres).
+  - **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de inícios de sessão falhados a permitir antes do dispositivo ser apagado (entre 1 a 11).
+  - **Máximo de minutos após o bloqueio de ecrã antes de palavra-passe é exigida**<sup>1</sup>: Introduza o tempo que o dispositivo permanece inativo antes do utilizador ter de reintroduzir a palavra-passe. Se o tempo que introduzir superior ao atualmente definido no dispositivo, em seguida, o dispositivo ignora o tempo que introduzir. Suportado no iOS 8.0 e dispositivos mais recentes.
+  - **Máximo de minutos de inatividade até o ecrã bloquear**<sup>1</sup>: Introduza o número máximo de minutos de inatividade permitido no dispositivo até o ecrã ser bloqueado. Se o tempo que introduzir superior ao atualmente definido no dispositivo, em seguida, o dispositivo ignora o tempo que introduzir.
+  - **Expiração de palavra-passe (dias)**: Introduza o número de dias antes da palavra-passe do dispositivo tem de ser alterada.
+  - **Impedir a reutilização de palavras-passe anteriores**: Introduza o número de novas palavras-passe que deve ser usado até que pode ser reutilizada uma antiga.
+  - **Desbloqueio por impressão digital**: Escolher **bloco** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
+- **Modificação do código de acesso (apenas supervisionada)**: Escolher **bloco** para parar o código de acesso do que está a ser alterado, adicionado ou removido. Alterações às restrições de código de acesso são ignoradas em dispositivos supervisionados depois de bloqueada a esta funcionalidade. **Não configurado** permite que os códigos de acesso ser adicionado, alteradas ou removidas.
+  - **(Apenas supervisionada) de modificação de impressão digital**: **Bloco** impede o utilizador alterar, adicionar ou remover impressões digitais TouchID. **Não configurado** permite a atualização do utilizador de impressões digitais TouchID no dispositivo.
+- **Palavra-passe de bloco preenchimento automático (apenas supervisionado)**: Escolher **bloco** para impedir a utilização da funcionalidade de palavras-passe de preenchimento automático no iOS. Escolher **bloco** também faz o seguinte:
   - Os utilizadores não são-lhe pedidos para utilizar uma palavra-passe guardada no Safari ou em todas as aplicações.
   - Palavras-passe forte de automáticas estão desativadas e as palavras-passe fortes não são sugeridas para os utilizadores.
 
   **Não configurado** permite que esses recursos.
 
-- **Bloquear pedidos de proximidade de palavra-passe (apenas supervisionados)**: escolha **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** permite que estes pedidos de palavra-passe.
-- **Bloquear a partilha de palavra-passe (apenas supervisionado)**: **bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** permite que as palavras-passe a ser partilhado.
+- **Bloquear pedidos de proximidade de palavra-passe (apenas supervisionados)**: Escolher **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** permite que estes pedidos de palavra-passe.
+- **Bloquear a partilha de palavra-passe (apenas supervisionado)**: **Bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** permite que as palavras-passe a ser partilhado.
 
 <sup>1</sup>ao configurar o **máximo de minutos de inatividade até o ecrã bloquear** e **máximo de minutos após o bloqueio de ecrã antes de palavra-passe é exigida** definições, estas são aplicadas em sequência. Por exemplo, se definir o valor das duas definições para **5** minutos, a ecrã desliga automaticamente passados cinco minutos e o dispositivo é bloqueado após mais cinco minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, depois do utilizador desliga o ecrã, o dispositivo ser bloqueado passados cinco minutos.
 
 ## <a name="locked-screen-experience"></a>Experiência de Ecrã Bloqueado
 
-- **Acesso de centro de controlo enquanto o dispositivo está bloqueado**: escolha **bloco** para impedir o acesso à aplicação Centro de controlo quando o dispositivo está bloqueado. **Não configurado** permite aos utilizadores acesso à aplicação Centro de controlo quando o dispositivo está bloqueado.
-- **Notificações enquanto o dispositivo está bloqueado**: **bloco** impede o acesso a notificações quando o dispositivo está bloqueado. **Não configurado** permite ao utilizador aceder as notificações sem desbloquear o dispositivo.
-- **Notificações de carteira, enquanto o dispositivo está bloqueado**: **bloco** impede o acesso à aplicação Carteira quando o dispositivo está bloqueado. **Não configurado** permite ao utilizador aceder à aplicação de carteira, enquanto o dispositivo está bloqueado.
-- **Vista hoje enquanto o dispositivo está bloqueado**: **bloco** impede o acesso para a vista hoje enquanto o dispositivo está bloqueado. **Não configurado** permite ao utilizador ver a vista hoje enquanto o dispositivo está bloqueado.
+- **Acesso de centro de controlo enquanto o dispositivo está bloqueado**: Escolher **bloco** para impedir o acesso à aplicação Centro de controlo quando o dispositivo está bloqueado. **Não configurado** permite aos utilizadores acesso à aplicação Centro de controlo quando o dispositivo está bloqueado.
+- **Notificações enquanto o dispositivo está bloqueado**: **Bloco** impede o acesso a notificações quando o dispositivo está bloqueado. **Não configurado** permite ao utilizador aceder as notificações sem desbloquear o dispositivo.
+- **Notificações de carteira, enquanto o dispositivo está bloqueado**: **Bloco** impede o acesso à aplicação Carteira quando o dispositivo está bloqueado. **Não configurado** permite ao utilizador aceder à aplicação de carteira, enquanto o dispositivo está bloqueado.
+- **Vista hoje enquanto o dispositivo está bloqueado**: **Bloco** impede o acesso para a vista hoje enquanto o dispositivo está bloqueado. **Não configurado** permite ao utilizador ver a vista hoje enquanto o dispositivo está bloqueado.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, Visualização de Documentos, Jogos
 
-- **Loja de aplicações**: **bloco** impede o acesso à loja de aplicações em dispositivos supervisionados. **Não configurado** permite o acesso.
-  - **Instalar aplicações da Store da aplicação (apenas supervisionado)**: escolha **bloco** para bloquear a app store a partir do ecrã principal do dispositivo. Os utilizadores finais podem continuar a utilizar o iTunes ou o Apple Configurator para instalar aplicações. **Não configurado** permite que a loja de aplicações no ecrã inicial.
-  - **Transferências automáticas de aplicações (apenas supervisionadas)**: escolha **bloco** para impedir a transferência automática de aplicações compradas noutros dispositivos. Não afeta a atualização das aplicações existentes. **Não configurado** permite que as aplicações compradas noutros dispositivos iOS para transferir no dispositivo.
-- **Palavra-passe para aceder à loja de aplicações**: **requerem** ao utilizador para introduzir uma palavra-passe antes de poderem visitar a loja de aplicações. **Não configurado** permite o acesso à loja de aplicações, sem introduzir uma palavra-passe.
-- **Compras no aplicativo**: escolha **bloco** para impedir que as compras na aplicação da loja. **Não configurado** permite compras na loja uma aplicação em execução.
-- **Conteúdo de música, podcast ou notícias do explícito do iTunes (apenas supervisionado)**: escolha **bloco** para impedir que o conteúdo de música, podcast ou notícias explícito do iTunes. **Não configurado** permite que o dispositivo aceda ao conteúdo classificado como conteúdo para adultos na loja.
-- **Transferir conteúdos da iBook store identificados como "Erótico"**: escolha **bloco** para impedir que os utilizadores de deixar de transferir o suporte de dados a partir da iBook store que é identificada como erótica. **Não configurado** permite ao utilizador transferir livros da categoria "Erótico".
-- **Ver documentos empresariais em aplicações não geridas**: **bloco** impede a ver documentos não empresariais em aplicações não geridas. **Não configurado** permite que os documentos empresariais sejam vistos em qualquer aplicação. Por exemplo, pretende impedir que os utilizadores guardar ficheiros a partir da aplicação OneDrive no Dropbox. Configurar esta definição como **bloco**. Depois do dispositivo receber a política (por exemplo, após um reinício), já não permite a guardar.
-- **Ver documentos não empresariais em aplicações empresariais**: **bloco** impede a ver documentos não empresariais em aplicações empresariais. **Não configurado** permite que qualquer documento seja visto em aplicações geridas empresariais.
-- **Tratar o AirDrop como um destino não gerido**: **requerem** força o AirDrop a ser considerado um destino não gerido. Ele impede que as aplicações geridas de enviar dados através de Airdrop. 
-- **Adicionar amigos do Game Center (apenas supervisionados)**: **bloco** impede os utilizadores de adição de amigos do Game Center. **Não configurado** permite que o utilizador adicione amigos no Centro de jogos.
-- **Centro de jogos (apenas supervisionado)**: **bloco** a utilização da aplicação Game Center. **Não configurado** permite utilizar a aplicação do Centro de jogos no dispositivo.
-- **Jogos de multijogadores (apenas supervisionado)**: escolha **bloco** para impedir que os jogos de vários jogadores. **Não configurado** permite que o utilizador Jogue jogos multijogador no dispositivo.
+- **Loja de aplicações**: **Bloco** impede o acesso à loja de aplicações em dispositivos supervisionados. **Não configurado** permite o acesso.
+  - **Instalar aplicações da Store da aplicação (apenas supervisionado)**: Escolher **bloco** para bloquear a app store a partir do ecrã principal do dispositivo. Os utilizadores finais podem continuar a utilizar o iTunes ou o Apple Configurator para instalar aplicações. **Não configurado** permite que a loja de aplicações no ecrã inicial.
+  - **Transferências automáticas de aplicações (apenas supervisionadas)**: Escolher **bloco** para impedir a transferência automática de aplicações compradas noutros dispositivos. Não afeta a atualização das aplicações existentes. **Não configurado** permite que as aplicações compradas noutros dispositivos iOS para transferir no dispositivo.
+- **Palavra-passe para aceder à loja de aplicações**: **Exigir** ao utilizador para introduzir uma palavra-passe antes de poderem visitar a loja de aplicações. **Não configurado** permite o acesso à loja de aplicações, sem introduzir uma palavra-passe.
+- **Compras na aplicação**: Escolher **bloco** para impedir que as compras na aplicação da loja. **Não configurado** permite compras na loja uma aplicação em execução.
+- **Conteúdo de música, podcast ou notícias do explícito do iTunes (apenas supervisionado)**: Escolher **bloco** para impedir que o conteúdo de música, podcast ou notícias explícito do iTunes. **Não configurado** permite que o dispositivo aceda ao conteúdo classificado como conteúdo para adultos na loja.
+- **Transferir conteúdos da iBook store identificados como "Erótico"**: Escolher **bloco** para impedir que os utilizadores de deixar de transferir o suporte de dados a partir da iBook store que é identificada como erótica. **Não configurado** permite ao utilizador transferir livros da categoria "Erótico".
+- **Ver documentos empresariais em aplicações não geridas**: **Bloco** impede a ver documentos não empresariais em aplicações não geridas. **Não configurado** permite que os documentos empresariais sejam vistos em qualquer aplicação. Por exemplo, pretende impedir que os utilizadores guardar ficheiros a partir da aplicação OneDrive no Dropbox. Configurar esta definição como **bloco**. Depois do dispositivo receber a política (por exemplo, após um reinício), já não permite a guardar.
+  - **Permitir que aplicações geridas escrever contactos contactos não geridos (apenas supervisionadas) de contas**: Quando definido como **permitir**, os utilizadores podem adicionar ou sincronizar Outlook informações de contacto qualquer pessoa, incluindo empresas e contactos de empresa, para a aplicação incorporada de contactos no dispositivo. Quando definido como **não configurado**, os utilizadores não é possível adicionar a contatos do Outlook para a aplicação incorporada de contactos no dispositivo.
+  
+    Para utilizar esta definição, defina o **ver documentos empresariais em aplicações não geridas** definição **bloco**.
+  
+- **Ver documentos não empresariais em aplicações empresariais**: **Bloco** impede a ver documentos não empresariais em aplicações empresariais. **Não configurado** permite que qualquer documento seja visto em aplicações geridas empresariais.
+  - **Permitir aplicações não geridas ler contactos geridos (apenas supervisionadas) de contas**: Quando definido como **permitir**, os usuários podem adicionar iContacts aplicação informações de contato qualquer pessoa no Outlook. **Não configurado** impede que duplicatas de remoção de ler, incluindo, a partir da aplicação incorporada de contactos no dispositivo.
+  
+    Para utilizar esta definição, defina o **ver documentos não empresariais em aplicações empresariais** definição **bloco**.
+  
+- **Tratar o AirDrop como um destino não gerido**: **Exigir** força o AirDrop a ser considerado um destino não gerido. Ele impede que as aplicações geridas de enviar dados através de Airdrop. 
+- **Adicionar amigos do Game Center (apenas supervisionados)**: **Bloco** impede os utilizadores de adição de amigos do Game Center. **Não configurado** permite que o utilizador adicione amigos no Centro de jogos.
+- **Centro de jogos (apenas supervisionado)**: **Bloco** a utilização da aplicação Game Center. **Não configurado** permite utilizar a aplicação do Centro de jogos no dispositivo.
+- **Jogos de multijogadores (apenas supervisionado)**: Escolher **bloco** para impedir que os jogos de vários jogadores. **Não configurado** permite que o utilizador Jogue jogos multijogador no dispositivo.
 - **Região das classificações**: Escolha a região das classificações que pretende utilizar para transferências permitidas. E, em seguida, selecione as classificações permitidas para **filmes** e **TV mostra**.
-- **Aplicações**: selecione a classificação etária permitida das aplicações que os utilizadores podem transferir ou pode escolher **permitir todas as aplicações**.
+- **Aplicações**: Selecione a classificação etária permitida das aplicações que os utilizadores podem transferir ou pode escolher **permitir todas as aplicações**.
 
 ## <a name="built-in-apps"></a>Aplicações Incorporadas
 
-- **Câmara**: escolha **bloco** para impedir o acesso à câmara do dispositivo. **Não configurado** permite o acesso à câmara do dispositivo.
-  - **FaceTime**: **bloco** para impedir o acesso à aplicação FaceTime. **Não configurado** permite o acesso à aplicação FaceTime no dispositivo.
-- **Siri**: **bloco** impede o acesso a Siri. **Não configurado** permite usando o Assistente de voz Siri no dispositivo.
-  - **Siri enquanto o dispositivo está bloqueado**: escolha **bloco** para impedir o acesso a Siri quando o dispositivo está bloqueado. **Não configurado** permite usando o Assistente de voz Siri no dispositivo quando ele está bloqueado.
-  - **Filtro de linguagem inapropriada da Siri (apenas supervisionado)**: **requerem** impede que a Siri Dite ou fale com linguagem profana.
-  - **A siri pode consultar conteúdos gerados pelo utilizador da internet (apenas supervisionado)**: **bloco** impede a Siri de aceder ao Web sites para responder a perguntas. **Não configurado** permite que a siri pode aceder a conteúdos gerados pelo utilizador a partir da internet.
-- **Apple News (apenas supervisionado)**: escolha **bloco** para impedir o acesso à aplicação Apple News no dispositivo. **Não configurado** permite utilizar a aplicação Apple News.
-- **loja iBooks (apenas supervisionada)**: **bloco** impede o acesso à iBooks store. **Não configurado** permite aos utilizadores procurar e compre livros da loja iBooks.
-- **Aplicação mensagens no dispositivo (apenas supervisionado)**: escolha **bloco** para que os utilizadores não é possível utilizar a aplicação de mensagens no dispositivo. **Não configurado** permite utilizar a aplicação de mensagens para enviar e ler mensagens de texto.
-- **Podcasts (apenas supervisionado)**: **bloco** impede que os utilizadores através da aplicação Podcasts. **Não configurado** permite a utilização da aplicação Podcasts.
-- **Serviço Music (apenas supervisionado)**: **bloco** reverte o aplicativo de música para o modo clássico e desativa o serviço de música. **Não configurado** permite o uso de aplicação Apple Music.
-- **serviço iTunes Radio (apenas supervisionado)**: **bloco** impede os utilizadores de utilizar a aplicação iTunes Radio. **Não configurado** permite o uso de aplicação iTunes Radio.
-- **Alterações às definições da aplicação encontrar amigos (apenas supervisionadas)**: **bloco** impede alterações às definições da aplicação Find My Friends. **Não configurado** permite que o utilizador altere as definições da aplicação Find My Friends.
-- **Pesquisa Spotlight para devolver resultados da internet (apenas supervisionado)**: **bloco** impede o destaque do retorno de resultados de uma pesquisa na Internet. **Não configurado** permite destaque pesquisa ligar à Internet para fornecer os resultados da pesquisa.
-- **Bloquear a remoção de aplicações do sistema do dispositivo (apenas supervisionado)**: escolha **bloco** desativa a capacidade de remover aplicações de sistema do dispositivo. **Não configurado** permite aos utilizadores remover aplicações do sistema.
+- **Câmara**: Escolher **bloco** para impedir o acesso à câmara do dispositivo. **Não configurado** permite o acesso à câmara do dispositivo.
+  - **FaceTime**: **Bloco** para impedir o acesso à aplicação FaceTime. **Não configurado** permite o acesso à aplicação FaceTime no dispositivo.
+- **Siri**: **Bloco** impede o acesso a Siri. **Não configurado** permite usando o Assistente de voz Siri no dispositivo.
+  - **Siri enquanto o dispositivo está bloqueado**: Escolher **bloco** para impedir o acesso a Siri quando o dispositivo está bloqueado. **Não configurado** permite usando o Assistente de voz Siri no dispositivo quando ele está bloqueado.
+  - **Filtro de linguagem inapropriada da Siri (apenas supervisionado)**: **Exigir** impede que a Siri Dite ou fale com linguagem profana.
+  - **A siri pode consultar conteúdos gerados pelo utilizador da internet (apenas supervisionado)**: **Bloco** impede a Siri de aceder ao Web sites para responder a perguntas. **Não configurado** permite que a siri pode aceder a conteúdos gerados pelo utilizador a partir da internet.
+- **Apple News (apenas supervisionado)**: Escolher **bloco** para impedir o acesso à aplicação Apple News no dispositivo. **Não configurado** permite utilizar a aplicação Apple News.
+- **loja iBooks (apenas supervisionada)**: **Bloco** impede o acesso à iBooks store. **Não configurado** permite aos utilizadores procurar e compre livros da loja iBooks.
+- **Aplicação mensagens no dispositivo (apenas supervisionado)**: Escolher **bloco** para que os utilizadores não é possível utilizar a aplicação de mensagens no dispositivo. **Não configurado** permite utilizar a aplicação de mensagens para enviar e ler mensagens de texto.
+- **Podcasts (apenas supervisionado)**: **Bloco** impede que os utilizadores através da aplicação Podcasts. **Não configurado** permite a utilização da aplicação Podcasts.
+- **Serviço Music (apenas supervisionado)**: **Bloco** reverte o aplicativo de música para o modo clássico e desativa o serviço de música. **Não configurado** permite o uso de aplicação Apple Music.
+- **serviço iTunes Radio (apenas supervisionado)**: **Bloco** impede os utilizadores de utilizar a aplicação iTunes Radio. **Não configurado** permite o uso de aplicação iTunes Radio.
+- **Alterações às definições da aplicação encontrar amigos (apenas supervisionadas)**: **Bloco** impede alterações às definições da aplicação Find My Friends. **Não configurado** permite que o utilizador altere as definições da aplicação Find My Friends.
+- **Pesquisa Spotlight para devolver resultados da internet (apenas supervisionado)**: **Bloco** impede o destaque do retorno de resultados de uma pesquisa na Internet. **Não configurado** permite destaque pesquisa ligar à Internet para fornecer os resultados da pesquisa.
+- **Bloquear a remoção de aplicações do sistema do dispositivo (apenas supervisionado)**: Escolher **bloco** desativa a capacidade de remover aplicações de sistema do dispositivo. **Não configurado** permite aos utilizadores remover aplicações do sistema.
 
 ## <a name="restricted-apps"></a>Aplicações restritas
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
-- **Aplicações proibidas**: uma lista de aplicações não geridas pelo Intune que não quer instalada no dispositivo. Se um usuário instala uma aplicação a partir desta lista, é notificado pelo Intune.
-- **Aplicações aprovadas**: uma lista de aplicações que os utilizadores podem instalar. Para ficar em conformidade, os utilizadores não podem instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas. Se um usuário instala uma aplicação a partir desta lista, é notificado pelo Intune.
+- **Aplicações proibidas**: Uma lista de aplicações não geridas pelo Intune que não quer instalada no dispositivo. Se um usuário instala uma aplicação a partir desta lista, é notificado pelo Intune.
+- **Aplicações aprovadas**: Uma lista de aplicações que os utilizadores podem instalar. Para ficar em conformidade, os utilizadores não podem instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas. Se um usuário instala uma aplicação a partir desta lista, é notificado pelo Intune.
 
 Adicionar aplicações para estas listas, pode:
 
@@ -187,7 +200,7 @@ Adicionar aplicações para estas listas, pode:
 
   Pode também utilizar o iTunes para localizar a aplicação e, em seguida, utilizar o **copiar ligação** tarefa para obter o URL da aplicação.
 
-- Importe um ficheiro CSV com detalhes sobre a aplicação, incluindo o URL. Utilize o <app url>, <app name>, <app publisher> formato. Em alternativa, exportar uma lista existente, que inclui a lista de aplicações restritas no mesmo formato.
+- Importe um ficheiro CSV com detalhes sobre a aplicação, incluindo o URL. Utilize o formato `<app url>, <app name>, <app publisher>`. Em alternativa, exportar uma lista existente, que inclui a lista de aplicações restritas no mesmo formato.
 
 > [!IMPORTANT]
 > Perfis de dispositivos que utilizam as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
@@ -196,8 +209,8 @@ Adicionar aplicações para estas listas, pode:
 
 Na lista de aplicações Mostrar ou ocultar, pode configurar uma das seguintes listas em dispositivos supervisionados com o iOS 9.3 ou mais recente.
 
-- **Aplicações ocultas**: introduza uma lista de aplicações que estão ocultos dos utilizadores. Os utilizadores não podem ver ou abra estas aplicações.
-- **Aplicações visíveis**: introduza uma lista de aplicações que os utilizadores podem ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
+- **Aplicações ocultas**: Introduza uma lista de aplicações que estão ocultos dos utilizadores. Os utilizadores não podem ver ou abra estas aplicações.
+- **Aplicações visíveis**: Introduza uma lista de aplicações que os utilizadores poderão ver e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
 Adicionar aplicações para estas listas, pode:
 
@@ -207,56 +220,56 @@ Adicionar aplicações para estas listas, pode:
 
   Pode também utilizar o iTunes para localizar a aplicação e, em seguida, utilizar o **copiar ligação** tarefa para obter o URL da aplicação.
 
-- Importe um ficheiro CSV com detalhes sobre a aplicação, incluindo o URL. Utilize o <app url>, <app name>, <app publisher> formato. Em alternativa, exportar uma lista existente, que inclui a lista de aplicações restritas no mesmo formato.
+- Importe um ficheiro CSV com detalhes sobre a aplicação, incluindo o URL. Utilize o formato `<app url>, <app name>, <app publisher>`. Em alternativa, exportar uma lista existente, que inclui a lista de aplicações restritas no mesmo formato.
 
 ## <a name="wireless"></a>Sem fios
 
-- **Roaming de dados**: escolha **bloco** para impedir que os dados em roaming na rede celular. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
-- **Obtenção de segundo plano global roaming**: **bloco** impede a utilizar a funcionalidade de obtenção de em segundo plano global quando em roaming na rede celular. **Não configurado** permite que o dispositivo obtenha dados, tais como e-mail, quando está em roaming numa rede celular.
-- **Marcação por voz**: escolha **bloco** para impedir que os utilizadores a utilizar a funcionalidade de marcação por voz no dispositivo. **Não configurado** permite as chamadas discar no dispositivo.
-- **Roaming de voz**: escolha **bloco** para impedir que chamadas em roaming na rede celular. **Não configurado** permite chamadas em roaming quando o dispositivo estiver numa rede celular.
-- **Alterações às definições de utilização de dados via rede móvel de aplicação (apenas supervisionadas)**: escolha **bloco** para impedir alterações às definições de utilização de dados via rede móvel da aplicação. **Não configurado** permite que o utilizador controle que aplicações estão autorizadas a utilizar dados via rede móvel.
-- **Hotspot pessoal**: **bloco** impede que o dispositivo a ser utilizado como um hotspot pessoal. Esta definição poderá não ser compatível com algumas operadoras. **Não configurado** permite esta funcionalidade.
-- **Junte-se a redes Wi-Fi apenas com perfis de configuração (apenas supervisionados)**: **requerem** força o dispositivo para utilizar apenas as redes Wi-Fi configuradas através de perfis de configuração do Intune. **Não configurado** permite que o dispositivo utilize outras redes Wi-Fi.
-- **Regras de utilização de rede móvel (apenas aplicações geridas)**: definir os dados de tipos de aplicações geridas podem utilizar em redes de celular. As opções são:
-  - **Bloquear a utilização de dados via rede móvel**: bloquear dados via rede móvel para a utilizar **todas as aplicações geridas** ou **escolher aplicações específicas**.
-  - **Bloquear a utilização de dados via rede móvel ao efetuar o roaming**: bloquear com dados via rede móvel ao efetuar o roaming para **todas as aplicações geridas** ou **escolher aplicações específicas**.
+- **Roaming de dados**: Escolher **bloco** para impedir que os dados em roaming na rede celular. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
+- **Obtenção de segundo plano global roaming**: **Bloco** impede a utilizar a funcionalidade de obtenção de em segundo plano global quando em roaming na rede celular. **Não configurado** permite que o dispositivo obtenha dados, tais como e-mail, quando está em roaming numa rede celular.
+- **Marcação por voz**: Escolher **bloco** para impedir que os utilizadores a utilizar a funcionalidade de marcação por voz no dispositivo. **Não configurado** permite as chamadas discar no dispositivo.
+- **Chamadas em roaming**: Escolher **bloco** para impedir que chamadas em roaming na rede celular. **Não configurado** permite chamadas em roaming quando o dispositivo estiver numa rede celular.
+- **Alterações às definições de utilização de dados via rede móvel de aplicação (apenas supervisionadas)**: Escolher **bloco** para impedir alterações às definições de utilização de dados via rede móvel da aplicação. **Não configurado** permite que o utilizador controle que aplicações estão autorizadas a utilizar dados via rede móvel.
+- **Hotspot pessoal**: **Bloco** impede que o dispositivo a ser utilizado como um hotspot pessoal. Esta definição poderá não ser compatível com algumas operadoras. **Não configurado** permite esta funcionalidade.
+- **Junte-se a redes Wi-Fi apenas com perfis de configuração (apenas supervisionados)**: **Exigir** força o dispositivo para utilizar apenas as redes Wi-Fi configuradas através de perfis de configuração do Intune. **Não configurado** permite que o dispositivo utilize outras redes Wi-Fi.
+- **Regras de utilização de rede móvel (apenas aplicações geridas)**: Defina os dados de tipos de aplicações geridas podem utilizar em redes de celular. As opções são:
+  - **Bloquear a utilização de dados via rede móvel**: Bloquear a utilizar dados via rede móvel para **todas as aplicações geridas** ou **escolher aplicações específicas**.
+  - **Bloquear a utilização de dados via rede móvel ao efetuar o roaming**: Bloquear a utilizar dados via rede móvel ao efetuar o roaming para **todas as aplicações geridas** ou **escolher aplicações específicas**.
 
 ## <a name="connected-devices"></a>Dispositivos Ligados
 
-- **AirDrop (apenas supervisionado)**: **bloco** impede o AirDrop a utilizar no dispositivo. **Não configurado** permite o uso da funcionalidade AirDrop para trocar conteúdos com dispositivos próximos.
-- **Emparelhamento do Apple Watch (apenas supervisionado)**: **bloco** impede o emparelhamento com um Apple Watch. **Não configurado** permite que o dispositivo se emparelhe com um Apple Watch.
-- **Deteção de pulso para do Apple Watch emparelhado**: **requerem** força um Apple Watch emparelhado a utilizar a deteção de pulso. Quando for necessário, o Apple Watch não apresenta notificações quando não estiver a ser utilizado. 
-- **Modificação de Bluetooth (apenas supervisionada)**: **bloco** impede o utilizador final a alterar as definições de Bluetooth no dispositivo. **Não configurado** permite ao utilizador alterar estas definições.
-- **Alojar o emparelhamento para controlar os dispositivos que um dispositivo iOS pode emparelhar (apenas supervisionado)**: **não configurado** permite o emparelhamento de anfitriões para permitir que o controle de administrador que dispositivos um dispositivo iOS pode emparelhar. **Bloco** impede que o emparelhamento de anfitriões.
-- **Exigir palavra-passe de emparelhamento para pedidos de saída do AirPlay**: **requerem** uma palavra-passe emparelhada quando o utilizador utiliza AirPlay transmitir conteúdos para outros dispositivos da Apple. **Não configurado** permite que o usuário transmitir conteúdo com o AirPlay sem introduzir uma palavra-passe.
-- **AirPrint de bloco (apenas supervisionado)**: escolha **bloco** para impedir a utilizar a funcionalidade de AirPrint no dispositivo. **Não configurado** permite que o utilizador utilize o AirPrint.
-  - **Bloquear o armazenamento de credenciais do AirPrint na Keychain (apenas supervisionado)**: **bloco** impede a utilizar o armazenamento de Keychain para o nome de utilizador e palavra-passe no dispositivo. **Não configurado** permite armazenar o nome de utilizador do AirPrint e a palavra-passe na aplicação Keychain.
-  - **Exigir um certificado fidedigno do TLS para AirPrint (apenas supervisionado)**: **requerem** força o dispositivo para utilizar certificados fidedignos para comunicação de impressão de TLS.
-  - **Deteção de iBeacon do bloco de impressoras com o AirPrint (apenas supervisionado)**: **bloco** impede maliciosos AirPrint Bluetooth beacons de phishing para tráfego de rede. **Não configurado** permite que o anúncio de impressoras com o AirPrint no dispositivo.
+- **AirDrop (apenas supervisionado)**: **Bloco** impede o AirDrop a utilizar no dispositivo. **Não configurado** permite o uso da funcionalidade AirDrop para trocar conteúdos com dispositivos próximos.
+- **Emparelhamento do Apple Watch (apenas supervisionado)**: **Bloco** impede o emparelhamento com um Apple Watch. **Não configurado** permite que o dispositivo se emparelhe com um Apple Watch.
+- **Deteção de pulso para do Apple Watch emparelhado**: **Exigir** força um Apple Watch emparelhado a utilizar a deteção de pulso. Quando for necessário, o Apple Watch não apresenta notificações quando não estiver a ser utilizado. 
+- **Modificação de Bluetooth (apenas supervisionada)**: **Bloco** impede o utilizador final a alterar as definições de Bluetooth no dispositivo. **Não configurado** permite ao utilizador alterar estas definições.
+- **Emparelhamento de anfitriões para controlar os dispositivos com um dispositivo iOS pode emparelhar (apenas supervisionado)**: **Não configurado** permite o emparelhamento de anfitriões para permitir que o controle de administrador que dispositivos um dispositivo iOS pode emparelhar. **Bloco** impede que o emparelhamento de anfitriões.
+- **Exigir palavra-passe de emparelhamento para pedidos de saída do AirPlay**: **Exigir** uma palavra-passe emparelhada quando o utilizador utiliza AirPlay transmitir conteúdos para outros dispositivos da Apple. **Não configurado** permite que o usuário transmitir conteúdo com o AirPlay sem introduzir uma palavra-passe.
+- **AirPrint de bloco (apenas supervisionado)**: Escolher **bloco** para impedir a utilizar a funcionalidade de AirPrint no dispositivo. **Não configurado** permite que o utilizador utilize o AirPrint.
+  - **Bloquear o armazenamento de credenciais do AirPrint na Keychain (apenas supervisionado)**: **Bloco** impede a utilizar o armazenamento de Keychain para o nome de utilizador e palavra-passe no dispositivo. **Não configurado** permite armazenar o nome de utilizador do AirPrint e a palavra-passe na aplicação Keychain.
+  - **Exigir um certificado fidedigno do TLS para AirPrint (apenas supervisionado)**: **Exigir** força o dispositivo para utilizar certificados fidedignos para comunicação de impressão de TLS.
+  - **Deteção de iBeacon do bloco de impressoras com o AirPrint (apenas supervisionado)**: **Bloco** impede maliciosos AirPrint Bluetooth beacons de phishing para tráfego de rede. **Não configurado** permite que o anúncio de impressoras com o AirPrint no dispositivo.
 
 ## <a name="keyboard-and-dictionary"></a>Teclado e Dicionário
 
-- **Pesquisa de definição de palavras (apenas supervisionada)**: **bloco** impede o utilizador de realçar uma palavra e, em seguida, procurar a respetiva definição no dispositivo. **Não configurado** permite o acesso para o recurso de pesquisa de definição.
-- **Teclados preditivos (apenas supervisionados)**: **não configurado** permite a utilização de teclados preditivos para sugerem palavras que o utilizador pode desejar. **Bloco** impede que esta funcionalidade.
-- **Correção automática (apenas supervisionada)**: **não configurado** permite que o dispositivo corrija automaticamente palavras com erros ortográficos. **Bloco** impede autocorrection a utilizar.
-- **(Apenas supervisionada) de verificação ortográfica do teclado**: **não configurado** permite o uso de verificador ortográfico do dispositivo. **Bloco** permite que o verificador ortográfico.
-- **(Apenas supervisionados) de atalhos de teclado**: **não configurado** permite o uso de atalhos de teclado no dispositivo. **Bloco** impede o utilizador utilizar atalhos de teclado.
-- **Ditado (apenas supervisionado)**: **bloco** impede o utilizador através de entradas de voz para introduzir texto. **Não configurado** permite que o utilizador utilize a entrada de ditado.
+- **Pesquisa de definição de palavras (apenas supervisionada)**: **Bloco** impede o utilizador de realçar uma palavra e, em seguida, procurar a respetiva definição no dispositivo. **Não configurado** permite o acesso para o recurso de pesquisa de definição.
+- **Teclados preditivos (apenas supervisionados)**: **Não configurado** permite a utilização de teclados preditivos para sugerem palavras que o utilizador pode desejar. **Bloco** impede que esta funcionalidade.
+- **Correção automática (apenas supervisionada)**: **Não configurado** permite que o dispositivo corrija automaticamente palavras com erros ortográficos. **Bloco** impede autocorrection a utilizar.
+- **(Apenas supervisionada) de verificação ortográfica do teclado**: **Não configurado** permite o uso de verificador ortográfico do dispositivo. **Bloco** permite que o verificador ortográfico.
+- **(Apenas supervisionados) de atalhos de teclado**: **Não configurado** permite o uso de atalhos de teclado no dispositivo. **Bloco** impede o utilizador utilizar atalhos de teclado.
+- **Ditado (apenas supervisionado)**: **Bloco** impede o utilizador através de entradas de voz para introduzir texto. **Não configurado** permite que o utilizador utilize a entrada de ditado.
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
-- **Cópia de segurança para iCloud**: **não configurado** permite ao utilizador efetuar cópias de segurança do dispositivo para iCloud. **Bloco** impede o utilizador de cópias de segurança de dispositivo para iCloud.
-- **Sincronização de documentos com a iCloud (apenas supervisionado)**: **não configurado** permite a sincronização de documentos e chave-valor para o seu espaço de armazenamento do iCloud. **Bloco** impede a sincronização de documentos e dados de iCloud.
-- **Fotografia stream sincronizados com o iCloud**: **não configurado** permite aos utilizadores ativar **minha fotografia Stream** no respetivo dispositivo sincronizadas com o iCloud e ter fotos disponíveis nos dispositivos do utilizador. **Bloco** impede a fotografia stream sincronizados com o iCloud.
-- **Cópia de segurança encriptada**: **requerem** para cópias de segurança do dispositivo tem de estar encriptadas.
-- **Fototeca em iCloud**: definido como **bloco** para desativar a utilizar a biblioteca de fotografias do iCloud para armazenar fotografias e vídeos na cloud. Qualquer fotos não sido completamente transferidas da Fototeca em iCloud para o dispositivo são removidas do dispositivo. **Não configurado** permite o uso da biblioteca de fotografias do iCloud.
-- **Sincronização das aplicações na cloud geridas**: **não configurado** permite que as suas aplicações gere o Intune sincronizem dados para a conta de utilizador iCloud. **Bloco** impede que a sincronização de dados para o iCloud.
-- **Transmissão partilhada de fotografias**: escolha **bloco** para desativar **partilha de fotografias do iCloud** no dispositivo. **Não configurado** permite a transmissão em fluxo de fotografias partilhadas.
-- **Continuação da atividade**: **não configurado** permite aos utilizadores continuar o trabalho que iniciou num dispositivo iOS noutro dispositivo de iOS ou macOS (Handoff). **Bloco** impede este handoff.
-- **Bloquear a sincronização de Keychain do iCloud**: escolha **bloco** para desativar a sincronização credenciais armazenadas na Keychain com o iCloud. **Não configurado** permite que os usuários sincronizar estas credenciais.
-- **Cópia de segurança do bloco Enterprise livro**: escolha **bloco** impedir os utilizadores de backup de livros de enterprise. **Não configurado** permite aos utilizadores criar cópias de segurança estes manuais.
-- **Bloquear a sincronização de metadados de livro enterprise (notas e destaques)**: **bloco** impede que sincronize notas e destaques em livros do enterprise. **Não configurado** permite que a sincronização.
+- **Cópia de segurança para iCloud**: **Não configurado** permite ao utilizador efetuar cópias de segurança do dispositivo para iCloud. **Bloco** impede o utilizador de cópias de segurança de dispositivo para iCloud.
+- **Sincronização de documentos com a iCloud (apenas supervisionado)**: **Não configurado** permite a sincronização de documentos e chave-valor para o seu espaço de armazenamento do iCloud. **Bloco** impede a sincronização de documentos e dados de iCloud.
+- **Fotografia stream sincronizados com o iCloud**: **Não configurado** permite aos utilizadores ativar **minha fotografia Stream** no respetivo dispositivo sincronizadas com o iCloud e ter fotos disponíveis nos dispositivos do utilizador. **Bloco** impede a fotografia stream sincronizados com o iCloud.
+- **Cópia de segurança encriptada**: **Exigir** para cópias de segurança do dispositivo tem de estar encriptadas.
+- **Fototeca em iCloud**: Defina como **bloco** para desativar a utilizar a biblioteca de fotografias do iCloud para armazenar fotografias e vídeos na cloud. Qualquer fotos não sido completamente transferidas da Fototeca em iCloud para o dispositivo são removidas do dispositivo. **Não configurado** permite o uso da biblioteca de fotografias do iCloud.
+- **Sincronização das aplicações na cloud geridas**: **Não configurado** permite que as suas aplicações gere o Intune sincronizem dados para a conta de utilizador iCloud. **Bloco** impede que a sincronização de dados para o iCloud.
+- **Transmissão partilhada de fotografias**: Escolher **bloco** para desativar **partilha de fotografias do iCloud** no dispositivo. **Não configurado** permite a transmissão em fluxo de fotografias partilhadas.
+- **Continuação da atividade**: **Não configurado** permite aos utilizadores continuar o trabalho que iniciou num dispositivo iOS noutro dispositivo de iOS ou macOS (Handoff). **Bloco** impede este handoff.
+- **Bloquear a sincronização de Keychain do iCloud**: Escolher **bloco** para desativar a sincronização credenciais armazenadas na Keychain com o iCloud. **Não configurado** permite que os usuários sincronizar estas credenciais.
+- **Bloquear a cópia de segurança de livro de Enterprise**: Escolher **bloco** impedir os utilizadores de backup de livros de enterprise. **Não configurado** permite aos utilizadores criar cópias de segurança estes manuais.
+- **Bloquear a sincronização de metadados de livro enterprise (notas e destaques)**: **Bloco** impede que sincronize notas e destaques em livros do enterprise. **Não configurado** permite que a sincronização.
 
 ## <a name="autonomous-single-app-mode-supervised-only"></a>Modo de aplicação única autónomo (apenas supervisionado)
 
@@ -270,26 +283,26 @@ Adicionar aplicações, pode:
 ## <a name="kiosk-supervised-only"></a>Quiosque (apenas supervisionado)
 
 - **Aplicação seja executada no modo de quiosque**: Escolha o tipo de aplicações que pretende executar no modo de local público. As opções são: 
-  - **Aplicação de Store**: introduza o URL para uma aplicação na App store do iTunes
-  - **Aplicação gerida**: escolher uma aplicação que adicionar ao Intune
-  - **Aplicação incorporada**: introduza o [ID de pacote](#bundle-id-reference-for-built-in-ios-apps) da aplicação incorporada
+  - **Aplicação de Store**: Introduza o URL para uma aplicação na App store do iTunes
+  - **Aplicação gerida**: Selecione uma aplicação que adicionar ao Intune
+  - **Aplicação incorporada**: Introduza o [ID de pacote](#bundle-id-reference-for-built-in-ios-apps) da aplicação incorporada
 
-- **Toque de apoio**: **requerem** a definição de acessibilidade Assistivetouch estar no dispositivo. Esta funcionalidade ajuda os utilizadores na tela gestos, que podem ser difícil para eles. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
-- **Inverter cores**: **requerem** a definição de acessibilidade de inverter cores para os utilizadores com deficiências visuais possam alterar a tela de apresentação. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
-- **Áudio mono**: **requerem** a definição de acessibilidade áudio Mono estar no dispositivo. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
-- **VoiceOver**: **requerem** a definição de acessibilidade de VoiceOver ser no dispositivo para a leitura em voz alta o texto na tela. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
-- **Zoom**: **requerem** a definição de Zoom de ser no dispositivo para permitir que os utilizadores a utilizar o toque para aumentar o zoom no ecrã. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
-- **Bloqueio automático**: **permitir** bloqueio automático do dispositivo. **Não configurado** desativa esta funcionalidade.
-- **Comutador do toque**: **permitir** mudar da alteração do toque (desativar som) no dispositivo. **Não configurado** desativa esta funcionalidade.
-- **Rotação do ecrã**: **permitir** mudança da orientação do ecrã quando o utilizador roda o dispositivo. **Não configurado** desativa esta funcionalidade.
-- **Botão de suspensão do ecrã**: escolha **permitir** para desativar o botão de reativação de suspensão do ecrã no dispositivo. **Não configurado** habilita esse recurso.
-- **Touch**: **bloco** desativa o ecrã tátil do dispositivo. **Não configurado** permite que o utilizador utilize o ecrã tátil.
-- **Botões de volume**: **permitir** utilizando os botões de volume no dispositivo. **Não configurado** desativa os botões de volume.
-- **Controlo tátil de apoio**: **permitir** permitem que os utilizadores utilizem a função assistivetouch. **Não configurado** desativa esta funcionalidade.
-- **Controlo de cores de inversão**: **permitir** inverter ajustes para permitir aos utilizadores ajustar a função Inverter cores de cores. **Não configurado** desativa esta funcionalidade.
-- **Falar em texto selecionado**: **permitir** as definições de acessibilidade enunciar seleção estar no dispositivo. Esta funcionalidade lê o texto que o utilizador seleciona em voz alta. **Não configurado** desativa esta funcionalidade.
-- **Controlo de voiceOver**: **permitir** alterações voiceover para permitir aos utilizadores atualizar a função VoiceOver, por exemplo, a rapidez na tela de leitura do texto em voz alta. **Não configurado** impede alterações voiceover.
-- **Controlo de zoom**: **permitir** zoom alterações pelo utilizador. **Não configurado** impede alterações de zoom.
+- **Toque de apoio**: **Exigir** a definição de acessibilidade Assistivetouch estar no dispositivo. Esta funcionalidade ajuda os utilizadores na tela gestos, que podem ser difícil para eles. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
+- **Inverter cores**: **Exigir** a definição de acessibilidade de inverter cores para os utilizadores com deficiências visuais possam alterar a tela de apresentação. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
+- **Áudio mono**: **Exigir** a definição de acessibilidade áudio Mono estar no dispositivo. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
+- **VoiceOver**: **Exigir** a definição de acessibilidade de VoiceOver ser no dispositivo para a leitura em voz alta o texto na tela. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
+- **Zoom**: **Exigir** a definição de Zoom de ser no dispositivo para permitir que os utilizadores a utilizar o toque para aumentar o zoom no ecrã. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
+- **Bloqueio automático**: **Permitir** bloqueio automático do dispositivo. **Não configurado** desativa esta funcionalidade.
+- **Comutador do toque**: **Permitir** mudar da alteração do toque (desativar som) no dispositivo. **Não configurado** desativa esta funcionalidade.
+- **Rotação do ecrã**: **Permitir** mudança da orientação do ecrã quando o utilizador roda o dispositivo. **Não configurado** desativa esta funcionalidade.
+- **Botão de suspensão do ecrã**: Escolher **permitir** para desativar o botão de reativação de suspensão do ecrã no dispositivo. **Não configurado** habilita esse recurso.
+- **Touch**: **Bloco** desativa o ecrã tátil do dispositivo. **Não configurado** permite que o utilizador utilize o ecrã tátil.
+- **Botões de volume**: **Permitir** utilizando os botões de volume no dispositivo. **Não configurado** desativa os botões de volume.
+- **Controlo tátil de apoio**: **Permitir** permitem que os utilizadores utilizem a função assistivetouch. **Não configurado** desativa esta funcionalidade.
+- **Controlo de cores de inversão de**: **Permitir** inverter as alterações de cor para permitir aos utilizadores ajustar a função Inverter cores. **Não configurado** desativa esta funcionalidade.
+- **Falar em texto selecionado**: **Permitir** as definições de acessibilidade enunciar seleção estar no dispositivo. Esta funcionalidade lê o texto que o utilizador seleciona em voz alta. **Não configurado** desativa esta funcionalidade.
+- **Controlo de voiceOver**: **Permitir** alterações voiceover para permitir aos utilizadores atualizar a função VoiceOver, por exemplo, a rapidez na tela de leitura do texto em voz alta. **Não configurado** impede alterações voiceover.
+- **Controlo de zoom**: **Permitir** zoom alterações pelo utilizador. **Não configurado** impede alterações de zoom.
 
 > [!NOTE]
 > Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Consulte o guia da Apple sobre como utilizar a ferramenta Apple Configurator.
@@ -299,7 +312,7 @@ Adicionar aplicações, pode:
 
 Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software.
 
-| ID do Pacote                   | Nome da Aplicação     | Publisher |
+| ID do Pacote                   | Nome da Aplicação     | Fabricante |
 |-----------------------------|--------------|-----------|
 | com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
@@ -319,7 +332,7 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
-| com.apple.Maps              | Mapas         | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Notícias         | Apple     |
@@ -342,16 +355,16 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 
 ## <a name="safari"></a>Safari
 
-- **Safari (apenas supervisionado)**: **bloco** utilização do browser Safari no dispositivo. **Não configurado** permite que os utilizadores a utilizar o browser Safari.
-- **Preenchimento automático**: **bloco** desativa a funcionalidade de preenchimento automático no Safari no dispositivo. **Não configurado** permite que os utilizadores alterem as definições do browser.
+- **Safari (apenas supervisionado)**: **Bloco** utilização do browser Safari no dispositivo. **Não configurado** permite que os utilizadores a utilizar o browser Safari.
+- **Preenchimento automático**: **Bloco** desativa a funcionalidade de preenchimento automático no Safari no dispositivo. **Não configurado** permite que os utilizadores alterem as definições do browser.
 - **Cookies**: Escolha a forma como os cookies são processados no dispositivo. As opções são:
   - Permitir
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
-- **JavaScript**: **bloco** impede que os scripts em Java no browser em execução no dispositivo. **Não configurado** permite que os scripts de Java.
-- **Avisos de fraude**: **requerem** avisos de fraude para ser mostrada no navegador da web no dispositivo. **Não configurado** desativa esta funcionalidade.
-- **Pop-ups**: **bloco** para desativar o Bloqueador de pop-up no browser. **Não configurado** permite que o Bloqueador de pop-up.
+- **JavaScript**: **Bloco** impede que os scripts em Java no browser em execução no dispositivo. **Não configurado** permite que os scripts de Java.
+- **Avisos de fraude**: **Exigir** avisos de fraude para ser mostrada no navegador da web no dispositivo. **Não configurado** desativa esta funcionalidade.
+- **Pop-ups**: **Bloco** para desativar o Bloqueador de pop-up no browser. **Não configurado** permite que o Bloqueador de pop-up.
 
 ## <a name="domains"></a>Domínios
 
@@ -369,4 +382,6 @@ Na **URL de domínio**, adicione um ou mais URLs à lista. Os utilizadores só p
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Atribuir o perfil](device-profile-assign.md) e [monitorizar o estado](device-profile-monitor.md) seu status.
+O perfil está criado, mas ainda não está ativo. Em seguida, [atribuir o perfil](device-profile-assign.md) e [monitorizar o estado](device-profile-monitor.md).
+
+Também pode definir configurações e restrições de dispositivos na [macOS](device-restrictions-macos.md) dispositivos.

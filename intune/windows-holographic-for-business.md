@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032270"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203387"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerir e utilizar funcionalidades de gestão de dispositivos diferentes no Windows Holographic e dispositivos HoloLens com o Intune
 
@@ -32,11 +32,11 @@ Para utilizar dispositivos Windows Holographic com o Intune, crie um perfil de A
 
 O Azure Active Directory (AD) é um ótimo recurso para o ajudar a gerir e controlar os seus dispositivos com o Windows Holographic for Business. Com o Intune e o Azure AD, pode: 
 
-- **[Associar dispositivos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: no Azure Active Directory (AD), pode adicionar seus dispositivos, Windows 10 pertencentes no trabalho, incluindo dispositivos que executam o Windows Holographic for Business. Esta funcionalidade permite que o Azure AD controle o dispositivo. Ajuda a confirmar que os seus utilizadores estão a aceder aos recursos da empresa a partir de dispositivos que cumprem as normas de segurança e conformidade que estabeleceu.
+- **[Associar dispositivos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: No Azure Active Directory (AD), pode adicionar os seus dispositivos, Windows 10 pertencentes no trabalho, incluindo dispositivos que executam o Windows Holographic for Business. Esta funcionalidade permite que o Azure AD controle o dispositivo. Ajuda a confirmar que os seus utilizadores estão a aceder aos recursos da empresa a partir de dispositivos que cumprem as normas de segurança e conformidade que estabeleceu.
 
   [Gestão de dispositivos no Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) fornece mais detalhes.
 
-- **[Inscrever dispositivos Windows em massa](windows-bulk-enroll.md)**: pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Esta funcionalidade chama-se inscrição em massa e utiliza pacotes de aprovisionamento. Estes pacotes associam os dispositivos com o Windows Holographic for Business ao seu inquilino do Azure AD e inscrevem-nos no Intune.
+- **[Inscrição em massa para dispositivos Windows](windows-bulk-enroll.md)**: Pode aderir a grande número de novos dispositivos Windows para o Azure Active Directory (AD) e o Intune. Esta funcionalidade chama-se inscrição em massa e utiliza pacotes de aprovisionamento. Estes pacotes associam os dispositivos com o Windows Holographic for Business ao seu inquilino do Azure AD e inscrevem-nos no Intune.
 
 ## <a name="company-portal"></a>Portal da Empresa
 **[Configurar a aplicação Portal da Empresa](company-portal-app.md)**
@@ -84,11 +84,11 @@ O Intune tem algumas ações incorporadas que permitem que os administradores de
 
 Ao utilizar dispositivos com o Windows Holographic for Business, pode realizar as seguintes ações: 
 
-- **[Limpar](devices-wipe.md#wipe)**: a ação **Limpar** remove o dispositivo do Intune e restaura as predefinições de fábrica do dispositivo. Utilize esta ação antes de dar o dispositivo a um novo utilizador ou se o dispositivo for perdido ou roubado.
+- **[Apagar](devices-wipe.md#wipe)**: O **apagar** ação remove o dispositivo do Intune e restaura as predefinições de fábrica do dispositivo. Utilize esta ação antes de dar o dispositivo a um novo utilizador ou se o dispositivo for perdido ou roubado.
 
-- **[Extinguir](devices-wipe.md#retire)**: a ação **Extinguir** remove o dispositivo do Intune. Também remove os dados da aplicação gerida, as definições e os perfis de e-mail atribuídos pelo Intune. Os dados pessoais do utilizador permanecem no dispositivo.
+- **[Extinguir](devices-wipe.md#retire)**: O **extinguir** ação remove o dispositivo do Intune. Também remove os dados da aplicação gerida, as definições e os perfis de e-mail atribuídos pelo Intune. Os dados pessoais do utilizador permanecem no dispositivo.
 
-- **[Sincronizar dispositivos para obter as políticas e ações mais recentes](device-sync.md)**: a ação **Sincronizar** força o dispositivo a comunicar imediatamente com o Intune. Quando um dispositivo comunica com o Intune, recebe imediatamente todas as ações ou políticas pendentes que tenham sido atribuídas ao mesmo. Esta funcionalidade ajuda a validar e resolver problemas de políticas que atribuiu, sem esperar pela próxima comunicação agendada.
+- **[Sincronizar dispositivos para obter as políticas e ações mais recentes](device-sync.md)**: O **sincronização** ação força o dispositivo para dar entrada imediatamente no Intune. Quando um dispositivo comunica com o Intune, recebe imediatamente todas as ações ou políticas pendentes que tenham sido atribuídas ao mesmo. Esta funcionalidade ajuda a validar e resolver problemas de políticas que atribuiu, sem esperar pela próxima comunicação agendada.
 
 O tópico **[O que é a gestão de dispositivos do Microsoft Intune?](device-management.md)** é um bom recurso para saber mais sobre como gerir dispositivos com o portal do Azure. 
 
@@ -123,6 +123,11 @@ As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores ace
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Configurar Wi-Fi](wi-fi-settings-configure.md)
 
 Também pode criar um perfil de Wi-Fi no Intune para atribuir definições de rede sem fios aos seus dispositivos com o Windows Holographic for Business. Quando atribui um perfil de Wi-Fi, os seus utilizadores finais obtêm acesso de rede empresarial, sem qualquer configuração de rede. Por exemplo, pode criar uma rede Wi-Fi dedicada apenas para os seus dispositivos com o Windows Holographic for Business.
+
+## <a name="shared-multi-user-devices"></a>Vários utilizadores dispositivos partilhados
+[Dispositivos partilhados](shared-user-device-settings-windows-holographic.md)
+
+Dispositivos que executam o Windows Holographic for Business, como o Microsoft HoloLens, podem ter vários utilizadores. O Intune inclui definições para controlar diferentes funcionalidades nestes dispositivos partilhados, como gerenciamento de energia, a utilizar o armazenamento local e a gestão de contas. Os perfis de configuração também podem ser aplicados a dispositivos com sistemas operativos diferentes. Por exemplo, o grupo de dispositivos pode ter dispositivos que executam o RS2 e RS3 no mesmo grupo.
 
 ## <a name="software-updates"></a>Atualizações de software
 **[Gerir atualizações de software](windows-update-for-business-configure.md)**

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642596"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210742"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune
 
@@ -47,7 +47,7 @@ Para gerir dispositivos e instalar aplicações, os seus utilizadores podem inst
 5. Em **Plataforma**, selecione **Todos os dispositivos Windows 10**, e, em seguida, selecione a **Versão mínima** adequada, a **Arquitetura** e os valores de **metadados da aplicação Transferir**. 
 6. Selecione **Transferir** para guardar o ficheiro no seu computador local.
 
-    ![A opção "Todos os dispositivos Windows 10" e os detalhes do pacote de Arquitetura X86 selecionados para transferência](./media/Win10CP-all-devices.png)
+    ![Dispositivos Windows 10, em que arquitetura é igual a X86, está selecionada](./media/Win10CP-all-devices.png)
 
 7. Transfira todos os pacotes em "Arquiteturas necessárias" ao selecionar **Transferir**.  
     Esta ação deve ser concluída para as arquiteturas x86, x64 e ARM, e perfazer um total de 12 pacotes.

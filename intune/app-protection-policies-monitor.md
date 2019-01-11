@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 5dfce7475e0ee7e39ea6d99c6d12f4ef513c2713
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816845"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203251"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Existem três locais diferentes para monitorizar o estado de conformidade:
 1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. Na carga de trabalho **Aplicações do cliente**, selecione **Monitorização** > **Estado de proteção de aplicação** para ver a vista de resumo:
+4. Na **aplicações de cliente** carga de trabalho, escolha **estado de proteção de aplicações** do **Monitor** secção, para ver a vista de resumo:
 
 ![Mosaico de resumo no painel de gestão de aplicações móveis do Intune](./media/app-protection-user-status-summary.png)
 
--   **Os utilizadores**: O número total de utilizadores na sua empresa que está a utilizar uma aplicação que está associada a uma política num contexto de trabalho.
+-   **Utilizadores atribuídos**: O número total de utilizadores atribuídos na sua empresa que estão a utilizar uma aplicação que está associado uma política num contexto de trabalho e é protegida e licenciada, bem como os utilizadores atribuídos não protegido e não licenciados.
+-   **Utilizadores sinalizados**: O número de utilizadores que estão com problemas. Os dispositivos com Jailbreak são reportados **utilizadores sinalizados**.
+-   **Estado do utilizador para iOS** e **estado do utilizador para Android**: O número de utilizadores que utilizaram uma aplicação que têm uma política atribuída no contexto de trabalho para a plataforma relacionado. Estas informações mostram o número de utilizadores geridos pela política, bem como o número de utilizadores que estão a utilizar uma aplicação que não é abrangida por nenhuma política num contexto de trabalho. Poderá considerar adicionar estes utilizadores à sua política.
 
--   **GERIDO POR POLÍTICA**: O número de utilizadores que utilizaram uma aplicação que têm uma política atribuída no contexto de trabalho.
-
--   **NENHUMA POLÍTICA**: O número de utilizadores que estão a utilizar uma aplicação que não é abrangida por nenhuma política num contexto de trabalho. Poderá considerar adicionar estes utilizadores à sua política.
     > [!NOTE]
     > Se tiver múltiplas políticas por plataforma, um utilizador só será considerado gerido por políticas quando lhe tiver sido atribuída pelo menos uma política.
-
-- **Utilizadores sinalizados**: O número de utilizadores que estão com problemas. Atualmente, apenas os utilizadores com dispositivos com jailbreak são reportados como **Utilizadores sinalizados**.
-
 
 ## <a name="detailed-view"></a>Vista detalhada
 Pode aceder à vista detalhada do resumo ao selecionar os mosaicos **Estado do utilizador** (com base na plataforma de SO do dispositivo) e **Utilizadores sinalizados**.
@@ -79,7 +75,7 @@ Pode procurar um único utilizador e ver o estado de conformidade do mesmo. O pa
 
 Para ver o relatório para um utilizador, siga estes passos:
 
-1.  Para selecionar um utilizador, aceda ao mosaico **Resumo**.
+1.  Para selecionar um utilizador, escolha o **estado do utilizador** mosaico de resumo.
 
     ![Captura de ecrã do mosaico de resumo de gestão de aplicações móveis do Intune](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ A vista detalhada mostra a mensagem de erro, a aplicação que foi acedida quand
 
 ## <a name="reporting-view"></a>Vista de relatórios
 
-Pode encontrar os mesmos relatórios da vista Detalhada, bem como relatórios adicionais que o ajudam com o estado de conformidade da política de MAM:
+Pode encontrar os mesmos relatórios dos **estado de proteção de aplicações** painel.
 
-![Captura de ecrã a realçar dois relatórios disponíveis no painel Definições](./media/MAM-reporting-7.png)
+> [!NOTE]
+> O Intune fornece relatórios campos, incluindo o Id de registo de aplicação, fabricante do Android, modelo e versão de patch de segurança, bem como o modelo de iOS adicionais do dispositivo. No Intune, estes campos estão disponíveis, selecionando **aplicações de cliente** > **estado de proteção de aplicações** e escolha **relatório de proteção de aplicações: iOS, Android**. Além disso, esses parâmetros irão ajudá-lo a configurar o **permitir** lista para o fabricante do dispositivo (Android), o **permitir** lista para o modelo do dispositivo (Android e iOS) e o patch de segurança mínima para Android definição de versão. 
 
--   **Relatório de utilizador de proteção de aplicações:** Descreve as mesmas informações que pode ser encontrada no **estado do utilizador** relatório na secção vista detalhada acima.
+Relatórios adicionais estão disponíveis para ajudá-lo com o estado de conformidade de política MAM. Para ver estes relatórios, selecione **aplicações de cliente** > **estado de proteção de aplicações** > **relatórios**. 
 
--   **Relatório de aplicação de proteção de aplicações:** Ele fornece dois Estados de proteção de aplicações diferentes que os administradores podem selecionar antes de gerar o relatório. Os estados podem ser protegidos ou desprotegidos.
+O **relatórios** painel fornece vários relatórios com base no utilizador e da aplicação, incluindo o seguinte:
+
+
+-   **Relatório de utilizador**: Este relatório descreve as mesmas informações que pode ser encontrada no **estado do utilizador** relatório na secção vista detalhada acima.
+
+-   **Relatório de aplicação**: Este relatório fornece dois Estados de proteção de aplicações diferentes que os administradores podem selecionar antes de gerar o relatório. Os estados podem ser protegidos ou desprotegidos.
 
     -   Estado do utilizador para atividade MAM gerida (protegido): Este relatório descreve a atividade de cada aplicação MAM gerida, numa base por utilizador.
 
         -   Mostra todas as aplicações visadas pelas políticas de MAM para cada utilizador e uma discriminação do estado de cada aplicação como registada com políticas de MAM ou como visada por uma política de MAM, mas nunca registada.
-<br></br>
+<br><br>
     -   Estado do utilizador para atividade MAM não gerida (não protegido): Este relatório descreve a atividade das aplicações ativadas para MAM que não são atualmente geridos, numa base por utilizador. Isto pode acontecer pelos seguintes motivos:
 
         -   Estas aplicações estão a ser utilizadas por um utilizador ou por uma aplicação que não seja atualmente visada por uma política de MAM.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817301"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203353"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -28,23 +28,93 @@ ms.locfileid: "53817301"
 
 A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e suporte de faturação online estão disponíveis em idiomas adicionais.
 
->[!IMPORTANT]
+>[!IMPORTANT]  
 > Para obter suporte técnico para produtos de terceiros que funcionam com o Intune (como a Saaswedo, a Cisco ou a Lookout), contacte primeiro o fornecedor desse produto. Antes de abrir um pedido com o suporte do Intune, certifique-se de que configurou o outro produto corretamente.
 >
 > Para obter informações sobre a resolução de problemas relacionados com o Microsoft Intune, veja a [secção Resolução de problemas](help-desk-operators.md) da documentação do Intune.
 
-Enquanto administrador de TI, pode utilizar a opção **Ajuda + Suporte** para enviar um pedido de suporte online do Intune a partir do portal do Azure. Para criar um pedido de suporte, é necessário que seja atribuída à sua conta uma das seguintes [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+Administrador de TI, pode utilizar o **ajuda e suporte** opção para enviar um pedido de suporte online para o Intune no portal do Azure. Para criar um pedido de suporte, é necessário que seja atribuída à sua conta uma das seguintes [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 - Administrador do Intune
 - Administrador global
 - Administrador de serviços  
 
-## <a name="get-context-sensitive-help"></a>Obter ajuda sensível ao contexto
-Depois de iniciar sessão no portal do Azure e abrir o Intune, pode selecionar **ajuda e suporte** de qualquer painel do Intune no portal do Azure para ver soluções para problemas comuns para essa área do Intune.
 
-Se as soluções comuns não ajudam, pode selecionar **pedido de suporte** para criar um novo pedido de suporte que se abre para o **Noções básicas** separador do Azure *ajuda + suporte* página. Para continuar e criar um pedido de suporte, avance para o *passo 3* denominado [Criar um pedido de suporte online](#create-an-online-support-ticket) no procedimento seguinte.
+## <a name="help-and-support-experience"></a>Ajuda e suporte a experiência
+> [!TIP]   
+> Em Janeiro de 2019, uma nova ajuda e suporte a experiência é implementar para todos os inquilinos. Se o seu inquilino ainda não tiver esta nova experiência, pode encontrar informações sobre a experiência anterior na [do Azure ajuda + suporte experiência](#azure-help-+-support-experience), neste artigo.  
 
-## <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online
+A ajuda e suporte de experiência para o Intune está disponível a partir da [portal de gestão de dispositivos do Microsoft 365](http://devicemanagement.microsoft.com) e de todos os painéis (ou páginas) no Intune no portal do Azure. 
+
+![Painéis do Intune](./media/get-support/intune-blades.png)
+
+
+Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home)e substitui o [anterior ajuda e suporte experiência](#azure-help-+-and-support-experience). 
+
+Para acessar a ajuda e suporte, utilize o seguinte:  
+- **Dashboard de gestão de dispositivos:**
+   - Selecione qualquer opção disponível para **ajuda e suporte**
+   - Selecione o **?** ícone no canto superior direito do portal
+
+- **No Portal do Azure:**
+   - Selecione **ajuda e suporte** de qualquer painel do Intune ou a página
+
+   Selecionar o **?** ícone no canto superior direito, ou **ajuda + suporte** do painel de navegação da esquerda de qualquer localização no abre portal do Azure *ajuda + suporte* para o Azure. Para obter a melhor experiência possível, utilize *ajuda e suporte* do painel do Intune.  
+
+Com a nova experiência, obtém acesso para o **precisa de ajuda?** ver, conforme mostrado na imagem seguinte a partir do dashboard gestão de dispositivos:  
+![Dashboard da Gestão de Dispositivos e página Precisa de Ajuda?](./media/get-support/help-support-dashboard.png)
+
+Nesta vista, pode realizar uma das seguintes ações:
+
+1. [Especificar detalhes](#specify-details-about-an-issue) sobre o problema específico para o qual precisa de ajuda  
+2. [Ver a ajuda sensível ao contexto](#view-context-sensitive-help) e soluções relacionadas que são baseadas em detalhes que especificou  
+3. [Obter suporte](#get-support) por e-mail ou telefone  
+4. [Ver processos de suporte](#view-support-cases) que tenha aberto anteriormente através deste novo fluxo de trabalho  
+
+### <a name="specify-details-about-an-issue"></a>Especificar detalhes sobre um problema
+Quando abrir a ajuda e suporte a partir de uma localização que seja suportada pela nova experiência, o **precisa de ajuda?**  é aberta. Nesta página, pode especificar os detalhes sobre um problema. À medida que introduz detalhes, a consola fornece consultas comuns baseadas nas palavras-chave que utilizar. Pode selecionar uma opção fornecida ou preencher a sua própria descrição do problema. Se introduzir a sua própria descrição, selecione **Obter ajuda** para a submeter. Depois de submeter uma consulta, a consola devolve informações sensíveis ao contexto, que podem ajudar a resolver o problema.
+
+Seguem-se exemplos de consultas que poderá submeter:
+  
+- *Não é possível restaurar o dispositivo iOS*  
+- *Não é possível criar uma política de acesso condicional*  
+
+![Especificar o problema na página Precisa de Ajuda?](./media/get-support/describe-the-issue.png)
+
+### <a name="view-context-sensitive-help"></a>Ver a ajuda sensível ao contexto
+Após selecionar uma opção fornecida ou submeter a sua própria consulta, os resultados sensíveis ao contexto são apresentados por baixo de **Ver soluções**. Estes resultados incluem orientação de ajuda autónoma do Intune e resultados adicionais devolvidos a partir de uma pesquisa na Web baseada nos critérios da consulta.  
+![Ver resultados](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>Obter suporte
+Se a orientação de ajuda autónoma ou baseada na Web não ajudar a resolver o problema, pode utilizar a consola para abrir um problema de suporte de e-mail ou telefone.  
+Na página **Precisa de ajuda?**, selecione a opção que pretende utilizar.  
+
+- Para um pedido de e-mail, forneça o seu endereço de e-mail e, opcionalmente, pode adicionar anexos à sua submissão. Selecione **Enviar** para abrir o pedido.  
+
+  ![Pedido de e-mail](./media/get-support/email-support.png)
+  
+- Para um pedido de telefone, forneça o seu número de telefone. Opcionalmente, pode incluir o seu endereço de e-mail e adicionar anexos à sua submissão. Selecione Telefonar-me para submeter o pedido.  
+
+   ![Pedido de telefone](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>Ver processos de suporte
+Selecione o botão de histórico para ver os incidentes de suporte que criou.  
+
+![Ver processos de suporte](./media/get-support/view-support-tickets.png)
+
+- Apenas os processos de suporte que abrir com o novo fluxo de trabalho serão visíveis a partir deste fluxo de trabalho. Para vê-los, utilize uma ajuda e suporte vista a partir da consola de gestão de dispositivos ou a partir de um painel do Intune no portal do Azure. Estes processos têm números com oito dígitos. Também pode ver estes processos a partir do centro de administração do Microsoft 365.  
+
+- Casos que abriu quando não utilizar a experiência de suporte e ajuda do Intune permanecem inalterados. Para vê-los, tem de utilizar o de ajuda e suporte a vista que não faz parte da experiência do Intune ou o dashboard de gestão de dispositivos. Estes processos têm números que começam com **117** ou **118** e têm 15 dígitos. Para vê-los:
+
+    1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone *?* no canto superior direito do portal e, em seguida, selecione *Ajuda + suporte* para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+
+    2. Na página **Ajuda + suporte**, pode ver a lista de **Pedidos de suporte recentes** e selecionar os mesmos para ver detalhes adicionais.
+
+
+## <a name="azure-help--support-experience"></a>Experiência do Azure ajuda + suporte
+As informações seguintes descrevem o Azure ajuda + a experiência de suporte que permanece acessível a partir do portal do Azure quando utiliza o painel de navegação à esquerda **ajuda + suporte**, ou utilize o **?** opção no canto superior direito do portal do Azure. A partir de Janeiro de 2019, não é possível aceder do Azure *ajuda + suporte* experiência partir *ajuda e suporte* conforme apresentado nos painéis do Intune.  
+
+### <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online
 
 1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
@@ -106,68 +176,12 @@ Se as soluções comuns não ajudam, pode selecionar **pedido de suporte** para 
 >[!IMPORTANT]
 >Se tiver alguma pergunta relacionada com a faturação ou subscrição, pode criar um caso para obter suporte através do [Centro de Administração do Office](https://portal.office.com/Support/SupportEntry.aspx).
 
-## <a name="view-support-requests"></a>Ver pedidos de suporte
+### <a name="view-support-requests"></a>Ver pedidos de suporte
 Pode ver um pedido de suporte a partir do portal do Azure. Para tal:
 
 1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
 2. Na página **Ajuda + suporte**, pode ver a lista de **Pedidos de suporte recentes** e selecionar os mesmos para ver detalhes adicionais.
-
-## <a name="new-help-and-support-experience"></a>Nova experiência de Ajuda e Suporte
-*As seguintes informações aplicam-se apenas quando utiliza o portal de Gestão de Dispositivos e fazem parte da implementação da nova experiência de Ajuda e Suporte. Os participantes desta implementação são selecionados aleatoriamente a partir dos inquilinos do Intune disponíveis.*  
-
-A atualização da Ajuda e Suporte para o Intune é uma nova experiência que está disponível no [portal de Gestão de Dispositivos do Microsoft 365](https://devicemanagement.microsoft.com) para alguns dos inquilinos. Esta nova experiência é semelhante à que foi apresentada no [centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home) e substitui a experiência de Ajuda e Suporte anterior quando acedida a partir de algumas localizações da consola de Gestão de Dispositivos.  
-
-No portal de Gestão de Dispositivos, irá aceder à nova experiência quando selecionar **Ajuda e Suporte** a partir de qualquer painel em **Todos os serviços** > **Gestão de Dispositivos**, exceto o painel **Resolução de Problemas**. Quando aceder à Ajuda e Suporte a partir de outras localizações, como a **Resolução de Problemas**, ao utilizar a opção **?** no canto superior direito da faixa da consola ou quando selecionar **Ajuda e Suporte** a partir da lista de serviços do painel esquerdo, irá aceder à experiência original.  
-
-Na nova experiência, obtém acesso à vista **Precisa de ajuda?**, conforme apresentada na seguinte imagem:  
-![Dashboard da Gestão de Dispositivos e página Precisa de Ajuda?](./media/get-support/help-support-dashboard.png)
-
-Nesta vista, pode realizar uma das seguintes ações:
-
-1. [Especificar detalhes](#specify-details-about-an-issue) sobre o problema específico para o qual precisa de ajuda  
-2. [Ver a ajuda sensível ao contexto](#view-context-sensitive-help) e soluções relacionadas que são baseadas em detalhes que especificou  
-3. [Obter suporte](#get-support) por e-mail ou telefone  
-4. [Ver processos de suporte](#view-support-cases) que tenha aberto anteriormente através deste novo fluxo de trabalho  
-
-### <a name="specify-details-about-an-issue"></a>Especificar detalhes sobre um problema
-Quando abre a Ajuda e Suporte a partir de uma localização suportada pela nova experiência, a página **Precisa de ajuda?**  é aberta. Nesta página, pode especificar os detalhes sobre um problema. À medida que introduz detalhes, a consola fornece consultas comuns baseadas nas palavras-chave que utilizar. Pode selecionar uma opção fornecida ou preencher a sua própria descrição do problema. Se introduzir a sua própria descrição, selecione **Obter ajuda** para a submeter. Depois de submeter uma consulta, a consola devolve informações sensíveis ao contexto, que podem ajudar a resolver o problema.
-
-Seguem-se exemplos de consultas que poderá submeter:
-  
-- *Não é possível restaurar o dispositivo iOS*  
-- *Não é possível criar uma política de acesso condicional*  
-
-![Especificar o problema na página Precisa de Ajuda?](./media/get-support/describe-the-issue.png)
-
-### <a name="view-context-sensitive-help"></a>Ver a ajuda sensível ao contexto
-Após selecionar uma opção fornecida ou submeter a sua própria consulta, os resultados sensíveis ao contexto são apresentados por baixo de **Ver soluções**. Estes resultados incluem orientação de ajuda autónoma do Intune e resultados adicionais devolvidos a partir de uma pesquisa na Web baseada nos critérios da consulta.  
-![Imagem do painel de resultados de vista](./media/get-support/view-results.png)
-
-### <a name="get-support"></a>Obter suporte
-Se a orientação de ajuda autónoma ou baseada na Web não ajudar a resolver o problema, pode utilizar a consola para abrir um problema de suporte de e-mail ou telefone.  
-Na página **Precisa de ajuda?**, selecione a opção que pretende utilizar.  
-
-- Para um pedido de e-mail, forneça o seu endereço de e-mail e, opcionalmente, pode adicionar anexos à sua submissão. Selecione **Enviar** para abrir o pedido.  
-
-  ![Imagem do painel de pedido de E-Mail](./media/get-support/email-support.png)
-  
-- Para um pedido de telefone, forneça o seu número de telefone. Opcionalmente, pode incluir o seu endereço de e-mail e adicionar anexos à sua submissão. Selecione Telefonar-me para submeter o pedido.  
-
-   ![Imagem do painel de pedido de telefone](./media/get-support/phone-support.png)
-
-### <a name="view-support-cases"></a>Ver processos de suporte
-Selecione o botão de histórico para ver os incidentes de suporte que criou.  
-
-![Imagem do painel de casos de suporte de vista](./media/get-support/view-support-tickets.png)
-
-- Apenas os processos de suporte que abrir com o novo fluxo de trabalho serão visíveis a partir deste fluxo de trabalho. Para os ver, utilize a vista Ajuda e Suporte a partir da consola de Gestão de Dispositivos que faz parte da nova experiência. Estes processos têm números com oito dígitos. Também pode ver estes processos a partir do centro de administração do Microsoft 365.  
-
-- Os processos que abriu antes de a sua conta ser adicionada à nova experiência de ajuda e suporte permanecem inalterados. Para os ver, tem de utilizar uma vista de ajuda e suporte que não faça parte da implementação da nova experiência. Estes processos têm números que começam com **117** ou **118** e têm 15 dígitos.  Para ver um processo de suporte que foi aberto antes de o utilizador ser adicionado à nova experiência, utilize o portal do Azure. Para tal:
-
-    1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone *?* no canto superior direito do portal e, em seguida, selecione *Ajuda + suporte* para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
-
-    2. Na página **Ajuda + suporte**, pode ver a lista de **Pedidos de suporte recentes** e selecionar os mesmos para ver detalhes adicionais.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 - [Contactar o suporte assistido por telefone do Microsoft Intune](phone-support-contact.md)
