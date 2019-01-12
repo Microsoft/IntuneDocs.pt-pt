@@ -1,12 +1,12 @@
 ---
-title: Atribuir aplicações a dispositivos com perfil de trabalho do Android
+title: Atribuir aplicações Google Play gerido em dispositivos Android enterprise
 titlesuffix: Microsoft Intune
-description: Saiba como sincronizar e atribuir aplicações a dispositivos com perfil de trabalho do Android a partir da Google Play Store Gerida.
+description: Compreenda como sincronizar e atribuir aplicações a dispositivos empresariais Android a partir da loja Google Play gerido.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305935"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239579"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Atribuir aplicações a dispositivos com perfil de trabalho do Android com o Intune
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Atribuir aplicações do Google Play gerido em dispositivos Android enterprise com o Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Android Enterprise é um programa para dispositivos com perfil de trabalho do Android e dispositivos de quiosque. Para os dispositivos com perfil de trabalho do Android, o Android Enterprise é um conjunto de funcionalidades e serviços que separa as aplicações e dados pessoais de aplicações e dados de trabalho. O Android Enterprise fornece privacidade e opções de gestão adicionais quando as pessoas utilizam os respetivos dispositivos Android para o trabalho. O Intune ajuda-o a implementar aplicações e definições em dispositivos com perfil de trabalho do Android, de modo a garantir a separação de informações pessoais e profissionais. Todas as aplicações que instala em dispositivos com perfil de trabalho do Android são provenientes da Google Play Store Gerida. A forma como atribui aplicações em dispositivos com perfil de trabalho do Android é diferente em dispositivos Android padrão. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
+Android empresarial é um programa para dispositivos de perfil de trabalho Android, dispositivos dedicados/quiosque e dispositivos totalmente geridos. Para os dispositivos com perfil de trabalho do Android, o Android Enterprise é um conjunto de funcionalidades e serviços que separa as aplicações e dados pessoais de aplicações e dados de trabalho. O Android Enterprise fornece privacidade e opções de gestão adicionais quando as pessoas utilizam os respetivos dispositivos Android para o trabalho. O Intune ajuda-o a implementar aplicações e definições em dispositivos com perfil de trabalho do Android, de modo a garantir a separação de informações pessoais e profissionais. Todas as aplicações que instala em dispositivos com perfil de trabalho do Android são provenientes da Google Play Store Gerida. A forma como atribui aplicações em dispositivos com perfil de trabalho do Android é diferente em dispositivos Android padrão. Deve iniciar sessão na loja, procurar as aplicações desejadas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
 
 Além disso, se tiver criado as suas próprias aplicações de linha de negócio (LOB), pode atribuí-las do seguinte modo:
 - Inscreva-se numa conta Google Developer que lhe permita publicar aplicações numa área privada na Google Play Store.
