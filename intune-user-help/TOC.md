@@ -130,6 +130,7 @@
 ### [O que acontece durante a reposição do dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Desativar a recolha de dados da Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sincronizar o seu dispositivo manualmente](sync-your-device-manually-windows.md)
+### [Obter ajuda e suporte](help-support-windows-cpapp.md)
 
 ### [Resolver problemas comuns para Windows](troubleshoot-your-device-windows.md)
 #### [Resolver restrições de ponto de acesso](resolve-access-point-restrictions.md)
