@@ -1,6 +1,6 @@
 ---
 title: Definições de restrição de dispositivos para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Ver uma lista de todas as definições e suas descrições para a criação de restrições de dispositivos no Windows 10 e dispositivos posteriores. Utilize estas definições no perfil de configuração para controlar as capturas de ecrã, requisitos de palavra-passe, definições de local público, aplicações na loja, Edge browser, defender do Windows, acesso para a cloud, o menu Iniciar e mais no Microsoft Intune.
+description: Ver uma lista de todas as definições e suas descrições para a criação de restrições de dispositivos no Windows 10 e dispositivos posteriores. Utilize estas definições no perfil de configuração para controlar as capturas de ecrã, requisitos de palavra-passe, definições de local público, aplicações na loja, browser Microsoft Edge, defender do Windows, acesso para a cloud, o menu Iniciar e mais no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -503,8 +503,8 @@ Pode configurar as informações que podem aceder a todas as aplicações no dis
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Antivírus do Windows Defender
 
 - **Ficheiros e pastas a excluir de análises e da proteção em tempo real**: Adiciona um ou mais ficheiros e pastas, como **C:\Path** ou **%ProgramFiles%\Path\filename.exe**, à lista de exclusões. Estes ficheiros e pastas não são incluídos em análises em tempo real ou agendadas.
-- **Extensões de ficheiros a excluir de análises e proteção em tempo real**: Adicione uma ou mais extensões de ficheiro, como jpg ou **txt**, à lista de exclusões. Os ficheiros com estas extensões não são incluídos em análises em tempo real ou agendadas.
-- **Processos a excluir de análises e da proteção em tempo real**: Adicione um ou mais processos do tipo .exe, **.com** ou **.scr** à lista de exclusões. Estes processos não são incluídos em análises em tempo real ou agendadas.
+- **Extensões de ficheiros a excluir de análises e proteção em tempo real**: Adicione uma ou mais extensões de ficheiro, como **jpg** ou **txt**, à lista de exclusões. Os ficheiros com estas extensões não são incluídos em análises em tempo real ou agendadas.
+- **Processos a excluir de análises e da proteção em tempo real**: Adicione um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Estes processos não são incluídos em análises em tempo real ou agendadas.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
