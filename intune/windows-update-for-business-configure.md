@@ -2,10 +2,10 @@
 title: Configurar o Windows Update para Empresas no Microsoft Intune – Azure | Microsoft Docs
 description: Atualize as definições de Atualização de Software num perfil para criar uma cadência de atualização, analise a conformidade e coloque atualizações em pausa nas definições do Windows Update para Empresas através do Microsoft Intune em dispositivos com o Windows 10.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c0ab63ab8832db69ecf27361dc4fe4c9a1196db3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203489"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297388"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 
@@ -106,7 +106,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
    - **Impedir o utilizador da colocar em pausa atualizações de Windows**: Permitido por predefinição. Utilize esta definição para bloquear ou permitir que os utilizadores para a instalação da atualização de colocar em pausa a *definições* das suas máquinas. 
       
-   - **Modo de transferência de otimização de entrega**: Escolha o método para que os dispositivos transferir atualizações do Windows. Para obter mais detalhes, veja [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Modo de transferência de otimização de entrega**: Otimização da entrega já não está configurada como parte de uma cadência de atualização do Windows 10 em atualizações de Software. Otimização da entrega está agora definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis na consola. Pode remover estas configurações anteriores ao editar que sejam *não configurado*, mas caso contrário, não pode ser modificados. Para evitar conflitos entre políticas novas e antigas, consulte [mover de cadências de atualização existente para a Otimização da entrega](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) e, em seguida, mova as suas definições para um perfil de otimização de entrega. 
 
 5. Quando terminar, selecione **OK**. Em **Criar Cadência de Atualização**, selecione **Criar**.
 

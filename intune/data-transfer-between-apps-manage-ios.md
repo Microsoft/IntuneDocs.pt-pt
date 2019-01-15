@@ -2,8 +2,8 @@
 title: Gerir a transferência de dados entre aplicações iOS | Microsoft Intune
 description: Saiba como utilizar políticas de gestão de aplicações móveis no Microsoft Intune para gerir as transferências de dados entre aplicações.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bbd0272b37b56f9f9e66cdf00ddc89a827f3c875
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 50df69377afe053b1c10474fdda334a6e6792e27
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816978"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297269"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
@@ -51,7 +51,7 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 3.  Implemente a aplicação com as seguintes definições de configuração de aplicação:
 
-      **chave** = IntuneMAMUPN, **valor** = <username@company.com>
+      **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -64,7 +64,7 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 2. Na secção Configuração da Aplicação, introduza a definição seguinte:
 
-   **chave** = IntuneMAMUPN, **valor** = <username@company.com>
+   **key** = IntuneMAMUPN, **value** = <username@company.com>
 
    A sintaxe exata do par chave/valor pode diferir com base no seu fornecedor de MDM de terceiros. A tabela seguinte mostra exemplos de fornecedores MDM de terceiros e os valores exatos que deve introduzir para o par chave/valor.
 

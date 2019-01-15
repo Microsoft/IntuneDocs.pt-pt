@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642766"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297235"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mantenha-se a par das atualizações do Armazém de Dados do Intune.
+
+## <a name="1812"></a>1812 
+_Lançamento de Dezembro de 2018_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Coleção de atividades de inscrição lançada para v1.0 
+
+A coleção de atividades de inscrição está agora disponível na versão 1.0. Pode utilizar esta coleção para compreender o volume de falha de inscrição e as tendências no seu ambiente. Para obter mais informações, consulte [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories), e [ enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## <a name="1808"></a>1808
 _Lançada em agosto de 2018_
@@ -36,9 +43,9 @@ _Lançada em agosto de 2018_
 
 Agora, pode utilizar a versão v1.0 do Armazém de Dados do Intune, ao definir o parâmetro de consulta `api-version=v1.0`. As atualizações para coleções no Armazém de Dados são acumulativas por natureza e não interrompem cenários existentes.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Coleção de Falhas de Inscrição Lançada para Beta
+### <a name="enrollment-activities-collection-released-to-beta"></a>Coleção de atividades de inscrição lançada para Beta
 
-A nova coleção `Enrollment Failure` é lançada para beta. Pode utilizar esta coleção para entender como a inscrição está a decorrer ao visualizar as falhas mais comuns. 
+A nova coleção `Enrollment Activities` é lançada para beta. Pode utilizar esta coleção para entender como a inscrição está a decorrer ao visualizar as falhas mais comuns. 
 
 
 ## <a name="1805"></a>1805

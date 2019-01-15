@@ -3,8 +3,8 @@ title: Criar e implementar políticas de proteção de aplicações
 titleSuffix: Microsoft Intune
 description: Saiba como criar e atribuir políticas de proteção de aplicações do Microsoft Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: e81a80dae9777cae96d9ddc6dfe9d64b2abf1204
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817369"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297371"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 

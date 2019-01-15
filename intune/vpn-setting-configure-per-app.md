@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180736"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297405"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurar a Rede Privada Virtual (VPN) por aplicação no Intune para dispositivos iOS
 
@@ -33,9 +33,9 @@ Atualmente, a VPN por aplicação está disponível para os seguintes fornecedor
  - Citrix
  - F5
  - Pulse Connect Secure
+ - Palo Alto Networks
  - SonicWall
- - Palo Alto Networks GlobalProtect
- - Zscaler
+ - Acesso de privada Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Pré-requisitos para a VPN por aplicação
 
@@ -104,7 +104,7 @@ O perfil do certificado de raiz fidedigno permite que o iOS confie automaticamen
 9. Clique em Certificado de Raiz e selecione um Certificado SCEP. Clique em **OK**.
 10. Escreva `Client Authentication` no **Nome** para a **Utilização de chave alargada**.
 11. Escreva `1.3.6.1.5.5.7.3.2` no **Identificador de Objeto**.
-12. Clique em **adicionar**.
+12. Clique em **Adicionar**.
 13. Escreva o ***URL do Servidor*** e clique em **Adicionar**.
 14. Clique em **OK**.
 15. Clique em **Criar**.
@@ -145,7 +145,7 @@ O perfil VPN contém o certificado SCEP com as credenciais de cliente, as inform
 
 Depois de adicionar o perfil VPN, associe a aplicação e o grupo do Azure AD ao perfil.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
 3. Selecione **Aplicações do cliente**.
 4. Clique em **Aplicações**.
@@ -186,10 +186,12 @@ Com a configuração de VPN por aplicação associada à sua aplicação, verifi
     - Check Point Capsule Connect
     - Cisco AnyConnect
     - Citrix VPN
+    - Citrix SSO
     - F5 Access
+    - Palo Alto Networks GlobalProtect
     - Pulse Secure
     - SonicWall Mobile Connect
-    - Aplicação Zscaler
+    - Zscaler
 
     > [!NOTE]
     > Se estiver a utilizar a aplicação VPN Pulse Secure, pode optar por utilizar o túnel de camada de aplicação ou de camada de pacote. Defina o valor **ProviderType** para **proxy-da-aplicação**, para o túnel de camada de aplicação ou para **pacote-túnel**, para o túnel de camada de pacote.
