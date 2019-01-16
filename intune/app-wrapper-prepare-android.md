@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324910"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316921"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações Android para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -147,39 +147,6 @@ Para impedir potenciais ataques de spoofing, divulgação de informações e ata
 -   Certifique-se de que a aplicação vem de uma origem fidedigna.
 
 -   Proteja o diretório de saída que tem a aplicação encapsulada. Considere utilizar um diretório de nível de utilizador para a saída.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Exigir um pedido de início de sessão do utilizador para uma inscrição automática no serviço APP-WE, exigir políticas de proteção de aplicações do Intune de forma a utilizar a sua aplicação LOB para Android encapsulada e ativar o SSO da ADAL (opcional)
-
-Seguem-se orientações para exigir pedidos de início de sessão ao utilizador ao iniciar aplicações para uma inscrição automática no serviço APP-WE (isto é denominado **inscrição predefinida** nesta secção), exigir políticas de proteção de aplicações do Intune para permitir que apenas os utilizadores protegidos pelo Intune utilizem a sua aplicação LOB para Android encapsulada. Também abrangem a ativação do SSO para a sua aplicação LOB para Android encapsulada. 
-
-> [!NOTE] 
-> As vantagens da **inscrição predefinida** incluem um método simplificado de obtenção de políticas do serviço APP-WE para uma aplicação no dispositivo.
-
-### <a name="general-requirements"></a>Requisitos Gerais
-* A equipa do SDK do Intune irá exigir o ID da Aplicação da sua aplicação. Uma forma de o fazer é através do [Portal do Azure](https://portal.azure.com/), em **Todas as Aplicações**, na coluna **ID da Aplicação**. Uma excelente forma de contactar a equipa do SDK do Intune é através do envio de um e-mail para msintuneappsdk@microsoft.com.
-     
-### <a name="working-with-the-intune-sdk"></a>Trabalhar com o SDK do Intune
-Estas instruções são específicas para todas as aplicações Android e Xamarin que pretendam exigir políticas de proteção de aplicações do Intune para utilização num dispositivo de utilizador final.
-
-1. Configure a ADAL através dos passos definidos no [guia do SDK do Intune para Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
-
-> [!NOTE]
-> O termo "ID de cliente" ligado à sua aplicação é o mesmo que o termo "ID de aplicação" do Portal do Azure ligado à sua aplicação. 
-> * Para ativar o SSO, é preciso a "Configuração da ADAL comum" n.º 2.
-
-2. Ative inscrição predefinida ao colocar o valor seguinte no manifesto:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Esta tem de ser a única integração da MAM-WE na aplicação. Poderão surgir conflitos se existirem outras tentativas de chamar as APIs MAMEnrollmentManager.
-
-3. Ative a política de MAM necessária ao colocar o valor seguinte no manifesto:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Esta ação força o utilizador a transferir o Portal da Empresa para o dispositivo e a concluir o fluxo da inscrição predefinida antes da utilização.
 
 ### <a name="see-also"></a>Consulte também
 - [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)
