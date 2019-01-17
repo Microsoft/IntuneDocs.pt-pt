@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0efc84da6a9efb594600b9ca33aa5eb7622c8101
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: db2ebe82713f13283c0d9e263496971565312bf4
+ms.sourcegitcommit: 5a7f4617d11f32956161189b7e95ee8771098e0a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203438"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54361886"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>A edição antecipada do Microsoft Intune – Janeiro de 2019
 
@@ -130,9 +130,8 @@ O Portal da empresa do macOS do Intune agora suporta o modo escuro para macOS. Q
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Utilizar definições recomendadas pela Microsoft com Linhas de Base de Segurança <!-- 2055484 -->
 O Intune tem integração com outros serviços centrados na segurança, incluindo o Windows Defender ATP e o Office 365 ATP. Os clientes estão a pedir uma estratégia comum e um conjunto coeso de fluxos de trabalho de segurança de ponto a ponto em todos os serviços do Microsoft 365. O nosso objetivo é alinhar estratégias para desenvolver soluções que criem uma ponte entre operações de segurança e tarefas de administrador comuns. No Intune, pretendemos cumprir este objetivo através da publicação de um conjunto de "Linhas de base de segurança" recomendadas pela Microsoft (**Intune** > **Linhas de base de segurança**).  Um administrador poderá criar políticas de segurança diretamente a partir dessas linhas de base e, em seguida, implementá-las nos seus utilizadores. Também pode personalizar as recomendações de melhores práticas para satisfazer as necessidades da sua organização. O Intune assegura que os dispositivos permanecem em conformidade com estas linhas de base e notifica os administradores de utilizadores ou dispositivos que não estejam em conformidade.
 
-### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Políticas WIP implementadas sem inscrição do utilizador <!-- 1434452 -->
-As políticas do Windows Information Protection (WIP) poderão ser implementadas sem exigir que os utilizadores de MDM inscrevam os seus dispositivos Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. No Intune, no portal do Azure, selecione **Aplicação móvel** > **Eliminação seletiva da aplicação**.
-
+### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Suporte de eliminação seletiva para WIP sem inscrição de dispositivos <!-- 1434452 -->
+Windows Information Protection sem inscrição (WIP-PODEMOS) permite que os clientes proteger os dados empresariais em dispositivos Windows 10, sem a necessidade de inscrição de MDM completa. Assim que os documentos estão protegidos com um WIP-política de nós, os dados protegidos que podem ser apagados seletivamente por um administrador do Intune. Ao selecionar o utilizador e dispositivo e enviar um pedido de eliminação de dados, todos os dados que foi protegido por meio do WIP-política irá tornar-se inutilizável. No Intune, no portal do Azure, selecione **Aplicação móvel** > **Eliminação seletiva da aplicação**.
 
 <!-- 1809 start -->  
 
