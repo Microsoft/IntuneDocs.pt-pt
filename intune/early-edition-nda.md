@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: db2ebe82713f13283c0d9e263496971565312bf4
-ms.sourcegitcommit: 5a7f4617d11f32956161189b7e95ee8771098e0a
+ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 01/17/2019
-ms.locfileid: "54361886"
+ms.locfileid: "54386980"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>A edição antecipada do Microsoft Intune – Janeiro de 2019
 
@@ -48,9 +48,6 @@ Será capaz de excluir aplicações geridas do Google Play a partir do Microsoft
 
 ### <a name="managed-google-play-app-type----1352580---"></a>Tipo de aplicação do Google Play gerido <!-- 1352580 -->
 O **managed Google Play** tipo de aplicação permite-lhe adicionar especificamente [Google Play aplicações geridas](https://play.google.com/work/search?q=microsoft&c=apps) ao Intune. Como o administrador do Intune, poderá agora navegar, procurar, aprovar, sincronizar e atribuir aprovados Google Play gerido aplicações no Intune. Já não terá de procurar na consola do Google Play gerido separadamente e já não terá de autenticar. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Na **tipo de aplicação** lista, selecione **Google Play gerido** como o tipo de aplicação.
-
-### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Pré-visualização do suporte para dispositivos Android de empresa, totalmente geridos <!-- 1574342  -->
-O Intune suportará dispositivos Android totalmente geridos, uma empresa cenário de "proprietário do dispositivo" em que dispositivos totalmente geridos pelo IT e são associados aos utilizadores individuais. Isto permite aos administradores gerir todo o dispositivo, aplicar um conjunto expandido de controlos de política indisponíveis para perfis de trabalho e restringe os utilizadores a instalar aplicações da Google Play gerido apenas. Para configurar o Android dispositivos totalmente geridos, será remetido **inscrição de dispositivos** > **inscrição de dispositivos Android** > **dispositivos dos utilizadores da empresa, totalmente gerido** . Tenha em atenção que esta funcionalidade está em pré-visualização. Algumas funcionalidades do Intune, tais como certificados, conformidade e acesso condicional, não estão atualmente disponíveis com o Android totalmente geridos os dispositivos dos utilizadores.
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>Implementação de online licenciado Microsoft Store para aplicações de negócio <!-- 1672660  -->
 Será capaz de atribuir necessário online licenciada Microsoft Store para aplicações de negócio no contexto do dispositivo. Implementar um Microsoft Store para a aplicação de negócios desta forma permitirá que a aplicação ser instalada para todos os utilizadores no dispositivo. Isto só é aplicável no Windows 10 RS4 + dispositivos de ambiente de trabalho. A opção para instalar no contexto do dispositivo está disponível na página de atribuição de aplicações de cliente para aplicações licenciadas Online do MSFB.

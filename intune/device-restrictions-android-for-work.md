@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203608"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387020"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -87,7 +87,7 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 
 ### <a name="kiosk-settings"></a>Definições de quiosque
 
-Pode configurar um dispositivo para executar uma aplicação ou muitas aplicações. Quando um dispositivo está no modo de local público, apenas as aplicações que adicionar estão disponíveis.
+Pode configurar um dispositivo para executar uma aplicação ou muitas aplicações. Quando um dispositivo está no modo de local público, apenas as aplicações que adicionar estão disponíveis. Estas definições aplicam-se ao Android dispositivos dedicados, mas não para o Android totalmente gerido dispositivos dedicados.
 
 **Modo de local público**: Escolha se o dispositivo será executado uma aplicação ou várias aplicações.
 

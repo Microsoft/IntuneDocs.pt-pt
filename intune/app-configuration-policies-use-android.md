@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179954"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386954"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -32,7 +32,7 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 > [!Note]  
 > Nem todas as aplicações suportam a configuração de aplicações. Verifique junto do programador da aplicação para saber se este criou a aplicação de forma a suportar políticas de configuração da aplicação.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
@@ -62,13 +62,17 @@ Para cada chave e valor na configuração, defina:
 ### <a name="supported-variables-for-configuration-values"></a>Variáveis suportadas para valores de configuração
 
 Pode escolher as seguintes opções, se selecionar a variável como o tipo de valor:
-- Nome Principal de Utilizador – por exemplo, **John@contoso.com**
-- Correio – por exemplo, **John@contoso.com**
-- UPN Parcial – por exemplo, **João**
-- ID da Conta – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- ID do Dispositivo – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
-- ID de Utilizador – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
-- Nome de Utilizador – por exemplo, **John Doe**
+
+| Opção | Exemplo |
+|----|----|
+| Correio | john@contoso.com |
+| Nome Principal de utilizador | john@contoso.com |
+| UPN parcial | John |
+| Domain | contoso.com |
+| Nome de utilizador | John Doe |
+| ID de conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| ID de utilizador | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| ID do dispositivo | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
 
@@ -99,7 +103,7 @@ Quando a aplicação atribuída é executada num dispositivo, a mesma é executa
 
 Também pode pré-configurar uma permissão para que as aplicações acedam às funcionalidades do dispositivo Android. Por predefinição, as aplicações Android que requerem permissões de dispositivos, tal como o acesso à localização ou à câmara do dispositivo, pedem aos utilizadores que aceitem ou neguem as permissões. Por exemplo, se uma aplicação utilizar o microfone do dispositivo, é pedido ao utilizador que conceda à aplicação permissão para utilizar o microfone.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **Aplicações do cliente**.
 3. Em **Gerir**, selecione **Políticas de configuração da aplicação** e, em seguida, selecione **Adicionar**.

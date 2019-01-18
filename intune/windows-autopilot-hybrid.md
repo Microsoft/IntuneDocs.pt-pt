@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149666"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380475"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementar dispositivos híbridos associados ao Azure Active Directory com o Intune e o Windows Autopilot (Pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar dispositivos híbridos associados ao Azure Active Directory. Para o fazer, siga os passos abaixo.
@@ -116,6 +116,9 @@ O Conector do Intune para o Azure Active Directory tem de ser instalado num comp
 6. Selecione **Iniciar Sessão**.
 7. Introduza credenciais de utilizador com a função Administrador Global ou Administrador do Intune.
 8. Aceda a **Inscrição de dispositivos** > **Inscrição no Windows** > **Conector do Intune para o Active Directory (Pré-visualização)** e confirme que o estado de ligação é **Ativo**.
+
+ > [!NOTE]
+ > Depois de **iniciar sessão** no conector, poderá demorar alguns minutos para que seja apresentada na [Intune](https://aka.ms/intuneportal). Lembre-se de que o conector irá mostrar apenas se ele é capaz de com êxito se comunicar com o serviço do Intune.
 
 ### <a name="configure-web-proxy-settings"></a>Configurar definições de proxy Web
 

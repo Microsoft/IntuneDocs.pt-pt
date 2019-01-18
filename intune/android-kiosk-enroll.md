@@ -1,12 +1,12 @@
 ---
-title: Inscrever dispositivos de quiosque do Android Enterprise no Intune
+title: Configurar a inscrição no Intune para dispositivos Android enterprise dedicado
 titlesuffix: Microsoft Intune
-description: Saiba como inscrever dispositivos de quiosque do Android Enterprise no Intune.
+description: Saiba como inscrever dispositivos Android enterprise dedicado no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 1/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,43 +16,43 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
-ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
+ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54098322"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386906"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar a inscrição do Intune de dispositivos de local público do Android enterprise
+# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição do Intune de dispositivos empresariais Android dedicado
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android suporta dispositivos de local público-estilo com seus [dispositivos dedicados](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) conjunto de solução. Estes dispositivos são utilizados para um único objetivo, como sinalética digital, impressão de bilhetes, gestão de inventário, entre outros. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
+Android suporta dispositivos de local público-estilo de empresa e de utilização única, com o respetivo conjunto de solução de dispositivos dedicados. Estes dispositivos são utilizados para um único objetivo, como sinalética digital, impressão de bilhetes, gestão de inventário, entre outros. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
 
-O Intune ajuda-o a implementar aplicações e definições em dispositivos de quiosque Android. Para obter detalhes específicos sobre o Android Enterprise, veja [Android enterprise requirements (Requisitos empresariais do Android)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+O Intune ajuda-o a implementar aplicações e definições para dispositivos Android de dedicado. Para obter detalhes específicos sobre o Android Enterprise, veja [Android enterprise requirements (Requisitos empresariais do Android)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Os dispositivos que gerir desta forma são inscritos no Intune sem uma conta de utilizador e não estão associados a nenhum utilizador final. Estes dispositivos não são para utilização pessoal nem para aplicações que tenham um requisito forte para dados de conta específicos do utilizador, como o Outlook ou o Gmail.
 
 ## <a name="device-requirements"></a>Requisitos de dispositivos
 
-Os dispositivos têm de cumprir estes requisitos para serem geridos como um dispositivo de quiosque do Android Enterprise:
+Dispositivos têm de cumprir estes requisitos para ser gerido como um dispositivo de dedicado do Android enterprise:
 
 - Versão do SO Android 5.1 e posterior.
 - Os dispositivos têm de executar uma distribuição do Android com conectividade aos GMS (Serviços Google Mobile). Os dispositivos têm de ter os GMS disponíveis e têm de conseguir ligar-se aos mesmos.
 
-## <a name="set-up-android-kiosk-management"></a>Configurar a gestão de quiosques Android
+## <a name="set-up-android-dedicated-device-management"></a>Configurar a gestão de dispositivos dedicados Android
 
-Para configurar a gestão de quiosques Android, siga estes passos:
+Para configurar a gestão de dispositivos Android de dedicado, siga estes passos:
 
 1. Para se preparar para gerir dispositivos móveis, tem de [definir a autoridade de gestão de dispositivos móveis (MDM) para o **Microsoft Intune**](mdm-authority-set.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
 2. [Ligue a sua conta do inquilino do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
 3. [Crie um perfil de inscrição](#create-an-enrollment-profile).
 4. [Crie um grupo de dispositivos](#create-a-device-group).
-5. [Inscreva os dispositivos de quiosque](#enroll-the-kiosk-devices).
+5. [Inscrever os dispositivos dedicados](#enroll-the-dedicated-devices).
 
 ### <a name="create-an-enrollment-profile"></a>Criar um perfil de inscrição
 
-Tem de criar um perfil de inscrição para poder inscrever os seus dispositivos de quiosque. Depois de criar o perfil, o mesmo fornece-lhe um token de inscrição (cadeia aleatória) e um código QR. Consoante o SO Android e a versão do dispositivo, pode utilizar o token ou o código QR para [inscrever o dispositivo de quiosque](#enroll-the-kiosk-devices).
+Tem de criar um perfil de inscrição, de modo a que pode inscrever os seus dispositivos dedicados. Depois de criar o perfil, o mesmo fornece-lhe um token de inscrição (cadeia aleatória) e um código QR. Consoante o SO Android e a versão do dispositivo, pode utilizar o token ou código QR para [inscrever o dispositivo dedicado](#enroll-the-dedicated-devices).
 
 1. Aceda ao [Portal do Intune](https://portal.azure.com) e selecione **Inscrição de dispositivos** > **Inscrição Android** > **Inscrição de quiosque e dispositivos de tarefas**.
 2. Selecione **Criar** e preencha os campos obrigatórios.
@@ -95,81 +95,20 @@ Substituir ou revogar um token/código QR não terá efeito em dispositivos que 
 4. Para substituir o token, selecione **Substituir token**.
 5. Para revogar o token, selecione **Revogar token**.
 
-## <a name="enroll-the-kiosk-devices"></a>Inscrever os dispositivos de quiosque
+## <a name="enroll-the-dedicated-devices"></a>Inscrever os dispositivos dedicados
 
-Depois de criar o perfil de inscrição e o grupo de dispositivos dinâmico, pode inscrever os seus dispositivos de quiosque. A forma como inscreve os seus dispositivos Android depende do sistema operativo.
+Agora, pode [inscrever os dispositivos dedicados](android-dedicated-devices-fully-managed-enroll.md).
 
-| Método de inscrição | Versão mínima do SO Android suportada |
-| ----- | ----- |
-| Comunicação de Proximidade | 5.1 |
-| Entrada de token | 6.0 |
-| Código QR | 7.0 |
-| Zero Touch | 8.0 em fabricantes participantes |
+## <a name="managing-apps-on-android-dedicated-devices"></a>Gestão de aplicações em dispositivos Android de dedicado
 
-### <a name="enroll-by-using-near-field-communication-nfc"></a>Inscrever com NFC (Comunicação de Proximidade)
-
-Em dispositivos Android 5.1 e posteriores que suportem NFC, pode aprovisionar os seus dispositivos ao criar uma etiqueta NFC especialmente formatada. Pode utilizar a sua própria aplicação ou qualquer ferramenta de criação de etiquetas NFC. Para obter mais informações, veja a [Documentação da API de gestão do Android da Google](https://developers.google.com/android/management/provision-device#nfc_method).
-
-### <a name="enroll-by-using-a-token"></a>Inscrever com um token
-
-Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. Android versões 6.1 e versões posteriores, também podem aproveitar o código QR ao utilizar o **afw #setup** método de inscrição.
-
-1. Ligue o seu dispositivo apagado.
-2. No ecrã **Bem-vindo**, selecione o seu idioma.
-3. Ligue a sua rede **Wi-Fi** e, em seguida, selecione **SEGUINTE**.
-4. Aceite os termos e condições da Google e selecione **SEGUINTE**.
-5. No ecrã de início de sessão do Google, introduza **afw#setup** em vez de uma conta do Gmail e, em seguida, selecione **SEGUINTE**.
-6. Selecione **INSTALAR** para a aplicação **Android Device Policy**.
-7. Continue a instalação desta política.  Alguns dispositivos podem exigir a aceitação de termos adicionais. 
-8. No ecrã **Inscrever este dispositivo**, permita que o seu dispositivo leia o código QR ou opte por introduzir manualmente o token.
-9. Siga as instruções no ecrã para concluir a inscrição. 
-
-### <a name="enroll-by-using-a-qr-code"></a>Inscrever com um código QR
-
-Em dispositivos Android 7 e posteriores, pode ler o código QR do perfil de inscrição para inscrever o dispositivo.
-
-> [!Note]
-> O zoom do browser pode fazer com que os dispositivos não consigam ler códigos QR. Aumentar o zoom do browser resolve o problema.
-
-1. Para iniciar a leitura do código QR no dispositivo Android, toque múltiplas vezes no primeiro ecrã que vir após apagar.
-2. Em dispositivos Android 7 e 8, ser-lhe-á pedido para instalar um leitor de QR. Os dispositivos Android 9 e posteriores já têm um leitor de QR instalado.
-3. Utilize o leitor de QR para ler o código QR do perfil de inscrição e, em seguida, siga as instruções no ecrã para concluir a inscrição.
-
-### <a name="enroll-by-using-google-zero-touch"></a>Inscrever com o sistema Zero Touch da Google
-
-Para utilizar o sistema Zero Touch da Google, o dispositivo tem de o suportar e estar associado a um fornecedor que faça parte do serviço.  Para obter mais informações, veja o [site do programa Zero Touch da Google](https://www.android.com/enterprise/management/zero-touch/). 
-
-
-1. Crie uma nova Configuração na consola do Zero Touch.
-2. Selecione **Microsoft Intune** na lista pendente de DPC da EMM.
-3. Na consola do Zero Touch da Google, copie/cole o seguinte JSON no campo de extras da DPC. Substitua a cadeia *YourEnrollmentToken* pelo token de inscrição que criou como parte do seu perfil de inscrição. Certifique-se de que coloca o token de inscrição entre aspas.
-
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-    } 
-} 
-```
-4. Escolha **Aplicar**.
-
-## <a name="managing-apps-on-android-kiosk-devices"></a>Gerir aplicações em dispositivos de quiosque Android
-
-Apenas as aplicações com o Tipo de atribuição [definido como Obrigatório](apps-deploy.md#to-assign-an-app) podem ser instaladas em dispositivos de quiosque Android. As aplicações são instaladas a partir da Google Play Store Gerida da mesma forma que os dispositivos com perfil de trabalho do Android.
+Apenas as aplicações que têm o tipo de atribuição [definido em necessário](apps-deploy.md#to-assign-an-app) pode ser instalado em dispositivos Android de dedicado. As aplicações são instaladas a partir da Google Play Store Gerida da mesma forma que os dispositivos com perfil de trabalho do Android.
 
 As aplicações são atualizadas automaticamente em dispositivos geridos quando o programador da aplicação publica uma atualização na Google Play Store.
 
-Para remover uma aplicação de dispositivos de quiosque Android, pode seguir um dos seguintes passos:
+Para remover uma aplicação do Android dispositivos dedicados, pode efetuar um dos seguintes procedimentos:
 -   Elimine a implementação da aplicação obrigatória.
 -   Crie uma implementação de desinstalação para a aplicação.
 
-
 ## <a name="next-steps"></a>Passos Seguintes
-- [Implementar aplicações de quiosque Android](apps-deploy.md)
-- [Adicionar políticas de configuração de quiosques Android](device-profiles.md)
+- [Implementar aplicações Android](apps-deploy.md)
+- [Adicionar políticas de configuração para Android](device-profiles.md)

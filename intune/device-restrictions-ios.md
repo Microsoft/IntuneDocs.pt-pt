@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203676"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380512"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune
 
@@ -111,8 +111,8 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
   - **Palavras-passe simples**: Escolher **bloco** solicitar palavras-passe mais complexas. **Não configurado** permite que as palavras-passe simples, como `0000` e `1234`.
   - **Tipo de palavra-passe obrigatório**: Escolha o tipo de palavra-passe necessitam da sua organização. As opções são:
     - **Predefinição do dispositivo**
-    - **numérico**
-    - **Alfanumérico**
+    - **Numeric**
+    - **Alphanumeric**
   - **Número de carateres não alfanuméricos na palavra-passe**: Introduza o número de carateres de símbolo, tal como `#` ou `@`, que têm de ser incluídos na palavra-passe.
   - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo de que um utilizador tem de introduzir (entre 4 e 14 caracteres).
   - **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de inícios de sessão falhados a permitir antes do dispositivo ser apagado (entre 1 a 11).
@@ -151,12 +151,12 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - **Conteúdo de música, podcast ou notícias do explícito do iTunes (apenas supervisionado)**: Escolher **bloco** para impedir que o conteúdo de música, podcast ou notícias explícito do iTunes. **Não configurado** permite que o dispositivo aceda ao conteúdo classificado como conteúdo para adultos na loja.
 - **Transferir conteúdos da iBook store identificados como "Erótico"**: Escolher **bloco** para impedir que os utilizadores de deixar de transferir o suporte de dados a partir da iBook store que é identificada como erótica. **Não configurado** permite ao utilizador transferir livros da categoria "Erótico".
 - **Ver documentos empresariais em aplicações não geridas**: **Bloco** impede a ver documentos não empresariais em aplicações não geridas. **Não configurado** permite que os documentos empresariais sejam vistos em qualquer aplicação. Por exemplo, pretende impedir que os utilizadores guardar ficheiros a partir da aplicação OneDrive no Dropbox. Configurar esta definição como **bloco**. Depois do dispositivo receber a política (por exemplo, após um reinício), já não permite a guardar.
-  - **Permitir que aplicações geridas escrever contactos contactos não geridos (apenas supervisionadas) de contas**: Quando definido como **permitir**, os utilizadores podem adicionar ou sincronizar Outlook informações de contacto qualquer pessoa, incluindo empresas e contactos de empresa, para a aplicação incorporada de contactos no dispositivo. Quando definido como **não configurado**, os utilizadores não é possível adicionar a contatos do Outlook para a aplicação incorporada de contactos no dispositivo.
+  - **Permitir que aplicações geridas escrever contactos para contas de não-gerenciado contactos**: Quando definido como **permitir**, os utilizadores podem adicionar ou sincronizar Outlook informações de contacto qualquer pessoa, incluindo empresas e contactos de empresa, para a aplicação incorporada de contactos no dispositivo. Quando definido como **não configurado**, os utilizadores não é possível adicionar a contatos do Outlook para a aplicação incorporada de contactos no dispositivo.
   
     Para utilizar esta definição, defina o **ver documentos empresariais em aplicações não geridas** definição **bloco**.
   
 - **Ver documentos não empresariais em aplicações empresariais**: **Bloco** impede a ver documentos não empresariais em aplicações empresariais. **Não configurado** permite que qualquer documento seja visto em aplicações geridas empresariais.
-  - **Permitir aplicações não geridas ler contactos geridos (apenas supervisionadas) de contas**: Quando definido como **permitir**, os usuários podem adicionar iContacts aplicação informações de contato qualquer pessoa no Outlook. **Não configurado** impede que duplicatas de remoção de ler, incluindo, a partir da aplicação incorporada de contactos no dispositivo.
+  - **Permitir aplicações não geridas ler contactos geridos de contas de**: Quando definido como **permitir**, os usuários podem adicionar iContacts aplicação informações de contato qualquer pessoa no Outlook. **Não configurado** impede que duplicatas de remoção de ler, incluindo, a partir da aplicação incorporada de contactos no dispositivo.
   
     Para utilizar esta definição, defina o **ver documentos não empresariais em aplicações empresariais** definição **bloco**.
   

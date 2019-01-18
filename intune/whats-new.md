@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 00367fffa141ed2337c1089710050c9aefc857c5
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: 699936a1cef35d0435b329d1f8e09a64174fe2bd
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316955"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387088"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>Semana de 14 de Janeiro de 2019
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Pré-visualização do suporte para dispositivos Android de empresa, totalmente geridos <!-- 1574342  -->
+Intune agora suporta totalmente geridos os dispositivos Android, uma empresa cenário de "proprietário do dispositivo" em que dispositivos totalmente geridos pelo IT e são associados aos utilizadores individuais. Isto permite aos administradores gerir todo o dispositivo, aplicar um conjunto expandido de controlos de política indisponíveis para perfis de trabalho e restringe os utilizadores a instalar aplicações da Google Play gerido apenas. Para obter mais informações, consulte [configurar o Intune inscrição do Android totalmente dispositivos geridos](android-fully-managed-enroll.md) e [inscrever o seu dispositivos dedicados ou dispositivos totalmente gerenciados](android-dedicated-devices-fully-managed-enroll.md).  Tenha em atenção que esta funcionalidade está em pré-visualização. Algumas funcionalidades do Intune, tais como certificados, conformidade e acesso condicional, não estão atualmente disponíveis com o Android totalmente geridos os dispositivos dos utilizadores.
 
 ## <a name="week-of-january-7-2019"></a>Semana de 7 de Janeiro de 2019
 
@@ -115,7 +118,7 @@ Quando cria um perfil de configuração para dispositivos iOS, pode adicionar **
 [Definições para apresentar mensagens no ecrã de bloqueio](shared-device-settings-ios.md) lista as definições.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Novo App Store, visualização de documentos, definições de restrição de dispositivos de jogos adicionadas para dispositivos iOS <!-- 2827760-->
-Na **configuração do dispositivo** > **perfis** > **criar perfil** > **iOS** para Plataforma > **restrições de dispositivos** para o tipo de perfil > **App Store, visualização de documentos, jogos**, são adicionadas as seguintes definições: Permitir que aplicações geridas escrever aplicativos de permitir não gerido de contas (apenas supervisionados) de contactos não gerenciado para ler contactos geridos de contas de contactos (supervisionado apenas) para ver estas definições, aceda a [restrições de dispositivos iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+Na **configuração do dispositivo** > **perfis** > **criar perfil** > **iOS** para Plataforma > **restrições de dispositivos** para o tipo de perfil > **App Store, visualização de documentos, jogos**, são adicionadas as seguintes definições: Permitir que aplicações geridas escrever contactos para contas de não-gerenciado contactos aplicações permitir não gerido para ler contactos geridos de contas para ver estas definições, vá para de [restrições de dispositivos iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Novas definições de notificação, sugestões e keyguard para dispositivos de proprietário do dispositivo Android Enterprise <!-- 3201839 3201843 -->
 Esta atualização inclui várias novas funcionalidades em dispositivos Android Enterprise quando em execução como proprietário do dispositivo. Para utilizar estas funcionalidades, aceda a **configuração do dispositivo** > **perfis** > **criar perfil** > no **plataforma**, escolha **Android Enterprise** > no **tipo de perfil**, escolha **proprietário do dispositivo só** > **dispositivo Restrições**.
