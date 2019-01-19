@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122643"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400029"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -81,22 +81,20 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Os dados da aplicação da empresa são removidos. Os dados pessoais e as aplicações não são removidas.|
+|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** Aplicações de fomentar a prática dos que são afixadas ao perfil de gestão, todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Para aplicações que não são geridas pelo Portal da empresa, dados de aplicações da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. Os dados pessoais e as aplicações não são removidas.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
 |Email|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
-|Outlook|Os e-mails recebidos pela aplicação Microsoft Outlook para iOS são removidos. Isto exige que a aplicação móvel do Outlook seja implementada primeiro como uma aplicação Necessária para os utilizadores de iOS.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
-|Contactos |Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.
 
 ### <a name="android"></a>Android
 
 |Tipo de dados|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Ligações Web|Removidos.|Removidos.|
-|Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados.|As aplicações e os dados permanecem instalados.|
+|Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados. <br /> <br />Dados de aplicação da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. |As aplicações e os dados permanecem instalados. <br /> <br />Dados de aplicação da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos.|
 |Aplicações de linha de negócio não geridas|As aplicações e os dados permanecem instalados.|As aplicações são desinstaladas e os dados locais da aplicação são removidos. Não são removidos dados fora da aplicação (por exemplo, num cartão SD).|
 |Aplicações geridas do Google Play|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação da Gestão de Aplicações Móveis (MAM) fora da aplicação (por exemplo, cartão SD) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (por exemplo, cartão SD) permanecem encriptados, mas não são removidos.|
 |Aplicações de linha de negócios geridas|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (por exemplo, cartão SD) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (por exemplo, cartão SD) permanecem encriptados e inutilizáveis, mas não são removidos.|
@@ -105,9 +103,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Definições de perfil de certificado|Os certificados são revogados, mas não removidos.|Os certificados são removidos e revogados.|
 |Agente de gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
 |Email|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
-|Outlook|Os e-mails recebidos pela aplicação Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é apagado se a inscrição do dispositivo for anulada.|Os e-mails recebidos pela aplicação Outlook para Android são removidos, mas apenas se o Outlook estiver protegido por políticas de MAM. Caso contrário, o Outlook não é apagado se a inscrição do dispositivo for anulada.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
-|Contactos |Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.|Os contactos sincronizados diretamente da aplicação com o livro de endereços nativo são removidos. Não é possível remover contactos sincronizados do livro de endereços nativo com outra origem externa. <br /> <br />Atualmente, apenas a aplicação Outlook é suportada.
 
 ### <a name="android-work-profile"></a>Perfil de trabalho do Android
 
