@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182403"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418181"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
@@ -29,7 +29,7 @@ Este documento aborda a reposição de códigos de acesso ao nível do dispositi
 
 ## <a name="supported-platforms-for-device-level-passcode-reset"></a>Plataformas suportadas para reposição de códigos de acesso ao nível do dispositivo
 
-| Platform | Suportado? |
+| Plataforma | Suportado? |
 | ---- | ---- |
 | Dispositivos Android com a versão 6.X ou anterior | Sim |
 | Dispositivos Android Enterprise no modo de quiosque | Sim |
@@ -43,7 +43,7 @@ Para dispositivos Android, isto significa efetivamente que a reposição de cód
 
 ## <a name="supported-platforms-for-android-enterprise-work-profile-passcode-reset"></a>Plataformas suportadas para reposição de códigos de acesso do perfil de trabalho do Android Enterprise
 
-| Platform | Suportado? |
+| Plataforma | Suportado? |
 | ---- | ---- |
 | Dispositivos Android Enterprise inscritos com um perfil de trabalho e com a versão 8.0 e posterior | Sim |
 | Dispositivos Android Enterprise inscritos com um perfil de trabalho e com a versão 7.X e anterior | Não |
@@ -55,7 +55,8 @@ Para criar um novo código de acesso de perfil de trabalho, utilize a ação Rep
 
 ## <a name="reset-a-passcode"></a>Repor um código de acesso
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+
+1. Inicie sessão para o [portal do Azure](https://portal.azure.com) com qualquer uma das seguintes funções: Administrador Global do Azure Active Directory, o Admin de serviço do Intune do Azure Active Directory, o operador de assistência técnica ou o administrador de função. Para obter uma lista completa de funções e permissões, consulte a [tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.

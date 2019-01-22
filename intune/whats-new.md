@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc7cd36390d6807bfc6c92de6c5bf071dec27aa4
-ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54400063"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418215"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1252,6 +1252,54 @@ Agora pode utilizar a Política de Proteção de Aplicações (APP) e o Acesso C
 
 ## <a name="notices"></a>Avisos
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Alterar a imposição de palavra-passe futuras para macOS 10.14.2 no Intune <!--1873216-->
+Partilhámos na MC145129 em Julho que planos do Intune para integrar da Apple recentemente lançado a definição de "Palavra-passe alterações na autenticação seguinte" para dispositivos MacOS 10.13 de versões e superior. Estamos atualmente a planear implementar esta definição em Fevereiro para macOS 10.14.2 e superior. 
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Isso afeta se tiver ou se planear ter dispositivos MacOS 10.14.2 e superior. Agora que a Apple introduziu a definição de "Palavra-passe alterações na autenticação novo", o Intune pode forçar os usuários a atualizar a palavra-passe de forma que está em conformidade quando uma política de palavra-passe é enviada por push. Os utilizadores do macOS irão receber um pedido para atualizar a palavra-passe quando podemos integrar esse novo recurso de Apple, mesmo que a palavra-passe já está em conformidade. Tenha em atenção que se uma palavra-passe já está em conformidade e não tiver um requisito em relação a repetição de palavras-passe, em seguida, os utilizadores finais poderão atualizar para a palavra-passe existente. Os utilizadores finais verão apenas um pedido para atualizar a palavra-passe quando tentarem autenticar ou iniciar sessão no respetivo dispositivo. Se bloquear recursos da empresa até que o dispositivo é marcado como em conformidade, em seguida, sabe que os utilizadores finais nos dispositivos com macOS 10.14.2 podem ser impedidos de aceder a recursos da empresa como e-mail ou sites do SharePoint, até que a reposição de palavra-passe. No futuro, todas as atualizações das políticas de palavra-passe de configuração e de conformidade irão forçar utilizadores direcionados para atualizar as respetivas palavras-passe. A nossa pesquisa de cliente antes da implementação dessa alteração indicou a maioria dos clientes não serão afetados por esta alteração, uma vez que os utilizadores finais, normalmente, irá atualizar a palavra-passe depois de receber um pedido para inscrever-se com uma palavra-passe ou a repor a palavra-passe para permanecerem compatíveis
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+Pode querer permitir que o suporte técnico de saber. Iremos atualizar esta, o que é a nova página quando esta alteração é implementada. Se não pretender que esta política de palavra-passe do dispositivo macOS a serem impostas, é recomendável que anular a atribuição ou eliminar a política de macOS existente.
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Lembrete: Experiência de suporte do Intune para o Premier os clientes agora no Azure em vez do MPO <!--2828727-->
+Partilhámos na MC147649 em Setembro, que deverá ser removido a capacidade de criar pedidos de suporte do Intune do portal do Microsoft Premier Online (MPO) (premier.microsoft.com) em Dezembro. Agora, após um ligeiro atraso, no final de Janeiro, será redirecionado para criar pedidos de suporte apenas no Intune no Azure. 
+
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Após o fim de Janeiro, para continuar a melhorar o Premier dar suporte a experiência, não ser será capaz de criar pedidos de suporte no MPO.  Quando tenta fazer isso, verá uma linha de comandos que não poderá descartar, para ser redirecionado para o Intune no Azure. Aqui, pode criar um pedido de suporte, que será encaminhado para o Suporte da Microsoft dedicado ao Intune para diagnosticar e resolver o seu problema atempadamente. Tenha em atenção que os pedidos de suporte criados no portal do MPO não podem ser visualizados no portal do Azure. 
+
+O portal do Azure tem uma nova experiência de suporte, como, anunciámos recentemente no MC171941. Podem encontrar mais informações sobre isso em [ https://aka.ms/new_support_experience ](https://aka.ms/new_support_experience) e o link de informações adicionais.
+
+Se utilizar uma gestão de dispositivos móveis híbrida (MDM híbrida) ou cogestão, pode continuar a utilizar o MPO para criar pedidos de suporte para o ConfigMgr, mas utilizar o portal do Azure para criar pedidos de suporte para o Intune. Como lembrete, é a MDM híbrida [preterido](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), e deve planear mover para o Intune no Azure logo que possível. Para obter mais informações, veja [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Mover da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
+
+Tenha em atenção que apenas os utilizadores com as funções Administrador Global, Administrador do Serviço Intune e Administrador de Assistência Técnica podem criar pedidos de suporte no portal do Azure.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+- Pare de utilizar o MPO e utilize o Intune no Azure para criar e gerir todos os pedidos de suporte do Intune.  
+- Notifique o seu suporte técnico e atualize a documentação, se necessário.
+- Se tiver utilizadores sem as funções Administrador Global ou Administrador do Serviço Intune a criar pedidos de suporte no MPO, atribua-lhes a função Administrador de Assistência Técnica no Azure Active Directory, para que possam continuar a criar pedidos de suporte no portal do Azure.
+
+#### <a name="additional-information"></a>Informações adicionais
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Planear a alteração: Atualização da experiência de utilizador para a aplicação Portal da empresa do Intune para iOS
+Temos o prazer partilhar que Intune em breve lançar uma atualização da experiência de utilizador principais para a aplicação Portal da empresa iOS. A atualização será apresentam uma reformulação visual da home page com filtros avançados e acesso mais rápido para aplicações e livros.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Esta experiência de utilizador atualizada, enquanto mantém iOS atual funcionalidade do Portal da empresa, funcionalidade:
+- Uma home page com aspeto e funcionalidade do iOS nativo 
+- Recursos de filtragem em listagens de conteúdo e pesquisa, incluindo a capacidade de filtrar por tipo de conteúdo (aplicações ou e-Books) e a disponibilidade (gestão necessária ou disponível sem inscrição de dispositivos)
+- Capacidade de pesquisar e-Books
+- Procurar histórico para aplicações e e-Books, se é membro do programa TestFlight da Apple, será notificado sobre a versão de pré-lançamento da aplicação de Portal da empresa do Intune iOS atualizada quando ela se tornar disponível. Se não tiver a parte do programa TestFlight da Apple, não é muito tarde para se registar. Registar irá permitir-lhe utilizar a aplicação Portal da empresa atualizado antes de ser disponibilizado aos seus utilizadores finais. Também terá a oportunidade de fornecer seus comentários diretamente para a equipa do Intune.  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+Não é necessário efetuar qualquer ação; Estas alterações serão lançadas numa versão de aplicação do iOS futuros CP. 
+
+#### <a name="additional-information"></a>Informações adicionais
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Planear a alteração: Exchange Online para o conector do Intune não estarão disponível no Intune <!-- 3105122 -->
 Para simplificar sua experiência com o Exchange Online e o acesso condicional, vamos desativar o Exchange Online para Intune "conector de serviços". Esta alteração irá começar com a atualização do serviço de Dezembro e ser concluída com a atualização do serviço de Fevereiro de 2019.
 
@@ -1286,27 +1334,6 @@ Quando as atualizações forem implementadas, já não terá de utilizar grupos 
 Não tem de fazer nada enquanto movemos as suas atribuições de políticas. Se estiver a atribuir políticas na consola do Intune for Education, continue a fazê-lo.
 
 Se estiver a atribuir políticas aos grupos do Azure AD acima mencionados no Intune no Azure, comece, em vez disso, a atribuí-los ao grupo Todos os Utilizadores e Todos os Dispositivos na consola do Intune for Education. Quando vir que o nome dos grupos do Azure AD mudou e passou a incluir a palavra "obsoleto" na consola, pare de atribuir políticas no Azure AD. Se não estiver a utilizar os grupos cujo nome mudou para outro fim, deve eliminá-los.
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Planear a alteração: Experimente o novo suporte do Intune para Premier clientes 
-12/4/18 atualização: Estamos tentando tornar esse processo melhor para si, para a criação do pedido de suporte no MPO será não desativada a 3 de Dezembro, mas numa data posterior em vez disso. Vamos informá-sei através do Centro de mensagens e atualizar esta publicação em breve para partilhar as linhas do tempo para que esta alteração.
-
-Como cliente Premier da Microsoft, atualmente, pode utilizar o portal do Microsoft Premier Online (MPO) (premier.microsoft.com) e o Intune no Azure (portal.azure.com) para criar pedidos de suporte do Intune. A partir de 3 de dezembro de 2018, no sentido de continuar a melhorar a experiência de suporte Premier, poderá criar pedidos de suporte apenas no Intune no Azure.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Depois de 3 de dezembro, não poderá criar pedidos de suporte no MPO.  Quando tentar fazê-lo, verá uma mensagem a informar que será redirecionado para o Intune no Azure, a qual não poderá dispensar. Aqui, pode criar um pedido de suporte, que será encaminhado para o Suporte da Microsoft dedicado ao Intune para diagnosticar e resolver o seu problema atempadamente. Os pedidos de suporte criados no portal do MPO não podem ser visualizados no portal do Azure, pelo que deve parar de criar pedidos de suporte no MPO.  
-
-Se utilizar uma gestão de dispositivos móveis híbrida (MDM híbrida) ou cogestão, pode continuar a utilizar o MPO para criar pedidos de suporte para o ConfigMgr, mas utilizar o portal do Azure para criar pedidos de suporte para o Intune. Lembre-se de que a MDM híbrida foi preterida e que deve planear mudar para o Intune no Azure o mais rapidamente possível. Para obter mais informações, veja [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (Mover da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
-
-Tenha em atenção que apenas os utilizadores com as funções Administrador Global, Administrador do Serviço Intune e Administrador de Assistência Técnica podem criar pedidos de suporte no portal do Azure.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-- Pare de utilizar o MPO e utilize o Intune no Azure para criar e gerir todos os pedidos de suporte do Intune.  
-- Notifique o seu suporte técnico e atualize a documentação, se necessário.
-- Se tiver utilizadores sem as funções Administrador Global ou Administrador do Serviço Intune a criar pedidos de suporte no MPO, atribua-lhes a função Administrador de Assistência Técnica no Azure Active Directory, para que possam continuar a criar pedidos de suporte no portal do Azure.
-- Clique em Informações Adicionais para obter mais informações e ligações úteis.
-
-#### <a name="additional-information"></a>Informações adicionais
-Para obter mais informações, veja a [mensagem de blogue da equipa de suporte do Microsoft Intune](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Tome medidas: Atualize o seu dispositivo Android restrição ou a conformidade de palavra-passe definições de política no Intune
