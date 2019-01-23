@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0366a4394f5046d72c7cf01d2848974d225597a6
+ms.sourcegitcommit: d757c907af6c3c1b20823ffa4fda3acbaa8ecd9f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387096"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54444562"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Inscrever os dispositivos dedicados Android ou totalmente geridos dispositivos (pré-visualização)
 
@@ -42,7 +42,7 @@ Para dispositivos que suportam o NFC, pode aprovisionar os seus dispositivos atr
 
 ### <a name="enroll-by-using-a-token"></a>Inscrever com um token
 
-Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. O Android 6.1 e versões posteriores também podem tirar partido da leitura de códigos QR ao utilizar o método de inscrição **aft#setup**.
+Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. Android versões 6.1 e versões posteriores, também podem aproveitar o código QR ao utilizar o **afw #setup** método de inscrição.
 
 1. Ligue o seu dispositivo apagado.
 2. No ecrã **Bem-vindo**, selecione o seu idioma.
