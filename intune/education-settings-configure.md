@@ -1,12 +1,11 @@
 ---
-title: Configurar as definições de educação do Intune para Windows 10
-titleSuffix: Microsoft Intune
-description: Saiba como utilizar o Intune para configurar as definições de educação do Windows 10 nos dispositivos que gere.
+title: Adicione ou configure as definições de educação no Microsoft Intune – Azure | Documentos da Microsoft
+description: Utilize o aplicação fazer um teste num perfil de configuração do dispositivo no Windows 10 e dispositivos posteriores no Microsoft Intune. Criar um perfil de configuração usando settiings educação e introduza um URL de aplicação de teste, escolha como os utilizadores início de sessão, monitorizar a tela durante o teste e permitirem ou impedem a sugestões de texto durante o teste.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,44 +15,46 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 120aca8dae457748fea322ce164aa663ffa7e748
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e49e1673e0bebdcdafb8ad7792051c76b80f696
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831467"
 ---
-# <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Como configurar as definições de educação do Windows 10 no Microsoft Intune
+# <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Utilizar o aplicação fazer um teste em dispositivos Windows 10 no Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Os perfis de educação permitem-lhe especificar os detalhes que configuram a aplicação Fazer um Teste do Windows, incluindo detalhes da conta e o URL de teste. Quando configurar esta opção, a aplicação Fazer um Teste abre-se com o teste que especificar e mais nenhuma aplicação pode ser executada no dispositivo até que o teste esteja concluído.
+Os perfis de educação no Intune foram concebidos para os estudantes realizarem um teste ou o exame nos dispositivos. Esta funcionalidade inclui a **fazer um teste** aplicações e definições para adicionar um URL de teste, escolha como os utilizadores finais iniciar sessão para o teste e muito mais. Esta funcionalidade suporta a plataforma seguinte:
 
-Para obter detalhes sobre a aplicação Fazer um Teste, veja [Take tests in Windows 10 (Fazer testes no Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+- Windows 10 e posterior
 
-## <a name="create-a-device-profile-containing-education-profile-settings"></a>Criar um perfil de dispositivo com as definições de perfil de educação
+Quando o utilizador inicia sessão, o aplicação fazer um teste abre-se automaticamente com o teste que introduziu. Nenhuma outra aplicação pode executar no dispositivo, enquanto o teste está em curso. [Realizar testes no Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) fornece mais detalhes sobre como fazer uma aplicação de teste.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
-3. No painel Perfis, selecione **Criar perfil**.
-4. No painel **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil de restrição de dispositivos.
-5. Na lista pendente **Plataforma**, selecione **Windows 10 e posterior**.
-6. Na lista pendente **Tipo de perfil**, escolha **Perfil de educação**. 
-7. Selecione **Definições > Configurar** e, em seguida, no painel **Realize um Teste**, configure o seguinte:
-    - **Tipo de conta** – selecione um tipo de conta no campo pendente.
-    - **Nome de utilizador da conta** –introduza o nome de utilizador da conta utilizada com Fazer um Teste. Pode ser uma conta de domínio, uma conta do Azure Active Directory (AAD) ou uma conta de computador local.
-    - **URL de avaliação** – indique o URL do teste que quer que os utilizadores realizem. Para obter mais informações, veja a documentação de Fazer um Teste.
-    - **Monitorização do ecrã** – especifique se quer monitorizar a atividade do ecrã enquanto os utilizadores estão a fazer um teste.
-    - **Sugestão de texto** – permita ou bloqueie as sugestões de texto enquanto os utilizadores estão a fazer o teste.
-8. Quando tiver terminado, regresse ao painel **Criar perfil** e clique em **Criar**.
+Este artigo lista os passos para criar um perfil de configuração do dispositivo no Microsoft Intune. Também inclui informações para ler e saber mais sobre as definições de educação disponíveis para os seus dispositivos Windows 10.
 
-O perfil será criado e apresentado no painel Lista de perfis.
+## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
+
+1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Microsoft Intune**.
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Introduza as seguintes propriedades:
+
+    - **Nome**: Introduza um nome descritivo para o novo perfil.
+    - **Descrição**: Introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: Escolher **Windows 10 e posterior**.
+    - **Perfil**: Escolher **perfil de educação**.
+
+4. Introduza as definições que pretende configurar:
+
+    - [Windows 10 e posterior](education-settings-windows.md)
+
+5. Selecione **OK** > **Criar** para guardar as alterações.
+
+Após introduzir as suas definições e criar o perfil, este será apresentado na lista de perfis. Em seguida, [atribua este perfil a alguns grupos](device-profile-assign.md).
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-Se quiser continuar e atribuir este perfil a grupos, veja [Como atribuir perfis de dispositivo](device-profile-assign.md).
+Ver uma lista do [as definições de educação do Windows 10](education-settings-windows.md) e suas descrições.
 
-
-
+[Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

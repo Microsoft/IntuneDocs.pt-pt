@@ -15,87 +15,86 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 07a1c0a0825faafa85b3fb2904dcb517268617bf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 745fd366520ba55e54a5b666d47469debb241ab9
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180056"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831535"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
 O RBAC ajuda-o a controlar quem pode executar várias tarefas do Intune na sua organização e a quem se aplicam essas tarefas. Pode utilizar as funções incorporadas que abrangem alguns cenários comuns do Intune ou pode criar as suas próprias funções. Uma função é definida por:
 
-- **Definição de função**: o nome de uma função, os recursos que gere e as permissões concedidas a cada recurso.
-- **Membros**: os grupos de utilizadores aos quais são concedidas as permissões.
-- **Âmbito**: os grupos de utilizadores ou dispositivos que os membros podem gerir.
-- **Atribuição**: após a configuração da definição, dos membros e do âmbito, a função é atribuída.
+- **Definição de função**: O nome de uma função, os recursos que gere e as permissões concedidas a cada recurso.
+- **Membros**: Os grupos de utilizadores que são concedidos as permissões.
+- **Âmbito**: Os grupos de utilizadores ou dispositivos que os membros podem gerir.
+- **Atribuição**: Quando a definição, os membros e âmbito tenham sido configurados, a função é atribuída.
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
 
 Com o novo portal do Azure, o **Azure Active Directory (Azure AD)** fornece duas Funções de Diretório que podem ser utilizadas com o Intune. A estas funções é concedida uma permissão total para realizar todas as atividades no Intune:
 
-- **Administrador Global:** os utilizadores com esta função têm acesso a todas as funcionalidades administrativas no Azure AD, bem como a serviços que federam para o Azure AD como o Exchange Online, o SharePoint Online e o Skype para Empresas Online. A pessoa que se inscreve no inquilino do Azure AD torna-se um administrador global. Apenas os administradores globais podem atribuir outras funções de administradores do Azure AD. Pode existir mais de um administrador global na sua organização. Os administradores globais podem redefinir a palavra-passe para qualquer utilizador e todos os outros administradores.
+- **Administrador global:** Os utilizadores com esta função têm acesso a todas as funcionalidades administrativas no Azure AD, bem como serviços que federam para o Azure AD como o Exchange Online, SharePoint Online e Skype para empresas Online. A pessoa que se inscreve no inquilino do Azure AD torna-se um administrador global. Apenas os administradores globais podem atribuir outras funções de administradores do Azure AD. Pode existir mais de um administrador global na sua organização. Os administradores globais podem redefinir a palavra-passe para qualquer utilizador e todos os outros administradores.
 
-- **Administrador de Serviço do Intune:** os utilizadores com esta função têm permissões globais no Intune quando o serviço está presente. Adicionalmente, além das restrições de substituição do Azure, esta função permite gerir utilizadores e dispositivos, assim como criar e gerir grupos do Intune.
+- **Administrador de serviço do Intune:** Os utilizadores com esta função possuem permissões globais no Intune quando o serviço está presente. Adicionalmente, além das restrições de substituição do Azure, esta função permite gerir utilizadores e dispositivos, assim como criar e gerir grupos do Intune.
 
-- **Administrador de Acesso Condicional:** os utilizadores com esta função só têm permissões para ver, criar, modificar e eliminar políticas de acesso condicional.
+- **Administrador de acesso condicional:** Os utilizadores com esta função só têm permissões para ver, criar, modificar e eliminar políticas de acesso condicional.
 
     > [!IMPORTANT]
     > A função Administrador de Serviço do Intune não permite gerir configurações de acesso condicional do Azure AD.
-    > Os membros de funções do Intune necessitam de uma licença do Intune.
+    > A ser atribuída uma função do Intune, o utilizador tem de ter uma licença do Intune.
 
     > [!TIP]
-    > O Intune também mostra três extensões do Azure AD: **Utilizadores**, **Grupos** e **Acesso condicional** que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais detalhes, veja [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+    > O Intune também mostra três extensões do Azure AD: **Os utilizadores**, **grupos**, e **acesso condicional**, que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais informações, consulte [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ## <a name="roles-created-in-the-intune-classic-portal"></a>Funções criadas no portal clássico do Intune
 
-Apenas os utilizadores **Administradores de Serviços** do Intune com permissões “Completas” são migrados do portal clássico do Intune para o Intune no portal do Azure. Precisa de reatribuir os utilizadores **Administradores de Serviço** com acesso “Só de leitura” ou “Suporte técnico” nas funções de Intune do portal do Azure e removê-los do portal clássico.
+Apenas os utilizadores **Administradores de Serviços** do Intune com permissões “Completas” são migrados do portal clássico do Intune para o Intune no portal do Azure. Tem a reatribuir o Intune **os administradores de serviços** os utilizadores com "Só de leitura" ou "Suporte técnico" acesso para as funções do Intune no portal do Azure e removê-los no portal clássico.
 
 > [!IMPORTANT]
-> Talvez seja necessário manter o acesso de Administrador de Serviços do Intune no portal clássico se os seus administradores ainda precisarem de acesso para gerir PCs com o Intune.
+> Poderá ter de manter o acesso de administrador de serviço do Intune no portal clássico se os seus administradores ainda precisarem de acesso para gerir PCs com o Intune.
 
 ## <a name="built-in-roles"></a>Funções incorporadas
 
-As seguintes funções estão incorporadas no Intune e pode atribuí-las a grupos sem qualquer configuração adicional:
+Pode atribuir funções incorporadas para grupos sem configuração adicional. Não é possível eliminar ou editar uma função incorporada.
 
-- **Operador do Suporte Técnico**: executa tarefas remotas em utilizadores e dispositivos e pode atribuir políticas ou aplicações a utilizadores ou dispositivos.
-- **Gestor de Políticas e Perfis**: gere a política de conformidade, perfis de configuração, inscrição da Apple e identificadores de dispositivos empresariais.
-- **Operador Só de Leitura**: vê as informações do utilizador, do dispositivo, da inscrição, da configuração e da aplicação. Não pode fazer alterações ao Intune.
-- **Gestor de Aplicações**: gere aplicações móveis e geridas, pode ler as informações do dispositivo e ver os perfis de configuração do dispositivo.
-- **Administrador das Funções do Intune**: gere as funções do Intune personalizadas e adiciona atribuições para funções do Intune incorporadas. É a única função do Intune que pode atribuir permissões aos Administradores.
-- **Administrador de Escola**: gere os dispositivos Windows 10 no [Intune for Education](introduction-intune-education.md) e pode efetuar as seguintes ações: 
+- **Operador do suporte técnico**: Executa tarefas remotas em utilizadores e dispositivos e pode atribuir políticas ou aplicações a utilizadores ou dispositivos.
+- **Política e o Gerenciador de perfis**: Gere a política de conformidade, perfis de configuração, inscrição da Apple e identificadores de dispositivo da empresa.
+- **Operador só de leitura**: Utilizador de vistas, dispositivo, inscrição, configuração e informações sobre a aplicação. Não é possível efetuar alterações ao Intune.
+- **Gerenciador de aplicativos**: Gere aplicações móveis e geridas, pode ler as informações do dispositivo e pode ver os perfis de configuração do dispositivo.
+- **Administrador de função do Intune**: Gere funções personalizadas do Intune e adiciona as atribuições de funções incorporadas do Intune. É a única função do Intune que pode atribuir permissões a administradores.
+- **Administrador de escola**: Gere a dispositivos Windows 10 no [o Intune for Education](introduction-intune-education.md)e pode efetuar as seguintes ações: 
 
-|Permissão|Operação|
-|---|---|
-|Dados da Auditoria|Ler|
-|Configurações dos Dispositivos|Atribuir, Criar, Eliminar, Ler, Atualizar|
-|Gestores de Inscrição de Dispositivos|Ler, Atualizar|
-|Dispositivos Geridos|Ler, Atualizar<!--, Delete [To be added in 1803]-->|
-|Aplicações móveis|Atribuir, Criar, Eliminar, Ler, Atualizar|
-|Relatórios|Ler|
-|Ações Remotas|Limpar o PC, Reiniciar, Bloqueio Remoto, Extinguir, Sincronizar Dispositivos, Eliminação|
-|Organização|Ler|
+    |Permissão|Operação|
+    |---|---|
+    |Dados da Auditoria|Leitura|
+    |Configurações dos Dispositivos|Atribuir, Criar, Eliminar, Ler, Atualizar|
+    |Gestores de Inscrição de Dispositivos|Ler, Atualizar|
+    |Dispositivos Geridos|Ler, Atualizar<!--, Delete [To be added in 1803]-->|
+    |Aplicações móveis|Atribuir, Criar, Eliminar, Ler, Atualizar|
+    |Relatórios|Leitura|
+    |Ações Remotas|Limpar o PC, Reiniciar, Bloqueio Remoto, Extinguir, Sincronizar Dispositivos, Eliminação|
+    |Organização|Leitura|
 
 ### <a name="to-assign-a-built-in-role"></a>Para atribuir uma função incorporada
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Funções** > **Todas as funções**.
-1. No painel **Funções do Intune – Todas as funções**, selecione a função incorporada que pretende atribuir.
+4. No painel **Funções do Intune – Todas as funções**, selecione a função incorporada que pretende atribuir.
 
-2. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**.
+5. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**.
 
-    > [!NOTE]
-    > Não pode eliminar ou editar funções incorporadas
+6. No painel Função personalizada, selecione **Atribuir**.
 
-3. No painel Função personalizada, selecione **Atribuir**.
+7. Na **atribuições de funções** painel, introduza um **nome** e opcionais **Descrição** para a atribuição.
 
-4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
-    - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
+8. Para **membros**, escolha um grupo que contém o usuário quer conceder as permissões.
+
+9. Para **âmbito**, escolha um grupo que contém os utilizadores que o membro acima terá permissão para gerir.
 <br></br>
-5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
+10. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
 
 ### <a name="intune-rbac-table"></a>Tabela de RBAC do Intune
 
@@ -122,7 +121,7 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 
 5. No painel **Permissões**, selecione as permissões que quer utilizar com esta função. Utilize a [Tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais as permissões que quer aplicar.
 
-6. Quando tiver terminado, escolha **OK**.
+6. Quando tiver terminado, selecione **OK**.
 
 7. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é apresentada na lista no painel **Funções do Intune – Todas as funções**.
 
@@ -134,11 +133,13 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 
 3. No painel Função personalizada, selecione **Atribuir**.
 
-4. No painel **Atribuições de Função**, introduza um **Nome** e uma **Descrição** opcional para a atribuição e, em seguida, selecione o seguinte:
-    - **Membros** – Selecione um grupo que inclua o utilizador ao qual pretende conceder as permissões.
-    - **Âmbito** – Selecione um grupo que inclua os utilizadores que o membro acima terá permissão para gerir.
-<br></br>
-5. Quando tiver terminado, clique em **OK**. A nova atribuição é apresentada na lista de atribuições.
+4. Na **atribuições de funções** painel, introduza um **nome** e opcionais **Descrição** para a atribuição.
+
+5. Para **membros**, escolha um grupo que contém o usuário quer conceder as permissões.
+
+6. Para **âmbito**, escolha um grupo que contém os utilizadores que o membro acima terá permissão para gerir.
+
+7. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

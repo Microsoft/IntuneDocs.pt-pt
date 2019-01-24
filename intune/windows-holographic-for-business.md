@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831603"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerir e utilizar funcionalidades de gestão de dispositivos diferentes no Windows Holographic e dispositivos HoloLens com o Intune
 
@@ -84,9 +84,9 @@ O Intune tem algumas ações incorporadas que permitem que os administradores de
 
 Ao utilizar dispositivos com o Windows Holographic for Business, pode realizar as seguintes ações: 
 
-- **[Apagar](devices-wipe.md#wipe)**: O **apagar** ação remove o dispositivo do Intune e restaura as predefinições de fábrica do dispositivo. Utilize esta ação antes de dar o dispositivo a um novo utilizador ou se o dispositivo for perdido ou roubado.
+- **[Wipe](devices-wipe.md#wipe)**: O **apagar** ação remove o dispositivo do Intune e restaura as predefinições de fábrica do dispositivo. Utilize esta ação antes de dar o dispositivo a um novo utilizador ou se o dispositivo for perdido ou roubado.
 
-- **[Extinguir](devices-wipe.md#retire)**: O **extinguir** ação remove o dispositivo do Intune. Também remove os dados da aplicação gerida, as definições e os perfis de e-mail atribuídos pelo Intune. Os dados pessoais do utilizador permanecem no dispositivo.
+- **[Retire](devices-wipe.md#retire)**: O **extinguir** ação remove o dispositivo do Intune. Também remove os dados da aplicação gerida, as definições e os perfis de e-mail atribuídos pelo Intune. Os dados pessoais do utilizador permanecem no dispositivo.
 
 - **[Sincronizar dispositivos para obter as políticas e ações mais recentes](device-sync.md)**: O **sincronização** ação força o dispositivo para dar entrada imediatamente no Intune. Quando um dispositivo comunica com o Intune, recebe imediatamente todas as ações ou políticas pendentes que tenham sido atribuídas ao mesmo. Esta funcionalidade ajuda a validar e resolver problemas de políticas que atribuiu, sem esperar pela próxima comunicação agendada.
 
@@ -108,7 +108,7 @@ Nos seus perfis, pode utilizar definições de OMA-URI para personalizar algumas
 
 Para configurar definições de OMA-URI (Open Mobile Alliance Uniform Resource Identifier), pode criar um perfil personalizado no Intune. Utilize as definições de OMA-URI para controlar diferentes funcionalidades nos seus dispositivos com o Windows Holographic for Business, tal como ativar a VPN ou procurar atualizações no Microsoft Update.
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Configurar o modo de quiosque](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Configurar o modo de quiosque](kiosk-settings-holographic.md)
 
 Com as funcionalidades de PC partilhadas ou de convidado disponíveis no Intune, pode configurar dispositivos com o Windows Holographic for Business para que sejam executados como um quiosque. Estes dispositivos podem executar uma aplicação (modo de quiosque de aplicação única) ou múltiplas aplicações (modo de quiosque de várias aplicações).
 
@@ -124,7 +124,7 @@ As Redes Virtuais Privadas (VPN) permitem-lhe conceder aos seus utilizadores ace
 
 Também pode criar um perfil de Wi-Fi no Intune para atribuir definições de rede sem fios aos seus dispositivos com o Windows Holographic for Business. Quando atribui um perfil de Wi-Fi, os seus utilizadores finais obtêm acesso de rede empresarial, sem qualquer configuração de rede. Por exemplo, pode criar uma rede Wi-Fi dedicada apenas para os seus dispositivos com o Windows Holographic for Business.
 
-## <a name="shared-multi-user-devices"></a>Vários utilizadores dispositivos partilhados
+## <a name="shared-multi-user-devices"></a>Shared multi-user devices (Dispositivos multiutilizador partilhados)
 [Dispositivos partilhados](shared-user-device-settings-windows-holographic.md)
 
 Dispositivos que executam o Windows Holographic for Business, como o Microsoft HoloLens, podem ter vários utilizadores. O Intune inclui definições para controlar diferentes funcionalidades nestes dispositivos partilhados, como gerenciamento de energia, a utilizar o armazenamento local e a gestão de contas. Os perfis de configuração também podem ser aplicados a dispositivos com sistemas operativos diferentes. Por exemplo, o grupo de dispositivos pode ter dispositivos que executam o RS2 e RS3 no mesmo grupo.

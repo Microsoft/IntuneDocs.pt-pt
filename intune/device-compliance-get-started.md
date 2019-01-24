@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: b6679f0b1d7392bc2db2e39b4c283b702dd21285
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531333"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751234"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
@@ -93,21 +93,6 @@ Para utilizar políticas de conformidade de dispositivos, é necessário que:
 Quando um dispositivo é inscrito no Intune, é iniciado o processo de registo do Azure AD, o que atualiza os atributos do dispositivo no Azure AD. Uma das principais informações do dispositivo é o estado de conformidade do dispositivo. Este estado de conformidade do dispositivo é utilizado pelas políticas de acesso condicional para bloquear ou permitir o acesso a e-mails e outros recursos da empresa.
 
 O [processo de registo do Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) fornece mais informações.
-
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>Atribuir um resultado de estado dos perfis de configuração do dispositivo
-
-Se um dispositivo tiver múltiplos perfis de configuração e estados de conformidade diferentes para dois ou mais dos perfis de configuração atribuídos, isso significa que está atribuído um único resultado de estado de conformidade. Esta atribuição baseia-se num nível de gravidade concetual atribuído a cada estado de conformidade. Cada estado de conformidade tem o seguinte nível de gravidade:
-
-|Estado  |Gravidade  |
-|---------|---------|
-|Pendente     |1|
-|Bem-sucedido     |2|
-|Com Falhas     |3|
-|Erro     |4|
-
-Quando um dispositivo tem múltiplos perfis de configuração, é atribuído o nível de gravidade mais elevado de todos os perfis a esse dispositivo.
-
-Por exemplo, imaginemos que um dispositivo tem três perfis atribuídos: um com o estado Pending (gravidade = 1), outro com o estado Succeeded (gravidade = 2) e um com o estado Error (gravidade = 4). O estado Error tem o nível de gravidade mais elevado, pelo que é atribuído como o resultado do estado de conformidade aos três perfis.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Atribuir um estado InGracePeriod
 

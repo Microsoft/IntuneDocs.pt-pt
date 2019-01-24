@@ -16,18 +16,19 @@ ms.reviewer: derriw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd71af5d52f81d05ce424212e029f01c59a33a8d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831586"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como configurar as definições do Intune para a aplicação Sala de Aula do iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
->[!NOTE]
->As definições do Intune para a aplicação Sala de Aula tornaram-se obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
+
+> [!NOTE]
+> Definições do Intune para a aplicação sala de aula estão obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
 
 ## <a name="introduction"></a>Introdução
 A [Sala de Aula](https://itunes.apple.com/app/id1085319084) é uma aplicação que ajuda os professores a orientar a aprendizagem e a controlar os dispositivos dos estudantes numa sala de aula. Por exemplo, através da aplicação os professores podem:
@@ -75,7 +76,7 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 
 ### <a name="configure-general-settings"></a>Configurar as definições gerais
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.

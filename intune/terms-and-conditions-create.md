@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831518"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Termos e condições de acesso de utilizador
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032304"
 
 Enquanto administrador do Intune, pode exigir que os utilizadores aceitem os termos e condições da sua empresa antes de utilizarem o Portal da Empresa para:
 - inscrever dispositivos
-- aceder a recursos como aplicações e e-mail da empresa.
+- aceder a recursos como aplicações e e-mail da empresa.    
 A configuração dos termos e condições é opcional.
 
 Pode criar vários conjuntos de termos e atribuí-los a diferentes grupos, tal como para suportar outros idiomas.
@@ -48,17 +48,17 @@ Conclua estes passos para criar os termos e condições. O nome a apresentar e a
 ![Captura de ecrã do portal do Azure a mostrar o botão Criar dos termos e condições](media/terms-create-terms.png)
 3. No painel expandido, especifique as seguintes informações:
 
-   - **Nome a apresentar**: o nome relativo aos termos no portal do Azure. Os utilizadores não veem este nome.
+   - **Nome a apresentar**: O nome relativo aos termos no portal do Azure. Os utilizadores não veem este nome.
 
-   - **Descrição**: detalhes opcionais que ajudam a identificar este conjunto de termos no Portal do Azure.
+   - **Descrição**: Detalhes opcionais que o ajudam a identificar este conjunto de termos no portal do Azure.
 
 4. Selecione a seta junto a **Definir termos de utilização** para abrir o painel Termos e Condições e, em seguida, introduza as seguintes informações:
 
    ![Captura de ecrã a mostrar o ecrã de aceitação dos termos e condições do utilizador final, com um resumo dos termos](./media/terms-summary-create.png)
 
-   - **Título**: o nome dos termos que os utilizadores veem no Portal da Empresa acima do **Resumo**.
-   - **Resumo dos Termos**: texto que explica o que significa quando os utilizadores aceitam os termos. Por exemplo, "Ao inscrever o dispositivo, aceita os termos de utilização definidos pela Contoso. Leia atentamente os termos antes de continuar”.
-   - **Termos e Condições**: os termos e condições que os utilizadores veem e devem aceitar ou rejeitar.
+   - **Título**: O nome dos termos que os utilizadores veem no Portal da empresa acima do **resumo**.
+   - **Resumo dos termos**: Texto que explica o que significa quando os utilizadores aceitem os termos. Por exemplo, "Ao inscrever o dispositivo, aceita os termos de utilização definidos pela Contoso. Leia atentamente os termos antes de continuar”.
+   - **Termos e condições**: Os termos e condições que os utilizadores ver e devem aceitar ou rejeitar.
 
 5. Selecione **OK** > **Criar**.
 

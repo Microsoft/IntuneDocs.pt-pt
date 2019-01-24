@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297388"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831569"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 
@@ -106,7 +106,7 @@ Depois de criar anéis de atualização, atribua-os a grupos de dispositivos. Ao
 
    - **Impedir o utilizador da colocar em pausa atualizações de Windows**: Permitido por predefinição. Utilize esta definição para bloquear ou permitir que os utilizadores para a instalação da atualização de colocar em pausa a *definições* das suas máquinas. 
       
-   - **Modo de transferência de otimização de entrega**: Otimização da entrega já não está configurada como parte de uma cadência de atualização do Windows 10 em atualizações de Software. Otimização da entrega está agora definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis na consola. Pode remover estas configurações anteriores ao editar que sejam *não configurado*, mas caso contrário, não pode ser modificados. Para evitar conflitos entre políticas novas e antigas, consulte [mover de cadências de atualização existente para a Otimização da entrega](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) e, em seguida, mova as suas definições para um perfil de otimização de entrega. 
+   - **Modo de transferência de otimização de entrega**: Otimização da entrega já não está configurada como parte de uma cadência de atualização do Windows 10 em atualizações de Software. Otimização da entrega está agora definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis na consola. Pode remover estas configurações anteriores ao editar que sejam *não configurado*, mas caso contrário, não pode ser modificados. Para evitar conflitos entre políticas novas e antigas, consulte [mover de cadências de atualização existente para a Otimização da entrega](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) e, em seguida, mova as suas definições para um perfil de otimização de entrega. 
 
 5. Quando terminar, selecione **OK**. Em **Criar Cadência de Atualização**, selecione **Criar**.
 

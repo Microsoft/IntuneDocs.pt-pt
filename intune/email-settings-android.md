@@ -1,6 +1,6 @@
 ---
-title: Android & definições de e-mail do Android Enterprise no Microsoft Intune – Azure | Documentos da Microsoft
-description: Criar um dispositivo de perfis de e-mail de configuração que utilizam servidores do Exchange e obter atributos do Azure Active Directory. Ativar SSL ou SMIME, autenticar utilizadores com certificados ou o nome de utilizador/palavra-passe e sincronizar o e-mail e agendas on Android e Android através do Microsoft Intune de dispositivos de perfil de trabalho.
+title: Definições de e-mail Android no Microsoft Intune – Azure | Documentos da Microsoft
+description: Criar um dispositivo de perfis de e-mail de configuração que utilizam servidores do Exchange e obter atributos do Azure Active Directory. Ativar SSL ou SMIME, autenticar utilizadores com certificados ou o nome de utilizador/palavra-passe e sincronizar o e-mail e agendas em dispositivos Android Samsung Knox com o Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,34 +13,33 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: 4336be8d24ac4a81ec6fca09f22d594000bbd9a5
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831397"
 ---
-# <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android e definições de dispositivos Android Enterprise para configurar o e-mail, autenticação e a sincronização no Intune
+# <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Definições de dispositivo Android para configurar o e-mail, autenticação e a sincronização no Intune
 
-Este artigo apresenta uma lista e descreve as definições de correio eletrónico diferente que pode controlar em dispositivos Android e Android Enterprise. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para configurar um servidor de e-mail, utilize o SSL para encriptar mensagens de correio eletrónico e muito mais.
+Este artigo apresenta uma lista e descreve as definições de correio eletrónico diferente que pode controlar em dispositivos Android Samsung Knox no Intune. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para configurar um servidor de e-mail, utilize o SSL para encriptar mensagens de correio eletrónico e muito mais.
 
-Enquanto administrador do Intune, pode criar e atribuir definições de e-mail aos seguintes dispositivos Android:
+Enquanto administrador do Intune, pode criar e atribuir definições de e-mail para dispositivos Android Samsung Knox Standard.
 
-- Android Samsung Knox Standard
-- Android Enterprise
+Para obter mais informações sobre perfis de e-mail no Intune, consulte [configurar definições de e-mail](email-settings-configure.md).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração do dispositivo](email-settings-configure.md).
+[Criar um perfil de configuração do dispositivo](email-settings-configure.md#create-a-device-profile).
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
-- **Servidor de e-mail**: Introduza o nome de anfitrião do seu Exchange server.
+- **Servidor de e-mail**: Introduza o nome de anfitrião do seu Exchange server. Por exemplo, introduza `outlook.office365.com`.
 - **Nome da conta**: Introduza o nome a apresentar para a conta de e-mail. Este nome será apresentado nos dispositivos dos utilizadores.
-- **Atributo de nome de utilizador do AAD**: Este nome é o atributo que Intune obtém do Azure Active Directory (AAD). O Intune gera de forma dinâmica o nome de utilizador utilizado por este perfil. As opções são:
+- **Atributo de nome de utilizador do AAD**: Este nome é o atributo que Intune obtém do Azure Active Directory (Azure AD). O Intune gera de forma dinâmica o nome de utilizador utilizado por este perfil. As opções são:
   - **Nome Principal de utilizador**: Obtém o nome, tais como `user1` ou `user1@contoso.com`
   - **Nome de utilizador**: Obtém apenas o nome, tal como `user1`
-  - **sAM nome da conta**: Requer o domínio, tal como `domain\user1`. O nome da conta SAM só pode ser utilizado em dispositivos Android. O Android Enterprise não é suportado.
+  - **sAM nome da conta**: Requer o domínio, tal como `domain\user1`. nome da conta sAM só é utilizado com dispositivos Android.
 
     Introduza também:  
     - **Origem de nome de domínio do utilizador**: Escolher **AAD** (o Azure Active Directory) ou **personalizado**.
@@ -51,7 +50,9 @@ Enquanto administrador do Intune, pode criar e atribuir definições de e-mail a
       Ao optar por utilizar atributos **Personalizados**, introduza:
       - **Nome de domínio personalizado para utilizar**: Introduza um valor que o Intune utiliza para o nome de domínio, tal como `contoso.com` ou `contoso`
 
-- **Atributo de endereço de e-mail do AAD**: Escolha como é gerado o endereço de e-mail do utilizador. Selecione **Nome principal de utilizador** (`user1@contoso.com` ou `user1`) para utilizar o nome principal completo como o endereço de e-mail ou o **Endereço SMTP primário** (`user1@contoso.com`) para utilizar o endereço SMTP primário para iniciar sessão no Exchange.
+- **Atributo de endereço de e-mail do AAD**: Este nome é o atributo de correio eletrónico que Intune obtém do Azure AD. Intune gera dinamicamente o endereço de e-mail que é utilizado por este perfil. As opções são:
+  - **Nome principal de utilizador**:  Utiliza o nome principal completo, como `user1@contoso.com` ou `user1`, como o endereço de e-mail.
+  - **Endereço SMTP principal**: Utiliza o endereço SMTP principal, como `user1@contoso.com`, para iniciar sessão no Exchange.
 
 - **Método de autenticação**: Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.
   - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente para autenticar a ligação ao Exchange.
@@ -71,27 +72,13 @@ Enquanto administrador do Intune, pode criar e atribuir definições de e-mail a
 
 - **Tipo de conteúdo a sincronizar**: Selecione os tipos de conteúdo que pretende sincronizar nos dispositivos. **Não configurado** desativa esta definição. Quando definido como **não configurado**, se a sincronização de permite que um utilizador final no dispositivo, a sincronização está desabilitada novamente quando o dispositivo for sincronizado com o Intune, conforme a política é reforçada. 
 
-  Pode sincronizar o seguinte conteúdo: 
-  - **Contactos**
-  - **Calendário**
-  - **Tarefas**
-
-## <a name="android-enterprise"></a>Android Enterprise
-
-- **Aplicação de e-mail**: Selecione **Gmail** ou **Nine Work**
-- **Servidor de e-mail**: O nome de anfitrião do seu Exchange server.
-- **Atributo de nome de utilizador do AAD**: Este nome é o atributo no Active Directory (AD) ou Azure AD, o que é utilizado para gerar o nome de utilizador para este perfil de e-mail. Selecione o **Endereço SMTP Principal**, como user1@contoso.com, ou o **Nome Principal de Utilizador**, como user1 ou user1@contoso.com.
-- **Atributo de endereço de e-mail do AAD**: Como é gerado o endereço de e-mail para o utilizador em cada dispositivo. Selecione o **Nome Principal de Utilizador** para utilizar o nome principal completo como o endereço de e-mail ou o **Nome de utilizador**.
-- **Método de autenticação**: Selecione **Nome de Utilizador e Palavra-passe** ou **Certificados** como método de autenticação utilizado pelo perfil de e-mail.
-  - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente para autenticar a ligação ao Exchange.
-- **SSL**: Utilize comunicação SSL (Secure Sockets Layer) ao enviar e-mails, ao receber e-mails e ao comunicar com o Exchange Server.
-- **Quantidade de e-mails a sincronizar**: Escolher o número de dias de e-mail que pretende sincronizar ou selecione **ilimitado** para sincronizar todos os e-mails disponíveis.
-- **Tipo de conteúdo a sincronizar** (Nine Work apenas): Selecione os tipos de conteúdo que pretende sincronizar nos dispositivos. **Não configurado** desativa esta definição. Quando definido como **não configurado**, se a sincronização de permite que um utilizador final no dispositivo, a sincronização está desabilitada novamente quando o dispositivo for sincronizado com o Intune, conforme a política é reforçada. 
-
-  Pode sincronizar o seguinte conteúdo: 
-  - **Contactos**
-  - **Calendário**
-  - **Tarefas**
+  Pode sincronizar o seguinte conteúdo:  
+  - **Contactos**: Escolher **ativar** para permitir que os utilizadores finais a sincronização de contactos para que os dispositivos deles.
+  - **Calendário**: Escolher **ativar** para permitir que os utilizadores finais sincronizar o calendário para seus dispositivos.
+  - **Tarefas**: Escolher **ativar** para permitir que os utilizadores finais sincronizar todas as tarefas nos seus dispositivos.
 
 ## <a name="next-steps"></a>Passos Seguintes
-[Configurar as definições de e-mail no Intune](email-settings-configure.md)
+
+[Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
+
+Também pode criar perfis de e-mail para [Android Enterprise - perfil de trabalho](email-settings-android-enterprise.md), [iOS](email-settings-ios.md), [Windows 10 e posterior](email-settings-windows-10.md), e [Windows Phone 8.1](email-settings-windows-phone-8-1.md).

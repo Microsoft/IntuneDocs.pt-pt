@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831637"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -42,7 +42,7 @@ Administrador de TI, pode utilizar o **ajuda e suporte** opção para enviar um 
 
 ## <a name="help-and-support-experience"></a>Ajuda e suporte a experiência
 > [!TIP]   
-> Em Janeiro de 2019, uma nova ajuda e suporte a experiência é implementar para todos os inquilinos. Se o seu inquilino ainda não tiver esta nova experiência, pode encontrar informações sobre a experiência anterior na [do Azure ajuda + suporte experiência](#azure-help-+-support-experience), neste artigo.  
+> Uma nova ajuda e suporte da experiência está disponível para todos os inquilinos. Se não vir esta nova experiência no seu inquilino, limpe a cache do browser e recarregue a página.
 
 A ajuda e suporte de experiência para o Intune está disponível a partir da [portal de gestão de dispositivos do Microsoft 365](http://devicemanagement.microsoft.com) e de todos os painéis (ou páginas) no Intune no portal do Azure. 
 
