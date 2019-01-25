@@ -27,7 +27,7 @@ items:
     href: quickstart-enroll-windows-device.md
   - name: Criar uma política de conformidade de dispositivo
     href: quickstart-set-password-length-android.md
-  - name: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
+  - name: Enviar notificações para dispositivos que não estejam em conformidade
     href: quickstart-send-notification.md
   - name: Adicionar e atribuir uma aplicação
     href: quickstart-add-assign-app.md
@@ -37,13 +37,13 @@ items:
     href: quickstart-create-custom-role.md
   - name: Criar um perfil de dispositivo de e-mail
     href: quickstart-email-profile.md
-- name: Tutorials (Tutoriais)
+- name: Tutoriais
   items:
-  - name: Protect email on managed devices (Proteger o e-mail em dispositivos geridos)
+  - name: Proteger o e-mail em dispositivos geridos
     href: tutorial-protect-email-on-enrolled-devices.md
   - name: Proteger o e-mail em dispositivos não geridos
     href: tutorial-protect-email-on-unmanaged-devices.md
-  - name: Use Autopilot to enroll Windows devices (Utilizar o Autopilot para inscrever dispositivos Windows)
+  - name: Utilizar o Autopilot para inscrever dispositivos Windows
     href: tutorial-use-autopilot-enroll-devices.md
 - name: Conceitos
   items:
@@ -73,11 +73,11 @@ items:
     href: mam-faq.md
   - name: FAQ de políticas e perfis
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
-- name: How-to guides (Guias de procedimentos)
+- name: Guias de procedimentos
   items:
   - name: Implementação de planos
     items:
-    - name: Planning guide (Guia de planeamento)
+    - name: Guia de planeamento
       href: planning-guide.md
       items:
       - name: Determinar metas e objetivos
@@ -181,11 +181,11 @@ items:
         href: windows-enroll.md
       - name: Inscrição em massa
         href: windows-bulk-enroll.md
-      - name: Enrollment status page (Página do estado de inscrição)
+      - name: Página do estado de inscrição
         href: windows-enrollment-status.md
       - name: Programa Windows AutoPilot Deployment
         href: enrollment-autopilot.md
-      - name: Hybrid Active Directory with Autopilot (Active Directory Híbrido com Autopilot)
+      - name: Active Directory Híbrido com Autopilot
         href: windows-autopilot-hybrid.md
     - name: Configurar inscrição do Android
       items:
@@ -221,7 +221,7 @@ items:
         href: device-enrollment-program-enroll-macos.md
     - name: Instalar o software de cliente do Intune em PCs Windows
       href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Abandonment report (Relatório de abandono)
+    - name: Relatório de abandono
       href: enrollment-report-company-portal-abandon.md
     - name: Resolver problemas de inscrição de dispositivos
       href: troubleshoot-device-enrollment-in-intune.md
@@ -565,7 +565,7 @@ items:
         href: help-desk-operators.md
       - name: Resolução de problemas de acesso aos recursos da empresa
         href: troubleshoot-company-resource-access-problems.md
-      - name: Troubleshoot app installation problems (Resolução de problemas com a instalação de aplicações)
+      - name: Resolução de problemas com a instalação de aplicações
         href: troubleshoot-app-install.md
       - name: Registos de auditoria para atividades do Intune
         href: monitor-audit-logs.md
@@ -842,7 +842,7 @@ items:
       href: intune-graph-apis.md
       items:
       - name: Referência da API do Intune
-        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+        href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Recursos
   items:
   - name: Guia de documentação do Microsoft Intune
@@ -938,9 +938,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: dc9c232605e6cb274d0707bb8d314bc39301de23
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831654"
