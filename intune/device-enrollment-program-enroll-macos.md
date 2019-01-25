@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 064fa53341558ac18a228b56dca6d129cd58a3af
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032355"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899081"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscrever automaticamente dispositivos macOS com o programa de inscrição de dispositivos ou do Apple School Manager
 
@@ -123,7 +123,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
  
 7. Escolha **OK**.
 
-8. Selecione **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. Selecione **Definições do Assistente de Configuração** para configurar as seguintes definições de perfil:  ![Personalização do Assistente de configuração.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Definições do departamento | Descrição |
     |---|---|
@@ -150,6 +150,10 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     | <strong>FileVault</strong> | Apresentar ao utilizador a opção de configurar a encriptação FileVault. |
     | <strong>Diagnóstico do iCloud</strong> | Apresentar ao utilizador a opção de enviar dados de diagnóstico do iCloud para a Apple. |
     | <strong>Registo</strong>| Pedir ao utilizador que registe o dispositivo. |
+    | <strong>Migração de Android</strong> | Dar ao usuário a opção para migrar os dados de um dispositivo Android. |
+    | <strong>Tom de apresentação</strong> | Dar ao usuário a opção para ativar o tom de exibição. |
+    | <strong>Privacidade</strong> | Exiba a tela de privacidade para o usuário. |
+    | <strong>Armazenamento do iCloud</strong> | Dar ao usuário a opção para utilizar o armazenamento do iCloud. |
 
    
 

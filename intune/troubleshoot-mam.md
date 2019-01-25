@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c7c5f163eef37333367511650ba86e01250ffe18
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831709"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899098"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 
@@ -30,7 +30,7 @@ Se estas informações não resolverem o problema, veja [Como obter suporte para
 
 ## <a name="common-it-administrator-issues"></a>Problemas de administrador de TI comuns
 
-Abaixo encontram-se problemas comuns com os quais um administrador de TI se pode deparar ao utilizar uma política de proteção de aplicações do Intune.
+Estes são os problemas comuns que um administrador de TI poderá experienciar ao utilizar políticas de proteção de aplicações do Intune.
 
 | Problema | Descrição | Resolução |
 | -- | -- | -- |
@@ -46,11 +46,11 @@ Abaixo encontram-se problemas comuns com os quais um administrador de TI se pode
 
 Os problemas comuns do utilizador final encontram-se divididos nas seguintes categorias:
 
-* **Cenários de utilização normal**: Um usuário final poderá deparar-se nestes cenários em aplicações que tenham a política de proteção de aplicações do Intune. Estes não são verdadeiros problemas, mas podem ser interpretados como erros.
+* **Cenários de utilização normal**: Um usuário final poderá deparar-se nestes cenários em aplicações que tenham uma política de proteção de aplicações do Intune. Estes não são verdadeiros problemas, mas podem ser interpretados como erros.
 
-* **Caixas de diálogo de utilização normal**: Estes são caixas de diálogo de utilização que utilizadores finais poderão ver em aplicações que tenham a política de proteção de aplicações do Intune. Estas mensagens e caixas de diálogo **não** são indicativas de erros.
+* **Caixas de diálogo de utilização normal**: Estes são caixas de diálogo de utilização que utilizadores finais poderão ver em aplicações que têm uma política de proteção de aplicações do Intune. Estas mensagens e caixas de diálogo **não** são indicativas de erros.
 
-* **Mensagens de erro e caixas de diálogo**: Estas são as mensagens de erro e caixas de diálogo que utilizadores finais poderão ver em aplicações que tenham a política de proteção de aplicações do Intune. Muitas vezes, estas caixas de diálogo e mensagens de erro indicam que o administrador de TI cometeu um erro ou que existe um erro na proteção de aplicações do Intune.
+* **Mensagens de erro e caixas de diálogo**: Estas são as mensagens de erro e caixas de diálogo que utilizadores finais poderão ver em aplicações que têm uma política de proteção de aplicações do Intune. Muitas vezes, estas caixas de diálogo e mensagens de erro indicam que o administrador de TI cometeu um erro ou que existe um erro na proteção de aplicações do Intune.
 
 ### <a name="normal-usage-scenarios"></a>Cenários de utilização normal
 
@@ -63,19 +63,19 @@ Android | Porque é que o utilizador final **tem de instalar a aplicação Porta
 
 Plataforma | Mensagem ou caixa de diálogo | Explicação |
 --- | --- | --- |
-iOS, Android | **Início de sessão**: Para proteger seus dados, a sua organização precisa de gerir esta aplicação. Para concluir esta ação, inicie sessão com a sua conta escolar ou profissional. | O utilizador final tem de iniciar sessão com a respetiva conta escolar ou profissional para poder utilizar esta aplicação, sendo necessária uma política de proteção de aplicações. Para esta política ser aplicável, o utilizador tem de ser autenticado relativamente ao Azure Active Directory.
-iOS, Android |**Reinício necessário**: Sua organização está agora a proteger os dados nesta aplicação. Tem de reiniciar a aplicação para continuar. | A aplicação acabou de receber a política de proteção de aplicações do Intune e tem de ser reiniciada para que a política seja aplicada.
-iOS, Android |**Ação não é permitida**: Sua organização só lhe permite abrir dados escolares ou profissionais nesta aplicação. | O administrador de TI definiu a política **Permitir que a aplicação receba dados de outras aplicações** para **Apenas aplicações geridas**. Por conseguinte, o utilizador final só pode transferir dados para esta aplicação a partir de outras aplicações que tenham a política de proteção de aplicações.
-iOS, Android |**Ação não é permitida**: Sua organização só permite transferir os respetivos dados para outras aplicações geridas. | O administrador de TI definiu a política **Permitir que a aplicação transfira dados para outras aplicações** para **Apenas aplicações geridas**. Por conseguinte, o utilizador final só pode transferir dados para fora desta aplicação para outras aplicações que tenham a política de proteção de aplicações.
+iOS, Android | **Início de sessão**: Para proteger seus dados, a sua organização precisa de gerir esta aplicação. Para concluir esta ação, inicie sessão com a sua conta escolar ou profissional. | O utilizador final tem de iniciar sessão com a respetiva conta escolar ou profissional para poder utilizar esta aplicação, que requer uma política de proteção de aplicações. Por ordem para a política seja aplicada, o utilizador tem de ser autenticado relativamente ao Azure Active Directory.
+iOS, Android |**Reinício necessário**: Sua organização está agora a proteger os dados nesta aplicação. Tem de reiniciar a aplicação para continuar. | A aplicação acabou de receber uma política de proteção de aplicações do Intune e tem de reiniciar para que a política seja aplicada.
+iOS, Android |**Ação não é permitida**: Sua organização só lhe permite abrir dados escolares ou profissionais nesta aplicação. | O administrador de TI definiu a política **Permitir que a aplicação receba dados de outras aplicações** para **Apenas aplicações geridas**. Por conseguinte, o utilizador final só pode transferir dados para esta aplicação a partir de outras aplicações que têm uma política de proteção de aplicações.
+iOS, Android |**Ação não é permitida**: Sua organização só permite transferir os respetivos dados para outras aplicações geridas. | O administrador de TI definiu a política **Permitir que a aplicação transfira dados para outras aplicações** para **Apenas aplicações geridas**. Por conseguinte, o utilizador final só pode transferir dados para fora desta aplicação para outras aplicações que têm uma política de proteção de aplicações.
 iOS, Android |**Alerta de eliminação**: Sua organização removeu os respetivos dados associados esta aplicação. Para continuar, reinicie a aplicação. | O administrador de TI iniciou uma eliminação de aplicações através da proteção de aplicações do Intune.
-Android | **Necessárias do Portal da empresa**: Para utilizar a sua conta escolar ou profissional com esta aplicação, tem de instalar a aplicação Portal da empresa do Intune. Toque em "Ir para a loja" para continuar. | No Android, uma grande parte da funcionalidade de proteção de aplicações está incorporada na aplicação Portal da Empresa. **Embora a aplicação Portal da Empresa seja sempre obrigatória, a inscrição dos dispositivos não é necessária**. Para proteger aplicações sem inscrição, o utilizador final só precisa de ter a aplicação Portal da Empresa instalada no dispositivo.
+Android | **Necessárias do Portal da empresa**: Para utilizar a sua conta escolar ou profissional com esta aplicação, tem de instalar a aplicação Portal da empresa do Intune. Clique em "Ir para a loja" para continuar. | No Android, uma grande parte da funcionalidade de proteção de aplicações está incorporada na aplicação Portal da Empresa. **Embora a aplicação Portal da Empresa seja sempre obrigatória, a inscrição dos dispositivos não é necessária**. Para proteger aplicações sem inscrição, o utilizador final só precisa de ter a aplicação Portal da Empresa instalada no dispositivo.
 
 ### <a name="error-messages-and-dialogs-on-ios"></a>Caixas de diálogo e mensagens de erro no iOS
 
 Caixa de diálogo ou mensagem de erro | Causa | Remediação |
 -- | --- | --- |
-**Aplicação não configurada**: Esta aplicação não foi configurada para utilizar. Contacte o seu administrador de TI para obter ajuda. | Falha ao detetar a política de proteção de aplicações obrigatória para a aplicação. |Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se a esta aplicação.
-**Bem-vindo ao Browser gerido do Intune**: Esta aplicação funciona melhor quando gerido pelo Microsoft Intune. Sempre pode utilizar esta aplicação para procurar na web e, quando é gerido pelo Microsoft Intune obter acesso a funcionalidades de proteção de dados adicionais. | Falha ao detetar a política de proteção de aplicações obrigatória para a aplicação Browser Gerido do Intune. <br><br>O utilizador pode continuar a utilizar a aplicação para procurar na web, mas a aplicação não é gerida pelo Intune. | Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se à aplicação Browser Gerido do Intune.
+**Aplicação não configurada**: Esta aplicação não foi configurada para utilizar. Contacte o seu administrador de TI para obter ajuda. | Falha ao detetar a uma política de proteção de aplicações obrigatória para a aplicação. |Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se a esta aplicação.
+**Bem-vindo ao Browser gerido do Intune**: Esta aplicação funciona melhor quando gerido pelo Microsoft Intune. Sempre pode utilizar esta aplicação para procurar na web e, quando é gerido pelo Microsoft Intune obter acesso a funcionalidades de proteção de dados adicionais. | Falha ao detetar a uma política de proteção de aplicações obrigatória para a aplicação de Browser gerido do Intune. <br><br>O utilizador pode continuar a utilizar a aplicação para procurar na web, mas a aplicação não é gerida pelo Intune. | Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se à aplicação Browser Gerido do Intune.
 **Início de sessão falhada**: Nós não é possível iniciar a sua sessão neste momento. Tente novamente mais tarde. | Falha ao inscrever o utilizador no serviço MAM após o utilizador tentar iniciar sessão com a respetiva conta profissional ou escolar. | Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se a esta aplicação.
 **Conta não configurada**: Sua organização não definiu a sua conta para aceder aos dados escolares ou profissionais. Contacte o seu administrador de TI para obter ajuda. | A conta de utilizador não tem uma licença Direta A do Intune. | Confirme que a conta de utilizador tem uma licença do Intune atribuída ao [portal do Office](http://portal.office.com).
 **Dispositivos não conformes**: Não é possível utilizar esta aplicação porque está a utilizar um dispositivo desbloqueado por jailbreak. Contacte o seu administrador de TI para obter ajuda. | O Intune detetou que o utilizador está num dispositivo desbloqueado por jailbreak. | Repor as predefinições de fábrica do dispositivo. Siga [estas instruções](https://support.apple.com/HT201274) a partir do site de suporte da Apple.
@@ -90,7 +90,7 @@ Caixa de diálogo ou mensagem de erro | Causa | Remediação |
 
 Mensagem de erro/caixa de diálogo | Causa | Remediação |
 -- | --- | --- |
-**Aplicação não configurada**: Esta aplicação não foi configurada para utilizar. Contacte o seu administrador de TI para obter ajuda. | Falha ao detetar a política de proteção de aplicações obrigatória para a aplicação. |Confirme que é implementada uma política de proteção de aplicações Android no grupo de segurança do utilizador e que a mesma visa esta aplicação.
+**Aplicação não configurada**: Esta aplicação não foi configurada para utilizar. Contacte o seu administrador de TI para obter ajuda. | Falha ao detetar a uma política de proteção de aplicações obrigatória para a aplicação. |Confirme que é implementada uma política de proteção de aplicações Android no grupo de segurança do utilizador e que a mesma visa esta aplicação.
 **Iniciação da aplicação com falha**: Ocorreu um problema ao iniciar a sua aplicação. Tente atualizar a aplicação ou a aplicação Portal da Empresa do Intune. Se precisar de ajuda, contacte o administrador de TI. | O Intune detetou a política de proteção de aplicação válida para a aplicação, mas a aplicação está a falhar durante a inicialização da MAM. | Confirme que a versão da aplicação está atualizada. <br><br> Confirme que a aplicação Portal da Empresa do Intune está instalada e atualizada no dispositivo. <br><br> Se o erro persistir, utilize a aplicação Portal da empresa para enviar registos ao Intune ou criar um [pedido de suporte](get-support.md#create-an-online-support-ticket).
 **Não foram encontradas aplicações**: Não existem aplicações neste dispositivo que sua organização permita para abrir este conteúdo. Contacte o seu administrador de TI para obter ajuda. | O utilizador tentou abrir dados de trabalho ou de escola com outra aplicação, mas o Intune não localizou quaisquer outras aplicações geridas que estão autorizadas a abrir os dados. | Confirme que uma política de proteção de aplicações Android é implementada na segurança do utilizador e destina-se, pelo menos, a uma outra aplicação preparada para MAM que pode abrir os dados em questão.
 **Início de sessão falhada**: Tente iniciar sessão novamente. Se este problema persistir, entre em contacto com seu administrador de TI. | Falha ao autenticar a conta com a qual o utilizador tentou iniciar sessão. | Confirme que o utilizador iniciou sessão com a conta profissional ou escolar que já está inscrita no serviço MAM do Intune (a primeira conta escolar ou profissional com que iniciou sessão com êxito para esta aplicação). <br><br> Limpe os dados da aplicação. <br><br> Confirme que a versão da aplicação está atualizada. <br><br> Confirme que a versão do Portal da Empresa está atualizada.

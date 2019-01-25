@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: cd9aedbc8f02cd116eb3135e30348ca104aa1120
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418215"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899166"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>Semana de 21 de Janeiro de 2019
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>Ignorar mais ecrãs do Assistente de configuração num dispositivo DEP iOS <!-- 2687509  -->
+Além dos ecrãs que atualmente pode ignorar, pode definir iOS dispositivos DEP para ignorar os ecrãs seguintes no Assistente de configuração, quando um utilizador inscreve o dispositivo: Apresenta tom, privacidade, migração Android, botão Home page, iMessage & FaceTime, integração, migração de Watch, aparência, tempo de tela, atualização de Software, a configuração SIM.
+Para escolher que telas para ignorar, aceda a **inscrição de dispositivos** > **inscrição da Apple** > **tokens do programa de inscrição** > Escolha um token > **Perfis** > Escolha um perfil > **propriedades** > **personalização do Assistente de configuração** > Escolha **ocultar**  para qualquer telas que pretende ignorar > **OK**.
+Se criar um novo perfil ou editar um perfil, selecionado ignorar a necessidade de telas para sincronizar com o servidor de MDM da Apple. Os utilizadores podem emitir uma sincronização manual dos dispositivos, para que haja um atraso de escolher as alterações de perfil.
+Esta funcionalidade está a começar a implementar, mas irá demorar alguns dias para estar disponível para todos os clientes.
+
 ## <a name="week-of-january-14-2019"></a>Semana de 14 de Janeiro de 2019
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Pré-visualização do suporte para dispositivos Android de empresa, totalmente geridos <!-- 1574342  -->
