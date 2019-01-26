@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: cd9aedbc8f02cd116eb3135e30348ca104aa1120
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: c5bced54973818b78190d81ade2fde5358c58443
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899166"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072614"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -43,6 +43,91 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 -->     
 ## <a name="week-of-january-21-2019"></a>Semana de 21 de Janeiro de 2019
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Notificações de alerta para aplicações de Win32 <!-- 3136566   -->
+É possível suprimir notificações de alerta do utilizador final que mostra por atribuição de aplicações. A partir do Intune, selecione **aplicações de cliente** > **aplicações** > selecione a aplicação > **atribuições** > **grupos incluem**. 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427  -->
+Alterámos as etiquetas para as definições e botões para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
+- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
+- As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
+
+As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Definições adicionais para o Outlook <!-- 3301182  -->
+Agora, pode configurar definições adicionais para o Outlook para iOS e Android com o Intune.  As definições incluem o seguinte: Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android implementar autenticação moderna para autenticação moderna do Office 365 e híbridas no local Contas utilização `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é selecionado contactos de permitir que sejam guardados configurar destinatários externos, configurar dicas de email **concentra-se a caixa de entrada** exigir biometria para acessar o Outlook para iOS imagens externas de bloco
+> [!NOTE]
+> Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-settings) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-settings).
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>Eliminar as aplicações do Android Enterprise <!-- 1352553 -->
+Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para eliminar uma aplicação do Google Play gerida, abra o Microsoft Intune no portal do Azure e selecione **aplicações de cliente** > **aplicações**. Da lista de aplicações, selecione as reticências (...) à direita da aplicação do Google Play gerida, em seguida, selecione **eliminar** na lista apresentada. Quando elimina uma aplicação do Google Play gerida da lista de aplicações, a aplicação do Google Play gerida é automaticamente não aprovada.
+
+#### <a name="managed-google-play-app-type----1352580---"></a>Tipo de aplicação do Google Play gerido <!-- 1352580 -->
+O **managed Google Play** tipo de aplicação permite-lhe adicionar especificamente [Google Play aplicações geridas](https://play.google.com/work/search?q=microsoft&c=apps) ao Intune. Como o administrador do Intune, pode agora navegar, procurar, aprovar, sincronizar e atribuir aprovados Google Play gerido aplicações no Intune.  Já não precisar de procurar na consola do Google Play gerido separadamente e já não tem de autenticar.  No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Na **tipo de aplicação** lista, selecione **Google Play gerido** como o tipo de aplicação.
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Utilizar definições recomendadas pela Microsoft com linhas de base de segurança (pré-visualização pública) <!-- 2055484   -->
+O Intune tem integração com outros serviços centrados na segurança, incluindo o Windows Defender ATP e o Office 365 ATP. Os clientes estão a pedir uma estratégia comum e um conjunto coeso de fluxos de trabalho de segurança de ponto a ponto em todos os serviços do Microsoft 365. O nosso objetivo é alinhar estratégias para desenvolver soluções que criem uma ponte entre operações de segurança e tarefas de administrador comuns. No Intune, pretendemos cumprir este objetivo através da publicação de um conjunto de "Linhas de base de segurança" recomendadas pela Microsoft (**Intune** > **Linhas de base de segurança**).  Um administrador pode criar políticas de segurança diretamente a partir dessas linhas de base e, em seguida, implementá-las aos respetivos utilizadores. Também pode personalizar as recomendações de melhores práticas para satisfazer as necessidades da sua organização. O Intune assegura que os dispositivos permanecem em conformidade com estas linhas de base e notifica os administradores de utilizadores ou dispositivos que não estejam em conformidade.
+
+Para saber mais sobre as linhas de base de segurança, veja [criar uma linha de base de segurança do Windows 10 no Intune](security-baselines-monitor.md).
+
+Esta funcionalidade aplica-se a: Windows 10 e posterior
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>Os não administradores podem ativar o BitLocker em dispositivos Windows 10 associados ao Azure AD<!-- 2147379   -->
+Quando ativa as definições do BitLocker em dispositivos Windows 10 (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10 e posterior** para a plataforma > **proteção de ponto final** para o tipo de perfil > **encriptação Windows**), adicionar as definições do BitLocker. 
+
+Esta atualização inclui uma nova definição de disco BitLocker para permitir que os usuários padrão (não-administradores) ativar a encriptação. 
+
+Para ver as definições, aceda à [definições do Endpoint protection para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>Verificar a conformidade do Configuration Manager <!-- 2192052  eepublished  -->
+Esta atualização inclui uma nova definição de conformidade do System Center Configuration Manager (**conformidade do dispositivo** > **políticas** > **criar política**  >  **Windows 10 e posterior** > **compatibilidade do Configuration Manager**). O Configuration Manager envia sinais de conformidade ao Intune. Com esta definição, pode exigir a todos os sinais de Configuration Manager para retornar "em conformidade".
+
+Por exemplo, pode exigir que todas as atualizações do software sejam instaladas nos dispositivos. No Configuration Manager, este requisito apresenta o estado "Instalado". Se todos os programas no dispositivo estão num Estado desconhecido, em seguida, o dispositivo está em conformidade no Intune.
+
+[Compatibilidade do Configuration Manager](compliance-policy-create-windows.md#configuration-manager-compliance) descreve esta definição.
+
+Aplica-se a: Windows 10 e posterior
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>Personalizar a imagem de fundo em dispositivos iOS supervisionados a utilizar um perfil de configuração do dispositivo <!-- 2809324   -->
+Quando cria um perfil de configuração do dispositivo para dispositivos iOS, pode personalizar algumas funcionalidades (**configuração do dispositivo** > **perfis** > **Create perfil** > **iOS** para a plataforma > **funcionalidades do dispositivo** para tipo de perfil). Esta atualização inclui novos **papel de parede** definições que permitem que um administrador utilizar uma imagem de formato. png,. jpg ou. JPEG na tela inicial ou no ecrã de bloqueio. Estas definições de imagem de fundo aplicam-se apenas a dispositivos supervisionados. 
+
+Para obter uma lista destas definições, consulte [definições de funcionalidade do dispositivo iOS](ios-device-features-settings.md).
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Quiosque do Windows 10 está disponível em geral <!-- 3594661  -->
+Nesta atualização, a funcionalidade de local público no Windows 10 e dispositivos posteriores está disponível em geral (GA). Para ver todas as definições que pode adicionar e configurar, consulte [definições de local público para o Windows 10 (e versões posteriores)](kiosk-settings.md).
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>Partilha de contactos através de Bluetooth for removido no restrições de dispositivos > proprietário do dispositivo do Android Enterprise <!-- 3598396   -->
+Quando cria um perfil de restrições de dispositivos para dispositivos Android Enterprise, há uma **contacto partilha através de Bluetooth** definição. Nesta atualização, o **contacto partilha através de Bluetooth** configuração seja removida (**configuração do dispositivo** > **perfis**  >   **Criar perfil** > **Android Enterprise** para a plataforma > **restrições de dispositivos > proprietário do dispositivo** para o tipo de perfil > **geral** ). 
+
+O **contacto partilha através de Bluetooth** definição não é suportada para a gestão de proprietário do dispositivo do Android Enterprise. Quando esta definição for removida, não afeta quaisquer dispositivos ou inquilinos, mesmo que esta definição está ativada e configurada no seu ambiente.
+
+Para ver a lista atual de definições, aceda à [definições de dispositivos Android Enterprise para permitir ou restringir funcionalidades](device-restrictions-android-for-work.md).
+
+Aplica-se a: Proprietário do dispositivo Android Enterprise
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427 -->
+Alterámos as etiquetas para as definições e botões para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
+- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
+- As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
+
+As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
+
+### <a name="device-management"></a>Gestão de dispositivos
+#### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Políticas WIP implementadas sem inscrição do utilizador <!-- 1434452 -->
+Políticas de Windows Information Protection (WIP) podem ser implementadas sem a necessidade dos utilizadores MDM inscrever o dispositivo Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. A partir do Intune no portal do Azure, selecione **aplicação de cliente** > **eliminação seletiva de aplicações**.
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>Novos registos operacionais e capacidade para enviar registos para serviços do Azure Monitor <!-- 3762211  -->
+O Intune tem o log de auditoria interno que regista os eventos são feitas alterações. Esta atualização inclui novos recursos de Registro em log, incluindo: 
+- Registos operacionais (pré-visualização) que mostram detalhes sobre os utilizadores e dispositivos inscritos, incluindo o êxito e tentativas falhadas.
+- Os registos de auditoria e registos operacionais podem ser enviados para o Azure Monitor, incluindo contas de armazenamento, os hubs de eventos e do log analytics. Estes serviços permitem-lhe armazenar, utilizar a análise de como Splunk e QRadar e obtenha visualizações dos seus dados de registo.
+
+[Enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics no Intune](review-logs-using-azure-monitor.md) fornece mais informações sobre esta funcionalidade.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>Ignorar mais ecrãs do Assistente de configuração num dispositivo DEP iOS <!-- 2687509  -->
 Além dos ecrãs que atualmente pode ignorar, pode definir iOS dispositivos DEP para ignorar os ecrãs seguintes no Assistente de configuração, quando um utilizador inscreve o dispositivo: Apresenta tom, privacidade, migração Android, botão Home page, iMessage & FaceTime, integração, migração de Watch, aparência, tempo de tela, atualização de Software, a configuração SIM.

@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 8cd32a7ec99064a36d58a5a714406659d9d16675
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386980"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072444"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>A edição antecipada do Microsoft Intune – Janeiro de 2019
 
@@ -43,39 +43,10 @@ Esta página é atualizada periodicamente. Volte a consultar posteriormente para
 
 <!-- 1901 start -->
 
-### <a name="android-enterprise-apps----1352553----"></a>Aplicações do Android Enterprise <!-- 1352553  -->
-Será capaz de excluir aplicações geridas do Google Play a partir do Microsoft Intune. Para eliminar uma aplicação do Google Play gerida, será aberto o Microsoft Intune no portal do Azure e selecione **aplicações de cliente** > **aplicações**. Da lista de aplicações, irá selecionar as reticências (...) à direita da aplicação do Google Play gerida, em seguida, selecione **eliminar** na lista apresentada. Quando elimina uma aplicação do Google Play gerida da lista de aplicações, a aplicação do Google Play gerida é automaticamente não aprovada.
-
-### <a name="managed-google-play-app-type----1352580---"></a>Tipo de aplicação do Google Play gerido <!-- 1352580 -->
-O **managed Google Play** tipo de aplicação permite-lhe adicionar especificamente [Google Play aplicações geridas](https://play.google.com/work/search?q=microsoft&c=apps) ao Intune. Como o administrador do Intune, poderá agora navegar, procurar, aprovar, sincronizar e atribuir aprovados Google Play gerido aplicações no Intune. Já não terá de procurar na consola do Google Play gerido separadamente e já não terá de autenticar. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Na **tipo de aplicação** lista, selecione **Google Play gerido** como o tipo de aplicação.
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>Implementação de online licenciado Microsoft Store para aplicações de negócio <!-- 1672660  -->
 Será capaz de atribuir necessário online licenciada Microsoft Store para aplicações de negócio no contexto do dispositivo. Implementar um Microsoft Store para a aplicação de negócios desta forma permitirá que a aplicação ser instalada para todos os utilizadores no dispositivo. Isto só é aplicável no Windows 10 RS4 + dispositivos de ambiente de trabalho. A opção para instalar no contexto do dispositivo está disponível na página de atribuição de aplicações de cliente para aplicações licenciadas Online do MSFB.
 
-### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>Configurar o perfil para ignorar alguns ecrãs durante o Assistente de Configuração <!-- 2276470  -->
-Quando cria um macOS perfil de inscrição, poderá configurá-lo para ignorar qualquer um dos ecrãs seguintes quando um utilizador executa o Assistente de configuração:
-- Migração de Android
-- Sinal de Exibição
-- Privacidade
-- iCloudStorage
-
-### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>Atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos <!--2715522  -->
-Poderá atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos. Para o fazer, selecione **Inscrição de dispositivos** > **Inscrição do Windows** > **Perfis de Implementação** > selecione um perfil >  **Atribuições** > em **Atribuir a**, selecione **Todos os dispositivos**. Para obter mais informações sobre perfis do Autopilot, veja [Inscrever dispositivos Windows com o Windows AutoPilot](enrollment-autopilot.md).
-
-### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>Personalizar a imagem de fundo em dispositivos iOS supervisionados a utilizar um perfil de configuração do dispositivo <!-- 2809324  -->
-Quando cria um perfil de configuração do dispositivo para dispositivos iOS, poderá permitir e restringir algumas definições no **configuração do dispositivo** > **perfis**  >  **Criar perfil** > **iOS** para a plataforma > **restrições de dispositivos** para tipo de perfil. Esta atualização inclui novos **papel de parede** definições que permitem que um administrador para utilizar um. png,. jpg ou. JPEG imagem como imagem de fundo, a imagem de pré-visualização e bloquear os utilizadores de alterar a imagem de fundo. As definições de imagem de fundo aplicam-se apenas a dispositivos supervisionados. Para obter uma lista de definições atuais, veja [definições de restrição de dispositivos iOS](device-restrictions-ios.md).
-
-### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Notificações de alerta para aplicações de Win32 <!-- 3136566   -->
-Será capaz de suprimir notificações de alerta do utilizador final que mostra por atribuição de aplicações. A partir do Intune, selecione **aplicações de cliente** > **aplicações** > selecione a aplicação > **Assignemnts** > **grupos incluem**. 
-
-### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>Partilha de contactos através de Bluetooth for removido no restrições de dispositivos > proprietário do dispositivo do Android Enterprise <!-- 3598396 -->
-Quando cria um perfil de restrições de dispositivos para dispositivos Android Enterprise, há uma **contacto partilha através de Bluetooth** definição. Nesta atualização, o **contacto partilha através de Bluetooth** definição será removida (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android Enterprise** para a plataforma > **restrições de dispositivos > proprietário do dispositivo** para o tipo de perfil >  **Geral**). 
-
-O **contacto partilha através de Bluetooth** definição não é suportada para a gestão de proprietário do dispositivo do Android Enterprise. Quando esta definição for removida, não afeta quaisquer dispositivos ou inquilinos, mesmo que esta definição está ativada e configurada no seu ambiente.
-
-Para ver a lista atual de definições, aceda à [definições de dispositivos Android Enterprise para permitir ou restringir funcionalidades](device-restrictions-android-for-work.md).
-
-Aplica-se a: Proprietário do dispositivo Android Enterprise
 
 <!-- 1812 start -->
 
@@ -96,23 +67,6 @@ Nos dispositivos já inscritos através do Assistente de configuração através
 Se os utilizadores instalarem a aplicação Portal da empresa a partir da App store e, em seguida, tentar inscrever estes dispositivos através do mesmo, receberá um erro. Estes dispositivos serão esperados para utilizar o Portal da empresa apenas quando ele é foi emitido, automaticamente, pelo Intune durante a inscrição. Perfis de inscrição no Intune no portal do Azure serão atualizados para que pode especificar a forma como os dispositivos serão autenticados e se eles recebem a aplicação Portal da empresa. Se pretender que os utilizadores de dispositivos do DEP para o portal da empresa, terá de especificar as suas preferências num perfil de inscrição. Além disso, o **identificar o seu dispositivo** ecrã na aplicação Portal da empresa em breve se tornarão obsoleta.  
 Para instalar o Portal da empresa em dispositivos DEP já inscrito, terá de ir para o Intune > aplicações de cliente e enviá-los como uma aplicação gerida com as políticas de configuração de aplicações. Detalhes sobre como efetuar estes passos irão ser descritos nos documentos futuros.
 
-### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379---"></a>Os não administradores podem ativar o BitLocker em dispositivos Windows 10 associados ao Azure AD<!-- 2147379 -->
-Quando ativa as definições do BitLocker em dispositivos Windows 10 (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10 e posterior** para a plataforma > **proteção de ponto final** para o tipo de perfil > **encriptação Windows**), adicionar as definições do BitLocker. Esta atualização inclui uma nova definição de disco BitLocker para permitir que os usuários padrão (não-administradores) ativar a encriptação. Para ver as definições atuais, veja [definições do Endpoint protection para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
-
-
-### <a name="additional-settings-for-outlook----3301182---"></a>Definições adicionais para o Outlook <!-- 3301182 -->
-Agora, pode configurar definições adicionais para o Outlook para iOS e Android com o Intune.  As definições incluem o seguinte:
-- Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android
-- Implementar a autenticação moderna do Office 365 e a autenticação moderna híbrida contas no local
-- Utilize `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é seleccionada
-- Permitir que os contactos sejam guardados
-- Configurar destinatários externos dicas de email
-- Configurar **caixa de entrada destaques**
-- Exigir biometria para acessar o Outlook para iOS 
-- Bloquear a imagens externas
-
-> [!NOTE]
-> Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS requisitos de acesso](app-protection-policy-settings-ios.md#access-settings) e [requisitos de acesso para Android](app-protection-policy-settings-android.md#access-settings).
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Modelos administrativos estão em pré-visualização pública e movido para o seu próprio perfil de configuração <!-- 3322847 -->
 Modelos administrativos no Intune (**configuração do dispositivo** > **modelos administrativos**) estão atualmente em pré-visualização privada. Com esta atualização: Modelos administrativos inclui aproximadamente 300 configurações que podem ser geridas no Intune. Anteriormente, estas definições só existiam no editor de políticas de grupo.
@@ -121,14 +75,6 @@ O relatório está ativado aplica-se a: Windows 10 e posterior
 
 ### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>No modo escuro do Portal da empresa do Intune macOS <!-- 3300524 -->
 O Portal da empresa do macOS do Intune agora suporta o modo escuro para macOS. Quando ativar o modo escuro num dispositivo macOS 10.14 +, o Portal da empresa irá ajustar sua aparência para as cores a reflect desse modo.
-
-<!-- 1810 start -->
-
-### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Utilizar definições recomendadas pela Microsoft com Linhas de Base de Segurança <!-- 2055484 -->
-O Intune tem integração com outros serviços centrados na segurança, incluindo o Windows Defender ATP e o Office 365 ATP. Os clientes estão a pedir uma estratégia comum e um conjunto coeso de fluxos de trabalho de segurança de ponto a ponto em todos os serviços do Microsoft 365. O nosso objetivo é alinhar estratégias para desenvolver soluções que criem uma ponte entre operações de segurança e tarefas de administrador comuns. No Intune, pretendemos cumprir este objetivo através da publicação de um conjunto de "Linhas de base de segurança" recomendadas pela Microsoft (**Intune** > **Linhas de base de segurança**).  Um administrador poderá criar políticas de segurança diretamente a partir dessas linhas de base e, em seguida, implementá-las nos seus utilizadores. Também pode personalizar as recomendações de melhores práticas para satisfazer as necessidades da sua organização. O Intune assegura que os dispositivos permanecem em conformidade com estas linhas de base e notifica os administradores de utilizadores ou dispositivos que não estejam em conformidade.
-
-### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Suporte de eliminação seletiva para WIP sem inscrição de dispositivos <!-- 1434452 -->
-Windows Information Protection sem inscrição (WIP-PODEMOS) permite que os clientes proteger os dados empresariais em dispositivos Windows 10, sem a necessidade de inscrição de MDM completa. Assim que os documentos estão protegidos com um WIP-política de nós, os dados protegidos que podem ser apagados seletivamente por um administrador do Intune. Ao selecionar o utilizador e dispositivo e enviar um pedido de eliminação de dados, todos os dados que foi protegido por meio do WIP-política irá tornar-se inutilizável. No Intune, no portal do Azure, selecione **Aplicação móvel** > **Eliminação seletiva da aplicação**.
 
 <!-- 1809 start -->  
 
@@ -142,18 +88,6 @@ O Intune irá detetar e mostrar detalhes se um token de programa de compras em v
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivos extintos no dashboard de conformidade do dispositivo <!-- 1981119 -->
 Numa atualização futura, os dispositivos extintos serão removidos do dashboard de conformidade do dispositivo. Tal irá alterar os seus números de conformidade.
-
-
-
-<!-- 1807 start -->
-
-### <a name="check-for-configuration-manager-compliance----2192052---"></a>Verificar a conformidade do Configuration Manager <!-- 2192052 -->
-Uma futura atualização irá incluir uma nova definição de conformidade do System Center Configuration Manager (**Conformidade do dispositivo** > **Políticas** > **Criar política** > **Windows 10**). O Configuration Manager envia sinais de conformidade ao Intune. Com a definição do Intune, pode exigir que todos os sinais do Configuration Manager devolvam o estado "conforme".
-
-Por exemplo, pode exigir que todas as atualizações do software sejam instaladas nos dispositivos. No Configuration Manager, este requisito apresenta o estado "Instalado". Se algum dos programas no dispositivo apresentar um estado desconhecido, o dispositivo será marcado como não compatível no Intune.
-
-Aplica-se ao Windows 10 e posterior
-
 
 
 ## <a name="notices"></a>Avisos

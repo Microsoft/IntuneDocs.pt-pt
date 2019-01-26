@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203540"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072580"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições de 10 (e posteriores) do Windows para proteger os dispositivos com o Intune
 
@@ -152,6 +152,9 @@ Suportado nas seguintes edições do Windows 10:
 As definições base são definições de BitLocker universais para todos os tipos de unidades de dados. Estas definições gerem as tarefas de encriptação ou opções de configuração de unidades que o utilizador final pode modificar para todos os tipos de unidades de dados.
 
 - **Aviso para a encriptação de outro disco**: Selecione **bloco** para desativar a mensagem de aviso se for de outro serviço de encriptação de disco no dispositivo. A opção **Não configurado** (predefinição) permite que o aviso seja apresentado.
+    - **Permitir que usuários padrão ativar a encriptação durante a associação do Azure AD**: Quando escolhe **permitir**, padrão utilizadores/não-administradores podem ativar a encriptação BitLocker quando o utilizador tem sessão iniciado. Esta definição aplica-se apenas a dispositivos do Azure associados de diretório Active Directory (Azure ADJ). **Não configurado** apenas permite que os administradores ativar a encriptação de disco BitLocker no dispositivo.
+      
+      Esta definição aplica-se apenas a dispositivos do Azure associados de diretório Active Directory (Azure ADJ). Também requer que o **aviso para a encriptação de outro disco** definição estar definida como **bloco**.
 - **Configurar métodos de encriptação**: **Ativar** esta definição para configurar algoritmos de encriptação para o sistema operativo, dados e unidades amovíveis. Quando definida para **Não configurado** (predefinição), o BitLocker utiliza o algoritmo XTS-AES de 128 bits como o método de encriptação predefinido ou utiliza o método de encriptação especificado por qualquer script de configuração.
   - **Encriptação para o sistema operativo unidades**: Escolha o método de encriptação para unidades de sistema operativo. Recomendamos que utilize o algoritmo XTS-AES.
   - **Encriptação para unidades de dados fixas**: Escolha o método de encriptação para unidades de dados (interno) fixo. Recomendamos que utilize o algoritmo XTS-AES.

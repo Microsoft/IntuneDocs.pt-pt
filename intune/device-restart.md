@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068276"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reiniciar remotamente dispositivos com o Intune
 
@@ -32,7 +32,7 @@ A ação de dispositivos **Reiniciar** provoca o reinício do dispositivo que es
 
 - Windows – suportado no Windows 8.1 e posterior
 - Windows Phone – suportado no Windows Phone 8.1 e posterior
-- Dispositivos de quiosque Android – suportado
+- Dispositivos de quiosque Android – suportados no Android 7.0 e posterior
 - iOS – suportado
 
     > [!Note]  

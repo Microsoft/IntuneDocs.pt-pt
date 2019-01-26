@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387020"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072563"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -48,7 +48,6 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 - **As alterações de definições de Wi-Fi**: Escolher **bloco** para impedir que os utilizadores alterem as definições de Wi-Fi criadas pelo proprietário do dispositivo. Os utilizadores podem criar suas próprias configurações de Wi-Fi. **Não configurado** permite que os usuários alterar as definições de Wi-Fi no dispositivo.
 - **Configuração de ponto de acesso Wi-Fi**: Escolher **bloco** para impedir que os utilizadores a criar ou alterar quaisquer configurações de Wi-Fi. **Não configurado** permite que os usuários alterar as definições de Wi-Fi no dispositivo.
 - **Configuração de Bluetooth**: Escolher **bloco** para impedir que os utilizadores configurem Bluetooth no dispositivo. **Não configurado** permite o uso de Bluetooth no dispositivo.
-- **Partilha de contactos através de Bluetooth**: Escolher **bloco** para impedir o acesso ao seu trabalho contactos de outro dispositivo, como um sistema de carro, quando um dispositivo Android é emparelhado com Bluetooth. **Não configurado** permite o acesso aos contactos de trabalho noutro dispositivo Bluetooth, que se encontra emparelhado com o dispositivo Android.
 - **Tethering e acesso a pontos ativos**: Escolher **bloco** para impedir que tethering e acesso a pontos ativos portátil. **Não configurado** permite tethering e acesso a pontos ativos portátil.
 - **Armazenamento USB**: Escolher **permitir** para o armazenamento USB de acesso no dispositivo. **Não configurado** impede o acesso a armazenamento USB.
 - **Transferência de ficheiros USB**: Escolher **bloco** para impedir a transferência de ficheiros através de USB. **Não configurado** permite a transferência de ficheiros.

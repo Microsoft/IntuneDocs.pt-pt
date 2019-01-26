@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 321d5958808d291e6bd6969cfffa66a6bc0194fe
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831704"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072546"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo iOS no Intune
 
@@ -29,7 +29,7 @@ Este artigo apresenta uma lista essas configurações e descreve o que faz cada 
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar perfil de configuração de dispositivo um iOS](device-features-configure.md).
+[Criar perfil de configuração de dispositivo um iOS](device-features-configure.md#create-a-device-profile).
 
 ## <a name="airprint-settings"></a>Definições do AirPrint
 
@@ -275,6 +275,20 @@ Estas definições controlam o acesso de URL do browser em dispositivos iOS.
       Se não introduzir todos os URLs, em seguida, os utilizadores finais não podem aceder a sites, exceto para `microsoft.com`, `microsoft.net`, e `apple.com`. Estes URLs são automaticamente permitidas pelo Intune.
 
       Selecione **OK** para guardar as alterações.
+
+## <a name="wallpaper-settings"></a>Definições de imagem de fundo
+
+Adicione uma imagem personalizada do formato. png,. jpg ou. JPEG para os seus dispositivos iOS supervisionados. Por exemplo, utilize um logótipo de empresa no ecrã de bloqueio.
+
+- **Localização de exibição da imagem de fundo**: Escolha uma localização no dispositivo para mostrar a imagem. As opções são:
+  - **Não configurado**: Uma imagem personalizada não é adicionada ao dispositivo. O dispositivo utiliza o padrão de sistema operativo.
+  - **Ecrã de bloqueio**: Adiciona a imagem para o ecrã de bloqueio.
+  - **Ecrã principal**: Adiciona a imagem ao ecrã principal.
+  - **Bloqueio de ecrã e o ecrã principal**: Utiliza a mesma imagem da tela de bloqueio e o ecrã principal.
+- **Imagem da imagem de fundo**: Carregar um existente. png,. jpg ou imagem JPEG que pretende utilizar. Certifique-se de que o tamanho do ficheiro é inferior a 750 KB. Também pode **remover** uma imagem que adicionou.
+
+> [!TIP]
+> Para exibir imagens diferentes da tela de bloqueio e o ecrã principal, crie um perfil com a imagem de ecrã de bloqueio. Crie outro perfil com a imagem de ecrã principal. Atribua ambos os perfis aos seus grupos de utilizadores ou dispositivos iOS.
 
 ## <a name="bundle-ids-for-built-in-ios-apps"></a>IDs de pacote para aplicações iOS incorporadas
 
