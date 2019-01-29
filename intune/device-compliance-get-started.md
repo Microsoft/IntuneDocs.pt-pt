@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,32 +14,28 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6679f0b1d7392bc2db2e39b4c283b702dd21285
-ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
+ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54751234"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199409"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Os requisitos de conformidade são essencialmente regras, como exigir um PIN do dispositivo ou a encriptação. As políticas de conformidade de dispositivos definem as regras e definições que um dispositivo tem de seguir para ser considerado conforme. Estas regras incluem:
+Muitas soluções de gestão (MDM) de dispositivos móveis ajudar a proteger dados organizacionais ao exigir que os utilizadores e dispositivos para cumprir alguns requisitos. No Intune, esse recurso é chamado de "políticas de conformidade". Políticas de conformidade definem as regras e definições que os utilizadores e dispositivos têm de cumprir para estar em conformidade. Quando combinado com acesso condicional, os administradores podem bloquear os utilizadores e dispositivos que não cumprem as regras. Por exemplo, pode exigir um administrador do Intune:
 
-- Utilizar uma palavra-passe para aceder a dispositivos
+- Os utilizadores finais utilizam uma palavra-passe para aceder aos dados organizacionais em dispositivos móveis
 
-- Encriptação
+- O dispositivo não estiver desbloqueado por jailbreak ou rooting
 
-- Se o dispositivo está desbloqueado por jailbreak ou rooting
+- Uma versão de sistema operativo mínimo ou máximo no dispositivo
 
-- Versão mínima do SO obrigatória
+- O dispositivo esteja ao ou num nível de ameaça
 
-- Versão máxima de SO permitida
-
-- Exigir que o dispositivo esteja ao nível ou abaixo do nível da Defesa Contra Ameaças para Dispositivos Móveis
-
-Também pode utilizar as políticas de conformidade do dispositivo para monitorizar o estado de conformidade nos seus dispositivos.
+Também pode utilizar políticas de conformidade para monitorizar o estado de conformidade nos seus dispositivos.
 
 > [!IMPORTANT]
 > Intune segue o agendamento de entrada do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento da entrada dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -68,7 +64,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Para utilizar políticas de conformidade de dispositivos, é necessário que:
+
+Para utilizar as políticas de conformidade do dispositivo, não se esqueça de:
 
 - Utilize as seguintes subscrições:
 
@@ -84,15 +81,28 @@ Para utilizar políticas de conformidade de dispositivos, é necessário que:
   - Windows Phone 8.1
   - Windows 10
 
-- Os dispositivos tenham de estar inscritos no Intune para comunicarem os respetivos estados de conformidade
+- Inscrever dispositivos no Intune para ver o estado de conformidade
 
-- Os dispositivos inscritos a um utilizador ou com nenhum utilizador primário são suportados. Não são suportados vários contextos de utilizador.
+- Inscrever dispositivos a um utilizador ou inscrever-se sem um utilizador primário. Dispositivos inscritos para vários utilizadores não são suportados.
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>De que forma as políticas de conformidade de dispositivos do Intune funcionam com o Azure AD
+## <a name="how-device-compliance-policies-work-with-azure-ad"></a>Como as políticas de conformidade de dispositivos funcionam com o Azure AD
 
 Quando um dispositivo é inscrito no Intune, é iniciado o processo de registo do Azure AD, o que atualiza os atributos do dispositivo no Azure AD. Uma das principais informações do dispositivo é o estado de conformidade do dispositivo. Este estado de conformidade do dispositivo é utilizado pelas políticas de acesso condicional para bloquear ou permitir o acesso a e-mails e outros recursos da empresa.
 
 O [processo de registo do Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) fornece mais informações.
+
+## <a name="refresh-cycle-times"></a>Tempos de ciclos de atualização
+
+Quando a verificação de compatibilidade, o Intune utiliza o mesmo ciclo de atualização como perfis de configuração. Em geral, os tempos são:
+
+- iOS. Cada seis horas
+- macOS: Cada seis horas
+- Android: Cada oito horas
+- PCs com Windows 10 inscritos como dispositivos: Cada oito horas
+- Windows Phone: Cada oito horas
+- Windows 8.1: Cada oito horas
+
+Uma verificação da conformidade com mais frequência ocorre imediatamente depois de um dispositivo é inscrito.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Atribuir um estado InGracePeriod
 
@@ -137,21 +147,21 @@ Por exemplo, imaginemos que um dispositivo tem três políticas de conformidade 
 Para dispositivos que estejam em conformidade com as regras da política, poderá conceder a esses dispositivos o acesso ao e-mail e a outros recursos da empresa. Se os dispositivos não estiverem em conformidade com as regras da política, não obtêm acesso aos recursos da empresa. Isto é o acesso condicional.
 
 #### <a name="without-conditional-access"></a>Sem acesso condicional
-Também pode utilizar as políticas de conformidade de dispositivos sem acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que têm jailbreak ou root. Quando utilizar políticas de conformidade sem acesso condicional, não existem restrições de acesso aos recursos da empresa.
+Também pode utilizar as políticas de conformidade de dispositivos sem acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos não está encriptado ou quais os dispositivos que estão desbloqueados por jailbreak ou rooting. Quando utilizar políticas de conformidade sem acesso condicional, não existem quaisquer restrições de acesso aos recursos da organização.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar as políticas de conformidade de dispositivos
 Pode implementar a política de conformidade a utilizadores em grupos de utilizadores ou dispositivos em grupos de dispositivos. Quando uma política de conformidade é implementada num utilizador, todos os dispositivos do utilizador são verificados relativamente à conformidade. No Windows 10 versão 1803 e dispositivos mais recentes, é recomendado implementar para grupos de dispositivos *se* o utilizador primário não tiver inscrito o dispositivo. Utilizar grupos de dispositivos neste cenário ajuda com os relatórios de conformidade.
 
-Um conjunto de **Definições de política de conformidade** (Portal do Azure > Conformidade do dispositivo) incorporadas é avaliado em todos os dispositivos inscritos no Intune. Estas incluem:
+Um conjunto de definições de política de conformidade incorporada (**Intune** > **conformidade do dispositivo**) obtém valores em todos os dispositivos inscritos no Intune. Estas incluem:
 
 - **Marcar os dispositivos sem política de conformidade atribuída como**: Esta propriedade tem dois valores:
 
   - **Compatível**: a funcionalidade de segurança está desativada
   - **Não compatível** (predefinição): a funcionalidade de segurança está ativada
 
-  Se um dispositivo não tiver uma política de conformidade atribuída, este dispositivo é considerado não conforme. Por predefinição, os dispositivos são marcados como **Compatíveis**. Se utilizar o acesso condicional, recomendamos que altere a definição para **Não compatível**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, então o Portal da Empresa indica `No compliance policies have been assigned`.
+  Se um dispositivo não tiver uma política de conformidade atribuída, este dispositivo é considerado não conforme. Por predefinição, os dispositivos são marcados como **Não compatíveis**. Se utilizar o acesso condicional, recomendamos que altere a definição para **não conformes**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, em seguida, Portal da empresa mostra `No compliance policies have been assigned`.
 
-- **Deteção avançada de jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS a entrada com o Intune com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
+- **Deteção avançada de jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS a dar entrada no Intune com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
 
   Ativar esta definição exige que os dispositivos:
   - Ativem os serviços de localização ao nível do SO

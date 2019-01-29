@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 37d83b835b5b0f4705fe04985753779a2c79d1be
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831698"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199426"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 e posteriores definições do dispositivo para ser executado como um quiosque no Intune
 
@@ -137,7 +137,7 @@ Ao escolher o modo de quiosque de várias aplicações, introduza as seguintes d
 
 - **Esquema de iniciar alternativa utilize**: Escolher **Sim** para introduzir um arquivo XML que descreve a forma como as aplicações são apresentadas no menu Iniciar, incluindo a ordem das aplicações. Utilize esta opção se precisar de uma personalização adicional no menu Iniciar. O artigo [Customize and export Start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas orientações e um ficheiro XML de exemplo.
 
-- **Barra de tarefas do Windows**: Optar por **mostrar** ou **ocultar** a barra de tarefas. Por predefinição, a barra de tarefas não é mostrada.
+- **Barra de tarefas do Windows**: Optar por **mostrar** ou **ocultar** a barra de tarefas. Por predefinição, a barra de tarefas não é mostrada. Ícones, por exemplo, o ícone de Wi-Fi, são apresentados, mas as definições não podem ser alteradas pelos usuários finais.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

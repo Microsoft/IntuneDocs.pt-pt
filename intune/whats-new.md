@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c5bced54973818b78190d81ade2fde5358c58443
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072614"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199494"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 > [!Note]
 > Para obter informações sobre novas funcionalidades na gestão de dispositivos móveis (MDM) híbrida, veja a nossa página [Hybrid What’s New (Novidades nas Implementações Híbridas)](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
+**RSS feed**: Seja notificado quando esta página é atualizada ao copiar e colar o URL seguinte no seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -70,6 +71,8 @@ O **managed Google Play** tipo de aplicação permite-lhe adicionar especificame
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Utilizar definições recomendadas pela Microsoft com linhas de base de segurança (pré-visualização pública) <!-- 2055484   -->
+Nota: Esta funcionalidade ainda vai lançar e estará disponível em breve.
+
 O Intune tem integração com outros serviços centrados na segurança, incluindo o Windows Defender ATP e o Office 365 ATP. Os clientes estão a pedir uma estratégia comum e um conjunto coeso de fluxos de trabalho de segurança de ponto a ponto em todos os serviços do Microsoft 365. O nosso objetivo é alinhar estratégias para desenvolver soluções que criem uma ponte entre operações de segurança e tarefas de administrador comuns. No Intune, pretendemos cumprir este objetivo através da publicação de um conjunto de "Linhas de base de segurança" recomendadas pela Microsoft (**Intune** > **Linhas de base de segurança**).  Um administrador pode criar políticas de segurança diretamente a partir dessas linhas de base e, em seguida, implementá-las aos respetivos utilizadores. Também pode personalizar as recomendações de melhores práticas para satisfazer as necessidades da sua organização. O Intune assegura que os dispositivos permanecem em conformidade com estas linhas de base e notifica os administradores de utilizadores ou dispositivos que não estejam em conformidade.
 
 Para saber mais sobre as linhas de base de segurança, veja [criar uma linha de base de segurança do Windows 10 no Intune](security-baselines-monitor.md).
@@ -117,8 +120,9 @@ Alterámos as etiquetas para as definições e botões para proteção de aplica
 As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
 
 ### <a name="device-management"></a>Gestão de dispositivos
-#### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Políticas WIP implementadas sem inscrição do utilizador <!-- 1434452 -->
-Políticas de Windows Information Protection (WIP) podem ser implementadas sem a necessidade dos utilizadores MDM inscrever o dispositivo Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. A partir do Intune no portal do Azure, selecione **aplicação de cliente** > **eliminação seletiva de aplicações**.
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Suporte de eliminação seletiva para WIP sem inscrição de dispositivos <!-- 1434452 -->
+Windows Information Protection sem inscrição (WIP-PODEMOS) permite que os clientes proteger os dados empresariais em dispositivos Windows 10, sem a necessidade de inscrição de MDM completa. Assim que os documentos estão protegidos com um WIP-política de nós, os dados protegidos que podem ser apagados seletivamente por um administrador do Intune. Ao selecionar o utilizador e dispositivo e enviar um pedido de eliminação de dados, todos os dados que foi protegido por meio do WIP-política irá tornar-se inutilizável. No Intune, no portal do Azure, selecione **Aplicação móvel** > **Eliminação seletiva da aplicação**.
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
 

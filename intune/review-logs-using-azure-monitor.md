@@ -1,11 +1,11 @@
 ---
-title: Registos de auditoria de Store no monitor do Azure com o Microsoft Intune – Azure | Documentos da Microsoft
+title: Registos de auditoria de rota no monitor do Azure com o Microsoft Intune – Azure | Documentos da Microsoft
 description: Utilize as definições de diagnóstico para enviar registos de auditoria e registos operacionais no Microsoft Intune para a conta de armazenamento do Azure, os hubs de eventos ou do log analytics. Escolha o período de tempo pretende manter os dados e ver que alguns custos estimados para os inquilinos de tamanho diferente.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7c801909bfc6df9f3a7e7ae139531630e3f13c4a
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 6323eda16ef54df3cb14f9a8dd4f8349e51d1b01
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071271"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105158"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics no Intune (pré-visualização)
 

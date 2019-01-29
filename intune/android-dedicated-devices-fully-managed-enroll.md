@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0366a4394f5046d72c7cf01d2848974d225597a6
-ms.sourcegitcommit: d757c907af6c3c1b20823ffa4fda3acbaa8ecd9f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54444562"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146898"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Inscrever os dispositivos dedicados Android ou totalmente geridos dispositivos (pré-visualização)
 
 Depois que tiver configurado a sua [dispositivos dedicados do Android](android-kiosk-enroll.md) ou [dispositivos totalmente geridos](android-fully-managed-enroll.md) no Intune, pode inscrever os dispositivos. A forma como inscreve os seus dispositivos Android depende do sistema operativo.
 
-| Método de inscrição | Versão mínima do SO Android para dispositivos dedicados | Versão mínima do SO Android para dispositivos totalmente geridos |
-| ----- | ----- | ----- |
-| Comunicação de Proximidade | 5.1 | 6.0 |
-| Entrada de token | 6.0 | 6.0 |
-| Código QR | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| Método de inscrição | Versão mínima do SO Android para dispositivos dedicados e totalmente geridos |
+| ----- | ----- |
+| Comunicação de Proximidade | 5.1 |
+| Entrada de token | 6.0 |
+| Código QR | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* No fabricantes de participantes.
 

@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387092"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146915"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Configurar o Intune inscrição do Android totalmente dispositivos geridos (pré-visualização)
 
@@ -38,7 +38,7 @@ Tem de ter do Intune dispositivos geridos pelo inquilino autónomo para gerir to
 
 Dispositivos têm de cumprir estes requisitos para ser gerido como um dispositivo Android gerido totalmente o dispositivo:
 
-- SO Android versão 6.0 e superior.
+- Versão do SO Android 5.1 e posterior.
 - Dispositivos têm de executar uma compilação do Android que tem conectividade do Google Mobile Services (GMS). Os dispositivos têm de ter os GMS disponíveis e têm de conseguir ligar-se aos mesmos.
 
 Não existe nenhuma restrição nos fabricante de dispositivo/OEM forem cumpridos os requisitos acima.
