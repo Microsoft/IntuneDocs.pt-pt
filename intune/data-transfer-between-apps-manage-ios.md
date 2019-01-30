@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58d0cbbd503697575cd63e66fff80bd91e742e5e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831457"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229904"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
@@ -37,7 +37,7 @@ Utilizar políticas de proteção de aplicações com o iOS **gestão Open in** 
 
 -   **Dispositivos de funcionários não geridos por nenhuma solução MDM:** A proteção de aplicações pode configurar definições de política **permitir que a aplicação transfira dados apenas aplicações geridas por políticas**. O *Open-In* comportamento das aplicações geridas por políticas apresenta apenas outras aplicações geridas por políticas como opções para a partilha. Se um utilizador tentar enviar um ficheiro protegido por políticas como um anexo do OneDrive na aplicação de e-mail nativo, esse ficheiro é ilegível.
 
--   **Dispositivos geridos pelo Intune:** Para dispositivos inscritos no Intune, transferência de dados entre aplicações com políticas de proteção de aplicações e outras aplicações iOS geridas implementadas através do Intune é permitida automaticamente. Para especificar como pretende permitir a transferência de dados para outras aplicações, ative **permitir que a aplicação transfira dados para outras aplicações** e, em seguida, escolha o seu nível favorito de compartilhamento. Para especificar como pretende permitir que uma aplicação receba dados de outras aplicações, ative **permitir que a aplicação receba dados de outras aplicações** e, em seguida, escolha o seu nível favorito de receção de dados. Pode utilizar a funcionalidade **Gestão Open in** para controlar a transferência de dados entre as aplicações que são implementadas através do Intune. Para obter mais informações sobre a receção e partilha de dados de aplicações, veja [Definições de reposicionamento de dados](app-protection-policy-settings-ios.md#data-protection-settings).   
+-   **Dispositivos geridos pelo Intune:** Para dispositivos inscritos no Intune, transferência de dados entre aplicações com políticas de proteção de aplicações e outras aplicações iOS geridas implementadas através do Intune é permitida automaticamente. Para especificar como pretende permitir a transferência de dados para outras aplicações, ative **permitir que a aplicação transfira dados para outras aplicações** e, em seguida, escolha o seu nível favorito de compartilhamento. Para especificar como pretende permitir que uma aplicação receba dados de outras aplicações, ative **permitir que a aplicação receba dados de outras aplicações** e, em seguida, escolha o seu nível favorito de receção de dados. Pode utilizar a funcionalidade **Gestão Open in** para controlar a transferência de dados entre as aplicações que são implementadas através do Intune. Para obter mais informações sobre a receção e partilha de dados de aplicações, veja [Definições de reposicionamento de dados](app-protection-policy-settings-ios.md#data-protection).   
 
 -   **Dispositivos geridos por uma solução MDM de terceiros:** Pode restringir a transferência de dados apenas às aplicações geridas utilizando o iOS **gestão Open in** funcionalidade.
 Para certificar-se de que as aplicações que implementar através de uma solução MDM de terceiros também estão associadas com as políticas de proteção de aplicações do Intune, configure a definição de UPN do utilizador, conforme descrito na seção a seguir, [configurar a definição de UPN do utilizador](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Quando implementar aplicações com a definição de UPN do utilizador, aplicam as políticas de proteção de aplicações à aplicação quando o utilizador inicia sessão com a respetiva conta de trabalho.

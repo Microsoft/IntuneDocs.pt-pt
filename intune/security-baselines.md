@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: afc5faff7ea06bca07c06aadb887aa199739c6c0
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55071266"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229930"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Criar uma linha de base de segurança do Windows 10 no Intune
 
@@ -30,7 +30,7 @@ Esta funcionalidade aplica-se a:
 - Windows 10 versão 1809 e posterior
 
 > [!NOTE]
-> Enquanto as linhas de base de segurança está em pré-visualização, a Microsoft não recomendada através de perfis num ambiente de produção, como as linhas de base podem mudar ao longo da pré-visualização.
+> Enquanto as linhas de base de segurança está em pré-visualização, a Microsoft não recomendada através de perfis num ambiente de produção, como as linhas de base podem mudar ao longo da pré-visualização. Quando as linhas de base de segurança estão disponíveis em geral, perfis existentes não podem ser convertidos para os perfis mais recente suportados.
 
 O objetivo de utilizar linhas de base de segurança é fornecer um fluxo de trabalho seguro do ponto-a-ponto, ao trabalhar com o Microsoft 365. Alguns dos benefícios incluem:
 

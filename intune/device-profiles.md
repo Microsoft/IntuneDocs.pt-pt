@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203523"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229989"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições de funcionalidades nos seus dispositivos com perfis de dispositivos no Microsoft Intune
 
@@ -123,8 +123,8 @@ Esta funcionalidade suporta:
 - Android enterprise
 - iOS
 - macOS
-- Windows 10
-- Equipe do Windows 10
+- Windows 10 e posterior
+- Windows 10 Team
 
 ## <a name="delivery-optimization"></a>Otimização da entrega
 
@@ -174,7 +174,7 @@ Esta funcionalidade suporta:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 e posterior
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Esta funcionalidade suporta:
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 e posterior
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Esta funcionalidade suporta:
 - iOS
 - macOS
 - Windows 8.1 (importar apenas)
+- Windows 10 e posterior
 
 ## <a name="esim-cellular---public-preview"></a>Rede celular eSIM – pré-visualização pública
 
@@ -241,7 +242,7 @@ Esta funcionalidade suporta:
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 e posterior
 
 ## <a name="windows-information-protection-profile"></a>Perfil do Windows Information Protection
 
@@ -251,7 +252,7 @@ Esta funcionalidade suporta:
 
 - Windows 10 e posterior
 
-## <a name="shared-multi-user-device"></a>Dispositivos partilhados, de vários utilizadores
+## <a name="shared-multi-user-device"></a>Dispositivo multiutilizador partilhado
 
 [Windows 10](shared-user-device-settings-windows.md) e [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) inclui definições para gerir dispositivos com vários utilizadores, dispositivos partilhados também conhecido como ou PCs partilhados. Quando um utilizador inicia sessão no dispositivo, pode escolher se o utilizador pode alterar as opções de suspensão ou guardar ficheiros no dispositivo. Noutro exemplo, pode criar uma política que elimina Inativas credenciais de dispositivos HoloLens do Windows para economizar espaço.
 

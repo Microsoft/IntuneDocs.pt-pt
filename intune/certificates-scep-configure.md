@@ -2,24 +2,24 @@
 title: Utilizar certificados SCEP com o Microsoft Intune – Azure | Microsoft Docs
 description: Para utilizar certificados SCEP no Microsoft Intune, configure o seu domínio do AD no local, crie uma autoridade de certificação, configure o servidor do NDES e instale o Intune Certificate Connector. Depois, crie um perfil de certificado SCEP e, em seguida, atribua este perfil a grupos. Além disso, veja os IDs de evento diferentes e as respetivas descrições e os códigos de diagnóstico para o serviço de conector do Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.openlocfilehash: f8b4d1aded0198dfc3dcccf6bdeda30bb54ee651
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597380"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230159"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -223,7 +223,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Localização                        |      Valor      | Tipo  |      Dados       |
+   |                        Localização                        |      Valor      | Type  |      Dados       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
@@ -322,7 +322,7 @@ Neste passo, irá:
     > [!TIP]
     > Se fechar o assistente antes de iniciar a IU do Certificate Connector, pode abri-lo novamente ao executar o seguinte comando:
     >
-    > \NDESConnectorUI\NDESConnectorUI.exe < install_Path >
+    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
 
 7. Na IU do **Certificate Connector** :
 
@@ -382,15 +382,15 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
         - **Número de série**
         - **Custom**: Quando seleciona esta opção, uma **personalizado** também é apresentada a caixa de texto. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. Formato personalizado suporta duas variáveis: **Nome comum (CN)** e **E-Mail (E)**. O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
 
-            - **CN = {{UserName}}**: O nome do principal de utilizador do utilizador, por exemplo, janedoe@contoso.com
-            - **CN = {{AAD_Device_ID}}**: Um ID atribuído ao registar um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
-            - **CN = {{SERIALNUMBER}}**: Número de série exclusivo (SN) normalmente utilizado pelo fabricante para identificar um dispositivo
-            - **CN = {{IMEINumber}}**: O número exclusivo de identidade internacional de equipamento a móvel (IMEI) utilizado para identificar um telemóvel
-            - **CN = {{OnPrem_Distinguished_Name}}**: Uma sequência de nomes únicos relativos separados por vírgula, por exemplo `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{UserName}}**: O nome do principal de utilizador do utilizador, por exemplo, janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: Um ID atribuído ao registar um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
+            - **CN={{SERIALNUMBER}}**: Número de série exclusivo (SN) normalmente utilizado pelo fabricante para identificar um dispositivo
+            - **CN={{IMEINumber}}**: O número exclusivo de identidade internacional de equipamento a móvel (IMEI) utilizado para identificar um telemóvel
+            - **CN={{OnPrem_Distinguished_Name}}**: Uma sequência de nomes únicos relativos separados por vírgula, por exemplo `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, não se esqueça de sincronizar o atributo de utilizador `onpremisesdistingishedname` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
 
-            - **CN = {{onPremisesSamAccountName}}**: Os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD com o Azure AD connect para um atributo chamado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
+            - **CN={{onPremisesSamAccountName}}**: Os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD com o Azure AD connect para um atributo chamado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
 
                 Para utilizar a variável `{{onPremisesSamAccountName}}`, não se esqueça de sincronizar o atributo de utilizador `onPremisesSamAccountName` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
 
@@ -560,5 +560,6 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-- [Utilizar certificados PKCS](certficates-pfx-configure.md) ou [emitir certificados PKCS de um serviço Web de gestão de PKI da Symantec](certificates-symantec-configure.md)
-- [Adicionar um CA de terceiros para utilizar o SCEP com o Intune](certificate-authority-add-scep-overview.md)
+- [Utilizar certificados PKCS](certficates-pfx-configure.md), ou [emitir certificados PKCS de uma web do Symantec PKI manager Service](certificates-symantec-configure.md)
+- [Adicionar uma autoridade de certificação 3rd party para utilizar o SCEP com o Intune](certificate-authority-add-scep-overview.md)
+- Para obter mais ajuda, utilize o [implementação de perfil de certificado SCEP de resolução de problemas no Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) guia.

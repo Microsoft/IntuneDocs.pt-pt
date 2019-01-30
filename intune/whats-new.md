@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 2d27b37fe627b6b697bf102be4bd29427c2223c8
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199494"
+ms.locfileid: "55230193"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -52,7 +52,7 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 #### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427  -->
 Alterámos as etiquetas para as definições e botões para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
-- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
+- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / **permitir** e **desativar** / **ativar** controles. As etiquetas também são atualizadas.  
 - As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
 
 As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
@@ -60,7 +60,7 @@ As predefinições e diversas configurações permanecem os mesmos, mas esta alt
 #### <a name="additional-settings-for-outlook----3301182----"></a>Definições adicionais para o Outlook <!-- 3301182  -->
 Agora, pode configurar definições adicionais para o Outlook para iOS e Android com o Intune.  As definições incluem o seguinte: Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android implementar autenticação moderna para autenticação moderna do Office 365 e híbridas no local Contas utilização `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é selecionado contactos de permitir que sejam guardados configurar destinatários externos, configurar dicas de email **concentra-se a caixa de entrada** exigir biometria para acessar o Outlook para iOS imagens externas de bloco
 > [!NOTE]
-> Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-settings) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-settings).
+> Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-requirements) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-requirements).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Eliminar as aplicações do Android Enterprise <!-- 1352553 -->
 Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para eliminar uma aplicação do Google Play gerida, abra o Microsoft Intune no portal do Azure e selecione **aplicações de cliente** > **aplicações**. Da lista de aplicações, selecione as reticências (...) à direita da aplicação do Google Play gerida, em seguida, selecione **eliminar** na lista apresentada. Quando elimina uma aplicação do Google Play gerida da lista de aplicações, a aplicação do Google Play gerida é automaticamente não aprovada.
@@ -113,7 +113,7 @@ Para ver a lista atual de definições, aceda à [definições de dispositivos A
 Aplica-se a: Proprietário do dispositivo Android Enterprise
 
 #### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427 -->
-Alterámos as etiquetas para as definições e botões para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
+Alterámos as etiquetas para definições de um botões nd para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
 - Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
 - As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
 
@@ -400,7 +400,7 @@ Esta funcionalidade será implementada para a base de utilizadores nos próximos
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>Exigir um PIN não biométrico após um tempo limite especificado <!-- 1506985 -->
-Ao exigir um PIN não biométrico após um tempo limite especificado pelo administrador, o Intune fornece segurança melhorada para aplicações com Gestão de Aplicações Móveis (MAM) ativada ao restringir a utilização da identificação biométrica para aceder a dados da empresa. As definições afetam os utilizadores que dependem do Touch ID (iOS), Face ID (iOS), Android Biometric ou outros métodos de autenticação biométricos futuros para aceder a aplicações com APP/MAM ativada. Estas definições permitem que os administradores do Intune tenham um controlo mais abrangente sobre o acesso do utilizador, ao eliminar os casos em que um dispositivo com múltiplas impressões digitais ou outros métodos de acesso biométrico pode revelar dados da empresa a um utilizador errado. No portal do Azure, abra o **Microsoft Intune**. Selecione **Aplicações do cliente** > **Políticas de proteção de aplicações** > **Adicionar uma política** > **Definições**. Localize a secção **Acesso** para obter definições específicas. Para obter informações sobre as definições de acesso, veja as [definições do iOS](app-protection-policy-settings-ios.md#access-settings) e as [definições do Android](app-protection-policy-settings-android.md#access-settings).
+Ao exigir um PIN não biométrico após um tempo limite especificado pelo administrador, o Intune fornece segurança melhorada para aplicações com Gestão de Aplicações Móveis (MAM) ativada ao restringir a utilização da identificação biométrica para aceder a dados da empresa. As definições afetam os utilizadores que dependem do Touch ID (iOS), Face ID (iOS), Android Biometric ou outros métodos de autenticação biométricos futuros para aceder a aplicações com APP/MAM ativada. Estas definições permitem que os administradores do Intune tenham um controlo mais abrangente sobre o acesso do utilizador, ao eliminar os casos em que um dispositivo com múltiplas impressões digitais ou outros métodos de acesso biométrico pode revelar dados da empresa a um utilizador errado. No portal do Azure, abra o **Microsoft Intune**. Selecione **Aplicações do cliente** > **Políticas de proteção de aplicações** > **Adicionar uma política** > **Definições**. Localize a secção **Acesso** para obter definições específicas. Para obter informações sobre as definições de acesso, veja as [definições do iOS](app-protection-policy-settings-ios.md#access-requirements) e as [definições do Android](app-protection-policy-settings-android.md#access-requirements).
 
 #### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>Definições de transferência de dados de aplicações do Intune em dispositivos iOS inscritos na MDM <!-- 2244713 -->
 Pode separar o controlo das definições de transferência de dados de aplicações do Intune em dispositivos iOS inscritos na MDM da especificação da identidade do utilizador inscrito, também conhecida como Nome Principal de Utilizador (UPN). Os administradores que não utilizarem o IntuneMAMUPN não notarão a existência de uma alteração de comportamento. Quando esta funcionalidade estiver disponível, os administradores que utilizam o IntuneMAMUPN para controlar o comportamento de transferência de dados em dispositivos inscritos devem rever as novas definições e atualizar as respetivas definições das aplicações conforme necessário.

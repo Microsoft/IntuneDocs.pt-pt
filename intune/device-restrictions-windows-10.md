@@ -1,11 +1,11 @@
 ---
 title: Definições de restrição de dispositivos para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Ver uma lista de todas as definições e suas descrições para a criação de restrições de dispositivos no Windows 10 e dispositivos posteriores. Utilize estas definições no perfil de configuração para controlar as capturas de ecrã, requisitos de palavra-passe, definições de local público, aplicações na loja, browser Microsoft Edge, defender do Windows, acesso para a cloud, o menu Iniciar e mais no Microsoft Intune.
+description: Ver uma lista de todas as definições e suas descrições para a criação de restrições de dispositivos no Windows 10 e dispositivos posteriores. Utilize estas definições no perfil de configuração para controlar as capturas de ecrã, requisitos de palavra-passe, definições de local público, aplicações na loja, Edge browser, defender do Windows, acesso para a cloud, o menu Iniciar e mais no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203642"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230125"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -420,7 +420,7 @@ Pode configurar as informações que podem aceder a todas as aplicações no dis
 
 - **Esquema do menu Iniciar**: Para personalizar o menu Iniciar em dispositivos de ambiente de trabalho, pode carregar um ficheiro XML que inclui suas personalizações, incluindo a ordem que as aplicações forem apresentadas, e muito mais. Os utilizadores não é possível alterar o esquema do menu Iniciar que introduzir.
 - **Afixar sites a mosaicos no menu Iniciar**: Importar imagens a partir do Microsoft Edge, que são apresentados como ligações no menu Iniciar do Windows para dispositivos de ambiente de trabalho.
-- **Remover aplicações da barra de tarefas**: Escolher **bloco** para interromper o usuário de remover aplicações a partir do menu Iniciar.
+- **Remover aplicações da barra de tarefas**: Escolher **bloco** para interromper o usuário de remover aplicações a partir da barra de tarefas.
 - **Mudança rápida de utilizador**: Escolher **bloco** para evitar a alternância entre os utilizadores que tenham sessão iniciados em simultâneo sem fazer logoff.
 - **Aplicações mais utilizadas**: Escolher **bloco** para ocultar as aplicações mais utilizadas de mostrar no menu Iniciar. Também desativa o seletor correspondente na aplicação Definições.
 - **Aplicações adicionadas recentemente**: Escolher **bloco** para ocultar aplicações adicionadas recentemente de mostrar no menu Iniciar. Também desativa o seletor correspondente na aplicação Definições.
