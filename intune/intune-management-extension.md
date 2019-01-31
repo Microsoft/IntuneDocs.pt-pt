@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 063a5cbbe18efc5c406c9dc7f2fa40d614b2e48a
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860967"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303400"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10
 
@@ -38,7 +38,7 @@ A extensão de gestão do Intune complementa as funcionalidades de MDM do Window
 
 A extensão de gestão do Intune tem os seguintes pré-requisitos:
 
-- Dispositivos têm de estar associados ao Azure AD e [inscritos automaticamente](windows-enroll.md#enable-windows-10-automatic-enrollment). A extensão de gestão do Intune suporta associados ao Azure AD, associados a um domínio híbrida e comanaged os dispositivos Windows inscritos. Dispositivos inscritos no GPO não são suportados.
+- Dispositivos tem de ser associados a um ou registados no Azure AD e o Azure AD está configurado para [inscrição automática no Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). A extensão de gestão do Intune suporta associados ao Azure AD, associados a um domínio híbrida e comanaged os dispositivos Windows inscritos.
 - Dispositivos têm de executar com o Windows 10 versão 1607 ou posterior.
 - O agente de extensão de gestão do Intune é instalado quando um script do PowerShell ou uma aplicação Win32 for implementada para um utilizador ou grupo de segurança do dispositivo.
 
@@ -62,9 +62,9 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos:
 3. Selecione um ou mais grupos que incluam os utilizadores cujos dispositivos irão receber o script. Clique em **Selecionar** para atribuir a política aos grupos selecionados.
 
 > [!NOTE]
-> - Os scripts do PowerShell não podem ser aplicados a grupos de computadores.
 > - Os utilizadores finais não são necessários para iniciar sessão no dispositivo para executar scripts do PowerShell.
 > - Scripts do PowerShell no Intune podem ser direcionadas para grupos de segurança de dispositivos do Azure AD.
+> - Scripts do PowerShell no Intune podem ser direcionadas para grupos de segurança do utilizador do Azure AD.
 
 O cliente de extensão de gestão do Intune verifica uma vez por hora com o Intune. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell será executado e os resultados de execução serão comunicados.
 
@@ -91,7 +91,7 @@ Em **Scripts do PowerShell**, clique com o botão direito no script e selecione 
 
 Os scripts do PowerShell não são executados em cada início de sessão. Eles são executados apenas após os reinícios, ou se o **extensão de gestão do Microsoft Intune** serviço for reiniciado. A Intune gestão extensão verificação de cliente uma vez por hora para todas as alterações no script ou de política no Intune.
 
-#### <a name="issue-intune-management-extension-doesnt-download"></a>Problema: A extensão de gestão do Intune não é transferido
+#### <a name="issue-intune-management-extension-doesnt-download"></a>Problema: Extensão de gestão do Intune não é transferido
 
 **As possíveis resoluções**:
 
@@ -105,7 +105,7 @@ Os scripts do PowerShell não são executados em cada início de sessão. Eles s
 
     [Ativar a inscrição automática do Windows 10](windows-enroll.md#enable-windows-10-automatic-enrollment) inclui os passos.
 
-#### <a name="issue-the-powershell-scripts-do-not-run"></a>Problema: Não são executados os scripts do PowerShell
+#### <a name="issue-the-powershell-scripts-do-not-run"></a>Problema: Não execute os scripts do PowerShell
 
 **As possíveis resoluções**:
 
@@ -113,7 +113,7 @@ Os scripts do PowerShell não são executados em cada início de sessão. Eles s
 - Scripts não são executados nos Surface Hubs.
 - Verifique os registos `\ProgramData\Microsoft\IntuneManagementExtension\Logs` para quaisquer erros.
 - Para problemas de permissão possível, não se esqueça das propriedades do script do PowerShell são definidas como `Run this script using the logged on credentials`. Também pode verificar que o utilizador com sessão iniciada tem as permissões adequadas para executar o script.
-- Para isolar problemas de criação de scripts, execute um script de exemplo. Por exemplo, criar o `C:\Scripts` directory e conceder controle total. Execute o seguinte script:
+- Para isolar problemas de criação de scripts, execute um script de exemplo. Por exemplo, criar o `C:\Scripts` directory e conceder controle total. Execute o seguintes script:
 
   ```powershell
   write-output "Script worked" | out-file c:\Scripts\output.txt

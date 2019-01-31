@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 2d27b37fe627b6b697bf102be4bd29427c2223c8
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 283239a412f8c7b0a43fa5c88b4a3583b89cac8f
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230193"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290796"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode descobrir alterações futuras, [avisos importantes](#notices) e informações sobre [versões anteriores](whats-new-archive.md). É possível que algumas funcionalidades sejam implementadas durante várias semanas e que não estejam disponíveis para todos os clientes na primeira semana.
+Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode descobrir alterações futuras, [avisos importantes](#notices) e informações sobre [versões anteriores](whats-new-archive.md). 
 
 > [!Note]
+> É possível que algumas funcionalidades sejam implementadas durante várias semanas e que não estejam disponíveis para todos os clientes na primeira semana.
+>
 > Para obter informações sobre novas funcionalidades na gestão de dispositivos móveis (MDM) híbrida, veja a nossa página [Hybrid What’s New (Novidades nas Implementações Híbridas)](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS feed**: Seja notificado quando esta página é atualizada ao copiar e colar o URL seguinte no seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
@@ -58,7 +60,16 @@ Alterámos as etiquetas para as definições e botões para proteção de aplica
 As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Definições adicionais para o Outlook <!-- 3301182  -->
-Agora, pode configurar definições adicionais para o Outlook para iOS e Android com o Intune.  As definições incluem o seguinte: Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android implementar autenticação moderna para autenticação moderna do Office 365 e híbridas no local Contas utilização `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é selecionado contactos de permitir que sejam guardados configurar destinatários externos, configurar dicas de email **concentra-se a caixa de entrada** exigir biometria para acessar o Outlook para iOS imagens externas de bloco
+Agora, pode configurar definições adicionais para o Outlook para iOS e Android com o Intune.  As definições incluem o seguinte:
+- Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android
+- Implementar a autenticação moderna do Office 365 e a autenticação moderna híbrida contas no local
+- Utilize `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é seleccionada
+- Permitir que os contactos sejam guardados (disponível em breve)
+- Configurar destinatários externos dicas de email (disponível em breve)
+- Configurar **concentra-se a caixa de entrada** (disponível em breve)
+- Exigir biometria para acessar o Outlook para iOS (disponível em breve) 
+- Bloquear a imagens externas (Visible do Intune da consola, mas não é uma definição reconhecida ainda – disponível em breve)
+
 > [!NOTE]
 > Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-requirements) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-requirements).
 
@@ -112,13 +123,6 @@ Para ver a lista atual de definições, aceda à [definições de dispositivos A
 
 Aplica-se a: Proprietário do dispositivo Android Enterprise
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Atualização da IU das políticas de proteção de aplicações do Intune <!-- 3251427 -->
-Alterámos as etiquetas para definições de um botões nd para proteção de aplicações do Intune para que cada mais fácil de compreender. Algumas das alterações incluem:  
-- Controles são alterados de **Sim** / **nenhum** controla principalmente para **bloco** / * * permitir * * e **desativar**  /  **ativar** controles. As etiquetas também são atualizadas.  
-- As definições são reformatadas, portanto, a definição e a etiqueta são lado a lado no controle, para fornecer uma navegação melhor.   
-
-As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
-
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Suporte de eliminação seletiva para WIP sem inscrição de dispositivos <!-- 1434452 -->
@@ -138,6 +142,9 @@ Além dos ecrãs que atualmente pode ignorar, pode definir iOS dispositivos DEP 
 Para escolher que telas para ignorar, aceda a **inscrição de dispositivos** > **inscrição da Apple** > **tokens do programa de inscrição** > Escolha um token > **Perfis** > Escolha um perfil > **propriedades** > **personalização do Assistente de configuração** > Escolha **ocultar**  para qualquer telas que pretende ignorar > **OK**.
 Se criar um novo perfil ou editar um perfil, selecionado ignorar a necessidade de telas para sincronizar com o servidor de MDM da Apple. Os utilizadores podem emitir uma sincronização manual dos dispositivos, para que haja um atraso de escolher as alterações de perfil.
 Esta funcionalidade está a começar a implementar, mas irá demorar alguns dias para estar disponível para todos os clientes.
+
+#### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Aplicação do Android Enterprise-implementação de aplicações, <!-- 1171203 -->
+Para dispositivos Android num não inscritos proteção política sem inscrição de aplicações (APP-PODEMOS) cenário de implementação, pode agora utilizar geridos Google Play para implementar aplicações da loja e aplicações aos utilizadores LOB. Especificamente, pode fornecer aos utilizadores finais uma experiência de instalação e de catálogo de aplicações que já não necessita que os utilizadores finais flexibilize as a postura de segurança dos seus dispositivos ao permitir que as instalações de origens desconhecidas. Além disso, neste cenário de implementação irá fornecer uma experiência de usuário aprimorada do fim.
 
 ## <a name="week-of-january-14-2019"></a>Semana de 14 de Janeiro de 2019
 

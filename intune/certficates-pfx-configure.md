@@ -2,8 +2,8 @@
 title: Utilizar certificados de chaves públicos e privados no Microsoft Intune – Azure | Microsoft Docs
 description: Adicionar ou criar certificados de padrões de criptografia de chave pública (PKCS) com o Microsoft Intune, incluindo os passos para exportar um certificado de raiz, configurar o modelo de certificado, transferir e instalar o Microsoft Intune certificado conector (NDES), criar um configuração de dispositivos de perfil, crie um perfil de certificado PKCS no Azure e a sua autoridade de certificação.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203625"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303497"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -82,7 +82,7 @@ Para autenticar com VPN, Wi-Fi ou outros recursos, é necessário um certificado
 3. Localize o modelo de certificado de **Utilizador**, clique com o botão direito do rato nele e escolha **Duplicar Modelo**. As **Propriedades de Novo Modelo** são abertas.
 
     > [!NOTE]
-    > Para cenários de encriptação e assinaturas de e-mail com S/MIME, muitos administradores utilizam certificados separados para assinar e encriptar. Se estiver a utilizar os Serviços de Certificados do Microsoft Active Directory, pode utilizar o modelo **Apenas Assinatura do Exchange** para certificados de assinaturas de e-mail S/MIME e o modelo **Utilizador do Exchange** para certificados de encriptação S/MIME.  Se estiver a utilizar outra autoridade de certificação, sugerimos que consulte as respetivas orientações para configurar modelos de assinaturas e encriptação.
+    > Para cenários de encriptação e assinaturas de e-mail com S/MIME, muitos administradores utilizam certificados separados para assinar e encriptar. Se estiver a utilizar os Serviços de Certificados do Microsoft Active Directory, pode utilizar o modelo **Apenas Assinatura do Exchange** para certificados de assinaturas de e-mail S/MIME e o modelo **Utilizador do Exchange** para certificados de encriptação S/MIME.  Se estiver a utilizar uma autoridade de certificação 3rd, recomenda-se para rever as suas orientações para configurar modelos de assinatura e encriptação.
 
 4. No separador **Compatibilidade**:
 
@@ -136,6 +136,7 @@ Para autenticar com VPN, Wi-Fi ou outros recursos, é necessário um certificado
 6. No separador **Avançadas**, recomendamos que deixe a opção **Utilizar a conta SYSTEM deste computador (predefinição)** selecionada.
 7. **Aplicar** > **Fechar**
 8. Aceda novamente ao portal do Azure (**Intune** > **Configuração do Dispositivo** > **Autoridade de Certificação**). Após alguns instantes, é apresentada uma marca de verificação verde e o **estado da ligação** é **Active Directory**. Agora o servidor do conector pode comunicar com o Intune.
+9. Se tiver um proxy web no seu ambiente de rede, poderá ter configurações adicionais para ativar o conector funcione. Para obter mais informações, consulte [funcionam com o existente no local servidores proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) na documentação do Azure Active Directory.
 
 > [!NOTE]
 > O suporte de TLS 1.2 está incluído com o Microsoft Intune Certificate Connector. Assim, se o servidor com o Microsoft Intune Certificate Connector instalado suportar TLS 1.2, é utilizado TLS 1.2. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.

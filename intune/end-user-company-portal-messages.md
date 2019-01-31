@@ -15,12 +15,12 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 811bf4ba6ed611dab0e42625a8aa3dc2b18e007c
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112787"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290711"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
@@ -106,9 +106,9 @@ Se não tiver adicionado a aplicação Portal da Empresa à lista de **Aplicaç�
 > **O suporte da sua empresa tem de lhe conceder acesso aos recursos da empresa**  
 > A sua empresa está a utilizar políticas do Windows Information Protection para proteger o seu dispositivo. O suporte da sua empresa terá de se certificar de que permite o acesso a esses recursos por parte do Portal da Empresa.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 
-Adicione o Portal da Empresa à lista de **Aplicações permitidas** ou **Aplicações excluídas** na política de proteção de aplicações Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
+Adicionar o Portal da empresa para o **aplicações permitidas** ou **aplicações excluídas** lista na política de proteção de aplicações de Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
 
 ### <a name="see-also"></a>Consulte também
 [O que dizer aos utilizadores finais sobre a utilização do Intune](end-user-educate.md)

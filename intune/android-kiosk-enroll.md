@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386906"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290728"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição do Intune de dispositivos empresariais Android dedicado
 
@@ -101,7 +101,7 @@ Agora, pode [inscrever os dispositivos dedicados](android-dedicated-devices-full
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Gestão de aplicações em dispositivos Android de dedicado
 
-Apenas as aplicações que têm o tipo de atribuição [definido em necessário](apps-deploy.md#to-assign-an-app) pode ser instalado em dispositivos Android de dedicado. As aplicações são instaladas a partir da Google Play Store Gerida da mesma forma que os dispositivos com perfil de trabalho do Android.
+Apenas as aplicações que têm o tipo de atribuição [definido em necessário](apps-deploy.md#assign-an-app) pode ser instalado em dispositivos Android de dedicado. As aplicações são instaladas a partir da Google Play Store Gerida da mesma forma que os dispositivos com perfil de trabalho do Android.
 
 As aplicações são atualizadas automaticamente em dispositivos geridos quando o programador da aplicação publica uma atualização na Google Play Store.
 

@@ -2,10 +2,10 @@
 title: Utilizar um PIN para iniciar sessão em dispositivos Windows 10 com o Microsoft Intune – Azure | Documentos da Microsoft
 description: Utilize o Windows Hello para empresas para permitir que os utilizadores iniciem sessão em dispositivos através de um PIN, uma impressão digital e muito mais. Criar um perfil de configuração de proteção de identidade no Intune para dispositivos Windows 10 com estas definições e atribuir o perfil a grupos de utilizadores e grupos de dispositivos.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: c6ca040c91437a35d12626f54b8385311d6631eb
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831392"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290660"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Utilizar o Windows Hello para empresas em dispositivos Windows 10 com o Microsoft Intune
 
@@ -60,7 +60,7 @@ Este artigo mostra-lhe como criar um perfil de configuração do dispositivo. Pa
 
 4. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
 
-O perfil é criado e apresentado na lista de perfis. Em seguida, [atribuir](device-profile-assign.md) este perfil a grupos.
+O perfil é criado e apresentado na lista de perfis. Em seguida, [atribuir](device-profile-assign.md) este perfil a grupos de utilizadores e dispositivos para atender às suas necessidades.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

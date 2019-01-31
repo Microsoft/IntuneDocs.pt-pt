@@ -28,7 +28,9 @@ A inscrição automática permite que os utilizadores inscrevam os respetivos di
    - **Todos** – Todos os utilizadores podem inscrever automaticamente os dispositivos Windows 10
 
       > [!IMPORTANT]
-      > Se o **âmbito do utilizador MAM** e a inscrição na MDM automática (**âmbito do utilizador MDM**) estiverem ativados num grupo, apenas a MAM será ativada. Apenas a MAM será adicionada para os utilizadores nesse grupo quando estes associarem o respetivo dispositivo pessoal à área de trabalho. Os dispositivos não são automaticamente inscritos na MDM.
+      > Para dispositivos BYOD, o âmbito de utilizador MAM tem prioridade se o âmbito de utilizador MAM e o âmbito do utilizador MDM (inscrição na MDM automática) estiverem ativadas para todos os utilizadores (ou os mesmos grupos de utilizadores). O dispositivo irá utilizar as políticas de Windows Information Protection (WIP) (se configurada-los) em vez de ser inscritos na MDM.
+      >
+      > Para dispositivos da empresa, o âmbito do utilizador MDM terá prioridade se ambos os âmbitos são ativados. Os dispositivos obtém inscritos na MDM.
 
    ![Captura de ecrã do portal do Azure](../media/auto-enroll-scope.png)
 

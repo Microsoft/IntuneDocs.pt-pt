@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734277"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290745"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -51,7 +51,7 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 >
 > Para receber atualizações de aplicações em dispositivos que não estão inscritos no Intune, os utilizadores dos dispositivos têm de navegar até ao Portal da Empresa da organização e instalar as atualizações das aplicações manualmente.
 
-## <a name="to-assign-an-app"></a>Para atribuir uma aplicação
+## <a name="assign-an-app"></a>Atribuir uma aplicação
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
@@ -62,7 +62,7 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 8. Para a aplicação específica, selecione um **tipo de atribuição**:
    - **Disponível para dispositivos inscritos**: Atribua a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação Portal da empresa.
-   - **Disponível com ou sem inscrição**: Atribua esta aplicação a grupos de utilizadores cujos dispositivos não inscritos no Intune. As aplicações da Google Play Store Gerida não suportam esta opção. Os utilizadores tem de ser atribuídos uma licença do Intune, consulte [licenças do Intune](licenses.md).
+   - **Disponível com ou sem inscrição**: Atribua esta aplicação a grupos de utilizadores cujos dispositivos não inscritos no Intune. Os utilizadores tem de ser atribuídos uma licença do Intune, consulte [licenças do Intune](licenses.md).
    - **Necessário**: A aplicação está instalada nos dispositivos nos grupos selecionados. Algumas plataformas podem ter os pedidos adicionais para o utilizador final confirmar antes de inicia a instalação da aplicação.
    - **Desinstalar**: A aplicação é desinstalada dos dispositivos nos grupos selecionados, se o Intune anteriormente instalou a aplicação no dispositivo por meio de um "disponível para dispositivos inscritos" ou "Required" atribuição usando a implantação do mesmo. Ligações da Web não podem ser removidas após a implementação.
 
@@ -122,6 +122,9 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com inten�
 > [!NOTE]
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
 > As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Aplicação do Android Enterprise-implementação de aplicações,
+Para dispositivos Android num não inscritos proteção política sem inscrição de aplicações (APP-PODEMOS) cenário de implementação, pode agora utilizar Google Play gerido para implementar aplicações da loja e aplicações aos utilizadores LOB. Especificamente, pode fornecer aos utilizadores finais uma experiência de instalação e de catálogo de aplicações que já não necessita que os utilizadores finais flexibilize as a postura de segurança dos seus dispositivos ao permitir que as instalações de origens desconhecidas. Além disso, neste cenário de implementação irá fornecer uma experiência de usuário aprimorada do fim. Para obter os passos atribuir uma aplicação, consulte [atribui uma aplicação](apps-deploy.md#assign-an-app).
 
 ## <a name="next-steps"></a>Passos Seguintes
 
