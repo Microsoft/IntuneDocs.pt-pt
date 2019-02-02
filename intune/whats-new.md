@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 9ca959bf28145500df71cb9ce8c7c36d62c9f773
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: e471c14bddd80e88931326c0fad7a2a4fd85f73b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504583"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652668"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -82,6 +82,9 @@ Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para e
 
 #### <a name="managed-google-play-app-type----1352580---"></a>Tipo de aplicação do Google Play gerido <!-- 1352580 -->
 O **managed Google Play** tipo de aplicação permite-lhe adicionar especificamente [Google Play aplicações geridas](https://play.google.com/work/search?q=microsoft&c=apps) ao Intune. Como o administrador do Intune, pode agora navegar, procurar, aprovar, sincronizar e atribuir aprovados Google Play gerido aplicações no Intune.  Já não precisar de procurar na consola do Google Play gerido separadamente e já não tem de autenticar.  No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Na **tipo de aplicação** lista, selecione **Google Play gerido** como o tipo de aplicação.
+
+### <a name="default-android-pin-keyboard----3802457---"></a>Teclado de Android PIN predefinido <!-- 3802457 -->
+Para os utilizadores finais que definiu uma aplicação de proteção de política (PIN da aplicação Intune) nos respetivos dispositivos Android com o tipo PIN de "Numérica", irão ver agora o teclado de Android padrão em vez de teclado Android fixo da interface do Usuário que foi criado anteriormente. Esta alteração foi feita para ser consistente ao utilizar o teclados padrão no Android e iOS, para os dois tipos PIN de "Numérica" e/ou de "Código de acesso". Para obter mais informações sobre as definições de acesso do utilizador final no Android, por exemplo, o PIN da aplicação, consulte [requisitos de acesso para Android](app-protection-policy-settings-android.md#access-requirements).
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
@@ -1419,12 +1422,12 @@ Não é necessário efetuar qualquer ação; Estas alterações serão lançadas
 
 
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Planear a alteração: Exchange Online para o conector do Intune não estarão disponível no Intune <!-- 3105122 -->
-Para simplificar sua experiência com o Exchange Online e o acesso condicional, vamos desativar o Exchange Online para Intune "conector de serviços". Esta alteração irá começar com a atualização do serviço de Dezembro e ser concluída com a atualização do serviço de Fevereiro de 2019.
+Para simplificar sua experiência com o Exchange Online e o acesso condicional, vamos desativar o Exchange Online para Intune "conector de serviços".
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Está recebendo esta mensagem, uma vez que os nossos registos indicam que pode utilizar a funcionalidade de conector "De serviços" no seu ambiente. O conector de 'De serviços' suporta a gestão do Exchange Active Sync apenas os dispositivos do Intune para o Exchange Online e não suporta a infraestrutura no local. Este conector, a forma como o que é apresentado no console, é apresentada como necessários para acesso condicional (AC), quando, na realidade, não é necessária para a AC. Com a atualização de Dezembro para o serviço do Intune, para esclarecer na consola, podemos irá desativar o botão configurar novos conectores. Em seguida, em Fevereiro de 2019, todos os existentes Exchange Online para conectores do Intune será desativada.
+Está recebendo esta mensagem, uma vez que os nossos registos indicam que pode utilizar a funcionalidade de conector "De serviços" no seu ambiente. O conector de 'De serviços' suporta a gestão do Exchange Active Sync apenas os dispositivos do Intune para o Exchange Online e não suporta a infraestrutura no local. Este conector, a forma como o que é apresentado no console, é apresentada como necessários para acesso condicional (AC), quando, na realidade, não é necessária para a AC. Com a atualização de Fevereiro ao serviço do Intune, para esclarecer na consola, podemos irá desativar o botão configurar novos conectores. Em seguida, em Março de 2019, todos os existentes Exchange Online para conectores do Intune será desativada.
 
-Se utilizar estes conectores no seu ambiente, não será possível monitorizar ou eliminar os Exchange Active Sync apenas os dispositivos no Intune após conectores foram desativados em Fevereiro. Não há nenhum impacto previsto aos seus utilizadores finais durante esta alteração.
+Se utilizar estes conectores no seu ambiente, não será possível monitorizar ou eliminar os Exchange Active Sync apenas os dispositivos no Intune após conectores foram desativados em Março. Não há nenhum impacto previsto aos seus utilizadores finais durante esta alteração.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
 

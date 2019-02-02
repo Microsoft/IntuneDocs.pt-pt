@@ -16,16 +16,16 @@ Customer intent: As an Intune admin, I want to learn where to find the different
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd6230fda65a22bb7cae4f5d130d13bb6f2379e7
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: f9d72ec2f35f15e2515160869fc352360b17e812
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55505242"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645177"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Passo a passo do Microsoft Intune no portal do Azure
 
-[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) conter mais dos serviços de 100 para ajudá-lo com uma variedade de cenários de computação em nuvem e de todas as possibilidades. O Microsoft Intune é um dos vários serviços disponíveis no Azure. Intune ajuda a garantir que os dispositivos, aplicações e dados da sua empresa cumprem os requisitos de segurança de sua empresa. Tem o controle para o conjunto de requisitos precisam ser verificado e o que acontece quando esses requisitos não forem cumpridos. Pode encontrar o serviço Microsoft Intune no [portal do Azure](https://portal.azure.com). Noções básicas sobre as funcionalidades disponíveis no Intune irá ajudá-lo a realizar tarefas de gestão de dispositivos móveis (MDM) de várias e gestão de aplicações móveis (MAM).
+[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contém mais de 100 serviços para ajudá-lo com uma variedade de cenários de computação em nuvem e de todas as possibilidades. O Microsoft Intune é um dos vários serviços disponíveis no Azure. Intune ajuda a garantir que os dispositivos, aplicações e dados da sua empresa cumprem os requisitos de segurança de sua empresa. Tem o controle para o conjunto de requisitos precisam ser verificado e o que acontece quando esses requisitos não forem cumpridos. Pode encontrar o serviço Microsoft Intune no [portal do Azure](https://portal.azure.com). Noções básicas sobre as funcionalidades disponíveis no Intune irá ajudá-lo a realizar tarefas de gestão de dispositivos móveis (MDM) de várias e gestão de aplicações móveis (MAM).
 
 Neste tutorial, irá:
 > [!div class="checklist"]
@@ -72,7 +72,7 @@ Siga os passos abaixo para compreender melhor o Intune no portal do Azure. Depoi
     ![Captura de ecrã do painel de conformidade do dispositivo](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
     Requisitos de conformidade são essencialmente regras, como exigir um PIN do dispositivo ou exigir a encriptação de dispositivos. Políticas de conformidade de dispositivo definem as regras e definições que um dispositivo tem de seguir para ser considerado conforme. Para utilizar a conformidade do dispositivo, tem de ter:
-    - Do Intune e uma subscrição do Azure Active Directory (AD) Premium
+    - Do Intune e uma subscrição do Azure Active Directory (Azure AD) Premium
     - Dispositivos com uma plataforma suportada
     - Dispositivos têm de estar inscritos no Intune
     - Dispositivos inscritos um utilizador ou nenhum utilizador primário.
@@ -111,7 +111,7 @@ Siga os passos abaixo para compreender melhor o Intune no portal do Azure. Depoi
 
     Pode adicionar utilizadores diretamente para o Intune ou sincronizar utilizadores do Active Directory no local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Também pode dar aos utilizadores permissões adicionais para aceder ao Intune. Para obter mais informações, consulte [adicionar utilizadores e conceder permissões administrativas no Intune](users-add.md).
 
-9. Partir [Intune](https://aka.ms/intuneportal), selecione **grupos** para apresentar os detalhes sobre os grupos do Azure Active Directory (AD) incluídos no Intune. Como administrador do Intune, pode utilizar o grupo para gerir dispositivos e utilizadores. 
+9. Partir [Intune](https://aka.ms/intuneportal), selecione **grupos** para apresentar os detalhes sobre os grupos do Azure Active Directory (Azure AD) incluídos no Intune. Como administrador do Intune, pode utilizar o grupo para gerir dispositivos e utilizadores. 
 
     ![Captura de ecrã do painel de grupos](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 
