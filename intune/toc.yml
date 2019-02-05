@@ -13,7 +13,7 @@ items:
     - name: Novidades na IU da aplicação
       href: whats-new-app-ui.md
   expanded: true
-- name: Quickstarts (Inícios Rápidos)
+- name: Guias de Introdução
   items:
   - name: Experimentar o Intune gratuitamente
     href: free-trial-sign-up.md
@@ -77,7 +77,7 @@ items:
     href: mam-faq.md
   - name: FAQ de políticas e perfis
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
-- name: How-to guides (Manuais de instruções)
+- name: How-to guides (Guias de procedimentos)
   items:
   - name: Implementação de planos
     items:
@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Definir conformidade do dispositivo
     items:
-    - name: Descrição geral de conformidade do dispositivo
+    - name: Descrição geral da conformidade
       href: device-compliance-get-started.md
-    - name: Criar a política para Android
+    - name: Conformidade em Android
       href: compliance-policy-create-android.md
-    - name: Criar política de perfil empresarial do Android
+    - name: Conformidade em Android Enterprise
       href: compliance-policy-create-android-for-work.md
-    - name: Criar uma política para ativar o Google Play Protect
+    - name: Ativar o Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Criar a política para iOS
+    - name: Conformidade em iOS
       href: compliance-policy-create-ios.md
-    - name: Criar a política para Windows
+    - name: Conformidade em Windows
       href: compliance-policy-create-windows.md
-    - name: Política baseada na localização
+    - name: Conformidade baseada em localizações
       href: use-network-locations.md
     - name: Avaliar uma política
       href: policy-evaluate.md
@@ -251,41 +251,41 @@ items:
       href: actions-for-noncompliance.md
     - name: Monitorizar a conformidade do dispositivo
       href: compliance-policy-monitor.md
-  - name: Configurar dispositivos
+  - name: Configurar definições de dispositivos
     items:
-    - name: Configurar dispositivos com perfis
+    - name: Descrição geral da configuração de dispositivos
       href: device-profiles.md
     - name: Perfis de dispositivo
       href: device-profile-create.md
-    - name: Administrative templates (Modelos administrativos)
+    - name: Modelos administrativos
       href: administrative-templates-windows.md
-    - name: Funcionalidades do dispositivo (iOS e MacOS)
+    - name: Funcionalidades do dispositivo
       href: device-features-configure.md
-    - name: Restrições de dispositivos
+    - name: Restringir definições e funcionalidades de dispositivos
       href: device-restrictions-configure.md
-    - name: Otimização da entrega
+    - name: Atualizações da entrega
       href: delivery-optimization-windows.md
-    - name: Alteração do modo e atualização da edição
+    - name: Atualizar edições e modo S
       href: edition-upgrade-configure-windows-10.md
-    - name: Definições de e-mail
+    - name: Configurar o e-mail
       href: email-settings-configure.md
-    - name: Definições de quiosque
+    - name: Ativar o modo de quiosque
       href: kiosk-settings.md
-    - name: Definições de VPN
+    - name: Adicionar uma VPN
       href: vpn-settings-configure.md
       items:
       - name: VPN por aplicação para Android
         href: android-pulse-secure-per-app-vpn.md
       - name: VPN por aplicação para iOS
         href: vpn-setting-configure-per-app.md
-    - name: Definições de Wi-Fi
+    - name: Adicionar uma rede Wi-Fi sem fios
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi com uma chave pré-partilhada
         href: wi-fi-profile-shared-key.md
-    - name: Definições de educação
+    - name: Aplicação Fazer um Teste de educação
       href: education-settings-configure.md
-    - name: Shared multi-user devices (Dispositivos multiutilizador partilhados)
+    - name: Dispositivos multiutilizador partilhados
       href: shared-user-device-settings.md
     - name: Monitorizar as despesas de telecomunicações
       href: telecom-expenses-monitor.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Monitorizar os perfis
       href: device-profile-monitor.md
-    - name: Resolver problemas de perfis
+    - name: Perguntas e respostas comuns
       href: device-profile-troubleshoot.md
   - name: Proteger os dados do dispositivo
     items:
@@ -306,7 +306,7 @@ items:
       items:
       - name: Recolha de dados
         href: privacy-data-collect.md
-      - name: Data storage and processing (Processamento e armazenamento de dados)
+      - name: Armazenamento e processamento de dados
         href: privacy-data-store-process.md
       - name: Partilha e segurança de dados
         href: privacy-data-secure-share.md
@@ -321,9 +321,9 @@ items:
           href: data-intune-sends-to-google.md
         - name: Informações partilhadas do Jamf Pro com o Intune
           href: conditional-access-integrate-jamf.md
-      - name: View and correct personal data (Ver e corrigir dados pessoais)
+      - name: Ver e corrigir dados pessoais
         href: privacy-data-view-correct.md
-      - name: Audit, export, delete (Auditar, exportar ou eliminar)
+      - name: Auditar, exportar ou eliminar
         href: privacy-data-audit-export-delete.md
     - name: Acesso condicional
       href: conditional-access.md
@@ -568,7 +568,7 @@ items:
       href: data-google-sends-to-intune.md
   - name: Obter ajuda e suporte
     items:
-    - name: Resolver problemas
+    - name: Resolver Problemas
       items:
       - name: Ajudar os utilizadores a resolver problemas
         href: help-desk-operators.md
@@ -624,7 +624,7 @@ items:
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-android.md
           items:
           - name: Permitir/bloquear aplicações no Samsung Knox Standard
@@ -651,7 +651,7 @@ items:
           href: vpn-settings-android.md#android-for-work-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-android-for-work.md
     - name: iOS
       items:
@@ -675,7 +675,7 @@ items:
           href: vpn-settings-ios.md
         - name: Wi-Fi
           href: wi-fi-settings-ios.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-ios.md
     - name: macOS
       items:
@@ -697,7 +697,7 @@ items:
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-macos.md
     - name: Windows 10 e posterior
       items:
@@ -733,7 +733,7 @@ items:
           href: education-settings-windows.md
         - name: Dispositivo multiutilizador partilhado
           href: shared-user-device-settings-windows.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-windows-10.md
     - name: Windows Holographic for Business
       items:
@@ -745,9 +745,9 @@ items:
         href: holographic-upgrade.md
       - name: Modo de Local Público
         href: kiosk-settings-holographic.md
-      - name: Personalizado
+      - name: Personalizar
         href: custom-settings-windows-holographic.md
-    - name: Windows 8.1
+    - name: Windows 8.1
       items:
       - name: Definições da política de conformidade
         href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
@@ -779,7 +779,7 @@ items:
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-windows-phone-8-1.md
   - name: Orientação para programadores
     items:
@@ -854,11 +854,13 @@ items:
       items:
       - name: Referência da API do Intune
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Graph APIs utilizadas para configurar dispositivos
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Recursos
   items:
   - name: Guia de documentação do Microsoft Intune
     href: intune-documentation.md
-  - name: Resolver problemas
+  - name: Resolver Problemas
     items:
     - name: Ajudar os utilizadores a resolver problemas
       href: help-desk-operators.md
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504549"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645194"
