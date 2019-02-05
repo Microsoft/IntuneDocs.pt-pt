@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e471c14bddd80e88931326c0fad7a2a4fd85f73b
-ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
+ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55652668"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690840"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,6 +45,13 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Role-based access control
 
 -->     
+## <a name="week-of-february-4-2019"></a>Semana de 4 de Fevereiro de 2019
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="intune-macos-company-portal-dark-mode----3300524-eeready---"></a>No modo escuro do Portal da empresa do Intune macOS <!-- 3300524 eeready -->
+O Portal da empresa do macOS do Intune agora suporta o modo escuro para macOS. Quando ativar o modo escuro num dispositivo macOS 10.14 +, o Portal da empresa irá ajustar sua aparência para as cores que refletem esse modo.
+
 ## <a name="week-of-january-21-2019"></a>Semana de 21 de Janeiro de 2019
 
 ### <a name="app-management"></a>Gestão de aplicações

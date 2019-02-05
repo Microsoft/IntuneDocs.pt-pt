@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
-ms.translationtype: HT
+ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260254"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690806"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -57,7 +57,7 @@ Utilize os passos seguintes para inscrever dispositivos macOS com o OS X El Capi
 
 4. A página __Dispositivos__ irá apresentar uma lista de dispositivos geridos ou uma faixa. O que é apresentado varia em função de já ter ou não um dispositivo gerido. 
     * Para adicionar um dispositivo que não esteja apresentado, selecione a faixa com a mensagem **Toque aqui para indicar que dispositivo está a utilizar ou adicionar um novo dispositivo**.
-    * Se não tiver nenhum dispositivo, a faixa mostrará a mensagem **Não tem dispositivos geridos. Adicione este dispositivo ao tocar aqui.** Clique na faixa para adicionar o seu dispositivo.  
+    * Se não tiver todos os dispositivos, a faixa lê: **Não tem quaisquer dispositivos geridos. Adicione este dispositivo ao tocar aqui.** Clique na faixa para adicionar o seu dispositivo.  
 
      ![Uma captura de ecrã da página Dispositivos, com um quadrado vermelho à volta da opção de faixa para realçar a opção a clicar.](./media/CP-enroll-MACOS-1808.png)  
 5.  Conclua o passo abaixo que corresponder à mensagem atualmente apresentada no Portal da Empresa.  
@@ -73,7 +73,7 @@ Utilize os passos seguintes para inscrever dispositivos macOS com o OS X El Capi
 
 7. Quando o instalador concluir a operação, aceda ao **Launchpad** e abra o **Portal da Empresa**.  
 
-8. O seu dispositivo macOS irá pedir-lhe que confirme se pretende abrir a aplicação Portal da Empresa. Clique em **Abrir**.  
+8. O seu dispositivo macOS irá pedir-lhe que confirme se pretende abrir a aplicação Portal da Empresa. Clique em **aberto**.  
 
    > [!TIP]
    > O Intune precisa de aceder ao seu computador para confirmar que o dispositivo é suficientemente seguro para aceder aos recursos da sua organização. Se o seu computador se recusar a abrir a aplicação Portal da Empresa, [desative o Gatekeeper](https://support.apple.com/HT202491). Em seguida, abra a aplicação.
@@ -93,4 +93,11 @@ O perfil de gestão é o que define a ligação de canal MDM. Desde que o perfil
 
 Além disso, uma vez que esses outros perfis não exigem verificações individuais, são gerados e fornecidos aos dispositivos mais rapidamente. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+## <a name="updating-the-company-portal-app"></a>Atualizar a aplicação Portal da Empresa
+
+A atualização da aplicação Portal da Empresa é feita da mesma forma que qualquer outra aplicação do Office, através do Microsoft AutoUpdate para Mac. Saiba mais sobre como [atualizar aplicações da Microsoft para macOS aqui](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+
+## <a name="next-steps"></a>Próximos Passos  
+Precisa de ajuda adicional? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

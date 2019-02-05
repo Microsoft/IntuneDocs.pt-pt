@@ -2,10 +2,10 @@
 title: Utilizar linhas de base de segurança no Microsoft Intune – Azure | Documentos da Microsoft
 description: Adicione ou configure as definições de segurança do grupo recomendadas para proteger dados em dispositivos com o Microsoft Intune para gestão de dispositivos móveis e de utilizador. Ativar o bitlocker, configurar a proteção de ameaças avançada do Windows Defender, controlam o Internet Explorer, utilizar Smart Screen, definir políticas de segurança local, exigir uma palavra-passe, bloquear transferências de internet e muito mais.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc5faff7ea06bca07c06aadb887aa199739c6c0
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 8102ab88e878f7976ab7946f67080c4d4f23d6b1
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229930"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690721"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Criar uma linha de base de segurança do Windows 10 no Intune
 
-Linhas de base de segurança é uma funcionalidade em pré-visualização que está disponível para dispositivos com Windows 10 e posterior. Esta funcionalidade inclui muitas definições do Intune para ajudar a proteger e proteger os seus utilizadores e dispositivos. Define também automaticamente estas definições para os valores recomendados por equipes de segurança. Por exemplo, a linha de base, automaticamente ativa o BitLocker automaticamente requer uma palavra-passe para desbloquear um dispositivo, Desabilita automaticamente a autenticação básica e muito mais.
+Linhas de base de segurança é uma funcionalidade em pré-visualização que está disponível para dispositivos com Windows 10 e posterior. Esta funcionalidade inclui muitas configurações suportadas pelo Intune que pode utilizar para ajudar a proteger e proteger os seus utilizadores e dispositivos. Define também automaticamente estas definições para os valores recomendados por equipes de segurança. Por exemplo, a linha de base, automaticamente ativa o BitLocker automaticamente requer uma palavra-passe para desbloquear um dispositivo, Desabilita automaticamente a autenticação básica e muito mais.
 
 Esta funcionalidade aplica-se a:
 
@@ -94,6 +94,12 @@ Depois do perfil é criado, está pronto para ser atribuído aos seus utilizador
 
 Assim que guardar, o perfil é enviada por push para dispositivos quando eles dar entrada no Intune. Portanto, isso pode acontecer imediatamente.
 
+## <a name="available-security-baselines"></a>Linhas de base de segurança disponíveis  
+
+As seguintes linhas de base de segurança são avaialable para utilização com o Intune.
+- **Pré-visualização: Linha de base de segurança MDM**
+  - Versão: [Outubro de 2018](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Perguntas e Respostas
 
 #### <a name="why-these-settings"></a>Por que estas definições?
@@ -117,5 +123,5 @@ Estritamente em termos, não. A equipe de segurança da Microsoft consulta organ
 - Migrar de políticas de grupo do Active Directory no local para uma solução de cloud pura através do Azure Active Directory (AD) com o Microsoft Intune é uma jornada. Para ajudar a, existem complementar GPOs publicados para o AD híbrido e de dispositivos associados ao AD Azure. Estes dispositivos podem obter as definições de MDM da cloud (Intune) e as definições de política de grupo de controladores de domínio no local, conforme necessário.
 
 ## <a name="next-steps"></a>Passos Seguintes
-
-Verifique o estado e o monitor a [linha de base e perfil](security-baselines-monitor.md).
+- Ver os [definições de linha de base de segurança do Windows](security-baseline-settings-windows.md) suportados pelo Intune.  
+- Verifique o estado e o monitor a [linha de base e perfil](security-baselines-monitor.md).
