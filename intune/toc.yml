@@ -257,7 +257,7 @@ items:
       href: device-profiles.md
     - name: Perfis de dispositivo
       href: device-profile-create.md
-    - name: Modelos administrativos
+    - name: Administrative templates (Modelos administrativos)
       href: administrative-templates-windows.md
     - name: Funcionalidades do dispositivo
       href: device-features-configure.md
@@ -285,7 +285,7 @@ items:
         href: wi-fi-profile-shared-key.md
     - name: Aplicação Fazer um Teste de educação
       href: education-settings-configure.md
-    - name: Dispositivos multiutilizador partilhados
+    - name: Shared multi-user devices (Dispositivos multiutilizador partilhados)
       href: shared-user-device-settings.md
     - name: Monitorizar as despesas de telecomunicações
       href: telecom-expenses-monitor.md
@@ -306,7 +306,7 @@ items:
       items:
       - name: Recolha de dados
         href: privacy-data-collect.md
-      - name: Armazenamento e processamento de dados
+      - name: Data storage and processing (Processamento e armazenamento de dados)
         href: privacy-data-store-process.md
       - name: Partilha e segurança de dados
         href: privacy-data-secure-share.md
@@ -321,9 +321,9 @@ items:
           href: data-intune-sends-to-google.md
         - name: Informações partilhadas do Jamf Pro com o Intune
           href: conditional-access-integrate-jamf.md
-      - name: Ver e corrigir dados pessoais
+      - name: View and correct personal data (Ver e corrigir dados pessoais)
         href: privacy-data-view-correct.md
-      - name: Auditar, exportar ou eliminar
+      - name: Audit, export, delete (Auditar, exportar ou eliminar)
         href: privacy-data-audit-export-delete.md
     - name: Acesso condicional
       href: conditional-access.md
@@ -699,6 +699,10 @@ items:
           href: wi-fi-settings-macos.md
         - name: Personalizar
           href: custom-settings-macos.md
+    - name: Linhas de base de segurança
+      items:
+      - name: Definições de linhas de base de segurança do Windows
+        href: security-baseline-settings-windows.md
     - name: Windows 10 e posterior
       items:
       - name: Definições da política de conformidade
@@ -951,9 +955,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
-ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
+ms.openlocfilehash: cb54a7f48a96684c98ed73584adf4acc57a19f56
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55645194"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690789"
