@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.openlocfilehash: 6613b19102aac752e9717fc376d99a178fe9dd3c
+ms.sourcegitcommit: ef85e28df802c974664305270c4a8571c0bb47b9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230125"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742967"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -70,6 +70,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Conta Microsoft**: Permite que o utilizador associe uma conta Microsoft ao dispositivo.
 - **Conta não Microsoft**: Permite aos utilizadores adicionar contas de e-mail no dispositivo que não estão associados a uma conta Microsoft.
 - **Sincronização de definições para a conta Microsoft**: Permitir que as definições de dispositivos e aplicações que estão associadas uma conta Microsoft sejam sincronizadas entre dispositivos.
+- **Assistente de início de sessão Microsoft Account**: Escolher **desativar** para impedir que os utilizadores finais controla o serviço de Assistente de início de sessão no Microsoft (wlidsvc), como parar ou iniciar o serviço manualmente. Quando definido como **não configurado**, o serviço wlidsvc NT usa o padrão de sistema operativo (SO), que pode permitir que os utilizadores finais iniciar e parar o serviço. Este serviço é utilizado pelo sistema operacional para permitir aos utilizadores iniciar sessão respetiva conta Microsoft.
 
 ## <a name="cloud-printer"></a>Impressora em Cloud
 
@@ -192,7 +193,7 @@ Utilize o botão **Adicionar** para criar uma configuração de quiosque ou sele
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
 - **Notificações do Centro de ação (apenas móvel)**: Notificações do Centro de ação permite que aparecem no ecrã de bloqueio do dispositivo (apenas Windows 10 Mobile).
-- **O URL da imagem de ecrã (apenas ambiente de trabalho) bloqueado**: Introduza o URL para uma imagem em formato JPEG que é utilizado como a imagem de fundo do ecrã de bloqueio do Windows. Os utilizadores não é possível alterar esta definição.
+- **O URL da imagem de ecrã (apenas ambiente de trabalho) bloqueado**: Introduza o URL para uma imagem em formato JPEG que é utilizado como a imagem de fundo do ecrã de bloqueio do Windows. Esta definição bloqueia a imagem. A imagem não pode ser alterada posteriormente.
 - **Tempo limite do ecrã configurável pelo utilizador (apenas móvel)**: Permite que os utilizadores configurem a quantidade de tempo 
 - **Cortana no ecrã bloqueado (apenas ambiente de trabalho)**: Não permitir que o usuário interaja com a Cortana quando o dispositivo estiver no ecrã de bloqueio (apenas ambiente de trabalho do Windows 10).
 - **Notificações de alerta no ecrã bloqueado**: Bloquear mensagens de alerta que mostra no ecrã de bloqueio do dispositivo.
@@ -313,7 +314,6 @@ Utilize o botão **Adicionar** para criar uma configuração de quiosque ou sele
   - **Impedir a reutilização de palavras-passe anteriores**: Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.
   - **Exigir palavra-passe quando o dispositivo regressa do Estado de inatividade (apenas móvel)**: Especifica que o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo (apenas Windows 10 Mobile).
   - **Palavras-passe simples**: Permite-lhe permitir a utilização de palavras-passe simples, como 1111 e 1234. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
-- **Encriptação**: Ativa a encriptação nos dispositivos visados.
 
 ## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicação
 
