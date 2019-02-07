@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 17d64822453c5aeafe4c618879aaef6176e9bbb7
+ms.sourcegitcommit: 09dcc8ba903b66b3fb8b9a71212ccd3194a046fe
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817063"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763290"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 
@@ -80,9 +80,9 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 1. Depois de se com êxito, consulte a **Dashboard do Azure**.
 
-1. Escolher **todos os serviços** no menu à esquerda, em seguida, escreva **Intune** no filtro da caixa de texto.
+1. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-1. Escolher **Intune**, verá o **Dashboard do Intune**.
+1. Escolha **Intune**, será apresentado o **Dashboard do Intune**.
 
 1. Selecione **Acesso no local**. O painel **Acesso no local** mostra o estado da política de acesso condicional e os dispositivos que são afetados pelo mesma.
 

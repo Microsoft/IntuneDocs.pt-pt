@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: a2a832e773a1a2fb413bfbc761d93988f2230ec7
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297507"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761080"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -357,7 +357,7 @@ O **EnrollmentFailureCategory** entidade indica o motivo da falha uma inscriçã
 | Não Aplicável                  | A categoria de falha de inscrição não é aplicável.                                                            |
 | Não disponível                   | A categoria de falha de inscrição não está disponível.                                                             |
 | Desconhecido                         | Erro desconhecido.                                                                                                |
-| Autenticação                  | Falha na autenticação.                                                                                        |
+| Authentication                  | Falha na autenticação.                                                                                        |
 | Autorização                   | Chamada foi autenticada, mas não autorizada a inscrever.                                                         |
 | AccountValidation               | Falha ao validar a conta para a inscrição. (Conta bloqueada, inscrição não ativada)                      |
 | UserValidation                  | Não foi possível validar o utilizador. (O utilizador não existe, licença em falta)                                           |
@@ -505,7 +505,10 @@ A entidade **ownerType** indica se um dispositivo é empresarial, pessoal ou des
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificador exclusivo do tipo de proprietário.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificador exclusivo do tipo de proprietário no armazém de dados – chave de substituição.                                                                                                       |                            |
-| ownerTypeName | Representa o tipo de proprietário dos dispositivos:  Company: o dispositivo é propriedade da empresa.  Personal – o dispositivo é propriedade pessoal (BYOD).   Unknown – não existem informações sobre este dispositivo. | Company Personal Unknown |
+| ownerTypeName | Representa o tipo de proprietário dos dispositivos:  Empresarial – o dispositivo é propriedade da empresa.  Personal – o dispositivo é propriedade pessoal (BYOD).   Unknown – não existem informações sobre este dispositivo. | Empresarial desconhecido pessoa |
+
+> [!Note]  
+> Para o `ownerTypeName` filtro no AzureAD quando criar grupos dinâmicos para dispositivos, tem de definir o valor `deviceOwnership` como `Company`. Para obter mais informações, consulte [regras para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>políticas
 A entidade **Policy** apresenta uma lista de perfis de configuração de dispositivos, perfis de configuração de aplicações e políticas de conformidade. Pode atribuir as políticas com a Gestão de Dispositivos Móveis (MDM) a um grupo na sua empresa.
