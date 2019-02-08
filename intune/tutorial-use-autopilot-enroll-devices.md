@@ -17,12 +17,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 455d3fa3b26ae7b18eb195019bc89100714946b9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187740"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850782"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Utilizar o Autopilot para inscrever dispositivos Windows no Intune
 O Windows Autopilot simplifica a inscrição de dispositivos. Com o Microsoft Intune e o Autopilot, pode disponibilizar novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas. 
@@ -93,9 +94,9 @@ Depois de criar um grupo de dispositivos, tem de criar um perfil de implementaç
 4. Em **Modo de implementação**, escolha **Controlado pelo utilizador**. Os dispositivos com este perfil estão associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
 5. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
 6. Escolha **Experiência de configuração inicial (OOBE)**, configure as seguintes opções, mantenha as predefinições das opções restantes e, em seguida, selecione**Guardar**:
-    - **Contrato de licença do utilizador final (EULA)**:**Ocultar**
-    - **Definições de privacidade**: **Mostrar**
-    - **Tipo de conta de utilizador**: **Padrão**
+    - **O contrato de licença de utilizador final (EULA)**: **Ocultar**
+    - **As definições de privacidade**: **Show**
+    - **Tipo de conta de utilizador**: **Standard**
 
 6. Selecione **Criar** para criar o perfil. O perfil de implementação do Autopilot está agora disponível para atribuir a dispositivos.
 
