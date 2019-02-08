@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 04923fe8ff570541b14456348c33ac7e7e7773c7
-ms.sourcegitcommit: 5b4a6c17bdba2f87e6ae81a3ac0cb88438a0fa27
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58b34b7967aeceba8f34e23fbff090c5457fe66f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 02/07/2019
-ms.locfileid: "55807805"
+ms.locfileid: "55838908"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Dados pessoais e privacidade no Intune
 

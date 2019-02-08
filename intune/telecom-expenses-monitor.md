@@ -16,12 +16,13 @@ ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7514aef9ee94e774ff2e2fca1008966a92a24e0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188097"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842019"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gestão de despesas de telecomunicações no Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,7 +57,7 @@ Atualmente, o Intune integra-se com os seguintes fornecedores de gestão de desp
 
 Antes de começar, certifique-se de que já possui uma subscrição do serviço de gestão de despesas de telecomunicações do Intune e do Datalert.
 
-### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>Passo 1: ligar o serviço Datalert ao Microsoft Intune
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>Passo 1: Ligar o serviço Datalert ao Microsoft Intune
 
 1. Inicie sessão na consola de gestão do Datalert com as suas credenciais de administrador.
 
@@ -88,11 +89,11 @@ Antes de começar, certifique-se de que já possui uma subscrição do serviço 
 
    ![Página do Datalert a mostrar uma ligação estabelecida com êxito](./media/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Passo 2: verificar se a funcionalidade de gestão de despesas de telecomunicação está ativa no Intune
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Passo 2: Verifique se a funcionalidade de gestão de despesas de telecomunicações está ativo no Intune
 
 Após concluir o Passo 1 descrito anteriormente, a sua ligação deverá ser ativada automaticamente e deverá ser apresentado o estado de ligação **Ativo** no portal do Azure. Estes passos mostram como pode localizar o estado **Ativo**.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 
@@ -104,7 +105,7 @@ Após concluir o Passo 1 descrito anteriormente, a sua ligação deverá ser ati
 
    ![Página do Intune a mostrar o estado de ligação Ativo do Datalert](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Passo 3: implementar a aplicação Datalert em dispositivos da empresa inscritos
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Passo 3: Implementar a aplicação Datalert em dispositivos inscritos da empresa
 
 Para se certificar de que é recolhida a utilização de dados das linhas pertencentes apenas à empresa, terá de fazer duas coisas:
 - criar categorias de dispositivos no Intune
@@ -152,7 +153,7 @@ Siga estes passos para criar a aplicação Datalert no Intune para cada platafor
 
    ![Captura de ecrã do painel Adicionar uma política](./media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Passo 4: adicionar linhas telefónicas pagas da empresa à consola do Datalert
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Passo 4: Adicionar linhas telefónicas pagas pela empresa à consola Datalert
 
 Acabou de configurar os serviços do Intune e do Datalert para que estes comuniquem entre si. Agora terá de adicionar as linhas telefónicas pagas da sua empresa à consola do Datalert e definir limites e ações a tomar relativamente a violações de utilização da rede móvel ou de roaming. Pode adicionar linhas telefónicas pagas pela empresa à consola Datalert manualmente ou adicioná-las automaticamente depois de o dispositivo ser inscrito no Intune.
 

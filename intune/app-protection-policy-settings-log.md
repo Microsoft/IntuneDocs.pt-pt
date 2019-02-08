@@ -16,12 +16,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a6801eab86fcb2adab6edc8dab621d4100a415b5
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5ffdb67a6243bf34db03fb8394763e1a1c1f0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297201"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847170"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 

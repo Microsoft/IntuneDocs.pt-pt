@@ -15,14 +15,15 @@ ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: df26b0c752b14851876fd9ec42f0a2d2bfe76d91
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4b3dc2c8f4ec318b1593f366614642a43e625ea
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183625"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836732"
 ---
-# <a name="phase-2-migration-campaign"></a>Fase 2: campanha de migração
+# <a name="phase-2-migration-campaign"></a>Fase 2: Campanha de migração
 
 Selecione uma abordagem de migração mais adequada às necessidades da sua organização e ajuste as táticas de implementação com base nos seus requisitos específicos. O resto deste guia proporciona as ferramentas de que precisa para alcançar o objetivo de inscrever os dispositivos dos seus utilizadores no Intune.
 

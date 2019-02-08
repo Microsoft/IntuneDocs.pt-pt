@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc5d2a6f17bdac8711348c136ee390a400fc21bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 646a72eaa3837b48b4af718904064fddaeb98955
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182504"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840387"
 ---
 # <a name="get-started-managing-users"></a>Introdução à gestão de utilizadores
 
@@ -29,7 +30,7 @@ Considere todas as pessoas diferentes na sua organização. Cada pessoa que util
 
 ## <a name="how-do-i-create-a-user"></a>Como posso criar um utilizador?
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Após abrir o painel **Microsoft Intune**, selecione **Utilizadores**. Na página **Todos os utilizadores**, selecione **+ Novo utilizador**.
 4. Introduza os detalhes do utilizador, como o **Nome** e o **Nome de utilizador**. A parte do nome de domínio do nome de utilizador tem de ser um dos seguintes domínios:

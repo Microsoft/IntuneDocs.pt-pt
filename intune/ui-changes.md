@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4a1c5f2b400e73566db88fea8e06383e45b363a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 218c1959649e5dd8c56c52b414aeeec02c6f4a42
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187757"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841764"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Onde está a minha funcionalidade do Intune no Azure?
 Organizámos algumas tarefas por ordem mais lógica ao mover o Intune para o portal do Azure. Cada melhoria significa ter de conhecer a nova localização das funcionalidades. Criámos este guia de referência para os utilizadores que estão familiarizados com o Intune no portal clássico e que pretendem saber como realizar tarefas do Intune no portal do Azure. Se este artigo não abranger uma funcionalidade que procura, deixe um comentário no final do artigo para o atualizarmos.
@@ -50,7 +51,7 @@ No portal clássico, pode definir regras para a inscrição MDM de dispositivos 
 
 ![Imagem das regras clássicas de inscrição de dispositivos móveis](./media/01-classic-rules.png)
 
-Estas regras aplicam-se a todos os utilizadores na sua conta do Intune, sem exceção. No portal do Azure, estas regras são agora apresentadas como dois tipos de políticas distintos: Restrições de Tipos de Dispositivos e Restrições de Limite de Dispositivos.
+Estas regras aplicam-se a todos os utilizadores na sua conta do Intune, sem exceção. No portal do Azure, estas regras são agora apresentadas em dois tipos de políticas distintos: Restrições de tipo de dispositivo e restrições de limite de dispositivo.
 
 ![Imagem das restrições de inscrição de dispositivos móveis no Azure](./media/02-azure-enroll-restrictions.png)
 

@@ -15,12 +15,13 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5186af2e02363d74f2f046188168efd38eee363
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112906"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843430"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
@@ -113,7 +114,7 @@ Anunciamos uma alteração que ficará disponível nos próximos meses e irá me
 
 Pode encontrar capturas de ecrã da experiência de início de sessão anterior, a nova experiência de início de sessão com credenciais e a experiência de início de sessão a partir de outro dispositivo na página [Novidades na IU da aplicação](whats-new-app-ui.md).
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Planear a alteração: o Intune vai alterar a experiência do Portal de Parceiros do Intune <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Planear a alteração: Intune vai alterar a experiência de Portal de parceiros do Intune <!-- 1050016 -->
 
 A partir da atualização de serviço que se realizará em meados de maio de 2017, iremos remover a página Parceiro do Intune de manage.microsoft.com.  
 
@@ -147,11 +148,11 @@ Pode configurar políticas de acesso condicional de EMS com base na avaliação 
 
 A aplicação Portal da Empresa para Android irá atualizar a respetiva interface de utilizador para obter um aspeto mais moderno e a melhor experiência de utilizador. As atualizações relevantes são:
 
-- Cores: os cabeçalhos dos separadores do Portal da Empresa têm as cores da imagem corporativa definida pelas TI.
-- Aplicações: no separador **Aplicações**, os botões **Aplicações em Destaque** e **Todas as Aplicações** são atualizados.
-- Pesquisar: no separador **Aplicações**, o botão **Pesquisar** é um botão de ação flutuante.
-- Navegar em Aplicações: a vista **Todas as Aplicações** mostra uma vista com os separadores **Em Destaque**, **Todas** e **Categorias** para uma navegação mais fácil.
-- Suporte: os separadores **Os Meus Dispositivos** e **Contactar TI** são atualizados para melhorar a legibilidade.
+- Cores: Cabeçalhos de separador do Portal da empresa são coloridos na imagem corporativa definida de IT.
+- Aplicações: Na **aplicações** separador, o **aplicações em destaque** e **todas as aplicações** botões são atualizados.
+- Pesquisa: Na **aplicações** separador, o **pesquisa** botão é um botão de ação flutuante.
+- Navegar em aplicações: **Todas as aplicações** vista mostra uma vista com os separadores **em destaque**, **todos**, e **categorias** para uma navegação mais fácil.
+- Suporte: **Os meus dispositivos** e **contactar TI** separadores são atualizados para melhorar a legibilidade.
 
 Para obter mais detalhes sobre estas alterações, veja [Atualização da IU para aplicações de utilizadores finais do Intune](whats-new-app-ui.md).
 
@@ -228,9 +229,9 @@ Os utilizadores do Windows e do Windows Phone não conseguirão inscrever um dis
 A partir de março, a aplicação Portal da Empresa para Android seguirá as [diretrizes de conceção do material](https://material.io/guidelines/material-design/introduction.html) para criar um aspeto e funcionalidade mais modernos. Esta experiência de utilizador melhorada inclui:
 
 * __Cores__: os cabeçalhos dos separadores podem ser coloridos de acordo com a sua paleta de cores personalizada.
-* __Interface__: os botões Aplicações em Destaque e Todas as Aplicações foram atualizados no separador Aplicações. O botão Procurar é agora um botão de ação flutuante.
-* __Navegação__: a secção Todas as Aplicações mostra uma vista com os separadores Em destaque, Todas e Categorias para uma navegação mais fácil.
-* __Serviço__: os separadores Os Meus Dispositivos e Contactar TI foram melhorados para facilitar a leitura.
+* __Interface__: Botões de aplicações e todas as aplicações em destaque foram atualizados no separador aplicações. O botão Procurar é agora um botão de ação flutuante.
+* __Navegação__: Todas as aplicações mostra uma vista com os separadores em destaque, todas e categorias para uma navegação mais fácil.
+* __Serviço__: Meus dispositivos e contactar TI separadores foram melhorados para facilitar a leitura.
 
 Poderá encontrar imagens de antes e depois na [página de atualizações de IU](whats-new-app-ui.md).
 

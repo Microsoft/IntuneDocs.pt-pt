@@ -15,12 +15,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73075ed06e98ca987e87a7cfda70c546127bf881
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7016b65bb999ed789dc085831e12c002e2ef5db4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179597"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846779"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android Enterprise no Microsoft Intune
 
@@ -38,17 +39,17 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome para o perfil, como `android enterprise custom profile`.
-    - **Descrição:** introduza uma descrição para o perfil.
-    - **Plataforma**: selecione **Android Enterprise**.
-    - **Tipo de perfil**: selecione **Personalizado**.
+    - **Nome**: Introduza um nome para o perfil, como `android enterprise custom profile`
+    - **Descrição**: Introduza uma descrição para o perfil
+    - **Plataforma**: Escolha **Android Enterprise**
+    - **Tipo de perfil**: Escolha **personalizado**
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome exclusivo para a definição OMA-URI, para poder encontrá-la facilmente.
-    - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
-    - **OMA-URI**: introduza o OMA-URI que quer utilizar como uma definição.
-    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
+    - **Nome**: Introduza um nome exclusivo para a definição de OMA-URI para que pode encontrá-la facilmente.
+    - **Descrição**: Introduza uma descrição que proporcione uma descrição geral da definição e outros detalhes importantes.
+    - **OMA-URI**: Introduza o OMA-URI que pretende utilizar como uma definição.
+    - **Tipo de dados**: Escolha o tipo de dados que irá utilizar para esta definição de OMA-URI. As opções são:
 
       - Cadeia
       - Cadeia (ficheiro XML)
@@ -58,7 +59,7 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
       - Booleano
       - Base64 (ficheiro)
 
-    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+    - **Valor**: Introduza o valor de dados que pretende associar ao OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
 
     Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
 
@@ -73,18 +74,18 @@ Neste exemplo, irá criar um perfil personalizado que restringe as ações de co
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome para o perfil, como `android ent block copy paste custom profile`.
-    - **Descrição:** introduza uma descrição para o perfil.
-    - **Plataforma**: selecione **Android Enterprise**.
-    - **Tipo de perfil**: selecione **Personalizado**.
+    - **Nome**: Introduza um nome para o perfil, como `android ent block copy paste custom profile`.
+    - **Descrição**: Introduza uma descrição para o perfil.
+    - **Plataforma**: Escolher **Android Enterprise**.
+    - **Tipo de perfil**: Escolher **personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome**: introduza algo como `Block copy and paste`.
-    - **Descrição**: introduza algo como `Blocks copy/paste between work and personal apps`.
-    - **OMA-URI**: introduza `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
-    - **Tipo de dados**: selecione **Booleano** para que o valor deste OMA-URI seja **True** ou **False**.
-    - **Valor**: selecione **True**.
+    - **Nome**: Introduza algo como `Block copy and paste`.
+    - **Descrição**: Introduza algo como `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: Enter `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
+    - **Tipo de dados**: Escolher **booleano** para que o valor deste OMA-URI é **True** ou **False**.
+    - **Valor**: Escolher **True**.
 
 5. Depois de introduzir as definições, o seu ambiente deverá ter um aspeto semelhante à imagem seguinte:
 

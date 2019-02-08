@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150701"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837582"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.

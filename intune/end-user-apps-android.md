@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c458e77e41d67466ad52a4f0b4089d85a9513f5d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183405"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834879"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Como os utilizadores de dispositivos Android obtêm as aplicações
 
@@ -37,8 +38,8 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 Os seus utilizadores finais têm de permitir a instalação a partir de origens desconhecidas para instalar [Aplicações LOB](lob-apps-android.md). Normalmente, estas aplicações encontram-se em dois locais:
 
-* **Android 7.1.2 e inferior**: **Definições** > **Segurança** > **Fontes desconhecidas**
-* **Android 8.0 e superior**: **Definições** > **Aplicações e notificações** > **Acesso de aplicações especiais** > **Instalar aplicações desconhecidas** > **Portal da Empresa** > **Permitir desta fonte**
+* **Android 7.1.2 e inferior**: **As definições** > **Security** > **origens desconhecidas**
+* **Android 8.0 e posterior**: **As definições** > **aplicações e notificações** > **acesso de aplicações especiais** > **instalar aplicações desconhecidas**  >  **Portal da empresa** > **permitir desta fonte**
 
 Neste caso, a aplicação Portal da Empresa irá informar e orientar o utilizador final consoante a definição adequada. 
 

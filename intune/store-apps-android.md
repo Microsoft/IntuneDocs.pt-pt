@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2391f6ec7de5a9d1b4d544f1ca07fd9f4e58ace8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 27818b0078336c2cb12eba81483274a787373aec
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642411"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841390"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja Android ao Microsoft Intune
 
@@ -43,7 +44,7 @@ Pode adicionar uma aplicação da loja Android ao Intune a partir do portal do A
 7. Para configurar as informações da aplicação, selecione **Configurar** e, em seguida, forneça as seguintes informações. Para aplicações Android, aceda à [Google Play Store](https://play.google.com/store) e procure a aplicação que pretende implementar. Selecione a aplicação e anote os detalhes da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores podem ter sido preenchidos automaticamente.
     - **Nome**: Introduza o nome da aplicação porque está a ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
+    - **Publisher**: Introduza o nome do publicador da aplicação.
     - **URL da Appstore**: Introduza o URL da loja de aplicações da aplicação que pretende criar.
     - **Sistema operativo mínimo**: Na lista, selecione a versão mais antiga do sistema operativo no qual a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
     - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas ou uma categoria que criou. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.

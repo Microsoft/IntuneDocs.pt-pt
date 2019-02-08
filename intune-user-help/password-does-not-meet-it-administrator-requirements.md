@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150926"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837021"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>A sua palavra-passe não cumpre os requisitos do suporte da empresa
 
@@ -47,7 +48,7 @@ Para obter os passos necessários para configurar o seu PIN ou palavra-passe, ut
 | **A palavra-passe foi utilizada muito recentemente.** | O suporte da empresa está a impedir a utilização de palavras-passe que tenha utilizado anteriormente. Escolha uma palavra-passe que nunca tenha utilizado. |
 | **A palavra-passe não é suficientemente complexa para cumprir os requisitos.** | O suporte da empresa exige que utilize carateres mais complexos na sua palavra-passe. Tente utilizar carateres como números, letras maiúsculas e símbolos como $, % e #. Isto também pode ser verdadeiro relativamente a outras contas no seu dispositivo, por isso certifique-se de que verifica outras contas para garantir que a sua palavra-passe cumpre os requisitos configurados pelas TI para o seu dispositivo. |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Para obter os passos necessários para configurar o seu PIN ou palavra-passe, utilize a ligação que corresponde ao tipo de dispositivo que possui:
 

@@ -16,14 +16,15 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 299147a3f3774177cef5d73696a731afc1732f76
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186261"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847731"
 ---
-# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guia de Início Rápido: enviar notificações para dispositivos não conformes
+# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início rápido: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
 
 Neste guia de início rápido, irá utilizar o Microsoft Intune para enviar uma notificação por e-mail para os membros da sua força de trabalho que tiverem dispositivos não conformes.
 
@@ -49,10 +50,10 @@ Para enviar um e-mail aos seus utilizadores, crie um modelo de mensagem de notif
 
    - **Nome**: *Administrador da Contoso*
    - **Assunto**: *Conformidade do dispositivo*
-   - **Mensagem**: *O seu dispositivo não está a cumprir os requisitos de conformidade da nossa organização.*
-   - **Cabeçalho do e-mail – Incluir logótipo da empresa**: defina a opção como **Ativado** para mostrar o logótipo da sua organização.
-   - **Rodapé do e-mail – Incluir nome da empresa**: defina a opção como **Ativado** para mostrar o nome da sua organização.
-   - **Rodapé do e-mail – Incluir informações de contacto**: defina a opção como **Ativado** para mostrar as informações de contacto da sua organização.
+   - **Mensagem**: *O dispositivo não está atualmente a cumprir nossos requisitos de conformidade de organizações.*
+   - **Cabeçalho do e-mail – incluir o logótipo da empresa**: Defina como **ativado** para mostrar o logótipo da sua organização.
+   - **Rodapé do e-mail – incluir o nome da empresa**: Defina como **ativado** para mostrar o nome da sua organização.
+   - **Rodapé do e-mail – incluir informações de contacto**: Defina como **ativado** para mostrar informações de contacto da sua organização.
 
    ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/quickstart-send-notification-01.png)
 
@@ -73,7 +74,7 @@ Os seguintes passos descrevem como pode criar uma política de conformidade para
 2. Selecione **Políticas** > **Criar Política**.
 3. Introduza as seguintes informações:
 
-   - **Nome**: *Política de conformidade do Windows 10*
+   - **Nome**: *Conformidade do Windows 10*
    - **Descrição**: *Política de conformidade do Windows 10*
    - **Plataforma**: Windows 10 e posterior
 
@@ -84,7 +85,7 @@ Os seguintes passos descrevem como pode criar uma política de conformidade para
     ![Definições de Segurança do Sistema para criar uma nova política de conformidade](./media/quickstart-send-notification-02.png) 
 
 7. Clique em **OK**, **OK** e **Criar** para criar a política de conformidade.
-8. Selecione o nome da nova política: **Conformidade do Windows 10**.
+8. Selecione o nome da sua nova política: **Conformidade do Windows 10**.
 9. Selecione **Propriedades** > **Ações para não conformidade** > **Adicionar**.
 10. Na caixa pendente **Ação**, confirme se a opção **Enviar mensagem de e-mail ao utilizador final** está selecionada.
 11. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que criou anteriormente neste tópico.
@@ -112,4 +113,4 @@ Neste guia de início rápido, utilizou o Intune para criar e atribuir uma polí
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: adicionar e atribuir uma aplicação cliente](quickstart-add-assign-app.md)
+> [Início rápido: Adicionar e atribuir uma aplicação de cliente](quickstart-add-assign-app.md)

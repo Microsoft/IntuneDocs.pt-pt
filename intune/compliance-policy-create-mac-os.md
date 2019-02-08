@@ -14,12 +14,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3bccbedb95f42bb2299c311ba09a32e20e1f90a6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52828999"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843889"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade para dispositivos macOS com o Intune
 
@@ -54,53 +55,53 @@ A tabela seguinte descreve como as definições não conformes são geridas quan
 
 ## <a name="device-health"></a>Estado de Funcionamento do Dispositivo
 
-- **Exigir uma proteção da integridade do sistema**: **exija** que os seus dispositivos macOS tenham a [Proteção da Integridade do Sistema](https://support.apple.com/HT204899) ativada.
+- **Exigir uma proteção de integridade do sistema**: **Exigir** seus dispositivos macOS tenham [proteção da integridade do sistema](https://support.apple.com/HT204899) ativada.
 
 ## <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Versão do SO mínima**: quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não estando em conformidade. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
-- **Versão do SO máxima**: quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
-- **Versão de compilação de SO mínimo**: Apple quando publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido mínimo no dispositivo.
-- **Versão de compilação do SO máximo**: Apple quando publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido máximo no dispositivo.
+- **Versão mínima do SO**: Quando um dispositivo não cumpre o requisito de versão mínima do SO, será comunicado como não conforme. É apresentada uma hiperligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
+- **Versão do SO máxima**: Quando um dispositivo utiliza uma versão do SO posterior à versão especificada na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. Até a regra ser alterada para permitir a versão do SO, este dispositivo não poderá aceder aos recursos da empresa.
+- **Versão de compilação de SO mínimo**: Quando a Apple publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido mínimo no dispositivo.
+- **Versão de compilação do SO máximo**: Quando a Apple publica atualizações de segurança, o número de compilação, normalmente, é atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido máximo no dispositivo.
 
 ## <a name="system-security-settings"></a>Definições de segurança do sistema
 
 ### <a name="password"></a>Palavra-passe
 
-- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
-- **Palavras-passe simples**: defina como **Bloquear** para que os utilizadores não possam criar palavras-passe simples, como **1234** ou **1111**. Defina como **Não configurado** para permitir aos utilizadores criar palavras-passe como **1234** ou **1111**.
-- **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe tem de ter.
-- **Tipo de palavra-passe**: escolha se uma palavra-passe deve ter apenas carateres **Numéricos** ou se deve existir uma combinação de números e de outros carateres (**Alfanuméricos**).
-- **Número de carateres não alfanuméricos na palavra-passe**: introduza o número mínimo de carateres especiais (&, #, %, !, etc.) que têm de ser incluídos na palavra-passe.
+- **Exigir uma palavra-passe para desbloquear dispositivos móveis**: **Exigir** que os utilizadores introduzam uma palavra-passe antes de poderem aceder ao respetivo dispositivo.
+- **Palavras-passe simples**: Defina como **bloco** para que os utilizadores não é possível criar palavras-passe simples, tal como **1234** ou **1111**. Defina como **Não configurado** para permitir aos utilizadores criar palavras-passe como **1234** ou **1111**.
+- **Comprimento mínimo da palavra-passe**: Introduza o número mínimo de dígitos ou carateres que a palavra-passe tem de ter.
+- **Tipo de palavra-passe**: Escolha se uma palavra-passe deve ter apenas **numérico** carateres, ou se deve existir uma combinação de números e outros carateres (**alfanumérico**).
+- **Número de carateres não alfanuméricos na palavra-passe**: Introduza o número mínimo de carateres especiais (&, #, %,!, e assim por diante) que têm de ser incluídos na palavra-passe.
 
     Definir um número mais relevado exige que o utilizador crie uma palavra-passe mais complexa.
 
-- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
-- **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas.
+- **Máximo de minutos de inatividade antes da palavra-passe é necessária**: Introduza o tempo de inatividade antes do utilizador ter de reintroduzir a palavra-passe.
+- **Expiração de palavra-passe (dias)**: Selecione o número de dias antes da palavra-passe expirar e ser necessário criar um novo.
+- **Número de palavras-passe anteriores cuja reutilização está**: Introduza o número de palavras-passe utilizadas anteriormente que não pode ser utilizado.
 
     > [!IMPORTANT]
     > As alterações ao requisito de palavra-passe num dispositivo macOS só têm efeito na próxima alteração de palavra-passe do utilizador. Por exemplo, se definir uma restrição de comprimento da palavra-passe para oito dígitos e o dispositivo macOS tiver atualmente uma palavra-passe de seis dígitos, o mesmo permanecerá em conformidade até à próxima vez que o utilizador atualizar a palavra-passe no dispositivo.
 
 ### <a name="encryption"></a>Encriptação
 
-- **Encriptação do armazenamento de dados num dispositivo**: escolha **Exigir** a encriptação do armazenamento de dados nos dispositivos.
+- **Encriptação do armazenamento de dados num dispositivo de**: Escolher **requerem** para encriptar o armazenamento de dados nos seus dispositivos.
 
 ### <a name="device-security"></a>Segurança do Dispositivo
 A firewall protege os dispositivos contra o acesso não autorizado à rede. Pode utilizar a firewall para controlar as ligações por aplicação. 
 
-- **Firewall**: a opção **Ativada** ativa a firewall que ajuda a proteger os dispositivos contra o acesso não autorizado. Ativar esta funcionalidade permite-lhe processar as ligações recebidas da Internet e utilizar o modo furtivo. A opção **Não configurada** (predefinição) deixa a firewall desativada e permite o tráfego de rede (não bloqueado).
-- **Ligações de entrada**: a opção **Bloquear** bloqueia todas as ligações de rede de entrada, exceto as ligações necessárias para serviços básicos de Internet, tal como o DHCP, Bonjour e IPSec. Esta definição também bloqueia todos os serviços de partilha, incluindo a partilha de ecrã, o acesso remoto, a partilha de música do iTunes, entre outros. A opção **Não configurado** (predefinição) permite ligações de entrada e a partilha de serviços. 
-- **Modo invisível**: a opção **Ativar** ativa o modo invisível para impedir que o dispositivo responda aos pedidos de pesquisa que podem ser feitos por utilizadores mal-intencionados. Quando ativado, o dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. A opção **Não configurado** (predefinição) deixa o modo furtivo desativado.
+- **Firewall**: **Ativar** para ajudar a proteger os dispositivos contra acesso não autorizado. Ativar esta funcionalidade permite-lhe processar as ligações recebidas da Internet e utilizar o modo furtivo. A opção **Não configurada** (predefinição) deixa a firewall desativada e permite o tráfego de rede (não bloqueado).
+- **Ligações de entrada**: **Bloco** todas as ligações de rede recebidas, exceto as necessárias para serviços básicos de internet, como DHCP, Bonjour e IPSec. Esta definição também bloqueia todos os serviços de partilha, incluindo a partilha de ecrã, o acesso remoto, a partilha de música do iTunes, entre outros. A opção **Não configurado** (predefinição) permite ligações de entrada e a partilha de serviços. 
+- **O modo invisível**: **Ativar** Modo Furtivo para impedir que o dispositivo responda aos pedidos, que podem ser efetuados meus utilizadores mal intencionados de pesquisa. Quando ativado, o dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. A opção **Não configurado** (predefinição) deixa o modo furtivo desativado.
 
 ### <a name="gatekeeper"></a>Controlador de chamadas
 
-**Permitir aplicações transferidas a partir destas localizações**: permite a instalação de aplicações suportadas nos seus dispositivos a partir de diferentes localizações. As suas opções de localização:
+**Permitir aplicações transferidas a partir destas localizações**: Permite que aplicativos suportados ser instalado nos seus dispositivos a partir de localizações diferentes. As suas opções de localização:
 
-- **Não configurado**: predefinição. A opção de controlador de chamadas não tem qualquer impacto na conformidade ou não conformidade. 
-- **Mac App Store**: instalar apenas aplicações da Mac App Store. Não é possível instalar aplicações de terceiros nem de programadores identificados. Se um utilizador selecionar o Controlador de Chamadas para instalar aplicações que não sejam da Mac App Store, o dispositivo será considerado não conforme.
-- **Mac App Store e programadores identificados**: instalar aplicações da Mac App Store e programadores identificados. O macOS verifica a identidade dos programadores e faz outras verificações para confirmar a integridade da aplicação. Se um utilizador selecionar o Controlador de Chamadas para instalar aplicações que não estejam abrangidas por estas opções, o dispositivo será considerado não conforme.
-- **Em qualquer lado**: as aplicações podem ser instaladas a partir de qualquer localização e por qualquer programador. Esta é a opção menos segura.
+- **Não configurado**: Predefinição. A opção de controlador de chamadas não tem qualquer impacto na conformidade ou não conformidade. 
+- **Mac App Store**: Instale apenas as aplicações para Mac app store. Não é possível instalar aplicações de terceiros nem de programadores identificados. Se um utilizador selecionar o Controlador de Chamadas para instalar aplicações que não sejam da Mac App Store, o dispositivo será considerado não conforme.
+- **Mac App Store e programadores identificados**: Instale aplicações para Mac app store e programadores identificados. O macOS verifica a identidade dos programadores e faz outras verificações para confirmar a integridade da aplicação. Se um utilizador selecionar o Controlador de Chamadas para instalar aplicações que não estejam abrangidas por estas opções, o dispositivo será considerado não conforme.
+- **Em qualquer lugar**: Aplicações podem ser instaladas de qualquer lugar e por qualquer programador. Esta é a opção menos segura.
 
 Para obter mais detalhes na documentação da Apple, veja [Controlador de Chamadas no macOS](https://support.apple.com/HT202491).
 

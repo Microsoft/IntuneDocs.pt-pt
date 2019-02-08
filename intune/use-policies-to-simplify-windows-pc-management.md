@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 56c81c04c4ee6ae319cb54f513b80738f2fbe5fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e8448ec320c953fd22235e6e743306a1f86d6399
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188041"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851309"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utilizar políticas para simplificar a gestão de PCs Windows
 
@@ -49,7 +50,7 @@ O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode
 |**Nome**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
 |**Número de telefone**|O número de telefone do administrador que gere o computador.<br />Comprimento máximo: 20 carateres|
 |**Endereço de e-mail**|O endereço de e-mail do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
-|**Nome do site**|O nome do seu site de suporte para utilizadores.<br />>Comprimento máximo: 40 carateres|
+|**Nome do site**|O nome do seu site de suporte para utilizadores.<br />> comprimento máximo: 40 carateres|
 |**URL do site**|O URL do seu site de suporte.<br />Comprimento máximo: 150 carateres|
 |**Notas**|Uma nota que é apresentada aos utilizadores.<br />Comprimento máximo: 120 carateres|
 

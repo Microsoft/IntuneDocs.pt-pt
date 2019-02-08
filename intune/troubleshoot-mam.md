@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb79dcb2ff858d283fc5a843dca1b3d5acb3ec9c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899098"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845640"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 

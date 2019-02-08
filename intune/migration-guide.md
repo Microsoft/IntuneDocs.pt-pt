@@ -15,12 +15,13 @@ ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd42aaddee3051d01e9a3d30690735d7acbfb411
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181416"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843736"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -34,7 +35,7 @@ Este guia irá orientá-lo ao longo dos vários detalhes relacionados com a migr
 
 Este guia divide o processo de migração em duas fases, que incluem tarefas, estratégias e orientações táticas que irão ajudar a orientá-lo ao longo do processo completo de migração para o Intune MDM.
 
--   [Fase 1: Preparar o Intune para a gestão de dispositivos móveis](migration-guide-prepare.md)
+-   [Fase 1: Preparar o Intune para gestão de dispositivos móveis](migration-guide-prepare.md)
 
     -   [Avaliar os requisitos de migração da MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -46,7 +47,7 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
     -   [Considerações especiais sobre a migração](migration-guide-considerations.md)
 
--   [Fase 2: campanha de migração](migration-guide-campaign.md)
+-   [Fase 2: Campanha de migração](migration-guide-campaign.md)
 
     -   [Plano de comunicação](migration-guide-communication-plan.md)
 
@@ -70,4 +71,4 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Fase 1: Preparar o Intune para a gestão de dispositivos móveis](migration-guide-prepare.md)
+[Fase 1: Preparar o Intune para gestão de dispositivos móveis](migration-guide-prepare.md)

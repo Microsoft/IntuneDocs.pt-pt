@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98b3180bc90c7b54213781ddf8b6668918b22dd3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8bdb74c19e6b996bafc9284bfedaf0608fdf8fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203796"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834624"
 ---
 # <a name="intune-tenant-status-page"></a>Página de estado do inquilino do Intune
 Utilize a página de estado do inquilino como um concentrador centralizado para se manter atualizado sobre a detalhes importantes sobre o seu inquilino, disponibilidade de licença e utilização, estado do conector e as comunicações importantes sobre o serviço Intune.  
@@ -46,7 +47,7 @@ Quando existe mais do que um único conector de qualquer tipo, o estado é um re
 Conectores de mau estado de funcionamento apresentam sempre na parte superior da lista. Em seguida, estão conectores com avisos e, em seguida, a lista de conectores em bom estado. Os conectores que ainda não configurou aparecem em último lugar.
 
 **Estado do conector:**
-- **Mau estado de funcionamento:**
+- **Unhealthy:**
     - O certificado ou a credencial expirou
     - A última sincronização foi três ou mais dias atrás
 - **Aviso:**

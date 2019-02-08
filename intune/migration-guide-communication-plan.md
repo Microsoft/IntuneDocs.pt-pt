@@ -15,12 +15,13 @@ ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: e19ce1aa39d6402ccf1de93af493457b0a10d0b8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d6c3190f0bac90ef87fcc411423611251c54338e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183742"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842070"
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
@@ -30,19 +31,19 @@ O plano de comunicação é um elemento-chave durante a migração do Intune. Po
 
 Recomendamos o seguinte plano de comunicação de e-mails. Fornecemos modelos que pode adaptar ao seu plano de comunicação:
 
--   **E-mail \#1:** explique as vantagens, expetativas e agenda. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.<br/><br/>
+-   **Email \#1:** Explique as vantagens, expetativas e agenda. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.<br/><br/>
 
 
     -   [Transferir o \#modelo de e-mail 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **E-mail \#2:** anuncie que os serviços estão agora prontos para o acesso através do Intune. Informe os utilizadores para se inscreverem agora. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.<br/><br/>
+-   **Email \#2:** Anunciar que serviços estão agora prontos para acesso através do Intune. Informe os utilizadores para se inscreverem agora. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.<br/><br/>
 
 
     -   [Transferir o \#modelo de e-mail 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **E-mail \#3:** forneça aos utilizadores uma linha cronológica antes de o acesso dos mesmos ser afetado. Mais uma vez, lembre os utilizadores dos benefícios e dos motivos estratégicos da migração. A temporização de e-mails deve ter uma janela deslizante para corresponder às suas fases. Por exemplo, em junho, envie o e-mail \#1 aos utilizadores da fase 1, o e-mail \#2 aos utilizadores da fase 2 e o e-mail \#3 aos utilizadores da fase 3.<br/><br/>
+-   **Email \#3:** Dê aos utilizadores uma linha cronológica antes do respetivo acesso é afetado. Mais uma vez, lembre os utilizadores dos benefícios e dos motivos estratégicos da migração. A temporização de e-mails deve ter uma janela deslizante para corresponder às suas fases. Por exemplo, em junho, envie o e-mail \#1 aos utilizadores da fase 1, o e-mail \#2 aos utilizadores da fase 2 e o e-mail \#3 aos utilizadores da fase 3.<br/><br/>
 
     -   [Transferir o \#modelo de e-mail 3 ](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 

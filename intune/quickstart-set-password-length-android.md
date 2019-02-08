@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87fb7091079086e5c455376cb5c4ae8e10f28ec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cccb79ae7337c3b037141cbb7759a856d651f83f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179260"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851020"
 ---
-# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Guia de Início Rápido: criar uma política de conformidade de palavra-passe para dispositivos Android
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de palavra-passe para dispositivos Android
 
 Neste início rápido, vai utilizar o Microsoft Intune para exigir aos utilizadores de dispositivos Android da sua força de trabalho que introduzam uma palavra-passe com um comprimento específico antes de lhes conceder acesso às informações nos dispositivos Android. 
 
@@ -66,4 +67,4 @@ Neste início rápido, utilizou o Intune para criar uma política de conformidad
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: enviar notificações para dispositivos não conformes](quickstart-send-notification.md)
+> [Início rápido: Enviar notificações para dispositivos não conformes](quickstart-send-notification.md)

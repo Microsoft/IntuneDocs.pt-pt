@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 543cdc84356c0019653c042bc63f5017b9d4c0f0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c92489b00bd8d504b89fe0cc590b1d1b27bb5dde
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148012"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833762"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo macOS no Intune?
 
@@ -46,7 +47,7 @@ Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 
 -   Exigir que tenha uma palavra-passe ou PIN no dispositivo.
 
--   O seu administrador de TI pode exigir que aceite os termos e condições.
+-   O administrador de TI pode exigir que aceite os termos e condições.
 
 -   Desativar a câmara no seu dispositivo para o impedir de tirar fotografias a dados confidenciais da empresa.
 

@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4c65b381afaad4b3ba65fa3d8eb49ba8f52b95d1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 58583569ca32449cddf2af23d65c35b897fac6ed
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183354"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850969"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos iOS no Microsoft Intune
 
@@ -54,15 +55,15 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos iOS.
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome para o perfil, como `ios custom profile`.
-    - **Descrição:** introduza uma descrição para o perfil.
-    - **Plataforma**: selecione **iOS**.
-    - **Tipo de perfil**: selecione **Personalizado**.
+    - **Nome**: Introduza um nome para o perfil, como `ios custom profile`.
+    - **Descrição**: Introduza uma descrição para o perfil.
+    - **Plataforma**: Escolher **iOS**.
+    - **Tipo de perfil**: Escolher **personalizado**.
 
 4. Em **Configuração personalizada**, introduza as seguintes definições:
 
-    - **Nome do perfil de configuração personalizado**: introduza um nome para o perfil. Este nome é apresentado no dispositivo e no estado do Intune.
-    - **Ficheiro de perfil de configuração**: navegue até ao perfil de configuração que criou com o Apple Configurator ou o Gestor de Perfis da Apple. O ficheiro que importou é apresentado na área **Conteúdos do ficheiro**.
+    - **Nome do perfil de configuração personalizada**: Introduza um nome para a política. Este nome é apresentado no dispositivo e no estado do Intune.
+    - **Ficheiro de perfil de configuração**: Navegue até ao perfil de configuração que criou com o Apple Configurator nem o Gerenciador de perfis do Apple. O ficheiro que importou é apresentado na área **Conteúdos do ficheiro**.
 
 5. Selecione **OK** > **Criar** para criar o perfil do Intune. Depois de criado, o perfil é apresentado na lista **Configuração do dispositivo – Perfis**.
 

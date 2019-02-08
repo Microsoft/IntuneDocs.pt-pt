@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6613b19102aac752e9717fc376d99a178fe9dd3c
-ms.sourcegitcommit: ef85e28df802c974664305270c4a8571c0bb47b9
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742967"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849848"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 

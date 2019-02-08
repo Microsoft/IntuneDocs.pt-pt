@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b952483fc0cb33b32769a4b83564618b082c4b87
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35492b94e38d482f5ee59385453bac54f434223d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303451"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845334"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot (pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.

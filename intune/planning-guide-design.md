@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 192e0ac0e67fb519f1dcd2ff9faf0d7748942997
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112991"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834539"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -211,7 +212,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 
 O Intune suporta dispositivos pessoais e dispositivos pertencentes à empresa. Um dispositivo é considerado propriedade da empresa se for inscrito por um gestor de inscrição de dispositivos ou programa de registo de aparelho. Por exemplo, um dispositivo é inscrito com o Programa de Registo de Aparelho (DEP) da Apple, marcado como empresarial e colocado num grupo de dispositivos que recebe políticas e aplicações empresariais filtradas.
 
-Veja a [Secção 3: determinar requisitos de cenários de casos de utilização](planning-guide-requirements.md) para obter mais informações sobre os casos de utilização empresarial e BYOD.
+Consulte [secção 3: Determinar requisitos de cenários de casos de utilização](planning-guide-requirements.md) para obter mais informações sobre empresarial e BYOD casos de utilização.
 
 ### <a name="bulk-enrollment"></a>Inscrição em massa
 
@@ -257,10 +258,10 @@ Deve criar pelo menos uma política de configuração por plataforma. Se for nec
 
 | **Nome da política** | **Plataforma de dispositivo** | **Definições** | **Grupo de destino** |   
 |:---:|:---:|:---:|:---:|
-| Empresarial – iOS | iOS | O PIN é obrigatório, Comprimento: 6, Cópia de Segurança na Cloud Restrita | Dispositivos Empresariais |                                                           
-| Empresarial – Android | Android | O PIN é obrigatório, Comprimento: 6, Cópia de Segurança na Cloud Restrita | Dispositivos Empresariais |                                                           
-| BYOD – iOS  | iOS | O PIN é obrigatório, Comprimento: 4 | Dispositivos BYOD |
-| BYOD – Android  | Android | O PIN é obrigatório, Comprimento: 4 | Dispositivos BYOD |
+| Empresarial – iOS | iOS | PIN é obrigatório, comprimento: 6, restringir a cópia de segurança da Cloud | Dispositivos Empresariais |                                                           
+| Empresarial – Android | Android | PIN é obrigatório, comprimento: 6, restringir a cópia de segurança da Cloud | Dispositivos Empresariais |                                                           
+| BYOD – iOS  | iOS | PIN é obrigatório, comprimento: 4 | Dispositivos BYOD |
+| BYOD – Android  | Android | PIN é obrigatório, comprimento: 4 | Dispositivos BYOD |
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de configuração.

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 603a501ff8b8b3ebc6b142a823b1c5bea4e48b98
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505755"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848224"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Inscrever um dispositivo macOS fornecido pela organização para gestão
 
@@ -48,7 +49,7 @@ Conclua os seguintes passos para inscrever o seu dispositivo macOS para gestão.
 4. Selecione a sua rede Wi-Fi. Tem de ter uma ligação à Internet para prosseguir com a configuração. Se não vir a sua rede ou tiver de estabelecer ligação através de uma rede com fios, clique em **Other Network Options** (Outras Opções de Rede). Quando tiver terminado, clique em **Continue** (Continuar).  
 
    ![Captura do ecrã do Assistente de Configuração de dispositivos macOS "Select Your Wi-Fi Network screen" (Selecione a Sua Rede Wi-Fi), a mostrar uma lista das redes disponíveis. Também mostra os botões Other Network Options (Outras Opções de Rede), Back (Retroceder) e Continue (Continuar).](./media/macos-dep-wifi-1808.png)  
-5. Assim que estiver ligado ao Wi-Fi, o ecrã **Remote Management** (Gestão Remota) será apresentado. A gestão remota permite que o administrador da sua organização configure remotamente o seu dispositivo com as contas, definições, aplicações e redes exigidas pela empresa. Leia a explicação da gestão remota para o ajudar a compreender a forma como o seu dispositivo é gerido. Em seguida, clique em **Continue** (Continuar).  
+5. Assim que estiver ligado ao Wi-Fi, o ecrã **Remote Management** (Gestão Remota) será apresentado. A gestão remota permite que o administrador da sua organização configure remotamente o seu dispositivo com as contas, definições, aplicações e redes exigidas pela empresa. Leia a explicação da gestão remota para o ajudar a compreender a forma como o seu dispositivo é gerido. Em seguida, clique em **Continuar**.  
 
    ![Captura do ecrã do Assistente de Configuração de dispositivos macOS "Remote Management" (Gestão Remota), com uma explicação sobre a gestão remota e uma ligação para documentação com informações adicionais. Também mostrar os botões Back (Retroceder) e Continue (Continuar).](./media/macos-dep-remote-management-1-1808.png)  
 6. Quando lhe for pedido, inicie sessão com a sua conta escolar ou profissional. Após a sua autenticação, o dispositivo irá instalar um perfil de gestão. O perfil configura e permite o seu acesso aos recursos da sua organização.  

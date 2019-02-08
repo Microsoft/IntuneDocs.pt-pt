@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5984ac8ebe825a187b33945699a5fadc27e0c0cc
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828419"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840370"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Remover o seu dispositivo Windows da gestão
 
@@ -91,8 +92,8 @@ Conclua os seguintes passos para remover um telemóvel com o Windows 8.1 do Intu
 
 Existem dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
--   **Registos de diagnóstico**: dados de atividade de aplicações padrão que a Microsoft recolhe. Isto é eliminado automaticamente quando desinstala a aplicação Portal da Empresa. Os dados de atividade de aplicações são, por exemplo, dados sobre o tempo durante o qual a aplicação esteve aberta ou se a aplicação falhou.
--   **Cache da aplicação**: os ficheiros de suporte que são necessários para o funcionamento da aplicação, como os ícones e as definições.
+-   **Os registos de diagnóstico**: Dados de atividade de aplicações padrão que a Microsoft recolhe. Isto é eliminado automaticamente quando desinstala a aplicação Portal da Empresa. Os dados de atividade de aplicações são, por exemplo, dados sobre o tempo durante o qual a aplicação esteve aberta ou se a aplicação falhou.
+-   **Cache do aplicativo**: Suporta ficheiros que são necessários para a aplicação funcione, por exemplo, ícones e definições.
 
 Para eliminar a cache e os registos armazenados, siga um dos seguintes passos:
 

@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 36ddac5b9fc7d03e0ef3e719e7c1d46d7881d2ac
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98f25ec1dce7b07fdd6271cea965b9d44b137221
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737955"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845759"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Adicionar aplicações da Microsoft Store ao Microsoft Intune
 
@@ -42,7 +43,7 @@ Pode adicionar uma aplicação da Microsoft Store ao Intune ao fazer o seguinte:
 7. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: Introduza o nome da aplicação porque está a ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
+    - **Publisher**: Introduza o nome do publicador da aplicação.
     - **URL da Appstore**: Escreva o URL da aplicação Store da aplicação que pretende criar.
     - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas ou uma categoria que criou. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
     - **Apresentar como aplicação em destaque no Portal da empresa**: Selecione esta opção para apresentar o conjunto de aplicações de forma destacada na página principal do portal da empresa, quando os utilizadores procurarem aplicações.

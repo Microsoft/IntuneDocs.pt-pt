@@ -16,12 +16,13 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44e2d29222cfbab3d22ae9746d3cc42d7c959f04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190035"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841594"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações poderá ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.
@@ -450,11 +451,11 @@ A partir de março, a aplicação Portal da Empresa para Android seguirá as [di
 
 ![À esquerda, uma imagem da aplicação Portal da Empresa para Android antes da atualização. À direita, uma imagem da aplicação Portal da Empresa para Android depois da atualização. Ambas as imagens mostram o separador Dispositivos como o separador selecionado dos três separadores disponíveis (Aplicações, Dispositivos e Contactar TI).](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __Interface__: os botões __Aplicações em Destaque__ e __Todas as Aplicações__ foram atualizados no separador __Aplicações__. O botão __Procurar__ é agora um botão de ação flutuante.
+* __Interface__: __Aplicações em destaque__ e __todas as aplicações__ botões foram atualizados as __aplicações__ separador. O botão __Procurar__ é agora um botão de ação flutuante.
 
 ![À esquerda, uma imagem da aplicação Portal da Empresa para Android antes da atualização. À direita, uma imagem da aplicação Portal da Empresa para Android depois da atualização. Ambas as imagens mostram o separador Aplicações como o separador selecionado dos três separadores disponíveis (Aplicações, Dispositivos e Contactar TI).](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __Navegação__: a secção Todas as Aplicações mostra uma vista com os separadores __Em destaque__, __Todas__ e __Categorias__ para uma navegação mais fácil. O separador __Contactar TI__ foi simplificado para facilitar a leitura.
+* __Navegação__: Todas as aplicações mostra uma vista com os separadores __em destaque__, __todos os__ e __categorias__ para uma navegação mais fácil. O separador __Contactar TI__ foi simplificado para facilitar a leitura.
 
 <html>
 <body>

@@ -17,12 +17,13 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 92644eeed28911d0d49ec2aa20fcfed4a6553486
-ms.sourcegitcommit: fddf90a6aa17b09005723653a0c9a520856bb2ea
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55781509"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837259"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>A edição antecipada do Microsoft Intune – Fevereiro de 2019
 

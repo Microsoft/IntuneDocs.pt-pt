@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3592ceb2b1a4e7ba32fc0a8b3de53e0f0329d8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f39e9b5f8ecd49ba84f4e9614e2a63a6cfbfef7a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179733"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837941"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configurar a inscrição de dispositivos com perfil de trabalho do Android
 
@@ -33,8 +34,8 @@ Para configurar a gestão de perfis de trabalho do Android, siga estes passos:
 
 1. [Ligue a sua conta do inquilino do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
 2. Especificar as definições de inscrição de perfis de trabalho do Android. Os perfis de trabalho do Android [só são suportados em determinados dispositivos Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Qualquer dispositivo que suporte os perfis de trabalho do Android também suporta a gestão Android convencional. O Intune permite-lhe especificar a forma como os dispositivos que suportam os perfis de trabalho do Android devem ser geridos a partir das [Restrições de Inscrição](enrollment-restrictions-set.md).
-    - **Bloquear (especificado por predefinição)**: todos os dispositivos Android, incluindo os dispositivos que suportem os perfis de trabalho do Android, serão inscritos como dispositivos Android convencionais.
-    - **Permitir**: todos os dispositivos que suportem os perfis de trabalho do Android são inscritos como dispositivos com perfil de trabalho do Android. Qualquer dispositivo Android que não suporte os perfis de trabalho do Android é inscrito como um dispositivo Android convencional.
+    - **Bloquear (especificado por predefinição)**:  Todos os dispositivos Android, incluindo os dispositivos que suportem perfis de trabalho Android, serão inscritos como dispositivos Android convencionais.
+    - **Permitir**: Todos os dispositivos que suportem perfis de trabalho Android são inscritos como dispositivos de perfil de trabalho Android. Qualquer dispositivo Android que não suporte os perfis de trabalho do Android é inscrito como um dispositivo Android convencional.
 3. [Indique aos seus utilizadores como devem inscrever os dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
 
 

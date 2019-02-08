@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eabe1bdba35c40b07c6c8e17e6a58d17ed14a966
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229904"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843039"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 

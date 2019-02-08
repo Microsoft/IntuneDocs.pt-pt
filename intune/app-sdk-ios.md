@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: d484c227b33cc364d98ec4843894f447ae2ea8ab
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eaffed2af38e269000dd951cec536e1f80be705f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657836"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841356"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -45,11 +46,11 @@ O SDK da Aplicação do Intune para iOS inclui uma biblioteca estática, ficheir
 
 Este guia abrange a utilização dos seguintes componentes do SDK da Aplicação do Intune para iOS:
 
-* **libintunemam**: A biblioteca estática do SDK da aplicação Intune. Se a aplicação não utilizar extensões, ligue esta biblioteca ao seu projeto de forma a ativar a aplicação para a gestão de aplicações cliente do Intune.
+* **libIntuneMAM.a**: A biblioteca estática do SDK da aplicação Intune. Se a aplicação não utilizar extensões, ligue esta biblioteca ao seu projeto de forma a ativar a aplicação para a gestão de aplicações cliente do Intune.
 
-* **Intunemam**: A estrutura do SDK da aplicação Intune. Ligue esta estrutura ao seu projeto de forma a ativar a aplicação para a gestão de aplicações cliente do Intune. Utilize a estrutura em vez da biblioteca estática, se a sua aplicação utilizar extensões, para que o projeto não crie múltiplas cópias da biblioteca estática.
+* **IntuneMAM.framework**: A estrutura do SDK da aplicação Intune. Ligue esta estrutura ao seu projeto de forma a ativar a aplicação para a gestão de aplicações cliente do Intune. Utilize a estrutura em vez da biblioteca estática, se a sua aplicação utilizar extensões, para que o projeto não crie múltiplas cópias da biblioteca estática.
 
-* **Intunemamresources**: Um pacote de recursos que tem recursos que o SDK depende.
+* **IntuneMAMResources.bundle**: Um pacote de recursos que tem recursos que o SDK depende.
 
 * **Cabeçalhos**: Expõe as APIs do SDK da aplicação Intune. Se utilizar uma API, terá de incluir o ficheiro de cabeçalho que contém a API. Os seguintes ficheiros de cabeçalho incluem as APIs, tipos de dados e protocolos que o SDK da Aplicação Intune disponibiliza aos programadores:
 
@@ -218,7 +219,7 @@ No dicionário IntuneMAMSettings, pode adicionar as seguintes definições supor
 
 Algumas destas definições podem ter sido abordadas nas secções anteriores e outras não são aplicáveis a todas as aplicações.
 
-Definição  | Tipo  | Definição | Obrigatório?
+Definição  | Type  | Definição | Obrigatório?
 --       |  --   |   --       |  --
 ADALClientId  | Cadeia  | Identificador do cliente Azure AD da aplicação. | Necessário se a aplicação utilizar a ADAL. |
 ADALAuthority | Cadeia | Autoridade do Azure AD da aplicação em utilização. Deve utilizar o seu ambiente onde foram configuradas contas do AAD. | Necessário se a aplicação utilizar a ADAL. Se este valor estiver ausente, será utilizado um valor predefinido do Intune.|
@@ -302,7 +303,7 @@ Exemplo:
 
 Se quiser que o SDK do Intune processe a inscrição e toda a autenticação através da ADAL antes de iniciar a sua aplicação e a sua aplicação exigir sempre uma política APP, não tem de utilizar a API `loginAndEnrollAccount`. Pode simplesmente configurar as duas definições abaixo como YES no dicionário IntuneMAMSettings no ficheiro Info.plist.
 
-Definição  | Tipo  | Definição |
+Definição  | Type  | Definição |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Booleano| Especifica se a aplicação deve tentar inscrever-se automaticamente quando inicia se for detetada uma identidade gerida existente e ainda não o tiver feito. Assume a predefinição de NO. <br><br> Nota: Não se for encontrada nenhuma identidade gerida ou não um token válido está disponível na cache da ADAL, a tentativa de inscrição irá falhar automaticamente sem pedir credenciais, a menos que a aplicação também tenha definido a MAMPolicyRequired como YES. |
 MAMPolicyRequired| Booleano| Especifica se a aplicação será impedida de iniciar se não tiver uma política de proteção de aplicação do Intune. Assume a predefinição de NO. <br><br> Nota: Aplicações não podem ser submetidas para o Store da aplicação com a MAMPolicyRequired definida como YES. Ao definir a MAMPolicyRequired como YES, a AutoEnrollOnLaunch também deve ser definida como YES. |

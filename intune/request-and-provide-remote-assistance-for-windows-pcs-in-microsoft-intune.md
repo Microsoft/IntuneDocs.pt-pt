@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 21d9ad0b21b151d0131977a01e9d359735be4187
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: af9098a814d102765df1b1a5316cfeeedd4fbc4f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181314"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838347"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Pedir e fornecer assistência remota para PCs Windows
 

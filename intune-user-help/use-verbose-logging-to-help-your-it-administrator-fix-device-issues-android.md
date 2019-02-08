@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8c1806d8d35dd2a6e16f1041e2c9f844f637a046
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149876"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839989"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso
 

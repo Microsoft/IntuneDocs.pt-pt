@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9828f1b8a24e4f7d871f9e6e6f67e9f6c6fb197
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1151df35abfe5f7806370a5ad466381dd3d10013
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182776"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839894"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Definições de proteção de ponto final do macOS no Intune
 
@@ -26,22 +27,22 @@ Este artigo mostra-lhe as definições de proteção de ponto final que pode con
 
 ## <a name="gatekeeper"></a>Controlador de chamadas
 
-- **Permitir aplicações transferidas a partir destas localizações**: limite as aplicações dependendo de onde as aplicações foram transferidas. A intenção é proteger dispositivos de software maligno e permitir apenas aplicações de origens em que confia. As opções para permitir: 
+- **Permitir aplicações transferidas a partir destas localizações**: Limite as aplicações dependendo de onde as aplicações foram transferidas. A intenção é proteger dispositivos de software maligno e permitir apenas aplicações de origens em que confia. As opções para permitir: 
   - **Mac App Store**
   - **Mac App Store e programadores identificados**
   - **Em qualquer lugar**
 
-- **O utilizador pode ignorar o Controlador de Chamadas**: impede que os utilizadores ignorem a definição do Controlador de Chamadas e impede que os utilizadores do Controlador de Chamadas cliquem para instalar uma aplicação. Quando estiver ativado, os utilizadores podem manter a tecla Ctrl premida e clicar em qualquer aplicação e instalá-la.
+- **Utilizador pode ignorar o controlador de chamadas**: Impede os utilizadores de substituir o controlador de chamadas a definição e impede que os utilizadores cliquem para instalar uma aplicação. Quando estiver ativado, os utilizadores podem manter a tecla Ctrl premida e clicar em qualquer aplicação e instalá-la.
 
 ## <a name="firewall"></a>Firewall
 
 Utilize a firewall para controlar ligações por aplicação e não por porta. Utilizar definições por aplicação torna mais fácil obter as vantagens de proteção da firewall. Também ajuda a impedir que aplicações indesejáveis controlem as portas da rede que estão abertas para as aplicações legítimas.
 
 - **Utilize a firewall para proteger dispositivos de acessos de rede não autorizados ao controlar ligações numa base por aplicação.**
-  - **Firewall**: permite que a firewall configure a forma como as ligações de entrada são processadas no seu ambiente.
-  - **Ligações de entrada**: bloqueia todas as ligações de entrada, exceto as ligações necessárias para serviços básicos de Internet, tal como o DHCP, Bonjour e IPSec. Esta funcionalidade também bloqueia todos os serviços de partilha, tal como a Partilha de Ficheiros e a Partilha de Ecrãs. Se estiver a utilizar serviços de partilha, mantenha esta definição como **Não configurado**.
+  - **Firewall**: Ativar a Firewall configurar ligações de entrada como são processadas no seu ambiente.
+  - **Ligações de entrada**: Bloquear todas as ligações recebidas, exceto as ligações necessárias para serviços básicos de Internet, como DHCP, Bonjour e IPSec. Esta funcionalidade também bloqueia todos os serviços de partilha, tal como a Partilha de Ficheiros e a Partilha de Ecrãs. Se estiver a utilizar serviços de partilha, mantenha esta definição como **Não configurado**.
 
 - **Permitir ou bloquear ligações de entrada para aplicações específicas**
-  - **Aplicações permitidas**: selecione as aplicações que têm permissão explícita para receber ligações de entrada.
-  - **Aplicações bloqueadas**: selecione as aplicações que devem bloquear ligações de entrada.
-  - **Modo invisível**: para impedir que o computador responda aos pedidos de pesquisa, ative o modo invisível. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. São ignorados pedidos inesperados, tais como o protocolo ICMP (ping).
+  - **Aplicações com permissão**: Selecione as aplicações que têm permissão explícita para receber ligações de entrada.
+  - **Aplicações bloqueadas**: Selecione as aplicações que devem bloquear ligações de entrada.
+  - **O modo invisível**: Para impedir que o computador responda aos pedidos de pesquisa, ative o modo invisível. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. São ignorados pedidos inesperados, tais como o protocolo ICMP (ping).

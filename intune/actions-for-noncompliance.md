@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5bd8bfe0230e4d49ce5ae4372e0f373a014c00ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c37a5991adf2efdb5bf38b32d8af4c77af295ea0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187777"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844688"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes – Intune
 
@@ -29,13 +30,13 @@ Por predefinição, quando o Intune deteta um dispositivo não conforme, este ma
 
 Existem vários tipos de ação:
 
-- **Enviar um e-mail para o utilizador final**: personalize uma notificação por e-mail antes de a enviar para o utilizador final. Pode personalizar os destinatários, o assunto e o corpo da mensagem, incluindo o logótipo da empresa e as informações de contacto.
+- **Enviar e-mail ao utilizador final**: Personalize uma notificação por e-mail antes de os enviar para o utilizador final. Pode personalizar os destinatários, o assunto e o corpo da mensagem, incluindo o logótipo da empresa e as informações de contacto.
 
     Além disso, o Intune inclui detalhes sobre o dispositivo não conforme na notificação por e-mail.
 
-- **Bloquear remotamente o dispositivo em não conformidade**: para dispositivos que não estão em conformidade, pode emitir um bloqueio remoto. Em seguida, é pedido ao utilizador um PIN ou palavra-passe para desbloquear o dispositivo. Saiba mais sobre a funcionalidade [Bloqueio Remoto](device-remote-lock.md). 
+- **Bloquear remotamente o dispositivo não conforme**: Para dispositivos que não estão em conformidades, pode emitir um bloqueio remoto. Em seguida, é pedido ao utilizador um PIN ou palavra-passe para desbloquear o dispositivo. Saiba mais sobre a funcionalidade [Bloqueio Remoto](device-remote-lock.md). 
 
-- **Marcar dispositivos como não conformes**: crie um agendamento (ao nível do número de dias) após o dispositivo ser marcado como não conforme. Pode configurar a ação para entrar em vigor imediatamente ou dar ao utilizador um período de tolerância para este ficar em conformidade.
+- **Marcar dispositivos como não conformes**: Criar uma agenda (num número de dias) após o dispositivo é marcado como não conforme. Pode configurar a ação para entrar em vigor imediatamente ou dar ao utilizador um período de tolerância para este ficar em conformidade.
 
 Este artigo mostra-lhe como:
 
@@ -94,14 +95,14 @@ Também pode adicionar outra ação quando criar uma política de conformidade o
 3. Selecione **Ações para não conformidade** > **Adicionar**.
 4. Selecione a sua **Ação**: 
 
-    - **Enviar um email para os utilizadores finais**: quando o dispositivo não está em conformidade, opte por enviar um e-mail ao utilizador. Além disso: 
+    - **Envie um email para os utilizadores finais**: Quando o dispositivo não está em conformidade, optar por enviar um e-mail ao utilizador. Além disso: 
     
          - Selecione o **Modelo de mensagem** que criou anteriormente
          - Introduza **Destinatários adicionais** ao selecionar grupos
     
-    - **Bloquear remotamente o dispositivo em não conformidade**: quando o dispositivo não estiver em conformidade, bloqueie-o. Esta ação força o utilizador a introduzir um PIN ou código de acesso para desbloquear o dispositivo. 
+    - **Bloquear remotamente o dispositivo não conforme**: Quando o dispositivo está em conformidade, bloquear o dispositivo. Esta ação força o utilizador a introduzir um PIN ou código de acesso para desbloquear o dispositivo. 
     
-    - **Agenda**: introduza o número de dias (0 a 365) após a deteção da não conformidade para acionar a ação nos dispositivos dos utilizadores. Depois deste período de tolerância, pode impor uma política de acesso condicional. Se introduzir **0** número de dias, nesse caso, o acesso condicional entra em vigor **imediatamente**. Por exemplo, pode bloquear o acesso aos recursos empresariais imediatamente se um dispositivo não estiver em conformidade.
+    - **Agenda**: Introduza o número de dias (0 a 365) após a não conformidade para acionar a ação nos dispositivos dos utilizadores. Depois deste período de tolerância, pode impor uma política de acesso condicional. Se introduzir **0** número de dias, nesse caso, o acesso condicional entra em vigor **imediatamente**. Por exemplo, pode bloquear o acesso aos recursos empresariais imediatamente se um dispositivo não estiver em conformidade.
 
 5. Quando terminar, selecione **Adicionar** > **OK** para guardar as alterações.
 

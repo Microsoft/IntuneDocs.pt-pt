@@ -15,12 +15,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da29f4fcdbd694b2817bf4eca953c37d2d3c6b0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183677"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848190"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Utilizar Localizações (barreira de rede) no Intune
 
@@ -52,7 +53,7 @@ Para criar uma política de conformidade com base na localização:
 
 2. Introduza as seguintes propriedades:  
 
-   - É necessário. Dê um **Nome** à localização, como **Andar de fabrico** ou **Edifício 44-protegido**.
+   - Necessário. Dê um **Nome** à localização, como **Andar de fabrico** ou **Edifício 44-protegido**.
    - Opcional. Introduza um **Intervalo IPv4** com notação CIDR (Classless Interdomain Routing), como `aaa.bbb.ccc.ddd/n`.
    - Opcional. Introduza o endereço do **Gateway IPv4**, como `aaa.bbb.ccc.ddd`.
    - Opcional. Introduza o endereço do **Servidor DHCP IPv4**, como `aaa.bbb.ccc.ddd`.

@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 98c0dafc3430387242bee93d8536cb32151f9a96
-ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 92e3170325e426505bcfca12fddf80c9b1b872dd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55761097"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839265"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 

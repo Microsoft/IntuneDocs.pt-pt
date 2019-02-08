@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 610b6eb8c5873ad62b035b702cf9ff0dd8fc0a54
-ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b4d9da2a6376a3da8a1df23b0493e80802999ba0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55761046"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846796"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicações protegidas do Microsoft Intune  
 

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ce71a14f9bb7e877fb31e78afdf64d5e492f4a8
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146694"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838041"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
@@ -73,12 +74,12 @@ Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser ap
 
 Esta secção descreve a reposição do código de acesso e o comportamento da palavra-passe temporária para a plataforma de cada dispositivo.  
 
-**Android**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário.
+**Android**: Remove o código de acesso existente e cria um código de acesso temporário constituído por letras e números.
 
-**iOS**: remove o código de acesso existente e não cria um código de acesso temporário. Se utilizar o scanner de impressões digitais Touch ID para abrir o seu dispositivo ou fazer compras, terá de configurá-lo novamente.  
+**iOS**: Remove o código de acesso existente e não cria um código de acesso temporário. Se utilizar o scanner de impressões digitais Touch ID para abrir o seu dispositivo ou fazer compras, terá de configurá-lo novamente.  
 
-**Windows 10 Mobile**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
+**Windows 10 Mobile**: Remove o código de acesso existente e cria um código de acesso temporário constituído por letras e números. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
     
-**Windows Phone 8.1**: remove o código de acesso existente e cria um código de acesso numérico temporário.  
+**Windows Phone 8.1**: Remove o código de acesso existente e cria um código de acesso temporário constituído por números.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

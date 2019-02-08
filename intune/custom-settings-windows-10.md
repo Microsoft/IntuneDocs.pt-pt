@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184459"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842798"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos Windows 10 no Intune
 
@@ -42,17 +43,17 @@ Este artigo apresenta o seguinte:
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome para o perfil, como `windows 10 custom profile`.
-    - **Descrição:** introduza uma descrição para o perfil.
-    - **Plataforma**: selecione **Windows 10 e posterior**.
-    - **Tipo de perfil**: selecione **Personalizado**.
+    - **Nome**: Introduza um nome para o perfil, como `windows 10 custom profile`.
+    - **Descrição**: Introduza uma descrição para o perfil.
+    - **Plataforma**: Escolher **Windows 10 e posterior**.
+    - **Tipo de perfil**: Escolher **personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome** – introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
-    - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
-    - **OMA-URI** (sensível a maiúsculas e minúsculas): introduza a definição OMA-URI que pretende utilizar.
-    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
+    - **Nome**: Introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
+    - **Descrição**: Introduza uma descrição que proporcione uma descrição geral da definição e outros detalhes importantes.
+    - **OMA-URI** (sensível a maiúsculas e minúsculas): Introduza o OMA-URI que pretende utilizar como uma definição.
+    - **Tipo de dados**: Escolha o tipo de dados que irá utilizar para esta definição de OMA-URI. As opções são:
 
         - Cadeia
         - Cadeia (ficheiro XML)
@@ -62,7 +63,7 @@ Este artigo apresenta o seguinte:
         - Booleano
         - Base64 (ficheiro)
 
-    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+    - **Valor**: Introduza o valor de dados que pretende associar ao OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
 
     Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
 

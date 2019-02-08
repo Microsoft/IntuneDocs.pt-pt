@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4b15200ad5fc4f8fb272618925ee758100ebde72
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829109"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851530"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -29,7 +30,7 @@ ms.locfileid: "52829109"
 
 Pode utilizar políticas de configuração da aplicação com aplicações geridas que suportem o SDK da Aplicação do Intune, até em dispositivos que não estejam inscritos. 
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.

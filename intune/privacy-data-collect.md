@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9202bd19d9c932d167808b602aeccfb8b7ed117
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186125"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834505"
 ---
 # <a name="data-collection-in-intune"></a>Recolha de dados no Intune
 
@@ -45,7 +46,7 @@ Os dados identificados que o Intune recolhe podem incluir, entre outros:
     - Identidades de utilizador de terceiros (como o ID Apple)
 - Informações do inventário de hardware
     - Nome do dispositivo
-    - Manufacturer
+    - Fabricante
     - Sistema operativo
     - Número de série
     - Número IMEI
@@ -127,10 +128,10 @@ Os dados agregados que o Intune recolhe podem incluir, entre outros:
     - Número de dispositivos ou utilizadores inscritos
     - Número de plataformas de dispositivo identificadas  
     - Número de dispositivos instalados
-    - installedDeviceCount: o número de dispositivos em que a aplicação está instalada.
-    - notApplicableDeviceCount: o número de dispositivos a que a aplicação não é aplicável.
-    - notInstalledDeviceCount: o número de dispositivos a que a aplicação é aplicável, mas em que não está instalada.
-    - pendingInstallDeviceCount: o número de dispositivos a que a aplicação é aplicável e em que a instalação está pendente.
+    - installedDeviceCount: O número de dispositivos em que a aplicação está instalada.
+    - notApplicableDeviceCount: O número de dispositivos aos quais a aplicação não se aplica.
+    - notInstalledDeviceCount: O número de dispositivos para os quais o aplicativo é aplicável, mas não instalados.
+    - pendingInstallDeviceCount: Numberr de dispositivos aos quais se aplica a aplicação e de instalação está pendente.
     
 ## <a name="next-steps"></a>Passos Seguintes
 

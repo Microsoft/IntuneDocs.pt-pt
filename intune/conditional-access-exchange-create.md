@@ -15,12 +15,13 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 17d64822453c5aeafe4c618879aaef6176e9bbb7
-ms.sourcegitcommit: 09dcc8ba903b66b3fb8b9a71212ccd3194a046fe
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763290"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840404"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 

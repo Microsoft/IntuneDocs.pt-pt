@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e8c3c0d511439d6b18c7f04e5a493e2851d7997f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5963cb7de2994feb41c4679e87970aec4f127de5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179451"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848832"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Como criar uma política de conformidade de dispositivos para ativar o Google Play Protect
 
@@ -31,7 +32,7 @@ A política de conformidade que exige estas definições pode então ser destina
 
 ## <a name="create-a-compliance-policy"></a>Criar uma política de conformidade
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 2. Escolha **Conformidade do dispositivo** no grupo **Gerir**. 
 3. Selecione **Políticas** e, em seguida, **Criar política**.

@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
-ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9e7269eb6e396557a6bc19daa371a10be7154866
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183898"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844637"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Registos de auditoria para atividades do Intune
 Os registos de auditoria proporcionam um registo das atividades que geram uma alteração no Microsoft Intune. As tarefas remotas ou as ações Criar, Atualizar (editar), Eliminar e Atribuir geram eventos de auditoria que poderá rever. Pode rever os registos de auditoria da maioria das cargas de trabalho do Intune. A auditoria é ativada por predefinição para todos os clientes e não pode ser desativada. Os eventos de auditoria começaram a ser registados na data de lançamento de funcionalidades de dezembro de 2017. Os eventos anteriores a essa data não estão disponíveis.
@@ -30,7 +31,7 @@ Os utilizadores com as seguintes permissões podem rever os registos de auditori
 
 ## <a name="audit-logs-for-intune-workloads"></a>Registos de auditoria das cargas de trabalho do Intune
 Pode rever os registos de auditoria no grupo Monitorização de cada carga de trabalho do Intune.  
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione a carga de trabalho para a qual pretende rever os relatórios de auditoria, por exemplo, **Dispositivos**.
 4. No grupo **Monitorização** da carga de trabalho, escolha **Registos de auditoria**.

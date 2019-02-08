@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76d9efc969f68188d9752996267ff7a88363f76f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a0d5c6575ffdeeb06d3abd3caed6b8fe3d3dcd4a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180821"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834369"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar definições de Wi-Fi para dispositivos Windows 10 e posteriores no Intune
 
@@ -33,80 +34,80 @@ Este artigo descreve estas definições.
 
 ## <a name="basic-profile"></a>Perfil básico
 
-- **Tipo de Wi-Fi**: escolha **Básico**. 
+- **Tipo de Wi-Fi**: Selecione **Básico**. 
 
-- **Nome do Wi-Fi (SSID)**: sigla de Service Set Identifier (identificador do conjunto de serviço). Este valor é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores só veem o **Nome da ligação** configurado por si quando selecionam a ligação.
+- **Nome do Wi-Fi (SSID)**: Identificador do conjunto de abreviação de serviço. Este valor é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores só veem o **Nome da ligação** configurado por si quando selecionam a ligação.
 
-- **Nome da ligação**: introduza um nome simples para esta ligação Wi-Fi. O texto que introduziu é o nome que os utilizadores veem quando procuram as ligações disponíveis no respetivo dispositivo.
+- **Nome da ligação**: Introduza um nome amigável para esta ligação Wi-Fi. O texto que introduziu é o nome que os utilizadores veem quando procuram as ligações disponíveis no respetivo dispositivo.
 
-- **Ligar automaticamente quando estiver ao alcance**: se **Sim**, os dispositivos ligam automaticamente quando estão dentro do alcance desta rede. Se **Não**, os dispositivos não ligam automaticamente.
+- **Ligar automaticamente quando está no intervalo**: Quando **Sim**, dispositivos ligarem automaticamente quando estiverem no intervalo desta rede. Se **Não**, os dispositivos não ligam automaticamente.
 
-  - **Ligar à rede mais preferida, se estiver disponível**: se os dispositivos estiverem ao alcance de uma rede mais preferida, selecione **Sim** para utilizar a mesma. Selecione **Não** para utilizar a rede Wi-Fi neste perfil de configuração.
+  - **Ligar à rede mais preferida, se disponível**: Se os dispositivos estão no intervalo de uma rede mais preferida, em seguida, escolha **Sim** para utilizar a rede preferencial. Selecione **Não** para utilizar a rede Wi-Fi neste perfil de configuração.
 
     Por exemplo, cria uma rede Wi-Fi **ContosoCorp** e utiliza a **ContosoCorp** neste perfil de configuração. Também tem uma rede Wi-Fi **ContosoGuest** ao alcance. Quando os seus dispositivos empresariais estiverem ao alcance, pretende que os mesmos liguem automaticamente à **ContosoCorp**. Neste cenário, defina a propriedade **Ligar à rede mais preferida, se estiver disponível** para **Não**.
 
-  - **Ligar a esta rede, mesmo quando não estiver a difundir o seu SSID**: selecione **Sim** para que o perfil de configuração se ligue automaticamente à sua rede, mesmo quando esta estiver oculta (ou seja, o respetivo SSID não está a ser difundido publicamente). Selecione **Não** se não quiser que este perfil de configuração se ligue à sua rede oculta.
+  - **Ligar a esta rede, mesmo quando ele não esteja a difundir o respetivo SSID**: Escolher **Sim** para o perfil de configuração ligar automaticamente à sua rede, mesmo quando a rede está oculta (ou seja, respetivo SSID não estiver a difundir publicamente). Selecione **Não** se não quiser que este perfil de configuração se ligue à sua rede oculta.
 
-- **Limite de Ligações com Tráfego Limitado**: um administrador pode escolher a forma como o tráfego da rede é limitado. Com base nesta definição, as aplicações podem ajustar o respetivo comportamento de tráfego de rede. As opções são:
+- **Limitados de limite de ligações**: Um administrador pode escolher como o tráfego da rede é limitado. Com base nesta definição, as aplicações podem ajustar o respetivo comportamento de tráfego de rede. As opções são:
 
-  - **Sem restrição**: predefinição. A ligação não é limitada e não há restrições sobre o tráfego.
-  - **Fixo**: utilize esta opção se a rede estiver configurada com um limite fixo para o tráfego de rede. Uma vez atingido este limite, o acesso à rede será proibido.
-  - **Variável**: utilize esta opção se o tráfego de rede for cobrado por byte (custo por byte).
+  - **Sem restrições**: Predefinição. A ligação não é limitada e não há restrições sobre o tráfego.
+  - **Foi corrigido**: Utilize esta opção se a rede é configurada com um limite fixo para o tráfego de rede. Uma vez atingido este limite, o acesso à rede será proibido.
+  - **Variável**: Utilizar esta opção se o tráfego de rede é cobrado por byte (custo por byte).
 
-- **Tipo de Segurança sem Fios**: introduza o protocolo de segurança utilizado para autenticar dispositivos na sua rede. As opções são:
-  - **Abrir (sem autenticação)**: utilize esta opção apenas se a rede não estiver protegida.
-  - **WPA/WPA2-Personal**: Uma opção mais segura, geralmente utilizada para conectividade Wi-Fi. Para obter mais segurança, também pode introduzir uma chave pré-partilhada, palavra-passe ou chave de rede. 
+- **Tipo de segurança de conexão sem fio**: Introduza o protocolo de segurança utilizado para autenticar dispositivos na sua rede. As opções são:
+  - **Abrir (sem autenticação)**: Utilize esta opção apenas se a rede não for protegida.
+  - **WPA/WPA2-Personal**: Um mais seguro opção e é geralmente utilizado para conectividade de Wi-Fi. Para obter mais segurança, também pode introduzir uma chave pré-partilhada, palavra-passe ou chave de rede. 
 
-    - **Chave pré-partilhada** (PSK): opcional. Apresentado quando seleciona **WPA/WPA2-Personal** como o tipo de segurança. Quando a rede da sua organização é configurada, uma chave de rede ou palavra-passe também é configurada. Introduza esta chave de rede ou palavra-passe para o valor PSK. Introduza uma cadeia de carateres que tenha entre 8 e 64 carateres. Se a sua palavra-passe ou chave de rede tiver 64 carateres, introduza os carateres hexadecimais.
+    - **Chave pré-partilhada** (PSK): Opcional. Apresentado quando seleciona **WPA/WPA2-Personal** como o tipo de segurança. Quando a rede da sua organização é configurada, uma chave de rede ou palavra-passe também é configurada. Introduza esta chave de rede ou palavra-passe para o valor PSK. Introduza uma cadeia de carateres que tenha entre 8 e 64 carateres. Se a sua palavra-passe ou chave de rede tiver 64 carateres, introduza os carateres hexadecimais.
     
       > [!NOTE]
       > Ao guardar o perfil Wi-Fi, o valor PSK que introduziu não é apresentado por motivos de segurança. A marca d'água da chave pré-partilhada continua a mostrar a indicação **Não configurado**, apesar de o PSK estar guardado no perfil. Para alterar o PSK, introduza uma nova chave e guarde o perfil. Se guardar o PSK, edite a política, deixe o PSK em branco e o PSK existente continuará a ser utilizado.
 
-- **Definições de Proxy da empresa**: opte por utilizar as definições de proxy na sua organização. As opções são:
-  - **Nenhuma**: não são configuradas definições de proxy.
-  - **Configurar manualmente**: introduza o **endereço IP do servidor proxy** e o respetivo **Número de porta**.
-  - **Configurar automaticamente**: introduza um URL que aponte para um script de configuração automática do proxy (PAC). Por exemplo, introduza `http://proxy.contoso.com/proxy.pac`.
+- **Definições de Proxy de empresa**: Opte por utilizar as definições de proxy na sua organização. As opções são:
+  - **Nenhum**: Não existem definições de proxy estão configuradas.
+  - **Configurar manualmente**: Introduza o **o servidor de Proxy IPaddress** e a respetiva **número de porta**.
+  - **Configurar automaticamente**: Introduza o URL que aponta para um script de configuração automática (PAC) de proxy. Por exemplo, introduza `http://proxy.contoso.com/proxy.pac`.
 
 Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e é apresentado na lista de perfis.
 
 ## <a name="enterprise-profile"></a>Perfil empresarial
 
-- **Tipo de Wi-Fi**: escolha **Empresarial**. 
+- **Tipo de Wi-Fi**: Escolher **Enterprise**. 
 
-- **Nome do Wi-Fi (SSID)**: sigla de Service Set Identifier (identificador do conjunto de serviço). Este valor é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores só veem o **Nome da ligação** configurado por si quando selecionam a ligação.
+- **Nome do Wi-Fi (SSID)**: Identificador do conjunto de abreviação de serviço. Este valor é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores só veem o **Nome da ligação** configurado por si quando selecionam a ligação.
 
-- **Nome da ligação**: introduza um nome simples para esta ligação Wi-Fi. O texto que introduziu é o nome que os utilizadores veem quando procuram as ligações disponíveis no respetivo dispositivo.
+- **Nome da ligação**: Introduza um nome amigável para esta ligação Wi-Fi. O texto que introduziu é o nome que os utilizadores veem quando procuram as ligações disponíveis no respetivo dispositivo.
 
-- **Ligar automaticamente quando estiver ao alcance**: se **Sim**, os dispositivos ligam automaticamente quando estão dentro do alcance desta rede. Se **Não**, os dispositivos não ligam automaticamente.
-  - **Ligar à rede mais preferida, se estiver disponível**: se os dispositivos estiverem ao alcance de uma rede mais preferida, selecione **Sim** para utilizar a mesma. Selecione **Não** para utilizar a rede Wi-Fi neste perfil de configuração.
+- **Ligar automaticamente quando está no intervalo**: Quando **Sim**, dispositivos ligarem automaticamente quando estiverem no intervalo desta rede. Se **Não**, os dispositivos não ligam automaticamente.
+  - **Ligar à rede mais preferida, se disponível**: Se os dispositivos estão no intervalo de uma rede mais preferida, em seguida, escolha **Sim** para utilizar a rede preferencial. Selecione **Não** para utilizar a rede Wi-Fi neste perfil de configuração.
 
     Por exemplo, cria uma rede Wi-Fi **ContosoCorp** e utiliza a **ContosoCorp** neste perfil de configuração. Também tem uma rede Wi-Fi **ContosoGuest** ao alcance. Quando os seus dispositivos empresariais estiverem ao alcance, pretende que os mesmos liguem automaticamente à **ContosoCorp**. Neste cenário, defina a propriedade **Ligar à rede mais preferida, se estiver disponível** para **Não**.
 
-  - **Ligar a esta rede, mesmo quando não estiver a difundir o seu SSID**: selecione **Sim** para que o perfil de configuração se ligue automaticamente à sua rede, mesmo quando esta estiver oculta (ou seja, o respetivo SSID não está a ser difundido publicamente). Selecione **Não** se não quiser que este perfil de configuração se ligue à sua rede oculta.
+  - **Ligar a esta rede, mesmo quando ele não esteja a difundir o respetivo SSID**: Escolher **Sim** para o perfil de configuração ligar automaticamente à sua rede, mesmo quando a rede está oculta (ou seja, respetivo SSID não estiver a difundir publicamente). Selecione **Não** se não quiser que este perfil de configuração se ligue à sua rede oculta.
 
-- **Limite de Ligações com Tráfego Limitado**: um administrador pode escolher a forma como o tráfego da rede é limitado. Com base nesta definição, as aplicações podem ajustar o respetivo comportamento de tráfego de rede. As opções são:
+- **Limitados de limite de ligações**: Um administrador pode escolher como o tráfego da rede é limitado. Com base nesta definição, as aplicações podem ajustar o respetivo comportamento de tráfego de rede. As opções são:
 
-  - **Sem restrição**: predefinição. A ligação não é limitada e não há restrições sobre o tráfego.
-  - **Fixo**: utilize esta opção se a rede estiver configurada com um limite fixo para o tráfego de rede. Uma vez atingido este limite, o acesso à rede será proibido.
-  - **Variável**: utilize esta opção se o tráfego de rede for cobrado por byte.
+  - **Sem restrições**: Predefinição. A ligação não é limitada e não há restrições sobre o tráfego.
+  - **Foi corrigido**: Utilize esta opção se a rede é configurada com um limite fixo para o tráfego de rede. Uma vez atingido este limite, o acesso à rede será proibido.
+  - **Variável**: Utilizar esta opção se o tráfego de rede é costed por byte.
 
-- **Início de sessão único (SSO)**: permite-lhe configurar o início de sessão único (SSO), onde as credenciais são partilhadas para o início de sessão do computador e da rede Wi-Fi. As opções são:
-  - **Desativar**: desativa o comportamento de SSO. O utilizador tem de efetuar a autenticação na rede separadamente.
-  - **Ativar antes de o utilizador iniciar sessão no dispositivo**: utilize o SSO para efetuar a autenticação na rede antes do processo de início de sessão de utilizador.
-  - **Ativar após o utilizador iniciar sessão no dispositivo**: utilize o SSO para efetuar a autenticação na rede imediatamente após a conclusão do processo de início de sessão de utilizador.
-  - **Tempo máximo para autenticar antes do tempo limite**: introduza o número máximo de segundos de espera antes de autenticar na rede, de 1 a 120 segundos.
-  - **Permitir que o Windows pergunte ao utilizador credenciais de autenticação adicional**: selecionar **Sim** permite que o sistema Windows peça ao utilizador credenciais adicionais caso o método de autenticação o exija. Selecione **Não** para ocultar estes pedidos.
+- **Início de sessão único (SSO)**: Permite-lhe configurar o início de sessão único (SSO), onde as credenciais são partilhadas para o computador e início de sessão de rede Wi-Fi. As opções são:
+  - **Desativar**: Desativa o comportamento SSO. O utilizador tem de efetuar a autenticação na rede separadamente.
+  - **Ativar antes de utilizador inicia sessão no dispositivo**: Utilize SSO para autenticar para a rede apenas antes do processo de início de sessão do usuário.
+  - **Ativar após o utilizador inicia sessão no dispositivo**: Utilize SSO para autenticar-se à rede imediatamente após a conclusão do processo de início de sessão do usuário.
+  - **Tempo máximo para autenticar antes do tempo limite**: Introduza o número máximo de segundos a aguardar antes da autenticação para a rede de 1-120 segundos.
+  - **Permitir que o Windows para solicitar ao utilizador as credenciais de autenticação adicional**: Escolher **Sim** permite que o sistema do Windows solicitar ao utilizador credenciais adicionais se o método de autenticação exigir. Selecione **Não** para ocultar estes pedidos.
 
-- **Ativar colocação em cache de chave principal de pares (PMK)**: selecione **Sim** para colocar em cache a PMK utilizada na autenticação. Geralmente, esta colocação em cache permite autenticar a rede de forma a concluir mais rapidamente. Selecione **Não** para forçar o handshake de autenticação sempre que ligar à rede Wi-Fi.
+- **Ativar a colocação em cache pairwise master key (PMK)**: Selecione **Sim** para colocar em cache PMK utilizado na autenticação. Geralmente, esta colocação em cache permite autenticar a rede de forma a concluir mais rapidamente. Selecione **Não** para forçar o handshake de autenticação sempre que ligar à rede Wi-Fi.
 
-  - **Tempo máximo que um PMK é armazenado na cache**: introduza o número de minutos que a chave principal de pares (PMK) está armazenada em cache, de 5 a 1440 minutos.
-  - **Número máximo de PMKs armazenados na cache**: introduza o número de chaves armazenadas em cache, de 1 a 255.
+  - **Tempo máximo de um PMK é armazenado na cache**: Introduza o número de minutos que uma chave mestra pairwise (PMK) é armazenada na cache, de 5-1440 minutos.
+  - **Número máximo de PMKs armazenados na cache**: Introduza o número de chaves armazenadas em cache, a partir de 1 a 255.
 
-- **Ativar pré-autenticação**: a pré-autenticação permite que o perfil autentique todos os pontos de acesso da rede no perfil antes da ligação. Ao deslocar-se entre pontos de acesso, a pré-autenticação volta a ligar o utilizador ou os dispositivos mais rapidamente. Selecione **Sim** para o perfil autenticar todos os pontos de acesso desta rede que estejam ao alcance. Selecione **Não** para exigir que o utilizador ou dispositivo autentique cada ponto de acesso separadamente.
+- **Ativar pré-autenticação**: Pré-autenticação permite que o perfil autenticar a todos os pontos de acesso para a rede no perfil antes de se ligar. Ao deslocar-se entre pontos de acesso, a pré-autenticação volta a ligar o utilizador ou os dispositivos mais rapidamente. Selecione **Sim** para o perfil autenticar todos os pontos de acesso desta rede que estejam ao alcance. Selecione **Não** para exigir que o utilizador ou dispositivo autentique cada ponto de acesso separadamente.
 
-  - **Máximo de tentativas antes de autenticação**: introduza o número de tentativas para pré-autenticar, de 1 a 16.
+  - **Máximo de tentativas de pré-autenticação**: Introduza o número de tentativas para preauthenticate, a partir de 1-16.
 
-- **Tipo de EAP**: selecione o tipo de Protocolo de Autenticação Extensível (EAP) para autenticar as ligações sem fios protegidas. As opções são:
+- **Tipo de EAP**: Escolha o tipo de protocolo de autenticação extensível (EAP) para autenticar as ligações sem fios protegidas. As opções são:
 
   - **EAP-SIM**
   - **EAP-TLS**
@@ -120,34 +121,34 @@ Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e 
 
       - **Fidedignidade do Servidor**  
 
-        **Nomes de servidores de certificados**: utilize com os tipos EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Introduza um ou mais nomes comuns utilizados em certificados emitidos pela sua autoridade de certificação (AC) confiável. Se introduzir estas informações, pode ignorar a caixa de diálogo de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.  
+        **Nomes de servidor de certificado**: Utilizar com o **EAP-TLS**, **EAP-TTLS**, ou **PEAP** tipos de EAP. Introduza um ou mais nomes comuns utilizados em certificados emitidos pela sua autoridade de certificação (AC) confiável. Se introduzir estas informações, pode ignorar a caixa de diálogo de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.  
 
-        **Certificado de raiz para validação do servidor**: utilize com os tipos EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Escolha o perfil de certificado de raiz fidedigna que serve para autenticar a ligação.  
+        **Certificado de raiz para validação do servidor**: Utilizar com o **EAP-TLS**, **EAP-TTLS**, ou **PEAP** tipos de EAP. Escolha o perfil de certificado de raiz fidedigna que serve para autenticar a ligação.  
 
-        **Privacidade de identidade (identidade externa)**: utilize com o tipo EAP **PEAP**. Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.  
+        **Privacidade de identidade (identidade externa)**: Utilizar com o **PEAP** tipo EAP. Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.  
 
       - **Autenticação de Cliente**
 
-        **Certificado de cliente para autenticação de cliente (Certificado de identidade)**: utilize com o tipo EAP **EAP-TLS**. Selecione o perfil de certificado utilizado para autenticar a ligação.
+        **Certificado de cliente para autenticação de cliente (certificado de identidade)**: Utilizar com o **EAP-TLS** tipo EAP. Selecione o perfil de certificado utilizado para autenticar a ligação.
 
-        **Método de autenticação**: utilize com o tipo EAP **EAP-TTLS**. Selecione o método de autenticação da ligação:  
+        **Método de autenticação**: Utilizar com o **EAP-TTLS** tipo EAP. Selecione o método de autenticação da ligação:  
 
-          - **Certificados**: selecione o certificado de cliente, ou seja, o certificado de identidade apresentado ao servidor.
-          - **Nome de Utilizador e Palavra-passe**: introduza o método de autenticação **Método não EAP (Identidade Interna)**. As opções são:
+          - **Certificados**: Selecione o certificado de cliente que é o certificado de identidade apresentado para o servidor.
+          - **Nome de utilizador e palavra-passe**: Introduza um **método não EAP (identidade interna)** método de autenticação. As opções são:
 
             - **Palavra-passe não encriptada (PAP)**
             - **Protocolo CHAP (Challenge Handshake)**
             - **Microsoft CHAP (MS-CHAP)**
             - **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
-        **Privacidade de identidade (identidade externa)**: utilize com o tipo EAP **EAP-TTLS**. Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
+        **Privacidade de identidade (identidade externa)**: Utilizar com o **EAP-TTLS** tipo EAP. Introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
 
-- **Definições de Proxy da empresa**: opte por utilizar as definições de proxy na sua organização. As opções são:
-  - **Nenhuma**: não são configuradas definições de proxy.
-  - **Configurar manualmente**: introduza o **endereço IP do servidor proxy** e o respetivo **Número de porta**.
-  - **Configurar automaticamente**: introduza um URL que aponte para um script de configuração automática do proxy (PAC). Por exemplo, introduza `http://proxy.contoso.com/proxy.pac`.
+- **Definições de Proxy de empresa**: Opte por utilizar as definições de proxy na sua organização. As opções são:
+  - **Nenhum**: Não existem definições de proxy estão configuradas.
+  - **Configurar manualmente**: Introduza o **o servidor de Proxy IPaddress** e a respetiva **número de porta**.
+  - **Configurar automaticamente**: Introduza o URL que aponta para um script de configuração automática (PAC) de proxy. Por exemplo, introduza `http://proxy.contoso.com/proxy.pac`.
 
-- **Forçar o perfil Wi-Fi para que esteja em conformidade com a norma FIPS (Federal Information Processing Standard)**: selecione **Sim** ao validar relativamente à norma FIPS 140-2. Esta norma é necessária para todas as agências governamentais federais dos EUA que utilizem sistemas de segurança baseados em criptografia para proteger informações confidenciais, mas não classificadas, armazenadas digitalmente. Selecione **Não** se não pretender a conformidade com a norma FIPS.
+- **Forçar o perfil de Wi-Fi para estar em conformidade com as Federal Information Processing Standard (FIPS)**: Escolher **Sim** ao validar contra o FIPS 140-2 padrão. Esta norma é necessária para todas as agências governamentais federais dos EUA que utilizem sistemas de segurança baseados em criptografia para proteger informações confidenciais, mas não classificadas, armazenadas digitalmente. Selecione **Não** se não pretender a conformidade com a norma FIPS.
 
 Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e é apresentado na lista de perfis.
 

@@ -15,12 +15,13 @@ ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 039b3dc4d45b340a7d7f8ed0314661a2505a779b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6726a9880d3d7ec34e5e0d13a4342710df4b8d5e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179827"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836954"
 ---
 # <a name="special-migration-considerations"></a>Considerações especiais sobre a migração
 
@@ -35,4 +36,4 @@ Para continuar a utilizar o DEP para gerir os dispositivos no Intune, [configure
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Fase 2: campanha de migração](migration-guide-campaign.md)
+[Fase 2: Campanha de migração](migration-guide-campaign.md)

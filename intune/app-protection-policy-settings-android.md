@@ -16,12 +16,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 08848853a70d0fbdabeb123960f36dc19478e6c2
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9d66fc8698d224d5faeed369dd02b0de919457d1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230057"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845062"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.

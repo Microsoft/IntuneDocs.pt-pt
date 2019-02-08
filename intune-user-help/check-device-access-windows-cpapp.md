@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 162891253c63e785e07ae8c46996f40f19472317
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1b4c1575c72e0563c4c55e262756c9b4aa0eddde
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828972"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848207"
 ---
 # <a name="check-access-from-company-portal-app-for-windows"></a>Verificar o acesso a partir da aplicação Portal da Empresa para Windows
 

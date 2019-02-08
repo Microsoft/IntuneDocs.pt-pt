@@ -15,12 +15,13 @@ ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f32b1b32475d67404dae4325da59fe3f4fda7065
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187454"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840712"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
 
@@ -126,7 +127,7 @@ Neste ponto, também poderá:
 
   2. Altere o valor da definição `availableToOtherTenants` para `true`.
 
-  3. Guarde as suas alterações.
+  3. Guarde as alterações.
 
 ## <a name="intune-permission-scopes"></a>Âmbitos de permissão do Intune
 
@@ -138,7 +139,7 @@ Para saber mais:
 - [Azure AD authentication (Autenticação do Azure AD)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Âmbitos de permissão de aplicações](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Quando concede permissão ao Microsoft Graph, pode especificar os seguintes âmbitos para controlar o acesso às funcionalidades do Intune: a tabela seguinte resume os âmbitos de permissão da API do Intune.  A primeira coluna mostra o nome da funcionalidade, conforme apresentado no portal do Azure, e a segunda coluna fornece o nome do âmbito de permissão.
+Quando concede permissão para o Microsoft Graph, pode especificar os seguintes âmbitos para controlar o acesso às funcionalidades do Intune: A tabela seguinte resume os âmbitos de permissão da API do Intune.  A primeira coluna mostra o nome da funcionalidade, conforme apresentado no portal do Azure, e a segunda coluna fornece o nome do âmbito de permissão.
 
 Definição _Ativar Acesso_ | Nome do âmbito
 :--|:--
@@ -160,7 +161,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
-- Definição **Ativar Acesso**: __leitura de aplicações do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura de aplicações do Microsoft Intune__
 
 - Permite o acesso de leitura às seguintes propriedades e estado da entidade:
     - Aplicações Cliente
@@ -170,7 +171,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- Definição **Ativar Acesso**: __leitura e escrita de aplicações do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura e escrita de aplicações do Microsoft Intune__
 
 - Permite as mesmas operações de __DeviceManagementApps.Read.All__
 
@@ -183,7 +184,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- Definição **Ativar Acesso**: __leitura da configuração e políticas de dispositivos do Microsoft Intune__
+- **Ativar o acesso** definição: __Configuração de dispositivo de leitura Microsoft Intune e políticas__
 
 - Permite o acesso de leitura às seguintes propriedades e estado da entidade:
     - Configuração do Dispositivo
@@ -192,7 +193,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- Definição **Ativar Acesso**: __leitura e escrita da configuração e políticas de dispositivos do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura e escrita e políticas de configuração de dispositivos do Microsoft Intune__
 
 - Permite as mesmas operações de __DeviceManagementConfiguration.Read.All__
 
@@ -203,7 +204,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- Definição **Ativar Acesso**: __Executar ações remotas que afetam o utilizador em dispositivos do Microsoft Intune__
+- **Ativar o acesso** definição: __Executar ações remotas que afetam o utilizador em dispositivos do Microsoft Intune__
 
 - Permite as seguintes ações remotas num dispositivo gerido:
     - Extinguir
@@ -217,7 +218,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- Definição **Ativar Acesso**: __leitura de dispositivos do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura de dispositivos do Microsoft Intune__
 
 - Permite o acesso de leitura às seguintes propriedades e estado da entidade:
     - Dispositivo Gerido
@@ -228,7 +229,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- Definição **Ativar Acesso**: __leitura e escrita de dispositivos do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura e escrita de dispositivos do Microsoft Intune__
 
 - Permite as mesmas operações de __DeviceManagementManagedDevices.Read.All__
 
@@ -243,7 +244,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- Definição **Ativar Acesso**: __leitura de definições de RBAC do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura de definições de RBAC do Microsoft Intune__
 
 - Permite o acesso de leitura às seguintes propriedades e estado da entidade:
     - Atribuições de Funções
@@ -252,7 +253,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- Definição **Ativar Acesso**: __leitura e escrita de definições de RBAC do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura e escrita de definições de RBAC do Microsoft Intune__
 
 - Permite as mesmas operações de __DeviceManagementRBAC.Read.All__
 
@@ -262,7 +263,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
-- Definição **Ativar Acesso**: __leitura da configuração do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura da configuração do Microsoft Intune__
 
 - Permite o acesso de leitura às seguintes propriedades e estado da entidade:
     - Inscrição de Dispositivos
@@ -278,7 +279,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
-- Definição **Ativar Acesso**: __leitura e escrita da configuração do Microsoft Intune__
+- **Ativar o acesso** definição: __Leitura e escrita da configuração do Microsoft Intune__
 
 - Permite as mesmas operações que o DeviceManagementServiceConfig.Read.All
 

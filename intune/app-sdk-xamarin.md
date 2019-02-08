@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b0b2c7fb0f4122f8651b773f4039be43fc5e2c6b
-ms.sourcegitcommit: fddf90a6aa17b09005723653a0c9a520856bb2ea
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89c3607eed426a2385d52647f82edbaaed645c3c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55781492"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837514"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 

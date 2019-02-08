@@ -1,5 +1,5 @@
 ---
-title: O que acontece se anular a inscrição do seu dispositivo Android? | Documentos da Microsoft
+title: O que acontece se anular a inscrição do seu dispositivo Android? | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50f2304ba5fc174707a007b4c4d791cf2db1c656
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147923"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837444"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo Android no Intune?
 

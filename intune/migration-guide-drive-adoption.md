@@ -15,12 +15,13 @@ ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4fad67bcde44246e7673d6ebe12afcdcf14fc8cd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c6e46b1cb3b98385e3011e93bd90a1e8739f1e2f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183813"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847119"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promover a adoção por parte de utilizadores finais de unidades com acesso condicional no Microsoft Intune
 
@@ -55,11 +56,11 @@ Esta é uma abordagem entre muitas. Pode escolher um processo mais simples que d
 
 ## <a name="task-list-for-conditional-access"></a>Lista de tarefas do acesso condicional
 
-### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarefa 1: Decidir como irá implementar o acesso condicional
+### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarefa 1: Decidir como irá implementar o acesso condicional
 
 [Formas comuns de utilizar o acesso condicional](conditional-access-intune-common-ways-use.md).
 
-### <a name="task-2-set-up-intune-conditional-access"></a>Tarefa 2: Configurar o acesso condicional do Intune
+### <a name="task-2-set-up-intune-conditional-access"></a>Tarefa 2: Configurar o acesso condicional do Intune
 
 Escolha uma das seguintes opções:
 

@@ -15,12 +15,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58a57b14387ae6f366c4ac022bdacae7111fc1da
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 86bfda9d7220ea3557bb12a5d6c8ce6ed8cd3932
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690849"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840608"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Definições da linha de base de segurança do Windows para o Intune  
 

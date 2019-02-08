@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa1b3b283fbf4941dd73ed4b5c6525901d41f8e3
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7d8af8b01de3b9782f487e29a9f993ceaf32aac6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169020"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838160"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>O que acontece se instalar a aplicação do Portal da Empresa e inscrever o seu dispositivo Android no Intune?
 

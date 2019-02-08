@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5d29db61191306e60b0c3ac756620e836b56dd6
-ms.sourcegitcommit: 121e550bf686f38cba1a02fa37f7039358b4a446
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f51d229e745a1e545d0853fa9e710a06cbfe6f8b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378288"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851428"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -34,15 +35,15 @@ O SDK da Aplicação do Microsoft Intune para Android permite-lhe incorporar as 
 
 O SDK da Aplicação do Intune é constituído pelos seguintes ficheiros:
 
-* **AAR**: Os componentes do SDK, à exceção dos ficheiros JAR da biblioteca de suporte.
+* **Microsoft.Intune.MAM.SDK.aar**: Os componentes do SDK, à exceção dos ficheiros JAR da biblioteca de suporte.
 * **Microsoft.Intune.MAM.SDK.Suppout.v4.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam o v4 do Android da biblioteca de suporte.
 * **Microsoft.Intune.MAM.SDK.Suppout.v7.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam v7 do Android da biblioteca de suporte.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam o v17 Android da biblioteca de suporte. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: As classes necessárias para ativar o MAM nas aplicações que utilizam o Android suportam classes de bibliotecas no `android.support.text` pacote.
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: Este jar contém stubs para classes de sistemas Android que estão presente apenas nos dispositivos mais recentes, mas que é referenciado por métodos em MAMActivity. Os dispositivos mais recentes ignorarão estas classes de stub. Este jar só é necessário se a sua aplicação fizer reflexão de classes que derivam de MAMActivity. A maioria das aplicações não precisa de o incluir. Se utilizar este jar, tem de ter cuidado para excluir todas as respetivas classes do ProGuard. Estarão todas no pacote de raiz "android"
-* **com.microsoft.Intune.mam.Build.JAR**: Um plug-in do Gradle que [ajuda a integrar o SDK](#build-tooling).
-* **Changelog**: Fornece um registo das alterações feitas em cada versão do SDK.
-* **THIRDPARTYNOTICES. TXT**:  Aviso de atribuição que reconhece código de OSS que será compilado na sua aplicação e/ou de terceiros.
+* **com.microsoft.intune.mam.build.jar**: Um plug-in do Gradle que [ajuda a integrar o SDK](#build-tooling).
+* **CHANGELOG.txt**: Fornece um registo das alterações feitas em cada versão do SDK.
+* **THIRDPARTYNOTICES.TXT**:  Aviso de atribuição que reconhece código de OSS que será compilado na sua aplicação e/ou de terceiros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -834,7 +835,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 ### <a name="important-implementation-notes"></a>Notas de implementação importantes
 
-#### <a name="authentication"></a>Autenticação
+#### <a name="authentication"></a>Authentication
 
 * Quando a aplicação chama `registerAccountForMAM()`, esta pode receber uma chamada de retorno na sua interface `MAMServiceAuthenticationCallback` pouco tempo depois, num thread diferente. Idealmente, a aplicação obteve o seu próprio token da ADAL antes de registar a conta para agilizar a aquisição do **token MAMService**. Se a aplicação devolver um token válido na chamada de retorno, a inscrição prosseguirá e a aplicação obterá o resultado final através de uma notificação.
 

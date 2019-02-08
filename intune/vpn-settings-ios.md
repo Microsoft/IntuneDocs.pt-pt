@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ea127fb72a2e24343185d06e26d883e1183e7c2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ca17fc7b8c19d9668163814ca1070d215eca66f2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185564"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834080"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Configurar definições de VPN em dispositivos iOS no Microsoft Intune
 
@@ -29,18 +30,18 @@ O Microsoft Intune inclui várias definições de VPN que podem ser implementada
 Selecione o tipo de ligação de VPN da seguinte lista de fornecedores:
 
 - **Check Point Capsule VPN**
-- **Cisco Legacy AnyConnect**: aplicável à versão 4.0.5x e versões anteriores da aplicação [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924).
-- **Cisco AnyConnect**: aplicável à versão 4.0.7x e versões posteriores da aplicação [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690).
+- **Cisco Legacy AnyConnect**: Aplicável à [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versão da aplicação 4.0.5x e versões anteriores.
+- **Cisco AnyConnect**: Aplicável à [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versão da aplicação 4.0.7x e versões posteriores.
 - **SonicWall Mobile Connect**
-- **F5 Access Legacy**: aplicável a versão 2.1 e versões anteriores da aplicação F5 Access.
-- **F5 Access**: aplicável a versão 3.0 e versões posteriores da aplicação F5 Access.
-- **Palo Alto Networks GlobalProtect (Legacy)**: aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
-- **Palo Alto Networks GlobalProtect**: aplicável a versão 5.0 e versões posteriores da aplicação Palo Alto Networks GlobalProtect.
+- **F5 Aceder legado**: Aplicável a versão da aplicação de acesso de F5 2.1 e anteriores.
+- **F5 Aceder**: Aplicável a versão da aplicação de acesso de F5 3.0 ou posterior.
+- **GlobalProtect (legada) de redes da Palo Alto**: Aplicável da Palo Alto redes GlobalProtect versão 4.1 e versões anterior da aplicação.
+- **Da Palo Alto redes GlobalProtect**: Aplicável da Palo Alto redes GlobalProtect versão da aplicação 5.0 e posterior.
 - **Pulse Secure**
 - **Cisco (IPSec)**
 - **VPN do Citrix**
 - **Citrix SSO**
-- **Zscaler**: requer que integre o Zscaler Private Access (ZPA) na sua conta do Azure AD. Para obter passos detalhados, veja a [documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: Requer a integrar o acesso privado Zscaler (ZPA) com a sua conta do Azure AD. Para obter passos detalhados, veja a [documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
 - **VPN Personalizada**
 
 > [!NOTE]
@@ -50,25 +51,25 @@ Selecione o tipo de ligação de VPN da seguinte lista de fornecedores:
 
 As definições apresentadas na seguinte lista são determinadas pelo tipo de ligação VPN que escolher.  
 
-- **Nome da ligação**: os utilizadores finais verão este nome quando procurarem uma lista de ligações VPN disponíveis no dispositivo.
-- **Nome de domínio personalizado** (apenas Zscaler): pré-preencha o campo de início de sessão da aplicação Zscaler com o domínio ao qual os seus utilizadores pertencem. Por exemplo, se um nome de utilizador for `Joe@contoso.net`, o domínio `contoso.net` será apresentado estaticamente no campo ao abrir a aplicação. Se não introduzir um nome de domínio, será utilizada a parte do domínio do UPN no Azure Active Directory (AD).
-- **Endereço IP ou FQDN**: o endereço IP ou nome de domínio completamente qualificado (FQDN) do servidor VPN ao qual os dispositivos são ligados. Por exemplo, introduza: `192.168.1.1` ou `vpn.contoso.com`.
-- **Nome da cloud da organização** (apenas Zscaler): introduza o nome da cloud em que a sua organização está aprovisionada. O URL que utiliza para iniciar sessão no Zscaler contém o nome.  
-- **Método de autenticação**: selecione como os dispositivos serão autenticados no servidor VPN. 
-  - **Certificados**: em **Certificado de autenticação**, selecione um perfil de certificado SCEP ou PKCS existente para autenticar a ligação. O tópico [Configurar certificados](certificates-configure.md) fornece algumas orientações sobre perfis de certificado.
-  - **Nome de utilizador e palavra-passe**: os utilizadores finais têm de introduzir um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.  
+- **Nome da ligação**: Os utilizadores finais verão este nome quando procurarem uma lista de ligações VPN disponíveis no dispositivo.
+- **Nome de domínio personalizado** (apenas Zscaler): Pré-povoar início de sessão no campo a aplicação de Zscaler com o domínio que os utilizadores pertencem a. Por exemplo, se um nome de utilizador for `Joe@contoso.net`, o domínio `contoso.net` será apresentado estaticamente no campo ao abrir a aplicação. Se não introduzir um nome de domínio, será utilizada a parte do domínio do UPN no Azure Active Directory (AD).
+- **IP ou FQDN do endereço**: O endereço IP ou nome de domínio completamente qualificado (FQDN) do servidor VPN ao qual os dispositivos ligados com. Por exemplo, introduza: `192.168.1.1` ou `vpn.contoso.com`.
+- **O nome da organização na cloud** (apenas Zscaler): Introduza o nome de nuvem em que a sua organização está aprovisionada. O URL que utiliza para iniciar sessão no Zscaler contém o nome.  
+- **Método de autenticação**: Escolha como os dispositivos serão autenticados no servidor VPN. 
+  - **Certificados**: Sob **certificado de autenticação**, selecione um existente SCEP ou PKCS de perfil para autenticar a ligação de certificado. O tópico [Configurar certificados](certificates-configure.md) fornece algumas orientações sobre perfis de certificado.
+  - **Nome de utilizador e palavra-passe**: Os utilizadores finais têm de introduzir um nome de utilizador e palavra-passe para iniciar sessão no servidor VPN.  
 
     > [!NOTE]
     > Se o nome de utilizador e a palavra-passe forem utilizados como o método de autenticação do Cisco IPsec VPN, os primeiros têm de enviar o parâmetro SharedSecret através de um perfil personalizado do Apple Configurator.
 
-- **URLs excluídos** (apenas Zscaler): quando estiver ligado à VPN do Zscaler, os URLs apresentados estarão acessíveis fora da cloud do Zscaler. 
+- **Excluídos URLs** (apenas Zscaler): Quando estiver ligado à Zscaler VPN, os URLs listados estão acessíveis fora da nuvem Zscaler. 
 
-- **Dividir túnel**: **ative** ou **desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
+- **Divisão do túnel**: **Ativar** ou **desativar** para permitir que os dispositivos decidam qual a ligação a utilizar, consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
 
-- **Identificador VPN** (VPN personalizada, Zscaler e Citrix): um identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor VPN.
-  - **Introduzir pares chave/valor para os atributos de VPN personalizados da sua organização**: adicione ou importe **Chaves** e **Valores** para personalizar a sua ligação VPN. Lembre-se de que estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
+- **Identificador VPN** (VPN personalizada, Zscaler e Citrix): Um identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor VPN.
+  - **Introduza pares chave/valor para atributos de VPN personalizados da sua organização**: Adicione ou importe **chaves** e **valores** que personalizar a ligação VPN. Lembre-se de que estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
 
-- **Ativar o controlo de acesso de rede (NAC)** (apenas no Citrix SSO): ao escolher **concordo**, o dispositivo ID está incluído no perfil da VPN. Este ID pode ser utilizado para autenticação da VPN para permitir ou impedir o acesso à rede.
+- **Ativar o controlo de acesso de rede (NAC)** (apenas no Citrix SSO): Quando escolhe **concordo**, o dispositivo ID está incluído no perfil da VPN. Este ID pode ser utilizado para autenticação da VPN para permitir ou impedir o acesso à rede.
 
   **Ao utilizar o Citrix SSO com Gateway**, não se esqueça de:
 
@@ -85,19 +86,19 @@ As definições apresentadas na seguinte lista são determinadas pelo tipo de li
 
 ## <a name="automatic-vpn-settings"></a>Definições Automáticas de VPN
 
-- **VPN por aplicação**: ativa a VPN por aplicação. Permite que a ligação VPN seja acionada automaticamente quando determinadas aplicações forem abertas. Também associa as aplicações com este perfil VPN. Para obter mais informações, veja as [instruções para configurar a VPN por aplicação para iOS](vpn-setting-configure-per-app.md).
-  - **Tipo de Fornecedor**: disponível apenas para o Pulse Secure e a VPN Personalizada.
+- **VPN por aplicação**: Permite que a VPN por aplicação. Permite que a ligação VPN seja acionada automaticamente quando determinadas aplicações forem abertas. Também associa as aplicações com este perfil VPN. Para obter mais informações, veja as [instruções para configurar a VPN por aplicação para iOS](vpn-setting-configure-per-app.md).
+  - **Tipo de fornecedor**: Apenas disponível para Pulse Secure e VPN personalizada.
   - Ao utilizar perfis **VPN por aplicação** iOS com o Pulse Secure ou uma VPN Personalizada, selecione o túnel de camada de aplicação (proxy-de-aplicação) ou o túnel de nível do pacote (pacote-túnel). Defina o valor **ProviderType** para **proxy-da-aplicação**, para o túnel de camada de aplicação ou para **pacote-túnel**, para o túnel de camada de pacote. Se não tiver a certeza sobre o valor a utilizar, consulte a documentação do seu fornecedor de VPN.
-  - **URLs do Safari que irão acionar esta VPN**: adicione um ou mais URLs de sites. Quando estes URLs são visitados através do browser Safari no dispositivo, a ligação VPN é estabelecida automaticamente.
+  - **URLs do Safari que irão acionar esta VPN**: Adicione um ou mais URLs de sites. Quando estes URLs são visitados através do browser Safari no dispositivo, a ligação VPN é estabelecida automaticamente.
 
-- **VPN a pedido**: configure regras condicionais que controlam quando a ligação VPN é iniciada. Por exemplo, crie uma condição na qual a ligação VPN só é utilizada quando um dispositivo não estiver ligado a uma rede Wi-Fi da sua empresa. Em alternativa, crie uma condição na qual, se um dispositivo não puder aceder a um domínio de pesquisa DNS que introduzir, a ligação VPN não é iniciada.
+- **VPN a pedido**: Configure regras condicionais que controlam quando a ligação VPN é iniciada. Por exemplo, crie uma condição na qual a ligação VPN só é utilizada quando um dispositivo não estiver ligado a uma rede Wi-Fi da sua empresa. Em alternativa, crie uma condição na qual, se um dispositivo não puder aceder a um domínio de pesquisa DNS que introduzir, a ligação VPN não é iniciada.
 
-  - **SSIDs ou domínios de pesquisa DNS**: selecione se esta condição utiliza **SSIDs** de rede sem fios ou **domínios de pesquisa DNS**. Selecione **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
-  - **Pesquisa de cadeia de URL**: opcional. Introduza um URL para a regra utilizar como um teste. Se o dispositivo que contém este perfil aceder a este URL sem redirecionamento, a ligação VPN será iniciada. Além disso, o dispositivo será ligado ao URL de destino. O utilizador não vê o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
-  - **Ação de domínio**: selecione um dos seguintes itens:
+  - **Domínios de pesquisa de SSIDs ou DNS**: Selecione se esta condição utiliza a rede sem fios **SSIDs**, ou **domínios de pesquisa DNS**. Selecione **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
+  - **Pesquisa de cadeia de URL**: Opcional. Introduza um URL para a regra utilizar como um teste. Se o dispositivo que contém este perfil aceder a este URL sem redirecionamento, a ligação VPN será iniciada. Além disso, o dispositivo será ligado ao URL de destino. O utilizador não vê o site de pesquisa de cadeia de URL. Um exemplo de uma pesquisa de cadeia de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes de ligar a VPN. Outra possibilidade é a de o URL testar a capacidade de a VPN estabelecer ligação a um site, antes de ligar o dispositivo ao URL de destino através da VPN.
+  - **Ação de domínio**: Escolha um dos seguintes itens:
     - Ligar se necessário
     - Nunca ligar
-  - **Ação**: selecione um dos seguintes itens:
+  - **Ação**: Escolha um dos seguintes itens:
     - Ligar
     - Avaliar a ligação
     - Ignorar
@@ -107,9 +108,9 @@ As definições apresentadas na seguinte lista são determinadas pelo tipo de li
 
 Se estiver a utilizar um proxy, configure as definições seguintes. As definições de proxy não estão disponíveis para ligações VPN do Zscaler.  
 
-- **Script de configuração automática**: utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, `http://proxy.contoso.com`) que inclui o ficheiro de configuração.
-- **Endereço**: introduza o endereço IP do nome do anfitrião totalmente qualificado do servidor proxy.
-- **Número de porta**: introduza o número de porta associado ao servidor proxy.
+- **Script de configuração automática**: Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy** (por exemplo, `http://proxy.contoso.com`) que inclui o ficheiro de configuração.
+- **Endereço**: Introduza o endereço IP do nome de anfitrião totalmente qualificado do servidor proxy.
+- **Número de porta**: Introduza o número de porta associado ao servidor proxy.
 
 ## <a name="next-step"></a>Passo seguinte
 [Criar perfis VPN no Intune](vpn-settings-configure.md)  

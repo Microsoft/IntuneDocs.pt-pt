@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70e8a5e9ad973f5d2c94a146a9f263f461d0ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36793467ce8d26dbb55f38d22687243a65f912d8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180566"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840156"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para os seus dispositivos no Microsoft Intune
 
@@ -68,7 +69,7 @@ Certifique-se de que cria um perfil separado para cada plataforma de dispositivo
 - Se planear utilizar os perfis SCEP ou PKCS, transfira e configure o Microsoft Intune Certificate Connector
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>Passo 1: configurar a sua infraestrutura de certificados
+## <a name="step-1-configure-your-certificate-infrastructure"></a>Passo 1: Configurar a infraestrutura de certificados
 
 Veja um dos seguintes tópicos para ajudar a configurar a infraestrutura para cada tipo de perfil de certificado:
 
@@ -76,13 +77,13 @@ Veja um dos seguintes tópicos para ajudar a configurar a infraestrutura para ca
 - [Configurar e gerir certificados PKCS com o Intune](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Passo 2: exportar o seu certificado da AC de raiz confiável
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Passo 2: Exportar o certificado de AC de raiz fidedigna
 
 Exporte o certificado de Autoridades de Certificação (AC) de Raiz Fidedigna como um certificado público (.cer) a partir da AC emissora ou de qualquer dispositivo que confie na sua AC emissora. Não exporte a chave privada (.pfx).
 
 Importará este certificado quando configurar um perfil de certificado fidedigno.
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>Passo 3 – Criar perfis de certificado fidedigno
+## <a name="step-3-create-trusted-certificate-profiles"></a>Passo 3: Criar perfis de certificado fidedigno
 Crie um perfil de certificado fidedigno para poder criar um perfil de certificado SCEP ou PKCS. Precisa de um perfil de certificado fidedigno e de um perfil SCEP ou PKCS para cada plataforma de dispositivo. Os passos para criar certificados fidedignos são semelhantes para todas as plataformas de dispositivos.
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
@@ -113,7 +114,7 @@ O perfil é criado e apresentado na lista. Para atribuir este perfil a grupos, v
 
 Os dispositivos Android podem apresentar uma mensagem a indicar que uma aplicação de terceiros instalou um certificado fidedigno.
 
-## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Passo 4: Criar perfis de certificado SCEP ou PKCS
+## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Passo 4: Criar perfis de certificado SCEP ou PKCS
 
 Veja um dos seguintes tópicos para ajudar a configurar e a atribuir cada tipo de perfil de certificado:
 

@@ -15,14 +15,15 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5b58a92ed59d4485f06370672d8c335ff2fffcc7
-ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 114a5c09ed99b5debe9a13692b8a5400c04382df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54325062"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833723"
 ---
-# <a name="data-jamf-pro-sends-to-intune"></a>Dados Jamf Pro envia para o Intune
+# <a name="data-jamf-pro-sends-to-intune"></a>Dados que o Jamf Pro envia para o Intune
 
 Quando utiliza [Jamf Pro](https://www.jamf.com) para gerir os seus Macs os utilizadores finais com o Intune, o Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos. O Jamf Pro reporta as seguintes informações ao Intune:
 

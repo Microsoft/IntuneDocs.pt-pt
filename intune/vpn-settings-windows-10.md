@@ -14,12 +14,13 @@ ms.suite: ems
 search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 9c41fc39b5d2dc644fae91d6b02171681453ab1c
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e38d5e68e79facfd270de64c79708b74aa460189
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203404"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838194"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Definições de dispositivos Windows 10 e Windows Holographic para adicionar conexões VPN com o Intune
 
@@ -74,7 +75,7 @@ Consoante as definições que escolher, nem todos os valores são configuráveis
     - **Método de autenticação**: Selecione como pretende que os utilizadores sejam autenticados no servidor VPN. A utilização de **certificados** disponibiliza funcionalidades avançadas, como a experiência sem contacto, VPN a pedido e VPN por aplicação.
     - **Lembre-se as credenciais sempre que iniciarem sessão**: Opte por colocar em cache as credenciais de autenticação.
     - **XML personalizado**: Introduza quaisquer comandos XML personalizados que configuram a ligação VPN.
-    - **Xml de EAP**: Introduza quaisquer comandos XML de EAP que configuram a ligação VPN
+    - **EAP Xml**: Introduza quaisquer comandos XML de EAP que configuram a ligação VPN
 
 #### <a name="pulse-secure-example"></a>Exemplo de Pulse Secure
 

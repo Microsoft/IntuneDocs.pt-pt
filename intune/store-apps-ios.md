@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5f1423b0f2f216f65026d2b1a7bf52dda39c9f88
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd4562b001eaefc8e10512a42b08d49385f75808
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642511"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834114"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -55,7 +56,7 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 12. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: Introduza o nome da aplicação porque está a ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
+    - **Publisher**: Introduza o nome do publicador da aplicação.
     - **URL da Appstore**: Escreva o URL da aplicação Store da aplicação que pretende criar.
     - **Sistema operativo mínimo**: Na lista, selecione a versão mais antiga do sistema operativo no qual a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
     - **Tipo de dispositivo aplicável**: Na lista, selecione os dispositivos que são utilizados pela aplicação.

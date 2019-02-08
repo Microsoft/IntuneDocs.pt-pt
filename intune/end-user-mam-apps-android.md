@@ -15,12 +15,13 @@ ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06115170300909d1683f44e565161d189f345ab8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ebbbceff37bea17767ea3d0ff2ec6008030b8ef
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188056"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836018"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações
 
@@ -67,10 +68,10 @@ Transfira esta aplicação a partir da Google Play store.
 
 São suportados os seguintes tipos de ficheiro:
 
-* **Áudio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ melhorado), AAC ELD (AAC de atraso lento melhorado), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Ogg Vorbis, PCM/WAVE
+* **Áudio:** AAC LC, HE-AACv1 (AAC + melhorado), HE-AACv2 (AAC + melhorado), AAC ELD (AAC de atraso), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Ogg Vorbis, PCM/WAVE
 * **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8
 * **Imagem:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg
-* **:** PDF, PPDF
+* **Documentos:** PDF, PPDF
 
 
 |**pfile**|

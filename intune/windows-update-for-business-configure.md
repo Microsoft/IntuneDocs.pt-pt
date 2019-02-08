@@ -13,12 +13,13 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 184f70aefbdc90c301ef2f97c5a3abb5ac49a4a8
-ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 977fe53ab439b66c919b783101c0d163d77e6b29
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737490"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834815"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 

@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 157328b1fdf774f46d69e619ec0e44e32cbba101
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179835"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834294"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação de implementação
 
@@ -71,7 +72,7 @@ Por exemplo, as comunicações da fase inicial do projeto Intune podem destinar-
 
   | **Plano de comunicação** | **Julho** | **Agosto** | **Setembro** | **Outubro** |
 |:---:|:---:|:---:|:---:|:---:|
-| Fase 1  | Todas |  |  |  |                                                         
+| Fase 1  | Todos |  |  |  |                                                         
 | Reunião inicial | Primeira semana |  |  |  |                                                         
 | Fase 2 | TI | Departamento de Vendas e Marketing | Revenda | RH, Finanças e Executivos |
 | Primeiro E-mail Relativo à Pré-inscrição | Primeira semana | Primeira semana | Primeira semana | Primeira semana |

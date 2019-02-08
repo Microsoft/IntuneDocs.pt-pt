@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c21619c5c1a84e5d2679709b6153d3a85cdb6497
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181875"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846388"
 ---
-# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial – Proteger o e-mail do Exchange Online em dispositivos geridos
+# <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos geridos
 Saiba como utilizar políticas de conformidade de dispositivos com acesso condicional para garantir que os dispositivos iOS podem aceder ao e-mail do Exchange Online apenas se forem geridos pelo Intune e através de uma aplicação de e-mail aprovada. 
 
 Neste tutorial, ficará a saber como: 
@@ -37,7 +38,7 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
   - Precisará de um inquilino de teste com as seguintes subscrições para este tutorial:
     - Azure Active Directory Premium ([avaliação gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Subscrição do Office 365 Empresas com o Exchange ([avaliação gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Antes de começar, crie um perfil de dispositivos de teste para dispositivos iOS ao seguir os passos em [Início Rápido: criar um perfil de dispositivo de e-mail para iOS](quickstart-email-profile.md).
+  - Antes de começar, crie um perfil de dispositivos de teste para dispositivos iOS ao seguir os passos no [início rápido: Criar um perfil de e-mail de dispositivos para iOS](quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
@@ -82,9 +83,9 @@ Agora, vamos criar uma política de acesso condicional que exige que todas as pl
 4.  Em **Atribuições**, selecione **Aplicações na Cloud**. Uma vez que queremos proteger o e-mail do Office 365 Exchange Online, vamos selecioná-lo ao seguir estes passos:
      
     1. No separador **Incluir**, escolha **Selecionar aplicações**.
-    2. Clique em **Selecionar**. 
+    2. Escolha **Selecionar**. 
     3. Na lista de aplicações, selecione **Office 365 Exchange Online** e, em seguida, escolha **Selecionar**. 
-    4. Selecione **Concluído**.
+    4. Selecione **Done** (Concluído).
   
     ![Selecionar a aplicação Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
@@ -110,7 +111,7 @@ Agora, vamos criar uma política de acesso condicional que exige que todas as pl
     2. Selecione **Pedir que o dispositivo seja marcado como conforme**. 
     3. Selecione **Requer aplicação aprovada do cliente**.
     4. Em **Para vários controlos**, selecione **Exigir todos os controlos selecionados**. Esta definição garantirá que ambos os requisitos que selecionou são impostos quando um dispositivo tentar aceder ao e-mail.
-    5. Clique em **Selecionar**.
+    5. Escolha **Selecionar**.
      
     ![Selecionar a aplicação Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 

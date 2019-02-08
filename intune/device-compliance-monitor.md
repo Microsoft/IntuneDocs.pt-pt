@@ -16,12 +16,13 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b6c86b8f365f5ac3e65e91725e9fcd29ccd9ef58
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 534e8316e584259a818130ea9f83c88b44b67fee
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187028"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848088"
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Monitorizar a conformidade do dispositivo no Intune
 
@@ -34,9 +35,9 @@ Pode clicar interativamente nas tabelas para desagregar os detalhes. Se tiver m�
 
 A vista resumida do relatório de conformidade do dispositivo lista as informações agregadas sobre o número de dispositivos que estão a enviar relatórios num dos seguintes estados:
 
-- **Conforme**: o dispositivo foi avaliado recentemente e está em conformidade com as definições de conformidade do perfil que especificou.
-- **Não conforme**: o dispositivo foi avaliado e determinado como não conforme.  Se existia um período de tolerância especificado no perfil, o período de tolerância expirou, o que coloca o dispositivo num estado de não conforme.
-- **Período de tolerância**: o dispositivo foi avaliado e determinado como não conforme. No entanto, o período de tolerância ainda se aplica antes de o dispositivo ser assinalado como não conforme.
+- **Em conformidade**: O dispositivo foi avaliado recentemente e está em conformidade com as definições de perfil de conformidade que especificou.
+- **Em não conformidades**: O dispositivo foi avaliado e determinado como não conforme.  Se existia um período de tolerância especificado no perfil, o período de tolerância expirou, o que coloca o dispositivo num estado de não conforme.
+- **Período de tolerância**: Dispositivo foi avaliado e determinado como não conforme. No entanto, o período de tolerância ainda se aplica antes de o dispositivo ser assinalado como não conforme.
 
 Pode desagregar cada secção para ver mais detalhes sobre os utilizadores e dispositivos individuais.
 

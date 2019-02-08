@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bc2ee6c8281e035cbbb6cf41b7f41c208d3c04c8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112930"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835202"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
@@ -53,7 +54,7 @@ Os utilizadores de dispositivos geridos podem recolher registos de inscrição e
 Estes problemas podem ocorrer em todas as plataformas de dispositivos.
 
 ### <a name="device-cap-reached"></a>Máximo de dispositivos atingido
-**Problema:** um utilizador recebe um erro durante a inscrição (por exemplo, **Portal da Empresa Temporariamente Indisponível**) e o DMPdownloader.log no Configuration Manager contém o erro **DeviceCapReached**.
+**Problema:** Um utilizador recebe um erro durante a inscrição (como **Portal da empresa temporariamente indisponível**) e o dmpdownloader. log no Configuration Manager contém o erro **DeviceCapReached**.
 
 **Resolução:**
 
@@ -78,7 +79,7 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 > A inscrição de uma conta de utilizador adicionada à conta Gestores de Inscrição de Dispositivos não pode ser concluída quando a política de Acesso Condicional é imposta para o início de sessão desse utilizador específico.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Portal da Empresa Temporariamente Indisponível
-**Problema:** os utilizadores recebem um erro **Portal da Empresa Temporariamente Indisponível** no dispositivo.
+**Problema:** Os utilizadores recebem um **Portal da empresa temporariamente indisponível** erro no dispositivo.
 
 **Resolução:**
 
@@ -93,7 +94,7 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 5.  Se o utilizador iniciar sessão com êxito, um dispositivo iOS pedirá para instalar a aplicação Portal da Empresa do Intune e inscrever. Num dispositivo Android, terá de instalar manualmente a aplicação Portal da Empresa do Intune, podendo a seguir repetir a inscrição.
 
 ### <a name="mdm-authority-not-defined"></a>Autoridade de MDM não definida
-**Problema:** Um utilizador recebe um erro **Autoridade de MDM não definida**.
+**Problema:** Um utilizador recebe uma **autoridade MDM não definida** erro.
 
 **Resolução:**
 
@@ -128,15 +129,15 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
         Depois de devolvidos os resultados, procure o ID clouduser.  Se não for encontrado nenhum ID, o utilizador não está licenciado para utilizar o Intune.
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Não é possível criar a política ou inscrever dispositivos se o nome da empresa incluir carateres especiais
-**Problema:** não é possível criar a política ou inscrever dispositivos.
+**Problema:** Não é possível criar a política ou inscrever dispositivos.
 
-**Resolução:** no [centro de administração do Office 365](https://portal.office.com/), remova os carateres especiais do nome da empresa e guarde as informações da empresa.
+**Resolução:** Na [Centro de administração do Office 365](https://portal.office.com/), remova os carateres especiais do nome da empresa e guardar as informações da empresa.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Não é possível iniciar sessão ou inscrever dispositivos quando tem vários domínios verificados
-**Problema:** este problema pode ocorrer quando adicionar um segundo domínio verificado ao seu AD FS. Os utilizadores com o sufixo de nome principal de utilizador (UPN) do segundo domínio podem não conseguir iniciar sessão nos portais ou inscrever dispositivos.
+**Problema:** Esse problema pode ocorrer quando adiciona um segundo domínio verificado ao seu AD FS. Os utilizadores com o sufixo de nome principal de utilizador (UPN) do segundo domínio podem não conseguir iniciar sessão nos portais ou inscrever dispositivos.
 
 
-<strong>Resolução:</strong> os Clientes do Microsoft Office 365 terão de implementar uma instância separada do Serviço de Federação do AD FS 2.0 para cada sufixo se:
+<strong>Resolução:</strong> Os clientes do Microsoft Office 365 são necessários para implementar uma instância separada do AD FS 2.0 serviço de Federação para cada sufixo se eles:
 - utilizarem o início de sessão único (SSO) através do AD FS 2.0 e
 - tiverem vários domínios de nível superior para sufixos de UPN dos utilizadores dentro da respetiva organização (por exemplo, @contoso.com ou @fabrikam.com).
 
@@ -157,7 +158,7 @@ A seguinte tabela indica os erros que os utilizadores finais poderão ver ao ins
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Os dispositivos não conseguem registar com o serviço Intune e são apresentados como em "Mau estado de funcionamento" na consola de administração do Intune
-**Problema:** alguns dispositivos Samsung a executar as versões Android 4.4.x e 5.x poderão deixar de fazer o registo com o serviço do Intune. Se os dispositivos não fizerem o registo:
+**Problema:** Alguns dispositivos Samsung que executem versões Android 4.4.x e 5.x poderão deixar de entrada no serviço Intune. Se os dispositivos não fizerem o registo:
 
 - Não podem receber políticas, aplicações e comandos remotos a partir do serviço do Intune.
 - Mostram o Estado de Gestão **Mau estado de funcionamento** na consola do administrador.
@@ -206,7 +207,7 @@ Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam
 
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
-**Problema:** um utilizador recebe o erro **Falha na instalação do perfil** num dispositivo Android.
+**Problema:** Um utilizador recebe uma **falha na instalação do perfil** erro num dispositivo Android.
 
 **Resolução:**
 
@@ -220,7 +221,7 @@ Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados do Android
 
-**Problema**: os utilizadores recebem a mensagem seguinte no dispositivo: *Não pode iniciar sessão porque está em falta um certificado obrigatório no seu dispositivo.*
+**Problema**: Os utilizadores recebem a mensagem seguinte no respetivo dispositivo: *Não consigo iniciar sessão porque o dispositivo está em falta um certificado necessário.*
 
 **Resolução 1**:
 
@@ -271,7 +272,7 @@ A tabela seguinte indica os erros que os utilizadores finais poderão ver ao ins
 |AccountNotOnboarded|Existe um problema com o certificado que permite que o dispositivo móvel comunique com a rede da sua empresa.<br /><br />|O Serviço Apple Push Notification (APNs) disponibiliza um canal para entrar em contacto com os dispositivos iOS inscritos. A inscrição irá falhar e será apresentada esta mensagem se:<ul><li>Os passos para obter um certificado do APNs não foram concluídos ou</li><li>O certificado do APNs tiver expirado.</li></ul>Para obter mais informações, reveja [Configurar a gestão de iOS e Mac com o Microsoft Intune](ios-enroll.md).|
 |DeviceTypeNotSupported|O utilizador poderá ter tentado inscrever-se através de um dispositivo não iOS. O tipo de dispositivo móvel que está a tentar inscrever não é suportado.<br /><br />Confirme que o dispositivo está a executar a versão 8.0 do iOS ou posterior.<br /><br />|Certifique-se de que o dispositivo do utilizador está a executar a versão 8.0 do iOS ou posterior.|
 |UserLicenseTypeInvalid|O dispositivo não pode ser inscrito porque a sua conta de utilizador ainda não é um membro de um grupo de utilizadores necessário.<br /><br />|Para poderem inscrever os dispositivos, os utilizadores têm de ser membros do grupo de utilizadores correto. Esta mensagem indica que têm o tipo de licença errado para a autoridade de gestão de dispositivos móveis. Por exemplo, verão este erro se as seguintes situações se verificarem:<ol><li>O Intune foi definido como a autoridade de gestão de dispositivos móveis</li><li>Estão a utilizar uma licença do System Center 2012 R2 Configuration Manager.</li></ol>Reveja os seguintes artigos para obter mais informações:<br /><br />Veja [Configurar a gestão de iOS e Mac com o Microsoft Intune](ios-enroll.md) e as informações sobre como configurar utilizadores em [Sincronizar o Active Directory e adicionar utilizadores ao Intune](users-add.md) e [Organizar utilizadores e dispositivos](groups-add.md).|
-|MdmAuthorityNotDefined|A autoridade de gestão de dispositivos móveis não foi definida.<br /><br />|A autoridade de gestão de dispositivos móveis não foi definida no Intune.<br /><br />Reveja o primeiro item na secção "Passo 6: inscrever dispositivos móveis e instalar uma aplicação", em [Começar com uma versão de avaliação de 30 dias do Microsoft Intune](free-trial-sign-up.md).|
+|MdmAuthorityNotDefined|A autoridade de gestão de dispositivos móveis não foi definida.<br /><br />|A autoridade de gestão de dispositivos móveis não foi definida no Intune.<br /><br />Reveja #1 o primeiro item no "passo 6: Inscrever dispositivos móveis e instalar aplicações"secção [começar com uma avaliação de 30 dias do Microsoft Intune](free-trial-sign-up.md).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Os dispositivos estão inativos ou a consola de administração não consegue comunicar com os mesmos
 **Problema:** os dispositivos iOS não estão a dar entrada no serviço do Intune. Os dispositivos têm de dar entrada no serviço periodicamente para manter o acesso aos recursos empresariais protegidos. Se os dispositivos não derem entrada:
@@ -280,7 +281,7 @@ A tabela seguinte indica os erros que os utilizadores finais poderão ver ao ins
 - Mostram o Estado de Gestão **Mau estado de funcionamento** na consola do administrador.
 - Os utilizadores protegidos por políticas de acesso condicional podem perder o acesso a recursos empresariais.
 
-**Resolução:** partilhe as seguintes resoluções com os seus utilizadores finais para ajudá-los a recuperar o acesso aos recursos empresariais.
+**Resolução:** Partilhe as seguintes resoluções com os utilizadores finais para ajudá-los a recuperar o acesso aos recursos empresariais.
 
 Quando os utilizadores iniciam a aplicação Portal da Empresa para iOS, esta saberá se o dispositivo tiver perdido o contacto com o Intune. Se a aplicação detetar que não existe contacto, tentará automaticamente sincronizar com o Intune para voltar a ligar-se (os utilizadores verão a notificação inline **A tentar sincronizar…** ).
 
@@ -315,7 +316,7 @@ Para obter mais informações, veja o artigo [Práticas recomendadas para proteg
 
 
 ### <a name="profile-installation-failed"></a>Falha na instalação do perfil
-**Problema:** um utilizador recebe o erro **Falha na instalação do perfil** num dispositivo iOS.
+**Problema:** Um utilizador recebe uma **falha na instalação do perfil** erro num dispositivo iOS.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Passos de resolução de problemas para a falha na instalação do perfil
 
@@ -330,14 +331,14 @@ Para obter mais informações, veja o artigo [Práticas recomendadas para proteg
 5.  Confirme que o Safari para iOS é o browser predefinido e que os cookies estão ativados.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Os dispositivos iOS inscritos não aparecem na consola ao utilizar o System Center Configuration Manager com o Intune
-**Problema:** o utilizador inscreve o dispositivo iOS, mas o mesmo não é apresentado na consola de administração do Configuration Manager. O dispositivo não indica que foi inscrito. Causas possíveis:
+**Problema:** Utilizador inscreve o dispositivo iOS, mas não aparecer na consola de administração do Configuration Manager. O dispositivo não indica que foi inscrito. Causas possíveis:
 
 - O Conector do Microsoft Intune no seu site do Configuration Manager não está a comunicar com o serviço do Intune.
 - O componente Gestão de Dados de Deteção (ddm) ou o componente Gestor de Estado (statmgr) não está a processar as mensagens do serviço Intune.
 - Pode ter transferido o certificado MDM a partir de uma conta e utilizado o certificado noutra conta.
 
 
-**Resolução:** verificar se existem possíveis erros nos seguintes ficheiros de registo:
+**Resolução:** Reveja os seguintes ficheiros de registo para possíveis erros:
 
 - dmpdownloader.log
 - ddm.log
@@ -348,7 +349,7 @@ Em breve, serão adicionados alguns exemplos sobre o que deve procurar nestes fi
 
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>O dispositivo iOS do utilizador está bloqueado num ecrã de inscrição há mais de 10 minutos
 
-**Problema**: um dispositivo de inscrição pode ficar bloqueado em qualquer um de dois ecrãs:
+**Problema**: Um dispositivo de inscrição pode ficar bloqueado em qualquer um dos dois ecrãs:
 - A aguardar uma configuração final da "Microsoft"
 - Aplicação de Acesso Guiado indisponível. Contacte o administrador.
 
@@ -364,7 +365,7 @@ Este problema pode acontecer se:
 | Instalar o Portal da Empresa com VPP | Utilizar token: endereço do token |
 | Executar o Portal da Empresa no Modo de Aplicação Única até à autenticação | Sim |
 
-**Resolução**: para corrigir o problema, tem de:
+**Resolução**: Para corrigir o problema, tem de:
 1. Determinar se existe um problema com o token VPP e corrigi-lo.
 2. Identificar quais os dispositivos que estão bloqueados.
 3. Apagar os dispositivos afetados.
@@ -398,14 +399,14 @@ Depois de apagar os dispositivos bloqueados, pode indicar aos utilizadores que d
 ### <a name="macos-enrollment-errors"></a>Erros de inscrição do macOS
 **Mensagem de erro 1:** *Parece que está a utilizar uma máquina virtual. Certifique-se de que configurou totalmente a sua máquina virtual, incluindo o número de série e o modelo de hardware. Se não se tratar de uma máquina virtual, contacte o suporte.*  
 
-**Mensagem de erro 2:** *Estamos a ter problemas ao gerir o seu dispositivo. Este problema pode ocorrer se estiver a utilizar uma máquina virtual, se tiver um número de série restrito ou se este dispositivo já estiver atribuído a outra pessoa. Saiba como resolver estes problemas ou contacte o suporte da sua empresa.*
+**Mensagem de erro 2:** *Estamos a ter problemas ao seu dispositivo gerido. Este problema pode ocorrer se estiver a utilizar uma máquina virtual, se tiver um número de série restrito ou se este dispositivo já estiver atribuído a outra pessoa. Saiba como resolver estes problemas ou contacte o suporte da sua empresa.*
 
-**Problema:** esta mensagem pode ser resultado de qualquer um dos seguintes motivos:  
+**Problema:** Esta mensagem pode ser um resultado de qualquer um dos seguintes motivos:  
 * Uma máquina virtual macOS (VM) não foi configurada corretamente  
 * Ativou as restrições de dispositivos que necessitam que o dispositivo seja propriedade da empresa ou que tenha um número de série do dispositivo registado no Intune  
 * O dispositivo já foi inscrito e continua atribuído a outra pessoa no Intune  
 
-**Resolução:** primeiro, entre em contacto com o utilizador para determinar os problemas que estão a afetar o dispositivo. Em seguida, conclua a mais relevante das seguintes soluções:
+**Resolução:** Em primeiro lugar, contacte o seu utilizador para determinar qual dos problemas afeta o respetivo dispositivo. Em seguida, conclua a mais relevante das seguintes soluções:
 * Se o utilizador estiver a inscrever uma VM para teste, certifique-se de que foi totalmente configurada para que o Intune possa reconhecer o respetivo número de série e modelo de hardware. Saiba mais sobre como [configurar VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) no Intune.  
 * Se a sua organização ativou as restrições de inscrição que bloqueiam dispositivos macOS pessoais, tem de [adicionar o número de série do dispositivo pessoal](corporate-identifiers-add.md#manually-enter-corporate-identifiers) manualmente ao Intune.  
 * Se o dispositivo continuar atribuído a outro utilizador no Intune, o proprietário anterior não utilizou a aplicação Portal da Empresa para o remover ou repor. Para limpar o registo de dispositivo obsoleto do Intune:  
@@ -417,9 +418,9 @@ Depois de apagar os dispositivos bloqueados, pode indicar aos utilizadores que d
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas quando utiliza o System Center Configuration Manager com o Intune
 ### <a name="mobile-devices-disappear"></a>Os dispositivos móveis desaparecem
-**Problema:** depois de inscrever com êxito um dispositivo móvel no Configuration Manager, este desaparece da coleção de dispositivos móveis. No entanto, o dispositivo ainda tem o Perfil de Gestão e está listado no Gateway CSS.
+**Problema:** Depois de inscrever com êxito um dispositivo móvel para o Configuration Manager, este desaparece da coleção de dispositivos móveis. No entanto, o dispositivo ainda tem o Perfil de Gestão e está listado no Gateway CSS.
 
-**Resolução:** este problema pode ocorrer porque:
+**Resolução:** Este problema pode ocorrer porque:
 - Tem um processo personalizado a remover dispositivos não associados ao domínio ou 
 - o utilizador retirou o dispositivo da subscrição.
 Para validar e verificar que processo ou conta de utilizador removeu o dispositivo da consola do Configuration Manager, execute os passos seguintes.
@@ -450,7 +451,7 @@ Para validar e verificar que processo ou conta de utilizador removeu o dispositi
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>O computador já está inscrito - Erro hr 0x8007064c
-**Problema:** a inscrição falha com o erro **O computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
+**Problema:** A inscrição falha com o erro **o computador já está inscrito**. O registo de inscrição mostra o erro **hr 0x8007064c**.
 
 Esta falha pode ocorrer porque o computador:
 - foi anteriormente inscrito ou
@@ -464,9 +465,9 @@ O certificado de conta da conta anterior ainda está presente no computador.
 1. Faça duplo clique em **Certificados**, selecione **Conta de computador** > **Seguinte** e selecione **Computador Local**.
 1. Faça duplo clique em **Certificados (Computador local)** e selecione **Certificados Pessoais**.
 1. Procure o certificado do Intune emitido por Sc_Online_Issuing e elimine-o, se estiver presente.
-1. Elimine esta chave de registo, se existir: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as subchaves.
+1. Se a seguinte chave de registo existir, elimine-o: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e todas as sub-chaves.
 1. Tente voltar a inscrever.
-1. Se o PC ainda não conseguir fazer a inscrição, procure e elimine esta chave, se existir: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Se o PC ainda não é possível inscrever, procure e elimine esta chave, se existir: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Tente voltar a inscrever.
 
     > [!IMPORTANT]
@@ -491,7 +492,7 @@ O certificado de conta da conta anterior ainda está presente no computador.
 |0x80043008, 0x80CF3008|Falha ao iniciar o serviço Microsoft Online Management Update.|Contacte o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune (Como obter suporte para o Microsoft Intune)](get-support.md).|
 |0x80043009, 0x80CF3009|O computador cliente já está inscrito no serviço.|Tem de extinguir o computador cliente para o poder inscrever novamente no serviço.|
 |0x8004300B, 0x80CF300B|Não é possível executar o pacote de instalação do software de cliente porque a versão do Windows que está a ser executada no cliente não é suportada.|O Intune não suporta a versão do Windows que está a ser executada no computador cliente.|
-|0xAB2|O Windows Installer não conseguiu aceder ao tempo de execução de VBScript de uma ação personalizada.|Este erro é causado por uma ação personalizada baseada em DLLs (Dynamic-Link Libraries). Ao resolver problemas com o DLL, pode ter de utilizar as ferramentas descritas em [KB198038 do Suporte da Microsoft: Ferramentas Úteis para Problemas de Empacotamento e Implementação](https://support.microsoft.com/kb/198038).|
+|0xAB2|O Windows Installer não conseguiu aceder ao tempo de execução de VBScript de uma ação personalizada.|Este erro é causado por uma ação personalizada baseada em DLLs (Dynamic-Link Libraries). Quando a DLL de resolução de problemas, poderá ter de utilizar as ferramentas descritas [KB198038 do suporte da Microsoft: Ferramentas úteis para problemas de implantação e pacote](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|A ligação ao ponto final do serviço foi terminada.|A conta de avaliação ou paga está suspensa. Crie uma nova conta de avaliação ou paga e volte a inscrever.|
 
 

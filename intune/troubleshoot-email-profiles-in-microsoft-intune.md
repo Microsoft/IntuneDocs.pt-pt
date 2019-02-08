@@ -16,12 +16,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 480b453aa4f08f8d2a2460e26bfdb5f05466df6e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89a522047d88fd3720ea6dc7066f9387027d376f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190103"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840897"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Resolver problemas com perfis de e-mail no Microsoft Intune
 
@@ -56,16 +57,16 @@ Os utilizadores que têm contas de e-mail configuradas automaticamente não cons
 
 Se o utilizador instalado um perfil de e-mail antes de provisionining um perfil do Intune, o resultado da implementação de perfil de e-mail do Intune depende da plataforma de dispositivo:
 
-- **iOS**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. O perfil de e-mail duplicado criado pelo utilizador bloqueia a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum como iOS, os utilizadores criam um perfil de e-mail e depois inscreverem. O portal da empresa atualiza o utilizador que não estão em conformidade devido ao respetivo perfil de e-mail configurado manualmente e pede ao utilizador para remover esse perfil. O utilizador deve remover o seu perfil de e-mail para que o perfil do Intune possa ser implementado. Para evitar este problema, indique aos seus utilizadores para inscrever e permitir que o Intune implementar o perfil. Em seguida, instale o perfil de e-mail criada por utilizadores.
+- **iOS**: Intune Deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e endereço de e-mail. O perfil de e-mail duplicado criado pelo utilizador bloqueia a implementação de um perfil do Intune criado pelo administrador. Este é um problema comum como iOS, os utilizadores criam um perfil de e-mail e depois inscreverem. O portal da empresa atualiza o utilizador que não estão em conformidade devido ao respetivo perfil de e-mail configurado manualmente e pede ao utilizador para remover esse perfil. O utilizador deve remover o seu perfil de e-mail para que o perfil do Intune possa ser implementado. Para evitar este problema, indique aos seus utilizadores para inscrever e permitir que o Intune implementar o perfil. Em seguida, instale o perfil de e-mail criada por utilizadores.
 
-- **Windows**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. O Intune substitui o perfil de e-mail existente criado pelo utilizador.
+- **Windows**: Intune Deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e endereço de e-mail. O Intune substitui o perfil de e-mail existente criado pelo utilizador.
 
-- **Samsung KNOX Standard**: Intune identifica uma conta de e-mail duplicado com base no endereço de e-mail e é substituído pelo perfil do Intune. Se o utilizador configurar essa conta, esta é substituída novamente pelo perfil do Intune. Isso pode causar alguma confusão ao utilizador cuja configuração de conta seja substituída.
+- **Samsung KNOX Standard**: O Intune identifica uma conta de e-mail duplicado com base no endereço de e-mail e é substituído pelo perfil do Intune. Se o utilizador configurar essa conta, esta é substituída novamente pelo perfil do Intune. Isso pode causar alguma confusão ao utilizador cuja configuração de conta seja substituída.
 
 Samsung KNOX não utiliza o nome de anfitrião para identificar o perfil. Recomendamos que não crie múltiplos perfis de e-mail para implementar o mesmo endereço de e-mail em diferentes anfitriões, como eles substituem entre si.
 
 ## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
-**Problema**: depois de criar e implementar um Exchange Active Sync perfil de e-mail para o Samsung KNOX Standard em vários dispositivos Android, o erro **0x87D1FDE8** ou **falha na remediação** é reportado no propriedades do dispositivo > separador de política.
+**Problema**: Depois de criar e implementar um Exchange Active Sync perfil de e-mail para o Samsung KNOX Standard em vários dispositivos Android, o erro **0x87D1FDE8** ou **falha na remediação** é reportado do dispositivo Propriedades > separador de política.
 
 Reveja a configuração do seu perfil EAS para Samsung KNOX e a política de origem. A opção de sincronização do Samsung Notes já não é suportada e não deve ser selecionada no seu perfil. Certifique-se de que os dispositivos têm tempo suficiente para processar a política, até 24 horas.
 

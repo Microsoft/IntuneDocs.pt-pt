@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5042c3b1c125a1699091a8a313df3a0058ecd7d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c2d89149343e0dc425f8ef19cf56d61c2aa08da0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188148"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840268"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importar definições de Wi-Fi para dispositivos Windows no Intune
 
@@ -56,9 +57,9 @@ Num computador Windows que já tenha o perfil Wi-Fi necessário instalado, siga 
 4. Em **Plataforma**, selecione **Windows 8.1 e versões posteriores**.
 5. Em **Tipo de perfil**, selecione **Wi-Fi importado**.
 6. Configure as seguintes definições:
-    - **Nome da ligação**: introduza um nome para a ligação Wi-Fi. Este nome é apresentado aos utilizadores finais ao procurarem redes Wi-Fi disponíveis.
-    - **XML do Perfil**: selecione o botão Procurar e escolha o ficheiro XML que contém as definições de perfil Wi-Fi que quer importar.
-    - **Conteúdos do ficheiro**: mostra o código XML do perfil de configuração que selecionou.
+    - **Nome da ligação**: Introduza um nome para a ligação Wi-Fi. Este nome é apresentado aos utilizadores finais ao procurarem redes Wi-Fi disponíveis.
+    - **XML do perfil**: Selecione o botão Procurar e selecione o ficheiro XML que contém as definições de perfil de Wi-Fi a importar.
+    - **Conteúdos do ficheiro**: Mostra o código XML para o perfil de configuração que selecionou.
 7. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e é apresentado na lista de perfis.
 
 ## <a name="next-steps"></a>Passos Seguintes

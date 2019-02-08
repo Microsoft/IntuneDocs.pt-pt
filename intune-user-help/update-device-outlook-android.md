@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 40cc6ec2daab92a226051e2d9bc11d7ac0fb105b
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e995d8397cdc3dc2631fca21d65918006575f6f5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150468"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836239"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Tem de atualizar o seu dispositivo Android para instalar o Outlook
 

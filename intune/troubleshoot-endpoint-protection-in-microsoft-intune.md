@@ -16,12 +16,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f828394c48b5b7d55d9180da875d9cb3062f23c6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1de1722aa635367dac4b586e1333aed163156a83
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181688"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836681"
 ---
 # <a name="troubleshoot-endpoint-protection-in-intune"></a>Resolver problemas com o Endpoint Protection no Intune
 

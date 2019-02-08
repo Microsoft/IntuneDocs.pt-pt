@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e06d40ebcbd16940b7c980f529f7fc44ff5c736e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189933"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848462"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: criar e atribuir uma função personalizada
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Início rápido: Criar e atribuir uma função personalizada
 
 Neste início rápido do Intune, vai criar e atribuir uma função personalizada com permissões específicas a um serviço de segurança operacional. Em seguida, vai atribuir a função a um grupo desses operadores. Há várias funções predefinidas que pode utilizar de imediato. Contudo, ao criar funções personalizadas como esta, tem controlo de acesso preciso em relação a todas as partes de seu sistema de gestão de dispositivos móveis.
 
@@ -73,4 +74,4 @@ Neste início rápido, criou uma função de operações de segurança personali
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: criar um perfil de dispositivo de e-mail para iOS](quickstart-email-profile.md)
+> [Início rápido: Criar um perfil de e-mail de dispositivos para iOS](quickstart-email-profile.md)
